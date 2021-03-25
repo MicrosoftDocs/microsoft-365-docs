@@ -57,7 +57,7 @@ Testing connection with https://us-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
-If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-atp-mac.md#network-connections) are blocked by a proxy or firewall.
+If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-endpoint-mac.md#network-connections) are blocked by a proxy or firewall.
 
 Failures with curl error 35 or 60 indicate certificate pinning rejection, which indicates a potential issue with SSL or HTTPS inspection. See instructions below regarding SSL inspection configuration.
 
