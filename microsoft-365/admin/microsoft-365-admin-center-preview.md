@@ -112,8 +112,6 @@ Updating all of the admin centers to have a coherent experience will take awhile
     
 - [Introducing the Microsoft 365 Security and Compliance Center](https://go.microsoft.com/fwlink/?linkid=2025413)
 
-- [Get started with Windows release health on admin center​](https://docs.microsoft.com/windows/deployment/update/check-release-health)
-
 ## What language options are available the Admin Center?
 
 The Microsoft 365 admin center is fully localized in 40 languages.
