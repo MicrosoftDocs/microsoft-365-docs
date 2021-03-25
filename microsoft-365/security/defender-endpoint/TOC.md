@@ -379,6 +379,8 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
