@@ -199,7 +199,7 @@ The internet egress location is the location where your network traffic exits yo
 
 ### What license is needed for this capability?
 
-A license that provides access to the M365 Admin Center.
+You require a  license that provides access to the Microsoft 365 admin center.
 
 ## Related topics
 
