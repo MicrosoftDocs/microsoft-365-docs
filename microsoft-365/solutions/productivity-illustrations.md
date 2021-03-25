@@ -47,7 +47,7 @@ This set of illustrations uses one of the most regulated industries, financial s
 
 
 ### Security and Information Protection for Multi-Region Organizations
-Security and information protection for multi-region organizations with a single microsoft 365 tenant
+Security and information protection for multi-region organizations with a single Microsoft 365 tenant
 
 | Item | Description |
 |:-----|:-----|
