@@ -193,7 +193,7 @@ After you select a message, you have several options for what to do with the mes
 
 - **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
--**Block Sender**: This blocks the sender from sending emails to the admin recipient mailbox.
+- **Block Sender**: This blocks the sender from sending emails to the admin recipient mailbox.
 
 - **Submit message**: In the flyout pane that appears, choose the following options:
 
@@ -305,6 +305,6 @@ The cmdlets you use to view and manages messages and files in quarantine are:
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not malware files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Note that this cmdlet is only for messages, not quarantined files from Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
