@@ -16,7 +16,7 @@ audience: Admin
 
 # Localize the user experience
 
-Users of Microsoft Managed Desktop devices can select the language and locale of their choice either during the setup process (the "out of box experience") or afterwards.
+Users of Microsoft Managed Desktop devices can select the language of their choice either during the setup process (the "out of box experience") or afterwards.
 
 ## During setup (the "out of box experience")
 
@@ -55,7 +55,7 @@ For new devices, your manufacturer must provide device images that include the l
 
 If you are reusing existing devices, you might need to work with your Microsoft account representative to obtain appropriate images. For more information, see [Device images](../service-description/device-images.md).
 
-The [universal image](../service-description/device-images.md#universal-image) provided by Microsoft Managed Desktop includes these languages and locales for Windows 10:
+The [universal image](../service-description/device-images.md#universal-image) provided by Microsoft Managed Desktop includes these languages and for Windows 10:
 
 - English (US, GB, AU, CA, IN)
 - Spanish (Spain, Mexico)
