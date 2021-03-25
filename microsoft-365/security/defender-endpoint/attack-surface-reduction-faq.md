@@ -73,6 +73,7 @@ recommended that you enable ASR rules in [audit mode](audit-windows-defender.md)
 ## How do ASR rules exclusions work?
 For ASR rules, if you add one exclusion, it will affect every ASR rule.
 The following 2 specific rules do not support exclusions:
+
 ||||
 |:--|:--|:--|
 |Rule name|GUID|File & folder exclusions|
@@ -89,7 +90,7 @@ The following 2 specific rules do not support exclusions:
 - ASR exclusions in Group Policy do not support quotes (the engine will natively handle long path, spaces, etc., so there is no need to use quotes)
 - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
 
-ASR rules exclusions support wildcards, paths and environmental variables. For more information on how to use wildcards in ASR rules see [configure and validate exclusions based on file extension and folder location](../microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+ASR rules exclusions support wildcards, paths and environmental variables. For more information on how to use wildcards in ASR rules see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 ## How do I know what I need to exclude?
 Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
@@ -111,7 +112,7 @@ Looking at the above example, if you really had to create an exception for the p
 Overall, we recommend enabling every possible rule. Nevertheless, there are some clear cut cases where you shouldn’t enable a rule. For example, we do not recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you’re using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
 
 We highly recommend you that you read each rule specific information and/or warnings, which are available in our
-[public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide).
+[public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
 ## What are some good recommendations for getting started with ASR?
 
