@@ -52,7 +52,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [European Union GDPR](/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
 - [ISO 27001:2013](/compliance/regulatory/offering-iso-27001)
-- NIST 800-53 Rev.4
+- NIST 800-53 Rev.5
 
 > [!NOTE]
 > For US Government Community (GCC) Moderate and GCC High customers, the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
@@ -66,22 +66,26 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Antigua and Barbuda-Data Protection Act /2013 (Microsoft 365)
 - Appendix III to OMB Circular No. A-130 - Security of Federal Automated Information Resources
 - [Argentina - Personal Data Protection Act 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
-- Arkansas - Personal Information Protection Act (Microsoft 365)
+- Arizona - Notification of Breaches in Security Systems (Microsoft 365)
+- Arkansas Code Title 4, Subtitle 7, Chapter 110, Personal Information Protection Act (Microsoft 365)
 - ARMA - Implementing the Generally Accepted Record Keeping Principles (GARP) (Microsoft 365)
+- Armenia - Law of the Republic of Armenia on the Protection of Personal Data (Microsoft 365)
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8 (Microsoft 365)
 - Australia - National Archives Act
 - Australia - Public Records Office Victoria Recordkeeping Standards (Microsoft 365)
 - Australia - Spam Act 2003 (Microsoft 365)
+- Australia Privacy (Credit Reporting) Code (Microsoft 365)
 - Australia Privacy Act (Microsoft 365)
-- Australia Privacy (Credit Reporting) Code 2014 (Version 2.1)
 - Australian Energy Sector Cyber Security Framework (AESCSF) (Microsoft 365)
-- [Australian Information Security Registered Assessor Program (IRAP) Version 2](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
+- [Australian Information Security Registered Assessor Program (IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia) (Microsoft 365)
 - Austrian Telecommunications Act 2003 (Microsoft 365)
 - Bahamas -  Data Protection Act (Microsoft 365)
 - Barbados - Data Protection Bill 2019 (Microsoft 365)
+- Barbados - Electronic Transactions Act (Microsoft 365)
 - Belarus Law On Information, Informatization and Protection of information (Microsoft 365)
+- Belgium - Act on the Protection of Natural Persons with Regard to the Processing of Personal Data (Microsoft 365)
 - [Belgium NBB Dec 2015](/compliance/regulatory/offering-nbb-fsma-belgium) (Microsoft 365)
 - Bermuda - Electronic Transaction Act (Microsoft 365)
 - Bosnia and Herzegovina Law on the Protection of Personal Data
@@ -93,28 +97,29 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - California - Database Breach Act (California SB 1386)
 - California - Education Code-EDC, Title 3, Division 14, Part 65, Chapter 2.5- Social Media Privacy
 - California - Privacy Rights Act (CPRA) (Microsoft 365)
-- California - SB-327 Information privacy: connected devices (Microsoft 365)
+- California - SB-327 Information Privacy: Connected Devices (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - Canada - Breach of Security Safeguards Regulations (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
-- [Canada - Office of the Superintendent of Financial Institutions](/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
-- Canada - Personal Health Information Protection Act (PHIPA) (Microsoft 365)
+- [Canada - Office of the Superintendent of Financial Institutions Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
+- Canada - Personal Health Information Protection Act (PHIPA) 2020 (Microsoft 365)
 - Canada - Personal Information Protection and Electronic Documents Act (PIPEDA) (Microsoft 365)
 - Canada - Protected B
-- Canada Cybersecure (Microsoft 365)
+- Canada Cybersecure - Baseline Cyber Security Controls for Small and Medium Organizations (Microsoft 365)
 - CAN-SPAM Act (Microsoft 365)
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa) (Microsoft 365)
-- [CFR - Code of Federal Regulations Title 21](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
-- Chemical Facility Anti-Terrorism Standards (CFATS) (Microsoft 365)
+- Central Bank of Kuwait Cybersecurity Framework (Microsoft 365)
+- [CFR - Code of Federal Regulations Title 21, Part 11, Electronic Records, Electronic Signatures](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
 - Children's Online Privacy Protection Rule (COPPA) (Microsoft 365)
 - China - Personal Information Security Specification (Microsoft 365)
 - [CIS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - CMMC Level 1, Level 2, Level 3, Level 4, Level 5 (Microsoft 365)
+- CMS Information Systems Security and Privacy Policy (IS2P2) (Microsoft 365)
 - COBIT 5 (Microsoft 365)
 - Code of Maryland State Government - Protection of Information by Government Agencies (Microsoft 365)
-- Colombia - Decree No. 1377/2013 (used to be the Colombia Law 1581/2012)
+- Colombia - Decree No. 1377/2013 (Microsoft 365)
 - Colombia - External Circular Letter 007 of 2018 (Microsoft 365)
 - Colombia - Law 1266/2008- Habeas Data Act (Microsoft 365)
 - Commission Statement and Guidance on Public Company Cybersecurity Disclosures - US
