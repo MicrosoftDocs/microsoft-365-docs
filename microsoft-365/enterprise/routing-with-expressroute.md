@@ -220,7 +220,7 @@ Selective routing with ExpressRoute may be needed for a variety of reasons, such
   
 1. **Route filtering/segregation** - allowing the BGP routes to Office 365 over ExpressRoute to a subset of your subnets or routers. This selectively routes by customer network segment or physical office location. This is common for staggering rollout of ExpressRoute for Office 365 and is configured on your BGP devices.
 
-2. **PAC files/URLs** - directing Office 365 destined network traffic for specific FQDNs to route on a specific path. This selectively routes by client computer as identified by [PAC file deployment](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies).
+2. **PAC files/URLs** - directing Office 365 destined network traffic for specific FQDNs to route on a specific path. This selectively routes by client computer as identified by [PAC file deployment](./managing-office-365-endpoints.md).
 
 3. **Route filtering** - [Route filters](/azure/expressroute/how-to-routefilter-portal) are a way to consume a subset of supported services through Microsoft peering.
 
