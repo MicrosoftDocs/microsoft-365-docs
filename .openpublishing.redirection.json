@@ -3289,6 +3289,11 @@
       "source_path": "microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-mdo-anti-phishing-policies",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-attachments-policies",
+      "redirect_document_id": true
     }
   ]
 }
