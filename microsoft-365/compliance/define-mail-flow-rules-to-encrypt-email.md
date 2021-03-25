@@ -127,4 +127,4 @@ If you haven't yet moved your organization to the new OME capabilities, Microsof
 
 [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-[Mail flow rules (transport rules) in Exchange Online Protection](../security/defender-365-security/mail-flow-rules-transport-rules-0.md)
+[Mail flow rules (transport rules) in Exchange Online Protection](../security/office-365-security/mail-flow-rules-transport-rules-0.md)
