@@ -370,12 +370,6 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
    <td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
-   <td>54</td>
-   <td>Global (per-pattern) state changed. State: %1, pattern: %2</td>
-   <td><b>If state = 0:</b> Cyber-data reporting rule has reached its defined capping quota and won't send more data until the capping quota will expire.<br /><b>If state = 1: The capping quota expired and the rule will resume sending data.</b></td>
-   <td>Normal operating notification; no action required.</td>
-</tr>
-<tr>
    <td>55</td>
    <td>Failed to create the Secure ETW autologger. Failure code: %1</td>
    <td>Failed to create the secure ETW logger.</td>
@@ -384,7 +378,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 <tr>
    <td>56</td>
    <td>Failed to remove the Secure ETW autologger. Failure code: %1</td>
-   <td>failed to remove the secure ETW session on offboarding.</td>
+   <td>Failed to remove the secure ETW session on offboarding.</td>
    <td>Contact Support.</td>
 </tr>
 <tr>
@@ -433,7 +427,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
    <td>65</td>
    <td>Failed to load Microsoft Security Events Component Minifilter driver. Failure code: %1</td>
    <td>Failed to load MsSecFlt.sys filesystem minifilter.</td>
-   <td></td>
+   <td>Reboot the device. If this error persists, contact Support.</td>
 </tr>
 <tr>
    <td>66</td>
@@ -487,19 +481,13 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
    <td>81</td>
    <td>Failed to create Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1</td>
    <td>Failed to create the ETW session.</td>
-   <td>If this error persists, contact Support.</td>
+   <td>Reboot the device. If this error persists, contact Support.</td>
 </tr>
 <tr>
    <td>82</td>
    <td>Failed to remove Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1</td>
    <td>Failed to delete the ETW session.</td>
-   <td>If this error persists, contact Support.</td>
-</tr>
-<tr>
-   <td>83</td>
-   <td>Cyber event may be dropped because its size [%1 bytes] exceeded max size [%2 bytes] or close to it.</td>
-   <td>Informational only.</td>
-   <td>Normal operating notification; no action required.</td>
+   <td>Contact Support.</td>
 </tr>
 <tr>
    <td>84</td>
@@ -612,7 +600,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 <tr>
    <td>103</td>
    <td>Windows Defender Advanced Threat Protection Network Detection and Response executable has ended</td>
-   <td>The SenseNdr executable has ended</td>
+   <td>The SenseNdr executable has ended.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>
 </tbody>
