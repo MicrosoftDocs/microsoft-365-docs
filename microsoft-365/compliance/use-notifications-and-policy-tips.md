@@ -188,6 +188,102 @@ By default, policy tips display text similar to the following for an item on a s
 
 You can customize the text for policy tips separately from the email notification. Unlike custom text for email notifications (see above section), custom text for policy tips does not accept HTML or tokens. Instead, custom text for policy tips is plain text only with a 256-character limit.
   
+## Support Matrix for DLP policy tips across Microsoft apps
+
+
+|**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Conditions and exceptions supported**|**Comments**|
+|--------------------|--------------------------|-----------------------------------------|------------------------------------|------------|
+|Outlook Web Access <br/> |Yes <br/> |All <br/> |Subset  <br/> |See  [DLP predicates supported for DLP policy tips in Outlook Web Access](#dlp-predicates-supported-for-dlp-policy-tips-in-outlook-web-access)  <br/> |
+|Outlook Desktop (Outlook 2013 and beyond) <br/> |Yes <br/> |Subset <br/> |Subset  <br/> |See [Outlook 2013 and later supports showing policy tips for only some sensitive information types](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types) and [Outlook 2013 and later supports showing policy tips for only some conditions and exceptions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Desktop. <br/> |
+|Outlook Mobile (iOS, Android)/Outlook Mac <br/> |No <br/> |None <br/> |None <br/> |DLP policy tips are not supported on Outlook mobile <br/> |
+|Sharepoint Online/One Drive for Business Web client <br/> |Yes <br/> |All <br/> |All SPO/ODB conditions and exceptions in DLP <br/> | <br/> |
+|Sharepoint Desktop/ One Drive for Business Desktop client <br/> |No <br/> |None <br/> |None <br/> |DLP policy tips are not supported on Sharepoint or OneDrive desktop client apps <br/> |
+|Word, Excel, Powerpoint Web Client <br/> |Yes <br/> |All <br/> |All SPO/ODB conditions and exceptions in DLP <br/> |DLP policy tip is supported if the document is hosted on SPO or ODB web app and the DLP policy is already stamped. <br/> |
+|Word, Excel, Powerpoint Desktop Client <br/> |Yes <br/> |Subset <br/> |Subset <br/> |Policy tips for WXP client apps will work for documents stored on Sharepoint Online or One Drive for Business Sites for all DLP policies which have exactly the below or a subset of conditions or actions in the DLP policy :<br/> Content contains sensitive information types, Access Scope (Content is shared internally/externally), Notify User (policy tips/user notifications), Block everyone, Incident reports <br/><br/>If any other condition or action is present, the DLP policy tip for that policy will not appear in the desktop apps of Word, Excel or PowerPoint. <br/> |
+|Word, Excel, Powerpoint Mobile Client <br/> |No <br/> |None <br/> |None <br/> |DLP policy tips are not supported in mobile apps for Office. <br/> |
+|Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac <br/> |Yes <br/> |All <br/> |All Teams conditions and exceptions in DLP policy <br/> |Policy tips will show when a message is flagged as : “This message has been flagged. What can I do?” <br/><br/> When clicking the link, the user can review the sensitive info types detected and override or report an issue if allowed by the admin <br/><br/> Note that no policy tips are shown for files. When the recipient tries to access the document, they might get access denied if not allowed. <br/> |
+|Desktop Endpoint Devices <br/> |Yes <br/> |Subset  <br/> |All Endpoint DLP conditions and exceptions and actions in DLP policy <br/> |See Data Loss Prevention on Endpoint supports policy tips for only some sensitive information types for more details <br/> |
+|Mac devices <br/> |No <br/> |None <br/> |None <br/> |Data loss prevention policies are not enforceable on Mac devices today <br/> |
+|3rd party cloud apps <br/> |No <br/> |None <br/> |None <br/> |Data Loss Prevention <br/> |
+|On-prem <br/> |No <br/> |None <br/> |None <br/> | <br/> |
+
+## Data Loss Prevention on Endpoint supports policy tips for only some sensitive information types
+
+The list of out-of-the-box sensitive information types that will be detected in documents residing on endpoint devices are the following :
+
+|**Sensitive information types**|**Sensitive information types**|**Sensitive information types**|
+|:-----|:-----|:-----|
+|Credit Card Number <br/> |Brazil National ID Card (RG) <br/> |Greek Tax identification Number <br/> |
+|EU Debit Card Number <br/> |Brazil Legal Entity Number (CNPJ) <br/> |Hungary Personal Identification Number <br/> |
+|U.S. Social Security Number (SSN) <br/> |Denmark Personal Identification Number <br/> |Hungary Tax identification Number <br/> |
+|U.S. Individual Taxpayer Identification Number (ITIN) <br/> |Belgium National Number <br/> |Italy Fiscal Code <br/> |
+|Canada Social Insurance Number <br/> |Germany Identity Card Number <br/> |Lithuania Personal Code <br/> |
+|U.K. National Insurance Number (NINO) <br/> |Ireland Personal Public Service (PPS) Number <br/> |Malta Identity Card Number <br/> |
+|U.K. Driver's License Number <br/> |Netherlands Citizen's Service (BSN) Number <br/> |Slovenia Unique Master Citizen Number <br/> |
+|German Driver's License Number <br/> |Norway Identity Number <br/> |Sweden Tax Identification Number <br/> |
+|German Passport Number <br/> |Portugal Citizen Card Number <br/> |Latvia Personal Code <br/> |
+|U.K. National Health Service Number <br/> |Croatia Personal Identification (OIB) Number <br/> |Spain DNI <br/> |
+|France Social Security Number (INSEE) <br/> |Croatia Identity Card Number <br/> |Malta Tax ID Number <br/> |
+|France Driver's License Number <br/> |Czech Personal Identity Number <br/> |Spain Tax Identification Number <br/> |
+|Canada Driver's License Number <br/> |Greece National ID Card <br/> |U.K. Unique Taxpayer Reference Number <br/> |
+|U.S. Driver's License Number <br/> |South Africa Identification Number <br/> |France Tax Identification Number (numéro SPI.) <br/> |
+|Japan Driver's License Number <br/> |International Classification of Diseases (ICD-10-CM) <br/> |Germany Tax Identification Number <br/> |
+|Japan Resident Registration Number <br/> |International Classification of Diseases (ICD-9-CM) <br/> |Portugal Tax Identification Number <br/> |
+|Japan Social Insurance Number (SIN) <br/> |Azure Publish Setting Password <br/> |Romania Personal Numerical Code (CNP) <br/> |
+|Japan Passport Number <br/> |Azure Storage Account Key (Generic) <br/> |Slovakia Personal Number <br/> |
+|Japan Bank Account Number <br/> |SQL Server Connection String <br/> |Austria Driver's License Number <br/> |
+|France Passport Number <br/> |Azure DocumentDB Auth Key <br/> |Belgium Driver's License Number <br/> |
+|U.S. / U.K. Passport Number <br/> |Azure IAAS Database Connection String and Azure SQL Connection String <br/> |Bulgaria Driver's License Number <br/> |
+|SWIFT Code <br/> |Azure IoT Connection String <br/> |Croatia Driver's License Number <br/> |
+|U.S. Bank Account Number <br/> |Azure Redis Cache Connection String <br/> |Cyprus Driver's License Number <br/> |
+|ABA Routing Number <br/> |Azure SAS <br/> |Czech Driver's License Number <br/> |
+|Drug Enforcement Agency (DEA) Number <br/> |Azure Service Bus Connection String <br/> |Denmark Driver's License Number <br/> |
+|Australia Medical Account Number <br/> |Azure Storage Account Key <br/> |Estonia Driver's License Number <br/> |
+|Australia Tax File Number <br/> |EU Passport Number <br/> |Greece Driver's License Number <br/> |
+|Israel National ID <br/> |EU National Identification Number <br/> |Hungary Driver's License Number <br/> |
+|New Zealand Ministry of Health Number <br/> |EU Social Security Number (SSN) or Equivalent ID <br/> |Ireland Driver's License Number <br/> |
+|Spain Social Security Number (SSN) <br/> |EU Driver's License Number <br/> |Latvia Driver's License Number <br/> |
+|Sweden National ID <br/> |EU Tax Identification Number (TIN) <br/> |Lithuania Driver's License Number <br/> |
+|Australia Bank Account Number <br/> |CSCAN-AZURE0060 Azure Storage Account Shared Access Signature <br/> |Luxemburg Driver's License Number <br/> |
+|Australia Passport Number <br/> |CSCAN-GENERAL0140 General Symmetric Key <br/> |Malta Driver's License Number <br/> |
+|Canada Bank Account Number <br/> |Australian Company Number <br/> |Netherlands Driver's License Number <br/> |
+|Canada Passport Number <br/> |Austria Value Added Tax (VAT) Number <br/> |Poland Driver's License Number <br/> |
+|Canada Personal Health Identification Number (PHIN) <br/> |Ukraine Passport Number (Domestic) <br/> |Romania Driver's License Number <br/> |
+|Canada Health Service Number <br/> |Ukraine Passport Number (International) <br/> |Slovakia Driver's License Number <br/> |
+|France National ID Card (CNI) <br/> |Finland European Health Insurance Number <br/> |Slovenia Driver's License Number <br/> |
+|IP Address <br/> |France Health Insurance Number <br/> |Sweden Driver's License Number <br/> |
+|International Banking Account Number (IBAN) <br/> |Russian Passport Number (Domestic) <br/> |Finland Driver's License Number <br/> |
+|Israel Bank Account Number <br/> |Russian Passport Number (International) <br/> |Portugal Driver's License Number <br/> |
+|Italy Driver's License Number <br/> |New Zealand bank account number <br/> |Spain Driver's License Number <br/> |
+|Saudi Arabia National ID <br/> |New Zealand Inland Revenue number <br/> |Hungarian Social Security Number (TAJ) <br/> |
+|Sweden Passport Number <br/> |Australian Business Number <br/> |Belgium Passport Number <br/> |
+|U.K. Electoral Roll Number <br/> |Polish REGON Number <br/> |Cyprus Passport Number <br/> |
+|Thai Population Identification Code <br/> |Swiss Social Security Number AHV <br/> |Denmark Passport Number <br/> |
+|Turkish National Identification number <br/> |Germany Value Added Tax Number <br/> |Latvia Passport Number <br/> |
+|Japanese Residence Card Number <br/> |Japanese My Number Personal <br/> |Lithuania Passport Number <br/> |
+|Finland National ID <br/> |Japanese My Number Corporate <br/> |Luxemburg Passport Number <br/> |
+|Taiwan National ID <br/> |Netherlands Value Added Tax Number <br/> |Netherlands Passport Number <br/> |
+|Poland National ID (PESEL) <br/> |Italy Value Added Tax Number <br/> |Spain Passport Number <br/> |
+|Poland Identity Card <br/> |Hungarian Value Added Tax Number <br/> |Austria Social Security Number <br/> |
+|Poland Passport <br/> |France Value Added Tax Number <br/> |Greece Social Security Number (AMKA) <br/> |
+|Finland Passport Number <br/> |Belgium Value Added Tax Number <br/> |Austria Passport Number <br/> |
+|Malaysia Identity Card Number <br/> |New Zealand Driver License Number <br/> |Bulgaria Passport Number <br/> |
+|South Korea Resident Registration Number <br/> |New Zealand Social Welfare Number <br/> |Croatia Passport Number <br/> |
+|Singapore National Registration Identity Card (NRIC) Number <br/> |Austria Tax Identification Number <br/> |Czech Republic Passport Number <br/> |
+|Taiwan Passport Number <br/> |Luxemburg National Identification Number (Non-natural persons) <br/> |Estonia Passport Number <br/> |
+|Taiwan Resident Certificate (ARC/TARC) <br/> |Netherlands Tax Identification Number <br/> |Portugal Passport Number <br/> |
+|Argentina National Identity (DNI) Number <br/> |Slovenia Tax Identification Number <br/> |Slovakia Passport Number <br/> |
+|Chile Identity Card Number <br/> |Croatia National ID Card Number <br/> |Slovenia Passport Number <br/> |
+|China Resident Identity Card (PRC) Number <br/> |Luxemburg National Identification Number (Natural persons) <br/> |Greece Passport Number <br/> |
+|Hong Kong Identity Card (HKID) Number <br/> |Poland Tax Identification Number <br/> |Hungary Passport Number <br/> |
+|India Unique Identification (Aadhaar) Number <br/> |Austria Identity Card <br/> |Ireland Passport Number <br/> |
+|India Permanent Account Number (PAN) <br/> |Bulgaria Uniform Civil Number <br/> |Italy Passport Number <br/> |
+|Indonesia Identity Card (KTP) Number <br/> |Cyprus Identity Card <br/> |Malta Passport Number <br/> |
+|Philippines Unified Multi-Purpose ID Number <br/> |Cyprus Tax Identification Number <br/> |Romania Passport Number <br/> |
+|Brazil CPF Number <br/> |Estonia Personal Identification Code <br/> | <br/> |
+
+Please note that custom sensitive information types will also be detected in addition to the above out-of-the-box sensitive information types
+
 ## Policy tips in Outlook on the web and Outlook 2013 and later
 
 When you compose a new email in Outlook on the web and Outlook 2013 and later, you'll see a policy tip if you add content that matches a rule in a DLP policy, and that rule uses policy tips. The policy tip appears at the top of the message, above the recipients, while the message is being composed.
@@ -206,15 +302,80 @@ If the policy tips are configured to allow override, you can choose **Show Detai
   
 Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears.
 
-### Outlook 2013 and later supports showing policy tips for only some conditions
+### DLP predicates supported for DLP policy tips in Outlook Web Access
 
-Currently, Outlook 2013 and later supports showing policy tips only for these conditions:
+DLP policy tips in Outlook Web Access is supported for all the conditions, exceptions and actions that are applicable on Exchange workload in a DLP policy except the following conditions and corresponding exceptions:
 
-- Content contains
+-	Sender Domain Is
+-	Recipient is a member of
+-	Header contains words or phrases
+-	Header matches patterns
+-	Document size equals or is greater than
+-	Message type is
+-	Message importance is
+-	Content character set contains words
+-	Subject or body contains words or phrases
+-	Subject or body matches patterns
+-	Content character set contains words
+-	Content is received from
+-	Has sender overridden the policy tip 
+-	Message size equals or is greater than
+-	Sender AD attribute contains words or phrases
+-	Sender AD attribute matches patterns
+-	Document content contains words or phrases
+-	Document content matches patterns
+
+### Outlook 2013 and later supports showing policy tips for only some conditions and exceptions
+
+Currently, Outlook 2013 and later supports showing policy tips for policies which do not contain any condition or exception apart from the below mentioned conditions and corresponding exceptions :
+
+- Content contains sensitive information types (sensitivity labels is not supported)
 - Content is shared
 
-Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. 
-  
+Note that all the conditions work for emails authored in Outlook client app, where they will match content and enforce protective actions on content. However, showing policy tips to users is not yet supported for any conditions that are used apart from the ones mentioned above.
+
+### Outlook 2013 and later supports showing policy tips for only some sensitive information types
+
+The list of out-of-the-box sensitive information types that will be detected for showing DLP policy tips in Outlook on Desktop (2013 and later) are the following :
+
+|**Sensitive information types**|**Sensitive information types**|**Sensitive information types**|
+|:-----|:-----|:-----|
+|Credit Card Number <br/> |Canada Bank Account Number <br/> |Philippines Unified Multi-Purpose ID Number <br/> |
+|EU Debit Card Number <br/> |Canada Passport Number <br/> |Brazil CPF Number <br/> |
+|U.S. Social Security Number (SSN) <br/> |Canada Personal Health Identification Number (PHIN) <br/> |Brazil National ID Card (RG) <br/> |
+|U.S. Individual Taxpayer Identification Number (ITIN) <br/> |Canada Health Service Number <br/> |Brazil Legal Entity Number (CNPJ) <br/> |
+|Canada Social Insurance Number <br/> |France National ID Card (CNI) <br/> |Denmark Personal Identification Number <br/> |
+|U.K. National Insurance Number (NINO) <br/> |IP Address <br/> |Belgium National Number <br/> |
+|U.K. Driver's License Number <br/> |International Banking Account Number (IBAN) <br/> |Germany Identity Card Number <br/> |
+|German Driver's License Number <br/> |Israel Bank Account Number <br/> |Ireland Personal Public Service (PPS) Number <br/> |
+|German Passport Number <br/> |Italy Driver's License Number <br/> |Netherlands Citizen's Service (BSN) Number <br/> |
+|U.K. National Health Service Number <br/> |Saudi Arabia National ID <br/> |Norway Identity Number <br/> |
+|France Social Security Number (INSEE) <br/> |Sweden Passport Number <br/> |Portugal Citizen Card Number <br/> |
+|France Driver's License Number <br/> |U.K. Electoral Roll Number <br/> |Croatia Personal Identification (OIB) Number <br/> |
+|Canada Driver's License Number <br/> |Thai Population Identification Code <br/> |Croatia Identity Card Number <br/> |
+|U.S. Driver's License Number <br/> |Turkish National Identification number <br/> |Czech Personal Identity Number <br/> |
+|Japan Driver's License Number <br/> |Japanese Residence Card Number <br/> |Greece National ID Card <br/> |
+|Japan Resident Registration Number <br/> |Finland National ID <br/> |South Africa Identification Number <br/> |
+|Japan Social Insurance Number (SIN) <br/> |Taiwan National ID <br/> |International Classification of Diseases (ICD-10-CM) <br/> |
+|Japan Passport Number <br/> |Poland National ID (PESEL) <br/> |International Classification of Diseases (ICD-9-CM) <br/> |
+|Japan Bank Account Number <br/> |Poland Identity Card <br/> |Azure Publish Setting Password <br/> |
+|France Passport Number <br/> |Poland Passport <br/> |Azure Storage Account Key (Generic) <br/> |
+|U.S. / U.K. Passport Number <br/> |Finland Passport Number <br/> |SQL Server Connection String <br/> |
+|SWIFT Code <br/> |Malaysia Identity Card Number <br/> |Azure DocumentDB Auth Key <br/> |
+|U.S. Bank Account Number <br/> |South Korea Resident Registration Number <br/> |Azure IAAS Database Connection String and Azure SQL Connection String <br/> |
+|ABA Routing Number <br/> |Singapore National Registration Identity Card (NRIC) Number <br/> |Azure IoT Connection String <br/> |
+|Drug Enforcement Agency (DEA) Number <br/> |Taiwan Passport Number <br/> |Azure Redis Cache Connection String <br/> |
+|Australia Medical Account Number <br/> |Taiwan Resident Certificate (ARC/TARC) <br/> |Azure SAS <br/> |
+|Australia Tax File Number <br/> |Argentina National Identity (DNI) Number <br/> |Azure Service Bus Connection String <br/> |
+|Israel National ID <br/> |Chile Identity Card Number <br/> |Azure Storage Account Key <br/> |
+|New Zealand Ministry of Health Number <br/> |China Resident Identity Card (PRC) Number <br/> |EU Passport Number <br/> |
+|Spain Social Security Number (SSN) <br/> |Hong Kong Identity Card (HKID) Number <br/> |EU National Identification Number <br/> |
+|Sweden National ID <br/> |India Unique Identification (Aadhaar) Number <br/> |EU Social Security Number (SSN) or Equivalent ID <br/> |
+|Australia Bank Account Number <br/> |India Permanent Account Number (PAN) <br/> |EU Driver's License Number <br/> |
+|Australia Passport Number <br/> |Indonesia Identity Card (KTP) Number <br/> |EU Tax Identification Number (TIN) <br/> |
+
+Please note that custom sensitive information types are also supported for DLP policy tips in addition to the above out-of-the-box sensitive information types
+
 ### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
 
 Policy tips can work either with DLP policies and mail flow rules created in the Exchange admin center, or with DLP policies created in the Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
