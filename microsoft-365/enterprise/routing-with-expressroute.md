@@ -137,11 +137,11 @@ This example is a scenario for a fictitious company called Trey Research who has
   
 Employees at Trey Research are only allowed to connect to the services and websites on the internet that the security department explicitly allows on the pair of outbound proxies that sit between the corporate network and their ISP.
   
-Trey Research plans to use Azure ExpressRoute for Office 365 and recognizes that some traffic such as traffic destined for content delivery networks won't be able to route over the ExpressRoute for Office 365 connection. Since all traffic already routes to the proxy devices by default, these requests will continue to work as before. After Trey Research determines they can meet the Azure ExpressRoute routing requirements, they proceed to create a circuit, configure routing, and linking the new ExpressRoute circuit to a virtual network. Once the fundamental Azure ExpressRoute configuration is in place, Trey Research uses the [#2 PAC file we publish](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) to route traffic with customer specific data over the direct ExpressRoute for Office 365 connections.
+Trey Research plans to use Azure ExpressRoute for Office 365 and recognizes that some traffic such as traffic destined for content delivery networks won't be able to route over the ExpressRoute for Office 365 connection. Since all traffic already routes to the proxy devices by default, these requests will continue to work as before. After Trey Research determines they can meet the Azure ExpressRoute routing requirements, they proceed to create a circuit, configure routing, and linking the new ExpressRoute circuit to a virtual network. Once the fundamental Azure ExpressRoute configuration is in place, Trey Research uses the [#2 PAC file we publish](./managing-office-365-endpoints.md)  to route traffic with customer specific data over the direct ExpressRoute for Office 365 connections.
   
 As shown in the following diagram, Trey Research is able to satisfy the requirement to route Office 365 traffic over the internet and a subset of traffic over ExpressRoute using a combination of routing and outbound proxy configuration changes.
   
-1. Using the [#2 PAC file we publish](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) to route traffic through a separate internet egress point for Azure ExpressRoute for Office 365.
+1. Using the [#2 PAC file we publish](./managing-office-365-endpoints.md) to route traffic through a separate internet egress point for Azure ExpressRoute for Office 365.
 
 2. Clients are configured with a default route towards Trey Research's proxies.
 
