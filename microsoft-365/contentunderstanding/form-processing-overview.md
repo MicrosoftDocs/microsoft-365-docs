@@ -35,7 +35,7 @@ You use example files to train your model and define the information to be extra
 
 After you train and publish your model, your model creates a [Power Automate Flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
 
-An Office 365 admin needs to [enable Form processing](./set-up-content-understanding.md#to-set-up-content-understanding) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+An Office 365 admin needs to [enable Form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
 
 ### File limitations
 
