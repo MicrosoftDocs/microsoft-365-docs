@@ -39,7 +39,7 @@ You can create multiple DEPs per tenant but can only assign one DEP at a time. W
 
 If you already have Customer Key set up for Exchange Online and Sharepoint Online, here's how the new tenant-level public preview fits in.
 
-The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. However, for Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that aren't assigned a mailbox level Customer Key DEP already. When you encrypt a user mailbox using a tenant level DEP, all its' content gets encrypted. For information about what gets encrypted with a DEP at the application level, see [Service encryption with Customer Key](customer-key-overview.md).
+The tenant-level encryption policy you create encrypts all data for the Microsoft Teams and Exchange Online workloads in Microsoft 365. However, for Exchange Online, if you have already assigned Customer Key DEPs to individual mailboxes, the tenant-level policy won't override those DEPs. The tenant-level policy will only encrypt mailboxes that aren't assigned a mailbox level Customer Key DEP already. When you encrypt a user mailbox using a tenant level DEP, all its content gets encrypted. For information about what gets encrypted with a DEP at the application level, see [Service encryption with Customer Key](customer-key-overview.md).
 
 ## Data that isn't encrypted with Customer Key at the tenant level
 
