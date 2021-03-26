@@ -1,5 +1,5 @@
 ---
-title: "DLP policy conditions, exceptions, and actions (preview)"
+title: "DLP policy conditions, exceptions, and actions"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,7 +16,7 @@ search.appverid:
 description: "learn about dlp policy conditions and exceptions"
 ---
 
-# DLP policy conditions, exceptions, and actions (preview)
+# DLP policy conditions, exceptions, and actions
 
 Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
