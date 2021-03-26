@@ -240,7 +240,8 @@ DKE tenant and key settings are located in the **appsettings.json** file.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
-Please note: if you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers list.
+> [!NOTE]
+> If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
 Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
 
