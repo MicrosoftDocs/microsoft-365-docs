@@ -97,7 +97,7 @@ You can assign users to a role in 2 different ways:
 
 ## Assign admin roles to multiple users
 
-If you know PowerShell, see [Assign roles to user accounts with PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). It's ideal for assigning roles to hundreds of users.
+If you know PowerShell, see [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md). It's ideal for assigning roles to hundreds of users.
   
 Use the following instructions to assign roles to tens of users.
 
@@ -118,8 +118,8 @@ You can check admin role permissions in 2 different ways:
 
 [About Microsoft 365 admin roles](about-admin-roles.md)
 
-[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Assign roles to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
+[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 
 [Authorize or remove partner relationships](../misc/add-partner.md)

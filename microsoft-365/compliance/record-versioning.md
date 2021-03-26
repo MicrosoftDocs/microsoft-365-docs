@@ -21,7 +21,7 @@ description: "Learn about records to help you implement a records management sol
 
 # Use record versioning to update records stored in SharePoint or OneDrive
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 >[!NOTE] 
 > Because regulatory records block editing, record versioning is not available for regulatory records.

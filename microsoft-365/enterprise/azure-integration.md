@@ -54,7 +54,7 @@ For more information about Microsoft 365 and Azure AD, see [Microsoft 365 identi
 
 |**Feature**|**Description**|
 |:-----|:-----|
-|Integrated apps  <br/> |You can grant individual apps access to your Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. You can also authorize these apps at global admin level and make them available to your entire company by registering the apps in Azure AD. Formore information, see [Integrated Apps and Azure AD for Microsoft 365 administrators](integrated-apps-and-azure-ads.md).  <br/> Also see [Single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
+|Integrated apps  <br/> |You can grant individual apps access to your Microsoft 365 data, such as mail, calendars, contacts, users, groups, files, and folders. You can also authorize these apps at global admin level and make them available to your entire company by registering the apps in Azure AD. Formore information, see [Integrated Apps and Azure AD for Microsoft 365 administrators](integrated-apps-and-azure-ads.md).  <br/> Also see [Single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
 |PowerApps  <br/> | Power apps are focused apps for mobile devices that can connect to your existing data sources like SharePoint lists and other data apps. See [Create a PowerApp for a list in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) and the [PowerApps page](https://powerapps.microsoft.com/) for details.  <br/> |
    
 ## See also

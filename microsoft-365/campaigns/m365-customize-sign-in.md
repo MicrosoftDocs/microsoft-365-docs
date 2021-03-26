@@ -32,7 +32,7 @@ You can customize your sign-in page with your branding. You can also add text to
 
 ## Design customization the text on your sign-in page
 
-To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.
+To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
 
 The elements you can update are:
 
