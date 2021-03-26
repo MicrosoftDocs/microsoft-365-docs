@@ -28,7 +28,7 @@ ms.date: 07/01/2020
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[Overview of Microsoft 365 admin center](/microsoft-365/business-video/admin-center-overview.md?preserve-view=true&view=o365-21vianet).
+[Overview of Microsoft 365 admin center](../../business-video/admin-center-overview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
