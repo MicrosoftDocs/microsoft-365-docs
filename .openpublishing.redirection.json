@@ -3320,7 +3320,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "https://docs.microsoft.com/microsoft-365/security/defender-365-security/threat-explorer",
+      "source_path": "microsoft-365/security/defender-365-security/threat-explorer.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer",
       "redirect_document_id": false
     }
