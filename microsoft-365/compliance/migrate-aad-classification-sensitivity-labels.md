@@ -16,7 +16,7 @@ description: "This article discusses classic Azure Active Directory classificati
 
 This article discusses classic Azure Active Directory classification and sensitivity labels.
 
-Sensitivity labels are supported by [these services](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels).
+Sensitivity labels are supported by [these services](./sensitivity-labels-teams-groups-sites.md).
 
 For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md).
 
