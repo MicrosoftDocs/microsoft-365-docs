@@ -49,8 +49,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `FileSize` | long | Size of the file in bytes |
-| `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
-| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `AccountDomain` | string | Domain of the account |
 | `AccountName` | string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
@@ -72,7 +70,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginIP` | string | IP address where the file was downloaded from |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
+| `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
+| `InitiatingProcessFileSize` | long | Size of the file that ran the process responsible for the event |
 | `InitiatingProcessFolderPath` | string | Folder containing the process (image file) that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
