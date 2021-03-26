@@ -1,6 +1,15 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
+      "redirect_url": "microsoft-365/business-video/admin-center-overview",
+      "redirect_document_id": false
+    },{
+      "source_path": "microsoft-365/admin/microsoft-365-admin-center-preview.md",
+      "redirect_url": "microsoft-365/business-video/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/extend-your-trial.md",
       "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365",
       "redirect_document_id": false
@@ -717,7 +726,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/dynamic-delivery-and-previewing.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/atp-safe-attachments#dynamic-delivery-in-safe-attachments-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments#dynamic-delivery-in-safe-attachments-policies",
       "redirect_document_id": true
     },
     {
@@ -727,7 +736,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/atp-safe-links#safe-links-settings-for-microsoft-teams",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams",
       "redirect_document_id": true
     },
     {
@@ -3282,8 +3291,28 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/ecommended-settings-for-eop-and-office365",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-mdo-anti-phishing-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-attachments-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office-365-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mdo-for-spo-odb-and-teams",
+      "redirect_document_id": false
     }
   ]
 }
