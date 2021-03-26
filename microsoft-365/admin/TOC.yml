@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
           href: ../business/secure-win-10-pcs.md
+        - name: Download software and product keys
+          href: setup/download-software-licenses-csp.md
         - name: Install Office apps
           href: setup/install-applications.md
         - name: Set up windows devices
@@ -33,7 +35,7 @@
         - name: Migrate your data to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Roll out Teams
-          href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: App training for everyone
           href: https://support.microsoft.com/training
         - name: What subscription do I have?
@@ -56,16 +58,18 @@
       items:
         - name: Admin center overview
           href: admin-overview/about-the-admin-center.md
-        - name: About the new admin center
-          href: microsoft-365-admin-center-preview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
           href: admin-overview/admin-mobile-app.md
         - name: What's new in the admin center
           href: whats-new-in-preview.md
+        - name: Search in the Microsoft 365 admin center
+          href: manage/search-in-the-mac.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
+        - name: Manage multiple tenants
+          href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
         - name: About Office 365 operated by 21Vianet
@@ -80,7 +84,7 @@
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Apply for a Fapiao
           href: services-in-china/apply-for-a-fapiao.md
-        - name: Azure Information Protection parity
+        - name: Azure Information Protection support
           href: services-in-china/parity-between-azure-information-protection.md      
     - name: Manage users, groups, and passwords
       href: add-users/index.yml
@@ -178,8 +182,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
-        - name: About email collaboration
-          href: email/email-collaboration.md
         - name: Add user or contact to distribution group
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
@@ -227,13 +229,13 @@
               href: productivity/meetings.md
             - name: Microsoft 365 Apps health
               href: productivity/apps-health.md
+            - name: Endpoint Analytics
+              href: /mem/analytics/productivity-score
             
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
-         - name: Set password expiration policy
-           href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
          - name: Pin apps to users' app launcher
@@ -256,6 +258,8 @@
            href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
+         - name: Manage Microsoft Rewards 
+           href: manage/manage-microsoft-rewards.md 
          - name: Manage Message center messages
            href: manage/manage-messages.md
          - name: Set up release options
@@ -290,6 +294,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Set up multi-factor authentication
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Manage and monitor priority accounts
+          href: setup/priority-accounts.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Secure Microsoft 365 Business Premium
@@ -307,7 +313,7 @@
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score
-          href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
+          href: https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
@@ -316,7 +322,7 @@
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
         - name: Microsoft Intune documentation
-          href: https://docs.microsoft.com/mem/intune/
+          href: /mem/intune/
         - name: Microsoft 365 Business Premium
           items:
             - name: View and edit policies and devices
@@ -359,12 +365,32 @@
               href: basic-mobility-security/overview.md
             - name: Compare Basic Mobility and Security and Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Basic Mobility and Security FAQ
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: Capabilities of Basic Mobility and Security
-              href: basic-mobility-security/capabilities.md
-            - name: Compare Basic Mobility and Security and Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+              href: basic-mobility-security/capabilities.md  
+            - name: Set up Basic Mobility and Security
+              href: basic-mobility-security/set-up.md
+            - name: Create device security policies
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Create an APNs certificate for iOS devices
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Manage device access settings
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Get details about managed devices
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Manage enrolled devices
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Enroll your mobile device
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Privacy and security
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Frequently asked questions
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Wipe mobile devices
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Turn off Basic Mobility and Security
+              href: basic-mobility-security/turn-off.md
+            - name: Troubleshoot
+              href: basic-mobility-security/troubleshoot.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 
@@ -379,6 +405,6 @@
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
     - name: Troubleshoot
-      href: https://docs.microsoft.com/office/troubleshoot/
+      href: /office/troubleshoot/
     - name: Contact support
       href: contact-support-for-business-products.md

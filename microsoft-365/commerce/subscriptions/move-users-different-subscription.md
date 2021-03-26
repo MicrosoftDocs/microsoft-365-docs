@@ -28,7 +28,7 @@ ms.date: 07/01/2020
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ If you have more than one subscription, have users with a license for one subscr
 
 ## Before you begin
 
-You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md?view=o365-worldwide).
 
 ## Move users to a different subscription
 
@@ -83,7 +83,7 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 ## Related content
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
+[Remove licenses from your subscription](../licenses/buy-licenses.md) (article)\
 [Change plans manually](change-plans-manually.md) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
-[Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) (article)
+[Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) (article)

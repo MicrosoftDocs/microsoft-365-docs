@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -82,7 +82,7 @@ This two-page poster is a quick way to inventory your existing infrastructure. I
 
 These products reached end of support on **October 13, 2020**:
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) will reach end of support on **April 13, 2021**.
@@ -115,11 +115,11 @@ For an example of how a fictional but representative multinational organization 
 
 ## Additional Microsoft 365 products
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](../business/index.yml)
 
   Bring together the best-in-class productivity and collaboration capabilities with device management and security solutions to safeguard business data for small and midsize businesses.
 
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](/education)
 
   Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
@@ -127,11 +127,29 @@ For an example of how a fictional but representative multinational organization 
 
   Empower United States public sector employees to work together, securely.
 
+## Best together with Surface and the Edge browser
+
+Optimize your user’s integrated and secure productivity with the best-together combination of Microsoft 365 for enterprise, Microsoft Surface devices, and the Microsoft Edge browser. This cross-product integration provides:
+
+- A common identity and sign-in security infrastructure.
+- Integrated local and cloud apps for search, collaboration, productivity, and compliance.
+- Comprehensive and integrated security for hardware, browser, local app, and cloud apps.
+- A common infrastructure for IT management of installs and updates.
+
+Here is an example for an enterprise organization.
+
+![An enterprise organization with Microsoft 365, Surface devices, and the Edge browser](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+For more information and configuration examples for a small and medium business and an educational institution, download the [Best together poster](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
+
+[![Image for the Best together with Surface and the Edge browser poster](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
+
 ## Microsoft 365 training
 
 ![Microsoft 365 Fundamentals training](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/learn/paths/m365-fundamentals/).
 
 ## See also
 

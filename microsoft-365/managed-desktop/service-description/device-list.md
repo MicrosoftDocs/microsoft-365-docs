@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop devices
-description:  This topic lists the specifications for devices approved for Microsoft Managed Desktop.
+description:  This article lists the specifications for devices approved for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -12,13 +12,13 @@ ms.topic: article
 
 # Microsoft Managed Desktop devices 
 
-Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article outlines the requirements for a device to be enrolled in Microsoft Managed Desktop and lists the specific devices that are currently supported.
+Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
-For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
+For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](../index.yml). 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
+To be enrolled in Microsoft Managed Desktop, a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
@@ -32,12 +32,13 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022  | April 28, 2025 |
-| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
+| **\*[Dell Latitude 5320 / 5320 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5320-laptop-or-2-in-1/spd/latitude-13-5320-2-in-1-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | Jan 22, 2023  | Jan 22, 2026 |
+| [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025  |
+| **\*[Dell Latitude 5420](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5420-laptop/spd/latitude-5420-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | Jan 02, 2023 | Jan 02, 2026  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | April 28, 2022 | April 28, 2025 |
 | [Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 4, 2022  | May 4, 2025  |
-| [Dell Latitude 7410 / 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 19, 2022  | May 19, 2025  |
-| [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
+| **\*[Dell Latitude 7420 / 7420 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | March 22, 2023  | March 22, 2026  |
+| **\*[Dell Latitude 9420 2-in-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | Apr 2023  | Apr 2026  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 5, 2022  | May 5, 2025  |
 | [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | None | May 27, 2022  | May 27, 2025  |
 | [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | None | May 15, 2022  | May 15, 2025  |
@@ -61,33 +62,29 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | May 21, 2022 | May 21, 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | None | May 21, 2022 | May 21, 2027 |
 | [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 12, 2022 | Oct 12, 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | None | Jan 15, 2022 | Jan 15, 2025 |
 
 In addition, the device must also meet these criteria:     
 
-- If a specific SKU is listed in the device requirements, make sure you use it when you order. This ensures that devices comply with Microsoft Managed Desktop software requirements. 
+- If a specific SKU is listed in the device requirements, make sure you use it when you order. Doing so ensures that devices comply with Microsoft Managed Desktop software requirements. 
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](../get-started/register-devices-self.md) feature
 
 >[!NOTE]
 >Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
->- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) for details.
+>- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) for details.
 >-	Using one device for several different workloads.
 >- Using multiple monitors.
 
-**Additional Help**
+**More Help**
 
 These resources can help answer questions that you might have about specific devices:
 
 - For more questions on Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
 
 - For more questions on HP devices and device ordering instructions, contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
-
-
-
-

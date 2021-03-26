@@ -30,12 +30,12 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 
 - The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
 
+- If your organization doesn't have an Exchange hybrid deployment, you must synchronize your on-premises Exchange schema to Azure Active Directory. If you don't do this, you might risk creating duplicate cloud-based mailboxes in Exchange Online for users that have a mailbox in your on-premises Exchange organization.
+
 - Only Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
-- You have to submit a request to Microsoft Support to enable your organization to search for Teams chat data for on-premises users. See [Filing a request with Microsoft Support to enable this feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in this article.
-
 > [!NOTE]
-> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team. That means you can use Content Search to search channel conversations without have to file a support request. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## How it works
 
@@ -47,20 +47,7 @@ The following graphic shows the workflow of how Teams chat data for on-premises 
   
 In addition to this new capability, you can still use Content Search to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 
-## Filing a request with Microsoft Support to enable this feature
 
-You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. This feature is available in Security & Compliance Center PowerShell. You don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users.
-  
-Include the following information when you submit the request to Microsoft Support:
-  
-- The default domain name of your organization.
-
-- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the eDiscovery engineering team who will implement the request.
-
-After the engineering change is made, Microsoft Support will send you an estimated deployment date. The deployment process usually takes 2–3 weeks after you submit the support request.
-  
 ### What happens after this feature is enabled?
 
 After this feature is deployed in your organization, the following changes are made in Content Search and in searches associated with an eDiscovery case in the Security & Compliance Center:
@@ -105,7 +92,7 @@ After the feature has been enabled, you can use Content Search in the Security &
 
 You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in the Security & Compliance Center PowerShell to search for Teams chat data for on-premises users. As previously explained, you don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users.
   
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following PowerShell command to create a content search that searches for Teams chat data for on-premises users.
 
@@ -125,11 +112,11 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
   
 For more information using these cmdlets, see:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+- [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
+- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 ## Known issues
 
@@ -137,13 +124,13 @@ For more information using these cmdlets, see:
 
 ## Frequently asked questions
 
- **Where is the cloud-based storage for on-premises users located?**
+**Where is the cloud-based storage for on-premises users located?**
   
-Cloud-based storage is provisioned in the same datacenter as your organization.
+Teams chat data is stored in the Preferred Data Location (PDL) for an on-premises user. The PDL is honored in both Single-Geo and Multi-Geo environments. For more information, see [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
   
  **Are there any other requirements other than submitting a support request?**
   
- As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
+As previously explained, the identities of users with on-prem mailboxes must be synchronized to your cloud-based organization so that a corresponding mail user account is created for each on-premises user account in Office 365. Your organization must also have an Office 365 enterprise subscription, such as an Office 365 Enterprise E1, E3, or E5 subscription.
   
  **Is there a risk of losing the Teams chat data if the user's on-premises mailbox is migrated to the cloud?**
   

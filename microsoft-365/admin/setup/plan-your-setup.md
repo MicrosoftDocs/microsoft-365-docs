@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 - MOE150
@@ -55,11 +57,11 @@ If you get stuck at any point, call us. [We're here to help!](../contact-support
 
 There are a couple of scenarios that include either migrating data or users from on-premises environments or setting up a hybrid system that includes directory synchronization. If you're in either category, follow the instructions in these articles:
   
-- To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization), and to understand the different identity models in Microsoft 365, read [Understanding Microsoft 365 identity and Azure Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
+- To set up directory synchronization with your on-premises Active Directory, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md), and to understand the different identity models in Microsoft 365, read [Understanding Microsoft 365 identity and Azure Active Directory](../../enterprise/about-microsoft-365-identity.md).
 
-- To set-up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](https://aka.ms/exdeploy)
+- To set-up an Exchange hybrid, the full set of instructions that guide you through all the different ways of setting up a hybrid exchange (including setting up DNS records) can be found here: [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
 
-- To set up a SharePoint hybrid, particularly hybrid search and site features, see [Hybrid Search in SharePoint](https://docs.microsoft.com/SharePoint/hybrid/hybrid-search-in-sharepoint).
+- To set up a SharePoint hybrid, particularly hybrid search and site features, see [Hybrid Search in SharePoint](/SharePoint/hybrid/hybrid-search-in-sharepoint).
 
 ## Move to Microsoft 365 all at once or in stages
 
@@ -104,7 +106,7 @@ If you're going to use Microsoft 365 for your email account, you can bring your 
 |**How many mailboxes?**|**Recommendation**|
 |:-----|:-----|
 |Just a few  <br/> |If you don't want to use the **Setup** page to migrate the mailboxes, you can let mailbox owners migrate their own email and contacts. See [Migrate email and contacts to Microsoft 365 for business](migrate-email-and-contacts-admin.md).  <br/> |
-|Several  <br/> |If you're migrating from Gmail, see [Migrate G Suite mailboxes to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes).  <br/> If you're migrating from another email provider, including Exchange, see [Ways to migrate multiple email accounts to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).  <br/> |
+|Several  <br/> |If you're migrating from Gmail, see [Migrate G Suite mailboxes to Microsoft 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes).  <br/> If you're migrating from another email provider, including Exchange, see [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).  <br/> |
 
 ## Plan for file storage and migration
 
@@ -112,17 +114,17 @@ Microsoft 365 provides cloud storage for individuals, small organizations, and e
   
 - **You can move hundreds of files** to [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) or to a [SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
   
-- **If you want to move several thousand files** to Microsoft 365 storage, review the [SharePoint Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=856113). We recommend that you use a migration tool or consider hiring a [partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with the migration. For information about how to migrate a large number of files, see [SharePoint Online and OneDrive Migration User Guide](https://go.microsoft.com/fwlink/?LinkId=723574).
+- **If you want to move several thousand files** to Microsoft 365 storage, review the [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits). We recommend that you use a migration tool or consider hiring a [partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with the migration. For information about how to migrate a large number of files, see [SharePoint Online and OneDrive Migration User Guide](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).
   
 ## Plan for Teams
 
-You can use Microsoft Teams to make calls to other people in your organization who are on your subscription. For example, if your organization has 10 people, you can call and IM each other using Teams without any special setup. For more information, see [Get started with Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start).
+You can use Microsoft Teams to make calls to other people in your organization who are on your subscription. For example, if your organization has 10 people, you can call and IM each other using Teams without any special setup. For more information, see [Get started with Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
 
-For larger organizations or if you're starting from Skype for Business, on-premises, or hybrid deployments, see [How to roll out Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/how-to-roll-out-teams).
+For larger organizations or if you're starting from Skype for Business, on-premises, or hybrid deployments, see [How to roll out Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   
 ## Plan for integration with Active Directory or other software
 
-- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Azure Active Directory Connect. For instructions, see [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
+- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Azure Active Directory Connect. For instructions, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
 - **Do you want to integrate Microsoft 365 with software made by other companies?** If you need to integrate Microsoft 365 with other software in your organization, we recommend you consider [hiring a partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with your deployment.
   
@@ -134,4 +136,4 @@ For larger organizations or if you're starting from Skype for Business, on-premi
   - **Call [Microsoft 365 for Business Support](../contact-support-for-business-products.md) with your questions**. We're here to help! 
   - **Consider hiring a [Microsoft partner](https://go.microsoft.com/fwlink/?linkid=391089)**. If you're short on time, or have advanced requirements (like moving thousands of files to Microsoft 365 cloud storage or integrating with other software), an experienced partner can be a big help. 
 
-- **If you have more than 50 employees**, the [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) is available to help you with your deployment. 
+- **If you have more than 50 employees**, the [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) is available to help you with your deployment.

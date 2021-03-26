@@ -1,0 +1,32 @@
+### YamlMime:Landing
+
+title: Microsoft 365 security documentation # < 60 chars
+summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+
+metadata:
+  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft 365 Defender
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft 365 Defender?
+            url:  ../defender/microsoft-365-defender.md
+          - text: Microsoft 365 security center
+            url: ../defender/overview-security-center.md

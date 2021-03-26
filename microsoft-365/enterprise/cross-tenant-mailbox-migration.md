@@ -40,7 +40,7 @@ This section does not include the specific steps required to prepare the MailUse
 
 ## Prerequisites
 
-The cross-tenant mailbox move feature requires [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
+The cross-tenant mailbox move feature requires [Azure Key Vault](/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
 
 Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure Azure Key Vault, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship. Typically, Global Admin has permission to perform all configuration steps.
 
@@ -94,8 +94,8 @@ Prepare the source tenant:
 
     | Parameter | Value | Required or Optional
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | Target tenant domain, such as contoso\.onmicrosoft.com. | Required |
-    | -ResourceTenantDomain                       | Source tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -TargetTenantDomain                         | Target tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -ResourceTenantDomain                       | Source tenant domain, such as contoso\.onmicrosoft.com. | Required |
     | -ResourceTenantAdminEmail                   | Source tenant admin’s email address. This is the source tenant admin who will be consenting to the use of the mailbox migration application sent from the target admin. This is the admin who will receive the email invite for the application. | Required |
     | -ResourceTenantId                           | Source tenant organization ID (GUID). | Required |
     | -SubscriptionId                             | The Azure subscription to use for creating resources. | Required |
@@ -111,7 +111,7 @@ Prepare the source tenant:
     ||||
 
     >[!Note]
-    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
+    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
 
 6. The script will pause and ask you to accept or consent to the Exchange mailbox migration application that was created during this process. Here is an example.
 
@@ -171,7 +171,7 @@ The target admin setup is now complete!
 
 3. In either the Microsoft 365 admin center or a Remote PowerShell session, create one or more mail-enabled security groups to control the list of mailboxes allowed by the target tenant to pull (move) from the source tenant to the target tenant. You do not need to populate this group in advance, but at least one group must be provided to run the setup steps (script). Nest groups are not supported. 
 
-4. Download the SetupCrossTenantRelationshipForTargetResource.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
+4. Download the SetupCrossTenantRelationshipForResourceTenant.ps1 script for the source tenant setup from the GitHub repository here: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview). 
 
 5. Create a Remote PowerShell connection to the source tenant with your Exchange Administrator permissions. Global Admin permissions are not required to configure the source tenant, only the target tenant because of the Azure application creation process.
 
@@ -182,9 +182,9 @@ The target admin setup is now complete!
     | Parameter | Value |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Mail-enabled security group created by source tenant for the identities/mailboxes that are in scope for migration. |
-    | -ResourceTenantDomain | Source tenant domain name, such as fabrikam\.onmicrosoft.com. |
+    | -ResourceTenantDomain | Source tenant domain name, such as contoso\.onmicrosoft.com. |
     | -ApplicationId | Azure application ID (GUID) of the application used for migration. Application ID available via your Azure portal (Azure AD, Enterprise Applications, app name, application ID) or included in your invitation email.  |
-    | -TargetTenantDomain | Target tenant domain name, such as contoso\.onmicrosoft.com. |
+    | -TargetTenantDomain | Target tenant domain name, such as fabrikam\.onmicrosoft.com. |
     | -TargetTenantId | Tenant ID of the target tenant. For example, the Azure AD tenant ID of contoso\.onmicrosoft.com tenant. |
     |||
 
@@ -264,6 +264,22 @@ MailboxMoveEnabled         : True
 MailboxMoveCapability      : RemoteOutbound
 MailboxMovePublishedScopes : {MigScope}
 OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
+```
+
+#### Verify Setup Script
+
+If you receive any errors during the configuration of the source or target tenants, you can run the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
+
+Here's an example of running VerifySetup.ps1 on the target tenant:
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+Here's an example of VerifySetup.ps1 on the source tenant:
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
 ```
 
 ### Move mailboxes back to the original source
@@ -354,7 +370,7 @@ You must ensure the following objects and attributes are set in the target organ
     Find objects that were previously mailboxes using this command.
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -a**.
+    Get-User <identity> | select Name, *recipient* | ft -AutoSize
     ```
 
     Here is an example. 
@@ -545,6 +561,34 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!Note]  
 > In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.  
 
+**Where do I start troubleshooting if moves do not work?**  
+
+Start by running the VerifySetup.ps1 script located [on GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) and review the output.
+
+Here's an example of running VerifySetup.ps1 on the target tenant:
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+Here's an eExample of running VerifySetup.ps1 on the source tenant:
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
+```
+
+**Can the source and target tenant utilize the same domain name?**  
+
+No. The source and target tenant domain names must be unique. For example, a source domain of contoso.com and the target domain of fourthcoffee.com.
+
+**Will shared mailboxes move and still work?**
+
+Yes, however we only keep the store permissions as described in these articles:
+
+- [Microsoft Docs | Manage permissions for recipients in Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+
+- [Microsoft Support | How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+
 **Is Azure Key Vault required and when are transactions made?**  
 
 Yes, an Azure subscription is required to use Key Vault to store the certificate to authorize migration. Unlike onboarding migrations which use username & password to authenticate to the source, cross-tenant mailbox migrations use OAuth and this certificate as the secret/credential. Access to the Key Vault must be maintained throughout all mailbox migrations as it is accessed once at the beginning and once end of migration, as well as once every 24 hours during incremental sync times. You can review AKV costing details [here]( https://azure.microsoft.com/en-us/pricing/details/key-vault/).  
@@ -555,17 +599,17 @@ Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches
 
 **What if I use Service encryption with Customer Key?**
 
-The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) for more information.  
+The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](../compliance/customer-key-overview.md) for more information.  
 
 **What is the estimated migration time?**
 
-To help you plan your migration, the table present [here](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
+To help you plan your migration, the table present [here](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
 
 Do remember that this feature is currently in preview and the SLA and any applicable Service Levels do not apply to any performance or availability issues during the preview status of this feature.
 
 ## Known issues  
 
--  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives.
+-  **Issue: Auto Expanded archives cannot be migrated.** The cross-tenant migration feature support migrations of the primary mailbox and archive mailbox for a specific user. If the user in the source however has an auto expanded archive – meaning more than one archive mailbox, the feature is unable to migrate the additional archives and should fail.
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant): 
 
@@ -684,4 +728,3 @@ Do remember that this feature is currently in preview and the SLA and any applic
    | Microsoft Defender for Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Premium Encryption in Office 365                  |
-    

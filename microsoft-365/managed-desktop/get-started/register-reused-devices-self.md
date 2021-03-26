@@ -1,6 +1,6 @@
 ---
 title: Register existing devices yourself
-description: Register re-used devices you might already have yourself so they can be managed by Microsoft Managed Desktop
+description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 f1.keywords:
@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 # Register existing devices yourself
 
 >[!NOTE]
->This topic describes the steps for you to re-use devices you already have and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](register-devices-self.md) instead.
+>This topic describes the steps for you to reuse devices you already have and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](register-devices-self.md) instead.
 
 The process for Partners is documented in [Steps for Partners to register devices](register-devices-partner.md).
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
+Microsoft Managed Desktop can work with brand-new devices or you can reuse devices you might already have (which will require that you reimage them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 ## Prepare to register existing devices
 
@@ -51,7 +51,7 @@ If you've met all these prerequisites, you're ready to collect the information b
 2. In the Monitoring workspace, expand the **Reporting** node, expand **Reports**, and select the **Hardware - General** node. 
 3. Run the report, **Windows Autopilot Device Information**, and view the results.
 4. In the report viewer, select the **Export** icon, and choose the **CSV (comma-delimited)** option.
-5. After saving the file, you will need to filter results to just those devices you plan to register with Microsoft Managed Desktop and upload the data to Microsoft Managed Desktop. Open Microsoft Endpoint Manager and navigate to the **Devices** menu, then look for Microsoft Managed Desktop section and select **Devices**. Select **+ Register devices** which opens a fly-in to register new devices.
+5. After saving the file, you will need to filter results to just those devices you plan to register with Microsoft Managed Desktop and upload the data to Microsoft Managed Desktop. Open Microsoft Endpoint Manager and navigate to the **Devices** menu, then look for Microsoft Managed Desktop section and select **Devices**. Select **+ Register devices**, which opens a fly-in to register new devices.
 
 
 Refer to [Register devices by using the Admin Portal](#register-devices-by-using-the-admin-portal) for more information.
@@ -59,7 +59,7 @@ Refer to [Register devices by using the Admin Portal](#register-devices-by-using
 
 #### Active Directory PowerShell script method
 
-In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` PowerShell cmdlet to remotely collect the information from devices in Active Directory Groups by using WinRM. You can also use the `Get-AD Computer` cmdlet and get filtered results for a specific hardware model names included in the catalog. To do this, first confirm these prerequisites, and then proceed with the steps:
+In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` PowerShell cmdlet to remotely collect the information from devices in Active Directory Groups by using WinRM. You can also use the `Get-AD Computer` cmdlet and get filtered results for a specific hardware model name included in the catalog. Before you proceed, first confirm these prerequisites, and then proceed with the steps:
 
 - WinRM is enabled.
 - The devices you want to register are active on the network (that is, they are not disconnected or turned off).
@@ -86,9 +86,9 @@ In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` P
     ```
 
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
-Azure Active Directory. Be aware that this removal could take a few hours to completely process.
+Azure Active Directory. Be aware that removal could take a few hours to completely process.
 
-4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manager, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manager, Microsoft Intune, and Windows Autopilot. Be aware that removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices-by-using-the-admin-portal).
 
@@ -119,7 +119,7 @@ Now you can proceed to [register devices](#register-devices-by-using-the-admin-p
 
 ### Merge hash data
 
-If you collected the hardware hash data by the manual PowerShell or flash drive methods, you now need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
+If you collected the hardware hash data by the manual PowerShell or flash drive methods, you now need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make it easy:
 
 ```powershell
 Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
@@ -130,7 +130,7 @@ With the hash data merged into one CSV file, you can now proceed to [register th
 
 #### Register devices by using the Admin Portal
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices** which opens a fly-in to register new devices.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -151,7 +151,7 @@ You can monitor the progress of device registration on the main page. Possible s
 |---------------|-------------|
 | Registration Pending | Registration is not done yet. Check back later. |
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
-| Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
+| Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first-time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 

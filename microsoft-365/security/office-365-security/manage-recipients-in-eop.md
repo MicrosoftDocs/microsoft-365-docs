@@ -1,25 +1,29 @@
 ---
-title: "Manage recipients in standalone EOP"
-f1.keywords:
-- NOCSH
+title: Manage recipients in standalone EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the different types of recipient objects in standalone Exchange Online Protection (EOP)."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the different types of recipient objects in standalone Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage recipients in standalone EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:
 

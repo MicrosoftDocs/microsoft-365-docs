@@ -49,6 +49,8 @@
       items: 
         - name: Use Outlook and Teams
           href: collab-outlook-teams.md
+        - name: Get started with Microsoft Teams in your small business
+          href: get-started-teams-small-business.md
         - name: Create a group email address
           href: group-email.md
         - name: Create a shared calendar
@@ -87,6 +89,8 @@
       items:
         - name: Overview of Bookings
           href: overview-bookings.md
+        - name: Track business info with Microsoft Lists
+          href: track-info-lists.md
         - name: Plan an event
           href: plan-event.md   
     - name: Manage services
@@ -97,6 +101,10 @@
           href: admin-center-overview.md
         - name: View, download, or print your bill
           href: view-bill.md
+        - name: Buy new licenses
+          href: buy-licenses.md
+        - name: Remove existing licenses
+          href: remove-existing-licenses.md
         - name: Update your payment method
           href: update-payment.md 
         - name: Reset user passwords
@@ -156,4 +164,6 @@
         - name: Get help or support
           href: get-help-support.md 
         - name: Employee quick setup  
-          href: employee-quick-setup.md    
+          href: employee-quick-setup.md  
+    - name: Switch from Google Workspace
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md  

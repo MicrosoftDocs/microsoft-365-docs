@@ -7,7 +7,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
@@ -51,6 +53,14 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 
+### Use Find to search your file
+You can use the <b>Find</b> feature to search for an entity in your document that you want to label.
+
+   ![Find in file](../media/content-understanding/find-feature.png) 
+
+The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
+
+
 ## Add an explanation
 
 For our example, we are going to create an explanation that provides a hint about the entity format itself and variations it may have in the sample documents. For example, a date value can be in a number of different formats, such as:
@@ -71,12 +81,12 @@ To help identify the *Service Start Date* you can create a pattern explanation.
 4. Select **Save**.
 
 > [!NOTE]
-> For more learn more about explanation types, see [Explanation types](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
+> For more learn more about explanation types, see [Explanation types](./explanation-types-overview.md).  
 
 
 ### Use the Explanation library
 
-For creating explanations for items such as dates, it is easier to [use the explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
+For creating explanations for items such as dates, it is easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
 
 For the *Service Start Date* sample, it is more efficient to use the pre-built explanation for *Date* in the explanation library:
 
@@ -137,3 +147,5 @@ If you receive a match on your labeled sample files, you can now test your model
 [Document Understanding overview](document-understanding-overview.md)
 
 [Apply a model](apply-a-model.md) 
+
+[SharePoint Syntex Accessibility Mode](accessibility-mode.md)

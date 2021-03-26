@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-scenario
 ---
 
 # Insider risk management in Microsoft 365
@@ -32,8 +33,8 @@ Use the following steps to configure insider risk management for your organizati
 1. Learn about [insider risk management](insider-risk-management.md) in Microsoft 365
 2. Plan for [insider risk management and verify licensing](insider-risk-management-plan.md)
 3. Configure [insider risk management settings](insider-risk-management-settings.md)
-4. Configure [permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
-5. Create and configure [insider risk management policies](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
+4. Configure [permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) and [policy prerequisites & connectors](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
+5. Create and configure [insider risk management policies](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
 
 ## More information about insider risk management
 

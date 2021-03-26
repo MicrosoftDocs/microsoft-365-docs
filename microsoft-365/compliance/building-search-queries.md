@@ -18,9 +18,9 @@ ms.custom: seo-marvel-mar2020
 description: "Use keywords and conditions to narrow the scope of the search when searching for data using Advanced eDiscovery in Microsoft 365."
 ---
 
-# Build search collection queries in Advanced eDiscovery
+# Build search queries for collections in Advanced eDiscovery
 
-When building search queries to collect data in an Advanced eDiscovery case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
+When configuring the search query when creating a [collection](collections-overview.md) in an Advanced eDiscovery case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 
 ![Use keywords and conditions to narrow the results of a search](../media/SearchQueryBox.png)
 
@@ -34,7 +34,7 @@ Alternatively, you can select the **Show keyword list** check box and the type a
 
 ![Use the keyword list to get statistics on each keyword in the query](../media/KeywordListSearch.png)
 
-Why use the keyword list? You can get statistics that show how many items match each keyword in the keyword list. This can help you quickly identify the keywords that are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list. For more information about search statistics, see [Search statistics](search-statistics.md).
+Why use the keyword list? You can get statistics that show how many items match each keyword in the keyword list. This can help you quickly identify the keywords that are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list. For more information about search statistics, see [Search statistics](search-statistics-in-advanced-ediscovery.md).
 
 ## Conditions
 

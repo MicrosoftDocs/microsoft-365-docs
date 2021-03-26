@@ -1,5 +1,5 @@
 ---
-title: "Get started with trainable classifiers (preview)"
+title: "Get started with trainable classifiers"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,13 +20,20 @@ search.appverid:
 description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This article shows you how to create and train a custom classifier and how to retrain them to increase accuracy."
 ---
 
-# Get started with trainable classifiers (preview)
+# Get started with trainable classifiers
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
 Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the classifiers ability to predict by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the performance of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
 
-To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
+
+Watch this video for a quick summary of creating a trainable classifier. You'll still need to read this full article to get the details.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+
 
 ## Prerequisites
 
@@ -39,7 +46,7 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 To access classifiers in the UI: 
 
 - the Global admin needs to opt in for the tenant to create custom classifiers.
-- Compliance Administrator or Data Investigation role is required to train a classifier.
+- Compliance Administrator role is required to train a classifier.
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 
@@ -83,7 +90,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
    > The seed and test sample items must not be encrypted and they must be in English.
@@ -115,7 +122,7 @@ Once the trainable classifier has processed enough positive samples to build a p
     > [!div class="mx-imgBorder"]
     > ![trainable classifier ready for testing](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
     > [!IMPORTANT]
     > The sample items must not be encrypted and they must be in English.

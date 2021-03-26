@@ -18,6 +18,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -74,14 +75,14 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 6. Under **Apply this rule**, select **[Apply to all messages]**.
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
+    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
   
 7. Under Do the following, leave **Append the disclaimer** selected. 
     
 8.  Select **Enter text** and type your disclaimer. 
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
+    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
 
 9. Select **Select one** and choose **Wrap** as a fallback option. Then **OK**. This means that if the disclaimer can't be added because of encryption or another mail setting, it will be wrapped in a message envelope.
     
@@ -109,4 +110,4 @@ To gain these and other capabilities to manage email signatures, use a third-par
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.
+- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.

@@ -38,11 +38,11 @@ Support has ended for Office 2007 products and services. The following roadmaps 
 
 |**Planning content**|**Date support ended**|
 |:-----|:-----|
-|[Office 2007 end of support roadmap](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |October 10, 2017  <br/> |
+|[Office 2007 end of support roadmap](/DeployOffice/office-2007-end-support-roadmap) <br/> |October 10, 2017  <br/> |
 |[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |April 11, 2017  <br/> |
 |[SharePoint Server 2007 end of support roadmap](sharepoint-2007-end-of-support.md) <br/> |October 10, 2017  <br/> |
 |[Project Server 2007 end of support roadmap](project-server-2007-end-of-support.md) <br/> |October 10, 2017  <br/> |
-|[Upgrade from Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |January 8, 2018  <br/> |
+|[Upgrade from Office Communications Server](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |January 8, 2018  <br/> |
 |[PerformancePoint Server 2007 end of support roadmap](pps-2007-end-of-support.md) <br/> |January 9, 2018  <br/> |
    
 After support ends for a Microsoft product, there are no more:
@@ -61,7 +61,6 @@ If you're using Office 2007 products and applications at home, see [this informa
 
 [Video: What is Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Microsoft Lifecycle Policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle Policy](/lifecycle/)
 
 [Plan your upgrade from Office 2007 or Office 2010 servers and clients](plan-upgrade-previous-versions-office.md)
-  

@@ -1,27 +1,33 @@
 ---
-title: "Recover from a ransomware attack"
+title: Recover from a ransomware attack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
-ms.article: how-to
-ms.service: O365-seccomp
+ms.topic: article
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Microsoft 365 admins can learn how to recover from a ransomware attack.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Recover from a ransomware attack in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
 
 The steps in this article will give you the best chance to recover data and stop the internal spread of infection. Before you get started, consider the following items:
 
@@ -49,9 +55,9 @@ To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange Activ
 
 To disable other types of access to a mailbox, see:
 
-- [Enable or disable MAPI for a mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
+- [Enable or disable MAPI for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
 
-- [Enable or Disable POP3 or IMAP4 access for a user](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
+- [Enable or Disable POP3 or IMAP4 access for a user](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
 Pausing OneDrive sync will help protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
@@ -85,7 +91,7 @@ Files Restore in OneDrive for Business allows you to restore your entire OneDriv
 
 In the rare case that the ransomware deleted all your email, you can probably recover the deleted items. For more information, see:
 
-- [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
+- [Recover deleted messages in a user's mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
@@ -95,7 +101,7 @@ After you've cleaned your computers and devices and recovered your data, you can
 
 ## Step 8 (Optional): Block OneDrive sync for specific file extensions
 
-After you've recovered, you can prevent OneDrive for Business clients from synchronizing the file types that were affected by this ransomware. For more information, see [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+After you've recovered, you can prevent OneDrive for Business clients from synchronizing the file types that were affected by this ransomware. For more information, see [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## Report the attack
 
@@ -131,7 +137,7 @@ You can report phishing messages that contain ransomware by using one of several
 
 ## See also
 
-- [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
+- [Ransomware](/windows/security/threat-protection/intelligence/ransomware-malware)
 
 - [Ransomware response—to pay or not to pay?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 
@@ -143,7 +149,7 @@ You can report phishing messages that contain ransomware by using one of several
 
 - [Enable or disable macros in Office files](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md)
+- [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)
 
 - [A worthy upgrade: Next-gen security on Windows 10 proves resilient against ransomware outbreaks in 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

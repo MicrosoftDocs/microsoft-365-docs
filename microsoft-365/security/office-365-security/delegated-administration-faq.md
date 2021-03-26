@@ -1,19 +1,21 @@
 ---
-title: "Delegated administration FAQ"
-f1.keywords:
-- NOCSH
+title: Delegated administration FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Delegated administration FAQ
@@ -29,11 +31,11 @@ If you're a Microsoft partner or reseller, and you've signed up to be a Microsof
 
 Delegated administration allows you to manage Microsoft 365  (including EOP settings) as if you were an admin within that organization. The steps to configure delegated administration are described in the following list:
 
-1. Sign up to be a [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits).
+1. Sign up to be a [Microsoft Office 365 Advisor](https://partner.microsoft.com/?cloudbenefits).
 
 2. Sign up for delegated administration. Before you can start administering a customer's tenant, they must authorize you as a delegated administrator. To obtain their approval, you first [send them an offer for delegated administration](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). You can also offer delegated administration to your customer at a later time.
 
-3. Create the delegated admin account using the steps in [Add, change, or delete a subscription advisor partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+3. Create the delegated admin account using the steps in [Add, change, or delete a subscription advisor partner](../../admin/misc/add-partner.md).
 
 Visit [Partners: Build your business and administer partner subscription](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) for more information about how to set up delegated administration.
 
@@ -47,4 +49,4 @@ No. Microsoft 365 does not currently have this capability.
 
 ## Can I get consolidated reporting across all of my subtenants?
 
-Consolidated reporting across the companies you manage isn't available in Microsoft 365 admin center reports. However, you can get reports by using [Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Consolidated reporting across the companies you manage isn't available in Microsoft 365 admin center reports. However, you can get reports by using [Microsoft Graph](/graph/overview).

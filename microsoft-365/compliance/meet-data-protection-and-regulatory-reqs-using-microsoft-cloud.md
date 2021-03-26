@@ -21,11 +21,11 @@ ms.custom: seo-marvel-apr2020
 # Microsoft Compliance Manager (classic)
 
 > [!IMPORTANT]
-> **Compliance Manager is now generally available in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). We highly recommend customers discontinue using Compliance Manager (classic) and move to the new Compliance Manager to benefit from its rich user experience and updated control mapping. Please refer to our [Compliance Manager documentation](compliance-manager.md) to set up and start using the new Compliance Manager in the Microsoft 365 compliance center.**
+> **Compliance Manager (classic) will soon be removed from the Microsoft Service Trust Portal.** We recommend that you transition to the new [Compliance Manager in the Microsoft 365 compliance center](https://compliance.microsoft.com/), which provides an enhanced user experience and updated control mapping. Customers who have assessments in the classic version will need to create new assessments in the new Compliance Manager. Any existing data, including your assessments, controls, and other data, will not be transferred over to the new Compliance Manager. [Learn more about the transition](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
 
 *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
 
-Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure.
+Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](./get-started-with-service-trust-portal.md), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure.
 
 Compliance Manager:
 

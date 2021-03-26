@@ -1,28 +1,35 @@
 ---
-title: "Email authentication in Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Email authentication in Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
+  - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
+description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Email authentication in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
@@ -49,7 +56,7 @@ As of March 2018, only 9% of domains of companies in the Fortune 500 publish str
 
 The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
 
-Lack of strong email authentication policies is a large problem. W while organizations might not understand how email authentication works, attackers fully understand, and they take advantage. Because of phishing concerns and the limited adoption of strong email authentication policies, Microsoft uses *implicit email authentication* to check inbound email.
+Lack of strong email authentication policies is a large problem. While organizations might not understand how email authentication works, attackers fully understand, and they take advantage. Because of phishing concerns and the limited adoption of strong email authentication policies, Microsoft uses *implicit email authentication* to check inbound email.
 
 Implicit email authentication is an extension of regular email authentication policies. These extensions include: sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. In the absence of other signals from these extensions, messages sent from domains that don't use email authentication policies will be marked as spoof.
 
@@ -140,7 +147,7 @@ You can use this method to resolve intra-org spoofing and cross-domain spoofing 
 
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
 
-Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization setup email authentication records.
+Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization set up email authentication records.
 
 #### You don't know all sources for your email
 
