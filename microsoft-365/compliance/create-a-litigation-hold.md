@@ -63,7 +63,7 @@ Here are the steps to place a mailbox on Litigation Hold using the Exchange admi
 
 ### Create a Litigation Hold using PowerShell
 
-You can also create a Litigation Hold by running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+You can also create a Litigation Hold by running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
@@ -75,7 +75,7 @@ The previous command preserves items indefinitely because the hold duration isn'
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-For more information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+For more information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## How does Litigation Hold work?
 
@@ -89,4 +89,3 @@ The following illustration shows the subfolders in the Recoverable Items folders
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.
-  

@@ -57,7 +57,7 @@ landingContent:
           - text: Install apps
             url: install-applications.md
           - text: Roll out Teams
-            url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
+            url: /microsoftteams/how-to-roll-out-teams
       - linkListType: video
         links:      
           - text: Install apps on Android
@@ -67,4 +67,4 @@ landingContent:
           - text: Train users
             url: https://support.microsoft.com/training  
           - text: Connect PCs to Microsoft 365 Business Premium
-            url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07 
+            url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07

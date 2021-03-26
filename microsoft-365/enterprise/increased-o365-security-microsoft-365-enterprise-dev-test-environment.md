@@ -38,7 +38,7 @@ If you want to configure increased Microsoft 365 security in a simulated enterpr
 
 ## Phase 2: Configure increased Microsoft 365 security
 
-In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In this phase, you enable increased Microsoft 365 security for your Microsoft 365 for enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 
@@ -95,7 +95,7 @@ To see the security dashboard:
 
 Take a close look at all the cards on the dashboard to familiarize yourself with the information provided.
 
-For more information, see [Security Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
+For more information, see [Security Dashboard](../security/office-365-security/security-dashboard.md).
 
 
 ## Phase 4: Examine Microsoft Secure Score
@@ -106,7 +106,7 @@ Microsoft Secure Score shows your security posture as a number, which indicates 
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Next steps
 
@@ -118,4 +118,4 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

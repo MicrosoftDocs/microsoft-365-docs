@@ -98,7 +98,7 @@ To verify whether you can revoke a message, check whether the Revocation Status 
 
 To verify whether you can revoke a particular email message by using Windows PowerShell, complete these steps.
 
-1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Get-OMEMessageStatus cmdlet as follows:
 
@@ -126,7 +126,7 @@ To revoke the message using the Security &amp; Compliance Center
 
 To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation cmdlet.
 
-1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEMessageRevocation cmdlet as follows:
 
@@ -152,4 +152,4 @@ To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation
 
 - [Office 365 Advanced Message Encryption - email expiration](ome-advanced-expiration.md)
 
-- [Message policy and compliance service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Message policy and compliance service description](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

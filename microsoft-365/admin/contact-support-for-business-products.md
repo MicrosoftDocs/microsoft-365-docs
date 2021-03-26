@@ -30,13 +30,13 @@ ms.date: 7/28/2020
 > [!IMPORTANT]
 > You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
 
-Start by [checking the current health of your services](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
+Start by [checking the current health of your services](../enterprise/view-service-health.md). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
 
 ## Online support
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. Select the **Need help?** button.
 
@@ -209,7 +209,7 @@ The administrator is expected to provide initial assistance for the customer's u
 
 ## Feature availability
 
-To view feature availability across Office 365 plans, see [Office 365 Service Description](https://go.microsoft.com/fwlink/p/?linkid=846911)
+To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 
 ## Follow us on WeChat
 

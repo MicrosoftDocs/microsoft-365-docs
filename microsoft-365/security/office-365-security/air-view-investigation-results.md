@@ -24,13 +24,13 @@ ms.prod: m365-security
 # Details and results of an automated investigation in Microsoft 365
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 security center. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](office-365-air.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 security center. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](../mtp/mtp-autoir-results.md#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## Investigation status
 
@@ -53,7 +53,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**. 
@@ -63,7 +63,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-1. Go to the Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**. 
