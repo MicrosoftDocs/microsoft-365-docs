@@ -31,12 +31,12 @@ As the admin of a Microsoft 365 organization, there are now several policies to 
 |**Excel**|Yes|Yes|Yes|Yes|
 |**Office.com**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**OneNote**|Yes|Yes|Yes|Yes|
-|**OneDrive**|Some settings currently managed by other controls.||||
+|**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
-|**SharePoint**|Some settings currently managed by other controls.||||
-|**Teams**|Some settings currently managed by other controls.||||
+|**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
+|**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
