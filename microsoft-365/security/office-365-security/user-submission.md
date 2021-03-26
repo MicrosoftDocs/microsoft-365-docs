@@ -26,8 +26,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. When users submit messages using the various reporting options, you can use this mailbox to intercept messages (send to the custom mailbox only) or receive copies of messages (send to the custom mailbox and Microsoft). This feature works with the following message reporting options:
 
@@ -52,9 +52,9 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
 
-- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Defender for Office 365](set-up-atp-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
+- Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Defender for Office 365](set-up-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
 
-- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-atp-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
+- Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
 
 - Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
@@ -71,7 +71,7 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
   - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
 
@@ -79,8 +79,8 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
   For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
 
-  - [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Client Access Rules in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## Use the Security & Compliance Center to configure the user submissions mailbox
 
@@ -88,27 +88,36 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
 2. In the **User submissions** page that appears, select one of the following options:
 
-   1. **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
+      1. **Enable the Report Message feature for Outlook (Recommended)**: Select
+this option if you use the Report Message add-in, the Report Phishing 
+add-in or the built-in reporting in Outlook on the web, and then configure
+the following settings:
 
-      - **Customize the end-user confirmation message**: Click this link. In the **Customize confirmation message** flyout that appears, configure the following settings:
+    - **Customize the end-user confirmation message**: Click this link. In the **Customize confirmation message** flyout that appears, configure the following settings:
 
-      - **Before submission**: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
+        - **Before submission**: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
 
-        As noted, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
+            As noted, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
         > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
 
-      - **After submission**: Click ![Expand icon](../../media/scc-expand-icon.png). In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
+        - **After submission**: Click ![Expand icon](../../media/scc-expand-icon.png). In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
 
       When you're finished, click **Save**. To clear these values, click **Restore** back on the **User submissions** page.
-
-      - **Send the reported messages to**: Make one of the following selections:
-
-        - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
-
-        - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
-
-        - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
+    
+    - **Customize the end-user reporting options**: Click this link. In the
+**Customize end-user reporting options** flyout that appears, enter the
+descriptive text for Junk email reporting options. 
+      Under **Options to show when messages are reported**, select at least
+one among the following options:
+        - **Ask me before sending a report**
+        - **Automatically send reports**
+        -  **Never send reports** \
+   When you're finished, click **Save**.
+              - **Send the reported messages to**: Make one of the following selections:
+              - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
+              - **Both Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
+              - **Custom mailbox only**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to an admin or the security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it themselves.
 
         > [!NOTE]
         > U.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. The other two options are disabled.
@@ -118,11 +127,12 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
       > [!CAUTION]
       > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in or the Report Phishing add-in.
 
-   - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
-      Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing mailbox that is already in Office 365. This has to be an existing mailbox in Exchange Online that can receive email.
+    1. **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
-      When you're finished, click **Confirm**.
+          Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing mailbox that is already in Office 365. This has to be an existing mailbox in Exchange Online that can receive email.
+
+          When you're finished, click **Confirm**.
 
 ## Message submission format
 

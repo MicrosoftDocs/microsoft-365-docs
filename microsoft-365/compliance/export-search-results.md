@@ -280,7 +280,7 @@ For information about limits when exporting content search results, see the "Exp
 
   In the script, you have to specify the name of the search that you want to export results for. For example, for a search named, `SearchAllMailboxes` replace SEARCHNAME_Export with `SearchAllMailboxes_Export`.
 
-  After you add the name of the search to the script, you can copy the script text and then paste it into a Windows PowerShell window that's [connected to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). After you paste the script, the eDiscovery Export Tool is displayed (like it is when you download search results using the UI):
+  After you add the name of the search to the script, you can copy the script text and then paste it into a Windows PowerShell window that's [connected to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). After you paste the script, the eDiscovery Export Tool is displayed (like it is when you download search results using the UI):
 
   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
 

@@ -11,7 +11,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150

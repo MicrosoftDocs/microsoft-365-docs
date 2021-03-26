@@ -58,25 +58,25 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   You can't manage anti-phishing policies in standalone EOP PowerShell.
 
-- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
   - To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to anti-phishing policies, you need to be a member of the **Global Reader** or **Security Reader** role groups<sup>\*</sup>.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Notes**:
 
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature<sup>\*</sup>.
   - <sup>\*</sup> In the Security & Compliance Center, read-only access allows users to view the settings of custom anti-phishing policies. Read-only users can't see the settings in the default anti-phishing policy.
 
-- To create and modify anti-phishing policies in standalone EOP, you need to do something that requires _hydration_ for your tenant. For example, in the Exchange admin center (EAC), you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back). If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully. For more information about hydration, see the [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).
+- To create and modify anti-phishing policies in standalone EOP, you need to do something that requires _hydration_ for your tenant. For example, in the Exchange admin center (EAC), you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back). If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully. For more information about hydration, see the [Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).
 
-- For our recommended settings for anti-phishing policies, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
+- For our recommended settings for anti-phishing policies, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings).
 
 - Allow up to 30 minutes for the updated policy to be applied.
 
@@ -162,7 +162,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
    - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 
@@ -317,7 +317,7 @@ This example creates an anti-phish policy named Research Quarantine with the fol
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
-For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy).
+For detailed syntax and parameter information, see [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
 #### Step 2: Use PowerShell to create an anti-phish rule
 
@@ -337,7 +337,7 @@ This example creates an anti-phish rule named Research Department with the follo
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule).
+For detailed syntax and parameter information, see [New-AntiPhishRule](/powershell/module/exchange/New-AntiPhishRule).
 
 ### Use PowerShell to view anti-phish policies
 
@@ -359,7 +359,7 @@ This example returns all the property values for the anti-phish policy named Exe
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Get-AntiPhishPolicy](/powershell/module/exchange/Get-AntiPhishPolicy).
 
 ### Use PowerShell to view anti-phish rules
 
@@ -391,7 +391,7 @@ This example returns all the property values for the anti-phish rule named Conto
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule).
+For detailed syntax and parameter information, see [Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
 
 ### Use PowerShell to modify anti-phish policies
 
@@ -407,7 +407,7 @@ To modify an anti-phish policy, use this syntax:
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
 ### Use PowerShell to modify anti-phish rules
 
@@ -421,7 +421,7 @@ To modify an anti-phish rule, use this syntax:
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule).
+For detailed syntax and parameter information, see [Set-AntiPhishRule](/powershell/module/exchange/set-antiphishrule).
 
 ### Use PowerShell to enable or disable anti-phish rules
 
@@ -445,7 +445,7 @@ This example enables same rule.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
+For detailed syntax and parameter information, see [Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) and [Disable-AntiPhishRule](/powershell/module/exchange/disable-antiphishrule).
 
 ### Use PowerShell to set the priority of anti-phish rules
 
@@ -485,7 +485,7 @@ This example removes the anti-phish policy named Marketing Department.
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](/powershell/module/exchange/Remove-AntiPhishPolicy).
 
 ### Use PowerShell to remove anti-phish rules
 
@@ -503,7 +503,7 @@ This example removes the anti-phish rule named Marketing Department.
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule).
+For detailed syntax and parameter information, see [Remove-AntiPhishRule](/powershell/module/exchange/Remove-AntiPhishRule).
 
 ## How do you know these procedures worked?
 
