@@ -29,7 +29,7 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The `DeviceTvmSoftwareInventory` table in the advanced hunting schema contains the [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) inventory of software currently installed on devices in your network, including end of support information. You can, for instance, hunt for events involving devices that are installed with a currently vulnerable software version. Use this reference to construct queries that return information from the table.
+The `DeviceTvmSoftwareInventory` table in the advanced hunting schema contains the [threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) inventory of software currently installed on devices in your network, including end of support information. You can, for instance, hunt for events involving devices that are installed with a currently vulnerable software version. Use this reference to construct queries that return information from the table.
 
 DeviceTVMSoftwareInventory contains all the software which threat and vulnerability management was able to match to a Common Platform Enumeration (CPE) – whether it is vulnerable or not.
 
@@ -40,18 +40,16 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Unique identifier for the device in the service |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `DeviceId` | string | Unique identifier for the device in the service. |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device. |
 | `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
-| `OSVersion` | string | Version of the operating system running on the device |
-| `OSArchitecture` | string | Architecture of the operating system running on the device |
-| `SoftwareVendor` | string | Name of the software vendor |
-| `SoftwareName` | string | Name of the software product |
-| `SoftwareVersion` | string | Version number of the software product |
-| `EndOfSupportStatus` | string | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
-| `EndOfSupportDate` | string | End-of-support (EOS) or end-of-life (EOL) date of the software product |
-
-
+| `OSVersion` | string | Version of the operating system running on the device. |
+| `OSArchitecture` | string | Architecture of the operating system running on the device. |
+| `SoftwareVendor` | string | Name of the software vendor. |
+| `SoftwareName` | string | Name of the software product. |
+| `SoftwareVersion` | string | Version number of the software product. |
+| `EndOfSupportStatus` | string | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date. |
+| `EndOfSupportDate` | string | End-of-support (EOS) or end-of-life (EOL) date of the software product. |
 
 ## Related topics
 
@@ -59,4 +57,3 @@ For information on other tables in the advanced hunting schema, see [the advance
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-
