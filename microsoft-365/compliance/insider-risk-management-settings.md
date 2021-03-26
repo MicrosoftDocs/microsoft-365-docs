@@ -212,7 +212,7 @@ For each of the following domain settings, you can enter up to 500 domains:
     - Files, folders, sites shared with external domains
     - Files uploaded to external domains (using Microsoft Edge browser)
 
-    By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address). You can't include your SharePoint sites as allowed domains. 
+    By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for activity related to the device indicator *Use a browser to download content from a third-party site*.
 
