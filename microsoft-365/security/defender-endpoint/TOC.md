@@ -354,7 +354,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
-##### [Configure advanced features](advanced-features.md
+##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
 ##### [Use basic permissions to access the portal](basic-permissions.md)
