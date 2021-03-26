@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
-description: Troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint for Mac
+description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,20 +28,20 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This article provides information on how to troubleshoot issues with the kernel extension that is installed as part of Microsoft Defender for Endpoint for Mac.
 
-Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they are allowed to run on the device.
+Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they're allowed to run on the device.
 
-If you did not approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint for Mac, the application displays a banner prompting you to enable it:
+If you didn't approve the kernel extension during the deployment/installation of Microsoft Defender for Endpoint for Mac, the application displays a banner prompting you to enable it:
 
-   ![RTP disabled screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![RTP disabled screenshot](images/mdatp-32-main-app-fix.png)
 
-You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension is not approved to run on your device.
+You can also run ```mdatp health```. It reports if real-time protection is enabled but not available. This indicates that the kernel extension isn't approved to run on your device.
 
 ```bash
 mdatp health
@@ -68,11 +68,11 @@ If less than 30 minutes have passed since the product was installed, navigate to
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
-![Security and privacy window after prompt expired screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Security and privacy window after prompt expired screenshot](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 
-1. In Terminal, attempt to install the driver. The following operation will fail, because the kernel extension was not approved to run on the device. However, it will trigger the approval flow again.
+1. In Terminal, attempt to install the driver. The following operation will fail, because the kernel extension wasn't approved to run on the device. However, it will trigger the approval flow again.
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext

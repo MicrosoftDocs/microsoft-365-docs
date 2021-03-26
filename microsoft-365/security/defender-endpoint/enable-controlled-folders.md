@@ -21,7 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -136,4 +136,4 @@ Use `Disabled` to turn off the feature.
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Customize controlled folder access](customize-controlled-folders.md)
-* [Evaluate Microsoft Defender for Endpoint](evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)

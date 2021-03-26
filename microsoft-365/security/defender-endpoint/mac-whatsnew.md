@@ -25,7 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -35,6 +35,10 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+
+## 101.22.79 (20.121012.12279.0)
+
+- Performance improvements & bug fixes
 
 ## 101.19.88 (20.121011.11988.0)
 

@@ -107,7 +107,7 @@ Use this option to assign users to specific role groups to segment communication
 
 9. Select **Close** to complete the steps.
 
-For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/defender-365-security/protect-against-threats.md).
+For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
 ## Step 2 (required): Enable the audit log
 
