@@ -65,14 +65,15 @@ The following two specific rules don't support exclusions:
 
 ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
-> [!Note] Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
-> -  ASR rules exclusions are independent from Defender AV exclusions
-> -  Wildcards cannot be used to define a drive letter
-> - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
-> - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
-> - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
-> - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
-> - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
+Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
+
+- ASR rules exclusions are independent from Defender AV exclusions
+- Wildcards cannot be used to define a drive letter
+- If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
+- Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
+- If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
+- ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
+- ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
 
 
 
