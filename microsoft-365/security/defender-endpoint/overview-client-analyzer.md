@@ -56,7 +56,7 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
     and/or sensitive data, such as (but not limited to) IP addresses, PC names,
     and usernames.
 
--   Once data collection is completed, the tool saves the data locally on the
+-   Once data collection is complete, the tool saves the data locally on the
     machine within a subfolder and compressed zip file.
 
 -   No data is automatically sent to Microsoft. If you are using the tool during
