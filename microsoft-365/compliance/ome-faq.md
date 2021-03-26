@@ -113,7 +113,7 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-The short answer is yes! If enabled, PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send an email, the Office 365 service encrypts PDF file attachments, not the Outlook client.
+The short answer is yes! If enabled, PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send an email, the Office 365 service encrypts PDF file attachments. The Outlook client doesn't encrypt PDF file attachments.
 
 For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any additional steps. These clients natively support PDF encryption.
 
