@@ -28,7 +28,7 @@ ms.date: 07/01/2020
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[Overview of Microsoft 365 admin center](microsoft-365/business-video/admin-center-overview.md?preserve-view=true&view=o365-21vianet).
+[Overview of Microsoft 365 admin center](/microsoft-365/business-video/admin-center-overview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 4. In the **Manage product licenses** pane, select **Replace existing product license assignments** \> **Next**.
 
-5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.\
+5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
 
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want those users to have. Any previous license assignments for the selected users are removed.
 
@@ -68,7 +68,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
 
-5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.\
+5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
 
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
 
@@ -86,7 +86,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
 
-5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.\
+5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
 
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
 
