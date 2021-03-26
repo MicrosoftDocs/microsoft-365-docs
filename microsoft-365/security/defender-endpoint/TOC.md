@@ -586,6 +586,7 @@
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
+##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Security](../index.yml)
 # [Microsoft 365 Defender](../defender/microsoft-365-defender.md)

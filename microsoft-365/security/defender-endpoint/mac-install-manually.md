@@ -142,34 +142,39 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 > [!CAUTION]
 > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
 
-To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
+1. To grant consent, open **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
-Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
 - Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
-    ``bash
+
+```bash
     mdatp health --field real_time_protection_enabled
-    ``
+```
+
 - Open a Terminal window. Copy and execute the following command:
-    ``bash
+
+```bash
     curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-    ``
+```
+
 - The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
-    ``bash
+
+```bash
     mdatp threat list
-    ``
-Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+```
+
+3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 In your browser such as Microsoft Edge for Mac or Safari
 Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
 You may get prompted:
 
-Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
+> Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
 You can change which websites can download files in Websites Preferences.
-Cancel Allow.
 
-Click **Allow**.
-Open **Downloads**.
-You should see **MDATP MacOS DIY**.
+4. Click **Allow**.
+5. Open **Downloads**.
+6. You should see **MDATP MacOS DIY**.
 
 > [!TIP]
 > If you double-click, you will get the following message:

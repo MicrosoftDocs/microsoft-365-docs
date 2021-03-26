@@ -14,6 +14,7 @@ ms.author: v-maave
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
 ---
 
@@ -44,7 +45,7 @@ Yes. ASR is supported for Windows Enterprise E3 and above.
 
 All of the rules supported with E3 are also supported with E5.
 
-E5 also added greater integration with Defender for Endpoint. With E5, you can [use Defender for Endpoint to monitor and review analytics](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) on alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
+E5 adds greater integration with Defender for Endpoint. With E5, you can view alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
 
 ## What are the currently supported ASR rules?
 ASR currently supports all of the rules below.
@@ -56,23 +57,24 @@ recommended that you enable ASR rules in [audit mode](audit-windows-defender.md)
 ## How do ASR rules exclusions work?
 For ASR rules, if you add one exclusion, it will affect every ASR rule.
 The following two specific rules don't support exclusions:
-||||
-|:--|:--|:--|
+
 |Rule name|GUID|File & folder exclusions|
+|:--|:--|:--|
 |Block JavaScript or VBScript from launching downloaded executable content|D3E037E1-3EB8-44C8-A917-57927947596D|Not supported|
 |Block persistence through WMI event subscription|e6db77e5-3df2-4cf1-b95a-636979351e5b|Not supported|
-||||
 
-**Important notes on ASR rules exclusions (including wildcards and env. variables):**
--  ASR rules exclusions are independent from Defender AV exclusions
--  Wildcards cannot be used to define a drive letter
-- If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
-- Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
-- If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
-- ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
-- ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
+ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
-ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+>[!Note] Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
+> -  ASR rules exclusions are independent from Defender AV exclusions
+> -  Wildcards cannot be used to define a drive letter
+> - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
+> - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
+> - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
+> - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
+> - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
+
+
 
 ## How do I know what I need to exclude?
 Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
@@ -94,7 +96,7 @@ Looking at the above example, if you really had to create an exception for the p
 We recommend enabling every possible rule. However, there are some cases where you shouldn’t enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you’re using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
 
 We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
-[public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide).
+[public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md).
  spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
 
 * [Block executable content from email client and webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
