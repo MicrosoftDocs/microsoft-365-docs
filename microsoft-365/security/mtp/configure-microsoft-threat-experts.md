@@ -1,6 +1,6 @@
 ---
-title: Configure and manage Microsoft Threat Experts capabilities
-description: Register to Microsoft Threats Experts to configure, manage, and use it in your daily security operations and security administration work.
+title: Configure and manage Microsoft Threat Experts capabilities through Microsoft 365 Defender
+description: Subscribe to Microsoft Threats Experts through Microsoft 365 Defender to configure, manage, and use it in your daily security operations and security administration work.
 keywords: Microsoft Threat Experts, managed threat hunting service, MTE, Microsoft managed hunting service
 search.product: Windows 10
 search.appverid: met150
@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365
 ---
 
 # Configure and manage Microsoft Threat Experts capabilities
@@ -66,7 +65,7 @@ You can receive targeted attack notification from Microsoft Threat Experts throu
 - The Microsoft 365 Defender portal's **Incidents** page
 - The Microsoft 365 Defender portal's **Alerts** dashboard
 - OData alerting [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) and [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [DeviceAlertEvents](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
+- [DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
 - Your inbox, if you choose to have targeted attack notifications sent to you via email. See [Create an email notification rule](#create-an-email-notification-rule) below.
 
 ### Create an email notification rule
@@ -98,7 +97,7 @@ You can contact Microsoft Threat Experts from inside the Microsoft 365 Defender 
 
 2. From the top menu, select **? Consult a threat expert**.
 
-    ![Image of Microsoft Threat Experts Experts on Demand from the menu](../../media/mte/incident-action-mte-highlighted.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu](../../media/mte/incidents-action-mte-highlighted.png)
 
     A flyout screen will open.
 
