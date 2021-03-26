@@ -59,8 +59,10 @@ For more information about role assignments, see [Create and manage roles](user-
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
-## Always remediate PUA - ADD
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. When turned off, remediation is dependent on the device configuration. 
+## Always remediate PUA
+Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. 
+
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration. 
 
 
 ## Restrict correlation to within scoped device groups - ADD
