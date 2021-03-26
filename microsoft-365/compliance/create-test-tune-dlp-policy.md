@@ -45,7 +45,7 @@ Members of your compliance team who will create DLP policies need permissions to
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 

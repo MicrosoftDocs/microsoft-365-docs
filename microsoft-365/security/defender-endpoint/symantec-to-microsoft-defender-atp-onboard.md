@@ -34,7 +34,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 || |*You are here!* |
 
 
-**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
@@ -100,6 +100,6 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)! 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 - [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).
