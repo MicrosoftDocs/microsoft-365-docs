@@ -3290,6 +3290,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/atp-safe-links.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-links",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365",
       "redirect_document_id": true
