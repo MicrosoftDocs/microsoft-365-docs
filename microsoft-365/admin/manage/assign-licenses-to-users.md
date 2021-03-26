@@ -36,8 +36,8 @@ You can assign licenses to users on either the **Active users** page, or on the 
 ## Before you begin
 
 - You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- You can [assign licenses to user accounts with Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
-- To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
+- You can [assign licenses to user accounts with Office 365 PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
 
 ## Use the Licenses page to assign licenses to users
@@ -150,7 +150,7 @@ When you use the **Active users** page to assign licenses, you assign users lice
 
 ## Assign a license to a guest user
 
-You can invite guest users to collaborate with your organization in the Azure Active Directory admin center. To learn about guest users, see [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add guest users to your directory in the Azure portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+You can invite guest users to collaborate with your organization in the Azure Active Directory admin center. To learn about guest users, see [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add guest users to your directory in the Azure portal](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > You must be a Global admin to do these steps.

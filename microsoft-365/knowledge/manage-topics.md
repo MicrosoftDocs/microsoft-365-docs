@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic 
-    - m365initiative-topics
+    - m365initiative-viva-topics
 localization_priority: None
 
 ---
@@ -47,7 +47,7 @@ Knowledge managers help to guide discovered topics through the topic lifecycle i
 To manage topics in the Topic center, you need to:
 - Have a Viva Topics license.
 
-- Have the [**Who can manage topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) permission. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Have the [**Who can manage topics**](./topic-experiences-user-permissions.md) permission. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 You will not be able to view the Manage Topics page in the Topic Center unless you have the **Who can manage topics** permission.
 
@@ -106,8 +106,4 @@ Note that you can still chose to reject a confirmed topic.  To do this, go to th
 ## Published topics
 Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-   ![Manage Topics](../media/knowledge-management/manage-topics-new.png) </br> 
-
-
-
-
+   ![Manage Topics](../media/knowledge-management/manage-topics-new.png) </br>

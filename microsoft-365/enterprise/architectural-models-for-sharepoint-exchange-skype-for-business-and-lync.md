@@ -97,7 +97,7 @@ The IT posters for SharePoint 2016 and Skype for Business 2015 provide a way to 
 
 |Item|Description|
 |---|---|
-|[![Thumbnail for the SharePoint Server 2016 Databases poster.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=55041)|This IT poster is a quick reference for SharePoint Server 2016 databases. You'll see details for each database: <br/><br/> - Size <br/> - Scaling guidance <br/> - I/O patterns <br/> - Requirements <br/><br/>  The first page shows the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  For more information, see [Database types and descriptions in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions).|
+|[![Thumbnail for the SharePoint Server 2016 Databases poster.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=55041)|This IT poster is a quick reference for SharePoint Server 2016 databases. You'll see details for each database: <br/><br/> - Size <br/> - Scaling guidance <br/> - I/O patterns <br/> - Requirements <br/><br/>  The first page shows the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  For more information, see [Database types and descriptions in SharePoint Server 2016](/SharePoint/technical-reference/database-types-and-descriptions).|
    
 <a name="SfB2015_ArchModel"> </a>
 ### Microsoft Skype for Business 2015 Architectural Models
@@ -169,11 +169,10 @@ The IT posters for SharePoint in Azure show Azure-based solutions that use Share
    
 ## See also
 
-- [Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+- [Microsoft 365 solution and architecture center](../solutions/index.yml)
   
 - [Microsoft cloud architecture models](../solutions/cloud-architecture-models.md)
   
 - [Microsoft 365 test lab guides](m365-enterprise-test-lab-guides.md)
   
 - [Hybrid solutions](hybrid-solutions.md)
-

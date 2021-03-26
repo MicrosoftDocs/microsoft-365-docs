@@ -21,7 +21,7 @@ description: "Declare records by using retention labels."
 
 # Declare records by using retention labels
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.
 
@@ -36,7 +36,7 @@ You can then either publish those labels in a retention label policy so that use
 
 By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard. To display this option, you must first run a PowerShell command:
 
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connect to the Office 365 Security & Compliance Center Powershell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Run the following cmdlet:
     

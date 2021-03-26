@@ -32,7 +32,7 @@ You can unassign licenses from users on either the **Active users** page, or on 
 ## Before you begin
 
 - You must be a Global, License, User admin to unassign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- You can [remove licenses from user accounts with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
+- You can [remove licenses from user accounts with Office 365 PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - You can also [delete user accounts](../add-users/delete-a-user.md) that were assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to assign to someone else.
 
 ## Use the Licenses page to unassign licenses
@@ -117,9 +117,9 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 ## What happens to a user's data when you remove their license?
 
 - When a license is removed from a user, data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
-- Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
-- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
-- If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). For more information, see [Create and manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+- Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
+- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes).
+- If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - To learn how to block a user's access to Microsoft 365 data after their license is removed, and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 - If you remove a user's license and they still have Office apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Office apps.
 
@@ -129,6 +129,6 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 
 ## Related content
 
-[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
+[Remove licenses from your subscription](../../commerce/licenses/buy-licenses.md) (article)\
 [Assign licenses to users](assign-licenses-to-users.md) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) (article)

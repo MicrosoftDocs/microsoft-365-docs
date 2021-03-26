@@ -27,14 +27,14 @@ description: In this article, learn how to do common management tasks for Micros
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-This article provides the steps for doing common management tasks for Groups in Microsoft PowerShell. It also lists the PowerShell cmdlets for Groups. For info about managing SharePoint sites, see [Manage SharePoint Online sites using PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
+This article provides the steps for doing common management tasks for Groups in Microsoft PowerShell. It also lists the PowerShell cmdlets for Groups. For info about managing SharePoint sites, see [Manage SharePoint Online sites using PowerShell](/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## Link to your Microsoft 365 Groups usage guidelines
 <a name="BK_LinkToGuideLines"> </a>
 
 When users [create or edit a group in Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), you can show them a link to your organization's usage guidelines. For example, if you require a specific prefix or suffix to be added to a group name.
 
-Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?LinkID=827484) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. Once you run the AAD cmdlet, user's will see the link to your guidelines when they create or edit a group in Outlook.
+Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. Once you run the AAD cmdlet, user's will see the link to your guidelines when they create or edit a group in Outlook.
 
 ![Create a new group with usage guidelines link](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
@@ -43,11 +43,11 @@ Use the Azure Active Directory (Azure AD) PowerShell to point your users to your
 ## Allow users to Send as the Microsoft 365 Group
 <a name="BK_LinkToGuideLines"> </a>
 
-If you want to enable your Microsoft 365 groups to "Send As", use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission) and [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/get-recipientpermission) cmdlets to configure this. Once you enable this setting, Microsoft 365 group users can use Outlook or Outlook on the web to send and reply to email as the Microsoft 365 group. Users can go to the group, create a new email, and change the "Send As" field to the group's email address.
+If you want to enable your Microsoft 365 groups to "Send As", use the [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) and [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) cmdlets to configure this. Once you enable this setting, Microsoft 365 group users can use Outlook or Outlook on the web to send and reply to email as the Microsoft 365 group. Users can go to the group, create a new email, and change the "Send As" field to the group's email address.
 
-([You can also do this in the Exchange Admin Center](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
+([You can also do this in the Exchange Admin Center](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
 
-Use the following script, replacing *\<GroupAlias\>* with the alias of the group that you want to update, and *\<UserAlias\>* with the alias of the user to whom you want to grant permissions. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to run this script.
+Use the following script, replacing *\<GroupAlias\>* with the alias of the group that you want to update, and *\<UserAlias\>* with the alias of the user to whom you want to grant permissions. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to run this script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -61,14 +61,14 @@ Once the cmdlet is executed, users can go to Outlook or Outlook on the web to se
 
 ## Create classifications for Microsoft 365 Groups in your organization
 
-You can create sensitivity labels that the users in your organization can set when they create a Microsoft 365 Group. If you want to classify groups, we recommend using sensitivity labels instead of the previous groups classification feature. For information about using sensitivity labels, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+You can create sensitivity labels that the users in your organization can set when they create a Microsoft 365 Group. If you want to classify groups, we recommend using sensitivity labels instead of the previous groups classification feature. For information about using sensitivity labels, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!IMPORTANT]
 > If you are currently using classification labels, they will no longer be available to users who create groups once sensitivity labels are enabled.
 
 You can still use the previous groups classification feature. You can create classifications that the users in your organization can set when they create an Microsoft 365 Group. For example, you can allow users to set "Standard", "Secret", and "Top Secret" on groups they create. Group classifications aren't set by default and you need to create it in order for your users to set it. Use Azure Active Directory PowerShell to point your users to your organization's usage guidelines for Microsoft 365 Groups.
 
-Check out [Azure Active Directory cmdlets for configuring group settings](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the classification for Microsoft 365 Groups.
+Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the classification for Microsoft 365 Groups.
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -88,7 +88,7 @@ Example:
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-After you run the above Azure Active Directory cmdlet to set your classification, run the [Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) cmdlet if you want to set the classification for a specific group.
+After you run the above Azure Active Directory cmdlet to set your classification, run the [Set-UnifiedGroup](/powershell/module/exchange/Set-UnifiedGroup) cmdlet if you want to set the classification for a specific group.
 
 ```powershell
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
@@ -100,7 +100,7 @@ Or create a new group with a classification.
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public>
 ```
 
-Check out [Using PowerShell with Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) and [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for more details on using Exchange Online PowerShell.
+Check out [Using PowerShell with Exchange Online](/powershell/exchange/exchange-online-powershell) and [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for more details on using Exchange Online PowerShell.
 
 Once these settings are enabled, the group owner will be able to choose a classification from the drop down menu in Outlook on the Web and Outlook, and save it from the **Edit** group page.
 
@@ -166,7 +166,7 @@ To verify the setting:
 
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
 
-To learn more, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
+To learn more, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
 ## Microsoft 365 Groups cmdlets
 
@@ -174,23 +174,23 @@ The following cmdlets can be used with Microsoft 365 Groups.
 
 |**Cmdlet name**|**Description**|
 |:-----|:-----|
-|[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Use this cmdlet to look up existing Microsoft 365 Groups, and to view properties of the group object  <br/> |
-|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Update the properties of a specific Microsoft 365 Group  <br/> |
-|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Create a new Microsoft 365 Group. This cmdlet provides a minimal set of parameters. To set values for extended properties, use Set-UnifiedGroup after creating the new group  <br/> |
-|[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Delete an existing Microsoft 365 Group  <br/> |
-|[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Retrieve membership and owner information for a Microsoft 365 Group  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Add members, owners, and subscribers to an existing Microsoft 365 Group <br/> |
-|[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Remove owners and members from an existing Microsoft 365 Group  <br/> |
-|[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Used to view information about the user photo associated with an account. User photos are stored in Active Directory  <br/> |
-|[Set-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Used to associate a user photo with an account. User photos are stored in Active Directory  <br/> |
-|[Remove-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Remove the photo for an Microsoft 365 Group  <br/> |
+|[Get-UnifiedGroup](/powershell/module/exchange/get-unifiedgroup) <br/> |Use this cmdlet to look up existing Microsoft 365 Groups, and to view properties of the group object  <br/> |
+|[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) <br/> |Update the properties of a specific Microsoft 365 Group  <br/> |
+|[New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) <br/> |Create a new Microsoft 365 Group. This cmdlet provides a minimal set of parameters. To set values for extended properties, use Set-UnifiedGroup after creating the new group  <br/> |
+|[Remove-UnifiedGroup](/powershell/module/exchange/remove-unifiedgroup) <br/> |Delete an existing Microsoft 365 Group  <br/> |
+|[Get-UnifiedGroupLinks](/powershell/module/exchange/get-unifiedgrouplinks) <br/> |Retrieve membership and owner information for a Microsoft 365 Group  <br/> |
+|[Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks) <br/> |Add members, owners, and subscribers to an existing Microsoft 365 Group <br/> |
+|[Remove-UnifiedGroupLinks](/powershell/module/exchange/remove-unifiedgrouplinks) <br/> |Remove owners and members from an existing Microsoft 365 Group  <br/> |
+|[Get-UserPhoto](/powershell/module/exchange/get-userphoto) <br/> |Used to view information about the user photo associated with an account. User photos are stored in Active Directory  <br/> |
+|[Set-UserPhoto](/powershell/module/exchange/set-userphoto) <br/> |Used to associate a user photo with an account. User photos are stored in Active Directory  <br/> |
+|[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Remove the photo for an Microsoft 365 Group  <br/> |
 
 ## Related topics
 
-[Upgrade distribution lists to Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
+[Upgrade distribution lists to Microsoft 365 Groups](/office365/admin/manage/upgrade-distribution-lists)
 
-[Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups)
 
 [Manage guest access to Microsoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Change static group membership to dynamic in](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)
+[Change static group membership to dynamic in](/azure/active-directory/users-groups-roles/groups-change-type)

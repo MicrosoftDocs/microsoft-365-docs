@@ -19,7 +19,7 @@ ms.custom: seo-marvel-apr2020
 
 # Message Encryption FAQ
 
-Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
+Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
 
 ## What is Office 365 Message Encryption (OME)?
 
@@ -33,7 +33,7 @@ You can use the new capabilities for OME under the following conditions:
 
 - If you have set up OME and IRM, you can use these steps if you are using the Azure Rights Management service from Azure Information Protection.
 
-- If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. When you've finished the migration, you can successfully set up OME.
+- If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. When you've finished the migration, you can successfully set up OME.
 
   If you choose to continue to use on-premises AD RMS with Exchange Online instead of migrating to Azure Information Protection, you will not be able to use these new capabilities.
 
@@ -47,17 +47,17 @@ To use the new OME capabilities, you need one of the following plans:
 
 - Each user benefiting from Office 365 Message Encryption needs to be licensed to be covered by the feature.
 
-- For the full list see the [Exchange Online service descriptions](https://technet.microsoft.com/library/exchange-online-service-description.aspx) for Office 365 Message Encryption.
+- For the full list see the [Exchange Online service descriptions](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) for Office 365 Message Encryption.
 
 ## Can I use Exchange Online with bring your own key (BYOK) in Azure Information Protection?
 
 Yes! Microsoft recommends that you complete the steps to set up BYOK before you set up OME.
   
-For more information about BYOK, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
+For more information about BYOK, see [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key).
   
 ## Do OME and BYOK with Azure Information Protection change Microsoft's approach to third-party data requests such as subpoenas?
 
-No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
+No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## How is this feature related to legacy Office 365 Message Encryption (OME) and Information Rights Management (IRM) features?
 
@@ -83,11 +83,11 @@ You can still use the previous version of OME, it will not be deprecated at this
   
 ## My organization uses Active Directory Rights Management, can I use this functionality?
 
-No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first.
+No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first.
   
 ## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
-On-premises users can send encrypted mail using Exchange Online mail flow rules. In order to do this, you need to route email through Exchange Online. For more information, see [Part 2: Configure mail to flow from your email server to Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+On-premises users can send encrypted mail using Exchange Online mail flow rules. In order to do this, you need to route email through Exchange Online. For more information, see [Part 2: Configure mail to flow from your email server to Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
@@ -103,11 +103,11 @@ Microsoft 365 users can use Outlook for PC versions 2019 and Microsoft 365 to cr
 
 ## Is there a size limit for messages you can send with OME?
 
-Yes. The maximum message size you can send with OME, including attachments, is 25 MB. For more information, see [Message limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+Yes. The maximum message size you can send with OME, including attachments, is 25 MB. For more information, see [Message limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
-You can attach any file type to a protected mail. With one exception, protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
+You can attach any file type to a protected mail. With one exception, protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](/information-protection/rms-client/client-admin-guide-file-types). OME does not support the 97-2003 versions of the following Office programs: Word (.doc), Excel (.xls), and PowerPoint (.ppt).
 
 If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, say an attachment is protected by Do Not Forward. The original recipient downloads the file, creates a message to a new recipient and attaches the file. When the new recipient receives the file, the recipient will not be able to open the protected file.
   
@@ -115,11 +115,11 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
 
 The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client.
 
-For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any additional steps. These clients natively support PDF encryption.
+For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any more steps. These clients natively support PDF encryption.
 
 Outlook desktop does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
-To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -140,8 +140,7 @@ When attachments are protected with a protected mail, Outlook clients provide th
 
 ## What email clients support revocation of protected emails?
 
-Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) for details.
-
+Outlook on the web supports revocation of protected mail.  See [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) for details.
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -169,7 +168,7 @@ Yes. All encrypted email messages are discoverable by Microsoft 365 compliance f
 
 ## Can I remove encryption from email?
 
-Admins can set up a mail flow rule to remove encryption from outgoing mail. You can't remove encryption using a mail flow rule from incoming messages.
+Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is encrypted using encrypt-only protection.
 
 ## Is delegated access supported?
 
@@ -206,15 +205,15 @@ There are currently two known limitations:
 
 **To assign a user to the shared mailbox**
 
-1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+1. [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
 
 2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example gives Ayla full access permissions to a support mailbox.
 
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
- ## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
+
+## Can I open encrypted messages sent to another user's mailbox with Fullaccess?
 
 Users can open encrypted messages as long as they are given direct access and automapping is turned ON. Access is not allowed if the access is granted via an email-enabled security group.
 

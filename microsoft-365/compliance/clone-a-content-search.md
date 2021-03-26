@@ -142,4 +142,4 @@ After you run the script to clone an existing Content Search, the next step is t
     
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
     
-- [eDiscovery cases](ediscovery-cases.md)
+- [eDiscovery cases](./get-started-core-ediscovery.md)

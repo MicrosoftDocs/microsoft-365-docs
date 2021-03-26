@@ -16,4 +16,4 @@ f1.keywords: NOCSH
 
 # Configure secure access to Microsoft 365 services
 
-This solution is based on the "[M365 golden config](https://aka.ms/m365goldenconfig)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive. 
+This solution is based on the "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.
