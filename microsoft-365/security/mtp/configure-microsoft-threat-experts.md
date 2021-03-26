@@ -16,7 +16,7 @@ audience: ITPro
 ms.topic: article
 ---
 
-# Configure and manage Microsoft Threat Experts capabilities
+# Configure and manage Microsoft Threat Experts capabilities through Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
