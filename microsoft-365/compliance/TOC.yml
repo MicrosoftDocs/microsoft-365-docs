@@ -239,8 +239,12 @@
             href: data-loss-prevention-policies.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
+          - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
+            href: dlp-teams-default-policy.md
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
-            href: dlp-on-premises-scanner-learn.md  
+            href: dlp-on-premises-scanner-learn.md
+          - name: Learn about the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-learn-about.md  
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -255,6 +259,8 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Endpoint DLP
             href: endpoint-dlp-configure-proxy.md
+          - name: Get started with the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-get-started.md
           - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
@@ -371,7 +377,7 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
+        - name: Veritas data connectors
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
@@ -405,10 +411,10 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
-            - name: Webpages
-              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -534,6 +540,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
         - name: Content search PowerShell scripts
@@ -564,6 +572,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Set up compliance boundaries
@@ -594,11 +604,11 @@
             href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
-        - name: Overview of Advanced eDiscovery
+        - name: Overview
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create an Advanced eDiscovery case
+        - name: Create and manage a case
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -629,14 +639,27 @@
         - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
-            - name: Advanced indexing of custodian data
+            - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
-            - name: Error remediation when processing data
+            - name: Error remediation when processing content
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md
+              href: single-item-error-remediation.md        
+        - name: Collect content for a case (preview)
+          items: 
+            - name: Learn about collections (preview)
+              href: collections-overview.md
+            - name: Create a draft collection (preview)
+              href: create-draft-collection.md
+            - name: Commit a draft collection to a review set (preview)
+              href: commit-draft-collection.md
+            - name: Collection statistics and reports (preview)
+              href: collection-statistics-reports.md        
+            - name: Build search queries for collections
+              href: building-search-queries.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md 
         - name: Collect data for a case
-          href: collecting-data-for-ediscovery.md
           items: 
             - name: Create a search
               href: create-search-to-collect-data.md
@@ -655,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Review case data
+        - name: Review case content
           items: 
             - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
@@ -665,7 +688,7 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-        - name: Analyze case data
+        - name: Analyze case content
           href: analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
@@ -674,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Use the Relevance module to analyze data
+            - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
               href: relevance-module-retirement.md  
-        - name: Export case data
+        - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
             - name: Download documents from a review set
@@ -696,9 +719,7 @@
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
-          items: 
-            - name: Advanced eDiscovery alignment with EDRM
-              href: advanced-ediscovery-edrm.md
+          items:
             - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
@@ -719,6 +740,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Content stored in mailboxes for eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Collect eDiscovery diagnostic information
@@ -762,11 +785,11 @@
         - name: Office 365 Management Activity API
           items:
             - name: Office 365 Management Activity API reference
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
             - name: Office 365 Management Activity API schema
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
-              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
@@ -821,8 +844,8 @@
         - name: Configure IRM to use an on-premises AD RMS server
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 enterprise
-  href: https://docs.microsoft.com/microsoft-365/enterprise/
+  href: ../enterprise/index.yml
 - name: Microsoft 365 security
-  href: https://docs.microsoft.com/microsoft-365/security/
+  href: ../security/index.yml
 - name: Microsoft 365 Apps for business
-  href: https://docs.microsoft.com/office365/admin/admin-home
+  href: /office365/admin/admin-home

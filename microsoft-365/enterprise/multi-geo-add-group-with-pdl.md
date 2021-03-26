@@ -52,4 +52,4 @@ Note that SharePoint group site provisioning is on-demand. The site will be prov
 
 ## Related topics
 
-[Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)

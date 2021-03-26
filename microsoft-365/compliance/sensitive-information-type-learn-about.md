@@ -20,7 +20,7 @@ description: ""
 
 # Learn about sensitive information types
 
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
+Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types

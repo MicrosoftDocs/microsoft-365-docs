@@ -106,7 +106,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
    | Host Name | Points to | Priority | TTL |
    |:-----|:-----|:-----|:-----|
-   |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+   |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) | 1 Hour|
    
 6. If there are any other MX records listed, delete each of them. 
     
@@ -184,4 +184,3 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-  
