@@ -28,7 +28,7 @@ You can use the Microsoft 365 admin center to configure properties for the user 
   
 ## Use the Azure Active Directory PowerShell for Graph module
 
-To configure properties for user accounts in the Azure Active Directory PowerShell for Graph module, use the [**Set-AzureADUser**](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet and specify the properties to set or change.
+To configure properties for user accounts in the Azure Active Directory PowerShell for Graph module, use the [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet and specify the properties to set or change.
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
@@ -68,7 +68,7 @@ You identify the account with the *-ObjectID* parameter and set or change specif
     
     This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.
     
-For additional parameters, see [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
+For additional parameters, see [Set-AzureADUser](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) .
 
 >[!Note]
 >Before you can assign licenses to a user account, you must assign a usage location.
@@ -154,7 +154,7 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 
 ### Change properties for a specific user account
 
-To configure properties for a specific user account, use the [**Set-MsolUser**](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) cmdlet and specify the properties to set or change. 
+To configure properties for a specific user account, use the [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) cmdlet and specify the properties to set or change. 
 
 You identify the account with the *-UserPrincipalName* parameter and set or change specific properties by using additional parameters. Here's a list of the most common parameters.
   
@@ -192,7 +192,7 @@ You identify the account with the *-UserPrincipalName* parameter and set or chan
     
     This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.
     
-For additional parameters, see [Set-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)).
+For additional parameters, see [Set-MsolUser](/previous-versions/azure/dn194136(v=azure.100)).
 
 To see the User Principal Names of all your users, run the following command:
   

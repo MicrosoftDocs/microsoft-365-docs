@@ -44,7 +44,7 @@ Watch the video below to learn how Compliance Manager can help simplify how your
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 
-- Pre-built assessments for common industry and regional standards and regulations, or custom assessments to meet your unique compliance needs (available assessments depend on your licensing agreement; [learn more](https://go.microsoft.com/fwlink/?linkid=2132371)).
+- Pre-built assessments for common industry and regional standards and regulations, or custom assessments to meet your unique compliance needs (available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
 
 - Workflow capabilities to help you efficiently complete your risk assessments through a single tool.
 

@@ -1,0 +1,118 @@
+### YamlMime:Landing
+
+title: Microsoft Defender for Endpoint documentation # < 60 chars
+summary: Microsoft Defender for Endpoint delivers preventative protection, post-breach detection, automated investigation, and response. # < 160 chars
+
+metadata:
+  title: Microsoft Defender for Endpoint documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft Defender for Endpoint and maximize the built-in security capabilities to protect devices, detect malicious activity, and remediate threats# Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/5/2021 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft Defender for Endpoint
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: What is Microsoft Defender for Endpoint?
+          url:  microsoft-defender-endpoint.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in Microsoft Defender for Endpoint
+            url: whats-new-in-microsoft-defender-atp.md
+      - linkListType: video
+        links:
+          - text: Overview video
+            url:  https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+ 
+  
+# Card
+  - title: Evaluate & deploy the service
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Evaluate Microsoft Defender for Endpoint
+          url: evaluation-lab.md 
+        - text: Plan your deployment
+          url: deployment-strategy.md
+      - linkListType: deploy
+        links:
+          - text: Deployment guide
+            url: deployment-phases.md
+          - text: Onboard supported devices
+            url: onboard-configure.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migration guide
+            url: migration-guides.md
+      - linkListType: video
+        links:
+          - text: Onboarding video
+            url:  https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr 
+ 
+# Card
+  - title: Security operations
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Endpoint detection and response
+          url: overview-endpoint-detection-response.md  
+        - text: Behavioural blocking and containment
+          url: behavioral-blocking-containment.md
+        - text: Automated investigation and response (AIR)
+          url: automated-investigations.md
+        - text: Advanced hunting
+          url: advanced-hunting-overview.md
+        - text: Microsoft Threat Experts
+          url: microsoft-threat-experts.md
+        - text: Threat analytics
+          url: threat-analytics.md
+
+  # Card
+  - title: Use Microsoft Defender for Endpoint on other platforms
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Microsoft Defender for Endpoint for Mac
+          url: microsoft-defender-endpoint-mac.md  
+        - text: Microsoft Defender for Endpoint for iOS
+          url: microsoft-defender-endpoint-ios.md
+        - text: Microsoft Defender for Endpoint for Linux
+          url: microsoft-defender-endpoint-linux.md
+        - text: Microsoft Defender for Endpoint for Android
+          url: microsoft-defender-endpoint-android.md          
+  
+ 
+# Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Management and APIs
+          url: management-apis.md  
+        - text: Partner integration
+          url: partner-integration.md
+
+# Card
+  - title: Security administration
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Threat & vulnerability management
+          url: next-gen-threat-and-vuln-mgt.md  
+        - text: Attack surface reduction
+          url: overview-attack-surface-reduction.md
+        - text: Next-generation protection
+          url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10         

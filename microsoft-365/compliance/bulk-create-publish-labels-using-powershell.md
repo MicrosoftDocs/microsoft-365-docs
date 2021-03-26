@@ -22,7 +22,7 @@ description: "Learn how to use PowerShell to create and publish retention labels
 
 # Create and publish retention labels by using PowerShell
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish. The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center. However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
@@ -46,7 +46,7 @@ The sample scripts provided in this article aren't supported under any Microsoft
 
 2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**
 
-2. Replace the examples with entries for your own retention labels and settings. For more information about the parameter values, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+2. Replace the examples with entries for your own retention labels and settings. For more information about the parameter values, see [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
 3. Save the worksheet as a .csv file in a location that's easy to find for a later step. For example: C:\>Scripts\Labels.csv
 
@@ -73,7 +73,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**
 
-2. Replace the examples with entries for your own retention label policies and their settings. For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+2. Replace the examples with entries for your own retention label policies and their settings. For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
 3. Save the worksheet as a .csv file in a location that's easy to find for a later step. For example: `<path>Policies.csv`
 
@@ -731,7 +731,7 @@ if ($ResultCSV)
 
 ## Step 4: Run the PowerShell script
 
-First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+First, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Then, run the script that creates and publishes the retention labels:
   
@@ -756,5 +756,3 @@ You can find the log file at the following location, although the digits in the 
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

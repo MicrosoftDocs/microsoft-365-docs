@@ -20,7 +20,7 @@ ms.custom: seo-marvel-mar2020
 ---
 # Add or remove members from a case
 
-You can add or remove members to manage who can access the case. However, before a member can access a Advanced eDiscovery case (and perform tasks in the case), you must add the user to the eDiscovery Manager role group on the **Permissions** page in the security and compliance center. For more information, see [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+You can add or remove members to manage who can access the case. However, before a member can access a Advanced eDiscovery case (and perform tasks in the case), you must add the user to the eDiscovery Manager role group on the **Permissions** page in the security and compliance center. For more information, see [Assign eDiscovery permissions in the Security & Compliance Center](./assign-ediscovery-permissions.md).
 
 1. On the **Advanced eDiscovery** page, go to the case that you want to add a member to.
 
@@ -31,6 +31,9 @@ You can add or remove members to manage who can access the case. However, before
 4. Under **Manage members**, click **Add** to add members to the case. You can also choose to add a role group to the case by clicking  **Add** under **Manage role groups**.
 
 5. In the list of people or role groups that can be added as members of the case, select the check box next to the names of the people or role groups that you want to add.
+
+   > [!NOTE]
+   > When adding a role group to a case, you can only add the role groups that you are a member of.
 
 6. After you've selected the people or role groups to add as members of the case, click **Add**.
 

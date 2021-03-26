@@ -23,7 +23,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
--  [Exchange Online Protection standalone](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 Here we answer the most common general questions about Exchange Online Protection (EOP) cloud-hosted email filtering service. For additional frequently asked questions (FAQ) topics, go to the following links:
 
@@ -37,7 +37,7 @@ Here we answer the most common general questions about Exchange Online Protectio
 
 - [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md)
 
-- [Message Trace FAQ](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq)
+- [Message Trace FAQ](/exchange/monitoring/trace-an-email-message/message-trace-faq)
 
 ## What is EOP?
 
@@ -57,7 +57,7 @@ When you change your MX record, as per the steps outlined in [Set up your EOP se
 
 ## Do I have to use all features of Microsoft 365 to use EOP? What if I just want EOP protection and that's all?
 
-You can use EOP to protect your on-premises mailboxes without using any other features of Microsoft 365. This is known as a standalone subscription. A list of EOP features can be found in the [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+You can use EOP to protect your on-premises mailboxes without using any other features of Microsoft 365. This is known as a standalone subscription. A list of EOP features can be found in the [Exchange Online Protection Service Description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## Why do I need a Microsoft 365 tenant when signing up for email filtering through EOP?
 
@@ -87,8 +87,8 @@ To learn more about the steps we've taken to ensure the safety of your data and 
 
 ## Are there any limits I should be aware of, such as message size limitations?
 
-Yes. For more information about limits in EOP, see [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Yes. For more information about limits in EOP, see [Exchange Online Protection Limits](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## Does EOP support PowerShell?
 
-Yes, full EOP functionality is available via PowerShell: Exchange Online PowerShell for organizations with Exchange Online Mailboxes; standalone EOP PowerShell for standalone EOP organizations. For more information, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) and [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).
+Yes, full EOP functionality is available via PowerShell: Exchange Online PowerShell for organizations with Exchange Online Mailboxes; standalone EOP PowerShell for standalone EOP organizations. For more information, see [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) and [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell).

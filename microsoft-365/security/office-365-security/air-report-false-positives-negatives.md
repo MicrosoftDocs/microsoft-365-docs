@@ -1,9 +1,8 @@
 ---
-title: How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365
+title: "How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365"
 description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,8 +10,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
+ms.prod: m365-security
 ms.date: 01/29/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,8 +29,8 @@ ms.technology: mdo
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 If [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
 
@@ -48,9 +48,9 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 ## Adjust an alert to prevent false positives from recurring
 
-If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts).
+If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts).
 
-If your organization is using [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Undo a remediation action
 
@@ -73,13 +73,13 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)).
-2. In the navigation pane, select **Action center**. 
+1. Go to the Microsoft 365 security center (<https://security.microsoft.com>).
+2. In the navigation pane, select **Action center**.
 3. Select the **History** tab to view the list of completed actions.
-4. Select an item. Its flyout pane opens. 
+4. Select an item. Its flyout pane opens.
 5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
 
-- [Microsoft Defender for Office 365](office-365-atp.md)
+- [Microsoft Defender for Office 365](defender-for-office-365.md)
 - [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)

@@ -157,6 +157,4 @@ Check out the following articles for different SharePoint Online page customizat
     
 - [Using the object cache with SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [How to: Avoid getting throttled or blocked in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
-    
-
+- [How to: Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
