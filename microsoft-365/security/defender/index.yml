@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Microsoft 365 security documentation # < 60 chars
-summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+title: Microsoft 365 Defender # < 60 chars
+summary: Learn about the robust security solutions in Microsoft 365 Defender so that you can better protect your enterprise across attack surfaces.  # < 160 chars
 
 metadata:
-  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft 365 Defender documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the robust security solutions in Microsoft 365 Defender so that you can better protect your enterprise across attack surfaces. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -30,3 +30,26 @@ landingContent:
             url:  ../defender/microsoft-365-defender.md
           - text: Microsoft 365 security center
             url: ../defender/overview-security-center.md
+
+# Card (optional)
+  - title: Microsoft 365 security center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of the Microsoft 365 security center
+            url: overview-security-center.md
+          - text: Microsoft Defender for Endpoint in the Microsoft 365 security center
+            url: microsoft-365-security-center-mde.md
+          - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
+            url: ../defender/microsoft-365-security-center-mdo.md
+# Card
+  - title: Manage incidents and alerts
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Investigate incidents
+            url: investigate-incidents.md
+          - text: Automated investigation and response
+            url: m365d-autoir.md
+          - text: Hunt for threats
+            url: advanced-hunting-overview.md

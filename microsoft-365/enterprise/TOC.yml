@@ -459,7 +459,7 @@
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
