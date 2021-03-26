@@ -34,7 +34,7 @@ Anybody with Microsoft 365 Business Premium can use this guidance to configure e
 - National or federal political campaigns in the United States and New Zealand
 - U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)*
 
-    *Due to local regulations, we are unable to offer M365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
+    *Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
 
 - State-level political parties in the United States
 
