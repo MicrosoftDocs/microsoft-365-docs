@@ -2,12 +2,12 @@
   "redirections": [
     {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
-      "redirect_url": "microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/microsoft-365-admin-center-preview.md",
-      "redirect_url": "microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
       "redirect_document_id": false
     },
     {
