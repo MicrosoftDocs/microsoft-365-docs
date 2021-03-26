@@ -13,10 +13,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_TOC
 ms.custom:
+- AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - okr_SMB
-- AdminSurgePortfolio
 - manage_licenses
 - commerce
 search.appverid:

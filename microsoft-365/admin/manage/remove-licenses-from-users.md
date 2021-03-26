@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - manage_licenses
+- okr_smb
 - commerce
 search.appverid:
 - MET150
