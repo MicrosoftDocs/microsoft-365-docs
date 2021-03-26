@@ -587,5 +587,5 @@
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 
 # [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender for Office 365](../office-365-security/overview.md)
