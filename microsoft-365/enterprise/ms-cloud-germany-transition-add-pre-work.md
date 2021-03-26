@@ -22,19 +22,22 @@ description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Micros
 
 # Pre-work for the migration from Microsoft Cloud Deutschland
 
-Use these links to get to the pre-work steps relevant to your organization:
+Use these links to get to the pre-work steps relevant to your organization.
 
-- For **all customers** using Office 365 in Microsoft Cloud Deutschland, do [these steps](#general-tenant-migration-considerations).
-- For **DNS changes**, do [this step](#dns).
-- If you're using **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
-- If you're using **SharePoint Online**, do [this step](#sharepoint-online).
-- If you're using **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
-- If you 're using **Skype for Business Online**, do [this step](#skype-for-business-online)
-- If you're using a third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
-- If you're using **third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
-- If you're also using **Dynamics 365**, do [this step](#dynamics365).
-- If you're also using **Power BI**, do [this step](#power-bi).
-- If you're also using **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
+If you're using
+
+- **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
+- **Custom Domains**, do [this step](#dns).
+- **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
+- **SharePoint Online**, do [this step](#sharepoint-online).
+- **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
+- **Skype for Business Online**, do [this step](#skype-for-business-online).
+- **Dynamics 365**, do [this step](#dynamics365).
+- **Power BI**, do [this step](#power-bi).
+
+- **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
+- A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
+- **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
 
 ## General tenant migration considerations
 
