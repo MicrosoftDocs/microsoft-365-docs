@@ -3,7 +3,7 @@ title: "Customer Key for Microsoft 365 at the tenant level (public preview)"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/16/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -52,7 +52,7 @@ Customer Key doesn't encrypt the following types of data at the tenant level. In
 Any workloads or scenarios that aren't currently supported by Customer Key for Microsoft 365.
 
 - Other Microsoft 365 workloads such as Yammer, Planner, and so on.
-- Teams Live Events and Q&A in Live Events. For Teams, this scenario is the only one that is not encrypted by Customer Key at the tenant level.
+- Teams Live Events and Q&A in Live Events. For Teams, this scenario is the only one that isn't encrypted by Customer Key at the tenant level.
 
 ## Set up Customer Key at the tenant level (public preview)
 
