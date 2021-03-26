@@ -97,7 +97,7 @@ additionalContent:
         # Card
         - title: Switch from Google Workspace
           summary: Find out how to switch to Microsoft 365 for business. 
-          url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
+          url: moveto-microsoft-365/move-from-google-workspace-overview.md
         # Card
         - title: Find more admin resources
           summary: Go to the Microsoft 365 admin center help site.

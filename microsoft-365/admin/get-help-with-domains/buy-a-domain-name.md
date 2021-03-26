@@ -16,7 +16,6 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom: 
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -32,7 +31,7 @@ description: "Learn how to buy a domain name in Microsoft 365."
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -126,4 +125,4 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
 
 [Domains FAQ](../setup/domains-faq.yml)
 
-[Update DNS records to keep your website with your current hosting provider](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).
+[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md).

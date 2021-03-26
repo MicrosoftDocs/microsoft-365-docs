@@ -27,9 +27,9 @@ description: Learn how to use different modules in PowerShell to delete Microsof
 You can use PowerShell for Microsoft 365 to delete and restore user accounts.
 
 >[!Note]
->Learn how to [restore a user account](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) by using the Microsoft 365 admin center.
+>Learn how to [restore a user account](../admin/add-users/restore-user.md) by using the Microsoft 365 admin center.
 >
->For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
 >   
    
 ## Use the Azure Active Directory PowerShell for Graph module

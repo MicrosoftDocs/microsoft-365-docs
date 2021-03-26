@@ -28,9 +28,9 @@ To learn more about processing support and partially indexed items, see:
 
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
 
-- [File formats indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## Viewing Advanced indexing results
 
@@ -38,7 +38,7 @@ After the Advanced indexing process is completed, you can get an understanding o
 
 This view  also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
-- [Error remediation when processing data](error-remediation.md)
+- [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Single item error remediation](single-item-error-remediation.md)
 

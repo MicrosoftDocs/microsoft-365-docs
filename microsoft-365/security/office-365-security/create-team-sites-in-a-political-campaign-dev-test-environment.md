@@ -1,7 +1,7 @@
 ---
 title: Create team sites - Political campaign dev environment
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,24 +9,29 @@ ms.date: 05/21/2018
 audience: ITPro
 ms.topic: article
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
-ms.service: O365-seccomp
+  - Ent_O365
+  - Strat_O365_Enterprise
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Summary: Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Create team sites in a political campaign dev/test environment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
 
- **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.
-
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+- 
+ **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
+   
 Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
 
 ## Phase 1: Create your political campaign dev/test environment
@@ -361,7 +366,7 @@ Next, configure a DLP policy that blocks users when they share a document on a S
 
 20. In the **Review your settings** pane, click **Create**, and then click **Close**.
 
-Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](/information-protection/deploy-use/activate-office365).
 
 Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:
 
@@ -407,7 +412,7 @@ Next, configure Azure Information Protection with a new scoped policy and sub-la
 
 You are now ready to begin creating documents in these four sites and test access to them with various user accounts.
 
-To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
+To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
 
 ## See Also
 
@@ -415,6 +420,6 @@ To protect a document with Azure Information Protection and this new label, you 
 
 [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 solution and architecture center](../../solutions/index.yml)

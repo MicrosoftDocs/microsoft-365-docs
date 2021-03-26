@@ -18,7 +18,7 @@ ms.collection:
 - commerce
 ms.custom:
 - TopSMBIssues
-- okr_SMB
+- okr_smb
 - BCS160
 - MET150
 - MOE150
@@ -75,4 +75,4 @@ If you have a balance and would like to pay it, you can do that online. To learn
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) \
 [Manage payment methods](manage-payment-methods.md) (article) \
-[Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761) (article)
+[Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

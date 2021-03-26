@@ -24,7 +24,7 @@ You can manage licenses and billing for third-party apps in the new Microsoft 36
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -109,7 +109,7 @@ Software-as-a-service apps each have a billing profile assigned to them. Billing
 - **Contact information** –  Billing address and a contact name
 - **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
 
-For more information on billing profiles, see [Understand billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile).
+For more information on billing profiles, see [Understand billing profiles](/microsoft-store/billing-profile).
 
 ### Change the billing profile on a software-as-a-service app subscription
 

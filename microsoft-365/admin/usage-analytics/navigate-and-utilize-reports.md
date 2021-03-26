@@ -28,7 +28,7 @@ description: "Learn how to view the reports using navigation tabs and filters."
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -72,14 +72,14 @@ To learn how to customize the reports, see [Customizing the reports in Microsoft
 
 You can find lots of additional information in the Power BI help documentation:
 
-- [Power BI basic concepts](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Power BI basic concepts](/power-bi/service-basic-concepts)
 
     Learn about dashboard, datasets, reports, and other Power BI concepts.
 
-- [Get started with Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Get started with Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.
 
-- [Share dashboards and reports](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [Share dashboards and reports](/power-bi/service-share-dashboards)
 
     Learn how to share reports with your colleagues or people outside your organization. You can also share the report or a filtered version of the report.

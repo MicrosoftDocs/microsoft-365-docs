@@ -80,8 +80,12 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 ## Which activity reports are available in the admin center
 
 Depending on your subscription, here are the available reports.
+
+- [Microsoft browser usage](browser-usage-report.md) 
   
-- [Email activity](email-activity.md)
+- [Email activity](email-activity-ww.md)
+
+- [Email activity for US Government](email-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
@@ -93,7 +97,9 @@ Depending on your subscription, here are the available reports.
 
 - [Active Users for US Government](active-users.md)
   
-- [Email apps usage](email-apps-usage.md)
+- [Email apps usage](email-apps-usage-ww.md)
+
+- [Email apps usage for US Government](email-apps-usage.md)
 
 - [Forms activity](forms-activity-ww.md)
 
@@ -116,8 +122,6 @@ Depending on your subscription, here are the available reports.
 - [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
-
-- [Microsoft 365 Apps usage for US Government](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage-ww.md)
 
@@ -127,13 +131,13 @@ Depending on your subscription, here are the available reports.
 
 - [SharePoint activity for US Government](sharepoint-activity.md)
   
-- [Skype for Business Online activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [Skype for Business Online conference organized activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [Skype for Business Online conference participant activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [Skype for Business Online peer-to-peer activity](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -233,5 +237,4 @@ However, when you select a particular day (see number 3), up to 28 days from the
   
 ## Related articles
 
-[Reports in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
-  
+[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)

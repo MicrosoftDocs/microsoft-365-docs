@@ -27,7 +27,7 @@ monikerRange: 'o365-21vianet'
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 You can view your billing statement or invoice for information about your Office 365 operated by 21Vianet subscription charges. You can also obtain a Fapiao (your final proof of purchase). You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three days after you have paid. 
   

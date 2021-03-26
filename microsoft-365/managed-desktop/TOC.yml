@@ -19,6 +19,10 @@
           href: service-description/regions-languages.md
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
+        - name: Device requirements
+          href: service-description/device-requirements.md
+        - name: Device images
+          href: service-description/device-images.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
@@ -70,11 +74,13 @@
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
-        - name: Use the Readiness assessment tool
+        - name: Use readiness assessment tools
           href: get-ready/readiness-assessment-tool.md
           items:
-            - name: Fix issues found by the readiness assessment tool
+            - name: Fix issues found by the online readiness assessment tool
               href: get-ready/readiness-assessment-fix.md
+            - name: Downloadable readiness assessment checker
+              href: get-ready/readiness-assessment-downloadable.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -104,6 +110,8 @@
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
           href: get-started/esp-first-run.md
+        - name: Windows 10 location service
+          href: get-started/device-location.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps
@@ -117,6 +125,8 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
+            - name: Microsoft OneDrive
+              href: get-started/onedrive.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 

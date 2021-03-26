@@ -29,7 +29,7 @@ description: "Learn how to make changes to your organization profile, such as or
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -48,9 +48,9 @@ To change other information on your company's profile page:
 
 2. On the **Organization profile** tab, select **Organization information**.
 
-3. Update your organization's information, then select **Save changes**.
+3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
-    An explanation of each field is provided below.
+An explanation of each field is provided below.
 
 ## What do these fields mean?
 

@@ -35,7 +35,7 @@ highlightedContent:
       url: /learn/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
-      url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      url: business-video/index.yml
 
 # productDirectory section (optional)
 productDirectory:
@@ -76,8 +76,8 @@ productDirectory:
       links:
         - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
-        - url: /sharepoint/plan-intranet
-          text: Plan an intelligent SharePoint intranet
+        - url: /sharepoint/intelligent-internet-overview
+          text: Build an intelligent SharePoint intranet
         - url: /sharepoint/deploy-file-collaboration
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise
@@ -106,7 +106,7 @@ productDirectory:
           text: Configure three tiers of protection with Microsoft Teams
         - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
           text: Deploy Microsoft Defender for Endpoint
-        - url: security/office-365-security/office-365-atp.md
+        - url: security/office-365-security/defender-for-office-365.md
           text: Deploy Microsoft Defender for Office 365
         - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
@@ -123,8 +123,6 @@ productDirectory:
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance
-        - url: compliance/overview-data-investigations.md
-          text: Manage internal and external investigations
 
     # Card
     - title: Deploy and manage your desktops and devices
@@ -135,7 +133,7 @@ productDirectory:
           text: Deploy Microsoft 365 Apps
         - url: /windows/deployment/
           text: Deploy Windows 10
-        - url: /microsoft-365/managed-desktop/
+        - url: ./managed-desktop/index.yml
           text: Microsoft Managed Desktop
         - url: /mem/intune/fundamentals/what-is-intune
           text: Device management with Microsoft Intune
@@ -251,7 +249,7 @@ additionalContent:
         - title: Planner and Project
           links:
             - text: Planner admin help
-              url: /office365/planner/planner-admin-home
+              url: /office365/planner
             - text: Project for the web
               url: /project-for-the-web/projectforweb-admin-home
             - text: More Project >
@@ -265,8 +263,6 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
-            - text: MileIQ
-              url: https://docs.microsoft.com/office365/mileiq/
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card

@@ -1,25 +1,29 @@
 ---
-title: "Manage groups in EOP"
-f1.keywords:
-- NOCSH
+title: Manage groups in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins in standalone Exchange Online Protection (EOP) organizations can learn how to create, modify, and remove distribution groups and mail-enabled security groups in the Exchange admin center (EAC) and in standalone Exchange Online Protection (EOP) PowerShell."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins in standalone Exchange Online Protection (EOP) organizations can learn how to create, modify, and remove distribution groups and mail-enabled security groups in the Exchange admin center (EAC) and in standalone Exchange Online Protection (EOP) PowerShell.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Manage groups in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can create, modify, and remove the following types of groups:
 
@@ -39,16 +43,16 @@ You can manage groups in the Exchange admin center (EAC) and in standalone EOP P
 
 - To open the Exchange admin center, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - When you manage groups in standalone EOP PowerShell, you might encounter throttling. The PowerShell procedures in this article use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
 - You need to be assigned permissions in Exchange Online Protection before you can do the procedures in this article. Specifically, you need the **Distribution Groups** role, which is assigned to the **Organization Management** and **Recipient Management** role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- For information about keyboard shortcuts that may apply to the procedures in this article, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
+> Having problems? Ask for help in the [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) forum.
 
 ## Use the Exchange admin center to manage distribution groups
 
@@ -148,7 +152,7 @@ To return the list of group members, replace \<GroupIdentity\> with the name, al
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) and [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember).
+For detailed syntax and parameter information, see [Get-Recipient](/powershell/module/exchange/get-recipient) and [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember).
 
 ### Use standalone EOP PowerShell to create groups
 
@@ -174,7 +178,7 @@ This example creates a distribution group named IT Administrators with the speci
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-For detailed syntax and parameter information, see [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup).
+For detailed syntax and parameter information, see [New-EOPDistributionGroup](/powershell/module/exchange/New-EOPDistributionGroup).
 
 ### Use standalone EOP PowerShell to modify groups
 

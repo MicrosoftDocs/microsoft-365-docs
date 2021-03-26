@@ -29,7 +29,7 @@ description: "Learn how to renew your Microsoft 365 by turning recurring billing
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -108,4 +108,4 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 [Enter your product key](../enter-your-product-key.md)
   
-[Buy your trial version of Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)
+[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md)

@@ -16,17 +16,19 @@ search.appverid:
 description: "Understand how to use Microsoft Compliance Configuration Analyzer to get up and running quickly with Microsoft Compliance Manager."
 ---
 
-# Microsoft Compliance Configuration Analyzer for Compliance Manager
+# Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
 
 **In this article:** Learn how to install and run the Microsoft Compliance Configure Analyzer tool to get quickly started with Microsoft Compliance Manger.
 
-## Microsoft Compliance Configuration Analyzer (MCCA) overview
+## Microsoft Compliance Configuration Analyzer (MCCA) (preview) overview
 
-The Microsoft Compliance Configuration Analyzer (MCCA) is a tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
+The Microsoft Compliance Configuration Analyzer (MCCA) is a preview tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
 
 MCCA can help you quickly see which improvement actions in Compliance Manger apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
+
+**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate and GCC High customers, with plans underway to expand service to DOD customers.
 
 ## Install MCCA and run a report
 
@@ -57,6 +59,13 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     ```powershell
     Get-MCCAReport
     ```
+
+   If you're a GCC High customer, you'll need to provide an additional input parameter to run the report:
+
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    ```
+
 3. Once MCCA runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
 
 Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
@@ -153,4 +162,4 @@ Select the dropdown next to the **Recommendation** label to the right of the imp
 
 For more detailed information on installing, setting up, and using MCCA, see the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview) (no GitHub account required).
 
-For more information on Windows PowerShell, start at [How to use the PowerShell documentation](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7). See also [Starting Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+For more information on Windows PowerShell, start at [How to use the PowerShell documentation](/powershell/scripting/how-to-use-docs?view=powershell-7). See also [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

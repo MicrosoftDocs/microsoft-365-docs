@@ -136,4 +136,4 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 [Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md)
 
-[Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[Minecraft: Education Edition payment options](/education/windows/school-get-minecraft)

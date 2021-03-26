@@ -1,23 +1,29 @@
 ---
-title: "Outbound and inbound mail flow insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Outbound and inbound mail flow insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: "Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Outbound and inbound mail flow insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 The **Outbound and inbound mail flow** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) combines the information from the [Connector report](view-mail-flow-reports.md#connector-report) and the former **TLS overview report** in one place.
 
@@ -27,9 +33,9 @@ The widget displays the TLS encryption that's used for the connection when messa
 
 The information in the widget is related to connectors and TLS message protection in Microsoft 365. For more information, see these topics:
 
-- [Configure mail flow using connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
-- [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
-- [Technical reference details about encryption in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)
+- [Configure mail flow using connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [How Exchange Online uses TLS to secure email connections](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
+- [Technical reference details about encryption in Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## Message protected in transit (by TLS)
 
@@ -39,7 +45,7 @@ When you click **View Details** on the widget, the **Message protected in transi
 
 Currently, TLS 1.2 is the most secure version of TLS that's offered by Microsoft 365. Often, you'll need to know the TLS encryption that's being used for compliance audits. You probably don't have a direct relationship with most of the source and destination email servers (you don't own them, and neither does Microsoft), so you don't have many options to improve the TLS encryption that's used by those servers.
 
-But, you can use [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) to ensure the best available TLS protection for messages that are sent between your email servers and Microsoft 365. Mail flow between Microsoft 365 and your own email servers or servers that belong to your partners is often more important and sensitive than regular messages, so you'll want to apply extra security and vigilance to those messages.
+But, you can use [connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) to ensure the best available TLS protection for messages that are sent between your email servers and Microsoft 365. Mail flow between Microsoft 365 and your own email servers or servers that belong to your partners is often more important and sensitive than regular messages, so you'll want to apply extra security and vigilance to those messages.
 
 You can upgrade or fix your own email servers to improve the TLS encryption that's being used, or reach out to your partners to do the same. The **Connector Report** displays both mail flow volume and TLS encryption for messages that use your Microsoft 365 connectors.
 

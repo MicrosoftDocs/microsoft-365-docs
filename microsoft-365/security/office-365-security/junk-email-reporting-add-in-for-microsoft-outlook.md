@@ -1,28 +1,34 @@
 ---
-title: "Install and use the Junk Email Reporting add-in for Microsoft Outlook"
-f1.keywords:
-- NOCSH
+title: Install and use the Junk Email Reporting add-in for Microsoft Outlook
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
-ms.collection:
-- M365-security-compliance
-description: "Learn how to install and use the Microsoft Junk Email Reporting add-in to report spam, non-spam, and phishing messages to Microsoft."
+ms.collection: 
+  - M365-security-compliance
+description: Learn how to install and use the Microsoft Junk Email Reporting add-in to report spam, non-spam, and phishing messages to Microsoft.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Install and use the Junk Email Reporting add-in for Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) instead. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+> If you aren't currently using the Junk E-mail Reporting add-in, we recommend the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) instead. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 The Junk Email Reporting Add-in for Microsoft Outlook allows users to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Microsoft. If your organization doesn't use Exchange Online Protection (for example, on-premises Exchange or email services other than Exchange Online), your junk email report submission will not affect your spam filtering.
 
@@ -112,7 +118,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
 1. On your computer, close Outlook.
 
-2. In Windows 10, verify the .NET Framework 2.0 is enabled. For instructions, see [Enable the .NET Framework 3.5 in Control Panel](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
+2. In Windows 10, verify the .NET Framework 2.0 is enabled. For instructions, see [Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
 
 3. Locate the .msi file you downloaded and double-click on it.
 
