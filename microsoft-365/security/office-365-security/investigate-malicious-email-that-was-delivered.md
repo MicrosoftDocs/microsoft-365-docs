@@ -29,10 +29,10 @@ ms.prod: m365-security
 
 **Applies to**
 
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
+[Microsoft Defender for Office 365](defender-for-office-365.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
 
 > [!NOTE]
 > Jump to the remediation article [here](remediate-malicious-email-delivered-office-365.md).
@@ -41,7 +41,7 @@ ms.prod: m365-security
 
 Make sure that the following requirements are met:
 
-- Your organization has [Microsoft Defender for Office 365](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
 - [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
 
@@ -63,10 +63,10 @@ To perform certain actions, such as viewing message headers or downloading email
 |
 
 > [!NOTE]
-> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at [https://protection.office.com](https://protection.office.com)). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at <https://protection.office.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
 > The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center (<https://protection.office.com>). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -208,4 +208,4 @@ Delivery location shows the results of policies and detections that run post-del
 
 [Protect against threats in Office 365](protect-against-threats.md)
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)

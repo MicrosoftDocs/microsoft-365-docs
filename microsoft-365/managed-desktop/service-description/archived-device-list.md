@@ -35,23 +35,33 @@ To be enrolled in Microsoft Managed Desktop, a device must be one of the followi
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 22, 2023** |
 |Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **June 1, 2024**  |
+|Dell Latitude 5310 / 5310 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Apr 28, 2025**  |
+|Dell Latitude 5410 / 5410 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Apr 28, 2025**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Jan 9, 2023** |
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 1, 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 1, 2024**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR camera required | **Jan 9, 2023** |
+|Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 19, 2025**  |
+|Dell Latitude 9410 / 9410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR camera required | **May 05, 2025**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | None | **May 1, 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Nov 30, 2023** |
+|HP EliteBook 830 / 840 / 850 G7| 128 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV, IR camera or fingerprint sensor required  | **Nov 30, 2024** |
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required |**May 14, 2023** |
+|HP Elite x2 G4| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required |**May 31, 2024** |
+|HP EliteBook x360 830 G7| 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV, IR camera required |**Nov 30, 2024** |
 |HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**May 14, 2023** |
 |HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**Nov 30, 2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | **Oct 23, 2023** |
 |HP EliteBook x360 1040 G6| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | **Nov 30, 2023** |
+|HP EliteBook x360 1030 / 1040 G7| 256 GB / Intel i5 / 8 GB RAM | SKU with 8XW08AV, IR camera required | **Aug 31, 2024** |
 |HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | **Jun 6, 2023** |
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | **Jul 18, 2023** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | **Jul 18, 2023** |
 |HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU with 5VS04AV| **Jul 18, 2023** |
+|HP EliteOne 800 G6 24/27 AIO |256 GB / Intel i5 / 8 GB RAM |SKU with 9XM14AV| **Jun 30, 2025** |
 |HP ZBook 14u/15u G6 Mobile Workstation |256 GB / Intel i5 / 8 GB RAM |SKU with 5VS04AV, IR camera required| **Nov 30, 2023** |
+|HP ZBook Firefly 14/15 G7 Mobile Workstation |256 GB / Intel i5 / 8 GB RAM |SKU with 9MZ22AV, IR camera required| **Nov 30, 2024** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **Nov 16, 2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8GB RAM | None | **Aug 2, 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
@@ -63,7 +73,7 @@ In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](../get-started/register-devices-self.md) feature
 
 #### More help
 

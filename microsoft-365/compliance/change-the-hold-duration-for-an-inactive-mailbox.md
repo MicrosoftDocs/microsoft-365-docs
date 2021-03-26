@@ -35,9 +35,9 @@ An inactive mailbox is used to retain a former employee's email after he or she 
     
 - To connect to Exchange Online PowerShell or Security & Compliance Center PowerShell, see one of the following topics:
     
-  - [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+  - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 - Holds associated with eDiscovery cases are infinite holds, which means there's no hold duration that can be changed. Items are held forever or until the hold is removed and the inactive mailbox is deleted.
     
@@ -123,47 +123,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
   
 ### Change the duration for an In-Place Hold
 
- You can use the EAC or Exchange Online PowerShell to change the hold duration for an In-Place Hold. 
-  
-#### Use the EAC to change the hold duration
-
-1. If you know the name of the In-Place Hold that you want to change, go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
-
-    ```powershell
-    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-    ```
-
-2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
-    
-3. Select the In-Place Hold you want to change, and then select **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-    
-4. On the **In-Place eDiscovery &amp; Hold** properties page, select **In-Place Hold**. 
-    
-5. Do one of the following based on the current hold duration:
-    
-    1. Select **Hold indefinitely** to hold items for an unlimited period of time. 
-    
-    2. Select **Specify number of days to hold items relative to their received date** to hold items for a specific period. Type the number of days that you want to hold items for. 
-    
-    ![Screenshot of changing the duration for an In-Place Hold](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
-  
-6. Select **Save**.
-    
-#### Use Exchange Online PowerShell to change the hold duration
-
-1. If you know the name of the In-Place Hold that you want to change, go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
-
-    ```powershell
-    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-    ```
-
-2. Run the following command to change the hold duration. In this example, the hold duration is changed to 2,555 days (approximately seven years). 
-    
-    ```powershell
-    Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
-    ```
-
-     To change the hold duration to an unlimited period of time, use  _-ItemHoldPeriod unlimited_.
+ In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-in-place-holds).
   
 ## More information
 
@@ -174,15 +134,11 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 - **Is an Exchange retention policy still processed on inactive mailboxes?** If an Exchange retention policy (the messaging records management, or MRM, feature in Exchange Online) was applied to a mailbox when it was made inactive, the deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy are moved to the Recoverable Items folder when the retention period expires. Those items are then purged from the inactive mailbox when the hold duration for an item expires. 
     
     Conversely, any archive policies (which are retention tags configured with a **MoveToArchive** retention action) that are included in the retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. Because a user can't sign in to an inactive mailbox, there's no reason to consume datacenter resources to process archive policies. 
-    
-- **To check the new hold duration, run one of the following commands.** The first command is for Litigation Hold; the second is for In-Place Hold. 
 
-    ```powershell
+- **To check the new hold duration for a Litigation Hold, run the following commands** 
+
+   ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
-    ```
-
-    ```powershell
-    Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **Like regular mailboxes, the Managed Folder Assistant (MFA) also processes inactive mailboxes.** In Exchange Online, the MFA processes mailboxes approximately once every seven days. After you change the hold duration for an inactive mailbox, you can use the **Start-ManagedFolderAssistant** cmdlet to immediately start processing the new hold duration for the inactive mailbox. Run the following command. 

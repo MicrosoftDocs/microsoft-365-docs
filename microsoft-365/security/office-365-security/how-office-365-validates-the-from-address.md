@@ -27,9 +27,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
 
@@ -37,7 +37,7 @@ Phishing attacks are a constant threat to any email organization. In addition to
 
 - If you regularly receive email from organizations that have malformed From addresses as described in this article, encourage these organizations to update their email servers to comply with modern security standards.
 
-- The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
+- The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email).
 
 ## An overview of email message standards
 

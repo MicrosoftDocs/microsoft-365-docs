@@ -23,7 +23,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
--	 [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
@@ -126,9 +126,13 @@ Open any remediation item to view details about it, including its name, creation
   - **Success**: The desired action on remediable emails was accomplished. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email isn't found in the original folder after the action is taken, the status will show as successful.
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
+  
+  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one which are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
   In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
+
+Security team can take up to 50 concurrent manual remediations; however, there is no limit set for automated investigation and response actions.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. It helps keep an organization secure.

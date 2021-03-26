@@ -37,7 +37,7 @@ This topic describes the email and document properties that you can search for i
 For step-by-step instructions on how to create a Content Search, see [Content Search](content-search.md).
 
 > [!NOTE]
-> Content Search in the Microsoft 365 compliance center and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Content Search in the Microsoft 365 compliance center and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). 
   
 ## Searchable email properties
 
@@ -86,7 +86,7 @@ However, be aware that preventing recipient expansion in the search query may re
 
 The following table lists some of the SharePoint and OneDrive for Business properties that can be searched by using the Content Search feature in the Security & Compliance Center or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. 
   
-For a complete list of SharePoint properties that can be searched, see [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Properties marked with a **Yes** in the **Queryable** column can be searched. 
+For a complete list of SharePoint properties that can be searched, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be searched. 
   
 | Property | Property description | Example | Search results returned by the examples |
 |:-----|:-----|:-----|:-----|
@@ -156,7 +156,7 @@ For more information about creating queries using the `SensitiveType` property, 
 
   Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Overview of data loss prevention policies](data-loss-prevention-policies.md) and [Search for and find personal data](search-for-and-find-personal-data.md).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Overview of data loss prevention policies](data-loss-prevention-policies.md) and [Search for and find personal data](/compliance/regulatory/gdpr).
   
 ## Search operators
 
@@ -178,7 +178,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |\>=|property\>=value|Denotes that the property being searched is greater than or equal to a specific value.<sup>1</sup>|
 |..|property:value1..value2|Denotes that the property being searched is greater than or equal to value1 and less than or equal to value2.<sup>1</sup>|
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|Use double quotation marks ("  ") to search for an exact phrase or term in keyword and  `property:value` search queries.|
-|\*|cat\*  <br/> subject:set\*|Prefix wildcard searches (where the asterisk is placed at the end of a word) match for zero or more characters in keywords or  `property:value` queries. For example,  `title:set*` returns documents that contain the word set, setup, and setting (and other words that start with "set") in the document title.  <br/><br/> **Note:** You can use only prefix wildcard searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat** ), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported.|
+|\*|cat\*  <br/> subject:set\*|Prefix wildcard searches (where the asterisk is placed at the end of a word) match for zero or more characters in keywords or  `property:value` queries. For example,  `title:set*` returns documents that contain the word set, setup, and setting (and other words that start with "set") in the document title.  <br/><br/> **Note:** You can use only prefix wildcard searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat** ), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported.<br/><br/>Also, adding a period ( \. ) to a prefix wild card search will change the results that are returned. That's because a period is treated as a stop word. For example, searching for **cat\*** and searching for **cat.\*** will return different results. We recommend not using a period in a prefix wild card search. |
 |(  )|(fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|Parentheses group together Boolean phrases,  `property:value` items, and keywords. For example,  `(quarterly financials)` returns items that contain the words quarterly and financials.|
 |||||
    
@@ -222,7 +222,7 @@ Create a condition using mail properties when searching mailboxes or public fold
 |:-----|:-----|
 |Message kind| The message type to search. This is the same property as the Kind email property. Possible values:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.|
-|Type|The message class property for an email item. This is the same property as the ItemClass email property. It's also a multi-value condition. So to select multiple message classes, hold the **CTRL** key and then click two or more message classes in the drop-down list that you want to add to the condition. Each message class that you select in the list will be logically connected by the **OR** operator in the corresponding search query.  <br/> For a list of the message classes (and their corresponding message class ID) that are used by Exchange and that you can select in the **Message class** list, see [Item Types and Message Classes](https://go.microsoft.com/fwlink/?linkid=848143).|
+|Type|The message class property for an email item. This is the same property as the ItemClass email property. It's also a multi-value condition. So to select multiple message classes, hold the **CTRL** key and then click two or more message classes in the drop-down list that you want to add to the condition. Each message class that you select in the list will be logically connected by the **OR** operator in the corresponding search query.  <br/> For a list of the message classes (and their corresponding message class ID) that are used by Exchange and that you can select in the **Message class** list, see [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|The date that an email message was received by a recipient. This is the same property as the Received email property.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.|
 |Sender|The sender of an email message.|

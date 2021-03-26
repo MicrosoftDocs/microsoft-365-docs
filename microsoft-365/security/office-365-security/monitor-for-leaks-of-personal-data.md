@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personaal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Tools to monitor the use and transport of personal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 In the illustration:
 
@@ -60,7 +60,7 @@ In addition, you can use the DLP reports to fine-tune your DLP policies as you r
 
 DLP reports are in the security center and the compliance center. Navigate to Reports \> View reports. Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.
 
-For more information, see [View the reports for data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
 ![Report showing DLP policy matches](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -78,21 +78,21 @@ Information security and compliance teams can use these tools to proactively rev
 
 Information security teams can also search the audit log to investigate suspected data breaches and determine both root cause and the extent of the breach. This built-in capability facilitates compliance with article 33 and 34 of the GDPR, which require notifications be provided to the GDPR supervisory authority and to the data subjects themselves of a data breach within a specific time period. Audit log entries are only retained for 90 days within the service - it is often recommended and many organizations required that these logs be retained for longer periods of time.
 
-Solutions are available that subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
+Solutions are available that subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 More information about alert policies and searching the audit log:
 
-- [Alert policies in the Microsoft 365 security and compliance centers](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Alert policies in the Microsoft 365 security and compliance centers](../../compliance/alert-policies.md)
 
-- [Search the audit log for user and admin activity in Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
+- [Search the audit log for user and admin activity in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
 
-- [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Detailed properties in the audit log](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Detailed properties in the audit log](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## Microsoft Cloud App Security
 
@@ -125,11 +125,11 @@ Note: Be sure to enable 'Automatically scan files for Azure Information Protecti
 
 More information:
 
-- [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## Example file and activity policies to detect sharing of personal data
 

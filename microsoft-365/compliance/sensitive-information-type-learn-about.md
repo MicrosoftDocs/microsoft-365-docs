@@ -20,7 +20,7 @@ description: ""
 
 # Learn about sensitive information types
 
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
+Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types
@@ -113,11 +113,17 @@ In a sensitive information type entity definition, **confidence level** reflects
 
 A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels returns more false positives but few to zero false negatives.
 
-- **low confidence**: value of 65, matched items will contain the fewest false negatives but the most false positives.  
-- **medium confidence**: value of 75, matched items will contain an average amount of false positives and false negatives.  
-- **high confidence**: value of 85, matched items will contain the fewest false positives but the most false negatives.  
+- **low confidence**: Value of 65, matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches.
+- **medium confidence**: Value of 75, matched items will contain an average amount of false positives and false negatives. Medium confidence returns all medium, and high confidence matches.  
+- **high confidence**: Value of 85, matched items will contain the fewest false positives but the most false negatives. High confidence only returns high confidence matches.  
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
+
+> [!NOTE]
+> If you have existing policies or custom sensitive information types (SITs) defined using number-based confidence levels (also know as accuracy), they will automatically be mapped to the three discrete confidence levels; low confidence, medium confidence, and high confidence, across the Security @ Compliance Center UI.
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 76 and 100 will be mapped to high confidence. 
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 66 and 75 will be mapped to medium confidence.
+> - All policies with minimum accuracy or custom SIT patterns with confidence levels less than or equal to 65 will be mapped to low confidence. 
 
 ## Creating custom sensitive information types
 

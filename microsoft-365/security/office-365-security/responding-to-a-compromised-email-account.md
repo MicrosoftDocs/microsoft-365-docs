@@ -27,9 +27,9 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
@@ -85,7 +85,7 @@ You must do all the following steps to regain access to your account the sooner 
 
 ### Step 1 Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -97,9 +97,9 @@ Follow the procedures in [Reset a business password for someone](https://docs.mi
 >
 > - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 >
-> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -199,7 +199,7 @@ Your Microsoft 365 subscription comes with a powerful set of security capabiliti
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
+- [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 

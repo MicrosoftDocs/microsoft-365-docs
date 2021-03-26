@@ -27,7 +27,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
  **Summary:** Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment.
 
@@ -37,7 +37,7 @@ Use the instructions in this article to create a dev/test environment that inclu
 
 In this phase, you obtain trial subscriptions for Office 365 E5 and Enterprise Mobility + Security (EMS) E5 for a fictional organization that represents a political campaign.
 
-First, follow the instructions in **Phase 2** of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+First, follow the instructions in **Phase 2** of [The lightweight base configuration](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.
 
@@ -135,7 +135,7 @@ Next, you configure the groups so that members are automatically assigned Office
 
 In this phase, you add the example user accounts for your political campaign.
 
-First, you [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
+First, you [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md).
 
 Next, you fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE):
 
@@ -208,6 +208,6 @@ Build the four different types of SharePoint Online team sites in this dev/test 
 
 [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Cloud adoption and hybrid solutions](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

@@ -43,7 +43,7 @@ Currently, the baseline policies include the following policies:
 
 We recommend that you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure AD Multifactor Authentication.
 
-For more information about these policies, see [What are baseline policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
+For more information about these policies, see [What are baseline policies](/azure/active-directory/conditional-access/concept-baseline-protection)?
 
 ## Require MFA
 
@@ -65,15 +65,15 @@ To require that all users sign in with a second form of ID:
 
 ## Set up baseline policies
 
-1. Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access** to create a **new policy**.
+1. Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Security** \> **Conditional Access** to create a **new policy**.
 
 See the following specific instructions for each policy: <br>
-    - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Require MFA for users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [Require MFA for admins](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Require MFA for users](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Block legacy authentication](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [Require MFA for service management](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > Preview policies no longer exist and users will need to create their own policies.
 
-You can set up extra policies, such as requiring approved client apps. For more information, see the [Conditional Access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+You can set up extra policies, such as requiring approved client apps. For more information, see the [Conditional Access documentation](/azure/active-directory/conditional-access/).
