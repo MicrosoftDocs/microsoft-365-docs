@@ -54,11 +54,11 @@ Once you have completed and tested the AD FS backup, perform the following steps
 
 8. For AD FS 2012: On the **Choose Issuance Authorization Rules**, keep **Permit all users to access this relying party** selected and click **Next**.
 
-8. For AD FS 2016 and AD FS 2019: On the **Choose Access Control Policy** page, select the appropriate access control policy and click **Next**. If none is chosen, the Relying Party Trust will **NOT** work.
+9. For AD FS 2016 and AD FS 2019: On the **Choose Access Control Policy** page, select the appropriate access control policy and click **Next**. If none is chosen, the Relying Party Trust will **NOT** work.
 
-9. Click **Next** on the **Ready to Add Trust** page to complete the wizard.
+10. Click **Next** on the **Ready to Add Trust** page to complete the wizard.
 
-10. Click **Close** on the **Finish** page.
+11. Click **Close** on the **Finish** page.
 
 By closing the wizard, the Relying Party Trust with the Office 365 Global service is established. However, no Issuance Transform rules are configured yet.
 
@@ -69,7 +69,19 @@ You can use [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGen
 
 1. Run **Generate Claims** on [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) and copy the PowerShell script using the **Copy** option on the right upper corner of the script.
 
-2. Follow the steps outlined at [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) on how to run the PowerShell script in your AD FS farm to generate the global Relying Party Trust.
+2. Follow the steps outlined at [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) on how to run the PowerShell script in your AD FS farm to generate the global Relying Party Trust. Before you run the script, replace the following code lines in the generated script as outlined below:
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. Verify that two Relying PartyTtrusts are present; one for Microsoft Cloud Deutschland and one for the Office 365 Global service. The following command can be leveraged for the check. It should return two rows and the respective names and identifiers.
 
@@ -81,9 +93,7 @@ You can use [AD FS Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGen
 
 5. While your tenant is in migration, regularly verify that AD FS authentication is working with Microsoft Cloud Deutschland and Microsoft Global cloud in the various supported migration steps.
 
-
 ## AD FS Disaster Recovery (WID Database)
-
 
 To restore the AD FS farm in a disaster [AD FS Rapid Restore Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) needs to be leveraged. Therefore, the tool must be downloaded and before the start of the migration a backup must be created and safely stored. In this example, the following commands have been run to back up a farm running on a WID database:
 
@@ -107,7 +117,6 @@ To restore the AD FS farm in a disaster [AD FS Rapid Restore Tool](/windows-serv
 
 4. Store the backup safely on a desired destination.
 
-
 ### Restore an AD FS Farm
 
 If your farm failed completely and there is no way to return to the old farm, do the following. 
@@ -121,7 +130,6 @@ If your farm failed completely and there is no way to return to the old farm, do
    ```
 
 3. Point your new DNS records or load balancer to the new AD FS servers.
-
 
 ## More information
 

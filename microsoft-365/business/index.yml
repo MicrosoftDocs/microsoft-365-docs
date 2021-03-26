@@ -122,7 +122,7 @@ conceptualContent:
  # Card
     - title: Manage threats
       links:
-        - url: ../security/office-365-security/office-365-atp.md
+        - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
           text: Advanced Threat Protection
         - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
@@ -188,7 +188,7 @@ conceptualContent:
   # Card
     - title: Monitor security
       links:
-        - url: ../security/mtp/microsoft-secure-score.md
+        - url: ../security/defender/microsoft-secure-score.md
           itemType: how-to-guide
           text: Secure score
         - url: /intune/apps/app-protection-policies-monitor
