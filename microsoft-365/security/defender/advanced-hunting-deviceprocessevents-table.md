@@ -52,6 +52,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `FileSize` | long | Size of the file in bytes |
 | `ProcessVersionInfoCompanyName` | string | Company name from the version information of the newly created process |
+| `ProcessVersionInfoProductName` | string | Product name from the version information of the newly created process |
+| `ProcessVersionInfoProductVersion` | string | Product version from the version information of the newly created process |
+| `ProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the newly created process |
+| `ProcessVersionInfoOriginalFileName` | string | Original file name from the version information of the newly created process |
+| `ProcessVersionInfoFileDescription` | string | Description from the version information of the newly created process |
 | `InitiatingProcessVersionInfoProductName` | string | Product name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductVersion` | string | Product version from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the process (image file) responsible for the event |
