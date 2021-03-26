@@ -59,7 +59,20 @@ For more information about role assignments, see [Create and manage roles](user-
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
-## Autoresolve remediated alerts
+## Always remediate PUA - ADD
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. When turned off, remediation is dependent on the device configuration. 
+
+
+## Restrict correlation to within scoped device groups - ADD
+When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
+
+
+## Enable EDR in block mode - ADD
+When turned on, Microsoft Defender for Endpoint leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach endpoint detection and response (EDR) capabilities. This feature does not change how Microsoft Defender for Endpoint performs detection, alert generation, and incident correlation.
+
+
+
+## Automatically resolve alerts
 
 For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
@@ -103,6 +116,9 @@ For more information, see [Manage indicators](manage-indicators.md).
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
+## Tamper protection - ADD
+Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
+
 ## Show user details
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
@@ -120,7 +136,7 @@ Enabling the Skype for Business integration gives you the ability to communicate
 > [!NOTE]
 > When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
 
-## Azure Advanced Threat Protection integration
+## Microsoft Defender for Identity integration
 
 The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
@@ -138,7 +154,7 @@ When you turn this feature on, you'll be able to incorporate data from Office 36
 
 To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
-## Microsoft Threat Experts
+## Microsoft Threat Experts - Targeted Attack Notifications
 
 Out of the two Microsoft Threat Expert components, targeted attack notification is in general availability. Experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your Defender for Endpoint portal's alerts dashboard and via email if you configure it.
 
@@ -171,6 +187,17 @@ To receive contextual device integration in Microsoft Defender for Identity, you
 3. Toggle the Integration setting to **On** and click **Save**.
 
 After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
+
+## Web content filtering - ADD
+Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a [web content filtering policy](https://security.microsoft.com/preferences2/web_content_filtering_policy). Ensure you have network protection in block mode when deploying the [Microsoft Defender for Endpoint security baseline](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
+
+## Unified audit log - ADD
+When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. For more information, see the [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
+
+## Share endpoint alerts with Microsoft Compliance Center - ADD
+Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance [insider risk management](https://go.microsoft.com/fwlink/?linkid=2135356) policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
+
+
 
 ## Microsoft Intune connection
 
