@@ -66,7 +66,7 @@ Additionally, if you have capitalization requirements in your pattern list, you 
    ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating a pattern list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use pattern list templates for a common pattern list, such as *date*, *phone number*, *credit card number*, etc.
+> Instead of manually creating a pattern list explanation, use the [explanation library](#use-explanation-templates) to use pattern list templates for a common pattern list, such as *date*, *phone number*, *credit card number*, etc.
 
 ## Proximity 
 
@@ -142,43 +142,65 @@ In the viewer, you can manually adjust the select box to include the location wh
    ![Custom range](../media/content-understanding/custom-file.png)</br>
 In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a <b>Start</b> and an <b>End</b> position. These values represent the number of tokens from the begging of the document. While you can manually enter in these values, it is easier to manually adjust the select box in the viewer.</br> 
    
-
-
 ## Use explanation templates
 
-While you can manually add various pattern list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
+While you can manually add various phrase list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
 
-For example, instead of manually adding all the variations for *Date*, you can use the pattern list template for *Date* as it already includes a number of pattern lists values:</br>
+For example, instead of manually adding all the variations for *Date*, you can use the phrase list template for *Date* as it already includes a number of phrase lists values:</br>
 
    ![Explanation library](../media/content-understanding/explanation-template.png)</br>
  
-The explanation library includes commonly used pattern list explanations, including:</br>
+The explanation library includes commonly used phrase list explanations, including:</br>
 
-- Date</br>
-- Date (numeric)</br>
-- Time</br>
-- Number</br>
-- Phone number</br>
-- Zip code</br>
-- First word of sentence</br>
-- Credit card</br>
-- Social security number</br>
+- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").</br>
+- Date (numeric): Calendar dates, all formats. Includes numbers (for example 1-11-2020).</br>
+- Time: 12 and 24 hour formats.</br>
+- Number: Positive and negative numbers up to 2 decimals. </br>
+- Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, 11.11%, etc.</br>
+- Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, etc.</br>
+- Zip code: US Zip code formats. For example, 11111, 11111-1111.</br>
+- First word of sentence: Common patterns for words up to 9 characters. </br>
+- End of sentence: Common punctuation for end of a sentence</br>
+- Credit card: Common credit card number formats. For example, 1111-1111-1111-1111. </br>
+- Social security number: US Social Security Number format. For example, 111-11-1111. </br>
+- Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_, etc.</br>
+- Currency: Major international symbols. For example, $. </br>
+- Email CC: A phrase list with the term 'CC:', often found near the names or email addresses of additional people or groups the message was sent to.</br>
+- Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.</br>
+- Email greeting: Common opening lines for emails.</br>
+- Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to. </br>
+- Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. </br>
+- Email subject: A phrase list with the term 'Subject:', often found near the email's subject. </br>
 
-Note that the explanation library also includes templates for phrase list explanations:
-- End of sentence
-- Currency
+The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 
+- After label: The words or characters that occur after the labels in the example files.</br>
+- Before label: The words or characters that occur before the labels in the example files.</br>
+- Labels: Up to the first 10 labels from the example files.</br>
+
+To give you an example of how automatic templates work, in the following example file, we will use the Before Label explanation template to help give the model more information to get a more accurate match.
+
+   ![Example file](../media/content-understanding/before-label.png)</br>
+
+When you select the Before Label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
+
+   ![Before label template](../media/content-understanding/before-label-explanation.png)</br>
+
+You can select <b>Add</b> to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
+
+   ![Add the label](../media/content-understanding/before-label-add.png)</br>
+ 
 #### To use a template from the explanation library
 
 1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.</br>
 
-   ![Create from template](../media/content-understanding/from-template.png)</br>
+   ![Add Before Label](../media/content-understanding/from-template.png)</br>
 
 2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.</br>
 
        ![Select a template](../media/content-understanding/phone-template.png)</br>
 
-3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the pattern list. </br> 
+3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the phrase list. </br> 
 
    ![Edit template](../media/content-understanding/phone-template-live.png)</br>
 

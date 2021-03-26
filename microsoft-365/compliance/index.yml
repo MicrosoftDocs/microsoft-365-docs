@@ -61,7 +61,7 @@ landingContent:
           - text: Advanced eDiscovery
             url: overview-ediscovery-20.md
           - text: Core eDiscovery
-            url: ediscovery-cases.md
+            url: ./get-started-core-ediscovery.md
           - text: Content search
             url: search-for-content.md
           - text: Auditing
@@ -75,11 +75,11 @@ landingContent:
           - text: Compliance Manager
             url: compliance-manager.md
           - text: GDPR compliance action plan
-            url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
+            url: /compliance/regulatory/gdpr-action-plan
           - text: ISO compliance action plan
-            url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
+            url: /compliance/regulatory/iso-action-plan
           - text: NIST compliance action plan
-            url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
+            url: /compliance/regulatory/nist-action-plan
 
     # Card
   - title: Deploy compliance solutions

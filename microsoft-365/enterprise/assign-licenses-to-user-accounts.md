@@ -42,7 +42,7 @@ You can assign licenses to user accounts either individually or automatically th
 
 To assign Microsoft 365 licenses to individual user accounts, you can use:
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+- [The Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 - The Azure AD admin center
 
@@ -56,13 +56,13 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 >
 
-For more informaion, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+For more informaion, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Next steps
 
 With the appropriate set of user accounts that have been assigned licenses, you are now ready to:
 
-- [Implement security](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [Deploy client software, such as Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+- [Implement security](../security/office-365-security/security-roadmap.md)
+- [Deploy client software, such as Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Set up device management](device-management-roadmap-microsoft-365.md)
 - [Configure services and applications](configure-services-and-applications.md)

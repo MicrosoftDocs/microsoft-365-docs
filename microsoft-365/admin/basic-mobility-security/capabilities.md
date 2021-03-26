@@ -72,7 +72,7 @@ The following diagram shows what happens when a user with a new device signs in 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Basic Mobility and Security access control":::
 
 > [!NOTE]
-> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+> Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## Policy settings for mobile devices
 
@@ -123,7 +123,7 @@ The following sections list the policy settings you can use to help secure and m
 
 ## Managed email profile option 
 
-The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [An existing email account was found](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found).
+The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [An existing email account was found](/intune-user-help/existing-company-email-account-found).
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -164,7 +164,7 @@ The following option can block users from accessing their Microsoft 365 email if
 
 ## Additional settings
 
-You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+You can set the following additional policy settings by using Security & Compliance Center PowerShell cmdlets. For more information, see [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
 
 |**Setting name**|**iOS 7.1 and later**|**Android 5 and later**|
 |:-----|:-----|:-----|

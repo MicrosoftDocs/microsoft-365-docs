@@ -32,7 +32,7 @@ You might have a situation where a person has left your organization, and their 
 
 - You have to use the **New-MailboxSearch** cmdlet in Windows PowerShell to put an In-Place Hold on a soft-deleted mailbox. You can't use the Exchange admin center (EAC) or the eDiscovery Center in SharePoint Online. 
 
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Run the following command to get identity information about the soft-deleted mailboxes in your organization. 
 
@@ -44,7 +44,7 @@ You might have a situation where a person has left your organization, and their 
 
 ## Put an In-Place Hold on a soft-deleted mailbox to make it an inactive mailbox
 
-Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch).
   
 1. Create a variable that contains the properties of the soft-deleted mailbox.
 
