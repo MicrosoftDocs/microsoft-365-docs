@@ -63,6 +63,9 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 ## Restrict correlation to within scoped device groups
 When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
 
+>[!NOTE]
+>Changing this setting impacts future alert correlations only.
+
 
 ## Autoresolve remediated alerts
 
