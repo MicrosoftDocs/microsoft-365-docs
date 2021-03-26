@@ -37,19 +37,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of the Microsoft 365 security center
-            url: ../defender/overview-security-center.md
+            url: overview-security-center.md
           - text: Microsoft Defender for Endpoint in the Microsoft 365 security center
-            url: ../defender/microsoft-365-security-center-mde
+            url: microsoft-365-security-center-mde.md
           - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
-            url: ../defender/microsoft-365-security-center-mdo
+            url: ../defender/microsoft-365-security-center-mdo.md
 # Card
   - title: Manage incidents and alerts
     linkLists:
       - linkListType: overview
         links:
           - text: Investigate incidents
-            url: ../defender/investigate-incidents.md
+            url: investigate-incidents.md
           - text: Automated investigation and response
-            url: ../defender/m365d-autoir.md
+            url: m365d-autoir.md
           - text: Hunt for threats
-            url: ../defender/advanced-hunting-overview
+            url: advanced-hunting-overview.md
