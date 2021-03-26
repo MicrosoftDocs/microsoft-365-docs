@@ -187,7 +187,7 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/what-is-a-domain.md
+      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
