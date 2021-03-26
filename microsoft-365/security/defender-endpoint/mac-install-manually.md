@@ -1,6 +1,6 @@
 ---
-title: Manual deployment for Microsoft Defender ATP for macOS
-description: Install Microsoft Defender ATP for macOS manually, from the command line.
+title: Manual deployment for Microsoft Defender for Endpoint for macOS
+description: Install Microsoft Defender for Endpoint for macOS manually, from the command line.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -59,20 +59,20 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![App install screenshot1](images/mdatp-28-appinstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![App install screenshot2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![App install screenshot3](images/mdatp-30-systemextension.png)
 
 3. Select **Open Security Preferences** or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Security and privacy window screenshot](images/mdatp-31-securityprivacysettings.png)
 
    The installation proceeds.
 
@@ -92,7 +92,7 @@ To complete this process, you must have admin privileges on the device.
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-3. At the end of the installation process, you will be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
     ![System extension approval](images/big-sur-install-2.png)
 
@@ -114,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
 1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
 
-    The client device is not associated with orgId. Note that the *orgId* attribute is blank.
+    The client device isn't associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
     mdatp health --field org_id
@@ -134,7 +134,7 @@ To complete this process, you must have admin privileges on the device.
 
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
-   ![Microsoft Defender icon in status bar screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
    
 
 ## How to Allow Full Disk Access

@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -93,6 +93,7 @@ Logo |Partner name   | Description
 ![Image of Aruba ClearPass Policy Manager logo](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
 ![Image of Blue Hexagon for Network logo](images/bluehexagon-logo.png) | [Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
 ![Image of CyberMDX logo](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
+![Image of HYAS Protect logo](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Image of Vectra Network Detection and Response (NDR) logo](images/vectra-logo.png) |[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra applies AI & security research to detect and respond to cyber-attacks in real time
 
 

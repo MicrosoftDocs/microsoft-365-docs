@@ -57,7 +57,7 @@ For more information about BYOK, see [Planning and implementing your Azure Infor
   
 ## Do OME and BYOK with Azure Information Protection change Microsoft's approach to third-party data requests such as subpoenas?
 
-No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
+No. OME and the option to provide and control your own encryption keys, called BYOK, from Azure Information Protection were not designed to respond to law enforcement subpoenas. OME, with BYOK for Azure Information Protection, was designed for compliance-focused customers. Microsoft takes third-party requests for customer data seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive. For more information regarding third-party data requests, see [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## How is this feature related to legacy Office 365 Message Encryption (OME) and Information Rights Management (IRM) features?
 
@@ -115,7 +115,7 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
 
 The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client.
 
-For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any additional steps. These clients natively support PDF encryption.
+For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any more steps. These clients natively support PDF encryption.
 
 Outlook desktop does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
@@ -160,7 +160,7 @@ Yes! For information on customizing email messages and the OME portal, see Add y
   
 ## Are there any reporting capabilities or insights for encrypted emails?
 
-There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/defender-365-security/view-email-security-reports.md).
+There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
@@ -168,7 +168,7 @@ Yes. All encrypted email messages are discoverable by Microsoft 365 compliance f
 
 ## Can I remove encryption from email?
 
-Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is enrypted using encrypt-only protection.
+Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is encrypted using encrypt-only protection.
 
 ## Is delegated access supported?
 

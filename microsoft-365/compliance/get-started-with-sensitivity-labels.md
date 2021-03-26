@@ -59,7 +59,7 @@ By default, global administrators for your tenant have access to these admin cen
 
 Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
-For instructions to add users to the default roles or create your own role groups, see [Give users access to the Office 365 Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+For instructions to add users to the default roles or create your own role groups, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 

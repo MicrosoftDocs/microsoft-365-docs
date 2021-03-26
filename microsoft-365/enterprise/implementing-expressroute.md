@@ -220,7 +220,7 @@ Your implementation plan should encompass both the technical details of configur
 
 - Decide how far ExpressRoute routes will be advertised into your network and what is the mechanism for clients to select Internet or ExpressRoute path; for example, direct routing or application proxy.
 
-- Plan DNS record changes, including [Sender Policy Framework](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) entries.
+- Plan DNS record changes, including [Sender Policy Framework](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) entries.
 
 - Plan NAT strategy including outbound and inbound source NAT.
 
