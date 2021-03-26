@@ -43,7 +43,7 @@ The tenant-level encryption policy you create encrypts all data for the Microsof
 
 ## Data that isn't encrypted with Customer Key at the tenant level
 
-Customer Key doesn't encrypt the following types of data at the tenant level. Instead, Microsoft 365 uses other types of encryption to safeguard this data.
+Customer Key doesn't encrypt the following types of data at the tenant level. Instead, Microsoft 365 uses other types of encryption to protect this data.
 
 - Exchange online mailboxes that you've already encrypted using a Customer Key DEP at the application level. Mailboxes that don't have a Customer Key DEP assigned to them will be encrypted using the tenant level DEP. This arrangement means that you may have some mailboxes encrypted with a tenant level DEP and some mailboxes encrypted with application level DEPs.
 - SharePoint and OneDrive for Business use Customer Key at the application level. A single DEP encrypts content in SharePoint for a single geo.
