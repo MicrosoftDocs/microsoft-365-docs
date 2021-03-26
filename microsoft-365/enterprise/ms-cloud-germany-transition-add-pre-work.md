@@ -67,7 +67,7 @@ In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces th
 To verify if you have set a CNAME in your DNS namespace, follow the steps below and replace _contoso.com_ with your own domain name:
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 If the command line returns a DNS record, remove the _msoid_ CNAME from your domain.
