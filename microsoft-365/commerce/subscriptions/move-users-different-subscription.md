@@ -45,7 +45,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the circles next to the names of the users that you want to replace existing licenses for.
 3. At the top, select **Manage product licenses**.
-4. In the **Manage product licenses** pane, select the licenses that you would like to assign to the user and unselect the current subscription.
+4. In the **Manage product licenses** pane, select **Replace**  and select the licenses that you would like to assign to the users.
 5. At the bottom, select **Save Changes** \> **Close**.
 
 ::: moniker-end
