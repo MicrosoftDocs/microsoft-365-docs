@@ -154,7 +154,7 @@ The following fields are collected:
 
 **Unexpected application exit (crash)**
 
-Collects unexpected application exits and the state of the application when that happens.
+Collects system information and the state of an application when an application unexpectedly exits.
 
 The following fields are collected:
 
