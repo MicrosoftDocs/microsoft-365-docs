@@ -152,6 +152,18 @@ The following fields are collected:
 
 #### Product and service performance data events
 
+**Unexpected application exit (crash)**
+
+Collects system information and the state of an application when an application unexpectedly exits.
+
+The following fields are collected:
+
+| Field                          | Description |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Number of times V1 engine process crashed every hour on client machine  |
+| v2_crash_count                 | Number of times V2 engine process crashed every hour on client machine  |
+| EDR_crash_count                | Number of times EDR process crashed every hour on client machine        |
+
 **Kernel extension statistics**
 
 The following fields are collected:
