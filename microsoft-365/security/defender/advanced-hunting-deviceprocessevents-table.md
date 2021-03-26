@@ -57,11 +57,6 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the newly created process |
 | `ProcessVersionInfoOriginalFileName` | string | Original file name from the version information of the newly created process |
 | `ProcessVersionInfoFileDescription` | string | Description from the version information of the newly created process |
-| `InitiatingProcessVersionInfoProductName` | string | Product name from the version information of the process (image file) responsible for the event |
-| `InitiatingProcessVersionInfoProductVersion` | string | Product version from the version information of the process (image file) responsible for the event |
-| `InitiatingProcessVersionInfoInternalFileName` | string | Internal file name from the version information of the process (image file) responsible for the event |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | Original file name from the version information of the process (image file) responsible for the event |
-| `InitiatingProcessVersionInfoFileDescription` | string | Description from the version information of the process (image file) responsible for the event |
 | `ProcessId` | int | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | string | Command line used to create the new process |
 | `ProcessIntegrityLevel` | string | Integrity level of the newly created process. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet downloaded. These integrity levels influence permissions to resources |
