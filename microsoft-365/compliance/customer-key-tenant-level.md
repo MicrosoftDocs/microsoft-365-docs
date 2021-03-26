@@ -33,7 +33,7 @@ Using keys you provide, you can create a data encryption policy (DEP) and assign
 
 For Microsoft Information Protection and Microsoft Teams, Customer Key at the tenant level encrypts new data from the time you assign the DEP to the tenant. Public preview doesn't support encrypting past data. For Exchange Online, Customer Key encrypts all existing and new data.
 
-You can create multiple DEPs per tenant but can only assign one DEP at any time. When you assign the DEP, encryption begins automatically but takes some time to complete depending on the size of your tenant.
+You can create multiple DEPs per tenant but can only assign one DEP at a time. When you assign the DEP, encryption begins automatically but takes some time to complete depending on the size of your tenant.
 
 ## Tenant level policies add broader control to Customer Key for Microsoft 365
 
