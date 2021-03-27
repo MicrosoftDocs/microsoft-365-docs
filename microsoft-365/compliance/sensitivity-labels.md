@@ -44,7 +44,7 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
 > [!NOTE]
-> Sensitivity labels are [now supported For GCC and GCC High US Government tenants](/officeupdates/current-channel#version-2101-january-26) and currently rolling out for DoD environments.
+> For US Government tenants, sensitivity labels are [now supported for GCC and GCC High environments](/officeupdates/current-channel#version-2101-january-26) and currently rolling out for DoD environments.
 >
 > For the Azure Information Protection unified labeling client and scanner, see [Azure Information Protection Premium Government Service Description](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
