@@ -91,7 +91,7 @@ Records are stored in the Records folder in the Preservation Hold library in the
 
 ![The Records folder in the Preservation Hold library](../media/recordversioning12.png)
 
-For more information about how the Preservation Hold library works for retention.see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ## Searching the audit log for record versioning events
 
