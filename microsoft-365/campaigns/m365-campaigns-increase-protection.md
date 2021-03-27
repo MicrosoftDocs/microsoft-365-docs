@@ -2,10 +2,10 @@
 title: "Increase threat protection"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: Skjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -31,7 +31,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
-For more information, see [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Raise the level of protection against malware in mail
 
@@ -245,7 +245,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/atp-safe-links.md).
+For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
 
 ## Turn on the Unified Audit Log
 

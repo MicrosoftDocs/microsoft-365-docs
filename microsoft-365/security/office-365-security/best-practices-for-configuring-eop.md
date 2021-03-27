@@ -34,7 +34,7 @@ If your organization has existing user accounts in an on-premises Active Directo
 
 ## Recommended settings
 
-We empower security admins to customize their security settings to satisfy the needs of their organization. Although, as a general rule, there are two security levels in EOP and Microsoft Defender for Office 365 that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md).
+We empower security admins to customize their security settings to satisfy the needs of their organization. Although, as a general rule, there are two security levels in EOP and Microsoft Defender for Office 365 that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 ### Miscellaneous/non-policy settings
 
