@@ -41,7 +41,7 @@ You can now do the following things:
   - **Maintain an evergreen document that contains all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
 > [!NOTE]
-> When you use record versioning with a retention label that has a delete action, we recommend that you also configure the retention setting **Start the retention period based on:** to be **When items were labeled**. With this label setting, the start of the retention period is reset for each record version, which ensures that older versions will be deleted before newer versions.
+> When you use record versioning with a retention label that has a delete action, we recommend that you also configure the retention setting **Start the retention period based on:** to be **When items were labeled**. With this label setting, the start of the retention period is reset for each new record version, which ensures that older versions will be deleted before newer versions.
 
 Record versioning is automatically available for any document that has a retention label that marks the item as a record. When a user views the document properties by using the details pane, they can toggle the **Record status** from **Locked** to **Unlocked**. This action creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period. 
 
