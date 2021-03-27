@@ -95,9 +95,9 @@ For more information about how the Preservation Hold library works, see [How ret
 
 ## Searching the audit log for record versioning events
 
-The actions of locking and unlocking records are logged in the audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in **File and page activities**.
+The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
 
