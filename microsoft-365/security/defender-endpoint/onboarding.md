@@ -92,3 +92,4 @@ Using the mentioned deployment tools above, you'll then be guided in configuring
 ## Related topics
 - [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Safe Documents in Microsoft 365 E5] (security/office-365-security/safe-docs.md)
