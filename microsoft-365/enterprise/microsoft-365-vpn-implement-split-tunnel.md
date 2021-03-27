@@ -323,7 +323,7 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 ### Does split-tunnel configuration work for Teams running in a browser?
 
-Yes it does, via supported browsers which are listed at https://docs.microsoft.com/en-us/microsoftteams/get-clients#web-client
+Yes it does, via supported browsers, which are listed in [Get clients for Microsoft Teams](../../microsoftteams/get-clients.md#web-client).
 
 ## Related topics
 
