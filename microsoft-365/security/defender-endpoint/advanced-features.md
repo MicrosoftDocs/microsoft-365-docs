@@ -64,16 +64,6 @@ Potentially unwanted applications (PUA) are a category of software that can caus
 
 Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration. 
 
-
-## Restrict correlation to within scoped device groups - ADD
-When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
-
-
-## Enable EDR in block mode - ADD
-When turned on, Microsoft Defender for Endpoint leverages behavioral blocking and containment capabilities by blocking malicious artifacts or behaviors observed through post-breach endpoint detection and response (EDR) capabilities. This feature does not change how Microsoft Defender for Endpoint performs detection, alert generation, and incident correlation.
-
-
-
 ## Automatically resolve alerts
 
 ## Restrict correlation to within scoped device groups
@@ -127,8 +117,6 @@ For more information, see [Manage indicators](manage-indicators.md).
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
-## Tamper protection - ADD
-Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
 ## Show user details
 
