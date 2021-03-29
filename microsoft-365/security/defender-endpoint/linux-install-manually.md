@@ -82,7 +82,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running CentOS 7 and want to deploy Defender for Endpoint for Linux from the *prod* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
