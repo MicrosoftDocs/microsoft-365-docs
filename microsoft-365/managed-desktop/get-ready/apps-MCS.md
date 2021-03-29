@@ -26,7 +26,7 @@ To work with MCS app packaging, **you must provide these elements**:
 **MCS will take care of these actions:**
 
 - Checking whether the app is prohibited or restricted in the Microsoft Managed Desktop environment.
-- Testing of installation, starting, and uninstallation of the app to ensure compatibility with Windows 10. If MCS discovers a compatibility issue, they will hand off the app to the [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) program for remediation.
+- Testing of installation, starting, and uninstallation of the app to ensure compatibility with Windows 10. If MCS discovers a compatibility issue, they will hand off the app to the [App Assure](/fasttrack/products-and-capabilities#app-assure) program for remediation.
 - Packaging the app to your specification and then testing app deployment by using Microsoft Intune.
 
 ## App delivery schedule
