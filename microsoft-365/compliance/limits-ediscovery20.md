@@ -35,8 +35,8 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Maximum number of review sets per case.  <br/> |20 <br/> |
 |Maximum number of tag groups per case.  <br/> |1000 <br/> |
 |Maximum number of tags per case.  <br/> |1000 <br/> |
-|Maximum concurrent exports (add to Review Set jobs) in your organization. | 10 <sup>4</sup> |
-|Maximum concurrent exports (add to REview Set jobs) per user. | 3 |
+|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10 <sup>4</sup> |
+|Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case. | 3 |
 |||
 
 ## Hold limits
@@ -106,6 +106,8 @@ Microsoft collects performance information for searches run by all organizations
 
 ## Export limits - Final export out of Review Set
 
+The limits described in this section are related to exporting documents out of a review set.
+
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
@@ -129,7 +131,7 @@ Microsoft collects performance information for searches run by all organizations
 >
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
 >
-> <sup>4</sup> This limit is shared across all eDiscovery tools. This means that concurrent exports in Content search, Core eDiscovery, and Advanced eDiscovery are applied against this limit.
+> <sup>4</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
 >
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >
