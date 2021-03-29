@@ -24,7 +24,7 @@ ms.technology: m365d
 
 # Microsoft 365 Defender
 
-<!-- commenting out empty include file [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)] -->
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
