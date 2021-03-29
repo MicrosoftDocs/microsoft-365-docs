@@ -58,9 +58,9 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 ## How is the migration organized?
 
-This figure shows the nine phases of migration to the new German datacenters.
+This figure shows the ten phases of migration to the new German datacenters.
 
-![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 These phases start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
@@ -88,6 +88,8 @@ You are notified of migration progress with Message center posts. The posts will
 - Dynamics complete
 - Power BI complete
 - Final cutover of services is complete
+
+After the final cutover of Azure AD to the worldwide service, it is expected all clients and applications are fully transitioned to use the correct endpoints. There is a 30 day window after the final cutover where it may be possible to continue to obtain Azure AD tokens from the Microsoft Cloud Deutschland service. When the 30 day window expires, clients and applications will no longer be able to access the Azure AD endpoints of Microsoft Cloud Deutschland. Applications or user access will fail from this point. You must ensure all users and applications are migrated to the correct endpoints before this time window closes. 
 
 ## Moving to the new German datacenter regions
 

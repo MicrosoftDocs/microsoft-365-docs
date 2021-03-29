@@ -22,9 +22,9 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)
 
-Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the ten phases of migration to the new German datacenters.
 
-![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
@@ -42,6 +42,8 @@ The migration process will complete over many weeks depending on the overall siz
 |Power BI & Dynamics 365|15+ days|Microsoft|Migrate Power BI and Dynamics 365 content.|
 |Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worldwide.|
 |Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
+|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. |
+
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 Global services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -159,7 +161,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 \*
 (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.
 
-## Power BI (Phase 8 of 9)
+## Power BI (Phase 8)
 
 **Applies to:** All customers using Microsoft Power BI (PBI)
 
@@ -170,6 +172,18 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 \*\*
   (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.
+
+## Azure AD Finalization (Phase 9, 10)
+
+**Applies to:** All customers
+
+When the Office 365 tenant completes the final step of the migration [Azure AD Finalization (Phase 9)] all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automtically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
+
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests, client or application traffic will fail.  |
+| Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests, client or application traffic will fail. |
+||||
 
 ## Office Apps
 
