@@ -536,11 +536,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
-      "redirect_url": "what-is-a-domain",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/services-in-china/index.md",
       "redirect_url": "services-in-china",
       "redirect_document_id": true
