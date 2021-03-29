@@ -28,8 +28,15 @@ landingContent:
         links:
           - text: What is Microsoft 365 Defender?
             url:  ../defender/microsoft-365-defender.md
-          - text: Microsoft 365 security center
-            url: ../defender/overview-security-center.md
+      - linkListType: whats-new
+        links:
+          - text: What's new iMicrosoft 365 Defender
+            url: ../defender/whats-new.md
+      - linkListType: video
+        links:
+          - text: Overview video
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
+
 
 # Card (optional)
   - title: Microsoft 365 security center
