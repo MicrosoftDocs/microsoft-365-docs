@@ -278,8 +278,8 @@ The **URL threat protection** report has two aggregated views that are refreshed
 - **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
 
   - **Blocked** (the user was blocked from navigating to the URL)
-  - **Blocked and clicked through**
-  - **Clicked through during scan**
+  - **Blocked and clicked through** (the user choose to continue navigating to the URL)
+  - **Clicked through during scan** (the user click on the link before the scan is complete)
 
   A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
 
