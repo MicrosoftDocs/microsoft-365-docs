@@ -35,9 +35,9 @@ An inactive mailbox is used to retain a former employee's email after he or she 
     
 - To connect to Exchange Online PowerShell or Security & Compliance Center PowerShell, see one of the following topics:
     
-  - [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 - Holds associated with eDiscovery cases are infinite holds, which means there's no hold duration that can be changed. Items are held forever or until the hold is removed and the inactive mailbox is deleted.
     

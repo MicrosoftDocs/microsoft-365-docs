@@ -21,7 +21,6 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -40,6 +39,4 @@ For more information on the tasks you can use to manage devices, see these artic
   
 [Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md)
 
-[Add a managed device](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[Add a managed device](./app-protection-settings-for-android-and-ios.md)

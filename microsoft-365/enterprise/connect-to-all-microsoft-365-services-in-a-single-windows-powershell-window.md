@@ -33,7 +33,7 @@ This scenario isn't optimal for managing Microsoft 365, because you can't exchan
 
 Before you can manage all of Microsoft 365 from a single instance of PowerShell, consider the following prerequisites:
   
-- The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role. For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). This is a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.
+- The Microsoft 365 work or school account that you use must be a member of a Microsoft 365 admin role. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md). This is a requirement for PowerShell for Microsoft 365, but not necessarily for all other Microsoft 365 services.
     
 - You can use the following 64-bit versions of Windows:
     
@@ -51,7 +51,7 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
     
   - Windows Server 2008 R2 SP1*
     
-    \* You need to install Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview).
+    \* You need to install Microsoft .NET Framework 4.5.*x* and then Windows Management Framework 3.0 or 4.0. For more information, see [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview).
     
     You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Microsoft 365 modules.
     
@@ -59,9 +59,9 @@ Before you can manage all of Microsoft 365 from a single instance of PowerShell,
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online, PowerShell Module](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Teams PowerShell Overview](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online, PowerShell Module](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
     
 -  PowerShell must be configured to run signed scripts for Skype for Business Online and the Security &amp; Compliance Center. Run the following command in an elevated PowerShell session (a PowerShell session that you **Run as administrator**).
     
@@ -123,7 +123,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    ```
 
    > [!Note]
-   > To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+   > To connect to Exchange Online for Microsoft 365 clouds other than Worldwide, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 7. Run these commands to connect to the Security &amp; Compliance Center.
     
@@ -133,7 +133,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    ```
 
    > [!Note]
-   > To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+   > To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 8. Run these commands to connect to Teams PowerShell.
     
@@ -144,7 +144,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    ```
   
    > [!Note]
-   > To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > To connect to Microsoft Teams clouds other than *Worldwide*, see [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
   
 
 

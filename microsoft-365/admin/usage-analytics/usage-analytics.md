@@ -81,9 +81,9 @@ User activity reports are available for certain individual services. These repor
 
 ### Is this template app going to be available through purchase or will it be free?
 
-It is not free, you will need a Power BI Pro license. For details see [prerequisites](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
+It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
-To share the dashboards with others, please see more at [Share dashboards and reports](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
 
 ### Who can connect to Microsoft 365 usage analytics?
 
@@ -103,7 +103,7 @@ You can access to the pbit file from the [Microsoft Download center](https://dow
 
 ### Who can view the dashboards and reports?
 
-If you connected to the template app, you can share it with anybody by using the [sharing functionality](https://go.microsoft.com/fwlink/p/?linkid=845494). Power BI licensing requires that both the user sharing and the user with whom a dashboard is shared have Power BI Pro or Power BI Premium.
+If you connected to the template app, you can share it with anybody by using the [sharing functionality](/power-bi/collaborate-share/service-share-dashboards). Power BI licensing requires that both the user sharing and the user with whom a dashboard is shared have Power BI Pro or Power BI Premium.
 
 ### Can anyone share the dashboard, or does it have to be the person who connected to the dashboard?
 
@@ -111,7 +111,7 @@ When sharing the dashboard, you can either allow users to re-share the dashboard
 
 ### Is it possible to work on and customize the same template app with a group of people?
 
-Yes. To enable a group of admins to work together on the same template app, you can leverage the app workspace functionality of Power BI, for more information, see [How should I collaborate and share dashboards and reports?](https://go.microsoft.com/fwlink/p/?linkid=851070) 
+Yes. To enable a group of admins to work together on the same template app, you can leverage the app workspace functionality of Power BI, for more information, see [How should I collaborate and share dashboards and reports?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### For which timeframe is data available?
 

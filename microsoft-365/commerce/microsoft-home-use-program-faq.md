@@ -51,13 +51,13 @@ For employees to take advantage of the Microsoft Home Use Program discount, they
 
 ## Why do I have to create an Azure Active Directory (AAD) account to use the Home Use Program/ Microsoft Store for Business?
 
-To update and modernize the Home Use Program to a broader range of license and product benefits, we needed to change the way we fulfill HUP. Microsoft Store for Business is used for eligibility validation and to assign HUP benefits, and for that it relies on AAD to connect information from VSLC and to validate the email domains your organization's employees are on. For more information, see [To sign up for Azure AD accounts through Office 365 for Business](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+To update and modernize the Home Use Program to a broader range of license and product benefits, we needed to change the way we fulfill HUP. Microsoft Store for Business is used for eligibility validation and to assign HUP benefits, and for that it relies on AAD to connect information from VSLC and to validate the email domains your organization's employees are on. For more information, see [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
 
 ## How do I become the assigned IT Admin of a managed tenant?
 
 You must create a special record in DNS to prove you own your company domain, ex:contoso.com.
 
-For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
+For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
 
 ## What resources are available to help promote the Home Use Program benefit to employees?
 
@@ -83,7 +83,7 @@ Installs through the Home Use Program have no impact on your organization’s Mi
 
 For support for issues migrating from the Volume Licensing Service Center or to access Microsoft Store for Business, see [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
 
-For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](https://docs.microsoft.com/microsoft-store/)
+For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](/microsoft-store/)
 
 ## Why am I not seeing an option to purchase Visio Professional 2019 and/or Project Professional 2019?
 
@@ -113,7 +113,7 @@ If employees have questions, refer them to the following resources:
 
 [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)
 
-[Microsoft Store for Business Admin support](https://docs.microsoft.com/microsoft-store/) (link page)
+[Microsoft Store for Business Admin support](/microsoft-store/) (link page)
 
 [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=2139192) (link page)
 

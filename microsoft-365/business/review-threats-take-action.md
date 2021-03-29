@@ -53,7 +53,7 @@ The following procedure applies to customers who have Microsoft 365 Business Pre
 
 ## Manage threat detections on the **Active threats** page
 
-The following procedure applies to customers who have Microsoft 365 Business Premium. [Windows 10 devices must be secured](/microsoft-365/business/secure-win-10-pcs) and [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods).
+The following procedure applies to customers who have Microsoft 365 Business Premium. [Windows 10 devices must be secured](./secure-win-10-pcs.md) and [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > The **Microsoft Defender Antivirus** card and **Active threats** page are being rolled out in phases, so you may not have immediate access to them.

@@ -49,4 +49,4 @@ The following technical illustrations and articles provide information about how
 
 ## See Also
 
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
+[Microsoft 365 solution and architecture center](../solutions/index.yml)

@@ -98,9 +98,9 @@ By default, the person who created the group is the group owner. Often a group w
 
 ## More on managing membership
 
-- [Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"
+- [Manage groups dynamically in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): see the section "How can I manage the membership of a group dynamically?"
 
-- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
+- To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Assign a new owner to an orphaned group](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
@@ -112,6 +112,6 @@ By default, the person who created the group is the group owner. Often a group w
 
 - [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)
 
-- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
+- [Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): this article introduces you to key cmdlets and provides examples
 
-- [Microsoft 365 groups naming policy](groups-naming-policy.md)
+- [Microsoft 365 groups naming policy](../../solutions/groups-naming-policy.md)
