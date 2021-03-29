@@ -22,6 +22,7 @@ description: "Understand what a domain is and how you can buy a domain or use th
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What is a domain?

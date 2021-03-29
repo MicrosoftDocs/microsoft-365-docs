@@ -47,6 +47,8 @@ Regardless of the method, users can avoid confusion by including the **Recipient
 
 - Currently, the **Block sender** button is not available in the **Details** flyout for quarantined messages that were sent to the shared mailbox.
 
+- Regarding quarantine operations for shared mailboxes, if you use nested security groups to grant access to a shared mailbox, we recommend no more than two levels of nested groups. For example, Group A is a member of Group B, which is a member of Group C. To assign permissions to a shared mailbox, don't add the user to Group A and then assign Group C to the shared mailbox.  
+
 - To manage quarantined messages for the shared mailbox in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), the end-user will need to use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet with shared mailbox email address for the value of the _RecipientAddress_ parameter to identify the messages. For example:
 
   ```powershell
