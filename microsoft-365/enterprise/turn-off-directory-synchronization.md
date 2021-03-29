@@ -33,7 +33,7 @@ To turn off Directory synchronization:
   
 1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
-2. Use [Set-MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939) to disable directory synchronization: 
+2. Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization: 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
@@ -42,4 +42,3 @@ To turn off Directory synchronization:
 >[!Note]
 >If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
 >
- 

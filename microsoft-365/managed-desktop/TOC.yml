@@ -21,6 +21,8 @@
           href: service-description/device-lifecycle.md
         - name: Device requirements
           href: service-description/device-requirements.md
+        - name: Device images
+          href: service-description/device-images.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
@@ -108,6 +110,8 @@
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
           href: get-started/esp-first-run.md
+        - name: Windows 10 location service
+          href: get-started/device-location.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps

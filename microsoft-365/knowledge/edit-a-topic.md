@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 ms.service: 
 localization_priority: Normal
 
 
 ---
 
-# Edit an existing topic 
+# Edit an existing topic in Microsoft Viva Topics 
 
 </br>
 
@@ -35,7 +35,7 @@ In Viva Topics, you can edit an existing topic. You may need to do this if you w
 
 To edit an existing topic, you need to:
 - Have a Viva Topics license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the Topic center (knowledge managers) already have permissions to create and edit topics.
@@ -52,7 +52,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
 ### To edit a topic page
 
-1. On the topic page, select **Edit**. This allows you to make changes as you need to the topic page.
+1. On the topic page, select **Edit**. This lets you make changes as needed to the topic page.
 
    ![Edit control](../media/knowledge-management/topic-page-edit.png) </br>  
 
@@ -64,11 +64,11 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     ![Description section](../media/knowledge-management/description.png)</br>
 
-4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>Add a new user</b> box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as having a connection the topic (for example, an owner of a connected resource). Begin by typing their name or email address in the <b>Add a new user</b> box, and then selecting the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card.
  
     ![Add pinned people](../media/knowledge-management/pinned-people.png)</br>
 
-    The <b>Suggested people</b> section shows users that AI thinks might be subject matter experts on the topic from their connection to resources about the topic. You can change their status from Suggested to Pinned by selecting the pin icon on the user card.
+    The <b>Suggested people</b> section shows users that AI thinks might be connected to the topic from their connection to resources about the topic. You can change their status from Suggested to Pinned by selecting the pin icon on the user card.
 
    ![Pin a suggested people](../media/knowledge-management/suggested-people.png)</br>
 
@@ -127,13 +127,6 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

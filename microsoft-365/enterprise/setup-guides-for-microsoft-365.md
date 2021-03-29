@@ -211,3 +211,9 @@ Use the [Deploy Office to remote users guide](https://aka.ms/officeremoteinstall
 ### Deploy and update Microsoft 365 Apps with Configuration Manager
 
 For organizations using Configuration Manager, you can use the [Deploy and update Microsoft 365 Apps with Configuration Manager advisor](https://aka.ms/oppinstall) to generate a script that will automatically configure your Microsoft 365 Apps deployment using best practices recommended by FastTrack engineers. Use this guide to build your deployment groups, customize your Office apps and features, configure dynamic or lean installations, and then run the script to create the applications, automatic deployment rules, and device collections you need to target your deployment. 
+
+### Integrate a third-party cloud app with Azure AD
+
+Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). With this end-to-end experience, you can do most of the configuration directly from this wizard. Where appropriate, we'll redirect you to the corresponding configuration page.
+
+Use the [Integrate third-party cloud app](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) wizard to integrate a third-party cloud app with Azure AD.

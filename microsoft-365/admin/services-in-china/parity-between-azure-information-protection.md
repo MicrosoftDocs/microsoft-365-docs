@@ -125,7 +125,7 @@ For more information, see:
 - [AIP quickstart: Deploy the AIP client](/azure/information-protection/quickstart-deploy-client)
 - [AIP administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP user guide](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Learn about Microsoft 365 sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
+- [Learn about Microsoft 365 sensitivity labels](../../compliance/sensitivity-labels.md)
 
 ### Step 4: Configure AIP apps on Windows
 
@@ -158,11 +158,9 @@ Install the AIP on-premises scanner to scan your network and content shares for 
     | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Defines settings for an existing repository in your content scan job. |
     | | |
 
-
 > [!TIP]
 > When [installing the scanner](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner), use the same cluster name in the [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner?view=azureipps) command to associate multiple scanner nodes to the same cluster. Using the same cluster for multiple scanner nodes enables multiple scanners to work together to perform your scans.
 > 
 > Use the [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) cmdlet to return details about your cluster.
 > 
-
 For more information, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner) and [Manage your content scan jobs using PowerShell only](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).

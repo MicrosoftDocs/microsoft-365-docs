@@ -35,7 +35,7 @@
         - name: Migrate your data to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Roll out Teams
-          href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: App training for everyone
           href: https://support.microsoft.com/training
         - name: What subscription do I have?
@@ -57,9 +57,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: admin-overview/about-the-admin-center.md
-        - name: About the new admin center
-          href: microsoft-365-admin-center-preview.md
+          href: ../business-video/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -189,7 +187,7 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/what-is-a-domain.md
+      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
@@ -231,6 +229,8 @@
               href: productivity/meetings.md
             - name: Microsoft 365 Apps health
               href: productivity/apps-health.md
+            - name: Endpoint Analytics
+              href: /mem/analytics/productivity-score
             
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
@@ -258,6 +258,8 @@
            href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
+         - name: Manage Microsoft Rewards 
+           href: manage/manage-microsoft-rewards.md 
          - name: Manage Message center messages
            href: manage/manage-messages.md
          - name: Set up release options
@@ -311,7 +313,7 @@
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score
-          href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
+          href: https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
@@ -320,7 +322,7 @@
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
         - name: Microsoft Intune documentation
-          href: https://docs.microsoft.com/mem/intune/
+          href: /mem/intune/
         - name: Microsoft 365 Business Premium
           items:
             - name: View and edit policies and devices
@@ -403,6 +405,6 @@
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
     - name: Troubleshoot
-      href: https://docs.microsoft.com/office/troubleshoot/
+      href: /office/troubleshoot/
     - name: Contact support
       href: contact-support-for-business-products.md

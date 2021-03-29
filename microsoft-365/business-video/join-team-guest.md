@@ -1,5 +1,5 @@
 ---
-title: "Join a team as s guest"
+title: "Join a team as a guest"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365

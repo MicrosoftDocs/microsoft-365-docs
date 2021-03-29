@@ -84,4 +84,4 @@ Need more detailed steps? See [Add an account](https://support.microsoft.com/off
   
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Microsoft 365
 
-Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) to decide which method works for you.
+Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) to decide which method works for you.

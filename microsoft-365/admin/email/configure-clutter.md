@@ -29,11 +29,11 @@ description: "Learn to enable or disable the Clutter feature for all or specific
   
 As an admin, you may have to manage the Clutter feature in Microsoft 365. To turn the Clutter feature on/off for users in your organization, you must use Exchange PowerShell. (Individuals can turn it on/off using these instructions: [Turn off/on Clutter in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
-Check out [Using PowerShell with Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) and [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) for details on using Exchange PowerShell. You need to have an account that has at least the Exchange Service administrator role and the ability to connect to Exchange Online with PowerShell. 
+Check out [Using PowerShell with Exchange Online](/powershell/exchange/exchange-online-powershell) and [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for details on using Exchange PowerShell. You need to have an account that has at least the Exchange Service administrator role and the ability to connect to Exchange Online with PowerShell. 
   
 ## Turn Clutter on using Exchange PowerShell
 
-You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+You can enable Clutter manually for a mailbox by running the [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet. 
   
 Turn on Clutter for a single user named Allie Bellew
     
@@ -42,13 +42,13 @@ Turn on Clutter for a single user named Allie Bellew
 
 ## Turn Clutter off using Exchange PowerShell
 
-You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+You can disable Clutter manually for a mailbox by running the [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet. 
   
 Turn off Clutter for a single user named Allie Bellew:
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-If you use PowerShell to bulk create your users, then you'll need to run [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) against each user's mailbox to manage Clutter. 
+If you use PowerShell to bulk create your users, then you'll need to run [Set-Clutter](/powershell/module/exchange/set-clutter) against each user's mailbox to manage Clutter. 
   
 ## When does the Clutter on/off switch appear to users in Outlook on the web?
 <a name="bkmk_onoff"> </a>
@@ -99,5 +99,3 @@ As an admin, you can re-enable Clutter using Exchange PowerShell. Once this is d
 [Use Clutter to sort low priority messages in OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
 [Turn off Clutter in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
-    
-

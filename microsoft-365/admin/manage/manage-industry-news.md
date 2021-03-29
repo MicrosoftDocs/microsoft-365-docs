@@ -58,5 +58,5 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 
 ## Related articles
 
-- [Microsoft Search](https://docs.microsoft.com/microsoftsearch/)
-- [Manage your data and service](https://docs.microsoft.com/microsoft-365/admin/manage)
+- [Microsoft Search](/microsoftsearch/)
+- [Manage your data and service](./index.yml)
