@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn about the Microsoft Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
+description: "Learn about the Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
 ---
 
 # Business Assist for Microsoft 365
