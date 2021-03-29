@@ -146,45 +146,65 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
 2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-- Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+   - Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
 
-```bash
-    mdatp health --field real_time_protection_enabled
-```
+   ```bash
+       mdatp health --field real_time_protection_enabled
+   ```
 
-- Open a Terminal window. Copy and execute the following command:
+   - Open a Terminal window. Copy and execute the following command:
 
-```bash
-    curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-```
+   ```bash
+       curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+   ```
 
-- The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
+   - The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
 
-```bash
-    mdatp threat list
-```
+   ```bash
+       mdatp threat list
+   ```
 
 3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
-In your browser such as Microsoft Edge for Mac or Safari
-Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
-You may get prompted:
+   1. In your browser such as Microsoft Edge for Mac or Safari.
+   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+      You may get prompted:
 
-> Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
-You can change which websites can download files in Websites Preferences.
+      > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
+      You can change which websites can download files in Websites Preferences.
 
 4. Click **Allow**.
 5. Open **Downloads**.
 6. You should see **MDATP MacOS DIY**.
 
-> [!TIP]
-> If you double-click, you will get the following message:
-"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.
-macOS cannot verify that this app is free from malware.
-Move to **Trash Cancel**.
-Click **Cancel**.
-Right-click on **MDATP MacOS DIY**.
-Click **Open**.
+   > [!TIP]
+   > If you double-click, you will get the following message:
+   > 
+   > "MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.
+   > macOS cannot verify that this app is free from malware.
+   > Move to **Trash Cancel**. 
+  
+7. Click **Cancel**.
+8. Right-click on **MDATP MacOS DIY**, and then click **Open**. 
+   The system should display the following message:
 
+	> macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?
+	> By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+10. Click **Open**.
+    The system should display the following message:
+
+	> Microsoft Defender ATP - macOS EDR DIY test file
+	> Corresponding alert will be available in the MDATP portal.
+11. Click **Open**. 
+    In a few minutes an alert named "macOS EDR Test Alert" should be raised.
+
+12.	Go to Microsoft Defender Security Center (https://SecurityCenter.microsoft.com).
+
+13.	Go to the Alert Queue.
+
+	:::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
+	
+	Look at the alert details and the device timeline, and perform the regular investigation steps.
+   
 macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?
 By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
 Click **Open**.
