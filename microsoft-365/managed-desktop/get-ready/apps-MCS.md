@@ -1,14 +1,17 @@
 ---
 title: Working with Microsoft Consulting Services
-description: preparation and steps to follow to work with MCS to package your apps
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps, MCS, packaging
+description: Preparation and steps to follow to work with MCS to package your apps
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Working with Microsoft Consulting Services

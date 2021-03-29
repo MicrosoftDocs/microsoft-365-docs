@@ -4,10 +4,14 @@ description: Outlines what is included in Microsoft Managed Desktop as a service
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Microsoft Managed Desktop service description
