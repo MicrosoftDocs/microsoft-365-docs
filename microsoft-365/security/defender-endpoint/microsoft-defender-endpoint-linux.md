@@ -78,7 +78,11 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > Running Defender for Endpoint for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission.  For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- Memory: 1GB
+    > [!NOTE]
+    > Please make sure that you have free disk space in /var.
+
 - The solution currently provides real-time protection for the following file system types:
 
   - `btrfs`
