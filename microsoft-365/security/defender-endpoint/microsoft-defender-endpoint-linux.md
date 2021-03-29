@@ -78,6 +78,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > Running Defender for Endpoint for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1GB
+    > [!NOTE]
+    > Please make sure that you have free disk space in /var.
 - The solution currently provides real-time protection for the following file system types:
 
   - `btrfs`
