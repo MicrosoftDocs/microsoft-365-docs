@@ -26,7 +26,7 @@ Microsoft Managed Desktop is a service that provides your users with a secure mo
 
 For details about the specific services included with Microsoft Managed Desktop, see the other articles in this section. If you've already decided that Microsoft Managed Desktop is for you, the articles in [Get ready for enrollment in Microsoft Managed Desktop](../get-ready/index.md) provide you with the steps to prepare to join the service.
 
-- [Microsoft Managed Desktop supported regions and languages](regions-languages.md) explains which regions and languages are supported with the service.
+- [Supported regions and languages](regions-languages.md) explains which regions and languages are supported with the service.
 - To guarantee the best experience for your users, only certain devices are supported by Microsoft Managed Desktop. [Program devices](device-list.md) specifies the exact device models and configurations you can use with the service, whether you provide them or work with a partner.
 - [Device services](device-services.md) specifies the device-related services that Microsoft will provide to subscribers.
 - [Device configuration](device-policies.md) clarifies the default and security-related Mobile Device Management policies that the service will apply to enrolled devices.
