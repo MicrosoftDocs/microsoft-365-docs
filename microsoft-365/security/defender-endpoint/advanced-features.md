@@ -76,6 +76,15 @@ When turned on, Microsoft Defender for Endpoint leverages behavioral blocking an
 
 ## Automatically resolve alerts
 
+## Restrict correlation to within scoped device groups
+When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
+
+>[!NOTE]
+>Changing this setting impacts future alert correlations only.
+
+
+## Autoresolve remediated alerts
+
 For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
 
 > [!TIP]

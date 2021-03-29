@@ -140,7 +140,7 @@
 ###### [Device control overview](mac-device-control-overview.md)
 ###### [JAMF examples](mac-device-control-jamf.md)
 ###### [Intune examples](mac-device-control-intune.md)
-##### [Schedule scans](mac-schedule-scan-atp.md)
+##### [Schedule scans](mac-schedule-scan.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](mac-support-install.md)
@@ -587,5 +587,5 @@
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 
 # [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender for Office 365](../office-365-security/overview.md)

@@ -95,7 +95,7 @@ iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/c
 > Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 > [!NOTE]
-> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS. While we're in preview those versions are availble only in the "Insider Fast" channel. See [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) or [Set the channel name (macOS)](mac-updates.md#set-the-channel-name) for instructions.
+> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS. During preview those versions are availble only in the "Insider Fast" channel. See [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) or [Set the channel name (macOS)](mac-updates.md#set-the-channel-name) for instructions.
 
 ### OS versions when using Azure Defender for Servers
 The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
@@ -163,7 +163,7 @@ Automated investigation and remediation: Response to Office 365 alerts | ![No](i
 Email notifications | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Evaluation lab | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Management and APIs: Device health and compliance report | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Management and APIs: Integration with third-party products | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out | ![No](images/svg/check-no.svg) Rolling out
+Management and APIs: Integration with third-party products | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Management and APIs: Streaming API | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Management and APIs: Threat protection report | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Threat & vulnerability management | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
