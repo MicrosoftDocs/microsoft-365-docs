@@ -63,7 +63,7 @@ The following two specific rules don't support exclusions:
 |Block JavaScript or VBScript from launching downloaded executable content|D3E037E1-3EB8-44C8-A917-57927947596D|Not supported|
 |Block persistence through WMI event subscription|e6db77e5-3df2-4cf1-b95a-636979351e5b|Not supported|
 
-ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
