@@ -433,6 +433,17 @@ python -m json.tool mdatp_managed.json
 
 If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
 
+## Verifying that the mdatp_managed.json file is working as expected
+To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> For the mdatp_managed.json to take effect, no restart of the wdavdaemon is required.
+
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
