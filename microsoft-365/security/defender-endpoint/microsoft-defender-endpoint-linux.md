@@ -79,6 +79,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Disk space: 1GB
 - Memory: 1GB
+    > [!NOTE]
+    > Please make sure that you have free disk space in /var.
+
 - The solution currently provides real-time protection for the following file system types:
 
   - `btrfs`

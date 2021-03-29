@@ -32,7 +32,6 @@ ms.technology: m365d
 
 Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, a webcast series for new security analysts and seasoned threat hunters. The series guides you through the basics all the way to creating your own sophisticated queries. Start with the first video on fundamentals or jump to more advanced videos that suit your level of experience.
 
-
 | Title | Description | Watch | Queries | 
 |--|--|--|--|
 | Episode 1: KQL fundamentals | This episode covers the basics of advanced hunting in Microsoft 365 Defender. Learn about available advanced hunting data and basic KQL syntax and operators. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL file](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |

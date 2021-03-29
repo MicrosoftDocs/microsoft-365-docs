@@ -15,14 +15,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn about the Microsoft Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
+description: "Learn about the Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
 ---
 
 # Business Assist for Microsoft 365
 
 Get the most out of your subscription with expert advice from small business specialists.
 
-**Business Assist for Microsoft 365** is a service especially designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+**Business Assist for Microsoft 365** is designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Business Assist services
 
@@ -33,7 +33,7 @@ Get the most out of your subscription with expert advice from small business spe
 | | | |
 
 > [!div class="nextstepaction"]
-> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## Eligibility for Business Assist
 
@@ -53,4 +53,4 @@ Only organizations that are eligible will see the option to buy Business Assist.
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
 > [!div class="nextstepaction"]
-> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Buy now](https://go.microsoft.com/fwlink/p/?linkid=2158423)
