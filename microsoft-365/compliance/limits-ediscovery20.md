@@ -31,10 +31,12 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Total number of documents that can be added to a case (for all review sets in a case).  <br/> |3 million <br/> |
 |Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |300 GB <br/> |
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
-|Maximum number of loads sets per case.  <br/> |200 <br/> |
+|Maximum number of load sets per case.  <br/> |200 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
 |Maximum number of tag groups per case.  <br/> |1000 <br/> |
 |Maximum number of tags per case.  <br/> |1000 <br/> |
+|Maximum concurrent exports (add to Review Set jobs) in your organization. | 10 <sup>4</sup> |
+|Maximum concurrent exports (add to REview Set jobs) per user. | 3 |
 |||
 
 ## Hold limits
@@ -102,15 +104,11 @@ Microsoft collects performance information for searches run by all organizations
 |Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
 |||
 
-## Export limits
+## Export limits - Final export out of Review Set
 
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
-|Maximum amount of data in a single day. | 2 TB |
-|Maximum concurrent exports in your organization. | 10 <sup>4</sup> |
-|Maximum concurrent exports per user. | 3 |
-|Maximum size of a single PST file. | 10 GB |
 |Maximum concurrent exports per review set. | 1 |
 |||
 
