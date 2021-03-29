@@ -86,7 +86,7 @@ To help identify the *Service Start Date* you can create a pattern explanation.
 
 ### Use the Explanation library
 
-For creating explanations for items such as dates, it is easier to [use the explanation library](./explanation-types-overview.md#use-the-explanation-library) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
+For creating explanations for items such as dates, it is easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
 
 For the *Service Start Date* sample, it is more efficient to use the pre-built explanation for *Date* in the explanation library:
 
