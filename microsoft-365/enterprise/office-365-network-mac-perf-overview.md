@@ -144,6 +144,10 @@ The details tab on the office location page shows the specific measurement resul
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+## Sharing network assessment data with Microsoft
+
+By default, the network assessments for your organization and the network insights are shared with Microsoft employees. This does not include any personal data from your staff but only the specific network assessment metrics and network insights shown in the admin center for your office locations. It also does not include your office location names or street addresses so you would need to tell them the city and support ID of the office you want to discuss. If this is turned off, the Microsoft engineers that you are discussing your network connectivity with cannot view any of this information. Enabling this setting only shares future data starting the day after you enable it.
+
 ## CSV Import for LAN subnet office locations
 
 For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
