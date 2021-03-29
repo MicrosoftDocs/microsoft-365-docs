@@ -536,11 +536,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
-      "redirect_url": "what-is-a-domain",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/services-in-china/index.md",
       "redirect_url": "services-in-china",
       "redirect_document_id": true
@@ -3328,6 +3323,16 @@
     {
       "source_path": "microsoft-365/security/office-365-security/whats-new-in-defender-office-365-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-365-security/threat-explorer.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-safe-attachments.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-attachments",
       "redirect_document_id": false
     }
   ]
