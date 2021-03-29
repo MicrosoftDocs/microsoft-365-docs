@@ -40,7 +40,7 @@ This section does not include the specific steps required to prepare the MailUse
 
 ## Prerequisites
 
-The cross-tenant mailbox move feature requires [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
+The cross-tenant mailbox move feature requires [Azure Key Vault](/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
 
 Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure Azure Key Vault, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship. Typically, Global Admin has permission to perform all configuration steps.
 
@@ -111,7 +111,7 @@ Prepare the source tenant:
     ||||
 
     >[!Note]
-    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
+    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
 
 6. The script will pause and ask you to accept or consent to the Exchange mailbox migration application that was created during this process. Here is an example.
 
@@ -585,7 +585,7 @@ No. The source and target tenant domain names must be unique. For example, a sou
 
 Yes, however we only keep the store permissions as described in these articles:
 
-- [Microsoft Docs | Manage permissions for recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft Docs | Manage permissions for recipients in Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [Microsoft Support | How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -599,11 +599,11 @@ Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches
 
 **What if I use Service encryption with Customer Key?**
 
-The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) for more information.  
+The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](../compliance/customer-key-overview.md) for more information.  
 
 **What is the estimated migration time?**
 
-To help you plan your migration, the table present [here](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
+To help you plan your migration, the table present [here](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
 
 Do remember that this feature is currently in preview and the SLA and any applicable Service Levels do not apply to any performance or availability issues during the preview status of this feature.
 
@@ -728,4 +728,3 @@ Do remember that this feature is currently in preview and the SLA and any applic
    | Microsoft Defender for Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Premium Encryption in Office 365                  |
-    

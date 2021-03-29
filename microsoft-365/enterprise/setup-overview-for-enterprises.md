@@ -53,11 +53,11 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
 
    Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Microsoft 365 subscription.
 
-3. [Implement security](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
+3. [Implement security](/office365/securitycompliance/security-roadmap)
 
    Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.
  
-4. [Deploy client software](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+4. [Deploy client software](/DeployOffice/deployment-guide-microsoft-365-apps)
 
    Includes deploying Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), the cloud-updated and always-current version of the Office suite (Word, Excel, PowerPoint, and others) on your devices. Every Microsoft 365 client license includes a license for Microsoft 365 Apps for enterprise.
  
@@ -69,7 +69,7 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
 
    Includes information on migration of your data and links to articles that get you started on key Microsoft 365 productivity apps such as Exchange Online, SharePoint Online, and Teams.
  
-7. [Train your users](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+7. [Train your users](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
    Includes short videos that help your users get the most out of Microsoft 365 quickly.
  

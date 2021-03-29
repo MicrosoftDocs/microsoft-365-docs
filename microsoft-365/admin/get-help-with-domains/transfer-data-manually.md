@@ -51,7 +51,7 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 
 Go to the following pages on each account, and set up the new account based on the old account's settings.
   
-If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/), and go to the following places to look at admin settings.
+If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](../index.yml), and go to the following places to look at admin settings.
   
 For Microsoft 365 Enterprise and Microsoft 365 Midsize Business:
   
@@ -75,7 +75,7 @@ If you have a public website hosted on Microsoft 365, you need to save it and re
 > [!NOTE]
 > If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
   
-To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://go.microsoft.com/fwlink/p/?LinkId=402910).
+To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
   
 > [!NOTE]
 > The Public site migration app can't transfer data to a different subscription.

@@ -32,17 +32,18 @@ ms.custom:
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
-- [What's new in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
-- [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office updates](https://docs.microsoft.com/OfficeUpdates/)
+- [What's new in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [What's new in the Exchange admin center](/Exchange/whats-new)
+- [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
+- [What's new in the Microsoft 365 compliance center](/Office365/SecurityCompliance/whats-new)
+- [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
+- [Office updates](/OfficeUpdates/)
+- [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## Ignite 2021 (March)
 
@@ -57,6 +58,12 @@ We’ve revamped the Message center to help you discover relevant messages and a
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
 To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+
+### What's new features
+
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
 ## Ignite 2020 (August & September)
 
@@ -93,7 +100,7 @@ There are two ways to get started:
 - Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
-For more info on priority accounts, check out [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+For more info on priority accounts, check out [Monitoring priority accounts](./setup/priority-accounts.md).
 
 ### Search faster and get better results from any page
 
@@ -153,13 +160,13 @@ In May, we announced that you'll soon be able to sync Message center posts to Mi
 
 ![Message center page with 'planner syncing' highlighted in the command bar next to the preferences button.](../media/MAC-WN-MCPlannerSync.png)
 
-To learn more about it, check out this article and video to see how it works: [Track your message center posts in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+To learn more about it, check out this article and video to see how it works: [Track your message center posts in Planner](/Office365/Planner/track-message-center-tasks-planner)
 
 ### Documentation, Training, and Videos
 
 - Brand new and just in time for Microsoft Ignite--[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Deep dive into technical training for IT pros and developers. Quickly find around 20 new videos as part of #SIDETRACKED, the name of the Ignite admin track this year.
 - [What's new with Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) video series: This month, we cover new features available in Whiteboard for Teams and on the web, how to automate user provisioning to Azure AD, new Power Automate triggers and actions in Teams, and more. And stay tuned for next month, where we'll have a recap of all the great things happening at Ignite!
-- We did a redesign of the [Microsoft 365 documentation](https://docs.microsoft.com/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
+- We did a redesign of the [Microsoft 365 documentation](/microsoft-365) page that focuses on solutions first. We'll highlight new solutions as they become available on this page, so keep an eye out.
 
 ![New landing page for Microsoft 365 solutions documentation with solutions like "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
 
@@ -211,7 +218,7 @@ If you allow your users to self-install Office from the portal, you can select M
 
 In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
 
-For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+For more information, see [Changes to update channels for Microsoft 365 Apps](/DeployOffice/update-channels-changes).
 
 ### New admin roles
 
@@ -221,7 +228,7 @@ We've added some new Azure Active Directory admin roles to the Microsoft 365 adm
 - Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
 - Printer admin role grants permission to manage all aspects of printers and printer connections.
 - Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
-To find out more about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+To find out more about these roles, see [About admin roles](./add-users/about-admin-roles.md).
 
 ### Export groups list
 
@@ -229,7 +236,7 @@ We've heard from a lot of admins that they need to share information about group
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com](https://docs.microsoft.com) called the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+Just this month, we released a new site on [https://docs.microsoft.com]() called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance
@@ -240,7 +247,7 @@ Just this month, we released a new site on [https://docs.microsoft.com](https://
 ### Docs, training, and videos (May)
 
 - **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. 
-- The [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin/) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
+- The [Microsoft 365 admin center help](./index.yml) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
 
 ## April 2020
 

@@ -33,8 +33,8 @@ For keyboard users using accessibility mode, if you are labeling text in an exam
 - Tab: Moves you forward and selects the next word.
 - Tab + Shift: Moves you backwards and selects the previous word.
 - Enter: Label or removes a label from the selected word.
-- Forward arrow: Moves you forward through individual characters in a selected word.
-- Backward arrow: Moves you backward through individual characters in a selected word.
+- Right arrow: Moves you forward through individual characters in a selected word.
+- Left arrow: Moves you backward through individual characters in a selected word.
 
 > [!NOTE]
 > If you are labeling multiple words for a single label, you need to label each word.
@@ -47,7 +47,7 @@ For Narrator users using accessibility mode, use the same keyboard navigation de
 As you navigate through the sample documents and label string values, Narrator will give user the following audio prompts:
 
 - When you use the keyboard to navigate through the document viewer, Narrator audio will state the selected string.
-- Within a selected string, Narrator audio will state each character in the string as you select them by using the forward or backward arrow.
+- Within a selected string, Narrator audio will state each character in the string as you select them by using the left or right arrow keys.
 - If you select a string that has been labeled, Narrator will state the value and then "labeled".  For example, if the label value is "Contoso", it will state "Costoso labeled". 
 - In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted". This occurs when training predicts a value in the file that does not match what has been labeled by the user.
 - In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This occurs when training is successful and there is a match between a predicted value and the user label.

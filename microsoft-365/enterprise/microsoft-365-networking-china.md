@@ -40,9 +40,9 @@ Many enterprises with global Microsoft 365 tenants and users in China have imple
 >[!IMPORTANT]
 >As with all private WAN implementations, you should always consult regulatory requirements for your country and/or region to ensure that your network configuration is in compliance.
 
-As a first step, it is crucial that you follow our benchmark network guidance at [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune). The primary goal should be to avoid accessing global Microsoft 365 services from the Internet in China if possible.
+As a first step, it is crucial that you follow our benchmark network guidance at [Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md). The primary goal should be to avoid accessing global Microsoft 365 services from the Internet in China if possible.
 
-- Leverage your existing private network to carry Microsoft 365 network traffic between China office networks and offshore locations that egress on the public Internet outside China. Almost any location outside China will provide a clear benefit. Network administrators can further optimize by egressing in areas with low-latency interconnect with the [Microsoft global network](https://docs.microsoft.com/azure/networking/microsoft-global-network). Hong Kong, Japan, and South Korea are examples.
+- Leverage your existing private network to carry Microsoft 365 network traffic between China office networks and offshore locations that egress on the public Internet outside China. Almost any location outside China will provide a clear benefit. Network administrators can further optimize by egressing in areas with low-latency interconnect with the [Microsoft global network](/azure/networking/microsoft-global-network). Hong Kong, Japan, and South Korea are examples.
 - Configure user devices to access the corporate network over a VPN connection to allow Microsoft 365 traffic to transit the corporate network's private offshore link. Ensure that VPN clients are either not configured to use split tunneling, or that user devices are configured to ignore split tunneling for Microsoft 365 traffic.
 - Configure your network to route all Microsoft 365 traffic across your private offshore link. If you must minimize the volume of traffic on your private link, you can choose to only route endpoints in the **Optimize** category, and allow requests to **Allow** and **Default** endpoints to transit the Internet. This will improve performance and minimize bandwidth consumption by limiting optimized traffic to critical services that are most sensitive to high latency and packet loss.
 - If possible, use UDP instead of TCP for live media streaming traffic, such as for Teams. UDP offers better live media streaming performance than TCP.
@@ -58,14 +58,14 @@ Users in China who connect to global Microsoft 365 tenants from remote locations
 If cross-border private networks and/or VPN access into the corporate network are not an option, per-user performance issues can still be mitigated by training your China-based users to follow these best practices.
 
 - Utilize rich Office clients that support caching (e.g. Outlook, Teams, OneDrive, etc.), and avoid web-based clients. Office client caching and offline access features can dramatically reduce the impact of network congestion and latency.
-- If your Microsoft 365 tenant has been configured with the _Audio Conferencing_ feature, Teams users can join meetings via the public switched telephone network (PSTN). For more information, see [Audio Conferencing in Office 365](https://docs.microsoft.com/microsoftteams/audio-conferencing-in-office-365).
+- If your Microsoft 365 tenant has been configured with the _Audio Conferencing_ feature, Teams users can join meetings via the public switched telephone network (PSTN). For more information, see [Audio Conferencing in Office 365](/microsoftteams/audio-conferencing-in-office-365).
 - If users experience network performance issues, they should report to their IT department for troubleshooting, and escalate to Microsoft support if trouble with Microsoft 365 services is suspected. Not all issues are caused by cross-border network performance.
 
 Microsoft is continually working to improve the Microsoft 365 user experience and the performance of clients over the widest possible range of network architectures and characteristics. Visit the [Office 365 Tech Community](https://techcommunity.microsoft.com/t5/office-365/bd-p/Office365General) to start or join a conversation, find resources, and submit feature requests and suggestions.
 
 ## Related topics
 
-[Network planning and performance tuning for Microsoft 365](https://aka.ms/tune)
+[Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md)
 
 [Microsoft 365 network connectivity principles](microsoft-365-network-connectivity-principles.md)
 
@@ -73,4 +73,4 @@ Microsoft is continually working to improve the Microsoft 365 user experience an
 
 [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
-[Microsoft global network](https://docs.microsoft.com/azure/networking/microsoft-global-network)
+[Microsoft global network](/azure/networking/microsoft-global-network)

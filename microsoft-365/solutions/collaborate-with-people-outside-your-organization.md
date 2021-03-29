@@ -57,6 +57,6 @@ If some of the sharing features in Microsoft 365 conflict with your governance p
 
 ## Related topics
 
-[Intro to file collaboration in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[Intro to file collaboration in Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[Plan file collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Plan file collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration)

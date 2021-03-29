@@ -24,8 +24,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started. There are many spam-filtering solutions, but the process for switching to EOP is similar in most cases.
 
@@ -53,7 +53,7 @@ During the Microsoft 365 setup process, you will create your cloud-based mailbox
 
 You may want to move only a portion of your mailboxes to the cloud because of business requirements or regulatory considerations. When you deploy a hybrid scenario, you can move mailboxes to the cloud as your business requirements dictate. Migrating to a hybrid scenario with EOP protection is more complicated than moving to an all-cloud scenario, but Microsoft provides full hybrid support and ample resources to make the move to hybrid easier.
 
-The best place to start, if you are considering a hybrid deployment, is [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid). Additionally, there are a few different ways you can route mail in a hybrid scenario that are important to understand. [Transport Routing in Exchange hybrid deployments](https://docs.microsoft.com/exchange/transport-routing) explains each type, so you can choose the best routing scenario, based on your business requirements.
+The best place to start, if you are considering a hybrid deployment, is [Exchange Server hybrid deployments](/exchange/exchange-hybrid). Additionally, there are a few different ways you can route mail in a hybrid scenario that are important to understand. [Transport Routing in Exchange hybrid deployments](/exchange/transport-routing) explains each type, so you can choose the best routing scenario, based on your business requirements.
 
 ## Migration planning
 
@@ -63,7 +63,7 @@ When you decide to switch to EOP, make sure you give special consideration to th
 
 - **IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process. For more information about the IP Allow List and IP Block List, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).
 
-- **Secure Communication**: If you have a partner that requires encrypted messaging, we recommend that you set this up in the Exchange admin center. To configure this scenario, see [Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
+- **Secure Communication**: If you have a partner that requires encrypted messaging, we recommend that you set this up in the Exchange admin center. To configure this scenario, see [Set up connectors for secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 
 > [!TIP]
 > When you switch from an on-premises appliance to EOP, it is possible to leave your appliance or a server in place that performs business rule checks. For instance, if your appliance performs custom filtering on outbound mail, and you want it to continue doing so, you can configure EOP to send mail directly to the appliance for additional filtering, before it is routed to the internet.
