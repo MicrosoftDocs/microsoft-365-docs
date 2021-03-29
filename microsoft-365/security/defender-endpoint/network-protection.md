@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
+ms.topic: how-to
 ---
 
 # Protect your network

@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-mcafeemigrate
   - m365solution-overview
-ms.topic: conceptual
+ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
