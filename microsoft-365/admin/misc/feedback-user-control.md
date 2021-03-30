@@ -38,7 +38,8 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 Users can also rate their experience and provide additional information about their experience via Microsoft initiated surveys. These surveys appear in the Microsoft 365 apps occasionally, at the bottom right of the app. If the user decides to provide feedback, dismisses the survey, or lets the survey disappear on its own, that user won't see the survey again for a while. Microsoft uses a data governance process to suppress these surveys to ensure the least amount disruption to your users.
 
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Examples of in-product feedback pages":::
+:::image type="content" source="../../media/feedback-in-product2.png" alt-text="Screenshot: Examples of in-product feedback pages":::
+:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot: Examples of in-product feedback pages":::
 
 ## What kind of feedback is best?
 
