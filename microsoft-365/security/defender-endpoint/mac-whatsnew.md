@@ -34,7 +34,7 @@ ms.technology: mde
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+> Support for macOS 10.13 (High Sierra) has been discontinued on February 15th, 2021.
 
 ## 101.23.64 (20.121021.12364.0)
 
