@@ -75,6 +75,8 @@ Considerations to note:
 
 Office Online services are accessible via `office.de` before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.
 
+The most recently used (MRU) service in Office is a cutover from the Microsoft Cloud Deutschland to Office 365 Global services, not a migration. Only MRU links from the Office 365 Global services side will be visible after migration from the Office.com portal. MRU links from the Microsoft Cloud Deutschland aren't visible as MRU links in Office 365 Global services. In Office 365 Global services, MRU links are accessible only after the tenant migration has reached phase 9.
+
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection (EOP) features are copied to new Germany region.
