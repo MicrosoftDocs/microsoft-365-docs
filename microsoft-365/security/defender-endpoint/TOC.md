@@ -390,6 +390,7 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
+#### [API release notes](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
 ###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 
-# [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)
