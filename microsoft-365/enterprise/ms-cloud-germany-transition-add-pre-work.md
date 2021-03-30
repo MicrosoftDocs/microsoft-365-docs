@@ -28,13 +28,14 @@ If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
 - **Custom Domains**, do [this step](#dns).
-- **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
+
 - **SharePoint Online**, do [this step](#sharepoint-online).
 - **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
 
+- **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
 - **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
@@ -57,7 +58,7 @@ Office 365 tenant and user identifiers are preserved during migration. Azure AD 
 | Create organization-wide [retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention) to protect from inadvertent deletion of content during migration.  |<ul><li>To ensure that content isn't inadvertently deleted by end users during the migration, customers may choose to enable an organization-wide retention policy. </li><li>Although retention isn't required, since holds placed at anytime during the migration should work as expected, having a retention policy is a back-up safety mechanism. At the same time, a retention policy might not be used by all customers, especially those who are concerned about over preservation.</li></ul>| Apply retention policy as described in [Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention-policies). Failures of the service or client software can occur if this is not done before Phase 4 of 9. </li></ul>|
 |||||
 
-## DNS
+## DNS entries for custom domains
 
 <!-- before phase 9 -->
 
