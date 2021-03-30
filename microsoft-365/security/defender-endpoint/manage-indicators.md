@@ -46,6 +46,9 @@ The same list of indicators is honored by the prevention agent. Meaning, if Micr
 **Automated investigation and remediation engine**<BR>
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
 
+> [!NOTE]
+> The EnableFileHashComputation setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It will be concurrently enabled and disabled with the allow or block file setting. EnableFileHashComputation is enabled manually through Group Policy, and is disabled by default.
+
 
 The current supported actions are:
 - Allow
