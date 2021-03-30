@@ -92,7 +92,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 
 ### Onboard to the Microsoft Defender for Endpoint Service to enable auditing capabilities
 
-To deploy Microsoft Defender for Endpoint you must go through the various phases of deployment. After onboarding you can configure auditing capabilities in the Security & Compliance Center. 
+To deploy Microsoft Defender for Endpoint you must go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Security & Compliance Center. 
 To learn more see [Onboard to the Microsoft Defender for Endpoint service] (/security/defender-endpoint/onboarding). If you need additional help please refer to the [Troubleshoot Microsoft Defender for Endpoint onboarding issues] (/security/defender-endpoint/troubleshoot-onboarding).
 
 ### How do I know this worked?
