@@ -48,8 +48,8 @@ Retention settings that you configure can help you achieve these goals. Managing
 With these two retention actions, you can configure retention settings for the following outcomes:
 
 - Retain-only: Retain content forever or for a specified period of time.
-- Delete-only: Delete content after a specified period of time.
-- Retain and then delete: Retain content for a specified period of time and then delete it.
+- Delete-only: Permanently delete content after a specified period of time.
+- Retain and then delete: Retain content for a specified period of time and then permanently delete it.
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
