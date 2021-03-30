@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft feedback for your organization"
+title: "Learn about Microsoft feedback for your organization"
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn about how to control feedback your users send to Microsoft."
 ---
 
-# Manage Microsoft feedback for your organization
+# Learn about Microsoft feedback for your organization
 
 User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users.  
 In this topic, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
@@ -32,13 +32,13 @@ In this topic, you'll find information on what types of feedback exist, how we c
 
 If your users are using one of Microsoft's apps and wish to provide feedback, there are various ways to do that from within the apps they're using. Users can use these different ways to share product and feature feedback with us. One of the most common ways to share feedback through Microsoft apps is under the Help menu. Selecting **Help** > **Feedback** from most Microsoft apps launches a feedback page, which allows users to submit feedback to Microsoft.
 
-
+:::image type="content" source="../../media/feedback-excel-example.png" alt-text="Screenshot: Excel spreadsheet with right pane on Microsoft feedback page":::
 
 ### In-product surveys
 
 Users can also rate their experience and provide additional information about their experience via Microsoft initiated surveys. These surveys appear in the Microsoft 365 apps occasionally, at the bottom right of the app. If the user decides to provide feedback, dismisses the survey, or lets the survey disappear on its own, that user won't see the survey again for a while. Microsoft uses a data governance process to suppress these surveys to ensure the least amount disruption to your users.
 
-**add screenshot**
+:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Examples of in-product feedback pages":::
 
 ## What kind of feedback is best?
 
