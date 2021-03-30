@@ -79,7 +79,20 @@ These steps are required only one time on your computer. But you'll likely need 
     Install-Module -Name AzureAD
     ```
 
-   If you're prompted to install a module from an untrusted repository, type **Y** and press Enter.
+  By default, the PowerShell Gallery (PSGallery) isn't configured as a trusted repository for **PowerShellGet**. The first time you use the PSGallery, you'll see the following message:
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+Answer **Yes** or **Yes to All** to continue with the installation.
+
 
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 

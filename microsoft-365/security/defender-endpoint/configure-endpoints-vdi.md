@@ -82,7 +82,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 4. Depending on the method you'd like to implement, follow the appropriate steps: <br>
    **For single entry for each device**:<br>
    
-   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`.
+   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There is no need to specify the other file, as it will be triggered automatically.
    
    **For multiple entries for each device**:
    
