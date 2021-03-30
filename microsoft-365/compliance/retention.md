@@ -38,11 +38,12 @@ For most organizations, the volume and complexity of their data is increasing da
 
 - **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them.
 
-Retention settings that you configure can help you achieve all these goals. Managing content commonly requires two actions:
+Retention settings that you configure can help you achieve these goals. Managing content commonly requires two actions:
 
-- **Retaining** content so that it can't be permanently deleted before the end of the retention period.
-
-- **Deleting** content permanently at the end of the retention period.
+| Action| Purpose |
+|:-----|:-----|
+|Retain content | Prevent permanent deletion and remain available for eDiscovery |
+|Delete content | Permanently delete content from your organization|
 
 With these two retention actions, you can configure retention settings for the following outcomes:
 
