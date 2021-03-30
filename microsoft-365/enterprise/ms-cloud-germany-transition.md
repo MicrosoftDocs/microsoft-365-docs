@@ -89,7 +89,7 @@ You are notified of migration progress with Message center posts. The posts will
 - Power BI complete
 - Final cutover of services is complete
 
-After the final cutover of Azure AD to the worldwide service, it is expected all clients and applications are fully transitioned to use the correct endpoints. There is a 30 day window after the final cutover where it may be possible to continue to obtain Azure AD tokens from the Microsoft Cloud Deutschland service. When the 30 day window expires, clients and applications will no longer be able to access the Azure AD endpoints of Microsoft Cloud Deutschland. Applications or user access will fail from this point. You must ensure all users and applications are migrated to the correct endpoints before this time window closes. 
+After the final cutover of Azure AD to the worldwide service, it is expected all clients and applications are fully transitioned to use the correct endpoints. There is a 30-day window after the final cutover where it may be possible to continue to obtain Azure AD tokens from the Microsoft Cloud Deutschland service. When the 30-day window expires, clients and applications will no longer be able to access the Azure AD endpoints of Microsoft Cloud Deutschland. Applications or user access will fail from this point. You must ensure all users and applications are migrated to the correct endpoints before this time window closes. 
 
 ## Moving to the new German datacenter regions
 
