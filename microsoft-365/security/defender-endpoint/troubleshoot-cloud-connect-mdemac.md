@@ -42,7 +42,6 @@ mdatp connectivity test
 
 expected output:
 ```Bash
-OutputCopy
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
 Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
 Testing connection with https://wu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -81,7 +80,6 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
 
 The output from this command should be similar to:
 ```bash
-OutputCopy
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
 ```
