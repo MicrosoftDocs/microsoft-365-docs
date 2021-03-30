@@ -94,7 +94,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 
 To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Security & Compliance Center.
 
-To learn more, see [Onboard to the Microsoft Defender for Endpoint service] (/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, please refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
+To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, please refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
 ### How do I know this worked?
 
