@@ -28,7 +28,7 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
   
 - Get started with reporting using PowerShell for Microsoft 365:
     
-  - [Why you need to use PowerShell for Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [Why you need to use PowerShell for Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Reports for user accounts and licenses:
