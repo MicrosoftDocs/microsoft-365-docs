@@ -45,7 +45,8 @@ VDI devices can appear in Defender for Endpoint portal as either:
 
 - Single entry for each device.
 
-  Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
+  > [!NOTE]
+  > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
 - Multiple entries for each device - one for each session.
 
