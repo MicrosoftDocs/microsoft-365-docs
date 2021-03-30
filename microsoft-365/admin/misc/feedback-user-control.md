@@ -32,7 +32,7 @@ In this topic, you'll find information on what types of feedback exist, how we c
 
 If your users are using one of Microsoft's apps and wish to provide feedback, there are various ways to do that from within the apps they're using. Users can use these different ways to share product and feature feedback with us. One of the most common ways to share feedback through Microsoft apps is under the Help menu. Selecting **Help** > **Feedback** from most Microsoft apps launches a feedback page, which allows users to submit feedback to Microsoft.
 
-**add screenshot**
+
 
 ### In-product surveys
 
