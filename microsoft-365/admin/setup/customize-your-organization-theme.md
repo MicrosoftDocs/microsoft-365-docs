@@ -59,7 +59,7 @@ The default theme is the first theme displayed.
 > [!IMPORTANT]
 > The default theme is unique, it can't be renamed and applies to everyone within your organization. To delete the default theme, you have to delete all other themes first.
 
-**Add screenshot**
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### Create a group theme
 
@@ -69,7 +69,7 @@ You can create up to four additional group themes.
 1. Under Groups, you can select up to five Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
 1. Select Save to save your changes.
 
-**add screenshot** 
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
@@ -85,7 +85,7 @@ Select **Save** to save your changes.
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
 
-**Add Screenshot**
+:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
 
 > [!NOTE]
 > By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
@@ -100,7 +100,7 @@ On the **Colors** page, you can set the default colors and choose which logo sho
 - **Reset color**: Select this link to reset colors to the default colors.
 - **Which logo should be used?**: Select default logos or any other logos you've created yourself.
 
-**Add screenshot**
+:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## Frequently asked questions
 
