@@ -40,5 +40,19 @@ In the event that a search returns zero results or an error during migration, pl
 
 
 # eDiscovery administration after phase 9
+
+**Applies to:** All customers using eDiscovery
+
 In phase 9, the final steps for moving to the new German datacenter region will be completed. In this phase, all remaining service components will be migrated. 
 After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Please use the new [Security Center](https://security.microsoft.com/) or [Compliance Center](https://compliance.microsoft.com/) instead. All data have been migrated to the new admin portals. 
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+|  All SharePoint Online, OneDrive for Business, and Exchange Online locations have been migrated along with Security and Compliance Center (SCC). | All eDiscovery activity should be run from the worldwide tenant. Searches will now be 100% successful.  Any failures or errors should follow normal support channels. | None |
+||||
+
+**Applies to:**  All customers who applied a retention policy as part of pre-migration steps
+
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| Remove organization-wide retention policies that were created during pre-migration steps | Customers can remove the organization-wide retention policies that were created during the customers' pre-migration work. | None |
+||||

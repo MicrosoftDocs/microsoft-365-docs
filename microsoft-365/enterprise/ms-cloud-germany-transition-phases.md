@@ -150,6 +150,7 @@ Additional considerations:
 
 
 **Applies to:** Exchange Online Administrators using Exchange Online PowerShell
+
 During the migration phase, using the PowerShell cmdlets **New-MigrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can result in errors (error on proxy). This happens when the arbitration mailbox has migrated to worldwide but the admin mailbox hasn't or vice-versa. To resolve this, while creating the tenant PowerShell session, use the arbitration mailbox as the routing hint in the **ConnectionUri**. For example:
 
 ```powershell
