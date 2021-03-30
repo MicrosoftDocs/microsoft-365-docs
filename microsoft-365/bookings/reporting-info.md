@@ -31,7 +31,7 @@ You can now see a 4-month view of your Bookings calendar in a TSV file. This app
 
 1. The downloaded report contains a new set of fields in addition to the existing fields.
 
-The TSV report includes the following fields.
+The report includes the following fields.
 
  - **Date & Time**
 - **Customer Name**
@@ -53,4 +53,4 @@ The improved report now contains the following additional fields.
 - **Signed Up Attendees Count**   How many customers booked a group booking service. This will be always be one for a single booking service.
 - **Text Notifications Enabled**   Whether customers can receive SMS text related notifications.
 - **Custom Fields**   All the questions and answers related to a single booking are combined in this field.
-- **Booking Id**   To uniquely identify a booking. This is helpful to identify the same bookings of a group service.
+- **Booking Id**   This is helpful to identify the same bookings of a group service.
