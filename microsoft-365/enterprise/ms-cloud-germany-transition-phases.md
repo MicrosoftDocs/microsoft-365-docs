@@ -181,7 +181,7 @@ When the Office 365 tenant completes the final step of the migration [Azure AD F
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests, client or application traffic will fail.  |
+| Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests, client or application traffic will fail. |
 ||||
 
