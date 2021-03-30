@@ -43,4 +43,3 @@ See also
 - [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-- [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware solutions](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
