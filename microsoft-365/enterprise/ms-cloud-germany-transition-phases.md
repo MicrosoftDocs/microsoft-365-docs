@@ -47,7 +47,7 @@ The phases and their actions ensure that critical data and experiences are migra
 
 The following sections contain actions and effects for workloads as they progress through various phases of the migration. Review the tables and determine which actions or effects are applicable to your organization. Ensure that you're prepared to execute the steps in the respective phases as required. Failure to complete necessary steps may result in service outage and might delay completion of the migration to the Office 365 services.
 
-## Opt-In
+## Phase: Opt-In
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
 Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
@@ -58,7 +58,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 |**Tenant Admin**: Monitor messages|The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status from this time on.|Customer can execute necessarry tasks in time.
 ||||
 
-## Before the migration starts
+## Phase 1: Before the migration starts
 
 Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
@@ -66,14 +66,17 @@ In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces th
 
 In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
-In case you are using ADFS, make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-azure-ad.md) for the Office 365 Global service.
-## Azure AD migration (Phase 2)
-**Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
+### Azure AD Connect with AD FS federation
+**Applies to**: Customers with AD FS federation
 
-Azure AD data and configuration is transfered to the new data centers.
+**When applied**: Before phase 2 starts
 
+If you are using Active Directory Federation Services (AD FS), make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-azure-ad.md) for the Office 365 Global service **before** the beginning of phase 2.
 
-## Subscription transfer (Phase 3)
+## Phase 2: Azure AD Migration
+In this phase the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
+
+## Phase 3: Subscription transfer
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
 
@@ -87,7 +90,12 @@ Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers wil
 |**Admin task**|Revise any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs with the Office 365 services offering|Customer processes continue to work.
 ||||
 
-## SharePoint Online (Phase 4)
+**Applies to**: Microsoft Partners which are using the Office 365 Partner Portal
+
+Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
+
+
+## Phase 4: SharePoint Online
 
 **Applies to**: All customers using SharePoint Online
 
@@ -110,7 +118,7 @@ Additional considerations:
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9).
 
-## Exchange Online (Phase 5)
+## Phase 5: Exchange Online 
 
 **Applies to:** All customers using Exchange Online
 
@@ -127,6 +135,13 @@ If you want to modify user photos during phase 5, see [Exchange Online Set-UserP
 | **Admin**: Update custom DNS Settings for AutoDiscover| Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to autodiscover.outlook.com. |  Availability requests and service discovery calls via AutoDiscover point directly to the Office 365 services. Customers who do not perform these DNS updates may experience Autodiscover service issues when the migration is finalized. |
 ||||
 
+**Applies to:** All customers storing user photos in Exchange Online and are using **Set-UserPhoto**:
+
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| The new region "Germany" is added to an existing Exchange Online organization setup, and mailboxes are moved to Office 365 services. | Exchange Online configuration adds the new go-local German region to the transitioning organization. This Office 365 services region is set as default, which enables the internal load-balancing service to redistribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (Germany or Office 365 services) are in the same organization and can use either URL endpoint. | If a user mailbox has been migrated but an administrator mailbox hasn't been migrated, or vice-versa, administrators won't be able to run **Set-UserPhoto**, a PowerShell cmdlet. In this situation, an admin must pass an additional string in `ConnectionUri` during connection set up by using the following syntax: <br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> where `<user_email>` is the placeholder for the email-ID of the user whose photo needs to be changed by using **Set-UserPhoto**. |
+||||
+
 Additional considerations:
 <!--
     The statement below is not clear. What does myaccount.microsoft.com mean?
@@ -138,7 +153,10 @@ Additional considerations:
 
 - For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook by using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`). Customers who want to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry key can be deployed organization-wide by using Group Policy.
 
-- During the migration phase, using the PowerShell cmdlets **New-migrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can result in errors (error on proxy). This happens when the arbitration mailbox has migrated to worldwide but the admin mailbox hasn't or vice-versa. To resolve this, while creating the tenant PowerShell session, use the arbitration mailbox as the routing hint in the **ConnectionUri**. For example:
+
+**Applies to:** Exchange Online Administrators using Exchange Online PowerShell
+
+During the migration phase, using the PowerShell cmdlets **New-MigrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can result in errors (error on proxy). This happens when the arbitration mailbox has migrated to worldwide but the admin mailbox hasn't or vice-versa. To resolve this, while creating the tenant PowerShell session, use the arbitration mailbox as the routing hint in the **ConnectionUri**. For example:
 
 ```powershell
 New-PSSession 
@@ -151,7 +169,7 @@ New-PSSession
 
 To find out more about the differences for organizations in migration and after Exchange Online resources are migrated, review the information in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
 
-## Exchange Online Protection / Security and Compliance (Phase 6)
+## Phase 6: Exchange Online Protection / Security and Compliance
 
 **Applies to:** All customers using Exchange Online<br>
 
@@ -162,7 +180,7 @@ Back-end Exchange Online Protection (EOP) features are copied to the new region 
 | Migration of Exchange Online routing and historical message detail. | Exchange Online enables routing from external hosts to Office 365. The external MX records are transitioned to route to the EOP service. Tenant configuration and historical details are migrated. |<ul><li>Microsoft–managed DNS entries are updated from Office 365 Germany EOP to Office 365 services.</li><li>Customers should wait for 30 days after EOP dual write for EOP migration. Otherwise, there may be data loss.</li></ul>|
 ||||
 
-## Skype for Business Online (Phase 7)
+## Phase 7: Skype for Business Online
 
 **Applies to:** All customers using Skype for Business Online
 
@@ -186,7 +204,7 @@ $userCredential = Get-Credential
 Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
 ```
 
-## Dynamics 365 (Phase 8)
+## Phase 8: Dynamics 365
 
 **Applies to:** All customers using Microsoft Dynamics 365
 
@@ -202,7 +220,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 \*
 (i) Customers with Microsoft Dynamics 365 must take action in this migration scenario as defined by the migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.
 
-## Power BI (Phase 8)
+## Phase 8: Power BI
 
 **Applies to:** All customers using Microsoft Power BI (PBI)
 
@@ -214,7 +232,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 \*\*
   (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.
 
-## Office Apps
+## Phase 9: Office Apps
 
 **Applies to:** All customers using Office desktop applications (Word, Excel, PowerPoint, Outlook, ...)
 
@@ -227,34 +245,10 @@ Make sure you have completed the [prework for mobile devices](ms-cloud-germany-t
 | Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | <ul><li>Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. </li><li>Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. </li><li>All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services.</li><li>Shared machines will require actions that are similar to personal machines, and won't require a special procedure. </li><li>On mobile devices, users must sign out of apps, close them, and then sign in again.</li></ul>|
 ||||
 
-## Line-of-business apps
+## Phase 9: Line-of-business apps
 
 In case you have line-of-business apps, make sure you have completed the [prework for line-of-business apps](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) procedure.
-
-## Office Services
-
-The most recently used (MRU) service in Office is a cutover from the Microsoft Cloud Deutschland to Office 365 Global services, not a migration. Only MRU links from the Office 365 Global services side will be visible after migration from the Office.com portal. MRU links from the Microsoft Cloud Deutschland aren't visible as MRU links in Office 365 Global services. In Office 365 Global services, MRU links are accessible only after the tenant migration has reached phase 9.
 
 ## Post migration
 
 Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#post-migration) article and execute them accordingly.
-
-## More information
-
-Getting started:
-
-- [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md)
-- [Microsoft Cloud Deutschland Migration Assistance](https://aka.ms/germanymigrateassist)
-- [How to opt-in for migration](ms-cloud-germany-migration-opt-in.md)
-- [Customer experience during the migration](ms-cloud-germany-transition-experience.md)
-
-Moving through the transition:
-
-- [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
-- Additional information for [Azure AD](ms-cloud-germany-transition-azure-ad.md), [devices](ms-cloud-germany-transition-add-devices.md), [experiences](ms-cloud-germany-transition-add-experience.md), and [AD FS](ms-cloud-germany-transition-add-adfs.md).
-
-Cloud apps:
-
-- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
-- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
-- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)
