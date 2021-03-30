@@ -19,13 +19,15 @@ You can now see a 4-month view of your Bookings calendar in a TSV file. This app
 
 1. On the Bookings calendar dashboard, select **Export more data as TSV**.
 
-:::image type="content" source="../media/bookings-activity.png" alt-text="Screenshot: 30 days Booking activities":::
+:::image type="content" source="../media/bookings-activities.png" alt-text="Screenshot: 4 months of Bookings activity":::
 
 1. Save the file with a new name, and specify .xls or xlsx format.
 
 1. Open the file to see the 4 month view of your Bookings calendar.
 
 1. Choose the date for your report and select **Export**.
+
+:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Screenshot: Pick a time range and export data to TSV file.":::
 
 1. The downloaded report contains a new set of fields in addition to the existing fields.
 
