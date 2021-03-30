@@ -56,6 +56,9 @@ If you added your own domain name to use with your subscription, you must remove
 
 Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
+> [!NOTE]
+> If you explicitly delete a subscription, then the subscription will skip the expired and disabled states and the SharePoint Online data and content including OneDrives will be deleted immediately.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
