@@ -43,8 +43,10 @@ There might be associated challenges when onboarding VDIs. The following are typ
 
 VDI devices can appear in Defender for Endpoint portal as either:
 
-- Single entry for each device.  
-Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
+- Single entry for each device.
+
+  Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
+
 - Multiple entries for each device - one for each session.
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
@@ -79,14 +81,15 @@ The following steps will guide you through onboarding VDI devices and will highl
    > [!NOTE]
    > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
-4. Depending on the method you'd like to implement, follow the appropriate steps: <br>
-   **For single entry for each device**:<br>
+4. Depending on the method you'd like to implement, follow the appropriate steps:
+
+   - For single entry for each device:
    
-   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There is no need to specify the other file, as it will be triggered automatically.
+     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There is no need to specify the other file, as it will be triggered automatically.
    
-   **For multiple entries for each device**:
+   - For multiple entries for each device:
    
-   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+     Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Test your solution:
 
@@ -98,8 +101,15 @@ The following steps will guide you through onboarding VDI devices and will highl
 
    1. Logon to device with another user.
       
-   1. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.<br>
-      **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
+   1. Depending on the method you'd like to implement, follow the appropriate steps:
+   
+      - For single entry for each device: 
+    
+        Check only one entry in Microsoft Defender Security Center.
+
+      - For multiple entries for each device: 
+       
+        Check multiple entries in Microsoft Defender Security Center.
 
 6. Click **Devices list** on the Navigation pane.
 
@@ -113,14 +123,14 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 1. Set registry value to:
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     or using command line:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
