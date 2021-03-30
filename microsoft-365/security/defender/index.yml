@@ -37,6 +37,27 @@ landingContent:
           - text: Overview video
             url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
 
+# Card
+  - title: Evaluate capabilities
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Create a trial lab
+          url: m365d-evaluation.md 
+        - text: Run pilot project in production
+          url: m365d-pilot.md
+ 
+# Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Get started with Microsoft 365 Defender
+          url: get-started.md 
+      - linkListType: deploy
+        links:
+        - text: Turn on Microsoft 365 Defender
+          url: m365d-enable.md
 
 # Card (optional)
   - title: Microsoft 365 security center
