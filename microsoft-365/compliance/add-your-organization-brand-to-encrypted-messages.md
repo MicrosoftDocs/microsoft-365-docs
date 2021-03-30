@@ -116,14 +116,13 @@ To remove all modifications from the default template, including brand customiza
 
    The following table describes the encryption customization option defaults.
 
-   **To revert this feature of the encryption experience back to the default text and image**|**Use these commands**|
+   |To revert this feature of the encryption experience back to the default text and image|Use these commands|
    |:-----|:-----|
-   |Default text that comes with encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Default text that comes with encrypted email messages.  The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |Background color|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **Example reverting back to default:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## Remove a custom branding template (Advanced Message Encryption)
 
