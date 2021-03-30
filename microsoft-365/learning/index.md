@@ -30,7 +30,7 @@ The resources in this section help you learn more about what Viva Learning is an
 |Learn more about Viva Learning|[Microsoft Viva Learning overview](overview-viva-learning.md)|
 |Learn how to get Viva Learning|[Microsoft Viva Learning product page](https://www.microsoft.com/en-us/microsoft-viva)|
 |See resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Tech Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
-|Learn about Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
+|Find Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
 ## Set up and administration
 
