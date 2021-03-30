@@ -1,5 +1,5 @@
 ---
-title: "What has changed for the migration to Office 365 services in the new German datacenter regions"
+title: "What will change after the migration to Office 365 services in the new German datacenter regions"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# What has changed for the migration to Office 365 services in the new German datacenter regions
+# What will change after the migration to Office 365 services in the new German datacenter regions
 
 Tenant migrations are designed to have minimal effect on administrators and users. However, there are considerations for each workload. Please review the following sections to have a better understanding of the migration experience for the workloads.
 
@@ -30,7 +30,7 @@ Following are the key differences between Microsoft Cloud Deutschland and Office
 | Category | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
 |:-------|:-----|:-------|
 | Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services | 29 services <br><br> For more information, see [What is the service availability between the different Office 365 cloud service offerings?](ms-cloud-germany-transition.md#serv-avail). |
-| New features | No new features are available. | New features will be available consistent with Office 365 services. |
+| New features | No new features will be available. | New features will be available consistent with Office 365 services. |
 | Data trustee | Yes | No |
 | Cross-tenant collaboration with global Office 365 tenants | No | Yes |
 | Customer data residency | Customer data will be stored solely within German data centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
