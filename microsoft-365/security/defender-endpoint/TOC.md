@@ -140,7 +140,7 @@
 ###### [Device control overview](mac-device-control-overview.md)
 ###### [JAMF examples](mac-device-control-jamf.md)
 ###### [Intune examples](mac-device-control-intune.md)
-##### [Schedule scans](mac-schedule-scan-atp.md)
+##### [Schedule scans](mac-schedule-scan.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
-##### [Configure advanced features](advanced-features.md
+##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
 ##### [Use basic permissions to access the portal](basic-permissions.md)
@@ -390,6 +390,7 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
+#### [API release notes](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
 ###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 
-# [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

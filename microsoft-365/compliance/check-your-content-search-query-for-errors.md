@@ -19,10 +19,6 @@ description: "Learn how to detect errors and typos in your keyword query for con
 ---
 
 # Check your Content Search query for errors
-
-When you create or edit a Content Search, you can have Microsoft 365 check your query for unsupported characters and lowercase Boolean operators. How? Just click **Check query for typos** on the query page of a Content Search. 
-  
-![Click "Check query for typos" to check your search query for unsupported characters](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Here's a list of the unsupported characters that we check for. Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   
