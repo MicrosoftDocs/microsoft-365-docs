@@ -25,7 +25,7 @@ After investigating the details of a case, you can take action by:
 - sharing the case with your ServiceNow instance or with an email recipient
 - escalating the case for an Advanced eDiscovery investigation
 
-Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of cases are investigated and managed in insider risk management.
+Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
 
 ## Cases dashboard
 
