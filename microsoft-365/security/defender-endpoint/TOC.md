@@ -390,6 +390,7 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
+#### [API release notes](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
 ###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
