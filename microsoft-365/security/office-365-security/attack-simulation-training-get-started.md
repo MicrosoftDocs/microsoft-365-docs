@@ -36,7 +36,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - To open the Microsoft Security Center, go to <https://security.microsoft.com/>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, open <https://security.microsoft.com/attacksimulator>.
 
-- For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions in the Security & Compliance Center or in Azure Active Directory before you can do the procedures in this article. Specifically, you need to be a member of **Organization Management**, **Security Administrator**, or one of the following roles:
   - **Attack Simulator Administrators**: Create and managed all aspects of attack simulation campaigns.
@@ -105,3 +105,6 @@ For step by step instructions on how to create a payload for use within a simula
 ### Gaining insights
 
 For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
+
+> [!NOTE]
+> Attack Simulator uses Safe Links in Defender for Office 365 to securely track click data for the URL in the payload message that's sent to targeted recipients of a phishing campaign, even if the **Do not track user clicks** setting in Safe Links policies is turned on.

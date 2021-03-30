@@ -28,28 +28,21 @@ While knowledge admins control the knowledge network settings to prevent topics 
 
 Knowledge admin can restrict access to specific topics by preventing them from being found in initial indexing. There are two ways to do this task in the Knowledge Network admin settings in the Microsoft 365 admin center.
  
-- [Select SharePoint sites to exclude from topic discovery](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources): You can use this setting to prevent specific SharePoint sites from being crawled for topics.
-- [Exclude topics by name](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name): Admins can use this setting to prevent specific topics from being discovered by name. In the Knowledge Network admin settings, an admin can upload a list of topics to be excluded in a CSV file. You can exclude topics that have exact or partial matches of a topic name.
+- [Select SharePoint sites to exclude from topic discovery](./topic-experiences-discovery.md#select-sharepoint-topic-sources): You can use this setting to prevent specific SharePoint sites from being crawled for topics.
+- [Exclude topics by name](./topic-experiences-discovery.md#exclude-topics-by-name): Admins can use this setting to prevent specific topics from being discovered by name. In the Knowledge Network admin settings, an admin can upload a list of topics to be excluded in a CSV file. You can exclude topics that have exact or partial matches of a topic name.
 
 ## Prevent topics from being viewed by specific users
 
-Knowledge admins can also [select who can view topics in your organization](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules). This setting lets you select which licensed users can view all topics. For example, in a pilot environment, you may want to only allow a small group of users to be able to view topics.
+Knowledge admins can also [select who can view topics in your organization](./topic-experiences-knowledge-rules.md). This setting lets you select which licensed users can view all topics. For example, in a pilot environment, you may want to only allow a small group of users to be able to view topics.
 
 ## Remove topics from being viewed
 
-Knowledge managers can choose to [remove topics](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) so that users can no longer see them. On the **Manage topics** page in the **Topic center**, knowledge managers can choose to reject specific topics to prevent them from being viewed. Topics can be removed regardless if they are in a suggested or confirmed state.
+Knowledge managers can choose to [remove topics](./manage-topics.md) so that users can no longer see them. On the **Manage topics** page in the **Topic center**, knowledge managers can choose to reject specific topics to prevent them from being viewed. Topics can be removed regardless if they are in a suggested or confirmed state.
 
 Removed topics can later be added back as viewable topics if needed. 
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

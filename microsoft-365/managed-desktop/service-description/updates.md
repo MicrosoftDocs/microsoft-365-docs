@@ -21,7 +21,7 @@ ms.collection: M365-modern-desktop
 Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business applications up to date is a balance of speed and stability. Deployment groups will be used to ensure operating system updates and policies are rolled out in a safe manner. For more information, see the video [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Updates released by Microsoft are cumulative and are categorized as quality or feature updates.
-For more information, see [Windows Update for Business: Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
+For more information, see [Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## Update groups
 
@@ -33,7 +33,7 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Broad**: Last group to have feature and quality updates available. This group contains most of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
 ### Moving devices between update groups
-You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) and we will move the devices for you. 
+You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) and we will move the devices for you. 
 
 > [!NOTE]
 > If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself. There are serious consequences if a device is moved incorrectly. The device could update unexpectedly and policies might conflict, changing the device configuration.
@@ -63,9 +63,9 @@ This deployment process applies to both feature and quality updates, though the 
     <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
     <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
     <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
-    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
-    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Learn more</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Learn more</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">Learn more</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -81,5 +81,4 @@ Any devices found with Windows Insider builds might be put into the Test group a
 
 ## Bandwidth management
 
-We use [Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
-
+We use [Delivery Optimization](/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.

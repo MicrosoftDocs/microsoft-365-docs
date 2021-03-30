@@ -18,7 +18,7 @@ description: "Learn about registration numbers and under-review notifications wh
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
+- commerce
 ---
 
 # About registration numbers and under review notifications
@@ -31,13 +31,15 @@ We use the registration number to review the details of your account. This lets 
 
 For countries where the registration number is mandatory, the label above the text box indicates what type of number is required.
 
-<!-- For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
- add screenshot-->
+For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
+
+:::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 
 For countries where the registration number is optional, you can choose to provide a company legal registration number. Don’t enter a personal ID in this field.
 
-<!-- The following screenshot shows an example of when the registration number is optional.
-add screenshot -->
+The following screenshot shows an example of when the registration number is optional.
+
+:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Screenshot of the optional registration number field.":::
 
 If you don’t have a valid registration number, see [Registration numbers by country](#registration-numbers-by-country) for details.
 
@@ -47,13 +49,15 @@ When you complete a purchase, you might receive a notification that your account
 
 The review process normally takes about one day to complete but can take longer.
 
-<!-- The following screenshot shows the review notification displayed during checkout.
-add screenshot -->
+The following screenshot shows the review notification displayed during checkout.
+
+:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="Screenshot of the account review notice on the checkout page.":::
 
 An email notification is also sent to all Global and Billing admins on your account. In some cases, the notification is sent to users who have the Billing Account Owners or Billing Account Contributors role on the account. The notification says that a review is currently in process. A confirmation email notification is sent after the review process is complete.
 
-<!-- The following screenshot shows the notification displayed on the billing account details page.
-add screenshot -->
+The following screenshot shows the notification displayed on the billing account details page.
+
+:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="Screenshot of the under review notification on the billing accounts page.":::
 
 ## Registration numbers by country
 

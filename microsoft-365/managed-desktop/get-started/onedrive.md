@@ -13,11 +13,11 @@ ms.topic: article
 
 # Microsoft OneDrive
 
-Microsoft Managed Desktop uses [OneDrive for Business](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) as a cloud storage service for all Microsoft Managed Desktop devices to ensure that the devices are as stateless as possible. User will be able to find their files no matter which device they sign into. For example, if you replace a Microsoft Managed Desktop device with a new one, files will automatically sync to the new device.
+Microsoft Managed Desktop uses [OneDrive for Business](/onedrive/plan-onedrive-enterprise) as a cloud storage service for all Microsoft Managed Desktop devices to ensure that the devices are as stateless as possible. User will be able to find their files no matter which device they sign into. For example, if you replace a Microsoft Managed Desktop device with a new one, files will automatically sync to the new device.
 
 We automatically configure these settings by default on Microsoft Managed Devices:
 
-- OneDrive is silently configured with the user account and automatically signed in (without user interaction) to the user account that was used to sign into Windows. For more information, see [Silently configure user accounts - OneDrive](https://docs.microsoft.com/onedrive/use-silent-account-configuration)
+- OneDrive is silently configured with the user account and automatically signed in (without user interaction) to the user account that was used to sign into Windows. For more information, see [Silently configure user accounts - OneDrive](/onedrive/use-silent-account-configuration)
 
 - The Files-On-Demand feature is enabled so that users can access files from their cloud storage in OneDrive without having to use disk space unnecessarily. For more information, see [Save disk space with OneDrive Files On-Demand for Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e).
 
@@ -45,12 +45,12 @@ When Microsoft Managed Desktop users receive a new device, they go through a fir
 ## OneDrive sync restrictions
 
 If you need to restrict OneDrive sync, we recommend that you control access with an Azure Active Directory conditional access policy. For more information, see
-[Enable conditional access support in the OneDrive sync app](https://docs.microsoft.com/onedrive/enable-conditional-access).
+[Enable conditional access support in the OneDrive sync app](/onedrive/enable-conditional-access).
 
 If you can't use an Azure AD conditional access policy in your organization, your IT Admin should follow these steps:
 
-1. If you don't already know it, look up your tenant ID, as described in [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-2. Sign in to the OneDrive admin center, and then select **Sync** in the left pane. Select the **Allow syncing only on PCs joined to specific domains** check box, and then add the tenant ID to the list of domains. For more information, see [Allow syncing only on computers joined to specific domains](https://docs.microsoft.com/onedrive/allow-syncing-only-on-specific-domains).
+1. If you don't already know it, look up your tenant ID, as described in [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
+2. Sign in to the OneDrive admin center, and then select **Sync** in the left pane. Select the **Allow syncing only on PCs joined to specific domains** check box, and then add the tenant ID to the list of domains. For more information, see [Allow syncing only on computers joined to specific domains](/onedrive/allow-syncing-only-on-specific-domains).
 
 > [!NOTE]
 > This guidance applies only to tenants in Microsoft Managed Desktop. There are other settings in use that aren't discussed in this article.

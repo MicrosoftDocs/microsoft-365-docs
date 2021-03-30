@@ -66,7 +66,7 @@ You might consider creating a Microsoft 365 retention policy specifically for in
 
 If a hold that's associated with an eDiscovery case in the Security & Compliance Center is placed on a mailbox and then the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Also, you can't create a time-based eDiscovery hold. That's means that content in an inactive mailbox is retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using a Litigation Hold or a retention policy for inactive mailboxes.
 
-For more information about eDiscovery cases and holds, see [eDiscovery cases](ediscovery-cases.md).
+For more information about eDiscovery cases and holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
 
 ## Inactive mailboxes and labels
 
