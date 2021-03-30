@@ -45,7 +45,7 @@ Turning on HMA means:
 
 1. Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 
-1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD. [In case, EXCH is in Hybrid with **multiple Tenants**, these On-Premise web service URLs must be added as SPNs in Azure AD of all the Tenants which are in Hybrid with EXCH]
+1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Azure AD of all the tenants which are in hybrid with EXCH.
 
 1. Ensuring all Virtual Directories are enabled for HMA
 
