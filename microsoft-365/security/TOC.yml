@@ -43,6 +43,7 @@
         - name: What's new
           href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
+      href: ./defender/index.yml
       items: 
         - name: Overview
           items: 
