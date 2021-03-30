@@ -140,7 +140,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
     1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
     > If you want to make sure documents that contain sensitive information are not shared inappropriately in Teams, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
@@ -173,6 +173,7 @@ To ensure that SharePoint documents that contain sensitive information cannot be
 
     - **Conditions**
         - Content contains any of these sensitive information types: [Select all that applies]
+        
         - Content is shared from Microsoft 365 with people outside my organization
         
           > [!div class="mx-imgBorder"]
@@ -180,7 +181,9 @@ To ensure that SharePoint documents that contain sensitive information cannot be
 
     - **Actions**
         - Restrict access to the content for external users
+        
         - Notify users with email and policy tips
+        
         - Send incident reports to the Administrator
         
         > [!div class="mx-imgBorder"]
