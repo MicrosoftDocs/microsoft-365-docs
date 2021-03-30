@@ -46,9 +46,9 @@ The email notification includes basic information about the alert and a link to 
 You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
 
 
-1. In the navigation pane, select **Settings** > **Alert notifications**.
+1. In the navigation pane, select **Settings** > **Email notifications**.
 
-2. Click **Add notification rule**.
+2. Click **Add item**.
 
 3. Specify the General information:
     - **Rule name** - Specify a name for the notification rule.

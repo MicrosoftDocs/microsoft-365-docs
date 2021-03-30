@@ -31,7 +31,7 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. 
 
-|activity |description  | auditable/restictable|
+|Activity |Description  | Auditable/restictable|
 |---------|---------|---------|
 |upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
 |copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
@@ -62,7 +62,7 @@ Endpoint DLP supports monitoring of these file types:
 - .h files
 - .java files
  
-By default, endpoint DLP audits the activities for these file types, even if there isn't a policy match. If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings. No matter what, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited.
+By default, endpoint DLP audits the activities for these file types, even if there isn't a policy match. If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings. If this setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed. 
 
@@ -97,15 +97,15 @@ If you have onboarded devices through [Microsoft Defender for Endpoint](/windows
 
 ### Viewing Endpoint DLP data
 
-
-
 You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
 
-![Alert info](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Alert info](../media/Alert-info-1.png)
 
 You can also view details of the associated event with rich metadata in the same dashboard
 
-![event info](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![event info](../media/Event-info-1.png)
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
