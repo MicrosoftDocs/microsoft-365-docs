@@ -100,7 +100,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
-  >[!NOTE]
+  > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint for Linux will be tagged with `mdatp` key.
 
 ### Network connections
