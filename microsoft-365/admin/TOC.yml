@@ -57,7 +57,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -187,7 +187,7 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/what-is-a-domain.md
+      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
