@@ -136,7 +136,7 @@ Get-AuthServer | where {$_.Name -eq "EvoSts"}
 Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
 
 > [!NOTE]
-> In case, EXCH is in Hybrid with **multiple Tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each Tenant in Hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
+> In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each tenant in hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
 
  **Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
 
