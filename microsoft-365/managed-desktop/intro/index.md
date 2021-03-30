@@ -3,6 +3,7 @@ title: Is Microsoft Managed Desktop right for you?
 description:  Orientation for what the service is and shortcuts to articles for different audiences
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
