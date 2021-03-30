@@ -149,7 +149,7 @@ Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
-If the EXCH version is Exchange 2016 [CU18 or higher] or Exchange 2019 [CU7 or higher] & Hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
+If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
