@@ -74,7 +74,7 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
 ```
 
-Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. [In case, EXCH is in Hybrid with **multiple Tenants**, these HTTPS SPNs should be added in AAD of all the Tenants in Hybrid with EXCH]
+Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the AAD of all the tenants in hybrid with EXCH.
 
 1. First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).
 
