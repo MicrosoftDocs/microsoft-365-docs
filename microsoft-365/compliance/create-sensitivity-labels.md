@@ -181,7 +181,7 @@ To edit an existing label policy, select it, and then select the **Edit Policy**
 
 This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
-When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Office on the web. However, allow up to 24 hours for changes to replicate to all apps and services.
+When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, allow up to 24 hours for changes to replicate to all apps and services.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 

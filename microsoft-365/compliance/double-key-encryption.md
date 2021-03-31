@@ -61,7 +61,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-**Microsoft Office Apps for enterprise** version *.12711 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
 **Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
@@ -69,7 +69,7 @@ DKE sensitivity labels are made available to end users through the sensitivity r
 
 **Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
+**Online content support**. You can store documents and files protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business. You must label and protect documents and files with DKE by supported applications before you upload to these locations. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
 
 ## Overview of deploying DKE
 
@@ -240,6 +240,8 @@ DKE tenant and key settings are located in the **appsettings.json** file.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
 Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
 
@@ -518,13 +520,15 @@ To register the DKE service:
 
     In the new client application:
 
-    1. Define the Client ID as **d3590ed6-52b3-4102-aeff-aad2292ab01c**. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
+    1. Define the Client ID as `d3590ed6-52b3-4102-aeff-aad2292ab01c`. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
 
     2. Under **Authorized scopes**, select the **user_impersonation** scope.
 
     3. Select **Add application**.
 
     4. Select **Save** at the top to save your changes.
+
+    5. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`. This value is the Azure Information Protection unified labeling client ID. 
 
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 

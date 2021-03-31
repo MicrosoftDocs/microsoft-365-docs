@@ -118,6 +118,8 @@ To set up Topics
 
     ![Settings applied](../media/ksetup7.png)    
 
+Note that the first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
+
 ## Assign licenses
 
 Once you have configured topic experiences, you must assign licenses for the users who will be using Topics. Only users with a license can see information on topics including highlights, topic cards, topic pages and the topic center. 
@@ -132,7 +134,8 @@ To assign licenses:
 
 4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
 
-    ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
 
 5. Click **Save changes**.
 

@@ -25,6 +25,8 @@ After investigating the details of a case, you can take action by:
 - sharing the case with your ServiceNow instance or with an email recipient
 - escalating the case for an Advanced eDiscovery investigation
 
+Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
+
 ## Cases dashboard
 
 The insider risk management **Cases dashboard** allows you to view and act on cases. Each report widget on the dashboard displays information for last 30 days.
@@ -236,27 +238,6 @@ For cases opened before enabling Microsoft Team integration, risk investigators 
 When a case is resolved, the associated Microsoft Team will be automatically archive (hidden and turned to read-only).
 
 To learn more about Microsoft Teams for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
-
-### Share the case
-
-Sharing an insider risk management case allows risk investigators and analysts to easily collaborate with other compliance stakeholders in your organization. You can quickly share a link to an insider risk management case with external stakeholders from the case management area. To access the insider risk management case from the link, stakeholders must be included in any of the insider risk management role groups.
-
->[!NOTE]
->Thank you for your feedback and support during the preview of the ServiceNow connector. We've decided to end the preview of ServiceNow connector and discontinue support in insider risk management on November 30, 2020. We are actively evaluating alternative methods to provide customers with ServiceNow integration in insider risk management.
-
-The following sharing options are available:
-
-- **ServiceNow**: After configuring the Microsoft 365 ServiceNow connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Case Actions** > **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:
-    - **Task name**: The name for the new ServiceNow task.
-    - **Task description**: The description for the new ServiceNow task. This editable description field automatically includes a link to the insider risk management case.
-    - **Task type**: The task type for the new ServiceNow task, either *Incident* or *Change request*.
-    - **Priority**: The priority for the new ServiceNow task, either *Planning*, *Low*, *Moderate*, *High*, or *Critical*.
-    - **Due date**: The requested date for completing the ServiceNow task.
-
-![Insider risk management sharing with ServiceNow](../media/insider-risk-share-servicenow.png)
-
-- **Email**: Shares a link to the insider risk management case in an email. You can choose any locally configured email client with this sharing option. To share the case link with email, select **Share** > **Email** from the case action toolbar.
-- **Copy link**: Copies a link to the insider risk management case to your clipboard. To copy the case link to your clipboard, select **Share** > **Copy link** from the case action toolbar.
 
 ### Resolve the case
 

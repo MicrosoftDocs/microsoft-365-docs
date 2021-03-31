@@ -44,7 +44,7 @@ manage the policy:
 
 ## Before you begin
 
-You must be a Global, License, or User admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 

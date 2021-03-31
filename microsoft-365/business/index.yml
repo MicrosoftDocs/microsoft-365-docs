@@ -34,8 +34,8 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
-      url: https://aka.ms/aadp1smbblog
+      summary: Antivirus management and Universal Print are now available in Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPQ1Update
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
@@ -122,7 +122,7 @@ conceptualContent:
  # Card
     - title: Manage threats
       links:
-        - url: ../security/office-365-security/office-365-atp.md
+        - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
           text: Advanced Threat Protection
         - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
@@ -188,7 +188,7 @@ conceptualContent:
   # Card
     - title: Monitor security
       links:
-        - url: ../security/mtp/microsoft-secure-score.md
+        - url: ../security/defender/microsoft-secure-score.md
           itemType: how-to-guide
           text: Secure score
         - url: /intune/apps/app-protection-policies-monitor

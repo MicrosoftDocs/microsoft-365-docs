@@ -377,7 +377,7 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
+        - name: Veritas data connectors
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
@@ -411,10 +411,10 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
-            - name: Webpages
-              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -604,11 +604,11 @@
             href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
-        - name: Overview of Advanced eDiscovery
+        - name: Overview
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create an Advanced eDiscovery case
+        - name: Create and manage a case
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -697,6 +697,8 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
+            - name: Predictive coding module (preview)
+              href: predictive-coding-overview.md
             - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
@@ -719,9 +721,7 @@
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
-          items: 
-            - name: Advanced eDiscovery alignment with EDRM
-              href: advanced-ediscovery-edrm.md
+          items:
             - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types

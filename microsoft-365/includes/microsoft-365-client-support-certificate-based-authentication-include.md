@@ -1,19 +1,19 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10 Desktop|Windows 10 Modern Apps|
+|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Modern Apps|
 |:-|:-|:-|:-|:-|:-|
-|AAD ADMIN|N/A|N/A|N/A|✔|N/A|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
+|AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|✔|N/A|
 |AZURE ADMIN|N/A|N/A|N/A|N/A|N/A|
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
 |DELVE|✔|✔|N/A|N/A|N/A|
 |EDGE|✔|✔|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
-|EXO ADMIN|N/A|N/A|N/A|✔|N/A|
+|EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|✔|✔|N/A|N/A|N/A|
-|MICROSOFT ROOMS|N/A|N/A|N/A|N/A|N/A|
-|O365 ADMIN|✔|N/A|N/A|N/A|N/A|
+|MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
+|OFFICE 365 ADMIN|✔|N/A|N/A|N/A|N/A|
 |OFFICE LENS|✔|✔|N/A|N/A|✔|
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
@@ -27,15 +27,15 @@
 |POWERPOINT|✔|✔|✔|✔|✔|
 |PROJECT|N/A|N/A|N/A|✔|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
-|SFB ADMIN|N/A|N/A|N/A|✔|N/A|
-|SFB|✔|✔|✔|✔|N/A|
+|SHAREPOINT ADMIN|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT|✔|✔|N/A|N/A|N/A|
-|SPO ADMIN|N/A|N/A|N/A|✔|N/A|
+|SKYPE FOR BUSINESS ADMIN|N/A|N/A|N/A|✔|N/A|
+|SKYPE FOR BUSINESS|✔|✔|✔|✔|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|✔|✔|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
 |TEAMS|✔|✔|✔|Planned|N/A|
-|TODO|✔|✔|✔|N/A|✔|
+|TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|N/A|Planned|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
