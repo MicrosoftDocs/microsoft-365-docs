@@ -31,27 +31,29 @@ description: Learn about retention policies and retention labels that help you t
 > The information on this page is for IT administrators who can create retention policies and retention labels for compliance reasons.
 
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
-  
-- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
 
-- **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep. 
-    
-- **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them. 
-    
-Retention settings that you configure can help you achieve all these goals. Managing content commonly requires two actions:
-  
-- **Retaining** content so that it can't be permanently deleted before the end of the retention period. 
-    
-- **Deleting** content permanently at the end of the retention period. 
-    
+- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years.
+
+- **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep.
+
+- **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them.
+
+Retention settings that you configure can help you achieve these goals. Managing content commonly requires two actions:
+
+| Action| Purpose |
+|:-----|:-----|
+|Retain content | Prevent permanent deletion and remain available for eDiscovery |
+|Delete content | Permanently delete content from your organization|
 
 With these two retention actions, you can configure retention settings for the following outcomes:
 
 - Retain-only: Retain content forever or for a specified period of time.
-- Delete-only: Delete content after a specified period of time.
-- Retain and then delete: Retain content for a specified period of time and then delete it.
+- Delete-only: Permanently delete content after a specified period of time.
+- Retain and then delete: Retain content for a specified period of time and then permanently delete it.
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
+
+Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
 ## How retention settings work with content in place
 
@@ -252,7 +254,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
-|Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
+|Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
