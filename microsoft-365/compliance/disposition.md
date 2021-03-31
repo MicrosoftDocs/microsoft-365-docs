@@ -119,7 +119,12 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 
 ## Disposition of records
 
-Use the **Disposition** tab from the **Records Management** page to identify items that were deleted after a disposition review and items marked as a record or regulatory record that were automatically deleted at the end of their retention period. They display **Records Disposed** in the **Type** column. For example:
+Use the **Disposition** tab from the **Records Management** page to identify:
+
+- Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.
+- Items deleted as a result of a disposition review.
+
+These items display **Records Disposed** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
