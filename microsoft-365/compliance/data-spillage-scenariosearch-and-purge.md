@@ -116,7 +116,7 @@ To further investigate if email with spilled data was shared, you can optionally
   
 You can use Message trace in the security and compliance center or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message tracing doesn't offer full guarantees on the completeness of data returned. For more information about using Message trace, see: 
   
-- [Message trace in the Security & Compliance Center](../security/defender-365-security/message-trace-scc.md)
+- [Message trace in the Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
     
 - [New Message Trace in Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

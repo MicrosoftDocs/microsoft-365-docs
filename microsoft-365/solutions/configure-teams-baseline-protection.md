@@ -26,15 +26,15 @@ In this article, we look at how to deploy teams with a baseline level of protect
 
 ## Initial protections
 
-As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/defender-365-security/teams-access-policies.md) for details.
+As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/teams-access-policies.md) for details.
 
 We also recommend turning on basic Defender for Office 365 features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/defender-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/defender-365-security/safe-docs.md)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Safe Links](../security/defender-365-security/safe-links.md)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-docs.md)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md)<br>[Safe Links](../security/office-365-security/safe-links.md)|
 
 ## Teams guest sharing
 

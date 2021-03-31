@@ -40,6 +40,8 @@ You can verify the data location by navigating to **Settings** > **Data retentio
 
 ## Update data retention settings
 
+You can update the data retention settings. By default, the retention period is 180 days. 
+
 1. In the navigation pane, select **Settings** > **Data retention**.
 
 2. Select the data retention duration from the drop-down list.
