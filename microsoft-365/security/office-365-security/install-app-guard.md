@@ -118,7 +118,7 @@ Upon being opened, the file should display a few visual indicators that the file
 
 ## Configure Application Guard for Office
 
-Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the [Office Cloud Policy Service](/DeployOffice/overview-office-cloud-policy-service).
+Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 See configuration set by your administrator by reviewing group policy settings in  **User Configuration\\Administrative Templates\\Microsoft Office 2016\\Security Settings\\Trust Center\\Application Guard**.
 
 
