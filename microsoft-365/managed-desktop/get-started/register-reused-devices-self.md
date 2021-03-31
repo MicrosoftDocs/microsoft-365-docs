@@ -1,12 +1,17 @@
 ---
 title: Register existing devices yourself
 description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register existing devices yourself

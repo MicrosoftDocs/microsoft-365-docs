@@ -63,7 +63,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 8. To enable encryption using the new OME capabilities, from **Do the following**, select **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save**, and then choose **OK**.
   
-  The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities as described in [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+  The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities as described in [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt-only** option, see [Encrypt-only option for emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
   You can choose **add action** if you want to specify another action.
 
@@ -95,7 +95,7 @@ You can define mail flow rules for triggering remove message encryption with the
 
 ### Use the EAC to create a rule to remove encryption from email messages with the new OME capabilities
 
-You can remove encryption that is accessible by your organization. This means any encryption that is applied by the organization or any mail has encrypt-only.
+You can remove encryption that is accessible by your organization. This means any mail with encryption that is applied by the organization or any mail that is protected with encrypt-only restrictions.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -107,7 +107,7 @@ You can remove encryption that is accessible by your organization. This means an
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 
-6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The recipient is located** \> **Outside the organization** or **Inside the organization**.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** _or_ **The recipient is located** \> **Inside the organization**.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
 
