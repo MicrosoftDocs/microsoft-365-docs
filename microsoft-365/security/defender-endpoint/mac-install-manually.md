@@ -114,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
 1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
 
-    The client device isn't associated with orgId. Note that the *orgId* attribute is blank.
+    The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
     ```bash
     mdatp health --field org_id
@@ -126,16 +126,17 @@ To complete this process, you must have admin privileges on the device.
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Verify that the device is now associated with your organization and reports a valid *orgId*:
+3. Verify that the device is now associated with your organization and reports a valid org ID:
 
     ```bash
     mdatp health --field org_id
     ```
 
-After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+    After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
 
-   ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
-   
 
 ## How to Allow Full Disk Access
 
@@ -165,11 +166,14 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
         ```
 
 3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
-   1. In your browser such as Microsoft Edge for Mac or Safari.
-   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
-      You may get prompted:
 
-      > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?
+   1. In your browser such as Microsoft Edge for Mac or Safari.
+
+   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+
+      You may be prompted:
+
+      > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?<br/>
       > You can change which websites can download files in Websites Preferences.
 
 4. Click **Allow**.
@@ -182,8 +186,8 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
    > If you double-click, you will get the following message:
    > 
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
-   > > macOS cannot verify that this app is free from malware.
-   > > Move to **\[Trash\]** **\[Cancel\]**. 
+   > > macOS cannot verify that this app is free from malware.<br/>
+   > > **\[Move to Trash\]** **\[Cancel\]**. 
   
 7. Click **Cancel**.
 
