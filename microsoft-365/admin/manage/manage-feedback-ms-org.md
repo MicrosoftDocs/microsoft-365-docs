@@ -23,9 +23,11 @@ description: "Manage feedback your users send to Microsoft."
 
 # Manage Microsoft feedback for your organization
 
-As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. See the table below for for more details.
+As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. 
 
 To learn more about how Microsoft handles your user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
+
+See the table below for for more details on managing feedback.
 
 |**Apps & Services**|**In-product feedback** <br> :::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-product help example":::|**In-product surveys** <br> :::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Microsoft app in-product survey example":::|**Metadata collection** <br> :::image type="content" source="../../media/feedback-metadata.png" alt-text="Screenshot: Feedback page showing metadata example":::|**Customer engagement** <br> :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::|
 |:-----|:-----|:-----|:-----|:-----|
