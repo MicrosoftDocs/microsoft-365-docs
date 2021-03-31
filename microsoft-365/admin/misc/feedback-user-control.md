@@ -43,7 +43,7 @@ Users can also rate their experience and provide additional information about th
 
 ## What kind of feedback is best?
 
-Detailed and actionable feedback is vital for making changes and improvements in Microsoft products. If your users have issues, or have a great suggestion for how we can improve, we’d like to hear it. Below are a few tips and examples on actionable feedback sent to Microsoft.
+Detailed and actionable feedback is vital for making changes and improvements in Microsoft products. If your users have issues, or suggestions for how we can improve, we’d like to hear it. Below are a few tips and examples on actionable feedback sent to Microsoft.
 
 - **Concise and descriptive title**   Descriptive and specific titles help us understand the issue being reported. Example: Excel’s **Recent files** list doesn't include recently added OneDrive files.
 - **Focus on one issue at a time**   Provide feedback for one issue or recommendation one item at a time. This ensures the correct logs and data are received with each submission and can be assigned for follow up. If you have more than one issue, submit a new feedback request for each issue. This helps us identify the volume of feedback we’re receiving on a particular issue.
