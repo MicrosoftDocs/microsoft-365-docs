@@ -48,7 +48,7 @@ There are three ways you can set up assessments:
 3. [Create your own custom assessment](#create-your-own-custom-assessment).
 
 > [!NOTE]
-> Only users who hold a Global Administrator or Compliance Manager Administration role can manage template creation and modification. The Compliance Manager Assessors role can create and modify assessments using templates created or modified by Global Administrator or Compliance Manager Administration. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Only users who hold a Global Administrator or Compliance Manager Administration role can manage template creation and modification. The Compliance Manager Assessors role can create and modify assessments using templates created or modified by the Global Administrator or Compliance Manager Administration. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Use a pre-built assessment**
 
