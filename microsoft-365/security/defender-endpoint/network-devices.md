@@ -1,6 +1,6 @@
 ---
 title: Network devices vulnerabilities assessment
-description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers and firewalls.
+description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -49,30 +49,30 @@ The following operating systems are currently supported:
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
 
-Additional networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you are encouraged to configure all your network devices, even if they’re not specified in this list.
+More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you are encouraged to configure all your network devices, even if they’re not specified in this list.
 
 ## Preparations to do in advance
 
 There will be two types of devices to keep in mind:
 
-- **Assessment device**: A device that's already onboarded that you will use to scan the network devices.
+- **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
 - **Network devices**: The network devices you plan to scan and onboard.
 
 Follow these steps before you install the network scanner and configure new assessment jobs:
 
-1. Allocate a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
+1. Decide on a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
 
 2. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).  
 
-3. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. ‘SNMP write’ is not needed for the proper functionality of this feature.
+3. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. ‘SNMP write’ isn't needed for the proper functionality of this feature.
 
 4. Obtain the IP addresses of the network devices to be scanned (or the subnets where these devices are deployed).
 
 5. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You’ll be required to provide the credentials when configuring a new assessment job.  
 
-6. Proxy client configuration: No additional configuration is required other than the Defender for Endpoint device proxy requirements.
+6. Proxy client configuration: No extra configuration is required other than the Defender for Endpoint device proxy requirements.
 
-7. To allow the network scanner to be authenticated and work properly, it is essential that you add the following domains/URLs:
+7. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
 
     - login.windows.net  
     - *.securitycenter.windows.com
@@ -141,11 +141,11 @@ To prevent device duplication in the network device inventory, make sure each IP
 
 ### Network devices are not shown in the device inventory after several hours
 
-The scan results should be updated a few hours after the initial scan that took place after completing the assessment job configuration. 
+The scan results should be updated a few hours after the initial scan that took place after completing the assessment job configuration.
 
 If devices are still not shown, verify that the service ‘MdatpNetworkScanService’ is running on your assessment devices, on which you installed the network scanner, and perform a “Run scan” in the relevant assessment job configuration.  
 
-If you still don’t get results after 5 minutes, please restart the service.  
+If you still don’t get results after 5 minutes, restart the service.  
 
 ### Devices are shown as disconnected
 
@@ -157,7 +157,7 @@ Registration finished with an error: "It looks like you don't have sufficient pe
 
 Press any key to exit.
 
-Ask your system administrator to assign you the required permissions or ask another relevant member to help you with the sign in process by providing them with the sign-in code and link.
+Ask your system administrator to assign you the required permissions. Alternately, ask another relevant member to help you with the sign-in process by providing them with the sign-in code and link.
 
 ### Registration process fails using provided link in the command line in registration process
 
@@ -165,15 +165,15 @@ Try a different browser or copy the sign-in link and code to a different device.
 
 ### Text too small or can’t copy text from command line
 
-Change command line settings on your device to allow copying and change text size.
+Change command-line settings on your device to allow copying and change text size.
 
 ## Limitations
 
 Each assessment device can support up to 1,500 successful IP addresses scan.  
 
-For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan additional 1,400 IP addresses from other subnets on the same assessment device.  
+For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same assessment device.  
 
-Note: In case of multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
+Note: If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
 
 ## Related articles
 
