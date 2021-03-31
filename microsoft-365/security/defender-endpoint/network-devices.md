@@ -60,15 +60,15 @@ There will be two types of devices to keep in mind:
 
 Follow these steps before you install the network scanner and configure new assessment jobs:
 
-1. Allocate a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (e.g. by the Firewall).
+1. Allocate a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
 
-2. Decide which network devices will be assessed for vulnerabilities (e.g. a Cisco switch or a Palo Alto Networks firewall).  
+2. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).  
 
 3. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. ‘SNMP write’ is not needed for the proper functionality of this feature.
 
 4. Obtain the IP addresses of the network devices to be scanned (or the subnets where these devices are deployed).
 
-5. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You’ll be required to provide these when configuring a new assessment job.  
+5. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You’ll be required to provide the credentials when configuring a new assessment job.  
 
 6. Proxy client configuration: No additional configuration is required other than the Defender for Endpoint device proxy requirements.
 
@@ -91,6 +91,8 @@ To configure assessment jobs, the following user permission option is required: 
 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
 
+![Download scanner button](images/assessment-jobs-download-scanner.png)
+
 ## Network scanner installation & registration
 
 The signing-in process can be completed on the designated assessment device itself or any other device (for example, your personal client device).
@@ -100,7 +102,7 @@ To complete the network scanner registration process:
 1. Copy and follow the URL that appears on the command line and use the provided installation code to complete the registration process.
     - Note: You may need to change Command Prompt settings to be able to copy the URL.
 
-2. Enter the code and sign-in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Security Center."
+2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Security Center."
 
 3. When finished, you should see a message confirming you have signed in.
 
@@ -108,7 +110,9 @@ To complete the network scanner registration process:
 
 In the Assessment jobs page in Settings, select **Add network assessment job**.  Follow the set-up flow where you will choose network devices to be scanned regularly and added to the device inventory.
 
-To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.  
+To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
+
+![Add network assessment job button](images/assessment-jobs-add.png)
 
 ### Scan and add network devices
 
@@ -119,7 +123,7 @@ In the set-up flow, you can perform a one time test scan to verify that:
 
 Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network assessment job (regardless of the device’s response). The scan results can also be exported.
 
-Newly discovered devices will be shown under the new Network devices tab in the Device inventory page (it may take up to ~2hrs after adding an assessment job until the devices are updated).
+Newly discovered devices will be shown under the new Network devices tab in the Device inventory page (it may take up to two hours after adding an assessment job until the devices are updated).
 
 ## Troubleshooting
 
@@ -170,8 +174,6 @@ Each assessment device can support up to 1,500 successful IP addresses scan.
 For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan additional 1,400 IP addresses from other subnets on the same assessment device.  
 
 Note: In case of multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
-
-![Global search box with the dropdown option "vulnerability" selected and an example CVE.](images/tvm-vuln-globalsearch.png)
 
 ## Related articles
 
