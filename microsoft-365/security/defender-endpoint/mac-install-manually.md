@@ -187,7 +187,7 @@ To complete this process, you must have admin privileges on the device.
    > 
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]**. 
+   > > **\[Move to Trash\]** **\[Cancel\]** 
   
 7. Click **Cancel**.
 
