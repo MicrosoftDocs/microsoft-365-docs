@@ -262,6 +262,8 @@
            href: manage/manage-microsoft-rewards.md 
          - name: Manage Message center messages
            href: manage/manage-messages.md
+         - name: Manage Microsoft feedback for your organization
+           href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
          - name: Show or hide new features
