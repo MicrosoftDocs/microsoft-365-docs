@@ -95,7 +95,7 @@
      - name: Secure by default
        href: secure-by-default.md
      - name: Configure anti-phishing policies in Defender for Office 365
-       href: configure-atp-anti-phishing-policies.md
+       href: configure-mdo-anti-phishing-policies.md
      - name: Configure anti-malware policies
        href: configure-anti-malware-policies.md
      - name: Configure anti-spam policies
@@ -379,8 +379,6 @@
           href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
         - name: Manage role groups in standalone EOP
           href: manage-admin-role-group-permissions-in-eop.md
-   - name: Microsoft 365 security
-     href: ../index.yml
    - name: Microsoft 365 Defender
      href: ../index.yml
    - name: Microsoft Defender for Endpoint
