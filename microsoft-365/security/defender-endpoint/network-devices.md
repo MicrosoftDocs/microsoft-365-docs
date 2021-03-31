@@ -1,7 +1,7 @@
 ---
-title: Network devices vulnerabilities assessment
+title: Scan and manage network devices
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
-keywords: mdatp threat & vulnerability management, threat and vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
+keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ---
-# Network devices vulnerabilities assessment
+# Scan and manage network devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -121,9 +121,13 @@ In the set-up flow, you can perform a one time test scan to verify that:
 - There is connectivity between the Defender for Endpoint assessment device and the configured target network devices.
 - The configured SNMP credentials are correct.
 
+Each assessment device can support up to 1,500 successful IP addresses scan. For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same assessment device.  
+
+If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
+
 Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network assessment job (regardless of the device’s response). The scan results can also be exported.
 
-Newly discovered devices will be shown under the new Network devices tab in the Device inventory page (it may take up to two hours after adding an assessment job until the devices are updated).
+Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page (it may take up to two hours after adding an assessment job until the devices are updated).
 
 ## Troubleshooting
 
@@ -167,18 +171,7 @@ Try a different browser or copy the sign-in link and code to a different device.
 
 Change command-line settings on your device to allow copying and change text size.
 
-## Limitations
-
-Each assessment device can support up to 1,500 successful IP addresses scan.  
-
-For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same assessment device.  
-
-Note: If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
-
 ## Related articles
 
-- [Threat and vulnerability management overview](next-gen-threat-and-vuln-mgt.md)
-- [Security recommendations](tvm-security-recommendation.md)
-- [Software inventory](tvm-software-inventory.md)
-- [Dashboard insights](tvm-dashboard-insights.md)
-- [View and organize the Microsoft Defender for Endpoint Devices list](machines-view-overview.md)
+- [Device inventory](machines-view-overview.md)
+- [Configure advanced features](advanced-features.md)
