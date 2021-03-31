@@ -22,9 +22,9 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 # Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland (general)
 
-Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the nine phases of migration to the new German datacenters.
+Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the ten phases of migration to the new German datacenters.
 
-![The nine phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
@@ -42,6 +42,8 @@ The migration process will complete over many weeks depending on the overall siz
 |Power BI & Dynamics 365|15+ days|Microsoft|Migrate Power BI and Dynamics 365 content.|
 |Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worldwide.|
 |Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
+|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. |
+
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 Global services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -113,6 +115,7 @@ If you want to modify user photos during phase 5, see [Exchange Online Set-UserP
 |Stop or delete any onboarding or offboarding mailbox moves, namely don't move mailboxes between Exchange on-premises and Exchange Online.  | This ensures the mailbox move requests don't fail with an error. | Failure to do so may result in failure of the service or Office clients. |
 | Exchange Online mailboxes are moved from Microsoft Cloud Deutschland to Office 365 Global services.| Exchange Online configuration adds the new go-local German region to the transitioning organization. The Office 365 Global services region is set as default, which enables the internal load-balancing service to redistribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (MCD or Global services) are in the same organization and can use either URL endpoint. |<ul><li>Transition users and services from your legacy MCD URLs (outlook.office.de) to new Office 365 services URLs (`https://outlook.office365.com`).</li><li>Users may continue to access the service through legacy MCD URLs during the migration, however they need to stop using the legacy URLs on completion of the migration.</li><li>Users should transition to using the worldwide Office portal for Office Online features (Calendar, Mail, People). Navigation to services that aren't yet migrated to Office 365 services won't function until they are migrated. </li><li>The Outlook Web App won't provide the public folder experience during migration. </li></ul>|
 | Update custom DNS Settings for AutoDiscover| Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to autodiscover.outlook.com. |  Availability requests and service discovery calls via AutoDiscover point directly to the Office 365 services. Customers who do not perform these DNS updates may experience Autodiscover service issues when the migration is finalized. |
+| Users must update POP3, IMAP4, SMTP client configuration. | Users who have device connections to Microsoft Cloud Deutschland endpoints for client protocols POP3, IMAP4, SMTP are required to manually update their client devices to switch to the [Office 365 worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) concurrent with their mailbox migration to Office 365 Germany region. <br> smtp.office365.com : SMTP (TCP:587), outlook.office365.com : IMAP4 (TCP:993), POP3 (TCP:995)| Users of these protocols must either switch to use Outlook mobile or Outlook on the web while their mailbox is transioned and update IMAP4, POP3, SMTP settings on client devices to the new endpoints on completion. Failure to update client endpoints will result in client connection failures against Microsoft Cloud Deutschland when user mailboxes are migrated. |
 ||||
 
 Additional considerations:
@@ -201,6 +204,18 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 \*\*
   (i) Customers with Microsoft Power BI must take action in this migration scenario as defined by the Migration process provided. (ii) Failure by the customer to take action will mean that Microsoft will be unable to complete the migration. (iii) When Microsoft is unable to complete the migration due to the customer's inaction, then the customer's subscription will expire on October 29, 2021.
+
+## Azure AD Finalization (Phase 9, 10)
+
+**Applies to:** All customers
+
+When the Office 365 tenant completes the final step of the migration [Azure AD Finalization (Phase 9)] all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
+
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
+| Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
+||||
 
 ## Office Apps
 
