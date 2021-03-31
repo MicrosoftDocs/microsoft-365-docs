@@ -71,11 +71,13 @@ When Standard mode is enabled, minimal and negligible network activity generated
 
  If you choose not to enable this mode, you will only gain limited visibility of unmanaged endpoints in your network.
 
+Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+
+You can change and customize your discovery settings, for more information see [Configure device discovery](configure-device-discovery.md).
 
 > [!NOTE]
 > The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory. 
 
-Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 
 ## Device Inventory 
@@ -91,10 +93,9 @@ You can now use a new filter in the device inventory list called Onboarding stat
 ![Image of device inventory dashboard](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 
-## Device discovery applications
 
-### Vulnerability assessment on discovered devices
-Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under “Security Recommendations” and represented in entity pages across the portal. 
+## Vulnerability assessment on discovered devices
+Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal. 
 Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices. 
 
 ![Image of security recommendations dashboard](images/1156c82ffadd356ce329d1cf551e806c.png)  
@@ -116,7 +117,7 @@ New events are Transmission Control Protocol (TCP) connections-based and will fi
 The following action types have also been added:  
 
 - ConnectionAttempt - An attempt to establish a TCP connection (syn)  
-- ConnectionAcknowledged - An acknowledgement that a TCP connection was accepted (syn\ack)  
+- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)  
 
 You can try this example query:  
 
@@ -125,6 +126,20 @@ DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"  
 | take 10  
 ```
+
+
+## Changed behaviour
+The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled. 
+ 
+1.	Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results. 
+    1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using “OnboardingStatus” attribute.
+
+    2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by adding ClientVersion == "1.0'"to your query. 
+
+2.	Unmanaged devices will be assigned to existing device groups based on the defined criteria. 
+3.	In rare cases, Standard discovery might trigger alerts on network monitors or security tools. Please provide feedback, if you experience such events, to help prevent these issues from recurring. You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery. 
+
+
 
 ## Next steps
 - [Configure device discovery](configure-device-discovery.md)

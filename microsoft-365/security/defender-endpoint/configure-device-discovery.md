@@ -45,10 +45,6 @@ You can customize the list of devices that are used to perform standard discover
 
 Take the following configuration steps in Microsoft 365 security center:
 
-> [!NOTE]
-> For preview, you'll first need to turn on the Preview features in Microsoft Defender Security Center.
-
-
 1.	Navigate to **Settings > Device discovery**.
 2.	Select the discovery mode to use on your onboarded devices. 
 3.	If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags.
@@ -59,7 +55,7 @@ Take the following configuration steps in Microsoft 365 security center:
 If there are devices on your network which should not be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode. Those devices will be passively discovered but won't be actively probed. 
 
 ## Select networks to monitor
- Microsoft Defender for Endpoint analyzes networks and determines if it is a corporate network that needs to be monitored or a non-corporate network that can be ignored. Corporate networks are typically chosen to be monitored. However, you can override this decision by choosing to monitor non-corporate networks where onboarded devices are found. 
+ Microsoft Defender for Endpoint analyzes a network and determines if it is a corporate network that needs to be monitored or a non-corporate network that can be ignored. Corporate networks are typically chosen to be monitored. However, you can override this decision by choosing to monitor non-corporate networks where onboarded devices are found. 
 
 You can configure where device discovery can be performed by specifying which networks to monitor. When a network is monitored, device discovery can be performed on it. 
 

@@ -210,6 +210,10 @@ When you enable Intune integration, Intune will automatically create a classic C
 > [!NOTE]
 > The classic CA policy created by Intune is distinct from modern [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/), which are used for configuring endpoints.
 
+
+## Device discovery
+Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. For more information, see [Device discovery](device-discovery.md).
+
 ## Preview features
 
 Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
