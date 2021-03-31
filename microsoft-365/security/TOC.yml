@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md                  
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
+            - name: Microsoft Threat Experts
+              items:
+                - name: Microsoft Threat Experts overview
+                  href: mtp/microsoft-threat-experts.md
+                - name: Configure and manage Microsoft Threat Experts capabilities
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
