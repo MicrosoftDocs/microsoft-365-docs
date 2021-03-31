@@ -43,7 +43,7 @@ The templates available for use are based on your organization’s licensing agr
 Templates will display an activation status as either active or inactive:
 
 - A template is considered **active** once you create an assessment from that template.
-- A template is considered **inactive** if your organization isn’t using it as the framework for an assessment.
+- A template is considered **inactive** if your organization isn’t using it for an assessment.
 
 When you purchase a premium template and create an assessment from it, that template is active for one year. Your purchase will automatically renew unless you cancel renewal.
 
