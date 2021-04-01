@@ -130,7 +130,7 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender for Endpoint URL exclusions in the proxy, see the
-[Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allowlist or on
+[Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allow list or on
 [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 **Manual static proxy configuration:**
