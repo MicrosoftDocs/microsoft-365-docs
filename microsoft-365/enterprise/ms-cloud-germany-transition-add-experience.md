@@ -26,6 +26,7 @@ The following sections provide post migration activities for multiple services a
 
 ## Azure AD
 
+### Azure AD Connect
 **Applies to:** All customers synchronizing identities with Azure AD connect
 
 | Step(s) | Description | Impact |
@@ -33,7 +34,8 @@ The following sections provide post migration activities for multiple services a
 | Update Azure AD Connect. | After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to ensure that the delta sync process has been finalized, and after that, change the string value of `AzureInstance` from 3 (Microsoft Cloud Deutschland) to 0 in the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect`. | Change the value of `AzureInstance`, the registry key. Failing to do so, will lead to objects not being synchronized after the Microsoft Cloud Deutschland endpoints are no longer available. |
 |||||
 
-**Applies to:** All customers using federated authentication with ADFS
+### Azure AD federated authentication with AD FS
+**Applies to:** All customers using federated authentication with AD FS
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -44,6 +46,7 @@ The following sections provide post migration activities for multiple services a
     Question from ckinder
     The following paragraph is not clear
 -->
+### Group Approvals
 **Applies to:** End-users whose Azure AD group approval requests weren't approved in the last 30 days before migration 
 
 | Step(s) | Description | Impact |
@@ -55,6 +58,7 @@ The following sections provide post migration activities for multiple services a
     Question from ckinder
     The following paragraph is not clear
 -->
+## Custom DNS Updates
 **Applies to:**  All customer managing their own DNS zones
 
 | Step(s) | Description | Impact |
@@ -62,6 +66,7 @@ The following sections provide post migration activities for multiple services a
 | Update on-premises DNS services for Office 365 services endpoints. | Customer-managed DNS entries that point to Microsoft Cloud Deutschland need to be updated to point to the Office 365 Global services endpoints. | Failure to do so may result in failure of the service or of software clients. |
 ||||
 
+## 3rd Party Services
 **Applies to:** Customers using third-party services for Office 365 services endpoints
 
 | Step(s) | Description | Impact |
@@ -71,6 +76,7 @@ The following sections provide post migration activities for multiple services a
 
 ## SharePoint Online
 **Applies to**: Customers using SharePoint 2013 Workflows
+
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Republish SharePoint 2013 workflows. | In the pre-migration work, we reduced the number of SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | This is a required action. Failure to do so may result in user confusion and help desk calls. |

@@ -27,15 +27,15 @@ Use these links to get to the pre-work steps relevant to your organization.
 If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
-- **Custom Domains**, do [this step](#dns).
+- **Custom Domains**, do [this step](#DNS-entries-for-custom-domains).
 
 - **SharePoint Online**, do [this step](#sharepoint-online).
-- **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
+- **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
 
-- **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
+- **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
 - **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
