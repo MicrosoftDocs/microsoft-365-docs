@@ -1,5 +1,5 @@
 ---
-title: "Pre-work for the migration from Microsoft Cloud Deutschland"
+title: "Pre-migration activities for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -20,9 +20,9 @@ ms.custom:
 description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Pre-work for the migration from Microsoft Cloud Deutschland
+# Pre-migration activities for the migration from Microsoft Cloud Deutschland
 
-Use these links to get to the pre-work steps relevant to your organization.
+Use these links to get to the pre-migration steps relevant to your organization.
 
 If you're using
 

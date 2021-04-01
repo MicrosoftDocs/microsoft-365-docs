@@ -1,5 +1,5 @@
 ---
-title: "Post migration activities"
+title: "Post-migration activities for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,10 +17,10 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: "Summary:Post migration activities after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
+description: "Summary: Post-migration activities after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Post migration activities
+# Post-migration activities for the migration from Microsoft Cloud Deutschland
 
 The following sections provide post migration activities for multiple services after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
