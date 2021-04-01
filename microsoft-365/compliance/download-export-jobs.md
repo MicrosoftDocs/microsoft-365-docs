@@ -19,11 +19,20 @@ ms.custom: seo-marvel-mar2020
 description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
 ---
 
-# Download export jobs in an Advanced eDiscovery case
+# Export documents to an Azure Storage account
 
-When you export documents from a review set in an Advanced eDiscovery case, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported.
+When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you used this option, the documents are uploaded to a to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
-This article provides instructions for how to use the Microsoft Azure Storage Explorer to connect to an Azure Storage location to browse and download the exported documents. For more information about Azure Storage Explorer, see [Quickstart: Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+## Before you export documents from a review set
+
+- You need to provide a shared access signature (SAS) token for your Azure Storage account and the URL for a specific container to export documents from a review set. Be sure to have these at hand (for example, copied to a text file) when you perform Step 2
+
+   - **SAS token**: Be sure to get the SAS token is for your Azure Storage account (and not for the container). You can generate an SAS token for your account in Azure Storage. To do this, go to the Azure Storage account, and select **Share access signature** under the **Settings** settings in the storage account blade.
+   
+   > [!TIP]
+   > Use the default settings and allow all resource types when you generate the SAS token. To do this, go to the Azure Storage account, and select **Properties** under the **Settings** section in the storage account blade.
+
+   - **Container URL**:  You'll need to create a container to upload the review set documents to. Get a copy of the URL for the container; for example, `https://ediscoverydata.blob.core.windows.net/exportdata`. To do this, go to the container in Azure Storage, and select properties under the **Settings** section in the container blade.
 
 ## Step 1: Install the Azure Storage Explorer
 
