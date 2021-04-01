@@ -65,15 +65,17 @@ The default theme is the first theme displayed.
 
 You can create up to four additional group themes.
 
-1. On the General page, enter a name for your theme.
-1. Under Groups, you can select up to five Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
-1. Select Save to save your changes.
+1. On the General page, enter a name for your theme.
+
+2. Under Groups, you can select up to five Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
+
+3. Select Save to save your changes.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
-On the **Logos** page, you can add your logos and decide whether you want your logo to send users to a URL you choose.
+On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
 
 - **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS and that the image is at least 200 x 30 pixels. Your default logo can be in the JPG, PNG, GIF, or SVG format.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
@@ -118,8 +120,10 @@ Up to five themes can be created. A default theme and four group themes.
 
 ### Can I use security groups or distribution groups instead of Microsoft 365 Groups?
 
-No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups. > [!NOTE]
-> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.  
+No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
+
+> [!NOTE]
+> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
 
 ### Can I manually assign a theme independent of Microsoft 365 Groups?  
 
