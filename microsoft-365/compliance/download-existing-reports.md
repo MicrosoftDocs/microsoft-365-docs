@@ -36,8 +36,8 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 
 [Reports and insights in the Security &amp; Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-atp.md)
+[Create a schedule for a report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)
   
-[Manage schedules for reports in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-atp.md)
+[Manage schedules for reports in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)
   
-[Download a custom report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-atp.md)
+[Download a custom report in the Security &amp; Compliance Center](../security/office-365-security/view-reports-for-mdo.md)
