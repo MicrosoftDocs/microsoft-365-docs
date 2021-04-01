@@ -93,6 +93,8 @@ The following table summarizes what's included in each plan.
 
 With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Security & Compliance Center (Go to <https://protection.office.com> \> **Threat management** \> **Policy**.)
 
+Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
+
 > [!TIP]
 > For a quick list of policies to define, see [Protect against threats](protect-against-threats.md).
 
