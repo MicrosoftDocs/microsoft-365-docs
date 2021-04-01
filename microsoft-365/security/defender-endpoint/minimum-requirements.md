@@ -49,6 +49,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
+> RDSH VMs do not require a separate Defender for Endpoint license.
 
 Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
