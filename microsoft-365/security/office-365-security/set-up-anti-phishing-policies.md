@@ -89,7 +89,7 @@ The following policy settings are available in anti-phishing policies in EOP and
 
 ## Spoof settings
 
-Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
+Spoofing is when the From address in an email message (the sender address that's shown in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
 
 The following spoof settings are available in anti-phishing policies in EOP and Microsoft Defender for Office 365:
 
