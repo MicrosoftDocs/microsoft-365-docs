@@ -254,7 +254,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
-|Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
+|Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
