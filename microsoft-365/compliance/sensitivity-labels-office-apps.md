@@ -88,7 +88,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*</sup>                    | Under review            | Under review                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
-|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | xxx+                    | xxx+           | xxx+               | Yes |
+|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | xxx+                      | Under review                    | Under review           | Under review               | Under review |
 |
 
 **Footnote:**
@@ -375,7 +375,7 @@ For guidance about when to use this setting, see the information about [policy s
 
 ## Outlook-specific options for default label and mandatory labeling
 
-Identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page.
+For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**.
 
 By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to emails as well as to documents.
 
