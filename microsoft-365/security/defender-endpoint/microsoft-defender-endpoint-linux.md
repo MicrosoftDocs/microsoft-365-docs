@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Linux
+title: Microsoft Defender for Endpoint for Linux
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -34,7 +34,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Linux is likely to cause performance problems and unpredictable system errors.
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
 
 ## How to install Microsoft Defender for Endpoint for Linux
 
