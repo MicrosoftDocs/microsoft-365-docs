@@ -19,14 +19,13 @@ ms.custom:
 - Ent_TLGs
 description: "Summary: eDiscovery migration steps for the migration from Microsoft Cloud Deutschland."
 ---
-
-# Information about eDiscovery experience during the migration from Microsoft Cloud Deutschland
+# Information about the eDiscovery experience during the migration from Microsoft Cloud Deutschland
 The following section provide additional information about the eDiscovery experience when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
-# eDiscovery administration until phase 4
+## eDiscovery administration until phase 4
 Until phase 4, the Security and Compliance Center will be fully available. All content still remeins in the Microsoft Cloud Germany and is manageable by the Microsoft Cloud Germany Security and Compliance Center (https://protection.office.de/).
 
-# eDiscovery experience between phase 4 until the the end of phase 9
+## eDiscovery experience between phase 4 until the the end of phase 9
 From the beginning of phase 4 until phase 9 is completed, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business, and Exchange Online locations that have been migrated.
 
 > [!NOTE]
@@ -39,7 +38,7 @@ In the event that a search returns zero results or an error during migration, pl
 - For more information, see  [In-Place eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery)
 
 
-# eDiscovery administration after phase 9
+## eDiscovery administration after phase 9
 
 **Applies to:** All customers using eDiscovery
 
@@ -50,6 +49,7 @@ After phase 9, using the Security and Compliance Center in Microsoft Cloud Germa
 |  All SharePoint Online, OneDrive for Business, and Exchange Online locations have been migrated along with Security and Compliance Center (SCC). | All eDiscovery activity should be run from the worldwide tenant. Searches will now be 100% successful.  Any failures or errors should follow normal support channels. | None |
 ||||
 
+### eDiscovery Retention Policy
 **Applies to:**  All customers who applied a retention policy as part of pre-migration steps
 
 | Step(s) | Description | Impact |

@@ -1,5 +1,5 @@
 ---
-title: "Pre-work for the migration from Microsoft Cloud Deutschland"
+title: "Pre-migration activities for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -20,22 +20,22 @@ ms.custom:
 description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Pre-work for the migration from Microsoft Cloud Deutschland
+# Pre-migration activities for the migration from Microsoft Cloud Deutschland
 
-Use these links to get to the pre-work steps relevant to your organization.
+Use these links to get to the pre-migration steps relevant to your organization.
 
 If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
-- **Custom Domains**, do [this step](#dns).
+- **Custom Domains**, do [this step](#DNS-entries-for-custom-domains).
 
 - **SharePoint Online**, do [this step](#sharepoint-online).
-- **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
+- **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
 
-- **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
+- **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
 - **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
@@ -101,12 +101,13 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 
 <!-- before phase 5 -->
 
-**Applies to**: Exchange Online customers who have enabled sharing calendar and availability address space<br>
+**Applies to**: Exchange Online customers<br>
 **When applied**: Any time before end of phase 9
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Notify external partners of the upcoming transition to Office 365 services. | Availability address space configurations allow sharing of free/busy information with Office 365. | Failure to do so may result in service or client failure at a later phase of customer migration. |
+| Notify external partners of the upcoming transition to Office 365 services. |  Customers must notify their partners with whom they have enabled sharing calendar and availability address space configuration (allow sharing of free/busy information with Office 365). Availability configuration needs to transition to use the [Office 365 worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) when Exchange Online migration is completed. | Failure to do so may result in service or client failure at a later phase of customer migration. |
+| Notify users of required IMAP4/POP3/SMTP client changes. | Users who have device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, SMTP are required to manually update their client devices to switch to the [Office 365 worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide). | Pre-communicate this dependency to users of these protocols and ensure they either switch to use Outlook mobile or Outlook on the web during this migration. Failure to update client endpoints will result in client connection failures against Microsoft Cloud Deutschland when user mailboxes are migrated. |
 ||||
 
 ### Exchange Online Hybrid configuration
