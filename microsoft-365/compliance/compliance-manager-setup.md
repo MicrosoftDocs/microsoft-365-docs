@@ -86,7 +86,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
 | **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
-| **Edit test results**| Compliance Manager Assessment | Compliance Administrator | 
+| **Edit test results**| Compliance Manager Assessor | Compliance Administrator | 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
 | **Assign users**| Global Administrator | Global Administrator | 
 
@@ -99,7 +99,7 @@ The Compliance Manager settings in the Microsoft 365 compliance center allow you
 
 ### Set up automated testing
 
-Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
+Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
 
 Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 

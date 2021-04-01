@@ -18,7 +18,7 @@ localization_priority: Normal
 
 ---
 
-# Create a new topic 
+# Create a new topic in Microsoft Viva Topics
 
 In Viva Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
