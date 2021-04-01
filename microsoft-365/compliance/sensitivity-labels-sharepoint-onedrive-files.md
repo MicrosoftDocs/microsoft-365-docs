@@ -83,11 +83,11 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office on the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
+- Users might experience delays in being able to open encrypted documents in the following Save As scenario: Using a desktop version of Office, a user chooses Save As for a document that has a sensitivity label that applies encryption. The user selects SharePoint or OneDrive for the location, and then immediately tries to open that document in Office on the web. If the service is still processing the encryption, the user sees a message that the document must be opened in their desktop app. If they try again in a couple of minutes, the document successfully opens in Office on the web. 
+
 - For encrypted documents, printing is not supported.
 
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
-
-- The Azure Information Protection document tracking site is not supported.
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
     
