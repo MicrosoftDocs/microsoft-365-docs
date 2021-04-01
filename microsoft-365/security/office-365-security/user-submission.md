@@ -122,6 +122,9 @@ one among the following options:
         > [!NOTE]
         > U.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. The other two options are disabled.
 
+        > [!NOTE]
+        > If organizations are configured to send to custom mailbox only, reported messages will not be sent for rescan and results in the User reported messages portal will always be empty.
+
       When you're finished, click **Confirm**.
 
       > [!CAUTION]

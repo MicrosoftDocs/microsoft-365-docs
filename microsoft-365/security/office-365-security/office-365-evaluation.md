@@ -4,8 +4,8 @@ description: Defender for Office 365 in evaluation mode creates Defender for O
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, ATP
 f1.keywords: 
   - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
