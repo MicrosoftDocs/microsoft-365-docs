@@ -38,7 +38,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint for Mac pa
 ## Approach
 
 > [!CAUTION]
-> Currently, Microsoft oficially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint for Mac. Microsoft makes no warranties, express or implied, with respect to the information provided below.
+> Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint for Mac. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
 If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint for Mac.
 
@@ -81,6 +81,10 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 ### Kernel extension policy
 
 Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.
+
+> [!CAUTION]
+> If your environment consists of Apple Silicon (M1) devices, these machines should not receive configuration profiles with KEXT policies.
+> Apple does not support KEXT on these machines, deployment of such profile would fail on M1 machines.
 
 ### System extension policy
 
