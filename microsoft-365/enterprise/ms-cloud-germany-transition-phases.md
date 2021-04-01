@@ -137,7 +137,7 @@ If you want to modify user photos during phase 5, see [Exchange Online Set-UserP
 ||||
 
 
-### EXO Powershell
+### Exchange Online PowerShell
 **Applies to:** Exchange Online Administrators using Exchange Online PowerShell
 
 During the migration phase, using the PowerShell cmdlets **New-MigrationEndpoint**, **Set-MigrationEndpoint**, and **Test-MigrationsServerAvailability** can result in errors (error on proxy). This happens when the arbitration mailbox has migrated to worldwide but the admin mailbox hasn't or vice-versa. To resolve this, while creating the tenant PowerShell session, use the arbitration mailbox as the routing hint in the **ConnectionUri**. For example:
@@ -152,7 +152,7 @@ New-PSSession
 ```
 Using the PowerShell cmdlet **Set-UserPhoto** results in an error if a user mailbox has been migrated but an administrator mailbox hasn't been migrated, or vice-versa. In this situation, an admin must pass the email-ID  of the user whose photo needs to be changed in `ConnectionUri` while creating the tenant PowerShell session: 
 ```powershell
--ConnectionUri  "https://outlook.office.de/powershell-liveid?email=<user_email>" 
+-ConnectionUri "https://outlook.office.de/powershell-liveid?email=<user_email>" 
 ```
  where `<user_email>` is the placeholder for the email-ID of the  user mailbox. 
 
