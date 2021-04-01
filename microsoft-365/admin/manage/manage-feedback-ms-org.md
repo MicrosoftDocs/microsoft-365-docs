@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Manage feedback your users can send to Microsoft."
+description: "Manage feedback your users send to Microsoft about Microsoft products."
 ---
 
 # Manage Microsoft feedback for your organization
