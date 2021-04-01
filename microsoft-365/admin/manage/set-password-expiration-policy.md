@@ -42,12 +42,11 @@ You must be a [global admin](../add-users/about-admin-roles.md) to perform these
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
-As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire.
+As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire. By default passwords are set to never expire for your organization.
+
+Current research strongly indicates that mandated password changes do more harm than good. They drive users to choose weaker passwords, re-use passwords, or update old passwords in ways that are easily guessed by hackers. We recommend enabling [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 ## Set password expiration policy
-
-> [!Tip]
-> By default, passwords are set to expire in 90 days. Current research strongly indicates that mandated password changes do more harm than good. They drive users to choose weaker passwords, re-use passwords, or update old passwords in ways that are easily guessed by hackers. If setting password to never expire, we recommend enabling [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 
