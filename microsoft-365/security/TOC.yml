@@ -90,7 +90,7 @@
           items:
             - name: Overview
               href: defender/get-started.md
-            - name: Turn on Microsoft Threat Protection
+            - name: Turn on Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: Deploy supported services
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md                  
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
+            - name: Microsoft Threat Experts
+              items:
+                - name: Microsoft Threat Experts overview
+                  href: mtp/microsoft-threat-experts.md
+                - name: Configure and manage Microsoft Threat Experts capabilities
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
@@ -422,7 +428,7 @@
             - name: Secure by default
               href: ./office-365-security/secure-by-default.md
             - name: Configure anti-phishing policies in Defender for Office 365
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: Configure anti-spam policies
