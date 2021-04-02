@@ -46,7 +46,7 @@ The following sections provide post migration activities for multiple services a
     Question from ckinder
     The following paragraph is not clear
 -->
-### Group Approvals
+### Group approvals
 **Applies to:** End-users whose Azure AD group approval requests weren't approved in the last 30 days before migration 
 
 | Step(s) | Description | Impact |
