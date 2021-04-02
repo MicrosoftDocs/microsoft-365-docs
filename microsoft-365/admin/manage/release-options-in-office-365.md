@@ -2,8 +2,8 @@
 title: "Set up the Standard or Targeted release options"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article

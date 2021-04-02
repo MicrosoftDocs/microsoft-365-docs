@@ -1,7 +1,7 @@
 ---
  title: "Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage"
- ms.author: sirkkuw
- author: sirkkuw
+ms.author: kwekua
+author: kwekua
  manager: scotv
  audience: Admin
  ms.topic: article
