@@ -90,7 +90,7 @@ You can choose the data retention policy for your data. This determines how long
 **At contract termination or expiration**<br>
 Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
-**Advanced Hunting data**<br.
+**Advanced Hunting data**<br>
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data.
 
 
