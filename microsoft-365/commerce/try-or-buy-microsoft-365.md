@@ -23,13 +23,6 @@ ms.date: 08/07/2020
 
 # Try or buy a Microsoft 365 for business subscription
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
-
 Microsoft 365 for business is a subscription service that lets you run
 your organization in the cloud while Microsoft takes care of the IT for
 you. Microsoft manages devices, protects against real-world threats, and
@@ -129,6 +122,21 @@ the additional subscription they need.
 
 > [!NOTE]
 > You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted.
+
+::: moniker range="o365-21vianet"
+## Payment options
+
+You can pay for your subscription by:
+
+- Invoice
+
+- Online payment using Alipay or China UnionPay
+
+Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](apply-for-a-fapiao.md).
+
+> [!NOTE]
+>  International credit cards are not accepted.
+::: moniker-end
 
 ## Next steps
 
