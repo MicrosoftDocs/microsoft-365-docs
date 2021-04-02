@@ -26,10 +26,7 @@ When you export documents from a review set in an Advanced eDiscovery case, you 
 
 - You need to provide a shared access signature (SAS) token for your Azure Storage account and the URL for a specific container in the storage account to export documents from a review set. Be sure to have these at hand (for example, copied to a text file) when you perform Step 2
 
-  - **SAS token**: Be sure to get the SAS token is for your Azure Storage account (and not for the container). You can generate an SAS token for your account in Azure Storage. To do this, go to the Azure Storage account, and select **Share access signature** under the **Settings** settings in the storage account blade.
-
-   > [!TIP]
-   > Use the default settings and allow all resource types when you generate the SAS token.
+  - **SAS token**: Be sure to get the SAS token is for your Azure Storage account (and not for the container). You can generate an SAS token for your account in Azure Storage. To do this, go to the Azure Storage account, and select **Share access signature** under the **Settings** settings in the storage account blade. Use the default settings and allow all resource types when you generate the SAS token.
 
   - **Container URL**: You need to create a container to upload the review set documents to, and then get a copy of the URL for the container; for example, `https://ediscoverydata.blob.core.windows.net/exportdata`. To get the URL, go to the container in Azure Storage, and select **Properties** under the **Settings** section in the container blade.
 
