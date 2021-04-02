@@ -53,7 +53,9 @@ Turning on HMA means:
 
 1. Enabling HMA in EXCH.
 
- **Note** Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+> [!NOTE]
+> Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+
 
 ## Make sure you meet all the prerequisites
 
@@ -78,7 +80,8 @@ Ensure the URLs clients may connect to are listed as HTTPS service principal nam
 
 1. First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).
 
-   **Note** You need to use the _Connect-MsolService_ option from this page to be able to use the command below.
+    > [!NOTE]
+    > You need to use the _Connect-MsolService_ option from this page to be able to use the command below.
 
 2. For your Exchange-related URLs, type the following command:
 
@@ -152,13 +155,15 @@ Once you enable HMA, a client's next login will use the new auth flow. Note that
 
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an 'Authn' type of 'Bearer\*', which represents the bearer token used in OAuth.
 
- **Note** Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+> [!NOTE]
+> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP ranges:
+If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP address ranges:
 
-```text
+```
 52.125.128.0/20
 52.127.96.0/23
 ```
