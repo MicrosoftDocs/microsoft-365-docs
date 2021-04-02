@@ -2,8 +2,8 @@
 title: "Set up Windows devices for Microsoft 365 Business Premium users"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article

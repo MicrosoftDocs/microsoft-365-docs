@@ -47,7 +47,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 ## Interactive guide to Microsoft Defender for Office 365
 In this interactive guide you'll learn how to safeguard your organization with Microsoft Defender for Office 365. You'll see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Check out the interactive guide](https://aka.ms/MSDO-IG)
 
 ## Getting Started
 
