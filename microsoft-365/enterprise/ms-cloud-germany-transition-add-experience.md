@@ -58,7 +58,7 @@ The following sections provide post-migration activities for multiple services a
     Question from ckinder
     The following paragraph is not clear
 -->
-## Custom DNS Updates
+## Custom DNS updates
 **Applies to:**  All customer managing their own DNS zones
 
 | Step(s) | Description | Impact |
