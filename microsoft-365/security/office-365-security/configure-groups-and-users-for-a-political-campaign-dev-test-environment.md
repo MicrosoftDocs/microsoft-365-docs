@@ -27,7 +27,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
  **Summary:** Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment.
 

@@ -110,7 +110,7 @@ There are two steps for this:
 
 Make sure you have completed the following in Microsoft 365 or Office 365:
 
-1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](../../security/office-365-security/feature-permissions-in-eop.md) topic.
+1. To set up connectors, you need permissions assigned before you can begin. To check what permissions you need, see the Microsoft 365 and Office 365 connectors entry in the [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) topic.
 
 2. If you want EOP or Exchange Online to relay email from your email servers to the Internet, either:
 

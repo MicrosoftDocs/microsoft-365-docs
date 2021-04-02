@@ -461,7 +461,7 @@
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
@@ -487,7 +487,11 @@
               href: performance-troubleshooting-plan.md
 
 - name: Windows 10
-  href: /windows/deployment/
+  items:
+    - name: How to check release health
+      href: https://docs.microsoft.com/windows/deployment/update/check-release-health
+    - name: Deploy and update
+      href: /windows/deployment/
 
 - name: Microsoft 365 Apps for enterprise
   href: /deployoffice/deployment-guide-microsoft-365-apps
