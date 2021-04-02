@@ -50,7 +50,7 @@ See [about admin roles](../add-users/about-admin-roles.md) for more information.
   
 1. In the admin center, go to the **Settings** \> **Org settings** \> **Service** Tab. 
     
-2. On the **Services** tab, Select  **Reports** .
+2. On the **Services** tab, Select  **Reports**.
     
 3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**. 
   
