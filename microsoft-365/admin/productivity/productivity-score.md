@@ -39,7 +39,7 @@ We provide metrics, insights, and recommendations in two areas:
 
 - **Technology experiences:** Your organization depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
-See [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+See [What is Endpoint Analytics](/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## How the score is calculated
@@ -69,7 +69,8 @@ Your organization's score is updated daily and reflects user actions completed i
 
 ## Prerequisites 
 
-For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
 
@@ -124,7 +125,7 @@ The details pages are:
 - [Mobility – people experiences](mobility.md)
 - [Teamwork – people experiences](teamwork.md)
 - [Microsoft 365 Apps health – technology experiences](apps-health.md)
-- [Endpoint Analytics](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Endpoint Analytics](/mem/analytics/productivity-score)
 
 ## Business continuity special report
 
@@ -138,12 +139,12 @@ This report helps organizations understand:
 
 - Whether remote meetings support effective decision-making.
 
-[Learn more about the Business continuity report](https://aka.ms/bcrps)
+[Learn more about the Business continuity report](/Workplace-Analytics/tutorials/bcrps)
 
-[Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
+[Learn more about Microsoft Graph](/graph/)
 
 > [!NOTE]
-> Users also have the option to get productivity insights from the [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## We want to hear from you

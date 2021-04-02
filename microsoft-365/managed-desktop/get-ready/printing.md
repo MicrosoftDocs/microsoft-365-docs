@@ -16,11 +16,11 @@ audience: Admin
 
 As you get ready to enroll in Microsoft Managed Desktop, you should evaluate your printing requirements and determine the right approach for your environment. You have three options:
  
-- Deploy the Microsoft Universal Print solution to make it easy for Microsoft Managed Desktop devices to discover printers. For more information, see [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
+- Deploy the Microsoft Universal Print solution to make it easy for Microsoft Managed Desktop devices to discover printers. For more information, see [What is Universal Print](/universal-print/fundamentals/universal-print-whatis).
 - Deploy printers directly by using a custom PowerShell script. Follow the steps in the [Set up local printers](#set-up-local-printers) section.
 - Use a non-Microsoft cloud printing solution that is compatible with Windows 10 devices that are joined to an Azure Active Directory domain. The solution must meet the software requirements for Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
  
-In all cases, if the printer drivers are not available from Microsoft Update or the Microsoft Store, you'll have to obtain them yourself and have them packaged for deployment to your Microsoft Managed Desktop devices with Microsoft Intune. For more, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
+In all cases, if the printer drivers are not available from Microsoft Update or the Microsoft Store, you'll have to obtain them yourself and have them packaged for deployment to your Microsoft Managed Desktop devices with Microsoft Intune. For more, see [Intune Standalone - Win32 app management](/mem/intune/apps/apps-win32-app-management)
 
 ## Set up local printers
 
@@ -36,8 +36,8 @@ If you've decided to deploy printers by using a custom PowerShell script and hav
 
 ## Steps to get ready
 
-1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
-2. Use [readiness assessment tools](readiness-assessment-tool.md).
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [Readiness assessment tools](readiness-assessment-tool.md).
 3. [Prerequisites for guest accounts](guest-accounts.md)
 4. [Network configuration for Microsoft Managed Desktop](network.md)
 5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)

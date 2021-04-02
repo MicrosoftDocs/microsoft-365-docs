@@ -76,7 +76,7 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 ```
 
 > [!NOTE]
-> You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet
+> You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) PowerShell cmdlet
 
 ### Upgrade multiple DLs in a batch
 
@@ -151,7 +151,7 @@ People with global admin or Exchange admin rights.
 
 ### Why is the contact card still showing a distribution list? What should I do to prevent a upgraded distribution list from showing up in my auto suggest list?
 
-- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. The contact card of the recipient will be the distribution lists contact card. This is because of the recipient cache or nick name cache in Outlook. The email will be sent successfully to the group, but might cause confusion to the sender.<br/>You can perform the steps in this topic, [Information about the Outlook AutoComplete list](https://go.microsoft.com/fwlink/?LinkID=798736) to reset the cache, which will fix this issue.
+- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. The contact card of the recipient will be the distribution lists contact card. This is because of the recipient cache or nick name cache in Outlook. The email will be sent successfully to the group, but might cause confusion to the sender.<br/>You can perform the steps in this topic, [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) to reset the cache, which will fix this issue.
 
 - For Outlook on the web: In case of Outlook on the web, the distribution list recipient will still remain in the cache. You can follow the steps in [Remove suggested name or email address from the Auto-Complete List](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) to refresh the cache to see the group contact card.
 

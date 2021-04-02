@@ -64,9 +64,9 @@ Data columns shown are:
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
-[General Microsoft Stream endpoints](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[General Microsoft Stream endpoints](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Monitor Microsoft 365 connectivity](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[Monitor Microsoft 365 connectivity](./monitor-connectivity.md)
 
 [Root CA and the Intermediate CA bundle on the third-party application system](../compliance/encryption-office-365-certificate-chains.md)
   

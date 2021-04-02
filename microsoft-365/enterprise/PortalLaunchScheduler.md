@@ -23,15 +23,15 @@ description: "This article describes how you can launch your portal using the Po
 
 A portal is a SharePoint site on your intranet that has a large number of site viewers who consume content on the site. Launching your portal in waves is an important part of ensuring users have a smooth and performant experience accessing a new SharePoint Online portal. 
 
-Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
+Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](./planportallaunchroll-out.md?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
 
 There are two types of redirection: 
 - bidirectional: launch a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal 
 - temporary page redirection: launch a new modern SharePoint Online portal with no existing SharePoint portal
 
-The portal launch scheduler is only available to launch modern SharePoint Online portals (i.e. communication sites). Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
+The portal launch scheduler is only available to launch modern SharePoint Online portals (i.e. communication sites). Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](./page-diagnostics-for-spo.md) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
 
-For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](https://docs.microsoft.com/sharepoint/portal-health). 
+For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](/sharepoint/portal-health). 
 
 > [!NOTE]
 > This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
@@ -133,4 +133,4 @@ Example:
 2. Validate that no redirection happens for all users.
 
 ## Learn more
-[Planning your portal launch roll-out plan in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[Planning your portal launch roll-out plan in SharePoint Online](./planportallaunchroll-out.md)

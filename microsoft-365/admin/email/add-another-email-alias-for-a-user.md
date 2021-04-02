@@ -25,14 +25,6 @@ description: "Learn how you can have more than one email address, called email a
 ---
 
 # Add another email alias for a user
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   
@@ -68,7 +60,7 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
   
      
 5. When you're done, choose **Save changes**.
@@ -100,7 +92,7 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
 
 5. When you're done, select **Save**.
 
@@ -131,7 +123,7 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
 
 5. When you're done, select **Save**.
 
@@ -160,5 +152,3 @@ If you purchased your subscription from GoDaddy or another Partner, to set the n
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md)
-  
-

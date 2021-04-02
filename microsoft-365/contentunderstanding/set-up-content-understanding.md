@@ -48,6 +48,14 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 
 If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
 
+### AI Builder credits
+
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+
+You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
+
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
+
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
@@ -108,16 +116,8 @@ To assign licenses:
 
 5. Click **Save changes**.
 
-## AI Builder credits
-
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
-
-You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
-
-Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
-
 ## See also
 
-[Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[Overview of the form processing model](/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)

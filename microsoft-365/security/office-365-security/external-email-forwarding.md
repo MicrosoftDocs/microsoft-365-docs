@@ -24,8 +24,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 As an admin, you might have company requirements to restrict or control automatically forwarded messages to external recipients (recipients outside of your organization). Email forwarding can be a useful, but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
 
@@ -34,7 +34,7 @@ The following types of automatic forwarding are available in Microsoft 365:
 
 - Users can configure [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) to automatically forward messages to external senders (deliberately or as a result of a compromised account).
 
-- Admins can configure [mailbox forwarding](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_) to automatically forward messages to external recipients. The admin can choose whether to simply forward messages, or keep copies of forwarded messages in the mailbox.
+- Admins can configure [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_) to automatically forward messages to external recipients. The admin can choose whether to simply forward messages, or keep copies of forwarded messages in the mailbox.
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
 
@@ -56,9 +56,9 @@ For instructions on how to configure these settings, see [Configure outbound spa
 
 As an admin, you might have already configured other controls to allow or block automatic email forwarding. For example:
 
-- [Remote domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) to allow or block automatic email forwarding to some or all external domains.
+- [Remote domains](/exchange/mail-flow-best-practices/remote-domains/remote-domains) to allow or block automatic email forwarding to some or all external domains.
 
-- Conditions and actions in Exchange [mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to detect and block automatically forwarded messages to external recipients.
+- Conditions and actions in Exchange [mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) to detect and block automatically forwarded messages to external recipients.
 
 Remote domain settings and mail flow rules are independent of the settings in outbound spam filter policies. For example:
 

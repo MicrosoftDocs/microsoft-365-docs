@@ -49,4 +49,4 @@ When you communicate with your employees, partners, clients, and others in your 
 
 [What is Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams overview](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Teams overview](/MicrosoftTeams/Teams-overview)
