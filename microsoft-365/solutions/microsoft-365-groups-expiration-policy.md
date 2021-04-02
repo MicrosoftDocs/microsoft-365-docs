@@ -63,7 +63,7 @@ You can set the policy for all of your groups, only selected groups, or turn it 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 
 > [!NOTE]
-> When you set the policy for selected groups, up to 500 groups can be added in the list. If you need to add more than 500 groups, you can set the policy for all of your groups. 500 limitation will not be applied in this case.
+> When you set the policy for selected groups, up to 500 groups can be added to the list. If you need to add more than 500 groups, you can set the policy for all of your groups. The 500 groups limitation will not be applied in this case.
 
 ## How expiry works with the retention policy
 
