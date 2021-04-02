@@ -6,10 +6,10 @@
   items:
     - name: Try or buy Microsoft 365
       href: try-or-buy-microsoft-365.md
-    - name: Extend your trial
-      href: extend-your-trial.md
     - name: Buy or manage add-ons
       href: buy-or-edit-an-add-on.md
+    - name: Business Assist for Microsoft 365
+      href: ../admin/misc/business-assist.md
     - name: Add storage space
       href: add-storage-space.md
 - name: Manage subscriptions
@@ -76,3 +76,4 @@
   href: close-your-account.md
 - name: Contact support
   href: ../admin/contact-support-for-business-products.md
+  

@@ -67,7 +67,7 @@ To perform these steps, you must be using an active Microsoft PowerShell command
 4. Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:
 
    ```powershell
-   Get-EXOMailbox -RecipientTypeDetails Scheduling
+   Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
 5. Type the following command:
