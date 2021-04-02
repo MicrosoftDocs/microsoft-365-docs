@@ -76,33 +76,27 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 1. Start the Azure Storage Explorer that you downloaded and installed.
 
-2. Click the **Open ** icon. Alternatively, you can right-click **Storage Accounts**.
+2. Click the **Open Connect Dialog** icon.
 
    ![Click the Add account icon](../media/AzureStorageConnect.png)
 
-3. On the **Connect to Azure Storage** page, click **Use a shared access signature (SAS) URI** and then click **Next**.
+3. On the **Connect to Azure Storage** page, click **Blob container**.
 
-    ![Click Use a shared access signature (SAS) URI and then click Next](../media/AzureStorageConnect2.png)
+4. On the **Select Authentication Method** page, select the **Shared access signature (SAS)** option and then click **Next**.
 
-4. On the **Attach with SAS URI** page, click in the URI box, and then paste the SAS URL that you obtained in Step 2.
+5. On the **Enter Connection Info** page, paste the SAS URL (that you obtained in the export job in Step 2) in the **Blob Container SAS URL** box.
 
     ![Paste the SAS URL in the URI box](../media/AzureStorageConnect3.png)
 
-    Notice that a portion of the SAS URL is displayed in the **Display name** box. This will be used as the display name of the container that's created under the **Storage accounts** after you connect to the storage location. This name consists of the ID of the Advanced eDiscovery case is from and a unique identifier. You can keep the default display name or change it. If you change it, the display name must be unique.
+    Notice that the container name is displayed in the **Display name** box. You can edit this name.
 
-5. Click **Next**.
-
-    The **Connection summary** page is displayed.
-
-    ![Click Connect on the Connection summary page to connect to the Azure Storage location](../media/AzureStorageConnect4.png)
-
-6. On the **Connection summary** page, review the connection information, and then click **Connect**.
+6. Click **Next** to display the **summary** page and then click **Connect**.
 
     The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened.
 
     ![Export jobs in the Blobs containers node](../media/AzureStorageConnect5.png)
 
-    It contains a container named with the display name from step 4. This container contains a folder for each export job that you've created. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab.
+    It contains a container named with the display name from step 5. This container contains a folder for each export job that you've downloaded to the container in your Azure Storage account. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab in the Advanced eDiscovery case.
 
 7. Double-click the export job folder to open it.
 
@@ -110,20 +104,16 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     ![The export folder contains exported files and export reports](../media/AzureStorageConnect6.png)
 
-8. To export all contents in the export, select the export folder, and then click **Download**.
+8. To export all contents from the export job, click the **Up** arrow to go back to the export job folder, and then click **Download**.
 
 9. Specify the location where you want to download the exported files, and then click Select folder.
 
-    The Azure Storage Explorer starts the export process. The status of the downloading the exported items is displayed in the **Activities** pane. A message is displayed when the download is finished.
-
-    ![A message is displayed when the download is finished](../media/AzureStorageConnect8.png)
+    The Azure Storage Explorer starts the download process. The status of the downloading the exported items is displayed in the **Activities** pane. A message is displayed when the download is complete.
 
 > [!NOTE]
 > Instead of downloading the entire export job in Azure Storage Explorer, you can select specific items to download and view.
 
 ## More information
-
-- As an alternative to using the Azure Storage Explorer connecting to the storage container the Azure Storage Explorer to access the documents that you export to your Azure Storage account, you call the Azure Storage Explorer directly from your Azure Storage account. To do this, you will need the necessary credential to access the storage account in the Azure portal. For more information, see 
 
 - The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information about these options, see [Export documents from a review set](export-documents-from-review-set.md).
 
@@ -135,7 +125,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
   - NativeFiles: This folder contains a native file version of each exported document.
 
-  - Error_files: This folder includes the following items when the export job contains any error files: 
+  - Error_files: This folder includes the following items when the export job contains any error files:
 
     - ExtractionError.csv: This CSV file contains the available metadata for files that weren't properly extracted from their parent item.
 
