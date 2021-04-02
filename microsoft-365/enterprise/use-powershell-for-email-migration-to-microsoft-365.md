@@ -1,7 +1,7 @@
 ---
 title: "Use PowerShell to migrate email to Microsoft 365"
-ms.author: kvice
-author: kellyvice-msft
+ms.author: sirkkuw
+author: sirkkuw
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin

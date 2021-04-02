@@ -1,7 +1,7 @@
 ---
 title: "Use PowerShell to perform a cutover migration to Microsoft 365"
-ms.author: kvice
-author: kellyvice-msft
+ms.author: sirkkuw
+author: sirkkuw
 manager: laurawi
 audience: Admin
 ms.topic: article
