@@ -22,7 +22,7 @@ description: "Summary: Post-migration activities after moving from Microsoft Clo
 
 # Post-migration activities for the migration from Microsoft Cloud Deutschland
 
-The following sections provide post migration activities for multiple services after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
+The following sections provide post-migration activities for multiple services after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## Azure AD
 
