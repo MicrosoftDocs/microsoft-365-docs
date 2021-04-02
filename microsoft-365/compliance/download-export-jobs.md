@@ -1,5 +1,5 @@
 ---
-title: Download export jobs for an Advanced eDiscovery case
+title: Export documents to your organization's Azure Storage account
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW 
 ms.custom: seo-marvel-mar2020
-description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
+description: "Export documents in a review set to an Azure Storage account and then use Azure Storage Explorer to download them to a local computer."
 ---
 
-# Export a review set to an Azure Storage account
+# Export documents in a review set to an Azure Storage account
 
-When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you used this option, the documents are uploaded to a to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+When you export documents from a review set in an Advanced eDiscovery case, you have the option to export them to an Azure Storage account managed by your organization. If you used this option, the documents are uploaded to your Azure Storage location. After they are exported, you can access the documents (and download them to a local computer or other location) by using the Azure Storage Explorer. This article provides instructions for how to export documents to your Azure Storage account and the use the Azure Storage Explorer to connect to an Azure Storage location to download the exported documents. For more information about Azure Storage Explorer, see [Use Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## Before you export documents from a review set
 
@@ -34,7 +33,7 @@ When you export documents from a review set in an Advanced eDiscovery case, you 
 
   - **Container URL**: You need to create a container to upload the review set documents to, and then get a copy of the URL for the container; for example, `https://ediscoverydata.blob.core.windows.net/exportdata`. To get the URL, go to the container in Azure Storage, and select **Properties** under the **Settings** section in the container blade.
 
-- Download and install the Azure Storage Explorer. For instructions, see [Azure Storage Explorer tool](https://go.microsoft.com/fwlink/p/?LinkId=544842). You use this tool to connect to the container in your Azure Storage account and download the the documents that you exported in Step 1.
+- Download and install the Azure Storage Explorer. For instructions, see [Azure Storage Explorer tool](https://go.microsoft.com/fwlink/p/?LinkId=544842). You use this tool to connect to the container in your Azure Storage account and download the documents that you exported in Step 1.
 
 ## Step 1: Export the documents from a review set
 
