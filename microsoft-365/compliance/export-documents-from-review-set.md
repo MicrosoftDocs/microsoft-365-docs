@@ -66,7 +66,7 @@ Use the following options to configure the export.
 
     - **Conversation files**: This option exports reconstructed chat conversations. This format presents conversations in a form that resembles what users see in the native application.
 
-    - **Individual chat messages**: - This option exports the original conversation files as they are stored in Microsoft 365.
+    - **Individual chat messages**: This option exports the original conversation files as they are stored in Microsoft 365.
 
 - **Options**
 
