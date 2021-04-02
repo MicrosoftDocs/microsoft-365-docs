@@ -35,6 +35,9 @@ To export documents from a review set:
 
 3. After you configure the export, click **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 
+> [!NOTE]
+> Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
+
 ## Export options
 
 Use the following options to configure the export.
@@ -112,6 +115,3 @@ If you select this export option, the exported content is organized in the follo
     - ProcessingError: This file contains a list of documents with processing errors. This content is item-level, meaning if an attachment resulted in a processing error, the email message that contains the attachment is included in this folder.
   
   - Extracted_text_files: This folder contains all of the extracted text files that were generated at processing.
-
-> [!NOTE]
-> Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
