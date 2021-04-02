@@ -201,6 +201,10 @@ An optimal Microsoft 365 service front door is one that is closest to your netwo
 
 The internet egress location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, then this may indicate a significant WAN backhaul.
 
+### What license is needed for this capability?
+
+You require a  license that provides access to the Microsoft 365 admin center.
+
 ## Related topics
 
 [Microsoft 365 network insights (preview)](office-365-network-mac-perf-insights.md)
