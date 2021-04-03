@@ -80,7 +80,7 @@ The following sections provide post-migration activities for multiple services a
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Republish SharePoint 2013 workflows. | In the pre-migration work, we reduced the number of SharePoint 2013 workflows. Now with migration complete, the customer can republish the workflows. | This is a required action. Failure to do so may result in user confusion and help desk calls. |
-| Share items via Outlook | Sharing items in  SharePoint Online and OneDrive for Business via Outlook no longer works after tenant cutover. |<ul><li>In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App.</li><li>After tenant cutover, this method of sharing won't work. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out. </li></ul>|
+| Share items via Outlook | Sharing items in SharePoint Online and OneDrive for Business via Outlook no longer works after tenant cutover. |<ul><li>In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App.</li><li>After tenant cutover, this method of sharing won't work. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out. </li></ul>|
 ||||
 
 ## Exchange Online
