@@ -50,7 +50,7 @@ After phase 9, using the Security and Compliance Center in Microsoft Cloud Germa
 ||||
 
 ### eDiscovery Retention Policy
-**Applies to:**  All customers who applied a retention policy as part of pre-migration steps
+**Applies to:**  All customers who applied a retention policy as part of the pre-migration steps
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
