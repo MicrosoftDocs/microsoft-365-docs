@@ -27,7 +27,7 @@ Tenant migrations are designed to have minimal effect on administrators and user
 
 Following are the key differences between Microsoft Cloud Deutschland and Office 365 services in the new German datacenter regions.
 
-| Category | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
+| Category | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
 |:-------|:-----|:-------|
 | Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services | 29 services <br><br> For more information, see [What is the service availability between the different Office 365 cloud service offerings?](ms-cloud-germany-transition.md#serv-avail). |
 | New features | No new features will be available. | New features will be available consistent with Office 365 services. |
