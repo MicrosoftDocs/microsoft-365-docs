@@ -23,7 +23,7 @@ description: "Summary: eDiscovery migration steps for the migration from Microso
 The following sections provide additional information about the eDiscovery experience when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## eDiscovery administration until phase 4
-Until phase 4, the Security and Compliance Center will be fully available. All content still remeins in the Microsoft Cloud Germany and is manageable by the Microsoft Cloud Germany Security and Compliance Center (https://protection.office.de/).
+Until phase 4, the Security and Compliance Center will be fully available. All content still remains in the Microsoft Cloud Germany and is manageable by the Microsoft Cloud Germany Security and Compliance Center (https://protection.office.de/).
 
 ## eDiscovery experience between phase 4 until the the end of phase 9
 From the beginning of phase 4 until phase 9 is completed, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business, and Exchange Online locations that have been migrated.
