@@ -24,7 +24,7 @@ description: "Summary: "
 # How to opt-in for new migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter regions
 
 > [!NOTE]
->This article only applies to Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers.
+> This article only applies to Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers.
 >
 
 ## How to request migration
