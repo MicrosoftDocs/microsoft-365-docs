@@ -46,7 +46,7 @@ In phase 9, the final steps for moving to the new German datacenter region will 
 After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Please use the new [Security Center](https://security.microsoft.com/) or [Compliance Center](https://compliance.microsoft.com/) instead. All data have been migrated to the new admin portals. 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-|  All SharePoint Online, OneDrive for Business, and Exchange Online locations have been migrated along with Security and Compliance Center (SCC). | All eDiscovery activity should be run from the worldwide tenant. Searches will now be 100% successful.  Any failures or errors should follow normal support channels. | None |
+|  All SharePoint Online, OneDrive for Business, and Exchange Online locations have been migrated along with the Security and Compliance Center (SCC). | All eDiscovery activity should be run from the worldwide tenant. Searches will now be 100% successful. Any failures or errors should follow normal support channels. | None |
 ||||
 
 ### eDiscovery Retention Policy
