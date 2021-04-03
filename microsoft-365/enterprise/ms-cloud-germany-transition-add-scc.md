@@ -20,7 +20,7 @@ ms.custom:
 description: "Summary: eDiscovery migration steps for the migration from Microsoft Cloud Deutschland."
 ---
 # Information about the eDiscovery experience during the migration from Microsoft Cloud Deutschland
-The following section provide additional information about the eDiscovery experience when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
+The following sections provide additional information about the eDiscovery experience when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## eDiscovery administration until phase 4
 Until phase 4, the Security and Compliance Center will be fully available. All content still remeins in the Microsoft Cloud Germany and is manageable by the Microsoft Cloud Germany Security and Compliance Center (https://protection.office.de/).
