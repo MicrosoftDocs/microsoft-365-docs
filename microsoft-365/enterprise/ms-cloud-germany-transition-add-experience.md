@@ -66,7 +66,7 @@ The following sections provide post-migration activities for multiple services a
 | Update on-premises DNS services for Office 365 services endpoints. | Customer-managed DNS entries that point to Microsoft Cloud Deutschland need to be updated to point to the Office 365 Global services endpoints. | Failure to do so may result in failure of the service or of software clients. |
 ||||
 
-## 3rd Party Services
+## Third-party services
 **Applies to:** Customers using third-party services for Office 365 services endpoints
 
 | Step(s) | Description | Impact |
