@@ -123,7 +123,7 @@ In the set-up flow, you can perform a one time test scan to verify that:
 
 Each assessment device can support up to 1,500 successful IP addresses scan. For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same assessment device.  
 
-If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up.
+If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up. A test scan will be available for up to 1,024 addresses.
 
 Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network assessment job (regardless of the device’s response). The scan results can also be exported.
 
@@ -133,11 +133,11 @@ Newly discovered devices will be shown under the new **Network devices** tab in 
 
 ### Network scanner installation has failed
 
-Verify that the required URLs are added to the allowed domains in your firewall.  
+Verify that the required URLs are added to the allowed domains in your firewall settings. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 
 ### The Microsoft.com/devicelogin web page did not show up
 
-Verify that the required URLs are added to the allowed domains in your firewall.
+Verify that the required URLs are added to the allowed domains in your firewall. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 
 ### Duplication of network devices in device inventory
 
@@ -151,7 +151,7 @@ If devices are still not shown, verify that the service ‘MdatpNetworkScanServi
 
 If you still don’t get results after 5 minutes, restart the service.  
 
-### Devices are shown as disconnected
+### Devices last seen time is longer than 24 hours
 
 Validate that the scanner is running properly. Then go to the scan definition and select “Run test.” Check what error messages are returning from the relevant IP addresses.
 
