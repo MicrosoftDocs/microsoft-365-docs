@@ -14,8 +14,9 @@ ms.collection: M365-security-compliance
 description: "Introducing the information risk management reference architecture to help customers visualize their current organizational risks"
 
 ---
+# Modern Information Risk Management Reference Architecture 
 
-# Introduction
+## Introduction
 
 Corporate information risk management is more important today than ever in establishing a strategy for a compliant and secure modern enterprise, involving enhancements across several strategic areas. Organizations often lose focus on the bigger picture of their information risk posture and it's relation to compliance. To improve the resiliency to evolving digital infomration risks, this high level information risk management architecture helps organizations achieve the following benefits:
 
@@ -50,18 +51,91 @@ While adopting organization wide approach, [Compliance Manager](compliance-manag
 
 ## Information Asset Management
 
+The Microsoft Information Protection Scanner is a program designed to detect, classify, and optionally protecting documents stored on File Shares and On-Premises SharePoint servers, as well as auto classification capabilities within Office365 apps enables your organization to classify and protect unstructured files and emails in order to allow a secure information between devices, mailboxes and apps even beyond the organization perimeter as remote work requires. You can be sure that the data are encrypted and protected from leakage.
+CASBs should help you do this by providing a wide array of capabilities that protect your environment across the following pillars:
+
+•	Visibility: detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
+•	Data security: identify and control sensitive information (DLP) shared on Office365 or other cloud storages; respond to classification labels on content.
+•	Threat protection: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware related to the use of cloud apps.
+Compliance: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
+DLP capabilities extends to natively include Microsoft Teams chat and channel messages, including private channel messages. Teams DLP applies to both text and documents shared. It acts upon a central predefined DLP policy, with the help of user tips to guide the user for smooth and educatory experience.
+You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items on the user’s devices. Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in activity explorer and you can enforce protective actions on those items via DLP policies.
+Advanced information governance allows you to retain important information and delete unimportant information by classifying information based on a retention or deletion policy or both. It includes intelligent/automated actions such as recommending policies, automatically applying labels to data, applying labels based on sensitive data types or queries, disposition review, and use of smart import filter
+Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
+When content reaches the end of its retention period, there are several reasons why you might want to review that content to decide whether it can be safely deleted ("disposed"). It enables you to:
+
+•	Suspend the deletion of relevant content in the event of litigation or an audit.
+•	Remove content from the disposition list to store in an archive, if that content has research or historical value.
+•	Assign a different retention period to the content, perhaps because the original retention settings were a temporary or provisional solution.
+•	Return the content to clients or transfer it to another organization.
+
+A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data and databases. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empowering data consumers to find valuable, trustworthy data.
+
+
 ## Internal Risk Management
+
+Use built-in machine learning templates, tuned to provide rich insights on various types of risks, out of the box—or customize for your organizational requirements. Prevent oversharing of information, IP theft and intentional data leakage and exfiltration.
 
 ## Internal Compliance Management
 
+Leverage machine learning to detect policy violations across Microsoft Teams, Microsoft Exchange, and third-party content. Some of these risks are violations to corporate or HR policies, code of conduct, …etc.
+Information barriers (IBs) are policies that an admin can configure to prevent individuals or groups from communicating with each other. IBs are useful if, for example, one department is handling information that shouldn't be shared with other departments. IBs are also useful when a group needs to be isolated or prevented from communicating with anyone outside of that group.
+
 ## Access Management
+
+Based on principle of Zero Standing Access, which means users who need privileged access for Office365 operations, must request permissions for access, and once received it is just-in-time and just-enough access to perform the job at hand.
+Customer Lockbox ensures that Microsoft cannot access your content to perform a service operation without your explicit approval. Customer Lockbox brings you into the approval workflow for requests to access your content.
+
 
 ## Audits and Legal Litigation Management
 
+The unified auditing functionality in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API.
+Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
 ## Crypto Key Management Management
+
+For extremely regulated environment and subset of data that is highly sensitive, DKE offers the use of two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
+Organizations with an MIP subscription can choose to configure their tenant with their own key, instead of a default key generated by Microsoft. This configuration is often referred to as Bring Your Own Key (BYOK).
+
+BYOK and usage logging work seamlessly with applications that integrate with the Azure Rights Management service used by MIP
+Protect the top few percent of your most sensitive information in a manner that is opaque to anyone but you. It is linked to your organization’s requirement of maintaining full control over the encryption keys and over the authorization process for the ‘top-secret’ data. However, it does come at the price of limiting any service that can reason over data or protect your data flow outside of the organization perimeter.
 
 ## Cyber Risk Management
 
+Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
+
+•	Endpoint behavioral sensors: Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender for Endpoint.
+
+•	Cloud security analytics: Leveraging big-data, device-learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products (such as Office 365), and online assets, behavioral signals are translated into insights, detections, and recommended responses to advanced threats.
+
+•	Threat intelligence: Generated by Microsoft hunters, security teams, and augmented by threat intelligence provided by partners, threat intelligence enables Defender for Endpoint to identify attacker tools, techniques, and procedures, and generate alerts when they are observed in collected sensor data.
+
+•	Threat & Vulnerability Management
+This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
+
+•	Attack surface reduction
+The attack surface reduction set of capabilities provides the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
+
+•	Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past other security defenses.
+
+•	Advanced hunting provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
+
+•	Automated investigation and remediation
+In conjunction with being able to quickly
+respond to advanced attacks, Microsoft
+Defender for Endpoint offers automatic 
+investigation and remediation capabilities that
+help reduce the volume of alerts in minutes at
+scale, and help you respond remotely
+Defender for Identity enables SecOps analysts and security professionals struggling to detect advanced identity attacks in hybrid environments to:
+
+•	Monitor users, entity behavior, and activities with learning-based analytics.
+•	Protect user identities and credentials stored in Active Directory, or remote working.
+•	Identify and investigate suspicious user activities and advanced attacks throughout the kill chain.
+Provide clear incident information on a simple timeline for fast triage
+Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools such as Microsoft teams’ content, OneDrive and SharePoint, even for 3rd party collaborators sharing malicious content to your employees on Microsoft teams.
+MCAS provides unique threat protection capabilities to protect access to SaaS apps such as Office365, it offers adaptive access control (AAC) and provide user and entity behavior analysis (UEBA).
 
 
 
