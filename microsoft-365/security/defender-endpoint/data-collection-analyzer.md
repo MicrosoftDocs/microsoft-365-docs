@@ -105,7 +105,7 @@ to force the system to crash and generate a machine memory dump. This would be
 useful for analysis of various OS stability issues.
 
 The analyzer and all the above scenario flags can be initiated remotely by
-running '**RemoteMDEClientAnalyzer.cmd', which is also bundled into the
+running 'RemoteMDEClientAnalyzer.cmd', which is also bundled into the
 analyzer toolset:
 
 ![Image of commandline with analyzer information](images/57cab9d82d08f672a92bf9e748ac9572.png)
