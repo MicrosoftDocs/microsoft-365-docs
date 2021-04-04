@@ -31,7 +31,7 @@ ms.technology: m365d
 ## Running the analyzer through GUI scenario
 
 1.  Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer)
-    tool to the macOS machine you need to investigate.
+    tool to the macOS or Linux machine you need to investigate.
 
 2.  Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -40,7 +40,7 @@ ms.technology: m365d
 `./mde_support_tool.sh -d`
 
 !Note  
-If the script does not have permissions to execute, then you'll need to first
+On Linux, if the script does not have permissions to execute, then you'll need to first
 run:  
 *chmod a+x mde_support_tool.sh*
 
