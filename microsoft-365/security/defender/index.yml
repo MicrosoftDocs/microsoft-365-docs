@@ -72,6 +72,47 @@ landingContent:
             url: microsoft-365-security-center-mde.md
           - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
             url: ../defender/microsoft-365-security-center-mdo.md
+
+ # Card
+  - title: Microsoft Defender for Identity
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Identity?
+            url: /azure-advanced-threat-protection/what-is-atp
+          - text: Microsoft Defender for Identity architecture
+            url: /azure-advanced-threat-protection/atp-architecture
+
+   # Card
+  - title: Microsoft Defender for Office 365
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Defender for Office 365?
+            url: office-365-security/defender-for-office-365.md
+          - text: Defender for Office 365 service description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+            
+  # Card
+  - title: Microsoft Defender for Endpoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Endpoint?
+            url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+          - text: Overview of capabilities
+            url: /windows/security/threat-protection/microsoft-defender-atp/overview
+             
+   # Card
+  - title: Microsoft Cloud App Security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Cloud App Security?
+            url: /cloud-app-security/what-is-cloud-app-security
+          - text: Get started with Microsoft Cloud App Security
+            url: /cloud-app-security/getting-started-with-cloud-app-security
+
 # Card
   - title: Manage incidents and alerts
     linkLists:
@@ -85,6 +126,7 @@ landingContent:
             url: m365d-autoir.md
           - text: Hunt for threats
             url: advanced-hunting-overview.md
+
 # Card
   - title: Reference
     linkLists:
