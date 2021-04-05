@@ -40,26 +40,26 @@ ms.technology: m365d
 4.  Enter the following command and press **Enter**:
 
 ```
-HardDrivePath\\MDEClientAnalyzer.cmd
+HardDrivePath\MDEClientAnalyzer.cmd
 ```
 
 **Replace HardDrivePath with the path to which the tool was extracted to, for example:**
 
-`C:\\Work\\tools\\MDATPClientAnalyzer\\MDEClientAnalyzer.cmd`
+`C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd`
 
 In addition to the above, there is also an option to [collect the analyzer
 support logs using live
-response.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-collect-support-log)
+response.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)
 
 > [!NOTE]  
-On windows 10, Windows Server 2019 or later OS editions, the client analyzer
-script calls into an executable file called `MDEClientAnalyzer.exe` to run the
-connectivity tests to cloud service URLs.  
-On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer
-script calls into an executable file called
-`MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and
-Control (CnC) URLs while also calling into Microsoft Monitoring Agent
-connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
+> On windows 10, Windows Server 2019 or later OS editions, the client analyzer
+> script calls into an executable file called `MDEClientAnalyzer.exe` to run the
+> connectivity tests to cloud service URLs.  
+> On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer
+> script calls into an executable file called
+> `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and
+> Control (CnC) URLs while also calling into Microsoft Monitoring Agent
+> connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
 ## Result package contents on Windows
 
@@ -69,7 +69,7 @@ connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 > -   Event log channel availability on the machine.
 > -   The start state of the EDR sensor (Sense is stopped if machine is not yet
     onboarded).
->-   If an advanced troubleshoot parameter was used with the analyzer command.
+>-   If an advanced troubleshooting parameter was used with the analyzer command.
 
 By default, the unpacked MDEClientAnalyzerResult.zip file will contain the
 following items.
