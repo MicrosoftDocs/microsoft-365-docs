@@ -24,7 +24,7 @@ description: "Learn how to upgrade one or many distribution lists to Microsoft 3
 
 # Upgrade distribution lists to Microsoft 365 Groups in Outlook
 
-You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+You can upgrade distribution lists to Microsoft 365 Groups in Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 You can upgrade DLs one at a time, or several at the same time.
 
@@ -34,15 +34,13 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
 ### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the [Exchange admin center](https://admin.exchange.microsoft.com).
+1. Go to the [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
 
-2. In the Exchange admin center, go to **Recipients** \> **Groups**.
+2. Select the distribution list group (also called a **distribution group**) that you want to upgrade Microsoft 365 group from the **Groups** page.
 
-3. Select the distribution list group (also called a **distribution group**) that you want to upgrade Microsoft 365 group from the **Groups** page.
+3. Select the **Upgrade distribution group** from the tool bar.
 
-4. Select the **Upgrade distribution group** from the tool bar.
-
-5. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
+4. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
 
 > [!NOTE]
 > A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distrubtion groups(s).
