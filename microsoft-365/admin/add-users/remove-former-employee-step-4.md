@@ -1,5 +1,5 @@
 ---
-title: "Step 4 - Block a former employee's access to Microsoft 365 data"
+title: "Step 4 - Block a former employee's access to Microsoft 365 services"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,10 +23,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+description: "Follow these steps to block a former employee's access to Microsoft 365 services"
 ---
 
-# Step 4 - Block a former employee's access to Microsoft 365 data
+# Step 4 - Block a former employee's access to Microsoft 365 services
 
 > [!IMPORTANT]
  > Blocking an account can take up to 24 hours to take effect. If you need to immediately prevent a user's sign-in access, you should [reset their password](reset-passwords.md) and then initiate a one-time event that will sign them out of Microsoft 365 sessions across all devices. See [Sign out now!](#sign-out-now)

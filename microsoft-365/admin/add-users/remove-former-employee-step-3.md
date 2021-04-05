@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+description: "Follow these steps to block a former employee's mobile device access"
 ---
 
 # Step 3 - Wipe and block a former employee's mobile device

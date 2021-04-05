@@ -107,10 +107,6 @@
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
-           - name: Remove a former employee
-             href: add-users/remove-former-employee.md
-           - name: Access and back up a former user’s data
-             href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore a user
              href: add-users/restore-user.md
            - name: Create template to add users
@@ -127,7 +123,7 @@
              href: add-users/remove-former-employee-step-2.md
            - name: Step 3. Wipe and block a former employee's mobile device
              href: add-users/remove-former-employee-step-3.md
-           - name: Step 4. Block a former employee's access to Microsoft 365 data
+           - name: Step 4. Block a former employee's access to Microsoft 365 services
              href: add-users/remove-former-employee-step-4.md
            - name: Step 5. Give another employee access to OneDrive and Outlook data
              href: add-users/remove-former-employee-step-5.md

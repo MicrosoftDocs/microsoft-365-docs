@@ -1,5 +1,5 @@
 ---
-title: "Step 5 - Access and back up a former user's data"
+title: "Step 5 - Give another employee access to OneDrive and Outlook data"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,10 +23,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
+description: "Follow these steps to give another employee access to the former employee's OneDrive and Outlook data"
 ---
 
-# Step 5 - Access and back up a former user's data
+# Step 5 - Give another employee access to OneDrive and Outlook data
 
 When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
   
@@ -42,7 +42,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 
 3. In the right pane, select **OneDrive**. Under **Get access to files**, select **Create link to files**.
 
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library. 
+4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library.
 
 > [!NOTE]
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
@@ -92,7 +92,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
   
 5. Select **Outlook Data File (.pst)**, and then select **Next**.
 
-6. Select the account you want to export by selecting the name or email address, such as Mailbox - Anne Weiler or anne@contoso.com. If you want to export everything in your account, including mail, calendar, contacts, tasks, and notes, make sure the **Include subfolders** check box is selected. 
+6. Select the account you want to export by selecting the name or email address, such as Mailbox - Anne Weiler or anne@contoso.com. If you want to export everything in your account, including mail, calendar, contacts, tasks, and notes, make sure the **Include subfolders** check box is selected.
 
     > [!NOTE]
     > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps.
@@ -112,12 +112,11 @@ To save the email messages, calendar, tasks, and contacts of the former employee
 
 Outlook begins the export immediately unless a new Outlook Data File (.pst) is created or a password-protected file is used.
   
-   - If you're creating an Outlook Data File (.pst), an optional password can help protect the file. When the **Create Outlook Data File** dialog box appears, type the  *password*  in the **Password** and **Verify Password** boxes, and then select **OK**. In the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
+- If you're creating an Outlook Data File (.pst), an optional password can help protect the file. When the **Create Outlook Data File** dialog box appears, type the  *password*  in the **Password** and **Verify Password** boxes, and then select **OK**. In the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
 
-  - If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
+- If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
 
-See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010. 
-  
+See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010.
 
   > [!NOTE]
   > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
