@@ -131,4 +131,4 @@ The final diagram (as with, all parts of the diagram composing it) *is subject t
 
 ## More information
 
-Special thanks from Tracy Paddock and the docs writing team, to Jason Rogers and Giulian Garruba for this content.
+Special thanks from MSFTTracyP and the docs writing team, to Jason Rogers and Giulian Garruba for this content.
