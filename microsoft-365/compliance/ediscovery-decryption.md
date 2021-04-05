@@ -38,7 +38,7 @@ The following table identifies the supported tasks that can be performed in Micr
 
 |eDiscovery task  |Content search  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Search for content in encrypted files in email and sites     |Yes      |Yes      |Yes      |
+|Search for content in encrypted files in sites     |Yes      |Yes      |Yes      |
 |Preview encrypted files attached to email     |Yes      |Yes     |Yes       |
 |Preview encrypted documents in SharePoint and OneDrive|No      |No    |Yes       |
 |Review encrypted files in a review set    |N/A      |N/A        | Yes        |
