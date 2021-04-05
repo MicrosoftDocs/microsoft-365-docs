@@ -27,7 +27,7 @@ ms.technology: m365d
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-If you have feedback or suggestions that would improve the analyzer, use either of these options:
+If you have feedback or suggestions that would help us improve the MDE Client Analyzer, please use either of these options to submit feedback:
 
 1.  Microsoft Defender for Endpoint portal (securitycenter.windows.com):
 
