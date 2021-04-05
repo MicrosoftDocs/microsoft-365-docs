@@ -27,7 +27,7 @@ Use these links to get to the pre-migration steps relevant to your organization.
 If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
-- **Custom Domains**, do [this step](#DNS-entries-for-custom-domains).
+- **Custom Domains**, do [this step](#dns-entries-for-custom-domains).
 
 - **SharePoint Online**, do [this step](#sharepoint-online).
 - **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
