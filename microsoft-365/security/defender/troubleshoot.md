@@ -47,3 +47,9 @@ For more information, see [Microsoft Defender for Identity integration](/cloud-a
 ## Where is the settings page for turning the service on?
 
 To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).
+
+## How do I create an exception for my file/URL?
+
+When a file or URL is detected as malicious and is then blocked by Microsoft 365 Defender, and that file/URL is actually not a threat, we refer to that as a false positive. You can create indicators and define exclusions to unblock and allow certain files/URLs. See [Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+
+
