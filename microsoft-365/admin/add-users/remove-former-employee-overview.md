@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow the steps in this solution to remove an employee from Microsoft 365 and secure data."
+description: "Follow the steps in this solution to remove a former employee from Microsoft 365 and secure data."
 ---
 
 # Remove or Delete a former employee
