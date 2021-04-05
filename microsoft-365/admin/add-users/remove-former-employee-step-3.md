@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to block a former employee's mobile device access"
+description: "Follow these steps to block a former employee's mobile device access."
 ---
 
 # Step 3 - Wipe and block a former employee's mobile device

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to remove the Microsoft 365 license from a former employee"
+description: "Follow these steps to remove the Microsoft 365 license from a former employee."
 ---
 
 # Step 6 - Remove and delete the Microsoft 365 license from a former employee

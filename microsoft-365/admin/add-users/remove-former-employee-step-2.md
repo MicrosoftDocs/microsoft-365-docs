@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox"
+description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox."
 ---
 
 # Step 2 - Forward a former employee's email to another employee or convert to a shared mailbox

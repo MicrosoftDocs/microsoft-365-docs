@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to give another employee access to the former employee's OneDrive and Outlook data"
+description: "Follow these steps to give another employee access to the former employee's OneDrive and Outlook data."
 ---
 
 # Step 5 - Give another employee access to OneDrive and Outlook data

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to block a former employee's access to Microsoft 365 services"
+description: "Follow these steps to block a former employee's access to Microsoft 365 services."
 ---
 
 # Step 4 - Block a former employee's access to Microsoft 365 services

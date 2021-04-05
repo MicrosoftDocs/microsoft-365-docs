@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to delete a former employee's user account"
+description: "Follow these steps to delete a former employee's user account."
 ---
 
 # Step 7 - Delete a former employee's user account
