@@ -134,7 +134,7 @@ The following section lists the changes you'll observe in Microsoft Defender for
 1.	Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results. 
     1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using “OnboardingStatus” attribute.
 
-    2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by adding ClientVersion == "1.0'"to your query. 
+    2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by using the `OnboardingStatus` filter in your query. 
 
 2.	Unmanaged devices will be assigned to existing device groups based on the defined criteria. 
 3.	In rare cases, Standard discovery might trigger alerts on network monitors or security tools. Please provide feedback, if you experience such events, to help prevent these issues from recurring. You can explicitly exclude specific targets or entire subnets from being actively probed by Standard discovery. 

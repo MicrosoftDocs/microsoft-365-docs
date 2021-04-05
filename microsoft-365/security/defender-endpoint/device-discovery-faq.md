@@ -38,7 +38,7 @@ Find answers to frequently asked questions (FAQs) about device discovery.
 This mode allows every Microsoft Defender for Endpoint onboarded device to collect network data and discover neighboring devices. Onboarded endpoints passively collect events in the network and extract device information from them. No network traffic will be initiated. Onboarded endpoints will simply extract data from every network traffic that is seen by an onboarded device. This data used to list unmanaged devices in your network.
 
 ## Can I disable Basic discovery?
- No, every Windows 10 onboarded device always runs Basic discovery.
+You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. 
 
 ## What is Standard discovery mode?
  In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
