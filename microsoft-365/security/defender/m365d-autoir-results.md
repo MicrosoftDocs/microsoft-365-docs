@@ -21,7 +21,6 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
 ---
 
 # Details and results of an automated investigation
@@ -56,8 +55,11 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
 2. In the navigation pane, choose **Action center**. 
+
 3. On either the **Pending** or **History** tab, select an item. Its flyout pane opens.
+
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
@@ -71,9 +73,13 @@ Use an incident details page to view detailed information about an incident, inc
 ![Incident details](../../media/mtp-incidentdetails-tabs.png)
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
+
 3. Select an item in the list, and then choose **Open incident page**.
+
 4. Select the **Investigations** tab, and then select an investigation in the list. Its flyout pane opens.
+
 5. Select **Open investigation page**. 
 
 ## Investigation details
