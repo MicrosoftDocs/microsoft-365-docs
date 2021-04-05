@@ -58,12 +58,9 @@ The group lifetime is specified in days and can be set to 180, 365 or to a custo
 
 If the group does not have an owner, the expiration emails will go to the specified administrator.
 
-You can set the policy for all of your groups, only selected groups, or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
+You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
-
-> [!NOTE]
-> When you set the policy for selected groups, up to 500 groups can be added to the list. If you need to add more than 500 groups, you can set the policy for all of your groups. The 500 groups limitation will not be applied in this case.
 
 ## How expiry works with the retention policy
 
