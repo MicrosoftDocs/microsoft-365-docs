@@ -54,9 +54,9 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
     - **DMARC** lets admins mark SPF and DKIM as required in their domain and enforces alignment between the results of these two technologies.
     - **ARC** is not customer configured, but builds on DMARC to work with forwarding in mailing lists, while recording an authentication chain.
 
-3. **Spoof intelligence** is capable of filtering those allowed to ‘spoof’ (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious spoofers imitating an organizational, or known external, domain. It separates legitimate ‘on behalf of’ mail from senders spoofing to deliver spam and phishing messages.
+3. **Spoof intelligence** is capable of filtering those allowed to ‘spoof’ (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious spoofers imitating an organizational, or known external, domain. It separates legitimate ‘on behalf of’ mail from senders spoofing to deliver spam and phishing messages. 
 
-**Intra-org spoof intelligence** detects and blocks spoof attempts from a domain within the organization.
+    **Intra-org spoof intelligence** detects and blocks spoof attempts from a domain within the organization.
 
 4. **Cross-domain spoof intelligence** detects and blocks spoof attempts from a domain outside of the organization.
 
