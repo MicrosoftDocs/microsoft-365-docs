@@ -125,7 +125,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 ## The filtering stack diagram
 
-The final diagram (as with, all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask for updates. For your records, this is the the stack with all the phases in order:
+The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the the stack with all the phases in order:
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.PNG" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
 
