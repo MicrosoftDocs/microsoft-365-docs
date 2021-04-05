@@ -47,8 +47,11 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 ![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
 2. In the navigation pane, choose **Action center**. 
+
 3. In the Action Center, on the **Pending** tab, select an item in the list. Its flyout pane opens.
+
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
@@ -66,19 +69,25 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 ### Undo one remediation action
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+
 2. On the **History** tab, select an action that you want to undo.
+
 3. In the pane on the right side of the screen, select **Undo**.
 
 ### Undo multiple remediation actions
 
 1. Go to the Action center (https://security.microsoft.com/action-center) and sign in.
+
 2. On the **History** tab, select the actions that you want to undo. Make sure to select items that have the same Action type. A flyout pane opens.
+
 3. In the flyout pane, select **Undo**.
 
 ### To remove a file from quarantine across multiple devices 
 
 1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in.
+
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
+
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
 
 ## Next steps
