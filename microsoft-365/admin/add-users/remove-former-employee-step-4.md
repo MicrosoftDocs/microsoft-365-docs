@@ -37,7 +37,7 @@ description: "Follow this checklist to remove an employee from Microsoft 365 and
 
 ## Block a former employee's access to email (Exchange Online)
 
-If you have email as part of your Microsoft 365 subscription, you need to sign in to the Exchange admin center to follow these steps to block your former employee from accessing their email.
+If you have email as part of your Microsoft 365 subscription, you need to sign in to the Exchange admin center and follow these steps to block your former employee from accessing their email.
   
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
