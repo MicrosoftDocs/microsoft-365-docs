@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -55,7 +55,7 @@ For a more user-friendly in-browser experience, consider using Microsoft Edge.
 
 Before trying out this feature, make sure you have the following requirements:
 
-- Windows 10 Enterprise E5 license OR Microsoft 365 E3 + Microsoft 365 E5 Security add-on.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on or the Microsoft Defender for Endpoint standalone license. 
 - Access to Microsoft Defender Security Center portal
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 
@@ -154,6 +154,8 @@ Use the time range filter at the top left of the page to select a time period. Y
 - Only Microsoft Edge is supported if your device's OS configuration is Server (cmd > Systeminfo > OS Configuration). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported 3rd party browsers.
 
 - Unassigned devices will have incorrect data shown within the report. In the Report details > Device groups pivot, you may see a row with a blank Device Group field. This group contains your unassigned devices before they get put into your specified group. The report for this row may not contain an accurate count of devices or access counts.
+
+- Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the ‘Domains’ report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
 
 ## Related topics
 

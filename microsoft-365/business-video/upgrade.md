@@ -2,8 +2,8 @@
 title: "Upgrade Windows 10 Home to Windows 10 Pro"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
