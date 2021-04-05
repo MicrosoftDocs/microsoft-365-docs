@@ -23,14 +23,6 @@ ms.custom:
 
 # Buy or manage add-ons
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 
 There are two types of add-ons:

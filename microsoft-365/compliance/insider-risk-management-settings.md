@@ -498,12 +498,14 @@ Insider risk analytics enables you to conduct an evaluation of potential insider
 - Minimal privacy requirements: Scan results and insights are returned as anonymized user activity, individual user names are not identifiable by reviewers.
 - Understand potential risks through consolidated insights: Scan results can help you quickly identify potential risk areas for your users and which policy would be best to help mitigate these risks.
 
+Check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
+
 Analytics scans for risk activity events from several sources to help identify insights into potential areas of risk. Depending on your current configuration, analytics looks for qualifying risk activities in the following areas:
 
-- Microsoft 365 audit logs: Included in all scans, this is the primary source for identifying most of the potentially risky activities.
-- Exchange Online: Included in all scans, Exchange Online activity helps identify activities where data in attachments are emailed to external contacts or services.
-- Azure Active Directory: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
-- Microsoft 365 HR data connector: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
+- **Microsoft 365 audit logs**: Included in all scans, this is the primary source for identifying most of the potentially risky activities.
+- **Exchange Online**: Included in all scans, Exchange Online activity helps identify activities where data in attachments are emailed to external contacts or services.
+- **Azure Active Directory**: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
+- **Microsoft 365 HR data connector**: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
 
 Analytics insights from scans are based on the same risk activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 30 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 30 days of activity.
 
