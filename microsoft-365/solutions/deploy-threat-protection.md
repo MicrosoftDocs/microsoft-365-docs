@@ -1,6 +1,7 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
-description: Learn how to deploy threat protection services and security capabilities across Microsoft 365 E5.
+description: Get an overview of threat protection services and security in Microsoft 365 E5.
+keywords: threat protection, security, E5, cyberattack, malware, M365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -18,7 +19,7 @@ ms.custom:
 f1.keywords: NOCSH
 ---
 
-# Deploy threat protection capabilities across Microsoft 365
+# Deploy threat protection capabilities across Microsoft 365 E5
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. 
 
