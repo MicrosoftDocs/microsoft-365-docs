@@ -2,8 +2,8 @@
 title: "Sign up for Microsoft 365 Business Premium subscription"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article

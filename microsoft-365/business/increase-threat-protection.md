@@ -2,8 +2,8 @@
 title: "Increase threat protection for Microsoft 365 for Business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,7 +29,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
-For more information, see [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Raise the level of protection against malware in mail
 
@@ -218,7 +218,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links](../security/office-365-security/atp-safe-links.md).
+For more information, see [Safe Links](../security/office-365-security/safe-links.md).
 
 ## Go to Intune admin center
 

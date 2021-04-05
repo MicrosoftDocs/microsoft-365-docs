@@ -2,8 +2,8 @@
 title: "Centralized Deployment FAQ"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -70,7 +70,7 @@ The add-in is deployed automatically to the assigned users, but they can choose 
 
 Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.  
  
-For more information, see [line-of-business add-in](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security).  
+For more information, see [line-of-business add-in](./manage-addins-in-the-admin-center.md).  
 
 ## Can admins turn off add-ins?  
 

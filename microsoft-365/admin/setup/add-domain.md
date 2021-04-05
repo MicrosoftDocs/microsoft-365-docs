@@ -30,14 +30,6 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
 
 # Add a domain to Microsoft 365
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
  **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for. 
   
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  

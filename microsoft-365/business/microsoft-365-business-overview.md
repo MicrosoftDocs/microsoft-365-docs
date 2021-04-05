@@ -2,8 +2,8 @@
 title: "Overview of Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 ms.date: 9/20/2018
 audience: Admin

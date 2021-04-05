@@ -33,6 +33,8 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - visiting a teams channel.
 
+Note that the only Yammer activity which will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
+
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
@@ -56,7 +58,7 @@ The group lifetime is specified in days and can be set to 180, 365 or to a custo
 
 If the group does not have an owner, the expiration emails will go to the specified administrator.
 
-You can set the policy for all of your groups, only selected groups, or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
+You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

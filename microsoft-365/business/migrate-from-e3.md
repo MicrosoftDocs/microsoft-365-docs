@@ -2,8 +2,8 @@
 title: "Migrate to Microsoft 365 Business from Office 365 E3"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how to move your business to Microsoft 365 Business Premium from Office 365 E3."
 ---
 
-# Migrating from Office 365 E3 to Microsoft 365 Business Premium 
+# Migrating from Office 365 E3 to Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business Premium for added security features.
 
@@ -44,7 +44,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
@@ -117,7 +117,7 @@ Microsoft 365 Business Premium has a 50 GB storage limit as it uses Exchange Onl
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business Premium, you have Defender for Office 365. See [Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) for an overview. To set up, see [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+After migrating to Microsoft 365 Business Premium, you have Defender for Office 365. See [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) for an overview. To set up, see [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### Sensitivity labels
 
