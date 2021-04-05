@@ -20,7 +20,6 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
 ---
 
