@@ -15,7 +15,6 @@ ms.prod: m365-security
 ---
 # Step-by-step threat filtering in Microsoft Defender for Office 365
 
-
 The Microsoft Defender for Office 365 (MDO) filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's MDO configuration.
 
 > [!TIP]
