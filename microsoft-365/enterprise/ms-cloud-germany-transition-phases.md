@@ -118,7 +118,7 @@ Additional considerations:
 
 
 > [!NOTE]
-> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9).
+> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md?view=o365-worldwide#ediscovery-phase-4-to-the-end-of-phase-9).
 
 ## Phase 5: Exchange Online 
 
