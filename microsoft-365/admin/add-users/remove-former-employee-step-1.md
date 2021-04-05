@@ -1,5 +1,5 @@
 ---
-title: "Step 1 - Save the contents of a former employee's mailbox"
+title: "Step 1 - Stop an employee from logging in to Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,21 +23,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to save the content of a former employee's mailbox."
+description: "Learn how block a former employee from logging in."
 ---
 
-# Step 1 - Save the contents of a former employee's mailbox
+# Step 1 - Prevent an employee from logging in
 
-Once you've blocked a user from being able to log into your organization you can save the contents of their mailbox. There are two ways you can save the contents of the former employee's mailbox.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+2. Select the box next to the user's name, and then select **Reset password**.
+3. Enter a new password, and then select **Reset**. (Don't send it to them.)
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
+
+Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
   
-1. Add the former employee's email address to your version of Outlook web app, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
-
-    OR
-
-2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
-
-    After you convert the mailbox to an "inactive mailbox," administrators, compliance officers, or records managers can use In-Place eDiscovery tools in Exchange Online to access and search the contents.
-
-    Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
-
-    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+> [!IMPORTANT]
+> If the user is in Outlook on the web, just clicking around in their mailbox, they may not be kicked out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the sign-out is initiated.
+  
+To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
+  
+For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).

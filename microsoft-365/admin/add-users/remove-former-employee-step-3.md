@@ -1,5 +1,5 @@
 ---
-title: "Step 3 - Wipe and block a former employee's mobile device"
+title: "Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,17 +23,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to block a former employee's mobile device access."
+description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox."
 ---
 
-# Step 3 - Wipe and block a former employee's mobile device
+# Step 3 - Forward a former employee's email to another employee or convert to a shared mailbox
 
-If your former employee had an organization phone, you can use the Exchange admin center to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365.
+In this step, you assign the former employee's email address to another employee, or [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md) that you've created.
+  
+- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it.
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
-2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Select the user, and under **Mobile Devices**, select **View details**.
-4. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe Data**![Wipe Device](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block**.
+ > [!IMPORTANT]
+ > If you're setting up email forwarding or a shared mailbox, at the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
+
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+2. Select the name of the employee that you want to block, and then select the **Mail** tab.
+3. Under **Email Forwarding**, select **Manage email forwarding**.
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
 5. Select **Save**.
-   > [!TIP]
-   > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
+6. Remember, don't delete the former employee's account.

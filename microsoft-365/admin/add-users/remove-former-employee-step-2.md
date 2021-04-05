@@ -1,5 +1,5 @@
 ---
-title: "Step 2 - Forward a former employee's email to another employee or convert to a shared mailbox"
+title: "Step 2 - Save the contents of a former employee's mailbox"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,23 +23,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to forward a former employee's email to another employee or convert to a shared mailbox."
+description: "Learn how to save the content of a former employee's mailbox."
 ---
 
-# Step 2 - Forward a former employee's email to another employee or convert to a shared mailbox
+# Step 2 - Save the contents of a former employee's mailbox
 
-In this step, you assign the former employee's email address to another employee, or [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md) that you've created.
+Once you've blocked a user from being able to log into your organization you can save the contents of their mailbox. There are two ways you can save the contents of the former employee's mailbox.
   
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it.
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
-- If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee.
+1. Add the former employee's email address to your version of Outlook web app, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
 
- > [!IMPORTANT]
- > If you're setting up email forwarding or a shared mailbox, at the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
+    OR
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the name of the employee that you want to block, and then select the **Mail** tab.
-3. Under **Email Forwarding**, select **Manage email forwarding**.
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
-5. Select **Save**.
-6. Remember, don't delete the former employee's account.
+2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+
+    After you convert the mailbox to an "inactive mailbox," administrators, compliance officers, or records managers can use In-Place eDiscovery tools in Exchange Online to access and search the contents.
+
+    Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+
+    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
