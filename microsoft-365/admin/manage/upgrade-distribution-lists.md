@@ -2,8 +2,8 @@
 title: "Upgrade distribution lists to Microsoft 365 Groups in Outlook"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article

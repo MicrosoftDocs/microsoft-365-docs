@@ -1,7 +1,7 @@
 ---
-title: Configure Microsoft Defender ATP for Android features
-description: Describes how to configure Microsoft Defender ATP for Android
-keywords: microsoft, defender, atp, android, configuration
+title: Configure Microsoft Defender for Endpoint for Android features
+description: Describes how to configure Microsoft Defender for Endpoint for Android
+keywords: microsoft, defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
