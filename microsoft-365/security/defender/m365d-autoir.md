@@ -91,7 +91,7 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 ## Viewing a list of investigations
 
-To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results).
+To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
 
 ## Next steps
