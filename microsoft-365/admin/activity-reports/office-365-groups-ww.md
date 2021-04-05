@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Reports in the admin center - Microsoft 365 groups"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "How policies in Microsoft 365 for business protect company data"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
