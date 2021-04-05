@@ -19,20 +19,20 @@ When you use Microsoft Managed Desktop, Microsoft provides you with a comprehens
 
 Microsoft Managed Desktop has achieved the following certifications:
 
-- [ISO 27001 Information Security Management Standards (ISMS)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
-- [ISO 27701 Privacy Information Management System (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
-- [ISO 27017 Code of Practice for Information Security Controls](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
-- [ISO 27018 Code of Practice for Protecting Personal Data in the Cloud](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
-- [ISO 9001 Quality Management Systems Standards](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
-- [ISO 20000-1 Information Technology Service Management](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
-- [ISO 22301 Business Continuity Management Standard](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
-- [Cloud Security Alliance (CSA) STAR attestation](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
-- [Cloud Security Alliance (CSA) STAR certification](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
-- [Service Organization Controls (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
-- [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
-- [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
+- [ISO 27001 Information Security Management Standards (ISMS)](/compliance/regulatory/offering-ISO-27001)
+- [ISO 27701 Privacy Information Management System (PIMS)](/compliance/regulatory/offering-iso-27701)
+- [ISO 27017 Code of Practice for Information Security Controls](/compliance/regulatory/offering-ISO-27017)
+- [ISO 27018 Code of Practice for Protecting Personal Data in the Cloud](/compliance/regulatory/offering-ISO-27018)
+- [ISO 9001 Quality Management Systems Standards](/compliance/regulatory/offering-ISO-9001)
+- [ISO 20000-1 Information Technology Service Management](/compliance/regulatory/offering-ISO-20000-1-2011)
+- [ISO 22301 Business Continuity Management Standard](/compliance/regulatory/offering-ISO-22301)
+- [Cloud Security Alliance (CSA) STAR attestation](/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [Cloud Security Alliance (CSA) STAR certification](/compliance/regulatory/offering-CSA-Star-Certification)
+- [Service Organization Controls (SOC) 1, 2, 3](/compliance/regulatory/offering-SOC)
+- [Information Security Registered Assessor Program (IRAP)](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Payment Card Industry (PCI) Data Security Standard (DSS)](/compliance/regulatory/offering-PCI-DSS)
+- [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech)
+- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](/compliance/regulatory/offering-hitrust)
 
 
 ## Auditor reports and compliance certificates
@@ -44,4 +44,4 @@ You can find relevant information, including control and technical requirements,
 
 ## Shared responsibility
 
-Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more information, see [Shared responsibility in the cloud](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
+Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more information, see [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility).

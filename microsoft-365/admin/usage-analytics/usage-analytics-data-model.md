@@ -2,8 +2,8 @@
 title: "Microsoft 365 usage analytics data model"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,10 +27,10 @@ description: "Learn how usage analytics connects to an API and provides monthly 
 
 ## Data for the Microsoft 365 usage analytics tables
 
-Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs are in preview and can be accessed at `https://reports.office.com/pbi/v1.0/\<tenantid\>` (replace the \<tenant id\> with your tenant GUID). 
+Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs that Microsoft 365 usage analytics uses to generate its data are from the various, generally-available, Graph APIs. The function of the Microsoft 365 usage analytics API by itself is not generally available.
   
 > [!NOTE]
-> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
+> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report). 
   
 This API provides information about the monthly trend of usage of the various Microsoft 365 services. For the exact data returned by the API refer to the table in the following section.
   
@@ -290,5 +290,3 @@ The table provides data about the number of Office subscription activations acro
 |WinRtCount  <br/> |Number of activations per service plan for Windows Mobile device by the end of the timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
-   
-

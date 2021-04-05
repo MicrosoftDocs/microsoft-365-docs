@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 
@@ -27,7 +27,7 @@ While all licensed users who can view topics will have access to the topic cente
 
 ## Where is my Topic center
 
-The topic center is created during Viva Topics setup. After setup completes, an admin can find the URL on the [Topic center management page](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
+The topic center is created during Viva Topics setup. After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).
 
 
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
@@ -89,13 +89,6 @@ If you have **Create and edit topics** permissions, you can:
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

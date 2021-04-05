@@ -2,8 +2,8 @@
 title: "Navigate and utilize the reports in Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,14 +23,6 @@ description: "Learn how to view the reports using navigation tabs and filters."
 ---
 
 # Navigate and utilize the reports in Microsoft 365 usage analytics
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 The dashboard provides you with a quick overview of the main usage and adoption metrics. By selecting the top-level metrics, you can access reports that provide more details and insights. Each report tab contains data visualizations specific to an aspect of usage and adoption for your organization. The data collected is explained in the title of each report and a tile appears that contains further information about the visualizations on the report tab that you are viewing.
 
@@ -72,14 +64,14 @@ To learn how to customize the reports, see [Customizing the reports in Microsoft
 
 You can find lots of additional information in the Power BI help documentation:
 
-- [Power BI basic concepts](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Power BI basic concepts](/power-bi/service-basic-concepts)
 
     Learn about dashboard, datasets, reports, and other Power BI concepts.
 
-- [Get started with Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Get started with Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.
 
-- [Share dashboards and reports](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [Share dashboards and reports](/power-bi/service-share-dashboards)
 
     Learn how to share reports with your colleagues or people outside your organization. You can also share the report or a filtered version of the report.

@@ -27,14 +27,6 @@ description: "Learn how to buy a domain name in Microsoft 365."
 
 # Buy a domain name
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
@@ -125,4 +117,4 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
 
 [Domains FAQ](../setup/domains-faq.yml)
 
-[Update DNS records to keep your website with your current hosting provider](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).
+[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md).

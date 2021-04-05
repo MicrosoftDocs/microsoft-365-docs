@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 localization_priority: None
 description: "Overview of Viva Topics."
 ---
@@ -61,7 +61,7 @@ When a topic is identified and AI determines that it has enough information for 
 
 Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.
 
-See [Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
 
 ## Roles
 
@@ -94,7 +94,7 @@ See [Manage topics in the Topic center](manage-topics.md) for more information.
 
 ## Admin controls
 
-Admin controls in the Microsoft 365 admin center allow you to manage your knowledge network. They allow a Microsoft 365 global or SharePoint administrator to:
+Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics. They allow a Microsoft 365 global or SharePoint administrator to:
 
 - Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.
 - Control which SharePoint sites will be crawled to identify topics.
@@ -103,7 +103,7 @@ Admin controls in the Microsoft 365 admin center allow you to manage your knowle
 - Control which users can create and edit topics.
 - Control which user can view topics.
 
-See [assign user permissions](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [manage topic visibility](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules), and [manage topic discovery](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) for more information about admin controls.
+See [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md) for more information about admin controls.
 
 ## Topic curation & feedback
 
@@ -115,8 +115,7 @@ Users that you allow access to see topics in their daily work might be asked if 
 
 Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
 
-See [Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
 
 
 ## See also
-
