@@ -96,9 +96,30 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 10. **Linked content detonation** treats every URL linking to a file in an email as an attachment, asynchronously sandboxing the file at the time of delivery.
 
-11. **URL Detonation** 
+11. **URL Detonation** happens when upstream anti-phishing technology finds a message or URL to be suspicious. URL detonation sandboxes the URLs in the message at the time of delivery.
 
-## Phase 4 - 
+## Phase 4 - Post-Delivery Protection
+
+The last stage takes place after mail or file delivery, acting on mail that is in various mailboxes and files and links that appear in clients like Microsoft Teams.
+
+1. **Safe Links** is MDO’s time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
+
+2. **Phish Zero-Hour Auto-purge (ZAP)** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
+
+3. **Malware ZAP** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
+
+4. **Spam ZAP** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
+
+5. **Campaign Views** let administrators see the big picture of an attack, faster and more completely, than any team could without automation. Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns, and then allows admins to investigate them from start to end, including targets, impacts, and flows, that are also available in a downloadable campaign write-up.
+
+6. **The Report Message add-ins** enable people to easily report false positives (good email, mistakenly marked as *bad*) or false negatives (bad email marked as *good*) to Microsoft for further analysis.
+
+7. **Safe Links for Office clients** offers the same Safe links time-of-click protection, natively, inside of Office clients like Word, PowerPoint, and Excel. 
+
+8. **Protection for OneDrive, SharePoint, and Teams** offers the same Safe Attachments protection against malicious files, natively, inside of OneDrive, SharePoint, and Microsoft Teams.
+
+9. When a URL that points to a file is selected post delivery, **linked content detonation** displays a warning page until the sandboxing of the file is complete, and the URL is found to be safe.
+
 
 ## The complete diagram
 
