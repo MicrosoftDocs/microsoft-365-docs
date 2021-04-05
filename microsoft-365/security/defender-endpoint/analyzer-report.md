@@ -49,13 +49,13 @@ failing to reach one of the required Microsoft Defender for Endpoint URLs:
 -   On **Check Results Summary** you will have an aggregated count for error,
     warning, or informational events detected by the analyzer.
 
--   On the Detailed Results,** you will see a list (sorted by severity) with
+-   On the **Detailed Results** you will see a list (sorted by severity) with
     the results and the guidance based on the observations made by the analyzer.
 
 ## Open a support ticket to Microsoft and include the Analyzer results
 
 To include analyzer result files [when opening a support
-ticket](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/contact-support#open-a-service-request),
+ticket](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/contact-support#open-a-service-request),
 make sure you use the **Attachments** section and include the
 `MDEClientAnalyzerResult.zip` file:
 
