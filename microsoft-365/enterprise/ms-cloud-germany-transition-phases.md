@@ -118,7 +118,7 @@ Additional considerations:
 
 
 > [!NOTE]
-> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md?view=o365-worldwide#ediscovery-phase-4-to-the-end-of-phase-9).
+> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md).
 
 ## Phase 5: Exchange Online 
 
@@ -128,7 +128,7 @@ If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  *
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](###Exchange-Online-PowerShell)
+If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#Exchange-Online-PowerShell)
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -265,4 +265,4 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 ## Post migration
 
-Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#post-migration) article and execute them accordingly.
+Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md) article and execute them accordingly.
