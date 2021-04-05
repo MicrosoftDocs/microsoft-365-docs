@@ -2,8 +2,8 @@
 title: "Start and pin chats in Microsoft Teams"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
