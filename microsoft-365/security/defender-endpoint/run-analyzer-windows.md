@@ -49,17 +49,11 @@ HardDrivePath\MDEClientAnalyzer.cmd
 
 In addition to the above, there is also an option to [collect the analyzer
 support logs using live
-response.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)
+response.](troubleshoot-collect-support-log.md).
 
 > [!NOTE]  
-> On windows 10, Windows Server 2019 or later OS editions, the client analyzer
-> script calls into an executable file called `MDEClientAnalyzer.exe` to run the
-> connectivity tests to cloud service URLs.  
-> On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer
-> script calls into an executable file called
-> `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and
-> Control (CnC) URLs while also calling into Microsoft Monitoring Agent
-> connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
+> On windows 10, Windows Server 2019 or later OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs. <br> <br> 
+> On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
 ## Result package contents on Windows
 
