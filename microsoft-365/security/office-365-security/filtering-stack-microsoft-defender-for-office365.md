@@ -70,11 +70,35 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
 
 9. **Domain impersonation** detects domains that are similar to the recipient’s domain and that attempt to look like an internal domain. For example, this impersonation *tracye@liwαre.com* for *tracye@litware.com*.
 
+## Phase 3 - Content Filtering
 
+In this phase the filtering stack begins to handle the specific contents of the mail, including its hyperlinks and attachments.
 
-## Phase 3
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.PNG" alt-text="Phase 1 of filtering in MDO is Edge Protection.":::
 
-## Phase 4
+1. **Transport rules** also known as Mailflow-, or Exchange Transport Rules, allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow / transport rules.
+
+2. **Microsoft Defender Antivirus** and two *third-party Antivirus engines* are used to detect all known malware in attachments.
+
+3. The anti-virus (AV) engines are also used to true-type all attachments, so that **Type blocking** can block all attachments of types the admin specifies.
+
+4. Whenever Microsoft Defender for Office 365 (MDO) detects a malicious attachment, the file’s hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
+
+5. **Heuristic clustering** can determine that a file is suspicious based on delivery heuristics. When a suspicious attachment is found, the entire campaign pauses, and the file is sandboxed. If the file is found to be malicious, the entire campaign is blocked.
+
+6. **Machine learning models** act on the header, body content, and URLs of a message to detect phishing attempts.
+
+7. Microsoft uses a determination of reputation from URL sandboxing as well as URL reputation from third party feeds in **URL reputation blocking**, to block any message with a known malicious URL.
+
+8. **Content heuristics** can detect suspicious messages based on structure and word frequency within the body of the message, using machine learning models.
+
+9. **Safe attachments** sandboxes every attachment for MDO customers, using dynamic analysis to detect never-before seen threats.
+
+10. **Linked content detonation** treats every URL linking to a file in an email as an attachment, asynchronously sandboxing the file at the time of delivery.
+
+11. **URL Detonation** 
+
+## Phase 4 - 
 
 ## The complete diagram
 
