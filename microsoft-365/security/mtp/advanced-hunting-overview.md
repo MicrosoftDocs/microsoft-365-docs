@@ -61,7 +61,7 @@ Users need one of the following levels of permissions to access Microsoft Defend
 Users with full access can save, modify, and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
 
 **Read-only access**:
-Users with read-only access can log in and view all alerts and related information. They will not be able to save, modify, or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
+Users with read-only access can log in and view all alerts and related information. They will not be able to save, modify, or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" built-in role in AAD.
 
 ## Get started with advanced hunting
 
@@ -95,4 +95,3 @@ Time information in advanced hunting is in the UTC time zone.
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)
-
