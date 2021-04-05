@@ -116,7 +116,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have one of the Azure Information Protection clients installed ([unified labeling client](/azure/information-protection/rms-client/aip-clientv2) or [classic client](/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is turned off in their Office apps. 
+If users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2), by default, the built-in labeling client is turned off in their Office apps. 
 
 To use built-in labeling rather than the Azure Information Protection client for Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 

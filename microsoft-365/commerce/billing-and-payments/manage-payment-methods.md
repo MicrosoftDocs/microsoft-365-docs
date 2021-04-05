@@ -26,12 +26,6 @@ ms.date:
 
 # Manage payment methods
 
-::: moniker range="o365-21vianet"
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see
-[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-::: moniker-end
-
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 
 If your business account has a billing profile, and you are a billing profile owner or billing profile contributor, you can use the billing profile that's backed by a credit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage billing profiles](manage-billing-profiles.md).
