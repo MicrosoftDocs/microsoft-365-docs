@@ -9,6 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 #  Prepare on-premises resources access for Microsoft Managed Desktop
@@ -72,3 +73,14 @@ Microsoft Managed Desktop devices cannot connect to printers that are published 
 While printers can't be automatically discovered in a cloud only environment, your users can use on-premises printers by using the printer path or printer queue path, as long as the devices have access to an on-premises domain controller.
 
 <!--add fuller material on printers when available-->
+## Steps to get ready
+
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [Readiness assessment tools](readiness-assessment-tool.md).
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md) (This article)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)

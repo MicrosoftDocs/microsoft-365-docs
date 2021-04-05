@@ -37,10 +37,11 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 ### Minimum software requirements
 
 * **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later
-* **Office**: Office Current Channel Build version 2011 16.0.13530.10000 or later. Both 32-bit and 64-bit versions of Office are supported.
+* **Office**: Office Current Channel and Monthly Enterprise Channel, Build version 2011 16.0.13530.10000 or later. Both 32-bit and 64-bit versions of Office are supported.
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). To learn more about Office update channels, see [Overview of update channels for Microsoft 365](/deployoffice/overview-update-channels).
+For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Also, please refer to your computer manufacturer's guides on how to enable virtualization technology.
+To learn more about Office update channels, see [Overview of update channels for Microsoft 365](/deployoffice/overview-update-channels).
 
 ### Licensing requirements
 
@@ -73,6 +74,9 @@ For detailed system requirements, refer to [System requirements for Microsoft De
 4. Restart the system.
 
 ### Set Diagnostics & feedback to send full data
+
+> [!NOTE]
+> This is not required, however, configuring optional diagnostics data will help diagnose reported issues.
 
 This step ensures that the data necessary to identify and fix problems is
 reaching Microsoft. Follow these steps to enable diagnostics on your Windows
@@ -114,7 +118,9 @@ Upon being opened, the file should display a few visual indicators that the file
 
 ## Configure Application Guard for Office
 
-Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the Office cloud policy service.
+Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
+See configuration set by your administrator by reviewing group policy settings in  **User Configuration\\Administrative Templates\\Microsoft Office 2016\\Security Settings\\Trust Center\\Application Guard**.
+
 
 > [!NOTE]
 > Configuring these policies can disable some functionalities for files opened in Application Guard for Office.
@@ -182,13 +188,15 @@ You may also submit feedback from within Office if the issue happens when Office
 
 Application Guard for Office is integrated with Microsoft Defender for Endpoint to provide monitoring and alerting on malicious activity that happens in the isolated environment.
 
+[Safe Documents in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) is a feature that uses Microsoft Defender for Endpoint to scan documents opened in Application Guard for Office. For an additional layer of protection, users can't leave Application Guard for Office until the results of the scan have been determined.
+
 Microsoft Defender for Endpoint is a security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. For more details about this platform, see [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). To learn more about onboarding devices to this platform, see [Onboard devices to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint. For more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
+You can also configure Microsoft Defender for Office 365 to work with Defender for Endpoint. For more info, refer to [Integrate Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
 
 ## Limitations and considerations
 
-* Application Guard for Office is a restricted mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access will fail and produce a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
+* Application Guard for Office is a protected mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access will fail and produce a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
   ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
 
@@ -226,4 +234,5 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * Pasting rich text format (RTF) content or images in Office documents opened with Application Guard isn't supported at this time.
-* Updates to .NET cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types of Information Rights Management (IRM), CSV, or HTML.
+* Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/8/2019
+ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 
@@ -29,8 +29,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  **Summary:** This article describes how you use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 
@@ -56,11 +56,11 @@ In this article:
 
 - [How DKIM works better than SPF alone to prevent malicious spoofing](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [Manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+- [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
 - [Steps you need to do to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
-- [To configure DKIM for more than one custom domain](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+- [Steps to configure DKIM for more than one custom domain](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
 - [Disabling the DKIM signing policy for a custom domain](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
 
@@ -81,7 +81,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 The nitty gritty: DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then use the **d=** field to look up the public key from DNS and authenticate the message. If the message is verified, the DKIM check passes.
 
-## Manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
+## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>
 
 Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048 in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The steps below are for two use-cases, please choose the one that best fits your configuration.
@@ -188,7 +188,7 @@ TTL:                3600
 > It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless.
 
 
-### Enable DKIM signing for your custom domain
+### Steps to enable DKIM signing for your custom domain
 <a name="EnableDKIMinO365"> </a>
 
 Once you have published the CNAME records in DNS, you are ready to enable DKIM signing through Microsoft 365. You can do this either through the Microsoft 365 admin center or by using PowerShell.
@@ -197,13 +197,13 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 1. [Sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account.
 
-2. Select the app launcher icon in the upper-left and choose **Admin**.
+2. Go to [protection.office.com](https://protection.office.com) or [security.microsoft.com](https://security.microsoft.com) depending on which portal you use, and follow the path below.
 
-3. In the lower-left navigation, expand **Admin** and choose **Exchange**.
+|protection.office.com  |security.microsoft.com  |
+|---------|---------|
+| Threat Management > Policy > Additional Policies > DKIM     | Email & Collaboration > Policies & rules > Threat policies > Additional policies > DKIM        | 
 
-4. Go to **Protection** \> **dkim**.
-
-5. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
+3. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
