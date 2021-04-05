@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP for Linux
+title: Microsoft Defender for Endpoint for Linux
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -34,7 +34,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Linux is likely to cause performance problems and unpredictable system errors.
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
 
 ## How to install Microsoft Defender for Endpoint for Linux
 
@@ -78,6 +78,11 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > Running Defender for Endpoint for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- Memory: 1GB
+    > [!NOTE]
+    > Please make sure that you have free disk space in /var.
+
 - The solution currently provides real-time protection for the following file system types:
 
   - `btrfs`
@@ -100,8 +105,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
-  >[!NOTE]
-  > System events captured by rules added to `audit.logs` will add to audit logs and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endopoint for Linux will be tagged with `mdatp` key.
+  > [!NOTE]
+  > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint for Linux will be tagged with `mdatp` key.
 
 ### Network connections
 

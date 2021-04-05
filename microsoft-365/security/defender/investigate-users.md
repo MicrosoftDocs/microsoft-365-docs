@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: dansimp
 ms.date: 
 audience: ITPro
