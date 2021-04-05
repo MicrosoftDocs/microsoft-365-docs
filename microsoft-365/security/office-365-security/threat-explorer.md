@@ -109,6 +109,8 @@ Tags information is also shown in the URL clicks flyout. To view it, go to Phish
 
 > [!div class="mx-imgBorder"]
 > ![URL tags](../../media/tags-urls.png)
+> 
+Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## Improvements to the threat hunting experience (upcoming)
 
