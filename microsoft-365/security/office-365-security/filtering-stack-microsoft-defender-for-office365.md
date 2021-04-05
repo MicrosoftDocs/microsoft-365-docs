@@ -18,7 +18,7 @@ ms.prod: m365-security
 The Microsoft Defender for Office 365 (MDO) filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's MDO configuration.
 
 > [!TIP]
-> Stay tuned till the end of this article for the unified graphic.
+> Stay tuned till the end of this article for a *unified* graphic of all 4 phases of MDO protection!
 
 ## Phase 1 - Edge Protection
 
@@ -125,10 +125,12 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 ## The filtering stack diagram
 
-The final diagram (as with, all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the feedback option you'll find at the bottom if you need to ask for updates. For your records, this is the the stack with all the phases in order:
+The final diagram (as with, all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask for updates. For your records, this is the the stack with all the phases in order:
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.PNG" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
 
 ## More information
 
-Special thanks from MSFTTracyP and the docs writing team, to Jason Rogers and Giulian Garruba for this content.
+Do you need to set up MDO ***right now***? Use this stack, *now*, with [this step-by-step](protect-against-threats.md) to start protecting your organization.
+
+*Special thanks from MSFTTracyP and the docs writing team, to Jason Rogers and Giulian Garruba for this content*.
