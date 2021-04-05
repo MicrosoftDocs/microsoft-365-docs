@@ -1,5 +1,5 @@
 ---
-title: "Pre-work for the migration from Microsoft Cloud Deutschland"
+title: "Pre-migration activities for the migration from Microsoft Cloud Deutschland"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -20,21 +20,25 @@ ms.custom:
 description: "Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# Pre-work for the migration from Microsoft Cloud Deutschland
+# Pre-migration activities for the migration from Microsoft Cloud Deutschland
 
-Use these links to get to the pre-work steps relevant to your organization:
+Use these links to get to the pre-migration steps relevant to your organization.
 
-- For **all customers** using Office 365 in Microsoft Cloud Deutschland, do [these steps](#general-tenant-migration-considerations).
-- For **DNS changes**, do [this step](#dns).
-- If you're using **Active Directory Federation Services** on premises, do [these steps](#active-directory-federation-services-ad-fs).
-- If you're using **SharePoint Online**, do [this step](#sharepoint-online).
-- If you're using **Exchange Online** or **Exchange hybrid**, do [this step](#exchange-online).
-- If you 're using **Skype for Business Online**, do [this step](#skype-for-business-online)
-- If you're using a third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
-- If you're using **third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
-- If you're also using **Dynamics 365**, do [this step](#dynamics365).
-- If you're also using **Power BI**, do [this step](#power-bi).
-- If you're also using **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
+If you're using
+
+- **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
+- **Custom Domains**, do [this step](#dns-entries-for-custom-domains).
+
+- **SharePoint Online**, do [this step](#sharepoint-online).
+- **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
+- **Skype for Business Online**, do [this step](#skype-for-business-online).
+- **Dynamics 365**, do [this step](#dynamics365).
+- **Power BI**, do [this step](#power-bi).
+
+- **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
+- **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
+- A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
+- **Azure services** with your Office 365 subscription, do [this step](#microsoft-azure).
 
 ## General tenant migration considerations
 
@@ -54,7 +58,7 @@ Office 365 tenant and user identifiers are preserved during migration. Azure AD 
 | Create organization-wide [retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention) to protect from inadvertent deletion of content during migration.  |<ul><li>To ensure that content isn't inadvertently deleted by end users during the migration, customers may choose to enable an organization-wide retention policy. </li><li>Although retention isn't required, since holds placed at anytime during the migration should work as expected, having a retention policy is a back-up safety mechanism. At the same time, a retention policy might not be used by all customers, especially those who are concerned about over preservation.</li></ul>| Apply retention policy as described in [Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention-policies). Failures of the service or client software can occur if this is not done before Phase 4 of 9. </li></ul>|
 |||||
 
-## DNS
+## DNS entries for custom domains
 
 <!-- before phase 9 -->
 
@@ -67,7 +71,7 @@ In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces th
 To verify if you have set a CNAME in your DNS namespace, follow the steps below and replace _contoso.com_ with your own domain name:
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 If the command line returns a DNS record, remove the _msoid_ CNAME from your domain.
