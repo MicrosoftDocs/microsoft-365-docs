@@ -197,13 +197,13 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 1. [Sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account.
 
-2. Select the app launcher icon in the upper-left and choose **Admin**.
+2. Go to [protection.office.com](https://protection.office.com) or [security.microsoft.com](https://security.microsoft.com) depending on which portal you use, and follow the path below.
 
-3. In the lower-left navigation, expand **Admin** and choose **Exchange**.
+|protection.office.com  |security.microsoft.com  |
+|---------|---------|
+| Threat Management > Policy > Additional Policies > DKIM     | Email & Collaboration > Policies & rules > Threat policies > Additional policies > DKIM        | 
 
-4. Go to **Protection** \> **dkim**.
-
-5. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
+3. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
