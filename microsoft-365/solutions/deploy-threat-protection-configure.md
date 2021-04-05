@@ -1,6 +1,7 @@
 ---
 title: Steps to configure threat protection capabilities across Microsoft 365
-description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
+description: Use this article as a guide for implementing your threat protection solution. Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
+keywords: security, setup, configuration, Microsoft 365 E5, advanced threat protection
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
