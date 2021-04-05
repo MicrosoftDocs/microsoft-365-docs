@@ -79,8 +79,7 @@ with most verbose -trace flags.
 
 **-t** - Starts verbose trace of all client-side components relevant to Endpoint
 DLP. This is useful for scenarios where [DLP
-actions](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide#endpoint-activities-you-can-monitor-and-take-action-on)
-are not happening as expected for files.
+actions](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) are not happening as expected for files.
 
 **-q** - Calls into DLPDiagnose.ps1 script from the analyzer 'Tools' directory
 that validates the basic configuration and requirements for Endpoint DLP.

@@ -55,7 +55,7 @@ failing to reach one of the required Microsoft Defender for Endpoint URLs:
 ## Open a support ticket to Microsoft and include the Analyzer results
 
 To include analyzer result files [when opening a support
-ticket](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/contact-support#open-a-service-request),
+ticket](contact-support.md#open-a-service-request),
 make sure you use the **Attachments** section and include the
 `MDEClientAnalyzerResult.zip` file:
 
