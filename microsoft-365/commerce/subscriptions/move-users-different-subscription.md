@@ -24,14 +24,6 @@ ms.date: 07/01/2020
 
 # Move users to a different subscription
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[Overview of Microsoft 365 admin center](../../business-video/admin-center-overview.md).
-
-::: moniker-end
-
 If you have more than one subscription, have users with a license for one subscription, but want to move them to another subscription, you can replace their existing license with a different one.
 
 ## Before you begin
@@ -44,6 +36,20 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+
+::: moniker-end
+
 2. Select the circles next to the names of the users that you want to replace existing licenses for.
 
 3. At the top, select **Manage product licenses**.
@@ -51,44 +57,6 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 4. In the **Manage product licenses** pane, select **Replace**  and select the licenses that you would like to assign to the users.
 
 5. At the bottom, select **Save Changes** \> **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-2. Select the boxes next to the names of the users you want to replace existing licenses for.
-
-3. In the **Bulk actions** pane, select **Edit product licenses**.
-
-4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
-
-5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
-
-    You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
-
-6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close** \> **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-2. Select the boxes next to the names of the users you want to replace existing licenses for.
-
-3. In the **Bulk actions** pane, select **Edit product licenses**.
-
-4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
-
-5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
-
-    You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
-
-6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close** \> **Close**.
-
-::: moniker-end
 
 ## Next steps
 
