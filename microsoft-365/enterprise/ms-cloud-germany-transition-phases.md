@@ -128,7 +128,7 @@ If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  *
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#Exchange-Online-PowerShell)
+If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#exchange-online-powershell)
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
