@@ -64,7 +64,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
-In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
+In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
 
 In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
