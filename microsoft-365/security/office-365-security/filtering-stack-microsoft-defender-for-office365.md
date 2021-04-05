@@ -1,5 +1,5 @@
 ---
-title: Threat filtering stack in Microsoft Defender for Office 365 
+title: Step-by-Step Threat filtering stack in Microsoft Defender for Office 365 
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -13,7 +13,7 @@ description: Follow the path of an incoming message through the threat filtering
 ms.technology: mdo
 ms.prod: m365-security
 ---
-# Threat filtering in Microsoft Defender for Office 365, step-by-step
+# Step-by-step threat filtering in Microsoft Defender for Office 365
 
 > [!TIP]
 > Stay tuned till the end of this article for the unified graphic.
