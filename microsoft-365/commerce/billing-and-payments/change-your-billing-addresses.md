@@ -78,6 +78,8 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
 
+If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+
 2. On the **Products** tab, select the subscription that you want to change.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
 4. In the **Edit service usage address** pane, update your address, then select **Save**.
