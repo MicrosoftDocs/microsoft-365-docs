@@ -2,8 +2,8 @@
 title: "Difference between the setup wizard and the Setup page"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

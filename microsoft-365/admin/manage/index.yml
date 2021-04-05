@@ -8,8 +8,8 @@ metadata:
   description: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: kwekua #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kwekua #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -74,7 +74,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Teams admin documentation
-            url: /microsoftteams/
+            url: https://docs.microsoft.com/microsoftteams/
           - text: Use Outlook and Teams together 
             url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
       - linkListType: learn

@@ -428,7 +428,9 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - Each Custom Sensitive Information Type can have a maximum of 2048 keywords total.
 
-- The maximum size of Keyword Dictionaries in a single tenant is 100 kilobytes compressed. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
+- The maximum size of Keyword Dictionaries in a single tenant is 1 MB compressed. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
+
+- A maximum of 50 keyword dictionary based sensitive information types are allowed in a tenant.
 
 - Ensure each Entity element contains a recommendedConfidence attribute.
 

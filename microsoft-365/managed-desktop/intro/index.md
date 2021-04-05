@@ -3,6 +3,7 @@ title: Is Microsoft Managed Desktop right for you?
 description:  Orientation for what the service is and shortcuts to articles for different audiences
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
@@ -52,19 +53,22 @@ Your IT admins benefit from these features:
 Microsoft Managed Desktop takes on the burden of managing registered devices and the Microsoft software they use.
 
 - **Hardware:** Instead of your IT department having to research and test devices (and their drivers), specific devices are carefully tested by Microsoft Managed Desktop, resulting in a curated [list of devices](../service-description/device-list.md) that meet enterprise-level performance requirements and are guaranteed to work with the service. You can either obtain devices yourself (or work with a partner) or reuse devices you already have, provided they are on the approved list. Registering devices is easy and straightforward, and before they're deployed, you can also [customize](../working-with-managed-desktop/config-setting-overview.md) certain aspects of the device experience for your users.
+
 - **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Microsoft 365 Apps for enterprise updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
-- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps Microsoft helps you deploy them and can assist with [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) if needed. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
+
+- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps, Microsoft helps you deploy them through the [FastTrack](https://www.microsoft.com/FastTrack) program. Additionally, Microsoft's [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) program can help remediate any app compatibility issues that arise when migrating to the latest versions of our products. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## Device monitoring
 
 We help maintain the security of your devices with a dedicated security operations center that monitors your devices and uses data from the unique threats that Microsoft analyzes each month. These security features are built in instead of added on later.
 
-We also monitor device health and provide you with insights about device performance. Learn more at [Microsoft Managed Desktop operations and monitoring](../service-description/operations-and-monitoring.md)
+We also monitor device health and provide you with insights about device performance. Learn more at [Microsoft Managed Desktop operations and monitoring](../service-description/operations-and-monitoring.md).
 
 
 ## Need more details?
-For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam), a [Forrester Total Economic Impact case study](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
+
+For more about the value of Microsoft Managed Desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam), a [Forrester Total Economic Impact case study](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
 
 If Microsoft Managed Desktop seems right for your organization, you can delve into further documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 

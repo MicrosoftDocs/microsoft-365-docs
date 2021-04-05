@@ -2,8 +2,8 @@
 title: "Choose a Microsoft 365 subscription"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -49,7 +49,6 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 | **Social, video, sites** | Stream, Yammer, Planner, SharePoint Online\*, PowerApps\*, Microsoft Flow\* | Yes | Yes | Yes |
 | **Business apps** | Scheduling apps - Bookings\*\* | Yes | Yes | Yes |
 |
- | Business apps - MileIQ\*\* | Yes | Yes | No |
 | **Threat Protection** | Office 365 Advanced Threat Protection | No | Yes | No |
  | Windows Exploit Guard enforcement | No | Yes | No |
 | **Identity Management** | Self-service password reset for hybrid Azure Active Directory accounts | No | Yes | No |

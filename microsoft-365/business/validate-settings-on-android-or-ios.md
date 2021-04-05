@@ -2,8 +2,8 @@
 title: "Validate app protection settings on Android or iOS devices"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
