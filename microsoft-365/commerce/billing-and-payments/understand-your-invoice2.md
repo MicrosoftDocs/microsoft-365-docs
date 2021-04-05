@@ -114,13 +114,11 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
 
-2. If you're in **Table** view, select **Cards** to switch views.
+1. On the **Products** tab, select the subscription that you want to change.
 
-3. Find the subscription that you want to change.
+1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**. 
 
-4. In the **Billing** section, next to **invoice**, select **Edit**.
-
-5. At the bottom of the **Edit payment details** pane, enter your PO number, then select **Save**.
+1. At the bottom of the **Edit details for paying by voice** pane, enter your PO number, and then select **Save**.
 
 ## Related articles
 

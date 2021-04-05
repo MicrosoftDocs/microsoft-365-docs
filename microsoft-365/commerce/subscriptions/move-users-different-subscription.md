@@ -28,7 +28,7 @@ If you have more than one subscription, have users with a license for one subscr
 
 ## Before you begin
 
-You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md?view=o365-worldwide).
+You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Move users to a different subscription
 

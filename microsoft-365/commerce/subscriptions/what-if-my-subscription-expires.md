@@ -85,7 +85,7 @@ Before the subscription actually reaches its expiration date, you have a few opt
 
   - If you're an Open Volume Licensing customer working with a partner, you can let your subscription expire by taking no action.
 
-  - If you're a Office 365 Small Business Premium customer, and you prepaid for Office 365 and activated it with a product key, you can let your subscription expire by taking no action.
+  - If you're a Microsoft 365 Business Standard customer, and you prepaid for your subscription and activated it with a product key, you can let your subscription expire by taking no action.
 
 - **Cancel before the subscription expires.** For details, see [Cancel your subscription](cancel-your-subscription.md).
 

@@ -46,6 +46,16 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** > **Payment methods** page.
+::: moniker-end
+
 2. select **Edit billing account information**.
 
 3. Update your organization information, then select **Save**.
@@ -53,6 +63,16 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 ## Change your Bill-To address
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+
+::: moniker range="o365-germany"
+
+In the admin center, go to the **Billing** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+In the admin center, go to the **Billing** > **Payment methods** page.
+::: moniker-end
 
 2. Select the credit card or bank account that you want to change.
 
@@ -102,7 +122,21 @@ By default, your organization's billing notifications are sent to the Microsoft 
 
 You can also change the alternate email address of other global and billing admins in your organization.
   
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the [Billing notifications](https://go.microsoft.com/fwlink/p/?linkid=853213) page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+In the admin center, go to the [Billing notifications](https://go.microsoft.com/fwlink/p/?linkid=853215) page.
+::: moniker-end
 
 2. On the **Billing notifications** page, select the admin you want to change.
 
