@@ -18,7 +18,7 @@ localization_priority: Normal
 
 ---
 
-# Create a new topic 
+# Create a new topic in Microsoft Viva Topics
 
 In Viva Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 
@@ -30,7 +30,7 @@ In Viva Topics, you can create a new topic if one is not discovered through inde
 
 To create a new topic, you need to:
 - Have a Viva Topics license.
-- Have permissions to [**Who can create or edit topics**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Have permissions to [**Who can create or edit topics**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Users who have permission to manage topics in the topic center (knowledge managers) already have permissions to create and edit topics.
@@ -63,7 +63,7 @@ You can create a new topic from two locations:
 
     ![Description of the topic](../media/knowledge-management/description.png)</br>
 
-4. In the <b>Pinned people</b> section, you can "pin" a person to show them as a subject matter expert on the topic. Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card. You can also drag the person to change the order that the list of people appear.
+4. In the <b>Pinned people</b> section, you can "pin" a person to show them as having a connection to the topic (for example, an owner of a connected resource). Begin by typing their name or email address in the <b>add a new user</b> box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the <b>Remove from list</b> icon on the user card. You can also drag the person to change the order that the list of people appear.
  
     ![Pinned people](../media/knowledge-management/pinned-people.png)</br>
 
@@ -123,13 +123,6 @@ After you publish the page, the topic name, alternate name, description, and pin
 
 
 ## See also
-
-
-
-  
-
-
-
 
 
 

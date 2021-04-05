@@ -131,10 +131,10 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 
 ## Related articles
 
-[Reset passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[Reset passwords](../add-users/reset-passwords.md)
 
-[Set an individual user's password to never expire](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md)
 
-[Let users reset their own passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
 
-[Resend a user's password - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Resend a user's password - Admin Help](../add-users/resend-user-password.md)

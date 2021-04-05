@@ -2,10 +2,10 @@
 metadata:
   title: Microsoft 365 Business Premium frequently asked questions 
   description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
-  author: Sirkkuw
+  author: efrene
   f1.keywords:
   - NOCSH
-  ms.author: sirkkuw
+  ms.author: efrene
   ms.topic: article
   ms.prod: microsoft-365-business
   ms.collection: M365-subscription-management
@@ -50,7 +50,7 @@ sections:
           
           **Other entitlements**:
           
-          - Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+          - Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
           
       - question: Who should consider adopting Microsoft 365 Business Premium?
         answer: |
@@ -88,7 +88,7 @@ sections:
         answer: |
           If the hardware you run today runs Windows 7 Pro or later, it likely meets the minimum requirements for Microsoft 365 Business Premium. Certain Windows 10 features such as Cortana, Windows Hello, and multitouch require specific hardware that is only available on newer PCs. See the [Windows 10 Pro system requirements](https://www.microsoft.com/windows/windows-10-specifications) for details.
           
-          Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for [Windows 10 compatibility](https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process) and review the [Office system requirements](https://products.office.com/office-system-requirements#subscription-plans-section) to ensure a smooth transition to Microsoft 365 Business Premium.
+          Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for [Windows 10 compatibility](/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process) and review the [Office system requirements](https://products.office.com/office-system-requirements#subscription-plans-section) to ensure a smooth transition to Microsoft 365 Business Premium.
           
       - question: What is Windows 10 Business?
         answer: |
@@ -146,7 +146,7 @@ sections:
     questions:
       - question: What should customers consider when planning a Microsoft 365 Business Premium deployment?
         answer: |
-          The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the [Microsoft 365 Business Premium Getting Started](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview) to assist them in their Microsoft 365 Business Premium deployment.
+          The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the [Microsoft 365 Business Premium Getting Started](../microsoft-365-business-overview.md) to assist them in their Microsoft 365 Business Premium deployment.
           
       - question: Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune?
         answer: Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, macOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
@@ -168,7 +168,7 @@ sections:
 
       - question: Can I add Phone System and Calling Plans to Microsoft 365 Business Premium?
         answer: |
-          Yes, you can purchase a Business Voice subscription. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
+          Yes, you can purchase a Business Voice subscription. [Business Voice](/microsoftteams/business-voice/whats-business-voice) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](/microsoftteams/business-voice/country-region-availability). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
           
       - question: Can Microsoft 365 Business Premium customers use Microsoft Defender for Endpoint?
         answer: |

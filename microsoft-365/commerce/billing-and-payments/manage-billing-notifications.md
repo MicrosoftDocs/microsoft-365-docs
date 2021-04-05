@@ -104,7 +104,7 @@ Billing notification emails are sent to the primary and alternate email addresse
 - Billing profile contributor
 - Invoice manager
 
-To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles).
+To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
 To change who receives your organization’s billing notifications, use the following steps to change the roles assigned to users.
 

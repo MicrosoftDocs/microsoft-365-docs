@@ -281,7 +281,7 @@ You can customize the text for policy tips separately from the email notificatio
 - [Overview of data loss prevention policies](data-loss-prevention-policies.md)
     
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-- [DLP policy conditions, exceptions, and actions (preview)](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
     

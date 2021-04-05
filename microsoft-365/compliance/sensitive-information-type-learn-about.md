@@ -20,7 +20,7 @@ description: ""
 
 # Learn about sensitive information types
 
-Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](protect-information.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
+Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft 365 provides three ways of identifying items so that they can be classified:
 
 - manually by users
 - automated pattern recognition, like sensitive information types
@@ -124,6 +124,7 @@ You should use high confidence level patterns with low counts, say five to ten, 
 > - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 76 and 100 will be mapped to high confidence. 
 > - All policies with minimum accuracy or custom SIT patterns with confidence levels of between 66 and 75 will be mapped to medium confidence.
 > - All policies with minimum accuracy or custom SIT patterns with confidence levels less than or equal to 65 will be mapped to low confidence. 
+
 ## Creating custom sensitive information types
 
 To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:
