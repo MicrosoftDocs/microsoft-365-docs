@@ -62,7 +62,7 @@ Turning on HMA means:
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
 
 > [!NOTE]
-> Outlook Wen app and Exchange Control panel does not work with HMA.
+> Outlook Web App and Exchange Control Panel does not work with hybrid Modern Authentication.
 
 ## Add on-premises web service URLs as SPNs in Azure AD
 
