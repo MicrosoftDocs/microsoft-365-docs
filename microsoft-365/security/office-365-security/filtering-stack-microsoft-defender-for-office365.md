@@ -40,7 +40,37 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 6. **Enhanced filtering for connectors** preserves authentication information even when traffic passes through another device before it reaches Office 365. This improves filtering stack accuracy, including heuristic clustering, anti-spoofing, and anti-phishing machine learning models, even when in complex or hybrid routing scenarios.
 
-## Phase 2
+## Phase 2 - Sender Intelligence
+
+Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
+
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.PNG" alt-text="Phase 1 of filtering in MDO is Edge Protection.":::
+
+1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
+
+2. **Email Authentication** involves both customer configured methods and methods set up in the Cloud, aimed at ensuring that senders are authorized, authentic mailers. These methods resist spoofing.
+    - **SPF** can reject mails based on DNS TXT records that list IP addresses and servers allowed to send mail on the organization’s behalf.
+    - **DKIM** provides an encrypted signature that authenticates the sender.
+    - **DMARC** lets admins mark SPF and DKIM as required in their domain and enforces alignment between the results of these two technologies.
+    - **ARC** is not customer configured, but builds on DMARC to work with forwarding in mailing lists, while recording an authentication chain.
+
+3. **Spoof intelligence** is capable of filtering those allowed to ‘spoof’ (that is, those sending mail on behalf of another account, or forwarding for a mailing list) from malicious spoofers imitating an organizational, or known external, domain. It separates legitimate ‘on behalf of’ mail from senders spoofing to deliver spam and phishing messages.
+
+**Intra-org spoof intelligence** detects and blocks spoof attempts from a domain within the organization.
+
+4. **Cross-domain spoof intelligence** detects and blocks spoof attempts from a domain outside of the organization.
+
+5. **Bulk filtering** lets admins configure a bulk confidence level (BCL) indicating whether the message was sent from a bulk sender. Administrators can use the Bulk Slider in the Antispam policy to decide what level of bulk mail to treat as spam.
+
+6. **Mailbox intelligence** learns from standard user email behaviors. It leverages a user's communication graph to detect when a sender only appears to be someone the user usually communicates with, but is actually malicious. This method detects impersonation.
+
+7. **Mailbox intelligence impersonation** enables or disables enhanced impersonation results based on each user's individual sender map. When enabled, this feature helps to identify impersonation.
+
+8. **User impersonation** allows an admin to create a list of high value targets likely to be impersonated. If a mail arrives where the sender only appears to have the same name and address as the protected high value account, the mail is marked or tagged. (For example, *trαcye@contoso.com* for *tracye@contoso.com*).
+
+9. **Domain impersonation** detects domains that are similar to the recipient’s domain and that attempt to look like an internal domain. For example, this impersonation *tracye@liwαre.com* for *tracye@litware.com*.
+
+
 
 ## Phase 3
 
