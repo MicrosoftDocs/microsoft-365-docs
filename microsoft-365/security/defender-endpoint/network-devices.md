@@ -29,16 +29,27 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!IMPORTANT]
+> **Scanning and managing network devices is currently in public preview**<br>
+> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
+> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Microsoft Defender for Endpoint is being expanded to include vulnerability assessments for unmanaged network devices that are deployed in the organization. Threat and vulnerability management security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.  
+Network discovery capabilities are available in the **Device inventory** section of the Microsoft 365 security center and Microsoft Defender Security Center consoles.  
 
-A Microsoft Defender for Endpoint device will perform authenticated scans of preconfigured network devices using Simple Network Management Protocol (SNMP) (read-only).
+A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.  
 
-The following SNMP Object Identifiers (OIDs) are used to obtain information from the target network device:
+Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities foron network devices deployed across their organizations.
 
-- 1.3.6.1.2.1.1.5.0 - sysName
-- 1.3.6.1.2.1.1.1 – sysDescr
+## Approach
+
+Network devices are not managed as standard endpoints since Defender for Endpoint doesn’t have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. Depending on the network topology and characteristics, a single device or a few devices onboarded to Microsoft Defender for Endpoint will perform authenticated scans of network devices using SNMP (read-only).
+
+There will be two types of devices to keep in mind:
+
+- **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
+- **Network devices**: The network devices you plan to scan and onboard.
 
 ## Operating systems that are supported
 
@@ -51,14 +62,9 @@ The following operating systems are currently supported:
 
 More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you are encouraged to configure all your network devices, even if they’re not specified in this list.
 
-## Preparations to do in advance
+## How to get started
 
-There will be two types of devices to keep in mind:
-
-- **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
-- **Network devices**: The network devices you plan to scan and onboard.
-
-Follow these steps before you install the network scanner and configure new assessment jobs:
+Your first step is to select a device that will perform the authenticated network scans.
 
 1. Decide on a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
 
@@ -108,15 +114,22 @@ To complete the network scanner registration process:
 
 ## Configure a new assessment job  
 
-In the Assessment jobs page in Settings, select **Add network assessment job**.  Follow the set-up flow where you will choose network devices to be scanned regularly and added to the device inventory.
+In the Assessment jobs page in **Settings**, select **Add network assessment job**. Follow the set-up process to choose network devices to be scanned regularly and added to the device inventory.
 
 To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
 ![Add network assessment job button](images/assessment-jobs-add.png)
 
+Adding a network assessment job steps:
+
+1. Choose an ‘Assessment job’ name and the ‘Assessment device’ on which the network scanner was installed. This device will perform the periodic authenticated scans. 
+2. Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed). 
+3. Add required SNMP credentials of the target network devices. 
+4. Save the newly configured network assessment job to start the periodic network scan. 
+
 ### Scan and add network devices
 
-In the set-up flow, you can perform a one time test scan to verify that:
+During the set-up process, you can perform a one time test scan to verify that:
 
 - There is connectivity between the Defender for Endpoint assessment device and the configured target network devices.
 - The configured SNMP credentials are correct.
@@ -127,7 +140,11 @@ If there are multiple IP address ranges/subnets to scan, the test scan results w
 
 Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network assessment job (regardless of the device’s response). The scan results can also be exported.
 
-Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page (it may take up to two hours after adding an assessment job until the devices are updated).
+## Device inventory
+
+Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an assessment job until the devices are updated.
+
+![Network devices section in the Device inventory](images/assessment-jobs-device-inventory.png)
 
 ## Troubleshooting
 

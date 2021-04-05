@@ -115,6 +115,8 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
+### [Network devices](network-devices.md)
+
 ### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
@@ -234,7 +236,6 @@
 ##### [View and organize the Devices list](machines-view-overview.md)
 ##### [Device timeline event flags](device-timeline-event-flag.md)
 ##### [Manage device group and tags](machine-tags.md)
-##### [Network devices](network-devices.md)
  
 #### [Take response actions]()
 ##### [Take response actions on a device]()
