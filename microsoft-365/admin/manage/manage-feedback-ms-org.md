@@ -25,7 +25,7 @@ description: "Manage feedback your users can send to Microsoft about Microsoft p
 
 As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. We strongly recommend setting the **Default state** to **On** for all feedback policies to ensure we receive as much detail as possible.
 
-To learn more about how Microsoft handles your user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
+To learn more about how Microsoft handles your user feedback, check out [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
 See the table below for more details on managing feedback.
 
