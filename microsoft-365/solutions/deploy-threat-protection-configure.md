@@ -26,7 +26,7 @@ Follow these steps to configure threat protection across Microsoft 365.
 
 ## Step 1: Set up multi-factor authentication and Conditional Access policies
 
-[Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or authenticator app. [Conditional access policies](/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that  is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user will be prevented from signing in.  
+[Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or authenticator app. [Conditional access policies](/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user is prevented from signing in.  
 
 Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
@@ -157,7 +157,7 @@ After you have set up and deployed your threat protection services and capabilit
 
 ![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
-The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
+The Microsoft 365 security center is intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 - [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) on the status of your identities, data, devices, apps, and infrastructure.
 - Connect the dots on alerts through [incidents](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
