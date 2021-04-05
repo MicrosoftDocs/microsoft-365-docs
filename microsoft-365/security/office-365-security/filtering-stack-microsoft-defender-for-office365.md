@@ -44,7 +44,7 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.PNG" alt-text="Phase 1 of filtering in MDO is Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.PNG" alt-text="Phase 2 of filtering in MDO is Sender intelligence.":::
 
 1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
 
@@ -74,7 +74,7 @@ Features in sender intelligence are critical for catching spam, bulk, impersonat
 
 In this phase the filtering stack begins to handle the specific contents of the mail, including its hyperlinks and attachments.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.PNG" alt-text="Phase 1 of filtering in MDO is Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.PNG" alt-text="Phase 3 of filtering in MDO is Content Filtering.":::
 
 1. **Transport rules** also known as Mailflow-, or Exchange Transport Rules, allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow / transport rules.
 
@@ -102,6 +102,8 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 The last stage takes place after mail or file delivery, acting on mail that is in various mailboxes and files and links that appear in clients like Microsoft Teams.
 
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.PNG" alt-text="Phase 4 of filtering in MDO is Post-delivery protection.":::
+
 1. **Safe Links** is MDO’s time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
 2. **Phish Zero-Hour Auto-purge (ZAP)** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
@@ -121,8 +123,14 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 9. When a URL that points to a file is selected post delivery, **linked content detonation** displays a warning page until the sandboxing of the file is complete, and the URL is found to be safe.
 
 
-## The complete diagram
+## The filtering stack diagram
+
+The final diagram (as with, all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the feedback option you'll find at the bottom if you need to ask for updates. For your records, this is the the stack with all the phases in order:
+
+</br>
+
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.PNG" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
 
 ## More information
 
-Special thanks to Jason Rogers and Giulian Garruba.
+Special thanks from Tracy Paddock and the docs writing team, to Jason Rogers and Giulian Garruba for this content.
