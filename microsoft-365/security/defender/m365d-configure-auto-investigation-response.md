@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.date: 02/08/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
