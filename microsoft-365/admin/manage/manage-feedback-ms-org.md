@@ -82,7 +82,7 @@ For more information, see [Overview of the Office cloud policy service](/deployo
 
 These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
 
-You can find these policy settings under User Configuration -> Policies -> Administrative Templates -> Microsoft Office 2016 -> Privacy\Trust Center.
+You can find these policy settings under User Configuration -> Policies -> Administrative Templates -> Microsoft Office 2016 -> Privacy -> Trust Center.
 
 > [!NOTE]
 > It takes a few hours for the client applications to update.
