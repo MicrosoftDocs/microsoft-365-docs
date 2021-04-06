@@ -134,9 +134,9 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 2. [Deploy Microsoft Defender for Endpoint](../security/defender-endpoint/production-deployment.md).
 
-3. [Onboard to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
+3. [Onboard to the Microsoft Defender for Endpoint service](../security/defender-endpoint/onboarding.md).
 
-4. [Complete your top security administrative tasks](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation).
+4. [Complete your top security administrative tasks](../security/defender-endpoint/tvm-security-recommendation.md).
 
 ### More information about Microsoft Defender for Endpoint
 
