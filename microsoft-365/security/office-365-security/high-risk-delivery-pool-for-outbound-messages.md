@@ -57,4 +57,3 @@ Possible causes for a surge in NDRs include:
 - A rogue email server.
 
 All of these issues can result in a sudden increase in the number of NDRs being processed by the service. Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).
-
