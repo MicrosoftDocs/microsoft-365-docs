@@ -8,8 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -71,5 +71,5 @@ See [Protect important folders with controlled folder access](controlled-folders
 ## See also
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
-* [Evaluate Microsoft Defender for Endpoint](evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
 * [Use audit mode](audit-windows-defender.md)

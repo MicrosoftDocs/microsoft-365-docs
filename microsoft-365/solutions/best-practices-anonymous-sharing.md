@@ -135,7 +135,7 @@ To turn on safe attachments
 
 4. Optionally turn on Safe Documents as well, and then click **Save**
 
-See [ATP for SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md) for additional guidance.
+See [ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) for additional guidance.
 
 ## Add copyright information to your files
 

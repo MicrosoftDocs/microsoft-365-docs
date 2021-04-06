@@ -55,7 +55,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - NIST 800-53 Rev.4
 
 > [!NOTE]
-> For US Government Community (GCC) Moderate and GCC High customers, the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
+> For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
 

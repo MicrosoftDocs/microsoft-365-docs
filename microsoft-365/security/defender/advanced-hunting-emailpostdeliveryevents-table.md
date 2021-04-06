@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -53,8 +53,8 @@ To get more information about individual email messages, you can also use the [`
 ## Supported event types
 This table captures events with the following `ActionType` values:
 
-- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../defender-365-security/threat-explorer.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
-- **Phish ZAP** – [Zero-hour auto purge (ZAP)](../defender-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
+- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
+- **Phish ZAP** – [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 
 ## Related topics

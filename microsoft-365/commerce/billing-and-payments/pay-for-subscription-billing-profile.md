@@ -23,14 +23,6 @@ ms.custom:
 
 # How to pay for your subscription with a billing profile
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 When you buy a subscription, you pay for it with a billing profile. The billing profile is linked to a specific payment method and can be a credit or debit card, or an invoice, but not a bank account.
 
 If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don’t have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
