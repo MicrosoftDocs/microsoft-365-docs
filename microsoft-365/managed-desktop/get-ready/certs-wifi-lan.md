@@ -1,6 +1,6 @@
 ---
 title: Prepare certificates and network profiles for Microsoft Managed Desktop 
-description:  certs/wifi/lan
+description:  Certificate requirements and wi-fi connectivity
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -11,6 +11,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Prepare certificates and network profiles for Microsoft Managed Desktop  
@@ -81,3 +82,14 @@ To deploy certificates and profiles, follow these steps:
 4. Create a profile for each corporate VPN (see [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](/intune/vpn-settings-windows-10)).
 5. Submit a Support request titled “Certificate Deployment” or “Wi-Fi Profile Deployment” to Microsoft Managed Desktop IT Operations using the Microsoft Managed Desktop Admin portal to review and deploy the configuration profile to “Modern Workplace Devices – Test”. Microsoft Managed Desktop IT Operations will let you know when the request has been completed via the Support request in the Admin portal. 
  
+## Steps to get ready
+
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [Readiness assessment tools](readiness-assessment-tool.md).
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md) (This article)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md) 
