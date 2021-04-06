@@ -1,5 +1,5 @@
 ---
-title: Scan and manage network devices
+title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ---
-# Scan and manage network devices
+# Network device discovery and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,6 +50,10 @@ There will be two types of devices to keep in mind:
 
 - **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
 - **Network devices**: The network devices you plan to scan and onboard.
+
+### Vulnerability management for network devices 
+
+Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities on network devices deployed across their organizations.  
 
 ## Operating systems that are supported
 
