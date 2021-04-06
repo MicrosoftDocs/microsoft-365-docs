@@ -33,6 +33,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 
 ## What do you need to know before you begin?
 
+- For the best user submission experience we recommend using the Report Message and the Report Phishing add-ins. See [Enable the Report Message add-in](./enable-the-report-message-add-in.md) and [Enable the Report Phishing add-in](./enable-the-report-phish-add-in.md) for more information.
+
 - If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 - Admins can disable or enable the ability for users to report messages to Microsoft in Outlook on the web. For details, see the [Disable or enable junk email reporting in Outlook on the web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) section later in this article.
@@ -40,42 +42,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, you can use th
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
-
-## Report spam and phishing messages in Outlook on the web
-
-1. For messages in the Inbox or any other email folder except Junk Email, use either of the following methods to report spam and phishing messages:
-
-   - Select the message, click **Junk** on the toolbar, and then select **Junk** or **Phishing**.
-
-     ![Report junk or phishing email from the ribbon](../../media/owa-report-junk.png)
-
-   - Select one or more messages, right-click, and then select **Mark as junk**.
-
-2. In the dialog that appears, click **Report**. If you change your mind, click **Don't Report**.
-
-   |Junk|Phishing|
-   |:---:|:---:|
-   |![Report as junk dialog](../../media/owa-report-as-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
-
-3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
-
-## Report non-spam and phishing messages from the Junk Email folder in Outlook on the web
-
-1. In the Junk Email folder, use either of the following methods to report spam false positives or phishing messages:
-
-   - Select the message, click **Not Junk** on the toolbar, and then select **Not Junk** or **Phishing**.
-
-     ![Report not junk or not phishing email from the ribbon](../../media/owa-report-not-junk.png)
-
-   - Select one or more messages, right-click, and then select **Mark as not junk**.
-
-2. In the dialog that appears, read the information and click **Report**. If you change your mind, click **Don't Report**.
-
-   |Not Junk|Phishing|
-   |:---:|:---:|
-   |![Report as not junk dialog](../../media/owa-report-as-not-junk-dialog.png)|![Report as phishing dialog](../../media/owa-report-as-phishing-dialog.png)|
-
-3. The selected messages will be sent to Microsoft for analysis. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Disable or enable junk email reporting in Outlook on the web
 
