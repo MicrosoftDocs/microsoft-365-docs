@@ -13,7 +13,6 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -23,9 +22,6 @@ manager: dansimp
 
 Applies to: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-
-> [!WARNING]
-> Microsoft Defender for Endpoint support for Windows Virtual Desktop multi-session scenarios is currently in Preview and limited up to 25 concurrent sessions per host/VM. However, single session scenarios on Windows Virtual Desktop are fully supported.
 
 Microsoft Defender for Endpoint supports monitoring both VDI and Windows Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Windows Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
