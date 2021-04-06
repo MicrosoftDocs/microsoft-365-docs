@@ -65,37 +65,41 @@ Microsoft is continually working to improve the Microsoft 365 user experience an
 
 ## Optimizing Microsoft Teams meetings network performance for users in China  
 
-For organizations with global Microsoft 365 tenants and a corporate presence in China, Microsoft 365 client performance for China-based users can be complicated by factors unique to the China Internet architecture. Many companies and schools have reported good results from by following this guidance. However, the scope is limited to user network locations that are under control of the IT networking setup – e.g. office locations or home/mobile endpoints with VPN connectivity. In particular Microsoft Teams calls and meetings are often used from external locations (home office, mobile, on the road, coffee shop, etc.). Further, since calls and meetings rely on real-time media data, these Teams experience are particularly sensitive to network congestion.
+For organizations with global Microsoft 365 tenants and a presence in China, Microsoft 365 client performance for China-based users can be complicated by factors unique to the China Internet architecture. Many companies and schools have reported good results by following this guidance. However, the scope is limited to user network locations that are under control of the IT networking setup, for example, office locations or home/mobile endpoints with VPN connectivity. Microsoft Teams calls and meetings are often used from external locations, such as home offices, mobile locations, on the road, and coffee shops. Because calls and meetings rely on real-time media traffic, these Teams experiences are particularly sensitive to network congestion.
 
-As a result, Microsoft has partnered with telecommunications providers to carry Teams (and Skype for Business Online) real-time media data using a higher quality, “preferential” network path between domestic/public internet connections in China   and the Teams/Skype services in the Microsoft 365 global cloud. This work has resulted in a more than ten-fold improvement in packet loss and other key metrics impacting the user experience.
+As a result, Microsoft has partnered with telecommunications providers to carry Teams and Skype for Business Online real-time media traffic using a higher quality, preferential network path between domestic and public internet connections in China and the Teams and Skype services in the Microsoft 365 global cloud. This capability has resulted in a more than ten-fold improvement in packet loss and other key metrics impacting your user's experience.
 
 >[!IMPORTANT]
->Currently, these improvements do not address attending Microsoft Live Events  meetings (large broadcast or “town hall” style meetings using Teams or Microsoft Stream). To view a Live Events meeting, users in China need to use a private network or SDWAN/VPN solution. However, these improvements will benefit users who are presenting or producing a Live Events meeting, since that experience manifests as a regular Teams meeting for the producer or presenter.
+>Currently, these improvements do not address attending Microsoft Live Events meetings such as large broadcast or “town hall” style meetings using Teams or Microsoft Stream. To view a Live Events meeting, users in China need to use a private network or SDWAN/VPN solution. However, the network improvements will benefit users who are presenting or producing a Live Events meeting, because that experience acts as a regular Teams meeting for the producer or presenter.
 
-### Corporate network best practices for Teams meetings
+### Organization network best practices for Teams meetings
 
-Corporate IT networking staff need to consider how to leverage these improvements, especially given the previous guidance to consider a private network extension to avoid cross-border network congestion. There are two general options for corporate office networks:
+You need to consider how to leverage these network improvements, given that the previous guidance to consider a private network extension to avoid cross-border network congestion. There are two general options for organization office networks:
 
-1. Do nothing new. Continue to follow the earlier guidance around private network bypass to avoid cross-border congestion. Teams real-time media traffic will leverage that setup, as before.
-2. Implement a split/hybrid pattern. Specifically (1) use the previous guidance for all traffic   flagged for optimization except Teams meetings and calling real-time media, and then (2) route Teams meeting and calling real-time media over the public internet. See below for specifics on identifying the real-time media network traffic.
+1.	Do nothing new. Continue to follow the earlier guidance around private network bypass to avoid cross-border congestion. Teams real-time media traffic will leverage that setup, as before.
+2.	Implement a split/hybrid pattern. 
+  - Use the previous guidance for all traffic flagged for optimization except Teams meetings and calling real-time media
 
-Sending Teams real-time media audio and video traffic over the public internet – and leveraging the higher quality connectivity – can save organizations considerable money, since it is free vs. paying to send that traffic over a private network. There may be similar additional benefits if users are also using SDWAN or VPN clients. Some organizations may also prefer to have more of their data traverse public internet connectivity as a general practice.
+  -	Route Teams meeting and calling real-time media over the public internet. See the following information for specifics on identifying the real-time media network traffic.
 
-Note that the same options could apply to SDWAN or VPN configurations. For example, imagine that a user was previously leveraging an SDWAN or VPN to route Microsoft 365 traffic to the corporate network and then leveraging the private extension of that network to avoid cross-border congestion. Now, that same user’s SDWAN or VPN can instead be configured to exclude Teams meeting and calling real-time media data from the VPN routing.  This VPN configuration is referred to as “split tunnelling”. Please refer to this article for further details: <https://docs.microsoft.com/en-us/office365/enterprise/office-365-vpn-implement-split-tunnel>
+Sending Teams real-time media audio and video traffic over the public internet, which uses the higher quality connectivity, can save organizations considerable money, because it is free versus paying to send that traffic over a private network. There may be similar additional benefits if users are also using SDWAN or VPN clients. Some organizations may also prefer to have more of their data traverse public internet connections as a general practice.
 
-Of course, that user can continue to use the SDWAN or VPN for all Microsoft 365 traffic, including Microsoft Teams real-time media. Note that Microsoft makes no recommendation on the use of SDWAN or VPN solutions.
 
-### Home/mobile/user network best practices for Teams meetings
+The same options could apply to SDWAN or VPN configurations. For example, a user is using an SDWAN or VPN to route Microsoft 365 traffic to the corporate network and then leveraging the private extension of that network to avoid cross-border congestion. The user’s SDWAN or VPN can now be configured to exclude Teams meeting and calling real-time traffic from the VPN routing. This VPN configuration is referred to as split tunnelling. See [VPN split tunneling for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel) for more information.
 
-End-users in China can take advantage of these improvements simply by connecting to the public internet service in China (landline or mobile). Teams real-time media audio and video traffic on the public internet directly benefits from improved connectivity and quality.
+You can also continue to use your SDWAN or VPN for all Microsoft 365 traffic, including for Microsoft Teams real-time traffic. Microsoft has no recommendations on the use of SDWAN or VPN solutions.
 
-However, data from other Microsoft 365 services – and other traffic in Teams e.g. for chat or files – will not directly benefit from these improvements. Thus, users outside the corporate network may still experience poor network performance. As discussed in the relevant article and mentioned above, users can mitigate these effects by using a VPN or SDWAN. Users should also be guided to use the rich desktop clients (vs. web clients) that support in-app caching to mitigate network issues.
+### Home, mobile, and user network best practices for Teams meetings
+
+Users in China can take advantage of these improvements simply by connecting to the public internet service in China with a landline or mobile connection. Teams real-time media audio and video traffic on the public internet directly benefits from improved connectivity and quality.
+
+However, data from other Microsoft 365 services—and other traffic in Teams, such as chat or files—will not directly benefit from these improvements. Users outside the organization network may still experience poor network performance for this traffic. As discussed in this article, you can mitigate these effects by using a VPN or SDWAN. You can also have your users use rich desktop clients over web clients, which support in-app caching to mitigate network issues.
 
 ### Identifying Teams real-time media network traffic
 
-For configuring a network device, or a VPN/SDWAN setup, an IT admin will need to select only the Teams real-time media audio and video traffic. The specific details can be found on the official list of [Office 365 URLs and IP address ranges](https://aka.ms/TeamsURLs), under ID 11. All other network configuration should remain as-is.
+For configuring a network device or a VPN/SDWAN setup, you need to exclude only the Teams real-time media audio and video traffic. The traffic details can be found  for ID 11 on the official list of [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams). All other network configurations should remain as-is.
 
-Microsoft is continually working to improve the Microsoft 365 user experience and the performance of clients over the widest possible range of network architectures and characteristics. Visit the [Office 365 Tech Community](https://techcommunity.microsoft.com/t5/office-365/bd-p/Office365General) to start or join a conversation, find resources, and submit feature requests and suggestions.
+Microsoft is continually working to improve the Microsoft 365 user experience and the performance of clients over the widest possible range of network architectures and characteristics. Visit the [Office 365 Networking Tech Community]( https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) to start or join a conversation, find resources, and submit feature requests and suggestions
 
 ## Related topics
 
