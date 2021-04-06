@@ -1,6 +1,6 @@
 ---
 title: Behavioral blocking and containment
-description: Learn about behavioral blocking and containment capabilities in Microsoft Defender ATP
+description: Learn about behavioral blocking and containment capabilities in Microsoft Defender for Endpoint
 keywords: Microsoft Defender ATP, EDR in block mode, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

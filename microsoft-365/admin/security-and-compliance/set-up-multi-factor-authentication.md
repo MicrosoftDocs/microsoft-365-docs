@@ -97,8 +97,8 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 - [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 
-## Related topics
+## Related content
 
-[Video: Turn on multi-factor authentication](../../business-video/turn-on-mfa.md)
+[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
 
-[Video: Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md)
+[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)

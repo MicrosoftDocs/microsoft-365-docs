@@ -122,7 +122,7 @@ conceptualContent:
  # Card
     - title: Manage threats
       links:
-        - url: ../security/defender-365-security/defender-for-office-365.md
+        - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
           text: Advanced Threat Protection
         - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md

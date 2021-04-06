@@ -1,12 +1,13 @@
 ---
 title: Steps to configure threat protection capabilities across Microsoft 365
-description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
+description: Use this article as a guide for implementing your threat protection solution. Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
+keywords: security, setup, configuration, Microsoft 365 E5, advanced threat protection
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -25,7 +26,7 @@ Follow these steps to configure threat protection across Microsoft 365.
 
 ## Step 1: Set up multi-factor authentication and Conditional Access policies
 
-[Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or authenticator app. [Conditional access policies](/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that  is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user will be prevented from signing in.  
+[Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requires users to verify their identity with a phone call or an authenticator app. [Conditional access policies](/azure/active-directory/conditional-access/overview) define certain requirements that must be met in order for users to access apps and data in Microsoft 365. MFA and Conditional Access policies work together to protect your organization. For example, if someone attempts to sign in from a mobile device using an account that is not enabled for MFA, and a Conditional Access policy requires MFA to be in effect, that user is prevented from signing in.  
 
 Microsoft has tested and recommends a specific set of Conditional Access and related policies for protecting access to all of your SaaS applications, especially Microsoft 365. Policies are recommended for baseline, sensitive, and highly regulated protection. Begin by implementing the policies for baseline protection. 
 
@@ -37,18 +38,18 @@ Microsoft has tested and recommends a specific set of Conditional Access and rel
 
 ![Process for deploying baseline protection](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configure prerequisites, including Azure AD Identity Protection](../security/defender-365-security/identity-access-prerequisites.md).
-2. [Configure common identity and device access policies](../security/defender-365-security/identity-access-policies.md) for baseline protection.
-3. Configure policies for [guest users](../security/defender-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/defender-365-security/teams-access-policies.md), [Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../security/defender-365-security/sharepoint-file-access-policies.md).
+1. [Configure prerequisites, including Azure AD Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configure common identity and device access policies](../security/office-365-security/identity-access-policies.md) for baseline protection.
+3. Configure policies for [guest users](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### More information about protecting identities
 
-- [Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Security guidance for Azure MFA](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## Step 2: Configure Microsoft Defender for Identity
 
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that works with your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+[Microsoft Defender for Identity](/defender-for-identity/what-is) is a cloud-based security solution that works with your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
 Microsoft Defender for Identity enables security operations (SecOps) analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
 - Monitor users, entity behavior, and activities with learning-based analytics.
@@ -74,7 +75,7 @@ Microsoft Defender for Identity enables security operations (SecOps) analysts an
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) combines signals and orchestrates capabilities into a single solution. With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
-Microsoft 365 Defender unifies alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, and Microsoft Cloud App Security) into a single pane of glass experience. After you have configured one or more of your Defender for Office 365 services, turn on Microsoft 365 Defender. New features are added continually to Microsoft 365 Defender; consider opting in to receive preview features.
+Microsoft 365 Defender unifies alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, and Microsoft Cloud App Security) into a single pane of glass experience. New features are added continually to Microsoft 365 Defender; consider opting in to receive preview features.
 
 ### To set up Microsoft 365 Defender
 
@@ -91,11 +92,11 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 ## Step 4: Configure Microsoft Defender for Office 365
 
-[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
 
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
 |---|---|
-|[Safe Attachments](../security/defender-365-security/safe-attachments.md)<br/>[Safe Links](../security/defender-365-security/safe-links.md)<br/>[Safe Documents](../security/defender-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Threat Trackers](../security/defender-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/defender-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/defender-365-security/office-365-air.md)<br/>[Attack Simulator](../security/defender-365-security/attack-simulator.md)|
+|[Safe Attachments](../security/office-365-security/safe-attachments.md)<br/>[Safe Links](../security/office-365-security/safe-links.md)<br/>[Safe Documents](../security/office-365-security/safe-docs.md)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender for Office 365 protection](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Threat Trackers](../security/office-365-security/threat-trackers.md)<br/>[Threat Explorer](../security/office-365-security/threat-explorer.md)<br/>[Automated investigation and response](../security/office-365-security/office-365-air.md)<br/>[Attack Simulator](../security/office-365-security/attack-simulator.md)|
 |
 
 With Microsoft Defender for Office 365, people across your organization can communicate and collaborate more securely, with threat protection for their email content and Office documents.
@@ -104,14 +105,14 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ![Process for deploying Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [Set up and configure your Microsoft Defender for Office 365 policies](../security/defender-365-security/protect-against-threats.md).
-2. [View and use your Microsoft Defender for Office 365 reports](../security/defender-365-security/view-reports-for-mdo.md).
-3. [Use threat investigation and response capabilities](../security/defender-365-security/office-365-ti.md).
+1. [Set up and configure your Microsoft Defender for Office 365 policies](../security/office-365-security/protect-against-threats.md).
+2. [View and use your Microsoft Defender for Office 365 reports](../security/office-365-security/view-reports-for-mdo.md).
+3. [Use threat investigation and response capabilities](../security/office-365-security/office-365-ti.md).
 
 ### More information about Microsoft Defender for Office 365
 
-- [Microsoft Defender for Office 365 overview](../security/defender-365-security/defender-for-office-365.md)
-- [What's new in Microsoft Defender for Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
+- [Microsoft Defender for Office 365 overview](../security/office-365-security/defender-for-office-365.md)
+- [What's new in Microsoft Defender for Office 365](../security/office-365-security/whats-new-in-defender-for-office-365.md)
 
 ## Step 5: Configure Microsoft Defender for Endpoint
 
@@ -156,7 +157,7 @@ After you have set up and deployed your threat protection services and capabilit
 
 ![Microsoft 365 security center](../media/solutions-architecture-center/m365-security-center.png)
 
-The Microsoft 365 security center is specifically intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
+The Microsoft 365 security center is intended for security admins and security operations teams. In the Microsoft 365 security center, you can:
 - View the overall security health of your organization with [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 - [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) on the status of your identities, data, devices, apps, and infrastructure.
 - Connect the dots on alerts through [incidents](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).

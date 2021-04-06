@@ -1,6 +1,6 @@
 ---
 title: Details and results of an automated investigation
-description: During and after an automated investigation, you can view the results and key findings
+description: View the results and key findings of automated investigation in Microsoft 365 Defender
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,7 +21,6 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
 ---
 
 # Details and results of an automated investigation
@@ -37,7 +36,7 @@ With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) 
 
 ## (NEW!) Unified investigation page
 
-The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
+The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
 - Any investigation page in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
 - Any investigation page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
 - Any incident or Action center experience in the improved Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com))
@@ -56,8 +55,11 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
 2. In the navigation pane, choose **Action center**. 
+
 3. On either the **Pending** or **History** tab, select an item. Its flyout pane opens.
+
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
@@ -71,9 +73,13 @@ Use an incident details page to view detailed information about an incident, inc
 ![Incident details](../../media/mtp-incidentdetails-tabs.png)
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
+
 3. Select an item in the list, and then choose **Open incident page**.
+
 4. Select the **Investigations** tab, and then select an investigation in the list. Its flyout pane opens.
+
 5. Select **Open investigation page**. 
 
 ## Investigation details

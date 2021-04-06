@@ -59,6 +59,17 @@ For more information about role assignments, see [Create and manage roles](user-
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
 
+
+## Restrict correlation to within scoped device groups
+When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
+
+>[!NOTE]
+>Changing this setting impacts future alert correlations only.
+
+
+## Enable EDR in block mode
+Endpoint detection and response (EDR) in block mode provides protection from malicious artifacts, even when Microsoft Defender Antivirus is running in passive mode. When turned on, EDR in block mode blocks malicious artifacts or behaviors that are detected on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post breach.
+
 ## Autoresolve remediated alerts
 
 For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
@@ -103,6 +114,14 @@ For more information, see [Manage indicators](manage-indicators.md).
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
+
+## Tamper protection
+During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
+
+Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
+
+Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
+
 ## Show user details
 
 Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
@@ -136,7 +155,7 @@ When you turn this feature on, you'll be able to incorporate data from Office 36
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
 
-To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti).
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
 ## Microsoft Threat Experts
 
@@ -201,7 +220,7 @@ You'll have access to upcoming features, which you can provide feedback on to he
 
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
-After configuring the [Security policy violation indicators](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
+After configuring the [Security policy violation indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 
 ## Related topics
 

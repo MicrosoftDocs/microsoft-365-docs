@@ -1,7 +1,7 @@
 ---
 title: "Office 365 is now Microsoft 365"
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article

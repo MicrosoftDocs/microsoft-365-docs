@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Mac
+title: Microsoft Defender for Endpoint for Mac
 ms.reviewer: 
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint for Mac.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,7 +34,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Defender for Endpoint for Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Defender for Endpoint for Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of MDATP for Mac EDR functionality after configuring MDATP for Mac antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
 
 ## What’s new in the latest release
 
