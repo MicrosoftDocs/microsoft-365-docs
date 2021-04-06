@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about controlling feedback your users send to Microsoft."
+description: "Learn about feedback your users can send to Microsoft about Microsoft products."
 ---
 
 # Learn about Microsoft feedback for your organization
