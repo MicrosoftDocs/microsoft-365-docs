@@ -29,8 +29,9 @@ description: "Follow these steps to delete a former employee's user account."
 # Step 8 - Delete a former employee's user account
 
 After you've saved and accessed all the former employee's user data, you can delete the former employee's account.
-  
-Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+
+> [!IMPORTANT]
+> Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the name of the employee that you want to delete.

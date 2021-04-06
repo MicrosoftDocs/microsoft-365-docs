@@ -28,6 +28,8 @@ description: "Learn how block a former employee from logging in."
 
 # Step 1 - Prevent an employee from logging in
 
+In this step, force a sign out of the user from Microsoft 365.
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
@@ -38,6 +40,6 @@ Within an hour - or after they leave the current Microsoft 365 page they are on 
 > [!IMPORTANT]
 > If the user is in Outlook on the web, just clicking around in their mailbox, they may not be kicked out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the sign-out is initiated.
   
-To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
+To use PowerShell to sign out a user immediately, see the [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
   
 For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).

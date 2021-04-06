@@ -29,7 +29,7 @@ description: "Follow these steps to block a former employee's access to Microsof
 # Step 5 - Block a former employee's access to Microsoft 365 services
 
 > [!IMPORTANT]
- > Blocking an account can take up to 24 hours to take effect. If you need to immediately prevent a user's sign-in access, you should [reset their password](reset-passwords.md) and then initiate a one-time event that will sign them out of Microsoft 365 sessions across all devices. See [Sign out now!](#sign-out-now)
+ > Blocking an account can take up to 24 hours to take effect. If you need to immediately prevent a user's sign-in access, you should [reset their password](reset-passwords.md) and then initiate a one-time event that will sign them out of Microsoft 365 sessions across all devices. See [Step 1 - Prevent an employee from logging in](remove-former-employee-step-1.md).
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the name of the employee that you want to block, and under the user's name, select the symbol for **Block this user**.

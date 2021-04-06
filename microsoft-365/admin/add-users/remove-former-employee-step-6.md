@@ -28,11 +28,11 @@ description: "Follow these steps to give another employee access to the former e
 
 # Step 6 - Give another employee access to OneDrive and Outlook data
 
-When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
+When an employee leaves your organization, you'll want to access their OneDrive and Outlook data, back it up, and choose whether to give it to another employee.
   
 ## Access a former user's OneDrive documents
 
-If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
+If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted.
 
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep.
 
@@ -48,9 +48,9 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
 > When you move or copy documents that have version history, only the latest version is moved.  
 
-## Revoke admin access to a user's OneDrive
+### Revoke admin access to a user's OneDrive
 
-As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
+You can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
 
@@ -121,7 +121,7 @@ See how to [Export or backup email, contacts, and calendar to an Outlook .pst fi
   > [!NOTE]
   > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
 
-## Give another user access to a former user's email
+### Give another user access to a former user's email
 
 To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
 

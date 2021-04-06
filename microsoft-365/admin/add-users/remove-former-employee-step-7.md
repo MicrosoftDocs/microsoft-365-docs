@@ -28,7 +28,7 @@ description: "Follow these steps to remove the Microsoft 365 license from a form
 
 # Step 7 - Remove and delete the Microsoft 365 license from a former employee
 
-So you don't continue paying for a license after someone leaves your organization, you need to remove their Microsoft 365 license and then delete it from your subscription. If you choose not to delete the license from your subscription, you can assign it to another user.
+If you don't want to pay for a license after someone leaves your organization, you need to remove their Microsoft 365 license and then delete it from your subscription. You can assign a license to another user if you don't delete it.
   
 When you remove the license, all that user's data is held for 30 days. You can [access](get-access-to-and-back-up-a-former-user-s-data.md) the data, or [restore](restore-user.md) the account if the user comes back. After 30 days, all the user's data (except for documents stored on SharePoint Online) is permanently deleted from Microsoft 365 and can't be recovered.
 
