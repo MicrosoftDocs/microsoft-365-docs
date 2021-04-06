@@ -1,5 +1,5 @@
 ---
-title: Step-by-Step Threat Protection stack in Microsoft Defender for Office 365 
+title: Step-by-step Threat Protection stack in Microsoft Defender for Office 365 
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
