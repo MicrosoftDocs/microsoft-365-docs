@@ -19,6 +19,28 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## March 2021
+New or changed article | Description
+--- | ---
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
+[First-run experience with Autopilot and the Enrollment Status Page](get-started/esp-first-run.md) | Updated article
+[Windows 10 location service](get-started/device-location.md) | New article
+[Device images](service-description/device-images.md) | New article
+[Microsoft Managed Desktop supported regions](service-description/regions-languages.md) | Updated article
+[Localize the user experience](get-started/localization.md) | New article
+
+## February 2021
+New or changed article | Description
+--- | ---
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
+[Device requirements](service-description/device-requirements.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Microsoft OneDrive](get-started/onedrive.md) | New article
+[Compliance](intro/compliance.md) | Updated
+[Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | Updated article
+[Readiness assessment tools](get-ready/readiness-assessment-tool.md) | Updated article
+
 ## January 2021
 New or changed article | Description
 --- | ---
