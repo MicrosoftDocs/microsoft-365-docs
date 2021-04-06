@@ -106,7 +106,7 @@ After you attach the SharePoint document library, you will be able to view any c
 ### Customize your Contracts channel tile view
 
 > [!NOTE]
-> This section references code examples that are contained in the <b>ContractCardjson</b> file this is included in the solutionfiles zip file.
+> This section references code examples that are contained in the <b>ContractCardjson</b> file this is included in the <b>solutionfiles</b> zip file.
 
 While Teams allows you to view your contracts in a tile view, you may want to customize it to view the contract data you want to make visible in the "contract card". For example, for our Contracts channel, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all Approved contracts will have a blue header bar.
 
@@ -124,7 +124,7 @@ Comment: I need to link to more information to direct users on how to do this.
 
 In the <b>ContractCardjson</b> file that you downloaded in the reference zip file, look at the following section to see how we formatted the size and shape of the card. </br>
 
-```SKOS
+```JSON
                   {
                     "elmType": "div",
                     "style": {
@@ -150,7 +150,7 @@ In the <b>ContractCardjson</b> file that you downloaded in the reference zip fil
 
 The following code lets us define the status of each title card. Note that each status value (New, In review, Approved, and Rejected) will display a different color code for each. In the contract card json file that you downloaded, look at the section that defines the status.
 
-```SKOS
+```JSON
           {
             "elmType": "div",
             "children": [
@@ -179,7 +179,7 @@ In the <b>ContractCardjson</b> file that you downloaded, the following sections 
 
 This section defines how "Client" will display on the card, and uses the value for the specific contract.
 
-```SKOS
+```JSON
                       {
                         "elmType": "div",
                         "style": {
@@ -203,7 +203,7 @@ This section defines how "Client" will display on the card, and uses the value f
 
 This section defines how the "Contractor" will display on the card, and uses the value for the specific contract.
 
-```SKOS
+```JSON
                       {
                         "elmType": "div",
                         "style": {
@@ -228,7 +228,7 @@ This section defines how the "Contractor" will display on the card, and uses the
 
 This section defines how the "Fee Amount" will display on the card, and uses the value for the specific contract.
 
-```SKOS
+```JSON
                       {
                         "elmType": "div",
                         "txtContent": "Fee amount",
@@ -254,7 +254,7 @@ This section defines how the "Fee Amount" will display on the card, and uses the
 
 This section defines how  "Classification" will display on the card, and uses the value for the specific contract.
 
-```SKOS
+```JSON
                       {
                         "elmType": "div",
                         "txtContent": "Classified",
@@ -302,9 +302,86 @@ The next step is to create adaptive card stating that the contract in waiting fo
 
 ![Contract review post](../media/content-understanding/contract-approval-post.png)</br>
 
+
 ![Create adaptive card for review](../media/content-understanding/adaptive-card.png)</br>
 
-Question: Do we include the code for this, or create a file the user can download to view?  I can create a zip file that includes all files needed in our example of this solution, and include a TOC that saws what file is which.
+The following is the JSON code used for this step in the Power Automate flow.
+
+```JSON
+{
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"type": "AdaptiveCard",
+"version": "1.0",
+"body": [
+    {
+    "type": "TextBlock",
+    "text": "Contract approval request",
+    "size": "large",
+    "weight": "bolder",
+     "wrap": true
+    },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "FactSet",
+                    "spacing": "Large",
+                    "facts": [
+                        {
+                            "title": "Client",
+                            "value": "@{triggerOutputs()?['body/Client']}"
+                        },
+                        {
+                            "title": "Contractor",
+                            "value": "@{triggerOutputs()?['body/Contractor']}"
+                        },
+                        {
+                            "title": "Fee amount",
+                            "value": "@{triggerOutputs()?['body/FeeAmount']}"
+                        },
+                        {
+                            "title": "Date created",
+                            "value": "@{triggerOutputs()?['body/Modified']} "
+                        },
+                        {
+                            "title": "Link",
+                            "value": "[@{triggerOutputs()?['body/{FilenameWithExtension}']}](@{triggerOutputs()?['body/{Link}']})"
+                        }
+                    ]
+                }
+            ]
+         },
+    {
+    "type": "TextBlock",
+    "text": "Comment:"
+    },
+        {
+            "type": "Input.Text",
+            "placeholder": "Enter comments",
+            "id": "acComments"
+        }
+],
+"actions": [
+    {
+    "type": "Action.Submit",
+    "title": "Approve",
+    "data": {
+        "x": "Approve"
+    }
+    },
+    {
+    "type": "Action.Submit",
+    "title": "Reject",
+    "data": {
+        "x": "Reject"
+    }
+    }
+]
+}
+```
+
+
+Question: Do we include the code for this, or create a file the user can download to view?  I can create a zip file that includes all files needed in our example of this solution, and include a TOC that says what file is which. This code snippet is a bit too long to include here.
 
 ### Conditional
 
@@ -313,7 +390,7 @@ In your flow, next you need to create a condition in which your contract will ei
 ![Conditional](../media/content-understanding/condition.png)</br>
 
 
-#### If the contract is approved
+### If the contract is approved
 
 When a contract has been approved, the following things occur:
 
@@ -329,12 +406,95 @@ In the flow, we created the following item to move approved contracts to the For
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management Team site's.</br>
 ![Contract approval posted](../media/content-understanding/flow1.png)</br>
-In your flow, the following does this for you. Question: Package the code for this in the zipped file?</br>
-![Adaptive card approval](../media/content-understanding/adaptive-card-approval.png)</br>
+
+</br>
+
+   ![Adaptive card approval](../media/content-understanding/adaptive-card-approval.png)</br>
 
 
+   The following is the JSON code used for this step in the Power Automate flow.
 
-#### If the contract is rejected
+```JSON
+{ 
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "Large",
+                                    "weight": "Bolder",
+                                    "text": "CONTRACT APPROVED"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "FactSet",
+                    "spacing": "Large",
+                    "facts": [
+                        {
+                            "title": "Client",
+                            "value": "@{triggerOutputs()?['body/Client']}"
+                        },
+                        {
+                            "title": "Contractor",
+                            "value": "@{triggerOutputs()?['body/Contractor']}"
+                        },
+                        {
+                            "title": "Fee amount",
+                            "value": "@{triggerOutputs()?['body/FeeAmount']}"
+                        },
+                        {
+                            "title": "Approval by",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']}"
+                        },
+                        {
+                            "title": "Approved date",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']}"
+                        },
+                        {
+                            "title": "Approval comment",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                        },
+                        {
+                            "title": " ",
+                            "value": " "
+                        },
+                        {
+                            "title": "Status",
+                            "value": "Ready for payout"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}
+```
+Question: Again, do we include the code for this, or create a file the user can download to view?  I can create a zip file that includes all files needed in our example of this solution, and include a TOC that says what file is which. This code snippet is a bit too long to include here.
+
+
+### If the contract is rejected
 
 When a contract has been rejected, the following things occur:
 
@@ -342,7 +502,90 @@ When a contract has been rejected, the following things occur:
 ![Card status rejected](../media/content-understanding/rejected.png)</br>
 In our flow, we check out the contract file, change the status to <b>Rejected</b>, and check the file back in again.</br>
 ![Flow status rejected](../media/content-understanding/reject-flow.png)</br>
-- In our flow, we create an adaptive card stating that the contract has been rejected. Question: Package the code for this in the zipped file?</br>
-![Flow status rejected](../media/content-understanding/reject-flow.png)</br> 
+- In our flow, we create an adaptive card stating that the contract has been rejected. </br>
+![Flow status rejected](../media/content-understanding/reject-flow-item.png)</br> 
+
+   The following is the JSON code used for this step in the Power Automate flow.
+
+```JSON
+{ 
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "style": "attention",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "Large",
+                                    "weight": "Bolder",
+                                    "text": "CONTRACT REJECTED"
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "FactSet",
+                    "spacing": "Large",
+                    "facts": [
+                        {
+                            "title": "Client",
+                            "value": "@{triggerOutputs()?['body/Client']}"
+                        },
+                        {
+                            "title": "Contractor",
+                            "value": "@{triggerOutputs()?['body/Contractor']}"
+                        },
+                        {
+                            "title": "Fee amount",
+                            "value": "@{triggerOutputs()?['body/FeeAmount']}"
+                        },
+                        {
+                            "title": "Rejected by",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']}"
+                        },
+                        {
+                            "title": "Rejected date",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']}"
+                        },
+                        {
+                            "title": "Comment",
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                        },
+                        {
+                            "title": " ",
+                            "value": " "
+                        },
+                        {
+                            "title": "Status",
+                            "value": "Needs review"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}
+```
+
+Question: Again, do we include the code for this, or create a file the user can download to view?  I can create a zip file that includes all files needed in our example of this solution, and include a TOC that says what file is which. This code snippet is a bit too long to include here.
+
 - The card is posted in the Contract Management Team site's.</br>
-![Flow adaptive card to reject](../media/content-understanding/flow-adaptive-reject.png)</br>
+![Flow adaptive card to reject](../media/content-understanding/reject-post.png)</br>
