@@ -80,8 +80,6 @@ Your threat protection features can be configured in parallel, so if you have mu
 
 ## Next step
 
-
-![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
-
 Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
+
 
