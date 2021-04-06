@@ -115,6 +115,8 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
+### [Network devices](network-devices.md)
+
 ### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
