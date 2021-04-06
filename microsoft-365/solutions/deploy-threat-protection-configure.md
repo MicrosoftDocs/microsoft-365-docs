@@ -38,9 +38,7 @@ Microsoft has tested and recommends a specific set of Conditional Access and rel
 ![Process for deploying baseline protection](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configure prerequisites, including Azure AD Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
-
 2. [Configure common identity and device access policies](../security/office-365-security/identity-access-policies.md) for baseline protection.
-
 3. Configure policies for [guest users](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md), and [SharePoint Online and OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### More information about protecting identities
@@ -63,9 +61,7 @@ Microsoft Defender for Identity enables security operations (SecOps) analysts an
 ![Process for deploying Microsoft Defender for Identity](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
 
 1. [Set up Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) to protect your primary environments.
-
 2. Protect all your [domain controllers](/azure-advanced-threat-protection/atp-sensor-monitoring) and [forests](/azure-advanced-threat-protection/atp-multi-forest).
-
 3. Integrate [Microsoft Defender for Identity alerts](/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) into your security operations (SecOps) workflow.
 
 ### More information about Microsoft Defender for Identity
@@ -85,9 +81,7 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 ![Process for deploying Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
 1. [Review the prerequisites](../security/defender/prerequisites.md).
-
 2. [Turn on Microsoft 365 Defender](../security/defender/m365d-enable.md).
-
 3. [Opt in for preview features](../security/defender/preview.md).
 
 ### More information about Microsoft 365 Defender
@@ -111,9 +105,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 ![Process for deploying Microsoft Defender for Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
 1. [Set up and configure your Microsoft Defender for Office 365 policies](../security/office-365-security/protect-against-threats.md).
-
 2. [View and use your Microsoft Defender for Office 365 reports](../security/office-365-security/view-reports-for-mdo.md).
-
 3. [Use threat investigation and response capabilities](../security/office-365-security/office-365-ti.md).
 
 ### More information about Microsoft Defender for Office 365
