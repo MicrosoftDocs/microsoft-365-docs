@@ -27,7 +27,7 @@ Unfortunately, Edge blocks that were once *critical* are now relatively simple f
 
 Edge blocks are designed to be automatic. In the case of false positive, senders will be notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.PNG" alt-text="Phase 1 of filtering in Defender for Office 365 is Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Phase 1 of filtering in Defender for Office 365 is Edge Protection.":::
 
 1. **Network throttling** protects Office 365 infrastructure and customers from Denial of Service (DOS) attacks by limiting the number of messages that can be submitted by a specific set of infrastructure.
 
