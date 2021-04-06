@@ -30,7 +30,7 @@ The resources in this section help you learn more about what Viva Learning Previ
 |Learn more about Viva Learning Preview|[Microsoft Viva Learning Preview overview](overview-viva-learning.md)|
 |Learn how to get Viva Learning Preview|[Microsoft Viva Learning Preview product page](https://www.microsoft.com/en-us/microsoft-viva)|
 |See resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Preview Tech Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
-|Find Viva Learning guidance for end users|[Microsoft Viva Learning Preview help](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
+|Find Viva Learning Preview guidance for end users|[Microsoft Viva Learning Preview help](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
 ## Set up and administration
 
