@@ -40,11 +40,13 @@ In Microsoft 365 E5, threat protection capabilities are integrated by default. S
 
 Microsoft 365 Defender brings the signals and data together into a [unified Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center). 
 
-![Conceptual illustration of Microsoft 365 Defender dashboard](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> [!div class="mx-imgBorder"]
+> ![Conceptual illustration of Microsoft 365 Defender dashboard](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 The following illustration depicts a recommended path for deploying these individual capabilities. 
 
-![M365 threat protection signals](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+> [!div class="mx-imgBorder"]
+> ![M365 threat protection signals](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |Solution/capabilities  |Description  |
 |---------|---------|
@@ -59,24 +61,25 @@ The following illustration depicts a recommended path for deploying these indivi
 
 ## Deploy your threat protection solution
 
- The following diagram illustrates the high-level process for deploying threat protection capabilities. 
+The following diagram illustrates the high-level process for deploying threat protection capabilities. 
 
 ![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-To make sure your organization has the best protection possible, set up and deploy your security solution using a process that includes the following steps:
+To make sure your organization has the best protection possible, set up and deploy your security solution by using a process that includes the following steps:
 
-1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [Configure Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [Configure Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [Monitor status and take actions](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [Train users](deploy-threat-protection-configure.md#step-8-train-users)
+1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies).
+2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
+3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender).
+4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365).
+5. [Configure Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint).
+6. [Configure Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security).
+7. [Monitor status and take actions](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions).
+8. [Train users](deploy-threat-protection-configure.md#step-8-train-users).
 
 Your threat protection features can be configured in parallel, so if you have multiple network security teams responsible for different services, they can configure your organization’s protection features at the same time.
 
 ## Next step
 
-Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md)
+Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
+
 
