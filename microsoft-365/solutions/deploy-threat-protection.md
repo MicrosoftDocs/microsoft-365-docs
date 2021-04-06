@@ -1,6 +1,6 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
-description: Get an overview of threat protection services and security in Microsoft 365 E5.
+description: Get an overview of threat protection services and security capabilities in Microsoft 365 E5. Protect your user accounts, devices, email content, and more with Microsoft 365 E5.
 keywords: threat protection, security, E5, cyberattack, malware, M365, solution
 ms.author: deniseb
 author: denisebmsft
@@ -21,7 +21,11 @@ f1.keywords: NOCSH
 
 # Deploy threat protection capabilities across Microsoft 365 E5
 
-[Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. 
+This solution describes powerful threat protection capabilities across Microsoft 365 E5. Read this solution to get an overview of what's included, how it works, and how to get started deploying these capabilities in your organization.
+
+## Protect your organization from threats across devices, identities, apps, data, and clouds 
+
+[Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. Microsoft 365 E5 can help. 
 
 Microsoft security solutions are built into our products and services. Automation and machine learning capabilities reduce the load on your security teams to make sure the right items are addressed. And the strength of Microsoft security solutions is built on trillions of signals we process every day in our [Intelligent Security Graph](/graph/security-concept-overview). Microsoft 365 security solutions include [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
 
@@ -30,7 +34,7 @@ Watch this video for an overview of the deployment process.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
 
-## Threat protection in Microsoft 365 E5
+## Overview of threat protection in Microsoft 365 E5
 
 [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) enables you to protect your organization with adaptive, built-in intelligence. With the threat protection features in Microsoft 365 E5, you can detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environment.
 
@@ -57,7 +61,7 @@ The following illustration depicts a recommended path for deploying these indivi
 > [!TIP]
 > Organizations who have multiple security teams can implement these capabilities in parallel. 
 
-## Deploy your threat protection solution
+## Deploying your threat protection solution
 
  The following diagram illustrates the high-level process for deploying threat protection capabilities. 
 
