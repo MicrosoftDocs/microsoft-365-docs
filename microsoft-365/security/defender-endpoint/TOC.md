@@ -122,6 +122,8 @@
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 
+### [Network devices](network-devices.md)
+
 
 ### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
