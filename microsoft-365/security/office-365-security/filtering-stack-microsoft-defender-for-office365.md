@@ -1,11 +1,12 @@
 ---
-title: Step-by-Step Threat filtering stack in Microsoft Defender for Office 365 
+title: Step-by-Step Threat Protection stack in Microsoft Defender for Office 365 
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 ms.date: 04/05/2021
+ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -13,12 +14,12 @@ description: Follow the path of an incoming message through the threat filtering
 ms.technology: mdo
 ms.prod: m365-security
 ---
-# Step-by-step threat filtering in Microsoft Defender for Office 365
+# Step-by-step threat Protection in Microsoft Defender for Office 365
 
-The Microsoft Defender for Office 365 (MDO) filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's MDO configuration.
+The Microsoft Defender for Office 365 filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
 > [!TIP]
-> Stay tuned till the end of this article for a *unified* graphic of all 4 phases of MDO protection!
+> Stay tuned till the end of this article for a *unified* graphic of all 4 phases of Defender for Office 365 protection!
 
 ## Phase 1 - Edge Protection
 
@@ -26,7 +27,7 @@ Unfortunately, Edge blocks that were once *critical* are now relatively simple f
 
 Edge blocks are designed to be automatic. In the case of false positive, senders will be notified and told how to address their issue. Connectors from trusted partners with limited reputation can ensure deliverability, or temporary overrides can be put in place, when onboarding new endpoints.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.PNG" alt-text="Phase 1 of filtering in MDO is Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.PNG" alt-text="Phase 1 of filtering in Defender for Office 365 is Edge Protection.":::
 
 1. **Network throttling** protects Office 365 infrastructure and customers from Denial of Service (DOS) attacks by limiting the number of messages that can be submitted by a specific set of infrastructure.
 
@@ -82,7 +83,7 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 3. The anti-virus (AV) engines are also used to true-type all attachments, so that **Type blocking** can block all attachments of types the admin specifies.
 
-4. Whenever Microsoft Defender for Office 365 (MDO) detects a malicious attachment, the file’s hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
+4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file’s hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
 
 5. **Heuristic clustering** can determine that a file is suspicious based on delivery heuristics. When a suspicious attachment is found, the entire campaign pauses, and the file is sandboxed. If the file is found to be malicious, the entire campaign is blocked.
 
@@ -92,7 +93,7 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 8. **Content heuristics** can detect suspicious messages based on structure and word frequency within the body of the message, using machine learning models.
 
-9. **Safe attachments** sandboxes every attachment for MDO customers, using dynamic analysis to detect never-before seen threats.
+9. **Safe attachments** sandboxes every attachment for Defender for Office 365 customers, using dynamic analysis to detect never-before seen threats.
 
 10. **Linked content detonation** treats every URL linking to a file in an email as an attachment, asynchronously sandboxing the file at the time of delivery.
 
@@ -102,7 +103,7 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 The last stage takes place after mail or file delivery, acting on mail that is in various mailboxes and files and links that appear in clients like Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.PNG" alt-text="Phase 4 of filtering in MDO is Post-delivery protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.PNG" alt-text="Phase 4 of filtering in Defender for Office 365 is Post-delivery protection.":::
 
 1. **Safe Links** is MDO’s time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
@@ -116,7 +117,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 6. **The Report Message add-ins** enable people to easily report false positives (good email, mistakenly marked as *bad*) or false negatives (bad email marked as *good*) to Microsoft for further analysis.
 
-7. **Safe Links for Office clients** offers the same Safe links time-of-click protection, natively, inside of Office clients like Word, PowerPoint, and Excel. 
+7. **Safe Links for Office clients** offers the same Safe links time-of-click protection, natively, inside of Office clients like Word, PowerPoint, and Excel.
 
 8. **Protection for OneDrive, SharePoint, and Teams** offers the same Safe Attachments protection against malicious files, natively, inside of OneDrive, SharePoint, and Microsoft Teams.
 
@@ -131,6 +132,6 @@ The final diagram (as with all parts of the diagram composing it) *is subject to
 
 ## More information
 
-Do you need to set up MDO ***right now***? Use this stack, *now*, with [this step-by-step](protect-against-threats.md) to start protecting your organization.
+Do you need to set up Microsoft Defender for Office 365 ***right now***? Use this stack, *now*, with [this step-by-step](protect-against-threats.md) to start protecting your organization.
 
-*Special thanks from MSFTTracyP and the docs writing team, to Jason Rogers and Giulian Garruba for this content*.
+*Special thanks from MSFTTracyP and the docs writing team to Giulian Garruba for this content*.
