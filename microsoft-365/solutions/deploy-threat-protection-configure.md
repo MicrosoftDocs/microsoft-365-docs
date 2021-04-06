@@ -141,7 +141,7 @@ With Microsoft Defender for Office 365, people across your organization can comm
 ### More information about Microsoft Defender for Endpoint
 
 - [Learn more about Microsoft Defender for Endpoint](../security/defender-endpoint/microsoft-defender-endpoint.md).
-- [Try the Microsoft Defender for Endpoint evaluation lab](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
+- [Try the Microsoft Defender for Endpoint evaluation lab](../security/defender-endpoint/evaluation-lab.md).
 
 ## Step 6: Configure Microsoft Cloud App Security
 
