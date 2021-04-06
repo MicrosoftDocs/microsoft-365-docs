@@ -145,6 +145,7 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 You can check email message headers to see if the email messages are landing in the Inbox due to the Focused Inbox transport rule bypass. Pick an email message from a mailbox in your organization that has the Focused Inbox transport rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassFocusedInbox: true** header. This means the bypass is working. Check out the [View the Internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) article for info on how to find the header information.
 
 ### What will the user see?
+
 If a transport rule is in place, a notification will be shown for the override. Outlook on the web will disable the "Always move to Other" and show a tooltip. Outlook clients on desktop will allow selection for "Always move to Other" and will pop up a dialog.
 
 ## Turn on/off Clutter
