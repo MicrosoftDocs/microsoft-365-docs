@@ -90,6 +90,7 @@ Before the subscription actually reaches its expiration date, you have a few opt
 - **Cancel before the subscription expires.** For details, see [Cancel your subscription](cancel-your-subscription.md).
 
 ## What happens after my subscription expires?
+
 If you let your subscription expire, it goes through multiple states before it is ultimately deleted. This gives you, as the admin, time to reactivate if you want to continue the service, or to back up your data if you decide you no longer want the subscription.
   
 Here's what you can expect when your subscription is in each state.
@@ -126,7 +127,7 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 
 When your trial ends, you can't continue using Microsoft 365 for free. You have a few options:
 
-- **Buy Microsoft 365.** When your trial expires, it moves into the Expired stage, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md).
+- **Buy Microsoft 365.** When your trial expires, it moves into the Expired stage, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy a subscription from your free trial](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 
 - **Extend your trial.** Need more time to evaluate Microsoft 365? In certain cases, you can [extend your trial](../extend-your-trial.md).
 
@@ -135,7 +136,7 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 > [!NOTE]
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.
 
-## Related content 
+## Related content
 
 [Cancel your subscription](./cancel-your-subscription.md) (article)\
 [Renew Microsoft 365 for business](./renew-your-subscription.md) (article)\
