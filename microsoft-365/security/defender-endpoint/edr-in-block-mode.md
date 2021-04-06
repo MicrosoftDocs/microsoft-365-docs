@@ -1,7 +1,7 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-keywords: Microsoft Defender ATP, EDR in block mode, passive mode blocking
+keywords: Microsoft Defender ATP, mde, EDR in block mode, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -127,6 +127,9 @@ To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/
 2. Type `sc query windefend`.
 
 3. In the list of results, in the **STATE** row, confirm that the service is running.
+
+### How much time does it take for EDR in block mode to be disabled?
+If you chose to disable EDR in block mode it can take up to 30 minutes for the system to disable this capability.
 
 ## See also
 

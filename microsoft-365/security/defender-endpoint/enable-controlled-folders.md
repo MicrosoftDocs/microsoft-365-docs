@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -136,4 +136,4 @@ Use `Disabled` to turn off the feature.
 
 * [Protect important folders with controlled folder access](controlled-folders.md)
 * [Customize controlled folder access](customize-controlled-folders.md)
-* [Evaluate Microsoft Defender for Endpoint](evaluate-atp.md)
+* [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)

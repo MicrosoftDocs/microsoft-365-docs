@@ -57,9 +57,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: admin-overview/about-the-admin-center.md
-        - name: About the new admin center
-          href: microsoft-365-admin-center-preview.md
+          href: ../business-video/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -189,7 +187,7 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/what-is-a-domain.md
+      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
@@ -244,6 +242,8 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
+         - name: Test and deploy Microsoft 365 Apps in the Microsoft 365 admin center
+           href: manage/test-and-deploy-microsoft-365-apps.md
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins

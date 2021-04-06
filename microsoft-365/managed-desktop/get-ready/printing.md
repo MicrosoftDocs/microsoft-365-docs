@@ -9,6 +9,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Prepare printing resources for Microsoft Managed Desktop
@@ -32,3 +33,15 @@ If you've decided to deploy printers by using a custom PowerShell script and hav
 3.	Using the Admin Portal, we'll let you know when the request has been completed. Initially we'll only deploy the configuration to devices in the Test deployment group.
 4.	You must test and confirm whether the configuration works as you expect. Reply by using the **Discussion** tab in the Support request to let us know when you've completed your testing.
 5.	We'll then deploy the configuration to the other deployment groups.
+
+## Steps to get ready
+
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [Readiness assessment tools](readiness-assessment-tool.md).
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md) (This article)

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -22,7 +22,7 @@ description: "This article contains answers to some frequently asked questions f
 # FAQ about importing PST files
 
 **This article is for administrators. Do you want to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+
 Here are some frequently asked questions about using the Office 365 Import Service to bulk-import PST files to Microsoft 365 mailboxes. For more information about how to import PST files, see [Overview of importing PST files to Office 365](./importing-pst-files-to-office-365.md).
   
 ## Using network upload to import PST files
@@ -78,7 +78,7 @@ The PST import process checks for duplicate items and doesn't copy the items fro
 
  **Is there a message size limit when importing PST files?**
   
-Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
+Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped and not imported during the import process. Items larger than 150 MB aren't imported because 150 MB is the message size limit in Exchange Online. For more information, see [Message limits in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **Are message properties, such as when the message was sent or received, the list of recipients and other properties, preserved when PST files are imported to a Microsoft 365 mailbox?**
   
@@ -151,7 +151,7 @@ That depends on a few things, such as your proximity to the Microsoft data cente
   
  **After my hard drive arrives at the Microsoft data center, how long does it take to upload my PST files to Azure?**
   
-After your hard drive is received at the Microsoft data center, it will take between 7 to 10 business days to upload the PST files to the Azure Storage area for your organization. The PST files will be uploaded to an Azure blob container named `ingestiondata`. 
+After your hard drive is received at the Microsoft data center, it will take between 7 to 10 business days to upload the PST files to the Azure Storage area for your organization. The PST files will be uploaded to an Azure blob container named `ingestiondata`.
   
  **How long does it take to import a PST file to a mailbox?**
   
@@ -173,12 +173,12 @@ Additionally, PST files from Outlook 2007 and later versions can be imported to 
   
  **Is there a message size limit when importing PST files?**
   
-Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
+Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped and not imported during the import process. Items larger than 150 MB aren't imported because 150 MB is the message size limit in Exchange Online. For more information, see [Message limits in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **How does the PST import process handle duplicate email items?**
 
 The PST import process checks for duplicate items and doesn't copy the items from a PST file to the mailbox or archive if a matching item exists in the target folder in the target mailbox or target archive. If you reimport the same PST file and specify a different target folder (using the TargetRootFolder property in the PST import mapping file) than the one you specified in a previous import job, all items in the PST file will be reimported.
- 
+
  **Are message properties, such as when the message was sent or received, the list of recipients and other properties, preserved when PST files are imported to a Microsoft 365 mailbox?**
   
 Yes. The original message metadata isn't changed during the import process
@@ -221,4 +221,4 @@ Yes.
   
  **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+The hard drive that you ship to Microsoft might have to cross international borders. If so, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

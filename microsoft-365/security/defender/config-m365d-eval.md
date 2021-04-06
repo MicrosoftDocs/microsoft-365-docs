@@ -91,7 +91,7 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
  
 7. Next, select the **Safe Links** policy, then click the pencil icon to edit the default policy.
 
-8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) for details. Click **Save**. 
+8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) for details. Click **Save**. 
 
    ![Image of_Office 365 Security & Compliance Center page which shows that the option Do not track when users click safe is not selected](../../media/mtp-eval-38.png)
 
@@ -280,8 +280,7 @@ For a more comprehensive guidance, see [Turn on Microsoft 365 Defender](m365d-en
 
 Congratulations! You've just created your Microsoft 365 Defender trial lab or pilot environment! Now you can familiarize yourself with the Microsoft 365 Defender user interface! See what you can learn from the following Microsoft 365 Defender interactive guide and know how to use each dashboard for your day-to-day security operation tasks.
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[Check out the interactive guide](https://aka.ms/MTP-Interactive-Guide)
 
 Next, you can simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 

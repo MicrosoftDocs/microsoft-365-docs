@@ -33,7 +33,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 Begin by using administrator accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 
-Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
+Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
 Next, configure privileged access management in Office 365. Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
@@ -45,7 +45,7 @@ Another top recommendation is to use workstations specifically configured for ad
 Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant. See [Manage emergency access accounts in Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## Step 3: Configure recommended identity and device access policies
-Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md).
+Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  These policies implement the following capabilities:
 - Mult-factor authentication
@@ -58,7 +58,7 @@ Implementing Intune device compliance requires device enrollment. Managing devic
 
 ## Step 4: Configure SharePoint device access policies
 
-Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/defender-365-security/sharepoint-file-access-policies.md).
+Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
 

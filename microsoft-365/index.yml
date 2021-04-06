@@ -104,11 +104,13 @@ productDirectory:
           text: Top tasks for security teams to support working from home
         - url: solutions/configure-teams-three-tiers-protection.md
           text: Configure three tiers of protection with Microsoft Teams
-        - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+        - url: security/defender/get-started.md
+          text: Get started with Microsoft 365 Defender
+        - url: security/defender-endpoint/deployment-phases.md
           text: Deploy Microsoft Defender for Endpoint
-        - url: security/defender-365-security/defender-for-office-365.md
+        - url: security/office-365-security/defender-for-office-365.md
           text: Deploy Microsoft Defender for Office 365
-        - url: security/defender-365-security/microsoft-365-policies-configurations.md
+        - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
     - title: Protect your information and comply with regulations

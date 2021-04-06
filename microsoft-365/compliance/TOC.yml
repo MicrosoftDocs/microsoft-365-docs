@@ -701,6 +701,8 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
+            - name: Predictive coding module (preview)
+              href: predictive-coding-overview.md
             - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
@@ -712,6 +714,8 @@
               href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
+            - name: Export documents to an Azure Storage account
+              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings

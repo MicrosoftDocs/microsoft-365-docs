@@ -33,7 +33,7 @@
 #### [Phase 2: Setup](mcafee-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](mcafee-to-microsoft-defender-onboard.md)
 ### [Switch from Symantec to Microsoft Defender for Endpoint]()
-#### [Overview of migration](symantec-to-microsoft-defender-atp-migration.md)
+#### [Overview of migration](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
-### [Microsoft Defender Advanced Threat Protection for Mac]()
+### [Microsoft Defender for Endpoint for Mac]()
 #### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
@@ -140,11 +140,12 @@
 ###### [Device control overview](mac-device-control-overview.md)
 ###### [JAMF examples](mac-device-control-jamf.md)
 ###### [Intune examples](mac-device-control-intune.md)
-##### [Schedule scans](mac-schedule-scan-atp.md)
+##### [Schedule scans](mac-schedule-scan.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](mac-support-install.md)
 ##### [Troubleshoot performance issues](mac-support-perf.md)
+##### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
 ##### [Troubleshoot kernel extension issues](mac-support-kext.md)
 ##### [Troubleshoot license issues](mac-support-license.md)
 
@@ -354,7 +355,7 @@
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
-##### [Configure advanced features](advanced-features.md
+##### [Configure advanced features](advanced-features.md)
 
 #### [Permissions]()
 ##### [Use basic permissions to access the portal](basic-permissions.md)
@@ -379,6 +380,8 @@
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
+### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
@@ -388,6 +391,7 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
+#### [API release notes](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
 ###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
@@ -583,4 +587,7 @@
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
+##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
+# [Microsoft 365 Defender](../index.yml)
+# [Defender for Office 365](../office-365-security/overview.md)

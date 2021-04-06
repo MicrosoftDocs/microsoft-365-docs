@@ -29,7 +29,7 @@ It’s important to manage who in your organization has access to the Microsoft 
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 
-For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ## Task 2: Know your state of compliance
 
@@ -44,7 +44,7 @@ For step-by-step guidance to get started with Compliance Manager, see [Get start
 >
 >Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
 >
-> - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/defender-365-security/security-roadmap.md)
+> - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
 > - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)
 
 ## Task 3: Enable auditing for your organization
