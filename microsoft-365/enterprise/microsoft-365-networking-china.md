@@ -78,12 +78,12 @@ You need to consider how to leverage these network improvements, given that the 
 
 1.	Do nothing new. Continue to follow the earlier guidance around private network bypass to avoid cross-border congestion. Teams real-time media traffic will leverage that setup, as before.
 2.	Implement a split/hybrid pattern. 
-  - Use the previous guidance for all traffic flagged for optimization except Teams meetings and calling real-time media
 
-  -	Route Teams meeting and calling real-time media over the public internet. See the following information for specifics on identifying the real-time media network traffic.
+  - Use the previous guidance for all traffic flagged for optimization except Teams meetings and calling real-time media traffic.
 
-Sending Teams real-time media audio and video traffic over the public internet, which uses the higher quality connectivity, can save organizations considerable money, because it is free versus paying to send that traffic over a private network. There may be similar additional benefits if users are also using SDWAN or VPN clients. Some organizations may also prefer to have more of their data traverse public internet connections as a general practice.
+  -	Route Teams meeting and calling real-time media traffic over the public internet. See the following information for specifics on identifying the real-time media network traffic.
 
+Sending Teams real-time media audio and video traffic over the public internet, which uses the higher quality connectivity, can result in considerable cost savings, because it is free versus paying to send that traffic over a private network. There may be similar additional benefits if users are also using SDWAN or VPN clients. Some organizations may also prefer to have more of their data traverse public internet connections as a general practice.
 
 The same options could apply to SDWAN or VPN configurations. For example, a user is using an SDWAN or VPN to route Microsoft 365 traffic to the corporate network and then leveraging the private extension of that network to avoid cross-border congestion. The user’s SDWAN or VPN can now be configured to exclude Teams meeting and calling real-time traffic from the VPN routing. This VPN configuration is referred to as split tunnelling. See [VPN split tunneling for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel) for more information.
 
