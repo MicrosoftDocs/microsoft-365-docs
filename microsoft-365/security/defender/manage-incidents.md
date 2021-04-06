@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -77,4 +77,4 @@ Whenever a change or comment is made to an alert, it is recorded in the Comments
 Added comments instantly appear on the pane.
 
 ## Add incident tags
-You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
+You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incidents queue for all incidents that contain a specific tag.

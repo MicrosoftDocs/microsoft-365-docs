@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -111,12 +111,16 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Recommended actions**—additional actions that responders might take in response to an alert
 
 #### Rule frequency
-When you save or edit a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
+When you save a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
 - **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
 - **Every hour**—runs hourly, checking data from the past 2 hours
+
+When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set.
+
+
 
 >[!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.  

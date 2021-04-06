@@ -1,6 +1,6 @@
 ---
-title: Manual deployment for Microsoft Defender ATP for macOS
-description: Install Microsoft Defender ATP for macOS manually, from the command line.
+title: Manual deployment for Microsoft Defender for Endpoint for macOS
+description: Install Microsoft Defender for Endpoint for macOS manually, from the command line.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -59,20 +59,20 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![App install screenshot1](images/mdatp-28-appinstall.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-    ![App install screenshot2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![App install screenshot2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
-   ![App install screenshot3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![App install screenshot3](images/mdatp-30-systemextension.png)
 
 3. Select **Open Security Preferences** or **Open System Preferences > Security & Privacy**. Select **Allow**:
 
-    ![Security and privacy window screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Security and privacy window screenshot](images/mdatp-31-securityprivacysettings.png)
 
    The installation proceeds.
 
@@ -92,7 +92,7 @@ To complete this process, you must have admin privileges on the device.
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
-3. At the end of the installation process, you will be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
     ![System extension approval](images/big-sur-install-2.png)
 
@@ -114,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
 1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.py to the device where you deploy Microsoft Defender for Endpoint for macOS.
 
-    The client device is not associated with orgId. Note that the *orgId* attribute is blank.
+    The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
 
     ```bash
     mdatp health --field org_id
@@ -126,23 +126,96 @@ To complete this process, you must have admin privileges on the device.
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Verify that the device is now associated with your organization and reports a valid *orgId*:
+3. Verify that the device is now associated with your organization and reports a valid org ID:
 
     ```bash
     mdatp health --field org_id
     ```
 
-After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+    After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
 
-   ![Microsoft Defender icon in status bar screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
-   
 
 ## How to Allow Full Disk Access
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
 
-To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
+1. To grant consent, open **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
+
+2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+    1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. Open a Terminal window. Copy and execute the following command:
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+   1. In your browser such as Microsoft Edge for Mac or Safari.
+
+   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+
+      You may be prompted:
+
+      > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?<br/>
+      > You can change which websites can download files in Websites Preferences.
+
+4. Click **Allow**.
+
+5. Open **Downloads**.
+
+6. You should see **MDATP MacOS DIY**.
+
+   > [!TIP]
+   > If you double-click, you will get the following message:
+   > 
+   > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
+   > > macOS cannot verify that this app is free from malware.<br/>
+   > > **\[Move to Trash\]** **\[Cancel\]** 
+  
+7. Click **Cancel**.
+
+8. Right-click **MDATP MacOS DIY**, and then click **Open**. 
+
+    The system should display the following message:
+
+	> **macOS cannot verify the developer of **MDATP MacOS DIY**. Are you sure you want to open it?**<br/>
+	> By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+
+10. Click **Open**.
+
+    The system should display the following message:
+
+	> Microsoft Defender ATP - macOS EDR DIY test file<br/>
+	> Corresponding alert will be available in the MDATP portal.
+
+11. Click **Open**.
+
+    In a few minutes an alert named "macOS EDR Test Alert" should be raised.
+
+12.	Go to Microsoft Defender Security Center (https://SecurityCenter.microsoft.com).
+
+13.	Go to the Alert Queue.
+
+	:::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Example of a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.":::
+	
+	Look at the alert details and the device timeline, and perform the regular investigation steps.
 
 ## Logging installation issues
 

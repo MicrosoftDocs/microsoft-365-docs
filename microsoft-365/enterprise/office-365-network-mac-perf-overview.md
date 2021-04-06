@@ -144,6 +144,10 @@ The details tab on the office location page shows the specific measurement resul
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+## Sharing network assessment data with Microsoft
+
+By default, the network assessments for your organization and the network insights are shared with Microsoft employees. This does not include any personal data from your staff but only the specific network assessment metrics and network insights shown in the admin center for your office locations. It also does not include your office location names or street addresses so you would need to tell them the city and support ID of the office you want to discuss. If this is turned off, the Microsoft engineers that you are discussing your network connectivity with cannot view any of this information. Enabling this setting only shares future data starting the day after you enable it.
+
 ## CSV Import for LAN subnet office locations
 
 For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
@@ -196,6 +200,10 @@ An optimal Microsoft 365 service front door is one that is closest to your netwo
 ### What is an internet egress location?
 
 The internet egress location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, then this may indicate a significant WAN backhaul.
+
+### What license is needed for this capability?
+
+You require a  license that provides access to the Microsoft 365 admin center.
 
 ## Related topics
 

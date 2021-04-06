@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
+description: "Ready to deploy sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
 ---
 
 # Get started with sensitivity labels
@@ -27,9 +27,7 @@ description: "Ready to start implementing sensitivity labels to help protect you
 
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
-If you have [Azure Information Protection](/azure/information-protection/what-is-information-protection), determine whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
-- [How can I determine if my tenant is on the unified labeling platform?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+If you have [Azure Information Protection](/azure/information-protection/what-is-information-protection) and still using Azure Information Protection labels that were managed from the Azure portal, you must migrate these labels to the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). For Windows computers, you can then [choose which labeling client to use](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) for your published sensitivity labels.
 
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
@@ -59,7 +57,7 @@ By default, global administrators for your tenant have access to these admin cen
 
 Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
-For instructions to add users to the default roles or create your own role groups, see [Give users access to the Office 365 Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+For instructions to add users to the default roles or create your own role groups, see [Give users access to the Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 

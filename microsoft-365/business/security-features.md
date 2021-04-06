@@ -2,8 +2,8 @@
 title: "Microsoft 365 Business Premium security and compliance features"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: reference
@@ -58,7 +58,7 @@ You can manage many of the Microsoft 365 Business Premium security features in t
 
 Advanced features in Microsoft 365 Business Premium are available to help you protect your business against cyber-threats and safeguard sensitive information.
   
-- **[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md)**
+- **[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)**
     
     Microsoft Defender for Office 365 helps guard your business against sophisticated phishing and ransomware attacks designed to compromise employee or customer information. Features include:
     

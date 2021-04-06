@@ -2,8 +2,8 @@
 title: "Top 10 ways to secure Microsoft 365 for business plans"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -127,7 +127,7 @@ Your Microsoft 365 environment includes protection against malware, but you can 
 
 6. Select **Save.**
 
-For more information, see [Anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection).
+For more information, see [Anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
 
 ## 5: Protect against ransomware
 <a name="ransomware"> </a>
@@ -249,7 +249,7 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 
 4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) for more details.
+5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) for more details.
 
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
@@ -265,7 +265,7 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.|
 |
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## 9: Protect against malicious attachments and files with Safe Attachments
 <a name="atp"> </a>
@@ -297,7 +297,7 @@ To create an Safe attachment policy, view a [short training video](https://suppo
 |Applied to|The recipient domain is . . . select your domain.|
 |
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## 10: Protect against phishing attacks with Safe Links
 <a name="phishingatp"> </a>
@@ -344,4 +344,4 @@ To create a new policy targeted to all recipients in your domain:
 |Applied to|The recipient domain is . . . select your domain.|
 |
 
-For more information, see [Safe Links in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links).
+For more information, see [Safe Links in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
