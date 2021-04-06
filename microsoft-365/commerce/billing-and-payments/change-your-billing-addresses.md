@@ -12,18 +12,12 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
+- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
 
 ---
@@ -44,34 +38,46 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ## Change your Sold-To address
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** > **Payment methods** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** > **Payment methods** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.
+
 ::: moniker-end
 
-2. select **Edit billing account information**.
+2. Select **Edit billing account information**.
 
 3. Update your organization information, then select **Save**.
   
 ## Change your Bill-To address
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-In the admin center, go to the **Billing** > **Payment methods** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-In the admin center, go to the **Billing** > **Payment methods** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.
+
 ::: moniker-end
 
 2. Select the credit card or bank account that you want to change.
@@ -85,6 +91,7 @@ In the admin center, go to the **Billing** > **Payment methods** page.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -96,9 +103,10 @@ In the admin center, go to the **Billing** > **Payment methods** page.
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
-::: moniker-end
 
-If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+    If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+
+::: moniker-end
 
 2. On the **Products** tab, select the subscription that you want to change.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
@@ -130,24 +138,23 @@ You can also change the alternate email address of other global and billing admi
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the [Billing notifications](https://go.microsoft.com/fwlink/p/?linkid=853213) page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-In the admin center, go to the [Billing notifications](https://go.microsoft.com/fwlink/p/?linkid=853215) page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
+
 ::: moniker-end
 
 2. On the **Billing notifications** page, select the admin you want to change.
 
 3. In the **Edit user roles** pane, type the alternate email address you want to use, then select **Save**.
 
-## Related articles
+## Related content
 
-[View your bill or invoice](view-your-bill-or-invoice.md)
-
-[Understand your bill or invoice](understand-your-invoice2.md)
-
-[Pay for your subscription](pay-for-your-subscription.md)
-
+[View your bill or invoice](view-your-bill-or-invoice.md)\
+[Understand your bill or invoice](understand-your-invoice2.md)\
+[Pay for your subscription](pay-for-your-subscription.md)\
 [Subscriptions and billing - Admin Help](../index.yml)
