@@ -70,12 +70,19 @@ The following illustration depicts a recommended path for deploying these indivi
 To make sure your organization has the best protection possible, set up and deploy your security solution using a process that includes the following steps:
 
 1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
+
 2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
+
 3. [Turn on Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
+
 4. [Configure Defender for Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
+
 5. [Configure Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
+
 6. [Configure Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
+
 7. [Monitor status and take actions](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
+
 8. [Train users](deploy-threat-protection-configure.md#step-8-train-users)
 
 Your threat protection features can be configured in parallel, so if you have multiple network security teams responsible for different services, they can configure your organization’s protection features at the same time.
