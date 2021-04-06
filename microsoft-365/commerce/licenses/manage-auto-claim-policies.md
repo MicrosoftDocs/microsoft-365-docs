@@ -44,7 +44,7 @@ manage the policy:
 
 ## Before you begin
 
-You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global, User, or License admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 
@@ -56,6 +56,8 @@ By default, the auto-claim policy feature is turned off. Before you can use the 
 2. In the center of the page, select the **Turn on setting** button.
 
 ### Turn off auto-claim policies
+
+Only a Global admin can turn off an auto-claim policy setting.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
 2. Near the bottom of the table, select **User owned apps and services**.
