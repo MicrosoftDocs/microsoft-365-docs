@@ -87,7 +87,7 @@ If successful, this method returns 200 OK, and _QueryResponse_ object in the res
 
 ## Example
 
-#### Request
+##### Request
 
 Here is an example of the request.
 
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-#### Response
+##### Response
 
 Here is an example of the response.
 
