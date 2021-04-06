@@ -1,12 +1,17 @@
 ---
 title: Register new devices yourself
 description: Register devices yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register new devices yourself
@@ -14,7 +19,7 @@ ms.localizationpriority: medium
 Microsoft Managed Desktop can work with brand-new devices or you can reuse devices you might already have (which will require that you reimage them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 > [!NOTE]
-> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
+> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
 
 ## Prepare to register brand-new devices
 
@@ -37,7 +42,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### PowerShell script method
 
-You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
+You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](/mem/autopilot/add-devices#device-identification).
 
 1.	Open a PowerShell prompt with administrative rights.
 2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -116,8 +121,3 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
-
-
-
-

@@ -78,7 +78,7 @@ Additionally, if a retention policy is applied to Teams, the conversations are r
 
 ### Archiving a team
 
-The benefit of [archiving a team](https://docs.microsoft.com/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they are not active. Additionally, teams can be unarchived if there is a need to continue working on them (such as in the case of a project extension).
+The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they are not active. Additionally, teams can be unarchived if there is a need to continue working on them (such as in the case of a project extension).
 
 When a team is archived by an owner, it is set to read-only for members both for content within the team as well as if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
@@ -182,11 +182,11 @@ Power BI data and workspaces can operate independently from groups and teams and
 
 **Copy reports to another workspace**
 
-If the report needs to be preserved in its functional state beyond the life of the group or team, it can be [copied from the existing workspace to another workspace within Power BI](https://docs.microsoft.com/power-bi/connect-data/service-datasets-copy-reports).
+If the report needs to be preserved in its functional state beyond the life of the group or team, it can be [copied from the existing workspace to another workspace within Power BI](/power-bi/connect-data/service-datasets-copy-reports).
 
 **Export data from a dashboard or report**
 
-Alternatively, if the report no longer needs to be active but the data needs to be retained, it can be [exported to Excel](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+Alternatively, if the report no longer needs to be active but the data needs to be retained, it can be [exported to Excel](/power-bi/visuals/power-bi-visualization-export-data).
 
 ## Project
 
@@ -194,11 +194,11 @@ Projects and Roadmaps created in Project on the web can be associated with Micro
 
 **Assign the project to another group**
 
-If the project needs to be preserved in its functional state beyond the life of the group or team, it can be [assigned to a different Microsoft 365 group](https://docs.microsoft.com/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) using the Dynamics 365 Administration Center.
+If the project needs to be preserved in its functional state beyond the life of the group or team, it can be [assigned to a different Microsoft 365 group](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) using the Dynamics 365 Administration Center.
 
 **Export data from the project or roadmap**
 
-Using the Dynamics 365 Administration Center it is possible to [export user data from the project](https://docs.microsoft.com/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet, or if using a PowerShell script the data can be exported to Project file (.MPP) and XML file formats.
+Using the Dynamics 365 Administration Center it is possible to [export user data from the project](/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet, or if using a PowerShell script the data can be exported to Project file (.MPP) and XML file formats.
 
 ## SharePoint
 All files in team channels are stored in the document library in the SharePoint site of the associated group. In some cases, content other than documents may exist in SharePoint, such as lists or pages.
@@ -237,11 +237,11 @@ Like Power Automate, videos in Stream associated with a group or team are not ac
 
 **Adding other owners**
 
-As the video is retained in Stream regardless of group deletion, the original owner can [share the video with other users and groups, even adding them as owners](https://docs.microsoft.com/stream/portal-edit-video).
+As the video is retained in Stream regardless of group deletion, the original owner can [share the video with other users and groups, even adding them as owners](/stream/portal-edit-video).
 
 **Download the video**
 
-In scenarios where the video does not need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can be [download it locally](https://docs.microsoft.com/stream/portal-download-video)
+In scenarios where the video does not need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can be [download it locally](/stream/portal-download-video)
 
 ## Yammer
 
@@ -253,4 +253,4 @@ Conversations can be moved to another Yammer group by any user, not just owners 
 
 **Export network data**
 
-Yammer network administrators can perform an [export of network data](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data), however doing so will export all conversations for the entire network. The resulting export however lists the Group ID, so it is possible to filter conversations based on this.
+Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data), however doing so will export all conversations for the entire network. The resulting export however lists the Group ID, so it is possible to filter conversations based on this.

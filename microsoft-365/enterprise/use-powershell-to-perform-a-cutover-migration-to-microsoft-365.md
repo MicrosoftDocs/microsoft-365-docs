@@ -1,7 +1,7 @@
 ---
 title: "Use PowerShell to perform a cutover migration to Microsoft 365"
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -23,40 +23,40 @@ description: Learn how to use PowerShell to move the contents from a source emai
 
 You can migrate the contents of user mailboxes from a source email system to Microsoft 365 all at once by using a cutover migration. This article walks you through the tasks for an email cutover migration by using Exchange Online PowerShell.
 
-By reviewing the topic, [What you need to know about a cutover email migration to Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536688), you can get an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
+By reviewing the topic, [What you need to know about a cutover email migration to Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration), you can get an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
 
 > [!NOTE]
-> You can also use the Exchange admin center to perform a cutover migration. See [Perform a cutover migration of email to Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689).
+> You can also use the Exchange admin center to perform a cutover migration. See [Perform a cutover migration of email to Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365).
 
 ## What do you need to know before you begin?
 
-Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Microsoft 365, see [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Microsoft 365, see [Migration Performance](/Exchange/mailbox-migration/office-365-migration-best-practices).
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in a table in the [Recipients Permissions](https://go.microsoft.com/fwlink/p/?LinkId=534105) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in a table in the [Recipients Permissions](/exchange/recipients-permissions-exchange-2013-help) topic.
 
-To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121) for instructions.
+To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) for instructions.
 
-For a full list of migration commands, see [Move and migration cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=534750).
+For a full list of migration commands, see [Move and migration cmdlets](/powershell/exchange/).
 
 ## Migration steps
 
 ### Step 1: Prepare for a cutover migration
 <a name="BK_Step1"> </a>
 
-- **Add your on-premises Exchange organization as an accepted domain of your Microsoft 365 organization.** The migration service uses the SMTP address of your on-premises mailboxes to create the Microsoft Online Services user ID and email address for the new Microsoft 365 mailboxes. Migration will fail if your Exchange domain isn't an accepted domain or the primary domain of your Microsoft 365 organization. For more information, see [Verify your domain](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Add your on-premises Exchange organization as an accepted domain of your Microsoft 365 organization.** The migration service uses the SMTP address of your on-premises mailboxes to create the Microsoft Online Services user ID and email address for the new Microsoft 365 mailboxes. Migration will fail if your Exchange domain isn't an accepted domain or the primary domain of your Microsoft 365 organization. For more information, see [Verify your domain](../admin/setup/add-domain.md).
 
 - **Configure Outlook Anywhere on your on-premises Exchange server.** The email migration service uses RPC over HTTP, or Outlook Anywhere, to connect to your on-premises Exchange server. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following:
 
-  - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=187249)
+  - [Exchange 2010: Enable Outlook Anywhere](/previous-versions/office/exchange-server-2010/bb123542(v=exchg.141))
 
-  - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007: How to Enable Outlook Anywhere](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-  - [Exchange 2003: Deployment Scenarios for RPC over HTTP](https://go.microsoft.com/fwlink/?LinkID=73657)
+  - [Exchange 2003: Deployment Scenarios for RPC over HTTP](/previous-versions/tn-archive/bb124876(v=exchg.65))
 
-  - [How to Configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
+  - [How to Configure Outlook Anywhere with Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
     > [!IMPORTANT]
-    > Your Outlook Anywhere configuration must be configured with a certificate issued by a trusted certification authority (CA). It can't be configured with a self-signed certificate. For more information, see [How to Configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875).
+    > Your Outlook Anywhere configuration must be configured with a certificate issued by a trusted certification authority (CA). It can't be configured with a self-signed certificate. For more information, see [How to Configure SSL for Outlook Anywhere](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
 
 - **Verify that you can connect to your Exchange organization using Outlook Anywhere.** Try one of these methods to test your connection settings:
 
@@ -95,9 +95,9 @@ For a full list of migration commands, see [Move and migration cmdlets](https://
 ### Step 2: Create a migration endpoint
 <a name="BK_Step2"> </a>
 
-To migrate email successfully, Microsoft 365 needs to connect and communicate with the source email system. To do this, Microsoft 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint for cutover migration, first [connect to Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121).
+To migrate email successfully, Microsoft 365 needs to connect and communicate with the source email system. To do this, Microsoft 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint for cutover migration, first [connect to Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-For a full list of migration commands, see [Move and migration cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=534750).
+For a full list of migration commands, see [Move and migration cmdlets](/powershell/exchange/).
 
 Run the following commands in Exchange Online PowerShell:
 
@@ -105,7 +105,7 @@ Run the following commands in Exchange Online PowerShell:
 $Credentials = Get-Credential
 ```
 
-The example uses the [Test-MigrationServerAvailability](https://go.microsoft.com/fwlink/p/?LinkId=534752) cmdlet to obtain and test the connection settings to the on-premises Exchange server, and then uses those connection settings to create the migration endpoint called "CutoverEndpoint".
+The example uses the [Test-MigrationServerAvailability](/powershell/module/exchange/test-migrationserveravailability) cmdlet to obtain and test the connection settings to the on-premises Exchange server, and then uses those connection settings to create the migration endpoint called "CutoverEndpoint".
 
 ```powershell
 $TSMA = Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress administrator@contoso.com -Credentials $credentials
@@ -194,7 +194,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### Section 7: Assign user licenses
 <a name="BK_Step7"> </a>
 
- **Activate Microsoft 365 user accounts for the migrated accounts by assigning licenses.** If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign or unassign licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+ **Activate Microsoft 365 user accounts for the migrated accounts by assigning licenses.** If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign or unassign licenses](../admin/manage/assign-licenses-to-users.md).
 
 ### Step 8: Complete post-migration tasks
 <a name="BK_Step8"> </a>
@@ -212,16 +212,14 @@ Remove-MigrationBatch -Identity CutoverBatch
 
   - **Target:** autodiscover.outlook.com
 
-    For more information, see [Add DNS records to connect your domain](https://go.microsoft.com/fwlink/p/?LinkId=535028).
+    For more information, see [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 - **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Microsoft 365 mailboxes, and you no longer need to maintain your on-premises email organization or don't plan on implementing a single sign-on (SSO) solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
 
     For more information, see the following:
 
-  - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+  - [Modify or Remove Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-  - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [How to Remove an Exchange 2007 Organization](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
-  - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
-
-
+  - [How to Uninstall Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))

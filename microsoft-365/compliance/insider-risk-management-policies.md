@@ -18,6 +18,8 @@ ms.collection: m365-security-compliance
 
 Insider risk management policies determine which users are in-scope and which types of risk indicators are configured for alerts. You can quickly create a policy that applies to all users in your organization or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. Using templates, you can select specific risk indicators and customize event thresholds for policy indicators, effectively customizing risk scores, and level and frequency of alerts. Additionally, risk score boosters and anomaly detections help identify user activity that is of higher importance or more unusual. Policy windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
+Check out the [Insider Risk Management Policies Configuration video](https://www.youtube.com/watch?v=kudK5ajZTUo) for an overview of how policies created with built-in policy templates can help you to quickly take action on potential risks.
+
 ## Policy dashboard
 
 The **Policy dashboard** allows you to quickly see the policies in your organization, the health of the policy, manually add users to policies, and the view the status of alerts associated with each policy.
@@ -273,7 +275,7 @@ Complete the following steps to create a new policy:
 
 11. If you selected **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use these detail pages to define the SharePoint, sensitive info types, and sensitivity labels to prioritize in the policy.
 
-    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 
@@ -318,7 +320,7 @@ Complete the following steps to manage an existing policy:
 
 11. If you selected **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use these detail pages to define the SharePoint, sensitive info types, and sensitivity labels to prioritize in the policy.
 
-    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint organizations you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 
@@ -349,14 +351,20 @@ Complete the following steps to copy an existing policy:
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
 
-## Add users to a policy
+## Immediately start scoring user activity
 
-There may be scenarios where you need to add temporarily users to insider risk policies after an unusual event is reported outside of the insider risk management workflow. Use Start scoring activity for users on the Policies tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy. Users manually added to policies are displayed in the Users dashboard.
+There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds.
+
+Some scenarios where you may want to immediately start scoring user activities:
+
+- When users are identified with risk concerns and you want to immediately start assigning risk scores to their activity for one or more of your policies
+- When there is an incident that may require you to immediately start assigning risk scores to involved users' activity for one or more of your policies
+- When you have not configured your HR connector yet, but you want to start assigning risk scores to user activities for HR events by uploading a .csv file for the users
 
 >[!NOTE]
->It may take several hours for new manually-added users to appear in the Users dashboard. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, navigate to the Users tab and select the user on the Users dashboard and open the User activity tab on the details pane.
+>It may take several hours for new manually-added users to appear in the **Users** dashboard. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, navigate to the **Users** tab and select the user on the **Users** dashboard and open the **User activity** tab on the details pane.
 
-To manually add a user(s) to one or more insider risk management policies, complete the following steps:
+To manually start scoring activity for users in one or more insider risk management policies, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy or policies you want to add users to.

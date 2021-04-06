@@ -108,4 +108,4 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

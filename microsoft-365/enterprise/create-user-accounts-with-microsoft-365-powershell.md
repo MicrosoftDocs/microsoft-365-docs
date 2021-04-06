@@ -40,9 +40,9 @@ When you create user accounts in PowerShell, certain account properties are alwa
 |**UsageLocation** <br/> |No  <br/> |This is a valid ISO 3166-1 alpha-2 country code. For example, *US* for the United States, and *FR* for France. It's important to provide this value, because some Microsoft 365 services aren't available in certain countries. You can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->[Learn how to create user accounts](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) by using the Microsoft 365 admin center.
+>[Learn how to create user accounts](../admin/add-users/add-users.md) by using the Microsoft 365 admin center.
 > 
-> For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+> For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
 >   
 
 ## Use the Azure Active Directory PowerShell for Graph module

@@ -40,9 +40,9 @@ This topic describes how to use each of these methods to diagnose performance is
 
 In this article we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
   
-- [What's new in F12 Tools](https://go.microsoft.com/fwlink/p/?LinkId=522545)
+- [What's new in F12 Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
-- [Using the F12 developer tools](https://go.microsoft.com/fwlink/p/?LinkId=522546)
+- [Using the F12 developer tools](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v=vs.85))
 
 To bring up the developer tools press **F12** and then click the Wi-Fi icon:
   
@@ -70,7 +70,7 @@ In SharePoint Online, you can access the information that is sent back to the br
 
 ### To view SharePoint response header information
   
-1. Ensure that you have the F12 tools installed. For more information on downloading and installing these tools, see [What's new in F12 tools](https://go.microsoft.com/fwlink/p/?LinkId=522545).
+1. Ensure that you have the F12 tools installed. For more information on downloading and installing these tools, see [What's new in F12 tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)).
 
 2. In the F12 tools, on the **Network** tab, press the green play button to load a page.
 

@@ -42,9 +42,9 @@ There are a few things you need to set up to run the commands and scripts descri
 
 ### Step 1: Download and install the Azure Active Directory Module for Windows PowerShell
 
-For more info on these steps, see [Connect to Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
-1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950) and select  **Download for Microsoft Online Services Sign-in Assistant**.   
+1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950) and select  **Download for Microsoft Online Services Sign-in Assistant**.
 
 2. Install the Microsoft Azure Active Directory Module for Windows PowerShell with these steps:
 
@@ -93,7 +93,7 @@ To run the Get-MsolUserDeviceComplianceStatus.ps1 script, you need to enable
 
     Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
 
-For more examples, see  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721).
+For more examples, see  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939).
 
 ## Run a script to get device details
 
@@ -290,7 +290,7 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
     $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_.ObjectId }
 
-4. Run the following command to initiate the script.   
+4. Run the following command to initiate the script.
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
@@ -298,8 +298,8 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 ## Related topics
 
-[Microsoft Connect Has Been Retired](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect Has Been Retired](/collaborate/connect-redirect)
 
 [Overview of Basic Mobility and Security](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

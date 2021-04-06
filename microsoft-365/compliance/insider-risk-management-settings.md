@@ -212,7 +212,7 @@ For each of the following domain settings, you can enter up to 500 domains:
     - Files, folders, sites shared with external domains
     - Files uploaded to external domains (using Microsoft Edge browser)
 
-    By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address). You can't include your SharePoint sites as allowed domains. 
+    By specifying allowed domains in settings, this activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for activity related to the device indicator *Use a browser to download content from a third-party site*.
 
@@ -479,7 +479,7 @@ Enabling Microsoft Teams support for cases is quick and easy to configure. To en
 
 If you enable Microsoft Teams support for insider risk management after you have existing cases, you'll need to manually create a team for each case as needed. After enabling Microsoft Teams support in insider risk management settings, new cases will automatically create a new Microsoft Teams team.
 
-Users need permission to create Microsoft 365 groups in your organization to create a Microsoft Teams team from a case. For more information about managing permissions for Microsoft 365 Groups, see [Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups).
+Users need permission to create Microsoft 365 groups in your organization to create a Microsoft Teams team from a case. For more information about managing permissions for Microsoft 365 Groups, see [Manage who can create Microsoft 365 Groups](../solutions/manage-creation-of-groups.md).
 
 To create a team for a case, you'll use the Create Microsoft Team control when working directly in an existing case. Complete the following steps to create a new team:
 
@@ -498,12 +498,14 @@ Insider risk analytics enables you to conduct an evaluation of potential insider
 - Minimal privacy requirements: Scan results and insights are returned as anonymized user activity, individual user names are not identifiable by reviewers.
 - Understand potential risks through consolidated insights: Scan results can help you quickly identify potential risk areas for your users and which policy would be best to help mitigate these risks.
 
+Check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
+
 Analytics scans for risk activity events from several sources to help identify insights into potential areas of risk. Depending on your current configuration, analytics looks for qualifying risk activities in the following areas:
 
-- Microsoft 365 audit logs: Included in all scans, this is the primary source for identifying most of the potentially risky activities.
-- Exchange Online: Included in all scans, Exchange Online activity helps identify activities where data in attachments are emailed to external contacts or services.
-- Azure Active Directory: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
-- Microsoft 365 HR data connector: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
+- **Microsoft 365 audit logs**: Included in all scans, this is the primary source for identifying most of the potentially risky activities.
+- **Exchange Online**: Included in all scans, Exchange Online activity helps identify activities where data in attachments are emailed to external contacts or services.
+- **Azure Active Directory**: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
+- **Microsoft 365 HR data connector**: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
 
 Analytics insights from scans are based on the same risk activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 30 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 30 days of activity.
 
