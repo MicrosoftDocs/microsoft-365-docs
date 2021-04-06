@@ -66,23 +66,26 @@ More networking vendors and OS will be added over time, based on data gathered f
 
 Your first step is to select a device that will perform the authenticated network scans.
 
-1. Decide on a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
+1. Decide on a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning. 
 
-2. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).  
+2. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
 
-3. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. ‘SNMP write’ isn't needed for the proper functionality of this feature.
+3. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).  
 
-4. Obtain the IP addresses of the network devices to be scanned (or the subnets where these devices are deployed).
+4. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. ‘SNMP write’ isn't needed for the proper functionality of this feature.
 
-5. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You’ll be required to provide the credentials when configuring a new assessment job.  
+5. Obtain the IP addresses of the network devices to be scanned (or the subnets where these devices are deployed).
 
-6. Proxy client configuration: No extra configuration is required other than the Defender for Endpoint device proxy requirements.
+6. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You’ll be required to provide the credentials when configuring a new assessment job.  
 
-7. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
+7. Proxy client configuration: No extra configuration is required other than the Defender for Endpoint device proxy requirements.
+
+8. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
 
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
+    - *.blob.core.windows.net/networkscannerstable/*
 
     Note: These URLs are not specified in the Defender for Endpoint documented list of allowed data collection.
 
@@ -154,11 +157,7 @@ Verify that the required URLs are added to the allowed domains in your firewall 
 
 ### The Microsoft.com/devicelogin web page did not show up
 
-Verify that the required URLs are added to the allowed domains in your firewall. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
-
-### Duplication of network devices in device inventory
-
-To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.  
+Verify that the required URLs are added to the allowed domains in your firewall. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ### Network devices are not shown in the device inventory after several hours
 
