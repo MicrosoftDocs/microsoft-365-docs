@@ -33,7 +33,7 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a list of all the vulnerabilities affecting the organization.
+Retrieves a list of all the vulnerabilities.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
