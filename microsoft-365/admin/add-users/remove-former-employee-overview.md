@@ -28,10 +28,10 @@ description: "Follow the steps in this solution to remove a former employee from
 
 # Remove or Delete a former employee
 
-A question we often get is, "What should I do to protect data when an employee leaves the organization?" This article explains how to block access to Microsoft 365 and the steps you should take to secure your data.
-  
-> [!NOTE]
-> If you are a global administrator you can delete the employee, forward their email, choose what to do with their OneDrive content using the new guided experience. For more information, see [Global admin: Delete a user](remove-former-employee.md). However, we recommend completing all of the additional steps listed here to ensure the employee doesn't have access to your company's data.
+A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data and how to allow other employees to access the data. Each step is explained in detail in the articles in this series.
+
+> [!IMPORTANT]
+> Although we've numbered the steps in this solution, you don't have to complete the solution using the exact order, but we do recommend doing the steps this way.
 
 ## Before you begin
 
@@ -43,8 +43,6 @@ You need to be a global administrator to complete the steps in this solution.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-This solution takes you through the process of removing a former employee. Each step is explained in detail in the articles in this solution. Although we've numbered the steps in this solution, you don't have to complete the solution using the exact order, but we do recommend doing the steps this way.
-  
 |||
 |:-----|:-----|
 |**Step** <br/> |**Why do this** <br/> |
