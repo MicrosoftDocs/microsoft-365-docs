@@ -1,5 +1,5 @@
 ---
-title: Step-by-step Threat Protection stack in Microsoft Defender for Office 365 
+title: Step-by-step threat protection stack in Microsoft Defender for Office 365 
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -14,9 +14,9 @@ description: Follow the path of an incoming message through the threat filtering
 ms.technology: mdo
 ms.prod: m365-security
 ---
-# Step-by-step threat Protection in Microsoft Defender for Office 365
+# Step-by-step threat protection in Microsoft Defender for Office 365
 
-The Microsoft Defender for Office 365 filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
+The Microsoft Defender for Office 365 protection or filtering stack can be broken out into 4 phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
 > [!TIP]
 > Stay tuned till the end of this article for a *unified* graphic of all 4 phases of Defender for Office 365 protection!
