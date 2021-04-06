@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Viva Learning overview"
+title: "Microsoft Viva Learning Preview overview"
 ms.author: daisyfeller
-author: 
+author: daisyfeller
 manager: pamgreen
-ms.reviewer: 
+ms.reviewer: chrisarnoldmsft
 audience: admin
 ms.topic: article
 ms.service: 
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn about Microsoft Viva Learning."
+description: "Learn about Microsoft Viva Learning Preview."
 ---
 
-# Microsoft Viva Learning overview 
+# Microsoft Viva Learning Preview overview 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center"
+title: "Configure learning content sources for Microsoft Viva Learning Preview in the Microsoft 365 admin center"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: 
+ms.reviewer: chrisarnoldmsft
 audience: admin
 ms.topic: article
 ms.service: 
@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn how to configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center."
+description: "Learn how to configure learning content sources for Microsoft Viva Learning Preview in the Microsoft 365 admin center."
 ---
 
-# Configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
+# Configure learning content sources for Microsoft Viva Learning Preview in the Microsoft 365 admin center

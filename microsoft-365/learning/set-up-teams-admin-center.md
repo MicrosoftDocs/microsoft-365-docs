@@ -1,9 +1,9 @@
 ---
-title: "Set up Viva Learning in the Teams admin center"
+title: "Set up Microsoft Viva Learning Preview in the Teams admin center"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: 
+ms.reviewer: chrisarnoldmsft
 audience: admin
 ms.topic: article
 ms.service: 
@@ -13,8 +13,8 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn how to configure Microsoft Viva Learning in the Teams admin center."
+description: "Learn how to configure Microsoft Viva Learning Preview in the Teams admin center."
 ---
 
-# Set up Viva Learning in the Teams admin center 
+# Set up Microsoft Viva Learning Preview in the Teams admin center 
 

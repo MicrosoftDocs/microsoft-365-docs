@@ -1,10 +1,10 @@
 ---
-title: "Introduction to Microsoft Viva Learning"
+title: "Introduction to Microsoft Viva Learning Preview"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: 
-audience: 
+ms.reviewer: chrisarnoldmsft
+audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
@@ -12,18 +12,18 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn how to find resources for Microsoft Viva Learning."
+description: "Learn how to find resources for Microsoft Viva Learning Preview."
 ---
 
-# Introduction to Microsoft Viva Learning
+# Introduction to Microsoft Viva Learning Preview
 
-Microsoft Viva Learning empowers teams and individuals in your organization to make learning a natural part of their day. The app creates a central hub in Microsoft Teams where employees can share, assign, and learn from content libraries across your organization.
+Microsoft Viva Learning Preview empowers teams and individuals in your organization to make learning a natural part of their day. The app creates a central hub in Microsoft Teams where employees can share, assign, and learn from content libraries across your organization.
 
-The resources on this page are designed to get you started with learning about and using Viva Learning in your organization.
+The resources on this page are designed to get you started with learning about and using Viva Learning Preview in your organization.
 
 ## Get started
 
-The resources in this section help you learn more about what Viva Learning is and how it can help you.
+The resources in this section help you learn more about what Viva Learning Preview is and how it can help you.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
@@ -34,7 +34,7 @@ The resources in this section help you learn more about what Viva Learning is an
 
 ## Set up and administration
 
-The resources in this section help the admin in your organization to set up and configure Viva Learning in your Microsoft 365 environment.
+The resources in this section help the admin in your organization to set up and configure Viva Learning Preview in your Microsoft 365 environment.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
