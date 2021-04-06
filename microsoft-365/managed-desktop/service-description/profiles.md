@@ -31,14 +31,14 @@ Fundamentally, every Microsoft Managed Desktop device has a foundation that incl
 
 Device profiles appear at the next higher level. Every Microsoft Managed Desktop device must have one (and only one) profile assigned. Admins can choose which profile a device is assigned.
 
-At a still higher level are additional [customizations](customizing.md). Each device can have one or more {OR NO?} customizations. They can either modify a lower-level layer (Device profiles or the foundational configuration),  or be an entirely new request that’s layered on top of the standard configuration.
+At a still higher level are additional [customizations](customizing.md). Each device can have one or more (or no) customizations. They can either modify a lower-level layer (Device profiles or the foundational configuration),  or be an entirely new request that’s layered on top of the standard configuration.
 
 At the top are your own modifications, such as network details or applications. A device can have any number of these modifications, which aren't managed or blocked by Microsoft Managed Desktop.
 
 
 ## Device profile details
 
-The following table summarizes the settings and their default values for each setting configured by device profiles. These settings are configured using OMA-URIs via Custom Configuration Profiles in MEM {ARE WE SAYING THIS TO TELL THE ADMIN HOW TO CHANGE PROFILES? OR IS THIS JUST SIDE INFO ABOUT HOW MMD CONTROLS PROFILES?}.
+The following table summarizes the settings and their default values for each setting configured by device profiles. (Behind the scenes, these settings are configured with OMA-URIs by using Custom Configuration Profiles in Microsoft Endpoint Manager.)
 
 | **Feature​**                                                                                                                                              | **Sensitive Data​**        | **Power User​**        | **Standard​**     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|------------------------|-----------------------|
@@ -60,7 +60,7 @@ Each device profile also involves these items:
 - A Microsoft Endpoint Manager Configuration profile
 
 > [!IMPORTANT]
-> Don’t modify the membership of these groups directly. Use the UI described here instead.{WHAT UI? DESCRIBED WHERE?}
+> Don’t modify the membership of these groups directly. Use the interface as described in [Reassign profiles](../change-device-profile.md).
 
 ## Limitations
 

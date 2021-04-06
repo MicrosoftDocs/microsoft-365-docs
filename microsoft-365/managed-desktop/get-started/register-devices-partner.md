@@ -59,7 +59,7 @@ For more information about Autopilot in Partner scenarios, see [Add devices to a
 
 Before completing registration for a customer, you must first establish a relationship with them. You should have a unique link to provide to your respective customers. See [How to establish OEM relationship](/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
-Once you've established the relationship, you can start registering devices for customers using the appropriate Group Tag for each device profile you've selected:
+Once you've established the relationship, you can start registering devices for customers using the appropriate Group Tag for each device profile they've selected:
 
 
 |Device profile  |Group Tag  |
