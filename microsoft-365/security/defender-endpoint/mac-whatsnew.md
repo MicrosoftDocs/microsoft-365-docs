@@ -35,7 +35,7 @@ ms.technology: mde
 
 ## 101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender for Endpoint for Mac is now available in preview for US Government customers. See [Microsoft Defender for Endpoint for US Government customers](gov.md) for more information.
+- Microsoft Defender for Endpoint for Mac is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
 
 ## 101.23.64 (20.121021.12364.0)

@@ -26,7 +26,7 @@ ms.technology: mde
 
 ## 101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender for Endpoint for Linux is now available in preview for US Government customers. See [Microsoft Defender for Endpoint for US Government customers](gov.md) for more information.
+- Microsoft Defender for Endpoint for Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Fixed an issue where usage of Microsoft Defender for Endpoint for Linux on systems with FUSE filesystems was leading to OS hang
 - Performance improvements & other bug fixes
 
