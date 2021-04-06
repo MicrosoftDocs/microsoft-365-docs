@@ -63,7 +63,7 @@ The following illustration depicts a recommended path for deploying these indivi
 
 ![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-To make sure your organization has the best protection possible, set up and deploy your security solution with a process that includes the following steps:
+To make sure your organization has the best protection possible, set up and deploy your security solution using a process that includes the following steps:
 
 1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
 2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
@@ -77,9 +77,6 @@ To make sure your organization has the best protection possible, set up and depl
 Your threat protection features can be configured in parallel, so if you have multiple network security teams responsible for different services, they can configure your organization’s protection features at the same time.
 
 ## Next step
-
-
-![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
 Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md)
 
