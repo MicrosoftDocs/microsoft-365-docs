@@ -130,9 +130,9 @@ With Microsoft Defender for Office 365, people across your organization can comm
 
 ![Process for deploying Microsoft Defender for Endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [Prepare your environment for Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
+1. [Prepare your environment for Microsoft Defender for Endpoint](../security/defender-endpoint/deployment-phases.md).
 
-2. [Set up your Microsoft Defender for Endpoint deployment](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment).
+2. [Deploy Microsoft Defender for Endpoint](../security/defender-endpoint/production-deployment.md).
 
 3. [Onboard to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
 
