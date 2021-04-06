@@ -23,7 +23,7 @@ f1.keywords: NOCSH
 
 This solution describes powerful threat protection capabilities across Microsoft 365 E5. Read this solution to get an overview of what's included, how it works, and how to get started deploying these capabilities in your organization.
 
-## Protect your organization from threats across devices, identities, apps, data, and clouds 
+## Why you need to protect your organization from threats 
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. Microsoft 365 E5 can help. 
 
@@ -34,7 +34,7 @@ Watch this video for an overview of the deployment process.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
 
-## Overview of threat protection in Microsoft 365 E5
+## Threat protection in Microsoft 365 E5
 
 [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) enables you to protect your organization with adaptive, built-in intelligence. With the threat protection features in Microsoft 365 E5, you can detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environment.
 
@@ -61,7 +61,7 @@ The following illustration depicts a recommended path for deploying these indivi
 > [!TIP]
 > Organizations who have multiple security teams can implement these capabilities in parallel. 
 
-## Deploying your threat protection solution
+## Plan to deploy your threat protection solution
 
  The following diagram illustrates the high-level process for deploying threat protection capabilities. 
 
