@@ -46,6 +46,7 @@ ms.technology: mde
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
