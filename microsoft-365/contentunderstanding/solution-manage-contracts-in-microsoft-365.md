@@ -34,32 +34,43 @@ This contract management solution guidance includes three Microsoft 365 componen
 - Microsoft Teams: Use the functionality of a Teams site and associated channels to allow your stakeholders to review and manage contracts.
 
 - Power Automate: Use flows to process contracts through the approval process, and then to a 3rd party application for payment.
+ 
+### How it all works
 
 
-1.	Documents are uploaded to a SharePoint document library.
-2.	When a document is uploaded to the library, a SharePoint Syntex document understanding model that has been applied to the document library runs. It checks each document and identifies any "contracts" and classifies them as such.
-3.	The model also extracts all <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i> from all contracts.
+1.	Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and saves it to the document library.
+2.	The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>..
 
-The following is an example of a typical contract.</br>
+    The following is an example of a contract that the model is trained to identify.</br>
       ![Contract](../media/content-understanding/contract.png)</br> 
 
 
-4.	All contract are visible for approval/rejection in a custom tile view in the Contracts for approval channel of the Contracts Management Teams site. Team members are notified by Teams when new contracts are available for approval.  
-5.	Team members go to the Contracts channel on the Teams site to approve or reject contracts.  Approved contracts are forwarded to a 3rd party financial app for payment.
-6.	Rejected contracts are sent to appropriate users for review using Teams adaptive cards. They can be resubmitted back for approval after the review and any resulting update.
+3.	In Microsoft Teams, all stakeholders are members of a secure Teams site in which all contract in the document library are are visible for approval or rejection.  Using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
+ 
+4.	By using Power Automate, contracts are moved through the approval process in the Teams site. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and the contract is forwarded to a 3rd party financial app for payment.
 
+5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
+## Creating the solution
 
-## Use SharePoint Syntex to identify contract files and extract data
+The next sections will go into detail about how we configured our example of our contracts management solution. It is divided into three components:
 
-One business issue is that we need a way to identify and classify all contract documents from the numerous files we receive. We also want to be able to be able to quickly view several key elements in each of the contract files we identify (for example, <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>). We can do this by using [SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/) to create a document understanding model and applying it to a document library.
+- Step 1: Use SharePoint Syntex to identify contract files and extract data
+- Step 2: Use Microsoft Teams to create your contract management site
+- Step 3: Use Power Automate to create your flow to process your contracts
 
-1. First, you need to find at least five example files that we can use to "train" the model to search for characteristics that are specific to the document type we are trying to identify (a contract). 
+## Step 1: Use SharePoint Syntex to identify contract files and extract data
+
+A key business issue we identified is that we need a way to identify and classify all contract documents from the numerous files we receive. We also want to be able to be able to quickly view several key elements in each of the contract files we identify (for example, <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>). We can do this by using [SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/) to create a document understanding model and applying it to a document library.
+
+[Document understanding](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need is not contained in tables or forms, such as contracts.
+
+1. First, you need to find at least five example files that we can use to "train" the model to search for characteristics that are specific to the content type we are trying to identify (a contract). Comment: Do we include a set of contract files in the zip download?
 2. Using SharePoint Syntex, create a new document understanding model. Using your example files, you need to [create a classifier](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#create-an-explanation) that searches for specific strings that are in your contracts, such as <i>Service Agreement</i>, <i>Terms of Agreement</i>, and <i>Compensation</i>. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings.  When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
 3. In your model, you can [create an extractor](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor) to pull out specific pieces of data from each contract. For example, for each contract, the information we are most concerned about is who the client is, the name of the contractor, and the total cost.
 4. After you successfully create your model, [apply it to a SharePoint document library](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model). As you upload documents to the document library, your document understanding model will run and will identify and classify all files that match the contracts content type you defined in your model. All files that are classified as contracts will display in a custom library view, and will also display the values from each contract that you defined in your extractor.
 
-Screenshot
+     ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)</br> 
 
 5. Additionally, if you have retention requirements for your contracts, you can use your model to also [apply a retention label](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model) that will prevent your contracts from being deleted for a specified period of time.
 
@@ -67,21 +78,20 @@ Question:  What can we make available to the reader in terms of downloads? Would
  
 
 
-## Create your contract management site in Microsoft Teams 
+## Step 2: Use Microsoft Teams to create your contract management site
 
-Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use Microsoft Teams to set up a Teams site and use the features in Teams to:
+Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams site and use the features in Teams to:
 
-- Have a location in which stakeholders can easily see all contracts that require action. For example, in Teams we can create a Contract channel in the Contracts Management Teams site in which members can see a tile view of all contracts that need approval.
+- Create a location in which stakeholders can easily see all contracts that require action. For example, in Teams we can create a Contract channel in the Contracts Management Teams site in which members can see a useful tile view of all contracts that need approval. We can also configure the view so that each "card" lists the important data we care about (client, contractor, and fee amount).
 
      ![Contracts channel](../media/content-understanding/tile-view.png)</br> 
 
-- Have a location in which members can members can interact with each other and post actions. For example, in Teams, the Posts channel can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the Posts channel can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update. 
+- Have a location in which members can interact with each other and see important events. For example, in Teams, the Posts channel can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the Posts channel can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update to the channel. 
 
      ![Posts channel](../media/content-understanding/posts.png)</br> 
 
-- Be able to notify individual users for required actions. For example, if a contract is rejected and needs to be reviewed by a specific member, Teams can be configured to notify that member for the required action.
 
-- Have a location in which approved contracts will display so that they can be submitted for payment. In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment (for example, by Dynamics CRM).
+- Have a location in which approved contracts will display so that they can be submitted for payment. In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. A third party application (for example, Dynamics CRM) can then use the information from this channel to process payment for each contract.
  
 
 ### Attach your SharePoint document library to the "Contracts" channel 
@@ -95,52 +105,179 @@ After you attach the SharePoint document library, you will be able to view any c
 
 ### Customize your Contracts channel tile view
 
-While Teams allows you to view your contracts via a tile view, you may need to customize it to view the contract data you want to make visible in the "contract card". For example, for our Contracts channel, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.
+> [!NOTE]
+> This section references code examples that are contained in the <b>ContractCardjson</b> file this is included in the solutionfiles zip file.
+
+While Teams allows you to view your contracts in a tile view, you may want to customize it to view the contract data you want to make visible in the "contract card". For example, for our Contracts channel, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all Approved contracts will have a blue header bar.
 
    ![List view](../media/content-understanding/tile.png)</br> 
 
 The custom tile view we used required us to make changes to the JSON used to format the current tile view. You can reference the JSON we used to create our card view by downloading the [contract card json file](). In the following sections, we will reference specific sections of the code for features you see in the contract cards.
 
+If you want to see or make changes to the Json code for your view in your Teams channel, in your Teams channel, select the view drop-down mean and select <b>Format current view</b>.
+
+Comment: I need to link to more information to direct users on how to do this.
+
    ![json format](../media/content-understanding/jason-format.png)</br> 
 
 ### Card size and shape
 
-In the contract card json file that you downloaded, look at the following section to see how we formatted the size and shape of the card. </br>
-![Card format](../media/content-understanding/thumbnail.png)</br>
+In the <b>ContractCardjson</b> file that you downloaded in the reference zip file, look at the following section to see how we formatted the size and shape of the card. </br>
+
+```SKOS
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "background-color": "#f5f5f5",
+                      "padding": "5px",
+                      "width": "180px"
+                    },
+                    "children": [
+                      {
+                        "elmType": "img",
+                        "attributes": {
+                          "src": "@thumbnail.large"
+                        },
+                        "style": {
+                          "width": "185px",
+                          "height": "248px"
+                        }
+                      }
+```
 
 
 ### Contract status
 
 The following code lets us define the status of each title card. Note that each status value (New, In review, Approved, and Rejected) will display a different color code for each. In the contract card json file that you downloaded, look at the section that defines the status.
 
-   ![Status](../media/content-understanding/code-status.png)</br> 
-
+```SKOS
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "color": "white",
+                  "background-color": "=if([$Status] == 'New', '#00b7c3', if([$Status] == 'In review', '#ffaa44', if([$Status] == 'Approved', '#0078d4', if([$Status] == 'Rejected', '#d13438', '#8378de'))))",
+                  "padding": "5px 15px",
+                  "height": "auto",
+                  "text-transform": "uppercase",
+                  "font-size": "12.5px"
+                },
+                "txtContent": "[$Status]"
+              }
+```
 
 
 ### Extracted fields
 
 Each contract card will display three fields that were extracted for each contract (Client, Contractor, and Fee Amount). Additionally, we also want to display the time/date that the file was classified by the SharePoint Syntex model we used to identify it. 
 
-In the contract card json file that you downloaded, the following sections define each of these.
+In the <b>ContractCardjson</b> file that you downloaded, the following sections define each of these.
 
 #### Client
 
-   ![Client](../media/content-understanding/client.png)</br> 
+This section defines how "Client" will display on the card, and uses the value for the specific contract.
+
+```SKOS
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "color": "#767676",
+                          "font-size": "12px"
+                        },
+                        "txtContent": "Client"
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "margin-bottom": "12px",
+                          "font-size": "16px",
+                          "font-weight": "600"
+                        },
+                        "txtContent": "[$Client]"
+                      },
+```
 
 #### Contractor
 
-   ![Contractor](../media/content-understanding/contractor.png)</br> 
+This section defines how the "Contractor" will display on the card, and uses the value for the specific contract.
+
+```SKOS
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "color": "#767676",
+                          "font-size": "12px"
+                        },
+                        "txtContent": "Client"
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "margin-bottom": "12px",
+                          "font-size": "16px",
+                          "font-weight": "600"
+                        },
+                        "txtContent": "[$Client]"
+},
+```
+
 
 #### Fee Amount
 
-   ![Fee Amount](../media/content-understanding/fee-amount.png)</br> 
+This section defines how the "Fee Amount" will display on the card, and uses the value for the specific contract.
+
+```SKOS
+                      {
+                        "elmType": "div",
+                        "txtContent": "Fee amount",
+                        "style": {
+                          "color": "#767676",
+                          "font-size": "12px",
+                          "margin-bottom": "2px"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "margin-bottom": "12px",
+                          "font-size": "14px"
+                        },
+                        "txtContent": "[$FeeAmount]"
+                      },
+```
+
+
 
 #### Classification date
 
-![Card format](../media/content-understanding/classified.png)</br>
+This section defines how  "Classification" will display on the card, and uses the value for the specific contract.
+
+```SKOS
+                      {
+                        "elmType": "div",
+                        "txtContent": "Classified",
+                        "style": {
+                          "color": "#767676",
+                          "font-size": "12px",
+                          "margin-bottom": "2px"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "margin-bottom": "12px",
+                          "font-size": "14px"
+                        },
+                        "txtContent": "[$PrimeLastClassified]"
+                      }
+```
 
 
-## Create Power Automate Flows to process reviewed contracts
+
+
+## Step 3: Use Power Automate to create your flow to process your contracts
 
 Now that you've created your Contract Management Team's site and have attached your SharePoint Document library, your next step is to create a Power Automate Flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
