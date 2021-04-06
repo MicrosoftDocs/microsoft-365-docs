@@ -93,7 +93,7 @@ Powerful experiences help identify, prioritize, and investigate threats, with ad
 - [Threat Explorer and Real-time detections](threat-explorer.md)
 - [Real-time reports in Defender for Office 365](view-reports-for-mdo.md)
 - [Threat Trackers - New and Noteworthy](threat-trackers.md)
-- Integration with [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- Integration with [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### Response and remediation
 
