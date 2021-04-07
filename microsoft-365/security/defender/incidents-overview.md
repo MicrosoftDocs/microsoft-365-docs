@@ -41,7 +41,7 @@ Microsoft 365 services and apps create alerts when they detect a suspicious mali
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
-:::image type="content" source="../../media/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident":::
 
 Watch this short (4 minutes) an overview of incidents in Microsoft 365 Defender.
 <br>
@@ -97,7 +97,7 @@ The additional tabs for any incident are:
 
 Here is the relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center.
 
-:::image type="content" source="../../media/incidents-security-center.png" alt-text="The relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
 
 The incident queue show the incidents from the last 30 days. From here, you can:
 
