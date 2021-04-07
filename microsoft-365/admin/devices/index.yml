@@ -8,8 +8,8 @@ metadata:
   description: Manage and protect devices and app data # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: Sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: sharik #Required; your GitHub user alias, with correct capitalization.
+  ms.author: skjerland #Required; microsoft alias of author; optional team alias.
   ms.date: 09/09/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -32,15 +32,15 @@ landingContent:
       - linkListType: overview
         links:
          - text: Overview of device enrollment
-           url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+           url: /mem/intune/enrollment/device-enrollment
       - linkListType: how-to-guide
         links:
           - text: Set up automatic enrollment for Windows 10 devices
-            url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+            url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
           - text: Set up Android enrollment
-            url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
+            url: /mem/intune/enrollment/android-enroll
           - text: Set up iOS/iPadOS enrollment
-            url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
+            url: /mem/intune/enrollment/ios-enroll
   # Card (optional)
   - title: Manage devices and app data with Microsoft 365 Business Premium
     linkLists:

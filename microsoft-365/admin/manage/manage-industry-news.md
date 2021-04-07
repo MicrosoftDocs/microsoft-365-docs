@@ -23,10 +23,8 @@ To provide your users with up-to-date news headlines about your industry and�
 
 ## What your users will see
  
-Signed-in users that come to the Bing homepage will see your news feed under the personalized info from your organization.
-
+Signed-in users who go to the Bing homepage will see your industry's news feed under the personalized info for your organization.  
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot of image carousel with industry news from the web":::
-
 They can also see company, industry, and internal news or personalized work information on their Microsoft Edge new tab page. 
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft in news homepage":::
@@ -60,5 +58,5 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 
 ## Related articles
 
-- [Microsoft Search](https://docs.microsoft.com/microsoftsearch/)
-- [Manage your data and service](https://docs.microsoft.com/microsoft-365/admin/manage)
+- [Microsoft Search](/microsoftsearch/)
+- [Manage your data and service](./index.yml)

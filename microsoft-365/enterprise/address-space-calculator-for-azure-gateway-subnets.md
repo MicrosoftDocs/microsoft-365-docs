@@ -3,7 +3,7 @@ title: "Address space calculator for Azure gateway subnets"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -20,14 +20,14 @@ description: "Summary: Calculate the address space of an Azure gateway subnet wi
 
 # Address space calculator for Azure gateway subnets
 
-A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet. The best practices for defining this subnet are the following:
+A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet. The best practices for defining the gateway subnet are:
 
 - The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).
-- When defining the address space of the gateway subnet, use the very last part of the VNet address space.
+- When defining the address space of the gateway subnet, use the last part of the VNet address space.
 
-For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining variable bits in the VNet address space to 1. To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.
+For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining bits in the VNet address space to 1. To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.
 
-This article contains C#, Python and PowerShell code blocks that collect five integers—the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length—and calculates the gateway subnet address space.
+This article contains C#, Python, and PowerShell code blocks that calculate the gateway subnet address space based on the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length.
 
 ## C# code block
 
@@ -144,7 +144,7 @@ print(gwAddrPref)
 
 ## PowerShell command block
 
-Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell ISE.
+Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -175,4 +175,3 @@ Write-Host "Your gateway address prefix is: " $dx
 ## Related topics
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-

@@ -42,6 +42,7 @@ Watch the Microsoft 365 Message Center for confirmation when moves for each of E
 |Switzerland, Liechtenstein  <br/> |July 1, 2022  <br/> |
 |Norway  <br/> |November 1, 2022  <br/> |
 |Germany  <br/> |May 1, 2023  <br/> |
+|Brazil  <br/> |June 1, 2023  <br/> |
 
 ## Exchange Online
 
@@ -109,7 +110,7 @@ Teams files are stored in SharePoint Online and Teams chat files are stored in O
 
 ## Skype for Business
 
-Skype for Business moves are no longer available.  [Skype for Business Online will be retired](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) on July 31, 2021. After that time, the service will no longer be accessible. 
+Skype for Business moves are no longer available.  [Skype for Business Online will be retired](/lifecycle/announcements/skype-for-business-online-retirement) on July 31, 2021. After that time, the service will no longer be accessible. 
   
 ## Related topics 
  
@@ -117,6 +118,6 @@ Skype for Business moves are no longer available.  [Skype for Business Online wi
     
 [Data move general FAQ](data-move-faq.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)

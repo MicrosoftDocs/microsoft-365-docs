@@ -25,7 +25,7 @@ description: "Learn how you can set up Microsoft to manage the DNS records of yo
 
 # Change nameservers to set up Microsoft with Google Domains
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 Follow these instructions if you want Microsoft to manage your DNS records for you. (If you prefer, you can [manage all your DNS records at Google Domains](create-dns-records-at-google-domains.md).)
   

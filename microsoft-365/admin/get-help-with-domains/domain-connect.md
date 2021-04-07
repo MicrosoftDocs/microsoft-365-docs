@@ -26,7 +26,7 @@ description: "Learn how to work with Domain Connect enabled registrars and add y
 
 # Using Domain Connect
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
   
 [Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
   

@@ -2,8 +2,8 @@
 title: "Manage Relevance setup in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Read the recommendations for setting up Relevance training in Advanced eDiscovery to score files by their relevance and generate analytical results."
 ---
 
@@ -64,15 +65,4 @@ The parameters described in this section are available in the Advanced eDiscover
 
 - Define and organize issues carefully, as this can impact the Relevance training results.
 
-After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab. 
-  
-## See also
-
-[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
-  
-[Defining issues and assigning users](define-issues-and-assign-users.md)
-  
-[Setting up loads to add imported files](set-up-loads-to-add-imported-files.md)
-  
-[Defining highlighted keywords and advanced options](define-highlighted-keywords-and-advanced-options.md)
-
+After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab.

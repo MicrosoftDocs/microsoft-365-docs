@@ -24,14 +24,6 @@ description: "Learn how to make changes to your organization profile, such as or
 ---
 
 # Change your organization's address, technical contact, and more
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
   
 You can make changes to your organization profile, such as your organization name, address, phone, and technical contact. **You must be a global admin to update this information.**
   
@@ -48,9 +40,9 @@ To change other information on your company's profile page:
 
 2. On the **Organization profile** tab, select **Organization information**.
 
-3. Update your organization's information, then select **Save changes**.
+3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
-    An explanation of each field is provided below.
+An explanation of each field is provided below.
 
 ## What do these fields mean?
 
@@ -69,14 +61,15 @@ As an admin, you can change your alternate email address for resetting passwords
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-2. In the header, select your profile icon, then select **My account**.
+2. In the header, select your profile icon, then select **View account**.
 
-3. On the left, select **Personal info**.
+3. On the left, select **Security info**.
 
-4. On the **Contact details** card, select **Edit**.
+4. In the Email section, select **Change**
 
-5. Edit the address in the **Alternate email** box, then select **Save**.
+5. Edit the address in the **Alternate email** box, then select **Next**.
 
+6. Enter the code sent to the alternate email address and select **OK** to verify the change.
 To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### Email signatures

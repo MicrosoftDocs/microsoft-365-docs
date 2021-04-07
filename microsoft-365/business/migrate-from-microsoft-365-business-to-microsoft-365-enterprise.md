@@ -52,12 +52,11 @@ This table shows the differences between Microsoft 365 Business Premium and Micr
 | Teams    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Attack surface reduction capabilities    | [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 apps Single Sign-On (SSO): 10 apps per user (Gallery SaaS apps such as Salesforce)* | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: no limit (On-premises apps through Azure AD Application Proxy and non-gallery apps using Self-Service App Integration templates)    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
@@ -100,10 +99,6 @@ Your users can now enjoy unlimited storage in the Exchange Online mailboxes and 
 
 You can begin using Cloud App Discovery, Azure AD Connect Health, and SSO for more than 10 apps.
 
->[!Note]
->Users migrated to Microsoft 365 E3 can no longer use MileIQ.
->
-
 <a name="threat-protection"></a>
 ### Threat protection
 
@@ -124,7 +119,7 @@ Windows 10 Business includes these protections:
 Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
->Users migrated to Microsoft 365 E3 will each require an Microsoft Defender for Office 365 license for continued threat protection. Be sure to purchase additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed. 
+>Users migrated to Microsoft 365 E3 will each require a Microsoft Defender for Office 365 license for continued threat protection. Be sure to purchase additional Defender for Office 365 licenses so that all of the users in scope of your Defender for Office 365 polices are licensed. 
 >
 
 ### Device management with Intune
@@ -140,9 +135,7 @@ Microsoft 365 Business Premium includes Windows 10 Business, which you can insta
 
 Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Microsoft 365 Apps for enterprise. After migration, you can now use:
 
- - Volume activation through Group Policy
- - App telemetry
- - Update controls
+ - Group Policy support
  - Spreadsheet compare and inquire
  - Business intelligence
 

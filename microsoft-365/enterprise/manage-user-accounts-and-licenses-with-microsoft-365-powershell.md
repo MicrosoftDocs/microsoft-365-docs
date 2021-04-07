@@ -48,5 +48,6 @@ For more information, see the following articles.
 - [Remove licenses from user accounts](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## Groups
-- [Maintain group membership](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Manage security groups](manage-security-groups-with-microsoft-365-powershell.md)
+- [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 groups](manage-microsoft-365-groups-with-powershell.md)

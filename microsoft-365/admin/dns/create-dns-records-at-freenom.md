@@ -25,7 +25,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 # Create DNS records at Freenom for Microsoft
 
-[Check the Domains FAQ ](../setup/domains-faq.md) if you don't find what you're looking for. 
+[Check the Domains FAQ ](../setup/domains-faq.yml) if you don't find what you're looking for. 
   
 > [!CAUTION]
 > The Freenom website doesn't support SRV records, which means that several Skype for Business Online and Outlook Web App features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider. 
@@ -135,7 +135,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     |**Name**|**Type**|**TTL**|**Target**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leave blank)  <br/> |MX (Mail Exchanger)  <br/> |3600 (seconds)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(leave blank)  <br/> |MX (Mail Exchanger)  <br/> |3600 (seconds)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -225,5 +225,3 @@ When Microsoft finds the correct TXT record, your domain is verified.
 7. Select **Save Changes**.
     
     ![Freenom TXT record for SPF Save Changes](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
-  
-

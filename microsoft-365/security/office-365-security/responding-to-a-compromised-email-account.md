@@ -1,29 +1,35 @@
 ---
-title: "Responding to a Compromised Email Account"
-f1.keywords:
-- NOCSH
+title: Responding to a Compromised Email Account
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- o365_security_incident_response
-- M365-security-compliance
-- m365solution-smb
+ms.collection: 
+  - o365_security_incident_response
+  - M365-security-compliance
+  - m365solution-smb
 ms.custom: 
- - TopSMBIssues
- - seo-marvel-apr2020
-ms.service: O365-seccomp
+  - TopSMBIssues
+  - seo-marvel-apr2020
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 # Responding to a Compromised Email Account
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
@@ -75,11 +81,11 @@ If a user reports any of the above symptoms, you should perform further investig
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 
-You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
+You must do all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you do these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
 
 ### Step 1 Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -91,9 +97,9 @@ Follow the procedures in [Reset a business password for someone](https://docs.mi
 >
 > - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 >
-> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Be sure to update app passwords. App passwords aren't automatically revoked when a user account password reset. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges. To learn more about MFA, go to [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -175,7 +181,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
 
-2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, do these steps for your Microsoft 365 subscription, and then do these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
@@ -193,7 +199,7 @@ Your Microsoft 365 subscription comes with a powerful set of security capabiliti
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
+- [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 

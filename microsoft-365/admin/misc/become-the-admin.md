@@ -24,12 +24,12 @@ description: "Learn how to verify your email and domain ownership to take over a
 
 # Perform an internal admin takeover
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
 If you are an admin and want to take over an unmanaged tenant created by a self-service user signup, you can do this with an internal admin takeover.
 
 > [!NOTE]
-> A self-service sign up for any cloud service that uses Azure AD will add the user to an unmanaged or "shadow" Azure AD directory and create an unmanaged tenant. An unmanaged tenant is a directory without a global administrator. To determine whether a tenant is managed or unmanaged, please see [Determining Tenant Type](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> A self-service sign up for any cloud service that uses Azure AD will add the user to an unmanaged or "shadow" Azure AD directory and create an unmanaged tenant. An unmanaged tenant is a directory without a global administrator. To determine whether a tenant is managed or unmanaged, please see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
 ## Step 1: Verify your email address
 
@@ -65,9 +65,8 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 
 YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
-[Admin takeover in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [Using self-service sign up in your organization](self-service-sign-up.md)
   
-[Understanding the Power BI service administrator role](https://docs.microsoft.com/power-bi/service-admin-role)
-
+[Understanding the Power BI service administrator role](/power-bi/service-admin-role)

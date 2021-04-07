@@ -1,21 +1,23 @@
 ---
-title: "Services for non-customers sending mail to Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Services for non-customers sending mail to Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
-ms.collection:
-- M365-security-compliance
-description: "To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users."
+ms.collection: 
+  - M365-security-compliance
+description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Services for non-customers sending mail to Microsoft 365
@@ -53,7 +55,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Contact the customer you're trying to email using another method and ask them to contact Microsoft Support and open a support ticket on your behalf. In some cases, for legal reasons, Microsoft Support must communicate directly with the sender who owns the IP space that is being blocked. However, non-customers typically can't open support tickets.
 
-  For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
+  For more information about Microsoft Technical support for Office 365, see [Support](/office365/servicedescriptions/office-365-platform-service-description/support).
 
 ## Anti-Spam IP Delist Portal
 

@@ -80,10 +80,10 @@ These considerations might apply to your network:
 
 - If you use Active Directory Federation Services (AD FS) with Office 365, advertising your AD FS network endpoint to Office 365 using IPv6 is not supported. You should not include AAAA records in the AD FS DNS entry when using Exchange Online. 
 
-Here's a short link you can use to come back: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+Here's a short link you can use to come back: [https://aka.ms/o365ip6]()
   
 ## See also
 
-[IPv6 Learning Roadmap](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
+[IPv6 Learning Roadmap](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
 [IPv6 Survival Guide](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

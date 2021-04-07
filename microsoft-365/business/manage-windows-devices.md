@@ -2,8 +2,8 @@
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -73,7 +73,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## 4. Create the required resources 
 
-Performing the required tasks to [configure hybrid Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) has been simplified through the use of the [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet found in the [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell module. When you invoke this cmdlet it will create and configure the required service connection point and group policy.
+Performing the required tasks to [configure hybrid Azure AD join](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) has been simplified through the use of the [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet found in the [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell module. When you invoke this cmdlet it will create and configure the required service connection point and group policy.
 
 You can install this module by invoking the following from an instance of PowerShell:
 
@@ -100,14 +100,14 @@ The first command will establish a connection with the Microsoft cloud, and when
 
 ## Get the latest Administrative Templates
 
-If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
+If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, it may be because you don’t have the ADMX installed for Windows 10, version 1803, or later. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):
 
-1.	Download: [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all).
-2.	Install the package on the Primary Domain Controller (PDC).
-3.	Navigate, depending on the version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**.
+1.	Download: [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+2.	Install the package on a Domain Controller.
+3.	Navigate, depending on the Administrative Templates version to the folder: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
 4.	Rename the **Policy Definitions** folder in the above path to **PolicyDefinitions**.
-5.	Copy **PolicyDefinitions** folder to **C:\Windows\SYSVOL\domain\Policies**. 
+5.	Copy the **PolicyDefinitions** folder to your SYSVOL share, by default located at **C:\Windows\SYSVOL\domain\Policies**. 
     -	If you plan to use a central policy store for your entire domain, add the contents of PolicyDefinitions there.
-6.	Restart the Primary Domain Controller for the policy to be available. This procedure will work for any future version as well.
+6.	In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.

@@ -25,7 +25,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 # Create DNS records at Register.com for Microsoft
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 If Register.com is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
@@ -119,7 +119,7 @@ Follow the steps below or [watch the video (start at 3:32)](https://support.micr
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Note:** Get your \<*domain-key*\> from your Microsoft account. <br> [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Note:** Get your \<*domain-key*\> from your Microsoft account. <br> [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copy and paste the value from the table](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -262,4 +262,3 @@ Follow the steps below or [watch the video (start at 5:55)](https://support.micr
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-  

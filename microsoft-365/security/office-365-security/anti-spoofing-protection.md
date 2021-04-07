@@ -1,32 +1,38 @@
 ---
-title: "Anti-spoofing protection"
-f1.keywords:
-- NOCSH
+title: Anti-spoofing protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
-search.appverid:
-- MET150
+
+search.appverid: 
+  - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
-ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
-- m365initiative-defender-office365
+ms.collection: 
+  - M365-security-compliance
+  - Strat_O365_IP
+  - m365initiative-defender-office365
 ms.custom: 
-- TopSMBIssues
-- seo-marvel-apr2020
+  - TopSMBIssues
+  - seo-marvel-apr2020
 localization_priority: Priority
-description: "Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains."
+description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spoofing protection in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
 
@@ -79,13 +85,13 @@ Microsoft differentiates between two different types of spoofed messages:
 - **Intra-org spoofing**: Also known as _self-to-self_ spoofing. For example:
 
   - The sender and recipient are in the same domain:
-    > From: chris@contoso.com <br/> To: michelle@contoso.com
+    > From: chris@contoso.com <br> To: michelle@contoso.com
 
   - The sender and the recipient are in subdomains of the same domain:
-    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
+    > From: laura@marketing.fabrikam.com <br> To: julia@engineering.fabrikam.com
 
-  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
-    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
+  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
+    > From: sender @ microsoft.com <br> To: recipient @ bing.com
 
     Spaces are used in the email addresses to prevent spambot harvesting.
 
@@ -100,7 +106,7 @@ Microsoft differentiates between two different types of spoofed messages:
   - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
 
 - **Cross-domain spoofing**: The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
-    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
+    > From: chris@contoso.com <br> To: michelle@tailspintoys.com
 
   Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to cross-domain spoofing contain the following headers values:
 
@@ -128,11 +134,11 @@ Mailing lists (also known as discussion lists) are known to have problems with a
 
 For example, Gabriela Laureano (glaureano@contoso.com) is interested in bird watching, joins the mailing list birdwatchers@fabrikam.com, and sends the following message to the list:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <p> Anyone want to check out the viewing this week from Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <p> Anyone want to check out the viewing this week from Mt. Rainier?
 
 The mailing list server receives the message, modifies its content, and replays it to the members of list. The replayed message has the same From address (glaureano@contoso.com), but a tag is added to the subject line, and a footer is added to the bottom of the message. This type of modification is common in mailing lists, and may result in false positives for spoofing.
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Subject:** [BIRDWATCHERS] Great viewing of blue jays at the top of Mt. Rainier this week <p> Anyone want to check out the viewing this week from Mt. Rainier? <p> This message was sent to the Birdwatchers Discussion List. You can unsubscribe at any time.
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Subject:** [BIRDWATCHERS] Great viewing of blue jays at the top of Mt. Rainier this week <p> Anyone want to check out the viewing this week from Mt. Rainier? <p> This message was sent to the Birdwatchers Discussion List. You can unsubscribe at any time.
 
 To help mailing list messages pass anti-spoofing checks, do following steps based on whether you control the mailing list:
 
@@ -140,7 +146,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Check the FAQ at DMARC.org: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F).
 
-  - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
+  - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures).
 
   - Consider installing updates on your mailing list server to support ARC, see <http://arc-spec.org>.
 
@@ -160,7 +166,7 @@ You may also contact your admin who can raise it as a support ticket with Micros
 
 ## Considerations for anti-spoofing protection
 
-If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phishing. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
 Senders in an individual user's (or admin's) Safe Senders list will bypass parts of the filtering stack, including spoof protection. For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 

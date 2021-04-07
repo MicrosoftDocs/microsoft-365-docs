@@ -39,7 +39,7 @@ Some assessments will indicate network connectivity to Microsoft 365 will requir
 Some resources to help you assess your network:
 
 - See [Microsoft 365 network connectivity overview](microsoft-365-networking-overview.md) for conceptual information about Microsoft 365 networking.
-- See [Microsoft 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance.
+- See [Microsoft 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md) to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance.
 - Sign up for [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for guided assistance with Microsoft 365 planning, design and deployment. 
 - See the [Microsoft 365 connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) section below to run basic connectivity tests that provide specific guidance about networking connectivity improvements that can be made between a given user location and Microsoft 365.
 
@@ -102,13 +102,13 @@ The Advanced Tests downloadable application provides the following additional in
 
 You can read about the Microsoft 365 connectivity test and provide feedback at the [Updated Microsoft 365 connectivity test POC with new network design recommendations](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) blog post. Information about future updates to this tool and other Microsoft 365 networking updates will be posted to the [Office 365 Networking](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) blog.
   
-Here's a short link you can use to come back: [https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
+Here's a short link you can use to come back: [https://aka.ms/o365networkconnectivity.](./microsoft-365-network-connectivity-principles.md)
   
 ## Related topics
 
 [Microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md)
 
-[Microsoft 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples)
+[Microsoft 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 

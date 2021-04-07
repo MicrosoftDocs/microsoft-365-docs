@@ -15,10 +15,14 @@
     - name: Microsoft Managed Desktop service description
       href: service-description/index.md
       items: 
-        - name: Supported regions and languages
+        - name: Supported regions
           href: service-description/regions-languages.md
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
+        - name: Device requirements
+          href: service-description/device-requirements.md
+        - name: Device images
+          href: service-description/device-images.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
@@ -53,28 +57,30 @@
       items: 
         - name: Prerequisites for Microsoft Managed Desktop
           href: get-ready/prerequisites.md
-        - name: Prepare network
-          href: get-ready/network.md
-        - name: Prepare on-premises resources access
-          href: get-ready/authentication.md
-        - name: Prepare mapped drives
-          href: get-ready/mapped-drives.md
-        - name: Prepare certificates and network profiles
-          href: get-ready/certs-wifi-lan.md
+        - name: Use readiness assessment tools
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: Fix issues found by the online readiness assessment tool
+              href: get-ready/readiness-assessment-fix.md
+            - name: Downloadable readiness assessment checker
+              href: get-ready/readiness-assessment-downloadable.md
         - name: Prerequisites for guest accounts
           href: get-ready/guest-accounts.md
-        - name: Prepare printing resources
-          href: get-ready/printing.md
+        - name: Prepare network
+          href: get-ready/network.md
+        - name: Prepare certificates and network profiles
+          href: get-ready/certs-wifi-lan.md
+        - name: Prepare on-premises resources access
+          href: get-ready/authentication.md
         - name: Prepare apps
           href: get-ready/apps.md
           items: 
             - name: Working with Microsoft Consulting Services
               href: get-ready/apps-MCS.md
-        - name: Use the Readiness assessment tool
-          href: get-ready/readiness-assessment-tool.md
-          items:
-            - name: Fix issues found by the readiness assessment tool
-              href: get-ready/readiness-assessment-fix.md
+        - name: Prepare mapped drives
+          href: get-ready/mapped-drives.md
+        - name: Prepare printing resources
+          href: get-ready/printing.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -82,7 +88,7 @@
           href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
-        - name: Adjust conditional access
+        - name: Adjust settings after enrollment
           href: get-started/conditional-access.md
         - name: Assign licenses
           href: get-started/assign-licenses.md
@@ -90,6 +96,8 @@
           href: get-started/company-portal.md
         - name: Enable Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
+        - name: Localize the user experience
+          href: get-started/localization.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
@@ -104,6 +112,8 @@
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
           href: get-started/esp-first-run.md
+        - name: Windows 10 location service
+          href: get-started/device-location.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps
@@ -117,6 +127,8 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
+            - name: Microsoft OneDrive
+              href: get-started/onedrive.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
@@ -125,9 +137,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Work with insights
-          href: working-with-managed-desktop/insights.md
-          items: 
             - name: Usage insights
               href: working-with-managed-desktop/usage-insights.md
             - name: Reliability insights

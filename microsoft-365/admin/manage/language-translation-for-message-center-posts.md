@@ -2,8 +2,8 @@
 title: "Language translation for Message center posts"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -13,7 +13,6 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
