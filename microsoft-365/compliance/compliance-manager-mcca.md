@@ -28,7 +28,7 @@ MCCA can help you quickly see which improvement actions in Compliance Manger app
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
 
-**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate and GCC High customers, with plans underway to expand service to DOD customers.
+**Availability**: MCCA is available to all organizations with Office 365 and Microsoft 365 licenses and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers.
 
 ## Install MCCA and run a report
 
@@ -124,11 +124,11 @@ The table below shows which roles have access to which sections of the report. O
 ![MCCA - roles](../media/compliance-manager-mcca-roles.png "MCCA roles")
 
 Exceptions:
-1. User won't be able to generate report for IP apart from “Use IRM for Exchange Online” section.
-2. User will be able to generate report for IP apart from “Use IRM for Exchange Online” section.
-3. User will be able to generate report for IP apart from “Enable Communication Compliance in O365” section.
-4. User won't be able to generate report for IP apart from “Enable Auditing in Office 365” section.
-5. User will be able generate report for IP apart from “Enable Auditing in Office 365” section.
+1. Users won't be able to generate report for IP apart from “Use IRM for Exchange Online” section.
+2. Users will be able to generate report for IP apart from “Use IRM for Exchange Online” section.
+3. Users will be able to generate report for IP apart from “Enable Communication Compliance in O365” section.
+4. Users won't be able to generate report for IP apart from “Enable Auditing in Office 365” section.
+5. Users will be able generate report for IP apart from “Enable Auditing in Office 365” section.
 
 #### Solutions Summary section
 

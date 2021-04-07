@@ -33,8 +33,15 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
-> [!IMPORTANT]
-> Support for macOS 10.13 (High Sierra) will be discontinued on February 15th, 2021.
+## 101.25.69 (20.121022.12569.0)
+
+- Microsoft Defender for Endpoint for Mac is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
+
+## 101.23.64 (20.121021.12364.0)
+
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
+- Performance improvements & bug fixes
 
 ## 101.22.79 (20.121012.12279.0)
 

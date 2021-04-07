@@ -28,20 +28,6 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: Recommended MCAS policies for SaaS apps
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Microsoft 365 security center
-      href: defender/overview-security-center.md  
-    - name: Microsoft Secure Score
-      items: 
-        - name: Secure Score overview
-          href: defender/microsoft-secure-score.md
-        - name: Assess your security posture
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: Track your score history and meet goals
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: What's coming
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: What's new
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       href: ./defender/index.yml
       items: 
@@ -49,6 +35,8 @@
           items: 
             - name: What is Microsoft 365 Defender?
               href: defender/microsoft-365-defender.md
+            - name: Microsoft 365 security center
+              href: defender/overview-security-center.md  
             - name: What's new in Microsoft 365 Defender
               href: defender/whats-new.md
             - name: Defender for Endpoint in the Microsoft 365 security center
@@ -103,7 +91,7 @@
           items:
             - name: Overview
               href: defender/get-started.md
-            - name: Turn on Microsoft Threat Protection
+            - name: Turn on Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: Deploy supported services
               href: defender/deploy-supported-services.md
@@ -117,6 +105,18 @@
               href: defender/m365d-pilot.md
             - name: Turn on FAQ
               href: defender/m365d-enable-faq.md
+            - name: Microsoft Secure Score
+              items: 
+              - name: Secure Score overview
+                href: defender/microsoft-secure-score.md
+              - name: Assess your security posture
+                href: defender/microsoft-secure-score-improvement-actions.md
+              - name: Track your score history and meet goals
+                href: defender/microsoft-secure-score-history-metrics-trends.md
+              - name: What's coming
+                href: defender/microsoft-secure-score-whats-coming.md
+              - name: What's new
+                href: defender/microsoft-secure-score-whats-new.md
             - name: Threat analytics
               items:  
                 - name: Threat analytics overview
@@ -141,6 +141,12 @@
                       href: defender/investigate-users.md                  
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
+            - name: Microsoft Threat Experts
+              items:
+                - name: Microsoft Threat Experts overview
+                  href: mtp/microsoft-threat-experts.md
+                - name: Configure and manage Microsoft Threat Experts capabilities
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Automated investigation and response
               items: 
                 - name: Overview of automated investigation and response
@@ -327,6 +333,8 @@
                           href: defender/api-update-incidents.md
     - name: Office 365 security
       href: ./office-365-security/overview.md
+    - name: Step-by-step threat protection in Microsoft Defender for Office 365
+      href: ./office-365-security/protection-stack-microsoft-defender-for-office365.md
       items: 
         - name: Overview
           items:
@@ -423,7 +431,7 @@
             - name: Secure by default
               href: ./office-365-security/secure-by-default.md
             - name: Configure anti-phishing policies in Defender for Office 365
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: Configure anti-spam policies
