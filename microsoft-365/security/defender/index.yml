@@ -60,6 +60,41 @@ landingContent:
           url: m365d-enable.md
         - text: Deploy supported services
           url: deploy-supported-services.md
+# Card
+  - title: Microsoft Defender for Identity
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Identity?
+            url: /azure-advanced-threat-protection/what-is-atp
+          - text: Microsoft Defender for Identity architecture
+            url: /azure-advanced-threat-protection/atp-architecture
+
+   # Card
+  - title: Microsoft Defender for Office 365
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Defender for Office 365?
+            url: /office-365-security/defender-for-office-365
+          - text: Defender for Office 365 service description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-center-mdo
+          - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mdo-redirection
+            
+  # Card
+  - title: Microsoft Defender for Endpoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Endpoint?
+            url: /defender-endpoint/microsoft-defender-endpoint
+          - text: Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-cente
+          - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mde-redirection
 
 # Card (optional)
   - title: Microsoft 365 security center
@@ -72,45 +107,6 @@ landingContent:
             url: microsoft-365-security-center-mde.md
           - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
             url: ../defender/microsoft-365-security-center-mdo.md
-
-
-# Card
-  - title: Microsoft Defender for Identity
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Microsoft Defender for Identity?
-            url: /azure-advanced-threat-protection/what-is-atp
-          - text: Microsoft Defender for Identity architecture
-            url: /azure-advanced-threat-protection/atp-architecture
-
-# Card
-- title: Microsoft Defender for Office 365
-linkLists:
-    - linkListType: overview
-    links:
-        - text: What is Defender for Office 365?
-        url: /office-365-security/defender-for-office-365
-        - text: Defender for Office 365 service description
-        url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-        - text: Defender for Office 365 in Microsoft 365 Defender
-        url: /defender/microsoft-365-security-center-mdo
-        - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
-        url: /defender/microsoft-365-security-mdo-redirection
-            
-# Card
-- title: Microsoft Defender for Endpoint
-linkLists:
-    - linkListType: overview
-    links:
-        - text: What is Microsoft Defender for Endpoint?
-        url: /defender-endpoint/microsoft-defender-endpoint
-        - text: Defender for Endpoint in Microsoft 365 Defender
-        url: /defender/microsoft-365-security-cente
-        - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
-        url: /defender/microsoft-365-security-mde-redirection
-
-
 
  
              
@@ -145,4 +141,3 @@ linkLists:
         links:
           - text: Microsoft 365 Defender APIs (preview)
             url: api-overview.md
-
