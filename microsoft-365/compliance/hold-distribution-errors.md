@@ -29,12 +29,12 @@ To reduce the number of errors related to eDiscovery legal holds, we recommend t
 
 - If a hold distribution is still pending, with a status of either `On (Pending)` or `Off (Pending)`, wait until the hold distribution is complete before you make any further updates.
 - Merge your updates in a single bulk request rather than updating the hold repeatedly for each transaction. For instance, to add more user mailbox to an existing hold policy using [Set-CaseHoldPolicy cmdlet](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps),
-    - Do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) <b> only once </b> to complete the task)
+    - Do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) only once to complete the task)
 
     ```powershell
     Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
     ```
-    - Don't do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) <b> five times </b> to complete the task)
+    - Don't do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) five times to complete the task)
 
     ```powershell
     $users = {$user1, $user2, $user3, $user4, $user5}
@@ -42,7 +42,6 @@ To reduce the number of errors related to eDiscovery legal holds, we recommend t
         Set-CaseHoldPolicy ...... -AddExchangeLocation $user
     }
     ```
-- If you run scripts to automate the legal holds workflow that span across multiple eDiscovery cases, consider separating the legal hold i[dates] into multiple batches. For example, if your organization has 1,000 eDiscovery legal hold policies, sync 50 policies in one batch operation, then sync the rest with the same pace after you confirm the previous set of operation was successful.
 
 - Before contacting Microsoft Support about eDiscovery hold issues, follow the steps in the [Error/issue: Holds don't sync](#errorissue-holds-dont-sync) section to retry the hold distribution. This process often resolves temporary issues including internal server errors.
 
@@ -74,32 +73,3 @@ If you see one the following error messages when putting custodians and data sou
    ```powershell
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
-## Error/issue: Multiple inactive recipients
-
-There are rare instances where the system can't automatically fix an error related to active users that were placed on hold, then made inactive by the deletion of their user account.
-
-In this case, you may see the following error:
-
-> "We can't identify this user with the existing identifiers. The link between this user and the policy is broken. This usually happens for user whose status have changed from active to inactive after this policy was created. Regardless of the broken link, this user is still on hold if you didn't see any errors the first time you created this hold policy. To fix this issue, update the user identifier in this policy. Some possible candidates we identified are: useralias@contoso.com For more information, see {Link to public doc on hold distribution errors}."
-
-### Resolution
-
-To check for duplicate users or distribution groups with the same username.
-
-1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
-2. Run the following command to retrieve all instances of a username:
-
-    ```powershell
-    Get-Recipient <username>
-    ```
-
-   The output for `useralias@contoso.com` would be similar to the following:
-
-   > |Name|RecipientType|
-   > |---|---|
-   > |Alias, User|MailUser|
-   > |Alias, User|User|
-
-3. If multiple users are returned, locate and fix the conflicting object. If no users are returned, remove the inactive alias from your hold policy to fix the issue.
-
