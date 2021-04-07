@@ -34,7 +34,11 @@ As an admin, you can manage the feedback signal for your organization. We’re i
 
 If your users are using one of Microsoft's apps and wish to provide feedback, there are various ways to do that from within the apps they're using. Users can use these different ways to share product and feature feedback with us. One of the most common ways to share feedback through Microsoft apps is under the Help menu. Selecting **Help** > **Feedback** from most Microsoft apps launches a feedback page, which allows users to submit feedback to Microsoft.
 
-:::image type="content" source="../../media/feedback-excel-example.png" alt-text="Screenshot: Excel spreadsheet with right pane on Microsoft feedback page":::
+#### In-product feedback examples
+
+:::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="Screenshot: In-product feedback example":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Screenshot: Windows in-product feedback example ":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Screenshot: Teams in-product feedback example":::
 
 ### In-product surveys
 
@@ -42,7 +46,6 @@ Users can also rate their experience and provide additional information about th
 
 :::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
-
 :::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot: Examples of in-product feedback pages":::
 
 ## What kind of feedback is best?

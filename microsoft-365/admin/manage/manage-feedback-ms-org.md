@@ -29,7 +29,7 @@ To learn more about the types of feedback and how Microsoft uses user feedback, 
 
 The table below represents which apps and services are currently connected to the feedback policies shown in the feedback policies table below.
 
-|**Apps & Services**|**In-product feedback** <br> :::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-product help example":::|**In-product surveys** <br> :::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Microsoft app in-product survey example":::|**Metadata collection** <br> :::image type="content" source="../../media/feedback-metadata2.png" alt-text="Screenshot: Feedback page showing metadata example":::|**Customer engagement** <br> :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::|
+|**Apps & Services**|**In-product feedback** <br> |**In-product surveys** <br> |**Metadata collection** <br> |**Customer engagement** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Yes|Yes|Yes|Yes|
 |**Excel**|Yes|Yes|Yes|Yes|
@@ -45,6 +45,24 @@ The table below represents which apps and services are currently connected to th
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
+
+Here's some examples of product feedback.
+
+**In-product feedback**
+
+:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-product help example":::
+
+**In-product surveys**
+
+:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Microsoft app in-product survey example":::
+
+**Metadata collection**
+
+:::image type="content" source="../../media/feedback-metadata2.png" alt-text="Screenshot: Feedback page showing metadata example":::
+
+**Customer engagement**
+
+:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::
 
 ## Before you begin
 
