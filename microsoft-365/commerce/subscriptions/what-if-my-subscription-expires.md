@@ -64,7 +64,7 @@ To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.
 > If you want your subscription data to be deleted before the typical Disabled period is over, you can [close your account](../close-your-account.md).
 
 > [!NOTE]
-> If you explicitly delete a subscription, then the subscription will skip the expired and disabled states and the SharePoint Online data and content including OneDrives will be deleted immediately.
+> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
 ## What are my options if my subscription is about to expire?
 
