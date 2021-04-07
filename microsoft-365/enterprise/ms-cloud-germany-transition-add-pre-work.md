@@ -110,7 +110,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 | Notify users of required IMAP4/POP3/SMTP client changes. | Users who have device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, SMTP are required to manually update their client devices to switch to the [Office 365 worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide). | Pre-communicate this dependency to users of these protocols and ensure they either switch to use Outlook mobile or Outlook on the web during this migration. Failure to update client endpoints will result in client connection failures against Microsoft Cloud Deutschland when user mailboxes are migrated. |
 ||||
 
-### Exchange Online Hybrid Customers
+### Exchange Online Hybrid customers
 
 **Applies to:** All customers using an active Exchange Hybrid Configuration with Exchange servers on-premises<br>
 **When applied**: Any time before Phase 5 starts
