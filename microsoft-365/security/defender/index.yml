@@ -92,6 +92,10 @@ landingContent:
             url: /office-365-security/defender-for-office-365
           - text: Defender for Office 365 service description
             url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-center-mdo
+          - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mdo-redirection
             
   # Card
   - title: Microsoft Defender for Endpoint
@@ -99,9 +103,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: /windows/security/threat-protection/microsoft-defender-atp/overview
+            url: /defender-endpoint/microsoft-defender-endpoint
+          - text: Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-cente
+          - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mde-redirection
              
    # Card
   - title: Microsoft Cloud App Security
