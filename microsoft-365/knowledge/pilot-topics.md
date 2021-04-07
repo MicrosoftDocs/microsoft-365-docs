@@ -14,3 +14,5 @@ description: "Learn how to plan and run a trial pilot program for Microsoft Viva
 ---
 
 # Run a pilot for Microsoft Viva Topics
+
+This article describes how to set up a trial pilot program to deploy Microsoft Viva Topics to your organization. This article also recommends best practices for the trial.
