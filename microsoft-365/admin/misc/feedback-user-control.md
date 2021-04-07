@@ -30,7 +30,7 @@ As an admin, you can manage the feedback signal for your organization. We’re i
 
 ## Feedback types
 
-### In-app feedback
+### In-product feedback
 
 If your users are using one of Microsoft's apps and wish to provide feedback, there are various ways to do that from within the apps they're using. Users can use these different ways to share product and feature feedback with us. One of the most common ways to share feedback through Microsoft apps is under the Help menu. Selecting **Help** > **Feedback** from most Microsoft apps launches a feedback page, which allows users to submit feedback to Microsoft.
 
@@ -59,25 +59,26 @@ Microsoft uses feedback to improve Microsoft products. We get a lot of user feed
 
 ### What do we collect?
 
-When a users submits feedback, app information is usually collected along with app ratings and feedback descriptions.  If you've enabled the policy, we may also  collect screenshots and logs to help us debug and resolve problems the user may be running into. Here are the most common items collected.
+When a users submits feedback, app information is usually collected along with app ratings and feedback descriptions.  If you've enabled the policy, we may allow users to submit screenshots and logs to help us debug and resolve problems the user may be running into. Here are the most common items collected or calculated.
 
 - **Comments**   User submitted comments in the original language.
 - **App**   Microsoft product we got the feedback from.
 - **Date Submitted**   Date and time we got the feedback.
-- **User Id**   Azure Active directory Id of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
+- **User Id**   Azure Active directory Id or email address of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
 - **User Email**   If the user is ok with providing their email address for follow-up.
 - **Language or Comment Language**   Original language the comment was submitted in.
 - **Feedback Type**   Survey feedback or in-app feedback.
 - **Survey Questions**   Questions that we asked the user during the survey.
 - **Survey Responses**   User responses to survey questions.
 - **Channel**   Channel of Microsoft product related to the feedback.
-- **App Build**   Build number of Microsoft product that was captured on submission
-- **App Language**   Language of Microsoft product that was captured on submission
-- **Platform**   Platform the Microsoft product was used on when submitting feedback
-- **Diagnostics**   Were any diagnostics collected as part of the feedback? (Yes/No)
-- **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No)
+- **App Build**   Build number of Microsoft product that was captured on submission.
+- **App Language**   Language of Microsoft product that was captured on submission.
+- **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
+- ***TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
 
 ## Data handling and privacy
 
 We work to earn trust by ensuring that we focus on core data handling and data privacy principles.
+We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.
+
 We put you in control of your privacy with easy-to-use tools and clear choices. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. We protect the data you entrust to us with strong security and encryption. We respect local privacy laws and fight for legal protection of your privacy as a human right. We don't use your email, chat, files or other personal content to target ads to you. When we collect data, we use it to make your experiences better. Learn more about Microsoft’s approach to privacy [here](https://privacy.microsoft.com/). Learn more about our [Privacy overview](/compliance/assurance/assurance-privacy).

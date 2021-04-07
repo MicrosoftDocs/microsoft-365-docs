@@ -38,6 +38,7 @@ The table below represents which apps and services are currently connected to th
 |**OneDrive**|[Some settings currently managed by other controls.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**PowerPoint**|Yes|Yes|Yes|Yes|
+|**Project**|Coming soon|Coming soon|Coming soon|Coming soon|
 |**Publisher**|Yes|Yes|Yes|Yes|
 |**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||||
