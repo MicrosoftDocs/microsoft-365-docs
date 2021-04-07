@@ -74,13 +74,13 @@ Converging security centers creates a single place for investigating security in
 
 Selecting an incident name displays a page that demonstrates the value of converging security centers.
 
-:::image type="content" source="../../media/folder/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
 <!--
 ![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
 --> 
 
-Along the top of any page for an incident, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and third-party identity providers. For more information, see [investigate users](investigate-users.md).
+Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and third-party identity providers. For more information, see [investigate users](investigate-users.md).
 
 Take the time to review the incidents in your environment, drill down into these tabs, and practice building an understanding of how to access the information provided for incidents for different kinds of threats.
 

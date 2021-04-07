@@ -95,11 +95,13 @@ The additional tabs for any incident are:
 
   All the supported events and suspicious entities in the alerts in the incident.
 
-Here is the relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center.
+Here's the relationship between an incident and its data to the tabs of an incident in the Microsoft 365 security center.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
 
-The incident queue show the incidents from the last 30 days. From here, you can:
+## Next step
+
+The incident queue from the **Incidents** page lists the most recent incidents. From here, you can:
 
 - See which incidents should be [prioritized](incident-queue.md) based on risk level and other factors. 
 - Perform an [investigation](investigate-incidents.md) of an incident.
