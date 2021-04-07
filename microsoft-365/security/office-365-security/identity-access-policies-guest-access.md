@@ -5,6 +5,7 @@ ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
+audience: Admin
 manager: Laurawi
 f1.keywords: 
   - NOCSH
