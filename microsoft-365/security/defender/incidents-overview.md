@@ -41,7 +41,7 @@ Microsoft 365 services and apps create alerts when they detect a suspicious mali
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
-:::image type="content" source="../../media/folder/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident":::
+:::image type="content" source="../../media/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident":::
 
 Watch this short (4 minutes) an overview of incidents in Microsoft 365 Defender.
 <br>
@@ -54,20 +54,20 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - What tactics were used.
 - How far the attack has gone into your tenant.
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
-- How severe the impact.
+- How severe is the impact.
 - All of the data associated with the attack.
 
-If enabled, Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack straight from the incidents view. 
+If enabled, Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack from the incidents itself. 
 
 ## Incidents and alerts in the Microsoft 365 security center
 
-You manage incidents from **Incidents** under **Incidents & alerts** on the quick launch of the Microsoft 365 security center.
+You manage incidents from ***Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in the Microsoft 365 security center.":::
 
 Selecting an incident name displays a summary of the incident and provides access to additional information.
 
-:::image type="content" source="../../media/folder/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
 The additional tabs for any incident are:
 
@@ -97,13 +97,10 @@ The additional tabs for any incident are:
 
 Here is the relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center.
 
-:::image type="content" source="../../media/folder/incidents-security-center.png" alt-text="The relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-security-center.png" alt-text="The relationship an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
 
-Incidents from the last 30 days are shown in the incident queue. From here, you can see which incidents should be prioritized based on risk level and other factors. 
+The incident queue show the incidents from the last 30 days. From here, you can:
 
-You can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.
-
-## See also
-- [Prioritize incidents](incident-queue.md)
-- [Investigate incidents](investigate-incidents.md)
-- [Manage incidents](manage-incidents.md)
+- See which incidents should be [prioritized](incident-queue.md) based on risk level and other factors. 
+- Perform an [investigation](investigate-incidents.md) of an incident.
+- [Manage incidents](manage-incidents.md), which includes renaming, assigning them to individual analysts, classifying, and adding tags for your incident management workflow.
