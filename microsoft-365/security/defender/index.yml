@@ -60,20 +60,7 @@ landingContent:
           url: m365d-enable.md
         - text: Deploy supported services
           url: deploy-supported-services.md
-
-# Card (optional)
-  - title: Microsoft 365 security center
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview of the Microsoft 365 security center
-            url: overview-security-center.md
-          - text: Microsoft Defender for Endpoint in the Microsoft 365 security center
-            url: microsoft-365-security-center-mde.md
-          - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
-            url: ../defender/microsoft-365-security-center-mdo.md
-
- # Card
+# Card
   - title: Microsoft Defender for Identity
     linkLists:
       - linkListType: overview
@@ -108,6 +95,20 @@ landingContent:
             url: /defender/microsoft-365-security-cente
           - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
             url: /defender/microsoft-365-security-mde-redirection
+
+# Card (optional)
+  - title: Microsoft 365 security center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of the Microsoft 365 security center
+            url: overview-security-center.md
+          - text: Microsoft Defender for Endpoint in the Microsoft 365 security center
+            url: microsoft-365-security-center-mde.md
+          - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
+            url: ../defender/microsoft-365-security-center-mdo.md
+
+ 
              
    # Card
   - title: Microsoft Cloud App Security
