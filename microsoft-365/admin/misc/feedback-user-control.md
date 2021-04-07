@@ -77,7 +77,7 @@ When a users submits feedback, app information is usually collected along with a
 - **App Build**   Build number of Microsoft product that was captured on submission.
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
-- ***TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
+- **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
 
 ## Data handling and privacy
 
