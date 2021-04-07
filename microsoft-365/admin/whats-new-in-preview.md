@@ -45,6 +45,25 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## April 2021
+
+### Manage licenses and bills from the Admin mobile app
+
+- You can now view all available and assigned licenses for your subscriptions. You can also assign or un-assign licenses to users, and add or remove licenses.
+- You can now view detailed invoices in the app.
+- These updates are available on both Android and iOS devices.
+
+:::image type="content" source="../media/license-screen-mobile-app.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
+:::image type="content" source="../media/assign-license-mobile-app.png" alt-text="Screenshot: Admin mobile app assign license page":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Admin mobile app invoice summary page":::
+
+### Updated Message center feed in the Admin mobile app
+
+- You now have a more flexible reading experience of the Message center feed. You now have the ability to filter messages based on service or tags and mark messages as favorite. Bulk actions for marking messages as read, unread or archived has also been added.
+- These updates are available on both Android and iOS devices.
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
+
 ## Ignite 2021 (March)
 
 Welcome to Microsoft Ignite. We hope you were able to attend some of one of our sessions: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Here's a few of the things we talked about at Ignite.
