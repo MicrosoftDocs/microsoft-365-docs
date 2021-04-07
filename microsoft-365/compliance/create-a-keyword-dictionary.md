@@ -23,18 +23,46 @@ description: "Learn the basic steps to creating a keyword dictionary in the Offi
 # Create a keyword dictionary
 
 Data loss prevention (DLP) can identify, monitor, and protect your sensitive items. Identifying sensitive items sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication), or inappropriate or explicit language. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1MB of terms (post compression) in the dictionary and support any language. The tenant limit is also 1MB after compression. 1MB of post compression limit means that all dictionaries combined across a tenant can have close to 1 million character.
-  
-> [!NOTE]
-> There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant.
 
-> [!NOTE]
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
-> - Chinese (simplified)
-> - Chinese (traditional)
-> - Korean
-> - Japanese
->
->This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+## Keyword dictionary limits
+
+There is a limit of 50 keyword dictionary based sensitive information types that can be created per tenant. To find out how many keyword dictionaries you have in your tenant, you can run this PowerShell script against your tenant.
+
+```powershell
+$rawFile = $env:TEMP + "\rule.xml"
+
+$kd = Get-DlpKeywordDictionary
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+$UnicodeEncoding = New-Object System.Text.UnicodeEncoding
+$FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
+
+if($kd.Count -gt 0)
+{
+$count = 0
+$entities = $FileContent -split "Entity id"
+for($j=1;$j -lt $entities.Count;$j++)
+{
+for($i=0;$i -lt $kd.Count;$i++)
+{
+$Matches = Select-String -InputObject $entities[$j] -Pattern $kd[$i].Identity -AllMatches
+$count = $Matches.Matches.Count + $count
+if($Matches.Matches.Count -gt 0) {break}
+}
+}
+
+Write-Output "Total Keyword Dictionary SIT:"
+$count
+}
+else
+{
+$Matches = Select-String -InputObject $FileContent -Pattern $kd.Identity -AllMatches
+Write-Output "Total Keyword Dictionary SIT:"
+$Matches.Matches.Count
+}
+
+Remove-Item $rawFile
+```
 
 ## Basic steps to creating a keyword dictionary
 
@@ -233,3 +261,12 @@ Paste the identity into your custom sensitive information type's XML and upload 
       </Resource>
     </LocalizedStrings>
 ```
+
+> [!NOTE]
+> Microsoft 365 Information Protection supports in preview double byte character set languages for:
+> - Chinese (simplified)
+> - Chinese (traditional)
+> - Korean
+> - Japanese
+>
+>This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
