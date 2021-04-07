@@ -1,6 +1,6 @@
 ---
 title: Prepare mapped drives for Microsoft Managed Desktop 
-description:  Important steps to make sure 
+description:  Important steps to make sure users can access data on mapped drives
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,6 +9,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 #  Prepare mapped drives for Microsoft Managed Desktop
@@ -47,4 +48,16 @@ Make sure that mapped drives cannot be avoided and you have carefully reviewed t
 2. Submit a support request titled “Mapped drives deployment” and provide all the required file share details.  
 3. Microsoft Managed Desktop IT Operations will advise, by using support request updates, when the request has been completed. Initially this configuration will only be deployed to devices in the Test deployment group.  
 4. You must test and confirm whether the configuration deployed by the Microsoft Managed Desktop IT Operations works as you expect. Reply using the Discussion tab in the details of the same support request to notify Microsoft Managed Desktop IT Operations once you've completed your testing.  
-5. Microsoft Managed Desktop IT Operations team will then deploy the configuration to the other deployment groups.
+5. Microsoft Managed Desktop IT Operations team will then deploy the configuration to the other deployment groups. 
+
+## Steps to get ready
+
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. [Use Readiness assessment tools](readiness-assessment-tool.md).
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md) (This article)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)

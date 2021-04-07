@@ -743,6 +743,8 @@
               href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
+            - name: Export documents to an Azure Storage account
+              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings
