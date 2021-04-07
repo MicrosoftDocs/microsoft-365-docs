@@ -65,6 +65,7 @@ When a policy's **Access by unallowed apps and browsers** setting is turned on a
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
+#### Auto-quarantine
 
 ### Browser and domain restrictions
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
@@ -91,7 +92,6 @@ You can control how users interact with the business justification option in DLP
 - By default, users can select either a built-in justification, or enter their own text.
 - Users can only select a built-in justification.
 - Users can only enter their own justification.
-
 
 ## Tying DLP settings together
 
