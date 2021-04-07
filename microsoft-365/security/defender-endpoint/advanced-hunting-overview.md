@@ -38,7 +38,8 @@ Watch this video for a quick overview of advanced hunting and a short tutorial t
 You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
 >[!TIP]
->Use [advanced hunting in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>Use [advanced hunting in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/m365d-enable).<br><br>
+Learn more about how to move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## Get started with advanced hunting
 
