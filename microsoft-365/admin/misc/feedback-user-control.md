@@ -42,7 +42,7 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 ### In-product surveys
 
-Users can also rate their experience and provide additional information about their experience via Microsoft initiated surveys. These surveys appear in the Microsoft 365 apps occasionally, at the bottom right of the app. If the user decides to provide feedback, dismisses the survey, or lets the survey disappear on its own, that user won't see the survey again for a while. Microsoft uses a data governance process to suppress these surveys to ensure the least amount disruption to your users.
+Users can also rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for a period of time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
 
 :::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
