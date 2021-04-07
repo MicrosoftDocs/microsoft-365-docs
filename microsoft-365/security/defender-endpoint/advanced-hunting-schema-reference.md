@@ -19,7 +19,7 @@ ms.date: 01/14/2020
 ms.technology: mde
 ---
 
-# Understand the advanced hunting schema in Defender for Endpoint
+# Understand the advanced hunting schema in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
