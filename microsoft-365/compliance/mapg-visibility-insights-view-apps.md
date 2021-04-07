@@ -22,7 +22,7 @@ description: "View your apps."
 
 Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights into the Microsoft 365 apps in your tenant. For example, you can see:
 
-- A list of all OAuth-enabled Microsoft 365 apps in the tenant, together with relevant app metadata and usage data. 
+- A list of all OAuth-enabled Microsoft 365 apps in the tenant, together with relevant app metadata and usage data.
 - App details with deeper insights and information by selecting an app in the list.
 
 ## Getting a list of all the apps in your tenant

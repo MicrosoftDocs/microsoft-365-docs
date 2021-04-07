@@ -20,7 +20,7 @@ description: "Determine your app compliance posture."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection). 
+Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection).
 
 ![The MAPG overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
@@ -32,18 +32,18 @@ From this page, you can see:
 
 - For apps:
 
-  - How many are in your tenant.
-  - How many might be overprivileged.
-  - How many are high privilege.
+  - How many are in your tenant
+  - How many might be overprivileged
+  - How many are high privilege
 
   From this information, you can determine the level of risk to your organization by overprivileged and high privilege apps.
 
 - For alerts:
 
-  - How many alerts your tenant has.
-  - How many are based on MAPG detections (**Threat alerts**).
-  - How many are based on app policies you have in place (**Policy alerts**).
-  - The ten latest alerts.
+  - How many alerts your tenant has
+  - How many are based on MAPG detections (**Threat alerts**)
+  - How many are based on app policies you have in place (**Policy alerts**)
+  - The 10 latest alerts
 
   From this information, you can determine how quickly alerts are being generated and the relative number of detected and policy-based alerts.
 
@@ -53,4 +53,3 @@ From this page, you can see:
   - The usage of the top resources in the last 90 days
 
   From this information, you can determine if there are anomalous spikes in access to the data in your Microsoft 365 tenant.
-

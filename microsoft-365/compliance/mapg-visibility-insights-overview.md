@@ -22,9 +22,9 @@ description: "Learn about visibility and insights."
 
 With Microsoft Application Protection and Governance (MAPG), you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
 
-With MAPG visibility and insights, you can see 
+With MAPG visibility and insights, you can see:
 
-- A list of all the third-party Microsoft 365 platform apps with their compliance status in your tenant on a single dashboard. 
+- A list of all the third-party Microsoft 365 platform apps with their compliance status in your tenant on a single dashboard.
 - A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
@@ -57,7 +57,7 @@ Per-App M365 API Usage Data by Workload (count, download/upload)
 Per-User M365 API Usage Data by Workload (count, download/upload)
 M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
 M365 API Error Analysis per App
---> 
+-->
 
 With MAPG, you can see:
 
@@ -91,7 +91,7 @@ You can also:
 
 <!--
 NOTE TO WRITER: Above list was taken from an internal spec. It will need to be scrubbed for the public preview.
---> 
+-->
 
 ## Next step
 

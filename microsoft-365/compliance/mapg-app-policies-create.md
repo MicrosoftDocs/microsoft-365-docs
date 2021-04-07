@@ -20,9 +20,9 @@ description: "Create app policies."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft Application Protection and Governance (MAPG) are a way for you to create additional methods to:
+Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft Application Protection and Governance (MAPG) are a way for you to:
 
-- Specify additional conditions by which MAPG can alert you to app behavior for automatic or manual remediation.
+- Specify conditions by which MAPG can alert you to app behavior for automatic or manual remediation.
 - Implement the app compliance policies for your organization.
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
@@ -35,7 +35,7 @@ To create a new app policy, go to **Microsoft 365 Compliance Center > App protec
 
 ## App policy templates
 
-To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, the name of the template, and then click **Next**.
+To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, select the name of the template, and then select **Next**.
 
 MAPG has three categories of app policy templates.
 
@@ -45,8 +45,8 @@ MAPG includes these templates to generate alerts for app usage.
 
 | Template name | Description |
 |:-------|:-----|
-| Increase in app users | Highlights apps with recently increased users to identify apps with that have recently gained a larger footprint in your tenant and may need further investigation. <br><br> By default, this policy will flag all apps that have had a more than a 50% increase in use in the last 7 days and can be customized with additional conditions and actions. |
-| New app with a high volume of data access | Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <br><br> By default, this policy will flag all apps that have been registered in the last 7 days and have had more than 1 GB in data access over that period. This policy can be customized with additional conditions and actions. |
+| Increase in app users | Highlights apps with recently increased users to identify apps that have recently gained a larger footprint in your tenant and that may need further investigation. <br><br> By default, this policy will flag all apps that have had a more than 50% increase in use in the last 7 days, and can be customized with extra conditions and actions. |
+| New app with a high volume of data access | Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <br><br> By default, this policy will flag all apps that have been registered in the last 7 days and that have had more than 1 GB in data access over that period. This policy can be customized with more conditions and actions. |
 |||
 
 ### App Permissions
@@ -55,7 +55,7 @@ MAPG includes these templates to generate alerts for app permissions.
 
 | Template name | Description |
 |:-------|:-----|
-| Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned if not used for 90 days. This time period filter can be customized with additional conditions and actions. |
+| Overpermissioned apps | Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <br><br> By default, this policy will flag all apps that are marked as overpermissioned if not used for 90 days. This time period filter can be customized with more conditions and actions. |
 | New app with high-privilege permissions | Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <br><br> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions. |
 | New app with app-only permissions | Highlights all new apps with permissions to access data across the tenant, which are potentially a higher risk set of permissions. <br><br> By default, this policy will flag all apps registered within the last 7 days that have app-only permissions. |
 |||
@@ -66,8 +66,8 @@ MAPG includes these templates to generate alerts for app certification.
 
 | Template name | Description |
 |:-------|:-----|
-| App certification loss | Highlights all previously certified apps that recently lost their app certification, which allows you to ensure that this status change is expected. <br><br> By default, this policy will flag all apps that are uncertified and have had their app certification changed in the last 7 days. |
-| New uncertified app | Highlights new apps that have not been through the app certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
+| App certification loss | Highlights all previously certified apps that recently lost their app certification, enabling you to ensure that this status change is expected. <br><br> By default, this policy will flag all apps that are uncertified and have had their app certification changed in the last 7 days. |
+| New uncertified app | Highlights new apps that haven't been through the app certification process to ensure that they are expected in the tenant. <br><br> By default, this policy will flag all apps that were registered in the last 7 days and are uncertified. |
 |||
 
 ## Custom app policies
@@ -94,13 +94,13 @@ On the **Choose Policy settings and conditions** page, for **Choose which apps t
 - Choose specific apps
 
   A pane allows you to select one or more apps.
-  Click **Add**.
+  Select **Add**.
 
-Click **Next**.
+Select **Next**.
 
-On the **Choose Policy settings and conditions** page, select **Set new conditions for policy**, and then click **Next**.
+On the **Choose Policy settings and conditions** page, select **Set new conditions for policy**, and then select **Next**.
 
-The **Create rule** pane allows you to select conditions for a new rule. Click **Add condition** and select from the list of conditions, and then specify the value of the condition. You can add multiple conditions.
+The **Create rule** pane allows you to select conditions for a new rule. Select **Add condition** and select from the list of conditions, and then specify the value of the condition. You can add multiple conditions.
 
 Here are the available conditions for a custom app policy.
 
@@ -122,24 +122,24 @@ Here are the available conditions for a custom app policy.
 | Users consented trend | X% increase in last 90 days |  |
 | HVE user consented | Yes or No | A user with a [priority account](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
 | Delegating user | Select user(s) from list |  |
-| Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator	| Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
+| Delegating user’s role | Select one or more: Teams Administrator, Directory Readers, Security Reader, Compliance Administrator, Security Administrator, Helpdesk Administrator, SharePoint Administrator, Exchange Administrator, Global Reader, Global Administrator, Compliance Data Administrator, User Administrator, Service Support Administrator | Multiple selections allowed. <br><br> Any Azure AD role with assigned member should be made available in this list. |
 | Workload accessed | OneDrive and/or SharePoint and/or Exchange | Multiple selections allowed. |
 | Error rate | Error rate is greater than X% |  |
 ||||
 
 <!--
 NOTE TO WRITER: Replace X in the above table with correct values.
---> 
+-->
 
 All of the specified conditions must be met for this app policy to apply.
 
 When you are done specifying the conditions, select **Save**, and then select **Next**.
 
-On the **Define Policy Actions** page, select **Disable app** if you want MAPG to disable the app when an alert based on this policy is generated, and then click **Next**.
+On the **Define Policy Actions** page, select **Disable app** if you want MAPG to disable the app when an alert based on this policy is generated, and then select **Next**.
 
 On the **Define Policy Status** page, select one of these options:
 
-- **Audit mode**: Policies are evaluated but configured actions will not occur. Audit mode policies appear with the status of **Test** in the list of policies.
+- **Test mode**: Policies are evaluated but configured actions will not occur. Test mode policies appear with the status of **Test** in the list of policies.
 - **Active**: Policies are evaluated and configured actions will occur.
 - **Inactive**: Policies are not evaluated and configured actions will not occur.
 
@@ -151,7 +151,7 @@ On the **Define Policy Status** page, select one of these options:
 Publish metadata-based policies
 
 ## Configure access permissions
---> 
+-->
 
 ## Test and monitor your new app policy
 
@@ -163,7 +163,7 @@ If the number of alerts is an unexpectedly low value, edit the settings of the a
 
 Here is an example of a process for creating a new policy, testing it, and then making it active:
 
-1. Create the new policy with severity, apps, conditions, and actions set to initial values and the status set to **Audit mode**.
+1. Create the new policy with severity, apps, conditions, and actions set to initial values and the status set to **Test mode**.
 2. Check for expected behavior, such as alerts generated.
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.

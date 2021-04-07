@@ -29,13 +29,13 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 - Users are typically unaware of the risks when consenting to the use of applications. 
 - App developers and independent software vendors (ISVs) do not yet have Security Development Lifecycle (SDL) best practices in place to address attacker techniques.
---> 
+-->
 
 MAPG provides you with comprehensive:
 
 - **Insights**: See a view of all the third-party apps for the Microsoft 365 platform in your tenant on a single dashboard. You can see all the apps’ status and alert activities and react or respond to them.
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
-- **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used. 
+- **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used.
 - **Remediation**: Along with automatic remediation capabilities, use remediation tools and controls in a timely manner to respond to anomalous app activity detections.
 
 Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. MAPG oversees and governs OAuth-enabled apps that are registered with Azure Active Directory (Azure AD) and accessing data through the Microsoft Graph API. MAPG provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.
@@ -44,7 +44,7 @@ Unlike other application governance products in the marketplace, MAPG is a platf
 Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 application ecosystem. MAPG's initial focus is on OAuth-enabled apps published to the Microsoft 365 platform that are registered with Azure AD and access data through the Graph API. For the initial release, MAPG does not support other, non-OAuth-enabled M365 apps, add-ins (such as PowerBI), or other app vendor ecosystems such as Google, Facebook, Amazon Web Services, Workplace, and Salesforce. MAPG’s focus is on third-party published apps for the Microsoft 365 application platform.
 
 Microsoft allows developers to build cloud applications using Azure Active Directory (Azure AD), Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. Because of MAPG's visibility, insights, and control capabilities, app developers have the incentive to comply with publisher verification, self-attestation, and Microsoft certification, and can build high-quality productivity apps that are secure and compliant.
---> 
+-->
 
 ## Licensing for MAPG
 
@@ -54,12 +54,12 @@ TBD
 
 One of the following administrator roles are required to see MAPG pages or manage policies and settings:
 
-- Security Administrator 
-- Security Reader (read-only) 
-- Security Operator 
-- Compliance Administrator 
-- Compliance Reader (read-only) 
-- Global Administrator 
+- Security Administrator
+- Security Reader (read-only)
+- Security Operator
+- Compliance Administrator
+- Compliance Reader (read-only)
+- Global Administrator
 - Global Reader
 
 Here are the capabilities for each role.
@@ -75,7 +75,7 @@ Here are the capabilities for each role.
 | Security Operator | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) | ![Check mark](..\media\checkmark.png) |
 ||||||||||
 
-For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference). 
+For additional information about each role, see [Administrator role permissions](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 
 ## A first glimpse at MAPG
 
@@ -91,15 +91,15 @@ MAPG, Azure Active Directory (Azure AD), and Microsoft Cloud App Security collec
 
 By sharing information across MAPG, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
 
-- App sign-in information in MAPG: 
+- App sign-in information in MAPG:
 
-  From the MAPG portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events. 
+  From the MAPG portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
 
-- App API usage information in the Azure Active Directory admin center: 
+- App API usage information in the Azure Active Directory admin center:
 
   From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the MAPG portal for the details of app usage.
 
-- API usage information in the Microsoft Cloud App Security portal: 
+- API usage information in the Microsoft Cloud App Security portal:
 
   From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the MAPG portal for the details.
 
@@ -132,7 +132,7 @@ Key cross-reference resources:
 - [Monitor alerts raised in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
 - [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
 
---> 
+-->
 
 ## Using MAPG
 
