@@ -36,20 +36,20 @@ We want to keep your organization [secure by default](secure-by-default.md), so 
 - **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
 
-You use the _advanced delivery policy_ in EOP to prevent these messages _in these specific scenarios_ from being filtered. The advanced delivery policy ensures that messages in these scenarios are not filtered:
+You use the _advanced delivery policy_ in EOP to prevent these messages _in these specific scenarios_ from being filtered<sup>\*</sup>. The advanced delivery policy ensures that messages in these scenarios are not filtered:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing takes no action on these messages.<sup>\*</sup>
 - [Default system alerts](alerts.md) are not triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
-  - [Admin submissions](admin-submission.md) generates an automatic response stating that the message is part of a phishing simulation campaign (so it's not a real threat).
+  - [Admin submissions](admin-submission.md) generates an automatic response stating that the message is part of a phishing simulation campaign and is not a real threat.
   - [Safe Links in Defender for Office 365](safe-links.md) does not block or detonate the specifically identified URLs in these messages.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) does not detonate attachments in these messages.
 
 <sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
 
-Messages that are identified by the advanced delivery policy aren't true security threats, so the messages are marked as system overrides. Admins can filter and analyze these system overrides in the following experiences:
+Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked as system overrides. Admins can filter and analyze these system overrides in the following experiences:
 
 - [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer.md)
 - The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md)
