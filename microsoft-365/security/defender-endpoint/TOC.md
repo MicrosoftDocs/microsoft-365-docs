@@ -140,6 +140,8 @@
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
+##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
+##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
 
 #### [Hardware-based isolation]()
