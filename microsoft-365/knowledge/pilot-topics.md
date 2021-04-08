@@ -62,7 +62,7 @@ Extended trials are available for organizations who have engaged a partner throu
 
 **Before you activate a trial**
 
-Planning is essential for an effective trial of Viva Topics. The trial period is limited and must include topic discovery, and exploring topic quality; management; and end-user experiences.
+Planning is essential for an effective trial of Viva Topics. The trial period is limited and must include topic discovery and exploring topic quality; management; and end-user experiences.
 
 **Discovery**
 
