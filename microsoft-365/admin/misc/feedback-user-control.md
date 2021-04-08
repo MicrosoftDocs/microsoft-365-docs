@@ -42,7 +42,7 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 ### In-product surveys
 
-Users can also rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for a period of time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
+Users can also rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
 
 :::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
@@ -53,16 +53,16 @@ Users can also rate their experience and provide additional information about th
 Detailed and actionable feedback is vital for making changes and improvements in Microsoft products. If your users have issues, or suggestions for how we can improve, we’d like to hear it. Below are a few tips and examples on actionable feedback sent to Microsoft.
 
 - **Concise and descriptive title**   Descriptive and specific titles help us understand the issue being reported. Example: Excel’s **Recent files** list doesn't include recently added OneDrive files.
-- **Focus on one issue at a time**   Provide feedback for one issue or recommendation one item at a time. This ensures the correct logs and data are received with each submission and can be assigned for follow up. If you have more than one issue, submit a new feedback request for each issue. This helps us identify the volume of feedback we’re receiving on a particular issue.
-- **Write details in the Description box**   Information about your device, operating system, and apps are automatically included in each reported feedback. Add additional about an issue you think is important. For example, include detailed steps to reproduce the issue.
+- **Focus on one issue at a time**   Provide feedback for one issue or recommendation one item at a time. This ensures the correct logs and data are received with each submission and can be assigned for follow-up. If you have more than one issue, submit a new feedback request for each issue. This helps us identify the volume of feedback we’re receiving on a particular issue.
+- **Write details in the Description box**   Information about your device, operating system, and apps are automatically included in each reported feedback. Add any additional info about an issue you think is important. For example, include detailed steps to reproduce the issue.
 
 ## How Microsoft uses feedback
 
-Microsoft uses feedback to improve Microsoft products. We get a lot of user feedback in the form of questions, problems, compliments, and suggestions. We make sure this feedback makes it back to the appropriate teams, who use feedback to identify, prioritize and make improvements to Microsoft products. Feedback is essential for our product teams to understand our user's experiences, and directly influences the priority of fixes and improvements.
+Microsoft uses feedback to improve Microsoft products. We get user feedback in the form of questions, problems, compliments, and suggestions. We make sure this feedback makes it back to the appropriate teams, who use feedback to identify, prioritize and make improvements to Microsoft products. Feedback is essential for our product teams to understand our user's experiences, and directly influences the priority of fixes and improvements.
 
 ### What do we collect?
 
-When a users submits feedback, app information is usually collected along with app ratings and feedback descriptions.  If you've enabled the policy, we may allow users to submit screenshots and logs to help us debug and resolve problems the user may be running into. Here are the most common items collected or calculated.
+When a user submits feedback, app information is usually collected along with app ratings and feedback descriptions.  If you've enabled the policy, we may allow users to submit screenshots and logs to help us debug and resolve problems the user may be running into. Here are the most common items collected or calculated.
 
 - **Comments**   User submitted comments in the original language.
 - **App**   Microsoft product we got the feedback from.
@@ -84,4 +84,4 @@ When a users submits feedback, app information is usually collected along with a
 We work to earn trust by ensuring that we focus on core data handling and data privacy principles.
 We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.
 
-We put you in control of your privacy with easy-to-use tools and clear choices. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. We protect the data you entrust to us with strong security and encryption. We respect local privacy laws and fight for legal protection of your privacy as a human right. We don't use your email, chat, files or other personal content to target ads to you. When we collect data, we use it to make your experiences better. Learn more about Microsoft’s approach to privacy [here](https://privacy.microsoft.com/). Learn more about our [Privacy overview](/compliance/assurance/assurance-privacy).
+We put you in control of your privacy with easy-to-use tools and clear choices. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. We protect the data you entrust to us with strong security and encryption. We respect local privacy laws and fight for legal protection of your privacy as a human right. We don't use your email, chat, files, or other personal content to target ads to you. When we collect data, we use it to make your experiences better. Learn more about Microsoft’s approach to privacy [here](https://privacy.microsoft.com/). Learn more about our [Privacy overview](/compliance/assurance/assurance-privacy).
