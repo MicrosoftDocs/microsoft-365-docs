@@ -130,6 +130,7 @@
 ##### [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
 ##### [Run and review the results of a Microsoft Defender Offline scan](microsoft-defender-offline.md)
 ##### [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Restore quarantined files in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md)
 
 #### [Exclusions](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
