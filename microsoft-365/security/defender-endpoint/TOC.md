@@ -105,6 +105,8 @@
 ##### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
 
+#### [Manage Microsoft Defender Antivirus in your business](configuration-management-reference-microsoft-defender-antivirus.md)
+
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
