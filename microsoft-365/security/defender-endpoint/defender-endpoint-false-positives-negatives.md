@@ -45,7 +45,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 4.	[Submit an entity for analysis](#part-4-submit-a-file-for-analysis)
 5.	[Review and adjust your threat protection settings](#part-5-review-and-adjust-your-threat-protection-settings)
 
-And, you can [get help if you still have issues with false positives/negatives](#still-need-help) after performing the tasks described in this article.
+You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
 ![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
 
