@@ -53,6 +53,14 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not be permitted to connect to the Internet.
 
+> [!NOTE]
+> - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:</br>
+> Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384
+> Windows 10, version 1909 - https://support.microsoft.com/kb/4601380
+> Windows 10, version 2004 - https://support.microsoft.com/kb/4601382
+> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382
+> These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
+
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:
 
 - Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
