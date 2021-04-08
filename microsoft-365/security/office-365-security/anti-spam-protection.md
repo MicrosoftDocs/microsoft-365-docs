@@ -84,7 +84,7 @@ Here are some best practices that apply to either scenario:
 
   - **DMARC**: Domain-based Message Authentication, Reporting, and Conformance helps destination email systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For more information, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
-- **Verify your bulk email settings**: The bulk compliant level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Verify your bulk email settings**: The bulk complaint level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### Prevent the delivery of spam to the Inbox
 
