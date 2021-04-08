@@ -29,12 +29,12 @@ To reduce the number of errors related to eDiscovery legal holds, we recommend t
 
 - If a hold distribution is still pending, with a status of either `On (Pending)` or `Off (Pending)`, wait until the hold distribution is complete before you make any further updates.
 - Merge your updates in a single bulk request rather than updating the hold repeatedly for each transaction. For instance, to add more user mailbox to an existing hold policy using [Set-CaseHoldPolicy cmdlet](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps),
-    - Do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) only once to complete the task)
+    - Do this. This code block runs [Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) only once to complete the task)
 
     ```powershell
     Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
     ```
-    - Don't do this. This code block runs [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) five times to complete the task)
+    - Don't do this. This code block runs [Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps) five times to complete the task)
 
     ```powershell
     $users = {$user1, $user2, $user3, $user4, $user5}
