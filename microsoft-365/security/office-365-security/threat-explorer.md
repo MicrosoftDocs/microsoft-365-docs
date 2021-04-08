@@ -352,7 +352,13 @@ This example uses Threat Explorer.
 
 ### Preview email header and download email body
 
-You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails in all-email messages view. However, viewing the email header does not require any additional role (other than what is required to view messages in Threat Explorer).
+You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, is required to grant the ability to download mails in all-email messages view. However, viewing the email header does not require any additional role (other than what is required to view messages in Threat Explorer). To create a new role group with the Preview role - 
+
+1. You start by selecting a built in role group that only has the Preview role - Data Investigator or eDiscovery Manager.
+2. Click on the "Copy role group" button.
+3. Choose a name and description for your new role group and choose Next.
+4. Modify the roles, adding and removing as necessary, leaving the Preview role.
+5. Add members and then click on Create role group.
 
 Explorer and Real-time detections will also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
 
