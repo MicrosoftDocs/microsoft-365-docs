@@ -93,7 +93,6 @@ Due to the environment where Network Protection runs, Microsoft might not be abl
 ```
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
-
 ```
 
 ## Related articles
