@@ -145,7 +145,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devic
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-2. Select a device profile in the drop-down menu.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
 3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
 > [!NOTE]

@@ -38,7 +38,7 @@ Once you have established the relationship with your customers, you can use Part
 4. Under **Apply profiles** to devices, select **Add devices**.
 5. Enter the appropriate Group Tag for the device profile you've selected (as shown in the following table) and then select **Browse** to upload the customer's list (in .csv file format) to Partner Center.
 
-|Device profile  |Group Tag  |
+|[Device profile](../service-description/profiles.md)  |Group Tag  |
 |---------|---------|
 |Sensitive data     |**Microsoft365Managed\_SensitiveData**    |
 |Power user     | **Microsoft365Managed\_PowerUser**          |

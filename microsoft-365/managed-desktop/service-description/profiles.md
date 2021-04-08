@@ -24,8 +24,7 @@ You can assign different pre-set configurations ("device profiles") to devices, 
 
 You can think of device profiles as being part of a hierarchy of device configuration options.
 
-
-{IMAGE}
+:::image type="content" source="../../media/MMD_profile-options-heirarchy.png" alt-text="Pyramidal representation of device configurations, with your own modifications at the top, resting on customizations you can request, resting on device profiles, restong on a foundational configuration":::
 
 Fundamentally, every Microsoft Managed Desktop device has a foundation that includes a standard security baseline, compliance policies, Windows Update settings, and groups. To work with Microsoft Managed Desktop, every device must include all of these elements, which can't be changed by admins without a request to Microsoft Managed Desktop.
 

@@ -16,7 +16,7 @@ audience: Admin
 
 # Reassign profiles
 
-You can change the device profile assigned to a device by using the Admin Portal.
+You can change the [device profile](service-description/profiles.md) assigned to a device by using the Admin Portal.
 
 > [!IMPORTANT]
 > Changing a device's profile will erase all data on the device and cause it to restart. Make sure you’ve selected the right devices before proceeding and back up any data you might want to preserve.
