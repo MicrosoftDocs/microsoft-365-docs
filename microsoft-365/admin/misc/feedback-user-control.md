@@ -44,9 +44,9 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 Users can also rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot: Examples of in-product feedback pages":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
 
 ## What kind of feedback is best?
 
@@ -55,10 +55,6 @@ Detailed and actionable feedback is vital for making changes and improvements in
 - **Concise and descriptive title**   Descriptive and specific titles help us understand the issue being reported. Example: Excel’s **Recent files** list doesn't include recently added OneDrive files.
 - **Focus on one issue at a time**   Provide feedback for one issue or recommendation one item at a time. This ensures the correct logs and data are received with each submission and can be assigned for follow-up. If you have more than one issue, submit a new feedback request for each issue. This helps us identify the volume of feedback we’re receiving on a particular issue.
 - **Write details in the Description box**   Information about your device, operating system, and apps are automatically included in each reported feedback. Add any additional info about an issue you think is important. For example, include detailed steps to reproduce the issue.
-
-## How can I see my user's feedback?
-
-Coming soon, we'll be sharing the feedback data we collect for Microsoft products back to you. We're working on a new experience in the Microsoft 365 admin center that let's you view, delete and export the feedback data for your organization. This gives you direct transparency and useful insights into your users’ experiences with Microsoft 365 products.
 
 ## How Microsoft uses feedback
 
@@ -89,3 +85,7 @@ We work to earn trust by ensuring that we focus on core data handling and data p
 We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.
 
 We put you in control of your privacy with easy-to-use tools and clear choices. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. We protect the data you entrust to us with strong security and encryption. We respect local privacy laws and fight for legal protection of your privacy as a human right. We don't use your email, chat, files, or other personal content to target ads to you. When we collect data, we use it to make your experiences better. Learn more about Microsoft’s approach to privacy [here](https://privacy.microsoft.com/). Learn more about our [Privacy overview](/compliance/assurance/assurance-privacy).
+
+## How can I see my user's feedback?
+
+Coming soon, we'll be sharing the feedback data we collect for Microsoft products back to you. We're working on a new experience in the Microsoft 365 admin center that let's you view, delete and export the feedback data for your organization. This gives you direct transparency and useful insights into your users’ experiences with Microsoft 365 products.
