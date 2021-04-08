@@ -124,7 +124,9 @@
 ##### [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
 ##### [Report on Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
 
-#### Scans and remediation
+#### [Scans and remediation](review-scan-results-microsoft-defender-antivirus.md)
+##### [Run and review the results of a Microsoft Defender Offline scan](microsoft-defender-offline.md)
+##### [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
