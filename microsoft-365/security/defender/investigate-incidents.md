@@ -33,19 +33,25 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack.
+Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.
+Within an incident, you investigate the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
-## Investigate an incident
+## Initial investigation
 
-1. Select an incident from the incident queue. <BR> A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.
+Before diving into the details, take a look at the properites and summary of the incident.
 
-    ![Image of incident side panel](../../media/incident-side-panel.png)
+You can start with selecting the incident from the queue from the check mark column. Here's an example.
 
-2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column":::
 
-3. Review the alerts, devices, users, other entities involved in the incident.
+When you do, a summary pane opens with key information about the incident, such as severity, who it is assigned to, and the Mitre categories for the incident. Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident":::
+
+From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
+
+You can also open the main page for an incident by selecting the incident name from the incident queue.
 
 ## Incident overview
 

@@ -63,11 +63,11 @@ If enabled, Microsoft 365 Defender can automatically investigate and resolve ale
 
 You manage incidents from ***Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in the Microsoft 365 security center.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 security center":::
 
 Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
 The additional tabs for an incident are:
 

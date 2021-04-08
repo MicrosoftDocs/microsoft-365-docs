@@ -33,7 +33,9 @@ ms.technology: m365d
 
 Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which help them better understand and deal with complex threats across your organization.
 
-The **Incidents queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
+The **Incidents queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision. 
+
+You get to the incidents queue from ***Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incidents queue":::
 
@@ -52,7 +54,7 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 ## Available filters
 
-From the default incidents queue, you can select **Filters** to see a filters pane. Here is an example.
+From the default incidents queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incidents queue":::
 
@@ -102,6 +104,10 @@ After you resolve the incident, take a moment to learn from it to:
 - Understand the type of the attack and its impact.
 - Research the attack in the security community for a security attack trend.
 - Recount the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
+
+Here is a summary of the basic process.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="The basic process for investigating incidents":::
 
 ## Next step
 
