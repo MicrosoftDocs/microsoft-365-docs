@@ -102,6 +102,8 @@
 ##### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
 ##### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 ##### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
+##### [Configure scheduled quick or full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 ##### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
 
@@ -125,8 +127,13 @@
 ##### [Report on Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
 
 #### [Scans and remediation](review-scan-results-microsoft-defender-antivirus.md)
+##### [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
 ##### [Run and review the results of a Microsoft Defender Offline scan](microsoft-defender-offline.md)
 ##### [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+
+#### [Exclusions](configure-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
