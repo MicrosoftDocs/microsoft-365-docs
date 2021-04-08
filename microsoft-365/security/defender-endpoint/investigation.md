@@ -1,6 +1,6 @@
 ---
 title: Investigation resource type
-description: Microsoft Defender ATP Investigation entity.
+description: Microsoft Defender for Endpoint Investigation entity.
 keywords: apis, graph api, supported apis, get, alerts, investigations
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

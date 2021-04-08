@@ -94,7 +94,7 @@ See [Manage topics in the Topic center](manage-topics.md) for more information.
 
 ## Admin controls
 
-Admin controls in the Microsoft 365 admin center allow you to manage your knowledge network. They allow a Microsoft 365 global or SharePoint administrator to:
+Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics. They allow a Microsoft 365 global or SharePoint administrator to:
 
 - Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.
 - Control which SharePoint sites will be crawled to identify topics.

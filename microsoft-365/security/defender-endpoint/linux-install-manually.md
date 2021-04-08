@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender ATP for Linux manually
+title: Deploy Microsoft Defender for Endpoint for Linux manually
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -82,7 +81,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running CentOS 7 and want to deploy Defender for Endpoint for Linux from the *prod* channel:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -378,6 +377,28 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 ## Operating system upgrades
 
 When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.
+
+## How to migrate from Insiders-Fast to Production channel
+
+1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Disable the MDE for Linux Insiders-Fast repo
+    ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > The output should show “packages-microsoft-com-fast-prod”.
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Redeploy MDE for Linux using the “Production channel”.
+
 
 ## Uninstallation
 

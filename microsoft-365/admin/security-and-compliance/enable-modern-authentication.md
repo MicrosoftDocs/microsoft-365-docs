@@ -2,8 +2,8 @@
 title: "Enable Modern Authentication for Office 2013 on Windows devices"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
