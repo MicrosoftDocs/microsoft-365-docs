@@ -86,7 +86,7 @@ This procedure creates a custom view that filters to only show the following eve
 | 1125 | Event when network protection fires in audit mode |
 | 1126 | Event when network protection fires in block mode |
 
-## Network protection FAQs
+## Network protection FAQ
 
 Due to the environment where Network Protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, Network Protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
 
