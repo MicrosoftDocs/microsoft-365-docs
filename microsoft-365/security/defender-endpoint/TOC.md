@@ -86,9 +86,10 @@
 ##### [View attack surface reduction events](event-views.md)
 
 ### [Next-generation protection]
-#### [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md)
+#### [Overview](microsoft-defender-antivirus-in-windows-10.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
+##### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 ##### 
