@@ -56,6 +56,10 @@ Detailed and actionable feedback is vital for making changes and improvements in
 - **Focus on one issue at a time**   Provide feedback for one issue or recommendation one item at a time. This ensures the correct logs and data are received with each submission and can be assigned for follow-up. If you have more than one issue, submit a new feedback request for each issue. This helps us identify the volume of feedback we’re receiving on a particular issue.
 - **Write details in the Description box**   Information about your device, operating system, and apps are automatically included in each reported feedback. Add any additional info about an issue you think is important. For example, include detailed steps to reproduce the issue.
 
+## How can I see my user's feedback?
+
+Coming soon, we'll be sharing the feedback data we collect for Microsoft products back to you. We're working on a new experience in the Microsoft 365 admin center that let's you view, delete and export the feedback data for your organization. This gives you direct transparency and useful insights into your users’ experiences with Microsoft 365 products.
+
 ## How Microsoft uses feedback
 
 Microsoft uses feedback to improve Microsoft products. We get user feedback in the form of questions, problems, compliments, and suggestions. We make sure this feedback makes it back to the appropriate teams, who use feedback to identify, prioritize and make improvements to Microsoft products. Feedback is essential for our product teams to understand our user's experiences, and directly influences the priority of fixes and improvements.
