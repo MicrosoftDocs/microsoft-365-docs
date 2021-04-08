@@ -90,7 +90,7 @@ This procedure creates a custom view that filters to only show the following eve
 
 Due to the environment where Network Protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, Network Protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
 
-```
+```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 

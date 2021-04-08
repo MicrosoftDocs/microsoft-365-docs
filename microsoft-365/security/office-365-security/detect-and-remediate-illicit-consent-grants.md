@@ -81,7 +81,7 @@ You can do this for your users with either the Azure Active Directory Portal, or
 
 You can look up the applications to which any individual user has granted permissions by using the [Azure Active Directory Portal](https://portal.azure.com/).
 
-1. Sign in to the Azure Portal with administrative rights.
+1. Sign in to the Azure portal with administrative rights.
 
 2. Select the Azure Active Directory blade.
 
