@@ -94,4 +94,4 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 
 ## See also
-- [Deploy threat protection capabilities across Microsoft 365 E5](https://docs.microsoft.com/en-us/microsoft-365/solutions/deploy-threat-protection)
+- [Deploy threat protection capabilities across Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)
