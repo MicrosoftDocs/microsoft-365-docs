@@ -35,7 +35,7 @@ Microsoft 365 Defender applies correlation analytics and aggregates related aler
 
 The **Incidents queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-![Image of incidents queue](../../media/incidents-queue.png) 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incidents queue":::
 
 By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days. The most recent incident is at the top of the list so you can see it first.
 
@@ -52,6 +52,11 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 ## Available filters
 
+From the default incidents queue, you can select **Filters** to see a filters pane. Here is an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incidents queue":::
+
+This table lists the filter names that are available.
 
 | Filter name | Description |
 |:-------|:-----|
@@ -71,10 +76,10 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 ## Incident response workflow
 
-Here is the typical workflow for responding to and resolving incidents:
+Here is the typical workflow for responding to incidents:
 
 1. Identify and triage the highest priority incidents for investigation and resolution.
-2. For each high-priority incident, begin an investigation:
+2. For each high-priority incident, begin an [investigation](investigate-incidents.md):
 
    a. View the summary of the incident to understand it's scope, what entities are affected, and severity (the **Summary** tab).
 
@@ -86,7 +91,11 @@ Here is the typical workflow for responding to and resolving incidents:
    
    e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
-As you investigate, you should be concerned with containing the impact on your tenant (containment), removing the security threat (eradication), and restoring your tenant resources to the state they were in before the attack (recovery.)
+As you investigate, you should be concerned with:
+
+- Reducing any additional impact on your tenant (containment).
+- Removing the security threat (eradication).
+- Restoring your tenant resources to the state they were in before the attack (recovery).
 
 After you resolve the incident, take a moment to learn from it to:
 
@@ -96,7 +105,7 @@ After you resolve the incident, take a moment to learn from it to:
 
 ## Next step
 
-After you've determined which incident requires the highest priority, you can begin your [investigative work](investigate-incidents.md) on it.
+After you've determined which incident requires the highest priority, select it and begin your [investigation](investigate-incidents.md).
 
 ## See also
 - [Incidents overview](incidents-overview.md)

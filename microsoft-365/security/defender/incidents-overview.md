@@ -37,13 +37,14 @@ ms.technology: m365d
 
 An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
 
-Microsoft 365 services and apps create alerts when they detect a suspicious malicious event or activity. Individual alerts provide valuable clues about an completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant. 
+Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant. 
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident":::
 
-Watch this short (4 minutes) an overview of incidents in Microsoft 365 Defender.
+Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).
+
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
@@ -54,10 +55,9 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - What tactics were used.
 - How far the attack has gone into your tenant.
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
-- How severe is the impact.
 - All of the data associated with the attack.
 
-If enabled, Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack from the incidents itself. 
+If enabled, Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
 
 ## Incidents and alerts in the Microsoft 365 security center
 
@@ -65,11 +65,11 @@ You manage incidents from ***Incidents & alerts > Incidents** on the quick launc
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in the Microsoft 365 security center.":::
 
-Selecting an incident name displays a summary of the incident and provides access to additional information.
+Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
 
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
-The additional tabs for any incident are:
+The additional tabs for an incident are:
 
 - Alerts 
 
@@ -77,7 +77,7 @@ The additional tabs for any incident are:
 
 - Devices
 
-  All the devices where alerts related to the incident.
+  All the devices that have been identified to be part of or related to the incident.
 
 - Users
 
@@ -95,7 +95,7 @@ The additional tabs for any incident are:
 
   All the supported events and suspicious entities in the alerts in the incident.
 
-Here's the relationship between an incident and its data to the tabs of an incident in the Microsoft 365 security center.
+Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
 
@@ -103,6 +103,6 @@ Here's the relationship between an incident and its data to the tabs of an incid
 
 The incident queue from the **Incidents** page lists the most recent incidents. From here, you can:
 
-- See which incidents should be [prioritized](incident-queue.md) based on risk level and other factors. 
+- See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
 - Perform an [investigation](investigate-incidents.md) of an incident.
-- [Manage incidents](manage-incidents.md), which includes renaming, assigning them to individual analysts, classifying, and adding tags for your incident management workflow.
+- [Manage incidents](manage-incidents.md), which includes renaming, assigning them, classifying, and adding tags for your incident management workflow.
