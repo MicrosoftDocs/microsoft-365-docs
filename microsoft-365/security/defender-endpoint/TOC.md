@@ -99,6 +99,8 @@
 ##### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 ##### [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
 ##### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+##### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
