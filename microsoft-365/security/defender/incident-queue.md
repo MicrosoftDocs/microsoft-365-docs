@@ -105,7 +105,7 @@ After you resolve the incident, take a moment to learn from it to:
 - Research the attack in the security community for a security attack trend.
 - Recount the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
 
-Here is a summary of the basic process.
+Here's a summary of the basic process.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="The basic process for investigating incidents":::
 
