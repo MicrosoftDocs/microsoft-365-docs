@@ -92,7 +92,8 @@
 ##### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
-##### 
+##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
