@@ -85,6 +85,12 @@
 ##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 ##### [View attack surface reduction events](event-views.md)
 
+### [Next-generation protection]
+#### [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md)
+##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
+#### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
+
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
