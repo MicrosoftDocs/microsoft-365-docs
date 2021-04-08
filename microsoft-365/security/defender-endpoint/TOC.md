@@ -106,6 +106,10 @@
 #### [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
 
 #### [Manage Microsoft Defender Antivirus in your business](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+##### [Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
