@@ -61,6 +61,9 @@ Turning on HMA means:
 
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
 
+> [!NOTE]
+> Outlook Web App and Exchange Control Panel does not work with hybrid Modern Authentication.
+
 ## Add on-premises web service URLs as SPNs in Azure AD
 
 Run the commands that assign your on-premises web service URLs as Azure AD SPNs. SPNs are used by client machines and devices during authentication and authorization. All the URLs that might be used to connect from on-premises to Azure Active Directory (Azure AD) must be registered in Azure AD (this includes both internal and external namespaces).
@@ -180,6 +183,8 @@ If you are an on-premises customer using Exchange server on TCP 443, bypass traf
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by using Microsoft services to help find, plan, and prioritize your daily life and work. For more information, please refer to [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
 
 ## Related topics
 

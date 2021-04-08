@@ -185,7 +185,6 @@ After you select a message, you have several options for what to do with the mes
 - **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
-
   - **Source view**: Shows the HTML version of the message body with all links disabled.
   - **Text view**: Shows the message body in plain text.
 
@@ -193,7 +192,7 @@ After you select a message, you have several options for what to do with the mes
 
 - **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
-- **Block Sender**: This blocks the sender from sending emails to the admin recipient mailbox.
+- **Block Sender**: Prevents the sender from sending messages to recipients in the organization.
 
 - **Submit message**: In the flyout pane that appears, choose the following options:
 

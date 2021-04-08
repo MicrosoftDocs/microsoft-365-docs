@@ -19,7 +19,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
-description: Microsoft Defender for Office 365 includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
+description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -58,8 +58,8 @@ If you're new to Microsoft Defender for Office 365 or learn best by *doing*, you
   - anti-phishing
   - anti-spam
 - Set up everything with '*safe*' in the name.
-  - safe links
-  - safe attachments
+  - Safe Links
+  - Safe Attachments
 - Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
 - Protect with Zero-Hour auto purge
 
