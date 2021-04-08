@@ -64,7 +64,6 @@ Potentially unwanted applications (PUA) are a category of software that can caus
 
 Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration. 
 
-## Automatically resolve alerts
 
 ## Restrict correlation to within scoped device groups
 When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
@@ -72,9 +71,9 @@ When this setting is turned on, alerts are correlated into separate incidents ba
 >[!NOTE]
 >Changing this setting impacts future alert correlations only.
 
-
 ## Enable EDR in block mode
 Endpoint detection and response (EDR) in block mode provides protection from malicious artifacts, even when Microsoft Defender Antivirus is running in passive mode. When turned on, EDR in block mode blocks malicious artifacts or behaviors that are detected on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post breach.
+
 
 ## Autoresolve remediated alerts
 
@@ -120,13 +119,13 @@ For more information, see [Manage indicators](manage-indicators.md).
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
-
 ## Tamper protection
 During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
+
 
 ## Show user details
 
@@ -137,6 +136,7 @@ Turn on this feature so that you can see user details stored in Azure Active Dir
 - Device details page
 
 For more information, see [Investigate a user account](investigate-user.md).
+
 
 ## Skype for Business integration
 
@@ -169,7 +169,6 @@ Out of the two Microsoft Threat Expert components, targeted attack notification 
 
 > [!NOTE]
 > The Microsoft Threat Experts capability in Defender for Endpoint is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
-
 ## Microsoft Cloud App Security
 
 Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud App Security to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Cloud App Security data.
@@ -177,13 +176,10 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Cloud 
 > [!NOTE]
 > This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)), or later Windows 10 versions.
 
-## Azure Information Protection
-
-Turning on this setting allows signals to be forwarded to Azure Information Protection. It gives data owners and administrators visibility into protected data on onboarded devices and device risk ratings.
-
 ## Microsoft Secure Score
 
 Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the device's security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
+
 
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
@@ -197,16 +193,12 @@ To receive contextual device integration in Microsoft Defender for Identity, you
 
 After completing the integration steps on both portals, you'll be able to see relevant alerts in the device details or user details page.
 
-## Web content filtering - ADD
+## Web content filtering
 Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a [web content filtering policy](https://security.microsoft.com/preferences2/web_content_filtering_policy). Ensure you have network protection in block mode when deploying the [Microsoft Defender for Endpoint security baseline](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
-## Unified audit log - ADD
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. For more information, see the [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
 
-## Share endpoint alerts with Microsoft Compliance Center - ADD
+## Share endpoint alerts with Microsoft Compliance Center
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance [insider risk management](https://go.microsoft.com/fwlink/?linkid=2135356) policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
-
-
 
 ## Microsoft Intune connection
 
@@ -219,6 +211,7 @@ This feature is only available if you have the following:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
 - An active Microsoft Intune environment, with Intune-managed Windows 10 devices [Azure AD-joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+
 
 ### Conditional Access policy
 
@@ -233,11 +226,8 @@ Learn about new features in the Defender for Endpoint preview release and be amo
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 
-## Share endpoint alerts with Microsoft Compliance Center
 
-Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.
 
-After configuring the [Security policy violation indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 
 ## Related topics
 
