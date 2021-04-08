@@ -105,8 +105,7 @@
 ##### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)
 
-#### Get your antivirus and antimalware updates
-##### [Get Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+#### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 ##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
@@ -124,6 +123,8 @@
 ##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
 ##### [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
 ##### [Report on Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
+
+#### Scans and remediation
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
