@@ -1,7 +1,7 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
 description: Get an overview of threat protection services and security capabilities in Microsoft 365 E5. Protect your user accounts, devices, email content, and more with Microsoft 365 E5.
-keywords: threat protection, security, E5, cyberattack, malware, M365, solution
+keywords: advanced threat protection, security, microsoft 365 E5, solution, protect devices, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
