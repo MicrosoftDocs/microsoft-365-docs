@@ -118,7 +118,7 @@ The settings in Safe Links policies that apply to email messages are described i
 
 - **Do not rewrite the following URLs**: Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning. The list is unique for each Safe Links policy. For more information about the **Do not rewrite the following URLs** list, see the ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) section later in this article.
 
-For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+  For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
 
@@ -163,7 +163,7 @@ The following settings in Safe Links policies that apply to links in email messa
 - **Do not track user clicks**
 - **Do not allow users to click through to original URL**
 
-These settings are explained in the previous [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section.
+These settings are explained previously in [Safe Links settings for email messages](#safe-links-settings-for-email-messages).
 
 After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs are not rewritten. If a link is found to be malicious, users will have the following experiences:
 
@@ -252,22 +252,22 @@ When a user in an active Safe Links policy clicks a blocked link in a supported 
 
 You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Notes**:
-
-- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Limits:
-  - The maximum number of entries is 500.
-  - The maximum length of an entry is 128 characters.
-  - All of the entries can't exceed 10,000 characters.
-
-- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-
-- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
-
-- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
-
-- You can include up to three wildcards (`*`) per URL entry.
+> [!NOTE]
+> 
+> - For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Limits:
+>   - The maximum number of entries is 500.
+>   - The maximum length of an entry is 128 characters.
+>   - All of the entries can't exceed 10,000 characters.
+> 
+> - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
+> 
+> - A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+> 
+> - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
+> 
+> - You can include up to three wildcards (`*`) per URL entry.
 
 ### Entry syntax for the "Block the following URLs" list
 
@@ -292,20 +292,20 @@ Each Safe Links policy contains a **Do not rewrite the following URLs** list tha
 
 To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-**Notes**:
-
-- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
-
-  - Microsoft Teams
-  - Office web apps
-
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
-
-- If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
-
-- You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
+> [!NOTE]
+> 
+> - The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+> 
+>   - Microsoft Teams
+>   - Office web apps
+> 
+>   For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
+> 
+> - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
+> 
+> - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 
