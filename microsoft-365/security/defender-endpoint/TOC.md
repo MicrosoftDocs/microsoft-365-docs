@@ -134,6 +134,7 @@
 #### [Exclusions](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
