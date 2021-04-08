@@ -195,7 +195,7 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 1. Configure prerequisite identity features and their settings.
 2. Configure the common identity and access Conditional Access policies.
 3. Configure Conditional Access policies for guest and external users.
-4. Configure Conditional Access policies for Microsoft 365 cloud apps such as Microsoft Teams, Exchange Online, and SharePoint.
+4. Configure Conditional Access policies for Microsoft 365 cloud apps─such as Microsoft Teams, Exchange Online, and SharePoint─and Microsoft Cloud App Security policies.
 
 After you have configured identity and device access, see the [Azure AD feature deployment guide](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](/azure/active-directory/governance/) to protect, monitor, and audit access.
 
