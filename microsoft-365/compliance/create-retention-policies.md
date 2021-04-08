@@ -79,6 +79,15 @@ When you have more than one retention policy, and when you also use retention la
 
 For more information about retention policies for Teams, see [Retention policies in Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
+#### Known configuration issues
+
+- Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
+
+- When you select **Choose teams** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
+
+- When you select **Choose users for the Teams chats **location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+
+
 #### Additional retention policy needed to support Teams
 
 Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Microsoft 365 Groups** location. This retention policy applies to content in the group's mailbox, site, and files.

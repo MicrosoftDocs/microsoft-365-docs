@@ -124,14 +124,9 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 ## Limitations
 
-We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of when you use retention for Teams channel messages and chats:
+We're continuously working on optimizing retention functionality in Teams. In the meantime, be aware of the following limitation when you use retention policies for Teams channel messages and chats:
 
 - **Incorrect display issue in Outlook**. If you create retention policies for Skype or Teams locations, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
-
-- **Configuration issues**: 
-    - When you select **Choose teams** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
-    
-    - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 ## Configuration guidance
 
