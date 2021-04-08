@@ -94,6 +94,9 @@
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 ##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
+##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
