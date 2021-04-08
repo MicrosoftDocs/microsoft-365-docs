@@ -146,6 +146,10 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 You can check email message headers to see if the email messages are landing in the Inbox due to the Focused Inbox transport rule bypass. Pick an email message from a mailbox in your organization that has the Focused Inbox transport rule applied. Look at the headers stamped on the message, and you should see the **X-MS-Exchange-Organization-BypassFocusedInbox: true** header. This means the bypass is working. Check out the [View the Internet header information for an email message](https://go.microsoft.com/fwlink/p/?LinkId=822530) article for info on how to find the header information.
 
+### What will the user see?
+
+If a transport rule is in place, a notification will be shown for the override. Outlook on the web will disable the "Always move to Other" and show a tooltip. Outlook clients on desktop will allow selection for "Always move to Other" and will pop up a dialog.
+
 ## Turn on/off Clutter
 
 We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
@@ -199,3 +203,4 @@ There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInb
 ### Can I run a script to see who has turned on Focused Inbox?
 
 No, and this is by design. Focused Inbox enablement is a client-side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
+

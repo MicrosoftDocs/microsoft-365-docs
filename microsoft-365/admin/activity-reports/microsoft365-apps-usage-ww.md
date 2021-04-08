@@ -28,7 +28,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 
  > [!NOTE]
- > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports.
+ > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. Shared computer activations are not supported in this report.
 
 ## How to get to the Microsoft 365 Apps usage report
 
