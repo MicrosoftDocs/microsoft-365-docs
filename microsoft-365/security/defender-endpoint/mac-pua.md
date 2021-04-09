@@ -1,6 +1,6 @@
 ---
-title: Detect and block potentially unwanted applications with Microsoft Defender ATP for Mac
-description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender ATP for Mac.
+title: Detect and block potentially unwanted applications with Microsoft Defender for Endpoint for Mac
+description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

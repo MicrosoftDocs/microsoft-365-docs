@@ -1,6 +1,6 @@
 ---
-title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac on other management solutions.
+title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint for Mac
+description: Install Microsoft Defender for Endpoint for Mac on other management solutions.
 keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

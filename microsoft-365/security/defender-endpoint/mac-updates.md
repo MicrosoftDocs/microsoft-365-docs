@@ -1,6 +1,6 @@
 ---
-title: Deploy updates for Microsoft Defender ATP for Mac
-description: Control updates for Microsoft Defender ATP for Mac in enterprise environments.
+title: Deploy updates for Microsoft Defender for Endpoint for Mac
+description: Control updates for Microsoft Defender for Endpoint for Mac in enterprise environments.
 keywords: microsoft, defender, atp, mac, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

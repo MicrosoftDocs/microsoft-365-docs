@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot installation issues for Microsoft Defender ATP for Mac
-description: Troubleshoot installation issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot installation issues for Microsoft Defender for Endpoint for Mac
+description: Troubleshoot installation issues in Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, install
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
