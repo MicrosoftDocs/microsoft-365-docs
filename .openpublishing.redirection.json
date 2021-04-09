@@ -3344,6 +3344,156 @@
       "source_path": "microsoft-365/security/defender/latest-attack-campaigns.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-analytics",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-language.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-language",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-shared-queries.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-shared-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-results.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-errors.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-limits.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicefileevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicefileevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-deviceimageloadevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceimageloadevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicelogonevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicelogonevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-deviceinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceinfo-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicenetworkinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicenetworkinfo-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-deviceevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicefilecertificateinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicenetworkevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicenetworkevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-deviceprocessevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-deviceregistryevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-deviceregistryevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsecureconfigurationassessment-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/overview-custom-detections.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/custom-detections-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/custom-detection-rules.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/custom-detections-manage.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-go-hunt.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-go-hunt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-take-action.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-take-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-fileprofile-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-fileprofile-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-extend-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-extend-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwarevulnerabilities-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-devicetvmsoftwareinventory-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-assignedipaddress-function.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-assignedipaddress-function",
+      "redirect_document_id": false
     }
   ]
 }
