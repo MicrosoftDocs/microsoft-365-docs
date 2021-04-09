@@ -30,11 +30,11 @@ You can upgrade DLs one at a time, or several at the same time.
 
 ## Upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Microsoft 365 Groups, a distribution group must have an owner with a mailbox.
+You must be a global admin or Exchange admin to upgrade a distribution list group. To upgrade to Microsoft 365 Groups, the distribution list group must have an owner with a mailbox.
 
 ### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
+1. Go to the new [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
 
 2. Select the distribution list group (also called a **distribution group**) that you want to upgrade to Microsoft 365 group from the **Groups** page.
 
@@ -47,9 +47,9 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. Go to the Classic <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. In the Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. In the Classic Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
