@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -36,7 +35,7 @@ You can configure how Microsoft Defender Antivirus uses these methods with Group
 
 This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.
 
-See [Use next-gen Microsoft Defender Antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) for how to enable and configure Microsoft Defender Antivirus cloud-delivered protection.
+See [Use next-gen Microsoft Defender Antivirus technologies through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) for how to enable and configure Microsoft Defender Antivirus cloud-delivered protection.
 
 ## In this section
 
