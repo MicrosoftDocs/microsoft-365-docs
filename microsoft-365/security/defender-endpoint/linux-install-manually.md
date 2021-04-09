@@ -380,7 +380,7 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for macOS.
+1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
 
     ``
     sudo yum remove mdatp
