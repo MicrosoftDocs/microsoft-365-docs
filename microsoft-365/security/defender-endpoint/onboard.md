@@ -1,7 +1,7 @@
 ---
-title: Configure and manage Microsoft Defender ATP capabilities
+title: Configure and manage Microsoft Defender for Endpoint capabilities
 ms.reviewer: 
-description: Configure and manage Microsoft Defender ATP capabilities such as attack surface reduction, and next-generation protection
+description: Configure and manage Microsoft Defender for Endpoint capabilities such as attack surface reduction, and next-generation protection
 keywords: configure, manage, capabilities, attack surface reduction, next-generation protection, security controls, endpoint detection and response, auto investigation and remediation, security controls, controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
