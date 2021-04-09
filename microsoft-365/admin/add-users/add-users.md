@@ -38,7 +38,7 @@ The people on your team each need a user account before they can sign in and acc
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Add a user in the simplified admin center view
+## Add a user in the admin simplified view
 
 If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
 
@@ -50,7 +50,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
 5. Select **Add user** and **Download sign-in info** if you want to save this info.
 
-## Watch: Add users in the admin center dashboard view
+## Watch: Add users in the dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
