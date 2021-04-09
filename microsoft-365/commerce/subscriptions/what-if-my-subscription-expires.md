@@ -63,6 +63,9 @@ To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.
 > [!IMPORTANT]
 > If you want your subscription data to be deleted before the typical Disabled stage is over, you can [close your account](../close-your-account.md).
   
+> [!NOTE]
+> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
+
 ## What are my options if my subscription is about to expire?
 
 While a subscription is active, you and your end users have normal access to your data, services like email and OneDrive for Business, and Office applications. As the admin, you'll receive a series of notifications via email and in the admin center as your subscription nears its expiration date.

@@ -42,6 +42,15 @@ If you added your own domain name to use with your subscription, you must remove
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Find the subscription that you want to cancel. Select **More actions** (three dots), then select **Cancel subscription**.
+3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
+4. Select **Save**.
+
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"

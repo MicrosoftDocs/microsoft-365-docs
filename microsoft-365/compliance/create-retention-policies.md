@@ -207,6 +207,8 @@ To change the default because you want the retention policy to apply to either j
 - `Group:Exchange` for just Microsoft 365 mailboxes that are connected to the group.
 - `Group:SharePoint` for just SharePoint sites that are connected to the group.
 
+To return to the default value, specify `Group:Exchange,SharePoint`.
+
 ### Configuration information for Skype for Business
 
 Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
