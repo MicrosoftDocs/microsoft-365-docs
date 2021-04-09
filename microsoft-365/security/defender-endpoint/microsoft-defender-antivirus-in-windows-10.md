@@ -10,7 +10,6 @@ ms.pagetype: security
 ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/16/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
