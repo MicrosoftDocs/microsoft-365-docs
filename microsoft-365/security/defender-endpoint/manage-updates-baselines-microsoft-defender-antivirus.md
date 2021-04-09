@@ -36,7 +36,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
 
 > [!NOTE]
 > Updates are released under the below KB numbers:  
