@@ -218,8 +218,8 @@ Using recommended Power Automate flows, risk investigators and analysts can quic
 
 - Request information from HR or business about a user in an insider risk case
 - Notify manager when a user has an insider risk alert
-- Add calendar reminder to follow up on an insider risk case
 - Create a record for an insider risk management case in ServiceNow
+- Notify users when they're added to an insider risk policy
 
 To run, manage, or create Power Automate flows for an insider risk management case:
 
