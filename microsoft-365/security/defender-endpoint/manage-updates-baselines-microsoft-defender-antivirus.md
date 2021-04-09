@@ -13,7 +13,6 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.date: 04/08/2021
 ms.technology: mde
 ---
 
@@ -44,7 +43,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](utilize-microsoft
 > Microsoft Defender Antivirus: KB2267602  
 > System Center Endpoint Protection: KB2461484
 
-Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md). 
+Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md). 
 
 For a list of recent security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
@@ -147,7 +146,7 @@ After a new package version is released, support for the previous two versions i
     
 ### What's new
 
-- Improved [SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) status support logging
+- Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging
 
 ### Known Issues
 No known issues  
