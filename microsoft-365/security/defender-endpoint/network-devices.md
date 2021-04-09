@@ -91,7 +91,7 @@ Your first step is to select a device that will perform the authenticated networ
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Note: Not all URLs are not specified in the Defender for Endpoint documented list of allowed data collection.
+    Note: Not all URLs are specified in the Defender for Endpoint documented list of allowed data collection.
 
 ## Permissions
 
