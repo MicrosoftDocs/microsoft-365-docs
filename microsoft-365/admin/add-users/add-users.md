@@ -40,27 +40,30 @@ You must be a global, license, or a user admin to add users and assign licenses.
 
 ## Add a user in the simplified admin center view
 
-If you're seeing this page in the admin center, you're on the admin center simplified view. Follow the steps below to add a user.
+If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
 
 1. Go to the admin center at <https://admin.microsoft.com>.
-2. Go to **Users** > **Active users**, and select **Add a user**.
+2. Select **Create an account for another person**.
+3. On the **Add a user account** page, fill in the first and last name, display name, and username they'll use to sign in.
+4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
+5. Select **Add user** and **Download sign-in info** if you want to save this info.
 
-## Watch: Add users in the admin center
+## Watch: Add users in the admin center dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
 
-## Add users one at a time
+## Add users one at a time in the dashboard view
 
 ::: moniker range="o365-worldwide"
 
-If you're seeing this page in the admin center, you're on the admin center regular view. Follow the steps below to add a user.
+If you're seeing this page in the admin center, you're on the admin center **dashboard view**. Follow the steps below to add a user.
 
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="Screenshot: Admin center dashboard view":::
 
 1. Go to the admin center at <https://admin.microsoft.com>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
