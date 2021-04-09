@@ -47,11 +47,13 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ## April 2021
 
+### Admin mobile app
+
 ### Manage licenses and bills from the Admin mobile app
 
 - You can now view all available and assigned licenses for your subscriptions. You can also assign or un-assign licenses to users, and add or remove licenses.
 - You can now view detailed invoices in the app.
-- These updates are available on both Android and iOS devices.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
 
 :::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Admin mobile app assign license page":::
 :::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
@@ -61,7 +63,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 ### Updated Message center feed in the Admin mobile app
 
 - You now have a more flexible reading experience of the Message center feed. You now have the ability to filter messages based on service or tags and mark messages as favorite. Bulk actions for marking messages as read, unread or archived has also been added.
-- These updates are available on both Android and iOS devices.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
 
 :::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
 
