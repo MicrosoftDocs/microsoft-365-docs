@@ -19,7 +19,6 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021 
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ---
