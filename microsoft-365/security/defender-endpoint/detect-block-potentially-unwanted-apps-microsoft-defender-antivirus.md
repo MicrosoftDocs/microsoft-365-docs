@@ -38,7 +38,7 @@ Here are some examples:
 - **Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 > [!TIP]
-> For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
+> For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
 Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up. PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.
 
