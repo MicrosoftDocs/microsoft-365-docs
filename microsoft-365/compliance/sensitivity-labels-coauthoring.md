@@ -130,6 +130,8 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 - When you use [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md), unencrypted attachments for emails are not supported.
 
+- Some documents can't be labeled because of their content, as documented in [Troubleshoot co-authoring in Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae). If you try to label a document that contains incompatible content, you see a message **UPLOAD FAILED** and should select the **Discard Changes** option.
+
 - Office apps for iOS and Android are not supported.
 
 ## How to enable co-authoring for files with sensitivity labels
