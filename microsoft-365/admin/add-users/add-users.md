@@ -54,13 +54,13 @@ If you're seeing this page in the admin center, you're on the admin center simpl
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
 
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
-
 ## Add users one at a time
 
 ::: moniker range="o365-worldwide"
 
 If you're seeing this page in the admin center, you're on the admin center regular view. Follow the steps below to add a user.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
 
 1. Go to the admin center at <https://admin.microsoft.com>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
