@@ -202,7 +202,7 @@ To retain or delete content for a Microsoft 365 group (formerly Office 365 group
 
 By default, a retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
 
-To change the default because you want the retention policy to apply to either just Microsoft 365 mailboxes, or just SharePoint teams site, use the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet with the *Applications* parameter with one of the following values:
+To change the default because you want the retention policy to apply to either just Microsoft 365 mailboxes, or just SharePoint teams sites, use the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet with the *Applications* parameter with one of the following values:
 
 - `Group:Exchange` for just Microsoft 365 mailboxes that are connected to the group.
 - `Group:SharePoint` for just SharePoint sites that are connected to the group.
