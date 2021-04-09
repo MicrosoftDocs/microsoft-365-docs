@@ -40,7 +40,7 @@ Network discovery capabilities are available in the **Device inventory** section
 
 A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.  
 
-Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities foron network devices deployed across their organizations.
+Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities on network devices deployed across their organizations.
 
 ## Approach
 
@@ -89,9 +89,9 @@ Your first step is to select a device that will perform the authenticated networ
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Note: These URLs are not specified in the Defender for Endpoint documented list of allowed data collection.
+    Note: Not all URLs are specified in the Defender for Endpoint documented list of allowed data collection.
 
 ## Permissions
 
