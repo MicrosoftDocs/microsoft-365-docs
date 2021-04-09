@@ -44,9 +44,8 @@ If you're seeing this page in the admin center, you're on the admin center simpl
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
 
-Go to the admin center at <https://admin.microsoft.com>.
+1. Go to the admin center at <https://admin.microsoft.com>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
-3. In the **Set up the basics** pane, fill in the basic user information, and then select **Next**.
 
 ## Watch: Add users in the admin center
 
