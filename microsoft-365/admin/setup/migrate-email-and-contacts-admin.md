@@ -2,8 +2,8 @@
 title: "Migrate email and contacts to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

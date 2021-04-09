@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender ATP for Linux manually
+title: Deploy Microsoft Defender for Endpoint for Linux manually
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -381,7 +380,7 @@ When upgrading your operating system to a new major version, you must first unin
 
 ## How to migrate from Insiders-Fast to Production channel
 
-1. Uninstall the “Insiders-Fast channel” version of MDE for macOS.
+1. Uninstall the “Insiders-Fast channel” version of MDE for Linux.
 
     ``
     sudo yum remove mdatp
