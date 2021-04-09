@@ -38,6 +38,16 @@ The people on your team each need a user account before they can sign in and acc
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
+## Add user in simplified admin center view
+
+If you're seeing this page in the admin center, you're on the admin center simplified view. Follow the steps below to add a user.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+
+Go to the admin center at <https://admin.microsoft.com>.
+2. Go to **Users** > **Active users**, and select **Add a user**.
+3. In the **Set up the basics** pane, fill in the basic user information, and then select **Next**.
+
 ## Watch: Add users in the admin center
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
@@ -45,9 +55,13 @@ You must be a global, license, or a user admin to add users and assign licenses.
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
 
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+
 ## Add users one at a time
 
 ::: moniker range="o365-worldwide"
+
+If you're seeing this page in the admin center, you're on the admin center regular view. Follow the steps below to add a user.
 
 1. Go to the admin center at <https://admin.microsoft.com>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
