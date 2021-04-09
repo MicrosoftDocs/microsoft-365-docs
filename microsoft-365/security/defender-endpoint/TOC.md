@@ -85,7 +85,7 @@
 ##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 ##### [View attack surface reduction events](event-views.md)
 
-### [Next-generation protection]
+### Next-generation protection
 #### [Overview](microsoft-defender-antivirus-in-windows-10.md)
 ##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
