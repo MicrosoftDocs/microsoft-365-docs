@@ -407,7 +407,7 @@ PowerShell examples, where the label policy is named **Global**:
 
 Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerShell advanced settings that are supported for both built-in labeling and the Azure Information Protection client.
 
-The other PowerShell advanced settings remain supported for the Azure Information Protection client only. For more information about using advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
+The other PowerShell advanced settings remain supported for the Azure Information Protection client only. For more information about using advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
 
 #### PowerShell tips for specifying the advanced settings
 
