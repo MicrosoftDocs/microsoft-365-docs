@@ -68,7 +68,7 @@ The available EOP subscription plans are:
 For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection service description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 > [!NOTE]
-> If you have an Office 365 E3 subscription it includes EOP. For steps to set up EOP security feature in your subscription, and information on the added security a Microsoft Defender for Office 365 subscription can give you, see [protect against threats](protect-against-threats.md).
+> If you have an **Office 365 E3 subscription it includes EOP**. For steps to set up EOP security feature in your subscription, and information on the added security a Microsoft Defender for Office 365 subscription can give you, see [protect against threats](protect-against-threats.md).
 
 ## Setting up EOP for on-premises email organizations
 
