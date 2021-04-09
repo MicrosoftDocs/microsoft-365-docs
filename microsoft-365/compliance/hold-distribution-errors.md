@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,7 +15,6 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Troubleshoot errors related to legal holds applied to custodians and non-custodial data sources in Core eDiscovery."
 ---
 
