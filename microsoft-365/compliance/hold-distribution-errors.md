@@ -81,10 +81,10 @@ If you see one the following error messages when putting custodians and data sou
 
 ## More information
 
-- The guidance about updating hold policies for multiple users in the "Recommended practices" results from the fact that the system blocks simultaneous updates to a hold policy. That means when an updated hold policy is applied to new content locations and the hold policy is in a pending state, addition content locations can't be added to the hold policy. Here are some things to keep in mind to help you mitigate this issue:
+- The guidance about updating hold policies for multiple users in the "Recommended practices" section results from the fact that the system blocks simultaneous updates to a hold policy. That means when an updated hold policy is applied to new content locations and the hold policy is in a pending state, additional content locations can't be added to the hold policy. Here are some things to keep in mind to help you mitigate this issue:
   
   - Every time a hold updated is updated, it immediately goes into a pending state. The pending state status means the hold is being applied to content locations.
   
-  - If you have a script that runs a loop and adds locations to policy one by one (similar to the incorrect example shown in the "Recommended practices" section), the first content location (for example, a user mailbox) initiates the sync process that triggers the pending state. That means the other users that are added to the policy in subsequent loop results in an error.
+  - If you have a script that runs a loop and adds locations to policy one by one (similar to the incorrect example shown in the "Recommended practices" section), the first content location (for example, a user mailbox) initiates the sync process that triggers the pending state. That means the other users that are added to the policy in subsequent loops result in an error.
   
-  - If your organization is using a script that runs a loop that updates the content locations for a hold policy, you must update the script so that it updates locations in a single, bulk operation (as shown in the correct example in the "Recommended practices" section.
+  - If your organization is using a script that runs a loop to update the content locations for a hold policy, you must update the script so that it updates locations in a single bulk operation (as shown in the correct example in the "Recommended practices" section).
