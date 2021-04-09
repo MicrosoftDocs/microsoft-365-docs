@@ -15,17 +15,17 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Monitor and manage the disposal of content, whether you use a disposition review or content is automatically deleted according to the settings you configured."
+description: "Monitor and manage the disposal of content for when you use a disposition review or items marked as records are automatically deleted according to the settings you configured."
 ---
 
 # Disposition of content
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
+> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five consecutivee stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -46,7 +46,7 @@ Additionally:
 
 - To view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
 
-- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, and all retention labels that are configured for disposition review: Use the **Records management settings** > **Record Manager Security Group** to select a security group that contains the administrator accounts.
+- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Record Manager Security Group** to select and enable a security group that contains the administrator accounts.
 
 ### Enable auditing
 
@@ -128,7 +128,15 @@ From any of the Disposition pages in the compliance center, select **Record mana
 
 ![Record management settings](../media/record-management-settings.png)
 
-Then select whether you want to use just the default email templates, or append your own text to the default template. Text and hyperlinks are supported.
+Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or append your own text to the default template. Text and hyperlinks are supported but no other formatting or images.
+
+Example text to append:
+
+```console
+If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (mailto:helpdesk@contoso.com).
+```
+
+Select **Save** to save any changes.
 
 ### Viewing and disposing of content
 
@@ -154,16 +162,21 @@ All disposition actions can be audited and the justification text entered by the
 
 ## Disposition of records
 
-Use the **Disposition** tab from the **Records Management** page to identify records that are now deleted, either automatically or after a disposition review. These items display **Records Disposed** in the **Type** column. For example:
+Use the **Disposition** tab from the **Records Management** page to identify:
+
+- Items deleted as a result of a disposition review.
+- Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.
+
+These items display **Records Disposed** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
-Items that are shown in the **Disposed Items** tab for record labels are kept for up to seven years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products). Extending this limit is currently in preview.
+Items that are shown in the **Disposed Items** tab are kept for up to seven years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
+> This functionality uses information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
 
-For auditing, search for **Deleted file marked as a record** in the **File and page activities** category. This audit event is applicable to documents and emails.
+For auditing of deleted items that were marked as records or regulatory records, search for **Deleted file marked as a record** in the **File and page activities** category. This audit event is applicable to documents and emails.
 
 ## Filter and export the views
 
@@ -174,4 +187,3 @@ For pending dispositions, the time range is based on the expiration date. For di
 You can export information about the items in either view as a .csv file that you can then sort and manage using Excel:
 
 ![Export option for disposition](../media/retention-export-option.png)
-

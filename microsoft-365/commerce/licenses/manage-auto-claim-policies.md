@@ -44,12 +44,11 @@ manage the policy:
 
 ## Before you begin
 
-You must be a Global, Billing, or User admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global, User, or License admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 
-By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on. After you turn on the feature, you
-can create an auto-claim policy.
+By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on. After you turn on the feature, you can create an auto-claim policy.
 
 ### Turn on auto-claim policies
 
@@ -57,6 +56,8 @@ can create an auto-claim policy.
 2. In the center of the page, select the **Turn on setting** button.
 
 ### Turn off auto-claim policies
+
+Only a Global admin can turn off an auto-claim policy setting.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
 2. Near the bottom of the table, select **User owned apps and services**.
@@ -66,16 +67,10 @@ If you already have an active policy, but you don't want any more users to claim
 
 ## Create an auto-claim policy
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On
-this tab, you can see: the name of the policy, the app that is
-associated with the policy, the product that's assigned to the policy,
-the number of available licenses, and the status of the policy.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On this tab, you can see: the name of the policy, the app that is associated with the policy, the product that's assigned to the policy, the number of available licenses, and the status of the policy.
 
-When you create an auto-claim policy, you can add a backup product to
-it. If the primary product is out of licenses, the backup
-product is used to assign licenses to users. You can add up to four backup
-products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more,
-see [Add or remove backup products](#add-or-remove-backup-products).
+When you create an auto-claim policy, you can add a backup product to it. If the primary product is out of licenses, the backup
+product is used to assign licenses to users. You can add up to four backup products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more, see [Add or remove backup products](#add-or-remove-backup-products).
 
 > [!NOTE]
 > Currently, you can only create one auto-claim policy. The number of policies you can create will increase as more products are able to use this feature.

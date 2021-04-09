@@ -123,15 +123,12 @@ Use the following chart to help you configure groups in your organization for co
 
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
+|Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
   
 When you assign a distribution group in the policy, the policy monitors all emails and Teams chats from each user in distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails and Teams chats sent to that group, not the individual emails and chats received by each group member.
 
 If you're an organization with an Exchange on-premises deployment or an external email provider and you want to monitor Microsoft Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes to monitor. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard.
-
->[!IMPORTANT]
->You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. For more information, see [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 

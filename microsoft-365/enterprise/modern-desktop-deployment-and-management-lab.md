@@ -100,13 +100,13 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager OS Deployment](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Plan for Windows 10 deployment](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Plan for Windows 10 deployment](/windows/deployment/planning/index)
 
-  - [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [Getting Started with Intune](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Getting Started with Intune](/intune/get-started-evaluation)
 
 ## Related resources
 

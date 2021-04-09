@@ -3,7 +3,6 @@ title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -61,7 +60,11 @@ For Microsoft's SaaS cloud offerings, a license allows a specific user account t
 **Figure 2: Licenses within the SaaS-based subscriptions for an organization**
 
 ![An example of multiple licenses within subscriptions for Microsoft's SaaS-based cloud offerings.](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>A security best practice is to use separate user accounts that are assigned specific roles for administrative functions. These dedicated administrator accounts do not need to be assigned a license for the cloud services that they administer. For example, a SharePoint administrator account does not need to be assigned a Microsoft 365 license.
+>
+
 For Azure PaaS-based cloud services, software licenses are built into the service pricing.
   
 For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
@@ -80,7 +83,7 @@ Figure 3 shows an example of multiple subscriptions of an organization using a c
   
 ### Tenants
 
-For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Microsoft 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
+For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Microsoft 365, EMS, and Dynamics 365 subscriptions for the 15,000 workers in their Paris headquarters.
   
 Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
@@ -148,7 +151,7 @@ To add an Azure subscription with the same organization and Azure AD tenant as y
     
 3. On the **Add subscription** page, select an offer and complete the payment information and agreement.
     
-If you purchased Azure and Microsoft 365 subscriptions separately and want to access the Microsoft 365 Azure AD tenant from your Azure subscription, see the instructions in [Add an existing Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+If you purchased Azure and Microsoft 365 subscriptions separately and want to access the Microsoft 365 Azure AD tenant from your Azure subscription, see the instructions in [Add an existing Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## See also
 
@@ -161,4 +164,3 @@ If you purchased Azure and Microsoft 365 subscriptions separately and want to ac
 ## Next step
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
-  

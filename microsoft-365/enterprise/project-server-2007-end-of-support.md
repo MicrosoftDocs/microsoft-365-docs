@@ -71,7 +71,7 @@ Consider the following when you plan to migrate from Project Server 2007:
   
 - **Get help from a Microsoft Partner** - Upgrading from Project Server 2007 can be challenging and requires much preparation and planning. It might be especially challenging if you weren't the person who set up Project Server 2007 originally. Fortunately, there are Microsoft Partners who can help, whether you plan to migrate to Project Server 2016 or to Project Online. Search for a Microsoft Partner to help with your migration on the [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=841249). Search on the term  *Gold Project and Portfolio Management* to view a list of all Microsoft Partners who have expertise in Project. 
     
-- **Plan for your customizations** - Many of the customizations you made in your Project Server 2007 environment might not work when you migrate to Project Server 2016 or Project Online. There are significant differences in Project Server architecture between versions. The required operating systems, database servers, and client web browsers that are supported also differ. Plan how to test or rebuild your customizations for the new environment. Planning also provides a good opportunity to consider whether each customization is still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=842061). 
+- **Plan for your customizations** - Many of the customizations you made in your Project Server 2007 environment might not work when you migrate to Project Server 2016 or Project Online. There are significant differences in Project Server architecture between versions. The required operating systems, database servers, and client web browsers that are supported also differ. Plan how to test or rebuild your customizations for the new environment. Planning also provides a good opportunity to consider whether each customization is still needed. For more information, see [Create a plan for current customizations during upgrade to SharePoint 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013). 
     
 - **Time and patience** - Upgrade planning, execution, and testing will take time and effort, especially if you upgrade to Project Server 2016. For example, if you migrate from Project Server 2007 to Project Server 2016, you first need to migrate to Project Server 2010, check your data, and then do the same thing when you migrate to each successive version. You might want to check with a Microsoft Partner to get estimates of how long it will take and what it will cost.
     
@@ -90,7 +90,7 @@ Key resources:
 |**Resource**|**Description**|
 |:-----|:-----|
 |[Get started with Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |How to set up and use Project Online <br/> |
-|[Project Online Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=829088) <br/> |Information about the different Project Online plans that are available to you <br/> |
+|[Project Online Service Descriptions](/office365/servicedescriptions/project-online-service-description/project-online-service-description) <br/> |Information about the different Project Online plans that are available to you <br/> |
    
 ## Migrate to a newer on-premises version of Project Server
 
@@ -119,18 +119,18 @@ After each migration, make sure that your data migrated successfully.
   
 ### Step 1: Migrate from Project Server 2007 to Project Server 2010
 
-For a comprehensive description of what you need to do to upgrade from Project Server 2007 to Project Server 2010, see [Upgrade to Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841812).
+For a comprehensive description of what you need to do to upgrade from Project Server 2007 to Project Server 2010, see [Upgrade to Project Server 2010](/previous-versions/office/project-server-2010/gg502590(v=office.14)).
   
 Key resources:
   
 |**Resource**|**Description**|
 |:-----|:-----|
-|[Project Server 2010 upgrade overview](https://go.microsoft.com/fwlink/p/?linkid=841813) <br/> |A high-level view of what you need to do to upgrade from Project Server 2007 to Project Server 2010 <br/> |
-|[Plan to Upgrade to Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841815) <br/> |Planning considerations when you upgrade from Project Server 2007 to Project Server 2010, including System Requirements  <br/> |
+|[Project Server 2010 upgrade overview](/previous-versions/office/project-server-2010/ee662496(v=office.14)) <br/> |A high-level view of what you need to do to upgrade from Project Server 2007 to Project Server 2010 <br/> |
+|[Plan to Upgrade to Project Server 2010](/previous-versions/office/project-server-2010/ff603505(v=office.14)) <br/> |Planning considerations when you upgrade from Project Server 2007 to Project Server 2010, including System Requirements  <br/> |
    
 #### How do I upgrade?
 
-For details, see [Upgrade to Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841812). But it's important to understand that there are two distinct methods you can use to upgrade:
+For details, see [Upgrade to Project Server 2010](/previous-versions/office/project-server-2010/gg502590(v=office.14)). But it's important to understand that there are two distinct methods you can use to upgrade:
   
 - **Database-attach upgrade:** This method only upgrades the content for your environment, not the configuration settings. It's required if you're upgrading from Office Project Server 2007 deployed on hardware that only supports a 32-bit server operating system. There are two types of database-attach upgrade methods:
     
@@ -142,42 +142,42 @@ For details, see [Upgrade to Project Server 2010](https://go.microsoft.com/fwlin
     
 Additional resources:
   
-- [SuperFlow for Microsoft Project Server 2010 Upgrade](https://go.microsoft.com/fwlink/p/?linkid=841277)
+- [SuperFlow for Microsoft Project Server 2010 Upgrade](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
-- [Migration from Project Server 2007 to Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841278)
+- [Migration from Project Server 2007 to Project Server 2010](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
-- [Upgrade considerations for Project Web App Web Parts](https://go.microsoft.com/fwlink/p/?linkid=841276)
+- [Upgrade considerations for Project Web App Web Parts](/previous-versions/office/project-server-2010/gg314581(v=office.14))
     
-- [Project Software Development Kit (SDK)](https://go.microsoft.com/fwlink/p/?linkid=841275)
+- [Project Software Development Kit (SDK)](/previous-versions/office/developer/office-2010/ms481966(v=office.14))
     
 ### Step 2: Migrate to Project Server 2013
 
 After you verify that your data migrated successfully, the next step is to migrate to Project Server 2013.
   
-For a comprehensive description of what you need to do to upgrade from Project Server 2010 to Project Server 2013, see [Upgrade to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841822). 
+For a comprehensive description of what you need to do to upgrade from Project Server 2010 to Project Server 2013, see [Upgrade to Project Server 2013](/project/upgrade-to-project-server-2016). 
   
 Key resources:
   
 |**Resource**|**Description**|
 |:-----|:-----|
-|[Overview of the Project Server 2013 upgrade process](https://go.microsoft.com/fwlink/p/?linkid=841822) <br/> |Overview of what you need to do to upgrade from Project Server 2010 to Project Server 2013  <br/> |
-|[Plan to upgrade to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823) <br/> |Planning considerations when you upgrade from Project Server 2010 to Project Server 2013, including System Requirements <br/> |
+|[Overview of the Project Server 2013 upgrade process](/project/upgrade-to-project-server-2016) <br/> |Overview of what you need to do to upgrade from Project Server 2010 to Project Server 2013  <br/> |
+|[Plan to upgrade to Project Server 2013](/project/plan-for-upgrade-to-project-server-2016) <br/> |Planning considerations when you upgrade from Project Server 2010 to Project Server 2013, including System Requirements <br/> |
    
 #### Things to know about upgrading to this version
 
-[What's new in Project Server 2013 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841824) describes important changes for upgrade for this version. The most notable are: 
+[What's new in Project Server 2013 upgrade](/project/what-s-new-in-project-server-2013-upgrade) describes important changes for upgrade for this version. The most notable are: 
   
 - There's no in-place upgrade to Project Server 2013. The database-attach method is the only supported method for upgrading from Project Server 2010 to Project Server 2013.
     
 - The upgrade process will not only convert your Project Server 2010 data to Project Server 2013 format but will also consolidate the four Project Server 2010 databases into a single Project Web App database.
     
-- In the 2013 versions, both SharePoint Server and Project Server changed to claims-based authentication. If you're using classic authentication, you need to consider this factor for your upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=841825).
+- In the 2013 versions, both SharePoint Server and Project Server changed to claims-based authentication. If you're using classic authentication, you need to consider this factor for your upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013](/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
     
 Additional resources:
   
-- [Overview of the upgrade process to Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841274)
+- [Overview of the upgrade process to Project Server 2013](/project/overview-of-the-project-server-2016-upgrade-process)
     
-- [Upgrade your databases and Project Web App site collections (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
+- [Upgrade your databases and Project Web App site collections (Project Server 2013)](/project/upgrading-to-project-server-2016)
     
 - [Microsoft Project Server upgrade process diagram](https://go.microsoft.com/fwlink/p/?linkid=841270)
     
@@ -187,20 +187,20 @@ Additional resources:
 
 After you verify that your data migrated successfully, the next step is to migrate to Project Server 2016.
   
-For a comprehensive description of what you need to do to upgrade from Project Server 2013 to Project Server 2016, see [Upgrade to Project Server 2016](https://docs.microsoft.com//project/upgrading-to-project-server-2016).
+For a comprehensive description of what you need to do to upgrade from Project Server 2013 to Project Server 2016, see [Upgrade to Project Server 2016](//project/upgrading-to-project-server-2016).
   
 Key resources:
   
 |**Resource**|**Description**|
 |:-----|:-----|
-|[Overview of the Project Server 2016 upgrade process](https://go.microsoft.com/fwlink/p/?linkid=841260) <br/> |Overview of what you need to do to upgrade from Project Server 2013 to Project Server 2016 <br/> |
-|[Plan for upgrade to Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841826) <br/> |Planning considerations you upgrade from Project Server 2013 to Project Server 2016 <br/> |
+|[Overview of the Project Server 2016 upgrade process](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |Overview of what you need to do to upgrade from Project Server 2013 to Project Server 2016 <br/> |
+|[Plan for upgrade to Project Server 2016](/project/plan-for-upgrade-to-project-server-2016) <br/> |Planning considerations you upgrade from Project Server 2013 to Project Server 2016 <br/> |
    
 #### Things to know about upgrading to this version
 
-[Things you need to know about Project Server 2016 upgrade](https://go.microsoft.com/fwlink/p/?linkid=841827) tells you some important changes for upgrade for this version, which include:
+[Things you need to know about Project Server 2016 upgrade](/project/plan-for-upgrade-to-project-server-2016) tells you some important changes for upgrade for this version, which include:
   
-- When you create your Project Server 2016 environment to which you'll migrate your Project Server 2013 data, the Project Server 2016 installation files are included in SharePoint Server 2016. For more information, see [Deploy Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841829).
+- When you create your Project Server 2016 environment to which you'll migrate your Project Server 2013 data, the Project Server 2016 installation files are included in SharePoint Server 2016. For more information, see [Deploy Project Server 2016](/project/deploy-project-server-2016).
     
 - Resource plans are deprecated in Project Server 2016. Your Project Server 2013 resource plans will be migrated to Resource Engagements in Project Server 2016 and in Project Online. See [Overview: Resource engagements](https://support.office.com/article/73eefb5a-81fe-42bf-980e-9532b1bdc870) for more information. 
     
@@ -210,7 +210,7 @@ Project Portfolio Server 2007 was used with Project Server 2007 for portfolio st
   
 Other resources:
   
-- [Project Online Service Descriptions:](https://go.microsoft.com/fwlink/p/?linkid=841280) See the portfolio management features that are included with Project Server 2016 and Project Online Premium.
+- [Project Online Service Descriptions:](/office365/servicedescriptions/project-online-service-description/project-online-service-description) See the portfolio management features that are included with Project Server 2016 and Project Online Premium.
     
 - [Microsoft Office Project Portfolio Server 2007 migration guide.](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
@@ -219,4 +219,3 @@ Other resources:
 [SharePoint Server 2007 end of support Roadmap](sharepoint-2007-end-of-support.md)
   
 [Resources to help you upgrade from Office 2007 servers and clients](upgrade-from-office-2007-servers-and-products.md)
-  
