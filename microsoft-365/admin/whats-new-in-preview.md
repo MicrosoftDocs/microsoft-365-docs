@@ -57,7 +57,6 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 :::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Admin mobile app assign license page":::
 :::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
-
 :::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Admin mobile app invoice summary page":::
 
 ### Updated Message center feed in the Admin mobile app
