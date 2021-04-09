@@ -1,5 +1,5 @@
 ---
-title: Scan and manage network devices
+title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ---
-# Scan and manage network devices
+# Network device discovery and vulnerability management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ Network discovery capabilities are available in the **Device inventory** section
 
 A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.  
 
-Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities foron network devices deployed across their organizations.
+Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities on network devices deployed across their organizations.
 
 ## Approach
 
@@ -50,6 +50,10 @@ There will be two types of devices to keep in mind:
 
 - **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
 - **Network devices**: The network devices you plan to scan and onboard.
+
+### Vulnerability management for network devices 
+
+Once the network devices are discovered and classified, security administrators will be able to receive the latest security recommendations and review recently discovered vulnerabilities on network devices deployed across their organizations.  
 
 ## Operating systems that are supported
 
@@ -85,9 +89,9 @@ Your first step is to select a device that will perform the authenticated networ
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Note: These URLs are not specified in the Defender for Endpoint documented list of allowed data collection.
+    Note: Not all URLs are specified in the Defender for Endpoint documented list of allowed data collection.
 
 ## Permissions
 

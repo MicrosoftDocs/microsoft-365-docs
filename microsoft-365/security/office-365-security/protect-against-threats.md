@@ -55,9 +55,9 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-phishing protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Anti-spam protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection from malicious URLs and files in email and Office documents (safe links and safe attachments)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
-|Advanced anti-phishing protection|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection from malicious URLs and files in email and Office documents (Safe Links and Safe Attachments)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Microsoft Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Advanced anti-phishing protection|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
 
