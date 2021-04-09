@@ -38,7 +38,7 @@ The people on your team each need a user account before they can sign in and acc
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Add user in simplified admin center view
+## Add a user in the simplified admin center view
 
 If you're seeing this page in the admin center, you're on the admin center simplified view. Follow the steps below to add a user.
 
