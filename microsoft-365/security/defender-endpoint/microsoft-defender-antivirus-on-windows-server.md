@@ -147,7 +147,7 @@ Sample submission allows Microsoft to collect samples of potentially malicious s
 
 ### Submit a file
 
-1. Review the [submission guide](../intelligence/submission-guide.md).
+1. Review the [submission guide](/windows/security/threat-protection/intelligence/submission-guide).
 
 2. Visit the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission), and submit your file.
 
