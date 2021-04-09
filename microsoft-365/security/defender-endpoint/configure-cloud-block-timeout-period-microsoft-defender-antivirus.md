@@ -1,5 +1,5 @@
 ---
-title: Configure the Microsoft Defender AV cloud block timeout period
+title: Configure the Microsoft Defender Antivirus cloud block timeout period
 description: You can configure how long Microsoft Defender Antivirus will block a file from running while waiting for a cloud determination.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, timeout, block, period, seconds
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -26,7 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-When Microsoft Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Microsoft Defender Antivirus cloud service](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md).
+When Microsoft Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Microsoft Defender Antivirus cloud service](cloud-protection-microsoft-defender-antivirus.md).
 
 The default period that the file will be [blocked](configure-block-at-first-sight-microsoft-defender-antivirus.md) is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Microsoft Defender Antivirus cloud service.
 
