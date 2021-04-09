@@ -36,14 +36,14 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
 1. Go to the [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
 
-2. Select the distribution list group (also called a **distribution group**) that you want to upgrade Microsoft 365 group from the **Groups** page.
+2. Select the distribution list group (also called a **distribution group**) that you want to upgrade to Microsoft 365 group from the **Groups** page.
 
 3. Select the **Upgrade distribution group** from the tool bar.
 
 4. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
 
 > [!NOTE]
-> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distrubtion groups(s).
+> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distrubtion groups(s)*.
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
