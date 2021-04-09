@@ -50,6 +50,6 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 ## Related topics
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Use next-generation antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)
+- [Use next-generation antivirus technologies through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md)
 - [Configure block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)

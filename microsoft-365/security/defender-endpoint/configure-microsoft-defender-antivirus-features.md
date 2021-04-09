@@ -44,7 +44,7 @@ The following articles describe how to perform key tasks when configuring Micros
 
 |Article  |Description  |
 |---------|---------|
-|[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](utilize-microsoft-cloud-protection-microsoft-defender-antivirus.md)     | Use cloud-delivered protection for advanced, fast, robust antivirus detection.        |
+|[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](cloud-protection-microsoft-defender-antivirus.md)     | Use cloud-delivered protection for advanced, fast, robust antivirus detection.        |
 |[Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)     |Enable behavior-based, heuristic, and real-time antivirus protection.         |
 |[Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configure how end users in your organization interact with Microsoft Defender Antivirus, what notifications they see, and whether they can override settings. |
 
