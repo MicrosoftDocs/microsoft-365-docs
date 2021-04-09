@@ -13,7 +13,6 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/04/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde

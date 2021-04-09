@@ -10,7 +10,6 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/21/2021
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
