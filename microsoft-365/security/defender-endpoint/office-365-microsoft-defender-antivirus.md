@@ -49,7 +49,7 @@ Read the following sections to learn more.
 
 When you save your files to [OneDrive](/onedrive), and [Microsoft Defender Antivirus](./microsoft-defender-antivirus-in-windows-10.md) detects a ransomware threat on your device, the following things occur:
 
-1. **You are told about the threat**. (If your organization is using [Microsoft Defender for Endpoint](../index.md), your security operations team is notified, too.)
+1. **You are told about the threat**. (If your organization is using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), your security operations team is notified, too.)
 
 2. **Microsoft Defender Antivirus helps you (and your organization's security team) remove the ransomware** from your device(s). (If your organization is using Microsoft Defender for Endpoint, your security operations team can determine whether other devices are infected and take appropriate action, too.)
 
@@ -65,7 +65,7 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     AND
 
-- [Microsoft Defender for Endpoint](../index.md) protects your devices from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves your security posture.
+- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) protects your devices from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves your security posture.
 
     SO
 
