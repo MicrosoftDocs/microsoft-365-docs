@@ -32,7 +32,7 @@ Network protection helps reduce the attack surface of your devices from Internet
 
 Network protection is supported on Windows, beginning with Windows 10, version 1709. Network protection is not yet supported on other operating systems, but web protection is supported using th new Microsoft Edge based on Chromium. To learn more, see [Web protection](web-protection-overview.md).
 
-network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides web protection functionality in Edge to other supported browsers and non-browser applications. In addition, network protection provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators).
+network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides web protection functionality in Edge to other supported browsers and non-browser applications. In addition, network protection provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md).
 
 For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 

@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Enable attack surface reduction rules
