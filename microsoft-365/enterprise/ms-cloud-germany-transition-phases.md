@@ -121,22 +121,36 @@ Additional considerations:
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md).
 
 ## Phase 5: Exchange Online 
+Starting with phase 5, Exchange Online mailboxes are moved from Microsoft Cloud Deutschland to Office 365 Global services.
 
-**Applies to:** All customers using Exchange Online
+The Office 365 Global services region is set as default, which enables the internal load-balancing service to redistribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (MCD or Global services) are in the same organization and can use either URL endpoint.
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
+- Transition users and services from your legacy MCD URLs (outlook.office.de) to new Office 365 services URLs (`https://outlook.office365.com`).
+- Users may continue to access the service through legacy MCD URLs during the migration, however they need to stop using the legacy URLs on completion of the migration.
+- Users should transition to using the worldwide Office portal for Office Online features (Calendar, Mail, People). Navigation to services that aren't yet migrated to Office 365 services won't function until they are migrated.
+- The Outlook Web App won't provide the public folder experience during migration.
+
+### Exchange Online Hybrid deployments
+**Applies to:** All customers using Exchange Online Hybrid topologies
+
+Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#exchange-online-powershell)
+If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#exchange-online-powershell).
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 |**Admin**: Stop mailbox moves|Stop or delete any onboarding or offboarding mailbox moves, namely don't move mailboxes between Exchange on-premises and Exchange Online.  | This ensures the mailbox move requests don't fail with an error. Failure to do so may result in failure of the service or Office clients. |
 | The new region "Germany" is added to the organization setup. | Exchange Online configuration adds the new go-local German region to the transitioning organization. | |
-| Exchange Online mailboxes are moved from Microsoft Cloud Deutschland to Office 365 Global services.| The Office 365 Global services region is set as default, which enables the internal load-balancing service to redistribute mailboxes to the appropriate default region in Office 365 services. In this transition, users on either side (MCD or Global services) are in the same organization and can use either URL endpoint. |<ul><li>Transition users and services from your legacy MCD URLs (outlook.office.de) to new Office 365 services URLs (`https://outlook.office365.com`).</li><li>Users may continue to access the service through legacy MCD URLs during the migration, however they need to stop using the legacy URLs on completion of the migration.</li><li>Users should transition to using the worldwide Office portal for Office Online features (Calendar, Mail, People). Navigation to services that aren't yet migrated to Office 365 services won't function until they are migrated. </li><li>The Outlook Web App won't provide the public folder experience during migration. </li></ul>|
-| **Admin**: Update custom DNS Settings for AutoDiscover| Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to autodiscover.outlook.com. |  Availability requests and service discovery calls via AutoDiscover point directly to the Office 365 services. Customers who do not perform these DNS updates may experience Autodiscover service issues when the migration is finalized. |
 ||||
+
+### DNS Record for Autodiscover in Exchange Online
+**Applies to:** Customers using Exchange Online with a custom domain
+
+Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to **autodiscover.outlook.com**.
+
+Customers who do not perform these DNS updates upon **completion of the migration phase 9** may experience service issues when the migration is finalized.
 
 ### Exchange Online PowerShell
 **Applies to:** Exchange Online Administrators using Exchange Online PowerShell

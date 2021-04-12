@@ -62,7 +62,7 @@ Office 365 tenant and user identifiers are preserved during migration. Azure AD 
 
 <!-- before phase 9 -->
 
-**Applies to**: Customers who set a custom _msoid_ CNAME in their own DNS domain
+**Applies to**: Customers who set a custom _msoid_ CNAME in their own DNS domain or using a domain for Exchange Online
 
 If configured, the _msoid_ CNAME affects only customers using Office Desktop client (Microsoft 365 Apps, Office 365 ProPlus, Office 2019, 2016, ...).
 
@@ -75,6 +75,9 @@ nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 If the command line returns a DNS record, remove the _msoid_ CNAME from your domain.
+
+> [!NOTE]
+> If you are using a custom domain for Exchange Online, you'll need to have access to your DNS hosting provider. Please make sure you can access and edit your DNS settings, you'll be modifying DNS records during the migration.
 
 ## Active Directory Federation Services (AD FS)
 
