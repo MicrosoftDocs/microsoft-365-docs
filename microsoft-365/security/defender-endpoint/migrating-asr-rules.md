@@ -44,10 +44,10 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 
 - **Applies to**- Untrusted Programs from USB
 - **Processes**- *
-- **Operation:- Process Execution
+- **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes,Services:-*
-- **Attack Surface Reduction rules:- ASR rules have a built-in rule to prevent the launch of untrusted and unsigned programs from removable drives: "Block untrusted and unsigned processes that run from USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
-- **Other recommended features:- Please explore additional controls for USB devices and other removable media using Microsoft Defender for Endpoint:[How to control USB devices and other removable media using Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
+- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent the launch of untrusted and unsigned programs from removable drives: "Block untrusted and unsigned processes that run from USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
+- **Other recommended features**- Please explore additional controls for USB devices and other removable media using Microsoft Defender for Endpoint:[How to control USB devices and other removable media using Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
 ### Block Mshta from launching certain child processes
 
