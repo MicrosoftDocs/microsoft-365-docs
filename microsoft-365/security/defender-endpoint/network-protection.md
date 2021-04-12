@@ -30,9 +30,9 @@ ms.topic: how-to
 
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. Network protection expands the scope of [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
-Network protection is supported on Windows, beginning with Windows 10, version 1709. Network Protection is not yet supported on other operating systems, but web protection is supported using th new Microsoft Edge based on Chromium. To learn more, see [Web protection](web-protection-overview.md).
+Network protection is supported on Windows, beginning with Windows 10, version 1709. Network protection is not yet supported on other operating systems, but web protection is supported using th new Microsoft Edge based on Chromium. To learn more, see [Web protection](web-protection-overview.md).
 
-Network Protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides web protection functionality in Edge to other supported browsers and non-browser applications. In addition, network protection provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators).
+network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level. It provides web protection functionality in Edge to other supported browsers and non-browser applications. In addition, network protection provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators).
 
 For more information about how to enable network protection, see [Enable network protection](enable-network-protection.md). Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
@@ -87,9 +87,31 @@ This procedure creates a custom view that filters to only show the following eve
 | 1125 | Event when network protection fires in audit mode |
 | 1126 | Event when network protection fires in block mode |
 
+## Considerations for Windows virtual desktop running Windows 10 Enterprise Multi-Session
+
+Due to the multi-user nature of Windows 10 Enterprise, keep the following points in mind:
+
+1. Network protection is a device-wide feature and cannot be targeted to specific user sessions.
+
+2. Web content filtering policies are also device wide.
+
+3. If you need to differentiate between user groups, consider creating separate Windows Virtual Desktop host pools and assignments.
+
+4. Test network protection in audit mode to assess its behavior before rolling out. 
+
+5. Consider resizing your deployment if you have a large number of users or a large number of multi-user sessions.
+
+### Alternative option for network protection
+
+For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Desktop on Azure, network protection for Microsoft Edge can be enabled using the following method:
+
+1. Use [Turn on network protection](enable-network-protection.md) and follow the instructions to apply your policy.
+
+2. Execute the following PowerShell command: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+
 ## Network protection troubleshooting
 
-Due to the environment where Network Protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, Network Protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
+Due to the environment where Network Protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
 
 ```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
