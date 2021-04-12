@@ -16,12 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set preferences for Microsoft Defender for Endpoint for Linux
+# Set preferences for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,6 +55,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 | **Key** | antivirusEngine |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
+|||
 
 #### Enable / disable real-time protection
 
@@ -66,6 +66,7 @@ Determines whether real-time protection (scan files as they are accessed) is ena
 | **Key** | enableRealTimeProtection |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
+|||
 
 #### Enable / disable passive mode
 
@@ -82,6 +83,7 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Available in Defender for Endpoint version 100.67.60 or higher. |
+|||
 
 #### Exclusion merge policy
 
@@ -93,6 +95,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
+|||
 
 #### Scan exclusions
 
@@ -103,6 +106,7 @@ Entities that have been excluded from the scan. Exclusions can be specified by f
 | **Key** | exclusions |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
+|||
 
 **Type of exclusion**
 
@@ -113,6 +117,7 @@ Specifies the type of content excluded from the scan.
 | **Key** | $type |
 | **Data type** | String |
 | **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **Path to excluded content**
 
@@ -124,6 +129,7 @@ Used to exclude content from the scan by full file path.
 | **Data type** | String |
 | **Possible values** | valid paths |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
+|||
 
 **Path type (file / directory)**
 
@@ -135,6 +141,7 @@ Indicates if the *path* property refers to a file or directory.
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
+|||
 
 **File extension excluded from the scan**
 
@@ -146,6 +153,7 @@ Used to exclude content from the scan by file extension.
 | **Data type** | String |
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
+|||
 
 **Process excluded from the scan**
 
@@ -157,6 +165,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 | **Data type** | String |
 | **Possible values** | any string |
 | **Comments** | Applicable only if *$type* is *excludedFileName* |
+|||
 
 #### Allowed threats
 
@@ -166,6 +175,7 @@ List of threats (identified by their name) that are not blocked by the product a
 |:---|:---|
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
+|||
 
 #### Disallowed threat actions
 
@@ -177,6 +187,7 @@ Restricts the actions that the local user of a device can take when threats are 
 | **Data type** | Array of strings |
 | **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
 | **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
+|||
 
 #### Threat type settings
 
@@ -187,6 +198,7 @@ The *threatTypeSettings* preference in the antivirus engine is used to control h
 | **Key** | threatTypeSettings |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
+|||
 
 **Threat type**
 
@@ -197,6 +209,7 @@ Type of threat for which the behavior is configured.
 | **Key** | key |
 | **Data type** | String |
 | **Possible values** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **Action to take**
 
@@ -211,6 +224,7 @@ Action to take when coming across a threat of the type specified in the precedin
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
+|||
 
 #### Threat type settings merge policy
 
@@ -222,6 +236,7 @@ Specifies the merge policy for threat type settings. This can be a combination o
 | **Data type** | String |
 | **Possible values** | merge (default) <br/> admin_only |
 | **Comments** | Available in Defender for Endpoint version 100.83.73 or higher. |
+|||
 
 #### Antivirus scan history retention (in days)
 
@@ -233,6 +248,7 @@ Specify the number of days that results are retained in the scan history on the 
 | **Data type** | String |
 | **Possible values** | 90 (default). Allowed values are from 1 day to 180 days. |
 | **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
+|||
 
 #### Maximum number of items in the antivirus scan history
 
@@ -244,6 +260,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 | **Data type** | String |
 | **Possible values** | 10000 (default). Allowed values are from 5000 items to 15000 items. |
 | **Comments** | Available in Defender for Endpoint version 101.04.76 or higher. |
+|||
 
 ### Cloud-delivered protection preferences
 
@@ -254,6 +271,7 @@ The *cloudService* entry in the configuration profile is used to configure the c
 | **Key** | cloudService |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
+|||
 
 #### Enable / disable cloud delivered protection
 
@@ -264,6 +282,7 @@ Determines whether cloud-delivered protection is enabled on the device or not. T
 | **Key** | enabled |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
+|||
 
 #### Diagnostic collection level
 
@@ -274,6 +293,7 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 | **Key** | diagnosticLevel |
 | **Data type** | String |
 | **Possible values** | optional (default) <br/> required |
+|||
 
 #### Enable / disable automatic sample submissions
 
@@ -288,6 +308,7 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Key** | automaticSampleSubmissionConsent |
 | **Data type** | String |
 | **Possible values** | none <br/> safe (default) <br/> all |
+|||
 
 #### Enable / disable automatic security intelligence updates
 
@@ -298,6 +319,7 @@ Determines whether security intelligence updates are installed automatically:
 | **Key** | automaticDefinitionUpdateEnabled |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
+|||
 
 ## Recommended configuration profile
 
@@ -334,6 +356,7 @@ The following configuration profile will:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -394,6 +417,7 @@ The following configuration profile contains entries for all settings described 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -407,6 +431,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
+
+## Verifying that the mdatp_managed.json file is working as expected
+To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> For the mdatp_managed.json to take effect, no restart of the wdavdaemon is required.
 
 ## Configuration profile deployment
 

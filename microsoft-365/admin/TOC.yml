@@ -57,7 +57,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -242,6 +242,8 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
+         - name: Test and deploy Microsoft 365 Apps in the Microsoft 365 admin center
+           href: manage/test-and-deploy-microsoft-365-apps.md
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -262,6 +264,8 @@
            href: manage/manage-microsoft-rewards.md 
          - name: Manage Message center messages
            href: manage/manage-messages.md
+         - name: Manage Microsoft feedback for your organization
+           href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
          - name: Show or hide new features

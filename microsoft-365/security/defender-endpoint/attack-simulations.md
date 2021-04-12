@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
+ms.author: maccruz
 author: lomayor
 localization_priority: Normal
 manager: dansimp

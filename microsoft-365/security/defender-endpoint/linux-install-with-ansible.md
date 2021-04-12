@@ -16,12 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Deploy Microsoft Defender for Endpoint for Linux with Ansible
+# Deploy Microsoft Defender for Endpoint on Linux with Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

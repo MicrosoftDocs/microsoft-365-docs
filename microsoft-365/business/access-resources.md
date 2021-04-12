@@ -2,8 +2,8 @@
 title: "Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -59,3 +59,7 @@ If the Windows device that you Azure-AD joined was previously domain-joined or i
 - Users might not be able to authenticate to applications that depend on Active Directory authentication. Evaluate the legacy app and consider updating to an app that uses modern Auth, if possible.
 
 - Active Directory printer discovery won't work. You can provide direct printer paths for all users or use [Universal Print](/universal-print/).
+
+### Related Articles
+
+[Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

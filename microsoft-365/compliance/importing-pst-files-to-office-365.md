@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.IngestionHelp'
 ms.service: O365-seccomp
@@ -61,11 +61,11 @@ Here's an illustration and description of the complete PST import process. The i
     
 4. **Create a PST import job** - The next step is to create a PST import job on the **Import PST files** page in the Security & Compliance Center and submit the PST import mapping file created in the previous step. For network upload (because the PST files have been uploaded to Azure) Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file. 
     
-    For drive shipping, a few additional things happen at this point in the process.
+    For drive shipping, a few other things happen at this point in the process.
     
     - You physically ship the hard drive to a Microsoft data center (the shipping address for the Microsoft data center is displayed when the import job is created).
     
-    - When Microsoft receives the hard drive, data center personnel will upload the PST files on the hard drive to the Azure Storage location for your organization. As previously explained, your PST files are uploaded to a Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located.
+    - When Microsoft receives the hard drive, data center personnel will upload the PST files on the hard drive to the Azure Storage location for your organization. As previously explained, your PST files are uploaded to an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located.
     
       > [!NOTE]
       > The PST files on the hard drive are uploaded to Azure within 7 to 10 business days after Microsoft receives the hard drive.
@@ -173,7 +173,7 @@ The PST import process checks for duplicate items and doesn't copy the items fro
  
  **Is there a message size limit when importing PST files?**
   
-Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
+Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped and not imported during the import process. Items larger than 150 MB aren't imported because 150 MB is the message size limit in Exchange Online. For more information, see [Message limits in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **Are message properties, such as when the message was sent or received, the list of recipients and other properties, preserved when PST files are imported to a Microsoft 365 mailbox?**
   
@@ -266,7 +266,7 @@ Additionally, PST files from Outlook 2007 and later versions can be imported to 
   
  **Is there a message size limit when importing PST files?**
   
-Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
+Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped and not imported during the import process. Items larger than 150 MB aren't imported because 150 MB is the message size limit in Exchange Online. For more information, see [Message limits in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **How does the PST import process handle duplicate email items?**
 
@@ -314,4 +314,4 @@ Yes.
   
  **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+The hard drive that you ship to Microsoft might have to cross international borders. If so, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

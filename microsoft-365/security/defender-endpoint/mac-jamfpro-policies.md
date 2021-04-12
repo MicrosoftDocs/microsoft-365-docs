@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set up the Microsoft Defender for Endpoint for macOS policies in Jamf Pro
+# Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,9 +51,9 @@ You'll need to take the following steps:
 
 9. [Configure Network Extension](#step-9-configure-network-extension)
 
-10. [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Deploy Microsoft Defender for Endpoint for macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
@@ -344,60 +344,51 @@ You'll need to take the following steps:
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
-1. Download `notif.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
+1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
-2. Save it as `MDATP_MDAV_notification_settings.plist`.
-
-3. In the Jamf Pro dashboard, select **General**. 
-       
-4. Enter the following details:
-
-    **General** 
+2. Click **New**, and enter the following details for **Options**:
     
-    - Name: MDATP MDAV Notification settings
-    - Description: macOS 10.15 (Catalina) or newer
-    - Category: None (default)
-    - Distribution Method: Install Automatically(default)
-    - Level: Computer Level(default)
+    - Tab **General**: 
+        - **Name**: MDATP MDAV Notification settings
+        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Category**: None *(default)*
+        - **Distribution Method**: Install Automatically *(default)*
+        - **Level**: Computer Level *(default)*
 
-    ![Image of configuration settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Image of configuration profile settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
+    - Tab **Notifications**, click **Add**, and enter the following values:
+        - **Bundle ID**: `com.microsoft.wdav.tray`
+        - **Critical Alerts**: Click **Disable**
+        - **Notifications**: Click **Enable**
+        - **Banner alert type**: Select **Include** and **Temporary** *(default)*
+        - **Notifications on lock screen**: Click **Hide**
+        - **Notifications in Notification Center**: Click **Display**
+        - **Badge app icon**: Click **Display**
 
-5. Select **Upload File (PLIST file)**.
+        ![Image of configuration settings mdatpmdav notifications tray](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    ![Image of configuration settings upload plistfile](images/7f9138053dbcbf928e5182ee7b295ebe.png)
- 
+    - Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Settings**
+        - **Bundle ID**: `com.microsoft.autoupdate2`
+        - Configure the rest of the settings to the same values as above
 
-6. Select **Choose File** > **MDATP_MDAV_Notification_Settings.plist**.
+        ![Image of configuration settings mdatpmdav notifications mau](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
 
+        Note that now you have two 'tables' with notification configurations, one for **Bundle ID: com.microsoft.wdav.tray**, and another for **Bundle ID: com.microsoft.autoupdate2**. While you can configure alert settings per your requirements, Bundle IDs must be exactly the same as described before, and **Include** switch must be **On** for **Notifications**.
 
-    ![Image of configuration settings mdatpmdav notsettings](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
-
-
-    ![Image of configuration settings mdatpmdav notifsettings](images/20e33b98eb54447881dc6c89e58b890f.png)
-
-7. Select **Open** > **Upload**.
-
-    ![Image of configuration settings upl img](images/7697c33b9fd376ae5a8023d01f9d3857.png)
-
-
-    ![Image of configuration settings upl image](images/2bda9244ec25d1526811da4ea91b1c86.png)
-
-8. Select the **Scope** tab, then select **Add**.
+3. Select the **Scope** tab, then select **Add**.
 
     ![Image of configuration settings scope add](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
+4. Select **Contoso's Machine Group**. 
 
-9. Select **Contoso's Machine Group**. 
-
-10. Select **Add**, then select **Save**.
+5. Select **Add**, then select **Save**.
     
     ![Image of configuration settings contoso machine grp save](images/09a275e321268e5e3ac0c0865d3e2db5.png)
-
     
     ![Image of configuration settings add save](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-11. Select **Done**. You'll see the new **Configuration profile**.
+6. Select **Done**. You'll see the new **Configuration profile**.
     ![Image of configuration setting done img](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
@@ -573,8 +564,12 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
     
     ![Image of configuration setting donimg2](images/6c8b406ee224335a8c65d06953dc756e.png)
 
+Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## Step 7: Approve Kernel extension for Microsoft Defender for Endpoint
+
+> [!CAUTION]
+> Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
 
 1. In the **Configuration Profiles**, select **+ New**.
 
@@ -624,6 +619,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     ![Image of configuration settings doneimag](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
+Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## Step 8: Approve System extensions for Microsoft Defender for Endpoint
 
@@ -680,64 +676,60 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
 
->[!NOTE]
->JAMF doesn’t have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint for Mac installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
->As such, the following steps provide a workaround that involve signing the configuration profile.
+These steps are applicable of macOS 10.15 (Catalina) or newer.
 
-1. Download `netfilter.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) to your device and save it as `com.microsoft.network-extension.mobileconfig`
+1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
-2. Follow the instructions on [this page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) to create a signing certificate using JAMF’s built-in certificate authority
+2. Click **New**, and enter the following details for **Options**:
 
-3. After the certificate is created and installed to your device, run the following command from the Terminal from a macOS device:
+    - Tab **General**: 
+        - **Name**: Microsoft Defender ATP Network Extension
+        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Category**: None *(default)*
+        - **Distribution Method**: Install Automatically *(default)*
+        - **Level**: Computer Level *(default)*
 
-   ```bash
-   $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
-   ```
+    - Tab **Content Filter**:
+        - **Filter Name**: Microsoft Defender ATP Content Filter
+        - **Identifier**: `com.microsoft.wdav`
+        - Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)
+        - **Filter Order**: Inspector
+        - **Socket Filter**: `com.microsoft.wdav.netext`
+        - **Socket Filter Designated Requirement**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+        - Leave **Network Filter** fields blank (**Include** is *not* selected)
 
-   ![Terminal window with command to create signed configuration](images/netext-create-profile.png)
+        Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
-4. From the JAMF portal, navigate to **Configuration Profiles** and click the **Upload** button. 
+        ![Image of configuration setting mdatpmdav](images/netext-create-profile.png)
 
-   ![Image of upload window](images/netext-upload-file.png)
-
-5. Select **Choose File** and select `microsoft.network-extension.signed.mobileconfig`.
-
-   ![Image of upload window netext choose file](images/netext-choose-file.png)
-
-6. Select **Upload**.
-
-   ![Image of upload window netext upload file2](images/netext-upload-file2.png)
-
-7. After uploading the file, you are redirected to a new page to finalize the creation of this profile.
-
-   ![Image of new configuration profile netext profile page](images/netext-profile-page.png)
-
-8. Select the **Scope** tab.
+3. Select the **Scope** tab.
 
    ![Image of configuration settings sco tab](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-9. Select **+ Add**.
+4. Select **+ Add**.
 
-10. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
+5. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
 
-11. Select **+ Add**.
+6. Select **+ Add**.
 
     ![Image of configuration settings adim](images/0dde8a4c41110dbc398c485433a81359.png)
 
-12. Select **Save**.
+7. Select **Save**.
 
     ![Image of configuration settings savimg netextscop](images/netext-scope.png)
 
-13. Select **Done**.
+8. Select **Done**.
 
     ![Image of configuration settings netextfinal](images/netext-final.png)
 
-## Step 10: Schedule scans with Microsoft Defender for Endpoint for Mac
-Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 11: Deploy Microsoft Defender for Endpoint for macOS
+## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
+Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+
+## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
 1. Navigate to where you saved `wdav.pkg`.
 

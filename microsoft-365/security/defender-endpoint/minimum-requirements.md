@@ -49,6 +49,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
+> RDSH VMs do not require a separate Defender for Endpoint license.
 
 Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
@@ -112,10 +113,10 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 
 
 ### Other supported operating systems
-- Android
-- iOS
-- Linux
-- macOS
+- [Android](microsoft-defender-endpoint-android.md)
+- [iOS](microsoft-defender-endpoint-ios.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
+- [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
 > You'll need to confirm the Linux distributions and versions of Android, iOS and macOS you've are compatible with Defender for Endpoint for the integration to work.
