@@ -101,36 +101,24 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. If you're in **Table** view, select **Cards** to switch views.
-
-3. Find the subscription that you want to change.
-
-4. In the **Billing** section, next to **invoice**, select **Edit**.
-
-5. At the bottom of the **Edit payment details** pane, enter your PO number, then select **Save**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription that you want to change, and in the **Payment method** section, select **Change payment details**.
-
-3. At the bottom of the **Change payment details** pane, enter your PO number, then select **Submit**.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription that you want to change, and in the **Payment method** section, select **Change payment details**.
-
-3. At the bottom of the **Change payment details** pane, enter your PO number, then select **Submit**.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
+
+1. On the **Products** tab, select the subscription that you want to change.
+
+1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**. 
+
+1. At the bottom of the **Edit details for paying by voice** pane, enter your PO number, and then select **Save**.
 
 ## Related articles
 

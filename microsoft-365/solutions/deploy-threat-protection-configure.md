@@ -1,7 +1,7 @@
 ---
 title: Steps to configure threat protection capabilities across Microsoft 365
 description: Use this article as a guide for implementing your threat protection solution. Deploy threat protection services and capabilities across Microsoft 365 E5.
-keywords: security, setup, configuration, Microsoft 365 E5, advanced threat protection
+keywords: security solution, setup, configuration, Microsoft 365 E5, advanced threat protection, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -123,11 +123,8 @@ With Microsoft Defender for Office 365, people across your organization can comm
 ![Process for deploying Microsoft Defender for Endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Prepare your environment for Microsoft Defender for Endpoint](../security/defender-endpoint/deployment-phases.md).
-
 2. [Deploy Microsoft Defender for Endpoint](../security/defender-endpoint/production-deployment.md).
-
 3. [Onboard to the Microsoft Defender for Endpoint service](../security/defender-endpoint/onboarding.md).
-
 4. [Complete your top security administrative tasks](../security/defender-endpoint/tvm-security-recommendation.md).
 
 ### More information about Microsoft Defender for Endpoint
@@ -144,11 +141,8 @@ With Microsoft Defender for Office 365, people across your organization can comm
 ![Process for deploying Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Set up the portal and other basic requirements](/cloud-app-security/general-setup).
-
 2. [Set up cloud discovery](/cloud-app-security/set-up-cloud-discovery) and [connect apps](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-
 3. [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad).
-
 4. [Use the investigation tools and dashboards](/cloud-app-security/investigate).
 
 ### More information about Microsoft Cloud App Security
