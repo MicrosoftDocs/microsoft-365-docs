@@ -1,7 +1,7 @@
 ---
-title: What's new in Microsoft Defender ATP
-description: See what features are generally available (GA) in the latest release of Microsoft Defender ATP, as well as security features in Windows 10 and Windows Server.
-keywords: what's new in microsoft defender atp, ga, generally available, capabilities, available, new
+title: What's new in Microsoft Defender for Endpoint
+description: See what features are generally available (GA) in the latest release of Microsoft Defender for Endpoint, as well as security features in Windows 10 and Windows Server.
+keywords: what's new in microsoft defender for endpoint, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

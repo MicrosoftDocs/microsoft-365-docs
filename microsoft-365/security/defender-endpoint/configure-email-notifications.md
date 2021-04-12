@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Configure alert notifications in Microsoft Defender ATP
+# Configure alert notifications in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
