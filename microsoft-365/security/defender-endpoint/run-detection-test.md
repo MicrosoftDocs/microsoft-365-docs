@@ -1,6 +1,6 @@
 ---
-title: Run a detection test on a newly onboarded Microsoft Defender ATP device
-description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender ATP service.
+title: Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
+description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender for Endpoint service.
 keywords: detection test, detection, powershell, script, verify, onboarding, microsoft defender for endpoint onboarding, clients, servers, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
