@@ -69,16 +69,16 @@ iOS devices along with other platforms.
 
 ## Installation instructions
 
-Deployment of Microsoft Defender for Endpoint for iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported.
-For more information, see [Deploy Microsoft Defender for Endpoint for iOS](ios-install.md).
+Deployment of Microsoft Defender for Endpoint on iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported.
+For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 
 ## Resources
 
-- Stay informed about upcoming releases by visiting [What's new in Microsoft Defender for Endpoint for iOS](ios-whatsnew.md) or our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
+- Stay informed about upcoming releases by visiting [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md) or our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
 - Provide feedback through in-app feedback system or through [SecOps portal](https://securitycenter.microsoft.com)
 
 ## Next steps
 
-- [Deploy Microsoft Defender for Endpoint for iOS](ios-install.md)
-- [Configure Microsoft Defender for Endpoint for iOS features](ios-configure-features.md)
+- [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)

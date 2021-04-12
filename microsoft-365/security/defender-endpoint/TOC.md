@@ -9,7 +9,7 @@
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
-### [Microsoft Defender for Endpoint for non-Windows platforms](non-windows.md)
+### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
@@ -176,14 +176,14 @@
 
 ### [Network devices](network-devices.md)
 
-### [Microsoft Defender for Endpoint for Mac]()
-#### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+### [Microsoft Defender for Endpoint on macOS]()
+#### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](mac-install-with-intune.md)
 ##### [JAMF Pro-based deployment]()
-###### [Deploying Microsoft Defender for Endpoint for macOS using Jamf Pro](mac-install-with-jamf.md)
+###### [Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro](mac-install-with-jamf.md)
 ###### [Login to Jamf Pro](mac-install-jamfpro-login.md)
 ###### [Set up device groups](mac-jamfpro-device-groups.md)
 ###### [Set up policies](mac-jamfpro-policies.md)
@@ -213,19 +213,19 @@
 #### [Privacy](mac-privacy.md)
 #### [Resources](mac-resources.md)
 
-### [Microsoft Defender for Endpoint for iOS]()
-#### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md)
+### [Microsoft Defender for Endpoint on iOS]()
+#### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](ios-configure-features.md)
 #### [Privacy](ios-privacy.md)
 
 
-### [Microsoft Defender for Endpoint for Linux]()
-#### [Overview of Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
+### [Microsoft Defender for Endpoint on Linux]()
+#### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 #### [What's New](linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](linux-install-manually.md)
@@ -239,7 +239,7 @@
 ##### [Static proxy configuration](linux-static-proxy-configuration.md)
 ##### [Set preferences](linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-##### [Schedule scans with Microsoft Defender for Endpoint for Linux](linux-schedule-scan-atp.md)
+##### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
@@ -251,17 +251,17 @@
 #### [Privacy](linux-privacy.md)
 #### [Resources](linux-resources.md)
 
-### [Microsoft Defender for Endpoint for Android]()
-#### [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
+### [Microsoft Defender for Endpoint on Android]()
+#### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md)
+##### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 
 #### [Configure]()
-##### [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
+##### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
 
 #### [Privacy]()
-##### [Microsoft Defender for Endpoint for Android - Privacy information](android-privacy.md)
+##### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot issues](android-support-signin.md)
