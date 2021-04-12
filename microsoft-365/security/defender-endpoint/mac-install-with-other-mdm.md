@@ -42,7 +42,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint on Mac pag
 
 If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint on Mac.
 
-Microsoft Defender for Endpoint for Mac does not depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
+Microsoft Defender for Endpoint on Mac does not depend on any vendor-specific features. It can be used with any MDM solution that supports the following features:
 
 - Deploy a macOS .pkg to managed devices.
 - Deploy macOS system configuration profiles to managed devices.
