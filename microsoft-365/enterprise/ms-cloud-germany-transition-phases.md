@@ -56,15 +56,15 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
-|**Customer Task**: Grant consent for migration| Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration. </li><li> Customers das renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol> | <ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation. </li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints. </li><li> </li></ul>
-|**Tenant Admin**: Monitor messages|The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status from this time on.|Customer can execute necessarry tasks in time.
+|**Customer Task**: Grant consent for migration| Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration. </li><li> Customers has renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol> | <ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation. </li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints. </li><li> </li></ul>
+|**Tenant Admin**: Monitor messages|The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status from this time on.|Customer can execute necessary tasks in time.
 ||||
 
 ## Phase 1: Before the migration starts
 
 Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
-In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
+In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
 
 In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
@@ -118,17 +118,17 @@ Additional considerations:
 
 
 > [!NOTE]
-> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md#ediscovery-phase-4-to-the-end-of-phase-9).
+> In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-experience.md).
 
 ## Phase 5: Exchange Online 
 
 **Applies to:** All customers using Exchange Online
 
-If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
+If you're using Exchange Online hybrid: Exchange Online Hybrid administrators  **must execute the Hybrid Configuration wizard (HCW) multiple times** as part of this transition. Apply the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **before the migration step phase 5 begins**. Exchange Online hybrid customers must run the latest version of the Exchange Hybrid Configuration Wizard (HCW) in "Office 365 Germany" mode to prepare the on-premises configuration for the migration to Office 365 global services.
 
 Upon **completion of the migration phase 9** (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services.
 
-If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](###Exchange-Online-PowerShell)
+If you want to modify user photos during phase 5, see [Exchange Online Set-UserPhoto during phase 5](#exchange-online-powershell)
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
@@ -265,4 +265,4 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 ## Post migration
 
-Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md#post-migration) article and execute them accordingly.
+Make sure you read the [post migration activities](ms-cloud-germany-transition-add-experience.md) article and execute them accordingly.

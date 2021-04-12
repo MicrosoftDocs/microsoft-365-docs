@@ -50,7 +50,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
@@ -73,7 +73,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
    - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
    > [!NOTE]
-   > Admins with Defender for Office 365 Plan 1 or Plan 2 are able to submit messages as old as 30 days. Other admins will only be able to go back 7 days.
+   > The ability to submit messages as old as 30 days has been temporarily suspended for Defender for Office 365 customers. Admins will only be able to go back 7 days.
 
 2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
@@ -117,9 +117,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    ![Attachment submission example](../../media/submission-file-flyout.PNG)
 
-## View admin submissions
+## View items Submitted for analysis
 
-In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Admin submissions** tab, and then click **New submission**.
+In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Submitted for analysis** tab
 
 Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
@@ -249,6 +249,9 @@ You can click the **Column options** button near the bottom of the page to add o
 Near the top of the page, you can enter a start date, an end date, and you can filter by **Submitted by** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+> [!NOTE]
+> If organizations are configured to send to custom mailbox only, reported messages will not be sent for rescan and results in the User reported messages portal will always be empty.
 
 ## Undo user submissions
 
