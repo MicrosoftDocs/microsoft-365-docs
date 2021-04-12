@@ -163,7 +163,7 @@ Example:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Enter the following cmdlet:
+2. Type the following cmdlet:
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -199,7 +199,7 @@ Example:
     You can also use the `Add-MpPreference` PowerShell verb to add new rules to the existing list.
 
     > [!WARNING]
-    > `Set-MpPreference` will always overwrite the existing set of rules. If you want to add to the existing set, you should use `Add-MpPreference` instead.
+    > `Set-MpPreference` will always overwrite the existing set of rules. If you want to add to the existing set, use `Add-MpPreference` instead.
     > You can obtain a list of rules and their current state by using `Get-MpPreference`.
 
 3. To exclude files and folders from ASR rules, use the following cmdlet:
