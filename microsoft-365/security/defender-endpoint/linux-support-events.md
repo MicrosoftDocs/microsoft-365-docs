@@ -20,13 +20,13 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint for Linux
+# Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
 This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.
 

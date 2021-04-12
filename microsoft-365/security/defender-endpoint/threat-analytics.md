@@ -1,5 +1,5 @@
 ---
-title: Track and respond to emerging threats with Microsoft Defender ATP threat analytics
+title: Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
