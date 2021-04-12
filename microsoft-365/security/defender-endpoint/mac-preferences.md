@@ -20,21 +20,21 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set preferences for Microsoft Defender for Endpoint for Mac
+# Set preferences for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender for Endpoint for Mac in enterprise organizations. To configure Microsoft Defender for Endpoint for Mac using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
+>This article contains instructions for how to set preferences for Microsoft Defender for Endpoint on macOS in enterprise organizations. To configure Microsoft Defender for Endpoint on macOS using the command-line interface, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## Summary
 
-In enterprise organizations, Microsoft Defender for Endpoint for Mac can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
+In enterprise organizations, Microsoft Defender for Endpoint on macOS can be managed through a configuration profile that is deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. Changing the preferences that are set through the configuration profile requires escalated privileges and is not available for users without administrative permissions.
 
 This article describes the structure of the configuration profile, includes a recommended profile that you can use to get started, and provides instructions on how to deploy the profile.
 
@@ -192,7 +192,7 @@ Restricts the actions that the local user of a device can take when threats are 
 
 #### Threat type settings
 
-Specify how certain threat types are handled by Microsoft Defender for Endpoint for Mac.
+Specify how certain threat types are handled by Microsoft Defender for Endpoint on macOS.
 
 |||
 |:---|:---|
@@ -265,7 +265,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 ### Cloud-delivered protection preferences
 
-Configure the cloud-driven protection features of Microsoft Defender for Endpoint for Mac.
+Configure the cloud-driven protection features of Microsoft Defender for Endpoint on macOS.
 
 |||
 |:---|:---|
@@ -319,7 +319,7 @@ Determines whether security intelligence updates are installed automatically:
 
 ### User interface preferences
 
-Manage the preferences for the user interface of Microsoft Defender for Endpoint for Mac.
+Manage the preferences for the user interface of Microsoft Defender for Endpoint on macOS.
 
 |||
 |:---|:---|
@@ -353,7 +353,7 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 
 ### Endpoint detection and response preferences
 
-Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint for Mac.
+Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender for Endpoint on macOS.
 
 |||
 |:---|:---|
@@ -537,7 +537,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
 
 ## Full configuration profile example
 
-The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender for Endpoint for Mac.
+The following templates contain entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender for Endpoint on macOS.
 
 ### Property list for JAMF configuration profile
 

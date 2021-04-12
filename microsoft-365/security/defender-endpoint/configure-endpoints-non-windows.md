@@ -37,13 +37,13 @@ Defender for Endpoint provides a centralized security operations experience for 
 
 You'll need to know the exact Linux distros and macOS versions that are compatible with Defender for Endpoint for the integration to work. For more information, see:
 - [Microsoft Defender for Endpoint on Linux system requirements](microsoft-defender-endpoint-linux.md#system-requirements)  
-- [Microsoft Defender for Endpoint for Mac system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
+- [Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
 ## Onboarding non-Windows devices
 You'll need to take the following steps to onboard non-Windows devices:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).
+   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).
    - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
        
      1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
