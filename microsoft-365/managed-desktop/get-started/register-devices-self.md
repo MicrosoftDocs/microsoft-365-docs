@@ -126,3 +126,20 @@ The service monitors all Microsoft Managed Desktop devices daily and assigns the
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
+
+#### Delete devices by using the Admin Portal
+
+You can remove devices from being managed by Microsoft Managed Desktop, this will be permanent as soon as you delete the devices from the Admin Portal. Devices that have been removed from Microsoft Managed Desktop management can be registered again following the registration steps.
+
+Deleting the devices from Admin portal will :
+
+- Remove the devices from Autopilot
+- Remove the devices from Modern Workplace devices groups
+- Remove the devices from the Devices blade in the Admin Portal
+- Optional : Remove the Azure AD and Intune objects
+
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace,  choose the devices you want to delete, then select **Device actions**, then select **Delete Device** which opens a fly-in to remove the devices.
+In the fly-in pane, review the devices selected and then select **Remove devices**. If you would like to also remove the Azure AD and Intune objects while removing the devices from being managed by Microsoft Managed Desktop, check the box to remove the objects. Device deletion can take a few minutes to complete.
+
+> [!IMPORTANT]
+> Devices in pending registration state can't be removed.
