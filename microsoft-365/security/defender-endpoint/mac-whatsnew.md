@@ -1,6 +1,6 @@
 ---
-title: What's new in Microsoft Defender for Endpoint for Mac
-description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint for Mac.
+title: What's new in Microsoft Defender for Endpoint on Mac
+description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# What's new in Microsoft Defender for Endpoint for Mac
+# What's new in Microsoft Defender for Endpoint on Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.technology: mde
 
 ## 101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender for Endpoint for Mac is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Microsoft Defender for Endpoint on Mac is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
 
 ## 101.23.64 (20.121021.12364.0)
@@ -56,7 +56,7 @@ ms.technology: mde
 > [!NOTE]
 > The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac
 - Performance improvements & bug fixes
 
 ## 101.19.21 (20.120101.11921.0)
@@ -191,7 +191,7 @@ ms.technology: mde
 
 ## 100.79.42
 
-- Fixed an issue where Microsoft Defender for Endpoint for Mac was sometimes interfering with Time Machine
+- Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
   ```bash
   mdatp connectivity test
