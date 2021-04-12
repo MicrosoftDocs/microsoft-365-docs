@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Privacy for Microsoft Defender for Endpoint for Linux
+# Privacy for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ Microsoft is committed to providing you with the information and controls you ne
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
 
-## Overview of privacy controls in Microsoft Defender for Endpoint for Linux
+## Overview of privacy controls in Microsoft Defender for Endpoint on Linux
 
 This section describes the privacy controls for the different types of data collected by Defender for Endpoint for Linux.
 
