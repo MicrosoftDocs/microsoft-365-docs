@@ -39,7 +39,7 @@ At the top are your own modifications, such as network details or applications. 
 
 The following table summarizes the settings and their default values for each setting configured by device profiles. (Behind the scenes, these settings are configured with OMA-URIs by using Custom Configuration Profiles in Microsoft Endpoint Manager.)
 
-| **Feature​**                                                                                                                                              | **Sensitive Data​**        | **Power User​**        | **Standard​**     |
+| Feature | Sensitive Data | Power User | Standard |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|------------------------|-----------------------|
 | **Block External Storage​**                                                                                                                               | Yes​                       | Yes​                   | No​                   |
 | **[Cloud Block Level](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)​** | High​                      | High​                  | High​                 |
