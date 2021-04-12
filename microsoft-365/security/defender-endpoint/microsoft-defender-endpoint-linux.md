@@ -134,7 +134,7 @@ For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Micro
 
 ## How to update Microsoft Defender for Endpoint on Linux
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint on Linux, refer to [Deploy updates for Microsoft Defender for Endpoint for Linux](linux-updates.md).
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint on Linux, refer to [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md).
 
 ## How to configure Microsoft Defender for Endpoint on Linux
 
