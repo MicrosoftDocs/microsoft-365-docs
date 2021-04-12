@@ -144,9 +144,10 @@ Example:
 
    Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
 
-   - Disable = 0
-   - Block (enable ASR rule) = 1
-   - Audit = 2
+   - 0 : Disable (Disable the ASR rule)
+   - 1 : Block (Enable the ASR rule)
+   - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
+   - 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
    ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](/microsoft-365/security/defender-endpoint/images/asr-rules-gp)
 
