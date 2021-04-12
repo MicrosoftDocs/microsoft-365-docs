@@ -150,7 +150,7 @@ Example:
    - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
    - 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
-   ![Group policy setting showing a blank attack surface reduction rule ID and value of 1](/microsoft-365/security/defender-endpoint/images/asr-rules-gp)
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="ASR rules in Group Policy":::
 
 5. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
