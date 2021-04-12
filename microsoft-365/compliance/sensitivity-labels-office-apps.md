@@ -81,18 +81,22 @@ The numbers listed are the minimum Office application version required for each 
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | Under review                     | Under review                 | Under review         | Under review           | Under review               |
+|[Dynamic markings with variables](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions: <br /> - Do Not Forward](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | Under review | Under review  | Under review | Rolling out |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*</sup>                    | Under review            | Under review                | Yes                |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>2</sup>                    | Under review            | Under review                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | Under review           | Under review               | Yes |
+|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Under review                      | Rolling out: 16.43.1108+                   | Rolling out: 4.2111+           | Rolling out: 4.2111+               | Rolling out |
 |
 
-**Footnote:**
+**Footnotes:**
 
-<sup>\*</sup>
+<sup>1</sup>
+Currently, only the [Item.Label and If.App variables](#dynamic-markings-with-variables) are supported
+<br />
+<sup>2</sup>
 Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
@@ -116,7 +120,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have one of the Azure Information Protection clients installed ([unified labeling client](/azure/information-protection/rms-client/aip-clientv2) or [classic client](/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is turned off in their Office apps. 
+If users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2), by default, the built-in labeling client is turned off in their Office apps. 
 
 To use built-in labeling rather than the Azure Information Protection client for Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
@@ -129,6 +133,7 @@ For Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify 
 |PowerPoint     |   `MSIP.PowerPointAddin`      |
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
+
 
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
 
@@ -288,20 +293,20 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 ### Dynamic markings with variables
 
 > [!IMPORTANT]
-> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they  apply the markings as the original text specified in the label configuration, rather than resolving the variables.
+> Currently, not all apps on all platforms support dynamic content markings that you can specify for your headers, footers, and watermarks. For apps that don't support this capability, they apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
-> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The Azure Information Protection unified labeling client supports dynamic markings and all listed variables. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions, and then the following table to identify the variables supported.
 
 When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
 | Variable | Description | Example when label applied |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Label display name of the label applied| **General**|
-| `${Item.Name}` | File name or email subject of the content being labeled | **Sales.docx** |
-| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Display name of the user applying the label| **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Label display name of the label applied <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint, and Outlook | **General**|
+| `${Item.Name}` | File name or email subject of the content being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Path and file name of the document being labeled, or the email subject for an email being labeled <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Display name of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD user principal name (UPN) of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Date and time when the content is labeled, in the local time zone of the user applying the label <br /><br> Built-in labeling: Supported by Word, Excel, PowerPoint  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > The syntax for these variables is case-sensitive.
@@ -309,9 +314,6 @@ When you configure a sensitivity label for content markings, you can use the fol
 #### Setting different visual markings for Word, Excel, PowerPoint, and Outlook
 
 As an additional variable, you can configure visual markings per Office application type by using an "If.App" variable statement in the text string, and identify the application type by using the values **Word**, **Excel**, **PowerPoint**, or **Outlook**. You can also abbreviate these values, which is necessary if you want to specify more than one in the same If.App statement.
-
-> [!NOTE]
-> For completeness, instructions for Outlook are included, although currently supported only by the Azure Information Protection unified labeling client.
 
 Use the following syntax:
 
@@ -370,6 +372,57 @@ For guidance about when to use this setting, see the information about [policy s
 > If you use the default label policy setting for documents and emails in addition to mandatory labeling: 
 >
 > The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
+
+## Outlook-specific options for default label and mandatory labeling
+
+For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**.
+
+By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to emails as well as to documents.
+
+To apply different settings to emails, use PowerShell advanced settings:
+
+- **OutlookDefaultLabel**: Use this setting if you want Outlook to apply a different default label, or no label.
+
+- **DisableMandatoryInOutlook**: Use this setting if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
+
+For more information about configuring these settings by using PowerShell, see the next section.
+
+### PowerShell advanced settings OutlookDefaultLabel and DisableMandatoryInOutlook
+
+These settings are supported by using PowerShell with the *AdvancedSettings* parameter and the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) and [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell). Previously supported only by the Azure Information Protection unified labeling client, these two advanced settings are now supported for built-in labeling.
+
+PowerShell examples, where the label policy is named **Global**:
+
+- To exempt Outlook from a default label:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
+    ````
+
+- To exempt Outlook from mandatory labeling:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+    ````
+
+Currently, OutlookDefaultLabel and DisableMandatoryInOutlook are the only PowerShell advanced settings that are supported for both built-in labeling and the Azure Information Protection client.
+
+The other PowerShell advanced settings remain supported for the Azure Information Protection client only. For more information about using advanced settings for the Azure Information Protection client, see [Admin Guide: Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
+
+#### PowerShell tips for specifying the advanced settings
+
+To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+To remove either of these advanced settings from a label policy, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
+
+````powershell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
+````
+
 
 ## End-user documentation
 

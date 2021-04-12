@@ -2,8 +2,8 @@
 title: "Navigate and utilize the reports in Microsoft 365 usage analytics"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,14 +23,6 @@ description: "Learn how to view the reports using navigation tabs and filters."
 ---
 
 # Navigate and utilize the reports in Microsoft 365 usage analytics
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 The dashboard provides you with a quick overview of the main usage and adoption metrics. By selecting the top-level metrics, you can access reports that provide more details and insights. Each report tab contains data visualizations specific to an aspect of usage and adoption for your organization. The data collected is explained in the title of each report and a tile appears that contains further information about the visualizations on the report tab that you are viewing.
 

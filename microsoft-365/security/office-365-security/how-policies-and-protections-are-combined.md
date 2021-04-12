@@ -1,6 +1,6 @@
 ---
 title: Order and precedence of email protection
-keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender for Endpoint, Office 365 ATP, Azure ATP
 f1.keywords: 
   - NOCSH
 ms.author: chrisda

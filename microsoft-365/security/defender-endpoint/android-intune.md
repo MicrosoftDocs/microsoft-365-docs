@@ -1,7 +1,7 @@
 ---
-title: Deploy Microsoft Defender ATP for Android with Microsoft Intune
-description: Describes how to deploy Microsoft Defender ATP for Android with Microsoft Intune
-keywords: microsoft, defender, atp, android, installation, deploy, uninstallation,
+title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
+description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
+keywords: microsoft, defender, atp, mde, android, installation, deploy, uninstallation,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune 
+# Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -110,7 +109,7 @@ For more information on the enrollment options supported by Intune, see
 
 **Currently, Personally owned devices with work profile and Corporate-owned fully managed user device enrollments are supported for deployment.**
 
-## Add Microsoft Defender for Endpoint for Android as a Managed Google Play app
+## Add Microsoft Defender for Endpoint on Android as a Managed Google Play app
 
 Follow the steps below to add Microsoft Defender for Endpoint app into your managed Google Play.
 
@@ -271,7 +270,7 @@ The device configuration profile is now assigned to the selected user group.
 
 ## Complete onboarding and check status
 
-1. Confirm the installation status of Microsoft Defender for Endpoint for Android by
+1. Confirm the installation status of Microsoft Defender for Endpoint on Android by
 clicking on the **Device Install Status**. Verify that the device is
 displayed here.
 
@@ -296,5 +295,5 @@ by navigating to the **Devices** page.
 
 
 ## Related topics
-- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
-- [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
+- [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+- [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)

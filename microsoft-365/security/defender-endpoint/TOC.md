@@ -9,7 +9,7 @@
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
-### [Microsoft Defender for Endpoint for non-Windows platforms](non-windows.md)
+### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
@@ -85,6 +85,65 @@
 ##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 ##### [View attack surface reduction events](event-views.md)
 
+### Next-generation protection
+#### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+#### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+#### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
+#### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+#### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
+#### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
+##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
+##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+##### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
+##### [Configure scheduled quick or full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+
+#### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [Manage Microsoft Defender Antivirus for your organization](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Use Group Policy settings to manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
+##### [Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [Deploy and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
+##### [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Report on Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
+
+#### [Scans and remediation](review-scan-results-microsoft-defender-antivirus.md)
+##### [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
+##### [Run and review the results of a Microsoft Defender Offline scan](microsoft-defender-offline.md)
+##### [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Restore quarantined files in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Troubleshooting Microsoft Defender Antivirus
+##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
+##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
+##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
@@ -115,14 +174,16 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
-### [Microsoft Defender for Endpoint for Mac]()
-#### [Overview of Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+### [Network devices](network-devices.md)
+
+### [Microsoft Defender for Endpoint on macOS]()
+#### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 #### [What's New](mac-whatsnew.md)
 
 #### [Deploy]()
 ##### [Microsoft Intune-based deployment](mac-install-with-intune.md)
 ##### [JAMF Pro-based deployment]()
-###### [Deploying Microsoft Defender for Endpoint for macOS using Jamf Pro](mac-install-with-jamf.md)
+###### [Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro](mac-install-with-jamf.md)
 ###### [Login to Jamf Pro](mac-install-jamfpro-login.md)
 ###### [Set up device groups](mac-jamfpro-device-groups.md)
 ###### [Set up policies](mac-jamfpro-policies.md)
@@ -145,25 +206,26 @@
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](mac-support-install.md)
 ##### [Troubleshoot performance issues](mac-support-perf.md)
+##### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
 ##### [Troubleshoot kernel extension issues](mac-support-kext.md)
 ##### [Troubleshoot license issues](mac-support-license.md)
 
 #### [Privacy](mac-privacy.md)
 #### [Resources](mac-resources.md)
 
-### [Microsoft Defender for Endpoint for iOS]()
-#### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md)
+### [Microsoft Defender for Endpoint on iOS]()
+#### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](ios-configure-features.md)
 #### [Privacy](ios-privacy.md)
 
 
-### [Microsoft Defender for Endpoint for Linux]()
-#### [Overview of Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
+### [Microsoft Defender for Endpoint on Linux]()
+#### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 #### [What's New](linux-whatsnew.md)
 #### [Deploy]()
 ##### [Manual deployment](linux-install-manually.md)
@@ -177,7 +239,7 @@
 ##### [Static proxy configuration](linux-static-proxy-configuration.md)
 ##### [Set preferences](linux-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-##### [Schedule scans with Microsoft Defender for Endpoint for Linux](linux-schedule-scan-atp.md)
+##### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 #### [Troubleshoot]()
@@ -189,17 +251,17 @@
 #### [Privacy](linux-privacy.md)
 #### [Resources](linux-resources.md)
 
-### [Microsoft Defender for Endpoint for Android]()
-#### [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
+### [Microsoft Defender for Endpoint on Android]()
+#### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md)
+##### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 
 #### [Configure]()
-##### [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
+##### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
 
 #### [Privacy]()
-##### [Microsoft Defender for Endpoint for Android - Privacy information](android-privacy.md)
+##### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot issues](android-support-signin.md)
@@ -284,35 +346,8 @@
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](advanced-hunting-overview.md)
-#### [Learn, train, & get examples]()
-##### [Learn the query language](advanced-hunting-query-language.md)
-##### [Use shared queries](advanced-hunting-shared-queries.md)
-#### [Work with query results](advanced-hunting-query-results.md)
-#### [Optimize & handle errors]()
-##### [Apply query best practices](advanced-hunting-best-practices.md)
-##### [Handle errors](advanced-hunting-errors.md)
-##### [Service limits](advanced-hunting-limits.md)
-#### [Data schema]()
-##### [Understand the schema](advanced-hunting-schema-reference.md)
-##### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
-##### [DeviceFileEvents](advanced-hunting-devicefileevents-table.md)
-##### [DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)
-##### [DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)
-##### [DeviceInfo](advanced-hunting-deviceinfo-table.md)
-##### [DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)
-##### [DeviceEvents](advanced-hunting-deviceevents-table.md)
-##### [DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)
-##### [DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)
-##### [DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)
-##### [DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)
-##### [DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)
-##### [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)
-##### [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)
-##### [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)
-#### [Custom detections]()
-##### [Custom detections overview](overview-custom-detections.md)
-##### [Create detection rules](custom-detection-rules.md)
-##### [View & manage detection rules](custom-detections-manage.md)
+#### [Understand the schema](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
 
 ### [Microsoft Threat Experts](microsoft-threat-experts.md)
 
@@ -390,6 +425,7 @@
 ## Reference
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
+#### [API release notes](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
 ###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
@@ -585,7 +621,7 @@
 #### [Troubleshoot attack surface reduction issues]()
 ##### [Network protection](troubleshoot-np.md)
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
+##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
-# [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

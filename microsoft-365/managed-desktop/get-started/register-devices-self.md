@@ -1,12 +1,17 @@
 ---
 title: Register new devices yourself
 description: Register devices yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register new devices yourself
@@ -109,6 +114,11 @@ You can monitor the progress of device registration on the main page. Possible s
 If your device has come from a Microsoft Managed Desktop partner supplier, the image should be correct.
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+
+### Autopilot group tag
+
+When you use the Admin portal to register devices, we automatically assign the **Microsoft365Managed_Autopilot** Autopilot Group Tag.
+The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device
 
