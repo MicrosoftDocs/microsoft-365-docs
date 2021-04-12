@@ -1,5 +1,5 @@
 ---
-title: "Export Content Search results"
+title: "Export Content search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,17 +20,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content Search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
+description: "Export the search results from a Content search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Export Content Search results
+# Export Content search results
 
-After a Content Search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
+After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
-Exporting the results of a Content Search involves preparing the results, and then downloading them to a local computer.
+Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer.
   
-## Before you export content search results
+## Before you export search results
 
 - To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
@@ -52,7 +52,7 @@ Exporting the results of a Content Search involves preparing the results, and th
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- We recommend downloading search results to a local computer. However, to eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+- We recommend downloading search results to a local computer. To eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - To improve performance when downloading search results, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
   
@@ -81,11 +81,9 @@ Exporting the results of a Content Search involves preparing the results, and th
 
 The first step is to prepare the search results for exporting. When you prepare results, they are uploaded to a Microsoft-provided Azure Storage location in the Microsoft cloud. Content from mailboxes and sites is uploaded at a maximum rate of 2 GB per hour.
   
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to <https://compliance.microsoft.com> and sign in.
   
-2. Sign in using your work or school account.
-  
-3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
+2. In the left pane of the Microsoft 365 compliance center, click **Search** \> **Content search**.
   
 4. On the **Content search** page, select a search. 
   
@@ -102,7 +100,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
     - Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons
   
-    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content search](partially-indexed-items-in-content-search.md).
   
 7. Under **Export Exchange content as**, choose one of the following options:
   
@@ -226,7 +224,7 @@ For information about limits when exporting content search results, see the "Exp
   - **Trace Log** Contains detailed logging information about the export process and can help uncover issues during export.
   
     > [!NOTE]
-    > You can just export these documents without having to export the actual search results. See [Export a Content Search report](export-a-content-search-report.md). 
+    > You can just export these documents without having to export the actual search results. See [Export a Content search report](export-a-content-search-report.md). 
   
 ### Exporting partially indexed items
   
@@ -268,7 +266,7 @@ For information about limits when exporting content search results, see the "Exp
   
 ### Exporting results from more than 100,000 mailboxes
 
-- As previously explained, you have to use Security & Compliance Center PowerShell to download the search results from more than 100,000 mailboxes. You can run the following script in this section to download these search results. Using this script assumes that you have already exported the search results (the export job is displayed on the **Exports** tab in the Content Search tool) and now want to download them.
+- As previously explained, you have to use Security & Compliance Center PowerShell to download the search results from more than 100,000 mailboxes. You can run the following script in this section to download these search results. Using this script assumes that you have already exported the search results (the export job is displayed on the **Exports** tab in the Content search tool) and now want to download them.
 
    ```powershell
    $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
@@ -290,7 +288,7 @@ For information about limits when exporting content search results, see the "Exp
 
 ### Decrypting RMS-protected email messages and encrypted file attachments
 
-Any rights-protected (RMS-protected) email messages included in the results of a Content Search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will also be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
+Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will also be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
   
 - As previously explained, to decrypt RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages remain encrypted.
 
@@ -316,7 +314,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
     To help mitigate this issue, consider downloading search results to a location with a short path name; for example, downloading search results to a folder named  `C:\Results` would add fewer characters to the path names of exported items than downloading them to a folder named  `C:\Users\Admin\Desktop\Results`.
 
-- When you export site documents, it's also possible that the original file name of a document will be modified. This happens specifically for documents that have been deleted from a SharePoint or OneDrive for Business site that's been placed on hold. After a document that's on a site that's on hold is deleted, the deleted document is automatically moved to the Preservation Hold library for the site (which was created when the site was placed on hold). When the deleted document is moved to the Preservation Hold library, a randomly generated and unique ID is appended to the original filename of the document. For example, if the filename for a document is  `FY2017Budget.xlsx` and that document is later deleted and moved to the Preservation Hold library, the filename of the document that is moved to the Preservation Hold library is modified to something like  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. If a document in the Preservation Hold library matches the query of a Content Search and you export the results of that search, the exported file has the modified filename; in this example, the filename of the exported document would be  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
+- When you export site documents, it's also possible that the original file name of a document will be modified. This happens specifically for documents that have been deleted from a SharePoint or OneDrive for Business site that's been placed on hold. After a document that's on a site that's on hold is deleted, the deleted document is automatically moved to the Preservation Hold library for the site (which was created when the site was placed on hold). When the deleted document is moved to the Preservation Hold library, a randomly generated and unique ID is appended to the original filename of the document. For example, if the filename for a document is  `FY2017Budget.xlsx` and that document is later deleted and moved to the Preservation Hold library, the filename of the document that is moved to the Preservation Hold library is modified to something like  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. If a document in the Preservation Hold library matches the query of a Content search and you export the results of that search, the exported file has the modified filename; in this example, the filename of the exported document would be  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
 
     When a document on a site that's on hold is modified (and versioning for the document library in the site has been enabled), a copy of the file is automatically created in the Preservation Hold library. In this case, a randomly generated and unique ID is also appended to the filename of the document that's copied to the Preservation Hold library.
 
@@ -326,7 +324,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
   
 - When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location. To resolve this issue, retry [downloading the search results](#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
-- All search results and the export reports are included in a folder that has the same name as the Content Search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
+- All search results and the export reports are included in a folder that has the same name as the Content search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
 
 - The file system metadata for documents on SharePoint and OneDrive for Business sites is maintained when documents are exported to your local computer. That means document properties, such as created and last modified dates, aren't changed when documents are exported.
 
