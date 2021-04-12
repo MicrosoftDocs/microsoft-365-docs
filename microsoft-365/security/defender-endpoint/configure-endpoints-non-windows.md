@@ -43,16 +43,13 @@ You'll need to know the exact Linux distros and macOS versions that are compatib
 You'll need to take the following steps to onboard non-Windows devices:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).
+   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+
    - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
-       
-     1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
-
-        2. In the **Partner Applications** tab, select the partner that supports your non-Windows devices.
-
-        3. Select **Open partner page** to open the partner's page. Follow the instructions provided on the page.
-
-        4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it is aligned with the service that you require. 
+    1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.
+    2. In the **Partner Applications** tab, select the partner that supports your non-Windows devices.
+    3. Select **Open partner page** to open the partner's page. Follow the instructions provided on the page.
+    4. After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application. Read the permission request carefully to make sure that it is aligned with the service that you require. 
 
         
 2. Run a detection test by following the instructions of the third-party solution.
