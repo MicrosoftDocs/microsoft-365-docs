@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-#  Microsoft Defender for Endpoint for Android - Privacy information
+#  Microsoft Defender for Endpoint on Android - Privacy information
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

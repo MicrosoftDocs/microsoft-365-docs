@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Enroll Microsoft Defender for Endpoint for macOS devices into Jamf Pro 
+# Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

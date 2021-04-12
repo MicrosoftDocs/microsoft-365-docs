@@ -96,6 +96,6 @@ Guidance on how to configure Microsoft Defender for Endpoint on Android features
 
 
 ## Related topics
-- [Deploy Microsoft Defender for Endpoint for with Microsoft Intune](android-intune.md)
+- [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 - [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
 
