@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint for Linux
+title: Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -21,7 +21,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint for Linux
+# Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,12 +31,12 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
+This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint for Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
 
-## How to install Microsoft Defender for Endpoint for Linux
+## How to install Microsoft Defender for Endpoint on Linux
 
 ### Prerequisites
 
@@ -47,12 +47,12 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Installation instructions
 
-There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint for Linux.
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.
 
 In general you need to take the following steps:
 
 - Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).
-- Deploy Microsoft Defender for Endpoint for Linux using one of the following deployment methods:
+- Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
   - Third-party management tools:
