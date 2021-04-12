@@ -53,7 +53,7 @@ You'll need to take the following steps:
 
 10. [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
@@ -355,7 +355,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
-        ![Image of configuration settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Image of configuration profile settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`
@@ -702,7 +702,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
-        ![Image of configuration settings mdatpmdav](images/netext-create-profile.png)
+        ![Image of configuration setting mdatpmdav](images/netext-create-profile.png)
 
 3. Select the **Scope** tab.
 
