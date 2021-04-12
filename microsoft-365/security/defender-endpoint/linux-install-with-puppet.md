@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Deploy Microsoft Defender for Endpoint for Linux with Puppet
+# Deploy Microsoft Defender for Endpoint on Linux with Puppet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

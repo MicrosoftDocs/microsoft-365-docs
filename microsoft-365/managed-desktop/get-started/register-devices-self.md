@@ -117,6 +117,11 @@ If your device has come from a Microsoft Managed Desktop partner supplier, the i
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
+### Autopilot group tag
+
+When you use the Admin portal to register devices, we automatically assign the **Microsoft365Managed_Autopilot** Autopilot Group Tag.
+The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
+
 ### Deliver the device
 
 > [!IMPORTANT]
