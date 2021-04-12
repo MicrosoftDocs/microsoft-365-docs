@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Microsoft Defender ATP onboarding issues
-description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender ATP service.
+title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
+description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
