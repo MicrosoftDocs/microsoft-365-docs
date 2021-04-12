@@ -85,7 +85,7 @@ For more information about retention policies for Teams, see [Retention policies
 
 - When you select **Choose teams** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
 
-- When you select **Choose users for the Teams chats **location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+- When you select **Choose users for the Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 
 #### Additional retention policy needed to support Teams
