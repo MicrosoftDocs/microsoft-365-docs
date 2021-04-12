@@ -28,7 +28,7 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 ## All Azure AD roles
 
-Here's a list of all the admin roles available in the Microsoft 365 admin center. Looking for the detailed role descriptions of the Microsoft 365 admin roles? Check out [About admin roles](./about-admin-roles.md?view=o365-worldwide).
+Here's a list of all the admin roles available in the Microsoft 365 admin center. Looking for the detailed role descriptions of the Microsoft 365 admin roles? Check out [About admin roles](./about-admin-roles.md).
 
 |Admin role     |Description  |
 |---------|---------|
