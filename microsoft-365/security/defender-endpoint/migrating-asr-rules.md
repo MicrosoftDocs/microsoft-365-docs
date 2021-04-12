@@ -41,6 +41,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommended you use additional prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, several of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. Plus, the registry keys used require a minimum of Local Admin or Trusted Installer privileges to be able to be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
 ### Block untrusted programs from running from removable drives
+
 - **Applies to**- Untrusted Programs from USB
 - **Processes**- *
 - **Operation:- Process Execution
@@ -49,7 +50,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features:- Please explore additional controls for USB devices and other removable media using Microsoft Defender for Endpoint:[How to control USB devices and other removable media using Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
 ### Block Mshta from launching certain child processes
-- **Scope and Action**- Mshta
+
+- **Applies to**- Mshta
 - **Processes**- mshta.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes,Services**- powershell.exe, cmd.exe, regsvr32.exe
@@ -57,7 +59,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- Enable Windows Defender Application Control to prevent mshta.exe from being executed altogether. If your organization requires "mshta.exe" for line of business apps, configure a specific Windows Defender Exploit Protection rule, in order to prevent mshta.exe from launching child processes.
 
 ### Block Outlook from launching child processes
-- **Scope and Action**- Outlook
+
+- **Applies to**- Outlook
 - **Processes**- outlook.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes,Services**- powershell.exe
@@ -66,6 +69,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 
 
 ### Block Office Apps from launching child processes and from creating executable content
+
 - **Applies to**- Office  
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
@@ -74,6 +78,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- N/A
     
 ### Block Office Apps from launching child processes and from creating executable content
+
 - **Applies to**- Office
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
 - **Operation**- File Creation
@@ -81,6 +86,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Attack Surface Reduction rules**- N/A
 
 ### Block Wscript from reading certain types of files
+
 - **Applies to**- Wscript
 - **Processes**- wscript.exe
 - **Operation**- File Read
@@ -89,7 +95,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- Though there are specific ASR rules that mitigate certain attack vectors within these scenarios, it's important to mention that AV is able by default to inspect scripts (PowerShell, Windows Script Host, JavaScript, VBScript, and more) in real time, through the Antimalware Scan Interface (AMSI). More info is available here: Antimalware Scan Interface (AMSI).
 
 ### Block launch of child processes
-- **Scope and Action**- Adobe Acrobat
+
+- **Applies to**- Adobe Acrobat
 - **Processes**- AcroRd32.exe, Acrobat.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- cmd.exe, powershell.exe, wscript.exe
@@ -98,7 +105,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 
 
 ### Block download or creation of executable content
-- **Scope and Action**- CertUtil: Block download or creation of executable 
+
+- **Applies to**- CertUtil: Block download or creation of executable 
 - **Processes**- certutil.exe
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.exe
@@ -107,7 +115,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 
 
 ### Block processes from stopping critical System components
-- **Scope and Action**- All Processes
+
+- **Applies to**- All Processes
 - **Processes**- *
 - **Operation**- Process Termination
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, and more.
@@ -115,7 +124,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light, and System Guard.
 
 ### Block specific launch Process Attempt
-- **Scope and Action**- Specific Processes
+
+- **Applies to**- Specific Processes
 - **Processes**- "Name your Process"
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, and more
@@ -123,7 +133,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Other recommended features**- To prevent users from launching specific processes or programs, the recommendation would be to use Windows Defender Application Control. Microsoft Defender for Endpoint File and Cert indicators, can be used in an Incident Response scenario (should not be seen as an application control mechanism).
     
 ### Block unauthorized changes to MDATP AV configurations
-- **Scope and Action**- All Processes: Block unauthorized changes to MDATP AV configurations
+
+- **Applies to**- All Processes
 - **Processes**- *
 - **Operation**- Registry Modifications
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
