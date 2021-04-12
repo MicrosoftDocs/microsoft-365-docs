@@ -175,6 +175,12 @@ Example:
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
     ```
 
+    To enable ASR rules in warn mode, use the following cmdlet:
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
+    ```
+
     To turn off ASR rules, use the following cmdlet:
 
     ```PowerShell
