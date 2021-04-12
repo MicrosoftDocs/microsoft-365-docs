@@ -47,7 +47,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device.
 
-## How to install Microsoft Defender for Endpoint for Mac
+## How to install Microsoft Defender for Endpoint on Mac
 
 ### Prerequisites
 
