@@ -97,11 +97,12 @@ The following is a sample for reference, using [GUID values for ASR rules](attac
 
 `Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
 
-The values to enable, disable, or enable in audit mode are:
+The values to enable (Block), disable, warn, or enable in audit mode are:
 
-- Disable = 0
-- Block (enable ASR rule) = 1
-- Audit = 2
+- 0 : Disable (Disable the ASR rule)
+- 1 : Block (Enable the ASR rule)
+- 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
+- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.
 
