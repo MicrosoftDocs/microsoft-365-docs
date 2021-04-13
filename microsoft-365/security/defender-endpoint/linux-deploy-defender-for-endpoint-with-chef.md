@@ -1,8 +1,7 @@
 ---
 title: How to Deploy Defender for Endpoint on Linux with Chef
 description: Learn how to deploy Defender for Endpoint on Linux with Chef
-keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft 
-defender for endpoint (linux)
+keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -26,7 +25,7 @@ Before you begin:
 - Install unzip if it’s not already installed. 
 - You’ve already installed Chef and have already created a Chef repository (chef generate repo <reponame>) to store the cookbook that you’ll deploy to Defender for Endpoint.
 
-You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that resides in your chef repository:
+You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that is in your chef repository:
 `chef generate cookbook mdatp`
 
 This command will create a new folder structure for the new cookbook called mdatp.  You can also use an existing cookbook if you already have one you’d like to use to add the MDE deployment into.
@@ -36,9 +35,9 @@ After the cookbook is created, create a files folder inside the cookbook folder 
 
 Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender Security Center portal to this new files folder.
 
-On the Chef Workstation, navigate to the mdatp/recipes folder that was created when the cookbook was generated.  Use your preferred text editor (such as vi or nano) to add the following instructions to the end of the default.rb file:
+On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is created when the cookbook was generated. Use your preferred text editor (like vi or nano) to add the following instructions to the end of the default.rb file:
 -	include_recipe '::onboard_mdatp'
-- 	include_recipe '::install_mdatp'
+- include_recipe '::install_mdatp'
 
 Then save and close the default.rb file.
 Next create a new recipe file named install_mdatp.rb in the recipes folder and add this text to the file:
@@ -105,7 +104,7 @@ end
 Make sure to update the path name to the location of the onboarding file.
 To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mdatp``.
 After your deployment you should consider creating and deploying a configuration file to the servers based on  [Set preferences for Microsoft Defender ATP for Linux - Windows security | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
-After you have created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package.  Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
+After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package.  Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
 ``
 #Copy the configuration file
