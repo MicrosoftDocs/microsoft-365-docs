@@ -385,8 +385,12 @@
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
-            - name: Cisco Jabber
+            - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle (preview)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber on PostgreSQL (preview)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
