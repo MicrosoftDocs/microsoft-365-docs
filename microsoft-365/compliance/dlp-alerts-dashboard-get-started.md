@@ -56,6 +56,7 @@ The **content preview** feature is available only for these licenses:
 **Single-event alert configuration**: Organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription can create alert policies only where an alert is triggered every time an activity occurs.
 
 **Aggregated alert configuration**: To configure aggregate alert policies based on a threshold, you must one of these licensing configurations:
+
 - An E5 or G5 subscription
 - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
     - Office 365 Advanced Threat Protection Plan 2
@@ -87,7 +88,6 @@ To access the Content preview feature and the Matched sensitive content and cont
 - Content Explorer Content Viewer role group
 
 which has the data classification content viewer role pre-assigned.
-
 
 ## DLP alert configuration
 
@@ -133,9 +133,8 @@ To work with the DLP alert management dashboard:
 
 8. After you investigate the alert, return to the **Overview** tab where you can manage triage and manage the disposition of the alert and add comments.
 
-    -   To see the history of workflow management, choose **Management log**.
-    -   After you take the required action for the alert, set the status of the alert to **Resolved**.
-
+- To see the history of workflow management, choose **Management log**.
+- After you take the required action for the alert, set the status of the alert to **Resolved**.
 
 ## See also
 

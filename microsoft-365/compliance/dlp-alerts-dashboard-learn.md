@@ -31,6 +31,7 @@ When the criteria in a Data loss prevention (DLP) policy is matched by the actio
 ## Workloads
 
 The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), shows alerts for DLP policies on these workloads:
+
 - Exchange
 - SharePoint
 - OneDrive
