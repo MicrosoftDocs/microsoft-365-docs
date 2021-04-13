@@ -50,7 +50,7 @@ There are several ways to onboard a WVD host machine:
 #### *Scenario 1: Using local group policy*
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
 
-Use the instructions in [Onboard non-persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1.md).
+Use the instructions in [Onboard non-persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
 
 Follow the instructions for a single entry for each device.
 
@@ -58,15 +58,18 @@ Follow the instructions for a single entry for each device.
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
 **Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows Defender Security Center**
+
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)  
-    - In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
-    - Select Windows 10 as the operating system. 
-    - In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
-    - Click **Download package** and save the .zip file. 
+
+    1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Onboarding**. 
+    1. Select Windows 10 as the operating system. 
+    1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints. 
+    1. Click **Download package** and save the .zip file. 
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called **OptionalParamsPolicy** and the files **WindowsDefenderATPOnboardingScript.cmd** and **Onboard-NonPersistentMachine.ps1**.
 
 **Use Group Policy management console to run the script when the virtual machine starts**
+
 1. Open the Group Policy Management Console (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 2. In the Group Policy Management Editor, go to **Computer configuration** \> **Preferences** \> **Control panel settings**. 
@@ -91,7 +94,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager.
 
-For more information, see: [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md) 
+For more information, see [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
 > If you plan to use [Attack Surface reduction Rules](attack-surface-reduction.md), note that the rule “[Block process creations originating from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly. 
