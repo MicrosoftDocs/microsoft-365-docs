@@ -135,7 +135,7 @@ See the next section for instructions to download the exported search results.
 
 The next step is to download the search results from the Azure Storage location to your local computer.
   
-1. On the **Content search** page, click the **Exports** tab. 
+1. On the **Content search** page, select the **Exports** tab
   
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
   
@@ -143,7 +143,7 @@ The next step is to download the search results from the Azure Storage location 
 
 3. On the flyout page under **Export key**, click **Copy to clipboard**. You use this key in step 6 to download the search results.
   
-4. Click **Download results**.
+4. At the top of the flyout page, click **Download results**.
 
 5. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
 

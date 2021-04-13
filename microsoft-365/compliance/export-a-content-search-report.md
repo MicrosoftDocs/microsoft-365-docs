@@ -32,7 +32,7 @@ When you export a report, it's downloaded to a folder that has the same name as 
 
 ## Assign roles and check system requirements
 
-- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export a Content Search report, you have to be assigned the Compliance Search management role in Security & Compliance Center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - When you export a report, the data is temporarily stored in a unique Azure Storage area in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage area two weeks after it's created.
 
@@ -56,29 +56,42 @@ When you export a report, it's downloaded to a folder that has the same name as 
 
 - If the estimated total size of the results returned by a Content Search exceeds 2 TB, exporting the report fails. To successfully export the report, try to narrow the scope and rerun the search so the estimated size of the results is less than 2 TB.
 
-- Exporting Content Search reports counts against the maximum number of exports running at the same time and the maximum number of exports that a single user can run. For more information about export limits, see [Export Content Search results](export-search-results.md#export-limits).
+- If the results of a Content search are older than 7 days and you submit an export report job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
 
-## Generate and download a Content Search report
+- Exporting Content search reports counts against the maximum number of exports running at the same time and the maximum number of exports that a single user can run. For more information about export limits, see [Export Content Search results](export-search-results.md#export-limits).
 
-The steps to generate and download a Content Search report are similar to actually exporting search results.
+## Generate and download a search report
+
+The steps to generate and download a Content search report are similar to exporting actual search results.
   
 ## Step 1: Generate the report for export
 
-The first step is to prepare the report for downloading to your computer exporting. When you the report, the report documents are uploaded to an Azure Storage area in the Microsoft cloud.
+The first step is to prepare the report for downloading to your computer exporting. When you export the report, the report documents are uploaded to an Azure Storage area in the Microsoft cloud.
   
-1. Go to [https://protection.office.com](https://protection.office.com).
-    
-2. Sign in using your work or school account.
-    
-3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
-    
-4. On the **Content search** page, select a search. 
-    
-5. In the details pane, under **Export report to a computer**, click **Generate report**.
-    
-    > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the report export again after the results are updated. 
+1. In the Microsoft 365 compliance center, select the content search that you want to export the report from.
   
+2. On the **Actions** menu at the bottom of the flyout page, click **Export report**.
+
+   ![Export report option in Actions menu](../media/ActionMenuExportReport.png)
+
+   The **Export report** flyout page is displayed. The export report options available to export information about the search depend on whether search results are located in mailboxes or sites or a combination of both.
+  
+3. Under **Output options**, choose one of the following options:
+  
+   ![Export output options](../media/ExportOutputOptions.png)
+
+    - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option only exports information about indexed items.
+  
+    - **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports information about indexed and unindexed items.
+  
+    - **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**. This option only exports information about unindexed items.
+
+4. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
+  
+      If you select this option, only one copy of a message will be exported even if multiple copies of the same message are found in the mailboxes that were searched. The export results report (which is a file named Results.csv) will contain a row for every copy of a duplicate message so that you can identify the mailboxes (or public folders) that contain a copy of the duplicate message. For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
+
+
+
 6. On the **Export a report** page, under **Include these items from the search**, choose one of the following options:
     
     - Export only indexed items
@@ -96,7 +109,7 @@ The first step is to prepare the report for downloading to your computer exporti
     The search results report is prepared for downloading, which means the report documents will be uploaded to the Azure Storage area in the Microsoft cloud. When the report is ready for download, the **Download report** link is displayed under **Export report to a computer** in the details pane. 
     
 > [!NOTE]
-> You can also export a report for a Content Search that's associated with an eDiscovery case. To do this, go to **eDiscovery** \> **eDiscovery**, select a case, and click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Searches** page, select a search, and then click **Export** ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **Export a report**. 
+> You can also export a report for a search that's associated with a Core eDiscovery case. To do this, go to **eDiscovery** \> **Core** in the Microsoft 365 compliance center, select a case, and click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Searches** page, select a search, and then click **Export** ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **Export a report**. 
   
 ## Step 2: Download the report
 
@@ -168,6 +181,6 @@ When you generate and export a report about the results of a Content Search, the
   - The name of the document (which is located in the Subject column in the result log).
     
     > [!NOTE]
-    > The number of rows in the **Results** report should be equal to the total number of search results minus the total number of items listed in the **Unindexed Items** report. 
+    > The number of rows in the **Results** report should be equal to the total number of search results minus the total number of items listed in the **Unindexed Items** report.
   
 - **Unindexed Items:** An Excel document that contains information about any unindexed items included in the search results. If you don't include unindexed items when you generate the search results report, this report will still be downloaded, but will be empty.
