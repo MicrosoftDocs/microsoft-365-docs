@@ -15,6 +15,8 @@ ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.audience: ITPro
+ms.topic: how-to
 ---
 
 # Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus
