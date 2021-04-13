@@ -40,7 +40,7 @@ You can customize the list of devices that are used to perform standard discover
 
 > [!IMPORTANT]
 > For preview, you'll first need to turn on the Preview features in Microsoft Defender Security Center.
-> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft Defender Security Center and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center 365 security center.
+> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft Defender Security Center and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center.
 
 
 Take the following configuration steps in Microsoft 365 security center:
@@ -100,3 +100,4 @@ Choosing the initial discovery classification means applying the default system-
 
 ## See also
 - [Device discovery overview](device-discovery.md)
+- [Device discovery FAQs](device-discovery-faq.md)
