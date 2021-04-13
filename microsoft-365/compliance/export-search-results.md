@@ -36,7 +36,7 @@ Exporting the results of a Content search involves preparing the results, and th
 
 - The computer you use to export the search results has to meet the following system requirements:
   
-  - 32-bit or 64-bit versions of Windows 7 and later versions
+  - Latest version of Windows (32-bit or 64-bit)
   
   - Microsoft .NET Framework 4.7
   
@@ -77,7 +77,7 @@ Exporting the results of a Content search involves preparing the results, and th
     </system.net>
     ```
 
-- If the results for a Content search are older than 7 days and you submit an export job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
+- If the results of a Content search are older than 7 days and you submit an export job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
 
 ## Step 1: Prepare search results for export
 
@@ -87,46 +87,47 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 2. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
 
-   The **Export results** flyout page is displayed. The export options that are available to export content depend on whether search results are located in mailboxes or sites or a combination of both.
+   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+
+   The **Export results** flyout page is displayed. The export options available to export content depend on whether search results are located in mailboxes or sites or a combination of both.
 
 3. Under **Output options**, choose one of the following options:
   
-    - All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons. This option exports only indexed items.
+   ![Export output options](../media/ExportOutputOptions.png)
+
+    - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only indexed items.
   
-    - All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons. This option exports only indexed and unindexed items.
+    - **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports indexed and unindexed items.
   
-    - Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons. This option exports only unindexed items.
+    - **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only unindexed items.
 
       See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content search](partially-indexed-items-in-content-search.md).
 
 4. Under **Export Exchange content as**, choose one of the following options:
   
-    - **One PST file for each mailbox:** Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
-  
-    - **One PST file containing all messages:** Exports a single PST file (named *Exchange.pst*) that contains the search results from all source mailboxes included in the search. This option reproduces the mailbox folder structure for each message.
-  
-    - **One PST file containing all messages in a single folder:** Exports search results to a single PST file where all messages are located in a single, top-level folder. This option lets reviewers review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item.
-  
-    - **Individual messages:** Exports search results as individual email messages, using the .msg format. If you select this option, email search results are exported to a folder in the file system. The folder path for individual messages is the same as the one used if you exported the results to PST files.
+   ![Exchange options](../media/ExchangeExportOptions.png)
 
+    - **One PST file for each mailbox**: Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
+  
+    - **One PST file containing all messages**: Exports a single PST file (named *Exchange.pst*) that contains the search results from all source mailboxes included in the search. This option reproduces the mailbox folder structure for each message.
+  
+    - **One PST file containing all messages in a single folder**: Exports search results to a single PST file where all messages are located in a single, top-level folder. This option lets reviewers review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item.
+  
+    - **Individual messages**: Exports search results as individual email messages, using the .msg format. If you select this option, email search results are exported to a folder in the file system. The folder path for individual messages is the same as the one used if you exported the results to a PST file.
+  
+5. Configure the following additional options:
 
+   ![Exchange options](../media/OtherExportOptions.png)
 
-
+   1. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
   
-
+      If you select this option, only one copy of a message will be exported even if multiple copies of the same message are found in the mailboxes that were searched. The export results report (which is a file named Results.csv) will contain a row for every copy of a duplicate message so that you can identify the mailboxes (or public folders) that contain a copy of the duplicate message. For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
   
+   2. Select the **Include versions for SharePoint files** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites.
   
-      
+   3. Select the **Export files in a compressed (zipped) folder. Includes only individual messages and SharePoint documents** checkbox to export search results to compressed folders. This option appears only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section.
   
-5. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
-  
-    If you select this option, only one copy of a message will be exported even if multiple copies of the same message are found in the mailboxes that were searched. The export results report (which is a file named Results.csv) will contain a row for every copy of a duplicate message so that you can identify the mailboxes (or public folders) that contain a copy of the duplicate message. For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
-  
-6. Select the **Include versions for SharePoint files** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites. 
-  
-7. Select the **Export files in a compressed (zipped) folder. Includes only individual messages and SharePoint documents** checkbox to export search results to compressed folders. This option is available only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section.
-  
-8. Click **Export** to start the export process. The search results are prepared for downloading, which means they're collected from the original content locations and then uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
+6. Click **Export** to start the export process. The search results are prepared for downloading, which means they're collected from the original content locations and then uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
 
 See the next section for instructions to download the exported search results.
   
