@@ -40,16 +40,16 @@ You can get the trial version from one of the following sources:
 
 - The [SharePoint Syntex product page](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
-> [!NOTE]
-> This trial must be added to an existing tenant. If a tenant isn't available, you can generate a trial tenant through [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/office-365-e3?activetab=pivot:overviewtab) or [Microsoft 365 E5 licensing](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab) licensing.
+  > [!NOTE]
+  > This trial must be added to an existing tenant. If a tenant isn't available, you can generate a trial tenant through [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/office-365-e3?activetab=pivot:overviewtab) or [Microsoft 365 E5 licensing](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab) licensing.
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
-        1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-        2.	Navigate to **Billing** > **Purchase Services**.
-        3.	Scroll down to the **Add-Ons** section.
-        4.	On the SharePoint Syntex tile, select **Details**.
-        5.	Select **Get free trial**.
-        6.	To confirm the trial, follow the remaining wizard steps.
+    1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+    2.	Navigate to **Billing** > **Purchase Services**.
+    3.	Scroll down to the **Add-Ons** section.
+    4.	On the SharePoint Syntex tile, select **Details**.
+    5.	Select **Get free trial**.
+    6.	To confirm the trial, follow the remaining wizard steps.
 
 A user must be a Microsoft 365 global administrator or billing administrator to activate a trial.
 
