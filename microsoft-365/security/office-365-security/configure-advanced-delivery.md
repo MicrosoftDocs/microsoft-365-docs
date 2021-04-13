@@ -59,7 +59,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Advanced delivery** page, open https://protection.office.com/advanceddelivery
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Advanced delivery** page, open <https://protection.office.com/advanceddelivery>.
 
 - You need to be assigned permissions before you can do the procedures in this article:
   - To create, modify, or remove configured settings in the advanced delivery policy, you need to be a member of the **Security Administrator** role group in the **Security & Compliance Center** and a member of the **Organization Management** role group in **Exchange Online**.  
