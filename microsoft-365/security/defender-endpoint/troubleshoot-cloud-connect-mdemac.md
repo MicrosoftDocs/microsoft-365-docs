@@ -34,7 +34,7 @@ macOS
 This topic describes how to Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS.
 
 ## Run the connectivity test
-To test if Defender for Endpoint for Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:
+To test if Defender for Endpoint on Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```Bash
 mdatp connectivity test
