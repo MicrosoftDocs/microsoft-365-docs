@@ -95,15 +95,15 @@ Here is the typical workflow for responding to incidents:
 
 As you investigate, you should be concerned with:
 
-- Reducing any additional impact on your tenant (containment).
-- Removing the security threat (eradication).
-- Restoring your tenant resources to the state they were in before the attack (recovery).
+- Containment: Reducing any additional impact on your tenant.
+- Eradication: Removing the security threat.
+- Recovery: Restoring your tenant resources to the state they were in before the attack.
 
 After you resolve the incident, take a moment to learn from it to:
 
 - Understand the type of the attack and its impact.
 - Research the attack in the security community for a security attack trend.
-- Recount the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
+- Recall the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
 
 Here's a summary of the basic process.
 
