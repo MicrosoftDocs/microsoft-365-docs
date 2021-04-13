@@ -270,7 +270,7 @@ The device configuration profile is now assigned to the selected user group.
 
 ## Complete onboarding and check status
 
-1. Confirm the installation status of Microsoft Defender for Endpoint for Android by
+1. Confirm the installation status of Microsoft Defender for Endpoint on Android by
 clicking on the **Device Install Status**. Verify that the device is
 displayed here.
 
@@ -295,5 +295,5 @@ by navigating to the **Devices** page.
 
 
 ## Related topics
-- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
-- [Configure Microsoft Defender for Endpoint for Android features](android-configure.md)
+- [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+- [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
