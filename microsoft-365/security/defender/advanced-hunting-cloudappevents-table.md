@@ -71,12 +71,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 - Dropbox
 - Dynamics 365
 - Exchange Online
+- Microsoft Teams
 - OneDrive for Business
 - Power Automate
 - Power BI
 - SharePoint Online
 - Skype for Business
-- Microsoft Teams
 - Office 365
 - Yammer 
 
