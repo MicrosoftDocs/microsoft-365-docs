@@ -45,7 +45,7 @@ You can start by selecting the incident from the check mark column. Here's an ex
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column":::
 
-When you do, a summary pane opens with key information about the incident, such as severity, who it is assigned to, and the MITRE ATT&CK categories for the incident. Here's an example.
+When you do, a summary pane opens with key information about the incident, such as severity, who it is assigned to, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident":::
 
@@ -55,9 +55,9 @@ You can also open the main page for an incident by selecting the incident name f
 
 ## Incident overview
 
-The overview page gives you a snapshot glance at the top things to notice about the incident.
+The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-![Image of the incidents overview page](../../media/incidents-overview.png)
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
 The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.
 
