@@ -28,8 +28,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Applies to**- All processes
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
-- **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension is not always useful, as it does not prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, many of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges to be able to be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
+- **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, as it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
+- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, many of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
 ### Block creation of specific files and registry keys
 
@@ -37,8 +37,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- N/A
 - **Operation**- Registry Modifications
 - **Examples of Files/Folders, Registry Keys/Values, Processes,Services**- *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs*\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
-- **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension is not always useful, because it does not prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use additional prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, several of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges to be able to be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
+- **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, because it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
+- **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use additional prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, several of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
 ### Block untrusted programs from running from removable drives
 
@@ -91,7 +91,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- wscript.exe
 - **Operation**- File Read
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- C:\Users*\AppData**.js, C:\Users*\Downloads**.js
-- **Attack Surface Reduction rules**- Due to reliability and performance issues, ASR rules do not have the capability to prevent a specific process from reading a certain script file type. We do have a rule to prevent attack vectors that might originate from these scenarios. The rule name is "Block JavaScript or VBScript from launching downloaded executable content" (GUID "D3E037E1-3EB8-44C8-A917-57927947596D") and the "Block execution of potentially obfuscated scripts" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC").
+- **Attack Surface Reduction rules**- Due to reliability and performance issues, ASR rules don't have the capability to prevent a specific process from reading a certain script file type. We do have a rule to prevent attack vectors that might originate from these scenarios. The rule name is "Block JavaScript or VBScript from launching downloaded executable content" (GUID "D3E037E1-3EB8-44C8-A917-57927947596D") and the "Block execution of potentially obfuscated scripts" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC").
 - **Other recommended features**- Though there are specific ASR rules that mitigate certain attack vectors within these scenarios, it's important to mention that AV is able by default to inspect scripts (PowerShell, Windows Script Host, JavaScript, VBScript, and more) in real time, through the Antimalware Scan Interface (AMSI). More info is available here: [Antimalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal).
 
 ### Block launch of child processes
@@ -110,7 +110,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- certutil.exe
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.exe
-- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they are a part of Microsoft Defender Antivirus protection.
+- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're a part of Microsoft Defender Antivirus protection.
 - **Other recommended features**- Microsoft Defender AV prevents CertUtil from creating or downloading executable content.
 
 
@@ -120,7 +120,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- *
 - **Operation**- Process Termination
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, and more.
-- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they are protected with Windows 10 built-in security protections.
+- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're protected with Windows 10 built-in security protections.
 - **Other recommended features**- ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light, and System Guard.
 
 ### Block specific launch Process Attempt
@@ -130,15 +130,15 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, and more
 - **Attack Surface Reduction rules**- Overall, ASR rules aren't designed to function as an Application manager.
-- **Other recommended features**- To prevent users from launching specific processes or programs, it is recommended to use Windows Defender Application Control. Microsoft Defender for Endpoint File and Cert indicators, can be used in an Incident Response scenario (should not be seen as an application control mechanism).
+- **Other recommended features**- To prevent users from launching specific processes or programs, it's recommended to use Windows Defender Application Control. Microsoft Defender for Endpoint File and Cert indicators, can be used in an Incident Response scenario (shouldn't be seen as an application control mechanism).
     
 ### Block unauthorized changes to MDATP AV configurations
 
 - **Applies to**- All Processes
 - **Processes**- *
 - **Operation**- Registry Modifications
-- **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
-- **Attack Surface Reduction rules**- ASR rules don't cover these scenarios because they are part of the Microsoft Defender for Endpoint built-in protection.
+- **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, and so on.
+- **Attack Surface Reduction rules**- ASR rules don't cover these scenarios because they're part of the Microsoft Defender for Endpoint built-in protection.
 - **Other recommended features**- Tamper Protection (opt-in, managed from Intune) prevents unauthorized changes to DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring and DisableIOAVProtection registry keys (and more).
 
 See also
