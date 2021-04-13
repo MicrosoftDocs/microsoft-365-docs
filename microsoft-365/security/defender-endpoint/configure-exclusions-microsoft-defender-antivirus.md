@@ -1,5 +1,5 @@
 ---
-title: Set up exclusions for Microsoft Defender AV scans
+title: Set up exclusions for Microsoft Defender Antivirus scans
 description: You can exclude files (including files modified by specified processes) and folders from being scanned by Microsoft Defender AV. Validate your exclusions with PowerShell.
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -10,9 +10,11 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
+ms.audience: ITPro
+ms.topic: how-to
 ---
 
 # Configure and validate exclusions for Microsoft Defender Antivirus scans
