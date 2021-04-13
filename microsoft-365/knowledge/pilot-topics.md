@@ -34,8 +34,8 @@ Trials are publicly available from one of the following sources. These trials of
 
 - The [Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
-> [!NOTE]
-> This trial must be added to an existing tenant. If a tenant isn't available, you can generate a trial tenant through [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/office-365-e3?activetab=pivot:overviewtab) or [Microsoft 365 E5 licensing](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab) licensing.
+  > [!NOTE]
+  > This trial must be added to an existing tenant. If a tenant isn't available, you can generate a trial tenant through [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/office-365-e3?activetab=pivot:overviewtab) or [Microsoft 365 E5 licensing](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab) licensing.
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
