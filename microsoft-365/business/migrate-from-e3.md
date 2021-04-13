@@ -55,7 +55,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Information protection**        | | |
 |Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business Premium](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, BitLocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](../media/check-mark.png)|
