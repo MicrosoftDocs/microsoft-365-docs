@@ -631,4 +631,4 @@
 ##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender for Office 365](../office-365-security/overview.md)
+# [Defender for Office 365](../office-365-security/index.yml)
