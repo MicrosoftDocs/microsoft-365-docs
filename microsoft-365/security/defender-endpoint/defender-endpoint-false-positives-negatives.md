@@ -177,7 +177,7 @@ device where the file was quarantined.
 
 2. Enter the following command, and press **Enter**:
 
-    ```powershell
+    ```console
     “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
     ```
 
