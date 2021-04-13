@@ -53,7 +53,7 @@ From here, you can select **Open incident page**. This opens the main page for t
 
 You can also open the main page for an incident by selecting the incident name from the incident queue.
 
-## Incident overview
+## Summary
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
