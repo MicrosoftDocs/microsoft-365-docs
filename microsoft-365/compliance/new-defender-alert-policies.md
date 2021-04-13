@@ -28,7 +28,7 @@ Microsoft Defender for Office 365 is introducing new and improved alert policies
 
 We'll be introducing four new default alert policies related to post-delivery detections after the Microsoft Defender for Office 365 Zero-hour auto purge (ZAP) removes messages from an inbox. These four new alert policies will replace two existing default alert policies that cover ZAP scenarios and will provide organizations enhanced details about the underlying detection and related indicators. These alerts (and the AIR playbooks that will be triggered from these alerts) will accurately capture the threats of the emails and entities, including if the URL points to a malicious file or if the file contains a malicious URL.
 
-The following table lists the new alert policies and the existing alert policies that will be removed. Please see the [How this will affect your organization](#how-this-will-affect-your-organization) section for details about the rollout.
+The following table lists the new alert policies and the existing alert policies that will be removed. See the [How this will affect your organization](#how-this-will-affect-your-organization) section for details about the rollout.
 
 | New or existing alert policy | Alert policy name | Alert policy ID|
 |:-----------------------------|:----------------|:--------------|
@@ -72,7 +72,7 @@ The alert severity changes will be rolled out to all organizations by April 30, 
 
 ## How this will affect your organization
 
-The new alerts will begin firing, as well as triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you will see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and April 30, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation as well as correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
+The new alerts will begin firing, and triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you will see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and April 30, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation and correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
 
 - **Alerts**: By design, you will see the following alert pairs across the existing and new alerts:
 
@@ -80,17 +80,17 @@ The new alerts will begin firing, as well as triggering the AIR investigations i
 
   - **Email messages containing malware removed after delivery** AND **Email messages containing malicious file removed after delivery**
 
-first graphic here
+  ![Alert pairs for new and existing alerts](../media/DefenderAlerts.png)
 
    For more information about managing these alert pairs, see the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.
 
 - **AIR Investigations**: Alerts will be correlated into a single AIR Investigation, with one of the alerts classified as "triggering" and the other as "repeated".
 
-second graphic here
+  ![Alert pairs in AIR Investigations](../media/AIRAlerts.png)
 
 - **Incidents**: Both alerts will correlate into the same Incident
 
-third graphic here
+  ![Alert pairs in Incidents](../media/IncidentsAlerts.png)
 
 ## What you need to do to prepare for these changes
 
