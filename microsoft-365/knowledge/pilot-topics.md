@@ -3,6 +3,7 @@ title: "Run a pilot for Microsoft Viva Topics"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 ms.date: 
 audience: admin
 ms.topic: article
@@ -68,11 +69,11 @@ Planning is essential for an effective trial of Viva Topics. The trial period is
 
 There are two high-level strategy options for configuration of topic discovery during a trial:
 
-- Index all or the majority of your SharePoint Online content
+- Index all or the majority of your SharePoint Online content.
     - Large tenants can take up to two weeks to fully index. While topics will be generated incrementally throughout this period, full indexing could consume up to half the trial period.
     - For tenants with a significant volume of data, this option can produce a very large number of topics, perhaps tens of thousands.
 
-- Identify a subset of your SharePoint sites for indexing
+- Identify a subset of your SharePoint sites for indexing.
 
 The choice of these strategies is a balance of the following two factors:
 
