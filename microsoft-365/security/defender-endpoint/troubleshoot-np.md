@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Troubleshoot network protection
