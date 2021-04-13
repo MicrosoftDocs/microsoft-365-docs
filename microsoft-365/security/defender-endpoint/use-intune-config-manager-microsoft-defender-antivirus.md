@@ -15,6 +15,8 @@ ms.date: 10/26/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+audience: ITPro
+ms.topic: how-to
 ---
 
 # Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus
