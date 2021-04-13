@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set up Microsoft Defender for Endpoint for macOS device groups in Jamf Pro
+# Set up Microsoft Defender for Endpoint on macOS device groups in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,4 +47,4 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
     ![Image of Jamf Pro3](images/contoso-machine-group.png)
 
 ## Next step
-- [Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro](mac-jamfpro-policies.md)
+- [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)
