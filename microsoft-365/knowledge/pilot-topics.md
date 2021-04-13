@@ -111,7 +111,7 @@ There will always be a need for a mixture of AI-defined and human-created topics
 When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
-- Perform [additional setup](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences) of Viva Topics.
+- Perform [additional setup](set-up-topic-experiences) of Viva Topics.
 
 When the trial is activated, the topic discovery process begins.
 
@@ -146,5 +146,7 @@ If you don’t purchase licenses following the trial:
 - Any AI-defined topics will be lost.
 - Topics that have been edited by a topic contributor will remain in the topic center pages library. Note that only the manually provided content will remain on these pages, not any AI-suggested content.
 
+## See also
 
+[Get started driving adoption of Microsoft Viva Topics](topics-adoption-getstarted)
 
