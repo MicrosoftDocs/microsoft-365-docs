@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure and validate exclusions for Microsoft Defender for Endpoint for Linux
+# Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
