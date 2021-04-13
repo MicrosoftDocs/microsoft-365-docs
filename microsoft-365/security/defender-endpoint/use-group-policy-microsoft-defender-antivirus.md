@@ -14,6 +14,8 @@ ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
+ms.audience: ITPro
+ms.topic: how-to
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus
