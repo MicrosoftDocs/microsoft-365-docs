@@ -49,7 +49,7 @@ There are several ways to onboard a WVD host machine:
 #### *Scenario 1: Using local group policy*
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
 
-Use the instructions in [Onboard non-persistent virtual desktop infrastructure VDI devices](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
+Use the instructions in [Onboard non-persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
 
 Follow the instructions for a single entry for each device.
 
