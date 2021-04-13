@@ -23,11 +23,11 @@ description: "Manage feedback your users can send to Microsoft about Microsoft p
 
 # Manage Microsoft feedback for your organization
 
-As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users will soon be available in the Microsoft 365 admin center.”
+As the admin of a Microsoft 365 organization, there are now several policies to help you manage the feedback collection and the customer engagement experience of your users when using Microsoft 365 applications. You can create and use existing Azure Active directory groups in your organization for each of these policies. With these polices, you can control how different departments in your organization can send feedback to Microsoft. Microsoft reviews all feedback submitted by customers and uses this feedback to improve the product. Keeping the feedback experiences turned **On** allows you to see what your users are saying about the Microsoft products they're using. The feedback we collect from your users will soon be available in the Microsoft 365 admin center.
 
 To learn more about the types of feedback and how Microsoft uses user feedback, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
-The table below represents which apps and services are currently connected to the feedback policies shown in the feedback policies table below.
+The table below represents which apps and services are currently connected to the feedback policies shown in the feedback policies table below. See below the table for screenshot examples.
 
 |**Apps & Services**|**In-product feedback** <br> |**In-product surveys** <br> |**Metadata collection** <br> |**Customer engagement** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -46,15 +46,7 @@ The table below represents which apps and services are currently connected to th
 |**Visio**|Yes|Yes|Yes|Yes|
 |**Yammer**|Yes|Yes|Yes|Yes|
 
-Here's some examples of product feedback.
-
-**In-product feedback**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-product help example":::
-
-**In-product surveys**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Microsoft app in-product survey example":::
+[See here for some examples of in-product surveys and feedback.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **Metadata collection**
 
