@@ -164,7 +164,7 @@ Example retention outcome if the user doesn't edit or delete the message:
 - Day 9 (typically 1-7 days after a minimum of 1 day in the SubstrateHolds folder):
     - The message is permanently deleted and then won't be returned with eDiscovery searches.
 
-As this example shows, although you can configure a retention policy to delete messages after just one day, the service undergoes multiple processes to ensure a compliant deletion. A delete action after 1 day could take 18 days before the message is permanently deleted so that it's no longer returned in eDiscovery searches.
+As this example shows, although you can configure a retention policy to delete messages after just one day, the service undergoes multiple processes to ensure a compliant deletion. As a result, a delete action after 1 day could take 18 days before the message is permanently deleted so that it's no longer returned in eDiscovery searches.
 
 ## Skype for Business and Teams interop chats
 
