@@ -11,8 +11,7 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: 
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ---
@@ -21,11 +20,11 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -98,9 +97,29 @@ When you report a problem with network protection, you are asked to collect and 
    mpcmdrun -getfiles
    ```
 
-3. By default, they are saved to C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Attach the file to the submission form.
+3. Attach the file to the submission form. By default, diagnostic logs are saved at `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. 
 
-## Related topics
+## Resolve connectivity issues with network protection (for E5 customers)
+
+Due to the environment where network protection runs, Microsoft is unable to see your operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve connectivity issues with network protection, take the following steps:
+ 
+1.	Copy the proxy configuration from the currently logged in user to `LOCAL_SERVICE`. To do this step, open PowerShell with elevated (administrator) permissions, and then run the following commands:
+
+   ```powershell
+   $ProxySettings = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections").DefaultConnectionSettings
+
+   Set-ItemProperty -Path "Registry::HKEY_USERS\S-1-5-19\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" -Name DefaultConnectionSettings -Type Binary -Value $ProxySettings
+   ```
+ 
+2.	Configure one of the following registry keys so that network protection "sees" the proxy configuration:
+
+   ```powershell
+   reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+
+   reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+   ```
+
+## See also
 
 - [Network protection](network-protection.md)
 - [Evaluate network protection](evaluate-network-protection.md)
