@@ -36,14 +36,14 @@ We want to keep your organization [secure by default](secure-by-default.md), so 
 - **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
 
-You use the _advanced delivery policy_ in EOP to prevent these messages _in these specific scenarios_ from being filtered<sup>\*</sup>. The advanced delivery policy ensures that messages in these scenarios are not filtered:
+You use the _advanced delivery policy_ in Microsoft 365 to prevent these messages _in these specific scenarios_ from being filtered<sup>\*</sup>. The advanced delivery policy ensures that messages in these scenarios are not filtered:
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing takes no action on these messages.<sup>\*</sup>
 - [Default system alerts](alerts.md) are not triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
-  - [Admin submissions](admin-submission.md) generates an automatic response stating that the message is part of a phishing simulation campaign and is not a real threat.
+  - [Admin submissions](admin-submission.md) generates an automatic response stating that the message is part of a phishing simulation campaign and is not a real threat. Alerts and AIR will not be triggered.
   - [Safe Links in Defender for Office 365](safe-links.md) does not block or detonate the specifically identified URLs in these messages.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) does not detonate attachments in these messages.
 
@@ -59,7 +59,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Advanced delivery** page, open <???>
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Advanced delivery** page, open https://protection.office.com/advanceddelivery
 
 - You need to be assigned permissions before you can do the procedures in this article:
   - To create, modify, or remove configured settings in the advanced delivery policy, you need to be a member of the **Security Administrator** role group in the **Security & Compliance Center** and a member of the **Organization Management** role group in **Exchange Online**.  
@@ -106,4 +106,4 @@ In addition to the two scenarios that the advanced delivery policy can help you 
 
   To bypass Microsoft filtering for messages that have already been evaluated by third-party filtering, use mail flow rules (also known as transport rules), see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- **False positives under review**: If you've used [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives), but you're still awaiting the verdict, you can **temporarily** [bypass filtering](create-safe-sender-lists-in-office-365.md) for those messages/senders/recipients. As with all overrides, we highly recommended that these allowances are temporary.
+- **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we highly recommended that these allowances are temporary.
