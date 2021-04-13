@@ -101,23 +101,18 @@ When you report a problem with network protection, you are asked to collect and 
 
 ## Resolve connectivity issues with network protection (for E5 customers)
 
-Due to the environment where network protection runs, Microsoft is unable to see your operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve connectivity issues with network protection, take the following steps:
- 
-1.	Copy the proxy configuration from the currently logged in user to `LOCAL_SERVICE`. To do this step, open PowerShell with elevated (administrator) permissions, and then run the following commands:
+Due to the environment where network protection runs, Microsoft is unable to see your operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve connectivity issues with network protection, configure one of the following registry keys so that network protection becomes aware of the proxy configuration:
 
-   ```powershell
-   $ProxySettings = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections").DefaultConnectionSettings
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
 
-   Set-ItemProperty -Path "Registry::HKEY_USERS\S-1-5-19\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" -Name DefaultConnectionSettings -Type Binary -Value $ProxySettings
-   ```
- 
-2.	Configure one of the following registry keys so that network protection "sees" the proxy configuration:
+---OR---
 
-   ```powershell
-   reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
 
-   reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
-   ```
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
 
 ## See also
 
