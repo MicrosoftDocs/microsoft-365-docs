@@ -1,6 +1,6 @@
 ---
 title: Protect your organization against web threats
-description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization.
+description: Learn about web protection in Microsoft Defender for Endpoint and how it can protect your organization.
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -31,7 +31,7 @@ ms.technology: mde
 Web threat protection is part of [Web protection](web-protection-overview.md) in Defender for Endpoint. It uses [network protection](network-protection.md) to secure your devices against web threats. By integrating with Microsoft Edge and popular third-party browsers like Chrome and Firefox, web threat protection stops web threats without a web proxy and can protect devices while they are away or on premises. Web threat protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
 
 >[!Note]
->It can take up to an hour for devices to receive new customer indicators.
+>It can take up to an hour for devices to receive new custom indicators.
 
 ## Prerequisites
 Web protection uses network protection to provide web browsing security on Microsoft Edge and third-party web browsers.

@@ -594,6 +594,8 @@
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
+          - name: Troubleshoot eDiscovery hold errors
+            href: hold-distribution-errors.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -710,6 +712,8 @@
               href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
+            - name: Export documents to an Azure Storage account
+              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings
@@ -746,6 +750,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
+            - name: Troubleshoot eDiscovery hold errors
+              href: hold-distribution-errors.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
@@ -764,6 +770,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Troubleshoot eDiscovery hold errors
+      href: hold-distribution-errors.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies

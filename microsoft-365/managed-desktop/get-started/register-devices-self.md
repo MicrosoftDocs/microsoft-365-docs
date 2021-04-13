@@ -1,12 +1,16 @@
 ---
 title: Register new devices yourself
 description: Register devices yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register new devices yourself
@@ -81,8 +85,11 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devic
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
 3. Select **Register devices**. The system will add the devices to your list of devices on **Devices**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
+> [!NOTE]
+> If you manually change the Azure Active Directory (AAD) group membership of a device, it will be automatically reassigned to the group for its device profile and removed from any conflicting groups.
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
@@ -109,6 +116,11 @@ You can monitor the progress of device registration on the main page. Possible s
 If your device has come from a Microsoft Managed Desktop partner supplier, the image should be correct.
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+
+### Autopilot group tag
+
+When you use the Admin portal to register devices, we automatically assign the **Microsoft365Managed_Autopilot** Autopilot Group Tag.
+The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device
 

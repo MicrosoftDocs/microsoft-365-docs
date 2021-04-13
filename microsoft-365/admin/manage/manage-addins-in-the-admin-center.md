@@ -2,8 +2,8 @@
 title: "Manage add-ins in the admin center"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,14 +23,6 @@ description: "Learn about using Centralized add-ins to deploy add-ins to users a
 ---
 
 # Manage add-ins in the admin center
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). 
 
