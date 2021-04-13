@@ -32,7 +32,7 @@ ms.technology: m365d
 
 
 
-The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Cloud App Security, specifically Dropbox, Exchange Online, OneDrive, Microsoft Teams, and SharePoint. Use this reference to construct queries that return information from this table.
+The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Cloud App Security. For a complete list, jump to [Apps and services covered](#apps-and-services-covered). Use this reference to construct queries that return information from this table. 
 
 >[!IMPORTANT]
 >This table includes information that used to be available in the `AppFileEvents` table. Starting March 7, 2021, users hunting through file-related activities in cloud services on and beyond this date should use the `CloudAppEvents` table instead. <br><br>Make sure to search for queries and custom detection rules that still use the `AppFileEvents` table and edit them to use the `CloudAppEvents` table. More guidance about converting affected queries can be found in [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857).
@@ -66,6 +66,19 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RawEventData` | string | Raw event information from the source application or service in JSON format |
 | `AdditionalFields` | string | Additional information about the entity or event |
 
+## Apps and services covered
+
+- Dropbox
+- Dynamics 365
+- Exchange Online
+- OneDrive for Business
+- Power Automate
+- Power BI
+- SharePoint Online
+- Skype for Business
+- Microsoft Teams
+- Office 365
+- Yammer 
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
