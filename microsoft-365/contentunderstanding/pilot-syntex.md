@@ -58,7 +58,7 @@ A user must be a Microsoft 365 global administrator or billing administrator to 
 Extended trials are available for organizations who have engaged a partner through the Content Services Partner Program (CSPP). These trials offer 300 users access to SharePoint Syntex for 60 days. CSPP partners can request promotional codes for extended trials.
 
 > [!NOTE]
-> As with public trials, these promotional codes are for 300 users, so they automatically include 1 million AI Builder credits.
+> As with public trials, these promotional codes are for 300 users. They automatically include 1 million AI Builder credits.
 
 ### Comparison of trial options
 
