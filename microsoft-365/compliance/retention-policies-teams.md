@@ -143,11 +143,11 @@ Retention outcomes:
 
 - For the original message:
     - On day 10, the message is copied to the SubstrateHolds folder, where it can still be searched with eDiscovery tools.
-    - At the end of the retention period (30 days from day 1), the message is permanently deleted typically within 1-7 days, and then won't be returned with eDiscovery searches.
+    - At the end of the retention period (30 days from day 1), the message is permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
 
 - For the current (edited) message:
-    - At the end of the retention period (30 days from day 1), the message moves to the SubstrateHolds folder typically within 1-7 days, where it remains for at least 1 day and can still be searched with eDiscovery tools.
-    - The message is then permanently deleted typically within 1-7 days, and then won't be returned with eDiscovery searches.
+    - At the end of the retention period (30 days from day 1), the message moves to the SubstrateHolds folder typically within 1-7 days, where it can still be searched with eDiscovery tools.
+    - The message is then permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
 
 ##### Example 3: Delete-only after 1 day
 
