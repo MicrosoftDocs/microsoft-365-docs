@@ -111,9 +111,10 @@ If you have alerts that are either false positives or that are true positives bu
 Other actions, such as starting an antivirus scan or collecting an investigation package, occur manually or through [Live Response](live-response.md). Actions taken through Live Response cannot be undone.
 
 After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
-- [Undo one action at a time](#undo-an-action);
+
+- [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
 - [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
-- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). ; and 
+- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and 
 - [Restore file from quarantine](#restore-file-from-quarantine)
 
 When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
@@ -124,7 +125,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 2. Select the **History** tab to view a list of actions that were taken.  
 3. Select an item to view more details about the remediation action that was taken.
 
-### Undo an action
+### Restore a quarantined file from the Action Center
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 2. On the **History** tab, select an action that you want to undo.
