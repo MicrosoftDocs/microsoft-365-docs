@@ -31,10 +31,10 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic describes how to install, configure, update, and use Defender for Endpoint for Android.
+This topic describes how to install, configure, update, and use Defender for Endpoint on Android.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Defender for Endpoint for Android is likely to cause performance problems and unpredictable system errors.
+> Running other third-party endpoint protection products alongside Defender for Endpoint on Android is likely to cause performance problems and unpredictable system errors.
 
 
 ## How to install Microsoft Defender for Endpoint on Android
