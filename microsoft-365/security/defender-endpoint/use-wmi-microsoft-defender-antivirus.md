@@ -15,6 +15,8 @@ ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+audience: ITPro
+ms.topic: how-to
 ---
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Microsoft Defender Antivirus
