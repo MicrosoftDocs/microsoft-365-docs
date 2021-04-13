@@ -50,9 +50,7 @@ landingContent:
           url: office-365-evaluation.md
         - text: Switch to Exchange Online Protection
           url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
- 
-
-  # Card
+   # Card
   - title: Setting up Email Authentication protection
     linkLists:
       - linkListType: how-to-guide
@@ -63,7 +61,6 @@ landingContent:
             url: use-dkim-to-validate-outbound-email.md
           - text: Use DMARC to validate email
             url: use-dmarc-to-validate-email.md
-
    # Card
   - title: Set up Exchange Online Protection
     linkLists:
@@ -73,3 +70,72 @@ landingContent:
             url: exchange-online-protection-overview.md
           - text: Recommended settings for EOP and Microsoft Defender for Office 365 security for set up
             url: recommended-settings-for-eop-and-office365.md
+   # Card
+  - title: Prevent
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Configure your Microsoft 365 tenant for increased security
+            url: tenant-wide-setup-for-increased-security.md
+          - text: Configuration analyzer in EOP and Defender for Office 365
+            url: configuration-analyzer-for-security-policies.md
+          - text: Gain insights through Attack simulation training
+            url: attack-simulation-training-insights.md
+   # Card
+  - title: Detect
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Mail flow rules (transport rules) in standalone EOP
+            url: mail-flow-rules-transport-rules-0.md
+          - text: Threat Trackers
+            url: threat-trackers.md
+          - text: Smart reports and insights in the Security & Compliance Center
+            url: reports-and-insights-in-security-and-compliance.md
+     # Card
+  - title: Investigate
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Views in Threat Explorer and real-time detections
+            url: threat-explorer-views.md
+          - text: Campaign Views in Microsoft Defender for Office 365
+            url: campaigns.md
+          - text: Investigate malicious email that was delivered in Office 365
+            url: investigate-malicious-email-that-was-delivered.md
+          - text: View Defender for Office 365 reports
+            url: view-reports-for-mdo.md
+      # Card
+  - title: Investigate in EOP
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Reporting and message trace in EOP
+            url: reporting-and-message-trace-in-exchange-online-protection.md
+          - text: View the admin audit log in standalone EOP
+            url: view-the-admin-audit-log-eop.md
+       # Card
+  - title: Respond
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Remediate malicious email delivered in Office 365
+            url: remediate-malicious-email-delivered-office-365.md
+          - text: Respond to a Compromised Email Account
+            url: responding-to-a-compromised-email-account.md
+          - text: Remediate Outlook Rules and Custom Forms Injections Attacks
+            url: detect-and-remediate-outlook-rules-forms-attack.md
+          - text: Submit False Positives/False Negatives
+            url: admin-submission.md
+        # Card
+  - title: Automate
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: How Automated Investigation and Response (AIR) works in Defender for Office 365
+            url: automated-investigation-response-office.md
+          - text: Get Started with AIR in Defender for Office 365
+            url: office-365-air.md
+          - text: Address compromised user accounts with AIR
+            url: address-compromised-users-quickly.md
+
