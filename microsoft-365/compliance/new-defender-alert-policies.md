@@ -64,7 +64,7 @@ The following table identifies when the new alert policies will begin triggering
 | **Email messages containing malicious file removed after delivery** (new) | Alerts will start triggering on April 11, 2021 |
 | **Emails messages from a campaign were delivered and later removed** (new) | Alerts will start triggering on April 30, 2021|
 | **Malicious emails were delivered and later removed** (new) | Alerts will start triggering on April 30, 2021|
-| **Email messages containing phish URLs removed after delivery** (existing, will be removed| The alert policy will be removed on April 30, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
+| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy will be removed on April 30, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
 | **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy will be removed on April 30, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
 |||
 
