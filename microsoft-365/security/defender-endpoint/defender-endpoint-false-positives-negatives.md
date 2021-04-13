@@ -192,7 +192,6 @@ that file might not be accessible. This can be due to the system no
 longer having network credentials to access the file. Typically, this is
 a result of a temporary log on to a system or shared folder and the 
 access tokens expired.
-=======
 
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. 
 
