@@ -15,7 +15,7 @@ ms.date: 10/26/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.audience: ITPro
+audience: ITPro
 ms.topic: how-to
 ---
 

@@ -15,7 +15,7 @@ ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.audience: ITPro
+audience: ITPro
 ms.topic: how-to
 ---
 
