@@ -28,13 +28,6 @@ description: "Learn how to set up and use Microsoft 365 on your computer, phone,
 # Get started
 
 Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more. Learn how to set up and use Microsoft 365 on your computer, phone, and tablet.
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
 
 ## Training resources for your users
 
