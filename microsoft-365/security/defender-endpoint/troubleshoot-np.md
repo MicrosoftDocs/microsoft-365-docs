@@ -114,6 +114,8 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
+You can configure the registry key by using PowerShell, Microsoft Endpoint Manager, or Group Policy.
+
 ## See also
 
 - [Network protection](network-protection.md)
