@@ -244,7 +244,9 @@
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Compliance Extension (preview)
-            href: dlp-chrome-learn-about.md  
+            href: dlp-chrome-learn-about.md
+          - name: Learn about the data loss prevention Alerts dashboard
+            href: dlp-alerts-dashboard-learn.md    
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -261,6 +263,8 @@
             href: endpoint-dlp-configure-proxy.md
           - name: Get started with the Microsoft Compliance Extension (preview)
             href: dlp-chrome-get-started.md
+          - name: Get started with the data loss prevention alert dashboard
+            href: dlp-alerts-dashboard-get-started.md
           - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
@@ -594,6 +598,8 @@
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
+          - name: Troubleshoot eDiscovery hold errors
+            href: hold-distribution-errors.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
+            - name: Troubleshoot eDiscovery hold errors
+              href: hold-distribution-errors.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Troubleshoot eDiscovery hold errors
+      href: hold-distribution-errors.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies

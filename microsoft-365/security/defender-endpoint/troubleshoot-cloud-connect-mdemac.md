@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac
-description: This topic describes how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac
+title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
+description: This topic describes how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac
+# Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,10 +31,10 @@ ms.technology: mde
 **Platform**
 macOS
 
-This topic describes how to Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac.
+This topic describes how to Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS.
 
 ## Run the connectivity test
-To test if Defender for Endpoint for Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:
+To test if Defender for Endpoint on Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:
 
 ```Bash
 mdatp connectivity test
@@ -68,7 +68,7 @@ Use the following procedure to test that a connection is not blocked in an envir
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
 
 > [!WARNING]
-> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used. SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint for Mac to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
+> Authenticated proxies are not supported. Ensure that only PAC, WPAD, or a static proxy is being used. SSL inspection and intercepting proxies are also not supported for security reasons. Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint on macOS to the relevant URLs without interception. Adding your interception certificate to the global store will not allow for interception.
 To test that a connection is not blocked:
 In a browser such as Microsoft Edge for Mac or Safari open https://x.cp.wd.microsoft.com/api/report and https://cdn.x.cp.wd.microsoft.com/ping.
 

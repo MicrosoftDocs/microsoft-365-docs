@@ -1,7 +1,6 @@
 ---
 title: Register existing devices yourself
 description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -146,9 +145,11 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devic
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
-1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
-
+> [!NOTE]
+> If you manually change the Azure Active Directory (AAD) group membership of a device, it will be automatically reassigned to the group for its device profile and removed from any conflicting groups.
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
