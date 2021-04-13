@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Microsoft 365 security documentation # < 60 chars
-summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+title: Microsoft Defender for Office 365 documentation # < 60 chars
+summary: Learn about the robust security solutions in Defender for Office 365 to better protect your email and collaboration tools.  # < 160 chars
 
 metadata:
-  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft Defender for Office 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the robust security solutions in Defender for Office 365 to better protect your email and collaboration tools. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  ms.date: 04/13/2021 #Required; mm/dd/yyyy format.
   localization_priority: Priority
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,83 +22,54 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Microsoft 365 Defender
+  - title: Defender for Office 365 & Exchange Online Protection
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft 365 Defender?
-            url:  ../defender/microsoft-365-defender.md
-          - text: Microsoft 365 security center
-            url: ../defender/overview-security-center.md
+          - text: Office 365 Security overview
+            url:  overview.md
+          - text: Set up with Preset security policies in EOP and Defender for Office 365
+            url: preset-security-policies.md
   # Card
-  - title: Start with free trials
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Evaluate Microsoft 365 Defender
-            url: ../defender/m365d-evaluation.md
-          - text: Microsoft 365 Defender pilot playbook
-            url: ../defender/m365d-pilot.md
-  # Card
-  - title: Secure your remote workforce
+  - title: Getting started with Defender for Office 365
     linkLists:
       - linkListType: get-started
         links:
-        - text: Secure your remote workforce
-          url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/     
-
+          - text: Protect against threats
+            url: protect-against-threats.md
+          - text: Preset security policies in EOP and Microsoft Defender for Office 365
+            url: preset-security-policies.md
+          - text: What's new in Microsoft Defender for Office 365
+            url: whats-new-in-defender-for-office-365.md
   # Card
-  - title: Microsoft Defender for Identity
+  - title: Evaluate Defender for Office 365
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
-          - text: What is Microsoft Defender for Identity?
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-          - text: Microsoft Defender for Identity architecture
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-
-   # Card
-  - title: Defender for Office 365
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Defender for Office 365?
-            url: defender-for-office-365.md
-          - text: Defender for Office 365 service description
-            url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-            
-  # Card
-  - title: Defender for Endpoint
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Microsoft Defender for Endpoint?
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-             
-  # Card (optional)
-  - title: Azure Defender
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure Defender?
-            url: https://docs.microsoft.com/azure/security-center/security-center-intro
-          - text: Supported features
-            url: https://docs.microsoft.com/azure/security-center/security-center-services
-  # Card
-  - title: Microsoft Cloud App Security
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Microsoft Cloud App Security?
-            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-          - text: Get started with Microsoft Cloud App Security
-            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-
-
-
-  
-              
+        - text: Evaluate Defender for Office 365
+          url: office-365-evaluation.md
+        - text: Switch to Exchange Online Protection
+          url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
  
 
+  # Card
+  - title: Setting up Email Authentication protection
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up SPF to help prevent spoofing
+            url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+          - text: Use DKIM to validate outbound email sent from your custom domain
+            url: use-dkim-to-validate-outbound-email.md
+          - text: Use DMARC to validate email
+            url: use-dmarc-to-validate-email.md
+
+   # Card
+  - title: Set up Exchange Online Protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Exchange Online Protection overview 
+            url: exchange-online-protection-overview.md
+          - text: Recommended settings for EOP and Microsoft Defender for Office 365 security for set up
+            url: recommended-settings-for-eop-and-office365.md
