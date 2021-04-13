@@ -120,9 +120,11 @@ If you have alerts that are either false positives or that are true positives bu
 Other actions, such as starting an antivirus scan or collecting an investigation package, occur manually or through [Live Response](live-response.md). Actions taken through Live Response cannot be undone.
 
 After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
-- [Undo one action at a time](#undo-an-action);
-- [Undo multiple actions at one time](#undo-multiple-actions-at-one-time); and 
-- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). 
+
+- [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
+- [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
+- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and 
+- [Restore file from quarantine](#restore-file-from-quarantine)
 
 When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
 
@@ -134,7 +136,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 3. Select an item to view more details about the remediation action that was taken.
 
-### Undo an action
+### Restore a quarantined file from the Action Center
 
 1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
 
@@ -159,7 +161,35 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
+3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
+
+### Restore file from quarantine
+
+You can roll back and remove a file from quarantine if you’ve determined 
+that it’s clean after an investigation. Run the following command on each 
+device where the file was quarantined.
+
+1. Open an elevated command–line prompt on the device:
+
+   1. Go to **Start** and type _cmd_.
+
+   1. Right–click **Command prompt** and select **Run as administrator**.
+
+2. Enter the following command, and press **Enter**:
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > In some scenarios, the **ThreatName** may appear as: `EUS:Win32/
+CustomEnterpriseBlock!cl`. Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
+
+    > [!IMPORTANT]
+    > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
+
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. 
+
 
 ## Part 3: Review or define exclusions
 
