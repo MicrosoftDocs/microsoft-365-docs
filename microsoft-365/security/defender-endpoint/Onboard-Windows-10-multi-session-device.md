@@ -15,7 +15,6 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.topic: how-to
 ---
 
 # Onboard Windows 10 multi-session devices in Windows Virtual Desktop 
