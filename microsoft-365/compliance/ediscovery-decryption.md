@@ -49,7 +49,7 @@ The following table identifies the supported tasks that can be performed in Micr
 > [!NOTE]
 > <sup>1</sup> Encrypted files that are located on a local computer (and not stored on a SharePoint or OneDrive site) aren't indexed for eDiscovery. That means if an encrypted local file is attached to an email message, the file won't be returned by a keyword search query, even if the file contains keywords that match the search query. However, email messages with local encrypted file can be returned by an eDiscovery search if an email property (such as sent date, sender, recipient, or subject) matches the search query.
 
-### Encryption limitations with sensitivity labels
+### Decryption limitations with sensitivity labels
 
 eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
 
