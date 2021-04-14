@@ -1,0 +1,282 @@
+---
+title: Troubleshoot performance issues
+description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
+keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+ms.author: maccruz
+author: schmurky
+localization_priority: normal
+manager: dansimp
+audience: ITPro
+ms.topic: troubleshooting
+ms.technology: mde
+---
+
+# Troubleshoot performance issues related to real-time protection
+
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+ 
+If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data).
+
+As an admin, you can also troubleshoot these issues on your own. 
+
+First, you might want to check if the issue is being caused by another software. Read [Check with vendor for antivirus exclusions](#check-with-vendor-for-antivirus-exclusions).
+
+Otherwise, you can identify which software is related to the identified performance issue by following the steps in [Analyze the Microsoft Protection Log](#analyze-the-microsoft-protection-log). 
+
+You can also provide additional logs to your submission to Microsoft support by following the steps in:
+- [Capture process logs using Process Monitor](#capture-process-logs-using-process-monitor)
+- [Capture performance logs using Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) 
+
+## Check with vendor for antivirus exclusions
+
+
+
+If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Search if they have recommendations about antivirus exclusions. If the vendor's website does not have them, you can open a support ticket with them and ask them to publish one. 
+
+We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Defender Security Intelligence portal (MDSI)](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
+
+
+## Analyze the Microsoft Protection Log
+
+In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact information of running software as *EstimatedImpact*:
+	
+```Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%```
+
+If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+
+If this doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections. 
+	 
+## Capture process logs using Process Monitor
+
+Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring. 
+
+1. Download [Process Monitor v3.60](https://docs.microsoft.com/sysinternals/downloads/procmon) to a folder like ```C:\temp```. 
+2. To remove the file's mark of the web:
+    1. Right-click **ProcessMonitor.zip** and select **Properties**.
+    1. Under the *General* tab, look for *Security*.
+    1. Check the box beside **Unblock**.
+    1. Select **Apply**.
+    
+    ![Remove MOTW](images/remove-motw.png) 
+
+3. Unzip the file in ```C:\temp``` so that the folder path will be ```C:\temp\ProcessMonitor```. 
+1. Copy **ProcMon.exe**  to the Windows client or Windows server that you are troubleshooting.  
+5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Doing this will minimize the number of processes to check.
+6. You can launch ProcMon in two ways.
+    1. Right-click **ProcMon.exe** and select **Run as administrator**. 
+    
+
+        Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut **Ctrl+E**.
+<br> 
+       ![magnifying glass icon](images/procmon-magglass.png)
+
+        To verify that you have stopped the capture, check if the magnifying glass icon now appears with a red X. <br>
+        ![red slash](images/procmon-magglass-stop.png)         
+
+        Next, to clear the earlier capture, select the eraser icon. ![clear icon](images/procmon-eraser-clear.png) 
+        <br>Or use the keyboard shortcut **Ctrl+X**.
+    2. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
+    ![cmd procmon](images/cmd-procmon.png)
+ 
+        ```
+        Procmon.exe /AcceptEula /Noconnect /Profiling
+        ```
+        
+        >[!TIP] 
+        >Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
+        >![Minimize Procmon](images/procmon-minimize.png)
+    
+7. After following one of the procedures in step 6, you will next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
+ 
+    ![Filter out Process Name is System Exclude](images/procmon-filter-options.png) 
+
+8. To start the capture, select the magnifying glass icon again.
+	 
+9. Reproduce the problem.
+ 
+    >[!TIP] 
+    >Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
+    
+
+10. Once you have two to four minutes of process activity captured during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
+
+11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.<br>
+![save settings](images/procmon-savesettings.png)
+
+12. For better tracking, change the default path from ```C:\temp\ProcessMonitor\LogFile.PML``` to ```C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML``` where:
+    - ```%ComputerName%``` is the device name
+    - ```MMDDYEAR``` is the month, day, and year
+    -  ```Repro_of_issue``` is the name of the issue you're trying to reproduce
+
+    >[!TIP] 
+    > If you have a working system, you might want to get a sample log to compare.
+
+13. Zip the .pml file and submit it to Microsoft support.
+
+
+## Capture performance logs using Windows Performance Recorder
+
+You can use Windows Performance Recorder (WPR) to include additional information in your submission to Microsoft support. WPR is a powerful recording tool that creates Event Tracing for Windows recordings. 
+
+WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install). You can also download it as part of the Windows 10 Software Development Kit at [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+
+You can use the WPR user interface by following the steps in [Capture performance logs using the WPR UI](#capture-performance-logs-using-the-wpr-ui). 
+
+Alternatively, you can also use the command-line tool provided in WPR by following the steps in [Capture performance logs using the WPR CLI](#capture-performance-logs-using-the-wpr-cli).
+
+WPR provides built-in profiles so you can select events to be recorded. You can also customize profiles in XML.
+
+If you want to enable the **Microsoft Defender for Endpoint verbose analysis profile**, follow the steps in [Enabling the built-in verbose analysis profile](#enabling-the-built-in-verbose-analysis-profile). 
+
+If your Windows Server has 64 GB of RAM or more, it is considered a large server. You should use the **Microsoft Defender for Endpoint verbose analysis profile for large servers** by following the steps in [Enabling the built-in verbose analysis profile for large servers](#enabling-the-built-in-verbose-analysis-profile-for-large-servers).
+
+### Capture performance logs using the WPR UI
+
+>[!TIP]
+>If you have multiple devices where the issue is occurring, use the one which has the most amount of RAM.
+
+1. Download and install WPR. 
+2. Under *Windows Kits*, right-click **Windows Performance Recorder**. 
+    ![Start menu](images/wpr-01.png)
+Select **More**. Select **Run as administrator**.
+3. When the User Account Control dialog box appears, select **Yes**.
+    ![UAC](images/wpr-02.png)
+4. On the WPR dialog box, select **More options**.
+    ![Select more options](images/wpr-03.png)
+5. You can now view the options for collecting data. 
+    ![WPR dialog box](images/wpr-04.png)
+    
+    
+    Profiles for performance recording | When to use
+    --------------- | --------------------
+    CPU usage |  High CPU in application(s), service(s), or the system process. <br>Is your application hanging for 5 seconds to a couple of minutes, <br>do you want to find out why?
+    Disk I/O activity | Is there an application or service, causing a high disk utilization?<br> Or a storage driver that is causing a slow disk I/O?
+    File I/O activity | Looks at files and folders that are being touched
+    Registry I/O activity | Looks at registry hits and modifications
+    Networking I/O activity | Provides local and target IP addresses, the target port, <br>and the dynamic port that different applications are using
+    Heap usage | Private bytes (user mode memory leaks)
+    Pool usage | Paged pool and/or non-paged pool (kernel mode memory leaks)
+    VAlloc usage | Virtual bytes (user mode memory leaks)
+    Power usage | Power changes by the processor
+    GPU activity | Video card performance
+    Audio glitches | On a call and your audio are stuttering?
+    Video glitches | Is the video quality bad?
+    Internet Explorer | Is Internet Explorer slow to browse to a particular website?
+    Minifilter I/O activity | Is the antivirus slowing you down? 
+
+    Typically, you would want to track: 
+    - First-level triage
+    - CPU usage
+    - Disk I/O activity
+    - File I/O activity
+    - Registry I/O activity
+    - Networking I/O activity
+    
+    ![Collect these](images/wpr-05.png)
+
+6. Next, under *Select additional profiles for performance recording*, expand **Scenario analysis**. Select **Minifilter I/O activity**.
+    ![Select minifilter](images/wpr-06.png)
+7. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as ```MDAV.wprp``` to a folder like ```C:\temp```. 
+     >[!WARNING]
+     >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
+ 
+1. Select **Add Profiles...** and browse to the path of the ```MDAV.wprp``` file.
+1. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
+    ![in-file](images/wpr-infile.png)
+1. Change the **Logging mode** from *Memory* to **File**.
+1. Now you are ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
+    ![Hipe options](images/wpr-08.png)
+
+    >[!TIP]
+    >Try starting the trace at 00 seconds. For instance, 01:30:00. This will make it easier to analyze the data. Also try to keep track of the timestamp of exactly when the issue is reproduced.
+
+12. Select **Start**.
+    ![Select start of trace](images/wpr-09.png)
+13. Reproduce the issue.
+    >[!TIP]
+    >Keep the data collection to no more than five minutes. Two to three minutes is a good range since a lot of data is being collected.
+14. Select **Save**.
+    ![Select save](images/wpr-10.png)
+15. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
+
+    ![Fill up details](images/wpr-12.png)
+    Select **File Name:** to determine where your trace file will be saved. By default, it is saved to ```%user%\Documents\WPR Files\```. 
+    Select **Save**. 
+16. Wait while the trace is being merged.
+    ![WPR gathering general trace](images/wpr-13.png)
+17. Once the trace is saved, select **Open folder**.
+    ![WPR trace saved](images/wpr-14.png)
+
+    Include both the file and the folder in your submission to Microsoft support.
+    ![File and folder](images/wpr-15.png)
+
+### Capture performance logs using the WPR CLI
+
+The command-line tool wpr.exe is part of the operating system starting with Windows 8. It is also part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install). You can also download it as part of the Windows 10 Software Development Kit at [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+
+To collect a WPR trace using the command-line tool wpr.exe:
+1. Download and install WPR if it is not already available from the operating system.
+2. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named MDAV.wprp in a local directory such as `C:\traces`.
+3. Right-click the **Start Menu** icon and select **Windows Powershell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
+4. When the User Account Control dialog box appears, select **Yes**.
+5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
+
+    ```
+    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    ```
+    
+    >[!WARNING]
+    >If your Windows Server has 64 GB or RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability.
+6. Reproduce the issue.
+    >[!TIP]
+    >Keep the data collection no to more than five minutes.  Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
+7. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
+
+    ```
+    wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
+    ```
+8. Wait until the trace is merged. 
+9. Include both the file and the folder in your submission to Microsoft support.
+
+### Enabling the built-in verbose analysis profile 
+
+To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
+1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
+2. Select **Custom measurements**.
+1. Select **Microsoft Defender for Endpoint analysis**.
+1. Select **Verbose** under *Detail* level.
+1. Select **File** or **Memory** under Logging mode.
+    1. Select file if...
+        ![in-file](images/wpr-infile.png)
+    1. Select memory if ...
+        ![in-memory](images/wpr-inmem.png)
+
+
+
+### Enabling the built-in verbose analysis profile for large servers
+Enabling the Microsoft Defender for Endpoint in-file verbose analysis profile for large servers with WPRUI:
+1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
+2. Select **Custom measurements** > **Microsoft Defender for Endpoint analysis for large servers**.
+3. Select **Verbose** under *Detail* level.
+4. Select **File** or **Memory** under Logging mode.
+    1. Select file if...
+    ![file large server](images/wpr-infile-large-servers.png)
+    1. Select memory if...
+    ![memory large server](images/wpr-inmem-large-servers.png)
+
+
+## See also
+- [Collect Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
+- [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)
