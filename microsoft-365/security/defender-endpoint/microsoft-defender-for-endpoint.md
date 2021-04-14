@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint
+# Microsoft Defender for Endpoints
 
 **Microsoft Defender for Endpoint Preview**
 
