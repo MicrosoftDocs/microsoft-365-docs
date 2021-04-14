@@ -39,8 +39,6 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
 
-
-
 ## Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016
 
 You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016 to Defender for Endpoint by using any of the following options:
@@ -74,22 +72,22 @@ In general, you'll need to take the following steps:
 
 Perform the following steps to fulfill the onboarding requirements:
 
- - For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
-    - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
 
- - In addition, for Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
-    - Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-    - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-   
-   > [!NOTE]
-    > If you are managing your Windows Server 2008 R2 SP1 with SCCM, the SCCM client agent installs .Net Framework 4.5.2. So you don't need to install the .NET framework 4.5 (or later).
-   
- - For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+- [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+
+For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
+
+- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
+    > If you are managing your Windows Server 2008 R2 SP1 with SCCM, the SCCM client agent installs .Net Framework 4.5.2. So you don't need to install the .NET framework 4.5 (or later).
 
-<span id="server-mma"/>
+For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
+> [!NOTE]
+> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender for Endpoint
 
@@ -103,8 +101,6 @@ Perform the following steps to fulfill the onboarding requirements:
 
 > [!NOTE]
 > If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
-
-<span id="server-proxy"/>
 
 ### Configure Windows server proxy and Internet connectivity settings if needed
 
@@ -141,8 +137,6 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
-
-
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 
@@ -189,8 +183,6 @@ Support for Windows Server provides deeper insight into server activities, cover
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
 
-
-
 ## Integration with Azure Security Center
 
 Defender for Endpoint can integrate with Azure Security Center to provide a comprehensive Windows server protection solution. With this integration, Azure Security Center can use the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
@@ -210,10 +202,8 @@ The following capabilities are included in this integration:
 > - When you use Azure Security Center to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European and UK users).
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Azure Security Center, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Security Center at a later time.
-> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. 
+> - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
-
-
 
 ## Configure and update System Center Endpoint Protection clients
 
@@ -224,8 +214,6 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
 - [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
-
-
 
 ## Offboard Windows servers
 
@@ -282,8 +270,6 @@ To offboard the Windows server, you can use either of the following methods:
 
     ```
 
-
-
 ## Onboarding Servers with no management solution
 
 ### Using Group Policy
@@ -307,7 +293,7 @@ To offboard the Windows server, you can use either of the following methods:
 **Step-2: Create a file name DeployMMA.cmd (using notepad)**
 Add the following lines to the cmd file. Note that you will need your WORKSPACE ID and KEY.
 
-``
+```dos
 @echo off 
 cd "C:"
 IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
@@ -319,7 +305,7 @@ wusa.exe c:\Windows\MMA\Windows8.1-KB123456-x86.msu /quiet /norestart
 OPINSIGHTS_WORKSPACE_ID=<your workspace ID>
 OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 )
-``
+```
 
 ## Group Policy Configuration
 
@@ -340,7 +326,7 @@ C:\windows\MMA\filename – **so the installation files are local to the server*
 
 :::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
 
-For the two KBs (one for Windows Server 2008R2/Windows 7 and the other for Windows Server 2012 R2) repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope :
+For the two KBs (one for Windows Server 2008R2/Windows 7 and the other for Windows Server 2012 R2) repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
 :::image type="content" source="images/targeteditor.png" alt-text="target editor":::
 
@@ -367,9 +353,13 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
 
-As mentioned in the onboarding documentation for Server specifically around Server 2008R2 please see below:
+As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 
-:::image type="content" source="images/additional.png" alt-text="Additional Info":::
+For Windows Server 2008 R2 PS1, ensure that you fulfill the following requirements:
+
+- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+  
+- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2
 This process allows you to onboard all the servers if you don’t have Configuration Manager managing Servers.
