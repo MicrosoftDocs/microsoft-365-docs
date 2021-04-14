@@ -80,7 +80,7 @@ If you don't want to give the admin roles to the partner, cancel the invitation 
 
 You can remove admin roles from a partner at any time. Removing the admin roles doesn’t remove the partner relationship. They can still work with you in a different capacity, such as a Reseller. If you decide that you don’t want to work with a partner anymore, contact your partner to end the relationship.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
 2. On the **Partner relationships** page, select the row that contains the name of the partner that you want to remove.
 3. Select the row that contains the name of the partner.
 4. On the partner page, select **Remove roles**.

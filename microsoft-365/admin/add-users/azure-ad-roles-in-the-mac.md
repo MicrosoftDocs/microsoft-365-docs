@@ -24,15 +24,11 @@ The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, 
 
 A user who is assigned an admin role will have the same level of access to cloud services that your organization has subscribed to, regardless of whether you assign the role in the Microsoft 365 admin center or the Azure portal, or by using the Azure AD module for Windows PowerShell.
 
-::: moniker range="o365-worldwide"
-
 In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles. For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
-
-::: moniker-end
 
 ## All Azure AD roles
 
-Here's a list of all the admin roles available in the Microsoft 365 admin center. Looking for the detailed role descriptions of the Microsoft 365 admin roles? Check out [About admin roles](./about-admin-roles.md?view=o365-worldwide).
+Here's a list of all the admin roles available in the Microsoft 365 admin center. Looking for the detailed role descriptions of the Microsoft 365 admin roles? Check out [About admin roles](./about-admin-roles.md).
 
 |Admin role     |Description  |
 |---------|---------|
