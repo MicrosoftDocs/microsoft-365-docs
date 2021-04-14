@@ -34,7 +34,7 @@ Alerts are the basis of all incidents and indicate the occurrence of malicious o
 
 In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required. 
 
-The **Alerts queue** shows the current set of alerts. You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
+The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Example of the alerts queue":::
 
@@ -42,7 +42,7 @@ Alerts from different Microsoft security solutions like Microsoft Defender for E
 
 By default, the alerts queue in the Microsoft 365 security center displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. 
 
-From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can view a specify a subset of the alerts. Here's an example.
+From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can specify a subset of the alerts. Here's an example.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue":::
 
@@ -88,7 +88,7 @@ The alert story displays all assets or entities related to the alert in a proces
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-### View more alert information in the details page
+### View more alert information on the details page
 
 The details page shows the details of the selected alert, with details and actions related to it. If you select any of the affected assets or entities in the alert story, the details page changes to provide contextual information and actions for the selected object.
 
@@ -108,10 +108,10 @@ The **Manage alert** pane allows you to specify:
 - A comment on the alert.
 
 > [!NOTE]
-> One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 in incrementally being rolled out and is currently in preview. <br>
+> One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
 > Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
 
-From this pane, you can perform these additional actions: 
+From this pane, you can also perform these additional actions: 
 
 - Open the main alert page
 - Consult a Microsoft threat expert
@@ -128,9 +128,9 @@ The list of additional actions depends on the type of alert.
 
 ## Resolve an alert
 
-Once you're done investigating an alert, you can go back to the alert and mark the alert's status as **Resolved** and classify it as either a **False alert** or **True alert**. 
+Once you're done investigating an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
 
-Classifying alerts helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
+Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
 
 ## See also
 
