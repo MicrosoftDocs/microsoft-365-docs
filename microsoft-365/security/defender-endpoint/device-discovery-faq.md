@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
