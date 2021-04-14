@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -75,11 +75,11 @@ All our updates contain
 <br/><br/>
 
 <details>
-<summary> March-2021 (Platform: 4.18.2103.6 | Engine: 1.1.18000.5)</summary>
+<summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 1, 2021**  
-&ensp;Platform: **4.19.2103.6**  
+&ensp;Platform: **4.19.2103.7**  
 &ensp;Engine: **1.1.18000.5**  
 &ensp;Support phase: **Security and Critical Updates**
     

@@ -32,49 +32,63 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+Incident management is critical in ensuring that threats are contained and addressed.
 
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
 
+Here are the ways you can manage your incidents:
 
-You can manage incidents by selecting an incident from the **Incidents queue**. 
+- Change the incident name
+- Add incident tags.
+- Assign the incident to a user account
+- Resolve them 
+- Set its classification and determination
+- Add comments.
 
-You can edit the name of an incident, resolve it, set its classification and determination. You can also assign the incident to yourself, add incident tags and comments.
+You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Example of the Manage incident pane of an incident":::
 
-## Edit incident name
-Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident.
+You can display this pane from the **Manage incident** link on the:
 
-For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+- Properties pane of an incident in the incident queue.
+- **Summary** page of an incident.
 
-You can modify the incident name to better align with your preferred naming convention.
+In cases where, while investigating you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+
+## Edit the incident name
+
+Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+
+You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
 > [!NOTE]
 > Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.
 
+## Add incident tags
 
+You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incident queue for all incidents that contain a specific tag.
+
+When you start typing, you have the option to select from a list of selected tags.
 
 ## Assign incidents
-If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
-## Set status and classification
-### Incident status
-You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents.
+If an incident has not yet been assigned, you can select **Assign to** and specify the user account. Doing so assigns ownership of the incident and all the alerts associated with it.
 
-For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.
+## Resolve incident
 
-Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated. Resolving an incident will automatically close all alerts that are part of the incident and still open. 
+If the incident has been remediated, select **Resolve incident** to move the toggle to the right. Note that resolving an incident also resolves all the linked and active alerts related to the incident.
 
-### Classification and determination
-You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them. 
+An incident that is not resolved displays as **Active**.
+
+## Set the classification and determination
+
+The incident classification is whether it was a true alert or a false alert, which you configure from the **Classification** field. 
+
+If it was a true alert, you should also specify what type of threat it was with the **Determination** field. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them. 
 
 ## Add comments
-You can add comments and view historical events about an incident to see previous changes made to it.
 
-Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.
-
-Added comments instantly appear on the pane.
-
-## Add incident tags
-You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incidents queue for all incidents that contain a specific tag.
+You can add multiple comments to an incident with the **Comment** field. Each comment is added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.

@@ -35,7 +35,7 @@ ms.technology: mde
 
 ## 101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender for Endpoint on Mac is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
 
 ## 101.23.64 (20.121021.12364.0)
@@ -56,7 +56,7 @@ ms.technology: mde
 > [!NOTE]
 > The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint for Mac
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac
 - Performance improvements & bug fixes
 
 ## 101.19.21 (20.120101.11921.0)
@@ -89,7 +89,7 @@ ms.technology: mde
 
 - This product version has been validated on macOS Big Sur 11 beta 9
 
-- The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint for Mac](mac-resources.md#configuring-from-the-command-line)
+- The new syntax for the `mdatp` command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
@@ -154,7 +154,7 @@ ms.technology: mde
 
 ## 100.90.27
 
-- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on Mac that is different from the system-wide update channel
+- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on macOS that is different from the system-wide update channel
 - New product icon
 - Other user experience improvements
 - Bug fixes
