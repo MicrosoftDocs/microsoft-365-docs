@@ -67,7 +67,7 @@ ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD,
  As device discovery uses passive methods to discover devices in the network, any device that communicates with your onboarded devices in the corporate network can be discovered and listed in the inventory. You can exclude devices from active probing only.
 
 ## How frequent is the active probing?
- Devices will actively be probed when changes in device characteristics are observed, and once a week to make sure the existing information is up-to-date.
+ Devices will actively be probed when changes in device characteristics are observed (every 1 to 3 weeks) to make sure the existing information is up-to-date.
 
 ## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
  The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
