@@ -155,7 +155,7 @@ Alternatively, you can also use the command-line tool *wpr.exe* which is availab
     ![Start menu](images/wpr-01.png)<br>
 Select **More**. Select **Run as administrator**.
 3. When the User Account Control dialog box appears, select **Yes**.
-    ![UAC](images/wpr-02.png)
+    ![UAC](images/wpt-yes.png)
 4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as ```WD.wprp``` to a folder like ```C:\temp```. 
      >[!WARNING]
      >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
