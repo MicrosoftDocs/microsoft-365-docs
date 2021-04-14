@@ -222,6 +222,7 @@
 
 ### [Microsoft Defender for Endpoint on iOS]()
 #### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+#### [What's New](ios-whatsnew.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
