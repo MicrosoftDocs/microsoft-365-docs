@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint
-description: Understand the `capabilities that help prevent user or machine or both from using unauthorized removable storage media
+title: Microsoft Defender for Endpoints
+description: A walk-through about Microsoft Defender for Endpoint
 keywords: removable storage media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -49,12 +49,16 @@ You can use the following properties to create a removable storage group:
 
 1. 
 **Property name**: Group Id
+
 **Description**: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique Id, represents the group and will be used in the policy.
+
 **Options**: - 
 
 2. 
 **Property name**: DescriptorIdList
+
 **Description**: List the device properties you want to use to cover in the group.
+
 **Options**:
 - Primary Id
     - RemovableMediaDevices
@@ -73,7 +77,9 @@ You can use the following properties to create a removable storage group:
 
 3. 
 **Property name**: MatchType
+
 **Description**: When there are multiple device properties being used in the DescriptorIdList, MatchType defines the relationship.
+
 **Options**: 
 - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship, for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will check to see whether the USB meet both values. 
 
@@ -135,11 +141,11 @@ Before you get started with Removable Storage Protection, you should confirm you
 
 ### Deploying policy via Group Policy
 
-1. Combine all groups within ‘<Groups></Groups>’into one xml file.
+1. Combine all groups within <Groups> </Groups> into one xml file.
 
 <require screenshot>
 
-2. Combine all rules within ‘<PolicyRules></PolicyRules>’into one xml file.
+2. Combine all rules within <PolicyRules> </PolicyRules>into one xml file.
 
 <require screenshot>
 
@@ -172,7 +178,7 @@ MEM (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Cr
 
     - Data Type: String (XML file)
     
-<include the image xml-file-for-data-type-string>
+:::image type="content" source="images/xml-file-for-data-type-string.png" alt-text="The xml file for the STRING data type":::
 
 2. For each policy, also create an OMA-URI:
 
@@ -183,7 +189,8 @@ MEM (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Cr
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link should be ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
 
     - Data Type: String (XML file)
-    
+
+
 <include the image xml-file-for-data-type-string-2>
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
