@@ -41,7 +41,7 @@ This contract management solution guidance includes four components of Microsoft
 
 - **Power Automate**: Use flows to process contracts through the approval process, and then to a third-party application for payment.
 
-  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/syntex-solution-manage-contracts-setup-steps.png) </br>
+  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png) </br>
 
 ### How it all works
 
@@ -58,7 +58,7 @@ This contract management solution guidance includes four components of Microsoft
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
-  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/syntex-solution-manage-contracts-overview.png) </br>
+  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png) </br>
 
 ## Creating the solution
 
