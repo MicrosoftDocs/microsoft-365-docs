@@ -52,7 +52,7 @@ Devices must have these capabilities:
 - Enabled for UEFI secure boot 
 - Trusted Platform Module 2.0 
 - Capable of virtualization-based security 
-- Bios supported [Hypervisor-protected code integrity](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-and-credential-guard)
+- [Hypervisor-protected code integrity](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) supported by the BIOS
 
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
