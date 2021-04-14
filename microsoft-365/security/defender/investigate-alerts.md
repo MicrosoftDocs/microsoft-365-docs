@@ -64,8 +64,6 @@ To see the main alert page, select the name of the alert. Here's an example.
 
 You can also select the **Open the main alert page** action from the **Manage alert** pane.
 
-## Use alerts for incident investigations
-
 An alert page is composed of these sections: 
 
 - Alert story
@@ -96,7 +94,7 @@ The details page shows the details of the selected alert, with details and actio
 
 Once you've selected an entity of interest, the details page changes to display information about the selected entity type, historic information when it's available, and options to take action on this entity directly from the alert page.
 
-### Manage alerts
+## Manage alerts
 
 To manage an alert, select the alert in the alerts queue on its row to see a **Manage alert** pane. Here's an example.
 
@@ -127,6 +125,8 @@ Here's an example.
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 security center":::
 
 The list of additional actions depends on the type of alert.
+
+## Resolve an alert
 
 Once you're done investigating an alert, you can go back to the alert and mark the alert's status as **Resolved** and classify it as either a **False alert** or **True alert**. 
 
