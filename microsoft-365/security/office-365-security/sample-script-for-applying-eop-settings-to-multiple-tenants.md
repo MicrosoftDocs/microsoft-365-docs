@@ -22,12 +22,14 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Exchange Online PowerShell to view and/or apply configuration settings to their tenants.
 
 ## To run a script or cmdlet on multiple tenants
 
-1. If you haven't already, [install the Exchange Online V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+1. If you haven't already, [install the Exchange Online V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 2. Using an spreadsheet app (for example, Excel), create a .csv file with the following details:
 
@@ -63,7 +65,7 @@ The following sample script lets Microsoft Exchange Online Protection (EOP) admi
 ## RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> You might need to modify the `Connect-IPPSSession` line in the script to match your environment. For example, Office 365 Germany requires a different _ConnectionUri_ value than the current value in a script. For details, see Connect to [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+> You might need to modify the `Connect-IPPSSession` line in the script to match your environment. For example, Office 365 Germany requires a different _ConnectionUri_ value than the current value in a script. For details, see Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

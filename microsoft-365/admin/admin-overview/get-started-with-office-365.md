@@ -28,13 +28,6 @@ description: "Learn how to set up and use Microsoft 365 on your computer, phone,
 # Get started
 
 Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more. Learn how to set up and use Microsoft 365 on your computer, phone, and tablet.
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
 
 ## Training resources for your users
 
@@ -53,13 +46,12 @@ Your organization recently got Microsoft 365, and now you need to use it so you 
 
 Here are some resources to help you get started.
   
-- [Training for admins](https://docs.microsoft.com/microsoft-365/admin): Get links to free online classes for admins.
+- [Training for admins](../index.yml): Get links to free online classes for admins.
     
-- [Admin Help](https://docs.microsoft.com/microsoft-365/admin/admin-home): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
+- [Admin Help](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
     
 - [Contact support - Admin Help](../contact-support-for-business-products.md) : Call us, open an online request, or let the community help. 
     
 ## Related articles
 
 [Set up Microsoft 365 for business - Admin Help](../setup/setup.md)
-

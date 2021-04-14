@@ -1,6 +1,6 @@
 ---
 title: Battery insights
-description:  
+description:  A report that shows data about predicted battery life and top power consumers
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,6 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Battery insights
@@ -16,7 +17,7 @@ This view provides power, battery, and app usage metrics for your Microsoft Mana
 
 To view usage data, select the **Battery** tab.
 
-![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right.](../../media/insights_battery.png)
+![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right](../../media/insights_battery.png)
 
 ## Predicted battery life
 

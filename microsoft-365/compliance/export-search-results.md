@@ -36,7 +36,7 @@ Exporting the results of a Content Search involves preparing the results, and th
 
 - The computer you use to export the search results has to meet the following system requirements:
   
-  - 32-bit or 64-bit versions of Windows 7 and later versions
+  - Latest version of Windows (32-bit or 64-bit)
   
   - Microsoft .NET Framework 4.7
   
@@ -64,7 +64,7 @@ Exporting the results of a Content Search involves preparing the results, and th
   
   - **64-bit:** `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
-    Add the following lines to the  *machine.config*  file somewhere between the  `<configuration>` and  `</configuration>` tags. Be sure to replace  `ProxyServer` and  `Port` with the correct values for your organization; for example,  `proxy01.contoso.com:80` . 
+    Add the following lines to the  *machine.config*  file somewhere between the  `<configuration>` and  `</configuration>` tags. Be sure to replace  `ProxyServer` and  `Port` with the correct values for your organization; for example, `proxy01.contoso.com:80`. 
   
     ```xml
     <system.net>
@@ -280,7 +280,7 @@ For information about limits when exporting content search results, see the "Exp
 
   In the script, you have to specify the name of the search that you want to export results for. For example, for a search named, `SearchAllMailboxes` replace SEARCHNAME_Export with `SearchAllMailboxes_Export`.
 
-  After you add the name of the search to the script, you can copy the script text and then paste it into a Windows PowerShell window that's [connected to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). After you paste the script, the eDiscovery Export Tool is displayed (like it is when you download search results using the UI):
+  After you add the name of the search to the script, you can copy the script text and then paste it into a Windows PowerShell window that's [connected to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). After you paste the script, the eDiscovery Export Tool is displayed (like it is when you download search results using the UI):
 
   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
 
@@ -306,13 +306,13 @@ Any rights-protected (RMS-protected) email messages included in the results of a
   
 - There is a 260-character limit (imposed by the operating system) for the full path name for email messages and site documents exported to your local computer. The full path name for exported items includes the item's original location and the folder location on the local computer where the search results are downloaded to. For example, if you specify to download the search results to  `C:\Users\Admin\Desktop\SearchResults` in the eDiscovery Export tool, then the full pathname for a downloaded email item would be  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg`.
 
-    If the 260-character limit is exceeded, the full path name for an item will be truncated.
+- If the 260-character limit is exceeded, the full path name for an item will be truncated, based on the following:
 
   - If the full path name is longer than 260 characters, the file name will be shortened to get under the limit; note that the truncated filename (excluding the file extension) won't be fewer than eight characters.
 
   - If the full path name is still too long after shortening the file name, the item is moved from its current location to the parent folder. If the pathname is still too long, then the process is repeated: shorten the filename, and if necessary move again to the parent folder. This process is repeated until the full pathname is under the 260-character limit.
 
-  - If a truncated full path name already exists, a version number is added to the end of the filename; for example,  `statusmessage(2).msg`.
+  - If a truncated full path name already exists, a version number is added to the end of the filename; for example, `statusmessage(2).msg`.
 
     To help mitigate this issue, consider downloading search results to a location with a short path name; for example, downloading search results to a folder named  `C:\Results` would add fewer characters to the path names of exported items than downloading them to a folder named  `C:\Users\Admin\Desktop\Results`.
 
@@ -330,4 +330,4 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 - The file system metadata for documents on SharePoint and OneDrive for Business sites is maintained when documents are exported to your local computer. That means document properties, such as created and last modified dates, aren't changed when documents are exported.
 
-- If your search results include a list item from SharePoint that matches the search query, all rows in the list will be exported in addition to the item that matches the search query and any attachments in the list. The reason for this behavior is to provide a context for list items that are returned in the search results. Also note that the additional list items and attachments may cause the count of exported items to be different than the original estimate of search results.
+- If your search results include a list item from SharePoint that matches the search query, all rows in the list will be exported in addition to the item that matches the search query and any attachments in the list. The reason for this behavior is to provide a context for list items that are returned in the search results. The additional list items and attachments may cause the count of exported items to be different than the original estimate of search results.

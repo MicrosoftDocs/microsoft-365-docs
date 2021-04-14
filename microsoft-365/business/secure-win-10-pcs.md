@@ -2,8 +2,8 @@
 title: "Secure Windows 10 computers"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -41,7 +41,7 @@ After you have [set up](set-up.md) Microsoft 365 Business Premium, it is time to
 
 4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows 10 devices](secure-windows-10-devices.md). 
     
-    For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
+    For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   
 
 1. Choose **Apply settings**.
 

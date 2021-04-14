@@ -68,7 +68,7 @@ Compliance Manager is an end-to-end solution in the Microsoft 365 compliance cen
 
 ## Are there licensing requirements for using Compliance Manager?
 
-Yes. The GA release of Compliance Manager contains new licensing terms. All organizations with Office 365 and Microsoft 365 licenses, and US Government Community (GCC) Moderate and GCC High customers, have access to Compliance Manager. However, the assessments available to your organization and how you manage assessment templates depends on your licensing agreement. Visit the [Microsoft 365 licensing guidance for security and compliance](https://go.microsoft.com/fwlink/?linkid=2132371) for details.
+Yes. The GA release of Compliance Manager contains new licensing terms. All organizations with Office 365 and Microsoft 365 licenses, and US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers, have access to Compliance Manager. However, the assessments available to your organization and how you manage assessment templates depends on your licensing agreement. Visit the [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for details.
 
 ## If I have a high score, does it mean I’m fully compliant?
 

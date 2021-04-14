@@ -6,10 +6,10 @@
   items:
     - name: Try or buy Microsoft 365
       href: try-or-buy-microsoft-365.md
-    - name: Extend your trial
-      href: extend-your-trial.md
     - name: Buy or manage add-ons
       href: buy-or-edit-an-add-on.md
+    - name: Business Assist for Microsoft 365
+      href: ../admin/misc/business-assist.md
     - name: Add storage space
       href: add-storage-space.md
 - name: Manage subscriptions
@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
+    - name: Manage auto-claim policies
+      href: licenses/manage-auto-claim-policies.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Bills and payments
@@ -48,12 +50,14 @@
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: Understand your bill or invoice
       href: billing-and-payments/understand-your-invoice.md
-    - name: Manage payment methods
-      href: billing-and-payments/manage-payment-methods.md
     - name: Pay for your subscription
       href: billing-and-payments/pay-for-your-subscription.md
+    - name: Manage payment methods
+      href: billing-and-payments/manage-payment-methods.md
     - name: Change billing frequency
       href: billing-and-payments/change-payment-frequency.md
+    - name: Manage billing notifications and invoice attachments
+      href: billing-and-payments/manage-billing-notifications.md
     - name: Understand billing profiles
       href: billing-and-payments/manage-billing-profiles.md
     - name: Change your billing addresses
@@ -65,10 +69,11 @@
     - name: Manage billing accounts
       href: manage-billing-accounts.md
     - name: Associate a tenant with your billing account
-      href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Manage relationships with your partners
   href: manage-partners.md
 - name: Close your account
   href: close-your-account.md
 - name: Contact support
   href: ../admin/contact-support-for-business-products.md
+  

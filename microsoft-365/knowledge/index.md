@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
-    - m365initiative-topics
+    - m365initiative-viva-topics
 localization_priority: None
 description: "Learn how to find resources for Microsoft Viva Topics."
 ---
@@ -37,6 +37,9 @@ The resources in this section help you learn more about what Viva Topics  is and
 |Learn more about Viva Topics|[Microsoft Viva Topics overview](topic-experiences-overview.md)|
 |Learn how topics are discovered and suggested by AI|[Microsoft Viva Topics discovery](topic-experiences-discovery.md)|
 |Learn about topic security|[Microsoft Viva security and privacy](topic-experiences-security-privacy.md)|
+|Learn how to get Viva Topics|[Microsoft Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|See resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## Adoption

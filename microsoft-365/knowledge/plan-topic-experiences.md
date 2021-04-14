@@ -29,7 +29,7 @@ Security and privacy of your data is respected, and topic experiences does not g
 
 ## Requirements
 
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
 All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
 
@@ -55,6 +55,12 @@ Site name,URL
 We don't recommend choosing **No sites** because it prevents topics from being automatically created or updated. However, you can choose this option if you want to set up Topics and then add sites later.
 
 We recommend you create a process for users or knowledge managers to request individual sites be removed from topic discovery if needed in your organization.
+
+### Multi-geo
+
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
+
+All processing and storage of content is done in the central location.
 
 ## User permissions
 

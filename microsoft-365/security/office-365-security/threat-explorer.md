@@ -24,7 +24,13 @@ ms.prod: m365-security
 
 # Threat Explorer and Real-time detections
 
-If your organization has [Microsoft Defender for Office 365](office-365-atp.md) and you have the [necessary permissions](#required-licenses-and-permissions), you have access to *Explorer* or *Real-time detections*, which were formerly *Real-time reports*. ([See what's new.](#new-features-in-threat-explorer-and-real-time-detections)) In the Security & Compliance Center, go to **Threat management**, and then select **Explorer** _or_ **Real-time detections**.
+
+**Applies to**
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
@@ -42,7 +48,27 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (Defender for Office 365 Plan 2 only)
 - [Investigate malicious email, and more](#more-ways-to-use-explorer-and-real-time-detections)
 
-## Improvements to Threat Explorer and Real-time detections
+## Improvements to Threat Hunting Experience
+
+### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections (Preview)
+Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
+We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.  
+
+Alert ID is available within the URL when you are viewing an individual alert; an example being `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
+
+> [!div class="mx-imgBorder"]
+> ![Filtering for Alert ID](../../media/AlertID-Filter.png)
+
+> [!div class="mx-imgBorder"]
+> ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
+
+ 
+### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)  
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants. 
+This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities. 
+
+### Updated limits for Export of records for Threat Explorer (Preview) 
+As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
 ### Tags in Threat Explorer
 
@@ -78,8 +104,13 @@ The information about individual tags for sender and recipient also extends to e
 
 Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
 
+
+### Updated Timeline View
+
 > [!div class="mx-imgBorder"]
 > ![URL tags](../../media/tags-urls.png)
+> 
+Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## Improvements to the threat hunting experience (upcoming)
 
@@ -145,7 +176,6 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 > - There will be new fields and values for **Detection technologies** and **Additional actions** (especially for ZAP scenarios). You'll need to evaluate your existing saved queries and tracked queries to make sure they work with the new values.
 
 > [!div class="mx-imgBorder"]
-
 > ![Additional Actions in Explorer](../../media/Additional_Actions.png)
 
 ### System overrides
@@ -153,9 +183,13 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 *System overrides* enable you to make exceptions to the intended delivery location of a message. You override the delivery location provided by the system, based on the threats and other detections identified by the filtering stack. System overrides can be set through tenant or user policy to deliver the message as suggested by the policy. Overrides can identify unintentional delivery of malicious messages due to configurations gaps, such as an overly broad Safe Sender policy set by a user. These override values can be:
 
 - Allowed by user policy: A user creates policies at the mailbox level to allows domains or senders.
+
 - Blocked by user policy: A user creates policies at the mail box level to block domains or senders.
+
 - Allowed by org policy: The organization's security teams set policies or Exchange mail flow rules (also known as transport rules) to allow senders and domains for users in their organization. This can be for a set of users or the entire organization.
+
 - Blocked by org policy: The organization's security teams set policies or mail flow rules to block senders, domains, message languages, or source IPs for users in their organization. This can be applied to a set of users or the entire organization.
+
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
 [![System Overrides in Explorer](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -201,7 +235,8 @@ You can now sort and filter on system or custom user tags to quickly grasp the s
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview. This functionality may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
 
-![Tags column in Explorer](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Tags column in Explorer](../../media/threat-explorer-tags.png)
 
 ### Timezone improvements
 
@@ -250,21 +285,20 @@ As part of data enrichment, you'll be able to see all the different Exchange tra
 
 You'll be able to see both the GUID and the name of the transport rules that were applied to the message. You'll be able to search for the messages by using the name of the transport rule. This is a "Contains" search, which means you can do partial searches as well.
 
-#### Important note:
-
-ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of these roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
-
-- EXO Only - Data Loss Prevention: All
-- EXO Only - O365SupportViewConfig: All
-- Microsoft Azure Active Directory or EXO - Security Admin: All
-- AAD or EXO - Security Reader: All
-- EXO Only - Transport Rules: All
-- EXO Only - View-Only Configuration: All
-
-Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
-
-> [!div class="mx-imgBorder"]
-> ![Exchange Transport Rules](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of these roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
+> 
+> - EXO Only - Data Loss Prevention: All
+> - EXO Only - O365SupportViewConfig: All
+> - Microsoft Azure Active Directory or EXO - Security Admin: All
+> - AAD or EXO - Security Reader: All
+> - EXO Only - Transport Rules: All
+> - EXO Only - View-Only Configuration: All
+> 
+> Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Exchange Transport Rules](../../media/ETR_Details.png)
 
 ### Inbound connectors
 
@@ -277,17 +311,48 @@ The search for connectors is "contains" in nature, which means partial keyword s
 
 ## New features in Threat Explorer and Real-time detections
 
-Three new features are available in Threat Explorer and Real-time detections:
-
-- [Preview email header and download email body](#preview-email-header-and-download-email-body)
+- [View phishing emails sent to impersonated users and domains](#view-phishing-emails-sent-to-impersonated-users-and-domains)
+-  [Preview email header and download email body](#preview-email-header-and-download-email-body)
 - [Email timeline](#email-timeline)
 - [Export URL click data](#export-url-click-data)
 
-These new features are outlined below.
+### View phishing emails sent to impersonated users and domains
+
+To identify phishing attempts against users and domains that are impersonated users must be added to the list of *Users to protect*. For domains, admins must either enable *Organization domains*, or add a domain name to *Domains to protect*. The domains to protect are found on the *Anti-Phishing policy page* in the *Impersonation* section.
+
+To review phish messages and search for impersonated users or domains, use the [Email > Phish view](threat-explorer-views.md) of Explorer.
+
+This example uses Threat Explorer.
+
+1. In the [Security & Compliance Center](https://protection.office.com) (https://protection.office.com), choose Threat management > Explorer (or Real-time detections).
+
+2. In the View menu, choose Email > Phish.
+
+   Here you can choose **impersonated domain** or **impersonated user**.
+
+3. **EITHER** select **Impersonated domain**, and then type a protected domain in the textbox.
+
+   For example, search for protected domain names like *contoso*, *contoso.com*, or *contoso.com.au*.
+
+4. Select the Subject of any message under the Email tab > Details tab to see additional impersonation information like Impersonated Domain / Detected location.
+
+    **OR** 
+
+    Select **Impersonated user** and type a protected user's email address in the textbox.
+
+    > [!TIP]
+    > **For best results**, use *full email addresses* to search protected users. You will find your protected user quicker and more successfully if you search for *firstname.lastname@contoso.com*, for example, when investigating user impersonation. When searching for a protected domain the search will take the root domain (contoso.com, for example), and the domain name (*contoso*). Searching for the root domain *contoso.com* will return both impersonations of *contoso.com* and the domain name *contoso*.
+
+5. Select the **Subject** of any message under **Email tab** > **Details tab** to see additional impersonation information about the user or domain, and the *Detected location*.
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="The Threat Explorer details pane for a protected user showing the detection location, and the threat that was detected (here phish impersonation of a user).":::
+
+> [!NOTE]
+> In step 3 or 5, if you choose **Detection Technology** and select **Impersonation domain** or **Impersonation user** respectively, the information in the **Email tab** > **Details tab** about the user or domain, and the *Detected location* will be shown only on the messages that are related to the user or domain listed on the *Anti-Phishing policy* page. 
 
 ### Preview email header and download email body
 
-You can now preview an email header and download the email body in Threat Explorer Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails in all-email messages view. However, viewing the email header does not require any additional role (other than what is required to view messages in Threat Explorer).
 
 Explorer and Real-time detections will also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
 
@@ -370,7 +435,7 @@ The report refreshes to show the results that malware detected in email, using t
 
 ## View phishing URL and click verdict data
 
-Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](atp-safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-atp-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
+Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
@@ -449,14 +514,14 @@ The report refreshes to show data about email messages that people in your organ
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections). See the following articles:
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automated investigation and response in Microsoft Threat Protection](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
 
-You must have [Microsoft Defender for Office 365](office-365-atp.md) to use Explorer or Real-time detections.
+You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to use Explorer or Real-time detections.
 
 - Explorer is included in Defender for Office 365 Plan 2.
 - The Real-time detections report is included in Defender for Office 365 Plan 1.
@@ -470,7 +535,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Organization Management
   - View-Only Organization Management
@@ -480,11 +545,15 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 To learn more about roles and permissions, see the following resources:
 
 - [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-- [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections
 
 - The *Real-time detections* report is available in Defender for Office 365 Plan 1. *Threat Explorer* is available in Defender for Office 365 Plan 2.
 - The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it also provides additional details for a given attack.
 - An *All email* view is available in Threat Explorer but not in the Real-time detections report.
-- More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## Other articles
+
+[Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
