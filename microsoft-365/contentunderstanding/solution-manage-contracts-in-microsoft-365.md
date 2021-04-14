@@ -1,8 +1,9 @@
 ---
-title: "Solution - Manage contracts in Microsoft 365"
-ms.author: efrene
-author: efrene
+title: "Manage contracts in Microsoft 365"
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.service: 
@@ -12,45 +13,52 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to manage contracts using a Microsoft 365 solution."
 ---
 
-# Solution - Manage contracts in Microsoft 365
+# Manage contracts in Microsoft 365
 
-This article describes how to create a contracts management solution with components of Microsoft 365. Our hope is that it provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution does not suit your business needs as a whole, we hope that there are parts of it that you can adopt in your planning to create your custom contract management solution.
+This article describes how to create a contracts management solution for your organization with components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution does not suit your business needs as a whole, there are parts of it that you can adopt in your planning to create your custom contract management solution.
 
-## The business problem
+## Identify the business problem
 
-The first step in planning your contract management system is understanding the problem you are trying to solve. For our solution, we can define three key issues that need to be addressed:
+The first step in planning your contract management system is to understand the problem you are trying to solve. For our solution, we can define four key issues that need to be addressed:
 
-- Need a way of identifying contracts: Many organizations work with a number of documents – invoices, contracts, statements of work, etc.  Some are digital assets sent in via email, and some are paper assets sent in via traditional mail. We need a way to identify all customer contracts from all other documents, and then classifying them as such.
-- Need a way to track the history of contract approvals.
-- Need a site to manage contract approvals: The organization needs to set up a collaborative site in which all required stakeholders can easily review contracts. Stakeholders should be able to review the whole contract if needed, but mostly care about seeing several key fields from each contract (for example, customer name, PO number, and total cost). The goal is for stakeholders to easily approve or reject incoming contracts.
+- **Identify contracts**. Your organization works with a number of documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. We need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
-- Need a way to route reviewed contracts: Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a third-party app for payment processing.  Rejected contracts need to be routed for additional review.
+- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts has been either approved or rejected, and whether payment has processed. 
+
+- **Site to manage contract approvals**. Your organization needs to set up a collaborative site in which all required stakeholders can easily review contracts. Stakeholders should be able to review the whole contract if needed, but mostly care about seeing several key fields from each contract (for example, customer name, PO number, and total cost). Stakeholders should be able to easily approve or reject incoming contracts.
+
+- **Route reviewed contracts**. Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a third-party application for payment processing. Rejected contracts need to be routed for additional review.
 
 ## Overview of the solution
 
-This contract management solution guidance includes three Microsoft 365 components:
+This contract management solution guidance includes four components of Microsoft 365:
 
-- Microsoft SharePoint Syntex: Create models to identify and classify your contract files and then extract the appropriate data from them.
+- **Microsoft SharePoint Syntex**: Create models to identify and classify your contract files and then extract the appropriate data from them.
 
-- Microsoft Teams: Use the functionality of a Teams site and associated channels to allow your stakeholders to review and manage contracts.
+- **Microsoft SharePoint lists**: Use the formatting available in modern SharePoint lists to present contracts in a business-friendly format.
 
-- Power Automate: Use flows to process contracts through the approval process, and then to a 3rd party application for payment.
- 
+- **Microsoft Teams**: Use the functionality of a Teams site and associated channels to allow your stakeholders to review and manage contracts.
+
+- **Power Automate**: Use flows to process contracts through the approval process, and then to a third-party application for payment.
+
+  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/syntex-solution-manage-contracts-setup-steps.png) </br>
+
 ### How it all works
 
+1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and saves it to the document library.
 
-1.	Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and saves it to the document library.
-2.	The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>..
+2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>.
 
     The following is an example of a contract that the model is trained to identify.</br>
-      ![Contract](../media/content-understanding/contract.png)</br> 
+      ![Example of a contract.](../media/content-understanding/contract.png)</br> 
 
-
-3.	In Microsoft Teams, all stakeholders are members of a secure Teams site in which all contract in the document library are are visible for approval or rejection.  Using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
+3. In Microsoft Teams, all stakeholders are members of a secure Teams site in which all contract in the document library are are visible for approval or rejection.  By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
  
-4.	By using Power Automate, contracts are moved through the approval process in the Teams site. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and the contract is forwarded to a 3rd party financial app for payment.
+4. By using Power Automate, contracts are moved through the approval process in the Teams site. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and the contract is forwarded to a third-party financial application for payment.
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
+
+  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/syntex-solution-manage-contracts-overview.png) </br>
 
 ## Creating the solution
 
