@@ -94,7 +94,8 @@ Your first step is to select a device that will perform the authenticated networ
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Note: Not all URLs are specified in the Defender for Endpoint documented list of allowed data collection.
+    > [!NOTE]
+    > Not all URLs are specified in the Defender for Endpoint documented list of allowed data collection.
 
 ## Permissions
 
@@ -107,7 +108,8 @@ To configure assessment jobs, the following user permission option is required: 
 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
 
-![Download scanner button](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Download scanner button](images/assessment-jobs-download-scanner.png)
 
 ## Network scanner installation & registration
 
@@ -116,7 +118,9 @@ The signing-in process can be completed on the designated assessment device itse
 To complete the network scanner registration process:
 
 1. Copy and follow the URL that appears on the command line and use the provided installation code to complete the registration process.
-    - Note: You may need to change Command Prompt settings to be able to copy the URL.
+
+    > [!NOTE]
+    > You may need to change Command Prompt settings to be able to copy the URL.
 
 2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Security Center."
 
@@ -128,13 +132,17 @@ In the Assessment jobs page in **Settings**, select **Add network assessment job
 
 To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
-![Add network assessment job button](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Add network assessment job button](images/assessment-jobs-add.png)
 
 Adding a network assessment job steps:
 
-1. Choose an ‘Assessment job’ name and the ‘Assessment device’ on which the network scanner was installed. This device will perform the periodic authenticated scans. 
+1. Choose an ‘Assessment job’ name and the ‘Assessment device’ on which the network scanner was installed. This device will perform the periodic authenticated scans.
+
 2. Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed). 
+
 3. Add required SNMP credentials of the target network devices. 
+
 4. Save the newly configured network assessment job to start the periodic network scan. 
 
 ### Scan and add network devices
@@ -154,13 +162,14 @@ Once the results show up, you can choose which devices will be included in the p
 
 Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an assessment job until the devices are updated.
 
-![Network devices section in the Device inventory](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Network devices section in the Device inventory](images/assessment-jobs-device-inventory.png)
 
 ## Troubleshooting
 
 ### Network scanner installation has failed
 
-Verify that the required URLs are added to the allowed domains in your firewall settings. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+Verify that the required URLs are added to the allowed domains in your firewall settings. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ### The Microsoft.com/devicelogin web page did not show up
 
