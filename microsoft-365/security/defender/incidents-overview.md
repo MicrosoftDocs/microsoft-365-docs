@@ -47,6 +47,7 @@ Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).
 
 <br>
 <br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
