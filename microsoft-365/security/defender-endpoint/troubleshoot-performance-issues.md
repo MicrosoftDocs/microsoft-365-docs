@@ -76,7 +76,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     1. Check the box beside **Unblock**.
     1. Select **Apply**.
     
-    ![Remove MOTW](images/remove-motw.png) 
+    ![Remove MOTW](images/procmon-motw.png) 
 
 3. Unzip the file in ```C:\temp``` so that the folder path will be ```C:\temp\ProcessMonitor```. 
 1. Copy **ProcMon.exe**  to the Windows client or Windows server that you are troubleshooting.  
@@ -121,7 +121,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 10. Once you have two to four minutes of process activity captured during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
 11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.<br>
-![save settings](images/procmon-savesettings.png)
+![save settings](images/procmon-savesettings1.png)
 
 12. For better tracking, change the default path from ```C:\temp\ProcessMonitor\LogFile.PML``` to ```C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML``` where:
     - ```%ComputerName%``` is the device name
@@ -155,7 +155,7 @@ Alternatively, you can also use the command-line tool *wpr.exe* which is availab
     ![Start menu](images/wpr-01.png)<br>
 Select **More**. Select **Run as administrator**.
 3. When the User Account Control dialog box appears, select **Yes**.
-    ![UAC](images/wpt-yes.png)
+    ![UAC](images/wpt_yes.png)
 4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as ```WD.wprp``` to a folder like ```C:\temp```. 
      >[!WARNING]
      >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
