@@ -99,11 +99,11 @@ Your first step is to select a device that will perform the authenticated networ
 
 ## Permissions
 
-To configure assessment jobs, the following user permission option is required: **Manage security settings in Security Center**. You can find the permission by going to **Settings** > **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md)
+To configure assessment jobs, the following user permission option is required: **Manage security settings in Security Center**. You can find the permission by going to **Settings** > **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
 ## Install the network scanner
 
-1. Go to **Microsoft 365 security** > **Settings** > **Endpoints** > **Assessment jobs** (under 'Network assessments').
+1. Go to **Microsoft 365 security** > **Settings** > **Endpoints** > **Assessment jobs** (under **Network assessments**).
     1. In the Microsoft Defender Security Center, go to Settings > Assessment jobs page.
 
 2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
