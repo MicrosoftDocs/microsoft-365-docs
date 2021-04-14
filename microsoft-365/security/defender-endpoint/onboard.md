@@ -1,7 +1,7 @@
 ---
-title: Configure and manage Microsoft Defender ATP capabilities
+title: Configure and manage Microsoft Defender for Endpoint capabilities
 ms.reviewer: 
-description: Configure and manage Microsoft Defender ATP capabilities such as attack surface reduction, and next-generation protection
+description: Configure and manage Microsoft Defender for Endpoint capabilities such as attack surface reduction, and next-generation protection
 keywords: configure, manage, capabilities, attack surface reduction, next-generation protection, security controls, endpoint detection and response, auto investigation and remediation, security controls, controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,7 +39,7 @@ Topic | Description
 [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. 
 [Configure next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configure next-generation protection to catch all types of emerging threats.
 [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
-[Configure Microsoft Threat Protection integration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration)| Configure other solutions that integrate with Defender for Endpoint.
+[Configure Microsoft 365 Defender integration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration)| Configure other solutions that integrate with Defender for Endpoint.
 [Management and API support](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
 [Configure Microsoft Defender Security Center settings](preferences-setup.md) |  Configure portal-related settings such as general settings, advanced features, enable the preview experience and others.
 

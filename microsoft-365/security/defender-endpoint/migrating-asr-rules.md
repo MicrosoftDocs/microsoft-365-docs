@@ -1,7 +1,7 @@
 ---
 title: Migrating from a third-party HIPS to ASR rules
 description: Describes how to approach a migration from a third-party Host Intrusion Prevention System (HIPS) solution into ASR rules.
-keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint, Microsoft Defender ATP
+keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security

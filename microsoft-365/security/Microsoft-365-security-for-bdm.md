@@ -82,7 +82,7 @@ After adding extra protections to your privileged accounts and protecting agains
 
 |Recommendation  |E3  |E5  |
 |---------|---------|---------|
-|**Configure Microsoft Defender for Office 365**:<br>*    Safe Attachments<br>*    Safe Links<br>*    ATP for SharePoint, OneDrive, and Microsoft Teams<br>*    Anti-phishing in Defender for Office 365 protection|         |![green check mark](../media/green-check-mark.png) |
+|**Configure Microsoft Defender for Office 365**:<br>*    Safe Attachments<br>*    Safe Links<br>*    Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams<br>*    Anti-phishing in Defender for Office 365 protection|         |![green check mark](../media/green-check-mark.png) |
 |**Configure Microsoft Defender for Endpoint capabilities**:<br>*    Windows Defender Antivirus <br>*    Exploit protection <br> *    Attack surface reduction <br> *    Hardware-based isolation <br>*    Controlled folder access     |         |![green check mark](../media/green-check-mark.png) |
 |**Use Microsoft Cloud App Security** to discover SaaS apps and begin to use behavior analytics and anomaly detection. |         |![green check mark](../media/green-check-mark.png) |
 

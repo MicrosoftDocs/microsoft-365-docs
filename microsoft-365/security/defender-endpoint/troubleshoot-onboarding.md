@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Microsoft Defender ATP onboarding issues
-description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender ATP service.
+title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
+description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -246,7 +246,7 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the device has an Internet connection
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
+The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 

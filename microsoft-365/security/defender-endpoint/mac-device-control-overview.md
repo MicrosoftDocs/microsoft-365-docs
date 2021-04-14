@@ -1,7 +1,7 @@
 ---
 title: Device control for macOS
-description: Learn how to configure Microsoft Defender for Endpoint for Mac to reduce threats from removable storage such as USB devices.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
+description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -47,7 +47,7 @@ Device control for macOS has the following prerequisites:
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
+> - Your device must be in `Beta` (previously called `InsiderFast`) Microsoft AutoUpdate update channel. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md).
 > 
 >   You can check the update channel using the following command: 
 > 
@@ -61,7 +61,7 @@ Device control for macOS has the following prerequisites:
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md). 
+>    Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md). 
 
 ## Device control policy
 
@@ -331,7 +331,7 @@ DeviceEvents
 
 ## Device control policy deployment
 
-The device control policy must be included next to the other product settings, as described in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).
+The device control policy must be included next to the other product settings, as described in [Set preferences for Microsoft Defender for Endpoint on Mac](mac-preferences.md).
 
 This profile can be deployed using the instructions listed in [Configuration profile deployment](mac-preferences.md#configuration-profile-deployment).
 

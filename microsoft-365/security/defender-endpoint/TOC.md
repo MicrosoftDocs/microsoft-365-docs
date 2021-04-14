@@ -154,18 +154,18 @@
 #### [Privacy](mac-privacy.md)
 #### [Resources](mac-resources.md)
 
-### [Microsoft Defender for Endpoint for iOS]()
-#### [Overview of Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md)
+### [Microsoft Defender for Endpoint on iOS]()
+#### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Deploy]()
-##### [Deploy Microsoft Defender for Endpoint for iOS via Intune](ios-install.md)
+##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
 
 #### [Configure]()
 ##### [Configure iOS features](ios-configure-features.md)
 #### [Privacy](ios-privacy.md)
 
 
-### [Microsoft Defender for Endpoint for Linux]()
+### [Microsoft Defender for Endpoint on Linux]()
 #### [Overview of Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
 #### [What's New](linux-whatsnew.md)
 #### [Deploy]()
@@ -192,7 +192,7 @@
 #### [Privacy](linux-privacy.md)
 #### [Resources](linux-resources.md)
 
-### [Microsoft Defender for Endpoint for Android]()
+### [Microsoft Defender for Endpoint on Android]()
 #### [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
 
 #### [Deploy]()

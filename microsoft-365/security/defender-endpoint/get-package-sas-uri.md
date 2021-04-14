@@ -33,7 +33,7 @@ Get a URI that allows downloading of an [Investigation package](collect-investig
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---

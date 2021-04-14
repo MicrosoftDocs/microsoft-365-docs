@@ -1,7 +1,7 @@
 ---
-title: Increase compliance to the Microsoft Defender ATP security baseline
-description: The Microsoft Defender ATP security baseline sets Microsoft Defender ATP security controls to provide optimal protection.
-keywords: Intune management, MDATP, WDATP, Microsoft Defender, advanced threat protection ASR, security baseline
+title: Increase compliance to the Microsoft Defender for Endpoint security baseline
+description: The Microsoft Defender for Endpoint security baseline sets Microsoft Defender for Endpoint security controls to provide optimal protection.
+keywords: Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Microsoft Defender for Endpoint ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,11 +36,11 @@ Before you can deploy and track compliance to security baselines:
 - [Enroll your devices to Intune management](configure-machines.md#enroll-devices-to-intune-management)
 - [Ensure you have the necessary permissions](configure-machines.md#obtain-required-permissions)
 
-## Compare the Microsoft Defender ATP and the Windows Intune security baselines
+## Compare the Microsoft Defender for Endpoint and the Windows Intune security baselines
 The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Microsoft Defender Antivirus. In contrast, the Defender for Endpoint baseline provides settings that optimize all the security controls in the Defender for Endpoint stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
 
 - [Windows security baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Microsoft Defender ATP baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Microsoft Defender for Endpoint baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Ideally, devices onboarded to Defender for Endpoint are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Defender for Endpoint security baseline layered on top to optimally configure the Defender for Endpoint security controls. To benefit from the latest data on risks and threats and to minimize conflicts as baselines evolve, always apply the latest versions of the baselines across all products as soon as they are released.
 

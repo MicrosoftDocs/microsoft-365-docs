@@ -1,8 +1,8 @@
 ---
-title: Set preferences for Microsoft Defender ATP for Linux
+title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Describes how to configure Microsoft Defender ATP for Linux in enterprises.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set preferences for Microsoft Defender for Endpoint for Linux
+# Set preferences for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,9 @@ ms.technology: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Defender for Endpoint for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
+>This topic contains instructions for how to set preferences for Defender for Endpoint on Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
 
-In enterprise environments, Defender for Endpoint for Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise environments, Defender for Endpoint on Linux can be managed through a configuration profile. This profile is deployed from the management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
 This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions on how to deploy the profile.
 
@@ -445,4 +445,4 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint for Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.

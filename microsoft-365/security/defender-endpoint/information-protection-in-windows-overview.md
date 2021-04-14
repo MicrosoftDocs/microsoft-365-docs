@@ -36,7 +36,7 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 
 
 >[!TIP]
-> Read our blog post about how [Microsoft Defender ATP integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
+> Read our blog post about how [Microsoft Defender for Endpoint integrates with Microsoft Information Protection to discover, protect, and monitor sensitive data on Windows devices](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/).
 
 Defender for Endpoint applies the following methods to discover, classify, and protect data:
 

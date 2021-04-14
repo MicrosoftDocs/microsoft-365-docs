@@ -1,7 +1,7 @@
 ---
-title: What's new in Microsoft Defender for Endpoint for iOS
-description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint for iOS.
-keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
+title: What's new in Microsoft Defender for Endpoint on iOS
+description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on iOS.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# What's new in Microsoft Defender for Endpoint for iOS
+# What's new in Microsoft Defender for Endpoint on iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

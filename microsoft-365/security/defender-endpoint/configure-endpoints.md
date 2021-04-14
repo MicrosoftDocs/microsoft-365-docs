@@ -1,6 +1,6 @@
 ---
 title: Onboarding tools and methods for Windows 10 devices
-description: Onboard Windows 10 devices so that they can send sensor data to the Microsoft Defender ATP sensor
+description: Onboard Windows 10 devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
 keywords: Onboard Windows 10 devices, group policy, endpoint configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

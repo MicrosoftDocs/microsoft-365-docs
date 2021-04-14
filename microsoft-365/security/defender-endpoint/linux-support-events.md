@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot missing events or alerts issues for Microsoft Defender ATP for Linux
-description: Troubleshoot missing events or alerts issues in Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, events
+title: Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
+description: Troubleshoot missing events or alerts issues in Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,13 +20,13 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint for Linux
+# Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
 This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.
 

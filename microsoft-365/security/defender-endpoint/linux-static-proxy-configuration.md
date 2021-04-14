@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Linux static proxy discovery
+title: Microsoft Defender for Endpoint on Linux static proxy discovery
 ms.reviewer: 
-description: Describes how to configure Microsoft Defender ATP for static proxy discovery.
-keywords: microsoft, defender, atp, linux, installation, proxy
+description: Describes how to configure Microsoft Defender for Endpoint for static proxy discovery.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure Microsoft Defender for Endpoint for Linux for static proxy discovery
+# Configure Microsoft Defender for Endpoint on Linux for static proxy discovery
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender ATP can discover a proxy server using the ```HTTPS_PROXY``` environment variable. This setting must be configured **both** at installation time and after the product has been installed.
+Microsoft Defender for Endpoint can discover a proxy server using the ```HTTPS_PROXY``` environment variable. This setting must be configured **both** at installation time and after the product has been installed.
 
 ## Installation time configuration
 

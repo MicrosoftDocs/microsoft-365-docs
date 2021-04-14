@@ -1,7 +1,7 @@
 ---
 title: Configure alert notifications in Microsoft Defender for Endpoint
 description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
-keywords: email notifications, configure alert notifications, microsoft defender atp notifications, microsoft defender atp alerts, windows 10 enterprise, windows 10 education
+keywords: email notifications, configure alert notifications, Microsoft Defender for Endpoint notifications, Microsoft Defender for Endpoint alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Configure alert notifications in Microsoft Defender ATP
+# Configure alert notifications in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: Resources for Microsoft Defender ATP for Mac
-description: Resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Resources for Microsoft Defender for Endpoint on Mac
+description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Resources for Microsoft Defender for Endpoint for Mac
+# Resources for Microsoft Defender for Endpoint on Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -75,7 +75,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender for Endpoint for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender for Endpoint on Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
@@ -138,7 +138,7 @@ To enable autocompletion in zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on Mac and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
