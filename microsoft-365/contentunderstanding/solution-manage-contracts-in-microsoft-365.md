@@ -31,6 +31,8 @@ The first step in planning your contract management system is to understand the 
 
 ## Overview of the solution
 
+  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png) </br>
+
 This contract management solution guidance includes four components of Microsoft 365:
 
 - **Microsoft SharePoint Syntex**: Create models to identify and classify your contract files and then extract the appropriate data from them.
@@ -41,9 +43,9 @@ This contract management solution guidance includes four components of Microsoft
 
 - **Power Automate**: Use flows to process contracts through the approval process, and then to a third-party application for payment.
 
-  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png) </br>
-
 ### How it all works
+
+  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png) </br>
 
 1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and saves it to the document library.
 
@@ -57,8 +59,6 @@ This contract management solution guidance includes four components of Microsoft
 4. By using Power Automate, contracts are moved through the approval process in the Teams site. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and the contract is forwarded to a third-party financial application for payment.
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
-
-  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png) </br>
 
 ## Creating the solution
 
