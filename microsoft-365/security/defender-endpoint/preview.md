@@ -57,6 +57,12 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 The following features are included in the preview release:
 
+- [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
+
+   > [!IMPORTANT]
+   > Standard discovery will be the default mode for all preview customers starting May 10, 2021. You can choose to retain the basic mode through the settings page. 
+
+
 - [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.

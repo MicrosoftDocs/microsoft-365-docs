@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Schedule scans with Microsoft Defender for Endpoint on Mac
+# Schedule scans with Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

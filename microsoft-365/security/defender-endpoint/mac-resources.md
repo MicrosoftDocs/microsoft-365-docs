@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Resources for Microsoft Defender for Endpoint on Mac
+# Resources for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -75,7 +75,7 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender for Endpoint on Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender for Endpoint on macOS. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
@@ -138,7 +138,7 @@ To enable autocompletion in zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on macOS and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

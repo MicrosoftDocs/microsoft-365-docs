@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint provides a comprehensive server protection solut
 The Microsoft Defender for Endpoint connector lets you stream alerts from Microsoft Defender for Endpoint into Azure Sentinel. This will enable you to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
 
 ### Azure Information Protection
-Keep sensitive data secure while enabling productivity in the workplace through data discovery and data protection.
+We recently deprecated the Azure Information Protection integration as our Endpoint DLP capabilities incorporate an improved discovery and protection solution for sensitive data stored on endpoint devices that facilitates greater visibility and integration between solutions. This was announced in the following [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). We recommend that customers move to using Endpoint DLP.
 
 ### Conditional Access
 Microsoft Defender for Endpoint's dynamic device risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 
