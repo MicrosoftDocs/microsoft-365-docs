@@ -84,7 +84,7 @@ The first step is to prepare the report for downloading to your computer exporti
 
 4. Configure the **Enable de-duplication for Exchange content** option.
   
-   - If you select this option, the count of duplicate messages (before de-duplication and after de-duplication) is included in the export summary report. Also, only one copy of a message will be included in the manifest.xml file. But the export results report will contain a row for every copy of a duplicate message so that you can identify the mailboxes that contain a copy of the duplicate message. For more information about the exported reports, see [What's included in the report](#whats-included-in-the-reports).
+   - If you select this option, the count of duplicate messages (before de-duplication and after de-duplication) is included in the export summary report. Also, only one copy of a message will be included in the manifest.xml file. But the export results report will contain a row for every copy of a duplicate message so that you can identify the mailboxes that contain a copy of the duplicate message. For more information about the exported reports, see [What's included in the report](#whats-included-in-the-report).
 
    - If you don't select this option, the export reports will contain information about all messages returned by the search, including duplicates.
 
