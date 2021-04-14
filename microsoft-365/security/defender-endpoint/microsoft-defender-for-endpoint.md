@@ -47,13 +47,15 @@ Ensure that the Windows 10 devices on which you plan to deploy Removable Storage
 
 You can use the following properties to create a removable storage group:
 
-1.
+1. 
+
 **Property name**: Group Id
 
 **Description**: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique Id, represents the group and will be used in the policy.
 
 **Options**: - 
 
+2. 
 
 **Property name**: DescriptorIdList
 
@@ -75,6 +77,7 @@ You can use the following properties to create a removable storage group:
     - _55E0: match any media with PID=55E0
     - 0751_: match any media with VID=0751
 
+3. 
 
 **Property name**: MatchType
 
