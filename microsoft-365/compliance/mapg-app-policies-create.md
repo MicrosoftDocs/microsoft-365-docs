@@ -146,7 +146,7 @@ On the **Define Policy Status** page, select one of these options:
 <!--
 ## Configure a user-based policy
 
-## Ceate an app metadata-based policy
+## Create an app metadata-based policy
 
 Publish metadata-based policies
 
