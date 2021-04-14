@@ -27,7 +27,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
@@ -726,8 +726,10 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
+
 ## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
 Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+
 
 ## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
