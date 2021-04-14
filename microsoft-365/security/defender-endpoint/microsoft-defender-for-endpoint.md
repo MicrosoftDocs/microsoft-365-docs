@@ -76,7 +76,6 @@ You can use the following properties to create a removable storage group:
     - 0751_55E0: match this exact VID/PID pair
     - _55E0: match any media with PID=55E0
     - 0751_: match any media with VID=0751
-
 3. 
 
 **Property name**: MatchType
