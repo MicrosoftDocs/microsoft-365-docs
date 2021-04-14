@@ -12,6 +12,7 @@ ms.author: maccruz
 author: schmurky
 localization_priority: normal
 manager: dansimp
+ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
@@ -50,7 +51,7 @@ We recommend that software vendors follow the various guidelines in [Partnering 
 
 In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact information of running software as *EstimatedImpact*:
 	
-```Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%```
+`Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
 | Field name | Description |
 |---|---|
@@ -61,7 +62,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 | MaxTimeFile | The path of the file accessed by this process for which the longest scan of `MaxTime` duration was recorded |
 | EstimatedImpact |	The percentage of time spent in scans for files accessed by this process out of the period in which this process experienced scan activity |
 
-If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](collect-diagnostic-data.md).
 
 If the previous step doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections. 
 	 
@@ -69,7 +70,7 @@ If the previous step doesn't solve the problem, you can collect more information
 
 Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring. 
 
-1. Download [Process Monitor v3.60](https://docs.microsoft.com/sysinternals/downloads/procmon) to a folder like ```C:\temp```. 
+1. Download [Process Monitor v3.60](docs.microsoft.com/sysinternals/downloads/procmon) to a folder like `C:\temp`. 
 2. To remove the file's mark of the web:
     1. Right-click **ProcessMonitor.zip** and select **Properties**.
     1. Under the *General* tab, look for *Security*.
@@ -78,7 +79,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     
     ![Remove MOTW](images/procmon-motw.png) 
 
-3. Unzip the file in ```C:\temp``` so that the folder path will be ```C:\temp\ProcessMonitor```. 
+3. Unzip the file in `C:\temp` so that the folder path will be `C:\temp\ProcessMonitor`. 
 1. Copy **ProcMon.exe**  to the Windows client or Windows server you're troubleshooting.  
 5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Doing this will minimize the number of processes to check.
 6. You can launch ProcMon in two ways.
@@ -98,9 +99,9 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     2. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
     ![cmd procmon](images/cmd-procmon.png)
  
-        ```
+        `
         Procmon.exe /AcceptEula /Noconnect /Profiling
-        ```
+        `
         
         >[!TIP] 
         >Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
@@ -123,10 +124,10 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.<br>
 ![save settings](images/procmon-savesettings1.png)
 
-12. For better tracking, change the default path from ```C:\temp\ProcessMonitor\LogFile.PML``` to ```C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML``` where:
-    - ```%ComputerName%``` is the device name
-    - ```MMDDYEAR``` is the month, day, and year
-    -  ```Repro_of_issue``` is the name of the issue you're trying to reproduce
+12. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
+    - `%ComputerName%` is the device name
+    - `MMDDYEAR` is the month, day, and year
+    -  `Repro_of_issue` is the name of the issue you're trying to reproduce
 
     >[!TIP] 
     > If you have a working system, you might want to get a sample log to compare.
@@ -138,7 +139,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
 You can use Windows Performance Recorder (WPR) to include additional information in your submission to Microsoft support. WPR is a powerful recording tool that creates Event Tracing for Windows recordings. 
 
-WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from [Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install). You can also download it as part of the Windows 10 Software Development Kit at [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from [Download and install the Windows ADK](docs.microsoft.com/windows-hardware/get-started/adk-install). You can also download it as part of the Windows 10 Software Development Kit at [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 You can use the WPR user interface by following the steps in [Capture performance logs using the WPR UI](#capture-performance-logs-using-the-wpr-ui). 
 
@@ -156,11 +157,11 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 Select **More**. Select **Run as administrator**.
 3. When the User Account Control dialog box appears, select **Yes**.
     ![UAC](images/wpt_yes.png)
-4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as ```WD.wprp``` to a folder like ```C:\temp```. 
+4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `WD.wprp` to a folder like `C:\temp`. 
      
 1. On the WPR dialog box, select **More options**.
     ![Select more options](images/wpr-03.png)
-5. Select **Add Profiles...** and browse to the path of the ```WD.wprp``` file.
+5. Select **Add Profiles...** and browse to the path of the `WD.wprp` file.
 1. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
     ![in-file](images/wpr-infile.png)
     >[!WARNING]
@@ -191,7 +192,7 @@ Select **More**. Select **Run as administrator**.
 15. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
     ![Fill up details](images/wpr-12.png)
-    <br>Select **File Name:** to determine where your trace file will be saved. By default, it is saved to ```%user%\Documents\WPR Files\```. 
+    <br>Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`. 
     Select **Save**. 
 16. Wait while the trace is being merged.
     ![WPR gathering general trace](images/wpr-13.png)
@@ -209,7 +210,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 4. When the User Account Control dialog box appears, select **Yes**.
 5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
-    ```
+    ```dos
     wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
     ```
     
@@ -220,12 +221,12 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
     >Keep the data collection no to more than five minutes.  Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
 7. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
 
-    ```
+    ```dos
     wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
     ```
 8. Wait until the trace is merged. 
 9. Include both the file and the folder in your submission to Microsoft support.
 
 ## See also
-- [Collect Microsoft Defender AV diagnostic data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data)
-- [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)
+- [Collect Microsoft Defender AV diagnostic data](collect-diagnostic-data.md)
+- [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
