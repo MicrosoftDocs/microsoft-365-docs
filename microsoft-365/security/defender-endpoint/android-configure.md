@@ -1,6 +1,6 @@
 ---
-title: Configure Microsoft Defender for Endpoint for Android features
-description: Describes how to configure Microsoft Defender for Endpoint for Android
+title: Configure Microsoft Defender for Endpoint on Android features
+description: Describes how to configure Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint for Android  
-Microsoft Defender for Endpoint for Android along with Microsoft Intune and Azure Active
+Microsoft Defender for Endpoint on Android along with Microsoft Intune and Azure Active
 Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk levels. Defender for Endpoint is a Mobile Threat Defense
 (MTD) solution that you can deploy to leverage this capability via Intune.
@@ -51,5 +51,5 @@ Defender for Endpoint for Android allows IT Administrators the ability to config
 For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Related topics
-- [Overview of Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md)
-- [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md)
+- [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+- [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
