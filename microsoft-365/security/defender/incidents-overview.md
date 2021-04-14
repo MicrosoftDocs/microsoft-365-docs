@@ -46,7 +46,6 @@ Because piecing the individual alerts together to gain insight into an attack ca
 Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).
 
 <br>
-<br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 

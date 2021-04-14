@@ -28,7 +28,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Part of your incident investigation can include user accounts. Start with the **Users** tab for an incident from (**Incidents & alerts >** *incident* **> Users**). 
+Part of your incident investigation can include user accounts. Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**. 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
