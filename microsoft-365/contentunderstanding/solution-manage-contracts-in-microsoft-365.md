@@ -23,7 +23,7 @@ The first step in planning your contract management system is to understand the 
 
 - **Identify contracts**. Your organization works with a number of documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. We need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
-- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts has been either approved or rejected, and whether payment has processed. 
+- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts has been either approved or rejected, and whether payment has been processed. 
 
 - **Site to manage contract approvals**. Your organization needs to set up a collaborative site in which all required stakeholders can easily review contracts. Stakeholders should be able to review the whole contract if needed, but mostly care about seeing several key fields from each contract (for example, customer name, PO number, and total cost). Stakeholders should be able to easily approve or reject incoming contracts.
 
