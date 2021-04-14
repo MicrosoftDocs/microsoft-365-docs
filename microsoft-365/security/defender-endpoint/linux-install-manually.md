@@ -33,7 +33,7 @@ ms.technology: mde
 
 This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
 
-- [Deploy Microsoft Defender for Endpoint on Linux manually](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [Deploy Microsoft Defender for Endpoint on Linux manually](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
   - [Configure the Linux software repository](#configure-the-linux-software-repository)
     - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
