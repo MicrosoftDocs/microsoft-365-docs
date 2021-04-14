@@ -64,7 +64,7 @@ Before diving into the details, take a look at the properties and summary of the
 
 When you do, a summary pane opens with key information about the alert, such as severity, who it is assigned to, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the alert. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-side-panel.png" alt-text="Example of the summary pane for an alert":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary pane for an alert":::
 
 From here, you can select **Manage alert**, which displays a pane from which you can specify:
 
