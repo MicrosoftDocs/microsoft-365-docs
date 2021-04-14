@@ -157,15 +157,16 @@ Select **More**. Select **Run as administrator**.
 3. When the User Account Control dialog box appears, select **Yes**.
     ![UAC](images/wpt_yes.png)
 4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as ```WD.wprp``` to a folder like ```C:\temp```. 
-     >[!WARNING]
-     >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
-    This custom profile provides the necessary context for in-depth performance analysis.
- 
+     
 1. On the WPR dialog box, select **More options**.
     ![Select more options](images/wpr-03.png)
 5. Select **Add Profiles...** and browse to the path of the ```WD.wprp``` file.
 1. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
     ![in-file](images/wpr-infile.png)
+    >[!WARNING]
+    >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
+    This custom profile provides the necessary context for in-depth performance analysis.
+ 
 1. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
     1. Ensure no profiles are selected under the *First-level triage*, *Resource Analysis* and *Scenario Analysis* groups.
     2. Select **Custom measurements**.
@@ -173,7 +174,7 @@ Select **More**. Select **Run as administrator**.
     4. Select **Verbose** under *Detail* level.
     1. Select **File** or **Memory** under Logging mode. 
     >[!important]
-    >You should select *File* to use the file logging mode if the performance issue can be reproduced directly by the user. Most issues fall under this category. However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select *Memory* to use the memory logging mode. This ensures that the trace log will not inflate excessively for the latter cases.
+    >You should select *File* to use the file logging mode if the performance issue can be reproduced directly by the user. Most issues fall under this category. However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select *Memory* to use the memory logging mode. This ensures that the trace log will not inflate excessively due to the long run time.
 9. Now you are ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
     ![Hipe options](images/wpr-08.png)
 
