@@ -63,7 +63,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 
 If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
 
-If this doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections. 
+If the previous step doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections. 
 	 
 ## Capture process logs using Process Monitor
 
@@ -79,7 +79,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     ![Remove MOTW](images/procmon-motw.png) 
 
 3. Unzip the file in ```C:\temp``` so that the folder path will be ```C:\temp\ProcessMonitor```. 
-1. Copy **ProcMon.exe**  to the Windows client or Windows server that you are troubleshooting.  
+1. Copy **ProcMon.exe**  to the Windows client or Windows server you're troubleshooting.  
 5. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed. Doing this will minimize the number of processes to check.
 6. You can launch ProcMon in two ways.
     1. Right-click **ProcMon.exe** and select **Run as administrator**. 
@@ -106,7 +106,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
         >Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
         >![Minimize Procmon](images/procmon-minimize.png)
     
-7. After following one of the procedures in step 6, you will next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
+7. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
  
     ![Filter out Process Name is System Exclude](images/procmon-filter-options.png) 
 
@@ -118,7 +118,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     >Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
     
 
-10. Once you have two to four minutes of process activity captured during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
+10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
 11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.<br>
 ![save settings](images/procmon-savesettings1.png)
@@ -142,7 +142,7 @@ WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can b
 
 You can use the WPR user interface by following the steps in [Capture performance logs using the WPR UI](#capture-performance-logs-using-the-wpr-ui). 
 
-Alternatively, you can also use the command-line tool *wpr.exe* which is available in Windows 8 and later versions  by following the steps in [Capture performance logs using the WPR CLI](#capture-performance-logs-using-the-wpr-cli).
+Alternatively, you can also use the command-line tool *wpr.exe*, which is available in Windows 8 and later versions  by following the steps in [Capture performance logs using the WPR CLI](#capture-performance-logs-using-the-wpr-cli).
 
 
 ### Capture performance logs using the WPR UI
@@ -175,7 +175,7 @@ Select **More**. Select **Run as administrator**.
     1. Select **File** or **Memory** under Logging mode. 
     >[!important]
     >You should select *File* to use the file logging mode if the performance issue can be reproduced directly by the user. Most issues fall under this category. However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select *Memory* to use the memory logging mode. This ensures that the trace log will not inflate excessively due to the long run time.
-9. Now you are ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
+9. Now you're ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
     ![Hipe options](images/wpr-08.png)
 
     >[!TIP]
@@ -204,8 +204,7 @@ Select **More**. Select **Run as administrator**.
 ### Capture performance logs using the WPR CLI
 
 The command-line tool *wpr.exe* is part of the operating system starting with Windows 8. To collect a WPR trace using the command-line tool wpr.exe:
-1. Download and install WPR if it is not already available from the operating system.
-2. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `WD.wprp` in a local directory such as `C:\traces`.
+1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `WD.wprp` in a local directory such as `C:\traces`.
 3. Right-click the **Start Menu** icon and select **Windows Powershell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
 4. When the User Account Control dialog box appears, select **Yes**.
 5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
