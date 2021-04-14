@@ -38,11 +38,11 @@ The **Alerts queue** shows the current set of alerts. You get to the incident qu
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Example of the alerts queue":::
 
-Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section.
+Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear here.
 
-By default, the Alerts queue in the Microsoft 365 security center displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. You can also 
+By default, the alerts queue in the Microsoft 365 security center displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. 
 
-From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can view a specify how the alerts are ordered. Here is an example.
+From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can view a specify a subset of the alerts. Here's an example.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue":::
 
@@ -52,45 +52,11 @@ You can filter alerts according to these criteria:
 - Status
 - Category
 - Detection source
+- Tags
 - Policy
 - Impacted assets
-- First activity
-- Last activity
-
 
 ## Analyze an alert
-
-Before diving into the details, take a look at the properties and summary of the alert. You can start by selecting the alert on its row.
-
-When you do, a summary pane opens with key information about the alert, such as severity, who it is assigned to, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the alert. Here's an example.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary pane for an alert":::
-
-From here, you can select **Manage alert**, which displays a pane from which you can specify:
-
-- The alert status (New, Resolved, In progress).
-- The alert's classification  (Not set, True alert, False Alert).
-- For the classification as a true alert, the type of threat for the alert in **Determination** field.
-- A comment on the alert.
-
-> [!NOTE]
-> One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 in incrementally being rolled out and is currently in preview. <br>
-> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
-
-From this pane, you can perform these additional actions: 
-
-- Open the main alert page
-- Consult a Microsoft threat expert
-- View submission
-- Link to another incident
-- See the alert in a timeline
-- Create a suppression rule
-
-Here's an example.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 security center":::
-
-The list of additional actions depends on the type of alert.
 
 To see the main alert page, select the name of the alert. Here's an example.
 
@@ -132,22 +98,39 @@ Once you've selected an entity of interest, the details page changes to display 
 
 ### Manage alerts
 
-Once you're done investigating the alerts, you can go back to the alert you started with, mark the alert's status as **Resolved** and classify it as either a **False alert** or **True** alert. Classifying alerts helps tune your product to provide more true alerts and less false alerts.
+To manage an alert, select the alert in the alerts queue on its row to see a **Manage alert** pane. Here's an example.
 
-## Manage the unified alert queue
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary pane for an alert":::
 
-Selecting Alerts under Incidents & Alerts in the Microsoft 365 security center navigation page brings you to the unified alert queue. Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear in this section. 
+The **Manage alert** pane allows you to specify:
 
-![Image of sample alert page](../../media/unified-alert-queue.png)
-
-The Alerts queue shows a list of alerts that were flagged in your network. By default, the queue displays alerts seen in the last 30 days. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
+- The alert status (New, Resolved, In progress).
+- The alert's classification  (Not set, True alert, False Alert).
+- For the classification as a true alert, the type of threat for the alert in **Determination** field.
+- A comment on the alert.
 
 > [!NOTE]
-> At the time of launch, the unified alerts queue will only have 7 days’ worth of Microsoft Defender for Office 365 alerts available. 
+> One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 in incrementally being rolled out and is currently in preview. <br>
+> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
 
-The queue will continue to build over time. If you need to triage alerts prior to the launch of the unified alerts queue, use the alerts queue in the [Security and Compliance Center](https://protection.office.com/viewalerts).
+From this pane, you can perform these additional actions: 
 
-To start an investigation on an incident, see [investigate incidents in Microsoft 365 Defender](investigate-incidents.md).
+- Open the main alert page
+- Consult a Microsoft threat expert
+- View submission
+- Link to another incident
+- See the alert in a timeline
+- Create a suppression rule
+
+Here's an example.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 security center":::
+
+The list of additional actions depends on the type of alert.
+
+Once you're done investigating an alert, you can go back to the alert and mark the alert's status as **Resolved** and classify it as either a **False alert** or **True alert**. 
+
+Classifying alerts helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
 
 ## See also
 
