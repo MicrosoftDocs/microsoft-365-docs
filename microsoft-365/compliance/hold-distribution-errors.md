@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot eDiscovery legal hold errors"
+title: "Troubleshoot eDiscovery hold errors"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
