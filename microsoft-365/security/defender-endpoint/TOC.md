@@ -222,6 +222,7 @@
 
 ### [Microsoft Defender for Endpoint on iOS]()
 #### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+#### [What's New](ios-whatsnew.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender for Office 365](../office-365-security/overview.md)
+# [Defender for Office 365](../office-365-security/index.yml)
+# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
