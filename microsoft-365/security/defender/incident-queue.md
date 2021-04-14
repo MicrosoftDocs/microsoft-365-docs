@@ -28,23 +28,20 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
+Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which help them better understand and deal with complex threats across your organization.
 
+The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision. 
 
-Microsoft 365 Defender applies correlation analytics and aggregates all related alerts and investigations from different products into one incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire estate and suite of products. This view gives your security operations analyst the broader attack story, which helps them better understand and deal with complex threats across the organization.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
 
-The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
+By default, the queue in the Microsoft 365 security center displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
-
-![Image of incidents queue](../../media/incidents-queue.png) 
-
-By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days. The most recent incident is at the top of the list so you can see it first.
-
-The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities. This helps you make an informed decision regarding prioritization of incidents to handle.
+The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for anaylsis.
 
 For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
@@ -57,52 +54,64 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 ## Available filters
 
-### Assigned to
-You can choose to show alerts that are assigned to you or those handled by automation.
+From the default incident queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
 
-### Categories
-Choose categories to focus on specific tactics, techniques, or attack components seen. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue":::
 
-### Classification
-Filter incidents based on the set classifications of the related alerts. The values include true alerts, false alerts, or not set.
+This table lists the filter names that are available.
 
-### Data sensitivity
-Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.
+| Filter name | Description |
+|:-------|:-----|
+| Assigned to | You can choose to show alerts that are assigned to you or those handled by automation. |
+| Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
+| Classification | Filter incidents based on the set classifications of the related alerts. The values include true alerts, false alerts, or not set. |
+| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> Only applicable if Microsoft Information Protection is turned on.|
+| Device group | Filter by defined device groups. |
+| Investigation state | Filter incidents by the status of automated investigation.  |
+| Multiple categories | You can choose to see only incidents that have mapped to multiple categories  and can thus potentially cause more damage. |
+| Multiple service sources  | Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365). |
+| OS platform | Limit the incident queue view by operating system. |
+| Service sources | By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source. |
+| Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. |
+| Status | You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved. |
+|||
 
->[!NOTE]
->Only applicable if Microsoft Information Protection is turned on.
+## Incident response workflow
 
-### Device group
-Filter by defined device groups.
+Here is the typical workflow for responding to incidents:
 
-### Investigation state
-Filter incidents by the status of automated investigation. 
+1. Identify and triage the highest priority incidents for investigation and resolution.
+2. For each high-priority incident, begin an [investigation](investigate-incidents.md):
 
-### Multiple categories 
-You can choose to see only incidents that have mapped to multiple categories  and can thus potentially cause more damage. 
+   a. View the summary of the incident to understand it's scope, what entities are affected, and severity (the **Summary** tab).
 
-### Multiple service sources 
-Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).
+   b. Begin looking at the alerts to understand their origin, scope, and severity (the **Alerts** tab).
 
-### OS platform
-Limit the incident queue view by operating system.
+   c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
 
-### Service sources
-By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source. 
+   d. See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).
+   
+   e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
-### Severity
-The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. 
+As you investigate, you should be concerned with:
 
-### Status
-You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
+- Containment: Reducing any additional impact on your tenant.
+- Eradication: Removing the security threat.
+- Recovery: Restoring your tenant resources to the state they were in before the attack.
 
+After you resolve the incident, take a moment to learn from it to:
 
+- Understand the type of the attack and its impact.
+- Research the attack in the security community for a security attack trend.
+- Recall the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
 
+Here's a summary of the basic process.
 
-## Next steps
-After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.
-- [Investigate incidents](investigate-incidents.md)
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="The basic process for investigating incidents":::
 
+## Next step
+
+After you've determined which incident requires the highest priority, select it and begin your [investigation](investigate-incidents.md).
 
 ## See also
 - [Incidents overview](incidents-overview.md)
