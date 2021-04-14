@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: Configure and view alerts for DLP policies (preview)
               href: dlp-configure-view-alerts-policies.md
-            - name: Use sensitivity labels as a condition in DLP policies (preview)
+            - name: Use sensitivity labels as a condition in DLP policies
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
-            - name: Cisco Jabber
+            - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle (preview)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber on PostgreSQL (preview)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
