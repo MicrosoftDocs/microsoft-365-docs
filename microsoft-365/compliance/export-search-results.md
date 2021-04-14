@@ -135,7 +135,7 @@ See the next section for instructions to download the exported search results.
 
 The next step is to download the search results from the Azure Storage location to your local computer.
   
-1. On the **Content search** page, select the **Exports** tab
+1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
   
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
   
@@ -143,6 +143,9 @@ The next step is to download the search results from the Azure Storage location 
 
 3. On the flyout page under **Export key**, click **Copy to clipboard**. You use this key in step 6 to download the search results.
   
+   > [!IMPORTANT]
+   > Because anyone can install and start the eDiscovery Export tool, and then use this key to download the search results, be sure to take precautions to protect this key just like you would protect passwords or other security-related information.
+
 4. At the top of the flyout page, click **Download results**.
 
 5. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
@@ -225,10 +228,10 @@ For information about limits when exporting content search results, see the "Exp
 
   - **Skipped Items** When you export search results from SharePoint and OneDrive for Business sites, the export will usually include a skipped items report (SkippedItems.csv). The items cited in this report are typically items that won't be downloaded, such as a folder or a document set. Not exporting these types of items is by design. For other items that were skipped, the 'Error Type' and 'Error Details' field in the skipped items report show the reason the item was skipped and wasn't downloaded with the other search results.
 
-  - **Trace Log** Contains detailed logging information about the export process and can help uncover issues during export.
+  - **Trace.log** Contains detailed logging information about the export process and can help uncover issues during export. If you open a ticket with Microsoft Support about an issue related to exporting search results, you may be asked to provide this trace log.
   
     > [!NOTE]
-    > You can just export these documents without having to export the actual search results. See [Export a Content search report](export-a-content-search-report.md). 
+    > You can just export these documents without having to export the actual search results. See [Export a Content search report](export-a-content-search-report.md).
   
 ### Exporting partially indexed items
   
