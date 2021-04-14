@@ -60,13 +60,13 @@ This contract management solution guidance includes four components of Microsoft
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
-## Creating the solution
+## Create the solution
 
 The next sections will go into detail about how we configured our example of our contracts management solution. It is divided into three components:
 
-- Step 1: Use SharePoint Syntex to identify contract files and extract data
-- Step 2: Use Microsoft Teams to create your contract management site
-- Step 3: Use Power Automate to create your flow to process your contracts
+- Step 1. Use SharePoint Syntex to identify contract files and extract data
+- Step 2. Use Microsoft Teams to create your contract management site
+- Step 3. Use Power Automate to create your flow to process your contracts
 
 ## Step 1: Use SharePoint Syntex to identify contract files and extract data
 
