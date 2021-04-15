@@ -22,7 +22,7 @@ ms.technology: mde
 ---
 
 
-# Microsoft Defender for Endpoint for Mac - system extensions public preview)
+# Microsoft Defender for Endpoint on macOS - system extensions public preview)
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

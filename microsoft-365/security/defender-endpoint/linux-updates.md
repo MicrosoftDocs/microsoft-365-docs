@@ -21,7 +21,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Deploy updates for Microsoft Defender for Endpoint for Linux
+# Deploy updates for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

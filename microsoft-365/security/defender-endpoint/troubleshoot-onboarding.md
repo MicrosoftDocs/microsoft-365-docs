@@ -287,8 +287,9 @@ If the verification fails and your environment is using a proxy to connect to th
     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > In addition, you must ensure that wdfilter.sys and wdboot.sys are set to their default start values of "0".
+   > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
    >
+   > Example default configurations for WdBoot and WdFilter:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
@@ -296,8 +297,8 @@ If the verification fails and your environment is using a proxy to connect to th
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md#server-mma)
-- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
+- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
 
 You might also need to check the following:
 
