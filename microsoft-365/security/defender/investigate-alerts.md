@@ -75,6 +75,20 @@ An alert page is composed of these sections:
 
 Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
 
+### Alert sources
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoinnt, Microsoft Defender for Office 365, and Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+
+It's important to note that the prepended character does not change the GUID of the alert.
+
+Alert source | Prepended character 
+:---|:---
+Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Endpoint |
+Microsoft Defender for Identity |
+Microsoft Cloud App Security |
+
+
+
 ### Analyze affected assets
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert. 
