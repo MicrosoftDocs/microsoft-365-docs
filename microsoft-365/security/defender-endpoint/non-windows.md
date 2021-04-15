@@ -112,7 +112,7 @@ Customers can obtain Microsoft Defender for Endpoint on macOS through a standalo
 Microsoft Defender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365
 Security.
 
-Recently announced capabilities of Microsoft Defender for Endpoint for Android and iOS 
+Recently announced capabilities of Microsoft Defender for Endpoint on Android and iOS 
 are included in the above mentioned offers as part of the five qualified
 devices for eligible licensed users.
 
