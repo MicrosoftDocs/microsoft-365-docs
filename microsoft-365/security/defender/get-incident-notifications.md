@@ -67,7 +67,7 @@ Follow these steps to create a new rule and customize email notification setting
 
 To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Edit rule** and make your changes on the **Basics**, **Notification settings**, and **Recipients** pages.
 
-To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Delete*.
+To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Delete**.
 
 ## See also
 - [Incidents overview](incidents-overview.md)
