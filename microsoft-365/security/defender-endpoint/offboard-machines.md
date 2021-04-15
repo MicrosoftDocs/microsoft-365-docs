@@ -1,6 +1,6 @@
 ---
-title: Offboard devices from the Microsoft Defender ATP service
-description: Onboard Windows 10 devices, servers, non-Windows devices from the Microsoft Defender ATP service
+title: Offboard devices from the Microsoft Defender for Endpoint service
+description: Onboard Windows 10 devices, servers, non-Windows devices from the Microsoft Defender for Endpoint service
 keywords: offboarding, microsoft defender for endpoint offboarding, windows atp offboarding
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
