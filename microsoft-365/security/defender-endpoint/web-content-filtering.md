@@ -1,6 +1,6 @@
 ---
 title: Web content filtering
-description: Use web content filtering in Microsoft Defender ATP to track and regulate access to websites based on their content categories.
+description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
 keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

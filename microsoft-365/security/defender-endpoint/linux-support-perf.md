@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot performance issues for Microsoft Defender ATP for Linux
-description: Troubleshoot performance issues in Microsoft Defender ATP for Linux.
+title: Troubleshoot performance issues for Microsoft Defender for Endpoint for Linux
+description: Troubleshoot performance issues in Microsoft Defender Endpoint for Linux.
 keywords: microsoft, defender, atp, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot performance issues for Microsoft Defender for Endpoint for Linux
+# Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

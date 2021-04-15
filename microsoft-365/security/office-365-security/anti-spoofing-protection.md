@@ -116,9 +116,10 @@ Microsoft differentiates between two different types of spoofed messages:
 
   - `reason=000` indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
 
-  - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
+  - `SFTY` is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
 
-For more information about the Category and composite authentication (compauth) values that are related to spoofing, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
+> [!NOTE]
+> If you've gotten a message like ***compauth=fail reason=###*** and need to know about composite authentication (compauth), and the values related to spoofing, see [*Anti-spam message headers in Microsoft 365*](anti-spam-message-headers.md). Or go directly to the [*reason*](anti-spam-message-headers.md) codes.
 
 For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
