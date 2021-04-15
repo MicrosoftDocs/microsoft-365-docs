@@ -45,6 +45,27 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## April 2021
+
+### Admin mobile app
+
+### Manage licenses and bills from the Admin mobile app
+
+- You can now view all available and assigned licenses for your subscriptions. You can also assign or un-assign licenses to users, and add or remove licenses.
+- You can now view detailed invoices in the app.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Admin mobile app assign license page":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Admin mobile app invoice summary page":::
+
+### Updated Message center feed in the Admin mobile app
+
+- You now have a more flexible reading experience of the Message center feed. You now have the ability to filter messages based on service or tags and mark messages as favorite. Bulk actions for marking messages as read, unread or archived has also been added.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
+
 ## Ignite 2021 (March)
 
 Welcome to Microsoft Ignite. We hope you were able to attend some of one of our sessions: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Here's a few of the things we talked about at Ignite.
@@ -202,7 +223,7 @@ Domain management can be complicated, and we've released a new feature to make t
 
 ### Keeping up with Office What's New management
 
-A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+A few months ago, we added a setting that lets you manage the What's New messages that show up in a user's Office apps. This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
 
 ### Docs, training, and videos (June)
 
@@ -395,46 +416,3 @@ A couple of changes in the groups area this month:
 - **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, but the URL is now: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. If you've bookmarked pages, you should update your links; however, content links will be redirected to the new content repo.
-
-## January 2020 - Happy New Year
-
-> [!NOTE]
-> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-### Dark mode
-
-When we first rolled out dark mode, it was only available on the Home page. Dark mode is now out of preview and is in Targeted release across most pages in the admin center.
-
-1. First, you'll need to turn on Targeted Release: Go to **Settings** \> **Settings** \> **Organization profile** \> **Release preferences**.
-1. And then to turn on dark mode, go to the **Home** page, and then select the **Dark mode** button. (It's next to the **Search** field and this article's **What's new** link.)
-1. For any page that has dark mode available, the button is at the top of the page, next to **The new admin center** toggle.
-
-### Office What's New management
-
-Admins want control over how Microsoft communicates "What's New" to their users in the Office apps - and you now have that control. Go to **Settings** \> **Office What's New management Preview**. Select a feature to view its details, and then you can select the **Hide from users** button if you don't want your users to see a particular "what's new" message. For example, your organization might be waiting to let users know about a feature until everyone in your org is trained on it.
-
-![Screen capture of Office What's New preview with a feature's details pane open.](../media/whatsnew-officemgmt-preview.png)
-
-This feature was first released to preview in November, but there have been a few feature updates that you should know about: [Office What's New management preview updates now available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
-
-### Partners
-
-Howdy, Partners! (Couldn't help myself.) We've got an update for you this month, as well. There's a new feature that allows Partners to give CSP customers the option to accept their Microsoft Customer Agreement (MCA) in the **Billing accounts** section of the admin center. In this new experience:
-
-1. The customer receives an invitation email with a link to accept the partner relationship and the MCA.
-2. After the customer signs in, they can view and accept the MCA and partner permissions - right from the admin center.
-
-### Resource mailboxes
-
-The Resource mailboxes list has been updated to the new style. In the Microsoft 365 admin center, go to **Resources** \> **Rooms & equipment**.
-
-### Videos, training, and docs (January)
-
-Check out the small business admin training that we released in January:
-
-- [Create your business website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Find answers and help](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Get help or support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Delete a user](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Choose a Microsoft subscription](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 for business security](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
