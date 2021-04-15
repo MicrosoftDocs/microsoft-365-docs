@@ -219,7 +219,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
 
-### Check that the devices are compliant with the Microsoft Defender ATP service
+### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 
@@ -240,5 +240,5 @@ For more information, see [Introduction to compliance settings in System Center 
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP device](run-detection-test.md)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
