@@ -32,7 +32,7 @@ Part of your incident investigation can include user accounts. Start with the **
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
-To get a quick summary of a user account for the incident, select the check mark next the user account name. Here's an example.
+To get a quick summary of a user account for the incident, select the check mark next to the user account name. Here's an example.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Example of the user account summary pane for an incident in the Microsoft 365 security center":::
 
@@ -46,7 +46,7 @@ The Microsoft 365 security center user page combines information from Microsoft 
 
 This page shows information specific to the security risk of a user account. This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.
 
-From this page, you can perform these additional actions: 
+From this page, you can do these additional actions: 
 
 - Mark the user account as compromised
 - Require the user to sign in again
