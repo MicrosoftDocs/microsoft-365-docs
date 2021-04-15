@@ -1,5 +1,5 @@
 ---
-title: "DLP predicates supported for DLP policy tips in Outlook Web Access"
+title: "Data Loss Prevention policy tips reference"
 f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
@@ -19,7 +19,7 @@ ms.collection:
 description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they are working with content that conflicts with a DLP policy."
 ms.custom: seo-marvel-apr2021
 ---
-# DLP predicates supported for DLP policy tips in Outlook Web Access
+# Data Loss Prevention policy tips reference
 
 DLP policy tips in Outlook Web Access is supported for all the conditions, exceptions and actions that are applicable on Exchange workload in a DLP policy except the following:
 
