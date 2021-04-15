@@ -34,6 +34,16 @@ ms.topic: how-to
 - Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
+**Requirements**
+You can set attack surface reduction rules for devices that are running any of the following editions and versions of Windows:
+
+- Windows 10 Pro, version 1709 or later
+- Windows 10 Enterprise, version 1709 or later
+- Windows Server, version 1803 (Semi-Annual Channel) or later
+- Windows Server 2019
+
+Although attack surface reduction rules don't require a Windows E5 license, if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
+
 Each ASR rule contains one of four settings:
 
 - **Not configured**: Disable the ASR rule
@@ -103,7 +113,7 @@ The values to enable (Block), disable, warn, or enable in audit mode are:
 - 0 : Disable (Disable the ASR rule)
 - 1 : Block (Enable the ASR rule)
 - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block)
+- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block). Warn mode is now available for most of the ASR rules.
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.
 
