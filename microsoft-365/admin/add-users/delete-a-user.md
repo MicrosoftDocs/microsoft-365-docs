@@ -150,7 +150,7 @@ Later when you go through the steps to add another person to your business, you'
 
 ## Delete many users at the same time
 
-See the [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell cmdlet.
+See the [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
 
 ## Fix issues with deleting a user
 

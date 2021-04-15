@@ -1,6 +1,6 @@
 ---
-title: Resources for Microsoft Defender ATP for Mac
-description: Resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+title: Resources for Microsoft Defender for Endpoint for Mac
+description: Resources for Microsoft Defender for Endpoint for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -79,7 +79,7 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 ### Interactive uninstallation
 
-- Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
+- Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
 ### From the command line
 

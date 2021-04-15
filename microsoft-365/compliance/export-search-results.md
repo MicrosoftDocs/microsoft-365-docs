@@ -179,8 +179,6 @@ Here's more information about exporting search results.
 [Exporting partially indexed items](#exporting-partially-indexed-items)
 
 [Exporting individual messages or PST files](#exporting-individual-messages-or-pst-files)
-  
-[Exporting results from more than 100,000 mailboxes](#exporting-results-from-more-than-100000-mailboxes)
 
 [Decrypting RMS-protected email messages and encrypted file attachments](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments)
 
@@ -271,28 +269,6 @@ For information about limits when exporting content search results, see the "Exp
 
 - As previously stated, you must export email search results as individual messages to decrypt RMS-protected messages when they're exported. Encrypted messages will remain encrypted if you export email search results as a PST file.
   
-### Exporting results from more than 100,000 mailboxes
-
-- As previously explained, you have to use Security & Compliance Center PowerShell to download the search results from more than 100,000 mailboxes. You can run the following script in this section to download these search results. Using this script assumes that you have already exported the search results (the export job is displayed on the **Exports** tab in the Content search tool) and now want to download them.
-
-   ```powershell
-   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
-   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
-   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
-   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
-   $exportToken | clip;
-   ```
-
-  In the script, you have to specify the name of the search that you want to export results for. For example, for a search named, `SearchAllMailboxes` replace SEARCHNAME_Export with `SearchAllMailboxes_Export`.
-
-  After you add the name of the search to the script, you can copy the script text and then paste it into a Windows PowerShell window that's [connected to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). After you paste the script, the eDiscovery Export Tool is displayed (like it is when you download search results using the UI):
-
-  ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
-
-  Click in the export key box and then press `CTRL + V` to paste the export key (the script copies the export key to the clipboard). Click **Browse** to specify the location where you want to download the files, and then start the download.
-
-  As previously stated, we recommend that you download search results to a local disk drive due to the high amount of disk activity (reads and writes). Don't download search results to a mapped network drive or other network location.
-
 ### Decrypting RMS-protected email messages and encrypted file attachments
 
 Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will also be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
