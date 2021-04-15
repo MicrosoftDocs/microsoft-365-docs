@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP preview features
+title: Microsoft Defender for Endpoint preview features
 description: Learn how to access Microsoft Defender for Endpoint preview features.
 keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
