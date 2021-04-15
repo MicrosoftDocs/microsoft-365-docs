@@ -1,6 +1,6 @@
 ---
 title: Set up device groups in Jamf Pro
-description: Learn how to set up device groups in Jamf Pro for Microsoft Defender ATP for macOS
+description: Learn how to set up device groups in Jamf Pro for Microsoft Defender for Endpoint for macOS
 keywords: device, group, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
