@@ -38,7 +38,7 @@ You can set up Microsoft 365 Defender to notify your staff with an email for new
 - Device group.
 - Only on the first update per incident.
 
-The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to incidents so you can start your investigation right away. For more on investigating incidents, see [Investigate incidents](investigate-incidents.md).
+The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your investigation right away. For more information, see [Investigate incidents](investigate-incidents.md).
 
 You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added. 
 
@@ -59,10 +59,11 @@ Follow these steps to create a new rule and customize email notification setting
     - **Only notify on first occurrence per incident** - Select if you want a notification only on the first alert that matches your other selections. Later updates or alerts related to the incident won't send additional notifications.
     - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
     - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
-    
-    ![Notification settings for incident email notifications](../../media/get-incident-notifications/incidents-ss-email-notification-settings.png)
-5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**. Select **Next**.
-6. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
+
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Notification settings for incident email notifications":::
+
+5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**. 
+6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
 
 To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Edit rule** and make your changes on the **Basics**, **Notification settings**, and **Recipients** pages.
 
