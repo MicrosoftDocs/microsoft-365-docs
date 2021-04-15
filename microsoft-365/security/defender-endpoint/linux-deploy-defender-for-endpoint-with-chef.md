@@ -42,7 +42,7 @@ On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is cr
 Then save and close the default.rb file.
 Next create a new recipe file named install_mdatp.rb in the recipes folder and add this text to the file:
 
-```Powershell
+```powershell
 
 #Add Microsoft Defender   
 Repo  
@@ -76,12 +76,12 @@ when 'rhel'
     dnf_package "mdatp"
  end
 end
-``
+```
 
 You’ll need to modify the version number, distribution, and repo name to match the version you’re deploying to and the channel you’d like to deploy.
 Next you should create an onboard_mdatp.rb file in the mdatp/recipies folder.  Add the following text to that file:
 
-```Powershell
+```powershell
 
 #Create MDATP Directory
 mdatp = "/etc/opt/microsoft/mdatp"
@@ -109,7 +109,7 @@ To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mda
 After your deployment you should consider creating and deploying a configuration file to the servers based on  [Set preferences for Microsoft Defender ATP for Linux - Windows security | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
 After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package.  Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
-```Powershell
+```powershell
 #Copy the configuration file
 cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
   source 'mdatp_managed.json'
@@ -121,7 +121,7 @@ end
 ```
 
 To include this step as part of the recipe just add include_recipe ':: settings_mdatp' to your default.rb file within the recipe folder.
-You can also use crontab to schedule automatic updates - How to schedule an update of the Microsoft Defender for Endpoint (Linux) - Windows security | Microsoft Docs .
+You can also use crontab to schedule automatic updates [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
 
 Uninstall MDATP cookbook:
 
