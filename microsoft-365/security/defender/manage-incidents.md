@@ -92,3 +92,9 @@ If it was a true alert, you should also specify what type of threat it was with 
 ## Add comments
 
 You can add multiple comments to an incident with the **Comment** field. Each comment is added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+
+## Related topics
+
+- [Incidents overview](incidents-overview.md)
+- [Prioritize incidents](incident-queue.md)
+- [Investigate incidents](investigate-incidents.md)
