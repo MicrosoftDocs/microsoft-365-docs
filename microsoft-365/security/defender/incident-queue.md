@@ -41,7 +41,7 @@ You get to the incident queue from **Incidents & alerts > Incidents** on the qui
 
 By default, the incident queue in the Microsoft 365 security center displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
-The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for anaylsis.
+The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for analysis.
 
 For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
