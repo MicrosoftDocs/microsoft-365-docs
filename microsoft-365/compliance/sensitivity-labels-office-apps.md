@@ -377,13 +377,26 @@ For guidance about when to use this setting, see the information about [policy s
 
 For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**.
 
-By default, when you select the label policy settings **Apply this label by default to documents and email** and **Requires users to apply a label to their email or documents**, your configuration choice applies to emails as well as to documents.
+When the Outlook app supports a default label setting that's different from the default label setting for documents:
 
-To apply different settings to emails, use PowerShell advanced settings:
+- In the label policy wizard, on the **Policy settings for emails** page, you can specify your choice of sensitivity label that will be applied to all unlabeled emails, or no default label. This setting is independent from the **Apply this label by default to documents** setting on the previous **Policy settings for documents** page of the wizard.
 
-- **OutlookDefaultLabel**: Use this setting if you want Outlook to apply a different default label, or no label.
+When the Outlook app doesn't support a default label setting that's different from the default label setting for documents:
 
-- **DisableMandatoryInOutlook**: Use this setting if you want Outlook to be exempt from prompting users to select a label for unlabeled email messages.
+- Outlook will always use the value you specify for **Apply this label by default to documents** on the **Policy settings for documents** page of the label policy wizard.
+
+When the Outlook app supports turning off mandatory labeling:
+
+- In the label policy wizard, on the **Policy settings** page, select **Requires users to apply a label to their email or documents**. Then select **Next** > **Next** and clear the checkbox **Requires users to apply a label to their emails**. Select the checkbox if you want mandatory labeling to apply to emails as well as to documents.
+
+When the Outlook app doesn't support turning off mandatory labeling:
+
+- If you select **Requires users to apply a label to their email or documents** as a policy setting, Outlook will always prompt users to select a label for unlabeled emails.
+
+> [!NOTE]
+> If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook**:
+> 
+> Your chosen values for these PowerShell settings are now reflected in the label policy wizard and automatically work for Outlook apps that use built-in labeling and that have the minimum supported version.
 
 For more information about configuring these settings by using PowerShell, see the next section.
 
