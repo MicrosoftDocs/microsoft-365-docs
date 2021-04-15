@@ -433,7 +433,7 @@ Yes, you should update the targetAddress (RemoteRoutingAddress/ExternalEmailAddr
 
 **Do Teams meetings migrate cross-tenant?**  
 
-The meetings will move however the Teams meeting url does not update when we items migrate cross-tenant. Since the URL will be invalid in the target tenant you will need to remove and recreate the Teams meetings.
+The meetings will move however the Teams meeting URL does not update when items migrate cross-tenant. Since the URL will be invalid in the target tenant you will need to remove and recreate the Teams meetings.
 
 **Does the Teams chat folder content migrate cross-tenant?**  
 
