@@ -32,7 +32,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-You can set up Microsoft 365 Defender to notify your staff with an email for new incidents or updates to existing incidents. You can choose to get notifications based on:
+You can set up Microsoft 365 Defender to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
 
 - Incident severity.
 - Device group.
@@ -43,7 +43,7 @@ The email notification contains important details about the incident like the in
 You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added. 
 
 >[!NOTE]
->You need 'Manage security settings' permissions to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
+>You need the 'Manage security settings' permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
 Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.
 
 ## Create a rule for email notifications
