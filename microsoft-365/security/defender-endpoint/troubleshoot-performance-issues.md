@@ -210,7 +210,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 4. When the User Account Control dialog box appears, select **Yes**.
 5. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
 
-    ```dos
+    ```console
     wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
     ```
     
@@ -221,7 +221,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
     >Keep the data collection no to more than five minutes.  Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
 7. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
 
-    ```dos
+    ```console
     wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
     ```
 8. Wait until the trace is merged. 
