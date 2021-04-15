@@ -392,7 +392,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > [!NOTE]
 > If you have configured the PowerShell advanced settings **OutlookDefaultLabel** and **DisableMandatoryInOutlook** by using the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) or [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
-> Your chosen values for these PowerShell settings are now reflected in the label policy wizard and automatically work for Outlook apps that use built-in labeling and that have the minimum supported versions.
+> Your chosen values for these PowerShell settings are reflected in the label policy wizard and automatically work for Outlook apps that support these settings. The other PowerShell advanced settings remain supported for the Azure Information Protection unified labeling client only.
 
 ## End-user documentation
 
