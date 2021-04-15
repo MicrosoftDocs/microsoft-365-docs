@@ -156,7 +156,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
     ![Start menu](images/wpr-01.png)<br>
 Select **More**. Select **Run as administrator**.
 3. When the User Account Control dialog box appears, select **Yes**.
-    ![UAC](images/wpt_yes.png)
+    ![UAC](images/wpt-yes.png)
 4. Next, download the [Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) profile and save as `WD.wprp` to a folder like `C:\temp`. 
      
 1. On the WPR dialog box, select **More options**.
