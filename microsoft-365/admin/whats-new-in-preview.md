@@ -223,7 +223,7 @@ Domain management can be complicated, and we've released a new feature to make t
 
 ### Keeping up with Office What's New management
 
-A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+A few months ago, we added a setting that lets you manage the What's New messages that show up in a user's Office apps. This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
 
 ### Docs, training, and videos (June)
 
