@@ -117,6 +117,14 @@ You can view a table view of the locations where they can be filtered, sorted, a
 > [!div class="mx-imgBorder"]
 > ![Network insights locations](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
+## Remote worker assessment and user connection metrics
+
+We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you will find the location specific remote network assessment score when you open that location’s page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
+
+Home user networking insights are aggregated and reported at a city level and limited to cities with a minimum of 5 remote employees. We are not identifying individual employees working from home.
+
+Locations are auto classified as onsite or remote, however, you have the option to enter all your onsite egress IP addresses manually to ensure a 100% classification. If you decide to go this route, you will have to check the **Enter all onsite egress IP addresses manually** checkbox in the Locations Settings flyout after adding all your egress IP addresses. When this is done, all network traffic logs from egress IP addresses you have marked as onsite will always be classified as offices and every other egress IP address will be classified as remote.
+
 ## Specific office location network performance summary and insights
 
 Selecting an office location opens a location-specific summary page showing details of the network egress that has been identified from measurements for that office location.
