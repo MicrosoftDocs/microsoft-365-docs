@@ -1,5 +1,5 @@
 ---
-title: "View keyword statistics for eDiscovery search results"
+title: "View statistics for eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,11 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: "Learn how to use the search statistics feature to display statistics for Content searches and searches associated with a Core eDiscovery case in the Microsoft 365 compliance center."
 ms.custom: seo-marvel-apr2020
 ---
 
-# View keyword statistics for eDiscovery search results results
+# View statistics for eDiscovery search results
 
 After you create and run a Content search or a search associated with a Core eDiscovery case, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed on the search flyout page), the query statistics such as the number of content locations with items that match the search query, and the identity of content locations that have the most matching items.
   
@@ -49,7 +48,7 @@ The **Search statistics** tab contains for following sections that contain diffe
 
 This section displays a graphical summary of the estimated items returned by the search. This indicates the number of items that match the search criteria. This information gives you an idea about the estimated number of items returned by the search.
 
-![Search estimates for a search](../media/AeDCollectionEstimates.png)
+![Search estimates for a search](../media/SearchContentReport.png)
 
 - **Estimated items by locations**: The total number of estimated items returned by the search. The specific number of items located in mailboxes and located in sites is also displayed.
 
@@ -59,13 +58,15 @@ This section displays a graphical summary of the estimated items returned by the
 
 ### Condition report
 
-This section displays statistics about the search query and the number of estimated items that matched different parts of the search query. You can use these statistics to analyze the number of items that match each component of search query. This can help you refine the search criteria and if necessary narrow the scope of the scope.
+This section displays statistics about the search query and the number of estimated items that matched different parts of the search query. You can use these statistics to analyze the number of items that match each component of search query. This can help you refine the search criteria and if necessary narrow the scope of the scope. You can also download a copy of this report in CSV format.
+
+![Condition report](../media/SearchContentReportNoKeywordList.png)
 
 - **Location type**: The type of content location that the query statistics are applicable to. The value of **Exchange** indicates a mailbox location; a value of **SharePoint** indicates a site location.
 
-- **Part**: The part of the search query the statistics are applicable to. **Primary** indicates the entire search query. **Keyword** indicates the statistics in the row are for a specific keyword. If you use a keyword list for search query, statistics for each component of the query are included in this table.
+- **Part**: The part of the search query the statistics are applicable to. **Primary** indicates the entire search query. **Keyword** indicates the statistics in the row are for a specific keyword. If you use a keyword list for search query, statistics for each component of the query are included in this table. For more information, see [Get keyword statistics for searches](#get-keyword-statistics-for-searches).
 
-- **Condition**: The actual component (keyword or condition) of the search query that was run for the draft collection that returned the statistics displayed in the corresponding row.
+- **Condition**: The actual component (keyword or condition) of the search query that returned the statistics displayed in the corresponding row.
 
 - **Locations with hits**: The number of the content locations (specified by the **Location type** column) that contain items that match the primary or keyword query listed in the **Condition** column.
 
@@ -75,31 +76,15 @@ This section displays statistics about the search query and the number of estima
 
 ### Top locations
 
-This section displays statistics about the specific content locations with the most items returned by the collection. The top 1,000 locations are displayed.
+This section displays statistics about the specific content locations with the most items returned by the search. The top 1,000 locations are displayed. You can also download a copy of this report in CSV format.
 
 - The name of the location name (the email address of mailboxes and the URL for sites).
 
 - Location type (a mailbox or site).
 
-- Estimated number of items in the content location returned by the collection.
+- Estimated number of items in the content location returned by the search.
 
 - The total size of estimated items in each content location.
-
-    
-## Search summary tab
-    
-The **Summary** tap displays general statistics about the search. You can re-run searches (by selecting **Re-run search** on the **Actions** menu) to update the statistics.
-
-  
-a.  The name of the search. As previously stated, you can display and compare statistics for multiple searches.
-    
-b. The type of content location that was searched. Each row displays statistics for mailboxes, sites, and public folders from the specified search.
-    
-c. The number of content locations containing items that match the search query. For mailboxes, this statistic also includes the number of archive mailboxes that contain items that match the search query.
-    
-d. The total number of items of all specified content locations that match the search query. Examples of item types include email messages, calendar items, and documents. If an item contains multiple instances of a keyword that is being searched for, it's only counted once in the total number of items. For example, if you're searching for words "stock" or "fraud" and an email message contains three instances of the word "stock", it's only counted once in the **Items** column. 
-    
-e. The total size of all items that were found in the specified content location that match the search query. 
 
 ## Get keyword statistics for searches
 
@@ -125,8 +110,6 @@ To create a keyword list and view keyword statistics for a search:
 5. When the search is completed, select it to display the flyout page.
 
 6. On the **Search statistics** tab, click the **Condition report** to display the keyword statistics for the search.
-    
-
 
     ![The statistics for each keyword are displayed](../media/SearchKeywordsList3.png)
   
