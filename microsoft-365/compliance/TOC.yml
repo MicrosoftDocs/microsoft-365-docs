@@ -504,7 +504,7 @@
           items: 
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: View keyword statistics for search results
+          - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Export search results
             href: export-search-results.md
@@ -592,7 +592,7 @@
             href: create-a-report-on-holds-in-ediscovery-cases.md
           - name: Export a search report
             href: export-a-content-search-report.md
-          - name: View keyword statistics for search results
+          - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Search and purge spilled data
             href: data-spillage-scenariosearch-and-purge.md
