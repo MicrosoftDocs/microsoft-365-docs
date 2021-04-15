@@ -40,7 +40,7 @@ To see a more detailed report, click **View simulations and training efficacy re
 
 On the [**Simulations** tab](https://security.microsoft.com/attacksimulator?viewid=simulations), selecting a simulation will take you to the simulation details, where you'll find the **Recommended actions** section.
 
-The recommended actions section details recommendations as available in [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). These recommendations are based on the payload used in the simulation, and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
+The recommended actions section details recommendations as available in [Microsoft Secure Score](../defender/microsoft-secure-score.md). These recommendations are based on the payload used in the simulation, and will help you protect your employees and your environment. Clicking on each improvement action will take you to its details.
 
 > [!div class="mx-imgBorder"]
 > ![Recommendation actions section on Attack simulation training](../../media/attack-sim-preview-recommended-actions.png)

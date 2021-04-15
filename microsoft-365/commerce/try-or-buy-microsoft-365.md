@@ -23,13 +23,6 @@ ms.date: 08/07/2020
 
 # Try or buy a Microsoft 365 for business subscription
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
-
 Microsoft 365 for business is a subscription service that lets you run
 your organization in the cloud while Microsoft takes care of the IT for
 you. Microsoft manages devices, protects against real-world threats, and
@@ -77,6 +70,17 @@ these steps:
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
 
+## Extend your trial
+
+Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, select the trial subscription that you want to extend. 
+3. On the subscription details page, in the **Subscriptions and payment settings** section, select **Extend end date**.
+4. In the **Extend end date** pane, review the extension information, and if necessary, select a payment method. When you're finished, select **Extend trial**.
+
+When you're ready to buy, see [Buy your trial version](#buy-a-subscription-from-your-free-trial).
+
 ## Cancel your free trial subscription
 
 If you decide to cancel your trial subscription before the free trial
@@ -118,6 +122,21 @@ the additional subscription they need.
 
 > [!NOTE]
 > You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted.
+
+::: moniker range="o365-21vianet"
+## Payment options
+
+You can pay for your subscription by:
+
+- Invoice
+
+- Online payment using Alipay or China UnionPay
+
+Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+> [!NOTE]
+>  International credit cards are not accepted.
+::: moniker-end
 
 ## Next steps
 

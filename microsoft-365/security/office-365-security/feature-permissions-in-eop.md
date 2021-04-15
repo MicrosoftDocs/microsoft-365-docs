@@ -20,12 +20,14 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+-  [Exchange Online Protection standalone](exchange-online-protection-overview.md)
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model to easily grant permissions to your admins. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
 To grant permissions to users, see [Manage admin role groups in EOP](manage-admin-role-group-permissions-in-eop.md).
 
-For more information about permissions across Microsoft 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+For more information about permissions across Microsoft 365, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Role-based permissions
 
@@ -47,18 +49,18 @@ The available role groups in standalone EOP are described in the following table
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
-|ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <p> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <p> Compliance Administration <p> Information Rights Management <p> Retention Management <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Recipients|
+|ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <p> Members of the [Compliance Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <p> Compliance Administration <p> Information Rights Management <p> Retention Management <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Recipients|
 |ContentExplorerContentViewer|Not used.|Data Classification Content Viewer|
 |ContentExplorerListViewer|Not used.|Data Classification List Viewer|
 |HelpDesk|View and manage mail users.|Reset Password <p> User Options <p> View-Only Recipients|
 |HygieneManagement|Manage protection features (anti-spam, anti-malware, etc.).|Transport Hygiene <p> View-Only Configuration <p> View-Only Recipients|
 |MailFlowAdministrator|View and manage accepted domains and connectors|Remote and Accepted Domains <p> View-Only Recipients|
-|OrganizationManagement|Admin access to the entire organization and the ability to perform almost any task. <p> Members of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) role in Azure AD automatically get the permissions of this role group. <p> **Important**: Because the OrganizationManagement role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Compliance Administrator <p> Distribution Groups <p> Information Rights Management <p> Mail Recipient Creation <p> Mail Recipients <p> Message Tracking <p> Migration <p> Organization Client Access <p> Organization Configuration <p> Organization Transport Settings <p> Quarantine <p> Recipient Policies <p> Remote and Accepted Domains <p> Reset Password <p> Retention Management <p> Role Management <p> Security Administrator <p> Security Group Creation and Membership <p> Security Reader <p> Sensitivity Label Administrator <p> Supervision <p> Transport Hygiene <p> Transport Rules <p> User Options <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Quarantine <p> View-Only Recipients <p> View-Only Threat Intelligence|
+|OrganizationManagement|Admin access to the entire organization and the ability to perform almost any task. <p> Members of the [Global Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) role in Azure AD automatically get the permissions of this role group. <p> **Important**: Because the OrganizationManagement role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Compliance Administrator <p> Distribution Groups <p> Information Rights Management <p> Mail Recipient Creation <p> Mail Recipients <p> Message Tracking <p> Migration <p> Organization Client Access <p> Organization Configuration <p> Organization Transport Settings <p> Quarantine <p> Recipient Policies <p> Remote and Accepted Domains <p> Reset Password <p> Retention Management <p> Role Management <p> Security Administrator <p> Security Group Creation and Membership <p> Security Reader <p> Sensitivity Label Administrator <p> Supervision <p> Transport Hygiene <p> Transport Rules <p> User Options <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Configuration <p> View-Only Quarantine <p> View-Only Recipients <p> View-Only Threat Intelligence|
 |QuarantineAdministrator|Manage quarantined messages for all recipients.|Quarantine|
 |RecipientManagement|Create, manage, and remove recipient objects in the organization.|Distribution Groups <p> Mail Recipient Creation <p> Mail Recipients <p> Message Tracking <p> Migration <p> Recipient Policies <p> Reset Password|
 |RecordsManagement|Configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|Message Tracking <p> Retention Management <p> Transport Rules|
-|SecurityAdministrator|Configure all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) role in Azure AD automatically get the permissions of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Quarantine <p> View-Only Threat Intelligence|
-|SecurityReader|View-only access to all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) role in Azure AD automatically get the permissions of this role group.|Security Reader <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Quarantine <p> View-Only Threat Intelligence|
+|SecurityAdministrator|Configure all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) role in Azure AD automatically get the permissions of this role group.|AntiMalware <p> AntiSpam <p> Audit Logs <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Audit Logs <p> View-Only Quarantine <p> View-Only Threat Intelligence|
+|SecurityReader|View-only access to all aspects of protection in the organization (anti-spam, anti-malware, anti-spoofing, quarantine, etc.). <p> Members of the [Security Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) role in Azure AD automatically get the permissions of this role group.|Security Reader <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only Quarantine <p> View-Only Threat Intelligence|
 |TenantAdmins|Membership in this role group is synchronized across services and managed centrally. By default, this role group is not assigned any roles. However, it will be a member of the Organization Management role group and will inherit those permissions.|none|
 |ViewOnlyOrganizationManagement|View recipient, protection, and configuration objects and their properties in the organization.|Compliance Administrator <p> Security Administrator <p> Security Reader <p> Sensitivity Label Administrator <p> View-Only Configuration <p> View-Only Recipients|
 |
@@ -123,7 +125,7 @@ When you create a user in the Microsoft 365 admin center, you can choose whether
 > [!NOTE]
 > The account you used to create your standalone EOP organization is automatically assigned to the Global admin role.
 
-The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ****
 
@@ -137,7 +139,7 @@ The following table lists the Microsoft 365 roles and the standalone EOP role gr
 |Security reader|SecurityReader|
 |
 
-Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](../../admin/add-users/assign-admin-roles.md).
 
 Users can be granted administrative rights in EOP without adding them to Microsoft 365 roles. You do this by adding the user as a member of an EOP role group. The user will get permissions in EOP, but they won't get permissions in other Microsoft 365 workloads.
 

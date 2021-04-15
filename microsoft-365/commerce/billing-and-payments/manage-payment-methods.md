@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
+- commerce
 search.appverid:
 - MET150
 description: "Learn how to manage your payment methods in the Microsoft 365 admin center."
@@ -25,12 +25,6 @@ ms.date:
 ---
 
 # Manage payment methods
-
-::: moniker range="o365-21vianet"
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-::: moniker-end
 
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 

@@ -36,15 +36,15 @@ A Microsoft Defender for Office 365 trial is the easiest way to try the capabili
 
 ## Terms and conditions
 
-The Defender for Office 365 trial is available for 90 days and can initiated for all of your users. For more information, see [Terms of use for the Microsoft Defender for Office 365 trial](terms-of-use-defender-for-office-365-trial.md).
+The Defender for Office 365 trial is available for 90 days and can be initiated for all of your users. For more information, see [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
 ## Set up a Defender for Office 365 trial
 
-A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](atp-safe-attachments.md), [Safe Links](atp-safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
+A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
 By default, these policies are scoped to all users in the organization, but admins can customize the policies during or after setup so they apply only to specific users.
 
-During setup, MDO response functionality (found in MDO P2 or equivalent) is also setup for the entire organization. No policy scoping is required.
+During setup, MDO response functionality (found in MDO P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
@@ -52,7 +52,7 @@ As part of the trial setup, the Defender for Office 365 licenses are automatical
 
 ## Permissions
 
-To start or end the trial, you need to be a member of the **Global Administrator** or **Security Administrator** roles in Azure Active Directory. For details, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+To start or end the trial, you need to be a member of the **Global Administrator** or **Security Administrator** roles in Azure Active Directory. For details, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Additional information
 
@@ -77,8 +77,8 @@ You can also learn more about Defender for Office 365 at this [interactive guide
 A robust filtering stack prevents a wide variety of volume-based and targeted attacks including business email compromise, credential phishing, ransomware, and advanced malware.
 
 - [Anti-phishing policies: Exclusive settings in Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments](atp-safe-attachments.md)
-- [Safe Links](atp-safe-links.md)
+- [Safe Attachments](safe-attachments.md)
+- [Safe Links](safe-links.md)
 
 ### Detection
 
@@ -91,13 +91,13 @@ Industry-leading AI detects malicious and suspicious content and correlates atta
 Powerful experiences help identify, prioritize, and investigate threats, with advanced hunting capabilities to track attacks across Office 365.
 
 - [Threat Explorer and Real-time detections](threat-explorer.md)
-- [Real-time reports in Defender for Office 365](view-reports-for-atp.md)
+- [Real-time reports in Defender for Office 365](view-reports-for-mdo.md)
 - [Threat Trackers - New and Noteworthy](threat-trackers.md)
-- Integration with [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Integration with [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### Response and remediation
 
-Extensive incident response and automation capabilities amplify your security team’s effectiveness and efficiency.
+Extensive incident response and automation capabilities amplify your security team's effectiveness and efficiency.
 
 - [Automated investigation and response (AIR) in Microsoft Defender for Office 365](office-365-air.md)
 

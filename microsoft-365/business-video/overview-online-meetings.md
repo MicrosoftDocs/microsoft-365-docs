@@ -2,14 +2,13 @@
 title: "Online meetings overview"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -71,7 +70,7 @@ Need a little help? See [Start a call from a chat in Teams](https://support.micr
 
 ## Related articles
 
-[Meetings in Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 ways to make virtual meetings more efficient](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

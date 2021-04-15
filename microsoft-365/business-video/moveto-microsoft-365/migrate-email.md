@@ -27,7 +27,7 @@ description: "Learn how to migrate email, contacts and calendar from Google Work
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-You can use an admin-ran migration to Exchange Online from Google Workspace. You can migrate the mail either all at once, or in stages. The following steps show how to migrate the email data at once. For more information, see [Perform a G Suite migration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration).
+You can use an admin-ran migration to Exchange Online from Google Workspace. You can migrate the mail either all at once, or in stages. The following steps show how to migrate the email data at once. For more information, see [Perform a G Suite migration](/exchange/mailbox-migration/perform-g-suite-migration).
 
 The migration process takes several steps and can take from several hours to a couple of days depending on the amount of data you are migrating.
 
@@ -66,7 +66,7 @@ The migration process takes several steps and can take from several hours to a c
 1. Select **Security**, scroll down and open **API controls**. 
 1. Scroll down and select **Manage Domain-wide Delegation**.
 1. Select **Add new** and enter the Client ID you made note of earlier.
-1. Then enter the OAuth scopes for Google APIs. These are available at [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) in step 5 and are:
+1. Then enter the OAuth scopes for Google APIs. These are available at [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) in step 5 and are:
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
@@ -123,7 +123,7 @@ Once you’ve finished, you’re ready to migrate.
     user123@fabrikaminc.net
     ```
 
-      For details see [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
+      For details see [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#start-a-g-suite-migration-batch-with-the-exchange-admin-center-eac). 
 
 1. Select **Choose File**, navigate to the CSV file, choose it, select **Open**, then **Next**. 
 1. Verify the admin email address you want to use for testing. 

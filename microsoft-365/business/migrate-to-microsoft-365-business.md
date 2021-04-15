@@ -2,8 +2,8 @@
 title: "Upgrade to Microsoft 365 Business Premium from Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -39,7 +39,7 @@ Find out more about Microsoft 365 Business Premium at [Microsoft.com](https://ww
 
 ## What's the difference between Microsoft 365 Business Standard and Microsoft 365 Business Premium?
 
-We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business Premium Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
+We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business Premium Service Description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
 ## Before you get started
 

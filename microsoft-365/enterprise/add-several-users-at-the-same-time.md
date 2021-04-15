@@ -129,4 +129,4 @@ When you save the file, you'll probably get a prompt that some features in your 
 
 ## Related articles
 
-[Add users individually or in bulk to Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)

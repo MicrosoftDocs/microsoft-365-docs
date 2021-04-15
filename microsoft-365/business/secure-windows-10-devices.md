@@ -2,8 +2,8 @@
 title: "Secure Windows 10 devices"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -44,6 +44,6 @@ By default all settings are **On**. The following settings are available:
 |Setting  <br/> |Description  <br/> |
 |Help protect PCs from viruses and other threats using Windows Defender Antivirus  <br/> |Requires that Windows Defender Antivirus is turned on to protect PCs from the dangers of being connected to the internet.  <br/> |
 |Help protect PCs from web-based threats in Microsoft Edge  <br/> |Turns on settings in Edge that help protect users from malicious sites and downloads.  <br/> |
-|Help protect files and folders on PCs from unauthorized access with BitLocker  <br/> |Bitlocker protects data by encrypting the computer hard drives and protect against data exposure if a computer is lost or stolen. For more information, see [Bitlocker FAQ](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
+|Help protect files and folders on PCs from unauthorized access with BitLocker  <br/> |Bitlocker protects data by encrypting the computer hard drives and protect against data exposure if a computer is lost or stolen. For more information, see [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Turn off device screen when idle for this amount of time  <br/> |Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.  <br/> |
 |

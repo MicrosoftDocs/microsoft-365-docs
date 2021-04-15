@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance 
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365.
+description: "Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365."
 ---
 
 # Limits in Advanced eDiscovery
@@ -31,23 +31,34 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Total number of documents that can be added to a case (for all review sets in a case).  <br/> |3 million <br/> |
 |Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |300 GB <br/> |
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
-|Maximum number of loads sets per case.  <br/> |200 <br/> |
+|Maximum number of load sets per case.  <br/> |200 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
 |Maximum number of tag groups per case.  <br/> |1000 <br/> |
 |Maximum number of tags per case.  <br/> |1000 <br/> |
+|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10 <sup>4</sup> |
+|Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case. | 3 |
 |||
+
+## Hold limits
+
+The following table lists the limits for holds associated with an Advanced eDiscovery case.
+
+| Description of limit | Limit |
+|:-----|:-----|
+|Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. <br/> |1,000  <br/> |
+|Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
 
 ## Indexing limits
 
 The following table lists the indexing limits in Advanced eDiscovery.
 
 | Description of limit | Limit |
-  |:-----|:-----|
-  |Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
-  |Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
-  |Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
-  |Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-  |Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
+|:-----|:-----|
+|Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
+|Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
+|Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
+|Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
+|Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## Search limits
@@ -72,6 +83,20 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
 |||
 
+## Search times
+
+Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
+  
+  |**Number of mailboxes**|**Average search time**|
+  |:-----|:-----|
+  |100  <br/> |30 seconds  <br/> |
+  |1,000  <br/> |45 seconds  <br/> |
+  |10,000  <br/> |4 minutes  <br/> |
+  |25,000  <br/> |10 minutes  <br/> |
+  |50,000  <br/> |20 minutes  <br/> |
+  |100,000  <br/> |25 minutes  <br/> |
+  |||
+
 ## Viewer limits
 
 | Description of limit | Limit |
@@ -79,15 +104,13 @@ The limits described in this section are related to using the search tool on the
 |Maximum size of Excel file that can be viewed in the native viewer.  <br/> |4 MB  <br/> |
 |||
 
-## Export limits
+## Export limits - Final export out of Review Set
+
+The limits described in this section are related to exporting documents out of a review set.
 
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
-|Maximum amount of data in a single day. | 2 TB |
-|Maximum concurrent exports in your organization. | 10 <sup>4</sup> |
-|Maximum concurrent exports per user. | 3 |
-|Maximum size of a single PST file. | 10 GB |
 |Maximum concurrent exports per review set. | 1 |
 |||
 
@@ -108,7 +131,7 @@ The limits described in this section are related to using the search tool on the
 >
 > <sup>3</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR …"**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
 >
-> <sup>4</sup> This limit is shared across all eDiscovery tools. This means that concurrent exports in Content search, Core eDiscovery, and Advanced eDiscovery are applied against this limit.
+> <sup>4</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
 >
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >
