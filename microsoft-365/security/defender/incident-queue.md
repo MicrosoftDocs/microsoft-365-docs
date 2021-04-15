@@ -103,7 +103,7 @@ After you resolve the incident, take a moment to learn from it to:
 
 - Understand the type of the attack and its impact.
 - Research the attack in the security community for a security attack trend.
-- Recall the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
+- Recall the workflow you used to resolve the incident and update your standard workflows and playbooks as needed.
 
 Here's a summary of the basic process.
 
