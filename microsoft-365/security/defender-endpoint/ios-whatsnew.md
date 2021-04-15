@@ -32,7 +32,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## 1.1.15140101
 
-- Microsoft Defender ATP is now Microsoft Defender for Endpoint in the app store.
+- The Microsoft Defender ATP product name has now been updated to Microsoft Defender for Endpoint in the app store.
 - Improved sign-in experience.
 - Bug fixes.
 
