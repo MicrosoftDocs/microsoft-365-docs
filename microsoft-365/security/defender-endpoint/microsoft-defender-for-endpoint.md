@@ -41,7 +41,7 @@ Removable storage Access Control includes two parts, namely removable storage gr
 
 Ensure that the Windows 10 devices on which you plan to deploy Removable Storage Protection have Anti-malware Client Version **4.18.2103.3 or later**.
 
-<to include the image anti-malware.png>
+:::image type="content" source="images/anti-malware.png" alt-text="The screen showing device that has anti-malware client version":::
 
 ## Policy Properties
 
@@ -192,8 +192,7 @@ MEM (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Cr
 
     - Data Type: String (XML file)
 
-
-<include the image xml-file-for-data-type-string-2>
+:::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="The screen displaying XML file for the STRING data type":::
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
