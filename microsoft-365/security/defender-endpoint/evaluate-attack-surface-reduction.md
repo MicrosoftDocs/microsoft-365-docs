@@ -10,7 +10,7 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: 
+ms.reviewer: dansimp
 manager: dansimp
 ms.technology: mde
 ---
@@ -21,6 +21,7 @@ ms.technology: mde
 
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
