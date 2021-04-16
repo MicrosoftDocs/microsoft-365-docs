@@ -388,7 +388,7 @@ Please note that custom sensitive information types will also be detected in add
 
 |**App and platform**|**DLP policy tip support**|**Sensitive information types supported**|**Predicates and actions supported**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|All|Subset|See [DLP predicates supported for DLP policy tips in Outlook Web Access](#dlp-predicates-supported-for-dlp-policy-tips-in-outlook-web-access)|
+|**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|All|Subset|See [Data Loss Prevention policy tips reference](#data-loss-prevention-policy-tips-reference)|
 |**Outlook Win32 (Outlook 2013 and beyond)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|See [Outlook 2013 and later supports showing policy tips for only some conditions and exceptions](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) and [Outlook 2013 and later supports showing policy tips for only some sensitive information types](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types) for details on support for sensitive information types and DLP conditions and actions supported for showing DLP policy tips on Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|None|None|DLP policy tips are not supported on Outlook mobile|
 |**Sharepoint Online/One Drive for Business Web client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|All|All SPO/ODB predicates and actions in DLP||
