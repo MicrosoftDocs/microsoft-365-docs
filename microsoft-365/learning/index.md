@@ -24,7 +24,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about what Viva Learning (Preview) is and how it can help you.
+The resources in this section help you learn more about what Viva Learning (Preview) is and how it can help your organiztion.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
