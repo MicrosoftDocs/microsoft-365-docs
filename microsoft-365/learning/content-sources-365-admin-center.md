@@ -68,3 +68,6 @@ Among all the learning sources that exist, some will be enabled by default. Thes
 
 To enable or disable a learning content source, select the check box next to the source. If a source is enabled, a check mark will be visible.
 
+## Next step
+
+[Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)](configure-sharepoint-content-source)
