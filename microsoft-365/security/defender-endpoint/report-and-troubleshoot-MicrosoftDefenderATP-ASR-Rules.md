@@ -2,8 +2,7 @@
 title: Report and troubleshoot Microsoft Defender for ATP ASR Rules
 description: This topic describes how to report and troubleshoot Microsoft Defender for ATP ASR Rules
 keywords: Attack surface reduction rules, asr, hips, host intrusion
-prevention system, protection rules, anti-exploit, antiexploit, 
-exploit, infection prevention, microsoft defender for endpoint
+prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
