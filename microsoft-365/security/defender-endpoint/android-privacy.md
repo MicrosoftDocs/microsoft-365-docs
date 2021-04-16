@@ -27,11 +27,11 @@ ms.technology: mde
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint for Android collects information from your configured
-Android devices and stores it in the same tenant where you have Defender for Endpoint.
+Defender for Endpoint for Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for iOS secure, up-to-date, performing as expected, and to support the service.
 
-Information is collected to help keep Defender for Endpoint for Android secure,
-up-to-date, performing as expected and to support the service.
+For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+
+Information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected and to support the service.
 
 ## Required Data 
 
@@ -42,7 +42,7 @@ apps. Here's a list of the types of data being collected:
 
 ### App information
 
-Information about Android application packages (APKs) on the device including
+Information about **malicious** Android application packages (APKs) on the device including
 
 -  Install source
 -  Storage location (file path) of the APK
@@ -50,7 +50,7 @@ Information about Android application packages (APKs) on the device including
 
 ### Web page / Network information
 
-- Full URL (on supported browsers), when clicked
+- Full URL of the website only when a malicious connection or web page is detected.
 - Connection information
 - Protocol type (such as HTTP, HTTPS, etc.)
 
@@ -81,6 +81,9 @@ Information about Android application packages (APKs) on the device including
     -   User Principal Name – Email ID of the user
 
 ### Product and service usage data
+
+The following information is collected only for Microsoft Defender for Endpoint app installed on the device. 
+
 -   App package info, including name, version, and app upgrade status
 
 -   Actions performed in the app
