@@ -55,7 +55,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 
 | Field name | Description |
 |---|---|
-|ProcessImageName	| Process image name |
+|ProcessImageName | Process image name |
 | TotalTime | The cumulative duration in milliseconds spent in scans of files accessed by this process |
 |Count | The number of scanned files accessed by this process |
 |MaxTime |	The duration in milliseconds in the longest single scan of a file accessed by this process |
@@ -64,13 +64,13 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 
 If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](collect-diagnostic-data.md).
 
-If the previous step doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections. 
+If the previous step doesn't solve the problem, you can collect more information through the [Process Monitor](#capture-process-logs-using-process-monitor) or the [Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) in the following sections.
 	 
 ## Capture process logs using Process Monitor
 
-Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring. 
+Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes. You can use this to capture the performance issue as it is occurring.
 
-1. Download [Process Monitor v3.60](/sysinternals/downloads/procmon) to a folder like `C:\temp`. 
+1. Download [Process Monitor v3.60](/sysinternals/downloads/procmon) to a folder like `C:\temp`.
 
 2. To remove the file's mark of the web:
     1. Right-click **ProcessMonitor.zip** and select **Properties**.
@@ -183,7 +183,9 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 6. Select **Add Profiles...** and browse to the path of the `WD.wprp` file.
 
 7. After that, you should see a new profile set under *Custom measurements* named *Microsoft Defender for Endpoint analysis* underneath it.
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**. 
     This custom profile provides the necessary context for in-depth performance analysis.
@@ -223,12 +225,12 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![Fill up details](images/wpr-12.png)
 
-    1. Select **File Name:** to determine where your trace file will be saved. By default, it 1.is saved to `%user%\Documents\WPR Files\`. 
-    1. Select **Save**. 
+    1. Select **File Name:** to determine where your trace file will be saved. By default, it 1.is saved to `%user%\Documents\WPR Files\`.
+    1. Select **Save**.
 
 14. Wait while the trace is being merged.
 
-    ![WPR gathering general trace](images/wpr-13.png)
+    ![WPR gathering general trace](images/wpr-13.png)
 
 15. Once the trace is saved, select **Open folder**.
 

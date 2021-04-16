@@ -3346,6 +3346,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-language.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-language",
       "redirect_document_id": false

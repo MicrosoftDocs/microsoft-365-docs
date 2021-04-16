@@ -57,4 +57,4 @@ Use Windows PowerShell and a CSV (Comma Separated Value) file to bulk import ext
   
 ## What if my question still hasn't been answered?
 
-Visit the rest of our [admin help](/microsoft-365/admin/misc/index) or give us your feedback below.
+Visit the rest of our [admin help](https://docs.microsoft.com/microsoft-365/admin/) or give us your feedback below.
