@@ -41,12 +41,12 @@ To manage settings for Viva Learning (Preview), follow these steps:
 
    ![Learning page in the Teams admin center showing Status and App settings section](../media/learning/learning-app-teams-learning-page.png)
 
-4. After **Manage app** settings, go to **Permissions and Set-up policies** to grant permission to employees who should have access to the app as part of your organization's participation in the private preview.
+4. After **Manage app** settings, go to **Permissions and Set-up policies** to grant permission to employees who should have access to the app as part of your organization's participation in the preview.
 
 > [!NOTE]
->  If your organization is in Ring 4.0 as part of Teams TAP100 program, you might need to do the following to enable approved users in Ring 3.0 to access Viva Learning (private preview).
+>  If your organization is in Ring 4.0 as part of Teams TAP100 program, you might need to do the following to enable approved users in Ring 3.0 to access Viva Learning (Preview).
 
-As part of private preview, Viva Learning (Preview) is released in Ring 3.0. If your organization is in Ring 4.0, you won’t see the app in the app store. To test the app, you need to create a custom apps permission policy, set it to **Allow all apps**, and assign it to Ring 3.0 approved users.
+As part of the preview, Viva Learning (Preview) is released in Ring 3.0. If your organization is in Ring 4.0, you won’t see the app in the app store. To test the app, you need to create a custom apps permission policy, set it to **Allow all apps**, and assign it to Ring 3.0 approved users.
 
    ![TAP-AppsPermission-Plcy page showing Allow all apps selected](../media/learning/learning-app-tap-appspermission-plcy.png)
 
