@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha
-ms.reviewer: 
+ms.reviewer: dansimp
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
