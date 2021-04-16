@@ -294,13 +294,21 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 **Applies to:** All customers
 
-When the Office 365 tenant completes the final step of the migration [Azure AD Finalization (Phase 9)] all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
+When the Office 365 tenant completes the final step of the migration (Azure AD Finalization (Phase 9)) all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
 ||||
+
+### Azure AD Connect
+**Applies to:** All customers synchronizing identities with Azure AD connect
+
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| Update Azure AD Connect. | After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to ensure that the delta sync process has been finalized, and after that, change the string value of `AzureInstance` from 3 (Microsoft Cloud Deutschland) to 0 in the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect`. | Change the value of `AzureInstance`, the registry key. Failing to do so, will lead to objects not being synchronized after the Microsoft Cloud Deutschland endpoints are no longer available. |
+|||||
 
 ## Post migration
 
