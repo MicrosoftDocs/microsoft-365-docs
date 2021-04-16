@@ -21,14 +21,11 @@ ms.technology: mde
 
 # Report and troubleshoot Microsoft Defender for ATP ASR Rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/
-microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwli
-linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?
-linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at https://security.microsoft.com.
 In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Please note that your devices must be onboarded into the Microsoft Defender ATP service for these reports to be populated.
@@ -112,6 +109,6 @@ The most relevant files are as follows:
 
 - **MPOperationalEvents.txt** - This file contains same level of information found in Event Viewer for Windows Defender’s Operational log.
 - **MPRegistry.txt** – In this file you will be able to analyze all the current Windows Defender configurations, from the moment the support logs were captured.
-- MPLog-***.txt – This log contains more verbose information about all the actions/operations of the Windows Defender.
+- **MPLog.txt** – This log contains more verbose information about all the actions/operations of the Windows Defender.
 
 
