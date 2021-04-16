@@ -208,7 +208,7 @@
             - name: Compare versions of OME
               href: ome-version-comparison.md
             - name: Office 365 Message Encryption FAQ
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
