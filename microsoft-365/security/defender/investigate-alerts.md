@@ -73,7 +73,7 @@ An alert page is composed of these sections:
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or doing specific remediation steps.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
 
 ### Analyze affected assets
 
@@ -83,7 +83,7 @@ You can also select **View in action center** to view the **History** tab of the
 
 ### Trace an alert's role in the alert story
 
-The alert story displays all assets or entities related to the alert in a process tree view. The alert in the title is the one in focus when you first land on your selected alert's page. Assets in the alert story are expandable and clickable. They provide additional information and expedite your response by allowing you to take actions right in the context of the alert page. 
+The alert story displays all assets or entities related to the alert in a process tree view. The alert in the title is the one in focus when you first land on your selected alert's page. Assets in the alert story are expandable and clickable. They provide additional information and expedite your response by allowing you to take action right in the context of the alert page. 
 
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
@@ -109,7 +109,7 @@ The **Manage alert** pane allows you to specify:
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
-> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
+> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated before the modification will not reflect the updated tag name. 
 
 From this pane, you can also perform these additional actions: 
 
