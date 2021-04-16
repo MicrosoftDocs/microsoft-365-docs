@@ -21,7 +21,7 @@ description: "Learn how to configure SharePoint as a learning content source for
 
 You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
 
-### Overview
+## Overview
 
 The knowledge admin (or global administrator) provides a site URL to where the Learning Service can create an empty centralized location—the Learning App Content Repository—in the form of a structured SharePoint list. This list can be used by your organization to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning (Preview).
 
@@ -33,7 +33,7 @@ Viva Learning (Preview) supports the following document types:
 
 For more information, see the [SharePoint Online documentation](https://docs.microsoft.com/sharepoint/introductionlink). 
 
-### Permissions
+## Permissions
 
 Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visable within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
@@ -49,11 +49,11 @@ To remove unintentionally surfaced content, follow these steps:
 
 For more information, see [Sharing and permissions in the SharePoint modern experience](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions). 
 
-### Learning Service
+## Learning Service
 
 The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization’s content within Viva Learning (Preview). All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
 
-### Configure SharePoint as a source
+## Configure SharePoint as a source
 
 You must be a Microsoft 365 global administrator, SharePoint administrator, or knowledge admin to perform these tasks.
 
@@ -94,7 +94,7 @@ To configure SharePoint as a learning content sources in for Viva Learning (Prev
 > [!NOTE]
 > To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning (Preview) interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored.
 
-### Folder URL document library curation
+## Folder URL document library curation
 
 Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning (Preview) by the Microsoft Graph API.
  
