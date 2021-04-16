@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for non-Windows platforms
-description: Learn about Microsoft Defender ATP capabilities  for non-Windows platforms
+title: Microsoft Defender for Endpoint for non-Windows platforms
+description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
