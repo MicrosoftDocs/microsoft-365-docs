@@ -29,7 +29,7 @@ To manage settings for Viva Learning (Preview), follow these steps:
 
 1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
 
-   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section](media/learning/learning-app-teams-manage-apps-nav.png)
+   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section](..media/learning/learning-app-teams-manage-apps-nav.png)
 
 2. On the **Manage apps** page, in the search box, type *learning* to search for the Teams Learning app (Preview).
 
