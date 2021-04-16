@@ -43,7 +43,7 @@ To remove unintentionally surfaced content, follow these steps:
 
 1.	To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
 	 
-     ![Document library page in SharePoint showing Show actions option with Manage access highligted.](media/learning/learning-sharepoint-permissions2.png)
+     ![Document library page in SharePoint showing Show actions option with Manage access highligted.](../media/learning/learning-sharepoint-permissions2.png)
 
 2.	Delete the original document within the document library.
 
@@ -63,33 +63,33 @@ To configure SharePoint as a learning content sources in for Viva Learning (Prev
  
 2.	On the **Org settings** page, on the **Services** tab, select **Learning app (Preview)**.
 
-     ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](media/learning/learning-sharepoint-configure1.png)
+     ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
 
 3.	On the **Learning app (Preview)** panel, under **SharePoint**, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository.
 
-     ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](media/learning/learning-sharepoint-configure2.png)
+     ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
 
 4.	A SharePoint list is created automatically within the provided SharePoint site.
 
-     ![Newly created SharePoint list within the SharePoint site.](media/learning/learning-sharepoint-configure3.png)
+     ![Newly created SharePoint list within the SharePoint site.](../media/learning/learning-sharepoint-configure3.png)
 
      In the left navigation of the SharePoint site, select **Site contents** > **Learning App Content Repository**. 
 
-     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](media/learning/learning-sharepoint-configure4.png) 
+     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](../media/learning/learning-sharepoint-configure4.png) 
 
 5. On the **Learning App Content Repository** page, populate the SharePoint list with URLs to the learning content folders.
 
    1. Select **New** to view the **New item** panel. 
 
-       ![Learning Content Repository page in SharePoint showing the New option.](media/learning/learning-sharepoint-configure5.png)
+       ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
  
    2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
 
-       ![New item panel in SharePoint showing the Title and Folder URL fields.](media/learning/learning-sharepoint-configure6.png)
+       ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
 
    3. The **Learning App Content Repository** page is updated with the new learning content.
 
-       ![Learning Content Repository page in SharePoint showing the updated information.](media/learning/learning-sharepoint-configure7.png)
+       ![Learning Content Repository page in SharePoint showing the updated information.](../media/learning/learning-sharepoint-configure7.png)
 
 > [!NOTE]
 > To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning (Preview) interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored.
@@ -106,13 +106,13 @@ To add a **Description** column to the document library page, follow these steps
 
 2. Select the **Show actions** option, and then select **Single line of text**.
 
-     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](media/learning/learning-sharepoint-curation1.png)
+     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
 
 3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
 
-     ![Create a column panel in SharePoint showing the Name and other fields.](media/learning/learning-sharepoint-curation2.png)
+     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
  
 4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning (Preview) will provide a default message that highlights the content as being from your own SharePoint library. 
 
-     ![Documents page in SharePoint showing the descriptions in the Description column.](media/learning/learning-sharepoint-curation3.png)
+     ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)
  
