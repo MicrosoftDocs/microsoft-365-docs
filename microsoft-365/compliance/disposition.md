@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content for when you use a disp
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five consecutivee stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
+> Rolling out in preview: multi-staged disposition. Now, an administrator can add up to five consecutive stages of disposition and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -46,7 +46,10 @@ Additionally:
 
 - To view the contents of items during the disposition process, add users to the following two role groups: **Content Explorer Content Viewer** and **Content Explorer List Viewer**. If users don't have the permissions from these role groups, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the compliance center.
 
-- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Record Manager Security Group** to select and enable a security group that contains the administrator accounts.
+- By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For an administrator to see all items for all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Record Manager Security Group** to select and then enable an email-enabled security group that contains the administrator accounts. Microsoft 365 groups and security groups that aren't email-enabled aren't supported for this selection.
+    
+    > [!IMPORTANT]
+    > During the preview period, you cannot disable this permission or replace the group that you enabled.
 
 ### Enable auditing
 
@@ -128,7 +131,7 @@ From any of the Disposition pages in the compliance center, select **Record mana
 
 ![Record management settings](../media/record-management-settings.png)
 
-Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or append your own text to the default template. Text and hyperlinks are supported but no other formatting or images.
+Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or append your own text to the default template. Text (all languages) and hyperlinks are supported, but no other formatting or images.
 
 Example text to append:
 
