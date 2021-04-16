@@ -197,11 +197,11 @@ Before you get started with Removable Storage Protection, you should confirm you
 
 ### Deploying policy via Group Policy
 
-1. Combine all groups within `Groups` `/Groups` into one xml file.
+1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
 
 <require screenshot>
 
-2. Combine all rules within `PolicyRules` `/PolicyRules` into one xml file.
+2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
 <require screenshot>
 
