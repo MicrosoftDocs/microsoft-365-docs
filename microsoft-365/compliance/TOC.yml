@@ -305,7 +305,7 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions (preview)
+            - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
