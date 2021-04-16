@@ -54,7 +54,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |OneDrive for Business     |items         |yes         |yes         |
 |Teams     |Teams and channel messages         |not applicable         |not applicable         |
 |Teams     |attachments         |yes **         |yes **         |
-|Windows 10 devices (preview)     |items         |yes         |yes         |
+|Windows 10 devices     |items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
 \* DLP detection and enforcement of sensitivity labels on emails and attachments are supported in-transit. DLP policy tips of sensitivity labeled email attachments are not.
