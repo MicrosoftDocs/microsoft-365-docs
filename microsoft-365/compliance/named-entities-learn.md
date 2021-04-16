@@ -20,7 +20,7 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities (preview)
 
- *Named entities* are [Sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. You can use all SITs in:
+ *Named entities* are [Sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
 - [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
@@ -42,7 +42,7 @@ Bundled named entity SITs detect all possible matches. Use them as broad criteri
 
 Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a more refined detection scope.
  
-Here are some examples of named entity SITs. You can find all 51 of them in the **Compliance Center > Data classification > Sensitive info types**.
+Here are some examples of named entity SITs. You can find all 52 of them in the **Compliance Center > Data classification > Sensitive info types**.
 
 |Named Entity |Description  |Bundled/Unbundled  |
 |---------|---------|---------|
@@ -52,7 +52,6 @@ Here are some examples of named entity SITs. You can find all 51 of them in the 
 |Australia Physical Addresses |  Detects patterns related to physical addresses from Australia. |unbundled |
 |Blood Test Terms     |Detects terms related to blood tests, such as 'hCG'. English terms only.      |unbundled |
 |Brand Medication Names     |Detects names of brand medication, such as 'Tylenol'. English terms only.         |unbundled |
-|International Classification of Diseases (ICD-10-CM)    |Detects International Classification of Diseases, tenth revision, clinical modification (ICD-10-CM)         |unbundled |
 
 ## Examples of enhanced DLP policies
 
