@@ -51,8 +51,7 @@ E5 adds greater integration with Defender for Endpoint. With E5, you can view al
 ASR currently supports all of the rules below.
 
 ## What rules to enable? All, or can I turn on individual rules?
-To help you figure out what’s best for your environment, we 
-recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
+To help you figure out what’s best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
 
 ## How do ASR rules exclusions work?
 For ASR rules, if you add one exclusion, it will affect every ASR rule.
@@ -74,8 +73,6 @@ Be aware of the following items about ASR rules exclusions (including wildcards 
 - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
 - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
 - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
-
-
 
 ## How do I know what I need to exclude?
 Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
