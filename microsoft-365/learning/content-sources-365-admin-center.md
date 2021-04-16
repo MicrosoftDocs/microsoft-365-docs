@@ -51,11 +51,11 @@ To configure settings for learning content sources in Viva Learning, follow thes
 
 2.	On the **Org settings** page, on the **Services** tab, select **Learning app (Preview)**.
 
-     ![Settings page in the Microsoft 365 admin center showing the Learning app listed](media/learning/learning-sharepoint-configure1.png)
+     ![Settings page in the Microsoft 365 admin center showing the Learning app listed](../media/learning/learning-sharepoint-configure1.png)
 
 3.	On the **Learning app (Preview)** panel, select the learning content sources you want to configure for the organization, and then select **Save**.
 
-     ![Learning panel in the Microsoft 365 admin center showing content sources options](..media/learning/learning-sharepoint-configure2.png)
+     ![Learning panel in the Microsoft 365 admin center showing content sources options](../media/learning/learning-sharepoint-configure2.png)
 
 Among all the learning sources that exist, some will be enabled by default. These include:
 
