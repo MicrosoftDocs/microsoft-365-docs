@@ -76,7 +76,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 11. Review your settings (and edit them if necessary), and then click **Submit**.
 
-## Query-based holds placed on site documents
+## Query-based holds placed on sites
 
 Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
 
@@ -88,7 +88,7 @@ Keep the following things in mind when you place a query-based eDiscovery hold o
 
 After you create an eDiscovery hold, information about the new hold is displayed on the flyout page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify the amount of content related to the case is being preserved.
   
-![Hold statistics](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Hold statistics](../media/eDiscoveryHoldStatistics.png)
   
 Keep the following things in mind about eDiscovery hold statistics:
   
@@ -118,7 +118,7 @@ Here are some other things to keep in mind when searching locations on eDiscover
 
 - If multiple eDiscovery holds are placed on a single location in an eDiscovery case and you select to search locations on hold, the maximum number of keywords for that search query is 500. That's because the search combines all the query-based holds by using the **OR** operator. If there are more than 500 keywords in the combined hold queries and the search query, then all content in the mailbox is searched, not just that content that matches the query-based case holds.
 
-- If an eDiscovery hold has a status of **Turning on**, you can still search the locations on hold while the hold is being turned on.
+- If an eDiscovery hold has a status of **On (Pending)**, you can still search the locations on hold while the hold is being turned on.
 
 ## Preserve content in Microsoft Teams
 
