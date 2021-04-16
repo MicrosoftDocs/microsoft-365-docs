@@ -1,7 +1,7 @@
 ---
 title: Report and troubleshoot Microsoft Defender for ATP ASR Rules
 description: This topic describes how to report and troubleshoot Microsoft Defender for ATP ASR Rules
-keywords: Attack surface reduction rules, asr, hips, host intrusion
+keywords: Attack surface reduction rules, asr, hips, host intrusion 
 prevention system, protection rules, anti-exploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -110,5 +110,3 @@ The most relevant files are as follows:
 - **MPOperationalEvents.txt** - This file contains same level of information found in Event Viewer for Windows Defender’s Operational log.
 - **MPRegistry.txt** – In this file you will be able to analyze all the current Windows Defender configurations, from the moment the support logs were captured.
 - **MPLog.txt** – This log contains more verbose information about all the actions/operations of the Windows Defender.
-
-
