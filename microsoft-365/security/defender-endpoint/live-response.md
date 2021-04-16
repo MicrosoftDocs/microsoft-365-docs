@@ -1,5 +1,5 @@
 ---
-title: Investigate entities on devices using live response in Microsoft Defender ATP
+title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
@@ -139,11 +139,13 @@ The following commands are available for user roles that are granted the ability
 |`connections` | Shows all the active connections. |
 |`dir` | Shows a list of files and subdirectories in a directory. |
 |`download <file_path> &` | Downloads a file in the background. |
-drivers |  Shows all drivers installed on the device. |
-|`fg <command ID>` | Returns a file download to the foreground. |
+|`drivers` |  Shows all drivers installed on the device. |
+|`fg <command ID>` | Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a “command ID” available from jobs, not a PID |
 |`fileinfo` | Get information about a file. |
 |`findfile` | Locates files by a given name on the device. |
+|`getfile <file_path>` | Downloads a file. |
 |`help` | Provides help information for live response commands. |
+|`jobs` | Shows currently running jobs, their ID and status. |
 |`persistence` | Shows all known persistence methods on the device. |
 |`processes` | Shows all processes running on the device. |
 |`registry` | Shows registry values. |
@@ -157,7 +159,6 @@ The following commands are available for user roles that are granted the ability
 | Command | Description |
 |---|---|
 | `analyze` | Analyses the entity with various incrimination engines to reach a verdict. |
-| `getfile` | Gets a file from the device. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. |
 | `run` | Runs a PowerShell script from the library on the device. |
 | `library` | Lists files that were uploaded to the live response library. |
 | `putfile` | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
@@ -299,10 +300,9 @@ Each command is tracked with full details such as:
 
 ## Limitations
 
-- Live response sessions are limited to 10 live response sessions at a time.
-- Large-scale command execution is not supported.
-- Live response session inactive timeout value is 5 minutes. 
-- A user can only initiate one session at a time.
+- Live response sessions are limited to 25 live response sessions at a time.
+- Live response session inactive timeout value is 30 minutes. 
+- A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
    - `getfile` limit: 3 GB
