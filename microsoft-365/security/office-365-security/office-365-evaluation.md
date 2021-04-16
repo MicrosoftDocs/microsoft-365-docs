@@ -106,7 +106,7 @@ URL links in the email message bodies won't wrap, to lessen customer impact.
 
 ### Email routing
 
-Prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won’t have a connector. [Learn about mail flow and email routing](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Prepare the corresponding details that you will need to set up how your email is currently routed, including the name of the inbound connector that routes your mail. If you are just using Exchange Online Protection, you won't have a connector. [Learn about mail flow and email routing](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Supported email routing scenarios include:
 
