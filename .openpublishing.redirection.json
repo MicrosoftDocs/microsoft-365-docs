@@ -3,7 +3,7 @@
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk.md",
