@@ -27,17 +27,17 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at https://security.microsoft.com.
-In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Please note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
-Here is a screenshot from the Microsoft 365 security center (under **Reports** > **Devices** > **Attack surface reduction** ). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
+The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at https://security.microsoft.com.
+In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
+Here is a screenshot from the Microsoft 365 security center (under **Reports** > **Devices** > **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
 
 :::image type="content" source="images/asrrules.PNG" alt-text="ASR rules screen":::
 
 ## Microsoft Defender for Endpoint – Advanced hunting
 
-One of the most powerful features of Microsoft Defender for Endpoint is advanced hunting. If you are unfamiliar with advanced hunting, please refer [proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+One of the most powerful features of Microsoft Defender for Endpoint is advanced hunting. If you are unfamiliar with advanced hunting, refer [proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
-Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data, that Microsoft Defender for Endpoint Endpoint Detection and Response (EDR) collects from all your machines. Through advanced hunting you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
+Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data, that MDE Endpoint Detection and Response (EDR) collects from all your machines. Through advanced hunting, you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
 Through advanced hunting, it is possible to extract ASR rules information, create reports, and get in-depth information on the context of a given ASR rule audit or block event.
 
@@ -51,7 +51,7 @@ With advanced hunting you can shape the queries to your liking, so that you can 
 
 ## Microsoft Defender for Endpoint machine timeline
 
-An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past 6 months, in the Microsoft Defender Security Center, by going to the Machines list, select a given machine, and then click on the Timeline tab.
+An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past six months, in the Microsoft Defender Security Center, by going to the Machines list, select a given machine, and then click on the Timeline tab.
 
 Pictured below is a screenshot of the Timeline view of these events on a given endpoint.  From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
@@ -95,9 +95,9 @@ To access it, open Windows Event Viewer, and browse to **Applications and Servic
 :::image type="content" source="images/eventviewerscr.PNG" alt-text="event viewer scr":::
 
 ## Microsoft Defender Malware Protection Logs
-You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, as well as automate tasks if needed.
+You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, and automate tasks if needed.
 
-You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You must run it from an elevated command prompt (i.e. run as Admin).
+You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You must run it from an elevated command prompt (that is, run as Admin).
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
