@@ -1,0 +1,65 @@
+---
+title: Microsoft 365 infographics for users
+description: These Microsoft 365 infographics can help the users in your organization understand best practices for working in Microsoft 365.
+ms.author: samanro
+author: samanro
+manager: bcarter
+ms.audience: ITPro
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+localization_priority: Normal
+ms.collection: 
+- M365solutions
+f1.keywords: NOCSH
+---
+
+# Microsoft 365 infographics for your users
+
+These infographics represent best practices for working and collaborating in Microsoft 365. Share them with your users to help ensure that they are taking advantage of secure storage and sharing for files, holding collaborative meetings, and more.
+
+Find more [downloadable Office infographics](https://support.microsoft.com/en-us/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) on the [Microsoft 365 training](https://support.microsoft.com/en-us/training) site.
+
+<a name="securitytips"></a>
+## Security tips
+
+Download this infographic with security tips for the members of your team - whether your team is a business or nonprofit organization, such as a political campaign:
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![The help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Download as a PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [Download as a PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Share these best practices for keeping your organization's information secure.|
+
+<a name="sharefiles"></a>
+## Share your business files
+
+Download an infographic to get a quick overview of ways to share your business files:
+  
+|**Item**|**Description**|
+|:-----|:-----|
+|![Thumb image for Share your business files infographic](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. |
+
+<a name="onlinemeeting"></a>
+## Host online meetings
+
+Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams:
+
+|**Item**|**Description**|
+|:-----|:-----|
+|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | A quick introduction to how to host or join an online meeting with Microsoft Teams. |
+
+<a name="workfromanywhere"></a>
+## Work from anywhere
+
+Download an infographic to get tips for working from anywhere:
+
+|**Item**|**Description**|
+|:-----|:-----|
+|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. |
+
+<a name="surveywithforms"></a>
+## Survey customers with Forms
+
+Download an infographic to find out how to survey customers (internal or external) with Microsoft Forms:
+
+|**Item**|**Description**|
+|:-----|:-----|
+|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. |
