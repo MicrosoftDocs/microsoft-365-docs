@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure Microsoft Defender for Endpoint for Linux for static proxy discovery
+# Configure Microsoft Defender for Endpoint on Linux for static proxy discovery
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
