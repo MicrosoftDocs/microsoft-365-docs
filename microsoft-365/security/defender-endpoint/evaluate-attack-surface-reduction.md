@@ -26,8 +26,7 @@ ms.technology: mde
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Attack surface reduction rules help close off many of the common entry points used by malware and ransomware. This helps in preventing attacks from ever reaching the point where AV and Endpoint Detection and Response (EDR) solutions would detect them. In essence, ASR rules help you reduce the attack surface of an endpoint by minimizing the places where your organization might be vulnerable to cyber threats and attacks. 
-ASR rules were created so that enterprises can secure their endpoints along with protections that work alongside Microsoft Defender ATP, Microsoft Defender antivirus, and Endpoint Detection and Response (EDR). This provides a robust endpoint solution that gives security admins the control and visibility they need. ASR rules offer a broad range of built-in rules to secure your endpoint, covering areas like Office applications (think macros, DDEs, etc.) subversion or use, but also things like Webmail, script, WMI, LSASS, and much more. 
+Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Attack surface reduction rules help close off many of the common entry points used by malware and ransomware. 
 
 Set attack surface reduction rules for devices running any of the following editions and versions of Windows:
 
