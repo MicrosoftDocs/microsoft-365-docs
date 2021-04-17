@@ -114,7 +114,7 @@ the resources, primarily through the content itself.
 -   Labels show that a topic is suggested and that it was discovered by
     Viva Topics.  
 
-    :::image type="content" source="../media/scale-topics-sample-card-suggested-topic.png" alt-text="A sample card that shows a suggested topic and including suggested people and suggested resources.":::
+    :::image type="content" source="../media/scale-topics-sample-card-suggested-topic.png" alt-text="A sample card that shows a suggested topic and including suggested people and suggested resources." border="true":::
 
 -   Information on the card states where a definition has come from by
     specifying its source.
@@ -126,7 +126,7 @@ the resources, primarily through the content itself.
     person as related. However, in many cases more evidence is better,
     and people who are listed have worked on multiple documents.  
 
-    :::image type="content" source="../media/scale-topics-sample-page-suggested-topic.png" alt-text="A page that shows a suggested topic and including suggested people, files, and pages." lightbox="../media/scale-topics-sample-page-suggested-topic.png":::
+    :::image type="content" source="../media/scale-topics-sample-page-suggested-topic.png" alt-text="A page that shows a suggested topic and including suggested people, files, and pages." border="true" lightbox="../media/scale-topics-sample-page-suggested-topic.png":::
 
 For the files and pages shown, the system identifies how many times the
 topic has been mentioned in the document, but the topic also must be
@@ -136,11 +136,11 @@ evidence for the AI. The system also considers the occurrence of a topic
 name in the titles of documents, types of documents, and other analytics
 features (such as views).
 
-:::image type="content" source="../media/scale-topics-suggested-you-have-access.png" alt-text="Image of a banner that says 'Suggested topic' and 'Microsoft Viva discovered this topic. You have access to the files and pages shown.'":::
+:::image type="content" source="../media/scale-topics-suggested-you-have-access.png" alt-text="Image of a banner that says 'Suggested topic' and 'Microsoft Viva discovered this topic. You have access to the files and pages shown.'" border="true" :::
 
-:::image type="content" source="../media/scale-topics-suggested-describe-your-involvement.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page to describe your involvement in this topic.'":::
+:::image type="content" source="../media/scale-topics-suggested-describe-your-involvement.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page to describe your involvement in this topic.'" border="true" :::
 
-:::image type="content" source="../media/scale-topics-suggested-add-people.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page if you can add people connected to the topic.'":::
+:::image type="content" source="../media/scale-topics-suggested-add-people.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page if you can add people connected to the topic.'" border="true" :::
 
 These attributes demonstrate that the content has been added by AI, and
 how the AI has made that determination.
@@ -174,7 +174,7 @@ suggested topics is gathered. In the topic center, a user can see the
 topics that they have been associated with and are given the option to
 either confirm this association or have it removed.
 
-:::image type="content" source="../media/scale-topics-topic-center-confirm-connections.png" alt-text="Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics." lightbox="../media/scale-topics-topic-center-confirm-connections.png":::
+:::image type="content" source="../media/scale-topics-topic-center-confirm-connections.png" alt-text="Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics." border="true" lightbox="../media/scale-topics-topic-center-confirm-connections.png":::
 
 When you allow broad crowdsourcing of topics, you should consider the
 following factors:
