@@ -357,7 +357,7 @@ You can now preview an email header and download the email body in Threat Explor
 1. Select a built-in role group that only has the Preview role, such as Data Investigator or eDiscovery Manager.
 2. Select **Copy role group**.
 3. Choose a name and description for your new role group and select **Next**.
-4. Modify the roles, adding and removing as necessary, leaving the Preview role.
+4. Modify the roles by adding and removing roles as necessary but leaving the Preview role.
 5. Add members and then click on Create role group.
 
 Explorer and Real-time detections will also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
