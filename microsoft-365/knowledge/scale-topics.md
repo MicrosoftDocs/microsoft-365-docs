@@ -101,8 +101,8 @@ management and curation.
 
 ## Understanding suggested topics
 
-When topics are discovered by AI, they are marked as a **Suggested
-Topic**, both on the **Manage Topics** page, and in the topic cards that
+When topics are discovered by AI, they are marked as a **Suggested Topic**, 
+both on the **Manage Topics** page, and in the topic cards that
 are presented to users. Any topic that hasn't been marked as removed
 will be shown to users—this includes confirmed, published, and
 suggested topics. Topics in all three states are available to end users.
@@ -240,7 +240,8 @@ guide selective curation.
 
 ### Search
 
-Common search terms are often discovered as topics. By using the [top query reports in Microsoft Search](https://docs.microsoft.com/sharepoint/view-search-usage-reports),
+Common search terms are often discovered as topics. By using the 
+[top query reports in Microsoft Search](https://docs.microsoft.com/sharepoint/view-search-usage-reports),
 you can identify the most frequent search terms in your organization. If
 topics have been discovered for these terms, they are good candidates
 for curation. These topics can be presented as answer cards in Microsoft
@@ -264,7 +265,8 @@ in Microsoft Search:
 
 ### Impressions and quality score
 
-The [impressions](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#impressions) count and [quality score](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#quality-score)
+The [impressions](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#impressions) count 
+and [quality score](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#quality-score)
 are important metrics for understanding the behavior of a topic. The
 value of these metrics will be limited when only knowledge managers or
 IT teams have access to topics. Exposing topics to a pilot group of
