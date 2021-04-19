@@ -129,11 +129,8 @@ In case you are still using SharePoint 2013 workflows, limit the use of SharePoi
 Additional considerations:
 
 - If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
- 
-- Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
-
+ - Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 - During this phase, the IP addresses behind the SharePoint URLs will change. After the transition to Office 365 Global services, the addresses for the preserved tenant URLs (for example, `contoso.sharepoint.de` and `contoso-my.sharepoint.de`) will be changed to the [Worldwide Microsoft 365 URLs and IP address ranges (SharePoint Online and OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business).
-
 
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-scc.md).
@@ -148,7 +145,8 @@ The new region "Germany" is added to the organization setup. Exchange Online con
 - Transition users and services from your legacy MCD URLs (`https://outlook.office.de`) to new Office 365 services URLs (`https://outlook.office365.com`).
 -  The Exchange Online services (Outlook Web Access and Exchange Admin Center) for the new German datacenter region will be available from this phase, they will not be available before.
 - Users may continue to access the service through legacy MCD URLs during the migration, however they need to stop using the legacy URLs on completion of the migration.
-- Users should transition to using the worldwide Office portal for Office Online features (Calendar, Mail, People). Navigation to services that aren't yet migrated to Office 365 services won't function until they are migrated.
+- Users should transition to using the worldwide Office portal for Office Online features (Calendar, Mail, People). Navigation to services that aren't yet migrated to Office 365 services won't function until they are migrated. 
+- This limitation applies to background services like "My Account" as well. My Account for Global services will become available after completion of phase 9. Until this, users must use the MCD portal to manage their account settings.
 - The Outlook Web App won't provide the public folder experience during migration.
 
 If you want to modify user photos during phase 5, see [Exchange Online PowerShell - Set-UserPhoto during phase 5](#exchange-online-powershell).
@@ -180,18 +178,12 @@ Using the PowerShell cmdlet **Set-UserPhoto** results in an error if a user mail
  where `<user_email>` is the placeholder for the email-ID of the  user mailbox. 
 
 Additional considerations:
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - Users of Outlook Web App that access a shared mailbox in the other environment (for example, a user in the MCD environment accesses a shared mailbox in the Global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in `outlook.office.de`, then open the shared mailbox that is in `outlook.office365.com`. They'll need to authenticate a second time when accessing the shared resources that are hosted in the other service.
 - For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook by using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`). Customers who want to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry key can be deployed organization-wide by using Group Policy.
+- All customers using an active Exchange Hybrid Configuration are not able to move mailboxes from on-premises Exchange Server to Exchange Online, neither to Microsoft Cloud Deutschland, nor to the new datacenter region in Germany. Customers need to ensure that ongoing mailbox moves have been completed prior to phase 5 and will be resumed after completion this phase.
 - Ensure that all users using legacy protocols (POP3/IMAP4/SMTP) for their devices are prepared to change the endpoints in their client after their Exchange mailbox has been moved to the new German datacenter region as described in the [pre-migration steps for Exchange Online](ms-cloud-germany-transition-add-pre-work.md#exchange-online).
 
 To find out more about the differences for organizations in migration and after Exchange Online resources are migrated, review the information in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
-
 
 ## Phase 6: Exchange Online Protection / Security and Compliance
 
