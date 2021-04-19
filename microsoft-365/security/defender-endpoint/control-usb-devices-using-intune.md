@@ -26,9 +26,10 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
     1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by using USB device IDs. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
     2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-           - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
-           - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
-           - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
+        - Microsoft Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
+        - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
+        - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
+
 3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these plug and play events or any other Microsoft Defender for Endpoint events with [custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules).
 
 4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
@@ -228,7 +229,8 @@ Using Intune, you can limit the services that can use Bluetooth through the ["Bl
 
 The Microsoft Defender for Endpoint baseline settings represent the recommended configuration for threat protection. Configuration settings for baseline are located in the edit profile page of the configuration settings.
 
-![Baselines in MEM](images/baselines.png)
+> [!div class="mx-imgBorder"]
+> ![Baselines in MEM](images/baselines.png)
 
 ## Prevent threats from removable storage
   
@@ -283,7 +285,7 @@ These settings require [enabling real-time protection](/microsoft-365/security/d
 
 2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
 
-![Create device configuration profile](images/create-device-configuration-profile.png)
+    ![Create device configuration profile](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
    - Platform: Windows 10 and later 
