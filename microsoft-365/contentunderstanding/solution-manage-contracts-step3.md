@@ -1,5 +1,5 @@
 ---
-title: "Manage contracts in Microsoft 365"
+title: "Step 3. Use Power Automate to create your flow to process your contracts"
 ms.author: chuckedmonson
 author: chucked
 manager: pamgreen
@@ -10,10 +10,10 @@ ms.service:
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to manage contracts using a Microsoft 365 solution."
+description: "Learn how to use Power Automate to create your flow to process your contracts by using a Microsoft 365 solution."
 ---
 
-#  Step 3: Use Power Automate to create your flow to process your contracts
+# Step 3. Use Power Automate to create your flow to process your contracts
 
 Now that you've created your Contract Management Team site and have attached your SharePoint document library, the next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 

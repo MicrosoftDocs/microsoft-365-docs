@@ -1,5 +1,5 @@
 ---
-title: "Manage contracts in Microsoft 365"
+title: "Step 1. Use SharePoint Syntex to identify contract files and extract data"
 ms.author: chuckedmonson
 author: chucked
 manager: pamgreen
@@ -10,10 +10,10 @@ ms.service:
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to manage contracts using a Microsoft 365 solution."
+description: "Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution."
 ---
 
-# Step 1: Use SharePoint Syntex to identify contract files and extract data
+# Step 1. Use SharePoint Syntex to identify contract files and extract data
 
 A key business issue we identified is that we need a way to identify and classify all contract documents from the numerous files we receive. We also want to be able to be able to quickly view several key elements in each of the contract files we identify (for example, <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>). We can do this by using [SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/) to create a document understanding model and applying it to a document library.
 

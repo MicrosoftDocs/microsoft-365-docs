@@ -1,5 +1,5 @@
 ---
-title: "Manage contracts in Microsoft 365"
+title: "Step 2. Use Microsoft Teams to create your contract management site"
 ms.author: chuckedmonson
 author: chucked
 manager: pamgreen
@@ -10,10 +10,10 @@ ms.service:
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to manage contracts using a Microsoft 365 solution."
+description: "Learn how to use Microsoft Teams to create your contract management site by using a Microsoft 365 solution."
 ---
 
-#  Step 2: Use Microsoft Teams to create your contract management site
+# Step 2. Use Microsoft Teams to create your contract management site
 
 Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams site and use the features in Teams to:
 
