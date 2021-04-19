@@ -19,5 +19,51 @@ description: "Learn about Microsoft Viva Learning (Preview) in your Microsoft 36
 
 # Overview of Microsoft Viva Learning (Preview) 
 
+Viva Learning is a centralized learning hub in Microsoft Teams that lets you seamlessly integrate learning and upskilling into your day. In Viva Learning, your team can discover, share, assign, and learn from content libraries provided by both your organization and partners. They can do all of this without leaving Microsoft Teams.
+
+   ![Screenshot of the Viva Learning homepage in Teams](../media/learning/learning-home-teams.png)
+ 
+Employees are more likely to report being more satisfied and remain at an organization longer when given opportunities to learn and grow. Viva Learning makes it easy to create these opportunities for your organization without the need to step away from the communication tools you already use.
+
+## Learn while working
+
+### Everyone
+
+Viva Learning makes it easy to incorporate learning into your day. When you open Viva Learning in Microsoft Teams, you’ll see a personalized view of learning content from both your organization and partners such as LinkedIn Learning. As you continue to search for and complete more training, your recommended content will update to reflect your interests.
+
+- Easily find learning opportunities provided by your organization.
+- Browse courses from LinkedIn Learning, Microsoft Learn, Microsoft 365 Training, Skillsoft, Coursera, edX, Pluralsight, and third-party learning partners.
+- Search for specific learning content that appeals to you or supports your career goals.
+- Share relevant, interesting, and important learning content with your team members or groups in a Microsoft Teams chat or channel.
+- Organize your custom selections of learning content in Microsoft Teams channels and tabs.
+- Like and save courses you’re interested in.
+- Play LinkedIn Learning courses in the embedded player without leaving Microsoft Teams.
+
+### Managers
+
+Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can assign learning content to individuals or groups, share content with your team, and track the completion status of learning you’ve assigned.
+
+## Admin roles
+
+Admins set permissions and allow learning content sources for Viva Learning Preview. To set up Viva Learning Preview, you'll need permissions as:
+
+- Microsoft Teams admin
+- Microsoft 365 global administrator or SharePoint administrator
+- Knowledge admin
+
+### Knowledge admin
+
+The knowledge admin is a new role in the Microsoft 365 admin center that can be assigned to anyone in the organization. This role manages the organization’s learning content sources through the Microsoft 365 admin center.
+The knowledge admin should be moderately technical and have existing SharePoint administrator credentials, preferably someone who is well-versed in the education, learning, training, or employee experience part of the organization.
+
+## Get started
+
+When you’re ready to set up and configure Viva Learning in your Microsoft 365 environment:
+
+- Use the Microsoft Teams admin center to manage Viva Learning across your organization.
+- Use the Microsoft 365 admin center to configure learning sources available to specific groups.
+- Use the SharePoint admin center to manage and store your own learning content.
+
+
 
 
