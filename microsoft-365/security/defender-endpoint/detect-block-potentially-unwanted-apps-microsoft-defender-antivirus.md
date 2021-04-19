@@ -21,18 +21,17 @@ ms.topic: article
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. PUA are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
+Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software that might be unexpected or unwanted. PUA is not considered a virus, malware, or other type of threat, but it might perform actions on endpoints that adversely affect endpoint performance or use. The term *PUA* can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
 
 Here are some examples:
 
 - **Advertising software** that displays advertisements or promotions, including software that inserts advertisements to webpages.
-- **Bundling software** that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
+- **Bundling software** that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualifies as PUA.
 - **Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 > [!TIP]
@@ -63,7 +62,7 @@ In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartSc
 
 Security admins can [configure](/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several [group policy settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft Defender SmartScreen available, including [one for blocking PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can [configure Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.
 
-Although Microsoft Defender for Endpoint has its own block list based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.
+Although Microsoft Defender for Endpoint has its own blocklist based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.
 
 ## Microsoft Defender Antivirus
 
@@ -130,7 +129,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 Set-MpPreference -PUAProtection Enabled
 ```
 
-Setting the value for this cmdlet to `Enabled` turns the feature on if it has been disabled.
+Setting the value for this cmdlet to `Enabled` turns on the feature if it has been disabled.
 
 ##### To set PUA protection to audit mode
 
@@ -148,7 +147,7 @@ We recommend keeping PUA protection turned on. However, you can turn it off by u
 Set-MpPreference -PUAProtection Disabled
 ```
 
-Setting the value for this cmdlet to `Disabled` turns the feature off if it has been enabled.
+Setting the value for this cmdlet to `Disabled` turns off the feature if it has been enabled.
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
