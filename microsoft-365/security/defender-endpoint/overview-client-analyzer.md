@@ -65,7 +65,7 @@ Prevention](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-lea
 
 For more information about Secure File Exchange, see [How to use Secure File Exchange to exchange files with Microsoft Support](https://docs.microsoft.com/troubleshoot/azure/general/secure-file-exchange-transfer-files)  
 
-For more information about our privacy statement, see [Privacy at Microsoft](https://privacy.microsoft.com/privacy).
+For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Requirements
 
