@@ -33,6 +33,8 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-
 
 ## March 2021
 
+Here are a few of the changes to Microsoft 365 compliance solutions and content for the month of March.
+
 ### Advanced eDiscovery
 
 - **Advanced eDiscovery collections**
@@ -56,18 +58,20 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-
 
 ## February 2021
 
+Here are a few of the changes to Microsoft 365 compliance solutions and content for the month of February.
+
 ### Audit retention policies
 
-- **New dashboard**
+- **Manage audit log retention policies**. Learn more about the new [Audit retention policies dashboard](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1).
 
 ### Sensitivity labels
 
-- **External sharing for SharePoint sites with sensitivity labels**
--  **Co-authoring for sensitivity labels**
+- [**External sharing for SharePoint sites with sensitivity labels**](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites). The option for external sharing from SharePoint sites is now released as generally available. Additionally, the Microsoft 365 admin center and Planner now support applying sensitivity labels that are configured for Microsoft Teams, Microsoft 365 groups, and SharePoint sites.
+-  **Co-authoring for sensitivity labels**. New [changes to metadata](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-coauthoring#metadata-changes-for-sensitivity-labels) have been made to support co-authoring.
 
 ### Data loss prevention
 
-- **On-premises scanner**
+- **On-premises scanner**. The Microsoft 365 data loss prevention on-premises scanner is in preview. [Learn about the on-premises data loss prevention scanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn), and [get started](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started) using the scanner.
 
 ## January 2021
 
