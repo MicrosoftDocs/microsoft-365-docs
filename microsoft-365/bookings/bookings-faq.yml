@@ -167,7 +167,7 @@ sections:
   - name: Product features
     questions:
       - question: |
-          Where do Bookings calendars show up in my Microsoft 365 tenant?**
+          Where do Bookings calendars show up in my Microsoft 365 tenant?
         answer: |
           Each new Bookings calendar creates a corresponding mailbox in Exchange, as well as a related entry in Azure Active Directory (AAD), where the entry is listed as an unlicensed user.
 
