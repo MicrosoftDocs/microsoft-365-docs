@@ -223,7 +223,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploying policy via OMA-URI
 
-Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom
+**Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
 
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
