@@ -176,6 +176,6 @@ If a support engineer disables this setting for your tenant:
 
 - The new metadata format and location for Office documents that were used while the setting was enabled will not be copied to the original format and location. As a result, this labeling information for unencrypted Word, Excel, and PowerPoint files will be lost.
 
-- Co-authoring and AutoSave no longer work in your tenant.
+- Co-authoring and AutoSave no longer work in your tenant for labeled and encrypted documents.
 
 - Sensitivity labels remain enabled for Office files in OneDrive and SharePoint.

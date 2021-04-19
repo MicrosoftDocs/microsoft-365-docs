@@ -208,7 +208,7 @@
             - name: Compare versions of OME
               href: ome-version-comparison.md
             - name: Office 365 Message Encryption FAQ
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
@@ -244,7 +244,9 @@
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Compliance Extension (preview)
-            href: dlp-chrome-learn-about.md  
+            href: dlp-chrome-learn-about.md
+          - name: Learn about the data loss prevention Alerts dashboard
+            href: dlp-alerts-dashboard-learn.md    
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -261,6 +263,8 @@
             href: endpoint-dlp-configure-proxy.md
           - name: Get started with the Microsoft Compliance Extension (preview)
             href: dlp-chrome-get-started.md
+          - name: Get started with the data loss prevention alert dashboard
+            href: dlp-alerts-dashboard-get-started.md
           - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
@@ -297,12 +301,14 @@
               href: how-dlp-works-between-admin-centers.md
             - name: Configure and view alerts for DLP policies (preview)
               href: dlp-configure-view-alerts-policies.md
-            - name: Use sensitivity labels as a condition in DLP policies (preview)
+            - name: Use sensitivity labels as a condition in DLP policies
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions (preview)
+            - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
+            - name: Data Loss Prevention policy tips reference
+              href: dlp-policy-tips-reference.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -381,8 +387,12 @@
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
-            - name: Cisco Jabber
+            - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle (preview)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber on PostgreSQL (preview)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect

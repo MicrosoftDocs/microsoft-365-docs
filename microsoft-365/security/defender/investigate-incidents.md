@@ -33,87 +33,108 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack.
+Microsoft 365 Defender aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.
+Within an incident, you investigate the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
-## Investigate an incident
+## Initial investigation
 
-1. Select an incident from the incident queue. <BR> A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.
+Before diving into the details, take a look at the properties and summary of the incident.
 
-    ![Image of incident side panel](../../media/incident-side-panel.png)
+You can start by selecting the incident from the check mark column. Here's an example.
 
-2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column":::
 
-3. Review the alerts, devices, users, other entities involved in the incident.
+When you do, a summary pane opens with key information about the incident, such as severity, to whom it is assigned, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
-## Incident overview
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident":::
 
-The overview page gives you a snapshot glance into the top things to notice about the incident.
+From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
 
-![Image of the incidents overview page](../../media/incidents-overview.png)
+You can also open the main page for an incident by selecting the incident name from the incident queue.
+
+## Summary
+
+The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
+
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 security center":::
 
 The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.
 
 The scope section gives you a list of top impacted assets that are part of this incident. If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.
 
-The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts linked to this incident.
+The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts are linked to this incident.
 
-And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end.
+And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed by you.
 
-This overview can assist in the initial triage of the incident by providing insight to the top characteristics of the incident that you should be aware of.
+This overview can assist in the initial triage of the incident by providing insight into the top characteristics of the incident that you should be aware of.
 
 ## Alerts
 
-You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365) and the reason they were linked together.
+On the **Alert** tab, you can view the alert queue for alerts related to the incident and other information about them such as:
 
-![Image of the incident alerts page](../../media/incident-alerts.png)
+- Severity.
+- The entities that were involved in the alert.
+- The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365).
+- The reason they were linked together.
 
-By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert. Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)
+Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
+
+By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth investigation of that alert. 
+
+Learn how to use the alert queue and alert pages in [Investigate alerts](investigate-alerts.md)
 
 ## Devices
 
-The devices tab lists all the devices where alerts related to the incident are seen.
+The **Devices** tab lists all the devices related to the incident. Here's an example.
 
-Clicking the name of the machine where the attack was conducted navigates you to its Machine page where you can see alerts that were triggered on it and related events provided to ease investigation.
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Example of a Devices page for an incident":::
 
-![Image of machines tab of an incident](../../media/incident-machines.png)
+You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Microsoft Defender for Endpoints device inventory.
 
-Selecting the Timeline tab enables you to scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Microsoft Defender for Endpoints":::
+
+From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
 > [!TIP]
-> You can do on-demand scans on a device page. In the Microsoft 365 security center, choose **Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
-
+> You can do on-demand scans on a device page. In the Microsoft 365 security center, choose **Endpoints > Device inventory**. Select a device that has alerts, and then run an antivirus scan. Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page. To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## Users
 
-See users that have been identified to be part of, or related to a given incident.
+The **Users** tab lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-Clicking the username navigates you to the user's Cloud App Security page where further investigation can be conducted.
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
-![Image of users tab of an incident](../../media/incident-users.png)
+You can select the check mark for a user to see details of the user account threat, exposure, and contact information. 
+Select the user name to see additional user account details.
 
 ## Mailboxes
 
-Investigate mailboxes that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail-related alert will open Microsoft Defender for Office 365 where you can take remediation actions.
+The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
 
-![Image of mailbox tab of an incident](../../media/incident-mailboxes.png)
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Example of a Mailboxes page for an incident":::
+
+You can select the check mark for a mailbox to see a list of active alerts. Select the mailbox name to see additional mailbox details on the Explorer page for Microsoft Defender for Office 365.
 
 ## Investigations
 
-Select **Investigations** to see all the automated investigations triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
+The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
 
-![Image of investigations tab of an incident](../../media/incident-investigations.png)
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
 
 Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.
 
-## Evidence
+## Evidence and Response
 
-Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, emails, and more. This helps quickly detect and block potential threats in the incident.
+The **Evidence and Response** tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-![Image of evidence tab of an incident](../../media/incident-evidence.png)
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Example of an Evidence and Response page for an incident":::
 
-Each of the analyzed entities will be marked with a verdict (Malicious, Suspicious, Clean) as well as a remediation status. This assists you in understanding the remediation status of the entire incident and what are the next steps that can be taken to further remediate.
+Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
+
+Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
 ## Related topics
 
