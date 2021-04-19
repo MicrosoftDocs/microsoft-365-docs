@@ -14,6 +14,7 @@ audience: ITPro
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Detect and block potentially unwanted applications
