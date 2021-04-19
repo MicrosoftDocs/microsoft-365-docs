@@ -35,7 +35,7 @@ Download an infographic to get a quick overview of ways to share your business f
   
 |**Item**|**Description**|
 |:-----|:-----|
-|![Thumb image for Share your business files infographic](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. Related article: [Overview of sharing business files](../business-video/overview-file-sharing.md)|
+|[![Thumb image for Share your business files infographic](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. Related article: [Overview of sharing business files](../business-video/overview-file-sharing.md)|
 
 <a name="onlinemeeting"></a>
 ## Host online meetings
@@ -44,7 +44,7 @@ Download an infographic to get a quick overview of how to join or host an online
 
 |**Item**|**Description**|
 |:-----|:-----|
-|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | A quick introduction to how to host or join an online meeting with Microsoft Teams. Related article: [Host online meetings for your business](../business-video/overview-online-meetings.md)|
+|[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | A quick introduction to how to host or join an online meeting with Microsoft Teams. Related article: [Host online meetings for your business](../business-video/overview-online-meetings.md)|
 
 <a name="workfromanywhere"></a>
 ## Work from anywhere
@@ -53,7 +53,7 @@ Download an infographic to get tips for working from anywhere:
 
 |**Item**|**Description**|
 |:-----|:-----|
-|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
+|[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
 
 <a name="surveywithforms"></a>
 ## Survey customers with Forms
@@ -62,4 +62,4 @@ Download an infographic to find out how to survey customers (internal or externa
 
 |**Item**|**Description**|
 |:-----|:-----|
-|![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. Related article: [Collect information with Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
+|[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. Related article: [Collect information with Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
