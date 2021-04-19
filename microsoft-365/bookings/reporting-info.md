@@ -25,7 +25,7 @@ This appointment level information can be used to visualize the customer activit
 
 1. Save the file with a new name, and specify .xls or xlsx format.
 
-1. Open the file to see the 4 month view of your Bookings calendar.
+1. Open the file to see the four month view of your Bookings calendar.
 
 1. Choose the date for your report and select **Export**.
 
@@ -46,13 +46,13 @@ The report includes the following fields.
 - **Duration (minutes)**
 - **Event Type**
 
-The improved report now contains the following additional fields.
+The improved report now contains the following fields.
 
 - **Pricing Type**   Default pricing type set for a service when creating the service.
 - **Price**   Price corresponding to the pricing type chosen.
 - **Currency**   Currency type set for a business.
 - **Cc Attendees**   The recipients who will be receiving the email notifications for a booking. This can be specified from the Teams app when creating a booking.
-- **Signed Up Attendees Count**   How many customers booked a group booking service. This will be always be one for a single booking service.
-- **Text Notifications Enabled**   Whether customers can receive SMS text related notifications.
+- **Signed Up Attendees Count**   How many customers booked a group booking service.
+- **Text Notifications Enabled**   Whether customers can receive SMS text-related notifications.
 - **Custom Fields**   All the questions and answers related to a single booking are combined in this field.
 - **Booking ID**   This is helpful to identify the same bookings of a group service.
