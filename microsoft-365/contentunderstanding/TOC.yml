@@ -44,6 +44,8 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Manage contracts using Microsoft 365
+          href: solution-manage-contractss-in-microsoft-365.md
 
     - name: Setup and administration
       items:
