@@ -6,9 +6,10 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.author: v-ajupudi
-author: alluthewriter
+ms.author: dansimp
+author: dansimp
 ms.reviewer: dansimp
+ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde

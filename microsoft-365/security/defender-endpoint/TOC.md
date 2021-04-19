@@ -176,7 +176,7 @@
 
 #### [Device Control]()
 ##### [Device Control reports](device-control-report.md)
-##### [Control USB devices](security\defender-endpoint\control-usb-devices-using-intune.md)
+##### [Control USB devices](control-usb-devices-using-intune.md)
 
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
