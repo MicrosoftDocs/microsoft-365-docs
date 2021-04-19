@@ -199,11 +199,11 @@ Before you get started with Removable Storage Protection, you must confirm yourâ
 
 1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
 
-<require screenshot>
+<require screenshot (as per the input document itself)>
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
-<require screenshot>
+<require screenshot (as per the input document itself)>
 
 ## Deploying and managing policy via Intune OMA-URI
 
