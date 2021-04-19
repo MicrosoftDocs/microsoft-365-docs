@@ -13,11 +13,11 @@ description: "Learn how you can see a 4 month view of your Bookings activity"
 
 # Reporting info for Bookings
 
-You can now see a 4-month view of your Bookings calendar in a TSV file. The TSV file will show you 4-months of data, but you can select different 4-month periods over the course of a year.
+You can now see a four month view of your Bookings calendar in a TSV file. The TSV file will show you four months of data, but you can select different four month periods over the course of a year.
 
 This appointment level information can be used to visualize the customer activity around your Bookings calendar. TSV files are tab separated value files. You can view or edit a file like this with any text editor or spreadsheet program, such as Excel.
 
-## See 4 months of Booking activity
+## See four months of Booking activity
 
 1. On the Bookings calendar dashboard, select **Export more data as TSV**.
 
@@ -55,4 +55,4 @@ The improved report now contains the following additional fields.
 - **Signed Up Attendees Count**   How many customers booked a group booking service. This will be always be one for a single booking service.
 - **Text Notifications Enabled**   Whether customers can receive SMS text related notifications.
 - **Custom Fields**   All the questions and answers related to a single booking are combined in this field.
-- **Booking Id**   This is helpful to identify the same bookings of a group service.
+- **Booking ID**   This is helpful to identify the same bookings of a group service.
