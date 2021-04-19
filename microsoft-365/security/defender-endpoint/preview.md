@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP preview features
+title: Microsoft Defender for Endpoint preview features
 description: Learn how to access Microsoft Defender for Endpoint preview features.
 keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
@@ -56,6 +56,12 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 
 The following features are included in the preview release:
+
+- [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
+
+   > [!IMPORTANT]
+   > Standard discovery will be the default mode for all preview customers starting May 10, 2021. You can choose to retain the basic mode through the settings page. 
+
 
 - [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 

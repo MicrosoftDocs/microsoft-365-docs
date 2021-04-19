@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot issues on Microsoft Defender for Endpoint for Android
-description: Troubleshoot issues for Microsoft Defender for Endpoint for Android
+title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
+description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, atp, mde, android, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshooting issues on Microsoft Defender for Endpoint for Android
+# Troubleshooting issues on Microsoft Defender for Endpoint on Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

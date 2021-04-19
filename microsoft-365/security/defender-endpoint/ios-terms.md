@@ -21,7 +21,7 @@ hideEdit: true
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint for iOS application license terms
+# Microsoft Defender for Endpoint on iOS application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
