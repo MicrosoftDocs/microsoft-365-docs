@@ -147,7 +147,7 @@ If you get the error message "**A parameter cannot be found that matches paramet
 
 If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console.
 
-# Sending email from the proxy address easily
+## Sending email from the proxy address easily
 
 A new feature is rolling out in April 2021 that allows users to send from their aliases easily when using Outlook on the web. When the feature rolls out to a tenancy where the tenant admin uses the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the tenancy will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the From dropdown in the Compose form.
   
