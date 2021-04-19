@@ -1,5 +1,5 @@
 ---
-title: Threat protection report in Microsoft Defender ATP
+title: Threat protection report in Microsoft Defender for Endpoint
 description: Track alert detections, categories, and severity using the threat protection report
 keywords: alert detection, source, alert by category, alert severity, alert classification, determination
 search.product: eADQiWindows 10XVcnh

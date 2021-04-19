@@ -53,29 +53,21 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-
-2. Select a user.
-
-3. In the right pane, expand **OneDrive Settings**, and then next to **Access**, select **Access files**.
-
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library. 
-
-> [!NOTE]
-> You can move or copy up to 500 MB of files and folders at a time.<br/>
-> When you move or copy documents that have version history, only the latest version is moved.  
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+
+::: moniker-end
 
 2. Select a user.
 
-3. In the right pane, expand **OneDrive Settings**, and then next to **Access**, select **Access files**.
+3. In the right pane, select **OneDrive**. Under **Get access to files**, select **Create link to files**.
 
-4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library.  
+4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library. 
 
 > [!NOTE]
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
@@ -87,29 +79,23 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 
 As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it.
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin. 
-
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a> as a global admin or SharePoint admin.
-
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> as a global admin or SharePoint admin.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
-::: moniker-end
+::: moniker-end 
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
