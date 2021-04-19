@@ -61,7 +61,7 @@ This topic provides instructions on how to run the tool via Live Response.
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
     ```
 
-    ![Image of commands](images/analyzer-commands.png)
+    [ ![Image of commands](images/analyzer-commands.png) ](images/analyzer-commands.png#lightbox)
 
 
 >[!NOTE]
