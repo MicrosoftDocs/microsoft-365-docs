@@ -69,7 +69,7 @@ Apart from DNS, these are all optional for most customers unless you need the sp
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
   
-[Monitor Microsoft 365 connectivity](./monitor-connectivity.md?view=o365-worldwide)
+[Monitor Microsoft 365 connectivity](./monitor-connectivity.md)
   
 [Client connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
