@@ -97,7 +97,7 @@ Here's the typical workflow for responding to incidents:
 
    - Containment: Reducing any additional impact on your tenant.
    - Eradication: Removing the security threat.
-   - Recovery: Restoring your tenant resources to the state they were in before the attack.
+   - Recovery: Restoring your tenant resources to the state they were in before the incident.
 
 3. After you resolve the incident, take the time to:
 
