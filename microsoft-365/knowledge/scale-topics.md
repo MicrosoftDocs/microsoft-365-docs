@@ -61,30 +61,19 @@ Within a topic card or page, we use various cues to show how the AI has generate
 
    ![Sample card showing a suggested topic and includes suggested people and suggested resources.](../media/knowledge-management/scale-topics-sample-card-suggested-topic.png)
 
-    :::image type="content" source="../media/scale-topics-sample-card-suggested-topic.png" alt-text="A sample card that shows a suggested topic and including suggested people and suggested resources." border="true":::
-
 - Information on the card states where a definition has come from by specifying its source.
 
 - Suggested people are derived by aggregating people who have written or edited documents with topic evidence. If a person writes a document that has a topic name in the title, and that document has many views, it might only require one document to establish the person as related. However, in many cases more evidence is better, and people who are listed have worked on multiple documents.  
 
-
    ![Page showing a suggested topic and include suggested people, files, and pages.](../media/knowledge-management/scale-topics-sample-page-suggested-topic.png)
-
-    :::image type="content" source="../media/scale-topics-sample-page-suggested-topic.png" alt-text="A page that shows a suggested topic and including suggested people, files, and pages." border="true" lightbox="../media/scale-topics-sample-page-suggested-topic.png":::
 
 - For the files and pages shown, the system identifies how many times the topic has been mentioned in the document, but the topic also must be mentioned in a specific context that identifies the reference to the topic of specific type (such as project or team). This is what counts as evidence for the AI. The system also considers the occurrence of a topic name in the titles of documents, types of documents, and other analytics features (such as views).
 
    ![Image of a banner that says Suggested topic and Microsoft Viva discovered this topic.](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
 
-:::image type="content" source="../media/scale-topics-suggested-you-have-access.png" alt-text="Image of a banner that says 'Suggested topic' and 'Microsoft Viva discovered this topic. You have access to the files and pages shown.'" border="true" :::
-
    ![Image of a banner that says Suggested topic and Edit this page to describe your involvement in this topic.](../media/knowledge-management/scale-topics-suggested-describe-your-involvement.png)
 
-:::image type="content" source="../media/scale-topics-suggested-describe-your-involvement.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page to describe your involvement in this topic.'" border="true" :::
-
    ![Image of a banner that says Suggested topic and Edit this page if you can add people connected to the topic.](../media/knowledge-management/scale-topics-suggested-add-people.png)
-
-:::image type="content" source="../media/scale-topics-suggested-add-people.png" alt-text="Image of a banner that says 'Suggested topic' and 'Edit this page if you can add people connected to the topic.'" border="true" :::
 
 These attributes demonstrate that the content has been added by AI, and how the AI has made that determination.
 
@@ -103,8 +92,6 @@ When users interact with a suggested topic, they might be asked a simple questio
 The homepage of a topic center is another location where feedback on suggested topics is gathered. In the topic center, a user can see the topics that they have been associated with and are given the option to either confirm this association or have it removed.
 
    ![Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics.](../media/knowledge-management/scale-topics-topic-center-confirm-connections.png)
-
-:::image type="content" source="../media/scale-topics-topic-center-confirm-connections.png" alt-text="Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics." border="true" lightbox="../media/scale-topics-topic-center-confirm-connections.png":::
 
 When you allow broad crowdsourcing of topics, you should consider the following factors:
 
