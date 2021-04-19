@@ -1,5 +1,5 @@
 ---
-title: Configure Conditional Access in Microsoft Defender ATP
+title: Configure Conditional Access in Microsoft Defender for Endpoint
 description: Learn about steps that you need to do in Intune, Microsoft Defender Security Center, and Azure to implement Conditional access
 keywords: conditional access, conditional, access, device risk, risk level, integration, intune integration
 search.product: eADQiWindows 10XVcnh
