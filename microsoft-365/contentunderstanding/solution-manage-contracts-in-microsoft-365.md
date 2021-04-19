@@ -1,5 +1,5 @@
 ---
-title: "Manage contracts in Microsoft 365"
+title: "Manage contracts using a Microsoft 365 solution"
 ms.author: chuckedmonson
 author: chucked
 manager: pamgreen
@@ -10,10 +10,10 @@ ms.service:
 search.appverid: 
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to manage contracts using a Microsoft 365 solution."
+description: "Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, Microsoft Teams, and Power Automate."
 ---
 
-# Manage contracts in Microsoft 365
+# Manage contracts using a Microsoft 365 solution
 
 This article describes how to create a contracts management solution for your organization with components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution does not suit your business needs as a whole, there are parts of it that you can adopt in your planning to create your custom contract management solution.
 
