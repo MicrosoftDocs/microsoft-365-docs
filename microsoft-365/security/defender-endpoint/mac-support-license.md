@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot license issues for Microsoft Defender ATP for Mac
-description: Troubleshoot license issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot license issues for Microsoft Defender for Endpoint for Mac
+description: Troubleshoot license issues in Microsoft Defender for Endpoint for Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

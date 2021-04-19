@@ -60,12 +60,12 @@ In cases where, while investigating you would like to move alerts from one incid
 
 ## Edit the incident name
 
-Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
 > [!NOTE]
-> Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.
+> Incidents that existed before the rollout of the automatic incident naming feature will retain their name.
 
 ## Add incident tags
 
@@ -91,7 +91,7 @@ If it was a true alert, you should also specify what type of threat it was with 
 
 ## Add comments
 
-You can add multiple comments to an incident with the **Comment** field. Each comment is added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+You can add multiple comments to an incident with the **Comment** field. Each comment gets added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
 ## Related topics
 
