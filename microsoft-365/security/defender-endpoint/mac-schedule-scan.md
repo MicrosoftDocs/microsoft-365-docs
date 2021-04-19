@@ -1,6 +1,6 @@
 ---
 title: How to schedule scans with MDATP for macOS
-description: Learn how to schedule an automatic scanning time for Microsoft Defender ATP in macOS to better protect your organization's assets.
+description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
 keywords: microsoft, defender, atp, mac, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Schedule scans with Microsoft Defender for Endpoint for Mac
+# Schedule scans with Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot SIEM tool integration issues in Microsoft Defender ATP
-description: Troubleshoot issues that might arise when using SIEM tools with Microsoft Defender ATP.
+title: Troubleshoot SIEM tool integration issues in Microsoft Defender for Endpoint
+description: Troubleshoot issues that might arise when using SIEM tools with Microsoft Defender for Endpoint.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
