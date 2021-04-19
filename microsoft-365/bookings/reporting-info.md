@@ -13,7 +13,7 @@ description: "Learn how you can see a 4 month view of your Bookings activity"
 
 # Reporting info for Bookings
 
-You can now see a 4-month view of your Bookings calendar in a TSV file. The TSV file will show you 4-months of data, but you can see select different 4-month periods over the course of your subscription. For example, you can go back 4 years in 4-month increments if you’ve had Bookings for that long.
+You can now see a 4-month view of your Bookings calendar in a TSV file. The TSV file will show you 4-months of data, but you can select different 4-month periods over the course of a year.
 
 This appointment level information can be used to visualize the customer activity around your Bookings calendar. TSV files are tab separated value files. You can view or edit a file like this with any text editor or spreadsheet program, such as Excel.
 
