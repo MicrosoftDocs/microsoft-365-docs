@@ -1,6 +1,186 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-aws.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-cloudflare.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-crazy-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dnsmadeeasy.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dreamhost.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dyn-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-enomcentral.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-freenom.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-godaddy.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-google-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-hostgator.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-mydomain.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-namecheap.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-name-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-names-co-uk.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-netregistry.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-network-solutions.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-ovh.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-register365.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-register-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-web-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-wix.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-yahoo-small-business.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-for-azure-dns-zones.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-for-domain-managed-by-google-enom.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/set-up-dns-records-at-easydns.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-1-1-internet.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-aws.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-bluehost.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-google-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-hostgator.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-mydomain.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-namecheap.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-network-solutions.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
       "redirect_url": "/microsoft-365/business-video/admin-center-overview",
       "redirect_document_id": false
