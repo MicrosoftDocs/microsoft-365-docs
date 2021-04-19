@@ -1,6 +1,6 @@
 ---
-title: Set preferences for Microsoft Defender ATP for Mac
-description: Configure Microsoft Defender ATP for Mac in enterprise organizations.
+title: Set preferences for Microsoft Defender for Endpoint for Mac
+description: Configure Microsoft Defender for Endpoint for Mac in enterprise organizations.
 keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
