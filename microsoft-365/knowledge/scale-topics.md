@@ -157,7 +157,7 @@ Larger portal sites within your organization have often invested time in organiz
 
 If your organization has invested in knowledge bases or wiki sites, these can provide a list of topics to use for your initial curation efforts. If they are particularly large, select the most viewed or edited topics as a starting point.
 
-### See also
+## See also
 
 [Manage topics in the topic center](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics)
 
