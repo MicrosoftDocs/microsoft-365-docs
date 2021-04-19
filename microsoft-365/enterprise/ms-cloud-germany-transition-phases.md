@@ -182,6 +182,7 @@ Additional considerations:
 - For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook by using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`). Customers who want to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry key can be deployed organization-wide by using Group Policy.
 - All customers using an active Exchange Hybrid Configuration are not able to move mailboxes from on-premises Exchange Server to Exchange Online, neither to Microsoft Cloud Deutschland, nor to the new datacenter region in Germany. Customers need to ensure that ongoing mailbox moves have been completed prior to phase 5 and will be resumed after completion this phase.
 - Ensure that all users using legacy protocols (POP3/IMAP4/SMTP) for their devices are prepared to change the endpoints in their client after their Exchange mailbox has been moved to the new German datacenter region as described in the [pre-migration steps for Exchange Online](ms-cloud-germany-transition-add-pre-work.md#exchange-online).
+- Scheduling Skype for Business meetings in Outlook Web App is not available anymore after the mailbox has been migrated. If necessary, users have to use Outlook instead.
 
 To find out more about the differences for organizations in migration and after Exchange Online resources are migrated, review the information in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
 
@@ -210,19 +211,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **Applies to:** All customers using Skype for Business Online
 
-Make sure that you are familiar with the [prework for your Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) procedure.
+Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
+In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the region "Germany" of Office 365 services.
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, the customer will receive a message in the Admin center which announces when the migration will take place, and again when the migration begins.
+- Policy configuration is migrated.
+- Users will be migrated to Teams and will no longer have access to Skype for Business after migration.
+- Users must have the Microsoft Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser.
+- Contacts and meetings will be migrated to Microsoft Teams.
+- Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
+- Contacts and existing meetings will continue to function as Skype for Business meetings.
 
-| Step(s) | Description | Impact |
-|:-------|:-------|:-------|
-| Migration of Skype for Business to Teams. | Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the region "Germany" of Office 365 services. |<ul><li>Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, we'll post to the Admin center to let you know about when the migration will take place, and again when we begin the migration.</li><li> Policy configuration is migrated. </li><li>Users will be migrated to Teams and will no longer have Skype for Business after migration. </li><li>Users must have the Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser. </li><li>Contacts and meetings will be migrated to Teams.</li><li>Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed. </li><li>Contacts and existing meetings will continue to function as Skype for Business meetings. </li></ul>|
-||||
-
-If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following code to connect:
+If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
 ```powershell
 Import-Module MicrosoftTeams
