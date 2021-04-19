@@ -18,11 +18,9 @@ f1.keywords: NOCSH
 description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
 ---
 
-# Set up secure collaboration with Microsoft 365
+# Set up secure collaboration with Microsoft 365 and Microsoft Teams
 
 Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 This collaboration solution guidance includes two components to help you:
 - Deploy Microsoft Teams with the right level of protection for each project
@@ -31,6 +29,8 @@ This collaboration solution guidance includes two components to help you:
 ![Deploy Teams with appropriate protection and configure external sharing with appropriate security settings](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 If versatile and easy-to-use content collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing information too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 With Microsoft 365, you can deploy Teams with a variety of configurations that help:
 

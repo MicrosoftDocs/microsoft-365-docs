@@ -91,3 +91,7 @@ Microsoft 365 Defender cross-product features include:
 Microsoft 365 Defender licensing requirements must be met before you can enable the service in the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com). For more information, read:
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
+
+
+## See also
+- [Deploy threat protection capabilities across Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)
