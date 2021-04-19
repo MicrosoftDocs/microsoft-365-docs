@@ -189,12 +189,9 @@ To find out more about the differences for organizations in migration and after 
 
 **Applies to:** All customers using Exchange Online<br>
 
-Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany".
+Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historial tenant details are being migrated, which also includes back-end services for Security and Compliance features.
 
-| Step(s) | Description | Impact |
-|:-------|:-------|:-------|
-| Migration of Exchange Online routing and historical message detail. | Exchange Online enables routing from external hosts to Office 365. The external MX records are transitioned to route to the EOP service. Tenant configuration and historical details are migrated. |<ul><li>Microsoft–managed DNS entries are updated from Office 365 Germany EOP to Office 365 services.</li><li>Customers should wait for 30 days after EOP dual write for EOP migration. Otherwise, there may be data loss.</li></ul>|
-||||
+Customers using Exchange Online capabilities only (Non-Hybrid) do not need to pay attention at this stage.
 
 ### Exchange Online Hybrid deployments
 **Applies to:** All customers using an active Exchange Hybrid Configuration with Exchange servers on-premises
