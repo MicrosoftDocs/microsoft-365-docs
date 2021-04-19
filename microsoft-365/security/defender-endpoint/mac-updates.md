@@ -73,7 +73,7 @@ The `Current` channel contains the most stable version of the product.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **Data type** | String |
 | **Possible values** | Beta <br/> Preview <br/> Current |
@@ -91,7 +91,7 @@ Change how often MAU searches for updates.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **Data type** | Integer |
 | **Default value** | 720 (minutes) |
@@ -104,7 +104,7 @@ Change how MAU searches for updates.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **Data type** | String |
 | **Possible values** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -117,7 +117,7 @@ Change whether local users will be able to click the "Check for Updates" option 
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **Data type** | Boolean |
 | **Possible values** | True (default) <br/> False |
@@ -129,7 +129,7 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **Data type** | Boolean |
 | **Possible values** | False (default) <br/> True |
@@ -141,7 +141,7 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **Data type** | Boolean |
 | **Possible values** | True (default) <br/> False |

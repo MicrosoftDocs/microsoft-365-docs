@@ -37,6 +37,8 @@ There are two major factors that determine which policy is applied to a message:
 
 - **The priority of the email protection type**: This order is not configurable, and is described in the following table:
 
+  <br>
+
   ****
 
   |Priority|Email protection|Category|Where to manage|
@@ -53,19 +55,21 @@ There are two major factors that determine which policy is applied to a message:
 
   <sup>\*</sup> These features are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
-- **The priority of the policy**: For each protection type (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users. Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
+- **The priority of the policy**: For each type of policy (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users. Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
 
   If a user is defined in multiple policies of the same type, only the policy with the highest priority is applied to them. Any remaining policies of that type are not evaluated for the user (including the default policy).
 
 For example, consider the following anti-phishing policies in Microsoft Defender for Office 365 **that apply to the same users**, and a message that's identified as both user impersonation and spoofing:
 
-  ****
+<br>
 
-  |Policy name|Priority|User impersonation|Anti-spoofing|
-  |---|---|---|---|
-  |Policy A|1|On|Off|
-  |Policy B|2|Off|On|
-  |
+****
+
+|Policy name|Priority|User impersonation|Anti-spoofing|
+|---|---|---|---|
+|Policy A|1|On|Off|
+|Policy B|2|Off|On|
+|
 
 1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (5).
 2. Policy A is applied to the users because it has a higher priority than Policy B.

@@ -72,7 +72,7 @@ Once the service is provisioned, it adds:
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
-![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/mtp-enable/mtp-on.png)
+![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/overview-incident.png)
 *Microsoft 365 security center with incidents management and other Microsoft 365 Defender capabilities*
 
 ### Getting Microsoft Defender for Identity data 

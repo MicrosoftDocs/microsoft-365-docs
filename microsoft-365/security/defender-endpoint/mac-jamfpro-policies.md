@@ -355,7 +355,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
-        ![Image of configuration profile settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Image of new macOS configuration profile screen](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`

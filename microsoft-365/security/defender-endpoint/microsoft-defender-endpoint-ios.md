@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint on iOS overview
+title: Microsoft Defender for Endpoint on iOS 
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune

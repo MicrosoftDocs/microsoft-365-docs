@@ -74,8 +74,8 @@ In case the suggested articles are not sufficient, you can open a service reques
 
 Learn how to open support tickets by contacting Defender for Endpoint support. 
 
-
-
+> [!Note]
+> If you have a permier support contract with Microsoft, you will see the premier tag on the widget. If not, contact your Microsoft account manager.
 
 ### Contact support
 This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:

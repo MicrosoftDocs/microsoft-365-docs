@@ -79,7 +79,7 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 ### Interactive uninstallation
 
-- Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
+- Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
 ### From the command line
 

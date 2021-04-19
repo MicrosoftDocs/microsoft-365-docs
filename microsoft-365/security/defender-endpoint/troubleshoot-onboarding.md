@@ -297,8 +297,8 @@ If the verification fails and your environment is using a proxy to connect to th
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md#server-mma)
-- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
+- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
 
 You might also need to check the following:
 
