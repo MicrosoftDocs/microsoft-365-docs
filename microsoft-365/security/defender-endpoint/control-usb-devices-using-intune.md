@@ -95,7 +95,7 @@ When configuring the allow device installation policy, you must allow all parent
 
 ![Devices by connection](images/devicesbyconnection.png)
 
-In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. See [Microsoft-provided USB drivers](/windows-hardware/drivers/usbcon/supported-usb-classes) for  more information.
+In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. See [Microsoft-provided USB drivers](/windows-hardware/drivers/usbcon/supported-usb-classes) for more information.
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
@@ -147,7 +147,8 @@ For information about Device ID formats, see [Standard USB Identifiers](/windows
 For information on vendor IDs, see [USB members](https://www.usb.org/members).
 
 The following is an example for looking up a device vendor ID or product ID (which is part of the device ID) using PowerShell: 
-``` PowerShell
+
+```powershell
 Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
