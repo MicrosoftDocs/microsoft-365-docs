@@ -49,7 +49,7 @@ Removable storage Access Control includes two parts, namely removable storage gr
 
 ## Prepare your endpoints
 
-Ensure that the Windows 10 devices on which you plan to deploy Removable Storage Protection have Anti-malware Client Version **4.18.2103.3 or later**.
+Deploy Removable Storage Protection on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
 
 :::image type="content" source="images/anti-malware.png" alt-text="The screen showing device that has anti-malware client version":::
 
@@ -189,11 +189,11 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 
 ## Deploying and managing policy via Group Policy
 
-The Removable storage Protection feature allows you to apply policy via Group Policy to either user or device or both.
+The Removable Storage Protection feature allows you to apply policy via Group Policy to either user or device, or both.
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you should confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Protection, you must confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
@@ -207,11 +207,11 @@ Before you get started with Removable Storage Protection, you should confirm you
 
 ## Deploying and managing policy via Intune OMA-URI
 
-The Removable Storage Protection feature allows you to apply policy via OMA-URI to either user or device or both.
+The Removable Storage Protection feature allows you to apply policy via OMA-URI to either user or device, or both.
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you should confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Protection, you  must confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E3.
 
 ### Permission
 
@@ -223,13 +223,13 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploying policy via OMA-URI
 
-MEM (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom
+Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom
 
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
     /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
-    For example, for the **any removable storage and CD/DVD** group in the sample, the link should be:
+    For example, for the **any removable storage and CD/DVD** group in the sample, the link must be:
     ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Data Type: String (XML file)
@@ -242,7 +242,7 @@ MEM (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Cr
       /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
 
-      For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link should be ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
+      For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
 
     - Data Type: String (XML file)
 
