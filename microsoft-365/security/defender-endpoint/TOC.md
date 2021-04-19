@@ -174,6 +174,9 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
+#### [Device Control]()
+##### [Device Control reports](device-control-report.md)
+##### [Control USB devices](security\defender-endpoint\control-usb-devices-using-intune.md)
 
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
