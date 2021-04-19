@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 ms.author: dansimp
 author: dansimp
 ms.reviewer: dansimp
