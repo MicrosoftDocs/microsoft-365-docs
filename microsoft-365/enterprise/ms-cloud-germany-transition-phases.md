@@ -154,9 +154,12 @@ If you want to modify user photos during phase 5, see [Exchange Online PowerShel
 ### DNS Record for Autodiscover in Exchange Online
 **Applies to:** Customers using Exchange Online with a custom domain
 
-Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to **autodiscover.outlook.com**.
+Customer-managed DNS settings for Autodiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Existing DNS entries with CNAME pointing to autodiscover-outlook.office.de need to be updated to point to **autodiscover.outlook.com**.
 
 Customers who do not perform these DNS updates upon **completion of the migration phase 9** may experience service issues when the migration is finalized.
+
+> [!NOTE]
+> Validation errors in the Admin Center for custom domains for the Autodiscover entry can be ignored. Services will work properly only when the CNAME record has been changed to autodiscover.outlook.com.
 
 ### Exchange Online PowerShell
 **Applies to:** Exchange Online Administrators using Exchange Online PowerShell
