@@ -146,7 +146,7 @@ After clicking through to the content, it may be useful to bookmark this site an
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
 
 > [!TIP]
-> You can lots of other learning opportunities in [Microsoft Learn](https://docs.microsoft.com/e/learn/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](https://docs.microsoft.com/learn/certifications/courses/ms-500t02).
+> There are lots of other learning opportunities in [Microsoft Learn](https://docs.microsoft.com/e/learn/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](https://docs.microsoft.com/learn/certifications/courses/ms-500t02).
 
 ## Send us your feedback
 
