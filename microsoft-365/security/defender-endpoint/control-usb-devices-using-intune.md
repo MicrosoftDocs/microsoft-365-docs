@@ -123,11 +123,15 @@ The **Prevent installation of devices that match any of these device IDs** polic
 To prevent installation of devices that match any of these device IDs: 
 
 1. [Look up device ID](#look-up-device-id) for devices that you want Windows to prevent from installing.
-![Look up vendor or product ID](images/lookup-vendor-product-id.png)
+
+   ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
+
 2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
-![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
+
+    ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
 
 #### Look up device ID
+
 You can use Device Manager to look up a device ID.
 
 1. Open Device Manager.
@@ -152,15 +156,20 @@ The **Prevent installation of devices using drivers that match these device setu
 To prevent installation of particular classes of devices: 
 
 1. Find the GUID of the device setup class from [System-Defined Device Setup Classes Available to Vendors](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+
 2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
-![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
 
-   ![Create device configuration profile](images/create-device-configuration-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create device configuration profile](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
 
@@ -169,7 +178,8 @@ To prevent installation of particular classes of devices:
    - Platform: Windows 10 and later
    - Profile type: Device restrictions
 
-   ![Create profile](images/create-profile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create profile](images/create-profile.png)
 
 4. Click **Configure** > **General**.  
 
@@ -211,7 +221,8 @@ You can prevent installation of the prohibited peripherals with matching device 
 
 Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
-![screenshot of Bluetooth settings page](images/bluetooth.png)
+> [!div class="mx-imgBorder"]
+> ![screenshot of Bluetooth settings page](images/bluetooth.png)
 
 ### Use Microsoft Defender for Endpoint baseline settings
 
@@ -248,6 +259,7 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 Protecting authorized removable storage with Microsoft Defender Antivirus requires [enabling real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) or scheduling scans and configuring removable drives for scans.
 
 - If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](/samples/browse/?redirectedfrom=TechNet-Gallery) of a USB drive after it is mounted, so that Microsoft Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
+
 - If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
 
 >[!NOTE]
@@ -268,15 +280,24 @@ Affected file types include executable files (such as .exe, .dll, or .scr) and s
 These settings require [enabling real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+
 2. Click **Devices** > **Windows** > **Configuration Policies** > **Create profile**. 
+
 ![Create device configuration profile](images/create-device-configuration-profile.png)
+
 3. Use the following settings:
    - Platform: Windows 10 and later 
    - Profile type: Device restrictions
-  ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
+
 4. Click **Create**.  
+
 5. For **Unsigned and untrusted processes that run from USB**, choose **Block**.
+
    ![Block untrusted processes](images/block-untrusted-processes.png)
+
 6. Click **OK** to close settings and **Device restrictions**.
 
 ### Protect against Direct Memory Access (DMA) attacks
