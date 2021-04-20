@@ -1,6 +1,6 @@
 ---
-title: Deploying Microsoft Defender ATP for macOS with Jamf Pro
-description: Deploying Microsoft Defender ATP for macOS with Jamf Pro
+title: Deploying Microsoft Defender for Endpoint for macOS with Jamf Pro
+description: Deploying Microsoft Defender for Endpoint for macOS with Jamf Pro
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
