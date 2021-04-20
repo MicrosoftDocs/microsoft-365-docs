@@ -78,7 +78,7 @@ In the <b>ContractCardjson</b> file that you downloaded in the reference zip fil
 
 ## Contract status
 
-The following code lets us define the status of each title card. Note that each status value (New, In review, Approved, and Rejected) will display a different color code for each. In the contract card json file that you downloaded, look at the section that defines the status.
+The following code lets us define the status of each title card. Note that each status value (New, In review, Approved, and Rejected) will display a different color code for each. In the contract card JSON file that you downloaded, look at the section that defines the status.
 
 ```JSON
           {
