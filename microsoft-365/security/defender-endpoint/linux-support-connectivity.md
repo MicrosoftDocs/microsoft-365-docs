@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
+title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Troubleshoot cloud connectivity issues for Microsoft Defender ATP for Linux
+description: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, atp, linux, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,6 +1,6 @@
 ---
-title: Detect and block potentially unwanted applications with Microsoft Defender ATP for Linux
-description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender ATP for Linux.
+title: Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on Linux
+description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, atp, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
