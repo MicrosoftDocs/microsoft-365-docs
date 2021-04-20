@@ -1,6 +1,6 @@
 ---
 title: Configure device proxy and Internet connection settings
-description: Configure the Microsoft Defender ATP proxy and internet settings to enable communication with the cloud service.
+description: Configure the Microsoft Defender for Endpoint proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -174,7 +174,7 @@ The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in 
 > [!NOTE]
 > In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
-## Verify client connectivity to Microsoft Defender ATP service URLs
+## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Defender for Endpoint service URLs.
 
