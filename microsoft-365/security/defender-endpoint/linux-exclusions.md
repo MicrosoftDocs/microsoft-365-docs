@@ -1,6 +1,6 @@
 ---
-title: Configure and validate exclusions for Microsoft Defender ATP for Linux
-description: Provide and validate exclusions for Microsoft Defender ATP for Linux. Exclusions can be set for files, folders, and processes.
+title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
+description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
 keywords: microsoft, defender, atp, linux, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
