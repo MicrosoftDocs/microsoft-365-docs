@@ -76,7 +76,7 @@ There are new capabilities that come with this email entity page. Here's the lis
 
 ### Email preview for Cloud mailboxes
 
-Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won’t be able to preview those emails either.
+Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
 > Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in Threat Explorer.
@@ -113,7 +113,7 @@ Users will see enriched detonation details for known malicious attachments or hy
   - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
   - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
 
-- *Bulk Compliant Level (BCL)*: The Bulk Complaint Level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
+- *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 
 - *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
 

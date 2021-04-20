@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels as conditions in DLP policies (preview)"
+title: "Use sensitivity labels as conditions in DLP policies"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,7 +22,7 @@ ms.custom:
 description: learn about the services and item types that you can use sensitivity labels as conditions in DLP policies
 ---
 
-# Use sensitivity labels as conditions in DLP policies (preview)
+# Use sensitivity labels as conditions in DLP policies
 
 You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP policies for these location:
 
@@ -49,15 +49,15 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |Service  |Item type  |Available to policy tip  |Enforceable  |
 |---------|---------|---------|---------|
 |Exchange    |email message         |yes         |yes         |
-|Exchange    |email attachment         |no *         |no *         |
+|Exchange    |email attachment         |no *         |yes *         |
 |SharePoint Online     |items in SharePoint Online         |yes         |yes         |
 |OneDrive for Business     |items         |yes         |yes         |
 |Teams     |Teams and channel messages         |not applicable         |not applicable         |
 |Teams     |attachments         |yes **         |yes **         |
-|Windows 10 devices (preview)     |items         |yes         |yes         |
+|Windows 10 devices     |items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
-\* DLP detection of sensitivity labels on emails are supported. DLP detection of sensitivity labeled email attachments are not.
+\* DLP detection and enforcement of sensitivity labels on emails and attachments are supported in-transit. DLP policy tips of sensitivity labeled email attachments are not.
 
 \** Attachments sent in Teams over 1:1 chat or channels are automatically uploaded to OneDrive for Business and SharePoint. So if SharePoint Online or OneDrive for Business are included as locations in your DLP policy, then labeled attachments sent in Teams will be automatically included in the scope of this condition. Teams as a location does not need to be selected in the DLP policy.
 

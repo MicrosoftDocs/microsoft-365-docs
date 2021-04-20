@@ -25,14 +25,23 @@ description: "Summary: Post-migration activities after moving from Microsoft Clo
 The following sections provide post-migration activities for multiple services after moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.
 
 ## Azure AD
+<!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
+### Azure AD Endpoints
+**Applies to:** All customers
 
-### Azure AD Connect
-**Applies to:** All customers synchronizing identities with Azure AD connect
+After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland and the endpoints cannot be used anymore. At this point, the customer needs to ensure that all applications are using the endpoints for the new German datacenter region.
+The following table provides an overview about which endpoints will replace the previously used endpoints in Microsoft Cloud Germany (Microsoft Cloud Deutschland). 
 
-| Step(s) | Description | Impact |
-|:-------|:-------|:-------|
-| Update Azure AD Connect. | After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to ensure that the delta sync process has been finalized, and after that, change the string value of `AzureInstance` from 3 (Microsoft Cloud Deutschland) to 0 in the registry path `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect`. | Change the value of `AzureInstance`, the registry key. Failing to do so, will lead to objects not being synchronized after the Microsoft Cloud Deutschland endpoints are no longer available. |
-|||||
+|Endpoint in Microsoft Cloud Germany  |Endpoint in the new German datacenter region  |
+|:---------|:---------|
+|becws.microsoftonline.de<br>provisioningapi.microsoftonline.de |becws.microsoftonline.com<br>provisioningapi.microsoftonline.com |
+|adminwebservice.microsoftonline.de |adminwebservice.microsoftonline.com |
+|login.microsoftonline.de<br>logincert.microsoftonline.de<br>sts.microsoftonline.de |login.microsoftonline.com<br>login.windows.net<br>logincert.microsoftonline.com<br>accounts.accesscontrol.windows.net |
+|enterpriseregistration.microsoftonline.de |enterpriseregistration.windows.net |
+|graph.cloudapi.de |graph.windows.net |
+|graph.microsoft.de |graph.microsoft.com |
+|||
+-->
 
 ### Azure AD federated authentication with AD FS
 **Applies to:** All customers using federated authentication with AD FS

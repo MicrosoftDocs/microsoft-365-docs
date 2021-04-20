@@ -101,7 +101,7 @@ This table displays the wildcard FQDNs that are advertised to both the internet 
 
 Usually PAC files are intended to send network requests to ExpressRoute advertised endpoints directly to the circuit and all other network requests to your proxy. If you're configuring a PAC file like this, compose your PAC file in the following order:
   
-1. Include the sub-FQDNs from column two in the above table at the top of your PAC file, sending the traffic towards your proxy. We've built a sample PAC file for you to use in our article on [managing Office 365 endpoints](./managing-expressroute-for-connectivity.md).
+1. Include the sub-FQDNs from column two in the above table at the top of your PAC file, sending the traffic towards your proxy. We've built a sample PAC file for you to use in our article on [managing Office 365 endpoints](./managing-office-365-endpoints.md).
 
 2. Include all FQDNs marked advertised to ExpressRoute in [this article](./urls-and-ip-address-ranges.md) below the first section, sending the traffic directly to your ExpressRoute circuit.
 
