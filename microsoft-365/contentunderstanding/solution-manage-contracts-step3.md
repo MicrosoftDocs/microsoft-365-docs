@@ -126,7 +126,7 @@ In your flow, next you need to create a condition in which your contract will be
 
 When a contract has been approved, the following things occur:
 
-- In the Contracts channel, the status in the contract card will change to <b>Approved</b>.
+- On the Contracts tab, the status in the contract card will change to <b>Approved</b>.
 ![Card status approved.](../media/content-understanding/flow2.png)</br>
 In your flow, the contract is checked out, the status is changed to "Approved" and checked back in again.</br>
 ![Flow status approved.](../media/content-understanding/status-approved.png)</br>
@@ -228,7 +228,7 @@ In the flow, we created the following item to move approved contracts to the For
 
 When a contract has been rejected, the following things occur:
 
-- In the Contracts channel, the status in the contract card will change to <b>Rejected</b>.
+- On the Contracts tab, the status in the contract card will change to <b>Rejected</b>.
 ![Card status rejected.](../media/content-understanding/rejected.png)</br>
 In our flow, we check out the contract file, change the status to <b>Rejected</b>, and check the file back in again.</br>
 ![Flow status rejected.](../media/content-understanding/reject-flow.png)</br>
