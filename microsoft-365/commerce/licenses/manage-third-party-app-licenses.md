@@ -57,5 +57,5 @@ Depending on the third-party app that you bought, your next step might be to ins
 
 ## Related content
 
-- [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
-- [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article) \
+[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
