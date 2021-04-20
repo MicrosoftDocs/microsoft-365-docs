@@ -56,7 +56,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our [Microsoft Defender SmartScreen demo pages](https://demo.smartscreen.msft.net/).
 
-### Blocking URLs with Microsoft Defender SmartScreen
+### Block URLs with Microsoft Defender SmartScreen
 
 In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.
 
@@ -64,9 +64,9 @@ Security admins can [configure](/DeployEdge/configure-microsoft-edge) how Micros
 
 Although Microsoft Defender for Endpoint has its own blocklist based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](manage-indicators.md) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.
 
-## Microsoft Defender Antivirus
+## Microsoft Defender Antivirus and PUA protection
 
-The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUA on endpoints in your network.
 
 > [!NOTE]
 > This feature is available in Windows 10, Windows Server 2019, and Windows Server 2016.
@@ -75,7 +75,7 @@ Microsoft Defender Antivirus blocks detected PUA files and any attempts to downl
 
 The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-### Configure PUA protection in Microsoft Defender Antivirus
+## Configure PUA protection in Microsoft Defender Antivirus
 
 You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
@@ -86,11 +86,11 @@ You can also use PUA protection in audit mode to detect potentially unwanted app
 
 PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
-#### Use Intune to configure PUA protection
+### Use Intune to configure PUA protection
 
 See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
 
-#### Use Configuration Manager to configure PUA protection
+### Use Configuration Manager to configure PUA protection
 
 PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).
 
@@ -101,7 +101,7 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 > [!NOTE]
 > PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
 
-#### Use Group Policy to configure PUA protection
+### Use Group Policy to configure PUA protection
 
 1. Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
@@ -121,9 +121,9 @@ For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unw
 
 9. Deploy your Group Policy object as you usually do.
 
-#### Use PowerShell cmdlets to configure PUA protection
+### Use PowerShell cmdlets to configure PUA protection
 
-##### To enable PUA protection
+#### To enable PUA protection
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
@@ -131,7 +131,7 @@ Set-MpPreference -PUAProtection Enabled
 
 Setting the value for this cmdlet to `Enabled` turns on the feature if it has been disabled.
 
-##### To set PUA protection to audit mode
+#### To set PUA protection to audit mode
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
@@ -139,7 +139,7 @@ Set-MpPreference -PUAProtection AuditMode
 
 Setting `AuditMode` detects PUAs without blocking them.
 
-##### To disable PUA protection
+#### To disable PUA protection
 
 We recommend keeping PUA protection turned on. However, you can turn it off by using the following cmdlet:
 
@@ -151,7 +151,7 @@ Setting the value for this cmdlet to `Disabled` turns off the feature if it has 
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-## View PUA events
+## View PUA events using PowerShell
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
@@ -170,11 +170,15 @@ TypeID           : 0
 PSComputerName   :
 ```
 
+## Get email notifications about PUA detections
+
 You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-If you're using Microsoft Defender for Endpoint, you can use an advanced hunting query to view PUA events. Here's an example query:
+## View PUA events using advanced hunting
+
+If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), you can use an advanced hunting query to view PUA events. Here's an example query:
 
 ```console
 DeviceEvents
@@ -185,7 +189,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-## Excluding files
+To learn more about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+
+## Exclude files from PUA protection
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be added to an exclusion list.
 
