@@ -160,17 +160,17 @@ We also provide you with information that helps you gain visibility into how you
 2. **Body:** Provides information about how people can leverage online files for better collaboration.
 3. **Visualization:** Shows a distribution of the people who have access to OneDrive or SharePoint, based on the number of files they collaborate on. This is shown through the following 4 categories (for each, the blue portion of the bar and the fraction represent the percentage of people who have access to OneDrive or SharePoint that fall into that category):
       - **No collaboration:**
-        - **Numerator:** Number of people not collaborating on any files in the last 28 days.
-        - **Denominator:** Total number of people who have access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people not collaborating on any files in the last 28 days.
+        - Denominator: Total number of people who have access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 1-3 files:**
-        - **Numerator:** Number of people collaborating on 1-3 files in the last 28 days.
-        - **Denominator:** Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 1-3 files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 4-10 files:**
-        - **Numerator:** Number of people collaborating on 4-10 files in the last 28 days.
-        - **Denominator:** Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 4-10 files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Collaboration on 11 or more files:**
-        - **Numerator:** Number of people collaborating on 11 or more files in the last 28 days.
-        - **Denominator:** Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Numerator: Number of people collaborating on 11 or more files in the last 28 days.
+        - Denominator: Total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
         
 4. **Link to resources:** Select this link to view help content.
 
