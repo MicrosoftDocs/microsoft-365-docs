@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot installation issues for Microsoft Defender ATP for Linux
+title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Troubleshoot installation issues for Microsoft Defender ATP for Linux
+description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, atp, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

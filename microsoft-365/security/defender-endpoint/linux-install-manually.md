@@ -1,7 +1,7 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer: 
-description: Describes how to deploy Microsoft Defender ATP for Linux manually from the command line.
+description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,6 +1,6 @@
 ---
 title: Configure Microsoft Defender for Endpoint on iOS features
-description: Describes how to deploy Microsoft Defender ATP for iOS features
+description: Describes how to deploy Microsoft Defender for Endpoint on iOS features
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -45,7 +45,7 @@ By default, Defender for Endpoint for iOS includes and enables the web protectio
 While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
 
 1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
-1. Click or tap the "i" button for Microsoft Defender ATP.
+1. Click or tap the "i" button for Microsoft Defender for Endpoint.
 1. Toggle off **Connect On Demand** to disable VPN.
 
     > [!div class="mx-imgBorder"]

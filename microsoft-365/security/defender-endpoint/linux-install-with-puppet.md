@@ -1,7 +1,7 @@
 ---
-title: Deploy Microsoft Defender ATP for Linux with Puppet
+title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
 ms.reviewer: 
-description: Describes how to deploy Microsoft Defender ATP for Linux using Puppet.
+description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -115,7 +115,7 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 > In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
-# Puppet manifest to install Microsoft Defender ATP.
+# Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
 # @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
