@@ -138,6 +138,24 @@
                       href: defender/investigate-alerts.md    
                     - name: Investigate users in Microsoft 365 security center 
                       href: defender/investigate-users.md                  
+                - name: Respond to your first incident
+                  items: 
+                    - name: Overview
+                      href: defender/first-incident-overview.md
+                    - name: Prepare
+                      href: defender/first-incident-prepare.md
+                    - name: Detect, triage, and analyze
+                      href: defender/first-incident-analyze.md
+                    - name: Remediate
+                      href: defender/first-incident-remediate.md
+                    - name: Post-incident
+                      href: defender/first-incident-post.md
+                    - name: Other investigation paths
+                      items: 
+                        - name: Phishing email
+                          href: defender/first-incident-path-phishing.md
+                        - name: Identity-based attacks
+                          href: defender/first-incident-path-identity.md
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
             - name: Microsoft Threat Experts
