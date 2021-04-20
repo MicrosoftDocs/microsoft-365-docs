@@ -19,6 +19,9 @@ description: "Learn how to configure SharePoint as a learning content source for
 
 # Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
 
+> [!NOTE]
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+
 You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
 
 ## Overview

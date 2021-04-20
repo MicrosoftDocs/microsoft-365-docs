@@ -19,6 +19,9 @@ description: "Learn how to configure Microsoft Viva Learning (Preview) in the Te
 
 # Set up Microsoft Viva Learning (Preview) in the Teams admin center 
 
+> [!NOTE]
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+
 The Teams admin installs Viva Learning (Preview) from the app store, and then applies setup, manage, and permission policies through the Teams admin center.
 
 ## Manage settings for Viva Learning (Preview)

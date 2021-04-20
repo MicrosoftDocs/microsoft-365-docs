@@ -19,9 +19,12 @@ description: "Learn about Microsoft Viva Learning (Preview) in your Microsoft 36
 
 # Overview of Microsoft Viva Learning (Preview) 
 
+> [!NOTE]
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+
 Viva Learning (Preview) is a centralized learning hub in Microsoft Teams that lets you seamlessly integrate learning and building skills into your day. In Viva Learning (Preview), your team can discover, share, assign, and learn from content libraries provided by both your organization and partners. They can do all of this without leaving Microsoft Teams.
 
-   ![Screenshot of the Viva Learning (Preview) homepage in Teams](../media/learning/learning-home-teams.png)
+   ![Screenshot of the Viva Learning (Preview) homepage in Teams.](../media/learning/learning-home-teams.png)
  
 Employees are more likely to report being satisfied and remain at an organization longer when given opportunities to learn and grow. Viva Learning (Preview) makes it easy to create these opportunities for your organization without the need to step away from the communication tools you already use.
 
