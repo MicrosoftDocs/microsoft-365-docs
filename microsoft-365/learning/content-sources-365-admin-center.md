@@ -67,8 +67,8 @@ Among all the learning sources that exist, some will be enabled by default. Thes
 - Microsoft 365 Training
 
 > [!NOTE]
-> LinkedIn free content is provided to users under the LinkedIn privacy policies and user agreement. LinkedIn will receive the user’s IP address, any cookies previously set by LinkedIn, and will set a new cookie to track use of free content. Users are not required to sign in with LinkedIn to receive free content.<br> 
-For LinkedIn premium content, your organization needs a subscription for your team to access that content. Users will need to sign into LinkedIn to access that learning, which is provided under the terms of your organization’s and user terms with LinkedIn.<br> 
+> LinkedIn free content is provided to users under the LinkedIn privacy policies and user agreement. LinkedIn will receive the user’s IP address, any cookies previously set by LinkedIn, and will set a new cookie to track use of free content. Users are not required to sign in with LinkedIn to receive free content.<br><br>
+For LinkedIn premium content, your organization needs a subscription for your team to access that content. Users will need to sign into LinkedIn to access that learning, which is provided under the terms of your organization’s and user terms with LinkedIn.<br><br> 
 For non-Microsoft content (except free LinkedIn content), ensure your organization has a subscription for your users to access that content using a work account before connecting it to Viva Learning (Preview). Users’ personal subscriptions to non-Microsoft learning providers will not be integrated with Viva Learning (Preview). Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. If users navigate to content where they do not have an organizational subscription, they may see a provider page where they could sign up for an individual subscription. All non-Microsoft learning is provided under the non-Microsoft provider’s terms and not as part of Viva Learning. 
 
 To enable or disable a learning content source, select the check box next to the source. If a source is enabled, a check mark will be visible.
