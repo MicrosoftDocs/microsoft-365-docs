@@ -11,10 +11,10 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Learn how to set up and use a connector in the Microsoft 365 compliance center to import and archive WeChat data in Microsoft 365."
+description: "Set up and use a connector in the Microsoft 365 compliance center to import and archive WeChat data in Microsoft 365."
 ---
 
-# Set up a connector to archive WeChat data
+# Set up a connector to archive WeChat data (preview)
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive WeChat and WeCom calls, chats, attachments, files, and recalled messages. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the TeleMessage WeChat Archiver to mailboxes in Microsoft 365.
 
