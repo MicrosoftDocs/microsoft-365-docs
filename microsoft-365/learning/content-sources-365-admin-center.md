@@ -67,9 +67,25 @@ Among all the learning sources that exist, some will be enabled by default. Thes
 - Microsoft 365 Training
 
 > [!NOTE]
-> If your organization has a LinkedIn Learning Standard or Pro subscription, the content repository will be unlocked for the employees in your organization. Only those employees who have permission will be able to use the entire content repository. <br>Other sources might need to be enabled or configured manually. Learning sources that are not from Microsoft are separately licensed between your organization and the third party. You’ll need to verify you’ve signed up for their learning for you and your users.
+> LinkedIn free content is provided to users under the LinkedIn privacy policies and user agreement. LinkedIn will receive the user’s IP address, any cookies previously set by LinkedIn, and will set a new cookie to track use of free content. Users are not required to sign in with LinkedIn to receive free content.<br> 
+For LinkedIn premium content, your organization needs a subscription for your team to access that content. Users will need to sign into LinkedIn to access that learning, which is provided under the terms of your organization’s and user terms with LinkedIn.<br> 
+For non-Microsoft content (except free LinkedIn content), ensure your organization has a subscription for your users to access that content using a work account before connecting it to Viva Learning (Preview). Users’ personal subscriptions to non-Microsoft learning providers will not be integrated with Viva Learning (Preview). Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. If users navigate to content where they do not have an organizational subscription, they may see a provider page where they could sign up for an individual subscription. All non-Microsoft learning is provided under the non-Microsoft provider’s terms and not as part of Viva Learning. 
 
 To enable or disable a learning content source, select the check box next to the source. If a source is enabled, a check mark will be visible.
+
+## Third-party content providers 
+
+The set of available connected learning providers might change at any time. Additional providers will join as the program grows. Available providers might also choose to discontinue their connection with Viva Learning (Preview).
+
+### Skillsoft as a content source  
+
+*[placeholder – text ETA 4/21 EOD]*
+
+### Details on Microsoft substrate  
+
+For data that you copy to Viva Learning (Preview) from a non-Microsoft service (learning provider or learning management system), you are not able to directly extract, correct, or delete that data in Viva Learning (Preview). We refresh the data you import from non-Microsoft providers promptly to reflect changes and deletions in the non-Microsoft source data.
+
+You need to work with the supplier of the non-Microsoft service to access, correct, delete or extract data under the license, service, or privacy terms of the non-Microsoft service. The changes made there will be reflected in the data processed for your use in Viva Learning (Preview) upon completion of the data update cycles of the non-Microsoft service and Viva Learning (Preview). If you turn off the connection between Viva Learning (Preview) and a non-Microsoft service, all data you had previously imported from that service will be deleted. 
 
 ## Next step
 
