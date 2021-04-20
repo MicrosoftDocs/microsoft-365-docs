@@ -1,7 +1,7 @@
 ---
-title: Set preferences for Microsoft Defender ATP for Linux
+title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Describes how to configure Microsoft Defender ATP for Linux in enterprises.
+description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
