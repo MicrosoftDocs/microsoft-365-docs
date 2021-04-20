@@ -27,18 +27,18 @@ In our contracts management solution, we want to create a Power Automate flow to
 
 When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will will first check out the file and change the status to "In Review."
 
-![Update status](../media/content-understanding/flow-overview.png)</br>
+![Update status.](../media/content-understanding/flow-overview.png)</br>
 
 After checking out the file, change the status value to "In Review."
 
-![In review status](../media/content-understanding/in-review.png)</br>
+![In review status.](../media/content-understanding/in-review.png)</br>
 
 The next step is to create an adaptive card stating that the contract in waiting for review and posting it to the Contract Management Team site.
 
-![Contract review post](../media/content-understanding/contract-approval-post.png)</br>
+![Contract review post.](../media/content-understanding/contract-approval-post.png)</br>
 
 
-![Create adaptive card for review](../media/content-understanding/adaptive-card.png)</br>
+![Create adaptive card for review.](../media/content-understanding/adaptive-card.png)</br>
 
 The following is the JSON code used for this step in the Power Automate flow.
 
@@ -120,28 +120,28 @@ The following is the JSON code used for this step in the Power Automate flow.
 
 In your flow, next you need to create a condition in which your contract will be either  approved or rejected.
 
-![Conditional](../media/content-understanding/condition.png)</br>
+![Conditional.](../media/content-understanding/condition.png)</br>
 
 ## If the contract is approved
 
 When a contract has been approved, the following things occur:
 
 - In the Contracts channel, the status in the contract card will change to <b>Approved</b>.
-![Card status approved](../media/content-understanding/flow2.png)</br>
+![Card status approved.](../media/content-understanding/flow2.png)</br>
 In your flow, the contract is checked out, the status is changed to "Approved" and checked back in again.</br>
-![Flow status approved](../media/content-understanding/status-approved.png)</br>
+![Flow status approved.](../media/content-understanding/status-approved.png)</br>
 
 - The contract will be written to the <b>For Payout</b> channel so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
-![Contract moved to Pay Out](../media/content-understanding/for-payout.png)</br>
+![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)</br>
 In the flow, we created the following item to move approved contracts to the For Payout channel. </br>
-![Flow item to move to Pay Out](../media/content-understanding/ready-for-payout.png)</br>
+![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management Team site.</br>
-![Contract approval posted](../media/content-understanding/flow1.png)</br>
+![Contract approval posted.](../media/content-understanding/flow1.png)</br>
 
 </br>
 
-   ![Adaptive card approval](../media/content-understanding/adaptive-card-approval.png)</br>
+   ![Adaptive card approval.](../media/content-understanding/adaptive-card-approval.png)</br>
 
 
    The following is the JSON code used for this step in the Power Automate flow.
@@ -229,11 +229,11 @@ In the flow, we created the following item to move approved contracts to the For
 When a contract has been rejected, the following things occur:
 
 - In the Contracts channel, the status in the contract card will change to <b>Rejected</b>.
-![Card status rejected](../media/content-understanding/rejected.png)</br>
+![Card status rejected.](../media/content-understanding/rejected.png)</br>
 In our flow, we check out the contract file, change the status to <b>Rejected</b>, and check the file back in again.</br>
-![Flow status rejected](../media/content-understanding/reject-flow.png)</br>
+![Flow status rejected.](../media/content-understanding/reject-flow.png)</br>
 - In our flow, we create an adaptive card stating that the contract has been rejected. </br>
-![Flow status rejected](../media/content-understanding/reject-flow-item.png)</br> 
+![Flow status rejected.](../media/content-understanding/reject-flow-item.png)</br> 
 
    The following is the JSON code used for this step in the Power Automate flow.
 
@@ -316,4 +316,4 @@ In our flow, we check out the contract file, change the status to <b>Rejected</b
 ```
 
 - The card is posted in the Contract Management Team's site.</br>
-![Flow adaptive card to reject](../media/content-understanding/reject-post.png)</br>
+![Flow adaptive card to reject.](../media/content-understanding/reject-post.png)</br>
