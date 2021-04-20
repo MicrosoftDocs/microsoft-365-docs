@@ -151,7 +151,7 @@ Setting the value for this cmdlet to `Disabled` turns off the feature if it has 
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-## View PUA events
+## View PUA events using PowerShell
 
 PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
@@ -174,7 +174,9 @@ You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-If you're using Microsoft Defender for Endpoint, you can use an advanced hunting query to view PUA events. Here's an example query:
+## View PUA events using advanced hunting
+
+If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), you can use an advanced hunting query to view PUA events. Here's an example query:
 
 ```console
 DeviceEvents
@@ -184,6 +186,8 @@ DeviceEvents
 | where ThreatName startswith_cs 'PUA:'
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
+
+[Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
 
 ## Excluding files
 
