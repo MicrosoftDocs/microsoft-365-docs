@@ -82,7 +82,7 @@ The three most recent major releases of macOS are supported.
 
 Beta versions of macOS are not supported.
 
-MAC Systems with M1 processors are not supported.
+macOS devices with M1 processors are not supported.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
