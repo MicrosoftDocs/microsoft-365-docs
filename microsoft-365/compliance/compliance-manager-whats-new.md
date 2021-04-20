@@ -35,7 +35,7 @@ Check out the complete list of [assessment templates](compliance-manager-templat
 
 ### Support for US Government DoD customers
 
-Compliance Manager is now available to  US Government DoD customers.
+Compliance Manager is now available to US Government DoD customers, in addition to US Government Community (GCC) Moderate and GCC High customers.
 
 ## March 2021
 
