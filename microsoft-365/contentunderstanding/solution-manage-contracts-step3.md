@@ -131,9 +131,9 @@ When a contract has been approved, the following things occur:
 In your flow, the contract is checked out, the status is changed to "Approved" and checked back in again.</br>
 ![Flow status approved.](../media/content-understanding/status-approved.png)</br>
 
-- The contract will be added to the <b>For Payout</b> channel so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
+- The contract will be added to the **For Payout** tab so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
 ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)</br>
-In the flow, we created the following item to move approved contracts to the For Payout channel. </br>
+In the flow, we created the following item to move approved contracts to the **For Payout** tab. </br>
 ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</br>
