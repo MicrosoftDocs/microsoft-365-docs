@@ -88,6 +88,8 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
     - **Use the default environment** to use your default Power Platform environment.
     - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the AI Builder for Project Cortex app in this environment before you can create form processing models.
 
+    Click **Next**.
+
 5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models.
 
     1. For **Site name**, type the name you want to give your content center site.
