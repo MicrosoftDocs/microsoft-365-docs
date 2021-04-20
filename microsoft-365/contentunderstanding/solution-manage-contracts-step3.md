@@ -15,7 +15,7 @@ description: "Learn how to use Power Automate to create your flow to process you
 
 # Step 3. Use Power Automate to create your flow to process your contracts
 
-Now that you've created your Contract Management Team site and have attached your SharePoint document library, the next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Now that you've created your Contract Management channel and have attached your SharePoint document library, the next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 In our contracts management solution, we want to create a Power Automate flow to do the following:
 
@@ -33,7 +33,7 @@ After checking out the file, change the status value to "In Review."
 
 ![In review status.](../media/content-understanding/in-review.png)</br>
 
-The next step is to create an adaptive card stating that the contract in waiting for review and posting it to the Contract Management Team site.
+The next step is to create an adaptive card stating that the contract in waiting for review and posting it to the Contract Management channel.
 
 ![Contract review post.](../media/content-understanding/contract-approval-post.png)</br>
 
@@ -131,12 +131,12 @@ When a contract has been approved, the following things occur:
 In your flow, the contract is checked out, the status is changed to "Approved" and checked back in again.</br>
 ![Flow status approved.](../media/content-understanding/status-approved.png)</br>
 
-- The contract will be written to the <b>For Payout</b> channel so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
+- The contract will be added to the <b>For Payout</b> channel so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
 ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)</br>
 In the flow, we created the following item to move approved contracts to the For Payout channel. </br>
 ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
 
-- An adaptive card stating that the contract has been approved is created and posted to the Contract Management Team site.</br>
+- An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</br>
 ![Contract approval posted.](../media/content-understanding/flow1.png)</br>
 
 </br>
@@ -315,5 +315,5 @@ In our flow, we check out the contract file, change the status to <b>Rejected</b
 }
 ```
 
-- The card is posted in the Contract Management Team's site.</br>
+- The card is posted in the Contract Management channel.</br>
 ![Flow adaptive card to reject.](../media/content-understanding/reject-post.png)</br>
