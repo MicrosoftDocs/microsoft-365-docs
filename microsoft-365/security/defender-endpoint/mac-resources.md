@@ -1,6 +1,6 @@
 ---
-title: Resources for Microsoft Defender ATP for Mac
-description: Resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+title: Resources for Microsoft Defender for Endpoint for Mac
+description: Resources for Microsoft Defender for Endpoint for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Resources for Microsoft Defender for Endpoint for Mac
+# Resources for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -75,11 +75,11 @@ The detailed log will be saved to `/Library/Logs/Microsoft/mdatp/install.log`. I
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender for Endpoint for Mac. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender for Endpoint on macOS. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 
-- Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
+- Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
 ### From the command line
 
@@ -138,7 +138,7 @@ To enable autocompletion in zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint for Mac and restart the Terminal session:
+- Run the following commands to enable autocompletion for Microsoft Defender for Endpoint on macOS and restart the Terminal session:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
