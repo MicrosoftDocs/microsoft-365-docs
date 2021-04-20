@@ -18,15 +18,9 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 # What's new in Microsoft Compliance Manager
 
-**In this article:** Learn about planned and recent updates in Compliance Manager, including updated assessments, new assessment templates, new actions, and more.
+**In this article:** Learn about recent updates in Compliance Manager.
 
-## Planned updates
-
-Here are some updates that are planned for Compliance Manager:
-
-- Support for US Government DoD customers
-
-## March 2021
+## April 2021
 
 ### New assessment templates
 
@@ -38,3 +32,13 @@ We published 75 new assessment templates, including:
 - South Africa - Promotion of Access to Information Act
 
 Check out the complete list of [assessment templates](compliance-manager-templates-list.md).
+
+### Support for US Government DoD customers
+
+Compliance Manager is now available to  US Government DoD customers.
+
+## March 2021
+
+### Active and inactive templates
+
+Each assessment page and assessment template page has an activated templates counter. This counter shows how many eligible templates you're using according to your licensing agreement. View [Template types: included and premium, active and inactive](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) to learn more.
