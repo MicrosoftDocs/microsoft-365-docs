@@ -129,6 +129,10 @@ When there are conflict types (for example, one **Allow** and other **Deny**) fo
 **Property name: Options**
 
 1. Description: Defines whether to display notification or not.
+
+
+<include the image device-status.png>
+
 1. Options: 0-4.
 When Type Allow or Deny is selected:
 - 0: nothing
@@ -199,11 +203,17 @@ Before you get started with Removable Storage Protection, you must confirm your�
 
 1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
 
-<require screenshot (as per the input document itself)>
+<include the image prevent-write-and-access-allow-usb.png>
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
-<require screenshot (as per the input document itself)>
+<include the image usage-of-sid-property.png>
+
+3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: ‘Define device control policy groups’ and ‘Define device control policy rules’**.
+
+    - The target machine must be able to access the network share to have the policy, but once the policy is read, the network share connection is no longer required, even after machine reboot.
+
+<include the image device-control.png>
 
 ## Deploying and managing policy via Intune OMA-URI
 
@@ -211,7 +221,9 @@ The Removable Storage Protection feature allows you to apply policy via OMA-URI 
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you  must confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Protection, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E3.
+
+<include the image microsoft-365-e3.png>
 
 ### Permission
 
@@ -240,7 +252,6 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - OMA-URI:
       /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
-
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
 
