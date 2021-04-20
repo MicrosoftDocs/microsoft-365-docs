@@ -128,13 +128,13 @@ We also provide you with information that helps you gain visibility into how you
 3. **Visualization:** The breakdown in the visualization is meant to represent the extent to which people who are attaching content in emails are using different modes (files not on OneDrive or SharePoint; links to online files; and links embedded in the email):
       - **Attach files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represents the percentage of people using attachments in emails.
         - Numerator: The number of people who attach files to email that weren't saved to OneDrive or SharePoint within the last 28 days.
-        - Denominator:     Denominator: The number of people who have had access to Exchange and  OneDrive, SharePoint, or both within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and  OneDrive, SharePoint, or both within the last 28 days.
       - **Links to online files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people using attachments and attaching links to files in emails.
         - Numerator: The number of people attaching links to online files (saved to OneDrive or SharePoint) to emails within the last 28 days.
-        - Denominator:     Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
+        - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
       - **Embed links in email:** The blue (colored) portion of the bar and the fraction on the bar represent the percentage of people who embed links in body of the emails.
         - Numerator: The number of people embedding links in body of emails to online files (saved to OneDrive or SharePoint) within the last 28 days.
-        - Denominator:     Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
+        - Denominator: The number of people who have access to Exchange and  OneDrive, SharePoint, or both  within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Sharing of online files
