@@ -41,7 +41,7 @@ You get to the incident queue from **Incidents & alerts > Incidents** on the qui
 
 By default, the incident queue in the Microsoft 365 security center displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
-The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for anaylsis.
+The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for analysis.
 
 For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
@@ -78,12 +78,12 @@ This table lists the filter names that are available.
 
 ## Incident response workflow
 
-Here is the typical workflow for responding to incidents:
+Here's the typical workflow for responding to incidents:
 
 1. Identify and triage the highest priority incidents for investigation and resolution.
 2. For each high-priority incident, begin an [investigation](investigate-incidents.md):
 
-   a. View the summary of the incident to understand it's scope, what entities are affected, and severity (the **Summary** tab).
+   a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
 
    b. Begin looking at the alerts to understand their origin, scope, and severity (the **Alerts** tab).
 
@@ -93,17 +93,18 @@ Here is the typical workflow for responding to incidents:
    
    e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
-As you investigate, you should be concerned with:
+   As you investigate, you should be concerned with:
 
-- Containment: Reducing any additional impact on your tenant.
-- Eradication: Removing the security threat.
-- Recovery: Restoring your tenant resources to the state they were in before the attack.
+   - Containment: Reducing any additional impact on your tenant.
+   - Eradication: Removing the security threat.
+   - Recovery: Restoring your tenant resources to the state they were in before the incident.
 
-After you resolve the incident, take a moment to learn from it to:
+3. After you resolve the incident, take the time to:
 
-- Understand the type of the attack and its impact.
-- Research the attack in the security community for a security attack trend.
-- Recall the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
+   - Understand the type of the attack and its impact.
+   - Research the attack in the security community for a security attack trend.
+   - Recall the workflow you used to resolve the incident and update your standard workflows and playbooks as needed.
+   - Determine whether changes in your security posture are needed and take the steps to implement them.
 
 Here's a summary of the basic process.
 

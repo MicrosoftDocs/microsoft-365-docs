@@ -42,7 +42,7 @@ For help with working remotely, we recommend starting with these three steps:
 
 ## 1. Get ready 
 
-Getting started is easy. If you already have a Microsoft 365 subscription, make sure that everyone has a license that includes Microsoft Teams. If your company does not have Microsoft Teams yet, you can [find the right Microsoft Teams for your business](https://aka.ms/TeamsBusinessBasic) and sign up.
+Getting started is easy. If you already have a Microsoft 365 subscription, make sure that everyone has a license that includes Microsoft Teams. If your company does not have Microsoft Teams yet, you can [find the right Microsoft Teams for your business](https://www.microsoft.com/microsoft-teams/teams-for-work) and sign up.
 
 ### Get Microsoft Teams ready for your customers
 
@@ -128,4 +128,4 @@ Turn any PC, Mac, or mobile device into a working business phone by adding [Micr
 
 ## Related content
 
-[Empower your small business with remote work](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (article)
+[Empower your small business with remote work](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (article)
