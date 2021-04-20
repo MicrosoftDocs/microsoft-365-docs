@@ -28,3 +28,7 @@ A key business issue we identified is that we need a way to identify and classif
      ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)</br> 
 
 5. Additionally, if you have retention requirements for your contracts, you can use your model to also [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
+
+## Next step
+
+[Use Microsoft Teams to create your contract management site](solution-manage-contracts-step2.md)
