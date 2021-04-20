@@ -17,11 +17,11 @@ description: "Learn how to use Microsoft Teams to create your contract managemen
 
 Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams site and use the features in Teams to:
 
-- **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams we can create a Contracts tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. We can also configure the view so that each "card" lists the important data we care about (client, contractor, and fee amount).
+- **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams we can create a **Contracts** tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. We can also configure the view so that each "card" lists the important data we care about (client, contractor, and fee amount).
 
      ![Contracts tab.](../media/content-understanding/tile-view.png)</br> 
 
-- **Have a location for members to interact with each other and see important events.** For example, in Teams, the Posts tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the Posts tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update to the Posts tab. 
+- **Have a location for members to interact with each other and see important events.** For example, in Teams, the **Posts** tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the **Posts** tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update. 
 
      ![Posts tab.](../media/content-understanding/posts.png)</br> 
 
@@ -29,7 +29,7 @@ Another key business issue we have in setting up a contracts management solution
 
 ## Attach your SharePoint document library to the Contracts tab 
 
-After you create a Contracts tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your SharePoint Syntex document understanding model to in the previous section.
+After you create a **Contracts** tab in your Contracts Management channel, you need to [attach your SharePoint document library to it](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). The SharePoint document library you want to attach is the one in which you applied your SharePoint Syntex document understanding model to in the previous section.
 
 After you attach the SharePoint document library, you will be able to view any classified contracts through a default list view.
 
@@ -40,7 +40,7 @@ After you attach the SharePoint document library, you will be able to view any c
 > [!NOTE]
 > This section references code examples that are contained in the <b>ContractCardjson</b> file this is included in the <b>solutionfiles</b> zip file.
 
-While Teams allows you to view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the Contracts tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all approved contracts will have a blue header bar.
+While Teams allows you to view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all approved contracts will have a blue header bar.
 
    ![List view.](../media/content-understanding/tile.png)</br> 
 
