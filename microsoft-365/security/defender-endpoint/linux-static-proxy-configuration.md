@@ -16,12 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure Microsoft Defender for Endpoint for Linux for static proxy discovery
+# Configure Microsoft Defender for Endpoint on Linux for static proxy discovery
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

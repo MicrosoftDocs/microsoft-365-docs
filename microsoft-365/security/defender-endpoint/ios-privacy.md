@@ -1,7 +1,7 @@
 ---
-title: Privacy information - Microsoft Defender for Endpoint for iOS
+title: Privacy information - Microsoft Defender for Endpoint on iOS
 ms.reviewer: 
-description: Describes privacy information for Microsoft Defender for Endpoint for iOS
+description: Describes privacy information for Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, atp, ios, policy, overview
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Privacy information - Microsoft Defender for Endpoint for iOS
+# Privacy information - Microsoft Defender for Endpoint on iOS
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

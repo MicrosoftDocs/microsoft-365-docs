@@ -1,5 +1,5 @@
 ---
-title: Investigate devices in the Defender for Endpoint Defender ATP Devices list
+title: Investigate devices in the Defender for Endpoint Devices list
 description: Investigate affected devices by reviewing alerts, network connection information, adding device tags and groups, and checking the service health.
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
 search.product: eADQiWindows 10XVcnh

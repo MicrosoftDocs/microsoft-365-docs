@@ -1,7 +1,7 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-keywords: Microsoft Defender ATP, EDR in block mode, passive mode blocking
+keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft

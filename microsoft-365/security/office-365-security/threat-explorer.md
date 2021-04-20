@@ -109,6 +109,8 @@ Tags information is also shown in the URL clicks flyout. To view it, go to Phish
 
 > [!div class="mx-imgBorder"]
 > ![URL tags](../../media/tags-urls.png)
+> 
+Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## Improvements to the threat hunting experience (upcoming)
 
@@ -515,7 +517,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Automated investigation and response in Microsoft Threat Protection](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
 

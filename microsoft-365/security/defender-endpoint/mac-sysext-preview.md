@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac - system extensions (Preview)
-description: This article contains instructions for trying out the system extensions functionality of Microsoft Defender ATP for Mac. This functionality is currently in public preview.
+title: Microsoft Defender for Endpoint for Mac - system extensions (Preview)
+description: This article contains instructions for trying out the system extensions functionality of Microsoft Defender for Endpoint for Mac. This functionality is currently in public preview.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,7 +22,7 @@ ms.technology: mde
 ---
 
 
-# Microsoft Defender for Endpoint for Mac - system extensions public preview)
+# Microsoft Defender for Endpoint on macOS - system extensions public preview)
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -58,7 +58,7 @@ These steps assume you already have Defender for Endpoint running on your device
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Alternatively, if you're in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender ATP for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
+  Alternatively, if you're in a managed environment (JAMF or Intune), you can configure the update channel remotely. For more information, see [Deploy updates for Microsoft Defender for Endpoint for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
 
 ## Deployment steps
 

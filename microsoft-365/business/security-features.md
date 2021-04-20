@@ -2,8 +2,8 @@
 title: "Microsoft 365 Business Premium security and compliance features"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: reference

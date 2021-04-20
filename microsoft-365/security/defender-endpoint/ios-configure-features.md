@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Defender ATP for iOS features
+title: Configure Microsoft Defender for Endpoint on iOS features
 description: Describes how to deploy Microsoft Defender ATP for iOS features
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure Microsoft Defender for Endpoint for iOS features
+# Configure Microsoft Defender for Endpoint on iOS features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +33,7 @@ ms.technology: mde
 > Defender for Endpoint for iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
 ## Conditional Access with Defender for Endpoint for iOS  
-Microsoft Defender for Endpoint for iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
+Microsoft Defender for Endpoint on iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
 based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
 For more information about how to set up Conditional Access with Defender for Endpoint for iOS, see [Defender for Endpoint and Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
@@ -65,7 +64,7 @@ Apple iOS does not support multiple device-wide VPNs to be active simultaneously
 To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you set up the following compliance policy on Intune.
 
 > [!NOTE]
-> At this time Microsoft Defender for Endpoint for iOS does not provide protection against jailbreak scenarios. If used on a jailbroken device, then in specific scenarios data that is used by the application like your corporate email id and corporate profile picture (if available) can be exposed locally
+> At this time Microsoft Defender for Endpoint on iOS does not provide protection against jailbreak scenarios. If used on a jailbroken device, then in specific scenarios data that is used by the application like your corporate email id and corporate profile picture (if available) can be exposed locally
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 

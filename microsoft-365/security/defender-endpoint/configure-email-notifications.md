@@ -1,7 +1,7 @@
 ---
 title: Configure alert notifications in Microsoft Defender for Endpoint
 description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
-keywords: email notifications, configure alert notifications, microsoft defender atp notifications, microsoft defender atp alerts, windows 10 enterprise, windows 10 education
+keywords: email notifications, configure alert notifications, microsoft defender for endpoint, microsoft defender for endpoint notifications, microsoft defender for endpoint alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Configure alert notifications in Microsoft Defender ATP
+# Configure alert notifications in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ You can configure Defender for Endpoint to send email notifications to specified
 > [!NOTE]
 > Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 
-You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts triggered after they're added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
 
 If you're using role-based access control (RBAC), recipients will only receive notifications based on the device groups that were configured in the notification rule.
 Users with the proper permission can only create, edit, or delete notifications that are limited to their device group management scope.
@@ -66,7 +66,7 @@ You can create rules that determine the devices and alert severities to send ema
 	
 5. Enter the recipient's email address then click **Add recipient**. You can add multiple email addresses.
 
-6. Check that email recipients are able to receive the email notifications by selecting **Send test email**.
+6. Check that email recipients can receive the email notifications by selecting **Send test email**.
 
 7. Click **Save notification rule**.
 
@@ -88,12 +88,12 @@ You can create rules that determine the devices and alert severities to send ema
 ## Troubleshoot email notifications for alerts
 This section lists various issues that you may encounter when using email notifications for alerts.
 
-**Problem:** Intended recipients report they are not getting the notifications.
+**Problem:** Intended recipients report they're not getting the notifications.
 
-**Solution:** Make sure that the notifications are not blocked by email filters:
+**Solution:** Make sure that the notifications aren't blocked by email filters:
 
-1. Check that the Defender for Endpoint email notifications are not sent to the Junk Email folder. Mark them as Not junk.
-2. Check that your email security product is not blocking the email notifications from Defender for Endpoint.
+1. Check that the Defender for Endpoint email notifications aren't sent to the Junk Email folder. Mark them as Not junk.
+2. Check that your email security product isn't blocking the email notifications from Defender for Endpoint.
 3. Check your email application rules that might be catching and moving your Defender for Endpoint email notifications.
 
 ## Related topics

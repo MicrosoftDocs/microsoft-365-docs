@@ -28,23 +28,7 @@ If you're a global or user management admin of a Microsoft 365 for business subs
   
 ## Custom user views in the admin center
 
-::: moniker range="o365-worldwide"
-
 When you create, edit, or delete a custom user view, the changes will be shown in the **Filter** list that all admins in your company see when they go to the **Users** page. You can create up to 50 custom views. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-When you create, edit, or delete a custom user view, the changes will be shown in the **Views** list that all admins in your company see when they go to the **Users** page. You can create up to 50 custom views. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-When you create, edit, or delete a custom user view, the changes will be shown in the **Views** list that all admins in your company see when they go to the **Users** page. You can create up to 50 custom views. 
-
-::: moniker-end
 
 > [!TIP]
 >  Standard user views are displayed by default in the **Filters** drop-down list. The standard filters include **All users**, **Licensed users**, **Guest users**,  **Sign-in allowed**, **Sign-in blocked**, **Unlicensed users**, **Users with errors**, **Billing admins**, **Global admins**, **Helpdesk admins**, **Service admins**, and **User management admins**. You can't edit or delete standard views. 
