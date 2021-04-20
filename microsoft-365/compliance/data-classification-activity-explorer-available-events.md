@@ -28,7 +28,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 
 - It is captured at the time of save in Office native applications and web applications. 
 - It is captured at the time of occurrence in Azure Information protection add-ins. 
-- Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter. The *justification* text is also captured.   
+- Upgrade and downgrade labels actions can also be monitored via the *Label event type* field and filter.   
 
 
 |Source  |Reported in activity explorer | Note  |
@@ -66,7 +66,7 @@ This event is generated each time a label is updated on the document or email.
 |MIP SDK         |yes         |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
-|MCAS     |         |         |
+|MCAS     |no         |         |
 
 ## Sensitivity label removed
 
@@ -243,6 +243,8 @@ The events for Windows 10 Devices (Endpoint DLP) are:
 ## Retention label applied 
 
 This event is generated each time an unlabeled document is labeled or an email is sent with a label.
+
+- It is captured at the time of save in Office native applications and web applications.
 
 |Source  |Reported in activity explorer |
 |---------|---------| 
