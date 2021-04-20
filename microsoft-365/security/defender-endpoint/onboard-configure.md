@@ -1,5 +1,5 @@
 ---
-title: Onboard devices to the Microsoft Defender ATP service
+title: Onboard devices to the Microsoft Defender for Endpoint service
 description: Onboard Windows 10 devices, servers, non-Windows devices and learn how to run a detection test.
 keywords: onboarding, microsoft defender for endpoint onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
