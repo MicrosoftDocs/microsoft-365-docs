@@ -21,11 +21,11 @@ Another key business issue we have in setting up a contracts management solution
 
      ![Contracts tab.](../media/content-understanding/tile-view.png)</br> 
 
-- **Have a location in which members can interact with each other and see important events.** For example, in Teams, the Posts tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the Posts tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update to the Posts tab. 
+- **Have a location for members to interact with each other and see important events.** For example, in Teams, the Posts tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the Posts tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update to the Posts tab. 
 
      ![Posts tab.](../media/content-understanding/posts.png)</br> 
 
-- **Have a location in which approved contracts will display so that they can be submitted for payment.** In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. A third-party application (for example, Dynamics CRM) can then use the information from this channel to process payment for each contract.
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. We can easily extend this solution to instead write this information directly to a third-party application (for example, Dynamics CRM).
 
 ## Attach your SharePoint document library to the Contracts tab 
 
