@@ -176,8 +176,8 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-##### [Microsoft Defender for Endpoint Device Control Removable Storage Protection](ms-defender-for-endpoint-device-control-rsp.md#microsoft-defender-for-endpoint-device-control-removable-storage-protection)
-##### [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](microsoft-defender-for-endpoint.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)
+##### [Microsoft Defender for Endpoint Device Control Removable Storage Protection](ms-defender-for-endpoint-device-control-rsp.md)
+##### [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](microsoft-defender-for-endpoint.md)
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Device Control reports](device-control-report.md)
 
