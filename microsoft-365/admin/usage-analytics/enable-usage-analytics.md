@@ -48,7 +48,7 @@ To enable the template app, you have to be a **Global administrator**.
   
 See [about admin roles](../add-users/about-admin-roles.md) for more information. 
   
-1. In the admin center, go to the **Settings** \> **Org settings** \> **Services** Tab. 
+1. In the admin center, go to the **Settings** \> **Org settings** \> **Services** tab. 
     
 2. On the **Services** tab, select  **Reports**.
     
