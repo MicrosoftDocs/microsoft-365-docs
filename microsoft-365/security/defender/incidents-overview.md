@@ -1,7 +1,7 @@
 ---
 title: Incidents in Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 security center.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -105,7 +105,7 @@ Here's an example workflow for responding to incidents in Microsoft 365 with the
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Example of an incident response workflow for Microsoft 365":::
 
-On an ongoing basis, identify the highest priority incidents for investigation and resolution in the incident queue and get them ready for response. This is a combination of:
+On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
@@ -126,7 +126,7 @@ On an ongoing basis, identify the highest priority incidents for investigation a
 
 3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
 
-4. [Resolve](manage-incidents.mp#resolve-incident) the incident and take the time for post-incident learning to:
+4. [Resolve](manage-incidents.md#resolve-incident) the incident and take the time for post-incident learning to:
 
    - Understand the type of the attack and its impact.
    - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
@@ -141,7 +141,7 @@ Here's an example of security operations for Micosoft 365 Defender.
 
 Daily tasks can include:
 
-- [Managing]](manage-incidents.md) incidents
+- [Managing](manage-incidents.md) incidents
 - Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions
 - Reviewing the latest [Threat Analytics](threat-analytics.md)
 - [Responding](investigate-incidents.md) to incidents
@@ -158,10 +158,10 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
-## Next step
+## Next steps
 
 The incident queue from the **Incidents** page lists the most recent incidents. From here, you can:
 
 - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
+- [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments for your incident management workflow.
 - Perform an [investigation](investigate-incidents.md) of an incident.
-- [Manage incidents](manage-incidents.md), which includes renaming, assigning them, classifying, and adding tags for your incident management workflow.

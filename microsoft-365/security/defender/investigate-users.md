@@ -1,7 +1,7 @@
 ---
-title: Investigate users in Microsoft 365 security center
-description: investigate users in the Microsoft 365 security center
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
+title: Analyze users in Microsoft 365 security center
+description: Analyze users in the Microsoft 365 security center
+keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ---
-# Investigate users in Microsoft 365 security center
+# Analyz users in Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -28,7 +28,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-Part of your incident investigation can include user accounts. Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**. 
+Part of your incident analysis can include user accounts. Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**. 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
