@@ -37,24 +37,22 @@ Here are a few of the changes to Microsoft 365 compliance solutions and content 
 
 ### Advanced eDiscovery
 
-- **Advanced eDiscovery collections**
-
-### Sensitivity labels
-
-- **Encrypt only**
-
-### Data loss prevention
-
-- **On-premises scanner**
-- **Chrome extension**
+- **Advanced eDiscovery collections** now supports the [new collections tool and workflow](https://docs.microsoft.com/microsoft-365/compliance/collections-overview).
+- **Export documents** in a review set to an [Azure Storage](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) account.
+- **Predictive coding module for Advanced eDiscovery**. First look at the new [predictive coding](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) functionality that replaces the retired Relevance module.
 
 ### Data connectors
 
-- **Private keys** support has been added to data connectors.
+- **Private keys** support has been added to [Bloomberg Message](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) data, [ICE Chat](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) data, and [Instant Bloomberg](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) data connectors.
 
-### Compliance Manager
+### Data loss prevention
 
-- **Compliance Manager templates**
+- **Microsoft Teams support**. Data loss prevention support extended to [Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy).
+- **Microsoft Compliance extension**. Get started with the [Microsoft Compliance extension](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started).
+
+### Sensitivity labels
+
+- **Apply encryption using sensitivity labels**. Restrict access to content by using sensitivity labels, including the new [Encrypt-Only label](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#double-key-encryption).
 
 ## February 2021
 
