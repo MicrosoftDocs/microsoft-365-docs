@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -61,7 +61,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Mac.
+1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
 
       > [!NOTE]
       > This feature is available in version 100.90.70 or newer.
@@ -144,7 +144,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
         125  CrashPlanService 164
       ```
 
-      To improve the performance of Defender for Endpoint for Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+      To improve the performance of Defender for Endpoint on Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
       > [!NOTE]
       > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.

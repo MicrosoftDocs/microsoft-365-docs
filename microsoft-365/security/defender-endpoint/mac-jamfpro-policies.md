@@ -1,7 +1,7 @@
 ---
-title: Set up the Microsoft Defender ATP for macOS policies in Jamf Pro
-description: Learn how to set up the Microsoft Defender ATP for macOS policies in Jamf Pro
-keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+description: Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
@@ -355,7 +355,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
-        ![Image of configuration profile settings mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Image of new macOS configuration profile screen](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`
@@ -726,8 +726,10 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
+
 ## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
 Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+
 
 ## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
@@ -765,7 +767,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    **Manifest File** is not required. Microsoft Defender Advanced Threat Protection works without Manifest File.
+    **Manifest File** is not required. Microsoft Defender for Endpoint works without Manifest File.
     
     **Options tab**<br> Keep default values.
 

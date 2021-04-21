@@ -56,11 +56,7 @@ If you get a message in the admin center telling you that you don't have permiss
 
 ## Commonly used Microsoft 365 admin center roles
 
-::: moniker range="o365-worldwide"
-
 In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
-
-::: moniker-end
 
 You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
