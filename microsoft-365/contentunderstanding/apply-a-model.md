@@ -1,8 +1,9 @@
 ---
 title: "Apply a document understanding model to a document library"
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -22,7 +23,7 @@ description: "Learn how to apply a published a model to a SharePoint document li
 
 </br>
 
-After publishing your document understanding model, you can apply it to one or more SharePoint document library in your Microsoft 365 tenant.
+After publishing your document understanding model, you can apply it to one or more SharePoint document libraries in your Microsoft 365 tenant.
 
 > [!NOTE]
 > You are only able to apply the model to document libraries that you have access to.
@@ -32,7 +33,7 @@ After publishing your document understanding model, you can apply it to one or m
 
 To apply your model to to a SharePoint document library:
 
-1. On model home page, on the **Apply model to libraries** tile, select **Publish model**. Or you can select  **+Add Library** in the **Libraries with this model** section. </br>
+1. On model home page, on the **Apply model to libraries** tile, select **Publish model**. Or you can select  **+Add library** in the **Libraries with this model** section. </br>
 
     ![Add model to library](../media/content-understanding/apply-to-library.png)</br>
 
@@ -47,7 +48,7 @@ To apply your model to to a SharePoint document library:
 
     ![Select a doc library](../media/content-understanding/select-doc-library.png)</br>
 
-4. Since the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</br>
+4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. By default, this view is the library's default view. However, you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as the default** check box.</br>
 
     ![Library view](../media/content-understanding/library-view.png)</br>
 
@@ -68,32 +69,29 @@ To apply your model to to a SharePoint document library:
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
-The model identifies any files with model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file.
+The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
 
-### Apply the model to files already in the document library
+### Apply the model to files and folders already in the document library
 
-While an applied model processes all files uploaded to the document library after it is applied, you can also do the following to run the model on files that already exists in the document library prior to the model being applied:
+While an applied model processes all files and folders uploaded to the document library after it is applied, you can also do the following to run the model on files and folders that already exist in the document library prior to the model being applied:
 
-1. In your document library, select the files that you want to be processed by your model.
-2. After selecting your files, **Classify and extract** will appear in the document library ribbon. Select **Classify and extract**.
-3. The files you selected will be added to the queue to be processed.
+1. In your document library, select the files and folders that you want to be processed by your model.
+2. After selecting your files and folders, **Classify and extract** will appear in the document library ribbon. Select **Classify and extract**.
+3. The files and folders you selected will be added to the queue to be processed.
 
       ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
 
-> [!NOTE]
-> You can copy individual files to a library and apply them to a model, but not folders.
+### Classification Date field
 
-### The Classification Date field
-
-When a SharePoint Syntex document understanding or form processing model is applied to a document library, a <b> Classification date </b> field is included in the library schema. By default this field is empty, but when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a SharePoint Syntex document understanding or form processing model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Classification date column](../media/content-understanding/class-date-column.png)</br> 
 
-The Classification date field is used by the [<b>When a file is classified by a content understanding model</b> trigger](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) to run a Power Automate flow after a Syntex content understanding model has finished processing a file and updated the "Classification date" field.
+The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a Syntex content understanding model has finished processing a file or folder and updated the **Classification Date** field.
 
    ![Flow trigger](../media/content-understanding/trigger.png)</br>
 
-The <b>When a file is classified by a content understanding model</b> trigger can then be used to start another workflow using any  extracted information from the file.
+The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file.
 
 
 
