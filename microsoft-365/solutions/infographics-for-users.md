@@ -3,7 +3,7 @@ title: Microsoft 365 infographics for users
 description: These Microsoft 365 infographics can help the users in your organization understand best practices for working in Microsoft 365.
 ms.author: samanro
 author: samanro
-ms.manager: bcarter
+ms.manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
