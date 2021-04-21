@@ -1,7 +1,7 @@
 ---
 title: How to schedule an update of the Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an update of the Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
-keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

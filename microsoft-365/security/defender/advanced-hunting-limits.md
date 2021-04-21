@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting quotas and usage parameters in Microsoft 365 Defender
 description: Understand various quotas and usage parameters (service limits) that keep the advanced hunting service responsive
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
