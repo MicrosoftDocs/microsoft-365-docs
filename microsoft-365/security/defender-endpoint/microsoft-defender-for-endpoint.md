@@ -130,8 +130,7 @@ When there are conflict types (for example, one **Allow** and other **Deny**) fo
 
 1. Description: Defines whether to display notification or not.
 
-
-<include the image device-status.png>
+:::image type="content" source="images/device-status.png" alt-text="The screen on which the status of the device can be seen":::
 
 1. Options: 0-4.
 When Type Allow or Deny is selected:
@@ -203,17 +202,17 @@ Before you get started with Removable Storage Protection, you must confirm your�
 
 1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
 
-<include the image prevent-write-and-access-allow-usb.png>
+:::image type="content" source="images/prevent-write-and-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
-<include the image usage-of-sid-property.png>
+:::image type="content" source="images/usage-of-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
 
 3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: ‘Define device control policy groups’ and ‘Define device control policy rules’**.
 
     - The target machine must be able to access the network share to have the policy, but once the policy is read, the network share connection is no longer required, even after machine reboot.
 
-<include the image device-control.png>
+:::image type="content" source="images/device-control.png" alt-text="The Device Control screen":::
 
 ## Deploying and managing policy via Intune OMA-URI
 
@@ -223,7 +222,7 @@ The Removable Storage Protection feature allows you to apply policy via OMA-URI 
 
 Before you get started with Removable Storage Protection, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E3.
 
-<include the image microsoft-365-e3.png>
+:::image type="content" source="images/microsoft-365-e3.png" alt-text="`The screen on which the Write and Execute access is blocked but approved USBs are allowed":::
 
 ### Permission
 
