@@ -1,7 +1,7 @@
 ---
-title: Privacy for Microsoft Defender ATP for Linux
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, privacy, diagnostic
+title: Privacy for Microsoft Defender for Endpoint on Linux
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Privacy for Microsoft Defender for Endpoint for Linux
+# Privacy for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,13 +28,13 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Defender for Endpoint for Linux.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Defender for Endpoint on Linux.
 
 This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
 
-## Overview of privacy controls in Microsoft Defender for Endpoint for Linux
+## Overview of privacy controls in Microsoft Defender for Endpoint on Linux
 
-This section describes the privacy controls for the different types of data collected by Defender for Endpoint for Linux.
+This section describes the privacy controls for the different types of data collected by Defender for Endpoint on Linux.
 
 ### Diagnostic data
 
@@ -70,7 +70,7 @@ There are three levels for controlling sample submission:
 
 If you're an IT administrator, you might want to configure these controls at the enterprise level. 
 
-The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
+The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
@@ -91,7 +91,7 @@ The following fields are considered common for all events:
 | org_id                  | Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted. |
 | hostname                | Local device name (without DNS suffix). Allows Microsoft to identify whether issues are impacting a select set of installs and how many users are impacted. |
 | product_guid            | Unique identifier of the product. Allows Microsoft to differentiate issues impacting different flavors of the product. |
-| app_version             | Version of the Defender for Endpoint for Linux application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
+| app_version             | Version of the Defender for Endpoint on Linux application. Allows Microsoft to identify which versions of the product are showing an issue so that it can correctly be prioritized.|
 | sig_version             | Version of security intelligence database. Allows Microsoft to identify which versions of the security intelligence are showing an issue so that it can correctly be prioritized. |
 | supported_compressions  | List of compression algorithms supported by the application, for example `['gzip']`. Allows Microsoft to understand what types of compressions can be used when it communicates with the application. |
 | release_ring            | Ring that the device is associated with (for example Insider Fast, Insider Slow, Production). Allows Microsoft to identify on which release ring an issue may be occurring so that it can correctly be prioritized. |
@@ -158,7 +158,7 @@ The following fields are collected:
 
 | Field            | Description |
 | ---------------- | ----------- |
-| version          | Version of Defender for Endpoint for Linux. |
+| version          | Version of Defender for Endpoint on Linux. |
 | instance_id      | Unique identifier generated on kernel extension startup. |
 | trace_level      | Trace level of the kernel extension. |
 | subsystem        | The underlying subsystem used for real-time protection. |
@@ -173,7 +173,7 @@ The following fields are collected:
 Diagnostic logs are collected only with the consent of the user as part of the feedback submission feature. The following files are collected as part of the support logs:
 
 - All files under */var/log/microsoft/mdatp*
-- Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Defender for Endpoint for Linux
+- Subset of files under */etc/opt/microsoft/mdatp* that are created and used by Defender for Endpoint on Linux
 - Product installation and uninstallation logs under */var/log/microsoft_mdatp_\*.log*
 
 ### Optional diagnostic data

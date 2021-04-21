@@ -1,5 +1,5 @@
 ---
-title: Details and results of an automated investigation
+title: View the details and results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
@@ -21,10 +21,9 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/02/2021
 ---
 
-# Details and results of an automated investigation
+# View the details and results of an automated investigation
 
 **Applies to:**
 - Microsoft Defender for Endpoint

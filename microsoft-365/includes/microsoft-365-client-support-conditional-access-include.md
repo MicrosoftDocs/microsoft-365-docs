@@ -6,7 +6,6 @@
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
 |CORTANA|N/A|N/A|N/A|N/A|Planned|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|Planned|Planned|N/A|Planned|N/A|
 |EXCEL|✔|Planned|Planned|Planned|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
@@ -35,6 +34,6 @@
 |TO-DO|Planned|Planned|Planned|N/A|Planned|
 |VISIO|N/A|✔|N/A|Planned|N/A|
 |WHITEBOARD|N/A|Planned|N/A|N/A|Planned|
-|WORD|✔|Planned|Planned|Planned|Planned|
+|WORD|✔|Planned|Planned|Planned|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|Planned|Planned|Planned|Planned|N/A|

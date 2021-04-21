@@ -1,7 +1,7 @@
 ---
 title: EmailUrlInfo table in the advanced hunting schema
 description: Learn about URL or link information in the EmailUrlInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

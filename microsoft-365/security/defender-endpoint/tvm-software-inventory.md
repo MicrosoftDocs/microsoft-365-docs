@@ -1,7 +1,7 @@
 ---
 title: Software inventory in threat and vulnerability management
-description: The software inventory page for Microsoft Defender ATP's threat and vulnerability management shows how many weaknesses and vulnerabilities have been detected in software.
-keywords: threat and vulnerability management, microsoft defender atp, microsoft defender atp software inventory, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
+description: The software inventory page for Microsoft Defender for Endpoint's threat and vulnerability management shows how many weaknesses and vulnerabilities have been detected in software.
+keywords: threat and vulnerability management, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint software inventory, Microsoft Defender for Endpoint threat & vulnerability management, Microsoft Defender for Endpoint threat & vulnerability management software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

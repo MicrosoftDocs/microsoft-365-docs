@@ -1,7 +1,7 @@
 ---
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -49,6 +49,19 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 - Microsoft Defender for Identity
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
+
+### Before you begin
+
+Users need one of the following levels of permissions to access Microsoft Defender:
+
+- Full access (read and write)
+- Read-only access
+
+**Full access**:
+Users with full access can save, modify, and share a query. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" built-in roles in Azure Active Directory (AAD).
+
+**Read-only access**:
+Users with read-only access can log in and view all alerts and related information. They will not be able to save, modify, or share a query. Assigning read-only access rights requires adding the users to the "Security Reader" built-in role in AAD.
 
 ## Get started with advanced hunting
 

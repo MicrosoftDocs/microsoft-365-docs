@@ -20,7 +20,6 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
 ---
 
 # The Action center
