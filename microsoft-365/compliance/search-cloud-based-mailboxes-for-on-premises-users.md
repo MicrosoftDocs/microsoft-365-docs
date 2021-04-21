@@ -69,13 +69,13 @@ Here's how to use Content search in the Microsoft 365 compliance center to searc
 
 4. To search for Teams content for specific users, select **Choose user, groups, or teams** and choose specific users to include in the search. Otherwise, click **Next** to search for Teams content for all users, including  on-premises users
 
-4. On the **Defined your search conditions** page, create a keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box:
+5. On the **Define your search conditions** page, create a keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box:
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-5. Submit and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
+6. Submit and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
 
     - [Create a search](content-search.md#create-a-search)
 

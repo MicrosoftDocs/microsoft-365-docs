@@ -26,13 +26,13 @@ The following table lists the apps that either stores or associates data with a 
 
 |Microsoft 365 app|Description|
 |:---------|:---------|
-|Forms|Forms and responses to a form are stored in files that are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. Forms created before April 2020 are stored as a PDF file. Forms created after 2020 are stored as a JSON file.  Responses to a form are stored in a CSV file. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**. |
+|Forms<sup>*</sup>|Forms and responses to a form are stored in files that are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. Forms created before April 2020 are stored as a PDF file. Forms created after 2020 are stored as a JSON file.  Responses to a form are stored in a CSV file. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**. |
 |Microsoft 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with a Microsoft 365 group.|
 |Outlook/Exchange Online|Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.|
 |People|Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.|
 |Class Schedule|Plans created in Class Schedule are stored in the mailbox of the corresponding Microsoft 365 Group that is provisioned when a new plan is created. The alias for the group mailbox is the name of the plan.|
 |Skype for Business|Conversations in Skype for Business are stored in the Conversation History folder in a user's mailbox. If the mailbox of a participant of a Skype meeting is placed on Litigation Hold or assigned to a retention policy, files attached to a meeting are retained in the participants mailbox.|
-|Sway|Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID:  **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
+|Sway<sup>*</sup>|Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID:  **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
 |Tasks|Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.|
 |Teams|Conversations that are part of a Teams channel are associated with the Teams mailbox. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are associated with the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are associated with mailboxes of users who dialed into the meeting or call. So when searching for Teams content, you would search the Teams mailbox for content in channel conversations and search user mailboxes for content in 1 x N chats.|
 |To-Do|Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.|
@@ -40,4 +40,4 @@ The following table lists the apps that either stores or associates data with a 
 ||||
 
 > [!NOTE]
-> At this time, if a hold is placed on a mailbox (by using holds in Core eDiscovery and Advanced eDiscovery cases), content from Forms and Sway will not be preserved by the hold.
+> <sup>*</sup> At this time, if a hold is placed on a mailbox (by using holds in Core eDiscovery or Advanced eDiscovery cases), content from this app will not be preserved by the hold.
