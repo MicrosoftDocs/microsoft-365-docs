@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 security center overview
+title: Microsoft 365 security center overview, combining MDO, MDE, MDI, and MCAS
 description: Advantages in the Microsoft 365 security center, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 security center advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 04/07/2021
+ms.date: 04/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -63,6 +63,9 @@ The Microsoft 365 security center emphasizes *unity, clarity, and common goals* 
 - Common terminology
 - Common entities
 - Feature parity with other workloads
+
+> [!NOTE]
+> The unified Microsoft 365 security center will be accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal will be accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or MDO Plan 1 customers will see only the security features their subscription license supports. The goal of the new center is to centralize security.
 
 ## Unified investigations
 
