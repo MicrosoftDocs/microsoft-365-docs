@@ -1,7 +1,7 @@
 ---
 title: Take action on advanced hunting query results in Microsoft 365 Defender
 description: Quickly address threats and affected assets in your advanced hunting query results
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, take action
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, take action
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
