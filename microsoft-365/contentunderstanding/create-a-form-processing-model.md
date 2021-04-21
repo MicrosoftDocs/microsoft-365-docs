@@ -46,6 +46,8 @@ The first step in creating a form processing model is to name it and create the 
 
     ![Create a model](../media/content-understanding/create-ai-builder-model.png)</br>
 
+[**Update - add new settings to New form processing model**]
+
 2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 
     ![New form processing model](../media/content-understanding/new-form-model.png)</br> 
