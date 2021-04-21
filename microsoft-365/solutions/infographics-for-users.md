@@ -25,7 +25,7 @@ Find more [downloadable Office infographics](https://support.microsoft.com/offic
 
 Download this infographic with security tips for the members of your team - whether your team is a business or nonprofit organization, such as a political campaign:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![The help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Download as a PDF](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [Download as a PowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Share these best practices for keeping your organization's information secure. This infographic was created to support the staff of political campaigns because these are targeted by sophisticated hackers. You are welcome to use the PowerPoint to customize this infographic for your own organization. Related article: [How the security recommendations for Microsoft 365 affect your users](../campaigns/m365-campaigns-users.md)|
 
@@ -34,7 +34,7 @@ Download this infographic with security tips for the members of your team - whet
 
 Download an infographic to get a quick overview of ways to share your business files:
   
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumb image for Share your business files infographic](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. Related article: [Overview of sharing business files](../business-video/overview-file-sharing.md)|
 
@@ -43,7 +43,7 @@ Download an infographic to get a quick overview of ways to share your business f
 
 Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | A quick introduction to how to host or join an online meeting with Microsoft Teams. Related article: [Host online meetings for your business](../business-video/overview-online-meetings.md)|
 
@@ -52,7 +52,7 @@ Download an infographic to get a quick overview of how to join or host an online
 
 Download an infographic to get tips for working from anywhere:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumb image for Work from anywhere infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
 
@@ -61,6 +61,6 @@ Download an infographic to get tips for working from anywhere:
 
 Download an infographic to find out how to survey customers (internal or external) with Microsoft Forms:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumb image for Survey customers with Forms infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. Related article: [Collect information with Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
