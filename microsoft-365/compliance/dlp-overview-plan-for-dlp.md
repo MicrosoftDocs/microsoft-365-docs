@@ -19,6 +19,27 @@ description: ""
 
 # Plan for data loss prevention (DLP)
 
+multiple entry points:
+from a platform, like teams
+without knowing data at all and straight to define policies
+with knowing what their most sensitive data is and define policies
+without knowing data at all and start with discovery and categorization
+
+take waterfall approach
+
+take very targeted, quick start approach.
+
+can only assume greenfield
+
+1. prioritize data
+1. categorize data
+1. define access rights (should have been done already)
+1. establish policies
+1. develop controls
+1. train users
+1. monitor data movement
+1. adjust/refine
+
 Overview of planning process – topic EVERYTHING UNDER THIS IS A GAP
 Identify stakeholders who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
 a.	Regulatory and compliance officers
@@ -39,11 +60,9 @@ Approaches to deployment    REALLY BIG GAP
 
 
 
-## What a DLP policy contains
+<!-- ## What a DLP policy contains MOVE THIS DETAILED PIECE TO ANATOMY OF A DLP POLICY IN GET STARTED
 
- moved to plan for, needs rewriting
 
-A DLP policy contains a few basic things:
   
 - Where to protect the content: **locations** such as Exchange Online, SharePoint Online, and OneDrive for Business sites, as well as Microsoft Teams chat and channel messages. 
     
@@ -103,6 +122,7 @@ The conditions now available can determine if:
 
   > [!NOTE]
   > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
+
     
 #### Types of sensitive information
 
@@ -257,7 +277,7 @@ Regarding policy tips, note that:
 - Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
     
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
-    
+-->    
 
 move to plan for  
 ## Roll out DLP policies gradually with test mode
