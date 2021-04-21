@@ -1,7 +1,7 @@
 ---
-title: Connected applications in Microsoft Defender ATP
+title: Connected applications in Microsoft Defender for Endpoint
 ms.reviewer: 
-description: View connected partner applications that use standard OAuth 2.0 protocol to authenticate and provide tokens for use with Microsoft Defender ATP APIs.
+description: View connected partner applications that use standard OAuth 2.0 protocol to authenticate and provide tokens for use with Microsoft Defender for Endpoint APIs.
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

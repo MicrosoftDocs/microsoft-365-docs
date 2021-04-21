@@ -175,6 +175,9 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
+#### [Device Control]()
+##### [Device Control reports](device-control-report.md)
+##### [Control USB devices](control-usb-devices-using-intune.md)
 
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
@@ -472,6 +475,7 @@
 ####### [Get security recommendations](get-security-recommendations.md)
 ####### [Add or Remove machine tags](add-or-remove-machine-tags.md)
 ####### [Find machines by IP](find-machines-by-ip.md)
+####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 

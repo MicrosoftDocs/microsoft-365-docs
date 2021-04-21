@@ -1,7 +1,7 @@
 ---
 title: New configuration profiles for macOS Catalina and newer versions of macOS
 description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Catalina and newer versions of macOS.
-keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
