@@ -50,7 +50,7 @@ Only organizations that are eligible will see the option to buy Business Assist.
 
 2. Select **Details** on the **Small Business Assist for Microsoft 365** and complete your purchase.
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
 > [!div class="nextstepaction"]
 > [Buy now](https://go.microsoft.com/fwlink/p/?linkid=2158423)
