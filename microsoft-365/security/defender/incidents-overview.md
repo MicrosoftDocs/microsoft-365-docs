@@ -122,11 +122,11 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
    
    e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
-2. After or during your analysis, address containment (reducing any additional impact of the attack on your tenant) and eradication of the security threat.
+2. After or during your analysis, address containment to reduce any additional impact of the attack and eradication of the security threat.
 
 3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
 
-4. [Resolve](manage-incidents.md#resolve-incident) the incident and take the time for post-incident learning to:
+4. [Resolve](manage-incidents.md#resolve-incident) the incident and take time for post-incident learning to:
 
    - Understand the type of the attack and its impact.
    - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
@@ -135,7 +135,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 ## Example security operations for Microsoft 365 Defender
 
-Here's an example of security operations for Micosoft 365 Defender.
+Here's an example of security operations for Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Micosoft 365 Defender":::
 
@@ -152,7 +152,7 @@ Monthly tasks can include:
 - Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Reporting to your IT security management chain
 
-Quarterly tasks can include a report and briefing of security results to the Cheif Information Security Officer (CISO).
+Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).
 
 Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes. 
 
@@ -164,4 +164,4 @@ The incident queue from the **Incidents** page lists the most recent incidents. 
 
 - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
 - [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments for your incident management workflow.
-- Perform an [investigation](investigate-incidents.md) of an incident.
+- Perform an [analysis](investigate-incidents.md) of an incident.
