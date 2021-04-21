@@ -19,7 +19,26 @@ description: ""
 
 # Plan for data loss prevention (DLP)
 
-<!--
+Overview of planning process – topic EVERYTHING UNDER THIS IS A GAP
+Identify stakeholders who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
+a.	Regulatory and compliance officers
+b.	Chief risk officer
+c.	Legal officers
+d.	Security and compliance officers
+e.	Business owners for the data items
+f.	IT
+
+They identify the categories of sensitive items to protect and the business
+This group then describes the categories of items (email, docs, chat) and the business process (data subject to regulation and proprietary data) that they are used in. The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.
+Start looking/discovery for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
+IT can start coding test policies, start small and always in test mode. Note that DLP policies can feed into insider risk.
+Business process owners help with tuning false positive/false negative results and fitting DLP into their business processes.
+Plan for training of end users
+Approaches to deployment    REALLY BIG GAP
+
+
+
+
 ## What a DLP policy contains
 
  moved to plan for, needs rewriting
@@ -40,9 +59,8 @@ For example, you might have a DLP policy that helps you detect the presence of i
   
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
--->
 
-<!-- moved to plan for, needs rewriting
+moved to plan for, needs rewriting
 
 ### Locations
 
@@ -158,9 +176,9 @@ When a rule is matched, you can send an incident report to your compliance offic
 
 DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
   
--->
 
-<!--moved to plan for
+
+moved to plan for
 
 ## Grouping and logical operators
 
@@ -206,9 +224,8 @@ For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** 
     
 ![Groups showing the operator between groups](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
 
--->
+moved to Plan for
 
-<!-- moved to Plan for
 ## The priority by which rules are processed
 
 When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on. 
@@ -241,9 +258,8 @@ Regarding policy tips, note that:
     
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
     
--->
 
-<!-- move to plan for>  
+move to plan for  
 ## Roll out DLP policies gradually with test mode
 
 When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
@@ -266,9 +282,9 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
     ![Set rule priority](../media/dlp-set-rule-priority.png)
 
--->
 
-<!-- move to plan for
+
+move to plan for
 ### Policy evaluation in OneDrive for Business and SharePoint Online sites
 
 Across all of your SharePoint Online sites and OneDrive for Business sites, documents are constantly changing — they're continually being created, edited, shared, and so on. This means documents can conflict or become compliant with a DLP policy at any time. For example, a person can upload a document that contains no sensitive information to their team site, but later, a different person can edit the same document and add sensitive information to it.
@@ -292,4 +308,3 @@ DLP evaluates any content that can be indexed. For more information on what file
 > [!NOTE]
 > External sharing of new files in SharePoint can be blocked by default until at least one DLP policy scans the new item. See, [Mark new files as sensitive by default](https://docs.microsoft.com/sharepoint/sensitive-by-default) for detailed information. 
 
--->
