@@ -1,7 +1,7 @@
 ---
 title: Prepare your Microsoft 365 Defender trial lab environment
 description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft 365 Defender trial lab or pilot environment
-keywords: MTP trial prep, MTP pilot prep, prep for running an MTP pilot project, run a pilot MTP project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
+keywords: Microsoft 365 Defender trial prep, Microsoft 365 Defender pilot prep, prep for running a Microsoft 365 Defender pilot project, run a pilot Microsoft 365 Defender project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

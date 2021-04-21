@@ -1,7 +1,7 @@
 ---
 title: Automation levels in automated investigation and remediation
 description: Get an overview of automation levels and how they work in Microsoft Defender for Endpoint
-keywords: automated, investigation, level, defender atp
+keywords: automated, investigation, level, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
