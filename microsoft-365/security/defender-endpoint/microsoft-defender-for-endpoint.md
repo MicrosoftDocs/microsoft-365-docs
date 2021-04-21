@@ -196,7 +196,7 @@ The Removable Storage Protection feature allows you to apply policy via Group Po
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you must confirm your Microsoft 365 subscription. To access and use Removable Storage Protection, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Protection, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
