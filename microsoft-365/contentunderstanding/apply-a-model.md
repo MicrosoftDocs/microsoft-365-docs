@@ -91,7 +91,7 @@ The **Classification Date** field is used by the [**When a file is classified by
 
    ![Flow trigger](../media/content-understanding/trigger.png)</br>
 
-The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file.
+The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file or folder.
 
 
 
