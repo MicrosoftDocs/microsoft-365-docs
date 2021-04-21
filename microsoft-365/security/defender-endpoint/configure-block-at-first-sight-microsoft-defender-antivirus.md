@@ -25,7 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes "block at first sight" and includes procedures to enable this threat protection feature in your organization.
+This article describes "block at first sight" and includes procedures to enable this threat protection feature in your organization. This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are a home user, see this section.
 
 ## What is "block at first sight"?
 
@@ -176,6 +176,20 @@ You might choose to disable block at first sight if you want to retain the prere
 
     > [!NOTE]
     > Disabling block at first sight does not disable or alter the prerequisite group policies.
+
+## Are you a home user?
+
+If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app.
+
+1. On your Windows 10 computer, open the Windows Security app.
+
+2. Select **Virus & threat protection**.
+
+3. Under **Virus & threat protection settings**, select **Manage settings**.
+
+4. Take one of the following steps:
+
+   - To enable block at first sight, 
 
 ## See also
 
