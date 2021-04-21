@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft 365 security center
 description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
-keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
+keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
@@ -22,8 +22,6 @@ ms.technology: m365d
 # Microsoft Defender for Office 365 in the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)

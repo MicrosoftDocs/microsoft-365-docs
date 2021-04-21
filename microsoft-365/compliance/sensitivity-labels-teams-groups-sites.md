@@ -240,7 +240,7 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-To apply different labels to different sites, repeat the following command for each site: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+This series of commands lets you label multiple sites across your tenant with the same sensitivity label, which is why you use the Set-SPOTenant cmdlet, rather than the Set-SPOSite cmdlet that's for per-site configuration. However, use the Set-SPOSite cmdlet when you need to apply a different label to specific sites by repeating the following command for each of these sites: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## View and manage sensitivity labels in the SharePoint admin center
 

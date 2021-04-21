@@ -1,7 +1,7 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint, Microsoft Defender ATP
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,7 +11,7 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
@@ -75,7 +75,7 @@ For more information and to get your updates, see [Update for Microsoft Defender
 
 ### Cases where warn mode is not supported
 
-Warn mode is not supported for the following attack surface reduction rules:
+Warn mode is not supported for three attack surface reduction rules when you configure them in Microsoft Endpoint Manager. (If you use Group Policy to configure your attack surface reduction rules, warn mode is supported.) The three rules that do not support warn mode when you configure them in Microsoft Endpoint Manager are as follows:
 
 - [Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)

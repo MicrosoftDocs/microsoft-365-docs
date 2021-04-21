@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft 365 security center
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+keywords: Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -23,8 +23,6 @@ ms.collection:
 # Microsoft Defender for Endpoint in the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 

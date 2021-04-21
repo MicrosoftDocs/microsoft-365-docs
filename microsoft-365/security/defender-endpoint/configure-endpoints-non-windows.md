@@ -1,7 +1,7 @@
 ---
 title: Onboard non-Windows devices to the Microsoft Defender for Endpoint service
-description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender ATP service.
-keywords: onboard non-Windows devices, macos, linux, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
+description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint service.
+keywords: onboard non-Windows devices, macos, linux, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +43,7 @@ You'll need to know the exact Linux distros and macOS versions that are compatib
 You'll need to take the following steps to onboard non-Windows devices:
 1. Select your preferred method of onboarding:
 
-   - For macOS devices, you can choose to onboard through Microsoft Defender ATP or through a third-party solution. For more information, see [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+   - For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution. For more information, see [Microsoft Defender for Endpoint on Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
    - For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.   
     1. In the navigation pane, select **Interoperability** > **Partners**. Make sure the third-party solution is listed.

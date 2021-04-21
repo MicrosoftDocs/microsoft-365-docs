@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP APIs connection to Power BI
+title: Microsoft Defender for Endpoint APIs connection to Power BI
 ms.reviewer: 
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, Power BI, reports
@@ -136,7 +136,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## Sample reports
-View the Microsoft Defender ATP Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
+View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## Related topic

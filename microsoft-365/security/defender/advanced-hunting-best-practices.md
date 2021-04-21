@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting query best practices in Microsoft 365 Defender
 description: Learn how to construct fast, efficient, and error-free threat hunting queries with advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
