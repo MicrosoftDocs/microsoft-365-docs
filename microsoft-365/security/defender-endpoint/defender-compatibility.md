@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus compatibility with Defender for Endpoint
 description: Learn about how Windows Defender works with Microsoft Defender for Endpoint and how it functions when a third-party antimalware client is used.
-keywords: windows defender compatibility, defender, microsoft defender atp, defender for endpoint, antivirus, mde
+keywords: windows defender compatibility, defender, Microsoft Defender for Endpoint, defender for endpoint, antivirus, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for Android - Privacy information
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Android.
-keywords: microsoft, defender, atp, android, privacy, diagnostic
+title: Microsoft Defender for Endpoint on Android - Privacy information
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.technology: mde
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint for Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint on Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected, and to support the service.
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
