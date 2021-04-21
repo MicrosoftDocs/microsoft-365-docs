@@ -3,10 +3,11 @@ title: Microsoft 365 infographics for users
 description: These Microsoft 365 infographics can help the users in your organization understand best practices for working in Microsoft 365.
 ms.author: samanro
 author: samanro
-manager: bcarter
+ms.manager: bcarter
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.date: 04/21/2021
 localization_priority: Normal
 ms.collection: 
 - M365solutions
@@ -26,7 +27,7 @@ Download this infographic with security tips for the members of your team - whet
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![The help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Download as a PDF](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [Download as a PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Share these best practices for keeping your organization's information secure. This infographic was created to support the staff of political campaigns because these are targeted by sophisticated hackers. You are welcome to use the PowerPoint to customize this infographic for your own organization. Related article: [How the security recommendations for Microsoft 365 affect your users](../campaigns/m365-campaigns-users.md)|
+|[![The help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Download as a PDF](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [Download as a PowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Share these best practices for keeping your organization's information secure. This infographic was created to support the staff of political campaigns because these are targeted by sophisticated hackers. You are welcome to use the PowerPoint to customize this infographic for your own organization. Related article: [How the security recommendations for Microsoft 365 affect your users](../campaigns/m365-campaigns-users.md)|
 
 <a name="sharefiles"></a>
 ## Share your business files
