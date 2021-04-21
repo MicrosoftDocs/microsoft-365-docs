@@ -16,7 +16,9 @@ description: "Learn more about explanation types in Microsoft SharePoint Syntex"
 
 # Introduction to explanation types
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When creating an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they are used. 
+Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they are used.
+
+[**TDB - Need updated screenshot**]
 
 ![Explanation types](../media/content-understanding/explanation-types.png) 
    
@@ -25,7 +27,9 @@ These explanation types are available:
 - **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string **Referring Doctor** is in all Medical Referral documents you are identifying. Or the **Phone number** of the referring doctor from all Medical Referral document that you are identifying.
 
 - **Proximity**: Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
- 
+
+- **Regular**: [**TBD - Need new description paragraph**]
+
 ## Phrase list
 
 A phrase list explanation type is typically used to identify and classify a document through your model. As described in the *Referring Doctor* label example, it is a string of words, phrases, numbers, or characters that is consistently in the documents that you are identifying.
@@ -49,6 +53,7 @@ For this example, in **Advanced Settings** select the **Any digit from 0-9** che
 Similarly, if you create a phrase list that includes text characters, select the **Any letter from a-z** checkbox to recognize each "a" character used in the phrase list to be any character from "a" to "z".
 
 For example, if you create a **Date** phrase list and you want to make sure that a date format such as *Jan 1, 2020* is recognized, you need to:
+
 - Add *aaa 0, 0000* and *aaa 00, 0000* to your phrase list.
 - Make sure that **Any letter from a-z** is also selected.
 
@@ -115,6 +120,9 @@ Configure the proximity setting to have a range of 0 through 3.
 
 ![Proximity example](../media/content-understanding/proximity-example.png)
 
+## Regular
+
+[**TBD - Need new content and new example screenshot**]
 
 ## Configure where phrases occur in the document
 
@@ -134,7 +142,7 @@ You can choose the following options for this setting:
 
    ![Beginning of file position box](../media/content-understanding/beginning-box.png)
 
-- End of the file:  The document is searched from the end to the phrase location.
+- End of the file: The document is searched from the end to the phrase location.
 
    ![End of file](../media/content-understanding/end-of-file.png)
 
@@ -142,7 +150,7 @@ You can choose the following options for this setting:
 
    ![End of file end box](../media/content-understanding/end-box.png)
 
-- Custom range:  The document is searched in a specified range within the it for the phrase location.
+- Custom range: The document is searched in a specified range within the it for the phrase location.
 
    ![Custom range](../media/content-understanding/custom-file.png)
 
@@ -157,6 +165,8 @@ For example, instead of manually adding all the variations for *Date*, you can u
 ![Explanation library](../media/content-understanding/explanation-template.png)
  
 The explanation library includes commonly used phrase list explanations, including:
+
+[**TBD - Update list to include new templates**]
 
 - Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
 - Date (numeric): Calendar dates, all formats. Includes numbers (for example 1-11-2020).
