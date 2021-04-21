@@ -61,6 +61,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 where  _\<orgDomain\>_ is the organization's URL.
   
-For example, if the domain of the organization is contoso.onmicrosoft.com, then the direct URL to the team site would be https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
+For example, if the domain of the organization is contoso.onmicrosoft.com, then the direct URL to the team site would be `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
   
 Of course, users can also download SharePoint Online documents from the SharePoint team site to their local computer or to another location at any time.

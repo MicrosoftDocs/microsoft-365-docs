@@ -65,7 +65,7 @@ If you see one the following error messages when putting custodians and data sou
 1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command for an eDiscovery hold:
 
    ```powershell
-   Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+   Get-CaseHoldPolicy <policyname> -DistributionDetail | FL
    ```
 
 2. Examine the value in the *DistributionDetail* parameter. Look for errors like the following:
