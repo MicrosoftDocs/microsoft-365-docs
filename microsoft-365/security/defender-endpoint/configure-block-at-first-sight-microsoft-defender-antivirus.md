@@ -25,6 +25,8 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
+This article describes "block at first sight" and includes procedures to enable this threat protection feature in your organization.
+
 ## What is "block at first sight"?
 
 Block at first sight is a threat protection capability that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
