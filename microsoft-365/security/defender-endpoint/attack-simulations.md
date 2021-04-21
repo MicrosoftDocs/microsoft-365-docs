@@ -1,6 +1,6 @@
 ---
-title: Experience Microsoft Defender ATP through simulated attacks
-description: Run the provided attack scenario simulations to experience how Microsoft Defender ATP can detect, investigate, and respond to breaches.
+title: Experience Microsoft Defender for Endpoint through simulated attacks
+description: Run the provided attack scenario simulations to experience how Microsoft Defender for Endpoint can detect, investigate, and respond to breaches.
 keywords: wdatp, test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
