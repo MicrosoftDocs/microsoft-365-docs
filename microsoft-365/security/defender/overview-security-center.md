@@ -46,6 +46,9 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in the Microsoft 365 security center](microsoft-365-security-center-mde.md)
 
+> [!NOTE]
+> The Microsoft 365 security portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload (such as MDO or MDE) has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 security portal, automatically. However, roles and permissions for MCAS will still handled over in MCAS.
+
 ## What to expect
 
 All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender security center (securitycenter.microsoft.com) can now be found in the *Microsoft 365 security center*.
