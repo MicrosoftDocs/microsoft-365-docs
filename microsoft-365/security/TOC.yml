@@ -137,7 +137,7 @@
                       href: defender/manage-incidents.md
                     - name: Investigate alerts
                       href: defender/investigate-alerts.md    
-                    - name: Investigate users in Microsoft 365 security center 
+                    - name: Investigate users 
                       href: defender/investigate-users.md                  
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md

@@ -1,6 +1,6 @@
 ---
 title: Incidents in Microsoft 365 Defender
-description: Investigate incidents seen across devices, users, and mailboxes.
+description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 security center.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -98,6 +98,65 @@ The additional tabs for an incident are:
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 security center":::
+
+## Example incident response workflow for Microsoft 365 Defender
+
+Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 security center.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Example of an incident response workflow for Microsoft 365":::
+
+On an ongoing basis, identify the highest priority incidents for investigation and resolution in the incident queue and get them ready for response. This is a combination of:
+
+- [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
+- [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
+
+1. For each incident, begin an [attack and alert analysis](investigate-incidents.md):
+
+   a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
+
+   b. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
+
+   c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
+
+   d. See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).
+   
+   e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
+
+2. After or during your analysis, address containment (reducing any additional impact of the attack on your tenant) and eradication of the security threat.
+
+3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
+
+4. [Resolve](manage-incidents.mp#resolve-incident) the incident and take the time for post-incident learning to:
+
+   - Understand the type of the attack and its impact.
+   - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
+   - Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.
+   - Determine whether changes in your security configuration are needed and implement them.
+
+## Example security operations for Microsoft 365 Defender
+
+Here's an example of security operations for Micosoft 365 Defender.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Micosoft 365 Defender":::
+
+Daily tasks can include:
+
+- [Managing]](manage-incidents.md) incidents
+- Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions
+- Reviewing the latest [Threat Analytics](threat-analytics.md)
+- [Responding](investigate-incidents.md) to incidents
+
+Monthly tasks can include:
+
+- Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)
+- Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Reporting to your IT security management chain
+
+Quarterly tasks can include a report and briefing of security results to the Cheif Information Security Officer (CISO).
+
+Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes. 
+
+Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
 ## Next step
 
