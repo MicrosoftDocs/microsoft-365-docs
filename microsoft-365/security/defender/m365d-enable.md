@@ -60,7 +60,7 @@ Microsoft 365 Defender will store and process data in the [same location used by
 Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 > [!NOTE]
-> in the past, Microsoft Defender for Endpoint automatically used to be provisioned European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner.
+> In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
 
 ### Confirm that the service is on
 
