@@ -475,6 +475,7 @@
 ####### [Get security recommendations](get-security-recommendations.md)
 ####### [Add or Remove machine tags](add-or-remove-machine-tags.md)
 ####### [Find machines by IP](find-machines-by-ip.md)
+####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Create and manage custom detection rules in Microsoft 365 Defender
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, rules, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, permissions, Microsoft Defender ATP
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -173,6 +173,9 @@ You maintain control over the broadness or specificity of your custom detections
 
 ## Manage existing custom detection rules
 You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
+
+>[!TIP]
+> Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
 
 ### View existing rules
 

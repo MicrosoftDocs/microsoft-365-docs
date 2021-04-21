@@ -1,7 +1,7 @@
 ---
 title: Run your pilot Microsoft 365 Defender project
 description: Run your pilot Microsoft 365 Defender project in production to effectively determine the benefits and adoption of Microsoft 365 Defender.
-keywords: Microsoft Threat Protection pilot, run pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: Microsoft 365 Defender pilot, run pilot Microsoft 365 Defender project, evaluate Microsoft 365 Defender in production, Microsoft 365 Defender pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,9 +45,9 @@ Running a pilot helps you effectively determine the benefit of adoptiing Microso
 This guide provides an overview of Microsoft 365 Defender and step-by-step instructions on how to set up your pilot project. 
 
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates protection, detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks. It does so by combining and orchestrating the following capabilities into a single security solution:
-  - Microsoft Defender for Endpoint, the new name for Microsoft Defender Advanced Threat Protection (endpoints)
-  -	Microsoft Defender for Office 365, the new name for Office 365 ATP (email) 
-  -	Microsoft Defender for Identity, the new name for Azure ATP (identity) 
+  - Microsoft Defender for Endpoint (endpoints)
+  -	Microsoft Defender for Office 365 (email) 
+  -	Microsoft Defender for Identity (identity) 
   -	Microsoft Cloud App Security (apps)
 
 ![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
