@@ -51,6 +51,8 @@ To assign licenses:
 
 5. Click **Save changes**.
 
+It may take up to an hour for users to get access to Topics after the licenses are assigned.
+
 ## Set up Topics
 
 To set up Topics
