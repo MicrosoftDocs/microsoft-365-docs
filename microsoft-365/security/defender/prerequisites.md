@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender prerequisites
 description: Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft 365 Defender
-keywords: requirements, prerequisites, hardware, software, browser, MTP, M365, license, E5, A5, EMS, purchase
+keywords: requirements, prerequisites, hardware, software, browser, Microsoft 365 Defender, M365, license, E5, A5, EMS, purchase
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

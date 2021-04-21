@@ -1,7 +1,7 @@
 ---
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -159,7 +159,7 @@ To complete this process, you must have admin privileges on the device.
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. The file should have been quarantined by Defender for Endpoint for Mac. Use the following command to list all the detected threats:
+    1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
         ```bash
         mdatp threat list
@@ -202,7 +202,7 @@ To complete this process, you must have admin privileges on the device.
 
     The system should display the following message:
 
-	> Microsoft Defender ATP - macOS EDR DIY test file<br/>
+	> Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
 	> Corresponding alert will be available in the MDATP portal.
 
 11. Click **Open**.
@@ -223,4 +223,4 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint for macOS from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
