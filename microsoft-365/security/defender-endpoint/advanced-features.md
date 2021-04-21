@@ -66,8 +66,7 @@ Turn on this feature so that potentially unwanted applications (PUA) are remedia
 
 
 ## Restrict correlation to within scoped device groups
-When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
-
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning this setting on, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We do not recommend turning this setting on unless doing so outweighs the benefits of incident correlation across the entire organization
 >[!NOTE]
 >Changing this setting impacts future alert correlations only.
 
