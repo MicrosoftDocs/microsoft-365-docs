@@ -1,7 +1,7 @@
 ---
-title: App-based deployment for Microsoft Defender ATP for iOS
+title: App-based deployment for Microsoft Defender for Endpoint on iOS
 ms.reviewer: 
-description: Describes how to deploy Microsoft Defender ATP for iOS using an app
+description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, atp, ios, app, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,7 +39,7 @@ This topic describes deploying Defender for Endpoint for iOS on Intune Company P
 - Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint for iOS. Refer to [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
 > [!NOTE]
-> Microsoft Defender ATP (Microsoft Defender for Endpoint) for iOS is now available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
+> Microsoft Defender for Endpoint on iOS is now available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
 ## Deployment steps
 

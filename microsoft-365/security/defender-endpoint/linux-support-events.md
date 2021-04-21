@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot missing events or alerts issues for Microsoft Defender ATP for Linux
-description: Troubleshoot missing events or alerts issues in Microsoft Defender ATP for Linux.
+title: Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
+description: Troubleshoot missing events or alerts issues in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, atp, linux, events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
