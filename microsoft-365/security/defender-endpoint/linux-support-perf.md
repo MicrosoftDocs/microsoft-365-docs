@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot performance issues for Microsoft Defender for Endpoint for Linux
-description: Troubleshoot performance issues in Microsoft Defender Endpoint for Linux.
+title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
+description: Troubleshoot performance issues in Microsoft Defender Endpoint on Linux.
 keywords: microsoft, defender, atp, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -140,6 +140,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
     >[!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
-5. Configure Microsoft Defender ATP for Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+5. Configure Microsoft Defender Endpoint on Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    For more information, see [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint for Linux](linux-exclusions.md).
