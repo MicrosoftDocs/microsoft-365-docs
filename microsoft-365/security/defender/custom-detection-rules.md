@@ -174,6 +174,9 @@ You maintain control over the broadness or specificity of your custom detections
 ## Manage existing custom detection rules
 You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
+>[!TIP]
+> Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
+
 ### View existing rules
 
 To view all existing custom detection rules, navigate to **Hunting** > **Custom detections**. The page lists all the rules with the following run information:
