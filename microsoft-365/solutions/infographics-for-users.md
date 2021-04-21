@@ -4,7 +4,7 @@ description: These Microsoft 365 infographics can help the users in your organiz
 ms.author: samanro
 author: samanro
 manager: bcarter
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
@@ -53,7 +53,7 @@ Download an infographic to get tips for working from anywhere:
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
+|[![Thumb image for Work from anywhere infographic](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
 
 <a name="surveywithforms"></a>
 ## Survey customers with Forms
@@ -62,4 +62,4 @@ Download an infographic to find out how to survey customers (internal or externa
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Host online meetings infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. Related article: [Collect information with Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
+|[![Thumb image for Survey customers with Forms infographic](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms to find out what your customers think. Related article: [Collect information with Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
