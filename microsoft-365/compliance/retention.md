@@ -289,7 +289,7 @@ Use the following flow to understand the retention and deletion outcomes for a s
   
 Explanation for the four different levels:
   
-1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. However, the item will be "soft-deleted" if it hasn't already been deleted by the user or another mechanism. For example:
+1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. However, when these two actions conflict, if the item hasn't already been deleted by the user or another mechanism, the item will be "soft-deleted" and moved to the secured location that supports eDiscovery searches. For example:
     - An email message moves from the user's inbox to the Recoverable Items folder
     - A document in SharePoint moves from the original folder to the Preservation Holds folder
     - A Teams chat message disappears from the Teams app and moves to the SubstrateHolds folder
