@@ -1,6 +1,6 @@
 ---
 title: Increase compliance to the Microsoft Defender for Endpoint security baseline
-description: The Microsoft Defender for Endpoint security baseline sets Microsoft Defender for Endpoint security controls to provide optimal protection.
+description: The Microsoft Defender for Endpoint security baseline sets security controls to provide optimal protection.
 keywords: Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Microsoft Defender for Endpoint ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,6 +1,6 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint the service.
+description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint service.
 keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

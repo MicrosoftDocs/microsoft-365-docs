@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on iOS Application license terms
 ms.reviewer: 
 description: Describes the Microsoft Defender for Endpoint on iOS license terms
-keywords: microsoft, defender, Microsoft Defender for Endpoint, iOS, license, terms, application, use, installation, service, feedback, scope,
+keywords: microsoft, defender, Microsoft Defender for Endpoint, iOS, license, terms, application, use, installation, service, feedback, scope
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

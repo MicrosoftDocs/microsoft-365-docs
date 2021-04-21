@@ -69,10 +69,10 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 ![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Each environment is provisioned with a limited set of test devices.
 >- Depending the type of environment structure you select, devices will be available for the specified number of hours from the day of activation.
->- When you've used up the provisioned devices, no new devices are provided. A deleted device does not refresh the available test device count.
->- Given the limited resources, it’s advisable to use the devices carefully.
+>- Each environment is provisioned with a limited set of test devices. When you've used up the provisioned devices, no new devices are provided. A deleted device does not refresh the available test device count.
+>- You can no longer use the lab when the resources have been used up. It does not reset nor refresh.
+>- It is advisable to use the resources carefully.The lab resources are limited. They will not reset nor refresh. 
 
 Already have a lab? Make sure to enable the new threat simulators and have active devices.
 

@@ -115,7 +115,7 @@ In the below commands, replace *[distro]* and *[version]* with the information y
 > In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
-# Puppet manifest to install Microsoft Defender ATP.
+# Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
 # @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.

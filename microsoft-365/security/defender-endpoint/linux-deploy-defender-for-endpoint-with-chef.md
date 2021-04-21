@@ -106,7 +106,7 @@ end
 
 Make sure to update the path name to the location of the onboarding file.
 To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mdatp``.
-After your deployment you should consider creating and deploying a configuration file to the servers based on  [Set preferences for Microsoft Defender ATP for Linux - Windows security | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
+After your deployment you should consider creating and deploying a configuration file to the servers based on  [Set preferences for Microsoft Defender for Endpoint on Linux](/linux-preferences.md).  
 After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package.  Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
 ```powershell
