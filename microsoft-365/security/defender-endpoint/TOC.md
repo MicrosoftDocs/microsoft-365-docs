@@ -344,7 +344,7 @@
 ##### [Device Control reports](device-control-report.md)
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 
-#### [Behavioral blocking and containment -- IS THIS PLACED RIGHT?]()
+#### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
 ##### [Client behavioral blocking](client-behavioral-blocking.md)
 ##### [Feedback-loop blocking](feedback-loop-blocking.md)
