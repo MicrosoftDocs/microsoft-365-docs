@@ -35,7 +35,7 @@ highlightedContent:
       url: /learn/m365/
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
-      url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      url: business-video/index.yml
 
 # productDirectory section (optional)
 productDirectory:
@@ -63,10 +63,10 @@ productDirectory:
       links:
         - url: /MicrosoftTeams/quick-start-meetings-live-events
           text: Meetings and live events in Microsoft Teams
+        - url: solutions/deploy-voice.md
+          text: Plan and deploy a Teams voice solution
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /MicrosoftTeams/cloud-voice-landing-page
-          text: Cloud Voice in Microsoft Teams
         - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
           text: Microsoft telephony solutions
     # Card
@@ -76,8 +76,8 @@ productDirectory:
       links:
         - url: solutions/collaborate-with-people-outside-your-organization.md
           text: Configure external sharing
-        - url: /sharepoint/plan-intranet
-          text: Plan an intelligent SharePoint intranet
+        - url: /sharepoint/intelligent-internet-overview
+          text: Build an intelligent SharePoint intranet
         - url: /sharepoint/deploy-file-collaboration
           text: File collaboration in SharePoint
         - url: /onedrive/plan-onedrive-enterprise
@@ -104,10 +104,12 @@ productDirectory:
           text: Top tasks for security teams to support working from home
         - url: solutions/configure-teams-three-tiers-protection.md
           text: Configure three tiers of protection with Microsoft Teams
-        - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-          text: Deploy Microsoft Defender Advanced Threat Protection
-        - url: security/office-365-security/office-365-atp.md
-          text: Deploy Office 365 Advanced Threat Protection
+        - url: security/defender/get-started.md
+          text: Get started with Microsoft 365 Defender
+        - url: security/defender-endpoint/deployment-phases.md
+          text: Deploy Microsoft Defender for Endpoint
+        - url: security/office-365-security/defender-for-office-365.md
+          text: Deploy Microsoft Defender for Office 365
         - url: security/office-365-security/microsoft-365-policies-configurations.md
           text: Configure identity and device access protection
     # Card
@@ -115,16 +117,14 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
       links:
+        - url: compliance/insider-risk-solution-overview.md
+          text: Insider risk solutions in Microsoft 365
         - url: compliance/compliance-quick-tasks.md
           text: Quick tasks for getting started with Microsoft 365 compliance
         - url: compliance/information-protection.md
           text: Manage information protection
         - url: compliance/manage-information-governance.md
           text: Manage information governance
-        - url: compliance/overview-data-investigations.md
-          text: Manage internal and external investigations
-        - url: compliance/insider-risk-management.md
-          text: Manage insider risks
 
     # Card
     - title: Deploy and manage your desktops and devices
@@ -135,7 +135,7 @@ productDirectory:
           text: Deploy Microsoft 365 Apps
         - url: /windows/deployment/
           text: Deploy Windows 10
-        - url: /microsoft-365/managed-desktop/
+        - url: ./managed-desktop/index.yml
           text: Microsoft Managed Desktop
         - url: /mem/intune/fundamentals/what-is-intune
           text: Device management with Microsoft Intune
@@ -251,7 +251,7 @@ additionalContent:
         - title: Planner and Project
           links:
             - text: Planner admin help
-              url: /office365/planner/planner-admin-home
+              url: /office365/planner
             - text: Project for the web
               url: /project-for-the-web/projectforweb-admin-home
             - text: More Project >
@@ -265,8 +265,6 @@ additionalContent:
               url: /Kaizala
             - text: Microsoft Stream
               url: /stream/
-            - text: SharePoint Syntex
-              url: contentunderstanding/index.md
             - text: Yammer
               url: /yammer/yammer-landing-page
         # Card

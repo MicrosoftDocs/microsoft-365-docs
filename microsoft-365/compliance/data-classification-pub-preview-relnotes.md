@@ -18,24 +18,23 @@ description: "Release notes for data classification."
 
 # Data classification release notes
 
-Please review these release notes so that you have the best experience with data classification.
 
 ## Exchange mailbox count
 
-You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.
+You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill-down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.
 
 
 ## Rendering of encrypted documents
 
-SharePoint, Exchange, and OneDrive files that are encrypted will not render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client.
+SharePoint, Exchange, and OneDrive files that are encrypted don't render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client.
 
 ## Supported characters in retention label names in SharePoint search
 
-SharePoint search does not support retention label names with `-`, or `_` in them. For example `Label-MIP` and `Label_MIP` are not supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
+SharePoint search doesn't support retention label names with `-`, or `_` in them. For example, `Label-MIP` and `Label_MIP` aren't supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
 
 ## OneDrive remains in preview
 
-We have listened to your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We will continue to showcase OneDrive in preview till all fixes are in place. We appreciate your continued support on this.
+Thanks for your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We'll continue to showcase OneDrive in preview until all fixes are in place. We appreciate your continued support.
 
 
 ## See also

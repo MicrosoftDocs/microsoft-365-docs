@@ -23,7 +23,7 @@ description: "Users can learn how to manage their self-service purchases."
 
 > [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page.
 2. Select a billing profile from the list.
-3. On the billing profile details page, under **Payment method**, choose one of the following options:\
+3. On the billing profile details page, under **Payment method**, choose one of the following options:
     - If you want to update an existing payment method, select **Edit**.
     - If you want to add a new payment method, select **Replace**.
 4. In the right pane, enter the card details, then choose **Save**.
@@ -103,4 +103,4 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
 
-If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).

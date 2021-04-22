@@ -1,6 +1,6 @@
 ---
 title: Set up devices for Microsoft Managed Desktop 
-description:  
+description:  How to get new devices or reuse existing ones that qualify
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -24,9 +24,9 @@ We recommend working with one of our approved device partners. You can work with
     - Work with a partner to register the devices
 4. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
 
-## To re-use existing devices
+## To reuse existing devices
 
-1. Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop. If you re-use an existing device, you will have to re-image it.
+1. Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop. If you reuse an existing device, you will have to reimage it.
 2. Do either of the following:
     - [Register existing devices yourself](register-reused-devices-self.md)
     - Work with a partner to register the devices
@@ -39,6 +39,6 @@ We recommend working with one of our approved device partners. You can work with
 3. [Assign licenses](assign-licenses.md)
 4. [Deploy Intune Company Portal](company-portal.md)
 5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. Set up devices (this topic)
+6. Set up devices (this article)
 7. [Get your users ready to use devices](get-started-devices.md)
 8. [Deploy apps](deploy-apps.md)

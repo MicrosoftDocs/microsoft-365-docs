@@ -24,26 +24,19 @@ description: "Update your administrator phone number and email address in the ad
 
 # Update your admin phone number and email address
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
   
-## To update your name, phone number, and email address
+## To update your phone number and email address
 
-Use the **Settings and Privacy** page to change your name, mobile phone number, and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
+Use the **Security Info** page to change your mobile phone number and alternate email address. The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password). 
   
 1. Browse to the Microsoft 365 admin center.
 
-2. In the header, select your profile icon \> **My account** \> **Settings and Privacy**.
+2. In the header, select your profile icon \> **My account** \> **Security Info**.
 
-3. In the **Privacy** tab under **Contact Preferences**, select **Contact preferences for admins only**. Update your mobile, phone, and alternate email address. Make sure you use something different from your Microsoft email address for your alternate email address.
+3. In the **Security info** tab, select **Add Method** \> **Phone** \> **Alternate Phone** or **Email** to add details. To update your mobile, phone, and alternate email address details, select **Change**. Make sure you use something other than your Microsoft email address for your alternate email address.
 
     > [!IMPORTANT]
     > The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).

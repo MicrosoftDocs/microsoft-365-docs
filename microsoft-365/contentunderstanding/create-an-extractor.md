@@ -7,6 +7,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Priority
 description: "Learn how to create an extractor in Microsoft SharePoint Syntex."
 ---
@@ -31,7 +34,9 @@ You need to create an extractor for each entity in the document that you want to
 
 1. From the model home page, in the **Create and train extractors** tile, click **Train extractor**.
 2. On the **New entity extractor** screen, type the name of your extractor in the **New extractor name** field. For example, name it **Service Start Date** if you want to extract the service start date from each Contract Renewal document. You can also choose to reuse a previously created column (for example, a managed metadata column).
-3. Click **Create**.
+> [!NOTE]
+> If you create a new extractor, then select **New column type** and choose **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated. 
+3. When you're done, click **Create**.
 
 ## Add a label
 
@@ -47,6 +52,14 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
 
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
+
+### Use Find to search your file
+You can use the <b>Find</b> feature to search for an entity in your document that you want to label.
+
+   ![Find in file](../media/content-understanding/find-feature.png) 
+
+The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
+
 
 ## Add an explanation
 
@@ -68,12 +81,12 @@ To help identify the *Service Start Date* you can create a pattern explanation.
 4. Select **Save**.
 
 > [!NOTE]
-> For more learn more about explanation types, see [Explanation types](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
+> For more learn more about explanation types, see [Explanation types](./explanation-types-overview.md).  
 
 
 ### Use the Explanation library
 
-For creating explanations for items such as dates, it is easier to [use the explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
+For creating explanations for items such as dates, it is easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provides all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others. 
 
 For the *Service Start Date* sample, it is more efficient to use the pre-built explanation for *Date* in the explanation library:
 
@@ -134,3 +147,5 @@ If you receive a match on your labeled sample files, you can now test your model
 [Document Understanding overview](document-understanding-overview.md)
 
 [Apply a model](apply-a-model.md) 
+
+[SharePoint Syntex Accessibility Mode](accessibility-mode.md)

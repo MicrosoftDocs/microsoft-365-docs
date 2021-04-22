@@ -1,25 +1,31 @@
 ---
-title: "EOP queued, deferred, and bounced messages FAQ"
-f1.keywords:
-- NOCSH
+title: EOP queued, deferred, and bounced messages FAQ
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
-ms.custom:
-- seo-marvel-apr2020
-description: "Find answers to the most common questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process."
+ms.custom: 
+  - seo-marvel-apr2020
+description: Find answers to the most common questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # EOP queued, deferred, and bounced messages FAQ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
 

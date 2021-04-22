@@ -358,7 +358,7 @@ Yes, an app can be shared with multiple groups.
 Yes, as the association between Power Apps and a Microsoft 365 group is sharing only – the app still resides with the creator.
 
 > [!IMPORTANT]
-> [Groups must be security enabled before apps can be shared with them](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).
+> [Groups must be security enabled before apps can be shared with them](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).
 
 **Does deleting the app delete the group?**
 
@@ -412,7 +412,7 @@ Yes, creating a classic workspace will create a Microsoft 365 group.
 
 **Does a Power BI classic workspace exist without a group?**
 
-No, [a classic workspace in Power BI must be associated with a group](https://docs.microsoft.com/power-bi/collaborate-share/service-collaborate-power-bi-workspace).
+No, [a classic workspace in Power BI must be associated with a group](/power-bi/collaborate-share/service-collaborate-power-bi-workspace).
 
 **Can there be multiple Power BI workspaces per group?**
 
@@ -450,7 +450,7 @@ Yes, it is possible to have reports and workspaces created in Power BI that are 
 
 **Can there be multiple workspaces per group?**
 
-Yes, [multiple workspaces created by Power BI can be shared with a single group](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
+Yes, [multiple workspaces created by Power BI can be shared with a single group](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
 
 **Can a workspace be associated with multiple groups?**
 
@@ -635,3 +635,8 @@ No, the Yammer group can only ever be associated with the Microsoft 365 group to
 
 Yes, deleting the group in Yammer will delete related Microsoft group and group-associated services and content.
 
+## Related topics
+
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Create your collaboration governance plan](collaboration-governance-first.md)

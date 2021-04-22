@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Limit accidental exposure"
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: 
 localization_priority: Priority
 f1.keywords: NOCSH
@@ -73,7 +74,7 @@ To set up a domain allow or deny list
 
 5. Click **Save**.
 
-If you want to limit sharing by domain at a higher level than SharePoint and OneDrive, you can [allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (You must configure the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) for these settings to affect SharePoint and OneDrive.)
+If you want to limit sharing by domain at a higher level than SharePoint and OneDrive, you can [allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (You must configure the [SharePoint and OneDrive integration with Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview) for these settings to affect SharePoint and OneDrive.)
 
 ## Limit sharing of files, folders, and sites with people outside your organization to specified security groups
 
@@ -85,7 +86,7 @@ To limit external sharing to members of a security group
 
 3. Select **Allow only users in specific security groups to share externally**, and then select **Manage security groups**.
 
-    ![Screenshot of Manage security groups panel](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Screenshot of Manage security groups panel](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. In the **Add a security group** box, enter a name for a security group. The security group box appears.
 

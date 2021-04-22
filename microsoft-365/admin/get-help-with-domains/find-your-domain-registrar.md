@@ -26,7 +26,7 @@ description: "Learn to find your domain registrar and DNS hosting provider using
 
 # Find your domain registrar
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 ## Domain registrar
   

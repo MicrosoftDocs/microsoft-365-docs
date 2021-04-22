@@ -2,8 +2,8 @@
 title: "Migrate to Microsoft 365 Business from Office 365 E3"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how to move your business to Microsoft 365 Business Premium from Office 365 E3."
 ---
 
-# Migrating from Office 365 E3 to Microsoft 365 Business Premium 
+# Migrating from Office 365 E3 to Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business Premium for added security features.
 
@@ -44,18 +44,18 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Device and app management**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Shared computer activation|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 
 | Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Information protection**        | | |
 |Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business Premium](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, BitLocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](../media/check-mark.png)|
@@ -117,8 +117,8 @@ Microsoft 365 Business Premium has a 50 GB storage limit as it uses Exchange Onl
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business Premium, you have Defender for Office 365. See [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+After migrating to Microsoft 365 Business Premium, you have Defender for Office 365. See [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) for an overview. To set up, see [set up Safe Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up Anti-phishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### Sensitivity labels
 
-To start using sensitivity labels, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) and [create and manage sensitivity labels](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.

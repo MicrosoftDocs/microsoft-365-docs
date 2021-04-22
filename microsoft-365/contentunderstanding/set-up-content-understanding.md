@@ -2,10 +2,14 @@
 title: 'Set up SharePoint Syntex'
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: "Set up content understanding in Project Cortex"
@@ -17,22 +21,40 @@ Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Sy
 
 Consider the following before you start:
 
-- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
-- What will you name of your default content center?
+- In which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- What will you name your default content center?
 
 You can change your settings after initial setup in the Microsoft 365 admin center.
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- The SharePoint sites that you want to enable form processing - all of them, some, or selected sites
-- Your content center and the name of the primary site admin
+- The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
+- The name and admins for your content center
 
 ## Requirements 
 
 > [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
+> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
+
+### Licensing
+
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have the following licenses assigned:
+
+- SharePoint Syntex
+- SharePoint Syntex - SPO type
+- Common Data Service for SharePoint Syntex
+
+If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create or run document understanding or form processing models, and the content center template will no longer be available. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No content will be deleted and site permissions will not be changed.
+
+### AI Builder credits
+
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+
+You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
+
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
 
 ## To set up SharePoint Syntex
 
@@ -48,8 +70,8 @@ As an admin, you can also make changes to your selected settings anytime after s
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
-      - **All SharePoint libraries** to make it available to all SharePoint libraries in your organization.</br>
-      - **Only libraries in selected sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
+      - **Libraries in all SharePoint sites** to make it available to all SharePoint libraries in your organization.</br>
+      - **Libraries in selected SharePoint sites**, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    > [!div class="mx-imgBorder"]
@@ -83,28 +105,19 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
 
-2. Select the users that you want to license, and click **Manage product licenses**.
+2. Select the users that you want to license, and choose **Manage product licenses**.
 
-3. Select **Assign more**.
+3. Choose **Apps** from the drop-down menu.
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Click **Save changes**.
 
-## AI Builder credits
-
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
-
-You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
-
-Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
-
 ## See also
 
-[Overview of the form processing model](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[Overview of the form processing model](/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-

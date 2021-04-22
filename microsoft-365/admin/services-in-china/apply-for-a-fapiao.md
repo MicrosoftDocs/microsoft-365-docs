@@ -25,10 +25,6 @@ monikerRange: 'o365-21vianet'
 
 # Apply for a Fapiao for Office 365 operated by 21Vianet
 
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
 You can submit your Fapiao request to the 21Vianet Fapiao management system about three days after you have paid. After you submit your Fapiao request, it will be processed in two days.
   
 ![Flowchart showing the Fapiao application process.](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)

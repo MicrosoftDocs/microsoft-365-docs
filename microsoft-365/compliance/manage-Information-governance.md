@@ -9,16 +9,16 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: High
+localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Implement Microsoft Information Governance capabilities in Microsoft 365 to govern your data for compliance or regulatory requirements."
+description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
 ---
 
 # Microsoft Information Governance in Microsoft 365
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
@@ -44,4 +44,3 @@ To manage high-value content for legal, business, or regulatory obligations:
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
 |[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that supports the full lifecycle of your content with records declaration, retention, and disposition <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
-

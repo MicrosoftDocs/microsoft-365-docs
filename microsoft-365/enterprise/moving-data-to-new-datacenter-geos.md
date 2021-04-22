@@ -43,6 +43,7 @@ Existing customers that have their core customer data stored in an already exist
 |**Switzerland, Liechtenstein**| European Union | Switzerland | December 2019 |
 |**Germany**| European Union | Germany | December 2019 |
 |**Norway**| European Union | Norway | April 2020 |
+|**Brazil**| Americas | Brazil | November 2020 |
 
 As of October 1, 2020 customers with an Office 365 Education subscription included in the tenant are not eligible for migration.
 
@@ -66,6 +67,6 @@ Data moves to the new datacenter geo are completed at no additional cost to the 
     
 [Data move general FAQ](data-move-faq.md)
   
-[New datacenter geos for Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)

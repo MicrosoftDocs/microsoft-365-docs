@@ -193,8 +193,6 @@ The Twitter developer app is now ready to use.
 
 12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then click **Next**.
 
-13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
+13. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 
-14. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
-
-15. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
+14. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.

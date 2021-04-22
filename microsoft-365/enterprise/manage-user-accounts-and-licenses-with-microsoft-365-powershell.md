@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 user accounts, licenses, and groups with PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 11/13/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -35,6 +35,7 @@ For more information, see the following articles.
 - [Assign roles to user accounts](assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 - [Delete and restore user accounts](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)
 - [Block user accounts](block-user-accounts-with-microsoft-365-powershell.md)
+- [Passwords](manage-passwords-with-microsoft-365-powershell.md)
 
 ## Licenses and services
 - [View licenses and services](view-licenses-and-services-with-microsoft-365-powershell.md)
@@ -47,5 +48,6 @@ For more information, see the following articles.
 - [Remove licenses from user accounts](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## Groups
-- [Maintain group membership](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Manage security groups](manage-security-groups-with-microsoft-365-powershell.md)
+- [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 groups](manage-microsoft-365-groups-with-powershell.md)
