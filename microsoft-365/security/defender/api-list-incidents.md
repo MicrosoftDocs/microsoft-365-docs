@@ -137,7 +137,7 @@ devices | All devices where alerts related to the incident were sent. | \[\] (se
 
 Field name | Description | Example value
 -|-|-
-DeviceId | The device ID as designated in Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | The device ID as designated in Microsoft Defender for Endpoint. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  The device ID as designated in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices. | null
 deviceDnsName | The fully qualified domain name for the device. | user5cx.middleeast.corp.contoso.com
 osPlatform | The OS platform the device is running.| WindowsServer2016
