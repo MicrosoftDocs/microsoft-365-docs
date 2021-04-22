@@ -344,12 +344,13 @@
 ##### [Device Control reports](device-control-report.md)
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 
-### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+#### [Behavioral blocking and containment -- IS THIS PLACED RIGHT?]()
+##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
+##### [Client behavioral blocking](client-behavioral-blocking.md)
+##### [Feedback-loop blocking](feedback-loop-blocking.md)
 
-### [Behavioral blocking and containment -- IS THIS PLACED RIGHT?]()
-#### [Behavioral blocking and containment](behavioral-blocking-containment.md)
-#### [Client behavioral blocking](client-behavioral-blocking.md)
-#### [Feedback-loop blocking](feedback-loop-blocking.md)
+
+### [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
 
 ### [Manage device configuration]()
