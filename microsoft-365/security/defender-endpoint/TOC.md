@@ -177,7 +177,7 @@
 
 #### [Device Control]()
 ##### [Microsoft Defender for Endpoint Device Control Removable Storage Protection](ms-defender-for-endpoint-device-control-rsp.md)
-##### [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](microsoft-defender-for-endpoint.md)
+##### [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](mde-device-control-removable-storage-access-control.md)
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Device Control reports](device-control-report.md)
 
