@@ -20,7 +20,7 @@ description: "In this article, you will learn about how service encryption works
 
 # Service encryption with Customer Key
 
-test
+test2
 
 Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
 
