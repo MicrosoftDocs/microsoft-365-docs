@@ -31,7 +31,7 @@ We use the registration number to review the details of your account. This lets 
 
 For countries where the registration number is mandatory, the label above the text box indicates what type of number is required.
 
-For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
+For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 

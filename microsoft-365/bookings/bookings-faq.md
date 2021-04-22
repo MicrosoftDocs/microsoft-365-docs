@@ -113,7 +113,7 @@ Bookings is an ideal solution for both Enterprise and small business customers, 
 
 ### How do I get Microsoft Bookings?
 
-Bookings is available in Microsoft 365 for customers with Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+Bookings is available for customers with Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3, and E5. You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
 
 A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 

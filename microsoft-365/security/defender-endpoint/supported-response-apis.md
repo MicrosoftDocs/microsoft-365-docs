@@ -1,6 +1,6 @@
 ---
-title: Supported Microsoft Defender Advanced Threat Protection response APIs  
-description: Learn about the specific response-related Microsoft Defender Advanced Threat Protection API calls. 
+title: Supported Microsoft Defender for Endpoint response APIs  
+description: Learn about the specific response-related Microsoft Defender for Endpoint API calls. 
 keywords: response apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

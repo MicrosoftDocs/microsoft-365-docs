@@ -1,7 +1,7 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
-keywords: post-migration, manage, operations, maintenance, utilization, intune, windows defender advanced threat protection, atp, edr
+keywords: post-migration, manage, operations, maintenance, utilization, intune, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
