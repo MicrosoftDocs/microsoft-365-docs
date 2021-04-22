@@ -6,7 +6,6 @@
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
 |CORTANA|N/A|N/A|N/A|N/A|Planned|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|Planned|Planned|N/A|Planned|N/A|
 |EXCEL|✔|Planned|Planned|Planned|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|

@@ -1,6 +1,6 @@
 ---
 title: Automated investigation and response in Microsoft Defender for Office 365
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -118,7 +118,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Changes are coming soon in your security center
 
-If you’re already using AIR capabilities in Microsoft Defender for Office 365, you’re about to see some changes in the [improved Microsoft 365 security center](../defender/overview-security-center.md). 
+If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 security center](../defender/overview-security-center.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
@@ -130,7 +130,7 @@ The new and improved security center brings together AIR capabilities in [Micros
 > - Office 365 Security & Compliance Center (<https://protection.office.com>)
 > - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
 >
-> In addition to the URL changing, there’s a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
+> In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
 
 ### What to expect
 
@@ -138,7 +138,7 @@ The following table lists changes and improvements coming to AIR in Microsoft De
 
 |Item|What's changing?|
 |---|---|
-|**Investigations** page|The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). You’ll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.|
+|**Investigations** page|The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). You'll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.|
 |**Users** tab|The **Users** tab is now the **Mailboxes** tab. Details about users are listed on the **Mailbox** tab.|
 |**Email** tab|The **Email** tab has been removed; visit the **Entities** tab to see a list of email and email cluster items.|
 |**Entities** tab|The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Threat Explorer](threat-explorer.md) or [advanced hunting](../defender-endpoint/advanced-hunting-overview.md) to find entities and threats, and filter on results.|

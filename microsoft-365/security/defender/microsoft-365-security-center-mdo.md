@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft 365 security center
 description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
-keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, new security portal, new defender security portal
-ms.date: 02/02/2021
+keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
+ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -22,8 +22,6 @@ ms.technology: m365d
 # Microsoft Defender for Office 365 in the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
@@ -61,6 +59,9 @@ Also, check the **Related Information** section at the bottom of this article.
 
 > [!IMPORTANT]
 > The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
+
+> [!TIP]
+>  All Exchange Online Protection (EOP) functions will be included in the Microsoft 365 security center, as EOP is a core element of Defender for Office 365.
 
 ## Microsoft 365 security center Home page
 

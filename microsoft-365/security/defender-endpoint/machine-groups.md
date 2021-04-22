@@ -1,5 +1,5 @@
 ---
-title: Create and manage device groups in Microsoft Defender ATP
+title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confiring the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh

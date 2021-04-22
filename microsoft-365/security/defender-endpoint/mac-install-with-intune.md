@@ -1,7 +1,7 @@
 ---
-title: Intune-based deployment for Microsoft Defender for Endpoint on macOS
-description: Install Microsoft Defender for Endpoint on macOS, using Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
+description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,6 +21,7 @@ ms.technology: mde
 ---
 
 # Intune-based deployment for Microsoft Defender for Endpoint on macOS
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,9 +46,10 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
+
 ## Overview
 
-The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint for Macs, via Intune. More detailed steps are available below.
+The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune. More detailed steps are available below.
 
 | Step | Sample file names | BundleIdentifier |
 |-|-|-|
