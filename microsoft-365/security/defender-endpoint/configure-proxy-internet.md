@@ -55,6 +55,7 @@ Configure a registry-based static proxy to allow only Defender for Endpoint sens
 
 > [!NOTE]
 > - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:</br>
+> Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384
 > Windows 10, version 1909 - https://support.microsoft.com/kb/4601380</br>
 > Windows 10, version 2004 - https://support.microsoft.com/kb/4601382</br>
 > Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
