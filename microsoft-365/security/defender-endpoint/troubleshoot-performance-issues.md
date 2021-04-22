@@ -276,5 +276,5 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 ## See also
 
-- [Collect Microsoft Defender AV diagnostic data](collect-diagnostic-data.md)
+- [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
