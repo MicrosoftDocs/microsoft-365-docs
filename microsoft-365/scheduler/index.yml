@@ -34,7 +34,7 @@ additionalContent:
         # Card
         - title: Trust and privacy 
           summary: Learn about how Scheduler for Microsoft 365 makes sure your Trust and Privacy is protected.
-          url: enter-business-information.md
+          url: scheduler-trust-privacy.md
         # Card
         - title: Setting up Scheduler for Microsoft 365
           summary: Learn what is required to set up Scheduler for Microsoft 365.
@@ -47,4 +47,4 @@ additionalContent:
         - title: FAQ's for Scheduler
           summary: Learn the frequently asked questions on Scheduler for Microsoft 365 and answers to them.
           url: scheduler-faqs.md
-        
+      
