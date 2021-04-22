@@ -1,20 +1,20 @@
 ### YamlMime:Hub
 
-title: Microsoft Bookings # < 60 chars
-summary: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # < 160 chars
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+title: Scheduler for Microsoft 365 # < 60 chars
+summary: Learn how to set up Scheduler for Microsoft 365 to schedule meetings using Cortana. # < 160 chars
+# brand: exchange | cortana | m365 | visual-studio | windows
 brand: m365
 
 metadata:
-  title: Microsoft Bookings # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
+  title: Scheduler for Microsoft 365 # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to set up Scheduler for Microsoft 365 to schedule meetings using Cortana. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: exchange-online #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: dmaguire #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
+  author: AshaIyengar21 #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-aiyengar #Required; microsoft alias of author; optional team alias.
   manager: serdars
   audience: Admin
-  ms.date: 09/04/2020 #Required; mm/dd/yyyy format.
+  ms.date: 04/23/2021 #Required; mm/dd/yyyy format.
 
 
 
