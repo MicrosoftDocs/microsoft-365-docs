@@ -35,7 +35,7 @@ With the *go hunt* action, you can quickly investigate events and various entity
 
 The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
+- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
     ![Image showing mailbox details with the go hunt option](../../media/mtp-ah/go-hunt-email.png)
 
@@ -79,7 +79,7 @@ You can use *go hunt* after selecting any of these entity types:
 - URLs
 
 ## Query for event information
-When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
+When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occurred around the same time period on the same device:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
