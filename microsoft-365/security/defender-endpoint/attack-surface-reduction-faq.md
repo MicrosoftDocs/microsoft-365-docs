@@ -1,6 +1,6 @@
 ---
 title: Attack surface reduction frequently asked questions (FAQ)
-description: Find answers to frequently asked questions about Microsoft Defender ATP's attack surface reduction rules.
+description: Find answers to frequently asked questions about Microsoft Defender for Endpoint's attack surface reduction rules.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 
@@ -45,6 +45,9 @@ After you apply system tags or custom tags to users, you can use those tags as f
 This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
+
+> [!NOTE]
+> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
 
 ## What do you need to know before you begin?
 
