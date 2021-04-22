@@ -326,12 +326,12 @@ For **System security**, see this table.
 
 |Type|Properties|Value|Action|
 |---|---|---|---|
-|Microsoft Defender for Endpoint rules|Require the device to be at or under the machine-risk score|Medium|Select|
+|Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
 |
 
 ## Require compliant PCs (but not compliant phones and tablets)
 
-Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
+Before adding a policy to require compliant PCs, be sure to enroll your devices for management in Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
 
 To require compliant PCs:
 
