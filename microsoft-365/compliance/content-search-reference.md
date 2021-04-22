@@ -224,26 +224,6 @@ If the Exchange Online license (or the entire Microsoft 365 license) is removed 
 
 If you need to preserve the data in a disconnected mailbox so that it's searchable, you must place a hold on the mailbox before removing the license. This preserves the data and keeps the disconnected mailbox searchable until the hold is removed. For more information about holds, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-## Previewing search results
-
-You can preview supported file types in the preview pane. If a file type isn't supported, you have to download a copy of the file to your local computer to view it. The following file types are supported and can be previewed in the search results pane.
-  
-- .txt, .html, .mhtml
-    
-- .eml
-    
-- .doc, .docx, .docm
-    
-- .pptm, .pptx
-    
-- .pdf
-    
-Also, the following file container types are supported. You can view the list of files in the container in the preview pane.
-  
-- .zip
-
-- .gzip
-
 ## Partially indexed items
 
 - As previously explained, partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results.
