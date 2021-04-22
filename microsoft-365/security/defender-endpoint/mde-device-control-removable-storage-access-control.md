@@ -232,7 +232,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
     /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
     For example, for the **any removable storage and CD/DVD** group in the sample, the link must be:
-    ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
+./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Data Type: String (XML file)
     
