@@ -34,6 +34,18 @@ business and try it out for 30 days.
 > [!NOTE]
 > You must use a credit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is  automatically converted to a paid subscription. Your credit card isn't billed until the end of the trial period.
 
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **Payment options for Office 365 operated by 21Vianet in China**
+> International credit cards are not accepted. You can pay for your subscription by:
+> - Invoice
+> - Online payment using Alipay or China UnionPay
+> Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
+
 ## Before you begin
 
 You don't need an existing Microsoft account to sign up for a free

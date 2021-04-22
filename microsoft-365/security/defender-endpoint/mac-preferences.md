@@ -1,7 +1,7 @@
 ---
-title: Set preferences for Microsoft Defender ATP for Mac
-description: Configure Microsoft Defender ATP for Mac in enterprise organizations.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
+title: Set preferences for Microsoft Defender for Endpoint on Mac
+description: Configure MMicrosoft Defender for Endpoint on Mac in enterprise organizations.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -170,7 +170,7 @@ Specify a process for which all file activity is excluded from scanning. The pro
 
 #### Allowed threats
 
-Specify threats by name that are not blocked by Defender for Endpoint for Mac. These threats will be allowed to run.
+Specify threats by name that are not blocked by Defender for Endpoint on Mac. These threats will be allowed to run.
 
 |Section|Value|
 |:---|:---|

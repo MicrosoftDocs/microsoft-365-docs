@@ -1,7 +1,7 @@
 ---
-title: Investigate alerts in Microsoft 365 Defender
-description: Investigate alerts seen across devices, users, and mailboxes.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Analyze alerts in Microsoft 365 Defender
+description: Analyze alerts seen across devices, users, and mailboxes.
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Investigate alerts in Microsoft 365 Defender
+# Analyze alerts in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
-In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required. 
+In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, analyzing alerts can be valuable when deeper analysis is required. 
 
 The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
@@ -73,7 +73,7 @@ An alert page is composed of these sections:
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or doing specific remediation steps.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
 
 ### Analyze affected assets
 
@@ -83,7 +83,7 @@ You can also select **View in action center** to view the **History** tab of the
 
 ### Trace an alert's role in the alert story
 
-The alert story displays all assets or entities related to the alert in a process tree view. The alert in the title is the one in focus when you first land on your selected alert's page. Assets in the alert story are expandable and clickable. They provide additional information and expedite your response by allowing you to take actions right in the context of the alert page. 
+The alert story displays all assets or entities related to the alert in a process tree view. The alert in the title is the one in focus when you first land on your selected alert's page. Assets in the alert story are expandable and clickable. They provide additional information and expedite your response by allowing you to take action right in the context of the alert page. 
 
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
@@ -109,7 +109,7 @@ The **Manage alert** pane allows you to specify:
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
-> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated prior to the modification will not reflect the updated tag name. 
+> Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated before the modification will not reflect the updated tag name. 
 
 From this pane, you can also perform these additional actions: 
 
@@ -128,12 +128,12 @@ The list of additional actions depends on the type of alert.
 
 ## Resolve an alert
 
-Once you're done investigating an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
+Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
 
 Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
 
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
