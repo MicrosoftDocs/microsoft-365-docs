@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP API license and terms of use
+title: Microsoft Defender for Endpoint API license and terms of use
 description: Description of the license and terms of use for Microsoft Defender APIs
 keywords: license, terms, apis, legal, notices, code of conduct
 search.product: eADQiWindows 10XVcnh
