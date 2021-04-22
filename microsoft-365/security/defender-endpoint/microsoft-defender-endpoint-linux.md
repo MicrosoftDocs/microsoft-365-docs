@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Describes how to install and use Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,7 +34,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint for Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
@@ -75,10 +75,10 @@ If you experience any installation failures, refer to [Troubleshooting installat
 - Minimum kernel version 3.10.0-327
 - The `fanotify` kernel option must be enabled
   > [!CAUTION]
-  > Running Defender for Endpoint for Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 - Memory: 1GB
     > [!NOTE]
     > Please make sure that you have free disk space in /var.

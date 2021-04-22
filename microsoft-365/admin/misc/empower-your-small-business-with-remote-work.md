@@ -82,7 +82,7 @@ For details, see [Microsoft 365 Business resources](https://docs.microsoft.com/m
 
 ## Need to ask a question? 
 
-Ask in the [Teams forum](https://answers.microsoft.com/msteams/forum) or the [Office Admins forum](https://answers.microsoft.com/msoffice/forum/msoffice_o365Admin).
+Ask in the [Teams forum](https://answers.microsoft.com/msteams/forum) or the [Office Admins forum](https://answers.microsoft.com).
 
 > [!NOTE]
 > Most of the tasks in this article and video can be accomplished with a subscription to Microsoft 365 Business Basic (formerly Office 365 Business Essentials), but some require a premium subscription. 

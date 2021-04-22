@@ -1,7 +1,7 @@
 ---
 title: Prioritize incidents in Microsoft 365 Defender
 description: Learn how to filter incidents from the incident queue in Microsoft 365 Defender
-keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents
+keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -41,7 +41,7 @@ You get to the incident queue from **Incidents & alerts > Incidents** on the qui
 
 By default, the incident queue in the Microsoft 365 security center displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
-The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for anaylsis.
+The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This helps you make an informed decision regarding the prioritization of incidents for analysis.
 
 For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
@@ -76,44 +76,11 @@ This table lists the filter names that are available.
 | Status | You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved. |
 |||
 
-## Incident response workflow
-
-Here is the typical workflow for responding to incidents:
-
-1. Identify and triage the highest priority incidents for investigation and resolution.
-2. For each high-priority incident, begin an [investigation](investigate-incidents.md):
-
-   a. View the summary of the incident to understand it's scope, what entities are affected, and severity (the **Summary** tab).
-
-   b. Begin looking at the alerts to understand their origin, scope, and severity (the **Alerts** tab).
-
-   c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
-
-   d. See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).
-   
-   e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
-
-As you investigate, you should be concerned with:
-
-- Containment: Reducing any additional impact on your tenant.
-- Eradication: Removing the security threat.
-- Recovery: Restoring your tenant resources to the state they were in before the attack.
-
-After you resolve the incident, take a moment to learn from it to:
-
-- Understand the type of the attack and its impact.
-- Research the attack in the security community for a security attack trend.
-- Recall the workflow you used to resolve the incident and update your standard workflows and plalbooks as needed.
-
-Here's a summary of the basic process.
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="The basic process for investigating incidents":::
-
 ## Next step
 
-After you've determined which incident requires the highest priority, select it and begin your [investigation](investigate-incidents.md).
+After you've determined which incident requires the highest priority, select it and begin your [analysis](investigate-incidents.md).
 
 ## See also
 - [Incidents overview](incidents-overview.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

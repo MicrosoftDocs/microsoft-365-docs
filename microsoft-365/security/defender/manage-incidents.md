@@ -1,7 +1,7 @@
 ---
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
-keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
+keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -56,16 +56,16 @@ You can display this pane from the **Manage incident** link on the:
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
-In cases where, while investigating you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
 ## Edit the incident name
 
-Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
 > [!NOTE]
-> Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.
+> Incidents that existed before the rollout of the automatic incident naming feature will retain their name.
 
 ## Add incident tags
 
@@ -91,10 +91,10 @@ If it was a true alert, you should also specify what type of threat it was with 
 
 ## Add comments
 
-You can add multiple comments to an incident with the **Comment** field. Each comment is added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+You can add multiple comments to an incident with the **Comment** field. Each comment gets added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
 ## Related topics
 
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
