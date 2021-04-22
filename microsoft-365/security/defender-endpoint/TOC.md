@@ -51,7 +51,7 @@
 
 
 ## [Configure and onboard devices]()
-### [Microsoft Defender for Windows 10 and Windows Server]()
+### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 #### [Onboard Windows 10 devices]()
@@ -70,7 +70,7 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-### [Support for other Operating Systems]()
+### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
 #### [Microsoft Defender for Endpoint on macOS]()
@@ -200,6 +200,8 @@
 #### [Device management]()
 ##### [Onboarding devices](onboard-configure.md)
 ##### [Offboarding devices](offboard-machines.md)
+##### [Ensure your devices are configured properly](configure-machines.md)
+##### [Monitor and increase device onboarding](configure-machines-onboarding.md)
 
 #### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
@@ -351,8 +353,7 @@
 
 
 ### [Manage device configuration]()
-#### [Ensure your devices are configured properly](configure-machines.md)
-#### [Monitor and increase device onboarding](configure-machines-onboarding.md)
+
 #### [Increase compliance to the security baseline](configure-machines-security-baseline.md)
 #### [Optimize attack surface reduction rule deployment and detections](configure-machines-asr.md)
 
