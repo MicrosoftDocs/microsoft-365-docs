@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoints
+title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 description: A walk-through about Microsoft Defender for Endpoint
 keywords: removable storage media
 search.product: eADQiWindows 10XVcnh
@@ -18,24 +18,9 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoints
+# Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
-**Microsoft Defender for Endpoint Preview**
-
-Microsoft Defender for Endpoint adds various feature enhancements and capabilities in the Sep 2020 Private Preview.
-
-In this private preview release, we’ll guide you through the following feature enhancements:
-
-- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)
-- [Common Removable Storage Access Control scenarios](#common-removable-storage-access-control-scenarios)
-- [Deploying and managing policy via Group Policy](#deploying-and-managing-policy-via-group-policy)
-- [Deploying and managing policy via Intune OMA-URI](#deploying-and-managing-policy-via-intune-oma-uri)
-- [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri)
-- [View Device Control Printer Protection data in Microsoft Defender for Endpoint portal](#view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal)
-
-## Microsoft Defender for Endpoint Device Control Removable Storage Access Control
-
-Removable storage Access Control includes two parts, namely removable storage group and access control policy over the select group.
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
 
 
 |Privilege |Permission  |
@@ -192,19 +177,25 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 
 ## Deploying and managing policy via Group Policy
 
-The Removable Storage Protection feature allows you to apply policy via Group Policy to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply policy via Group Policy to either user or device, or both.
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
-1. Combine all groups within `<Groups>` `</Groups>` into one xml file.
+1. Combine all groups within `<Groups>` `</Groups>` into one xml file. 
+
+The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)
 
 :::image type="content" source="images/prevent-write-and-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
 
-2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
+2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file. 
+
+If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
+
+The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
 :::image type="content" source="images/usage-of-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
 
@@ -216,11 +207,11 @@ Before you get started with Removable Storage Protection, you must confirm your�
 
 ## Deploying and managing policy via Intune OMA-URI
 
-The Removable Storage Protection feature allows you to apply policy via OMA-URI to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply policy via OMA-URI to either user or device, or both.
 
 ### Licensing
 
-Before you get started with Removable Storage Protection, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E3.
 
 :::image type="content" source="images/microsoft-365-e3.png" alt-text="`The screen on which the Write and Execute access is blocked but approved USBs are allowed":::
 
@@ -258,9 +249,49 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 :::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="The screen displaying XML file for the STRING data type":::
 
-## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
+## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The Microsoft 365 security portal shows printing blocked by the Device Control Printer Protection policy.
+The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control.
+
+//events triggered by RemovableStoragePolicyTriggered 
+
+DeviceEvents 
+
+| where ActionType == "RemovableStoragePolicyTriggered" 
+
+| extend parsed=parse_json(AdditionalFields) 
+
+| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
+
+| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
+
+| extend MediaBusType = tostring(parsed.BusType)  
+
+| extend MediaClassGuid = tostring(parsed.ClassGuid)  
+
+| extend MediaClassName = tostring(parsed.ClassName) 
+
+| extend MediaDeviceId = tostring(parsed.DeviceId) 
+
+| extend MediaInstanceId = tostring(parsed.DeviceInstanceId) 
+
+| extend MediaName = tostring(parsed.MediaName) 
+
+| extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy)  
+
+| extend MediaProductId = tostring(parsed.ProductId)  
+
+| extend MediaVendorId = tostring(parsed.VendorId)  
+
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)  
+
+| extend MediaVolume = tostring(parsed.Volume)  
+
+| project Timestamp , DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume 
+
+| order by Timestamp desc
+
+<include the image blockage-of-removable-storage.png>
 
 
 
