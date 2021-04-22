@@ -35,7 +35,7 @@ Here are the requirements and limitations for enabling cloud-based storage for o
 - Only the Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
 
 > [!NOTE]
-> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## How it works
 
@@ -77,9 +77,9 @@ Here's how to use Content search in the Microsoft 365 compliance center to searc
 
 6. Submit and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
 
-    - [Create a search](content-search.md#create-a-search)
+    - [Create a search](content-search.md)
 
-    - [Preview search results](content-search.md#preview-search-results)
+    - [Preview search results](preview-content-search-results.md)
 
     - [Export search results](export-search-results.md)
 

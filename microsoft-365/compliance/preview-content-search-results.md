@@ -33,8 +33,26 @@ There are two configuration settings for previewing search results. After you ru
 2. **Preview results manually:** This setting displays placeholders in the search results pane, and displays the **Preview results** button that you have to click to display the search results. This is the default setting. It helps enhance search performance by not automatically displaying the search results when you open an existing search. 
     
 There are limits related to how many items are available to be previewed. For more information, see [Limits for Content Search](limits-for-content-search.md). 
+
+
+## File types supported when previewing search results
+
+You can preview supported file types in the preview pane. If a file type isn't supported, you have to download a copy of the file to your local computer (by clicking **Download original file**). For .aspx Web pages, the URL for the page is included though you might not have permissions to access the page. Also note that unindexed items aren't available for previewing.
+
+The following file types are supported and can be previewed in the search results pane.
   
-For a list of supported file types that can be previewed, see [Previewing search results](#previewing-search-results) in the "More information about content search" section. If a file type isn't supported for preview or to download a copy of a document, you can click **Download original file** to download it to your local computer. For .aspx Web pages, the URL for the page is included though you might not have permissions to access the page. 
+- .txt, .html, .mhtml
+
+- .eml
+
+- .doc, .docx, .docm
+
+- .pptm, .pptx
+
+- .pdf
+
+Also, the following file container types are supported. You can view the list of files in the container in the preview pane.
   
-Also note that unindexed items aren't available for previewing.
-  
+- .zip
+
+- .gzip
