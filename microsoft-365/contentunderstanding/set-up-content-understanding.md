@@ -86,7 +86,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
-    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the AI Builder for Project Cortex app in this environment before you can create form processing models.
+    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the *AI Builder for Project Cortex* app in this environment before you can create form processing models.
 
     Click **Next**.
 
@@ -131,3 +131,5 @@ To assign licenses:
 [Overview of the form processing model](/ai-builder/form-processing-model-overview)
 
 [Step-by-Step: How to Build a Document Understanding Model (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
