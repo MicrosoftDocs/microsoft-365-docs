@@ -68,6 +68,18 @@ Currently, Microsoft 365 Defender is *not* available to:
 - US Department of Defense
 - All US government institutions with commercial licenses
 
+
+No current plans for the following data center locations:
+
+- Brazil (BRA01)
+- Germany (DEU01)
+- Norway (NOR01)
+- Singapore (SGP01)
+- South Africa (ZAF01)
+- Switzerland (CHE01)
+- UAE (ARE01)
+
+
 ## Related topics
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
