@@ -290,7 +290,7 @@ To offboard the Windows server, you can use either of the following methods:
     (MMA Agent .exe x64 [New SHA-2 compliant version](https://go.microsoft.com/fwlink/?LinkId=828603))
 
 **Step-2: Create a file name DeployMMA.cmd (using notepad)**
-Add the following lines to the cmd file. Note that you will need your WORKSPACE ID and KEY.
+Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 ```dos
 @echo off 
@@ -336,10 +336,10 @@ Once this is done, you'll need to create a start-up script policy:
 
 :::image type="content" source="images/startupprops.png" alt-text="start up properties":::
 
-The name of the file to run here is c:\windows\MMA\DeployMMA.cmd
-Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMAAgent, while setting the workspace id and key, and the server will be onboarded.
+The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
+Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
 
-You could also use an **immediate task** to run the deployMMA.cmd if you do not want to reboot all the servers.
+You could also use an **immediate task** to run the deployMMA.cmd if you don't want to reboot all the servers.
 This could be done in two phases. First create **the files and the folder in** GPO – Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to an Configuration Manager compliance policy it will check daily to ensure the MMA is present.
