@@ -47,3 +47,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 |Friendly Name     |     Removable storage Access Control    |   Windows      |    A string attached to the device, for example, Generic Flash Disk USB Device     |
 |Vendor Id / Product Id     |  Removable storage Access Control       |   Windows Mac      |     Vendor Id is the 4-digit vendor code that the USB committee assigns to the vendor; Product Id is the 4-digit product code that the vendor assigns to the device; Support wildcard.    |
 |Serial NumberId     |     Removable storage Access Control    |      Windows Mac   |     For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>    |
+
+## Related topic
+
+- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/mde-device-control-removable-storage-access-control)

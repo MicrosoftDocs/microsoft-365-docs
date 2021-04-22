@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 ## Prepare your endpoints
 
-Deploy Removable Storage Protection on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
+Deploy Removable Storage Access Control on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
 
 :::image type="content" source="images/anti-malware.png" alt-text="The screen showing device that has anti-malware client version":::
 
@@ -181,7 +181,7 @@ The Removable Storage Access Control feature enables you to apply policy via Gro
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
@@ -211,7 +211,7 @@ The Removable Storage Access Control feature enables you to apply policy via OMA
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Protection, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
 :::image type="content" source="images/microsoft-365-e3.png" alt-text="`The screen on which the Write and Execute access is blocked but approved USBs are allowed":::
 
@@ -291,7 +291,7 @@ DeviceEvents
 
 | order by Timestamp desc
 
-<include the image blockage-of-removable-storage.png>
+:::image type="content" source="images/blockage-of-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
 
 
 
