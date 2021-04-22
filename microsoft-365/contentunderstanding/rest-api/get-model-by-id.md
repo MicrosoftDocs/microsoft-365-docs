@@ -1,5 +1,5 @@
 ---
-title: GetModel
+title: GetModelById
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ localization_priority: Priority
 description: REST API - GetModel
 ---
 
-# GetModel
+# GetModelById
 
 Associates a site with an existing hub site. You can also use this method to disassociate a site from a hub site (see [example](#examples)).
 
