@@ -1,7 +1,7 @@
 ---
 title: Set up device groups in Jamf Pro
-description: Learn how to set up device groups in Jamf Pro for Microsoft Defender ATP for macOS
-keywords: device, group, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+description: Learn how to set up device groups in Jamf Pro for Microsoft Defender for Endpoint on macOS
+keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Set up Microsoft Defender for Endpoint for macOS device groups in Jamf Pro
+# Set up Microsoft Defender for Endpoint on macOS device groups in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,4 +47,4 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
     ![Image of Jamf Pro3](images/contoso-machine-group.png)
 
 ## Next step
-- [Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro](mac-jamfpro-policies.md)
+- [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)
