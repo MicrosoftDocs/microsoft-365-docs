@@ -44,8 +44,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `NetworkAdapterName` | string | Name of the network adapter |
 | `MacAddress` | string | MAC address of the network adapter |
-| `NetworkAdapterType` | string | Network adapter type. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | Network adapter type. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | string | Operational status of the network adapter. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | string | Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH |
 | `ConnectedNetworks` | string | Networks that the adapter is connected to. Each JSON array contains the network name, category (public, private or domain), a description, and a flag indicating if it's connected publicly to the internet |
 | `DnsAddresses` | string | DNS server addresses in JSON array format |
