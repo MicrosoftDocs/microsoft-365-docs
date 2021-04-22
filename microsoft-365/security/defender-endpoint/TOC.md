@@ -436,7 +436,7 @@
 #### [Configure AIR capabilities](configure-automated-investigations-remediation.md)
 
 ### [Microsoft Threat Experts]()
-### [Microsoft Threat Experts overview](microsoft-threat-experts.md)
+#### [Microsoft Threat Experts overview](microsoft-threat-experts.md)
 #### [Configure and manage Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
 
 
