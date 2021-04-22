@@ -50,7 +50,7 @@
 #### [PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
 
-## [Device connfiguration and onboarding]()
+## [Device configuration and onboarding]()
 ### [Microsoft Defender for Windows 10 and Windows Server]()
 #### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
