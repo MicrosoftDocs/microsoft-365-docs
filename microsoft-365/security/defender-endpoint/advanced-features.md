@@ -119,11 +119,26 @@ For more information, see [Manage indicators](manage-indicators.md).
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Defender for Endpoint data.
 
 ## Tamper protection
-During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
+During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices.
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
-This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+
+
+Depending on the method or management tool you use to enable Tamper protection, there may be a dependency on MAPS (cloud-delivered protection). 
+
+The following table provides details on the methods, tools, and dependencies.
+
+
+
+|     How Tamper Protection is enabled                                         |     Dependency on MAPS (cloud-delivered protection)    |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     No                                                 |
+| Microsoft Endpoint Configuration Manager + Tenant Attach                     |     No                                                 |
+|     Microsoft Defender for Endpoint portal (securitycenter.microsoft.com)    |     Yes                                                |
+|     Microsoft 365 Defender portal (security.microsoft.com)                   |     Yes                                                |
+
+For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
