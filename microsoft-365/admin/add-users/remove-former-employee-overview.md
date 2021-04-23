@@ -26,7 +26,7 @@ search.appverid:
 description: "Follow the steps in this solution to remove a former employee from Microsoft 365 and secure your organization's data."
 ---
 
-# Remove or Delete a former employee
+# Overview: Remove a former employee and secure data
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data, and how to allow other employees to access the data. Each step is explained in detail in the articles in this series.
 
