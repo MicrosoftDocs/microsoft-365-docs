@@ -39,7 +39,7 @@ After you've saved and accessed all the former employee's user data, you can del
 
 When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
   
-### Does your organization use Active Directory?
+## Does your organization use Active Directory?
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
   

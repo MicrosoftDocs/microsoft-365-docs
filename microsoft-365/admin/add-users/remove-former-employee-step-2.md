@@ -38,6 +38,6 @@ Once you've blocked a user from being able to log into your organization you can
 
     To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 
-    OR
+    **OR**
 
 2. Add the former employee's email address to your version of Outlook web app, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).

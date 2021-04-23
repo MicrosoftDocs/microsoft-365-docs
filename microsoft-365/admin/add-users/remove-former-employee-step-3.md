@@ -32,7 +32,7 @@ In this step, you assign the former employee's email address to another employee
 
 ## Convert former employee's mailbox to a shared mailbox
 
-When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar is retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. At a later date, you can convert a shared mailbox back to a user (private) mailbox.
+When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar is retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. You can convert a shared mailbox back to a user (private) mailbox at a later date if you want.
 
 - Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it.
 - If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.

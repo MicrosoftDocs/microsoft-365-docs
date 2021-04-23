@@ -158,8 +158,6 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 ## Related articles
 
-[Remove a former employee from Office 365](remove-former-employee.md)
-
 [Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 
 [Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive)

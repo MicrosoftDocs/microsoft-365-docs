@@ -42,4 +42,4 @@ If your former employee had an organization phone, you can use the Exchange admi
 
 ## Wipe mobile device using Basic Mobility and Security
 
-Follow this topic, [Wipe a mobile device in Basic Mobility and Security](../basic-mobility-security/wipe-mobile-device.md), for steps on how to wipe a device. For more information on Basic Mobility and Security, see [Overview of Basic Mobility and Security for Microsoft 365](../basic-mobility-security/overview.md).
+Follow this topic, [Wipe a mobile device in Basic Mobility and Security](../basic-mobility-security/wipe-mobile-device.md), for steps on how to wipe a device. For more information on Basic Mobility and Security, check out [Overview of Basic Mobility and Security for Microsoft 365](../basic-mobility-security/overview.md).
