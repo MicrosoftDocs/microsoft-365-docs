@@ -193,7 +193,7 @@ To find out more about the differences for organizations in migration and after 
 
 **Applies to:** All customers using Exchange Online<br>
 
-Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historial tenant details are being migrated, which also includes back-end services for Security and Compliance features.
+Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historical tenant details are being migrated, which also includes back-end services for Security and Compliance features.
 
 Customers using Exchange Online capabilities only (Non-Hybrid) do not need to pay attention at this stage.
 
