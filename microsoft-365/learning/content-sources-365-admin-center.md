@@ -79,7 +79,9 @@ The set of available connected learning providers might change at any time. Addi
 
 ### Skillsoft as a content source  
 
-*[placeholder – text ETA 4/21 EOD]*
+For Viva Learning (Preview), users who have Skillsoft enabled and choose to view Skillsoft content will land on a Percipio page that asks them to input your organization's Percipio site name. After users input your organization's site name, they will be directed to page to sign in to your organization's Percipio site. Users will sign in by using their existing credentials and see the content they originally selected. Users should only be asked to input the Percipio site name once, until their browser cache is cleared. To streamline this experience for your users, we recommend including your Percipio site name in internal communications you send about Viva Learning (Preview).
+
+This is intended to be a temporary experience for preview, and we are working with Skillsoft to enable tenant-specific integration for general availability, which will bypass the step that requires users to provide your organization's Percipio site name. 
 
 ### Details on Microsoft substrate  
 
