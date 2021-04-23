@@ -1,5 +1,5 @@
 ---
-title: "Step 7 - Remove and delete the Microsoft 365 license from a former employee"
+title: "Step 6 - Remove and delete the Microsoft 365 license from a former employee"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -26,7 +26,7 @@ search.appverid:
 description: "Follow these steps to remove the Microsoft 365 license from a former employee."
 ---
 
-# Step 7 - Remove and delete the Microsoft 365 license from a former employee
+# Step 6 - Remove and delete the Microsoft 365 license from a former employee
 
 If you don't want to pay for a license after someone leaves your organization, you need to remove their Microsoft 365 license and then delete it from your subscription. You can assign a license to another user if you don't delete it.
   

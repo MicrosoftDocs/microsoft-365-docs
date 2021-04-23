@@ -1,5 +1,5 @@
 ---
-title: "Step 8 - Delete a former employee's user account"
+title: "Step 7 - Delete a former employee's user account"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -26,7 +26,7 @@ search.appverid:
 description: "Follow these steps to delete a former employee's user account."
 ---
 
-# Step 8 - Delete a former employee's user account
+# Step 7 - Delete a former employee's user account
 
 After you've saved and accessed all the former employee's user data, you can delete the former employee's account.
 
