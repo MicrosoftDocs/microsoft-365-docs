@@ -48,7 +48,7 @@ Keep your team engaged and up to date with necessary skills without the need to 
 
 ## Admin roles
 
-Admins set permissions and allow learning content sources for Viva Learning Preview. To set up Viva Learning Preview, you'll need permissions as:
+Admins set permissions and allow learning content sources for Viva Learning (Preview). To set up Viva Learning (Preview), you'll need permissions as:
 
 - Microsoft Teams admin
 - Microsoft 365 global administrator or SharePoint administrator
