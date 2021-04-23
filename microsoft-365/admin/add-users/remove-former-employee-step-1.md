@@ -26,9 +26,9 @@ search.appverid:
 description: "Learn how block a former employee from logging in."
 ---
 
-# Step 1 - Prevent an employee from logging in
+# Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
 
-In this step, force a sign out of the user from Microsoft 365.
+If you need to immediately prevent a user's sign-in access, you should reset their password. In this step, force a sign out of the user from Microsoft 365.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
@@ -43,3 +43,21 @@ Within an hour - or after they leave the current Microsoft 365 page they are on 
 To use PowerShell to sign out a user immediately, see the [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
   
 For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).
+
+## Block a former employee's access to Microsoft 365 services
+
+> [!IMPORTANT]
+ > Blocking an account can take up to 24 hours to take effect. If you need to immediately prevent a user's sign-in access, follow the steps above and reset their password.
+
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+2. Select the name of the employee that you want to block, and under the user's name, select the symbol for **Block this user**.
+3. Select **Block the user from signing in**, and then select **Save**.
+
+## Block a former employee's access to email (Exchange Online)
+
+If you have email as part of your Microsoft 365 subscription, you need to sign in to the Exchange admin center and follow these steps to block your former employee from accessing their email.
+  
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
+3. Double-click the user and go to the **Mailbox features** page. Under **Mobile Devices**, select **Disable Exchange ActiveSync** and **Disable OWA for Devices,** and answer **Yes** to both when prompted.
+4. Under **Email Connectivity**, select **Disable** and answer **Yes** when prompted.
