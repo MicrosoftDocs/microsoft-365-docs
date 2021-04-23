@@ -57,7 +57,7 @@ benefits, read our
 [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS).
 
 For more details on how to get started, visit the Defender for Endpoint on macOS
-[documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).
+[documentation](microsoft-defender-endpoint-mac.md).
 
 ## Microsoft Defender for Endpoint on Linux
 
@@ -73,7 +73,7 @@ the key features and benefits, read our
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint on
 Linux
-[documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux).
+[documentation](microsoft-defender-endpoint-linux.md).
 
 ## Microsoft Defender for Endpoint on Android
 
@@ -89,7 +89,7 @@ information about the key features and benefits, read our
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint on
 Android
-[documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android).
+[documentation](microsoft-defender-endpoint-android.md).
 
 ## Microsoft Defender for Endpoint on iOS
 
@@ -100,7 +100,7 @@ setting custom indicators. For more information about the key features and benef
 read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint 
-on iOS [documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-ios).
+on iOS [documentation](microsoft-defender-endpoint-ios.md).
 
 ## Licensing requirements 
 
