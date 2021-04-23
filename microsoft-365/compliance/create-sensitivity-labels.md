@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "A requirement for all Microsoft Information Protection solutions: Create, configure, and publish sensitivity labels to classify and protect your organization's documents and emails."
+description: "A requirement for all Microsoft Information Protection solutions: Create, configure, and publish sensitivity labels to classify and protect your organization's data."
 ---
 
 # Create and configure sensitivity labels and their policies
@@ -41,9 +41,6 @@ The global admin for your organization has full permissions to create and manage
         - **Solutions** > **Information protection**
         
         If you don't immediately see this option, first select **Show all**. 
-    
-    - Microsoft 365 security center: 
-        - **Classification** > **Sensitivity labels**
     
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
@@ -138,9 +135,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         - **Solutions** > **Information protection**
         
         If you don't immediately see this option, first select **Show all**. 
-    
-    - Microsoft 365 security center: 
-        - **Classification** > **Sensitivity labels**
     
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
