@@ -62,7 +62,7 @@ To remove a knowledge admin for Viva Learning (Preview), follow these steps:
  
 3.	On the **Knowledge Administrator** panel, on the **Assigned Admins** tab, select **Remove**, select the person you want to remove from the role, and then select **Remove**.
 
-     ![Roles page in the Microsoft 365 admin center showing the Assigned admins tab to remove a user.](../media/learning/learning-remove-knowledge-admin-1.png)
+     ![Roles page in the Microsoft 365 admin center showing the Assigned admins panel to remove a user.](../media/learning/learning-remove-knowledge-admin-1.png)
 
 ## Configure settings for the learning content sources
 
