@@ -13,6 +13,8 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
+ms.topic: article
+ms.date: 04/23/2021
 ---
 
 # Microsoft Defender Antivirus on Windows Server
