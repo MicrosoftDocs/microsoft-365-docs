@@ -56,7 +56,7 @@ Admins set permissions and allow learning content sources for Viva Learning Prev
 
 ### Knowledge admin
 
-The knowledge admin is a new Azure Active Directory (Azure AD) role in the Microsoft 365 admin center that can be assigned to anyone in the organization. This role manages the organization’s learning content sources through the Microsoft 365 admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+The knowledge admin is a new Azure Active Directory (Azure AD) role in the Microsoft 365 admin center that can be assigned to anyone in the organization. This role manages the organization’s learning content sources through the Microsoft 365 admin center. For more information, see [Azure AD built-in roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference#knowledge-administrator).
 
 The knowledge admin should be moderately technical and have existing SharePoint administrator credentials. The knowledge admin should be well versed in the education, learning, training, or employee experience part of the organization.
 
