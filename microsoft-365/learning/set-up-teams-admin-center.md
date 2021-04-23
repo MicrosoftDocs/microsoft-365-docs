@@ -22,7 +22,7 @@ description: "Learn how to configure Microsoft Viva Learning (Preview) in the Te
 > [!NOTE]
 > The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
 
-The Teams admin installs Viva Learning (Preview) from the app store, and then applies setup, manage, and permission policies through the Teams admin center.
+The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
 
 ## Manage settings for Viva Learning (Preview)
 
@@ -32,17 +32,19 @@ To manage settings for Viva Learning (Preview), follow these steps:
 
 1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
 
-   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section](../media/learning/learning-app-teams-manage-apps-nav.png)
+   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. On the **Manage apps** page, in the search box, type *learning* to search for Viva Learning(Preview).
+2. On the **Manage apps** page, in the search box, type *learning* to search for Viva Learning (Preview), and then select **Learning**.
 
-   ![Manage apps page in the Teams admin center showing the search box](../media/learning/learning-app-teams-manage-apps-page.png)
+   ![Manage apps page in the Teams admin center showing the search box.](../media/learning/learning-app-teams-manage-apps-page.png)
 
 3. On the **Learning** page:
-   1. Under **Status**, select **Allowed** to turn on the app.
-   2. On the **Settings** tab, in the **App settings** section, go to the Microsoft 365 admin center to configure learning content sources.
 
-   ![Learning page in the Teams admin center showing Status and App settings section](../media/learning/learning-app-teams-learning-page.png)
+   1. Under **Status**, select **Allowed** to turn on Viva Learning (Preview).
+
+   2. On the **Settings** tab, in the **App settings** section, go to the Microsoft 365 admin center to [configure learning content sources](content-sources-365-admin-center.md).
+
+   ![Learning page in the Teams admin center showing Status and App settings section.](../media/learning/learning-app-teams-learning-page.png)
 
 4. After **Manage app** settings, go to **Permissions and Set-up policies** to grant permission to employees who should have access to the app as part of your organization's participation in the preview.
 
@@ -51,7 +53,7 @@ To manage settings for Viva Learning (Preview), follow these steps:
 
 As part of the preview, Viva Learning (Preview) is released in Ring 3.0. If your organization is in Ring 4.0, you won’t see the app in the app store. To test the app, you need to create a custom apps permission policy, set it to **Allow all apps**, and assign it to Ring 3.0 approved users.
 
-   ![TAP-AppsPermission-Plcy page showing Allow all apps selected](../media/learning/learning-app-tap-appspermission-plcy.png)
+   ![TAP-AppsPermission-Plcy page showing Allow all apps selected.](../media/learning/learning-app-tap-appspermission-plcy.png)
 
 ## Next step
 
