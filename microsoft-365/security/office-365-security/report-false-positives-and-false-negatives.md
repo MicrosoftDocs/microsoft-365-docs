@@ -60,7 +60,7 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
    - Deleted if it was reported as phishing.
    
-   ### Report messages that are not junk
+### Report messages that are not junk
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.  
 
