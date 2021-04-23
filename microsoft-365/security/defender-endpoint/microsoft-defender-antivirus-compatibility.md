@@ -30,9 +30,9 @@ ms.date: 04/23/2021
 
 Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) together with your antivirus protection.
 
-- If your organization's client devices (not running Windows Server) are protected by a non-Microsoft antivirus/antimalware solution, and Microsoft Defender for Endpoint is not used, then Microsoft Defender Antivirus automatically goes into disabled mode. 
+- If your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint, then Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are neither detected nor remediated by Microsoft Defender Antivirus. Note that this case does not apply to endpoints running Windows Server.
 
-- If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
+- If your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, and those devices are onboarded to Defender for Endpoint, then Microsoft Defender Antivirus goes into passive mode automatically. In this case, detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus.
 
 - If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, and you have [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then whenever a malicious artifact is detected, Microsoft Defender for Endpoint takes action to block and remediate the artifact.
 
