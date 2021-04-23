@@ -30,6 +30,8 @@ description: "Follow these steps to block a former employee's mobile device acce
 
 If your former employee had an organization phone, you can use the Exchange admin center to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365.
 
+## Wipe mobile device using the Exchange admin center
+
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
 3. Select the user, and under **Mobile Devices**, select **View details**.
@@ -37,3 +39,7 @@ If your former employee had an organization phone, you can use the Exchange admi
 5. Select **Save**.
    > [!TIP]
    > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
+
+## Wipe mobile device using Basic Mobility and Security
+
+If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices using Basic Mobility and Security. Follow this topic, [Wipe a mobile device in Basic Mobility and Security](../basic-mobility-security/wipe-mobile-device.md), for steps on how to wipe a device. For more information on Basic Mobility and Security, see [Overview of Basic Mobility and Security for Microsoft 365](../basic-mobility-security/overview.md).

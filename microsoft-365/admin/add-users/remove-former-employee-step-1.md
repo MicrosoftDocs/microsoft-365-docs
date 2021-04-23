@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how block a former employee from logging in."
+description: "Block a former employee from logging in and block access to Microsoft 365 services."
 ---
 
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
