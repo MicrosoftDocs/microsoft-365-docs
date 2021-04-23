@@ -19,10 +19,36 @@ description: ""
 
 # Plan for data loss prevention (DLP)
 
-Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations when the plan for and implement DLP.
+Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
 
-## Multiple entry points
-  
+## Multiple starting points
+
+Organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
+
+Organizations can start their DLP journey:
+
+- from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
+- knowing what sensitive information they want to prioritize protecting, like health care records
+- without knowing what their sensitive information is, where it is, and who is doing what with it
+- by taking a targeted, quick start approach and going straight to defining policies
+- by taking a longer term, methodical approach
+
+These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
+
+## Common steps
+
+ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS
+
+
+1. prioritize data
+1. categorize data
+1. define access rights (should have been done already)
+1. establish policies
+1. develop controls
+1. train users
+1. monitor data movement
+1. adjust/refine
+
 
 multiple entry points:
 from a platform, like teams
@@ -36,14 +62,7 @@ take very targeted, quick start approach.
 
 can only assume greenfield
 
-1. prioritize data
-1. categorize data
-1. define access rights (should have been done already)
-1. establish policies
-1. develop controls
-1. train users
-1. monitor data movement
-1. adjust/refine
+
 
 Overview of planning process – topic EVERYTHING UNDER THIS IS A GAP
 Identify stakeholders who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
