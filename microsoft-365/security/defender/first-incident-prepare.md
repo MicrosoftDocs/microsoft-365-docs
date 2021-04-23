@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Preparefor incident handling
+# Respond to your first incident-Prepare for incident handling
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ Preparing for incident handling involves setting up sufficient protection of an 
 Microsoft 365 Defender can help address several aspects of incident prevention: 
 
 - Implementing a [Zero Trust](https://docs.microsoft.com/security/zero-trust/) framework
-- Determining a company's security posture by assigning a score with [Microsoft Secure Score](microsoft-secure-score.md)
+- Determining your security posture by assigning a score with [Microsoft Secure Score](microsoft-secure-score.md)
 - Preventing threats through vulnerability assessments in [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Understanding the latest security threats so you can prepare for them
 
@@ -53,9 +53,7 @@ Automation is a crucial part of implementing and maintaining a Zero Trust enviro
 
 Next, organizations can use the [Microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender to determine your current security posture and consider recommendations on how to improve it. The higher the score is, the more security recommendations and improvement actions have been taken by the organization. Secure Score recommendations can be taken across different products and allow organizations to raise their scores even higher. 
 
-<!--
 ADD FIGURE
---> 
  
 ## Step 3. Assess your organization’s vulnerability exposure
 
@@ -63,9 +61,7 @@ Preventing incidents can help streamline security operations efforts to focus on
 
 To check your software patching progress, visit the [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) page in Defender for Endpoint, which you can access from Microsoft 365 Defender through the **More resources** tab.
 
-<!--
 ADD FIGURE
---> 
  
 ## 4. Understand emerging threats
 

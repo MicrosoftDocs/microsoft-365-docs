@@ -62,9 +62,7 @@ Continuing the example, remediation activity for this incident can be to:
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image.
 
-<!--
-  ADD FIGURE
---> 
+ADD FIGURE
  
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
 
@@ -79,9 +77,7 @@ In addition, automated remediation can be created using playbooks. Currently, Mi
 
 Playbooks use Power Automate to create custom robotic process automation flows to automate certain activities once specific criteria have been triggered. Organizations can create playbooks either from existing templates or from scratch:
  
-<!--
-  ADD FIGURE
---> 
+ADD FIGURE
  
 Playbooks can be created during Post-Incident Review to create remediation actions from incidents to enable faster remediation actions. Since the NIST Incident Response Framework is cyclical in nature, Post-Incident Review activity can turn into Preparation phases, enhancing the organization’s response capabilities.
 

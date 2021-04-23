@@ -63,11 +63,9 @@ The following is just one approach to triage:
 
 1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident list by some these columns by selecting the column name. You can also filter the incident lists according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
   
-  <!--
-  ADD FIGURE
-  --> 
+   ADD FIGURE
 
-   One example of how you might perform triage for this set of incidents is to prioritize incidents that affected more users and devices. In this example, you might prioritize incident ID 6769 because it affected the largest number of entities: 7 devices, 6 users, and 2 mailboxes. Furthermore, the incident appears to contain alerts from Microsoft Defender for Identity which indicate an identity-based alert and possible credential theft.
+    One example of how you might perform triage for this set of incidents is to prioritize incidents that affected more users and devices. In this example, you might prioritize incident ID 6769 because it affected the largest number of entities: 7 devices, 6 users, and 2 mailboxes. Furthermore, the incident appears to contain alerts from Microsoft Defender for Identity which indicate an identity-based alert and possible credential theft.
 
   <!--
     ADD FIGURE
@@ -75,27 +73,21 @@ The following is just one approach to triage:
  
 2. Select the circle next to the incident name to review the details. A side pane will appear on the right side, which contains additional information that can assist your triage further. 
 
-  For example, by looking at which [MITRE ATT&CK](https://attack.mitre.org/) tactics the attacker used based on the incident’s categories, you might prioritize this incident because the attacker used stolen credentials, established command and control, performed lateral movement, and exfiltrated some data. This suggests the attacker has already gone deep into the network and possibly stolen confidential information.
+   For example, by looking at which [MITRE ATT&CK](https://attack.mitre.org/) tactics the attacker used based on the incident’s categories, you might prioritize this incident because the attacker used stolen credentials, established command and control, performed lateral movement, and exfiltrated some data. This suggests the attacker has already gone deep into the network and possibly stolen confidential information.
 
-  Additionally, if your organization has implemented the Zero Trust framework, you would consider credential access as an important security violation worth prioritizing.
+   Additionally, if your organization has implemented the Zero Trust framework, you would consider credential access as an important security violation worth prioritizing.
  
-  <!--
     ADD FIGURE
-  --> 
 
-  Scrolling down the side pane, you will see the specific impacted entities such as users, devices, and mailboxes. You can check the exposure level of each device and the owners of affected mailboxes.
+   Scrolling down the side pane, you will see the specific impacted entities such as users, devices, and mailboxes. You can check the exposure level of each device and the owners of affected mailboxes.
 
-  <!--
     ADD FIGURE
-  --> 
  
 3. Further down the side pane, you can find the associated alerts. Microsoft 365 Defender has already performed the correlation of said alerts into a single incident, saving you time and resources better spent remediating the attack. Alerts are suspicious and therefore possibly malicious system events that suggest the presence of an attacker in a network. 
 
-  In this example, 87 individual alerts were determined to be part of one security incident. You can view all the alerts to get a quick view of how the attack played out.
+   In this example, 87 individual alerts were determined to be part of one security incident. You can view all the alerts to get a quick view of how the attack played out.
 
-  <!--
-    ADD FIGURE
-  --> 
+   ADD FIGURE
  
 ## Analyze and investigate incidents
 
@@ -105,43 +97,40 @@ There are multiple ways to read and analyze data using Microsoft 365 Defender bu
 
 1. Once triage priority has been confirmed, you can begin an in-depth analysis by selecting the incident name. This page brings up the Incident Summary where data is displayed in tabs to assist with the analysis. Under the Alerts tab the type of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source. 
 
-[INSERT SUMMARY TAB VIEW]
+   [INSERT SUMMARY TAB VIEW]
 
-  <!--
-    ADD FIGURE
-  --> 
-
+   ADD FIGURE
  
-  For a quick guide about which domain each detection source covers, review the [Detect](#detect) section of this article.
+   For a quick guide about which domain each detection source covers, review the [Detect](#detect) section of this article.
 
 2.	From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Cloud App Security as the detection source will take you to its corresponding alert page.
  
-  <!--
-    ADD FIGURE
-  --> 
+  
+  ADD FIGURE
+   
 
-  <!--
-    ADD FIGURE
-  --> 
+  
+  ADD FIGURE
+  
 
   
 3.	To investigate our example further, scroll to the bottom of the page to view the **Users affected**. Select Annette Hill’s user page to see the activity and context surrounding the malware detection. 
 
-  <!--
-    ADD FIGURE
-  --> 
+  
+  ADD FIGURE
+  
 
 4.	On the user page we can see a chronological list of events starting with a *Risky Sign-in from a TOR network IP Address* alert. While the suspiciousness of an activity depends on the nature of how the organization conducts its business, in most cases the use of The Onion Router (TOR), a network that allows users to browse the web anonymously, in an enterprise environment might be considered highly unlikely and unnecessary for regular online operations.
 
-  <!--
-    ADD FIGURE
-  --> 
+  
+  ADD FIGURE
+  
  
 5.	Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Here we can see Annette is an Administrator of Office 365. This means Annette has elevated privileges and the source incident might have led to access to confidential information. 
 
-  <!--
-    ADD FIGURE
-  --> 
+  
+  ADD FIGURE
+  
  
 6.	You can continue selecting other alerts to get a complete picture of the attack.
 
