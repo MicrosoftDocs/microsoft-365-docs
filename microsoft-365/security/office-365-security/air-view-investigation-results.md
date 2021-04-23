@@ -1,6 +1,6 @@
 ---
 title: View the results of an automated investigation in Microsoft 365
-keywords: AIR, autoIR, ATP, automated, investigation,  remediation, actions
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation,  remediation, actions
 f1.keywords: 
 - NOCSH
 ms.author: deniseb
