@@ -140,6 +140,7 @@
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
+##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -174,6 +175,9 @@
 ##### [Enable controlled folder access](enable-controlled-folders.md)
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
+#### [Device Control]()
+##### [Device Control reports](device-control-report.md)
+##### [Control USB devices](control-usb-devices-using-intune.md)
 
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
@@ -222,6 +226,7 @@
 
 ### [Microsoft Defender for Endpoint on iOS]()
 #### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+#### [What's New](ios-whatsnew.md)
 
 #### [Deploy]()
 ##### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
@@ -238,6 +243,8 @@
 ##### [Manual deployment](linux-install-manually.md)
 ##### [Puppet based deployment](linux-install-with-puppet.md)
 ##### [Ansible based deployment](linux-install-with-ansible.md)
+##### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [Update](linux-updates.md)
 
@@ -451,6 +458,7 @@
 ####### [List alerts](get-alerts.md)
 ####### [Create alert](create-alert-by-reference.md)
 ####### [Update Alert](update-alert.md)
+####### [Batch update alert](batch-update-alerts.md)
 ####### [Get alert information by ID](get-alert-info-by-id.md)
 ####### [Get alert related domains information](get-alert-related-domain-info.md)
 ####### [Get alert related file information](get-alert-related-files-info.md)
@@ -469,6 +477,7 @@
 ####### [Get security recommendations](get-security-recommendations.md)
 ####### [Add or Remove machine tags](add-or-remove-machine-tags.md)
 ####### [Find machines by IP](find-machines-by-ip.md)
+####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 
@@ -494,6 +503,7 @@
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](ti-indicator.md)
+####### [Import Indicators](import-ti-indicators.md)
 ####### [Submit Indicator](post-ti-indicator.md)
 ####### [List Indicators](get-ti-indicators-collection.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)

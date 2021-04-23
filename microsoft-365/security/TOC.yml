@@ -29,6 +29,7 @@
         - name: Recommended MCAS policies for SaaS apps
           href: ./office-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 Defender
+      href: ./defender/index.yml
       items: 
         - name: Overview
           items: 
@@ -128,15 +129,15 @@
                   href: defender/incidents-overview.md
                 - name: Prioritize incidents
                   href: defender/incident-queue.md
-                - name: Investigate incidents
+                - name: Manage incidents
+                  href: defender/manage-incidents.md
+                - name: Incident response
                   items: 
-                    - name: Investigate incidents
+                    - name: Analyze incidents
                       href: defender/investigate-incidents.md
-                    - name: Manage incidents
-                      href: defender/manage-incidents.md
-                    - name: Investigate alerts
+                    - name: Analyze alerts
                       href: defender/investigate-alerts.md    
-                    - name: Investigate users in Microsoft 365 security center 
+                    - name: Analyze users 
                       href: defender/investigate-users.md                  
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
