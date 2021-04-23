@@ -36,7 +36,19 @@ You must be a Microsoft 365 global administrator to perform these tasks.
 > [!TIP]
 > The knowledge admin should be moderately technical and have existing SharePoint admin credentials, preferably someone who is well-versed in the education, learning, training, or employee experience part of the organization.
 
-To assign a knowledge admin for Viva Learning (Preview), follow these steps:
+### Add a knowledge admin
+
+To add a knowledge admin for Viva Learning (Preview), follow these steps:
+
+1.	In the left navigation of the Microsoft 365 admin center, go to **Roles**.
+
+2.	On the **Roles** page, on the **Azure AD** tab, select **Knowledge admin**.
+ 
+3.	On the **Knowledge admin** page, in the **Assigned Admins** section, select **Add**, and then add the person you choose for the role.
+
+### Remove a knowledge admin
+
+To remove a knowledge admin for Viva Learning (Preview), follow these steps:
 
 1.	In the left navigation of the Microsoft 365 admin center, go to **Roles**.
 
