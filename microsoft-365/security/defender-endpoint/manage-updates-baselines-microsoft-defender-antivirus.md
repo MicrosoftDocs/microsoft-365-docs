@@ -142,7 +142,7 @@ After a new package version is released, support for the previous two versions i
 &ensp;Released: **December 03, 2020**  
 &ensp;Platform: **4.18.2011.6**  
 &ensp;Engine: **1.1.17700.4**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -158,7 +158,7 @@ No known issues
 &ensp;Released: **October 29, 2020**  
 &ensp;Platform: **4.18.2010.7**  
 &ensp;Engine: **1.1.17600.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
