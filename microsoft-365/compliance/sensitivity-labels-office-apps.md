@@ -102,8 +102,7 @@ Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-
 The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
 - Microsoft 365 compliance center
-- Microsoft 365 security center
-- Office 365 Security & Compliance Center
+- Office 365 Security & Compliance Center (older admin portal)
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -273,7 +272,7 @@ Office apps apply content marking and encryption with a sensitivity label differ
 
 Solutions that apply sensitivity labels to files outside Office apps do so by applying labeling metadata to the file. In this scenario, content marking from the label's configuration isn't inserted into the file but encryption is applied. 
 
-When those files are opened in an Office desktop app, the content markings are automatically applied by the Azure Information Protection unified labeling client. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps.
+When those files are opened in an Office desktop app, the content markings are automatically applied by the Azure Information Protection unified labeling client when the file is first saved. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps.
 
 Scenarios that include applying a sensitivity label outside Office apps include:
 

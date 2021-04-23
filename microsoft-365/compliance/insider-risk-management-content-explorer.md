@@ -24,8 +24,6 @@ In some cases, data associated with a case may not be available as a snapshot fo
 
 If the content includes Information Rights Management permissions, these permissions are maintained for the copied content and users assigned the *Insider Risk Management Investigators* role will need these permissions and rights if they need to open and view the files. Each file and message are automatically assigned a unique file ID in the insider risk management case for management purposes. Documents associated with device indicator activities are not included in Content explorer.
 
-![Insider risk management Content explorer](../media/insider-risk-content-explorer.png)
-
 >[!Note]
 >Content explorer includes activities related to Microsoft Office files. Site-level activities, such as when a SharePoint site is deleted or if site permissions are changed, aren't included in Content explorer.
 
