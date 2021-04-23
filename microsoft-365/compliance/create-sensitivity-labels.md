@@ -23,7 +23,7 @@ description: "A requirement for all Microsoft Information Protection solutions: 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the older portal, Microsoft 365 Security & Compliance Center.
+All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the older portal, Office 365 Security & Compliance Center.
 
 First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
 
