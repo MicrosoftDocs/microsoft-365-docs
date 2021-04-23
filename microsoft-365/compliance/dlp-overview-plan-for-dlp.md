@@ -19,6 +19,11 @@ description: ""
 
 # Plan for data loss prevention (DLP)
 
+Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations when the plan for and implement DLP.
+
+## Multiple entry points
+  
+
 multiple entry points:
 from a platform, like teams
 without knowing data at all and straight to define policies
