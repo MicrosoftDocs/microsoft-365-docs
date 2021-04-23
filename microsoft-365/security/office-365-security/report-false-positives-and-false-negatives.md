@@ -48,11 +48,11 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 For messages in the Inbox or any other email folder except Junk Email, use the following method to report spam and phishing messages:
 
-1. Click the **More actions** ellipses on the top right corner of the selected message, click **Report message** from the drop down, and then select **Junk** or **Phishing**.
+1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
   
   ![Report Message - More actions](../../media/more-actions-ellipses.png)
 
-  ![Report Message - Feature and options](../../media/report-message-feature.png)
+  ![Report Message - Menu and options](../../media/report-message-feature.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
 
@@ -62,11 +62,11 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
    
    ### Report messages that are not junk
 
-1. Click the **More actions** ellipses on the top right corner of the selected message, click **Report message** from the drop down, and then select **Not Junk**.  
+1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.  
 
   ![Report Message - More actions](../../media/more-actions-ellipses.png)
 
-  ![Report Message - Feature and options](../../media/report-message-feature.png)
+  ![Report Message - Menu and options](../../media/report-message-feature.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
@@ -135,7 +135,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
@@ -181,7 +181,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 ## Review or edit settings for the Report Message add-in
 
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
    ![Services and Add-Ins page in the new Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -218,7 +218,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
@@ -256,7 +256,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 ## Review or edit settings for the Report Phishing add-in
 
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
 2. Find and select the **Report Phishing** add-in.
 
