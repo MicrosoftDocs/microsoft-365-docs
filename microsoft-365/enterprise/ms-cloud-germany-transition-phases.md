@@ -193,7 +193,7 @@ To find out more about the differences for organizations in migration and after 
 
 **Applies to:** All customers using Exchange Online<br>
 
-Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historial tenant details are being migrated, which also includes back-end services for Security and Compliance features.
+Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historical tenant details are being migrated, which also includes back-end services for Security and Compliance features.
 
 Customers using Exchange Online capabilities only (Non-Hybrid) do not need to pay attention at this stage.
 
@@ -224,6 +224,7 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Contacts and meetings will be migrated to Microsoft Teams.
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
+- The web browser version of Microsoft Teams will not work after phase 9 has been completed.
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
