@@ -2,8 +2,8 @@
 title: Report false positives and false negatives in Outlook
 f1.keywords:
 - NOCSH
-ms.author: v-ratulac
-author: v-ratulac
+ms.author: RatulaC
+author: RatulaC
 manager: dansimp
 audience: Admin
 ms.topic: how-to
