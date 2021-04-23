@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Linux
-description: List of major changes for Microsoft Defender ATP on Linux.
-keywords: microsoft, defender, atp, linux, whatsnew, release
+description: List of major changes for Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
