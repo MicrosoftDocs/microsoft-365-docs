@@ -102,8 +102,7 @@ Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-
 The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
 - Microsoft 365 compliance center
-- Microsoft 365 security center
-- Office 365 Security & Compliance Center
+- Office 365 Security & Compliance Center (older admin portal)
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
