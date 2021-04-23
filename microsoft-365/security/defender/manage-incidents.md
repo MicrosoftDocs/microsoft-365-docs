@@ -1,7 +1,7 @@
 ---
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
-keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
+keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -56,7 +56,7 @@ You can display this pane from the **Manage incident** link on the:
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
-In cases where, while investigating you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
 ## Edit the incident name
 

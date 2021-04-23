@@ -1,7 +1,7 @@
 ---
-title: Get incident notifications in Microsoft 365 Defender
+title: Get incident notifications by email in Microsoft 365 Defender
 description: Learn how to create rules to get email notifications for incidents in Microsoft 365 Defender
-keywords: incident, email, email notfications, configure, users, mailbox, email, incidents
+keywords: incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ You can set up Microsoft 365 Defender to notify your staff with an email about n
 - Device group.
 - Only on the first update per incident.
 
-The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your investigation right away. For more information, see [Analyze incidents](investigate-incidents.md).
+The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your analysis right away. For more information, see [Analyze incidents](investigate-incidents.md).
 
 You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added. 
 

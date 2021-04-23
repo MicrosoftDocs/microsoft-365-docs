@@ -1,7 +1,7 @@
 ---
 title: DeviceInfo table in the advanced hunting schema
 description: Learn about OS, computer name, and other machine information in the DeviceInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, DeviceInfo, device, machine, OS, platform, users
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, DeviceInfo, device, machine, OS, platform, users
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

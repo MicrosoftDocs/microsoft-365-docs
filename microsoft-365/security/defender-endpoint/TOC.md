@@ -243,6 +243,8 @@
 ##### [Manual deployment](linux-install-manually.md)
 ##### [Puppet based deployment](linux-install-with-puppet.md)
 ##### [Ansible based deployment](linux-install-with-ansible.md)
+##### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [Update](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ##### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ##### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-##### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Troubleshoot]()
 ##### [Troubleshoot installation issues](linux-support-install.md)
@@ -457,6 +458,7 @@
 ####### [List alerts](get-alerts.md)
 ####### [Create alert](create-alert-by-reference.md)
 ####### [Update Alert](update-alert.md)
+####### [Batch update alert](batch-update-alerts.md)
 ####### [Get alert information by ID](get-alert-info-by-id.md)
 ####### [Get alert related domains information](get-alert-related-domain-info.md)
 ####### [Get alert related file information](get-alert-related-files-info.md)
@@ -475,6 +477,7 @@
 ####### [Get security recommendations](get-security-recommendations.md)
 ####### [Add or Remove machine tags](add-or-remove-machine-tags.md)
 ####### [Find machines by IP](find-machines-by-ip.md)
+####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 
@@ -500,6 +503,7 @@
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](ti-indicator.md)
+####### [Import Indicators](import-ti-indicators.md)
 ####### [Submit Indicator](post-ti-indicator.md)
 ####### [List Indicators](get-ti-indicators-collection.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)

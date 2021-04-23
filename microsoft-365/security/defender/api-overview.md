@@ -43,6 +43,11 @@ Use the Microsoft 365 Defender APIs to automate workflows based on the shared in
 
 Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.
 
+
+> [!NOTE]
+> The transition to the unified portal should not affect the PowerBi dashboards based on Microsoft Defender for Endpoint APIs. You can continue to work with the existing APIs regardless of the interactive portal transition.
+
+
 ## Learn more
 
 | **Understand how to access the APIs** |
