@@ -117,7 +117,7 @@
           items:
            - name: Overview
              href: add-users/remove-former-employee-overview.md
-           - name: Step 1. Prevent an employee from logging in
+           - name: Step 1. Prevent an employee from logging in and block access to Microsoft 365 services
              href: add-users/remove-former-employee-step-1.md
            - name: Step 2. Save the contents of a former employee's mailbox
              href: add-users/remove-former-employee-step-2.md
