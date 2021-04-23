@@ -54,6 +54,8 @@ If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your
 
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
+If you plan to use a custom Power Platform environment, you must [allocate credits to that environment](/power-platform/admin/capacity-add-on).
+
 Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity) to check your credits and usage.
 
 ## To set up SharePoint Syntex
@@ -86,7 +88,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
-    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the *AI Builder for Project Cortex* app in this environment before you can create form processing models.
+    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. You must install the *AI Builder for Project Cortex* app in this environment and allocate AI Builder credits to it before you can create form processing models.
 
     Click **Next**.
 
