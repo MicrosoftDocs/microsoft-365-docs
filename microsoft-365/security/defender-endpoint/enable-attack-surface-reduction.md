@@ -45,7 +45,7 @@ Each ASR rule contains one of four settings:
 - **Not configured**: Disable the ASR rule
 - **Block**: Enable the ASR rule
 - **Audit**: Evaluate how the ASR rule would impact your organization if enabled
-- **Warn**: Enable the ASR rule but alow the end user to bypass the block
+- **Warn**: Enable the ASR rule but allow the end user to bypass the block
 
 > [!IMPORTANT]
 > Currently, warn mode is not supported for three ASR rules when you configure ASR rules in Microsoft Endpoint Manager (MEM). To learn more, see [Cases where warn mode is not supported](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
