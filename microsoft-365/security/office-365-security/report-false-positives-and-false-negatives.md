@@ -2,8 +2,8 @@
 title: Report false positives and false negatives in Outlook
 f1.keywords:
 - NOCSH
-ms.author: RatulaC
-author: RatulaC
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using hybrid modern authentication, you can submit false positives (good email marked as spam), false negatives (bad email allowed), and phishing messages to Exchange Online Protection (EOP).
 
-## What do you need to know before you begin?
+## Things to remember before you use the Report Message feature
 
 - For the best user submission experience, use the Report Message and the Report Phishing add-ins.
 
