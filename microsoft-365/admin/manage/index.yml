@@ -76,7 +76,7 @@ landingContent:
           - text: Microsoft Teams admin documentation
             url: https://docs.microsoft.com/microsoftteams/
           - text: Use Outlook and Teams together 
-            url: ../business-video/collab-outlook-teams.md
+            url: ../../business-video/collab-outlook-teams.md
       - linkListType: learn
         links:
           - text: Microsoft Teams training

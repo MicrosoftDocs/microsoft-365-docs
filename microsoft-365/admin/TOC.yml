@@ -403,11 +403,11 @@
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: business-video/team-with-guests.md
+          href: ../business-video/team-with-guests.md
         - name: Schedule a Teams meeting with guest users
-          href: business-video/schedule-guest-meeting.md
+          href: ../business-video/schedule-guest-meeting.md
         - name: Join a Teams meeting with guest users
-          href: business-video/join-guest-meeting.md
+          href: ../business-video/join-guest-meeting.md
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support

@@ -67,7 +67,7 @@ Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 36
 ## Step 4: Help your employee get started
 
 
-Share with them the [Employee quick setup for Microsoft 365](../business-video/employee-quick-setup.md) to sign in, install software, set up email, and more. 
+Share with them the [Employee quick setup for Microsoft 365](../../business-video/employee-quick-setup.md) to sign in, install software, set up email, and more. 
   
 And here's a quick reference to help get them started:
   
