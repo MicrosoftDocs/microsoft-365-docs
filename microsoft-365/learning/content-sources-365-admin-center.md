@@ -50,7 +50,7 @@ To add a knowledge admin for Viva Learning (Preview), follow these steps:
 
 3.	On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
 
-     ![Roles page in the Microsoft 365 admin center showing the Add admins panel to add user.](../media/learning/learning-add-knowledge-admin-2.png)
+     ![Roles page in the Microsoft 365 admin center showing the Add admins panel to add a user.](../media/learning/learning-add-knowledge-admin-2.png)
 
 ### Remove a knowledge admin
 
