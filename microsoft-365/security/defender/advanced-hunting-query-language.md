@@ -1,7 +1,7 @@
 ---
 title: Learn the advanced hunting query language in Microsoft 365 Defender
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -29,6 +29,7 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
 
@@ -175,6 +176,9 @@ The **Get started** section provides a few simple queries using commonly used op
 ## Access query language documentation
 
 For more information on Kusto query language and supported operators, see [Kusto query language documentation](/azure/kusto/query/).
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

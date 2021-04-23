@@ -1,7 +1,7 @@
 ---
 title: Common Microsoft Defender for Endpoint API errors
 description: List of common Microsoft Defender for Endpoint API errors with descriptions.
-keywords: apis, mdatp api, errors, troubleshooting
+keywords: APIs, Microsoft Defender for Endpoint API, errors, troubleshooting
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
