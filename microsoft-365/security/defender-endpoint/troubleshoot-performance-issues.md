@@ -127,7 +127,6 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
  
     >[!TIP] 
     >Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
-    
 
 10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
