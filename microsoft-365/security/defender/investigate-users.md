@@ -36,6 +36,13 @@ To get a quick summary of a user account for the incident, select the check mark
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Example of the user account summary pane for an incident in the Microsoft 365 security center":::
 
+> [!NOTE]
+> The User page shows Azure Active Directory (AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
+
+In this fly-out page, you can review user threat information, including any current incidents, active alerts, and risk level as well as user exposure, accounts, devices, and more.
+
+In addition, you can take action directly in the Microsoft 365 security center to address a compromised user, confirming the user is compromised or requiring them to sign in again.
+
 From here, you can select **Go to user page** to see the details of a user account. Here's an example.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Example of the user account page for an incident in the Microsoft 365 security center":::
