@@ -1,6 +1,6 @@
 ---
-title: Respond to your first incident-Post-incident
-description: Respond to your first incident-Post-incident.
+title: Respond to your first incident-Perform post-incident activities
+description: Respond to your first incident-Perform post-incident activities.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Post-incident
+# Respond to your first incident-Perform post-incident activities
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -31,10 +31,27 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 
+NIST recommends that once all steps have been taken to recover from the attack, organizations must learn and improve from the incident. Assessing the different aspects of incident-handling become important in preparing for the next incident.
+
+Microsoft 365 Defender can assist in performing post-incident activities by providing an organization with alerts that align with MITRE ATT&CK Framework. All Defender solutions label attacks in accordance with an ATT&CK tactic or technique. 
+
+By mapping alerts to this industry framework, organizations can:
+
+- Conduct an analysis on gaps in security coverage.
+- Determine adversary and campaign attribution.
+- Perform trend analysis.
+- Identify skill gaps in attack method awareness. 
+
+## Next step
+
+See these additonal investigation paths:
+
+- [Phishing email](first-incident-path-phishing.md)
+- [Identity-based attack](first-incident-path-identity.md)
 
 
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

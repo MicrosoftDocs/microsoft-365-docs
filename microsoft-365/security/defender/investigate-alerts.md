@@ -135,5 +135,5 @@ Classifying alerts and specifying their determination helps tune Microsoft 365 D
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

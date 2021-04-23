@@ -97,4 +97,4 @@ You can add multiple comments to an incident with the **Comment** field. Each co
 
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Analyze incidents](investigate-incidents.md)
