@@ -230,6 +230,12 @@ The following PowerShell cmdlet uninstalls Microsoft Defender Antivirus on Windo
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
+To disable Microsoft Defender Antivirus on Windows Server 2016, use the following PowerShell cmdlet:
+
+```PowerShell
+Set-MpPreference -DisableRealtimeMonitoring $true
+```
+
 ## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
