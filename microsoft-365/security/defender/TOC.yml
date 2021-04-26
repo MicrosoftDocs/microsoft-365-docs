@@ -233,9 +233,9 @@
        - name: Microsoft Threat Experts
          items:
               - name: Microsoft Threat Experts overview
-                href: mtp/microsoft-threat-experts.md
+                href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
-                href: mtp/configure-microsoft-threat-experts.md
+                href: ../mtp/configure-microsoft-threat-experts.md
     - name: How-to guides
       items: 
        - name: Create a trial lab or pilot environment
