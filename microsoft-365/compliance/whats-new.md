@@ -90,7 +90,7 @@ The following topics were updated or added to support these new features:​​�
 
 ### Records management
 
-- **File plan import length restrictions**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
+- **File plan improvements**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
 - **Delete retention labels for records**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
 
 ### Sensitive information types
