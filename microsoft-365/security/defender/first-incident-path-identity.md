@@ -36,24 +36,25 @@ Microsoft Defender for Identity can help detect malicious attempts to compromise
 
 Microsoft 365 Defender allows analysts to filter alerts by detection source on the alerts tab of the incidents page. In the following example, the detection source is filtered to Defender for Identity. 
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Example of filtering the detection source for Defender for Identity":::
 
 Selecting the **Suspected overpass-the-hash attack** alert brings you to a page in Microsoft Cloud App Security that displays more detailed information. Analysts can always find out more about an alert or attack by selecting **Learn more about this alert type** to read a [description of the attack](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) as well as remediation suggestions.
  
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Example of a Suspected overpass-the-hash attack alert"::: 
 
 ## Investigating the same attack in Microsoft Defender for Endpoint
 
 Alternatively, an analyst can use Defender for Endpoint to learn more about the activity on an endpoint. Select the incident from the incidents list, then select the Alerts tab. From here, you can identify the detection source as well. A detection source labeled as EDR stands for Endpoint Detection and Response, which is Defender for Endpoint. From here select an alert detected by EDR.
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Example of an Endpoint Detection and Response in Defender for Endpoint"::: 
 
 The alert page displays various pertinent information such as the impacted device name, username, status of auto-investigation, and the alert details. The alert story depicts a visual representation of the process tree. The process tree is a hierarchical representation of parent and child processes related to the alert.
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-tree.png" alt-text="Example of an alert process tree in Defender for Endpoint"::: 
 
 Each process can be expanded to view additional details. Details that an analyst can see are the actual commands that were entered as part of a malicious script, outbound connection IP addresses, and other useful information.
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-process-details.png" alt-text="Example of process details in Defender for Endpoint":::
  
 By selecting **See in timeline**, an analyst can drill down even further to determine the exact time of the compromise. 
 
@@ -61,13 +62,13 @@ Microsoft Defender for Endpoint can detect many malicious files and scripts. How
 
 To do this an analyst would start at the time of the alert detection (in red) and scroll down backwards in time to determine when the original activity that led to the malicious activity actually started. 
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Example of starting at the time of the alert detection"::: 
 
 It is important to understand and distinguish common activity such as Windows Update connections, Windows Trusted Software activation traffic, other common connections to Microsoft sites, third-party Internet activity, Microsoft Endpoint Configuration Manager activity, and other benign activity from suspicious activity. One way to accomplish this is by using timeline filters. There are many filters that can highlight specific activity while filtering out anything that the analyst does not want to view. 
 
 In the image below, the analyst filtered to view only network and process events. This allows the analyst to see the network connections and processes surrounding the event where Notepad established a connection with an IP address, which we also saw in the process tree. 
 
-ADD FIGURE
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Example of how Notepad was used to make a malicious outbound connection"::: 
 
 In this particular event, Notepad was used to make a malicious outbound connection. However, often attackers will simply use iexplorer.exe to establish connections to download a malicious payload because ordinarily iexplorer.exe processes are considered regular web browser activity.
 
