@@ -28,39 +28,14 @@ Organizations choose to implement DLP to comply with various governmental or ind
 Organizations can start their DLP journey:
 
 - from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
-- knowing what sensitive information they want to prioritize protecting, like health care records
-- without knowing what their sensitive information is, where it is, and who is doing what with it
-- by taking a targeted, quick start approach and going straight to defining policies
-- by taking a longer term, methodical approach
+- knowing what sensitive information they want to prioritize protecting, like health care records and going straight to defining policies
+- without knowing what their sensitive information is, where it is, and who is doing what with it so they have to start with discovery and categorization in a more methodical approach
+- without knowing what their sensitive information is, or where it is, or who is doing what with it, but the will move straight to defining policies and use those outcomes as a starting place and refine their policies from there.
+- knowing that they need to implement the full M365 Information Protection Stack and its ok to take a longer term, methodical approach
 
 These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
 
-## Common steps
 
-<!--ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS-->
-
-
-1. prioritize data
-1. categorize data
-1. define access rights (should have been done already)
-1. establish policies
-1. develop controls
-1. train users
-1. monitor data movement
-1. adjust/refine
-
-
-multiple entry points:
-from a platform, like teams
-without knowing data at all and straight to define policies
-with knowing what their most sensitive data is and define policies
-without knowing data at all and start with discovery and categorization
-
-take waterfall approach
-
-take very targeted, quick start approach.
-
-can only assume greenfield
 
 
 
@@ -90,7 +65,71 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 ### Plan for training of end users
 
+## Questions that impact policy design that you need to get answers to
+
+1. what sensitive data/items do you have?
+1. where are they (location)?
+1. what business processes are the involved in?
+    1. what are your points of exposure?
+    1. What locations do they flow through in their lifetime?
+1. What is your tolerance for leakage?
+1. do you want to protect your sensitive items at rest, in motion, in use?
+
+
+## Mapping data state to DLP location
+
+maybe put this into policy design
+
+### Data at rest
+
+Data at rest is blah blah blah. These DLP locations cover data at rest
+
+- On-premises scanner
+- Windows 10 devices
+
+### Data in use
+
+Data in use is blah blah blah. These DLP location cover data in use
+
+### Data in motion
+
+Data in motion is blah, blah, blah. These DLP locations cover data in motion
+
+Data state	DLP location to include
+Data at rest	On-premises scanner for file shares and SharePoint, Windows 10 devices, ODB
+Data in motion	Exchange, Teams Chat and Channel, MCAS
+Data in use	Office apps, Windows 10 devices
+
+
+
+## Common steps for deploying DLP
+
+<!--ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS-->
+
+### Prioritize data
+ 
+### Categorize data
+
+### Establish policies
+
+### Develop controls
+
+### Train users
+
+### Monitor data movement
+
+### Tune 
+Adjust/refine
+
 ## Approaches to deployment    REALLY BIG GAP
+
+
+
+|Customer biz needs description  | approach  |
+|---------|---------|
+|**Customer ABC** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a top tier CSS contract| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve biz process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|        |
+|**Customer DEF** doesn’t know what they have or where it is, little to no resource depth. Customer uses mostly Teams, ODB and Exchange     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply labels accordingly </br>- Refine policies, train users       |
+|**Customer GHI** is a small startup and wants to protect its intellectual property, must move quickly, willing to dedicate some resources, no deep pockets </br>- Sensitive items are all in M365 ODB/SharePoint </br>- Adoption of  ODB and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Block uploads to non ODB cloud storage      |
 
 
 
