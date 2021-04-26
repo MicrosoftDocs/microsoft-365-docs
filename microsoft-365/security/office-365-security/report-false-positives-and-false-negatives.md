@@ -28,17 +28,17 @@ ms.prod: m365-security
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using hybrid modern authentication, you can submit false positives (good email marked as spam), false negatives (bad email allowed), and phishing messages to Exchange Online Protection (EOP).
+In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises mailboxes using hybrid modern authentication, you can submit false positives (good email marked as spam) and false negatives (bad email and phish allowed) to Exchange Online Protection (EOP).
 
 ## Things to remember before you use the Report Message feature
 
-- For the best user submission experience, use the Report Message and the Report Phishing add-ins.
+- For the best user submission experience, use the Report Message add-in or the Report Phishing add-in.
 
-- Note that this Report Message feature works for Outlook in all platforms—on the web, iOS, Android, and Desktop.
+- Note that this add-in works for Outlook in all platforms—on the web, iOS, Android, and Desktop.
 
 - If you're an admin in an organization with Exchange Online mailboxes, use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
+- You can configure to send messages directly to Microsoft, a mailbox you specify, or both. For more information, see [User submissions policies](user-submission.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -52,7 +52,7 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
   
   ![Report Message - More actions](../../media/more-actions-ellipses.png)
 
-  ![Report Message - Menu and options](../../media/report-message-feature.png)
+  ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
 
@@ -66,7 +66,7 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
   ![Report Message - More actions](../../media/more-actions-ellipses.png)
 
-  ![Report Message - Menu and options](../../media/report-message-feature.png)
+  ![Report Message - Not junk](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
@@ -97,8 +97,6 @@ f you're a global administrator or an Exchange Online administrator, and Exchang
   - Outlook app for iOS and Android
 
 - Both add-ins are not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
-
-- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
 - Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in is not available or not working as expected, try a different browser.
 
