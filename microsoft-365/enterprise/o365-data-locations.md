@@ -808,7 +808,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Workplace Analytics | United States |
 </p></details>
 
-## Bosnia
+## Bosnia and Herzegovina
 <details><summary>Click to expand</summary><p>
 
 | Service | Location |
