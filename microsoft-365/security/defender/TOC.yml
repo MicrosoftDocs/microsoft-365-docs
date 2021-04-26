@@ -1,0 +1,316 @@
+- name: Microsoft 365 Defender
+  href: index.yml
+  expanded: true
+  items: 
+    - name: Overview
+      items:
+      - name: What is Microsoft 365 Defender?
+        href: defender/microsoft-365-defender.md
+      - name: Microsoft 365 security center
+        href: defender/overview-security-center.md  
+      - name: What's new in Microsoft 365 Defender
+        href: defender/whats-new.md
+      - name: Defender for Endpoint in the Microsoft 365 security center
+        href: defender/microsoft-365-security-center-mde.md
+      - name: Defender for Office 365 in the Microsoft 365 security center
+        href: defender/microsoft-365-security-center-mdo.md  
+      - name: Redirecting Defender for Endpoint to Microsoft 365 security center
+        href: defender/microsoft-365-security-mde-redirection.md 
+      - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+        href: defender/microsoft-365-security-mdo-redirection.md   
+      - name: Preview features
+        href: defender/preview.md
+      - name: Troubleshoot issues
+        href: ./defender/troubleshoot.md
+      - name: Industry tests
+        href: ./defender/top-scoring-industry-tests.md
+    - name: Plan
+      items: 
+        - name: Prerequisites
+          href: defender/prerequisites.md
+        - name: Data security and privacy
+          href: defender/data-privacy.md
+        - name: Microsoft security portals
+          href: defender/portals.md
+    - name: Evaluate capabilities
+      items: 
+        - name: Create a trial lab
+          items:
+            - name: Trial lab overview
+              href: defender/m365d-evaluation.md
+            - name: Prepare
+              href: defender/prepare-m365d-eval.md
+            - name: Setup
+              href: defender/setup-m365deval.md
+            - name: Configure Microsoft 365 Defender pillars and onboard
+              href: defender/config-m365d-eval.md
+            - name: Generate a test alert
+              href: defender/generate-test-alert.md                       
+        - name: Run your pilot project in production
+          items: 
+            - name: Pilot overview
+              href: defender/m365d-pilot.md
+            - name: Plan
+              href: defender/m365d-pilot-plan.md
+            - name: Prepare
+              href: defender/prepare-m365d-eval.md
+            - name: Simulate attack
+              href: defender/m365d-pilot-simulate.md
+            - name: Close and summarize
+              href: defender/m365d-pilot-close.md                           
+    - name: Get started
+      items:
+        - name: Overview
+          href: defender/get-started.md
+        - name: Turn on Microsoft 365 Defender
+          href: defender/m365d-enable.md
+        - name: Deploy supported services
+          href: defender/deploy-supported-services.md
+        - name: Turning on Microsoft 365 Defender FAQs
+          href: defender/m365d-enable-faq.md              
+    - name: Protect against threats
+      items: 
+      - name: Microsoft Secure Score
+        items: 
+          - name: Secure Score overview
+            href: defender/microsoft-secure-score.md
+          - name: Assess your security posture
+            href: defender/microsoft-secure-score-improvement-actions.md
+          - name: Track your score history and meet goals
+            href: defender/microsoft-secure-score-history-metrics-trends.md
+          - name: What's coming
+            href: defender/microsoft-secure-score-whats-coming.md
+          - name: What's new
+            href: defender/microsoft-secure-score-whats-new.md
+    - name: Investigate and respond to threats
+      items: 
+       - name: Incidents
+         items: 
+              - name: Overview
+                href: defender/incidents-overview.md
+              - name: Prioritize incidents
+                href: defender/incident-queue.md
+              - name: Manage incidents
+                href: defender/manage-incidents.md
+              - name: Incident response
+                items: 
+                 - name: Analyze incidents
+                   href: defender/investigate-incidents.md
+                 - name: Analyze alerts
+                   href: defender/investigate-alerts.md    
+                 - name: Analyze users 
+                   href: defender/investigate-users.md                  
+              - name: Get email notifications
+                href: defender/get-incident-notifications.md
+       - name: Automated investigation and response
+         items: 
+              - name: Overview of automated investigation and response
+                href: defender/m365d-autoir.md
+              - name: Configure automated investigation and response capabilities
+                href: defender/m365d-configure-auto-investigation-response.md
+              - name: Remediation actions
+                href: defender/m365d-remediation-actions.md
+              - name: Visit the Action center
+                href: defender/m365d-action-center.md
+              - name: Approve or reject pending remediation actions
+                href: defender/m365d-autoir-actions.md
+              - name: View details and results of automated investigations
+                href: defender/m365d-autoir-results.md
+              - name: Report false positives/negatives
+                href: defender/m365d-autoir-report-false-positives-negatives.md
+       - name: Advanced hunting
+         items: 
+             - name: Advanced hunting overview
+               href: defender/advanced-hunting-overview.md
+             - name: Learn, train, & get examples
+               items: 
+                 - name: Learn the query language
+                   href: defender/advanced-hunting-query-language.md
+                 - name: Get expert training
+                   href: defender/advanced-hunting-expert-training.md
+                 - name: Use shared queries
+                   href: defender/advanced-hunting-shared-queries.md
+                 - name: Hunt across devices, emails, apps, and identities
+                   href: defender/advanced-hunting-query-emails-devices.md
+                 - name: Hunt for ransomware
+                   href: defender/advanced-hunting-find-ransomware.md
+                 - name: Transition from Defender for Endpoint 
+                   href: defender/advanced-hunting-migrate-from-mde.md
+             - name: Work with query results
+               href: defender/advanced-hunting-query-results.md
+             - name: Take action on query results
+               href: defender/advanced-hunting-take-action.md
+             - name: Go hunt
+               href: defender/advanced-hunting-go-hunt.md
+             - name: Optimize & handle errors
+               items: 
+                - name: Apply query best practices
+                  href: defender/advanced-hunting-best-practices.md
+                - name: Handle errors
+                  href: defender/advanced-hunting-errors.md
+                - name: Quotas and usage parameters
+                  href: defender/advanced-hunting-limits.md
+                - name: Extend data coverage
+                  href: defender/advanced-hunting-extend-data.md
+                - name: Data schema
+                  items: 
+                    - name: Understand the schema
+                      href: defender/advanced-hunting-schema-tables.md
+                    - name: Schema naming changes
+                      href: defender/advanced-hunting-schema-changes.md
+                    - name: AADSignInEventsBeta
+                      href: defender/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: defender/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: AlertEvidence
+                      href: defender/advanced-hunting-alertevidence-table.md
+                    - name: AlertInfo
+                      href: defender/advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: defender/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: defender/advanced-hunting-cloudappevents-table.md
+                    - name: DeviceEvents
+                      href: defender/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: defender/advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: defender/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: defender/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: defender/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: defender/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: defender/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: defender/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: defender/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: defender/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceTvmSecureConfigurationAssessment
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                    - name: DeviceTvmSecureConfigurationAssessmentKB
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                    - name: DeviceTvmSoftwareInventory
+                      href: defender/advanced-hunting-devicetvmsoftwareinventory-table.md
+                    - name: DeviceTvmSoftwareVulnerabilities
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
+                    - name: DeviceTvmSoftwareVulnerabilitiesKB
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                    - name: EmailAttachmentInfo
+                      href: defender/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: defender/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: defender/advanced-hunting-emailpostdeliveryevents-table.md
+                    - name: EmailUrlInfo
+                      href: defender/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: defender/advanced-hunting-identitydirectoryevents-table.md
+                    - name: IdentityInfo
+                      href: defender/advanced-hunting-identityinfo-table.md
+                    - name: IdentityLogonEvents
+                      href: defender/advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: defender/advanced-hunting-identityqueryevents-table.md
+                - name: Functions
+                  items: 
+                    - name: AssignedIPAddresses()
+                      href: defender/advanced-hunting-assignedipaddresses-function.md                    
+                    - name: DeviceFromIP()
+                      href: defender/advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: defender/advanced-hunting-fileprofile-function.md
+                - name: Custom detections
+                  items: 
+                    - name: Custom detections overview
+                      href: defender/custom-detections-overview.md
+                    - name: Create & manage detection rules
+                      href: defender/custom-detection-rules.md
+       - name: Microsoft Threat Experts
+         items:
+              - name: Microsoft Threat Experts overview
+                href: mtp/microsoft-threat-experts.md
+              - name: Configure and manage Microsoft Threat Experts capabilities
+                href: mtp/configure-microsoft-threat-experts.md
+    - name: How-to guides
+      items: 
+       - name: Create a trial lab or pilot environment
+         href: defender/m365d-evaluation.md
+       - name: Run pilot playbook
+         href: defender/m365d-pilot.md
+       - name: Turn on FAQ
+         href: defender/m365d-enable-faq.md
+
+
+    - name: Reference
+      items: 
+        - name: Permissions & settings
+          items: 
+            - name: Manage access
+              href: defender/m365d-permissions.md
+            - name: Custom roles in role-based access 
+              href: defender/custom-roles.md
+            - name: Set time zone
+              href: defender/m365d-time-zone.md
+            - name: View device profiles
+              href: defender/device-profile.md
+            - name: Provide feedback
+              href: defender/feedback.md
+            - name: Provide managed service provider (MSSP) access
+              href: defender/mssp-access.md
+            - name: Create ServiceNow tickets and tasks
+              items: 
+               - name: ServiceNow integration overview
+                 href: ./defender/tickets.md
+            - name: Microsoft 365 Defender APIs (Preview)
+              items: 
+                - name: Overview of Microsoft 365 Defender APIs (Preview)
+                  href: defender/api-overview.md
+                - name: Get started with Microsoft 365 Defender APIs (Preview)
+                  items: 
+                    - name: Microsoft 365 Defender API license and terms of use
+                      href: defender/api-terms.md
+                    - name: Access Microsoft 365 Defender APIs
+                      href: defender/api-access.md
+                    - name: Hello World example
+                      href: defender/api-hello-world.md
+                    - name: Get access with application context
+                      href: defender/api-create-app-web.md
+                    - name: Get access with user context
+                      href: defender/api-create-app-user-context.md
+                    - name: Get partner application access
+                      href: defender/api-partner-access.md
+                    - name: Other API resources
+                      href: defender/api-articles.md
+                - name: Microsoft 365 Defender APIs & schema (Preview)
+                  items: 
+                    - name: Supported Microsoft 365 Defender APIs
+                      href: defender/api-supported.md
+                    - name: Common REST API error codes
+                      href: defender/api-error-codes.md
+                    - name: Advanced Hunting API
+                      href: defender/api-advanced-hunting.md
+                    - name: Incident APIs
+                      items: 
+                        - name: Incident methods and properties
+                          href: defender/api-incident.md
+                        - name: List incidents
+                          href: defender/api-list-incidents.md
+                        - name: Update incident
+                          href: defender/api-update-incidents.md
+    - name: Microsoft Defender for Office 365
+      href: ./office-365-security/index.yml
+    - name: Microsoft Defender for Endpoint
+      href: ./defender-endpoint/index.yml
+    - name: Microsoft Defender for Identity
+      href: https://docs.microsoft.com/defender-for-identity
+    - name: Microsoft 365 for Enterprise
+      href: ../enterprise/index.yml
+    - name: Microsoft 365 for Business
+      href: ./index.yml
+    - name: Microsoft 365 Compliance
+      href: ../compliance/index.yml
