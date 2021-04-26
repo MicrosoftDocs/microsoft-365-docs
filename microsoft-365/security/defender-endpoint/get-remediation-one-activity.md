@@ -82,7 +82,7 @@ vendorId | String | Related vendor name | google
 **Request** example
 
 ```http
-GET** https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
+GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
 **Response** example
