@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
