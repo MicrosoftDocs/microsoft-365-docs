@@ -31,7 +31,7 @@ description: "Follow the steps in this solution to remove a former employee from
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data, and how to allow other employees to access the data.
 
 > [!IMPORTANT]
-> Although we've numbered the steps in this solution, you don't have to complete the solution using the exact order, we recommend doing the steps this way.
+> Although we've numbered the steps in this solution and you don't have to complete the solution using the exact order, we do recommend doing the steps this way.
 
 ## Before you begin
 
