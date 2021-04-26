@@ -35,7 +35,7 @@ The following information lists the updates made to the Microsoft Defender for E
 
 ### 23.04.2021
 
-- Added new API: [Remediation methods and properties](get-remediation-methods-properties.md).
+- Added new API: [Remediation activities methods and properties](get-remediation-methods-properties.md).
 
 ### 10.02.2021
 

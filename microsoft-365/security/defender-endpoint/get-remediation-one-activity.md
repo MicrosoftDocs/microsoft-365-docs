@@ -126,7 +126,7 @@ GET** https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-
 
 ## See also
 
-- [Remediation methods and properties](get-remediation-methods-properties.md)
+- [Remediation activities methods and properties](get-remediation-methods-properties.md)
 
 - [Get all remediation activities](get-remediation-all-activities.md)
 

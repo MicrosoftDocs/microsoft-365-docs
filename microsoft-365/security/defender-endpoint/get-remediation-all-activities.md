@@ -130,7 +130,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 ## See also
 
-- [Remediation methods and properties](get-remediation-methods-properties.md)
+- [Remediation activities methods and properties](get-remediation-methods-properties.md)
 
 - [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
 

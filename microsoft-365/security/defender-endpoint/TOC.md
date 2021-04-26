@@ -531,7 +531,7 @@
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
 ###### [Remediation]()
-####### [Remediation methods and properties](get-remediation-methods-properties.md)
+####### [Remediation activities methods and properties](get-remediation-methods-properties.md)
 ####### [Get all remediation activities](get-remediation-all-activities.md)
 ####### [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
 ####### [Get one remediation activity by Id](get-remediation-one-activity.md)
