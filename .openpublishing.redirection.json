@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/contact-support-for-business-products.md",
+      "redirect_url": "/microsoft-365/business-video/get-help-support",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/services-in-china/view-your-bill-or-get-a-fapiao.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
       "redirect_document_id": false
