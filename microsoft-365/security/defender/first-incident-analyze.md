@@ -67,7 +67,7 @@ The following is just one approach to triage:
 
     One example of how you might perform triage for this set of incidents is to prioritize incidents that affected more users and devices. In this example, you might prioritize incident ID 6769 because it affected the largest number of entities: 7 devices, 6 users, and 2 mailboxes. Furthermore, the incident appears to contain alerts from Microsoft Defender for Identity which indicate an identity-based alert and possible credential theft.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-XXX.png" alt-text="Example of a high-impact incident":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Example of a high-impact incident":::
  
 2. Select the circle next to the incident name to review the details. A side pane will appear on the right side, which contains additional information that can assist your triage further. 
  
@@ -85,7 +85,7 @@ The following is just one approach to triage:
 
    In this example, 87 individual alerts were determined to be part of one security incident. You can view all the alerts to get a quick view of how the attack played out.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-flyout-alerts.png" alt-text="Example of alerts in an incident side pane"::: 
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="Example of alerts in an incident side pane"::: 
  
 ## Analyze and investigate incidents
 
