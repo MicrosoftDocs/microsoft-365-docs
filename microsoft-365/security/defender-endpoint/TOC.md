@@ -532,9 +532,9 @@
 
 ###### [Remediation]()
 ####### [Remediation methods and properties](get-remediation-methods-properties.md)
-####### [Get all remediation tasks](get-remediation-all-tasks.md)
-####### [Get exposed devices remediation task](get-remediation-exposed-devices-task.md)
-####### [Get one remediation task by Id](get-remediation-one-task.md)
+####### [Get all remediation activities](get-remediation-all-activities.md)
+####### [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
+####### [Get one remediation activity by Id](get-remediation-one-activity.md)
 
 ###### [Score]()
 ####### [Score methods and properties](score.md)

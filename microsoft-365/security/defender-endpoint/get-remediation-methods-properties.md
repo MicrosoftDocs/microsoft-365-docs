@@ -40,9 +40,9 @@ The API response contains [Threat & vulnerability management](next-gen-threa
 
 **Method** | **Data type** | **Description**
 :---|:---|:---
-[Get all remediation tasks](get-remediation-all-tasks.md) | Investigation collection | Returns information about all remediation activities.
-[Get one remediation task by Id](get-remediation-one-task.md) | Investigation entity | Returns information for the specified remediation activity.
-[Get exposed devices remediation task](get-remediation-exposed-devices-task.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
+[Get all remediation activities](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
+[Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
+[Get one remediation activity by Id](get-remediation-one-activity.md) | Investigation entity | Returns information for the specified remediation activity.
 
 Learn more about [remediation activities](tvm-remediation.md).
 
@@ -81,11 +81,11 @@ vendorId | String | Related vendor name
 
 ## See also
 
-- [Get all remediation tasks](get-remediation-all-tasks.md)
+- [Get all remediation activities](get-remediation-all-activities.md)
 
-- [Get exposed devices remediation task](get-remediation-exposed-devices-task.md)
+- [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
 
-- [Get one remediation task by Id](get-remediation-one-task.md)
+- [Get one remediation activity by Id](get-remediation-one-activity.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
