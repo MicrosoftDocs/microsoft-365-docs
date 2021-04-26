@@ -97,13 +97,6 @@ The following topics were updated or added to support these new features:​​�
 - **Length restrictions**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
 - **Retention labels**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
 
-### Retention Policies and retention labels
-
-- **[Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention)**. Information added to explain a Teams message that a message was removed by a retention policy. This link and the system message in Teams provides new documentation, [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
-- **[Learn about retention for SharePoint and OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)**. Clarifies the retention inheritance behavior when you apply a retention label to a supported list item that has a document attachment, and also that items in the Preservation Hold library are always retained for a minimum of 30 days.
-- **[Use file plan to manage retention labels](https://docs.microsoft.com/microsoft-365/compliance/file-plan-manager)**. A new release of file plan removes or improves the previous length restrictions for import.
-- **[Create retention labels and apply them in apps](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels)**. New section for deleting retention labels, that also appears in "Automatically apply a retention label to retain or delete content". This new section includes information about a new release rolling out in preview that supports deleting labels that mark items as records.
-
 ### Sensitive information types
 
 Content was added or updated in the following topics:
@@ -180,13 +173,6 @@ Content was added or updated in the following topics:
     - Microsoft Cloud Germany
     - Azure and Microsoft 365 operated by 21Vianet in China)
 - [Configure IRM to use an on-premises AD RMS server](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Support for this service in an Exchange hybrid environment has been deprecated.
-
-### Retention policies and retention labels
-
-Content was added or updated in the following topics:
-
-- [Learn about retention for Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
-- [Automatically apply a retention label to retain or delete content](https://docs.microsoft.com/microsoft-365/compliance/apply-retention-labels-automatically)
 
 ### Sensitive Information Types
 
