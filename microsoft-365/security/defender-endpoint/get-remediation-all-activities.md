@@ -40,8 +40,6 @@ Returns information about all remediation activities.
 
 [Learn more about remediation activities](tvm-remediation.md).
 
-## List all remediation activities
-
 **URL:** GET: /api/remediationTasks
 
 **Properties** details
