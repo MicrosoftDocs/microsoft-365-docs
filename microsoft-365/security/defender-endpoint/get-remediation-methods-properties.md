@@ -38,7 +38,7 @@ The API response contains [Threat & vulnerability management](next-gen-threa
 
 ## Methods
 
-**Method** | **Data type** | **Description**
+Method | Data type | Description
 :---|:---|:---
 [List all remediation activities](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
 [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
@@ -48,7 +48,7 @@ Learn more about [remediation activities](tvm-remediation.md).
 
 ## Properties
 
-**Property id** | **Data type** | **Description**
+Property id | Data type | Description
 :---|:---|:---
 category | String | Category of the remediation activity (Software/Security configuration)
 completerEmail | String | If the remediation activity was manually completed by someone, this column contains their email

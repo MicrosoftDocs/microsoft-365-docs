@@ -52,7 +52,7 @@ Learn more about the individual supported entities where you can run API calls t
 
 ## In this section
 
-**Topic** | **Description**
+Topic | Description
 :---|:---
 [Advanced Hunting](run-advanced-query-api.md) | Run queries from API.
 [Alert methods and properties](alerts.md) | Run API calls such as \- get alerts, create alert, update alert and more.

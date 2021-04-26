@@ -44,7 +44,7 @@ Returns information about all remediation activities.
 
 **Properties** details
 
-**Property (id)** | **Data type** | **Description** | **Example of a returned value**
+Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 category | String | Category of the remediation activity (Software/Security configuration) | Software
 completerEmail | String | If the remediation activity was manually completed by someone, this column contains their email | null
@@ -79,7 +79,7 @@ vendorId | String | Related vendor name | google
 
 **Request** example
 
-``` HTTP
+```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 

@@ -46,7 +46,7 @@ Returns information about exposed devices for the specified remediation task.
 
 **Properties** details
 
-**Property (id)** | **Data type** | **Description** | **Example**
+Property (id) | Data type | Description | Example
 :---|:---|:---|:---
 id | String | Device ID | w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName | String | Device name | PC-SRV2012R2Foo.UserNameVldNet.local
@@ -57,7 +57,7 @@ rbacGroupName | String | Name of the device group this device is associated with
 
 **Request** example
 
-``` HTTP
+```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 

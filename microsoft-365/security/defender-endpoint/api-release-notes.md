@@ -28,8 +28,10 @@ The following information lists the updates made to the Microsoft Defender for E
 > [!TIP]
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
->`https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29`
->
+> ```http
+> https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
+> ```
+
 
 ## Release notes - newest to oldest
 
