@@ -135,7 +135,7 @@ The following steps will guide you through onboarding VDI devices and will highl
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
-2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016). 
+2. Follow the [server onboarding process](configure-server-endpoints.md). 
 
 
 
