@@ -20,7 +20,10 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following tasks:
+- auditing the read, write or execute access to removable storage with or without exclusion
+- allowing the read, write or execute access to removable storage with or without exclusion 
+- preventing the read, write or execute access to removable storage with or without exclusion
 
 
 |Privilege |Permission  |
@@ -71,8 +74,9 @@ For each device property, see **Device Properties** section above for more detai
 
 1. Description: When there are multiple device properties being used in the DescriptorIdList, MatchType defines the relationship.
 1. Options: 
-    - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship, for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will check to see whether the USB meet both values.
-    - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship, for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceId** or **InstanceId** value.
+    - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will check to see whether the USB meets both values.
+
+    - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceId** or **InstanceId** value.
 
 Following are the access control policy properties:
 
@@ -84,14 +88,16 @@ Following are the access control policy properties:
 **Property name: IncludedIdList**
 
 1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
-1. Options: The Group Id/GUID has to be used here, for example:
+1. Options: The Group ID/GUID has to be used here.
+
+The following example shows the usage of GroupID:
 
 `<IncludedIdList> <GroupId>{EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`
 
 **Property name: ExcludedIdList**
 
 1. Description: The group(s) that the policy will not be applied to.
-1. Options: The Group Id/GUID has to be used here.
+1. Options: The Group ID/GUID has to be used here.
 
 **Property name: Entry Id**
 
@@ -109,7 +115,7 @@ Following are the access control policy properties:
     - AuditAllowed: Defines notification and event when access is allowed
     - AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.
 
-When there are conflict types (for example, one **Allow** and other **Deny**) for same media, the system will apply the first one in the policy.
+When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.
 
 **Property name: Options**
 
@@ -148,22 +154,26 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
 1. Create groups
-    1. Group 1: Any removable storage and CD/DVD, for example, Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Group 1: Any removable storage and CD/DVD. 
+
+An example of a removable storage and CD/DVD is Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
-    2. Group 2: Approved USBs based on device properties, for example, Instance Id – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file. 
-    
+    2. Group 2: Approved USBs based on device properties. An example for this use case is:
+    Instance Id – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+
 > [!NOTE]
 > You have to replace `&` with `&amp;` in the value.
 
 2. Create policy
-    1. Policy 1: Block Write and Execute Access but allow approved USBs, for example, PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
-     
-    2. Policy 2: Audit Write and Execute access to allowed USBs, for example, **PolicyRule ‘36ae1037-a639-4cff-946b-b36c53089a4c**’ in the sample [Scenario 1 Audit Write and Execute access to aproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    
+    2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ### Scenario 2: Audit Write and Execute access to all but block specific unapproved USBs
 
 1. Create groups
-    1. Group 1: Any removable storage and CD/DVD, for example, Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Group 1: Any removable storage and CD/DVD. An example for this use case is:
+    Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Group 2: Unapproved USBs based on device properties, for example, Vendor Id / Product Id, Friendly Name – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file. 
     
@@ -171,9 +181,9 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 > You have to replace `&` with `&amp;` in the value.
 
 2. Create policy
-    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs, for example, PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** in the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** in the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
-    2. Policy 2: Audit Write and Execute access to others, for example, PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ## Deploying and managing policy via Group Policy
 
@@ -201,7 +211,7 @@ The following image illustrates the usage of SID property, and an example of [Sc
 
 3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: ‘Define device control policy groups’ and ‘Define device control policy rules’**.
 
-    - The target machine must be able to access the network share to have the policy, but once the policy is read, the network share connection is no longer required, even after machine reboot.
+    - The target machine must be able to access the network share to have the policy. However, once the policy is read, the network share connection is no longer required, even after machine reboot.
 
 :::image type="content" source="images/device-control.png" alt-text="The Device Control screen":::
 
@@ -213,11 +223,11 @@ The Removable Storage Access Control feature enables you to apply policy via OMA
 
 Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
-:::image type="content" source="images/microsoft-365-e3.png" alt-text="`The screen on which the Write and Execute access is blocked but approved USBs are allowed":::
+:::image type="content" source="images/microsoft-365-e3.png" alt-text="`Write and Execute access blocked but approved USBs allowed":::
 
 ### Permission
 
-For policy deployment in Intune, the account must have permissions to create, edit, update or delete device configuration profiles. You can create custom roles or use any of the built-in roles with these permissions.
+For policy deployment in Intune, the account must have permissions to create, edit, update, or delete device configuration profiles. You can create custom roles or use any of the built-in roles with these permissions.
 
 - Policy and profile Manager role
 - Custom role with Create/Edit/Update/Read/Delete/View Reports permissions turned on for Device Configuration profiles
@@ -231,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
     - OMA-URI:
     /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
-    For example, for the **any removable storage and CD/DVD** group in the sample, the link must be:
+    For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
     ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - Data Type: String (XML file)
@@ -243,11 +253,12 @@ For policy deployment in Intune, the account must have permissions to create, ed
     - OMA-URI:
       /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
-      For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
+      For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be: 
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData.
 
     - Data Type: String (XML file)
 
-:::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="The screen displaying XML file for the STRING data type":::
+:::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
