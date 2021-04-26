@@ -51,6 +51,6 @@ The safety tip -- a color-coded message -- will warn you about potentially harmf
 
 ## Working with safety tips
 
-Safety tips are always enabled for Outlook on the web, even though not every message will receive one. Admins can turn safety tips off for other email clients such as Outlook. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+Admins can turn safety tips on or off in anti-spam policies. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 If you disagree with how EOP categorized a message (that is, the message is not spam or it should have been marked as spam), you can submit the messages to Microsoft for analysis to help make your experience better. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). You can also click on the Feedback link in the safety tip to submit comments directly to Microsoft to help us improve.
