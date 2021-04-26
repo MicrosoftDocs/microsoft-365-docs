@@ -39,9 +39,9 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
 
-## Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016
+## Windows Server 2008 R2 SP1
 
-You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows Server 2016 to Defender for Endpoint by using any of the following options:
+You can onboard Windows Server 2008 R2 SP1 by using any of the following options:
 
 - **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
 - **Option 2**: [Onboard through Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
@@ -72,7 +72,7 @@ In general, you'll need to take the following steps:
 
 Perform the following steps to fulfill the onboarding requirements:
 
-For Windows Server 2008 R2 SP1 or Windows Server 2012 R2, ensure that you install the following hotfix:
+For Windows Server 2008 R2 SP1, ensure that you install the following hotfix:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
@@ -84,7 +84,7 @@ For Windows Server 2008 R2 SP1, ensure that you fulfill the following requiremen
     > [!NOTE]
     > If you are managing your Windows Server 2008 R2 SP1 with SCCM, the SCCM client agent installs .Net Framework 4.5.2. So you don't need to install the .NET framework 4.5 (or later).
 
-For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+For Windows Server 2008 R2 SP1: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 > This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
@@ -138,9 +138,9 @@ You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsof
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
-## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+## Windows Server (SAC) version 1803, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2019 Core edition
 
-You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
+You can onboard Windows Server (SAC) version 1803, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
 
 - [Local script](configure-endpoints-script.md)
 - [Group Policy](configure-endpoints-gp.md)
@@ -154,6 +154,16 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
+
+### Before you begin
+Perform the following steps to fulfill the onboarding requirements:
+
+For Windows Server 2012 R2, ensure that you install the following hotfix:
+
+- [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+- [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+
+
 
 1. Configure Defender for Endpoint onboarding settings on the Windows server using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
