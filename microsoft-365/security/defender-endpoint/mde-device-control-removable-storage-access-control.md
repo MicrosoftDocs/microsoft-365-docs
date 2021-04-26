@@ -154,9 +154,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
 1. Create groups
-    1. Group 1: Any removable storage and CD/DVD. 
-
-An example of a removable storage and CD/DVD is Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Group 1: Any removable storage and CD/DVD. An example of a removable storage and CD/DVD is: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Group 2: Approved USBs based on device properties. An example for this use case is:
     Instance Id – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
