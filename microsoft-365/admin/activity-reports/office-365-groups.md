@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Reports in the admin center - Microsoft 365 groups"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -55,4 +55,5 @@ You can get a view into groups activity by looking at the **Groups**, **Activity
 |10,  <br/> |Select or tap **More Actions** button ![Mobile OWA More Actions](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) next to a column heading to add or remove columns from the report.  <br/> ![Groups report - choose columns](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11,  <br/> |You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||
-   
+
+

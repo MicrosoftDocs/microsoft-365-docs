@@ -30,7 +30,7 @@ At the end of these steps, your domain will stay registered with the host that y
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
-[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for below.
+[Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
 
 ## Step 1: Add a TXT or MX record to verify you own the domain
 
@@ -120,11 +120,11 @@ Make sure that the fields are set to the following values:
 
 Save the record.
 
-Validate your SPF record by using one of these [SPF validation tools](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+Validate your SPF record by using one of these [SPF validation tools](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. To protect against these, once you've set up SPF, you should also set up DKIM and DMARC for Microsoft 365. 
 
-To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) and [Use DMARC to validate email in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### Add SRV records for communications services (Teams, Skype for Business)
 

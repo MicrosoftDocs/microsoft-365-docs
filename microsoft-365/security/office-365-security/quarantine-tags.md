@@ -3,19 +3,21 @@ title: Quarantine tags
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer:
-ms.date:
+ms.reviewer: 
+ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid:
-ms.collection:
-- M365-security-compliance
+search.appverid: 
+  - MET150
+ms.assetid: 
+ms.collection: 
+  - M365-security-compliance
 ROBOTS: NOINDEX
-description: "Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages."
+description: Admins can learn how to use quarantine tags to control what users are able to do to their quarantined messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Quarantine tags
@@ -39,12 +41,12 @@ The available individual permissions and what's included or not included in the 
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Preview** (_PermissionToPreview_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Allow sender** (_PermissionToAllowSender_)|||![Check mark](../../media/checkmark.png)|
+|**Block sender** (_PermissionToBlockSender_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark](../../media/checkmark.png)|
+|**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
 |
 
 If you don't like the default permissions in the preset permission groups, you can use custom permissions when you create or modify custom quarantine tags. For more information about what each permission does, see the [Quarantine tag permission details](#quarantine-tag-permission-details) section later in this article.
@@ -55,11 +57,9 @@ You create and assign quarantine tags in the Security & Compliance Center or in 
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Quarantine tags** page, open <https://protection.office.com/quarantineTags>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- To view, create, modify, or remove quarantine tags, you need to be a member of one of the following role groups:
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- To view, create, modify, or remove quarantine tags, you need to be a member of the **Organization Management** or **Security Administrator** roles in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Step 1: Create quarantine tags in the Security & Compliance Center
 
@@ -151,14 +151,16 @@ For Limited access permissions, use the value 106. For Full access permissions, 
 
 For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
 
-For detailed syntax and parameter information, see [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
+For detailed syntax and parameter information, see [New-QuarantineTag](/powershell/module/exchange/new-quarantinetag).
 
 #### Use the EndUserQuarantinePermissions parameter
 
 To create a quarantine tag using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
 
 A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-<br/>
+
+<p>
+
 B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantineTag** command.
 
 ##### Step A: Store a quarantine permissions object in a variable
@@ -197,7 +199,7 @@ For custom permissions, don't set both the _PermissionToRelease_ and _Permission
 
 You can also modify an existing permissions object variable after you create but before you use it by using the **Set-QuarantinePermissions** cmdlet.
 
-For detailed syntax and parameter information, see [New-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions).
+For detailed syntax and parameter information, see [New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions).
 
 ##### Step B: Use the variable in the New-QuarantineTag command
 
@@ -213,7 +215,7 @@ This example creates a new quarantine tag named LimitedAccess using the `$Limite
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
 ```
 
-For detailed syntax and parameter information, see [New-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag).
+For detailed syntax and parameter information, see [New-QuarantineTag](/powershell/module/exchange/new-quarantinetag).
 
 ## Step 2: Assign a quarantine tag to supported features
 
@@ -226,8 +228,8 @@ In _supported_ protection features that quarantine messages or files (automatica
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing email** (_PhishSpamAction_)</li><li>**High confidence phishing email** (_HighConfidencePhishAction_)</li><li>**Bulk email** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultSpamTag (Full access)</li><li>DefaultHighConfSpamTag (Full access)</li><li>DefaultPhishTag (Full access)</li><li>DefaultHighConfPhishTag (No access)</li><li>DefaultBulkTag (Full access)</li></ul>
 |Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**If email is sent by an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If email is sent by an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**Mailbox intelligence** \> **If email is sent by an impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|No|n/a|
-|[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
-|[Mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
+|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)|No|n/a|
+|[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 |
 
 <sup>\*</sup> Impersonation protection settings are available only in anti-phishing policies in Microsoft Defender for Office 365.
@@ -243,11 +245,11 @@ Full instructions for creating and modifying anti-spam policies are described in
 2. Find and select an existing anti-spam policy to edit, or create a new anti-spam policy.
 
 3. In the policy details flyout, expand the **Spam and bulk actions** section.
-  
+
 4. If you've selected **Quarantine message** for the action of an available spam filtering verdict, the **Apply quarantine policy tag** box is available for you to select the quarantine tag for that verdict.
 
    **Note**: When you create a new policy, a blank quarantine tag value for a spam filtering verdict indicates the default quarantine tag for that verdict is used. When you later edit the policy, the blank values are replaced by the actual default quarantine tag names as described in the previous table.
-  
+
    ![Quarantine tag selections in an anti-spam policy](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. When you're finished, click **Save**.
@@ -268,7 +270,7 @@ If you'd rather use PowerShell to assign quarantine tags in anti-spam policies, 
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
   ```
 
-  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+  For information about the default action values and the recommended action values for Standard and Strict, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 - A spam filtering verdict without a corresponding quarantine tag parameter means the [default quarantine tag](#step-2-assign-a-quarantine-tag-to-supported-features) for that verdict is used.
 
@@ -285,7 +287,7 @@ This example creates a new spam filter policy named Research Department with the
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
 ```
 
-For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
 This example modifies the existing spam filter policy named Human Resources. The action for the spam quarantine verdict is set to Quarantine, and the custom quarantine tag named NoAccess is assigned.
 
@@ -293,7 +295,7 @@ This example modifies the existing spam filter policy named Human Resources. The
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
 ```
 
-For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
 ## Configure global quarantine notification settings in the Security & Compliance Center
 
@@ -305,7 +307,7 @@ The global settings for quarantine tags allow you to customize the end-user spam
 
 3. In the **Quarantine notification settings** flyout that opens, configure some or all of the following settings:
 
-   - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of end-user spam notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) to upload your custom logo.
+   - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of end-user spam notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
      The following screenshot shows a custom logo in an end-user spam notification:
 
@@ -363,7 +365,7 @@ If you'd rather use PowerShell to view quarantine tags, do any of the following 
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
   ```
 
-For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
 ## Remove quarantine tags in the Security & Compliance Center
 
@@ -393,7 +395,7 @@ If you'd rather use PowerShell to remove a custom quarantine tag, replace \<TagN
 Remove-QuarantineTag -Identity "<TagName>"
 ```
 
-For detailed syntax and parameter information, see [Remove-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/remove-quarantinetag).
+For detailed syntax and parameter information, see [Remove-QuarantineTag](/powershell/module/exchange/remove-quarantinetag).
 
 ## Quarantine tag permission details
 
@@ -513,7 +515,7 @@ The **Allow recipients to release a message from quarantine** permission (_Permi
 - **Quarantined message details**:
   - Permission enabled: The **Release message** button is available.
   - Permission disabled: The **Release message** button is not available.
-  
+
 - **End-user spam notifications**:
   - Permission enabled: The **Release** button is available.
   - Permission disabled: The **Release** button is not available.

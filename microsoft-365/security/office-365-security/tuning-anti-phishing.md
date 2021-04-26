@@ -1,26 +1,32 @@
 ---
-title: "Tune anti-phishing protection"
-f1.keywords:
-- NOCSH
+title: Tune anti-phishing protection
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
+search.appverid: 
 ms.collection: 
-- M365-security-compliance 
-- m365initiative-defender-office365
-- MET150
-description: "Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  - MET150
+description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Tune anti-phishing protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
 
@@ -30,9 +36,9 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
 
-- [Safe Attachments in Microsoft Defender for Office 365](set-up-atp-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
 - [Anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
@@ -50,7 +56,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 ## Best practices to stay protected
 
-- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your organization's security settings.
+- On a monthly basis, run [Secure Score](../defender/microsoft-secure-score.md) to assess your organization's security settings.
 
 - For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
 
@@ -58,7 +64,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
-- Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
+- Periodically review the [Threat Protection Status report](view-reports-for-mdo.md#threat-protection-status-report).
 
 - Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters. Instead of allowing the domain, you should correct the underlying problem.
 
@@ -76,10 +82,10 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   - [Use DMARC to validate email](use-dmarc-to-validate-email.md)
 
-- Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Users should [report messages](enable-the-report-message-add-in.md) to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
+- Users should use the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to report messages to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
 
 - Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score).
+- Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](../defender/microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score).

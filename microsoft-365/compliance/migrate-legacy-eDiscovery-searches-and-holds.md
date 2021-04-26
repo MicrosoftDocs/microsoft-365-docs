@@ -74,7 +74,7 @@ The output of these two commands will be similar to the following:
 ![Example of PowerShell output from using Get-MailboxSearch for an individual search](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
+> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) and [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
 ## Step 4: Create a case in the Microsoft 365 Compliance center
 
@@ -145,24 +145,24 @@ If you migrate an In-Place eDiscovery search but don't associate it with an eDis
 
 - For more information about In-Place eDiscovery & Holds in the Exchange admin center, see:
   
-  - [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [In-Place Hold and Litigation Hold](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - For more information about the PowerShell cmdlets used in the article, see:
 
-  - [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch)
+  - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
   
-  - [New-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/new-compliancecase)
+  - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
-  - [New-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/new-caseholdpolicy)
+  - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
   
-  - [New-CaseHoldRule](https://docs.microsoft.com/powershell/module/exchange/new-caseholdrule)
+  - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
-  - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+  - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
   
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+  - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+  - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 - For more information about the Microsoft 365 compliance center, see [Overview of the Microsoft 365 compliance center](microsoft-365-compliance-center.md).

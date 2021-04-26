@@ -1,30 +1,36 @@
 ---
 title: Find and release quarantined messages as a user
-f1.keywords:
-- NOCSH
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: Consumer/IW
 ms.topic: how-to
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
-- MEW150
+search.appverid: 
+  - MET150
+  - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Find and release quarantined messages as a user in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
@@ -144,9 +150,9 @@ After you select a message, you have options for what to do with the messages in
   - **Source view**: Shows the HTML version of the message body with all links disabled.
   - **Text view**: Shows the message body in plain text.
 
-- **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
-
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
+
+- **Block Sender**: Prevents the sender from sending messages to you.
 
 When you're finished, click **Close**.
 

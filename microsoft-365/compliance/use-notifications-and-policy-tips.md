@@ -213,7 +213,7 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 - Content contains
 - Content is shared
 
-Note that all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported.
+Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. 
   
 ### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
 
@@ -242,6 +242,9 @@ When people work with sensitive content in the desktop versions of Excel, PowerP
 - The site is included in a DLP policy that's configured to use policy tips.
     
 Office desktop programs automatically sync DLP policies directly from Office 365, and then scan your documents to ensure that they don't conflict with your DLP policies and display policy tips in real time.
+
+> [!NOTE]
+> Office desktop apps scan documents themselves to determine if DLP policy tips should be shown; they do not show policy tips that SharePoint Online sites or OneDrive for Business sites have already determined should be shown on a file. As a result, you may not always see a DLP policy tip in the desktop apps that you see in the SharePoint Online sites or OneDrive for Business sites. In contrast, the Office applications on the web only show DLP policy tips that SharePoint Online sites or OneDrive for Business sites have already determined should be shown.
   
 Depending on how you configure the policy tips in the DLP policy, people can choose to simply ignore the policy tip, override the policy with or without a business justification, or report a false positive.
   
@@ -278,6 +281,7 @@ You can customize the text for policy tips separately from the email notificatio
 - [Overview of data loss prevention policies](data-loss-prevention-policies.md)
     
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [DLP policy conditions, exceptions, and actions (preview)](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
     

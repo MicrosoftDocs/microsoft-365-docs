@@ -34,7 +34,7 @@ Microsoft recommends that customers accept all BGP routes as advertised from Mic
   
 If you require additional validation of route ownership across ExpressRoute public peering, you can check the advertised routes against the list of all IPv4 and IPv6 IP prefixes that represent [Microsoft's public IP ranges](https://www.microsoft.com/download/details.aspx?id=53602). These ranges cover the full Microsoft address space and change infrequently, providing a reliable set of ranges to filter against that also provides additional protection to customers who are concerned about non-Microsoft owned routes leaking into their environment. In the event there is a change, it will be made on the 1st of the month and the version number in the **details** section of the page will change every time the file is updated.
   
-There are a number of reasons to avoid the use of the [Office 365 URLs and IP address ranges](https://aka.ms/o365endpoints) for generating prefix filter lists. Including the following:
+There are a number of reasons to avoid the use of the [Office 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md) for generating prefix filter lists. Including the following:
   
 - The Office 365 IP prefixes undergo lots of changes on a frequent basis.
 
@@ -58,9 +58,9 @@ Microsoft recommends that you maintain your own network and security perimeter c
   
 #### Outbound from Customer to Microsoft
   
-When computers connect to Office 365, they connect to the same set of endpoints regardless of whether the connection is made over an internet or ExpressRoute circuit. Regardless of the circuit being used, Microsoft recommends that you treat Office 365 services as more trusted than generic internet destinations. Your outbound security controls should focus on the ports and protocols to reduce exposure and minimize ongoing maintenance. The required port information is available in the [Office 365 endpoints](https://aka.ms/o365endpoints) reference article.
+When computers connect to Office 365, they connect to the same set of endpoints regardless of whether the connection is made over an internet or ExpressRoute circuit. Regardless of the circuit being used, Microsoft recommends that you treat Office 365 services as more trusted than generic internet destinations. Your outbound security controls should focus on the ports and protocols to reduce exposure and minimize ongoing maintenance. The required port information is available in the [Office 365 endpoints](./urls-and-ip-address-ranges.md) reference article.
   
-For added controls, you can use FQDN level filtering within your proxy infrastructure to restrict or inspect some or all network requests destined for the internet or Office 365. Maintaining the list of FQDNs as features are released and the Office 365 offerings evolve requires more robust change management and tracking of changes to the published [Office 365 endpoints](https://aka.ms/o365endpoints).
+For added controls, you can use FQDN level filtering within your proxy infrastructure to restrict or inspect some or all network requests destined for the internet or Office 365. Maintaining the list of FQDNs as features are released and the Office 365 offerings evolve requires more robust change management and tracking of changes to the published [Office 365 endpoints](./urls-and-ip-address-ranges.md).
   
 > [!CAUTION]
 > Microsoft recommends you don't rely solely on IP prefixes to manage outbound security to Office 365.
@@ -77,27 +77,27 @@ There are several optional scenarios that require Microsoft to initiate connecti
   
 - ADFS during password validation for sign-in.
 
-- [Exchange Server Hybrid deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Exchange Server Hybrid deployments](/exchange/exchange-hybrid).
 
 - Mail from an Exchange Online tenant to an on-premises host.
 
 - SharePoint Online Mail send from SharePoint Online to an on-premises host.
 
-- [SharePoint federated hybrid search](https://technet.microsoft.com/library/dn197174.aspx).
+- [SharePoint federated hybrid search](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint hybrid BCS](https://technet.microsoft.com/library/dn197239.aspx ).
+- [SharePoint hybrid BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype for Business hybrid](https://technet.microsoft.com/library/jj205403.aspx) and/or [Skype for Business federation](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- [Skype for Business hybrid](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) and/or [Skype for Business federation](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
-- [Skype for Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
+- [Skype for Business Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
-Microsoft recommends that you accept these connections over your internet circuit instead of your ExpressRoute circuit to reduce complexity. If your compliance or performance needs dictate these inbound connections must be accepted over an ExpressRoute circuit, using a firewall or reverse proxy to scope the accepted connections is recommended. You can use the [Office 365 endpoints](https://aka.ms/o365endpoints) to figure out the right FQDNs and IP prefixes.
+Microsoft recommends that you accept these connections over your internet circuit instead of your ExpressRoute circuit to reduce complexity. If your compliance or performance needs dictate these inbound connections must be accepted over an ExpressRoute circuit, using a firewall or reverse proxy to scope the accepted connections is recommended. You can use the [Office 365 endpoints](./urls-and-ip-address-ranges.md) to figure out the right FQDNs and IP prefixes.
   
 ### Compliance
 
 We don't rely on the routing path you use for any of our compliance controls. Regardless of whether you connect to Office 365 services over an ExpressRoute or internet circuit, our compliance controls won't change. You should review the different compliance and security certification levels for Office 365 to figure out the best choice for meeting your organization's needs.
   
-Here's a short link you can use to come back: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+Here's a short link you can use to come back: [https://aka.ms/manageexpressroute365]()
   
 ## Related topics
 

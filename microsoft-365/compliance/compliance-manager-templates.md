@@ -21,15 +21,41 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Templates overview
 
-A template is a framework for creating an assessment in Compliance Manager. They contain the controls for meeting the requirements of a certification using a certain product. Compliance Manager provides a comprehensive set of templates to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO 27001:2013 template.
 
-## List of pre-built templates for assessments
+ View the [full list of templates](compliance-manager-templates-list.md).
 
-Compliance Manager provides templates for building assessments to help you comply with various regulations and standards. View the [list of templates](compliance-manager-templates-list.md) provided by Compliance Manager. New templates are added regularly, so check the list often.
+## Template types: included and premium, active and inactive
+
+#### Included and premium templates
+
+The templates available for use are based on your organization’s licensing agreement ([view licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). There are two categories of templates: included and premium.
+
+1. **Included templates** are available for use as part of your organization’s licensing agreement.
+2. **Premium templates** must be purchased in order to create assessments from them. Once purchased, you may create as many assessments from a template as needed. [Learn how you can purchase premium templates](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+
+#### Active and inactive templates
+
+Templates will display an activation status as either active or inactive:
+
+- A template is considered **active** once you create an assessment from that template.
+- A template is considered **inactive** if your organization isn’t using it for an assessment.
+
+When you purchase a premium template and create an assessment from it, that template is active for one year. Your purchase will automatically renew unless you cancel renewal.
+
+**Activated templates counter**
+
+Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number eligible to use according to your licensing agreement.
+
+For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
+
+If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+
+See [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) for further details.
 
 ## Viewing and managing templates from the assessment templates page
 
@@ -200,21 +226,28 @@ Note that action titles, both for your improvement actions and for Microsoft act
 
 #### Remove an improvement action
 
-Deleting an improvement action from a row in a spreadsheet **does not** remove the action from the template you're editing. Instead, follow the process below:
+To remove an improvement action from a template, you'll need to remove it from every control that references it. Follow the steps below to modify your spreadsheet:
 
-1. On the **Actions** tab, insert a new column as column A and put **Operation** in the header row, which is row number one.
-2. On the row for the improvement action you want to remove, put **Delete** in column A for that row.
-3. Ensure that this improvement action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your improvement action's title in column F, which is **controlActionTitle**.
-4. When you find your improvement action listed in the **controlActionTitle** column, delete it.
-5. Save your spreadsheet.
+1. On the **ControlFamily** tab, search for for the title of the improvement action you want to remove.
+2. Delete the improvement action's title in the cells where it appears. If the improvement action is the only action on that row, delete the entire row (which removes the control).
+3. On the **Actions** tab, delete the row that contains the improvement action you're deleting.
+4. Save your spreadsheet.
 
-When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
+When you import your spreadsheet back into the template, your improvement action will be removed from the template.
 
-If you're removing the last improvement action that a control references, then you need to remove the control.
+Removing an improvement action from a template does not completely remove the improvement action from Compliance Manager. That action can still be referenced by another template.
 
 #### Remove a control
 
-To remove a control, follow the same process for removing an improvement action as outlined above. In the **ControlFamily** tab, add an **Operation** column and put **Delete** next to the control you want to remove.
+To remove a control, modify your spreadsheet by following the steps below, then re-import your spreadsheet:
+
+1. On the **ControlFamily** tab, find the control you want to remove in the **controlName** column.
+2. Delete the row for that control.
+    - If this deleted control contains improvement actions that aren't referenced by any other control, you'll need to remove those improvement actions from the **Actions** tab. Otherwise, you'll receive a validation error.
+
+3. Save your spreadsheet.
+
+When you import your spreadsheet back into the template, your control will be removed from the template.
 
 ## Export a template
 

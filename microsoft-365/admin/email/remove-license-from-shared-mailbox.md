@@ -26,14 +26,6 @@ description: "Remove license from a shared mailbox to assign it to another user.
 
 # Remove a license from a shared mailbox
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
 Shared mailboxes usually don't require a license. Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.
 
 > [!NOTE]
@@ -41,6 +33,7 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 > 1. The shared mailbox has more than 50 GB of storage in use.
 > 2. The shared mailbox uses in-place archiving.
 > 3. The shared mailbox is placed in litigation hold.
+> 4. The shared mailbox has a Microsoft Defender license assigned.
 
   
 ## Remove the license
@@ -60,7 +53,7 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 5. When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.
 
-6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/buy-licenses.md).
 
 ::: moniker-end
 
@@ -79,7 +72,7 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 5. When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.
 
-6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/buy-licenses.md).
 
 ::: moniker-end
 
@@ -98,9 +91,11 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 5. When you return to the **Active users** page, the status of the shared mailbox will be **Unlicensed**.
 
-6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/buy-licenses.md).
 
 ::: moniker-end 
+
+ 
 
 ## Related articles
 

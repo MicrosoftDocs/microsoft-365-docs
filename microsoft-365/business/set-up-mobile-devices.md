@@ -2,8 +2,8 @@
 title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,6 +20,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150

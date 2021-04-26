@@ -1,29 +1,35 @@
 ---
-title: "Backscatter in EOP"
-f1.keywords:
-- NOCSH
+title: Backscatter in EOP
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)"
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Backscatter in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 *Backscatter* is non-delivery reports (also known as NDRs or bounce messages) you receive for messages that you didn't send. Spammers forge (spoof) the From: address of their messages, and they often use real email addresses to lend credibility to their messages. So, when spammers inevitably send messages to non-existent recipients (spam is a high-volume operation), the destination email server is essentially tricked into returning the undeliverable message in an NDR to the forged sender in the From: address.
 

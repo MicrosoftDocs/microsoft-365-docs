@@ -2,8 +2,8 @@
 title: "Pin apps to your users' app launcher"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,7 +17,7 @@ description: "As a global admin you can pin up to three apps to your users' app 
 
 # Pin apps to your users' app launcher
 
-You can use controls in the Azure Active Directory portal to pin up to three apps to Office.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Azure Active Directory, or a Global administrator in Office 365. For more information about admin roles, see [admin roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md). 
+You can use controls in the Azure Active Directory portal to pin up to three apps to Office.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Azure Active Directory, or a Global administrator in Office 365. For more information about admin roles, see [admin roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md). 
 
 For more information about the app launcher and Office.com, see [meet the app launcher](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) and [updates to office.com and the-Office 365 app launcher](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503) blog article.
 
@@ -45,4 +45,4 @@ For more information about the app launcher and Office.com, see [meet the app la
 
 ## Create application collections
 
-You can also create application collections for the users in your organization. For instructions, see [create collections on the My Apps portal in the Azure portal](https://docs.microsoft.com/azure/active-directory/manage-apps/access-panel-collections).
+You can also create application collections for the users in your organization. For instructions, see [create collections on the My Apps portal in the Azure portal](/azure/active-directory/manage-apps/access-panel-collections).

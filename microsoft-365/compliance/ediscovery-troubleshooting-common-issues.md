@@ -33,7 +33,7 @@ If you try to add user's mailbox location to search and there are duplicate or c
 
 Check for duplicate users or distribution list with the same user ID.
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following command to retrieve all instances of the username:
 
@@ -53,8 +53,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 ## Error/issue: Search fails on specific locations
 
-An eDiscovery or content search may yield the following error:
->This search completed with (#) errors.  Would you like to retry the search on the failed locations?
+An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -62,7 +61,7 @@ An eDiscovery or content search may yield the following error:
 
 If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -72,7 +71,7 @@ If you receive this error, we recommend that you verify the locations that faile
 
 3. Retry the eDiscovery search on the failed locations only.
 
-4. If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.
+4. If you continue to receive these errors, see [Retry failed locations](/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.
 
 ## Error/issue: File not found
 
@@ -85,7 +84,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
 
-2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.
+2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](/sharepoint/crawl-site-content) to reindex the site.
 
 ## Error/issue: Search fails because recipient is not found
 
@@ -93,7 +92,7 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 ### Resolution
 
-1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the following command to check if the user is synced to Exchange Online Protection:
 
@@ -109,7 +108,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 ### Resolution
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -139,7 +138,7 @@ When running an eDiscovery search, if the search continually fails with error si
 
 1. Break the search into smaller searches and run the search again.  Try using a smaller date range or limit the number of locations being searched.
 
-2. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:
+2. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and then run the following command:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -159,7 +158,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 ### Resolution
 
-1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
+1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -191,6 +190,30 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 4. Contact Microsoft Support.
 
-## See Also
+## Error: "The condition specified using HTTP conditional header(s) is not met"
 
-- [Tips to avoid content location errors](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location.
+
+### Resolution
+
+To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
+
+## Error/issue: Downloaded export shows no results
+
+After a successful export, the completed download via the export tool shows zero files in the results.
+
+### Resolution
+
+This is a client-side issue and in order to remediate it, please attempt the following steps:
+
+1. Try using another client/machine to download.
+
+2. Make sure to download to a local drive.
+
+3. Make sure the virus scanner is not running.
+
+4. Make sure that no other export is downloading to the same folder or any parent folder.
+
+5. If the previous steps did not work, disable zipping and de-duplication.
+
+6. If this works then the issue is due to a local virus scanner or a disk issue.

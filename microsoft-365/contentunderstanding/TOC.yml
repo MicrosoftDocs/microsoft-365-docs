@@ -17,8 +17,14 @@
           href: create-a-content-center.md
         - name: Create a classifier
           href: create-a-classifier.md
+        - name: Duplicate a model
+          href: duplicate-a-model.md
+        - name: Rename a model
+          href: rename-a-model.md
         - name: Create an extractor
           href: create-an-extractor.md
+        - name: Rename an extractor
+          href: rename-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
         - name: Apply a model
@@ -31,6 +37,8 @@
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
           href: leverage-term-store-taxonomy.md
+        - name: SharePoint Syntex accessibility mode
+          href: accessibility-mode.md
     
     - name: Adoption
       items:

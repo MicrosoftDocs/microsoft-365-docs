@@ -1,22 +1,28 @@
 ---
-title: "Queues insight in the Mail flow dashboard"
-f1.keywords:
-- NOCSH
+title: Queues insight in the Mail flow dashboard
+f1.keywords: 
+  - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: "Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors."
+description: Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Queues insight in the Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365. Common examples that cause this condition are:
 
@@ -27,8 +33,8 @@ Microsoft 365 will continue to retry to delivery for 24 hours. After 24 hours, t
 
 If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:
 
-- The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com). For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this topic.
-  
+- The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com). For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this article.
+
 - An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
 
   ![Recent alerts in the Alerts dashboard in the Security & Compliance Center](../../media/mfi-queued-messages-alert.png)
@@ -77,7 +83,7 @@ If you click the number of messages on the widget, a **Messages queued** flyout 
 - **Destination server**
 - **Last IP address**
 - **Last error**
-- **How to fix**: Common issues and solutions are available. If is a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
+- **How to fix**: Common issues and solutions are available. If a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
 
 ![Details after clicking on the Queues insight in the Mail flow dashboard](../../media/mfi-queues-details.png)
 

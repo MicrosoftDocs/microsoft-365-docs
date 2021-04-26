@@ -20,11 +20,11 @@ description: "In this article, you will learn about how service encryption works
 
 # Service encryption with Customer Key
 
-Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application level for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
+Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
 
 ## How service encryption, BitLocker, and Customer Key work together
 
-Service encryption ensures that content at rest is encrypted at the application layer. **Your data is always encrypted at rest in the Microsoft 365 service with BitLocker and DKM**. For more information, see the "Security, Privacy, and Compliance Information", and [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
+Service encryption ensures that content at rest is encrypted at the service layer. **Your data is always encrypted at rest in the Microsoft 365 service with BitLocker and DKM**. For more information, see the "Security, Privacy, and Compliance Information", and [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
 
 Customer Key is built on service encryption and lets you provide and control encryption keys. Microsoft 365 then uses these keys to encrypt your data at rest as described in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Microsoft 365 uses to encrypt and decrypt data.
   
@@ -32,7 +32,7 @@ Customer Key enhances the ability of your organization to meet the demands of co
 
 ## Customer Key encrypts data at rest in Office 365
 
-Using keys you provide, Customer Key encrypts:
+Using keys you provide, Customer Key at the application level encrypts:
 
 - SharePoint Online, OneDrive for Business, and Teams files.
 - Files uploaded to OneDrive for Business.
@@ -51,11 +51,14 @@ A data encryption policy defines the encryption hierarchy to encrypt data using 
 
 **Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
 
-- the mailbox is marked for a mailbox move. Based on priorities in Microsoft 365 as described here [Move requests in the Microsoft 365 service](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
+- the mailbox is marked for a mailbox move. Based on priorities in Microsoft 365 as described here [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
 
 - The encryption takes place while the mailbox is moved. Allow 72 hours for the mailbox to become encrypted with the new DEP. If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, contact Microsoft.
 
 Later, you can either refresh the DEP or assign a different DEP to the mailbox as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
+
+> [!NOTE]
+> The DEP can be applied to a shared mailbox, public folder mailbox, and Microsoft 365 group mailbox for tenants that meet the licensing requirement for user mailboxes, even though some of these mailbox types cannot be an assigned license (public folder mailbox and Microsoft 365 group mailbox) or need a license for increasing storage (shared mailbox).
 
 **SharePoint Online, OneDrive for Business, and Teams files** If you're using the multi-geo feature, you can create up to one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can only create one DEP per tenant. When you assign the DEP, encryption begins automatically but can take some time to complete. Refer to the details in [Set up Customer Key](customer-key-set-up.md).
 

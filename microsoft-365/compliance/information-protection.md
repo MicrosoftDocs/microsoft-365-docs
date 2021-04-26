@@ -21,7 +21,7 @@ description: "Implement Microsoft Information Protection (MIP) to help you prote
 
 # Microsoft Information Protection in Microsoft 365
 
->*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+>*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
@@ -35,6 +35,12 @@ For information about governing your data, see [Microsoft Information Governance
 
 ## Know your data
 
+> [!NOTE]
+> For information about classifying and labeling data in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+> 
+> For release announcements for Azure Purview, see the following blog posts: [Microsoft Information Protection and Microsoft Azure Purview: Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) and [Azure Purview at Spring Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919).
+
+
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
 
 :::image type="content" source="../media/knowyourdata.PNG" alt-text="know your data"::: 
@@ -45,9 +51,11 @@ To understand your data landscape and identify important data across your hybrid
 |[Trainable classifiers (preview)](classifier-learn-about.md)| Classifies data for you, using one of the built-in classifiers or train a classifier with your own content | [Get started with trainable classifiers (preview)](classifier-get-started-with.md)| |
 |[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md)<br /><br /> [Get started with activity explorer](data-classification-activity-explorer.md)| |
 
+
 ## Protect your data
 
 To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
+
 
 :::image type="content" source="../media/protectyourdata-4638524.PNG" alt-text="Protect your data":::
 
@@ -74,15 +82,24 @@ Microsoft 365 includes these capabilities to help protect data:
 | SharePoint Information Rights Management(IRM) | Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized can view and use the file according to policies that you specify | Set up Information Rights Management (IRM) in SharePoint admin center |
 | Rights Management Connector | Protection-only for existing on-premises deployments that use Exchange or SharePoint Server and File Classification Infrastructure (FCI) | Steps to deploy the RMS Connector |
 
+
 ## Prevent data loss
 
 To help prevent accidental oversharing of sensitive information, use the following capabilities:
 
 :::image type="content" source="../media/DLP-4638524.PNG" alt-text="Prevent data loss":::
 
+
 Step 1 - Review and meet prerequisites
-
-
 |Step|Description|More information|
 |:------|:------------|:---------------------|:-----------------------------|
 |[Design DLP policies](data-loss-prevention-policies.md)| Plan for the mode of identifying info(sensitive info type, label, other) <br /><br /> Plan where the policies will target(services, client, 3rd party apps.) <br /><br /> Plan policy tips, other | 
+
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|:---------------------|
+|[Data loss prevention (DLP)](data-loss-prevention-policies.md)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers. | [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)|
+|[Learn about the Microsoft Compliance Extension (preview)](dlp-chrome-learn-about.md) | Extends DLP capabilities to the Chrome browser | [Get started with the Microsoft Compliance Extension (preview)](dlp-chrome-get-started.md)|
+|[Learn about Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)|Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.|[Get started with Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)|
+|[Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | Extends some DLP functionality to Teams chat and channel messages | [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)| 
+

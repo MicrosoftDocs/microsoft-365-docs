@@ -2,8 +2,8 @@
 title: "Set up Microsoft 365 Apps for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,7 +18,6 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb 
 - AdminSurgePortfolio
 search.appverid:
 - MET150

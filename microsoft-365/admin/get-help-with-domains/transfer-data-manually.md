@@ -51,7 +51,7 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 
 Go to the following pages on each account, and set up the new account based on the old account's settings.
   
-If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/), and go to the following places to look at admin settings.
+If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](../index.yml), and go to the following places to look at admin settings.
   
 For Microsoft 365 Enterprise and Microsoft 365 Midsize Business:
   
@@ -75,7 +75,7 @@ If you have a public website hosted on Microsoft 365, you need to save it and re
 > [!NOTE]
 > If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
   
-To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://go.microsoft.com/fwlink/p/?LinkId=402910).
+To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
   
 > [!NOTE]
 > The Public site migration app can't transfer data to a different subscription.
@@ -86,11 +86,11 @@ There are several ways to save or transfer team site data:
   
 - You can save the old site as a template and import the template into the new site.
 
-- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](../../business-video/store-files.md).
 
 - To transfer list data, save a [list template](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), and use the saved template to re-create the list on the new site.
 
-- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
+- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ## Transfer users' data between subscriptions
 

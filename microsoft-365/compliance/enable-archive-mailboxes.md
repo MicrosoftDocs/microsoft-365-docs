@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
-description: "Learn how to use the security & compliance center in Office 365 to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
+description: "Learn how to use the compliance center to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 
-# Enable archive mailboxes in the Security & Compliance Center
+# Enable archive mailboxes in the compliance center
 
-Archiving in Office 365 (also called In-Place Archiving) provides users with additional mailbox storage space. After you turn on archive mailboxes, users can access and store messages in their archive mailboxes by using Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App). Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
+Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, users can access and store messages in their archive mailboxes by using Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App). Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
 > [!NOTE]
-> The auto-expanding archiving feature in Office 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Office 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md).
+> The auto-expanding archiving feature in Microsoft 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Microsoft 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving](unlimited-archiving.md).
 
 ## Get the necessary permissions
 
@@ -65,7 +65,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
 
 You can also use the **Archive** page in the Security & Compliance Center to disable a user's archive mailbox. After you disable an archive mailbox, you can reconnect it to the user's primary mailbox within 30 days of disabling it. In this case, the original contents of the archive mailbox are restored. After 30 days, the contents of the original archive mailbox are permanently deleted and can't be recovered. So if you re-enable the archive more than 30 days after disabling it, a new archive mailbox is created.
 
-Note that the default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they will remain in the user's primary mailbox.
+The default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they will remain in the user's primary mailbox.
 
 To disable an archive mailbox:
 
@@ -97,7 +97,7 @@ To disable an archive mailbox:
 
 You can also use Exchange Online PowerShell to enable archive mailboxes. The primary reason to use PowerShell is that you can quickly enable the archive mailbox for all users in your organization.
 
-The first step is to connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+The first step is to connect to Exchange Online PowerShell. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 After you're connected to Exchange Online, you can run the commands in the following sections to enable or disable archive mailboxes.
 
@@ -112,7 +112,7 @@ Enable-Mailbox -Identity <username> -Archive
 Run the following command to enable the archive mailbox for all users in your organization (whose archive mailbox is currently not enabled).
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Enable-Mailbox -Archive
 ```
 
 ### Disable archive mailboxes
@@ -126,7 +126,7 @@ Disable-Mailbox -Identity <username> -Archive
 Run the following command to disable the archive mailbox for all users in your organization (whose archive mailbox is currently enabled).
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
 
 ## More information
@@ -145,8 +145,8 @@ Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "U
 
 - For more information about archive mailboxes and Exchange retention policies, see:
 
-  - [Retention tags and retention policies in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Default Retention Policy in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Default Retention Policy in Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

@@ -25,7 +25,6 @@ Advanced eDiscovery displays content via several viewers each with different pur
 - Native view
 - Text view
 - Annotate view
-- Converted view
 
 ## File metadata
 

@@ -26,7 +26,7 @@ description: "Learn how to work with Domain Connect enabled registrars and add y
 
 # Using Domain Connect
 
- **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.
+ **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
   
 [Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
   
@@ -44,7 +44,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
-    - [MadDog Domains](https://www.maddogdomains.com/)
+    - [MadDog Web Hosting](https://maddogwebhosting.com/domains/)
     - [CheapNames](https://www.cheapnames.com)
 
 ## What happens to my email and website?
