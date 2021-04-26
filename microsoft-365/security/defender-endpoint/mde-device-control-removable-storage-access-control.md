@@ -46,7 +46,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have Anti-mal
 You can use the following properties to create a removable storage group:
 
 **Property name: Group Id**
-1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique Id, represents the group and will be used in the policy.
+1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.
 1. Options: - 
 
 **Property name: DescriptorIdList**
@@ -55,7 +55,7 @@ You can use the following properties to create a removable storage group:
 List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 1. Options:
-    - Primary Id
+    - Primary ID
         - RemovableMediaDevices
         - CdRomDevices
     - DeviceId
@@ -72,41 +72,41 @@ For each device property, see **Device Properties** section above for more detai
 
 **Property name: MatchType** 
 
-1. Description: When there are multiple device properties being used in the DescriptorIdList, MatchType defines the relationship.
+1. Description: When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.
 1. Options: 
-    - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will check to see whether the USB meets both values.
+    - MatchAll: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.
 
-    - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceId and InstancePathId, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceId** or **InstanceId** value.
+    - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
 
 Following are the access control policy properties:
 
 **Property name: PolicyRuleId**
 
-1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique Id, represents the policy and will be used in the reporting and troubleshooting.
+1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.
 1. Options: -
 
 **Property name: IncludedIdList**
 
 1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
-1. Options: The Group ID/GUID has to be used here.
+1. Options: The Group ID/GUID has to be used at this instance.
 
 The following example shows the usage of GroupID:
 
 `<IncludedIdList> <GroupId>{EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`
 
-**Property name: ExcludedIdList**
+**Property name: ExcludedIDList**
 
 1. Description: The group(s) that the policy will not be applied to.
-1. Options: The Group ID/GUID has to be used here.
+1. Options: The Group ID/GUID has to be used at this instance.
 
-**Property name: Entry Id**
+**Property name: Entry ID**
 
 1. Description: One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.
 1. Options: -
 
 **Property name: Type**
 
-1. Description: Defines the action for the removable storage groups in IncludedIdList.
+1. Description: Defines the action for the removable storage groups in IncludedIDList.
     - Enforcement: Allow or Deny
     - Audit: AuditAllowed or AuditDenied 
 1. Options:
@@ -173,7 +173,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
     1. Group 1: Any removable storage and CD/DVD. An example for this use case is:
     Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
-    2. Group 2: Unapproved USBs based on device properties, for example, Vendor Id / Product Id, Friendly Name – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file. 
+    2. Group 2: Unapproved USBs based on device properties, for example, Vendor Id / Product ID, Friendly Name – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file. 
     
 > [!NOTE]
 > You have to replace `&` with `&amp;` in the value.
