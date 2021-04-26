@@ -81,8 +81,6 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
    3. You can add search conditions to narrow a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (**c:c**) that is similar in functionality to the **AND** operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the results. This is how conditions help to narrow your results. For a list and description of conditions that you can use in a search query, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions).
 
 7. Review the search settings (and edit if necessary), and then submit the search to start it.
-
-After you submit and run the search, any results returned by the search are displayed in the results pane. Depending on how you have the preview setting configured, the search results are display or you have to click **Preview results** to view them. See the next section for details.
   
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**.
   
