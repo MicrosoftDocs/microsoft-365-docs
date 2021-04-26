@@ -29,7 +29,7 @@ If you have a question or need assistance with Microsoft 365 Business Premium, y
 
 ## Browse all small business training
 
-For links to all of the training support you'll need to use Microsoft 365 with your small business, see [Microsoft 365 small business training](../../business-video/index.yml). 
+For links to all of the training support you'll need to use Microsoft 365 with your small business, see [Microsoft 365 small business training](index.yml). 
 
 ## Search for Microsoft 365 admin center docs and resources
 
