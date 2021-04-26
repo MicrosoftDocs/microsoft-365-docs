@@ -303,14 +303,9 @@
                         - name: Update incident
                           href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
-      href: ./office-365-security/index.yml
+      href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
-      href: ./defender-endpoint/index.yml
+      href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
       href: https://docs.microsoft.com/defender-for-identity
-    - name: Microsoft 365 for Enterprise
-      href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
-      href: ./index.yml
-    - name: Microsoft 365 Compliance
-      href: ../compliance/index.yml
+
