@@ -31,8 +31,6 @@ description: "Follow this checklist to remove an employee from Microsoft 365 and
 
 ## Sign out now!
 
-::: moniker range="o365-worldwide"
-
 Watch a short video about removing an employee. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
@@ -45,32 +43,6 @@ To prevent an employee from logging in:
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-2. Select the user, and then select **Reset password**.
-
-3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-2. Select the user, and then select **Reset password**.
-
-3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
-
-::: moniker-end
 
 > [!NOTE]
 > You need to be a global administrator to initiate sign-out.
