@@ -36,7 +36,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 
 ## Actions on devices
 
-- **Isolate device** - This activity immediately blocks all network traffic (internet and internal) to minimize the spread of malware and allow analysts to continue analysis without a malicious actor being able to continue an attack. The only connection allowed is to the Microsoft Defender for Identity service cloud so Microsoft Defender for Identity can continue to monitor the device. 
+- **Isolate the device** - This activity immediately blocks all network traffic (internet and internal) to minimize the spread of malware and allow analysts to continue analysis without a malicious actor being able to continue an attack. The only connection allowed is to the Microsoft Defender for Identity service cloud so Microsoft Defender for Identity can continue to monitor the device. 
 - **Restrict app execution** - To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft-issued certificate. This method of restriction can help prevent an attacker from controlling compromised devices and performing further malicious activities.
 - **Run Antivirus scan** - A Microsoft Defender Antivirus scan can run alongside other antivirus solutions, whether Defender Antivirus is the active antivirus solution or not. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode.
 - **Initiate automated investigation** - You can start a new general purpose automated investigation on the device. While an investigation is running, any other alert generated from the device will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
@@ -51,7 +51,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 
 
-Continuing the example, remediation activity for this incident can be to:
+Continuing the example in [Respond to your first incident-Detect, triage, and analyze incidents](first-incident-analyze.md), remediation activity for this incident can be to:
 
 1. Immediately reset the user password
 2. Isolate the device in Microsoft 365 Defender until deep analysis is complete
@@ -62,7 +62,7 @@ Continuing the example, remediation activity for this incident can be to:
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image.
 
-:::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal"::: 
  
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
 
@@ -79,7 +79,7 @@ Playbooks use Power Automate to create custom robotic process automation flows t
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow"::: 
  
-Playbooks can be created during Post-Incident Review to create remediation actions from incidents to enable faster remediation actions. Since the NIST Incident Response Framework is cyclical in nature, Post-Incident Review activity can turn into Preparation phases, enhancing the organization’s response capabilities.
+Playbooks can be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents to enable faster remediation actions. 
 
 ## Next step
 

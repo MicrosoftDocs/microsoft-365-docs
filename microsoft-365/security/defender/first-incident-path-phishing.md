@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender can help detect malicious attachments delivered via email. Since Office 365 Security and Compliance Center integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
+Microsoft 365 Defender can help detect malicious attachments delivered via email. Since the [Office 365 Security and Compliance Center](https://protection.office.com/) integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
 
 In this example, the analyst was assigned a multi-stage incident.
  
@@ -48,7 +48,7 @@ Selecting **Open alert page** takes you to the specific alert where various info
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Example of the details of an alert"::: 
 
-This takes the analyst to the Threat Management page where the email Subject, Recipient, Sender, and other information are displayed. **ZAP** under Special Actions tells the analyst that the Zero-hour auto purge feature was implemented. ZAP automatically detects and removes malicious and spam messages from mailboxes across the organization. More information on ZAP can be found in Zero-hour auto purge (ZAP) in Exchange Online.
+This takes the analyst to the Threat Management page where the email Subject, Recipient, Sender, and other information are displayed. **ZAP** under Special Actions tells the analyst that the Zero-hour auto purge feature was implemented. ZAP automatically detects and removes malicious and spam messages from mailboxes across the organization. More information on ZAP can be found in [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
 Other actions can be taken on specific messages by selecting **Actions**. 
  

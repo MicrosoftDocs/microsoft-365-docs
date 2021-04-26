@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Preparing for incident handling involves setting up sufficient protection of an organization's network from different kinds of security incidents. To reduce the risk of security incidents, NIST recommends several security practices including risk assessments, hardening host security, configuring networks securely, and preventing malware. 
+Preparing for incident handling involves setting up sufficient protection of an organization's network from different kinds of security incidents. To reduce the risk of security incidents, National Institute of Standards and Technology (NIST) recommends several security practices including risk assessments, hardening host security, configuring networks securely, and preventing malware. 
 
 Microsoft 365 Defender can help address several aspects of incident prevention: 
 
@@ -57,7 +57,7 @@ Next, organizations can use the [Microsoft Secure Score](microsoft-secure-score.
  
 ## Step 3. Assess your organization’s vulnerability exposure
 
-Preventing incidents can help streamline security operations efforts to focus on on-going critical and important security incidents. Software vulnerabilities are often a preventable entry point for attacks that can lead to data theft, data loss, or disruption of business operations. If no attacks are on-going, security operations must strive to achieve and maintain an acceptable level of vulnerability exposure in their organization.
+Preventing incidents can help streamline security operations efforts to focus on on-going critical and important security incidents. Software vulnerabilities are often a preventable entry point for attacks that can lead to data theft, data loss, or disruption of business operations. If no attacks are on-going, security operations must strive to achieve and maintain an acceptable level of [vulnerability exposure](../defender-endpoint/tvm-exposure-score.md) in their organization.
 
 To check your software patching progress, visit the [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) page in Defender for Endpoint, which you can access from Microsoft 365 Defender through the **More resources** tab.
 
@@ -65,7 +65,7 @@ To check your software patching progress, visit the [Threat and Vulnerability Ma
  
 ## 4. Understand emerging threats
 
-Use threat analytics in the Microsoft 365 security center to keep up-to-date with the current security threat landscape. Expert Microsoft security researchers create reports that describe the latest cyber-threats in detail so you can understand how they might affect your Microsoft 365 subscription, devices, and users. These reports can include:
+Use [threat analytics](threat-analytics.md) in the Microsoft 365 security center to keep up-to-date with the current security threat landscape. Expert Microsoft security researchers create reports that describe the latest cyber-threats in detail so you can understand how they might affect your Microsoft 365 subscription, devices, and users. These reports can include:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
@@ -75,7 +75,7 @@ Use threat analytics in the Microsoft 365 security center to keep up-to-date wit
 
 You can implement the recommendations of an emerging threat to strengthen your security posture and minimize your attack surface area.
 
-Make time in your schedule to regularly check the Threat Analytics section of the Microsoft 365 security center.
+Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 security center.
 
 ## Next step
 
