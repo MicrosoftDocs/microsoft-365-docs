@@ -1,5 +1,5 @@
 ---
-title: Get exposed devices remediation activity
+title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
 keywords: apis, remediation, remediation api, get, remediation tasks, 
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Get exposed devices remediation activity
+# List exposed devices of one remediation activity
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ Returns information about exposed devices for the specified remediation task.
 
 ## List exposed devices associated with a remediation task (id)
 
-**URL:** GET: /api/remediationTasks/(id)/machineReferences
+**URL:** GET: /api/remediationTasks/\{id\}/machineReferences
 
 **Properties** details
 
@@ -101,11 +101,11 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 ## See also
 
-- [Remediation activity methods and properties](get-remediation-methods-properties.md)
-
-- [Get all remediation activity](get-remediation-all-activities.md)
+- [Remediation methods and properties](get-remediation-methods-properties.md)
 
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
+
+- [List all remediation activities](get-remediation-all-activities.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 

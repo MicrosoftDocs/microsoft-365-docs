@@ -1,5 +1,5 @@
 ---
-title: Get all remediation activity
+title: List all remediation activities
 description: Returns information about all remediation activities.
 keywords: apis, remediation, remediation api, get, remediation tasks, 
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Get all remediation activity
+# List all remediation activities
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -130,11 +130,11 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 ## See also
 
-- [Remediation activity methods and properties](get-remediation-methods-properties.md)
-
-- [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
+- [Remediation methods and properties](get-remediation-methods-properties.md)
 
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
+
+- [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 

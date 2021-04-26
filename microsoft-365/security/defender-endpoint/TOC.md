@@ -530,11 +530,11 @@
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
-###### [Remediation]()
+###### [Remediation Activity]()
 ####### [Remediation activity methods and properties](get-remediation-methods-properties.md)
-####### [Get all remediation activity](get-remediation-all-activities.md)
-####### [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
 ####### [Get one remediation activity by Id](get-remediation-one-activity.md)
+####### [List all remediation activities](get-remediation-all-activities.md)
+####### [List exposed devices of one remediation activity](get-remediation-exposed-devices-activity.md)
 
 ###### [Score]()
 ####### [Score methods and properties](score.md)

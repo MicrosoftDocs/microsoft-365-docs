@@ -40,8 +40,8 @@ The API response contains [Threat & vulnerability management](next-gen-threa
 
 **Method** | **Data type** | **Description**
 :---|:---|:---
-[Get all remediation activity](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
-[Get exposed devices remediation activy](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
+[List all remediation activities](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
+[List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
 [Get one remediation activity by Id](get-remediation-one-activity.md) | Investigation entity | Returns information for the specified remediation activity.
 
 Learn more about [remediation activities](tvm-remediation.md).
@@ -57,7 +57,7 @@ completionMethod | String | A remediation activity can be completed “automatic
 createdOn | DateTime | Time this remediation activity was created
 description | String | Description of this remediation activity
 dueOn | DateTime | Due date the creator set for this remediation activity
-fixedDevices | . | The number of devices that have been fixed
+fixedDevices |  | The number of devices that have been fixed
 id | String | ID of this remediation activity
 nameId | String | Related product name
 priority | String | Priority the creator set for this remediation activity (High\Medium\Low)
@@ -81,11 +81,11 @@ vendorId | String | Related vendor name
 
 ## See also
 
-- [Get all remediation activity](get-remediation-all-activities.md)
-
-- [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
-
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
+
+- [List all remediation activities](get-remediation-all-activities.md)
+
+- [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 

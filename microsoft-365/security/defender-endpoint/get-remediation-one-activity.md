@@ -42,7 +42,7 @@ Returns information for the specified remediation activity. Presents the same co
 
 ## List a specified remediation activity for (id)
 
-**URL:** GET: /api/remediationTasks/(id)
+**URL:** GET: /api/remediationTasks/\{id\}
 
 **Properties** details
 
@@ -126,11 +126,11 @@ GET** https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-
 
 ## See also
 
-- [Remediation activity methods and properties](get-remediation-methods-properties.md)
+- [Remediation methods and properties](get-remediation-methods-properties.md)
 
-- [Get all remediation activity](get-remediation-all-activities.md)
+- [List all remediation activities](get-remediation-all-activities.md)
 
-- [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
+- [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 
