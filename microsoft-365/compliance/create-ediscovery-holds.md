@@ -106,8 +106,6 @@ Keep the following things in mind about eDiscovery hold statistics:
 
 When you [search for content](search-for-content-in-core-ediscovery.md) in a Core eDiscovery case, you can quickly configure the search to only search the content locations that have been placed on a hold associated with the case.
 
-![Locations on hold](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
-
 Select the **Locations on hold** option to search all the content locations that have been placed on hold. If the case contains multiple eDiscovery holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that match the hold query will be searched when you run the search. In other words, only the content that matches both the hold criteria and the search criteria is returned with the search results. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched. This is accomplished by connecting the case hold query and the search query by an **AND** operator.
 
 Here are some other things to keep in mind when searching locations on eDiscovery hold:
