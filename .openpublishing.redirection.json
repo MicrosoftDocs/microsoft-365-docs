@@ -3708,7 +3708,7 @@
     {
       "source_path": "microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
