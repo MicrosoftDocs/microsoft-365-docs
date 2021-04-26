@@ -36,7 +36,7 @@ ms.technology: mde
 
 ## API description
 
-Returns information for the specified remediation activity. Presents the same columns as [Get all remediation tasks](get-remediation-all-tasks.md)", but returns results _only for the one specified remediation activity_.
+Returns information for the specified remediation activity. Presents the same columns as [Get all remediation activities](get-remediation-all-activities.md)", but returns results _only for the one specified remediation activity_.
 
 [Learn more about remediation activities](tvm-remediation.md).
 
