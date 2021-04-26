@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
-description: ""
+description: "overview of the planning process for data loss prevention"
 ---
 
 # Plan for data loss prevention (DLP)
@@ -37,7 +37,7 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Common steps
 
-ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS
+<!--ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS-->
 
 
 1. prioritize data
@@ -64,8 +64,10 @@ can only assume greenfield
 
 
 
-Overview of planning process – topic EVERYTHING UNDER THIS IS A GAP
-Identify stakeholders who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
+## Overview of planning process
+
+### Identify stakeholders
+ who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
 a.	Regulatory and compliance officers
 b.	Chief risk officer
 c.	Legal officers
@@ -73,18 +75,43 @@ d.	Security and compliance officers
 e.	Business owners for the data items
 f.	IT
 
-They identify the categories of sensitive items to protect and the business
+
+### They identify the categories of sensitive items to protect and the business
 This group then describes the categories of items (email, docs, chat) and the business process (data subject to regulation and proprietary data) that they are used in. The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.
-Start looking/discovery for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
-IT can start coding test policies, start small and always in test mode. Note that DLP policies can feed into insider risk.
-Business process owners help with tuning false positive/false negative results and fitting DLP into their business processes.
-Plan for training of end users
-Approaches to deployment    REALLY BIG GAP
+
+### Start looking/discovery
+ for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
+
+### IT can start coding test policies
+start small and always in test mode. Note that DLP policies can feed into insider risk.
+
+### Business process owners help with tuning
+ false positive/false negative results and fitting DLP into their business processes.
+
+### Plan for training of end users
+
+## Approaches to deployment    REALLY BIG GAP
 
 
 
+## Planning for workloads
 
+### Exchange
 
+### SharePoint
+
+### OneDrive for Business
+
+### Teams
+
+### Windows 10 Devices
+
+### Microsoft Cloud App Security (MCAS)
+
+### On-premises Scanner
+
+## See also
+- 
 
 move to plan for  
 ## Roll out DLP policies gradually with test mode
