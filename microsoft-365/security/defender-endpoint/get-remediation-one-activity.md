@@ -36,7 +36,7 @@ ms.technology: mde
 
 ## API description
 
-Returns information for the specified remediation activity. Presents the same columns as [Get all remediation activities](get-remediation-all-activities.md)", but returns results _only for the one specified remediation activity_.
+Returns information for the specified remediation activity. Presents the same columns as [Get all remediation activity](get-remediation-all-activities.md)", but returns results _only for the one specified remediation activity_.
 
 [Learn more about remediation activities](tvm-remediation.md).
 
@@ -126,11 +126,11 @@ GET** https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-
 
 ## See also
 
-- [Remediation activities methods and properties](get-remediation-methods-properties.md)
+- [Remediation activity methods and properties](get-remediation-methods-properties.md)
 
-- [Get all remediation activities](get-remediation-all-activities.md)
+- [Get all remediation activity](get-remediation-all-activities.md)
 
-- [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
+- [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
 
 - [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
 

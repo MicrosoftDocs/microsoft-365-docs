@@ -1,5 +1,5 @@
 ---
-title: Remediation activities methods and properties
+title: Remediation activity methods and properties
 description: The API response contains threat & vulnerability management remediation activities created in your tenant. You can request all the remediation activities, only one remediation activity, or information about exposed devices for a selected remediation task.
 keywords: apis, remediation, remediation api, get, remediation tasks, 
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Remediation activities methods and properties
+# Remediation activity methods and properties
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,8 +40,8 @@ The API response contains [Threat & vulnerability management](next-gen-threa
 
 **Method** | **Data type** | **Description**
 :---|:---|:---
-[Get all remediation activities](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
-[Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
+[Get all remediation activity](get-remediation-all-activities.md) | Investigation collection | Returns information about all remediation activities.
+[Get exposed devices remediation activy](get-remediation-exposed-devices-activities.md) | Investigation entity | Returns information about exposed devices for the specified remediation activity.
 [Get one remediation activity by Id](get-remediation-one-activity.md) | Investigation entity | Returns information for the specified remediation activity.
 
 Learn more about [remediation activities](tvm-remediation.md).
@@ -81,9 +81,9 @@ vendorId | String | Related vendor name
 
 ## See also
 
-- [Get all remediation activities](get-remediation-all-activities.md)
+- [Get all remediation activity](get-remediation-all-activities.md)
 
-- [Get exposed devices remediation activities](get-remediation-exposed-devices-activities.md)
+- [Get exposed devices remediation activity](get-remediation-exposed-devices-activities.md)
 
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
 
