@@ -47,7 +47,7 @@ Here are a few of the changes to Microsoft 365 compliance solutions and content 
 
 ### Data connectors
 
-- **Private keys** support has been added to [Bloomberg Message](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) data, [ICE Chat](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) data, and [Instant Bloomberg](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) data connectors.
+- **Private keys**. Support for private keys has been added to [Bloomberg Message](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) data, [ICE Chat](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) data, and [Instant Bloomberg](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) data connectors.
 
 ### Data loss prevention
 
@@ -92,12 +92,10 @@ The following topics were updated or added to support these new features:​​�
 
 - **Microsoft Information Protection in Microsoft 365**. [Updated information](https://docs.microsoft.com/microsoft-365/compliance/information-protection) for new capabilities.
 
-### Retention Policies and retention labels
+### Records management
 
-- **[Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention)**. Information added to explain a Teams message that a message was removed by a retention policy. This link and the system message in Teams provides new documentation, [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
-- **[Learn about retention for SharePoint and OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)**. Clarifies the retention inheritance behavior when you apply a retention label to a supported list item that has a document attachment, and also that items in the Preservation Hold library are always retained for a minimum of 30 days.
-- **[Use file plan to manage retention labels](https://docs.microsoft.com/microsoft-365/compliance/file-plan-manager)**. A new release of file plan removes or improves the previous length restrictions for import.
-- **[Create retention labels and apply them in apps](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels)**. New section for deleting retention labels, that also appears in "Automatically apply a retention label to retain or delete content". This new section includes information about a new release rolling out in preview that supports deleting labels that mark items as records.
+- **Length restrictions**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
+- **Retention labels**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
 
 ### Sensitive information types
 
@@ -113,9 +111,9 @@ Content was added or updated in the following topics:
 
 ### Sensitivity labels
 
-- **[Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**. (updated; added a note to the top of the page for end users who are searching for documentation about sensitivity labels that admins have published for them. Also updated the information about sensitivity labels support for US government tenants now supported for DoD environments)
-- **[Restrict access to content by using sensitivity labels to apply encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)**. (updated; the section Let users assign permissions includes the newly released option, Encrypt-Only)
-- **[Manage sensitivity labels in Office apps](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)**. (updated; new entry in the Outlook capabilities table for the new Encrypt-Only option. For mandatory labeling, most of the initially supported platforms are no longer in preview. Added a note to explain when you use mandatory labeling with the default label setting, users are prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client. This article also updates the Office built-in labeling client and the Azure Information Protection client section, with updated guidance to disable the unified labeling client by using the Group Policy setting "List of managed add-ins" for each app rather than the Group Policy setting "Use the Sensitivity feature in Office to apply and view sensitivity labels".)
+- **DoD support**. Support for US government tenants DoD environments.
+- **Outlook encryption**. Encryption options for Outlook now include Encrypt-Only when you select [Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
+- **Office apps**. Updated [guidance](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) how to enforce built-in labels in Office apps when you have the Azure Information Protection unified labeling client installed.
 
 ## February 2021
 
@@ -176,13 +174,6 @@ Content was added or updated in the following topics:
     - Azure and Microsoft 365 operated by 21Vianet in China)
 - [Configure IRM to use an on-premises AD RMS server](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Support for this service in an Exchange hybrid environment has been deprecated.
 
-### Retention policies and retention labels
-
-Content was added or updated in the following topics:
-
-- [Learn about retention for Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
-- [Automatically apply a retention label to retain or delete content](https://docs.microsoft.com/microsoft-365/compliance/apply-retention-labels-automatically)
-
 ### Sensitive Information Types
 
 Content was added or updated in the following topics:
@@ -197,11 +188,8 @@ Content was added or updated in the following topics:
 
 Content was added or updated in the following topics:
 
-- [Apply a sensitivity label to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
-- [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). The option for external sharing from SharePoint sites is now released as generally available. Additionally, the Microsoft 365 admin center and Planner now support applying sensitivity labels that are configured for Microsoft Teams, Microsoft 365 groups, and SharePoint sites.
-- [Enable sensitivity labels for Office files in SharePoint and OneDrive](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
-- [Manage sensitivity labels in Office apps](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
-- [Enable co-authoring for files encrypted with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-coauthoring). Announced as public preview at Ignite 2021, this new article explains the metadata changes that accompany this new feature, prerequisites, limitations, and how to enable the feature for a test tenant.
+- **SharePoint external sharing**. For [container labels](sensitivity-labels-teams-groups-sites.md) the option for external sharing from SharePoint sites is now released as generally available. Additionally, the Microsoft 365 admin center and Planner now support applying these sensitivity labels. 
+- **Co-authoring and AutoSave**. Support for [co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for encrypted files is released as preview for testing in non-production tenants.
 
 ## January 2021
 
