@@ -19,7 +19,7 @@ ms.date: 04/16/2020
 ms.technology: mde
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices
+# Onboard non-persistent virtual desktop infrastructure (VDI) devices to Microsoft Defender Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
