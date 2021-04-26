@@ -2,8 +2,8 @@
 title: "Help your users install Office on Windows 10 devices"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -31,7 +31,7 @@ description: "Help your users install Office apps on Windows 10 devices and easi
 
 # Help your users install Office on Windows 10 devices
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 admin center.
   

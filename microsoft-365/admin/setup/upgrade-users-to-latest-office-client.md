@@ -37,7 +37,7 @@ Office 2010 reached its end of support on October 13, 2020. Microsoft will no lo
 
 - Security fixes for vulnerabilities that are discovered
 
-See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) for more information.
+See [Office 2010 end of support roadmap](/deployoffice/endofsupport/office-2010-end-support-roadmap) for more information.
 
  **Is this the right topic for you?**
   
@@ -86,7 +86,7 @@ Switch to a subscription that includes Office. See [Switch to a different Micros
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 
- - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://products.office.com/home-and-business) or [Office Professional](https://products.office.com/professional)
+ - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) or [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      OR
 
@@ -126,4 +126,4 @@ If you haven't already done so, assign licenses to any users in your organizatio
 After you've verified the users you want to upgrade all have licenses, the final step is to have them install Office, see [Download and install or reinstall Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
-> If you don't want your users installing Office themselves, see [Manage software download settings in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) to download the Office software to your local network and then deploy Office by using the software deployment method you typically use.
+> If you don't want your users installing Office themselves, see [Manage software download settings in Office 365](/DeployOffice/manage-software-download-settings-office-365). You can use the [Office Deployment Tool](/DeployOffice/overview-office-deployment-tool) to download the Office software to your local network and then deploy Office by using the software deployment method you typically use.

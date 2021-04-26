@@ -104,7 +104,7 @@ To manually upgrade users to another subscription, complete the following steps 
 
 ### Step 1: Buy a new subscription
 
-If you don’t yet have a new subscription, you can [buy another Microsoft 365 for business subscription](../buy-another-subscription.md).
+If you don’t yet have a new subscription, you can [buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md).
 
 If you already have a subscription, continue to the next step.
 
@@ -125,7 +125,7 @@ Before moving on to the next step, it’s important to make sure that all the se
 You can use the Microsoft 365 admin center to reassign licenses for up to 20 users at a time. To learn how, see [Move users to a different subscription](move-users-different-subscription.md).
 
 > [!TIP]
-> If you have a lot of users, you can [use Office 365 PowerShell to assign user licenses in bulk](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+> If you have a lot of users, you can [use Office 365 PowerShell to assign user licenses in bulk](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 
 ### Step 4: Cancel the Office 365 E4 subscription
 

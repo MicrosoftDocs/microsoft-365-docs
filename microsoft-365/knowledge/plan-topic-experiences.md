@@ -56,9 +56,18 @@ We don't recommend choosing **No sites** because it prevents topics from being a
 
 We recommend you create a process for users or knowledge managers to request individual sites be removed from topic discovery if needed in your organization.
 
+### Multi-geo
+
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
+
+All processing and storage of content is done in the central location.
+
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
+
+> [!Note] 
+> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
 
 *Manage topics*
 

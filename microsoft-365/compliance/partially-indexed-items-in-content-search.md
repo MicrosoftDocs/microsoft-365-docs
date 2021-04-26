@@ -52,11 +52,11 @@ Certain types of files, such as Bitmap or MP3 files, don't contain content that 
   
 For a list of supported and disabled file formats, see the following topics:
   
-- **Exchange** - [File formats indexed by Exchange Search](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange** - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint** - [Default crawled file name extensions and parsed file types in SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## Messages and documents with partially indexed file types can be returned in search results
 
@@ -95,17 +95,15 @@ The following table shows the export behavior of indexed and partially indexed i
 
 ## Partially indexed items excluded from the search results
 
-If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. For example, let's say you run a search and don't include any keywords or properties because you want to include all content. But you include a date range condition for the query. If a partially indexed item falls outside of that date range, it won't be included as a partially indexed item. Date ranges are an effective way to exclude partially indexed items from your search results.
+If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
   
-Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
-  
-One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based eDiscovery hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
+One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based eDiscovery hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
   
 ## Indexing limits for messages
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in an eDiscovery search in Microsoft 365.
   
-For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
+For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](/sharepoint/search-limits).
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|

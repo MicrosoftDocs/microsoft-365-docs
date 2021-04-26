@@ -29,14 +29,6 @@ description: "Follow this checklist to remove an employee from Microsoft 365 and
 
 # Remove or Delete a former employee
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-  
 ## Sign out now!
 
 ::: moniker range="o365-worldwide"
@@ -45,7 +37,7 @@ Watch a short video about removing an employee. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 To prevent an employee from logging in:
 
@@ -88,7 +80,7 @@ Within an hour - or after they leave the current Microsoft 365 page they are on 
 > [!IMPORTANT]
 > If the user is in Outlook on the web, just clicking around in their mailbox, they may not be kicked out immediately. As soon as they select a different tile, such as OneDrive, or refresh their browser, the sign-out is initiated.
   
-To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345) cmdlet.
+To use PowerShell to sign out a user immediately, see [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet.
   
 For more information about how long it takes to get someone out of email, see [What you need to know about terminating an employee's email session](#what-you-need-to-know-about-terminating-an-employees-email-session).
   
@@ -127,7 +119,7 @@ There are two ways you can save the contents of the former employee's mailbox:
 
     Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
-    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 
 ## Forward a former employee's email to another employee or convert to a shared mailbox
 
@@ -303,7 +295,7 @@ If the user belongs to a queue group, they will no longer be a viable target of 
 
 ## Set up call forwarding to people in your organization
 
-If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
+If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](/microsoftteams/teams-calling-policy).
   
 ## Delete a former employee's user account
 
@@ -345,9 +337,9 @@ When you delete a user, the account becomes inactive for approximately 30 days. 
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
   
-To learn how to delete and restore user account in Active Directory, see [Delete a User Account](https://go.microsoft.com/fwlink/?linkid=841808).
+To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet.
+If you're using Azure Active Directory, see the [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
   
 ## What you need to know about terminating an employee's email session
 

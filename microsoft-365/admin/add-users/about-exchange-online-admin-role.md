@@ -25,7 +25,7 @@ description: "Exchange online admins manage your organization's email and mailbo
 
 # About the Exchange Online admin role
 
-To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](https://go.microsoft.com/fwlink/p/?LinkID=271807). You do this by assigning them to the Exchange admin role.
+To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](/exchange/exchange-admin-center). You do this by assigning them to the Exchange admin role.
   
  **Tip**: When you assign someone to the Exchange admin role, also assign them to the Service admin role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
   
@@ -33,9 +33,9 @@ To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) us
 
 Here are some of the key tasks users can do when they are assigned to the Exchange admin role:
   
-- [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
+- [Recover deleted items in a user mailbox - Admin Help](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Set up an archive and deletion policy for mailboxes in your organization](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Set up an archive and deletion policy for mailboxes in your organization](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization.
 
@@ -51,14 +51,14 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
   
- For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](/exchange/manage-role-groups-exchange-2013-help).
   
 ## Learn about other admin roles
 
 - [About Microsoft 365 admin roles](about-admin-roles.md)
 
-- [About the SharePoint Online admin role](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+- [About the SharePoint Online admin role](/sharepoint/sharepoint-admin-role)
 
-- [About the Skype for Business admin role](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
+- [About the Skype for Business admin role](/skypeforbusiness/skype-for-business-online)
 
-- [Use Microsoft Teams admin role](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 
+- [Use Microsoft Teams admin role](/MicrosoftTeams/using-admin-roles)

@@ -26,7 +26,7 @@ description: "Learn how to manage Microsoft 365 user accounts."
 
 # Manage Microsoft 365 user accounts
 
-You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users/), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
+You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](../admin/add-users/index.yml), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
 
 As soon as you purchase Microsoft 365, the Microsoft 365 admin center and PowerShell can be used to manage accounts. When managing cloud identities, every person in your organization has a separate user account name and password. If you want to integrate with your on-premises infrastructure and have user accounts synchronized with Microsoft 365, you can use Azure AD Connect to provide synchronization of identities and passwords for single sign-on (SSO) functionality.
   
@@ -56,14 +56,14 @@ The following table lists the different account management tools.
     
 |Tool|Notes|
 |:-----|:-----|
-|Microsoft 365 admin center  <br/> |[Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) <br/>  Provides a simple web interface to add and change user accounts.  <br/>  Can't be used to change users if directory synchronization is enabled (location and license assignment can be set).  <br/>  Can't be used with SSO options.  <br/> |
-|Windows PowerShell  <br/> |[Manage Microsoft 365 with Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Allows you to add users in bulk users by using a Windows PowerShell script.  <br/>  Can be used to assign location and licenses to accounts, regardless of how the accounts are created.  <br/> |
+|Microsoft 365 admin center  <br/> |[Add users individually or in bulk](../admin/add-users/add-users.md) <br/>  Provides a simple web interface to add and change user accounts.  <br/>  Can't be used to change users if directory synchronization is enabled (location and license assignment can be set).  <br/>  Can't be used with SSO options.  <br/> |
+|Windows PowerShell  <br/> |[Manage Microsoft 365 with Windows PowerShell](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  Allows you to add users in bulk users by using a Windows PowerShell script.  <br/>  Can be used to assign location and licenses to accounts, regardless of how the accounts are created.  <br/> |
 |Bulk import  <br/> |[Add several users at the same time](add-several-users-at-the-same-time.md) <br/>  Allows you to import a CSV file to add a group of users to Microsoft 365.  <br/>  Can't be used with SSO options.  <br/> |
-|Azure AD  <br/> |You get a free edition of Azure AD with your Microsoft 365 subscription. You can perform functions like self-service password reset for cloud users, and customization of the Sign-in and Access Panel pages by using the free edition. To get enhanced functionality, you can upgrade to the basic edition, Azure AD Premium P1, or Azure AD Premium P2. See [Azure AD editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) for the list of supported features.  <br/> |
-|Directory synchronization  <br/> |[Integrating your on-premises identities with Azure AD](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  For directory synchronization with or without password synchronization, use [Azure AD Connect with express settings](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  For multiple forests and SSO options, use [Custom Installation of Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Provides the infrastructure that's necessary to enable SSO.  <br/>  Required for many hybrid scenarios such as staged migration and hybrid Exchange  <br/>  Synchronizes security and mail-enabled groups from your AD DS.  <br/> |
+|Azure AD  <br/> |You get a free edition of Azure AD with your Microsoft 365 subscription. You can perform functions like self-service password reset for cloud users, and customization of the Sign-in and Access Panel pages by using the free edition. To get enhanced functionality, you can upgrade to the basic edition, Azure AD Premium P1, or Azure AD Premium P2. See [Azure AD editions](/azure/active-directory/fundamentals/active-directory-whatis) for the list of supported features.  <br/> |
+|Directory synchronization  <br/> |[Integrating your on-premises identities with Azure AD](/azure/active-directory/hybrid/whatis-hybrid-identity) <br/>  For directory synchronization with or without password synchronization, use [Azure AD Connect with express settings](/azure/active-directory/hybrid/how-to-connect-install-express).  <br/>  For multiple forests and SSO options, use [Custom Installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).  <br/>  Provides the infrastructure that's necessary to enable SSO.  <br/>  Required for many hybrid scenarios such as staged migration and hybrid Exchange  <br/>  Synchronizes security and mail-enabled groups from your AD DS.  <br/> |
 |||
    
-- Regardless of how you intend to add the user accounts to Microsoft 365, you need to manage several account features, such as assigning licenses, specifying location, and so on. These features can be managed long-term from the Microsoft 365 admin center or you can also [create user accounts with PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
+- Regardless of how you intend to add the user accounts to Microsoft 365, you need to manage several account features, such as assigning licenses, specifying location, and so on. These features can be managed long-term from the Microsoft 365 admin center or you can also [create user accounts with PowerShell](./create-user-accounts-with-microsoft-365-powershell.md).
     
     If you choose to add and manage all your users through the admin center, you will specify the location and assign licenses at the same time as creating the Microsoft 365 account. As a result, not much planning is required.
     
@@ -72,6 +72,6 @@ The following table lists the different account management tools.
   
 ## See also
 
-[Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/add-users)
+[Microsoft 365 admin center](../admin/add-users/index.yml)
 
-[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)  
+[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

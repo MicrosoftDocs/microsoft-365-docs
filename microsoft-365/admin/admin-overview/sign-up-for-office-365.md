@@ -65,7 +65,7 @@ Watch a short video about choosing a Microsoft 365 for business plan.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 Need help with choosing a plan? Sales consultants are available to answer your questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   
@@ -85,7 +85,7 @@ Need help with choosing a plan? Sales consultants are available to answer your q
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
@@ -100,7 +100,7 @@ Watch a short video that shows the sign up process.<br><br>
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
   
@@ -130,6 +130,6 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
     > [!IMPORTANT]
     >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
 
-## See also
+## Related content
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (links)
