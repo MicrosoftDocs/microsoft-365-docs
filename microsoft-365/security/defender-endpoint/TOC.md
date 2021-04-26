@@ -534,7 +534,7 @@
 ####### [Remediation activity methods and properties](get-remediation-methods-properties.md)
 ####### [Get one remediation activity by Id](get-remediation-one-activity.md)
 ####### [List all remediation activities](get-remediation-all-activities.md)
-####### [List exposed devices of one remediation activity](get-remediation-exposed-devices-activity.md)
+####### [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
 ###### [Score]()
 ####### [Score methods and properties](score.md)
