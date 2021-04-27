@@ -89,7 +89,7 @@ Following are the access control policy properties:
 **Property name: IncludedIdList**
 
 1. Description: The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.
-1. Options: The Group ID/GUID has to be used at this instance.
+1. Options: The Group ID/GUID must be used at this instance.
 
 The following example shows the usage of GroupID:
 
@@ -98,7 +98,7 @@ The following example shows the usage of GroupID:
 **Property name: ExcludedIDList**
 
 1. Description: The group(s) that the policy will not be applied to.
-1. Options: The Group ID/GUID has to be used at this instance.
+1. Options: The Group ID/GUID must be used at this instance.
 
 **Property name: Entry ID**
 
