@@ -270,7 +270,7 @@ In this phase, all client applications and Office Online are performing the clie
 
 Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
 
-In case the Office desktop applications will not work after performing signing out and signing in from the applications, it is strongly recommended to run the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) on the affected machine to fix the problem.
+In case the Office desktop applications will not work after performing signing out and signing in from the applications, we strongly recommend running the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) on the affected machine to fix the problem.
 
 If the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) has been deployed and scheduled on Windows clients in advance, the sign-out/sign-in procedure is not required.
 
