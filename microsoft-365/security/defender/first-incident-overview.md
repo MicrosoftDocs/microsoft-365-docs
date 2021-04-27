@@ -1,7 +1,7 @@
 ---
-title: Respond to your first incident-Overview
-description: Respond to your first incident-Overview.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Introduction to responding to your first incident
+description: The basics of responding to your first incident in Microsoft 365 Defender.
+keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Overview
+# Introduction to responding to your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,9 +35,9 @@ An organization's incident response strategy determines its ability to deal with
 This incident response walkthrough shows how you, as part of a security operations team, can perform most of the key incident response steps within Microsoft 365 Defender, namely:
 
 - Preparation
-- Detection and analysis
+- Triage and analysis
 - Remediation (containment, eradication, and recovery)
-- Post-incident activity
+- Post-incident review
 
 A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
 

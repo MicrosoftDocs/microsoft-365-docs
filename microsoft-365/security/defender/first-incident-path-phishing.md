@@ -1,6 +1,6 @@
 ---
-title: Other investigation paths-Phishing email
-description: Other investigation paths-Phishing email.
+title: Example of a phishing email attack
+description: Step through an example analysis of an identity-based attack.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Other investigation paths-Phishing email
+# Example of a phishing email attack
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

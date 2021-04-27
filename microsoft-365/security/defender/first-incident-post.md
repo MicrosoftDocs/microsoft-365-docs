@@ -1,6 +1,6 @@
 ---
-title: Respond to your first incident-Perform post-incident activities
-description: Respond to your first incident-Perform post-incident activities.
+title: Step 3. Perform a post-incident review of your first incident
+description: How to perform a review of your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,14 +23,14 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Perform post-incident activities
+# Step 3. Perform a post-incident review of your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-National Institute of Standards and Technology (NIST) recommends that once all steps have been taken to recover from the attack, organizations must learn and improve from the incident. Assessing the different aspects of incident-handling becomes important in preparing for the next incident.
+National Institute of Standards and Technology (NIST) recommends that once all steps have been taken to recover from the attack, organizations must review the incident to learn from it and learn and improve security posture or processes. Assessing the different aspects of incident-handling becomes important in preparing for the next incident.
 
 Microsoft 365 Defender can assist in performing post-incident activities by providing an organization with alerts that align with [MITRE ATT&CK Framework](https://attack.mitre.org/). All Microsoft Defender solutions label attacks in accordance with an ATT&CK tactic or technique. 
 
@@ -42,7 +42,7 @@ By mapping alerts to this industry framework, you can:
 - Identify skill gaps in attack method awareness.
 - Create a Power Automate Playbook for faster remediation. 
 
-Post-incident review activity can also result in fine-tuning your security configuration and security team's skills and processes, enhancing your organization’s response capabilities.
+Post-incident review activity can also result in fine-tuning your security configuration and security team's processes, enhancing your organization’s response capabilities.
 
 ## Next step
 

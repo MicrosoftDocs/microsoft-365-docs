@@ -1,7 +1,7 @@
 ---
-title: Other investigation paths-Identity-based attacks
-description: Other investigation paths-Identity-based attacks.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Example of an identity-based attack
+description: Step through an example analysis of an identity-based attack.
+keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Other investigation paths-Identity-based attacks
+# Example of an identity-based attack
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Microsoft Defender for Identity can help detect malicious attempts to compromise identities in your organization. Because Defender for Identity integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
 
-## Investigating the attack in Microsoft Defender for Identity
+## Analyzing the attack in Microsoft Defender for Identity
 
 Microsoft 365 Defender allows analysts to filter alerts by detection source on the **Alerts** tab of the incidents page. In the following example, the detection source is filtered to **Defender for Identity**. 
 

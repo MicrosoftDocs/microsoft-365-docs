@@ -1,6 +1,6 @@
 ---
-title: Respond to your first incident-Prepare for incident handling
-description: Respond to your first incident-Prepare for incident handling.
+title: Prepare your security posture for your first incident
+description: Set up your Microsoft 365 tenant's security posture for your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Prepare for incident handling
+# Prepare your security posture for your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

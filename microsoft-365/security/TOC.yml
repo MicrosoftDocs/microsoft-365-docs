@@ -141,17 +141,17 @@
                       href: defender/investigate-users.md                  
                 - name: Respond to your first incident
                   items: 
-                    - name: Overview
+                    - name: Introduction
                       href: defender/first-incident-overview.md
                     - name: Prepare
                       href: defender/first-incident-prepare.md
-                    - name: Detect, triage, and analyze
+                    - name: Step 1. Triage and analyze
                       href: defender/first-incident-analyze.md
-                    - name: Remediate
+                    - name: Step 2. Remediate
                       href: defender/first-incident-remediate.md
-                    - name: Post-incident
+                    - name: Step 3. Review
                       href: defender/first-incident-post.md
-                    - name: Other investigation paths
+                    - name: Additional incident examples
                       items: 
                         - name: Phishing email
                           href: defender/first-incident-path-phishing.md

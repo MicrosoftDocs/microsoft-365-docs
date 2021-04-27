@@ -1,7 +1,7 @@
 ---
-title: Respond to your first incident-Detect, triage, and analyze incidents
-description: Respond to your first incident-Detect, triage, and analyze incidents.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+title: Step 1. Triage and analyze your first incident
+description: How to triage and begin the analysis of your first incident in Microsoft 365 Defender.
+keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Respond to your first incident-Detect, triage, and analyze incidents
+# Step 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ As you spend some time establishing, implementing, and maintaining security meas
 
 Once a security incident is detected, Microsoft 365 Defender presents details you will need to triage or prioritize an incident or incidents over others. After determining prioritization, analysts can then focus their energy on investigating cases assigned to them.
 
-## Detect
+## Detection by Microsoft 365 Defender
 
 Microsoft 365 Defender receives alerts and events from multiple Microsoft security platforms as detection sources to create a holistic picture and context of malicious activity. These are the possible detection sources:
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender receives alerts and events from multiple Microsoft securi
 
 In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by correlating alerts from these different detection sources. Instead of spending resources stringing together or distinguishing multiple alerts into their respective incidents, you can start with the incident queue in Microsoft 365 Defender right away. This allows you to triage incidents in an efficient manner across endpoints, identities, email, and applications, and reduce the damage from an attack.
 
-## Triage
+## Triage your incidents
 
 Incident response in Microsoft 365 Defender starts once you triage the list of incidents using your organization’s recommended method of prioritization. To triage means to assign a level of importance or urgency to incidents, which then determines the order in which they will be investigated. 
 
@@ -87,7 +87,7 @@ The following is just one approach to triage:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="Example of alerts in an incident side pane"::: 
  
-## Analyze and investigate incidents
+## Analyze and investigate your first incident
 
 Understanding the context surrounding alerts is equally important. Often an alert is not a single independent event. There is a chain of processes created, commands, and actions that might not have occurred at the same time. Therefore, an analyst must look for the first and last activities of the suspicious entity in device timelines to understand the context of the alerts.
 
