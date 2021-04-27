@@ -114,7 +114,9 @@ If a proxy or firewall is in use, please ensure that servers can access all of t
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
 
-### Option 2: Onboard Windows servers through Azure Security Center - TBD - CHECK WITH ASC TEAM
+### Option 2: Onboard Windows servers through Azure Security Center 
+
+!!! TBD - CHECK WITH ASC TEAM !!!
 
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
