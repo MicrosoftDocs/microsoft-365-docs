@@ -20,7 +20,7 @@ description: "In this article, you will learn about how service encryption works
 
 # Service encryption with Customer Key
 
-Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
+Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams. This added layer of encryption is called service encryption.
 
 ## How service encryption, BitLocker, and Customer Key work together
 
@@ -34,7 +34,7 @@ Customer Key enhances the ability of your organization to meet the demands of co
 
 Using keys you provide, Customer Key at the application level encrypts:
 
-- SharePoint Online, OneDrive for Business, and Teams files.
+- SharePoint Online, OneDrive for Business, and Teams.
 - Files uploaded to OneDrive for Business.
 - Exchange Online mailbox content including e-mail body content, calendar entries, and the content within email attachments.
 - Text conversations from Skype for Business.
@@ -49,7 +49,7 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those DEPs to encrypt application data. For example:
 
-**Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
+**Exchange Online, Teams and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
 
 - the mailbox is marked for a mailbox move. Based on priorities in Microsoft 365 as described here [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
 
