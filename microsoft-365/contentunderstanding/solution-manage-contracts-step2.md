@@ -15,7 +15,7 @@ description: "Learn how to use Microsoft Teams to create your contract managemen
 
 # Step 2. Use Microsoft Teams to create your contract management site
 
-Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams site and use the features in Teams to:
+Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams channel and use the features in Teams to:
 
 - **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams we can create a **Contracts** tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. We can also configure the view so that each "card" lists the important data we care about (client, contractor, and fee amount).
 
@@ -38,13 +38,13 @@ After you attach the SharePoint document library, you will be able to view any c
 ## Customize your Contracts tab tile view
 
 > [!NOTE]
-> This section references code examples that are contained in the <b>ContractCardjson</b> file this is included in the <b>solutionfiles</b> zip file.
+> This section references code examples that are contained in the <b>ContractCard.json</b> file this is included in the <b>solutionfiles</b> zip file.
 
 While Teams allows you to view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all approved contracts will have a blue header bar.
 
    ![List view.](../media/content-understanding/tile.png)</br> 
 
-The custom tile view we used required us to make changes to the JSON used to format the current tile view. You can reference the JSON we used to create our card view by downloading the [contract card json file](TBD). In the following sections, we will reference specific sections of the code for features you see in the contract cards.
+The custom tile view we used required us to make changes to the JSON used to format the current tile view. You can reference the JSON we used to create our card view by downloading the [contract card json file](Placeholder-TBD). In the following sections, we will reference specific sections of the code for features you see in the contract cards.
 
 If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu and select <b>Format current view</b>.
 
@@ -206,4 +206,4 @@ This section defines how  "Classification" will display on the card, and uses th
 
 ## Next step
 
-[Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+[Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
