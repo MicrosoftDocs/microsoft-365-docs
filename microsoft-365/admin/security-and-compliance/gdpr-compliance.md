@@ -25,13 +25,13 @@ description: "Learn how Microsoft 365 for business can help you with the General
 
  *Using Microsoft 365 for business to mitigate and manage GDPR compliance* 
   
-The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. The GDPR is due to come into force on May 25, 2018. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
+The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
   
 This article helps you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
   
 ## A quick overview of the GDPR
 
-The GDPR is an EU regulation that updates and expands the earlier Data Protection Directive (DPD) first enacted in 1995. The GDPR is concerned with the privacy of an individual's data, be that individual a client, customer, employee, or business partner. The GDPR's goal is to strengthen personal data protection for EU citizens, whether they reside in the EU or elsewhere. The regulation sets out expectations and advises on how to achieve them. When the GDPR becomes enforceable in late May 2018, organizations must have measures in place that satisfy the requirements of the GDPR.
+The GDPR is an EU regulation that updates and expands the earlier Data Protection Directive (DPD) first enacted in 1995. The GDPR is concerned with the privacy of an individual's data, be that individual a client, customer, employee, or business partner. The GDPR's goal is to strengthen personal data protection for EU citizens, whether they reside in the EU or elsewhere. The regulation sets out expectations and advises on how to achieve them. Organizations must have measures in place that satisfy the requirements of the GDPR.
   
 The GDPR is all about data and how it's used. Think of data as having a life cycle. The cycle starts when you collect data, continues as you store it and use it (processing), and ends when you completely delete it from your systems. 
   
@@ -138,7 +138,136 @@ Microsoft 365 for business can help you with the GDPR process in the following w
     Tools such as audit logs allow you to track and report on data movement. Reports include classifying the data you collect and store, what you do with the data, and transfers of the data. 
     
 Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 for business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
-  
+
+
+## Steps to prepare for GDPR
+
+Where do you start with GDPR, especially if you are a small business in which handling personal data is not a core business activity? This section highlights a few steps you can take to get ready for GDPR.
+
+A good start is to make sure to apply the following key principles when collecting personal data:
+
+- Collect personal data with clearly defined purpose, and
+don’t use them for something else (if you tell your clients
+to give you their email so they can get your new offers or
+promotions, you can’t use this email for anything else or sell
+it to another business).
+- Don’t collect more data than you need (if you do home
+delivery, you need e.g. an address, a name on the buzzer, but
+you don’t need to know if this person is married or single) -
+simply be mindful of the personal data under your control.
+
+
+### Step 1: Check the personal data you collect and process, the purpose for which you do it, and on which legal basis.
+
+You have employees; you are processing their personal data based
+on the employment contract and based on legal obligations (e.g.
+reporting to tax authorities / social system).
+
+You can manage a list of individual customers, for instance to
+send them notice about special offers/adverts if you obtained
+consent from these customers.
+
+You don’t always need consent. There are cases when individuals will
+expect you to process their data. For instance, as a pizza merchant
+you can process the delivery address to advertise one of your new
+products. This is called a legitimate interest. You must inform
+individuals about your intended use and stop processing such data
+if they tell you to do so.
+
+If you manage a list of suppliers or business clients, then you
+do it based on the contracts you have with them. The contracts are
+not necessarily in a written form
+
+### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data.
+
+Individuals must know that you process their personal data and
+for which purpose.
+
+But there is no need to inform individuals when they already have
+information on how you will use the data, for instance, when a
+customer asks you to do a home delivery.
+
+You also have to inform individuals on request about the personal
+data you hold on them and give them access to their data. Keep
+your data in order, so when e.g. your employee asks you about
+what sort of personal data you have, you can provide it easily with
+no extra hassle.
+
+### Step 3: Keep personal data for only as long as necessary.
+
+Data on your employees: as long as the employment relationship
+and related legal obligations.
+
+Data on your customers: as long as the customer relationship
+lasts and related legal obligations (for instance for tax purposes).
+
+Delete the data where it is no longer necessary for the purposes for which you collected it.
+
+### Step 4: Secure the personal data you are processing.
+
+If you store this data on an IT system, limit the access to the
+files containing the data, e.g. by a password. Regularly update the
+security settings of your system.
+
+(Note: the GDPR does not prescribe the use of any specific IT system)
+
+If you store physical documents with personal data, then ensure
+that they are not accessible by unauthorized persons; lock them in
+safe or a cupboard.
+
+### Step 5: Keep documentation on your data processing activities.
+
+Prepare a short document explaining what personal data you
+hold and for what reasons. You might be required to make the
+documentation available to your national data protection authority
+when it requests it.
+
+Such documents should include the information listed below.
+
+|Information|Examples|
+|--|--|
+|The purpose of data processing|Alerting customers about special offers / providing home delivery; paying suppliers; salary and social security cover for employees|
+|The types of personal data|Contact details of customers; contact details of suppliers; employees’ data|
+|The categories of data subjects concerned|Employees; customers; suppliers|
+|The categories of recipients|Labor authorities; tax authorities|
+|The storage periods|Employees’ personal data until the end of the employment contract (and related legal obligations); customers’ personal data until the end of the client/contractual relationship|
+|The technical and organizational security measures to protect the personal data|IT system solutions regularly updated; locked cupboard/safe|
+|Whether personal data is transferred to recipients outside the EU|Use of a processor outside the EU (e.g. for storage in the cloud)|
+</br>
+
+### Step 6: Make sure your subcontractors respect the rules.
+
+If you sub-contract processing of personal data to another company,
+use only a service provider who guarantees the processing in
+compliance with the requirements of the GDPR (for instance security
+measures). 
+
+Before you sign a contract, check if they have already
+changed and adjusted to the GDPR. Put it in the contract.
+
+### Step 7: Check if you are concerned by the provisions below.
+ 
+To better protect personal data, organizations might have to
+appoint a Data Protection Officer (DPO). However, you don’t
+need to designate a Data Protection Officer if processing
+of personal data isn’t a core part of your business, is not a risky
+processing and your activity isn’t at a large scale;
+For example, if your business only collects data on your customers
+for home delivery, you do not need to appoint a DPO.
+Even if you need to make use of a DPO, he/she could be an existing
+employee tasked with this function in addition to his/her other
+tasks. Or it could be an external consultant; the same way many
+organizations use external accountants.
+
+You normally don’t need to carry out a Data Protection
+Impact Assessment. Such an impact assessment is reserved for those that pose more risk to personal data, for instance they do a large-scale monitoring of a publicly accessible area (e.g. video-surveillance).
+
+If you are a small business managing employees’ wages and a list
+of clients, you do not need to carry out a Data Protection Impact
+Assessment for those processing operations. 
+
+
+
 ## Next steps
 
 To get ready for the GDPR, here are some suggestions for next steps to take:
