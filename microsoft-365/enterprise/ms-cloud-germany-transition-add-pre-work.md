@@ -90,7 +90,7 @@ This is required for all clients. To ensure a smooth migration experience, it is
 
 Customers with managed Windows clients can prepare Windows machines with the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT). The Office Client Cutover Tool is designed to run periodically on Windows clients until the tenant reached phase 9 of the migration. When phase 9 has been reached, OCCT will perform all necessary changes on the machine automatically without user interaction.
 
-OCCT can be deployed on Windows client at any time before phase 9. If OCCT shall support the migration experience, it is recommended to start the deployment as soon as possible to equip a maximum number of clients.
+The OCCT can be deployed on Windows clients at any time before phase 9. If the OCCT shall support the migration experience, we recommend starting the deployment as soon as possible to equip a maximum number of clients.
 
 ## Active Directory Federation Services (AD FS)
 
