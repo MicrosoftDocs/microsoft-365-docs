@@ -19,10 +19,14 @@ Now that you've created your Contract Management channel and have attached your 
 
 In our contracts management solution, we want to create a Power Automate flow to do the following:
 
--  After a contract has been classified by your SharePoint Syntex model, change the contract status to <b>In Review</b>.
+-  After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
 - For approved contracts, the contract information is posted to a tab for payment processing.
 - For rejected contracts, the team is notified for further analysis. 
+
+The following shows the Power Automate flow for the contract management solution.
+
+![Flow diagram showing the entire solution.](../media/content-understanding/flow-entire-process.png)</br>
 
 ## Prepare your contract for review
 
