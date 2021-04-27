@@ -20,11 +20,8 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following tasks:
-- auditing the read, write or execute access to removable storage with or without exclusion
-- allowing the read, write or execute access to removable storage with or without exclusion 
-- preventing the read, write or execute access to removable storage with or without exclusion
-
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+- auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
 |Privilege |Permission  |
 |---------|---------|
