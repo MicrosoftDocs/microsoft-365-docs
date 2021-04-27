@@ -109,15 +109,15 @@ Here's an example:
   
 3.	To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill’s user page . 
   
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Example of a user page":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Example of a user page":::
   
 4.	On the user page is a chronological list of events starting with a *Risky Sign-in from a TOR network IP Address* alert. While the suspiciousness of an activity depends on the nature of how an organization conducts its business, in most cases the use of The Onion Router (TOR), a network that allows users to browse the web anonymously, in an enterprise environment might be considered highly unlikely and unnecessary for regular online operations.
   
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Example of the chronological list of events for a user":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Example of the chronological list of events for a user":::
   
 5.	Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Annette is an Administrator of Office 365, which means she has elevated privileges and the source incident might have led to access to confidential information. 
   
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Cloud App Security "::: 
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Cloud App Security "::: 
  
 6.	By selecting other alerts, an analyst can get a complete picture of the attack.
 
