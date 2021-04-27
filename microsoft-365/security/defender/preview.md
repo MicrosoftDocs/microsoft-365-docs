@@ -63,10 +63,6 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 The following features and enhancements are currently available on preview:
 
-### Improved Microsoft 365 security center
-The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
-
-- **[Microsoft 365 Defender threat analytics report](threat-analytics.md)** - Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
 - **[Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
 - **[Take action in advanced hunting](advanced-hunting-take-action.md)**—Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
 - **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.

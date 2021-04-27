@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
