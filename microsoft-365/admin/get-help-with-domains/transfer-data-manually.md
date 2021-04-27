@@ -86,11 +86,11 @@ There are several ways to save or transfer team site data:
   
 - You can save the old site as a template and import the template into the new site.
 
-- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- To transfer documents, first manually recreate your hierarchy on the new site. Then you can open both SharePoint team sites at the same time, open both document libraries with Windows Explorer, and copy and paste the documents. See [Video: Copy or move library files by using Open with Explorer](../../business-video/store-files.md).
 
 - To transfer list data, save a [list template](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), and use the saved template to re-create the list on the new site.
 
-- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
+- To save a document library or list content from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ## Transfer users' data between subscriptions
 
