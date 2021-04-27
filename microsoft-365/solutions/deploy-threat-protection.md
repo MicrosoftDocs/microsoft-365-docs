@@ -21,7 +21,7 @@ f1.keywords: NOCSH
 
 # Deploy threat protection capabilities across Microsoft 365 E5
 
-This solution describes powerful threat protection capabilities across Microsoft 365 E5. Read this solution to get an overview of what's included, how it works, and how to get started deploying these capabilities in your organization.
+This solution describes powerful threat protection capabilities across Microsoft 365 E5 and why these capabilities are important. Read this solution to get an overview of what's included in Microsoft 365 E5, how threat protection capabilities work, and how to set up and configure threat protection in your organization.
 
 ## Why threat protection is important 
 
