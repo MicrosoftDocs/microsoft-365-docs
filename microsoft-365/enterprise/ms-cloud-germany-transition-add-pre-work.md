@@ -88,7 +88,7 @@ Office 365 tenants transitioning to the region "Germany" require all users to cl
 
 This is required for all clients. To ensure a smooth migration experience, it is strongly recommended to inform and instruct all affected users in advance and at an early stage about this forthcoming activity.
 
-Customers with managed Windows clients can prepare Windows machines with the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT). The Office Client Cutover Tool is designed to run periodically on Windows clients until the tenant reached phase 9 of the migration. When phase 9 has been reached, OCCT will perform all necessary changes on the machine automatically without user interaction.
+Customers with managed Windows clients can prepare Windows machines with the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT). The OCCT is designed to run periodically on Windows clients until the tenant reached phase 9 of the migration. When phase 9 has been reached, the OCCT will perform all necessary changes on the machine automatically without user interaction.
 
 The OCCT can be deployed on Windows clients at any time before phase 9. If the OCCT shall support the migration experience, we recommend starting the deployment as soon as possible to equip a maximum number of clients.
 
