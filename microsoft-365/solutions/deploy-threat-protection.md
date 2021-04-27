@@ -23,7 +23,7 @@ f1.keywords: NOCSH
 
 This solution describes powerful threat protection capabilities across Microsoft 365 E5. Read this solution to get an overview of what's included, how it works, and how to get started deploying these capabilities in your organization.
 
-## Why protecting against threats is important 
+## Why threat protection is important 
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. Microsoft 365 E5 can help. 
 
