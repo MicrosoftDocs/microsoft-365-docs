@@ -57,7 +57,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 
 You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three (3) days after you have paid.
 
-1. In the <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>admin center</a>, go to the **Billing** > **Bills & payments** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Bills & payments** page.
 
 2. Find the invoice that you want, and then select **Get Fapiaos**.
 
