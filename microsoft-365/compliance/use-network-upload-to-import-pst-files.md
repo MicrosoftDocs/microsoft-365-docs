@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-Here are the step-by-step instructions required to use network upload to bulk-import multiple PST files to Microsoft 365 mailboxes. For frequently asked questions about using network upload to bulk-import PST files to Microsoft 365 mailboxes, see [FAQs for using network upload to import PST files](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
+Here are the step-by-step instructions required to use network upload to bulk-import multiple PST files to Microsoft 365 mailboxes. For frequently asked questions about using network upload to bulk-import PST files to Microsoft 365 mailboxes, see [FAQs for using network upload to import PST files](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files).
   
 [Step 1: Copy the SAS URL and install AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
