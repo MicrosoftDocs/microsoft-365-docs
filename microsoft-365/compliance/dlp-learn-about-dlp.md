@@ -19,11 +19,17 @@ description: "overview of Microsoft 365 Data Loss Prevention"
 
 # Learn about data loss prevention
 
-Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data, they need a way to prevent their users from accidentally sharing it with people who shouldn't have it. This is called data loss prevention (DLP).
+Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This is called data loss prevention (DLP).
 
-In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a data loss prevention policy, you can identify, monitor, and automatically protect sensitive items across Microsoft 365 services, Windows 10 endpoints and on-premises file shares and on-premises SharePoint.
+In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a data loss prevention policy, you can identify, monitor, and automatically protect sensitive items across:
+
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Office applications such as Word, Excel and PowerPoint
+- Windows 10 endpoints
+- non-Microsoft cloud apps
+- on-premises file shares and on-premises SharePoint.
  
-Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches like keywords, keyword dictionaries, the evaluation of regular expressions, internal functions, and secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies. Potentially, only a small percentage of your scanned items will fall into the sensitive category.
+Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
   
 ## DLP is part of the larger Microsoft 365 Compliance offering
 
@@ -31,7 +37,7 @@ Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you wil
 
 ## Protective actions of DLP policies
 
-DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action like copying a sensitive item to a different location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
+Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
 
 - show a pop-up policy tip to the user that warns them that they may be trying to share a sensitive item inappropriately
 - block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification
@@ -54,7 +60,7 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-DLP helps to protect your organizations sensitive items from risky activities even if your user's are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+Microsoft 365 DLP monitoring and protection are native to the applications that users use every day.This helps to protect your organizations' sensitive items from risky activities even if your user's are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
@@ -62,11 +68,11 @@ Keep in mind that DLP as a technology can monitor and protect your data at rest,
 
 **Business processes planning for DLP**
 
-DLP policies can block prohibited activities, like inappropriate sharing of sensitive information via email. As you plan your DLP policies, you must identify the business processes that touch your sensitive items. Be sure to include the process owners and users so that you can identify appropriate user behaviors that should be allowed and inappropriate user behaviors that should be protected against. You should plan your policies and deploy them in test mode, and evaluate their impact via [activity explorer](data-classification-activity-explorer.md) first, before applying them in more restrictive modes.
+DLP policies can block prohibited activities, like inappropriate sharing of sensitive information via email. As you plan your DLP policies, you must identify the business processes that touch your sensitive items. The business process owners can help you identify appropriate user behaviors that should be allowed and inappropriate user behaviors that should be protected against. You should plan your policies and deploy them in test mode, and evaluate their impact via [activity explorer](data-classification-activity-explorer.md) first, before applying them in more restrictive modes.
 
 **Organizational culture planning for DLP**
 
-A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips in policy warn mode to raise awareness with your users before changing the policy enforcement from warn mode to more restrictive modes.
+A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips in to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -131,7 +137,7 @@ location | include/exclude by|
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 
-3. **Choose the conditions to be matched in order for a policy to be applied to an item** - you can accept pre-configured conditions or define custom conditions. Some examples are:
+3. **Choose the conditions that must be matched for a policy to be applied to an item** - you can accept pre-configured conditions or define custom conditions. Some examples are:
 
 - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
 - item has a specified sensitivity label
