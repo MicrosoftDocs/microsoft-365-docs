@@ -127,6 +127,8 @@
           href: act-on-report.md
         - name: Add another domain
           href: add-domain.md 
+        - name: Set up a new business email address
+          href: set-up-a-new-business-email-address.md
     - name: Manage devices
       items:
         - name: Secure Windows 10 Pro devices
