@@ -143,8 +143,8 @@ Create a subtask or role files that contribute to an playbook or task.
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      url: https://packages.microsoft.com/
-      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
