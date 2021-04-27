@@ -1,7 +1,7 @@
 ---
 title: Get expert training on advanced hunting
 description: Free training and guidance from advanced hunting experts
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

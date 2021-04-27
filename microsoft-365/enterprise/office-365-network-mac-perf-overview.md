@@ -147,7 +147,9 @@ The office location summary page additionally shows the location's network asses
 
 Comparisons between customers in the same city are based on the expectation that all customers have equal access to network service providers, telecommunications infrastructure, and nearby Microsoft network points of presence.
 
-The details tab on the office location page shows the specific measurement results that were used to come up with any insights, recommendations, and the network assessment. This is provided so that network engineers can validate the recommendations and factor in any constraints or specifics in their environment.
+Location names can be customized when adding a new location or editing an existing location in the location flyout. This provides you with the flexibility to customize your location names at any time. Also, when adding LAN subnets directly in the location flyout, we show a drop-down list of soft-matched LAN subnets that you can select from. Circuit names for specific office egress IP addresses can be added and edited as well.
+
+The details tab on the office location page shows the specific measurement results that were used to come up with any insights, recommendations, and the network assessment. This is provided so that network engineers can validate the recommendations and factor in any constraints or specifics in their environment. You will also find the estimated number of users for collected samples at that office locations as well as the remote workers in that city.
 
 > [!div class="mx-imgBorder"]
 > ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)

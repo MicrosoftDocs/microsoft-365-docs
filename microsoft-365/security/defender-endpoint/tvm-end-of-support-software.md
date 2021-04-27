@@ -1,7 +1,7 @@
 ---
 title: Plan for end-of-support software and software versions
 description: Discover and plan for software and software versions that are no longer supported and won't receive security updates.
-keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
+keywords: threat and vulnerability management, Microsoft Defender for Endpoint tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
