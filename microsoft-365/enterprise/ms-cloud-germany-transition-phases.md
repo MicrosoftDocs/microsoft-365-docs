@@ -24,7 +24,7 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the ten phases of migration to the new German datacenters.
 
-![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[ ![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
@@ -123,7 +123,7 @@ In case you are still using SharePoint 2013 workflows, limit the use of SharePoi
 |:-------|:-----|:-------|
 | SharePoint and OneDrive are transitioned | SharePoint Online and OneDrive for Business are migrated from Microsoft Cloud Deutschland to Office 365 Global services in this phase.<br><ul><li>Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`).</li><li>Existing sites are preserved.</li><li>Client-side authentication tokens that were issued by the Security Token Service (STS) in the Microsoft Cloud Deutschland or Office 365 Global services instance are valid during the transition.</li></ul>|<ul><li>Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint.</li><li>The search index won't be preserved, and may take up to 10 days to be rebuilt.</li><li>SharePoint Online and OneDrive for Business content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time.</li><li>Upon completion of the SharePoint Online migration, the search results for SharePoint Online and OneDrive for Business content may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. Features that are dependent on search indexes, such as SharePoint Online News, may be affected while reindexing completes.</li><li>SharePoint 2013 workflows will be broken during migration and must be republished after migration.</li></ul>
 |**SPO Admin**: Republish SharePoint 2013 workflows| A SharePoint Online admin republishes the SharePoint 2013 workflows after the migration.|SharePoint 2013 workflows are available.
-|**PowerShell user**: Update to new module| All users of the SharePoint Online Powershell module need to update module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above after the SharePoint Online migration is completed. Completion is communicated in the message center.| SharePoint Online via PowerShell or the client-side object model will no longer fail.
+|**PowerShell user**: Update to new module| All users of the SharePoint Online PowerShell module need to update module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above after the SharePoint Online migration is completed. Completion is communicated in the message center.| SharePoint Online via PowerShell or the client-side object model will no longer fail.
 ||||
 
 Additional considerations:
@@ -193,7 +193,7 @@ To find out more about the differences for organizations in migration and after 
 
 **Applies to:** All customers using Exchange Online<br>
 
-Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historial tenant details are being migrated, which also includes back-end services for Security and Compliance features.
+Back-end Exchange Online Protection (EOP) features are copied to the new region "Germany". Exchange Online enables routing from external hosts to Office 365 and historical tenant details are being migrated, which also includes back-end services for Security and Compliance features.
 
 Customers using Exchange Online capabilities only (Non-Hybrid) do not need to pay attention at this stage.
 
@@ -224,6 +224,7 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Contacts and meetings will be migrated to Microsoft Teams.
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
+- The web browser version of Microsoft Teams will not work until phase 9 has been completed.
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 

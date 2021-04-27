@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 
@@ -28,11 +29,14 @@ ms.prod: m365-security
 > [!IMPORTANT]
 > Microsoft Defender for Office 365 evaluation is in public preview. This preview version is provided without a service level agreement. Certain features might not be supported or might have constrained capabilities.
 
-Conducting a comprehensive security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
+Conducting a thorough security product evaluation can help give you informed decisions on upgrades and purchases. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
 
 The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of Microsoft Defender for Office 365. With evaluation mode, all messages sent to Exchange Online mailboxes can be evaluated without pointing MX records to Microsoft. The feature only applies to email protection and not to Office Clients like Word, SharePoint, or Teams.
 
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
+
+> [!NOTE]
+> If you're in the unified Microsoft 365 security portal (security.microsoft.com) you can start a Defender for Office 365 evaluation here: Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
 
 ## How the evaluation works
 

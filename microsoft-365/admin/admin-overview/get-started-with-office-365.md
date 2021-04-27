@@ -32,8 +32,8 @@ Your organization recently got Microsoft 365, and now you need to use it so you 
 ## Training resources for your users
 
 
-- [Employee quick start](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
-    
+- [Employee quick start](../../business-video/employee-quick-setup.md)
+
 - [Office Training Center](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
 - [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
