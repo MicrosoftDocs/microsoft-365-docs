@@ -47,16 +47,16 @@ This contract management solution guidance includes four components of Microsoft
 
   ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png) </br>
 
-1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and saves it to the document library.
+1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
 2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>.
 
     The following is an example of a contract that the model is trained to identify.</br>
       ![Example of a contract.](../media/content-understanding/contract.png)</br> 
 
-3. In Microsoft Teams, all stakeholders are members of a secure Teams site in which all contract in the document library are are visible for approval or rejection.  By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
+3. In Microsoft Teams, all stakeholders are members of a secure Teams channel in which all contract in the document library are are visible for approval or rejection. By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
  
-4. By using Power Automate, contracts are moved through the approval process in the Teams site. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and the contract is forwarded to a third-party financial application for payment.
+4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This can be extended to write directly to a third-party financial application for payment.
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
@@ -64,6 +64,6 @@ This contract management solution guidance includes four components of Microsoft
 
 The next sections will go into detail about how we configured our example of our contracts management solution. It is divided into three components:
 
-- Step 1. [Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
-- Step 2. [Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
-- Step 3. [Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+- [Step 1. Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
+- [Step 2. Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
+- [Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
