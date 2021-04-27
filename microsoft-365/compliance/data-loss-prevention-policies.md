@@ -1,18 +1,18 @@
 ---
-title: "Overview of data loss prevention"
+title: "Data Loss Prevention Reference"
 # rename the md file to the above title
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/12/2019
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: low
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to identify, monitor, and automatically protect your organization's sensitive information across Office 365.
+description: data loss prevention reference material
 ---
 
 # Overview of data loss prevention
