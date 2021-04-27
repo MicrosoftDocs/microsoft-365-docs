@@ -87,7 +87,7 @@ The following is just one approach to triage:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="Example of alerts in an incident side pane"::: 
  
-## Analyze and investigate your first incident
+## Analyze your first incident
 
 Understanding the context surrounding alerts is equally important. Often an alert is not a single independent event. There is a chain of processes created, commands, and actions that might not have occurred at the same time. Therefore, an analyst must look for the first and last activities of the suspicious entity in device timelines to understand the context of the alerts.
 
@@ -99,7 +99,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Example of the Summary tab of an incident"::: 
  
-    For a quick guide about which domain each detection source covers, review the [Detect](#detect) section of this article.
+    For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 
 2.	From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Cloud App Security as the detection source takes to its corresponding alert page.
   

@@ -51,7 +51,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 
 
-Continuing the example in [Detect, triage, and analyze incidents](first-incident-analyze.md#analyze-and-investigate-incidents), an analyst can remediate this incident with these actions:
+Continuing the example in [Detect, triage, and analyze incidents](first-incident-analyze.md#analyze-your-first-incident), an analyst can remediate this incident with these actions:
 
 1. Immediately reset the user account password
 2. Isolate the device in Microsoft 365 Defender until deep analysis is complete
