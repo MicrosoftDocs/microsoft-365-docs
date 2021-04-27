@@ -50,7 +50,7 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
   
-  ![Report Message - More actions](../../media/more-actions-ellipses.png)
+  ![Report Message - More actions](../../media/report-message-more-actions.png)
 
   ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
 
@@ -64,7 +64,7 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.  
 
-  ![Report Message - More actions](../../media/more-actions-ellipses.png)
+  ![Report Message - More actions](../../media/report-message-more-actions.png)
 
   ![Report Message - Not junk](../../media/report-message-not-junk.png)
 
@@ -126,7 +126,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the web Report Message add-in icon](../../media/report-message-icon-owa.png)
+  ![Outlook on the web Report Message add-in icon](../../media/OWA-report-message-icon.png)
 
 ### Get the add-in for your organization
 
