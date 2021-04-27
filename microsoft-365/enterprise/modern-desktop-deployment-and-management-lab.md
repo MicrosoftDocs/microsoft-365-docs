@@ -2,10 +2,10 @@
 title: Windows and Office deployment lab kit
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -99,23 +99,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 ## Additional guidance
 
   - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
-
   - [Microsoft Endpoint Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Plan for Windows 10 deployment](/windows/deployment/planning/index)
-
   - [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Getting Started with Intune](/intune/get-started-evaluation)
 
 ## Related resources
 
   - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 for business](https://products.office.com/business/office)
-
   - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [Windows 10 for enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [Windows 10 for small and medium business](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
