@@ -46,7 +46,7 @@ For more details, see [Set up Basic Mobility and Security](set-up.md).
 
 ## I’m trying to set up Basic Mobility and Security but it seems stuck. The Microsoft 365 Service Health has been showing “provisioning” for a while. What can I do?
 
-It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. For support options, see [Still need help?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is.
 
 ## What can I do if device enrollment fails?
 
@@ -68,7 +68,7 @@ Basic Mobility and Security is hosted by the Intune service. It is a subset of
 
 ## How do policies work for Basic Mobility and Security? How do I set them up? Disable them?
 
-After you complete initial setup for Basic Mobility and Security, you create policies and apply them to groups of users in the Security & Compliance Center. Policies require users of the policies to enroll their devices in Basic Mobility and Security before the device can be used to access Microsoft 365 data. The policies that you set up determine settings for mobile devices, for example, how often passwords must be reset or whether data encryption is required. For more information, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) and [Microsoft 365 compliance center](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8).
+After you complete initial setup for Basic Mobility and Security, you create policies and apply them to groups of users in the Security & Compliance Center. Policies require users of the policies to enroll their devices in Basic Mobility and Security before the device can be used to access Microsoft 365 data. The policies that you set up determine settings for mobile devices, for example, how often passwords must be reset or whether data encryption is required. For more information, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) and [Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center.md).
 
 For step-by-step instructions for creating and deploying device policies, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 
