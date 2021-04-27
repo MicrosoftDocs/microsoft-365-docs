@@ -25,7 +25,7 @@ Another key business issue we have in setting up a contracts management solution
 
      ![Posts tab.](../media/content-understanding/posts.png)</br> 
 
-- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. We can easily extend this solution to instead write this information directly to a third-party application (for example, Dynamics CRM).
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. We can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
 
 ## Attach your SharePoint document library to the Contracts tab 
 

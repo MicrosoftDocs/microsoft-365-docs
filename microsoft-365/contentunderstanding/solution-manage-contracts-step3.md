@@ -21,11 +21,12 @@ In our contracts management solution, we want to create a Power Automate flow to
 
 -  After a contract has been classified by your SharePoint Syntex model, change the contract status to <b>In Review</b>.
 - The contract is then reviewed and is either approved or rejected.
-- For approved contracts, the contract information is posted to a channel for payment processing.  
+- For approved contracts, the contract information is posted to a tab for payment processing.
+- For rejected contracts, the team is notified for further analysis. 
 
-### Prepare your contract for review
+## Prepare your contract for review
 
-When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will will first check out the file and change the status to "In Review."
+When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to "In Review."
 
 ![Update status.](../media/content-understanding/flow-overview.png)</br>
 
@@ -128,10 +129,10 @@ When a contract has been approved, the following things occur:
 
 - On the Contracts tab, the status in the contract card will change to <b>Approved</b>.
 ![Card status approved.](../media/content-understanding/flow2.png)</br>
-In your flow, the contract is checked out, the status is changed to "Approved" and checked back in again.</br>
+In your flow, the status is changed to "Approved."</br>
 ![Flow status approved.](../media/content-understanding/status-approved.png)</br>
 
-- The contract will be added to the **For Payout** tab so that the Total Fee can be submitted for payment by a third-party software (for example, Dynamics CRM).</br>
+- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</br>
 ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)</br>
 In the flow, we created the following item to move approved contracts to the **For Payout** tab. </br>
 ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
