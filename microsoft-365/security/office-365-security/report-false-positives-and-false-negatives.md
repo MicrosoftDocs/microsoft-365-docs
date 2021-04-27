@@ -50,9 +50,11 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
   
-  ![Report Message - More actions](../../media/report-message-more-actions.png)
+   > [!div class="mx-imgBorder"]
+   > ![Report Message - More actions](../../media/report-message-more-actions.png)
 
-  ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
+   > [!div class="mx-imgBorder"]
+   > ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
 
@@ -64,9 +66,11 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.  
 
-  ![Report Message - More actions](../../media/report-message-more-actions.png)
+   > [!div class="mx-imgBorder"]
+   > ![Report Message - More actions](../../media/report-message-more-actions.png)
 
-  ![Report Message - Not junk](../../media/report-message-not-junk.png)
+   > [!div class="mx-imgBorder"]
+   > ![Report Message - Not junk](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
@@ -122,11 +126,13 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  ![Report Message add-in icon for Outlook](../../media/OutlookReportMessageIcon.png)
+  > [!div class="mx-imgBorder"]
+  > ![Report Message add-in icon for Outlook](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the web Report Message add-in icon](../../media/OWA-report-message-icon.png)
+  > [!div class="mx-imgBorder"]
+  > ![Outlook on the web Report Message add-in icon](../../media/owa-report-message-icon.png)
 
 ### Get the add-in for your organization
 
@@ -209,7 +215,8 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook on the web, the icon looks like this:
 
-  ![Outlook on the web Report Phishing add-in icon](../../media/OWA-ReportPhishing.png)
+  > [!div class="mx-imgBorder"]
+  > ![Outlook on the web Report Phishing add-in icon](../../media/OWA-ReportPhishing.png)
 
 ### Get the add-in for your organization
 
