@@ -123,7 +123,7 @@ To add a **Description** column to the document library page, follow these steps
 
 Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning (Preview).
 
-1. On a SharePoint page, select **More options** (**...**), and then select **Settings**.
+1. In Viva Learning (Preview), select **More options** (**...**), and then select **Settings**.
 
      ![SharePoint library page showing the More options and Settings option.](../media/learning/learning-sharepoint-library-1.png)
 	 
