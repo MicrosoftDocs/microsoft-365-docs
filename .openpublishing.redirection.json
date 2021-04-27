@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/misc/contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/ways-to-manage-contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/azure-ad-roles-in-the-mac.md",
+      "redirect_url": "/azure/active-directory/roles/permissions-reference#available-roles",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/services-in-china/view-your-bill-or-get-a-fapiao.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
       "redirect_document_id": false
