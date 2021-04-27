@@ -84,6 +84,6 @@ Your threat protection features can be configured in parallel, so if you have mu
 
 ## Next step
 
-Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
+Continue to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
 
 
