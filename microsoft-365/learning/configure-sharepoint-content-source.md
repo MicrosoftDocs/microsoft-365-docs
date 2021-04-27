@@ -97,7 +97,7 @@ To configure SharePoint as a learning content sources in for Viva Learning (Prev
 > [!NOTE]
 > To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning (Preview) interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored. For more information, see [*placeholder - link to support doc*].
 
-## Folder URL document library curation
+### Folder URL document library curation
 
 Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning (Preview) by the Microsoft Graph API.
  
@@ -119,7 +119,7 @@ To add a **Description** column to the document library page, follow these steps
 
      ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)
  
-## Provide your own organization's content
+### Provide your own organization's content
 
 Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning (Preview).
 
