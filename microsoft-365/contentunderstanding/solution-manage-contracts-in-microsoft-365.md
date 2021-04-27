@@ -39,9 +39,9 @@ This contract management solution guidance includes four components of Microsoft
 
 - **Microsoft SharePoint lists**: Use the formatting available in modern SharePoint lists to present contracts in a business-friendly format.
 
-- **Microsoft Teams**: Use the functionality of a Teams site and associated channels to allow your stakeholders to review and manage contracts.
+- **Microsoft Teams**: Use the functionality of a Teams channel and associated tabs to allow your stakeholders to review and manage contracts.
 
-- **Power Automate**: Use flows to process contracts through the approval process, and then to a third-party application for payment.
+- **Power Automate**: Use flows to guide contracts through the approval process, and then to a third-party application for payment.
 
 ### How it all works
 
@@ -65,5 +65,5 @@ This contract management solution guidance includes four components of Microsoft
 The next sections will go into detail about how we configured our example of our contracts management solution. It is divided into three components:
 
 - Step 1. [Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
-- Step 2. [Use Microsoft Teams to create your contract management site](solution-manage-contracts-step2.md)
+- Step 2. [Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
 - Step 3. [Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
