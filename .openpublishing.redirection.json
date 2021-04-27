@@ -13,7 +13,7 @@
     {
       "source_path": "microsoft-365/admin/manage/share-sites-with-external-users.md",
       "redirect_url": "/sharepoint/change-external-sharing-site?WT.mc_id=365AdminCSH_globalsearch",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/misc/customize-help-desk.md",
