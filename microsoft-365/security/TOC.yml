@@ -155,7 +155,7 @@
                       items: 
                         - name: Phishing email
                           href: defender/first-incident-path-phishing.md
-                        - name: Identity-based attacks
+                        - name: Identity
                           href: defender/first-incident-path-identity.md
                 - name: Get email notifications
                   href: defender/get-incident-notifications.md
