@@ -28,7 +28,7 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
 You must be an administrator in the Teams admin center to perform these tasks.
 
-To manage settings for Viva Learning (Preview), follow these steps:
+To make Viva Learning (Preview) available for users in your organization, follow these steps:
 
 1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
 
