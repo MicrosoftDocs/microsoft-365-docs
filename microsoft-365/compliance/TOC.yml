@@ -311,6 +311,8 @@
               href: dlp-conditions-and-exceptions.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+            - name: Data Loss Prevention reference
+              href: data-loss-prevention-policies.md
 - name: Manage information governance
   items: 
     - name: Govern your data
