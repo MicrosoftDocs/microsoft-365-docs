@@ -31,4 +31,4 @@ A key business issue we identified is that we need a way to identify and classif
 
 ## Next step
 
-[Use Microsoft Teams to create your contract management site](solution-manage-contracts-step2.md)
+[Step 2. Use Microsoft Teams to create your contract management site](solution-manage-contracts-step2.md)
