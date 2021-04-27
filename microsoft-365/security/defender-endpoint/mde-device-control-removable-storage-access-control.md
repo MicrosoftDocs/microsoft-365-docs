@@ -39,9 +39,10 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 Deploy Removable Storage Access Control on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
 
-:::image type="content" source="images/anti-malware.png" alt-text="The screen showing device that has anti-malware client version":::
 
-## Policy Properties
+<include the image powershell.png>
+
+## Policy properties
 
 You can use the following properties to create a removable storage group:
 
