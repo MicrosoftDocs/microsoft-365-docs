@@ -82,7 +82,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 ### Resolution
 
-1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
+1. Check location identified in the search to ensure that the location of the file is correct and added in the search locations.
 
 2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](/sharepoint/crawl-site-content) to reindex the site.
 
