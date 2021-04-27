@@ -132,7 +132,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 - In Outlook on the web, the icon looks like this:
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook on the web Report Message add-in icon](../../media/OWA-report-message-icon.png)
+  > ![Outlook on the web Report Message add-in icon](../../media/owa-report-message-icon.png)
 
 ### Get the add-in for your organization
 
