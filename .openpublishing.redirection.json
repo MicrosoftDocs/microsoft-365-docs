@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/misc/contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/ways-to-manage-contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/azure-ad-roles-in-the-mac.md",
+      "redirect_url": "/azure/active-directory/roles/permissions-reference#available-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/services-in-china/view-your-bill-or-get-a-fapiao.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/services-in-china/buy-or-try-subscriptions.md",
+      "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/switch-to-a-different-plan.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/switch-plans-manually.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/why-can-t-i-switch-plans.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
@@ -3678,6 +3718,11 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-assignedipaddress-function.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-assignedipaddress-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
       "redirect_document_id": false
     }
   ]
