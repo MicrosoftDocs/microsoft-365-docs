@@ -37,12 +37,6 @@ A question we often get is, "What should I do to secure data and protect access 
 
 You need to be a global administrator to complete the steps in this solution.
 
-## Watch: Delete a user
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
 |||
 |:-----|:-----|
 |**Step** <br/> |**Why do this** <br/> |
