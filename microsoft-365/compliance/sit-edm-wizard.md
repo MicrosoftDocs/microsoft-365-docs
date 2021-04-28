@@ -65,7 +65,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 2. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
 
-3. Choose **Next** and choose **Create pattern**.
+3. Choose **Next** > **Create pattern**.
 
 4. Choose the **Confidence level** for this pattern. The confidence level you select is the one that will be assigned to the match when the content in the document meets the criteria you define next. To learn more about configuring a pattern, see [Create a custom sensitive information type in the Compliance Center](create-a-custom-sensitive-information-type.md).
 
