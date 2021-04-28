@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft Viva Learning (Preview) in the Teams admin center (Coming soon)"
+title: "Set up Microsoft Viva Learning (Preview) in the Teams admin center"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ localization_priority: None
 description: "Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center."
 ---
 
-# Set up Microsoft Viva Learning (Preview) in the Teams admin center (Coming soon)
+# Set up Microsoft Viva Learning (Preview) in the Teams admin center
 
 > [!NOTE]
 > The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
