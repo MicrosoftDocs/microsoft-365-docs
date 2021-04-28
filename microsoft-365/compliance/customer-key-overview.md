@@ -49,7 +49,7 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those DEPs to encrypt application data. For example:
 
-**Exchange Online, Teams and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
+**Exchange Online, Teams, and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
 
 - the mailbox is marked for a mailbox move. Based on priorities in Microsoft 365 as described here [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
 
