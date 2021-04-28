@@ -141,10 +141,9 @@ In your flow, the status is changed to "Approved."</br>
 In the flow, we created the following item to move approved contracts to the **For Payout** tab. </br>
 ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
 
-- An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</br>
-![Contract approval posted.](../media/content-understanding/flow1.png)</br>
+- An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.<br>
 
-</br>
+   ![Contract approval posted.](../media/content-understanding/flow1.png)</br>
 
    ![Adaptive card approval.](../media/content-understanding/adaptive-card-approval.png)</br>
 
@@ -233,7 +232,7 @@ In the flow, we created the following item to move approved contracts to the **F
 
 When a contract has been rejected, the following things occur:
 
-- On the Contracts tab, the status in the contract card will change to <b>Rejected</b>.
+- On the **Contracts** tab, the status in the contract card will change to <b>Rejected</b>.
 ![Card status rejected.](../media/content-understanding/rejected.png)</br>
 In our flow, we check out the contract file, change the status to <b>Rejected</b>, and check the file back in again.</br>
 ![Flow status rejected.](../media/content-understanding/reject-flow.png)</br>
