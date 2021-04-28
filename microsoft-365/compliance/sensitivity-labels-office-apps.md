@@ -342,11 +342,12 @@ Examples:
 ## Require users to apply a label to their email and documents
 
 > [!IMPORTANT]
-> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**.
 > 
-> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions.
+>
+> To use mandatory labeling for documents but not emails, see the instructions in the next section that explains how to configure Outlook-specific options.
 
-When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
+When the policy setting **Require users to apply a label to their email and documents** is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
 - For the Azure Information Protection unified labeling client:
     - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved or users close the document.
