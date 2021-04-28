@@ -34,7 +34,7 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
    ![Left navigation in the Teams admin center showing Teams apps and Manage apps section.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. On the **Manage apps** page, in the search box, type *Viva learning* to search for Viva Learning (Preview), and then select **Viva Learning (Preview)**.
+2. On the **Manage apps** page, in the search box, type *Viva learning*, and then select **Viva Learning (Preview)**.
 
    ![Manage apps page in the Teams admin center showing the search box.](../media/learning/learning-app-teams-manage-apps-page.png)
 
