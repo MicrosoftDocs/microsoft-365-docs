@@ -28,7 +28,7 @@ ms.technology: mde
 This article describes an antivirus/antimalware feature known as "block at first sight." This article includes procedures to enable block at first sight for your organization. 
 
 > [!TIP]
-> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are a home user who has questions about block at first sight, [see this section](#are-you-a-home-user).
+> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, [see this section](#are-you-a-home-user).
 
 ## What is "block at first sight"?
 
@@ -180,7 +180,11 @@ You might choose to disable block at first sight if you want to retain the prere
     > [!NOTE]
     > Disabling block at first sight does not disable or alter the prerequisite group policies.
 
-## Are you a home user?
+## Not an enterprise admin or IT Pro?
+
+If you are not an enterprise admin or IT Pro, but you have questions about block at first sight, this section is for you.
+
+### How to manage block at first sight on or off on your own device
 
 If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app.
 
