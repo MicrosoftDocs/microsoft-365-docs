@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
-description: "overview of Microsoft 365 Data Loss Prevention"
+description: "Learn how to protect your sensitive information using Microsoft 365 data loss prevention policies and tools and take a tour through the DLP lifecycle."
 ---
 
 # Learn about data loss prevention
