@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create a Microsoft 365 Group with a specific Preferred Data Location (PDL)
 
-When users in a multi-geo environment create a Microsoft 365 Group, the group Preferred Data Location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any region they select. 
+When users in a multi-geo environment create a Microsoft 365 Group, the group preferred data location (PDL) is automatically set to that of the user. Global, SharePoint, and Exchange Administrators can create groups in any region they select. 
 
 If you need to create a group with a specific PDL, you can do that using from the SharePoint admin center or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet. When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.
 
