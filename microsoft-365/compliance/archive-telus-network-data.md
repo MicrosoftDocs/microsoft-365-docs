@@ -28,7 +28,7 @@ The following overview explains the process of using a connector to archive TELU
 
 1. Your organization works with TeleMessage and TELUS to set up a TELUS Network connector. For more information, see [TELUS Network Archiver](https://www.telemessage.com/office365-activation-for-telus-network-archiver/).
 
-2. Once every 24 hours, SMS messages from your organization’s TELUS Network are copied to the TeleMessage site.
+2. In real time, SMS messages from your organization’s TELUS Network are copied to the TeleMessage site.
 
 3. The TELUS Network connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers the SMS messages from the previous 24 hours to a secure Azure Storage location in the Microsoft Cloud. The connector also converts the content of SMS messages to an email message format.
 
