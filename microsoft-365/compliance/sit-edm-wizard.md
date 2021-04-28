@@ -63,7 +63,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 1. Under Exact Data Matches choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type creation wizard.
 
-2. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
+2. Select **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
 
 3. Choose **Next** > **Create pattern**.
 
