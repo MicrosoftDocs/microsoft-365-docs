@@ -1,5 +1,5 @@
 ---
-title: "Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ localization_priority: None
 description: "Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)."
 ---
 
-# Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
+# Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
 
 > [!NOTE]
 > The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
