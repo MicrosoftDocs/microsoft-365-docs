@@ -60,7 +60,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Let users assign permissions: <br /> - Prompt users](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[Audit label-related user activity](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rolling out: 16.0.13628+ | Yes <sup>\*</sup>                                                        |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rolling out: 16.45+         | Preview: [Beta Channel](https://office.com/insider) | Rolling out: 16.0.13628+ | Under review                                            
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rolling out: 16.45+         | Rolling out: 2.47+ | Rolling out: 16.0.13628+ | Rolling out                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rolling out: 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Beta Channel](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -102,8 +102,7 @@ Requires the [new Outlook for Mac](https://support.microsoft.com/office/the-new-
 The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
 - Microsoft 365 compliance center
-- Microsoft 365 security center
-- Office 365 Security & Compliance Center
+- Office 365 Security & Compliance Center (older admin portal)
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
