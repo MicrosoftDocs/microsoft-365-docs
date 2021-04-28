@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/manage-messages.md",
+      "redirect_url": "/microsoft-365/admin/manage/message-center",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/admin-overview/get-started-with-office-365.md",
       "redirect_url": "/microsoft-365/business/microsoft-365-business-start",
       "redirect_document_id": true
