@@ -93,7 +93,7 @@ After creating an EDM sensitive information type and verifying that your sensiti
 - Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](links-to-edm-upload-agent-by-subscription-type.md).
 - Check that the information you entered in the document is present in your sensitive information table. 
 - Verify that the sensitive informaiton you entered in the document matches the format, including any delimiters not selected to be ignored when you defined your schema, that you entered in your table. 
-- Check that the sensitive info type you selected when configuring your primary element is able to match the content you entered in the document, including any delimiters present, regardless of the Ignored delimiters option selected for the EDM typoe. You can confirm this by separately using the Test feature on the sensitive info type you selected for your primary element in the EDM type. 
+- Check that the sensitive info type you selected when configuring your primary element is able to match the content you entered in the document, including any delimiters present, regardless of the **Ignored** delimiters option selected for the EDM type. You can confirm this by separately using the **Test** feature on the sensitive info type you selected for your primary element in the EDM type. 
 
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
