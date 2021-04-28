@@ -35,11 +35,11 @@ Organizations can start their DLP journey:
 
 These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
 
-
 ## Overview of planning process
 
 ### Identify stakeholders
- who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
+
+who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
 a.	Regulatory and compliance officers
 b.	Chief risk officer
 c.	Legal officers
