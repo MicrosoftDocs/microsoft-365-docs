@@ -26,24 +26,24 @@ In our contracts management solution, we want to create a Power Automate flow to
 
 The following shows the Power Automate flow for the contract management solution.
 
-![Flow diagram showing the entire solution.](../media/content-understanding/flow-entire-process.png)</br>
+![Flow diagram showing the entire solution.](../media/content-understanding/flow-entire-process.png)
 
 ## Prepare your contract for review
 
 When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to "In review."
 
-![Update status.](../media/content-understanding/flow-overview.png)</br>
+![Update status.](../media/content-understanding/flow-overview.png)
 
 After checking out the file, change the status value to "In review."
 
-![In review status.](../media/content-understanding/in-review.png)</br>
+![In review status.](../media/content-understanding/in-review.png)
 
 The next step is to create an adaptive card stating that the contract in waiting for review and posting it to the Contract Management channel.
 
-![Contract review post.](../media/content-understanding/contract-approval-post.png)</br>
+![Contract review post.](../media/content-understanding/contract-approval-post.png)
 
 
-![Create adaptive card for review.](../media/content-understanding/adaptive-card.png)</br>
+![Create adaptive card for review.](../media/content-understanding/adaptive-card.png)
 
 The following is the JSON code used for this step in the Power Automate flow.
 
@@ -125,27 +125,33 @@ The following is the JSON code used for this step in the Power Automate flow.
 
 In your flow, next you need to create a condition in which your contract will be either  approved or rejected.
 
-![Conditional.](../media/content-understanding/condition.png)</br>
+![Conditional.](../media/content-understanding/condition.png)
 
 ## If the contract is approved
 
 When a contract has been approved, the following things occur:
 
-- On the Contracts tab, the status in the contract card will change to <b>Approved</b>.
-![Card status approved.](../media/content-understanding/flow2.png)</br>
-In your flow, the status is changed to "Approved."</br>
-![Flow status approved.](../media/content-understanding/status-approved.png)</br>
+- On the **Contracts** tab, the status in the contract card will change to **Approved**.
 
-- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</br>
-![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)</br>
-In the flow, we created the following item to move approved contracts to the **For Payout** tab. </br>
-![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)</br>
+   ![Card status approved.](../media/content-understanding/flow2.png)
 
-- An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.<br>
+- In your flow, the status is changed to "Approved."
 
-   ![Contract approval posted.](../media/content-understanding/flow1.png)</br>
+   ![Flow status approved.](../media/content-understanding/status-approved.png)
 
-   ![Adaptive card approval.](../media/content-understanding/adaptive-card-approval.png)</br>
+- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).
+
+   ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)
+
+- In the flow, we created the following item to move approved contracts to the **For Payout** tab.
+
+   ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)
+
+- An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.
+
+   ![Contract approval posted.](../media/content-understanding/adaptive-card-approval.png)
+
+   ![Adaptive card approval.](../media/content-understanding/adaptive-card.png)
 
 
    The following is the JSON code used for this step in the Power Automate flow.
@@ -232,14 +238,19 @@ In the flow, we created the following item to move approved contracts to the **F
 
 When a contract has been rejected, the following things occur:
 
-- On the **Contracts** tab, the status in the contract card will change to <b>Rejected</b>.
-![Card status rejected.](../media/content-understanding/rejected.png)</br>
-In our flow, we check out the contract file, change the status to <b>Rejected</b>, and check the file back in again.</br>
-![Flow status rejected.](../media/content-understanding/reject-flow.png)</br>
-- In our flow, we create an adaptive card stating that the contract has been rejected. </br>
-![Flow status rejected.](../media/content-understanding/reject-flow-item.png)</br> 
+- On the **Contracts** tab, the status in the contract card will change to **Rejected**.
 
-   The following is the JSON code used for this step in the Power Automate flow.
+   ![Card status rejected.](../media/content-understanding/rejected.png)
+
+- In our flow, we check out the contract file, change the status to **Rejected**, and check the file back in again.
+
+   ![Flow status rejected.](../media/content-understanding/reject-flow.png)
+
+- In our flow, we create an adaptive card stating that the contract has been rejected.
+
+   ![Flow status rejected.](../media/content-understanding/reject-flow-item.png)
+
+The following is the JSON code used for this step in the Power Automate flow.
 
 ```JSON
 { 
@@ -319,5 +330,6 @@ In our flow, we check out the contract file, change the status to <b>Rejected</b
 }
 ```
 
-- The card is posted in the Contract Management channel.</br>
-![Flow adaptive card to reject.](../media/content-understanding/reject-post.png)</br>
+- The card is posted in the Contract Management channel.
+
+   ![Flow adaptive card to reject.](../media/content-understanding/reject-post.png)
