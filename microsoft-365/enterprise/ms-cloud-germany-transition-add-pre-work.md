@@ -28,7 +28,7 @@ If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
 - **Custom Domains**, do [this step](#dns-entries-for-custom-domains).
-- **Office Apps**, consider [this step](#Office-apps).
+- **Office Apps**, consider [this step](#office-apps).
 - **SharePoint Online**, do [this step](#sharepoint-online).
 - **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
