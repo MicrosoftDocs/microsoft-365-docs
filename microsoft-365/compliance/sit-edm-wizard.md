@@ -49,7 +49,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 3. Fill in an appropriate **Name** and **Description**.
 
-4. Choose **Ignore delimiters and punctuations for all schema fields** if you want to match content that may or may not have certain characters in it. To learn more about configuring EDM to ignore case or delimitere, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+4. Choose **Ignore delimiters and punctuations for all schema fields** if you want to match content that may or may not have certain characters in it. To learn more about configuring EDM to ignore case or delimiters, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
 
