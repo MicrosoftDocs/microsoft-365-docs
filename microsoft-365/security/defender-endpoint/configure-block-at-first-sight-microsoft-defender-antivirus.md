@@ -12,7 +12,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/21/2021
+ms.date: 04/28/2021
 ms.technology: mde
 ---
 
@@ -25,11 +25,14 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes "block at first sight" and includes procedures to enable this threat protection feature in your organization. This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are a home user, see this section.
+This article describes antivirus/antimalware protection known as "block at first sight." This article includes procedures to enable block at first sight for your organization. 
+
+> [!TIP]
+> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are a home user who has questions about block at first sight, [see this section](#are-you-a-home-user).
 
 ## What is "block at first sight"?
 
-Block at first sight is a threat protection capability that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
+Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
 - Cloud-delivered protection; 
 - A specified sample submission timeout (such as 50 seconds); and 
 - A file-blocking level of high. 
@@ -189,7 +192,14 @@ If you have a personal device that is not managed by an organization, you might 
 
 4. Take one of the following steps:
 
-   - To enable block at first sight, 
+   - To enable block at first sight, make sure that both **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
+
+   - To disable block at first sight, turn off **Cloud-delivered protection** or **Automatic sample submission**. <br/>
+    
+     > [!CAUTION]
+     > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight. 
+
+To learn more about Windows 10 security for home users, see [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
 
 ## See also
 
