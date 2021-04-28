@@ -28,7 +28,7 @@ If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
 - **Custom Domains**, do [this step](#dns-entries-for-custom-domains).
-
+- **Office Apps**, consider [this step](#office-apps).
 - **SharePoint Online**, do [this step](#sharepoint-online).
 - **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
@@ -78,6 +78,19 @@ If the command line returns a DNS record, remove the _msoid_ CNAME from your dom
 
 > [!NOTE]
 > If you are using a custom domain for Exchange Online, you'll need to have access to your DNS hosting provider. Please make sure you can access and edit your DNS settings, you'll be modifying DNS records during the migration.
+
+## Office Apps
+
+**Applies to**: Customers using Office Apps, especially on Windows clients <br>
+**When applied**: Any time before phase 9 starts
+
+Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
+
+This is required for all clients. To ensure a smooth migration experience, it is strongly recommended to inform and instruct all affected users in advance and at an early stage about this forthcoming activity.
+
+Customers with managed Windows clients can prepare Windows machines with the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT). The OCCT is designed to run periodically on Windows clients until the tenant reached phase 9 of the migration. When phase 9 has been reached, the OCCT will perform all necessary changes on the machine automatically without user interaction.
+
+The OCCT can be deployed on Windows clients at any time before phase 9. If the OCCT shall support the migration experience, we recommend starting the deployment as soon as possible to equip a maximum number of clients.
 
 ## Active Directory Federation Services (AD FS)
 
