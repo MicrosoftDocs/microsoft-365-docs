@@ -25,7 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes antivirus/antimalware protection known as "block at first sight." This article includes procedures to enable block at first sight for your organization. 
+This article describes an antivirus/antimalware feature known as "block at first sight." This article includes procedures to enable block at first sight for your organization. 
 
 > [!TIP]
 > This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are a home user who has questions about block at first sight, [see this section](#are-you-a-home-user).
@@ -48,11 +48,11 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 ## A few things to know about block at first sight
 
-- In Windows 10, version 1803 or later, block at first sight can block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
+- In Windows 10, version 1803 or later, block at first sight can block non-portable executable files (such as JS, VBS, or macros) and executable files.
 
 - Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if the file is a previously undetected file.
 
-- If the cloud backend is unable to make a determination, Microsoft Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs additional analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or safe.
+- If the cloud backend is unable to make a determination, Microsoft Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs more analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or safe.
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
@@ -116,7 +116,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
     > [!IMPORTANT]
     > Setting to **Always prompt (0)** will lower the protection state of the device. Setting to **Never send (2)** means block at first sight will not function.
 
-4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then click **OK**.
+4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then select **OK**.
 
 5. If you changed any settings, redeploy the Group Policy Object across your network to ensure all endpoints are covered.
 
