@@ -28,15 +28,12 @@ Organizations choose to implement DLP to comply with various governmental or ind
 Organizations can start their DLP journey:
 
 - from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
-- knowing what sensitive information they want to prioritize protecting, like health care records and going straight to defining policies
-- without knowing what their sensitive information is, where it is, and who is doing what with it so they have to start with discovery and categorization in a more methodical approach
-- without knowing what their sensitive information is, or where it is, or who is doing what with it, but the will move straight to defining policies and use those outcomes as a starting place and refine their policies from there.
-- knowing that they need to implement the full M365 Information Protection Stack and its ok to take a longer term, methodical approach
+- knowing what sensitive information they want to prioritize protecting, like health care records, and going straight to defining policies to protect it
+- without knowing what their sensitive information is, where it is, and who is doing what with it so they start with discovery and categorization and take a more methodical approach
+- without knowing what their sensitive information is, or where it is, or who is doing what with it, but the will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there.
+- knowing that they need to implement the full M365 Information Protection Stack and so intend to take a longer term, methodical approach
 
 These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
-
-
-
 
 
 ## Overview of planning process
