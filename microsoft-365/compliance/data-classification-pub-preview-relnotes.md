@@ -8,6 +8,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+recommendations: false
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
