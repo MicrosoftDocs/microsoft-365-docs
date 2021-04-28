@@ -44,13 +44,13 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 
 In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks. Ansible has many ways to complete the same task. These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Ansible documentation](https://docs.ansible.com/) for details.
 
-- Ansible needs to be installed on at least one computer (we will call it the primary computer).
-- SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.
-- The following software must be installed on all clients:
+- Ansible needs to be installed on at least one computer (Ansible calls this the control node).
+- SSH must be configured for an administrator account between the control node and all managed nodes (machines that will have Defender installed on them), and it is recommended be configured with public key authentication.
+- The following software must be installed on all managed nodes:
   - curl
   - python-apt
 
-- All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
+- All managed nodes must be listed in the following format in the `/etc/ansible/hosts` or relevant file:
 
     ```bash
     [servers]
