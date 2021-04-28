@@ -25,14 +25,15 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-This article describes an antivirus/antimalware feature known as "block at first sight." This article includes procedures to enable block at first sight for your organization. 
+This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization. 
 
 > [!TIP]
-> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, [see this section](#are-you-a-home-user).
+> This article is intended for enterprise admins and IT Pros who manage security settings for organizations. If you are not an enteprise admin or IT Pro but you have questions about block at first sight, see [Not an enterprise admin or IT Pro?](#not-an-enterprise-admin-or-it-pro).
 
 ## What is "block at first sight"?
 
 Block at first sight is a threat protection feature of next-generation protection that detects new malware and blocks it within seconds. Block at first sight is enabled when certain security settings are enabled. These settings include:
+
 - Cloud-delivered protection; 
 - A specified sample submission timeout (such as 50 seconds); and 
 - A file-blocking level of high. 
@@ -43,8 +44,12 @@ In most enterprise organizations, the settings needed to enable block at first s
 
 When Microsoft Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or not a threat.
 
-Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection. To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection. 
+
 ![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+
+> [!TIP]
+> To learn more, see this blog: [Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## A few things to know about block at first sight
 
@@ -52,7 +57,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if the file is a previously undetected file.
 
-- If the cloud backend is unable to make a determination, Microsoft Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs more analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or safe.
+- If the cloud backend is unable to make a determination, Microsoft Defender Antivirus locks the file and uploads a copy to the cloud. The cloud performs more analysis to reach a determination before it either allows the file to run or blocks it in all future encounters, depending on whether it determines the file to be malicious or not a threat.
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
@@ -79,7 +84,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 4. Save your settings.
 
 > [!TIP]
-> - Setting the file blocking level to **High** applies a strong level of detection. In the unlikely event that file blocking causes a false positive detection of legitimate files, you can [restore quarantined files](./restore-quarantined-files-microsoft-defender-antivirus.md).
+> - Setting the file blocking level to **High** applies a strong level of detection. In the unlikely event that file blocking causes a false positive detection of legitimate files, your security operations team can [restore quarantined files](./restore-quarantined-files-microsoft-defender-antivirus.md).
 > - For more information about configuring Microsoft Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 > - For a list of Microsoft Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
@@ -118,13 +123,11 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 4. In the MAPS section, double-click **Send file samples when further analysis is required**, and set it to **Enabled**. Under **Send file samples when further analysis is required**, select **Send all samples**, and then select **OK**.
 
-5. If you changed any settings, redeploy the Group Policy Object across your network to ensure all endpoints are covered.
+5. Redeploy your Group Policy Object across your network as you usually do.
 
-## Confirm block at first sight is enabled on individual clients
+## Confirm block at first sight is enabled on individual client devices
 
-You can confirm that block at first sight is enabled on individual clients using Windows security settings.
-
-Block at first sight is automatically enabled as long as **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
+You can confirm that block at first sight is enabled on individual client devices using the Windows Security app. Block at first sight is automatically enabled as long as **Cloud-delivered protection** and **Automatic sample submission** are both turned on.
 
 1. Open the Windows Security app.
 
@@ -186,7 +189,7 @@ If you are not an enterprise admin or IT Pro, but you have questions about block
 
 ### How to manage block at first sight on or off on your own device
 
-If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app.
+If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app to manage block at first sight.
 
 1. On your Windows 10 computer, open the Windows Security app.
 
@@ -207,7 +210,5 @@ If you have a personal device that is not managed by an organization, you might 
 ## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-
 - [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
