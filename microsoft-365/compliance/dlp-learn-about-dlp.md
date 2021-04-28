@@ -19,12 +19,12 @@ description: "overview of Microsoft 365 Data Loss Prevention"
 
 # Learn about data loss prevention
 
-Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This is called data loss prevention (DLP).
+Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This is called data loss prevention (DLP).
 
-In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a data loss prevention policy, you can identify, monitor, and automatically protect sensitive items across:
+In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
-- Office applications such as Word, Excel and PowerPoint
+- Office applications such as Word, Excel, and PowerPoint
 - Windows 10 endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
@@ -37,7 +37,7 @@ Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you wil
 
 ## Protective actions of DLP policies
 
-Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
+Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
 
 - show a pop-up policy tip to the user that warns them that they may be trying to share a sensitive item inappropriately
 - block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification
@@ -60,11 +60,11 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-Microsoft 365 DLP monitoring and protection are native to the applications that users use every day.This helps to protect your organizations' sensitive items from risky activities even if your user's are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+Microsoft 365 DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your user's are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10 devices, on-premises file shares and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.  
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10 devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.  
 
 **Business processes planning for DLP**
 
@@ -187,19 +187,20 @@ You can also view details of the associated event with rich metadata in the same
 ### Reports
 
 The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) show broad trends over time and give specific insights into:
+
 - **DLP Policy Matches** over time and filter by date range, location, policy, or action
 - **DLP incident matches** also shows matches over time, but pivots on the items rather than the policy rules.
 - **DLP false positives and overrides** shows the count of false positives and, if configured, user-overrides along with the user justification.
 
 ### DLP Activity Explorer
 
-The Activity explorer tab <!-- get link to this tab--> on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
+The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
 ![screenshot of the DLPRuleMatch scoped activity explorer ](../media/dlp-activity-explorer.png)
 
-For more information, see [Get started with activity explorer](data-classification-activity-explorer.md) for more information.
+For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
-See more topics:
+To learn more about Microsoft 365 DLP, see:
 
 - [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)
