@@ -57,7 +57,7 @@ Still want more information? Learn how to [manage your network traffic with Azur
 
 The following table lists the Office 365 services that are supported over ExpressRoute. Please review the [Office 365 endpoints article](./urls-and-ip-address-ranges.md) to understand which network requests for these applications require internet connectivity.
 
-|**Applications included**|
+| Applications included |
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
