@@ -24,7 +24,7 @@ description: "Learn how to configure learning content sources for Microsoft Viva
 
 The administrators for the Microsoft 365 admin center—either by themselves or by assigning the knowledge admin role to selected individuals in your organization—can manage settings related to Viva Learning (Preview) and can configure the learning content sources.
 
-The administrator selects which additional learning content sources (for example, SharePoint or supported third-party content provider sources) will be available to users of Viva Learning (Preview). The admin then configures those sources to make sure the content is available for search and discovery and can be browsed by the employees who use Viva Learning (Preview).
+The administrator selects which other learning content sources (for example, SharePoint or supported third-party content provider sources) will be available to users of Viva Learning (Preview). The admin then configures those sources to make sure the content is available for search and discovery and can be browsed by the employees who use Viva Learning (Preview).
 
 > [!NOTE]
 >  Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. This configured learning is subject to the separate license, privacy and service terms between your organization and the third party, and not the Viva Learning (Preview) terms. Before selecting this type of learning, verify you have an agreement in place for your organization and users.
@@ -80,7 +80,7 @@ To configure settings for learning content sources in Viva Learning, follow thes
 
      ![Learning panel in the Microsoft 365 admin center showing content sources options.](../media/learning/learning-sharepoint-configure2.png)
 
-Among all the learning sources that exist, some will be enabled by default. These include:
+Among all the learning sources that exist, some will be enabled by default. These learning sources include:
 
 - LinkedIn Learning (free content)
 - Microsoft Learn
@@ -95,11 +95,11 @@ To enable or disable a learning content source, select the check box next to the
 
 ## Third-party content providers 
 
-The set of available connected learning providers might change at any time. Additional providers will join as the program grows. Available providers might also choose to discontinue their connection with Viva Learning (Preview).
+The set of available connected learning providers might change at any time. More providers will join as the program grows. Available providers might also choose to discontinue their connection with Viva Learning (Preview).
 
 ### Skillsoft as a content source  
 
-For Viva Learning (Preview), users who have Skillsoft enabled and choose to view Skillsoft content will land on a Percipio page that asks them to input your organization's Percipio site name. After users input your organization's site name, they will be directed to page to sign in to your organization's Percipio site. Users will sign in by using their existing credentials and see the content they originally selected. Users should only be asked to input the Percipio site name once, until their browser cache is cleared. To streamline this experience for your users, we recommend including your Percipio site name in internal communications you send about Viva Learning (Preview).
+For Viva Learning (Preview), users who have Skillsoft enabled and choose to view Skillsoft content will land on a Percipio page that asks them to input your organization's Percipio site name. After users input your organization's site name, they will be directed to page to sign in to your organization's Percipio site. Users will sign in by using their existing credentials and see the content they originally selected. Users will be asked to input the Percipio site name only once, until their browser cache is cleared. To streamline this experience for your users, we recommend including your Percipio site name in internal communications you send about Viva Learning (Preview).
 
 This is intended to be a temporary experience for preview, and we are working with Skillsoft to enable tenant-specific integration for general availability, which will bypass the step that requires users to provide your organization's Percipio site name. 
 
