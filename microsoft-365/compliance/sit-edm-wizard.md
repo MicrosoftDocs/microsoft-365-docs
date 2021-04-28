@@ -56,7 +56,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 > [!IMPORTANT]
 > At least one, but no more than five of your schema fields must be designated as searchable. Searchable fields are fields that will be used as primary elements for a pattern in your EDM sensitive info types, meaning that EDM will look for them in all locations in your content. Fields not designated as primary elements can be used as additional evidence in the pattern, so when a match to a value in the searchable field is found, the other values in that same row will be compared with the text surrounding the matched string to corroborate it is an actual match to the information you are looking for. Searchable fields can be used as primary elements in their own pattern and also as additional evidence in patterns that use a different searchable field as a primary element. 
 
-6. Choose **save**. Your schema will now be available for defining an EDM Sensitive info type.
+6. Choose **save**. Your schema will now be available for defining an EDM sensitive info type.
 
 
 ## Use the exact data match sensitive information type pattern wizard
