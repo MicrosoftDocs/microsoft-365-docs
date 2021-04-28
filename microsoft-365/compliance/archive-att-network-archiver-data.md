@@ -28,7 +28,7 @@ The following overview explains the process of using a connector to archive AT&T
 
 1. Your organization works with TeleMessage to set up an AT&T Network connector. For information, see [AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
 
-2. Once every 24 hours, SMS and MMS messages from your organization’s AT&T Network are copied to the TeleMessage site.
+2. In real time, SMS and MMS messages from your organization’s AT&T Network are copied to the TeleMessage site.
 
 3. The AT&T Network connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers the SMS and MMS messages from the previous 24 hours to a secure Azure Storage location in the Microsoft Cloud. The connector also converts the content of SMS and MMS messages to an email message format.
 
