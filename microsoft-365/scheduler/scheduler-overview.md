@@ -12,25 +12,32 @@ description: "Overview of Scheduler for Microsoft 365."
 
 # Welcome to Scheduler for Microsoft 365
 
-Scheduler for Microsoft 365 is a service that enables Cortana <cortana@contoso.com> to schedule appointments and meetings without any hassles. Following are some of the features of Scheduler:
+Scheduler for Microsoft 365 is a service that enables users to delegate meeting and appointment scheduling to their digital personal assistant, Cortana. Scheduler uses natural language processing to interpret emails sent to Cortana (cortana@yourdomain.com) to find a time to meet and send meeting requests for the meeting organizer.  
 
-- Automated meeting scheduling with internal and external attendees.
-- Ease of contacting the assistant from any device, 24/7.
-- Automatic calendar invites to the attendees once the common available time has been determined.
-- Addition of meeting resources such as, Teams meeting link.
-- Provides time zone coordination for meeting time slots.
-- Reschedule or cancel meetings.
+Scheduler: 
+
+- Communicates with the meeting organizer and attendees in natural language.
+- Finds a time to meet when everyone is available.
+- Coordinates between external attendees based on the organizer’s availability.
+- Keeps the meeting organizer informed on scheduling progress and asks the organizer for guidance when needed 
+- Negotiates times to meet across up to two different time zones 
+- Sends the invitation to the meeting 
+- Adds a Teams link to every meeting  
+- Reschedules or cancels meetings booked by Cortana 
+- Works from any device with email  
 
 ## Who can benefit from Scheduler for Microsoft 365?
 
-People in roles such as recruiters, sales/telesales representatives, customer sales representatives, lawyers, and program managers can use this service to set up meetings with external attendees, when they do not have access to their schedule calendars. This service can help people focus on more important things such as agenda, list of attendees required, create presentations, and so on.
+Scheduler takes care of the time-consuming hassle of scheduling meetings so that users can focus on more important things. People that regularly schedule meetings with 5 or fewer attendees will benefit from Scheduler’s time savings. Specifically, users in recruiting, sales, procurement, and legal that require coordinating with others outside of their company will receive the most value from delegating meeting coordination to Scheduler.
 
 ## How does Scheduler for Microsoft 365 work?
 
-The Scheduler uses Scheduling Intelligence (AI) in combination with human assistance, which takes care of any low scores by AI on the natural language of communication with Cortana.
+Scheduler uses a combination of Artificial Intelligence and Human intelligence to complete scheduling requests that are received by emailing Cortana (Cortana@yourdomain.com).  
 
-Using the Scheduler service, once Cortana is added to your email thread, you can use natural language to :
-- Looks up the availability of the organizer and the required attendees
-- Emails those attendees whose calendar cannot be accessed by the organizer and proposes feasible time slots.
-- Once the mutually agreeable time has been found, Cortana sends out the invites and adds meeting resources, such as Teams meetings.
+To use Scheduler, add Cortana’s email address to an email with the people you want to meet with and ask Cortana to book a meeting in natural language. In your request to Cortana, you can indicate the duration and when you want to meet. For example, “Cortana, find 45 minutes for us to meet next week.” 
 
+After a user sends a meeting request to Cortana, the Scheduler service: 
+
+- Finds a time to meet based on the availability information of the organizer and attendees in the same tenant.
+- If the organizer does not have access to availability information of the attendees, Cortana negotiates with those attendees to find a time that works based on the availability information it has access to (typically the organizer and internal attendees’ availability). 
+- Once the mutually agreeable time has been found, Cortana sends out the invites and adds a Teams Meeting. 

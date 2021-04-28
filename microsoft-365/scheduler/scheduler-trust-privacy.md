@@ -11,12 +11,13 @@ description: "Understanding Trust and Privacy in Scheduler for Microsoft 365 are
 ---
 # Trust and Privacy in Scheduler for Microsoft 365
 
-**AI Models**
+Scheduler is a unique offering because Artificial Intelligence is augmented with human assistance when the AI models are unsure of a user’s intent, often due to ambiguity or contextual references. 
 
-What is human assisted AI? Why should I trust human assisted AI? 
-1. AI intelligence today does not understand ambiguity and context. 
-1. Human assistance can step in when AI intelligence is unsure. 
-1. Reduce number of reach out to the organizer and attendees with questions and increases reliability of scheduling at a “good” time. 
-1. Customer data is stored in tenant.
-1. Customer data is processed in Microsoft 365 Trust & privacy boundaries.
-1. Human assisted AI Human assistant is Supplier Security & Privacy Assurance certified for personal information and highly confidential information by Microsoft similar to Microsoft support personnel / data processors. 
+Additional trust and privacy information:  
+
+- All customer content is stored in the customer’s tenant.
+- Scheduler is GDPR (General Data Protection Regulation) compliant.
+- All customer data is processed in the Microsoft 365 Trust and Privacy Boundaries.
+- Scheduler’s human assistants are Supplier Security & Privacy Assurance certified for personal information and highly confidential information by Microsoft similar to Microsoft support personnel / data processors. 
+- Email attachments are not consumed or processed by the Scheduler service.
+- Encrypted mail is not consumed or processed by the Scheduler service. 
