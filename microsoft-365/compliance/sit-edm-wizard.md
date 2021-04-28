@@ -79,7 +79,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 9. Choose **Done**.
 
-10. Choose **Create pattern** if you want to creaet additional patterns for your EDM sensitive info type, otherwise choose **Next**.
+10. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type, otherwise choose **Next**.
 
 11. Choose your desired **Confidence level and character proximity**. This will be the default value for the whole EDM sensitive info type.
 
