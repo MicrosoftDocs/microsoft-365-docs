@@ -163,7 +163,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the **Defender Cloud Extended Timeout In Seconds** box.
+   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 
