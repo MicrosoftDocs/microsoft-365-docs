@@ -182,7 +182,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
 ## Not an enterprise admin or IT Pro?
 
-If you are not an enterprise admin or IT Pro, but you have questions about block at first sight, this section is for you.
+If you are not an enterprise admin or IT Pro, but you have questions about block at first sight, this section is for you. Block at first sight is a threat protection feature that detects and blocks malware within seconds. Although there isn't a specific setting called "Block at first sight," the feature is enabled when certain settings are configured on your device.
 
 ### How to manage block at first sight on or off on your own device
 
@@ -203,10 +203,11 @@ If you have a personal device that is not managed by an organization, you might 
      > [!CAUTION]
      > Turning off block at first sight lowers the level of protection for your device. We do not recommend permanently disabling block at first sight. 
 
-To learn more about Windows 10 security for home users, see [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
 
 ## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+
+- [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
