@@ -204,18 +204,10 @@
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md
-     - name: Enable the Report Message add-in
-       href: enable-the-report-message-add-in.md
-     - name: Enable the Report Phishing add-in
-       href: enable-the-report-phish-add-in.md
-     - name: Install and use the Junk Email Reporting add-in
-       href: junk-email-reporting-add-in-for-microsoft-outlook.md
+     - name: Report false positives and false negatives in Outlook
+       href: report-false-positives-and-false-negatives.md
      - name: Mail flow rules (transport rules) in standalone EOP
        href: mail-flow-rules-transport-rules-0.md
-     - name: Report junk email and phishing in Outlook on the web
-       href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-     - name: Report junk email and phishing in Outlook for iOS and Android
-       href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
      - name: Run an administrator role group report in standalone EOP
        href: run-an-administrator-role-group-report-in-eop-eop.md
    - name: Investigate

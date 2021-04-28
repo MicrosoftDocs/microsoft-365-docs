@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
