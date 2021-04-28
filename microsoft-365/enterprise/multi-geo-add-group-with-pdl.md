@@ -1,5 +1,5 @@
 ---
-title: "Create a Microsoft 365 Group with a specific Preferred Data Location (PDL)"
+title: "Create a Microsoft 365 Group with a specific preferred data location (PDL)"
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
