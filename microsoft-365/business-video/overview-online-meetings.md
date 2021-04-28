@@ -30,9 +30,9 @@ They'll need to download the [free version](https://support.microsoft.com/office
 
 If you frequently collaborate closely on projects with a client, customer, or partner, consider  so [creating a team for your clients](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) you can easily invite them to meetings and also have conversations, share files, and track projects all in Microsoft Teams.
 
-Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams.
+Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams:
 
-Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712) | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## 1. Schedule a meeting
 

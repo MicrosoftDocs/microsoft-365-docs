@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
+        - name: Labeling actions reported in Activity explorer
+          href: data-classification-activity-explorer-available-events.md
         - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
@@ -360,7 +362,7 @@
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data

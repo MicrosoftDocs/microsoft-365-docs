@@ -1,7 +1,7 @@
 ---
 title: Supported Microsoft 365 Defender APIs
 description: Supported Microsoft 365 Defender APIs
-keywords: MTP, APIs, api
+keywords: Microsoft 365 Defender, APIs, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -54,6 +54,6 @@ All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for ex
 ## Related articles
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Access the Microsoft Threat Protection APIs](api-access.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
