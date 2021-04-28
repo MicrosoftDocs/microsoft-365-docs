@@ -211,8 +211,6 @@ Here's a quick overview of the information you'll see in each column.
 |Last updated  <br/> |Date that the message was published or last updated.  <br/> |
 |Message ID  <br/> |Microsoft tracks our Message center posts by message ID. You can refer to this ID if you want to give feedback or if you call Support about a particular message.  <br/> |
 
-Head over to [Manage messages in Message center](manage-messages.md) to get more information on the things you can do with messages.
-  
 ### Admin roles that don't have access to the Message center
 
 - Compliance administrator
