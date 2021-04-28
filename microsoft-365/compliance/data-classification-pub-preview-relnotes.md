@@ -5,9 +5,9 @@ author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: normal
 recommendations: false
 ms.collection: 
 - M365-security-compliance
