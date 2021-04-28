@@ -147,7 +147,7 @@ To validate that the feature is working, follow the guidance in [Validate connec
 > [!CAUTION]
 > Turning off block at first sight will lower the protection state of your device(s) and your network.
 
-You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might do temporarily turn block at first sight off if you are experiencing latency issues or you want to test the feature's impact on your network. However, we do not recommend disabling block at first sight protection permanently.
+You might choose to disable block at first sight if you want to retain the prerequisite settings without actually using block at first sight protection. You might temporarily turn block at first sight off to see how this feature affects your network. However, we do not recommend disabling block at first sight protection permanently.
 
 ### Turn off block at first sight with Microsoft Endpoint Manager
 
@@ -169,9 +169,9 @@ You might choose to disable block at first sight if you want to retain the prere
 
 ### Turn off block at first sight with Group Policy
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and then click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-2. Using the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree through **Windows components** > **Microsoft Defender Antivirus** > **MAPS**.
 
