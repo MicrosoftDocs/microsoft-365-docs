@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/manage-messages.md",
+      "redirect_url": "/microsoft-365/admin/manage/message-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/get-started-with-office-365.md",
+      "redirect_url": "/microsoft-365/business/microsoft-365-business-start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/types-of-users.md",
+      "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/share-sites-with-external-users.md",
+      "redirect_url": "/sharepoint/change-external-sharing-site?WT.mc_id=365AdminCSH_globalsearch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/customize-help-desk.md",
+      "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/misc/contacts.md",
       "redirect_url": "https://docs.microsoft.com/",
       "redirect_document_id": false
