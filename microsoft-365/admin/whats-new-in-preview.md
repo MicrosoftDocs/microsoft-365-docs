@@ -78,7 +78,7 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+To learn more about the new features, check out [Message center](manage/message-center.md).
 
 ### What's new features
 
