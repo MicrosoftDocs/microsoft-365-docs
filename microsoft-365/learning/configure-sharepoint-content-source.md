@@ -34,7 +34,7 @@ Viva Learning (Preview) supports the following document types:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-For more information, see the [SharePoint Online documentation](https://docs.microsoft.com/sharepoint/introductionlink). 
+For more information, see the [SharePoint Online documentation](https://docs.microsoft.com/en-us/sharepoint/introduction). 
 
 ## Permissions
 
