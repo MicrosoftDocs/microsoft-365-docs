@@ -51,7 +51,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not be permitted to connect to the Internet.
+Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
 > - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:</br>
