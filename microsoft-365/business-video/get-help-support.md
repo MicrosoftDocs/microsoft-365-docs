@@ -69,7 +69,7 @@ Admins, have your account details ready when you call.
 
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
-[!INCLUDE [country-region-support-dropdown-list](../includes/country-region-support-dropdown-list.md)]
+[!INCLUDE [country-region-support-dropdown-list](../../includes/country-region-support-dropdown-list.md)]
 
 ::: moniker-end
 
