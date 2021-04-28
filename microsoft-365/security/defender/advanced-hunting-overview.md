@@ -35,7 +35,7 @@ ms.technology: m365d
 >
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
-<p></p>
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -57,7 +57,7 @@ We recommend going through several steps to quickly get started with advanced hu
 | Learning goal | Description | Resource |
 |--|--|--|
 | **Learn the language** | Advanced hunting is based on [Kusto query language](/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
-| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results](advanced-hunting-query-results.md)<br /> -[Take action on query results](advanced-hunting-take-action.md) |
+| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results](advanced-hunting-query-results.md)<br /> - [Take action on query results](advanced-hunting-take-action.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. Learn where to look for data when constructing your queries. | - [Schema reference](advanced-hunting-schema-tables.md) <br />- [Transition from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) |
 | **Get expert tips and examples** | Train for free with guides from Microsoft experts. Explore collections of predefined queries covering different threat hunting scenarios. | - [Get expert training](advanced-hunting-expert-training.md) <br />- [Use shared queries](advanced-hunting-shared-queries.md) <br />- [Go hunt](advanced-hunting-go-hunt.md) <br />- [Hunt for threats across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md) |
 | **Optimize queries and handle errors** | Understand how to create efficient and error-free queries. | - [Query best practices](advanced-hunting-best-practices.md)<br />- [Handle errors](advanced-hunting-errors.md) |
