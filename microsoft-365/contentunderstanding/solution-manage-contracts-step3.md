@@ -30,11 +30,11 @@ The following shows the Power Automate flow for the contract management solution
 
 ## Prepare your contract for review
 
-When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to "In Review."
+When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to "In review."
 
 ![Update status.](../media/content-understanding/flow-overview.png)</br>
 
-After checking out the file, change the status value to "In Review."
+After checking out the file, change the status value to "In review."
 
 ![In review status.](../media/content-understanding/in-review.png)</br>
 
