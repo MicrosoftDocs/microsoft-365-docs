@@ -28,7 +28,7 @@ The following overview explains the process of using a connector to archive What
 
 1. Your organization works with TeleMessage to set up a WhatsApp Archiver connector. For more information, see [WhatsApp Archiver](https://www.telemessage.com/office365-activation-for-whatsapp-archiver).
 
-2. Once every 24 hours, your organization’s WhatsApp data is copied to the TeleMessage site.
+2. In real time, your organization’s WhatsApp data is copied to the TeleMessage site.
 
 3. The WhatsApp connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers WhatsApp data from the previous 24 hours to a secure Azure Storage location in the Microsoft Cloud. The connector also converts the content WhatsApp data to an email message format.
 
