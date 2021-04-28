@@ -33,7 +33,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 You can turn Microsoft Defender Antivirus cloud-delivered protection on or off in several ways:
 
 - Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager
 - Group Policy
 - PowerShell cmdlets.
 
