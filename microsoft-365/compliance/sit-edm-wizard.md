@@ -85,7 +85,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 12. Choose **Next** and fill in a **Name** and **Description for admins**. Choose **Next**.
 
-13. Review and choose **Submit** to confirm the creation of your EDM Sensitive Info Type.
+13. Review and choose **Submit** to confirm the creation of your EDM sensitive info type.
 
 You can delete or edit the sensitive information type pattern by selecting it which surfaces the edit and delete controls.
 
