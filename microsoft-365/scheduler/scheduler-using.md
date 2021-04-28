@@ -1,7 +1,7 @@
 ---
 title: "Using Scheduler for Microsoft 365"
-ms.author: jhendr
-author: JoanneHendrickson
+ms.author: v-aiyengar
+author: AshaIyengar21
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -15,10 +15,10 @@ Cortana understands natural language. Include cortana@yourdomain.com in an email
 
 ## When to use Scheduler?
 
-1. **Scheduling meetings with internal attendees** 
+- **Scheduling meetings with internal attendees** 
 Use Cortana to schedule your meetings with 5 or fewer attendees. Cortana has the same access to free/busy information that you see for others in Outlook calendar. It will pick a time that works for everyone and send an invite on your behalf. Cortana will automatically Teams-enable all the meetings that it schedules. Anyone on the CC line will receive the invite as an optional attendee.  
 
-2. **Scheduling meetings with external attendees**  
+- **Scheduling meetings with external attendees**  
 Cortana communicates with external invitees to negotiate times that you are available to meet. After confirming a time to meet, Cortana sends an invite to attendees and notifies you that the meeting has been scheduled.
 
 ## What to say to Cortana?
