@@ -100,8 +100,8 @@
                    href: investigate-alerts.md    
                  - name: Analyze users 
                    href: investigate-users.md                  
-                - name: Respond to your first incident
-                  items: 
+                 - name: Respond to your first incident
+                   items: 
                     - name: Introduction
                       href: first-incident-overview.md
                     - name: Prepare
