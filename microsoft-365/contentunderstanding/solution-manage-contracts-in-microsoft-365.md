@@ -31,7 +31,7 @@ The first step in planning your contract management system is to understand the 
 
 ## Overview of the solution
 
-  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png) </br>
+  ![Diagram of the solution using SharePoint Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 This contract management solution guidance includes four components of Microsoft 365:
 
@@ -45,14 +45,15 @@ This contract management solution guidance includes four components of Microsoft
 
 ### How it all works
 
-  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png) </br>
+  ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
 1. Documents are uploaded to a SharePoint document library. A SharePoint Syntex document understanding model has been applied to the document library. It checks each file to see if any match a "contract" content type it is trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
-2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the <i>Client</i>, <i>Contractor</i>, and <i>Fee amount</i>.
+2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the *Client*, *Contractor*, and *Fee amount*.
 
-    The following is an example of a contract that the model is trained to identify.</br>
-      ![Example of a contract.](../media/content-understanding/contract.png)</br> 
+    The following is an example of a contract that the model is trained to identify.
+
+      ![Example of a contract.](../media/content-understanding/contract.png)
 
 3. In Microsoft Teams, all stakeholders are members of a secure Teams channel in which all contract in the document library are are visible for approval or rejection. By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
  
