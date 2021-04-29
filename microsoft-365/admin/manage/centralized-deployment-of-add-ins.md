@@ -101,7 +101,7 @@ Using the Centralized Deployment Compatibility Checker, you can verify whether t
    > [!NOTE]
    > Depending on the number of users in your tenant, the checker could complete in minutes or hours. 
   
-When the tool finishes running, it produces an output file in comma-separated (.csv) format. The file is saved to **C:\windows\system32** by default. The output file contains the following information:
+When the tool finishes running, it produces an output file in comma-separated (.csv) format. The file is saved to **the current working directory** by default. The output file contains the following information:
   
 - User Name
     
