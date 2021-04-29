@@ -62,7 +62,9 @@
 ##### [Onboard devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 ##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-#### [Onboard Windows servers](configure-server-endpoints.md)
+#### [Onboard Windows servers]
+##### [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
+##### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](run-detection-test.md)
