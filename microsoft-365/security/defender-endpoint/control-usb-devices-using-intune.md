@@ -166,7 +166,7 @@ To prevent installation of particular classes of devices:
 
 ### Block installation and usage of removable storage
 
-1. Sign in to the [Microsoft Endpoint Manager Admin centerl](https://endpoint.microsoft.com/).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 
 2. Click **Devices** > **Configuration Profiles** > **Create profile**.
 
