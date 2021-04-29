@@ -30,7 +30,7 @@ The following overview explains the process of using a connector to archive O2 N
 
 2. Once every 24 hours, SMS messages and voice calls from your organization’s O2 Network are copied to the TeleMessage site.
 
-3. The O2 Network connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers the SMS messages and voice calls from the previous 24 hours to a secure Azure Storage location in the Microsoft Cloud. The connector also converts the content of SMS messages and voice calls to an email message format.
+3. The O2 Network connector that you create in the Microsoft 365 compliance center connects to the TeleMessage site every day and transfers the SMS messages and voice calls from the previous 24 hours to a secure Azure Storage location in the Microsoft cloud. The connector also converts the content of SMS messages and voice calls to an email message format.
 
 4. The connector imports the mobile communication items to the mailbox of specific users. A new folder named **O2 SMS and Voice Network Archiver** is created in a specific user's mailbox and the items are imported to it. The connector does this mapping by using the value of the *User’s Email address* property. Every SMS message and voice call contains this property, which is populated with the email address of every participant of the message.
 
