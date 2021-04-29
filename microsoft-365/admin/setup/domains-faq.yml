@@ -166,7 +166,7 @@ sections:
           
           Typically, you can add up to 900 domains to your Microsoft 365 subscription.
             
-          For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.partners.marketing.contoso.com, and so on.
+          For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.marketing.partners.contoso.com, and so on.
             
           When you add a subdomain, it is automatically verified based on the parent domain that is being verified.
             
@@ -180,11 +180,11 @@ sections:
           
       - question: How do I transfer a domain from Microsoft 365 to another host?
         answer: |
-          For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
+          For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md).
           
       - question: Pilot Microsoft 365 from my custom domain
         answer: |
-          For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
+          For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md).
           
       - question: Why do I have an "onmicrosoft.com" domain?
         answer: |
@@ -218,7 +218,7 @@ sections:
           
       - question: How do I verify my nonprofit or education status?
         answer: |
-          1. Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard. (Be sure to sign in to Microsoft 365 first.) 
+          1. Select **Setup** in the [admin center](./index.yml) to start the wizard. (Be sure to sign in to Microsoft 365 first.) 
               
           2. To become the admin for your school, select the  **Become an admin** option in Microsoft 365. 
               

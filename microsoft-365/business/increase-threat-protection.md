@@ -2,8 +2,8 @@
 title: "Increase threat protection for Microsoft 365 for Business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,7 +29,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Raise the level of protection against malware in mail
 
@@ -51,7 +51,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 
 6. Select **Save.**
 
-For more information, see [Anti-malware protection in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
+For more information, see [Anti-malware protection in EOP](../security/office-365-security/anti-malware-protection.md).
 
 ## Protect against ransomware
 
@@ -132,7 +132,7 @@ To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [
 
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
@@ -175,7 +175,7 @@ To create an Safe Attachment policy, either watch [this short video](https://sup
 |Redirect attachment on detection|Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ## Protect against phishing attacks with Safe Links
 
@@ -218,7 +218,7 @@ To create a new policy targeted to all recipients in your domain:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+For more information, see [Safe Links](../security/office-365-security/safe-links.md).
 
 ## Go to Intune admin center
 
@@ -228,4 +228,4 @@ For more information, see [Safe Links](https://docs.microsoft.com/microsoft-365/
 
 3. Once the results appear, select the start next to **Microsoft Intune** to make it a favorite and easy to find later.
 
-In addition to the admin center, you can use Intune to enroll and manage your organization's devices. For more information, see [Capabilities by enrollment method for Windows devices](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) and [Enrollment options for devices managed by Intune](https://docs.microsoft.com/intune/enrollment-options).
+In addition to the admin center, you can use Intune to enroll and manage your organization's devices. For more information, see [Capabilities by enrollment method for Windows devices](/intune/enrollment/enrollment-method-capab) and [Enrollment options for devices managed by Intune](/intune/enrollment-options).

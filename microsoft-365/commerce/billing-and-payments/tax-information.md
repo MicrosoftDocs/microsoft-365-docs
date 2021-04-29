@@ -150,7 +150,7 @@ For example:
 
 ## Apply for tax-exempt status
 
-If you qualify for tax-exempt status in your market, [start a service request](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to establish tax exempt status for your organization.
+If you qualify for tax-exempt status in your market, [start a service request](/office365/admin/contact-support-for-business-products) to establish tax exempt status for your organization.
 
 |Country or locale | Documentation |
 |------------------|----------------|

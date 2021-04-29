@@ -68,7 +68,7 @@ It's possible that the number of users who actually receive the simulation email
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+Only valid, non-guest users with a valid mailbox will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 

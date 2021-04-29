@@ -1,23 +1,23 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft browser usage"
- ms.author: waxiaoyu
- author: waxiaoyu
- manager: scotv
- audience: Admin
- ms.topic: article
- ms.service: o365-administration
- localization_priority: Normal
- ms.collection:
- - M365-subscription-management
- - Adm_O365
- - Adm_NonTOC
- ms.custom: AdminSurgePortfolio
- search.appverid:
- - BCS160
- - MET150
- - MOE150
- - GEA150
- description: "Learn how to get a Microsoft browser usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+title: Microsoft 365 Reports in the admin center - Microsoft browser usage
+ms.author: waxiaoyu
+author: sarahwxy
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- GEA150
+description: "Learn how to get a Microsoft browser usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft browser usage

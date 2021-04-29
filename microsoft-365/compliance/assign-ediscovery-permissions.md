@@ -45,7 +45,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Security & Compliance Center.
 
-- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information). 
+- You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information). 
   
 ## Assign eDiscovery permissions in the Security & Compliance Center
 
@@ -62,7 +62,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
     **To make a user an eDiscovery Administrator:** Next to **eDiscovery Manager**, select **Edit**. In the **Choose eDiscovery Administrator** section, Under **eDiscovery Administrators**, select **Choose eDiscovery Administrator**, select **Edit**, and then select ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Administrator** flyout page, select **Save** to save the changes to the eDiscovery Administrator membership.
   
 > [!NOTE]
-> You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
+> You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin). 
   
 On the **Permissions** page in the Security & Compliance Center, you can also assign users eDiscovery-related permissions by adding them to the Compliance Administrator, Organization Management, and Reviewer role groups. For a description of the eDiscovery-related RBAC roles assigned to each of these role groups, see [RBAC roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
 

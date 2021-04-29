@@ -54,9 +54,9 @@ And campaigns could create the following teams to communicate and collaborate se
 
 When you create a team, here's what else gets created:
 
-- A new [Microsoft 365 group](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- A [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files
-- An [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar
+- A new [Microsoft 365 group](/MicrosoftTeams/office-365-groups)
+- A [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files
+- An [Exchange Online](/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar
 - A OneNote notebook
 - Ties into other Office 365 apps such as Planner and Power BI
 
@@ -83,7 +83,7 @@ Create a team that you share with guests outside your organization, such as for 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Learn more about Microsoft Teams at [Microsoft Teams technical documentation](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/microsoftteams/microsoft-teams)
 
 ## Admin settings
 
