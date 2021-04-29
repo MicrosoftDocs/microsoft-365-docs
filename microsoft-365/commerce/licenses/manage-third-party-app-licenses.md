@@ -1,7 +1,7 @@
 ---
 title: "Manage third-party app licenses in the Microsoft 365 admin center"
 f1.keywords:
-- CSH
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -15,7 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_licensing
-ms.reviewer: 
+ms.reviewer: argani
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for third-party apps in the Microsoft 365 admin center."
