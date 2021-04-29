@@ -33,7 +33,7 @@ For more information about Microsoft 365 passwords, see:
 
 [Reset passwords](../add-users/reset-passwords.md) (article)
 
-[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (artice)
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
