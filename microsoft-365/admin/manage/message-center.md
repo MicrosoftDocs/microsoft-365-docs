@@ -196,9 +196,9 @@ We use machine translation to automatically display messages in your preferred l
 - Reports reader
 
 ## Unsubscribe from Message center emails
+ary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
 
-1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
-
+1. Digest emails are turned on by default and are sent to your prim
     - De-select the **Send a weekly digest of my messages** checkbox.
     - Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** checkbox is not selected.
     -   To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** checkbox is not selected.  (Data privacy messages are not included in the weekly digest.)
