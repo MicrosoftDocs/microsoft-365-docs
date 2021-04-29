@@ -48,7 +48,7 @@ You can also delete an add-in that was deployed.
 
 1. In the admin center, go to the **Settings** > **Integrated apps** page.
 
-2. Select the deployed add-in and click the **Configuration** tab
+2. Select the deployed add-in and then select the **Configuration** tab.
 
 3. In the **Configuration** pane, go to **Advanced Settings** > **Add-ins**.
 
