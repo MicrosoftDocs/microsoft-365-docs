@@ -14,6 +14,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to find resources for Microsoft Viva Learning (Preview)."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Introduction to Microsoft Viva Learning (Preview)

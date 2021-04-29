@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center

@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Set up Microsoft Viva Learning (Preview) in the Teams admin center

@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
@@ -34,7 +35,7 @@ Viva Learning (Preview) supports the following document types:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-For more information, see the [SharePoint Online documentation](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+For more information, see the [SharePoint Online documentation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## Permissions
 
@@ -50,7 +51,7 @@ To remove unintentionally surfaced content, follow these steps:
 
 2.	Delete the original document within the document library.
 
-For more information, see [Sharing and permissions in the SharePoint modern experience](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions). 
+For more information, see [Sharing and permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). 
 
 ## Learning Service
 
