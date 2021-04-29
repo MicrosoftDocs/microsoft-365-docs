@@ -19,7 +19,7 @@ description: "Learn how to protect your sensitive information using Microsoft 36
 
 # Learn about data loss prevention
 
-Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This is called data loss prevention (DLP).
+Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
 In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
@@ -28,8 +28,8 @@ In Microsoft 365, you implement data loss prevention by defining and applying DL
 - Windows 10 endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
- 
-Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
   
 ## DLP is part of the larger Microsoft 365 Compliance offering
 
@@ -37,7 +37,7 @@ Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you wil
 
 ## Protective actions of DLP policies
 
-Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
+Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action, like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
 
 - show a pop-up policy tip to the user that warns them that they may be trying to share a sensitive item inappropriately
 - block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification
@@ -60,7 +60,7 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-Microsoft 365 DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your user's are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+Microsoft 365 DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
@@ -72,7 +72,7 @@ DLP policies can block prohibited activities, like inappropriate sharing of sens
 
 **Organizational culture planning for DLP**
 
-A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips in to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
+A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -94,18 +94,18 @@ Each one has different pre-requisites. Sensitive items in some locations, like E
 
 #### Design your policies
 
-Define your control objectives, and how they apply across each respective workload. Draft a policy that embodies your objectives. Feel free to start with one workload at a time, or across all workloads - there's no impact yet.
+Start by defining your control objectives, and how they apply across each respective workload. Draft a policy that embodies your objectives. Feel free to start with one workload at a time, or across all workloads - there's no impact yet.
 
 #### Implement policy in test mode
 
-Evaluate the impact of the controls by implementing them with a DLP policy in Test mode. It's ok to apply the policy to all workloads in Test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
+Evaluate the impact of the controls by implementing them with a DLP policy in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
 
 #### Monitor outcomes and fine-tune the policy
 
-While in Test mode, monitor the outcomes of the policy and fine-tune it so that it meets your control objectives while ensuring you aren't adversely or inadvertently impacting valid user workflows and productivity. Here are some examples of things to fine-tune:
+While in test mode, monitor the outcomes of the policy and fine-tune it so that it meets your control objectives while ensuring you aren't adversely or inadvertently impacting valid user workflows and productivity. Here are some examples of things to fine-tune:
 
 - adjusting the locations and people/places that are in or out of scope
-- tune the conditions and exceptions that are use to determine if an item and what is being done with it matches the policy
+- tune the conditions and exceptions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
 - the actions
 - the level of restrictions
@@ -122,7 +122,7 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 
 You have flexibility in how you create and configure your DLP policies. You can start from a predefined template and create a policy in just a few clicks or you can design your own from the ground up. No matter which you choose, all DLP policies require the same information from you.
 
-1. **Choose what you want to monitor for** - Microsoft 365 comes with many predefined policy templates to help you get started or you can create a custom policy.
+1. **Choose what you want to monitor** - Microsoft 365 comes with many predefined policy templates to help you get started or you can create a custom policy.
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 2. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
@@ -174,7 +174,7 @@ DLP reports a vast amount of information into Microsoft 365 from monitoring, pol
 
 ### DLP Alerts Dashboard
 
-When DLP tales an action on a sensitive item, you can be notified of that action via a configurable alert. Rather than having these alerts pile up in a mailbox for you to sift through, the Compliance center make them available in the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). Use the DLP Alerts dashboard to configure alerts, review them, triage them and track resolution of DLP Alerts. Here's an example of alerts generated by policy matches and activities from Windows 10 devices.
+When DLP takes an action on a sensitive item, you can be notified of that action via a configurable alert. Rather than having these alerts pile up in a mailbox for you to sift through, the Compliance center makes them available in the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). Use the DLP Alerts dashboard to configure alerts, review them, triage them and track resolution of DLP Alerts. Here's an example of alerts generated by policy matches and activities from Windows 10 devices.
 
 > [!div class="mx-imgBorder"]
 > ![Alert info](../media/Alert-info-1.png)
