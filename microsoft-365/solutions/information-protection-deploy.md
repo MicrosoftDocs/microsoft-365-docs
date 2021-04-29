@@ -16,7 +16,8 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 ms.custom: 
-description: Configure the security and service infrastructure to protect your information and adhere to data privacy regulations.
+description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
+
 ---
 
 # Deploy information protection for data privacy regulations with Microsoft 365
@@ -25,7 +26,7 @@ Your organization may be subject to regional data privacy regulations that requi
 
 Examples of the types of data in Microsoft 365 include chat sessions in Microsoft Teams, emails in Exchange, and files in SharePoint and OneDrive. This solution provides guidance on how to assess risks and identify information, protect, govern, and respond to data privacy incidents for personal data stored in Microsoft 365 services that is subject to data privacy regulations.
 
-![What is information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
+![What is information protection for data privacy regulations](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs. 
 
