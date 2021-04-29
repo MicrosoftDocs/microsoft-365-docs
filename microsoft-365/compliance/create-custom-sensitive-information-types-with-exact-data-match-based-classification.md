@@ -161,7 +161,7 @@ When you include the ***ignoredDelimiters*** field with supported characters,  E
 - \~
 - \; 
 
-- The `ignoredDelimiters` flag doesn't support:
+The `ignoredDelimiters` flag doesn't support:
 - characters 0-9
 - A-Z
 - a-z
@@ -295,6 +295,8 @@ In this example, note that:
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
+ 
+After you have imported your rule package with your EDM sensitive info type and have imported your sensitive data table, you can test your newly created type by using the **Test** function in the EDM wizard in the compliance center. See [Use the Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) for instructions on using this functionality.
 
 #### Editing the schema for EDM-based classification
 

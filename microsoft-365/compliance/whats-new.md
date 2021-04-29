@@ -88,14 +88,10 @@ The following topics were updated or added to support these new features:​​�
 - [Review data with the insider risk content explorer](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
 - [Manage the workflow with the Users Dashboard](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
 
-### Microsoft Information Protection
-
-- **Microsoft Information Protection in Microsoft 365**. [Updated information](https://docs.microsoft.com/microsoft-365/compliance/information-protection) for new capabilities.
-
 ### Records management
 
-- **Length restrictions**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
-- **Retention labels**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
+- **File plan improvements**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
+- **Delete retention labels for records**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
 
 ### Sensitive information types
 
@@ -111,9 +107,9 @@ Content was added or updated in the following topics:
 
 ### Sensitivity labels
 
-- **DoD support**. Support for US government tenants DoD environments.
-- **Outlook encryption**. Encryption options for Outlook now include Encrypt-Only when you select [Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
-- **Office apps**. Updated [guidance](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) how to enforce built-in labels in Office apps when you have the Azure Information Protection unified labeling client installed.
+- **DoD support**. Support for US government tenants with DoD environments.
+- **Encrypt-Only for Outlook**. Encryption options for Outlook now include Encrypt-Only when you select [Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
+- **Enforcing built-in labels in Office apps**. Updated [guidance](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) how to enforce built-in labels in Office apps when you have the Azure Information Protection unified labeling client installed.
 
 ## February 2021
 
