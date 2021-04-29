@@ -102,6 +102,7 @@ The following OS versions are supported when using [Azure Defender for Servers](
 
 OS version | GCC | GCC High | DoD
 :---|:---|:---|:---
+Windows Server 2019 | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Windows Server 2016 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
