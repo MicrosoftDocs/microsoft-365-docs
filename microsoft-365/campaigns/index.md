@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Microsoft 365 guidance for smaller businesses, including smaller firms, practices, and political campaigns."
+description: "Microsoft 365 security and collaboration recommendations for smaller businesses, including smaller firms, practices, and political campaigns."
 ---
 
 Microsoft 365 for smaller businesses and campaigns
