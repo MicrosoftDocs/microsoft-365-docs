@@ -17,7 +17,7 @@ To set up the Scheduler for Microsoft 365, following are the prerequisites:
 |-------------------|-------------|
 |Cortana mailbox |Tenant admins will need to set a mailbox to serve as the “Cortana” mailbox (that is, cortana@yourdomain.com).         |
 |Exchange Online mailbox |Users must have an Exchange Online mail and calendar         |
-|Scheduler license |For licensing information, see the [product webpage](microsoft-365/meeting-scheduler ).        |
+|Scheduler license |For licensing information, see the product webpage [insert licensing link].        |
 
 ## Create a mailbox for Cortana
 An Exchange mailbox in your tenant will serve as the Cortana mailbox for your tenant to send and receive emails to and from Cortana. All emails sent to Cortana are retained in your tenant’s Cortana mailbox based on your retention policy.
