@@ -35,7 +35,7 @@ Watch a short video about Microsoft 365 Business Premium setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
 Most of the setup steps can be done in the guided setup, but the other options are also listed.
 
@@ -90,4 +90,4 @@ When you join a Windows 10 device to Azure AD, the policies you set for Windows 
 
 ## Related content
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+[Microsoft 365 for business training videos](../business-video/index.yml) (link page)

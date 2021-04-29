@@ -93,4 +93,4 @@ To get help with setup, see [set up](set-up.md).
 
 ## See also
 
-[Microsoft 365 for business training videos](../../business-video/index.yml)
+[Microsoft 365 for business training videos](../business-video/index.yml)

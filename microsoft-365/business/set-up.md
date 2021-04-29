@@ -128,4 +128,4 @@ You can also install Office individually. See [install Office on a PC or Mac](ht
 
 ## See also
 
-[Microsoft 365 for business training videos](../../business-video/index.yml)
+[Microsoft 365 for business training videos](../business-video/index.yml)

@@ -52,7 +52,7 @@ conceptualContent:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: ../../business-video/index.yml
+        - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
@@ -150,7 +150,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: ../../business-video/create-sensitivity-labels
+        - url: ../business-video/create-sensitivity-labels
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)

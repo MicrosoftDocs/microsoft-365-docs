@@ -55,7 +55,7 @@ To place a mailbox on litigation hold, in the Admin center:
 
 Sensitivity labels come with Azure Information Protection (AIP) Plan 1, and help you classify, and optionally protect your documents and emails, by applying labels. Labels can be applied automatically by administrators who define rules and conditions, manually by users, or by using a combination where users are given recommendations.
 
-To set up Sensitivity labels, view [create and manage sensitivity labels](../../business-video/create-sensitivity-labels) video.
+To set up Sensitivity labels, view [create and manage sensitivity labels](../business-video/create-sensitivity-labels) video.
 
 
 

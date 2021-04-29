@@ -108,4 +108,4 @@ If you retain a local Active Directory that contains some on-premises resources 
   
 [Manage Microsoft 365 for business](manage.md)[Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 for business training videos](../../business-video/index.yml)
+[Microsoft 365 for business training videos](../business-video/index.yml)

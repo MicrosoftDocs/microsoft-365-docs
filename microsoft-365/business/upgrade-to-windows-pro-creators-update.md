@@ -34,7 +34,7 @@ Watch a short video about upgrading Windows devices to Windows 10 Pro.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
 ## Upgrade to Windows 10 Pro
   
@@ -57,4 +57,4 @@ See [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-d
   
 ## Related content
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+[Microsoft 365 for business training videos](../business-video/index.yml) (link page)
