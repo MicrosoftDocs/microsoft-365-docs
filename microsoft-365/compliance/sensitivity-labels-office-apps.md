@@ -319,7 +319,7 @@ Use the following syntax:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-As with the other dynamic visual markings, the syntax is case-sensitive.
+As with the other dynamic visual markings, the syntax is case-sensitive, including the abbreviations for each app (WEPO).
 
 Examples:
 
