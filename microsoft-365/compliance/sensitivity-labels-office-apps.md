@@ -163,11 +163,13 @@ Sensitivity labels that you configure to apply encryption remove the complexity 
 - For a document:  **File** > **Info** > **Protect Document** > **Restrict Access**
 - for an email: From the **Options** tab > **Encrypt** 
   
-When users initially label a document or email, they can always override your label configuration settings with their own encryption settings. For example:
+When users initially label a document or email, they can override your label configuration settings with their own encryption settings. For example:
 
 - A user applies the **Confidential \ All Employees** label to a document and this label is configured to apply encryption settings for all users in the organization. This user then manually configures the IRM settings to restrict access to a user outside your organization. The end result is a document that's labeled **Confidential \ All Employees** and encrypted, but users in your organization can't open it as expected.
 
-- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. This user then manually configures the IRM settings so that the email is unrestricted. The end result is the email can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. In the Outlook app, this user then manually configures the IRM settings so that the email is unrestricted. The end result is the email can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+    
+    As an exception, for Outlook on the web, the options from the **Encrypt** menu aren't available for a user to select when the currently selected label applies encryption.
 
 - A user applies the **General** label to a document, and this label isn't configured to apply encryption. This user then manually configures the IRM settings to restrict access to the document. The end result is a document that's labeled **General** but that also applies encryption so that some users can't open it as expected.
 
@@ -317,7 +319,7 @@ Use the following syntax:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-As with the other dynamic visual markings, the syntax is case-sensitive.
+As with the other dynamic visual markings, the syntax is case-sensitive, which includes the abbreviations for each application type (WEPO).
 
 Examples:
 
