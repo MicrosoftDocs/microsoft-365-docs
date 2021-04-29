@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for Android - Privacy information
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender ATP for Android.
-keywords: microsoft, defender, atp, android, privacy, diagnostic
+title: Microsoft Defender for Endpoint on Android - Privacy information
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-#  Microsoft Defender for Endpoint for Android - Privacy information
+#  Microsoft Defender for Endpoint on Android - Privacy information
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -27,11 +27,11 @@ ms.technology: mde
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint for Android collects information from your configured
-Android devices and stores it in the same tenant where you have Defender for Endpoint.
+Defender for Endpoint on Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected, and to support the service.
 
-Information is collected to help keep Defender for Endpoint for Android secure,
-up-to-date, performing as expected and to support the service.
+For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+
+Information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected and to support the service.
 
 ## Required Data 
 
@@ -42,7 +42,7 @@ apps. Here's a list of the types of data being collected:
 
 ### App information
 
-Information about Android application packages (APKs) on the device including
+Information about **malicious** Android application packages (APKs) on the device including
 
 -  Install source
 -  Storage location (file path) of the APK
@@ -50,7 +50,7 @@ Information about Android application packages (APKs) on the device including
 
 ### Web page / Network information
 
-- Full URL (on supported browsers), when clicked
+- Full URL of the website only when a malicious connection or web page is detected.
 - Connection information
 - Protocol type (such as HTTP, HTTPS, etc.)
 
@@ -73,7 +73,7 @@ Information about Android application packages (APKs) on the device including
     -   Azure tenant ID - GUID that identifies your organization within
             Azure Active Directory
 
-    -   Microsoft Defender ATP org ID - Unique identifier associated with
+    -   Microsoft Defender for Endpoint org ID - Unique identifier associated with
             the enterprise that the device belongs to. Allows Microsoft to
             identify whether issues are impacting a select set of enterprises
             and how many enterprises are impacted 
@@ -81,6 +81,9 @@ Information about Android application packages (APKs) on the device including
     -   User Principal Name – Email ID of the user
 
 ### Product and service usage data
+
+The following information is collected only for Microsoft Defender for Endpoint app installed on the device. 
+
 -   App package info, including name, version, and app upgrade status
 
 -   Actions performed in the app

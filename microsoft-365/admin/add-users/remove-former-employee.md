@@ -37,7 +37,7 @@ Watch a short video about removing an employee. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 To prevent an employee from logging in:
 
@@ -339,7 +339,7 @@ If your organization synchronizes user accounts to Microsoft 365 from a local Ac
   
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet.
+If you're using Azure Active Directory, see the [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
   
 ## What you need to know about terminating an employee's email session
 

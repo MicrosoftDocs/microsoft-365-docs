@@ -1,6 +1,6 @@
 ---
 title: Threat Explorer and Real-time detections
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
@@ -9,11 +9,11 @@ audience: ITPro
 ms.topic: article
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
@@ -24,13 +24,15 @@ ms.prod: m365-security
 
 # Threat Explorer and Real-time detections
 
-
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
+<br>
+
+****
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
@@ -51,8 +53,9 @@ With this report, you can:
 ## Improvements to Threat Hunting Experience
 
 ### Introduction of Alert ID for MDO alerts within Explorer/Real-time detections (Preview)
+
 Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
-We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.  
+We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.
 
 Alert ID is available within the URL when you are viewing an individual alert; an example being `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
@@ -62,12 +65,13 @@ Alert ID is available within the URL when you are viewing an individual alert; a
 > [!div class="mx-imgBorder"]
 > ![Alert ID in details flyout](../../media/AlertID-DetailsFlyout.png)
 
- 
-### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)  
-As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants. 
-This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities. 
+### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days (Preview)
 
-### Updated limits for Export of records for Threat Explorer (Preview) 
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants.
+This does not impact any production tenants for both P1 and P2/E5 customers, which already has the 30 day data retention and search capabilities.
+
+### Updated limits for Export of records for Threat Explorer (Preview)
+
 As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
 ### Tags in Threat Explorer
@@ -96,6 +100,7 @@ You can use tags as a filter. Hunt just across priority accounts or specific use
 > ![Not filter tags](../../media/tags-filter-not.png)
 
 #### Email detail flyout
+
 To view the individual tags for sender and recipient, select the subject to open the message details flyout. On the **Summary** tab, the sender and recipient tags are shown separately, if they're present for an email.
 The information about individual tags for sender and recipient also extends to exported CSV data, where you can see these details in two separate columns.
 
@@ -104,13 +109,12 @@ The information about individual tags for sender and recipient also extends to e
 
 Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
 
-
 ### Updated Timeline View
 
 > [!div class="mx-imgBorder"]
 > ![URL tags](../../media/tags-urls.png)
-> 
-Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
+>
+Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
 ## Improvements to the threat hunting experience (upcoming)
 
@@ -171,6 +175,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 *Additional actions* were applied after delivery of the email. They can include *ZAP*, *manual remediation* (action taken by an Admin such as soft delete), *dynamic delivery*, and *reprocessed* (for an email that was retroactively detected as good).
 
 > [!NOTE]
+>
 > - As part of the pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through **Additional actions**.
 >
 > - There will be new fields and values for **Detection technologies** and **Additional actions** (especially for ZAP scenarios). You'll need to evaluate your existing saved queries and tracked queries to make sure they work with the new values.
@@ -204,12 +209,9 @@ The improvements include:
 - Show the full clicked URL (including any query parameters that are part of the URL) in the **Clicks** section of the URL flyout. Currently, the URL domain and path appear in the title bar. We're extending that information to show the full URL.
 
 - Fixes across URL filters (*URL* versus *URL domain* versus *URL domain and path*): The updates affect searching for messages that contain a URL/click verdict. We enabled support for protocol-agnostic searches, so you can search for a URL without using `http`. By default, the URL search maps to http, unless another value is explicitly specified. For example:
-
-   -  Search with and without the `http://` prefix in the **URL**, **URL Domain**, and **URL Domain and Path** filter fields. The searches should show the same results.
-
-   -  Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
-
-   - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields. `/` at the end of the **URL** field is ignored.
+  - Search with and without the `http://` prefix in the **URL**, **URL Domain**, and **URL Domain and Path** filter fields. The searches should show the same results.
+  - Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
+  - `/` is ignored at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields. `/` at the end of the **URL** field is ignored.
 
 ### Phish confidence level
 
@@ -287,16 +289,16 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 
 > [!IMPORTANT]
 > ETR search and name availability depend on the specific role that's assigned to you. You need to have one of the following roles/permissions to view the ETR names and search. If you don't have any of these roles assigned to you, you can't see the names of the transport rules or search for messages by using ETR names. However, you could see the ETR label and GUID information in the Email Details. Other record-viewing experiences in Email Grids, Email flyouts, Filters, and Export are not affected.
-> 
+>
 > - EXO Only - Data Loss Prevention: All
 > - EXO Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory or EXO - Security Admin: All
 > - AAD or EXO - Security Reader: All
 > - EXO Only - Transport Rules: All
 > - EXO Only - View-Only Configuration: All
-> 
+>
 > Within the email grid, Details flyout, and Exported CSV, the ETRs are presented with a Name/GUID as shown below.
-> 
+>
 > > [!div class="mx-imgBorder"]
 > > ![Exchange Transport Rules](../../media/ETR_Details.png)
 
@@ -312,7 +314,7 @@ The search for connectors is "contains" in nature, which means partial keyword s
 ## New features in Threat Explorer and Real-time detections
 
 - [View phishing emails sent to impersonated users and domains](#view-phishing-emails-sent-to-impersonated-users-and-domains)
--  [Preview email header and download email body](#preview-email-header-and-download-email-body)
+- [Preview email header and download email body](#preview-email-header-and-download-email-body)
 - [Email timeline](#email-timeline)
 - [Export URL click data](#export-url-click-data)
 
@@ -336,7 +338,7 @@ This example uses Threat Explorer.
 
 4. Select the Subject of any message under the Email tab > Details tab to see additional impersonation information like Impersonated Domain / Detected location.
 
-    **OR** 
+    **OR**
 
     Select **Impersonated user** and type a protected user's email address in the textbox.
 
@@ -348,7 +350,7 @@ This example uses Threat Explorer.
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="The Threat Explorer details pane for a protected user showing the detection location, and the threat that was detected (here phish impersonation of a user).":::
 
 > [!NOTE]
-> In step 3 or 5, if you choose **Detection Technology** and select **Impersonation domain** or **Impersonation user** respectively, the information in the **Email tab** > **Details tab** about the user or domain, and the *Detected location* will be shown only on the messages that are related to the user or domain listed on the *Anti-Phishing policy* page. 
+> In step 3 or 5, if you choose **Detection Technology** and select **Impersonation domain** or **Impersonation user** respectively, the information in the **Email tab** > **Details tab** about the user or domain, and the *Detected location* will be shown only on the messages that are related to the user or domain listed on the *Anti-Phishing policy* page.
 
 ### Preview email header and download email body
 
@@ -363,16 +365,26 @@ How is this done? Delivery status is now broken out into two columns:
 
 *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions for an email:
 
+<br>
+
+****
+
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
 |Email was delivered to the inbox or folder of a user, and the user can access it.|Email was sent to the user's Junk  or Deleted folder, and the user can access it.|Emails that are quarantined, that failed, or were dropped. These mails are inaccessible to the user.|Email had malicious attachments replaced by .txt files that state the attachment was malicious.|
+|
 
 Here is what the user can and can't see:
+
+<br>
+
+****
 
 |Accessible to end users|Inaccessible to end users|
 |---|---|
 |Delivered|Blocked|
 |Junked|Replaced|
+|
 
 **Delivery location** shows the results of policies and detections that run post-delivery. It's linked to ***Delivery action***. These are the possible values:
 
@@ -517,7 +529,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](../defender/m365d-autoir.md)
+- [Automated investigation and response in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
 
