@@ -52,7 +52,7 @@ You can also delete an add-in that was deployed.
 
 3. In the **Configuration** pane go to **Advanced Settings** > **Add-ins**
 
-4. Select the add-in from the list again
+4. Select the add-in from the list again.
 
 5. Choose **Remove Add-In**. Remove the Add-in button on the bottom right corner.
 
