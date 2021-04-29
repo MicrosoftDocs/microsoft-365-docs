@@ -170,7 +170,7 @@ For Windows Server 2012 R2, ensure that you install the following hotfix:
 
 1. Configure Defender for Endpoint onboarding settings on the Windows server using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
-2. (Only applicable if you're using third-party anti-malware solution). If you're running a third-party anti-malware solution, you'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
+2. (Only applicable if you're using third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
