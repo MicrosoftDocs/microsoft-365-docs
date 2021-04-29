@@ -50,7 +50,7 @@ You can also delete an add-in that was deployed.
 
 2. Select the deployed add-in and click the **Configuration** tab
 
-3. In the **Configuration** pane go to **Advanced Settings** > **Add-ins**
+3. In the **Configuration** pane, go to **Advanced Settings** > **Add-ins**.
 
 4. Select the add-in from the list again.
 
