@@ -56,15 +56,15 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-	<Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-		<Pattern confidenceLevel="60">
+	<Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+		<Pattern confidenceLevel="65">
 			<IdMatch idRef="Regex_employee_id"/>
 		</Pattern>
-		<Pattern confidenceLevel="70">
+		<Pattern confidenceLevel="75">
 			<IdMatch idRef="Regex_employee_id"/>
 			<Match idRef="Func_us_date"/>
 		</Pattern>
-		<Pattern confidenceLevel="80">
+		<Pattern confidenceLevel="85">
 			<IdMatch idRef="Regex_employee_id"/>
 			<Match idRef="Func_us_date"/>
 			<Any minMatches="1">

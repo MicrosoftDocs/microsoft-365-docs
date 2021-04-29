@@ -105,7 +105,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
 
     1. up to 1000 individual accounts to include or exclude
-    1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
+    1. distribution lists and security groups to include or exclude. 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. Then choose **Next**.

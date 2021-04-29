@@ -6,13 +6,14 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: None
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
+recommendations: false
 description: "learn about dlp policy conditions and exceptions"
 ---
 
