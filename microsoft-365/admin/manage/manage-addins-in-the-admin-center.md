@@ -54,7 +54,7 @@ You can also delete an add-in that was deployed.
 
 4. Select the add-in from the list again
 
-5. Click on **Remove Add-In**. Remove the Add-in button on the bottom right corner.
+5. Choose **Remove Add-In**. Remove the Add-in button on the bottom right corner.
 
 6. Validate your selections, and choose **Remove**.
 
