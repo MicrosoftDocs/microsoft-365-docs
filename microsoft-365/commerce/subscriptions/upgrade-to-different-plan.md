@@ -24,18 +24,7 @@ description: "Learn how to upgrade to a different plan."
 
 # Upgrade to a different plan
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
-
-> [!NOTE]
-> This article applies to the new admin center. If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. To view the article about the old admin center, see [Switch to a different Microsoft 365 for business plan](switch-to-a-different-plan.md).
 
 ## Use the Upgrade tab
 
@@ -89,7 +78,7 @@ If you don't see any plans on the **Upgrade** tab, it means your plan can't be u
 #### You can't upgrade subscriptions now because you have more users than licenses.
 
 To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have
-purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../admin/manage/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
+purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
 
 #### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available.
 

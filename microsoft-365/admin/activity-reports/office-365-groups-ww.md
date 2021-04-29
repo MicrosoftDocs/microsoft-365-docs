@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Reports in the admin center - Microsoft 365 groups"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -61,3 +61,10 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Members  <br/> |The number of members in the group.  <br/> |
 |External members |The number of external users in the group.|
 |||
+
+## Related content
+
+[Microsoft 365 Reports in the admin center](activity-reports.md) (article)
+[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)
+[Microsoft 365 Reports in the admin center - Active Users](../../admin/activity-reports/active-users-ww.md) (article)
+

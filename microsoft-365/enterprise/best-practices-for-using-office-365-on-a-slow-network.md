@@ -136,7 +136,7 @@ The following are general guidelines for using Skype for Business or Lync Online
 
 - Avoid making phone calls over a virtual private network (VPN) or remote access service (RAS) connections.
 
-- Make sure your audio device is approved. For more information, see [Phones and Devices Qualified for Microsoft Lync](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones).
+- Make sure your audio device is approved. For more information, see [Phones and Devices Qualified for Microsoft Lync](/skypeforbusiness/lync-cert/ip-phones).
 
 - When using PowerPoint in an online presentation, reduce the size and complexity of the slides. For more information, see [Tips for improving the performance of your presentation](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
 
@@ -185,4 +185,3 @@ Microsoft continually improves the overall performance of Office 365 by monitori
 [Managing Office 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
- 
