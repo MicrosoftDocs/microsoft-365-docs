@@ -13,7 +13,7 @@ ms.topic: article
 # Microsoft Managed Desktop devices 
 
 >[!NOTE]
->Microsoft Managed Desktop is no longer requiring device models be from this list. As of May 3, 2021, all devices from an approved manufacturer should meet our posted hardware and software requirements. Devices on this list can continue to be used with confidence. Please visit our Device Options page for instructions on ordering new or using existing models and where you can go to see recommended devices.
+>Microsoft Managed Desktop is no longer requiring device models be from this list. As of May 3, 2021, all devices from an approved manufacturer should meet our posted hardware and software requirements. You can continue to use devices on this list with confidence. See {LINK TBD} for instructions to order new or use existing models and where you can go to see recommended devices.
 
 Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
