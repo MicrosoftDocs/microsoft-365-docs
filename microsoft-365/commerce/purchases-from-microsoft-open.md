@@ -12,9 +12,11 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - BCS160
 - MET150

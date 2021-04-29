@@ -12,16 +12,16 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: "Learn how to manage your payment methods in the Microsoft 365 admin center."
-ms.date: 
 ---
 
 # Manage payment methods

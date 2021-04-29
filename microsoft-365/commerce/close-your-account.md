@@ -10,10 +10,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to close your account with Microsoft."

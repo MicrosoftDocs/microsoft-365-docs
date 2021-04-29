@@ -12,9 +12,11 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: customer-email
+ms.custom: 
+- customer-email
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Important information about upgrading or changing plans for customers with an Office 365 E4 subscription."

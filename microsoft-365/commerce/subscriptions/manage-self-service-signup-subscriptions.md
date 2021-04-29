@@ -12,9 +12,11 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."

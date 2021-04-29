@@ -12,13 +12,14 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
 search.appverid:
 - MET150
 description: "Learn about information specifically for Microsoft 365 for business in Mexico." 
 ms.custom: 
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 monikerRange: 'o365-worldwide'
 ---
 

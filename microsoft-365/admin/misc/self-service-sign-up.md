@@ -12,10 +12,12 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_NonTOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_SMB
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd

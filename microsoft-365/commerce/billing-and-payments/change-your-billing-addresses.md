@@ -15,11 +15,12 @@ ms.collection:
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-
 ---
 
 # Change your billing addresses

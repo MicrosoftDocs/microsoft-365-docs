@@ -10,8 +10,13 @@ ms.topic: article
 ms.service: o365-administration 
 localization_priority: Normal
 ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: "Learn about billing accounts and how to manage them."

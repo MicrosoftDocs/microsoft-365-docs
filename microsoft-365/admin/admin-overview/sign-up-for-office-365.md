@@ -12,13 +12,15 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
 - TRN_SMB
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
 - MOE150

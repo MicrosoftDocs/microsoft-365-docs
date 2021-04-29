@@ -12,15 +12,16 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
 ---
 
 # Enter your product key for Microsoft 365 Business Standard

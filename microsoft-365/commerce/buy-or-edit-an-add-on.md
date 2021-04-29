@@ -14,11 +14,13 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ---
 
 # Buy or manage add-ons
