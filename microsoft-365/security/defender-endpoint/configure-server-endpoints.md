@@ -32,16 +32,54 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
+
+This topic describes how to onboard specific Windows Servers to Microsoft Defender for Endpoint. 
+
 Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender Security Center console.
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Defender for Endpoint](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
 
-
-## Windows Server (SAC) version 1803, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2019 Core edition
-
 You can onboard Windows Server (SAC) version 1803, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
+
+- [Local script](configure-endpoints-script.md)
+- [Group Policy](configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [System Center Configuration Manager 2012 / 2012 R2  1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
+- [VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md)
+
+## Windows Server 2012 R2 and Windows Server 2016
+### Before you begin
+
+**Prerequisites for Windows Server 2012 R2** 
+
+Verify that you have installed the following hotfix:
+
+- [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+- [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+
+**Prerequisites for Windows Server 2016** 
+
+Verify that Microsoft Defender Antivirus version 4.18.2104.120 or later is installed.
+
+> [!NOTE]
+> If System Center Endpoint Protection (SCEP) is installed on a machine, it must be removed first, otherwise the installation will not proceed. For instructions on environments with managed SCEP, refer to MECM migration scenarios. 
+
+
+### Download installation and onboarding packages
+
+Download the installation and onboarding packages from Microsoft Defender Security Center:
+
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+2. Select **Windows Server 2012 R2 and 2016**.
+3. Select **Download installation package**. Save it as wdav.pkg to a local directory.
+4. Select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+5. 
+
+
+## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
 
 - [Local script](configure-endpoints-script.md)
 - [Group Policy](configure-endpoints-gp.md)
@@ -56,20 +94,12 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2012 R2, Windo
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-### Before you begin
-Perform the following steps to fulfill the onboarding requirements:
 
-For Windows Server 2012 R2, ensure that you install the following hotfix:
-
-- [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-- [Update for Universal C Runtime in Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
-- [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
-
-#### Onboarding steps
+## Onboarding steps
 
 1. Configure Defender for Endpoint onboarding settings on the Windows server using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
 
-2. (Only applicable if you're using third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
+2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
     1. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -87,13 +117,27 @@ For Windows Server 2012 R2, ensure that you install the following hotfix:
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
-3. Run the following command to check if Microsoft Defender AV is installed:
+
+## Verify onboarding
+
+1. Run the following command to verify that Microsoft Defender AV is installed:
 
    ```sc.exe query Windefend```
 
     If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
+
+
+2. Run the following command to verify that Microsoft Defender for Endpoint is running:
+
+    ```sc.exe query sense```
+    
+    The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+
+## Run a detection test
+Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
+
 
 ## Integration with Azure Defender
 
@@ -116,7 +160,7 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
-## Configure and update System Center Endpoint Protection clients
+## Configure and update System Center Endpoint Protection clients - what to do with this? contradicts the uninstall note
 
 Defender for Endpoint integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
@@ -126,7 +170,9 @@ The following steps are required to enable this integration:
 
 - [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
+## Offboard Windows servers
 
+You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 ## Onboarding Servers with no management solution
 

@@ -59,11 +59,11 @@ In general, you'll need to take the following steps:
 
 Perform the following steps to fulfill the onboarding requirements:
 
-For Windows Server 2008 R2 SP1, ensure that you install the following hotfix:
+Ensure that you install the following hotfix:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
+Ensure that you fulfill the following requirements:
 
 - Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
@@ -71,10 +71,10 @@ For Windows Server 2008 R2 SP1, ensure that you fulfill the following requiremen
     > [!NOTE]
     > If you are managing your Windows Server 2008 R2 SP1 with SCCM, the SCCM client agent installs .Net Framework 4.5.2. So you don't need to install the .NET framework 4.5 (or later).
 
-For Windows Server 2008 R2 SP1: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+- [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
+> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1.
 
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender for Endpoint
 
@@ -129,9 +129,7 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 
 ## Offboard Windows servers
 
-You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
-
-For other Windows server versions, you have two options to offboard Windows servers from the service:
+You have two options to offboard Windows servers from the service:
 
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
@@ -182,7 +180,7 @@ To offboard the Windows server, you can use either of the following methods:
 
     ```
 
-## Onboarding Servers with no management solution
+## Onboarding Servers with no management solution - OWN PAGE? OR KEEP HERE?
 
 ### Using Group Policy
 
