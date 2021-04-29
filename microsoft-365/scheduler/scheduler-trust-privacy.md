@@ -11,14 +11,14 @@ description: "Understanding Trust and Privacy in Scheduler for Microsoft 365 are
 ---
 # Trust and Privacy in Scheduler for Microsoft 365
 
-Scheduler is a unique offering because artificial intelligence is augmented with human assistance when the AI models are unsure of a user’s intent, often due to ambiguity or contextual references. 
+Scheduler is a unique offering because artificial intelligence is augmented with human assistance when the AI models are not confident in user’s intent, often due to ambiguity or contextual references. 
 
 Additional trust and privacy information:  
 
 - All customer content is stored in the customer’s tenant.
 - Scheduler is GDPR (General Data Protection Regulation) compliant.
 - All customer data is processed in the Microsoft 365 Trust and Privacy Boundaries.
-- Scheduler’s human assistants are Supplier Security & Privacy Assurance certified for personal information and highly confidential information by Microsoft similar to Microsoft support personnel / data processors. 
+- Scheduler’s human assistants are Supplier Security & Privacy Assurance certified for personal information and highly confidential information by Microsoft analogous to Microsoft support personnel / data processors. 
 - Email attachments are not consumed or processed by the Scheduler service.
-- Encrypted mail is not consumed or processed by the Scheduler service.
+- Encrypted emails are not consumed or processed by the Scheduler service.
 - Scheduler does not monitor the meeting organizer’s or attendee’s calendar or inbox. 

@@ -19,16 +19,16 @@ Scheduler:
 - Communicates with the meeting organizer and attendees by email in natural language.
 - Finds a time to meet when everyone is available.
 - Coordinates between external attendees based on the organizer’s availability.
-- Keeps the meeting organizer informed on scheduling progress and asks the organizer for guidance when needed 
-- Negotiates times to meet across up to two different time zones 
-- Sends the invitation to the meeting 
-- Adds a Teams link to every meeting  
-- Reschedules or cancels meetings booked by Cortana 
-- Works from any device with email  
+- Keeps the meeting organizer informed on scheduling progress and asks the organizer for guidance when needed.
+- Negotiates times to meet across up to two different time zones.
+- Sends the invitation to the meeting from the organizer.
+- Adds a Teams link to every meeting.
+- Reschedules or cancels meetings booked by Cortana.
+- Works from any device with access to email.
 
 ## Who can benefit from Scheduler for Microsoft 365?
 
-Scheduler takes care of the time-consuming hassle of scheduling meetings so users can focus on more important things. People that regularly schedule meetings with 5 or fewer attendees will save time with Scheduler. Specifically, users in recruiting, sales, procurement, and legal that regularly meet with attendees outside of their company will receive the most value from delegating meeting coordination to Scheduler.
+Scheduler takes care of the time-consuming hassle of scheduling meetings so users can focus on more important things. People that regularly schedule small meetings, fewer than 5 attendees, will save time with Scheduler. Specifically, users in recruiting, sales, procurement, and legal that regularly meet with attendees outside of their company will receive the most value from delegating meeting coordination to Scheduler.
 
 ## How does Scheduler for Microsoft 365 work?
 
@@ -40,4 +40,4 @@ After a user sends a meeting request to Cortana, the Scheduler service:
 
 - Finds a time to meet based on the availability of the organizer and attendees in the same tenant.
 - If the organizer does not have access to availability of the attendees, Cortana negotiates a time to meet with those attendees by email. 
-- Once the mutually agreeable time has been found, Cortana adds a Teams meeting and sends out the calendar invites. 
+- Once a mutually agreeable time has been found, Cortana adds a Teams meeting and sends out the calendar invites. 

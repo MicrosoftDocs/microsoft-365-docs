@@ -11,8 +11,8 @@ description: "Scheduler for Microsoft 365 FAQs"
 ---
 # Scheduler for Microsoft 365 FAQs
 
-**Question:** Can I use Scheduler with Daily Briefing, Play My Email, Cortana in Teams, Cortana in Windows and other Cortana features?</br>
-No. Scheduler only interacts with email via the cortana@yourdomain.com/cortana@yourdomain.com address. As a result, Scheduler works on any device where email is available. Scheduler is not integrated with other Cortana services.
+**Question:** How does Scheduler integrate with other Cortana features, such as Cortana for Windows, Daily Briefing Email and Play My Emails?</br>
+Scheduler is an independent service from other Cortana features. Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address. Currently, users can only interact with Scheduler via email.
 
 **Question:** Does this work only with Outlook? Are other email products supported?</br>  
 As long as you have a license, Other than the three requirements above, users can email cortana@yourdomain.com from any email client on any device.
@@ -35,10 +35,10 @@ Scheduler uses Scheduling Intelligence (AI) augmented with human assistants. If 
 Scheduler assistants are Microsoft Supplier Security and Privacy Assurance (SSPA) certified for personal and highly confidential information. 
 
 **Question:** What can SSPA Assistants view?</br>
-When a task (ticket) is generated, Assistants view a snapshot of only the email that was addressed to Cortana (not the entire thread). The snapshot is taken from the Organizer’s mailbox and viewed through a link in a browser. The link is active for 48 hours but can not be accessed after the task is completed.​ 
+Scheduler and the SSPA Assistants can view  the emails that are addressed to Cortana. In a threaded email exchange, only the emails that include Cortana’s email address will be processed, not the previous emails in the thread before Cortana was added.   
 
 **Question:** Is customer data retained in the Scheduler’s Data Flow?​ </br>
-Scheduler retains no customer data in the processing of meeting requests. All data resides within the Customer’s tenant in the Cortana or Organizer mailbox. All data processing occurs within the Microsoft 365 Trust and Privacy boundary.
+Scheduler stores all customer content within the tenant boundaries and retains data in accordance with GDPR guidelines, Microsoft 365 Trust & Privacy policies, and tenant email policies.
 
 **Question:** How does Scheduler process the free/busy data of internal attendees?​ </br>
 Scheduler’s automation utilizes the findMeetingTimes service to identify times that are mutually available for attendees and the organizer. This service powers other Outlook experiences such as Suggested Times in the Outlook meeting form. Free/busy attendee information is not consumed explicitly as free/busy blocks.​ 
@@ -47,10 +47,10 @@ Scheduler’s automation utilizes the findMeetingTimes service to identify times
 Yes.
 
 **Question:** Who has access to the Cortana mailbox? </br>
-Microsoft does not have standing access to the contents of your Cortana mailbox. The contents of the mailbox can only be accessed by Microsoft via Lockbox approval.​ 
+Scheduler processes meeting requests and associated emails that are sent to your tenant’s Cortana mailbox. Microsoft does not have any other access to the Cortana mailbox except through Lockbox approval at the request of the tenant admin.  
 
 **Question:** Is customer data used for training AI models?</br>
-No customer data from Scheduler for Microsoft 365 can be used for data training sets. All data permanently resides in the customer tenant. ​ 
+No customer content from Scheduler for Microsoft 365 can be used for data training sets. All customer content resides in the customer tenant. ​ 
 
 **Question:** Will Scheduler process encrypted mail?</br>
 No, encrypted mail will be rejected by the Scheduler workflow. 
