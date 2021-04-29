@@ -12,12 +12,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-description: "Learn how to manage licenses for third-party apps in the Microsoft 365 admin center."
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
+- commerce_licensing
+ms.reviewer: 
 search.appverid:
 - MET150
+description: "Learn how to manage licenses for third-party apps in the Microsoft 365 admin center."
 ---
 
 # Manage third-party app licenses in the Microsoft 365 admin center
