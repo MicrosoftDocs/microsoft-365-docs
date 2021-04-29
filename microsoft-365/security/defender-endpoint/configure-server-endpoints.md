@@ -24,7 +24,6 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) version 1803 and later
@@ -39,106 +38,6 @@ For a practical guidance on what needs to be in place for licensing and infrastr
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](https://docs.microsoft.com/windows/device-security/windows-security-baselines).
 
-## Windows Server 2008 R2 SP1
-
-You can onboard Windows Server 2008 R2 SP1 by using any of the following options:
-
-- **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
-- **Option 2**: [Onboard through Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
-- **Option 3**: [Onboard through Microsoft Endpoint Manager version 2002 and later](#option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later)
-
-After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
-
-> [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-services).
-
-### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
-
-You'll need to install and configure MMA for Windows servers to report sensor data to Defender for Endpoint. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
-
-If you're already using System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), attach the Microsoft Monitoring Agent (MMA) to report to your Defender for Endpoint workspace through Multihoming support.
-
-In general, you'll need to take the following steps:
-
-1. Fulfill the onboarding requirements outlined in **Before you begin** section.
-2. Turn on server monitoring from Microsoft Defender Security center.
-3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
-4. Configure and update System Center Endpoint Protection clients.
-
-> [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
-
-#### Before you begin
-
-Perform the following steps to fulfill the onboarding requirements:
-
-For Windows Server 2008 R2 SP1, ensure that you install the following hotfix:
-
-- [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-
-For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
-
-- Install the [February monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-
-    > [!NOTE]
-    > If you are managing your Windows Server 2008 R2 SP1 with SCCM, the SCCM client agent installs .Net Framework 4.5.2. So you don't need to install the .NET framework 4.5 (or later).
-
-For Windows Server 2008 R2 SP1: [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
-
-> [!NOTE]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
-
-### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender for Endpoint
-
-1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
-
-2. Using the Workspace ID and Workspace key obtained in the previous procedure, choose any of the following installation methods to install the agent on the Windows server:
-    - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). 
-    On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
-    - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
-    - [Configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
-
-> [!NOTE]
-> If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
-
-### Configure Windows server proxy and Internet connectivity settings if needed
-
-If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
-
-- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
-- [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
-
-If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
-
-Once completed, you should see onboarded Windows servers in the portal within an hour.
-
-### Option 2: Onboard Windows servers through Azure Security Center 
-
-!!! TBD - CHECK WITH ASC TEAM !!!
-
-1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
-
-2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
-
-3. Click **Onboard Servers in Azure Security Center**.
-
-4. Follow the onboarding instructions in [Microsoft Defender for Endpoint with Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) and If you are using Azure ARC, Follow the onboarding instructions in [Enabling the Microsoft Defender for Endpoint integration](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
-
-After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
-
-> [!NOTE]
->
-> - For onboarding via Azure Defender for Servers to work as expected, the server must have an appropriate workspace and key configured within the Microsoft Monitoring Agent (MMA) settings.
-> - Once configured, the appropriate cloud management pack is deployed on the machine and the sensor process (MsSenseS.exe) will be deployed and started.
-> - This is also required if the server is configured to use an OMS Gateway server as proxy.
-
-### Option 3: Onboard Windows servers through Microsoft Endpoint Manager version 2002 and later
-
-You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
-
-After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 ## Windows Server (SAC) version 1803, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2019 Core edition
 
@@ -227,60 +126,7 @@ The following steps are required to enable this integration:
 
 - [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
-## Offboard Windows servers
 
-You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
-
-For other Windows server versions, you have two options to offboard Windows servers from the service:
-
-- Uninstall the MMA agent
-- Remove the Defender for Endpoint workspace configuration
-
-> [!NOTE]
-> Offboarding causes the Windows server to stop sending sensor data to the portal but data from the Windows server, including reference to any alerts it has had will be retained for up to 6 months.
-
-### Uninstall Windows servers by uninstalling the MMA agent
-
-To offboard the Windows server, you can uninstall the MMA agent from the Windows server or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the Windows server will no longer send sensor data to Defender for Endpoint.
-For more information, see [To disable an agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
-
-### Remove the Defender for Endpoint workspace configuration
-
-To offboard the Windows server, you can use either of the following methods:
-
-- Remove the Defender for Endpoint workspace configuration from the MMA agent
-- Run a PowerShell command to remove the configuration
-
-#### Remove the Defender for Endpoint workspace configuration from the MMA agent
-
-1. In the **Microsoft Monitoring Agent Properties**, select the **Azure Log Analytics (OMS)** tab.
-
-2. Select the Defender for Endpoint workspace, and click **Remove**.
-
-    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma.png)
-
-#### Run a PowerShell command to remove the configuration
-
-1. Get your Workspace ID:
-
-   1. In the navigation pane, select **Settings** > **Onboarding**.
-
-   1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
-
-      ![Image of Windows server onboarding](images/atp-server-offboarding-workspaceid.png)
-
-2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
-
-    ```powershell
-    $ErrorActionPreference = "SilentlyContinue"
-    # Load agent scripting object
-    $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
-    # Remove OMS Workspace
-    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
-    # Reload the configuration and apply changes
-    $AgentCfg.ReloadConfiguration()
-
-    ```
 
 ## Onboarding Servers with no management solution
 
