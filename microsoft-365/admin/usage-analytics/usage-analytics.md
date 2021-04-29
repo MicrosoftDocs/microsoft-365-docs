@@ -84,6 +84,9 @@ User activity reports are available for certain individual services. These repor
 It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
 To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### Is Usage summary reports reader role enough to view the unage analytics?
+
+Usage Summary Reports Reader role gives them access to the Usage Analytics and Productivity Score experience in the Microsoft 365 admin Center. Microsoft recommends Reports Reader or Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but not necessarily an IT administrator.
 
 ### Who can connect to Microsoft 365 usage analytics?
 
