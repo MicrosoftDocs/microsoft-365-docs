@@ -76,6 +76,8 @@ As part of the process of creating a device group, you'll:
 
 You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
 
+
+
 >[!WARNING]
 >Deleting a device group may affect email notification rules. If a device group is configured under an email notification rule, it will be removed from that rule. If the device group is the only group configured for an email notification, that email notification rule will be deleted along with the device group.
 
@@ -86,15 +88,17 @@ Devices that aren't matched to any groups are added to Ungrouped devices (defaul
 >[!NOTE]
 > Applying changes to device group configuration may take up to several minutes.
 
-Device groups definitions now expended to include multiple values per condition. You can now set multiple tags, device names, and domains to the definition of a single device group.
 
-**How does it work?**
+### Add device group definitions
+Device group definitions can also include multipe values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
-- Create a new device group and get into the **Devices** tab.
-- Add the first value for one of the conditions.
-- Click `+` to add more rows of the same property type.
-- The operator between rows of the same condition type OR which allows multiple values per property.
-- You can add up to 10 rows (values) for each property type – tag, device name, domain.
+1. Create a new device group, then select **Devices** tab.
+2. Add the first value for one of the conditions.
+3. Select `+` to add more rows of the same property type.
+
+>[!TIP]
+> Use the 'OR' operator between rows of the same condition type, which allows multiple values per property.
+> You can add up to 10 rows (values) for each property type - tag, device name, domain.
 
 For more information on linking to device groups definitions, see [Device groups - Microsoft 365 security](https://sip.security.microsoft.com/homepage).
 
