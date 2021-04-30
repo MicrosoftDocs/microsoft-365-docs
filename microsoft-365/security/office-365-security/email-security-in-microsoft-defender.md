@@ -21,7 +21,7 @@ ms.prod: m365-security
 # Email security in Microsoft Defender for Office 365
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two article in this series are: [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Real-time detections](real-time-detections.md). 
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Real-time detections](real-time-detections.md). 
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features. 
 

@@ -21,7 +21,7 @@ ms.prod: m365-security
 # Real-time detections in Microsoft Defender for Office 365
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two article in this series are: [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security](email-security-in-microsoft-defender.md). 
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security](email-security-in-microsoft-defender.md). 
 
 This article explains the difference between threat exploration and real-time detections, and the licenses and permissions needed. 
 

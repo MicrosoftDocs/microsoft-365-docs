@@ -21,7 +21,7 @@ ms.prod: m365-security
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two article in this series are: [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md). 
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md). 
 
 This article is about threat hunting in Microsoft Defender for Office 365, the tools available, and how to use them. 
 
