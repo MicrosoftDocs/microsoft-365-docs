@@ -82,7 +82,7 @@ The Office 365 operated by 21Vianet technical support team troubleshoots only th
 
 ## Community and self-service support options
 
-Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](services-in-china/services-in-china.md).
+Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](../admin/services-in-china/services-in-china.md).
 
 ## Pre-sales support
 
@@ -170,7 +170,7 @@ Call support. If you encounter any problem with online request, phone support is
 
 People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Office 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Office 365 service requests.
 
-With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](add-users/assign-admin-roles.md).
+With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](../admin/add-users/assign-admin-roles.md).
 
 The administrator is:
 
@@ -224,7 +224,7 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
 ::: moniker range="o365-germany"
 
-This article applies to customers of Office 365 Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Office 365 Germany](admin-overview/learn-about-office-365-germany.md).
+This article applies to customers of Office 365 Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Office 365 Germany](../admin/admin-overview/learn-about-office-365-germany.md).
 
 As an admin for Office 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Office 365 Germany users in your organization.
 
