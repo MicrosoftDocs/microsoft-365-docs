@@ -106,7 +106,7 @@ After you select this **Trigger a disposition review** option, on the next page 
 
 ![Specifying disposition reviewers](../media/disposition-reviewers.png) 
 
-Select **Add A stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
+Select **Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
 For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are currently not supported for this option.
 
@@ -149,11 +149,11 @@ When a reviewer is notified by email that content is ready to review, they go to
 
 ![Open in new window for disposition review](../media/open-in-new-window.png)
 
-They then see all pending dispositions for that label from the **Pending disposition** tab. When they select one or more items, they can then choose an action and enter a justification comment:
+From the **Pending disposition** page, they see all pending dispositions for that label. When one or more items are selected, they can use the mini-preview pane and the **Source**, **Details**, and **History** tab to inspect the content before taking action on it:
 
 ![Disposition options](../media/retention-disposition-options.png)
 
-As you can see from the picture (**SCREENSHOT NEEDS TO BE REPLACED WITH THE LATEST ONE**), the actions supported are: 
+As you can see from this example, the actions supported are: 
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
@@ -162,7 +162,9 @@ As you can see from the picture (**SCREENSHOT NEEDS TO BE REPLACED WITH THE LATE
     -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
-
+- **Add reviewers**:
+    - When this action is selected, the user is prompted to specify and then add additional users for review.
+    - 
 During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
