@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "This article discusses how to apply a sensitivity label to a model in SharePoint Syntex"
+description: "Learn how to apply a sensitivity label to a model in SharePoint Syntex."
 ---
 
 # Apply a sensitivity label to a model in SharePoint Syntex
@@ -82,9 +82,6 @@ You can either apply a sensitivity label to a form processing model when you are
 
 2. In **Advanced settings**, in the **Sensitivity label** section, select the menu and then select the sensitivity label you want to apply to the model.
 
-[**Update screenshot**]
-    ![Add to a new form processing model](../media/content-understanding/retention-label-forms.png)</br>
-
 3.  After you've completed your remaining model settings, select **Create** to build your model.
 
 ### To add a sensitivity label to an existing form processing model
@@ -100,12 +97,7 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 1. In your document library to which the form processing model is applied, select the **Automate** menu, select **AI Builder**, and then select **View form processing model details**.
 
-   ![Automate menu](../media/content-understanding/automate-menu.png)</br>
-
-2. In the model details, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
-
-[**Update screenshot**]
-     ![Add to an existing form processing model](../media/content-understanding/retention-label-model-details.png)</br> 
+2. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
 
 #### To add a sensitivity label to an existing form processing model in the active model settings
 
@@ -113,17 +105,12 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 1. In the SharePoint document library in which the model is applied, select the **View active models** icon, and then select **View active models**.
 
-   ![View active models](../media/content-understanding/info-du.png)</br> 
+2. In **Active models**, select the form processing model to which you want to apply the sensitivity label.
 
-2. In <b>Active models</b>, select the form processing model to which you want to apply the sensitivity label.
-
-[**Update screenshot**]
-     ![Model details](../media/content-understanding/retention-label-model-details.png)</br> 
-
-3. In the model details, in the **Sensitivity label** section, select the sensitivity label you want to apply.  Then select **Save**.
+3. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
 
 > [!NOTE]
-> You must be the model owner for the model settings pane to be editable. 
+> You must be the model owner for the **Model settings** pane to be editable. 
 
 ## See also
 
