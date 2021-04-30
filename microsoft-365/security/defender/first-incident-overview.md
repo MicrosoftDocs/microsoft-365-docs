@@ -30,18 +30,19 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime. While taking preventative measures is important, the ability to detect ongoing attacks and act quickly to contain, eradicate, and recover from them can minimize damage and business losses.
+An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime. While taking preventative measures is important, the ability to act quickly to contain, eradicate, and recover from detected incidents can minimize damage and business losses.
 
-This incident response walkthrough shows how you, as part of a security operations team, can perform most of the key incident response steps within Microsoft 365 Defender, namely:
+This incident response walkthrough shows how you, as part of a security operations team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
 
-- Preparation
-- Triage and analysis
-- Remediation (containment, eradication, and recovery)
-- Post-incident review
+- Preparation of your security posture
+- For each incident:
+  - Step 1: Triage and analysis
+  - Step 2: Remediation (containment, eradication, and recovery)
+  - Step 3: Post-incident review
 
 A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
 
-Incidents in Microsoft 365 Defender are the logical starting points for investigation and incident response. Analyzing and remediating these will typically make up the majority of any security operations team's tasks.
+Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a security operations team's tasks.
 
 ## Next step
 
