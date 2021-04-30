@@ -211,8 +211,6 @@ Here's a quick overview of the information you'll see in each column.
 |Last updated  <br/> |Date that the message was published or last updated.  <br/> |
 |Message ID  <br/> |Microsoft tracks our Message center posts by message ID. You can refer to this ID if you want to give feedback or if you call Support about a particular message.  <br/> |
 
-Head over to [Manage messages in Message center](manage-messages.md) to get more information on the things you can do with messages.
-  
 ### Admin roles that don't have access to the Message center
 
 - Compliance administrator
@@ -335,9 +333,9 @@ A lot of actionable information about changes to Microsoft 365 services arrives 
 For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Microsoft 365 Service Communications API Overview](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).
 
 ## Unsubscribe from Message center emails
+ary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
 
-1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
-
+1. Digest emails are turned on by default and are sent to your prim
     - De-select the **Send a weekly digest of my messages** checkbox.
     - Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** checkbox is not selected.
     -   To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** checkbox is not selected.  (Data privacy messages are not included in the weekly digest.)

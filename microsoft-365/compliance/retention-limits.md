@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+hideEdit: true
 description: "Understand the maximum number of policies and items per policy for retention policies and retention label policies"
 ---
 

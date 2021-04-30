@@ -69,7 +69,7 @@ The Home page of the portal surfaces:
 
 - Secure Score ratings
 - the number of users and devices at risk
-- active incident lists
+- active incident queue
 - lists of privileged OAuth apps
 - device health data
 - tweets from Microsoft’s security intelligence twitter feed

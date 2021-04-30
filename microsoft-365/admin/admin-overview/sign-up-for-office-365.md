@@ -12,21 +12,20 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
 - TRN_SMB
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign-up process for Office 365. "
+description: "Understand what you need to know before you go through the sign-up process for Office 365."
+ms.date: 03/17/2021
 ---
 
 # How to sign up - Admin Help
@@ -132,4 +131,4 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 ## Related content
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (links)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
