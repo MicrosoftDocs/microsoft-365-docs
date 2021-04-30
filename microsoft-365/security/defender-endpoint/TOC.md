@@ -485,6 +485,16 @@
 ####### [Get domain related machines](get-domain-related-machines.md)
 ####### [Get domain statistics](get-domain-statistics.md)
 
+###### [Export assessment]()
+####### [Export assessments per device methods and properties](get-export-assessmnt-methods-properties.md)
+####### [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
+####### [Export Software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
+####### [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
+####### [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
+####### [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
+####### [Export software vulnerabilities assessment to Json](get-export-assessmnt-software-to-json.md)
+####### [Export software vulnerabilities delta assessment by machine](get-export-assessmnt-software-delta.md)
+
 ###### [File]()
 ####### [File methods and properties](files.md)
 ####### [Get file information](get-file-information.md)
