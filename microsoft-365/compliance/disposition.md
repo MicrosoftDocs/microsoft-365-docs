@@ -22,7 +22,7 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
+Use the **Disposition** page from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
 > Rolling out in preview: **multi-staged disposition review**.
@@ -118,12 +118,12 @@ Select **Add a stage**, and name your stage for identification purposes. Then sp
 
 For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are currently not supported for this option.
 
-If you need more than one person to review an item at the end of its retention period, select **Add stages** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
+If you need more than one person to review an item at the end of its retention period, select **Add a stage** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
 Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. These users can also forward the disposition review to other users.
 
 > [!NOTE]
-> Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label: Select **Add Stages** or edit the existing reviewers or add new reviewers.
+> Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label: Select **Add a stages** or edit the existing reviewers or add new reviewers.
 
 For each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
 
@@ -172,7 +172,7 @@ As you can see from this example, the actions supported are:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and then add additional users for review.
-    - 
+
 During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
