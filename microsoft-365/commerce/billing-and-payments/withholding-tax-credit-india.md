@@ -18,7 +18,8 @@ description: "Learn how to request a credit on your account for Withholding Tax 
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
-ms.reviewer: 
+- 
+ms.reviewer: sabhalla
 monikerRange: 'o365-worldwide'
 ms.date: 04/30/2021
 ---
@@ -61,8 +62,9 @@ The following table shows the due dates and timelines to submit digitally signed
 | 4 | January - March | 15-Jun | 30-Jun |
 
 > [!IMPORTANT]
+>
 > - Customers can only submit a request for a refund of the WHT amount after paying the invoice.
-> - The invoice amount on the Withholding Tax Credit Form must match the invoice amount identified in the TDS certificate. If the invoice amount is different between the two forms, you must specify the reason for the difference in the Withholding Tax Credit Form. This information is checked by the review team, who might ask clarifying questions, if required. 
+> - The invoice amount on the Withholding Tax Credit Form must match the invoice amount identified in the TDS certificate. If the invoice amount is different between the two forms, you must specify the reason for the difference in the Withholding Tax Credit Form. This information is checked by the review team, who might ask clarifying questions, if required.
 > - TDS certificate files must be in one of the following file formats: .PDF or Image only (.JPEG, .PNG and .GIF). Additionally, file names must not contain spaces or special characters. File size cannot exceed 1 MB.
 
 After you submit the request, it goes into the approval process where it is either approved for completion or is sent back to you for correction.
@@ -78,5 +80,6 @@ After your claim is approved, it’s reflected in the next billing cycle. The WH
 **For customers paying by credit card:** After your claim is approved, your overpayment is refunded to your credit card.
 
 > [!IMPORTANT]
+>
 > - If changes are required, the approval process might take longer because of the corrections that must be made and then resubmitted.
 > - If you have questions about the WHT request process, please open a ticket with Microsoft support.
