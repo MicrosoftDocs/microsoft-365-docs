@@ -48,7 +48,7 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. On the **Active Users** page, select the user > **Manage email aliases**. You won't see this option if the person doesn't have a license assigned to them. 
+2. On the **Active Users** page, select the user > **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them. 
     
 3. Select **+ Add an alias** and enter a new alias for the user.   
     
