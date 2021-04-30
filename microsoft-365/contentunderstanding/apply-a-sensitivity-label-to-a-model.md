@@ -30,14 +30,13 @@ You can apply a pre-existing sensitivity label to your model through your model 
 
 1. From the model home page, select **Model settings**.
 
-  ![Sensitivity label menu](../media/content-understanding/sensitivity-model-settings.png)
+  ![Screenshot of the Models page with the Model settings option highlighted.](../media/content-understanding/sensitivity-model-settings.png)
 
-
-2. In **Model settings**, in the **Security and compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for your to apply to the model.
+2. On **Model settings** pane, in the **Security and compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for you to apply to the model.
 
 [**Update screenshot**]
 
-  ![Sensitivity label menu](../media/content-understanding/retention-labels-menu.png) 
+  ![Screenshot of the Model settings pane showing the ensitivity label menu.](../media/content-understanding/sensitivity-model-settings-pane.png) 
 
 3. Select the sensitivity label you want to apply to the model, and then select **Save**.
 
