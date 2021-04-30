@@ -17,24 +17,13 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+recommendations: false
+description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes over 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # Sensitive information type entity definitions
 
-Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. Corroborative evidence, like keywords and checksums, can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
-
-Sensitive information types require one of these subscriptions:
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-Sensitive information types are used in:
-
-- [Data loss prevention policies](data-loss-prevention-policies.md) 
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](retention.md)
-- [Communication compliance](communication-compliance.md)
-- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 ## ABA routing number
 
@@ -150,6 +139,89 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - documento numero 
 - registro nacional de las personas 
 - rnp 
+   
+## Argentina Unique Tax Identification Key (CUIT/CUIL)
+
+### Format
+
+Eleven digits with dash
+
+### Pattern
+
+Eleven digits with a dash:
+- two digits in 20, 23, 24, 27, 30, 33 or 34
+- a hyphen (-)
+- eight digits
+- a hyphen (-)
+- one check digit
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
+- A keyword from `Keyword_Argentina_Unique_Tax_Key` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- unique code of labour identification 
+- Clave Única de Identificación Tributaria
+- unique labour identification code
+- CUIL
+- Unique Tax Identification Key
+- Unique Labour Identification Key
+- Unique Key of Labour Identification
+- Unique Work Identification Code
+- Unique Code of Work Identification
+- Unique Work Identification Key
+- Unique Key of Work Identification
+- Unique Code of Tax Identification
+- Unique Key of Tax Identification
+- Unique Labor Identification Code
+- Unique Code of Labor Identification
+- Unique Labor Identification Key
+- Unique Key of Labor Identification
+- tax ID
+- taxID#
+- taxId
+- taxidnumber
+- tax number
+- tax no
+- tax #
+- tax#
+- taxpayer ID
+- taxpayer number
+- taxpayer no
+- taxpayer #
+- taxpayer#
+- tax identity
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
    
 ## Australia bank account number
 
@@ -11688,6 +11760,132 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - unique identification number
 - unique identity number
 - uniqueidentityno#
+
+
+## Medicare Beneficiary Identifier (MBI) card
+
+### Format
+
+eleven character alphanumeric pattern
+  
+### Pattern
+
+- one digit between 1 to 9
+- one letter excluding  S, L, O, I, B, Z
+- one digit or letter excluding S, L, O, I, B, Z
+- one digit
+- an optional Hyphen
+- one letter excluding  S, L, O, I, B, Z
+- one digit or letter excluding S, L, O, I, B, Z
+- one digit
+- an optional Hyphen
+- two letters excluding  S, L, O, I, B, Z
+- two digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_mbi_card` finds content that matches the pattern. 
+- A keyword from  `Keyword_mbi_card` is found. 
+    
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_mbi_card` finds content that matches the pattern. 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_mbi_card
+
+- mbi
+- mbi#
+- medicare beneficiary #
+- medicare beneficiary identifier
+- medicare beneficiary no
+- medicare beneficiary number
+- medicare beneficiary#
+
+
+## Mexico Unique Population Registry Code (CURP)
+
+### Format
+
+18 character alphanumeric pattern
+  
+### Pattern
+
+- four letters (case insensitive)
+- six digits indicating a valid date
+- a letter - H/h or M/m
+- two letters indicating a valid Mexican state code
+- three letters
+- one letter or digit
+- one digit
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_mexico_population_registry_code` finds content that matches the pattern. 
+- A keyword from  `Keyword_mexico_population_registry_code` is found. 
+    
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_mexico_population_registry_code` finds content that matches the pattern. 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Unique Population Registry Code 
+- unique population code
+- CURP
+- Personal ID
+- Unique ID
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave personal Identidad
+- personal Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
 
 ## Netherlands citizen's service (BSN) number
 

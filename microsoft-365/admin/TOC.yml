@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Domains FAQ
           href: setup/domains-faq.yml
-        - name: Host-specific instructions
+        - name: DNS instructions
           items:
             - name: Change nameservers at any DNS host
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
@@ -262,8 +262,6 @@
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Microsoft Rewards 
            href: manage/manage-microsoft-rewards.md 
-         - name: Manage Message center messages
-           href: manage/manage-messages.md
          - name: Manage Microsoft feedback for your organization
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
@@ -403,11 +401,11 @@
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
+          href: ../business-video/team-with-guests.md
         - name: Schedule a Teams meeting with guest users
-          href: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+          href: ../business-video/schedule-guest-meeting.md
         - name: Join a Teams meeting with guest users
-          href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
+          href: ../business-video/join-guest-meeting.md
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
