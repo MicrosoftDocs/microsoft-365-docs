@@ -126,7 +126,7 @@ The first step is to set up Basic auditing and then start running audit log sear
 
 ![Workflow to set up Basic auditing](../media/BasicAuditingWorkflow.png)
 
-1. Verify that your organization has a subscription that supports Basic auditing.
+1. Verify that your organization has a subscription that supports Basic auditing and if applicable, a subscription that supports Advanced Audit.
 
 2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the Microsoft 365 compliance center or the **Search-UnifiedAuditLog** cmdlet. Specifically, uses must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online.
 
