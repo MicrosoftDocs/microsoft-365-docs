@@ -50,7 +50,7 @@ You have the option to turn off device discovery through the [Advanced features]
  Onboarded devices running on Windows 10 version 1809 or later can perform discovery.
 
 ## What happens if my onboarded devices is connected to my home network, or to public access point?
- The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. By correlating network identifiers across all tenant's clients, events are differentiated between ones that were received from private networks and corporate networks. Private network devices will not be listed in the inventory and will not be actively probed.
+ The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. By correlating network identifiers across all tenant's clients, events are differentiated between ones that were received from private networks and corporate networks. For example, if the majority of the devices in the network report that they are connected to the same network name, with the same default gateway and DHCP server address, it can be assumed that this network is likely a corporate network. Private network devices will not be listed in the inventory and will not be actively probed.
 
 ## What protocols are you capturing and analyzing?
  By default, all onboarded devices running on Windows 10 version 1809 or later are capturing and analyzing the following protocols:
