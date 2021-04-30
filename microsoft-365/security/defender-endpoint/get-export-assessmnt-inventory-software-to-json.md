@@ -1,5 +1,5 @@
 ---
-title: Export Software inventory assessment to Json
+title: Export software inventory assessment to Json
 description: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
 keywords: apis, remediation, remediation api, get, remediation tasks, 
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Export Software inventory assessment to Json
+# Export software inventory assessment to Json
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

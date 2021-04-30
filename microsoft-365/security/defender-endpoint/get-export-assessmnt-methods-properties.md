@@ -52,7 +52,7 @@ This method is best for big organizations with more than 100K devices. The respo
 Method | Data type | Description
 :---|:---|:---
 [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)  | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-[Export Software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)  | Investigation entity | Full export: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)  | Investigation entity | Full export: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 ### Export secure configurations assessment methods
 
@@ -137,7 +137,7 @@ VulnerabilitySeverityLevel  | string | Severity level assigned to the security v
 
 - [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
 
-- [Export Software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
+- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
 - [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
 

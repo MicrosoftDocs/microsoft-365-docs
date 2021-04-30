@@ -204,7 +204,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsA
 
 - [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
 
-- [Export Software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
+- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
 - [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
 

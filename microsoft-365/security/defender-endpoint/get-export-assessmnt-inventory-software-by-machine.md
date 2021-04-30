@@ -190,7 +190,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMa
 
 - [Export assessments per device methods and properties](get-export-assessmnt-methods-properties.md)
 
-- [Export Software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
+- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
 - [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
 
