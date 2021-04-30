@@ -6,13 +6,14 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- m365-security-compliance
+- m365solution-auditing
+- m365initiative-compliance
+- m365solution-overview
 search.appverid:
 - MOE150
 - MET150
@@ -63,11 +64,11 @@ Advanced Audit builds on the capabilities of Basic auditing by providing audit l
 
 For more detailed information about Advanced Audit features, see [Advanced Audit in Microsoft 365](advanced-audit.md).
 
-## Feature comparison
+## Comparison of key capabilities
 
-The following table compares the auditing features available in Basic auditing and Advanced Audit. All Basic auditing functionality is included in Advanced Audit.
+The following table compares the key capabilities available in Basic auditing and Advanced Audit. All Basic auditing functionality is included in Advanced Audit.
 
-|Feature|Basic auditing|Advanced Audit|
+|Capability|Basic auditing|Advanced Audit|
 |:------|:-------------|:-------------|
 |Enabled by default|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
 |Thousands of searchable audit events|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
@@ -115,6 +116,32 @@ The following sections identify the licensing requirements for Basic auditing an
 - Office 365 Education A5 subscription
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
 
+## Set up Microsoft 365 auditing solutions
 
+To get started using the auditing solutions in Microsoft 365, see the following setup guidance.
 
+### Set up Basic auditing
 
+The first step is to set up Basic auditing and then start running audit log searches.
+
+1. Verify your organization has a subscription that supports Basic auditing.
+
+2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the Microsoft 365 compliance center or the **Search-UnifiedAuditLog** cmdlet. Specifically, uses must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online.
+
+3. Search the audit log. After completing step 1 and step 2, users in your organization can use the audit log search tool (or corresponding cmdlet) to search for audited activities.
+
+### Set up Advanced Audit
+
+If your organization has a subscription that supports Advanced Audit, perform the follow steps to set up and use the additional capabilities in Advanced Audit.
+
+1. Set up Advanced audit for users. This step consists of the following tasks:
+
+   - Verifying that users are assigned the appropriate license or add-on license for Advanced Audit.
+  
+   - Turning on the Advanced Audit app/service plan must be for those users.
+  
+   - Enabling the auditing of crucial events and then turning on the Advanced Auditing app/service plan for those users.
+
+2. Enable crucial events to be logged when users perform searches in Exchange Online and SharePoint Online.
+
+3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
