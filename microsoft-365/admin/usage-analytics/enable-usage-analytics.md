@@ -48,11 +48,11 @@ To enable the template app, you have to be a **Global administrator**.
   
 See [about admin roles](../add-users/about-admin-roles.md) for more information. 
   
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Settings** \> **Org settings** \> **Services** tab. 
     
-2. On the **Usage** page, locate the **Microsoft 365 usage analytics** card, and select **Get started**.
+2. On the **Services** tab, select  **Reports**.
     
-3. On the Reports panel that opens, set **Make data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**. 
+3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**. 
   
 The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. 
     
