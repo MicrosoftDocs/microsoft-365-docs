@@ -86,6 +86,18 @@ Devices that are not matched to any groups are added to Ungrouped devices (defau
 >[!NOTE]
 > Applying changes to device group configuration may take up to several minutes.
 
+Device groups definitions now expended to include multiple values per condition. You can now set multiple tags, device names and domains to the definition of a single device group.
+
+**How does it work?**
+
+- Create a new device group and get into the **Devices** tab.
+- Add the first value for one of the conditions.
+- Click `+` to add more rows of the same property type.
+- The operator between rows of the same condition type OR which allows multiple values per property.
+- You can add up to 10 rows (values) for each property type – tag, device name, domain.
+
+For more information on linking to device groups definitions, see [Device groups - Microsoft 365 security](https://sip.security.microsoft.com/homepage).
+
 ## Related topics
 
 - [Manage portal access using role-based based access control](rbac.md)
