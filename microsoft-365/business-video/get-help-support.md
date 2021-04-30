@@ -15,7 +15,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
@@ -69,7 +68,7 @@ Admins, have your account details ready when you call.
 
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
-[!INCLUDE [country-region-support-dropdown-list](../../admin/includes/country-region-support-dropdown-list.md)]
+[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
 ::: moniker-end
 
