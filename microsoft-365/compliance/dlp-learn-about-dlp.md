@@ -207,3 +207,5 @@ To learn more about Microsoft 365 DLP, see:
 - [Learn about the Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Learn about the Microsoft Compliance Extension (preview)](dlp-chrome-learn-about.md)
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
+
+To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
