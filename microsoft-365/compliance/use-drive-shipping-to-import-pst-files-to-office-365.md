@@ -461,7 +461,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
     
   - Import data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
     
-  - Protect your organization against [data loss](data-loss-prevention-policies.md) of sensitive information. 
+  - Protect your organization against [data loss](dlp-learn-about-dlp.md) of sensitive information. 
     
 - Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
     
