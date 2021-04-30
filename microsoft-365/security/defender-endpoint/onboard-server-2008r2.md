@@ -228,9 +228,9 @@ The following steps are required to enable this integration:
 
 ## Group Policy Configuration
 
-Create a new group policy specifically for onboarding devices such as “Microsoft Defender for Endpoint Onboarding”.
+Create a new group policy specifically for onboarding devices such as "Microsoft Defender for Endpoint Onboarding".
 
-- Create a Group Policy Folder named “c:\windows\MMA”
+- Create a Group Policy Folder named "c:\windows\MMA"
 
      :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
 
@@ -241,7 +241,7 @@ Create a new group policy specifically for onboarding devices such as “Microsoft
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
-C:\windows\MMA\filename – **so the installation files are local to the server**:
+C:\windows\MMA\filename - **so the installation files are local to the server**:
 
 :::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
 
@@ -260,7 +260,7 @@ Once the server is restarted as part of the start-up process it will install the
 
 You could also use an **immediate task** to run the deployMMA.cmd if you don't want to reboot all the servers.
 
-This could be done in two phases. First create **the files and the folder in** GPO – Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
+This could be done in two phases. First create **the files and the folder in** GPO - Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
@@ -281,7 +281,7 @@ For Windows Server 2008 R2 PS1, ensure that you fulfill the following requiremen
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2
-This process allows you to onboard all the servers if you don’t have Configuration Manager managing Servers.
+This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
 
 ## Related topics
 
