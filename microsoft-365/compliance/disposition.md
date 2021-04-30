@@ -104,9 +104,9 @@ From the **Define retention settings** page for a retention label:
  
 After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
-![Specifying disposition reviewers](../media/disposition-reviewers.png) **IMAGE TO BE REPLACED**
+![Specifying disposition reviewers](../media/disposition-reviewers.png) 
 
-Select **Add stages**, and name your stage for identification purposes. Then specify the reviewers for that stage.
+Select **Add A stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
 For the reviewers, specify a user or a mail-enabled security group. Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) are currently not supported for this option.
 
@@ -145,21 +145,23 @@ Select **Save** to save any changes.
 
 ### Viewing and disposing of content
 
-When a reviewer is notified by email that content is ready to review, they go to the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
+When a reviewer is notified by email that content is ready to review, they go to the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center. The reviewers can see how many items for each retention label are awaiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
 
-After they select a retention label, they then see all pending dispositions for that label from the **Pending disposition** tab. When they select one or more items, they can then choose an action and enter a justification comment:
+![Open in new window for disposition review](../media/open-in-new-window.png)
+
+They then see all pending dispositions for that label from the **Pending disposition** tab. When they select one or more items, they can then choose an action and enter a justification comment:
 
 ![Disposition options](../media/retention-disposition-options.png)
 
 As you can see from the picture (**SCREENSHOT NEEDS TO BE REPLACED WITH THE LATEST ONE**), the actions supported are: 
   
-- **Permanently delete the item**:
+- **Approve disposal**:
     - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
     - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is permanently deleted.
-- **Extend the retention period**:
-    - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
-- **Apply a different retention label**:
+- **Relabel**:
     -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
+- **Extend**:
+    - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 
 During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
