@@ -43,7 +43,7 @@ The API response contains the Secure Configuration Assessment on your exposed
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+N/A/?
 
 ## Permissions
 

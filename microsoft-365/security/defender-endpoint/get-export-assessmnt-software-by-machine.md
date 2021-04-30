@@ -92,9 +92,9 @@ ExploitabilityLevel | string | The exploitability level of this vulnerability | 
 FirstSeenTimestamp | string | First time the CVE of this product was seen on the device. | 2020-11-03 10:13:34.8476880
 Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
 LastSeenTimestamp | string | Last time the CVE was seen on the device. | 2020-11-03 10:13:34.8476880
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. | Windows10
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
 RbacGroupId | Int | ID of the RBAC group. | 70
-RbacGroupName | string | The role-based access control (RBAC) group. | If this device is not assigned to any RBAC group, the value will be \“Unassigned.\” If the organization doesn’t contain any RBAC groups, the value will be \“None.\” | Servers
+RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
 RecommendationReference | string | A reference to the recommendation ID related to this software. | va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability. | April 2020 Security Updates
 RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles | 4550961

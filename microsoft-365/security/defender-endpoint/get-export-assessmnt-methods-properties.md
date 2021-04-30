@@ -76,12 +76,13 @@ Method | Data type | Description
 Property id | Data type | Description
 :---|:---|:---
 DeviceId | string | Unique identifier for the device in the service.
-DiskPaths | Array[string] | Disk evidence that the product is installed on the device.
+DeviceName | string | Fully qualified domain name (FQDN) of the device.
+DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
 EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
 EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 Id | string | Unique identifier for the record.
-NumberOfWeaknesses | int | Number of weaknesses on this software on this device.
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.
+NumberOfWeaknesses | int|Number of weaknesses on this software on this device
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupId | Int | ID of the RBAC group.
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
@@ -94,21 +95,21 @@ SoftwareVersion | string | Version number of the software product.
 
 Property id | Data type | Description
 :---|:---|:---
-ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls.
-ConfigurationId | string | Unique identifier for a specific configuration.
-ConfigurationImpact | string | Rated impact of the configuration to the overall configuration score (1-10).
-ConfigurationName | string | Display name of the configuration.
+ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
+ConfigurationId | string | Unique identifier for a specific configuration
+ConfigurationImpact | string | Rated impact of the configuration to the overall configuration score (1-10)
+ConfigurationName | string | Display name of the configuration
 ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
-IsApplicable | bool | Indicates whether the configuration or policy is applicable.
-IsCompliant | bool | Indicates whether the configuration or policy is properly configured.
-IsExpectedUserImpact | bool | Indicates whether there will be user impact if the configuration will be applied.
+IsApplicable | bool | Indicates whether the configuration or policy is applicable
+IsCompliant | bool | Indicates whether the configuration or policy is properly configured
+IsExpectedUserImpact | bool | Indicates whether there will be user impact if the configuration will be applied
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName | string | The role-based access control (RBAC) group.
+RbacGroupName | string | The role-based access control (RBAC) group. | If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
-Timestamp | string | Last time the configuration was seen on the device.
+Timestamp | string | Last time the configuration was seen on the device
 
 ### Export software vulnerability assessment properties
 
@@ -118,14 +119,13 @@ CveId | string | Unique identifier assigned to the security vulnerability under 
 CvssScore | string | The CVSS score of the CVE.
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
-ExploitabilityLevel | string | The exploitability level of this vulnerability
-ExploitIsVerified, ExploitIsInKit)
+ExploitabilityLevel | string | The exploitability level of this vulnerability | (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp | string | First time the CVE of this product was seen on the device.
 Id | string | Unique identifier for the record.
 LastSeenTimestamp | string | Last time the CVE was seen on the device.
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName | string | The role-based access control (RBAC) group.
+RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
