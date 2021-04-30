@@ -49,11 +49,11 @@ After you apply the sensitivity label to your model, you are able to apply it to
 
 If your document understanding model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
 
-1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the sensitivity label update.
+1. On the model home page, in the **Libraries with this model** section, select the document library to which you want to apply the sensitivity label update.
 
 2. Select **Sync**.
 
-  ![Sync model](../media/content-understanding/sync-model.png)
+  ![Screenshot showing Libraries with this model section with Sync highlighted.](../media/content-understanding/sensitivity-libraries-sync.png)
 
 After you apply the update and sync it to your model, you can confirm that it has been applied by doing the following:
 
@@ -63,7 +63,7 @@ After you apply the update and sync it to your model, you can confirm that it ha
 
 3. In the **Active models** list, select your updated model.
 
-4. In the **Security label** section you will see the name of the applied sensitivity label.
+4. In the **Sensitivity label** section you will see the name of the applied sensitivity label.
 
 On your model's view page in your document library, a new **Sensitivity label** column will display. As your model classifies files it identifies as belonging to its content type and lists them in the library view, the **Sensitivity label** column will also display the name of the sensitivity label that has been applied to it through the model.
 
