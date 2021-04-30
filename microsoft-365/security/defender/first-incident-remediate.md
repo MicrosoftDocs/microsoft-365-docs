@@ -85,7 +85,9 @@ Playbooks can also be created during [post-incident review](first-incident-post.
 
 ## Next step
 
-Learn how to [perform post-incident activities](first-incident-post.md).
+[![Step 3: Learn how to perform a post-incident review of an incident](../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+
+Learn how to [perform a post-incident review of an incident](first-incident-post.md).
 
 ## See also
 

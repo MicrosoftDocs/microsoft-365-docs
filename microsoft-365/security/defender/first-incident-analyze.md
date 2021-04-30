@@ -123,6 +123,8 @@ Here's an example:
 
 ## Next step
 
+[![Step 2: Learn how to remediate incidents](../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
+
 Learn how to [remediate incidents](first-incident-remediate.md).
 
 ## See also

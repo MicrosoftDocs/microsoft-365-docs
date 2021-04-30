@@ -79,7 +79,9 @@ Make time in your schedule to regularly check the [Threat Analytics](threat-anal
 
 ## Next step
 
-Learn how to [detect, triage, and investigate incidents](first-incident-analyze.md).
+[![Step 1: Learn how to triage and investigate incidents](../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+
+Learn how to [triage and investigate incidents](first-incident-analyze.md).
 
 ## See also
 
