@@ -66,6 +66,9 @@ All processing and storage of content is done in the central location.
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
 
+> [!Note] 
+> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
+
 *Manage topics*
 
 Knowledge managers oversee the quality of information, how its structured, and other best practices in your organization. They can confirm and reject topics.
