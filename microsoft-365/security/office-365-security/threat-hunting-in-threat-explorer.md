@@ -21,7 +21,7 @@ ms.prod: m365-security
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two article in this series are: Link and link. 
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two article in this series are: [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md). 
 
 This article is about threat hunting in Microsoft Defender for Office 365, the tools available, and how to use them. 
 
@@ -49,7 +49,7 @@ With these tools, you can:
 - Start an automated investigation and response process from a view in Explorer
 - Investigate malicious email, and more 
 
-For more information, see Email Security. 
+For more information, see [Email security in Threat Explorer](email-security-in-microsoft-defender.md). 
 
 ## Threat Explorer walk-through
 
@@ -247,6 +247,6 @@ To learn more about roles and permissions, see the following resources:
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md) 
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) 
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md) 
-- [Threat protection status report](view-email-security-reports.md) 
+- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) 
 - [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md) 
 - [Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
