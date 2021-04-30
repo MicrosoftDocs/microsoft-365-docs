@@ -6,6 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.topic: article
 localization_priority: Normal
 audience: ITPro
 author: dansimp
