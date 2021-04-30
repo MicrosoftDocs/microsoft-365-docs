@@ -37,7 +37,7 @@ Watch a short video about removing an employee. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 To prevent an employee from logging in:
 
