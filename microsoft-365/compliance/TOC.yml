@@ -235,7 +235,7 @@
       items: 
         - name: Learn about DLP
           items:
-          - name: Learn about Data Loss Prevention
+          - name: Learn about data loss prevention
             href: dlp-learn-about-dlp.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
