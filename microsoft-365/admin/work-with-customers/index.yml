@@ -31,12 +31,12 @@ landingContent:
       - linkListType: video
         links:
           - text: Create a Team with guest users
-            url: ../../business-video/team-with-guests
+            url: ../../business-video/team-with-guests.md
           - text: Join a team as a guest
-            url: ../../business-video/join-team-guest
+            url: ../../business-video/join-team-guest.md
           - text: Chat with employees and customers
             url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
           - text: Schedule a Teams meeting with guest users
-            url: ../../business-video/schedule-guest-meeting
+            url: ../../business-video/schedule-guest-meeting.md
           - text: Join a Teams meeting with guest users
-            url: ../../business-video/join-guest-meeting
+            url: ../../business-video/join-guest-meeting.md

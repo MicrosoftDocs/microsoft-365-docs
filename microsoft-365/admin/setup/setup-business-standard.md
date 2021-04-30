@@ -134,4 +134,4 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-More at [Use a public website](../../business-video/create-web-site).
+More at [Use a public website](../../business-video/create-web-site.md).
