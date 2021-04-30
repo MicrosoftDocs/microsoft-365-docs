@@ -235,8 +235,8 @@
       items: 
         - name: Learn about DLP
           items:
-          - name: Learn about DLP
-            href: data-loss-prevention-policies.md
+          - name: Learn about data loss prevention
+            href: dlp-learn-about-dlp.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)

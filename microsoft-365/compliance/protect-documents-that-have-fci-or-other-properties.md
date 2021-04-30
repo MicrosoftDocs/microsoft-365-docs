@@ -147,7 +147,7 @@ For more information, see [Manually request crawling and re-indexing of a site, 
 
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 
