@@ -73,7 +73,8 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 3. Choose **Multi-factor authentication**.
 4. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
 
-You can also [use PowerShell to disable multi-factor authentication for multiple users](azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
+You can also [use PowerShell to disable multi-factor authentication for multiple users](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
+
 
 ## Step 5: Delete the directory in Azure Active Directory
 
