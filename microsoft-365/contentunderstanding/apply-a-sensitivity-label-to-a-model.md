@@ -19,7 +19,7 @@ description: "This article discusses how to apply a sensitivity label to a model
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
 
-Sensitivity labels let you apply sensitivity settings to the documents that your models identify. [**Update example**] *For example, you want your model to not only identify any Insurance notice documents that are uploaded to your document library, but to also apply a Business retention tag to them so that these documents cannot be deleted from the document library for the specified time period (the next five months, for example).*
+Sensitivity labels let you apply sensitivity settings to the documents that your models identify. For example, you want your model to not only identify any *Contract* documents that are uploaded to your document library, but to also apply a *Sensitive* sensitivity label to them so that these documents cannot be accessed by unauthorized people.
 
 You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. 
 
@@ -30,13 +30,16 @@ You can apply a pre-existing sensitivity label to your model through your model 
 
 1. From the model home page, select **Model settings**.
 
+  ![Sensitivity label menu](../media/content-understanding/sensitivity-model-settings.png)
+
+
 2. In **Model settings**, in the **Security and compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for your to apply to the model.
 
 [**Update screenshot**]
 
-  ![Sensitivity label menu](../media/content-understanding/retention-labels-menu.png)</br> 
+  ![Sensitivity label menu](../media/content-understanding/retention-labels-menu.png) 
 
-3. Select the sensitivity label you want to apply to the model, and then select **Save**.</br>
+3. Select the sensitivity label you want to apply to the model, and then select **Save**.
 
 After you apply the sensitivity label to your model, you are able to apply it to a:
 
@@ -49,8 +52,9 @@ If your document understanding model has already been applied to a document libr
 
 1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the sensitivity label update.
 
-2. Select **Sync**. </br>
-  ![Sync model](../media/content-understanding/sync-model.png)</br> 
+2. Select **Sync**.
+
+  ![Sync model](../media/content-understanding/sync-model.png)
 
 After you apply the update and sync it to your model, you can confirm that it has been applied by doing the following:
 
@@ -64,7 +68,7 @@ After you apply the update and sync it to your model, you can confirm that it ha
 
 On your model's view page in your document library, a new **Sensitivity label** column will display. As your model classifies files it identifies as belonging to its content type and lists them in the library view, the **Sensitivity label** column will also display the name of the sensitivity label that has been applied to it through the model.
 
-[**Update example**] *For example, all Insurance notice documents that your model identifies will also have the Business retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it is not allowed because of the applied retention label.*
+For example, all *Contract* documents that your model identifies will also have the *Sensitive* sensitivity label applied to them, preventing them from being accessed by unauthorized people. If an attempt is made to access the file from the document library by an unauthorized person, an error will display saying it is not allowed because of the applied sensitivity label.
 
 ## Add a sensitivity label to a form processing model
 
