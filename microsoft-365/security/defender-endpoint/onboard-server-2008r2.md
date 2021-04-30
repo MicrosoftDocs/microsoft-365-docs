@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows Server 2008 R2 SP1 to the Microsoft Defender for Endpoint
 description: Onboard Windows Server 2008 R2 SP1 so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, erver onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+keywords: onboard server, server, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -180,7 +180,7 @@ To offboard the Windows server, you can use either of the following methods:
 
     ```
 
-## Onboarding Servers with no management solution - OWN PAGE? OR KEEP HERE?
+## Onboarding Servers with no management solution -- KEEP HERE?
 
 ### Using Group Policy
 
@@ -193,8 +193,6 @@ To offboard the Windows server, you can use either of the following methods:
     **Update for customer experience and diagnostic telemetry (Windows Server 2008 R2 and Windows Server 2012 R2)**
 
     [For Windows 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
-
-    [For Windows 2012 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=94cf6d85-017a-4c4c-afca-7d00721b500f)
 
     > [!NOTE]
     > This article assumes you are using x64-based servers
@@ -236,12 +234,11 @@ C:\windows\MMA\filename – **so the installation files are local to the server**:
 
 :::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
 
-For the two KBs (one for Windows Server 2008R2/Windows 7 and the other for Windows Server 2012 R2) repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
+Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
 :::image type="content" source="images/targeteditor.png" alt-text="target editor":::
 
 - For Windows Server 2008 R2 you need (and it will only copy down) Windows6.1-BJ3080149-x64.msu
-- For Windows Server 2012 R2 you need (and it will only copy down) Windows8.1-BJ3080149-x64.msu
 
 Once this is done, you'll need to create a start-up script policy:
 
@@ -251,6 +248,7 @@ The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
 
 You could also use an **immediate task** to run the deployMMA.cmd if you don't want to reboot all the servers.
+
 This could be done in two phases. First create **the files and the folder in** GPO – Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
