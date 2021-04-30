@@ -101,6 +101,8 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
+
+### Download package
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. Select **Windows Server 1803 and 2019**.
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
