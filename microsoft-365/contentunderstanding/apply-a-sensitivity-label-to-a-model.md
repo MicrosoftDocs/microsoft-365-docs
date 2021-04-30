@@ -30,13 +30,11 @@ You can apply a pre-existing sensitivity label to your model through your model 
 
 1. From the model home page, select **Model settings**.
 
-  ![Screenshot of the Models page with the Model settings option highlighted.](../media/content-understanding/sensitivity-model-settings.png)
+   ![Screenshot of the Models page with the Model settings option highlighted.](../media/content-understanding/sensitivity-model-settings.png)
 
 2. On **Model settings** pane, in the **Security and compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for you to apply to the model.
 
-[**Update screenshot**]
-
-  ![Screenshot of the Model settings pane showing the ensitivity label menu.](../media/content-understanding/sensitivity-model-settings-pane.png) 
+   ![Screenshot of the Model settings pane showing the ensitivity label menu.](../media/content-understanding/sensitivity-model-settings-pane.png) 
 
 3. Select the sensitivity label you want to apply to the model, and then select **Save**.
 
@@ -45,7 +43,7 @@ After you apply the sensitivity label to your model, you are able to apply it to
 - New document library
 - Document library to which the model is already applied
  
-## Apply the sensitivity label to a document library to which the model is already applied
+### Apply the sensitivity label to a document library to which the model is already applied
 
 If your document understanding model has already been applied to a document library, you can do the following to sync your sensitivity label update to apply it to the document library:
 
@@ -53,7 +51,7 @@ If your document understanding model has already been applied to a document libr
 
 2. Select **Sync**.
 
-  ![Screenshot showing Libraries with this model section with Sync highlighted.](../media/content-understanding/sensitivity-libraries-sync.png)
+   ![Screenshot showing Libraries with this model section with Sync highlighted.](../media/content-understanding/sensitivity-libraries-sync.png)
 
 After you apply the update and sync it to your model, you can confirm that it has been applied by doing the following:
 
@@ -76,7 +74,7 @@ For example, all *Contract* documents that your model identifies will also have 
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 
-### To add a sensitivity label when you create a form processing model
+### Add a sensitivity label when you create a form processing model
 
 1. When you [create a new form processing model](create-a-form-processing-model.md), select **Advanced settings**.
 
@@ -84,14 +82,14 @@ You can either apply a sensitivity label to a form processing model when you are
 
 3.  After you've completed your remaining model settings, select **Create** to build your model.
 
-### To add a sensitivity label to an existing form processing model
+### Add a sensitivity label to an existing form processing model
 
 You can add a sensitivity label to an existing form processing model in different ways:
 
 - Through the **Automate** menu in the document library
 - Through the **Active model** settings in the document library 
 
-#### To add a sensitivity label to an existing form processing model through the Automate menu
+#### Add a sensitivity label to an existing form processing model through the Automate menu
 
 You can add a sensitivity label to an existing form processing model that you own through the **Automate** menu in the document library in which the model is applied.
 
@@ -99,7 +97,7 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 2. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
 
-#### To add a sensitivity label to an existing form processing model in the active model settings
+#### Add a sensitivity label to an existing form processing model in the active model settings
 
 You can add a sensitivity label to an existing form processing model that you own through the **Active model** settings in the document library in which the model is applied.
 
@@ -109,8 +107,8 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 3. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
 
-> [!NOTE]
-> You must be the model owner for the **Model settings** pane to be editable. 
+   > [!NOTE]
+   > You must be the model owner for the **Model settings** pane to be editable. 
 
 ## See also
 
