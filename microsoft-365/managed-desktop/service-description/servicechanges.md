@@ -1,6 +1,6 @@
 ---
 title: Service changes and communication
-description: 
+description: How changes to the service occur and are communicated
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
