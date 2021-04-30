@@ -42,7 +42,7 @@ Watch a short video on how to set up Office apps on iOS devices with Microsoft 3
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/).
 
 Go to **App store**, and in the search field type in Microsoft Outlook.
   
