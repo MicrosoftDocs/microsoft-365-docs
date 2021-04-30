@@ -49,7 +49,7 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 
 
 
-| Column name     | Data type | Description   |
+| Column name     | Data type | Description   | 
 | ----- | ----- | ---- |
 | `Timestamp` | datetime      | Date and time when the record was generated                                                                                                     |
 | `Application`          | string        | Application that performed the recorded action                                                                                                   |
