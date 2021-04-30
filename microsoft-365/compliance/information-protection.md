@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid: 
@@ -16,6 +16,7 @@ search.appverid:
 ms.collection: 
 - m365solution-mip
 - m365initiative-compliance
+recommendations: false
 description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
 ---
 

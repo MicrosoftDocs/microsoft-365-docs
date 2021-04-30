@@ -12,14 +12,15 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
-ms.date: 
+ms.date: 04/08/2021
 ---
 
 # Cancel your subscription
