@@ -144,7 +144,7 @@ Related topics
 
 - [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
