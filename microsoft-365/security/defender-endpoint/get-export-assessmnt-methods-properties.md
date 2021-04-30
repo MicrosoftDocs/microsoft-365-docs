@@ -107,7 +107,7 @@ IsCompliant | bool | Indicates whether the configuration or policy is properly c
 IsExpectedUserImpact | bool | Indicates whether there will be user impact if the configuration will be applied
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName | string | The role-based access control (RBAC) group. | If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
+RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
 
@@ -119,20 +119,20 @@ CveId | string | Unique identifier assigned to the security vulnerability under 
 CvssScore | string | The CVSS score of the CVE.
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
-ExploitabilityLevel | string | The exploitability level of this vulnerability | (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+ExploitabilityLevel | string | The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp | string | First time the CVE of this product was seen on the device.
 Id | string | Unique identifier for the record.
 LastSeenTimestamp | string | Last time the CVE was seen on the device.
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
+RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
 SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
-VulnerabilitySeverityLevel  | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
 
 ## See also
 

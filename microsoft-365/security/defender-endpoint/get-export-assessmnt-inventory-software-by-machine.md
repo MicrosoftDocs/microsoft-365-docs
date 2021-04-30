@@ -71,7 +71,7 @@ EndOfSupportDate (optional) | string | The date in which support for this softwa
 EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Upcoming EOS
 Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
 NumberOfWeaknesses | int | Number of weaknesses on this software on this device | 3
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. | See tvm supported operating systems and platforms for details. | Windows10
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
 RbacGroupId | Int | ID of the RBAC group. | 70
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
 RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device. | [ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome" ]
