@@ -916,7 +916,7 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
