@@ -39,7 +39,7 @@ Not an admin? Try [Microsoft support](https://go.microsoft.com/fwlink/?linkid=86
 Billing support is provided in English from 9 AM–5 PM (9 AM–6 PM in Australia), Monday–Friday.
 Technical support is provided in English 24 hours a day, 7 days a week.
 
-To find the Microsoft 365 or Microsoft 365 Business Premium support phone number for your country or region, see [Contact support for business products](../admin/contact-support-for-business-products).
+To find the Microsoft 365 or Microsoft 365 Business Premium support phone number for your country or region, see [Contact support for business products](../admin/contact-support-for-business-products.md).
 
 ## Try it!
 

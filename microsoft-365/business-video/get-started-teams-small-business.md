@@ -128,4 +128,4 @@ Turn any PC, Mac, or mobile device into a working business phone by adding [Micr
 
 ## Related content
 
-[Empower your small business with remote work](../admin/misc/empower-your-small-business-with-remote-work) (article)
+[Empower your small business with remote work](../admin/misc/empower-your-small-business-with-remote-work.md) (article)
