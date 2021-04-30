@@ -284,7 +284,7 @@ Please check the KBs are present before onboarding Windows Server 2008 R2
 This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
 
 ## Related topics
-
+- [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)

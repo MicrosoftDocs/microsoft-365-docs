@@ -180,7 +180,7 @@ Server endpoint monitoring utilizing this integration has been disabled for Offi
 
 
 ## Related topics
-
+- [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
