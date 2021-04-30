@@ -76,7 +76,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: ../business-video/install-office
+        - url: ../business-video/install-office.md
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -150,7 +150,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: ../business-video/create-sensitivity-labels
+        - url: ../business-video/create-sensitivity-labels.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)
