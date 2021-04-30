@@ -121,4 +121,4 @@ After migrating to Microsoft 365 Business Premium, you have Defender for Office 
 
 ### Sensitivity labels
 
-To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](../business-video/create-sensitivity-labels) video.
+To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](../business-video/create-sensitivity-labels.md) video.

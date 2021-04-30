@@ -60,7 +60,7 @@ Watch this video for an overview of Microsoft 365 for business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
   
 ### 1: Set up Microsoft 365 for business (Admin)
