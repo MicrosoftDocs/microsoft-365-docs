@@ -22,6 +22,7 @@ ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to change how frequently you're billed for your business subscription."
+ms.date: 04/02/2021
 ---
 
 # Change your billing frequency

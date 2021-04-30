@@ -20,6 +20,7 @@ ms.reviewer: tugu
 search.appverid:
 - MET150
 description: "Learn about billing accounts and how to manage them."
+ms.date: 03/17/2021
 ---
 
 # Manage billing accounts

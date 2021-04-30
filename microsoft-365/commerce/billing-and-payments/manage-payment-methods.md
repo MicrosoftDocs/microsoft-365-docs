@@ -22,6 +22,7 @@ ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: "Learn how to manage your payment methods in the Microsoft 365 admin center."
+ms.date: 04/02/2021
 ---
 
 # Manage payment methods

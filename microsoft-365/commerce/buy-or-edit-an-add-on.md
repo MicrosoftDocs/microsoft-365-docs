@@ -21,6 +21,7 @@ ms.custom:
 - PPM_jmueller
 ms.reviewer: jkinma
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
+ms.date: 04/02/2021
 ---
 
 # Buy or manage add-ons

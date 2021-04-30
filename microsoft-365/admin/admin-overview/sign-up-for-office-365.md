@@ -23,12 +23,9 @@ ms.custom:
 ms.reviewer: seemg
 search.appverid:
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign-up process for Office 365. "
+description: "Understand what you need to know before you go through the sign-up process for Office 365."
+ms.date: 03/17/2021
 ---
 
 # How to sign up - Admin Help

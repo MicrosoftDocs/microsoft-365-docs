@@ -20,6 +20,7 @@ ms.reviewer: tugu
 search.appverid:
 - MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
+ms.date: 04/13/2021
 ---
 
 # Manage partner relationships

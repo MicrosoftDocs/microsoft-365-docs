@@ -21,6 +21,7 @@ ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to close your account with Microsoft."
+ms.date: 04/02/2021
 ---
 
 # Close your account

@@ -21,6 +21,7 @@ ms.custom:
 - PPM_jmueller
 ms.reviewer: jkinma
 monikerRange: 'o365-worldwide'
+ms.date: 11/20/2020
 ---
 
 # Billing information for Microsoft 365 for business in Mexico

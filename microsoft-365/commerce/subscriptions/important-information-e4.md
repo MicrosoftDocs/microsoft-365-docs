@@ -19,9 +19,9 @@ ms.custom:
 ms.reviewer: jkinma
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Important information about upgrading or changing plans for customers with an Office 365 E4 subscription."
 ms.date: 08/14/2020
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Important information for Office 365 E4 customers

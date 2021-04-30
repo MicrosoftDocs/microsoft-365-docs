@@ -21,6 +21,7 @@ ms.custom:
 - PPM_jmueller
 ms.reviewer: drjones
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+ms.date: 03/17/2021
 ---
 
 # About registration numbers and under review notifications

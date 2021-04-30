@@ -12,11 +12,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
 description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."

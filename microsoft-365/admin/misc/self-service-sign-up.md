@@ -20,8 +20,8 @@ ms.custom:
 ms.reviewer: seemg
 search.appverid:
 - MET150
-ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Finance."
+ms.date: 03/17/2021
 ---
 
 # Using self-service sign-up in your organization

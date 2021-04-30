@@ -18,12 +18,10 @@ ms.custom:
 - PPM_jmueller
 ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ROBOTS: NOINDEX
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ms.date: 03/17/2021
 ---
 # Change plans manually
 

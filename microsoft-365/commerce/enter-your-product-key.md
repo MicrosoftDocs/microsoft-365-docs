@@ -22,6 +22,7 @@ ms.custom:
 - PPM_jmueller
 ms.reviewer: jkinma
 description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
+ms.date: 11/13/2020
 ---
 
 # Enter your product key for Microsoft 365 Business Standard

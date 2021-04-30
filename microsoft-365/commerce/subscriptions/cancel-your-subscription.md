@@ -20,6 +20,7 @@ ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
+ms.date: 04/08/2021
 ---
 
 # Cancel your subscription

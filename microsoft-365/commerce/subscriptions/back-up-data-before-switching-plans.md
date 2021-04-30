@@ -22,8 +22,8 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before changing Microsoft 365 plans."
+ms.date: 03/17/2021
 ---
 
 # Back up data before switching Microsoft 365 for business plans
