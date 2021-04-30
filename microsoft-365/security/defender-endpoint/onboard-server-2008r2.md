@@ -215,6 +215,17 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 )
 ```
 
+## Configure and update System Center Endpoint Protection clients 
+
+Defender for Endpoint integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
+
+The following steps are required to enable this integration:
+
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
+
+- [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
+
+
 ## Group Policy Configuration
 
 Create a new group policy specifically for onboarding devices such as “Microsoft Defender for Endpoint Onboarding”.
