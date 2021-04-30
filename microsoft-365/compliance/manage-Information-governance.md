@@ -6,13 +6,14 @@ ms.author: cabailey
 author: cabailey
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
+recommendations: false
 description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
 ---
 
