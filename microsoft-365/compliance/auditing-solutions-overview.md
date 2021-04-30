@@ -124,7 +124,9 @@ To get started using the auditing solutions in Microsoft 365, see the following 
 
 The first step is to set up Basic auditing and then start running audit log searches.
 
-1. Verify your organization has a subscription that supports Basic auditing.
+![Workflow to set up Basic auditing](../media/BasicAuditingWorkflow.png)
+
+1. Verify that your organization has a subscription that supports Basic auditing.
 
 2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the Microsoft 365 compliance center or the **Search-UnifiedAuditLog** cmdlet. Specifically, uses must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online.
 
@@ -134,7 +136,9 @@ The first step is to set up Basic auditing and then start running audit log sear
 
 If your organization has a subscription that supports Advanced Audit, perform the follow steps to set up and use the additional capabilities in Advanced Audit.
 
-1. Set up Advanced audit for users. This step consists of the following tasks:
+![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
+
+1. Set up Advanced Audit for users. This step consists of the following tasks:
 
    - Verifying that users are assigned the appropriate license or add-on license for Advanced Audit.
   
@@ -145,3 +149,5 @@ If your organization has a subscription that supports Advanced Audit, perform th
 2. Enable crucial events to be logged when users perform searches in Exchange Online and SharePoint Online.
 
 3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
+
+4. Search for crucial events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
