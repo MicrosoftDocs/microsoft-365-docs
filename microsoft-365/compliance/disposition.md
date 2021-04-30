@@ -103,6 +103,8 @@ When you select the **View all pending dispositions**, you're taken to the **Dis
 The following diagram shows the basic workflow for a disposition review when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be automatically applied to content.
   
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+
+### How to configure a retention label for disposition review
   
 Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
 
@@ -123,7 +125,7 @@ If you need more than one person to review an item at the end of its retention p
 Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. These users can also forward the disposition review to other users.
 
 > [!NOTE]
-> Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label: Select **Add a stages** or edit the existing reviewers or add new reviewers.
+> Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
 
 For each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
 
