@@ -46,7 +46,7 @@ We'll communicate these changes by using established channels. If you have any q
 
 Microsoft Managed Desktop changes and communications are governed by two Microsoft policies:
 - [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center?view=o365-worldwide)
+- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center)
 
 ## Changes you make
 
