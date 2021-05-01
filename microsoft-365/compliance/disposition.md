@@ -127,7 +127,7 @@ Within each individual stage of disposition, any of the users you specify for th
 > [!NOTE]
 > Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
 
-For each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
+During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
 
 ![Stage actions for disposition reviews](../media/stage-actions-disposition-review.png)
 
@@ -135,7 +135,7 @@ However, you can't reorder or remove a stage after you have saved the retention 
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** role permission. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
 
-### Customizing email messages for disposition review
+### How to customize email messages for disposition review
 
 Also in preview, you can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
