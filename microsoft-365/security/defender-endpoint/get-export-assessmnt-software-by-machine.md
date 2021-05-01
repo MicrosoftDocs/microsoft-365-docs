@@ -89,7 +89,7 @@ CveId | string | Unique identifier assigned to the security vulnerability under 
 CvssScore | string | The CVSS score of the CVE. | 6.2
 DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | string | Fully qualified domain name (FQDN) of the device. | johnlaptop.europe.contoso.com
-ExploitabilityLevel | string | The exploitability level of this vulnerability | (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
+ExploitabilityLevel | string | The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
 FirstSeenTimestamp | string | First time the CVE of this product was seen on the device. | 2020-11-03 10:13:34.8476880
 Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
 LastSeenTimestamp | string | Last time the CVE was seen on the device. | 2020-11-03 10:13:34.8476880
