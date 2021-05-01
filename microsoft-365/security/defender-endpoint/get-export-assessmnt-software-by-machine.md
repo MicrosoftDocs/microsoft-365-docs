@@ -109,21 +109,21 @@ VulnerabilitySeverityLevel  | string | Severity level assigned to the security v
 ### Request example
 
 ```http
-GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
+GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetVulnerability)",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetVulnerability)",
     "value": [
         {
             "id": "00044f612345baf759462dbe6db733b6a9c59ab4_edge_10.0.17763.1637__",
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "deviceId": "00044f612345daf756462bde6bd733b9a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663b45912eed224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d089e79bdfa178eabfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
@@ -145,11 +145,11 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabiliti
             "recommendationReference": "va-_-microsoft-_-edge"
         },
         {
-            "id": "00044f612345baf759462dbe6db733b6a9c59ab4_.net_framework_4.0.0.0__",
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "id": "00044f912345baf756462bde6db733b9a9c56ad4_.net_framework_4.0.0.0__",
+            "deviceId": "00044f912345daf756462bde6db733b6a9c59ad4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e79bdfa178eabfa25e8de6acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
@@ -173,11 +173,11 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabiliti
             "recommendationReference": "va-_-microsoft-_-.net_framework"
         },
         {
-            "id": "00044f612345baf759462dbe6db733b6a9c59ab4_system_center_2012_endpoint_protection_4.10.209.0__",
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "id": "00044f912345baf756462dbe6db733d6a9c59ab4_system_center_2012_endpoint_protection_4.10.209.0__",
+            "deviceId": "00044f912345daf756462bde6db733b6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eed80b089e79bdfa178eadfa25e8be6acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
@@ -201,11 +201,11 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabiliti
             "recommendationReference": "va-_-microsoft-_-system_center_2012_endpoint_protection"
         },
         {
-            "id": "00044f612345baf759462dbe6db733b6a9c59ab4_onedrive_20.245.1206.2__",
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "id": "00044f612345bdaf759462dbe6bd733b6a9c59ab4_onedrive_20.245.1206.2__",
+            "deviceId": "00044f91234daf759492dbe6bd733b6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_189663d45612eed224b2be2f5ea3142729e63f16a.DomainPII_21eed80b086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
@@ -229,11 +229,11 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabiliti
             "recommendationReference": "va-_-microsoft-_-onedrive"
         },
         {
-            "id": "00044f612345baf759462dbe6db733b6a9c59ab4_windows_10_10.0.17763.1637__",
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "id": "00044f912345daf759462bde6db733b6a9c56ab4_windows_10_10.0.17763.1637__",
+            "deviceId": "00044f912345daf756462dbe6db733d6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663b45912eeb224d2be2f5ea3142729e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",

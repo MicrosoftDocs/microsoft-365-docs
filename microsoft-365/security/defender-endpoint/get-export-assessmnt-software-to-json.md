@@ -38,7 +38,7 @@ ms.technology: mde
 
 ## API method description
 
-This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
+This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
 This API allows you to download all your data from Azure Storage in the following way:
 
 - Call the API to get a list of download URLs with all your organization data.
@@ -109,7 +109,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabiliti
 
 ```json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
     "exportFiles": [
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/VaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-bcc26c4f-e531-48db-9892-c93ac5d72d5c.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A35%3A13Z&se=2021-01-11T14%3A35%3A13Z&sr=b&sp=r&sig=...",
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/VaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-bcc26c4f-e531-48db-9892-c93ac5d72d5c.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A35%3A13Z&se=2021-01-11T14%3A35%3A13Z&sr=b&sp=r&sig=...",

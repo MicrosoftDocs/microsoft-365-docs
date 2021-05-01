@@ -115,14 +115,14 @@ GET DeltaExport endpoint
 
 ```json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.DeltaAssetVulnerability)",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.DeltaAssetVulnerability)",
     "value": [
         {
-            "id": "008168251234544f7bfa715e278d4cec0c19c171_chrome_87.0.4280.88__",
-            "deviceId": "008168251234544f7bfa715e278d4cec0c19c171",
+            "id": "008198251234544f7dfa715e278d4cec0c16c171_chrome_87.0.4280.88__",
+            "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_1c8fee37060ca24d9a0d3f34d193b0424643a8b8.DomainPII_0bc1aee0fa396d175e514bd61a9e7a5b2b07ee8e.corp.contoso.com",
+            "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
@@ -150,11 +150,11 @@ GET DeltaExport endpoint
             "eventTimestamp": "2021-01-11T11:06:08.291Z"
         },
         {
-            "id": "00e56c61234533860738ecf488eec8adf269e41e_onedrive_20.64.329.3__",
-            "deviceId": "00e56c61234533860738ecf488eec8adf269e41e",
+            "id": "00e59c61234533860738ecf488eec8abf296e41e_onedrive_20.64.329.3__",
+            "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_82c13a8ad8cf3bdaf7df34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
@@ -180,11 +180,11 @@ GET DeltaExport endpoint
             "eventTimestamp": "2021-01-11T11:06:08.291Z"
         },
         {
-            "id": "01aa8c73095dd12345918993f3f94ce322107b24_firefox_83.0.0.0_CVE-2020-26971_",
-            "deviceId": "01aa8c73095dd12345918993f3f94ce322107b24",
+            "id": "01aa8c73095bb12345918663f3f94ce322107d24_firefox_83.0.0.0_CVE-2020-26971_",
+            "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_42984eb981bea2d970027e7ad2caafd3f2d381a3.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
@@ -212,11 +212,11 @@ GET DeltaExport endpoint
             "eventTimestamp": "2021-01-11T11:06:08.291Z"
         },
         {
-            "id": "026f0fcb12345fdb2decd1a336702131422d362e_project_16.0.13701.20000__",
-            "deviceId": "026f0fcb12345fdb2decd1a336702131422d362e",
+            "id": "026f0fcb12345fbd2decd1a339702131422d362e_project_16.0.13701.20000__",
+            "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_a5709750acba75f15d96cd17f4a7fcd298d6422c.DomainPII_f260e982985f7e8eee198b4332e0ae5b2a069cd6.corp.contoso.com",
+            "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
@@ -242,11 +242,11 @@ GET DeltaExport endpoint
             "eventTimestamp": "2021-01-11T11:06:08.291Z"
         },
         {
-            "id": "038df381234510d357ac19b0113ef922e4e212b3_chrome_81.0.4044.138_CVE-2020-16011_",
+            "id": "038df381234510b357ac19d0113ef622e4e212b3_chrome_81.0.4044.138_CVE-2020-16011_",
             "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_395f5c0dd7202c163937dad3d017669b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
+            "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
             "osPlatform": "Windows10",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
@@ -274,7 +274,7 @@ GET DeltaExport endpoint
             "eventTimestamp": "2021-01-11T11:06:08.291Z"
         }
     ],
-    "@odata.nextLink": "https://wdatpapi-eus-stg.cloudapp.net/api/machines/SoftwareVulnerabilitiesTimeline?sincetime=2021-01-11&pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SoftwareVulnerabilitiesTimeline?sincetime=2021-01-11&pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 

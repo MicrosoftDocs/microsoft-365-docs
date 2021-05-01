@@ -93,14 +93,14 @@ SoftwareVersion | string | Version number of the software product. | 81.0.4044.1
 ### Request example
 
 ```http
-GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
+GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetSoftware)",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#Collection(contoso.windowsDefenderATP.api.AssetSoftware)",
     "value": [
         {
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
@@ -140,7 +140,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMa
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
@@ -155,10 +155,10 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMa
             "endOfSupportDate": null
         },
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
+            "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "softwareVendor": "microsoft",
             "softwareName": "configuration_manager",
@@ -173,10 +173,10 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMa
             "endOfSupportDate": null
         },
         {
-            "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
+            "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
@@ -191,7 +191,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMa
             "endOfSupportDate": null
         }
     ],
-    "@odata.nextLink": "https://wdatpapi-eus-stg.cloudapp.net/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SoftwareInventoryByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0yNS8wMjAwLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 

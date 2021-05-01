@@ -97,20 +97,20 @@ Timestamp | string | Last time the configuration was seen on the device | 2020-1
 ### Request example
 
 ```http
-GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
+GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
 ```
 
 ### Response example
 
 ```json
 {
-    "@odata.context": "https://wdatpapi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
     "value": [
         {
-            "deviceId": "00013ee62c6b12345d10214e1801d217b50ab455c293d",
+            "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_5d69860da9c73fdd06fc8d1979e1eb73eceb8330",
+            "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
             "osPlatform": "Windows10",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
@@ -125,7 +125,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsA
             "recommendationReference": "sca-_-scid-10000"
         },
         {
-            "deviceId": "0002a1be533813d6a8c06be739785365d4ce7910",
+            "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": null,
@@ -143,7 +143,7 @@ GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsA
             "recommendationReference": "sca-_-scid-20000"
         },
         {
-            "deviceId": "0002a1be123456a8c06be739785365d4ce7910",
+            "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": null,
@@ -161,10 +161,10 @@ GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsA
             "recommendationReference": "sca-_-scid-10000"
         },
         {
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
@@ -179,10 +179,10 @@ GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsA
             "recommendationReference": "sca-_-scid-39"
         },
         {
-            "deviceId": "00044f612345baf759462dbe6db733b6a9c59ab4",
+            "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
