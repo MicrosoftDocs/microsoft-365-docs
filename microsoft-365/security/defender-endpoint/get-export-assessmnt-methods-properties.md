@@ -49,17 +49,17 @@ This method is best for big organizations with more than 100K devices. The respo
 
 ### Export software inventory assessment methods
 
-Method | Data type | Description
-:---|:---|:---
-[Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)  | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-[Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)  | Investigation entity | Full export: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
-
 ### Export secure configurations assessment methods
 
 Method | Data type | Description
 :---|:---|:---
 [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
 [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+
+Method | Data type | Description
+:---|:---|:---
+[Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)  | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+[Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)  | Investigation entity | Full export: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 ### Export software vulnerability assessment methods
 
@@ -74,26 +74,6 @@ Method | Data type | Description
 >[!Note]
 >
 >The properties defined in the following three tables are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
-
-### Export software inventory assessment properties
-
-Property (id) | Data type | Description
-:---|:---|:---
-DeviceId | string | Unique identifier for the device in the service.
-DeviceName | string | Fully qualified domain name (FQDN) of the device.
-DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
-EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
-EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-Id | string | Unique identifier for the record.
-NumberOfWeaknesses | int|Number of weaknesses on this software on this device
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
-RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
-SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device.
-SoftwareName | string | Name of the software product.
-SoftwareVendor | string | Name of the software vendor.
-SoftwareVersion | string | Version number of the software product.
 
 ### Export secure configurations assessment properties
 
@@ -114,6 +94,26 @@ RbacGroupId | Int | ID of the RBAC group.
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
+
+### Export software inventory assessment properties
+
+Property (id) | Data type | Description
+:---|:---|:---
+DeviceId | string | Unique identifier for the device in the service.
+DeviceName | string | Fully qualified domain name (FQDN) of the device.
+DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
+EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
+EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+Id | string | Unique identifier for the record.
+NumberOfWeaknesses | int|Number of weaknesses on this software on this device
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+RbacGroupId | Int | ID of the RBAC group.
+RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
+RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
+SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device.
+SoftwareName | string | Name of the software product.
+SoftwareVendor | string | Name of the software vendor.
+SoftwareVersion | string | Version number of the software product.
 
 ### Export software vulnerability assessment properties
 
@@ -140,13 +140,13 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 
 ## See also
 
-- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
-
-- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
-
 - [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
 
 - [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
+
+- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
+
+- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
 - [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
 

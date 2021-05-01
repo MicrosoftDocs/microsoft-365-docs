@@ -280,13 +280,13 @@ GET DeltaExport endpoint
 
 - [Assessment exports per device methods and properties](get-export-assessmnt-methods-properties.md)
 
-- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
-
-- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
-
 - [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
 
 - [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
+
+- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
+
+- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
 - [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
 
