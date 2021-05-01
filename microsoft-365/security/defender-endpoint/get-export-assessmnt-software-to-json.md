@@ -34,8 +34,6 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-[Learn more about remediation activities](tvm-remediation.md).
-
 ## API method description
 
 This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.

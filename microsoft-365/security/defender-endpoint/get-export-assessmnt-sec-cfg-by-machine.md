@@ -34,8 +34,6 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-[Learn more about remediation activities](tvm-remediation.md).
-
 ## API method description
 
 Returns  an entry for every unique combination of DeviceId, ConfigurationId.

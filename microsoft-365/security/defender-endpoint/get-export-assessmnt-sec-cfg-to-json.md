@@ -34,8 +34,6 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-[Learn more about remediation activities](tvm-remediation.md).
-
 ## API method description
 
 The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
