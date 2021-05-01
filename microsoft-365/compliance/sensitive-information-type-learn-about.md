@@ -154,4 +154,6 @@ To create custom sensitive information types in the Security & Compliance Center
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
+To learn how to use sensitive information types to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
