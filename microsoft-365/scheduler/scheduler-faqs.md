@@ -11,10 +11,10 @@ description: "Scheduler for Microsoft 365 FAQs"
 ---
 # Scheduler for Microsoft 365 FAQs
 
-**Question:** How does Scheduler integrate with other Cortana features, such as Cortana for Windows, Daily Briefing Email, and Play My Emails?</br>
+**Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</br>
 Scheduler is an independent service from other Cortana features. Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address. Currently, users can only interact with Scheduler via email.
 
-**Question:** Does this work only with Outlook? Are other email products supported?</br>  
+**Question:** Does this work only with Outlook? Are other email products supported?</br>
 As long as you have a license, Other than the three requirements above, users can email cortana@yourdomain.com from any email client on any device.
 
 **Question:** Can contacts be in a personal contact list on Outlook and GAL or other company equivalent?</br>
