@@ -73,6 +73,7 @@ GET /api/machines/SoftwareInventoryExport
 >- The download URLs are only valid for 1 hour.
 >
 >- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>
 
 ## Example
 

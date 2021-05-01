@@ -68,8 +68,8 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ## Parameters
 
--pageSize (default = 50,000) \– number of results in response
--$top \– number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
+- pageSize (default = 50,000) \– number of results in response
+- $top \– number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
 
 ## Properties
 
@@ -80,6 +80,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
 >- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
