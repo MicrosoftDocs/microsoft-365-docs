@@ -1,7 +1,7 @@
 ---
 title: Export software inventory assessment by machine
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -47,7 +47,12 @@ N/A?
 
 ## Permissions
 
-N/A?
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+---|---|---
+Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 ## URL
 
@@ -57,10 +62,13 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ## Properties
 
->[!Notes]
->Property id values  in this table are listed alphabetically. The Property Id values will not necessarily be returned alphabetically in the output results.
->Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
->Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>[!Note]
+>
+>- Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>
+>- The properties defined in the following table are listed alphanumerically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>
+>- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
@@ -82,13 +90,13 @@ SoftwareVersion | string | Version number of the software product. | 81.0.4044.1
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

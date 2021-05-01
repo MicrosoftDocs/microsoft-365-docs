@@ -1,7 +1,7 @@
 ---
 title: Export secure configuration assessment to Json
 description: This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -42,12 +42,13 @@ The API response contains the Secure Configuration Assessment on your exposed
 
 Full export to Json files.
 This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way:
-1.Call the API to get a list of download URLs with all your organization data.
-1.Download all the files using the download URLs and process the data as you like.
+
+1. Call the API to get a list of download URLs with all your organization data.
+2. Download all the files using the download URLs and process the data as you like.
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+N/A?
 
 ## Permissions
 
@@ -67,19 +68,22 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 ## Properties
 
 >[!Notes]
->-The files are gzip compressed & in multiline json format.
->-The download URLs are only valid for 1 hour.
->-For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>
+>- The files are gzip compressed & in multiline Json format.
+>
+>- The download URLs are only valid for 1 hour.
+>
+>- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsAssessmentExport
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

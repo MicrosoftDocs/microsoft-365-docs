@@ -1,7 +1,7 @@
 ---
 title: Export software vulnerabilities assessment to Json
-description: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+description: This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -41,20 +41,21 @@ ms.technology: mde
 This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
 This API allows you to download all your data from Azure Storage in the following way:
 
-1. Call the API to get a list of download URLs with all your organization data.
-1. Download all the files using the download URLs and process the data as you like.
+- Call the API to get a list of download URLs with all your organization data.
+
+- Download all the files using the download URLs and process the data as you like.
 
 In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-1. The API will pull all data in your organization as a json response.
+- The API will pull all data in your organization as a json response.
 This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-1. The API will pull all data in your organization as download files.
+- The API will pull all data in your organization as download files.
 This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+N/A?
 
 ## Permissions
 
@@ -73,16 +74,19 @@ GET /api/machines/SoftwareVulnerabilitiesExpor
 
 ## Parameters
 
--pageSize (default = 50,000) – number of results in response
--$top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
--sinceTime (required) – The data between a selected time and today
+- pageSize (default = 50,000) – number of results in response
+- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
+- sinceTime (required) – The data between a selected time and today
 
 ## Properties
 
->[!Notes]
--The files are gzip compressed & in multiline json format.
--The download URLs are only valid for 1 hour.
--For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>[!Note]
+>
+>- The files are gzip compressed & in multiline json format.
+>
+>- The download URLs are only valid for 1 hour.
+>
+>- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
@@ -95,13 +99,13 @@ vendorId | String | Related vendor name | google
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabilitiesExport
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

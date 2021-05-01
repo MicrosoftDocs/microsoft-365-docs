@@ -1,7 +1,7 @@
 ---
 title: Export software vulnerabilities assessment by machine
 description: The API response is per device and contains vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. 
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -51,7 +51,7 @@ This method is best for big organizations with more than 100K devices. The respo
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+N/A?
 
 ## Permissions
 
@@ -75,15 +75,16 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ## Properties
 
->[!Notes]
->Property id values in this table are listed alphabetically. The Property Id values will not necessarily be returned alphabetically in the output results.
->Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
->Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+>[!Note]
+>
+>- Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>
+>- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+>
+>- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
-Property Id | Data type | description | Example for a returned value
----|---|---|---
 CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. | CVE-2020-15992
 CvssScore | string | The CVSS score of the CVE. | 6.2
 DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
@@ -105,13 +106,13 @@ VulnerabilitySeverityLevel  | string | Severity level assigned to the security v
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

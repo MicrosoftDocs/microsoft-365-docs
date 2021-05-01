@@ -1,7 +1,7 @@
 ---
 title: Export software inventory assessment to Json
 description: This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -40,10 +40,12 @@ ms.technology: mde
 
 The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
-This solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations.
+This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
 This API allows you to download all your data from Azure Storage in the following way:
--Call the API to get a list of download URLs with all your organization data.
--Download all the files using the download URLs and process the data as you like.
+
+- Call the API to get a list of download URLs with all your organization data.
+
+- Download all the files using the download URLs and process the data as you like.
 
 ## Limitations
 
@@ -51,7 +53,12 @@ N/A?
 
 ## Permissions
 
-N/A?
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+---|---|---
+Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 ## URL
 
@@ -59,26 +66,25 @@ N/A?
 GET /api/machines/SoftwareInventoryExport
 ```
 
-## Parameteres
-
-N/A?
-
 ## Properties
 
->[!Notes]
->-The files are gzip compressed & in multiline json format.
->-The download URLs are only valid for 1 hour.
->-For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>[!Note]
+>
+>- The files are gzip compressed and in multiline Json format.
+>
+>- The download URLs are only valid for 1 hour.
+>
+>- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SoftwareInventoryExport
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

@@ -1,7 +1,7 @@
 ---
 title: Export software vulnerabilities delta assessment by machine
 description: This API is used to get everything that has changed in the full vulnerability export of the organization (New, fixed, updated vulnerabilities). It can be used as a consecutive call after the full export or to update the state of the vulnerabilities in your organization. It can also be used to calculate different KPIs such as “how many vulnerabilities got fixed?” or “how many new vulnerabilities were added to my organization?”
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -39,17 +39,21 @@ ms.technology: mde
 ## API method description
 
 Vulnerability Assessment:
+
 This API response is per device and contains vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
+
 This API has an additional call to fetch the changes between a selected date and today’s date (the “delta” API call).
+
 The API is used to get everything that has changed in the full vulnerability export of the organization (New, fixed, updated vulnerabilities). It can be used as a consecutive call after the full export or to update the state of the vulnerabilities in your organization. It can also be used to calculate different KPIs such as “how many vulnerabilities got fixed?” or “how many new vulnerabilities were added to my organization?”
+
 The table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, EventTimestamp.
 
 In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-1. The API will pull all data in your organization as a json response.
+- The API will pull all data in your organization as a Json response.
 This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
 
-2. The API will pull all data in your organization as download files.
+- The API will pull all data in your organization as download files.
 This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
 
 ## Limitations
@@ -83,14 +87,14 @@ GET / MIA
 a. Fixed – CVE-A on version 1.0 was fixed
 b. New – CVE-A on version 2.0 was added
 
-1. If a specific vulnerability (e.g. CVE-A) was first seen at a specific time (e.g, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you will receive these two separated events:
+2. If a specific vulnerability (e.g. CVE-A) was first seen at a specific time (e.g, January 10) on software with version 1.0, and a few days later that software was updated to version 2.0 which also exposed to the same CVE-A, you will receive these two separated events:
 a. Fixed – CVE-X, FirstSeenTimestamp January 10, version 1,0.
 a. New – CVE-X, FirstSeenTimestamp January 10, version 2.0.
 
 **FirstSeenTimestamp** doesn’t change and goes by the first time the device and the software were exposed to that CVE.
 
->[!Notes]
->Property id values in this table are listed alphabetically. The Property Id values will not necessarily be returned alphabetically in the output results.
+>[!Note]
+>
 >Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 -Each returned record contains all the data from the full export API, and \- in addition \- the following fields:
 

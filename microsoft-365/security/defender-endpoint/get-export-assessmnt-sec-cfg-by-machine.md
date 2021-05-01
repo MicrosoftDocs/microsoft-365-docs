@@ -1,7 +1,7 @@
 ---
 title: Export secure configuration assessment by machine
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -62,13 +62,16 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ## Parameters
 
--pageSize \(default = 50,000\) – number of results in response
--\$top – number of results to return \(doesn’t return \@odata.nextLink and therefore doesn’t pull all the data\)
+- pageSize \(default = 50,000\) – number of results in response
+
+- \$top – number of results to return \(doesn’t return \@odata.nextLink and therefore doesn’t pull all the data\)
 
 ## Properties
 
->[!Notes]
->Property id values  in this table are listed alphabetically. The Property Id values will not necessarily be returned alphabetically in the output results.
+>[!Note]
+>
+>The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>
 >Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
 Property (id) | Data type | Description | Example of a returned value
@@ -91,13 +94,13 @@ Timestamp | string | Last time the configuration was seen on the device | 2020-1
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-us.securitycenter.windows.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

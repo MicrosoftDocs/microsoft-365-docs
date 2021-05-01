@@ -1,7 +1,7 @@
 ---
 title: Export assessment per device methods and properties
 description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved
-keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report,  software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -39,10 +39,10 @@ ms.technology: mde
 Provides methods and property details about the APIs that pull threat & vulnerability management data. There are different API calls to get different types of data.
 In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-1. The API will pull all data in your organization as a json response.
+- The API will pull all data in your organization as a Json response.
 This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-2. The API will pull all data in your organization as download files.
+- The API will pull all data in your organization as download files.
 This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
 
 ## Methods
@@ -71,9 +71,13 @@ Method | Data type | Description
 
 ## Properties
 
+>[!Note]
+>
+>The properties defined in the following three tables are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+
 ### Export software inventory assessment properties
 
-Property id | Data type | Description
+Property (id) | Data type | Description
 :---|:---|:---
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
@@ -93,7 +97,7 @@ SoftwareVersion | string | Version number of the software product.
 
 ### Export secure configurations assessment properties
 
-Property id | Data type | Description
+Property (id) | Data type | Description
 :---|:---|:---
 ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
 ConfigurationId | string | Unique identifier for a specific configuration
@@ -113,7 +117,7 @@ Timestamp | string | Last time the configuration was seen on the device
 
 ### Export software vulnerability assessment properties
 
-Property id | Data type | Description
+Property (id) | Data type | Description
 :---|:---|:---
 CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
 CvssScore | string | The CVSS score of the CVE.
