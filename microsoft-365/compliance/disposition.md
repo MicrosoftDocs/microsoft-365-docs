@@ -25,9 +25,9 @@ description: "Monitor and manage the disposal of content for when you use a disp
 Use the **Disposition** page from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: **multi-staged disposition review**.
+> Rolling out in preview: **multi-stage disposition review**.
 > 
-> Now, an administrator can add up to five consecutive stages of disposition review in a retention label, and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
+> An administrator can now add up to five consecutive stages of disposition review in a retention label, and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -105,8 +105,8 @@ The following diagram shows the basic workflow for a disposition review when a r
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### How to configure a retention label for disposition review
-  
-Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
+
+Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label, and is supported for Microsoft 365 Multi-Geo. Disposition review is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
 
 From the **Define retention settings** page for a retention label:
 
@@ -163,7 +163,9 @@ From the **Pending disposition** page, they see all pending dispositions for tha
 
 ![Disposition options](../media/retention-disposition-options.png)
 
-As you can see from this example, the actions supported are: 
+If you use the horizontal scroll bar, or close the min-review pane, you see additional columns that include the expiry date and the name of the disposition review stage.
+
+As you can see from example shown, the actions supported are: 
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
@@ -175,9 +177,9 @@ As you can see from this example, the actions supported are:
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and then add additional users for review.
 
-During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
+Each action taken is saved and stored although you can't yet search for them in the audit log.
 
-All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
+During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## Disposition of records
 
