@@ -97,7 +97,7 @@ GET https://api-us.securitycenter3.contoso.com/api/machines/SecureConfigurations
 
 ## See also
 
-- [Export assessments per device methods and properties](get-export-assessmnt-methods-properties.md)
+- [Assessment exports per device methods and properties](get-export-assessmnt-methods-properties.md)
 
 - [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
 

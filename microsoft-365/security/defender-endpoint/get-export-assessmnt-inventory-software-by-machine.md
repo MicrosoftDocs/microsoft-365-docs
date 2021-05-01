@@ -197,7 +197,7 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 
 ## See also
 
-- [Export assessments per device methods and properties](get-export-assessmnt-methods-properties.md)
+- [Assessment exports per device methods and properties](get-export-assessmnt-methods-properties.md)
 
 - [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
 
