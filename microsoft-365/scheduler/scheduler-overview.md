@@ -12,7 +12,9 @@ description: "Overview of Scheduler for Microsoft 365."
 
 # Welcome to Scheduler for Microsoft 365
 
-Scheduler for Microsoft 365 is a service that enables users to delegate meeting and appointment scheduling to their digital personal assistant, Cortana. Scheduler uses natural language processing to interpret emails sent to Cortana (cortana@yourdomain.com) to find a time to meet and send calendar invitations for the meeting organizer.  
+Scheduler for Microsoft 365 is a service that lets you delegate meeting and appointment scheduling to Cortana, your digital personal assistant. 
+
+Scheduler uses natural language processing to interpret emails sent to Cortana (cortana@yourdomain.com) to find a time to meet and send calendar invitations for the meeting organizer.   
 
 Scheduler: 
 
@@ -28,13 +30,17 @@ Scheduler:
 
 ## Who can benefit from Scheduler for Microsoft 365?
 
-Scheduler takes care of the time-consuming hassle of scheduling meetings so users can focus on more important things. People that regularly schedule small meetings, fewer than 5 attendees, will save time with Scheduler. Specifically, users in recruiting, sales, procurement, and legal that regularly meet with attendees outside of their company will receive the most value from delegating meeting coordination to Scheduler.
+Scheduler takes care of the time-consuming hassle of scheduling meetings so users can focus on more important things. 
+
+If you regularly schedule small meetings with fewer than five attendees, you'll save time with Scheduler.  Departments such as recruiting, sales, procurement, and legal can benefit from delegating meeting coordination to Scheduler.
 
 ## How does Scheduler for Microsoft 365 work?
 
 Scheduler uses a combination of artificial intelligence and human intelligence to complete scheduling requests that are received by emailing Cortana (Cortana@yourdomain.com).  
 
-To use Scheduler, add Cortana’s email address to an email with the people you want to meet with and ask Cortana to book a meeting in natural language. In your request to Cortana, you can indicate the duration and when you want to meet. For example, “Cortana, find 45 minutes for us to meet next week.” 
+To use Scheduler, add Cortana’s email address to an email with the people you want to meet with and ask Cortana to book a meeting in natural language. 
+
+In your request, tell Cortana how long and when you want to meet. For example, **“Cortana, find 45 minutes for us to meet next week.”**
 
 After a user sends a meeting request to Cortana, the Scheduler service: 
 
