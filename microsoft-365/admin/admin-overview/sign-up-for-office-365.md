@@ -131,4 +131,4 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 ## Related content
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (links)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
