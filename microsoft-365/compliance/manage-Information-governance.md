@@ -27,6 +27,8 @@ Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities
 
 Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including secure access, threat protection, information protection, and data governance. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+
 ## Information governance
 
 To keep what you need and delete what you don't:

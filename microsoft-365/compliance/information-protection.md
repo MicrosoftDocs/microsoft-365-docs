@@ -84,7 +84,7 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 Many organizations are using these information protection capabilities to comply with data privacy regulations. To help, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including secure access, threat protection, information protection, and data governance. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
-Additionally, To help you plan an integrated strategy for implementing information protection capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations.  Feel free to adapt these illustrations for your own use.
+Additionally, to help you plan an integrated strategy for implementing information protection capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations.  Feel free to adapt these illustrations for your own use.
 
 | Item | Description |
 |:-----|:------------|
