@@ -464,9 +464,6 @@ If you have configured SharePoint sites for content type policies or information
 - [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
-- End user documentation:
-    - [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
-    - [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 
 ## Configuration guidance
 
