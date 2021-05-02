@@ -470,8 +470,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
-
-To create and apply retention labels:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+If you're new to these retention solutions in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, with links to common scenarios that help you map your business goals to specific configurations.
