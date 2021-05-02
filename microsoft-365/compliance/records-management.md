@@ -108,8 +108,4 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 
 ## Configuration guidance
 
-See [Get started with records management](get-started-with-records-management.md).
-
-To mark content as a record, see [Declare records by using retention labels](declare-records.md).
-
-To help you comply in data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including secure access, threat protection, information protection, and data governance. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, with links to common scenarios that help you map your business goals to specific configurations.
