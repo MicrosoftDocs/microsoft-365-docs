@@ -23,9 +23,8 @@ ms.prod: m365-security
 - [Differences between Threat Explorer and Real-time detections](#differences-between-threat-explorer-and-real-time-detections)<br/>
 - [Required licenses and permissions](#required-licenses-and-permissions)
 
-
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security](email-security-in-microsoft-defender.md).
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
 This article explains the difference between threat exploration and real-time detections reporting, and the licenses and permissions that are needed.
 
@@ -53,7 +52,7 @@ With these tools, you can:
 - Start an automated investigation and response process from a view in Explorer.
 - Investigate malicious email, and more.
 
-For more information, see [Email security in Threat Explorer](email-security-in-microsoft-defender.md).
+For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
 ## Differences between Threat Explorer and Real-time detections
 

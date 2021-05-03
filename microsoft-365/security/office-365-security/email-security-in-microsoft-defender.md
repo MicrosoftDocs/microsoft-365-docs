@@ -1,5 +1,5 @@
 ---
-title: Email security in Microsoft Defender for Office 365
+title: Email security with Threat Explorer in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -18,10 +18,15 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Email security in Microsoft Defender for Office 365
+# Email security with Threat Explorer in Microsoft Defender for Office 365
+
+- [View malware detected in email](#view-malware-detected-in-email)
+- [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
+- [Review email messages reported by users](#review-email-messages-reported-by-users)
+- [Start automated investigation and response](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Real-time detections](real-time-detections.md). 
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detection basics](real-time-detections.md). 
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features. 
 

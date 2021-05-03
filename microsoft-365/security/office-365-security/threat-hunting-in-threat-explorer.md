@@ -27,7 +27,7 @@ ms.prod: m365-security
 - [Improvements to threat hunting experience](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md).
+> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detection basics](real-time-detections.md).
 
 
 **Applies to**
@@ -54,7 +54,7 @@ With these tools, you can:
 - Start an automated investigation and response process from a view in Explorer
 - Investigate malicious email, and more 
 
-For more information, see [Email security in Threat Explorer](email-security-in-microsoft-defender.md). 
+For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md). 
 
 ## Threat Explorer walk-through
 
@@ -64,11 +64,13 @@ Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of
 
 To open the Explorer tool, go to **Security & Compliance Center** > **Threat management** > **Explorer** (or **Real-time detections**). By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views. 
 
-image
+> [!div class="mx-imgBorder"]
+> ![View drop down in Threat Explorer](../../media/threat-explorer-view-drop-down.png)
 
 Once a security operations (Sec Ops) person selects the data they want to see, whether the scope is narrow view like user **Submissions**, or a wider view, like **All email**, they can use the **Sender** button to further filter. 
 
-image
+> [!div class="mx-imgBorder"]
+> ![Sender button in Threat Explorer](../../media/threat-explorer-sender-button.png)
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier. 
 
@@ -77,21 +79,29 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 
 Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
 
-image
+> [!div class="mx-imgBorder"]
+> ![Advanced filter in Threat Explorer](../../media/threat-explorer-advanced-filter.png)
 
 Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results. 
 
-image
+> [!div class="mx-imgBorder"]
+> ![Results from a query](../../media/threat-explorer-chart-table.png)
 
 Use the **Column options** button to get the kind of information on the table that would be most helpful: 
 
-image
+> [!div class="mx-imgBorder"]
+> ![Column options button highlighted](../../media/threat-explorer-column-options.png)
+
+> [!div class="mx-imgBorder"]
+> ![Available options in Columns options](../../media/threat-explorer-column-options-details.png)
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions. 
 
-image1
+> [!div class="mx-imgBorder"]
+> ![Email Origins map](../../media/threat-explorer-email-origin-map.png)
 
-image2
+> [!div class="mx-imgBorder"]
+> ![Campaign display options](../../media/threat-explorer-campaign-display.png)
 
 ### Email investigation
 
@@ -101,22 +111,26 @@ The email entity page pulls together contents that can be found under **Details*
 
 When you reach this stage, the email entity page will be critical to the final step—*remediation*. 
 
-image
+> [!div class="mx-imgBorder"]
+> ![The email entity page](../../media/threat-explorer-email-entity-page.png)
 
 > [!TIP]
 > To learn more about the rich email entity page (seen below on the **Analysis** tab), including the results of detonated Attachments, findings for included URLs, and safe Email preview, click [here](mdo-email-entity-page.md).
 
-image
+> [!div class="mx-imgBorder"]
+> ![Analysis tab of the email entity page](../../media/threat-explorer-analysis-tab.png)
 
 ### Email remediation
 
 Once a Sec Ops person determines that an email is a threat, the next Explorer or Real-time detection step is dealing with the threat and remediating it. This can be done by returning to Threat Explorer, selecting the checkbox for the problem email, and using the **Actions** button.
 
-image
+> [!div class="mx-imgBorder"]
+> ![Actions button in Threat Explorer](../../media/threat-explorer-email-actions-button.png)
 
 Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the mail can also be reported as clean.
 
-image
+> [!div class="mx-imgBorder"]
+> ![The Actions drop down](../../media/threat-explorer-email-actions-drop-down.png)
 
 ## Improvements to threat hunting experience
 
