@@ -167,7 +167,7 @@ For example, here are some additional steps that might be required for email and
     
    - For **Host name or Alias**, enter **@**.
     
-   - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
+   - For **IP Address**, enter the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
     
    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
