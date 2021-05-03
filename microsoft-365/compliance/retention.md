@@ -467,4 +467,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-If you're new to these retention solutions in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, with links to common scenarios that help you map your business goals to specific configurations.
+See [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, and links to end-to-end configurations guidance for retention scenarios.
