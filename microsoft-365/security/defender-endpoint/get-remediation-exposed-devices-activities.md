@@ -1,7 +1,7 @@
 ---
 title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
