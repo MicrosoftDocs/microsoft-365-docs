@@ -1,5 +1,5 @@
 ---
-title: "Preview the results of a Content search"
+title: "Preview the results of an eDiscovery search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Preview the results of a Content search in the Microsoft 365 compliance center."
+description: "Preview the results of a Content search or a Core eDiscovery search in the Microsoft 365 compliance center."
 ---
 
-# Preview search results
+# Preview eDiscovery search results
 
 There are two configuration settings for previewing search results. After you run a new search or open an existing search, click **Individual results** to view the following preview settings: 
   
