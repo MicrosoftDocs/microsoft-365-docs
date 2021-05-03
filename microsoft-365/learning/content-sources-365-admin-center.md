@@ -30,7 +30,7 @@ The administrator selects which other learning content sources (for example, Sha
 > [!NOTE]
 >  Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. This configured learning is subject to the separate license, privacy and service terms between your organization and the third party, and not the Viva Learning (Preview) terms. Before selecting this type of learning, verify you have an agreement in place for your organization and users.
 
-## Assign the knowledge admin role [Optional]
+## Assign the knowledge admin role (Optional)
 
 You must be a Microsoft 365 global administrator to perform these tasks.
 
