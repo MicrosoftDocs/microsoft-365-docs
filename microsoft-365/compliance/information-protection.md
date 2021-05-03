@@ -30,7 +30,7 @@ MIP capabilities are included with Microsoft 365 Compliance and give you the too
 
 ![Image of how MIP helps you discover, classify, and protect sensitive data](../media/powered-by-intelligent-platform.png)
 
-:::image type="content" source="../media/data-table1-4638524-new.PNG" alt-text="Know your data":::
+:::image type="content" source="../media/data-table1-4638524-new.png" alt-text="Know your data":::
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
