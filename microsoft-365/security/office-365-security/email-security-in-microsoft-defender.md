@@ -36,7 +36,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Em
 1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.) 
 If you're in the converged Microsoft 365 security center (https://security.microsoft.com/) scroll to **Email & collaboration** > **Explorer**.
 
-From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters.
+From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer?view=o365-21vianet&branch=pr-en-us-8094).
 
 2. In the **View** menu, choose **Email** \> **Malware**.
 
@@ -83,7 +83,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
    - **Top clicks** are the Safe Links-wrapped URLs that were clicked, sorted by total click count. This column also isn't displayed, to simplify the view. Total counts by column indicate the Safe Links click verdict count for each clicked URL. In the Phish email view, these are usually suspicious or malicious URLs. But the view could include URLs that aren't threats but are in phish messages. URL clicks on unwrapped links don't show up here.
 
-   The two URL tables show top URLs in phishing email messages by delivery action and location. The tables show URL clicks that were blocked or visited despite a warning, so you can see what potential bad links were presented to users and that the user's clicked. From here, you can conduct further analysis. For example, below the chart you can see the top URLs in email messages that were blocked in your organization's environment.
+   The two URL tables show top URLs in phishing email messages by delivery action and location. The tables show URL clicks that were blocked or visited despite a warning, so you can see what potential bad links were presented to users and that the users clicked. From here, you can conduct further analysis. For example, below the chart you can see the top URLs in email messages that were blocked in your organization's environment.
 
    > [!div class="mx-imgBorder"]
    > ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
@@ -95,7 +95,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
 ### Interpretation of click verdicts
 
-Within the Email or URL flyouts, Top Clicks as well as within our filtering experiences, you'll see different click verdict values:
+In the Email or URL flyouts, Top Clicks, as well as in our filtering experiences, you'll see different click verdict values:
 
 - **None:** Unable to capture the verdict for the URL. The user might have clicked through the URL.
 - **Allowed:** The user was allowed to navigate to the URL.
@@ -105,26 +105,6 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 - **Pending verdict bypassed:** The user was presented with the detonation page. But the user overrode the message to access the URL.
 - **Error:** The user was presented with the error page, or an error occurred in capturing the verdict.
 - **Failure:** An unknown exception occurred while capturing the verdict. The user might have clicked through the URL.
-
-## Review email messages reported by users
-
-You can see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report message or Report phishing add ins](report-false-positives-and-false-negatives.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
-
-1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
-
-2. In the **View** menu, choose **Email** \> **Submissions**.
-
-   > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer for emails](../../media/explorer-view-menu-email-user-reported.png)
-
-3. Click **Sender**, and then choose **Basic** \> **Report type**.
-
-4. Select an option, such as **Phish**, and then select the **Refresh** button.
-
-   > [!div class="mx-imgBorder"]
-   > ![User-reported phish](../../media/EmailUserReportedReportType.png)
-
-The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## Start automated investigation and response
 
