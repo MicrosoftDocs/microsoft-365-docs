@@ -61,7 +61,7 @@ Data columns shown are:
 >
 
 ## Related Topics
-[Additional endpoints not included in the Office 365 IP Address and URL Web service](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
+[Additional endpoints not included in the Office 365 IP Address and URL Web service](additional-office365-ip-addresses-and-urls.md)
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
