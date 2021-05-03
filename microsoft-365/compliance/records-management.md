@@ -108,4 +108,4 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 
 ## Configuration guidance
 
-See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, with links to common scenarios that help you map your business goals to specific configurations.
+See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for records management scenarios.
