@@ -185,7 +185,7 @@ In addition, you can create a CNAME record to help customers find your website.
     
 2. Select **Save**. 
   
-When the NS records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
+When the nameserver records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
