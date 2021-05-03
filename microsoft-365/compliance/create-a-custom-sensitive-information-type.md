@@ -9,13 +9,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
+description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 # Get started with custom sensitive information types
@@ -58,7 +58,7 @@ Use this procedure to create a new sensitive information type that you fully def
 5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 6. Fill in a value for **Character proximity**.
 7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. 
-8.	(Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
+8. (Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
 9. Choose **Create**.
 10. Choose **Next**.
 11. Choose the **recommended confidence level** for this sensitive information type.
@@ -116,6 +116,16 @@ Use this procedure to create a new sensitive information type that is based on a
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## More information on regular expression validators
+
+### Date validator
+
+
+
+### Checksum validator
+
+
 
 ## More information on additional checks
 
