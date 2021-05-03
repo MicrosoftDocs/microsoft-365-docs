@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Office activations"
+title: "Microsoft 365 admin center reports - Microsoft Office activations"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,7 +21,7 @@ ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: "Learn how to get an Office Activation report to know which users have activated their Office subscription, and identify users that might need additional help."
 ---
 
-# Microsoft 365 Reports in the admin center - Microsoft Office activations
+# Microsoft 365 admin center reports - Microsoft Office activations
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   

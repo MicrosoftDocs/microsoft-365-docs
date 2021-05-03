@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Teams user activity"
+title: "Microsoft 365 admin center reports - Microsoft Teams user activity"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,7 +21,7 @@ ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: "Learn how to get the Microsoft Teams user activity report and gain insights into the Teams activity in your organization."
 ---
 
-# Microsoft 365 Reports in the admin center - Microsoft Teams user activity
+# Microsoft 365 admin center reports - Microsoft Teams user activity
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams user activity report, you can gain insights into the Microsoft Teams activity in your organization.
   

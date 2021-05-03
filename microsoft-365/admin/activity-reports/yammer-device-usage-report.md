@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Yammer device usage report"
+title: "Microsoft 365 admin center reports - Yammer device usage"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -20,7 +20,7 @@ ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: "Get the Yammer device usage report to know about which devices your users are using Yammer on. "
 ---
 
-# Microsoft 365 Reports in the admin center - Yammer device usage report
+# Microsoft 365 admin center reports - Yammer device usage
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   

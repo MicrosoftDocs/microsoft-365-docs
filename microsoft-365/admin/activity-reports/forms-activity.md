@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Forms activity"
+title: "Microsoft 365 admin center reports - Forms activity"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
-# Microsoft 365 Reports in the admin center - Forms activity
+# Microsoft 365 admin center reports - Forms activity
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
