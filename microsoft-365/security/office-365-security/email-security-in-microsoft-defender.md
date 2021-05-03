@@ -3,11 +3,11 @@ title: Email security in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: dansimp
-author: dansimp
+author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-
+ms.date: 05/03/2021
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
@@ -31,9 +31,12 @@ This article explains how to view and investigate malware and phishing attempts 
 
 ## View malware detected in email
 
-To see malware detected in email sorted by Microsoft 365 technology, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections).
+To see malware detected in email sorted by Microsoft 365 technology, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections). Malware is the default view, so it may be selected as soon as you open Explorer.
 
-1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.) 
+If you're in the converged Microsoft 365 security center (https://security.microsoft.com/) scroll to **Email & collaboration** > **Explorer**.
+
+From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters.
 
 2. In the **View** menu, choose **Email** \> **Malware**.
 
