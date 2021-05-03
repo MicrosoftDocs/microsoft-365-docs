@@ -89,21 +89,7 @@ Ensure that you fulfill the following requirements:
 > [!NOTE]
 > If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
-### Configure Windows server proxy and Internet connectivity settings if needed
-
-If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
-
-- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
-- [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
-
-If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
-
-Once completed, you should see onboarded Windows servers in the portal within an hour.
-
 ### Option 2: Onboard Windows servers through Azure Security Center 
-
-!!! TBD - CHECK WITH ASC TEAM !!!
 
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
@@ -126,6 +112,40 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
+
+### Configure Windows server proxy and Internet connectivity settings if needed
+
+If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
+
+- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+
+- [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
+
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
+
+Once completed, you should see onboarded Windows servers in the portal within an hour.
+
+## Verify onboarding
+
+1. Run the following command to verify that Microsoft Defender AV is installed:
+
+   ```sc.exe query Windefend```
+
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
+
+    For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
+
+
+2. Run the following command to verify that Microsoft Defender for Endpoint is running:
+
+    ```sc.exe query sense```
+    
+    The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+
+## Run a detection test
+Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
+
+
 
 ## Offboard Windows servers
 
