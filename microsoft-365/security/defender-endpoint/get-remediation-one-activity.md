@@ -1,7 +1,7 @@
 ---
 title: Get one remediation activity by Id
 description: Returns information for the specified remediation activity.
-keywords: apis, remediation, remediation api, get, remediation tasks, list
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
