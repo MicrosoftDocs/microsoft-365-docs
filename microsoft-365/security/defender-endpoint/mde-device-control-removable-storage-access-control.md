@@ -218,8 +218,6 @@ The Removable Storage Access Control feature enables you to apply policy via OMA
 
 Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
-:::image type="content" source="images/microsoft-365-e3.png" alt-text="`Write and Execute access blocked but approved USBs allowed":::
-
 ### Permission
 
 For policy deployment in Intune, the account must have permissions to create, edit, update, or delete device configuration profiles. You can create custom roles or use any of the built-in roles with these permissions.
@@ -257,7 +255,9 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control.
+The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following:
+
+- Microsoft 365 for E5 reporting
 
 //events triggered by RemovableStoragePolicyTriggered 
 
