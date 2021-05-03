@@ -50,4 +50,4 @@ Both users and admins can work with quarantined messages:
 
 - Admins and users can report false positives to Microsoft in quarantine.
 
-For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.md).
+For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.yml).
