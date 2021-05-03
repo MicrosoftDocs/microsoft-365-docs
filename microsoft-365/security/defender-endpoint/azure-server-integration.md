@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows servers to the Microsoft Defender for Endpoint service
-description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+title: Integration with Azure Defender
+description: Learn about Microsoft Defender for Endpoint integration with Azure Defender
+keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,9 +18,14 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows servers to the Microsoft Defender for Endpoint service
+# Integration with Azure Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)] Integration with Azure Defender
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- Microsoft Defender for Endpoint
+- Azure Defenders
+
 Defender for Endpoint can integrate with Azure Defender to provide a comprehensive Windows server protection solution. With this integration, Azure Defender can use the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
 
 The following capabilities are included in this integration:
@@ -39,3 +44,9 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 > - If you use Defender for Endpoint before using Azure Defender, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Defender at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant. <br>
 Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
+
+
+
+## Related topics
+- [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
+- [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)

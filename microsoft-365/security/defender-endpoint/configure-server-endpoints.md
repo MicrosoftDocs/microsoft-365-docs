@@ -160,9 +160,6 @@ You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2
 
 
 
-
-
-
 ## Related topics
 - [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
 - [Onboard Windows 10 devices](configure-endpoints.md)
