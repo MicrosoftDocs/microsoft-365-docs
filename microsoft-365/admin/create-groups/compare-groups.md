@@ -54,7 +54,7 @@ Distribution groups are best for situations where you need to broadcast informat
 
 Distribution groups can be [upgraded to Microsoft 365 groups](../manage/upgrade-distribution-lists.md).
 
-Distriburion groups can be added to a Teams channel.
+Distriburion groups can be added to a team in Microsoft Teams.
 
 ## Security groups
 
@@ -64,7 +64,7 @@ Security groups can contain users or devices. Creating a security group for devi
 
 Security groups can be [configured for dynamic membership in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), allowing group members or devices to be added or removed automatically based on user attributes such as department, location, or title; or device attributes such as operating system version.
 
-Security groups can be added to a Teams channel.
+Security groups can be added to a team.
 
 ## Mail-enabled security groups
 
@@ -72,7 +72,7 @@ Mail-enabled security groups function the same as regular security groups, excep
 
 They include the ability to send mail to all the members of the group.
 
-Mail-enabled security groups can be added to a Teams channel.
+Mail-enabled security groups can be added to a team.
 
 ## Shared mailboxes
 
