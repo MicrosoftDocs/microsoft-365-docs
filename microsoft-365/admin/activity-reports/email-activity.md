@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Email activity"
+title: "Microsoft 365 admin center reports - Email activity"
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,7 +21,7 @@ ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: "Learn how to get an email activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
-# Microsoft 365 Reports in the admin center - Email activity
+# Microsoft 365 admin center reports - Email activity
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   

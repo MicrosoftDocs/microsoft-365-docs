@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - SharePoint activity"
+title: "Microsoft 365 Reports admin center reports - SharePoint activity"
 ms.author: pebaum
 author: pebaum
 manager: pamgreen
@@ -23,7 +23,7 @@ ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: "Get the SharePoint activity usage report to know about the activity of every SharePoint user, the number of files shared, and the storage utilization."
 ---
 
-# Microsoft 365 Reports in the admin center - SharePoint activity
+# Microsoft 365 Reports admin center reports - SharePoint activity
 
 As an Microsoft 365 admin, the **Reports** dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. Check out the [activity reports in the Microsoft 365 admin center](activity-reports.md).
   

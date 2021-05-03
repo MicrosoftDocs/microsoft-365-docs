@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business usage"
+title: "Microsoft 365 admin center reports - OneDrive for Business usage"
 ms.author: pebaum
 author: pebaum
 manager: pamgreen
@@ -24,7 +24,7 @@ ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: "Get the OneDrive for Business Usage Report to know about the total number of files and storage used across your organization. "
 ---
 
-# Microsoft 365 Reports in the admin center - OneDrive for Business usage
+# Microsoft 365 admin center reports - OneDrive for Business usage
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
