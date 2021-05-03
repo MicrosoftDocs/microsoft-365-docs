@@ -55,8 +55,6 @@ Safe Links protection is available in the following locations:
 
 - **Office 365 apps**: Safe Links protection for Office 365 apps is available in supported desktop, mobile, and web aps. You **configure** Safe Links protection for Office 365 apps in the global setting that are **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-  But, Safe Links protection for Office 365 apps is only **applied** to users who are included in active Safe Links policies. If a user isn't included in an active Safe Links policy, the user doesn't get Safe Links protection in supported Office 365 apps.
-
   For more information about Safe Links protection in Office 365 apps, see the [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps) section later in this article.
 
 This article includes detailed descriptions of the following types of Safe Links settings:
