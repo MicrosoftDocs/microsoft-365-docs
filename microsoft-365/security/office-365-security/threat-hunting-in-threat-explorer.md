@@ -21,9 +21,10 @@ ms.prod: m365-security
 
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
 
-[Threat Explorer walk-through](#threat-explorer-walk-through) <br/>
-[Email investigation](#email-investigation) <br/>
-[Email remediation](#email-remediation)
+- [Threat Explorer walk-through](#threat-explorer-walk-through)
+- [Email investigation](#email-investigation)
+- [Email remediation](#email-remediation)
+- [Improvements to threat hunting experience](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
 > This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md).
