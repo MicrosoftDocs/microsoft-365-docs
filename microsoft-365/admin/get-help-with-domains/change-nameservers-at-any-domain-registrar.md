@@ -177,7 +177,7 @@ In addition, you can create a CNAME record to help customers find your website.
   
 1. Select **+ New custom record** and enter the following: 
     
-   - For **DNS type** enter: **CNAME (Alias)**
+   - For **DNS type**, enter **CNAME (Alias)**.
     
    - For **Host name or Alias**, enter **www**.
     
