@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
+recommendations: false
 description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes over 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
