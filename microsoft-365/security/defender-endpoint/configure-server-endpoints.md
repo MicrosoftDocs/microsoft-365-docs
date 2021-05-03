@@ -42,7 +42,7 @@ You'll need to complete the following steps to succesfully onboard servers:<br>
 
 **Windows Server 2012 R2 SP1 and Windows Server 2016**
 - Download installation and onboarding packages
-- Application installation
+- Install application
 - Follow the onboarding steps
 
 **Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition**
