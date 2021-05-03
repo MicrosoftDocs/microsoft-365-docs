@@ -163,7 +163,7 @@ For example, here are some additional steps that might be required for email and
 
 3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record** and enter the following:
 
-   - For **DNS type** enter: **A (Address)**
+   - For **DNS type**, enter **A (Address)**.
     
    - For **Host name or Alias**, enter **@**.
     
