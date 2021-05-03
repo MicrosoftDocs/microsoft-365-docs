@@ -165,7 +165,7 @@ For example, here are some additional steps that might be required for email and
 
    - For **DNS type** enter: **A (Address)**
     
-   - For **Host name or Alias**, type the following: **@**
+   - For **Host name or Alias**, enter **@**.
     
    - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
     
