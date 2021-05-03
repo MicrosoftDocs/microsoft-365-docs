@@ -39,7 +39,7 @@ Refer to the following table to understand existing quotas and usage parameters.
 | Data range | 30 days | Every query | Each query can look up data from up to the past 30 days. |
 | Result set | 10,000 rows | Every query | Each query can return up to 10,000 records. |
 | Timeout | 10 minutes | Every query | Each query can run for up to 10 minutes. If it does not complete within 10 minutes, the service displays an error.
-| CPU resources | Based on tenant size | - Every 15 minutes | The [portal displays an error](advanced-hunting-errors.md) whenever a query runs and the tenant has consumed over 10% of allocated resources. Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle. |
+| CPU resources | Based on tenant size | Every 15 minutes | The [portal displays an error](advanced-hunting-errors.md) whenever a query runs and the tenant has consumed over 10% of allocated resources. Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle. |
 
 >[!NOTE] 
 >A separate set of quotas and parameters apply to advanced hunting queries performed through the API. [Read about advanced hunting APIs](./api-advanced-hunting.md)
