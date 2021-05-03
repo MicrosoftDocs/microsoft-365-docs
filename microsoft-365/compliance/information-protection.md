@@ -30,7 +30,7 @@ MIP capabilities are included with Microsoft 365 Compliance and give you the too
 
 ![Image of how MIP helps you discover, classify, and protect sensitive data](../media/powered-by-intelligent-platform.png)
 
-:::image type="content" source="../media/Data-table1-4638524.PNG" alt-text="Know your data":::
+:::image type="content" source="../media/data-table1-4638524-new.PNG" alt-text="Know your data":::
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
@@ -43,7 +43,7 @@ For information about governing your data, see [Microsoft Information Governance
 
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
 
-:::image type="content" source="../media/knowyourdata.PNG" alt-text="know your data"::: 
+:::image type="content" source="../media/knowyourdata-new.png" alt-text="know your data"::: 
 
 |Capability|What problems does it solve?|Get started|Licensing|
 |:------|:------------|:--------------------|:-----------------------------|:--------------------|
@@ -57,7 +57,7 @@ To understand your data landscape and identify important data across your hybrid
 To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
 
 
-:::image type="content" source="../media/protectyourdata-4638524.PNG" alt-text="Protect your data":::
+:::image type="content" source="../media/protectyourdata-4638524-new.png" alt-text="Protect your data":::
 
 |Capability|What problems does it solve?|Get started|Licensing|
 |:------|:------------|:---------------------|:----------------------------|:---------------------|
@@ -69,7 +69,7 @@ To apply flexible protection actions that include encryption, access restriction
 ## Transition from AIP to MIP
 The classic Azure Information Protection admin experience and client are being deprecated early next year. It is recommended to move to Microsoft Information Protection.This entails migrating all your existing labels and policies over. 
 
-:::image type="content" source="../media/Transition-AIP2MIP-4638524.png" alt-text="Transition from AIP to MIP":::
+:::image type="content" source="../media/transition-aip2mip-4638524-new.png" alt-text="Transition from AIP to MIP":::
 
 ## Additional capabilities
 Microsoft 365 includes these capabilities to help protect data:
@@ -87,7 +87,7 @@ Microsoft 365 includes these capabilities to help protect data:
 
 To help prevent accidental oversharing of sensitive information, use the following capabilities:
 
-:::image type="content" source="../media/DLP-4638524.PNG" alt-text="Prevent data loss":::
+:::image type="content" source="../media/dlp-4638524-new.png" alt-text="Prevent data loss":::
 
 
 Step 1 - Review and meet prerequisites
