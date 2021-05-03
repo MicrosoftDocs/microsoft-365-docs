@@ -113,10 +113,11 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 2. Type `Get-MpComputerStatus`.
 
-3. In the list of results, in the **AMRunningMode** row, look for one of the following values:   
-   - `Normal`
-   - `Passive Mode`  
-   - `SxS Passive Mode`
+3. In the list of results, in the **AMRunningMode** row, look for one of the following values:
+   - `Normal` - Defender service running normally. No special modes are enabled.
+   - `Passive Mode` - If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, then Microsoft Defender Antivirus automatically goes into passive mode. (Real-time protection and threats are not remediated by Microsoft Defender Antivirus.)
+   - `SxS Passive Mode`- Similar to passive mode, but with the option to turn on limited periodic scanning.
+   - `EDR BlockMode`: If your organization is using Microsoft Defender for Endpoint together with a non-Microsoft antivirus/antimalware solution, and you have EDR in block mode enabled, then whenever a malicious artifact is detected, Microsoft Defender for Endpoint takes action to block and remediate the artifact.
 
 To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus).
 
