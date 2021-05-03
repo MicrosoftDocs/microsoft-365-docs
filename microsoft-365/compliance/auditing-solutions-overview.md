@@ -151,3 +151,7 @@ If your organization has a subscription that supports Advanced Audit, perform th
 3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
 
 4. Search for crucial events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
+
+## Training
+
+Training your security operations team, IT administrators, and compliance investigators team in Basic auditing and Advanced Audit can help your organization get started more quickly using auditing to help with your investigations. Microsoft 365 provides the following resource to help these users in your organization getting started with auditing: [Describe the audit capabilities in Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
