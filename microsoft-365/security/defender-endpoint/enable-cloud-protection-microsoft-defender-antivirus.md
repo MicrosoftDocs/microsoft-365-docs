@@ -9,7 +9,7 @@ ms.sitesec: library
 localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/13/2020
+ms.date: 04/30/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -33,7 +33,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 You can turn Microsoft Defender Antivirus cloud-delivered protection on or off in several ways:
 
 - Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager
 - Group Policy
 - PowerShell cmdlets.
 
@@ -49,10 +49,15 @@ For more information about the specific network-connectivity requirements to ens
 ## Use Intune to turn on cloud-delivered protection
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+
 2. On the **Home** pane, select **Device configuration > Profiles**.
+
 3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
+
 4. Select **Properties** > **Configuration settings: Edit** > **Microsoft Defender Antivirus**.
+
 5. On the **Cloud-delivered protection** switch, select **Enable**.
+
 6. In the **Prompt users before sample submission** dropdown, select **Send all data automatically**.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](/intune/device-profiles)
@@ -60,13 +65,18 @@ For more information about Intune device profiles, including how to create and c
 ## Use Microsoft Endpoint Manager to turn on cloud-delivered protection
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+
 2. Choose **Endpoint security** > **Antivirus**.
+
 3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
+
 4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
-    1. **High**: Applies a strong level of detection.
-    2. **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
-    3. **Zero tolerance**: Blocks all unknown executables.
+   - **High**: Applies a strong level of detection.
+   - **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
+   - **Zero tolerance**: Blocks all unknown executables.
+
 6. Select **Review + save**, then choose **Save**.
 
 For more information about configuring Microsoft Endpoint Configuration Manager, see [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
@@ -90,8 +100,6 @@ For more information about configuring Microsoft Endpoint Configuration Manager,
 
         >[!NOTE]
         > The **Send safe samples** (1) option means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
-
-        > [!WARNING]
         > Setting the option to **Always Prompt** (0) will lower the protection state of the device. Setting it to **Never send** (2) means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
 7. Select **OK**.

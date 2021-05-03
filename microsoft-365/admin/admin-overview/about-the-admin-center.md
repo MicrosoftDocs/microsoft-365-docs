@@ -96,4 +96,4 @@ Here are the features and settings you'll find in the left-hand navigation of th
 
 ## Related content
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (links)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
