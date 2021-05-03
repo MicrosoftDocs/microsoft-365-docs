@@ -161,11 +161,31 @@ For example, here are some additional steps that might be required for email and
 
 2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record**.
+3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record** and enter the following.
 
-4. Select the type of DNS record you want to add, and type the information for the new record.
-
-5. Select **Save**.
+   - For **DNS type** enter: **A (Address)**
+    
+   - For **Host name or Alias**, type the following: **@**
+    
+   - For **IP Address**, type the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
+    
+   This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
+    
+5. Select **Save**. 
+    
+In addition, you can create a CNAME record to help customers find your website.
+  
+1. Select **+ New custom record** and enter the following: 
+    
+   - For **DNS type** enter: **CNAME (Alias)**
+    
+   - For **Host name or Alias**, type the following: **www**
+    
+   - For **Points to address**, type the fully qualified domain name (FQDN) for your website (for example, contoso.com). 
+    
+2. Select **Save**. 
+  
+When the NS records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
