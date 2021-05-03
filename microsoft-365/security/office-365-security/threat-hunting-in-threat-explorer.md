@@ -3,10 +3,11 @@ title: Threat hunting in Threat Explorer for Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: dansimp
-author: dansimp
+author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 05/03/2021
 
 localization_priority: Normal
 ms.collection:
@@ -23,7 +24,6 @@ ms.prod: m365-security
 > [!NOTE]
 > This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security](email-security-in-microsoft-defender.md) and [Real-time detections](real-time-detections.md). 
 
-This article is about threat hunting in Microsoft Defender for Office 365, the tools available, and how to use them. 
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -53,7 +53,9 @@ For more information, see [Email security in Threat Explorer](email-security-in-
 
 ## Threat Explorer walk-through
 
-In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities. Defender for Office 365 Plan 1 uses Real-time detections, which is a subset of the Threat Explorer (also called Explorer) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see if they apply. 
+In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities. 
+
+Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply. 
 
 To open the Explorer tool, go to **Security & Compliance Center** > **Threat management** > **Explorer** (or **Real-time detections**). By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views. 
 
@@ -63,12 +65,12 @@ Once a security operations (Sec Ops) person selects the data they want to see, w
 
 image
 
-Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a filtered focus. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, *I chose the Malware View with a Recipient filter focus*. This makes retracing your steps easier. 
+Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier. 
 
 > [!TIP]
 > If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry). 
 
-Additional refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
+Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
 
 image
 
@@ -88,9 +90,11 @@ image2
 
 ### Email investigation
 
-When you see a suspicious email, click the name to expand the flyout on the right. Here, the banner that lets Sec Ops see the [email entity page](mdo-email-entity-page.md) is available. The email entity page pulls together contents that can be found under **Details**, **Attachments**, **Devices**, but includes more organized data. This includes things like DMARC results, plain text display of the email header with a copy option, verdict information on attachments that were securely detonated, and files those detonations dropped (can include IP addresses that were contacted and screenshots of pages or files). URLs and their verdicts are also listed with similar details reported. 
+When you see a suspicious email, click the name to expand the flyout on the right. Here, the banner that lets Sec Ops see the [email entity page](mdo-email-entity-page.md) is available.
 
-When you reach this stage, the email entity page will be critical to the final step—remediation. 
+The email entity page pulls together contents that can be found under **Details**, **Attachments**, **Devices**, but includes more organized data. This includes things like DMARC results, plain text display of the email header with a copy option, verdict information on attachments that were securely detonated, and files those detonations dropped (can include IP addresses that were contacted and screenshots of pages or files). URLs and their verdicts are also listed with similar details reported. 
+
+When you reach this stage, the email entity page will be critical to the final step—*remediation*. 
 
 image
 
@@ -105,7 +109,7 @@ Once a Sec Ops person determines that an email is a threat, the next Explorer or
 
 image
 
-Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, to contact recipients, to investigations that can include triggering Automated Investigation and Response (or AIR) playbooks. Or, the mail can be reported clean.
+Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the mail can also be reported as clean.
 
 image
 
