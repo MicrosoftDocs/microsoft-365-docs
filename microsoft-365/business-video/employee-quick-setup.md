@@ -25,7 +25,7 @@ description: "Help your employees learn how to set up Office apps they get with 
 
 # Employee quick setup
 
-Are you new to Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false"::: [Watch this video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) to learn about it. Then follow these steps.
+Are you new to Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false"::: [Watch this video](../business/microsoft-365-business-start.md) to learn about it. Then follow these steps.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Image showing quick employee setup steps.":::
 
