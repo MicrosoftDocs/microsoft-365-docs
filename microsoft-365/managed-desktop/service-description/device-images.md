@@ -26,7 +26,7 @@ When you order a new device from an [approved manufacturer](device-requirements.
 Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
 
 ### HP 
-When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model as shown in [Program devices](device-list.md#hp).
+When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site (filter the view to show Microsoft Managed Desktop devices).
 
 If you're ordering a device from HP that has been approved as an [exception](customizing.md) but isn't currently listed on the Device List page, be sure to request the SKU to be used for your model. We'll work with HP to get you this information by using your exception request. You can also contact HP directly for any questions about devices and device ordering instructions by using these addresses:
  

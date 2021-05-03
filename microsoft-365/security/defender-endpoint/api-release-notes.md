@@ -32,7 +32,11 @@ The following information lists the updates made to the Microsoft Defender for E
 > https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
-## Release notes - newest to oldest
+## Release notes - newest to oldest (dd.mm.yyyy)
+
+### 03.05.2021
+
+- Added new API: [Remediation activity methods and properties](get-remediation-methods-properties.md).
 
 ### 10.02.2021
 
