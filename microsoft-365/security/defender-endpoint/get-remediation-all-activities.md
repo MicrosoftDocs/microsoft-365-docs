@@ -1,7 +1,7 @@
 ---
 title: List all remediation activities
 description: Returns information about all remediation activities.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: apis, remediation, remediation api, get, remediation tasks, all remediation, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
