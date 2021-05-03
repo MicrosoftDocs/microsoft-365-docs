@@ -179,7 +179,7 @@ In addition, you can create a CNAME record to help customers find your website.
     
    - For **DNS type** enter: **CNAME (Alias)**
     
-   - For **Host name or Alias**, type the following: **www**
+   - For **Host name or Alias**, enter **www**.
     
    - For **Points to address**, type the fully qualified domain name (FQDN) for your website (for example, contoso.com). 
     
