@@ -39,7 +39,7 @@ For more information, see the [SharePoint Online documentation](/office365/servi
 
 ## Permissions
 
-Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visable within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
+Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
 Content deletion from your organization’s repository is not currently supported.
 
