@@ -98,7 +98,7 @@ While file storage and document management is a start, sharing with your team an
 
 As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site.
   
-View a video on groups with [Understand and manage groups](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
+View a video on groups with [Understand and manage groups](https://docs.microsoft.com/learn/m365/). 
   
 To add users to a Microsoft 365 group, see [Add users and assign licenses at the same time](../add-users/add-users.md).
   
