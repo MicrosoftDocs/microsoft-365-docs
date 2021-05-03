@@ -169,7 +169,7 @@ For example, here are some additional steps that might be required for email and
     
    - For **IP Address**, enter the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
     
-   This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
+   This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with the site where your website is hosted to make sure you can get a static IP address for your public website. 
     
 5. Select **Save**. 
     
