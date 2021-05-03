@@ -32,7 +32,7 @@ There are six specific network insights that may be shown for each office locati
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
-There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+There are two tenant level network insights that may be shown for the tenant. These also appear in the productivity score pages:
 
 - [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
 - [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
