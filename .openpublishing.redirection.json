@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/contact-support-for-business-products.md",
+      "redirect_url": "/microsoft-365/business-video/get-help-support",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/activity-reports/yammer-groups-activity-report.md",
       "redirect_url": "/microsoft-365/admin/activity-reports/yammer-groups-activity-report-ww",
       "redirect_document_id": true
@@ -3818,6 +3823,11 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-assignedipaddress-function.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-assignedipaddress-function",
+      "redirect_document_id": false
+    },
+	{
+      "source_path": "microsoft-365/security/defender-endpoint/mac-sysext-preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
       "redirect_document_id": false
     },
     {
