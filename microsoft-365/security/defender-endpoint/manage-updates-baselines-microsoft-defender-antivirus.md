@@ -75,7 +75,24 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, Microsoft 365 Defender).
-<br/><br/>
+<br/>
+<details>
+<summary> April-2021 (Platform: 4.18.2104.9| Engine: 1.1.18100.5)</summary>
+
+&ensp;Security intelligence update version: **1.337.2.0**  
+&ensp;Released: **April 1, 2021**  
+&ensp;Platform: **4.19.2104.9**  
+&ensp;Engine: **1.1.18100.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Additional behavior monitoring logic
+- Improved kernel mode keylogger detection
+
+### Known Issues
+No known issues  
+<br/>
+</details>
 
 <details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
@@ -119,7 +136,7 @@ No known issues
 &ensp;Released: **February 2, 2021**  
 &ensp;Platform: **4.18.2101.9**  
 &ensp;Engine: **1.1.17800.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
