@@ -534,7 +534,7 @@ Your DKE service is now registered. Continue by [creating labels using DKE](#cre
 
 ## Create sensitivity labels using DKE
 
-In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the KEY name you have provided within "TestKeys" section of the appsettings.json into the url. 
+In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you have provided within the "TestKeys" section of the appsettings.json in the URL. 
 
 For example: https://testingdke1.azurewebsites.net/**KEYNAME**
 
