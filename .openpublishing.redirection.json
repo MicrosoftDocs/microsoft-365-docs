@@ -1,6 +1,81 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-groups-activity-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-groups-activity-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-device-usage-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-device-usage-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-activity-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-activity-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/sharepoint-site-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/sharepoint-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/sharepoint-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/onedrive-for-business-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/onedrive-for-business-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/onedrive-for-business-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/office-365-groups.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/office-365-groups-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/microsoft365-apps-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft365-apps-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/microsoft-office-activations.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft-office-activations-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/forms-pro-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/forms-pro-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/forms-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/forms-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/email-apps-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/email-apps-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/email-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/email-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/active-users.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/active-users-ww",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/manage/manage-messages.md",
       "redirect_url": "/microsoft-365/admin/manage/message-center",
       "redirect_document_id": true
