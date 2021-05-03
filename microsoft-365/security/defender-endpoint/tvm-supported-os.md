@@ -36,18 +36,20 @@ Before you begin, ensure that you meet the following operating system or platfor
 >[!NOTE]
 >The supported systems and platforms for threat and vulnerability management may be different from the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) list.
 
-Operating system | Security assessment support
-:---|:---
-Windows 7 | Operating System (OS) vulnerabilities
-Windows 8.1 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment |
-Windows 10, versions 1607-1703 | Operating System (OS) vulnerabilities
-Windows 10, version 1709 or later |Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-Windows Server 2008 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-Windows Server 2012 R2 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-Windows Server 2016 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-Windows Server 2019 | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities<br/>Operating System (OS) configuration assessment<br/>Security controls configuration assessment<br/>Software product configuration assessment
-macOS 10.14 "Mojave" and above | Operating System (OS) vulnerabilities<br/>Software product vulnerabilities 
-Linux | Not supported (planned)
+Supported OS | Operating system vulnerabilities | Software product vulnerabilities | OS configuration assessment | Security controls configuration assessment | Software porduct configuration assessment
+:---|:---|:---|:---|:---|:---
+Windows 7 | Supported | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_
+Windows 8.1 | Supported | Supported | Supported | Supported| Supported |
+Windows 10, versions 1607-1703 | Supported  | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_
+Windows 10, version 1709 or later | Supported | Supported | Supported | Supported | Supported
+Windows Server 2008 R2 | Supported | Supported | Supported | Supported | Supported
+Windows Server 2012 R2 | Supported | Supported | Supported | Supported | Supported
+Windows Server 2016 | Supported | Supported | Supported | Supported | Supported
+Windows Server 2019 | Supported | Supported | Supported | Supported | Supported
+macOS 10.14 "Mojave" and above | Supported | Supported |_Not supported_ | _Not supported_ | _Not supported_
+Red Hat Enterprise Linux 7.2 or higher | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_ | _Not supported_
+CentOS 7.2 or higher | Supported | Supported | Supported | Supported | Supported
+Ubuntu 16.04 LTS or higher LTS | Supported | Supported | Supported | Supported | Supported
 
 ## Related articles
 
