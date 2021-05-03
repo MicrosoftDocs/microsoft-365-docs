@@ -107,7 +107,7 @@ If employees have questions, refer them to the following resources:
 
 - Signing in to Office
 
-## Frequently-viewed content
+## Related content
 
 [Microsoft 365 subscriptions](https://www.microsoft.com/home-use-program/). (link page)
 
