@@ -48,7 +48,7 @@ Basic auditing provides with you with the ability to log and search for audited 
 
 - **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 90 days and lets them import their auditing data to a SIEM solution. For information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- **90-day audit log retention**. Audit records are retained for 90 days, which means you can search for activities that occurred within the past three months.
+- **90-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Basic auditing, records are retained for 90 days, which means you can search for activities that occurred within the past three months.
 
 ### Advanced Audit
 
