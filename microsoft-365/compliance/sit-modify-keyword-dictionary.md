@@ -36,7 +36,7 @@ Keyword dictionaries can be used as `Primary elements` or `Supporting elements` 
 
 4. Choose `Done`.
 
-## Modify a Keyword dictionary using PowerShell 
+## Modify a keyword dictionary using PowerShell 
 
 For example, we'll modify some terms in PowerShell, save the terms locally where you can modify them in an editor, and then update the previous terms in place. 
 
@@ -127,4 +127,6 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
 
 Now the dictionary has been updated in place. The  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
 
-
+See Also
+- [Create a keyword dictionary](create-a-keyword-dictionary.md)
+- [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
