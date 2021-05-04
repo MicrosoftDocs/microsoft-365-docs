@@ -210,7 +210,7 @@ To offboard the Windows server, you can use either of the following methods:
 1. Create a folder named MMA.
 1. Download the following and place in the MMA folder:
 
-    **Update for customer experience and diagnostic telemetry (Windows Server 2008 R2 and Windows Server 2012 R2)**
+    **Update for customer experience and diagnostic telemetry (Windows Server 2008 R2)**
 
     [For Windows 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
 
