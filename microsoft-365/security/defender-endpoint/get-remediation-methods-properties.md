@@ -1,7 +1,7 @@
 ---
 title: Remediation activity methods and properties
 description: The API response contains threat & vulnerability management remediation activities created in your tenant. You can request all the remediation activities, only one remediation activity, or information about exposed devices for a selected remediation task.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
