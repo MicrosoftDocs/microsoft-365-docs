@@ -1,7 +1,7 @@
 ---
 title: Incidents in Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 security center.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -111,7 +111,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
 1. For each incident, begin an [attack and alert analysis](investigate-incidents.md):
-
+ 
    a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
 
    b. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
@@ -122,7 +122,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
    
    e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
-2. After or during your analysis, address containment to reduce any additional impact of the attack and eradication of the security threat.
+2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
 
 3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
 
@@ -132,6 +132,8 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
    - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
    - Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.
    - Determine whether changes in your security configuration are needed and implement them.
+
+If you are new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
 
 ## Example security operations for Microsoft 365 Defender
 

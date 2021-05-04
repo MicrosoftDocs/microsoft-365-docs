@@ -62,17 +62,17 @@ The following table identifies when the new alert policies will begin triggering
 |:------------|:-----|
 | **Email messages containing malicious URL removed after delivery** (new) | Alerts will start triggering on April 11, 2021|
 | **Email messages containing malicious file removed after delivery** (new) | Alerts will start triggering on April 11, 2021 |
-| **Emails messages from a campaign were delivered and later removed** (new) | Alerts will start triggering on April 30, 2021|
-| **Malicious emails were delivered and later removed** (new) | Alerts will start triggering on April 30, 2021|
-| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy will be removed on April 30, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
-| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy will be removed on April 30, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
+| **Emails messages from a campaign were delivered and later removed** (new) | Alerts will start triggering on May 14, 2021|
+| **Malicious emails were delivered and later removed** (new) | Alerts will start triggering on May 14, 2021|
+| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy will be removed on May 14, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
+| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy will be removed on May 14, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
 |||
 
-The alert severity changes will be rolled out to all organizations by April 30, 2021.
+The alert severity changes will be rolled out to all organizations by May 14, 2021.
 
 ## How this will affect your organization
 
-The new alerts will begin firing, and triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you will see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and April 30, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation and correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
+The new alerts will begin firing, and triggering the AIR investigations in your organization on the dates listed above. To reduce the impact on security organizations that have operationalized the two alerts that are to be removed, you will see alerts triggered by the existing alert policies *and* the alerts triggered by the new alert policies between April 5, 2021 and May 14, 2021. This is to provide security teams with time to handle the required changes. To help security teams with the increased alert volume during this short duration, both the existing alerts and the new alerts will be correlated into the same AIR investigation and correlated into a same Incident. More specifically, this includes the following behavior for alerts, AIR investigations, and Incidents:
 
 - **Alerts**: By design, you will see the following alert pairs across the existing and new alerts:
 
@@ -104,11 +104,11 @@ How your organization utilizes these alerts will determine what you need to do t
 
   - **Email messages containing malware removed after delivery**
 
-- Do nothing. We'll disable the existing alert policies on April 30, 2021.
+- Do nothing. We'll disable the existing alert policies on May 14, 2021.
 
 **If you have operationalized these alerts:**
 
-- Start consuming the new alerts as a part of your workflows, in anticipation of the existing alert policy removal on April 30, 2021. If you have custom logic in your ticketing system, a security mailbox where you receive alert email notifications, or a SIEM solution that depends on the alert name or alert policy Id (CorrelationId), you will need to modify the logic to accommodate the change.
+- Start consuming the new alerts as a part of your workflows, in anticipation of the existing alert policy removal on May 14, 2021. If you have custom logic in your ticketing system, a security mailbox where you receive alert email notifications, or a SIEM solution that depends on the alert name or alert policy Id (CorrelationId), you will need to modify the logic to accommodate the change.
 
   > [!NOTE]
   > The information in the alerts, investigations, and incidents has not changed. In fact, this information has been enhanced with additional detail about the threats associated with them.
@@ -119,4 +119,4 @@ How your organization utilizes these alerts will determine what you need to do t
 
   - **Email messages containing malware removed after delivery**
 
-  Alternatively, you can leave these alert policies enabled until we delete them on April 30, 2021.
+  Alternatively, you can leave these alert policies enabled until we delete them on May 14, 2021.
