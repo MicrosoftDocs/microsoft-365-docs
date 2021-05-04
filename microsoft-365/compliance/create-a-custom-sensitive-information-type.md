@@ -121,10 +121,30 @@ You can also create custom sensitive information types by using PowerShell and E
 
 ### Date validator
 
+If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format. 
+
+1. Define the primary element with this regular expression:
+
+`\d{9}`
+
+2. Then add the date validator.
+3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
+
+![screenshot of configured date validator](../media/date-validator.png)
 
 
 ### Checksum validator
 
+If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 8 calculation. To validate the checksum digit:
+
+1. Define the primary element with this regular expression:
+
+`\d{8}`
+
+2. Then add the checksum validator.
+3. Add the weight values separated by commas, the position of the check digit and the Mod value.
+
+![screenshot of configured checksum validator](../media/checksum-validator.png)
 
 
 ## More information on additional checks
