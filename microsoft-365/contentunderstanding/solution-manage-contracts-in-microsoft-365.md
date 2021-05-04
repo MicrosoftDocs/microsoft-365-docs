@@ -21,7 +21,7 @@ This article describes how to create a contracts management solution for your or
 
 The first step in planning your contract management system is to understand the problem you are trying to solve. For this solution, four key issues need to be addressed:
 
-- **Identify contracts**. Your organization works with a number of documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. We need a way to identify all customer contracts from all other documents, and then classifying them as such.
+- **Identify contracts**. Your organization works with a number of documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. You need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
 - **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts has been either approved or rejected, and whether payment has been processed. 
 
@@ -63,7 +63,7 @@ This contract management solution guidance includes four components of Microsoft
 
 ## Create the solution
 
-The next sections will go into detail about how we configured our example of our contracts management solution. It is divided into three components:
+The next sections will go into detail about how to configure your contracts management solution. It is divided into three steps:
 
 - [Step 1. Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
 - [Step 2. Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
