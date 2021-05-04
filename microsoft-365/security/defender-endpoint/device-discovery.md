@@ -92,7 +92,8 @@ You can now use a new filter in the device inventory list called Onboarding stat
 
 ![Image of device inventory dashboard](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices. 
 
 ## Vulnerability assessment on discovered devices
 Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal. 
