@@ -15,17 +15,17 @@ description: "Learn how to use Microsoft Teams to create your contract managemen
 
 # Step 2. Use Microsoft Teams to create your contract management channel
 
-Another key business issue we have in setting up a contracts management solution is the need for a central location in which stakeholders review and manage contracts. For this, we can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams channel and use the features in Teams to:
+When your organization sets up a contracts management solution, you need a central location in which stakeholders can review and manage contracts. For this, you can use [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) to set up a Teams channel and use the features in Teams to:
 
-- **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams we can create a **Contracts** tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. We can also configure the view so that each "card" lists the important data we care about (client, contractor, and fee amount).
+- **Create a location for stakeholders to easily see all contracts that require action.** For example, in Teams you can create a **Contracts** tab in the Contract Management channel in which members can see a useful tile view of all contracts that need approval. You can also configure the view so that each "card" lists the important data you care about (such as *Client*, *Contractor*, and *Fee amount*).
 
-     ![Contracts tab.](../media/content-understanding/tile-view.png)</br> 
+     ![Contracts tab.](../media/content-understanding/tile-view.png)
 
 - **Have a location for members to interact with each other and see important events.** For example, in Teams, the **Posts** tab can be used to have conversations, get updates, and see actions (such as a member rejecting a contract). When something has happened (such as a new contract submitted for approval), the **Posts** tab can be used not only to announce it, but also to keep a record of it. And if members subscribe to notifications, they will get notified whenever there is an update. 
 
      ![Posts tab.](../media/content-understanding/posts.png)</br> 
 
-- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, we can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. We can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
+- **Have a location for members to see approved contracts to know when they can be submitted for payment.** In Teams, you can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. You can easily extend this solution to instead write this information directly to a third-party financial application (for example, Dynamics CRM).
 
 ## Attach your SharePoint document library to the Contracts tab 
 
@@ -33,26 +33,26 @@ After you create a **Contracts** tab in your Contracts Management channel, you n
 
 After you attach the SharePoint document library, you will be able to view any classified contracts through a default list view.
 
-   ![List view.](../media/content-understanding/list-view.png)</br> 
+   ![List view.](../media/content-understanding/list-view.png) 
 
 ## Customize your Contracts tab tile view
 
 > [!NOTE]
-> This section references code examples that are contained in the <b>ContractCard.json</b> file this is included in the <b>solutionfiles</b> zip file.
+> This section references code examples that are contained in the **ContractCard.json-TBD** file that is included in the **solutionfiles-TBD** zip file.
 
-While Teams allows you to view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library.  We also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all approved contracts will have a blue header bar.
+While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these were extracted from each contract through your SharePoint Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see this. For example, all approved contracts will have a blue header bar.
 
-   ![List view.](../media/content-understanding/tile.png)</br> 
+   ![List view.](../media/content-understanding/tile.png)
 
-The custom tile view we used required us to make changes to the JSON used to format the current tile view. You can reference the JSON we used to create our card view by downloading the [contract card json file](Placeholder-TBD). In the following sections, we will reference specific sections of the code for features you see in the contract cards.
+The custom tile view you use requires you to make changes to the JSON file used to format the current tile view. You can reference the JSON file used to create the card view by downloading the [contract card json file-TBD](Placeholder-TBD). In the following sections, you'll see specific sections of the code for features that are in the contract cards.
 
-If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu and select <b>Format current view</b>.
+If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu, and then select **Format current view**.
 
-   ![json format.](../media/content-understanding/jason-format.png)</br> 
+   ![json format.](../media/content-understanding/jason-format.png) 
 
 ## Card size and shape
 
-In the <b>ContractCardjson</b> file that you downloaded in the reference zip file, look at the following section to see how we formatted the size and shape of the card. </br>
+In the **ContractCard.json** file that you downloaded in the reference zip file, look at the following section to see the code for how the size and shape of the card is formatted.
 
 ```JSON
                   {
@@ -78,7 +78,7 @@ In the <b>ContractCardjson</b> file that you downloaded in the reference zip fil
 
 ## Contract status
 
-The following code lets us define the status of each title card. Note that each status value (New, In review, Approved, and Rejected) will display a different color code for each. In the contract card JSON file that you downloaded, look at the section that defines the status.
+The following code lets you define the status of each title card. Note that each status value (*New*, *In review*, *Approved*, and *Rejected*) will display a different color code for each. In the **ContractCard.json** file that you downloaded, look at the section that defines the status.
 
 ```JSON
           {
@@ -101,9 +101,9 @@ The following code lets us define the status of each title card. Note that each 
 
 ## Extracted fields
 
-Each contract card will display three fields that were extracted for each contract (Client, Contractor, and Fee Amount). Additionally, we also want to display the time/date that the file was classified by the SharePoint Syntex model we used to identify it. 
+Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the SharePoint Syntex model used to identify it. 
 
-In the <b>ContractCardjson</b> file that you downloaded, the following sections define each of these.
+In the **ContractCard.json** file that you downloaded, the following sections define each of these.
 
 ### Client
 
@@ -182,7 +182,7 @@ This section defines how the "Fee Amount" will display on the card, and uses the
 
 ### Classification date
 
-This section defines how  "Classification" will display on the card, and uses the value for the specific contract.
+This section defines how "Classification" will display on the card, and uses the value for the specific contract.
 
 ```JSON
                       {
