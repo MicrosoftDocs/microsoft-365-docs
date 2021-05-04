@@ -17,7 +17,7 @@ description: "Learn how to use Power Automate to create your flow to process you
 
 Now that you've created your Contract Management channel and have attached your SharePoint document library, the next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
-In our contracts management solution, we want to create a Power Automate flow to do the following:
+For your contracts management solution, you want to create a Power Automate flow to do the following:
 
 -  After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
@@ -38,7 +38,7 @@ After checking out the file, change the status value to "In review."
 
 ![In review status.](../media/content-understanding/in-review.png)
 
-The next step is to create an adaptive card stating that the contract in waiting for review and posting it to the Contract Management channel.
+The next step is to create an adaptive card stating that the contract is waiting for review and posting it to the Contract Management channel.
 
 ![Contract review post.](../media/content-understanding/contract-approval-post.png)
 
@@ -143,7 +143,7 @@ When a contract has been approved, the following things occur:
 
    ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)
 
-- In the flow, we created the following item to move approved contracts to the **For Payout** tab.
+- In the flow, you create the following item to move approved contracts to the **For Payout** tab.
 
    ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)
 
@@ -242,11 +242,11 @@ When a contract has been rejected, the following things occur:
 
    ![Card status rejected.](../media/content-understanding/rejected.png)
 
-- In our flow, we check out the contract file, change the status to **Rejected**, and check the file back in again.
+- In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.
 
    ![Flow status rejected.](../media/content-understanding/reject-flow.png)
 
-- In our flow, we create an adaptive card stating that the contract has been rejected.
+- In your flow, you create an adaptive card stating that the contract has been rejected.
 
    ![Flow status rejected.](../media/content-understanding/reject-flow-item.png)
 
