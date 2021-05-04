@@ -116,6 +116,8 @@
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
+        - name: Modify a keyword dictionary
+          href: sit-modify-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
     - name: Trainable classifiers
