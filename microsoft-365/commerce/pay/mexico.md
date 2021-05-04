@@ -28,7 +28,7 @@ To pay by deposit or electronic transfer:
 **SWIFT Code:** BNMXMM  
 **CLABE** 002180002337160225  
 **Account Number:** 0233716022  
-**Account Name:** Microsoft Payments Inc.
+**Account Name:** Microsoft Payments Inc.  
 **Currency:** Mexican pesos
 
 ## Important Information
