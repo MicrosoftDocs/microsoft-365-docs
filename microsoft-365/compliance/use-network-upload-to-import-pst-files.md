@@ -331,7 +331,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Importing data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
 
-  - Using [data loss prevention policies](data-loss-prevention-policies.md) to prevent sensitive data from leaking outside your organization.
+  - Using [data loss prevention policies](dlp-learn-about-dlp.md) to prevent sensitive data from leaking outside your organization.
   
 - Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
 
