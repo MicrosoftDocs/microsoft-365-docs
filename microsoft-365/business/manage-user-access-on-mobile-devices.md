@@ -38,10 +38,9 @@ Policy settings that control how users access Office files from their mobile dev
 ## Settings that control how users access Office files on mobile devices
 
 The following settings are available to manage how users access Office work files:
-  
-|||
-|:-----|:-----|
+
 |Setting  <br/> |Description  <br/> |
+|:-----|:-----|
 |Require a PIN or fingerprint to access Office apps  <br/> |If this setting is **On**, users must provide another form of authentication, in addition to their username and password, before they can use Office apps on their mobile device.  <br/> |
 |Reset PIN when login fails this many times  <br/> |To prevent an unauthorized user from randomly guessing a PIN, the PIN will reset after the number of wrong entries that you specify.  <br/> |
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they're prompted to sign in again.  <br/> |
