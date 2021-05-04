@@ -53,7 +53,6 @@ Both OneDrive and team sites provide anywhere access for you and your employees.
   
 Here are recommendations for what to store in each location when you use OneDrive and team sites together:<br/>
 
-
   
 |Storage location|What's it for|What to store here|
 |:-----|:-----|:-----|
