@@ -36,18 +36,18 @@ Before you begin, ensure that you meet the following operating system or platfor
 >[!NOTE]
 >The supported systems and platforms for threat and vulnerability management may be different from the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) list.
 
-Supported operating systems | Operating system vulnerabilities | Software product vulnerabilities | Operating system configuration assessment | Security controls configuration assessment | Software porduct configuration assessment
+Supported operating systems | Operating system vulnerabilities | Software product vulnerabilities | Operating system configuration assessment | Security controls configuration assessment | Software product configuration assessment
 :---|:---|:---|:---|:---|:---
-Windows 7 | Supported | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_
-Windows 8.1 | Supported | Supported | Supported | Supported| Supported |
-Windows 10, versions 1607-1703 | Supported  | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_
+Windows 7 | Supported | _Not supported_ | _Not supported_ | _Not supported_ | _Not supported_
+Windows 8.1 | Supported | Supported | Supported | Supported| Supported
+Windows 10, versions 1607-1703 | Supported  | _Not supported_ | _Not supported_ | _Not supported_ | _Not supported_
 Windows 10, version 1709 or later | Supported | Supported | Supported | Supported | Supported
 Windows Server 2008 R2 | Supported | Supported | Supported | Supported | Supported
 Windows Server 2012 R2 | Supported | Supported | Supported | Supported | Supported
 Windows Server 2016 | Supported | Supported | Supported | Supported | Supported
 Windows Server 2019 | Supported | Supported | Supported | Supported | Supported
-macOS 10.14 "Mojave" and above | Supported | Supported |_Not supported_ | _Not supported_ | _Not supported_
-Red Hat Enterprise Linux 7.2 or higher | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_ | _Not supported_
+macOS 10.14 "Mojave" and above | Supported | Supported | _Not supported_ | _Not supported_ | _Not supported_
+Red Hat Enterprise Linux 7.2 or higher | _Not supported_ | _Not supported_ | _Not supported_ | _Not supported_ | _Not supported_
 CentOS 7.2 or higher | Supported | Supported | Supported | Supported | Supported
 Ubuntu 16.04 LTS or higher LTS | Supported | Supported | Supported | Supported | Supported
 
