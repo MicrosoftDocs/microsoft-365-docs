@@ -8,7 +8,7 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 ms.author: jasongroce
-ms.topic: article 
+ms.topic: article
 manager: jasonh
 ms.prod: microsoft-365-business
 localization_priority: Normal
