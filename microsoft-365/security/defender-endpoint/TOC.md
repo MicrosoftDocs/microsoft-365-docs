@@ -240,7 +240,7 @@
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Attack surface reduction configuration settings](configure-attack-surface-reduction.md)
-#### [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
+#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
 
 #### [Attack surface reduction controls]()
 ##### [Attack surface reduction rules](attack-surface-reduction.md)

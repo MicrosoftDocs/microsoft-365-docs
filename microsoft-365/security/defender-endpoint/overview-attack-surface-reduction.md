@@ -47,4 +47,4 @@ Article | Description
 [Web protection](./web-protection-overview.md) | Secure your devices against web threats and help you regulate unwanted content.
 [Controlled folder access](./controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus)
 [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Prevent unauthorized traffic from flowing to or from your organization's devices with two-way network traffic filtering.
-[Attack surface reduction FAQ](./attack-surface-reduction-faq.md) | Frequently asked questions about Attack surface reduction rules, licensing, and more.
+[Attack surface reduction FAQ](./attack-surface-reduction-faq.yml) | Frequently asked questions about Attack surface reduction rules, licensing, and more.
