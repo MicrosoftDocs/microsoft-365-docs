@@ -75,8 +75,8 @@ To create a mail transport rule:
 
 6. Select **Save**.
 
-|Setting|Warn users before opening attachments of Office files||
-|---|---|---|
+|Setting|Warn users before opening attachments of Office files|
+|---|---|
 |Name|Anti-ransomware rule: warn users|
 |Apply this rule if . . .|Any attachment . . . file extension matches . . .|
 |Specify words or phrases|Add these file types:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|

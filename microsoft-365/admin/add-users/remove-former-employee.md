@@ -93,9 +93,9 @@ A question we often get is, "What should I do to protect data when an employee l
   
 Here's a quick overview. Each step is explained in detail in this article.
   
-|||
+|Step|Why do this|
 |:-----|:-----|
-|**Step** <br/> |**Why do this** <br/> |
+ |
 |1. [Save the contents of a former employee's mailbox](#save-the-contents-of-a-former-employees-mailbox) <br/> |This is useful for the person who is going to take over the employee's work, or if there is litigation.  <br/> |
 |2. [Forward a former employee's email to another employee or convert to a shared mailbox](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
 |3. [Wipe and block a former employee's mobile device](#wipe-and-block-a-former-employees-mobile-device) <br/> |Removes your business data from the phone or tablet.  <br/> |
@@ -345,18 +345,16 @@ If you're using Azure Active Directory, see the [Remove-MsolUser](https://docs.m
 
 Here's information about how to get an employee out of email (Exchange).
   
-|||
-|:-----|:-----|
-|**What you can do** <br/> |**How you do it** <br/> |
+|What you can do|How you do it|
+|:-----|:---|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session  <br/> |Reset password  <br/> |
 |Terminate a session and block access to future sessions (for all protocols)  <br/> |Disable the account. For example, (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
 |Terminate the session for a particular protocol (such as ActiveSync)  <br/> |Disable the protocol. For example, (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
 
 The above operations can be done in three places:
   
-|||
+|If you terminate the session here|How long it takes|
 |:-----|:-----|
-|**If you terminate the session here** <br/> |**How long it takes** <br/> |
 |In the Exchange admin center or using PowerShell  <br/> |Expected delay is within 30 min  <br/> |
 |In the Azure Active Directory admin center  <br/> |Expected delay is 60 min  <br/> |
 |In an on-premises environment  <br/> |Expected delay is 3 hours or more  <br/> |

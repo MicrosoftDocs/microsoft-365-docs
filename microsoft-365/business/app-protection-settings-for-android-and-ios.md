@@ -76,10 +76,10 @@ The following tables give detailed information about settings available to prote
 ### Settings that protect work files
 
 The following settings are available to protect work files if a user's device is lost or stolen:
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |Description  <br/> |
+|:-----|:-----|
 |Delete work files from an inactive device after this many days  <br/> |If a device isn't used for the number of days that you specify here, any work files stored on the device will be deleted automatically.  <br/> |
 |Force users to save all work files to OneDrive for Business  <br/> |If this setting is **On**, the only available save location for work files is OneDrive for Business.  <br/> |
 |Encrypt work files  <br/> |Keep this setting **On** so that work files are protected by encryption. Even if the device is lost or stolen, no one can read your company data.  <br/> |
@@ -87,10 +87,10 @@ The following settings are available to protect work files if a user's device is
 ### Settings that control how users access Office files on mobile devices
 
 The following settings are available to manage how users access Office work files:
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |Description  <br/> |
+|:-----|:-----|
 |Require a PIN or fingerprint to access Office apps  <br/> |If this setting is **On** users must provide another form of authentication, in addition to their username and password, before they can use Office apps on their mobile devices.<br/> |
 |Reset PIN when login fails this many times  <br/> |To prevent an unauthorized user from randomly guessing a PIN, the PIN will reset after the number of wrong entries that you specify.  <br/> |
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they're prompted to sign in again.  <br/> |
