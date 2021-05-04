@@ -51,7 +51,7 @@ Permission type | Permission | Permission display name
 Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-**Properties** details
+## Properties
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
@@ -86,13 +86,13 @@ vendorId | String | Related vendor name | Microsoft
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 
-**Response** example
+### Response example
 
 ```json
 {
