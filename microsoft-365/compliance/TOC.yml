@@ -542,14 +542,14 @@
           items: 
           - name: Content search limits
             href: limits-for-content-search.md
+          - name: Differences between estimated and actual search results
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md
           - name: Partially indexed items
             href: partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
             href: investigating-partially-indexed-items-in-ediscovery.md
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
-          - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
           - name: Content stored in mailboxes for eDiscovery
             href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
@@ -584,16 +584,18 @@
             href: keyword-queries-and-search-conditions.md
           - name: Content stored in mailboxes for eDiscovery
             href: what-is-stored-in-exo-mailbox.md
-          - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
+          - name: Configure search permissions filtering
+            href: permissions-filtering-for-content-search.md
+          - name: Differences between estimated and actual search results
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Export a search report
+            href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
           - name: Create a report on eDiscovery holds
             href: create-a-report-on-holds-in-ediscovery-cases.md
-          - name: Export a search report
-            href: export-a-content-search-report.md
           - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Search and purge spilled data
