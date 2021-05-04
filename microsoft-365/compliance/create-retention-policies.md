@@ -67,7 +67,7 @@ When you have more than one retention policy, and when you also use retention la
 
 3. For the **Choose locations to apply the policy** page, select one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
 
-   For **Teams channel messages**, message from standard channels are included, but not [private channels](/microsoftteams/private-channels). Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams. For more information, See [Teams Retention policies](retention-policies-teams.md)
+   For **Teams channel messages**, message from standard channels are included, but not [private channels](/microsoftteams/private-channels). Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams. For more information, see [Teams Retention policies](retention-policies-teams.md).
 
    By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions).
 
