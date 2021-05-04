@@ -116,7 +116,7 @@
         - name: Remove a former employee
           items:
            - name: Overview
-             href: add-users/remove-former-employee-overview.md
+             href: add-users/remove-former-employee.md
            - name: Step 1. Prevent an employee from logging in and block access to Microsoft 365 services
              href: add-users/remove-former-employee-step-1.md
            - name: Step 2. Save the contents of a former employee's mailbox
