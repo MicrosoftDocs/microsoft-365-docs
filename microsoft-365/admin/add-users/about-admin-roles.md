@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin can open support tickets through the admin center."
+description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin can open support tickets through admin center."
 ---
 
 # About admin roles

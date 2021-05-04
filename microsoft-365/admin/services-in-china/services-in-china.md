@@ -162,8 +162,8 @@ To learn more about configuring a hybrid deployment with Office 365 tenants host
 > [!IMPORTANT]
 >  The [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Office 365, or to migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend using the Deployment Assistant to configure a hybrid deployment. >  For organizations not wishing to upgrade to or add Exchange 2013 CU5 servers, Exchange 2013 SP1 organizations can configure shared calendar free/busy sharing between their on-premises and Exchange Online organizations. To configure this hybrid deployment feature, see [Configuring Exchange hybrid deployment features with Office 365 operated by 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
-|||  
-|---|---|
+|Function|Availability|
+|:-----|:-----|
 |Coexistence and Free/Busy Sharing|Sharing calendar free/busy information between two or more on-premises Exchange organizations or sharing between two 21Vianet Office 365 tenants isn't supported. This feature is coming soon! | 
 |Calendar sharing|Exchange 2013 SP1 and greater supports manually configuring Internet calendar sharing with other on-premises Exchange or Exchange Online organizations. For more details about configuring this feature manually, see [Enable Internet Calendar Publishing](/exchange/enable-internet-calendar-publishing-exchange-2013-help). | 
 Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This setting/feature is enabled by default. Administrators should turn this feature off to help prevent users from sharing Exchange data outside of your organization. |
