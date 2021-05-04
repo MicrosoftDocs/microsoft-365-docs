@@ -2,7 +2,7 @@
 title: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
 f1.keywords: 
   - NOCSH
-keywords: integrate, Microsoft Defender, ATP
+keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

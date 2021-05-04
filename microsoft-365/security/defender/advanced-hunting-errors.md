@@ -1,7 +1,7 @@
 ---
 title: Handle errors in advanced hunting for Microsoft 365 Defender
 description: Understand errors displayed when using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, timeout, resources, errors, unknown error, limits, quota, parameter, allocation
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, timeout, resources, errors, unknown error, limits, quota, parameter, allocation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -27,6 +27,11 @@ ms.technology: m365d
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
+**Applies to:**
+- Microsoft 365 Defender
+- Microsoft Defender for Endpoint
+
+
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined quotas and usage parameters](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors.
 
 | Error type | Cause | Resolution | Error message examples |
@@ -38,6 +43,8 @@ Advanced hunting displays errors to notify for syntax mistakes and whenever quer
 | Result size limit exceeded  | The aggregate size of the result set for the query has exceeded the maximum size. This error can occur if the result set is so large that truncation at the 10,000-record limit can't reduce it to an acceptable size. Results that have multiple columns with sizable content are more likely to be impacted by this error. | [Optimize the query](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Excessive resource consumption | The query has consumed excessive amounts of resources and has been stopped from completing. In some cases, advanced hunting identifies the specific operator that wasn't optimized. | [Optimize the query](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | Unknown errors | The query failed because of an unknown reason. | Try running the query again. Contact Microsoft through the portal if queries continue to return unknown errors. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## Related topics
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)

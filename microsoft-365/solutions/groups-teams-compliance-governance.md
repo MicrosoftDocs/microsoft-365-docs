@@ -33,7 +33,7 @@ The following table provides a quick reference for the compliance controls avail
 ||Automatically classify sensitive content|[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)|
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
-||Prevent the loss of sensitive information|[Overview of data loss prevention](../compliance/data-loss-prevention-policies.md)|
+||Prevent the loss of sensitive information|[Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)|
 ||Protect sensitive information in chat.|[Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
@@ -55,7 +55,7 @@ User chats are retained indefinitely even if a user account is deleted. If you d
 
 - [Retention policies in Microsoft Teams](/microsoftteams/retention-policies)
 
-A single retention policy can be set to apply to Microsoft 365 Groups, Teams chat, and Teams channel messages. 
+A single retention policy can be set to apply to Teams chat and Teams channel messages. 
 
 Additional resources:
 
@@ -88,7 +88,7 @@ Additional resources:
 
 DLP policies can prevent the accidental sharing of sensitive information across SharePoint, Exchange, and Teams. You can create policies that specify actions to take (such as blocking access) based on a set of rules.
 
-- [Overview of data loss prevention](../compliance/data-loss-prevention-policies.md)
+- [Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)
 
 DLP in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
 
