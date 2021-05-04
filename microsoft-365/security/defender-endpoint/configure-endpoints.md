@@ -32,14 +32,16 @@ ms.technology: mde
 
 Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
-The following deployment tools and methods are supported:
 
-- Group Policy
-- Microsoft Endpoint Configuration Manager
-- Mobile Device Management (including Microsoft Intune)
-- Local script
+Windows device | Onboarding tool or method
+:---|:---
+Windows 7 SP1 <br> Windows 7 SP1 Pro <br> Windows 8.1 Pro <br> Windows 8.1 Enterprise| System Center Endpoint Protection and Microsoft Monitoring Agent (MMA)
+Windows 10 | a
 
-## In this section
+
+
+
+
 Topic | Description
 :---|:---
 [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on devices.
