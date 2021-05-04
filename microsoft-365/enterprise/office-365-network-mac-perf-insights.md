@@ -62,7 +62,9 @@ For more information about how to resolve this issue, see [Egress network connec
 
 ## Network intermediary device
 
-This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md). 
+
+One network intermediary insight we show is SSL break and inspection when critical Office 365 network endpoints for Exchange, SharePoint and Teams are intercepted and decrypted by network intermediary devices.
 
 ### What does this mean?
 
