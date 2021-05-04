@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: View and investigate malware phishing attempts.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -40,7 +40,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Em
 1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.) 
 If you're in the converged Microsoft 365 security center (https://security.microsoft.com/) scroll to **Email & collaboration** > **Explorer**.
 
-From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer?view=o365-21vianet&branch=pr-en-us-8094).
+From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
 2. In the **View** menu, choose **Email** \> **Malware**.
 

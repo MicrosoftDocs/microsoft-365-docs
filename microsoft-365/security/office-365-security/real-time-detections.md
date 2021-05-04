@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
