@@ -54,7 +54,7 @@ Distribution groups are best for situations where you need to broadcast informat
 
 Distribution groups can be [upgraded to Microsoft 365 groups](../manage/upgrade-distribution-lists.md).
 
-Distriburion groups can be added to a team in Microsoft Teams.
+Distribution groups can be added to a team in Microsoft Teams.
 
 ## Security groups
 

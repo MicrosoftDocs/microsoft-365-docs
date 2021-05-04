@@ -69,10 +69,10 @@ This topic describes how to install, configure, update, and use Defender for End
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
         app to enrolled user groups in your organization.
         
-###Network Requirements
+### Network Requirements
 
-- For Microsoft Defender for Endpoint on Android to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-- 
+- For Microsoft Defender for Endpoint on Android to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+
 ### System Requirements
 
 -   Android devices running Android 6.0 and above.

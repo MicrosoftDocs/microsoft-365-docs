@@ -24,7 +24,7 @@
 |POWER BI|Planned|Planned|N/A|Planned|Planned|
 |POWERPOINT|✔|Planned|Planned|Planned|Planned|
 |PROJECT|N/A|N/A|N/A|Planned|N/A|
-|PUBLISHER|N/A|N/A|N/A|Planned|N/A|
+|PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT ADMIN|N/A|N/A|N/A|Planned|N/A|
 |SHAREPOINT|Planned|Planned|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|Planned|
