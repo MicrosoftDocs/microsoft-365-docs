@@ -7,13 +7,13 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 05/03/2021
+ms.date: 05/04/2021
 
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Threat Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
