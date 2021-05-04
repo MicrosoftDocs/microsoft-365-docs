@@ -1,7 +1,7 @@
 ---
 title: List exposed devices of one remediation activity
 description: Returns information about exposed devices for the specified remediation task.
-keywords: apis, remediation, remediation api, get, remediation tasks, 
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -43,6 +43,15 @@ Returns information about exposed devices for the specified remediation task.
 ## List exposed devices associated with a remediation task (id)
 
 **URL:** GET: /api/remediationTasks/\{id\}/machineReferences
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+:---|:---|:---
+Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 **Properties** details
 
