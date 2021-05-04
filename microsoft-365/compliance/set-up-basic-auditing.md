@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365solution-auditing
+- m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
 search.appverid: 

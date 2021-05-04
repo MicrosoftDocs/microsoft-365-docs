@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365solution-auditing
+- m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
 search.appverid: 
@@ -23,25 +23,9 @@ description: "This article describes how to set up Advanced Audit so you can per
 
 # Set up Advanced Audit in Microsoft 365
 
-
-If your organization has a subscription that supports Advanced Audit, perform the follow steps to set up and use the additional capabilities in Advanced Audit.
+If your organization has a subscription and end user licensing that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
 
 ![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
-
-1. Set up Advanced Audit for users. This step consists of the following tasks:
-
-   - Verifying that users are assigned the appropriate license or add-on license for Advanced Audit.
-  
-   - Turning on the Advanced Audit app/service plan must be for those users.
-  
-   - Enabling the auditing of crucial events and then turning on the Advanced Auditing app/service plan for those users.
-
-2. Enable crucial events to be logged when users perform searches in Exchange Online and SharePoint Online.
-
-3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
-
-4. Search for crucial events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
-
 
 ## Step1: Set up Advanced Audit for users
 
@@ -81,9 +65,8 @@ If the command to enable the auditing of search queries was previously run in a 
 
 ## Step 3: Set up audit retention policies
 
-In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
+In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
 ## Step 4: Search for crucial events
 
 Now that you have Advanced Audit set up for your organization, you can search for crucial events and other activities when conducting forensic investigations. After completing Step 1 and Step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations. For more information about conducting a forensics investigation of compromised user accounts by using the MailItemsAccessed crucial event, see [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
-
