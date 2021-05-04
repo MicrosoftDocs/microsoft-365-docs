@@ -142,7 +142,7 @@ If you need to run a checksum on a digit in a regular expression, you can use th
 `\d{8}`
 
 2. Then add the checksum validator.
-3. Add the weight values separated by commas, the position of the check digit and the Mod value.
+3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
 
 ![screenshot of configured checksum validator](../media/checksum-validator.png)
 
