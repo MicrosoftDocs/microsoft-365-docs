@@ -15,7 +15,6 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition CSP subscription
 ms.date: 11/01/2017
-ms.topic: article
 ---
 
 # Transition a Microsoft 365 Business CSP subscription
