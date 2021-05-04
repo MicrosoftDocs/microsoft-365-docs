@@ -39,7 +39,3 @@ If your former employee had an organization phone, you can use the Exchange admi
 5. Select **Save**.
    > [!TIP]
    > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
-
-## Wipe mobile device using Basic Mobility and Security
-
-Follow this topic, [Wipe a mobile device in Basic Mobility and Security](../basic-mobility-security/wipe-mobile-device.md), for steps on how to wipe a device. For more information on Basic Mobility and Security, check out [Overview of Basic Mobility and Security for Microsoft 365](../basic-mobility-security/overview.md).
