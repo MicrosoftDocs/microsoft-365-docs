@@ -15,11 +15,11 @@ description: "Learn how to manage contracts using a Microsoft 365 solution of Sh
 
 # Manage contracts using a Microsoft 365 solution
 
-This article describes how to create a contracts management solution for your organization with components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution does not suit your business needs as a whole, there are parts of it that you can adopt in your planning to create your custom contract management solution.
+This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution does not suit your business needs as a whole, parts of it can be adopted in your planning to create a custom contract management solution.
 
 ## Identify the business problem
 
-The first step in planning your contract management system is to understand the problem you are trying to solve. For our solution, we can define four key issues that need to be addressed:
+The first step in planning your contract management system is to understand the problem you are trying to solve. For this solution, four key issues need to be addressed:
 
 - **Identify contracts**. Your organization works with a number of documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. We need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
