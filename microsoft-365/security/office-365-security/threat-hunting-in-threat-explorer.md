@@ -93,7 +93,7 @@ Use the **Column options** button to get the kind of information on the table th
 > ![Column options button highlighted](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Available options in Columns options](../../media/threat-explorer-column-options-details.png)
+> ![Available options in Columns](../../media/threat-explorer-column-options-details.png)
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions. 
 
@@ -148,7 +148,7 @@ Finally, alert ID is included in the URL, for example: `https://protection.offic
 
 ### Extending Explorer (and Real-time detections) data retention and search limit for trial tenants 
 
-As part of this change, analysts will be able to search for, and filter email data across 30 days (increased from 7 days) in Threat Explorer and Real-time detections for both Defender for Office P1 and P2 trial tenants. This doesn’t impact any production tenants for both P1 and P2 E5 customers, where the retention default is already 30 days.
+As part of this change, analysts will be able to search for, and filter email data across 30 days (increased from seven days) in Threat Explorer and Real-time detections for both Defender for Office P1 and P2 trial tenants. This doesn’t impact any production tenants for both P1 and P2 E5 customers, where the retention default is already 30 days.
 
 ### Updated Export limit 
 
@@ -263,7 +263,7 @@ To learn more about roles and permissions, see the following resources:
 
 - [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
-- [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
 ## More information
 

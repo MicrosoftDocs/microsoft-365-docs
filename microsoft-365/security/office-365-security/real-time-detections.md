@@ -89,7 +89,7 @@ To learn more about roles and permissions, see the following resources:
 
 - [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
-- [Exchange Online Powershell](/powershell/exchange/exchange-online-powershell)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
 ## More information
 - [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)

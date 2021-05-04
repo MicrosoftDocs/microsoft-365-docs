@@ -99,7 +99,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
 ### Interpretation of click verdicts
 
-In the Email or URL flyouts, Top Clicks, as well as in our filtering experiences, you'll see different click verdict values:
+In the Email or URL flyouts, Top Clicks, and in our filtering experiences, you'll see different click verdict values:
 
 - **None:** Unable to capture the verdict for the URL. The user might have clicked through the URL.
 - **Allowed:** The user was allowed to navigate to the URL.
