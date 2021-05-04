@@ -136,7 +136,7 @@ If you've already set up mail for Office 365, then you have already included Mic
 
 For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
-## Links to configure DKIM and DMARC
+## Next Steps:  configure DKIM and DMARC
 
  SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
 
@@ -145,3 +145,5 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 [DMARC](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
  For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+*Please select 'This page' under 'Feedback'  if you have a feedback on this documentation.*
