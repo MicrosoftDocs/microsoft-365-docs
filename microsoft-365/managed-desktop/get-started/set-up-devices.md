@@ -20,13 +20,14 @@ You can use both new and existing devices in Microsoft Managed Desktop.
 
 We recommend working with one of our approved device partners. You can work with your Microsoft account contact for more help setting up a device partnership. In essence, however, the process is like this:
 
-1. Review the list of currently approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
-2. Order one or a few examples of the devices you want to use, and then [validate them](validate-device.md).
-3. After successful validation, order the devices, working with an approved device partner.
-4. Once they've arrived, do either of the following:
+1. Review the list of currently recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+2. Order one or a few examples of the devices you want to use with a compliant image. Ordering might require [specific ordering steps](../service-description/device-images.md).
+3. [Validate](validate-device.md) the example devices.
+5. After successful validation, order the devices, working with an approved device partner.
+6. Once they've arrived, do either of the following:
     - [Register new devices yourself](register-devices-self.md)
     - Work with a partner to register the devices
-5. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
+7. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
 
 ## To reuse existing devices
 
