@@ -14,7 +14,7 @@ description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---                                
 
-# Payment information by deposit or electronic bank transfer (only for Mexico)
+# Payment information by deposit or electronic transfer (only for Mexico)
 
 [Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
