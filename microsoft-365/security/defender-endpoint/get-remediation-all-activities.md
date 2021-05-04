@@ -42,6 +42,15 @@ Returns information about all remediation activities.
 
 **URL:** GET: /api/remediationTasks
 
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+:---|:---|:---
+Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+
 **Properties** details
 
 Property (id) | Data type | Description | Example of a returned value
@@ -63,7 +72,7 @@ rbacGroupNames | String | Related device group names | [ "Windows Servers", 
 recommendedProgram | String | Recommended program to upgrade to | null
 recommendedVendor | String | Recommended vendor to upgrade to | null
 recommendedVersion | String | Recommended version to update/upgrade to | null
-relatedComponent | String | Related component of this remediation activity (similar to the related component for a security recommendation) | Google Chrome
+relatedComponent | String | Related component of this remediation activity (similar to the related component for a security recommendation) | Microsoft Silverlight
 requesterEmail | String | Creator email address | globaladmin@UserName.contoso.com
 requesterId | String | Creator object id | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | The notes (free text) the creator added for this remediation activity | null
@@ -71,7 +80,7 @@ scid | String | SCID of the related security recommendation | null
 status | String | Remediation activity status (Active/Completed) | Active
 statusLastModifiedOn | DateTime | Date when the status field was updated | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Number of exposed devices that this remediation is applicable to | 43
-title | String | Title of this remediation activity | Update Google Chrome
+title | String | Title of this remediation activity | Update Microsoft Silverlight
 type | String | Remediation type | Update
 vendorId | String | Related vendor name | google
 
