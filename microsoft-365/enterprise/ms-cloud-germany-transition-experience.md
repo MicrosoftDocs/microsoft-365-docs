@@ -1,5 +1,5 @@
 ---
-title: "What has changed for the migration to Office 365 services in the new German datacenter regions"
+title: "What will change after the migration to Office 365 services in the new German datacenter regions"
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -21,19 +21,19 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
 
-# What has changed for the migration to Office 365 services in the new German datacenter regions
+# What will change after the migration to Office 365 services in the new German datacenter regions
 
 Tenant migrations are designed to have minimal effect on administrators and users. However, there are considerations for each workload. Please review the following sections to have a better understanding of the migration experience for the workloads.
 
 Following are the key differences between Microsoft Cloud Deutschland and Office 365 services in the new German datacenter regions.
 
-| Category | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
+| Category | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | Office 365 services in the new German datacenter regions |
 |:-------|:-----|:-------|
 | Microsoft 365 services available for subscription with just one Office 365 tenant | 15 services | 29 services <br><br> For more information, see [What is the service availability between the different Office 365 cloud service offerings?](ms-cloud-germany-transition.md#serv-avail). |
-| New features | No new features are available. | New features will be available consistent with Office 365 services. |
+| New features | No new features will be available. | New features will be available consistent with Office 365 services. |
 | Data trustee | Yes | No |
 | Cross-tenant collaboration with global Office 365 tenants | No | Yes |
-| Customer data residency | Customer data will be stored solely within German data centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
+| Customer data residency | Customer data will be stored solely within German data centers. | Microsoft will store the following Customer Data at rest exclusively within Germany: <ul><li> Exchange Online mailbox content (email body, calendar entries, and the content of email attachments) </li><li> SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business </li></ul> |
 | Applicable terms | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) with this [supplement](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
@@ -61,7 +61,7 @@ Considerations to note:
 
 - As the tenant is transitioned to Office 365 services, its Germany-specific subscriptions and licenses are standardized with new Office 365 services offerings. Corresponding Office 365 services subscriptions are purchased for the transferred Germany subscriptions. Users who have Germany licenses will be assigned Office 365 services licenses. Upon completion, legacy Germany subscriptions are canceled and removed from the current Office 365 services tenant.
 
-- After migration of the individual workloads, additional functionality is made available through the Office 365 services (such as Microsoft Planner and Microsoft Flow) because of the new Office 365 services subscriptions. If appropriate for your organization, the tenant or licensing administrator can disable new service plans as you plan for change management to introduce the new services. For guidance on how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
+- After migration of the individual workloads, additional functionality is made available through the Office 365 services (such as Microsoft Planner and Microsoft Flow) because of the new Office 365 services subscriptions. If appropriate for your organization, the tenant or licensing administrator can disable new service plans as you plan for change management to introduce the new services. For guidance on how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
 ## Exchange Online
 
@@ -75,6 +75,8 @@ Considerations to note:
 
 Office Online services are accessible via `office.de` before and during the transition. After users' mailboxes are transitioned to the Office 365 services, users should begin to use Office 365 services URLs. As subsequent workloads migrate to Office 365 services, their interface from the office.com portal will begin to work.
 
+The most recently used (MRU) service in Office is a cutover from the Microsoft Cloud Deutschland to Office 365 Global services, not a migration. Only MRU links from the Office 365 Global services side will be visible after migration from the Office.com portal. MRU links from the Microsoft Cloud Deutschland aren't visible as MRU links in Office 365 Global services. In Office 365 Global services, MRU links are accessible only after the tenant migration has reached phase 9.
+
 ## Exchange Online Protection
 
 - Back-end Exchange Online Protection (EOP) features are copied to new Germany region.
@@ -82,11 +84,11 @@ Office Online services are accessible via `office.de` before and during the tran
 
 ## Skype for Business Online
 
-Existing Skype for Business Online customers will transition to Microsoft Teams. For more information, see [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+Existing Skype for Business Online customers will transition to Microsoft Teams. For more information, see [https://aka.ms/SkypeToTeams-Home](/microsoftteams/upgrade-start-here).
 
 ## Office 365 Video
 
-Office 365 Video is being retired on March 1, 2021, and Office 365 Video won't be supported after migration of SharePoint Online to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of migrating SharePoint Online. However, videos in Office 365 Video won't play back in the Office 365 Video UI after the SharePoint migration. Learn more about the migration timeline on [Office 365 Video transition to Microsoft Stream (classic) overview](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
+Office 365 Video is being retired on March 1, 2021, and Office 365 Video won't be supported after migration of SharePoint Online to the new German datacenter regions is completed. Content from Office 365 Video will be migrated as part of migrating SharePoint Online. However, videos in Office 365 Video won't play back in the Office 365 Video UI after the SharePoint migration. Learn more about the migration timeline on [Office 365 Video transition to Microsoft Stream (classic) overview](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
 ## Next step
 
@@ -108,6 +110,6 @@ Moving through the transition:
 
 Cloud apps:
 
-- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
-- [Power BI migration program information](https://aka.ms/pbioptin)
-- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
+- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)

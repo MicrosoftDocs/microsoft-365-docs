@@ -24,6 +24,10 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
 
@@ -75,7 +79,7 @@ Senders, ISP's, and other service providers should actively manage the reputatio
 
 ## Microsoft 365 limits
 
-Senders must adhere to Microsoft 365 limits listed in [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Senders must adhere to Microsoft 365 limits listed in [Exchange Online Protection Limits](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## Email delivery resources and organizations
 
@@ -83,7 +87,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
-- [Online Trust Alliance](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.internetsociety.org/ota/)
 
 - [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 

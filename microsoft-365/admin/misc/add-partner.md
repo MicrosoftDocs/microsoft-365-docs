@@ -2,8 +2,8 @@
 title: "Add, change, or delete a subscription advisor partner"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -193,7 +193,7 @@ To accept this offer
 
 You can't remove a reseller relationship yourself.
   
-If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
 
 ::: moniker-end
 
@@ -201,7 +201,7 @@ If you are removing a reseller relationship the **Delete** option is grayed out,
 
 You can't remove a reseller relationship yourself.
   
-If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
   
 ::: moniker-end
 
@@ -209,7 +209,7 @@ If you are removing a reseller relationship the **Delete** option is grayed out,
 
 You can't remove a reseller relationship yourself.
   
-You will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+You will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
   
 ::: moniker-end
 

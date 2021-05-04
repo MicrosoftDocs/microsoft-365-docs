@@ -2,21 +2,19 @@
 title: "Overview of Microsoft 365 Business Premium Security"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -63,3 +61,7 @@ With MDM, you can help secure and manage your users' mobile devices like iPhones
 You can enable BitLocker encryption to help protect data in case a device is lost or stolen, and enable Windows Exploit Guard to provide advanced protection against ransomware.
 
 You can configure automatic updates so that the latest security features and updates are applied to all user devices. 
+
+## Recommended security guidance
+
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated hackers.

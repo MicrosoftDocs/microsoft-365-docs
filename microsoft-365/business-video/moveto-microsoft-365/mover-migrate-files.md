@@ -15,7 +15,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -28,22 +27,22 @@ description: "Learn how to Migrate Google files to Microsoft 365 for business by
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-When you move to Microsoft 365 for business, you’ll want to migrate your files from Google Drive. You can use the Mover app to move files from personal and shared Drives. For more information, see [Mover Cloud Migration](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+When you move to Microsoft 365 for business, you'll want to migrate your files from Google Drive. You can use the Mover app to move files from personal and shared Drives. For more information, see [Mover Cloud Migration](/sharepointmigration/mover-plan-migration).
 
 > [!NOTE]
 > Mover will make a copy of the files and move the copies to Microsoft 365 for business. The original files will stay in Google Drives also.
 
 ## Before you start
 
-All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with you Microsft 365 for business credentials, and then choose OneDrive.
+All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with your Microsoft 365 for business credentials, and then choose OneDrive.
 
 ## Try it!
 
 ### Install Mover
 
-1. Sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com).
+1. Sign in to your Google Workspace admin console at [admin.google.com](https://admin.google.com).
 
-1. Choose **Apps**, **Google Workspace Marketplace apps**, Then **Add app to Domain Install list**.
+1. Choose **Apps** > **Google Workspace Marketplace apps** > **Add app to Domain Install list**.
 
 1. Search for Mover and select it.
 
@@ -74,14 +73,14 @@ All the users should have signed in to Microsoft 365 for business and set up the
 
     The Mover app will attempt to map drives from the Source Path in Google, to the Destination Path in Microsoft 365. 
 
-    If a drive doesn’t map automatically, add its destination path to a CSV file, which we’ll use later to migrate the shared drive to a SharePoint document library. 
+    If a drive doesn't map automatically, add its destination path to a CSV file, which we'll use later to migrate the shared drive to a SharePoint document library. 
 
 1. In this case, we have added a SharePoint site called Migrated files, and taken note of the URL for the documents page. 
 1. We then created a CSV file using the format of Source Path, Destination Path, and Tags. 
 
-    For details see [aka.ms/movercsv](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv).
+    For details see [aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv).
 
-    When adding the Destination Path URL, remove everything after Shared Documents for example For example, this full URL won't work:
+    When adding the Destination Path URL, remove everything after Shared Documents. For example, this full URL won't work:
 `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     Change it to:

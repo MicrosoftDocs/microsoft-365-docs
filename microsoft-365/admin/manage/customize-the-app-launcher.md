@@ -27,15 +27,7 @@ description: "Create quick links to your email, documents, apps, SharePoint site
 
 # Add custom tiles to the app launcher
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-In Microsoft 365, you can quickly and easily get to your email, calendars, documents, and apps using the App launcher ([learn more](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). These are apps you get with Microsoft 365 as well as custom apps that you add from the [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) or [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
+In Microsoft 365, you can quickly and easily get to your email, calendars, documents, and apps using the App launcher ([learn more](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). These are apps you get with Microsoft 365 as well as custom apps that you add from the [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) or [Azure AD](/previous-versions/office/office-365-api/).
   
 You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
@@ -61,18 +53,6 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
     
 Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
   
-## Promote the tile to App Launcher
-
-1. Select the app launcher icon and select the **All apps**. 
-    
-2. Locate the new tile for your app, select the ellipsis, and choose **Pin to launcher**.
-  
-    > [!NOTE]
-    > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
-  
-> [!IMPORTANT]
-> Both you and your users need to perform these steps to promote custom tiles from the My apps page to the app launcher. 
-  
 ## Edit or delete a custom tile
 
 1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile**</a> tab.
@@ -88,4 +68,3 @@ To delete a custom tile, from the **Custom tiles** window, select the tile, sele
 ## What's next?
 
 In addition to adding tiles to the app launcher, you can add app launcher tiles to the navigation bar ([learn more](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). To customize the look and feel of Microsoft 365 to match your organization's brand, see [Customize the Microsoft 365 theme](../setup/customize-your-organization-theme.md).
-  

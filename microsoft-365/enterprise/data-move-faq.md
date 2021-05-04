@@ -107,7 +107,7 @@ It is not possible to change the signup country associated with your tenant. Ins
   
 ## What happens if we are in process of email data migration to Microsoft 365 during the Exchange Online move?
 
-This is a very common scenario and is fully supported. Cloud migration between datacenter geos does not interfere with any on-premises to cloud mailbox migrations.
+This is a very common scenario and is fully supported.  Cloud migration between datacenter geos does not interfere with any on-premises to cloud mailbox migrations.
   
  ## Can I pilot some users?
   
@@ -145,8 +145,8 @@ For customers that opt-in for migration - we will move all Exchange Online mailb
 
 [Microsoft 365 interactive datacenter map](https://office.com/datamaps)
 
-[Microsoft 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459)
+[Microsoft 365 Support](../admin/contact-support-for-business-products.md)
 
-[New datacenter geos for Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)

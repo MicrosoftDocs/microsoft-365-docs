@@ -15,7 +15,7 @@ localization_priority: Priority
 ---
 # Import a term set using a SKOS-based format
 
-You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md).
+You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [SharePoint Syntex](index.md) license.
 
 We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
 
@@ -39,7 +39,7 @@ On successful import of the file, a success message will be displayed, and the t
 
 ## See also
 
-[Introduction to managed metadata](https://docs.microsoft.com/sharepoint/managed-metadata)
+[Introduction to managed metadata](/sharepoint/managed-metadata)
 
 [Document understanding overview](document-understanding-overview.md)
 

@@ -2,8 +2,8 @@
 title: "Guest users in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -44,12 +43,12 @@ To join a team as a guest, see the following video:<br><br>
 
 ## Add guests in Azure Active Directory
 
-To add guests in the Azure Active Directory, see [add guest users](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+To add guests in the Azure Active Directory, see [add guest users](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
 After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you have added a user in the Azure AD portal, that user will also be listed on the **Guest users** page in the Microsoft 365 admin center.
 After a user is added to the **Guest users** list, they can be [added to Groups](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) in the Microsoft 365 admin center.
 
-See [add guests in bulk](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
+See [add guests in bulk](/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
 
 
 ## Remove a guest
@@ -57,4 +56,4 @@ See [add guests in bulk](https://docs.microsoft.com/azure/active-directory/b2b/t
 1. In the Microsoft 365 admin center, expand **Users** and then choose **Guest users**.
 1. On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**. 
 
-To remove users in the Azure AD portal, see [remove a guest user and resources](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+To remove users in the Azure AD portal, see [remove a guest user and resources](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).

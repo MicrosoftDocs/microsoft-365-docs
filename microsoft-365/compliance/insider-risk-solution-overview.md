@@ -1,5 +1,5 @@
 ---
-title: Insider risk solution
+title: Insider risk solutions
 description: Learn how to help minimize risk in your organization with insider risk solutions in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
 localization_priority: Normal
@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-overview
 ---
 
 # Insider risk solutions in Microsoft 365
@@ -73,6 +74,10 @@ Insider risk management is available in the following subscriptions:
 - Microsoft 365 A5 subscription (paid or trial version)
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G3 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 E3 subscription + Enterprise Mobility and Security E3 + the Microsoft 365 E5 Compliance add-on
 
 ### Information barriers
 

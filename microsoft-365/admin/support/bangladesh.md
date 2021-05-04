@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -24,7 +23,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 After dialing, enter
 
-877 857 3235
++1877 857 3235
 
 ## Hours
 ### Billing Support:

@@ -51,11 +51,11 @@ You can also [download](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/
 
 |For this product|With this end of support date|See this resource|
 |---|---|---|
-|Office 2010 (including Word 2010, Excel 2010, PowerPoint 2010, and Outlook 2010)|October 13, 2020 |[Office 2010 end of support roadmap](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)|
+|Office 2010 (including Word 2010, Excel 2010, PowerPoint 2010, and Outlook 2010)|October 13, 2020 |[Office 2010 end of support roadmap](/DeployOffice/office-2010-end-support-roadmap)|
 |Exchange Server 2010|October 13, 2020|[Exchange 2010 end of support roadmap](exchange-2010-end-of-support.md)|
 |SharePoint 2010 or SharePoint Server 2010|April 13, 2021|[Upgrading from SharePoint 2010](upgrade-from-sharepoint-2010.md)|
 |Project Server 2010|April 13, 2021|[Project Server 2010 end of support roadmap](project-server-2010-end-of-support.md)|
-|Lync Server 2010|April 13, 2021|[Plan to upgrade to Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+|Lync Server 2010|April 13, 2021|[Plan to upgrade to Skype for Business Server](/skypeforbusiness/plan-your-deployment/upgrade)|
 
 ## I'm a home user. What do I do?
 
@@ -65,6 +65,6 @@ If you use Office 2010 products and applications at home, see [this information]
 
 [Video: What is Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
 
-[Microsoft Lifecycle Policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle Policy](/lifecycle/)
 
 [Plan your upgrade from Office 2007 or Office 2010 servers and clients](plan-upgrade-previous-versions-office.md)

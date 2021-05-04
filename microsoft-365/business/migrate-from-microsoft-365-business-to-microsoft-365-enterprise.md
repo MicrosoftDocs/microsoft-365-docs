@@ -52,7 +52,6 @@ This table shows the differences between Microsoft 365 Business Premium and Micr
 | Teams    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Attack surface reduction capabilities    | [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
@@ -100,10 +99,6 @@ Your users can now enjoy unlimited storage in the Exchange Online mailboxes and 
 
 You can begin using Cloud App Discovery, Azure AD Connect Health, and SSO for more than 10 apps.
 
->[!Note]
->Users migrated to Microsoft 365 E3 can no longer use MileIQ.
->
-
 <a name="threat-protection"></a>
 ### Threat protection
 
@@ -140,9 +135,7 @@ Microsoft 365 Business Premium includes Windows 10 Business, which you can insta
 
 Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Microsoft 365 Apps for enterprise. After migration, you can now use:
 
- - Volume activation through Group Policy
- - App telemetry
- - Update controls
+ - Group Policy support
  - Spreadsheet compare and inquire
  - Business intelligence
 

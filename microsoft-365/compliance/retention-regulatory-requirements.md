@@ -19,7 +19,7 @@ description: "Resources to help you meet regulatory requirements for information
 
 # Regulatory requirements for information governance and records management
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use the resources on this page to help you meet specific regulatory requirements for information governance and records management in Microsoft 365. Each section of this document focuses on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
 
@@ -29,7 +29,7 @@ These resources are available to download from the [Data Protection Resources, F
 
 **Supporting New Zealand's Public Records Act compliance obligations with Microsoft 365** - [Download assessment](https://aka.ms/NZPRA)
 
-Applicable workloads: SharePoint, OneDrive, Teams, Exchange, and Skype for Business
+Applicable workloads: SharePoint, OneDrive, Teams, and Exchange
 
 Released January 2021, this report has been produced in partnership with Microsoft New Zealand to assess the capabilities of Microsoft 365 services for recording, storing, and managing requirements for electronic records, as specified by: 
 

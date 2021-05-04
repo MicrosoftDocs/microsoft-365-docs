@@ -28,7 +28,7 @@ You can take this example and apply it to other built-in sensitive information t
   
 ## Export the XML file of the current rules
 
-To export the XML, you need to [connect to the Security and Compliance Center via Remote PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+To export the XML, you need to [connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell).
   
 1. In the PowerShell, type the following to display your organization's rules on screen. If you haven't created your own, you'll only see the default, built-in rules, labeled "Microsoft Rule Package."
 
@@ -196,7 +196,7 @@ To upload your rule, you need to do the following.
   
 1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
     
-2. [Connect to the Security and Compliance Center via Remote PowerShell.](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [Connect to the Security and Compliance Center via Remote PowerShell.](/powershell/exchange/connect-to-scc-powershell)
     
 3. In the PowerShell, type the following.
 
@@ -235,7 +235,5 @@ These are the definitions for the terms you encountered during this procedure.
 ## For more information
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-    
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
-    
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)

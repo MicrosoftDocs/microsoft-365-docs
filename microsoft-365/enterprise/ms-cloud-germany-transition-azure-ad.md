@@ -40,14 +40,14 @@ There are three preconditions to updating your sign-in authority:
 
 An application could be any of the following:
 
-- [Single-page app (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-- [Web app that signs in users](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [Web app that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [Protected web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
-- [Web API that calls web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
-- [Desktop app](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-- [Daemon app](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
-- [Mobile app](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Single-page app (SPA)](/azure/active-directory/develop/scenario-spa-overview)
+- [Web app that signs in users](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web app that calls web APIs](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Protected web API](/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Web API that calls web APIs](/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Desktop app](/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon app](/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobile app](/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > When an application switches to using `login.microsoftonline.com` as your authority, the tokens will be signed by this new authority. If you host any resource applications that other apps call into, you will need to allow for lax token validation. This means that your app needs to allow tokens that are signed by both the Azure AD Germany and Azure AD public clouds. This lax token validation is needed until all client applications that call your service are fully migrated to the Azure AD public cloud. After migration, your resource application only needs to accept tokens signed by the Azure AD public cloud.
@@ -67,10 +67,10 @@ An application could be any of the following:
 
 5. Update environment parameters to be `AzurePublic` (instead of `AzureGermany`) in administrative tools and scripts for:
 
-    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)
-    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?)
-    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+    - [Azure PowerShell](/powershell/azure/install-az-ps)
+    - [Azure AD PowerShell (MSOnline)](/powershell/azure/active-directory/overview)
+    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
+    - [Azure CLI](/cli/azure/install-azure-cli)
  
 **What about applications that I publish?**
 
@@ -107,7 +107,7 @@ Here are some additional considerations for Azure AD:
 
 - Microsoft Cloud Deutschland users who use the Mobile App Notification method for MFA requests see the user's ObjectId (a GUID) instead of the user principal name (UPN) in the Microsoft Authenticator app. After migration of the Azure AD tenant is complete and hosted in Office 365 services, new Microsoft Authenticator activations will display users' UPNs. Existing Microsoft Authenticator accounts will continue to display the user ObjectId, but they'll continue to work for mobile app notifications. 
 
-- For tenants that are created after October 22, 2019, security defaults may be auto-enabled for the tenant when it's migrated to the Office 365 service. Tenant admins can choose to leave security defaults enabled and register for MFA, or they can disable the feature. For more information, see [Disabling security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
+- For tenants that are created after October 22, 2019, security defaults may be auto-enabled for the tenant when it's migrated to the Office 365 service. Tenant admins can choose to leave security defaults enabled and register for MFA, or they can disable the feature. For more information, see [Disabling security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
 
   > [!NOTE]
   > Organizations that are not auto-enabled during migration may still be auto-enrolled in the future as the feature to enable security defaults is rolled out in the Office 365 service. Admins who choose to explicitly disable or enable security defaults may do so by updating the feature under **Azure Active Directory > Properties**. After the feature is explicitly enabled by the admin, it will not be auto-enabled.
@@ -131,6 +131,6 @@ Moving through the transition:
 
 Cloud apps:
 
-- [Dynamics 365 migration program information](https://aka.ms/d365ceoptin)
-- [Power BI migration program information](https://aka.ms/pbioptin)
-- [Getting started with your Microsoft Teams upgrade](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
+- [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)

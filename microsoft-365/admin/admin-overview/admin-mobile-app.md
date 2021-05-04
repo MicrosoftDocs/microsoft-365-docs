@@ -2,8 +2,8 @@
 title: "About the Microsoft 365 Admin mobile app"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,87 +22,95 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: "Get the Microsoft 365 Admin app and learn to manage your online organization from your phone or tablet."
 ---
 
 # About the Microsoft 365 admin mobile app
 
-Are you an admin who's usually on the go? Then check out the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216). You can use the app to manage your online organization from your phone or tablet. You can get the app from the Apple Store, and from Google Play. <br> 
+Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center. You can download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), and from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
+:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app's home page, displaying search, Message center, health, and quick links":::
 
-The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer. Here's a list of just a few of the tasks you can do from the app:
+The admin app has a lot of capabilities which will enable you to manage Microsoft 365 from your mobile or tablet device, when you can’t get to a computer. Here's a list of a few of the tasks you can do from the app:
 
-- Get service health and change notifications
-- Create a service request
-- Reset a user's password
-- Assign licenses
-- Add or remove group memberships
-- Add users 
+- **Manage users and devices** Add or edit a user, reset a user’s password, assign a role, block user, delete user, manage alias, assign licenses, wipe device data and more.
+- **Manage groups** Add a group, add or remove users from groups.
+- **License management and billing** View a list of purchased and assigned licenses, assign licenses to users, purchase or remove licenses and view and download invoices.
+- **Support** Create a new service request and keep track of all the updates related to the service requests while you are on the go.
+- **Message Center** Stay on top of all the upcoming changes, planned maintenance, or other important announcements related to Microsoft 365
+- **Service Health** Monitor the health of all the services by viewing the current status of the service and details about service disruption and outages.
+- **Notifications** Stay on top of all the important information and updates related to message center posts, service health and billing through push notifications. You can even customize what you want to be notified of.
 
-And if you're someone who is responsible for more than one online organization, you sign in to multiple orgs and quickly switch between them. 
+If you're an admin and you're responsible for more than one Microsoft 365 organization, you can sign in to multiple organizations and quickly switch between them. The app supports dark theme and is available in 39 languages.
   
 > [!IMPORTANT]
-> If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know. 
+> If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
   
 ## Download the admin mobile app
 
-[Microsoft 365 Admin mobile app](https://go.microsoft.com/fwlink/?LinkID=627216).
+[Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
+
+[Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
   
-Watch a short video about installing the admin mobile app.<br><br>
+## Watch: Install the admin mobile app
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
- 
 ## Frequently asked questions
 
-Below are answers to some frequently asked questions people ask about the app.
+Below are answers to frequently asked questions.
   
 ### What do I need to do to be able to use the app?
 
-You need to have a valid Microsoft 365 Apps for business or Microsoft 365 Business Premium subscription with admin privileges to sign in and use the app. The Admin mobile app isn't an email client. It's a rich administrative app with over 80 features to help you support your org while your on the go.
+To use the app you need to have admin permissions and a valid subscription to one of the following Microsoft 365 subscriptions:
+
+- Microsoft 365 Apps for Enterprise
+- Microsoft 365 Apps for Business
+- Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Basic
+- Microsoft 365 E3/E5
+- Office 365: E1, E3/E5
+- Exchange Online plan
+- OneDrive for business plan
   
 ### Can I use the app with my Microsoft 365 Family subscription?
 
-No, the app only works with Microsoft 365 Apps for business and Microsoft 365 Business Premium subscriptions. 
-  
+No, the app doesn’t work with Microsoft 365 Family or Microsoft 365 Personal subscriptions.
+
 ### Will the app work if my organization has directory synchronization enabled?
 
-Yes, but with reduced functionality. You'll be able to sign in and view service information, but most of the user management functions will be read-only. You won't be able to add, edit, or delete users. However, you'll be able to assign licenses to users in your organization, and get notifications.
+Yes, but with reduced functionality. You'll be able to sign in and view service information, but most of the user management functions will be read-only. You won't be able to add, edit, or delete users. However, you'll be able to assign licenses to users in your organization and get notifications.
   
 ### What languages are supported by the app?
 
-The app supports all 39 languages that the web-based Microsoft 365 admin center supports. To change the language, select the app launch icon in the upper bar and choose **Settings** > **Language**.
-  
-### Why does the Messages tile on the Home screen show numbers even after I've read the new messages?
-
-The numbers are the total messages from the last week, not unread messages.
+The app supports all 39 languages that the web-based Microsoft 365 admin center supports. To change the language, from the left navigation menu in the admin center, go to **Settings** > **Language** or select the **Language** icon in **Quick Links** section of the admin mobile app home page.
   
 ### How can I share the Service Incidents and Messages with the rest of my organization?
 
-If you select a specific service incident or a message, the share option will be in the top right corner. We currently support email sharing.
+If you select a specific service incident or a message, the share option will be in the top right corner.
   
 ### Can I use this app with multiple accounts or tenants?
 
-Yes, you can setup multiple accounts or tenants.
-  
-### My app is acting funny. What can I do to troubleshoot weird app behavior?
+Yes, you can setup multiple accounts or organizations.
+
+### I’m unable to login or my app is acting funny. What can I do to troubleshoot or fix the issue?
 
 You can try some common mobile app troubleshooting steps:
-  
-1. Close and reopen the app.
-    
-2. Uninstall and reinstall the app.
 
-3. If that doesn't work, you can email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
-    
+1. Close and reopen the app.
+1. Uninstall and reinstall the app. Ensure that you are on the latest version of the app.
+1. If you have Microsoft Authenticator or Company portal app installed on your device, try reinstalling it or updating to the latest version.
+1. If that doesn't work, you can email us at feedback365@microsoft.com to let us know.
+
+### How do I manage notifications in the app?
+
+From the left navigation menu, go to **Settings** > **Notifications**. You can manage service health, message center and billing notifications here.
+
 ### What do I do if my question isn't answered?
 
-Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article. 
+Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article.
   
-## See also
+## Related content 
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

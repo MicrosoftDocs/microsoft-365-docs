@@ -2,8 +2,8 @@
 title: "Microsoft Productivity Score - Communication"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -154,7 +154,7 @@ We also provide you with information that helps you gain visibility into how you
 		
       - **People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams. The fraction is constructed from:
 	  
-        - **Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.
+        - **Numerator:** People who sent channel messages on Microsoft Teams in the last 28 days.
         - **Denominator:** People who sent messages on Microsoft Teams in the last 28 days.
 		
 4. **View related content:** Select this link to view collated videos, and other related help content.

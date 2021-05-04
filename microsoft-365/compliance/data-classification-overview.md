@@ -1,5 +1,5 @@
 ---
-title: "Get started with data classification"
+title: "Learn about data classification"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Know your data - data classification overview
+# Learn about data classification
 
 As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according to your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
@@ -31,8 +31,12 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - the locations of your sensitive and retained data
 
 You also manage these features on the data classification page:
+
 - [trainable classifiers](classifier-learn-about.md)
-- [sensitive information types](what-the-sensitive-information-types-look-for.md)
+- [sensitive information types](sensitive-information-type-learn-about.md)
+- [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [content explorer](data-classification-content-explorer.md)
+- [activity explorer](data-classification-activity-explorer.md)
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
@@ -44,7 +48,7 @@ Data classification will scan your sensitive content and labeled content before 
 
 ## Prerequisites
 
-A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### Permissions
 
@@ -92,7 +96,7 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 > [!NOTE]
 > If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with sensitivity labels, see:
->- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](/azure/information-protection/configure-policy)
 
 ## Top retention labels applied to content
 
@@ -108,7 +112,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 ## Top activities detected
 
-This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
+This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on the different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
@@ -128,5 +132,8 @@ The point of the data classification reporting is to provide visibility into the
 - [View labeled content](data-classification-content-explorer.md)
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
+
+To learn how to use data classification to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

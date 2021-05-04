@@ -2,21 +2,19 @@
 title: "Collaborate by using Outlook and Teams"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -51,4 +49,4 @@ When you communicate with your employees, partners, clients, and others in your 
 
 [What is Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams overview](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Teams overview](/MicrosoftTeams/Teams-overview)

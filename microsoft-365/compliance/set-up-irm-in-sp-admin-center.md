@@ -22,11 +22,11 @@ ms.custom: seo-marvel-apr2020
 
 # Set up Information Rights Management (IRM) in SharePoint admin center
 
-Within SharePoint Online, IRM protection is applied to files at the list and library level. Before your organization can use IRM protection, you must first set up Rights Management. IRM relies on the Azure Rights Management service from Azure Information Protection to encrypt and assign usage restrictions. Some Microsoft 365 plans include Azure Rights Management, but not all. To learn more, read [How Office applications and services support Azure Rights Management](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
+Within SharePoint Online, IRM protection is applied to files at the list and library level. Before your organization can use IRM protection, you must first set up Rights Management. IRM relies on the Azure Rights Management service from Azure Information Protection to encrypt and assign usage restrictions. Some Microsoft 365 plans include Azure Rights Management, but not all. To learn more, read [How Office applications and services support Azure Rights Management](/azure/information-protection/understand-explore/office-apps-services-support).
   
 ## Turn on IRM service using SharePoint admin center
 
-Before your organization can IRM-protect SharePoint lists and libraries, you must first activate the Rights Management service for your organization. To learn how see [Activating Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). You must use a work or school account that has global administrator privileges to enable the Rights Management service. Otherwise, you won't be able to use IRM features with SharePoint Online.
+Before your organization can IRM-protect SharePoint lists and libraries, you must first activate the Rights Management service for your organization. To learn how see [Activating Azure Rights Management](/information-protection/deploy-use/activate-service). You must use a work or school account that has global administrator privileges to enable the Rights Management service. Otherwise, you won't be able to use IRM features with SharePoint Online.
   
 After activating the Rights Management service, sign in to the SharePoint admin center to turn on IRM.
   
@@ -71,6 +71,6 @@ SharePoint Online supports encryption of the following file types:
 
 Once you've enabled IRM for SharePoint Online, you can start applying rights management to lists and libraries. For information, see [Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).
   
-The new OneDrive sync client for Windows now supports synchronizing IRM-protected SharePoint document libraries and OneDrive locations (as long as the IRM setting for the library isn't set to expire document access rights). For more information, or to get started deploying the new sync client, see [Deploy the new OneDrive sync client for Windows](https://docs.microsoft.com/onedrive/deploy-on-windows).
+The new OneDrive sync client for Windows now supports synchronizing IRM-protected SharePoint document libraries and OneDrive locations (as long as the IRM setting for the library isn't set to expire document access rights). For more information, or to get started deploying the new sync client, see [Deploy the new OneDrive sync client for Windows](/onedrive/deploy-on-windows).
   
 [Top of page](set-up-irm-in-sp-admin-center.md)

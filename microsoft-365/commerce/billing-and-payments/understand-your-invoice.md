@@ -1,7 +1,7 @@
 ---
 title: Understand your bill or invoice
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -15,7 +15,6 @@ ms.collection:
 - commerce
 ms.custom: 
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
@@ -23,14 +22,6 @@ keywords: billing accounts, organization info, invoices
 ---
 
 # Understand your bill or invoice
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
@@ -57,14 +48,14 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | --- | --- |
 | Charges|Total number of products purchased for this billing period, and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. |
 | Credits |Credits you received from returns |
-| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |The pre-tax amount due |
 | Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand your charges
 
 The charges pages show the cost broken down by product. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
-[Invoice sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](https://docs.microsoft.com/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
+[Invoice sections](/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
 
 | Term |Description |
 | --- | --- |
@@ -85,7 +76,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 > Total = Charges/Credits - Azure Credit + Tax
 
-If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 

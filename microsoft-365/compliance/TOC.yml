@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: Case study - Contoso quickly configures an offensive language policy 
           href: communication-compliance-case-study.md
-        - name: Supervision policies in Office 365
-          href: supervision-policies.md
-        - name: Configure supervision policies for Office 365
-          href: configure-supervision-policies.md
     - name: Insider risk management
       items:
         - name: Overview
@@ -48,16 +44,18 @@
           href: insider-risk-management.md
         - name: Plan for insider risk management
           href: insider-risk-management-plan.md
-        - name: Get started with insider risk settings
-          href: insider-risk-management-settings.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
+        - name: Get started with insider risk settings
+          href: insider-risk-management-settings.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk alerts
           href: insider-risk-management-alerts.md
         - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
+        - name: Review activities with the insider risk audit log
+          href: insider-risk-management-audit-log.md
         - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
         - name: Manage the workflow with the Users dashboard
@@ -110,6 +108,8 @@
           href: sit-edm-wizard.md
         - name: Modify exact data match schema to use configurable match
           href: sit-modify-edm-schema-configurable-match.md
+        - name: Create notifications for exact data match activities (preview)
+          href: sit-edm-notifications-activities.md  
         - name: Create a custom sensitive information type - Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -138,6 +136,8 @@
           href: data-classification-content-explorer.md
         - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
+        - name: Labeling actions reported in Activity explorer
+          href: data-classification-activity-explorer-available-events.md
         - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
@@ -152,14 +152,14 @@
           href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Use sensitivity labels in Office apps
+        - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
+        - name: Enable co-authoring for documents encrypted by sensitivity labels (preview)
+          href: sensitivity-labels-coauthoring.md
     - name: Encryption
       items: 
         - name: Understand encryption
@@ -208,7 +208,7 @@
             - name: Compare versions of OME
               href: ome-version-comparison.md
             - name: Office 365 Message Encryption FAQ
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
@@ -234,57 +234,81 @@
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
-          href: data-loss-prevention-policies.md
-        - name: DLP and Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Learn about Endpoint data loss prevention
-          href: endpoint-dlp-learn-about.md
-        - name: Get started with Endpoint data loss prevention
-          href: endpoint-dlp-getting-started.md
-        - name: Configure device proxy and internet connection settings for Endpoint DLP
-          href: endpoint-dlp-configure-proxy.md
-        - name: Using Endpoint data loss prevention
-          href: endpoint-dlp-using.md
-        - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
           items:
-            - name: Onboarding tools and methods for Windows 10 devices   
-              href: dlp-configure-endpoints.md
-            - name: Onboard Windows 10 devices via Group Policy
-              href: dlp-configure-endpoints-gp.md
-            - name: Onboard Windows 10 devices using Mobile Device Management tools
-              href: dlp-configure-endpoints-mdm.md
-            - name: Onboard Windows 10 devices using Configuration Manager
-              href: dlp-configure-endpoints-sccm.md
-            - name: Onboard Windows 10 devices using a local script
-              href: dlp-configure-endpoints-script.md
-            - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-              href: dlp-configure-endpoints-vdi.md
-        - name: Get started with the default DLP policy
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Create a DLP policy from a template
-          href: create-a-dlp-policy-from-a-template.md
-        - name: Create, test, and tune a DLP policy
-          href: create-test-tune-dlp-policy.md
-        - name: Use notifications and policy tips in DLP policies
-          href: use-notifications-and-policy-tips.md
-        - name: Configure and view alerts for DLP policies (preview)
-          href: dlp-configure-view-alerts-policies.md
-        - name: What the DLP policy templates include
-          href: what-the-dlp-policy-templates-include.md
-        - name: Create a DLP policy to protect documents with FCI or other properties
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: View the DLP reports
-          href: view-the-dlp-reports.md
-        - name: Form a query to find sensitive data stored on sites
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: How DLP works between the Security & Compliance Center and Exchange admin center
-          href: how-dlp-works-between-admin-centers.md
-        - name: Use sensitivity labels as a condition in DLP policies (preview)
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: DLP policy conditions and exceptions (preview)
-          href: dlp-conditions-and-exceptions.md
+          - name: Learn about data loss prevention
+            href: dlp-learn-about-dlp.md
+          - name: Learn about Endpoint data loss prevention
+            href: endpoint-dlp-learn-about.md
+          - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
+            href: dlp-teams-default-policy.md
+          - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
+            href: dlp-on-premises-scanner-learn.md
+          - name: Learn about the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-learn-about.md
+          - name: Learn about the data loss prevention Alerts dashboard
+            href: dlp-alerts-dashboard-learn.md    
+        - name: Get started with DLP
+          items:
+          - name: Get started with the default DLP policy
+            href: get-started-with-the-default-dlp-policy.md
+          - name: Create a DLP policy from a template
+            href: create-a-dlp-policy-from-a-template.md
+          - name: Create, test, and tune a DLP policy
+            href: create-test-tune-dlp-policy.md
+          - name: Get started with Microsoft 365 data loss prevention on-premises scanner (preview)
+            href: dlp-on-premises-scanner-get-started.md
+          - name: Get started with Endpoint data loss prevention
+            href: endpoint-dlp-getting-started.md
+          - name: Configure device proxy and internet connection settings for Endpoint DLP
+            href: endpoint-dlp-configure-proxy.md
+          - name: Get started with the Microsoft Compliance Extension (preview)
+            href: dlp-chrome-get-started.md
+          - name: Get started with the data loss prevention alert dashboard
+            href: dlp-alerts-dashboard-get-started.md
+          - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+            items:
+              - name: Onboarding tools and methods for Windows 10 devices   
+                href: dlp-configure-endpoints.md
+              - name: Onboard Windows 10 devices via Group Policy
+                href: dlp-configure-endpoints-gp.md
+              - name: Onboard Windows 10 devices using Mobile Device Management tools
+                href: dlp-configure-endpoints-mdm.md
+              - name: Onboard Windows 10 devices using Configuration Manager
+                href: dlp-configure-endpoints-sccm.md
+              - name: Onboard Windows 10 devices using a local script
+                href: dlp-configure-endpoints-script.md
+              - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+                href: dlp-configure-endpoints-vdi.md
+        - name: Use DLP
+          items:
+            - name: DLP and Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Using Endpoint data loss prevention
+              href: endpoint-dlp-using.md
+            - name: Use Microsoft 365 data loss prevention on-premises scanner (preview)
+              href: dlp-on-premises-scanner-use.md  
+            - name: Use notifications and policy tips in DLP policies
+              href: use-notifications-and-policy-tips.md
+            - name: What the DLP policy templates include
+              href: what-the-dlp-policy-templates-include.md
+            - name: Create a DLP policy to protect documents with FCI or other properties
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: View the DLP reports
+              href: view-the-dlp-reports.md
+            - name: Form a query to find sensitive data stored on sites
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: How DLP works between the Security & Compliance Center and Exchange admin center
+              href: how-dlp-works-between-admin-centers.md
+            - name: Configure and view alerts for DLP policies (preview)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Use sensitivity labels as a condition in DLP policies
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: DLP policy conditions and exceptions
+              href: dlp-conditions-and-exceptions.md
+            - name: Data Loss Prevention policy tips reference
+              href: dlp-policy-tips-reference.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -303,6 +327,8 @@
               href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+            - name: Limits for retention
+              href: retention-limits.md
         - name: Get started with retention
           href: get-started-with-retention.md
         - name: Create retention policies
@@ -334,7 +360,7 @@
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data
@@ -357,12 +383,16 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet data connectors
+        - name: Veritas data connectors
           items:  
             - name: CellTrust
               href: archive-celltrust-data.md          
-            - name: Cisco Jabber
+            - name: Cisco Jabber on MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle (preview)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber on PostgreSQL (preview)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
@@ -391,10 +421,10 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
-            - name: Webpages
-              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -520,6 +550,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
         - name: Content search PowerShell scripts
@@ -550,6 +582,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Set up compliance boundaries
@@ -570,6 +604,8 @@
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
+          - name: Troubleshoot eDiscovery hold errors
+            href: hold-distribution-errors.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -580,11 +616,11 @@
             href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
-        - name: Overview of Advanced eDiscovery
+        - name: Overview
           href: overview-ediscovery-20.md
         - name: Set up Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Create an Advanced eDiscovery case
+        - name: Create and manage a case
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -615,14 +651,27 @@
         - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
-            - name: Advanced indexing of custodian data
+            - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
-            - name: Error remediation when processing data
+            - name: Error remediation when processing content
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md
+              href: single-item-error-remediation.md        
+        - name: Collect content for a case (preview)
+          items: 
+            - name: Learn about collections (preview)
+              href: collections-overview.md
+            - name: Create a draft collection (preview)
+              href: create-draft-collection.md
+            - name: Commit a draft collection to a review set (preview)
+              href: commit-draft-collection.md
+            - name: Collection statistics and reports (preview)
+              href: collection-statistics-reports.md        
+            - name: Build search queries for collections
+              href: building-search-queries.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md 
         - name: Collect data for a case
-          href: collecting-data-for-ediscovery.md
           items: 
             - name: Create a search
               href: create-search-to-collect-data.md
@@ -641,7 +690,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Review case data
+        - name: Review case content
           items: 
             - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
@@ -651,7 +700,7 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-        - name: Analyze case data
+        - name: Analyze case content
           href: analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
@@ -660,15 +709,21 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Use the Relevance module to analyze data
+            - name: Predictive coding module (preview)
+              href: predictive-coding-overview.md
+            - name: Use the Relevance module to analyze content
               href: using-relevance.md
-        - name: Export case data
+            - name: Retirement of the Relevance module
+              href: relevance-module-retirement.md  
+        - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
             - name: Download documents from a review set
               href: download-documents-from-review-set.md
             - name: Export documents from a review set
               href: export-documents-from-review-set.md
+            - name: Export documents to an Azure Storage account
+              href: download-export-jobs.md
         - name: Manage jobs
           href: managing-jobs-ediscovery20.md
         - name: Configure case settings
@@ -680,9 +735,7 @@
             - name: Configure search and analytics settings
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
-          items: 
-            - name: Advanced eDiscovery alignment with EDRM
-              href: advanced-ediscovery-edrm.md
+          items:
             - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
@@ -703,8 +756,12 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Content stored in mailboxes for eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
+            - name: Troubleshoot eDiscovery hold errors
+              href: hold-distribution-errors.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
@@ -723,6 +780,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Troubleshoot eDiscovery hold errors
+      href: hold-distribution-errors.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
@@ -731,6 +790,8 @@
       items:
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Use a PowerShell script to search the audit log
+          href: audit-log-search-script.md
         - name: Turn audit log search on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Detailed properties in the audit log
@@ -744,11 +805,11 @@
         - name: Office 365 Management Activity API
           items:
             - name: Office 365 Management Activity API reference
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference  
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
             - name: Office 365 Management Activity API schema
-              href: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema 
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
-              href: https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
@@ -803,8 +864,8 @@
         - name: Configure IRM to use an on-premises AD RMS server
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 enterprise
-  href: https://docs.microsoft.com/microsoft-365/enterprise/
+  href: ../enterprise/index.yml
 - name: Microsoft 365 security
-  href: https://docs.microsoft.com/microsoft-365/security/
+  href: ../security/index.yml
 - name: Microsoft 365 Apps for business
-  href: https://docs.microsoft.com/office365/admin/admin-home
+  href: /office365/admin/admin-home

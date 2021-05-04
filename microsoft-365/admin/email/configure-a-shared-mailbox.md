@@ -16,7 +16,6 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -78,7 +77,7 @@ You do not need to assign a license to the shared mailbox in order to forward em
 
 2. Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.
     
-3. Set the toggle to **On**, and enter one email address to forward the messages to. It can be any valid email address. To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.
+3. Set the toggle to **On**, and enter one email address to forward the messages to. It can be any valid email address. To forward to multiple addresses, you need to [create a distribution group](/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.
     
 4. Select **Save**.
 
@@ -148,7 +147,7 @@ If you want to allow everyone to see the Sent email, in the admin center, edit t
 
 ## Put a shared mailbox on litigation hold
 
-To learn more about litigation hold, see [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).
+To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/create-a-litigation-hold.md).
 
 ::: moniker range="o365-worldwide"
 
