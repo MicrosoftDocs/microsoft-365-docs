@@ -1,7 +1,7 @@
 ---
 title: Get one remediation activity by Id
 description: Returns information for the specified remediation activity.
-keywords: apis, remediation, remediation api, get, remediation tasks, list
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -43,6 +43,15 @@ Returns information for the specified remediation activity. Presents the same co
 ## List a specified remediation activity for (id)
 
 **URL:** GET: /api/remediationTasks/\{id\}
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+:---|:---|:---
+Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 **Properties** details
 
