@@ -22,7 +22,6 @@ ms.prod: m365-security
 
 - [View malware detected in email](#view-malware-detected-in-email)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
-- [Review email messages reported by users](#review-email-messages-reported-by-users)
 - [Start automated investigation and response](#start-automated-investigation-and-response)
 
 > [!NOTE]
