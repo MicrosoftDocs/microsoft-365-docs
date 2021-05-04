@@ -24,27 +24,34 @@ ms.prod: m365-security
 
 # Set up SPF to help prevent spoofing
 
+- [Prerequisites](#prerequisites)
+- [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)
+- [How to handle subdomains?](#how-to-handle-subdomains)
+- [Troubleshooting SPF](#troubleshooting-spf)
+
+<!--
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+-->
 
 This article describes how to update an Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
 
-Using SPF helps to validate outbound email sent from your custom domain. It's a first step in setting up other recommended email authentication methods DMARC and DKIM (two further email authentication methods supported in Office 365).
+SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is). It's a first step in setting up the full recommended email authentication methods of SPF, [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
 
 ## Prerequisites
 
 > [!IMPORTANT]
-> If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your Internet domain registrar (ex. GoDaddy, Bluehost, web.com) to ask for help with DNS configuration of SPF (and any other email authentication method). *Also*, if you haven't bought, or don't use a custom URL (in other words the URL you and your customers browse to reach Office 365 ends in **onmicrosoft.com**), SPF has been set up for you in the Office 365 service. No further steps are required in that case. Thanks for reading.
+> If you are a **small business**, or are unfamiliar with IP addresses or DNS configuration, call your Internet domain registrar (ex. GoDaddy, Bluehost, web.com) & ask for help with *DNS configuration of SPF* (and any other email authentication method). <p> **If you don't use a custom URL** (and the URL used for Office 365 ends in **onmicrosoft.com**), SPF has already been set up for you in the Office 365 service.
 
-Before you create or update the SPF TXT record for Office 365 in external DNS, you need to gather some information needed to make the record. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Let's get started.
 
-Gather this information:
+The SPF TXT record for Office 365 will be made in external DNS for any custom domains or sub-domains. You need some information to make the record. Gather this information:
 
-- The current SPF TXT record for your custom domain, if one exists. For instructions, see [Gather the information you need to create Office 365 DNS records](../../admin/get-help-with-domains/information-for-dns-records.md).
+- The SPF TXT record for your custom domain, if one exists. For instructions, see [Gather the information you need to create Office 365 DNS records](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Go to your messaging server(s) and find out the External IP addresses (needed from all on-premises messaging servers). For example, **131.107.2.200**.
 
@@ -80,9 +87,9 @@ Gather this information:
    v=spf1 include:spf.protection.outlook.com -all
    ```
 
-   This is the most common SPF TXT record. This record works for just about everyone, regardless of whether your Microsoft datacenter is located in the United States, or in Europe (including Germany), or in another location.
+   **This is the most common SPF TXT record**. This record works for just about everyone, regardless of whether your Microsoft datacenter is located in the United States, or in Europe (including Germany), or in another location.
 
-   However, if you have purchased Office 365 Germany, part of Microsoft Cloud Germany, you should use the include statement from line 4 instead of line 2. For example, if you are fully-hosted in Office 365 Germany, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 4, and 7 and would look like this:
+   However, if you bought Office 365 Germany, part of Microsoft Cloud Germany, you should use the include statement from line 4 instead of line 2. For example, if you are fully-hosted in Office 365 Germany, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 4, and 7 and would look like this:
 
    ```text
    v=spf1 include:spf.protection.outlook.de -all
@@ -90,13 +97,13 @@ Gather this information:
 
    If you're already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you're migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change `include:spf.protection.outlook.com` to `include:spf.protection.outlook.de`.
 
-3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), and then click the link for your DNS host.
+3. Once you have formed your SPF TXT record, you need to update the record in DNS. **You can only have one SPF TXT record for a domain.** If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md), and then click the link for your DNS host.
 
 4. Test your SPF TXT record.
 
 ## How to handle subdomains?
 
-It is important to note that *you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain*.
+It's important to note that *you need to create a separate record for each subdomain as subdomains don't inherit the SPF record of their top level domain*.
 
 An additional wildcard SPF record (`*.`) is required for every domain and subdomain to prevent attackers from sending email claiming to be from non-existent subdomains. For example:
 
@@ -129,10 +136,14 @@ If you've already set up mail for Office 365, then you have already included Mic
 
 For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Office 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
-## Links to configure DKIM and DMARC
+## Next Steps:  configure DKIM and DMARC
 
  SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
 
 [DKIM](use-dkim-to-validate-outbound-email.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
 
 [DMARC](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
+
+ For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+*Please select 'This page' under 'Feedback'  if you have a feedback on this documentation.*
