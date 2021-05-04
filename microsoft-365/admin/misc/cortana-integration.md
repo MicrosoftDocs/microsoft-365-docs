@@ -13,7 +13,6 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -32,7 +31,7 @@ Moving forward, we're focusing Cortana on enterprise productivity.
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available worldwide (standard multi-tenant). For more information on finding the usage location, please visit [View additional property values for accounts](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
+- New Microsoft 365 experiences, such as the Briefing email and Play My Emails, will be enabled using Cortana enterprise services and fully comply with those promises. These features are currently available worldwide (standard multi-tenant). For more information on finding the usage location, please visit [View additional property values for accounts](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Users may connect to Cortana enterprise services described here through Cortana in Windows 10 (version 2004 and later), as well as client applications, such as Outlook for iOS and Android, subject to separate licensing terms. 
 
@@ -72,9 +71,9 @@ Cortana in Windows 10, version 2004 and later, meets the same enterprise-level p
 
 Admins can configure Cortana in Windows 10 for their organization using the Experience\AllowCortana MDM policy or via the Group Policy: Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana.
 
-Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform (UWP) app preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
+Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform (UWP) app preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store).
 
-[Learn more about Cortana in Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[Learn more about Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### Cortana voice assistance in Teams
 
@@ -96,7 +95,7 @@ Individual users can try out Cortana voice assistance in the Teams mobile app by
 
 4. Move the toggle to **On** or **Off**, depending on whether you want Cortana voice assistance on the device.
 
-[Learn more about Cortana voice assistance in Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
+[Learn more about Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams)
 
 ### Conversational AI in Outlook for iOS with Cortana
 
@@ -139,13 +138,13 @@ Cortana sends a personalized briefing email with tasks and commitments you made 
 
 ### How to opt out of Briefing email
 
-Admins can configure Briefing for their organization using [PowerShell](https://docs.microsoft.com/briefing/be-admin) in Exchange Online. Individuals can opt out of Cortana's Briefing email by selecting **Unsubscribe** in the footer of the message.
+Admins can configure Briefing for their organization using [PowerShell](/briefing/be-admin) in Exchange Online. Individuals can opt out of Cortana's Briefing email by selecting **Unsubscribe** in the footer of the message.
 
 [Learn more about the Briefing email](https://support.microsoft.com/help/4558259)
 
 We'll continue to introduce more experiences like the above to help increase your organization's productivity.
 
-[Learn more about Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
+[Learn more about Microsoft Compliance offerings](/compliance/regulatory/offering-home)
 
 ## How is the delivery of Cortana enterprise services different from the delivery of other Cortana features I may have previously experienced?
 

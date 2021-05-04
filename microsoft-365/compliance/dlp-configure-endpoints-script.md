@@ -22,7 +22,7 @@ description: Use a local script to deploy the configuration package on devices s
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 
 You can also manually onboard individual devices to Microsoft 365 Endpoint data loss prevention. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
@@ -49,13 +49,13 @@ You can also manually onboard individual devices to Microsoft 365 Endpoint data 
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 10.  Press the **Enter** key or click **OK**.
 
-For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
+For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
 
 ## Offboard devices using a local script
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
@@ -79,7 +79,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -107,5 +107,5 @@ Monitoring can also be done directly on the portal, or by using the different de
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
-- [Run a detection test on a newly onboarded Microsoft Defender ATP device](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

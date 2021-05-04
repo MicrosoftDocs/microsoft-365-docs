@@ -1,6 +1,6 @@
 ---
 title: Review and manage remediation actions in Microsoft Defender for Office 365
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
 ms.author: deniseb
@@ -32,8 +32,8 @@ As automated investigations on email & collaboration content result in verdicts,
 These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can undo a remediation action.
 
 **Applies to**
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## Approve (or reject) pending actions
 

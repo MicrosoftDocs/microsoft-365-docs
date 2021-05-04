@@ -12,26 +12,18 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commcerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- GEA150
-ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: "Learn how to make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
+ms.date: 03/30/2021
 ---
 
 # Change your organization's address, technical contact, and more
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
   
 You can make changes to your organization profile, such as your organization name, address, phone, and technical contact. **You must be a global admin to update this information.**
   

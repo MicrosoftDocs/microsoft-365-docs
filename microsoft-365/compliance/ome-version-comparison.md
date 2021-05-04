@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -22,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 # Compare versions of OME
 
 > [!IMPORTANT]
-> On February 28, 2021, Microsoft will deprecate support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
+> On February 28, 2021, Microsoft deprecated support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
 
 The rest of this article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
@@ -30,32 +29,20 @@ This article is part of a larger series of articles about Office 365 Message Enc
 
 ## Overview of AD RMS deprecation in Exchange Online
 
-Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
+Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
 
-Before you begin, review and assess the impact for your organization. If your organization is already using Azure Information Protection to encrypt email in Exchange Online, there is nothing for you to do. If you encrypt your email using Exchange mail flow rules, for example using Office 365 Message Encryption, you won't have to change your secure email. Otherwise, you'll need to prepare for AD RMS deprecation by switching to Azure Information Protection.
+To assess whether this deprecation impacts your organization, see [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). This article provides recommendations on migration options.
 
-### Prepare for AD RMS deprecation
-
-If you've already set up Azure Information Protection but you're not using it, enable the service using Exchange Online PowerShell. On your local computer, using a work or school account that has global administrator permissions in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
-
-To enable Azure Information Protection, use the Set-IrmConfiguration cmdlet by typing the following command.
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-If your organization has not yet set up Azure Information Protection, you'll need to migrate from AD RMS to Azure Information Protection. For instructions, see [Migrating from AD RMS to Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
-
-## Side-by-side comparison of features and capabilities
+## Side-by-side comparison of OME features and capabilities
 
 |           **Situation**           | **Legacy OME**    | **IRM in AD RMS**        | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
-|*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, Encrypt-Only option, and custom templates|
+|*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, and custom templates|
 |*Recipient type*                   |Internal and external recipients|Internal recipients only         |Internal and external recipients|
 |*Experience for internal recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|Native inline experience in Outlook clients|Native inline experience for recipients in the same organization using Outlook clients.  Recipients can read message from OME portal using clients other than Outlook (no download or app required).|
 |*Experience for external recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|N/A|Native inline experience for Microsoft 365 recipients. All other recipients can read message from OME portal (no download or app required).|
-|*Attachment permissions*           |No restrictions on attachments|Attachments are protected|Attachments are protected for the Do Not Forward option and custom templates. Admins can choose whether attachments for the Encrypt-Only option are protected or not.|
+|*Attachment permissions*           |No restrictions on attachments|Attachments are protected|Attachments are protected for the Do Not Forward option and custom templates. Admins can choose whether attachments for the encrypt-only option are protected or not.|
 |*Bring your own key (BYOK) support*|None                |None               |BYOK supported          |
 ||
 
@@ -63,7 +50,7 @@ If your organization has not yet set up Azure Information Protection, you'll nee
 
 The new capabilities provide the following advantages:
 
-- Ability to use Encrypt-Only (which enables secure collaboration), Do Not Forward, and custom restrictions.
+- Ability to use the encrypt-only option (which enables secure collaboration), Do Not Forward option, and custom restrictions.
 - Senders can send mail encrypted with the new capabilities manually from Outlook Desktop, Outlook for Mac and Outlook on the web clients.
 - Microsoft 365 recipients get to use an inline experience in supported Outlook clients. Alternatively, admins can choose to show Microsoft 365 recipients a branded experience.
 - Accounts outside of Microsoft 365, such as Gmail, Yahoo, and Microsoft accounts, are federated with the OME portal, which provides a better user experience for these recipients. All other identities use a one-time pass code to access encrypted messages.

@@ -6,25 +6,28 @@ ms.author: cabailey
 author: cabailey
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
+recommendations: false
 description: "Implement Microsoft Information Governance capabilities to govern your data for compliance or regulatory requirements."
 ---
 
 # Microsoft Information Governance in Microsoft 365
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
 ![Govern your data - information governance and records management](../media/information-governance-records-management.png)
 
 Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
+
+To help you comply with data privacy regulations, we’ve designed a workflow to guide you through an end-to-end process to plan and implement capabilities across Microsoft 365, including secure access, threat protection, information protection, and data governance. For more information, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## Information governance
 
@@ -44,4 +47,3 @@ To manage high-value content for legal, business, or regulatory obligations:
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
 |[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that supports the full lifecycle of your content with records declaration, retention, and disposition <br /><br />Example scenario: [Disposition of records](disposition.md#disposition-of-records)|[Get started with records management](get-started-with-records-management.md) |
-

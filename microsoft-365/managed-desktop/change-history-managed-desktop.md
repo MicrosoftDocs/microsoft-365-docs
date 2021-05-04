@@ -19,6 +19,28 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## March 2021
+New or changed article | Description
+--- | ---
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated article
+[First-run experience with Autopilot and the Enrollment Status Page](get-started/esp-first-run.md) | Updated article
+[Windows 10 location service](get-started/device-location.md) | New article
+[Device images](service-description/device-images.md) | New article
+[Microsoft Managed Desktop supported regions](service-description/regions-languages.md) | Updated article
+[Localize the user experience](get-started/localization.md) | New article
+
+## February 2021
+New or changed article | Description
+--- | ---
+[Access the admin portal](get-started/access-admin-portal.md) | Updated article
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated article
+[Device requirements](service-description/device-requirements.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+[Microsoft OneDrive](get-started/onedrive.md) | New article
+[Compliance](intro/compliance.md) | Updated
+[Microsoft 365 Apps for enterprise](get-started/m365-apps.md) | Updated article
+[Readiness assessment tools](get-ready/readiness-assessment-tool.md) | Updated article
+
 ## January 2021
 New or changed article | Description
 --- | ---
@@ -35,7 +57,7 @@ New or changed article | Description
 ## December 2020
 New or changed article | Description
 --- | ---
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Work with reports](working-with-managed-desktop/reports.md) | Updated article
 [Privacy and personal data](service-description/privacy-personal-data.md) | Updated article
 [Compliance](intro/compliance.md) | Updated article
@@ -183,8 +205,8 @@ New or changed article | Description
 [Usage insights](working-with-managed-desktop/usage-insights.md) | New article
 [Reliability insights](working-with-managed-desktop/reliability-insights.md) | New article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
-[Microsoft Managed Desktop main page](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Updated article
-[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated article
+[Microsoft Managed Desktop main page](./index.yml) | Updated article
+[What is Microsoft Managed Desktop?](./intro/index.md) | Updated article
 [Get your users ready to use devices](get-started/get-started-devices.md) | Updated article
 [Exceptions to the service plan](service-description/customizing.md) | Updated article
 
@@ -301,5 +323,4 @@ New or changed article | Description
 [Support for Microsoft Managed Desktop](service-description/support.md)<br />and [User support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
-Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md). 
-
+Content reorganized: added section for [Microsoft Managed Desktop service description](service-description/index.md).

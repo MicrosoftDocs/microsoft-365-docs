@@ -1,22 +1,23 @@
 ---
-title: "DLP policy conditions, exceptions, and actions (preview)"
+title: "DLP policy conditions, exceptions, and actions"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: None
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
+recommendations: false
 description: "learn about dlp policy conditions and exceptions"
 ---
 
-# DLP policy conditions, exceptions, and actions (preview)
+# DLP policy conditions, exceptions, and actions
 
 Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to. Actions define what happens as a consequence of a condition of exception being met.
 
@@ -51,15 +52,17 @@ The tables in the following sections describe the conditions and exceptions that
 | Sender address matches patterns    | condition: *FromAddressMatchesPatterns* <br/> exception: *ExceptFromAddressMatchesPatterns*       |      Patterns   |  Messages where the sender's email address contains text patterns that match the specified regular expressions.  |
 |Sender domain is  |  condition: *SenderDomainIs* <br/> exception: *ExceptIfSenderDomainIs*       |DomainName         |     Messages where the domain of the sender's email address matches the specified value. If you need to find sender domains that *contain* the specified domain (for example, any subdomain of a domain), use **The sender address matches**(*FromAddressMatchesPatterns*) condition and specify the domain by using the syntax: '\.domain\.com$'.    |
 |Sender scope    | condition: *FromScope* <br/> exception: *ExceptIfFromScope*    | UserScopeFrom    |    Messages that are sent by either internal or external senders.    |
+|The sender's specified properties include any of these words|condition: *SenderADAttributeContainsWords* <br/> exception: *ExceptIfSenderADAttributeContainsWords*|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of the sender contains any of the specified words.|
+|The sender's specified properties match these text patterns|condition: *SenderADAttributeMatchesPatterns* <br/> exception: *ExceptIfSenderADAttributeMatchesPatterns*|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.|
 
 ### Recipients
 
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell** |	**property type** |	**description**|
 |---------|---------|---------|---------|
 |Recipient is|	condition: *SentTo* <br/> exception: *ExceptIfSentTo* | Addresses |	Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
-|Recipient domain is|	condition: *RecipientDomainIs* <br/> exception: *ExceptIfRecipientDomainIs* |	DomainName |	Messages where the domain of the sender's email address matches the specified value.|
-|Recipient address contains words|	condition: *RecipientAddressContainsWords* <br/> exception: *ExceptIfRecipientAddressContainsWords*|	Words|	Messages that contain the specified words in the recipient's email address. <br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
-|Recipient address matches patterns| condition: *RecipientAddressMatchesPatterns* <br/> exception: *ExceptIfRecipientAddressMatchesPatterns*|	Patterns	|Messages where a recipient's email address contains text patterns that match the specified regular expressions. <br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
+|Recipient domain is|	condition: *RecipientDomainIs* <br/> exception: *ExceptIfRecipientDomainIs* |	DomainName |	Messages where the domain of the recipient's email address matches the specified value.|
+|Recipient address contains words|	condition: *AnyOfRecipientAddressContainsWords* <br/> exception: *ExceptIfAnyOfRecipientAddressContainsWords*|	Words|	Messages that contain the specified words in the recipient's email address. <br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
+|Recipient address matches patterns| condition: *AnyOfRecipientAddressMatchesPatterns* <br/> exception: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|	Patterns	|Messages where a recipient's email address contains text patterns that match the specified regular expressions. <br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Sent to member of|	condition: *SentToMemberOf* <br/> exception: *ExceptIfSentToMemberOf*|	Addresses|	Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 
 ### Message subject or body
@@ -85,6 +88,8 @@ The tables in the following sections describe the conditions and exceptions that
 |Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/> exception: *ExceptIfDocumentNameMatchesPatterns*|	Patterns	|Messages where an attachment's file name contains text patterns that match the specified regular expressions.|
 |Document property is|condition: *ContentPropertyContainsWords* <br/> exception: *ExceptIfContentPropertyContainsWords*	|Words|	Messages or documents where an attachment's file extension matches any of the specified words.|
 |Document size equals or is greater than| condition: *DocumentSizeOver* <br/> exception: *ExceptIfDocumentSizeOver*|	Size	|Messages where any attachment is greater than or equal to the specified value.|
+|Any attachment's content includes any of these words| condition: *DocumentContainsWords* <br/> exception: *ExceptIfDocumentContainsWords* |`Words`|Messages where an attachment contains the specified words.|
+|Any attachments content matches these text patterns|condition: *DocumentMatchesPatterns* <br/> exception: *ExceptIfDocumentMatchesPatterns* |`Patterns`|Messages where an attachment contains text patterns that match the specified regular expressions. |
 
 ### Message Headers
 
@@ -97,11 +102,11 @@ The tables in the following sections describe the conditions and exceptions that
 
 |**condition or exception in DLP**|	**condition/exception parameters in Microsoft 365 PowerShell**|	**property type**	|**description**|
 |---------|---------|---------|---------|
-|Message size over|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*|	Size	|Messages where the total size (message plus attachments) is greater than or equal to the specified value. <br/>**Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 | With importance    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Importance    | Messages that are marked with the specified importance level.    |
 | Content character set contains words    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages that have any of the specified character set names.    |
-| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Learn about data loss prevention](./dlp-learn-about-dlp.md) |
 | Message type matches    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messages of the specified type.    |
+|The message size is greater than or equal to| condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver* |`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 
 ## Actions for DLP policies
 
@@ -117,9 +122,6 @@ This table describes the actions that are available in DLP.
 |Forward the message for approval to specific approvers| Moderate|First property: *ModerateMessageByUser*</br>Second property: *Addresses*|The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator. This parameter uses the syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |Add recipient|AddRecipients|First property: *Field*</br>Second property: *Addresses*| Adds one or more recipients to the To/Cc/Bcc field of the message. This parameter uses the syntax: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |Add the sender’s manager as recipient|AddRecipients | First property: *AddedManagerAction*</br>Second property: *Field* | Adds the sender's manager to the message as the specified recipient type ( To, Cc, Bcc ), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.    |
-Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
-
-
-
-
+Prepend subject    |PrependSubject    |String    |Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.</br>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.    
+|Apply HTML disclaimer    |ApplyHtmlDisclaimer    |First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*    |Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
+|Remove Office 365 Message Encryption and rights protection    | RemoveRMSTemplate | n/a| Removes Office 365 encryption applied on an email|
