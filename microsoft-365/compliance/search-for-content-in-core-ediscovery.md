@@ -25,22 +25,22 @@ After a Core eDiscovery case is created and people of interest in the case are p
 
 To create a Core eDiscovery search:
   
-1. Go to <[https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
+1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
 
 3. On the **Core eDiscovery** page, select the case that you want to create an associated search, and then click **Open case**.
 
-4. On the **Home** page for the case, click the **Searches** tab.
-  
-5. On the **Search** page, click **New search**.
+4. On the **Home** page for the case, click the **Searches** tab, and then click **New search**.
+
+   ![Click New search to create a  Core eDiscovery search search](../media/CoreeDiscoverySearch1.png)
 
    > [!NOTE]
    > The **Search by ID list** option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search, you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list search](csv-file-for-an-id-list-content-search.md).
 
-6. Type a name for the search, an optional description that helps identify the search. The name of the search must be unique in your organization.
+5. In the **New search** wizard, type a name for the search, and an optional description that helps identify the search. The name of the search must be unique in your organization.
 
-7. On the **Locations** page, choose the content locations that you want to search. You can search mailboxes, sites, and public folders.
+6. On the **Locations** page, choose the content locations that you want to search. You can search mailboxes, sites, and public folders.
 
     ![Choose the content locations to place on hold](../media/ContentSearchLocations.png)
   
@@ -52,7 +52,7 @@ To create a Core eDiscovery search:
   
    4. Keep this checkbox selected to search for Teams content for on-premises users. For example, if you search all Exchange mailboxes in the organization and this checkbox is selected, the cloud-based storage used to store Teams chat data for on-premises users will be included in the scope of the search. For more information, see [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-8. On the **Define your search conditions** page, type a keyword query and add conditions to the search query if necessary.
+7. On the **Define your search conditions** page, type a keyword query and add conditions to the search query if necessary.
 
    ![Configure the search query](../media/ContentSearchQuery.png)
 
@@ -67,13 +67,13 @@ To create a Core eDiscovery search:
 
    3. You can add search conditions to narrow a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (**c:c**) that is similar in functionality to the **AND** operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the results. This is how conditions help to narrow your results. For a list and description of conditions that you can use in a search query, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions).
 
-9. Review the search settings (and edit if necessary), and then submit the search to start it.
+8. Review the search settings (and edit if necessary), and then submit the search to start it.
 
 After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
 
 ## More information about searching content locations
 
-- When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of 3 characters) in the search box, select the check box next to the name, and then click **Choose**.
+- When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of three characters) in the search box, select the check box next to the name, and then click **Choose**.
 
 - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
 
