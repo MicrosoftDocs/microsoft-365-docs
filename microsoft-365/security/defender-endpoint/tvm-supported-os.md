@@ -1,7 +1,7 @@
 ---
 title: Supported operating systems and platforms for threat and vulnerability management
 description: Ensure that you meet the operating system or platform requisites for threat and vulnerability management, so the activities in your all devices are properly accounted for.
-keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm,
+keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -36,7 +36,7 @@ Before you begin, ensure that you meet the following operating system or platfor
 >[!NOTE]
 >The supported systems and platforms for threat and vulnerability management may be different from the [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md) list.
 
-Supported OS | Operating system vulnerabilities | Software product vulnerabilities | OS configuration assessment | Security controls configuration assessment | Software porduct configuration assessment
+Supported operating systems | Operating system vulnerabilities | Software product vulnerabilities | Operating system configuration assessment | Security controls configuration assessment | Software porduct configuration assessment
 :---|:---|:---|:---|:---|:---
 Windows 7 | Supported | _Not supported_ |_Not supported_ | _Not supported_ | _Not supported_
 Windows 8.1 | Supported | Supported | Supported | Supported| Supported |
