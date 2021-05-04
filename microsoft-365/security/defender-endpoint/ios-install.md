@@ -71,6 +71,31 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center3](images/ios-deploy-3.png)
 
+## Auto-Onboarding of VPN profile (Simplified Onboarding)
+
+> [!NOTE]
+> Auto-onboarding of VPN profile is currently in preview and the steps mentioned in this section may be substantially modified before it's commercially released.
+
+Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. Note that VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+
+1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Configuration Profiles** -> **Create** -> **iOS store app** and click **Select**.
+1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
+1. Type a name for the profile and click **Next**.
+1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
+    - Connection Name = Microsoft Defender for Endpoint
+    - VPN server address = 127.0.0.1
+    - Auth method = "Username and password"
+    - Split Tunneling = Disable
+    - VPN identifier = com.microsoft.scmx
+    - In the key-value pairs, enter the key **AutoOnboard** and set the value to **True**.
+    - Type of Automatic VPN = On-demand VPN
+    - Click **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
+
+    ![A screen shot of VPN profile configuration](images/ios-deploy-8.png)
+
+1. Click Next and assign the profile to targeted users.
+1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
+
 ## Complete onboarding and check status
 
 1. Once Defender for Endpoint on iOS has been installed on the device, you

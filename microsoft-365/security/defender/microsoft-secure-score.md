@@ -39,7 +39,7 @@ Secure Score helps organizations:
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
+![Secure Score homepage](../../media/secure-score/secure-score-home-page.png)
 
 ## How it works
 

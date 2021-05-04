@@ -539,9 +539,9 @@
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
-###### [Remediation Activity]()
+###### [Remediation activity]()
 ####### [Remediation activity methods and properties](get-remediation-methods-properties.md)
-####### [Get one remediation activity by Id](get-remediation-one-activity.md)
+####### [Get one remediation activity by ID](get-remediation-one-activity.md)
 ####### [List all remediation activities](get-remediation-all-activities.md)
 ####### [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 
@@ -653,6 +653,6 @@
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 ##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
 # [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
