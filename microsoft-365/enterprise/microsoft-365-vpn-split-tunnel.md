@@ -57,6 +57,8 @@ The essence of this approach is to provide a simple method for enterprises to mi
 
 For full implementation guidance, see [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
+For a step-by-step process to configure Microsoft 365 for remote workers, see [Set up your infrastructure for remote work](..\solutions\empower-people-to-work-remotely.md)
+
 ## The VPN split tunnel strategy
 
 Traditional corporate networks are often designed to work securely for a pre-cloud world where most important data, services, applications are hosted on premises and are directly connected to the internal corporate network, as are the majority of users. Thus network infrastructure is built around these elements in that branch offices are connected to the head office via _Multiprotocol Label Switching (MPLS)_ networks, and remote users must connect to the corporate network over a VPN to access both on premises endpoints and the Internet. In this model, all traffic from remote users traverses the corporate network and is routed to the cloud service through a common egress point.
