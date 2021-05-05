@@ -135,3 +135,5 @@ The point of the data classification reporting is to provide visibility into the
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about trainable classifiers (preview)](classifier-learn-about.md)
+
+To learn how to use data classification to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

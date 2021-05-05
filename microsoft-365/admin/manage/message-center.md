@@ -176,7 +176,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon. <br><br/>You can also choose the emails you want to get, as well as a weekly digest of services you select.
 
@@ -189,7 +189,7 @@ If administration is distributed across your organization, you may not want or n
 We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
   
 > [!NOTE]
-> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language. 
+> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language.
 
 ## Choose columns
 
@@ -335,7 +335,6 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Unsubscribe from Message center emails
 
 1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
-
     - De-select the **Send a weekly digest of my messages** checkbox.
     - Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** checkbox is not selected.
     -   To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** checkbox is not selected.  (Data privacy messages are not included in the weekly digest.)

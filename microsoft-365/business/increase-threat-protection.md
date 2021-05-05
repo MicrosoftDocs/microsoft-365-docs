@@ -93,7 +93,7 @@ For more information, see:
 
 Hackers who gain access to a user's mailbox can steal mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. To prevent this from happening, configure a mail flow rule.
 
-To create a mail transport rule, either watch [this short video](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
+To create a mail transport rule, either watch [this short video](../business-video/stop-email-auto-forward.md) or follow these steps:
 
 1. In the Microsoft 365 admin center, select **Admin centers** \> **Exchange**.
 
@@ -122,7 +122,7 @@ If you've configured one or more custom domains for your Office 365 or Microsoft
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [this short training video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [this short training video](../business-video/setup-anti-phishing.md), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
 
@@ -151,7 +151,7 @@ To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create an Safe Attachment policy, either watch [this short video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
+To create an Safe Attachment policy, either watch [this short video](../business-video/safe-attachments.md), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account.
 
@@ -187,7 +187,7 @@ We recommend that you do the following:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To set up Safe Links, watch [this short training video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
+To set up Safe Links, watch [this short training video](../business-video/safe-links.md), or complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account.
 
