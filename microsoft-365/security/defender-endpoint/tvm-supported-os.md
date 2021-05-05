@@ -40,7 +40,7 @@ Before you begin, ensure that you meet the following operating system or platfor
 
 In the following table, "Yes" indicates that a threat and vulnerability management capability is supported for the OS or platform on that row; "No" indicates that it is not supported.
 
-Operating system or platform | OS vulnerabilities | Software product vulnerabilities | OS configuration assessment | Security controls configuration assessment | Software product configuration assessment
+Supported OS or platform | OS vulnerabilities capable | Software product vulnerabilities capable | OS configuration assessment capable | Security controls configuration assessment capable | Software product configuration assessment capable
 :---|:---|:---|:---|:---|:---
 Windows 7 | Yes | No | No | No | No
 Windows 8.1 | Yes | Yes | Yes | Yes| Yes
