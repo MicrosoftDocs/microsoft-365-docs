@@ -18,7 +18,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Threat Explorer and Real-time detection basics
+# Threat Explorer and Real-time detections basics
 
 In this article:
 
