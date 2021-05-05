@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 05/04/2021
+ms.date: 05/05/2021
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
@@ -20,12 +20,14 @@ ms.prod: m365-security
 
 # Email security with Threat Explorer in Microsoft Defender for Office 365
 
+In this article:
+
 - [View malware detected in email](#view-malware-detected-in-email)
 - [View phishing URL and click verdict data](#view-phishing-url-and-click-verdict-data)
 - [Start automated investigation and response](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detection basics](real-time-detections.md). 
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detections basics](real-time-detections.md). 
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features. 
 

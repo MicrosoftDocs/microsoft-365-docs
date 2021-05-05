@@ -7,13 +7,13 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 05/04/2021
+ms.date: 05/05/2021
 
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Threat Explorer and Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Threat Explorer or Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -21,13 +21,15 @@ ms.prod: m365-security
 
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
 
+In this article:
+
 - [Threat Explorer walk-through](#threat-explorer-walk-through)
 - [Email investigation](#email-investigation)
 - [Email remediation](#email-remediation)
 - [Improvements to threat hunting experience](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detection basics](real-time-detections.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections basics](real-time-detections.md).
 
 
 **Applies to**

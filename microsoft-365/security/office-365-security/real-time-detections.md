@@ -1,5 +1,5 @@
 ---
-title: Threat Explorer and Real-time detection basics in Microsoft Defender for Office 365
+title: Threat Explorer and Real-time detections basics in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 05/04/2021
+ms.date: 05/05/2021
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
@@ -20,13 +20,15 @@ ms.prod: m365-security
 
 # Threat Explorer and Real-time detection basics
 
+In this article:
+
 - [Differences between Threat Explorer and Real-time detections](#differences-between-threat-explorer-and-real-time-detections)<br/>
 - [Required licenses and permissions](#required-licenses-and-permissions)
 
 > [!NOTE]
-> This is part of a three-article series on **threat hunting**, **email security**, and **Real-time detections**. The other two articles are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
-This article explains the difference between threat exploration and real-time detections reporting, and the licenses and permissions that are needed.
+This article explains the difference between threat exploration and real-time detections reporting, and the licenses and permissions that are required.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
