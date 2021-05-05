@@ -210,7 +210,7 @@
 #### [Overview](next-gen-threat-and-vuln-mgt.md)
 #### [Get started]()
 ##### [Permissions & prerequisites](tvm-prerequisites.md)
-##### [Supported operating systems and platforms](tvm-supported-os.md)
+##### [Supported operating systems platforms and capabilities](tvm-supported-os.md)
 ##### [Assign device value](tvm-assign-device-value.md)
 #### [Assess your security posture]()
 ##### [Dashboard insights](tvm-dashboard-insights.md)
