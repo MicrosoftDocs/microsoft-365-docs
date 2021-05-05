@@ -1,7 +1,7 @@
 ---
 title: Get software by Id
 description: Retrieves a list of exposure scores by device group.
-keywords: apis, graph api, supported apis, get, software, mdatp tvm api
+keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

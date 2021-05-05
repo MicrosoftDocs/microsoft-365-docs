@@ -7,11 +7,13 @@
       href: productivity-illustrations.md
     - name: Microsoft cloud architecture models
       href: cloud-architecture-models.md
+    - name: Infographics for users
+      href: infographics-for-users.md
     - name: Architecture icons and templates
       href: architecture-icons-templates.md
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Empower remote workers with Microsoft 365
+    - name: Set up your infrastructure for remote work
       items:
       - name: Overview   
         href: empower-people-to-work-remotely.md

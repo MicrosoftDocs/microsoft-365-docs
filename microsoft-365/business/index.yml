@@ -52,7 +52,7 @@ conceptualContent:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+        - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
@@ -76,7 +76,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+        - url: ../business-video/install-office.md
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -150,7 +150,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+        - url: ../business-video/create-sensitivity-labels.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)

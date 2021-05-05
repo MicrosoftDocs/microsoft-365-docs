@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint on iOS 
 ms.reviewer: 
-description: Describes how to install and use Microsoft Defender for Endpoint for iOS
-keywords: microsoft, defender, atp, ios, overview, installation, deploy, uninstallation, intune
+description: Describes how to install and use Microsoft Defender for Endpoint on iOS
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -57,6 +57,9 @@ iOS devices along with other platforms.
     > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on iOS. Currently only enrolled devices are supported for enforcing Defender for Endpoint on iOS related device compliance policies in Intune.
 
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
+
+**Network Requirements**
+- For Microsoft Defender for Endpoint on iOS to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **System Requirements**
 

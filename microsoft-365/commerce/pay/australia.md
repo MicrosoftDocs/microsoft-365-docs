@@ -37,3 +37,5 @@ SWIFT Code: CITIAU2X\
 BSB Code: 248053\
 Account Number: 100001074\
 Account Name: MICROSOFT
+
+Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.

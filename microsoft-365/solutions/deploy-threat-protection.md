@@ -1,7 +1,7 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
 description: Get an overview of threat protection services and security capabilities in Microsoft 365 E5. Protect your user accounts, devices, email content, and more with Microsoft 365 E5.
-keywords: advanced threat protection, security, microsoft 365 E5, solution, protect devices, defender
+keywords: microsoft threat protection, setup, advanced threat protection, security, microsoft 365 E5, protect devices, microsoft defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -21,9 +21,9 @@ f1.keywords: NOCSH
 
 # Deploy threat protection capabilities across Microsoft 365 E5
 
-This solution describes powerful threat protection capabilities across Microsoft 365 E5. Read this solution to get an overview of what's included, how it works, and how to get started deploying these capabilities in your organization.
+This solution describes powerful threat protection capabilities across Microsoft 365 E5 and explains why threat protection is important. Read this article to get an overview of threat protection in Microsoft 365 E5 and how to approach setup and configuration for your organization.
 
-## Why protecting against threats is important 
+## Why threat protection is important 
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. Microsoft 365 E5 can help. 
 
@@ -55,7 +55,7 @@ The following illustration depicts a recommended path for deploying these indivi
 |Solution/capabilities  |Description  |
 |---------|---------|
 |Multi-factor authentication and Conditional Access     |Protect against compromised identities and devices. Begin with this protection because it's foundational. The configuration recommended in this guidance includes Azure AD Identity Protection as a prerequisite.     |
-|Microsoft Defender for Identity     |  A cloud-based security solution that leverages your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | 
+|Microsoft Defender for Identity     |  A cloud-based security solution that uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Microsoft Defender for Identity next because it protects your on-premises and cloud infrastructure, has no dependencies or prerequisites, and can provide immediate security benefits. | 
 |Microsoft Defender for Office 365     | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protections for malware, phishing, spoofing, and other attack types. Configuring Microsoft Defender for Office 365 is recommended next because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. <p>**NOTE**: Make sure to configure the threat protection capabilities that are included in all Office 365 subscriptions (Exchange Online Protection).       |
 |Microsoft Defender for Endpoint    | An endpoint protection platform that helps prevent, detect, investigate, and respond to advanced threats.  Defender for Endpoint can take some time to deploy, but configuration can be done in parallel with other capabilities.   |
 |Microsoft Cloud App Security     |   A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time.       | 
@@ -69,7 +69,7 @@ The following diagram illustrates the high-level process for deploying threat pr
 
 ![Process for deploying threat protection capabilities](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-To make sure your organization has the best protection possible, set up and deploy your security solution by using a process that includes the following steps:
+To make sure your organization has the best protection possible, set up and deploy your security solution with a process that includes the following steps:
 
 1. [Set up multi-factor authentication and Conditional Access policies](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies).
 2. [Configure Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
@@ -84,6 +84,6 @@ Your threat protection features can be configured in parallel, so if you have mu
 
 ## Next step
 
-Proceed to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
+Continue to [Configure threat protection capabilities across Microsoft 365](deploy-threat-protection-configure.md).
 
 
