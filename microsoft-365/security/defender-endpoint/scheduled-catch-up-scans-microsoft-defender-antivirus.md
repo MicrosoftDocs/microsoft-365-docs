@@ -97,7 +97,7 @@ Scheduled scans run on the day and time that you specify. You can use Group Poli
 |Scan | Specify the scan type to use for a scheduled scan | Quick scan |
 |Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
 |Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
-|Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled |
+|Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 4 hours. <p>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
 
 
 ### Use PowerShell cmdlets to schedule scans
@@ -125,10 +125,8 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-See the following for more information and allowed parameters:
+See the following article for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-
 
 
 ## Start scheduled scans only when the endpoint is not in use
