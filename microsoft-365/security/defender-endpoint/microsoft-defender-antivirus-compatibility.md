@@ -15,7 +15,8 @@ ms.reviewer: tewchen, pahuijbr, shwjha
 ms.topic: article
 manager: dansimp
 ms.technology: mde
-ms.date: 04/23/2021
+ms.date: 05/05/2021
+ms.topic: article
 ---
 
 # Microsoft Defender Antivirus compatibility
@@ -28,15 +29,15 @@ ms.date: 04/23/2021
 
 ## Overview
 
-Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) together with your antivirus protection.
+Microsoft Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10. But what happens when another (non-Microsoft) antivirus/antimalware solution is used? It depends on whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) together with your antivirus protection.
 
-- If your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint, then Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are neither detected nor remediated by Microsoft Defender Antivirus. Note that this case does not apply to endpoints running Windows Server.
+- If your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, and those devices are also onboarded to Defender for Endpoint, then Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus. **NOTE**: This particular scenario does not apply to endpoints running Windows Server.
 
-- If your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, and those devices are also onboarded to Defender for Endpoint, then Microsoft Defender Antivirus goes into passive mode automatically. In this case, detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus. Note that this case does not apply to endpoints running Windows Server.
+- If your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint, then Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are neither detected nor remediated by Microsoft Defender Antivirus. **NOTE**: This particular scenario does not apply to endpoints running Windows Server.
 
-- If your organization's endpoints are onboarded to Defender for Endpoint, you're using a non-Microsoft antivirus/antimalware solution, and [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) is enabled, then Defender for Endpoint blocks and remediates malicious artifacts.
+- If your organization's endpoints protected by a non-Microsoft antivirus/antimalware solution, and those devices are also onboarded to Defender for Endpoint with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then Defender for Endpoint blocks and remediates malicious artifacts. **NOTE**: This particular scenario does not apply to Windows Server 2016.
 
-- If your organization's endpoints are running Windows Server with a non-Microsoft antivirus/antimalware solution, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. You'll have to configure your Windows Server endpoints appropriately.
+- If your organization's endpoints are running Windows Server, and those endpoints are protected by a non-Microsoft antivirus/antimalware solution, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. You'll have to configure your Windows Server endpoints appropriately. On Windows Server, version 1803 or newer, and Windows Server 2019, you can configure Microsoft Defender Antivirus to run in passive mode. On Windows Server 2016, passive mode is not supported.
 
 ## Antivirus and Microsoft Defender for Endpoint
 
