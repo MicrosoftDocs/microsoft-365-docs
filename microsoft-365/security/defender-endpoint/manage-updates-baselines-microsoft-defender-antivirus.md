@@ -95,7 +95,7 @@ No known issues
 </details>
 
 <details>
-<summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
+<summary> March-2021 (Platform: 4.19.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 1, 2021**  
@@ -113,7 +113,7 @@ No known issues
 No known issues  
 <br/>
 </details><details>
-<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
+<summary> February-2021 (Platform: 4.19.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
 &ensp;Released: **March 9, 2021**  
