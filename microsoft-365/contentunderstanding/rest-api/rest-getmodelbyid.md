@@ -51,7 +51,7 @@ For GET, no request body is needed.
 
 ### Get information about the Contoso Contract model
 
-In this sample, the ID of the Contoso Contract document understanding model is `27c5fcba-abfd-4c34-823d-0b4a48f7ffe6`.
+In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 
 #### Sample request
 
