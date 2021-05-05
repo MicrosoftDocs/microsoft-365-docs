@@ -82,3 +82,5 @@ This section explains how to allow users to send email on behalf of a group in t
 [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
 [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)
+
+[How to Send email as a distribution list](https://docs.microsoft.com/microsoft-365/admin/manage/send-email-as-distribution-list)
