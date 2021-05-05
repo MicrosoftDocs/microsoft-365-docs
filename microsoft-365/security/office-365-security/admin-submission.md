@@ -27,7 +27,7 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, admins can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
@@ -50,9 +50,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  - **Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
     Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this article.
 
@@ -73,7 +73,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
    - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
    > [!NOTE]
-   > Admins with Defender for Office 365 Plan 1 or Plan 2 are able to submit messages as old as 30 days. Other admins will only be able to go back 7 days.
+   > The ability to submit messages as old as 30 days has been temporarily suspended for Defender for Office 365 customers. Admins will only be able to go back 7 days.
 
 2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
@@ -85,7 +85,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![URL submission example](../../media/submission-flyout-email.PNG)
+   ![New URL submission example](../../media/submission-flyout-email.PNG)
 
 ### Send a suspect URL to Microsoft
 
@@ -99,7 +99,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. When you're finished, click the **Submit** button.
 
-   ![Email submission example](../../media/submission-url-flyout.png)
+   ![New Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected file to Microsoft
 
@@ -115,11 +115,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![Attachment submission example](../../media/submission-file-flyout.PNG)
+   ![New Attachment submission example](../../media/submission-file-flyout.PNG)
 
-## View admin submissions
+## View items Submitted for analysis
 
-In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Admin submissions** tab, and then click **New submission**.
+In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Submitted for analysis** tab
 
 Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
@@ -131,7 +131,7 @@ To change the filter criteria, click the **Submission ID** button and choose one
 - **Submission type**
 - **Status**
 
-![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
@@ -225,7 +225,7 @@ To change the filter criteria, click the **Sender** button and choose one of the
 - **Submission type**
 - **Sender IP**
 
-![Filter options for user submissions](../../media/user-submissions-filter-options.png)
+![New Filter options for user submissions](../../media/user-submissions-filter-options.png)
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
@@ -250,6 +250,9 @@ Near the top of the page, you can enter a start date, an end date, and you can f
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
+> [!NOTE]
+> If organizations are configured to send to custom mailbox only, reported messages will not be sent for rescan and results in the User reported messages portal will always be empty.
+
 ## Undo user submissions
 
 Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
@@ -258,11 +261,11 @@ Once a user submits a suspicious email to the custom mailbox, the user and admin
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis. This effectively moves a user submission to an admin submission.
 
-On the **Custom mailbox** tab, select a message in the list, click the **Action** button, and make one of the following selections:
+On the **User reported messages** tab, select a message in the list, click the **Action** button, and make one of the following selections:
 
 - **Report clean**
 - **Report phishing**
 - **Report malware**
 - **Report spam**
 
-![Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
+![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)

@@ -14,22 +14,17 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
+ms.date: 04/02/2021
 ---
 
 # Buy or manage add-ons
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 
@@ -46,7 +41,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 
 Use the following steps to find and buy add-ons. The list only includes add-ons that are available to you. This list is based on your currently active subscriptions, and any other existing add-ons you already have. If an add-on isn’t on the list, it’s not available to buy.
 
-For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. At the bottom of the **Purchase services** page, in the **Add-ons** section, find the add-on that you want to buy, and select **Details**.

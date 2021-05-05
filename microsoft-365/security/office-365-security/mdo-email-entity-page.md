@@ -11,10 +11,10 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customers can now get a 360-degree view of each email with email entity page. 
+description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
 
@@ -30,10 +30,10 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 Either of the existing Office Security and Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
 
-|Center  |URL  |Navigation  |
-|---------|---------|---------|
-|Security & Compliance |protection.office.com | Threat Management > Explorer   |
-|Microsoft 365 security center |security.microsoft.com | Email & Collaboration > Explorer |
+|Center|URL|Navigation|
+|---|---|---|
+|Security & Compliance |protection.office.com|Threat Management \> Explorer|
+|Microsoft 365 security center |security.microsoft.com|Email & Collaboration \> Explorer|
 
 In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -75,22 +75,23 @@ The tabs along the top of the entity page will allow you to investigate email ef
 There are new capabilities that come with this email entity page. Here's the list.
 
 ### Email preview for Cloud mailboxes
-Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won’t be able to preview those emails either.
+
+Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
->Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in Threat Explorer.
+> Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in Threat Explorer.
 
 ### Detonation details
 
 These details are specific to email attachments and URLs.
 
 Users will see enriched detonation details for known malicious attachments or hyperlinks found in their mailboxes, including Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
- 
+
 - *Detonation chain*: A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.
 - *Detonation summary*: This gives information on:
-    - Detonation time range.
-    - Verdict of the attached file, or URL.
-    - Related info (file number, URLs, IPs, or Domains), which are other entities examined during detonation.
+  - Detonation time range.
+  - Verdict of the attached file, or URL.
+  - Related info (file number, URLs, IPs, or Domains), which are other entities examined during detonation.
 - *Detonation screenshot*: This shows screenshot(s) taken during detonation process.
 - *Detonation details*: These are the exact behavior details of each process that took place during the detonation.
 
@@ -105,45 +106,45 @@ Users will see enriched detonation details for known malicious attachments or hy
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
 - *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
-    
+
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
-    
+
 - *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
-    - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
-    - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
-    
-- *Bulk Compliant Level (BCL)*: The Bulk Complaint Level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
-    
+  - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
+  - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
+
+- *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
+
 - *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
 
 - *Domain Name*: Is the sender domain name.
-    
+
 - *Domain Owner*: Specifies the owner of the sending domain.
-    
+
 - *Domain Location*: Specifies the location of the sending domain.
-    
+
 - *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
 
 *Email Authentication*: Email authentication methods used by Microsoft 365 include SPF, DKIM, and DMARC.
 
 - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
-    - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-    - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
-    - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
-    - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
-    - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
-    - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
-    - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
+  - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
+  - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
+  - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
+  - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
+  - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
+  - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
+  - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
 
 - DomainKeys Identified Mail (**DKIM**):
-    - Pass: Indicates the DKIM check for the message passed.
-    - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
-    - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
+  - Pass: Indicates the DKIM check for the message passed.
+  - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
+  - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
 
 - Domain-based Message Authentication, Reporting and Conformance (**DMARC**):
-    - Pass: Indicates the DMARC check for the message passed.
-    - Fail: Indicates the DMARC check for the message failed.
-    - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
-    - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
+  - Pass: Indicates the DMARC check for the message passed.
+  - Fail: Indicates the DMARC check for the message failed.
+  - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
+  - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value is used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.

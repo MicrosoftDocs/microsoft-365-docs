@@ -29,6 +29,9 @@ description: "Learn how to interpret the charges, billing, and payment informati
 
 # Understand your bill or invoice for Microsoft 365 for business
 
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+
 Either monthly or annually (depending on the option you chose when you purchased your subscription), you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
   
 Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
@@ -101,39 +104,27 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-2. If you're in **Table** view, select **Cards** to switch views.
-
-3. Find the subscription that you want to change.
-
-4. In the **Billing** section, next to **invoice**, select **Edit**.
-
-5. At the bottom of the **Edit payment details** pane, enter your PO number, then select **Save**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription that you want to change, and in the **Payment method** section, select **Change payment details**.
-
-3. At the bottom of the **Change payment details** pane, enter your PO number, then select **Submit**.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription that you want to change, and in the **Payment method** section, select **Change payment details**.
-
-3. At the bottom of the **Change payment details** pane, enter your PO number, then select **Submit**.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
+
+1. On the **Products** tab, select the subscription that you want to change.
+
+1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**. 
+
+1. At the bottom of the **Edit details for paying by voice** pane, enter your PO number, and then select **Save**.
 
 ## Related articles
 
 [Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md)
 
-[Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[Minecraft: Education Edition payment options](/education/windows/school-get-minecraft)

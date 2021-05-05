@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ROBOTS: NOINDEX
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ms.date: 03/17/2021
 ---
 # Change plans manually
 
@@ -46,7 +46,7 @@ To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-
 
 OR
 
-**Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
+**Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) to buy a new subscription.
 
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include \@contoso.com, you must purchase a new subscription for contoso.com.
 Include a license for each user that you want to move.
@@ -111,7 +111,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
 
-If you moved only some users to a different subscription, [remove licenses](../licenses/remove-licenses-from-subscription.md) that you no longer need.
+If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
 
 ## Call support to help you change plans
 [Call Microsoft support](../../admin/contact-support-for-business-products.md)

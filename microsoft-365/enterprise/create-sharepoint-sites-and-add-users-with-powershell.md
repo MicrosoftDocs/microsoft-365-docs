@@ -29,7 +29,7 @@ When you use PowerShell for Microsoft 365 to create SharePoint Online sites and 
 
 ## Connect to SharePoint Online
 
-The procedures in this topic require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+The procedures in this topic require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## Step 1: Create new site collections using PowerShell
 
@@ -155,7 +155,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 ## See also
 
-[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Manage SharePoint Online site groups with PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 

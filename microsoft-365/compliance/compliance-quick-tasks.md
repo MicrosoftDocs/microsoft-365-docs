@@ -42,7 +42,7 @@ For step-by-step guidance to get started with Compliance Manager, see [Get start
 >[!IMPORTANT]
 >Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
 >
->Check your [Microsoft 365 Secure Score](../security/mtp/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
+>Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
 >
 > - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
 > - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)
@@ -69,7 +69,7 @@ To get their work done, people in your organization collaborate with others both
 
 [Sensitivity labels](sensitivity-labels.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
 
-For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ## Task 6: Configure a retention policy
 
@@ -89,7 +89,7 @@ A pre-defined *Offensive language and anti-harassment* policy template allows yo
 
 The pre-defined *Sensitive information* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
-For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
+For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 ## Task 8: See what's happening with your sensitive items
 
@@ -137,15 +137,15 @@ To get started with records management, see [Get started with records management
 
 ### Identify and define sensitive information types
 
-Define sensitive information types based on the pattern contained in information in your organization’s data. Use [built-in sensitive information types](what-the-sensitive-information-types-look-for.md) help identify and protect credit card numbers, bank account numbers, passport numbers, and more. Or create your own [custom sensitivity information types](create-a-custom-sensitive-information-type.md) specific to your organization.
+Define sensitive information types based on the pattern contained in information in your organization’s data. Use [built-in sensitive information types](./sensitive-information-type-entity-definitions.md) help identify and protect credit card numbers, bank account numbers, passport numbers, and more. Or create your own [custom sensitivity information types](create-a-custom-sensitive-information-type.md) specific to your organization.
 
-For step-by-step guidance to define custom sensitive information types, see [Create a custom sensitive information type in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type).
+For step-by-step guidance to define custom sensitive information types, see [Create a custom sensitive information type in the Security & Compliance Center](./create-a-custom-sensitive-information-type.md).
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](dlp-learn-about-dlp.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
-For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### Detect and act on insider risks
 
@@ -153,4 +153,4 @@ More and more, employees have increasing access to create, manage, and share dat
 
 [Insider risk management](insider-risk-management-policies.md) in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
-For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md). For insider risk management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).
+For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md). For insider risk management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).

@@ -25,7 +25,7 @@ description: With records management in Microsoft 365, you can apply your retent
 
 # Learn about records management in Microsoft 365
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Organizations of all types require a records-management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
@@ -90,9 +90,7 @@ Footnotes:
 <sup>1</sup>
 Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
 
-Message a user sees if they try to delete a labeled document in SharePoint:
-
-![Message that item wasn't deleted from SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted. 
 
 <sup>2</sup>
 Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
@@ -110,6 +108,4 @@ Containers include SharePoint document libraries, OneDrive accounts, and Exchang
 
 ## Configuration guidance
 
-See [Get started with records management](get-started-with-records-management.md).
-
-To mark content as a record, see [Declare records by using retention labels](declare-records.md).
+See [Get started with records management](get-started-with-records-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for records management scenarios.

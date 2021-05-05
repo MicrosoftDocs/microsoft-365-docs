@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -23,7 +23,7 @@ description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, 
 
 With remote workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. Microsoft Endpoint Manager delivers modern management capabilities to keep your data secure in the cloud and on-premises. 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
 ![The components of endpoint management for Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -35,13 +35,13 @@ Microsoft Intune is a cloud-based service that focuses on mobile device manageme
 
 - **MAM:** Remote workers might not want you to have full control on their personal devices, also known as bring-your-own device (BYOD) devices. You can give your remote workers options and still protect your organization. For example, remote workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
 
-For more information, see this [overview of Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
+For more information, see this [overview of Microsoft Intune](/intune/fundamentals/what-is-intune).
 
 ## Configuration Manager
 
 Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. You can cloud-enable it to integrate with Intune, Azure AD, Microsoft Defender for Endpoint, and other cloud services. 
 
-For more information, see this [overview of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
+For more information, see this [overview of Configuration Manager](/mem/configmgr/core/understand/introduction).
 
 ## Co-management
 
@@ -49,7 +49,7 @@ Co-management combines your existing on-premises Configuration Manager investmen
 
 Co-management uses Intune-based cloud features, including Conditional Access and enforcing device compliance. You keep some tasks on-premises, while running other tasks in the cloud.
 
-For more information, see this [overview of co-management](https://docs.microsoft.com/mem/configmgr/comanage/overview).
+For more information, see this [overview of co-management](/mem/configmgr/comanage/overview).
 
 ## Desktop Analytics
 
@@ -63,7 +63,7 @@ With Desktop Analytics, you can:
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
-For more information, see this [overview of Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
+For more information, see this [overview of Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
 
 ## Windows Autopilot
 
@@ -74,13 +74,13 @@ Windows Autopilot enables an IT department to pre-configure devices with little 
 - From the user's perspective, it only takes a few simple operations to make their device ready to use. 
 - From the IT pro's perspective, the only interaction required from the end user is to connect to a network and to verify their credentials.
 
-For more information, see this [overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+For more information, see this [overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot).
 
 ## Admin technical resources for endpoint management
 
 - [Device management roadmap for Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
-- [How to enroll different types of devices for mobile device management](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [How to enroll different types of devices for mobile device management](/mem/intune/enrollment/device-enrollment)
+- [How to educate your end users about Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## Results of Step 4
 

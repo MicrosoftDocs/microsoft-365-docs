@@ -1,23 +1,23 @@
 ---
- title: "Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage"
- ms.author: sirkkuw
- author: sirkkuw
- manager: scotv
- audience: Admin
- ms.topic: article
- ms.service: o365-administration
- localization_priority: Normal
- ms.collection:
- - M365-subscription-management
- - Adm_O365
- - Adm_NonTOC
- ms.custom: AdminSurgePortfolio
- search.appverid:
- - BCS160
- - MET150
- - MOE150
- - GEA150
- description: "Learn how to get a Microsoft 365 Apps for usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
+title: "Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage"
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- GEA150
+description: "Learn how to get a Microsoft 365 Apps for usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage
@@ -28,7 +28,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 
  > [!NOTE]
- > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports.
+ > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. Shared computer activations are not included in this report.
 
 ## How to get to the Microsoft 365 Apps usage report
 
@@ -39,12 +39,13 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can get a view into your user's Microsoft 365 Apps activity by looking at the **Users** and **Platform** charts.
 
-![Microsoft 365 Apps usage report](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 Apps usage report](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Item|Description|
  |:-----|:-----|
  |1. <br/> |The **Microsoft 365 Apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated). <br/> |
- |2. <br/> |The data in each report usually covers up to the last seven days. <br/> |
+ |2. <br/> |The data in each report usually covers up to the last two days. Every six day, we will refresh the report with minor updates to ensure data quality. <br/> |
  |3. <br/> |The **Users** view shows the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams. "Active users" are any who perform any intentional actions within these apps. <br/> |
  |4. <br/> |The **Platforms** view shows the trend of active users across all apps for each platform – Windows, Mac, Web, and Mobile. <br/> |
  |5.<br/>|On the **Users** chart, the Y-axis is the number of unique active users for the respective app. On the **Platforms** chart, the Y-axis is the number of unique users for the respective platform. The X-axis on both charts is the date on which an app was used on a given platform.<br/>|

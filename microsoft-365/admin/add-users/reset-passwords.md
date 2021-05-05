@@ -35,7 +35,7 @@ This article explains how to reset passwords for yourself and for your users whe
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
@@ -45,7 +45,7 @@ Watch a short video about resetting user passwords.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
 ## Steps: Reset a business password for a user
 
@@ -97,7 +97,7 @@ If you forgot your password and can't sign in:
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
-- Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+- Or, [call Microsoft Support](../contact-support-for-business-products.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>
@@ -119,9 +119,9 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-<!-- Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
+<!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-For overview information, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## Force a password change for all users in your business
 
@@ -145,4 +145,4 @@ Try this article: [I forgot the username or password for the account I use with 
 
 [Remove a former employee](remove-former-employee.md)
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../../business-video/index.yml)
