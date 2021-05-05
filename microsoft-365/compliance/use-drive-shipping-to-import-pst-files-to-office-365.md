@@ -44,7 +44,7 @@ Here are the steps required to use drive shipping to import PST files to Microso
 > [!IMPORTANT]
 > You have to perform Step 1 once to down load the secure storage key and the import tool. After you perform these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
   
-For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files). 
+For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files). 
   
 ## Before you import PST files
 
@@ -461,7 +461,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
     
   - Import data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
     
-  - Protect your organization against [data loss](data-loss-prevention-policies.md) of sensitive information. 
+  - Protect your organization against [data loss](dlp-learn-about-dlp.md) of sensitive information. 
     
 - Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
     

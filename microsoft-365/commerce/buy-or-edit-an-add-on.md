@@ -14,22 +14,17 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
+ms.date: 04/02/2021
 ---
 
 # Buy or manage add-ons
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription experience.
 

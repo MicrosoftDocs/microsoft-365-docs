@@ -38,3 +38,5 @@ SWIFT Code: CITIIE2X\
 IBAN Code: IE38CITI99005170000122\
 Account Number: 70000122\
 Account Name: MICROSOFT
+
+Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.

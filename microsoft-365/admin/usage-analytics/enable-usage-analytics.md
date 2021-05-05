@@ -2,8 +2,8 @@
 title: "Enable Microsoft 365 usage analytics"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,14 +23,6 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 ---
 
 # Enable Microsoft 365 usage analytics
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
   
@@ -56,11 +48,11 @@ To enable the template app, you have to be a **Global administrator**.
   
 See [about admin roles](../add-users/about-admin-roles.md) for more information. 
   
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Settings** \> **Org settings** \> **Services** tab. 
     
-2. On the **Usage** page, locate the **Microsoft 365 usage analytics** card, and select **Get started**.
+2. On the **Services** tab, select  **Reports**.
     
-3. On the Reports panel that opens, set **Make data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**. 
+3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**. 
   
 The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. 
     

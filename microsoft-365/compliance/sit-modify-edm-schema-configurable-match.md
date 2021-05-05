@@ -97,6 +97,9 @@ The `ignoredDelimiters` flag doesn't support:
 
 6. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
+> [!NOTE]
+> If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
+
 7. Update your schema by running these cmdlets one at a time:
 
 `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
@@ -124,6 +127,6 @@ The `ignoredDelimiters` flag doesn't support:
 - [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Custom sensitive information types](./sensitive-information-type-learn-about.md)
-- [Overview of DLP policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

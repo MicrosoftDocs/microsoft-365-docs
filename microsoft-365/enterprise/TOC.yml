@@ -276,15 +276,15 @@
           items: 
           - name: Overview
             href: ms-cloud-germany-transition.md
+          - name: What will change
+            href: ms-cloud-germany-transition-experience.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
-          - name: What has changed
-            href: ms-cloud-germany-transition-experience.md
-          - name: Pre-work
+          - name: Pre-migration
             href: ms-cloud-germany-transition-add-pre-work.md
-          - name: Migration phases actions and impacts (general)
+          - name: Migration phases actions and impacts
             href: ms-cloud-germany-transition-phases.md
-          - name: Migration phases actions and impacts (advanced)
+          - name: Post-migration
             href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
@@ -294,6 +294,8 @@
               href: ms-cloud-germany-transition-add-devices.md
             - name: AD FS migration steps
               href: ms-cloud-germany-transition-add-adfs.md
+            - name: eDiscovery
+              href: ms-cloud-germany-transition-add-scc.md
 
 - name: Identity
   items: 
@@ -459,7 +461,7 @@
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning

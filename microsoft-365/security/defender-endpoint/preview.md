@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP preview features
+title: Microsoft Defender for Endpoint preview features
 description: Learn how to access Microsoft Defender for Endpoint preview features.
 keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
@@ -36,9 +36,6 @@ ms.technology: mde
 
 The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.
 
-> [!TIP]
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
-
 Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
 
 >[!TIP]
@@ -60,18 +57,15 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 The following features are included in the preview release:
 
+- [Device discovery](device-discovery.md) <br> Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.
+
+   > [!IMPORTANT]
+   > Standard discovery will be the default mode for all preview customers starting May 10, 2021. You can choose to retain the basic mode through the settings page. 
+
+
 - [Web Content Filtering](web-content-filtering.md) <br> Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
-
-- [Information protection](information-protection-in-windows-overview.md)<BR>
-Information protection is an integral part of Microsoft 365 Enterprise suite, providing intelligent protection to keep sensitive data secure while enabling productivity in the workplace. Microsoft Defender for Endpoint is seamlessly integrated in Microsoft Threat Protection to provide a complete and comprehensive data loss prevention (DLP) solution for Windows devices.
-
-    >[!NOTE]
-    >Partially available from Windows 10, version 1809.
-
-- [Onboard Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender for Endpoint now adds support for Windows Server 2019. You'll be able to onboard Windows Server 2019 in the same method available for Windows 10 client devices.
-
 
 > [!TIP] 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

@@ -2,8 +2,8 @@
 title: "Guest users in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: overview

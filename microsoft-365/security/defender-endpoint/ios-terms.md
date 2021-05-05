@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for iOS Application license terms
+title: Microsoft Defender for Endpoint on iOS Application license terms
 ms.reviewer: 
-description: Describes the Microsoft Defender ATP for iOS license terms
-keywords: microsoft, defender, atp, iOS, license, terms, application, use, installation, service, feedback, scope,
+description: Describes the Microsoft Defender for Endpoint on iOS license terms
+keywords: microsoft, defender, Microsoft Defender for Endpoint, iOS, license, terms, application, use, installation, service, feedback, scope
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
 ---
 
-# Microsoft Defender for Endpoint for iOS application license terms
+# Microsoft Defender for Endpoint on iOS application license terms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

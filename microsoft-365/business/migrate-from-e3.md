@@ -2,8 +2,8 @@
 title: "Migrate to Microsoft 365 Business from Office 365 E3"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -44,7 +44,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
 | Defender for Office 365 Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
@@ -55,7 +55,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Information protection**        | | |
 |Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business Premium](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, BitLocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](../media/check-mark.png)|
@@ -121,4 +121,4 @@ After migrating to Microsoft 365 Business Premium, you have Defender for Office 
 
 ### Sensitivity labels
 
-To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+To start using sensitivity labels, see [Overview of sensitivity labels](../compliance/sensitivity-labels.md) and [create and manage sensitivity labels](../business-video/create-sensitivity-labels.md) video.

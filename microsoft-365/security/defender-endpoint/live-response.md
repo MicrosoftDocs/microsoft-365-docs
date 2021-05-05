@@ -1,5 +1,5 @@
 ---
-title: Investigate entities on devices using live response in Microsoft Defender ATP
+title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
@@ -138,12 +138,13 @@ The following commands are available for user roles that are granted the ability
 |`connect` | Initiates a live response session to the device. |
 |`connections` | Shows all the active connections. |
 |`dir` | Shows a list of files and subdirectories in a directory. |
-|`download <file_path> &` | Downloads a file in the background. |
-drivers |  Shows all drivers installed on the device. |
-|`fg <command ID>` | Returns a file download to the foreground. |
+|`drivers` |  Shows all drivers installed on the device. |
+|`fg <command ID>` | Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a “command ID” available from jobs, not a PID |
 |`fileinfo` | Get information about a file. |
 |`findfile` | Locates files by a given name on the device. |
+|`getfile <file_path>` | Downloads a file. |
 |`help` | Provides help information for live response commands. |
+|`jobs` | Shows currently running jobs, their ID and status. |
 |`persistence` | Shows all known persistence methods on the device. |
 |`processes` | Shows all processes running on the device. |
 |`registry` | Shows registry values. |
@@ -157,7 +158,6 @@ The following commands are available for user roles that are granted the ability
 | Command | Description |
 |---|---|
 | `analyze` | Analyses the entity with various incrimination engines to reach a verdict. |
-| `getfile` | Gets a file from the device. <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `getfile` to automatically run the prerequisite command. |
 | `run` | Runs a PowerShell script from the library on the device. |
 | `library` | Lists files that were uploaded to the live response library. |
 | `putfile` | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
@@ -194,7 +194,7 @@ Here are some examples:
 
 |Command  |What it does  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
+|`getfile "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
 |`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
 
 
@@ -228,16 +228,6 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 >[!WARNING]
 >Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled. 
-
-### Automatically run prerequisite commands
-
-Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the `download` command without `fileinfo` will return an error.
-
-You can use the auto flag to automatically run prerequisite commands, for example:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## Run a PowerShell script 
 
@@ -299,10 +289,9 @@ Each command is tracked with full details such as:
 
 ## Limitations
 
-- Live response sessions are limited to 10 live response sessions at a time.
-- Large-scale command execution is not supported.
-- Live response session inactive timeout value is 5 minutes. 
-- A user can only initiate one session at a time.
+- Live response sessions are limited to 25 live response sessions at a time.
+- Live response session inactive timeout value is 30 minutes. 
+- A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
    - `getfile` limit: 3 GB

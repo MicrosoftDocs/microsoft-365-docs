@@ -262,7 +262,7 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Type view in the Mailflow status report ](../../media/mail-flow-status-report-type-view.png)
+![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
 
 ### Direction view for the Mailflow status report
 
@@ -282,7 +282,7 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
+![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
 
 ### Funnel view for the Mailflow status report
 
@@ -352,7 +352,7 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
- ![Funnel view in the Mailflow status report ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
 
 ### Tech view for the Mailflow status report
 
@@ -413,7 +413,7 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
- ![Tech view in the Mailflow status report ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Tech view in the Mailflow status report](../../media/mail-flow-status-report-Tech-view.png)
 
 ## Sent and received email report
 

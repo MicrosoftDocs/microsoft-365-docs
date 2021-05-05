@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 
@@ -31,6 +31,9 @@ User tags are identifiers for specific groups of users in [Microsoft Defender fo
 
 If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.
 
+> [!NOTE]
+> Currently, you can only apply user tags to mailbox users.
+
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts in the Security & Compliance Center](alerts.md)
@@ -42,6 +45,9 @@ After you apply system tags or custom tags to users, you can use those tags as f
 This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
+
+> [!NOTE]
+> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
 
 ## What do you need to know before you begin?
 
@@ -60,6 +66,8 @@ To see how user tags are part of the strategy to help protect high-impact user a
   - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+
+- For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
 
 ## Use the Security & Compliance Center to create user tags
 

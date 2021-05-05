@@ -25,13 +25,8 @@ description: "Learn how to renew your Microsoft 365 by turning recurring billing
 
 # Renew Microsoft 365 for business
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
 
 This article applies to most paid Microsoft 365 for business subscriptions.
   
@@ -49,6 +44,19 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
+
 2. Select the subscription for which you want to manage recurring billing.
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
 4. In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.
@@ -59,46 +67,6 @@ If you prepaid for your subscription with a product key, your subscription will 
     > - When **Recurring billing** is turned off, the subscription isn't cancelled. If you want to keep the subscription active, you must pay the bill manually.
     > - If you turn off **Recurring billing**, the subscription remains active until it expires. You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Choose the subscription for which you want to manage recurring billing.
-
-3. To turn on **Recurring billing**, switch the toggle to **On**.
-
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    You can turn off **Recurring billing** by switching the toggle to **Off**.
-
-    > [!NOTE]
-    > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card
-    > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-
-2. Choose the subscription for which you want to manage recurring billing.
-
-3. To turn on **Recurring billing**, switch the toggle to **On**.
-
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    You can turn off **Recurring billing** by switching the toggle to **Off**.
-
-    > [!NOTE]
-    > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card.
-    > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
-
-::: moniker-end
 
 ## Related articles
 

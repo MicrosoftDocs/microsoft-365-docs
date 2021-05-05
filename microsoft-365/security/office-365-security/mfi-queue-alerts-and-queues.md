@@ -83,7 +83,7 @@ If you click the number of messages on the widget, a **Messages queued** flyout 
 - **Destination server**
 - **Last IP address**
 - **Last error**
-- **How to fix**: Common issues and solutions are available. If is a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
+- **How to fix**: Common issues and solutions are available. If a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
 
 ![Details after clicking on the Queues insight in the Mail flow dashboard](../../media/mfi-queues-details.png)
 

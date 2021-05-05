@@ -76,7 +76,7 @@ For more information about the different permissions you can give to users in th
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+For detailed syntax and parameter issues, see [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
 ### How do you know this worked?
 

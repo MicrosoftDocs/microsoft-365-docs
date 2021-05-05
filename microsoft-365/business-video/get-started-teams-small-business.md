@@ -42,7 +42,7 @@ For help with working remotely, we recommend starting with these three steps:
 
 ## 1. Get ready 
 
-Getting started is easy. If you already have a Microsoft 365 subscription, make sure that everyone has a license that includes Microsoft Teams. If your company does not have Microsoft Teams yet, you can [find the right Microsoft Teams for your business](https://aka.ms/TeamsBusinessBasic) and sign up.
+Getting started is easy. If you already have a Microsoft 365 subscription, make sure that everyone has a license that includes Microsoft Teams. If your company does not have Microsoft Teams yet, you can [find the right Microsoft Teams for your business](https://www.microsoft.com/microsoft-teams/teams-for-work) and sign up.
 
 ### Get Microsoft Teams ready for your customers
 
@@ -74,7 +74,7 @@ Microsoft Teams provides an excellent way to keep in touch with both your employ
 
 Help everyone in your organization install Microsoft Teams on their devices. For more information, see [download Microsoft Teams](https://aka.ms/downloadteams).
 
-With Microsoft Teams you can send instant messages, share files and hold meetings. You can [invite anyone to a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a), even if they don't have Microsoft Teams. For real-time collaboration with chat, document sharing, and calls, you can invite people outside your business to be a member of your team.
+With Microsoft Teams you can send instant messages, share files and hold meetings. You can [invite anyone to a meeting](schedule-guest-meeting.md), even if they don't have Microsoft Teams. For real-time collaboration with chat, document sharing, and calls, you can invite people outside your business to be a member of your team.
 
 ### Create and organize teams
 
@@ -96,9 +96,9 @@ As your team works together remotely, you'll have files that you'll want to shar
 
 Make sure your company’s key documents are saved in the cloud and ready to be shared securely with clients, customers, partners, suppliers, and other people in your business. Keeping files in the cloud also means you get the benefits of backup and the ability to recover from hard drive failures, ransomware attacks, and other misfortunes.
 
-- [Share your business files](https://support.microsoft.com/office/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc)
+- [Share your business files](overview-file-sharing.md)
 
-- [Where to store files](https://support.microsoft.com/office/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)
+- [Where to store files](store-files.md)
 
 ## 3. Get everyone ready
 
@@ -108,7 +108,7 @@ To help your employees get the most out of Microsoft Teams, you can share with t
 
 - Watch the [meetings videos](https://support.microsoft.com/office/b6caa0d4-eecb-4aa0-bc75-c05f4cd907b2) to learn how to use meetings.
 
-- Create or promote your [org-wide team](https://support.microsoft.com/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3) a place to learn and get things done.
+- Create or promote your [org-wide team](org-wide-team.md) a place to learn and get things done.
 
 ## Next steps
 
@@ -116,7 +116,7 @@ For a deeper dive into the functionality of Microsoft Teams...
 
 ### Secure your business as it runs remotely
 
-A highly recommended security feature is multi-factor authentication (MFA). Adding MFA for remote employees requires them to enter a security code received by a text, phone call, or authentication app when they log into Microsoft 365. If a hacker gets a hold of someone’s password through a phishing attack, they can’t use it to access your company’s accounts and data. You can add MFA protection from the Microsoft 365 Admin Center: [Set up MFA for mobile devices](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225).
+A highly recommended security feature is multi-factor authentication (MFA). Adding MFA for remote employees requires them to enter a security code received by a text, phone call, or authentication app when they log into Microsoft 365. If a hacker gets a hold of someone’s password through a phishing attack, they can’t use it to access your company’s accounts and data. You can add MFA protection from the Microsoft 365 Admin Center: [Set up MFA for mobile devices](set-up-mfa.md).
 
 ### Microsoft Teams templates
 
@@ -128,4 +128,4 @@ Turn any PC, Mac, or mobile device into a working business phone by adding [Micr
 
 ## Related content
 
-[Empower your small business with remote work](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (article)
+[Empower your small business with remote work](../admin/misc/empower-your-small-business-with-remote-work.md) (article)

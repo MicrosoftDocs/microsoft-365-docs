@@ -36,7 +36,7 @@ Advanced Audit retains all Exchange, SharePoint, and Azure Active Directory audi
 We're also releasing the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
-> Retaining audit logs for 10 years will require an additional add-on license. This new license will be available in early 2021. For more information, see the [FAQs for Advanced Audit](#faqs-for-advanced-audit) section in this article.
+> Retaining audit logs for 10 years will require an additional add-on license. For more information, see the [FAQs for Advanced Audit](#faqs-for-advanced-audit) section in this article.
 
 ### Audit log retention policies
 
@@ -58,9 +58,12 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> At this time, this event isn't available in Office 365 and Microsoft 365 Government environments. This includes GCC, GCC High, and DoD environments.
 
 ### MailItemsAccessed
 
@@ -148,7 +151,7 @@ To search for SearchQueryInitiatedSharePoint audit records, you can search for t
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedExchange events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`. <br/><br/>
+> You must run the following command in Exchange Online PowerShell so that SearchQueryInitiatedSharePoint events (performed by the specified E5 user) are included in audit log search results: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`. <br/><br/>
 In a multi-geo environment, you must run the **Set-Mailbox** command in the forest where the user's mailbox is located. To identify the user's mailbox location, run the following command: `Get-Mailbox <user identity> | FL MailboxLocations`.
 If the `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` command was previously run in the forest that's different than the one the user's mailbox is located in, then you must remove the SearchQueryInitiated value from the user's mailbox (by running `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) and then add it to the user's mailbox in the forest where the user's mailbox is located.
 
@@ -192,13 +195,9 @@ To benefit from user-level Advanced Audit capabilities, a user needs to be assig
 
 For eligible customers and users that are assigned the appropriate license, there is no action to get access to crucial auditing events.
 
-**When will the new 10-year audit log retention add-on license be available?**
+**What happens to my organization's audit log data if I created a 10-year audit log retention policy when the feature was released to general availability but before the required add-on license was made available?**
 
-The new 10-year audit log retention add-on is now available for purchase by customers with E5 subscriptions.
-
-**What happens to my organization's audit log data if I created a 10-year audit log retention policy when the feature was released to general availability but before the required add-on license was made available in February 2021?**
-
-Any audit log data covered by a 10-year audit log retention policy that you created after general availability will be retained for 10 years. When the 10-year audit log retention add-on license is available in early 2021, you will need to purchase add-on licenses for users who's audit data is being retained by an existing 10-year audit retention policy.
+Any audit log data covered by a 10-year audit log retention policy that you created after the feature was released to general availability in the last quarter of 2020 will be retained for 10 years. This includes 10-yr audit log retention policies that were created before the required add-on license was released for purchase. However, since the 10-Year Audit Log Retention Add On license is now available, you'll need to purchase and assign those add-on licenses for any users whose audit data is covered by a 10-year audit retention policy.
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 

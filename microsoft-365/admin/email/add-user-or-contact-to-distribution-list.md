@@ -28,8 +28,6 @@ As the admin of an organization, you may need to add one of your users or contac
   
 ## Add a user or contact to a distribution group
 
-::: moniker range="o365-worldwide"
-
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 
 2. On the **Groups** page, select the name of the group you want to add a contact to.
@@ -41,47 +39,6 @@ As the admin of an organization, you may need to add one of your users or contac
     ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
-    
-2. On the **Groups** page, select the group you want to add a contact to.
-    
-3. In the **Members** section, select **Edit**.
-  
-4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
-    
-    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
-  
-5. Select **Save** and then **Close**.
-    
-If you haven't created the [contact](../misc/contacts.md) yet, do that first as shown in this video. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
-    
-2. On the **Groups** page, select the group you want to add a contact to.
-    
-3. In the **Members** section, select **Edit**.
-  
-4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
-    
-    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
-  
-5. Select **Save** and then **Close**.
-    
-If you haven't created the [contact](../misc/contacts.md) yet, do that first as shown in this video. 
-
-::: moniker-end
-
-<br><br>
-
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   

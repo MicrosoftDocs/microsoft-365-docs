@@ -1,6 +1,6 @@
 ---
 title: Remediation actions in Microsoft Defender for Office 365
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords: 
 - NOCSH
 ms.author: deniseb
@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: "Learn about remediation actions following automated investigation in Microsoft Defender for Office 365."
-ms.date: 02/09/2021
+ms.date: 04/30/2021
 ms.custom: 
 - air
 ms.technology: mdo
@@ -59,7 +59,7 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 |User|A user is sending malware/phish|Automated investigation does not result in a specific pending action. <p> The user might be reporting malware/phish, or someone could be [spoofing the user](anti-spoofing-protection.md) as part of an attack. Use [Threat Explorer](threat-explorer.md) to view and handle email containing [malware](threat-explorer-views.md#email--malware) or [phish](threat-explorer-views.md#email--phish).|
 |User|Email forwarding <br> (Mailbox forwarding rules are configured, which could be used for data exfiltration​.)|Remove forwarding rule​ <p> Use [mail flow insights](mail-flow-insights-v2.md), including the [Autoforwarded messages report](mfi-auto-forwarded-messages-report.md), to view more specific details about forwarded email.|
 |User|Email delegation rules​ <br> (A user's account has delegation set up.)|Remove delegation rule​ <p> If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection/), consider [investigating the user](/microsoft-365/security/defender-endpoint/investigate-user) who's getting the delegation permission.​|
-|User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](../../compliance/data-loss-prevention-policies.md).)|Automated investigation does not result in a specific pending action. <p> [View DLP reports and take action](../../compliance/view-the-dlp-reports.md).|
+|User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](../../compliance/dlp-learn-about-dlp.md) |Automated investigation does not result in a specific pending action. <p> [View DLP reports and take action](../../compliance/view-the-dlp-reports.md).|
 |User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use [mail flow insights](mail-flow-insights-v2.md), including the [mail flow map report](mfi-mail-flow-map-report.md) to determine what's going on and take action.|
 
 ## Next steps
