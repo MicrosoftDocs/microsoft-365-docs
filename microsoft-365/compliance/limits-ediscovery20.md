@@ -88,7 +88,7 @@ The limits described in this section are related to using the search tool on the
 
 Microsoft collects performance information for searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for collection searches based on the number of mailboxes included in the search.
   
-  |**Number of mailboxes**|**Average search time**|
+  | Number of mailboxes | Average search time |
   |:-----|:-----|
   |100  <br/> |30 seconds  <br/> |
   |1,000  <br/> |45 seconds  <br/> |
