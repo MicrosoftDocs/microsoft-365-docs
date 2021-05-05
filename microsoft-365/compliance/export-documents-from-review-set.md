@@ -42,7 +42,7 @@ To export documents from a review set:
 
 Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs are not allowed when exporting to the PST format.
 
-- **Export name**: Name of the export job. This will be used to name the zip files that will be downloaded.
+- **Export name**: Name of the export job. This will be used to name the ZIP files that will be downloaded.
 
 - **Description**: Free-text field for you to add a description.
 
@@ -66,14 +66,14 @@ Use the following options to configure the export. Not all options are allowed f
 
 ## The following sections describe the folder structure for loose files and condensed directory structure options
 
-Exports are partitioned into zip files with a maximum size of uncompressed content of 75GB. If the export size is less than 75GB, the export will consist of a summary file and a single zip file. For exports exceeding 75GB of uncompressed data, multiple zip files will be created. Once downloaded, the zip files can be uncompressed into a single location to recreate the full export.
+Exports are partitioned into ZIP files with a maximum size of uncompressed content of 75 GB. If the export size is less than 75 GB, the export will consist of a summary file and a single ZIP file. For exports exceeding 75 GB of uncompressed data, multiple ZIP files will be created. Once downloaded, the ZIP files can be uncompressed into a single location to recreate the full export.
 
 ### Loose files and PST export structure
 
 If you select this export option, the exported content is organized in the following structure:
 
 - Summary.csv: Includes a summary of the content exported from the review set
-- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each zip file partition.
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
   - Export_load_file_x of z.csv: The metadata file.
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
@@ -82,8 +82,8 @@ If you select this export option, the exported content is organized in the follo
 ### Condensed directory structure
 
 - Summary.csv: Includes a summary of the content exported from the review set
-- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each zip file partition.
-  - Export_load_file_x of z.csv: The metadata file and also includes the location of each file that is stored in the zip file.
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+  - Export_load_file_x of z.csv: The metadata file and also includes the location of each file that is stored in the ZIP file.
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   - NativeFiles: This folder contains all the native files that were exported. Natives files are replaced with redacted PDFs if you selected the *Replace redacted natives with converted PDFs* option.
   - Error_files: This folder contains files that had either extraction or other processing error. The files will be placed into separate folders, either ExtractionError or ProcessingError. These files are listed in the load file.
@@ -91,4 +91,4 @@ If you select this export option, the exported content is organized in the follo
 
 ### Condensed directory structure exported to your Azure Storage Account
 
-This option uses the same general structure as the *Condensed directory structure*, however the contents is not zipped and the data is saved to your Azure Storage Account. This option is generally used when working with a third party eDiscovery provider. For details on how to use this option, see [Export documents in a review set to an Azure Storage account](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs).
+This option uses the same general structure as the *Condensed directory structure*, however the contents is not zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
