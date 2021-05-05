@@ -32,7 +32,25 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Summary:** This article lists the steps to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
+ This article lists the steps to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
+
+In this article:
+
+- [How DKIM works better than SPF alone to prevent malicious spoofing](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
+
+- [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+
+- [Steps to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+
+- [Steps to configure DKIM for more than one custom domain](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+
+- [Disabling the DKIM signing policy for a custom domain](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
+
+- [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
+
+- [Set up DKIM so that a third-party service can send, or spoof, email on behalf of your custom domain](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
+
+- [Next steps: After you set up DKIM for Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
 > [!NOTE]
 > Microsoft 365 automatically sets up DKIM for its initial 'onmicrosoft.com' domains. That means you don't need to do anything to set up DKIM for any initial domain names (for example, litware.onmicrosoft.com). For more information about domains, see [Domains FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
@@ -58,23 +76,6 @@ In basic, a private key encrypts the header in a domain's outgoing email. The pu
 
 - You want to set up DKIM keys for email originating out of a third-party domain, for example, if you use a third-party bulk mailer.
 
-**In this article**:
-
-- [How DKIM works better than SPF alone to prevent malicious spoofing](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
-
-- [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
-
-- [Steps to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
-
-- [Steps to configure DKIM for more than one custom domain](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
-
-- [Disabling the DKIM signing policy for a custom domain](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
-
-- [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
-
-- [Set up DKIM so that a third-party service can send, or spoof, email on behalf of your custom domain](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
-
-- [Next steps: After you set up DKIM for Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
 ## How DKIM works better than SPF alone to prevent malicious spoofing
 <a name="HowDKIMWorks"> </a>
@@ -91,6 +92,9 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>
+
+> [!NOTE]
+> Microsoft 365 automatically sets up DKIM for *onmicrosoft.com* domains. No steps are needed to use DKIM for any initial domain names (like litware.*onmicrosoft.com*). For more information about domains, see [Domains FAQ](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
 Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048 in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). The steps below are for two use-cases, please choose the one that best fits your configuration.
 
