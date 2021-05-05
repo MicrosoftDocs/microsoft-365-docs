@@ -68,9 +68,10 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 ![Image of the Portal launch scheduler tool](../media/portal-launch-panel-2.png)
 
->[!NOTE] The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
+>[!NOTE] 
+> The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
 
-
+ 
 
 4.	Select the **Number of expected users** from the drop-down. This figure represents the number of users who will most likely need access to the site. The Portal launch scheduler will automatically determine the ideal number of waves depending on the expected users like this:
 <br>
@@ -101,12 +102,10 @@ Site permissions must be set up separately from waves as part of the launch. For
 > - The Portal launch scheduler will automatically default to a minimum of 2 waves. However, The PowerShell version of this tool will allow for 1 wave.
 >  - Microsoft 365 groups are not supported by this version of the Portal launch scheduler.
 
-Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
+7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
 
 
-7.	Confirm portal launch details and select **Schedule**. 
-
-   Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
+8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
 ## Make changes to a scheduled portal launch
 
