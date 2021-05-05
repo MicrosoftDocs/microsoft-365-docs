@@ -34,9 +34,12 @@ ms.technology: mde
 
 ## Conditional Access with Defender for Endpoint on iOS  
 Microsoft Defender for Endpoint on iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies
-based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
+based on device risk score. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
 For more information about how to set up Conditional Access with Defender for Endpoint on iOS, see [Defender for Endpoint and Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+
+> [!NOTE]
+> **Jailbreak detection by Microsoft Defender for Endpoint on iOS is currently in preview**. If a device is detected to be jailbroken by Microsoft Defender for Endpoint, a **High**-risk alert will be reported to Security Center and if Conditional Access is setup based on device risk score, then the device will be blocked from accessing corporate data.
 
 ## Web Protection and VPN
 
@@ -64,7 +67,7 @@ Apple iOS does not support multiple device-wide VPNs to be active simultaneously
 To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you set up the following compliance policy on Intune.
 
 > [!NOTE]
-> At this time Microsoft Defender for Endpoint on iOS does not provide protection against jailbreak scenarios. If used on a jailbroken device, then in specific scenarios data that is used by the application like your corporate email id and corporate profile picture (if available) can be exposed locally
+> At this time jailbreak detection by Microsoft Defender for Endpoint on iOS is in preview. We recommend that you setup this policy as an additional layer of defense against jailbreak scenarios.
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 
