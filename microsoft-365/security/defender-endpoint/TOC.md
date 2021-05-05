@@ -51,12 +51,12 @@
 
 
 ## [Configure and onboard devices]()
+### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
+
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
-#### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard Windows devices and Windows Servers]()
 ##### [Onboarding tools and methods](configure-endpoints.md)
 ##### [Onboard Windows 7 and 8.1 devices](onboard-downlevel.md)
-
 
 ##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
