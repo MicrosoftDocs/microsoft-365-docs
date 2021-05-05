@@ -53,6 +53,8 @@ List the device properties you want to use to cover in the group.
 For each device property, see **Device Properties** section above for more detail.
 1. Options:
     - Primary ID
+        - RemovableMediaDevices
+        - CdRomDevices
     - DeviceId
     - HardwareId
     - InstancePathId
@@ -61,6 +63,9 @@ For each device property, see **Device Properties** section above for more detai
     - VID
     - PID
     - VID_PID
+        - 0751_55E0: match this exact VID/PID pair
+        - _55E0: match any media with PID=55E0
+        - 0751_: match any media with VID=0751
         
 **Property name: MatchType** 
 
