@@ -52,10 +52,10 @@ If there's an error message when you try to redeem a product key for **Microsoft
 > [!NOTE]
 > When you buy Microsoft 365 through a partner, Microsoft sends you an email containing instructions to get your product key and activate your subscription in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn more about Volume Licensing, see [help for existing Volume Licensing customers](https://go.microsoft.com/fwlink/p/?LinkId=534992). 
   
-## Related articles
+## Related content
 
-[Find and enter your product key](enter-your-product-key.md)
+[Find and enter your product key](enter-your-product-key.md) (article)
   
-[Renew your subscription](subscriptions/renew-your-subscription.md)
+[Renew your subscription](subscriptions/renew-your-subscription.md) (article)
   
-[Buy licenses for your subscription](licenses/buy-licenses.md)
+[Buy licenses for your subscription](licenses/buy-licenses.md) (article)

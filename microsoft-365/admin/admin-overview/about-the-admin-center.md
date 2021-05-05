@@ -38,27 +38,11 @@ Watch a short video about the admin center. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## How to get to the admin center
 
-::: moniker range="o365-worldwide"
-
 1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a> with your admin account.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center </a> with your admin account.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> with your admin account.
-
-::: moniker-end
 
 2. Select the app launcher icon in the upper-left and choose **Admin**.
 
@@ -94,6 +78,6 @@ Here are the features and settings you'll find in the left-hand navigation of th
 
 - [Manage a Microsoft 365 group](../create-groups/manage-groups.md)
 
-## See also
+## Related content
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

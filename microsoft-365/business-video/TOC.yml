@@ -127,6 +127,8 @@
           href: act-on-report.md
         - name: Add another domain
           href: add-domain.md 
+        - name: Set up a new business email address
+          href: set-up-a-new-business-email-address.md
     - name: Manage devices
       items:
         - name: Secure Windows 10 Pro devices
@@ -159,10 +161,10 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Find answers and help
-          href: find-help-answers.md
         - name: Get help or support
           href: get-help-support.md 
+        - name: Find docs and training
+          href: find-help-answers.md
         - name: Employee quick setup  
           href: employee-quick-setup.md  
     - name: Switch from Google Workspace
