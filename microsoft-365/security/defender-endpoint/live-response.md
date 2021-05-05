@@ -138,7 +138,6 @@ The following commands are available for user roles that are granted the ability
 |`connect` | Initiates a live response session to the device. |
 |`connections` | Shows all the active connections. |
 |`dir` | Shows a list of files and subdirectories in a directory. |
-|`download <file_path> &` | Downloads a file in the background. |
 |`drivers` |  Shows all drivers installed on the device. |
 |`fg <command ID>` | Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a “command ID” available from jobs, not a PID |
 |`fileinfo` | Get information about a file. |
@@ -195,7 +194,7 @@ Here are some examples:
 
 |Command  |What it does  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
+|`getfile "C:\windows\some_file.exe" &`     |Starts downloading a file named *some_file.exe* in the background.         |
 |`fg 1234`     |Returns a download with command ID *1234* to the foreground.         |
 
 
@@ -229,16 +228,6 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 >[!WARNING]
 >Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled. 
-
-### Automatically run prerequisite commands
-
-Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the `download` command without `fileinfo` will return an error.
-
-You can use the auto flag to automatically run prerequisite commands, for example:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## Run a PowerShell script 
 

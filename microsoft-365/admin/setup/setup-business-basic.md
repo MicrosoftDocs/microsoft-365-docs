@@ -32,7 +32,7 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Add your domain to personalize sign-in
 
