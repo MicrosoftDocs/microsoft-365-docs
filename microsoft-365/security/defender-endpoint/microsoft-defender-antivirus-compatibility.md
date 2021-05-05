@@ -92,13 +92,13 @@ The table in this section summarizes the functionality and features that are ava
 
 |Protection |Active mode |Passive mode |EDR in block mode |Disabled or uninstalled |
 |:---|:---|:---|:---|:---|
-| [Real-time protection](./configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](./enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[3](#fn3)]<sup> | No | No |
-| [Limited periodic scanning availability](./limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Yes |
-| [File scanning and detection information](./customize-run-review-remediate-scans-microsoft-defender-antivirus.md) | Yes | Yes | Yes | No |
-|  [Threat remediation](./configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]<sup> | Yes | No |
-| [Security intelligence updates](./manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes | Yes | No |
+| [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[3](#fn3)]<sup> | No | No |
+| [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | No | Yes |
+| [File scanning and detection information](customize-run-review-remediate-scans-microsoft-defender-antivirus.md) | Yes | Yes | Yes | No |
+|  [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]<sup> | Yes | No |
+| [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes | Yes | No |
 
-(<a id="fn3">3</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
+(<a id="fn3">3</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode. 
 
 (<a id="fn4">4</a>) When Microsoft Defender Antivirus is in passive mode, threat remediation features are active only during scheduled or on-demand scans.
 
