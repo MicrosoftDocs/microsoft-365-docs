@@ -51,7 +51,10 @@ Also see the [Manage when protection updates should be downloaded and applied](m
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
-Quick scans look at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+
+|Quick scan  |Full scan  |
+|---------|---------|
+|Quick scans look at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.   |A Full scan starts by running a Quick Scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives if configured to do so.         |
 
 Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md) - which reviews files when they are opened and closed, and whenever a user navigates to a folder - a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 
