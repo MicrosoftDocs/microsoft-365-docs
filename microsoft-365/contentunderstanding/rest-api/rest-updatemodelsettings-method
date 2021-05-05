@@ -1,0 +1,74 @@
+---
+title: UpdateModelSettings
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.reviewer: ssquires
+audience: admin
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+localization_priority: Priority
+description: REST API - UpdateModelSettings
+---
+
+# UpdateModelSettings
+
+Updates available models settings (associated retention label and model description) for a Syntex document understanding model (see [example](#examples)).
+
+## HTTP request
+
+```HTTP
+POST /_api/machinelearning/models/UpdateModelSettings HTTP/1.1
+```
+
+## URI parameters
+
+None
+
+## Request headers
+
+| Header | Value |
+|--------|-------|
+|Accept|application/json;odata=verbose|
+|Content-Type|application/json;odata=verbose;charset=utf-8|
+|x-requestdigest|The appropriate digest for the current site.|
+
+## Request body
+
+|--------|-------|-------|
+|ModelSettings|string|JSON of model settings.|
+|Description|string|The model description.|
+|RetentionLabel| |Info for the associated label (label Id and name)|
+
+## Responses
+
+| Name   | Type  | Description|
+|--------|-------|------------|
+|200 OK| |Success|
+
+## Examples
+
+### Update model settings for Contoso Contract
+
+In this example, the model description and "Standard Hold" retention label are updated. The ID of the retention label is `27c5fcba-abfd-4c34-823d-0b4a48f7ffe6`.
+
+#### Sample request
+
+```HTTP
+{
+	"ModelSettings": "{\"Description\":\"This model is used to set files classified as Contoso Contracts with a standard hold retention.\", \"RetentionLabel\":{\"Id\":\"27c5fcba-abfd-4c34-823d-0b4a48f7ffe6\",\"Name\":\"Standard Hold\"}}"
+}
+
+```
+
+#### Sample response
+
+**Status code:** 200
+
+## See also
+
+- [Syntex document understanding model REST API](syntex-model-rest-api.md)
