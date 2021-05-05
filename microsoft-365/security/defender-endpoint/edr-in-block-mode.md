@@ -1,7 +1,7 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-keywords: Microsoft Defender ATP, mde, EDR in block mode, passive mode blocking
+keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 01/26/2021
+ms.date: 05/05/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -71,7 +71,7 @@ The following image shows an instance of unwanted software that was detected and
 |Requirement  |Details  |
 |---------|---------|
 |Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/basic-permissions). |
-|Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019         |
+|Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019  <p>**NOTE**: EDR in block mode is not supported on Windows Server 2016.       |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (You can use Microsoft Defender Antivirus alongside a non-Microsoft antivirus solution.) [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
 |Cloud-delivered protection |Make sure Microsoft Defender Antivirus is configured such that [cloud-delivered protection is enabled](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus). |
@@ -129,7 +129,16 @@ To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/
 3. In the list of results, in the **STATE** row, confirm that the service is running.
 
 ### How much time does it take for EDR in block mode to be disabled?
+
 If you chose to disable EDR in block mode it can take up to 30 minutes for the system to disable this capability.
+
+### Is EDR in block mode supported on Windows Server 2016?
+
+No. EDR in block mode is supported of the following versions of Windows:
+
+- Windows 10 (all releases)
+- Windows Server, version 1803 or newer 
+- Windows Server 2019 
 
 ## See also
 

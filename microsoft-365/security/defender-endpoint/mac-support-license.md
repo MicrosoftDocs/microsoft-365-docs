@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot license issues for Microsoft Defender for Endpoint for Mac
-description: Troubleshoot license issues in Microsoft Defender for Endpoint for Mac.
-keywords: microsoft, defender, atp, mac, performance
+title: Troubleshoot license issues for Microsoft Defender for Endpoint on Mac
+description: Troubleshoot license issues in Microsoft Defender for Endpoint on Mac.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -47,10 +47,9 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").
+You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
 
 **Solution:**
 
 Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here:
 [Client configuration](mac-install-manually.md#client-configuration)
-

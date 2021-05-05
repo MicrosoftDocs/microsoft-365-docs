@@ -8,6 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -29,7 +31,8 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 - Product updates
 
 > [!IMPORTANT]
-> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.  
+> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.
+> 
 > Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
 > 
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
@@ -72,10 +75,27 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, Microsoft 365 Defender).
-<br/><br/>
+<br/>
+<details>
+<summary> April-2021 (Platform: 4.19.2104.9| Engine: 1.1.18100.5)</summary>
+
+&ensp;Security intelligence update version: **1.337.2.0**  
+&ensp;Released: **April 1, 2021**  
+&ensp;Platform: **4.19.2104.9**  
+&ensp;Engine: **1.1.18100.5**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Additional behavior monitoring logic
+- Improved kernel mode keylogger detection
+
+### Known Issues
+No known issues  
+<br/>
+</details>
 
 <details>
-<summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
+<summary> March-2021 (Platform: 4.19.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 1, 2021**  
@@ -93,7 +113,7 @@ All our updates contain
 No known issues  
 <br/>
 </details><details>
-<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
+<summary> February-2021 (Platform: 4.19.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
 &ensp;Released: **March 9, 2021**  
@@ -109,14 +129,20 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
 &ensp;Released: **February 2, 2021**  
 &ensp;Platform: **4.18.2101.9**  
 &ensp;Engine: **1.1.17800.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -129,20 +155,14 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
 &ensp;Released: **December 03, 2020**  
 &ensp;Platform: **4.18.2011.6**  
 &ensp;Engine: **1.1.17700.4**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -158,7 +178,7 @@ No known issues
 &ensp;Released: **October 29, 2020**  
 &ensp;Platform: **4.18.2010.7**  
 &ensp;Engine: **1.1.17600.5**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 

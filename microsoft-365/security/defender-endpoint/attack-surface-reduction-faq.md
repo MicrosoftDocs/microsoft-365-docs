@@ -1,6 +1,6 @@
 ---
 title: Attack surface reduction frequently asked questions (FAQ)
-description: Find answers to frequently asked questions about Microsoft Defender ATP's attack surface reduction rules.
+description: Find answers to frequently asked questions about Microsoft Defender for Endpoint's attack surface reduction rules.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -51,8 +51,7 @@ E5 adds greater integration with Defender for Endpoint. With E5, you can view al
 ASR currently supports all of the rules below.
 
 ## What rules to enable? All, or can I turn on individual rules?
-To help you figure out what’s best for your environment, we 
-recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
+To help you figure out what’s best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you’ll determine the possible affect to your organization. For example, your line-of-business applications.
 
 ## How do ASR rules exclusions work?
 For ASR rules, if you add one exclusion, it will affect every ASR rule.
@@ -74,8 +73,6 @@ Be aware of the following items about ASR rules exclusions (including wildcards 
 - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
 - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
 - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
-
-
 
 ## How do I know what I need to exclude?
 Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
@@ -185,3 +182,5 @@ Enabling this rule will not provide additional protection if you have [LSA prote
 * [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Compatibility of Microsoft Defender with other antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+
+

@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 In Office 365, you can create a data loss prevention (DLP) policy in two different admin centers:
   
-- In the **Security & Compliance Center**, you can create a single DLP policy to help protect content in SharePoint, OneDrive, Exchange, and now Microsoft Teams. When possible, we recommend that you create a DLP policy here. For more information, see [DLP in the Security & Compliance Center](data-loss-prevention-policies.md).
+- In the **Security & Compliance Center**, you can create a single DLP policy to help protect content in SharePoint, OneDrive, Exchange, and now Microsoft Teams. When possible, we recommend that you create a DLP policy here. For more information, see [Data Loss Prevention reference](data-loss-prevention-policies.md).
     
 - In the **Exchange admin center**, you can create a DLP policy to help protect content only in Exchange. This policy can use Exchange mail flow rules (also known as transport rules), so it has more options specific to handling email. For more information, see [DLP in the Exchange admin center](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
     
