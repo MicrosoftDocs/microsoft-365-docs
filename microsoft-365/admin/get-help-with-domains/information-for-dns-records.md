@@ -83,7 +83,7 @@ description: "Learn to find the values/information you need to create DNS record
     
 2. On the **Domains** page, select your domain. 
     
-3. Under **Required DNS settings**, you'll see the DNS records to add.
+3. Choose  **Manage DNS**, Click on **More Options**, select **Add your own DNS** and cick on **Continue** to see the DNS records to add.
     
     You'll want to keep this information available while you make changes at your DNS host, so you can copy and paste the values.
     
