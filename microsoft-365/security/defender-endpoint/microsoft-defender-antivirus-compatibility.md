@@ -16,7 +16,6 @@ ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/05/2021
-ms.topic: article
 ---
 
 # Microsoft Defender Antivirus compatibility
