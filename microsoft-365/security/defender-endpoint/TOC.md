@@ -556,7 +556,7 @@
 ###### [Software]()
 ####### [Software methods and properties](software.md)
 ####### [List software](get-software.md)
-####### [Get software by Id](get-software-by-id.md)
+####### [Get software by ID](get-software-by-id.md)
 ####### [List software version distribution](get-software-ver-distribution.md)
 ####### [List machines by software](get-machines-by-software.md)
 ####### [List vulnerabilities by software](get-vuln-by-software.md)
@@ -571,7 +571,7 @@
 ####### [Vulnerability methods and properties](vulnerability.md)
 ####### [List vulnerabilities](get-all-vulnerabilities.md)
 ####### [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
-####### [Get vulnerability by Id](get-vulnerability-by-id.md)
+####### [Get vulnerability by ID](get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()

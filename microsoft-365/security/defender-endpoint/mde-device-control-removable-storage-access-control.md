@@ -36,7 +36,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 Deploy Removable Storage Access Control on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
 
-:::image type="content" source="images/powershell.png" alt-text="The Powershell interface":::
+:::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
 ## Policy properties
 
@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following:
+The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription :
 
 - Microsoft 365 for E5 reporting
 
