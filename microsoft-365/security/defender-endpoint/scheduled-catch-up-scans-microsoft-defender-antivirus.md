@@ -199,15 +199,11 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
-
-
 ## Set up daily quick scans
 
 You can enable a daily quick scan that can be run in addition to your other scheduled scans with Group Policy, PowerShell, or WMI.
 
-
 ### Use Group Policy to schedule daily scans
-
 
 |Location | Setting | Description | Default setting (if not configured) |
 |:---|:---|:---|:---|
