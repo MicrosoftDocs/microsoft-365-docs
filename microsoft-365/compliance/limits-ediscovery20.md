@@ -69,7 +69,7 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of searches that can run at the same time. |No limit |
 |Maximum number of searches that a single user can start at the same time. |10 | 
 |Maximum number of characters for a search query (including operators and conditions). |10,000 &nbsp;<sup>2</sup>|
-|Maximum number of characters for a search query for Sharepoint and OneDrive For Business Sites (including operators and conditions). |10,000<br>4,000 with Wildcards&nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query for SharePoint and OneDrive for Business sites (including operators and conditions). |10,000<br>4,000 with Wildcards&nbsp;<sup>2</sup>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
 |Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
