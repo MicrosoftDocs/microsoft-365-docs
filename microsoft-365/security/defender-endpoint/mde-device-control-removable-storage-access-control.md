@@ -35,6 +35,8 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 ## Prepare your endpoints
 
 Deploy Removable Storage Access Control on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
+1. **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support
+2. **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 
 :::image type="content" source="images/powershell.png" alt-text="The Powershell interface":::
 
@@ -259,43 +261,30 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 
 - Microsoft 365 for E5 reporting
 
-//events triggered by RemovableStoragePolicyTriggered 
-
-DeviceEvents 
-
-| where ActionType == "RemovableStoragePolicyTriggered" 
-
+<pre tabindex="0" class="has-inner-focus">
+//events triggered by RemovableStoragePolicyTriggered
+DeviceEvents
+| where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 
 | extend parsed=parse_json(AdditionalFields) 
-
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)  
-
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)  
-
 | extend MediaBusType = tostring(parsed.BusType)  
-
-| extend MediaClassGuid = tostring(parsed.ClassGuid)  
-
-| extend MediaClassName = tostring(parsed.ClassName) 
-
+| extend MediaClassGuid = tostring(parsed.ClassGuid)
+| extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaDeviceId = tostring(parsed.DeviceId) 
-
 | extend MediaInstanceId = tostring(parsed.DeviceInstanceId) 
-
 | extend MediaName = tostring(parsed.MediaName) 
-
 | extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy)  
-
 | extend MediaProductId = tostring(parsed.ProductId)  
-
 | extend MediaVendorId = tostring(parsed.VendorId)  
-
 | extend MediaSerialNumber = tostring(parsed.SerialNumber)  
-
 | extend MediaVolume = tostring(parsed.Volume)  
-
-| project Timestamp , DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume 
-
+| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume 
 | order by Timestamp desc
+</pre>
+
+
+
 
 :::image type="content" source="images/blockage-of-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
 
