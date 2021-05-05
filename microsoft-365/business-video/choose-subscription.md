@@ -39,7 +39,7 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 
 ## Compare plans
 
-| **Service area** | **Feature** | **Microsoft 365 Business Standard** | **Microsoft 365 Business Premium** | **Office 365 Enterprise E3** |
+| Service area | Feature | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
 | --- | --- | --- | --- | --- |
 | **Licenses available** | Maximum number of users | 300 | 300 | Unlimited |
 | **Office apps** | Install Office on up to 5 PCs/Macs + 5 smartphones per user (Word, Excel, PowerPoint, OneNote, Access), Office Online | Business | Business | ProPlus |
