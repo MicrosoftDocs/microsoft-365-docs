@@ -67,7 +67,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## Limitations
 
-- Power Query and custom add-ins with Excel on the web: If these files are encrypted with a sensitivity label, SharePoint can't process the file so users won't be able to open it in Office on the web. For these files, either apply a label without encryption so that they can be opened in Office on the web, or instruct users to open the file in their desktop apps.
+- Power Query and custom add-ins with Excel on the web: If these files are encrypted with a sensitivity label, SharePoint can't process the files so users won't be able to open them in Office on the web. For these files, either apply a label without encryption so that they can be opened in Office on the web, or instruct users to open the files in their desktop apps.
 
 - If you experience problems opening labeled and encrypted files in Office on the web, try the following:
     1. Open the file in the Office desktop app.
