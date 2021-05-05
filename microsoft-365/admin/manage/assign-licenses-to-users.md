@@ -124,6 +124,10 @@ When you use the **Active users** page to assign licenses, you assign users lice
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
 6. At the bottom of the pane, select **Add** \> **Close**.  
 
+
+> [!NOTE]
+> If you are looking to assign licenses for a large number of users, use Powershell or [group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign)
+
 ### Assign licenses to one user
 
 ::: moniker range="o365-worldwide"
