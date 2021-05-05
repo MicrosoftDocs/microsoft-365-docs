@@ -69,7 +69,8 @@
 #### [Onboard Windows servers]()
 ##### [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
 ##### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
-##### [Integration with Azure Defender](azure-server-integration.md)
+
+#### [Integration with Azure Defender](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](run-detection-test.md)
