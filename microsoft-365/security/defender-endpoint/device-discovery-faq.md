@@ -46,6 +46,10 @@ You have the option to turn off device discovery through the [Advanced features]
 ## Can I control which devices perform Standard discovery?
  You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
 
+## Can I exclude unmanaged devices from the device inventory list?
+Yes, you can apply filters exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices. 
+
+
 ## Which onboarded devices can perform discovery?
  Onboarded devices running on Windows 10 version 1809 or later can perform discovery.
 
