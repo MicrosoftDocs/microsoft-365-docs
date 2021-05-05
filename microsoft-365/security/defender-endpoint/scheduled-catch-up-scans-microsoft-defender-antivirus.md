@@ -11,16 +11,13 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/02/2020
-ms.reviewer: pauhijbr
+ms.date: 05/05/2021
+ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ---
 
 # Configure scheduled quick or full Microsoft Defender Antivirus scans
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -38,17 +35,15 @@ This article describes how to configure scheduled scans with Group Policy, Power
 
 ## To configure the Group Policy settings described in this article
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-4.  Click **Administrative templates**.
+3. Specify settings for the Group Policy Object, and then select **OK**. 
 
-5.  Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
+4. Repeat steps 1-4 for each setting you want to configure.
 
-6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. 
-
-7. Click **OK**, and repeat for any other settings.
+5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
