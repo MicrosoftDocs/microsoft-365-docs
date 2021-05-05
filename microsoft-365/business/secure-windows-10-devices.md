@@ -39,9 +39,10 @@ The settings that you configure here are part of the default device policy for W
 
 By default all settings are **On**. The following settings are available:
   
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |Description  <br/> |
+|:-----|:-----|
 |Help protect PCs from viruses and other threats using Windows Defender Antivirus  <br/> |Requires that Windows Defender Antivirus is turned on to protect PCs from the dangers of being connected to the internet.  <br/> |
 |Help protect PCs from web-based threats in Microsoft Edge  <br/> |Turns on settings in Edge that help protect users from malicious sites and downloads.  <br/> |
 |Help protect files and folders on PCs from unauthorized access with BitLocker  <br/> |Bitlocker protects data by encrypting the computer hard drives and protect against data exposure if a computer is lost or stolen. For more information, see [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |

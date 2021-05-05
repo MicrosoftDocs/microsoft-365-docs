@@ -65,9 +65,9 @@ For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), 
 
 **Enable basic security capabilities on BYOD Windows 10 and Mac devices**
 
-| |**Windows 10**|**Mac**|
-|:-----|:-----|:------|
-|Security capabilities|Turn on BitLocker device protection<p><p> Ensure Windows Defender remains on <p>Turn on Windows Firewall| Use FileVault to encrypt the Mac disk <p><p>Use a reliable antivirus software <p>Turn on firewall protection|
+|**Windows 10**|**Mac**|
+|:-----|:------|
+|Turn on BitLocker device protection<p><p> Ensure Windows Defender remains on <p>Turn on Windows Firewall| Use FileVault to encrypt the Mac disk <p><p>Use a reliable antivirus software <p>Turn on firewall protection|
 
 To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
