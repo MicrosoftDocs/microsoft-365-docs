@@ -64,12 +64,12 @@ When you set up scheduled scans, you can set up whether the scan should be a ful
 Use the following table to choose a scan type.
 
 
-|Scenario  |Scan type  |
+|Scenario  |Recommended scan type  |
 |---------|---------|
 |Regular, scheduled scans     | Quick scan <p>A quick scan scans processes, memory, profiles, and certain locations on the device. Combined with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Real-time protection reviews files when they are opened and closed, and whenever a user navigates to a folder.         |
 |When threats, such as malware, are detected on a device     | Full scan <p>A full scan can help identify whether there are any inactive components that require a more thorough clean up.         |
 |You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)     | Full scan  <p>A full scan looks at all files on the device disk, including files that are stale, archived, and not accessed on a daily basis.      |
-
+| You want to make sure a portable device, such as a USB drive, does not contain malware | Custom scan <p>A custom scan enables you to select specific locations, folders, or files and runs a quick scan. |
 
 ### What else do I need to know about quick and full scans?
 
