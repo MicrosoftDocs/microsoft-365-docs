@@ -84,7 +84,7 @@ For troubleshooting PowerShell connection errors, see:
 
 The **New-ComplianceSecurityFilter** is used to create a search permissions filter. The following table describes the parameters for this cmdlet. All parameters are required to create a compliance security filter.
   
-|**Parameter**|**Description**|
+| Parameter | Description |
 |:-----|:-----|
 | _Action_ <br/> | The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are:  <br/><br/> **Export:** The filter is applied when exporting search results.  <br/> **Preview:** The filter is applied when previewing search results.  <br/> **Purge:** The filter is applied when purging search results.  <br/> **Search:** The filter is applied when running a search.  <br/> **All:** The filter is applied to all search actions.  <br/> |
 | _FilterName_ <br/> |The  _FilterName_ parameter specifies the name of the permissions filter. This name is used to identity a filter when using the **Get-ComplianceSecurityFilter**, **Set-ComplianceSecurityFilter,** and **Remove-ComplianceSecurityFilter** cmdlets.  <br/> |
@@ -208,7 +208,7 @@ The **Get-ComplianceSecurityFilter** is used to return a list of search permissi
 
 The **Set-ComplianceSecurityFilter** is used to modify an existing search permissions filter. The only required parameter is  _FilterName_. 
   
-|**Parameter**|**Description**|
+| Parameter | Description |
 |:-----|:-----|
 | _Action_| The  _Action_ parameter specifies that type of search action that the filter is applied to. The possible Content Search actions are: <br/><br/> **Export:** The filter is applied when exporting search results.  <br/> **Preview:** The filter is applied when previewing search results.  <br/> **Purge:** The filter is applied when purging search results.  <br/> **Search:** The filter is applied when running a search.  <br/> **All:** The filter is applied to all search actions.  <br/> |
 | _FilterName_|The  _FilterName_ parameter specifies the name of the permissions filter. |
