@@ -226,8 +226,8 @@ when it requests it.
 
 Such documents should include the information listed below.
 
-|Information|Examples|
-|----------|----------|
+| Information | Examples |
+|---|---|
 |The purpose of data processing|Alerting customers about special offers such as providing home delivery; paying suppliers; salary and social security coverage for employees|
 |The types of personal data|Contact details of customers; contact details of suppliers; employees’ data|
 |The categories of data subjects concerned|Employees; customers; suppliers|
