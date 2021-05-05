@@ -235,6 +235,7 @@ Such documents should include the information listed below.
 |The storage periods|Employees’ personal data until the end of the employment contract (and related legal obligations); customers’ personal data until the end of the client/contractual relationship|
 |The technical and organizational security measures to protect the personal data|IT system solutions regularly updated; secured location such as a safe|
 |Whether personal data is transferred to recipients outside the EU|Use of a processor outside the EU (for example, storage in the cloud)|
+
 </br>
 
 You can find Microsoft’s contractual commitments with regard to the GDPR in the [Microsoft Online Services Data Protection Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=DPA), which provides Microsoft’s privacy and security commitments, data processing terms and GDPR Terms for Microsoft-hosted services to which customers subscribe under a volume licensing agreement. 
