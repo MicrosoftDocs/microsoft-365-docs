@@ -45,10 +45,21 @@ You'll need to complete the following steps to succesfully onboard servers:<br>
 - Install application
 - Follow the onboarding steps
 
+There are 2 options on how to onboard Server 2012 R2 SP1 and Windows Server 2016
+
+- **Option 1**: Onboard through Microsoft Defender Security Center
+- **Option 2**: Onboard through Microsoft Endpoint Manager version 2002 and later
+
+You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+
+After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-server-2008r2.md#configure-and-update-system-center-endpoint-protection-clients).
+
+
 **Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition**
 
 - Download the onboarding package
 - Follow the onboarding steps 
+
 
 
 
@@ -112,7 +123,7 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 ## Onboarding steps
 
-1. Configure Defender for Endpoint onboarding settings on the Windows servers using the same tools and methods for Windows 10 devices. For more information, see [Onboard Windows 10 devices](configure-endpoints.md).
+1. Now that you have downloaded the required onbaording packages use the guidance listed in [onboarding tools and methods](#onboarding-tools-and-methods) for your server.
 
 2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 

@@ -1,7 +1,7 @@
 ---
-title: Onboarding tools and methods for Windows 10 devices
-description: Onboard Windows 10 devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
-keywords: Onboard Windows 10 devices, group policy, endpoint configuration manager, mobile device management, local script, gp, sccm, mdm, intune
+title: Onboarding tools and methods for Windows devices
+description: Onboard Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
+keywords: Onboard Windows devices, group policy, endpoint configuration manager, mobile device management, local script, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Onboarding tools and methods for Windows 10 devices
+# Onboarding tools and methods for Windows devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,6 +32,8 @@ ms.technology: mde
 
 Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
+## Endpoint onboarding tools
+Depending on the Windows endpoint you want to onboard, use the corresponding tool or method described in the following table.
 
 Windows device | Onboarding tool or method
 :---|:---
