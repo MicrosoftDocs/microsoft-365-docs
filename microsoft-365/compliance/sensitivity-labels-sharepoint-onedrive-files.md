@@ -68,15 +68,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 ## Limitations
 
 > [!WARNING]
-> There are currently two known problems for sensitivity labels that apply encryption:
-> 
-> - Power Query and custom add-ins with Excel on the web: If these files are encrypted with a sensitivity label, SharePoint can't process the file so users won't be able to open it in Office on the web. Either apply a label without encryption, or instruct users to open the file in their desktop apps.
-> 
-> - If you experience problems opening labeled and encrypted files in Office on the web, try the following:
->     1. Open the file in the Office desktop app.
->     2. Remove the label that applies encryption.
->     3. Save the file in SharePoint, and close the desktop app.
->     4. Open the file in Office on the web, and reapply the original label that applies encryption. 
+> There is a current problem with Power Query and custom add-ins with Excel on the web: Do not encrypt these files by using sensitivity labels because data can be lost when the file is saved. Instead, apply a label without encryption.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     

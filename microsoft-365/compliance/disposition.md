@@ -143,7 +143,9 @@ From any of the Disposition pages in the compliance center, select **Record mana
 
 ![Record management settings](../media/record-management-settings.png)
 
-Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or append your own text to the default template. Text for all languages can be appended, but formatting and images are currently unsupported. URLs and email addresses can be entered as text and don't display as hyperlinks but unformatted text in the customized email.
+Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or add your own text to the default template. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
+
+Text for all languages can be added, but formatting and images are currently unsupported. URLs and email addresses can be entered as text and depending on the email client, display as hyperlinks or unformatted text in the customized email.
 
 Example text to append:
 
