@@ -27,9 +27,9 @@ description: "Learn how Microsoft 365 for business can help you with the General
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
 
-So as a small business admin, you are probably asking yourself "how do I get started"? This may be especially true if your business does not handle personal data as a core business activity.
+So as a small business admin, you are probably asking yourself "how do I get started"? This may be especially true if your business does not handle personal data as a core business activity, or even if GDPR is totally new to you.
 
-You can get started by reading through this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
+You can get started by reviewing this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
 
 It also includes answers to common questions about GDPR that small businesses may have, and highlights steps a small business can take to prepare for GDPR.
   
@@ -146,9 +146,9 @@ Customers, employees, and clients are becoming more aware of the importance of d
 
 ## Steps to prepare for GDPR
 
-Where do you start with GDPR, especially if you are a small business in which handling personal data is not a core business activity? This section highlights a several steps you can take to get ready for GDPR as a small business. Much of this information was provided through  [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
+So where do you start with GDPR, especially if you are a small business in which handling personal data is not a core business activity? This section highlights several steps a small business can take to get ready for GDPR. Much of the information for these steps was provided through [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
 
-A good start is to make sure to apply the following key principles when collecting personal data:
+A good way for a small business to start with GDPR is to make sure to apply the following key principles when collecting personal data:
 
 - Collect personal data with clearly defined purpose, and
 don’t use them for something else. For example, if you tell your clients to give you their email so they can get your new offers or
@@ -161,12 +161,12 @@ you don’t need to know if this person is married or single. Be mindful of the 
 
 ### Step 1: Check the personal data you collect and process, the purpose for which you do it, and on which legal basis.
 
-You have employees, and you are processing their personal data based
+For your employees, you are processing their personal data based
 on the employment contract and on legal obligations (for example, 
 reporting to tax authorities).
 
-You can manage a list of individual customers, for instance to
-send them notice about special offers/adverts if you obtained
+You manage lists of individual customers, for instance, to
+send them notice about special offers if you obtained
 consent from these customers.
 
 You don’t always need consent. There are cases when individuals will
@@ -214,7 +214,7 @@ files containing the data, for example, by a strong password. Regularly update t
 If you store physical documents with personal data, then ensure
 that they are not accessible by unauthorized persons (for example, lock them in a safe in a secured area).
 
-If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, a centralized secure locations to save your files (OneDrive or SharePoint document libraries), and your data is encrypted when sending or retrieving files.
+If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files.
 
  
 
