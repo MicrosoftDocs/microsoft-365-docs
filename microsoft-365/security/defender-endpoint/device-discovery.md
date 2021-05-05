@@ -129,7 +129,7 @@ DeviceNetworkEvents
 ```
 
 
-## Changed behaviour
+## Changed behavior
 The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled. 
  
 1.	Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results. 
