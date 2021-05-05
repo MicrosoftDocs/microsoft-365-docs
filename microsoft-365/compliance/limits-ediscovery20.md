@@ -111,7 +111,7 @@ The limits described in this section are related to exporting documents out of a
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Maximum size of a single export.|3 million documents or 100 GB, whichever is smaller|
+|Maximum size of a single export.|5 million documents or 500 GB, whichever is smaller|
 |Maximum concurrent exports per review set. | 1 |
 |||
 
