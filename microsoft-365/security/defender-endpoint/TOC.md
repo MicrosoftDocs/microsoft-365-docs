@@ -63,13 +63,13 @@
 ##### [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
 
 ##### [Onboard Windows 10, Windows Server 2012 R2, 2016, SAC version 1803, and 2019]()
-##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
-##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-##### [Onboard devices using a local script](configure-endpoints-script.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-##### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
+###### [Onboard devices using Group Policy](configure-endpoints-gp.md)
+###### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+###### [Onboard devices using a local script](configure-endpoints-script.md)
+###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+###### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
 
 
 
