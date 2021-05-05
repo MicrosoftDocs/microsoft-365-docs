@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<introduction>
+		
+		<para>SharePoint Online is improving the way you work by personalizing your new start page. The new free-flowing design helps you stay focused on your work, rather than looking for frequently used files and sites. Your new start page is ready for you set up right away--no setup needed.</para>
+		<para/>
+	</introduction>
+	<section>
+		<title>Example image of the new start page</title>
+		<content>
+			
+			<para><mediaLinkInline><image xlink:href="bdbd5cc1-3b0f-47ae-ae4c-e393cb88c15a"/></mediaLinkInline>   </para>
+			<para/>
+			<alert class="note">
+				<list class="bullet"><listItem><para>Some functionality is introduced gradually to organizations that have opted in to the Targeted release program. This means that you may not yet see this feature or it may look different than what is described in the help articles.</para></listItem><listItem><para><?xm-replace_text Type new para here ?></para></listItem></list>
+			</alert>
+		</content>
+	</section>
+	<section>
+		<title>Summary of what's new</title>
+		<content>
+			
+			<list class="bullet">
+				<listItem>
+					<para>Browse news and sites seamlessly without leaving the start page</para>
+				</listItem>
+				<listItem>
+					<para>Arrange sites based on content that's relevant to your work</para>
+				</listItem>
+				<listItem>
+					<para>Navigate to important tools and featured links right from the start page</para>
+				</listItem>
+				<listItem>
+					<para>Access recently used documents quickly and securely</para>
+				</listItem>
+			</list>
+			<para/>
+		</content>
+	</section>
+	<section>
+		<title>Getting to the start page</title>
+		<content>
+			
+			<para>1. Go to <legacyBold>Office.com</legacyBold></para>
+			<para>2. Select the SharePoint application</para>
+			<para><mediaLinkInline><image xlink:href="9eb39553-ccbf-4bab-b499-9a7596a21ce5"/></mediaLinkInline></para>
+			<para>3. Welcome to your start page!</para>
+		</content>
+	</section>
+	<section>
+		<title/>
+		<content>
+			
+		</content>
+	</section>
+	<section>
+		<title>Start page details:</title>
+		<content>
+			
+		</content>
+		<sections>
+			<section>
+				<title>Stay focused by viewing news, sites, and files all on one page. </title>
+				<content>
+					
+					<para><mediaLinkInline><image xlink:href="c262c46b-eaae-4b3c-ae99-ea1f11f7491d"/></mediaLinkInline>   </para>
+					<para>Navigating the new start page allows you to easily digest content from top to bottom and from left to right. Featured content is relevant to <legacyItalic>you</legacyItalic> and displayed based on <legacyItalic>your</legacyItalic> most frequently used files and sites. The global search bar is conveniently located at the top of the page.</para>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title>Stay updated on news and site activity by browsing personalized carousels. </title>
+				<content>
+					
+					<mediaLink>
+						<image xlink:href="49a709e7-a72c-428c-a181-100ed62f9380"/>
+					</mediaLink>
+					<para>News posts from the sites you already follow roll up to the top of your start page. Bookmarked articles will appear in the saved for later section at the bottom. Sites are displayed at-a-glace and can be arranged by frequently visited, following, recently visited, and suggested.</para>
+					<para/>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title>Stay organized by easily accessing important links, recent files, and items you saved for later.</title>
+				<content>
+					
+					<para><mediaLinkInline><image xlink:href="5dc9853f-4ab4-476d-845e-1586ece9d0c3"/></mediaLinkInline></para>
+					<para>Featured links and recent files are secure and relevant to helping you get your work done. The saved for later function organizes your bookmarks in one place so you don’t miss anything.   </para>
+				</content>
+			</section></sections>
+	</section>
+	<relatedTopics/>
+</developerConceptualDocument><?dxauthor-metadata Server="DBP-CPUBSQL-101" Database="DDCMS_MOD_IW" Project="SharePoint_Online" Team="SharePoint" TopicTitle="Your new SharePoint start page" TopicID="5ffd35a6-9fd8-47a4-900d-c548208d092e" Schema="DDUE" CustomField1="" CustomField2="" CustomField3="" DocumentVersion="1.5"?>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<introduction>
+		
+		<para>The purpose of this guide is to enable site owners to create a new <token>SharePoint_generic</token> site that meets business objectives, user needs, and can be maintained with minimal oversight. </para>
+	</introduction>
+	<section>
+		<title>In this guide:</title>
+		<content>
+			
+			<list class="bullet">
+				<listItem>
+					<para>How to get started</para>
+				</listItem>
+				<listItem>
+					<para>Site planning basics</para>
+				</listItem>
+				<listItem>
+					<para>Summary of how to create your site </para>
+				</listItem>
+			</list>
+		</content>
+	</section>
+	<section>
+		<title>How to get started</title>
+		<content>
+			
+			<para>There are many potential methods that could be used to build new SharePoint sites, but your site creation strategy will be centered around your unique business objectives and user needs. While planning your site, use the following questions as a guide to point you to the right type of site to create, the types of web parts to use, and how to manage and maintain your site. </para>
+			<para>Start your site creation strategy by answering the following:</para>
+		</content>
+		<sections>
+			<section>
+				<title><legacyBold>What is the purpose of your site?</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title><legacyBold>Is your audience your immediate team?</legacyBold></title>
+						<content>
+							
+							<para>If the answer is yes, you should create a team site. If the answer is no, you likely need to create a communication site.</para>
+							<para>A SharePoint <link xlink:href="75545757-36c3-46a7-beed-0aaa74f0401e">team site</link> connects you and your team to the content and resources you rely on every day. Team sites can connect to an <token>O365</token> group, which allows users to automatically access team site applications. <link xlink:href="b565caa1-5c40-40ef-9915-60fdb2d97fa2">Learn more about what you can do with Office 365 groups. </link></para>
+							<para><literal>Common use cases for team sites:</literal></para>
+							<list class="bullet">
+								<listItem>
+									<para>Team communication - Communicate and engage with your team through <link xlink:href="c2dcee50-f5d7-434b-8cb9-a7feefd9f165">news</link>, shared content, and <link xlink:href="7e52c5f6-2d72-48fa-a9d3-d2750765fa05">people profiles</link>.</para>
+								</listItem>
+								<listItem>
+									<para>Product support - Bring together announcements and information for employees on the front lines of your retail services. Access and share product info, news, and training resources relevant to specific product teams.</para>
+								</listItem>
+								<listItem>
+									<para>Team collaboration - Enable collaboration at a team level by creating a site that includes news, <link xlink:href="a53cfa0c-3d09-42c8-a286-1038a81c59da">conversations</link>, shared files, and team calendar.</para>
+								</listItem>
+							</list>
+						</content>
+					</section>
+					<section>
+						<title><legacyBold>Do you need to communicate to dozens, or even hundreds of people?</legacyBold></title>
+						<content>
+							
+							<para>If the answer is yes, you need to create a communication site.</para>
+							<para>A SharePoint <link xlink:href="94a33429-e580-45c3-a090-5512a8070732">communication site</link> is a great place to share information with dozens, or hundreds, of people. You can share news, reports, statuses, and other information in a visually compelling format. Communication sites cannot be connected to an <token>O365</token> group.</para>
+							<para><literal>Common use cases for communication sites:</literal></para>
+							<list class="bullet">
+								<listItem>
+									<para>Branding site - Resource page for employees that includes company guidelines and assets so they can apply the right branding across their deliverables.</para>
+								</listItem>
+								<listItem>
+									<para>Benefits site - Multiple HR resources brought together in one place like company news, events, contacts and information on benefits. Automate common tasks like processing time off requests from employees by using <link xlink:href="6285f05e-e441-408a-99d7-aa688195cd1c">PowerApps</link>.</para>
+								</listItem>
+								<listItem>
+									<para>Training site - Start with a <link xlink:href="e9917310-7543-4fc4-8f3f-d78e46074c00">call to action button</link> web part to create training courses that guide the user through learning experiences.</para>
+								</listItem>
+							</list>
+						</content>
+					</section></sections>
+			</section>
+			<section>
+				<title><legacyBold>Who is your audience?</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Do you have users in more than one geographic region? </title>
+						<content>
+							
+							<para>While creating your site, you may also need to <link xlink:href="e9e189c7-16e3-45d3-a090-770be6e83c1a">change regional settings for a site</link>, according to where and who your audience is. You can use the Multiple Language User Interface (MUI) feature to let your users change the display language for a site or <link xlink:href="16d3a83c-05ab-4b50-8fbb-ff576a3351e8">create sites in different languages</link>. </para>
+						</content>
+					</section>
+					<section>
+						<title>Will users need to access this site on a mobile device?</title>
+						<content>
+							
+							<para>If users will be using SharePoint on a mobile device, you'll need to learn how to <link xlink:href="ddf28727-3bfe-4b56-951d-c97204eac475">configure your site for mobile</link>, and ask users to <externalLink><linkText>download the SharePoint app</linkText><linkUri>https://c3web.trafficmanager.net/topic/539608ac-4725-455e-aea0-9ca1f769849f</linkUri></externalLink>.</para>
+						</content>
+					</section>
+					<section>
+						<title>What are the accessibility requirements for your users?</title>
+						<content>
+							
+							<para>It's recommended that you learn about your audience's accessibility needs and establish accessibility guidelines for your site. SharePoint can be customized to ensure your site can be used by everybody, regardless of device type, browser, and many other variables. <link xlink:href="c492ce71-349a-4495-8d8f-1d89bd4adc63">Resources for creating accessible SharePoint sites</link>. </para>
+						</content>
+					</section></sections>
+			</section>
+			<section>
+				<title><legacyBold>What will the site look like?</legacyBold></title>
+				<content>
+					
+					<para><legacyBold>Do you have access to brand assets like the company logo and brand colors?</legacyBold></para>
+					<para>In the modern SharePoint experience, you can easily change the look and feel of your site to match your company or organizational brand. You can customize the logo, colors, and navigation. Partner with marketing and communication teams to locate approved brand assets.</para>
+					<para><legacyBold>Do you need to collect other site assets like images and videos?</legacyBold></para>
+					<para>Create engaging sites by adding video, images, diagrams, and illustrations to communicate ideas. It's recommended that prior to building your site, you collect high-fidelity images and video assets early in your content planning stage.</para>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>How will you manage and maintain the site?</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Who will update site content and how often?</title>
+						<content>
+							
+							<para>Ensure content stays up to date to keep your site relevant and valuable to users by establishing a maintenance team and schedule. Use <link xlink:href="2fa8ddc2-c4b3-4268-8d26-a772dc55779e">site analytics</link> to see page and user trends.</para>
+						</content>
+					</section></sections>
+			</section></sections>
+	</section>
+	<section>
+		<title>Site planning basics</title>
+		<content>
+			
+		</content>
+		<sections>
+			<section>
+				<title><legacyBold>Meet the needs of your audience</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Ensure users can find what they need</title>
+						<content>
+							
+							<para><system>Site navigation</system></para>
+							<para>Site navigation is one of the most critical elements to creating a successful <token>SharePoint_generic</token> site. Site navigation refers to the navigational elements that help users make progress while using your site - elements like the menus, link labels, and page headers. When site navigation is planned and implemented correctly, users are able to quickly find what they need which results in increased productivity at work. </para>
+							<para>Learn more about how to plan your site menu, page headers, links and other <externalLink><linkText>navigation fundamentals</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/plan-navigation-modern-experience#navigation-fundamentals</linkUri></externalLink>. You can also <link xlink:href="3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca">customize the navigation on your SharePoint site </link>beyond the default menu options to fit your business objectives and the needs of your users.</para>
+						</content>
+						<sections>
+							<section>
+								<title>Hubs</title>
+								<content>
+									
+									<para>In the modern <token>SharePoint_generic</token> experience, we recommend that you create new sites for each workload in your organization instead of creating sub sites. Rather than creating sub sites, modern <token>SharePoint_generic</token> sites can be associated with related sites and connected to a <link xlink:href="fe26ae84-14b7-45b6-a6d1-948b3966427f">SharePoint hub site</link>. The hub provides a flat structure that's easier to maintain and navigate as your business changes. Using hubs removes the inflexible hierarchies that site collections and sub sites created in previous versions of SharePoint. </para>
+									<para>You must be a <token>SharePoint_generic</token> administrator to create a hub but a site owner can <link xlink:href="ae0009fd-af04-4d3d-917d-88edb43efc05">associate a SharePoint site with a hub site</link>.</para>
+								</content>
+							</section></sections>
+					</section>
+					<section>
+						<title>Ensure users can access commonly accessed resources</title>
+						<content>
+							
+						</content>
+						<sections>
+							<section>
+								<title>Use lists to dynamically display content</title>
+								<content>
+									
+									<para><token>SharePoint_generic</token> offers content management features in the form of modern lists and libraries. <link xlink:href="0a1c3ace-def0-44af-b225-cfa8d92c52d7">Lists</link> can be used for tracking sales, tasks, inventories, and issues. You'll find a number of ready-to-use lists and list templates to provide a good starting point for organizing list items.</para>
+									<para><literal>Use document libraries to store content</literal></para>
+									<para><link xlink:href="7d4221d9-8fb9-40d5-8441-2374c84b5e26">Libraries</link> store documents and other files. Most sites include a library when you create the site. For example, a team site has a Documents library where you can organize and share your documents. As you need more libraries, you can choose from several ready-to-use library apps and add those to your site.</para>
+								</content>
+							</section></sections>
+					</section>
+					<section>
+						<title>Use web parts to streamline tasks and highlight content</title>
+						<content>
+							
+							<para><link xlink:href="336e8e92-3e2d-4298-ae01-d404bbe751e0">Web parts</link> are the building blocks for your modern <token>SharePoint_generic</token> sites. You can add text, images, files, video, news, dynamic content, and more using the web parts. </para>
+						</content>
+						<sections>
+							<section>
+								<title>Web parts that promote collaboration</title>
+								<content>
+									
+									<para>The following apps and web parts can be integrated into your new site and will enable users stay informed, communicate consistently, and collaborate more effectively.</para>
+									<list class="bullet">
+										<listItem>
+											<para><link xlink:href="9b200289-dbac-4823-85bd-628a5c7bb0ae">Microsoft Teams</link> - real time chat can be added to a SharePoint team site</para>
+										</listItem>
+										<listItem>
+											<para><link xlink:href="a53cfa0c-3d09-42c8-a286-1038a81c59da">Yammer</link> -  the Yammer web part enhances collaboration by embedding Yammer conversations on your page</para>
+										</listItem>
+										<listItem>
+											<para><link xlink:href="c2dcee50-f5d7-434b-8cb9-a7feefd9f165">News</link> - the news web part keeps your team in the loop as well as engages them with important or interesting stories</para>
+										</listItem>
+										<listItem>
+											<para><link xlink:href="5fe4da93-5fa9-4695-b1ee-b0ae4c981909">Events</link> - the events web part allows you to add and display upcoming events on your page</para>
+										</listItem>
+									</list>
+								</content>
+							</section></sections>
+					</section>
+					<section>
+						<title />
+						<content>
+							
+							<para><legacyBold>Ensure users have access to the right information</legacyBold></para>
+						</content>
+						<sections>
+							<section>
+								<title>Team site permission and sharing</title>
+								<content>
+									
+									<para>Team sites are associated with an <token>O365</token> group that has two <externalLink><linkText>user types</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/default-sharepoint-groups?context=context%2Fchromeless</linkUri></externalLink>: Owners and Members. Owners have full control of the team site and members have editing permissions, but not site configuration permissions. </para>
+									<para><token>SharePoint_generic</token> administrators can change whether team sites are non-group connected team sites. These <token>O365</token> group users automatically have access to the team site and the rest of the group's applications.</para>
+									<para>When you <link xlink:href="958771a8-d041-4eb8-b51c-afea2eae3658">share a team site</link>, you can invite users and security groups to be members of the site. When you share the team site using Site permissions panel in the site, the new member isn't joined to the connected <token>O365</token> group. You can however, invite a new member to the <token>O365</token> group and they will be automatically given member access to the team site. Learn more about the benefits of <link xlink:href="b565caa1-5c40-40ef-9915-60fdb2d97fa2">connecting to an Office 365 group</link></para>
+								</content>
+							</section>
+							<section>
+								<title>Communication site permission and sharing</title>
+								<content>
+									
+									<para>Communication sites usually have a small number of content authors and cannot be associated to an Office 365 group. Communication sites include three <externalLink><linkText>default SharePoint groups</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/default-sharepoint-groups?context=context%2Fchromeless</linkUri></externalLink>: Owners, Members, and Visitors. If you're a site owner, when you <link xlink:href="958771a8-d041-4eb8-b51c-afea2eae3658">share your site</link> you can give other people access to the site by adding them as owners, members, or visitors. Advanced permissions are available to communication sites through the Sharing or Site permissions panels.</para>
+								</content>
+							</section>
+							<section>
+								<title>Sharing files and folders</title>
+								<content>
+									
+									<para>When you store files and folders on a <token>SharePoint_generic</token> site they are typically available to all users with permissions to the site. However, you can also share specific <link xlink:href="1fe37332-0f9a-4719-970e-d2578da4941c">files or folders</link>  with people who don't have access to the site. </para>
+								</content>
+							</section></sections>
+					</section>
+					<section>
+						<title>Sharing with external groups</title>
+						<content>
+							
+							<para><token>SharePoint_generic</token> admins control organization settings like external sharing, which will override any settings at the site level. If site owners don't see external sharing settings available, they should check with the global or <token>SharePoint_generic</token> admin to see if this feature is turned off. </para>
+							<para>External sharing in <token>MO_SharePointOnline_2nd</token> is a powerful collaboration feature that your company or organization can use with external vendors, customers, and clients. External sharing is disabled by default for communication sites. Team sites that are group-connected have external sharing enabled only if the <token>O365</token> group allows for guests to be members.</para>
+						</content>
+					</section></sections>
+			</section>
+			<section>
+				<title><legacyBold>Meet the goals of your site</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Team sites connect your team to resources</title>
+						<content>
+							
+							<para>A SharePoint <link xlink:href="75545757-36c3-46a7-beed-0aaa74f0401e">team site</link> connects you and your team to the content, information, and resources you rely on every day. Team sites let users quickly find what they need and use to make decisions, learn what's going on, access tools, and collaborate with teammates, coworkers, and partners on projects. Team sites can connect to an <token>O365</token> group, which allows users to automatically have access to the team site and the rest of the group's applications. <link xlink:href="b565caa1-5c40-40ef-9915-60fdb2d97fa2">Learn more about what you can do with Office 365 groups. </link></para>
+							<para>Look for inspiration in this <link xlink:href="77ffccc1-a627-4ed0-ba5f-b1baa942aa9f">team site guided walkthrough </link>and the <externalLink><linkText>SharePoint look book</linkText><linkUri>https://lookbook.microsoft.com/</linkUri></externalLink>.</para>
+							<para>Ready to get started? <link xlink:href="ef10c1e7-15f3-42a3-98aa-b5972711777d">Create your team site</link>.</para>
+						</content>
+					</section>
+					<section>
+						<title>Communication sites communicate information outward</title>
+						<content>
+							
+							<para>A SharePoint <link xlink:href="94a33429-e580-45c3-a090-5512a8070732">communication site</link> is a great place to share information with dozens, or hundreds, of people. You can share news, reports, statuses, and other information in a visually compelling format. Communication sites cannot be connected to an <token>O365</token> group.</para>
+							<para>Look for inspiration in this <link xlink:href="d9aaecc7-e2df-43a7-acc2-bd37f1fe7cfe">communication site guided walkthrough </link>and the <externalLink><linkText>SharePoint look book</linkText><linkUri>https://lookbook.microsoft.com/</linkUri></externalLink>.</para>
+							<para>Ready to get started? <link xlink:href="7fb44b20-a72f-4d2c-9173-fc8f59ba50eb">Create your communication site</link>.</para>
+						</content>
+					</section></sections>
+			</section>
+			<section>
+				<title><legacyBold>Design the look of your site</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Customize the design</title>
+						<content>
+							
+							<para>Most new sites need to match your company, organization, or team brand. You can easily <link xlink:href="06bbadc3-6b04-4a60-9d14-894f6a170818">change the look of your SharePoint site</link> to match a brand. Site owners can quickly and easily <link xlink:href="320b43e5-b047-4fda-8381-f61e8ac7f59b">customize your SharePoint site</link> by adding a site logo, colors, and other visual elements.</para>
+						</content>
+					</section>
+					<section>
+						<title>Design templates</title>
+						<content>
+							
+							<para>Site templates can help site owners choose a design that aligns with the organization. If your SharePoint admin has enabled site templates, you can choose a design for your site that aligns with your organization. Learn more about <externalLink><linkText>branding SharePoint.</linkText><linkUri>https://blogs.msdn.microsoft.com/bobgerman/2018/09/04/branding-sharepoint-the-new-normal/</linkUri></externalLink></para>
+						</content>
+					</section>
+					<section>
+						<title>Branding in hubs</title>
+						<content>
+							
+							<para>If you decide to connect your site, along with related sites, to a <link xlink:href="fe26ae84-14b7-45b6-a6d1-948b3966427f">hub site</link>, then branding and navigation are shared with the hub. Hub connected sites will have a hub site navigation bar added to the top of the site. </para>
+						</content>
+					</section></sections>
+			</section>
+			<section>
+				<title><legacyBold>Site management and maintenance</legacyBold></title>
+				<content>
+					
+				</content>
+				<sections>
+					<section>
+						<title>Establish a maintenance team </title>
+						<content>
+							
+							<para>Keeping content updated and relevant is one of the biggest challenges after publishing your site.</para>
+							<para>One best practice to keep your site's content up to date is to create a site maintenance team and assign tasks across the site owners, or members if necessary. Site maintenance responsibility can be broken out in several ways; by page, page sections, web parts, lists, libraries, and so on. It's also recommended that you meet with your maintenance team as needed to ensure the longevity of your site's success. </para>
+							<para>Content that get deleted can be <link xlink:href="6df466b6-55f2-4898-8d6e-c0dff851a0be">restored</link> by members who have permission to edit that item.</para>
+						</content>
+					</section>
+					<section>
+						<title>Use site analytics</title>
+						<content>
+							
+							<para>As a SharePoint site owner, you can view information about <link xlink:href="2fa8ddc2-c4b3-4268-8d26-a772dc55779e">how users interact with your site</link>. For example, you can view the number of people who have visited the site, how many times people have visited the site, and a list of files that have received the most views.</para>
+						</content>
+					</section>
+					<section>
+						<title>Manage site settings</title>
+						<content>
+							
+							<para>Once you've created a site in SharePoint, you can <link xlink:href="8376034d-d0c7-446e-9178-6ab51c58df42">make changes to the settings</link>, site information, and permissions for the site.</para>
+						</content>
+					</section></sections>
+			</section></sections>
+	</section>
+	<section>
+		<title>Summary of how to create your site</title>
+		<content>
+			
+			<list class="ordered">
+				<listItem>
+					<para><legacyBold>Plan your site</legacyBold> - consider business objectives and user needs as your guide to deciding which site type and web parts to use, and how to organize content, and permissions.</para>
+				</listItem>
+				<listItem>
+					<para><legacyBold>Create and customize your site</legacyBold> - add branding elements, navigational styles, and web parts to configure the structure or your site.</para>
+				</listItem>
+				<listItem>
+					<para><legacyBold>Upload, create, and organize content</legacyBold> - add files to lists and libraries and content to the web parts of your choosing.</para>
+				</listItem>
+				<listItem>
+					<para><legacyBold>Share your site</legacyBold> - publish and launch your site by sharing with relevant team members and partners.</para>
+				</listItem>
+				<listItem>
+					<para><legacyBold>Maintain your site</legacyBold> - ensure content stays up to date in order to keep your site relevant and valuable to user. Use site analytics to view page and user trends.</para>
+				</listItem>
+			</list>
+		</content>
+	</section>
+	<section>
+		<title>More site creation inspiration</title>
+		<content>
+			
+			<para>Use these resources for site creation inspiration. Many components of these designs examples will require you to partner with a site collection administrator and/or tenant administrators to execute.</para>
+			<para><externalLink><linkText>Guide to the Modern experience in SharePoint</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/guide-to-sharepoint-modern-experience</linkUri></externalLink></para>
+			<para><externalLink><linkText>Get inspired with the SharePoint look book</linkText><linkUri>https://lookbook.microsoft.com/</linkUri></externalLink></para>
+			<para><link xlink:href="e4a984db-d277-45ab-b18e-fa117b25bb4d">Guided walkthrough: Create a leadership site for your organization</link></para>
+		</content>
+	</section>
+	<relatedTopics />
+</developerConceptualDocument><?dxauthor-metadata Server="DBP-CPUBSQL-101" Database="DDCMS_MOD_IW" Project="SharePoint_Online" Team="SharePoint" TopicTitle="Plan your SharePoint site" TopicID="35d9adfe-d5cc-462f-a63a-bae7f2529182" Schema="DDUE" CustomField1="" CustomField2="" CustomField3="" DocumentVersion="1.5"?>

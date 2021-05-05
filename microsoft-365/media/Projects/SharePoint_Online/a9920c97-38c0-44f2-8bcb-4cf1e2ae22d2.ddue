@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<introduction>
+		
+		<para>The audit feature for <token>SharePoint_Online</token> and SharePoint Server lets you track user activity on content types like lists and libraries within your site collection. Knowing which users have accessed specific content at any given time is critical for many business requirements, such as regulatory compliance and records management.</para>
+		<para/>
+		<alert class="note">
+			<para/>
+			<list class="bullet">
+				<listItem>
+					<para>Only site-collection owners can run audit log reports.</para>
+				</listItem>
+				<listItem>
+					<para>Pages (such as .aspx) aren't considered documents so they can't be audited in SharePoint Servers 2019, 2016, or 2013.</para>
+				</listItem>
+				<listItem>
+					<para>SharePoint Online audit log reports function differently than classic audit log reports.</para>
+				</listItem>
+				<listItem>
+					<para>SharePoint administrators can directly download data from the <externalLink><linkText>Office 365 Management Activity API.</linkText><linkUri>https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference</linkUri></externalLink></para>
+				</listItem>
+			</list>
+		</alert>
+	</introduction>
+	<section conditionalContentLocation="Web Only">
+		<title/>
+		<content>
+			
+			<para>Select your version of <token>SharePoint</token> from one of the tabs below:</para>
+			<para/>
+		</content>
+	</section>
+	<section conditionalContentLocation="In-App Clients">
+		<title/>
+		<content>
+			
+			<para>Select your version of <token>SharePoint</token> by clicking the down arrow <mediaLinkInline><image xlink:href="8b1d2375-44c8-4770-a254-7e0e5ad4dae8"/></mediaLinkInline> below:</para>
+		</content>
+	</section>
+	<section>
+		<title/>
+		<content>
+			
+			<tabControl>
+				<tabControlItem>
+					<tabControlItemTitle>SharePoint Online</tabControlItemTitle>
+					<tabControlItemSection>
+						<content>
+							
+							<para><mediaLinkInline><image xlink:href="79462ad6-34d5-477f-9cbf-ec5a5b5ec2b5"/></mediaLinkInline></para>
+						</content>
+						<sections>
+							<section>
+								<title>Changes to SharePoint Online audit settings</title>
+								<content>
+									
+									<para>Office 365 Unified Audit Logging now supports <token>SharePoint_Online</token> and OneDrive for Business. Unified auditing provides access to event logs (like view, create, edit, upload, download, and delete) and sharing actions like invitation and access requests, and synchronization activity. For more information about what Unified Audit Logging in Office 365 provides for SharePoint Online, see <externalLink><linkText>Audited activities</linkText><linkUri>https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#audited-activities</linkUri></externalLink>.</para>
+								</content>
+								<sections>
+									<section>
+										<title>Summary of audit log changes:</title>
+										<content>
+											
+											<list class="bullet">
+												<listItem>
+													<para>Trimming audit log reports is no longer a feature but you can still access files that have been trimmed in the past in the document library that you have set for this purpose. </para>
+												</listItem>
+												<listItem>
+													<para>Audit Log Reports will no longer allow for specific events to be edited. Audit Log Reports will still be available but will be limited to <externalLink><linkText>specific types of events</linkText><linkUri>https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance</linkUri></externalLink>.</para>
+												</listItem>
+												<listItem>
+													<para>For Customize Reports, the location option has been hidden because reports scoped at the sub-site level are no longer supported. </para>
+												</listItem>
+											</list>
+											<para/>
+										</content>
+									</section></sections>
+							</section></sections>
+					</tabControlItemSection>
+				</tabControlItem>
+				<tabControlItem>
+					<tabControlItemTitle>SharePoint Server 2019, 2016, 2013</tabControlItemTitle>
+					<tabControlItemSection>
+						<content>
+							
+							<grid>
+								<gridRow>
+									<gridColumn>
+										<nonEmptyContent>
+											<para><legacyBold>SharePoint Server 2019</legacyBold></para>
+											<mediaLink>
+												<image xlink:href="5d697e13-92ff-44e8-b705-a80edf9d4025"/>
+											</mediaLink>
+										</nonEmptyContent>
+									</gridColumn>
+									<gridColumn>
+										<nonEmptyContent>
+											<para><legacyBold>SharePoint Servers 2016 and 2013</legacyBold></para>
+											<para><mediaLinkInline><image xlink:href="423ae7a5-5cb9-4361-854c-7cb4baf03ad1"/></mediaLinkInline></para>
+										</nonEmptyContent>
+									</gridColumn>
+								</gridRow>
+							</grid>
+							<para>As a site collection owner, you can retrieve the history of actions taken by a particular user and actions taken during a particular date range. For example, you can determine when a specific document was edited and by which user.</para>
+							<para>You can manage the size of the audit log in the <legacyBold>Audit Log Trimming</legacyBold> section and specify which events to audit in the <legacyBold>Documents and Items</legacyBold> and <legacyBold>Lists, Libraries, and Sites</legacyBold> sections. You can also specify the maximum number of days that items will be retained. By default all items are removed at the end of the month.</para>
+							<alert class="note">
+								<para>When multiple users are co-editing a document, auditing events from multiple authors or editors can be difficult to interpret. If this is a concern, consider limiting editing permission to a minimum number of users.</para>
+							</alert>
+						</content>
+						<sections>
+							<section address="__toc271796967" expanded="true">
+								<title>Configure audit log report trimming</title>
+								<content>
+									
+									<list class="ordered">
+										<listItem>
+											<para>Click <legacyBold>settings</legacyBold> <mediaLinkInline><image xlink:href="a9a59c0f-2e67-4cbf-9438-af273b0d552b"/></mediaLinkInline>, and then click <legacyBold>Site settings</legacyBold>. If you don't see <ui>Site settings</ui>, click <ui>Site information</ui> and then click <ui>View all site settings</ui>. Some pages might require you to select <ui>Site contents</ui>, and then <ui>Site settings</ui>.</para>
+										</listItem>
+										<listItem>
+											<para>If you are not at the root of your site collection, under <legacyBold>Site Collection Administration</legacyBold>, select <legacyBold>Go to top level site settings</legacyBold>.</para>
+											<alert class="note">
+												<para>The Site Collection Administration section will not be available if you do not have the necessary permissions.</para>
+											</alert>
+										</listItem>
+										<listItem>
+											<para>On the Site Settings page, under <legacyBold>Site Collection Administration</legacyBold>, select <legacyBold>Site collection audit settings</legacyBold>.</para>
+											<mediaLink>
+												<image xlink:href="ae4c9638-089b-4674-b6a6-afc328802085"/>
+											</mediaLink>
+										</listItem>
+										<listItem>
+											<para>On the Configure Audit Settings page, in the <legacyBold>Audit Log Trimming section</legacyBold>, set <legacyBold>Automatically trim the audit log for this site?</legacyBold> to <legacyBold>Yes</legacyBold>.</para>
+											<alert class="note">
+												<para>For SharePoint Online</para>
+												<list class="bullet">
+													<listItem>
+														<para>Trimming is not supported for SharePoint Online.</para>
+													</listItem>
+													<listItem>
+														<para>We no longer support choosing specific events to edit. Please refer to <externalLink><linkText>this </linkText><linkUri>https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance</linkUri></externalLink>document for complete list of audited events.</para>
+													</listItem>
+												</list>
+											</alert>
+										</listItem>
+										<listItem>
+											<para>Optionally, specify the number of days of audit log data to retain. SharePoint Server doesn't have a limit.</para>
+											<alert class="note">
+												<para>The default setting for retaining audit log data is zero days. That means if you don't specify a different retention period, all audit log entries are deleted at the end of the month. You can change this setting to retain audit log entries for a longer period of time. For example if you specify 30 days, then audit log data that was created in the month of September wouldn't be deleted until the end of October. To retain audit log data, you can also save it to an audit log report before the audit log is trimmed.</para>
+											</alert>
+										</listItem>
+										<listItem>
+											<para>You can also specify the document library to save audit log reports to before the audit log is trimmed. Set this option if you need access to audit log data, using audit log reports, after the audit log has been trimmed.</para>
+										</listItem>
+										<listItem>
+											<para address="__goback">Select <legacyBold>OK</legacyBold>.</para>
+										</listItem>
+									</list>
+								</content>
+							</section>
+							<section address="__toc271796968" expanded="true">
+								<title address="BKMK_configureevents">Configure events to audit</title>
+								<content>
+									
+									<list class="ordered">
+										<listItem>
+											<para>Select <legacyBold>Settings</legacyBold> &gt; <legacyBold>Site settings</legacyBold>. If you don't see <ui>Site settings</ui>, select <ui>Site information</ui> and then select <ui>View all site settings</ui>. Some pages might require you to select <ui>Site contents</ui>, and then <ui>Site settings</ui>.</para>
+										</listItem>
+										<listItem>
+											<para>If you are not at the root of your site collection, under <legacyBold>Site Collection Administration</legacyBold>, select <legacyBold>Go to top level site settings</legacyBold>.</para>
+											<alert class="note">
+												<para>The Site Collection Administration section won't be available if you don't have the necessary permissions. You need to be a member of the default Site Collections Administrators group or a farm administrator.</para>
+											</alert>
+										</listItem>
+										<listItem>
+											<para>On the Site Settings page, under <legacyBold>Site Collection Administration</legacyBold>, select <legacyBold>Site collection audit settings</legacyBold>.</para>
+											<mediaLink>
+												<image xlink:href="ae4c9638-089b-4674-b6a6-afc328802085"/>
+											</mediaLink>
+										</listItem>
+										<listItem>
+											<para>On the Configure Audit Settings page, in the <legacyBold>Documents and Items</legacyBold> and <legacyBold>List, Libraries, and Site sections</legacyBold>, select the events you want to audit, and then select <legacyBold>OK</legacyBold>.</para>
+										</listItem>
+									</list>
+									<para>Which events you audit depends on your auditing needs. For example, regulatory compliance usually has specific requirements that will dictate which events you need to audit. We recommend that you only audit the events required to meet your needs. Additional, unnecessary auditing can affect the performance and other aspects of your site collection(s).</para>
+									<alert class="note">
+										<para>For SharePoint Server 2013, we recommend that you only select the <legacyBold>Opening </legacyBold>or<legacyBold> downloading documents, viewing items in lists, or viewing item properties</legacyBold> event when absolutely necessary. This option is likely to generate a large number of events that will potentially degrade the performance and other aspects of your site collection(s).</para>
+									</alert>
+								</content>
+							</section>
+							<section address="__BKMKShowsUp" expanded="true">
+								<title>What shows up in the audit log report ?</title>
+								<content>
+									
+									<para>Audited events are captured in audit reports that are based on Microsoft Excel 2013 and are available from the Auditing Reports page. You can also create a custom report that includes a number of these events over a specified date range, within a specific area of the site collection, or filtered to an individual user. You cannot modify events once they are logged, but site collection administrators can delete items from the audit log and configure automatic trimming of the audit log data.</para>
+									<para>The audit log captures the following information for the events that are selected to be audited:</para>
+									<list class="bullet">
+										<listItem>
+											<para>Site from which an event originated</para>
+										</listItem>
+										<listItem>
+											<para>Item ID, type, name, and location</para>
+										</listItem>
+										<listItem>
+											<para>User ID associated with the event</para>
+										</listItem>
+										<listItem>
+											<para>Event type, date, time, and source</para>
+										</listItem>
+										<listItem>
+											<para>Action taken on the item</para>
+										</listItem>
+									</list>
+									<para>Following is an example of the data in a Deletion audit log report. With this report, you can determine who deleted and restored data across the site collection. You can use the features of Excel to filter, sort, and analyze the data.</para>
+									<para><mediaLinkInline><image xlink:href="d5c99bd0-cb5c-469d-b04e-207ca4044e8b"/></mediaLinkInline></para>
+								</content>
+							</section>
+							<section address="__BKMKTrimAudit" expanded="true">
+								<title>Trimming the audit log reports</title>
+								<content>
+									
+									<para>When you select an event to audit for a site collection, the report will audit every item in the site collection each time the event occurs. Auditing can potentially generate a large number of audit events, creating a large audit log that could fill the hard drive, impacting performance and other aspects of a site collection.</para>
+									<alert class="important">
+										<para>To prevent the audit log from filling the hard drive and potentially degrading the performance of the site collection, we recommended that you enable audit log trimming for site collections with extensive auditing.</para>
+									</alert>
+									<para>To manage the size of the audit log report you can configure it to automatically trim, and optionally archive, the current audit log data in a document library before the data is trimmed. The schedule for audit log trimming is configured by your server administrator in Central Administration. The default is the end of the month.</para>
+								</content>
+							</section>
+							<section address="__BKMKViewAudit" expanded="true">
+								<title>View audit log reports</title>
+								<content>
+									
+									<para>To view an audit log report:</para>
+									<list class="ordered">
+										<listItem>
+											<para>Click <legacyBold>Settings</legacyBold> <mediaLinkInline><image xlink:href="4b83e9cb-c7e4-46c8-b3d1-cfee017123ae"/></mediaLinkInline>, and then click <legacyBold>Site settings</legacyBold>. If you don't see <ui>Site settings</ui>, click <ui>Site information</ui> and then click <ui>View all site settings</ui>. Some pages might require you to select <ui>Site contents</ui>, and then <ui>Site settings</ui>.</para>
+											<alert class="note">
+												<para>The Site Collection Administration section won't be available if you don't have the necessary permissions. You need to be a member of the default Site Collections Administrators group or a farm administrator.</para>
+											</alert>
+										</listItem>
+										<listItem>
+											<para>Click <legacyBold>Audit log reports</legacyBold> in the <legacyBold>Site Collection Administration</legacyBold> section.</para>
+										</listItem>
+										<listItem>
+											<para>Select the report that you want on the <legacyBold>View Auditing Reports page</legacyBold>.</para>
+										</listItem>
+										<listItem>
+											<para>Type a URL or <legacyBold>Browse</legacyBold> to the library where you want to save the report, and then select <legacyBold>OK</legacyBold>.</para>
+										</listItem>
+										<listItem>
+											<para>On the Operation Completed Successfully page, select <legacyBold>click here to view this report</legacyBold>. If you get an error, it may be because audit logs weren't enabled or there was no data to show.</para>
+											<alert class="note">
+												<list class="bullet">
+													<listItem>
+														<para>At a minimum, Excel version 2013 must be installed to view audit log reports by clicking <legacyBold>Click here to view this report</legacyBold>.</para>
+													</listItem>
+													<listItem>
+														<para>Alternatively, if opening documents in the browser is enabled for the library, go to the library where you saved the audit log report, point to the audit log report, select the down arrow, and then select <legacyBold>View in Browser</legacyBold>.</para>
+													</listItem>
+												</list>
+											</alert>
+										</listItem>
+									</list>
+									<para>You can use standard Excel features to narrow the reports to the information you want. Some ways in which you can analyze and view the log data include:</para>
+									<list class="bullet">
+										<listItem>
+											<para>Filtering the audit log report for a specific site.</para>
+										</listItem>
+										<listItem>
+											<para>Filtering the audit log report for a particular date range.</para>
+										</listItem>
+										<listItem>
+											<para>Sorting the audit log report.</para>
+										</listItem>
+										<listItem>
+											<para>Determining who has updated content.</para>
+										</listItem>
+										<listItem>
+											<para>Determining which content has been deleted but not restored.</para>
+										</listItem>
+										<listItem>
+											<para>Viewing the changes to permissions on an item.</para>
+										</listItem>
+									</list>
+									<para/>
+								</content>
+							</section></sections>
+					</tabControlItemSection>
+				</tabControlItem>
+			</tabControl>
+		</content>
+	</section>
+	<section address="__BKMKComments">
+		<title>We're listening</title>
+		<content>
+			
+			<para>Updated November 2019</para>
+			<para>Was this article helpful? Was it missing content? If so, please let us know what's confusing or missing at the bottom of this page. Please include your <legacyBold>version of <token>SharePoint</token>, OS, and browser</legacyBold>. We'll use your feedback to double-check the facts, add info, and update this article.</para>
+		</content>
+	</section>
+	<section>
+		<title>Related Topics</title>
+		<content>
+			
+			<para><link xlink:href="B37C5869-1B47-4A82-A30D-EA20070FE527">View audit log reports</link></para>
+		</content>
+	</section>
+	<relatedTopics/>
+</developerConceptualDocument><?dxauthor-metadata Server="DBP-CPUBSQL-101" Database="DDCMS_MOD_IW" Project="SharePoint_Online" Team="SharePoint" TopicTitle="Configure audit settings for a site collection" TopicID="a9920c97-38c0-44f2-8bcb-4cf1e2ae22d2" Schema="DDUE" CustomField1="" CustomField2="" CustomField3="" DocumentVersion="1.5"?>

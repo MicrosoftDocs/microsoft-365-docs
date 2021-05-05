@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<introduction>
+		
+		<para><token>SharePoint</token> administrators can create <link xlink:href="fe26ae84-14b7-45b6-a6d1-948b3966427f">hub sites</link> in <token>MO_SharePointOnline_1st</token>. Creating hub sites changes an existing site to a hub site. </para>
+		<para>A hub site links together sites based on a project, department, division, region, etc. Associating a site with a hub site makes it easier to discover related content, news, and site activity across all associated sites. Getting the most value from hub sites requires some <externalLink><linkText>initial planning</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/planning-hub-sites</linkUri></externalLink>.</para>
+	</introduction>
+	<section>
+		<title>Use hub sites when you need:</title>
+		<content>
+			
+			<list class="bullet">
+				<listItem>
+					<para>Consistent branding across a collection of associated sites</para>
+				</listItem>
+				<listItem>
+					<para>Increased visibility to collections of related content</para>
+				</listItem>
+				<listItem>
+					<para>Enhanced search and navigation capabilities for content relevant to specific groups of people</para>
+				</listItem>
+			</list>
+			<para/>
+			<alert class="note">
+				<para>You must be the site owner to perform these steps.</para>
+				<para>Some functionality is introduced gradually to organizations that have set up the <link xlink:href="3b3adfa4-1777-4ff0-b606-fb8732101f47">targeted release options in Office 365</link>. This means that you may not yet see this feature or it may look different than what is described in the help articles.</para>
+			</alert>
+			<para/>
+		</content>
+	</section>
+	<section>
+		<title>In this article:</title>
+		<content>
+			
+			<list class="bullet">
+				<listItem>
+					<para><link xlink:href="e2daed64-658c-4462-aeaf-7d1a92eba098#BKMK_Hubsitebasicsforsiteowners">Hub site basics for site owners</link></para>
+					<list class="bullet">
+						<listItem>
+							<para>Edit the hub site name and logo</para>
+						</listItem>
+						<listItem>
+							<para>Edit the hub navigation bar</para>
+						</listItem>
+						<listItem>
+							<para>Change the hub site theme</para>
+						</listItem>
+						<listItem>
+							<para>Choose a site design for associated sites</para>
+						</listItem>
+					</list>
+				</listItem>
+				<listItem>
+					<para><link xlink:href="e2daed64-658c-4462-aeaf-7d1a92eba098#BKMK_Managesiteassociationapprovals">Manage site association approvals</link></para>
+					<list class="bullet">
+						<listItem>
+							<para>Implement an approval flow</para>
+						</listItem>
+						<listItem>
+							<para>Turn off an approval flow</para>
+						</listItem>
+						<listItem>
+							<para>Delete an approval flow</para>
+						</listItem>
+						<listItem>
+							<para>Approving site-association requests</para>
+						</listItem>
+					</list>
+				</listItem>
+				<listItem>
+					<para><link xlink:href="e2daed64-658c-4462-aeaf-7d1a92eba098#BKMK_domorewithyourhubsite">Do more with your hub site </link></para>
+					<list class="bullet">
+						<listItem>
+							<para>Add the News web part</para>
+						</listItem>
+						<listItem>
+							<para>Add the Sites web part</para>
+						</listItem>
+						<listItem>
+							<para>Add the Highlighted Content web part</para>
+						</listItem>
+					</list>
+				</listItem>
+			</list>
+			<para/>
+		</content>
+	</section>
+	<section address="BKMK_Hubsitebasicsforsiteowners">
+		<title>Hub site basics for site owners</title>
+		<content>
+			
+		</content>
+		<sections>
+			<section expanded="false">
+				<title><legacyBold>Edit the hub site name and logo</legacyBold></title>
+				<content>
+					
+					<para>The hub name and logo appear in the hub site navigation bar and will allow others to identify the hub when connecting sites.</para>
+					<para><mediaLinkInline><image xlink:href="a8287c11-2e0d-4603-87eb-df0bf422d8ec"/></mediaLinkInline></para>
+					<list class="ordered">
+						<listItem>
+							<para>Select <ui>Settings</ui> <mediaLinkInline><image xlink:href="bcec6d42-d9c4-4164-a8a3-456ca0eb6847"/></mediaLinkInline></para>
+						</listItem>
+						<listItem>
+							<para>Select <legacyBold>Hub s</legacyBold><ui>ite information</ui></para>
+						</listItem>
+						<listItem>
+							<para>Make your edits and <ui>Save </ui>your changes</para>
+						</listItem>
+					</list>
+					<alert class="note">
+						<para>You can hide the hub site name as long as you have selected a logo</para>
+					</alert>
+					<para/>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Edit the navigation bar</legacyBold></title>
+				<content>
+					
+					<para><link xlink:href="3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca">Customize the navigation</link> of your hub site to ensure content can be easily discovered. Consider using a <link xlink:href="d6768545-2391-4c66-9a8c-a85eb76b4cf5">mega menu</link> to increase content visibility. </para>
+					<para><mediaLinkInline><image xlink:href="f52eef89-3569-4011-9b9e-2ae3cf70356d"/></mediaLinkInline></para>
+					<para><mediaLinkInline><image xlink:href="30605346-55b5-4306-ae15-da8417a83912"/></mediaLinkInline>  </para>
+					<para><mediaLinkInline><image xlink:href="fd973f74-eddd-4d4e-8dc6-8880fe5f259f"/></mediaLinkInline>  </para>
+					<list class="ordered">
+						<listItem>
+							<para>Select <legacyBold>Edit</legacyBold></para>
+						</listItem>
+						<listItem>
+							<para>To add a new menu link or header, hover in-between menu topics until you see the plus sign</para>
+						</listItem>
+						<listItem>
+							<para>Select the ellipsis to edit, move, and remove navigational links</para>
+						</listItem>
+						<listItem>
+							<para>Make your edits and <ui>Save </ui>your changes</para>
+						</listItem>
+					</list>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Change the hub site theme</legacyBold></title>
+				<content>
+					
+					<para>All sites associated with the hub site will inherit the hub site <link xlink:href="06bbadc3-6b04-4a60-9d14-894f6a170818">theme</link>.</para>
+					<list class="ordered">
+						<listItem>
+							<para>Select <ui>Settings</ui> <mediaLinkInline><image xlink:href="bcec6d42-d9c4-4164-a8a3-456ca0eb6847"/></mediaLinkInline></para>
+						</listItem>
+						<listItem>
+							<para>Select <ui>Change the look</ui></para>
+						</listItem>
+						<listItem>
+							<para>Select the look you want and a preview of the theme will appear</para>
+						</listItem>
+						<listItem>
+							<para>Click <legacyBold>Save </legacyBold>to apply the theme to your site</para>
+						</listItem>
+					</list>
+					<para/>
+					<alert class="note">
+						<para>If the theme for the site that was converted to a hub site was never changed from the default theme assigned by <token>SharePoint</token> at the time it was created, the sites associated with the hub site will not inherit the hub site theme.</para>
+						<para>Classic experience <token>SharePoint</token> sites that are associated with a hub site will retain their original theme.</para>
+						<para>Changes made to the theme may not appear right away.</para>
+					</alert>
+					<para/>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Choose a site design for associated sites</legacyBold></title>
+				<content>
+					
+					<para>Associated sites are the individual sites that are connected to the hub site. If made available by your administrator, select a <externalLink><linkText>site design</linkText><linkUri>https://docs.microsoft.com/en-us/sharepoint/set-up-site-design-hub-site</linkUri></externalLink> to apply to all associated sites. The site design will automatically apply to sites that join the hub site in the future.</para>
+					<list class="ordered">
+						<listItem>
+							<para>Select <ui>Settings</ui> <mediaLinkInline><image xlink:href="bcec6d42-d9c4-4164-a8a3-456ca0eb6847"/></mediaLinkInline></para>
+						</listItem>
+						<listItem>
+							<para>Select<ui> Site information</ui></para>
+						</listItem>
+						<listItem>
+							<para>Select the site design you want applied from the drop-down list</para>
+						</listItem>
+						<listItem>
+							<para>Select <ui>Save</ui></para>
+						</listItem>
+					</list>
+					<para/>
+					<alert class="note">
+						<para>Site design options are managed by your administrator.</para>
+					</alert>
+					<para/>
+				</content>
+			</section></sections>
+	</section>
+	<section address="BKMK_Managesiteassociationapprovals">
+		<title>Manage site association approvals </title>
+		<content>
+			
+		</content>
+		<sections>
+			<section>
+				<title><legacyBold>Create an approval flow</legacyBold></title>
+				<content>
+					
+					<para>Sites associated to hub sites should be managed through a standard approval process to ensure organizational coherence and to protect sensitive content. Creating approval flows ensure new site associations meet a standard set of criteria determined by the hub site owner before joining the hub site. </para>
+					<para>Once your administrator has created a hub, hub site owners can create and manage site association approval flows in <legacyBold>Hub site information</legacyBold>.</para>
+					<para>To create a new approval flow:</para>
+					<list class="ordered">
+						<listItem>
+							<para>Go to the hub site and select <legacyBold>Settings </legacyBold> <mediaLinkInline><image xlink:href="bcec6d42-d9c4-4164-a8a3-456ca0eb6847"/></mediaLinkInline>, and then click <legacyBold>Hub site settings</legacyBold></para>
+						</listItem>
+						<listItem>
+							<para>Toggle the <legacyBold>Require approval for associated sites to join</legacyBold> </para>
+						</listItem>
+						<listItem>
+							<para>Select <legacyBold>Create flow</legacyBold> to create the approval flow</para>
+						</listItem>
+						<listItem>
+							<para>Name your flow</para>
+						</listItem>
+						<listItem>
+							<para>Confirm the approved site additions come from one or more of the hub site owners.</para>
+						</listItem>
+						<listItem>
+							<para>Select <legacyBold>Create flow</legacyBold>, to complete and implement the new flow</para>
+						</listItem>
+					</list>
+					<para>View flow details and manage previously created flows in <legacyBold>Hub site settings.</legacyBold></para>
+					<para/>
+					<alert class="note">
+						<para>There are no approval flows for sites leaving hub sites.</para>
+					</alert>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Turn off an approval flow</legacyBold></title>
+				<content>
+					
+					<list class="ordered">
+						<listItem>
+							<para>Go to the hub site and select <legacyBold>Settings </legacyBold> <mediaLinkInline><image xlink:href="bcec6d42-d9c4-4164-a8a3-456ca0eb6847"/></mediaLinkInline>, and then click <legacyBold>Hub site settings</legacyBold></para>
+						</listItem>
+						<listItem>
+							<para>Toggle the <legacyBold>Require approval for associated sites to join</legacyBold></para>
+						</listItem>
+						<listItem>
+							<para>After you toggle this setting, new sites will not require approval to be associated with this hub site. Your approval flow will not be deleted.</para>
+						</listItem>
+					</list>
+					<para> View flow details and manage previously created flows in <legacyBold>Hub site settings.</legacyBold></para>
+					<para/>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Delete an approval flow</legacyBold></title>
+				<content>
+					
+					<para>When you turn off an approval flow, the approval flow is not automatically deleted.</para>
+					<para>To delete the approval flow:</para>
+					<para><mediaLinkInline><image xlink:href="10807043-b2e7-440a-992d-e76b08c46929"/></mediaLinkInline>  </para>
+					<list class="ordered">
+						<listItem>
+							<para>Go to the hub site and select the <legacyBold>App launcher</legacyBold> icon in the left hand corner of the <legacyBold>Microsoft 365 navigation bar</legacyBold></para>
+						</listItem>
+						<listItem>
+							<para>Click on <legacyBold>Flow</legacyBold> app to navigate to the Flow website. If you do not find the Flow app, click <legacyBold>Explore all your Apps</legacyBold> and then scroll through the list and locate the <legacyBold>Flow</legacyBold> app.</para>
+						</listItem>
+						<listItem>
+							<para>Click on <legacyBold>My flows</legacyBold> to view all previously created and active flows</para>
+						</listItem>
+						<listItem>
+							<para>Select the approval flow’s and select <legacyBold>Delete</legacyBold></para>
+						</listItem>
+					</list>
+					<para>Once the flow is deleted, it is deleted permanently from Microsoft Flow.</para>
+					<para/>
+				</content>
+			</section></sections>
+	</section>
+	<section address="BKMK_domorewithyourhubsite">
+		<title>Do more with your hub site </title>
+		<content>
+			
+		</content>
+		<sections>
+			<section>
+				<title><legacyBold>Add the News web part</legacyBold></title>
+				<content>
+					
+					<para><link xlink:href="c2dcee50-f5d7-434b-8cb9-a7feefd9f165">Add the News web part</link> to the homepage to see news from associated sites.</para>
+					<para>In the news web part, select "sites across the hub" as the source. You can choose which associated sites display news on the hub site home page and viewers will only see news for sites they have access to.</para>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Add the Sites web part</legacyBold></title>
+				<content>
+					
+					<para><link xlink:href="93cbd17b-0bf8-4355-9f32-cc90e0443e6d">Add the sites web part</link> to the homepage to see activity on associated sites.</para>
+				</content>
+			</section>
+			<section>
+				<title><legacyBold>Add the Highlighted Content web part</legacyBold></title>
+				<content>
+					
+					<para><link xlink:href="e34199b0-ff1a-47fb-8f4d-dbcaed329efd">Add the highlighted content web part</link> to dynamically display content from a document library, a site, a site collection, or all sites.</para>
+					<para/>
+				</content>
+			</section></sections>
+	</section>
+	<section>
+		<title>More about <token>SharePoint</token> hub sites</title>
+		<content>
+			
+			<para><link xlink:href="fe26ae84-14b7-45b6-a6d1-948b3966427f">What is a SharePoint hub site?</link></para>
+			<para><externalLink><linkText>Create a hub site in SharePoint Online</linkText><linkUri>https://docs.microsoft.com/sharepoint/create-hub-site</linkUri></externalLink></para>
+			<para><link xlink:href="ae0009fd-af04-4d3d-917d-88edb43efc05">Associate a SharePoint site with a hub site</link></para>
+			<para><link xlink:href="81b8dd5d-517b-4e0c-bdda-6f03937884aa">Disassociate a SharePoint site from a hub site</link></para>
+		</content>
+	</section>
+	<relatedTopics/>
+</developerConceptualDocument><?dxauthor-metadata Server="DBP-CPUBSQL-101" Database="DDCMS_MOD_IW" Project="SharePoint_Online" Team="SharePoint" TopicTitle="Set up your SharePoint hub site" TopicID="e2daed64-658c-4462-aeaf-7d1a92eba098" Schema="DDUE" CustomField1="" CustomField2="" CustomField3="" DocumentVersion="1.5"?>
