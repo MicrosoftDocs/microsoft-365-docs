@@ -1,5 +1,5 @@
 ---
-title: "Empower remote workers with Microsoft 365"
+title: "Set up your infrastructure for remote work with Microsoft 365"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,12 +17,15 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Make sure you have enabled all features in Microsoft 365 to maximize remote worker productivity and maintain secure access to your servers, data, and cloud.
+keywords: work from home, work-from-home, hybrid, remote worker, hybrid work, remote employees, hybrid connectivity, remote access, telecommuting, telework, teleworking, mobile work, remote job, work from anywhere, flexible workplace
+description: Step through the layers of infrastructure so your remote workers can securely access on-premises and Microsoft 365 resources.
 ---
 
-# Empower remote workers with Microsoft 365
+# Set up your infrastructure for remote work with Microsoft 365
 
-Your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. Allowing workers to work away from the office is important for many organizations to:
+To secure and optimize your remote worker’s productivity and collaboration, you need to configure your IT and cloud infrastructure to enable remote work and to provide access to your organization's on-premises and cloud-based information, tools, and resources. This solution steps through the deployment of key layers of infrastructure that empower your workers to do their best work, wherever they are.
+
+Allowing workers to work away from the office is important for many organizations to:
 
 - Save on office space.
 - Hire and retain workers who are unwilling to relocate.
@@ -121,9 +124,6 @@ Use these steps to secure and optimize access to your organization's servers and
 5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![The steps to set up your infrastructure for remote work with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-For the latest information from Microsoft about supporting remote workers, see the [Enabling hybrid work
-with Microsoft Teams site](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-To see how a fictional but representative multi-national organization empowered its remote workers, see [Contoso's COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md).
+To see how a fictional but representative multi-national organization set up its infrastructure for remote work, see [Contoso's COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md).
