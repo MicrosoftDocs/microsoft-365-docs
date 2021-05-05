@@ -115,7 +115,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 1.	To cancel your portal’s launch, navigate to **Settings** and **Schedule site launch**.
 2.	Then, select **Delete** and then when you see the message below select **Delete** again.
 
-      ![Image of the Portal launch scheduler tool](./media/portal-launch-delete.png)
+      ![Image of the Portal launch scheduler tool](../media/portal-launch-delete.png)
 
 
 
