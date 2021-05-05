@@ -54,11 +54,11 @@ Site permissions must be set up separately from waves as part of the launch. For
 
       - The first few times you edit and then save and republish changes to your home page - or up until home page version 3.0 - you will be prompted to use the Portal launch scheduler tool. Select **Schedule launch** to move forward with scheduling. Or select Republish to republish your page edits without scheduling the launch.
 
-      ![Image of the prompt to use the portal launch scheduler when republishing the home page](media/portal-launch-republish.png)
+      ![Image of the prompt to use the portal launch scheduler when republishing the home page](../media/portal-launch-republish.png)
 
       - At any time, you can navigate to the SharePoint communication site home page, select **Settings** and then **Schedule site launch** to schedule your portal’s launch.
 
-      ![Image of the Settings pane with Schedule a site launch highlighted](media/portal-launch-settings.png)
+      ![Image of the Settings pane with Schedule a site launch highlighted](../media/portal-launch-settings.png)
 
 
 
@@ -66,7 +66,7 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 > [!NOTE] The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
 
-      ![Image of the Portal launch scheduler tool](media/portal-launch-panel.png)
+      ![Image of the Portal launch scheduler tool](../media/portal-launch-panel.png)
 
 
 4.	Select the **Number of expected users** from the drop-down. This figure represents the number of users who will most likely need access to the site. The Portal launch scheduler will automatically determine the ideal number of waves depending on the expected users like this:
