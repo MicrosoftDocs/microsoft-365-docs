@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription :
+The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 for E5 reporting
 
