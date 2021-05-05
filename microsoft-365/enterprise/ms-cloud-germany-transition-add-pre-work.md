@@ -113,7 +113,7 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 | Limit SharePoint 2013 workflows, use during the SharePoint Online migration. | Reduce SharePoint 2013 workflows and complete in-flight workflows before transitions. | Inaction may result in user confusion and help desk calls. |
 ||||
 
-## Exchange Online 
+## Exchange Online
 
 ### Exchange Online customers using the availability address service
 **Applies to**: Exchange Online customers with availability address space configuration<br>
