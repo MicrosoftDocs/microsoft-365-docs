@@ -129,7 +129,7 @@ Microsoft collects performance information for searches run by all organizations
 > <sup>1</sup> Any item that exceeds a single file limit will show up as a processing error.
 >
 > <sup>2</sup> When searching SharePoint and OneDrive for Business locations, the characters in the URLs of the sites being searched count against this limit. The total number of characters consists of:<br>
-> - All Characters in both the Users and Filters fields
+> - All characters in both the Users and Filters fields.
 > - All Compliance Security Filters that apply to the user will be included in their search.
 > - The characters from any location properties in the search (ExchangeLocation,PublicFolderLocation,SharpointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion).
 > - Example: Including all SPO/ODB workloads will incur 6 characters as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation
