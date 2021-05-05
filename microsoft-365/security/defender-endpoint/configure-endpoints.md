@@ -35,20 +35,10 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 Windows device | Onboarding tool or method
 :---|:---
-Windows 7 SP1 <br> Windows 7 SP1 Pro <br> Windows 8.1 Pro <br> Windows 8.1 Enterprise| System Center Endpoint Protection and Microsoft Monitoring Agent (MMA)
-Windows 10 | a
+Windows 7 SP1 <br> <br>  Windows 7 SP1 Pro <br> <br>  Windows 8.1 Pro <br> <br>  Windows 8.1 Enterprise | [System Center Endpoint Protection and Microsoft Monitoring Agent (MMA)](onboard-downlevel.md)
+Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-server-2008r2.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) or [Azure Security Center](onboard-server-2008r2.md#option-2-onboard-windows-servers-through-azure-security-center)
+Windows 10 <br> <br>  Windows Server 1803 and 2019  <br> <br> Windows Server 2012 R2 and 2016 <br> <br>  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> <br>  [Group Policy](configure-endpoints-gp.md) <br><br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> <br>   [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br><br>    [VDI scripts](configure-endpoints-vdi.md) 
 
 
 
 
-
-Topic | Description
-:---|:---
-[Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on devices.
-[Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | You can use either use Microsoft Endpoint Manager (current branch) version 1606 or Microsoft Endpoint Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
-[Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
-[Onboard Windows 10 devices using a local script](configure-endpoints-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
-[Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI devices.
-
-
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)
