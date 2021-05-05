@@ -127,7 +127,6 @@ The SharePoint Portal launch scheduler tool was originally only available via [S
 
 > [!NOTE] - You need administrator permissions to use SharePoint PowerShell.
 
-
 ### App setup and connecting to SharePoint Online
 1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
