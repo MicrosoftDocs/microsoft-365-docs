@@ -88,7 +88,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 10 Enterprise
-- [Windows 10 Enterprise LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/)
+- [Windows 10 Enterprise LTSC 2016 (or later)](https://docs.microsoft.com/windows/whats-new/ltsc/)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
