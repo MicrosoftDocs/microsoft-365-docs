@@ -208,7 +208,8 @@ Delete the data where it is no longer necessary for the purposes for which you c
 If you store personal data on an IT system, limit the access to the
 files containing the data, for example, by a strong password. Regularly update the security settings of your system.
 
-(Note: the GDPR does not prescribe the use of any specific IT system)
+> [!NOTE]
+> The GDPR does not prescribe the use of any specific IT system.
 
 If you store physical documents with personal data, then ensure
 that they are not accessible by unauthorized persons (for example, lock them in a safe in a secured area).
