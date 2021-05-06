@@ -38,7 +38,7 @@ For more information preview features, see [Preview features](https://docs.micro
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
 > 
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 
