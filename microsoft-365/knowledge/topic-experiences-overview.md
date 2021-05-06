@@ -18,7 +18,7 @@ description: "Overview of Viva Topics."
 
 # Microsoft Viva Topics overview 
 
-Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search and Search in Word and PowerPoint.
+Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word and PowerPoint.
 
 </br>
 
@@ -37,9 +37,7 @@ When a topic is mentioned in content on SharePoint news and pages, you'll see it
 
    ![Topic highlights](../media/knowledge-management/saturn.png) </br> 
 
-When you use Search in Word or PowerPoint, either through the search box, or by selecting "Search" in the context menu, the results that are displayed may also show the topic summary.
-
-<<< Chuck, let me know if these images are good: https://microsoft-my.sharepoint-df.com/:i:/p/cjtan/Ecrk6pWMOAFPomybOY7e-zYBPOmLZMS4lYgrt7iC3Opmug?e=PeKdj7, https://microsoft-my.sharepoint-df.com/:i:/p/cjtan/EbtG64e-MsdMkpxJB9fVObMB6Bvccb4LtF2Sxn5yO6NhiA?e=jeBFkV >>>
+When you use Search in Word or PowerPoint, either through the search box, or by selecting **Search** in the context menu, the results that are displayed might also show the topic summary.
 
 ## Knowledge indexing
 
