@@ -381,7 +381,7 @@ When you use a previously created and published [retention label](retention.md#r
 
 ### Using a sensitivity label as a condition in a DLP policy
 
-Sensitivity label as a condition in DLP policies is currently in preview. [Learn more](./dlp-sensitivity-label-as-condition.md).
+[Learn more](./dlp-sensitivity-label-as-condition.md) about using Sensitivity label as a condition in DLP policies.
   
 ### How this feature relates to other features
 
