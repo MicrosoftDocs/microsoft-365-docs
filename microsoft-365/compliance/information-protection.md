@@ -93,11 +93,6 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 :::image type="content" source="../media/dlp-4638524-new.png" alt-text="Prevent data loss":::
 
-
-Step 1 - Review and meet prerequisites
-
-
-
 |**Step**|**Description**|**More information**|
 |--|--|--|
 |[Design DLP policies](data-loss-prevention-policies.md)| Plan for the mode of identifying info(sensitive info type, label, other) <br /><br /> Plan where the policies will target(services, client, 3rd party apps.) <br /><br /> Plan policy tips, other||
