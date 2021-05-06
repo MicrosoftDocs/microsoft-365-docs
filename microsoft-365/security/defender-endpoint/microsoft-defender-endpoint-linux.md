@@ -46,7 +46,8 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Administrative privileges on the device (in case of manual deployment)
 
 > [!NOTE]
->  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.<br><br>
+>  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
+> 
 > Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
 
 
@@ -69,7 +70,6 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 
 
-
 ### System requirements
 
 - Supported Linux server distributions and versions:
@@ -86,13 +86,18 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 
 - Minimum kernel version 3.10.0-327
+
 - The `fanotify` kernel option must be enabled
+
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
-- Disk space: 1GB
+- Disk space: 1 GB
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
-- Memory: 1GB
+
+- Memory: 1 GB
+
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
@@ -125,7 +130,7 @@ After you've enabled the service, you may need to configure your network or fire
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
-|**Spreadsheet of domains list**|**Description**|
+| Spreadsheet of domains list | Description |
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
