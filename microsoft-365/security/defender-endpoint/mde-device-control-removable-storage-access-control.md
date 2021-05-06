@@ -20,6 +20,8 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
