@@ -115,7 +115,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Meeting End Date|MeetingEndDate|Meeting_end_date|Meeting end date for meetings.|
 |Meeting Start Date|MeetingStartDate|Meeting_start_date|Meeting start date for meetings.|
 |Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<br /><br />contacts <br />docs <br />email <br />externaldata <br />faxes <br />im <br />journals <br />meetings <br />microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br />notes <br />posts <br />rssfeeds <br />tasks <br />voicemail**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|Modern Attachment Parent Id||ModernAttachment_ParentId|The Immutable Id of the document's parent.|
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
 |NativeMD5||Native_MD5|MD5 hash (128-bit hash value) of the file stream.|
@@ -160,6 +160,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Title|Title|Doc_title|Title from the document metadata.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
 |Unique in email set|UniqueInEmailSet||**False** if there's a duplicate of the attachment in its email set.|
+|Version Group ID||Version_Group_Id|Groups together the different versions of the same document.|
 |Was Remediated|WasRemediated|Was_Remediated|**True** if the item was remediated, otherwise **False**.|
 |Word count|WordCount|Word_count|Number of words in the item.|
 |||||
