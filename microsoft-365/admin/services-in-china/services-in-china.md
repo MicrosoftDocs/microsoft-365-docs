@@ -228,3 +228,11 @@ GDPR grants individuals (or, data subjects) certain rights in connection with th
 - System generated logs for Microsoft services operated by 21Vianet can be exported by Tenant Administrators using the Data Log Export.
     
 For details and instructions, see [Data Subject Requests (DSR) for GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+
+## Related content
+
+[Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)
+
+[Azure Information Protection support for Office 365 operated by 21Vianet](parity-between-azure-information-protection.md) (article)
+
+[View your bill or get a Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)

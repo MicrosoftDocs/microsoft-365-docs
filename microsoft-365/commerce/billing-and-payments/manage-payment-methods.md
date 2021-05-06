@@ -27,6 +27,9 @@ ms.date: 04/02/2021
 
 # Manage payment methods
 
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 
 If your business account has a billing profile, and you are a billing profile owner or billing profile contributor, you can use the billing profile that's backed by a credit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage billing profiles](manage-billing-profiles.md).
