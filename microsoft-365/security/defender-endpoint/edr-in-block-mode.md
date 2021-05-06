@@ -115,7 +115,7 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 ### How much time does it take for EDR in block mode to be disabled?
 
-If you chose to disable EDR in block mode it can take up to 30 minutes for the system to disable this capability.
+If you chose to disable EDR in block mode, it can take up to 30 minutes for the system to disable this capability.
 
 ### Is EDR in block mode supported on Windows Server 2016?
 
@@ -125,7 +125,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server, version 1803 or newer 
 - Windows Server 2019 
 
-In the case of Windows Server 2016, if Microsoft Defender Antivirus is running in active mode and the endpoint is onboarded to Defender for Endpoint, EDR in block mode is support. 
+If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, and the endpoint is onboarded to Defender for Endpoint, then EDR in block mode is supported. 
 
 ## See also
 
