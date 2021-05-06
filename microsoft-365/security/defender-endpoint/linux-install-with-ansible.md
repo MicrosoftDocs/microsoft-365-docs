@@ -277,3 +277,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Add and remove APT repositories](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## See also
+- [Investigate agent health issues](health-status.md)
