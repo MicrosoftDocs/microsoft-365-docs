@@ -13,6 +13,7 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure and validate exclusions based on file extension and folder location

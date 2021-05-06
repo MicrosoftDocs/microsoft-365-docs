@@ -15,6 +15,7 @@ ms.date: 12/28/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections

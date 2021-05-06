@@ -15,6 +15,7 @@ ms.date: 06/29/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Collect Microsoft Defender AV diagnostic data

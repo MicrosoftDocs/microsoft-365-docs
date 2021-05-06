@@ -15,6 +15,7 @@ ms.date: 01/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Deploy and enable Microsoft Defender Antivirus

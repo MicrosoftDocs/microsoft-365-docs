@@ -15,6 +15,7 @@ ms.date: 11/18/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus features

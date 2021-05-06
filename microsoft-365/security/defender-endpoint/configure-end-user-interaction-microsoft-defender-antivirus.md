@@ -14,6 +14,7 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure end-user interaction with Microsoft Defender Antivirus

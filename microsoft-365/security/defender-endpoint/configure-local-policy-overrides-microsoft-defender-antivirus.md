@@ -15,6 +15,7 @@ ms.date: 02/13/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings

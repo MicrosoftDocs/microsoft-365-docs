@@ -15,6 +15,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
+ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server

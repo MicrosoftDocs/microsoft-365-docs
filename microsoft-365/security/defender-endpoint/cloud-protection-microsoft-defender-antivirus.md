@@ -13,6 +13,7 @@ ms.reviewer: shwjha
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection

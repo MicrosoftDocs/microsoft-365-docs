@@ -15,6 +15,7 @@ ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections

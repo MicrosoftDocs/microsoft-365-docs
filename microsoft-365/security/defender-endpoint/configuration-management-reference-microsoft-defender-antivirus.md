@@ -15,6 +15,7 @@ ms.date: 05/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Manage Microsoft Defender Antivirus in your business
