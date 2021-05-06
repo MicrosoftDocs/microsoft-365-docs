@@ -41,7 +41,7 @@ Watch this video for a quick overview of Microsoft 365 Business Premium.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml). 
 
 Microsoft 365 Business Premium is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](../enterprise/index.yml) documentation for more information.
 
@@ -106,6 +106,6 @@ To see the full list of security features, see [Microsoft 365 Business Premium s
 
 - If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
-## See also
+## Related content
 
-[Microsoft 365 Business Premium training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium training videos](../business-video/index.yml) (link page)

@@ -47,29 +47,13 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Steps: Let people reset their own passwords
 
 These steps turn on self-service password reset for everyone in your business.
-  
-::: moniker range="o365-worldwide"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.
-
-::: moniker-end
 
 2. At the top of the **Org settings** page, select the **Security & Privacy** tab.
   
@@ -89,4 +73,4 @@ These steps turn on self-service password reset for everyone in your business.
 
 [Set an individual user's password to never expire](set-password-to-never-expire.md)
 
-[Microsoft 365 Business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business training videos](../../business-video/index.yml)
