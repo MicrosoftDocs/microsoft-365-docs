@@ -26,9 +26,9 @@ The following tasks are completed by the Microsoft Office 365 admin and the Blac
 
 Before managing the integration within Blackboard Learn Ultra, the Microsoft Office 365 admin must approve the Blackboard **MSFT Teams for Learn Ultra Azure** app for the institution’s Microsoft Azure tenant.
 
-1.Find your Microsoft Tenant ID. See [how to find the tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
+1. Find your Microsoft Tenant ID. See [how to find the tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
-2.Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
+2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
    `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
@@ -85,13 +85,13 @@ Complete the following to set up the REST Application
 
 2. Select **Create Configuration**.
 
-1. Enter `https://bb-ms-teams-ultra-ext.api.blackboard.com` in the origin.
+3. Enter `https://bb-ms-teams-ultra-ext.api.blackboard.com` in the origin.
 
-3. Add the word **Authorization** in the **Allowed Headers**.
+4. Add the word **Authorization** in the **Allowed Headers**.
 
-4. Set **Available** to **Yes**.
+5. Set **Available** to **Yes**.
 
-5. Select **Submit** once complete.
+6. Select **Submit** once complete.
 
 ## Enable Class Teams in Blackboard Learn
 
@@ -99,11 +99,11 @@ Once you've enabled the LTI tools, your next step will be to set up the Microsof
 
 1. In **Learn Admin** > **Tools and Utilities**, select **Microsoft Teams Integration Admin**.
 
-1. Select the checkbox for **Enable Microsoft Teams**.
+2. Select the checkbox for **Enable Microsoft Teams**.
 
-1. Enter your tenant ID as referenced in the section under Microsoft O365 Admin
+3. Enter your tenant ID as referenced in the section under Microsoft O365 Admin
 
  > [!NOTE]
  > You won't be able to save the settings until the app has been approved by the O365 admin. See [Approve the app in Microsoft Azure tenant](#approve-the-app-in-the-microsoft-azure-tenant).
 
-2. When the global O365 admin has approved the Blackboard Teams application in your Microsoft Tenant, select **Submit**.
+4. When the global O365 admin has approved the Blackboard Teams application in your Microsoft Tenant, select **Submit**.
