@@ -103,9 +103,7 @@ The settings in Safe Links policies that apply to email messages are described i
   - URLs that don't have a valid reputation are detonated asynchronously in the background.
 
 - **Apply real-time URL scanning for suspicious links and links that point to files**: Enables real-time scanning of links, including links in email messages that point to downloadable content. The recommended value is enabled.
-
   - **Wait for URL scanning to complete before delivering the message**:
-
     - Enabled: Messages that contain URLs are held until scanning is finished. Messages are delivered only after the URLs are confirmed to be safe. This is the recommended value.
     - Disabled: If URL scanning can't complete, deliver the message anyway.
 
@@ -124,7 +122,6 @@ The settings in Safe Links policies that apply to email messages are described i
   For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
-
   - **The recipient is**
   - **The recipient domain is**
   - **The recipient is a member of**
@@ -255,26 +252,23 @@ When a user in an active Safe Links policy clicks a blocked link in a supported 
 
 You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-> [!NOTE]
-> 
-> - For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Limits:
->   - The maximum number of entries is 500.
->   - The maximum length of an entry is 128 characters.
->   - All of the entries can't exceed 10,000 characters.
-> 
-> - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-> 
-> - A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
-> 
-> - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
-> 
-> - You can include up to three wildcards (`*`) per URL entry.
+**Notes**:
+
+- For a truly universal list of URLs that are blocked everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Limits for the **Block the following URLs** list:
+  - The maximum number of entries is 500.
+  - The maximum length of an entry is 128 characters.
+  - All of the entries can't exceed 10,000 characters.
+- Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
+- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+- You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
+- You can include up to three wildcards (`*`) per URL entry.
 
 ### Entry syntax for the "Block the following URLs" list
 
 Examples of the values that you can enter and their results are described in the following table:
+
+<br>
 
 ****
 
@@ -295,24 +289,24 @@ Each Safe Links policy contains a **Do not rewrite the following URLs** list tha
 
 To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-> [!NOTE]
-> 
-> - The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
-> 
->   - Microsoft Teams
->   - Office web apps
-> 
->   For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
-> 
-> - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
-> 
-> - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
+**Notes**:
+
+- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+  - Microsoft Teams
+  - Office web apps
+
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
+- If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
+- You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
+- If a URL uses automatic redirection for HTTP to HTTPS (for example, 302 redirection for `http://www.contoso.com` to `https://www.contoso.com`), and you try to enter both HTTP and HTTPS entries for the same URL to the list, you might notice that the second URL entry replaces the first URL entry. This behavior does not occur if the HTTP and HTTPS versions of the URL are completely separate.
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 
 Examples of the values that you can enter and their results are described in the following table:
+
+<br>
 
 ****
 
