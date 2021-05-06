@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
@@ -14,6 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 04/28/2021
 ms.technology: mde
+ms.topic: article
 ---
 
 # Turn on block at first sight
