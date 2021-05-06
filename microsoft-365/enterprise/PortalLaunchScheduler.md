@@ -1,5 +1,5 @@
 ---
-title: "Launch your portal using the Portal Launch Scheduler"
+title: "Launch your portal using the Portal launch scheduler"
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
@@ -16,27 +16,134 @@ ms.custom: Adm_O365
 search.appverid: 
 - SPO160
 - MET150
-description: "This article describes how you can launch your portal using the Portal Launch Scheduler"
+description: "This article describes how you can launch your portal using the Portal launch scheduler"
 ---
 
-# Launch your portal using the Portal Launch Scheduler
+# Launch your portal using the SharePoint Portal launch scheduler
 
-A portal is a SharePoint site on your intranet that has a large number of site viewers who consume content on the site. Launching your portal in waves is an important part of ensuring users have a smooth and performant experience accessing a new SharePoint Online portal. 
+A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
+<br>
+<br>
+The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
 
-Launching in waves is a key way to roll-out your portal, as detailed in [Planning your portal launch roll-out plan in SharePoint Online](./planportallaunchroll-out.md?view=o365-worldwide). The Portal Launch Scheduler is designed to help you follow a wave / phased roll-out approach by managing the redirects for the new portal. During each of the waves, you can gather user feedback and monitor performance during each wave of deployment. This has the advantage of slowly introducing the portal, giving you the option to pause and resolve issues before proceeding with the next wave, and ultimately ensuring a positive experience for your users. 
+**There are two types of redirections:**
 
-There are two types of redirection: 
-- bidirectional: launch a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal 
-- temporary page redirection: launch a new modern SharePoint Online portal with no existing SharePoint portal
+- **Bidirectional**: launch a new modern SharePoint portal to replace an existing SharePoint classic or modern portal
+- **Redirect to a temporary page**: launch a new modern SharePoint portal with no existing SharePoint portal
 
-The portal launch scheduler is only available to launch modern SharePoint Online portals (i.e. communication sites). Launches must be scheduled at least 7 days in advance. The number of waves required is determined by the expected number of users. Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](./page-diagnostics-for-spo.md) must be run to verify that the home page on the portal is healthy. At the end of the portal launch, all users with permissions to the site will be able to access the new site. 
+Site permissions must be set up separately from waves as part of the launch. For example, if you are releasing an organization-wide portal, you can set permissions to “Everyone except external users,” then separate your users into waves using security groups. Adding a security group to a wave does not give that security group access to the site. 
 
-For more information about launching a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching and maintaining a healthy portal](/sharepoint/portal-health). 
 
 > [!NOTE]
-> This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
+> - This will feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021
+> - The PowerShell version of this tool is available today
+> - This feature can only be used on modern SharePoint communication sites
+> - You must have site owner permissions for the site to customize and schedule the launch of a portal
+> - Launches must be scheduled at least seven days in advance and each wave can last one to seven days
+> - The number of waves required is automatically determined by the expected number of users 
+> - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy
+> - At the end of the launch, all users with permissions to the site will be able to access the new site
+> - If your organization is using [Viva Connections](https://docs.microsoft.com/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched
+> - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans
 
-## App setup and connecting to SharePoint Online
+### Understand the differences between Portal launch scheduler options:
+
+Formerly, portal launches could only be scheduled through SharePoint PowerShell. Now, you have two options to help you schedule and manage your portal's launch. Learn about the key differences between both tools:
+
+**SharePoint PowerShell version:**
+
+- Admin credentials are required to use [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
+- Minimum requirement of one wave 
+- Schedule your launch based on Coordinated Universal Time (UTC) time zone
+
+**In-product version:**
+
+- Site owner credentials are required 
+- Minimum requirement of two waves
+- Schedule your launch based on the portal's local time zone as indicated in regional settings
+
+
+
+## Get started using the Portal launch scheduler
+
+1.	Before using the Portal launch scheduler tool, [add all users who will need access to this site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) through **Site permissions** as a Site owner, Site member, or Visitor.
+
+2.	Then, start scheduling your portal’s launch by accessing the Portal launch scheduler in one of two ways:
+
+    **Option 1**: The first few times you edit and republish changes to your home page - or up until home page version 3.0 - you will be prompted to use the Portal launch scheduler tool. Select **Schedule launch** to move forward with scheduling. Or select **Republish** to republish your page edits without scheduling the launch.
+    
+    ![Image of the prompt to use the portal launch scheduler when republishing the home page](../media/portal-launch-republish-2.png)
+    
+    **Option 2**: At any time, you can navigate to the SharePoint communication site home page, select **Settings** and then **Schedule site launch** to schedule your portal’s launch.
+    
+    ![Image of the Settings pane with Schedule a site launch highlighted](../media/portal-launch-settings-2.png)
+
+3.	Next, confirm the portal’s health score and make improvements to the portal if needed using the [Page Diagnostics for SharePoint](https://aka.ms/perftool) tool until your portal receives a **Healthy** score. Then, select **Next**.
+
+    ![Image of the Portal launch scheduler tool](../media/portal-launch-panel-2.png)
+       
+    > [!NOTE] 
+    > The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
+ 
+4.	Select the **Number of expected users** from the drop-down. This figure represents the number of users who will most likely need access to the site. The Portal launch scheduler will automatically determine the ideal number of waves depending on the expected users like this:
+    
+    - Less than 10k users: Two waves
+    - 10k to 30k users: Three waves 
+    - 30k+ to 100k users: Five waves
+    - More than 100k users: Five waves and contact your Microsoft account team
+
+5.	Then, determine the **Type of redirect** needed:
+
+    **Option 1: Send users to an existing SharePoint page (bidirectional)** – Use this option when launching a new modern SharePoint portal to replace an existing SharePoint portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched.
+    
+    > [!NOTE] 
+    > When using the bidirectional option, the person scheduling the launch must also have site owner permissions to the other SharePoint portal.
+       
+    **Option 2: Send users to an autogenerated temporary page (temporary page redirection)** – Use a temporary page redirection should be used when no existing SharePoint portal exists. Users are directed to a new modern SharePoint portal and if a user is in a wave that has not been launched, they will be redirected to a temporary page.
+    
+    **Option 3: Send users to an external page** – Provide an external URL to a temporary landing page experience until the user’s wave is launched.
+    
+6.	Break up your audience into waves. Add up to 20 security groups per wave. Wave details can be edited up until the launch of each wave. Each wave can last at minimum one day (24 hours) and at most seven days. This allows SharePoint and your technical environment an opportunity to acclimate and scale to the large volume of site users. When scheduling a launch through the UI, the time zone is based on the site’s regional settings. 
+
+    >[!NOTE] 
+    > - The Portal launch scheduler will automatically default to a minimum of 2 waves. However, the PowerShell version of this tool will allow for 1 wave.
+    >  - Microsoft 365 groups are not supported by this version of the Portal launch scheduler.
+
+7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
+
+8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
+
+
+## Make changes to a scheduled portal launch
+
+Launch details can be edited for each wave up until the date of the wave’s launch. 
+
+1.	To edit portal launch details, navigate to **Settings** and select **Schedule site launch**.
+2.	Then, select **Edit**.
+3.	When you are finished making your edits, select **Update**.
+
+
+## Delete a scheduled portal launch
+
+Launches scheduled using the Portal launch scheduler tool can be canceled, or deleted, at any time even if some waves have already been launched.
+
+1.	To cancel your portal’s launch, navigate to **Settings** and **Schedule site launch**.
+
+2.	Then, select **Delete** and then when you see the message below select **Delete** again.
+
+    ![Image of the Portal launch scheduler tool](../media/portal-launch-delete-2.png)
+
+
+## Use the PowerShell Portal launch scheduler
+
+The SharePoint Portal launch scheduler tool was originally only available via [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) and will continue to be supported through PowerShell for customers who prefer this method. The same notes at the beginning of this article apply to both versions of the Portal launch scheduler. 
+
+>[!NOTE]
+> You need administrator permissions to use SharePoint PowerShell.
+> Portal launch details for launches created in PowerShell will appear and can be managed in the new Portal launch scheduler tool in SharePoint.
+
+
+### App setup and connecting to SharePoint Online
 1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
@@ -45,7 +152,7 @@ For more information about launching a successful portal, follow the basic princ
 2. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 
-## View any existing portal launch setups
+### View any existing portal launch setups
 
 To see if there are existing portal launch configurations:
 
@@ -53,15 +160,15 @@ To see if there are existing portal launch configurations:
    Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
    ```
 
-## Schedule a portal launch on the site
+### Schedule a portal launch on the site
 
 The number of waves required depends on your expected launch size. 
-- Less than 10k users: 1 wave
-- 10k to 30k users: 3 waves 
-- 30k+ to 100k users: 5 waves
-- More than 100k users: 5 waves and contact your Microsoft account team
+- Less than 10k users: One wave
+- 10k to 30k users: Three waves 
+- 30k+ to 100k users: Five waves
+- More than 100k users: Five waves and contact your Microsoft account team
 
-### Steps for bidirectional redirection
+#### Steps for bidirectional redirection
 
 Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves will be redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site will be redirected back to the old site until their wave is launched. 
 
@@ -72,46 +179,49 @@ To migrate users from an existing SharePoint site to a new SharePoint site in a 
 1. Run the following command to designate portal launch waves.
    
    ```PowerShell
-    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
-    ```
+   New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+   ```
 
-Example:
+   Example:
+
    ```PowerShell
    New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
-[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
-{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
-{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   [{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+   {Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+   {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
 2. Complete validation. It can take 5-10 minutes for the redirection to complete its configuration across the service. 
 
-### Steps for redirection to temporary page
+#### Steps for redirection to temporary page
 
 Temporary page redirection should be used when no existing SharePoint portal exists. Users are directed to a new modern SharePoint Online portal in a staged manner. If a user is in a wave that has not been launched, they will be redirected to a temporary page (any URL). 
 
 1. Run the following command to designate portal launch waves.
    
-      ```PowerShell
-    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
-    ```
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+   ```
 
-Example:
+   Example:
+
    ```PowerShell
    New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
-[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
-{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
-{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   [{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+   {Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+   {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
 2. Complete validation. It can take 5-10 minutes for the redirection to complete its configuration across the service. 
 
-## Pause or restart a portal launch on the site
+### Pause or restart a portal launch on the site
 
 1. To pause a portal launch in progress and temporarily prevent upcoming wave progressions from occurring, run the following command:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
    ```
+
 2. Validate that all users are redirected to the old site. 
 
 3. To restart a portal launch that's been paused, run the following command:
@@ -122,7 +232,7 @@ Example:
    
 4. Validate that the redirection is now restored. 
 
-## Delete a portal launch on the site
+### Delete a portal launch on the site
 
 1. Run the following command to delete a portal launch scheduled or in progress for a site.
 
@@ -133,4 +243,7 @@ Example:
 2. Validate that no redirection happens for all users.
 
 ## Learn more
+
 [Planning your portal launch roll-out plan in SharePoint Online](./planportallaunchroll-out.md)
+
+[Plan your communication site](https://support.microsoft.com/office/plan-your-sharepoint-communication-site-35d9adfe-d5cc-462f-a63a-bae7f2529182)
