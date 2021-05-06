@@ -53,6 +53,8 @@ Anti-spam, anti-malware, and anti-phishing are EOP features that can be configur
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -79,6 +81,8 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this article.
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+
+<br>
 
 ****
 
@@ -107,6 +111,8 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -120,6 +126,8 @@ For more information about the default sending limits in the service, see [Sendi
 ### EOP anti-malware policy settings
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+
+<br>
 
 ****
 
@@ -135,6 +143,8 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 ### EOP default anti-phishing policy settings
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+
+<br>
 
 ****
 
@@ -167,6 +177,8 @@ EOP customers get basic anti-phishing as previously described, but Microsoft Def
 
 For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -190,6 +202,8 @@ For more information about these settings, see [Impersonation settings in anti-p
 
 Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -202,6 +216,8 @@ Note that these are the same settings that are available in [anti-spam policy se
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
 
 For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+
+<br>
 
 ****
 
@@ -220,6 +236,8 @@ To configure these settings, see [Configure global settings for Safe Links in De
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -237,6 +255,8 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 
 > [!NOTE]
 > As described earlier, there is no default Safe Links policy. The values in the Default column are the default values in new Safe Links policies that you create.
+
+<br>
 
 ****
 
@@ -261,6 +281,8 @@ To configure these settings, see [Turn on Safe Attachments for SharePoint, OneDr
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -278,6 +300,8 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 > [!NOTE]
 > As described earlier, there is no default Safe Attachments policy. The values in the Default column are the default values in new Safe Attachments policies that you create.
+
+<br>
 
 ****
 
