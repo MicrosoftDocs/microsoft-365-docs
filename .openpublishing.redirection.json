@@ -3839,6 +3839,11 @@
       "source_path": "microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee-step-4",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365-docs-pr/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
+      "redirect_document_id": true
     }
   ]
 }

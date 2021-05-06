@@ -1,5 +1,5 @@
 ---
-title: Configure scanning options for Microsoft Defender AV
+title: Configure scanning options for Microsoft Defender Antivirus
 description: You can configure Microsoft Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
 search.product: eADQiWindows 10XVcnh
@@ -7,13 +7,14 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus scanning options
