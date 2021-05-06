@@ -30,27 +30,27 @@ ms.reviewer: evaldm, isco
 **Applies to:**
 - Microsoft 365 Defender
 
-## A "single pane of glass" experience
+The Action center provides a "single pane of glass" experience for incident and alert tasks such as:
 
-The Action center provides a "single pane of glass" experience for tasks, such as:
-- Approving pending remediation actions;
-- Viewing an audit log of already approved remediation actions; and
+- Approving pending remediation actions.
+- Viewing an audit log of already approved remediation actions.
 - Reviewing completed remediation actions.
 
-Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft 365 Defender at work.
+Because the Action center provides a comprehensive view of Microsoft 365 Defender at work, your security operations team can operate more effectively and efficiently.
 
-## A new, unified Action center
+## The unified Action center
 
-We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))! 
+The unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
 
-The improved Action center lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
-- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
-- If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the new, unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+For example: 
+
+- If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 - If you were already using the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
-The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience. The Action center provides your security operations team with a "single pane of glass" experience to view and manage remediation actions.  
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions and provides a unified investigation experience. Your security operations team has a "single pane of glass" experience to view and manage remediation actions.  
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
@@ -66,7 +66,7 @@ You can use the unified Action center if you have appropriate permissions and on
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 2. In the navigation pane, choose **Action center**. 
 
-When you visit the Action center, you see two tabs: Pending actions and History. The following table summarizes what you'll see on each tab:
+When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:
 
 |Tab  |Description  |
 |---------|---------|
@@ -121,12 +121,12 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 
 |Remediation action |Required roles and permissions |
 |--|----|
-|Microsoft Defender for Endpoint remediation (devices) |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the **Security Administrator** role assigned in Azure Active Directory or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint remediation (devices) |**Security Administrator** role assigned in either Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Administrator role permissions in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Azure AD ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the **Security Administrator** role assigned in Azure AD or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Administrator role permissions in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Users who have the **Global Administrator** role assigned in Azure Active Directory can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.
+> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.
 
 ## Next step 
 
-- [Review and manage remediation actions](m365d-autoir-actions.md)
+- [View and manage remediation actions](m365d-autoir-actions.md)
