@@ -73,7 +73,7 @@ This list includes all the folders, event logs, executables, or registry locatio
 - fltMC.exe
 - bcdedit /enum all /v
 - manage-bde -protectors -get
-- Windows Powershell commands:
+- Windows PowerShell commands:
 - Get-appxpackage -allusers
     - Get-appxpackage -packagetype bundle
     - Get-Service wuauserv
