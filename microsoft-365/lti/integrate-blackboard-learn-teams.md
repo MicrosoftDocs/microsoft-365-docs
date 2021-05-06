@@ -24,13 +24,13 @@ Microsoft Teams and Blackboard Learn Ultra now have a collaborative experience t
 
 The following tasks are completed by the Microsoft Office 365 admin and the Blackboard Learn Ultra admin.
 
-Before managing the integration within Blackboard Learn Ultra, the Microsoft Office 365 admin must approve the Blackboard `MSFT Teams for Learn Ultra Azure` app for the institution’s Microsoft Azure tenant.
+Before managing the integration within Blackboard Learn Ultra, the Microsoft Office 365 admin must approve the Blackboard **MSFT Teams for Learn Ultra Azure** app for the institution’s Microsoft Azure tenant.
 
 1.Find your Microsoft Tenant ID. See [how to find the tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
-2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
+2.Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
-   https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Replace {tenant} with your organization’s Microsoft tenant ID.
@@ -85,7 +85,7 @@ Complete the following to set up the REST Application
 
 2. Select **Create Configuration**.
 
-1. Enter **https://bb-ms-teams-ultra-ext.api.blackboard.com** in the origin.
+1. Enter `https://bb-ms-teams-ultra-ext.api.blackboard.com` in the origin.
 
 3. Add the word **Authorization** in the **Allowed Headers**.
 
