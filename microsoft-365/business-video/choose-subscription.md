@@ -48,17 +48,16 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 | **File storage** | OneDrive for Business | 1 TB per user | 1 TB per user | Unlimited |
 | **Social, video, sites** | Stream, Yammer, Planner, SharePoint Online\*, PowerApps\*, Microsoft Flow\* | Yes | Yes | Yes |
 | **Business apps** | Scheduling apps - Bookings\*\* | Yes | Yes | Yes |
-|
 | **Threat Protection** | Office 365 Advanced Threat Protection | No | Yes | No |
- | Windows Exploit Guard enforcement | No | Yes | No |
+ | Windows Exploit Guard enforcement| | No | Yes | No |
 | **Identity Management** | Self-service password reset for hybrid Azure Active Directory accounts | No | Yes | No |
- | Azure Multi-Factor Authentication, conditional access policies | No | Yes | No |
+ | Azure Multi-Factor Authentication, conditional access policies | | No | Yes | No |
 | **Device &amp; app management** | Microsoft Intune, Windows AutoPilot, Windows Pro Management | No | Yes | No |
- | Shared computer activation | No | Yes | Yes |
- | Upgrade rights to Windows 10 Pro for Win 7/8.1 Pro licenses | No | Yes | No |
- | Windows Virtual Desktop | No | Yes | No |
+ | Shared computer activation | | No | Yes | Yes |
+ | Upgrade rights to Windows 10 Pro for Win 7/8.1 Pro licenses | | No | Yes | No |
+ | Windows Virtual Desktop | | No | Yes | No |
 | **Information protection** | Office 365 data loss prevention | No | Yes | Yes |
- | Azure Information Protection Plan 1, BitLocker enforcement | No | Yes | No |
+ | Azure Information Protection Plan 1, BitLocker enforcement | | No | Yes | No |
 | **On-premises CAL rights** | ECAL Suite (Exchange, SharePoint, Skype) | No | No | Yes |
 | **Compliance** | Unlimited email archiving\*\*\* | No | Yes | Yes |
 
