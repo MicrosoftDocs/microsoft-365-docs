@@ -1,5 +1,5 @@
 ---
-title: Investigate sensor health status
+title: Investigate agent health issues
 description: Learn about the values returned when running the mdatp health command
 keywords: mdatp health, command, health, status, command, onboarding status
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Investigate sensor health status
+# Investigate agent health issues
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-The following table provides information on the return values for the `mdatp health` command and their descriptions.
+The following table provides information on the values returned when you run the `mdatp health` command and their corresponding descriptions.
 
 | Value                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
