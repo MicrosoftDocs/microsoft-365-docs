@@ -7,11 +7,11 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/16/2020
+ms.date: 05/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
