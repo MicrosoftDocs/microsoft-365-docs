@@ -133,7 +133,7 @@ When a contract has been approved, the following things occur:
 
 - On the **Contracts** tab, the status in the contract card will change to **Approved**.
 
-   ![Card status approved.](../media/content-understanding/flow2.png)
+   ![Card status approved.](../media/content-understanding/approved-contracts-tab.png)
 
 - In your flow, the status is changed to "Approved."
 
@@ -240,7 +240,7 @@ When a contract has been rejected, the following things occur:
 
 - On the **Contracts** tab, the status in the contract card will change to **Rejected**.
 
-   ![Card status rejected.](../media/content-understanding/rejected.png)
+   ![Card status rejected.](../media/content-understanding/rejected-contracts-tab.png)
 
 - In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.
 
@@ -332,4 +332,4 @@ The following is the JSON code used for this step in the Power Automate flow.
 
 - The card is posted in the Contract Management channel.
 
-   ![Flow adaptive card to reject.](../media/content-understanding/reject-post.png)
+   ![Flow adaptive card to reject.](../media/content-understanding/rejected.png)
