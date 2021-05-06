@@ -11,6 +11,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
