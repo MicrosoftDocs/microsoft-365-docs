@@ -47,12 +47,11 @@ Here's how it works:
 
 - If your organization's endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those devices are onboarded to Defender for Endpoint with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then Defender for Endpoint blocks and remediates malicious artifacts. **NOTE**: This particular scenario does not apply to Windows Server 2016. EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode.
 
-
 ## Antivirus and Microsoft Defender for Endpoint
 
 The following table summarizes what happens with Microsoft Defender Antivirus when non-Microsoft antivirus/antimalware solutions are used together or without Microsoft Defender for Endpoint. 
 
-| Windows version   | Antivirus/antimalware solution  | Onboarded to Defender for Endpoint? | Microsoft Defender Antivirus state     |
+| Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
 | Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
