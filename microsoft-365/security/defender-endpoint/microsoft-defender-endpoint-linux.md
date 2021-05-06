@@ -45,6 +45,12 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
+> [!NOTE]
+>  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.<br><br>
+> Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
+
+
+
 ### Installation instructions
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.
@@ -61,6 +67,9 @@ In general you need to take the following steps:
 
 If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
+
+
+
 ### System requirements
 
 - Supported Linux server distributions and versions:
@@ -71,6 +80,10 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+
+    > [!NOTE]
+    > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
 
 - Minimum kernel version 3.10.0-327
 - The `fanotify` kernel option must be enabled

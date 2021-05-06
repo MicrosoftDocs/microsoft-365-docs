@@ -40,6 +40,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 > mdatp health --field product_expiration
 > ```
 
+
+Generally available Microsoft Defender for Endpoint capabilities are equivalent regardless update channel used for a deployment (Beta (Insider), Preview (External), Current (Production)).
+
+
 To update Defender for Endpoint on Linux manually, execute one of the following commands:
 
 ## RHEL and variants (CentOS and Oracle Linux)
