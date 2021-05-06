@@ -230,7 +230,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 - Custom role with Create/Edit/Update/Read/Delete/View Reports permissions turned on for Device Configuration profiles
 - Global administrator
 
-## Deploying policy via OMA-URI
+### Deploying policy via OMA-URI
 
 **Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
 
