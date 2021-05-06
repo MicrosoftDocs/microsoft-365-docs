@@ -130,11 +130,11 @@
                 href: m365d-remediation-actions.md
               - name: Visit the Action center
                 href: m365d-action-center.md
-              - name: Approve or reject pending remediation actions
+              - name: View and manage remediation actions
                 href: m365d-autoir-actions.md
               - name: View details and results of automated investigations
                 href: m365d-autoir-results.md
-              - name: Report false positives/negatives
+              - name: Address false positives/negatives
                 href: m365d-autoir-report-false-positives-negatives.md
        - name: Advanced hunting
          items: 
@@ -170,84 +170,84 @@
                   href: advanced-hunting-limits.md
                 - name: Extend data coverage
                   href: advanced-hunting-extend-data.md
-                - name: Data schema
-                  items: 
-                    - name: Understand the schema
-                      href: advanced-hunting-schema-tables.md
-                    - name: Schema naming changes
-                      href: advanced-hunting-schema-changes.md
-                    - name: AADSignInEventsBeta
-                      href: advanced-hunting-aadsignineventsbeta-table.md
-                    - name: AADSpnSignInEventsBeta
-                      href: advanced-hunting-aadspnsignineventsbeta-table.md
-                    - name: AlertEvidence
-                      href: advanced-hunting-alertevidence-table.md
-                    - name: AlertInfo
-                      href: advanced-hunting-alertinfo-table.md
-                    - name: AppFileEvents
-                      href: advanced-hunting-appfileevents-table.md
-                    - name: CloudAppEvents
-                      href: advanced-hunting-cloudappevents-table.md
-                    - name: DeviceEvents
-                      href: advanced-hunting-deviceevents-table.md
-                    - name: DeviceFileCertificateInfo
-                      href: advanced-hunting-devicefilecertificateinfo-table.md
-                    - name: DeviceFileEvents
-                      href: advanced-hunting-devicefileevents-table.md
-                    - name: DeviceImageLoadEvents
-                      href: advanced-hunting-deviceimageloadevents-table.md
-                    - name: DeviceInfo
-                      href: advanced-hunting-deviceinfo-table.md
-                    - name: DeviceLogonEvents
-                      href: advanced-hunting-devicelogonevents-table.md
-                    - name: DeviceNetworkEvents
-                      href: advanced-hunting-devicenetworkevents-table.md
-                    - name: DeviceNetworkInfo
-                      href: advanced-hunting-devicenetworkinfo-table.md
-                    - name: DeviceProcessEvents
-                      href: advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceRegistryEvents
-                      href: advanced-hunting-deviceregistryevents-table.md
-                    - name: DeviceTvmSecureConfigurationAssessment
-                      href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
-                    - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
-                    - name: DeviceTvmSoftwareInventory
-                      href: advanced-hunting-devicetvmsoftwareinventory-table.md
-                    - name: DeviceTvmSoftwareVulnerabilities
-                      href: advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
-                    - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
-                    - name: EmailAttachmentInfo
-                      href: advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailEvents
-                      href: advanced-hunting-emailevents-table.md
-                    - name: EmailPostDeliveryEvents
-                      href: advanced-hunting-emailpostdeliveryevents-table.md
-                    - name: EmailUrlInfo
-                      href: advanced-hunting-emailurlinfo-table.md
-                    - name: IdentityDirectoryEvents
-                      href: advanced-hunting-identitydirectoryevents-table.md
-                    - name: IdentityInfo
-                      href: advanced-hunting-identityinfo-table.md
-                    - name: IdentityLogonEvents
-                      href: advanced-hunting-identitylogonevents-table.md
-                    - name: IdentityQueryEvents
-                      href: advanced-hunting-identityqueryevents-table.md
-                - name: Functions
-                  items: 
-                    - name: AssignedIPAddresses()
-                      href: advanced-hunting-assignedipaddresses-function.md                    
-                    - name: DeviceFromIP()
-                      href: advanced-hunting-devicefromip-function.md
-                    - name: FileProfile()
-                      href: advanced-hunting-fileprofile-function.md
-                - name: Custom detections
-                  items: 
-                    - name: Custom detections overview
-                      href: custom-detections-overview.md
-                    - name: Create & manage detection rules
-                      href: custom-detection-rules.md
+             - name: Data schema
+               items: 
+                - name: Understand the schema
+                  href: advanced-hunting-schema-tables.md
+                - name: Schema naming changes
+                  href: advanced-hunting-schema-changes.md
+                - name: AADSignInEventsBeta
+                  href: advanced-hunting-aadsignineventsbeta-table.md
+                - name: AADSpnSignInEventsBeta
+                  href: advanced-hunting-aadspnsignineventsbeta-table.md
+                - name: AlertEvidence
+                  href: advanced-hunting-alertevidence-table.md
+                - name: AlertInfo
+                  href: advanced-hunting-alertinfo-table.md
+                - name: AppFileEvents
+                  href: advanced-hunting-appfileevents-table.md
+                - name: CloudAppEvents
+                  href: advanced-hunting-cloudappevents-table.md
+                - name: DeviceEvents
+                  href: advanced-hunting-deviceevents-table.md
+                - name: DeviceFileCertificateInfo
+                  href: advanced-hunting-devicefilecertificateinfo-table.md
+                - name: DeviceFileEvents
+                  href: advanced-hunting-devicefileevents-table.md
+                - name: DeviceImageLoadEvents
+                  href: advanced-hunting-deviceimageloadevents-table.md
+                - name: DeviceInfo
+                  href: advanced-hunting-deviceinfo-table.md
+                - name: DeviceLogonEvents
+                  href: advanced-hunting-devicelogonevents-table.md
+                - name: DeviceNetworkEvents
+                  href: advanced-hunting-devicenetworkevents-table.md
+                - name: DeviceNetworkInfo
+                  href: advanced-hunting-devicenetworkinfo-table.md
+                - name: DeviceProcessEvents
+                  href: advanced-hunting-deviceprocessevents-table.md
+                - name: DeviceRegistryEvents
+                  href: advanced-hunting-deviceregistryevents-table.md
+                - name: DeviceTvmSecureConfigurationAssessment
+                  href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                - name: DeviceTvmSecureConfigurationAssessmentKB
+                  href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareInventory
+                  href: advanced-hunting-devicetvmsoftwareinventory-table.md
+                - name: DeviceTvmSoftwareVulnerabilities
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
+                - name: DeviceTvmSoftwareVulnerabilitiesKB
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                - name: EmailAttachmentInfo
+                  href: advanced-hunting-emailattachmentinfo-table.md
+                - name: EmailEvents
+                  href: advanced-hunting-emailevents-table.md
+                - name: EmailPostDeliveryEvents
+                  href: advanced-hunting-emailpostdeliveryevents-table.md
+                - name: EmailUrlInfo
+                  href: advanced-hunting-emailurlinfo-table.md
+                - name: IdentityDirectoryEvents
+                  href: advanced-hunting-identitydirectoryevents-table.md
+                - name: IdentityInfo
+                  href: advanced-hunting-identityinfo-table.md
+                - name: IdentityLogonEvents
+                  href: advanced-hunting-identitylogonevents-table.md
+                - name: IdentityQueryEvents
+                  href: advanced-hunting-identityqueryevents-table.md
+             - name: Functions
+               items: 
+                - name: AssignedIPAddresses()
+                  href: advanced-hunting-assignedipaddresses-function.md                    
+                - name: DeviceFromIP()
+                  href: advanced-hunting-devicefromip-function.md
+                - name: FileProfile()
+                  href: advanced-hunting-fileprofile-function.md
+             - name: Custom detections
+               items: 
+                - name: Custom detections overview
+                  href: custom-detections-overview.md
+                - name: Create & manage detection rules
+                  href: custom-detection-rules.md
        - name: Microsoft Threat Experts
          items:
               - name: Microsoft Threat Experts overview
