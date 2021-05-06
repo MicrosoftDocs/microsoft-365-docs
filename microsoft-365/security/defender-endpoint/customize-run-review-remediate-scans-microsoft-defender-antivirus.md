@@ -1,5 +1,5 @@
 ---
-title: Run and customize scheduled and on-demand scans
+title: Run and customize scheduled and on-demand scans.
 description: Customize and initiate Microsoft Defender Antivirus scans on endpoints across your network.
 keywords: scan, schedule, customize, exclusions, exclude files, remediation, scan results, quarantine, remove threat, quick scan, full scan, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
