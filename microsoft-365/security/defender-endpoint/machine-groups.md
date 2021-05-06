@@ -90,7 +90,7 @@ Devices that aren't matched to any groups are added to Ungrouped devices (defaul
 
 
 ### Add device group definitions
-Device group definitions can also include multipe values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
+Device group definitions can also include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
 1. Create a new device group, then select **Devices** tab.
 2. Add the first value for one of the conditions.
