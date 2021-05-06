@@ -45,7 +45,7 @@ EDR in block mode is also integrated with [threat & vulnerability management](ht
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint blocks and remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center), listed as completed actions.
+When EDR in block mode is turned on, and a malicious artifact is detected, Microsoft Defender for Endpoint blocks and remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions.
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
@@ -110,7 +110,7 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 |Method  |Procedure  |
 |---------|---------|
-| PowerShell     | 1. Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results. <p>2. Type `Get-MpComputerStatus`. <p>3. In the list of results, in the **AMRunningMode** row, look for one of the following values: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>To learn more, see [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus).        |
+| PowerShell     | 1. Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results. <p>2. Type `Get-MpComputerStatus`. <p>3. In the list of results, in the **AMRunningMode** row, look for one of the following values: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>To learn more, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
 |Command Prompt     | 1. Select the Start menu, begin typing `Command Prompt`, and then open Windows Command Prompt in the results. <p>2. Type `sc query windefend`. <p>3. In the list of results, in the **STATE** row, confirm that the service is running.         |
 
 ### How much time does it take for EDR in block mode to be disabled?
