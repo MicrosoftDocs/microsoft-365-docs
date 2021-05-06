@@ -65,9 +65,6 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 
 
-
-
-
 ## Get started using the Portal launch scheduler
 
 1.	Before using the Portal launch scheduler tool, [add all users who will need access to this site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) through **Site permissions** as a Site owner, Site member, or Visitor.
