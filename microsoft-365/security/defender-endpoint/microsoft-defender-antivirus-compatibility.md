@@ -34,12 +34,12 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 - If your organization's client devices are protected by a non-Microsoft antivirus/antimalware solution, and those devices are not onboarded to Microsoft Defender for Endpoint, then Microsoft Defender Antivirus goes into disabled mode automatically. In this case, threats are not detected or remediated by Microsoft Defender Antivirus. **NOTE**: This particular scenario does not apply to endpoints running Windows Server.
 
-- If your organization's endpoints protected by a non-Microsoft antivirus/antimalware solution, when those devices are onboarded to Defender for Endpoint with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then Defender for Endpoint blocks and remediates malicious artifacts. **NOTE**: This particular scenario does not apply to Windows Server 2016.
-
 - If your organization's endpoints are running Windows Server and those endpoints are protected by a non-Microsoft antivirus/antimalware solution, when those endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus does not go into either passive mode or disabled mode automatically. In this particular scenario, you must configure your Windows Server endpoints appropriately. 
 
    - On Windows Server, version 1803 or newer, and Windows Server 2019, you can set Microsoft Defender Antivirus to run in passive mode. 
    - On Windows Server 2016, Microsoft Defender Antivirus must be disabled (passive mode is not supported on Windows Server 2016).
+
+- If your organization's endpoints protected by a non-Microsoft antivirus/antimalware solution, when those devices are onboarded to Defender for Endpoint with [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode) enabled, then Defender for Endpoint blocks and remediates malicious artifacts. **NOTE**: This particular scenario does not apply to Windows Server 2016. EDR in block mode requires Microsoft Defender Antivirus to be enabled in either active mode or passive mode.
 
 ## Antivirus and Microsoft Defender for Endpoint
 
