@@ -421,7 +421,7 @@ To share a Power Automate flow in the settings area, you must be a member of the
 
 Complete the following steps to share a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select the **My flows** or **Team flows** tab.
 3. Select the flow to share, then select **Share** from the flow options menu.
 4. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
@@ -435,7 +435,7 @@ To edit a Power Automate flow in the settings area, you must be a member of the 
 
 Complete the following steps to edit a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to edit and select **Edit** from the flow control menu.
 3. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
 4. Select **Save** and then **Close** to complete editing the flow.
@@ -448,7 +448,7 @@ To delete a Power Automate flow in the settings area, you must be a member of th
 
 Complete the following steps to delete a Power Automate flow:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** > **Power Automate flows**. You can also access from the **Cases** or **Users dashboards** pages by choosing **Automate** > **Manage Power Automate flows**.
 2. On the **Power Automate flows** page, select a flow to delete and select **Delete** from the flow control menu.
 3. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
 
@@ -466,7 +466,7 @@ For more information on how to use teams and channels in Microsoft Teams, see [O
 
 Enabling Microsoft Teams support for cases is quick and easy to configure. To enable Microsoft Teams for insider risk management, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
 2. Select the **Microsoft Teams** tab.
 3. Enable Microsoft Teams integration for insider risk management.
 4. Select **Save** to configure and exit.
@@ -481,7 +481,7 @@ Users need permission to create Microsoft 365 groups in your organization to cre
 
 To create a team for a case, you'll use the Create Microsoft Team control when working directly in an existing case. Complete the following steps to create a new team:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Cases** and select an existing case.
 2. On the case action menu, select **Create Microsoft Team**.
 3. In the **Team name** field, enter a name for the new Microsoft Teams team.
 4. Select **Create Microsoft team** and then select **Close**.
@@ -512,7 +512,7 @@ Analytics insights from scans are based on the same risk activity signals used b
 To enable insider risk analytics, you must be a member of the Insider Risk Management, Insider Risk Management Admin or Microsoft 365 Global admin role group.
 Complete the following steps to enable insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 24 hours before insights are available as reports for review.
 
@@ -542,6 +542,6 @@ To turn off insider risk analytics, you must be a member of the *Insider Risk Ma
 
 Complete the following steps to turn off insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](htttps://compliance.microsoft.com), go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Insider risk settings** > **Analytics** page.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.
