@@ -31,7 +31,7 @@ This article describes how to configure automated investigation and response in 
 3. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
 4. [Make sure Microsoft 365 Defender is turned on](#make-sure-microsoft-365-defender-is-turned-on).
 
-Then, after you're all set up, you can [view and manage actions in the Action center](m365d-autoir-actions.md).
+Then, after you're all set up, you can [view and manage remediation actions in the Action center](m365d-autoir-actions.md).
 
 ## Prerequisites for automated investigation and response in Microsoft 365 Defender
 
