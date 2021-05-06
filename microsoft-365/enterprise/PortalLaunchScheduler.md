@@ -60,7 +60,7 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 **In-product version:**
 
 - Site owner credentials are required 
-- Minimum requirement of two wave 
+- Minimum requirement of two waves
 - Uses the local time zone of the portal
 
 
