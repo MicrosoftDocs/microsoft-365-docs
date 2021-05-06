@@ -89,7 +89,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       To collect current statistics, run:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
