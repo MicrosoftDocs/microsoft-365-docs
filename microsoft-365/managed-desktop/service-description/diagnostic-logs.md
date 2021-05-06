@@ -74,7 +74,7 @@ This list includes all the folders, event logs, executables, or registry locatio
 - bcdedit /enum all /v
 - manage-bde -protectors -get
 - Windows PowerShell commands:
-- Get-appxpackage -allusers
+    - Get-appxpackage -allusers
     - Get-appxpackage -packagetype bundle
     - Get-Service wuauserv
     - Get-NetFirewallRule
