@@ -36,9 +36,10 @@ You can assign licenses to users on either the **Active users** page, or on the 
 ## Before you begin
 
 - You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- You can [assign licenses to user accounts with Office 365 PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- You can [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
+
 
 ## Use the Licenses page to assign licenses to users
 
@@ -126,7 +127,7 @@ When you use the **Active users** page to assign licenses, you assign users lice
 
 
 > [!NOTE]
-> If you are looking to assign licenses for a large number of users, use Powershell or [group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign)
+> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### Assign licenses to one user
 
