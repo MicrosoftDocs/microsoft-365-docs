@@ -255,6 +255,9 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 :::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
+## Deploying and managing policy by using Intune user interface
+This capability is not yet available. 
+
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
 The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
@@ -287,24 +290,6 @@ DeviceEvents
 
 
 :::image type="content" source="images/blockage-of-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
