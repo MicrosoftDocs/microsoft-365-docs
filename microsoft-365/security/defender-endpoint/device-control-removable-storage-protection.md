@@ -52,4 +52,4 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 
 ## Related topic
 
-- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](mde-device-control-removable-storage-access-control.md)
+- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md)
