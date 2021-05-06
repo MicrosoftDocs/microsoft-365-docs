@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: dansimp
