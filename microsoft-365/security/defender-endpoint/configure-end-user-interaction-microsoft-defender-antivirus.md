@@ -1,6 +1,6 @@
 ---
 title: Configure how users can interact with Microsoft Defender Antivirus
-description: Configure how end-users interact with Microsoft Defender Antivirus, what notifications they see, and if they can override settings.
+description: Configure how end users interact with Microsoft Defender Antivirus, what notifications they see, and if they can override settings.
 keywords: endpoint, user, interaction, notifications, ui lockdown mode, headless mode, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -26,9 +26,7 @@ ms.topic: article
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-You can configure how users of the endpoints on your network can interact with Microsoft Defender Antivirus.
-
-This includes whether they see the Microsoft Defender Antivirus interface, what notifications they see, and if they can locally override globally-deployed Group Policy settings.
+You can configure how users of the endpoints on your network can interact with Microsoft Defender Antivirus. You can configure whether users see the Microsoft Defender Antivirus interface, what notifications they see, and if they can locally override globally-deployed Group Policy settings.
 
 ## In this section
 
