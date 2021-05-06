@@ -1,6 +1,6 @@
 ---
-title: Configure how users can interact with Microsoft Defender AV
-description: Configure how end-users interact with Microsoft Defender AV, what notifications they see, and if they can override settings.
+title: Configure how users can interact with Microsoft Defender Antivirus
+description: Configure how end-users interact with Microsoft Defender Antivirus, what notifications they see, and if they can override settings.
 keywords: endpoint, user, interaction, notifications, ui lockdown mode, headless mode, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
