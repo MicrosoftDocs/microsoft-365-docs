@@ -16,7 +16,6 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.topic: article
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365
@@ -83,6 +82,6 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 - [OneDrive](/onedrive)
 
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
