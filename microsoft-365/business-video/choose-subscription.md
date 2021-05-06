@@ -34,12 +34,12 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 2. Open the  **Microsoft 365 Business Premium**  page, and then choose  **See plans and pricing**. Here you can see which subscriptions are tailored to smaller businesses.
 3. Scroll down to view the features that are available with each option.
 4. If you have a larger business or have complex IT needs, scroll down and select  **Microsoft 365 Enterprise**.
-5. Select  **See products and plans** , and review the Enterprise subscriptions and their features.
-6. Once you&#39;ve decided on a subscription, choose  **Buy now** , and go through the sign-up process.
+5. Select  **See products and plans**, and review the Enterprise subscriptions and their features.
+6. Once you&#39;ve decided on a subscription, choose  **Buy now**, and go through the sign-up process.
 
 ## Compare plans
 
-| **Service area** | **Feature** | **Microsoft 365 Business Standard** | **Microsoft 365 Business Premium** | **Office 365 Enterprise E3** |
+| Service area | Feature | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Enterprise E3 |
 | --- | --- | --- | --- | --- |
 | **Licenses available** | Maximum number of users | 300 | 300 | Unlimited |
 | **Office apps** | Install Office on up to 5 PCs/Macs + 5 smartphones per user (Word, Excel, PowerPoint, OneNote, Access), Office Online | Business | Business | ProPlus |
