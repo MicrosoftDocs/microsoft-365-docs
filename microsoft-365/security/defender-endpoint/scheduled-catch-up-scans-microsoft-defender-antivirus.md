@@ -11,16 +11,14 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/02/2020
-ms.reviewer: pauhijbr
+ms.date: 05/05/2021
+ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Configure scheduled quick or full Microsoft Defender Antivirus scans
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -38,17 +36,15 @@ This article describes how to configure scheduled scans with Group Policy, Power
 
 ## To configure the Group Policy settings described in this article
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-4.  Click **Administrative templates**.
+3. Specify settings for the Group Policy Object, and then select **OK**. 
 
-5.  Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
+4. Repeat steps 1-4 for each setting you want to configure.
 
-6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. 
-
-7. Click **OK**, and repeat for any other settings.
+5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
 Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
@@ -56,25 +52,44 @@ Also see the [Manage when protection updates should be downloaded and applied](m
 
 When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
 
-Quick scans look at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md) - which reviews files when they are opened and closed, and whenever a user navigates to a folder - a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
-
-In most instances, this means a quick scan is adequate to find malware that wasn't picked up by real-time protection.
-
-A full scan can be useful on endpoints that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up. In this instance, you may want to use a full scan when running an [on-demand scan](run-scan-microsoft-defender-antivirus.md).
-
-A custom scan allows you to specify the files and folders to scan, such as a USB drive. 
+|Quick scan  |Full scan  | Custom scan |
+|---------|---------|---------|
+|A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <p>In most cases, a quick scan is sufficient and is recommended for scheduled scans. |A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so). <p>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<p>When the full scan is complete, new security intelligence is available, and a new scan is required to make sure that no other threats are detected with the new security intelligence.   | A custom scan is a quick scan that runs on the files and folders you specify. For example, you can opt to scan a USB drive, or a specific folder on your device's local drive. <p> | 
 
 >[!NOTE]
 >By default, quick scans run on mounted removable devices, such as USB drives.
 
+### How do I know which scan type to choose?
+
+Use the following table to choose a scan type.
+
+
+|Scenario  |Recommended scan type  |
+|---------|---------|
+|You want to set up regular, scheduled scans     | Quick scan <p>A quick scan checks the processes, memory, profiles, and certain locations on the device. Combined with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Real-time protection reviews files when they are opened and closed, and whenever a user navigates to a folder.         |
+|Threats, such as malware, are detected on a device     | Full scan <p>A full scan can help identify whether there are any inactive components that require a more thorough clean-up.         |
+|You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)     | Full scan  <p>A full scan looks at all files on the device disk, including files that are stale, archived, and not accessed on a daily basis.      |
+| You want to make sure a portable device, such as a USB drive, does not contain malware | Custom scan <p>A custom scan enables you to select specific locations, folders, or files and runs a quick scan. |
+
+### What else do I need to know about quick and full scans?
+
+- Malicious files can be stored in locations that are not included in a quick scan. However, always-on real-time protection reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
+
+- On-access protection with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) helps ensure that all the files accessed on the system are being scanned with the latest security intelligence and cloud machine learning models.
+
+- When real-time protection detects malware and the extent of the affected files is not determined initially, Microsoft Defender Antivirus initiates a full scan as part of the remediation process.
+
+- A full scan can detect malicious files that were not detected by other scans, such as a quick scan. However, a full scan can take a while and use valuable system resources to complete.
+
+- If a device is offline for an extended period of time, a full scan can take longer to complete. 
+
 ## Set up scheduled scans
 
-Scheduled scans will run at the day and time you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
+Scheduled scans run on the day and time that you specify. You can use Group Policy, PowerShell, and WMI to configure scheduled scans.
 
->[!NOTE]
->If a computer is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
+> [!NOTE]
+> If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
 
 ### Use Group Policy to schedule scans
 
@@ -83,7 +98,7 @@ Scheduled scans will run at the day and time you specify. You can use Group Poli
 |Scan | Specify the scan type to use for a scheduled scan | Quick scan |
 |Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
 |Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
-|Root | Randomize scheduled task times |In Microsoft Defender Antivirus: Randomize the start time of the scan to any interval from 0 to 4 hours. <br>In FEP/SCEP: randomize to any interval plus or minus 30 minutes. This can be useful in VM or VDI deployments. | Enabled |
+|Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 4 hours. <p>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
 
 
 ### Use PowerShell cmdlets to schedule scans
@@ -98,7 +113,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to schedule scans
 
@@ -111,10 +126,7 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-
+For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## Start scheduled scans only when the endpoint is not in use
@@ -138,7 +150,7 @@ Use the following cmdlets:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
 ### Use Windows Management Instruction (WMI)
 
@@ -148,13 +160,12 @@ Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows
 ScanOnlyIfIdleEnabled
 ```
 
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+For more information about APIs and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="remed"></a>
 ## Configure when full scans should be run to complete remediation
 
-Some threats may require a full scan to complete their removal and remediation. You can schedule when these scans should occur with Group Policy, PowerShell, or WMI.
+Some threats might require a full scan to complete their removal and remediation. You can specify when these scans should occur with Group Policy, PowerShell, or WMI.
 
 ### Use Group Policy to schedule remediation-required scans
 
@@ -183,19 +194,14 @@ RemediationScheduleDay
 RemediationScheduleTime
 ```
 
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-
+For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 
 ## Set up daily quick scans
 
 You can enable a daily quick scan that can be run in addition to your other scheduled scans with Group Policy, PowerShell, or WMI.
 
-
 ### Use Group Policy to schedule daily scans
-
 
 |Location | Setting | Description | Default setting (if not configured) |
 |:---|:---|:---|:---|
@@ -210,7 +216,7 @@ Use the following cmdlets:
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information about how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
 ### Use Windows Management Instruction (WMI) to schedule daily scans
 
@@ -220,8 +226,7 @@ Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows
 ScanScheduleQuickScanTime
 ```
 
-See the following for more information and allowed parameters:
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 
 ## Enable scans after protection updates
@@ -235,6 +240,7 @@ You can force a scan to occur after every [protection update](manage-protection-
 |Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled |
 
 ## See also
+
 - [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 - [Configure and run on-demand Microsoft Defender Antivirus scans](run-scan-microsoft-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
