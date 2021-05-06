@@ -80,7 +80,7 @@ When you have more than one retention policy, and when you also use retention la
 
 5. Complete the wizard to save your settings.
 
-For high-level information when to use retention policies for Teams, see [Retention policies in Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
+For high-level information when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
 For technical details about how retention works for Teams, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
