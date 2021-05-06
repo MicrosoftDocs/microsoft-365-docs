@@ -55,13 +55,13 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 - Admin credentials are required to use [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
 - Minimum requirement of one wave 
-- Uses Universal Central Time (UTC) time zone
+- Schedule your launch based on Coordinated Universal Time (UTC) time zone
 
 **In-product version:**
 
 - Site owner credentials are required 
 - Minimum requirement of two waves
-- Uses the local time zone of the portal
+- Schedule your launch based on the portal's local time zone as indicated in regional settings
 
 
 
