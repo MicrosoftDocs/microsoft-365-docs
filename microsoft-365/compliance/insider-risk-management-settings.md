@@ -78,7 +78,7 @@ To enable the monitoring of risk activities on devices and include policy indica
 Make sure that the Windows 10 devices that you plan on reporting in insider risk management meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
-2. All devices must be [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+2. The user account used to log into the Windows 10 device must be an active Azure Active Directory (AAD) account. The Windows 10 device may be [AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrid AAD, or Active Directory joined, or AAD registered.
 3. Install Microsoft Chromium Edge browser on the endpoint device to monitor actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
