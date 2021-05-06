@@ -119,11 +119,13 @@ If you chose to disable EDR in block mode it can take up to 30 minutes for the s
 
 ### Is EDR in block mode supported on Windows Server 2016?
 
-No. EDR in block mode is supported of the following versions of Windows:
+If Microsoft Defender Antivirus is running in active mode or passive mode, EDR in block mode is supported of the following versions of Windows:
 
 - Windows 10 (all releases)
 - Windows Server, version 1803 or newer 
 - Windows Server 2019 
+
+In the case of Windows Server 2016, if Microsoft Defender Antivirus is running in active mode and the endpoint is onboarded to Defender for Endpoint, EDR in block mode is support. 
 
 ## See also
 
