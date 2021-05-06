@@ -14,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Next-generation protection
