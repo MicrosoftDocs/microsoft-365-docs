@@ -67,9 +67,12 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 Customer Key handles DEPs differently between the different services. For example, you can create a different number of DEPs for the different services.
 
-**Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
+**DEP for Exchange Online mailboxes** This DEP is used to encrypt data stored in EXO mailboxes of different types such as UserMailbox, MailUser, Group, PublicFolder and Shared mailboxes. You can have up to 50 active DEPs per tenant and assign those to individual mailboxes. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#xxx) 
 
-**SharePoint Online, OneDrive for Business, and Teams files:** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+**DEP for SharePoint Online and OneDrive for Business** This DEP is used to encrypt content stored in SPO and OneDrive for Business. This includes Microsoft Teams files stored in SPO. If you're using the multi-geo feature, you can create one DEP per geo for your organization. If you're not using the multi-geo feature, you can only create one DEP per tenant.  For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+
+**DEP for multiple M365 workloads** Microsoft recently added the support for creating a DEP that encrypts data across multiple M365 workloads that are listed here. You can create multiple DEPs per tenant but can only assign one DEP at a time. For Exchange Online, this DEP will only encrypt those mailboxes which are not assigned a mailbox level DEP. For instructions, see [Create a data encryption policy (DEP) for multiple M365 workloads](customer-key-tenant-level.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).*****NEED TO UPDATE THIS LINK**
+
 
 ### View the DEPs you've created for Exchange Online and Skype for Business
 
@@ -163,11 +166,14 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
+### Manage multi-workload DEP
+With multi-workload DEP, you can modify or refresh the DEP and can also assign a new DEP. You can also find out details of the multi-workload DEP. See [managing multi-workload DEP](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-key-tenant-level?view=o365-worldwide#modify-or-refresh-policy) for details.
+
 ## Roll back from Customer Key to Microsoft managed Keys
 
-For Customer Key at the tenant level, you'll need to reach out to Microsoft with a request for “offboarding” from Customer Key. The request will be handled by the On Call Engineering team.
+If you decide not to use Customer Key for assigning multi-workload DEP anymore then you'll need to reach out to Microsoft support with a request for “offboarding” from Customer Key. Ask the support team to file an service request against M365 Customer Key team. Reach out to m365-ck@service.microsoft.com if you've any questions.
 
-For Customer Key at the application level, you do this by unassigning a DEP from mailboxes using the Set-mailbox PowerShell cmdlet and setting the `DataEncryptionPolicy` to `$NULL`. Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another Customer Key DEP to the mailbox.
+If you do not want to encrypt individual mailboxes using mailbox level DEPs anymore, then you can unassign mailbox level DEPs from all your mailboxes. You can do so by using the Set-Mailbox PowerShell cmdlet.
 
 To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, complete these steps.
 
@@ -179,9 +185,11 @@ To unassign the DEP from a mailbox using the Set-Mailbox PowerShell cmdlet, comp
    Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
    ```
 
+Running this cmdlet unassigns the currently assigned DEP and reencrypts the mailbox using the DEP associated with default Microsoft managed keys. You can't unassign the DEP used by Microsoft managed keys. If you don't want to use Microsoft managed keys, you can assign another Customer Key DEP to the mailbox.
+
 ## Revoke your keys and start the data purge path process
 
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. You can't perform a data purge for a tenant-level policy.
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes. This is supported for Customer Key DEPs that are assigned to individual mailboxes.
 
 Microsoft 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
@@ -189,7 +197,7 @@ Microsoft 365 audits and validates the data purge path. For more information, se
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-The data purge path differs slightly between the different services.
+Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit M365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directoy](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
