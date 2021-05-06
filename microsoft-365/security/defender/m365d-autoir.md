@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md), your security operations team receives an alert within the Microsoft 365 security center whenever a malicious or suspicious activity or artifact is detected. Given the seemingly never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and remediation (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
+If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md), your security operations team receives an alert within the Microsoft 365 security center whenever a malicious or suspicious activity or artifact is detected. Given the seemingly never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
 
 This article provides an overview of AIR and includes links to next steps and additional resources.
 
@@ -54,7 +54,7 @@ In Microsoft 365 Defender, automated investigation and response with self-healin
 
 Imagine having a virtual analyst in your Tier 1 or Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual analyst could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual analyst could significantly reduce the time to respond, freeing up your security operations team for other important threats or strategic projects. If this scenario sounds like science fiction, it's not! Such a virtual analyst is part of your Microsoft 365 Defender suite, and its name is *automated investigation and response*.
 
-Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. Automated investigation and response capabilities help your security operations team by:
+Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and response activities and get the most out of your threat protection suite. Automated investigation and response capabilities help your security operations team by:
 
 1. Determining whether a threat requires action.
 2. Taking (or recommending) any necessary remediation actions.
