@@ -69,10 +69,10 @@ When you have more than one retention policy, and when you also use retention la
 
    For **Teams channel messages**, message from standard channels but not [private channels](/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
 
-   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that includes the delete action:
+   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
     
-    - Because a copy of messages are saved in each user's mailbox who are included in the chat or channel, messages from users who aren't assigned the policy will still be returned in eDiscovery results after the message is permanently deleted from the mailbox of users who are assigned the policy.
-    - For users who aren't assigned the policy, deleted messages will be returned in Teams search results but fail to display the actual message as a result of the permenant deletion from the users who are assigned the policy.
+    - Because a copy of messages are saved in each user's mailbox who are included in the chat or channel, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
+    - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but fail to display the actual message as a result of the permanent deletion from the policy assigned to users.
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
