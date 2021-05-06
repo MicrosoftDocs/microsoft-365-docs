@@ -13,7 +13,7 @@ ms.topic: article
 
 # Diagnostic logs
 
-When we troubleshoot an issue on a device managed by Microsoft Managed Desktop, whether one you've reported or one we've identified, we might have to collect certain diagnostic logs from the device without intervention from the user. We don't collect any user-generated content or information from user directories. We only collect diagnostic and log data that concerns device health and status.
+When we troubleshoot an issue on a device managed by Microsoft Managed Desktop, whether one you've reported or one identified by our service, we might have to collect certain diagnostic logs from the device without intervention from the user. We don't collect any user-generated content or information from user directories. We only collect diagnostic and log data that concerns device health and status.
 
 We store any collected logs for 28 days, and then delete them. We process any logs collected from a device following our [data handling standards](privacy-personal-data.md).
 
