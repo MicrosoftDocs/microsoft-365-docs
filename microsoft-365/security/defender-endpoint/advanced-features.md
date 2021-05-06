@@ -234,7 +234,7 @@ Helps you find unmanaged devices connected to your corporate network without the
 
 ## Preview features
 
-Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Defender for Endpoint preview release. Try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 
