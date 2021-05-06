@@ -59,15 +59,15 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 1. On your Windows Server device, open Registry Editor.
 
-1. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-1. In that folder, look for a DWORD entry called **DisableAntiSpyware**.
+3. In that folder, look for a DWORD entry called **DisableAntiSpyware**.
    - If you do not see that entry, you're all set.
    - If you do see **DisableAntiSpyware**, proceed to step 4.
 
-1. Right-click the DisableAntiSpyware DWORD, and then choose **Modify**.
+4. Right-click the DisableAntiSpyware DWORD, and then choose **Modify**.
 
-1. Set the value to `0`. (This sets the registry key's value to *false*.)
+5. Set the value to `0`. (This sets the registry key's value to *false*.)
 
 > [!TIP]
 > To learn more about this registry key, see [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
@@ -101,7 +101,7 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Still need help? See [Microsoft Defender Antivirus on Windows Server](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
+> Still need help? See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
