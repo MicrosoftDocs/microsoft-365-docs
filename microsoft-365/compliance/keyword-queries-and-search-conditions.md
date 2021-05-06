@@ -422,6 +422,17 @@ To search for Skype for Business conversations that occurred within a specific d
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 
+## Character Limits for Content Searches
+
+We have a 4,000 character limit when performing content searches against Sharepoint and OneDrive For Business sites. 
+The total numbers of Characters consists of the following:
+- All Characters in both the Users and Filters fields
+- All Compliance Security Filters that apply to the user will be included in their search
+- Location Property details
+
+> [!NOTE]
+> These limits apply to Core eDiscovery as well as Advanced eDiscovery
+
 ## Search tips and tricks
 
 - Keyword searches are not case-sensitive. For example, **cat** and **CAT** return the same results. 
