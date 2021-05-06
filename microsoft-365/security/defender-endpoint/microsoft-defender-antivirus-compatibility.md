@@ -32,9 +32,9 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 ## Why Defender for Endpoint matters
 
-If you're using a non-Microsoft antivirus/antimalware solution, consider onboarding those endpoints to Defender for Endpoint. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection.  In addition, you can use [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
+If you're using a non-Microsoft antivirus/antimalware solution, consider onboarding those endpoints to Defender for Endpoint. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection.  For example, you can use [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
 
-In other words, here's how it all works:
+Here's how it works:
 
 - If your organization's client devices are protected by a non-Microsoft antivirus/antimwalware solution, when those devices are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode automatically. In this case, threat detections occur, but real-time protection and threats are not remediated by Microsoft Defender Antivirus. **NOTE**: This particular scenario does not apply to endpoints running Windows Server.
 
@@ -52,7 +52,7 @@ In other words, here's how it all works:
 
 The following table summarizes what happens with Microsoft Defender Antivirus when non-Microsoft antivirus/antimalware solutions are used together or without Microsoft Defender for Endpoint. 
 
-| Windows version   | Antivirus/antimalware solution  | Defender for Endpoint enrollment | Microsoft Defender Antivirus state     |
+| Windows version   | Antivirus/antimalware solution  | Onboarded to Defender for Endpoint? | Microsoft Defender Antivirus state     |
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
 | Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
@@ -126,7 +126,6 @@ The table in this section summarizes the functionality and features that are ava
 - When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have an up-to-date, non-Microsoft antivirus product that is providing real-time protection from malware. For optimal security layered defense and detection efficacy, make sure to update the [Microsoft Defender Antivirus protection (Security intelligence update, Engine, and Platform)](manage-updates-baselines-microsoft-defender-antivirus.md) even if Microsoft Defender Antivirus is running in passive mode.
 
 - When Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the protection offered by a non-Microsoft antivirus product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. Automatic re-enabling helps to ensure that antivirus protection is maintained on your devices. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which uses the Microsoft Defender Antivirus engine to periodically check for threats in addition to your main antivirus app.
-
 
 > [!WARNING]
 > Do not disable, stop, or modify any of the associated services that are used by Microsoft Defender Antivirus, Microsoft Defender for Endpoint, or the Windows Security app. This recommendation includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and processes. Manually modifying these services can cause severe instability on your devices and can make your network vulnerable. Disabling, stopping, or modifying those services can also cause problems when using non-Microsoft antivirus solutions and how their information is displayed in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
