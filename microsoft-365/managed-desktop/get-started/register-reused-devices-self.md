@@ -81,7 +81,7 @@ In an Active Directory environment, you can use the `Get-WindowsAutoPilotInfo` P
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
     #example one – leverage Get-ADComputer to enumerate devices 
-  Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname>
+    Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname>
     ```
 
     ```powershell 
