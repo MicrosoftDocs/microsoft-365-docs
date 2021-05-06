@@ -102,6 +102,7 @@
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](mac-support-install.md)
+###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot performance issues](mac-support-perf.md)
 ###### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
 ###### [Troubleshoot kernel extension issues](mac-support-kext.md)
