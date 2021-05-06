@@ -44,7 +44,24 @@ Site permissions must be set up separately from waves as part of the launch. For
 > - The number of waves required is automatically determined by the expected number of users 
 > - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy
 > - At the end of the launch, all users with permissions to the site will be able to access the new site
+> - If your organization is using [Viva Connections](https://docs.microsoft.com/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched
 > - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans
+
+## Understand the differences between the Portal launch scheduler using PowerShell or the in-product option
+Formerly, portal launches could only be scheduled through SharePoint PowerShell. Now, you have two options to help you schedule and manage your portal's launch. Learn about the key differences between both tools:
+
+|SharePoint PowerShell version |In-product version |   
+|:-------|:-------|
+| 
+- Admin credentials are required to use [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps)
+- Minimum requirement of one wave
+- Uses Universal Central Time (UTC) time zone  | 
+- Site owner credentials are required 
+- Minimum requirement of two wave
+- Uses the local time zone of the portal  |
+
+
+
 
 
 ## Get started using the Portal launch scheduler
@@ -134,7 +151,8 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 The SharePoint Portal launch scheduler tool was originally only available via [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) and will continue to be supported through PowerShell for customers who prefer this method. The same notes at the beginning of this article apply to both versions of the Portal launch scheduler. 
 
 >[!NOTE]
->You need administrator permissions to use SharePoint PowerShell.
+> You need administrator permissions to use SharePoint PowerShell.
+> Portal launch details for launches created in PowerShell will appear and can be managed in the new Portal launch scheduler tool in SharePoint.
 
 
 ### App setup and connecting to SharePoint Online
