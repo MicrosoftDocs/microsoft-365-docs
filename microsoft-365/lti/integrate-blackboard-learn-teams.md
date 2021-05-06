@@ -20,7 +20,7 @@ description: "Integrate Blackboard Learn Ultra with Microsoft Teams"
 
 Microsoft Teams and Blackboard Learn Ultra now have a collaborative experience that benefits educators and students. As a Teams admin, you manage the integration between both applications.
 
-## Approve app and set up integrations
+## Approve the app in the Microsoft Azure tenant
 
 The following tasks are completed by the Microsoft Office 365 admin and the Blackboard Learn Ultra admin.
 
@@ -35,80 +35,75 @@ Before managing the integration within Blackboard Learn Ultra, the Microsoft Off
    > [!NOTE]
    > Replace {tenant} with your organization’s Microsoft tenant ID.
 
-## Blackboard Learn Ultra Admin
-----------------------------
+## Register the integration apps
 
+As a Blackboard Learn Ultra admin, you'll need to register 2 LTI 1.3 integration apps within your Test environment:
 
-As a Learn Admin you will need to register 2 LTI 1.3 integration apps within your Test environment.
+- The Blackboard Learn Class Teams integration to support the roster sync
 
--   The Blackboard Learn Class Teams integration to support the roster sync
+- The Microsoft Teams class team LTI app
 
--   The Microsoft Teams class team LTI app
+1. Make a note of the following LTI Client IDs for both Apps:
 
-1.  Make a note of the following LTI Client IDs for both Apps
+    - Blackboard - f1561daa-1b21-4693-ba90-6c55f1a0eb41
 
-    1.  Blackboard - f1561daa-1b21-4693-ba90-6c55f1a0eb41
+    - Microsoft - 027328b7-c2e3-4c9e-aaa1-07802dae6c89
 
-    2.  Microsoft - 027328b7-c2e3-4c9e-aaa1-07802dae6c89
+2. Access the Admin Panel, and under **Integrations**, locate the LTI Tool Providers.
 
-2.  Access Admin Panel and under Integrations locate LTI Tool Providers
+3. Select **Register LTI1.3/Advantage Tool**.
 
-> <img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image1.png" style="width:5.70149in;height:1.45278in" alt="Graphical user interface, text, application, email Description automatically generated" />
+4. Enter the first of the Client IDs provided (either Blackboard or Microsoft), and select **Submit**.
 
-1.  Select Register LTI1.3/Advantage Tool
+5. Review the pre-populated settings and ensure that the tool status is marked as approved.
 
-2.  Enter in the first of the Client IDs provided (either Blackboard or Microsoft) and click Submit
+6. Scroll to the bottom, and then select **Submit**.
 
-> <img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image2.png" style="width:5.84328in;height:2.42346in" alt="Graphical user interface, text, application, email Description automatically generated" />
+7. Repeat the previous steps to register the second of the LTI apps within your environment.
 
-1.  You will notice all relevant fields have been pre-populated for you. Please go through and review these settings and ensure that the tool status is marked as approved.
+## Set up the REST Application and Cross Origin Resource Sharing
 
-2.  Scroll to the bottom and click Submit
+The Blackboard Learn Ultra admin will also need to configure the REST Application and the Cross Origin Resource Sharing configuration.
 
-3.  Repeat steps 4 and 5 again to register the second of the LTI apps within your environment
+Complete the following to set up the REST Application
 
-### Setting up the REST Application and Cross Origin Resource Sharing
+1. Access the Learn Administration Tools, and then select **REST API Integrations** from the **Integrations** section.
 
-Alongside setting up the LTI integrations, the Learn admin will also need to configure the REST Application and the Cross Origin Resource Sharing configuration.
+2. Select **Create integrations** and enter the same Application/Client ID that you entered for the Blackboard Learn Class Teams Integration LTI tool.
 
-#### REST Application
+3. Enter the Learn User (this could be your own learn admin username), or select **Browse** to locate.
 
-1.  Access the Learn Administration Tools and select REST API Integrations from the Integrations section.
+4. Select **Yes** for **End User Access**.
 
-2.  Select Create integrations and enter in the same Application/Client ID as with the Blackboard Learn Class Teams Integration LTI tool.
+5. Select **Yes** for **Authorized to Act as User**
 
-3.  Enter in the Learn User (this could be your own learn admin username) or select Browse to locate.
+6. Select **Submit** once complete.
 
-4.  Select End User Access to Yes
+## Set up Cross-Origin Resource Sharing
 
-5.  Select Authorized to Act as User to Yes
+1. Access the Learn Administration Tools, and select **Cross-Origin Resource Sharing** from the **Integrations** section.
 
-6.  Click Submit once complete.
+2. Select **Create Configuration**.
 
-#### Cross-Origin Resource Sharing
+1. Enter **https://bb-ms-teams-ultra-ext.api.blackboard.com** in the origin.
 
-1.  Access the Learn Administration Tools and select Cross-Origin Resource Sharing from the Integrations section.
+3. Add the word **Authorization** in the **Allowed Headers**.
 
-2.  Select Create Configuration and in the Origin enter in https://bb-ms-teams-ultra-ext.api.blackboard.com
+4. Set **Available** to **Yes**.
 
-3.  In the Allowed Headers add in the word Authorization
+5. Select **Submit** once complete.
 
-4.  Set Available to Yes
+## Enable Class Teams in Blackboard Learn
 
-5.  Click Submit once complete.
+Once you've enabled the LTI tools, your next step will be to set up the Microsoft Class Teams integration from your own Microsoft Office 365 tenant. You can do this by following these steps as the Blackboard Learn Ultra admin.
 
-### Enabling Class Teams in Blackboard Learn
+1. In **Learn Admin** > **Tools and Utilities**, select **Microsoft Teams Integration Admin**.
 
-Once you have enabled the LTI tools, your next step will be to setup the Microsoft Class Teams integration from your own Microsoft Office 365 tenant. You can do this by following these steps:
+1. Select the checkbox for **Enable Microsoft Teams**.
 
-#### Learn Admin
+1. Enter your tenant ID as referenced in the section under Microsoft O365 Admin
 
-1.  On the Learn Admin screen, under Tools and Utilities select Microsoft Teams Integration Admin
+ > [!NOTE]
+ > You won't be able to save the settings until the app has been approved by the O365 admin. See [Approve the app in Microsoft Azure tenant](#approve-the-app-in-the-microsoft-azure-tenant).
 
-> <img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image3.png" style="width:5.8806in;height:7.07203in" alt="Table Description automatically generated" />
-
-1.  Select the checkbox on Enable Microsoft Teams and Enter in your tenant ID as referenced in the section under Microsoft O365 Admin
-
-    1.  Please note that you will not be able to save the settings until the app has been approved by the O365 admin. Please see the first section under Microsoft O365 Admin
-
-2.  If the global O365 admin has approved the Blackboard Teams application in your Microsoft Tenant, you will be able to click Submit, and this should save the settings and enable Teams globally for all Learn Ultra courses.
+2. When the global O365 admin has approved the Blackboard Teams application in your Microsoft Tenant, select **Submit**.
