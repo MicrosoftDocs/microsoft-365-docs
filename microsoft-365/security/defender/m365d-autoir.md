@@ -52,7 +52,7 @@ In Microsoft 365 Defender, automated investigation and response with self-healin
 
 ## Your own virtual analyst
 
-Imagine having a virtual analyst in your Tier 1 or Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual aanalyst could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual aanalyst could significantly reduce the time to respond, freeing up your security operations team for other important threats or strategic projects. If this scenario sounds like science fiction, it's not! Such a virtual analyst is part of your Microsoft 365 Defender suite, and its name is *automated investigation and response*.
+Imagine having a virtual analyst in your Tier 1 or Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual analyst could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual analyst could significantly reduce the time to respond, freeing up your security operations team for other important threats or strategic projects. If this scenario sounds like science fiction, it's not! Such a virtual analyst is part of your Microsoft 365 Defender suite, and its name is *automated investigation and response*.
 
 Automated investigation and response capabilities enable your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With automated investigation and response, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. Automated investigation and response capabilities help your security operations team by:
 
@@ -87,7 +87,7 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 |Entities |Threat protection services  |
 |:---------|:---------|
 |Devices (also referred to as endpoints or machines) |[Defender for Endpoint](../defender-endpoint/automated-investigations.md) |      
-|Users     |[Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
+|On-premises Active Directory users, entity behavior, and activities     |[Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
 |Email content (email messages that can contain files and URLs)     |[Defender for Office 365](../office-365-security/defender-for-office-365.md) |
 
 > [!NOTE]
