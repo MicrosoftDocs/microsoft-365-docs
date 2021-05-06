@@ -32,7 +32,7 @@ Microsoft Defender Antivirus is automatically enabled and installed on endpoints
 
 ## Why Defender for Endpoint matters
 
-If you're using a non-Microsoft antivirus/antimalware solution, consider onboarding those endpoints to Defender for Endpoint. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection.  For example, you can use [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
+Consider onboarding your endpoints to Defender for Endpoint, even if you are using a non-Microsoft antivirus/antimalware solution. In most cases, when you onboard your devices to Defender for Endpoint, you can use Microsoft Defender Antivirus alongside your non-Microsoft antivirus solution for added protection. For example, you can use [EDR in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode), which blocks and remediates malicious artifacts that your primary antivirus solution might have missed. 
 
 Here's how it works:
 
