@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365
