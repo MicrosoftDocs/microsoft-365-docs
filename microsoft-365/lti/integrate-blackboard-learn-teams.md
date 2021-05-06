@@ -1,5 +1,5 @@
 ---
-title: Use Blackboard Learn Ultra in Microsoft Teams
+title: Use Microsoft Teams classes in your Learning Management System
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,11 +12,11 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Integrate Blackboard Learn Ultra with Microsoft Teams"
+description: "Integrate Microsoft Teams classes in your Learning Management System"
 ---
 
 
-# Use Blackboard Learn Ultra in Microsoft Teams
+# Use Microsoft Teams classes in your Learning Management System
 
 Microsoft Teams and Blackboard Learn Ultra now have a collaborative experience that benefits educators and students. As a Teams admin, you manage the integration between both applications.
 
@@ -51,9 +51,13 @@ As a Blackboard Learn Ultra admin, you'll need to register 2 LTI 1.3 integration
 
 2. Access the Admin Panel, and under **Integrations**, locate the LTI Tool Providers.
 
+   ![this is the LTI Tool Provider dialog shows a list of providers](../media/lti-tool-providers.png)
+
 3. Select **Register LTI1.3/Advantage Tool**.
 
 4. Enter the first of the Client IDs provided (either Blackboard or Microsoft), and select **Submit**.
+
+   ![the LTI register tool with a field to enter the client id](../media/register-tool.png)
 
 5. Review the pre-populated settings and ensure that the tool status is marked as approved.
 
@@ -98,6 +102,8 @@ Complete the following to set up the REST Application
 Once you've enabled the LTI tools, your next step will be to set up the Microsoft Class Teams integration from your own Microsoft Office 365 tenant. You can do this by following these steps as the Blackboard Learn Ultra admin.
 
 1. In **Learn Admin** > **Tools and Utilities**, select **Microsoft Teams Integration Admin**.
+
+   ![the tools and utilities dialog with a list of available tools](../media/tools-utilities.png)
 
 2. Select the checkbox for **Enable Microsoft Teams**.
 
