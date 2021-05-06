@@ -160,7 +160,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Title|Title|Doc_title|Title from the document metadata.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
 |Unique in email set|UniqueInEmailSet||**False** if there's a duplicate of the attachment in its email set.|
-|Version Group ID||Version_Group_Id|Groups different document versions of the same file together|
+|Version Group ID||Version_Group_Id|Groups together the different versions of the same document.|
 |Was Remediated|WasRemediated|Was_Remediated|**True** if the item was remediated, otherwise **False**.|
 |Word count|WordCount|Word_count|Number of words in the item.|
 |||||
