@@ -1,7 +1,7 @@
 ---
 title: Switch to Microsoft Defender for Endpoint - Setup
-description: This is phase 2, Setup, for switching to Microsoft Defender for Endpoint.
-keywords: migration, Microsoft Defender for Endpoint, edr
+description: Phase 2, the setup process, when switching to Microsoft Defender for Endpoint.
+keywords: migration, Microsoft Defender for Endpoint, edr, Windows Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
