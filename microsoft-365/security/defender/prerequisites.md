@@ -36,7 +36,8 @@ Learn about licensing and other requirements for provisioning and using [Microso
 Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 security center without additional cost:
 
 - Microsoft 365 E5 or A5
-- Microsoft 365 E5 Security or A5 Security
+- Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
+- Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
 - Enterprise Mobility + Security (EMS) E5 or A5 
 - Office 365 E5 or A5
@@ -47,7 +48,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
-> Don't have license yet? [Try or buy a Microsoft 365 subscription](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
+> Don't have license yet? [Try or buy a Microsoft 365 subscription](../../commerce/try-or-buy-microsoft-365.md)
 
 ### Check your existing  licenses
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
