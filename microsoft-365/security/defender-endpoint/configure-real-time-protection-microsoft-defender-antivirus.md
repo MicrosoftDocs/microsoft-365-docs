@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 12/16/2019
@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
