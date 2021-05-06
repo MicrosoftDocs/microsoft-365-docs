@@ -48,18 +48,13 @@ Site permissions must be set up separately from waves as part of the launch. For
 > - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans
 
 **Understand the differences between Portal launch scheduler options:**
+<br>
 Formerly, portal launches could only be scheduled through SharePoint PowerShell. Now, you have two options to help you schedule and manage your portal's launch. Learn about the key differences between both tools:
 
 |SharePoint PowerShell version |In-product version |   
 |:------------|:------------|
 | 
-- Admin credentials are required to use [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps)
-- Minimum requirement of one wave
-- Uses Universal Central Time (UTC) time zone  | 
-
-- Site owner credentials are required 
-- Minimum requirement of two wave
-- Uses the local time zone of the portal  |
+- Admin credentials are required to use [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) Minimum requirement of one wave Uses Universal Central Time (UTC) time zone  | Site owner credentials are required Minimum requirement of two wave Uses the local time zone of the portal  |
 
 
 
