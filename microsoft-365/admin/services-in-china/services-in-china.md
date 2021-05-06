@@ -235,4 +235,4 @@ For details and instructions, see [Data Subject Requests (DSR) for GDPR](https:/
 
 [Azure Information Protection support for Office 365 operated by 21Vianet](parity-between-azure-information-protection.md) (article)
 
-[View your bill or get a Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice) (article)
+[View your bill or get a Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)
