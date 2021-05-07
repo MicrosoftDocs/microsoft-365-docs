@@ -47,8 +47,8 @@ Deploy Removable Storage Access Control on Windows 10 devices that have Anti-mal
 You can use the following properties to create a removable storage group:
 
 **Property name: Group ID**
+
 1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.
-1. Options: - 
 
 **Property name: DescriptorIdList**
 
@@ -84,7 +84,6 @@ Following are the access control policy properties:
 **Property name: PolicyRuleId**
 
 1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.
-1. Options: -
 
 **Property name: IncludedIdList**
 
@@ -103,7 +102,6 @@ The following example shows the usage of GroupID:
 **Property name: Entry ID**
 
 1. Description: One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.
-1. Options: -
 
 **Property name: Type**
 
@@ -198,7 +196,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)
 
-:::image type="content" source="images/prevent-write-and-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
+:::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file. 
 
@@ -206,7 +204,7 @@ If you want to restrict a specific user, then use SID property into the Entry. I
 
 The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-:::image type="content" source="images/usage-of-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
+:::image type="content" source="images/usage-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
 
 3. Save both rule and group XML files on network share folder and put network share folder path into the Group Policy setting: **Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Device Control: ‘Define device control policy groups’ and ‘Define device control policy rules’**.
 
@@ -243,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
     
-:::image type="content" source="images/xml-file-for-data-type-string.png" alt-text="The xml file for the STRING data type":::
+:::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type":::
 
 2. For each policy, also create an OMA-URI:
 
@@ -255,7 +253,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-:::image type="content" source="images/xml-file-for-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
+:::image type="content" source="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
 ## Deploying and managing policy by using Intune user interface
 This capability is not yet available. 
@@ -288,35 +286,4 @@ DeviceEvents
 | order by Timestamp desc
 </pre>
 
-
-
-
-:::image type="content" source="images/blockage-of-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
-
-
-
-
-    
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
