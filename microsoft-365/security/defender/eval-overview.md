@@ -26,8 +26,30 @@ ms.technology: m365d
 # Evaluate and pilot Microsoft 365 Defender
 
 
-
-
 **Applies to:**
 - Microsoft 365 Defender
+
+Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
+The following illustration . . .
+
+[![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)]
+
+In this illustration:
+- bullet
+- list
+- explanation
+
+## Understand Microsoft 365 Defender components
+
+
+## Microsoft 365 Defender architecture
+
+text 
+
+[![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)]
+
+add table that describes the architecture
+
+## Evaluation process
 
