@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
-description: "overview of the planning process for data loss prevention"
+description: "Overview of the planning process for data loss prevention"
 ---
 
 # Plan for data loss prevention (DLP)
 
-Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
+Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
 
 ## Multiple starting points
 
@@ -30,12 +30,23 @@ Organizations can start their DLP journey:
 - from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
 - knowing what sensitive information they want to prioritize protecting, like health care records, and going straight to defining policies to protect it
 - without knowing what their sensitive information is, where it is, and who is doing what with it so they start with discovery and categorization and take a more methodical approach
-- without knowing what their sensitive information is, or where it is, or who is doing what with it, but the will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there.
-- knowing that they need to implement the full M365 Information Protection Stack and so intend to take a longer term, methodical approach
+- without knowing what their sensitive information is, or where it is, or who is doing what with it, but they will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there.
+- knowing that they need to implement the full M365 Information Protection stack and so intend to take a longer term, methodical approach
 
 These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
 
 ## Overview of planning process
+
+### Questions that impact policy design that you need to get answers to
+
+1. what sensitive data/items do you have?
+1. where are they (location)?
+1. what business processes are the involved in?
+    1. what are your points of exposure?
+    1. What locations do they flow through in their lifetime?
+1. What is your tolerance for leakage?
+1. do you want to protect your sensitive items at rest, in motion, in use?
+
 
 ### Identify stakeholders
 
@@ -62,15 +73,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 ### Plan for training of end users
 
-## Questions that impact policy design that you need to get answers to
 
-1. what sensitive data/items do you have?
-1. where are they (location)?
-1. what business processes are the involved in?
-    1. what are your points of exposure?
-    1. What locations do they flow through in their lifetime?
-1. What is your tolerance for leakage?
-1. do you want to protect your sensitive items at rest, in motion, in use?
 
 
 ## Mapping data state to DLP location
