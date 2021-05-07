@@ -95,7 +95,7 @@ You can add multiple comments to an incident with the **Comment** field. Each co
 
 ## Next steps
 
-For new incidents, begin your investigation [investigation](investigate-incidents.md).
+For new incidents, begin your [investigation](investigate-incidents.md).
 
 For in-process incidents, continue your [investigation](investigate-incidents.md).
 
