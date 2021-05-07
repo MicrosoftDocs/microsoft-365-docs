@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of April 26, 2021
@@ -272,7 +273,7 @@
 | 5/1/2021 | [Set up Microsoft 365 Business Basic](/microsoft-365/admin/setup/setup-business-basic?view=o365-21vianet) | modified |
 | 5/1/2021 | [Set up Microsoft 365 Business Standard](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
 | 5/1/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/index?view=o365-21vianet) | modified |
-| 5/1/2021 | [Employee quick setup-guide](/microsoft-365/business-video/employee-quick-setup?view=o365-worldwide) | modified |
+| 5/1/2021 | [Employee quick setup-g../../business-video/get-help-supportquick-setup?view=o365-worldwide) | modified |
 | 5/1/2021 | [Get help or support](/microsoft-365/business-video/get-help-support?view=o365-worldwide) | modified |
 | 5/1/2021 | [Share your business files - overview](/microsoft-365/business-video/overview-file-sharing?view=o365-21vianet) | modified |
 | 5/1/2021 | [Online meetings overview](/microsoft-365/business-video/overview-online-meetings?view=o365-21vianet) | modified |
@@ -413,7 +414,7 @@
 | 4/20/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-21vianet) | modified |
 | 4/20/2021 | [Microsoft 365 Defender # < 60 chars](/microsoft-365/security/defender/index?view=o365-21vianet) | modified |
 | 4/20/2021 | [Microsoft 365 security center overview](/microsoft-365/security/defender/overview-security-center?view=o365-21vianet) | modified |
-| 4/21/2021 | [Ways to contact support for business products - Admin Help](/microsoft-365/admin/contact-support-for-business-products?view=o365-21vianet) | modified |
+| 4/21/2021 | [Ways to contact support for business products - Admin Help](../business-video/get-help-support?view=o365-21vianet) | modified |
 | 4/21/2021 | [Business Assist for Microsoft 365](/microsoft-365/admin/misc/business-assist?view=o365-21vianet) | modified |
 | 4/21/2021 | [About registration numbers and under review notifications](/microsoft-365/commerce/about-registration-numbers?view=o365-21vianet) | modified |
 | 4/21/2021 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
@@ -1798,7 +1799,7 @@
 | 4/2/2021 | [Employee quick setup-guide](/microsoft-365/business-video/employee-quick-setup?view=o365-worldwide) | modified |
 | 4/2/2021 | [Move your files to OneDrive](/microsoft-365/business-video/files-to-onedrive?view=o365-21vianet) | modified |
 | 4/2/2021 | [Move company files to SharePoint](/microsoft-365/business-video/files-to-sharepoint?view=o365-21vianet) | modified |
-| 4/2/2021 | [Find answers and help](/microsoft-365/business-video/find-help-answers?view=o365-worldwide) | modified |
+| 4/2/2021 | [Find answers and help]../../business-video/get-help-supporters?view=o365-worldwide) | modified |
 | 4/2/2021 | [Get help or support](/microsoft-365/business-video/get-help-support?view=o365-worldwide) | modified |
 | 4/2/2021 | [Create a group email address](/microsoft-365/business-video/group-email?view=o365-21vianet) | modified |
 | 4/2/2021 | [Import and redirect email](/microsoft-365/business-video/import-email?view=o365-21vianet) | modified |
