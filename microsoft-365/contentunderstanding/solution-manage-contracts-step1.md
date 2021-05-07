@@ -36,7 +36,20 @@ Your organization needs a way to identify and classify all contract documents fr
 
 ## Process details
 
-### Train a model to classify a type of file
+### Create a Contract model
+
+The first step is to create your Contract model.
+
+1. From the content center, select **New**, and then **Create a model**.
+
+2. On the **New document understanding model** pane, in the **Name** field, type the name of the model. For this contract management solution, you can name the model *Contract*.
+
+4. Choose **Create**. This creates a home page for the model.</br>
+
+    ![Screenshot of the Contract home page.](../media/content-understanding/models-contract-home-page.png)
+
+
+### Train your model to classify a type of file
 
 #### Add example files for your model
 
