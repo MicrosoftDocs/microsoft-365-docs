@@ -56,13 +56,11 @@ The following steps will guide you through onboarding VDI devices and will highl
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
 
 
-### For Windows 10 or Windows Server 2019
-
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     1.  In the navigation pane, select **Settings** > **Onboarding**.
 
-    1. Select Windows 10 as the operating system.
+    1. Select the operating system.
 
     1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
@@ -179,8 +177,8 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 5. Re-seal the golden/master image as you normally would.
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using a local script
+title: Onboard Windows devices using a local script
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
 keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Onboard Windows 10 devices using a local script
+# Onboard Windows devices using a local script
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -142,9 +142,9 @@ Monitoring can also be done directly on the portal, or by using the different de
 
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
