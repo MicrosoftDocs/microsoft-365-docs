@@ -26,7 +26,7 @@ ms.date: 07/08/2020
 # Upgrade from Microsoft Teams Free to Microsoft 365 for business
 
 > [!IMPORTANT]
-> This document only applies to Microsoft Teams Free organizations in India.
+> This article only applies to Microsoft Teams Free organizations in India.
 
 ## Before you begin
 

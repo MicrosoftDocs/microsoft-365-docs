@@ -73,7 +73,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ## Related content
 
-[Reactivate your subscription](reactivate-your-subscription.md) (article)\  
+[Reactivate your subscription](reactivate-your-subscription.md) (article)\
 [What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md) (article)\
-[Enter your product key](../enter-your-product-key.md) (article)\  
+[Enter your product key](../enter-your-product-key.md) (article)\
 [Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md) (article)

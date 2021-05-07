@@ -30,7 +30,7 @@ When you purchase a subscription, you can use a promotional code to reduce the p
 ## Apply a promo code to your subscription
 
 1. Begin your purchase by either purchasing a new subscription, or by adding services to an existing subscription.
-2. When you check out, choose **Have a promo or discount code?, and then enter your code in the box.
+2. When you check out, choose **Have a promo or discount code?**, and then enter your code in the box.
 3. Select **Apply promo code**. You should see confirmation that it was successfully applied. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why.
 4. Continue checking out. On the order confirmation page, you'll see your discount code included with the amount.
 

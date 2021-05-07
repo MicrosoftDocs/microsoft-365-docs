@@ -89,19 +89,14 @@ The overall proposal workflow looks like this:
 
 - Your Microsoft representative creates a proposal and sends a link to
     you in an email.
-
 - You use the link to go to the proposal sign-in page.
-
 - You review your organization's information.
-
 - You review the proposal, accept the MCA if needed, and finish the
     checkout process.
-
     > [!IMPORTANT]
     > You must have the authority to sign an MCA on behalf of
     > your organization. If you don't have that authority, then someone who
     > does must do this step.
-
 - After checkout is finished, you're given additional links to set up
     your products and services.
 
@@ -142,7 +137,7 @@ incorrect, contact the representative to make changes for you. After
 you've accepted an MCA, you can review and change your organization's
 address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the
 Microsoft 365 admin center. If your organization name changes, open a
-service request to have it updated. [Learn how to open a service request](../admin/contact-support-for-business-products.md)
+service request to have it updated. [Learn how to open a service request](../business-video/get-help-support.md)
 
 ### Your information
 

@@ -46,11 +46,8 @@ Discounts on Microsoft 365 Family and Personal subscriptions are offered to elig
 For employees to take advantage of the Microsoft Home Use Program discount, they need a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
 
 - Customers who have active Software Assurance for qualifying Office applications
-
 - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
-
 - Commercial and government customers who have purchased ≥ 2,000 licenses of one or a mix of Microsoft 365 E3/E5
-
 - Education and non-profit customers
 
 ## Why do I have to create an Azure Active Directory (AAD) account to use the Home Use Program/ Microsoft Store for Business?
@@ -72,11 +69,8 @@ You can access onboarding materials in several languages at [HUP Material for Cu
 ## What are the steps for an eligible employee to make a Microsoft Home Use Program purchase?
 
 1. **Sign Up** Go to the [Microsoft Home Use Program page](https://www.microsoft.com/home-use-program), and select the Get Started button. Employees enter their corporate email address.
-
 2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
-
 3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that’s associated with their personal email address, which allows them to view the discounts on products available to them based on the organization’s Home Use Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
-
 4. **Shop** The purchase is processed and completed in the Microsoft Store.
 
 ## If an employee subscribes to Microsoft 365 through the Microsoft Home Use Program, how does this impact our organization’s Microsoft 365 business subscription and device limit?

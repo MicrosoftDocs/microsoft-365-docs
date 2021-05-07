@@ -55,7 +55,7 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 ::: moniker-end
 
 2. On the **Products** tab, find the subscription that you want to reactivate. Select **More actions** (three dots), then select **Reactivate this subscription**.\
-    If you don't see **Reactivate this subscription**, [contact support](../../admin/contact-support-for-business-products.md).
+    If you don't see **Reactivate this subscription**, [contact support](../../business-video/get-help-support.md).
 3. In the **Reactivate this subscription** pane, select a payment method from the drop-down list, or select **Add payment method**.
 4. Select **Save**.
 

@@ -147,4 +147,4 @@ Azure prepayment is available as a payment method only for eligible Azure produc
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
