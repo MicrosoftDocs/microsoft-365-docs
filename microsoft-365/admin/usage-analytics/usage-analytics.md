@@ -195,7 +195,7 @@ This is currently not on the roadmap.
 
 ### I have a specific question about the data I'm seeing for my organization. Who can I reach out to?
 
-You can use the feedback button in the admin center activity overview page, or you can open a [support case](../contact-support-for-business-products.md) to get help with the template app. 
+You can use the feedback button in the admin center activity overview page, or you can open a [support case](../../business-video/get-help-support.md) to get help with the template app. 
 
 ### How can partners access the data?
 
