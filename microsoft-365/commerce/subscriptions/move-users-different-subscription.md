@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to move users between subscriptions."
 ms.date: 07/01/2020
 ---
@@ -69,4 +69,3 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 [Change plans manually](change-plans-manually.md) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
 [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) (article)
-

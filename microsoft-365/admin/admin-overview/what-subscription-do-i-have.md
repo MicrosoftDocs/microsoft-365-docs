@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +14,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-- Adm_TOC
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn to verify which subscriptions your organization has by going to the Your products page."
+ms.date: 01/21/2021
 ---
 
 # What subscription do I have?
