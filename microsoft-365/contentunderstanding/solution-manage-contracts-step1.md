@@ -119,7 +119,7 @@ You can by test your Contract model on example files it hasn’t seen before. Th
 
 When you create the extractor, the extractor page opens. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-![Advanced settings](../media/content-understanding/client-extractor-labeled-examples.png) 
+![Screenshot of the Client extractor Labeled examples page.](../media/content-understanding/client-extractor-labeled-examples.png) 
 
 To label the entity:
 
