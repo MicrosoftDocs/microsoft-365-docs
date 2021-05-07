@@ -1,5 +1,5 @@
 ---
-title: remove model from one or more libraries
+title: Remove a model from one or more libraries
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
