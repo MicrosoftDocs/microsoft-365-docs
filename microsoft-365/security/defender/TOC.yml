@@ -32,32 +32,32 @@
           href: data-privacy.md
         - name: Microsoft security portals
           href: portals.md
-    - name: Evaluate capabilities
+    - name: Evaluate and pilot
       items: 
-        - name: Create a trial lab
+        - name: Overview
+          href: eval-overview.md 
+        - name: Create the eval environment
+          href: eval-create-eval-environment.md  
+        - name: Defender for Identity
           items:
-            - name: Trial lab overview
-              href: m365d-evaluation.md
-            - name: Prepare
-              href: prepare-m365d-eval.md
-            - name: Setup
-              href: setup-m365deval.md
-            - name: Configure Microsoft 365 Defender pillars and onboard
-              href: config-m365d-eval.md
-            - name: Generate a test alert
-              href: generate-test-alert.md                       
-        - name: Run your pilot project in production
+            - name: Overview
+              href: eval-defender-identity-overview.md                             
+        - name: Defender for Office
+          items:
+            - name: Overview
+              href: eval-defender-office-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-office-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-office-enable-eval.md
+            - name: Pilot Defender for Office
+              href: eval-defender-office-pilot.md
+            - name: Promote the trial to production
+              href: eval-defender-office-production.md             
+        - name: Defender for Endpoint
           items: 
-            - name: Pilot overview
-              href: m365d-pilot.md
-            - name: Plan
-              href: m365d-pilot-plan.md
-            - name: Prepare
-              href: prepare-m365d-eval.md
-            - name: Simulate attack
-              href: m365d-pilot-simulate.md
-            - name: Close and summarize
-              href: m365d-pilot-close.md                           
+            - name: Overview
+              href: eval-defender-endpoint-overview.md                                 
     - name: Get started
       items:
         - name: Overview

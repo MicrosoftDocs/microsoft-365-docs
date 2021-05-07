@@ -1,5 +1,5 @@
 ---
-title: Evaluate Microsoft 365 Defender
+title: Evaluate Microsoft 365 Defender for Office overview
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dolmont
-author: DulceMontemayor
+ms.author: 
+author: 
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -25,7 +25,7 @@ ms.technology: m365d
 
 # Evaluate Microsoft 365 Defender for Office overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 
 **Applies to:**
