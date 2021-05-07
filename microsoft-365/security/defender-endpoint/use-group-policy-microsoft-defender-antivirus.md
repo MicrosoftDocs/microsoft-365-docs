@@ -29,6 +29,8 @@ ms.topic: how-to
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
+## Configure Microsoft Defender Antivirus using Group Policy
+
 In general, you can use the following procedure to configure or change Microsoft Defender Antivirus group policy settings:
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
@@ -43,7 +45,12 @@ In general, you can use the following procedure to configure or change Microsoft
 
 6. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
-The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
+## Group Policy settings and resources
+
+The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable). 
+
+> [!TIP]
+> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure these policy settings when you edit Group Policy Objects.
 
 | Location | Setting | Article |
 |:---|:---|:---|
@@ -139,8 +146,7 @@ The following table in this topic lists the Group Policy settings available in W
 | Threats | Specify threat alert levels at which default action should not be taken when detected | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## Related articles
+## See also
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
