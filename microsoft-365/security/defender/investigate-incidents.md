@@ -119,11 +119,13 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 ## Investigations
 
-The **Investigations** tab lists all the automated investigations triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
+The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
 
 Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.
+
+For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
 ## Evidence and Response
 

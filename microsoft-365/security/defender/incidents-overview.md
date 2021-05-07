@@ -89,7 +89,7 @@ The additional tabs for an incident are:
 
 - Investigations
 
-  All the automated investigations triggered by alerts in the incident.
+  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.
 
 - Evidence and Response
 
@@ -122,7 +122,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
    c. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
 
-   d. See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).
+   d. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).
    
    e. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
 
@@ -148,7 +148,7 @@ Here's an example of security operations for Microsoft 365 Defender.
 Daily tasks can include:
 
 - [Managing](manage-incidents.md) incidents
-- Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions
+- Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions in the Action center
 - Reviewing the latest [Threat Analytics](threat-analytics.md)
 - [Responding](investigate-incidents.md) to incidents
 
