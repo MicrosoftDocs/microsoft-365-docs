@@ -114,7 +114,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
-1. For each incident, begin an [attack and alert analysis](investigate-incidents.md):
+1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
    a. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
 
@@ -168,7 +168,7 @@ Daily, monthly, quarterly, and annual tasks can be used to update or refine proc
 
 **If you are new** to security analysis and incident response:
 
-- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the the Microsoft 365 security center with an example of an attack.
+- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 security center with an example of an attack.
 
 **If you have experience** with security analysis and incident response:
 
