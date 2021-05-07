@@ -10,7 +10,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
@@ -61,7 +61,7 @@ The following table in this topic lists the Group Policy settings available in W
 | MAPS | Configure local setting override for reporting to Microsoft MAPS | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Configure extended cloud check | [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Select cloud protection level | [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| Network inspection system | Specify additional definition sets for network traffic inspection | No longer relevant |
+| Network inspection system | Specify additional definition sets for network traffic inspection | [Specify additional definition sets for network traffic inspection](specify-additional-definitions-network-traffic-inspection-mdav.md) |
 | Network inspection system | Turn on definition retirement | No longer relevant |
 | Network inspection system | Turn on protocol recognition | No longer relevant |
 | Quarantine | Configure local setting override for the removal of items from Quarantine folder | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
