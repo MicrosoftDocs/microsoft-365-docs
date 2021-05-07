@@ -29,7 +29,7 @@ description: "Learn about the types of groups you can use."
 In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
 - **Microsoft 365 groups** (formerly Office 365 groups) are used for collaboration between users, both inside and outside your company.
-- **Distribution groups** are used for sending notifications to a group of people.
+- **Distribution groups** are used for sending email notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
 - **Shared mailboxes** are used when multiple people need access to the same mailbox, such as a company information or support email address.
@@ -54,6 +54,8 @@ Distribution groups are best for situations where you need to broadcast informat
 
 Distribution groups can be [upgraded to Microsoft 365 groups](../manage/upgrade-distribution-lists.md).
 
+Distribution groups can be added to a team in Microsoft Teams.
+
 ## Security groups
 
 [Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
@@ -62,17 +64,23 @@ Security groups can contain users or devices. Creating a security group for devi
 
 Security groups can be [configured for dynamic membership in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), allowing group members or devices to be added or removed automatically based on user attributes such as department, location, or title; or device attributes such as operating system version.
 
+Security groups can be added to a team.
+
 ## Mail-enabled security groups
 
 Mail-enabled security groups function the same as regular security groups, except that they cannot be dynamically managed through Azure Active Directory and cannot contain devices.
 
 They include the ability to send mail to all the members of the group.
 
+Mail-enabled security groups can be added to a team.
+
 ## Shared mailboxes
 
 [Shared mailboxes](../email/create-a-shared-mailbox.md) are used when multiple people need access to the same mailbox, such as a company information or support email address, reception desk, or other function that might be shared by multiple people.
 
 Shared mailboxes can receive external emails if the administrator has enabled this.
+
+Shared mailboxes include a calendar that can be used for collaboration.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
