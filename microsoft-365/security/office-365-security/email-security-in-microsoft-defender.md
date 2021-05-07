@@ -32,6 +32,7 @@ In this article:
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features. 
 
 **Applies to**
+
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -42,7 +43,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Em
 1. In the Security & Compliance Center (<https://protection.office.com>), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.) 
 If you're in the converged Microsoft 365 security center (https://security.microsoft.com/) scroll to **Email & collaboration** > **Explorer**.
 
-From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
+   From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
 2. In the **View** menu, choose **Email** \> **Malware**.
 
@@ -61,7 +62,7 @@ From here, start at the View, choose a particular frame of time to investigate (
    > [!div class="mx-imgBorder"]
    > ![Selected detection technology](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
-The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis. 
+   The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis. 
 
 ## View phishing URL and click verdict data
 
