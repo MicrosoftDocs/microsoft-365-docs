@@ -34,7 +34,7 @@ Your organization needs a way to identify and classify all contract documents fr
 
 5. Additionally, if you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
 
-## Process details
+## Detailed steps to train your model
 
 ### Create a Contract model
 
@@ -107,9 +107,26 @@ You can by test your Contract model on example files it hasn’t seen before. Th
 
 ### Create and train an extractor
 
+1. On the **Models > Contract** page, under **Key actions** > **Create and train extractors**, select **Create extractor**.
 
+   ![Screenshot showing the Contracts page with Create and train extractors option highlighted.](../media/content-understanding/key-actions-create-extractors.png)
 
+2. On the **New entity extractor** panel, in the **New name** field, type the name of your extractor. For example, name it *Client* if you want to extract the name of the client from each contract.
 
+3. When you're done, select **Create**.
+
+#### Label the entity you want to extract
+
+Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
+
+1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2019*). and then click **Save**.  You should see the value display from the file in the Labeled examples list, under the **Label** column.
+2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
+3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
+
+    ![Advanced settings](../media/content-understanding/select-service-start-date.png) 
+
+ 
+Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
 
 
