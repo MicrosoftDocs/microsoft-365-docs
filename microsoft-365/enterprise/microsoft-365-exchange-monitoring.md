@@ -153,7 +153,7 @@ With this new integrated experience, Microsoft's plan is to collect your feedbac
 
 #### 5.	Is this a free (included) or paid (extra) feature? 
 
-This is a free feature that is in Public preview and only available for customers that meet the requirements in question 1. There isn’t a paid option to receive this content. 
+This is a free feature that is in Public Preview and only available for customers that meet the requirements in question 1. There isn’t a paid option to receive this content. 
 
 #### 6.	How do I provide feedback? 
 
@@ -167,7 +167,7 @@ The data is instrumented in the Exchange Online service. If there is a failure t
 
 #### 8. Are there any privacy concerns? 
 
-Monitoring focuses on service metadata and user content is not being monitored. Control is on the tenant admin to configure priority accounts.
+Monitoring focuses on service metadata and user content is not monitored. Control is on the tenant admin to configure priority accounts.
 
 ## See also
 
