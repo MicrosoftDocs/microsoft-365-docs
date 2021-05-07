@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,14 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn how to upgrade to a different plan."
+ms.date: 04/21/2021
 ---
 
 # Upgrade to a different plan
@@ -31,20 +32,13 @@ When your business changes, or you need more features, you can upgrade plans. Th
 When you use the **Upgrade** tab, you're led through the process of buying a new plan. All users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
 
 1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
 2. Select the subscription that you want to upgrade.
-
 3. On the subscription details page, select **Upgrade**.
-
 4. Find the plan to which you want to upgrade, then select the **Upgrade** button.
-
 5. Enter the number of licenses that you need, choose whether to pay each month or for the whole year, then select **Go to checkout**.
-
     > [!NOTE]
     > Make sure you buy enough licenses to cover all your users.
-
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. You can change the default payment method at this step. If you need to make any changes, select **Change** next to the applicable section.
-
 7. When you're finished, select **Place order**.
 
 When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Your products** page, next to your new subscription.
@@ -75,27 +69,27 @@ If you don't see any plans on the **Upgrade** tab, it means your plan can't be u
 
 ### Why are there no plans listed to upgrade?
 
-#### You can't upgrade subscriptions now because you have more users than licenses.
+#### You can't upgrade subscriptions now because you have more users than licenses
 
 To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have
 purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
 
-#### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available.
+#### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available
 
 For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are
 provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
 
 If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../admin/contact-support-for-business-products.md).
 
-#### You can't upgrade plans because another plan is in the process of being upgraded or is pending a credit check.
+#### You can't upgrade plans because another plan is in the process of being upgraded or is pending a credit check
 
 Wait until the credit check has been completed before upgrading plans. Credit checks can take up to two working days.
 
-#### Currently, this subscription is not eligible to upgrade.
+#### Currently, this subscription is not eligible to upgrade
 
 You can [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
 
-#### I see a different message than what's listed here.
+#### I see a different message than what's listed here
 
 You can [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
 
@@ -141,9 +135,9 @@ When you upgrade plans automatically by using the **Switch plans** button (or th
 
 ### Access to services
 
- **Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
+**Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
   
- **Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
+**Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
   
 ### Users and licenses
 
@@ -168,8 +162,7 @@ The day your plan upgrade is complete, the billing on your old subscription will
 
 [Call Microsoft support](../../admin/contact-support-for-business-products.md)
 
-## Related articles
+## Related content
 
-[Change plans manually](change-plans-manually.md)
-
-[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md)
+[Change plans manually](change-plans-manually.md) (article)\
+[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md) (article)

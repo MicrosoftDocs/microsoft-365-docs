@@ -5,17 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: presharm
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
+ms.date: 03/17/2021
 ---
 
 # Understand the proposal workflow
@@ -218,13 +223,10 @@ This section shows a list of all items included in the proposal. The list can in
 - **Supplemental terms** A list of any amendments to the MCA that
     contain terms for your organization. For example, this list might
     include HIPAA or GDPR terms.
-
 - **Purchase now** A list of items that you pay for during checkout at
     the end of the proposal acceptance workflow.
-
 - **Discounts (applied to future charges)** A list of discounts that
     you receive as part of the proposal.
-
 - **Included** A list of items included as part of the proposal
     package at no additional charge. Some of these items might have a
     cost associated with them in the future.
@@ -234,7 +236,7 @@ This section shows a list of all items included in the proposal. The list can in
 This section shows the number of items being paid for, the subtotal, estimated
 taxes, and the total amount for the order.
 
-To place the order, select **Place order** or **Accept agreement & place
+To place the order, select **Place order** or **Accept agreement &amp; place
 order**.
 
 After you place the order, you receive a confirmation with next steps to

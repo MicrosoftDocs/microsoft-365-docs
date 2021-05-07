@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,10 +15,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: 
-search.appverid:
+ms.custom:
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn how to upgrade from Microsoft Teams Free to a new Microsoft 365 for business subscription."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
@@ -35,7 +36,7 @@ You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free org
 
 To begin the process, get your underlying work or school account ID. This account ID is different from the email address that you use to access Microsoft Teams Free.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank"><https://account.activedirectory.windowsazure.com></a>
 2. In the header, select the profile icon. Your account ID is displayed below your name, and ends with *.onmicrosoft.com*.\
     Your admin email address will look like *admin@yourfreeorgname.onmicrosoft.com*.
 

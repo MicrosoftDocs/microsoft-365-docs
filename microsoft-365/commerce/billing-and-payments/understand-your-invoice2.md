@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +13,15 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn how to interpret the charges, billing, and payment information on your Microsoft 365 for business bill or invoice, and how to change the purchase order number."
+ms.date: 05/04/2021
 ---
 
 # Understand your bill or invoice for Microsoft 365 for business
@@ -104,6 +101,7 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -115,16 +113,16 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 1. On the **Products** tab, select the subscription that you want to change.
 
-1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**. 
+1. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**.
 
 1. At the bottom of the **Edit details for paying by voice** pane, enter your PO number, and then select **Save**.
 
-## Related articles
+## Related content
 
-[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md)
-
-[Minecraft: Education Edition payment options](/education/windows/school-get-minecraft)
+[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)\
+[Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)
