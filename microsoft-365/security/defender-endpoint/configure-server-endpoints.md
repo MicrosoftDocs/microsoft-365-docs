@@ -101,15 +101,9 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     1. Run the installation package to install the application. 
  
 4. Select **Download onboarding package** and save the .zip file.
-5. Follow the steps provided in the onboarding steps section. 
+5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 
-
-#### Option 2: Onboard through Microsoft Endpoint Manager version 2002 and later
-
-You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsoft Endpoint Manager version 2002 and later. For more information, see [Microsoft Defender for Endpoint in Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
-
-After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-server-2008r2.md#configure-and-update-system-center-endpoint-protection-clients).
 
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
@@ -120,12 +114,12 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. Select **Windows Server 1803 and 2019**.
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
-4. Follow the steps provided in the onboarding steps section. 
+4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section. 
 
 
 ## Onboarding steps
 
-1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](#onboarding-tools-and-methods) for your server.
+1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
 
 2. (Only applicable if you're using a third-party anti-malware solution). You'll need to apply the following Microsoft Defender AV passive mode settings. Verify that it was configured correctly:
 
