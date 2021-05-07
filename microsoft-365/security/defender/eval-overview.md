@@ -53,4 +53,12 @@ add table that describes the architecture
 
 ## Evaluation process
 
+describe the process
+
 ![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
+
+In this illustration . . . or table that describes the illustration
+
+
+## Training
+Training that his helpful to complete before creating an evaluation environment and piloting these capabilities . . .
