@@ -1,5 +1,5 @@
 ---
-title: get model and primed library information
+title: Get model and primed library information
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ localization_priority: Priority
 description: REST API - info about where model applied
 ---
 
-# Apply model to one or more libraries
+# Get model and primed library information
 
 Use to get information about a model and the library where it has been applied. (see [example](#examples)).
 
