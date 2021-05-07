@@ -216,11 +216,14 @@ A label policy consists of:
 - The users and groups that will be assigned the policy with labels.
 - The scope of the policy and policy settings for that scope (such as default label for files and emails).
 
-You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there is a conflict in settings from multiple policies, the setting from the policy with the highest priority is applied. In other words, the highest priority wins for each setting.
+You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there is a conflict in settings from multiple policies, the settings from the policy with the highest priority (lowest position) is applied. In other words, the highest priority wins for each setting.
 
-If you're not seeing the label or label policy setting behavior that you expect for a user or group, check the order of the sensitivity label policies. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
+If you're not seeing the label or label policy setting behavior that you expect for a user or group, check the order of the sensitivity label policies. You might need to move the policy down. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
 
 ![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
+
+> [!NOTE]
+> When there is a conflict of settings for a user who has multiple policies assigned, the settings from the policy with the highest priority (lowest position) is applied.
 
 If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention labels](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
