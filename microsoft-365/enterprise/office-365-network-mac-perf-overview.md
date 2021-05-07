@@ -58,6 +58,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 For this option, neither Windows Location Services nor Wi-Fi are required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location.
 
+
 You also need to add locations in the **Locations** page or to import them from a CSV file. The locations added must include your office LAN subnet information.
 
 This option allows you to have multiple offices defined within a city.
@@ -66,7 +67,7 @@ All test measurements from client machines include the LAN subnet information, w
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign-in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there is a downloaded Connectivity test EXE. They need to open and execute that. Once the tests are completed, the test result is uploaded to the Admin Center.
+For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there is a downloaded Connectivity test EXE. They need to open and execute that. Once the tests are completed, the test result is uploaded to the Admin Center.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they are shown at the city location only.
 
@@ -89,7 +90,7 @@ Many enterprises have network perimeter configurations which have grown over tim
 
 ## How we can solve these challenges
 
-Enterprises can improve general user experience and secure their environment by following [Office 365 connectivity principles](./microsoft-365-network-connectivity-principles.md) and by using the Microsoft 365 Admin Center network connectivity feature. In most cases, following these general principles will have a significant positive impact on end user latency, service reliability and overall performance of Microsoft 365.
+Enterprises can improve general user experience and secure their environment by following [Office 365 connectivity principles](./microsoft-365-network-connectivity-principles.md) and by using the Microsoft 365 Admin Center network connectivity feature. In most cases, following these general principles will have a significant positive impact on end-user latency, service reliability and overall performance of Microsoft 365.
 
 Microsoft is sometimes asked to investigate network performance issues with Microsoft 365 for large enterprise customers, and these frequently have a root cause related to the customer's network perimeter infrastructure. When a common root cause of a customer network perimeter issue is found we seek to identify simple test measurements that identifies it. A test with a measurement threshold that identifies a specific problem is valuable because we can test the same measurement at any location, tell whether this root cause is present there and share it as a network insight with the administrator.
 
@@ -222,4 +223,5 @@ You require a  license that provides access to the Microsoft 365 admin center.
 
 [Microsoft 365 connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+

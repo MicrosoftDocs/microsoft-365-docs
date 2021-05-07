@@ -1,6 +1,331 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/contact-support-for-business-products.md",
+      "redirect_url": "/microsoft-365/business-video/get-help-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-groups-activity-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-groups-activity-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-device-usage-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-device-usage-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/yammer-activity-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/yammer-activity-report-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/sharepoint-site-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/sharepoint-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/sharepoint-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/onedrive-for-business-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/onedrive-for-business-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/onedrive-for-business-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/office-365-groups.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/office-365-groups-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/microsoft365-apps-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft365-apps-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/microsoft-office-activations.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/microsoft-office-activations-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/forms-pro-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/forms-pro-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/forms-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/forms-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/email-apps-usage.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/email-apps-usage-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/email-activity.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/email-activity-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/active-users.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/active-users-ww",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/manage-messages.md",
+      "redirect_url": "/microsoft-365/admin/manage/message-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/get-started-with-office-365.md",
+      "redirect_url": "/microsoft-365/business/microsoft-365-business-start",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/types-of-users.md",
+      "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/share-sites-with-external-users.md",
+      "redirect_url": "/sharepoint/change-external-sharing-site?WT.mc_id=365AdminCSH_globalsearch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/customize-help-desk.md",
+      "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/ways-to-manage-contacts.md",
+      "redirect_url": "https://docs.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/azure-ad-roles-in-the-mac.md",
+      "redirect_url": "/azure/active-directory/roles/permissions-reference#available-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/services-in-china/view-your-bill-or-get-a-fapiao.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/services-in-china/buy-or-try-subscriptions.md",
+      "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/switch-to-a-different-plan.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/switch-plans-manually.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/why-can-t-i-switch-plans.md",
+      "redirect_url": "/microsoft-365/commerce/subscriptions/upgrade-to-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-aws.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-cloudflare.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-crazy-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dnsmadeeasy.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dreamhost.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-dyn-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-enomcentral.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-freenom.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-godaddy.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-google-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-hostgator.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-mydomain.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-namecheap.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-name-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-names-co-uk.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-netregistry.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-network-solutions.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-ovh.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-register365.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-register-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-web-com.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-wix.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-yahoo-small-business.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-for-azure-dns-zones.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-for-domain-managed-by-google-enom.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "microsoft-365/admin/dns/set-up-dns-records-at-easydns.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-1-1-internet.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-aws.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-bluehost.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-google-domains.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-hostgator.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-mydomain.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-namecheap.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/change-nameservers-at-network-solutions.md",
+      "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
       "redirect_url": "/microsoft-365/business-video/admin-center-overview",
       "redirect_document_id": false
@@ -3346,6 +3671,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/onboard.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-query-language.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-query-language",
       "redirect_document_id": false
@@ -3494,6 +3824,26 @@
       "source_path": "microsoft-365/security/defender-endpoint/advanced-hunting-assignedipaddress-function.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-assignedipaddress-function",
       "redirect_document_id": false
+    },
+	{
+      "source_path": "microsoft-365/security/defender-endpoint/mac-sysext-preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-devicetvmsoftwareinventory-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee-step-4",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365-docs-pr/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
+      "redirect_document_id": true
     }
   ]
 }

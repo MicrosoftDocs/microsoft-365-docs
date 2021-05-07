@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -138,6 +136,8 @@
           href: data-classification-content-explorer.md
         - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
+        - name: Labeling actions reported in Activity explorer
+          href: data-classification-activity-explorer-available-events.md
         - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
@@ -208,7 +208,7 @@
             - name: Compare versions of OME
               href: ome-version-comparison.md
             - name: Office 365 Message Encryption FAQ
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: How Exchange Online secures your email secrets
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
@@ -235,8 +235,8 @@
       items: 
         - name: Learn about DLP
           items:
-          - name: Learn about DLP
-            href: data-loss-prevention-policies.md
+          - name: Learn about data loss prevention
+            href: dlp-learn-about-dlp.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Use Data Loss Prevention policies for non-Microsoft cloud apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP policy conditions and exceptions (preview)
+            - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
+            - name: Data Loss Prevention policy tips reference
+              href: dlp-policy-tips-reference.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -358,7 +360,7 @@
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data

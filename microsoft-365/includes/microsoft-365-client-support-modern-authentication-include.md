@@ -7,7 +7,6 @@
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|✔|✔|N/A|N/A|✔|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|✔|✔|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|

@@ -23,6 +23,8 @@
           href: service-description/device-requirements.md
         - name: Device images
           href: service-description/device-images.md
+        - name: Device names
+          href: service-description/device-names.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
@@ -46,6 +48,8 @@
           href: service-description/support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostic logs
+          href: service-description/diagnostic-logs.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
         - name: Application control
@@ -83,6 +87,8 @@
           href: get-ready/mapped-drives.md
         - name: Prepare printing resources
           href: get-ready/printing.md
+        - name: Address device names
+          href: get-ready/address-device-names.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -100,6 +106,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Localize the user experience
           href: get-started/localization.md
+        - name: Validate new devices
+          href: get-started/validate-device.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
@@ -157,6 +165,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: Change device profile
           href: working-with-managed-desktop/change-device-profile.md
+        - name: Remove devices
+          href: working-with-managed-desktop/remove-devices.md
         - name: Configurable settings
           href: working-with-managed-desktop/config-setting-overview.md
           items: 

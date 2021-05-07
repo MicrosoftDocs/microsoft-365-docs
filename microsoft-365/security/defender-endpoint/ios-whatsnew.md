@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on iOS
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on iOS.
-keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -29,6 +29,12 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## 1.1.15140101
+
+- The Microsoft Defender ATP product name has now been updated to Microsoft Defender for Endpoint in the app store.
+- Improved sign-in experience.
+- Bug fixes.
 
 ## 1.1.15010101
 

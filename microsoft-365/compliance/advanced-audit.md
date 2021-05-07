@@ -58,9 +58,12 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> At this time, this event isn't available in Office 365 and Microsoft 365 Government environments. This includes GCC, GCC High, and DoD environments.
 
 ### MailItemsAccessed
 

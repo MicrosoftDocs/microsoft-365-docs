@@ -33,14 +33,14 @@ To help you find the information you need more quickly, Microsoft improvement ac
 
 * Identity (Azure Active Directory accounts & roles)
 * Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
+* Apps (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 
 >[!NOTE]
 >In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
+![Secure Score homepage](../../media/secure-score/secure-score-home-page.png)
 
 ## Check your current score
 
@@ -56,7 +56,7 @@ The following are scores you can add to your view of your overall score to give 
 
 This view is what it will look like if you've included all possible score views:
 
-![Your secure score including planned score, current license score, and achievable score](../../media/secure-score/your-secure-score.png)
+![Your secure score including planned score, current license score, and achievable score](../../media/secure-score/secure-score-achievable.png)
 
 ## Take action to improve your score
 
@@ -76,7 +76,7 @@ To complete the action, you have a few options:
 
 - Select **Manage** to go the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
 
-- Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket that will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 security center and ServiceNow integration](./tickets.md).
+- Select **Share** to copy the direct link to the improvement action. You can also choose the platform to share the link, such as email, Microsoft Teams, or Microsoft Planner.
 
 Add **Notes** to keep track of progress or anything else you want to comment on. If you add your own **tags** to the improvement action, you can filter by those tags.
 

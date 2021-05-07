@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -31,8 +31,6 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-## Remediation actions
-
 During and after an automated investigation in Microsoft 365 Defender, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
 
 > [!IMPORTANT]
@@ -41,7 +39,7 @@ During and after an automated investigation in Microsoft 365 Defender, remediati
 > - [How threats are remediated on devices](../defender-endpoint/automated-investigations.md)
 > - [Threats and remediation actions on email & collaboration content](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender: 
+The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender. 
 
 |Device (endpoint) remediation actions  |Email remediation actions  |
 |:---------|:---------|
@@ -55,7 +53,7 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 The following table lists possible verdicts and outcomes:
 
-| Verdict    | Area    | Outcomes|
+| Verdict    | Affected entities    | Outcomes|
 |------|------|------|
 | Malicious    | Devices (endpoints)    | Remediation actions are taken automatically (assuming your organization's [device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) are set to **Full - remediate threats automatically**)|
 | Malicious    | Email content (URLs or attachments) | Recommended remediation actions are pending approval|
@@ -65,17 +63,17 @@ The following table lists possible verdicts and outcomes:
 
 ## Remediation actions that are taken manually
 
-In addition to remediation actions that follow automated investigations, your security operations team can take certain remediation actions manually. These include the following actions:
+In addition to remediation actions that follow automated investigations, your security operations team can take certain remediation actions manually. These include the following:
 
-- Manual device action, such as device isolation or file quarantine.
-- Manual email action, such as soft-deleting email messages. 
-- [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md) action on devices or email.
-- [Explorer](../office-365-security/threat-explorer.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email.
-- Manual [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task.
-- Live response action with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file. 
+- Manual device action, such as device isolation or file quarantine
+- Manual email action, such as soft-deleting email messages 
+- [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md) action on devices or email
+- [Explorer](../office-365-security/threat-explorer.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email
+- Manual [live response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task
+- Live response action with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file
 
 ## Next steps
 
 - [Visit the Action center](m365d-action-center.md)
-- [View and manage remediation actions]( m365d-autoir-actions.md)
-- [Handle false positives/negatives in automated investigation and response capabilities](m365d-autoir-report-false-positives-negatives.md)
+- [View and manage remediation actions](m365d-autoir-actions.md)
+- [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)

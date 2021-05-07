@@ -150,3 +150,11 @@ This report helps organizations understand:
 ## We want to hear from you
 
 Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
+
+## Related content
+
+[Monitor Microsoft 365 activity by using reports](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (article)
+
+[Enable Microsoft 365 usage analytics](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (article)
+
+[Overview of the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (video)

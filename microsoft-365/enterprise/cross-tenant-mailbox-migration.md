@@ -431,6 +431,10 @@ Once the mailbox moves from source to target, you should ensure that the on-prem
 
 Yes, you should update the targetAddress (RemoteRoutingAddress/ExternalEmailAddress) of the source on-premises users when the source tenant mailbox moves to target tenant.  While mail routing can follow the referrals across multiple mail users with different targetAddresses, Free/Busy lookups for mail users MUST target the location of the mailbox user. Free/Busy lookups will not chase multiple redirects. 
 
+**Do Teams meetings migrate cross-tenant?**  
+
+The meetings will move however the Teams meeting URL does not update when items migrate cross-tenant. Since the URL will be invalid in the target tenant you will need to remove and recreate the Teams meetings.
+
 **Does the Teams chat folder content migrate cross-tenant?**  
 
 No, the Teams chat folder content does not migrate cross-tenant.  

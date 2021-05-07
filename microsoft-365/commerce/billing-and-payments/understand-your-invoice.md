@@ -25,6 +25,13 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
+To view and print your invoice:
+
+1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
+2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
+
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
+
 If you only have a Microsoft 365 subscription, see [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
@@ -131,13 +138,6 @@ Payment instructions depend on your payment method and are provided at the botto
 
 - **Service period:** The time period during which you're charged to use the service.
 - **Billing period:** The time period since the last invoice date.
-
-### How do I view and print my bill?
-
-1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
-2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
-
-To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ### Why don't I see Azure prepayment as a payment method?
 

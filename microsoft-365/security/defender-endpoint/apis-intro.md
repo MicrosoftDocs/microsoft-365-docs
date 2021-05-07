@@ -1,8 +1,8 @@
 ---
 title: Access the Microsoft Defender for Endpoint APIs
 ms.reviewer: 
-description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender ATP capabilities
-keywords: apis, api, wdatp, open api, microsoft defender atp api, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
+description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities
+keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -56,7 +56,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
   2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'. 
   3. Create a key for this Application.
   4. Get token using the application with its key.
-  5. Use the token to access Microsoft Defender ATP API
+  5. Use the token to access the Microsoft Defender for Endpoint API
 
      For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).
 
@@ -69,7 +69,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
   1. Create AAD Native-Application.
   2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc. 
   3. Get token using the application with user credentials.
-  4. Use the token to access Microsoft Defender ATP API
+  4. Use the token to access the Microsoft Defender for Endpoint API
 
      For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).
 

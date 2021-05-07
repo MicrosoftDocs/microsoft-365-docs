@@ -1,7 +1,7 @@
 ---
 title: Onboard devices without Internet access to Microsoft Defender for Endpoint
 ms.reviewer: 
-description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender ATP sensor
+description: Onboard devices without Internet access so that they can send sensor data to the Microsoft Defender for Endpoint sensor
 keywords: onboard, servers, vm, on-premise, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -69,7 +69,7 @@ For more information about onboarding methods, see the following articles:
       - Configure Azure Log Analytics IP as a proxy
       - Azure Log Analytics Workspace Key & ID
 
-    - Azure Security Center (ASC)
+    - Azure Defender
       - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Threat Detection \> Allow Defender for Endpoint to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
