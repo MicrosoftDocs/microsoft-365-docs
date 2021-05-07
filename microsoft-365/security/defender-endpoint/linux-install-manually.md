@@ -403,3 +403,6 @@ When upgrading your operating system to a new major version, you must first unin
 ## Uninstallation
 
 See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint on Linux from client devices.
+
+## See also
+- [Investigate agent health issues](health-status.md)
