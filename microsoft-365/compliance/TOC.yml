@@ -506,42 +506,34 @@
           items: 
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
           - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Export search results
             href: export-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
-          - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
-          - name: Bulk edit multiple content searches
-            href: bulk-edit-content-searches.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Check your search query for errors
-            href: check-your-content-search-query-for-errors.md
+          - name: Configure permissions filtering for content search
+            href: permissions-filtering-for-content-search.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-        - name: Configure content search
-          items: 
-          - name: Configure permissions filtering for content search
-            href: permissions-filtering-for-content-search.md
-          - name: Change the size of PST files when exporting search results
-            href: change-the-size-of-pst-files-when-exporting-results.md
-          - name: Disable reports when you export search results
-            href: disable-reports-when-you-export-content-search-results.md
         - name: Content search reference
           items: 
-          - name: Content search limits
+          - name: eDiscovery search limits
             href: limits-for-content-search.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
           - name: Partially indexed items
@@ -550,10 +542,18 @@
             href: investigating-partially-indexed-items-in-ediscovery.md
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
-          - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Change the size of PST files when exporting search results
+            href: change-the-size-of-pst-files-when-exporting-results.md
+          - name: Disable reports when you export search results
+            href: disable-reports-when-you-export-content-search-results.md
+          - name: Check your search query for errors
+            href: check-your-content-search-query-for-errors.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
+          - name: Bulk edit multiple content searches
+            href: bulk-edit-content-searches.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -578,12 +578,16 @@
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: Core eDiscovery reference
           items:
+          - name: eDiscovery search limits
+            href: limits-for-content-search.md
           - name: Assign eDiscovery permissions
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Content stored in mailboxes for eDiscovery
             href: what-is-stored-in-exo-mailbox.md
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
