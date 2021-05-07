@@ -18,7 +18,7 @@ description: "Learn how to use SharePoint Syntex to identify contract files and 
 
 Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [SharePoint Syntex](index.md) to create a document understanding model and applying it to a document library.
 
-## Process overview
+## Overview
 
 [Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
 
@@ -34,7 +34,7 @@ Your organization needs a way to identify and classify all contract documents fr
 
 5. Additionally, if you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
 
-## Detailed steps to train your model
+## Steps to create and train your model
 
 ### Create a Contract model
 
