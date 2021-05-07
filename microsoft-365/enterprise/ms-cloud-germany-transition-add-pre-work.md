@@ -128,7 +128,7 @@ Failure to do so may result in service or client failure at a later phase of cus
 **Applies to**: Exchange Online customers using POP3/IMAP4 protocols to connect their client devices to Exchange Online<br>
 **When applied**: Any time before phase 5 starts
 
-Users using device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, SMTP are required to manually update their client devices to switch to the [Exchange Online server names](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes) if they want to pursue with these protocols.
+Users using device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, and SMTP are required to manually update their client devices to switch to the [Exchange Online server names](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes) if they want to pursue these protocols.
 
 Pre-communicate this dependency to users of these protocols and ensure they either switch to use Outlook mobile or Outlook on the web during this migration. Failure to update the client endpoints will result in client connection failures with Microsoft Cloud Deutschland when mailboxes are migrated.
 
