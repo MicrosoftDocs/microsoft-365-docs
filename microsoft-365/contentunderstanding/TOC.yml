@@ -44,16 +44,6 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
-        - name: Manage contracts in Microsoft 365
-          items:
-            - name: Overview
-              href: solution-manage-contracts-in-microsoft-365.md 
-            - name: Step 1. Use SharePoint Syntex
-              href: solution-manage-contracts-step1.md
-            - name: Step 2. Use Microsoft Teams
-              href: solution-manage-contracts-step2.md
-            - name: Step 3. Power Automate
-              href: solution-manage-contracts-step3.md
 
     - name: Setup and administration
       items:
