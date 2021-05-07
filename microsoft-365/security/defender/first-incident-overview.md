@@ -52,6 +52,17 @@ Make sure your organization and Microsoft 365 tenant is [prepared for incident h
 
 ## See also
 
+Incident response guidance for Microsoft 365 Defender:
+
 - [Incidents overview](incidents-overview.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+
+Additional examples of first incident responses:
+
+- [Phishing email](first-incident-path-phishing.md)
+- [Identity-base attack](first-incident-path-identity.md)
+
+[Detailed incident response playbooks](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

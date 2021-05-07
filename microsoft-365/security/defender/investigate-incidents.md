@@ -158,7 +158,7 @@ As needed:
 - [Investigate the alerts of an incident](investigate-alerts.md)
 - [Investigate the users of an incident](investigate-users.md)
 
-## Related topics
+## See also
 
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)

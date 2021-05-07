@@ -166,11 +166,11 @@ Daily, monthly, quarterly, and annual tasks can be used to update or refine proc
 
 ## Next steps
 
-If you are new to security analysis and incident response:
+**If you are new** to security analysis and incident response:
 
 - See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the the Microsoft 365 security center with an example of an attack.
 
-If you are familiar with security analysis and incident response:
+**If you have experience** with security analysis and incident response:
 
 - Get started with the incident queue from the **Incidents** page of the Microsoft 365 security center. From here, you can:
 
@@ -178,4 +178,7 @@ If you are familiar with security analysis and incident response:
 
   - [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments based on your incident management workflow.
 
-  - Perform an [investigation](investigate-incidents.md) of an incident.
+  - Perform [investigations](investigate-incidents.md) of incidents.
+
+- See these [incident response playbooks](https://docs.microsoft.com/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
+

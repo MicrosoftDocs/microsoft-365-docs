@@ -100,6 +100,8 @@
                    href: investigate-alerts.md    
                  - name: Investigate users 
                    href: investigate-users.md                  
+                 - name: Incident response playbooks
+                   href: https://docs.microsoft.com/security/compass/incident-response-playbooks
                  - name: Respond to your first incident
                    items: 
                     - name: Introduction
@@ -120,8 +122,6 @@
                           href: first-incident-path-identity.md
               - name: Get email notifications
                 href: get-incident-notifications.md
-              - name: Incident response playbooks
-                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
        - name: Automated investigation and response
          items: 
               - name: Overview of automated investigation and response
