@@ -145,7 +145,7 @@ For customers that opt-in for migration - we will move all Exchange Online mailb
 
 [Microsoft 365 interactive datacenter map](https://office.com/datamaps)
 
-[Microsoft 365 Support](../admin/contact-support-for-business-products.md)
+[Microsoft 365 Support](../business-video/get-help-support.md)
 
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

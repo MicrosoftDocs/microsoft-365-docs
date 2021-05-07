@@ -32,7 +32,7 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
+**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
 
 ## Before you begin
 
