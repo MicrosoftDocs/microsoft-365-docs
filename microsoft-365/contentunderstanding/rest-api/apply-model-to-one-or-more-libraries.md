@@ -1,5 +1,5 @@
 ---
-title: apply model to one or more libraries
+title: Apply model to one or more libraries
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
