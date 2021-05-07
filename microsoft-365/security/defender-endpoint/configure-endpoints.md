@@ -32,6 +32,10 @@ ms.technology: mde
 
 Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
+In general, you'll identify the Windows device you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
+
+![Image of onboarding tools and methods](images/onboarding-tools-methods.png)
+
 ## Endpoint onboarding tools
 Depending on the Windows endpoint you want to onboard, use the corresponding tool or method described in the following table.
 
