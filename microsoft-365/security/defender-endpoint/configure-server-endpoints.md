@@ -81,18 +81,10 @@ Verify that Microsoft Defender Antivirus version 4.18.2104.120 or later is insta
 > [!NOTE]
 > If System Center Endpoint Protection (SCEP) is installed on a machine, it must be removed first, otherwise the installation will not proceed. For instructions on environments with managed SCEP, refer to MECM migration scenarios. 
 
-### Onboarding options
-
-There are 2 options on how to onboard Server 2012 R2 SP1 and Windows Server 2016
-
-- **Option 1**: Onboard through Microsoft Defender Security Center
-- **Option 2**: Onboard through Microsoft Endpoint Manager version 2002 and later
 
 
 
-#### Option 1: Onboard through Microsoft Defender Security Center
-
-Download the installation and onboarding packages from Microsoft Defender Security Center:
+### Download installation and onboarding packages 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. Select **Windows Server 2012 R2 and 2016**.
