@@ -223,7 +223,7 @@ If you're not seeing the label or label policy setting behavior that you expect 
 ![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
 
 > [!NOTE]
-> Remember: When there is a conflict of settings for a user who has multiple policies assigned, the settings from the policy with the highest priority (lowest position) is applied.
+> Remember: When there is a conflict of settings for a user who has multiple policies assigned, the setting from the policy with the highest priority (lowest position) is applied.
 
 ## Sensitivity labels and Azure Information Protection
 
