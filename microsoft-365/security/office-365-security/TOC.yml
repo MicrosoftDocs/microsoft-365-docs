@@ -38,8 +38,14 @@
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 security center overview
          href: ../defender/overview-security-center.md
-       - name: Threat Explorer (and real-time detections)
-         href: threat-explorer.md
+       - name: Threat Explorer for Defender for Office 365
+         items:
+            - name: Threat hunting in Threat Explorer
+              href: threat-hunting-in-threat-explorer.md
+            - name: Email security with Threat Explorer
+              href: email-security-in-microsoft-defender.md          
+            - name: Threat Explorer and Real-time detections basics
+              href: real-time-detections.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
