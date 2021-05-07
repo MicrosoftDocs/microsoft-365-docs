@@ -16,16 +16,16 @@ description: "Learn how to use Power Automate to create your flow to process you
 
 # Step 3. Use Power Automate to create your flow to process your contracts
 
-Now that you've created your Contract Management channel and have attached your SharePoint document library, the next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
-For your contracts management solution, you want to create a Power Automate flow to do the following:
+For your contracts management solution, you want to create a Power Automate flow to do the following actions:
 
 -  After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
 - For approved contracts, the contract information is posted to a tab for payment processing.
 - For rejected contracts, the team is notified for further analysis. 
 
-The following shows the Power Automate flow for the contract management solution.
+The following diagram shows the Power Automate flow for the contract management solution.
 
 ![Flow diagram showing the entire solution.](../media/content-understanding/flow-entire-process.png)
 
@@ -46,7 +46,7 @@ The next step is to create an adaptive card stating that the contract is waiting
 
 ![Create adaptive card for review.](../media/content-understanding/adaptive-card.png)
 
-The following is the JSON code used for this step in the Power Automate flow.
+The following code is the JSON used for this step in the Power Automate flow.
 
 ```JSON
 {
@@ -140,7 +140,7 @@ When a contract has been approved, the following things occur:
 
    ![Flow status approved.](../media/content-understanding/status-approved.png)
 
-- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).
+- In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed. This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).
 
    ![Contract moved to Pay Out.](../media/content-understanding/for-payout.png)
 
@@ -155,7 +155,7 @@ When a contract has been approved, the following things occur:
    ![Adaptive card approval.](../media/content-understanding/adaptive-card.png)
 
 
-   The following is the JSON code used for this step in the Power Automate flow.
+   The following code is the JSON used for this step in the Power Automate flow.
 
 ```JSON
 { 
@@ -251,7 +251,7 @@ When a contract has been rejected, the following things occur:
 
    ![Flow status rejected.](../media/content-understanding/reject-flow-item.png)
 
-The following is the JSON code used for this step in the Power Automate flow.
+The following code is the JSON used for this step in the Power Automate flow.
 
 ```JSON
 { 
