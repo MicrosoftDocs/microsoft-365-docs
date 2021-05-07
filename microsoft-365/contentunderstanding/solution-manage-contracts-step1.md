@@ -168,7 +168,6 @@ You can by test your Contract model on example files it hasn’t seen before. Th
 
 3. When done, select **Exit Training**.
 
-
 ### Apply your model to a document library
 
 To apply your model to to a SharePoint document library:
@@ -177,47 +176,22 @@ To apply your model to to a SharePoint document library:
 
    ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
 
-2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.
-
-    ![Select a site](../media/content-understanding/site-search.png)</br>
+2. On the **Add Contract** panel, select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it. Select **Add**.
 
     > [!NOTE]
-    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.</br>
+    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
 
-3. After selecting the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.</br>
+3. After you select the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.</br>
 
-    ![Select a doc library](../media/content-understanding/select-doc-library.png)</br>
+4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as default** check box.
 
-4. Since the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</br>
+5. Select **Add** to apply the model to the library.
 
-    ![Library view](../media/content-understanding/library-view.png)</br>
+6. On the **Models > Contract** page, in the **Libraries with this model** section, you'll see the URL to the SharePoint site listed.</br>
 
-5. Select **Add** to apply the model to the library. 
-6. On the model home page, in the **Libraries with this model** section, you should see the URL to the SharePoint site listed.</br>
-
-    ![Selected library](../media/content-understanding/selected-library.png)</br>
-
-7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that the document library has a model applied to it.
-
-    ![Information view](../media/content-understanding/info-du.png)</br> 
-
-    You can the select **View active models** to see details about any models that are applied to the document library.
-
-8. In the **Active models** pane, you can see the models that are applied to the document library. Select a model to see more details about it, such as a description of the model, who published the model, and if the model applies a retention label to the files it classifies.
-
-    ![Active models pane](../media/content-understanding/active-models.png)</br> 
+    ![Screenshot of the Contract home page showing the Libraries with this model section.](../media/content-understanding/contract-libraries-with-this-model.png)
 
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
-
-The model identifies any files with model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file.
-
-
-For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
-
-
-From the Contracts SharePoint library, 
-
-
 
 ## Next step
 
