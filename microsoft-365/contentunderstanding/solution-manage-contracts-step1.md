@@ -117,16 +117,59 @@ You can by test your Contract model on example files it hasn’t seen before. Th
 
 #### Label the entity you want to extract
 
-Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
+When you create the extractor, the extractor page opens. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2019*). and then click **Save**.  You should see the value display from the file in the Labeled examples list, under the **Label** column.
-2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
-3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
+![Advanced settings](../media/content-understanding/client-extractor-labeled-examples.png) 
 
-    ![Advanced settings](../media/content-understanding/select-service-start-date.png) 
+To label the entity:
 
- 
-Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
+1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Client*, you highlight the client value in the first file (in this example, *Best For You Organics*), and then select **Save**. You'll see the value display from the file in the **Labeled examples** list, under the **Label** column.
+
+2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save**, and then select another file from the **Labeled examples** list.
+
+3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all the files.
+
+After you've labeled the files, a notification banner displays informing you to move to training. You can choose to label more documents or advance to training.
+
+## Add an explanation
+
+You can create an explanation that provides a hint about the entity format itself and variations it might have in the example files. For example, a date value can be in a number of different formats, such as:
+
+- 10/14/2019
+- October 14, 2019
+- Monday, October 14, 2019
+
+To help identify the *Contract Start Date* you can create a pattern explanation.
+
+3. In the **Explanations** section, select **New** and then **Blank**.
+
+4. On the **Create an explanation** page:
+
+    a. In the **Name** field, type the name of the explanation (such as *Date*).
+
+    b. In the **Explanation type** field, select **Pattern list**.
+
+    c. In the **Value** field, provide the date variation as they appear in the sample files. For example, if you have date formats that appear as 0/00/0000, you enter any variations that appear in your documents, such as:
+
+    - 0/0/0000
+    - 0/00/0000
+    - 00/0/0000
+    - 00/00/0000
+
+4. Select **Save and train**.
+
+#### Test your model again
+
+You can by test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
+
+1. On the **Models > Contract > Contract classifier** page, select the **Test** tab. This runs the model on your unlabeled example files.
+
+2. In the **Test files** list, your example files display and shows if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
+
+3. When done, select **Exit Training**.
+
+
+
 For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
 
 
