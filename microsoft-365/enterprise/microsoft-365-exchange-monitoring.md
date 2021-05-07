@@ -39,7 +39,7 @@ Here is an example of the Exchange Online monitoring page in the Microsoft 365 a
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png" alt-text="The Exchange Online monitoring page in the Microsoft 365 admin center":::
 
-With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by by organization level scenario. You can also see health of priority account scenarios.
+With the **Exchange Online** monitoring page, you can see whether the Exchange Online service is healthy or not and whether there are any associated incidents or advisories. With Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization level scenario. You can also see health of priority account scenarios.
 
 ## Requirements
 
@@ -78,7 +78,7 @@ You can also monitor Exchange Online health for the following scenarios:
 
 ![An example of monitoring Exchange health for mail delivery](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
 
-For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios shows the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
+For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
 
 ### Priority Accounts Monitoring Scenarios
 
@@ -92,7 +92,7 @@ With Exchange Online priority account monitoring, you can view the health for th
 - Folder hierarchy
 - Recoverable items
 
-The Exchange licensing sceanrio checks if the priority account is not able to login due to invalid license issues which can be addressed by the tenant admin.
+The Exchange licensing scenario checks if the priority account is not able to login due to invalid license issues which can be addressed by the tenant admin.
 
 The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. 
 
@@ -153,7 +153,7 @@ With this new integrated experience, Microsoft's plan is to collect your feedbac
 
 #### 5.	Is this a free (included) or paid (extra) feature? 
 
-This feature a free feature that is in Public preview and only available for customers that meet the requirements in question 1. There isn’t a paid option to receive this content. 
+This is a free feature that is in Public preview and only available for customers that meet the requirements in question 1. There isn’t a paid option to receive this content. 
 
 #### 6.	How do I provide feedback? 
 
