@@ -93,7 +93,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create a subtask or role files that contribute to an playbook or task.
+Create a subtask or role files that contribute to a playbook or task.
 
 - Create the onboarding task, `onboarding_setup.yml`:
 
