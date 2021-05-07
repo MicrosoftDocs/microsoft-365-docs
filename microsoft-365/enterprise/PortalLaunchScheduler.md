@@ -35,7 +35,7 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 
 > [!NOTE]
-> - This will feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021
+> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021
 > - The PowerShell version of this tool is available today
 > - This feature can only be used on modern SharePoint communication sites
 > - You must have site owner permissions for the site to customize and schedule the launch of a portal
