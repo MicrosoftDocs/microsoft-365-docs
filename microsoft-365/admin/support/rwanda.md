@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Rwanda
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](microsoft-365/business-video/get-help-support.md).
 
 ## Phone number
 +225 20 24 24 90

@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Curacao
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](microsoft-365/business-video/get-help-support.md).
 
 ## Phone number
 +1 377 302 1308

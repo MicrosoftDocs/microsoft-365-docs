@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Iraq
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](microsoft-365/business-video/get-help-support.md).
 
 ## Phone number
 +965 2221 9876
