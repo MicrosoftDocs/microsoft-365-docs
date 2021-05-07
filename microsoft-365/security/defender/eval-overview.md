@@ -33,7 +33,7 @@ Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suit
 
 The following illustration . . .
 
-![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)]
+![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
 
 In this illustration:
 - bullet
@@ -42,6 +42,7 @@ In this illustration:
 
 ## Understand Microsoft 365 Defender components
 
+text
 
 ## Microsoft 365 Defender architecture
 
@@ -57,7 +58,9 @@ describe the process
 
 ![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
 
-In this illustration . . . or table that describes the illustration
+In this illustration . . . or table that describes the illustration . . . links to each component overview article
+
+The order is recommended but you can adjust the order based on your business priorities. 
 
 
 ## Training
