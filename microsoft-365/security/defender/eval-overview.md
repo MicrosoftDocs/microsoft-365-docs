@@ -47,9 +47,10 @@ In this illustration:
 
 text 
 
-![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)]
+![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)
 
 add table that describes the architecture
 
 ## Evaluation process
 
+![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
