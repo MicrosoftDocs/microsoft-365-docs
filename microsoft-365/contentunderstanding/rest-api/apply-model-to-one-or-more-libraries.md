@@ -1,5 +1,5 @@
 ---
-title: Apply model to one or more libraries
+title: Apply a model to one or more libraries
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ localization_priority: Priority
 description: REST API - apply model
 ---
 
-# Apply model to one or more libraries
+# Apply a model to one or more libraries
 
 Applies (or syncs) a trained document understanding model to one or more libraries. (see [example](#examples)).
 
