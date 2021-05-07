@@ -113,4 +113,4 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
   
 ## Related content 
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (links)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

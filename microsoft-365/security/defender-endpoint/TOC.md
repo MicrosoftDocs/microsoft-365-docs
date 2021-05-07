@@ -144,6 +144,7 @@
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
+###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
 ###### [Troubleshoot performance issues](linux-support-perf.md)
 ###### [Troubleshoot missing events issues](linux-support-events.md)
@@ -539,6 +540,12 @@
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
 
+###### [Remediation activity]()
+####### [Remediation activity methods and properties](get-remediation-methods-properties.md)
+####### [Get one remediation activity by ID](get-remediation-one-activity.md)
+####### [List all remediation activities](get-remediation-all-activities.md)
+####### [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
+
 ###### [Score]()
 ####### [Score methods and properties](score.md)
 ####### [List exposure score by machine group](get-machine-group-exposure-score.md)
@@ -647,6 +654,6 @@
 ##### [Attack surface reduction rules](troubleshoot-asr.md)
 ##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
 # [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
