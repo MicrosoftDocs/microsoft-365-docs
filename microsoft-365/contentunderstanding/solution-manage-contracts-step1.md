@@ -67,16 +67,50 @@ You need to add at least five example files that are contract documents, and one
 
    ![Screenshot showing the Contracts page with Classify files and run training option highlighted.](../media/content-understanding/key-actions-classify-files.png)
 
-2. In the viewer on the top of the first example file, you'll see text asking if the file is an example of the model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
+2. On the **Models > Contract > Contract classifier** page, in the viewer on the top of the first example file, you'll see text asking if the file is an example of the Contract model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
 
 3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them. 
 
     ![Classifier home page](../media/content-understanding/models-contract-classifier.png) 
 
+#### Add at least one explanation to train the classifier 
 
-2. 
-3. 
-Next, label the files as examples or negative examples. Then, add at least one explanation to train the classifier. For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
+1. On the **Models > Contract > Contract classifier** page, select the **Train** tab.
+
+2. In the **Trained files** section, you'll see a list of the example files that you previously labeled. Select one of the positive files from the list to display it in the viewer.
+
+3. In the **Explanations** section, select **New** and then **Blank**.
+
+4. On the **Create an explanation** page:
+
+    a. In the **Name** field, type the name of the explanation (such as "Agreement").
+
+    b. In the **Explanation type** field, select **Phrase list**, because you add a text string.
+
+    c. In the **Phrase list** box, type the string (such as "AGREEMENT"). You can select **Case sensitive** if the string needs to be case sensitive.
+
+    d. Select **Save and train**.
+
+    ![Screenshot of the Create an explanation panel.](../media/content-understanding/contract-classifier-create-explanation.png) 
+
+#### Test your model
+
+You can by test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
+
+1. On the **Models > Contract > Contract classifier** page, select the **Test** tab. This runs the model on your unlabeled example files.
+
+2. In the **Test Files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
+
+    ![Screenshot of the unlabeled files in the Text Files list](../media/content-understanding/test-on-files.png) 
+
+3. When done, select **Exit Training**.
+
+### Create and train an extractor
+
+
+
+
+For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
 
 
 From the Contracts SharePoint library, 
