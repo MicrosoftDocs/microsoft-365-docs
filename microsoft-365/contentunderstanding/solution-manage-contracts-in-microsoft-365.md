@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.date: 05/10/2021
 ms.collection: m365solution-managecontracts
 ms.service: 
 search.appverid: 
