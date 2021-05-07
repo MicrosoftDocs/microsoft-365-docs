@@ -15,6 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Users who have personal Microsoft accounts can earn Microsoft Rewards points in connection with their work searches if Link AAD with Rewards feature is enabled."
 ---
 
