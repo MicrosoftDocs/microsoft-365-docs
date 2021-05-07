@@ -1,7 +1,7 @@
 ---
 title: "Step 1. Use SharePoint Syntex to identify contract files and extract data"
-ms.author: chuckedmonson
-author: chucked
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
