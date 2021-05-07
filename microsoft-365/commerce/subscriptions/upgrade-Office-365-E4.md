@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,11 +13,11 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: customer-email
-search.appverid:
-- MET150
+ms.custom: 
+- customer-email
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn how to upgrade from an Office 365 E4 subscription."
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
