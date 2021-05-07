@@ -20,6 +20,8 @@ Your organization needs a way to identify and classify all contract documents fr
 
 [Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
 
+## Process overview
+
 1. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract). 
 
 2. Using SharePoint Syntex, create a new document understanding model. Using your example files, you need to [create a classifier](create-a-classifier.md). By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts. For example, [create an "explanation"](create-a-classifier.md#create-an-explanation) that searches for specific strings that are in your contracts, such as *Service Agreement*, *Terms of Agreement*, and *Compensation*. You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings. When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is. After testing, if needed you can choose to make changes to your explanations to make them more efficient. 
@@ -31,6 +33,28 @@ Your organization needs a way to identify and classify all contract documents fr
    ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
 
 5. Additionally, if you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
+
+## Process details
+
+### Train a model to classify a type of file
+
+#### Add example files for your model
+
+You need to add at least five example files that are contract documents, and one example file that's not a contract document (for example, a statement of work). 
+
+1. On the **Models > Contract** page, under **Key actions** > **Add example files**, select **Add files**.
+
+   ![Screenshot showing the Contracts page with Add example files highlighted.](../media/content-understanding/key-actions-add-example-files.png)
+
+
+2. On the **Select example files for your model** page, open the Contracts folder, select files you want to use, and then select **Add**.
+
+Next, label the files as examples or negative examples. Then, add at least one explanation to train the classifier. For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
+
+
+From the Contracts SharePoint library, 
+
+
 
 ## Next step
 
