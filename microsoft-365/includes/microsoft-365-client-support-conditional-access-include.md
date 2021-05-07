@@ -22,7 +22,7 @@
 |POWER APPS|Planned|Planned|N/A|N/A|Planned|
 |POWER AUTOMATE|Planned|Planned|N/A|N/A|N/A|
 |POWER BI|Planned|Planned|N/A|Planned|Planned|
-|POWERPOINT|✔|Planned|Planned|Planned|Planned|
+|POWERPOINT|✔|Planned|Planned|Planned|N/A|
 |PROJECT|N/A|N/A|N/A|Planned|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT ADMIN|N/A|N/A|N/A|Planned|N/A|
@@ -34,6 +34,6 @@
 |TO-DO|Planned|Planned|Planned|N/A|Planned|
 |VISIO|N/A|✔|N/A|Planned|N/A|
 |WHITEBOARD|✔|Planned|N/A|N/A|Planned|
-|WORD|✔|Planned|Planned|Planned|✔|
+|WORD|✔|Planned|Planned|Planned|N/A|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|Planned|Planned|Planned|Planned|N/A|
