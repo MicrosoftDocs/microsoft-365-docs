@@ -81,7 +81,7 @@ If you forgot your password and can't sign in:
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
-- Or, [call Microsoft Support](../contact-support-for-business-products.md).
+- Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>

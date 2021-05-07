@@ -414,7 +414,7 @@
 | 4/20/2021 | [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules?view=o365-21vianet) | modified |
 | 4/20/2021 | [Microsoft 365 Defender # < 60 chars](/microsoft-365/security/defender/index?view=o365-21vianet) | modified |
 | 4/20/2021 | [Microsoft 365 security center overview](/microsoft-365/security/defender/overview-security-center?view=o365-21vianet) | modified |
-| 4/21/2021 | [Ways to contact support for business products - Admin Help](/microsoft-365/admin/contact-support-for-business-products?view=o365-21vianet) | modified |
+| 4/21/2021 | [Ways to contact support for business products - Admin Help](../business-video/get-help-support?view=o365-21vianet) | modified |
 | 4/21/2021 | [Business Assist for Microsoft 365](/microsoft-365/admin/misc/business-assist?view=o365-21vianet) | modified |
 | 4/21/2021 | [About registration numbers and under review notifications](/microsoft-365/commerce/about-registration-numbers?view=o365-21vianet) | modified |
 | 4/21/2021 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
