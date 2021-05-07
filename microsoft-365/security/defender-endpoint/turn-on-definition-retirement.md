@@ -1,6 +1,6 @@
 ---
 title: Turn on definition retirement for Microsoft Defender Antivirus
-description: Specify additional definition sets for network traffic inspection for Microsoft Defender Antivirus.
+description: Turn on definition retirement for Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, definition retirement
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
