@@ -39,7 +39,7 @@ After completing the onboarding steps using any of the provided options, you'll 
 > [!NOTE]
 > Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-services).
 
-### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
+## Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
 
 You'll need to install and configure MMA for Windows servers to report sensor data to Defender for Endpoint. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
@@ -55,7 +55,7 @@ In general, you'll need to take the following steps:
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
-#### Before you begin
+### Before you begin
 
 Perform the following steps to fulfill the onboarding requirements:
 
@@ -89,7 +89,7 @@ Ensure that you fulfill the following requirements:
 > [!NOTE]
 > If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
-### Option 2: Onboard Windows servers through Azure Security Center 
+## Option 2: Onboard Windows servers through Azure Security Center 
 
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
@@ -107,9 +107,8 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 > - Once configured, the appropriate cloud management pack is deployed on the machine and the sensor process (MsSenseS.exe) will be deployed and started.
 > - This is also required if the server is configured to use an OMS Gateway server as proxy.
 
-#
 
-### Configure Windows server proxy and Internet connectivity settings if needed
+## Configure Windows server proxy and Internet connectivity settings if needed
 
 If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
 
