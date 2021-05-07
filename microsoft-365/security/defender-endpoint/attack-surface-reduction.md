@@ -190,14 +190,7 @@ This rule is supported in all versions in which ASR is supported; which is:
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
-Rule guid:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
-
-This rule can be configured through the MEM OMA-URI (as described earlier in this documentation) as well as through powershell commands. You can run this command in the command line to enable the ASR rule:
-powershell -command
-
-```powershell
-"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
-```
+GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 ### Block Adobe Reader from creating child processes
 
