@@ -104,3 +104,11 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
    ![Manage Topics](../media/knowledge-management/manage-topics-new.png) </br>
+   
+## Topic Count Dashboard
+This chart visualizes the count of Viva Topics in a tenant. The chart will visualize the topic counts per topic lifecycle stage and also shows how topic counts have trended over time. The intent is that Knowledge Managers can monitor the rate at which new topics are being discovered by the AI and the rate at which topics are getting confirmed/published via Knowledge Manager and end user actions.
+
+Knowledge Managers may see a different count of topics represented in the list of topics within the Manage Topics view than they see in the dashboard. This is because the Knowledge Manager may not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming. 
+
+![image](https://user-images.githubusercontent.com/82847165/117502965-28594a80-af35-11eb-83f2-a79b68bf7e75.png)
+
