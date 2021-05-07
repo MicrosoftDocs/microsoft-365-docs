@@ -3,7 +3,7 @@ title: Security dashboard overview
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article

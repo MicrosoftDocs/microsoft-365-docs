@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -75,7 +75,7 @@ If you are using Windows Server, version 1803 or newer, or Windows Server 2019, 
 - Value: `1`
 
 > [!NOTE]
-> Passive mode is not supported on Windows Server 2016. The `ForcePassiveMode` registry key is not applicable to Windows Server 2016. 
+> Passive mode is not supported on Windows Server 2016. The `ForcePassiveMode` registry key can be used on Windows Server, version 1803 or newer, or Windows Server 2019, but not Windows Server 2016. 
 
 (<a id="fn2">2</a>) On Windows Server 2016, if you are using a non-Microsoft antivirus product, you cannot run Microsoft Defender Antivirus in either passive mode or active mode. In such cases, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
 
