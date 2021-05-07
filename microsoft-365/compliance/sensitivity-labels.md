@@ -39,7 +39,7 @@ Sensitivity labels from the Microsoft Information Protection solution let you cl
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
-![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
+![Sensitivity label on the Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
