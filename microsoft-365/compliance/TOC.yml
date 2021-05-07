@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
-        - name: DLP functions for sensitive information
-          href: what-the-dlp-functions-look-for.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -237,8 +235,8 @@
       items: 
         - name: Learn about DLP
           items:
-          - name: Learn about DLP
-            href: data-loss-prevention-policies.md
+          - name: Learn about data loss prevention
+            href: dlp-learn-about-dlp.md
           - name: Learn about Endpoint data loss prevention
             href: endpoint-dlp-learn-about.md
           - name: Learn about the default data loss prevention policy in Microsoft Teams (preview)
@@ -362,7 +360,7 @@
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
         - name: FAQ about importing PST files
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data

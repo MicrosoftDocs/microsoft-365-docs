@@ -1,7 +1,7 @@
 ---
-title: Privacy for Microsoft Defender for Endpoint for Mac
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint for Mac.
-keywords: microsoft, defender, atp, mac, privacy, diagnostic
+title: Privacy for Microsoft Defender for Endpoint on Mac
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Mac.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

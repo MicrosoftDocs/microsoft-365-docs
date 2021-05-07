@@ -110,7 +110,7 @@ If you're going to use Microsoft 365 for your email account, you can bring your 
 
 ## Plan for file storage and migration
 
-Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](../../business-video/store-files.md).
   
 - **You can move hundreds of files** to [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) or to a [SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
   

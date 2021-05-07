@@ -1,7 +1,7 @@
 ---
 title: Contact Microsoft Defender for Endpoint support for US Government customers
 description: Learn how to contact Microsoft Defender for Endpoint support for US Government customers
-keywords: support, contact, premier support, solutions, problems, case, government, gcc, gcc-m, gcc-h, defender, endpoint, mdatp, mde
+keywords: support, contact, premier support, solutions, problems, case, government, gcc, gcc-m, gcc-h, defender, endpoint, Microsoft Defender for Endpoint, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

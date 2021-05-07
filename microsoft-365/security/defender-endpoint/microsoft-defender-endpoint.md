@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
+keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -67,7 +67,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <a href="#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -129,7 +129,7 @@ Integrate Microsoft Defender for Endpoint into your existing workflows.
 
 **[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
 Defender for Endpoint directly integrates with various Microsoft solutions, including:
-- Azure Security Center
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security

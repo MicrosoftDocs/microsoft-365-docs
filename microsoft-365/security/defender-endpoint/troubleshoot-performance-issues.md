@@ -28,7 +28,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender AV diagnostic data](/collect-diagnostic-data.md).
+If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
 As an admin, you can also troubleshoot these issues on your own. 
 
@@ -127,7 +127,6 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
  
     >[!TIP] 
     >Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
-    
 
 10. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
 
@@ -246,7 +245,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 1. Download **[Microsoft Defender for Endpoint analysis](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** profile for performance traces to a file named `WD.wprp` in a local directory such as `C:\traces`.
 
-3. Right-click the **Start Menu** icon and select **Windows Powershell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
+3. Right-click the **Start Menu** icon and select **Windows PowerShell (Admin)** or **Command Prompt (Admin)** to open an Admin command prompt window.
 
 4. When the User Account Control dialog box appears, select **Yes**.
 
@@ -276,5 +275,5 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 
 ## See also
 
-- [Collect Microsoft Defender AV diagnostic data](collect-diagnostic-data.md)
+- [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)

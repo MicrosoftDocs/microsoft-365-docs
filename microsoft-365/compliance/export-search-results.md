@@ -244,11 +244,11 @@ For information about limits when exporting content search results, see the "Exp
 
     ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
-    1. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
+    a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
 
-    2. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
+    b. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
 
-    3. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
+    c. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
 
     If you choose to export partially indexed items, partially indexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
 

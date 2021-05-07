@@ -1,7 +1,7 @@
 ---
 title: List software
 description: Retrieves a list of software inventory
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, mdatp tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

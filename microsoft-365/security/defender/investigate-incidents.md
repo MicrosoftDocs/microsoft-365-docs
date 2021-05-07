@@ -1,7 +1,7 @@
 ---
-title: Investigate incidents in Microsoft 365 Defender
+title: Analyze incidents in Microsoft 365 Defender
 description: Analyze incidents related to devices, users, and mailboxes.
-keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
+keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -24,10 +24,9 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Investigate incidents in Microsoft 365 Defender
+# Analyze incidents in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -35,9 +34,9 @@ ms.technology: m365d
 
 Microsoft 365 Defender aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
 
-Within an incident, you investigate the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
+Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
-## Initial investigation
+## Initial analysis
 
 Before diving into the details, take a look at the properties and summary of the incident.
 
@@ -82,9 +81,9 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
 
-By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth investigation of that alert. 
+By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth analysis of that alert. 
 
-Learn how to use the alert queue and alert pages in [Investigate alerts](investigate-alerts.md)
+Learn how to use the alert queue and alert pages in [analyze alerts](investigate-alerts.md)
 
 ## Devices
 
@@ -135,6 +134,23 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
+
+## Graph (in Preview)
+
+With the new **Graph** tab (in preview), you can see:
+
+- The connection of alerts to the impacted assets in your organization.
+- Which entities are related to which alerts and how they are part of the story of the attack.
+- The alerts for the incident.
+
+Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Example of a Graph page for an incident":::
+
+The incident graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+
+Now you can understand how the attack spread through your network over time, where it started, and how far the attack went.
+
 
 ## Related topics
 

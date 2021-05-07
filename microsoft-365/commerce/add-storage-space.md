@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
 search.appverid:
 - MET150
 description: "Learn to add and reduce file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
-ms.date: 
+ms.date: 04/02/2021
 ---
 
 # Add storage space for your subscription

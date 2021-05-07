@@ -29,6 +29,9 @@ description: "Learn how to interpret the charges, billing, and payment informati
 
 # Understand your bill or invoice for Microsoft 365 for business
 
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+
 Either monthly or annually (depending on the option you chose when you purchased your subscription), you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
   
 Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.

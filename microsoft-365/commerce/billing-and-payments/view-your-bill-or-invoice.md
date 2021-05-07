@@ -51,6 +51,22 @@ You must be a Global or Billing admin to do the steps described in this article.
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
+::: moniker region="o365-21vianet"
+
+## Request a Fapiao
+
+You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three (3) days after you have paid.
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Bills & payments** page.
+
+2. Find the invoice that you want, and then select **Get Fapiaos**.
+
+> [!NOTE]
+
+> You need a registered account to access the [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465). If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
+
 ## Receive a copy of your billing statement in email
 
 You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:

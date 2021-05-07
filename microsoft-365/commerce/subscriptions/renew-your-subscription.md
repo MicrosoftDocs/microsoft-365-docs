@@ -25,6 +25,9 @@ description: "Learn how to renew your Microsoft 365 by turning recurring billing
 
 # Renew Microsoft 365 for business
 
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
+
 This article applies to most paid Microsoft 365 for business subscriptions.
   
 To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).

@@ -1,7 +1,7 @@
 ---
 title: McAfee to Microsoft Defender for Endpoint - Prepare
 description: This is phase 1, Prepare, for migrating from McAfee to Microsoft Defender for Endpoint.
-keywords: migration, windows defender advanced threat protection, atp, edr
+keywords: migration, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

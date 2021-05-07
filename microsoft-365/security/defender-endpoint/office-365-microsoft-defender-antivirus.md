@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -82,6 +82,6 @@ Protection from ransomware is one great reason to put your files in OneDrive. An
 
 - [OneDrive](/onedrive)
 
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
