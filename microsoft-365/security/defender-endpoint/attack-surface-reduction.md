@@ -179,7 +179,7 @@ This rule prevents an application from writing a vulnerable signed driver to dis
 
 This rule does not block a driver already existing on the system from being loaded.
 
-You can submit a driver for analysis [here](https://www.microsoft.com/wdsi/driversubmission).
+You [Submit driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 This rule is supported in all versions in which ASR is supported; which is:
 
