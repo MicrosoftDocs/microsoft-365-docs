@@ -86,5 +86,5 @@ Learn how to [triage and analyze incidents](first-incident-analyze.md).
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

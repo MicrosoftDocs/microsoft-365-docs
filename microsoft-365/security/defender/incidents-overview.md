@@ -57,7 +57,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
 - All of the data associated with the attack.
 
-If [enabled](m365d-enable.md), Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
+If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack. 
 
 ## Incidents and alerts in the Microsoft 365 security center
 
@@ -94,6 +94,10 @@ The additional tabs for an incident are:
 - Evidence and Response
 
   All the supported events and suspicious entities in the alerts in the incident.
+
+- Graph (in preview)
+
+  A figure showing the connection of alerts to the impacted assets in your organization.
 
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.
 
@@ -162,8 +166,16 @@ Daily, monthly, quarterly, and annual tasks can be used to update or refine proc
 
 ## Next steps
 
-The incident queue from the **Incidents** page lists the most recent incidents. From here, you can:
+If you are new to security analysis and incident response:
 
-- See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
-- [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments for your incident management workflow.
-- Perform an [analysis](investigate-incidents.md) of an incident.
+- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the the Microsoft 365 security center with an example of an attack.
+
+If you are familiar with security analysis and incident response:
+
+- Get started with the incident queue from the **Incidents** page of the Microsoft 365 security center. From here, you can:
+
+  - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
+
+  - [Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments based on your incident management workflow.
+
+  - Perform an [investigation](investigate-incidents.md) of an incident.

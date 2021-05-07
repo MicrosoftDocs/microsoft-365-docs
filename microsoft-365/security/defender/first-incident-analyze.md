@@ -130,5 +130,5 @@ Learn how to [remediate incidents](first-incident-remediate.md).
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

@@ -1,6 +1,6 @@
 ---
-title: Analyze incidents in Microsoft 365 Defender
-description: Analyze incidents related to devices, users, and mailboxes.
+title: Investigate incidents in Microsoft 365 Defender
+description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -24,7 +24,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Analyze incidents in Microsoft 365 Defender
+# Investigate incidents in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ Microsoft 365 Defender aggregates all related alerts, assets, investigations, an
 
 Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
-## Initial analysis
+## Initial investigation
 
 Before diving into the details, take a look at the properties and summary of the incident.
 
@@ -83,7 +83,7 @@ Here's an example.
 
 By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth analysis of that alert. 
 
-Learn how to use the alert queue and alert pages in [analyze alerts](investigate-alerts.md)
+Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
 ## Devices
 
@@ -135,7 +135,7 @@ Microsoft 365 Defender automatically investigates all the incidents' supported e
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
-## Graph (in Preview)
+## Graph (in preview)
 
 With the new **Graph** tab (in preview), you can see:
 
@@ -151,6 +151,12 @@ The incident graph helps you quickly understand the full scope of the attack by 
 
 Now you can understand how the attack spread through your network over time, where it started, and how far the attack went.
 
+## Next steps
+
+As needed:
+
+- [Investigate the alerts of an incident](investigate-alerts.md)
+- [Investigate the users of an incident](investigate-users.md)
 
 ## Related topics
 

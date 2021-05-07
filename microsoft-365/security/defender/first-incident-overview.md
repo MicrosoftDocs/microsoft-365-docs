@@ -53,5 +53,5 @@ Make sure your organization and Microsoft 365 tenant is [prepared for incident h
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
