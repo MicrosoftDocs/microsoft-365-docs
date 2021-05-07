@@ -3,7 +3,6 @@ title: "Customer Key for Microsoft 365 at the tenant level (public preview)"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -430,10 +429,6 @@ For information about the availability key, see [Learn about the availability ke
 ## Key rotation
 
 For information about rotating or rolling keys that you use with Customer Key, see [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). When you update the DEP to use the new version of the keys, you'll run the Set-M365DataAtRestEncryptionPolicy cmdlet as described earlier in this article.
-
-## Known issues
-
-When you enable Customer Key at the tenant level, you can't create a new team in Microsoft Teams.
 
 ## Related articles
 

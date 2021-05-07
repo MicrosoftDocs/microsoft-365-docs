@@ -12,14 +12,15 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
-ms.date: 
+ms.date: 04/08/2021
 ---
 
 # Cancel your subscription
@@ -120,7 +121,7 @@ When the cancellation becomes effective, your users lose access to their data. B
 
 - To move email, contacts, tasks, and calendar information to another account, see [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
+- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### Uninstall Office (optional)
 
