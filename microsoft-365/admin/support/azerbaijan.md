@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Azerbaijan
 
-[Find another country or region](microsoft-365/business-video/get-help-support.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 01 24 37 35 55

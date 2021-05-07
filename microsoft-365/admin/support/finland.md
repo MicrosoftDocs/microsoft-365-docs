@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Finland
 
-[Find another country or region](microsoft-365/business-video/get-help-support.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 0800 98462
