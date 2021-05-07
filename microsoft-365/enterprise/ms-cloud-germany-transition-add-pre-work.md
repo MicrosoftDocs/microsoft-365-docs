@@ -134,7 +134,7 @@ Pre-communicate this dependency to users of these protocols and ensure they eith
 
 The exact point of time to change the endpoint configuration cannot be predicted. During phase 5, user mailboxes will be successively migrated to the new Office 365 German region. The start of phase 5 will be announced in the Office 365 Admin Center. After each individual mailbox migration, the old endpoints become unavailable immediately, the client device will be disconnected from Exchange Online and the user must reconfigure all connected devices with the new [Exchange Online server endpoint](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). 
 
-The new endpoints cannot be configured in advance, they  become available **only** when the mailbox is migrated.
+The new endpoints cannot be configured in advance; they become available **only** when the mailbox is migrated.
 
 This limitation is unique to POP3/IMAP4 connections and does not apply to MAPI connections. Consider switching to Outlook apps or other modern protocols on all connected devices before phase 5 starts to improve the user experience.
 
