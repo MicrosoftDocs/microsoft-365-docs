@@ -139,11 +139,11 @@ You can create an explanation that provides a hint about the entity format itsel
 - October 14, 2019
 - Monday, October 14, 2019
 
-To help identify the *Contract Start Date* you can create a pattern explanation.
+To help identify the *Contract Start Date*, you can create a pattern explanation.
 
-3. In the **Explanations** section, select **New** and then **Blank**.
+1. In the **Explanations** section, select **New** and then **Blank**.
 
-4. On the **Create an explanation** page:
+2. On the **Create an explanation** page:
 
     a. In the **Name** field, type the name of the explanation (such as *Date*).
 
@@ -181,17 +181,17 @@ To apply your model to to a SharePoint document library:
     > [!NOTE]
     > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
 
-3. After you select the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.</br>
+3. After you select the site, select the document library to which you want to apply the model.
 
 4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as default** check box.
 
 5. Select **Add** to apply the model to the library.
 
-6. On the **Models > Contract** page, in the **Libraries with this model** section, you'll see the URL to the SharePoint site listed.</br>
+6. On the **Models > Contract** page, in the **Libraries with this model** section, you'll see the URL to the SharePoint site listed.
 
     ![Screenshot of the Contract home page showing the Libraries with this model section.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-After applying the model to the document library, you can begin uploading documents to the site and see the results.
+After you apply the model to the document library, you can begin uploading documents to the site and see the results.
 
 ## Next step
 
