@@ -18,9 +18,9 @@ description: "Learn how to use SharePoint Syntex to identify contract files and 
 
 Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [SharePoint Syntex](index.md) to create a document understanding model and applying it to a document library.
 
-[Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
-
 ## Process overview
+
+[Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
 
 1. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract). 
 
@@ -44,11 +44,19 @@ You need to add at least five example files that are contract documents, and one
 
 1. On the **Models > Contract** page, under **Key actions** > **Add example files**, select **Add files**.
 
-   ![Screenshot showing the Contracts page with Add example files highlighted.](../media/content-understanding/key-actions-add-example-files.png)
+   ![Screenshot showing the Contracts page with Add example files option highlighted.](../media/content-understanding/key-actions-add-example-files.png)
 
 
 2. On the **Select example files for your model** page, open the Contracts folder, select files you want to use, and then select **Add**.
 
+#### Label the files as positive or negative examples
+
+1. On the **Models > Contract** page, under **Key actions** > **Classify files and run training**, select **Train classifier**.
+
+   ![Screenshot showing the Contracts page with Classify files and run training option highlighted.](../media/content-understanding/key-actions-classify-files.png)
+
+2. 
+3. 
 Next, label the files as examples or negative examples. Then, add at least one explanation to train the classifier. For example, if the words "this letter is to inform you" or similar show up in every file of this type, add that phrase as an explanation. Now you can apply the model to a library or train an extractor.
 
 
