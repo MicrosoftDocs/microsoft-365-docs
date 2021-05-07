@@ -26,7 +26,7 @@ description: "Learn what happens to your data when your Microsoft 365 for busine
 
 If your subscription ends—either because it expires, or because you decide to cancel—your access to Microsoft 365 services, applications, and customer data go through multiple states before the subscription is fully turned off, or *deleted*. If you are aware of this progression, you'll be better equipped to return your subscription to an active state before it's too late, or—if you're leaving Microsoft 365—back up your data before it is ultimately deleted.
 
-Read through this important information before you contact [Microsoft 365 support](../../admin/contact-support-for-business-products.md).
+Read through this important information before you contact [Microsoft 365 support](../../business-video/get-help-support.md).
   
 ## What happens to data when a subscription expires?
 
