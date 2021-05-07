@@ -53,7 +53,7 @@ Permission type | Permission | Permission display name
 Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-**Properties** details
+## Properties details
 
 Property (id) | Data type | Description | Example
 :---|:---|:---|:---
@@ -64,13 +64,13 @@ rbacGroupName | String | Name of the device group this device is associated with
 
 ## Example
 
-**Request** example
+### Request example
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Response** example
+### Response example
 
 ```json
 {

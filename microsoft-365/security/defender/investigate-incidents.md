@@ -135,6 +135,23 @@ Microsoft 365 Defender automatically investigates all the incidents' supported e
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 
+## Graph (in Preview)
+
+With the new **Graph** tab (in preview), you can see:
+
+- The connection of alerts to the impacted assets in your organization.
+- Which entities are related to which alerts and how they are part of the story of the attack.
+- The alerts for the incident.
+
+Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Example of a Graph page for an incident":::
+
+The incident graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+
+Now you can understand how the attack spread through your network over time, where it started, and how far the attack went.
+
+
 ## Related topics
 
 - [Incidents overview](incidents-overview.md)
