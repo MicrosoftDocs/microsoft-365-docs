@@ -59,14 +59,20 @@ You need to add at least five example files that are contract documents, and one
 
    ![Screenshot showing the Contracts page with Add example files option highlighted.](../media/content-understanding/key-actions-add-example-files.png)
 
-
-2. On the **Select example files for your model** page, open the Contracts folder, select files you want to use, and then select **Add**.
+2. On the **Select example files for your model** page, open the Contract folder, select files you want to use, and then select **Add**. If you don't have example files there, select **Upload** to add them.
 
 #### Label the files as positive or negative examples
 
 1. On the **Models > Contract** page, under **Key actions** > **Classify files and run training**, select **Train classifier**.
 
    ![Screenshot showing the Contracts page with Classify files and run training option highlighted.](../media/content-understanding/key-actions-classify-files.png)
+
+2. In the viewer on the top of the first example file, you'll see text asking if the file is an example of the model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
+
+3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them. 
+
+    ![Classifier home page](../media/content-understanding/models-contract-classifier.png) 
+
 
 2. 
 3. 
