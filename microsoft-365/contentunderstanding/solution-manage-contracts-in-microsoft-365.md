@@ -1,12 +1,13 @@
 ---
 title: "Manage contracts using a Microsoft 365 solution"
-ms.author: chuckedmonson
-author: chucked
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 05/10/2021
+ms.prod: microsoft-365-enterprise
 ms.collection: m365solution-managecontracts
 ms.service: 
 search.appverid: 
