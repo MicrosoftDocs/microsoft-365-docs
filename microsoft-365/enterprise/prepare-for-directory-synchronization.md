@@ -117,7 +117,7 @@ The attributes that you need to prepare are listed here:
   - Maximum number of characters per value: 256
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
-  - Invalid characters: \< \> ( ) ; , [ ] " '
+  - Invalid characters: \< \> ( ) ; , [ ] "
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 

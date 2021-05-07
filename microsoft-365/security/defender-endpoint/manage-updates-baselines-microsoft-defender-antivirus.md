@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
+ms.date: 05/06/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -77,7 +78,7 @@ All our updates contain
 - integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
-<summary> April-2021 (Platform: 4.18.2104.9| Engine: 1.1.18100.5)</summary>
+<summary> April-2021 (Platform: 4.19.2104.9| Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
 &ensp;Released: **April 1, 2021**  
@@ -95,7 +96,7 @@ No known issues
 </details>
 
 <details>
-<summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
+<summary> March-2021 (Platform: 4.19.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
 &ensp;Released: **April 1, 2021**  
@@ -113,7 +114,7 @@ No known issues
 No known issues  
 <br/>
 </details><details>
-<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
+<summary> February-2021 (Platform: 4.19.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
 &ensp;Released: **March 9, 2021**  
@@ -459,6 +460,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2105.01</summary>
+
+&ensp;Package version: **1.1.2105.01**    
+&ensp;Platform version: **4.18.2103.7**   
+&ensp;Engine version: **1.1.18100.6**  
+&ensp;Signature version: **1.339.42.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2104.01</summary>
 
 &ensp;Package version: **1.1.2104.01**    
