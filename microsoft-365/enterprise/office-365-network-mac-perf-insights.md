@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Insights (preview)"
+title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Insights (preview)"
+description: "Microsoft 365 Network Insights"
 ---
 
-# Microsoft 365 Network Insights (preview)
+# Microsoft 365 Network Insights
 
 **Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
@@ -25,20 +25,19 @@ Insights are intended to help in designing network perimeters for your office lo
 There are six specific network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
-- [Network intermediary device](#network-intermediary-device)
-- [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
-- [Use of a non-optimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Use of a non-optimal SharePoint Online service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Network intermediary device are affecting your network](#network-intermediary-devices-are-affecting-your-network)
+- [Other people in this area have better network connectivity to Microsoft 365](#other-people-in-this-area-have-better-network-connectivity-to-Microsoft-365)
+- [Not connected to the best Exchange service front door location](#not-connected-to-the-best-Exchange-service-front-door-location)
+- [Not connected to the best SharePoint service front door location](#not-connected-to-the-best-SharePoint-service-front-door-location)
+- [Poor connectivity to Microsoft Teams](#poor-connectivity-to-Microsoft-Teams)
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
-There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+There are two tenant level network insights that may be shown for the tenant. These also appear in the productivity score pages:
 
 - [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
 - [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 ## Backhauled network egress
 
@@ -46,6 +45,7 @@ This insight will be displayed if the network insights service detects that the 
 
 This insight is abbreviated as "Egress" in some summary views.
 
+[!div class="mx-imgBorder"]
 ![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### What does this mean?
@@ -60,7 +60,7 @@ For this insight, we would recommend network egress closer to the office locatio
 
 For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
-## Network intermediary device
+## Network intermediary devices are affecting your network
 
 This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md). 
 
@@ -74,7 +74,7 @@ Network intermediary devices such as proxy servers, VPNs, and data loss preventi
 
 Configure the network intermediary device that was detected to bypass processing for Microsoft 365 network traffic.
 
-## Better performance detected for customers near you
+## Other people in this area have better network connectivity to Microsoft 365 
 
 This insight will be displayed if the network insights service detects that a significant number of customers in your metro area have better performance than users in your organization at this office location.
 
@@ -90,7 +90,7 @@ This insight examines the aggregate performance of Microsoft 365 customers in th
 
 There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
-## Use of a non-optimal Exchange Online service front door
+## Not connected to the best Exchange service front door location 
 
 This insight will be displayed if the network insights service detects that users in a specific location are not connecting to an optimal Exchange Online service front door.
 
@@ -106,7 +106,7 @@ We list Exchange Online service front doors which are suitable for use from the 
 
 Use of a non-optimal Exchange Online service front door could be caused by network backhaul before the corporate network egress in which case we recommend local and direct network egress. It could also be caused by use of a remote DNS Recursive Resolver server in which case we recommend aligning the DNS Recursive Resolver server with the network egress.
 
-## Use of a non-optimal SharePoint Online service front door
+## Not connected to the best SharePoint service front door location 
 
 This insight will be displayed if the network insights service detects that users in a specific location are not connecting to the closest SharePoint Online service front door.
 
@@ -122,6 +122,19 @@ We identify the SharePoint Online service front door that the test client is con
 
 Use of a non-optimal SharePoint Online service front door could be caused by network backhaul before the corporate network egress in which case we recommend local and direct network egress. It could also be caused by use of a remote DNS Recursive Resolver server in which case we recommend aligning the DNS Recursive Resolver server with the network egress.
 
+## Poor connectivity to Microsoft Teams
+
+This insight will be displayed if the network insights service detects that some users are experiencing poor call quality in Microsoft Teams.
+
+### What does this mean?
+
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired.
+
+### What should I do?
+
+Unblock, improve, or upgrade your network perimeter and internet connectivity so that it meets the Teams UDP media requirements. See [Microsoft Teams Media connectivity](https://docs.microsoft.com/en-us/Microsoft-365/Enterprise/office-365-network-mac-perf-onboarding-tool?view=o365-worldwide#media-connectivity-audio-video-and-application-sharing).
+
+
 ## Low download speed from SharePoint front door
 
 This insight will be displayed if the network insights service detects that bandwidth between the specific office location and SharePoint Online is less than 1 MBps.
@@ -135,6 +148,7 @@ The download speed that a user can get from SharePoint Online and OneDrive for B
 ### What should I do?
 
 To improve download speeds, bandwidth may need to be increased. Alternatively, there may be network congestion between user machines at the office location and the SharePoint Online service front door. This is sometimes called congestive loss and it restricts the download speed available to users even if sufficient bandwidth is available.
+
 
 ## China user optimal network egress
 
@@ -183,10 +197,10 @@ Enable office location network connectivity visibility if you have not already d
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+[Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

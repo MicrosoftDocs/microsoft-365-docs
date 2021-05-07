@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Connectivity Location Services (preview)"
+title: "Microsoft 365 Network Connectivity Location Services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Connectivity Location Services (preview)"
+description: "Microsoft 365 Network Connectivity Location Services"
 ---
 
-# Microsoft 365 Network Connectivity Location Services (preview)
+# Microsoft 365 Network Connectivity Location Services
 
 The Microsoft 365 Admin Center now shows **Network Insights and performance recommendations**, which are live performance metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant. Organizational network connectivity is designed per office location through a network egress location to the Internet. Microsoft 365 client connectivity uses that route and then across the Internet to Microsoft service front door servers. Identifying office locations is key to being able to show these network insights.
 
@@ -36,10 +36,10 @@ This feature, provided through Bing Maps, is also supported by **Here Technologi
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+[Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test in the M365 Admin Center](office-365-network-mac-perf-onboarding-tool.md)

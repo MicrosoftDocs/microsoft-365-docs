@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 network connectivity test tool (preview)"
+title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 network connectivity test tool (preview)"
+description: "Microsoft 365 network connectivity test tool"
 ---
 
-# Microsoft 365 network connectivity test tool (preview)
+# Microsoft 365 network connectivity test tool
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
@@ -31,9 +31,6 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 The network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant which are aggregated each day. In comparison, the network insights from the Microsoft 365 network connectivity test are run locally and one time in the tool. Testing that can be done in-product is limited and by running tests local to the user more data can be gathered resulting in deeper insights. Consider then that the network insights in the Microsoft 365 Admin Center will show that there is a networking problem for use of Microsoft 365 at a specific office location. The Microsoft 365 connectivity test can help to identify the root cause of that problem leading to a recommended network performance improvement action.
 
 We recommend that these be used together where networking quality status can be assessed for each office location in the Microsoft 365 Admin Center and more specifics can be found after deployment of testing based on the Microsoft 365 connectivity test.
-
->[!IMPORTANT]
->Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
 
 ## What happens at each test step
 
@@ -239,11 +236,7 @@ This shows any significant health issues with Microsoft's global network which m
 
 ## FAQ
 
-Here are answers to some of our frequently asked questions.
-
-### Is this tool released and supported by Microsoft?
-
-It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
+Here are answers to some of our frequently asked questions:
 
 ### What is required to run the advanced test client?
 
@@ -265,10 +258,10 @@ The internet egress Location is the location where your network traffic exits yo
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+[Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)
