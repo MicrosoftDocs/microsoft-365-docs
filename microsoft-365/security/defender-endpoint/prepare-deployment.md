@@ -75,11 +75,11 @@ required in technologies or processes.
 
 | What                                  | Description |
 |---------------------------------------|-------------|
-| Endpoint count                        |             |
-| Server count                          |             |
-| Management engine                     |             |
-| CDOC distribution                     |             |
-| Security information and event (SIEM) |             |
+| Endpoint count                        |    Total count of endpoints by operating system.         |
+| Server count                          |    Total count of Servers by operating system version.    |
+| Management engine                     |    Management engine name and version (for example, System Center Configuration Manager Current Branch 1803).         |
+| CDOC distribution                     |    High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).         |
+| Security information and event (SIEM) |    SIEM technology in use.         |
 
 
 ## Role-based access control
