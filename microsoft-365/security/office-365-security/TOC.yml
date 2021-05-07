@@ -194,6 +194,8 @@
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
        href: report-junk-email-messages-to-microsoft.md
+     - name: Enable the Report Message and the Report Phishing add-ins
+       href: enable-the-report-message-add-in.md
      - name: Use mail flow rules to block messages with executable attachments in EOP
        href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
      - name: Use mail flow rules to filter bulk email in EOP
