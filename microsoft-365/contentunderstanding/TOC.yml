@@ -64,6 +64,25 @@
           href: term-store-analytics.md
         
         
+    - name: REST API
+      items:
+
+        - name: Apply a model to one or more libraries
+          href: rest-api/apply-model-to-one-or-more-libraries.md
+        - name: Delete a model by name or id
+          href: rest-api/delete-a-model-by-name-or-id.md
+        - name: Get model and primed library information
+          href: rest-api/get-model-and-primed-library-information.md
+        - name: GetByTitle
+          href: rest-api/get-model-by-title.md
+        - name: Remove a model from one or more libraries
+          href: rest-api/remove-model-from-one-or-more-libraries.md
+        - name: CreateModel
+          href: rest-api/rest-createmodel-method.md
+        - name: GetByUniqueId
+          href: rest-api/rest-getmodelbyid-method.md
+        - name: UpdateModelSettings
+          href: rest-api/rest-updatemodelsettings-method.md        
 
 
 
