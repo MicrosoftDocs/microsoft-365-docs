@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 05/06/2021
+ms.date: 05/08/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -34,14 +34,14 @@ ms.technology: mde
 
 ## What is EDR in block mode?
 
-[Endpoint detection and response](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) in block mode provides protection from malicious artifacts, even when Microsoft Defender Antivirus is running in passive mode. When turned on, EDR in block mode blocks malicious artifacts or behaviors that are detected on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post breach. 
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides protection from malicious artifacts, even when Microsoft Defender Antivirus is running in passive mode. When turned on, EDR in block mode blocks malicious artifacts or behaviors that are detected on a device. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post breach. 
 
-EDR in block mode is also integrated with [threat & vulnerability management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt). Your organization's security team will get a [security recommendation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) to turn EDR in block mode on if it isn't already enabled. 
+EDR in block mode is also integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md). Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommendation to turn on EDR in block mode":::
 
 > [!NOTE]
-> To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)**.
+> To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
 
 ## What happens when something is detected?
 
@@ -70,7 +70,7 @@ The following image shows an instance of unwanted software that was detected and
 
 |Requirement  |Details  |
 |---------|---------|
-|Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/basic-permissions). |
+|Permissions |Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). See [Basic permissions](basic-permissions.md). |
 |Operating system     |One of the following versions: <br/>- Windows 10 (all releases) <br/>- Windows Server, version 1803 or newer <br/>- Windows Server 2019 <br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)     |
 |Windows E5 enrollment     |Windows E5 is included in the following subscriptions: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 together with the Identity & Threat Protection offering <br/><br/>See [Components](/microsoft-365/enterprise/microsoft-365-overview#components) and [features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus must be installed and running in either active mode or passive mode. (You can use Microsoft Defender Antivirus alongside a non-Microsoft antivirus solution.) [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
@@ -89,7 +89,7 @@ We recommend keeping EDR in block mode on, whether Microsoft Defender Antivirus 
 
 ### Will EDR in block mode have any impact on a user's antivirus protection? 
 
-EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode works if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like [Microsoft Defender Antivirus in passive mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state), except it also blocks and remediates malicious artifacts or behaviors that are detected. 
+EDR in block mode does not affect third-party antivirus protection running on users' devices. EDR in block mode works if the primary antivirus solution misses something, or if there is a post-breach detection. EDR in block mode works just like Microsoft Defender Antivirus in passive mode, except it also blocks and remediates malicious artifacts or behaviors that are detected.
 
 ### Why do I need to keep Microsoft Defender Antivirus up to date? 
 
@@ -101,7 +101,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 ### How do I set Microsoft Defender Antivirus to passive mode?
 
-Depending on operating systems, when devices that are running a non-Microsoft antivirus/antimalware solution are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can go into passive mode automatically. For more information, see [Antivirus and Microsoft Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-and-microsoft-defender-for-endpoint). 
+Depending on operating systems, when devices that are running a non-Microsoft antivirus/antimalware solution are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can go into passive mode automatically. For more information, see [How Microsoft Defender Antivirus affects Defender for Endpoint functionality](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality). 
 
 ### How do I confirm Microsoft Defender Antivirus is in active or passive mode?
 
@@ -125,7 +125,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server, version 1803 or newer 
 - Windows Server 2019 
 
-If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, and the endpoint is onboarded to Defender for Endpoint, then EDR in block mode is supported. However, EDR in block mode is intended to be additional protection when Microsoft Defender Antivirus is not the primary antivirus solution on an endpoint. 
+If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, and the endpoint is onboarded to Defender for Endpoint, then EDR in block mode is technically supported. However, EDR in block mode is intended to be additional protection when Microsoft Defender Antivirus is not the primary antivirus solution on an endpoint. In those cases, Microsoft Defender Antivirus runs in passive mode. Currently, running Microsoft Defender Antivirus in passive mode is not supported on Windows Server 2016. To learn more, see [Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 ## See also
 
