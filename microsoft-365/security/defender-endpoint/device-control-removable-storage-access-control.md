@@ -126,16 +126,17 @@ When there are conflict types for the same media, the system will apply the firs
 
    :::image type="content" source="images/device-status.png" alt-text="The screen on which the status of the device can be seen":::
 
-1. Options: 0-4.
-When Type Allow or Deny is selected:
-- 0: nothing
-- 4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the **AuditDenied** is setting configured, the system will not show notification.
+1. Options: 0-4. When Type Allow or Deny is selected:
 
-When Type **AuditAllowed** or **AuditDenied** is selected:
-- 0: nothing
-- 1: show notification
-- 2: send event
-- 3: show notification and send event
+   - 0: nothing
+   - 4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the **AuditDenied** is setting configured, the system will not show notification.
+
+   When Type **AuditAllowed** or **AuditDenied** is selected:
+
+   - 0: nothing
+   - 1: show notification
+   - 2: send event
+   - 3: show notification and send event
 
 **Property name: AccessMask**
 
@@ -199,7 +200,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 1. Combine all groups within `<Groups>` `</Groups>` into one xml file. 
 
-    The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)
+    The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
     
     :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
     
