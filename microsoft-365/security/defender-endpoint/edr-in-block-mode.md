@@ -131,5 +131,4 @@ If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, 
 
 - [Tech Community blog: Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Behavioral blocking and containment](behavioral-blocking-containment.md)
-- [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-antivirus.md)
 
