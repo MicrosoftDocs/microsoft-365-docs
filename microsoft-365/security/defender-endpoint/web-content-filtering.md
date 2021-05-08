@@ -31,7 +31,8 @@ ms.technology: mde
 > This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
 > For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> [!TIP]
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Web content filtering is part of [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
@@ -42,36 +43,32 @@ Web content filtering is available on the major web browsers, with blocks perfor
 Summarizing the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
-- Access web reports in the same central location, with visibility over actual blocks and web usage
+- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
 
-The blocking experience for 3rd party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. 
-
-For a more user-friendly in-browser experience, consider using Microsoft Edge.
+The blocking experience for 3rd party supported browsers is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
 ## Prerequisites
 
 Before trying out this feature, make sure you have the following requirements:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on or the Microsoft Defender for Endpoint standalone license. 
-- Access to Microsoft Defender Security Center portal
+- Access to Microsoft Defender Security Center portal (https://securitycenter.windows.com).
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
-
-If Windows Defender SmartScreen isn't turned on, Network Protection will take over the blocking. It requires [enabling Network Protection](enable-network-protection.md) on the device. Chrome, Firefox, Brave, and Opera are currently 3rd party browsers in which this feature is enabled.
 
 ## Data handling
 
-We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers.
+We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers.
 
 ## Turn on web content filtering
 
-From the left-hand navigation menu, select **Settings > General > Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
+From the left-hand navigation menu, select **Settings** > **General** > **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
 
 ### Configure web content filtering policies
 
-Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings > Rules > Web content filtering**.
+Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** > **Rules** > **Web content filtering**.
 
 Use the filter to locate policies that contain certain blocked categories or are applied to specific device groups.
 
@@ -105,7 +102,7 @@ It's possible to override the blocked category in web content filtering to allow
 
 If you encounter a domain that has been incorrectly categorized, you can report inaccuracies directly to us from the Web Content Filtering reports page. This feature is available only in the new Microsoft 365 security center (security.microsoft.com).
 
-To report an inaccuracy, navigate to **Reports > Web protection > Web Content Filtering Details > Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
+To report an inaccuracy, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
 
 A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
@@ -151,11 +148,11 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 ### Limitations and known issues in this preview
 
-- Only Microsoft Edge is supported if your device's OS configuration is Server (cmd > Systeminfo > OS Configuration). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported 3rd party browsers.
+- Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** > **Systeminfo** > **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported 3rd party browsers.
 
-- Unassigned devices will have incorrect data shown within the report. In the Report details > Device groups pivot, you may see a row with a blank Device Group field. This group contains your unassigned devices before they get put into your specified group. The report for this row may not contain an accurate count of devices or access counts.
+- Unassigned devices will have incorrect data shown within the report. In the **Report details** > **Device groups** pivot, you might see a row with a blank Device Group field. This group contains your unassigned devices before they get put into your specified group. The report for this row might not contain an accurate count of devices or access counts.
 
-- Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the ‘Domains’ report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
+- Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the Domains report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
 
 ## Related topics
 
