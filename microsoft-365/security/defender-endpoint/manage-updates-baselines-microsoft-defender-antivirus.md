@@ -44,8 +44,8 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-
 
 > [!NOTE]
 > Updates are released under the below KB numbers:  
-> Microsoft Defender Antivirus: KB2267602  
-> System Center Endpoint Protection: KB2461484
+> - Microsoft Defender Antivirus: KB2267602  
+> - System Center Endpoint Protection: KB2461484
 
 Cloud-delivered protection is always on and requires an active connection to the Internet to function. Security intelligence updates occur on a scheduled cadence (configurable via policy). For more information, see [Use Microsoft cloud-provided protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md). 
 
