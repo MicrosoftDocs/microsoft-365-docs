@@ -37,7 +37,7 @@ If the key vault already contains a key with the same name, the restore operatio
   
 ## Manage key vault permissions
 
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](/powershell/azure/).
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure PowerShell, see [Overview of Azure PowerShell](/powershell/azure/).
 
 To view key vault permissions, run the Get-AzKeyVault cmdlet.
 
@@ -123,7 +123,7 @@ To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet
 
 ## Verify that Customer Key has finished encryption
 
-Whether you've just rolled a Customer Key, assigned a new DEP, or migrated a mailbox, use the steps in this section to ensure that encryption completes.
+Whether you've rolled a Customer Key, assigned a new DEP, or migrated a mailbox, use the steps in this section to ensure that encryption completes.
 
 ### Verify encryption completes for Exchange Online and Skype for Business
 
@@ -143,8 +143,8 @@ The time to complete mailbox moves depends on the size of the mailbox. If Custom
 
 Check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
 
-```powershell
-Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+```PowerShell
+   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
 The output from this cmdlet includes:
