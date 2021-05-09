@@ -43,7 +43,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 Summarizing the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
