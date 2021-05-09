@@ -46,7 +46,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
-- The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as installing the on-premises scanner and managing your content scan jobs.
+- The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as installing the on-premises scanner and managing your content scan jobs.
 
 ## Configure AIP for customers in China
 
@@ -81,7 +81,7 @@ For the encryption to work correctly, RMS must be enabled for the tenant.
 
 The **Microsoft Information Protection Sync Service** service principal is not available in Azure China tenants by default, and is required for Azure Information Protection.
 
-Create this service principal manaully, and then add relevant permissions.
+Create this service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service. After adding the service principal, add the relevant permissions required to the service.
 
 ```powershell 
 New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
