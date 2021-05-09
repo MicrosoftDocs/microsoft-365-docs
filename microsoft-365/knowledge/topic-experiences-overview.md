@@ -66,7 +66,7 @@ When a topic is identified and AI determines that it has enough information for 
 
 Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.
 
-See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
 ## Roles
 
@@ -120,7 +120,8 @@ Users that you allow access to see topics in their daily work might be asked if 
 
 Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
 
-See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
-
+<!--
 ## See also
+-->
