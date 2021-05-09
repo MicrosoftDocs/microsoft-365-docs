@@ -31,7 +31,7 @@ The topic answer will display:
 
 The topic page can display in the search results even if the topic answer card doesn't appear.
 
-The search results in Word and PowerPoint will also show the topic answer when one is found.
+The search results in Word, PowerPoint, Outlook and Excel will also show the topic answer when one is found.
 
 
 ## Acronyms
