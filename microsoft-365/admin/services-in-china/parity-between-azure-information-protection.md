@@ -83,9 +83,9 @@ The **Microsoft Information Protection Sync Service** service principal is not a
 
 1. Create this service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service. 
 
-  ```powershell 
-  New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
-  ```
+    ```powershell 
+    New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
+    ```
 
 1. After adding the service principal, add the relevant permissions required to the service.
 
