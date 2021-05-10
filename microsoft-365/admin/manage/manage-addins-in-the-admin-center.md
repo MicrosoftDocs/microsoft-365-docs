@@ -90,22 +90,22 @@ As an organization you may wish to prevent the download of new Office add-ins fr
     
 4. Clear the option to let users access the Office store.
 
-This will prevent all users from acquiring the following add-ins from the store.
-  
-- Add-ins for Word, Excel, and PowerPoint 2016 from:
-    
-  - Windows
-    
-  - Mac
-    
-  - Office
-    
-    
-- Acquisitions starting within **AppSource**
-    
-- Add-ins within Microsoft 365
-    
-A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
+    This will prevent all users from acquiring the following add-ins from the store.
+      
+    - Add-ins for Word, Excel, and PowerPoint 2016 from:
+        
+      - Windows
+        
+      - Mac
+        
+      - Office
+        
+        
+    - Acquisitions starting within **AppSource**
+        
+    - Add-ins within Microsoft 365
+        
+    A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
   
 Support for turning off the Office Store is available in the following versions:
   
