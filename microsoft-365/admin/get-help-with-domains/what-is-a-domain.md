@@ -52,6 +52,6 @@ You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log i
   
 ## Feeling stuck?
 
-Call Microsoft Support - [Get help setting up a domain](../contact-support-for-business-products.md)
+Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
   
 
