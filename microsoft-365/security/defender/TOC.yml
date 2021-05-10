@@ -42,7 +42,7 @@
           items:
             - name: Overview
               href: eval-defender-identity-overview.md                             
-        - name: Defender for Office
+        - name: Defender for Office 365
           items:
             - name: Overview
               href: eval-defender-office-overview.md

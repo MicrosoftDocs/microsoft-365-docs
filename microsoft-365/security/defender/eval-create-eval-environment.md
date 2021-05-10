@@ -25,7 +25,8 @@ ms.technology: m365d
 
 # Create the evaluation environment for Microsoft 365 Defender
 
-
+Roman's instructions + ?
+https://docs.microsoft.com/en-us/microsoft-365/security/defender/setup-m365deval?view=o365-worldwide
 
 
 **Applies to:**

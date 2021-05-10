@@ -25,9 +25,12 @@ ms.technology: m365d
 
 # Evaluate Microsoft 365 Defender for Office overview
 
-
-
-
 **Applies to:**
 - Microsoft 365 Defender
+
+
+
+![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
+
+
 
