@@ -46,13 +46,13 @@ Data protection features in Microsoft 365 Business Premium help ensure that impo
 
 You can use [data loss prevention (DLP)](set-up-dlp.md) policies to identify and manage sensitive information, such as Social Security or credit card numbers, so that it isn't mistakenly shared. 
 
-[Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome?view=o365-worldwide) combines encryption and access rights capabilities to help ensure that only intended recipients can view message content. Office 365 Message Encryption works with Outlook.com, Yahoo!, and Gmail, and other email services.
+[Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome) combines encryption and access rights capabilities to help ensure that only intended recipients can view message content. Office 365 Message Encryption works with Outlook.com, Yahoo!, and Gmail, and other email services.
 
 [Exchange Online Archiving](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) is a cloud-based archiving solution that works with Microsoft Exchange or Exchange Online to provide advanced archiving capabilities, including holds and data redundancy. You can use retention policies to help your organization reduce the liabilities associated with email and other communications. If your company is required to retain communications related to litigation, you can use In-Place Holds and Litigation Holds to preserve related email.
 
 ## Device management
 
-Microsoft 365 Business Premium advanced device management features let you monitor and control what users can do with enrolled devices. These features include conditional access, [Mobile Device Management (MDM)](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices?view=o365-worldwide), BitLocker, and automatic updates.
+Microsoft 365 Business Premium advanced device management features let you monitor and control what users can do with enrolled devices. These features include conditional access, [Mobile Device Management (MDM)](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices), BitLocker, and automatic updates.
 
 You can use conditional access policies to require additional security measures for certain users and tasks. For example, you can require multi-factor authentication (MFA) or block clients that don't support conditional access.
 
