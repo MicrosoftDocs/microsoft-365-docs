@@ -94,12 +94,14 @@
                 href: manage-incidents.md
               - name: Incident response
                 items: 
-                 - name: Analyze incidents
+                 - name: Investigate incidents
                    href: investigate-incidents.md
-                 - name: Analyze alerts
+                 - name: Investigate alerts
                    href: investigate-alerts.md    
-                 - name: Analyze users 
+                 - name: Investigate users 
                    href: investigate-users.md                  
+                 - name: Incident response playbooks
+                   href: https://docs.microsoft.com/security/compass/incident-response-playbooks
                  - name: Respond to your first incident
                    items: 
                     - name: Introduction
@@ -130,11 +132,11 @@
                 href: m365d-remediation-actions.md
               - name: Visit the Action center
                 href: m365d-action-center.md
-              - name: Approve or reject pending remediation actions
+              - name: View and manage remediation actions
                 href: m365d-autoir-actions.md
               - name: View details and results of automated investigations
                 href: m365d-autoir-results.md
-              - name: Report false positives/negatives
+              - name: Address false positives/negatives
                 href: m365d-autoir-report-false-positives-negatives.md
        - name: Advanced hunting
          items: 
