@@ -66,7 +66,7 @@ You manage a traditional add-on by going to the subscription that contains it an
 
 To remove a standalone add-on subscription, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription. Or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).
 
-You can’t remove a traditional add-on. If you want to remove a traditional add-on, [contact support for help](../admin/contact-support-for-business-products.md).
+You can’t remove a traditional add-on. If you want to remove a traditional add-on, [contact support for help](../business-video/get-help-support.md).
   
 ## Related content
 

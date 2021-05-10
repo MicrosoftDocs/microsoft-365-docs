@@ -84,6 +84,9 @@ User activity reports are available for certain individual services. These repor
 It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
 To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### Is the Usage Summary Reports Reader role enough to view the usage analytics?
+
+The Usage Summary Reports Reader role only allows access to tenant level aggregates in Microsoft 365 usage analytics.  We recommend the Reports Reader or Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but is not necessarily an IT administrator.
 
 ### Who can connect to Microsoft 365 usage analytics?
 
@@ -195,7 +198,7 @@ This is currently not on the roadmap.
 
 ### I have a specific question about the data I'm seeing for my organization. Who can I reach out to?
 
-You can use the feedback button in the admin center activity overview page, or you can open a [support case](../contact-support-for-business-products.md) to get help with the template app. 
+You can use the feedback button in the admin center activity overview page, or you can open a [support case](../../business-video/get-help-support.md) to get help with the template app. 
 
 ### How can partners access the data?
 
