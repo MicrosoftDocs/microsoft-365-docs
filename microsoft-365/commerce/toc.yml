@@ -51,7 +51,7 @@
     - name: View your bill or invoice
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: Understand your bill or invoice
-      href: billing-and-payments/understand-your-invoice.md
+      href: billing-and-payments/understand-your-invoice2.md
     - name: Pay for your subscription
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Manage payment methods
@@ -77,5 +77,5 @@
 - name: Close your account
   href: close-your-account.md
 - name: Contact support
-  href: ../admin/contact-support-for-business-products.md
+  href: ../business-video/get-help-support.md
   
