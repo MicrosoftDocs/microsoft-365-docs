@@ -18,7 +18,7 @@ description: "Learn how to use SharePoint Syntex to identify contract files and 
 
 Your organization needs a way to identify and classify all contract documents from the many files you receive. You also want to be able to quickly view several key elements in each of the contract files identified (for example, *Client*, *Contractor*, and *Fee amount*). You can do this by using [SharePoint Syntex](index.md) to create a document understanding model and applying it to a document library.
 
-## Overview
+## Overview of the process
 
 [Document understanding](document-understanding-overview.md) uses artificial intelligence (AI) models to automate classification of files and extraction of information. Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
 
@@ -32,7 +32,7 @@ Your organization needs a way to identify and classify all contract documents fr
 
    ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
 
-5. Additionally, if you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
+5. If you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
 
 ## Steps to create and train your model
 
@@ -67,9 +67,9 @@ You need to add at least five example files that are contract documents, and one
 
    ![Screenshot showing the Contracts page with Classify files and run training option highlighted.](../media/content-understanding/key-actions-classify-files.png)
 
-2. On the **Models > Contract > Contract classifier** page, in the viewer on the top of the first example file, you'll see text asking if the file is an example of the Contract model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
+2. On the **Models > Contract > Contract classifier** page, in the viewer on the top of the first example file, you'll see text asking if the file is an example of the Contract model you created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
 
-3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them. 
+3. From the **Labeled examples** list on the left, select other files that you want to use as examples, and label them. 
 
     ![Classifier home page](../media/content-understanding/models-contract-classifier.png) 
 
@@ -87,7 +87,7 @@ You need to add at least five example files that are contract documents, and one
 
     b. In the **Explanation type** field, select **Phrase list**, because you add a text string.
 
-    c. In the **Phrase list** box, type the string (such as "AGREEMENT"). You can select **Case sensitive** if the string needs to be case sensitive.
+    c. In the **Phrase list** box, type the string (such as "AGREEMENT"). You can select **Case sensitive** if the string needs to be case-sensitive.
 
     d. Select **Save and train**.
 
@@ -95,7 +95,7 @@ You need to add at least five example files that are contract documents, and one
 
 #### Test your model
 
-You can by test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
+You can test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
 
 1. On the **Models > Contract > Contract classifier** page, select the **Test** tab. This runs the model on your unlabeled example files.
 
@@ -125,7 +125,7 @@ To label the entity:
 
 1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Client*, you highlight the client value in the first file (in this example, *Best For You Organics*), and then select **Save**. You'll see the value display from the file in the **Labeled examples** list, under the **Label** column.
 
-2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save**, and then select another file from the **Labeled examples** list.
+2. Select **Next file** to autosave and open the next file in the list in the viewer. Or select **Save**, and then select another file from the **Labeled examples** list.
 
 3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all the files.
 
@@ -133,7 +133,7 @@ After you've labeled the files, a notification banner displays informing you to 
 
 #### Add an explanation
 
-You can create an explanation that provides a hint about the entity format itself and variations it might have in the example files. For example, a date value can be in a number of different formats, such as:
+You can create an explanation that provides a hint about the entity format itself and variations it might have in the example files. For example, a date value can be in many different formats, such as:
 
 - 10/14/2019
 - October 14, 2019
@@ -160,7 +160,7 @@ To help identify the *Contract Start Date*, you can create a pattern explanation
 
 #### Test your model again
 
-You can by test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
+You can test your Contract model on example files it hasn’t seen before. This is optional, but it can be a useful best practice.
 
 1. On the **Models > Contract > Contract classifier** page, select the **Test** tab. This runs the model on your unlabeled example files.
 
@@ -170,7 +170,7 @@ You can by test your Contract model on example files it hasn’t seen before. Th
 
 ### Apply your model to a document library
 
-To apply your model to to a SharePoint document library:
+To apply your model to a SharePoint document library:
 
 1. On the **Models > Contract** page, under **Key actions** > **Apply model to libraries**, select **Apply model**.
 
@@ -183,7 +183,7 @@ To apply your model to to a SharePoint document library:
 
 3. After you select the site, select the document library to which you want to apply the model.
 
-4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as default** check box.
+4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. This view is the library's default view by default, but you can optionally choose to have it not be the default view by selecting **Advanced settings** and clearing the **Set this new view as default** check box.
 
 5. Select **Add** to apply the model to the library.
 
