@@ -37,10 +37,49 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Overview of planning process
 
+
+
 ### Questions that impact policy design that you need to get answers to
 
-1. what sensitive data/items do you have?
-1. where are they (location)?
+As you begin your DLP adoption you can use questions to focus your policy design and implementation efforts.
+
+
+#### What laws, regulations and industry standards must your organization comply with?
+
+Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. It needs to be answered by your legal team and business executives. 
+ 
+**Example** your organization is subject to financial regulations.
+
+#### What sensitive items does your organization have that must be protected from leakage?
+
+Once your organization knows where it stands in terms of regulatory compliance needs, you'll have some idea of what sensitive items need to be protected from leakage and how you want to prioritize policy implementation to protect them. This will help you choose the most appropriate DLP policy templates. Microsoft 365 comes with pre-configured DLP templates for Financial, Medical and health, Privacy, and you can build your own using the Custom template. As you design and create your actual DLP policies, knowing the answer to this question will also help you choose the right sensitive information type [sensitive information type](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
+
+**Example** To get started quickly, from the `Financial` category you pick the `U.K. Financial Data` template which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types 
+
+#### Where are the sensitive items and what business processes are they involved in?
+
+You 
+
+Microsoft 365 DLP policies are applied to locations:
+- Exchange email
+- SharePoint sites
+- OneDrive accounts
+- Teams chat and channel messages
+- Windows 10 Devices
+- Microsoft Cloud App Security
+- On-premises repositories
+
+
+         |
+|What business processes are your sensitive items and data involved in?         |Will help identify the business process and the business process owners that must be involved in 
+|Row5     |         |
+|Row6     |         |
+| |What is your organizations tolerance for leakage?     |         |
+
+
+- What is your organizations tolerance for leakage?
+- 
+
 1. what business processes are the involved in?
     1. what are your points of exposure?
     1. What locations do they flow through in their lifetime?
