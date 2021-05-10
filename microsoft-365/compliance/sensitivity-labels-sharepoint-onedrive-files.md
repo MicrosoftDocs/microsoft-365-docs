@@ -23,6 +23,18 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+> [!NOTE]
+> There's a current issue that results in labeled and encrypted files failing to open in Office on the web:
+>
+> While we investigate an issue related to specific document properties, you won't be able to open many files in Office on the web. For these files, you can continue to open and edit them in your desktop and mobile Office apps. Or, do the following:
+>
+> 1. Open the file in the Office desktop app.
+> 2. Remove the label that applies encryption.
+> 3. Save the file in the original location (SharePoint or OneDrive), and close the desktop app.
+> 4. Open the file in Office on the web, and reapply the original label that applies encryption.
+> 
+> Files that are created and edited only in Office on the web aren't affected.
+
 Enable sensitivity labels for Office files in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
 Enabling this feature also results in SharePoint and OneDrive being able to process the contents of files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work for these files.
@@ -66,14 +78,6 @@ These new capabilities work with [sensitivity labels](sensitivity-labels.md) onl
 Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable sensitivity labels for Office files in SharePoint and OneDrive, users who run an older version of the sync app are prompted to update it.
 
 ## Limitations
-
-- Power Query and custom add-ins with Excel on the web: If these files are encrypted with a sensitivity label, SharePoint and OneDrive can't process the files so users won't be able to open them in Office on the web. For these files, either apply a label without encryption so that they can be opened in Office on the web, or instruct users to open the files in their desktop apps.
-
-- If you experience problems opening labeled and encrypted files in Office on the web, try the following:
-    1. Open the file in the Office desktop app.
-    2. Remove the label that applies encryption.
-    3. Save the file in the original location (SharePoint or OneDrive), and close the desktop app.
-    4. Open the file in Office on the web, and reapply the original label that applies encryption.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     
@@ -168,7 +172,8 @@ To enable the new capabilities, use the [Set-SPOTenant](/powershell/module/share
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Microsoft 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Note: If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
+   > [!NOTE]
+   > If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
 2. Run the following command and press **Y** to confirm:
 
