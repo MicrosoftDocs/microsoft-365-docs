@@ -18,7 +18,8 @@ description: "Integrate Microsoft Teams classes in your Learning Management Syst
 
 # Use Microsoft Teams classes in your Learning Management System
 
-[!INCLUDE[preview-feature](../includes/prelease.md)]
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Teams class teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 

@@ -17,7 +17,8 @@ description: "Create and grade assignments, build and curate course content, and
 
 # Use Microsoft OneDrive with your Learning Management System
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Learn the benefits of using Microsoft OneDrive with your Learning Management System (LMS).
 
