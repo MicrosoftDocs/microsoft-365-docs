@@ -34,7 +34,7 @@ For more information about installing add-ins from the admin center, see [Deploy
 
 An add-in can be in either the **On** or **Off** state.
   
-|**State**|**How the state occurs**|**Impact**|
+| State | How the state occurs | Impact |
 |:-----|:-----|:-----|
 |**Active**  <br/> |Admin uploaded the add-in and assigned it to users or groups.  <br/> |Users and groups assigned to the add-in see it in the relevant clients.  <br/> |
 |**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to Active, the users and groups will have access to it again.  <br/> |
