@@ -197,11 +197,12 @@ what sort of personal data you have, you can easily provide it.
 ### Step 3: Keep personal data for only as long as necessary.
 
 For employees data, keep it as long as the employment relationship remains and for related legal obligations.
+For customer data, keep it as long as the customer relationship lasts and for related legal obligations (for example, tax purposes).
+Delete the data where it is no longer necessary for the purposes for which you collected it.
 
-For customer data, keep it as long as the customer relationship
-lasts and for related legal obligations (for example,tax purposes).
+#### Microsoft 365 features that can help
+[Retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to keep personal data for a certain time and delete it when it’s no longer needed.
 
-Delete the data where it is no longer necessary for the purposes for which you collected it. Through Microsoft 365, [retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to manage the deletion of content that you are not required to keep.
 
 ### Step 4: Secure the personal data you are processing.
 
@@ -216,7 +217,8 @@ that they are not accessible by unauthorized persons (for example, lock them in 
 
 If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files.
 
- 
+#### Microsoft 365 features that can help
+You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to protect your business's sensitive information. 
 
 ### Step 5: Keep documentation on your data processing activities.
 
