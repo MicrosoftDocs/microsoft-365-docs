@@ -5,27 +5,23 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -36,7 +32,7 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
+**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
 
 ## Before you begin
 
@@ -44,25 +40,39 @@ You must be a Global or Billing admin to do the steps described in this article.
   
 ## View a bill or invoice
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-    - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
-    - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
+
 2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## Request a Fapiao
 
 You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three (3) days after you have paid.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Bills & payments** page.
-
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">**Bills & payments**</a> page.
 2. Find the invoice that you want, and then select **Get Fapiaos**.
 
 > [!NOTE]
-
+>
 > You need a registered account to access the [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465). If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
