@@ -76,7 +76,7 @@ Verify that you have installed the following hotfix:
 
 **Prerequisites for Windows Server 2016** 
 
-Verify that Microsoft Defender Antivirus version 4.18.2104.120 or later is installed.
+Verify that Microsoft Defender Antivirus is installed and is active.
 
 > [!NOTE]
 > If System Center Endpoint Protection (SCEP) is installed on a machine, it must be removed first, otherwise the installation will not proceed. For instructions on environments with managed SCEP, refer to MECM migration scenarios. 
@@ -91,6 +91,9 @@ Verify that Microsoft Defender Antivirus version 4.18.2104.120 or later is insta
 3. Select **Download installation package** and save the .msi file. 
   
     1. Run the installation package to install the application. 
+
+    >[!NOTE]
+    >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
@@ -100,6 +103,10 @@ Verify that Microsoft Defender Antivirus version 4.18.2104.120 or later is insta
 
 ## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
+
+
+### Prerequisites 
+Verify that Microsoft Defender Antivirus is installed and is active.
 
 
 ### Download package
