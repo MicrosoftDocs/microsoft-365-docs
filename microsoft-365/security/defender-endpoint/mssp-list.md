@@ -31,6 +31,7 @@ The following managed security service providers can be accessed through the por
 
 Logo |Partner name   | Description 
 :---|:---|:---
+![Image of Aujas logo](images/aujas-logo.png) | [Aujas managed MDE Service](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity provides 24*7 managed security services across the entire enterprise spectrum, using Microsoft Defender for endpoints through its Cyber Defense Centers.
 ![Image of BDO Digital logo](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense leverages best practice tools, AI, and in-house security experts for 24/7/365 identity protection
 ![Image of BlueVoyant logo](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Microsoft Defender for Endpoint provides support in monitoring, investigating, and mitigating advanced attacks on endpoints
 ![Image of Cloud Security Center logo](images/cloudsecuritycenter-logo.png)| [Cloud Security Center](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark's Cloud Security Center is a 24x7 managed service that delivers protect, detect & respond capabilities
@@ -39,6 +40,7 @@ Logo |Partner name   | Description
 ![Image of Dell Technologies Advanced Threat Protection logo](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional monitoring service for malicious behavior and anomalies with 24/7 capability
 ![Image of DXC-Managed Endpoint Threat Detection and Response logo](images/dxc-logo.png)| [DXC-Managed Endpoint Threat Detection and Response](https://go.microsoft.com/fwlink/?linkid=2090395) | Identify endpoint threats that evade traditional security defenses and contain them in hours or minutes, not days
 ![Image of eSentire log](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 threat investigations and response via Microsoft Defender for Endpoint.
+![Image of expel logo](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | [Expel Managed detection and response for Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430)| Expel helps your security keep up by detecting security risks in Microsoft Defender Endpoint.
 ![Image of NTT Security logo](images/ntt-logo.png)| [NTT Security](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT's EDR Service provides 24/7 security monitoring & response across your endpoint and network
 ![Image of OneVinn logo](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Managed Detection and Response built on Microsoft Defender and Azure Sentinel, enriched with Onevinn's threat intelligence.
 ![Image of Quorum Cyber logo](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| A cutting-edge Threat Hunting & Security Engineering service.
