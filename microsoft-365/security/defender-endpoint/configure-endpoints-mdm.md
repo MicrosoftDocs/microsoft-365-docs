@@ -37,11 +37,9 @@ If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwi
 
 For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
 
-## Onboard devices using Microsoft Intune
-
-[![Image of the PDF showing onboarding devices to Defender for Endpoint using Microsoft Intune](images/onboard-intune.png) ](images/onboard-intune-big.png#lightbox)
-
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
+
+## Onboard devices using Microsoft Intune
 
 Follow the instructions from [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
