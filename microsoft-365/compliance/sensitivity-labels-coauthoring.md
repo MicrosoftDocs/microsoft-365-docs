@@ -130,6 +130,8 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 
 - When you use [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md), unencrypted attachments for emails are not supported.
 
+- Some documents are incompatible with sensitivity labels because of features such as [password-protection](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [shared workbooks](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534), or content that includes ActiveX controls. Other reasons are documented in [Troubleshoot co-authoring in Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). For these documents, you see a message **UPLOAD FAILED** and should select the **Discard Changes** option. Until this issue is addressed, do not label these documents that are identified with this failure message.
+
 - Office apps for iOS and Android are not supported.
 
 ## How to enable co-authoring for files with sensitivity labels
@@ -166,7 +168,7 @@ After you've enabled co-authoring for files with sensitivity labels for your ten
 
 ![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-As you see from the screenshot when this setting has been turned on, you can contact [Microsoft Support](/office365/admin/contact-support-for-business-products) and request to turn off this setting. This request might take several days and you will need to prove that you are a global administrator for your tenant. Expect usual support charges to apply. 
+As you see from the screenshot when this setting has been turned on, you can contact [Microsoft Support](../business-video/get-help-support.md) and request to turn off this setting. This request might take several days and you will need to prove that you are a global administrator for your tenant. Expect usual support charges to apply. 
 
 If a support engineer disables this setting for your tenant:
 
