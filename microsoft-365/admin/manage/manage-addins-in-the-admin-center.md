@@ -48,7 +48,7 @@ You can also delete an add-in that was deployed.
 
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
 
-     > [!NOTE]
+    > [!NOTE]
     > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
 
 2. Select the deployed add-in.
@@ -63,7 +63,7 @@ Post deployment, admins can also manage user access to add-ins.
 
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
 
-     > [!NOTE]
+    > [!NOTE]
     > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
 
 2. Select the deployed add-in.
@@ -140,7 +140,9 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
     
 2. Select the **Admin Managed** tab in the Office Add-ins window. 
     
-3. Double-click the add-in you deployed earlier (in this example, **Citations** ). <br/>![Admin Managed tab of the Office Add-ins page](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Double-click the add-in you deployed earlier (in this example, **Citations** ).
+
+    ![Admin Managed tab of the Office Add-ins page](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### In Outlook
 
