@@ -51,12 +51,13 @@ Windows Server 2012 R2 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2016 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2019 | Yes | Yes | Yes | Yes | Yes
 macOS 10.14 "Mojave" and above | Yes | Yes | Yes \(preview\) | Yes \(preview\) | Yes \(preview\) 
-Red Hat Enterprise Linux 7.2 or higher \(\* See "Important" notice below\) | Yes | Yes | Yes | Yes | Yes
+Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below) | Yes | Yes | Yes | Yes | Yes
 CentOS 7.2 or higher | Yes | Yes | Yes | Yes | Yes
 Ubuntu 16.04 LTS or higher LTS | Yes | Yes | Yes | Yes | Yes
 
 >[!IMPORTANT]
-> \* “The vulnerability data provided and shown as part of your Microsoft Defender for Endpoint services is made available to you in its raw form, “AS IS”, from Red Hat, Inc., and might not be up to date. The data that is accessible in the Red Hat Security Data API is licensed under the Creative Commons Attribution 4.0 International License. You bear the risk in using this data. Microsoft and its third-party suppliers disclaim any and all liability for consequential and other indirect damages and implied warranties, including implied warranties of non-infringement, merchantability and fitness for a particular purpose. © 2020 Red Hat. All rights reserved. © 2020 Microsoft. All rights reserved.”
+> \* Red Hat Enterprise Linux:
+> “The vulnerability data provided and shown as part of your Microsoft Defender for Endpoint services is made available to you in its raw form, “AS IS”, from Red Hat, Inc., and might not be up to date. The data that is accessible in the Red Hat Security Data API is licensed under the Creative Commons Attribution 4.0 International License. You bear the risk in using this data. Microsoft and its third-party suppliers disclaim any and all liability for consequential and other indirect damages and implied warranties, including implied warranties of non-infringement, merchantability and fitness for a particular purpose. © 2020 Red Hat. All rights reserved. © 2020 Microsoft. All rights reserved.”
 
 ## Related articles
 
