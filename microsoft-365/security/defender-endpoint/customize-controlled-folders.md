@@ -64,9 +64,9 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. Right-click the Group Policy Object you want to configure, and then and select **Edit**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. In the **Group Policy Management Editor**, go to **Computer configuration** > **Policies** > **Administrative templates**.
+3. In your **Group Policy Management Editor**, go to **Computer configuration** > **Policies** > **Administrative templates**.
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
 
@@ -78,17 +78,17 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 1. Type **PowerShell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
 
-2. Enter the following cmdlet:
+2. Type the following PowerShell cmdlet, replacing `<the folder to be protected>` with the folder's path (such as `"c:\apps\"`):
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
-3. Repeat step 2 until you have added all the folders you want to protect. Folders that are added are visible in the Windows Security app.
+3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   ![Screenshot of a PowerShell window with the cmdlet above entered](/microsoft-365/security/defender-endpoint/images/cfa-allow-folder-ps)
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="PowerShell window with cmdlet shown":::
 
 > [!IMPORTANT]
-> Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
+> Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
 
 ### Use MDM CSPs to protect additional folders
 
