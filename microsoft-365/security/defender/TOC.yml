@@ -94,12 +94,14 @@
                 href: manage-incidents.md
               - name: Incident response
                 items: 
-                 - name: Analyze incidents
+                 - name: Investigate incidents
                    href: investigate-incidents.md
-                 - name: Analyze alerts
+                 - name: Investigate alerts
                    href: investigate-alerts.md    
-                 - name: Analyze users 
+                 - name: Investigate users 
                    href: investigate-users.md                  
+                 - name: Incident response playbooks
+                   href: https://docs.microsoft.com/security/compass/incident-response-playbooks
                  - name: Respond to your first incident
                    items: 
                     - name: Introduction

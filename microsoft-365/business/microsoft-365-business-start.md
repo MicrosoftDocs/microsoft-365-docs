@@ -100,7 +100,7 @@ If you retain a local Active Directory that contains some on-premises resources 
   
 - Contact your partner.
     
-- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](../admin/contact-support-for-business-products.md)**
+- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
     
 ## Related content
 
