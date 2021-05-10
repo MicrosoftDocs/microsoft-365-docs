@@ -26,10 +26,14 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 > [!NOTE]
 > There's a current issue that results in labeled and encrypted files failing to open in Office on the web:
 >
-> While we investigate an issue related to specific document properties, you won't be able to open many files in Office on the web. For these files, you can continue to open and edit them in your desktop and mobile Office apps.
+> While we investigate an issue related to specific document properties, you won't be able to open many files in Office on the web. For these files, you can continue to open and edit them in your desktop and mobile Office apps. Or, do the following:
+>
+> 1. Open the file in the Office desktop app.
+> 2. Remove the label that applies encryption.
+> 3. Save the file in the original location (SharePoint or OneDrive), and close the desktop app.
+> 4. Open the file in Office on the web, and reapply the original label that applies encryption.
 > 
 > Files that are created and edited only in Office on the web aren't affected.
-
 
 Enable sensitivity labels for Office files in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
@@ -74,12 +78,6 @@ These new capabilities work with [sensitivity labels](sensitivity-labels.md) onl
 Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable sensitivity labels for Office files in SharePoint and OneDrive, users who run an older version of the sync app are prompted to update it.
 
 ## Limitations
-
-- If you experience problems opening labeled and encrypted files in Office on the web, try the following:
-    1. Open the file in the Office desktop app.
-    2. Remove the label that applies encryption.
-    3. Save the file in the original location (SharePoint or OneDrive), and close the desktop app.
-    4. Open the file in Office on the web, and reapply the original label that applies encryption. While the current issue for some document properties remains (see the note at the top of the page), open and edit this file only in Office on the web.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     
