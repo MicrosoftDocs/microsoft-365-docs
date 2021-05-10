@@ -27,7 +27,7 @@ In the Viva Topics topic center, a knowledge manager can view the **Manage topic
 
    ![Topic Center](../media/knowledge-management/topic-center.png)  
 
-## Topics stages
+## Topic stages
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle stages: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
