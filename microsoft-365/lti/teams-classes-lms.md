@@ -18,7 +18,7 @@ description: "Integrate Microsoft Teams classes in your Learning Management Syst
 
 # Use Microsoft Teams classes in your Learning Management System
 
-[!INCLUDE [preview-feature](includes/prelease.md)]
+[!INCLUDE [preview-feature](../includes/prelease.md)]
 
 Microsoft Teams class teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
@@ -28,7 +28,7 @@ The following tasks are completed by the Microsoft Office 365 admin and the Blac
 
 Before managing the integration within Blackboard Learn Ultra, the Microsoft Office 365 admin must approve the Blackboard **MSFT Teams for Learn Ultra Azure** app for the institution’s Microsoft Azure tenant.
 
-1. Find your Microsoft Tenant ID. See [how to find the tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
+1. Find your Microsoft Tenant ID. See [how to find the tenant](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
 2. Redirect the Microsoft Identity Platform Admin Consent Endpoint according to the following example:
 
