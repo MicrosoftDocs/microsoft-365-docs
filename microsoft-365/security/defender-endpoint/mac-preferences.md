@@ -24,7 +24,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
@@ -101,6 +100,7 @@ Specify the merge policy for exclusions. This can be a combination of administra
 #### Scan exclusions
 
 Specify entities excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
+(Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |Section|Value|
 |:---|:---|
@@ -131,6 +131,27 @@ Specify content excluded from being scanned by full file path.
 | **Data type** | String |
 | **Possible values** | valid paths |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
+
+## Supported exclusion types
+
+The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
+
+Exclusion | Definition | Examples
+---|---|---
+File extension | All files with the extension, anywhere on the device | `.test`
+File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder | All files under the specified folder (recursively) | `/var/log/`<br/>`/var/*/`
+Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> The paths above must be hard links, not symbolic links, in order to be successfully excluded. You can check if a path is a symbolic link by running `file <path-name>`.
+
+File, folder, and process exclusions support the following wildcards:
+
+Wildcard | Description | Example | Matches | Does not match
+---|---|---|---|---
+\* |	Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### Path type (file / directory)
 
@@ -572,6 +593,14 @@ The following templates contain entries for all settings described in this docum
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -711,6 +740,14 @@ The following templates contain entries for all settings described in this docum
                             <true/>
                             <key>path</key>
                             <string>/home</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
                         </dict>
                         <dict>
                             <key>$type</key>

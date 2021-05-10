@@ -22,13 +22,7 @@ ms.technology: mde
 
 # Intune-based deployment for Microsoft Defender for Endpoint on macOS
 
-
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
-> [!NOTE]
-> This documentation explains the legacy method for deploying and configuring Microsoft Defender for Endpoint on macOS devices. The native experience is now available in the MEM console. The release of the native UI in the MEM console provide admins with a much simpler way to configure and deploy the application and send it down to macOS devices. <br> <br>
->The blog post [MEM simplifies deployment of Microsoft Defender for Endpoint for macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explains the new features. To configure the app, go to [Settings for Microsoft Defender for Endpoint on macOS in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). To deploy the app, go to [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
 
 **Applies to:**
 
@@ -46,7 +40,6 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
-
 ## Overview
 
 The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune. More detailed steps are available below.
@@ -62,9 +55,9 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Microsoft Defender for Endpoint configuration settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-10) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
-## Download installation and onboarding packages
+## Download the onboarding package
 
-Download the installation and onboarding packages from Microsoft Defender Security Center:
+Download the onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.
 
@@ -72,26 +65,9 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
     ![Onboarding settings screenshot](images/atp-mac-install.png)
 
-3. Select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+3. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-4. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
-
-5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
-
-6. From a command prompt, verify that you have the three files.
-  
-
-    ```bash
-    ls -l
-    ```
-
-    ```Output
-    total 721688
-    -rw-r--r--  1 test  staff     269280 Mar 15 11:25 IntuneAppUtil
-    -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
-    -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    ```
-7. Extract the contents of the .zip files:
+4. Extract the contents of the .zip file:
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
@@ -104,29 +80,146 @@ Download the installation and onboarding packages from Microsoft Defender Securi
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
 
-8. Make IntuneAppUtil an executable:
+## Create System Configuration profiles
 
-    ```bash
-    chmod +x IntuneAppUtil
-    ```
+The next step is to create system configuration profiles that Defender needs.
+In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** > **Configuration profiles**.
 
-9. Create the wdav.pkg.intunemac package from wdav.pkg:
+### Onboarding blob
 
-    ```bash
-    ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
-    ```
-    ```Output
-    Microsoft Intune Application Utility for Mac OS X
-    Version: 1.0.0.0
-    Copyright 2018 Microsoft Corporation
+This profile contains a license information for Defender, without it Defender will report that it is not licensed.
 
-    Creating intunemac file for /Users/test/Downloads/wdav.pkg
-    Composing the intunemac file output
-    Output written to ./wdav.pkg.intunemac.
+1. Select **Create Profile** under **Configuration Profiles**
+1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
 
-    IntuneAppUtil successfully processed "wdav.pkg",
-    to deploy refer to the product documentation.
-    ```
+    ![Custom Configuration Profile creation](images/mdatp-6-systemconfigurationprofiles-1.png)
+
+1. Choose a name for the profile, e.g. "MDATP onboarding for macOS". Click **Next**.
+
+    ![Custom Configuration Profile - name](images/mdatp-6-systemconfigurationprofiles-2.png)
+
+1. Choose a name for the configuration profile name, e.g. "MDATP onboarding for macOS".
+1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as Configuration profile file.
+
+    ![Import a configuration from a file for Custom Configuration Profile](images/mdatp-6-systemconfigurationprofiles.png)
+
+1. Click **Next**.
+1. Assign devices on the **Assignment** tab. Click **Next**.
+
+    ![Custom Configuration Profile - assignment](images/mdatp-6-systemconfigurationprofiles-2.png)
+
+1. Review and **Create**.
+1. Open **Devices** > **Configuration profiles**, you can see your created profile there.
+
+    ![Custom Configuration Profile - done](images/mdatp-6-systemconfigurationprofiles-3.png)
+
+### Approve System Extensions
+
+This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored on older macOS.
+
+1. Select **Create Profile** under **Configuration Profiles**
+1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Extensions**. Click **Create**.
+1. In the **Basics** tab, give a name to this new profile.
+1. In the **Configuration settings** tab, expand **System Extensions** add the following entries in the **Allowed system extensions** section:
+
+    Bundle identifier         | Team identifier
+    --------------------------|----------------
+    com.microsoft.wdav.epsext | UBF8T346G9
+    com.microsoft.wdav.netext | UBF8T346G9
+
+    > [!div class="mx-imgBorder"]
+    > ![System extension settings](images/mac-system-extension-intune2.png)
+
+1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
+1. Review and create this configuration profile.
+
+### Kernel Extensions
+
+This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored on newer macOS.
+
+> [!CAUTION]
+> Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
+
+1. Select **Create Profile** under **Configuration Profiles**
+1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Extensions**. Click **Create**.
+1. In the **Basics** tab, give a name to this new profile.
+1. In the **Configuration settings** tab, expand **Kernel Extensions**.
+1. Set **Team identifier** to **UBF8T346G9** and click Next.
+
+    Bundle identifier         | Team identifier
+    --------------------------|----------------
+    com.microsoft.wdav.epsext | UBF8T346G9
+    com.microsoft.wdav.netext | UBF8T346G9
+
+    > ![Kernel extension settings](images/mac-kernel-extension-intune2.png)
+
+1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
+1. Review and create this configuration profile.
+
+### Full Disk Access
+
+   > [!CAUTION]
+   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
+   >
+   > This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
+
+Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Full Disk Access" as profile name, and downloaded **fulldisk.mobileconfig** as Configuration profile name.
+
+### Network Filter
+
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+
+Download [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **netfilter.mobileconfig** as Configuration profile name.
+
+### Notifications
+
+This profile is used to allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina) or newer.
+
+Download [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "MDATP Network Filter" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
+
+### View Status
+
+Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
+
+> [!div class="mx-imgBorder"]
+> ![View of Device Status in Monitor](images/mdatp-7-devicestatusblade.png)
+
+## Publish application
+
+This step enables deploying Microsoft Defender to enrolled machines.
+
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
+
+    > ![Ready to create application](images/mdatp-8-app-before.png)
+
+1. Select By platform => macOS => Add.
+1. Choose **App type**=**macOS**, click **Select**
+
+    > ![Specify application type](images/mdatp-9-app-type.png)
+
+1. Keep default values, click **Next**.
+
+    > ![Application properties](images/mdatp-10-properties.png)
+
+1. Add assignments, click **Next***.
+
+    > ![Intune assignments info screenshot](images/mdatp-11-assignments.png)
+
+1. Review and **Create**.
+1. You can visit **Apps** => **By platform** => **macOS** to see it on the list of all applications.
+
+    > ![Applications list](images/mdatp-12-applications.png)
+
+(You can find detailed information on the [Intune's page for Defender deployment](https://docs.microsoft.com/en-us/mem/intune/apps/apps-advanced-threat-protection-macos))
+
+   > [!CAUTION]
+   > You have to create all required configuration profiles and push them to all machines, as explained above.
 
 ## Client device setup
 
@@ -134,7 +227,7 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 
 1. Confirm device management.
 
-   ![Confirm device management screenshot](images/mdatp-3-confirmdevicemgmt.png)
+    ![Confirm device management screenshot](images/mdatp-3-confirmdevicemgmt.png)
 
     Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
@@ -148,110 +241,6 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 
    > [!div class="mx-imgBorder"]
    > ![Add Devices screenshot](images/mdatp-5-alldevices.png)
-
-## Approve System Extensions
-
-To approve the system extensions:
-
-1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
-
-2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
-
-3. In the **Basics** tab, give a name to this new profile.
-
-4. In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:
-
-    Bundle identifier         | Team identifier
-    --------------------------|----------------
-    com.microsoft.wdav.epsext | UBF8T346G9
-    com.microsoft.wdav.netext | UBF8T346G9
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the extension settings in Configuration settings on the Basics tab](images/mac-system-extension-intune2.png)
-
-5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
-
-6. Review and create this configuration profile.
-
-## Create System Configuration profiles
-
-1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
-
-2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select **Configure**.
-
-3. Open the configuration profile and upload intune/kext.xml. This file was created in one of the preceding sections.
-
-4. Select **OK**.
-
-    ![Import a configuration from a file for Custom Configuration Profile](images/mdatp-6-systemconfigurationprofiles.png)
-
-5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
-
-6. Repeat steps 1 through 5 for more profiles.
-
-7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
-
-8. Download **fulldisk.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and save it as **tcc.xml**. Create another profile, give it any name and upload this file to it.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
-
-   > [!CAUTION]
-   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
-   >
-   > This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
-
-9. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality. Download **netfilter.mobileconfig** from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), save it as netext.xml and deploy it using the same steps as in the previous sections. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
-
-10. To allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina), download `notif.mobileconfig` from [our GitHub repository](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) and import it as a custom payload. <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
-
-11. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
-
-Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
-
-> [!div class="mx-imgBorder"]
-> ![View of Device Status in Monitor](images/mdatp-7-devicestatusblade.png)
-
-## Publish application
-
-1. In Intune, open the **Manage > Client apps** blade. Select **Apps > Add**.
-
-2. Select **App type=Other/Line-of-business app**.
-
-3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
-
-4. Select **Configure** and add the required information.
-
-5. Use **macOS High Sierra 10.14** as the minimum OS.
-
-6. Set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
-
-    > [!CAUTION]
-    > Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) for additional information about how the product is updated.
-    >
-    > If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Microsoft Defender for Endpoint. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) for additional information about how the product is updated. If you deployed Microsoft Defender for Endpoint with *Ignore app version* set to **No**, please change it to **Yes**. If Microsoft Defender for Endpoint still cannot be installed on a client device, then uninstall Microsoft Defender for Endpoint and push the updated policy.
-     
-    > [!div class="mx-imgBorder"]
-    > ![Display of App information in App add](images/mdatp-8-intuneappinfo.png)
-
-7. Select **OK** and **Add**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Device status shown in Notifications window](images/mdatp-9-intunepkginfo.png)
-
-8. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Client apps screenshot](images/mdatp-10-clientapps.png)
-
-9. Change **Assignment type** to **Required**.
-
-10. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Select **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Intune assignments info screenshot](images/mdatp-11-assignments.png)
-
-11. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
-
-    > [!div class="mx-imgBorder"]
-    > ![Intune device status screenshot](images/mdatp-12-deviceinstall.png)
 
 ## Verify client device state
 
