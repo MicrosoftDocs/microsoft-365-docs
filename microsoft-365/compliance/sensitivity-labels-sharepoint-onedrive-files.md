@@ -26,7 +26,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 > [!NOTE]
 > There's a current issue that results in labeled and encrypted files failing to open in Office on the web:
 >
-> While we investigate an issue for problems with specific document properties, you won't be able to open many files in Office on the web to help safeguard against potential data loss. For these files, you can continue to open and edit them in your desktop and mobile Office apps.
+> While we investigate an issue related to specific document properties, you won't be able to open many files in Office on the web. For these files, you can continue to open and edit them in your desktop and mobile Office apps.
 > 
 > Files that are created and edited only in Office on the web aren't affected.
 
