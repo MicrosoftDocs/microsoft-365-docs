@@ -37,9 +37,52 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Overview of planning process
 
+The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduce the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. Planning requirements that are unique to a location, like On-premises scanner are covered in  <!--LIST OF LINKS TO THOSE DOCS-->
+<!-->
+- DLP planning for Exchange email
+- DLP planning for SharePoint sites
+- DLP planning for OneDrive accounts
+- DLP planning for Teams chat and channel messages
+- DLP planning for Windows 10 Devices
+- DLP planning for Microsoft Cloud App Security
+- DLP planning for On-premises repositories -->
+
+### Identify stakeholders
+
+When implemented, DLP policies can be applied across large portions of your organization. IT can't develop a broad ranging plan on their own without negative consequences. You need to identify the stakeholders who can describe the regulations, laws and industry standards your organization is subject to, the categories of sensitive items to be protected, the business processes they are used in and the risky behavior that should be limited. In general these needs tend to be 85% regulatory and compliance protection, and 15% intellectual property protection. Here are some suggestions on roles to include in your planning process:
+
+- Regulatory and compliance officers
+- Chief risk officer
+- Legal officers
+- Security and compliance officers
+- Business owners for the data items
+- Business users
+- IT
+
+### Identify the categories of sensitive information to protect
+
+The stakeholders then describe the categories of sensitive information to be protected and the business process that they're used in. <!-- The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.-->
+
+### Set goals and strategy
+
+Once you have identified your stakeholders and you know which sensitive information needs protection and where it's used, the stakeholders can set their protection goals and IT can develop an implementation strategy. 
+ <!--
+### Discovery
+ for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
+
+### IT can start coding test policies
+start small and always in test mode. Note that DLP policies can feed into insider risk.
+
+### Business process owners help with tuning
+ false positive/false negative results and fitting DLP into their business processes.
+
+-->
+
+### Set implementation plan
 
 
-### Questions that impact policy design that you need to get answers to
+
+## Questions that impact policy design that you need to get answers to
 
 As you begin your DLP adoption you can use questions to focus your policy design and implementation efforts.
 
@@ -76,32 +119,10 @@ Different groups in your organization may have different views on what's an acce
 
 **Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, it will require an extra 500 person hours per quarter for the internal auditors to complete the tracking process. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage.
 
-1. What is your tolerance for leakage?
-1. do you want to protect your sensitive items at rest, in motion, in use?
 
 
-### Identify stakeholders
-
-who can describe the categories of sensitive items and business processes they are used in – these needs tend to be 85% regulatory & compliance protection, 15% intellectual property protection from unintentional sharing
-a.	Regulatory and compliance officers
-b.	Chief risk officer
-c.	Legal officers
-d.	Security and compliance officers
-e.	Business owners for the data items
-f.	IT
 
 
-### They identify the categories of sensitive items to protect and the business
-This group then describes the categories of items (email, docs, chat) and the business process (data subject to regulation and proprietary data) that they are used in. The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.
-
-### Start looking/discovery
- for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
-
-### IT can start coding test policies
-start small and always in test mode. Note that DLP policies can feed into insider risk.
-
-### Business process owners help with tuning
- false positive/false negative results and fitting DLP into their business processes.
 
 ### Plan for training of end users
 
