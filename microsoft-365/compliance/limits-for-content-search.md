@@ -1,5 +1,5 @@
 ---
-title: "Limits for content search and Core eDiscovery in the compliance center"
+title: "Limits for Content search and Core eDiscovery in the compliance center"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,11 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search feature in the Microsoft 365 compliance center, such as the maximum number of simultaneous searches. These search limits also apply to searches associated with Core eDiscovery cases."
+description: "Learn about the limits in effect for the Content search and Core eDiscovery features in the Microsoft 365 compliance center."
 ---
 
-# Limits for Content search 
-Various limits are applied to the Content search tool in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for Content Search or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting content searches.
+# Limits for eDiscovery search 
+
+Various limits are applied to eDiscovery search tools in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
+
+For limits related to the Advanced eDiscovery tool, see [Limits in Advanced eDiscovery](limits-ediscovery20.md)
   
 ## Search limits
 
