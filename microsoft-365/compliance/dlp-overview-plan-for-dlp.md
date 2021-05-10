@@ -38,7 +38,7 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 ## Overview of planning process
 
 The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduce the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. Planning requirements that are unique to a location, like On-premises scanner are covered in  <!--LIST OF LINKS TO THOSE DOCS-->
-<!-->
+<!--
 - DLP planning for Exchange email
 - DLP planning for SharePoint sites
 - DLP planning for OneDrive accounts
@@ -95,7 +95,7 @@ Because many organizations come to DLP with the goal of regulatory compliance, a
 
 #### What sensitive items does your organization have that must be protected from leakage?
 
-Once your organization knows where it stands in terms of regulatory compliance needs, you'll have some idea of what sensitive items need to be protected from leakage and how you want to prioritize policy implementation to protect them. This will help you choose the most appropriate DLP policy templates. Microsoft 365 comes with pre-configured DLP templates for Financial, Medical and health, Privacy, and you can build your own using the Custom template. As you design and create your actual DLP policies, knowing the answer to this question will also help you choose the right sensitive information type [sensitive information type](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
+Once your organization knows where it stands in terms of regulatory compliance needs, you'll have some idea of what sensitive items need to be protected from leakage and how you want to prioritize policy implementation to protect them. This will help you choose the most appropriate DLP policy templates. Microsoft 365 comes with pre-configured DLP templates for Financial, Medical and health, Privacy, and you can build your own using the Custom template. As you design and create your actual DLP policies, knowing the answer to this question will also help you choose the right [sensitive information type](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
 **Example** To get started quickly, you pick the `U.K. Financial Data` policy template which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
 
