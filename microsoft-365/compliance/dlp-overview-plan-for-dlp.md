@@ -48,19 +48,18 @@ As you begin your DLP adoption you can use questions to focus your policy design
 
 Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. It needs to be answered by your legal team and business executives. 
  
-**Example** your organization is subject to financial regulations.
+**Example** Your organization is subject to U.K. financial regulations.
 
 #### What sensitive items does your organization have that must be protected from leakage?
 
 Once your organization knows where it stands in terms of regulatory compliance needs, you'll have some idea of what sensitive items need to be protected from leakage and how you want to prioritize policy implementation to protect them. This will help you choose the most appropriate DLP policy templates. Microsoft 365 comes with pre-configured DLP templates for Financial, Medical and health, Privacy, and you can build your own using the Custom template. As you design and create your actual DLP policies, knowing the answer to this question will also help you choose the right sensitive information type [sensitive information type](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
-**Example** To get started quickly, from the `Financial` category you pick the `U.K. Financial Data` template which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types 
+**Example** To get started quickly, you pick the `U.K. Financial Data` policy template which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
 
 #### Where are the sensitive items and what business processes are they involved in?
 
-You 
+The items that contain your organizations sensitive information are used every day in the course of doing business. You need to know where instances of that sensitive information may occur and what business processes they are used in. This will help you choose the right locations to apply your DLP policies to. Microsoft 365 DLP policies are applied to locations:
 
-Microsoft 365 DLP policies are applied to locations:
 - Exchange email
 - SharePoint sites
 - OneDrive accounts
@@ -69,20 +68,14 @@ Microsoft 365 DLP policies are applied to locations:
 - Microsoft Cloud App Security
 - On-premises repositories
 
+**Example** Your organizations' internal auditors are tracking a set of credit card numbers. They keep a spreadsheet of them in a secure SharePoint site. Several of the employees make copies and save them to their work OneDrive for Business site which is synced to their Windows 10 device. One of them pastes a list of 14 of them in an email and tries to send it to the outside auditors for review. You'd want to apply the policy to the secure SharePoint site, all the internal auditors OneDrive for Business accounts, their Windows 10 devices and Exchange email.
 
-         |
-|What business processes are your sensitive items and data involved in?         |Will help identify the business process and the business process owners that must be involved in 
-|Row5     |         |
-|Row6     |         |
-| |What is your organizations tolerance for leakage?     |         |
+#### What is your organizations tolerance for leakage?
 
+Different groups in your organization may have different views on what's an acceptable level of sensitive item leakage and what's not.
 
-- What is your organizations tolerance for leakage?
-- 
+**Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, it will require an extra 500 person hours per quarter for the internal auditors to complete the tracking process. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage.
 
-1. what business processes are the involved in?
-    1. what are your points of exposure?
-    1. What locations do they flow through in their lifetime?
 1. What is your tolerance for leakage?
 1. do you want to protect your sensitive items at rest, in motion, in use?
 
