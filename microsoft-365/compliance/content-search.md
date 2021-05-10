@@ -88,7 +88,7 @@ To access this content search again or access other content searches listed on t
 
 Here's a list of next steps to perform after you create and run a Content search.
 
-- [Preview search results](preview-content-search-results.md)
+- [Preview search results](preview-ediscovery-search-results.md)
 
 - [View statistics for search results](view-keyword-statistics-for-content-search.md)
 

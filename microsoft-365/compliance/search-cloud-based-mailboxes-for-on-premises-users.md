@@ -79,7 +79,7 @@ Here's how to use Content search in the Microsoft 365 compliance center to searc
 
     - [Create a search](content-search.md)
 
-    - [Preview search results](preview-content-search-results.md)
+    - [Preview search results](preview-ediscovery-search-results.md)
 
     - [Export search results](export-search-results.md)
 
