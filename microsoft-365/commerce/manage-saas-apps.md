@@ -5,15 +5,21 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150 
 description: Learn how to activate and manage third-party apps in Microsoft 365 admin center.
+ms.date: 04/15/2021
 ---
 
 # Manage third-party app subscriptions for your organization

@@ -55,5 +55,5 @@ See these additional investigation paths:
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
