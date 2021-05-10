@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,15 +13,14 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: "Learn how to renew your Microsoft 365 by turning recurring billing off or on."
+ms.date: 05/04/2021
 ---
 
 # Renew Microsoft 365 for business
@@ -44,6 +44,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -55,6 +56,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 2. Select the subscription for which you want to manage recurring billing.
@@ -63,17 +65,15 @@ If you prepaid for your subscription with a product key, your subscription will 
 5. Select **Save**.
 
     > [!NOTE]
+    >
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
     > - When **Recurring billing** is turned off, the subscription isn't cancelled. If you want to keep the subscription active, you must pay the bill manually.
     > - If you turn off **Recurring billing**, the subscription remains active until it expires. You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
-## Related articles
+## Related content
 
-[Reactivate your subscription](reactivate-your-subscription.md)
-  
-[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
-
-[Enter your product key](../enter-your-product-key.md)
-  
-[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md)
+[Reactivate your subscription](reactivate-your-subscription.md) (article)\
+[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md) (article)\
+[Enter your product key](../enter-your-product-key.md) (article)\
+[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md) (article)

@@ -46,7 +46,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 4. Click **App registrations**. Then in the applications list, select the application.
 
-5. Select **Keys** section, then provide a key description and specify the key validity duration.
+5. Select **Certificates & Secrets** section, Click on New Client Secret, then provide a description and specify the validity duration.
 
 6. Click **Save**. The key value is displayed.
 

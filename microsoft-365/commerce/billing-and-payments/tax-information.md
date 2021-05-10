@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,14 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
 ---
 
 # Tax information
@@ -30,6 +31,7 @@ Businesses in the following countries can provide their VAT number or local equi
 
 :::row:::
     :::column:::
+
 - Armenia
 - Australia
 - Austria
@@ -150,7 +152,7 @@ For example:
 
 ## Apply for tax-exempt status
 
-If you qualify for tax-exempt status in your market, [start a service request](/office365/admin/contact-support-for-business-products) to establish tax exempt status for your organization.
+If you qualify for tax-exempt status in your market, [start a service request](../../business-video/get-help-support.md) to establish tax exempt status for your organization.
 
 |Country or locale | Documentation |
 |------------------|----------------|
