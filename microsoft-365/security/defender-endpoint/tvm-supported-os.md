@@ -38,7 +38,7 @@ Before you begin, ensure that you meet the following operating system or platfor
 
 ## Capabilities per supported operating systems (OS) and platforms
 
-In the following table, "Yes" indicates that a threat and vulnerability management capability is supported for the OS or platform on that row; "No" indicates that it is not supported.
+In the following table, "Yes" indicates that a threat and vulnerability management capability is supported for the OS or platform on that row.
 
 Supported OS or platform | OS vulnerabilities | Software product vulnerabilities | OS configuration assessment | Security controls configuration assessment | Software product configuration assessment
 :---|:---|:---|:---|:---|:---
@@ -49,7 +49,7 @@ Windows 10, version 1709 or later | Yes | Yes | Yes | Yes | Yes
 Windows Server 2008 R2 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2012 R2 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2016 | Yes | Yes | Yes | Yes | Yes
-Windows Server 2019 | Yes | Yes | Yes | Yes | Yes
+Windows Server 2019 | Yes | Yes | Yes \(preview\) | Yes \(preview\) | Yes \(preview\)
 macOS 10.14 "Mojave" and above | Yes | Yes | Yes | Yes | Yes
 Red Hat Enterprise Linux 7.2 or higher \(\* See "Important" notice below\) | Yes | Yes | Yes | Yes | Yes
 CentOS 7.2 or higher | Yes | Yes | Yes | Yes | Yes
