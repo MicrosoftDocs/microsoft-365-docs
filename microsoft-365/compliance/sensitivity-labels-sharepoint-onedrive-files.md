@@ -67,7 +67,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## Limitations
 
-- SharePoint and OneDrive can't process labeled and encrypted files that use Power Query, custom add-ins, or Office files that have custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. For these files, either apply a label without encryption so that they can be opened in Office on the web, or instruct users to open the files in their desktop apps.
+- SharePoint and OneDrive can't process labeled and encrypted files that have PowerQuery data or data stored by custom add-ins, or custom XML parts that have custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. For these files, either apply a label without encryption so that they can be opened in Office on the web, or instruct users to open the files in their desktop apps.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     
