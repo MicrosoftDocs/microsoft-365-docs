@@ -23,12 +23,9 @@ localization_priority: None
 
 </br>
 
-
 In the Viva Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-   ![Topic Center](../media/knowledge-management/topic-center.png) </br> 
-
-
+   ![Topic Center](../media/knowledge-management/topic-center.png)  
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle stages: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
@@ -39,10 +36,10 @@ Knowledge managers help to guide discovered topics through the various topic lif
 - **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
  
 - **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
-- 
+
 - **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
-On the **Manage topics** page, a knowledge manager can see whether the topic was confirmed or removed by user votes or by a specific person. For example, for topics removed by user votes, the reason is shown in the **Removed by** column as **User votes** rather than a person's name. 
+On the **Manage topics** page, a knowledge manager can see whether a topic was confirmed or removed by user votes or by a specific person. For example, for topics removed by user votes, the reason is shown in the **Removed by** column as **User votes** rather than a person's name. 
 
    ![Screenshot of Manage topics page showing removed topics list with User votes highlighted.](../media/knowledge-management/removed-topics-user-votes.png) 
 
