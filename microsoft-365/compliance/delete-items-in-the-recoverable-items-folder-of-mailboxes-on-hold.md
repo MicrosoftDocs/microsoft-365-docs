@@ -94,7 +94,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3.
+   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3. This may take 24 hours to replicate.
 
    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line. 
