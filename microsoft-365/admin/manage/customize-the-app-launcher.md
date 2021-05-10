@@ -61,7 +61,7 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
   
 ## Edit or delete a custom tile
 
-1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile**</a> tab.
+1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile** tab.
     
 2. On the **Organization profile** page, next to   **Add custom tiles for your organization**, select **Edit**.
 
