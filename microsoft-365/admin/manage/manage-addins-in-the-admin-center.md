@@ -95,9 +95,7 @@ As an organization you may wish to prevent the download of new Office add-ins fr
     - Add-ins for Word, Excel, and PowerPoint 2016 from:
         
       - Windows
-        
       - Mac
-        
       - Office
         
         
