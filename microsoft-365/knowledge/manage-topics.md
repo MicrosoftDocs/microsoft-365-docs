@@ -30,17 +30,20 @@ In the Viva Topics topic center, a knowledge manager can view the **Manage topic
 
 
 
-Knowledge managers help to guide discovered topics through the various topic lifecycle stages:
+Knowledge managers help to guide discovered topics through the various topic lifecycle stages: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-- **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties.
-- **Confirmed**: A topic that has been suggested by AI is validated. Validation is done by confirmation from a knowledge manager. Additionally, a topic can be confirmed if there is a net positive 2 votes from end users received via the feedback mechanisms on the topic card.
+   ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) 
+
+- **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
+
+- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if you have one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+ 
 - **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
-- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. The topic can be in any state when it is removed (suggested, confirmed, or published). When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
-
-   ![Topic Lifecycle chart](../media/knowledge-management/topic-lifecycle.png) </br> 
+- 
+- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if you have one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
 > [!Note] 
-> On the Manage Topics page, each knowledge manager will only be able to see topics where they have access to the underlying files and pages connected to the topic. This permission trimming will be reflected in the list of topics that appear in the **Suggested**, **Confirmed**, **Removed**, and **Published** tabs. The topic counts, however, show the total counts in the organization regardless of permissions.
+> On the Manage Topics page, each knowledge manager will only be able to see topics where they have access to the underlying files and pages connected to the topic. This permission trimming will be reflected in the list of topics that appear in the **Suggested**, **Confirmed**, **Published**, and **Removed** tabs. The topic counts, however, show the total counts in the organization regardless of permissions.
 
 ## Requirements
 
