@@ -12,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 03/24/2021
+ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ---
@@ -23,12 +23,10 @@ ms.topic: how-to
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients.
-
-This article describes how to customize controlled folder access capabilities, and includes the following sections:
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is supported on Windows Server 2019 and Windows 10 clients. This article describes how to customize controlled folder access capabilities, and includes the following sections:
 
 - [Protect additional folders](#protect-additional-folders)
 - [Add apps that should be allowed to access protected folders](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -50,7 +48,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 ### Use the Windows Security app to protect additional folders
 
-1. Open the Windows Security app by selecting the shield icon in the task bar or searching the start menu for **Security**.
+1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching for *security* in the Start menu.
 
 2. Select **Virus & threat protection**, and then scroll down to the **Ransomware protection** section.
 
@@ -60,17 +58,21 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 5. Choose **Yes** on the **User Access Control** prompt. The **Protected folders** pane displays.
 
-4. Select **Add a protected folder** and follow the prompts to add folders.
+6. Select **Add a protected folder** and follow the prompts to add folders.
 
 ### Use Group Policy to protect additional folders
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true), right-click the Group Policy Object you want to configure, and then and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
+2. Right-click the Group Policy Object you want to configure, and then and select **Edit**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. In the **Group Policy Management Editor**, go to **Computer configuration** > **Policies** > **Administrative templates**.
 
-4. Double-click **Configured protected folders** and set the option to **Enabled**. Select **Show** and enter each folder.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
+
+5. Double-click **Configured protected folders**, and then set the option to **Enabled**. Select **Show**, and specify each folder that you want to protect.
+
+6. Deploy your Group Policy Object as you usually do.
 
 ### Use PowerShell to protect additional folders
 
