@@ -43,7 +43,7 @@ Web content filtering is available on the major web browsers, with blocks perfor
 Summarizing the benefits:
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## User experience
@@ -77,12 +77,17 @@ Use the filter to locate policies that contain certain blocked categories or are
 To add a new policy:
 
 1. Select **Add policy** on the **Web content filtering** page in **Settings**.
+
 2. Specify a name.
+
 3. Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
+
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
+
 5. Review the summary and save the policy. The policy refresh may take up to 2 hours to apply to your selected devices.
 
-Tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+> [!TIP]
+> You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
 
 >[!NOTE]
 >If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
@@ -94,15 +99,17 @@ Tip: You can deploy a policy without selecting any category on a device group. T
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
 
-1. Create a custom indicator in the Microsoft Defender Security Center by going to **Settings** > **Indicators** > **URL/Domain** > **Add Item**
-2. Enter the domain of the site
+1. Create a custom indicator in the Microsoft Defender Security Center by going to **Settings** > **Indicators** > **URL/Domain** > **Add Item**.
+
+2. Enter the domain of the site.
+
 3. Set the policy action to **Allow**.  
 
 ### Reporting inaccuracies
 
 If you encounter a domain that has been incorrectly categorized, you can report inaccuracies directly to us from the Web Content Filtering reports page. This feature is available only in the new Microsoft 365 security center (security.microsoft.com).
 
-To report an inaccuracy, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
+To report an inaccuracy, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of our Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Report Inaccuracy**.
 
 A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 

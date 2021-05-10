@@ -20,11 +20,11 @@ description: "Overview of Viva Topics."
 
 Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word, PowerPoint, Outlook and Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Viva Topics helps to address a key business issue in many companies - providing the information to users when they need it. For example, new employees need to learn a lot of new information quickly, and encounter terms they know nothing about when reading through company information. To learn more, the user might need to step away from what they are doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.
 
@@ -66,7 +66,7 @@ When a topic is identified and AI determines that it has enough information for 
 
 Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.
 
-See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
 ## Roles
 
@@ -92,7 +92,7 @@ Knowledge managers can:
 
 - Confirm or remove topics that were discovered in your tenant.
 - Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).
-- Edit existing topic pages.</br>
+- Edit existing topic pages.<br/>
 
 See [Manage topics in the Topic center](manage-topics.md) for more information.  
 
@@ -120,7 +120,8 @@ Users that you allow access to see topics in their daily work might be asked if 
 
 Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
 
-See [Topic discovery and curation](./topic-experiences-discovery-curation.md)
+See [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
-
+<!--
 ## See also
+-->
