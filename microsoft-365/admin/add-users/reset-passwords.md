@@ -49,23 +49,7 @@ If you found this video helpful, check out the [complete training series for sma
   
 ## Steps: Reset a business password for a user
 
-::: moniker range="o365-worldwide"
-
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-::: moniker-end
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
@@ -97,7 +81,7 @@ If you forgot your password and can't sign in:
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
-- Or, [call Microsoft Support](../contact-support-for-business-products.md).
+- Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>

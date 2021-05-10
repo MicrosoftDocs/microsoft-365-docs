@@ -152,7 +152,9 @@ After you select a message, you have options for what to do with the messages in
 
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 
-- **Block Sender**: Prevents the sender from sending messages to you.
+- **Block Sender**: Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+
+Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 When you're finished, click **Close**.
 
