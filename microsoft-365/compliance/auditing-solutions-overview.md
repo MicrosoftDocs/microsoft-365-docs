@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - m365-security-compliance
-- m365solution-auditing
+- m365solution-audit
 - m365initiative-compliance
 - m365solution-overview
 search.appverid:
