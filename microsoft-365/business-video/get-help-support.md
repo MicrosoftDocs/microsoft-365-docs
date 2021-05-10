@@ -211,7 +211,7 @@ The administrator is expected to provide initial assistance for the customer's u
 
 ## Feature availability
 
-To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## Follow us on WeChat
 
