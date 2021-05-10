@@ -83,8 +83,8 @@ As an organization you may wish to prevent the download of new Office add-ins fr
   
 1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
-     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > [!NOTE]
+    > The admin center is getting updated to deployment experience with Integrated Apps. If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
     
 3. Select **User owned apps and services**.
     
