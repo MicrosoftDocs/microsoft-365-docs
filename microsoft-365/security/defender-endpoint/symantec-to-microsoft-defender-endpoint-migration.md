@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-symantecmigrate
   - m365solution-overview
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 05/10/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -44,7 +44,7 @@ When you switch from Symantec to Microsoft Defender for Endpoint, you follow a p
 |Phase |Description |
 |--|--|
 |[Prepare for your migration](symantec-to-microsoft-defender-atp-prepare.md) |During the **Prepare** phase, you get Microsoft Defender for Endpoint, plan your roles and permissions, and grant access to the Microsoft Defender Security Center. You also configure your device proxy and internet settings to enable communication between your organization's devices and Microsoft Defender for Endpoint. |
-|[Set up Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |During the **Setup** phase, you configure settings and exclusions for Microsoft Defender Antivirus, Microsoft Defender for Endpoint, and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
+|[Set up Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |During the **Setup** phase, you configure settings and exclusions for Microsoft Defender Antivirus and Symantec Endpoint Protection. You also create device groups, collections, and organizational units. Finally, you configure your antimalware policies and real-time protection settings.|
 |[Onboard to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md) |During the **Onboard** phase, you onboard your devices to Microsoft Defender for Endpoint and verify that those devices are communicating with Microsoft Defender for Endpoint. Last, you uninstall Symantec and make sure protection through Microsoft Defender for Endpoint is in active mode. |
 
 ## What's included in Microsoft Defender for Endpoint?
