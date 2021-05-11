@@ -180,7 +180,7 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
 
    ![MEM rule profile attributes](images/mem02-profile-attributes.png)
 
-3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type an optional description.
+3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
 
    ![MEM basic attributes](images/mem03-1-basics.png)
 
