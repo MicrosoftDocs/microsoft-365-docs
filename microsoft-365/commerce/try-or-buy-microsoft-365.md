@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,11 +13,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+search.appverid: MET150
 description: "Learn how to get a free trial or buy a subscription for Microsoft 365 for business."
 ms.date: 08/07/2020
 ---
@@ -34,12 +34,12 @@ business and try it out for 30 days.
 > [!NOTE]
 > You must use a credit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is  automatically converted to a paid subscription. Your credit card isn't billed until the end of the trial period.
 
-
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
 > **Payment options for Office 365 operated by 21Vianet in China**
 > International credit cards are not accepted. You can pay for your subscription by:
+>
 > - Invoice
 > - Online payment using Alipay or China UnionPay
 > Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
@@ -62,7 +62,7 @@ Business Premium, or Microsoft 365 Apps for business.
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The signup process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -87,7 +87,7 @@ these steps:
 Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the trial subscription that you want to extend. 
+2. On the **Products** tab, select the trial subscription that you want to extend.
 3. On the subscription details page, in the **Subscriptions and payment settings** section, select **Extend end date**.
 4. In the **Extend end date** pane, review the extension information, and if necessary, select a payment method. When you're finished, select **Extend trial**.
 
@@ -136,6 +136,7 @@ the additional subscription they need.
 > You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted.
 
 ::: moniker range="o365-21vianet"
+
 ## Payment options
 
 You can pay for your subscription by:
@@ -147,7 +148,7 @@ You can pay for your subscription by:
 Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
 
 > [!NOTE]
->  International credit cards are not accepted.
+> International credit cards are not accepted.
 ::: moniker-end
 
 ## Next steps
