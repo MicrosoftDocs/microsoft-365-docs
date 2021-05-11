@@ -94,7 +94,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3.
+   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3. It may take up to 24 hours to replicate the change.
 
    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line. 
@@ -213,7 +213,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. It may take up to 24 hours to replicate the change.
 
 ### Retention labels
 
