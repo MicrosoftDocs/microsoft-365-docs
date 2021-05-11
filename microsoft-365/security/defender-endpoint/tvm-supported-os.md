@@ -50,10 +50,10 @@ Windows Server 2008 R2 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2012 R2 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2016 | Yes | Yes | Yes | Yes | Yes
 Windows Server 2019 | Yes | Yes | Yes | Yes | Yes
-macOS 10.14 "Mojave" and above | Yes | Yes | Yes \(preview\) | Yes \(preview\) | Yes \(preview\)
-Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below) | Yes | Yes | Yes | Yes | Yes
-CentOS 7.2 or higher | Yes | Yes | Yes | Yes | Yes
-Ubuntu 16.04 LTS or higher LTS | Yes | Yes | Yes | Yes | Yes
+macOS 10.14 "Mojave" and above | Yes | Yes | Yes (preview) | Yes (preview) | Yes (preview)
+Red Hat Enterprise Linux 7.2 or higher **(preview)** (\* See "Important" notice below) | Yes | Yes | Yes | Yes | Yes
+CentOS 7.2 or higher **(preview)** | Yes | Yes | Yes | Yes | Yes
+Ubuntu 16.04 LTS or higher LTS **(review)** | Yes | Yes | Yes | Yes | Yes
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux:
