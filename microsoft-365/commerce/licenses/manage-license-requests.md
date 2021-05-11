@@ -5,16 +5,19 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- commerce
-ms.custom: MACBillingLicensesRequests
-search.appverid:
-- MET150
+- Adm_O365
+ms.custom: 
+- MACBillingLicensesRequests
+- AdminSurgePortfolio
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
 ms.date: 08/07/2020
 ---

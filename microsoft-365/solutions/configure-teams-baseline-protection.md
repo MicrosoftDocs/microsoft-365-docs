@@ -91,7 +91,7 @@ Microsoft 365 offers additional methods for securing your content. Consider if t
 
 - Have guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/data-loss-prevention-policies.md) to set policies around accessing sensitive information.
+- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
 
 ## See Also
 

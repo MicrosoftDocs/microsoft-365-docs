@@ -12,11 +12,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
 description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."
@@ -31,18 +29,49 @@ The people on your team each need a user account before they can sign in and acc
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Watch: Add users in the admin center
+## Add a user in the admin simplified view
+
+If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+
+::: moniker range="o365-worldwide"
+
+1. Go to the admin center at <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Select **Create an account for another person**.
+3. On the **Add a user account** page, fill in the first and last name, display name, and username they'll use to sign in.
+4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
+5. Select **Add user** and **Download sign-in info** if you want to save this info.
+
+## Watch: Add users in the dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
 
-## Add users one at a time
+## Add users one at a time in the dashboard view
 
- ::: moniker range="o365-worldwide"
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="Screenshot: Admin center dashboard view":::
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+::: moniker range="o365-worldwide"
+
+1. Go to the admin center at <https://admin.microsoft.com>.
 
 ::: moniker-end
 

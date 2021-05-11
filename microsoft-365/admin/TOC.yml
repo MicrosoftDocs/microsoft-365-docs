@@ -107,16 +107,30 @@
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
-           - name: Remove a former employee
-             href: add-users/remove-former-employee.md
-           - name: Access and back up a former user’s data
-             href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore a user
              href: add-users/restore-user.md
            - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
            - name: Upgrade users to the latest apps 
              href: setup/upgrade-users-to-latest-office-client.md
+        - name: Remove a former employee
+          items:
+           - name: Overview
+             href: add-users/remove-former-employee.md
+           - name: Step 1. Prevent an employee from logging in and block access to Microsoft 365 services
+             href: add-users/remove-former-employee-step-1.md
+           - name: Step 2. Save the contents of a former employee's mailbox
+             href: add-users/remove-former-employee-step-2.md
+           - name: Step 3. Forward a former employee's email to another employee or convert to a shared mailbox
+             href: add-users/remove-former-employee-step-3.md
+           - name: Step 4. Give another employee access to OneDrive and Outlook data
+             href: add-users/remove-former-employee-step-4.md
+           - name: Step 5. Wipe and block a former employee's mobile device
+             href: add-users/remove-former-employee-step-5.md
+           - name: Step 6. Remove the Microsoft 365 license from a former employee
+             href: add-users/remove-former-employee-step-6.md
+           - name: Step 7. Delete a former employee's user account
+             href: add-users/remove-former-employee-step-7.md             
         - name: Groups 
           items:
            - name: Groups overview
@@ -260,10 +274,6 @@
            href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
-         - name: Manage Microsoft Rewards 
-           href: manage/manage-microsoft-rewards.md 
-         - name: Manage Message center messages
-           href: manage/manage-messages.md
          - name: Manage Microsoft feedback for your organization
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
@@ -411,4 +421,4 @@
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md

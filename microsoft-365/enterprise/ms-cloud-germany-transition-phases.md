@@ -264,18 +264,26 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 ## Phase 9: Office Apps
 
-**Applies to:** All customers using Office desktop applications (Word, Excel, PowerPoint, Outlook, ...)
+**Applies to:** All customers using Office desktop applications (Word, Excel, PowerPoint, Outlook, OneDrive ...)
+
+In this phase, all client applications and Office Online are performing the client cutover. Azure AD finalizes the tenant scope to point to the Office 365 services and the related endpoints.
 
 Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
+
+In case the Office desktop applications will not work after performing signing out and signing in from the applications, we strongly recommend running the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) on the affected machine to fix the problem.
+
+If the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) has been deployed and scheduled on Windows clients in advance, the sign-out/sign-in procedure is not required.
 
 The best user experience can be ensured by using most recent Office applications. Enterprises should consider using the Monthly Enterprise Channel.
 
 Make sure you have completed the [prework for mobile devices](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) procedure.
 
-| Step(s) | Description | Impact |
-|:-------|:-------|:-------|
-| Clients, Office Online during Office client cutover, Azure AD finalizes the tenant scope to point to the Office 365 services. | This configuration change enables Office clients to update and point to the Office 365 services endpoints. | <ul><li>Notify users to close _all_ Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change. </li><li>Notify users and help desk staff that users *may* see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover. </li><li>All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services.</li><li>Shared machines will require actions that are similar to personal machines, and won't require a special procedure. </li><li>On mobile devices, users must sign out of apps, close them, and then sign in again.</li></ul>|
-||||
+Additional considerations:
+- Notify users to close all Office apps and then sign back in (or force clients to restart and users to sign in) to enable Office clients to pick up the change.
+- Notify users and help desk staff that users may see an Office banner that prompts them to reactivate Office apps within 72 hours of the cutover.
+- All Office applications on personal machines must be closed, and users must sign out then sign in again. In the Yellow activation bar, sign in to reactivate against Office 365 services.
+- Shared machines will require actions that are similar to personal machines, and won't require a special procedure.
+- On mobile devices, users must sign out of apps, close them, and then sign in again.
 
 ## Phase 9: Line-of-business apps
 

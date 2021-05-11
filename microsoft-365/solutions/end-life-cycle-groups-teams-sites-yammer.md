@@ -74,7 +74,8 @@ Teams-specific content is primarily in the form of conversations.
 
 Conversations in channels cannot be copied or moved using native Microsoft Teams functionality. They can however be exported using the Graph API.
 
-Additionally, if a retention policy is applied to Teams, the conversations are retained and available through eDiscovery searches. (Items found in eDiscovery searches can be exported, however there no context or structure from their original source remains – they are simply individual messages.)
+Additionally, if a retention policy is applied to Teams, the conversations are retained and available through eDiscovery searches. Using advanced eDiscovery you can [reconstruct a Teams chat conversation](/microsoft-365/compliance/conversation-review-sets).
+
 
 ### Archiving a team
 
