@@ -1,6 +1,6 @@
 ---
 title: Get your users ready to use devices
-description:  
+description: Information to help you get your users ready to use devices.
 keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: jaimeo
