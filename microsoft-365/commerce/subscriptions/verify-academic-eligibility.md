@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,10 +14,10 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 ms.custom: 
-search.appverid:
-- MET150
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
 ms.date: 07/21/2020
 ---
@@ -86,7 +87,7 @@ You can find the expiration date for your free trial subscription on the **Your 
 
 If your school doesn't qualify as a Microsoft Qualified Academic Institution, you can still buy commercial offers in the admin center on the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. If your organization is a nonprofit group, your group might be eligible for subscriptions for non-profits. To learn more, see [Discounts and donations for nonprofits](https://www.microsoft.com/nonprofits/eligibility).
 
-If you have questions about your school's academic eligibility decision, [contact support](../../admin/contact-support-for-business-products.md).
+If you have questions about your school's academic eligibility decision, [contact support](../../business-video/get-help-support.md).
 
 ## Next steps
 

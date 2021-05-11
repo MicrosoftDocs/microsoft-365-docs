@@ -1,5 +1,5 @@
 ---
-title: "Export Content Search results"
+title: "Export Content search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,19 +20,19 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: "Export the search results from a Content Search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
+description: "Export the search results from a Content search in the Microsoft 365 compliance center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Export Content Search results
+# Export Content search results
 
-After a Content Search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
+After a Content search is successfully run, you can export the search results to a local computer. When you export email results, they're downloaded to your computer as PST files. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents are exported. There are other documents and reports included with the exported search results.
   
-Exporting the results of a Content Search involves preparing the results, and then downloading them to a local computer.
+Exporting the results of a Content search involves preparing the results, and then downloading them to a local computer.
   
-## Before you export content search results
+## Before you export search results
 
-- To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export search results, you have to be assigned the Export management role in Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - The computer you use to export the search results has to meet the following system requirements:
   
@@ -52,7 +52,7 @@ Exporting the results of a Content Search involves preparing the results, and th
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- We recommend downloading search results to a local computer. However, to eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+- We recommend downloading search results to a local computer. To eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - To improve performance when downloading search results, consider dividing searches that return a large set of results into smaller searches. For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.
   
@@ -77,55 +77,57 @@ Exporting the results of a Content Search involves preparing the results, and th
     </system.net>
     ```
 
+- If the results of a Content search are older than 7 days and you submit an export job, an error message is displayed prompting you to rerun the search to update the search results. If this happens, cancel the export, rerun the search, and then start the export again.
+
 ## Step 1: Prepare search results for export
 
 The first step is to prepare the search results for exporting. When you prepare results, they are uploaded to a Microsoft-provided Azure Storage location in the Microsoft cloud. Content from mailboxes and sites is uploaded at a maximum rate of 2 GB per hour.
   
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. In the Microsoft 365 compliance center, select the content search that you want to export results from.
   
-2. Sign in using your work or school account.
+2. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
+
+   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+
+   The **Export results** flyout page is displayed. The export options available to export content depend on whether search results are located in mailboxes or sites or a combination of both.
+
+3. Under **Output options**, choose one of the following options:
   
-3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
+   ![Export output options](../media/ExportOutputOptions.png)
+
+    - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only indexed items.
   
-4. On the **Content search** page, select a search. 
+    - **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports indexed and unindexed items.
   
-5. In the details pane, under **Export results to a computer**, click **Start export**.
+    - **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only unindexed items.
+
+      See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content search](partially-indexed-items-in-content-search.md).
+
+4. Under **Export Exchange content as**, choose one of the following options:
   
-    > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
+   ![Exchange options](../media/ExchangeExportOptions.png)
+
+    - **One PST file for each mailbox**: Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
   
-6. On the **Export the search results** page, under **Output options**, choose one of the following options:
+    - **One PST file containing all messages**: Exports a single PST file (named *Exchange.pst*) that contains the search results from all source mailboxes included in the search. This option reproduces the mailbox folder structure for each message.
   
-    - All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons
+    - **One PST file containing all messages in a single folder**: Exports search results to a single PST file where all messages are located in a single, top-level folder. This option lets reviewers review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item.
   
-    - All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons
+    - **Individual messages**: Exports search results as individual email messages, using the .msg format. If you select this option, email search results are exported to a folder in the file system. The folder path for individual messages is the same as the one used if you exported the results to a PST file.
   
-    - Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons
+5. Configure the following additional options:
+
+   ![Exchange options](../media/OtherExportOptions.png)
+
+   1. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
   
-    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+      If you select this option, only one copy of a message will be exported even if multiple copies of the same message are found in the mailboxes that were searched. The export results report (which is a file named Results.csv) will contain a row for every copy of a duplicate message so that you can identify the mailboxes (or public folders) that contain a copy of the duplicate message. For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
   
-7. Under **Export Exchange content as**, choose one of the following options:
+   2. Select the **Include versions for SharePoint files** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites.
   
-    - **One PST file for each mailbox:** Exports one PST file for each user mailbox that contains search results. Any results from the user's archive mailbox are included in the same PST file. This option reproduces the mailbox folder structure from the source mailbox.
+   3. Select the **Export files in a compressed (zipped) folder. Includes only individual messages and SharePoint documents** checkbox to export search results to compressed folders. This option appears only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section.
   
-    - **One PST file containing all messages:** Exports a single PST file (named *Exchange.pst*) that contains the search results from all source mailboxes included in the search. This option reproduces the mailbox folder structure for each message.
-  
-    - **One PST file containing all messages in a single folder:** Exports search results to a single PST file where all messages are located in a single, top-level folder. This option lets reviewers review items in chronological order (items are sorted by sent date) without having to navigate the original mailbox folder structure for each item.
-  
-    - **Individual messages:** Exports search results as individual email messages, using the .msg format. If you select this option, email search results are exported to a folder in the file system. The folder path for individual messages is the same as the one used if you exported the results to PST files.
-  
-      > [!IMPORTANT]
-      > To decrypt RMS-protected messages when they're exported, you must export email search results as individual messages. Encrypted messages will remain encrypted if you export the search results as a PST file. For more information, see [Decrypting RMS-protected email messages and encrypted file attachments](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) in this article.
-  
-8. Click the **Enable de-duplication** checkbox to exclude duplicate messages. This option appears only if the content sources of the search include Exchange mailboxes or public folders. 
-  
-    If you select this option, only one copy of a message will be exported even if multiple copies of the same message are found in the mailboxes that were searched. The export results report (Results.csv) will contain a row for every copy of a duplicate message so that you can identify the mailboxes (or public folders) that contain a copy of the duplicate message. For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
-  
-9. Click the **Include versions for SharePoint documents** checkbox to export all versions of SharePoint documents. This option appears only if the content sources of the search include SharePoint or OneDrive for Business sites. 
-  
-10. Click the **Export files in a compressed (zipped) folder** checkbox to export search results to compressed folders. This option is available only when you choose to export Exchange items as individual messages and when the search results include SharePoint or OneDrive documents. This option is primarily used to work around the 260 character limit in Windows file path names when items are exported. See the "Filenames of exported items" in the [More information](#more-information) section. 
-  
-11. Click **Start export**. The search results are prepared for downloading, which means they're being uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
+6. Click **Export** to start the export process. The search results are prepared for downloading, which means they're collected from the original content locations and then uploaded to an Azure Storage location in the Microsoft cloud. This may take several minutes.
 
 See the next section for instructions to download the exported search results.
   
@@ -133,7 +135,7 @@ See the next section for instructions to download the exported search results.
 
 The next step is to download the search results from the Azure Storage location to your local computer.
   
-1. On the **Content search** page, click the **Exports** tab. 
+1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
   
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
   
@@ -141,7 +143,10 @@ The next step is to download the search results from the Azure Storage location 
 
 3. On the flyout page under **Export key**, click **Copy to clipboard**. You use this key in step 6 to download the search results.
   
-4. Click **Download results**.
+   > [!IMPORTANT]
+   > Because anyone can install and start the eDiscovery Export tool, and then use this key to download the search results, be sure to take precautions to protect this key just like you would protect passwords or other security-related information.
+
+4. At the top of the flyout page, click **Download results**.
 
 5. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
 
@@ -221,10 +226,10 @@ For information about limits when exporting content search results, see the "Exp
 
   - **Skipped Items** When you export search results from SharePoint and OneDrive for Business sites, the export will usually include a skipped items report (SkippedItems.csv). The items cited in this report are typically items that won't be downloaded, such as a folder or a document set. Not exporting these types of items is by design. For other items that were skipped, the 'Error Type' and 'Error Details' field in the skipped items report show the reason the item was skipped and wasn't downloaded with the other search results.
 
-  - **Trace Log** Contains detailed logging information about the export process and can help uncover issues during export.
+  - **Trace.log** Contains detailed logging information about the export process and can help uncover issues during export. If you open a ticket with Microsoft Support about an issue related to exporting search results, you may be asked to provide this trace log.
   
     > [!NOTE]
-    > You can just export these documents without having to export the actual search results. See [Export a Content Search report](export-a-content-search-report.md). 
+    > You can just export these documents without having to export the actual search results. See [Export a Content search report](export-a-content-search-report.md).
   
 ### Exporting partially indexed items
   
@@ -244,11 +249,11 @@ For information about limits when exporting content search results, see the "Exp
 
     ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
-    1. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
+    a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.
 
-    2. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
+    b. If no indexed items from a site match the search criteria, then partially indexed items from that same site aren't exported. If indexed items from a site are returned in the search results, then the partially indexed items from that site are exported. In other words, only the partially indexed items from sites that contain items that match the search criteria are exported.
 
-    3. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
+    c. All partially indexed items from all sites in the search are exported, regardless of whether a site contains items that match the search criteria.
 
     If you choose to export partially indexed items, partially indexed mailbox items are exported in a separate PST file regardless of the option that you choose under **Export Exchange content as**.
 
@@ -266,7 +271,7 @@ For information about limits when exporting content search results, see the "Exp
   
 ### Decrypting RMS-protected email messages and encrypted file attachments
 
-Any rights-protected (RMS-protected) email messages included in the results of a Content Search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will also be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
+Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will also be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
   
 - As previously explained, to decrypt RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages remain encrypted.
 
@@ -292,7 +297,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
     To help mitigate this issue, consider downloading search results to a location with a short path name; for example, downloading search results to a folder named  `C:\Results` would add fewer characters to the path names of exported items than downloading them to a folder named  `C:\Users\Admin\Desktop\Results`.
 
-- When you export site documents, it's also possible that the original file name of a document will be modified. This happens specifically for documents that have been deleted from a SharePoint or OneDrive for Business site that's been placed on hold. After a document that's on a site that's on hold is deleted, the deleted document is automatically moved to the Preservation Hold library for the site (which was created when the site was placed on hold). When the deleted document is moved to the Preservation Hold library, a randomly generated and unique ID is appended to the original filename of the document. For example, if the filename for a document is  `FY2017Budget.xlsx` and that document is later deleted and moved to the Preservation Hold library, the filename of the document that is moved to the Preservation Hold library is modified to something like  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. If a document in the Preservation Hold library matches the query of a Content Search and you export the results of that search, the exported file has the modified filename; in this example, the filename of the exported document would be  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
+- When you export site documents, it's also possible that the original file name of a document will be modified. This happens specifically for documents that have been deleted from a SharePoint or OneDrive for Business site that's been placed on hold. After a document that's on a site that's on hold is deleted, the deleted document is automatically moved to the Preservation Hold library for the site (which was created when the site was placed on hold). When the deleted document is moved to the Preservation Hold library, a randomly generated and unique ID is appended to the original filename of the document. For example, if the filename for a document is  `FY2017Budget.xlsx` and that document is later deleted and moved to the Preservation Hold library, the filename of the document that is moved to the Preservation Hold library is modified to something like  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. If a document in the Preservation Hold library matches the query of a Content search and you export the results of that search, the exported file has the modified filename; in this example, the filename of the exported document would be  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
 
     When a document on a site that's on hold is modified (and versioning for the document library in the site has been enabled), a copy of the file is automatically created in the Preservation Hold library. In this case, a randomly generated and unique ID is also appended to the filename of the document that's copied to the Preservation Hold library.
 
@@ -302,7 +307,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
   
 - When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location. To resolve this issue, retry [downloading the search results](#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.
 
-- All search results and the export reports are included in a folder that has the same name as the Content Search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
+- All search results and the export reports are included in a folder that has the same name as the Content search. The email messages that were exported are located in a folder named **Exchange**. Documents are located in a folder named **SharePoint**.
 
 - The file system metadata for documents on SharePoint and OneDrive for Business sites is maintained when documents are exported to your local computer. That means document properties, such as created and last modified dates, aren't changed when documents are exported.
 

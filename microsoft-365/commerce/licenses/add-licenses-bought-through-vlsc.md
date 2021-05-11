@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,15 +13,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
+ms.custom:
+- AdminSurgePortfolio
+- commerce_licensing
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to add licenses to your Microsoft 365 subscription purchased through the third-party partner, recognized by Microsoft."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Limits for content search and Core eDiscovery in the compliance center"
+title: "Limits for Content search and Core eDiscovery in the compliance center"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,11 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: "Learn about the limits in effect for the Content search feature in the Microsoft 365 compliance center, such as the maximum number of simultaneous searches. These search limits also apply to searches associated with Core eDiscovery cases."
+description: "Learn about the limits in effect for the Content search and Core eDiscovery features in the Microsoft 365 compliance center."
 ---
 
-# Limits for Content search 
-Various limits are applied to the Content search tool in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for Content Search or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting content searches.
+# Limits for eDiscovery search 
+
+Various limits are applied to eDiscovery search tools in the Microsoft 365 compliance center. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **Core eDiscovery** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
+
+For limits related to the Advanced eDiscovery tool, see [Limits in Advanced eDiscovery](limits-ediscovery20.md)
   
 ## Search limits
 
@@ -40,7 +43,7 @@ The following table lists the search limits when using the content search tool i
 |The maximum number of items per public folder mailbox that are displayed on the preview page when previewing content search results.  <br/> |100  <br/> |
 |The maximum number of items found in all public folder mailboxes that are displayed on the preview page when previewing content search results.  <br/> |200  <br/> |
 |The maximum number of public mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain content that matches the search query, only the top 500 public folder mailboxes with the most search results will be available for preview.  <br/> |500  <br/> |
-|The maximum number of characters for the search query (including operators and conditions) for a search.  <br/><br/> **Note:** This limit takes effect after the query is expanded, which means the query will get expanded against each of the keywords. For example, if a search query has 15 keywords and additional parameters and conditions, the query gets expanded 15 times, each with the other parameters and conditions in the query. So even though the number of characters in search query may be below the limit, it's the expanded query that may contribute to exceeding this limit.  <br/> |**Mailboxes:** 10,000  <br/> **Sites:** 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>2</sup> <br/> |
+|The maximum number of characters for the search query (including operators and conditions) for a search.  <br/><br/> **Note:** This limit takes effect after the query is expanded and includes characters from the keyword query, any search permissions filters applied to the user, and the URLs of all site locations. This means the query will get expanded against each of the keywords. For example, if a search query has 15 keywords and additional parameters and conditions, the query gets expanded 15 times, each with the other parameters and conditions in the query. So even though the number of characters in the search query may be below the limit, it's the expanded query that may contribute to exceeding this limit.  <br/> |**Mailboxes:** 10,000  <br/> **Sites:** 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>2</sup> <br/> |
 |Maximum number of variants returned when using a prefix wildcard to search for an exact phrase in a search query or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
 |The minimum number of alpha characters for prefix wildcards; for example,  `time*`,  `one*`, or  `set*`.  <br/> |3  <br/> |
 |The maximum number of mailboxes in a search that you can delete items in by doing a "search and purge" action (by using the **New-ComplianceSearchAction -Purge** command). If the search that you're doing a purge action for has more source mailboxes than this limit, the purge action will fail. For more information about search and purge, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md).  <br/> |50,000  <br/> |

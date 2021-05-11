@@ -12,15 +12,17 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
+ms.date: 11/13/2020
 ---
 
 # Enter your product key for Microsoft 365 Business Standard
@@ -60,4 +62,4 @@ If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365]
 
 Check out this list of common errors and solutions: [Problems with your Microsoft 365 for business product key?](product-key-errors-and-solutions.md)
   
-Or, [call Microsoft Support](../admin/contact-support-for-business-products.md).
+Or, [call Microsoft Support](../business-video/get-help-support.md).

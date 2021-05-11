@@ -12,24 +12,23 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: "Learn how to activate, renew, or add licenses to an Microsoft 365 for business subscription."
+ms.date: 10/21/2020
 ---
 
 # Enter your product key purchased from Microsoft Open
 
 If you purchased Microsoft 365 for business from a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), this article is for you. Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.
   
- **Need help immediately?** [Call Microsoft Support](../admin/contact-support-for-business-products.md) . 
+ **Need help immediately?** [Call Microsoft Support](..//business-video/get-help-support.md) . 
   
  **Need something else?**
  
@@ -63,4 +62,4 @@ Partners, see [Partners: use a product key to set up a customer subscription](ht
   
 Volume licensing customers can learn more by visiting [Microsoft Volume Licensing Service Center training and resources](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Or, if you want to talk to a person, [call Microsoft Support](../admin/contact-support-for-business-products.md).
+Or, if you want to talk to a person, [call Microsoft Support](../business-video/get-help-support.md).

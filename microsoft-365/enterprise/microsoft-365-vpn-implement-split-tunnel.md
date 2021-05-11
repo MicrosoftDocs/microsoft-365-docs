@@ -285,7 +285,7 @@ No, it does not, the Office 365 endpoints are not the same as the consumer servi
 
 ### How do I apply DLP and protect my sensitive data when the traffic no longer flows through my on-premises solution?
 
-To help you prevent the accidental disclosure of sensitive information, Office 365 has a rich set of [built-in tools](../compliance/data-loss-prevention-policies.md). You can use the built-in [DLP capabilities](../compliance/data-loss-prevention-policies.md) of Teams and SharePoint to detect inappropriately stored or shared sensitive information. If part of your remote work strategy involves a bring-your-own-device (BYOD) policy, you can use [app-based Conditional Access](/azure/active-directory/conditional-access/app-based-conditional-access) to prevent sensitive data from being downloaded to users' personal devices
+To help you prevent the accidental disclosure of sensitive information, Office 365 has a rich set of [built-in tools](../compliance/information-protection.md). You can use the built-in [DLP capabilities](../compliance/dlp-learn-about-dlp.md) of Teams and SharePoint to detect inappropriately stored or shared sensitive information. If part of your remote work strategy involves a bring-your-own-device (BYOD) policy, you can use [app-based Conditional Access](/azure/active-directory/conditional-access/app-based-conditional-access) to prevent sensitive data from being downloaded to users' personal devices
 
 ### How do I evaluate and maintain control of the user's authentication when they are connecting directly?
 

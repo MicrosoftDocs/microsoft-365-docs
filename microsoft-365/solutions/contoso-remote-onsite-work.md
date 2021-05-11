@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -83,4 +83,4 @@ For a new remote device issued to a new worker, when the worker signs in, the de
 
 ## Next step
 
-[Empower the remote workers](empower-people-to-work-remotely.md) in your organization.
+[Set up your infrastructure for remote work](empower-people-to-work-remotely.md) in your organization.

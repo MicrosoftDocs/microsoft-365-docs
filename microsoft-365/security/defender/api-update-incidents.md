@@ -75,10 +75,10 @@ In the request body, supply the values for the fields that should be updated. Ex
 
 Property | Type | Description
 -|-|-
-status | Enum | Specifies the current status of the alert. Possible values are: ```Active```, ```Resolved```, and ```Redirected```.
+status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```Resolved```, and ```Redirected```.
 assignedTo | string | Owner of the incident.
-classification | Enum | Specification of the alert. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-determination | Enum | Specifies the determination of the alert. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
+determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
 
 ## Response

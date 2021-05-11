@@ -1,7 +1,7 @@
 ---
-title: Set up the Microsoft Defender for Endpoint for macOS policies in Jamf Pro
-description: Learn how to set up the Microsoft Defender Endpoint for macOS policies in Jamf Pro
-keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+description: Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -767,7 +767,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    **Manifest File** is not required. Microsoft Defender Advanced Threat Protection works without Manifest File.
+    **Manifest File** is not required. Microsoft Defender for Endpoint works without Manifest File.
     
     **Options tab**<br> Keep default values.
 

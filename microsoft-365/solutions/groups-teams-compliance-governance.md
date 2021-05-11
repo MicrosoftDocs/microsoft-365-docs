@@ -33,11 +33,13 @@ The following table provides a quick reference for the compliance controls avail
 ||Automatically classify sensitive content|[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)|
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
-||Prevent the loss of sensitive information|[Overview of data loss prevention](../compliance/data-loss-prevention-policies.md)|
+||Prevent the loss of sensitive information|[Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)|
 ||Protect sensitive information in chat.|[Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
 ||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
+|Data residency|||
+||Store data in specific geo-locations|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## Information retention
 
@@ -88,7 +90,7 @@ Additional resources:
 
 DLP policies can prevent the accidental sharing of sensitive information across SharePoint, Exchange, and Teams. You can create policies that specify actions to take (such as blocking access) based on a set of rules.
 
-- [Overview of data loss prevention](../compliance/data-loss-prevention-policies.md)
+- [Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)
 
 DLP in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
 
@@ -107,6 +109,14 @@ With information barriers, you can segment your data and users to restrict unwan
 - [Information barriers in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
 - [Use information barriers with SharePoint](/sharepoint/information-barriers)
+
+## Data residency
+
+With Microsoft 365 Multi-Geo, you can provision and store data at rest in the geo locations that you've chosen to meet data residency requirements. In a Multi-Geo environment, your Microsoft 365 tenant consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations where you can store data.
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Plan for Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## Related topics
 

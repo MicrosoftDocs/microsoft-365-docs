@@ -29,7 +29,15 @@ As the admin of an organization, you're responsible for setting password policy 
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
 
-For more information about Microsoft 365 passwords, see these [related articles](#related-articles).
+For more information about Microsoft 365 passwords, see:
+
+[Reset passwords](../add-users/reset-passwords.md) (article)
+
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (artice)
+
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
+
+[Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
   
 ## Understanding password recommendations
 
@@ -129,12 +137,12 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## Related articles
+## Related content
 
-[Reset passwords](../add-users/reset-passwords.md)
+[Reset passwords](../add-users/reset-passwords.md) (article)
 
-[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md)
+[Set an individual user's password to never expire](../add-users/set-password-to-never-expire.md) (article)
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
-[Resend a user's password - Admin Help](../add-users/resend-user-password.md)
+[Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)

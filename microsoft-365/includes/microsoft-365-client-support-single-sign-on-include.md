@@ -26,9 +26,9 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planned|Planned|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|Planned|Planned|N/A|
+|TEAMS|✔|✔|Planned|✔|N/A|
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|WHITEBOARD|N/A|✔|N/A|N/A|✔|
+|WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|N/A|Planned|N/A|

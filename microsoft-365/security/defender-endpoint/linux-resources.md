@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Linux resources
 ms.reviewer: 
 description: Describes resources for Microsoft Defender for Endpoint on Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -76,7 +76,7 @@ The detailed log will be saved to `/var/log/microsoft/mdatp_install.log`. If you
 
 ## Uninstall
 
-There are several ways to uninstall Defender for Endpoint for Linux. If you are using a configuration tool such as Puppet, follow the package uninstallation instructions for the configuration tool.
+There are several ways to uninstall Defender for Endpoint on Linux. If you are using a configuration tool such as Puppet, follow the package uninstallation instructions for the configuration tool.
 
 ### Manual uninstallation
 

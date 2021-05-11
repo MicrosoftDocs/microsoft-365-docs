@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,18 +13,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
+search.appverid: MET150 
 description: "Learn what payment options are available to pay for your Microsoft 365 for business subscription."
 ms.custom: 
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.date: 05/04/2021
 ---
 
 # How to pay for your subscription
+
+> [!IMPORTANT]
+> As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.
 
 You can use a credit or debit card, or bank account to pay for your subscription. In some cases, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
@@ -81,6 +85,7 @@ If you didn’t add the payment method used to pay for the subscription, you mus
  **Choose your "bill-to" country or region from the drop-down menu below.**
 
 > [!div class="op_single_selector"]
+>
 > - **Choose your country or region**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)
@@ -246,7 +251,7 @@ You can only change to paying by invoice if your subscription costs above a cert
 
 You can’t automatically change from paying by invoice to paying with a different payment method. Instead, you must [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) paid for with a credit or debit card or bank account, [move all users to the new subscription](../subscriptions/move-users-different-subscription.md), and then [cancel the old subscription](../subscriptions/cancel-your-subscription.md).
 
-## Related articles
+## Related content
 
 [Manage payment methods](manage-payment-methods.md) (article)\
 [View your bill or invoice](view-your-bill-or-invoice.md) (article)\
