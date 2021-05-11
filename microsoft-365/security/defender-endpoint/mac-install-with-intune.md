@@ -82,12 +82,12 @@ Download the onboarding packages from Microsoft Defender Security Center:
 
 ## Create System Configuration profiles
 
-The next step is to create system configuration profiles that Defender needs.
+The next step is to create system configuration profiles that Microsoft Defender for Endpoint needs.
 In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Devices** > **Configuration profiles**.
 
 ### Onboarding blob
 
-This profile contains a license information for Defender, without it Defender will report that it is not licensed.
+This profile contains a license information for Microsoft Defender for Endpoint, without it it will report that it is not licensed.
 
 1. Select **Create Profile** under **Configuration Profiles**
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
@@ -99,7 +99,7 @@ This profile contains a license information for Defender, without it Defender wi
     ![Custom Configuration Profile - name](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. Choose a name for the configuration profile name, e.g. "MDATP onboarding for macOS".
-1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as Configuration profile file.
+1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.
 
     ![Import a configuration from a file for Custom Configuration Profile](images/mdatp-6-systemconfigurationprofiles.png)
 
@@ -146,11 +146,6 @@ This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored o
 1. In the **Configuration settings** tab, expand **Kernel Extensions**.
 1. Set **Team identifier** to **UBF8T346G9** and click Next.
 
-    Bundle identifier         | Team identifier
-    --------------------------|----------------
-    com.microsoft.wdav.epsext | UBF8T346G9
-    com.microsoft.wdav.netext | UBF8T346G9
-
     > ![Kernel extension settings](images/mac-kernel-extension-intune2.png)
 
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
@@ -192,7 +187,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
 ## Publish application
 
-This step enables deploying Microsoft Defender to enrolled machines.
+This step enables deploying Microsoft Defender for Endpoint to enrolled machines.
 
 1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
 
@@ -252,10 +247,10 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
     ![Profiles screenshot](images/mdatp-15-managementprofileconfig.png)
 
-3. You should also see the Microsoft Defender icon in the top-right corner:
+3. You should also see the Microsoft Defender for Endpoint icon in the top-right corner:
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender icon in status bar screenshot](images/mdatp-icon-bar.png)
+    > ![Microsoft Defender for Endpoint icon in status bar screenshot](images/mdatp-icon-bar.png)
 
 ## Troubleshooting
 

@@ -134,7 +134,7 @@ Specify content excluded from being scanned by full file path.
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
+The follow table shows the exclusion types supported by Defender for Endpoint on Mac.
 
 Exclusion | Definition | Examples
 ---|---|---
