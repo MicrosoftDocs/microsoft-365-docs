@@ -26,64 +26,14 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Microsoft Defender for Endpoint Removable Storage Protection**
 
-<table>
-<thead>
-<tr>
-<th>Policy</th>
-<th>Capability</th>
-<th>Description</th>
-<th>Supported platforms</th>
-</tr>
-</thead>
-<tbody style="vertical-align:top">
-<tr>
-<td rowspan="2" style="vertical-align:top">Device Installation</td>
-<td rowspan="2" style="vertical-align:top">Prevent installation with or without exclusion based on various device properties</td>
-<td><ul>
-<li>Applied at machine level: the same policy applies for any logged on user.</li>
-<li>Supports MEM and GPO.</li>
-<li>Supported  ‘Device Properties’ are listed below.</li>
-<li>For more information on Windows, see <a href="microsoft-365/security/defender-endpoint/control-usb-devices-using-intune"></a>.</li></ul></td>
-<td style="vertical-align:top">Windows 10</td></tr>
-<tr><td><ul><li>Applied at machine level: the same policy applies for any logged on user.</li>
-<li>For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).</li></ul></td>
-<td style="vertical-align:top">macOS Catalina 10.15.4+ (with system extensions enabled)</td></tr>
 
-
-<tr><td rowspan="2" style="vertical-align:top">Removable Storage Access Control</td>
-<td rowspan="2" style="vertical-align:top"><ul>
-<li>Audit Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion.</li>
-<li>Prevent Read or Write or Execute access with or without an exclusion - Allow specific device based on various device properties.</li></ul></td>
-<td><ul>
-<li>Applied at either machine or user or both – only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.</li>
-<li>Support MEM OMA-URI and GPO.</li>
-<li>Supported  ‘Device Properties’ are listed below.</li>
-<li>For feature in Windows, see [Device Control Removable storage Access Control](device-control-removable-storage-access-control.md).</li></ul></td>
-<td>Windows 10</td></tr>
-<tr><td><ul><li>Applied at machine level: the same policy applies for any logged on user.</li>
-<li>For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).</li></ul></td>
-<td>macOS Catalina 10.15.4+ (with system extensions enabled)</td></tr>
-
-<tr><td>Windows Portable Device Access Control</td>
-<td><ul><li>Deny Read or Write access to any [Windows Portable Device](/windows-hardware/drivers/portable/), for example, Tablet, iPhone.</li></ul></td>
-<td><ul><li>Applied at either machine or user level.</li>
-<li>Support MEM and GPO.</li></ul></td>
-<td>Windows 10</td></tr>
-
-
-<tr><td>Endpoint DLP Removable storage</td>
-<td><ul><li>Audit or Warn or Prevent a user from copying an item or information to removable media or USB device.</li></ul></td>
-<td>For more information on Windows, see [Microsoft Endpoint DLP](../../compliance/endpoint-dlp-learn-about.md).</td>
-<td>Windows 10</td></tr>
-
-<tr><td>BitLocker</td>
-<td><ul><li>Block data to be written to removable drives that aren't BitLocker protected.</li>
-<li>Block access to removable drives unless they were encrypted on a computer owned by your organization.</li></ul></td>
-<td>For more information on Windows, see BitLocker – [Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).</td>
-<td>Windows 10</td></tr>
-
-</tbody>
-</table>
+|Policy  |Capability |Description  |
+|---------|---------|---------|
+|Device Installation    | Prevent installation with or without exclusion based on various device properties.     |  **For the supported platform of Windows 10** - (a) Applied at machine level: the same policy applies for any logged-on user (b) Supports MEM and GPO (c) Supported ‘Device Properties’ are listed below (d) For more information on Windows, see [How to control USB devices and other removable media using Intune (Windows 10)](control-usb-devices-using-intune.md). **For the supported platform of macOS Catalina 10.15.4+ (with system extensions enabled)** - (a) Applied at machine level: the same policy applies for any logged-on user (b) For macOS-specific information, see [Device control for macOS](mac-device-control-overview.md).|
+|Removable storage Access Control    |   (a) Audit Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion. (b) Prevent Read or Write or Execute access with or without an exclusion - Allow a specific device based on various device properties.    |     **For the supported platform of Windows 10** - (a) Applied at either machine or user or both – only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine. (b) Support MEM OMA-URI and GPO. (c) Supported ‘Device Properties’ are listed below. (d) For feature in Windows, see [Device Control Removable storage Access Control](device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control). **For the supported platform of macOS Catalina 10.15.4+ (with system extensions enabled)** - (a)Applied at machine level: the same policy applies for any logged-on user. (b) For macOS-specific information, see [Device control for macOS](mac-device-control-overview.md). |
+|Windows Portable Device Access Control    |  Deny Read or Write access to any Windows Portable Device., for example, Tablet, iPhone, and so on.      | **For the supported platform of Windows 10** - (a) Applied at either machine or user level. (b) Support MEM and GPO.       |
+|Endpoint DLP Removable storage  |  Audit or Warn or Prevent a user from copying an item or information to removable media or a USB device.       |  **For the supported platform of Windows 10** - For more information on Windows, see [Microsoft Endpoint DLP](../../compliance/endpoint-dlp-learn-about.md).       |
+|BitLocker      | (a) Block data to be written to removable drives that aren't BitLocker protected. (b) Block access to removable drives unless they were encrypted on a computer owned by your organization.    |    **For the supported platform of Windows 10** - For more information on Windows, see [BitLocker – Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).     |
 
 ## Device properties
 
