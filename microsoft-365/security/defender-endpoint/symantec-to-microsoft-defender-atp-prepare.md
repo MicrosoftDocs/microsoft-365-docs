@@ -46,9 +46,9 @@ This migration phase includes the following steps:
 To get started, you must have Microsoft Defender for Endpoint, with licenses assigned and provisioned.
 
 1. Buy or try Microsoft Defender for Endpoint today. [Visit Microsoft Defender for Endpoint to start a free trial or request a quote](https://aka.ms/mdatp). 
-2. Verify that your licenses are properly provisioned. [Check your license state](production-deployment#check-license-state).
-3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender for Endpoint. See [Microsoft Defender for Endpoint setup: Tenant configuration](production-deployment#tenant-configuration).
-4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender for Endpoint setup: Network configuration](production-deployment#network-configuration).
+2. Verify that your licenses are properly provisioned. [Check your license state](production-deployment.md#check-license-state).
+3. As a global administrator or security administrator, set up your dedicated cloud instance of Microsoft Defender for Endpoint. See [Microsoft Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
+4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Microsoft Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
  
 At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
 
