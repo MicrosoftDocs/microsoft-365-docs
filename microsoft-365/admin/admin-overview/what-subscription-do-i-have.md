@@ -27,7 +27,7 @@ ms.date: 01/21/2021
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
- **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, you see all your subscriptions. Each subscription line includes information about licenses, subscription status, and billing.
