@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,7 +15,6 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center."
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Set up Microsoft Viva Learning (Preview) in the Teams admin center
