@@ -258,6 +258,12 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
 
+    To enable ASR Block abuse of exploited vulnerable signed drivers, use the following cmdlet:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
+
     To turn off ASR rules, use the following cmdlet:
 
     ```PowerShell
