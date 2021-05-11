@@ -34,7 +34,6 @@ If you're using
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
-
 - **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
