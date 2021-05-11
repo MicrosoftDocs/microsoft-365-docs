@@ -24,7 +24,7 @@ description: "This article contains reference information about the Content sear
 
 # Feature reference for Content search
 
-This article describes some feature and functionality of Content search.
+This article describes features and functionality of Content search.
 
 ## Content search limits
 
