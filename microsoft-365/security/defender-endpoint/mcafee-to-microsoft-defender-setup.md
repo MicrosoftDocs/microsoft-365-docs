@@ -126,7 +126,6 @@ Because your organization is still using McAfee, you must set Microsoft Defender
 > [!NOTE]
 > You can use other methods to set the registry key, such as the following:
 >- [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
->- [Local Group Policy Object tool](security-compliance-toolkit-10.md#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 ### Enable Microsoft Defender Antivirus on your Windows client devices
