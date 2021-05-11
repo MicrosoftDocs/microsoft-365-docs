@@ -98,7 +98,7 @@ This expression consists of five parts, in this order:
 
 5. Two to six letters
 
-To add a regular exxpress explanation type:
+To add a regular expression explanation type:
 
 1. From the **Create an explanation** panel, under **Explanation type**, select **Regular expression**.
 
@@ -140,7 +140,7 @@ The following table shows examples for how to determine the number of tokens in 
 
 #### Configure the proximity explanation type
 
-For the example, configure the proximity setting to define the range of the number of tokens in the *Phone number* explanation from the *Street address number* explanation. Notice that the minimum range is "0", because there are no tokens between the phone number and street address number.
+For the example, configure the proximity setting to define the range of the number of tokens in the *phone number* explanation from the *street address number* explanation. Notice that the minimum range is "0", because there are no tokens between the phone number and street address number.
 
 But some phone numbers in the sample documents are appended with *(mobile)*.
 
@@ -203,8 +203,6 @@ For example, instead of manually adding all the variations for *Date*, you can u
  
 The explanation library includes commonly used phrase list explanations, including:
 
-[**TBD - Update list to include new templates**]
-
 - Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
 - Date (numeric): Calendar dates, all formats. Includes numbers (for example 1-11-2020).
 - Time: 12 and 24 hour formats.
@@ -218,16 +216,16 @@ The explanation library includes commonly used phrase list explanations, includi
 - Social security number: US Social Security Number format. For example, 111-11-1111. 
 - Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_, etc.
 - Currency: Major international symbols. For example, $. 
-- Email address: Matches an email address by applying a regular expression.
+- Email address: Regular expression for matching an email address.
 - Email CC: A phrase list with the term 'CC:', often found near the names or email. addresses of additional people or groups the message was sent to.
 - Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.
 - Email greeting: Common opening lines for emails.
 - Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to. 
 - Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. 
 - Email subject: A phrase list with the term 'Subject:', often found near the email's subject.
-- US bank account numbers regular expression: Regular expression for identifying US bank account numbers containing between 6 and 17 digits.
-- US ITIN number regular expression: Regular expression for identifying US Individual Taxpayer Identification Number (ITIN) numbers. 
-- Web address or URL: Applies a regular expression to match a phrase that starts with http:// or https://.
+- US bank account numbers: Regular expression for identifying US bank account numbers containing between 6 and 17 digits.
+- US ITIN number regular: Regular expression for identifying US Individual Taxpayer Identification Number (ITIN) numbers. 
+- Web address or URL: Regular expression for matching a phrase that starts with http:// or https://.
 
 The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 
