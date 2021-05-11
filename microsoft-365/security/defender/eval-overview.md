@@ -29,7 +29,10 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+Borrow intro text from the deploy threat protection foundation solution.
+
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
 
 The following illustration . . .
 
