@@ -67,7 +67,7 @@ Make sure that auditing is enabled at least one day before the first disposition
 
 When content reaches the end of its retention period, there are several reasons why you might want to review that content and confirm whether it can be permanently deleted ("disposed"). For example, instead of deleting the content, you might need to:
   
-- Suspend the deletion of relevant content in the event of litigation or an audit.
+- Suspend the deletion of relevant content for litigation or an audit.
 
 - Assign a different retention period to the content, perhaps because the original retention settings were a temporary or provisional solution.
 
@@ -79,7 +79,7 @@ When a disposition review is triggered at the end of the retention period:
    - You can customize the email that they receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
    - Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center.
    - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected Record Manager Security Group see all disposition reviews.
-   - Reviewers can add new users to the same disposition review. Note that currently, this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
+   - Reviewers can add new users to the same disposition review. Currently, this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
    - For the disposition review process, a mini-review pane for each item shows a preview of the content if they have permissions to see it. If they don't have permissions, they can select the content link and request permissions. This mini-review pane also has tabs for additional information about the content:
        - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
        - **History** that shows the history of any disposition review actions to date, with reviewer comments if available.
@@ -122,7 +122,7 @@ For the reviewers, specify a user or a mail-enabled security group. Microsoft 36
 
 If you need more than one person to review an item at the end of its retention period, select **Add a stage** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
-Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of it's retention period. These users can also forward the disposition review to other users.
+Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also forward the disposition review to other users.
 
 > [!NOTE]
 > Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
@@ -165,7 +165,7 @@ From the **Pending dispositions** page, they see all pending dispositions for th
 
 ![Disposition options](../media/retention-disposition-options.png)
 
-If you use the horizontal scroll bar, or close the min-review pane, you see additional columns that include the expiry date and the name of the disposition review stage.
+If you use the horizontal scroll bar, or close the min-review pane, you see more columns that include the expiry date and the name of the disposition review stage.
 
 As you can see from example shown, the actions supported are: 
   
@@ -177,7 +177,7 @@ As you can see from example shown, the actions supported are:
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 - **Add reviewers**:
-    - When this action is selected, the user is prompted to specify and then add additional users for review.
+    - When this action is selected, the user is prompted to specify and then add other users for review.
 
 Each action taken is saved and stored although you can't yet search for them in the audit log.
 
