@@ -13,10 +13,10 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_licensing
+description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
 ms.date: 04/06/2021
 ---

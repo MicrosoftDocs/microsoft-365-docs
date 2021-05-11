@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: "Learn how to assign licenses to groups for use with devices."
 ms.custom: 
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
 ---
 # Manage licenses for devices
 

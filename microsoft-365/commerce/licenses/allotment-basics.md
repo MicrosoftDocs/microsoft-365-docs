@@ -12,6 +12,8 @@ ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- M365-subscription-management 
+- Adm_O365
 ms.custom: 
 - commerce_licensing
 description: "Learn about the new allotments feature."
