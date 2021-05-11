@@ -6,6 +6,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,10 +14,10 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 ms.custom: 
-search.appverid:
-- MET150
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
 ms.date: 07/21/2020
 ---
