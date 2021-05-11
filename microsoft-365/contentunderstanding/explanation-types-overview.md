@@ -22,9 +22,9 @@ Explanations are used to help to define the information you want to label and ex
    
 These explanation types are available:
 
-- **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *Referring Doctor* is in all Medical Referral documents you are identifying. Or the *Phone number* of the referring doctor from all Medical Referral documents that you are identifying.
+- **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *referring doctor* is in all Medical Referral documents you are identifying. Or the *phone number* of the referring doctor from all Medical Referral documents that you are identifying.
 
-- **Regular expression**: [**TBD - Need new description paragraph**]
+- **Regular expression**: Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression pattern to find all instances of an *email address* in a set of documents.
 
 - **Proximity**: Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
 
@@ -66,6 +66,10 @@ Additionally, if you have capitalization requirements in your phrase list, you h
 
 > [!NOTE]
 > Instead of manually creating a phrase list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, *credit card number*, etc.
+
+## Regular expression
+
+[**TBD - Need new content and new example screenshot**]
 
 ## Proximity 
 
@@ -117,10 +121,6 @@ There are three tokens in *(mobile)*:
 Configure the proximity setting to have a range of 0 through 3.
 
 ![Proximity example](../media/content-understanding/proximity-example.png)
-
-## Regular
-
-[**TBD - Need new content and new example screenshot**]
 
 ## Configure where phrases occur in the document
 
