@@ -31,3 +31,21 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+
+Intro
+
+![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluatino environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+
+## Step 1: Activate trial licenses
+
+
+## Step 2: Audit and verify the public MX record
+
+
+## Step 3: Audit accepted domains
+
+
+## Step 4: Audit inbound connectors
+
+
+## Step 5: Activate the evaluation
