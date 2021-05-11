@@ -1,8 +1,9 @@
 ---
 title: "Explanation types"
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn more about explanation types in Microsoft SharePoint Syntex"
+description: "Learn more about explanation types in Microsoft SharePoint Syntex."
 ---
 
 # Introduction to explanation types
@@ -34,17 +35,17 @@ A phrase list explanation type is typically used to identify and classify a docu
 
 While not a requirement, you can achieve better success with your explanation if the phrase you are capturing is located in a consistent location in your document. For example, the *Referring Doctor* label may be consistently located in the first paragraph of the document. You can also use the **[Configure where phrases occur in the document](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#configure-where-phrases-occur-in-the-document)** advanced setting to select specific areas where the phrase is located, especially if there is a chance that the phrase might occur in multiple locations in your document.
 
-If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** check box.
+If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** checkbox.
 
 ![Case sensitivity](../media/content-understanding/case-sensitivity.png) 
 
-A phrase type is especially useful when you create an explanation that identifies and extracts information in different formats, such as dates, phone numbers, and credit card numbers. For example, a date can be displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a phrase list makes your explanation more efficient by capturing any possible variations in the data that you are trying to identify and extract. 
+A phrase type is especially useful when you create an explanation that identifies and extracts information in different formats, such as dates, phone numbers, and credit card numbers. For example, a date can be displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, or Jan 1,2020). Defining a phrase list makes your explanation more efficient by capturing any possible variations in the data that you are trying to identify and extract. 
 
 For the *phone number* example, you extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, type the different formats a phone number might display in your document so that you are able to capture possible variations. 
 
 ![Phone number phrase patterns](../media/content-understanding/pattern-list.png)
 
-For this example, in **Advanced Settings** select the **Any digit from 0-9** check box to recognize each "0" value used in your phrase list to be any digit from 0 through 9.
+For this example, in **Advanced Settings** select the **Any digit from 0-9** checkbox to recognize each "0" value used in your phrase list to be any digit from 0 through 9.
 
 ![Any digit from 0-9](../media/content-understanding/digit-identity.png)
 
@@ -65,7 +66,7 @@ Additionally, if you have capitalization requirements in your phrase list, you h
 ![Only exact capitalization](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating a phrase list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, *credit card number*, etc.
+> Instead of manually creating a phrase list explanation, use the [explanation library](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
 
 ## Regular expression
 
@@ -207,14 +208,14 @@ The explanation library includes commonly used phrase list explanations, includi
 - Date (numeric): Calendar dates, all formats. Includes numbers (for example 1-11-2020).
 - Time: 12 and 24 hour formats.
 - Number: Positive and negative numbers up to 2 decimals. 
-- Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, 11.11%, etc.
+- Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, or 11.11%.
 - Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, or (000) 000-0000.
 - Zip code: US Zip code formats. For example, 11111, 11111-1111.
 - First word of sentence: Common patterns for words up to 9 characters. 
 - End of sentence: Common punctuation for end of a sentence.
 - Credit card: Common credit card number formats. For example, 1111-1111-1111-1111. 
 - Social security number: US Social Security Number format. For example, 111-11-1111. 
-- Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_, etc.
+- Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_.
 - Currency: Major international symbols. For example, $. 
 - Email address: Regular expression for matching an email address.
 - Email CC: A phrase list with the term 'CC:', often found near the names or email. addresses of additional people or groups the message was sent to.
