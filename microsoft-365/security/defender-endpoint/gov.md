@@ -73,7 +73,7 @@ Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/45
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Windows 10, version 1709 | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br />Note: [Deprecated](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade | ![No](images/svg/check-no.svg)<br />Note: Won't be supported
+Windows 10, version 1709 | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br />Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade | ![No](images/svg/check-no.svg)<br />Note: Won't be supported
 Windows 10, version 1703 and earlier | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![No](images/svg/check-no.svg)<br />Note: Won't be supported | ![No](images/svg/check-no.svg)<br />Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows Server 2016 | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
@@ -83,8 +83,8 @@ Windows 8.1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/ch
 Windows 8 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
-Linux | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below
-macOS | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below | ![Yes](images/svg/check-yes.svg) In preview<br />See note below
+Linux | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
+macOS | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Android | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
 
@@ -92,13 +92,10 @@ iOS | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/c
 > Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 
 > [!NOTE]
-> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](onboard-server-2008r2.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
-
-> [!NOTE]
-> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS.
+> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 ### OS versions when using Azure Defender for Servers
-The following OS versions are supported when using [Azure Defender for Servers](https://docs.microsoft.com/azure/security-center/security-center-wdatp):
+The following OS versions are supported when using [Azure Defender for Servers](/azure/security-center/security-center-wdatp):
 
 OS version | GCC | GCC High | DoD
 :---|:---|:---|:---
@@ -155,11 +152,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## Feature parity with commercial
 Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
 
-These are the known gaps as of April 2021:
+These are the known gaps:
 
 Feature name | GCC | GCC High | DoD
 :---|:---|:---|:---
-Management and APIs: Streaming API | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+Management and APIs: Streaming API | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Web content filtering | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Integrations: Azure Sentinel | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) Alerts <br /> ![No](images/svg/check-no.svg) Incidents & Raw data: In development | ![Yes](images/svg/check-yes.svg) Alerts <br /> ![No](images/svg/check-no.svg) Incidents & Raw data: In development
 Integrations: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development

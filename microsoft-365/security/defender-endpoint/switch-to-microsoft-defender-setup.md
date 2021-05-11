@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/06/2021
+ms.date: 05/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -38,9 +38,8 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
 3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add your existing solution to the exclusion list for Microsoft Defender for Endpoint](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Enable Microsoft Defender Antivirus and confirm it's in passive mode
 
@@ -116,7 +115,7 @@ Because your organization is still using your existing endpoint protection solut
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
    - Set the DWORD's value to **1**.
    - Under **Base**, select **Hexadecimal**.
 
@@ -187,7 +186,6 @@ When you add [exclusions to Microsoft Defender Antivirus scans](/windows/securit
 
 You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table:
 
-
 |Method | What to do|
 |--|--|
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**NOTE**: Intune is now Microsoft Endpoint Manager. | 1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p> 2. Select **Devices** > **Configuration profiles**, and then select the profile that you want to configure.<p> 3. Under **Manage**, select **Properties**.<p> 4. Select **Configuration settings: Edit**.<p> 5. Expand **Microsoft Defender Antivirus**, and then expand **Microsoft Defender Antivirus Exclusions**.<p> 6. Specify the files and folders, extensions, and processes to exclude from Microsoft Defender Antivirus scans. For reference, see [Microsoft Defender Antivirus exclusions](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions).<p> 7. Choose **Review + save**, and then choose **Save**.  |
@@ -195,54 +193,6 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |[Group Policy Object](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and then select **Edit**.<p> 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.<p> 3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Exclusions**.<br/>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<p> 4. Double-click the **Path Exclusions** setting and add the exclusions.<br/>- Set the option to **Enabled**.<br/>- Under the **Options** section, select **Show...**.<br/>- Specify each folder on its own line under the **Value name** column.<br/>- If you specify a file, make sure to enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.<p> 5. Select **OK**.<p> 6. Double-click the **Extension Exclusions** setting and add the exclusions.<br/>- Set the option to **Enabled**.<br/>- Under the **Options** section, select **Show...**.<br/>- Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.<p> 7. Select **OK**. |
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <p>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**.<p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<p>3. Specify your path and process exclusions. |
 |Registry key |1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<p>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
-
-## Add your existing solution to the exclusion list for Microsoft Defender for Endpoint
-
-To add exclusions to Microsoft Defender for Endpoint, you create [indicators](/microsoft-365/security/defender-endpoint/manage-indicators#create-indicators-for-files).
-
-1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.<br/>
-
-1. In the navigation pane, choose **Settings** > **Rules** > **Indicators**.<br/>
-
-2. On the **File hashes** tab, choose **Add indicator**.<br/>
-
-3. On the **Indicator** tab, specify the following settings:
-   - File hash (Need help? See [Find a file hash using CMPivot](#find-a-file-hash-using-cmpivot) in this article.)
-   - Under **Expires on (UTC)**, choose **Never**.<br/>
-   
-4. On the **Action** tab, specify the following settings:
-   - **Response Action**: **Allow**
-   - Title and description<br/>
-   
-5. On the **Scope** tab, under **Device groups**, select either **All devices in my scope** or **Select from list**.<br/>
-
-6. On the **Summary** tab, review the settings, and then select **Save**.
-
-### Find a file hash using CMPivot
-
-CMPivot is an in-console utility for Configuration Manager. CMPivot provides access to the real-time state of devices in your environment. It immediately runs a query on all currently connected devices in the target collection and returns the results. To learn more, see [CMPivot overview](/mem/configmgr/core/servers/manage/cmpivot-overview).
-
-To use CMPivot to get your file hash, follow these steps:
-
-1. Review the [prerequisites](/mem/configmgr/core/servers/manage/cmpivot#prerequisites).
-
-2. [Start CMPivot](/mem/configmgr/core/servers/manage/cmpivot#start-cmpivot). 
-
-3. Connect to Configuration Manager (`SCCM_ServerName.DomainName.com`).
-
-4. Select the **Query** tab.
-
-5. In the **Device Collection** list, and choose **All Systems (default)**.
-
-6. In the query box, type the following query:<br/>
-
-   ```kusto
-   File(c:\\windows\\notepad.exe)
-   | project Hash
-   ```
-   
-   > [!NOTE]
-   > In the query above, replace *notepad.exe* with the your third-party security product process name. 
 
 ## Set up your device groups, device collections, and organizational units
 

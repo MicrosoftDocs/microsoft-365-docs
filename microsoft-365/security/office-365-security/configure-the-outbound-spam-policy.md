@@ -511,6 +511,6 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Anti-spam protection FAQ](anti-spam-protection-faq.md)
+[Anti-spam protection FAQ](anti-spam-protection-faq.yml)
 
 [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)

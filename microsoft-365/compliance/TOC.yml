@@ -501,9 +501,11 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use content search
+        - name: Search for content
           href: content-search.md
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Preview eDiscovery search results
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
               href: single-item-error-remediation.md        
-        - name: Collect content for a case (preview)
+        - name: Collect content for a case
           items: 
-            - name: Learn about collections (preview)
+            - name: Learn about collections
               href: collections-overview.md
-            - name: Create a draft collection (preview)
+            - name: Create a draft collection
               href: create-draft-collection.md
-            - name: Commit a draft collection to a review set (preview)
+            - name: Commit a draft collection to a review set
               href: commit-draft-collection.md
-            - name: Collection statistics and reports (preview)
+            - name: Collection statistics and reports
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
-        - name: Collect data for a case
-          items: 
-            - name: Create a search
-              href: create-search-to-collect-data.md
-            - name: Build search queries
-              href: building-search-queries.md
-            - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md
-            - name: Search statistics
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Add search results to a review set
-              href: add-data-to-review-set.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
@@ -792,18 +782,22 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
+    - name: Microsoft 365 auditing solutions
+      href: auditing-solutions-overview.md
     - name: Basic auditing
       items:
+        - name: Set up Basic auditing
+          href: set-up-basic-auditing.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
-        - name: Turn audit log search on or off
-          href: turn-audit-log-search-on-or-off.md
         - name: Detailed properties in the audit log
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
+        - name: Turn audit log search on or off
+          href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
@@ -816,16 +810,18 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Mailbox auditing
-      href: enable-mailbox-auditing.md
     - name: Advanced Audit
       items:
         - name: Overview of Advanced Audit
           href: advanced-audit.md
+        - name: Set up Advanced Audit
+          href: set-up-advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
         - name: Use Advanced Audit to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
+    - name: Mailbox auditing
+      href: enable-mailbox-auditing.md
     - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
@@ -834,6 +830,8 @@
       items: 
         - name: Learn about Compliance Manager
           href: compliance-manager.md
+        - name: What's new in Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance Manager quickstart
           href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager
