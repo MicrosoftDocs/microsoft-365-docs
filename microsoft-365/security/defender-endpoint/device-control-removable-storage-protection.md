@@ -104,3 +104,5 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 ## Related topic
 
 - [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md)
+
+[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md)
