@@ -53,7 +53,7 @@ You can also delete an add-in that was deployed.
 
 2. Select the deployed add-in.
 
-3. Click on **Delete Add-In**. Remove the Add-in button on the bottom right corner.
+3. Click on **Delete Add-In**. Remove the Add-in button on the bottom-right corner.
 
 4. Validate your selections, and choose **Remove add-in**.
 
@@ -122,7 +122,7 @@ To prevent a user from signing in with a Microsoft account, you can restrict log
 > [!NOTE] 
 > Preventing users from accessing the office store will also prevent them from [Sideloading Office Add-ins for testing from a network share](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
 
-## More about the end user experience with add-ins
+## More about the end-user experience with add-ins
 
 After you deploy an add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in appears on all platforms that the add-in supports.
   
