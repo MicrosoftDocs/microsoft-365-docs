@@ -210,8 +210,7 @@ Make sure the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exc
 Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
 ```
 
-## Phase 7: Skype for Business Online
-
+## Phase 7: Skype for Business Online - Transition to Microsoft Teams
 **Applies to:** All customers using Skype for Business Online
 
 Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
@@ -224,15 +223,23 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Contacts and meetings will be migrated to Microsoft Teams.
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
-- The web browser version of Microsoft Teams will not work until phase 9 has been completed.
+
+When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Please refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration. 
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
 ```powershell
 Import-Module MicrosoftTeams
 $userCredential = Get-Credential
-Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
+Connect-MicrosoftTeams -Credential $userCredential
 ```
+
+### Known limitations until finalizing Azure AD migration
+Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not completely available. After phase 9, when the migration of Azure AD will be finalized, the following features become fully available:
+
+- Apps cannot be managed in the Microsoft Teams admin center.
+- New Teams can be created in the Microsoft Teams client only unless the Teams administrator constrained permissions to create new Teams for users. New Teams cannot be created in the Microsoft Teams admin center. 
+- The web version of Microsoft Teams (teams.microsoft.com) is not available.
 
 ## Phase 8: Dynamics 365
 
