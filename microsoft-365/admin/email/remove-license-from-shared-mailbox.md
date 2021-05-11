@@ -29,7 +29,9 @@ description: "Remove license from a shared mailbox to assign it to another user.
 Shared mailboxes usually don't require a license. Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.
 
 > [!NOTE]
+>
 > A license is required in the following scenarios:
+>
 > 1. The shared mailbox has more than 50 GB of storage in use.
 > 2. The shared mailbox uses in-place archiving.
 > 3. The shared mailbox is placed in litigation hold.
