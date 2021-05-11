@@ -43,22 +43,28 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
   
 4. Enter a **Tile name** for the new tile. The name will appear in the tile. 
     
-5. Enter a **URL of website** for the tile. This is the location where you want your users to go when they select the tile on the app launcher. Use HTTPS in the URL.<br/>TIP: If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com` 
+5. Enter a **URL of website** for the tile. This is the location where you want your users to go when they select the tile on the app launcher. Use HTTPS in the URL.
+
+    > [!TIP]
+    > If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com` 
   
-6. Enter an **URL of the image** for the tile. The image appears on the My apps page and app launcher.<br/>TIP: The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication.
+6. Enter a **URL of the image** for the tile. The image appears on the My apps page and app launcher.
+
+    > [!TIP]
+    > The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication.
 
 7. Enter a **Description** for the tile. You see this when you select the tile on the My apps page and select **App details**. 
   
 8. Select **Save changes** to create the custom tile. 
     
-Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+    Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
 
     > [!NOTE]
     > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
   
 ## Edit or delete a custom tile
 
-1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile**</a> tab.
+1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile** tab.
     
 2. On the **Organization profile** page, next to   **Add custom tiles for your organization**, select **Edit**.
 
