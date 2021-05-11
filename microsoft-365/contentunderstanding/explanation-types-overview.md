@@ -78,17 +78,22 @@ A regular expression explanation type allows you to create patterns that help fi
 
 A regular expression type is especially useful when you create an explanation that identifies and extracts information in similar formats, such as email addresses, bank account numbers, or URLs. For example, an email address, such as megan@contoso.com, is displayed in a certain pattern ("megan" is the first part, and "com" is the last part). 
 
-The regular expression for an email address like this would be: **[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}**.
+The regular expression for an email address is: **[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}**.
 
-The expression consists of five parts, in this order:
+This expression consists of five parts, in this order:
 
 1. Any amount of the following characters:
+
    a. Letters from a to z
    b. Numbers from 0-9
    c. Period, underscore, percent, or dash
+
 2. The @ symbol
+
 3. Any amount of the same characters as the first part of the email address
+
 4. A period
+
 5. Two to six letters
 
 [**TBD - Need new content and new example screenshot**]
