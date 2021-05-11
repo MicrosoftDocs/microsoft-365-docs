@@ -163,7 +163,7 @@ For example, here are some additional steps that might be required for email and
 
 3. On the domain details page, select the **DNS records** tab.
  
-4. Select **Add** record.
+4. Select **Add record**.
 
 5. In the **Add a custom DNS record pane**, from the **Type** dropdown list, select **A (Address)**.
 
