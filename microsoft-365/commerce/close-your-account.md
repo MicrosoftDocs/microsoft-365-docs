@@ -64,7 +64,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
 
 > [!NOTE]
-> If you're unable to immediately delete a disabled subscription, [contact support](../admin/contact-support-for-business-products.md).
+> If you're unable to immediately delete a disabled subscription, [contact support](../business-video/get-help-support.md).
 
 ## Step 4: Disable multi-factor authentication
 

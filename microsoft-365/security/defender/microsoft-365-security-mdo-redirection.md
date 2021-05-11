@@ -32,9 +32,6 @@ ms.technology: m365d
 
 This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.com or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
 
->[!NOTE]
-> Portal redirection capability is available for Office 365 E5 and Microsoft Defender for Office P2 customers only
-
 ## What to expect
 Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to the Microsoft 365 security center (https://security.microsoft.com).  
 
