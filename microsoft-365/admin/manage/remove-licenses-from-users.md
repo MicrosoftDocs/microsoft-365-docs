@@ -93,7 +93,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ### Unassign licenses from multiple users
 
-1. ::: moniker range="o365-worldwide"
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
