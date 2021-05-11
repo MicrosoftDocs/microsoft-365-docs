@@ -24,7 +24,7 @@ These explanation types are available:
 
 - **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *referring doctor* is in all Medical Referral documents you are identifying. Or the *phone number* of the referring doctor from all Medical Referral documents that you are identifying.
 
-- **Regular expression**: Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression pattern to find all instances of an *email address* in a set of documents.
+- **Regular expression**: Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression to find all instances of an *email address* pattern in a set of documents.
 
 - **Proximity**: Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
 
@@ -69,11 +69,18 @@ Additionally, if you have capitalization requirements in your phrase list, you h
 
 ## Regular expression
 
+A regular expression explanation type allows you to create patterns that help find and identify certain text strings in documents. You can use regular expressions to quickly parse large amounts of text to:
+
+- Find specific character patterns.
+- Validate text to ensure that it matches a predefined pattern (such as an email address).
+- Extract, edit, replace, or delete text substrings.
+- Add extracted strings to a collection to generate a report.
+
 [**TBD - Need new content and new example screenshot**]
 
 ## Proximity 
 
-The proximity explanation type helps your model identify data by defining how close another piece of data is to it. For example, in your model say you have defined two explanations that label both the customer *Street address number* and *Phone number*. 
+The proximity explanation type helps your model identify data by defining how close another piece of data is to it. For example, in your model say you have defined two explanations that label both the customer *street address number* and *phone number*. 
 
 Notice that customer phone numbers always appear before the street address number. 
 
