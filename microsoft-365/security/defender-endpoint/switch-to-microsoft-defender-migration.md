@@ -26,7 +26,7 @@ ms.technology: mde
 
 # Make the switch from a non-Microsoft endpoint solution to Microsoft Defender for Endpoint
 
-If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint), you're in the right place. Use this article as a guide.
+If you are planning to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), you're in the right place. Use this article as a guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Overview of migrating to Defender for Endpoint":::
 
