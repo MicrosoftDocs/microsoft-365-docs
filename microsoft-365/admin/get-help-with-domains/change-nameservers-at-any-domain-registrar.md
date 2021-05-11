@@ -172,7 +172,7 @@ For example, here are some additional steps that might be required for email and
 7. In the **IP Address** box, type the static IP address for the website where it's currently hosted. For example, 172.16.140.1.
     
 > [!IMPORTANT]
->  This must be a static IP address for the website, not a dynamic IP address. To make sure you can get a static IP address for your public website, check with the site that hosts your website.
+>  This must be a _static_ IP address for the website, not a _dynamic_ IP address. To make sure you can get a static IP address for your public website, check with the site that hosts your website.
    
 8. If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 9.
     
