@@ -123,6 +123,8 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
+This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
 
@@ -227,9 +229,12 @@ When you enable Intune integration, Intune will automatically create a classic C
 ## Device discovery
 Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. For more information, see [Device discovery](device-discovery.md).
 
+> [!NOTE]
+> You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices. 
+
 ## Preview features
 
-Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Defender for Endpoint preview release. Try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 

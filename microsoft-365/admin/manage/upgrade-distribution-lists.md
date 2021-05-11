@@ -68,7 +68,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 Distribution lists that fail to upgrade remain unchanged.
 
-If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../contact-support-for-business-products.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
+If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
 It's possible that the distribution list didn't get upgraded because of a service outage, but unlikely. If you want, wait a while and then try to upgrade the DL again.
 
@@ -81,13 +81,13 @@ If you're experienced at using PowerShell, you might want to go this route inste
 To upgrade a single DL, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
 ```
 
 For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 ```
 
 > [!NOTE]

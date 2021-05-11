@@ -29,6 +29,7 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 
@@ -68,6 +69,9 @@ Microsoft security researchers regularly share advanced hunting queries in a [de
 
 >[!tip]
 >Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+
+>[!NOTE]
+>Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

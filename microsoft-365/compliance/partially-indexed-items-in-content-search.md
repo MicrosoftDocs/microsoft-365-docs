@@ -95,11 +95,9 @@ The following table shows the export behavior of indexed and partially indexed i
 
 ## Partially indexed items excluded from the search results
 
-If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. For example, let's say you run a search and don't include any keywords or properties because you want to include all content. But you include a date range condition for the query. If a partially indexed item falls outside of that date range, it won't be included as a partially indexed item. Date ranges are an effective way to exclude partially indexed items from your search results.
+If an item is partially indexed but it doesn't meet the search query criteria, it won't be included as a partially indexed item in the search results. In other words, the item is excluded from the search results. Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
   
-Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
-  
-One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based eDiscovery hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
+One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based eDiscovery hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
   
 ## Indexing limits for messages
 

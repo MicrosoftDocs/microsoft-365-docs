@@ -38,8 +38,14 @@
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 security center overview
          href: ../defender/overview-security-center.md
-       - name: Threat Explorer (and real-time detections)
-         href: threat-explorer.md
+       - name: Threat Explorer for Defender for Office 365
+         items:
+            - name: Threat hunting in Threat Explorer
+              href: threat-hunting-in-threat-explorer.md
+            - name: Email security with Threat Explorer
+              href: email-security-in-microsoft-defender.md          
+            - name: Threat Explorer and Real-time detections basics
+              href: real-time-detections.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
@@ -188,6 +194,8 @@
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
        href: report-junk-email-messages-to-microsoft.md
+     - name: Enable the Report Message and the Report Phishing add-ins
+       href: enable-the-report-message-add-in.md
      - name: Use mail flow rules to block messages with executable attachments in EOP
        href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
      - name: Use mail flow rules to filter bulk email in EOP
@@ -204,18 +212,10 @@
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md
-     - name: Enable the Report Message add-in
-       href: enable-the-report-message-add-in.md
-     - name: Enable the Report Phishing add-in
-       href: enable-the-report-phish-add-in.md
-     - name: Install and use the Junk Email Reporting add-in
-       href: junk-email-reporting-add-in-for-microsoft-outlook.md
+     - name: Report false positives and false negatives in Outlook
+       href: report-false-positives-and-false-negatives.md
      - name: Mail flow rules (transport rules) in standalone EOP
        href: mail-flow-rules-transport-rules-0.md
-     - name: Report junk email and phishing in Outlook on the web
-       href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-     - name: Report junk email and phishing in Outlook for iOS and Android
-       href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
      - name: Run an administrator role group report in standalone EOP
        href: run-an-administrator-role-group-report-in-eop-eop.md
    - name: Investigate
@@ -384,7 +384,7 @@
         - name: Manage role groups in standalone EOP
           href: manage-admin-role-group-permissions-in-eop.md
    - name: Microsoft 365 Defender
-     href: ../index.yml
+     href: ../defender/index.yml
    - name: Microsoft Defender for Endpoint
      href: ../defender-endpoint/index.yml
    - name: Microsoft Defender for Identity

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +16,10 @@ ms.collection:
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
+- commerce_billing
+search.appverid: MET150
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-
+ms.date: 04/07/2021
 ---
 
 # Change your billing addresses

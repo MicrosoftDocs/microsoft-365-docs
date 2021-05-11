@@ -109,16 +109,16 @@ For more information, see:
 
 
 ### Non-Windows endpoints
-With macOS and Linux, you could take a couple of systems and run in the "InsidersFast" channel.
+With macOS and Linux, you could take a couple of systems and run in the Beta channel.
 
 >[!NOTE]
->Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the "Production" channel.
+>Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the Current channel.
 
-The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in insiders-fast are the first ones to receive updates and new features, followed later by insiders-slow and lastly by prod.
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
 ![Image of insider rings](images/insider-rings.png)
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either insiders-fast or insiders-slow.
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
 >[!WARNING]
 >Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.

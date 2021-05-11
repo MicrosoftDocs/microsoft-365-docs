@@ -355,7 +355,7 @@ The following configuration profile will:
    "cloudService":{
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
-      "enabled":true
+      "enabled":true,
       "proxy":"http://proxy.server:port/"
    }
 }
@@ -416,7 +416,7 @@ The following configuration profile contains entries for all settings described 
       "enabled":true,
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
-      "automaticDefinitionUpdateEnabled":true
+      "automaticDefinitionUpdateEnabled":true,
       "proxy": "http://proxy.server:port/"
    }
 }

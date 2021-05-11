@@ -23,12 +23,11 @@ description: "Learn how to use the tenant switcher and about the multi-tenant vi
 
 # Multi-tenant management
 
-Multi-tenant management offers a unified form of management that allows admins the ability to administer all the tenants they manage from a single location. If you manage multiple tenants, you can:
+Multi-tenant management offers a unified form of management that allows Microsoft 365 partner admins the ability to administer all the tenants they manage from a single location. If you're a partner who manages multiple tenants, you can:
 
 - Move quickly between tenants you manage.
 - Assess service health, products, and billing across multiple tenants.
 - On the **All tenants** page, you can quickly see the health of all your tenants' services, any open service requests, your products and billing, and the number of users in that tenant.
-
 
 ## Move between tenants
 
@@ -49,7 +48,6 @@ Multi-tenant management offers a unified form of management that allows admins t
   - Search for, or select the tenant you want to manage
   - You can also pin your most often visited tenant to the top of the list.
 
-
 If you've marked a tenant as a favorite, it's automatically expanded so you can immediately view the status details.
 
 ## View service health for all accounts
@@ -58,7 +56,7 @@ The service health view shows you if any incidents or advisories are affecting t
 
 1. In the Microsoft 365 admin center, in the multi-tenant view, select **Service Health**.
 2. On the **Service health** page aggregated view, you can also see the total number of incidents, the total number of advisories affecting any of the managed tenants, and the number of services with active incidents. You can also see how many of your tenants are affected by incidents and advisories.
-    
+
     - You can use the filter option to view issues by issue type or by service
 
     - You can review issues under **All services** or **All issues** tabs.
