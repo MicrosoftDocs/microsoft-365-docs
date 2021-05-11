@@ -186,7 +186,7 @@ In addition, you can create a CNAME record to help customers find your website.
 4.	In the **Host name or Alias** box, type **www**.
 5.	In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.com**.
 6.	If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 6.
-7.	Select Save.
+7.	Select **Save**.
 
 After the nameserver records are updated to point to Microsoft, your domain setup is complete. Email is routed to Microsoft, and traffic to your website address continues to go to your current website host.`
     
