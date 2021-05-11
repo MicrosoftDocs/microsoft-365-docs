@@ -57,7 +57,8 @@
         - name: Defender for Endpoint
           items: 
             - name: Overview
-              href: eval-defender-endpoint-overview.md                                 
+              href: eval-defender-endpoint-overview.md         
+        - name: Investigate and respond                              
     - name: Get started
       items:
         - name: Overview
