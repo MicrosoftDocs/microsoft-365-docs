@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 <li>Applied at machine level: the same policy applies for any logged on user.</li>
 <li>Supports MEM and GPO.</li>
 <li>Supported  ‘Device Properties’ are listed below.</li>
-<li>For more information on Windows, see [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).</li></ul></td>
+<li>For more information on Windows, see <a href="microsoft-365/security/defender-endpoint/control-usb-devices-using-intune"></a>.</li></ul></td>
 <td style="vertical-align:top">Windows 10</td></tr>
 <tr><td><ul><li>Applied at machine level: the same policy applies for any logged on user.</li>
 <li>For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).</li></ul></td>
@@ -105,4 +105,3 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 
 - [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md)
 
-[How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md)
