@@ -98,7 +98,11 @@ This expression consists of five parts, in this order:
 
 5. Two to six letters
 
-[**TBD - Need new content and new example screenshot**]
+From the **Create an explanation** panel, under **Explanation type**, select **Regular expression**.
+
+![Screenshot showing the Create an explanation panel with Regular Expression selected.](../media/content-understanding/create-regular-expression.png)
+
+You can either add a regular expression in the text box or select **Add a regular expression from a template**.
 
 ## Proximity 
 
