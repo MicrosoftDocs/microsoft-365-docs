@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 <td rowspan="2" style="vertical-align:top">Prevent installation with or without exclusion based on various device properties</td>
 <td><ul>
 <li>Applied at machine level: the same policy applies for any logged on user.</li>
-<li>Supports MEM and GPO\.</li>
+<li>Supports MEM and GPO.</li>
 <li>Supported  ‘Device Properties’ are listed below.</li>
 <li>For additional information on Windows, see [Device Installation](control-usb-devices-using-intune.md).</li></ul></td>
 <td style="vertical-align:top">Windows 10</td></tr>
