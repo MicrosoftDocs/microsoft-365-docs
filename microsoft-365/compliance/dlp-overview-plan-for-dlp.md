@@ -23,7 +23,7 @@ Every organization will plan for and implement DLP differently, because every or
 
 ## Multiple starting points
 
-Organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
+Many organizations choose to implement DLP to comply with various governmental or industry regulations. For example, the European Union's General Data Protection Regulation (GDPR), or the Health Insurance Portability and Accountability Act (HIPAA), or the California Consumer Privacy Act (CCPA). They also implement data loss prevention to protect their intellectual property. But the starting place and ultimate destination in the DLP journey vary. 
 
 Organizations can start their DLP journey:
 
@@ -37,7 +37,7 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Overview of planning process
 
-The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduce the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. Planning requirements that are unique to a location, like On-premises scanner are covered in  <!--LIST OF LINKS TO THOSE DOCS-->
+The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduce the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. <!--Planning requirements that are unique to a location, like On-premises scanner are covered in  LIST OF LINKS TO THOSE DOCS-->
 <!--
 - DLP planning for Exchange email
 - DLP planning for SharePoint sites
@@ -65,7 +65,7 @@ The stakeholders then describe the categories of sensitive information to be pro
 
 ### Set goals and strategy
 
-Once you have identified your stakeholders and you know which sensitive information needs protection and where it's used, the stakeholders can set their protection goals and IT can develop an implementation strategy. 
+Once you have identified your stakeholders and you know which sensitive information needs protection and where it's used, the stakeholders can set their protection goals and IT can develop an implementation plan. 
  <!--
 ### Discovery
  for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
@@ -80,18 +80,27 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 ### Set implementation plan
 
+Your implementation plan should include:
 
+- Mapping out your starting state and desired end state and the steps to get from one to the other
+- how you will address discovery of sensitive items
+- policy planning and the order that they will be implemented
+- how you will address any prerequisites
+- planning on how policies will first be tested before moving to enforcement
+- how you will train your end users
+- how you will test and tune your policies
+- how you will review and update your data loss prevention strategy based on changing regulatory, legal, industry standard or intellectual property protection needs
 
 ## Questions that impact policy design that you need to get answers to
 
 As you begin your DLP adoption you can use questions to focus your policy design and implementation efforts.
-
 
 #### What laws, regulations and industry standards must your organization comply with?
 
 Because many organizations come to DLP with the goal of regulatory compliance, answering this question is a natural starting place for planning your DLP implementation. But, as the IT implementer, you're probably not positioned to answer it. It needs to be answered by your legal team and business executives. 
  
 **Example** Your organization is subject to U.K. financial regulations.
+
 
 #### What sensitive items does your organization have that must be protected from leakage?
 
@@ -120,39 +129,7 @@ Different groups in your organization may have different views on what's an acce
 **Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, it will require an extra 500 person hours per quarter for the internal auditors to complete the tracking process. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage.
 
 
-
-
-
-
 ### Plan for training of end users
-
-
-
-
-## Mapping data state to DLP location
-
-maybe put this into policy design
-
-### Data at rest
-
-Data at rest is blah blah blah. These DLP locations cover data at rest
-
-- On-premises scanner
-- Windows 10 devices
-
-### Data in use
-
-Data in use is blah blah blah. These DLP location cover data in use
-
-### Data in motion
-
-Data in motion is blah, blah, blah. These DLP locations cover data in motion
-
-Data state	DLP location to include
-Data at rest	On-premises scanner for file shares and SharePoint, Windows 10 devices, ODB
-Data in motion	Exchange, Teams Chat and Channel, MCAS
-Data in use	Office apps, Windows 10 devices
-
 
 
 ## Common steps for deploying DLP
