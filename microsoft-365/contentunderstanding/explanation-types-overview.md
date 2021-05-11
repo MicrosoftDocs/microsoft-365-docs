@@ -34,17 +34,17 @@ A phrase list explanation type is typically used to identify and classify a docu
 
 While not a requirement, you can achieve better success with your explanation if the phrase you are capturing is located in a consistent location in your document. For example, the *Referring Doctor* label may be consistently located in the first paragraph of the document. You can also use the **[Configure where phrases occur in the document](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#configure-where-phrases-occur-in-the-document)** advanced setting to select specific areas where the phrase is located, especially if there is a chance that the phrase might occur in multiple locations in your document.
 
-If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** checkbox.
+If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** check box.
 
 ![Case sensitivity](../media/content-understanding/case-sensitivity.png) 
 
 A phrase type is especially useful when you create an explanation that identifies and extracts information in different formats, such as dates, phone numbers, and credit card numbers. For example, a date can be displayed in a number of different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, Jan 1,2020, etc.). Defining a phrase list makes your explanation more efficient by capturing any possible variations in the data that you are trying to identify and extract. 
 
-For the **Phone number** example, you extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, type the different formats a phone number might display in your document so that you are able to capture possible variations. 
+For the *phone number* example, you extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, type the different formats a phone number might display in your document so that you are able to capture possible variations. 
 
 ![Phone number phrase patterns](../media/content-understanding/pattern-list.png)
 
-For this example, in **Advanced Settings** select the **Any digit from 0-9** checkbox to recognize each "0" value used in your phrase list to be any digit from 0 through 9.
+For this example, in **Advanced Settings** select the **Any digit from 0-9** check box to recognize each "0" value used in your phrase list to be any digit from 0 through 9.
 
 ![Any digit from 0-9](../media/content-understanding/digit-identity.png)
 
@@ -75,6 +75,21 @@ A regular expression explanation type allows you to create patterns that help fi
 - Validate text to ensure that it matches a predefined pattern (such as an email address).
 - Extract, edit, replace, or delete text substrings.
 - Add extracted strings to a collection to generate a report.
+
+A regular expression type is especially useful when you create an explanation that identifies and extracts information in similar formats, such as email addresses, bank account numbers, or URLs. For example, an email address, such as megan@contoso.com, is displayed in a certain pattern ("megan" is the first part, and "com" is the last part). 
+
+The regular expression for an email address like this would be: **[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}**.
+
+The expression consists of five parts, in this order:
+
+1. Any amount of the following characters:
+   a. Letters from a to z
+   b. Numbers from 0-9
+   c. Period, underscore, percent, or dash
+2. The @ symbol
+3. Any amount of the same characters as the first part of the email address
+4. A period
+5. Two to six letters
 
 [**TBD - Need new content and new example screenshot**]
 
