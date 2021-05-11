@@ -165,7 +165,7 @@ For example, here are some additional steps that might be required for email and
  
 4. Select **Add record**.
 
-5. In the **Add a custom DNS record pane**, from the **Type** dropdown list, select **A (Address)**.
+5. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **A (Address)**.
 
 6. In the **Host name or Alias** box, type **@**.
 
