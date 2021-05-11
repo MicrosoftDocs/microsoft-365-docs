@@ -42,18 +42,19 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -67,22 +68,22 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 When you use the **Active users** page to unassign licenses, you unassign product licenses from users.
 
 ### Unassign licenses from one user
-  
+
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
@@ -92,21 +93,21 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ### Unassign licenses from multiple users
 
-::: moniker range="o365-worldwide"
+1. ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
