@@ -148,7 +148,8 @@ To remove a custom branding template:
 
 ## Create an Exchange mail flow rule that applies your custom branding to encrypted emails
 
-[!IMPORTANT] If there is any 3rd party component that scans and modifies mail, it can prevent OME branding being applied correctly and shown to your recipients.
+> [!IMPORTANT]
+> If there are any third-party components that scan and modify mail, it can prevent OME branding from being applied correctly and shown to your recipients.
 
 After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Such a rule will apply custom branding in the following scenarios:
 
