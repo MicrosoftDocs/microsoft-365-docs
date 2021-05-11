@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 <li>Supported  ‘Device Properties’ are listed below.</li>
 <li>For more information on Windows, see [Device Installation](control-usb-devices-using-intune.md).</li></ul></td>
 <td style="vertical-align:top">Windows 10</td></tr>
-<tr><td><ul><li>Applied at machine level: the same policy applies for any logged on user</li>
+<tr><td><ul><li>Applied at machine level: the same policy applies for any logged on user.</li>
 <li>For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).</li></ul></td>
 <td style="vertical-align:top">macOS Catalina 10.15.4+ (with system extensions enabled)</td></tr>
 
