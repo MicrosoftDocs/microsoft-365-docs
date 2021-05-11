@@ -128,9 +128,9 @@ This approach could also be taken on a departmental or functional level, with su
 
 ### Search
 
-Common search terms are often discovered as topics. By using the [top query reports in Microsoft Search](https://docs.microsoft.com/sharepoint/view-search-usage-reports), you can identify the most frequent search terms in your organization. If topics have been discovered for these terms, they're good candidates for curation. These topics can be presented as answer cards in Microsoft Search.
+Common search terms are often discovered as topics. By using the [top query reports in Microsoft Search](/sharepoint/view-search-usage-reports), you can identify the most frequent search terms in your organization. If topics have been discovered for these terms, they're good candidates for curation. These topics can be presented as answer cards in Microsoft Search.
 
-If you're currently using [Microsoft Search bookmarks](https://docs.microsoft.com/microsoftsearch/manage-bookmarks), consider which of these can be replaced with a topic. A bookmark answer card contains a title, description, and URL. In some circumstances, a topic card might be more useful to a user, and a topic card also shows resources and people.
+If you're currently using [Microsoft Search bookmarks](/microsoftsearch/manage-bookmarks), consider which of these can be replaced with a topic. A bookmark answer card contains a title, description, and URL. In some circumstances, a topic card might be more useful to a user, and a topic card also shows resources and people.
 
 In the user's search experience, when a user searches for a term like *travel*, search results are displayed in the following priority order in Microsoft Search:
 
@@ -142,7 +142,7 @@ In the user's search experience, when a user searches for a term like *travel*, 
 
 ### Impressions and quality score
 
-The [impressions](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#impressions) count and [quality score](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics#quality-score) are important metrics for understanding the behavior of a topic. The value of these metrics will be limited when only knowledge managers or IT teams have access to topics. Exposing topics to a pilot group of users will generate more representative data for these measures.
+The [impressions](manage-topics.md#impressions) count and [quality score](manage-topics.md#quality-score) are important metrics for understanding the behavior of a topic. The value of these metrics will be limited when only knowledge managers or IT teams have access to topics. Exposing topics to a pilot group of users will generate more representative data for these measures.
 
 Topics with a high impression count are likely to be more frequently interacted with. The quality score for these topics will give a sense of how rich those topics are. Topics with a high impression count and a low quality score are good targets for curation.
 
@@ -156,6 +156,6 @@ If your organization has invested in knowledge bases or wiki sites, these can pr
 
 ## See also
 
-[Manage topics in the topic center](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics)
+[Manage topics in the topic center](manage-topics.md)
 
-[Topic center overview](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview)
+[Topic center overview](topic-center-overview.md)
