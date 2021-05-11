@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
+- commerce_licensing
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
+ms.date: 01/27/2021
 ---
 
 # Download perpetual software and product license keys
