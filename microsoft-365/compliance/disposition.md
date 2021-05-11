@@ -131,7 +131,7 @@ During the configuration phase, for each stage specified, you can rename it, reo
 
 ![Stage actions for disposition reviews](../media/stage-actions-disposition-review.png)
 
-However, you can't reorder or remove a stage after you have saved the retention label.
+However, you can't reorder or remove a stage after you have created the retention label.
 
 After you have specified your reviewers, remember to grant them the **Disposition Management** role permission. For more information, see the [Permissions for disposition](#permissions-for-disposition) section on this page.
 
@@ -161,7 +161,7 @@ When a reviewer is notified by email that content is ready to review, they go to
 
 ![Open in new window for disposition review](../media/open-in-new-window.png)
 
-From the **Pending disposition** page, they see all pending dispositions for that label. When one or more items are selected, they can use the mini-preview pane and the **Source**, **Details**, and **History** tab to inspect the content before taking action on it:
+From the **Pending dispositions** page, they see all pending dispositions for that label. When one or more items are selected, they can use the mini-preview pane and the **Source**, **Details**, and **History** tab to inspect the content before taking action on it:
 
 ![Disposition options](../media/retention-disposition-options.png)
 
