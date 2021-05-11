@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP preview features
+title: Microsoft Defender for Endpoint preview features
 description: Learn how to access Microsoft Defender for Endpoint preview features.
 keywords: preview, preview experience, Microsoft Defender for Endpoint, features, updates
 search.product: eADQiWindows 10XVcnh
@@ -39,7 +39,7 @@ The Defender for Endpoint service is constantly being updated to include new fea
 Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
 
 >[!TIP]
->Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
 

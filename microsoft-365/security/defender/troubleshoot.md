@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft 365 Defender service issues
 description: Find solutions and workarounds to known Microsoft 365 Defender issues
-keywords: troubleshoot  Microsoft Threat Protection, troubleshoot, Azure ATP, issues, add-on, settings page
+keywords: troubleshoot  Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

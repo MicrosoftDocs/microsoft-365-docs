@@ -39,16 +39,12 @@ You can create up to 400 aliases for a user. No additional fees or licenses are 
 > If you want multiple people to manage email sent to a single email address like info@NodPublishers.com or sales@NodPublishers.com, create a shared mailbox. To learn more, see [Create a shared mailbox](create-a-shared-mailbox.md).
   
 ## Add email aliases to a user
-<a name="AddEmailPreview"> </a>
 
 You must have [admin permissions](../add-users/about-admin-roles.md) to do this. 
 
-  
-::: moniker range="o365-worldwide"
-
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. On the **Active Users** page, select the user > **Manage email aliases**. You won't see this option if the person doesn't have a license assigned to them. 
+2. On the **Active Users** page, select the user > **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them. 
     
 3. Select **+ Add an alias** and enter a new alias for the user.   
     
@@ -70,75 +66,9 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
   
-7. **When the user replies, the *From*  address will be her primary email alias.** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. When Eliza replies to the message, her primary email address will appear as the sender, not Sales@NodPublishers.com. 
+7. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received (we'll call this the ping-pong principle). Outlook desktop will use her primary email alias.** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. When Eliza replies to the message using Outlook desktop, her primary email address will appear as Eliza@NodPublishers.com, not Sales@NodPublishers.com.
     
-::: moniker-end
-
-::: moniker range="o365-germany"
-    
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page. 
-    
-    
-2. On the **Active Users** page, select the name of the person you want to edit.
-
-3. Next to **Username / Email Aliases**, select **Edit**.
-
-    > [!Important] 
-    > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
-
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
-
-    > [!IMPORTANT]
-    > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
-  
-    > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
-
-5. When you're done, select **Save**.
-
-6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
-    
-    The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
-    
-  
-7. **When the user replies, the *From*  address will be her primary email alias.** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. When Eliza replies to the message, her primary email address will appear as the sender, not Sales@NodPublishers.com. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
-
-    
-2. On the **Active Users** page, select the name of the person you want to edit.
-
-3. Next to **Username / Email Aliases**, select **Edit**.
-
-    > [!Important] 
-    > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
-
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
-
-    > [!IMPORTANT]
-    > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
-  
-    > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
-
-5. When you're done, select **Save**.
-
-6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
-    
-    The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
-    
-  
-7. **When the user replies, the *From*  address will be her primary email alias.** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. When Eliza replies to the message, her primary email address will appear as the sender, not Sales@NodPublishers.com. 
-
-::: moniker-end
-
-
 ## Did you get "A parameter cannot be found that matches parameter name EmailAddresses"?
-
 
 If you get the error message "**A parameter cannot be found that matches parameter name EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
   
@@ -146,6 +76,10 @@ If you get the error message "**A parameter cannot be found that matches paramet
 
 
 If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console.
+
+## Sending email from the proxy address easily
+
+A new feature is rolling out in April 2021 that allows users to send from their aliases easily when using Outlook on the web. When the feature rolls out to a tenancy where the tenant admin uses the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the tenancy will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the From dropdown in the Compose form.
   
 ## Related articles
 

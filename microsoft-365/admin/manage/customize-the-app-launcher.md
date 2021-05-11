@@ -52,6 +52,9 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
 8. Select **Save changes** to create the custom tile. 
     
 Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+
+    > [!NOTE]
+    > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
   
 ## Edit or delete a custom tile
 

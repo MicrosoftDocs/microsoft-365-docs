@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -30,10 +30,12 @@ IBAN Code: GB19CITI18500812207613\
 Account Number: 12207613\
 Account Name: MICROSOFT
 
-If you have an invoice billed by **Microsoft Danmark ApS** for orders and consumption starting March 1, 2021, use this bank information:
+If you have an invoice billed by **Microsoft Denmark ApS** for orders and consumption starting March 1, 2021, use this bank information:
 
 Bank: Citibank Europe plc\
 SWIFT Code: CITIIE2X\
 IBAN Code: IE27CITI99005170000126\
 Account Number: 70000126\
 Account Name: MICROSOFT
+
+Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.

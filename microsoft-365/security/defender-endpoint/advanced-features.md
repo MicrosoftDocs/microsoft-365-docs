@@ -66,8 +66,7 @@ Turn on this feature so that potentially unwanted applications (PUA) are remedia
 
 
 ## Restrict correlation to within scoped device groups
-When this setting is turned on, alerts are correlated into separate incidents based on their scoped device group. By default, incident correlation happens across the entire tenant scope.
-
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning this setting on, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We do not recommend turning this setting on unless doing so outweighs the benefits of incident correlation across the entire organization
 >[!NOTE]
 >Changing this setting impacts future alert correlations only.
 
@@ -124,6 +123,8 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
+This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
 
@@ -147,7 +148,7 @@ Enabling the Skype for Business integration gives you the ability to communicate
 
 ## Microsoft Defender for Identity integration
 
-The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
+The integration with Microsoft Defender for Identity allows you to pivot directly into another Microsoft Identity security product. Microsoft Defender for Identity augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
@@ -156,7 +157,7 @@ The integration with Azure Advanced Threat Protection allows you to pivot direct
 
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn this feature on, you'll be able to incorporate data from Office 365 Advanced Threat Protection into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn this feature on, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender Security Center to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
@@ -228,9 +229,12 @@ When you enable Intune integration, Intune will automatically create a classic C
 ## Device discovery
 Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks. For more information, see [Device discovery](device-discovery.md).
 
+> [!NOTE]
+> You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices. 
+
 ## Preview features
 
-Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Defender for Endpoint preview release. Try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features, which you can provide feedback on to help improve the overall experience before features are generally available.
 

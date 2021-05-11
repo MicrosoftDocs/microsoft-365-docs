@@ -111,3 +111,9 @@ If you do not see the policy **Enable automatic MDM enrollment using default Azu
 6.	In case you have several Domain Controllers, wait for SYSVOL to replicate for the policies to be available. This procedure will work for any future version of the Administrative Templates as well.
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
+
+## Related content
+
+[Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)
+[Create a group in the admin center](../admin/create-groups/create-groups.md) (article)
+[Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)

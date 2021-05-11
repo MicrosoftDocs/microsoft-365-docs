@@ -27,13 +27,6 @@ description: "Set up email forwarding to one or more email accounts using Office
 
 # Configure email forwarding in Microsoft 365
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
 > [!IMPORTANT]
@@ -48,8 +41,6 @@ Before you set up email forwarding, note the following:
 - Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
 
 You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
-
-::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)** page.
 
@@ -102,3 +93,4 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 5. Don't delete the account of the user who's email you're forwarding or remove their license!  If you do, email forwarding will stop.
 
 ::: moniker-end
+

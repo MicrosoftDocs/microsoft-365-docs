@@ -60,7 +60,7 @@ Watch this video for an overview of Microsoft 365 for business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
   
 ### 1: Set up Microsoft 365 for business (Admin)
@@ -100,12 +100,12 @@ If you retain a local Active Directory that contains some on-premises resources 
   
 - Contact your partner.
     
-- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](../admin/contact-support-for-business-products.md)**
+- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
     
-## See also
+## Related content
 
 [Microsoft 365 for business documentation and resources](./index.yml)
   
 [Manage Microsoft 365 for business](manage.md)[Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../business-video/index.yml)

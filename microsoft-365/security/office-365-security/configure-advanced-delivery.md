@@ -31,7 +31,7 @@ ROBOTS: NOINDEX
 > [!NOTE]
 > The feature that's described in this article is in Preview, isn't available to everyone, and is subject to change.
 
-We want to keep your organization [secure by default](secure-by-default.md), so Exchange Online Protection (EOP) does not allow safe lists or filtering bypass for messages that result in malware or high confidence phishing verdicts. But, we recognize there are specific scenarios that require the delivery of unfiltered messages. For example:
+To keep your organization [secure by default](secure-by-default.md), Exchange Online Protection (EOP) does not allow safe lists or filtering bypass for messages that result in malware or high confidence phishing verdicts. But there are specific scenarios that require the delivery of unfiltered messages. For example:
 
 - **Third-party phishing simulations**: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization.
 - **Security operations (SecOps) mailboxes**: Dedicated mailboxes that are used by security teams to collect and analyze unfiltered messages (both good and bad).
@@ -40,12 +40,12 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent these message
 
 - Filters in EOP and Microsoft Defender for Office 365 take no action on these messages.<sup>\*</sup>
 - [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing takes no action on these messages.<sup>\*</sup>
-- [Default system alerts](alerts.md) are not triggered for these scenarios.
+- [Default system alerts](alerts.md) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
-  - [Admin submissions](admin-submission.md) generates an automatic response stating that the message is part of a phishing simulation campaign and is not a real threat. Alerts and AIR will not be triggered.
-  - [Safe Links in Defender for Office 365](safe-links.md) does not block or detonate the specifically identified URLs in these messages.
-  - [Safe Attachments in Defender for Office 365](safe-attachments.md) does not detonate attachments in these messages.
+  - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered.
+  - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages.
+  - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
 <sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
 
@@ -102,8 +102,8 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 In addition to the two scenarios that the advanced delivery policy can help you with, there are other scenarios that might require you bypass filtering:
 
-- **Third-party filters**: If you domain's MX record doesn't point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) is not available.
+- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*.
 
   To bypass Microsoft filtering for messages that have already been evaluated by third-party filtering, use mail flow rules (also known as transport rules), see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we highly recommended that these allowances are temporary.
+- **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, it is ***highly recommended*** that these allowances be made temporarily.

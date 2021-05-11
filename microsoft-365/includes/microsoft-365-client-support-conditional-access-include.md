@@ -6,7 +6,6 @@
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
 |CORTANA|N/A|N/A|N/A|N/A|Planned|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|Planned|Planned|N/A|Planned|N/A|
 |EXCEL|✔|Planned|Planned|Planned|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
@@ -23,9 +22,9 @@
 |POWER APPS|Planned|Planned|N/A|N/A|Planned|
 |POWER AUTOMATE|Planned|Planned|N/A|N/A|N/A|
 |POWER BI|Planned|Planned|N/A|Planned|Planned|
-|POWERPOINT|✔|Planned|Planned|Planned|Planned|
+|POWERPOINT|✔|Planned|Planned|Planned|N/A|
 |PROJECT|N/A|N/A|N/A|Planned|N/A|
-|PUBLISHER|N/A|N/A|N/A|Planned|N/A|
+|PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT ADMIN|N/A|N/A|N/A|Planned|N/A|
 |SHAREPOINT|Planned|Planned|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|Planned|
@@ -34,7 +33,7 @@
 |TEAMS|✔|✔|✔|Planned|N/A|
 |TO-DO|Planned|Planned|Planned|N/A|Planned|
 |VISIO|N/A|✔|N/A|Planned|N/A|
-|WHITEBOARD|N/A|Planned|N/A|N/A|Planned|
-|WORD|✔|Planned|Planned|Planned|✔|
+|WHITEBOARD|✔|Planned|N/A|N/A|Planned|
+|WORD|✔|Planned|Planned|Planned|N/A|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|Planned|Planned|Planned|Planned|N/A|

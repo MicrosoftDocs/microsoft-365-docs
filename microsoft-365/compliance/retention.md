@@ -26,7 +26,9 @@ description: Learn about retention policies and retention labels that help you t
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> If you're seeing seeing messages about retention policies in your apps, contact your IT department for information about how they have been configured for you. If these messages are for Teams chat or channel messages, see [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
+> -  [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > The information on this page is for IT administrators who can create retention policies and retention labels for compliance reasons.
 
@@ -465,8 +467,4 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Configuration guidance
 
-If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
-
-To create and apply retention labels:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+See [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

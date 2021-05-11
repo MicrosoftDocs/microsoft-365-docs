@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn what payment options are available to pay for your subscription with a billing profile."
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.date: 04/02/2021
 ---
 
 # How to pay for your subscription with a billing profile
@@ -57,6 +59,7 @@ If your billing profile is backed by an invoice, you get an email when your bill
  **Choose your "bill-to" country or region from the drop-down menu below.**
 
 > [!div class="op_single_selector"]
+>
 > - **Choose your country or region**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)

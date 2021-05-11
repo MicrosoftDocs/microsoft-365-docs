@@ -5,7 +5,6 @@
 |COMPANY PORTAL|N/A|✔|Planned|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|✔|Planned|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planned|N/A|N/A|N/A|
 |MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
@@ -27,9 +26,9 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planned|Planned|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|Planned|Planned|N/A|
+|TEAMS|✔|✔|Planned|✔|N/A|
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|WHITEBOARD|N/A|✔|N/A|N/A|✔|
+|WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|N/A|Planned|N/A|

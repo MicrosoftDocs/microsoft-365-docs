@@ -1,5 +1,5 @@
 ---
-title: Device health and compliance report in Microsoft Defender ATP
+title: Device health and compliance report in Microsoft Defender for Endpoint
 description: Track device health state detections, antivirus status, OS platform, and Windows 10 versions using the device health and compliance report
 keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
 search.product: eADQiWindows 10XVcnh
