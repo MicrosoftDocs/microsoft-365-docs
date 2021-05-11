@@ -102,13 +102,13 @@ To add a regular exxpress explanation type:
 
 1. From the **Create an explanation** panel, under **Explanation type**, select **Regular expression**.
 
-![Screenshot showing the Create an explanation panel with Regular Expression selected.](../media/content-understanding/create-regular-expression.png)
+   ![Screenshot showing the Create an explanation panel with Regular Expression selected.](../media/content-understanding/create-regular-expression.png)
 
 2. You can either type an expression in the **Regular expression** text box or select **Add a regular expression from a template**.
 
-When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel will be populated.
+   When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel will be populated.
 
-![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
+   ![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
 
 ## Proximity 
 
