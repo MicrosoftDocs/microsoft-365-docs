@@ -31,3 +31,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+After successfully evaluating or piloting MDO, it can be promoted to your entire production environment.
+1. Purchase and provision the necessary licenses and assign them to your production users.
+1. Re-run recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
+1. Optionally create and configure any custom MDO policies against your production email domain or groups of users.  However, remember that any assigned baseline polies will always take precedence over custom policies.
+1. Update the public MX record for your production email domain to resolve directly to EOP.
+1. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.

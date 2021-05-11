@@ -23,14 +23,24 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate Microsoft 365 Defender for Office overview
+# Evaluate Microsoft 365 Defender for Office 
 
 **Applies to:**
 - Microsoft 365 Defender
 
+Introduction
+<br>
 
+Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
 
 
+
+|Step  |Description  |
+|---------|---------|
+|[Review architecture requirements and key concepts](eval-defender-office-architecture.md)    |         |
+|[Enable the evaluation environment](eval-defender-office-enable-eval.md)     |         |
+|[Set up the pilot ](eval-defender-office-pilot.md)    |         |
+|[Promote the evaluation to production](eval-defender-office-production.md)    |         |
 
