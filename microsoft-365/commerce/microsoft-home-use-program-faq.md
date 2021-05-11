@@ -3,7 +3,7 @@ title: "Microsoft Home Use Program frequently-asked questions (FAQ)"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -15,7 +15,6 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150 
 description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
 ms.date: 05/01/2021
