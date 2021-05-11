@@ -20,7 +20,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
-## April 2021
+## May 2021
 
 ### New assessment templates
 
@@ -32,6 +32,8 @@ We published 75 new assessment templates, including:
 - South Africa - Promotion of Access to Information Act
 
 Check out the complete list of [assessment templates](compliance-manager-templates-list.md).
+
+## April 2021
 
 ### Support for US Government DoD customers
 
