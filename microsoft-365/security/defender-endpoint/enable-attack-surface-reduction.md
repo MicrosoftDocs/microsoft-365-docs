@@ -163,7 +163,7 @@ Example:
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
 
-## Microsoft Endpoint Manager (MEM) admin center
+## Microsoft Endpoint Manager (MEM) custom procedure
 
 You can use MEM admin center to configure ASR rules.
 
@@ -231,7 +231,7 @@ You can use MEM admin center to configure ASR rules.
 >[!NOTE]
 > Conflict handling:
 > If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
-Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
+> Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
 
 ## PowerShell
 
