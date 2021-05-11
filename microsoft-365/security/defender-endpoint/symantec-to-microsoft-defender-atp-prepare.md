@@ -61,7 +61,7 @@ The Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka
 
 Permissions to the Microsoft Defender Security Center can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
-1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](prepare-deployment#role-based-access-control).
+1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](prepare-deployment.md#role-based-access-control).
 2. Set up and configure RBAC. We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to configure RBAC, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](/mem/intune/fundamentals/role-based-access-control).<br/>
    If your organization requires a method other than Intune, choose one of the following options:
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
