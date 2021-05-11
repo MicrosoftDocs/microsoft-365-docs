@@ -28,6 +28,8 @@ ms.technology: m365d
 Roman's instructions + ?
 https://docs.microsoft.com/en-us/microsoft-365/security/defender/setup-m365deval?view=o365-worldwide
 
+Roman's instructions assume customer already has an E1 or E3 environment.
+Published instructions create an entirely new tenant. --"if you want to do this in a dedicated tenant or you don't already have an M365 tenant, use these instructions"
 
 **Applies to:**
 - Microsoft 365 Defender
