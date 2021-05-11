@@ -2,7 +2,7 @@
 title: "Verify academic eligibility for Microsoft 365 Education subscriptions"
 f1.keywords:
 - CSH
-- FWLink 2135711
+- FWLink-2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,11 @@ localization_priority: None
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn how to request a credit on your account for Withholding Tax you paid. This article only applies to customers in India." 
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_melmar
-ms.reviewer: martinl
 monikerRange: 'o365-worldwide'
 ms.date: 05/03/2021
 ---

@@ -501,9 +501,11 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use content search
+        - name: Search for content
           href: content-search.md
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Preview eDiscovery search results
@@ -828,6 +830,8 @@
       items: 
         - name: Learn about Compliance Manager
           href: compliance-manager.md
+        - name: What's new in Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance Manager quickstart
           href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager
