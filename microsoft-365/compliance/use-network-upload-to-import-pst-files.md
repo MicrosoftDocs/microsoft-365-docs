@@ -168,7 +168,7 @@ As an optional step, you can install and use the Microsoft Azure Storage Explore
 
 - Verify the filename (and the subfolder pathname if you included one) for each PST file uploaded to the Azure blob. This is helpful when you're creating the PST mapping file in the next step because you have to specify both the folder pathname and filename for each PST file. Verifying these names can help reduce potential errors in your PST mapping file.
 
-The Microsoft Azure Storage Explorer is in Preview.
+The Azure Storage Explorer standalone application is generally available. You can download the latest version using the link in the following procedure.
   
 > [!IMPORTANT]
 > You can't use the Azure Storage Explorer to upload or modify PST files. The only supported method for importing PST files is to use AzCopy. Also, you can't delete PST files that you've uploaded to the Azure blob. If you try to delete a PST file, you'll receive an error about not having the required permissions. Note that all PST files are automatically deleted from your Azure storage area. If there are no import jobs in progress, then all PST files in the **ingestiondata** container are deleted 30 days after the most recent import job was created.
@@ -331,7 +331,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Importing data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
 
-  - Using [data loss prevention policies](data-loss-prevention-policies.md) to prevent sensitive data from leaking outside your organization.
+  - Using [data loss prevention policies](dlp-learn-about-dlp.md) to prevent sensitive data from leaking outside your organization.
   
 - Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
 

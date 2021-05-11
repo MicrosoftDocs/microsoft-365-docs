@@ -5,16 +5,20 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
 localization_priority: Normal
 ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management 
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_billing
+search.appverid: MET150
 description: "Learn about billing accounts and how to manage them."
+ms.date: 03/17/2021
 ---
 
 # Manage billing accounts
@@ -45,7 +49,7 @@ The following table lists the important terms that you see in the **Billing acco
 | Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Understand billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> If you need to change the **Sold-to** name or address, but don't see an **Edit** link, you must [contact support](../admin/contact-support-for-business-products.md) to change it. Requests for a **Sold-to** name change will require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
+> If you need to change the **Sold-to** name or address, but don't see an **Edit** link, you must [contact support](../business-video/get-help-support.md) to change it. Requests for a **Sold-to** name change will require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
 >
 > - Government-issued document or registration letter
 > - Print out of the local company's registry

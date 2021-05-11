@@ -12,12 +12,12 @@ ms.topic: article
 
 # Microsoft Managed Desktop product lifecycle
 
-Microsoft Managed Desktop benefits users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
+Microsoft Managed Desktop benefits users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
  
 This article details the lifecycle of devices as they are added and removed from the approved catalog. 
 
 > [!NOTE]
-> In this topic, we'll make a distinction between a "device" and a "product." By "device," we mean one individual, specific computer. For example, "Serial number 1234", "Bill's laptop", "Shared VM XYZ" refer to specific devices. A "product", however, refers to a collection or family of devices. For example, "Fabrikam Laptop", "Adatum ZX450 Laptop", etc. This is important because products are added to our [approved list](device-list.md), or catalog, and devices are what get enrolled into Microsoft Managed Desktop.
+> In this topic, we'll make a distinction between a "device" and a "product." By "device," we mean one individual, specific computer. For example, "Serial number 1234", "Bill's laptop", "Shared VM XYZ" refer to specific devices. A "product", however, refers to a collection or family of devices. For example, "Fabrikam Laptop", "Adatum ZX450 Laptop", etc. This is important because products are added to our approved list, or catalog, and devices are what get enrolled into Microsoft Managed Desktop.
 
 ## Product lifecycle
 
