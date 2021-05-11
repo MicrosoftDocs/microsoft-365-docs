@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: micurn
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,7 +17,8 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_subscriptions
-search.appverid: MET150
+- PPM_nicholak
+search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
 ms.date: 07/01/2020
 ---
