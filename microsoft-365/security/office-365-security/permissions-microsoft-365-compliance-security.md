@@ -1,5 +1,5 @@
 ---
-title: Permissions in the Microsoft 365 security and compliance centers
+title: Permissions in the Microsoft 365 security center
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: 
   - MOE150
   - MET150
-description: By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
+description: Admins can learn how to manage permissions in the Microsoft 365 security center for all tasks related to security.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Permissions in the Microsoft 365 compliance center and Microsoft 365 security center
+# Permissions in the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,9 +30,28 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Your organization needs to manage security and compliance scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group. By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance.
+Your organization needs to manage security scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group.
 
-After a global administrator adds users to these admin roles, these admin will have access to features and data that span all services in Microsoft 365, such as the Microsoft 365 security center, Microsoft 365 compliance center, Azure, Office 365, and Enterprise Mobility + Security.
+The Microsoft 365 security center supports directly managing permissions for users who perform security tasks in Microsoft 365. This means you'll no longer need to use the [Security & Compliance Center to manage permissions](permissions-in-the-security-and-compliance-center.md) for security features. By using the Microsoft 365 security center, you can manage permissions centrally for all tasks related to security.
+
+To view the **Permissions** tab in the Microsoft 365 security center, users need to be a global administrator or need to be assigned the Role Management role (a role that by default is assigned only to the Organization Management role group). The Role Management role allows users to view, create, and modify role groups.
+
+> [!NOTE]
+> For compliance-related permissions in the Microsoft 365 compliance center, see [Permissions in the Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
+
+Permissions in the Microsoft 365 security center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Microsoft 365 security center will be very similar. But, It's important to remember that Exchange role groups and Microsoft 365 security center role groups don't share membership or permissions. For example, both environments have an Organization Management role group, but the permissions they grant, and the group memberships are different.
+
+![Permissions page in the Security & Compliance Center](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+
+## Relationship of members, roles, and role groups
+
+A **role** grants permissions to do a set of tasks; for example, the Case Management role lets people work with eDiscovery cases.
+
+A **role group** is a set of roles that lets people do their jobs across the Security & Compliance Center. For example, the Compliance Administrator role group includes (among other roles) the roles for Case Management, Content Search, and Organization Configuration (plus others) because someone who's a compliance admin will need the permissions for those tasks to do their job.
+
+The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
+
+![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## What the Microsoft 365 roles are
 
