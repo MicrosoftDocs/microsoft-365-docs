@@ -62,4 +62,4 @@ If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365]
 
 Check out this list of common errors and solutions: [Problems with your Microsoft 365 for business product key?](product-key-errors-and-solutions.md)
   
-Or, [call Microsoft Support](../admin/contact-support-for-business-products.md).
+Or, [call Microsoft Support](../business-video/get-help-support.md).
