@@ -38,6 +38,9 @@ After you attach the SharePoint document library, you'll be able to view any cla
 
 ## Customize your Contracts tab tile view
 
+> [!NOTE]
+> This section references code examples that are contained in the **ContractCard.json** file that is included in the **solutionfiles** zip file.
+
 While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these fields were extracted from each contract through your SharePoint Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see where the contract is in the approval process. For example, all approved contracts will have a blue header bar.
 
    ![List view.](../media/content-understanding/tile.png)
