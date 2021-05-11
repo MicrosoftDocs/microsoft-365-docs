@@ -67,7 +67,7 @@ Permissions to the Microsoft Defender Security Center can be granted by using ei
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
-3. Grant access to the Microsoft Defender Security Center. (Need help? See [Manage portal access using RBAC](rbac)).
+3. Grant access to the Microsoft Defender Security Center. (Need help? See [Manage portal access using RBAC](rbac.md)).
 
 ## Configure device proxy and internet connectivity settings
 
