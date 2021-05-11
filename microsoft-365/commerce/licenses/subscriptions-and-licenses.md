@@ -5,20 +5,20 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: "Learn about subscriptions and licenses in Microsoft 365 for business."
 ms.date: 07/01/2020
 ---

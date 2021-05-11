@@ -5,20 +5,20 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- manage_licenses
 - okr_smb
-- commerce
-search.appverid:
-- MET150
+- manage_licenses
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to unassign licenses from user accounts."
 ms.date: 07/01/2020
 ---
@@ -90,7 +90,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 3. In the right pane, select **Licenses and Apps**.
 4. Expand the **Licenses** section, clear the boxes for the licenses that you want to unassign, then select **Save changes**.
 
-###  Unassign licenses from multiple users
+### Unassign licenses from multiple users
 
 ::: moniker range="o365-worldwide"
 
@@ -119,7 +119,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 - When a license is removed from a user, data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
 - Files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
-- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content search reference](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes).
+- When the license is removed, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see "Searching disconnected or de-licensed mailboxes" in [Content Search in Microsoft 365](../../compliance/content-search.md).
 - If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](../../compliance/inactive-mailboxes-in-office-365.md). For more information, see [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - To learn how to block a user's access to Microsoft 365 data after their license is removed, and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 - If you remove a user's license and they still have Office apps installed, they see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Office apps.
