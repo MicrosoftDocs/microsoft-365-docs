@@ -81,7 +81,7 @@ The following table lists the third-party data connectors available in the Micro
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> Data connector provided by TeleMessage. Before you can archive data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.<br/><br/><sup>2</sup> Data connector provided by Veritas. Before you can archive data in Microsoft 365, you have to work with Veritas to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.
+> <sup>1</sup> Data connector provided by TeleMessage. Before you can archive data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type. TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud.<br/><br/><sup>2</sup> Data connector provided by Veritas. Before you can archive data in Microsoft 365, you have to work with Veritas to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.
 
 The third-party data listed in the previous table (except for HR data and physical badging data) is imported into user mailboxes. The corresponding compliance solutions that support third-party data are applied to the user mailbox where the data is stored.
 
