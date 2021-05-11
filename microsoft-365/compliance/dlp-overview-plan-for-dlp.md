@@ -93,11 +93,11 @@ Your implementation plan should include:
 
 #### Map out path from start to desired end state
 
-
+Documenting how your organization is going to get from its starting state to the desired end state is essential to communicating with your stakeholders and setting the project scope.
 
 #### Sensitive item discovery
 
-
+There are multiple ways to discovery what individual sensitive items are and where they are located. You may have sensitivity labels already deployed or you may have decided to deploy a very broad DLP policy to all locations that only discovers and audits items. To learn more, see [Know your data](information-protection.md#know-your-data).
 
 #### Policy planning
 
@@ -136,8 +136,14 @@ Different groups in your organization may have different views on what's an acce
 
 **Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, it will require an extra 500 person hours per quarter for the internal auditors to complete the tracking process. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage.
 
-
 #### Planning for prerequisites
+
+Before you can monitor some DLP locations, there are prerequisites that must be met. See the Before your begin sections of:
+
+- [Get started with the data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md#before-you-begin)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#before-you-begin)
+- [Get started with the Microsoft compliance extension (preview)](dlp-chrome-get-started.md#before-you-begin)
+- [Use data loss prevention policies for non-Microsoft cloud apps (preview)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### Policy deployment
 
@@ -163,14 +169,13 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 #### End user training
 
+When a DLP policy is triggered, you can configure your policies to [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) to admins and end users. While your policies are still in test mode and before they are set to enforce a blocking action, policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.  
+
+
 #### Test and tune your policies
 
+
 #### Review DLP requirements and update strategy
-
-
-
-
-### Plan for training of end users
 
 
 ## Common steps for deploying DLP
