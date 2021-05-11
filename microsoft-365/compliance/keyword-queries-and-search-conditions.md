@@ -69,7 +69,7 @@ The following table lists email message properties that can be searched by using
 |Received|The date that an email message was received by a recipient.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages that were received on April 15, 2016. The second example returns all messages received between January 1, 2016 and March 31, 2016.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
 |Sent|The date that an email message was sent by the sender.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages that were sent on the specified date or sent within the specified date range.|
-|Size|The size of an item, in bytes.|`size>26214400`  <br/> `size:1..1048567`|Messages larger than 25??MB. The second example returns messages from 1 through 1,048,567 bytes (1 MB) in size.|
+|Size|The size of an item, in bytes.|`size>26214400`  <br/> `size:1..1048567`|Messages larger than 25 MB. The second example returns messages from 1 through 1,048,567 bytes (1 MB) in size.|
 |Subject|The text in the subject line of an email message.  <br/> **Note:** When you use the Subject property in a query, the search returns all messages in which the subject line contains the text you're searching for. In other words, the query doesn't return only those messages that have an exact match. For example, if you search for  `subject:"Quarterly Financials"`, your results will include messages with the subject "Quarterly Financials 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Messages that contain the phrase "Quarterly Financials" anywhere in the text of the subject line. The second example returns all messages that contain the word northwind in the subject line.|
 |To|The To field of an email message.<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|All examples return messages where Ann Beebe is specified in the To: line.|
 |||||
@@ -427,6 +427,22 @@ To search for Skype for Business conversations that occurred within a specific d
 ```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
+
+## Character limits for searches
+
+There is a 4,000 character limit for search queries when searching for content in SharePoint sites and OneDrive accounts.  
+Here is how the total number of characters in the search query are calculated:
+
+- The characters in keyword search query (including both user and filter fields) count against this limit.
+
+- The characters in any location property (such as the URLs for all the SharePoint sites or OneDrive locations being searched) count against this limit.
+
+- The characters in all the search permissions filters that are applied to the user running the search count against the limit.
+
+For more information about character limits, see [eDiscovery search limits](limits-for-content-search.md#search-limits).
+
+> [!NOTE]
+> The 4,000 character limit applies to Content search, Core eDiscovery, and Advanced eDiscovery.
 
 ## Search tips and tricks
 
