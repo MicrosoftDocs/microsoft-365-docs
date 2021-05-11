@@ -81,13 +81,13 @@ If you're experienced at using PowerShell, you might want to go this route inste
 To upgrade a single DL, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
 ```
 
 For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 ```
 
 > [!NOTE]
