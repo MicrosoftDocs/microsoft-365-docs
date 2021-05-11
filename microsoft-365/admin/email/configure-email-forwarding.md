@@ -44,7 +44,7 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
 1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)** page.
 
-2. Select the name of the user whose email you want to forward to open the properties page.
+2. Select the name of the user whose email you want to forward, then open the properties page.
 
 3. On the **Mail** tab, select **Manage email forwarding**.
 
@@ -55,3 +55,42 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
      Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
 
 5. Don't delete the account of the user who's email you're forwarding or remove their license!  If you do, email forwarding will stop.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=847686)** page.
+
+2. Select the name of the user whose email you want to forward to open the properties page.
+
+3. Expand **Mail settings**, and then in the **Email forwarding** section, select **Edit**.
+
+4. On the email forwarding page, set the toggle to **On**, enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. If you don't see this option, make sure a license is assigned to the user account. Select **Save**.
+
+   **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. To learn more, see [Use rules to automatically forward messages](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+
+   Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
+
+5. Don't delete the account of the user who's email you're forwarding or remove their license!  If you do, email forwarding will stop.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=850628)** page.
+
+2. Select the name of the user whose email you want to forward to open the properties page.
+
+3. Expand **Mail settings**, and then in the **Email forwarding** section, select **Edit**.
+
+4. On the email forwarding page, set the toggle to **On**, enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. If you don't see this option, make sure a license is assigned to the user account. Select **Save**.
+
+   **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. To learn more, see [Use rules to automatically forward messages](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+
+   Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
+
+5. Don't delete the account of the user who's email you're forwarding or remove their license!  If you do, email forwarding will stop.
+
+::: moniker-end
+
