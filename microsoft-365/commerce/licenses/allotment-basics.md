@@ -5,15 +5,17 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- commerce_licensing
 description: "Learn about the new allotments feature."
+ms.date: 03/17/2021
 ---
 
 # Allotment basics

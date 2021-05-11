@@ -5,21 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 
+ms.date: 04/07/2021
 ---
 
 # Buy or remove licenses
