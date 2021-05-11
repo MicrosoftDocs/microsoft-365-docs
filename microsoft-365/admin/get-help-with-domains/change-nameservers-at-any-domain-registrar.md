@@ -159,33 +159,36 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-2. On the **Domains** page, select the domain and then choose **DNS Records**.
+2. On the **Domains** page, select a domain.
 
-3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record** and enter the following:
+3. On the domain details page, select the **DNS records** tab.
+ 
+4. Select **Add** record.
 
-   - For **DNS type**, enter **A (Address)**.
+5. In the **Add a custom DNS record pane**, from the **Type** dropdown list, select **A (Address)**.
+
+6. In the **Host name or Alias** box, type **@**.
+
+7. In the **IP Address** box, type the static IP address for the website where it's currently hosted. For example, 172.16.140.1.
     
-   - For **Host name or Alias**, enter **@**.
+> [!Important]
+>  This must be a static IP address for the website, not a dynamic IP address. To make sure you can get a static IP address for your public website, check with the site that hosts your website.
+   
+8. If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 9.
     
-   - For **IP Address**, enter the static IP address for your website where it's currently hosted (for example, 172.16.140.1). 
-    
-   This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with the site where your website is hosted to make sure you can get a static IP address for your public website. 
-    
-5. Select **Save**. 
+9. Select **Save**. 
     
 In addition, you can create a CNAME record to help customers find your website.
   
-1. Select **+ New custom record** and enter the following: 
-    
-   - For **DNS type**, enter **CNAME (Alias)**.
-    
-   - For **Host name or Alias**, enter **www**.
-    
-   - For **Points to address**, enter the fully qualified domain name (FQDN) for your website (for example, contoso.com). 
-    
-2. Select **Save**. 
-  
-When the nameserver records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
+1.	Select **Add record**.
+
+3.	In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **CNAME (Alias)**.
+4.	In the **Host name or Alias** box, type **www**.
+5.	In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.com**.
+6.	If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 6.
+7.	Select Save.
+
+After the nameserver records are updated to point to Microsoft, your domain setup is complete. Email is routed to Microsoft, and traffic to your website address continues to go to your current website host.`
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
