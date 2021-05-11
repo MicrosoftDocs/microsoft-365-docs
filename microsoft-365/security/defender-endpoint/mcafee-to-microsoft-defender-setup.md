@@ -117,7 +117,7 @@ Because your organization is still using McAfee, you must set Microsoft Defender
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
+2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
    
    - Set the DWORD's value to **1**.
    
