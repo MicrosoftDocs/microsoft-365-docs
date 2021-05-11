@@ -120,7 +120,7 @@ The following table lists the contact properties that are indexed and that you c
 > [!TIP]
 > To search for values that contain spaces or special characters, use double quotation marks ("  ") to contain the phrase; for example, `businessaddress:"123 Main Street"`.
   
-| Property | Property description |
+|Property |Property description |
 |:-----|:-----|
 |BusinessAddress|The address in the **Business Address** property. The property is also called the **Work** address on the contact properties page.|
 |BusinessPhone|The phone number in any of the **Business Phone** number properties.|
@@ -168,7 +168,7 @@ For more information about creating queries using the `SensitiveType` property, 
 
 Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as `>=` or `..`), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results. 
   
-| Operator | Usage | Description |
+|Operator |Usage |Description |
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns items that include all of the specified keywords or  `property:value` expressions. For example,  `from:"Ann Beebe" AND subject:northwind` would return all messages sent by Ann Beebe that contained the word northwind in the subject line. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
