@@ -85,7 +85,9 @@ This expression consists of five parts, in this order:
 1. Any amount of the following characters:
 
    a. Letters from a to z
+
    b. Numbers from 0-9
+
    c. Period, underscore, percent, or dash
 
 2. The @ symbol
