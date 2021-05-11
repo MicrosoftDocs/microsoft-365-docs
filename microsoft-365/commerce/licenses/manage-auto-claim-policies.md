@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,9 +16,9 @@ ms.collection:
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
+ms.date: 04/06/2021
 ---
 
 # Manage auto-claim policies
