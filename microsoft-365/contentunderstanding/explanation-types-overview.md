@@ -18,17 +18,15 @@ description: "Learn more about explanation types in Microsoft SharePoint Syntex"
 
 Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they are used.
 
-[**TDB - Need updated screenshot**]
-
 ![Explanation types](../media/content-understanding/explanation-types.png) 
    
 These explanation types are available:
 
-- **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string **Referring Doctor** is in all Medical Referral documents you are identifying. Or the **Phone number** of the referring doctor from all Medical Referral document that you are identifying.
+- **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *Referring Doctor* is in all Medical Referral documents you are identifying. Or the *Phone number* of the referring doctor from all Medical Referral documents that you are identifying.
+
+- **Regular expression**: [**TBD - Need new description paragraph**]
 
 - **Proximity**: Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
-
-- **Regular**: [**TBD - Need new description paragraph**]
 
 ## Phrase list
 
