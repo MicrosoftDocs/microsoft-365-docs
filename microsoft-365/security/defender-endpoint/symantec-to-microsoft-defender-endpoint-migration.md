@@ -62,7 +62,7 @@ In this migration guide, we focus on [next-generation protection](https://docs.m
 | [Automated investigation and remediation](automated-investigations.md) | Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches. |
 | [Threat hunting service](microsoft-threat-experts.md) (Microsoft Threat Experts) | Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed. |
 
-**Want to learn more? See [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).**
+**Want to learn more? See [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).**
 
 ## Next step
 
