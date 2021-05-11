@@ -198,7 +198,7 @@ You can run this command in the command line to enable the ASR rule:
 "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
 ```
 
-[Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission)
+You can use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 ### Block Adobe Reader from creating child processes
 
