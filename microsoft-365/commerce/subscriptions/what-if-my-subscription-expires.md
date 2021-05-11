@@ -45,6 +45,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 *For most offers, in most countries and regions.
   
 > [!NOTE]
+>
 > **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## What happens if I cancel a subscription?
@@ -63,6 +64,7 @@ To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.
 > If you want your subscription data to be deleted before the typical Disabled stage is over, you can [close your account](../close-your-account.md).
   
 > [!NOTE]
+>
 > If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
 ## What are my options if my subscription is about to expire?
