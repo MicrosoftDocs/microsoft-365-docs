@@ -190,6 +190,8 @@ Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
+See [Microsoft Endpoint Manager custom procedure](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) for MEM custom rules procedure information.
+
 You can run this command in the command line to enable the ASR rule:
 
 ```powershell
