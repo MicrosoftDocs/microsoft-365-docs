@@ -16,23 +16,23 @@ description: "Learn about best practices to manage the many topics in your organ
 ---
 # Manage topics at scale in Microsoft Viva Topics
 
-When you index many SharePoint sites, or your entire organization for Viva Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage Topics** page, it can be challenging to know where to start. This article describes how Viva Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
+When you index your SharePoint sites or your entire organization for Viva Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Viva Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
 
 First, a reminder of the four states for topics:
 
--   **Suggested**: A topic that has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
+- **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
--   **Confirmed**: A topic that has been suggested by AI and has been validated. Validation is done by confirmation from a knowledge manager. Additionally, a topic can be confirmed if at least two users give positive feedback through the feedback question on the topic card.
+- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+ 
+- **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
 
--   **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
-
--   **Removed**: A topic that has been rejected by a knowledge manager and will no longer be visible to viewers. The topic can be in any state when it is removed (suggested, confirmed, or published). When a published topic is removed, the page with the curated details needs to be deleted manually through the Pages Library of the topic center.
+- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
 ## Knowledge manager role 
 
-When you configure Viva Topics, you will add a group of users who are granted permissions to see the **Manage Topics** experience in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They will have access to data about the topics and be able to see lists of all topics that they have access to review and curate.
+When you configure Viva Topics, you will add a group of users who are granted permissions to see the **Manage topics** experience in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They will have access to data about the topics and will be able to see lists of all topics that they have access to review and curate.
 
-Employees in this role should have broad permissions to view a wide array of topics, or if permissions are segmented, you might want to select a group of users that represent different areas of the business and can curate for their own areas.
+Employees in this role should have broad permissions to view a wide array of topics. Or if permissions are segmented, you might want to select a group of users that represent different areas of the business and can curate for their own areas.
 
 When you first review topics in the topic center, suggested topics are purely AI-defined. Knowledge managers might have a desire to review each one before rolling out Viva Topics to a broad user community. When working at scale, this is rarely a practical approach because of the
 thousands of topics.
@@ -41,18 +41,18 @@ The recommended approach is to find a balance of the most pertinent or important
 
 It is important to recognize that the system will identify and show both AI-suggested and human-curated published topics to all users, but this does not mean that every suggested topic will be shown to all end users. The security settings in place will show only the topics that each employee can access based on the permissions that are set on the content itself.
 
-As a knowledge manager with permissions to view the **Manage Topics** section, you might see a much larger number of topics listed because of your own elevated permissions, depending on your role in the organization and level of access. You will also have access to views that allow you see topics listed in a single location rather than accessing them by using highlights or search.
+As a knowledge manager with permissions to view the **Manage topics** page, you might see a much larger number of topics listed because of your own elevated permissions, depending on your role in the organization and level of access. You will also have access to views that allow you see topics listed in a single location rather than accessing them by using highlights or search.
 
 In addition, there is likely a smaller percentage of topics that will be viewed by most users and a larger set of more topics that will be seen much less frequently due to permissions. As a result, it is good to first focus any curation tasks on the topics that are the most important
 for your organization and that are the most likely to be seen more broadly.
 
-This article covers a few strategies for curation. These strategies might mean that the less frequent or less common topics might not be fully curated by knowledge managers, but these suggested topics remain useful and can provide insight or a pointer to a person, which can save an employee hours of looking for a starting point. Allowing crowd-sourced updates to topics is beneficial and provides more content and coverage for the less common topics.
+This article covers a few strategies for curation. These strategies might mean that the less frequent or less common topics might not be fully curated by knowledge managers, but these suggested topics remain useful and can provide insight or a pointer to a person, which can save an employee hours of looking for a starting point. Allowing crowdsourced updates to topics is beneficial and provides more content and coverage for the less common topics.
 
 This article provides some guidance and best practices to approach topic management and curation.
 
 ## Understanding suggested topics
 
-When topics are discovered by AI, they are marked as a **Suggested Topic**, both on the **Manage Topics** page, and in the topic cards that are presented to users. Any topic that hasn't been marked as removed will be shown to users—this includes confirmed, published, and
+When topics are discovered by AI, they are marked as a **Suggested Topic**, both on the **Manage topics** page, and in the topic cards that are presented to users. Any topic that hasn't been marked as removed will be shown to users—this includes confirmed, published, and
 suggested topics. Topics in all three states are available to end users.
 
 Within a topic card or page, we use various cues to show how the AI has generated the information. The system uses a variety of evidence to add the resources, primarily through the content itself.
@@ -79,7 +79,7 @@ These attributes demonstrate that the content has been added by AI, and how the 
 
 ### Communication
 
-When communicating to your users about Viva Topics, it's important to clarify the difference between AI-suggested topics & content and their curated equivalents.
+When communicating to your users about Viva Topics, it's important to clarify the difference between AI-suggested topics and content and their curated equivalents.
 
 As a reader, you should view suggested topics with a more critical eye. They should not be perceived as authoritative sources of organizational truth. Rather, they are a way-finding tool to access tacit knowledge that is presented through the content that you have access to. The AI has discovered the topic and has enough evidence to show it to you, but its value hasn't been confirmed by a human.
 
@@ -89,7 +89,7 @@ Suggested topics can be improved by curation of the page and through crowdsource
 
 When users interact with a suggested topic, they might be asked a simple question in the UI. For example: *Was this topic relevant to the page?* *Is this person relevant for the topic?* *Was this definition accurate?* By using the feedback to such questions, the accuracy of the topics can increase without the need for a named individual to curate the page.
 
-The homepage of a topic center is another location where feedback on suggested topics is gathered. In the topic center, a user can see the topics that they have been associated with and are given the option to either confirm this association or have it removed.
+The home page of a topic center is another location where feedback on suggested topics is gathered. In the topic center, a user can see the topics that they have been associated with and are given the option to either confirm this association or have it removed.
 
    ![Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics.](../media/knowledge-management/scale-topics-topic-center-confirm-connections.png)
 
@@ -97,13 +97,13 @@ When you allow broad crowdsourcing of topics, you should consider the following 
 
 -   Users will see the **Edit** option on topic pages and can edit the pages in the same experience as other modern SharePoint pages.
 
--   Some **Suggested Topic** web parts can't be removed. The topic name, alternate names, definition, suggested people, and suggested resources cannot be removed.
+-   Some **Suggested Topic** web parts can't be removed. The topic name, alternate names, definition, suggested people, and suggested resources can't be removed.
 
--   It can take some time for a suggested or confirmed topic that has been published to be moved to the **Published** list on the **Manage Topics** page.
+-   It can take some time for a suggested or confirmed topic that has been published to be moved to the **Published** list on the **Manage topics** page.
 
-    -   The estimated time for a topic to appear in         search\\highlights\\hashtags\\annotations is 2 hours.
+    -   The estimated time for a topic to appear in search, highlights, hashtags, or annotations is 2 hours.
 
-    -   The estimated time for a topic to appear in Published list\\Managed topics is no more than 24 hours in most cases. You should see them within 2 hours, but because there is a full sync every 24 hours, the wait should not be longer than 24 hours.
+    -   The estimated time for a topic to appear in **Published** list on the **Managed topics** page is no more than 24 hours in most cases. You should see them within 2 hours, but because there is a full sync every 24 hours, the wait should not be longer than 24 hours.
 
 -   It is possible that a user might leave a published topic in a checked-out or editing state. A knowledge manager can see these in the Pages Library of the topic center and either can discard the user's changes to republish the topic or contact that user to request that they check in the topic.
 
