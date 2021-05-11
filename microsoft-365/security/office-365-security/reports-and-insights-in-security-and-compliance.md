@@ -3,7 +3,7 @@ title: Smart reports, insights - Microsoft 365 Security & Compliance Center
 f1.keywords: 
   - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 ms.date: 
 audience: ITPro

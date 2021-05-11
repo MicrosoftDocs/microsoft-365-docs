@@ -5,23 +5,24 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - okr_SMB
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to assign licenses to users."
+ms.date: 04/26/2021
 ---
 
 # Assign licenses to users

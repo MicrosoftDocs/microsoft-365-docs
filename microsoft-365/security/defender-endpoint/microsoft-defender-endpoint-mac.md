@@ -93,6 +93,8 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
