@@ -34,9 +34,9 @@ description: "Learn more about the Microsoft 365 admin center."
 
 With the Microsoft 365 admin center, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
-1. Sign in to Office.com with your work account, and select the app launcher. 
+Sign in to Office.com with your work account, and select the app launcher. 
 
-2. If you have permission to access the admin center, you'll see **Admin** in the list. Select it. 
+If you have permission to access the admin center, you'll see **Admin** in the list. Select it. 
 
 At the top of the admin center, review the top actions for you. You may see different actions depending on what you've already set up, such as creating new accounts, using Teams, setting up email, and installing Office apps. 
  
@@ -81,8 +81,6 @@ For more information on managing billing, passwords, users, and admins, see the 
 By default, the person who signs up for and buys an Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
 
 If you get the message "**You don't have permission to access this page or perform this action**," you aren't an admin.
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### Who has admin permissions in my business?
 <a name="bkmk_admin"> </a>
