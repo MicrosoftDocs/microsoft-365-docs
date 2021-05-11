@@ -201,7 +201,7 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 > [!IMPORTANT]
 > In general, you shouldn't have to add exclusions for Defender for Endpoint, especially if you have already defined exclusions for Microsoft Defender Antivirus. However, if you run into issues where Microsoft Defender Antivirus won't stay in passive mode, perform the following task. Otherwise, skip this section and proceed to [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 
-To add exclusions to Microsoft Defender for Endpoint, you create [indicators](manage-indicators.md#create-indicators-for-files).
+To add exclusions to Microsoft Defender for Endpoint, you create [indicators](indicator-file.md).
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
