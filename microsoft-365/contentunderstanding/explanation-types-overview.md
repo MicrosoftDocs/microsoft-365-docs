@@ -210,20 +210,24 @@ The explanation library includes commonly used phrase list explanations, includi
 - Time: 12 and 24 hour formats.
 - Number: Positive and negative numbers up to 2 decimals. 
 - Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, 11.11%, etc.
-- Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, etc.
+- Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, or (000) 000-0000.
 - Zip code: US Zip code formats. For example, 11111, 11111-1111.
 - First word of sentence: Common patterns for words up to 9 characters. 
-- End of sentence: Common punctuation for end of a sentence
+- End of sentence: Common punctuation for end of a sentence.
 - Credit card: Common credit card number formats. For example, 1111-1111-1111-1111. 
 - Social security number: US Social Security Number format. For example, 111-11-1111. 
 - Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_, etc.
 - Currency: Major international symbols. For example, $. 
-- Email CC: A phrase list with the term 'CC:', often found near the names or email addresses of additional people or groups the message was sent to.
+- Email address: Matches an email address by applying a regular expression.
+- Email CC: A phrase list with the term 'CC:', often found near the names or email. addresses of additional people or groups the message was sent to.
 - Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.
 - Email greeting: Common opening lines for emails.
 - Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to. 
 - Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. 
-- Email subject: A phrase list with the term 'Subject:', often found near the email's subject. 
+- Email subject: A phrase list with the term 'Subject:', often found near the email's subject.
+- US bank account numbers regular expression: Regular expression for identifying US bank account numbers containing between 6 and 17 digits.
+- US ITIN number regular expression: Regular expression for identifying US Individual Taxpayer Identification Number (ITIN) numbers. 
+- Web address or URL: Applies a regular expression to match a phrase that starts with http:// or https://.
 
 The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 
