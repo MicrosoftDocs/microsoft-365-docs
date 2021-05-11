@@ -27,7 +27,7 @@ Use the **Disposition** page from **Records Management** in the Microsoft 365 co
 > [!NOTE]
 > Rolling out in preview: **multi-stage disposition review**.
 > 
-> An administrator can now add up to five consecutive stages of disposition review in a retention label, and reviewers can forward disposition requests to additional users. You can also customize the email notifications and reminders. For more information, see the information that follows.
+> An administrator can now add up to five consecutive stages of disposition review in a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders. For more information, see the information that follows.
 
 ## Prerequisites for viewing content dispositions
 
@@ -122,7 +122,7 @@ For the reviewers, specify a user or a mail-enabled security group. Microsoft 36
 
 If you need more than one person to review an item at the end of its retention period, select **Add a stage** again and repeat the configuration process for the number of stages that you need, with a maximum of five stages. 
 
-Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also forward the disposition review to other users.
+Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also add other users to their disposition review stage.
 
 > [!NOTE]
 > Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
