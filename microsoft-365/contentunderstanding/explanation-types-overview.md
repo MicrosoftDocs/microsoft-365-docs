@@ -102,7 +102,11 @@ From the **Create an explanation** panel, under **Explanation type**, select **R
 
 ![Screenshot showing the Create an explanation panel with Regular Expression selected.](../media/content-understanding/create-regular-expression.png)
 
-You can either add a regular expression in the text box or select **Add a regular expression from a template**.
+You can either type an expression in the **Regular expression** text box or select **Add a regular expression from a template**.
+
+When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel will be populated.
+
+![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
 
 ## Proximity 
 
