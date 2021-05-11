@@ -51,7 +51,7 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 
 1. Open Outlook desktop client.
 
-2. Compose a New Email. Click the **From** field and select **Other email address**. If you do not see the From field, navigate to Options and select From in the section Show fields.
+2. Compose a New Email. Click the **From** field and select **Other email address**. If you do not see the From field, navigate to **Options** and select **From** in the Show fields section.
 
 3. Select the **Distribution List** address from the Global Address List.
 
