@@ -5,16 +5,19 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
 localization_priority: Normal
-ms.collection:
-- commerce 
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."
+ms.date: 03/17/2021
 ---
 
 # Manage self-service purchases (Users)

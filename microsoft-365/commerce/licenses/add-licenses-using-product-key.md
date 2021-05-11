@@ -18,8 +18,8 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: "Learn how to add licenses to or extend your subscription with a product key."
+ROBOTS: NOINDEX
 ms.date: 04/07/2021
 ---
 
