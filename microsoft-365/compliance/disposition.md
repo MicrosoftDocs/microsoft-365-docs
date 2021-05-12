@@ -177,10 +177,10 @@ As you can see from the example shown, the actions supported are:
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 - **Add reviewers**:
-    - When this action is selected, the user is prompted to specify and then add other users for review.
+    - When this action is selected, the user is prompted to specify and add other users for review.
     
     > [!NOTE]
-    > Currently, this action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the added users. Until they are granted these permissions, they won't be able to participate in the disposition review.
+    > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they won't be able to participate in the disposition review.
 
 Each action taken is saved and stored although you can't yet search for them in the audit log.
 
