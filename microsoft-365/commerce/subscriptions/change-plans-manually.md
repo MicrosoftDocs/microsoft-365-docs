@@ -17,8 +17,8 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
 # Change plans manually

@@ -180,7 +180,7 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
 
    ![MEM rule profile attributes](images/mem02-profile-attributes.png)
 
-3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type an optional description.
+3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
 
    ![MEM basic attributes](images/mem03-1-basics.png)
 
@@ -219,7 +219,7 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
    - In **Property**, select the property to which you want this rule to apply
    - In **Value**, enter the applicable value or value range
 
-   ![MEM Applicability rules](images/mem07-5-applicability -rules.png)
+   ![MEM Applicability rules](images/mem07-5-applicability-rules.png)
 
 10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
 
@@ -257,6 +257,12 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    To enable ASR Block abuse of exploited vulnerable signed drivers, use the following cmdlet:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     To turn off ASR rules, use the following cmdlet:
 
