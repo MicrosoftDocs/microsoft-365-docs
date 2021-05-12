@@ -3093,7 +3093,7 @@
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-appfileevents-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-cloudappevents-table",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender/advanced-hunting-appfileevents-table.md",
