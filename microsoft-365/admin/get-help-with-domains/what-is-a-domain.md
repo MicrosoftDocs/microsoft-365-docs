@@ -62,5 +62,5 @@ Call Microsoft Support - [Get help setting up a domain](../../business-video/get
 
 [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
 
-[Domains FAQ](../setup/domains-faq) (article)  
+[Domains FAQ](../setup/domains-faq.md) (article)  
 
