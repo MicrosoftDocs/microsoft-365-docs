@@ -98,7 +98,9 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 The `DeviceTvmSoftwareInventoryVulnerabilities` table has been deprecated. Replacing it are the `DeviceTvmSoftwareInventory` and `DeviceTvmSoftwareVulnerabilities` tables.
 
+## May 2021
 
+The `AppFileEvents` table has been deprecated. The `CloudAppEvents` table includes information that used to be in the `AppFileEvents` table, along with other activities in cloud services.
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
