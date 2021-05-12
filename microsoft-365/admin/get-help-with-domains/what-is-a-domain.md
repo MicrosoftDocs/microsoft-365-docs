@@ -53,5 +53,14 @@ You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log i
 ## Feeling stuck?
 
 Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
-  
+
+## Related content
+
+[Buy a domain](buy-a-domain-name.md) (article)
+
+[Add a domain to Microsoft 365](../setup/add-domain.md) (article)
+
+[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
+
+[Domains FAQ](../setup/domains-faq) (article)  
 

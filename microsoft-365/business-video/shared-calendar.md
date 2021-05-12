@@ -39,5 +39,7 @@ A shared calendar can help you quickly see when people are available for meeting
 ## Related content
 
 [Manage your calendar and contacts in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)
+
 [Email collaboration](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) (article)
+
 [Overview of the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (article)
