@@ -61,7 +61,7 @@ Once the client application starts the web page will update to show this and tes
 
 ### Advanced tests completed and test report upload
 
-Once the tests are completed the web page and the advanced tests client will both indicate this and if the user is signed in the test report will be uploaded to the customers tenant.
+When the tests are completed, the web page and the advanced tests client will both show that. If the user is signed in, the test report will be uploaded to the customer's tenant.
 
 ## Sharing your test report
 
@@ -73,23 +73,23 @@ All test reports while you are signed in are shared with your administrator.
 
 ### Sharing with your Microsoft account team, support or other personnel
 
-Test reports excluding any personal identification are shared with Microsoft employees. This is enabled by default and can be disabled by your administrator in the **Health | Network Connectivity** page in the Microsoft 365 Admin Center.
+Test reports (excluding any personal identification) are shared with Microsoft employees. This sharing is enabled by default and can be disabled by your administrator in the **Health | Network Connectivity** page in the Microsoft 365 Admin Center.
 
 ### Sharing with other users who sign in to the same Office 365 tenant
 
-You can choose users to share your report with and this is enabled by default. It can also be disabled by your administrator.
+You can choose users to share your report with. Being able to choose is enabled by default, but it can be disabled by your administrator.
 
 ![Sharing a link to your test results with a user](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### Sharing with anyone using a ReportID link
 
-You can share your test report with anyone by providing access to a ReportID link. This generates a URL that you can send to someone so that they can bring up the test report without signing in. This is disabled by default and must be enabled by your administrator.
+You can share your test report with anyone by providing access to a ReportID link. This link generates a URL that you can send to someone so that they can bring up the test report without signing in. This sharing is disabled by default and must be enabled by your administrator.
 
 ![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## Network Connectivity Test Results
 
-The results are shown in the **Summary** and **Details** tabs. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like.
+The results are shown in the **Summary** and **Details** tabs. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like:
 
 ![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
@@ -103,7 +103,7 @@ This section shows test results related to your location.
 
 #### Your location
 
-The user location is detected from the users web browser, or it can be typed in at the users choice. It is used to identify network distances to specific parts of the enterprise network perimeter. Only the city from this location detection and the distance to other network points are saved in the report.
+The user location is detected from the users web browser. It can also be typed in at the user's choice. It is used to identify network distances to specific parts of the enterprise network perimeter. Only the city from this location detection and the distance to other network points are saved in the report.
 
 The user office location is shown on the map view.
 
