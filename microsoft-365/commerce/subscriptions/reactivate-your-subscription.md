@@ -18,7 +18,7 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to reactivate your subscription when it expires, is disabled, or canceled."
 ms.date: 04/07/2021
 ---

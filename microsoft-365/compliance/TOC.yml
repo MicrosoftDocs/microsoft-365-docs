@@ -172,13 +172,11 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key for Microsoft 365 at the tenant level (public preview)
-              href: customer-key-tenant-level.md
-            - name: Service encryption with Customer Key in Office 365
+            - name: Customer Key in Microsoft 365
               href: customer-key-overview.md
-            - name: Set up Customer Key for Office 365
+            - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
-            - name: Manage Customer Key for Office 365
+            - name: Manage Customer Key for Microsoft 365
               href: customer-key-manage.md
             - name: Roll or rotate a Customer Key or an availability key
               href: customer-key-availability-key-roll.md
@@ -501,9 +499,11 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use content search
+        - name: Search for content
           href: content-search.md
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Preview eDiscovery search results
@@ -828,6 +828,8 @@
       items: 
         - name: Learn about Compliance Manager
           href: compliance-manager.md
+        - name: What's new in Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance Manager quickstart
           href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager
