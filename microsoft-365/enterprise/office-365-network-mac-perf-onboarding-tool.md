@@ -39,7 +39,7 @@ We recommend that these be used together where networking quality status can be 
 
 ### Office location identification
 
-When you click the run test button we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it then we request the latitude and longitude from the web browser and limit the accuracy to 300m by 300m before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
+When you click the run test button we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it, then we request the latitude and longitude from the web browser and limit the accuracy to 300 meters by 300 meters before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
 
 ### JavaScript tests
 
@@ -129,7 +129,7 @@ This detects if you are using a VPN to connect to Office 365. A passing result w
 
 #### VPN Split Tunnel
 
-Each optimize category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunneled on the VPN or not. A split out workload avoids the VPN entirely. A tunneled workload is all sent over the VPN. A selective tunneled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunneled.
+Each optimized category route for Exchange Online, SharePoint Online, and Microsoft Teams is tested to see if it is tunneled on the VPN or not. A split out workload avoids the VPN entirely. A tunneled workload is all sent over the VPN. A selective tunneled workload has some routes sent over the VPN and some split out. A passing result will show if all workloads are split out or selective tunneled.
 
 #### Customers in your metropolitan area with better performance
 
@@ -215,7 +215,7 @@ Shows the measured UDP jitter, which should be lower than **30ms**.
 
 We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). A network insight is shown for any required network endpoints which cannot be connected to.
 
-Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there is no response the FQDN is marked as a failure. If there is an HTTP response code 407 the FQDN is marked as a failure. If there is an HTTP response code 403 then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command line tool curl.exe.
+Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there is no response the FQDN is marked as a failure. If there is an HTTP response code 407 the FQDN is marked as a failure. If there is an HTTP response code 403 then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
 
 We test the SSL certificate at each required Microsoft 365 network endpoint that is in the optimize or allow category as defined at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). If any tests do not find a Microsoft SSL certificate, then the encrypted network connected must have been intercepted by an intermediary network device. A network insight is shown on any intercepted encrypted network endpoints.
 
@@ -233,7 +233,7 @@ When you are signed in you can review previous reports that you have run. You ca
 
 ## Network health status
 
-This shows any significant health issues with Microsoft's global network which might impact Microsoft 365 customers.
+This shows any significant health issues with Microsoft's global network, which might impact Microsoft 365 customers.
 
 ![Network health status](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
@@ -243,11 +243,11 @@ Here are answers to some of our frequently asked questions.
 
 ### Is this tool released and supported by Microsoft?
 
-It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool which is customized for the organization by its test results.
+It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool, which is customized for the organization by its test results.
 
 ### What is required to run the advanced test client?
 
-The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime which are higher up on the page. Administrator permissions on the machine is required to install .NET Core.
+The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime, which are higher up on the page. Administrator permissions on the machine are required to install .NET Core.
 
 ### What is Microsoft 365 service front door?
 
