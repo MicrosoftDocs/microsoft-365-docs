@@ -40,7 +40,11 @@ The following table outlines the services associated with groups and teams and k
 |Stream|Videos|
 |Yammer|Conversations|
 
-When deleting a group or team, most of the associated resources are also deleted. Some of the exceptions to this include videos in Stream – these remain and are still owned by the person who uploaded/recorded them, as do flows in Power Automate. Project and roadmap data in Project on the web remains in the CDS and can be restored separately.
+When deleting a group or team, most of the associated resources are also deleted. Some of the exceptions to this include:
+
+- Videos in Stream – these remain and are still owned by the person who uploaded/recorded them
+- Flows in Power Automate - these remain and are owned by the person who created them
+- Project and roadmap data in Project on the web remains in the CDS and can be restored separately.
 
 Groups and teams remain in a soft-delete state for 30 days and can be restored at any time. However, after the 30 days they, and any associated resources such as services and content, are completely purged from the Microsoft 365 environment. Any content protected by a retention policy remains available through eDiscovery searches.
 
@@ -50,7 +54,7 @@ There are three key areas that team and group owners and IT administrators need 
 
 **Content**
 
-Does the content need to be retained after the team is no longer functional or in existence? Is it sufficient to rely on retention capabilities of Microsoft 365, or is some of the content in apps and services that do not offer retention? Does the content need to be retained for record management purposes, for archival purposes, or for future use and reference purposes?
+Does the content need to be retained after the team is no longer functional or in existence? Is it sufficient to rely on retention capabilities of Microsoft 365, or is some of the content in apps and services that don't offer retention? Does the content need to be retained for record management purposes, for archival purposes, or for future use and reference purposes?
 
 These questions must be asked before any team is archived or deleted, to avoid any potential data loss.
 
@@ -62,32 +66,32 @@ Similar to the content considerations, these questions must be asked before the 
 
 **Guests**
 
-When guests are invited to a team, the workflow creates their identity in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests are not removed from Azure Active Directory and as such still exist in the Microsoft Teams environment. While guests cannot access groups, sites, teams, or content which has not been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
+When guests are invited to a team, the workflow creates their identity in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory and as such still exist in the Microsoft Teams environment. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
 
-A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory, add them to the team, and remove them from the team. A team owner cannot, however, remove the guest from Azure Active Directory – this can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory, add them to the team, and remove them from the team. A team owner can't, however, remove the guest from Azure Active Directory. This can only be performed by a global admin or user admin.
 
-Therefore it is important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
+Therefore it's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
 
 ## Teams
 
 Teams-specific content is primarily in the form of conversations.
 
-Conversations in channels cannot be copied or moved using native Microsoft Teams functionality. They can however be exported using the Graph API.
+Conversations in channels can't be copied or moved using native Microsoft Teams functionality. They can however be exported using the Graph API.
 
 Additionally, if a retention policy is applied to Teams, the conversations are retained and available through eDiscovery searches. Using advanced eDiscovery you can [reconstruct a Teams chat conversation](/microsoft-365/compliance/conversation-review-sets).
 
 
 ### Archiving a team
 
-The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they are not active. Additionally, teams can be unarchived if there is a need to continue working on them (such as in the case of a project extension).
+The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they aren't active. Additionally, teams can be unarchived if there's a need to continue working on them (such as in the case of a project extension).
 
-When a team is archived by an owner, it is set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
+When a team is archived by an owner, it's set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
-In the SharePoint site there are no visible changes, however no changes can be made to any files or lists as the SharePoint-based permissions group for the Microsoft 365 Group is set to Site Visitors level. This includes the OneNote notebook for the team, as this is stored in the Site Assets library within the SharePoint site.
+In the SharePoint site there are no visible changes. However no changes can be made to any files or lists as the SharePoint-based permissions group for the Microsoft 365 Group is set to Site Visitors level. This includes the OneNote notebook for the team, as this is stored in the Site Assets library within the SharePoint site.
 
 When a team is archived, the underlying Microsoft 365 group is still subject to the expiration policy (if set), and as such the owner must continue to renew the team.
 
-While the team’s channel conversations and SharePoint site contents are set to read-only, the same is not applied to other associated services:
+While the team’s channel conversations and SharePoint site contents are set to read-only, the same isn't applied to other associated services:
 
 - Planner buckets and tasks can still be created, modified, and deleted
 - Forms can still receive submissions
@@ -99,7 +103,7 @@ While the team’s channel conversations and SharePoint site contents are set to
 
 ## Forms
 
-While a form can be moved from an individual account to a group, it cannot be moved or copied from one group to another. There are three options available for a form when a team is deleted.
+While a form can be moved from an individual account to a group, it can't be moved or copied from one group to another. There are three options available for a form when a team is deleted.
 
 **Duplicate the form**
 
@@ -112,11 +116,11 @@ If the data of the form responses needs to be retained, this can be achieved by 
 
 **Delete the Form**
 
-While deletion of the group will also result in the deletion of any associated forms, group members can [directly delete them](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) without being an owner of the group – however this is a manual step that does not provide any additional benefit.
+While deletion of the group will also result in the deletion of any associated forms, group members can [directly delete them](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) without being an owner of the group. However, this is a manual step that does not provide any additional benefit.
 
 ## OneNote
 
-The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they cannot be copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using OneNote 2016.
+The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they can't be copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using OneNote 2016.
 
 **Move pages and sections to another notebook**
 
@@ -132,15 +136,15 @@ In scenarios where some of the contents of the notebook need only to be retained
 
 ## Mailbox and calendar
 
-It is not uncommon for the group-associated mailbox to be utilized, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
+it's not uncommon for the group-associated mailbox to be utilized, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
 
-In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system generated messages. It is important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
+In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
 If a retention policy is applied to Exchange, the emails and calendar items are retained and available through eDiscovery searches.
 
 **Export mail and calendar**
 
-Team or group members can [export the contents of the mailbox and calendar to an Outlook Data / Personal Storage (PST) file](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91). This file can then be stored elsewhere, or the contents can be imported into a different mailbox. The former is not recommended as the contents of the PST file are not searchable without opening it in Outlook, and the file itself can become corrupted over time.
+Team or group members can [export the contents of the mailbox and calendar to an Outlook Data / Personal Storage (PST) file](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91). This file can then be stored elsewhere, or the contents can be imported into a different mailbox. The former isn't recommended as the contents of the PST file aren't searchable without opening it in Outlook, and the file itself can become corrupted over time.
 
 **IT-performed content migration**
 
@@ -148,14 +152,14 @@ Administrators can use third-party tools to migrate email and calendar contents 
 
 ## Planner
 
-Each group or team can have multiple plans. It is important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
+Each group or team can have multiple plans. it's important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
 
 **Export the plan to a spreadsheet**
 
-If it is only required to keep a copy of the plan for record-keeping purposes, the simplest approach is to [export the plan to an Excel spreadsheet](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). This is a one-way action, as there is no option to import plans from a spreadsheet.
+If it's only required to keep a copy of the plan for record-keeping purposes, the simplest approach is to [export the plan to an Excel spreadsheet](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). This is a one-way action, as there's no option to import plans from a spreadsheet.
 
 > [!IMPORTANT]
-> Exporting a plan to Excel will take most information within the plan, but will not include comments, links, or files.
+> Exporting a plan to Excel will take most information within the plan, but won't include comments, links, or files.
 
 **Copy and move tasks to another Plan**
 
@@ -163,11 +167,11 @@ While this seems like a solution, individual tasks can only be [copied or moved 
 
 **Copy entire plan**
 
-It is also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). However this cannot be to an existing group or even within the same group. Copying the plan will create a new group. Additionally, copying the entire plan will not include comments, assignments, links, attachments, or dates.
+it's also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). However this can't be to an existing group or even within the same group. Copying the plan will create a new group. Additionally, copying the entire plan won't include comments, assignments, links, attachments, or dates.
 
 ## Power Automate
 
-Flows created in Power Automate and associated with a group or team do not belong to the group, and instead are owned by the creator and merely shared with other users and groups. As such they are not affected if a group or team is deleted.
+Flows created in Power Automate and associated with a group or team don't belong to the group, and instead are owned by the creator and merely shared with other users and groups. As such they aren't affected if a group or team is deleted.
 
 **Change ownership of the flow**
 
@@ -199,7 +203,7 @@ If the project needs to be preserved in its functional state beyond the life of 
 
 **Export data from the project or roadmap**
 
-Using the Dynamics 365 Administration Center it is possible to [export user data from the project](/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet, or if using a PowerShell script the data can be exported to Project file (.MPP) and XML file formats.
+Using the Dynamics 365 Administration Center it's possible to [export user data from the project](/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet, or if using a PowerShell script the data can be exported to Project file (.MPP) and XML file formats.
 
 ## SharePoint
 All files in team channels are stored in the document library in the SharePoint site of the associated group. In some cases, content other than documents may exist in SharePoint, such as lists or pages.
@@ -210,9 +214,9 @@ Files are generally stored in three primary locations within a SharePoint site:
 - Files in channels – Documents library
 - Wiki pages – Teams Wiki Data library
 
-If the site has one or more subsites nested underneath it, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there is a separate SharePoint site for each channel.
+If the site has one or more subsites nested underneath it, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there's a separate SharePoint site for each channel.
 
-It is important when removing files from a group or team to consider that they may be shared with users who are not members of the group or team (whether internal or external to the organization), and as such it may be worthwhile communicating the impending change to them.
+it's important when removing files from a group or team to consider that they may be shared with users who aren't members of the group or team (whether internal or external to the organization), and as such it may be worthwhile communicating the impending change to them.
 
 **Download files**
 
@@ -230,11 +234,11 @@ Alternatively, a third-party tool can be used to migrate the list between sites 
 
 **“Export” wiki files**
 
-Wiki contents within team channels are stored in a HTML formatted file in a dedicated library of the associated SharePoint site. They cannot be readily exported and imported to another channel wiki but can be converted to a HTML file and opened as a web page.
+Wiki contents within team channels are stored in a HTML formatted file in a dedicated library of the associated SharePoint site. They can't be readily exported and imported to another channel wiki but can be converted to a HTML file and opened as a web page.
 
 ## Microsoft Stream
 
-Like Power Automate, videos in Stream associated with a group or team are not actually owned by the group and are not deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. This is also the case for meetings recorded in a Teams channel; they are owned by the person who initiated the recording.
+Like Power Automate, videos in Stream associated with a group or team aren't actually owned by the group and aren't deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. This is also the case for meetings recorded in a Teams channel; they are owned by the person who initiated the recording.
 
 **Adding other owners**
 
@@ -254,4 +258,4 @@ Conversations can be moved to another Yammer group by any user, not just owners 
 
 **Export network data**
 
-Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data), however doing so will export all conversations for the entire network. The resulting export however lists the Group ID, so it is possible to filter conversations based on this.
+Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID, so it's possible to filter conversations based on this.
