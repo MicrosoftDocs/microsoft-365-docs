@@ -3,7 +3,6 @@ title: "Service encryption with Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -48,11 +47,17 @@ A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy 
 - Teams status messages
 - User and signal information for Exchange Online
 - Exchange Online mailboxes that aren't already encrypted by mailbox DEPs
-- MIP exact data match (EDM) data – (data file schemas, rule packages, and the salts used to hash the sensitive data)
+- MIP exact data match (EDM) data – (data file schemas, rule packages, and the salts used to hash the sensitive data).
+  For MIP exact data match (EDM) and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.
 
-For MIP exact data match (EDM) and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.
+Multi-workload DEPs don't encrypt the following types of data. Instead, Microsoft 365 uses other types of encryption to protect this data.
 
-You can create multiple DEPs per tenant but can only assign one DEP at a time. When you assign the DEP, encryption begins automatically but takes some time to complete depending on the size of your tenant.
+- SharePoint and OneDrive for Business data.
+- Microsoft Teams files and some Teams call and meeting recordings saved in OneDrive for Business and SharePoint Online are encrypted using the SharePoint Online DEP.
+- Other Microsoft 365 workloads such as Yammer and Planner that aren't currently supported by Customer Key.
+- Teams Live Events and Q&A in Live Events. For Teams, this scenario is the only one that isn't encrypted by Customer Key using multi-workload DEP.
+
+You can create multiple DEPs per tenant but only assign one DEP at a time. When you assign the DEP, encryption begins automatically but takes some time to complete depending on the size of your tenant.
 
 **DEPs for Exchange Online mailboxes** Mailbox DEPs provide more precise control over individual mailboxes within Exchange Online. Use mailbox DEPs to encrypt data stored in EXO mailboxes of different types such as UserMailbox, MailUser, Group, PublicFolder, and Shared mailboxes. You can have up to 50 active DEPs per tenant and assign those DEPs to individual mailboxes. You can assign one DEP to multiple mailboxes.
 

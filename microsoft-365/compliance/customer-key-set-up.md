@@ -3,7 +3,6 @@ title: "Set up Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,16 +18,16 @@ description: "Learn how to set up Customer Key for Microsoft 365."
 
 With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys.
 
-You must set up Azure before you can use Customer Key for Office 365. This article describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key in Office 365. After you have completed Azure setup, you determine which policy, and therefore, which keys, to assign to encrypt data across various Microsoft 365 workloads in your organization. For more information about Customer Key, or for a general overview, see [Service encryption with Customer Key in Office 365](customer-key-overview.md).
+Set up Azure before you can use Customer Key for Office 365. This article describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key in Office 365. After you set up Azure, you determine which policy, and therefore, which keys, to assign to encrypt data across various Microsoft 365 workloads in your organization. For more information about Customer Key, or for a general overview, see [Service encryption with Customer Key in Office 365](customer-key-overview.md).
   
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this article. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
 ## Before you set up Customer Key
 
-Before you get started, ensure that you have the appropriate Azure subscriptions and licensing for your organization. Use paid Azure Subscriptions using either an Enterprise Agreement or a Cloud Service Provider. Credit Card based payments are not accepted. The account needs to be approved and set up for invoicing. Subscriptions procured through Free, Trial, Sponsorships, MSDN Subscriptions, Legacy Support are not eligible. 
+Before you get started, ensure that you have the appropriate Azure subscriptions and licensing for your organization. Use paid Azure Subscriptions using either an Enterprise Agreement or a Cloud Service Provider. Credit Card based payments are not accepted. Approve and set up the account needs for invoicing. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
 
-Customer Key in Office 365 is offered in Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance, and Microsoft 365 E5 Information Protection & Governance SKUs. Office 365 Advanced Compliance SKU is no longer available for procuring new licenses. Existing Office 365 Advanced Compliance licenses will continue to be supported.
+Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance, and Microsoft 365 E5 Information Protection & Governance SKUs offer Customer Key. Office 365 Advanced Compliance SKU is no longer available for procuring new licenses. Existing Office 365 Advanced Compliance licenses will continue to be supported.
 
 To understand the concepts and procedures in this article, review the [Azure Key Vault](/azure/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [Azure AD tenant](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
@@ -40,7 +39,7 @@ To set up Customer Key, complete these tasks in the listed order. The rest of th
   
 **In Azure and Microsoft FastTrack:**
   
-You will complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
+You'll complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
   
 - [Create two new Azure subscriptions](#create-two-new-azure-subscriptions)
 
@@ -68,7 +67,7 @@ You will complete most of these tasks by remotely connecting to Azure PowerShell
   
 ## Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key
 
-Complete these tasks in Azure Key Vault. You'll need to complete these steps regardless of whether you intend to set up Customer Key for Exchange Online and Skype for Business or for SharePoint Online, OneDrive for Business, and Teams files, or for all supported services in Office 365.
+Complete these tasks in Azure Key Vault. You'll need to complete these steps for all DEPs you use with Customer Key.
   
 ### Create two new Azure subscriptions
 
@@ -83,7 +82,7 @@ There is no practical limit to the number of Azure subscriptions that you can cr
 
 Once you've created the two new Azure subscriptions, you'll need to submit the appropriate Customer Key offer request in the [Microsoft FastTrack portal](https://fasttrack.microsoft.com/). The selections that you make in the offer form about the authorized designations within your organization are critical and necessary for completion of Customer Key registration. The officers in those selected roles within your organization ensure the authenticity of any request to revoke and destroy all keys used with a Customer Key data encryption policy. You'll need to do this step once for each Customer Key DEP type that you intend to use for your organization.
 
-**The FastTrack team doesn't provide assistance with Customer Key. Office 365 simply uses the FastTrack portal to allow you to submit the form and to help us track the relevant offers for Customer Key. Once the Fasttrack request is submitted, make sure to reach out to the corresponding Microsoft 365 Customer Key onboarding team to start the onboarding process.**.
+**The FastTrack team doesn't provide assistance with Customer Key. Office 365 simply uses the FastTrack portal to allow you to submit the form and to help us track the relevant offers for Customer Key. Once you've submitted the FastTrack request, reach out to the corresponding Customer Key onboarding team to start the onboarding process.**
   
 To submit an offer to activate Customer Key, complete these steps:
   
@@ -95,12 +94,11 @@ To submit an offer to activate Customer Key, complete these steps:
 
 4. Choose the information card for the offer that applies to you:
 
+   - **Multiple Microsoft 365 workloads:** Choose the **Request encryption key help for Microsoft 365** offer.
+
    - **Exchange Online and Skype for Business:** Choose the **Request encryption key help for Exchange** offer.
 
    - **SharePoint Online, OneDrive, and Teams files:** Choose the **Request encryption key help for SharePoint and OneDrive for Business** offer.
-   
-   -  **Multiple Microsoft 365 workloads:** Choose the **Request encryption key help for Microsoft 365** offer. 
-   *****CHECKING WITH THE FASTTRACK TEAM ON WHEN THIS OFFER WILL BE LIVE**
 
 5. Once you've reviewed the offer details, choose **Continue to step 2**.
 
@@ -201,7 +199,7 @@ You'll need to define three separate sets of permissions for each key vault, dep
 
 - **Key vault contributors** that can change permissions on the Azure Key Vault itself. You'll need to change these permissions as employees leave or join your team. In the rare situation that the key vault administrators legitimately need permission to delete or restore a key you'll also need to change the permissions. This set of key vault contributors needs to be granted the **Contributor** role on your key vault. You can assign this role by using Azure Resource Manager. For detailed steps, see [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/active-directory/role-based-access-control-configure). The administrator who creates a subscription has this access implicitly, and the ability to assign other administrators to the Contributor role.
 
-- **Permissions to Microsoft 365 applications** for every key vault that you use for Customer Key, you need to give wrapKey, unwrapKey and get permissions to the corresponding Microsoft 365 Service Principal. 
+- **Permissions to Microsoft 365 applications** for every key vault that you use for Customer Key, you need to give wrapKey, unwrapKey, and get permissions to the corresponding Microsoft 365 Service Principal. 
 
 To give permission to Microsoft 365 Service Principal, run the **Set-AzKeyVaultAccessPolicy** cmdlet using the following syntax:
 
@@ -230,13 +228,13 @@ To give permission to Microsoft 365 Service Principal, run the **Set-AzKeyVaultA
 
 ### Make sure soft delete is enabled on your key vaults
 
-When you can quickly recover your keys, you are less likely to experience an extended service outage due to accidentally or maliciously deleted keys. You need to enable this configuration, referred to as Soft Delete, before you can use your keys with Customer Key. Enabling Soft Delete allows you to recover keys or vaults within 90 days of deletion without having to restore them from backup.
+When you can quickly recover your keys, you are less likely to experience an extended service outage due to accidentally or maliciously deleted keys. Enable this configuration, referred to as Soft Delete, before you can use your keys with Customer Key. Enabling Soft Delete allows you to recover keys or vaults within 90 days of deletion without having to restore them from backup.
   
 To enable Soft Delete on your key vaults, complete these steps:
   
 1. Sign in to your Azure subscription with Windows PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Run the [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you are enabling soft delete:
+2. Run the [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you're enabling soft delete:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -253,7 +251,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 
 ### Add a key to each key vault either by creating or importing a key
 
-There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated. Use the RSA keys. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
+There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is less complicated, but importing a key provides total control over how the key is generated. Use the RSA keys. Azure Key Vault doesn't support wrapping and unwrapping with elliptical curve keys.
   
 To create a key directly in your key vault, run the [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet as follows:
   
@@ -284,7 +282,7 @@ Some organizations prefer this approach to establish the provenance of their key
   
 - The toolset used for import includes attestation from nCipher that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by nCipher.
 
-- The toolset includes attestation from nCipher that the Azure Key Vault security world was also generated on a genuine HSM manufactured by nCipher. This attestation proves to you that Microsoft is also using genuine nCipher hardware.
+- The toolset includes attestation from nCipher that the Azure Key Vault security world was also generated on a genuine HSM manufactured by nCipher. This attestation proves that Microsoft is also using genuine nCipher hardware.
 
 Check with your security group to determine if the above attestations are required. For detailed steps to create a key on-premises and import it into your key vault, see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/keys/hsm-protected-keys). Use the Azure instructions to create a key in each key vault.
   
@@ -302,7 +300,7 @@ If the _Recovery Level_ property returns anything other than a value of **Recove
   
 ### Back up Azure Key Vault
 
-Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Offline copies should not be connected to any network, such as in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible in the event of a disaster. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and were imported to Azure Key Vault do not qualify as a backup because the metadata necessary for Customer Key to use the key does not exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, you must create a backup of Azure Key Vault after you upload or create a key.
+Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Don't connect offline copies to any network. Instead store them in an offline location, such as in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible if a disaster occurs. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and imported to Azure Key Vault don't qualify as a backup because the metadata necessary for Customer Key to use the key doesn't exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, you must create a backup of Azure Key Vault after you upload or create a key.
   
 To create a backup of an Azure Key Vault key, run the [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet as follows:
 
@@ -364,7 +362,7 @@ To verify that an expiration date isn't set for your keys, run the [Get-AzKeyVau
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-Customer Key can't use an expired key. Operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Microsoft 365 validation.
+Customer Key can't use an expired key. Operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key don't have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 won't pass Microsoft 365 validation.
   
 To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
   
@@ -377,7 +375,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
   
 ### Obtain the URI for each Azure Key Vault key
 
-Once you've set up your key vaults and added your keys, run the following command to get the URI for the key in each key vault. You'll need to use these URIs when you create and assign each DEP later, so save this information in a safe place. Run this command once for each key vault.
+Once you've set up your key vaults and added your keys, run the following command to get the URI for the key in each key vault. You'll use these URIs when you create and assign each DEP later, so save this information in a safe place. Run this command once for each key vault.
   
 In Azure PowerShell:
   
@@ -387,7 +385,7 @@ In Azure PowerShell:
 
 ## Next steps
 
-Once you've completed the steps in this article, you're ready to create and assign DEPs. For instructions, see [Manage Customer Key](/customer-key-manage.md).
+Once you've completed the steps in this article, you're ready to create and assign DEPs. For instructions, see [Manage Customer Key](customer-key-manage.md).
 
 ## Related articles
 
