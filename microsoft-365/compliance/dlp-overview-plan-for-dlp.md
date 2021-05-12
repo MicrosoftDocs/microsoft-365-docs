@@ -37,7 +37,7 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Overview of planning process
 
-The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduce the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. <!--Planning requirements that are unique to a location, like On-premises scanner are covered in  LIST OF LINKS TO THOSE DOCS-->
+The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduces the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. <!--Planning requirements that are unique to a location, like On-premises scanner are covered in  LIST OF LINKS TO THOSE DOCS-->
 <!--
 - DLP planning for Exchange email
 - DLP planning for SharePoint sites
@@ -101,7 +101,7 @@ There are multiple ways to discovery what individual sensitive items are and whe
 
 #### Policy planning
 
-As you begin your DLP adoption you can use questions to focus your policy design and implementation efforts.
+As you begin your DLP adoption you can use these questions to focus your policy design and implementation efforts.
 
 ##### What laws, regulations and industry standards must your organization comply with?
 
@@ -138,7 +138,7 @@ Different groups in your organization may have different views on what's an acce
 
 #### Planning for prerequisites
 
-Before you can monitor some DLP locations, there are prerequisites that must be met. See the Before your begin sections of:
+Before you can monitor some DLP locations, there are prerequisites that must be met. See the **Before you begin** sections of:
 
 - [Get started with the data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md#before-you-begin)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#before-you-begin)
@@ -200,7 +200,7 @@ Adjust/refine
 
 |Customer biz needs description  | approach  |
 |---------|---------|
-|**Customer ABC** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a top tier CSS contract| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve biz process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|        |
+|**Customer ABC** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a top tier CSS contract| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve biz process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
 |**Customer DEF** doesn’t know what they have or where it is, little to no resource depth. Customer uses mostly Teams, ODB and Exchange     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply labels accordingly </br>- Refine policies, train users       |
 |**Customer GHI** is a small startup and wants to protect its intellectual property, must move quickly, willing to dedicate some resources, no deep pockets </br>- Sensitive items are all in M365 ODB/SharePoint </br>- Adoption of  ODB and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Block uploads to non ODB cloud storage      |
 
@@ -231,24 +231,5 @@ Adjust/refine
 
 
 
-move to plan for ODB and SharePoint
-### Policy evaluation in OneDrive for Business and SharePoint Online sites
 
-Across all of your SharePoint Online sites and OneDrive for Business sites, documents are constantly changing — they're continually being created, edited, shared, and so on. This means documents can conflict or become compliant with a DLP policy at any time. For example, a person can upload a document that contains no sensitive information to their team site, but later, a different person can edit the same document and add sensitive information to it.
-  
-For this reason, DLP policies check documents for policy matches frequently in the background. You can think of this as asynchronous policy evaluation.
-  
-#### How it works
- 
-As people add or change documents in their sites, the search engine scans the content, so that you can search for it later. While this is happening, the content's also scanned for sensitive information and to check if it's shared. Any sensitive information that's found is stored securely in the search index, so that only the compliance team can access it, but not typical users. Each DLP policy that you've turned on runs in the background (asynchronously), checking search frequently for any content that matches a policy, and applying actions to protect it from inadvertent leaks.
-  
-![Diagram showing how DLP policy evaluates content asynchronously](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
-  
-
-Finally, documents can conflict with a DLP policy, but they can also become compliant with a DLP policy. For example, if a person adds credit card numbers to a document, it might cause a DLP policy to block access to the document automatically. But if the person later removes the sensitive information, the action (in this case, blocking) is automatically undone the next time the document is evaluated against the policy.
-  
-DLP evaluates any content that can be indexed. For more information on what file types are crawled by default, see [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
-
-> [!NOTE]
-> External sharing of new files in SharePoint can be blocked by default until at least one DLP policy scans the new item. See, [Mark new files as sensitive by default](https://docs.microsoft.com/sharepoint/sensitive-by-default) for detailed information. 
 
