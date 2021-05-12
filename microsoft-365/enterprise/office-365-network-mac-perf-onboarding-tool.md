@@ -28,9 +28,9 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
 
-The network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant which are aggregated each day. In comparison, the network insights from the Microsoft 365 network connectivity test are run locally and one time in the tool. Testing that can be done in-product is limited and by running tests local to the user more data can be gathered resulting in deeper insights. Consider then that the network insights in the Microsoft 365 Admin Center will show that there is a networking problem for use of Microsoft 365 at a specific office location. The Microsoft 365 connectivity test can help to identify the root cause of that problem leading to a recommended network performance improvement action.
+The network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant, which are aggregated each day. In comparison, the network insights from the Microsoft 365 network connectivity test are run locally and one time in the tool. Testing that can be done in-product is limited and by running tests local to the user more data can be gathered resulting in deeper insights. Consider then that the network insights in the Microsoft 365 Admin Center will show that there is a networking problem for use of Microsoft 365 at a specific office location. The Microsoft 365 connectivity test can help to identify the root cause of that problem leading to a recommended network performance improvement action.
 
-We recommend that these be used together where networking quality status can be assessed for each office location in the Microsoft 365 Admin Center and more specifics can be found after deployment of testing based on the Microsoft 365 connectivity test.
+We recommend that these insights be used together where networking quality status can be assessed for each office location in the Microsoft 365 Admin Center and more specifics can be found after deployment of testing based on the Microsoft 365 connectivity test.
 
 >[!IMPORTANT]
 >Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
@@ -43,7 +43,7 @@ When you click the run test button, we show the running test page and identify t
 
 ### JavaScript tests
 
-After office location identification, we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these are completed, we show them on the map and in the details tab where they can be viewed prior to the next step.
+After office location identification, we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these tests are completed, we show them on the map and in the details tab where they can be viewed prior to the next step.
 
 ### Download the advanced tests client application
 
@@ -57,7 +57,7 @@ You will be prompted to download the advanced client test application from the w
 
 ### Start the advanced tests client application
 
-Once the client application starts the web page will update to show this and test data will start to be received to the web page. It updates each time new data is received and you can review the data as it arrives.
+Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new data is received and you can review the data as it arrives.
 
 ### Advanced tests completed and test report upload
 
@@ -69,7 +69,7 @@ The test report requires sign-in to your Office 365 account. Your administrator 
 
 ### Sharing your report with your administrator
 
-All test reports that occur when you are signed are shared with your administrator.
+If you are signed in when a test report occurs, that reports is shared with your administrator.
 
 ### Sharing with your Microsoft account team, support or other personnel
 
@@ -113,7 +113,7 @@ We identify the network egress IP address on the server side. Location databases
 
 #### Your distance from the network egress location
 
-We determine the distance from that location to the office location. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers) since that is likely to increase the TCP latency by more than 25ms and may affect user experience.
+We determine the distance from that location to the office location. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers) since that is likely to increase the TCP latency by more than 25 ms and may affect user experience.
 
 The network egress location is shown on the map view and connected to the user office location indicating the network backhaul inside of the enterprise WAN.
 
@@ -213,7 +213,7 @@ Shows the measured UDP jitter, which should be lower than **30ms**.
 
 #### Connectivity
 
-We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). A network insight is shown for any required network endpoints which cannot be connected to.
+We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). A network insight is shown for any required network endpoints, which cannot be connected to.
 
 Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there is no response the FQDN is marked as a failure. If there is an HTTP response code 407 the FQDN is marked as a failure. If there is an HTTP response code 403 then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
 
