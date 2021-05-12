@@ -1,5 +1,5 @@
 ---
-title: "Customer Key for multiple Microsoft 365 workloads"
+title: "Customer Key for multiple Microsoft 365 workloads Public Preview"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,7 +18,7 @@ description: "Learn how to set up Customer Key for your data within Microsoft 36
 
 # Overview of Customer Key for multiple Microsoft 365 workloads for all tenant users
 
-Microsoft recently added the support for creating a DEP that encrypts data across multiple M365 workloads that are listed below. 
+Microsoft recently added the support for creating a DEP that encrypts data across multiple M365 workloads that are listed below.
 
 - Teams chat messages (1:1 chats, group chats, meeting chats and channel conversations)
 - Teams media messages (images, code snippets, video messages, audio messages, wiki images)
@@ -63,46 +63,11 @@ You'll need to use a work or school account that has the compliance admin role t
 
 ### Create policy
 
-```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
-```
-
-Description: Enable compliance admin to create a new data encryption policy (DEP) using two AKV root keys. Once created, a policy can then be assigned using Set-M365DataAtRestEncryptionPolicyAssignment cmdlet. Upon first assignment of keys or after you rotate keys, it can take up to 24 hours for the new keys to take effect. If the new DEP takes more than 24 hours to take effect, contact Microsoft.
-
-Example:
-
-```powershell
-New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://contosoWestUSvault01.vault.azure.net/keys/Key_01","https://contosoEastUSvault01.vault.azure.net/keys/Key_02" -Description "Tenant default policy"
-```
-
-Parameters:
-
-| Name | Description | Optional (Y/N) |
-|----------|----------|---------|
-|Name|Friendly name of the data encryption policy|N|
-|AzureKeyIDs|Specifies two URI values of the Azure Key Vault keys, separated by a comma, to associate with the data encryption policy|N|
-|Description|Description of the data encryption policy|N|
+See [Manage Customer Key](customer-key-manage.md)
 
 ### Assign policy
 
-```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
-```
-
-Description:
-This cmdlet is used for configuring default Data Encryption Policy. This policy will be used to then encrypt data across all support workloads.
-
-Example:
-
-```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
-```
-
-Parameters:
-
-| Name | Description | Optional (Y/N) |
-|----------|----------|---------|
--DataEncryptionPolicy|Specifies the data encryption policy that needs to be assigned; specify either the Policy Name or the Policy ID.|N|
+See [Manage Customer Key](customer-key-manage.md)
 
 ### Modify or Refresh policy
 
@@ -174,7 +139,7 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 Description:
 This cmdlet lists the policy that’s currently assigned to the tenant.
 
-## Offboarding from Customer Key at the tenant level
+## Offboarding from multi-workload Customer Key
 
 If you need to revert to Microsoft-managed keys, you can. When you offboard, your data is re-encrypted using default encryption supported by each individual workload. For example, Exchange Online supports default encryption using Microsoft-managed keys.
 
