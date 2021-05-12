@@ -146,6 +146,7 @@ This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored o
 1. In the **Configuration settings** tab, expand **Kernel Extensions**.
 1. Set **Team identifier** to **UBF8T346G9** and click Next.
 
+    > [!div class="mx-imgBorder"]
     > ![Kernel extension settings](images/mac-kernel-extension-intune2.png)
 
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
@@ -191,24 +192,29 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
 
 1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), open **Apps**.
 
+    > [!div class="mx-imgBorder"]
     > ![Ready to create application](images/mdatp-8-app-before.png)
 
 1. Select By platform => macOS => Add.
 1. Choose **App type**=**macOS**, click **Select**
 
+    > [!div class="mx-imgBorder"]
     > ![Specify application type](images/mdatp-9-app-type.png)
 
 1. Keep default values, click **Next**.
 
+    > [!div class="mx-imgBorder"]
     > ![Application properties](images/mdatp-10-properties.png)
 
 1. Add assignments, click **Next***.
 
+    > [!div class="mx-imgBorder"]
     > ![Intune assignments info screenshot](images/mdatp-11-assignments.png)
 
 1. Review and **Create**.
 1. You can visit **Apps** => **By platform** => **macOS** to see it on the list of all applications.
 
+    > [!div class="mx-imgBorder"]
     > ![Applications list](images/mdatp-12-applications.png)
 
 (You can find detailed information on the [Intune's page for Defender deployment](/mem/intune/apps/apps-advanced-threat-protection-macos))
