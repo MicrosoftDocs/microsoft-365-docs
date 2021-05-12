@@ -3,7 +3,7 @@ title: "Pre-migration activities for the migration from Microsoft Cloud Deutschl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/09/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
