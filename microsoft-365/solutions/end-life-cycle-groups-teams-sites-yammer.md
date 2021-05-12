@@ -40,7 +40,7 @@ The following table outlines the services associated with groups and teams and k
 |Stream|Videos|
 |Yammer|Conversations|
 
-When deleting a group or team, most of the associated resources are also deleted. Some of the exceptions to this include:
+When deleting a group or team, most of the associated resources are also deleted. Exceptions include:
 
 - Videos in Stream remain and are owned by the person who uploaded/recorded them
 - Flows in Power Automate remain and are owned by the person who created them.
@@ -83,7 +83,7 @@ Additionally, if a retention policy is applied to Teams, the conversations are r
 
 ### Archiving a team
 
-The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was. Users can still browse channel conversations and open files even if they aren't active. Additionally, teams can be unarchived if there's a need to continue working on them (such as in the case of a project extension).
+The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was. Users can still browse channel conversations and open files even if they aren't active. Additionally, teams can be unarchived if there's a need to continue working on them (for example, if a project is extended).
 
 When a team is archived by an owner, it's set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
