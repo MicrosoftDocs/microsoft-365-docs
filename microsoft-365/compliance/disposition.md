@@ -84,7 +84,7 @@ When a disposition review is triggered at the end of the retention period:
        - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
        - **History** that shows the history of any disposition review actions to date, with reviewer comments if available.
 
-A disposition review can include content in Exchange mailboxes, SharePoint sites, and OneDrive accounts. Content awaiting a disposition review in those locations is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
+A disposition review can include content in Exchange mailboxes, SharePoint sites, and OneDrive accounts. Content pending a disposition review in those locations is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
 
 > [!NOTE]
 > A mailbox must have at least 10 MB data to support disposition reviews.
