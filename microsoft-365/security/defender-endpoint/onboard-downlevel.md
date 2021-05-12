@@ -75,7 +75,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 - Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Allow connections to the Microsoft Defender Antivirus cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
-## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender for Endpoint
+## Install and configure Microsoft Monitoring Agent (MMA) 
 
 ### Before you begin
 Review the following details to verify minimum system requirements:
@@ -129,7 +129,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
 
-- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+- [Configure the MMA to use a proxy server](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
 
 - [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
