@@ -55,6 +55,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-profile-1)<br/><br/> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
+
 ## Download the onboarding package
 
 Download the onboarding packages from Microsoft Defender Security Center:
