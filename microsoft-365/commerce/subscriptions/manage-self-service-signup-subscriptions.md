@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,11 +15,8 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+- commerce_subscriptions 
+search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
 ms.date: 03/17/2021
 ---

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,10 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commcerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn how to make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
 ms.date: 03/30/2021
 ---

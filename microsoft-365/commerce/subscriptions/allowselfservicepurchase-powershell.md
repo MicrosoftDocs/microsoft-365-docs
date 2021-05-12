@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,11 +15,12 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 03/18/2021
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
