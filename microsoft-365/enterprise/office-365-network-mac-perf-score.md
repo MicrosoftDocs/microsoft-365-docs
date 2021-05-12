@@ -20,7 +20,7 @@ description: "Microsoft 365 network assessment"
 
 In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health. A network assessment tells you how much the customer responsible network design is impacting Office 365 user experience. Network assessments are scoped to both the entire tenant and to each geographic location from which users connect to your tenant. The assessments provide Microsoft 365 administrators with an easy way to instantly get a sense of the enterprise's network health and quickly drill down into a detailed report for any global office location.
 
-The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
+The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed, and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
 ![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
@@ -56,22 +56,22 @@ We show a network assessment value for the whole Microsoft 365 tenant on the net
 
 ## Exchange Online
 
-For Exchange Online the TCP latency from the client machine to the Exchange service front door is measured. This can be impacted by the distance the network travels over the customers LAN and WAN. It can also be impacted by network intermediary devices or services which delay the connectivity or cause packets to be resent. And it is impacted by how far away the nearest Exchange service front door is. The median (also known as the 50th percentile or P50 measure) is taken for all measurements over the previous three days.
+For Exchange Online, the TCP latency from the client machine to the Exchange service front door is measured. This latency can be impacted by the distance the network travels over the customers LAN and WAN. It can also be impacted by network intermediary devices or services, which delay the connectivity or cause packets to be resent. And it is impacted by how far away the nearest Exchange service front door is. The median (also known as the 50th percentile or P50 measure) is taken for all measurements over the previous three days.
 
 The Exchange Online assessment is made using the following table. Any TCP latency number between the thresholds are assigned points linearly within the band.
 
 | TCP Latency   | Points |
 | :------------ | :----- |
-| 10ms or less  | 100    |
-| 25ms          | 80     |
-| 100ms         | 60     |
-| 200ms         | 40     |
-| 300ms         | 20     |
-| 350ms or more | 0      |
+| 10 ms or less  | 100    |
+| 25 ms          | 80     |
+| 100 ms         | 60     |
+| 200 ms         | 40     |
+| 300 ms         | 20     |
+| 350 ms or more | 0      |
 
 ## SharePoint Online
 
-For SharePoint Online the download speed available for a user to access a document from SharePoint or OneDrive is measured. This can be impacted by the bandwidth available on network circuits between the client machine and Microsoft's network. It is also often impacted by network congestion that exists in bottlenecks in complex network devices or in poor coverage Wi-Fi areas. The download speed is measured in megabytes per second which is approximately one tenth of a circuits rated megabits per second. The MegaByte per second unit is helpful because you can directly see what size file can be downloaded in 1 second. The 25th percentile (also known as the P25 measure) is taken for all measurements over the previous three days. This 25th percentile helps reduce the impact of varying congestion over time.
+For SharePoint Online the download speed available for a user to access a document from SharePoint or OneDrive is measured. This can be impacted by the bandwidth available on network circuits between the client machine and Microsoft's network. It is also often impacted by network congestion that exists in bottlenecks in complex network devices or in poor coverage Wi-Fi areas. The download speed is measured in megabytes per second, which is approximately one tenth of a circuits rated megabits per second. The MegaByte per second unit is helpful because you can directly see what size file can be downloaded in 1 second. The 25th percentile (also known as the P25 measure) is taken for all measurements over the previous three days. This 25th percentile helps reduce the impact of varying congestion over time.
 
 The SharePoint Online assessment is made using the following table. Any download speed number between the thresholds are assigned points linearly within the band.
 
