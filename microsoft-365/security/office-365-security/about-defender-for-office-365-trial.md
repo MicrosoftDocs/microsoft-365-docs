@@ -97,7 +97,7 @@ Powerful experiences help identify, prioritize, and investigate threats, with ad
 
 ### Response and remediation
 
-Extensive incident response and automation capabilities amplify your security team’s effectiveness and efficiency.
+Extensive incident response and automation capabilities amplify your security team's effectiveness and efficiency.
 
 - [Automated investigation and response (AIR) in Microsoft Defender for Office 365](office-365-air.md)
 

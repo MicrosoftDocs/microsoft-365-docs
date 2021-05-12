@@ -5,18 +5,21 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
-search.appverid:
-- MET150
+- commerce_subscription
+search.appverid: MET150
 description: "Learn how to close your account with Microsoft."
+ms.date: 04/02/2021
 ---
 
 # Close your account
@@ -35,11 +38,11 @@ Delete all users except for one global administrator. The global administrator c
 
 If users are synchronized from on-premises, first turn off sync, then delete the users in the cloud directory by using the Azure portal or Azure PowerShell cmdlets.
 
-To delete users, see <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: Delete one or more users</a>.
+To delete users, see [User management admin: Delete one or more users](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
-You can also use the <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> PowerShell cmdlet to delete users in bulk.
+You can also use the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet to delete users in bulk.
 
-If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead. For instructions, see <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Bulk delete users in Azure Active Directory</a>.
+If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## Step 2: Cancel all active subscriptions
 
@@ -59,7 +62,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
 
 > [!NOTE]
-> If you're unable to immediately delete a disabled subscription, <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">contact support</a>
+> If you're unable to immediately delete a disabled subscription, [contact support](../business-video/get-help-support.md).
 
 ## Step 4: Disable multi-factor authentication
 
@@ -68,7 +71,8 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 3. Choose **Multi-factor authentication**.
 4. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
 
-You can also <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.
+You can also [use PowerShell to disable multi-factor authentication for multiple users](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
+
 
 ## Step 5: Delete the directory in Azure Active Directory
 

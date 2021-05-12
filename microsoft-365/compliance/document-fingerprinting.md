@@ -40,7 +40,7 @@ The following example shows what happens if you create a document fingerprint ba
   
 ### Example of a patent document matching a document fingerprint of a patent template
 
-![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
+![Diagram of document fingerprinting.](../media/Document-Fingerprinting-diagram.png)
   
 The patent template contains the blank fields "Patent title," "Inventors," and "Description" and descriptions for each of those fields—that's the word pattern. When you upload the original patent template, it's in one of the supported file types and in plain text. DLP converts this word pattern into a document fingerprint, which is a small Unicode XML file containing a unique hash value representing the original text, and the fingerprint is saved as a data classification in Active Directory. (As a security measure, the original document itself isn't stored on the service; only the hash value is stored, and the original document can't be reconstructed from the hash value.) The patent fingerprint then becomes a sensitive information type that you can associate with a DLP policy. After you associate the fingerprint with a DLP policy, DLP detects any outbound emails containing documents that match the patent fingerprint and deals with them according to your organization's policy. 
 
@@ -57,6 +57,7 @@ Document Fingerprinting won't detect sensitive information in the following case
 - Password protected files
 - Files that contain only images
 - Documents that don't contain all the text from the original form used to create the document fingerprint
+- Files greater than 10 MB
 
 ## Use PowerShell to create a classification rule package based on document fingerprinting
 

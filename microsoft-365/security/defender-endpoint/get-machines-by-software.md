@@ -1,7 +1,7 @@
 ---
 title: List devices by software
 description: Retrieve a list of devices that has this software installed.
-keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, mdatp tvm api
+keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

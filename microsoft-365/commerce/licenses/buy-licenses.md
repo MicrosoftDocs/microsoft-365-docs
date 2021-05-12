@@ -5,32 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+ms.reviewer: argani, nicholak
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 
+ms.date: 04/07/2021
 ---
 
 # Buy or remove licenses
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
 
@@ -56,29 +49,24 @@ If you’ve removed licenses from a subscription, the next thing to do is [delet
 
 ::: moniker range="o365-worldwide"
 
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, find the subscription for which you want to buy or remove licenses. Select **More actions** (three dots), then select **Buy licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. If you want to reduce the number of licenses, at the top of the **Buy licenses** pane, select **remove licenses**.
-4. To buy or remove licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
-5. Select **Save**.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Submit** \> **Close**. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five licenses, enter 95.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
+
+2. On the **Products** tab, find the subscription for which you want to buy or remove licenses. Select **More actions** (three dots), then select **Buy licenses**. [What if I don't see the Buy licenses or Remove licenses buttons?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. If you want to reduce the number of licenses, at the top of the **Buy licenses** pane, select **remove licenses**.
+4. To buy or remove licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
+5. Select **Save**.
 
 > [!NOTE]
 > You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.

@@ -42,11 +42,9 @@ You can use Basic Mobility and Security to secure and manage the following devic
 
 <sup>1</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
 
-<sup>2</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
-Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
+<sup>2</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
 
-<sup>3</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
-After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
+<sup>3</sup>After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
 
 >[!NOTE]
 >Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.

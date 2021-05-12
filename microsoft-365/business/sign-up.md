@@ -93,4 +93,4 @@ To get help with setup, see [set up](set-up.md).
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../business-video/index.yml)

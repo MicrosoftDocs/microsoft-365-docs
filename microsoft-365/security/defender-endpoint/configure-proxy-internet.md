@@ -1,6 +1,6 @@
 ---
 title: Configure device proxy and Internet connection settings
-description: Configure the Microsoft Defender ATP proxy and internet settings to enable communication with the cloud service.
+description: Configure the Microsoft Defender for Endpoint proxy and internet settings to enable communication with the cloud service.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -52,6 +52,14 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 ## Configure the proxy server manually using a registry-based static proxy
 
 Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not be permitted to connect to the Internet.
+
+> [!NOTE]
+> - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:</br>
+> Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384 <br>
+> Windows 10, version 1909 - https://support.microsoft.com/kb/4601380</br>
+> Windows 10, version 2004 - https://support.microsoft.com/kb/4601382</br>
+> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
+> These updates improve the connectivity and reliability of the CnC (Command and Control) channel.</br>
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:
 
@@ -165,9 +173,9 @@ The wildcards (*) used in *.ods.opinsights.azure.com, *.oms.opinsights.azure.com
 The *.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the “Firewall Rule: *.blob.core.windows.net” section of the test results. 
 
 > [!NOTE]
-> In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Azure Defender, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
-## Verify client connectivity to Microsoft Defender ATP service URLs
+## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Defender for Endpoint service URLs.
 

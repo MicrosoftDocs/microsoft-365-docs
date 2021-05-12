@@ -24,7 +24,7 @@ For additional information about purchasing and licensing Microsoft 365 apps fro
 
 For more info on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-The Integrated apps portal is only accessible to global admins and available to WorldWide customers only. This feature is not available in sovereign and government clouds.
+The Integrated apps portal is only accessible to global admins and available to world wide customers only. This feature is not available in sovereign and government clouds.
 
 The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, we you can see 2 kinds of apps.
 

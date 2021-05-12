@@ -32,15 +32,21 @@ ms.technology: mde
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Limitations
+
 1. You can only run a query on data from the last 30 days.
+
 2. The results will include a maximum of 100,000 rows.
+
 3. The number of executions is limited per tenant:
-   - API calls: Up to 45 calls per minute.
+   - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
+
 4. The maximal execution time of a single request is 10 minutes.
+
 5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
@@ -54,7 +60,8 @@ Delegated (work or school account) | AdvancedQuery.Read | 'Run advanced queries'
 >- The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
 
 ## HTTP request
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
@@ -66,6 +73,7 @@ Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body
+
 In the request body, supply a JSON object with the following parameters:
 
 Parameter |	Type	| Description
@@ -73,12 +81,13 @@ Parameter |	Type	| Description
 Query |	Text |	The query to run. **Required**.
 
 ## Response
+
 If successful, this method returns 200 OK, and _QueryResponse_ object in the response body.
 
 
 ## Example
 
-Request
+##### Request
 
 Here is an example of the request.
 
@@ -96,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-Response
+##### Response
 
 Here is an example of the response.
 
@@ -140,7 +149,8 @@ Here is an example of the response.
 }
 ```
 
-## Related topic
+## Related topics
+
 - [Microsoft Defender for Endpoint APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

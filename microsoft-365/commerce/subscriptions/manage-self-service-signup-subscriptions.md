@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions 
+search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
+ms.date: 03/17/2021
 ---
 # Manage self-service sign-up subscriptions
 

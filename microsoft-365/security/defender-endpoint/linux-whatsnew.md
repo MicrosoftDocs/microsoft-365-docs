@@ -1,7 +1,7 @@
 ---
-title: What's new in Microsoft Defender for Endpoint for Linux
-description: List of major changes for Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, whatsnew, release
+title: What's new in Microsoft Defender for Endpoint on Linux
+description: List of major changes for Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,9 +20,15 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# What's new in Microsoft Defender for Endpoint for Linux
+# What's new in Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## 101.25.72 (30.121022.12563.0)
+
+- Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
+- Performance improvements & other bug fixes
 
 ## 101.25.63 (30.121022.12563.0)
 

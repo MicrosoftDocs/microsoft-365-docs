@@ -67,6 +67,9 @@ The available EOP subscription plans are:
 
 For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection service description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
+> [!NOTE]
+> If you have an **Office 365 E3 subscription it includes EOP**. For steps to set up EOP security feature in your subscription, and information on the added security a Microsoft Defender for Office 365 subscription can give you, see [protect against threats](protect-against-threats.md). The recommended settings for EOP feature for setup can be found in the [Recommendations](best-practices-for-configuring-eop.md) article, where EOP settings are specifically called out.
+
 ## Setting up EOP for on-premises email organizations
 
 Setting up EOP can be simple, especially in the case of a small organization with a handful of compliance rules. However, if you have a large organization with multiple domains, custom compliance rules, or hybrid mail flow, set up can take more planning and time.

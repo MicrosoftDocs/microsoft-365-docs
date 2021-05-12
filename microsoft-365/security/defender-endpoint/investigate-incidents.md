@@ -1,5 +1,5 @@
 ---
-title: Investigate incidents in Microsoft Defender ATP
+title: Investigate incidents in Microsoft Defender for Endpoint
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident
 keywords: investigate, incident, alerts, metadata, risk, detection source, affected devices, patterns, correlation
 search.product: eADQiWindows 10XVcnh

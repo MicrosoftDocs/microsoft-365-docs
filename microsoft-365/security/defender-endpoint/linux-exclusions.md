@@ -1,7 +1,7 @@
 ---
-title: Configure and validate exclusions for Microsoft Defender ATP for Linux
-description: Provide and validate exclusions for Microsoft Defender ATP for Linux. Exclusions can be set for files, folders, and processes.
-keywords: microsoft, defender, atp, linux, exclusions, scans, antivirus
+title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
+description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure and validate exclusions for Microsoft Defender for Endpoint for Linux
+# Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -33,18 +33,18 @@ ms.technology: mde
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 > [!IMPORTANT]
-> The exclusions described in this article don't apply to other Defender for Endpoint for Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
+> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
 
-You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint for Linux scans.
+You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans.
 
-Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint for Linux.
+Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Linux.
 
 > [!WARNING]
-> Defining exclusions lowers the protection offered by Defender for Endpoint for Linux. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
+> Defining exclusions lowers the protection offered by Defender for Endpoint on Linux. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint for Linux.
+The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
 
 Exclusion | Definition | Examples
 ---|---|---
@@ -67,7 +67,7 @@ Wildcard | Description | Example | Matches | Does not match
 
 ### From the management console
 
-For more information on how to configure exclusions from Puppet, Ansible, or another management console, see [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
+For more information on how to configure exclusions from Puppet, Ansible, or another management console, see [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 ### From the command line
 
@@ -147,7 +147,7 @@ In the following Bash snippet, replace `test.txt` with a file that conforms to y
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-If Defender for Endpoint for Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
+If Defender for Endpoint on Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
 
 If you do not have Internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 

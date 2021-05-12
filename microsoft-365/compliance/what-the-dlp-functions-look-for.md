@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+recommendations: false
 description: Learn what the data loss prevention (DLP) functions look for.
 ---
 

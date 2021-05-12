@@ -1,7 +1,7 @@
 ---
 title: Turn on Microsoft 365 Defender in the Microsoft 365 security center
 description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response.
-keywords: get started, enable MTP, Microsoft Threat Protection, M365, security, data location, required permissions, license eligibility, settings page
+keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -72,7 +72,7 @@ Once the service is provisioned, it adds:
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
-![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/mtp-enable/mtp-on.png)
+![Image of Microsoft 365 security center navigation pane with Microsoft 365 Defender features](../../media/overview-incident.png)
 *Microsoft 365 security center with incidents management and other Microsoft 365 Defender capabilities*
 
 ### Getting Microsoft Defender for Identity data 
