@@ -58,15 +58,15 @@ These questions must be asked before any team is archived or deleted, to avoid a
 
 On top of the content across various apps and services, do they need to stay in their current working form? For example, does the Power BI report need to continue to be accessible, do the Form results need to be available in the visual summary view, are the lists in SharePoint linked to or embedded anywhere?
 
-Similar to the content considerations, these questions must be asked before the underlying group is deleted as simply exporting the content may not be sufficient.
+Similar to the content considerations, these questions must be asked before the underlying group is deleted because exporting the content may not be sufficient.
 
 **Guests**
 
 When guests are invited to a team, the workflow creates their identity in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests are not removed from Azure Active Directory and as such still exist in the Microsoft Teams environment. While guests cannot access groups, sites, teams, or content which has not been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
 
-A team or group owner can invite an external user to become a guest in Azure Active Directory, add them to the team, as well as remove them from the team. A team owner cannot, however, remove the guest from Azure Active Directory – this can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory, add them to the team, and remove them from the team. A team owner cannot, however, remove the guest from Azure Active Directory – this can only be performed by a global admin or user admin.
 
-Therefore it is important to perform guest reviews, as well as to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
+Therefore it is important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
 
 ## Teams
 
@@ -81,7 +81,7 @@ Additionally, if a retention policy is applied to Teams, the conversations are r
 
 The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they are not active. Additionally, teams can be unarchived if there is a need to continue working on them (such as in the case of a project extension).
 
-When a team is archived by an owner, it is set to read-only for members both for content within the team as well as if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
+When a team is archived by an owner, it is set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
 In the SharePoint site there are no visible changes, however no changes can be made to any files or lists as the SharePoint-based permissions group for the Microsoft 365 Group is set to Site Visitors level. This includes the OneNote notebook for the team, as this is stored in the Site Assets library within the SharePoint site.
 
@@ -116,7 +116,7 @@ While deletion of the group will also result in the deletion of any associated f
 
 ## OneNote
 
-The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they cannot be simply copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using OneNote 2016.
+The OneNote notebook included in a group is stored in the Site Assets library within the associated SharePoint site. While notebook files can sometimes be spread across multiple individual files, they cannot be copied and opened independently. Instead, the contents of the OneNote notebook must be moved or exported using OneNote 2016.
 
 **Move pages and sections to another notebook**
 
@@ -134,7 +134,7 @@ In scenarios where some of the contents of the notebook need only to be retained
 
 It is not uncommon for the group-associated mailbox to be utilized, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
 
-In some cases, the emails stored within the mailbox may simply be notifications of meetings, Planner task updates, and other app or system generated messages. It is important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
+In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system generated messages. It is important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
 If a retention policy is applied to Exchange, the emails and calendar items are retained and available through eDiscovery searches.
 
@@ -148,7 +148,7 @@ Administrators can use third-party tools to migrate email and calendar contents 
 
 ## Planner
 
-Each group or team can have multiple plans. It is important during the offboarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to offboard content in Planner.
+Each group or team can have multiple plans. It is important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
 
 **Export the plan to a spreadsheet**
 
@@ -171,7 +171,7 @@ Flows created in Power Automate and associated with a group or team do not belon
 
 **Change ownership of the flow**
 
-If the workflow needs to continue operating, any owners can simply add other users or Microsoft 365 groups as owners.
+If the workflow needs to continue operating, any owners can add other users or Microsoft 365 groups as owners.
 
 **Export the flow**
 
@@ -179,7 +179,7 @@ If the workflow does not need to continue operating but it needs to be preserved
 
 ## Power BI
 
-Power BI data and workspaces can operate independently from groups and teams and like other workloads offer different ways of being offboarded.
+Power BI data and workspaces can operate independently from groups and teams and like other workloads offer different ways of being off-boarded.
 
 **Copy reports to another workspace**
 
@@ -191,7 +191,7 @@ Alternatively, if the report no longer needs to be active but the data needs to 
 
 ## Project
 
-Projects and Roadmaps created in Project on the web can be associated with Microsoft 365 groups and offers approaches to offboarding similar to Power BI.
+Projects and Roadmaps created in Project on the web can be associated with Microsoft 365 groups and offers approaches to off-boarding similar to Power BI.
 
 **Assign the project to another group**
 
@@ -210,7 +210,7 @@ Files are generally stored in three primary locations within a SharePoint site:
 - Files in channels – Documents library
 - Wiki pages – Teams Wiki Data library
 
-If the site has one or more sub-sites nested underneath it, the offboarding process will need to be repeated for each sub-site. If the team contains private channels, there is a separate SharePoint site for each channel.
+If the site has one or more subsites nested underneath it, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there is a separate SharePoint site for each channel.
 
 It is important when removing files from a group or team to consider that they may be shared with users who are not members of the group or team (whether internal or external to the organization), and as such it may be worthwhile communicating the impending change to them.
 
@@ -250,7 +250,7 @@ Unlike conversations in Microsoft Teams, Yammer offers both users and administra
 
 **Move conversations to another group or community**
 
-Conversations can be moved to another Yammer group by any user, not just owners or administrators. This is possible in both the [classic Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872), as well as the [new Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) interfaces.
+Conversations can be moved to another Yammer group by any user, not just owners or administrators. This is possible in both the [classic Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) and the [new Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) interfaces.
 
 **Export network data**
 
