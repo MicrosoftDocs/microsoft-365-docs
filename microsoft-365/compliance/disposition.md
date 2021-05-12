@@ -48,16 +48,24 @@ Additionally:
 
 - To view the contents of items during the disposition process, add users to the **Content Explorer Content Viewer** role group. If users don't have the permissions from this role group, they can still select a disposition review action to complete the disposition review, but must do so without being able to view the item's contents from the mini-preview pane in the compliance center.
 
-- In preview: By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Record Manager Security Group** to select and then enable a mail-enabled security group that contains the administrator accounts.
+- In preview: By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Security group for records manager** to select and then enable a mail-enabled security group that contains the administrator accounts.
     
     Microsoft 365 groups and security groups that aren't mail-enabled doesn't support this feature and wouldn't be displayed in the list to select. If you need to create a new mail-enabled security group, use the link to the Microsoft 365 admin center to create the new group. 
     
     > [!IMPORTANT]
-    > You can't disable this permission or replace the group that you enabled from the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
-    > 
-    > For example: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > After you have enabled the group, you can't change it in the compliance center. See the next section for how to enable a different group by using PowerShell.
 
 - In preview: The **Records management settings** option is visible only to record management administrators. 
+
+#### Enabling another security group for disposition
+
+After you have enabled a security group for disposition from the **Records management settings** in the compliance center, you can't disable this permission for the group or replace the selected group that you enabled from the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
+
+For example: 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### Enable auditing
 
@@ -78,7 +86,7 @@ When a disposition review is triggered at the end of the retention period:
 - The reviewers you choose receive an email notification that they have content to review. These reviewers can be individual users or mail-enabled security groups. New in preview:
    - You can customize the email that they receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
    - Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center.
-   - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected Record Manager Security Group see all disposition reviews.
+   - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected ecurity group for records manager see all disposition reviews.
    - Reviewers can add new users to the same disposition review. Currently, this action doesn't automatically grant these added users the [required permissions](#permissions-for-disposition).
    - For the disposition review process, a mini-review pane for each item shows a preview of the content if they have permissions to see it. If they don't have permissions, they can select the content link and request permissions. This mini-review pane also has tabs for additional information about the content:
        - **Details** to display indexed properties, where it's located, who created it and when, and who last modified it and when.
@@ -139,15 +147,15 @@ After you have specified your reviewers, remember to grant them the **Dispositio
 
 Also in preview, you can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
-From any of the Disposition pages in the compliance center, select **Record management settings**:  
+From any of the Disposition pages in the compliance center, select **Records management settings**:  
 
-![Record management settings](../media/record-management-settings.png)
+![Records management settings](../media/record-management-settings.png)
 
-Then select the **Email templates** tab, and specify whether you want to use just the default email templates, or add your own text to the default template. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
+Then select the **Disposition notifications** tab, and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
 Text for all languages can be added, but formatting and images are currently unsupported. URLs and email addresses can be entered as text and depending on the email client, display as hyperlinks or unformatted text in the customized email.
 
-Example text to append:
+Example text to add:
 
 ```console
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
