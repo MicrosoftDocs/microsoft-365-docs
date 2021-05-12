@@ -18,13 +18,13 @@ description: "Microsoft 365 network assessment"
 
 # Microsoft 365 network assessment
 
-In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health, represented by a points value from 0 - 100. A network assessment tells you how much the customer responsible network design is impacting Office 365 user experience. Network assessments are scoped to both the entire tenant and for each geographic location from which users connect to your tenant, providing Microsoft 365 administrators with an easy way to instantly grasp a gestalt of the enterprise's network health and quickly drill down into a detailed report for any global office location.
+In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health. A network assessment tells you how much the customer responsible network design is impacting Office 365 user experience. Network assessments are scoped to both the entire tenant and to each geographic location from which users connect to your tenant. The assessments provide Microsoft 365 administrators with an easy way to instantly get a sense of the enterprise's network health and quickly drill down into a detailed report for any global office location.
 
-The network assessment points value is an average of TCP latency, download speed and UDP connection quality metrics compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
+The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
 ![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-A very low network assessment value suggests that Microsoft 365 clients will have significant problems connecting to the tenant or maintaining a responsive user experience, while a high value indicates a properly configured network with few ongoing performance issues. A value of 80% represents a healthy baseline where you should not expect to receive regular user complaints about Microsoft 365 connectivity or responsiveness due to network performance. As iterative network connectivity improvements are made, this value will increase along with user experience.
+A very low network assessment value suggests that Microsoft 365 clients will have significant problems connecting to the tenant or maintaining a responsive user experience. A high value indicates a properly configured network with few ongoing performance issues. A value of 80% represents a healthy baseline, above which you should not expect to receive regular user complaints about Microsoft 365 connectivity or responsiveness due to network performance. As iterative network connectivity improvements are made, this value will increase along with user experience.
 
 | Network assessment | Expected user experience |
 | :----------------- | :----------------------- |
@@ -46,13 +46,13 @@ Each network assessment, whether scoped to the tenant or to a specific office lo
 
 The **Assessment breakdown** in the panel shows the assessment for each of the component workloads.
 
-The **Assessment history** shows the past 30 days of the assessment and the benchmark. You can also report on the metrics history for any office location for up to two years using the history tab. The history tab allows you to select your attributes to report on and by choosing a report timeframe you can highlight the impact of a network update project and see the improvement to your network assessment.
+The **Assessment history** shows the past 30 days of the assessment and the benchmark. You can also report on the metrics history for any office location for up to two years using the history tab. The history tab allows you to select your attributes to report on. By choosing a report time frame, you can highlight the impact of a network update project and see the improvement to your network assessment.
 
 ## Tenant network assessments and office location network assessments
 
-A network assessment measures the design of the network perimeter of an office location to Microsoft's network. Improvements to the network perimeter is best done at each office location.
+A network assessment measures the design of the network perimeter of an office location to Microsoft's network. Improvements to the network perimeter are  best done at each office location.
 
-We show a network assessment value for the whole Microsoft 365 tenant on the network performance overview page which is a weighted average of the network assessments for all office locations. There is also a specific network assessment value for each detected office location on that location's summary page.
+We show a network assessment value for the whole Microsoft 365 tenant on the network performance overview page. This value is a weighted average of the network assessments for all office locations. There is also a specific network assessment value for each detected office location on that location's summary page.
 
 ## Exchange Online
 
