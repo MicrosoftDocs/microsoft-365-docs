@@ -120,6 +120,7 @@ Adopting this model: 
 ## Management tools
 To create your own custom gradual rollout process for monthly updates, you can use the following tools:
 
+- Group policy
 - Microsoft Endpoint Manager
 - PowerShell
 
