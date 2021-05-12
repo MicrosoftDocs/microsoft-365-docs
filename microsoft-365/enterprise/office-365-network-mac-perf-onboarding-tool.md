@@ -39,17 +39,17 @@ We recommend that these be used together where networking quality status can be 
 
 ### Office location identification
 
-When you click the run test button we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it, then we request the latitude and longitude from the web browser and limit the accuracy to 300 meters by 300 meters before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
+When you click the run test button, we show the running test page and identify the office location. You can type in your location by city, state, and country or you can have it detected from the web browser. If you detect it, then we request the latitude and longitude from the web browser and limit the accuracy to 300 meters by 300 meters before use. We do this because it is not necessary to identify the location more accurately than the building for network performance. 
 
 ### JavaScript tests
 
-After office location identification we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these are completed we show them on the map and in the details tab where they can be viewed prior to the next step.
+After office location identification, we run a TCP latency test in JavaScript and we request data from the service about in-use and recommended Office 365 service front door servers. When these are completed, we show them on the map and in the details tab where they can be viewed prior to the next step.
 
 ### Download the advanced tests client application
 
-Next we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET Core installed.
+Next, we start the download of the advanced tests client application. We rely on the user to launch the client application and they must also have .NET Core installed.
 
-There are two parts to the Microsoft 365 network connectivity test; the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It will populate results back into the web page as it runs.
+There are two parts to the Microsoft 365 network connectivity test: the web site <https://connectivity.office.com> and a downloadable Windows client application that runs advanced network connectivity tests. Most of the tests require the application to be run. It will populate results back into the web page as it runs.
 
 You will be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 
@@ -69,7 +69,7 @@ The test report requires sign-in to your Office 365 account. Your administrator 
 
 ### Sharing your report with your administrator
 
-All test reports while you are signed in are shared with your administrator.
+All test reports that occur when you are signed are shared with your administrator.
 
 ### Sharing with your Microsoft account team, support or other personnel
 
@@ -93,7 +93,7 @@ The results are shown in the **Summary** and **Details** tabs. The summary tab s
 
 ![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
-Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explains the thresholds used for network insights.
+Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explain the thresholds used for network insights.
 
 ![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
@@ -139,7 +139,7 @@ This network insight is generated on the basis that all users in a city have acc
 
 #### Time to make a DNS request on your network
 
-This shows the DNS server configured on the client machine that ran the tests. It might be a DNS Recursive Resolver server however this is uncommon. It is more likely to be a DNS forwarder server which caches DNS results and forwards any uncached DNS requests to another DNS server.
+This shows the DNS server configured on the client machine that ran the tests. It might be a DNS Recursive Resolver server however this is uncommon. It is more likely to be a DNS forwarder server, which caches DNS results and forwards any uncached DNS requests to another DNS server.
 
 This is provided for information only and does not contribute to any network insight.
 
@@ -197,7 +197,7 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
 
 #### Packet loss
 
