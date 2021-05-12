@@ -1,5 +1,5 @@
 ---
-title: Export secure configuration assessment by machine
+title: Export secure configuration assessment
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
 search.product: eADQiWindows 10XVcnh
@@ -15,9 +15,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
----
+--- 
 
-# Export secure configuration assessment by machine
+# Export secure configuration assessment by device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,16 +34,18 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## API method description
+## Full export secure configuration assessment by device
+
+### API method description - secure configuration assessment by device
 
 Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
 
-## Limitations
+### Limitations - secure configuration assessment by device
 
 N/A/?
 
-## Permissions
+### Permissions - secure configuration assessment by device
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -52,19 +54,19 @@ Permission type | Permission | Permission display name
 Application | Vulnerability.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-## URL
+### URL - secure configuration assessment by device
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentByMachine
 ```
 
-## Parameters
+### Parameters - secure configuration assessment by device
 
 - pageSize \(default = 50,000\) – number of results in response
 
 - \$top – number of results to return \(doesn’t return \@odata.nextLink and therefore doesn’t pull all the data\)
 
-## Properties
+### Properties - secure configuration assessment by device
 
 >[!Note]
 >
@@ -91,15 +93,15 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software. | sca-_-scid-20000
 Timestamp | string | Last time the configuration was seen on the device | 2020-11-03 10:13:34.8476880
 
-## Example
+### Example - secure configuration assessment by device
 
-### Request example
+#### Request example - secure configuration assessment by device
 
 ```http
 GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
 ```
 
-### Response example
+#### Response example - secure configuration assessment by device
 
 ```json
 {
@@ -200,21 +202,77 @@ GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurations
 }
 ```
 
+## Export secure configuration assessment to Json
+
+### API method description - secure configuration assessment to Json
+
+The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
+
+Full export to Json files.
+This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way:
+
+1. Call the API to get a list of download URLs with all your organization data.
+2. Download all the files using the download URLs and process the data as you like.
+
+### Limitations - secure configuration assessment to Json
+
+N/A?
+
+### Permissions - secure configuration assessment to Json
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+---|---|---
+Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+
+### URL - secure configuration assessment to Json
+
+```http
+GET /api/machines/SecureConfigurationsAssessmentExport
+```
+
+### Properties - secure configuration assessment to Json
+
+>[!Note]
+>
+>- The files are gzip compressed & in multiline Json format.
+>
+>- The download URLs are only valid for 1 hour.
+>
+>- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>
+
+### Example - secure configuration assessment to Json
+
+#### Request example - secure configuration assessment to Json
+
+```http
+GET https://api-us.securitycenter3.contoso.com/api/machines/SecureConfigurationsAssessmentExport
+```
+
+#### Response example - secure configuration assessment to Json
+
+```json
+{
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": [
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+    ],
+    "generatedTime": "2021-01-11T11:01:00Z"
+}
+```
+
 ## See also
 
-- [Assessment exports per device methods and properties](get-export-assessmnt-methods-properties.md)
+- [Export assessments methods and properties](get-assessmnt-1methods-properties.md)
 
-- [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
+- [Export software inventory assessment](get-assessmnt-software-inventory.md)
 
-- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
-
-- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
-
-- [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
-
-- [Export software vulnerabilities assessment to Json](get-export-assessmnt-software-to-json.md)
-
-- [Export software vulnerabilities delta assessment by machine](get-export-assessmnt-software-delta.md)
+- [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 

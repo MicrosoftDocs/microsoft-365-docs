@@ -1,5 +1,5 @@
 ---
-title: Assessment exports per device methods and properties
+title: Assessment exports methods and properties
 description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -51,43 +51,14 @@ This method is best for _big organizations with more than 100K devices_. The res
 >
 >The properties defined in the three properties tables that follow are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
-### Export software inventory assessment
-
-#### Export software inventory assessment methods
-
-Method | Data type | Description
-:---|:---|:---
-[Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)  | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-[Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)  | Investigation entity | _Full export:_ This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
-
-#### Export software inventory assessment properties
-
-Property (id) | Data type | Description
-:---|:---|:---
-DeviceId | string | Unique identifier for the device in the service.
-DeviceName | string | Fully qualified domain name (FQDN) of the device.
-DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
-EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
-EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-Id | string | Unique identifier for the record.
-NumberOfWeaknesses | int|Number of weaknesses on this software on this device
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupId | Int | ID of the RBAC group.
-RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
-RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
-SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device.
-SoftwareName | string | Name of the software product.
-SoftwareVendor | string | Name of the software vendor.
-SoftwareVersion | string | Version number of the software product.
-
 ### Export secure configurations assessment
 
 #### Export secure configurations assessment methods
 
 Method | Data type | Description
 :---|:---|:---
-[Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
-[Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Full export secure configuration assessment by device](get-assessmnt-secure-cfg.md#full-export-secure-configuration-assessment-by-device) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
+[Full export secure configuration assessment to Json](get-assessmnt-secure-cfg.md#full-export-secure-configuration-assessment-to-json) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 #### Export secure configurations assessment properties
 
@@ -109,15 +80,44 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
 
+### Export software inventory assessment
+
+#### Export software inventory assessment methods
+
+Method | Data type | Description
+:---|:---|:---
+[Full export software inventory assessment by device](get-assessmnt-software-inventory.md#full-export-software-inventory-assessment-by-device) | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+[Full export software inventory assessment to Json](get-assessmnt-software-inventory.md#full-export-software-inventory-assessment-to-json) | Investigation entity | _Full export:_ This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+
+#### Export software inventory assessment properties
+
+Property (id) | Data type | Description
+:---|:---|:---
+DeviceId | string | Unique identifier for the device in the service.
+DeviceName | string | Fully qualified domain name (FQDN) of the device.
+DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
+EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
+EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+Id | string | Unique identifier for the record.
+NumberOfWeaknesses | int|Number of weaknesses on this software on this device
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+RbacGroupId | Int | ID of the RBAC group.
+RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
+RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
+SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device.
+SoftwareName | string | Name of the software product.
+SoftwareVendor | string | Name of the software vendor.
+SoftwareVersion | string | Version number of the software product.
+
 ### Export software vulnerability assessment
 
 #### Export software vulnerability assessment methods
 
 Method | Data type | Description
 :---|:---|:---
-[Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)| Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
-[Export software vulnerabilities assessment to Json](get-export-assessmnt-software-to-json.md) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
-[Export software vulnerabilities delta assessment by machine](get-export-assessmnt-software-delta.md) | Investigation entity | _Full export:_ This API is used to get everything that has changed in the full vulnerability export of the organization (new, fixed, updated vulnerabilities). It can be used as a consecutive call after the full export or to update the state of the vulnerabilities in your organization. It can also be used to calculate different KPIs such as “how many vulnerabilities got fixed?” or “how many new vulnerabilities were added to my organization?” This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, EventTimestamp.
+[Export software vulnerabilities delta assessment by device](get-assessmnt-software-vulnerabilities.md#export-software-vulnerabilities-delta-assessment-by-device) | Investigation entity | _Full export:_ This API is used to get everything that has changed in the full vulnerability export of the organization (new, fixed, updated vulnerabilities). It can be used as a consecutive call after the full export or to update the state of the vulnerabilities in your organization. It can also be used to calculate different KPIs such as “how many vulnerabilities got fixed?” or “how many new vulnerabilities were added to my organization?” This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, EventTimestamp.
+[Full export software vulnerabilities assessment by device](get-assessmnt-software-vulnerabilities.md#full-export-software-vulnerabilities-assessment-by-device) | Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
+[Full export software vulnerabilities assessment to Json](get-assessmnt-software-vulnerabilities.md#full-export-software-vulnerabilities-assessment-to-json) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 #### Export software vulnerability assessment properties
 
@@ -144,19 +144,11 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 
 ## See also
 
-- [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
+- [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
 
-- [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
+- [Export software inventory assessment](get-assessmnt-software-inventory.md)
 
-- [Export software inventory assessment by machine](get-export-assessmnt-inventory-software-by-machine.md)
-
-- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
-
-- [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
-
-- [Export software vulnerabilities assessment to Json](get-export-assessmnt-software-to-json.md)
-
-- [Export software vulnerabilities delta assessment by machine](get-export-assessmnt-software-delta.md)
+- [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 

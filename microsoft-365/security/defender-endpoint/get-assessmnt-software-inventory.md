@@ -1,5 +1,5 @@
 ---
-title: Export software inventory assessment by machine
+title: Export software inventory assessment
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Export software inventory assessment by machine
+# Export software inventory assessment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,16 +34,18 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## API method description
+## Full export software inventory assessment by device
+
+### API method description - software inventory assessment by device
 
 Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
-## Limitations
+### Limitations - software inventory assessment by device
 
 N/A?
 
-## Permissions
+### Permissions - software inventory assessment by device
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -52,13 +54,13 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-## URL
+### URL - software inventory assessment by device
 
 ```http
 GET /api/machines/SoftwareInventoryByMachine
 ```
 
-## Properties
+### Properties - software inventory assessment by device
 
 >[!Note]
 >
@@ -87,15 +89,15 @@ SoftwareName | string | Name of the software product. | chrome
 SoftwareVendor | string | Name of the software vendor. | google
 SoftwareVersion | string | Version number of the software product. | 81.0.4044.138
 
-## Example
+### Example - software inventory assessment by device
 
-### Request example
+#### Request example - software inventory assessment by device
 
 ```http
 GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
 ```
 
-### Response example
+#### Response example - software inventory assessment by device
 
 ```json
 {
@@ -194,21 +196,78 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 }
 ```
 
+## Full export Software inventory assessment to Json
+
+### API method description - software inventory assessment to Json
+
+The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
+
+This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
+This API allows you to download all your data from Azure Storage in the following way:
+
+- Call the API to get a list of download URLs with all your organization data.
+
+- Download all the files using the download URLs and process the data as you like.
+
+### Limitations - software inventory assessment to Json
+
+N/A?
+
+### Permissions - software inventory assessment to Json
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+
+Permission type | Permission | Permission display name
+---|---|---
+Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+
+### URL - software inventory assessment to Json
+
+```http
+GET /api/machines/SoftwareInventoryExport
+```
+
+### Properties - software inventory assessment to Json
+
+>[!Note]
+>
+>- The files are gzip compressed and in multiline Json format.
+>
+>- The download URLs are only valid for 1 hour.
+>
+>- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>
+
+### Example - software inventory assessment to Json
+
+#### Request example - software inventory assessment to Json
+
+```http
+GET https://api-us.securitycenter3.contoso.com/api/machines/SoftwareInventoryExport
+```
+
+#### Response example - software inventory assessment to Json
+
+```json
+{
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": [
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+    ],
+    "generatedTime": "2021-01-11T11:01:00Z"
+}
+```
+
 ## See also
 
-- [Assessment exports per device methods and properties](get-export-assessmnt-methods-properties.md)
+- [Export assessments methods and properties](get-assessmnt-1methods-properties.md)
 
-- [Export secure configuration assessment by machine](get-export-assessmnt-sec-cfg-by-machine.md)
+- [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
 
-- [Export secure configuration assessment to Json](get-export-assessmnt-sec-cfg-to-json.md)
-
-- [Export software inventory assessment to Json](get-export-assessmnt-inventory-software-to-json.md)
-
-- [Export software vulnerabilities assessment by machine](get-export-assessmnt-software-by-machine.md)
-
-- [Export software vulnerabilities assessment to Json](get-export-assessmnt-software-to-json.md)
-
-- [Export software vulnerabilities delta assessment by machine](get-export-assessmnt-software-delta.md)
+- [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 
