@@ -171,7 +171,7 @@ As you can see from example shown, the actions supported are:
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place)
 - **Relabel**:
     -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 - **Extend**:
@@ -180,7 +180,7 @@ As you can see from example shown, the actions supported are:
     - When this action is selected, the user is prompted to specify and then add other users for review.
     
     > [!NOTE]
-    > Currently, this action doesn't automatically grant added users the [required permissions](#permissions-for-disposition)
+    > Currently, this action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the added users. Until they are granted these permissions, they won't be able to participate in the disposition review.
 
 Each action taken is saved and stored although you can't yet search for them in the audit log.
 
