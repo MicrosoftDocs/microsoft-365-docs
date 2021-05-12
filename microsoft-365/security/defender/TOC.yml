@@ -186,8 +186,6 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
-                - name: AppFileEvents
-                  href: advanced-hunting-appfileevents-table.md
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents
