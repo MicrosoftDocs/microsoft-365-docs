@@ -108,7 +108,7 @@ If you choose to include or exclude specific SharePoint sites, a DLP policy can 
 If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
 
 > [!NOTE]
-> OneDrive for business policy scoping using accounts or groups is in public preview. During this phase, you can either include or exclude user accounts and groups as part of a DLP policy. Both inclusion and exclusion as part of the same policy is not supported.
+> OneDrive for business policy scoping using user accounts or groups is in public preview. 
   
 ### Rules
 
