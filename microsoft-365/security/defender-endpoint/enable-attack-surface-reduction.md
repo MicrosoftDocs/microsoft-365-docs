@@ -219,7 +219,7 @@ You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom 
    - In **Property**, select the property to which you want this rule to apply
    - In **Value**, enter the applicable value or value range
 
-   ![MEM Applicability rules](images/mem07-5-applicability -rules.png)
+   ![MEM Applicability rules](images/mem07-5-applicability-rules.png)
 
 10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
 
