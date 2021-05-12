@@ -89,4 +89,4 @@ See the [phishing](first-incident-path-phishing.md) investigation path.
 
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)

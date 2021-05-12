@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)."
-ROBOTS: NOINDEX, NOFOLLOW
+
 ---
 
 # Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
@@ -35,7 +35,7 @@ Viva Learning (Preview) supports the following document types:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-For more information, see the [SharePoint Online documentation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## Permissions
 
@@ -69,7 +69,7 @@ To configure SharePoint as a learning content sources in for Viva Learning (Prev
 
      ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
 
-3.	On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning to create a centralized repository.
+3.	On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
 
      ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
 

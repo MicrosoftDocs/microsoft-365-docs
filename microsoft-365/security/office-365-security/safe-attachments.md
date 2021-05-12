@@ -37,6 +37,8 @@ Safe Attachments protection for email messages is controlled by Safe Attachments
 
 The following table describes scenarios for Safe Attachments in Microsoft 365 and Office 365 organizations that include Microsoft Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
 
+<br>
+
 ****
 
 |Scenario|Result|
@@ -53,7 +55,6 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 > The following features are located in the global settings of Safe Attachments policies in the Security & Compliance Center. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
->
 > - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
 ## Safe Attachments policy settings
@@ -61,6 +62,8 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 This section describes the settings in Safe Attachments policies:
 
 - **Safe Attachments unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
+
+  <br>
 
   ****
 
@@ -80,7 +83,6 @@ This section describes the settings in Safe Attachments policies:
 - **Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete. Always select this option if you select **Enable redirect**. Otherwise, messages might be lost.
 
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
-
   - **The recipient is**
   - **The recipient domain is**
   - **The recipient is a member of**
@@ -107,29 +109,21 @@ If you're using a mobile device, and PDFs aren't rendering in the Dynamic Delive
 Here are some considerations for Dynamic Delivery and forwarded messages:
 
 - If the forwarded recipient is protected by a Safe Attachments policy that uses the Dynamic Delivery option, then the recipient sees the placeholder, with the ability to preview compatible files.
-
 - If the forwarded recipient is not protected by a Safe Attachments policy, the message and attachments will be delivered without any Safe Attachments scanning or attachment placeholders.
 
 There are scenarios where Dynamic Delivery is unable to replace attachments in messages. These scenarios include:
 
 - Messages in public folders.
-
 - Messages that are routed out of and then back into a user's mailbox using custom rules.
-
 - Messages that are moved (automatically or manually) out of cloud mailboxes to other locations, including archive folders.
-
+- Inbox rules move the message out of the Inbox into a different folder.
 - Deleted messages.
-
 - The user's mailbox search folder is in an error state.
-
-- Exchange Online organizations where Exclaimer is enabled. To resolve this, see [KB4014438](https://support.microsoft.com/help/4014438).
-
+- Exchange Online organizations where Exclaimer is enabled. To resolve this issue, see [KB4014438](https://support.microsoft.com/help/4014438).
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) encrypted messages.
-
 - You configured the Dynamic Delivery action in a Safe Attachments policy, but the recipient doesn't support Dynamic Delivery (for example, the recipient is a mailbox in an on-premises Exchange organization). However, [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md) is able to scan Office file attachments that contain URLs (depending on how the [global settings for Safe Links](configure-global-settings-for-safe-links.md) are configured).
 
 ## Submitting files for malware analysis
 
 - If you receive a file that you want to send to Microsoft for analysis, see [Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
-
 - If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
