@@ -3,7 +3,7 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/05/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
