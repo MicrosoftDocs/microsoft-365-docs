@@ -235,7 +235,7 @@ Connect-MicrosoftTeams -Credential $userCredential
 ```
 
 ### Known limitations until finalizing Azure AD migration
-Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not completely available. After phase 9, when the migration of Azure AD will be finalized, the following features become fully available:
+Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
 
 - Apps cannot be managed in the Microsoft Teams admin center.
 - New Teams can be created in the Microsoft Teams client only unless the Teams administrator constrained permissions to create new Teams for users. New Teams cannot be created in the Microsoft Teams admin center. 
