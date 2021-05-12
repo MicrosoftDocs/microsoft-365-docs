@@ -46,7 +46,7 @@ When deleting a group or team, most of the associated resources are also deleted
 - Flows in Power Automate remain and are owned by the person who created them.
 - Project and roadmap data in Project on the web remains in the CDS and can be restored separately.
 
-Groups and teams remain in a soft-delete state for 30 days and can be restored at any time. However, after the 30 days they, and any associated resources such as services and content, are completely purged from the Microsoft 365 environment. Any content protected by a retention policy remains available through eDiscovery searches.
+Groups and teams remain in a soft-delete state for 30 days and can be restored at any time. However, after the 30 days they, and any associated resources such as services and content, are purged from the Microsoft 365 environment. Any content protected by a retention policy remains available through eDiscovery searches.
 
 ## End of life cycle considerations for group-connected services
 
@@ -68,7 +68,7 @@ These questions must be asked before the underlying group is deleted because exp
 
 When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
 
-A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. This can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. Deleting accounts can only be performed by a global admin or user admin.
 
 It's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
 
@@ -87,7 +87,7 @@ The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is t
 
 When a team is archived by an owner, it's set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
-In the SharePoint site there are no visible changes. However, no changes can be made to any files or lists because the SharePoint permissions for the Microsoft 365 Group is set to **Site visitors**. This includes the OneNote notebook for the team, which is stored in the Site Assets library within the SharePoint site.
+In the SharePoint site there are no visible changes. However, no changes can be made to any files or lists because the SharePoint permissions for the Microsoft 365 Group are set to **Site visitors**. This includes the OneNote notebook for the team, which is stored in the Site Assets library within the SharePoint site.
 
 When a team is archived, the underlying Microsoft 365 group is still subject to the expiration policy (if set), and as such the owner must continue to renew the team.
 
@@ -137,7 +137,7 @@ In scenarios where some of the contents of the notebook need only to be retained
 
 it's not uncommon for the group-associated mailbox to be utilized, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
 
-In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
+In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system-generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
 If a retention policy is applied in Exchange, the emails and calendar items are retained and available through eDiscovery searches.
 
@@ -162,11 +162,11 @@ If it's only required to keep a copy of the plan for record-keeping purposes, th
 
 **Copy and move tasks to another Plan**
 
-While this seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated With the plan is being deleted.
+While copying or moving tasks to another plan seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated With the plan is being deleted.
 
 **Copy entire plan**
 
-it's also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). However this can't be to an existing group or even within the same group. Copying the plan will create a new group. Additionally, copying the entire plan won't include comments, assignments, links, attachments, or dates.
+it's also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). Copying can't be done to an existing group. Copying the plan will create a new group. Additionally, copying the entire plan won't include comments, assignments, links, attachments, or dates.
 
 ## Power Automate
 
@@ -238,7 +238,7 @@ Wiki contents within team channels are stored in an HTML formatted file in a ded
 
 ## Microsoft Stream
 
-Like Power Automate, videos in Stream associated with a group or team aren't actually owned by the group and aren't deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. This is also the case for meetings recorded in a Teams channel; they are owned by the person who initiated the recording.
+Like Power Automate, videos in Stream associated with a group or team aren't actually owned by the group and aren't deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. Meetings recorded in a Teams channel are owned by the person who initiated the recording.
 
 **Adding other owners**
 
