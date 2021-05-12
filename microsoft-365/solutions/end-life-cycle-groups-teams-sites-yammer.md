@@ -19,9 +19,9 @@ description: "End of lifecycle options for groups, teams, and Yammer."
 
 # End of lifecycle options for groups, teams, and Yammer
 
-Microsoft 365 Groups and Microsoft Teams work with a variety of connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team prior to deletion.
+Microsoft 365 Groups and Microsoft Teams work with multiple connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team prior to deletion.
 
-A common practice for groups or teams that are no longer required is to move the files out of the team and store them in another location such as a SharePoint document library acting as a repository or archive. This practice is based on a legacy style of working where information is stored in files and folders, and communications are conducted via email.
+A common practice for groups or teams that are no longer required is to move the files out of the team and archive them in another location such as a SharePoint document library. This practice is based on a legacy style of working where information is stored in files and folders, and communications are conducted via email.
 
 The following table outlines the services associated with groups and teams and key types of content found in each of them:
 
@@ -42,8 +42,8 @@ The following table outlines the services associated with groups and teams and k
 
 When deleting a group or team, most of the associated resources are also deleted. Some of the exceptions to this include:
 
-- Videos in Stream – these remain and are still owned by the person who uploaded/recorded them
-- Flows in Power Automate - these remain and are owned by the person who created them
+- Videos in Stream remain and are owned by the person who uploaded/recorded them
+- Flows in Power Automate remain and are owned by the person who created them.
 - Project and roadmap data in Project on the web remains in the CDS and can be restored separately.
 
 Groups and teams remain in a soft-delete state for 30 days and can be restored at any time. However, after the 30 days they, and any associated resources such as services and content, are completely purged from the Microsoft 365 environment. Any content protected by a retention policy remains available through eDiscovery searches.
@@ -54,23 +54,23 @@ There are three key areas that team and group owners and IT administrators need 
 
 **Content**
 
-Does the content need to be retained after the team is no longer functional or in existence? Is it sufficient to rely on retention capabilities of Microsoft 365, or is some of the content in apps and services that don't offer retention? Does the content need to be retained for record management purposes, for archival purposes, or for future use and reference purposes?
+Does the content need to be retained after the team is no longer there? Is it sufficient to rely on retention capabilities of Microsoft 365, or is some of the content in apps and services that don't offer retention? Does the content need to be retained for record management, archival, or future use and reference purposes?
 
-These questions must be asked before any team is archived or deleted, to avoid any potential data loss.
+To avoid any potential data loss, these questions must be asked before any team is archived or deleted.
 
 **Services**
 
-On top of the content across various apps and services, do they need to stay in their current working form? For example, does the Power BI report need to continue to be accessible, do the Form results need to be available in the visual summary view, are the lists in SharePoint linked to or embedded anywhere?
+Does content need to stay in its current working form? For example, does the Power BI report need to continue to be accessible? Do the Form results need to be available in the visual summary view? Are the lists in SharePoint linked to or embedded anywhere?
 
-Similar to the content considerations, these questions must be asked before the underlying group is deleted because exporting the content may not be sufficient.
+These questions must be asked before the underlying group is deleted because exporting the content may not be sufficient.
 
 **Guests**
 
-When guests are invited to a team, the workflow creates their identity in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory and as such still exist in the Microsoft Teams environment. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
+When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
 
-A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory, add them to the team, and remove them from the team. A team owner can't, however, remove the guest from Azure Active Directory. This can only be performed by a global admin or user admin.
+A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. This can only be performed by a global admin or user admin.
 
-Therefore it's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
+It's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
 
 ## Teams
 
@@ -83,23 +83,23 @@ Additionally, if a retention policy is applied to Teams, the conversations are r
 
 ### Archiving a team
 
-The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was, so that users can still browse channel conversations and open files even if they aren't active. Additionally, teams can be unarchived if there's a need to continue working on them (such as in the case of a project extension).
+The benefit of [archiving a team](/microsoftteams/archive-or-delete-a-team) is that it provides full access to the team as it was. Users can still browse channel conversations and open files even if they aren't active. Additionally, teams can be unarchived if there's a need to continue working on them (such as in the case of a project extension).
 
 When a team is archived by an owner, it's set to read-only for members both for content within the team and if selected, the associated SharePoint site. The objective of this action is to ensure that conversations in channels are preserved in their existing state, along with SharePoint-based content such as files and wikis.
 
-In the SharePoint site there are no visible changes. However no changes can be made to any files or lists as the SharePoint-based permissions group for the Microsoft 365 Group is set to Site Visitors level. This includes the OneNote notebook for the team, as this is stored in the Site Assets library within the SharePoint site.
+In the SharePoint site there are no visible changes. However, no changes can be made to any files or lists because the SharePoint permissions for the Microsoft 365 Group is set to **Site visitors**. This includes the OneNote notebook for the team, which is stored in the Site Assets library within the SharePoint site.
 
 When a team is archived, the underlying Microsoft 365 group is still subject to the expiration policy (if set), and as such the owner must continue to renew the team.
 
 While the team’s channel conversations and SharePoint site contents are set to read-only, the same isn't applied to other associated services:
 
-- Planner buckets and tasks can still be created, modified, and deleted
-- Forms can still receive submissions
-- The Outlook mailbox can still receive emails
-- Power BI dashboards, reports and data can still be modified
-- Projects and roadmaps can still be edited in Project on the web
-- Videos can still be uploaded, modified, and deleted in Stream
-- Flows in Power Automate can still be created, modified, deleted, and will continue to run (they will fail however, if required to post a message to a channel of the archived team)
+- Planner buckets and tasks can still be created, modified, and deleted.
+- Forms can still receive submissions.
+- The Outlook mailbox can still receive emails.
+- Power BI dashboards, reports and data can still be modified.
+- Projects and roadmaps can still be edited in Project on the web.
+- Videos can still be uploaded, modified, and deleted in Stream.
+- Flows in Power Automate can still be created, modified, deleted, and will continue to run. (They will fail however, if required to post a message to a channel of the archived team.)
 
 ## Forms
 
@@ -234,7 +234,7 @@ Alternatively, a third-party tool can be used to migrate the list between sites 
 
 **“Export” wiki files**
 
-Wiki contents within team channels are stored in a HTML formatted file in a dedicated library of the associated SharePoint site. They can't be readily exported and imported to another channel wiki but can be converted to a HTML file and opened as a web page.
+Wiki contents within team channels are stored in an HTML formatted file in a dedicated library of the associated SharePoint site. They can't be readily exported and imported to another channel wiki but can be converted to an HTML file and opened as a web page.
 
 ## Microsoft Stream
 
