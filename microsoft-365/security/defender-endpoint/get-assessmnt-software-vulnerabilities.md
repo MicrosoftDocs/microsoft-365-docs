@@ -1,5 +1,5 @@
 ---
-title: Export software vulnerabilities assessment by machine
+title: Export software vulnerabilities assessment
 description: The API response is per device and contains vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. 
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Export software vulnerabilities assessment by machine
+# Export software vulnerabilities assessment by device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -95,7 +95,6 @@ FirstSeenTimestamp | string | First time the CVE of this product was seen on the
 Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
 LastSeenTimestamp | string | Last time the CVE was seen on the device. | 2020-11-03 10:13:34.8476880
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
-RbacGroupId | Int | ID of the RBAC group. | 70
 RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
 RecommendationReference | string | A reference to the recommendation ID related to this software. | va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability. | April 2020 Security Updates
@@ -298,7 +297,7 @@ Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vuln
 ### URL - delta assessment by device
 
 ```http
-GET / MIA
+GET /api/machines/SoftwareVulnerabilityChangesByMachine
 ```
 
 ### Parameters - delta assessment by device
@@ -327,7 +326,7 @@ a. New – CVE-X, FirstSeenTimestamp January 10, version 2.0.
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 EventTimestamp | String | The time this delta event was found. | 2020-11-17
-Status | String | \- **New** (for a new vulnerability introduced on a device) \- **Fixed** (if this vulnerability doesn’t exist anymore on the device, which means it was remediated) \- **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, end-of-support status and end-of-support date).| null
+Status | String | \- **New** (for a new vulnerability introduced on a device) \- **Fixed** (if this vulnerability doesn’t exist anymore on the device, which means it was remediated) \- **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, end-of-support status and end-of-support date). If the DiskPaths, RegistryPaths or RecommendedSecurityUpdate col have changed, it will trigger an update event. However, the DiskPaths and RegistryPaths columns are not currently exposed. | null
 
 ### Example - delta assessment by device
 
