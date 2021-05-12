@@ -113,7 +113,6 @@ Forms can be [shared as templates](https://support.microsoft.com/office/82ea9d8a
 
 If the data of the form responses needs to be retained, this can be achieved by [exporting the results to an Excel spreadsheet](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). This will only export the questions and their responses as data – it does not include graphs created by Forms.
 
-
 **Delete the Form**
 
 While deletion of the group will also result in the deletion of any associated forms, group members can [directly delete them](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) without being an owner of the group. However, this is a manual step that does not provide any additional benefit.
@@ -140,7 +139,7 @@ it's not uncommon for the group-associated mailbox to be utilized, even though m
 
 In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
-If a retention policy is applied to Exchange, the emails and calendar items are retained and available through eDiscovery searches.
+If a retention policy is applied in Exchange, the emails and calendar items are retained and available through eDiscovery searches.
 
 **Export mail and calendar**
 
@@ -152,18 +151,18 @@ Administrators can use third-party tools to migrate email and calendar contents 
 
 ## Planner
 
-Each group or team can have multiple plans. it's important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
+Each group or team can have multiple plans. It's important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
 
 **Export the plan to a spreadsheet**
 
-If it's only required to keep a copy of the plan for record-keeping purposes, the simplest approach is to [export the plan to an Excel spreadsheet](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). This is a one-way action, as there's no option to import plans from a spreadsheet.
+If it's only required to keep a copy of the plan for record-keeping purposes, the simplest approach is to [export the plan to an Excel spreadsheet](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). This is a one-way action - there's no option to import plans from a spreadsheet.
 
 > [!IMPORTANT]
 > Exporting a plan to Excel will take most information within the plan, but won't include comments, links, or files.
 
 **Copy and move tasks to another Plan**
 
-While this seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group, which negates the benefit in if the group associated With the plan is being deleted.
+While this seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated With the plan is being deleted.
 
 **Copy entire plan**
 
@@ -171,15 +170,15 @@ it's also possible to [copy the entire plan](https://support.microsoft.com/offic
 
 ## Power Automate
 
-Flows created in Power Automate and associated with a group or team don't belong to the group, and instead are owned by the creator and merely shared with other users and groups. As such they aren't affected if a group or team is deleted.
+Flows created in Power Automate and associated with a group or team don't belong to the group. They are owned by the creator and merely shared with other users and groups. As such they aren't affected if a group or team is deleted.
 
 **Change ownership of the flow**
 
-If the workflow needs to continue operating, any owners can add other users or Microsoft 365 groups as owners.
+If the flow needs to continue operating, any owners can add other users or Microsoft 365 groups as owners.
 
 **Export the flow**
 
-If the workflow does not need to continue operating but it needs to be preserved for potential future use, it can be [exported as a file](https://flow.microsoft.com/blog/import-export-bap-packages/) and imported again later.
+If the flow does not need to continue operating but it needs to be preserved for potential future use, it can be [exported as a file](https://flow.microsoft.com/blog/import-export-bap-packages/) and imported again later.
 
 ## Power BI
 
