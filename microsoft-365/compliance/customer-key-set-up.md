@@ -53,7 +53,7 @@ You'll complete most of these tasks by remotely connecting to Azure PowerShell. 
 
 - [Assign permissions to each key vault](#assign-permissions-to-each-key-vault)
 
-- [Enable and then confirm soft delete on your key vaults](#enable-and-then-confirm-soft-delete-on-your-key-vaults)
+- [Make sure soft delete is enabled on your key vaults](#make-sure-soft-delete-is-enabled-on-your-key-vaults)
 
 - [Add a key to each key vault either by creating or importing a key](#add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key)
 

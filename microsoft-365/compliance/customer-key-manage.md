@@ -20,7 +20,7 @@ After you've set up Customer Key for Office 365, you'll need to create and assig
 
 ## Create a DEP for use with multiple workloads for all tenant users
 
-Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) for information.
+Before you begin, ensure that you've completed the tasks required to set up Customer. For information, see [Set up Customer Key](customer-key-set-up.md). To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 To create a multi-workload DEP, follow these steps:
   
@@ -66,9 +66,9 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## Create a DEP for use with Exchange Online mailboxes
 
-Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) for information. You'll complete these steps by remotely connecting to Exchange Online with Windows PowerShell.
+Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. For information, see [Set up Customer Key](customer-key-set-up.md). You'll complete these steps by remotely connecting to Exchange Online with Windows PowerShell.
 
-A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Microsoft 365. Microsoft 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key) for instructions.
+A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Microsoft 365. Microsoft 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Remember! When you create a DEP, you specify two keys in two different Azure Key Vaults. Create these keys in two separate Azure regions to ensure geo-redundancy.
 
@@ -120,11 +120,11 @@ Where *MailUserIdParameter* specifies a mail user (also known as a mail-enabled 
 
 ## Create a DEP for use with SharePoint Online, OneDrive for Business, and Teams files
 
-Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) for information.
+Before you begin, ensure that you've completed the tasks required to set up Azure Key Vault. For information, see [Set up Customer Key](customer-key-set-up.md).
   
 To set up Customer Key for SharePoint Online, OneDrive for Business, and Teams files you complete these steps by remotely connecting to SharePoint Online with Windows PowerShell.
   
-You associate a DEP with a set of keys stored in Azure Key Vault. You apply a DEP to all of your data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo with the capability to use different keys per geo. If you aren't using multi-geo, you can create one DEP in your organization for use with SharePoint Online, OneDrive for Business, and Teams files. Microsoft 365 uses the keys identified in the DEP to encrypt your data in that geo. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key) for instructions.
+You associate a DEP with a set of keys stored in Azure Key Vault. You apply a DEP to all of your data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo with the capability to use different keys per geo. If you aren't using multi-geo, you can create one DEP in your organization for use with SharePoint Online, OneDrive for Business, and Teams files. Microsoft 365 uses the keys identified in the DEP to encrypt your data in that geo. To create the DEP, you need the Key Vault URIs you obtained during setup. For information, see [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
   
 Remember! When you create a DEP, you specify two keys in two different Azure Key Vaults. Create these keys in two separate Azure regions to ensure geo-redundancy.
   
@@ -365,7 +365,7 @@ Microsoft 365 audits and validates the data purge path. For more information, se
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directoy](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-delete-howto).
+Purging of multi-workload DEP is not supported for Microsoft 365 Customer Key. The multi-workload DEP is used to encrypt data across multiple workloads across all tenant users. Purging such DEP would result into data from across multiple workloads become inaccessible. If you decide to exit Microsoft 365 services altogether then you could pursue the path of tenant deletion per the documented process. See [how to delete a tenant in Azure Active Directoy](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
