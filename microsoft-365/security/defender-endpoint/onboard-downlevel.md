@@ -48,6 +48,7 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 
 
 **Windows Server 2008 R2 SP1**
+
 You can onboard Windows Server 2008 R2 SP1 by using any of the following options:
 
 - **Option 1**: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
