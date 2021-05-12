@@ -32,7 +32,7 @@ In the Microsoft 365 Admin Center, Bing map controls are used to show where orga
 
 Any content provided through Bing Maps, including geocodes, can only be used within the product through which the content is provided. Customer's use of the Microsoft 365 Admin Center Location Services feature, powered by Bing Maps, is governed by the _Bing Maps End User Terms of Use_ available at <https://go.microsoft.com/?linkid=9710837> and the _Microsoft Privacy Statement_ available at <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
-This feature, provided through Bing Maps, is also supported by **Here Technologies**. How Bing Maps leverages location services provided by Here Technologies is governed by the _Here Technologies Service Terms_ available at <https://legal.here.com/en-gb/terms>.
+This feature, provided through Bing Maps, is also supported by **TomTom**. More information about TomTom's products and services may be found at https://www.tomtom.com/legal.
 
 ## Related topics
 

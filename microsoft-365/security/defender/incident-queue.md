@@ -35,9 +35,11 @@ Microsoft 365 Defender applies correlation analytics and aggregates related aler
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision. 
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue":::
+
+The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
 By default, the incident queue in the Microsoft 365 security center displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
@@ -76,11 +78,14 @@ This table lists the filter names that are available.
 | Status | You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved. |
 |||
 
-## Next step
+## Next steps
 
-After you've determined which incident requires the highest priority, select it and begin your [analysis](investigate-incidents.md).
+After you've determined which incident requires the highest priority, select it and:
+
+- [Manage](manage-incidents.md) the properties of the incident for tags, assignment to a security analyst, and comments.
+- Begin your [investigation](investigate-incidents.md).
 
 ## See also
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

@@ -52,24 +52,8 @@ If you found this video helpful, check out the [complete training series for sma
 ## Steps: Let people reset their own passwords
 
 These steps turn on self-service password reset for everyone in your business.
-  
-::: moniker range="o365-worldwide"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.
-
-::: moniker-end
 
 2. At the top of the **Org settings** page, select the **Security & Privacy** tab.
   

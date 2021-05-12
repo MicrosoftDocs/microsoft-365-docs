@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,10 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn how to close your account with Microsoft."
 ms.date: 04/02/2021
 ---
@@ -64,7 +62,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
 
 > [!NOTE]
-> If you're unable to immediately delete a disabled subscription, [contact support](../admin/contact-support-for-business-products.md).
+> If you're unable to immediately delete a disabled subscription, [contact support](../business-video/get-help-support.md).
 
 ## Step 4: Disable multi-factor authentication
 

@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostic logs
+          href: service-description/diagnostic-logs.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
         - name: Application control
@@ -104,6 +106,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Localize the user experience
           href: get-started/localization.md
+        - name: Validate new devices
+          href: get-started/validate-device.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
