@@ -19,7 +19,7 @@ description: "End of lifecycle options for groups, teams, and Yammer."
 
 # End of lifecycle options for groups, teams, and Yammer
 
-Microsoft 365 Groups and Microsoft Teams work with multiple connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team prior to deletion.
+Microsoft 365 Groups and Microsoft Teams work with multiple connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team before deletion.
 
 A common practice for groups or teams that are no longer required is to move the files out of the team and archive them in another location such as a SharePoint document library. This practice is based on a legacy style of working where information is stored in files and folders, and communications are conducted via email.
 
@@ -66,11 +66,11 @@ These questions must be asked before the underlying group is deleted because exp
 
 **Guests**
 
-When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
+When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as starting chats, voice and video calls, and using apps.
 
 A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. Deleting accounts can only be performed by a global admin or user admin.
 
-It's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of one or more other teams or using other Microsoft 365 or Azure services.
+It's important to perform guest reviews and to understand whether guests need to be removed from Azure Active Directory upon team deletion. There may be a valid case for guests to remain in the directory, such as being a member of other teams or using other Microsoft 365 or Azure services.
 
 ## Teams
 
@@ -107,15 +107,15 @@ While a form can be moved from an individual account to a group, it can't be mov
 
 **Duplicate the form**
 
-Forms can be [shared as templates](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f), allowing other users to copy it to their own account or a group. This does not retain the data from result submissions; only form structure such as questions and settings.
+Forms can be [shared as templates](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f), allowing other users to copy it to their own account or a group. This doesn't retain the data from result submissions; only form structure such as questions and settings.
 
 **Export results to a spreadsheet**
 
-If the data of the form responses needs to be retained, this can be achieved by [exporting the results to an Excel spreadsheet](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). This will only export the questions and their responses as data – it does not include graphs created by Forms.
+If the data of the form responses needs to be retained, this can be achieved by [exporting the results to an Excel spreadsheet](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). This will only export the questions and their responses as data – it doesn't include graphs created by Forms.
 
 **Delete the Form**
 
-While deletion of the group will also result in the deletion of any associated forms, group members can [directly delete them](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) without being an owner of the group. However, this is a manual step that does not provide any additional benefit.
+While deletion of the group will also result in the deletion of any associated forms, group members can [directly delete them](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) without being an owner of the group. However, this is a manual step that doesn't provide any additional benefit.
 
 ## OneNote
 
@@ -127,7 +127,7 @@ The OneNote notebook included in a group is stored in the Site Assets library wi
 
 **Export the entire notebook as a package**
 
-If the entire notebook needs to be retained with its existing structure, it can be [exported as a OneNote package](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309) file and then imported to a new location. Alternatively, this can be used as a method to retain the contents in a single file instead of the existing multi-file structure.
+If the entire notebook needs to be retained with its existing structure, it can be [exported as a OneNote package](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309) file and then imported to a new location. Instead, this can be used as a method to retain the contents in a single file instead of the existing multi-file structure.
 
 **Print to PDF**
 
@@ -135,7 +135,7 @@ In scenarios where some of the contents of the notebook need only to be retained
 
 ## Mailbox and calendar
 
-It's not uncommon for the group-associated mailbox to be used, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
+It's not uncommon for the group-associated mailbox to be used, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and doesn't include emails that were sent directly to channels.
 
 In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system-generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
@@ -151,7 +151,7 @@ Administrators can use third-party tools to migrate email and calendar contents 
 
 ## Planner
 
-Each group or team can have multiple plans. It's important during the off-boarding process to ensure that each plan is addressed as to whether its contents are retained. Like the other products, there are several approaches to off-board content in Planner.
+Each group or team can have multiple plans. It's important during the off-boarding process to ensure that retention requirements are addressed for each plan. Like the other services, there are several approaches to off-board content in Planner.
 
 **Export the plan to a spreadsheet**
 
@@ -166,7 +166,7 @@ While copying or moving tasks to another plan seems like a solution, individual 
 
 **Copy entire plan**
 
-it's also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). Copying can't be done to an existing group. Copying the plan will create a new group. Additionally, copying the entire plan won't include comments, assignments, links, attachments, or dates.
+It's also possible to [copy the entire plan](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). Copying can't be done to an existing group. Copying the plan will create a new group. Additionally, copying the entire plan won't include comments, assignments, links, attachments, or dates.
 
 ## Power Automate
 
@@ -178,7 +178,7 @@ If the flow needs to continue operating, any owners can add other users or Micro
 
 **Export the flow**
 
-If the flow does not need to continue operating but it needs to be preserved for potential future use, it can be [exported as a file](https://flow.microsoft.com/blog/import-export-bap-packages/) and imported again later.
+If the flow doesn't need to continue operating but it needs to be preserved for potential future use, it can be [exported as a file](https://flow.microsoft.com/blog/import-export-bap-packages/) and imported again later.
 
 ## Power BI
 
@@ -186,11 +186,11 @@ Power BI data and workspaces can operate independently from groups and teams and
 
 **Copy reports to another workspace**
 
-If the report needs to be preserved in its functional state beyond the life of the group or team, it can be [copied from the existing workspace to another workspace within Power BI](/power-bi/connect-data/service-datasets-copy-reports).
+If you need the report once the group or team is deleted, it can be [copied from the existing workspace to another workspace within Power BI](/power-bi/connect-data/service-datasets-copy-reports).
 
 **Export data from a dashboard or report**
 
-Alternatively, if the report no longer needs to be active but the data needs to be retained, it can be [exported to Excel](/power-bi/visuals/power-bi-visualization-export-data).
+Instead, if the report no longer needs to be active but the data needs to be retained, it can be [exported to Excel](/power-bi/visuals/power-bi-visualization-export-data).
 
 ## Project
 
@@ -228,6 +228,7 @@ Files stored in SharePoint in one of the libraries mentioned above can be [downl
 Additionally, files can be [moved to another location within SharePoint such as a library in a different site](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc).
 
 **Export list**
+
 Data stored within SharePoint lists can be [exported to an Excel spreadsheet](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9), and imported again to a list in another site.
 
 Alternatively, a third-party tool can be used to migrate the list between sites in order to retain function, list views, formatting, and other attributes.
@@ -238,15 +239,15 @@ Wiki contents within team channels are stored in an HTML formatted file in a ded
 
 ## Microsoft Stream
 
-Like Power Automate, videos in Stream associated with a group or team aren't actually owned by the group and aren't deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. Meetings recorded in a Teams channel are owned by the person who initiated the recording.
+Like Power Automate, videos in Stream associated with a group or team aren't actually owned by the group and aren't deleted when the group is deleted. Videos in Stream are owned by the person who uploaded or created the video, even if they add users or groups as owners. Meetings recorded in a Teams channel are owned by the person who started the recording.
 
 **Adding other owners**
 
-As the video is retained in Stream regardless of group deletion, the original owner can [share the video with other users and groups, even adding them as owners](/stream/portal-edit-video).
+Because the video is retained in Stream when the group is deleted, the original owner can [share the video with other users and groups, even adding them as owners](/stream/portal-edit-video).
 
 **Download the video**
 
-In scenarios where the video does not need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can [download it locally](/stream/portal-download-video).
+In scenarios where the video doesn't need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can [download it locally](/stream/portal-download-video).
 
 ## Yammer
 
@@ -258,4 +259,4 @@ Conversations can be moved to another Yammer group by any user, not just owners 
 
 **Export network data**
 
-Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
+Yammer network administrators [export network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
