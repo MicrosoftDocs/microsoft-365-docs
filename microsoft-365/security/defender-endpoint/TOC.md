@@ -276,6 +276,8 @@
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Manage gradual rollout process for monthly updates](updates.md)
+#####  [Configure gradual rollout process for monthly updates](configure-updates.md)
 ##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)

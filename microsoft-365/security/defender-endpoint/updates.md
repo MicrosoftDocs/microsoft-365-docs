@@ -1,5 +1,5 @@
 ﻿---
-title: Learn about the gradual rollout process for monthly updates
+title: Manage the gradual rollout process for monthly updates
 description: Learn about the gradual update process and controls 
 keywords: update, update process, controls, release
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Learn about the gradual rollout process for monthly updates
+#  Manage the gradual rollout process for monthly updates
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
