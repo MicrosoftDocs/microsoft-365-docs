@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: 
 - customer-email
 - commerce_subscriptions
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to upgrade from an Office 365 E4 subscription."
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
