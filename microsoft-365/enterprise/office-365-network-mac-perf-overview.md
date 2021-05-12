@@ -1,5 +1,5 @@
 ---
-title: "Network connectivity in the Microsoft 365 Admin Center (preview)"
+title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: "Overview of network connectivity in the Microsoft 365 Admin Center (preview)"
+description: "Overview of network connectivity in the Microsoft 365 Admin Center"
 ---
 
 # Network connectivity in the Microsoft 365 Admin Center

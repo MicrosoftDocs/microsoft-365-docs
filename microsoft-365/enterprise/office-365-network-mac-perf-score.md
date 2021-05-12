@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 network assessment (preview)"
+title: "Microsoft 365 network assessment"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 network assessment (preview)"
+description: "Microsoft 365 network assessment"
 ---
 
 # Microsoft 365 network assessment

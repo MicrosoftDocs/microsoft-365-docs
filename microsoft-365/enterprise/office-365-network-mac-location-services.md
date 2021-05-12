@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Connectivity Location Services (preview)"
+description: "Microsoft 365 Network Connectivity Location Services"
 ---
 
 # Microsoft 365 Network Connectivity Location Services
