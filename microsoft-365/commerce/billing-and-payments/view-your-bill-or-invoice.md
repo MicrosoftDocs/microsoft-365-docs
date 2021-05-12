@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,7 +21,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -32,7 +31,7 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
+**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
 
 ## Before you begin
 
