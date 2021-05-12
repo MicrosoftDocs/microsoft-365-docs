@@ -58,7 +58,7 @@ This method is best for _big organizations with more than 100K devices_. The res
 Method | Data type | Description
 :---|:---|:---
 [Full export secure configuration assessment by device](get-assessmnt-secure-cfg.md#full-export-secure-configuration-assessment-by-device) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
-[Full export secure configuration assessment to Json](get-assessmnt-secure-cfg.md#full-export-secure-configuration-assessment-to-json) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Full export secure configuration assessment to Json](get-assessmnt-secure-cfg.md#export-secure-configuration-assessment-to-json) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 #### Export secure configurations assessment properties
 

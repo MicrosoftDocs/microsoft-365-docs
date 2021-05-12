@@ -504,7 +504,7 @@ GET DeltaExport endpoint
 }
 ```
 
-## Export software vulnerabilities assessment to Json
+## Full export software vulnerabilities assessment to Json
 
 ### API method description - software vulnerabilities assessment to Json
 
