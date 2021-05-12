@@ -175,7 +175,7 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 ### Block abuse of exploited vulnerable signed drivers
 
-This rule prevents an application from writing a vulnerable signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
+This rule prevents an application from writing a vulnerable, signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
 
 This rule does not block a driver already existing on the system from being loaded.
 
