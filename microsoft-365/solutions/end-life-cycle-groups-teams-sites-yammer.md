@@ -194,18 +194,20 @@ Alternatively, if the report no longer needs to be active but the data needs to 
 
 ## Project
 
-Projects and Roadmaps created in Project on the web can be associated with Microsoft 365 groups and offers approaches to off-boarding similar to Power BI.
+Projects and Roadmaps created in Project for the web are associated with Microsoft 365 groups and have approaches to off-boarding similar to Power BI.
 
 **Assign the project to another group**
 
-If the project needs to be preserved in its functional state beyond the life of the group or team, it can be [assigned to a different Microsoft 365 group](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) using the Dynamics 365 Administration Center.
+If the project needs to be preserved in its functional state beyond the life of the group or team, it can be [assigned to a different Microsoft 365 group](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project). This can be done using the Dynamics 365 Administration Center.
 
 **Export data from the project or roadmap**
 
-Using the Dynamics 365 Administration Center it's possible to [export user data from the project](/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet, or if using a PowerShell script the data can be exported to Project file (.MPP) and XML file formats.
+Using the Dynamics 365 Administration Center, it's possible to [export user data from the project](/project-for-the-web/export-user-data-from-project-for-the-web) to a spreadsheet. The data can also be exported to Project file (.MPP) and XML file formats by using PowerShell.
 
 ## SharePoint
-All files in team channels are stored in the document library in the SharePoint site of the associated group. In some cases, content other than documents may exist in SharePoint, such as lists or pages.
+
+All files in team channels are stored in the SharePoint site of the associated group. In some cases, content other than documents may exist in SharePoint, such as lists or pages.
+
 Files are generally stored in three primary locations within a SharePoint site:
 
 - Pages - Site Pages library
@@ -213,9 +215,9 @@ Files are generally stored in three primary locations within a SharePoint site:
 - Files in channels – Documents library
 - Wiki pages – Teams Wiki Data library
 
-If the site has one or more subsites nested underneath it, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there's a separate SharePoint site for each channel.
+If the site has one or more subsites, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there's a separate SharePoint site for each channel.
 
-it's important when removing files from a group or team to consider that they may be shared with users who aren't members of the group or team (whether internal or external to the organization), and as such it may be worthwhile communicating the impending change to them.
+It's important when removing files from a group or team to consider that they may be shared with users who aren't members of the group or team. You may want to communicate the impending change to them.
 
 **Download files**
 
@@ -223,8 +225,7 @@ In the case of files stored within SharePoint in one of the libraries mentioned 
 
 **Move files**
 
-Additionally, files can be moved to another location within SharePoint such as a library in a different site.
-Reference: https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Additionally, files can be [moved to another location within SharePoint such as a library in a different site](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc).
 
 **Export list**
 Data stored within SharePoint lists can be [exported to an Excel spreadsheet](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9), and imported again to a list in another site.
@@ -245,7 +246,7 @@ As the video is retained in Stream regardless of group deletion, the original ow
 
 **Download the video**
 
-In scenarios where the video does not need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can be [download it locally](/stream/portal-download-video)
+In scenarios where the video does not need to be retained in Stream or needs to be stored in an alternate location such as a records management system, an owner can [download it locally](/stream/portal-download-video).
 
 ## Yammer
 
@@ -257,4 +258,4 @@ Conversations can be moved to another Yammer group by any user, not just owners 
 
 **Export network data**
 
-Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID, so it's possible to filter conversations based on this.
+Yammer network administrators can perform an [export of network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
