@@ -59,7 +59,7 @@ Additionally:
 
 #### Enabling another security group for disposition
 
-After you have enabled a security group for disposition from the **Records management settings** in the compliance center, you can't disable this permission for the group or replace the selected group that you enabled from the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
+After you have enabled a security group for disposition from the **Records management settings** in the Microsoft 365 compliance center, you can't disable this permission for the group or replace the selected group in the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
 
 For example: 
 
