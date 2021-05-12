@@ -95,6 +95,7 @@ Review the following details to verify minimum system requirements:
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 
+### Installation steps
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
@@ -112,14 +113,29 @@ Review the following details to verify minimum system requirements:
    > [!NOTE]
    > If you are a [US Government customer](gov.md), under "Azure Cloud" you'll need to choose "Azure US Government" if using the setup wizard, or if using a command line or a script - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
-4. If you're using a proxy to connect to the Internet see the Configure proxy settings section.
+4. If you're using a proxy to connect to the Internet see the Configure proxy and Internet connectivity settings section.
 
 Once completed, you should see onboarded endpoints in the portal within an hour.
 
-### Configure proxy and Internet connectivity settings
+## Configure proxy and Internet connectivity settings
+
+**Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
  
 - Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Defender for Endpoint service URLs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+
+
+**Windows Server 2008 R2 SP1**
+
+If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
+
+- [Configure the MMA to use a proxy server](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+
+- [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
+
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
+
+Once completed, you should see onboarded Windows servers in the portal within an hour.
 
 
 ## Onboard Windows servers through Azure Defender
@@ -150,6 +166,35 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
 - [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
+
+
+## Verify onboarding
+
+Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are running. 
+
+> [!NOTE]
+> Running Microsoft Defender AV is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
+
+1. Run the following command to verify that Microsoft Defender AV is installed:
+
+   ```sc.exe query Windefend```
+
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
+
+    For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
+
+
+2. Run the following command to verify that Microsoft Defender for Endpoint is running:
+
+    ```sc.exe query sense```
+    
+    The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+
+## Run a detection test
+Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
+
+
+
 
 
 ## Onboarding Servers with no management solution -- KEEP HERE?
@@ -187,18 +232,9 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 )
 ```
 
-## Configure and update System Center Endpoint Protection clients 
-
-Defender for Endpoint integrates with System Center Endpoint Protection. The integration provides visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
-
-The following steps are required to enable this integration:
-
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
-
-- [Configure the SCEP client Cloud Protection Service membership](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
 
 
-## Group Policy Configuration
+### Group Policy Configuration
 
 Create a new group policy specifically for onboarding devices such as "Microsoft Defender for Endpoint Onboarding".
 
@@ -258,7 +294,62 @@ This process allows you to onboard all the servers if you don't have Configurati
 
 
 ## Offboard client endpoints
+
+**Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
+
 To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint. 
 
 
 
+**Windows Server 2008 R2 SP1**
+
+You have two options to offboard Windows servers from the service:
+
+- Uninstall the MMA agent
+- Remove the Defender for Endpoint workspace configuration
+
+> [!NOTE]
+> Offboarding causes the Windows server to stop sending sensor data to the portal but data from the Windows server, including reference to any alerts it has had will be retained for up to 6 months.
+
+### Uninstall Windows servers by uninstalling the MMA agent
+
+To offboard the Windows server, you can uninstall the MMA agent from the Windows server or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the Windows server will no longer send sensor data to Defender for Endpoint.
+For more information, see [To disable an agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
+
+### Remove the Defender for Endpoint workspace configuration
+
+To offboard the Windows server, you can use either of the following methods:
+
+- Remove the Defender for Endpoint workspace configuration from the MMA agent
+- Run a PowerShell command to remove the configuration
+
+#### Remove the Defender for Endpoint workspace configuration from the MMA agent
+
+1. In the **Microsoft Monitoring Agent Properties**, select the **Azure Log Analytics (OMS)** tab.
+
+2. Select the Defender for Endpoint workspace, and click **Remove**.
+
+    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma.png)
+
+#### Run a PowerShell command to remove the configuration
+
+1. Get your Workspace ID:
+
+   1. In the navigation pane, select **Settings** > **Onboarding**.
+
+   1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
+
+      ![Image of Windows server onboarding](images/atp-server-offboarding-workspaceid.png)
+
+2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
+
+    ```powershell
+    $ErrorActionPreference = "SilentlyContinue"
+    # Load agent scripting object
+    $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
+    # Remove OMS Workspace
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
+    # Reload the configuration and apply changes
+    $AgentCfg.ReloadConfiguration()
+
+    ```
