@@ -22,7 +22,8 @@ In the Microsoft 365 Admin Center's network connectivity, **network assessments*
 
 The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed, and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
-![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+> [!div class="mx-imgBorder"]
+> ![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 A very low network assessment value suggests that Microsoft 365 clients will have significant problems connecting to the tenant or maintaining a responsive user experience. A high value indicates a properly configured network with few ongoing performance issues. A value of 80% represents a healthy baseline, above which you should not expect to receive regular user complaints about Microsoft 365 connectivity or responsiveness due to network performance. As iterative network connectivity improvements are made, this value will increase along with user experience.
 
@@ -42,7 +43,8 @@ A very low network assessment value suggests that Microsoft 365 clients will hav
 
 Each network assessment, whether scoped to the tenant or to a specific office location, shows a panel with details about the assessment. This panel shows a bar chart of the assessment both as a percentage and as the total points for each component workload including only workloads where measurement data was received. For an office location network assessment, we also show a comparison to the percent of Microsoft 365 customers in each of five quintiles that reported data in the same city as your office location.
 
-![Example network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> [!div class="mx-imgBorder"]
+> ![Example network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 The **Assessment breakdown** in the panel shows the assessment for each of the component workloads.
 
