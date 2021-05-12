@@ -211,7 +211,7 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
 
     > ![Applications list](images/mdatp-12-applications.png)
 
-(You can find detailed information on the [Intune's page for Defender deployment](https://docs.microsoft.com/en-us/mem/intune/apps/apps-advanced-threat-protection-macos))
+(You can find detailed information on the [Intune's page for Defender deployment](/mem/intune/apps/apps-advanced-threat-protection-macos))
 
    > [!CAUTION]
    > You have to create all required configuration profiles and push them to all machines, as explained above.
