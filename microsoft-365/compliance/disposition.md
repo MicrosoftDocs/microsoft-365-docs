@@ -106,7 +106,7 @@ The following diagram shows the basic workflow for a disposition review when a r
 
 ### How to configure a retention label for disposition review
 
-Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label, and is supported for Microsoft 365 Multi-Geo. Disposition review is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
+Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. Disposition review is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
 
 From the **Define retention settings** page for a retention label:
 
@@ -125,7 +125,7 @@ If you need more than one person to review an item at the end of its retention p
 Within each individual stage of disposition, any of the users you specify for that stage are authorized to take the next action for the item at the end of its retention period. These users can also add other users to their disposition review stage.
 
 > [!NOTE]
-> Multi-stage disposition review is currently in preview. Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
+> Existing retention labels that are configured for disposition review can be upgraded to use multi-staged disposition review by configuring the label. In the label wizard, select **Add a stage**, or edit the existing reviewers or add new reviewers.
 
 During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
 
@@ -178,6 +178,9 @@ As you can see from example shown, the actions supported are:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 - **Add reviewers**:
     - When this action is selected, the user is prompted to specify and then add other users for review.
+    
+    > [!NOTE]
+    > Currently, this action doesn't automatically grant added users the [required permissions](#permissions-for-disposition)
 
 Each action taken is saved and stored although you can't yet search for them in the audit log.
 
