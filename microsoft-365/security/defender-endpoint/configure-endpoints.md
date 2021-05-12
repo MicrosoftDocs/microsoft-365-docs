@@ -41,7 +41,7 @@ Depending on the Windows endpoint you want to onboard, use the corresponding too
 
 Windows device | Onboarding tool or method
 :---|:---
-Windows 7 SP1 <br> <br>  Windows 7 SP1 Pro <br> <br>  Windows 8.1 Pro <br> <br>  Windows 8.1 Enterprise | [System Center Endpoint Protection and Microsoft Monitoring Agent (MMA)](onboard-downlevel.md)
+Windows 7 SP1 <br> <br>  Windows 7 SP1 Pro <br> <br>  Windows 8.1 Pro <br> <br>  Windows 8.1 Enterprise | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md)
 Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-server-2008r2.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) or [Azure Security Center](onboard-server-2008r2.md#option-2-onboard-windows-servers-through-azure-security-center)
 Windows 10 <br> <br>  Windows Server 1803 and 2019  <br> <br> Windows Server 2012 R2 and 2016 <br> <br>  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> <br>  [Group Policy](configure-endpoints-gp.md) <br><br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> <br>   [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br><br>    [VDI scripts](configure-endpoints-vdi.md) 
 
