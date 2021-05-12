@@ -36,7 +36,7 @@ The migration process will complete over many weeks depending on the overall siz
 |Opt-In|Hours|Customer|Opt your organization into the migration.|
 |Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
 |Azure Active Directory (Azure AD)|1-2 days|Microsoft|Migrate Azure AD organization to worldwide.|
-|Azure|Weeks|Customer|Create new worldwide Azure subscriptions and [transition Azure services](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
+|Azure|Weeks|Customer|Create new worldwide Azure subscriptions and [transition Azure services](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
 |Subscription & License Transition|1-2 days|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
 |SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, persisting sharepoint.de URLs.|
 |Exchange Online|15+ days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
