@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
+search.appverid: MET150 S
 description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
 ms.date: 03/17/2021
 ---
