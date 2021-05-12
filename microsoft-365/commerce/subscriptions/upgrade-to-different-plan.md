@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,8 +17,7 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to upgrade to a different plan."
 ms.date: 04/21/2021
 ---

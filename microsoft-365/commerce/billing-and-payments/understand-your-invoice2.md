@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,7 +18,6 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: "Learn how to interpret the charges, billing, and payment information on your Microsoft 365 for business bill or invoice, and how to change the purchase order number."
 ms.date: 05/04/2021

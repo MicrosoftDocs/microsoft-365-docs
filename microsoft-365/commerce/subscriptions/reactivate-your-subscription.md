@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,8 +18,7 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to reactivate your subscription when it expires, is disabled, or canceled."
 ms.date: 04/07/2021
 ---

@@ -142,7 +142,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
     - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
 Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
