@@ -16,7 +16,7 @@ ms.collection:
 description: "Microsoft 365 network connectivity test tool (preview)"
 ---
 
-# Microsoft 365 network connectivity test tool (preview)
+# Microsoft 365 network connectivity test tool
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It is an adjunct tool to the network assessment and network insights information available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 

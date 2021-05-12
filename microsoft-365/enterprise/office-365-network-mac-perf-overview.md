@@ -17,7 +17,7 @@ ms.collection:
 description: "Overview of network connectivity in the Microsoft 365 Admin Center (preview)"
 ---
 
-# Network connectivity in the Microsoft 365 Admin Center (preview)
+# Network connectivity in the Microsoft 365 Admin Center
 
 The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant.
 

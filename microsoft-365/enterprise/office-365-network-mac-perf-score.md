@@ -16,7 +16,7 @@ ms.collection:
 description: "Microsoft 365 network assessment (preview)"
 ---
 
-# Microsoft 365 network assessment (preview)
+# Microsoft 365 network assessment
 
 In the Microsoft 365 Admin Center's network connectivity, **network assessments** distill an aggregate of many network performance metrics into a snapshot of your enterprise network perimeter health, represented by a points value from 0 - 100. A network assessment tells you how much the customer responsible network design is impacting Office 365 user experience. Network assessments are scoped to both the entire tenant and for each geographic location from which users connect to your tenant, providing Microsoft 365 administrators with an easy way to instantly grasp a gestalt of the enterprise's network health and quickly drill down into a detailed report for any global office location.
 
