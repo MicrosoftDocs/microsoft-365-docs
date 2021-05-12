@@ -115,28 +115,16 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 
 ## Exchange Online
 
-### Exchange Online customers using the availability address service
-**Applies to**: Exchange Online customers with availability address space configuration<br>
-**When applied**: Any time before end of phase 7
+<!-- before phase 5 -->
 
-To continue free/busy information sharing with Office 365, customers must notify all external partners where calendar sharing and availability address space configuration (allow sharing of free/busy information with Office 365) is used. 
+**Applies to**: Exchange Online customers<br>
+**When applied**: Any time before end of phase 9
 
-Availability configuration needs to transition to use the [Office 365 worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) when Exchange Online migration is completed.
-Failure to do so may result in service or client failure at a later phase of customer migration.
-
-### Exchange Online customers using POP3/IMAP4
-**Applies to**: Exchange Online customers using POP3/IMAP4 protocols to connect their client devices to Exchange Online<br>
-**When applied**: Any time before phase 5 starts
-
-Users using device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, and SMTP are required to manually update their client devices to switch to the [Exchange Online server names](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes) if they want to pursue these protocols.
-
-Pre-communicate this dependency to users of these protocols and ensure they either switch to use Outlook for mobile or Outlook on the web during this migration. Failure to update the client endpoints will result in client connection failures with Microsoft Cloud Deutschland when mailboxes are migrated.
-
-The exact point of time to change the endpoint configuration cannot be predicted. During phase 5, user mailboxes will be successively migrated to the new Office 365 German region. The start of phase 5 will be announced in the Office 365 Admin Center. After each individual mailbox migration, the old endpoints become unavailable immediately, the client device will be disconnected from Exchange Online, and the user must reconfigure all connected devices with the new [Exchange Online server endpoint](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). 
-
-The new endpoints cannot be configured in advance; they become available **only** when the mailbox is migrated.
-
-This limitation is unique to POP3/IMAP4 connections and does not apply to MAPI connections. Consider switching to Outlook apps or other modern protocols on all connected devices before phase 5 starts to improve the user experience.
+| Step(s) | Description | Impact |
+|:-------|:-------|:-------|
+| Notify external partners of the upcoming transition to Office 365 services. |  Customers must notify their partners with whom they have enabled sharing calendar and availability address space configuration (allow sharing of free/busy information with Office 365). Availability configuration needs to transition to use the [Office 365 worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) when Exchange Online migration is completed. | Failure to do so may result in service or client failure at a later phase of customer migration. |
+| Notify users of required IMAP4/POP3/SMTP client changes. | Users who have device connections to Microsoft Cloud Deutschland endpoints for client protocols IMAP4, POP3, SMTP are required to manually update their client devices to switch to the [Exchange Online server names](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). | Pre-communicate this dependency to users of these protocols and ensure they either switch to use Outlook mobile or Outlook on the web during this migration. Failure to update client endpoints will result in client connection failures against Microsoft Cloud Deutschland when user mailboxes are migrated. |
+||||
 
 ### Exchange Online Hybrid customers
 
