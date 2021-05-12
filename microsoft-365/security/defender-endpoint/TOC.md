@@ -58,7 +58,7 @@
 #### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
 #### [Onboard Windows devices and Windows Servers]()
 
-##### [Onboard Windows 7 and 8.1 devices](onboard-downlevel.md)
+##### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
 ##### [Onboard Windows 10, Windows Server 2012 R2, 2016, SAC version 1803, and 2019]()
