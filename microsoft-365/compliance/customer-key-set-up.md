@@ -65,28 +65,6 @@ You will complete most of these tasks by remotely connecting to Azure PowerShell
 - [Validate Azure Key Vault configuration settings](#validate-azure-key-vault-configuration-settings)
 
 - [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key)
-
-**In Office 365:**
-  
-You create DEPs using PowerShell cmdlets, and assign those DEPs to encrypt application data. There are three types of DEPs supported by Microsoft 365 Customer Key, each requiring its own separate onboarding. These include:
-
-**DEP for Exchange Online mailboxes** This DEP is used to encrypt data stored in EXO mailboxes of different types such as UserMailbox, MailUser, Group, PublicFolder and Shared mailboxes. You can have up to 50 active DEPs per tenant and assign those to individual mailboxes.
-
-- [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)
-
-- [Assign a DEP to a mailbox](#assign-a-dep-to-a-mailbox)
-
-- [Validate mailbox encryption](#validate-mailbox-encryption)
-
-**DEP for SharePoint Online and OneDrive for Business** This DEP is used to encrypt content stored in SPO and OneDrive for Business. This includes Microsoft Teams files stored in SPO. If you're using the multi-geo feature, you can create one DEP per geo for your organization. If you're not using the multi-geo feature, you can only create one DEP per tenant.
-
-- [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)
-
-- [Validate file encryption for SharePoint Online, OneDrive for Business, and Teams files](#validate-file-encryption)
-
-**DEP for multiple Microsoft 365 workloads** Microsoft recently added the support for creating a DEP that encrypts data across multiple Microsoft 365 workloads. You can create multiple DEPs per tenant but can only assign one DEP at a time.
-
-*****NEED TO PROVIDE RELEVANT LINKS HERE**
   
 ## Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key
 
@@ -98,7 +76,6 @@ Customer Key requires two Azure subscriptions. As a best practice, Microsoft rec
   
 > [!IMPORTANT]
 > Customer Key requires two keys for each data encryption policy (DEP). In order to achieve this, you must create two Azure subscriptions. As a best practice, Microsoft recommends that you have separate members of your organization configure one key in each subscription. You should only use these Azure subscriptions to administer encryption keys for Office 365. This protects your organization in case one of your operators accidentally, intentionally, or maliciously deletes or otherwise mismanages the keys for which they are responsible.
->
 
 There is no practical limit to the number of Azure subscriptions that you can create for your organization. Following these best practices will minimize the impact of human error while helping to manage the resources used by Customer Key.
   
