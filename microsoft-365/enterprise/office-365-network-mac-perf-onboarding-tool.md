@@ -23,7 +23,8 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 > [!IMPORTANT]
 > It is important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
 
-![Connectivity test tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+> [!div class="mx-imgBorder"]
+> ![Connectivity test tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -53,7 +54,8 @@ There are two parts to the Microsoft 365 network connectivity test: the web site
 
 You will be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 
-![Advanced tests client application](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> [!div class="mx-imgBorder"]
+> ![Advanced tests client application](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### Start the advanced tests client application
 
@@ -79,23 +81,27 @@ Test reports (excluding any personal identification) are shared with Microsoft e
 
 You can choose users to share your report with. Being able to choose is enabled by default, but it can be disabled by your administrator.
 
-![Sharing a link to your test results with a user](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> [!div class="mx-imgBorder"]
+> ![Sharing a link to your test results with a user](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### Sharing with anyone using a ReportID link
 
 You can share your test report with anyone by providing access to a ReportID link. This link generates a URL that you can send to someone so that they can bring up the test report without signing in. This sharing is disabled by default and must be enabled by your administrator.
 
-![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
+> [!div class="mx-imgBorder"]
+> ![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## Network Connectivity Test Results
 
 The results are shown in the **Summary** and **Details** tabs. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like:
 
-![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> [!div class="mx-imgBorder"]
+> ![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explain the thresholds used for network insights.
 
-![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+> [!div class="mx-imgBorder"]
+> ![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### Your location information
 
@@ -197,7 +203,7 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### Packet loss
 
@@ -229,13 +235,15 @@ This section shows the results of an ICMP traceroute to the Exchange Online serv
 
 When you are signed in you can review previous reports that you have run. You can also share them or delete them from the list.
 
-![Reports](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+> [!div class="mx-imgBorder"]
+> ![Reports](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## Network health status
 
 This shows any significant health issues with Microsoft's global network, which might impact Microsoft 365 customers.
 
-![Network health status](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+> [!div class="mx-imgBorder"]
+> ![Network health status](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## FAQ
 
@@ -253,7 +261,8 @@ The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the 
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door in your city or metro.
 
-Note: Microsoft 365 service front door has no direct relationship to the **Azure Front Door Service** product available in the Azure marketplace.
+> [!NOTE]
+> Microsoft 365 service front door has no direct relationship to the **Azure Front Door Service** product available in the Azure marketplace.
 
 ### What is the best Microsoft 365 service front door?
 
