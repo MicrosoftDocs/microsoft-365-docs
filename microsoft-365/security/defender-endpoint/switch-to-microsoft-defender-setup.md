@@ -34,11 +34,17 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
+
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+
 3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing endpoint solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
+
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
+
 5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+
 6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Enable Microsoft Defender Antivirus and confirm it's in passive mode
@@ -46,10 +52,15 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. When you get ready to onboard your endpoints to Defender for Endpoint, Microsoft Defender Antivirus does not enter passive or disabled mode automatically. In addition, on Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. To learn more about what happens with Defender for Endpoint and antivirus solutions, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 To help ensure that Microsoft Defender Antivirus is enabled and in passive mode, complete the following tasks described in this article:
+
 - [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server)
+
 - [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server);
+
 - [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+
 - [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices); and
+
 - [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
 
 ### Set DisableAntiSpyware to false on Windows Server
