@@ -206,10 +206,8 @@ For auditing of deleted items that were marked as records or regulatory records,
 
 ## Filter and export the views
 
-When you select a retention label from the **Disposition** page, the **Pending disposition** tab (if applicable) and the **Disposed items** tab let you filter the views to help you more easily find items. 
+When you select a retention label from the **Disposition** page, the **Pending disposition** tab (if applicable) and the **Disposed items** tab let you filter the views to help you more easily find items.
 
 For pending dispositions, the time range is based on the expiration date. For disposed items, the time range is based on the deletion date.
   
-You can export information about the items in either view as a .csv file that you can then sort and manage using Excel:
-
-![Export option for disposition](../media/retention-export-option.png)
+You can export information about the items in either view as a .csv file that you can then sort and manage using Excel.
