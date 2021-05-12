@@ -17,8 +17,8 @@ ms.custom:
 - customer-email
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Important information about upgrading or changing plans for customers with an Office 365 E4 subscription."
+ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
 ---
 
