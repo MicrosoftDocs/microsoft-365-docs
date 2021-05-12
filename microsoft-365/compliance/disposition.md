@@ -55,7 +55,7 @@ Additionally:
     > [!IMPORTANT]
     > You can't disable this permission or replace the group that you enabled from the compliance center. However, you can enable another mail-enabled security group by using the [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet.
     > 
-    > For example:"`Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > For example: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
 
 - In preview: The **Records management settings** option is visible only to record management administrators. 
 
