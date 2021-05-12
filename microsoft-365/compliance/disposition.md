@@ -170,10 +170,10 @@ If you use the horizontal scroll bar, or close the min-review pane, you see more
 As you can see from the example shown, the actions supported are: 
   
 - **Approve disposal**:
-    - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place)
+    - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 - **Relabel**:
-    -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
+    - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 - **Extend**:
     - When this action is selected, disposition review is effectively suspended until the end of the extended period and then disposition review is triggered again from the first stage.
 - **Add reviewers**:
