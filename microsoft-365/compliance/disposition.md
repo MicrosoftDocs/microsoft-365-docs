@@ -171,7 +171,7 @@ As you can see from example shown, the actions supported are:
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review when you have configured multiple stages: The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is permanently deleted.
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 - **Relabel**:
     -When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 - **Extend**:
@@ -184,7 +184,7 @@ As you can see from example shown, the actions supported are:
 
 Each action taken is saved and stored although you can't yet search for them in the audit log.
 
-During a disposition review, the content never moves from its original location, and it's never permanently deleted until this action is selected by a reviewer for the final or only disposition stage. Then, the content becomes eligible for the standard cleanup process for that workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
+During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 
 ## Disposition of records
 
