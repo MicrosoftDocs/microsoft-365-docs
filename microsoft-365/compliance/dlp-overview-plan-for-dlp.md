@@ -93,7 +93,9 @@ Your implementation plan should include:
 
 #### Map out path from start to desired end state
 
-Documenting how your organization is going to get from its starting state to the desired end state is essential to communicating with your stakeholders and setting the project scope.
+Documenting how your organization is going to get from its starting state to the desired end state is essential to communicating with your stakeholders and setting the project scope. Here are a set of steps that are commonly used to deploy DLP. You'll want more detail than this, but you can use this to frame your DLP adoption path.
+
+![graphic showing common order for deploying DLP](../media/dlp-deployment-planning.png)
 
 #### Sensitive item discovery
 
@@ -175,36 +177,15 @@ When a DLP policy is triggered, you can configure your policies to [Send email n
 
 The regulations, laws and industry standards that your organization is subject to will change over time and your business goals for DLP will too. Be sure to include regular reviews of all these areas so that your organization stays in compliance and your DLP implementation continues to meet your business needs.
 
-## Common steps for deploying DLP
-
-![graphic showing common order for deploying DLP](../media/dlp-deployment-planning.png)
-
-### Prioritize data
- 
-### Categorize data
-
-### Establish policies
-
-### Develop controls
-
-### Train users
-
-### Monitor data movement
-
-### Tune 
-Adjust/refine
-
-## Approaches to deployment    REALLY BIG GAP
-
-
+## Approaches to deployment
 
 |Customer biz needs description  | approach  |
 |---------|---------|
-|**Customer ABC** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a top tier CSS contract| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve biz process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
-|**Customer DEF** doesn’t know what they have or where it is, little to no resource depth. Customer uses mostly Teams, ODB and Exchange     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply labels accordingly </br>- Refine policies, train users       |
-|**Customer GHI** is a small startup and wants to protect its intellectual property, must move quickly, willing to dedicate some resources, no deep pockets </br>- Sensitive items are all in M365 ODB/SharePoint </br>- Adoption of  ODB and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Block uploads to non ODB cloud storage      |
+|**Contoso Bank** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a premier support contract with Microsoft| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve business process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
+|**TailSpin Toys** doesn’t know what they have or where it is, little to no resource depth. They use Teams, ODB and Exchange extensively.     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply labels accordingly </br>- Refine policies, train users       |
+|**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford hiring outside experts. </br>- Sensitive items are all in M365 ODB/SharePoint </br>- Adoption of  ODB and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Block uploads to non ODB cloud storage      |
 
-
+<!--
 
 ## Planning for workloads
 
@@ -221,15 +202,7 @@ Adjust/refine
 ### Microsoft Cloud App Security (MCAS)
 
 ### On-premises Scanner
+-->
 
 ## See also
-- 
-
-
-
-
-
-
-
-
-
+- [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
