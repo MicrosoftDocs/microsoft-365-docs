@@ -171,16 +171,13 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 When a DLP policy is triggered, you can configure your policies to [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) to admins and end users. While your policies are still in test mode and before they are set to enforce a blocking action, policy tips are useful ways to raise awareness of risky behaviors on sensitive items and train users to avoid those behaviors in the future.  
 
-
-#### Test and tune your policies
-
-
 #### Review DLP requirements and update strategy
 
+The regulations, laws and industry standards that your organization is subject to will change over time and your business goals for DLP will too. Be sure to include regular reviews of all these areas so that your organization stays in compliance and your DLP implementation continues to meet your business needs.
 
 ## Common steps for deploying DLP
 
-<!--ADD GRAPHIC FROM ERIC's SLIDE WITH ARROW REDIRECTS-->
+![graphic showing common order for deploying DLP](../media/dlp-deployment-planning.png)
 
 ### Prioritize data
  
