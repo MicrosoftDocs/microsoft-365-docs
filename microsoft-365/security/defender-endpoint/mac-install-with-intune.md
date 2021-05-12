@@ -50,10 +50,10 @@ The following table summarizes the steps you would need to take to deploy and ma
 | [Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
 | [Approve Kernel Extension for Microsoft Defender for Endpoint](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
 | [Grant full disk access to Microsoft Defender for Endpoint](#create-system-configuration-profiles) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [Network Extension policy](#create-system-configuration-profiles-step-9) | MDATP_NetExt.xml | N/A |
+| [Network Extension policy](#create-system-configuration-profiles) | MDATP_NetExt.xml | N/A |
 | [Configure Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-updates#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint configuration settings](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-preferences#intune-profile-1)<br/><br/> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
-| [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles-step-10) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
+| [Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](#create-system-configuration-profiles) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 or com.microsoft.wdav.tray |
 
 ## Download the onboarding package
 
