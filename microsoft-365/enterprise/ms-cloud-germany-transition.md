@@ -97,7 +97,7 @@ Existing Microsoft Cloud Deutschland customers can now begin to migrate their Of
 As a result of the migration, core customer data and subscriptions are moved to the new German datacenter regions.
 
 > [!NOTE]
-> This documentation comprises guidance for the migration of Office 365 services only. Customers which are running additional Azure workloads in Microsoft Cloud Deutschland must consider the [Migration guidance for Azure Germany](https://docs.microsoft.com/en-us/azure/germany/germany-migration-main).
+> This documentation comprises guidance for the migration of Office 365 services only. Customers who are running additional Azure workloads in Microsoft Cloud Deutschland must consider the [Migration guidance for Azure Germany](/azure/germany/germany-migration-main).
 
 ## How to prepare for migration to Office 365 services in the new German datacenter regions
 
