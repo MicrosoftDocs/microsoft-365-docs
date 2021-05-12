@@ -19,15 +19,15 @@ description: "Learn more about explanation types in Microsoft SharePoint Syntex.
 
 Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they are used.
 
-![Explanation types](../media/content-understanding/explanation-types.png) 
+![Screenshot of the Create an explanation panel showing the three explanation types.](../media/content-understanding/explanation-types.png) 
    
 These explanation types are available:
 
-- **Phrase list**: List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *referring doctor* is in all Medical Referral documents you are identifying. Or the *phone number* of the referring doctor from all Medical Referral documents that you are identifying.
+- [**Phrase list**](#phrase-list): List of words, phrases, numbers, or other characters you can use in the document or information that you are extracting. For example, the text string *referring doctor* is in all Medical Referral documents you are identifying. Or the *phone number* of the referring doctor from all Medical Referral documents that you are identifying.
 
-- **Regular expression**: Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression to find all instances of an *email address* pattern in a set of documents.
+- [**Regular expression**](#regular-expression): Uses a pattern-matching notation to find specific character patterns. For example, you can use a regular expression to find all instances of an *email address* pattern in a set of documents.
 
-- **Proximity**: Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
+- [**Proximity**](#proximity): Describes how close explanations are to each other. For example, a *street number* phrase list goes right before the *street name* phrase list, with no tokens in between (you'll learn about tokens later in this article). Using the proximity type requires you to have at least two explanations in your model or the option will be disabled. 
 
 ## Phrase list
 
