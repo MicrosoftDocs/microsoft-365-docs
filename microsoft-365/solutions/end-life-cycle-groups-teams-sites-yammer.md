@@ -21,7 +21,7 @@ description: "End of lifecycle options for groups, teams, and Yammer."
 
 Microsoft 365 Groups and Microsoft Teams work with a variety of connected services. When a group or team is deleted, most of the information in the connected services is also deleted. This article describes options for retaining information by moving it out of the group or team prior to deletion.
 
-A common practice for groups or teams that are no longer required is to move the files out of the team and store them in another location such as a SharePoint document library acting as a repository or archive. This practice is based on a legacy style of working where information is stored within files and folders, and communications are conducted via email.
+A common practice for groups or teams that are no longer required is to move the files out of the team and store them in another location such as a SharePoint document library acting as a repository or archive. This practice is based on a legacy style of working where information is stored in files and folders, and communications are conducted via email.
 
 The following table outlines the services associated with groups and teams and key types of content found in each of them:
 
