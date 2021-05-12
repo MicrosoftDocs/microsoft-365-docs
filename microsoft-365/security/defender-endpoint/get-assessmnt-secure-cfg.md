@@ -88,7 +88,6 @@ IsApplicable | bool | Indicates whether the configuration or policy is applicabl
 IsCompliant | bool | Indicates whether the configuration or policy is properly configured | false
 IsExpectedUserImpact | bool | Indicates whether there will be user impact if the configuration will be applied | true
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
-RbacGroupId | Int | ID of the RBAC group. | 70
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
 RecommendationReference | string | A reference to the recommendation ID related to this software. | sca-_-scid-20000
 Timestamp | string | Last time the configuration was seen on the device | 2020-11-03 10:13:34.8476880
