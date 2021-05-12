@@ -31,6 +31,20 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 > Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](/office365/admin/whats-new-in-preview)<br>[What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)<br>[What's new in Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## April 2021
+
+### Retention policies and retention label policies
+
+- **Retention policy**. The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the Applications parameter.
+
+### Sensitivity labels
+
+Outlook releases and updates:
+- **Built-in labeling support**. Previously supported only by the AIP unified labeling client, built-in labeling now supports [different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- **Encrypt-Only** is now supported by macOS, iOS, and Android
+- **Mandatory labeling** is rolling out to the remaining platforms
+- [Dynamic markings with all variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) are supported across all Outlook clients 
+
 ## March 2021
 
 Here are a few of the changes to Microsoft 365 compliance solutions and content for the month of March.
