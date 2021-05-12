@@ -15,6 +15,7 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates

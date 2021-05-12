@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied

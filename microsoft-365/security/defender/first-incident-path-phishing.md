@@ -61,5 +61,5 @@ See the [identity-based attack](first-incident-path-identity.md) investigation p
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
