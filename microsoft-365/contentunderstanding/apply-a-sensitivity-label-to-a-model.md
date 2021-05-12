@@ -1,5 +1,5 @@
 ---
-title: "Apply a sensitivity label to a model in SharePoint Syntex"
+title: "Apply a sensitivity label to a model in Microsoft SharePoint Syntex"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ localization_priority: Priority
 description: "Learn how to apply a sensitivity label to a model in SharePoint Syntex."
 ---
 
-# Apply a sensitivity label to a model in SharePoint Syntex
+# Apply a sensitivity label to a model in Microsoft SharePoint Syntex
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to a model in Microsoft SharePoint Syntex. You can do this for both document understanding and form processing models.
 
