@@ -43,22 +43,21 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 
 **Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
 
-- Configure and update System Center Endpoint Protection clients.
-- Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Defender for Endpoint as instructed below.
+- [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients)
+- [Install and configure Microsoft Monitoring Agent (MMA) to report sensor data](#install-and-configure-microsoft-monitoring-agent-mma)
 
 
 **Windows Server 2008 R2 SP1**
 
 You can onboard Windows Server 2008 R2 SP1 by using any of the following options:
 
-- **Option 1**: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
-- **Option 2**: Onboard through Azure Defender
-
+- **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#install-and-configure-microsoft-monitoring-agent-mma)
+- **Option 2**: [Onboard through Azure Defender](#onboard-windows-servers-through-azure-defender)
 
 After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Defender (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Defender (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
 
 
 
@@ -102,7 +101,7 @@ Review the following details to verify minimum system requirements:
 
 2. Obtain the workspace ID:
    - In the Defender for Endpoint navigation pane, select **Settings > Device management > Onboarding**
-   - Select **Windows 7 SP1 and 8.1** as the operating system
+   - Select the operating system
    - Copy the workspace ID and workspace key
 
 3. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
@@ -143,7 +142,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 1. In the Microsoft Defender Security Center navigation pane, select **Settings** > **Device management** > **Onboarding**.
 
-2. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
+2. Select **Windows Server 2008 R2 SP1** as the operating system.
 
 3. Click **Onboard Servers in Azure Security Center**.
 
