@@ -45,7 +45,7 @@ Watch a short video about connecting Windows to Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
   
 ## Join Windows 10 devices to your organization's Azure AD
 
@@ -125,4 +125,4 @@ To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Busi
   
 ## For more on setting up and using Microsoft 365 Business Premium
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../business-video/index.yml)

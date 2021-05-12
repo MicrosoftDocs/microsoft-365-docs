@@ -22,34 +22,31 @@ ms.topic: how-to
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks. You can set ASR rules for devices running any of the following editions and versions of Windows:
-- Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
-- Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
-- Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks.
 
 **Requirements**
 You can set attack surface reduction rules for devices that are running any of the following editions and versions of Windows:
 
-- Windows 10 Pro, version 1709 or later
-- Windows 10 Enterprise, version 1709 or later
-- Windows Server, version 1803 (Semi-Annual Channel) or later
-- Windows Server 2019
+- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
+- Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Although attack surface reduction rules don't require a Windows E5 license, if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true), as well as reporting and configuration capabilities in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
 
 Each ASR rule contains one of four settings:
 
 - **Not configured**: Disable the ASR rule
 - **Block**: Enable the ASR rule
 - **Audit**: Evaluate how the ASR rule would impact your organization if enabled
-- **Warn**: Enable the ASR rule but alow the end user to bypass the block
+- **Warn**: Enable the ASR rule but allow the end user to bypass the block
 
 > [!IMPORTANT]
 > Currently, warn mode is not supported for three ASR rules when you configure ASR rules in Microsoft Endpoint Manager (MEM). To learn more, see [Cases where warn mode is not supported](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
@@ -78,7 +75,6 @@ You can also exclude ASR rules from triggering based on certificate and file has
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files will be allowed to run, and no report or event will be recorded.
 > If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](evaluate-attack-surface-reduction.md).
-
 
 You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
@@ -167,6 +163,76 @@ Example:
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
 
+## Microsoft Endpoint Manager custom procedure
+
+You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom ASR rules.
+
+1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
+
+   ![MEM Create Profile](images/mem01-create-profile.png)
+
+2. In **Create a profile**, in the following two drop-down lists, select the following:
+
+   - In **Platform**, select **Windows 10 and later**
+   - In **Profile type**, select **Templates**
+
+   Select **Custom**, and then click **Create**.
+
+   ![MEM rule profile attributes](images/mem02-profile-attributes.png)
+
+3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
+
+   ![MEM basic attributes](images/mem03-1-basics.png)
+
+4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
+
+   ![MEM Configuration settings](images/mem04-2-configuration-settings.png)
+
+5. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
+
+   - In **Name**, type a name for the rule.
+   - In **Description**, type a brief description.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding.
+   - In **Data type**, select **String**.
+   - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   ![MEM OMA URI configuration](images/mem05-add-row-oma-uri.png)
+
+6. Click **Save**. **Add Row** closes. In **Custom**, click **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
+
+   - Click **Select Scope tags**, select the scope tag (optional) and then click **Next**.
+   - Or click **Next**
+
+7. In step **4 Assignments**, in **Included Groups** - for the groups that you want this rule to apply - select from the following options:
+
+   - **Add groups**
+   - **Add all users**
+   - **Add all devices**
+
+   ![MEM assignments](images/mem06-4-assignments.png)
+
+8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then click **Next**.
+
+9. In step **5 Applicability Rules** for the following settings, do the following:
+
+   - In **Rule**, select either **Assign profile if**, or **Don’t assign profile if**
+   - In **Property**, select the property to which you want this rule to apply
+   - In **Value**, enter the applicable value or value range
+
+   ![MEM Applicability rules](images/mem07-5-applicability-rules.png)
+
+10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
+
+   ![MEM Review and create](images/mem08-6-review-create.png)
+
+>[!NOTE]
+> Rules are active and live within minutes.
+
+>[!NOTE]
+> Conflict handling:
+> If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
+> Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
+
 ## PowerShell
 
 > [!WARNING]
@@ -191,6 +257,12 @@ Example:
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    To enable ASR Block abuse of exploited vulnerable signed drivers, use the following cmdlet:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     To turn off ASR rules, use the following cmdlet:
 

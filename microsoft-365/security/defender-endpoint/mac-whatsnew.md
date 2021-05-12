@@ -33,10 +33,14 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.27.50 (20.121022.12750.0)
+
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Threat & Vulnerability Management (TVM) functionality.
+
 ## 101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
+- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes.
 
 ## 101.23.64 (20.121021.12364.0)
 

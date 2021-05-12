@@ -26,7 +26,7 @@ To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Serv
 
 ## Overview of DLP for Microsoft Teams
 
-Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages**. 
+Recently, [data loss prevention](dlp-learn-about-dlp.md) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages**. 
 
 > [!IMPORTANT]
 > DLP currently applies only to the actual messages in the chat or channel thread. Activity notifications -- which include a short message preview and appear based on a user's notification settings -- are **not** included in Teams DLP at this time. Any sensitive information present in the part of the message that appears in the preview will remain visible in the notification even after the DLP policy has been applied and removed sensitive information the message itself.
@@ -56,8 +56,6 @@ Returning to our example, where a sender shared a social security number in a Te
 
 > [!div class="mx-imgBorder"]
 > ![Message blocked](../media/dlp-teams-blockedmessage-notification-to-user.png)
-
-The **What's this?** link opens an [article](data-loss-prevention-policies.md) about DLP policies, which helps explain why the message was blocked.
 
 ### To customize policy tips
 
@@ -107,7 +105,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
 
     1. up to 1000 individual accounts to include or exclude
-    1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
+    1. distribution lists and security groups to include or exclude. 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. Then choose **Next**.
