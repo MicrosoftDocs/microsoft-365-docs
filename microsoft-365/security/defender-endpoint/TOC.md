@@ -60,7 +60,6 @@
 
 ##### [Onboard Windows 7 and 8.1 devices](onboard-downlevel.md)
 
-##### [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)
 
 ##### [Onboard Windows 10, Windows Server 2012 R2, 2016, SAC version 1803, and 2019]()
 ###### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)

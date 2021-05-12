@@ -26,7 +26,7 @@ ms.technology: mde
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Server (SAC) version 1803 and later
+- Windows Server Semi-Annual Channel
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 
@@ -49,17 +49,15 @@ You'll need to complete the following genaral steps to succesfully onboard serve
 
 ![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
 
-**Windows Server 2012 R2 SP1 and Windows Server 2016**
+**Windows Server 2012 R2 and Windows Server 2016**
 - Download installation and onboarding packages
 - Install application
 - Follow the onboarding steps for the corresponding tool
 
-**Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition**
+**Windows Server Semi-Annual Channel**
 
 - Download the onboarding package
 - Follow the onboarding steps  or the corresponding tool
-
-
 
 
 
@@ -78,12 +76,6 @@ Verify that you have installed the following hotfix:
 
 Verify that Microsoft Defender Antivirus is installed and is active.
 
-> [!NOTE]
-> If System Center Endpoint Protection (SCEP) is installed on a machine, it must be removed first, otherwise the installation will not proceed. For instructions on environments with managed SCEP, refer to MECM migration scenarios. 
-
-
-
-
 ### Download installation and onboarding packages 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
@@ -101,7 +93,8 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 
 
-## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+## Windows Server Semi-Annual Channel
+
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
@@ -141,13 +134,22 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
 ## Verify onboarding
 
+Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are running. 
+
+> [!NOTE]
+> Running Microsoft Defender AV is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
+
 1. Run the following command to verify that Microsoft Defender AV is installed:
+
+    >[!NOTE]
+    >This verifcation step is only required if you're using Microsoft Defender AV as your active antimalware solution. 
 
    ```sc.exe query Windefend```
 
     If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus).
+
 
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
@@ -161,9 +163,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ## Offboard Windows servers
 
-You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
-
-
+You can offboard servers in the same method available for other Windows devices. Following the offboarding steps provided within the guidance on each of the management tools. 
 
 
 ## Related topics
