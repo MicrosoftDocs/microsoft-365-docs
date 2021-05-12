@@ -29,7 +29,7 @@ Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany"
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
 > [!NOTE]
-> The migration of Azure services is not part of this documentation. Please refer to the [Migration guidance for Azure Germany](https://docs.microsoft.com/en-us/azure/germany/germany-migration-main).
+> The migration of Azure services is not part of this documentation. Please refer to the [Migration guidance for Azure Germany](/azure/germany/germany-migration-main).
 
 |Step|Duration|Responsible party|Description|
 |:--------|:--------|:--------|:--------|
