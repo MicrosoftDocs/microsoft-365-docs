@@ -66,7 +66,7 @@ These questions must be asked before the underlying group is deleted because exp
 
 **Guests**
 
-When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially utilize features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
+When guests are invited to a team, a guest account is created in the host organization’s Azure Active Directory before adding them to the team. When a team is deleted, guests aren't removed from Azure Active Directory. While guests can't access groups, sites, teams, or content which hasn't been shared with them, they can still potentially use features within Microsoft Teams such as initiating chats, voice and video calls, and using apps.
 
 A team or group owner can invite someone from outside the organization to become a guest in Azure Active Directory by adding them to a team. A team owner can't, however, remove the guest from Azure Active Directory. Deleting accounts can only be performed by a global admin or user admin.
 
@@ -135,7 +135,7 @@ In scenarios where some of the contents of the notebook need only to be retained
 
 ## Mailbox and calendar
 
-it's not uncommon for the group-associated mailbox to be utilized, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
+It's not uncommon for the group-associated mailbox to be used, even though many conversations may have been conducted within team channels. The mailbox only stores emails that were emailed directly to it and does not include emails that were sent directly to channels.
 
 In some cases, the emails stored within the mailbox may be notifications of meetings, Planner task updates, and other app or system-generated messages. it's important that the contents of the mailbox be reviewed to determine whether the content should be retained or deleted.
 
@@ -221,7 +221,7 @@ It's important when removing files from a group or team to consider that they ma
 
 **Download files**
 
-In the case of files stored within SharePoint in one of the libraries mentioned above, these can be [downloaded to a local computer](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05).
+Files stored in SharePoint in one of the libraries mentioned above can be [downloaded to a local computer](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05).
 
 **Move files**
 
