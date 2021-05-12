@@ -91,8 +91,6 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 
-
-
 ## Windows Server Semi-Annual Channel
 
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
