@@ -17,7 +17,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn how to upgrade from Microsoft Teams Free to a new Microsoft 365 for business subscription."
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020

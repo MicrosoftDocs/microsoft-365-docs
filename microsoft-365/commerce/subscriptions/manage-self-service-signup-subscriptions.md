@@ -15,7 +15,7 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- commerce_subscriptions
+- commerce_subscriptions 
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
 ms.date: 03/17/2021
