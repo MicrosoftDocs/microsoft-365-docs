@@ -57,9 +57,13 @@ You'll need to complete the following genaral steps to succesfully onboard serve
 **Windows Server Semi-Annual Channel**
 
 - Download the onboarding package
-- Follow the onboarding steps  or the corresponding tool
+- Follow the onboarding steps for the corresponding tool
 
 
+## Integration with Azure Defender
+Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as an Azure Defender customer. 
+
+For more information, see [Integration with Azure Defender](azure-server-integration.md).
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -91,7 +95,7 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 
-## Windows Server Semi-Annual Channel
+## Windows Server Semi-Annual Channel and Windows Server 2019
 
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 

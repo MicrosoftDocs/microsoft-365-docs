@@ -116,6 +116,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 
 ## For downlevel SKUs
+The following guidance applies to Windows 2008 R2, Windows 7, and Windows 8.1. endpoints only. 
+
+
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
