@@ -59,15 +59,12 @@ On certain versions of Windows, Microsoft Defender Antivirus is likely uninstall
 
 The tasks in this section help ensure that Microsoft Defender Antivirus is installed or enabled and in passive mode.
 
-- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)
 
-- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)
+|Endpoints  |Tasks  |
+|---------|---------|
+|Windows servers     | [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary) <p>[Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server) <p>[Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
+|Windows clients     | [Enable Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices) <p>[Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-windows-client-devices)   |
 
-- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
-
-- [Enable Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices)
-
-- [Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-windows-client-devices). 
 
 ### Set DisableAntiSpyware to false on Windows Server
 
