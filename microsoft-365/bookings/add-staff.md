@@ -82,14 +82,18 @@ You may want to add a person to your staff list in Bookings without making them 
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-Here's an example to add Allie Bellew to the Contoso daycare booking mailbox.
+Here's an example PowerShell command to add Allie Bellew to the Contoso daycare booking mailbox.
+
+1. First run this command:
 
     ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
     ```
 
+2. Then run this command:
+
     ```powershell
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-**Allie Bellew** now has administrator access but doesn't appear as bookable staff in Bookings.
+**Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.
