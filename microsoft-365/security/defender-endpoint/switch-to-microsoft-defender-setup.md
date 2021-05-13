@@ -67,7 +67,7 @@ The tasks in this section help ensure that Microsoft Defender Antivirus is insta
 
 - [Enable Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices)
 
-- [Confirm that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
+- [Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-windows-client-devices). 
 
 ### Set DisableAntiSpyware to false on Windows Server
 
@@ -94,7 +94,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 > - Windows Server 2019
 > - Windows Server, version 1803 (core-only mode)
-> - Windows Server 2016 (see [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
+> - Windows Server 2016 (see the following section, [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
@@ -156,7 +156,7 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 |Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.        |
 |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. Go to **Computer configuration** > **Administrative templates** > **Windows components** > **Microsoft Defender Antivirus**. <p> 2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<p> 3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows. |
 
-### Check to see if Microsoft Defender Antivirus is in passive mode on your Windows client devices
+### Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices
 
 You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
