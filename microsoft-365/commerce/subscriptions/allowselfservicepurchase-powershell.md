@@ -38,6 +38,7 @@ You can use the **MSCommerce** PowerShell module to:
 To use the **MSCommerce** PowerShell module, you need:
 
 - A Windows 10 device
+- PowerShell 5 or below. Currently, PowerShell 6.x/7.x isn't supported with this module.
 - Administrator permission for the device
 - Global or Billing Admin role for your tenant
 
