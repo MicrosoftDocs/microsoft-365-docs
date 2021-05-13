@@ -12,6 +12,7 @@ ms.pagetype: security
 localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
