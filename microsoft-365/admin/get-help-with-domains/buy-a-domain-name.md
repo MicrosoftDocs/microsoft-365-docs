@@ -111,10 +111,10 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
     
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[Add a domain to Microsoft 365](../setup/add-domain.md)
+[Add a domain to Microsoft 365](../setup/add-domain.md) (article)
 
-[Domains FAQ](../setup/domains-faq.yml)
+[Domains FAQ](../setup/domains-faq.yml) (article)
 
-[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md).
+[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md) (article)
