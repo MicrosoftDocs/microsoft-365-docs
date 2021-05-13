@@ -16,7 +16,7 @@ ms.topic: article
 Microsoft Managed Desktop will assign devices to the various deployment groups, but you can specify or change group a device is assigned to a device by using the Admin portal. You change the assignment after a device is registered or after a user has enrolled.
 
 > [!IMPORTANT]
-> If you change the assignment after a user has enrolled, policies that are specific to that group will be applied to the device. The change will install the latest version of Windows 10 (including any new feature or quality updates) and will restart the device.{SHOULD WE ADVISE THE ADMIN TO WARN THE USERS ABOUT THE RESTART?} Double-check that you've selected the right devices to assign. It can take up to 24 hours for the assignment to take effect.
+> If you change the assignment after a user has enrolled, policies that are specific to that group will be applied to the device. The change might install the latest version of Windows 10 (including any new feature or quality updates) and will restart the device.{SHOULD WE ADVISE THE ADMIN TO WARN THE USERS ABOUT THE RESTART?} Double-check that you've selected the right devices to assign. It can take up to 24 hours for the assignment to take effect.
 
 To assign devices to a deployment group, follow these steps. If you want to move separate devices to different groups, repeat these steps for each group.
 
