@@ -51,14 +51,19 @@
             - name: Enable the evaluation 
               href: eval-defender-office-enable-eval.md
             - name: Pilot Defender for Office
-              href: eval-defender-office-pilot.md
-            - name: Promote the trial to production
-              href: eval-defender-office-production.md             
+              href: eval-defender-office-pilot.md        
         - name: Defender for Endpoint
           items: 
             - name: Overview
               href: eval-defender-endpoint-overview.md         
-        - name: Investigate and respond                              
+        - name: Investigate and respond    
+          items:
+            - name: Overview
+              href: eval-defender-investigate-respond.md  
+            - name: Generate a test alert
+              href: generate-test-alert.md      
+        - name: Promote the trial to production
+          href: eval-defender-office-production.md                    
     - name: Get started
       items:
         - name: Overview

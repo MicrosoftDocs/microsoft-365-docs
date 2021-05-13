@@ -1,5 +1,5 @@
 ---
-title: Promote Microsoft Defender for Office to Production
+title: Promote your Microsoft Defender evaluation environment to Production
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -23,13 +23,18 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Promote Microsoft Defender for Office to production
-
-
+# Promote your Microsoft Defender evaluation environment to production
 
 
 **Applies to:**
 - Microsoft 365 Defender
+
+intro
+
+process
+
+Defender for Identity doesn't need to be promoted, already in production. For the others . . .
+# Microsoft Defender for Office 365
 
 After successfully evaluating or piloting MDO, it can be promoted to your entire production environment.
 1. Purchase and provision the necessary licenses and assign them to your production users.
@@ -37,3 +42,8 @@ After successfully evaluating or piloting MDO, it can be promoted to your entire
 1. Optionally create and configure any custom MDO policies against your production email domain or groups of users.  However, remember that any assigned baseline polies will always take precedence over custom policies.
 1. Update the public MX record for your production email domain to resolve directly to EOP.
 1. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.
+
+## Microsoft Defender for Endpoint
+
+
+## Microsoft Cloud App Security
