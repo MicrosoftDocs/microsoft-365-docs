@@ -165,7 +165,7 @@ Select **Save** to save any changes.
 
 ### Viewing and disposing of content
 
-When a reviewer is notified by email that content is ready to review, they go to the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center. The reviewers can see how many items for each retention label are awaiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
+When a reviewer is notified by email that content is ready to review, they can click a link in the email that takes them directly to the **Disposition** page from **Records management** in the Microsoft 365 compliance center. There, the reviewers can see how many items for each retention label are waiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
 
 ![Open in new window for disposition review](../media/open-in-new-window.png)
 
@@ -196,7 +196,7 @@ During a disposition review, the content never moves from its original location,
 
 ## Disposition of records
 
-Use the **Disposition** tab from the **Records Management** page to identify:
+Use the **Disposition** tab from the **Records management** page to identify:
 
 - Items deleted as a result of a disposition review.
 - Items marked as a record or regulatory record that were automatically deleted at the end of their retention period.
