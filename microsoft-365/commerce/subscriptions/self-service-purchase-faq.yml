@@ -6,15 +6,16 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
+  ms.reviewer: mijeffer, pablom
   audience: Admin
   ms.topic: article
   ms.service: o365-administration 
   localization_priority: Normal
-  ms.collection:
-  - commerce 
+  ms.collection: M365-subscription-management
   ms.custom: 
   - AdminSurgePortfolio
   - aka.ms/self-service-purchase-faq
+  - commerce_ssp
   search.appverid:
   - MET150
   description: "Find answers to commonly asked questions about self-service purchases."
