@@ -3031,11 +3031,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/learn-about-spoof-intelligence",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/isolated-sharepoint-online-team-sites.md",
       "redirect_url": "/microsoft-365/solutions/secure-teams-security-isolation",
       "redirect_document_id": false

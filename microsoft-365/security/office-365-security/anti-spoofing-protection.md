@@ -162,7 +162,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
     When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
 
-  - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as discussed in the [Use spoof intelligence to configure permitted senders of unauthenticated email](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
+  - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
   - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).
 

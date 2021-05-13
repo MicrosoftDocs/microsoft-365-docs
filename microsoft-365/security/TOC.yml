@@ -631,19 +631,19 @@
         - name: FAQ
           items: 
             - name: Delegated administration FAQ
-              href: ./office-365-security/delegated-administration-faq.md
+              href: ./office-365-security/delegated-administration-faq.yml
             - name: EOP general FAQ
-              href: ./office-365-security/eop-general-faq.md
+              href: ./office-365-security/eop-general-faq.yml
             - name: EOP queued, deferred, and bounced messages FAQ
-              href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
+              href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml
             - name: Anti-malware protection FAQ
-              href: ./office-365-security/anti-malware-protection-faq-eop.md
+              href: ./office-365-security/anti-malware-protection-faq-eop.yml
             - name: Anti-spam protection FAQ
-              href: ./office-365-security/anti-spam-protection-faq.md
+              href: ./office-365-security/anti-spam-protection-faq.yml
             - name: Anti-spoofing protection FAQ
-              href: ./office-365-security/anti-spoofing-protection-faq.md
+              href: ./office-365-security/anti-spoofing-protection-faq.yml
             - name: Quarantine FAQ
-              href: ./office-365-security/quarantine-faq.md
+              href: ./office-365-security/quarantine-faq.yml
         - name: Reference
           items: 
             - name: Understanding latest attacks with threat analytics
