@@ -24,6 +24,16 @@ ms.prod: m365-security
 
 # Impersonation insight in Defender for Office 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are not available in all organizations.
+
 Impersonation is where the sender of an email message looks very similar to a real or expected sender email address. Attackers often user impersonated sender email addresses in phishing or other types of attacks in an effort to gain the trust of the recipient. There are basically two types of impersonation:
 
 - **Domain impersonation**: Instead of lila@contoso.com, the impersonated sender's email address is lila@ćóntoso.com.

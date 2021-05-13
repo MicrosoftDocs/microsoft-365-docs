@@ -242,6 +242,9 @@ To go back to the report view, click **View report**.
 
 ## Spoof detections report
 
+> [!NOTE]
+> The improved Spoof detections report as described in this section is in Preview, is subject to change, and is not available in all organizations. The old report only showed **Good mail** and **Caught as spam**.
+
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
 The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.

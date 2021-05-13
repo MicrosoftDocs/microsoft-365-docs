@@ -30,7 +30,7 @@ ms.prod: m365-security
 
 > [!NOTE]
 >
-> The features described in this article are in Preview, are subject to change, and are not available in all organizations.
+> The features described in this article are in Preview, are subject to change, and are not available in all organizations. For the older spoof management experience, see [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 >
 > You can't **configure** allowed URL or file items in the Tenant Allow/Block List at this time.
 

@@ -126,7 +126,10 @@ Unauthenticated sender settings are part of the [Spoof settings](#spoof-settings
 
 - **Enable unauthenticated sender question mark (?) symbol?**: When this setting is turned on, a question mark is added to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
 
-- **Enable "via" tag?**: When this setting is turned on, the via tag (chris@contoso.com <u>via</u> fabrikam.com) is added in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- **Enable "via" tag?**<sup>\*</sup>: When this setting is turned on, the via tag (chris@contoso.com <u>via</u> fabrikam.com) is added in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+
+> [!NOTE]
+> Currently, the separate **Enable "via" tag?** setting is not available in all organizations. If you don't see the **Enable "via" tag?** setting, the via tag **and** the question mark are both controlled by the **Enable unauthenticated sender question mark (?) symbol?** setting.
 
 To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
 
