@@ -36,7 +36,17 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to Phase 3 of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
+1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 
+2. [Run a detection test](#run-a-detection-test).
+
+3. [Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
+
+4. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+
+5. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution). 
+
+6. [Make sure Microsoft Defender Antivirus is running and in active mode](#make-sure-microsoft-defender-antivirus-is-running-and-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
@@ -50,7 +60,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ### Onboarding methods
  
-Deployment methods vary, depending on which operating system is selected. Refer to the resources listed in the table below to get help with onboarding.
+Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
 
 |Operating systems  |Methods  |
 |---------|---------|
@@ -115,7 +125,6 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 - Product updates
 
 To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
-
 
 ## Uninstall your non-Microsoft solution
 
