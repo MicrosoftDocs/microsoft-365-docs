@@ -271,13 +271,13 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 ## Offboard endpoints
 
-You have two options to offboard Windows servers from the service:
+You have two options to offboard Windows endpoints from the service:
 
 - Uninstall the MMA agent
 - Remove the Defender for Endpoint workspace configuration
 
 > [!NOTE]
-> Offboarding causes the Windows server to stop sending sensor data to the portal but data from the Windows server, including reference to any alerts it has had will be retained for up to 6 months.
+> Offboarding causes the Windows endpoint to stop sending sensor data to the portal but data from the endpoint, including reference to any alerts it has had will be retained for up to 6 months.
 
 ### Uninstall the MMA agent
 
@@ -286,7 +286,7 @@ For more information, see [To disable an agent](/azure/log-analytics/log-analyti
 
 ### Remove the Defender for Endpoint workspace configuration
 
-To offboard the Windows server, you can use either of the following methods:
+You can use either of the following methods:
 
 - Remove the Defender for Endpoint workspace configuration from the MMA agent
 - Run a PowerShell command to remove the configuration
