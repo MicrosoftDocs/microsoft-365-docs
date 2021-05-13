@@ -13,16 +13,16 @@ ms.topic: article
 
 # Device deployment groups
 
-Microsoft Managed Desktop uses deployment groups to manage the release of updates and configuration changes to devices. Devices are added to deployment groups ("rings") automatically when they are enrolled into Microsoft Managed Desktop. Deployment rings allow for devices to receive changes in a staggered timeline.
+Microsoft Managed Desktop uses deployment groups to manage the release of updates and configuration changes to devices. Devices are added to deployment groups ("rings" or "update groups") automatically when they are enrolled into Microsoft Managed Desktop. Deployment rings allow for devices to receive changes in a phased timeline.
 
 You might want to assign certain devices for test purposes only, or designate specific early adopters to receive the changes first. If you have critical devices such as those used by executives or that do business-critical functions, you might want to keep those in the group that gets updates on the slowest cadence. Microsoft Managed Desktop allows you to specify that a device should stay in any one of the following groups.
 
 - **Test**: best for devices that used for testing or users who can provide early feedback. This group receives changes frequently and feedback from here has high impact. Microsoft Managed Desktop won't automatically assign devices to this group; it will only have devices you specify.
-- **First**: ideal for early adopters, friends of IT {NOT SURE WHAT THIS MEANS?}, IT Pros, or representatives of business functions, that is, people who can validate changes and provide feedback, to drive adoption.
+- **First**: ideal for early adopters, volunteer or designated validators, IT Pros, or representatives of business functions, that is, people who can validate changes and provide feedback, to drive adoption.
 - **Broad** receives changes last. Most of your organization will probably be here. You can also specify devices that should only receive changes last because they're doing business critical functions or belong to users in critical roles. If you assign a device to this group, Microsoft Managed Desktop won't automatically assign them to other groups.
-- **Automatic**: select this option when you want Microsoft Managed Desktop to automatically assign devices to groups {DO YOU WANT TO TALK ABOUT HOW MMD DECIDES THIS?}. (We won't automatically assign devices to Test.) If you want to release a device that you've previously specified so it can be automatically assigned again, just assign it to this group. 
+- **Automatic**: select this option when you want Microsoft Managed Desktop to automatically assign devices to groups. (We won't automatically assign devices to Test.) If you want to release a device that you've previously specified so it can be automatically assigned again, just select this option. 
 
-Microsoft Managed Desktop uses some additional groups to control deployments, but you won't be able to assign devices to them.{OR REMOVE DEVICES FROM THEM?}
+Microsoft Managed Desktop uses some additional groups to control deployments, but you won't be able to assign devices to them. You can, however, move devices from those groups to one of the other groups in this article. For more information about how Windows updates are managed in groups, see [How updates are handled in Microsoft Managed Desktop](updates.md).
 
 If a device is in a group you've specified, **Group assigned by** will say **Admin**. If Microsoft Managed Desktop has assigned the group, it will say **Auto**. While a device is in the process of moving to a group, it will say **Pending**.
 

@@ -18,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 <!--Update management -->
 
-Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business applications up to date is a balance of speed and stability. Deployment groups will be used to ensure operating system updates and policies are rolled out in a safe manner. For more information, see the video [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
+Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business applications up to date is a balance of speed and stability. We use update groups to ensure operating system updates and policies are rolled out in a safe manner. For more information, see the video [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP). 
 
 Updates released by Microsoft are cumulative and are categorized as quality or feature updates.
 For more information, see [Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
@@ -33,15 +33,12 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Broad**: Last group to have feature and quality updates available. This group contains most of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
 ### Moving devices between update groups
-You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) and we will move the devices for you. 
-
-> [!NOTE]
-> If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself. There are serious consequences if a device is moved incorrectly. The device could update unexpectedly and policies might conflict, changing the device configuration.
+You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, see [Assign devices to a deployment group](../get-started/assign-deployment-group.md).
 
 For more information on roles and responsibilities within these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 
 ### Using Microsoft Managed Desktop update groups 
-There are parts of the service that you manage, like app deployment, where it might be necessary to target all managed devices. In these instances, it makes sense to use update groups to reach those users with the understanding that you cannot add, remove, or change the membership of those groups. 
+There are parts of the service that you manage, like app deployment, where it might be necessary to target all managed devices.
 
 ## How update deployment works:
 1. Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified in the following table.
@@ -52,8 +49,6 @@ There are parts of the service that you manage, like app deployment, where it mi
 3. Once the groups are un-paused, deployment resumes according to the schedule in the table.
 
 This deployment process applies to both feature and quality updates, though the timeline varies for each.
-
-
 
 
 <table>
