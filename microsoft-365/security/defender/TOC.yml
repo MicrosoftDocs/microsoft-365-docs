@@ -61,7 +61,9 @@
             - name: Overview
               href: eval-defender-investigate-respond.md  
             - name: Generate a test alert
-              href: generate-test-alert.md      
+              href: generate-test-alert.md    
+            - name: Simulate attacks
+              href: m365d-pilot-simulate    
         - name: Promote the trial to production
           href: eval-defender-office-production.md                    
     - name: Get started
