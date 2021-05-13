@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/11/2021
+ms.date: 05/13/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -82,9 +82,9 @@ Now that you have onboarded your organization's devices to Microsoft Defender fo
 
 To get help with this step, reach out to your solution provider's technical support team.
 
-## Make sure Microsoft Defender for Endpoint is in active mode
+## Make sure Microsoft Defender Antivirus is running and in active mode
 
-Now that you have uninstalled your non-Microsoft endpoint protection solution, your next step is to make sure that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are enabled and in active mode.
+Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Microsoft Defender Antivirus is running and in active mode.
 
 To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
