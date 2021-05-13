@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,10 +18,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jamitche
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn how to manage your payment methods in the Microsoft 365 admin center."
 ms.date: 04/02/2021
 ---

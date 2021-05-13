@@ -10,7 +10,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
@@ -50,7 +50,7 @@ In general, you can use the following procedure to configure or change Microsoft
 The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable). 
 
 > [!TIP]
-> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure these policy settings when you edit Group Policy Objects.
+> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure refer to the spreadsheet when you edit Group Policy Objects.
 
 | Location | Setting | Article |
 |:---|:---|:---|

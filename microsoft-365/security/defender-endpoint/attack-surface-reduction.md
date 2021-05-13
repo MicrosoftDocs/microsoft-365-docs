@@ -23,9 +23,10 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Why attack surface reduction rules are important
 
@@ -154,6 +155,7 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 
 |Rule name|GUID|File & folder exclusions|Minimum OS supported|
 |---|:---:|---|---|
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
@@ -170,6 +172,33 @@ If you are configuring attack surface reduction rules by using Group Policy or P
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Supported|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) or greater|
 |
+
+### Block abuse of exploited vulnerable signed drivers
+
+This rule prevents an application from writing a vulnerable, signed driver to disk. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Vulnerable signed drivers enable attackers to disable or circumvent security solutions, eventually leading to system compromise.
+
+This rule does not block a driver already existing on the system from being loaded.
+
+This rule is supported in all versions in which ASR is supported; which is:
+
+- [Windows 10 Pro, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- [Windows 10 Enterprise, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later
+- [Windows Server, version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune Name: `Block abuse of exploited vulnerable signed drivers`
+
+GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+See [Microsoft Endpoint Manager custom procedure](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) for MEM custom rules procedure information.
+
+You can run this command in the command line to enable the ASR rule:
+
+```powershell
+"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+```
+
+You can use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 ### Block Adobe Reader from creating child processes
 

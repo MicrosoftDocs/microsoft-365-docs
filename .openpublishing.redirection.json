@@ -3092,8 +3092,13 @@
     },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-appfileevents-table.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-appfileevents-table",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-cloudappevents-table",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/advanced-hunting-appfileevents-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-cloudappevents-table",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-assignedipaddresses-function.md",
@@ -3844,6 +3849,11 @@
       "source_path": "microsoft-365-docs-pr/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-windows-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/customer-key-tenant-level.md",
+      "redirect_url": "/microsoft-365/compliance/customer-key-overview",
+      "redirect_document_id": false
     }
   ]
 }

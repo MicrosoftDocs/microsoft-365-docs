@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,11 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 04/02/2021
 ---

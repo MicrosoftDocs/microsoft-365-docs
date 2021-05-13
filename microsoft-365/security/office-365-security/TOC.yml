@@ -194,6 +194,8 @@
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
        href: report-junk-email-messages-to-microsoft.md
+     - name: Enable the Report Message and the Report Phishing add-ins
+       href: enable-the-report-message-add-in.md
      - name: Use mail flow rules to block messages with executable attachments in EOP
        href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
      - name: Use mail flow rules to filter bulk email in EOP
@@ -301,19 +303,19 @@
    - name: FAQ
      items: 
      - name: Delegated administration FAQ
-       href: delegated-administration-faq.md
+       href: delegated-administration-faq.yml
      - name: EOP general FAQ
-       href: eop-general-faq.md
+       href: eop-general-faq.yml
      - name: EOP queued, deferred, and bounced messages FAQ
-       href: eop-queued-deferred-and-bounced-messages-faq.md
+       href: eop-queued-deferred-and-bounced-messages-faq.yml
      - name: Anti-malware protection FAQ
-       href: anti-malware-protection-faq-eop.md
+       href: anti-malware-protection-faq-eop.yml
      - name: Anti-spam protection FAQ
-       href: anti-spam-protection-faq.md
+       href: anti-spam-protection-faq.yml
      - name: Anti-spoofing protection FAQ
-       href: anti-spoofing-protection-faq.md
+       href: anti-spoofing-protection-faq.yml
      - name: Quarantine FAQ
-       href: quarantine-faq.md
+       href: quarantine-faq.yml
    - name: Reference
      items: 
      - name: Security roadmap
