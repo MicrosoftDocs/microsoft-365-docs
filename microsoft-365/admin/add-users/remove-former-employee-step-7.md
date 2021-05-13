@@ -38,7 +38,13 @@ After you've saved and accessed all the former employee's user data, you can del
 3. Under the user's name, select **Delete user**. Choose the options you want for this user, and then select **Delete user**. If you've already given another user access to this user's email and OneDrive, you don't have to do it again here.
 
 When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
-  
+
+## Watch: Delete a former employee's user account
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+
 ## Does your organization use Active Directory?
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
