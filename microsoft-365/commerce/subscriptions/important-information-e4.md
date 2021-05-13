@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: customer-email
-search.appverid:
-- MET150
+ms.custom: 
+- customer-email
+- commerce_subscriptions
+search.appverid: MET150
 description: "Important information about upgrading or changing plans for customers with an Office 365 E4 subscription."
-ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 08/14/2020
 ---
 
 # Important information for Office 365 E4 customers

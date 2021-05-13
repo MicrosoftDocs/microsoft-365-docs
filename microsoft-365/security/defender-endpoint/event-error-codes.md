@@ -298,13 +298,13 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender for Endpoint WDATP component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception message: %4</td>
+<td>Microsoft Defender for Endpoint component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception message: %4</td>
 <td>Internal error. The service failed to start.</td>
 <td>If this error persists, contact Support.</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender for Endpoint WDATP component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception Error: %4, Exception message: %5</td>
+<td>Microsoft Defender for Endpoint component failed to perform action. Component: %1, Action: %2, Exception Type: %3, Exception Error: %4, Exception message: %5</td>
 <td>Internal error. The service failed to start.</td>
 <td>If this error persists, contact Support.</td>
 </tr>
@@ -479,13 +479,13 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
    <td>81</td>
-   <td>Failed to create Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1</td>
+   <td>Failed to create Microsoft Defender for Endpoint ETW autologger. Failure code: %1</td>
    <td>Failed to create the ETW session.</td>
    <td>Reboot the device. If this error persists, contact Support.</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>Failed to remove Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1</td>
+   <td>Failed to remove Microsoft Defender for Endpoint ETW autologger. Failure code: %1</td>
    <td>Failed to delete the ETW session.</td>
    <td>Contact Support.</td>
 </tr>
@@ -497,7 +497,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
    <td>85</td>
-   <td>Failed to trigger Windows Defender Advanced Threat Protection executable. Failure code: %1</td>
+   <td>Failed to trigger Microsoft Defender for Endpoint executable. Failure code: %1</td>
    <td>Starring SenseIR executable failed.</td>
    <td>Reboot the device. If this error persists, contact Support.</td>
 </tr>
@@ -551,19 +551,19 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender Advanced Threat Protection executable has started</td>
+   <td>Microsoft Defender for Endpoint executable has started</td>
    <td>The SenseCE executable has started.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender Advanced Threat Protection executable has ended</td>
+   <td>Microsoft Defender for Endpoint executable has ended</td>
    <td>The SenseCE executable has ended.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender Advanced Threat Protection Init has called. Result code: %2</td>
+   <td>Microsoft Defender for Endpoint Init has called. Result code: %2</td>
    <td>The SenseCE executable has called MCE initialization.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>
@@ -587,19 +587,19 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 device
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender Advanced Threat Protection executable failed to start. Failure code: %1</td>
+   <td>Microsoft Defender for Endpoint executable failed to start. Failure code: %1</td>
    <td>The SenseCE executable has failed to start.</td>
    <td>Reboot the device. If this error persists, contact Support.</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender Advanced Threat Protection Network Detection and Response executable has started</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response executable has started</td>
    <td>The SenseNdr executable has started.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender Advanced Threat Protection Network Detection and Response executable has ended</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response executable has ended</td>
    <td>The SenseNdr executable has ended.</td>
    <td>Normal operating notification; no action required.</td>
 </tr>

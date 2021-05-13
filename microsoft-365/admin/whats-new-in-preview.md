@@ -78,7 +78,7 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+To learn more about the new features, check out [Message center](manage/message-center.md).
 
 ### What's new features
 
@@ -227,7 +227,7 @@ A few months ago, we added a setting that lets you manage the What's New message
 
 ### Docs, training, and videos (June)
 
-- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Getting started with Teams](../business-video/get-started-teams-small-business.md)
 
 ## May 2020
 
@@ -330,19 +330,19 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Schedule a meeting](../business-video/schedule-guest-meeting.md)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Create a Team with guests](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Join a Team as a guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Create a group email address](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Create an org-wide team](../business-video/org-wide-team.md)
+- [Create a Team with guests](../business-video/team-with-guests.md)
+- [Join a Team as a guest](../business-video/join-team-guest.md)
+- [Create a group email address](../business-video/group-email.md)
 
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Sign up for Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Setting up two-factor sign-in](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Running a remote small business](../business-video/sign-up.md)
+- [Sign up for Microsoft Business Basic](../business-video/sign-up.md)
+- [Setting up two-factor sign-in](../business-video/sign-up.md)
 
 ## March 2020
 

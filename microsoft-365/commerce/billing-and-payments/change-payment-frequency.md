@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,15 +13,14 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+search.appverid: MET150
 description: "Learn how to change how frequently you're billed for your business subscription."
+ms.date: 04/02/2021
 ---
 
 # Change your billing frequency

@@ -1,7 +1,7 @@
 ---
-title: Resources for Microsoft Defender for Endpoint for Mac
-description: Resources for Microsoft Defender for Endpoint for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Resources for Microsoft Defender for Endpoint on Mac
+description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,6 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -54,6 +55,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -63,6 +65,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -83,8 +86,7 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 ### From the command line
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## Configuring from the command line
 

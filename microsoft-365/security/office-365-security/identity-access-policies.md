@@ -50,18 +50,18 @@ The rest of this article describes how to configure these policies.
 
 To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated levels of protection can be implemented at any time.
 
-|Protection level|Policies|More information|
-|---|---|---|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||
-||[Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|
-||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|
-||[Apply app data protection policies](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|
-||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|
-||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|
-||[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or MacOS.|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||
-||[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|
-|**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
+|Protection level|Policies|More information|Licensing|
+|---|---|---|---|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+||[Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|Microsoft 365 E3 or E5|
+||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+||[Apply Application Protection Policies (APP) data protection](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
+||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
+||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|Microsoft 365 E3 or E5|
+||[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or MacOS.|Microsoft 365 E3 or E5|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+||[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or MacOS) and phones or tablets (iOS, iPadOS, or Android).|Microsoft 365 E3 or E5|
+|**Highly regulated**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
 |
 
 ## Assigning policies to groups and users
@@ -90,11 +90,11 @@ Be careful when applying higher levels of protection to groups and users. For ex
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
-![Screen capture for creating Microsoft 365 groups](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Example of creating a Microsoft 365 group](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## Require MFA based on sign-in risk
 
-You should have your users register for MFA prior to requiring its use. If you have Microsoft 365 E5, Microsoft 365 E3 with the Identity & Threat Protection add-on, Office 365 with EMS E5, or individual Azure AD Premium P2 licenses, you can use the MFA registration policy with Azure AD Identity Protection to require that users register for MFA. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
+You should have your users register for MFA prior to requiring its use. If you have Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, Office 365 with EMS E5, or individual Azure AD Premium P2 licenses, you can use the MFA registration policy with Azure AD Identity Protection to require that users register for MFA. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
 After your users are registered, you can require MFA for sign-in with a new Conditional Access policy.
 
@@ -206,7 +206,7 @@ Use this policy in conjunction with [Configure Azure AD password protection](/az
 
 ## Apply APP data protection policies
 
-App Protection Policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management.
+APPs define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management.
 
 The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 
@@ -326,12 +326,12 @@ For **System security**, see this table.
 
 |Type|Properties|Value|Action|
 |---|---|---|---|
-|Microsoft Defender for Endpoint rules|Require the device to be at or under the machine-risk score|Medium|Select|
+|Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
 |
 
 ## Require compliant PCs (but not compliant phones and tablets)
 
-Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
+Before adding a policy to require compliant PCs, be sure to enroll your devices for management in Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
 
 To require compliant PCs:
 

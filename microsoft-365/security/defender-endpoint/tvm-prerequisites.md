@@ -1,7 +1,7 @@
 ---
 title: Prerequisites & permissions - threat and vulnerability management
 description: Before you begin using threat and vulnerability management, make sure you have the relevant configurations and permissions.
-keywords: threat & vulnerability management permissions prerequisites, threat and vulnerability management permissions prerequisites, MDATP TVM permissions prerequisites, vulnerability management
+keywords: threat & vulnerability management permissions prerequisites, threat and vulnerability management permissions prerequisites, Microsoft Defender for Endpoint TVM permissions prerequisites, vulnerability management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
