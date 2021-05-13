@@ -114,24 +114,6 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 
 For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
-### Set Microsoft Defender Antivirus to passive mode on Windows Server
-
-> [!IMPORTANT]
-> You can set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019. But passive mode is not supported on Windows Server 2016. To learn more, see [Antivirus solution compatibility with Microsoft Defender for Endpoint](defender-compatibility.md).
-
-1. Open Registry Editor, and then navigate to <br/>
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
-
-2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
-   - Set the DWORD's value to **1**.
-   - Under **Base**, select **Hexadecimal**.
-
-> [!NOTE]
-> You can use other methods to set the registry key, such as the following:
->- [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
->- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
->- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
-
 ## Configure Microsoft Defender Antivirus for your endpoints
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:

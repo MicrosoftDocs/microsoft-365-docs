@@ -72,7 +72,29 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <p>For more information, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <p>For more information, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
-### Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices
+## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
+
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You'll have to configure passive mode manually on Windows Server. Microsoft Defender Antivirus should be in passive mode automatically on your Windows client endpoints.
+
+### Set Microsoft Defender Antivirus on Windows Server to passive mode manually
+
+> [!IMPORTANT]
+> You can set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019. But passive mode is not supported on Windows Server 2016. To learn more, see [Antivirus solution compatibility with Microsoft Defender for Endpoint](defender-compatibility.md).
+
+1. Open Registry Editor, and then navigate to <br/>
+   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+   - Set the DWORD's value to **1**.
+   - Under **Base**, select **Hexadecimal**.
+
+> [!NOTE]
+> You can use other methods to set the registry key, such as the following:
+>- [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+>- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
+>- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
+
+### Verify that Windows clients are running Microsoft Defender Antivirus in passive mode
 
 You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
