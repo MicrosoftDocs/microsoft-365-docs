@@ -78,6 +78,29 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 | macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <p>For more information, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
 | Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <p>For more information, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
+### Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices
+
+You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+
+|Method  |What to do  |
+|---------|---------|
+|Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
+|PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.          |
+
+> [!NOTE]
+> You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
+
+## Get updates for Microsoft Defender Antivirus
+
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+
+There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+- Security intelligence updates
+- Product updates
+
+To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+
+
 ## Uninstall your non-Microsoft solution
 
 Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall your non-Microsoft endpoint protection solution.

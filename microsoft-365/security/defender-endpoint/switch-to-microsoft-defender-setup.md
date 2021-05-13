@@ -51,9 +51,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. 
 
-- On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. Once onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode until the non-Microsoft antivirus solution is uninstalled. 
+- On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. When the client endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode until the non-Microsoft antivirus solution is uninstalled. 
 
-- On Windows Server, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus must be disabled manually.  solutionyou cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. In these cases, Microsoft Defender Antivirus is disabled manually (or even uninstalled, which is not recommended). 
+- On Windows Server, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus is disabled manually, or even uninstalled.  
 
 - For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
@@ -141,7 +141,7 @@ Because your organization is still using your existing endpoint protection solut
 >- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### Enable Microsoft Defender Antivirus on your Windows client devices
+### Configure Microsoft Defender Antivirus for your endpoints
 
 Because your organization has been using a non-Microsoft antivirus solution, Microsoft Defender Antivirus is most likely disabled on your organization's Windows devices. This step of the migration process involves enabling Microsoft Defender Antivirus. 
 
@@ -153,27 +153,6 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 |Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.        |
 |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. Go to **Computer configuration** > **Administrative templates** > **Windows components** > **Microsoft Defender Antivirus**. <p> 2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<p> 3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows. |
 
-### Confirm that Microsoft Defender Antivirus is in passive mode on your Windows client devices
-
-You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
-
-|Method  |What to do  |
-|---------|---------|
-|Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-|PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.          |
-
-> [!NOTE]
-> You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
-
-## Get updates for Microsoft Defender Antivirus
-
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
-
-There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
-- Security intelligence updates
-- Product updates
-
-To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
