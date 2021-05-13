@@ -65,6 +65,6 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 6. To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).
     
-Check out how to use group in Outlook 2016 and Outlook on the web in the [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) topic. 
+Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Check out [Distribution group issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues. 
