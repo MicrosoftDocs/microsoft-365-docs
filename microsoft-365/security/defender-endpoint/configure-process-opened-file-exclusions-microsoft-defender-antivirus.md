@@ -10,6 +10,7 @@ ms.pagetype: security
 localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
