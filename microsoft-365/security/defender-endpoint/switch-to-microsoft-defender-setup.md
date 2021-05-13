@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/11/2021
+ms.date: 05/13/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -35,7 +35,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 
-1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
+1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
 
@@ -47,25 +47,31 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
-## Enable Microsoft Defender Antivirus and confirm it's in passive mode
+## Reinstall/enable Microsoft Defender Antivirus on your endpoints
 
-On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. When you get ready to onboard your endpoints to Defender for Endpoint, Microsoft Defender Antivirus does not enter passive or disabled mode automatically. In addition, on Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. To learn more about what happens with Defender for Endpoint and antivirus solutions, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. 
 
-To help ensure that Microsoft Defender Antivirus is enabled and in passive mode, complete the following tasks described in this article:
+- On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. 
 
-- [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server)
+- On Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. In these cases, Microsoft Defender Antivirus is disabled manually (or even uninstalled, which is not recommended). 
 
-- [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server);
+- For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
-- [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+The tasks in this section help ensure that Microsoft Defender Antivirus is installed or enabled and in passive mode.
 
-- [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices); and
+- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)
 
-- [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
+- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)
+
+- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+
+- [Enable Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices)
+
+- [Confirm that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
 
 ### Set DisableAntiSpyware to false on Windows Server
 
-The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee. In general, you should not have this registry key on your Windows devices and endpoints; however, if you do have `DisableAntiSpyware` configured, here's how to set its value to false:
+The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee, Symantec, or others. In general, you should not have this registry key on your Windows devices and endpoints; however, if you do have `DisableAntiSpyware` configured, here's how to set its value to false:
 
 1. On your Windows Server device, open Registry Editor.
 
@@ -84,11 +90,11 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
-> [!NOTE]
+> [!IMPORTANT]
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 > - Windows Server 2019
 > - Windows Server, version 1803 (core-only mode)
-> - Windows Server 2016 (see important information in [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
+> - Windows Server 2016 (see [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
@@ -105,6 +111,8 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
+   Look for a status of *Running*.
+
 #### Are you using Windows Server 2016?
 
 If you have endpoints running Windows Server 2016, you cannot run Microsoft Defender Antivirus alongside a non-Microsoft antivirus/antimalware solution. Microsoft Defender Antivirus cannot run in passive mode on Windows Server 2016. In this case, you'll need to uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus instead. To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
@@ -119,9 +127,9 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
 > [!IMPORTANT]
-> You can set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019. But Passive mode is not supported on Windows Server 2016. To learn more, see [Antivirus solution compatibility with Microsoft Defender for Endpoint](defender-compatibility.md).
+> You can set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019. But passive mode is not supported on Windows Server 2016. To learn more, see [Antivirus solution compatibility with Microsoft Defender for Endpoint](defender-compatibility.md).
 
-Because your organization is still using your existing endpoint protection solution, you must set Microsoft Defender Antivirus to passive mode. That way, your existing solution and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
+Because your organization is still using your existing endpoint protection solution, and you have not onboarded to Defender for Endpoint yet, you must set Microsoft Defender Antivirus to passive mode. That way, your existing solution and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -148,10 +156,9 @@ To enable Microsoft Defender Antivirus, we recommend using Intune. However, you 
 |Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.        |
 |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. Go to **Computer configuration** > **Administrative templates** > **Windows components** > **Microsoft Defender Antivirus**. <p> 2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<p> 3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows. |
 
+### Check to see if Microsoft Defender Antivirus is in passive mode on your Windows client devices
 
-### Confirm that Microsoft Defender Antivirus is in passive mode
-
-Microsoft Defender Antivirus can run alongside your existing endpoint protection solution if you set Microsoft Defender Antivirus to passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
 |Method  |What to do  |
 |---------|---------|
