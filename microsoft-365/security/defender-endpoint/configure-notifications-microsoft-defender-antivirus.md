@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
 author: denisebmsft
+ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
