@@ -104,6 +104,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ## Need help? Contact us.
 
-For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
+For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
 If you have questions or need help with self-service purchases, [contact support](../../business-video/get-help-support.md).
