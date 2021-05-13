@@ -137,6 +137,10 @@ After you have specified your reviewers, remember to grant them the **Dispositio
 
 ### How to customize email messages for disposition review
 
+Example default email notification sent to a reviewer:
+
+![Email notification example with default text when an item is ready for disposition review](../media/disposition-review-email.png)
+
 Also in preview, you can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
 From any of the Disposition pages in the compliance center, select **Record management settings**:  
