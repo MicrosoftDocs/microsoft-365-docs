@@ -65,8 +65,7 @@ In this illustration . . . or table that describes the illustration . . . links 
 
 The order is recommended but you can adjust the order based on your business priorities. 
 
-alternate flow:
-![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process-two.png)
+
 
 ## Training
 Training that his helpful to complete before creating an evaluation environment and piloting these capabilities . . .
