@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO
+title: Office 365 Security, Microsoft Defender for Office 365, EOP, MSDO 
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Office 365 Security overview
+# Office 365 Security overview 
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

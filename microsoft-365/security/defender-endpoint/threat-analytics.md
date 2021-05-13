@@ -21,7 +21,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Track and respond to emerging threats with threat analytics 
+# Track and respond to emerging threats with threat analytics
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

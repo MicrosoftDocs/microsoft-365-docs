@@ -172,7 +172,7 @@ These training modules can help your users use Teams, groups, and SharePoint for
 |:---|:---|
 |![Set up and customize your team training icon](../media/set-up-customize-team-training.png)<br>**[Set up and customize your team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint share and sync training icon](../media/sharepoint-share-sync-training.png)<br>**[Share and sync](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams upload and find files training icon](../media/smc-teams-upload-find-files-training.png)<br>**[Upload and find files](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Collaborate in teams and channels icon](../media/teams-collaborate-channels-training.png)<br>**[Collaborate in teams and channels](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## Illustrations
 

@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,7 +16,6 @@ ms.date: 05/05/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.topic: how-to
 ---
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
