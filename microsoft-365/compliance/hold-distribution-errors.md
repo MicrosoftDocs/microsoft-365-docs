@@ -109,9 +109,9 @@ If you see the following error message when putting custodians and data sources 
 
 ### Resolution
 
-- Run the [Get-Mailbox](powershell/module/exchange/get-mailbox) in Exchange Online PowerShell to check if the user mailbox exists in your organization.
+- Run the [Get-Mailbox](/powershell/module/exchange/get-mailbox) in Exchange Online PowerShell to check if the user mailbox exists in your organization.
 
-- Run the [Get-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-sposite?view=sharepoint-ps) cmdlet in SharePoint Online PowerShell to check if the site exists in your organization.
+- Run the [Get-SPOSite](/powershell/module/sharepoint-online/get-sposite) cmdlet in SharePoint Online PowerShell to check if the site exists in your organization.
 
 - Check to see if the site URL has changed.
 
