@@ -51,9 +51,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. 
 
-- On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. 
+- On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. Once onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode until the non-Microsoft antivirus solution is uninstalled. 
 
-- On Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. In these cases, Microsoft Defender Antivirus is disabled manually (or even uninstalled, which is not recommended). 
+- On Windows Server, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus must be disabled manually.  solutionyou cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. In these cases, Microsoft Defender Antivirus is disabled manually (or even uninstalled, which is not recommended). 
 
 - For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
