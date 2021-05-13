@@ -187,26 +187,22 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 
 
-## Onboarding Servers with no management solution -- KEEP HERE?
+## Onboarding endpoints with no management solution 
 
 ### Using Group Policy
 
-**Step-1: Create the necessary files to copy down to the servers.**
+**Step-1: Download the corresponding udpate for your endpoint.**
 
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
-1. Download the following and place in the MMA folder:
-
-    **Update for customer experience and diagnostic telemetry (Windows Server 2008 R2)**
-
-    [For Windows 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
-
-    > [!NOTE]
-    > This article assumes you are using x64-based servers
-    (MMA Agent .exe x64 [New SHA-2 compliant version](https://go.microsoft.com/fwlink/?LinkId=828603))
+1. Download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/topic/update-for-customer-experience-and-diagnostic-telemetry-0b4f29c3-8361-b748-f862-7ecedbc57cbf) file.
 
 **Step-2: Create a file name DeployMMA.cmd (using notepad)**
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
+
+The following command is an example. Replace the following values:
+- KB - Use the applicable KB relevant to the endpoint you're onboarding
+- Workspace ID and KEY - Use your ID and key
 
 ```dos
 @echo off 
@@ -221,6 +217,7 @@ OPINSIGHTS_WORKSPACE_ID=<your workspace ID>
 OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 )
 ```
+
 
 
 
@@ -247,7 +244,7 @@ Repeat the process but create item level targeting on the COMMON tab, so the fil
 
 :::image type="content" source="images/targeteditor.png" alt-text="target editor":::
 
-- For Windows Server 2008 R2 you need (and it will only copy down) Windows6.1-BJ3080149-x64.msu
+
 
 Once this is done, you'll need to create a start-up script policy:
 
@@ -270,28 +267,9 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
 
-As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
-
-For Windows Server 2008 R2 PS1, ensure that you fulfill the following requirements:
-
-- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
-- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-
-Please check the KBs are present before onboarding Windows Server 2008 R2
-This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
 
 
-
-## Offboard client endpoints
-
-**Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
-
-To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint. 
-
-
-
-**Windows Server 2008 R2 SP1**
+## Offboard endpoints
 
 You have two options to offboard Windows servers from the service:
 
@@ -301,9 +279,9 @@ You have two options to offboard Windows servers from the service:
 > [!NOTE]
 > Offboarding causes the Windows server to stop sending sensor data to the portal but data from the Windows server, including reference to any alerts it has had will be retained for up to 6 months.
 
-### Uninstall Windows servers by uninstalling the MMA agent
+### Uninstall the MMA agent
 
-To offboard the Windows server, you can uninstall the MMA agent from the Windows server or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the Windows server will no longer send sensor data to Defender for Endpoint.
+To offboard the Windows endpoint, you can uninstall the MMA agent or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint.
 For more information, see [To disable an agent](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
 ### Remove the Defender for Endpoint workspace configuration
@@ -327,10 +305,9 @@ To offboard the Windows server, you can use either of the following methods:
 
    1. In the navigation pane, select **Settings** > **Onboarding**.
 
-   1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
+   1. Select the relevant operating system and get your Workspace ID.
 
-      ![Image of Windows server onboarding](images/atp-server-offboarding-workspaceid.png)
-
+    
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
     ```powershell

@@ -35,39 +35,10 @@ ms.technology: mde
 
 You can use Configuration Manager to onboard endpoints to the Microsoft Defender for Endpoint service. 
 
-
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
-
-
-## Supported client operating systems
-
-Based on the version of Configuration Manager you're running, the following client operating systems can be onboarded:
-
-#### Configuration Manager version 1910 and prior
-
-- Clients computers running Windows 10 
-
-#### Configuration Manager version 2002 and later
-
-Starting in Configuration Manager version 2002, you can onboard the following operating systems:
-
-- Windows 8.1
-- Windows 10
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2016, version 1803 or later
-- Windows Server 2019
-
->[!NOTE]
->For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
-
-
-### Onboard devices using System Center Configuration Manager
-
-
-
-
-Follow the instructions from [Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+There are several options you can use to onboard devices using Configuration Manager:
+- [Onboard devices using System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+- [Tenant attach](/mem/configmgr/tenant-attach/)
+- MEM attach -LINK TBD
 
 
 For Windows Server 2012 R2 and Windows Server 2016 - after completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-server-2008r2.md#configure-and-update-system-center-endpoint-protection-clients).

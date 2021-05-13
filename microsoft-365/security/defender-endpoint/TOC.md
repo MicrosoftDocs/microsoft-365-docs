@@ -62,7 +62,7 @@
 
 
 ##### [Onboard Windows 10, Windows Server 2012 R2, 2016, SAC version 1803, and 2019]()
-###### [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
+###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, and 2019](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
