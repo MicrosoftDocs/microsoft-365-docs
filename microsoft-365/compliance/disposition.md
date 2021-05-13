@@ -104,10 +104,6 @@ The following diagram shows the basic workflow for a disposition review when a r
   
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
-Example email notification sent to a reviewer:
-
-![Email notification example](../media/disposition-review-email.png)
-
 ### How to configure a retention label for disposition review
 
 Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. Disposition review is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
