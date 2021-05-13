@@ -1,5 +1,5 @@
 ---
-title: "Content search reference"
+title: "Feature reference for Content search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,7 +22,9 @@ ms.custom:
 description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft 365 compliance center to help you learn the many details about Content search."
 ---
 
-# Content search reference
+# Feature reference for Content search
+
+This article describes features and functionality of Content search.
 
 ## Content search limits
 
@@ -66,6 +68,10 @@ Keep the following things in mind when using the keyword list to create a search
     
 - If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
   
+## Partially indexed items
+
+- Partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results. For more information, see [Partially indexed items in eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## Searching OneDrive accounts
 
 - To collect a list of the URLs for the OneDrive sites in your organization, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -223,12 +229,6 @@ If the Exchange Online license (or the entire Microsoft 365 license) is removed 
 - If you use the **New-ComplianceSearch** cmdlet to create a content search and specify a disconnected mailbox as the Exchange content location to search, the content search won't return any search results from the disconnected mailbox.
 
 If you need to preserve the data in a disconnected mailbox so that it's searchable, you must place a hold on the mailbox before removing the license. This preserves the data and keeps the disconnected mailbox searchable until the hold is removed. For more information about holds, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
-
-## Partially indexed items
-
-- As previously explained, partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results.
-
-- If a partially indexed item matches the search query (because other message or document properties meet the search criteria), it isn't included in the estimated number of unindexed items. If a partially indexed item is excluded by the search criteria, it isn't included in the estimated number of unindexed items. For more information, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
 
 ## Searching for content in a SharePoint Multi-Geo environment
 
