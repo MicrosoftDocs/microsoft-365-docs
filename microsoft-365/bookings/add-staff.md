@@ -63,20 +63,33 @@ Watch this video or follow the steps below to add your staff.
 
 ## Make a Bookings user a super user without adding them as Staff in Bookings
 
-Administrator of a booking mailbox is defined as Full Access + SendAs permissions to the booking mailbox.
+You may want to add a person to your staff list in Bookings without making them available to customers or clients. Once you make them a super user, they'll become an administrator of the booking mailbox. Being an administrator of a booking mailbox is defined as having full access and send-as permissions to the booking mailbox.
 
-To assign access:
+> [!NOTE]
+> These steps only work if the user being added isn't already assigned a **viewer** role in Bookings.
 
-Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+2. Using PowerShell, assign full access with the following commands:
 
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
 
-Example:
+3. And then run this command to assign send-as permissions.
 
-Add-MailboxPermission -Identity "NewBusiness 1_0e0815261" -User "Rebecca Valdivia" -AccessRights FullAccess -InheritanceType All
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
 
-Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+Here's an example to add Allie Bellew to the Contoso daycare booking mailbox.
 
-This user will remain with admin access and is not shown in the Bookings Teams app.
-This only works if the user being added is not already a "viewer" in the bookings business.
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** now has administrator access but doesn't appear as bookable staff in Bookings.
