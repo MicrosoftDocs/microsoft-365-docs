@@ -782,10 +782,10 @@
   items: 
     - name: Microsoft 365 auditing solutions
       href: auditing-solutions-overview.md
-    - name: Basic auditing
+    - name: Basic Audit
       items:
-        - name: Set up Basic auditing
-          href: set-up-basic-auditing.md
+        - name: Set up Basic Audit
+          href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Use a PowerShell script to search the audit log
