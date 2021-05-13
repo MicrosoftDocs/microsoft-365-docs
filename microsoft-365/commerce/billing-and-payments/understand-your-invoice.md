@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,7 +18,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices

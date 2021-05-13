@@ -79,7 +79,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Preview: [Current Channel (Preview)](https://office.com/insider)
-    - **macOS**: Preview: [Beta Channel](https://office.com/insider)
+    - **macOS**: Preview: [Current Channel (Preview)](https://office.com/insider)
     - **iOS**: Not yet supported
     - **Android**: Not yet supported
 
