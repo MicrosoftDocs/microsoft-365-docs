@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -37,15 +37,21 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 **Welcome to Phase 3 of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
+
 2. [Run a detection test](#run-a-detection-test).
+
 3. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution).
+
 4. [Make sure Microsoft Defender for Endpoint is in active mode](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
+
 2. Choose **Settings** > **Device management** > **Onboarding**. 
+
 3. In the **Select operating system to start onboarding process** list, select an operating system. 
+
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
 ### Onboarding methods
@@ -93,4 +99,5 @@ To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([http
 **Congratulations**! You have completed your [migration to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)). 
+
 - [Manage Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).
