@@ -43,6 +43,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
+5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+
+6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+
+
 ## Reinstall/enable Microsoft Defender Antivirus on your endpoints
 
 On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
