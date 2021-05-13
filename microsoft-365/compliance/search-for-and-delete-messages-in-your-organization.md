@@ -36,10 +36,10 @@ You can use the Content Search feature to search for and delete an email message
 
 ## Before you begin
 
-- To create and run a Content Search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** management role. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
+- To create and run a Content search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** role in Security & Compliance Center. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** role in Security & Compliance Center. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
 
-> [!NOTE]
-> The **Organization Management** role group exists in both Exchange Online and Security & Compliance Center. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. Failing to assign the permissions **Search And Purge** management role in Security & Compliance Center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
+  > [!NOTE]
+  > The **Organization Management** role group exists in both Exchange Online and Security & Compliance Center. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in Security & Compliance Center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
 - You have to use Security & Compliance Center PowerShell to delete messages. See [Step 2](#step-2-connect-to-security--compliance-center-powershell) for instructions about how to connect.
 
