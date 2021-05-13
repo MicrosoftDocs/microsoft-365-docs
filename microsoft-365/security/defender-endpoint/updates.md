@@ -1,5 +1,5 @@
 ﻿---
-title: Manage the gradual rollout process for monthly updates
+title: Manage the gradual rollout process for updates
 description: Learn about the gradual update process and controls 
 keywords: update, update process, controls, release
 search.product: eADQiWindows 10XVcnh
@@ -69,6 +69,8 @@ For more information on how to configure updates, see [Create a custom gradual r
 
 The following update channels are available: 
 
+### Monthly
+
 | Channel name  | Description  | Application  |
 |-|-|-|
 | Beta Channel - Prerelease  | Test updates before others  | Devices set to this channel will be the first to receive new monthly updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in test environments only.  |
@@ -76,8 +78,17 @@ The following update channels are available:
 | Current Channel (Staged)  | Get Current Channel updates later during gradual release  | Devices will be offered updates later during the gradual release cycle. Suggested to apply to a small, representative part of your device population (~10%).  |
 | Current Channel (Broad): Disable gradual rollout of Defender updates  | Get updates at the end of gradual release  | Devices will be offered updates after the gradual release cycle. Best for datacenter machines that only receive limited updates. Note: this setting applies to all Defender updates.  |
 | Critical: time delay  | Delay Defender updates  | Devices will be offered updates with a 2-day delay. Suggested for critical environments only.  |
-| (default)  |   | If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices  |                                                
+| (default)  |   | If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices  |                                              
 
+
+### Daily
+  
+| Channel name  | Description  | Application  |
+|-|-|-|
+| Current Channel (Staged)  | Get Current Channel updates later during gradual release  | Devices will be offered updates later during the gradual release cycle. Suggested to apply to a small, representative part of your device population (~10%).  |
+| Current Channel (Broad): Disable gradual rollout of Defender updates  | Get updates at the end of gradual release  | Devices will be offered updates after the gradual release cycle. Best for datacenter machines that only receive limited updates. Note: this setting applies to all Defender updates.  |
+| Critical: time delay  | Delay Defender updates  | Devices will be offered updates with a 2-day delay. Suggested for critical environments only.  |
+| (default)  |   | If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices  |
 
 ## Update guidance
 

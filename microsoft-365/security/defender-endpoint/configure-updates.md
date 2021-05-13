@@ -1,5 +1,5 @@
 ﻿---
-title: Create a custom gradual rollout process for monthly updates
+title: Create a custom gradual rollout process for  updates
 description: Learn how to use supported tools to create a custom gradual rollout process for updates
 keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Create a custom gradual rollout process for monthly updates
+# Create a custom gradual rollout process for updates
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
