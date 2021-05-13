@@ -79,7 +79,7 @@ DeviceLogonEvents
 // - Network information (for network logons)
 // - Timestamp
 
-AppFileEvents
+CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```

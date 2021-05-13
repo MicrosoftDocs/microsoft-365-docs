@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/11/2021
+ms.date: 05/13/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -49,7 +49,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ## Enable Microsoft Defender Antivirus and confirm it's in passive mode
 
-On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. When you get ready to onboard your endpoints to Defender for Endpoint, Microsoft Defender Antivirus does not enter passive or disabled mode automatically. In addition, on Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. To learn more about what happens with Defender for Endpoint and antivirus solutions, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. When you get ready to onboard your endpoints to Defender for Endpoint, Microsoft Defender Antivirus does not enter passive or disabled mode automatically. 
+
+On Windows Server, you cannot have Microsoft Defender Antivirus in active mode alongside a non-Microsoft antivirus/antimalware solution, such as McAfee, Symantec, or others. To learn more about what happens with Defender for Endpoint and antivirus solutions, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 To help ensure that Microsoft Defender Antivirus is enabled and in passive mode, complete the following tasks described in this article:
 
