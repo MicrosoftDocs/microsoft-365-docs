@@ -82,3 +82,5 @@ The above operations can be done in three places:
 ## Related articles
 
 [Restore a user](restore-user.md)
+
+[Reset passwords](reset-passwords.md)
