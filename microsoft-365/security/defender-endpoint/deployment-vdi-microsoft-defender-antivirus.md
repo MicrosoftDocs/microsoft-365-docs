@@ -15,6 +15,7 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment

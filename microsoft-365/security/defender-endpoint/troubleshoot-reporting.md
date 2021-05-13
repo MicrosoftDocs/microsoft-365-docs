@@ -9,12 +9,14 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
 ms.topic: article
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance

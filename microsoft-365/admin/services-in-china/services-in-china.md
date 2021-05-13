@@ -51,7 +51,7 @@ If you would like to learn how to get started with general Office 365 services, 
 |Function|Availability|
 |:-----|:-----|
 |Custom domains  <br/> |Administrators can create and/or use custom domains registered through Chinese-specific domain providers. If you don't have a custom domain, you can [How to buy a domain name](../get-help-with-domains/buy-a-domain-name.md) from a domain name registrar. If you already have one, [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Additionally, if you create a public website using the Office 365 SharePoint Online service, China Internet compliance policy requires that you get an Internet Content Provider (ICP) number.  **Note:** Automatic validation for disallowed words in custom domain names is not available.           |
-|Subscriptions, billing, and technical support  <br/> |Provided by 21Vianet. For information on how to contact support, see [Contact Office 365 for business support](../contact-support-for-business-products.md).  <br/> |
+|Subscriptions, billing, and technical support  <br/> |Provided by 21Vianet. For information on how to contact support, see [Contact Office 365 for business support](../../business-video/get-help-support.md).  <br/> |
 |Self-service password reset  <br/> |Available for admins only. For more information, see [Change or reset your password in Office 365 operated by 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Security, privacy, compliance, and details on levels of support  <br/> |Provided by 21Vianet.  <br/> |
 |Office Desktop Setup  <br/> |Office desktop setup is not available for Office 2010 and Office 2007. However, administrators can [Configure current Office desktop applications to work with Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
@@ -228,3 +228,11 @@ GDPR grants individuals (or, data subjects) certain rights in connection with th
 - System generated logs for Microsoft services operated by 21Vianet can be exported by Tenant Administrators using the Data Log Export.
     
 For details and instructions, see [Data Subject Requests (DSR) for GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+
+## Related content
+
+[Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)
+
+[Azure Information Protection support for Office 365 operated by 21Vianet](parity-between-azure-information-protection.md) (article)
+
+[View your bill or get a Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)

@@ -199,3 +199,11 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
   - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
   - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+
+## Related content
+
+[Add storage space for your subscription](../../commerce/add-storage-space.md) (article)
+
+[Share files and folders with Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)
+
+[Customize your team site for file storage and sharing](customize-team-site.md) (article)

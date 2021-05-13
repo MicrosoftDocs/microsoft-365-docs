@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,10 +17,10 @@ ms.collection:
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-- Commerce
-search.appverid:
-- MET150
+- commerce_billing
+search.appverid: MET150
 description: "Learn how billing profiles support invoices."
+ms.date: 04/02/2021 
 ---
 
 # Understand billing profiles
@@ -45,32 +46,28 @@ department in your organization. On your next billing date, you'll receive an in
 
 Roles on billing profiles have permissions to control purchases, and view and manage invoices. Assign these roles to users who track, organize, and pay invoices, like members of the procurement team in your organization.
 
-| Role                        	| Description                                                                     	|
-|-----------------------------	|---------------------------------------------------------------------------------	|
-| Billing profile owner       	| Manage everything for a billing profile                                         	|
-| Billing profile contributor 	| Manage everything except permissions in a billing profile                       	|
-| Billing profile reader      	| Read-only view of everything in a billing profile                               	|
-| Invoice manager             	| View and pay bills, and has a read-only view of everything in a billing profile 	|
+| Role                         | Description                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| Billing profile owner        | Manage everything for a billing profile                                          |
+| Billing profile contributor  | Manage everything except permissions in a billing profile                        |
+| Billing profile reader       | Read-only view of everything in a billing profile                                |
+| Invoice manager              | View and pay bills, and has a read-only view of everything in a billing profile  |
 
 ## View billing profiles
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
 2. Choose **Billing profiles**, and then choose a billing profile from the list.
 
     - On the **Overview** tab, you can edit billing profile details, and turn on or off sending an invoice by email.
-
     - On the **Permissions** tab, you can assign roles to users to pay invoices.
-
     - On the **Azure credit balance** tab, Azure customers can see transaction balance history for the Azure credits used by that billing profile.
-
     - On the **Azure credits** tab, Azure customers can see a list of Azure credits associated with that billing profile, and their expiration dates.
 
     > [!NOTE]
     > If you don't have any Azure credits, you won't see the **Azure credit balance** or **Azure credits** tabs.
 
-## Need help? Contact support.
+## Need help? Contact support
 
 If you have questions or need help with your Azure charges, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support for business products](/office365/admin/contact-support-for-business-products).
+If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
