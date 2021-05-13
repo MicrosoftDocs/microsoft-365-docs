@@ -26,7 +26,7 @@ description: "Learn how to use Microsoft Teams in your small business."
 
 If you're just starting to change your business to work remotely, you've come to the right place. With Microsoft 365, you can manage a business virtually and stay in touch with your employees, partners, and customers through online meetings, [chats](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline), file sharing, and calls in Microsoft Teams. 
 
-- [Use Teams for your business (video)](#use-teams-for-your-business-video)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
 
 ### Meet from anywhere
 
@@ -64,7 +64,7 @@ A highly recommended security feature is multi-factor authentication (MFA). Addi
 
 ### Microsoft Teams templates
 
-To make deployment in your organization easier and more streamlined, check out the templates that are available specifically for small businesses. Microsoft Teams templates allow you to quickly and easily create teams by providing a predefined template of settings, channels, and pre-installed apps, while orienting users to get started using Microsoft Teams effectively. See [Get started with Teams templates for small and medium businesses](https://docs.microsoft.com/microsoftteams/smb-templates).
+To make deployment in your organization easier and more streamlined, check out the templates that are available specifically for small businesses. Microsoft Teams templates allow you to quickly and easily create teams by providing a predefined template of settings, channels, and pre-installed apps, while orienting users to get started using Microsoft Teams effectively. See [Get started with Teams templates for small and medium businesses](/microsoftteams/smb-templates).
 
 ### Business phone system
 
