@@ -37,16 +37,6 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
  Follow these steps to add, set up, or continue setting up a domain. 
 
 ::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
