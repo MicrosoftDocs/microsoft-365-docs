@@ -60,3 +60,23 @@ Watch this video or follow the steps below to add your staff.
 
     > [!NOTE]
     > Only the first 31 staff members that you add to your staff page will appear when you assign staff members to a service.
+
+## Make a Bookings user a super user without adding them as Staff in Bookings
+
+Administrator of a booking mailbox is defined as Full Access + SendAs permissions to the booking mailbox.
+
+To assign access:
+
+Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+
+Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+
+
+Example:
+
+Add-MailboxPermission -Identity "NewBusiness 1_0e0815261" -User "Rebecca Valdivia" -AccessRights FullAccess -InheritanceType All
+
+Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+
+This user will remain with admin access and is not shown in the Bookings Teams app.
+This only works if the user being added is not already a "viewer" in the bookings business.
