@@ -29,6 +29,8 @@ Microsoft 365 auditing solutions provide an integrated solution to help organiza
 
 Microsoft 365 provides two auditing solutions: Basic Audit and Advanced Audit.
 
+![Key capabilities of Basic Audit and Advanced Audit](..\media\AuditingSolutionsComparison.png)
+
 ### Basic Audit
 
 Basic Audit provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations.
