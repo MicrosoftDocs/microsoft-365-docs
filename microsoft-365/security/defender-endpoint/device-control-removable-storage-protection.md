@@ -24,6 +24,23 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint Device Control Removable Storage Protection prevents user or machine or both from using unauthorized removable storage media.
 
+## Protection policies
+
+### Device Installation
+**Capabilities**: Prevent installation with or without exclusion based on various device properties.
+**Supported Platform**: Windows 10
+**Description**:
+- Applied at machine level: the same policy applies for any logged on user
+- Supports MEM and GPO
+- Supported  ‘Device Properties’ are listed below
+- For additional information on Windows, see For more information on Windows, see [How to control USB devices and other removable media using Intune (Windows 10)](control-usb-devices-using-intune.md).
+**Supported Platform**: macOS Catalina 10.15.4+ (with system extensions enabled)
+**Description**:
+- Applied at machine level: the same policy applies for any logged on user
+- For macOS specific information, see Device control for macOS
+
+
+
 **Microsoft Defender for Endpoint Removable Storage Protection**
 
 
