@@ -38,6 +38,13 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 This migration phase includes the following steps:
 
+1. [Update your organization's devices](#update-your-organizations-devices).
+
+2. [Get Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint).
+
+3. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
+
+4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings)
 
 ## Update your organization's devices
 
