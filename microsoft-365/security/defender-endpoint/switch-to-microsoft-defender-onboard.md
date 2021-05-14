@@ -46,7 +46,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 5. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution). 
 
-6. [Make sure Microsoft Defender Antivirus is running and in active mode](#make-sure-microsoft-defender-antivirus-is-running-and-in-active-mode).
+6. [Make sure Defender for Endpoint is working correctly](#make-sure-defender-for-endpoint-is-working-correctly).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
@@ -129,7 +129,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 Now that you have onboarded your organization's devices to Defender for Endpoint, and Microsoft Defender Antivirus is installed and enabled, your next step is to uninstall your non-Microsoft endpoint protection solution. To get help with this task, reach out to your solution provider's technical support team.
 
-## Make sure Microsoft Defender Antivirus is running and in active mode
+## Make sure Defender for Endpoint is working correctly
 
 Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. One good way to do this is by visiting the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
