@@ -166,13 +166,14 @@ During this step of the setup process, you add your existing solution to the Mic
 
 When you add [exclusions to Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
 
-- Path exclusions exclude specific files and whatever those files access.
+- *Path exclusions* exclude specific files and whatever those files access.
 
-- Process exclusions exclude whatever a process touches, but does not exclude the process itself.
+- *Process exclusions* exclude whatever a process touches, but does not exclude the process itself.
+
+- List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 
 - If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
-- List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 
 ## Set up your device groups, device collections, and organizational units
 
