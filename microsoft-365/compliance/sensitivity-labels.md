@@ -185,7 +185,7 @@ When you configure a label policy, you can:
 
     ![Prompt where users enter a justification](../media/Sensitivity-label-justification-required.png)
 
-- **Require users to apply a label** with one option for email and documents, and another for containers. Also known as mandatory labeling, these options ensure a label must be applied before users can save documents and send emails, and create new groups or sites.
+- **Require users to apply a label** for documents and emails, just documents, and for containers. Also known as mandatory labeling, these options ensure a label must be applied before users can save documents and send emails, and create new groups or sites.
     
     For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt shown in Outlook when a user is required to assign a label:
 
