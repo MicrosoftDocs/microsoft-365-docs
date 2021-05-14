@@ -55,7 +55,7 @@ Use this procedure to create a new sensitive information type that you fully def
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [More information on regular expression validators](#more-information-on-regular-expression-validators).
 6. Fill in a value for **Character proximity**.
 7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. Supporting elements can have their own **Character proximity** configuration. 
 8. (Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
@@ -119,6 +119,29 @@ You can also create custom sensitive information types by using PowerShell and E
 
 ## More information on regular expression validators
 
+### Checksum validator
+
+If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
+ 
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 
+Mod value = Sum % 9
+If Mod value == digit 8
+	Account number is valid
+If Mod value != digit 8
+	Account number is invalid
+
+1. Define the primary element with this regular expression:
+
+`\d{8}`
+
+2. Then add the checksum validator.
+3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
+
+> [!NOTE]
+> If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
+
+![screenshot of configured checksum validator](../media/checksum-validator.png)
+
 ### Date validator
 
 If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format. 
@@ -132,20 +155,13 @@ If a date value that is embedded in regular expression is part of a new pattern 
 
 ![screenshot of configured date validator](../media/date-validator.png)
 
+### Functional processors as validators
 
-### Checksum validator
+You can use function processors for some of the most commonly used SITs as validators. This allows you to define your own regular expression while ensuring they pass the additional checks required by the SIT. For example, Func_India_Aadhar will ensure that the custom regular expression defined by you passes the validation logic required for Indian Aadhar card. For more information on DLP functions that can be used as validators, see [What the DLP functions look for](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for). 
 
-If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 8 calculation. To validate the checksum digit:
+### Luhn check validator
 
-1. Define the primary element with this regular expression:
-
-`\d{8}`
-
-2. Then add the checksum validator.
-3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
-
-![screenshot of configured checksum validator](../media/checksum-validator.png)
-
+You can use the Luhn check validator if you have a custom Sensitive information type that includes a regular expression which should pass the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
 ## More information on additional checks
 
