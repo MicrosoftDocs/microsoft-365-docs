@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -34,11 +34,11 @@ ms.reviewer: depicker, yongrhee, chriggs
 ||*You are here!* | |
 
 
-**Welcome to the Setup phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-4. [Add Microsoft Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
+4. [Add Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
 5. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
@@ -50,7 +50,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. To learn more, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
 
-Now that you're moving from Symantec to Microsoft Defender for Endpoint, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
+Now that you're moving from Symantec to Defender for Endpoint, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
@@ -88,7 +88,7 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
+Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -139,7 +139,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for Symantec
 
-This step of the setup process involves adding Microsoft Defender for Endpoint to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+This step of the setup process involves adding Defender for Endpoint to the exclusion list for Symantec and any other security products your organization is using. The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
 |OS |Exclusions |
 |--|--|
@@ -190,5 +190,5 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
-- [Proceed to Phase 3: Onboard to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md)
+**Congratulations**! You have completed the Setup phase of [migrating from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
+- [Proceed to Phase 3: Onboard to Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md)
