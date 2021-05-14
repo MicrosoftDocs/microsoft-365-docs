@@ -59,7 +59,19 @@
         - name: Defender for Endpoint
           items: 
             - name: Overview
-              href: eval-defender-endpoint-overview.md         
+              href: eval-defender-endpoint-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-endpoint-architecture.md            
+        - name: Microsoft Cloud App Security
+          items:
+            - name: Overview
+              href: eval-defender-mcas-overview.md
+            - name: Review architecture requirements
+              href: eval-defender-mcas-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-mcas-enable-eval.md
+            - name: Pilot Defender for Office
+              href: eval-defender-mcas-pilot.md  
         - name: Investigate and respond    
           items:
             - name: Overview
@@ -69,7 +81,7 @@
             - name: Simulate attacks
               href: m365d-pilot-simulate    
         - name: Promote the trial to production
-          href: eval-defender-office-production.md                    
+          href: eval-defender-promote-to-production.md                    
     - name: Get started
       items:
         - name: Overview

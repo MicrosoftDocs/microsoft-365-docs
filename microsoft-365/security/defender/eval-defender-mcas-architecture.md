@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and key concepts for Microsoft Defender for Identity
+title: Review architecture requirements and key concepts for Microsoft Cloud App Security
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -23,19 +23,19 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Review architecture requirements and key concepts for Microsoft Defender for Identity
+# Review architecture requirements and key concepts for Microsoft Cloud App Security
 
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Before enabling Microsoft Defender for Identity, be sure you understand the architecture and can meet the requirements. 
+Before enabling Microsoft Cloud App Security, be sure you understand the architecture and can meet the requirements. 
 
 ## Understand the architecture
 
 The following diagram illustrates . . .
 
-![Architecture for Microsoft Defender for Identity](../../media/defender/m365-defender-identity-architecture.png)
+![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture.png)
 
 The following table describes this illustration.
 
@@ -51,7 +51,7 @@ The following table describes this illustration.
 
 ## Understand key concepts
 
-The following table identified key concepts that are important to understand when evaluating, configuring, and deploying MDO.
+The following table identified key concepts that are important to understand when evaluating, configuring, and deploying Microsoft Cloud App Security.
 
 
 |Concept  |Description |More information  |
@@ -65,7 +65,7 @@ The following table identified key concepts that are important to understand whe
 
 ## Review architecture requirements
 
-
+???
 
 ## SIEM integration
 
