@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint service issues
 description: Find solutions and workarounds to known issues such as server errors when trying to access the service.
-keywords: troubleshoot microsoft defender for endpoint, troubleshoot Windows ATP, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
+keywords: troubleshoot Microsoft Defender for Endpoint, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -75,7 +75,7 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## Microsoft Defender for Endpoint tenant was automatically created in Europe
-When you use Azure Security Center to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
+When you use Azure Defender to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
 
 
 

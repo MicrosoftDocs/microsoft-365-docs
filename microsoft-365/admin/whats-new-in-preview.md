@@ -32,7 +32,7 @@ ms.custom:
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](../business-video/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -43,7 +43,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
-- [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [How to check Windows release health](/windows/deployment/update/check-release-health)
 
 ## April 2021
 
@@ -78,7 +78,7 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+To learn more about the new features, check out [Message center](manage/message-center.md).
 
 ### What's new features
 
@@ -118,7 +118,7 @@ Priority accounts are only available to organizations that meet both of the foll
 
 There are two ways to get started:
 
-- Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
+- Go to **Users**, and then in the three dots (more actions) menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
 For more info on priority accounts, check out [Monitoring priority accounts](./setup/priority-accounts.md).
@@ -131,7 +131,7 @@ We've started rolling out a new Search experience for the admin center, and we c
 - The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
 - Search is smarter and will give you better results, even faster. Try typing "2fa" to get started.
 - Search results are organized by the type of item or action you can take.
-  - **Users**: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
+  - **Users**: Select the user's name and you can edit that user right there. If you select the three dots (more actions) menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
   - **Groups**: Edit the group from any page, add members, assign owners.
   - **Actions**: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
   - **Navigation**: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
@@ -227,7 +227,7 @@ A few months ago, we added a setting that lets you manage the What's New message
 
 ### Docs, training, and videos (June)
 
-- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Getting started with Teams](../business-video/get-started-teams-small-business.md)
 
 ## May 2020
 
@@ -330,19 +330,19 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Schedule a meeting](../business-video/schedule-guest-meeting.md)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Create a Team with guests](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Join a Team as a guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Create a group email address](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Create an org-wide team](../business-video/org-wide-team.md)
+- [Create a Team with guests](../business-video/team-with-guests.md)
+- [Join a Team as a guest](../business-video/join-team-guest.md)
+- [Create a group email address](../business-video/group-email.md)
 
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Sign up for Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Setting up two-factor sign-in](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Running a remote small business](../business-video/sign-up.md)
+- [Sign up for Microsoft Business Basic](../business-video/sign-up.md)
+- [Setting up two-factor sign-in](../business-video/sign-up.md)
 
 ## March 2020
 

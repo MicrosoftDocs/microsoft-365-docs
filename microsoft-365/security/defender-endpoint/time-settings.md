@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Security Center time zone settings
 description: Use the info contained here to configure the Microsoft Defender Security Center time zone settings and view license information.
-keywords: settings, Microsoft Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
+keywords: settings, Microsoft Defender, cybersecurity threat intelligence, Microsoft Defender for Endpoint, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

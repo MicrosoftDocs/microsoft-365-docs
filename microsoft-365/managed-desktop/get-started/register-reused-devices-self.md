@@ -132,7 +132,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices-by-using-the-admin-portal).
 
 
-#### Register devices by using the Admin Portal
+## Register devices by using the Admin Portal
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
@@ -161,7 +161,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 
-#### Troubleshooting device registration
+### Troubleshooting device registration
 
 | Error message | Details |
 |---------------|-------------|
@@ -171,13 +171,13 @@ You can monitor the progress of device registration on the main page. Possible s
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
 | Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
 
-### Check the image
+## Check the image
 
 If your device has come from a Microsoft Managed Desktop partner supplier, the image should be correct.
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
-### Deliver the device
+## Deliver the device
 
 > [!IMPORTANT]
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.

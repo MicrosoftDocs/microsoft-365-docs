@@ -10,11 +10,16 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Microsoft Managed Desktop devices 
+# Microsoft Managed Desktop devices
+
+> [!NOTE]
+> Microsoft Managed Desktop no longer requires device models be from this list. As of May 3, 2021, all devices from an approved manufacturer should meet our posted hardware and software requirements. You can continue to use devices on this list with confidence. You can find more devices recommended for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site. At that site, view the recommended devices by expanding **Features** in the **Filter by** area, and then selecting **Microsoft Managed Desktop**. Anytime you plan to enroll a particular device model in the service for the first time, you should test an example to ensure it'll deliver the user experience you expect. For more information, see [Validate new devices](../get-started/validate-device.md).
 
 Microsoft Managed Desktop regularly evaluates devices to be included in the service. This article lists the specific devices that are currently supported. For a more general statement of device requirements, see [Device requirements](device-requirements.md).
 
 For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](../index.yml). 
+
+[Select and validate new devices](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->

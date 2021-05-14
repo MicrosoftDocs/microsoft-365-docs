@@ -1,6 +1,6 @@
 ---
 title: Managed security service provider (MSSP) partnership opportunities
-description: Understand how Microsoft Defender ATP integrates with managed security service providers (MSSP)
+description: Understand how Microsoft Defender for Endpoint integrates with managed security service providers (MSSP)
 keywords: mssp, integration, managed, security, service, provider
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

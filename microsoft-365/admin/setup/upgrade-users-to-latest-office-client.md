@@ -86,7 +86,7 @@ Switch to a subscription that includes Office. See [Switch to a different Micros
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 
- - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://products.office.com/home-and-business) or [Office Professional](https://products.office.com/professional)
+ - Buy an individual, one-time purchase of Office. See [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) or [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      OR
 

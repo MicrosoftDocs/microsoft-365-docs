@@ -1,7 +1,7 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Group Policy Objects
 description: Learn how to manage Microsoft Defender for Endpoint with Group Policy Objects
-keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, windows defender advanced threat protection, atp, edr
+keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

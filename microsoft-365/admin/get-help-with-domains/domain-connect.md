@@ -44,7 +44,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
-    - [MadDog Domains](https://www.maddogdomains.com/)
+    - [MadDog Web Hosting](https://maddogwebhosting.com/domains/)
     - [CheapNames](https://www.cheapnames.com)
 
 ## What happens to my email and website?

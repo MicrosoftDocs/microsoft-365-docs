@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft 365 security center
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+keywords: Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 search.appverid: 
@@ -80,6 +81,9 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 > [!NOTE]
 > **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
+
+> [!TIP]
+> Device search is done from Endpoints > Search.
 
 ### Access and reporting
 

@@ -1,5 +1,5 @@
 ---
-title: Turn on the preview experience in Microsoft Defender ATP
+title: Turn on the preview experience in Microsoft Defender for Endpoint
 description: Turn on the preview experience in Microsoft Defender for Endpoint to try upcoming features.
 keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh

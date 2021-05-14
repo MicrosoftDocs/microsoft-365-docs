@@ -1,7 +1,7 @@
 ---
 title: Investigate users in Microsoft 365 security center
-description: investigate users in the Microsoft 365 security center
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
+description: Investigate users in the Microsoft 365 security center
+keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -32,9 +32,16 @@ Part of your incident investigation can include user accounts. Start with the **
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
-To get a quick summary of a user account for the incident, select the check mark next the user account name. Here's an example.
+To get a quick summary of a user account for the incident, select the check mark next to the user account name. Here's an example.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Example of the user account summary pane for an incident in the Microsoft 365 security center":::
+
+> [!NOTE]
+> The User page shows Azure Active Directory (AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
+
+In this fly-out page, you can review user threat information, including any current incidents, active alerts, and risk level as well as user exposure, accounts, devices, and more.
+
+In addition, you can take action directly in the Microsoft 365 security center to address a compromised user, confirming the user is compromised or requiring them to sign in again.
 
 From here, you can select **Go to user page** to see the details of a user account. Here's an example.
 
@@ -46,7 +53,7 @@ The Microsoft 365 security center user page combines information from Microsoft 
 
 This page shows information specific to the security risk of a user account. This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.
 
-From this page, you can perform these additional actions: 
+From this page, you can do these additional actions: 
 
 - Mark the user account as compromised
 - Require the user to sign in again
@@ -67,7 +74,11 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## Related topics
+## Next steps
+
+As needed for in-process incidents, continue your [investigation](investigate-incidents.md).
+
+## See also
 
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)

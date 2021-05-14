@@ -1,7 +1,7 @@
 ---
-title: Detect and block potentially unwanted applications with Microsoft Defender ATP for Linux
-description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, pua, pus
+title: Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on Linux
+description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender for Endpoint on Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-The potentially unwanted application (PUA) protection feature in Defender for Endpoint for Linux can detect and block PUA files on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Defender for Endpoint on Linux can detect and block PUA files on endpoints in your network.
 
 These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have poor reputation.
 
@@ -38,13 +38,13 @@ These applications can increase the risk of your network being infected with mal
 
 ## How it works
 
-Defender for Endpoint for Linux can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
+Defender for Endpoint on Linux can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
 
-When a PUA is detected on an endpoint, Defender for Endpoint for Linux keeps a record of the infection in the threat history. The history can be visualized from the Microsoft Defender Security Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
+When a PUA is detected on an endpoint, Defender for Endpoint on Linux keeps a record of the infection in the threat history. The history can be visualized from the Microsoft Defender Security Center portal or through the `mdatp` command-line tool. The threat name will contain the word "Application".
 
 ## Configure PUA protection
 
-PUA protection in Defender for Endpoint for Linux can be configured in one of the following ways:
+PUA protection in Defender for Endpoint on Linux can be configured in one of the following ways:
 
 - **Off**: PUA protection is disabled.
 - **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No record of the infection is stored in the threat history and no action is taken by the product.
@@ -65,8 +65,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### Use the management console to configure PUA protection:
 
-In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see the [Threat type settings](linux-preferences.md#threat-type-settings) section of the [Set preferences for Defender for Endpoint for Linux](linux-preferences.md) article.
+In your enterprise, you can configure PUA protection from a management console, such as Puppet or Ansible, similarly to how other product settings are configured. For more information, see the [Threat type settings](linux-preferences.md#threat-type-settings) section of the [Set preferences for Defender for Endpoint on Linux](linux-preferences.md) article.
 
 ## Related articles
 
-- [Set preferences for Defender for Endpoint for Linux](linux-preferences.md)
+- [Set preferences for Defender for Endpoint on Linux](linux-preferences.md)

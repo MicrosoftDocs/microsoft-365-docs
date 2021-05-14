@@ -42,3 +42,9 @@ If a hacker gains access to a user's mailbox, they can auto-forward the user's e
 1. Scroll to the bottom and select **Save**.
 
     Your rule has been created, and hackers will no longer be able to auto-forward messages.
+
+## Related content
+
+[Add another email alias for a user](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) (article)
+[Configure email forwarding in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (article)
+[Find and fix email delivery issues as an Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)

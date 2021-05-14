@@ -58,7 +58,7 @@ Your Productivity Score is based on the combined scores of your people and techn
 - Microsoft 365 Apps Health (100 points)
 - **Total possible = 800 points**
  
- In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
+In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
 
 ### Products included in Productivity Score 
 
@@ -69,7 +69,7 @@ Your organization's score is updated daily and reflects user actions completed i
 
 ## Prerequisites 
 
-For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps you protect your organization’s data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. Learn more about [Microsoft Intune](/mem/intune/). 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/). 
 
 > [!NOTE]
 > A license to Workplace Analytics is not required to get the Productivity Score features.
@@ -102,7 +102,10 @@ The Productivity Score home page shows your organization's total score and score
 
 **Your organization's score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
-**Peer benchmarks** allow you to compare your organization's score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365. 
+**Peer benchmarks** allow you to compare your organization's score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365.
+
+> [!NOTE]
+> Microsoft uses internal data to determine the industry that an organization maps to. Tenants under a parent organization get mapped to the same industry as the parent organization. Organizations cannot view or modify industry mappings.
 
 The endpoint analytics peer benchmark includes targets for device startup performance and recommended software configuration based on aggregated median values across all tenants.
 
@@ -150,3 +153,9 @@ This report helps organizations understand:
 ## We want to hear from you
 
 Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
+
+## Related content
+
+[Monitor Microsoft 365 activity by using reports](/microsoft-365/admin/activity-reports/activity-reports) (article)\
+[Enable Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (article)\
+[Overview of the Microsoft 365 admin center](/microsoft-365/business-video/admin-center-overview) (video)

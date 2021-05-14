@@ -201,3 +201,11 @@ If you're planning to synchronize your on-premises Active Directory with Microso
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+## Related content
+
+[Transfer a domain from Micrsoft 365 to another host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (article)
+
+[Pilot Microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (article)
+
+[Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article)

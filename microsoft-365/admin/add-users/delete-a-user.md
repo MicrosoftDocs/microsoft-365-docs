@@ -38,7 +38,7 @@ description: "Learn how to delete a user account. Decide what to do with the use
 
 If you are a global administrator, when you delete a user you can also give another user access to their email, and choose what to do with their OneDrive content.
 
-### Things to consider...
+### Things to consider
 
 Before you begin, think about what you want to do with the user's email and OneDrive content, and whether you want to keep the license or stop paying for it.
   
@@ -82,7 +82,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
 
-2. Select the names of the users that you want to delete, select **More options** (**...**), and then choose  **Delete user**.
+2. Select the names of the users that you want to delete, select the three dots (more actions), and then choose  **Delete user**.
 
    Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
 
@@ -150,7 +150,7 @@ Later when you go through the steps to add another person to your business, you'
 
 ## Delete many users at the same time
 
-See the [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell cmdlet.
+See the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
 
 ## Fix issues with deleting a user
 
