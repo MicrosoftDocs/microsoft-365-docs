@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Insights (preview)"
+title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Insights (preview)"
+description: "Microsoft 365 Network Insights"
 ---
 
-# Microsoft 365 Network Insights (preview)
+# Microsoft 365 Network Insights
 
 **Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
@@ -32,7 +32,7 @@ There are six specific network insights that may be shown for each office locati
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
-There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+There are two tenant level network insights that may be shown for the tenant. These also appear in the productivity score pages:
 
 - [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
 - [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
