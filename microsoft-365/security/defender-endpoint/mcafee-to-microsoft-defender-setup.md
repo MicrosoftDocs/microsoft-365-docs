@@ -173,15 +173,7 @@ The specific exclusions to configure depend on which version of Windows your end
 
 During this step of the setup process, you add McAfee and your other security solutions to the Microsoft Defender Antivirus exclusion list. 
 
-When you add [exclusions to Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md), you should add path and process exclusions. Keep the following points in mind:
-
-- Path exclusions exclude specific files and whatever those files access.
-
-- Process exclusions exclude whatever a process touches, but does not exclude the process itself.
-
-- If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
-
-- List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
+When you add [exclusions to Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md), you should add path and process exclusions. 
 
 You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table:
 
@@ -192,6 +184,16 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 |[Group Policy Object](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.<p>2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.<p>3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Exclusions**.<br/>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<p>4. Double-click the **Path Exclusions** setting and add the exclusions.<br/>- Set the option to **Enabled**.<br/>- Under the **Options** section, click **Show...**.<br/>- Specify each folder on its own line under the **Value name** column.<br/>- If you specify a file, make sure to enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.<p>5. Click **OK**.<p>6. Double-click the **Extension Exclusions** setting and add the exclusions.<br/>- Set the option to **Enabled**.<br/>- Under the **Options** section, click **Show...**.<br/>- Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.<p>7. Click **OK**. |
 |Local group policy object |1. On the endpoint or device, open the Local Group Policy Editor. <p>2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Exclusions**. <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.<p>3. Specify your path and process exclusions. |
 |Registry key |1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<p>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
+
+Keep the following points in mind:
+
+- Path exclusions exclude specific files and whatever those files access.
+
+- Process exclusions exclude whatever a process touches, but does not exclude the process itself.
+
+- If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
+
+- List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 
 ## Set up your device groups, device collections, and organizational units
 
