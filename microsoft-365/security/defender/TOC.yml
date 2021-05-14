@@ -41,7 +41,11 @@
         - name: Defender for Identity
           items:
             - name: Overview
-              href: eval-defender-identity-overview.md                             
+              href: eval-defender-identity-overview.md   
+            - name: Review architecture requirements
+              href: eval-defender-identity-architecture.md
+            - name: Enable the evaluation 
+              href: eval-defender-identity-enable-eval.md                      
         - name: Defender for Office 365
           items:
             - name: Overview
