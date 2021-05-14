@@ -36,7 +36,17 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 **Welcome to Phase 3 of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
+1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 
+2. [Run a detection test](#run-a-detection-test).
+
+3. [Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
+
+4. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+
+5. [Uninstall Symantec](#uninstall-symantec).
+
+[Make sure Microsoft Defender for Endpoint is working correctly](#make-sure-microsoft-defender-for-endpoint-is-working-correctly).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
