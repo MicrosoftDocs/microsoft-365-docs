@@ -34,7 +34,9 @@ ms.technology: m365d
 
 Intro
 
-![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluatino environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+replace this illustration with DfI steps
+
+![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 ## Step 1: 
 
