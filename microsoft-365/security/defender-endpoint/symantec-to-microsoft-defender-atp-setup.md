@@ -78,8 +78,6 @@ The DisableAntiSpyware registry key was used in the past to disable Microsoft De
 > - Windows Server 2019
 > - Windows Server, version 1803 (core-only mode)
 > - Windows Server 2016
-> 
-> Microsoft Defender Antivirus is built into Windows 10, but it might be disabled. In this case, proceed to [Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
