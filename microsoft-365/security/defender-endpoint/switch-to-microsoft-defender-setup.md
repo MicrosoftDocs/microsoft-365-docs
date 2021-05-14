@@ -37,7 +37,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 
-2. [Configure Microsoft Defender Antivirus for your endpoints](#configure-microsoft-defender-antivirus-for-your-endpoints).
+2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
 
 3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
 
@@ -126,7 +126,7 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 
 For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
-## Configure Microsoft Defender Antivirus for your endpoints
+## Configure Defender for Endpoint
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:
 
