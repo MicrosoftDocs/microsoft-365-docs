@@ -194,8 +194,6 @@ This driver's license case is a good example to dig into. The reason this false 
 
 
 One option is to remove the Australian driver's license information type from the policy. It's in there because it's part of the DLP policy template, but we're not forced to use it. If you're only interested in Tax File Numbers and not driver's licenses, you can just remove it. For example, you can remove it from the low volume rule in the policy, but leave it in the high volume rule so that lists of multiple drivers licenses are still detected.
-
-![Option to delete sensitive info type from rule](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
 Another option is to simply increase the instance count, so that a low volume of driver's licenses is only detected when there are multiple instances.
 
