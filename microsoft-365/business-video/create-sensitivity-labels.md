@@ -45,8 +45,8 @@ Sensitivity labels allow you to classify and protect content that is sensitive t
 1. Optionally, turn on **Endpoint data loss prevention**. Select **Next**.
 1. Optionally, turn on **Auto labeling**. Add a condition. For example, under **Detect content that contains**, select **Add a condition**. Enter the condition; for example, add a condition that if passport, Social Security, or other sensitive information is detected, the label will be added. Select **Next**.
 1. Review your settings, and select **Create**. Your label has been created. Repeat this process for any additional labels you want.
-1. By default, labels appear in Office apps in this order: **Confidential**, **Internal**, and **Public**. To change the order, for each label, select **More actions** (the ellipsis), and then move the label up or down. Typically, permissions are listed from the lowest to highest level of permissions.
-1. To add a sub-label to a label, select **More actions**, then **Add sub level**.
+1. By default, labels appear in Office apps in this order: **Confidential**, **Internal**, and **Public**. To change the order, for each label, select the three dots (more actions), and then move the label up or down. Typically, permissions are listed from the lowest to highest level of permissions.
+1. To add a sub-label to a label, select the three dots (more actions), then **Add sub level**.
 1. When finished, choose **Publish labels**, **Choose labels to publish**, and then **Add**. Select the labels you want to publish, and then select **Add**, **Done**, and then **Next**.
 1. By default, the new label policy is applied to everyone. If you want to limit who the policy is applied to, select **Choose users or groups**, and then **Add**. Select who you want the policy to apply to, and then select **Add**, **Done**, and then **Next**.
 1. If you want a default label for documents and email, select the label you want from the drop-down list. Review the remaining settings, adjust as needed, and then select **Next**.

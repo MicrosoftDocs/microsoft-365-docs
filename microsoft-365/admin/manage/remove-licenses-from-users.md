@@ -112,7 +112,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 ::: moniker-end
 
 2. Select the circles next to the names of the users that you want to unassign licenses for.
-3. At the top, select **More options (...)**, then select **Manage product licenses**.
+3. At the top, select the three dots (more actions), then select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select **Replace existing product license assignments** \> **Next**.
 5. At the bottom of the **Replace existing products** pane, select the **Remove all product licenses from the selected users** check box, then select **Replace** \> **Close**.
 
