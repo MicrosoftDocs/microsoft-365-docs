@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -604,6 +604,7 @@ These locations are support EDM sensitive information types:
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
+- Server-side auto-labeling policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 

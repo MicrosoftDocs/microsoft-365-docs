@@ -28,19 +28,7 @@ This article describes features and functionality of Content search.
 
 ## Content search limits
 
-- For a description of the limits that are applied to content searches, see [Limits for Content search](limits-for-content-search.md).
-  
-- Microsoft collects performance information for Content searches run by all organizations in the service. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
-  
-  |**Number of mailboxes**|**Average search time**|
-  |:-----|:-----|
-  |100  <br/> |30 seconds  <br/> |
-  |1,000  <br/> |45 seconds  <br/> |
-  |10,000  <br/> |4 minutes  <br/> |
-  |25,000  <br/> |10 minutes  <br/> |
-  |50,000  <br/> |20 minutes  <br/> |
-  |100,000  <br/> |25 minutes  <br/> |
-  |||
+For a description of the limits that are applied to Content searches, see [Limits for Content search](limits-for-content-search.md).
   
 ## Building a search query
 
@@ -66,7 +54,7 @@ Keep the following things in mind when using the keyword list to create a search
   
 - When you run a content search, Microsoft 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
     
-- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
+- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause.
   
 ## Partially indexed items
 
