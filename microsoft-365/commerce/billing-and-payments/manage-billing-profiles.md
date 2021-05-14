@@ -33,7 +33,7 @@ A billing profile contains a payment method, Bill-to information, and other invo
 
 ## What are billing profile roles?
 
-Roles on billing profiles have permissions to control purchases, and view and manage invoices. Assign these roles to users who track, organize, and pay invoices, like members of the procurement team in your organization.
+Roles on billing profiles have permissions to control purchases, and view and manage invoices. Assign these roles to users who track, organize, and pay invoices. For example, members of the procurement team in your organization.
 
 | Role                         | Description                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
@@ -54,11 +54,11 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 Each billing profile includes the following information:
 
 - **Billing profile name and status** &ndash; The unique name of the billing profile, and whether the billing profile is active or disabled for purchasing.
-- **Invoice settings** &ndash; Currency based on the country of the billing account, information about invoice frequency and date, he option to receive invoices as email attachments and an optional PO number field
+- **Invoice settings** &ndash; Currency based on the country of the billing account, information about invoice frequency and date, the option to receive invoices as email attachments, and an optional PO number field
 - **Payment methods** &ndash; Shows the primary and backup payment method, if any, for the profile
 - **Billing account** &ndash; Name of the billing account the profile is related to. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md).
 - **Contact information** &ndash; Billing address and contact name and email address
-- **Billing profile roles** &ndash; A list of people who are assigned one of the billing profile roles to do things for that profile, like pay bills, add a PO number, or replace the payment method that is used to make purchases.
+- **Billing profile roles** &ndash; A list of people who are assigned one of the billing profile roles to do things for that profile. For example, pay bills, add a PO number, or replace the payment method that is used to make purchases.
 
 > [!NOTE]
 >
