@@ -34,9 +34,25 @@ To preview a sample of results returned by a search:
 
 3. On the bottom of the flyout page, click **Review sample**.
 
+   ![Click Review sample on the flyout page to preview results](../media/PreviewSearchResults1.png)
+
    A page is displayed containing up a sample of the search results.
 
 4. Select an item to view its contents in the reading pane.
+
+   ![Preview items in the reading pane](../media/PreviewSearchResults2.png)
+
+   In the previous screenshot, notice that keywords from the search query are highlighted when previewing items.
+
+## How the search results samples are selected
+
+A maximum of 1,000 randomly selected items are available to preview. In addition to being randomly selected, items available for preview must also meet the following criteria:
+
+- A maximum of 100 items from a single content location (a mailbox or a site) can be previewed. This means that it's possible that less than 1,000 items might be available for preview. For example, if you search four mailboxes and the search returns 1,500 estimated items, only 400 will be available for preview because only 100 items from each mailbox can be previewed.
+
+- For mailbox items, only email messages are available to preview. Items like tasks, calendar items, and contacts can't be previewed.
+
+- For site items, only documents are available to preview. Items like folders, lists, or list attachments can't be previewed.
 
 ## File types supported when previewing search results
 
