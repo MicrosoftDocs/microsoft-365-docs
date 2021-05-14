@@ -20,7 +20,7 @@ ms.collection:
   - m365solution-scenario
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 03/03/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -34,12 +34,12 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |--|--|--|
 ||*You are here!* | |
 
-**Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
 2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-3. [Add Microsoft Defender for Endpoint to the exclusion list for McAfee](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee).
+3. [Add Defender for Endpoint to the exclusion list for McAfee](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee).
 4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add McAfee to the exclusion list for Microsoft Defender for Endpoint](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
+5. [Add McAfee to the exclusion list for Defender for Endpoint](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
 6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
@@ -112,7 +112,7 @@ If you're using Windows Server 2016 and are having trouble enabling Microsoft De
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-Because your organization is still using McAfee, you must set Microsoft Defender Antivirus to passive mode. That way, McAfee and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Microsoft Defender for Endpoint.
+Because your organization is still using McAfee, you must set Microsoft Defender Antivirus to passive mode. That way, McAfee and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -164,7 +164,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for McAfee
 
-This step of the setup process involves adding Microsoft Defender for Endpoint to the exclusion list for McAfee and any other security products your organization is using. 
+This step of the setup process involves adding Defender for Endpoint to the exclusion list for McAfee and any other security products your organization is using. 
 
 > [!TIP]
 > To get help configuring exclusions, refer to McAfee documentation, such as the following article: [McAfee Endpoint Security 10.5.0 - Threat Prevention Module Product Guide (McAfee ePolicy Orchestrator) - Windows: Configuring exclusions](https://docs.mcafee.com/bundle/endpoint-security-10.5.0-threat-prevention-product-guide-epolicy-orchestrator-windows/page/GUID-71C5FB4B-A143-43E6-8BF0-8B2C16ABE6DA.html).
@@ -201,7 +201,7 @@ You can choose from several methods to add your exclusions to Microsoft Defender
 > [!IMPORTANT]
 > In general, you shouldn't have to add exclusions for Defender for Endpoint, especially if you have already defined exclusions for Microsoft Defender Antivirus. However, if you run into issues where Microsoft Defender Antivirus won't stay in passive mode, perform the following task. Otherwise, skip this section and proceed to [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
 
-To add exclusions to Microsoft Defender for Endpoint, you create [indicators](indicator-file.md).
+To add exclusions to Defender for Endpoint, you create [indicators](indicator-file.md).
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
 
@@ -267,6 +267,6 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [migrating from McAfee to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [migrating from McAfee to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md)
+- [Proceed to Phase 3: Onboard to Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md)
