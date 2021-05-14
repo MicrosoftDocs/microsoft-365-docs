@@ -27,11 +27,14 @@ description: "Learn how to buy a domain name in Microsoft 365."
 
 # Buy a domain name
 
+> [!NOTE]
+> If your organization uses Office 365 operated by 21Vianet in China, see [How to buy a domain for Office 365 operated by 21Vianet in China](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md).
+
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
-### Sign in and go to Settings \> Domains \> Buy a domain
+## Sign in and go to Settings \> Domains \> Buy a domain
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -63,23 +66,21 @@ You can choose from the following top level domains for your domain.
 > [!NOTE]
 > When you select **Buy domain**, you may be redirected to your Microsoft partner's website if the tenant is purchased/managed through a Microsoft partner.
 
-### Domain Privacy
+## Domain Privacy
 We offer a free Domain Privacy Subscription with the purchase of a domain. This keeps your contact information attached to the registration of your domain with ICANN private. [Learn more.](https://whois.icann.org/en/privacy-and-proxy-services)
   
-### Buy a domain from another domain registrar
+## Buy a domain from another domain registrar
 If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect). 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
-### Transfer your domain to a different domain registrar
+## Transfer your domain to a different domain registrar
 
 If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
 Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
- 
-
 
 
 ::: moniker range="o365-21vianet"
@@ -99,7 +100,7 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
 > [!NOTE]
 > The SharePoint Online Public Website information in this article only applies if your organization purchased Microsoft 365 prior to March 9, 2015. 
 
-## Domain registrars that support all DNS records required for Microsoft 365
+### Domain registrars that support all DNS records required for Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -111,10 +112,10 @@ After you register your domain (at a domain registrar), you sign in to Microsoft
     
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[Add a domain to Microsoft 365](../setup/add-domain.md)
+[Add a domain to Microsoft 365](../setup/add-domain.md) (article)
 
-[Domains FAQ](../setup/domains-faq.yml)
+[Domains FAQ](../setup/domains-faq.yml) (article)
 
-[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md).
+[Update DNS records to keep your website with your current hosting provider](../dns/update-dns-records-to-retain-current-hosting-provider.md) (article)

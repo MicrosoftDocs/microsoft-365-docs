@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,6 +16,7 @@ ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections

@@ -1,5 +1,5 @@
 ---
-title: Run and customize on-demand scans in Microsoft Defender AV
+title: Run and customize on-demand scans in Microsoft Defender Antivirus
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
@@ -8,10 +8,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/13/2020
+ms.date: 05/05/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde

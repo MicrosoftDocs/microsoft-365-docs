@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- commerce_subscriptions
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160

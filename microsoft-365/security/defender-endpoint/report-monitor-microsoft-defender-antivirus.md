@@ -8,7 +8,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,6 +15,7 @@ ms.date: 12/07/2020
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Report on Microsoft Defender Antivirus
