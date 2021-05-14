@@ -33,7 +33,7 @@ description: "Learn to track down any problems you run into while setting up a c
 Getting your domain set up to work with Microsoft 365 can be challenging. The DNS system is nitpicky to work with, and the DNS setup for your domain affects important business activities, like email!
 
 > [!NOTE]
-> You can check for problems with your domain by checking its status. Go to **Setup** > **Domains** and view the notifications in the **Status** column. If you see an issue, select More actions (three dots), and then choose **Check health**. The pane that opens will describe any issues occurring with your domain.
+> You can check for problems with your domain by checking its status. Go to **Setup** > **Domains** and view the notifications in the **Status** column. If you see an issue, select the three dots (more actions), and then choose **Check health**. The pane that opens will describe any issues occurring with your domain.
   
 ## What's going on?
 
