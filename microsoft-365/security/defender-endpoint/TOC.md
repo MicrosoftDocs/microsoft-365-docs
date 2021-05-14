@@ -61,7 +61,7 @@
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
-##### [Onboard Windows 10, Windows Server 2012 R2, 2016, SAC version 1803, and 2019]()
+##### [Onboard Windows 10, and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, and 2019](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)

@@ -197,7 +197,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
     1. In the navigation pane, select **Settings** > **Offboarding**.
 
-    1. Select Windows 10 as the operating system.
+    1. Select the operating system.
     
     1. In the **Deployment method** field, select **Group policy**.
 

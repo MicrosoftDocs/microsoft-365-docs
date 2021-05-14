@@ -86,8 +86,11 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 2. Select **Windows Server 2012 R2 and 2016**.
 3. Select **Download installation package** and save the .msi file. 
   
-    1. Run the installation package to install the application. 
+    1. Run the installation package to install the application. Follow the installation wizard.
 
+    ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
+
+      
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
@@ -98,10 +101,6 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 ## Windows Server Semi-Annual Channel and Windows Server 2019
 
 The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
-
-
-### Prerequisites 
-Verify that Microsoft Defender Antivirus is installed and is active.
 
 
 ### Download package
@@ -132,6 +131,8 @@ Verify that Microsoft Defender Antivirus is installed and is active.
     1. Confirm  that a recent event containing the passive mode event is found:
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+
+
 
 
 ## Verify onboarding
