@@ -10,6 +10,7 @@ ms.pagetype: security
 localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 12/28/2020
 ms.reviewer: 
