@@ -36,7 +36,13 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 
+1. [Reinstall or enable Microsoft Defender Antivirus on your endpoints](#reinstall-or-enable-microsoft-defender-antivirus-on-your-endpoints).
 
+2. [Add Microsoft Defender for Endpoint to the exclusion list for McAfee](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee).
+
+3. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
+
+4. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Reinstall or enable Microsoft Defender Antivirus on your endpoints
 
