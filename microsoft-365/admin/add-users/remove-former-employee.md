@@ -30,12 +30,18 @@ description: "Follow the steps in this solution to remove a former employee from
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data, and how to allow other employees to access the data.
 
-> [!IMPORTANT]
-> Although we've numbered the steps in this solution and you don't have to complete the solution using the exact order, we do recommend doing the steps this way.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
 
 ## Before you begin
 
 You need to be a global administrator to complete the steps in this solution.
+
+## Solution: Remove a former employee
+
+> [!IMPORTANT]
+> Although we've numbered the steps in this solution and you don't have to complete the solution using the exact order, we do recommend doing the steps this way.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Steps for removing a former employee from your organization":::
 
 |||
 |:-----|:-----|

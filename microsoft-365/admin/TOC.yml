@@ -274,8 +274,6 @@
            href: manage/manage-office-scripts-settings.md  
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
-         - name: Manage Microsoft Rewards 
-           href: manage/manage-microsoft-rewards.md 
          - name: Manage Microsoft feedback for your organization
            href: /admin/manage/manage-feedback-ms-org.md
          - name: Set up release options
@@ -423,4 +421,4 @@
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md

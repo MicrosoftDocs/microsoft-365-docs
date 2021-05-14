@@ -47,6 +47,9 @@
           href: topic-experiences-security-trimming.md 
         - name: Search for topics 
           href: search.md             
+        - name: Manage topics at scale 
+          href: scale-topics.md             
+
 
     - name: Adoption
       items: 
