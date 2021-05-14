@@ -90,6 +90,14 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 
     ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
 
+    OR 
+
+    Run the following command to install the msi silently:
+
+    ```
+    Msiexec /i md4ws.msi /quiet 
+    ```
+
       
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
@@ -131,7 +139,6 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
     1. Confirm  that a recent event containing the passive mode event is found:
 
        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
-
 
 
 
