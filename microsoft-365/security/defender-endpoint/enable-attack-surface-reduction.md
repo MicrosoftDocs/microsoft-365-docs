@@ -94,6 +94,76 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
+## MEM
+
+You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+
+1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
+
+   ![MEM Create Profile](images/mem01-create-profile.png)
+
+2. In **Create a profile**, in the following two drop-down lists, select the following:
+
+   - In **Platform**, select **Windows 10 and later**
+   - In **Profile type**, select **Templates**
+
+   Select **Custom**, and then click **Create**.
+
+   ![MEM rule profile attributes](images/mem02-profile-attributes.png)
+
+3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
+
+   ![MEM basic attributes](images/mem03-1-basics.png)
+
+4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
+
+   ![MEM Configuration settings](images/mem04-2-configuration-settings.png)
+
+5. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
+
+   - In **Name**, type a name for the rule.
+   - In **Description**, type a brief description.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding.
+   - In **Data type**, select **String**.
+   - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   ![MEM OMA URI configuration](images/mem05-add-row-oma-uri.png)
+
+6. Click **Save**. **Add Row** closes. In **Custom**, click **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
+
+   - Click **Select Scope tags**, select the scope tag (optional) and then click **Next**.
+   - Or click **Next**
+
+7. In step **4 Assignments**, in **Included Groups** - for the groups that you want this rule to apply - select from the following options:
+
+   - **Add groups**
+   - **Add all users**
+   - **Add all devices**
+
+   ![MEM assignments](images/mem06-4-assignments.png)
+
+8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then click **Next**.
+
+9. In step **5 Applicability Rules** for the following settings, do the following:
+
+   - In **Rule**, select either **Assign profile if**, or **Don’t assign profile if**
+   - In **Property**, select the property to which you want this rule to apply
+   - In **Value**, enter the applicable value or value range
+
+   ![MEM Applicability rules](images/mem07-5-applicability-rules.png)
+
+10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
+
+   ![MEM Review and create](images/mem08-6-review-create.png)
+
+>[!NOTE]
+> Rules are active and live within minutes.
+
+>[!NOTE]
+> Conflict handling:
+> If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
+> Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
+
 ## MDM
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
@@ -162,76 +232,6 @@ Example:
 
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
-
-## Microsoft Endpoint Manager custom procedure
-
-You can use a Microsoft Endpoint Manager (MEM) admin center to configure custom ASR rules.
-
-1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
-
-   ![MEM Create Profile](images/mem01-create-profile.png)
-
-2. In **Create a profile**, in the following two drop-down lists, select the following:
-
-   - In **Platform**, select **Windows 10 and later**
-   - In **Profile type**, select **Templates**
-
-   Select **Custom**, and then click **Create**.
-
-   ![MEM rule profile attributes](images/mem02-profile-attributes.png)
-
-3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
-
-   ![MEM basic attributes](images/mem03-1-basics.png)
-
-4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
-
-   ![MEM Configuration settings](images/mem04-2-configuration-settings.png)
-
-5. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
-
-   - In **Name**, type a name for the rule.
-   - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding.
-   - In **Data type**, select **String**.
-   - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
-
-   ![MEM OMA URI configuration](images/mem05-add-row-oma-uri.png)
-
-6. Click **Save**. **Add Row** closes. In **Custom**, click **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
-
-   - Click **Select Scope tags**, select the scope tag (optional) and then click **Next**.
-   - Or click **Next**
-
-7. In step **4 Assignments**, in **Included Groups** - for the groups that you want this rule to apply - select from the following options:
-
-   - **Add groups**
-   - **Add all users**
-   - **Add all devices**
-
-   ![MEM assignments](images/mem06-4-assignments.png)
-
-8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then click **Next**.
-
-9. In step **5 Applicability Rules** for the following settings, do the following:
-
-   - In **Rule**, select either **Assign profile if**, or **Don’t assign profile if**
-   - In **Property**, select the property to which you want this rule to apply
-   - In **Value**, enter the applicable value or value range
-
-   ![MEM Applicability rules](images/mem07-5-applicability-rules.png)
-
-10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
-
-   ![MEM Review and create](images/mem08-6-review-create.png)
-
->[!NOTE]
-> Rules are active and live within minutes.
-
->[!NOTE]
-> Conflict handling:
-> If you assign a device two different ASR policies, the way conflict is handled is rules that are assigned different states, there is no conflict management in place, and the result is an error.
-> Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
 
 ## PowerShell
 
