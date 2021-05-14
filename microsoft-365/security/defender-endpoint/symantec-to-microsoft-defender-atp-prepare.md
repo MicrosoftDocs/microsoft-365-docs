@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
 ---
@@ -37,9 +37,18 @@ ms.reviewer: depicker, yongrhee, chriggs
 **Welcome to the Prepare phase of [migrating from Symantec to Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. 
 
 This migration phase includes the following steps:
-1. [Get Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint).
-2. [Grant access to the Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
-3. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
+
+
+## Update your organization's devices
+
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint.
+
+### Make sure Symantec is up to date
+
+Keep your existing endpoint protection solution up to date, and make sure that your organization's devices have the latest security updates.
+
+Need help? See Broadcom's documentation: [Symantec Endpoint Protection Installation and Administration Guide](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all.html)
+
 
 ## Get Microsoft Defender for Endpoint
 
