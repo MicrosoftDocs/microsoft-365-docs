@@ -70,7 +70,7 @@ Add priority accounts from the Active users page.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Go to **Users** > **Active users** and choose **...** at the top of the page. Select **Manage priority accounts**.
+2. Go to **Users** > **Active users** and select the three dots (more actions) at the top of the page. Select **Manage priority accounts**.
 
 3. Select **Add accounts**, and on the **Add Priority accounts** page, in the search field, type the name of the person you want to add to the priority accounts list.
 
