@@ -162,7 +162,6 @@ This step of the migration process involves configuring Defender for Endpoint. W
 |Control Panel in Windows     |Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.        |
 |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/>or<br/>[Group Policy Management Console](use-group-policy-microsoft-defender-antivirus.md)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus`. <p>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<p>3. Choose **Edit policy setting**, and make sure that policy is disabled. This enables Microsoft Defender Antivirus. <p>**NOTE**: You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows. |
 
-
 ## Add Microsoft Defender for Endpoint to the exclusion list for McAfee
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for McAfee and any other security products your organization is using. 
