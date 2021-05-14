@@ -30,7 +30,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Capabilities** - Prevent installation with or without exclusion based on various device properties.
 
-**Desription**
+**Description**
 - Applied at machine level: the same policy applies for any logged on user.
 - Supports MEM and GPO.
 - Supported  ‘[Device Properties](#device-properties)’ as listed.
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 - *Audit* Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion.
 - *Prevent* Read or Write or Execute access with or without an exclusion - Allow specific device based on various device properties.
 
-**Desription**
+**Description**
 - Applied at either machine or user or both – only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
 - Supported  ‘[Device Properties](#device-properties)’ as listed.
@@ -66,9 +66,9 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 ### Windows Portable Device Access Control
 
-**Capabilities** - Deny Read or Write access to any [Windows Portable Device](/windows-hardware/drivers/portable/)., for example: Tablet, iPhone.
+**Capabilities** - Deny Read or Write access to any [Windows Portable Device](/windows-hardware/drivers/portable/), for example: Tablet, iPhone.
 
-**Desription**
+**Description**
 - Applied at either machine or user or both.
 - Support MEM OMA-URI and GPO.
 
@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Capabilities** - Audit or Warn or Prevent a user from copying an item or information to removable media or USB device.
 
-**Desription** - For more information on Windows, see [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
+**Description** - For more information on Windows, see [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
 **Supported Platform** - Windows 10
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 - Block data to be written to removable drives that aren't BitLocker protected.
 - Block access to removable drives unless they were encrypted on a computer owned by your organization
  
-**Desription** - For more information on Windows, see [BitLocker – Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+**Description** - For more information on Windows, see [BitLocker – Removable Drive Settings](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Supported Platform** - Windows 10
 
