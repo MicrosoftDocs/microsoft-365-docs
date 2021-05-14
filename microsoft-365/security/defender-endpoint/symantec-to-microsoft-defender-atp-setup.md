@@ -37,14 +37,39 @@ ms.reviewer: depicker, yongrhee, chriggs
 **Welcome to the Setup phase of [migrating from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This phase includes the following steps:
 
 
-## Enable or reinstall Microsoft Defender Antivirus (for certain versions of Windows)
+## Reinstall/enable Microsoft Defender Antivirus on your endpoints
+
+On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
+
+On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. When the client endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode until the non-Microsoft antivirus solution is uninstalled. Microsoft Defender Antivirus should still be installed, but is likely disabled at this point of the migration process. Unless Microsoft Defender Antivirus has been uninstalled, you do not need to take any action for your Windows clients.
+
+On Windows servers, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus is disabled manually (if not uninstalled). The following tasks help ensure that Microsoft Defender Antivirus is installed and set to passive mode on Windows Server.
+
+- Set DisableAntiSpyware to false on Windows Server (only if necessary)
+
+- Reinstall Microsoft Defender Antivirus on Windows Server
+
+- Set Microsoft Defender Antivirus to passive mode on Windows Server
+
+### Set DisableAntiSpyware to false on Windows Server
+
+The DisableAntiSpyware registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, Symantec. In general, you should not have this registry key on your Windows devices and endpoints; however, if you do have `DisableAntiSpyware` configured, here's how to set its value to false:
+
+1. On your Windows Server device, open Registry Editor.
+
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+
+3. In that folder, look for a DWORD entry called **DisableAntiSpyware**.
+
+   - If you do not see that entry, you're all set.
+   - If you do see DisableAntiSpyware, proceed to step 4.
+
+4. Right-click the DisableAntiSpyware DWORD, and then choose **Modify**.
+
+5. Set the value to `0`. (This action sets the registry key's value to *false*.)
 
 > [!TIP]
-> If you're running Windows 10, you do not need to perform this task. Proceed to **[Enable Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
-
-On certain versions of Windows, Microsoft Defender Antivirus might have been uninstalled or disabled. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as Symantec. To learn more, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
-
-Now that you're moving from Symantec to Defender for Endpoint, you'll need to enable or reinstall Microsoft Defender Antivirus, and set it to passive mode. 
+> To learn more about this registry key, see **[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**.
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server
 
@@ -58,31 +83,24 @@ Now that you're moving from Symantec to Defender for Endpoint, you'll need to en
 
 1. As a local administrator on the endpoint or device, open Windows PowerShell.
 
-1. Run the following PowerShell cmdlets:<br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
+1. Run the following PowerShell cmdlets:
+
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` 
+   
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`
 
     > [!NOTE]
     > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-    > Example:<br/>
+    > Examples:
+    >
     > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+    >
     > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    `Get-Service -Name windefend`
 
-#### Are you using Windows Server 2016?
-
-If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet:
-
-`mpcmdrun -wdenable`
-
-> [!TIP]
-> Still need help? See [Microsoft Defender Antivirus on Windows Server 2016 and 2019](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016).
-
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
-
-Because your organization is still using Symantec, you must set Microsoft Defender Antivirus to passive mode. That way, Symantec and Microsoft Defender Antivirus can run side by side until you have finished onboarding to Defender for Endpoint.
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -96,6 +114,18 @@ Because your organization is still using Symantec, you must set Microsoft Defend
 >- [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 >- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
+>
+> After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server.
+
+### Are you using Windows Server 2016?
+
+If you have endpoints running Windows Server 2016, you cannot run Microsoft Defender Antivirus alongside a non-Microsoft antivirus/antimalware solution. Microsoft Defender Antivirus cannot run in passive mode on Windows Server 2016. In this case, you'll need to uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus instead. To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
+
+If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet:
+
+`mpcmdrun -wdenable`
+
+For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ## Enable Microsoft Defender Antivirus
 
