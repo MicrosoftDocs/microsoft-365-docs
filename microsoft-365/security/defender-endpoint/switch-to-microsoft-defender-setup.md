@@ -57,7 +57,9 @@ On Windows clients, when a non-Microsoft antivirus/antimalware solution is insta
 On Windows servers, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus is disabled manually (if not uninstalled). The following tasks help ensure that Microsoft Defender Antivirus is installed and set to passive mode on Windows Server.
 
 - [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)
+
 - [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server) 
+
 - [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
 
 ### Set DisableAntiSpyware to false on Windows Server
