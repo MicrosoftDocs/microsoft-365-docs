@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/13/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
