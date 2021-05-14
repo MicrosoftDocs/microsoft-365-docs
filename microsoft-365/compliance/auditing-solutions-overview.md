@@ -134,6 +134,8 @@ The first step is to set up Basic Audit and then start running audit log searche
 
 3. Search the audit log. After completing step 1 and step 2, users in your organization can use the audit log search tool (or corresponding cmdlet) to search for audited activities.
 
+For more detailed instructions, see [Set up Basic Audit](set-up-basic-audit.md).
+
 ### Set up Advanced Audit
 
 If your organization has a subscription that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
@@ -153,6 +155,8 @@ If your organization has a subscription that supports Advanced Audit, perform th
 3. Set up audit log retention policies. In additional to the default policy that retains Exchange, SharePoint, and Azure AD audit records for one year, you can create additional audit log retention policies to meet the requirements of your organization's security operations, IT, and compliance teams.
 
 4. Search for crucial events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for crucial events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
+
+For more detailed instructions, see [Set up Advanced Audit](set-up-advanced-audit.md).
 
 ## Training
 
