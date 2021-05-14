@@ -119,7 +119,7 @@ If you are using Windows Server 2016, you might have to start Microsoft Defender
 
 ## Get updates for Microsoft Defender Antivirus
 
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md).
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in passive mode.
 
 There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 - Security intelligence updates
