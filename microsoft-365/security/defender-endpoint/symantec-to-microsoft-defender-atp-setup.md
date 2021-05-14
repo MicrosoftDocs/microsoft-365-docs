@@ -36,6 +36,17 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 **Welcome to the Setup phase of [migrating from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. This phase includes the following steps:
 
+1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
+
+2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
+
+3. [Add Microsoft Defender for Endpoint to the exclusion list for Symantec](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec).
+
+4. [Add Symantec to the exclusion list for Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
+
+5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+
+6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection). 
 
 ## Reinstall/enable Microsoft Defender Antivirus on your endpoints
 
