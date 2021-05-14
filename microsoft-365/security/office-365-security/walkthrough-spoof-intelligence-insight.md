@@ -147,19 +147,28 @@ For detailed syntax and parameter information, see [Get-PhishFilterPolicy](/powe
 
 To configure allowed and blocked senders in spoof intelligence, follow these steps:
 
-1. Capture the current list of detected spoofed senders by writing the output of the **Get-PhishFilterPolicy** cmdlet to a CSV file:
+1. Capture the current list of detected spoofed senders by writing the output of the **Get-PhishFilterPolicy** cmdlet to a CSV file by running the following command:
 
    ```powershell
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-2. Edit the CSV file to add or modify the **SpoofedUser** (email address) and **AllowedToSpoof** (Yes or No) values. Save the file, read the file, and store the contents as a variable named `$UpdateSpoofedSenders`:
+2. Edit the CSV file to add or modify the following values:
+   - **Sender** (domain in source server's PTR record or IP/24 address)
+   - **SpoofedUser**: One of the following values:
+     - The internal user's email address.
+     - The external user's email domain.
+     - A blank value that indicates you want to block or allow any and all spoofed messages from the specified **Sender**, regardless of the spoofed email address.
+   - **AllowedToSpoof** (Yes or No)
+   - **SpoofType** (Internal or External)
+
+   Save the file, read the file, and store the contents as a variable named `$UpdateSpoofedSenders` by running the following command:
 
    ```powershell
    $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
    ```
 
-3. Use the `$UpdateSpoofedSenders` variable to configure the spoof intelligence policy:
+3. Use the `$UpdateSpoofedSenders` variable to configure the spoof intelligence policy by running the following command:
 
    ```powershell
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
