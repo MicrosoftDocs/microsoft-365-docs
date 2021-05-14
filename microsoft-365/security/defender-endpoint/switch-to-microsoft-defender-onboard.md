@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/13/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -84,12 +84,19 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
-Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You'll have to configure passive mode manually on Windows Server. Microsoft Defender Antivirus should be in passive mode automatically on your Windows client endpoints.
+Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
+
+|Method  |What to do  |
+|---------|---------|
+|Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
+|PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.          |
+
+> [!NOTE]
+> You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
 
 ### Set Microsoft Defender Antivirus on Windows Server to passive mode manually
 
-> [!IMPORTANT]
-> You can set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019. But passive mode is not supported on Windows Server 2016. To learn more, see [Antivirus solution compatibility with Microsoft Defender for Endpoint](defender-compatibility.md).
+To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, follow these steps:
 
 1. Open Registry Editor, and then navigate to <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -104,17 +111,9 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 >- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### Verify that Windows clients are running Microsoft Defender Antivirus in passive mode
+### Start Microsoft Defender Antivirus on Windows Server 2016
 
-You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
-
-|Method  |What to do  |
-|---------|---------|
-|Command Prompt     | 1. On a Windows device, open Command Prompt as an administrator.<p>2. Type `sc query windefend`, and then press Enter.<p>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-|PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator.<p>2. Run the [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet. <p>3. In the list of results, look for either **AMRunningMode: Passive Mode** or **AMRunningMode: SxS Passive Mode**.          |
-
-> [!NOTE]
-> You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
+If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can do this by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
 ## Get updates for Microsoft Defender Antivirus
 
@@ -128,21 +127,14 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 ## Uninstall your non-Microsoft solution
 
-Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall your non-Microsoft endpoint protection solution.
-
-To get help with this step, reach out to your solution provider's technical support team.
+Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, and Microsoft Defender Antivirus is installed and enabled, your next step is to uninstall your non-Microsoft endpoint protection solution. To get help with this task, reach out to your solution provider's technical support team.
 
 ## Make sure Microsoft Defender Antivirus is running and in active mode
 
-Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Microsoft Defender Antivirus is running and in active mode.
-
-To do this, visit the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
+Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. One good way to do this is by visiting the Microsoft Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Try one or more of the demo scenarios on that page, including at least the following:
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
-
-> [!IMPORTANT]
-> If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can do this by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
 ## Next steps
 
