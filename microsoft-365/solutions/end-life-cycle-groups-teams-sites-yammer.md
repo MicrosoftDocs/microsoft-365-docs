@@ -260,3 +260,7 @@ Conversations can be moved to another Yammer group by any user, not just owners 
 **Export network data**
 
 Yammer network administrators [export network data](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). However, doing so will export all conversations for the entire network. The resulting export lists the Group ID. It's possible to filter conversations based on this ID.
+
+## Related topics
+
+[Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee)
