@@ -33,13 +33,13 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |--|--|--|
 ||*You are here!* | |
 
-**Welcome to the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
 
 1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 
 2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
 
-3. [Add Microsoft Defender for Endpoint to the exclusion list for your existing solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
+3. [Add Defender for Endpoint to the exclusion list for your existing solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
 
 4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
@@ -138,7 +138,7 @@ This step of the migration process involves configuring Microsoft Defender Antiv
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
-This step of the setup process involves adding Microsoft Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. 
+This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. 
 
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
@@ -198,6 +198,6 @@ Using Configuration Manager and your device collection(s), configure your antima
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [switching to Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Microsoft Defender for Endpoint](switch-to-microsoft-defender-onboard.md)
+- [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md)
