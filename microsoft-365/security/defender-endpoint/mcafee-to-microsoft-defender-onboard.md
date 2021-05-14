@@ -37,6 +37,18 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 **Welcome to Phase 3 of [migrating from McAfee Endpoint Security (McAfee) to Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
+1. [Onboard devices to Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
+
+2. [Run a detection test](#run-a-detection-test).
+
+3. [Confirm that Microsoft Defender Antivirus is in passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).
+
+4. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
+
+5. [Uninstall McAfee](#uninstall-mcafee).
+
+6. [Make sure Defender for Endpoint is working correctly](#make-sure-defender-for-endpoint-is-working-correctly).
+
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) and sign in.
@@ -71,7 +83,7 @@ To verify that your onboarded devices are properly connected to Microsoft Defend
 |macOS<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)     |Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <p>For more information, see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md).        |
 |Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <p>For more information, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
-### Confirm that Microsoft Defender Antivirus is in passive mode
+## Confirm that Microsoft Defender Antivirus is in passive mode
 
 Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use either Command Prompt or PowerShell to perform this task, as described in the following table:
 
@@ -120,7 +132,7 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 Now that you have onboarded your organization's devices to Microsoft Defender for Endpoint, your next step is to uninstall McAfee. To get help with this step, go to your McAfee ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com)).
 
-## Make sure Defender for Endpoint is in active mode
+## Make sure Defender for Endpoint is working correctly
 
 Now that you have uninstalled McAfee, your next step is to make sure that Microsoft Defender Antivirus and endpoint detection and response are enabled and in active mode.
 
