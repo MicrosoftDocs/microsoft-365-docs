@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,7 +21,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---

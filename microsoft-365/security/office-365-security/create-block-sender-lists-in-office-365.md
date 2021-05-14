@@ -66,7 +66,7 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 ## Use blocked sender lists or blocked domain lists
 
-When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam**, and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **High confidence spam**, and the action that you've configured for the **High confidence spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 The maximum limit for these lists is approximately 1000 entries.
 
