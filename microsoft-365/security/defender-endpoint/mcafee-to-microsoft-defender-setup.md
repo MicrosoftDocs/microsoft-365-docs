@@ -44,7 +44,9 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
-5. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
+5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+
+6. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
 ## Reinstall or enable Microsoft Defender Antivirus on your endpoints
 
