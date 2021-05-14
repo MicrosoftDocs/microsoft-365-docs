@@ -20,7 +20,6 @@ ms.date: 02/10/2021
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

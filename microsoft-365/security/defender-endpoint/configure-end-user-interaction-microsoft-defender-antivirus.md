@@ -19,8 +19,6 @@ ms.technology: mde
 
 # Configure end-user interaction with Microsoft Defender Antivirus
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

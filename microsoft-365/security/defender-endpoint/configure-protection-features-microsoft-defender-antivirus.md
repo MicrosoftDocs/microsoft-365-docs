@@ -19,8 +19,6 @@ ms.technology: mde
 
 # Configure behavioral, heuristic, and real-time protection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

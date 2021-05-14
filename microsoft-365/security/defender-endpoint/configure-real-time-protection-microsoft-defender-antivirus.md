@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

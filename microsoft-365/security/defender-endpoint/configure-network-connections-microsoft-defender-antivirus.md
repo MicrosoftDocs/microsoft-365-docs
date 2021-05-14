@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Configure and validate Microsoft Defender Antivirus network connections
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

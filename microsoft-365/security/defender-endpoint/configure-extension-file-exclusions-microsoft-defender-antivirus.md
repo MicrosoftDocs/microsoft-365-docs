@@ -18,7 +18,6 @@ ms.technology: mde
 
 # Configure and validate exclusions based on file extension and folder location
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

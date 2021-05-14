@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

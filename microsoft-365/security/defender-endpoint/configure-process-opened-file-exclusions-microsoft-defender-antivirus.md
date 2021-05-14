@@ -19,8 +19,6 @@ ms.technology: mde
 
 # Configure exclusions for files opened by processes
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

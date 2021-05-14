@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Configure remediation for Microsoft Defender Antivirus detections
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Configure Microsoft Defender Antivirus features
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 

@@ -20,8 +20,6 @@ ms.technology: mde
 
 # Configure the notifications that appear on endpoints
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
