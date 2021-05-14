@@ -35,24 +35,21 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ||*You are here!* | |
 
 **Welcome to the Setup phase of [migrating from McAfee Endpoint Security (McAfee) to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
-1. [Enable Microsoft Defender Antivirus and confirm it's in passive mode](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode).
-2. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-3. [Add Defender for Endpoint to the exclusion list for McAfee](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee).
-4. [Add McAfee to the exclusion list for Microsoft Defender Antivirus](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Add McAfee to the exclusion list for Defender for Endpoint](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint).
-6. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
-7. [Configure antimalware policies and real-time protection](#configure-antimalware-policies-and-real-time-protection).
 
-## Enable Microsoft Defender Antivirus and confirm it's in passive mode
 
-On certain versions of Windows, such as Windows Server, Microsoft Defender Antivirus might have been uninstalled or disabled when your McAfee solution was installed. This is because Microsoft Defender Antivirus does not enter passive or disabled mode when you install a third-party antivirus product, such as McAfee. (To learn more about this, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).)
+
+## Reinstall or enable Microsoft Defender Antivirus on your endpoints
+
+On certain versions of Windows, Microsoft Defender Antivirus is likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+
+On Windows clients, when a non-Microsoft antivirus/antimalware solution is installed, Microsoft Defender Antivirus is disabled automatically until those devices are onboarded to Defender for Endpoint. When the client endpoints are onboarded to Defender for Endpoint, Microsoft Defender Antivirus goes into passive mode until the non-Microsoft antivirus solution is uninstalled. Microsoft Defender Antivirus should still be installed, but is likely disabled at this point of the migration process. Unless Microsoft Defender Antivirus has been uninstalled, you do not need to take any action for your Windows clients.
+
+On Windows servers, when a non-Microsoft antivirus/antimalware in installed, Microsoft Defender Antivirus is disabled manually (if not uninstalled). The following tasks help ensure that Microsoft Defender Antivirus is installed and set to passive mode on Windows Server.
 
 This step of the migration process includes the following tasks:
-- [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server)
+- [Setting DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)
 - [Reinstalling Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server);
 - [Setting Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
-- [Enabling Microsoft Defender Antivirus on your Windows client devices](#enable-microsoft-defender-antivirus-on-your-windows-client-devices); and
-- [Confirming that Microsoft Defender Antivirus is set to passive mode](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode).  
 
 ### Set DisableAntiSpyware to false on Windows Server
 
@@ -91,15 +88,19 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
 
-> [!NOTE]
-> When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
-> Example:<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > When using the DISM command within a task sequence running PS, the following path to cmd.exe is required.
+   > Examples:
+   >
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+   >
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. To verify Microsoft Defender Antivirus is running, use the following PowerShell cmdlet: <br/>
    
    `Get-Service -Name windefend`
+
+   Look for a status of *Running*.
 
 #### Are you using Windows Server 2016?
 
