@@ -46,7 +46,7 @@ ms.reviewer: depicker, yongrhee, chriggs
 
 5. [Uninstall Symantec](#uninstall-symantec).
 
-[Make sure Microsoft Defender for Endpoint is working correctly](#make-sure-microsoft-defender-for-endpoint-is-working-correctly).
+6. [Make sure Microsoft Defender for Endpoint is working correctly](#make-sure-microsoft-defender-for-endpoint-is-working-correctly).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
