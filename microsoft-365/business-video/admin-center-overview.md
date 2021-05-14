@@ -28,6 +28,8 @@ description: "Learn more about the Microsoft 365 admin center."
 - [The admin center in simplified view](#the-admin-center-in-simplified-view)
 - [The admin center in dashboard view](#the-admin-center-in-dashboard-view)
 
+The Microsoft 365 admin center has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
+
 ## The admin center in simplified view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
@@ -40,11 +42,11 @@ If you have permission to access the admin center, you'll see **Admin** in the l
 
 At the top of the admin center, review the top actions for you. You may see different actions depending on what you've already set up, such as creating new accounts, using Teams, setting up email, and installing Office apps. 
  
-Under **Your organization** on the **Users** tab is a list of people who can access apps and services, add new users, reset passwords, or use the **More actions** menu. Select a person to view or edit their information and settings.  
+Under **Your organization** on the **Users** tab is a list of people who can access apps and services, add new users, reset passwords, or use the three dots (more actions) menu. Select a person to view or edit their information and settings.  
 
-On the **Teams** tab, create a new team or manage existing teams. You can manage the members of a team or select **More actions** to change other Teams settings. 
+On the **Teams** tab, create a new team or manage existing teams. You can manage the members of a team or select the three dots (more actions) to change other Teams settings. 
 
-On the **Subscriptions** tab, add more products, add licenses, or use the **More actions** menu to modify licenses or payment method.
+On the **Subscriptions** tab, add more products, add licenses, or use the three dots (more actions) menu to modify licenses or payment method.
 
 On the **Learn** tab, browse videos and articles about the admin center and other Microsoft 365 features. To explore more advanced features of the admin center, open the navigation menu and expand the headings to see more. Select **Show all** to see everything in the navigation menu or use the search bar to quickly find what you're looking for.
 
@@ -60,7 +62,7 @@ Specialist workspaces, like Security or Device management, allow for more granul
 
 To get to the Microsoft 365 admin center, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you're already signed in, select the app launcher, and choose **Admin**.
 
-On the home page, you can create cards for tasks that you perform frequently. To add a new card, select **Add card**, then select the plus sign next to the card you want to add. When you are finished, close the window. You can rearrange the cards by selecting and then dragging them to where you want. To remove a card, select **More actions**, and then choose **Remove**.
+On the home page, you can create cards for tasks that you perform frequently. To add a new card, select **Add card**, then select the plus sign next to the card you want to add. When you are finished, close the window. You can rearrange the cards by selecting and then dragging them to where you want. To remove a card, select the three dots (more actions), and then choose **Remove**.
 
 To view more admin tasks, expand the navigation menu. You'll find advanced configuration settings in the additional admin centers at the bottom.
 

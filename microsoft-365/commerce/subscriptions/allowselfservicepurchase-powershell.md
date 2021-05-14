@@ -38,6 +38,7 @@ You can use the **MSCommerce** PowerShell module to:
 To use the **MSCommerce** PowerShell module, you need:
 
 - A Windows 10 device
+- PowerShell 5 or below. Currently, PowerShell 6.x/7.x isn't supported with this module.
 - Administrator permission for the device
 - Global or Billing Admin role for your tenant
 
@@ -156,3 +157,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## Related content
+
+[Manage self-service purchases (Admin)](manage-self-service-purchases-admins.md) (article)
+
+[Self-service purchase FAQ](self-service-purchase-faq.yml) (article)
