@@ -85,3 +85,7 @@ If you're ready to configure a retention policy or retention label for Exchange,
 - [Create and configure retention policies](create-retention-policies.md)
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
+## Related Links
+
+[In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
