@@ -185,11 +185,11 @@ For a more consistent label experience with meaningful reporting, provide approp
 
 - Consider disabling IRM settings to prevent users from selecting them:
     - Outlook for Windows: 
-        - Registry keys (dword:00000001) *DisableDNF* and *DisableEO* from [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM]
+        - Registry keys (dword:00000001) *DisableDNF* and *DisableEO* from [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM]. Make sure that the  Group Policy setting **Configure default encryption option for the Encrypt button** isn't configured.
     - Outlook for Mac: 
-        - Keys *DisableEncryptOnly* and *DisableDoNotForward* security settings documented in [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook)
+        - Keys *DisableEncryptOnly* and *DisableDoNotForward* security settings documented in [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook).
     - Outlook on the web: 
-        - Parameters *SimplifiedClientAccessDoNotForwardDisabled* and *SimplifiedClientAccessEncryptOnlyDisabled* documented in [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 
+        - Parameters *SimplifiedClientAccessDoNotForwardDisabled* and *SimplifiedClientAccessEncryptOnlyDisabled* documented in [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
 
 > [!NOTE]
 > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
