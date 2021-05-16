@@ -69,7 +69,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 4.  Name the policy and add a description. Select **Next**.
 
-5.  Scroll down to the bottom and Select **Enable Folder Protection** Drop down and Choose **Enable**
+5.  Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
 
 6.  Select **List of additional folders that need to be protected** and **Add** the folders that needs to be protected.
 
