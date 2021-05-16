@@ -75,7 +75,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 7.  Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
 
-8.  Select **Exclude files and paths from attack surface reduction rules** and **Add** the Files and paths that needs to be excluded from Attack surface Reduction rules.
+8.  Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
 
 9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
 
