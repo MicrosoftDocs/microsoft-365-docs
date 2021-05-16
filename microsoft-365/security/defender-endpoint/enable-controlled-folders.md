@@ -67,7 +67,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 3. Select the Plaform , choose **Windows 10 and later** and Select the profile **Attack Surface Reduction rules** > Click **Create**
 
-4.  **Name** the Policy and add **Description** > Click **Next**
+4.  Name the policy and add a description. Select **Next**.
 
 5.  Scroll down to the bottom and Select **Enable Folder Protection** Drop down and Choose **Enable**
 
