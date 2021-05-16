@@ -73,7 +73,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 6.  Select **List of additional folders that need to be protected** and **Add** the folders that needs to be protected.
 
-7.  Select **List of apps that have access to protected folders** and **Add** the apps that have access to protected folders.
+7.  Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
 
 8.  Select **Exclude files and paths from attack surface reduction rules** and **Add** the Files and paths that needs to be excluded from Attack surface Reduction rules.
 
