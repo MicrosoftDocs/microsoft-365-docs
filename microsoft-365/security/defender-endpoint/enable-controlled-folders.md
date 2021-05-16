@@ -82,7 +82,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 10.  Select **Next** to save each open blade and then **Create**.
 
    > [!NOTE]
-   > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
+   > Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
 ## Mobile Device Management (MDM)
 
