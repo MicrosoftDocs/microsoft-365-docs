@@ -71,7 +71,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 5.  Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
 
-6.  Select **List of additional folders that need to be protected** and **Add** the folders that needs to be protected.
+6.  Select **List of additional folders that need to be protected** and add the folders that need to be protected.
 
 7.  Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
 
