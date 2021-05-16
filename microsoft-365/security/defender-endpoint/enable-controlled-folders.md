@@ -61,7 +61,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 ## Endpoint Manager
 
-1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open Endpoint Security.
+1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open **Endpoint Security**.
 
 2. Go to **Attack Surface Reduction** > **Policy**.
 
