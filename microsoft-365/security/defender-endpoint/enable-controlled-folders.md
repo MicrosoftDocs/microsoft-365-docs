@@ -77,7 +77,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 8.  Select **Exclude files and paths from attack surface reduction rules** and **Add** the Files and paths that needs to be excluded from Attack surface Reduction rules.
 
-9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and **Save**.
+9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
 
 10.  Select **Next** to save each open blade and then **Create**.
 
