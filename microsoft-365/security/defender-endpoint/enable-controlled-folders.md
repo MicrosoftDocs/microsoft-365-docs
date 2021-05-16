@@ -79,7 +79,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and **Save**.
 
-10.  Select **Next** to save each open blade and **Create**.
+10.  Select **Next** to save each open blade and then **Create**.
 
    > [!NOTE]
    > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
