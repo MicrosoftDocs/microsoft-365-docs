@@ -36,9 +36,6 @@ For more information about the Boost.RegEx (formerly known as RegEx++) engine th
 
 > [!NOTE]
 > If you use an ampersand character (&) as part of a keyword in your custom sensitive information type, please note that there is a known issue. You should add an additional term with spaces around the character to make sure that the character is properly identified. For example - 
-> 
-><Term>L&P</Term>
-><Term>L & P</Term>
 
 ## Sample XML of a rule package
 
