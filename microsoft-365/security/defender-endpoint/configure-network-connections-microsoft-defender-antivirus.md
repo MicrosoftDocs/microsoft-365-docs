@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 05/17/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -27,25 +27,23 @@ ms.topic: article
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
-
-This article lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. Configuring your protection properly helps ensure that you receive the best value from your cloud-delivered protection services.
+To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. Configuring your protection properly helps ensure that you receive the best value from your cloud-delivered protection services.
 
 See the blog post [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) for some details about network connectivity.
 
->[!TIP]
->You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+> [!TIP]
+> You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >
->- Cloud-delivered protection
->- Fast learning (including block at first sight)
->- Potentially unwanted application blocking
+> - Cloud-delivered protection
+> - Fast learning (including block at first sight)
+> - Potentially unwanted application blocking
 
 ## Allow connections to the Microsoft Defender Antivirus cloud service
 
 The Microsoft Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it's highly recommended because it provides important protection against malware on your endpoints and across your network.
 
->[!NOTE]
->The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it's called a cloud service, it's not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
+> [!NOTE]
+> The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it's called a cloud service, it's not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for details on enabling the service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app. 
 
@@ -89,8 +87,8 @@ You can download a sample file that Microsoft Defender Antivirus will detect and
 
 Download the file by visiting [https://aka.ms/ioavtest](https://aka.ms/ioavtest).
 
->[!NOTE]
->This file is not an actual piece of malware. It's a fake file that is designed to test if you're properly connected to the cloud.
+> [!NOTE]
+> This file is not an actual piece of malware. It's a fake file that is designed to test if you're properly connected to the cloud.
 
 If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
