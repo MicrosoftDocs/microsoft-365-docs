@@ -21,10 +21,10 @@ productDirectory:
   title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
-    - title: Read
+    - title: Watch
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+      summary: Top 5 benefits of Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPvideo
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
