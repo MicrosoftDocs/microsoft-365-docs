@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Lean about lifecycle governance options for collaboration tools in Microsoft 365"
 ---
 
