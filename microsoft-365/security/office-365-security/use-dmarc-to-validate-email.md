@@ -177,22 +177,12 @@ Once you have formed your record, you need to update the record at your domain r
 
 ## DMARC Mail (Public Preview feature)
 > [!CAUTION]
-> Mails may not be sent out daily, and the report itself may change during public preview. Consumer accounts (such as hotmail.com or live.com accounts) can expect to see the DMARC mails, first. The Public Preview may or may not expand across the service from there.
+> Mails may not be sent out daily, and the report itself may change during public preview. Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts) can expect to see the DMARC mails.
 
-In this example DMARC TXT record **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which can be used to generate a report.
-
-This new DMARC report will be sent to domain owners.
+In this example DMARC TXT record **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
 
 > [!TIP]
 > Please visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
-
-
-DMARC report will be sent to domain owners , the address given in rua =
-Its ONLY for consumers accounts we are launching i.e. mails received on hotmail, live etc.
-currently the email containing the report have a [preview] appended to the subject and we want to keep it that way throughout the private preview process until general availability 
-We want to have a way to convey customers that microsoft started rolling out this feature in private preview
-Documentation must say that this is public preview and feature is not available for all
-We also need to mention that during public preview, cadence may not be daily and we may stop sending emails to domains because feature is in preview.
 
 ## Best practices for implementing DMARC in Microsoft 365
 
