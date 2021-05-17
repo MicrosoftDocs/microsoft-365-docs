@@ -83,6 +83,19 @@ You can delete or edit the sensitive information type pattern by selecting it wh
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
 
-## Post steps
+## Post creation steps
 
 After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
+
+After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly from the Sensitive Information Types list in the Data classification section in the Compliance center:
+1. Select your EDM sensitive information type from the list and then selecting the **Test** option on the pane that appears on the right. 
+2. Uplolad a document that contains data you want to try to detect, for which you can use some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure your document includes variations with and without those delimiters for more comprehensive validation.
+3. After the file has been uploaded and scanned, check if matches to any of the patterns defined in your EDM type were found. 
+
+If you don't find any matches, try the following:
+- Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Check that the information you entered in the document is present in your sensitive information table, and that any differences are accounted for in your ignored delimiters.
+- Use the same **Test** option but on the sensitive information type you selected when configuring the primary element in each of your patterns to confirm is able to match the content you entered in the document. 
+  -  If the sensitive information type you selected for a primary element in the EDM type doesn't find any content in the document or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content, including those you configured as ignored delimiters in your schema since that feature doesn't apply until a potential match has been detected by the Classification sensitive informaiton type. 
+  -  If the Test function in the classification sensitive information type detects content, check that it is not trimming it or extracting it incorrectly, for example by extracting only a substring of the content it is supposed to detect, picking up only the first word in a multi-word string or including extra symbols or characters in the extraction. See https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference for the reular expression language reference. You can use public tools available online to validate any regular expression used in the sensitive information type you selected and verify it will detect the content you entered in the document or to troubleshoot issues with a regular expression. 
+  -  If the Test function does not detect any content at all, check if the classification type you selected includes requirements for additional keywords or other validations, since these will apply also when using it as part of an EDM sensitive information type. For the built-in sensitive information types see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) to verify what are the minimum requirements for matching each type.
