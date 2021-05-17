@@ -39,6 +39,8 @@ Do not define exclusions for the folder locations, file extensions, and processe
 
 ### Folder locations
 
+In general, do not define exclusions for the following folder locations:
+
 `%systemdrive%` 
 `C:`
 `C:\`
@@ -54,9 +56,8 @@ Do not define exclusions for the folder locations, file extensions, and processe
 `C:\Temp\*`
 `C:\Users\`
 `C:\Users\*`
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`
-`C:\Users\<UserProfileName>\AppData\Roaming\Temp\`
+`C:\Users\<UserProfileName>\AppData\Local\Temp\` **NOTE**: Exclude `C:\Users\ServiceAccount\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` **NOTE**: Exclude `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 `%Windir%\Prefetch`
 `C:\Windows\Prefetch`
 `C:\Windows\Prefetch\`
@@ -70,6 +71,8 @@ Do not define exclusions for the folder locations, file extensions, and processe
 `C:\Windows\Temp\*`
 
 ### File extensions
+
+In general, do not define exclusions for the following file extensions:
 
 `.7z`
 `.bat`
@@ -112,7 +115,43 @@ Do not define exclusions for the folder locations, file extensions, and processe
 
 ### Processes 
 
- | `AcroRd32.exe` <br/> `bitsadmin.exe` <br/> `excel.exe` <br/> `iexplore.exe` <br/> `java.exe` <br/> `outlook.exe` <br/> `psexec.exe` <br/> `powerpnt.exe` <br/> `powershell.exe` <br/> `schtasks.exe`  <br/> `svchost.exe` <br/>`wmic.exe` <br/> `winword.exe` <br/> `wuauclt.exe` <br/> `addinprocess.exe` <br/> `addinprocess32.exe` <br/> `addinutil.exe` <br/> `bash.exe` <br/> `bginfo.exe`[1] <br/>`cdb.exe` <br/> `csi.exe` <br/> `dbghost.exe` <br/> `dbgsvc.exe` <br/> `dnx.exe` <br/> `fsi.exe` <br/> `fsiAnyCpu.exe` <br/> `kd.exe` <br/> `ntkd.exe` <br/> `lxssmanager.dll` <br/> `msbuild.exe`[2] <br/> `mshta.exe` <br/> `ntsd.exe` <br/> `rcsi.exe` <br/> `system.management.automation.dll` <br/> `windbg.exe` |
+In general, do not define exclusions for the following processes:
+
+`AcroRd32.exe`  
+`bitsadmin.exe`  
+`excel.exe`  
+`iexplore.exe`  
+`java.exe`  
+`outlook.exe`  
+`psexec.exe`  
+`powerpnt.exe`  
+`powershell.exe`  
+`schtasks.exe`
+`svchost.exe` 
+`wmic.exe`  
+`winword.exe`  
+`wuauclt.exe`  
+`addinprocess.exe`  
+`addinprocess32.exe`  
+`addinutil.exe`  
+`bash.exe`  
+`bginfo.exe` 
+`cdb.exe`  
+`csi.exe`  
+`dbghost.exe`  
+`dbgsvc.exe`  
+`dnx.exe`  
+`fsi.exe`  
+`fsiAnyCpu.exe`  
+`kd.exe`  
+`ntkd.exe`  
+`lxssmanager.dll`  
+`msbuild.exe` 
+`mshta.exe`  
+`ntsd.exe`  
+`rcsi.exe`  
+`system.management.automation.dll`  
+`windbg.exe`
 
 > [!NOTE]
 > You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
