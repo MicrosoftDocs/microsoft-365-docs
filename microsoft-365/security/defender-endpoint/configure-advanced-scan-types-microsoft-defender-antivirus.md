@@ -51,7 +51,7 @@ To configure the Group Policy settings described in the following table:
 |---|---|---|---|
 | Email scanning See [Email scanning limitations](#ref1)| Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning` |
 |Scan [reparse points](/windows/win32/fileio/reparse-points) | Scan > Turn on reparse point scanning | Disabled | Not available |
-| Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Scan mapped network drives See [Scanning mapped network drives](#scanning-mapped-network-drives) | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`|
  Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning` |
 | Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles` |
 | Scan packed executables | Scan > Scan packed executables | Enabled | Not available |
@@ -88,6 +88,9 @@ If Microsoft Defender Antivirus detects a threat inside an email, it will show y
 
 - Email subject
 - Attachment name
+
+## Scanning mapped network drives
+Scanning mapped network drives (on any OS) only works for drives that are mapped on a system level, and not on a user level. For example, a user-level mapping is when a user maps a drive in their session, manually, and with their own account credentials. User-level mapped network drives are not scanned. 
 
 ## Related topics
 

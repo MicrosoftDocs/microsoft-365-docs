@@ -58,7 +58,7 @@ When you set up scheduled scans, you can set up whether the scan should be a ful
 |A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <p>In most cases, a quick scan is sufficient and is recommended for scheduled scans. |A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so). <p>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<p>When the full scan is complete, new security intelligence is available, and a new scan is required to make sure that no other threats are detected with the new security intelligence.   | A custom scan is a quick scan that runs on the files and folders you specify. For example, you can opt to scan a USB drive, or a specific folder on your device's local drive. <p> | 
 
 >[!NOTE]
->By default, quick scans run on mounted removable devices, such as USB drives.
+>By default, quick scans run on mounted removable devices, such as USB drives. Scanning mapped network drives only works for drives that are mapped on a system level. Learn more (and add a pointer to the section from Update #1). For more information, see [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md#scanning-mapped-network-drives) 
 
 ### How do I know which scan type to choose?
 
