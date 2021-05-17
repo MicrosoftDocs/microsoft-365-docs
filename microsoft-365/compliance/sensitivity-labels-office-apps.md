@@ -419,7 +419,7 @@ The other PowerShell advanced settings remain supported for the Azure Informatio
 
 #### PowerShell tips for specifying the advanced settings
 
-To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
+To specify a different default label for Outlook, identify the label by its GUID. To find this value, can you use the following command:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
