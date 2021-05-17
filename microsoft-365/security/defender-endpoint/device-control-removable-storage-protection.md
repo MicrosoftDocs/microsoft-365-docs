@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 - Applied at either machine or user or both – only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
 - Supported  ‘[Device Properties](#device-properties)’ as listed.
-- For feature in Windows, see [Removable storage Access Control](/microsoft-365/security/defender-endpoint/mde-device-control-removable-storage-access-control).
+- For feature in Windows, see [Removable storage Access Control](device-control-removable-storage-access-control.md).
 
 **Supported Platform** - Windows 10
 
