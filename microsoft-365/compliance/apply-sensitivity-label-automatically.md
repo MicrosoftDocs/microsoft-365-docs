@@ -128,7 +128,7 @@ When you select the **Sensitive info types** option, you see the same list of se
 
 Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. For example:
 
-![Options for match accuracy and instance count](../media/sensitivity-labels-instance-count-match-accuracy.png)
+![Options for match accuracy and instance count](../media/sit-confidence-level.png)
 
 You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
