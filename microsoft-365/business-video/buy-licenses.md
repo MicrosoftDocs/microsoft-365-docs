@@ -2,9 +2,10 @@
 title: "Buy new licenses"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
