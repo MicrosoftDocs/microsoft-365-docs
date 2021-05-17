@@ -62,7 +62,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Audit label-related user activity](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rolling out: 16.0.13628+ | Yes <sup>\*</sup>                                                        |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rolling out: 16.45+         | Rolling out: 2.47+ | Rolling out: 16.0.13628+ | Rolling out                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rolling out: 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Beta Channel](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Footnote:**
@@ -88,7 +88,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
-|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Rolling out in Preview: [Beta Channel](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Yes |
+|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Yes |
 |
 
 **Footnotes:**
@@ -167,7 +167,7 @@ When users initially label a document or email, they can override your label con
 
 - A user applies the **Confidential \ All Employees** label to a document and this label is configured to apply encryption settings for all users in the organization. This user then manually configures the IRM settings to restrict access to a user outside your organization. The end result is a document that's labeled **Confidential \ All Employees** and encrypted, but users in your organization can't open it as expected.
 
-- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. In the Outlook app, this user then manually configures the IRM settings so that the email is unrestricted. The end result is the email can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. In the Outlook app, this user then manually selects the IRM setting for Encrypt-Only. The end result is that while the email does remain encrypted, it can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
     
     As an exception, for Outlook on the web, the options from the **Encrypt** menu aren't available for a user to select when the currently selected label applies encryption.
 
@@ -175,13 +175,22 @@ When users initially label a document or email, they can override your label con
 
 If the document or email is already labeled, a user can do any of these actions if the content isn't already encrypted, or they have the [usage right](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control. 
 
-For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents. For example:
+For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents and emails. For example:
 
 - For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - Instead of users manually removing encryption after selecting a label that applies encryption, provide a sublabel alternative when users need a label with the same classification, but no encryption. Such as:
     - **Confidential \ All Employees**
     - **Confidential \ Anyone (no encryption)**
+
+- Consider disabling IRM settings to prevent users from selecting them:
+    - Outlook for Windows: 
+        - Registry keys (DWORD:00000001) *DisableDNF* and *DisableEO* from HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Make sure that the Group Policy setting **Configure default encryption option for the Encrypt button** isn't configured
+    - Outlook for Mac: 
+        - Keys *DisableEncryptOnly* and *DisableDoNotForward* security settings documented in [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook on the web: 
+        - Parameters *SimplifiedClientAccessDoNotForwardDisabled* and *SimplifiedClientAccessEncryptOnlyDisabled* documented for [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
 
 > [!NOTE]
 > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
@@ -410,7 +419,7 @@ The other PowerShell advanced settings remain supported for the Azure Informatio
 
 #### PowerShell tips for specifying the advanced settings
 
-To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
+To specify a different default label for Outlook, identify the label by its GUID. To find this value, can you use the following command:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

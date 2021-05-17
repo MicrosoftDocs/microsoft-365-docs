@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,8 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
-search.appverid: MET150
+search.appverid: MET150 S
 description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
 ms.date: 03/17/2021
 ---
