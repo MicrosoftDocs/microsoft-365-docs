@@ -79,7 +79,7 @@ Microsoft Defender for Endpoint protects you against phishing or other web-based
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
 > [!div class="mx-imgBorder"]
-> ![VPN config connect on demand](images/ios-phish-alert.png)
+> ![Image of site reported as unsafe notification](images/ios-phish-alert.png)
 
 ## Data and Privacy
 
