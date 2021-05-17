@@ -42,32 +42,59 @@ Do not define exclusions for the folder locations, file extensions, and processe
 In general, do not define exclusions for the following folder locations:
 
 `%systemdrive%` 
+
 `C:`
+
 `C:\`
+
 `C:\*`
+
 `%ProgramFiles%\Java`
+
 `C:\Program Files\Java` 
+
 `%ProgramFiles%\Contoso\` 
+
 `C:\Program Files\Contoso\` 
+
 `%ProgramFiles(x86)%\Contoso\` 
+
 `C:\Program Files (x86)\Contoso\`
+
 `C:\Temp`
+
 `C:\Temp\`
+
 `C:\Temp\*`
+
 `C:\Users\`
+
 `C:\Users\*`
-`C:\Users\<UserProfileName>\AppData\Local\Temp\` **NOTE**: Exclude `C:\Users\ServiceAccount\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+
+`C:\Users\<UserProfileName>\AppData\Local\Temp\` **NOTE**: Exclude 
+`C:\Users\ServiceAccount\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+
 `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` **NOTE**: Exclude `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+
 `%Windir%\Prefetch`
+
 `C:\Windows\Prefetch`
+
 `C:\Windows\Prefetch\`
+
 `C:\Windows\Prefetch\*`
+
 `%Windir%\System32\Spool`
+
 `C:\Windows\System32\Spool`
+
 `C:\Windows\System32\CatRoot2`
 `%Windir%\Temp`
+
 `C:\Windows\Temp`
+
 `C:\Windows\Temp\`
+
 `C:\Windows\Temp\*`
 
 ### File extensions
@@ -75,42 +102,79 @@ In general, do not define exclusions for the following folder locations:
 In general, do not define exclusions for the following file extensions:
 
 `.7z`
+
 `.bat`
+
 `.bin`
+
 `.cab`
+
 `.cmd`
+
 `.com` 
+
 `.cpl`
+
 `.dll`
+
 `.exe`
+
 `.fla`
+
 `.gif`
+
 `.gz`
+
 `.hta`
+
 `.inf`
+
 `.java`
+
 `.jar`
+
 `.job`
+
 `.jpeg`
+
 `.jpg`
+
 `.js`
+
 `.ko`
+
 `.ko.gz`
+
 `.msi`
+
 `.ocx`
+
 `.png`
+
 `.ps1`
+
 `.py`
+
 `.rar`
+
 `.reg`
+
 `.scr`
+
 `.sys`
+
 `.tar`
+
 `.tmp`
+
 `.url`
+
 `.vbe`
+
 `.vbs`
+
 `.wsf`
+
 `.zip`
 
 ### Processes 
@@ -118,39 +182,73 @@ In general, do not define exclusions for the following file extensions:
 In general, do not define exclusions for the following processes:
 
 `AcroRd32.exe`  
+
 `bitsadmin.exe`  
+
 `excel.exe`  
+
 `iexplore.exe`  
+
 `java.exe`  
+
 `outlook.exe`  
+
 `psexec.exe`  
+
 `powerpnt.exe`  
+
 `powershell.exe`  
+
 `schtasks.exe`
+
 `svchost.exe` 
+
 `wmic.exe`  
+
 `winword.exe`  
+
 `wuauclt.exe`  
+
 `addinprocess.exe`  
+
 `addinprocess32.exe`  
+
 `addinutil.exe`  
+
 `bash.exe`  
+
 `bginfo.exe` 
+
 `cdb.exe`  
+
 `csi.exe`  
+
 `dbghost.exe`  
+
 `dbgsvc.exe`  
+
 `dnx.exe`  
+
 `fsi.exe`  
+
 `fsiAnyCpu.exe`  
+
 `kd.exe`  
+
 `ntkd.exe`  
+
 `lxssmanager.dll`  
+
 `msbuild.exe` 
+
 `mshta.exe`  
+
 `ntsd.exe`  
+
 `rcsi.exe`  
+
 `system.management.automation.dll`  
+
 `windbg.exe`
 
 > [!NOTE]
