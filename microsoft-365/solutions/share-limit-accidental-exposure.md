@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
 ---
 
