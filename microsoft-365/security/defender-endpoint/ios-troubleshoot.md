@@ -54,7 +54,7 @@ Apple iOS does not support multiple device-wide VPNs to be active simultaneously
 
 ## An app doesn't work when VPN is active
 
-There are some apps that stop functioning when an active VPN is detected. You can disable the VPN during the time you are using such apps. Please see [steps to disable VPN](#how-to-disable-VPN).
+There are some apps that stop functioning when an active VPN is detected. You can disable the VPN during the time you are using such apps. Please see [steps to disable VPN](#how-to-disable-vpn).
 
 ## Battery Consumption
 
