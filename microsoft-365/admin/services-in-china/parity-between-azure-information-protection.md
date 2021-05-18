@@ -186,7 +186,7 @@ For more information, see [What is the Azure Information Protection unified labe
 
 1. Get an Azure token to use with your scanner. An Azure AD token allows the scanner to authenticate to the Azure Information Protection service, enabling the scanner to run non-interactively. 
 
-    1. Open the Azure portal and create an Azure AD application to specify an access token for authentication. For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
+    1. Open the Azure portal and create an Azure AD application to specify an access token for authentication. For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
         > When creating and configuring Azure AD applications for the [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) command, the **Request API permissions** pane shows the **APIs my organization uses** tab instead of the **Microsoft APIs** tab. Select the **APIs my organization uses** to then select **Azure Rights Management Services**. 
