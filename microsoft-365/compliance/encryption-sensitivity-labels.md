@@ -82,13 +82,18 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
-Note that in the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user applying the label has a usage right or role that supports this action:
+**Footnote:**
+
+<sup>\*</sup>
+Supported only by the Azure Information Protection unified labeling client
+
+In the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user applying the label has a usage right or role that supports this action:
 
 - The [usage right](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control.
 - The role of [Rights Management issuer or Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](/azure/information-protection/configure-super-users).
