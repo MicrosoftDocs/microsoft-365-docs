@@ -1,6 +1,6 @@
 ---
-title: Investigate users in Microsoft 365 security center
-description: Investigate users in the Microsoft 365 security center
+title: Investigate users in Microsoft 365 Defender
+description: Investigate users for an incident in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
 ---
-# Investigate users in Microsoft 365 security center
+# Investigate users in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

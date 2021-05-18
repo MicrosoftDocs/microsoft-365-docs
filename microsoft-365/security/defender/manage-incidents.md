@@ -41,11 +41,11 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 Here are the ways you can manage your incidents:
 
 - Change the incident name
-- Add incident tags.
+- Add incident tags
 - Assign the incident to a user account
 - Resolve them 
 - Set its classification and determination
-- Add comments.
+- Add comments
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
@@ -56,7 +56,7 @@ You can display this pane from the **Manage incident** link on the:
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
-In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where you want to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
 ## Edit the incident name
 
