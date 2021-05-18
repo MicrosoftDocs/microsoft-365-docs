@@ -4,6 +4,7 @@ description: Exclude files from Microsoft Defender Antivirus scans based on thei
 keywords: exclusions, files, extension, file type, folder name, file name, scans
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
@@ -13,7 +14,6 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 

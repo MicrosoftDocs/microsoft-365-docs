@@ -4,6 +4,7 @@ description: Configure how end users interact with Microsoft Defender Antivirus,
 keywords: endpoint, user, interaction, notifications, ui lockdown mode, headless mode, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 

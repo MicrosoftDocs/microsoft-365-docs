@@ -4,6 +4,7 @@ description: Learn how to configure and customize both standard and additional M
 keywords: notifications, defender, antivirus, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +16,6 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 

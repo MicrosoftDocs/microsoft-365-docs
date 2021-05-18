@@ -4,6 +4,7 @@ description: You can exclude files from scans if they have been opened by a spec
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 

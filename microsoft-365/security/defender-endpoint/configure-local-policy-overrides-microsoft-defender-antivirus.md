@@ -4,6 +4,7 @@ description: Enable or disable users from locally changing settings in Microsoft
 keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +16,6 @@ ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 

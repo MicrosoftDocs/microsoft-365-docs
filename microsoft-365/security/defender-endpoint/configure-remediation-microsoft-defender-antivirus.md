@@ -4,6 +4,7 @@ description: Configure what Microsoft Defender Antivirus should do when it detec
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +16,6 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
 ms.topic: article
 ---
 
