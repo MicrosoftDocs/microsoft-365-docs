@@ -80,4 +80,4 @@ You can change your email signature in Outlook Web App. For more information, se
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
 
-[Configure email forwarding in Microsoft 365](configure-email-forwarding.md) (article)
+[Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)
