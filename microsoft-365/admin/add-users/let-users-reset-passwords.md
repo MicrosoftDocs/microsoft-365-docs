@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: "Learn how you can reset your passwords using the self-service password reset tool."
+description: "Learn how you can set a policy to allow users to reset their own passwords using the self-service password reset tool."
 ---
 
 # Let users reset their own passwords
@@ -69,8 +69,8 @@ These steps turn on self-service password reset for everyone in your business.
 
 ## Related content
 
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md)
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)
 
-[Set an individual user's password to never expire](set-password-to-never-expire.md)
+[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)
 
-[Microsoft 365 Business training videos](../../business-video/index.yml)
+[Microsoft 365 Business training videos](../../business-video/index.yml) (link page)

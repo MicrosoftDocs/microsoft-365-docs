@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 search.appverid: MET150
-description: "Learn how to make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
+description: "Make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
 ms.date: 03/30/2021
 ---
 
@@ -73,3 +73,11 @@ To learn about changing other profile information, see [Change your contact pref
 ### Email signatures
   
 You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
+
+## Related content
+
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
+
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
+
+[Configure email forwarding in Microsoft 365](configure-email-forwarding.md) (article)

@@ -24,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: "Change your initial email address to a friendly email address like tom@fourthcoffee.com. To do this, you need to buy a domain name, and add it to Microsoft 365. "
+description: "Change your email address to a friendly email address like tom@fourthcoffee.com by buying a domain name and adding it to Microsoft 365."
 ---
 
 # Change your email address to use your custom domain
@@ -84,6 +84,6 @@ You'll be guided to get everything set up correctly with your domain in Microsof
 > [!NOTE]
 > If you are not using an Exchange license, you cannot use the domain to send or receive emails from the Microsoft 365 tenant.
   
-## Related articles
+## Related content
 
-[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)

@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: "Use the admin center to set up your organization in the cloud, and manage users and subscriptions. Get started by signing in to the account with admin permissions."
+description: "Sign in with admin permissions to the Microsoft 365 admin center to set up your organization in the cloud, and manage users and subscriptions."
 ---
 
 # About the Microsoft 365 admin center
