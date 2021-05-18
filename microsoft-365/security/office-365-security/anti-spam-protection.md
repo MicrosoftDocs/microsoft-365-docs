@@ -53,9 +53,6 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](configure-the-connection-filter-policy.md).
 
-  > [!NOTE]
-  > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
 - **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure the end-user notification options for messages that were quarantined instead of delivered. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
@@ -63,7 +60,7 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Outbound spam filtering**: EOP also checks to make sure that your users don't send spam, either in outbound message content or by exceeding outbound message limits. For more information, see [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
-- **Spoof intelligence**: For more information, see [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
 ## Manage errors in spam filtering
 

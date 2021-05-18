@@ -79,7 +79,7 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 
 ## Verify the alert settings for restricted users
 
-The default alert policy named **User restricted from sending email** will automatically notify admins when users are blocked from sending outbound mail. You can verify these settings and add additional users to notify. For more information about alert policies, see [Alert policies in the security and compliance center](../../compliance/alert-policies.md).
+The default alert policy named **User restricted from sending email** will automatically notify admins when users are blocked from sending outbound mail. You can verify these settings and add additional users to notify. For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
