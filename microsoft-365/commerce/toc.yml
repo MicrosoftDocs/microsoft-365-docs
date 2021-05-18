@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: Billing accounts
   items: 
-    - name: Manage billing accounts
+    - name: Understand billing accounts
       href: manage-billing-accounts.md
     - name: Associate a tenant with your billing account
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
