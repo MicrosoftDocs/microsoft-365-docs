@@ -91,13 +91,13 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 > [!IMPORTANT]
 > **Be sure to review** the architectural requirements before you enable the evaluation of each component in Microsoft 365 Defender.
 
-You can start with the creation of an evaluation environment, or you can use an existing environment, but the *recommended* process is to start with Defender for Identity, and then enable evaluation for Defender for Office (this product includes EOP and so you will actually evaluate *both* here), Defender for Endpoint, and Cloud App Security.
+**You can start** with the creation of an evaluation environment, or you can use an existing environment, but the *recommended* process is to start with Defender for Identity, and then enable evaluation for Defender for Office (this product includes EOP and so you will actually evaluate *both* here), Defender for Endpoint, and Cloud App Security.
 
 Next create any pilot user groups or specifics of the pilot environment you want to evaluate in (if this is an environment without real business signals, some of the work here might include prepping to use Attack Simulator in Defender for Office). If you are aware of the reporting in Microsoft 365 Defender, you can choose any measurement metrics during this phase.
 
 Now investigate and respond to threats, and keep a log of your experience. This may include taking note of the reports generated, who should see and act on them, and the number of threats logged, for example. Or it may involve polling your pilot group for feedback as you apply features and policies. The metrics should be determined by your priorities.
 
-At the end of the evaluation process, if you are testing in an existing environment, simply promote your evaluation configurations to production. If you're testing in an isolated environment, you may plan to take what you've already learned and evaluate in an existing live environment next. This will give you the opportunity to apply your learnings and configurations to the live environment post evaluation.
+**At the end** of the evaluation process, if you are testing in an existing environment, simply promote your evaluation configurations to production. If you're testing in an isolated environment, you may plan to take what you've already learned and evaluate in an existing live environment next. This will give you the opportunity to apply your learnings and configurations to the live environment post evaluation.
 
 ![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
 
