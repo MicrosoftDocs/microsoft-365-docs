@@ -93,7 +93,9 @@
               - name: Manage
                 href: manage-incidents.md
               - name: Investigate
-                href: investigate-incidents.md
+                items:
+                 - name: Overview
+                   href: investigate-incidents.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Users 
