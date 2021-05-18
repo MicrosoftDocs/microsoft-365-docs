@@ -71,7 +71,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ## Cancel a subscription
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, find the subscription that you want to cancel. Select **More actions** (three dots), then select **Cancel subscription**.
+2. On the **Products** tab, find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback you have.
 4. Select **Save**.
 
