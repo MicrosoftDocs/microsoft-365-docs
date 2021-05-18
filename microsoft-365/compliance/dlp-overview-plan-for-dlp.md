@@ -47,7 +47,8 @@ When implemented, DLP policies can be applied across large portions of your orga
 - the categories of sensitive items to be protected
 - the business processes they are used in
 - the risky behavior that should be limited
-- prioritize which data should be protected first based on the sensitivity of the items and risk involved.  
+- prioritize which data should be protected first based on the sensitivity of the items and risk involved
+- outline the DLP policy match event review and remediation process 
  
 In general these needs tend to be 85% regulatory and compliance protection, and 15% intellectual property protection. Here are some suggestions on roles to include in your planning process:
 
@@ -59,7 +60,7 @@ In general these needs tend to be 85% regulatory and compliance protection, and 
 - Business users
 - IT
 
-### Identify the categories of sensitive information to protect
+### Describe the categories of sensitive information to protect
 
 The stakeholders then describe the categories of sensitive information to be protected and the business process that they're used in. For example, Microsoft 365 DLP defines these categories:
 
@@ -112,7 +113,7 @@ Documenting how your organization is going to get from its starting state to the
 
 #### Sensitive item discovery
 
-There are multiple ways to discovery what individual sensitive items are and where they are located. You may have sensitivity labels already deployed or you may have decided to deploy a very broad DLP policy to all locations that only discovers and audits items. To learn more, see [Know your data](information-protection.md#know-your-data).
+There are multiple ways to discover what individual sensitive items are and where they are located. You may have sensitivity labels already deployed or you may have decided to deploy a very broad DLP policy to all locations that only discovers and audits items. To learn more, see [Know your data](information-protection.md#know-your-data).
 
 #### Policy planning
 
@@ -147,9 +148,9 @@ The items that contain your organizations sensitive information are used every d
 
 ##### What is your organizations tolerance for leakage?
 
-Different groups in your organization may have different views on what's an acceptable level of sensitive item leakage and what's not.
+Different groups in your organization may have different views on what's an acceptable level of sensitive item leakage and what's not. Achieving the perfection of zero leakage may come at too high a cost to the business.
 
-**Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, it will require an extra 500 person hours per quarter for the internal auditors to complete the tracking process. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage.
+**Example** Your organizations' security group, along with the legal team both feel that there should be no sharing of credit card numbers with anyone outside the org and insist on zero leakage. But, as part of regular review of credit card number activity, the internal auditors must share some credit card numbers with third party auditors. If your DLP policy prohibits all sharing of credit card numbers outside the org, there will be a significant business process disruption and added cost to mitigate the disruption in order for the internal auditors to complete their tracking. This extra cost is unacceptable to the executive leadership. To resolve this, there needs to be an internal conversation to decide an acceptable level of leakage. Once that is decided the policy can provide exceptions for certain individuals to share the information or it can be applied in audit only mode.
 
 #### Planning for prerequisites
 
@@ -162,13 +163,13 @@ Before you can monitor some DLP locations, there are prerequisites that must be 
 
 #### Policy deployment
 
-When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
+When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents or to break an existing business process.
   
 If you're creating DLP policies with a large potential impact, we recommend following this sequence:
   
-1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the rules as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. 
+1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the policies as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. Also, use this stage to test out your workflow for DLP event review and issue remediation.
     
-2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the policies that are going to be applied. Its useful to have a link to an organization policy page that provides additional details about the policy in the policy tip. At this stage, you can also ask users to report false positives so that you can further refine the policies. Move to this stage once you have confidence that the results of policy application match what they stakeholders had in mind. 
     
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
