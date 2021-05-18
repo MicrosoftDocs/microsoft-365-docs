@@ -29,7 +29,7 @@ ms.topic: how-to
 
 ## Use Microsoft Intune to configure scanning options
 
-For more information, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+For more information, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus). 
 
 ## Use Microsoft Endpoint Manager to configure scanning options
 
@@ -90,7 +90,8 @@ If Microsoft Defender Antivirus detects a threat inside an email, it will show y
 - Attachment name
 
 ## Scanning mapped network drives
-Scanning mapped network drives (on any OS) only works for drives that are mapped on a system level, and not on a user level. For example, a user-level mapping is when a user maps a drive in their session, manually, and with their own account credentials. User-level mapped network drives aren't scanned.
+
+On any OS, only the network drives that are mapped at system level, are scanned. User-level mapped network drives aren't scanned. User-level mapped network drives are those that a user maps in their session manually and using their own credentials.
 
 ## Related topics
 
