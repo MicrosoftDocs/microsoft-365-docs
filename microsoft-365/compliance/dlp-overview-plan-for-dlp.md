@@ -41,7 +41,15 @@ The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-l
 
 ### Identify stakeholders
 
-When implemented, DLP policies can be applied across large portions of your organization. IT can't develop a broad ranging plan on their own without negative consequences. You need to identify the stakeholders who can describe the regulations, laws and industry standards your organization is subject to, the categories of sensitive items to be protected, the business processes they are used in and the risky behavior that should be limited. In general these needs tend to be 85% regulatory and compliance protection, and 15% intellectual property protection. Here are some suggestions on roles to include in your planning process:
+When implemented, DLP policies can be applied across large portions of your organization. IT can't develop a broad ranging plan on their own without negative consequences. You need to identify the stakeholders who can:
+
+- describe the regulations, laws and industry standards your organization is subject to
+- the categories of sensitive items to be protected
+- the business processes they are used in
+- the risky behavior that should be limited
+- prioritize which data should be protected first based on the sensitivity of the items and risk involved.  
+ 
+In general these needs tend to be 85% regulatory and compliance protection, and 15% intellectual property protection. Here are some suggestions on roles to include in your planning process:
 
 - Regulatory and compliance officers
 - Chief risk officer
@@ -53,11 +61,23 @@ When implemented, DLP policies can be applied across large portions of your orga
 
 ### Identify the categories of sensitive information to protect
 
-The stakeholders then describe the categories of sensitive information to be protected and the business process that they're used in. <!-- The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.-->
+The stakeholders then describe the categories of sensitive information to be protected and the business process that they're used in. For example, Microsoft 365 DLP defines these categories:
+
+- Financial 
+- Medical and health information
+- Privacy
+- Custom
+
+The stakeholders might identify the sensitive information as "We are a data processor, so we have to implement privacy protections on data subject information and financial information".
+
+ 
+  <!-- The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.-->
 
 ### Set goals and strategy
 
 Once you have identified your stakeholders and you know which sensitive information needs protection and where it's used, the stakeholders can set their protection goals and IT can develop an implementation plan. 
+
+
  <!--
 ### Discovery
  for the locations (DLP workloads) of these types of items.  (mapping DLP locations and data at rest, data in transit, data in use)
@@ -81,7 +101,8 @@ Your implementation plan should include:
 - planning on how policies will first be tested before moving to enforcement
 - how you will train your end users
 - how you will test and tune your policies
-- how you will review and update your data loss prevention strategy based on changing regulatory, legal, industry standard or intellectual property protection needs
+- how you will review and update your data loss prevention strategy based on changing regulatory, legal, industry standard or intellectual property protection and business needs
+- 
 
 #### Map out path from start to desired end state
 
