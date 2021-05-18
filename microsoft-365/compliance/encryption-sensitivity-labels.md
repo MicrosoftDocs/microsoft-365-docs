@@ -91,7 +91,7 @@ The following table identifies what happens to existing encryption when a sensit
 **Footnote:**
 
 <sup>\*</sup>
-Supported only by the Azure Information Protection unified labeling client
+Supported by the Azure Information Protection unified labeling client only
 
 In the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user applying the label has a usage right or role that supports this action:
 
