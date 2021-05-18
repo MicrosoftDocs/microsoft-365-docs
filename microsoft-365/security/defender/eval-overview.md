@@ -56,7 +56,7 @@ In this illustration an attack is underway. Phishing email arrives at the Inbox 
 - **Defender for Office 365** safe attachments tests the attachment and determines it is harmful, so the mail that arrives either isn't actionable by the user, or policies prevent the mail from arriving at all.
 - **Defender for Endpoint** manages devices that connect to the corporate network and detect device and network vulnerabilities that might otherwise be exploited.
 - **Defender for Identity** takes note of sudden account changes like privilege escalation, or high-risk lateral movement. It also reports on easily exploited identity issues like unconstrained Kerberos delegation, for correction by the security team.
-- **Microsoft Cloud App Security** notices anomalous behaviour like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these behaviours.
+- **Microsoft Cloud App Security** notices anomalous behaviour like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team.
 
 ## Understand Microsoft 365 Defender components
 
