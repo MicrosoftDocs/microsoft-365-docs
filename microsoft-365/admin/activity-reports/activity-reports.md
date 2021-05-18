@@ -200,4 +200,4 @@ However, when you select a particular day (see number 3), up to 28 days from the
 
 [Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)
 
-[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports) (article)
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)
