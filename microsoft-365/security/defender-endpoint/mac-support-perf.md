@@ -89,7 +89,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       To collect current statistics, run:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
@@ -99,7 +99,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 1. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     The output of this command should be similar to the following:

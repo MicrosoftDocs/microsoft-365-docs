@@ -112,55 +112,55 @@
          items: 
               - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize incidents
+              - name: Prioritize
                 href: incident-queue.md
-              - name: Manage incidents
+              - name: Manage
                 href: manage-incidents.md
-              - name: Incident response
-                items: 
-                 - name: Investigate incidents
+              - name: Investigate
+                items:
+                 - name: Overview
                    href: investigate-incidents.md
-                 - name: Investigate alerts
+                 - name: Alerts
                    href: investigate-alerts.md    
-                 - name: Investigate users 
+                 - name: Users 
                    href: investigate-users.md                  
-                 - name: Incident response playbooks
-                   href: https://docs.microsoft.com/security/compass/incident-response-playbooks
-                 - name: Respond to your first incident
+              - name: Respond to your first incident
+                items: 
+                 - name: Introduction
+                   href: first-incident-overview.md
+                 - name: Prepare
+                   href: first-incident-prepare.md
+                 - name: Step 1. Triage and analyze
+                   href: first-incident-analyze.md
+                 - name: Step 2. Remediate
+                   href: first-incident-remediate.md
+                 - name: Step 3. Review
+                   href: first-incident-post.md
+                 - name: Additional incident examples
                    items: 
-                    - name: Introduction
-                      href: first-incident-overview.md
-                    - name: Prepare
-                      href: first-incident-prepare.md
-                    - name: Step 1. Triage and analyze
-                      href: first-incident-analyze.md
-                    - name: Step 2. Remediate
-                      href: first-incident-remediate.md
-                    - name: Step 3. Review
-                      href: first-incident-post.md
-                    - name: Additional incident examples
-                      items: 
-                        - name: Phishing email
-                          href: first-incident-path-phishing.md
-                        - name: Identity
-                          href: first-incident-path-identity.md
-              - name: Get email notifications
+                    - name: Phishing email
+                      href: first-incident-path-phishing.md
+                    - name: Identity
+                      href: first-incident-path-identity.md
+              - name: Incident response playbooks
+                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
+              - name: Email notifications
                 href: get-incident-notifications.md
        - name: Automated investigation and response
          items: 
-              - name: Overview of automated investigation and response
+              - name: Overview
                 href: m365d-autoir.md
-              - name: Configure automated investigation and response capabilities
+              - name: Configure capabilities
                 href: m365d-configure-auto-investigation-response.md
               - name: Remediation actions
                 href: m365d-remediation-actions.md
-              - name: Visit the Action center
+              - name: Use the Action center
                 href: m365d-action-center.md
               - name: View and manage remediation actions
                 href: m365d-autoir-actions.md
-              - name: View details and results of automated investigations
+              - name: View details and results
                 href: m365d-autoir-results.md
-              - name: Address false positives/negatives
+              - name: Address false positives and negatives
                 href: m365d-autoir-report-false-positives-negatives.md
        - name: Advanced hunting
          items: 
