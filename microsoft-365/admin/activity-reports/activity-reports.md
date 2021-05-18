@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: "Get a periodic report of how people in your organization are using Microsoft 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
+description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Reports in the admin center
@@ -194,6 +194,10 @@ Whenever you close a user's account, Microsoft will delete that user's usage dat
   
 However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).
   
-## Related articles
+## Related content
 
-[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)
+[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)
+
+[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)
+
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports) (article)
