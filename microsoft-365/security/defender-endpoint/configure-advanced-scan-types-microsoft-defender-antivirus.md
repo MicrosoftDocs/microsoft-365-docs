@@ -29,7 +29,7 @@ ms.topic: how-to
 
 ## Use Microsoft Intune to configure scanning options
 
-See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+For more information, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## Use Microsoft Endpoint Manager to configure scanning options
 
@@ -41,7 +41,7 @@ To configure the Group Policy settings described in the following table:
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
 
 3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
 
@@ -66,7 +66,7 @@ To configure the Group Policy settings described in the following table:
 
 ## Use PowerShell to configure scanning options
 
-See [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
 ## Use WMI to configure scanning options
 
@@ -90,7 +90,7 @@ If Microsoft Defender Antivirus detects a threat inside an email, it will show y
 - Attachment name
 
 ## Scanning mapped network drives
-Scanning mapped network drives (on any OS) only works for drives that are mapped on a system level, and not on a user level. For example, a user-level mapping is when a user maps a drive in their session, manually, and with their own account credentials. User-level mapped network drives are not scanned. 
+Scanning mapped network drives (on any OS) only works for drives that are mapped on a system level, and not on a user level. For example, a user-level mapping is when a user maps a drive in their session, manually, and with their own account credentials. User-level mapped network drives aren't scanned.
 
 ## Related topics
 
