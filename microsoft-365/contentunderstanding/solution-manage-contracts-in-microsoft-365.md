@@ -63,6 +63,10 @@ This contract management solution guidance includes four components of Microsoft
 
 5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
+6. The end result of this solution is an automated business process for your organization. Employees can easily use the custom tile view in Teams to initiate and monitor the approval workflow of your documents. 
+
+     ![Contracts tab.](../media/content-understanding/tile-view.png)
+
 ## Create the solution
 
 The next sections will go into detail about how to configure your contracts management solution. It's divided into three steps:

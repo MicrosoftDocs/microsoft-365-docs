@@ -148,10 +148,6 @@
        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Install Application Guard for Office
        href: install-app-guard.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Migrate
      items: 
      - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort

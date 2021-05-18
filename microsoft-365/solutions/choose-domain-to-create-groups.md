@@ -16,6 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
+recommendations: false
 description: "Learn to choose the domain to use when creating Microsoft 365 groups by configuring email address policies using PowerShell."
 ---
 
