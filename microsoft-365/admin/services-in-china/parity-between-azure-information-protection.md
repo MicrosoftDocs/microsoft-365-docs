@@ -186,7 +186,7 @@ For more information, see [What is the Azure Information Protection unified labe
 
 1. Get an Azure token to use with your scanner. An Azure AD token allows the scanner to authenticate to the Azure Information Protection service, enabling the scanner to run non-interactively. 
 
-    1. Open the Azure portal and create an Azure AD application to specify an access token for authentication. For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection).
+    1. Open the Azure portal and create an Azure AD application to specify an access token for authentication. For more information, see [How to label files non-interactively for Azure Information Protection](/azure/information-protection/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
         > When creating and configuring Azure AD applications for the [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) command, the **Request API permissions** pane shows the **APIs my organization uses** tab instead of the **Microsoft APIs** tab. Select the **APIs my organization uses** to then select **Azure Rights Management Services**. 
@@ -194,7 +194,7 @@ For more information, see [What is the Azure Information Protection unified labe
 
     1. From the Windows Server computer, if your scanner service account has been granted the **Log on locally** right for the installation, sign in with this account and start a PowerShell session. 
     
-        If your scanner service account cannot be granted the **Log on locally** right for the installation, use the *OnBehalfOf* parameter with [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), as described in [How to label files non-interactively for Azure Information Protection](/azure/information-protection/clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection).
+        If your scanner service account cannot be granted the **Log on locally** right for the installation, use the *OnBehalfOf* parameter with [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), as described in [How to label files non-interactively for Azure Information Protection](/azure/information-protection/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
     1. Run [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), specifying values copied from your Azure AD application:
 
@@ -258,7 +258,7 @@ For more information, see [What is the Azure Information Protection unified labe
 
 Continue with the following steps as needed:
 
-- [Run a discovery cycle and view reports for the scanner](/azure/information-protection/deploy-aip-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](/azure/information-protection/deploy-aip-scanner-manage#run-a-discovery-cycle-and-view-reports-for-the-scanner)
 - [Use PowerShell to configure the scanner to apply classification and protection](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
 - [Use PowerShell to configure a DLP policy with the scanner](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 
