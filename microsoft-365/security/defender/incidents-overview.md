@@ -130,7 +130,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
 
-4. [Resolve](manage-incidents.md#resolve-incident) the incident and take time for post-incident learning to:
+4. [Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:
 
    - Understand the type of the attack and its impact.
    - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
