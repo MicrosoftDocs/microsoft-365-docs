@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
+description: "If you have fewer than 25 user licenses, you can cancel your Microsoft 365 for business trial or paid subscription in the admin center."
 ms.date: 04/08/2021
 ---
 
