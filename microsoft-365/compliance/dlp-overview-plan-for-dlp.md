@@ -37,15 +37,7 @@ These are just some examples of how customers can approach DLP and it doesn't ma
 
 ## Overview of planning process
 
-The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduces the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans. <!--Planning requirements that are unique to a location, like On-premises scanner are covered in  LIST OF LINKS TO THOSE DOCS-->
-<!--
-- DLP planning for Exchange email
-- DLP planning for SharePoint sites
-- DLP planning for OneDrive accounts
-- DLP planning for Teams chat and channel messages
-- DLP planning for Windows 10 Devices
-- DLP planning for Microsoft Cloud App Security
-- DLP planning for On-premises repositories -->
+The [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) introduces the three different aspect of the [DLP planning process](dlp-learn-about-dlp.md#plan-for-dlp). We'll go into more detail here on the elements that are common to all DLP plans.
 
 ### Identify stakeholders
 
