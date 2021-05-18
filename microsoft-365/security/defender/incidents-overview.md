@@ -143,7 +143,7 @@ If you are new to security analysis, see the [introduction to responding to your
 
 Here's an example of security operations for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Micosoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender":::
 
 Daily tasks can include:
 
