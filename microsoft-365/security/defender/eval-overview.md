@@ -43,6 +43,9 @@ Cyberattacks can cause major problems, from a loss of trust to financial woes, f
 
 Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite that coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
 
+> [!IMPORTANT]
+> ***You can do the work once*** by evaluating in an existing online environment, and end your evaluation by promoting those configurations from evaluation to live.
+
 ## The anatomy of thwarting an Attack
 
 In this illustration an attack is underway. Phishing email arrives at the Inbox of an employee in your organization, who unknowingly opens the email attachment. This installs malware, which leads to a chain of events that could end with the theft of sensitive data. But in this case, Defender for Office 365 is in operation.
