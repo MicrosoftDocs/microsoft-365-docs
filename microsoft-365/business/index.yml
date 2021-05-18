@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with less than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams  with advanced security and device management capabilities. # < 160 chars
+summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with fewer than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams with advanced security and device management capabilities. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -21,10 +21,10 @@ productDirectory:
   title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
-    - title: Read
+    - title: Watch
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+      summary: Top five benefits of Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPvideo
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
