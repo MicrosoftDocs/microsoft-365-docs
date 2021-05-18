@@ -147,7 +147,7 @@ When editing a rule within a DLP policy you can change:
 - The conditions, including the type and number of instances of sensitive data that will trigger the rule.
 - The actions that are taken, such as restricting access to the content.
 - User notifications, which are policy tips that are displayed to the user in their email client or web browser.
-- User overrides, which determines whether users can choose to proceed with their email or file sharing anyway.
+- User overrides determines whether users can choose to proceed with their email or file sharing anyway.
 - Incident reports, to notify administrators.
 
 ![Options to edit parts of a rule](../media/DLP-create-test-tune-editing-options.png)
@@ -194,14 +194,12 @@ This driver's license case is a good example to dig into. The reason this false 
 
 
 One option is to remove the Australian driver's license information type from the policy. It's in there because it's part of the DLP policy template, but we're not forced to use it. If you're only interested in Tax File Numbers and not driver's licenses, you can just remove it. For example, you can remove it from the low volume rule in the policy, but leave it in the high volume rule so that lists of multiple drivers licenses are still detected.
-
-![Option to delete sensitive info type from rule](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-Another option is to simply increase the instance count, so that a low volume of driver's licenses is only detected when there are multiple instances.
+Another option is to increase the instance count, so that a low volume of driver's licenses is only detected when there are multiple instances.
 
 ![Option to edit the instance count](../media/DLP-create-test-tune-edit-instance-count.png)
 
-In addition to changing the instance count, you can also adjust the match accuracy (or confidence level). If your sensitive information type has multiple patterns, you can adjust the match accuracy in your rule, so that your rule matches only specific patterns. For example, to help reduce false positives, you can set the match accuracy of your rule so that it matches only the pattern with the highest confidence level. Understanding how confidence level is calculated is a bit tricky (and beyond the scope of this post), but here's a good explanation of [how to use confidence level to tune your rules](data-loss-prevention-policies.md#match-accuracy).
+In addition to changing the instance count, you can also adjust the match accuracy (or confidence level). If your sensitive information type has multiple patterns, you can adjust the match accuracy in your rule, so that your rule matches only specific patterns. For example, to help reduce false positives, you can set the match accuracy of your rule so that it matches only the pattern with the highest confidence level. For more information on confidence levels, see [How to use confidence level to tune your rules](data-loss-prevention-policies.md#match-accuracy).
 
 Finally, if you want to get even a bit more advanced, you can customize any sensitive information type -- for example, you can remove "Sydney NSW" from the list of keywords for [Australia driver's license number](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), to eliminate the false positive triggered above. To learn how to do this by using XML and PowerShell, see [customizing a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
 
