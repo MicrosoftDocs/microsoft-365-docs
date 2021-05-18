@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: "Learn how to set a password expiration policy for your organization in Microsoft 365 admin center."
+description: "Learn how an admin can set a password expiration policy for your business, school, or nonprofit in Microsoft 365 admin center."
 ---
 
 # Set the password expiration policy for your organization
@@ -84,6 +84,6 @@ To learn how to update password policy for a specific domain or tenant, see [Set
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
-[Reset passwords](../add-users/reset-passwords.md)
+[Reset passwords](../add-users/reset-passwords.md) (article)

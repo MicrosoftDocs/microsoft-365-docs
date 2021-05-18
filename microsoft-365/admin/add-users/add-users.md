@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."
+description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."
 ms.date: 07/01/2020
 ---
 
