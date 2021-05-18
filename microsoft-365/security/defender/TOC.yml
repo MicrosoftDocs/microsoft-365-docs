@@ -112,10 +112,10 @@
                    href: first-incident-post.md
                  - name: Additional incident examples
                    items: 
-                     - name: Phishing email
-                       href: first-incident-path-phishing.md
-                     - name: Identity
-                       href: first-incident-path-identity.md
+                    - name: Phishing email
+                      href: first-incident-path-phishing.md
+                    - name: Identity
+                      href: first-incident-path-identity.md
               - name: Incident response playbooks
                 href: https://docs.microsoft.com/security/compass/incident-response-playbooks
               - name: Email notifications
