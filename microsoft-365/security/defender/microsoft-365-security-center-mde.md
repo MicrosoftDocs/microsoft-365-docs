@@ -38,7 +38,7 @@ The image and the table below lists the changes in navigation between the Micros
 > [!div class="mx-imgBorder"]
 > ![Image of what moved to where](../../media/mde-m3d-security-center.png)
 
-|**Microsoft Defender Security Center (MDE)**  |**Microsoft 365 security center (M3D)** |
+|**Microsoft Defender Security Center**  |**Microsoft 365 security center** |
 |---------|---------|
 | Dashboards <ul><li>Security Operations</li><li>Threat Analytics</li></ul>  |Home <ul><li>Threat analytics</li></ul>   |
 | Incidents | Incidents & alerts |
