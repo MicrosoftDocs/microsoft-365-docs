@@ -43,7 +43,7 @@ Here are the ways you can manage your incidents:
 - [Edit the incident name](#edit-the-incident-name)
 - [Add incident tags](#add-incident-tags)
 - [Assign the incident to a user account](#assign-incidents)
-- [Resolve them] (#resolve-an-incident)
+- [Resolve them](#resolve-an-incident)
 - [Set its classification and determination](#set-the-classification-and-determination)
 - [Add comments](#add-comments)
 
