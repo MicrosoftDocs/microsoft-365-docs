@@ -192,6 +192,14 @@
        href: zero-hour-auto-purge.md
    - name: Detect
      items: 
+     - name: Threat Explorer for Defender for Office 365
+       items:
+       - name: Threat hunting in Threat Explorer
+         href: threat-hunting-in-threat-explorer.md
+       - name: Email security with Threat Explorer
+         href: email-security-in-microsoft-defender.md          
+       - name: Threat Explorer and Real-time detections basics
+         href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
      - name: View alerts
@@ -208,14 +216,6 @@
      items: 
      - name: Threat Explorer views
        href: threat-explorer-views.md
-     - name: Threat Explorer for Defender for Office 365
-       items:
-       - name: Threat hunting in Threat Explorer
-         href: threat-hunting-in-threat-explorer.md
-       - name: Email security with Threat Explorer
-         href: email-security-in-microsoft-defender.md          
-       - name: Threat Explorer and Real-time detections basics
-         href: real-time-detections.md
      - name: Campaign Views
        href: campaigns.md
      - name: Investigate malicious email
