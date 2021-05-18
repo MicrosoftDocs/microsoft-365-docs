@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "End of lifecycle options for groups, teams, and Yammer."
 ---
 
