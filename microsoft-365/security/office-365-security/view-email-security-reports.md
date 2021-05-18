@@ -249,7 +249,7 @@ The **Spoof detections** report shows information about messages that were block
 
 The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.
 
-<sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering, but you can only go back as far as April 2021.
+<sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spoof detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpoofMailReport>.
 
