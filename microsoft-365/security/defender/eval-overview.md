@@ -50,9 +50,9 @@ In this illustration an attack is underway. Phishing email arrives at the Inbox 
 ![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
 
 - **Exchange Online Protection**, part of Microsoft Defender for Office 365, can detect the phishing email and use mail flow rules to make certain it never arrives in the Inbox.
-- **Defender for Office 365** safe attachments tests the attachment and determines it harmful, so the mail that arrives either isn't actionable by the user, or policies prevent the mail from arriving at all.
-- **Defender for Endpoint** manages devices that connect to the corporate network and detected device and network vulnerabilities that might otherwise be exploited.
-- **Defender for Identity** takes note of sudden account changes like privilege escalation, or high-risk lateral movement. It also reports on easily exploited identity issues like unconstrained Kerberos delegation for security team correction.
+- **Defender for Office 365** safe attachments tests the attachment and determines it is harmful, so the mail that arrives either isn't actionable by the user, or policies prevent the mail from arriving at all.
+- **Defender for Endpoint** manages devices that connect to the corporate network and detect device and network vulnerabilities that might otherwise be exploited.
+- **Defender for Identity** takes note of sudden account changes like privilege escalation, or high-risk lateral movement. It also reports on easily exploited identity issues like unconstrained Kerberos delegation, for correction by the security team.
 - **Microsoft Cloud App Security** notices anomalous behaviour like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these behaviours.
 
 ## Understand Microsoft 365 Defender components
@@ -108,3 +108,5 @@ At the end of the evaluation process, if you are testing in an existing environm
 > Optional information to help a user be more successful
 
 ## Other Articles in this series
+
+List the other articles in this series.
