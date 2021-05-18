@@ -116,7 +116,7 @@ On the spoof intelligence insight, click **Suspicious domains** or **Non-suspici
 - **Message count**: The number of messages from the combination of the spoofed domain _and_ the sending infrastructure to your organization within the last 7 days.
 - **Last seen**: The last date when a message was received from the sending infrastructure that contains the spoofed domain.
 - **Spoof type**: One of the following values:
-  - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+  - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **External**: The spoofed sender is in an external domain.
 - **Allowed to spoof**: The value depends on whether you clicked **Suspicious domains** or **Non-suspicious domains** on the insight:
   - **Suspicious domains**: The **Allowed to spoof** value is always **No**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
