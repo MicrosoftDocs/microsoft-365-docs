@@ -27,7 +27,7 @@ ms.technology: m365d
 # Evaluate and pilot Microsoft 365 Defender
 
 - [Microsoft 365 Defender evaluation gains](#evaluate-and-pilot-microsoft-365-defender)
-- [The anatomy (of thwarting) an Attack](#anatomy-of-an-attack)
+- [The anatomy of thwarting an Attack](#the-anatomy-of-thwarting-an-attack)
 - [Understand Microsoft 365 Defender components](#understand-microsoft-365-defender-components)
 - [Microsoft 365 Defender architecture](#microsoft-365-defender-architecture)
 - [Plan your Evaluation](#plan-your-evaluation)
