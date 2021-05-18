@@ -80,6 +80,8 @@
               href: generate-test-alert.md    
             - name: Simulate attacks
               href: m365d-pilot-simulate    
+            - name: Try additional incident response capabilities
+              href: eval-defender-investigate-respond-additional.md    
         - name: Promote the trial to production
           href: eval-defender-promote-to-production.md                    
     - name: Get started
