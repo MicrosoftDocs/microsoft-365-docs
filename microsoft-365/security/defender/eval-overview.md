@@ -105,7 +105,7 @@ Now investigate and respond to threats, and keep a log of your experience. This 
 > If you already have a production M365 tenant, then you can activate E5 trial licenses to evaluate M365 Defender in your *current environment* and ultimately retain these features with the purchase of licenses after the evaluation period.
 
 > [!TIP]
-> Optional information to help a user be more successful
+> This is the *recommended* configuration. However, your configuration may vary according to the needs of your company.
 
 ## Other Articles in this series
 
