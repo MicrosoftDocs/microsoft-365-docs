@@ -45,7 +45,8 @@ Get more expert training with *L33TSP3AK: Advanced hunting in Microsoft 365 Defe
 
 | Title | Description | Watch | Queries | 
 |--|--|--|--|
-| Episode 1  | In this episode, you will learn different best practices in running advanced hunting queries. Among the topics covered are: how to optimize your queries, use advanced hunting for ransomware, handle JSON as a dynamic type, and work with external data operators. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Text file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt)
+| Episode 1  | In this episode, you will learn different best practices in running advanced hunting queries. Among the topics covered are: how to optimize your queries, use advanced hunting for ransomware, handle JSON as a dynamic type, and work with external data operators. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Text file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
+| Episode 2 | In this episode, you will learn how to investigate and respond to suspicious or unusual logon locations and data exfiltration via inbox forwarding rules. Sebastien Molendijk, Senior Program Manager for Cloud Security CxE, shares how to use advanced hunting to investigate multi-stage incidents with Microsoft Cloud App Security data. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Text file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## How to use the CSL file
