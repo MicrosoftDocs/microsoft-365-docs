@@ -247,7 +247,9 @@ To go back to the report view, click **View report**.
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.
+
+<sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering, but you can only go back as far as April 2021.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spoof detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpoofMailReport>.
 
@@ -284,6 +286,8 @@ If you click **View details table**, you can see the following details:
 - **Message count**
 
 To go back to the report view, click **View report**.
+
+For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
 
 ## Threat protection status report
 
