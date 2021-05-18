@@ -85,7 +85,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-    - To learn more about using Office Scripts with Power Automate, including how your data loss prevention policies may be impacted, see [Run Office Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration).
+    - To learn more about using Office Scripts with Power Automate, see [Run Office Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration).
 
 8. Select **Save**.
 
