@@ -36,13 +36,13 @@ This article describes how to configure scheduled scans with Group Policy, Power
 
 ## To configure the Group Policy settings described in this article
 
-1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
+1. On your Group Policy management machine, in the Group Policy Editor, navigate to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
 
-2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
+2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
-3. Specify settings for the Group Policy Object, and then select **OK**. 
+3. Specify settings for the Group Policy Object, and then click **OK**. 
 
-4. Repeat steps 1-4 for each setting you want to configure.
+4. Repeat steps 1 through 3 for each setting that you want to configure.
 
 5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
@@ -50,7 +50,7 @@ Also see the [Manage when protection updates should be downloaded and applied](m
 
 ## Quick scan versus full scan and custom scan
 
-When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
+When setting up scheduled scans, you can set up the scan to be a full, quick, or a custom scan.
 
 
 |Quick scan  |Full scan  | Custom scan |
