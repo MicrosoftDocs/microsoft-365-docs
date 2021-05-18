@@ -30,7 +30,7 @@ ms.technology: m365d
 - [The anatomy (of thwarting) an Attack](#anatomy-of-an-attack)
 - [Understand Microsoft 365 Defender components](#understand-microsoft-365-defender-components)
 - [Microsoft 365 Defender architecture](#microsoft-365-defender-architecture)
-- [Plan your pilot and evaluation](#evaluation-process)
+- [Plan your Evaluation](#plan-your-evaluation)
 - [Other Articles in this series](#other-articles-in-this-series)
 
 **Applies to:**
