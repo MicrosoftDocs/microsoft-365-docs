@@ -35,7 +35,8 @@ ms.collection:
 
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and the Microsoft 365 security center.
 
-![Image of what moved where](microsoft-365\media\mde-m3d-security-center.png)
+> [!div class="mx-imgBorder"]
+> ![Image of what moved to where](../../media/mde-m3d-security-center.png)
 
 |**Microsoft Defender Security Center (MDE)**  |**Microsoft 365 security center (M3D)** |
 |---------|---------|
