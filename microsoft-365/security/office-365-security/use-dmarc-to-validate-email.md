@@ -177,7 +177,7 @@ Once you have formed your record, you need to update the record at your domain r
 
 ## DMARC Mail (Public Preview feature)
 > [!CAUTION]
-> Mails may not be sent out daily, and the report itself may change during public preview. Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts) can expect to see the DMARC mails.
+> Mails may not be sent out daily, and the report itself may change during public preview.  The DMARC aggregate report emails can be expected from the Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts).
 
 In this example DMARC TXT record **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
 
