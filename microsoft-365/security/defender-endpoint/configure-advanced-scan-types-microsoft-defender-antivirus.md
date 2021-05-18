@@ -33,7 +33,7 @@ For more information, see [Configure device restriction settings in Microsoft In
 
 ## Use Microsoft Endpoint Manager to configure scanning options
 
-See [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring Microsoft Endpoint Manager (current branch).
+For details on configuring Microsoft Endpoint Manager (current branch), see [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## Use Group Policy to configure scanning options
 
@@ -49,9 +49,9 @@ To configure the Group Policy settings described in the following table:
 
 | Description | Location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class |
 |---|---|---|---|
-| Email scanning See [Email scanning limitations](#ref1)| Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning` |
+| Email scanning. See [Email scanning limitations](#ref1)| Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning` |
 |Scan [reparse points](/windows/win32/fileio/reparse-points) | Scan > Turn on reparse point scanning | Disabled | Not available |
-| Scan mapped network drives See [Scanning mapped network drives](#scanning-mapped-network-drives) | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Scan mapped network drives. See [Scanning mapped network drives](#scanning-mapped-network-drives) | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`|
  Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning` |
 | Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles` |
 | Scan packed executables | Scan > Scan packed executables | Enabled | Not available |
