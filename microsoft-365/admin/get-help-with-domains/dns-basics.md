@@ -23,7 +23,7 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: "Learn about domains and their associated DNS records to help you manage your domains."
+description: "The domain name system maps computer hostnames to IP addresses and understanding DNS and domain registrar basics can help you manage domains."
 ---
 
 # DNS basics
@@ -193,3 +193,11 @@ Check out one of the following:
   
 - Not sure where your domain is registered? [Get help finding your domain registrar.](find-your-domain-registrar.md)
 - Find out [why you have to complete the wizard steps](../setup/add-domain.md) before you can use your domain with Microsoft 365.
+
+## Related content
+
+[Domains FAQ](../setup/domains-faq.yml) (article)
+
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
+
+[Manage domains](index.yml) (link page)
