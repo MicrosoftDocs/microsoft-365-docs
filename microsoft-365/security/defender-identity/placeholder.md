@@ -1,6 +1,6 @@
 ---
-title: Placeholder topic to create the folder in the master branch-to be deleted
-description: Placeholder topic to create the folder in the master branch-to be deleted
+title: Placeholder topic to create the folder in master-to be deleted
+description: Placeholder topic to create the folder in master-to be deleted
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -24,5 +24,5 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Placeholder topic to create the folder in the master branch-to be deleted
+# Placeholder topic to create the folder in master-to be deleted
 
