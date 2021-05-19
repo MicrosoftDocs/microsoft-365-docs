@@ -1,5 +1,5 @@
 ---
-title: Use DMARC to validate email
+title: Use DMARC to validate email, setup steps
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-
+ms.date: 05/10/2021
 localization_priority: Priority
 search.appverid: 
   - MET150
@@ -87,11 +87,11 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 Microsoft sends its DMARC reports to [Agari](https://agari.com), a third party. Agari collects and analyzes DMARC reports. Please visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365.
 
-## Implement DMARC for inbound mail
+## Set up DMARC for inbound mail
 
 You don't have to do a thing to set up DMARC for mail that you receive in Microsoft 365. We've taken care of everything for you. If you want to learn what happens to mail that fails to pass our DMARC checks, see [How Microsoft 365 handles inbound email that fails DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
-## Implement DMARC for outbound mail from Microsoft 365
+## Set up DMARC for outbound mail from Microsoft 365
 
 If you use Microsoft 365 but you aren't using a custom domain, that is, you use onmicrosoft.com, you don't need to do anything else to configure or implement DMARC for your organization. SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail. For more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
@@ -175,6 +175,15 @@ Examples:
 
 Once you have formed your record, you need to update the record at your domain registrar. For instructions on adding the DMARC TXT record to your DNS records for Microsoft 365, see [Create DNS records for Microsoft 365 when you manage your DNS records](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
+## DMARC Mail (Public Preview feature)
+> [!CAUTION]
+> Mails may not be sent out daily, and the report itself may change during public preview.  The DMARC aggregate report emails can be expected from the Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts).
+
+In this example DMARC TXT record **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
+
+> [!TIP]
+> Please visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
+
 ## Best practices for implementing DMARC in Microsoft 365
 
 You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll-out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
@@ -217,9 +226,9 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Users add safe senders individually by using their email client.
 
-- Administrators can update the [Spoof Intelligence](learn-about-spoof-intelligence.md) reporting to allow the spoof.
+- Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list.md) to allow messages from the spoofed sender.
 
-- Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
+- Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
