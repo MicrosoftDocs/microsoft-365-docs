@@ -152,7 +152,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
     When you're finished reviewing or editing settings, choose **Next**.
 
-8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn the policy on, [test it first](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode), or keep it turned off for now, and then choose **Next**.
+8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn the policy on, [test it first](dlp-overview-plan-for-dlp.md#policy-deployment), or keep it turned off for now, and then choose **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Specify whether to turn the policy on](../media/dlp-teams-policysettings-turnonnow.png)
