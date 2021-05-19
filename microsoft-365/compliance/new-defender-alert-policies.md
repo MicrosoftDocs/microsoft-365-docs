@@ -35,7 +35,7 @@ The following table lists the new alert policies and the existing alert policies
 | New| **Email messages containing malicious URL removed after delivery**   | 8e6ba277-ef39-404e-aaf1-294f6d9a2b88 |
 | New| **Email messages containing malicious file removed after delivery**  | 4b1820ec-39dc-45f3-abf6-5ee80df51fd2 |
 | New| **Email messages from a campaign were delivered and later removed** | c8522cbb-9368-4e25-4ee9-08d8d899dfab |
-| New|**Malicious emails were delivered and later removed**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
+| New|**Email messages removed after delivery**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
 | Existing (will be removed)| **Email messages containing phish URLs removed after delivery**| EA8169FA-0678-4751-8854-AEBEA7ADECEB |
 | Existing (will be removed)| **Email messages containing malware removed after delivery**| 0179B3F7-3FDA-40C3-8F24-278563978DBB |
 ||||
