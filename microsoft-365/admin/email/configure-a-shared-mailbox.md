@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "After you have created a shared mailbox, you'll want to configure some settings for its users, such as email forwarding and automatic replies. Later, you might want to change other settings, such as the mailbox name or members."
+description: "Create a shared mailbox and configure some settings for its users, such as email forwarding and automatic replies."
 ---
 
 # Configure shared mailbox settings
