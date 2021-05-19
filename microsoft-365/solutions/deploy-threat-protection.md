@@ -65,7 +65,7 @@ Watch this video for an overview of the deployment process.
 |[Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)     | A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time. For more information, see [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)      | 
 
 > [!TIP]
-> Organizations who have multiple security teams can implement these capabilities in parallel. 
+> Organizations who have multiple security teams can implement capabilities in parallel. For example, one team can configure Defender for Office 365 while another team configures Defender for Endpoint. Configuration doesn't have to follow our suggested order exactly. 
 
 ## Plan to deploy your threat protection solution
 
