@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: "Learn how to let your users share their calendars with external users for meetings and appointments."
+description: "Enable calendar sharing in the Microsoft 365 admin center so users can share their calendars with anyone inside or outside the organization."
 ---
 
 # Share calendars with external users
@@ -46,3 +46,11 @@ You can enable calendar sharing for all users in your organization in the Micros
 ## Invite people to access calendars
 
 Once sharing is enabled, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions.
+
+## Related content
+
+[Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)
+
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview) (video)
+
+[Manage email and calendars](../email/index.yml) (link page)

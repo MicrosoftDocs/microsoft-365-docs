@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
+description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ---
 
 # Top 10 ways to secure Microsoft 365 for business plans
@@ -340,3 +340,11 @@ To create a new policy targeted to all recipients in your domain:
 |
 
 For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
+
+## Related content
+
+[Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-36.md) (article)
+
+[Manage and monitor priority accounts](../setup/priority-accounts.md) (article)
+
+[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
