@@ -100,6 +100,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 #### Scan exclusions
 
 Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
+(Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |||
 |:---|:---|
@@ -382,7 +383,12 @@ The following configuration profile contains entries for all settings described 
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",
