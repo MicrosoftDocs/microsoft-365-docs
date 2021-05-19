@@ -27,7 +27,7 @@ This solution describes powerful threat protection capabilities in Microsoft 365
 
 [Malware](/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers with effective IT security capabilities. Cyberattacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. Microsoft 365 E5 can help. 
 
-## Threat protection capabilities in Microsoft 365 E5
+## Threat protection in Microsoft 365 E5
 
 Microsoft security solutions are built into our products and services. Automation and machine learning capabilities reduce the load on your security teams to make sure the right items are addressed. The strength of Microsoft security solutions is built on trillions of signals we process every day in our [Intelligent Security Graph](/graph/security-concept-overview). Microsoft 365 security solutions include [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
 
@@ -54,6 +54,8 @@ The following illustration depicts a recommended path for deploying these indivi
 Watch this video for an overview of the deployment process.
 <br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
+
+The following table describes the various solutions/capabilities to configure and what they do.
 
 |Solution/capabilities  |Description  |
 |---------|---------|
