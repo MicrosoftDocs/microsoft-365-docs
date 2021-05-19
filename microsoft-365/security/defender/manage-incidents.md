@@ -40,12 +40,12 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 Here are the ways you can manage your incidents:
 
-- Change the incident name
-- Add incident tags.
-- Assign the incident to a user account
-- Resolve them 
-- Set its classification and determination
-- Add comments.
+- [Edit the incident name](#edit-the-incident-name)
+- [Add incident tags](#add-incident-tags)
+- [Assign the incident to a user account](#assign-incidents)
+- [Resolve them](#resolve-an-incident)
+- [Set its classification and determination](#set-the-classification-and-determination)
+- [Add comments](#add-comments)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
@@ -56,7 +56,7 @@ You can display this pane from the **Manage incident** link on the:
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
-In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where you want to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
 ## Edit the incident name
 
@@ -77,7 +77,7 @@ When you start typing, you have the option to select from a list of selected tag
 
 If an incident has not yet been assigned, you can select **Assign to** and specify the user account. Doing so assigns ownership of the incident and all the alerts associated with it.
 
-## Resolve incident
+## Resolve an incident
 
 If the incident has been remediated, select **Resolve incident** to move the toggle to the right. Note that resolving an incident also resolves all the linked and active alerts related to the incident.
 

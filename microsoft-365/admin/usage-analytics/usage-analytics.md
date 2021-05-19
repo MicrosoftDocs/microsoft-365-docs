@@ -23,8 +23,6 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 # Microsoft 365 usage analytics
 
-## Overview of Microsoft 365 usage analytics
-
 Use Microsoft 365 usage analytics within Power BI to gain insights on how your organization is adopting the various services within Microsoft 365. You can visualize and analyze Microsoft 365 usage data, create custom reports and share the insights within your organization. You can also gain insights into how specific regions or departments are using Microsoft 365.
   
 Microsoft 365 usage analytics gives you access to a pre-built dashboard that provides a cross-product view of the last 12 months and contains a number of pre-built reports. Each report provides you with specific usage insights. User-specific information is available for the last full calendar month.
@@ -207,3 +205,11 @@ If a partner has delegated admin rights, he or she can connect to the template a
 ### Can I hide identifiable information such as user, group, and site names in reports?
 
 Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-collected-data-anonymous).
+
+## Related content
+
+[Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)
+
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)
+
+[Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)
