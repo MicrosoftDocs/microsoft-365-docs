@@ -35,7 +35,7 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## 1. Full export per device secure configuration assessment
+## 1. Full export secure configuration assessment
 
 ### 1.1 API method description
 
@@ -204,7 +204,7 @@ GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurations
 }
 ```
 
-## 2. Full export per-device secure configuration assessment via files
+## 2. Full export secure configuration assessment via files
 
 ### 2.1 API method description
 

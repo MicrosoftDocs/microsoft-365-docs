@@ -210,7 +210,7 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 }
 ```
 
-## 2. Full export per-device software inventory assessment
+## 2. Full export software inventory assessment via files
 
 ### 2.1 API method description
 
