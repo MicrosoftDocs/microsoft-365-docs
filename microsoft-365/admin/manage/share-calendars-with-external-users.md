@@ -51,6 +51,6 @@ Once sharing is enabled, calendar owners can extend invitations to specific user
 
 [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)
 
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview) (video)
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
 
 [Manage email and calendars](../email/index.yml) (link page)

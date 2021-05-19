@@ -343,7 +343,7 @@ For more information, see [Safe Links in Microsoft Defender for Office 365](../.
 
 ## Related content
 
-[Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-36.md) (article)
+[Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)
 
 [Manage and monitor priority accounts](../setup/priority-accounts.md) (article)
 
