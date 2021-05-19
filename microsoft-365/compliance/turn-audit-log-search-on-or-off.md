@@ -58,7 +58,7 @@ If audit log search is not turned on for your organization, you can turn it on i
 
    If audit log search is not turned on for your organization, a banner is displayed saying **Start recording user and admin activity**.
 
-3. Click  **Start recording user and admin activity**. You will be prompted to confirm if **Your Oraganization settings need to be udpated. Do you want to Continue?**. Click **Yes** to turn on Audit log search.
+3. Select**Start recording user and admin activity**. You will be prompted to confirm if **Your Organization settings need to be updated. Do you want to Continue?**. Select **Yes** to turn on audit log search.
 
 ### Use PowerShell to turn on audit log search
 
