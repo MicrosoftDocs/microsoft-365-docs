@@ -19,7 +19,7 @@ description: "Overview of the planning process for data loss prevention"
 
 # Plan for data loss prevention (DLP)
 
-Every organization will plan for and implement DLP differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
+Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them. However, there are elements that are common to all successful DLP implementations. This article presents the best practices that are used by organizations in their DLP planning.
 
 ## Multiple starting points
 
@@ -30,8 +30,8 @@ Organizations can start their DLP journey:
 - from a platform focus, like wanting to protect information in Teams Chat and Channel messages or on Windows 10 devices
 - knowing what sensitive information they want to prioritize protecting, like health care records, and going straight to defining policies to protect it
 - without knowing what their sensitive information is, where it is, and who is doing what with it so they start with discovery and categorization and take a more methodical approach
-- without knowing what their sensitive information is, or where it is, or who is doing what with it, but they will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there.
-- knowing that they need to implement the full M365 Information Protection stack and so intend to take a longer term, methodical approach
+- without knowing what their sensitive information is, or where it is, or who is doing what with it, but they will move straight to defining policies and use those outcomes as a starting place and then refine their policies from there
+- knowing that they need to implement the full Microsoft 365 Information Protection stack and so intend to take a longer term, methodical approach
 
 These are just some examples of how customers can approach DLP and it doesn't matter where you start from, Microsoft 365 DLP is flexible enough to accommodate various types of information protection journeys from start to a fully realized data loss prevention strategy. 
 
@@ -103,7 +103,6 @@ Your implementation plan should include:
 - how you will train your end users
 - how you will test and tune your policies
 - how you will review and update your data loss prevention strategy based on changing regulatory, legal, industry standard or intellectual property protection and business needs
-- 
 
 #### Map out path from start to desired end state
 
@@ -193,11 +192,11 @@ The regulations, laws and industry standards that your organization is subject t
 
 ## Approaches to deployment
 
-|Customer biz needs description  | approach  |
+|Customer business needs description  | approach  |
 |---------|---------|
-|**Contoso Bank** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize biz disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy. </br> - has a premier support contract with Microsoft| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the M365 IP stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve business process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
-|**TailSpin Toys** doesn’t know what they have or where it is, little to no resource depth. They use Teams, ODB and Exchange extensively.     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply labels accordingly </br>- Refine policies, train users       |
-|**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford hiring outside experts. </br>- Sensitive items are all in M365 ODB/SharePoint </br>- Adoption of  ODB and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br>- Block uploads to non ODB cloud storage      |
+|**Contoso Bank** is in a highly regulated industry and has  many different types of sensitive items in many different locations. </br> - knows which types of sensitive information are top priority. </br> - must minimize business disruption as policies are rolled out. </br> -  has IT resources and can hire experts to help plan, design deploy </br> - has a premier support contract with Microsoft| - Take the time to understand what regulations they must comply with and how they are going to comply. </br> -Take the time to understand the better together value of the Microsoft 365 Information Protection stack </br> - Develop sensitivity labelling scheme for prioritized items and apply </br> - Involve business process owners </br>- Design/code policies, deploy in test mode, train users </br>- repeat|
+|**TailSpin Toys** doesn’t know what they have or where it is, and have little to no resource depth. They use Teams, ODB and Exchange extensively.     |- Start with simple policies on the prioritized locations. </br>- Monitor what gets identified </br>- Apply sensitivity labels accordingly </br>- Refine policies, train users       |
+|**Fabrikam** is a small startup and wants to protect its intellectual property, and must move quickly. They are willing to dedicate some resources, but can't afford hiring outside experts. </br>- Sensitive items are all in Microsoft 365 OneDdrive for Business/SharePoint </br>- Adoption of OneDrive for Business and SharePoint is slow, employees/shadow IT use DropBox and Google drive to share/store items </br>- Employees value speed of work over data protection discipline </br>- Customer splurged and bought all 18 employees new Windows 10 devices     |- Take advantage of the default DLP policy in Teams </br>- Use restricted by default setting for SharePoint items </br>- Deploy policies that prevent external sharing </br>- Deploy policies to prioritized locations </br> -Deploy policies to Windows 10 devices </br>- Block uploads to non OneDrive for Business cloud storage      |
 
 <!--
 
