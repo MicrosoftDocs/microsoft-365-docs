@@ -1,5 +1,5 @@
 ---
-title: Export per device assessments methods and properties
+title: Export assessment methods and properties per device
 description: Provides information about the APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.technology: mde
 ms.custom: api
 ---
  
-# Export per-device assessments methods and properties
+# Export assessment methods and properties per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,24 +49,22 @@ This method is best for _big organizations with more than 100K devices_. The res
 >[!Note]
 >The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 
-## Methods and properties
-
 >[!Note]
 >
 >The properties defined in the three properties tables that follow are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
-### 1. Export per-device secure configurations assessment
+## 1. Export per-device secure configurations assessment
 
 Returns all of the configurations and their status, on a per-device basis.
 
-#### 1.1 methods
+### 1.1 Methods
 
 Method | Data type | Description
 :---|:---|:---
-[Full export per device secure configuration assessment](get-assessmnt-secure-cfg.md#1-full-export-per-device-secure-configuration-assessment) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
-[Full export per device secure configuration assessment via files](get-assessmnt-secure-cfg.md#2-full-export-per-device-secure-configuration-assessment-via-files) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Full export secure configuration assessment](get-assessmnt-secure-cfg.md#1-full-export-secure-configuration-assessment) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
+[Full export secure configuration assessment via files](get-assessmnt-secure-cfg.md#2-full-export-secure-configuration-assessment-via-files) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### 1.2 properties
+### 1.2 Properties
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -85,18 +83,18 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
 
-### 2. Export per-device software inventory assessment
+## 2. Export per-device software inventory assessment
 
 Returns all the installed software and their details on each device
 
-#### 2.1 methods
+### 2.1 Methods
 
 Method | Data type | Description
 :---|:---|:---
-[Full export per-device software inventory assessment](get-assessmnt-software-inventory.md#1-full-export-per-device-software-inventory-assessment) | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-[Full export per-device software inventory assessment via files](get-assessmnt-software-inventory.md#2-full-export-per-device-software-inventory-assessment-via-files) | Investigation entity | _Full export:_ This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Full export software inventory assessment](get-assessmnt-software-inventory.md#1-full-export-software-inventory-assessment) | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+[Full export software inventory assessment via files](get-assessmnt-software-inventory.md#2-full-export-software-inventory-assessment-via-files) | Investigation entity | _Full export:_ This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### 2.2 properties
+### 2.2 Properties
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -115,18 +113,18 @@ SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
 
-### 3. Export per-device software vulnerabilities assessment
+## 3. Export per-device software vulnerabilities assessment
 
 Returns all the known vulnerabilities on a device and their details, for all the devices.
 
-#### 3.1 methods
+### 3.1 Methods
 
 Method | Data type | Description
 :---|:---|:---
-[Full export per-device software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md#1- full-export-per-device-software-vulnerabilities-assessment) | Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
-[Full export per-device software vulnerabilities assessment via files](get-assessmnt-software-vulnerabilities.md#2-full-export-per-device-software-vulnerabilities-assessment-via-files) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Full export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md#1-full-export-software-vulnerabilities-assessment) | Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
+[Full export software vulnerabilities assessment via files](get-assessmnt-software-vulnerabilities.md#2-full-export-software-vulnerabilities-assessment-via-files) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### 3.2 properties
+### 3.2 Properties
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -150,11 +148,11 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 
 ## See also
 
-- [Export per device secure configuration assessment](get-assessmnt-secure-cfg.md)
+- [Export secure configuration assessment per device](get-assessmnt-secure-cfg.md)
 
-- [Export per device software inventory assessment](get-assessmnt-software-inventory.md)
+- [Export software inventory assessment per device](get-assessmnt-software-inventory.md)
 
-- [Export per device software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 

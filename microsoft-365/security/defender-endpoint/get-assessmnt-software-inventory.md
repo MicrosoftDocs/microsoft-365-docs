@@ -1,5 +1,5 @@
 ---
-title: Export per device software inventory assessment
+title: Export software inventory assessment per device
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.technology: mde
 ms.custom: api
 ---
  
-# Export per-device software inventory assessment
+# Export software inventory assessment per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ This method is best for _big organizations with more than 100K devices_. The res
 >[!Note]
 >The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 
-## 1. Full export per-device software inventory assessment
+## 1. Full export software inventory assessment
 
 Returns all the installed software and their details on each device.
 
@@ -210,7 +210,7 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 }
 ```
 
-## 2. Full export Software inventory assessment to Json
+## 2. Full export per-device software inventory assessment
 
 ### 2.1 API method description
 
@@ -273,11 +273,11 @@ GET https://api-us.securitycenter3.contoso.com/api/machines/SoftwareInventoryExp
 
 ## See also
 
-- [Export per device assessments methods and properties](get-assessmnt-1methods-properties.md)
+- [Export assessment methods and properties per device](get-assessmnt-1methods-properties.md)
 
-- [Export per device secure configuration assessments](get-assessmnt-secure-cfg.md)
+- [Export secure configuration assessment per device](get-assessmnt-secure-cfg.md)
 
-- [Export per device software vulnerabilities assessments](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 

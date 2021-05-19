@@ -1,5 +1,5 @@
 ---
-title: Export per device secure configuration assessment
+title: Export secure configuration assessment per device
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.technology: mde
 ms.custom: api
 --- 
  
-# Export per-device secure configuration assessment
+# Export secure configuration assessment per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ Permission type | Permission | Permission display name
 Application | Vulnerability.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-###    Limitations
+### Limitations
 
 >- Maximum page size is 200,000.
 >
@@ -225,7 +225,7 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-###    Limitationss
+### Limitationss
 
 Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
@@ -270,11 +270,11 @@ GET https://api-us.securitycenter3.contoso.com/api/machines/SecureConfigurations
 
 ## See also
 
-- [Export per device assessments methods and properties](get-assessmnt-1methods-properties.md)
+- [Export assessment methods and properties per device](get-assessmnt-1methods-properties.md)
 
-- [Export per device software inventory assessments](get-assessmnt-software-inventory.md)
+- [Export software inventory assessment per device](get-assessmnt-software-inventory.md)
 
-- [Export per device software vulnerabilities assessments](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 
