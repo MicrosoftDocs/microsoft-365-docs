@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: "Learn how to make your organization more secure against password attacks, and why you should ban common passwords and enable risk-based multi-factor authentication."
+description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
 # Password policy recommendations

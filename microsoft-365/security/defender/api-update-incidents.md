@@ -1,5 +1,5 @@
 ---
-title: Update incidents API
+title: Update incident API
 description: Learn how to update incidents using Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Update incidents API
+# Update incident API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.technology: m365d
 
 ## API description
 
-Updates properties of existing incident. Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo```, and ```tags```.
+Updates properties of existing incident. Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo```, ```tags```, and ```comments```.
 
 ### Quotas, resource allocation, and other constraints
 
@@ -80,6 +80,7 @@ assignedTo | string | Owner of the incident.
 classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
 determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
+comment | string | Comment to be added to the incident.
 
 ## Response
 
@@ -104,7 +105,19 @@ Here's an example of the request.
     "assignedTo": "secop2@contoso.com",
     "classification": "TruePositive",
     "determination": "Malware",
-    "tags": ["Yossi's playground", "Don't mess with the Zohan"]
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"],
+    "comments": [
+		  {
+			  "comment": "pen testing",
+			  "createdBy": "secop2@contoso.com",
+			  "createdTime": "2021-05-02T09:34:21.5519738Z"
+		  },
+		  {
+			  "comment": "valid incident",
+			  "createdBy": "secop2@contoso.comt",
+			  "createdTime": "2021-05-02T09:36:27.6652581Z"
+		  }
+	  ]
 }
 ```
 
