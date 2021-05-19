@@ -42,7 +42,7 @@ Are you removing your domain because you want to add it to a different Microsoft
 
 3. Select the boxes next to the names of all the users you want to move.
 
-4. Select **More options** (**…**), at the top of the page, and then choose **Change domains**.
+4. At the top of the page, and then choose **Change domains**.
 
 5. In the **Change domains** pane, select a different domain.
 
