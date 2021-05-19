@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 --- 
 
 # Export secure configuration assessment by device
@@ -34,18 +35,14 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## Full export secure configuration assessment by device
+## 1. Full export secure configuration assessment by device
 
-### API method description - secure configuration assessment by device
+### 1.1 API method description
 
 Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
 
-### Limitations - secure configuration assessment by device
-
-N/A/?
-
-### Permissions - secure configuration assessment by device
+### 1.2 Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -54,19 +51,19 @@ Permission type | Permission | Permission display name
 Application | Vulnerability.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-### URL - secure configuration assessment by device
+### 1.3 URL
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentByMachine
 ```
 
-### Parameters - secure configuration assessment by device
+### 1.4 Parameters
 
 - pageSize \(default = 50,000\) – number of results in response
 
 - \$top – number of results to return \(doesn’t return \@odata.nextLink and therefore doesn’t pull all the data\)
 
-### Properties - secure configuration assessment by device
+### 1.5 Properties
 
 >[!Note]
 >
@@ -92,15 +89,15 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software. | sca-_-scid-20000
 Timestamp | string | Last time the configuration was seen on the device | 2020-11-03 10:13:34.8476880
 
-### Example - secure configuration assessment by device
+### 1.6 Examples
 
-#### Request example - secure configuration assessment by device
+#### 1.6.1 Request example
 
 ```http
 GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5 
 ```
 
-#### Response example - secure configuration assessment by device
+#### 1.6.2 Response example
 
 ```json
 {
@@ -197,13 +194,13 @@ GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurations
             "recommendationReference": "sca-_-scid-6093"
         }
     ],
-    "@odata.nextLink": "https://wdatpapi-eus-stg.cloudapp.net/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
-## Export secure configuration assessment to Json
+## 2. Export secure configuration assessment by device to Json
 
-### API method description - secure configuration assessment to Json
+### 2.1 API method description
 
 The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
 
@@ -213,11 +210,7 @@ This solution allows pulling larger amounts of data faster and more reliably. Th
 1. Call the API to get a list of download URLs with all your organization data.
 2. Download all the files using the download URLs and process the data as you like.
 
-### Limitations - secure configuration assessment to Json
-
-N/A?
-
-### Permissions - secure configuration assessment to Json
+### 2.2 Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -226,13 +219,12 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-### URL - secure configuration assessment to Json
+### 2.3 URL
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentExport
 ```
-
-### Properties - secure configuration assessment to Json
+### 2.5 Properties
 
 >[!Note]
 >
@@ -243,19 +235,19 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 >
 
-### Example - secure configuration assessment to Json
+### 2.6 Examples
 
-#### Request example - secure configuration assessment to Json
+#### 2.6.1 Request example
 
 ```http
 GET https://api-us.securitycenter3.contoso.com/api/machines/SecureConfigurationsAssessmentExport
 ```
 
-#### Response example - secure configuration assessment to Json
+#### 2.6.2 Response example
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#contoso.windowsDefenderATP.api.ExportFilesResponse",
     "exportFiles": [
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",

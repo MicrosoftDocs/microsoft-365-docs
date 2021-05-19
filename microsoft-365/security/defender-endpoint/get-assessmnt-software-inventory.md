@@ -15,9 +15,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
-# Export software inventory assessment
+# Export software inventory assessment by device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,18 +35,32 @@ ms.technology: mde
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## Full export software inventory assessment by device
+There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-### API method description - software inventory assessment by device
+- Full export. The API will pull all data in your organization as a Json response.
+This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+- The API will pull all data in your organization as download files.
+This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
+
+>[!Note]
+>The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+
+## 1. Full export software inventory assessment by device
+
+Returns all the installed software and their details on each device.
+
+### 1.1 API method description
+
+Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
-### Limitations - software inventory assessment by device
+Full export: This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way:
 
-N/A?
+-1. Call the API to get a list of download URLs with all your organization data.
+-2. Download all the files using the download URLs and process the data as you like.
 
-### Permissions - software inventory assessment by device
+### 1.2 Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -54,13 +69,13 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-### URL - software inventory assessment by device
+### 1.3 URL
 
 ```http
 GET /api/machines/SoftwareInventoryByMachine
 ```
 
-### Properties - software inventory assessment by device
+### 1.5 Properties
 
 >[!Note]
 >
@@ -88,15 +103,15 @@ SoftwareName | string | Name of the software product. | chrome
 SoftwareVendor | string | Name of the software vendor. | google
 SoftwareVersion | string | Version number of the software product. | 81.0.4044.138
 
-### Example - software inventory assessment by device
+### 1.6 Examples
 
-#### Request example - software inventory assessment by device
+#### 1.6.1 Request example
 
 ```http
 GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
 ```
 
-#### Response example - software inventory assessment by device
+#### 1.6.2 Response example
 
 ```json
 {
@@ -195,9 +210,9 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 }
 ```
 
-## Full export Software inventory assessment to Json
+## 2. Full export Software inventory assessment to Json
 
-### API method description - software inventory assessment to Json
+### 2.1 API method description
 
 The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
@@ -208,11 +223,7 @@ This API allows you to download all your data from Azure Storage in the followin
 
 - Download all the files using the download URLs and process the data as you like.
 
-### Limitations - software inventory assessment to Json
-
-N/A?
-
-### Permissions - software inventory assessment to Json
+### 2.2 Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
@@ -221,13 +232,13 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
-### URL - software inventory assessment to Json
+### 2.3 URL
 
 ```http
 GET /api/machines/SoftwareInventoryExport
 ```
 
-### Properties - software inventory assessment to Json
+### 2.5 Properties
 
 >[!Note]
 >
@@ -238,15 +249,15 @@ GET /api/machines/SoftwareInventoryExport
 >- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 >
 
-### Example - software inventory assessment to Json
+### 2.6 Examples
 
-#### Request example - software inventory assessment to Json
+#### 2.6.1 Request example
 
 ```http
 GET https://api-us.securitycenter3.contoso.com/api/machines/SoftwareInventoryExport
 ```
 
-#### Response example - software inventory assessment to Json
+#### 2.6.2 Response example
 
 ```json
 {

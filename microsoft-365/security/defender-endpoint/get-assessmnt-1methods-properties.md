@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
 # Assessment exports per device methods and properties
@@ -45,22 +46,27 @@ This method is best for _small organizations with less than 100K devices_. The r
 - The API will pull all data in your organization as download files.
 This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
 
+>[!Note]
+>The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+
 ## Methods and properties
 
 >[!Note]
 >
 >The properties defined in the three properties tables that follow are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
-### Export secure configurations assessment
+### 1. Export secure configurations assessment by device
 
-#### Export secure configurations assessment methods
+Returns all of the configurations and their status, on a per-device basis.
+
+#### 1.1 methods
 
 Method | Data type | Description
 :---|:---|:---
 [Full export secure configuration assessment by device](get-assessmnt-secure-cfg.md#full-export-secure-configuration-assessment-by-device) | Investigation collection | _Full export:_ Returns  a table has an entry for every unique combination of DeviceId, ConfigurationId.
 [Full export secure configuration assessment to Json](get-assessmnt-secure-cfg.md#export-secure-configuration-assessment-to-json) | Investigation entity | _Full export:_ This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### Export secure configurations assessment properties
+#### 1.2 properties
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -79,16 +85,18 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
 
-### Export software inventory assessment
+### 2. Export software inventory assessment by device
 
-#### Export software inventory assessment methods
+Returns all the installed software and their details on each device
+
+#### 2.1 methods
 
 Method | Data type | Description
 :---|:---|:---
 [Full export software inventory assessment by device](get-assessmnt-software-inventory.md#full-export-software-inventory-assessment-by-device) | Investigation collection | _Full export:_ This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 [Full export software inventory assessment to Json](get-assessmnt-software-inventory.md#full-export-software-inventory-assessment-to-json) | Investigation entity | _Full export:_ This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### Export software inventory assessment properties
+#### 2.2 properties
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -107,17 +115,18 @@ SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
 
-### Export software vulnerability assessment
+### 3. Export software vulnerability assessment by device
 
-#### Export software vulnerability assessment methods
+Returns all the known vulnerabilities on a device and their details, for all the devices.
+
+#### 3.1 methods
 
 Method | Data type | Description
 :---|:---|:---
-[Export software vulnerabilities delta assessment by device](get-assessmnt-software-vulnerabilities.md#export-software-vulnerabilities-delta-assessment-by-device) | Investigation entity | _Full export:_ This API is used to get everything that has changed in the full vulnerability export of the organization (new, fixed, updated vulnerabilities). It can be used as a consecutive call after the full export or to update the state of the vulnerabilities in your organization. It can also be used to calculate different KPIs such as “how many vulnerabilities got fixed?” or “how many new vulnerabilities were added to my organization?” This table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, EventTimestamp.
 [Full export software vulnerabilities assessment by device](get-assessmnt-software-vulnerabilities.md#full-export-software-vulnerabilities-assessment-by-device) | Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
 [Full export software vulnerabilities assessment to Json](get-assessmnt-software-vulnerabilities.md#full-export-software-vulnerabilities-assessment-to-json) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-#### Export software vulnerability assessment properties
+#### 3.2 properties
 
 Property (id) | Data type | Description
 :---|:---|:---
