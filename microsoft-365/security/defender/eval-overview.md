@@ -109,12 +109,6 @@ Now investigate and respond to threats, and keep a log of your experience. This 
 > [!TIP]
 > This is the *recommended* configuration. However, your configuration may vary according to the needs of your company.
 
-## Establishing the Evaluation Environment
-
-There are two common ways to do this. The first is to [build an environment from scratch](m365d-evaluation.md) for the purpose of evaluation. It may not have many real signals from the business, so be aware of that caveat. This document assume you already have a production M365 tenant, and will activate E5 trial licenses to evaluate M365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.
-
-
-
 ## Other Articles in this series
 
 List the other articles in this series.
