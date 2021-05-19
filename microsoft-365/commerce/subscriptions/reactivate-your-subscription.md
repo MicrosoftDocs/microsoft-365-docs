@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,14 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - fwlink 874703
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: "Learn how to reactivate your subscription when it expires, is disabled, or canceled."
+- commerce_subscriptions
+search.appverid: MET150 
+description: "Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term."
+ms.date: 04/07/2021
 ---
 
 # Reactivate your subscription
@@ -39,6 +38,7 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -50,10 +50,11 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
-2. On the **Products** tab, find the subscription that you want to reactivate. Select **More actions** (three dots), then select **Reactivate this subscription**.\
-    If you don't see **Reactivate this subscription**, [contact support](../../admin/contact-support-for-business-products.md).
+2. On the **Products** tab, find the subscription that you want to reactivate. Select the three dots (more actions), then select **Reactivate this subscription**.\
+    If you don't see **Reactivate this subscription**, [contact support](../../business-video/get-help-support.md).
 3. In the **Reactivate this subscription** pane, select a payment method from the drop-down list, or select **Add payment method**.
 4. Select **Save**.
 

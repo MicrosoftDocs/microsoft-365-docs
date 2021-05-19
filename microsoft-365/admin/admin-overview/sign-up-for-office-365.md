@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,8 +20,6 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
 search.appverid:
 - MET150
 ROBOTS: NOINDEX

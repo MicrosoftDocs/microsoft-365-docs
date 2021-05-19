@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
@@ -19,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to get admin help or support in Microsoft 365 Business Premium."
+description: "You must be an admin for a business subscription to get admin help or online or phone support in Microsoft 365 Business Premium."
 ---
 
 # Get support
@@ -39,7 +38,7 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. (For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
 2. Select the **Need help?** button.
 
@@ -212,7 +211,7 @@ The administrator is expected to provide initial assistance for the customer's u
 
 ## Feature availability
 
-To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## Follow us on WeChat
 
@@ -249,3 +248,12 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end
+
+
+## Related content
+
+[Find docs and training](find-help-answers.md) (article)
+
+[Employee quick setup](employee-quick-setup.md) (article)
+
+[Overview of Microsoft 365 Business Premium setup](setup-overview.md) (video)

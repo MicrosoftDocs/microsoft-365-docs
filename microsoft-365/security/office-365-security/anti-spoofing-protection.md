@@ -40,17 +40,28 @@ When it comes to protecting its users, Microsoft takes the threat of phishing se
 
 The following anti-spoofing technologies are available in EOP:
 
-- **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
-- **Anti-phishing policies**: In EOP, anti-phishing policies allow you to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). Advanced anti-phishing policies that are available in Microsoft Defender for Office 365 also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
-
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
-As of October 2018, anti-spoofing protection is available in EOP.
+  EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
+  ![EOP anti-spoofing checks](../../media/eop-anti-spoofing-protection.png)
 
-![EOP anti-spoofing checks](../../media/eop-anti-spoofing-protection.png)
+- **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+
+- **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+
+- **Anti-phishing policies**: In EOP, anti-phishing policies contain the following anti-spoofing settings:
+  - Turn spoof intelligence on or off.
+  - Turn unauthenticated sender identification in Outlook on or off.
+  - Specify the action for blocked spoofed senders.
+
+  For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
+
+  **Note**: Anti-phishing policies in Microsoft Defender for Office 365 contain addition protections, including **impersonation** protection. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Spoof detections report**: For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+
+  **Note**: Defender for Office 365 organizations can also use Real-time detections (Plan 1) or Threat Explorer (Plan 2) to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
 ## How spoofing is used in phishing attacks
 
@@ -123,12 +134,6 @@ Microsoft differentiates between two different types of spoofed messages:
 
 For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
-## Reports of how many messages were marked as spoofed
-
-EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
-
-Microsoft Defender for Office 365 organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
-
 ## Problems with anti-spoofing protection
 
 Mailing lists (also known as discussion lists) are known to have problems with anti-spoofing due to the way they forward and modify messages.
@@ -157,9 +162,9 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
     When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
 
-  - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as discussed in the [Use spoof intelligence to configure permitted senders of unauthenticated email](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
+  - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
-  - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
+  - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 

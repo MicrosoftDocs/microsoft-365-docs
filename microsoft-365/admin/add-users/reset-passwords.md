@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Learn how to reset password for a user in Microsoft 365 for business subscription."
+description: "Sign in with your Microsoft 365 admin account to reset passwords for users in Microsoft 365 for business subscription."
 ---
 
 # Reset passwords
@@ -35,7 +35,7 @@ This article explains how to reset passwords for yourself and for your users whe
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md).
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
@@ -81,7 +81,7 @@ If you forgot your password and can't sign in:
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
-- Or, [call Microsoft Support](../contact-support-for-business-products.md).
+- Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>
@@ -117,16 +117,12 @@ Try this article: [I forgot the username or password for the account I use with 
   
 ## Related content
   
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
-[Reset passwords](../add-users/reset-passwords.md)
+[Reset passwords](../add-users/reset-passwords.md) (article)
 
-[Set an individual user's password to never expire](set-password-to-never-expire.md)
+[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)
 
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md)
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)
 
-[Restore a user](restore-user.md)
-
-[Remove a former employee](remove-former-employee.md)
-
-[Microsoft 365 for business training videos](../../business-video/index.yml)
+[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)

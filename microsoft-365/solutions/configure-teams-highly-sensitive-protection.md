@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: "Learn how to deploy teams with protection for highly sensitive data."
 ---
 
@@ -109,7 +110,7 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
 
-- Update the guest sharing settings for the site in the SharePoint admin center to match what you chose when you created the label, and update the default sharing link to *People with existing access*.
+- Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *People with existing access*.
 - Update the site sharing settings in the site itself to prevent members from sharing files, folders, or the site, and turn off access requests.
 
 ### Site guest sharing settings
