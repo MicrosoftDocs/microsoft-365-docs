@@ -88,7 +88,7 @@ You can delete or edit the sensitive information type pattern by selecting it wh
 After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
 
 After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly from the Sensitive Information Types list in the Data classification section in the Compliance center:
-1. Select your EDM sensitive information type from the list and then selecting the **Test** option on the pane that appears on the right. 
+1. Select your EDM sensitive information type from the list and then select the **Test** option on the pane that appears on the right. 
 2. Uplolad a document that contains data you want to try to detect, for which you can use some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure your document includes variations with and without those delimiters for more comprehensive validation.
 3. After the file has been uploaded and scanned, check if matches to any of the patterns defined in your EDM type were found. 
 
