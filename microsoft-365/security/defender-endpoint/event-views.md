@@ -53,7 +53,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
     ![Animation highlighting Import custom view on the left of the Even viewer window](/windows-itpro-docs/windows/security/threat-protection/images/events-import.gif)
 
-4. Navigate to where you extracted XML file for the custom view you want and select it.
+4. Navigate to where you extracted the XML file for the custom view you want and select it.
 
 5. Select **Open**.
 
