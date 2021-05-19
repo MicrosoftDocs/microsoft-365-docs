@@ -53,9 +53,7 @@ This preview is enabled for customers who meet these requirements:
 
 - Any role with Service Health Dashboard level permissions can access Exchange Online Monitoring. For more information, see [How to check Microsoft 365 service health](view-service-health.md).
 
-## Scenario details
-
-### Organization-level scenarios
+## Organization-level scenarios
 
 With Exchange Online monitoring you can view the health for the following email clients based on email read activity:
 
@@ -80,7 +78,7 @@ You can also monitor Exchange Online health for the following scenarios:
 
 For all these scenarios, the key numbers are for the last 30 minutes in the main dashboard. Detailed views for each of these scenarios show the near real-time trend for seven days with the 30-minute aggregate compared with the previous week. 
 
-### Priority accounts monitoring Scenarios
+## Priority accounts monitoring scenarios
 
 With Exchange Online priority account monitoring, you can view the health for the following scenarios after configuring [priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts):
 
