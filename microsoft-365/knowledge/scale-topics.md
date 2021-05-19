@@ -22,7 +22,9 @@ First, a reminder of the [four stages for topics](manage-topics.md#topic-stages)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
-- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation occurs when either:
+   - A knowledge manager confirms a topic. A knowledge manager confirms a topic on the **Manage topics** page. 
+   - Multiple users confirm a topic. For a topic to be confirmed by users, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
  
 - **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
 
