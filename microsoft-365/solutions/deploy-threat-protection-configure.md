@@ -5,8 +5,7 @@ keywords: security solution, setup, configuration, Microsoft 365 E5, advanced th
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.audience: ITPro
-audience: Admin
+audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
