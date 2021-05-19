@@ -474,12 +474,6 @@
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
-###### [Assessment]()
-####### [Export assessments methods and properties](get-assessmnt-1methods-properties.md)
-####### [Export assessment secure configuration](get-assessmnt-secure-cfg.md)
-####### [Export assessment software inventory](get-assessmnt-software-inventory.md)
-####### [Export assessment software vulnerabilities](get-assessmnt-software-vulnerabilities.md)
-
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
 ####### [List Investigation](get-investigation-collection.md)
@@ -571,6 +565,12 @@
 ####### [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 ####### [Get vulnerability by Id](get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
+
+###### [Vulnerability and secure configuration assessments]()
+####### [Export per device assessments methods and properties](get-assessmnt-1methods-properties.md)
+####### [Export per device secure configuration assessment](get-assessmnt-secure-cfg.md)
+####### [Export per device software inventory assessment](get-assessmnt-software-inventory.md)
+####### [Export per device software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](api-microsoft-flow.md)

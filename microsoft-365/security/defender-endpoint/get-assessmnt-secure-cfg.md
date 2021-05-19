@@ -1,5 +1,5 @@
 ---
-title: Export secure configuration assessment
+title: Export per device secure configuration assessment
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, 
 search.product: eADQiWindows 10XVcnh
@@ -17,8 +17,8 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 --- 
-
-# Export secure configuration assessment by device
+ 
+# Export per-device secure configuration assessment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## 1. Full export secure configuration assessment by device
+## 1. Full export per device secure configuration assessment
 
 ### 1.1 API method description
 
@@ -50,6 +50,12 @@ Permission type | Permission | Permission display name
 ---|---|---
 Application | Vulnerability.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Vulnerability.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+
+###    Limitations
+
+>- Maximum page size is 200,000.
+>
+>- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 ### 1.3 URL
 
@@ -198,7 +204,7 @@ GET https://api-us.securitycenter3.windows.com/api/machines/SecureConfigurations
 }
 ```
 
-## 2. Export secure configuration assessment by device to Json
+## 2. Full export per-device secure configuration assessment via files
 
 ### 2.1 API method description
 
@@ -219,11 +225,16 @@ Permission type | Permission | Permission display name
 Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
+###    Limitationss
+
+Rate limitations for this API are 5 calls per minute and 20 calls per hour.
+
 ### 2.3 URL
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentExport
 ```
+
 ### 2.5 Properties
 
 >[!Note]
@@ -259,11 +270,11 @@ GET https://api-us.securitycenter3.contoso.com/api/machines/SecureConfigurations
 
 ## See also
 
-- [Export assessments methods and properties](get-assessmnt-1methods-properties.md)
+- [Export per device assessments methods and properties](get-assessmnt-1methods-properties.md)
 
-- [Export software inventory assessment](get-assessmnt-software-inventory.md)
+- [Export per device software inventory assessments](get-assessmnt-software-inventory.md)
 
-- [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+- [Export per device software vulnerabilities assessments](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 

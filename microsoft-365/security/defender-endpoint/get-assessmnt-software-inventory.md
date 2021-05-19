@@ -1,5 +1,5 @@
 ---
-title: Export software inventory assessment
+title: Export per device software inventory assessment
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
@@ -17,8 +17,8 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ---
-
-# Export software inventory assessment by device
+ 
+# Export per-device software inventory assessment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ This method is best for _big organizations with more than 100K devices_. The res
 >[!Note]
 >The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 
-## 1. Full export software inventory assessment by device
+## 1. Full export per-device software inventory assessment
 
 Returns all the installed software and their details on each device.
 
@@ -79,11 +79,11 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!Note]
 >
->- Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>- pageSize (default = 50,000) – number of results in response.
 >
->- The properties defined in the following table are listed alphanumerically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data).
 >
->- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+> Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
 
 Property (id) | Data type | Description | Example of a returned value
@@ -273,11 +273,11 @@ GET https://api-us.securitycenter3.contoso.com/api/machines/SoftwareInventoryExp
 
 ## See also
 
-- [Export assessments methods and properties](get-assessmnt-1methods-properties.md)
+- [Export per device assessments methods and properties](get-assessmnt-1methods-properties.md)
 
-- [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
+- [Export per device secure configuration assessments](get-assessmnt-secure-cfg.md)
 
-- [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+- [Export per device software vulnerabilities assessments](get-assessmnt-software-vulnerabilities.md)
 
 Other related
 
