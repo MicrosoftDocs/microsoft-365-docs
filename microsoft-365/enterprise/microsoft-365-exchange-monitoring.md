@@ -94,7 +94,7 @@ With Exchange Online priority account monitoring, you can view the health for th
 
 The Exchange licensing scenario checks if the priority account is not able to login due to invalid license issues which can be addressed by the tenant admin.
 
-The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. 
+The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. Exchange Admin Center role permissions may be required to edit thresholds. For more information, see [Email issues for priority accounts report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report). 
 
 The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
 
