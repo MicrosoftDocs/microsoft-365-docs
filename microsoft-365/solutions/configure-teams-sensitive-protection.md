@@ -100,7 +100,7 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 Each time you create a new team with the sensitive label, there are two steps to do in SharePoint:
 
-- Update the guest sharing settings for the site in the SharePoint admin center to match what you chose when you created the label, and update the default sharing link to *Specific people*.
+- Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *Specific people*.
 - Update the site sharing settings in the site itself to prevent members from sharing the site.
 
 ### Site guest sharing settings

@@ -68,7 +68,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 ### View quarantined email
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Verify that **View quarantined** is set to the default value **email**.
 
@@ -230,7 +230,7 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 
 ### View quarantined files
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
 
