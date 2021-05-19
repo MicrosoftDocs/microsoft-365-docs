@@ -124,7 +124,7 @@ Follow these steps to connect to all the services in a single PowerShell window 
    > [!Note]
    > To connect to the Security &amp; Compliance Center for Microsoft 365 clouds other than Worldwide, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-7. Run these commands to connect to Teams PowerShell (and Skype for Business Online)
+7. Run these commands to connect to Teams PowerShell (and Skype for Business Online).
     
    ```powershell
    Import-Module MicrosoftTeams
