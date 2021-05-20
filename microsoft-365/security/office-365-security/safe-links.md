@@ -50,7 +50,7 @@ Safe Links protection is available in the following locations:
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
   
   > [!NOTE]
-  > Sale Links does not work on mail-enabled public folders.
+  > Safe Links does not work on mail-enabled public folders.
 
 - **Microsoft Teams** (currently in TAP Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
 
