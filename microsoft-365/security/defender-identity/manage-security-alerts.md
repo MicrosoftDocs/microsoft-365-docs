@@ -5,7 +5,8 @@ ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
-ms.service: defender-for-identity
+ms.service: microsoft-defender-for-identity
+manager: raynew
 ---
 
 # Defender for Identity security alerts in Microsoft 365 Defender
@@ -77,4 +78,4 @@ On the right pane, you'll see the **Alert details**. Here you can see more detai
 
 ## See also
 
-- [Investigate alerts in Microsoft 365 Defender](defender\investigate-alerts.md)
+- [Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)
