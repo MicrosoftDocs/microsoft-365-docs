@@ -33,6 +33,10 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-
 
 ## April 2021
 
+### Advanced eDiscovery
+
+- [Limits in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Organizations can now export up to 5 million items or 500 MB, whichever is smaller, in a single export of items from a review set.
+
 ### Retention policies and retention label policies
 
 - **Retention policy**. The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the Applications parameter.
