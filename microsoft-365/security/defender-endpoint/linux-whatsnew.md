@@ -24,6 +24,10 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.29.64 (30.121042.12964.0)
+
+- Performance improvements & bug fixes
+
 ## 101.25.72 (30.121022.12563.0)
 
 - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).

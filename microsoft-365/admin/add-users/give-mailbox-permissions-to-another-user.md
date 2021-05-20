@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: "Learn how to give a user the right to access another user's mailbox. This will give the user the right to read mails and send mails from the other user's mailbox. "
+description: "Give a user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
 ---
 
 # Give mailbox permissions to another user - Admin Help
@@ -200,11 +200,11 @@ There are a few different ways you can access a mailbox once you've been given a
 ::: moniker-end
 
 
-## Send and read from Outlook and Outlook on the web for business
-
-
-Want to know how to send email from another user's mailbox? Check out the following topics:
+## Related content
   
-- [Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
+[Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)
     
-- [Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+[Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (article)
+
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)
+

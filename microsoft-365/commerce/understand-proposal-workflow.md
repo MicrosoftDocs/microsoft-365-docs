@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
+search.appverid: MET150 
 description: "Learn about proposals to help you buy Microsoft products and services."
 ROBOTS: NOINDEX
 ms.date: 03/17/2021

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: "Learn how to verify your email and domain ownership to take over an unmanaged tenant in Microsoft 365"
+description: "Learn how to verify your email and domain ownership to take over an unmanaged tenant created by a self-service user signup in Microsoft 365."
 ---
 
 # Perform an internal admin takeover
@@ -61,12 +61,12 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 > [!NOTE]
 > Taking over the shadow tenant will not impact any existing information or services. However, if any users in the domain have signed up for services that require a license, you'll be asked to buy licenses for them as part of taking over the admin role. You can buy or remove licenses once the admin setup process is finished.
   
-## Related articles
+## Related content
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)
 
-[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)
 
-[Using self-service sign up in your organization](self-service-sign-up.md)
+[Using self-service sign up in your organization](self-service-sign-up.md) (article)
   
-[Understanding the Power BI service administrator role](/power-bi/service-admin-role)
+[Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

@@ -191,3 +191,10 @@ After the nameserver records are updated to point to Microsoft, your domain setu
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
+## Related content
+
+[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)
+
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
+
+[Manage domains](index.yml) (link page)

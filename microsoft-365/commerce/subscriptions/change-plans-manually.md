@@ -17,8 +17,8 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
 # Change plans manually
@@ -93,7 +93,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 2. Select the circles next to the names of the users for whom you want to replace existing licenses.
 
-3. At the top, select **More options** (**...**), and then choose **Manage product licenses**.
+3. At the top, select the three dots (more actions), and then choose **Manage product licenses**.
 
 4. Select **Replace existing product license assignments** \> **Next**.
 

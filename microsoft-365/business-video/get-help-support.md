@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to get admin help or support in Microsoft 365 Business Premium."
+description: "You must be an admin for a business subscription to get admin help or online or phone support in Microsoft 365 Business Premium."
 ---
 
 # Get support
@@ -248,3 +248,12 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end
+
+
+## Related content
+
+[Find docs and training](find-help-answers.md) (article)
+
+[Employee quick setup](employee-quick-setup.md) (article)
+
+[Overview of Microsoft 365 Business Premium setup](setup-overview.md) (video)
