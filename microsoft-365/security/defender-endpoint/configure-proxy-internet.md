@@ -58,7 +58,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
-> - When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
+> When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
 >
 > - Windows 10, version 1809 or Windows Server 2019 - https://support.microsoft.com/kb/5001384
 > - Windows 10, version 1909 - https://support.microsoft.com/kb/4601380
@@ -77,21 +77,21 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
 
-  - Configure the proxy
+  Configure the proxy
 
-    ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
+  ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
 
-    The policy sets two registry values, `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD, under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+  The policy sets two registry values, `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD, under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-    The registry value `TelemetryProxyServer` takes the following string format:
+  The registry value `TelemetryProxyServer` takes the following string format:
 
-    ```text
-    <server name or ip>:<port>
-    ```
+  ```text
+  <server name or ip>:<port>
+  ```
 
-    For example: 10.0.0.6:8080
+  For example: 10.0.0.6:8080
 
-    The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+  The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
 ## Configure the proxy server manually using netsh command
 
