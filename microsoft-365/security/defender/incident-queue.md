@@ -82,7 +82,7 @@ This table lists the filter names that are available.
 
 After you've determined which incident requires the highest priority, select it and:
 
-- [Manage](manage-incidents.md) the properties of the incident for tags, assignment to a security analyst, and comments.
+- [Manage](manage-incidents.md) the properties of the incident for tags, assignment, immediate resolution for false positive incidents, and comments.
 - Begin your [investigation](investigate-incidents.md).
 
 ## See also
