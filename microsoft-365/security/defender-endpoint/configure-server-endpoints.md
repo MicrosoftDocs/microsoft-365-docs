@@ -85,25 +85,34 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 2. Select **Windows Server 2012 R2 and 2016**.
 3. Select **Download installation package** and save the .msi file. 
-  
-    1. Run the installation package to install the application. Follow the installation wizard.
-
-    ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
-
-    OR 
-
-    Run the following command to install the msi silently:
-
-    ```
-    Msiexec /i md4ws.msi /quiet 
-    ```
-
-      
+          
     >[!NOTE]
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+
+## Installer package options
+You can choose any of the following options to run the installation package:
+
+- Silent
+- Passive
+
+
+### Silent installation
+Use the installation package from the previous step for the following steps.
+
+
+Run the following command to install the msi silently:
+
+    ```
+    Msiexec /i md4ws.msi /quiet 
+    ```
+### Passive installation
+Run the installation package to install the application. Follow the installation wizard.
+
+   ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
+
 
 
 ## Windows Server Semi-Annual Channel and Windows Server 2019

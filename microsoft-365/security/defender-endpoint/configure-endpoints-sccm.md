@@ -38,7 +38,7 @@ You can use Configuration Manager to onboard endpoints to the Microsoft Defender
 There are several options you can use to onboard devices using Configuration Manager:
 - [Onboard devices using System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [Tenant attach](/mem/configmgr/tenant-attach/)
-- MEM attach -LINK TBD
+- MDE attach - LINK TBD
 
 
 For Windows Server 2012 R2 and Windows Server 2016 - after completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](onboard-server-2008r2.md#configure-and-update-system-center-endpoint-protection-clients).
