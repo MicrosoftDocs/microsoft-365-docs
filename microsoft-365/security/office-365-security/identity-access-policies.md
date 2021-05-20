@@ -37,7 +37,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-[![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Here's a one-page PDF summary with links to the individual policies:
 
@@ -326,7 +326,7 @@ For **System security**, see this table.
 
 |Type|Properties|Value|Action|
 |---|---|---|---|
-|Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
+|Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
 |
 
 ## Require compliant PCs (but not compliant phones and tablets)

@@ -166,9 +166,9 @@ To prevent installation of particular classes of devices:
 
 ### Block installation and usage of removable storage
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+2. Click **Devices** > **Configuration Profiles** > **Create profile**.
 
     > [!div class="mx-imgBorder"]
     > ![Create device configuration profile](images/create-device-configuration-profile.png)

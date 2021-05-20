@@ -62,7 +62,7 @@ The numbers listed are the minimum Office application version required for each 
 |[Audit label-related user activity](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rolling out: 16.0.13628+ | Yes <sup>\*</sup>                                                        |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rolling out: 16.45+         | Rolling out: 2.47+ | Rolling out: 16.0.13628+ | Rolling out                                            
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rolling out: 16.44+ | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Beta Channel](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Preview: [Current Channel (Preview)](https://office.com/insider) | Preview: [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Footnote:**
@@ -84,11 +84,11 @@ The numbers listed are the minimum Office application version required for each 
 |[Dynamic markings with variables](#dynamic-markings-with-variables)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions: <br /> - Do Not Forward](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
-|[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | Rolling out: 16.48+ | Rolling out: 4.2112.0+  | Rolling out: 4.2112.0+ | Yes |
-|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rolling out: 2101+                        | 16.43+ <sup>\*</sup>                    | Under review            | Under review                | Yes                |
+|[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Yes |
+|[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Yes                |
 |[Audit label-related user activity](data-classification-activity-explorer.md) | 2011+ | Under review | Under review           | Under review               | Under review |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
-|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Under review                      | Rolling out: 16.43.1108+                   | Rolling out: 4.2111+           | Rolling out: 4.2111+               | Rolling out |
+|[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Yes |
 |
 
 **Footnotes:**
@@ -131,7 +131,7 @@ For Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify 
 | | | 
 
 
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the Azure Information Protection client might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -163,23 +163,35 @@ Sensitivity labels that you configure to apply encryption remove the complexity 
 - For a document:  **File** > **Info** > **Protect Document** > **Restrict Access**
 - for an email: From the **Options** tab > **Encrypt** 
   
-When users initially label a document or email, they can always override your label configuration settings with their own encryption settings. For example:
+When users initially label a document or email, they can override your label configuration settings with their own encryption settings. For example:
 
 - A user applies the **Confidential \ All Employees** label to a document and this label is configured to apply encryption settings for all users in the organization. This user then manually configures the IRM settings to restrict access to a user outside your organization. The end result is a document that's labeled **Confidential \ All Employees** and encrypted, but users in your organization can't open it as expected.
 
-- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. This user then manually configures the IRM settings so that the email is unrestricted. The end result is the email can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. In the Outlook app, this user then manually selects the IRM setting for Encrypt-Only. The end result is that while the email does remain encrypted, it can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+    
+    As an exception, for Outlook on the web, the options from the **Encrypt** menu aren't available for a user to select when the currently selected label applies encryption.
 
 - A user applies the **General** label to a document, and this label isn't configured to apply encryption. This user then manually configures the IRM settings to restrict access to the document. The end result is a document that's labeled **General** but that also applies encryption so that some users can't open it as expected.
 
 If the document or email is already labeled, a user can do any of these actions if the content isn't already encrypted, or they have the [usage right](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control. 
 
-For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents. For example:
+For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents and emails. For example:
 
 - For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - Instead of users manually removing encryption after selecting a label that applies encryption, provide a sublabel alternative when users need a label with the same classification, but no encryption. Such as:
     - **Confidential \ All Employees**
     - **Confidential \ Anyone (no encryption)**
+
+- Consider disabling IRM settings to prevent users from selecting them:
+    - Outlook for Windows: 
+        - Registry keys (DWORD:00000001) *DisableDNF* and *DisableEO* from HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Make sure that the Group Policy setting **Configure default encryption option for the Encrypt button** isn't configured
+    - Outlook for Mac: 
+        - Keys *DisableEncryptOnly* and *DisableDoNotForward* security settings documented in [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook on the web: 
+        - Parameters *SimplifiedClientAccessDoNotForwardDisabled* and *SimplifiedClientAccessEncryptOnlyDisabled* documented for [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+    - Outlook for iOS and Android: These apps don't support users applying encryption without labels, so nothing to disable.
 
 > [!NOTE]
 > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
@@ -317,7 +329,7 @@ Use the following syntax:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-As with the other dynamic visual markings, the syntax is case-sensitive.
+As with the other dynamic visual markings, the syntax is case-sensitive, which includes the abbreviations for each application type (WEPO).
 
 Examples:
 
@@ -342,11 +354,12 @@ Examples:
 ## Require users to apply a label to their email and documents
 
 > [!IMPORTANT]
-> Also known as mandatory labeling, not all apps on all platforms currently support the policy setting of **Require users to apply a label to their email and documents**.
 > 
-> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports mandatory labeling and for labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions.
+>
+> To use mandatory labeling for documents but not emails, see the instructions in the next section that explains how to configure Outlook-specific options.
 
-When this policy setting is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
+When the policy setting **Require users to apply a label to their email and documents** is selected, users assigned the policy must select and apply a sensitivity label under the following scenarios:
 
 - For the Azure Information Protection unified labeling client:
     - For documents (Word, Excel, PowerPoint): When an unlabeled document is saved or users close the document.
@@ -407,7 +420,7 @@ The other PowerShell advanced settings remain supported for the Azure Informatio
 
 #### PowerShell tips for specifying the advanced settings
 
-To specify a different default label for Outlook, you must specify the label GUID. To find this value, can you use the following command:
+To specify a different default label for Outlook, identify the label by its GUID. To find this value, can you use the following command:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
@@ -422,6 +435,8 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
 
 ## End-user documentation
 
-- [Apply sensitivity labels to your documents and email within Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Known issues with sensitivity labels in Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
-- [Known issues when you apply sensitivity labels to your Office files](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

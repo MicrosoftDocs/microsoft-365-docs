@@ -32,7 +32,7 @@ ms.custom:
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](../business-video/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -43,7 +43,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
-- [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [How to check Windows release health](/windows/deployment/update/check-release-health)
 
 ## April 2021
 
@@ -78,7 +78,7 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+To learn more about the new features, check out [Message center](manage/message-center.md).
 
 ### What's new features
 
@@ -118,7 +118,7 @@ Priority accounts are only available to organizations that meet both of the foll
 
 There are two ways to get started:
 
-- Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
+- Go to **Users**, and then in the three dots (more actions) menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
 For more info on priority accounts, check out [Monitoring priority accounts](./setup/priority-accounts.md).
@@ -131,7 +131,7 @@ We've started rolling out a new Search experience for the admin center, and we c
 - The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
 - Search is smarter and will give you better results, even faster. Try typing "2fa" to get started.
 - Search results are organized by the type of item or action you can take.
-  - **Users**: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
+  - **Users**: Select the user's name and you can edit that user right there. If you select the three dots (more actions) menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
   - **Groups**: Edit the group from any page, add members, assign owners.
   - **Actions**: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
   - **Navigation**: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
