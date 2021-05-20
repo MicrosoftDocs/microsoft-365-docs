@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content for when you use a disp
 Use the **Disposition** page from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
 > [!NOTE]
-> Rolling out in preview: **multi-stage disposition review**
+> In preview: **multi-stage disposition review**
 > 
 > An administrator can now add up to five consecutive stages of disposition review in a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders. The following sections have more information about the changes in this preview.
 >
