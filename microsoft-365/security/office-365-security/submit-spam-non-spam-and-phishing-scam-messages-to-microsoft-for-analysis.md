@@ -93,4 +93,4 @@ The data resides in the Office 365 compliance boundary in North American data ce
 
 ## Create a mail flow rule to receive copies of messages that are reported to Microsoft
 
-For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](u/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
