@@ -2,7 +2,7 @@
 # This template provides a structure for M365 SMB admin articles.
 # For details about MARVEL content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-marvel-content-on-docs
 
-title: "Article title goes here"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
+title: "Sign up for Microsoft 365 Lighthouse"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
 f1.keywords: NOCSH                 # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
 ms.author: YourMicrosoftAlias      # (Required) Your Microsoft alias without @microsoft.com
 author: YourGitHubUserName         # (Required) Your GitHub alias, not your Microsoft alias
