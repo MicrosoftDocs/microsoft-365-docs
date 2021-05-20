@@ -35,16 +35,15 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
+There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
 
-- Full export. The API will pull all data in your organization as a Json response.
-This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- Full export: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- The API will pull all data in your organization as download files.
-This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
+- Full export via files: The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
 >[!Note]
->The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+>
+>The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 ## 1. Full export software vulnerabilities assessment
 
@@ -52,15 +51,13 @@ This method is best for _big organizations with more than 100K devices_. The res
 
 Returns all of the vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 
-In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
+This API solution will pull all of the data in your organization as a Json response, and contains the requisite data for devices in your organization. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
 
-1. The API will pull all data in your organization as a json response.
-This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
+- Call the API to get a list of download URLs with all of your organization data.
 
-2. The API will pull all data in your organization as download files.
-This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
+- Download all the files using the download URLs and process the data as you like.
 
-Each returned record is a unique combination of DeviceId, CVEID, @@@@
+Each returned record is a unique combination of DeviceId, CveId, SoftwareVendor, SoftwareName, and SoftwareVersion.
 
 ### 1.2 Permissions
 
@@ -79,8 +76,8 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ### 1.4 Parameters
 
-- pageSize (default = 50,000) \– number of results in response
-- $top \– number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
+- pageSize (default = 50,000) – number of results in response
+- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
 
 ### 1.5 Properties
 
@@ -118,7 +115,7 @@ VulnerabilitySeverityLevel  | string | Severity level assigned to the security v
 #### 1.6.1 Request example
 
 ```http
-GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
+GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pageSize=5
 ```
 
 #### 1.6.2 Response example
@@ -272,20 +269,15 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 ### 2.1 API method description
 
-This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
-This API allows you to download all your data from Azure Storage in the following way:
+Returns all of the vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 
-- Call the API to get a list of download URLs with all your organization data.
+This API call contains the requisite data for devices in your organization. This API method enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. The API enables you to download all of your data from Azure Storage as follows:
 
-- Download all the files using the download URLs and process the data as you like.
+- The API method will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
-In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
+#### 2.1.2 Limitations
 
-- The API will pull all data in your organization as a json response.
-This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
-
-- The API will pull all data in your organization as download files.
-This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
+Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
 ### 2.2 Permissions
 
@@ -319,14 +311,34 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
 >
 
+>[!Note]
+>
+>- Each record is approximately 1KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+>
+>- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
+>
+>- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>
+
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
-category | String | Category of the remediation activity (Software/Security configuration) | Software
-completerEmail | String | If the remediation activity was manually completed by someone, this column contains their email | null
-completerId | String | If the remediation activity was manually completed by someone, this column contains their object id | null
-title | String | Title of this remediation activity | Update Google Chrome
-type | String | Remediation type | Update
-vendorId | String | Related vendor name | google
+CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. | CVE-2020-15992
+CvssScore | string | The CVSS score of the CVE. | 6.2
+DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | string | Fully qualified domain name (FQDN) of the device. | johnlaptop.europe.contoso.com
+ExploitabilityLevel | string | The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
+FirstSeenTimestamp | string | First time the CVE of this product was seen on the device. | 2020-11-03 10:13:34.8476880
+Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
+LastSeenTimestamp | string | Last time the CVE was seen on the device. | 2020-11-03 10:13:34.8476880
+OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
+RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
+RecommendationReference | string | A reference to the recommendation ID related to this software. | va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability. | April 2020 Security Updates
+RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles | 4550961
+SoftwareName | string | Name of the software product. | chrome
+SoftwareVendor | string | Name of the software vendor. | google
+SoftwareVersion | string | Version number of the software product. | 81.0.4044.138
+VulnerabilitySeverityLevel  | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape. | Medium
 
 ### 2.6 Examples
 

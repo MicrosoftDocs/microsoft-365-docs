@@ -35,16 +35,15 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
+There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
 
-- Full export. The API will pull all data in your organization as a Json response.
-This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- Full export: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- The API will pull all data in your organization as download files.
-This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
+- Full export via files: The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
 >[!Note]
->The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+>
+>The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 ## 1. Full export software inventory assessment
 
@@ -52,13 +51,19 @@ Returns all the installed software and their details on each device.
 
 ### 1.1 API method description
 
-Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
+Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
-Full export: This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way:
+This API solution will pull all of the data in your organization as a Json response, and contains the requisite data for devices in your organization. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
 
--1. Call the API to get a list of download URLs with all your organization data.
--2. Download all the files using the download URLs and process the data as you like.
+- Call the API to get a list of download URLs with all of your organization data.
+
+- Download all the files using the download URLs and process the data as you like.
+
+#### Limitations
+
+- Maximum page size is 200,000.
+
+- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 ### 1.2 Permissions
 
@@ -108,7 +113,7 @@ SoftwareVersion | string | Version number of the software product. | 81.0.4044.1
 #### 1.6.1 Request example
 
 ```http
-GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
+GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
 ```
 
 #### 1.6.2 Response example
@@ -214,14 +219,15 @@ GET https://api-us.security-center3.contoso.com/api/machines/SoftwareInventoryBy
 
 ### 2.1 API method description
 
-The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
+Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
 
-This solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations.
-This API allows you to download all your data from Azure Storage in the following way:
+This API call contains the requisite data for devices in your organization. This API method enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. The API enables you to download all of your data from Azure Storage as follows:
 
-- Call the API to get a list of download URLs with all your organization data.
+- The API method will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
-- Download all the files using the download URLs and process the data as you like.
+#### 2.1.1 Limitations
+
+Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
 ### 2.2 Permissions
 
@@ -254,7 +260,7 @@ GET /api/machines/SoftwareInventoryExport
 #### 2.6.1 Request example
 
 ```http
-GET https://api-us.securitycenter3.contoso.com/api/machines/SoftwareInventoryExport
+GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExport
 ```
 
 #### 2.6.2 Response example
