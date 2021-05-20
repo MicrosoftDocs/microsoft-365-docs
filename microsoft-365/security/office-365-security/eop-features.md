@@ -28,12 +28,14 @@ The following table provides a list of features that are available in the Exchan
 > [!TIP]
 > The [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. For a broader view about what features are available with the different EOP subscription plans, see [Exchange Online Protection Service Description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
+<br>
+
 ****
 
 |Feature|Description|
 |---|---|
 |**Anti-spam protection**||
-|Inbound spam detection|For more information, see [Anti-spam protection in Microsoft 365](anti-spam-protection.md). <p> In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|Inbound spam detection|For more information, see [Anti-spam protection in Microsoft 365](anti-spam-protection.md). <p> In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).|
 |Outbound spam detection|Outbound anti-spam protection is always enabled if you use the service for sending outbound mail. For more information, see [Outbound spam protection](outbound-spam-controls.md).|
 |Backscatter protection|For more information, see [Backscatter and EOP](backscatter-messages-and-eop.md).|
 |Bulk mail filtering|EOP uses the bulk complaint threshold (BCL) to mark bulk email messages as spam. For more information, see the following topics: <p> [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) <p> [Configure anti-spam policies](configure-your-spam-filter-policies.md)|
@@ -78,14 +80,14 @@ The following table provides a list of features that are available in the Exchan
 |Change the spam confidence level (SCL) of a message by rule.|You can inspect an in-transit message and assign a spam confidence level to it based on criteria that you choose. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).|
 |Inspect message attachments|You can examine the content of an attachment or the characteristics of an attached file and define an action to take based on what is found. For more information, see [Using mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Administration**||
-|Web-based administration|Admins can manage the service in the Exchange admin center (EAC), which is supported in 60 languages. For more information, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).|
+|Web-based administration|Most features are managed in the [Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md). <p> Other features require management in the Exchange admin center (EAC). For more information, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center) or [Exchange admin center in standalone EOP](/exchange/standalone-eop/exchange-admin-center-eop).|
 |Directory synchronization|Directory synchronization is available via the Azure Active Directory Sync tool. For more information, see the "Use directory synchronization to manage mail users" section in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
 |Directory Based Edge Blocking (DBEB)|The DBEB feature lets you reject messages for invalid recipients at the service network perimeter. DBEB lets admins add mail-enabled recipients to Microsoft 365 and block all messages sent to email addresses that aren't present in Microsoft 365. For more information about configuring DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
 |PowerShell|Full EOP functionality is available in standalone EOP PowerShell. For more information, see [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell).|
 |**Reporting and logging**||
 |Message trace|Admins can follow email messages as they pass through the service. You can determine whether a targeted email message was received, rejected, deferred, or delivered by the service. This lets you efficiently answer your users' questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance. For more information, see [Message trace in the Security & Compliance Center](message-trace-scc.md).|
 |Web-based reports|The mail protection reports in the Security & Compliance Center provide messaging data. For example, you can monitor how much spam and malware is being detected or how often your mail flow rules are being matched. With these interactive reports, you can quickly get a visual report of summary data and drill down into details about individual messages, for as far back as 90 days. For more information, see [Use mail protection reports to view data about malware, spam, and rule detections](/exchange/monitoring/use-mail-protection-reports).|
-|Audit logging|The administrator role group report and the administrator audit log are available for EOP admins. For more information, see [Auditing reports in EOP](auditing-reports-in-eop.md).|
+|Audit logging|For more information, see [Auditing reports in Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).|
 |**Service Level Agreements (SLAs) and support**||
 |Spam effectiveness SLA|\> 99%|
 |False positive ratio SLA|\< 1:250,000|

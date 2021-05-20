@@ -68,7 +68,7 @@ The available EOP subscription plans are:
 For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection service description](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 > [!NOTE]
-> If you have an **Office 365 E3 subscription it includes EOP**. For steps to set up EOP security feature in your subscription, and information on the added security a Microsoft Defender for Office 365 subscription can give you, see [protect against threats](protect-against-threats.md). The recommended settings for EOP feature for setup can be found in the [Recommendations](best-practices-for-configuring-eop.md) article, where EOP settings are specifically called out.
+> If you have a Microsoft 365 or Office 365 subscription that includes Exchange Online mailboxes, you have EOP. For steps to set up EOP security features in your subscription, and information on the added security a Microsoft Defender for Office 365 subscription can give you, see [protect against threats](protect-against-threats.md). The recommended settings for EOP feature for setup can be found in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 ## Setting up EOP for on-premises email organizations
 
@@ -112,15 +112,15 @@ The Help content for EOP administrators consists of the following top-level cate
 
 - [Mail flow in EOP](mail-flow-in-eop.md): Describes how to configure custom mail flow scenarios using connectors, how to manage domains associated with the service, and how to enable the Directory Based Edge Blocking (DBEB) feature.
 
-- [Best practices for configuring EOP](best-practices-for-configuring-eop.md): Describes recommended configuration settings and considerations for after you set up and provision your service.
+- [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md): Describes recommended configuration settings and considerations for after you set up and provision your service.
 
-- [Auditing reports in standalone EOP](auditing-reports-in-eop.md): Describes how to use auditing reports to track configuration changes to the service.
+- [Auditing reports in Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports): Describes how to use auditing reports to track configuration changes to the service.
 
 - [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md): Describes spam filtering and malware filtering and shows how to customize them to best meet the needs of your organization. Also describes tasks that administrators and end users can perform on quarantined messages.
 
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): Describes the reports and troubleshooting tools that are available.
 
-- [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service.
+- [Exchange admin center in Exchange Online](/exchange/exchange-admin-center) or [Exchange admin center in standalone EOP](/exchange/standalone-eop/exchange-admin-center-eop): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage related EOP features.
 
 - [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell): Provides information about remote PowerShell, which lets you manage your EOP service from the command line.
 

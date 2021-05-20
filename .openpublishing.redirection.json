@@ -3611,6 +3611,131 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption.md",
+      "redirect_url": "/exchange/security-and-compliance/smime-exo/smime-exo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-s-mime-settings-for-outlook-web-app.md",
+      "redirect_url": "/exchange/security-and-compliance/smime-exo/configure-smime-exo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md",
+      "redirect_url": "https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/sync-user-certificates-to-office-365-for-s-mime.md",
+      "redirect_url": "/exchange/security-and-compliance/smime-exo/configure-smime-exo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md",
+      "redirect_url": "/exchange/security-and-compliance/smime-exo/configure-smime-exo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0.md",
+      "redirect_url": "/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md",
+      "redirect_url": "/exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
+      "redirect_url": "/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md",
+      "redirect_url": "/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "use-transport-rules-to-configure-bulk-email-filtering.md",
+      "redirect_url": "/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "auditing-reports-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/auditing-reports-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "best-practices-for-configuring-eop.md",
+      "redirect_url": "/exchange/standalone-eop/best-practices-for-configuring-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md",
+      "redirect_url": "/exchange/standalone-eop/configure-eop-spam-protection-hybrid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "exchange-admin-center-in-exchange-online-protection-eop.md",
+      "redirect_url": "/exchange/standalone-eop/exchange-admin-center-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "feature-permissions-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/manage-admin-role-group-permissions-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "manage-admin-role-group-permissions-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/feature-permissions-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "manage-groups-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/manage-groups-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "manage-mail-users-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/manage-mail-users-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "manage-recipients-in-eop.md",
+      "redirect_url": "/exchange/standalone-eop/manage-recipients-in-eop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md",
+      "redirect_url": "/exchange/standalone-eop/move-domains-and-settings-between-eop-orgs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "protect-on-premises-mailboxes-with-exchange-online-protection.md",
+      "redirect_url": "/exchange/standalone-eop/standalone-eop-china",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "run-an-administrator-role-group-report-in-eop-eop.md",
+      "redirect_url": "/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "sample-script-for-applying-eop-settings-to-multiple-tenants.md",
+      "redirect_url": "/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "set-up-your-eop-service.md",
+      "redirect_url": "/exchange/standalone-eop/set-up-your-eop-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "view-the-admin-audit-log-eop.md",
+      "redirect_url": "/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-links-policies.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies",
       "redirect_document_id": true
