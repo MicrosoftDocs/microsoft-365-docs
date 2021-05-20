@@ -105,8 +105,8 @@ Follow the tutorial on how to investigate risky OAuth apps.
 1. If you suspect that an app is suspicious, we recommend that you investigate the app’s name and Reply URL in different app stores. When checking app stores, focus on the following types of apps:
    - Apps that have been created recently.
    - Apps with a suspicious Reply URL
-   - Apps that have not been recently updated. Lack of updates might indicate the app is no longer supported.
-1. If you still suspect that an app is suspicious, you can research the app name, publisher name and Reply URL online  
+   - Apps that haven't been recently updated. Lack of updates might indicate the app is no longer supported.
+1. If you still suspect that an app is suspicious, you can research the app name, publisher name, and reply URL online  
 
 ## Persistence alerts
 
@@ -118,13 +118,13 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 **MITRE ID’s**: T1137.005, T1114  
 
-This detection identifies an OAuth App that consented to suspicious scopes, creates a suspicious inbox rule, and then accessed users mail folders and messages through the Graph API. Inbox rules such as forwarding all or specific emails to another email account, and Graph calls to access emails and send to another email account, may be an attempt to exfiltrate information from your organization.  
+This detection identifies an OAuth App that consented to suspicious scopes, creates a suspicious inbox rule, and then accessed users mail folders and messages through the Graph API. Inbox rules, such as forwarding all or specific emails to another email account, and Graph calls to access emails and send to another email account, may be an attempt to exfiltrate information from your organization.  
 
 **TP or FP?**
 
-- **TP**: If you can confirm that inbox rule was created by an OAuth third party app with suspicious scopes delivered from unknown source, then a true positive is indicated.
+- **TP**: If you can confirm that inbox rule was created by an OAuth third-party app with suspicious scopes delivered from an unknown source, then a true positive is indicated.
 
-  **Recommended action**:  Disable and remove the App, reset the password and remove the inbox rule.
+  **Recommended action**:  Disable and remove the app, reset the password, and remove the inbox rule.
 
   Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
 
@@ -148,7 +148,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 **MITRE ID**: T1114
 
-This detection identifies when Line of Business (LOB) OAuth App accesses an unusual and high volume of user's mail folders and messages through Graph API. This can indicate an attempted breach of your organization.
+This detection identifies when Line of Business (LOB) OAuth App accesses an unusual and high volume of user's mail folders and messages through the Graph API, which can indicate an attempted breach of your organization.
 
 **TP or FP?**
 
@@ -164,5 +164,5 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 #### Understand the scope of the breach
 
-1. Review the graph activity log performed by this app to gain a better understanding of other graph activities to read emails and attempt to collect users sensitive email information.
+1. Review the Graph activity log for events performed by this app to gain a better understanding of other Graph activities to read emails and attempt to collect users sensitive email information.
 1. Monitor for unexpected credential being added to the app.
