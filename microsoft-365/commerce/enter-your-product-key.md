@@ -19,7 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
+description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
 ms.date: 11/13/2020
 ---
 
@@ -61,3 +61,11 @@ If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365]
 Check out this list of common errors and solutions: [Problems with your Microsoft 365 for business product key?](product-key-errors-and-solutions.md)
   
 Or, [call Microsoft Support](../business-video/get-help-support.md).
+
+## Related content
+
+[Upgrade to a different plan](./subscriptions/upgrade-to-different-plan.md) (article)
+
+[What happens to my data and access when my Microsoft 365 for business subscription ends?](./subscriptions/what-if-my-subscription-expires.md) (article)
+
+[Understand subscriptions and licenses in Microsoft 365 for business](./licenses/subscriptions-and-licenses.md) (article)
