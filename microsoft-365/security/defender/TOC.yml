@@ -82,6 +82,10 @@
             href: microsoft-secure-score-whats-coming.md
           - name: What's new
             href: microsoft-secure-score-whats-new.md
+      - name: Protect your identities
+        items:
+          - name: Manage security alerts
+            href: defender-identity\manage-security-alerts.md
     - name: Investigate and respond to threats
       items: 
        - name: Incidents
