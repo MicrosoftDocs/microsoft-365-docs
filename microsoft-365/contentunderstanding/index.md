@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Microsoft SharePoint Syntex"
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
@@ -17,7 +17,7 @@ description: "Learn how to find resources for Microsoft SharePoint Syntex."
 
 # Introduction to Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex is an Office 365 service that helps organizations to:
+Microsoft SharePoint Syntex is an Microsoft 365 service that helps organizations to:
 
 - Use advanced AI and machine teaching to amplify human experiences
 - Automate content processing

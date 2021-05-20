@@ -105,7 +105,7 @@ Follow the steps on the providers page to either search for, or to get matched w
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 2. If you have more than one subscription, select the subscription that you want to edit.
-3. On the right, under the subscription cost, choose **More actions** > **Add partner of record**.
+3. On the right, under the subscription cost, select the three dots (more actions) > **Add partner of record**.
 4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 5. The partner ID displays on the **Subscriptions** page.
 

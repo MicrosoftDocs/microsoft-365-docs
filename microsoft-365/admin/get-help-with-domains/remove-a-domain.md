@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: "Learn how to remove an old domain from Microsoft 365 and move users and groups to another domain."
+description: "Learn how to remove an old domain from Microsoft 365 and move users and groups to another domain or cancel your subscription."
 ---
 
 # Remove a domain
@@ -42,7 +42,7 @@ Are you removing your domain because you want to add it to a different Microsoft
 
 3. Select the boxes next to the names of all the users you want to move.
 
-4. Select **More options** (**…**), at the top of the page, and then choose **Change domains**.
+4. At the top of the page, and then choose **Change domains**.
 
 5. In the **Change domains** pane, select a different domain.
 
@@ -209,14 +209,14 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 > [!NOTE]
 > You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.
   
-Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
+Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!
   
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[Domains FAQ](../setup/domains-faq.yml)
+[Domains FAQ](../setup/domains-faq.yml) (article)
 
-[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
 
-[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md)
+[Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)

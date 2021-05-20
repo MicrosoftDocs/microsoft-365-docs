@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -42,7 +42,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 
 ![EDM-based classification](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports in preview double byte character set languages for:
@@ -604,6 +604,7 @@ These locations are support EDM sensitive information types:
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
+- Server-side auto-labeling policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
@@ -651,7 +652,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
-- [Overview of DLP policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md)

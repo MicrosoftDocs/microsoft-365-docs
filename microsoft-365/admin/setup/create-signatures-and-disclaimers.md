@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Learn to manage email signatures, including legal disclaimers or disclosure statements for all email messages that enter or leave your organization.
+description: "Manage email signatures, including legal disclaimers or disclosure statements for all email messages that enter or leave your organization."
 ---
 
 # Create organization-wide signatures and disclaimers
@@ -35,7 +35,7 @@ description: Learn to manage email signatures, including legal disclaimers or di
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Create a signature that applies to all messages
 
@@ -110,4 +110,13 @@ To gain these and other capabilities to manage email signatures, use a third-par
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.
+For information about using PowerShell, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+
+## Related content
+
+[Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)
+
+[User email settings](../email/office-365-user-email-settings.md) (article)
+
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+

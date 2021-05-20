@@ -30,7 +30,7 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 
 ## Sensitive information types are used in
 
-- [Data loss prevention policies](data-loss-prevention-policies.md) 
+- [Data loss prevention policies](dlp-learn-about-dlp.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
@@ -153,5 +153,7 @@ To create custom sensitive information types in the Security & Compliance Center
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+To learn how to use sensitive information types to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
