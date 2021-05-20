@@ -164,9 +164,12 @@ The next step is to download the search results from the Azure Storage location 
       >- Disable anti-virus scanning for the folder that you download the search result to.<br/>
       >- Download search results to different folders for concurrent download jobs.
 
-6. Click **Start** to download the search results to your computer.
+7. Click **Start** to download the search results to your computer.
   
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded.
+
+> [!IMPORTANT]
+> The eDiscovery Export Tool doesn't support automation, so we highly recommended that you don't automate any export or download processes for Content Search or Core eDiscovery. If you do automate any of these processes, Microsoft support will not provide assistance if you run into issues.
 
 ## More information
 
