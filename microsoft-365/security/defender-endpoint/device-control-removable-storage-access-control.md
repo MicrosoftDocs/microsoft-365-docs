@@ -37,17 +37,17 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 ## Prepare your endpoints
 
 Deploy Removable Storage Access Control on Windows 10 devices that have Anti-malware Client Version **4.18.2103.3 or later**.
-1. **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support
+1. **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 
 2. **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
-## Policy properties
+## Group and Policy properties
 
 You can use the following properties to create a removable storage group:
 
-**Property name: Group ID**
+**Property name: Group Id**
 
 1. Description: [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.
 
@@ -82,6 +82,8 @@ For each device property, see **Device Properties** section above for more detai
 
     - MatchAny: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.
 
+
+
 Following are the access control policy properties:
 
 **Property name: PolicyRuleId**
@@ -103,7 +105,7 @@ The following example shows the usage of GroupID:
 1. Description: The group(s) that the policy will not be applied to.
 1. Options: The Group ID/GUID must be used at this instance.
 
-**Property name: Entry ID**
+**Property name: Entry Id**
 
 1. Description: One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.
 
@@ -119,6 +121,14 @@ The following example shows the usage of GroupID:
     - AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.
 
 When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.
+
+**Property name: Sid**
+
+1. Description: Defines whether apply this policy over specific user or user group; one entry can have maximum one Sid and an entry without any Sid means applying the policy over the machine.
+
+**Property name: ComputerSid**
+
+1. Description: Defines whether apply this policy over specific machine or machine group; one entry can have maximum one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.
 
 **Property name: Options**
 
