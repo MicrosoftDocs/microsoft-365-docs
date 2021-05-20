@@ -30,22 +30,19 @@ ms.custom: api
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
-
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
+>
+>
 Returns all the known vulnerabilities on a device and their details, for all devices.
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
 
-- Full export OData: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
+- [1. Export software vulnerabilities assessment \(OData\)](#1-export-software-vulnerabilities-assessment-odata) Full export OData: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
 
   - Call the API to get a list of download URLs with all of your organization data.
 
   - Download all the files using the download URLs and process the data as you like.
 
-- Full export via files: The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
+- [2. Export software vulnerabilities assessment](#2-export-software-vulnerabilities-assessment-via-files) \(via files\): The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
 The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 

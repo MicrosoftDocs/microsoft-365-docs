@@ -30,19 +30,15 @@ ms.custom: api
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
-
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
 >
 >
 Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- Full export Odata: The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- Full export via files: The API will pull all data in your organization as download files. This method is best for _large organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage. The API enables you to download all of your data from Azure Storage as follows: The API method will pull all of the data in your organization as download files.
+- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for _large organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage. The API enables you to download all of your data from Azure Storage as follows: The API method will pull all of the data in your organization as download files.
 
 The data that is collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 

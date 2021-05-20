@@ -31,10 +31,6 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 ## API description
 
 Provides methods and property details about the APIs that pull threat and vulnerability management data on a per-device basis.There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
@@ -53,7 +49,7 @@ The data collected is a snapshot of the available threat and vulnerability datas
 
 >[!Note]
 >
->The properties defined in the three properties tables that follow are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>The properties defined in the three properties tables that follow are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
 ## 1. Export secure configurations assessment
 
@@ -63,8 +59,8 @@ Returns all of the configurations and their status, on a per-device basis.
 
 Method | Data type | Description
 :---|:---|:---
-[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-Export-secure-configuration-assessment-odata) | Secure configuration by device collection | Returns a table has with an entry for every unique combination of DeviceId, ConfigurationId. The API will pull all data as Json responses following the OData protocol.
-[Export secure configuration assessment (via files)](get-assessmnt-secure-cfg.md#2-full-export-secure-configuration-assessment-via-files) | Investigation entity | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Secure configuration by device collection. See: [1.2 Properties (OData)](#12-properties-odata) | Returns a table has with an entry for every unique combination of DeviceId, ConfigurationId. The API will pull all data as Json responses following the OData protocol.
+[Export secure configuration assessment (via files)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | secure configuration by device files. See: [1.3 Properties (via files)](#13-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 ### 1.2 Properties (OData)
 
@@ -100,8 +96,8 @@ Returns all of the installed software and their details on each device.
 
 Method | Data type | Description
 :---|:---|:---
-[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API will pull all data as Json responses following the OData protocol.
-[Export software inventory assessment (via files)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) via files | Software inventory by device files | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Software inventory by device collection. See: [2.2 Properties (OData)](#22-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API will pull all data as Json responses following the OData protocol.
+[Export software inventory assessment (via files)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) via files | Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution allows pulling larger amounts of data faster and more reliably . Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
 ### 2.2 Properties (OData)
 
@@ -122,7 +118,7 @@ SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
 
-### 2.2 Properties (via files)
+### 2.3 Properties (via files)
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -137,10 +133,10 @@ Returns all the known vulnerabilities on a device and their details, for all dev
 
 Method | Data type | Description
 :---|:---|:---
-[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
-[Export software vulnerabilities assessment (via files)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Investigation entity| _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection See: [3.2 Properties (OData)](#32-properties-odata) | _Full export:_ This API returns a table has an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
+[Export software vulnerabilities assessment (via files)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files) | _Full export:_ This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage in the following way: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
 
-### 3.2 Properties
+### 3.2 Properties (OData)
 
 Property (id) | Data type | Description
 :---|:---|:---
@@ -161,6 +157,13 @@ SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
 VulnerabilitySeverityLevel | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+
+### 3.3 Properties (via files)
+
+Property (id) | Data type | Description
+:---|:---|:---
+Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization.
+GeneratedTime | string | The time that the export was generated.
 
 ## See also
 
