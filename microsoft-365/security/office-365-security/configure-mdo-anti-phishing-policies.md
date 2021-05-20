@@ -57,7 +57,7 @@ To increase the effectiveness of anti-phishing protection in Microsoft Defender 
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **ATP anti-phishing** page, use <https://protection.office.com/antiphishing>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -85,7 +85,7 @@ Creating a custom anti-phishing policy in the Security & Compliance Center creat
 
 When you create an anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to. After you create the policy, you can modify the policy to change or review the default anti-phishing settings.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. On the **Anti-phishing** page, click **Create**.
 
@@ -133,7 +133,7 @@ After you create the anti-phishing policy with these general settings, use the i
 
 Use the following procedures to modify anti-phishing policies: a new policy that you created, or existing policies that you've already customized.
 
-1. If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Select the custom anti-phishing policy that you want to modify. If it's already selected, deselect it and select it again.
 
@@ -152,9 +152,9 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-5. **Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy. These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. **Impersonation**: Click **Edit** to modify the protected senders and protected sender domains in the policy. These settings are a condition for the policy that identifies specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Add users to protect**: The default value is **Off**. To turn it on, slide the toggle to **On**, and then click the **Add user** button that appears.
+   - **Add users to protect**: The default value is **Off** ![Toggle Off](../../media/scc-toggle-off.png). To turn it on, slide the toggle to **On** ![Toggle On](../../media/scc-toggle-on.png), and then click the **Add user** button that appears.
 
      In the **Add user** flyout that appears, configure the following values:
 
@@ -178,43 +178,48 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    - **Add domains to protect**: Configure one or both of the following settings:
 
-     - **Automatically include the domains I own**: The default value is **Off**. To turn it on, slide the toggle to **On**.
-     - **Include custom domains**: The default value is **Off**. To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
+     - **Automatically include the domains I own**: The default value is **Off** ![Toggle Off](../../media/scc-toggle-off.png). To turn it on, slide the toggle to **On** ![Toggle On](../../media/scc-toggle-on.png).
+
+       To view the domains that you own, select **View domains I own**.
+
+     - **Include custom domains**: The default value is **Off** ![Toggle Off](../../media/scc-toggle-off.png). To turn it on, slide the toggle to **On** ![Toggle On](../../media/scc-toggle-on.png), and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.
 
      > [!NOTE]
      > You can have a maximum of 50 domains in all anti-phishing policies.
 
    - **Actions**: Click **Edit**
 
-     - **If email is sent by an impersonated user**: Configure one of the following actions for messages where the spoofed sender is one of the protected users you specified in **Add users to protect**:
+     - **If email is sent by an impersonated user**: Configure one of the following actions for messages where the sender is one of the protected users you specified in **Add users to protect**:
 
        - **Don't apply any action**
        - **Redirect message to other email addresses**
-       - **Move message to Junk Email folder**
+       - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
-     - **If email is sent by an impersonated domain**: Configure one of the following actions for messages where the spoofed sender is in one of the protected domains you specified in **Add domains to protect**:
+     - **If email is sent by an impersonated domain**: Configure one of the following actions for messages where the sender's domain is in one of the protected domains you specified in **Add domains to protect**:
 
        - **Don't apply any action**
        - **Redirect message to other email addresses**
-       - **Move message to Junk Email folder**
+       - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
 
    - Click **turn on impersonation safety tips** and configure any of the following settings:
 
-     - **Show tip for impersonated users**: The default value is **Off**. To turn it on, slide the toggle to **On**.
-     - **Show tip for impersonated domains**: The default value is **Off**. To turn it on, slide the toggle to **On**.
-     - **Show tip for unusual characters**: The default value is **Off**. To turn it on, slide the toggle to **On**.
+     - **Show tip for impersonated users**
+     - **Show tip for impersonated domains**
+     - **Show tip for unusual characters**
+
+     The default value for all tips is **Off** ![Toggle Off](../../media/scc-toggle-off.png). To turn any of them on, slide the toggle to **On** [Toggle On](../../media/scc-toggle-on.png).
 
      When you're finished, click **Save**.
 
    - **Mailbox intelligence**:
 
-     - **Enable mailbox intelligence?**: The default value is **On**. To turn it off, slide the toggle to **Off**.
+     - **Enable mailbox intelligence?**: The default value is **On** [Toggle On](../../media/scc-toggle-on.png). To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
 
      - **Enable mailbox intelligence based impersonation protection?**: This setting is available only if **Enable mailbox intelligence?** is **On**. Turn on this setting to specify the action to take on messages for impersonation detections from mailbox intelligence results.
 
@@ -222,7 +227,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
        - **Don't apply any action**: Note that this value has the same result as turning on **Enable mailbox intelligence?** but turning off **Enable mailbox intelligence based impersonation protection?**.
        - **Redirect message to other email addresses**
-       - **Move message to Junk Email folder**
+       - **Move message to the recipients' Junk Email folders**
        - **Quarantine the message**
        - **Deliver the message and add other addresses to the Bcc line**
        - **Delete the message before it's delivered**
@@ -249,18 +254,20 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
    When you're finished, click **Save** on any page.
 
-6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
+6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information about these settings, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
    Note that these same settings are also available in anti-phishing policies in EOP.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: Use the **Enable spoof intelligence?** setting to turn spoof intelligence on or off. The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
 
      > [!NOTE]
-     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to turn off anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
+   - **Unauthenticated sender settings**: You can configure the following settings:
+     - **Enable unauthenticated sender question mark (?) symbol?**: Add a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). The default value is **On**. To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
+     - **Enable "via" tag?**: Add the via tag (chris@contoso.com via fabrikam.com) if the email address in the From box is different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is **On**. To turn it off, slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png).
 
-   - **Actions**: Specify the action to take on messages that fail spoof intelligence:
+   - **Actions**: Specify the action to take on messages from blocked spoofed senders:
 
      **If email is sent by someone who's not allowed to spoof your domain**:
 
@@ -271,8 +278,9 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
      - You can click **Edit** in each section to jump back to the relevant page.
      - You can toggle the following settings **On** or **Off** directly on this page:
-       - **Enable antispoofing protection**
-       - **Enable Unauthenticated Sender feature**
+       - **Spoof filter settings**
+       - **Unauthenticated sender settings**
+       - **Actions**
 
    When you're finished, click **Save** on any page.
 
@@ -295,7 +303,7 @@ Use the following procedures to modify anti-phishing policies: a new policy that
 
 The default anti-phishing policy in Microsoft Defender for Office 365 is named Office365 AntiPhish Default, and it doesn't appear in the list of policies. To modify the default anti-phishing policy, do the following steps:
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. On the **Anti-phishing** page, click **Default policy**.
 
@@ -315,13 +323,13 @@ The default anti-phishing policy in Microsoft Defender for Office 365 is named O
 
 ### Enable or disable custom anti-phishing policies in Microsoft Defender for Office 365
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Notice the value in the **Status** column:
 
-   - Slide the toggle to **Off** to disable the policy.
+   - Slide the toggle to **Off** ![Toggle Off](../../media/scc-toggle-off.png) to disable the policy.
 
-   - Slide the toggle to **On** to enable the policy.
+   - Slide the toggle to **On** ![Toggle On](../../media/scc-toggle-on.png) to enable the policy.
 
 You can't disable the default anti-phishing policy.
 
@@ -337,7 +345,7 @@ Custom anti-phishing policies are displayed in the order they're processed (the 
 
 To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center). Changing the priority of a policy only makes sense if you have multiple policies.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Select the policy that you want to modify. If it's already selected, deselect it and select it again.
 
@@ -355,7 +363,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 ## Use the Security & Compliance Center to view anti-phishing policies in Microsoft Defender for Office 365
 
-1. In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Do one of the following steps:
 
@@ -367,7 +375,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 ## Use the Security & Compliance Center to remove anti-phishing policies in Microsoft Defender for Office 365
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Select the policy that you want to remove. If it's already selected, deselect it and select it again.
 
@@ -617,7 +625,7 @@ For detailed syntax and parameter information, see [Remove-AntiPhishRule](/power
 
 To verify that you've successfully configured anti-phishing policies in Microsoft Defender for Office 365, do any of the following steps:
 
-- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details do either of the following steps:
+- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details do either of the following steps:
 
   - Select the policy from the list, and view the details in the flyout.
   - Click **Default policy** and view the details in the flyout.
