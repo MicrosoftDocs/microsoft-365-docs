@@ -28,7 +28,11 @@ First, a reminder of the [four stages for topics](manage-topics.md#topic-stages)
  
 - **Published**: A confirmed topic that has been curated. Manual edits have been made to improve its quality.
 
-- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
+- **Removed**: A topic that has been rejected and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). Topic removal occurs when either:
+   - A knowledge manager removes a topic. A knowledge manager removes a topic on the **Manage topics** page.
+   - Multiple users cast negative votes using the feedback mechanism on the topic card. For a topic to be removed, there must be a net of two negative votes received from users. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed.
+
+  When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
 ## Knowledge manager role 
 
