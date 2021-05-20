@@ -91,3 +91,11 @@ To make the data that is collected for all reports anonymous, you have to be a g
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
   
 3. Select **Save changes**.
+
+## Related content
+
+[About usage analytics](usage-analytics.md) (article)
+
+[Get the latest version of usage analytics](get-the-latest-version-of-usage-analytics.md) (article)
+
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)
