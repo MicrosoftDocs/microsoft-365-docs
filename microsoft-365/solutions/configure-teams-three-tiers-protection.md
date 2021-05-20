@@ -20,6 +20,7 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 

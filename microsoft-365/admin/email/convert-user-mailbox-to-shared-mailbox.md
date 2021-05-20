@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: "Learn to convert a private mailbox to a shared mailbox that can be accessed by multiple users. "
+description: "Learn to convert a private mailbox to a shared mailbox that can be accessed by several people instead of by just one person. "
 ---
 
 # Convert a user mailbox to a shared mailbox
@@ -97,14 +97,14 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 > [!NOTE]
 > If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management Shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
+[About shared mailboxes](about-shared-mailboxes.md) (article)
 
-[Create a shared mailbox](create-a-shared-mailbox.md)
+[Create a shared mailbox](create-a-shared-mailbox.md) (article)
 
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)
 
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
 
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
