@@ -476,9 +476,9 @@
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
-######## [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
-######## [Export software inventory assessment](get-assessmnt-software-inventory.md)
-######## [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
+####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
