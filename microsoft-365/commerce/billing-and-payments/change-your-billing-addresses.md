@@ -18,7 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
+description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
 ms.date: 04/07/2021
 ---
 
@@ -156,7 +156,7 @@ You can also change the alternate email address of other global and billing admi
 
 ## Related content
 
-[View your bill or invoice](view-your-bill-or-invoice.md)\
-[Understand your bill or invoice](understand-your-invoice2.md)\
-[Pay for your subscription](pay-for-your-subscription.md)\
-[Subscriptions and billing - Admin Help](../index.yml)
+[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Understand your bill or invoice](understand-your-invoice2.md) (article)\
+[Pay for your subscription](pay-for-your-subscription.md) (article)\
+[Subscriptions and billing - Admin Help](../index.yml) (link page)
