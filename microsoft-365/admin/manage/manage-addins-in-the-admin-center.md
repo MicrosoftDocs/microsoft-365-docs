@@ -150,14 +150,14 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
   
 2. Select **Admin-managed** in the left nav. 
 
-## Learn more
+## Related content
 
-[Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md)
+[Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md) (article)
 
-Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins).
+Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) (article)
   
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md).
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)
   
-[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)
 
-[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)
