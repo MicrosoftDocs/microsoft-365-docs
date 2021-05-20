@@ -11,6 +11,11 @@ manager: raynew
 
 # Defender for Identity security alerts in Microsoft 365 Defender
 
+**Applies to:**
+
+- Microsoft 365 Defender
+- Defender for Identity
+
 This article explains the basics of how to work with [Microsoft Defender for Identity](/defender-for-identity) security alerts in the [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) portal.
 
 Defender for Identity alerts are natively integrated into the [Microsoft 365 security center](https://security.microsoft.com) with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into the unified Microsoft 365 Defender portal](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
@@ -71,7 +76,7 @@ On the right pane, you'll see the **Alert details**. Here you can see more detai
 
     If you select the three dots next to **Manage alert**, you can **Consult a threat expert**, **Export** the alert to an Excel file, or **Link to another incident**.
 
-    ![Manage alert](media/manage-alert.png)
+    ![Manage alert](../../media/defender-identity/manage-alert.png)
 
     >[!NOTE]
     >In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft 365 Defender**. Each link will bring you to the relevant portal, and provide information about the alert there.
