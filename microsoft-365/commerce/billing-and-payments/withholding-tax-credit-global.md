@@ -9,7 +9,7 @@ ms.reviewer: martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 monikerRange: 'o365-worldwide'
-ms.date: 05/03/2021
+ms.date: 
 ---
 
 # Request a credit for Withholding Tax on your account (Global customers)
