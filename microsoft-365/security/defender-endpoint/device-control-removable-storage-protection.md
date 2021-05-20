@@ -30,7 +30,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Capabilities** - Prevent installation with or without exclusion based on various device properties.
 
-**Description**
+**1. Description**
 - Applied at machine level: the same policy applies for any logged on user.
 - Supports MEM and GPO.
 - Supported  ‘[Device Properties](#device-properties)’ as listed.
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Supported Platform** - Windows 10
 
-**Description**
+**2. Description**
 - Applied at machine level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
  
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 - *Audit* Read or Write or Execute access to removable storage based on various device properties, with or without an exclusion.
 - *Prevent* Read or Write or Execute access with or without an exclusion - Allow specific device based on various device properties.
 
-**Description**
+**1. Description**
 - Applied at either machine or user or both – only allow specific people performing Read/Write/Execute access to specific removable storage on specific machine.
 - Support MEM OMA-URI and GPO.
 - Supported  ‘[Device Properties](#device-properties)’ as listed.
@@ -58,7 +58,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection prev
 
 **Supported Platform** - Windows 10
 
-**Description**
+**2. Description**
 - Applied at machine level: the same policy applies for any logged on user.
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
  
