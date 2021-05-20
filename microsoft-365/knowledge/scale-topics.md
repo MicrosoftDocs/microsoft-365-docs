@@ -23,13 +23,16 @@ First, a reminder of the [four stages for topics](manage-topics.md#topic-stages)
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
 - **Confirmed**: A topic that has been suggested by AI needs to be validated. Topic validation occurs when either:
-   - A knowledge manager confirms a topic. A knowledge manager [confirms a topic](manage-topics.md#confirmed-topics) on the **Manage topics** page. 
+
+   - A knowledge manager confirms a topic. A knowledge manager [confirms a topic](manage-topics.md#confirmed-topics) on the **Manage topics** page.
+
    - Multiple users confirm a topic. There must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
  
 - **Published**: A confirmed topic that has been curated. Manual edits have been made to improve its quality.
 
 - **Removed**: A topic that has been rejected and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). Topic removal occurs when either:
    - A knowledge manager removes a topic. A knowledge manager removes a topic on the **Manage topics** page.
+
    - Multiple users cast negative votes using the feedback mechanism on the topic card. For a topic to be removed, there must be a net of two negative votes received from users. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed.
 
   When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
