@@ -164,6 +164,8 @@
        href: attack-simulation-training-insights.md
      - name: Attack simulation training deployment considerations and FAQ
        href: attack-simulation-training-faq.md
+     - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
+       href: configure-advanced-delivery.md
      - name: Recommended settings for configuring EOP and Defender for Office 365 Security
        href: recommended-settings-for-eop-and-office365.md
      - name: Best practices for configuring EOP
