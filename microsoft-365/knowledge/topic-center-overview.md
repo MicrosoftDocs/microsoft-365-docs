@@ -34,7 +34,7 @@ The topic center is created during Viva Topics setup. After setup completes, an 
 
     ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
 
-3. Select the **Topic center** tab. Under **Site address** is a link to your Topic center.
+3. Select the **Topic center** tab. Under **Site address** is a link to your topic center.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -74,7 +74,7 @@ On the **Manage topics** page, the topic dashboard shows all the topics, you hav
  
 - Remove the topic: Makes the topic undiscoverable to end users. The topic is moved to the **Removed** tab and can be confirmed later if needed. 
 
-For more information about how to manage topics on the **Manage topics page, see [Manage topics](manage-topics.md).
+For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).
 
 ## Create or edit a topic
 
