@@ -33,21 +33,21 @@ Alerts originating from Defender for Identity can now trigger the [Microsoft 365
 
 To access the Defender for Identity alerts in the Microsoft 365 Defender portal, go to **Incidents & alerts** and then to **Alerts**.
 
-![Go to Incidents and Alerts, then Alerts](media/incidents-alerts.png)
+![Go to Incidents and Alerts, then Alerts](../../media/defender-identity/incidents-alerts.png)
 
 To see alerts from Defender for Identity, on the top-right select **Filter**, and then under **Service sources** select **Microsoft Defender for Identity**, and select **Apply**:
 
-![Filter for Defender for Identity events](media/filter-defender-for-identity.png)
+![Filter for Defender for Identity events](../../media/defender-identity/filter-defender-for-identity.png)
 
 The alerts displayed can be sorted by the following columns: **Alert name**, **Tags**, **Severity**, **Investigation state**, **Status**, **Category**, **Detection source**, **Impacted assets**, **First activity**, and **Last activity**.
 
-![Defender for Identity events](media/filtered-alerts.png)
+![Defender for Identity events](../../media/defender-identity/filtered-alerts.png)
 
 ## Manage alerts
 
 If you select one of the alerts, you'll go to the page with details about the alert. In the left pane, you'll see a summary of **What happened**:
 
-![What happened in alert](media/what-happened.png)
+![What happened in alert](../../media/defender-identity/what-happened.png)
 
 Above the **What happened** box are buttons for the **Accounts**, **Destination Host** and **Source Host** of the alert. Select any of them to get more details about the accounts or hosts involved.
 
@@ -55,19 +55,19 @@ On the right pane, you'll see the **Alert details**. Here you can see more detai
 
 - **Classify this alert** - Here you can designate this alert as a **True alert** or **False alert**
 
-    ![Classify alert](media/classify-alert.png)
+    ![Classify alert](../../media/defender-identity/classify-alert.png)
 
 - **Alert state** - In **Set Classification**, you can classify the alert as **True** or **False**. In **Assigned to**, you can assign the alert to yourself or unassign it.
 
-    ![Alert state](media/alert-state.png)
+    ![Alert state](../../media/defender-identity/alert-state.png)
 
 - **Alert details** - Under **Alert details**, you can find more information about the specific alert, follow a link to documentation about the type of alert, see which incident the alert is associated with, review any automated investigations linked to this alert type, and see the impacted devices and users.
 
-    ![Alert details](media/alert-details.png)
+    ![Alert details](../../media/defender-identity/alert-details.png)
 
 - **Comments & history** - Here you can add your comments to the alert, and see the history of all actions associated with the alert.
 
-    ![Comments and history](media/comments-history.png)
+    ![Comments and history](../../media/defender-identity/comments-history.png)
 
 - **Manage alert** - If you select **Manage alert**, you'll go to a pane that will allow you to edit the:
   - **Status** - You can choose **New**, **Resolved** or **In progress**.
