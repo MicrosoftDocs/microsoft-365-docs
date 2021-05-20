@@ -118,11 +118,14 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 If you have endpoints running Windows Server 2016, you cannot run Microsoft Defender Antivirus alongside a non-Microsoft antivirus/antimalware solution. Microsoft Defender Antivirus cannot run in passive mode on Windows Server 2016. In this case, you'll need to uninstall the non-Microsoft antivirus/antimalware solution, and install/enable Microsoft Defender Antivirus instead. To learn more, see [Antivirus solution compatibility with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
 
-If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, use the following PowerShell cmdlet:
+If you're using Windows Server 2016 and are having trouble enabling Microsoft Defender Antivirus, follow these steps:
 
-`mpcmdrun -wdenable`
+1. On the device, open PowerShell as an administrator.
 
-For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+2. Type the following PowerShell cmdlet: `mpcmdrun -wdenable`
+
+> [!TIP]
+> For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ## Configure Defender for Endpoint
 
@@ -162,14 +165,13 @@ During this step of the setup process, you add your existing solution to the Mic
 
 ### Keep the following points about exclusions in mind
 
-When you add [exclusions to Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. Keep the following points in mind:
+When you add [exclusions to Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions. 
+
+Keep the following points in mind:
 
 - *Path exclusions* exclude specific files and whatever those files access.
-
 - *Process exclusions* exclude whatever a process touches, but does not exclude the process itself.
-
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
-
 - If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
 
@@ -188,7 +190,6 @@ Device groups, device collections, and organizational units enable your security
 Using Configuration Manager and your device collection(s), configure your antimalware policies.
 
 - See [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies).
-
 - While you create and configure your antimalware policies, make sure to review the [real-time protection settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) and [enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md).
 
 > [!TIP]
