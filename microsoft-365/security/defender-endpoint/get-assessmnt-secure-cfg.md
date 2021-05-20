@@ -34,30 +34,27 @@ ms.custom: api
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+>
+>
+Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- Full export: The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- Full export Odata: The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- Full export via files: The API will pull all data in your organization as download files. This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
+- Full export via files: The API will pull all data in your organization as download files. This method is best for _large organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage. The API enables you to download all of your data from Azure Storage as follows: The API method will pull all of the data in your organization as download files.
 
->[!Note]
->The data collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+The data that is collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 
-## 1. Full export secure configuration assessment
+> [!Note]
+>
+> Unless indicated otherwise, all assessment methods listed are _full export_ and _by device_ (also referred to as _per device_).
+
+## 1. Export secure configuration assessment (OData)
 
 ### 1.1 API method description
 
-Returns  an entry for every unique combination of DeviceId, ConfigurationId.
-The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
-
 This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId. This table also includes operating system information.
-
-This API solution will pull all of the data in your organization as a Json response, and contains the requisite data for devices in your organization. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:  
-
-- Call the API to get a list of download URLs with all of your organization data.  
-
-- Download all of the files using the download URLs and process the data as you like.  
 
 #### 1.1.1 Limitations
 
@@ -128,7 +125,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
     "value": [
         {
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
             "osPlatform": "Windows10",
@@ -146,7 +142,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
         },
         {
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": null,
             "osPlatform": "Windows10",
@@ -164,7 +159,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
         },
         {
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": null,
             "osPlatform": "Windows10",
@@ -182,7 +176,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
         },
         {
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -200,7 +193,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
         },
         {
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -221,16 +213,14 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 }
 ```
 
-## 2. Full export secure configuration assessment via files
+## 2. Export secure configuration assessment (via files)
 
 ### 2.1 API method description
 
-Returns an entry for every unique combination of DeviceId, ConfigurationId.
+This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
 The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
 
-This API call contains the requisite data for devices in your organization. This API method enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. The API enables you to download all of your data from Azure Storage as follows:
-
-- The API method will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
+This API call contains the requisite data for devices in your organization.
 
 #### 2.1.2 Limitations
 
@@ -242,8 +232,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type | Permission | Permission display name
 ---|---|---
-Application | Software.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+Application | Vulnerability.Read.All | \'Read "threat and vulnerability management" vulnerability information\'
+Delegated (work or school account) | Vulnerability.Read | \'Read "threat and vulnerability management" vulnerability information\'
 
 ### 2.3 URL
 
@@ -251,16 +241,24 @@ Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerabi
 GET /api/machines/SecureConfigurationsAssessmentExport
 ```
 
+### Parameters
+
+- sasValidHours – The number of hours that the download URLs will be valid for (Maximum 24 hours)
+
 ### 2.5 Properties
 
 >[!Note]
 >
 >- The files are gzip compressed & in multiline Json format.
 >
->- The download URLs are only valid for 1 hour.
+>- The download URLs are only valid for 3 hours; otherwise you can use the parameter.
 >
->- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>- For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
 >
+Property (id) | Data type | Description | Example of a returned value
+:---|:---|:---|:---
+Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
+GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
 
 ### 2.6 Examples
 

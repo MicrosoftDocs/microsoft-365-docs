@@ -37,27 +37,25 @@ ms.custom: api
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
 
-- Full export: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- Full export OData: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
+
+  - Call the API to get a list of download URLs with all of your organization data.
+
+  - Download all the files using the download URLs and process the data as you like.
 
 - Full export via files: The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
->[!Note]
+The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+
+> [!Note]
 >
->The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+> Unless indicated otherwise, all assessment methods listed are _full export_ and _by device_ (also referred to as _per device_).
 
-## 1. Full export software inventory assessment
-
-Returns all the installed software and their details on each device.
+## 1. Export software inventory assessment (OData)
 
 ### 1.1 API method description
 
-Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
-
-This API solution will pull all of the data in your organization as a Json response, and contains the requisite data for devices in your organization. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
-
-- Call the API to get a list of download URLs with all of your organization data.
-
-- Download all the files using the download URLs and process the data as you like.
+This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### Limitations
 
@@ -95,17 +93,17 @@ Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | string | Fully qualified domain name (FQDN) of the device. | johnlaptop.europe.contoso.com
-DiskPaths (optional) | Array[string]  | Disk evidence that the product is installed on the device. | [ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
-EndOfSupportDate (optional) | string | The date in which support for this software has or will end. | 2020-12-30
+DiskPaths | Array[string]  | Disk evidence that the product is installed on the device. | [ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
+EndOfSupportDate | string | The date in which support for this software has or will end. | 2020-12-30
 EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Upcoming EOS
 Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
 NumberOfWeaknesses | int | Number of weaknesses on this software on this device | 3
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
-RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device. | [ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome" ]
+RegistryPaths | Array[string] | Registry evidence that the product is installed in the device. | [ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device. | 2019-04-07 02:06:47
-SoftwareName | string | Name of the software product. | chrome
-SoftwareVendor | string | Name of the software vendor. | google
+SoftwareName | string | Name of the software product. | Silverlight
+SoftwareVendor | string | Name of the software vendor. | microsoft
 SoftwareVersion | string | Version number of the software product. | 81.0.4044.138
 
 ### 1.6 Examples
@@ -113,7 +111,7 @@ SoftwareVersion | string | Version number of the software product. | 81.0.4044.1
 #### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  
+GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z 
 ```
 
 #### 1.6.2 Response example
@@ -124,7 +122,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
     "value": [
         {
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -140,7 +137,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
         },
         {
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -158,7 +154,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
         },
         {
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -176,7 +171,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
         },
         {
             "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -194,7 +188,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
         },
         {
             "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
-            "rbacGroupId": 1337,
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "Windows10",
@@ -215,15 +208,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
-## 2. Full export software inventory assessment via files
+## 2. Export software inventory assessment (via files)
 
 ### 2.1 API method description
 
-Provides all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API response contains data for all software installed (not only vulnerable software) on all devices in your organization. It includes data about the software versions and their vulnerabilities (if they exist), and software metadata such as end-of-support dates.
-
-This API call contains the requisite data for devices in your organization. This API method enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. The API enables you to download all of your data from Azure Storage as follows:
-
-- The API method will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
+This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### 2.1.1 Limitations
 
@@ -244,15 +233,19 @@ Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerabi
 GET /api/machines/SoftwareInventoryExport
 ```
 
+### Parameters
+
+- sasValidHours – The number of hours that the download URLs will be valid for (Maximum 24 hours)
+
 ### 2.5 Properties
 
 >[!Note]
 >
->- The files are gzip compressed and in multiline Json format.
+>- The files are gzip compressed & in multiline Json format.
 >
->- The download URLs are only valid for 1 hour.
+>- The download URLs are only valid for 3 hours. Otherwise you can use the parameter.
 >
->- For maximum download speed of your data, you can make sure you are downloading from the same azure region that your data resides.
+>_ For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
 >
 
 ### 2.6 Examples
@@ -269,9 +262,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 {
     "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
     "exportFiles": [
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
-        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/_RbacGroupId=1337/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
+        "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/SoftwareInventory/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c001.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=..."
     ],
     "generatedTime": "2021-01-11T11:01:00Z"
 }
