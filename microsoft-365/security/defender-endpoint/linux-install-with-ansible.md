@@ -122,7 +122,7 @@ Create a subtask or role files that contribute to a playbook or task.
       when: not mdatp_onboard.stat.exists
     ```
 
-- Add the Defender for Endpoint repository and key.
+- Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
     Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 

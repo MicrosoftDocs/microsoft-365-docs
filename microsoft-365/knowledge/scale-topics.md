@@ -22,15 +22,17 @@ First, a reminder of the [four stages for topics](manage-topics.md#topic-stages)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
-- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+- **Confirmed**: A topic that has been suggested by AI needs to be validated. Topic validation occurs when either:
+   - A knowledge manager confirms a topic. A knowledge manager [confirms a topic](manage-topics.md#confirmed-topics) on the **Manage topics** page. 
+   - Multiple users confirm a topic. There must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
  
-- **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
+- **Published**: A confirmed topic that has been curated. Manual edits have been made to improve its quality.
 
 - **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
 ## Knowledge manager role 
 
-When you configure Viva Topics, you'll add a group of users who are granted permissions to see the **Manage topics** experience in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They'll have access to data about the topics and will be able to see lists of all topics that they have access to review and curate.
+When you configure Viva Topics, you'll add a group of users who are granted permissions to see the **Manage topics** page in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They'll have access to data about the topics and will be able to see lists of all topics that they have access to review and curate.
 
 Employees in this role should have broad permissions to view a wide array of topics. Or if permissions are segmented, you might want to select a group of users that represent different areas of the business and can curate for their own areas.
 
