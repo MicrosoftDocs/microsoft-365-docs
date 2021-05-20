@@ -74,7 +74,7 @@ For information about requirements, important limits, and feature availability a
 
 Setting up EOP can be simple, especially in the case of a small organization with a handful of compliance rules. However, if you have a large organization with multiple domains, custom compliance rules, or hybrid mail flow, set up can take more planning and time.
 
-If you've already purchased EOP, see [Set up your EOP service](set-up-your-eop-service.md) to ensure that you complete all the steps necessary to configure EOP to protect your messaging environment.
+If you've already purchased EOP, see [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service) to ensure that you complete all the steps necessary to configure EOP to protect your messaging environment.
 
 ### EOP datacenters
 
@@ -104,11 +104,11 @@ The Help content for EOP administrators consists of the following top-level cate
 
 - [EOP features](eop-features.md): Provides a list of features that are available in EOP.
 
-- [Set up your EOP service](set-up-your-eop-service.md): Provides steps for setting up your EOP service, and links to additional information.
+- [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service): Provides steps for setting up your EOP service, and links to additional information.
 
 - [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md): Describes the process for switching to EOP from another email protection product.
 
-- [Manage recipients in standalone EOP](manage-recipients-in-eop.md): Describes how to manage mail users and groups in EOP.
+- [Manage recipients in standalone EOP](/exchange/standalone-eop/manage-recipients-in-eop): Describes how to manage mail users and groups in standalone EOP.
 
 - [Mail flow in EOP](mail-flow-in-eop.md): Describes how to configure custom mail flow scenarios using connectors, how to manage domains associated with the service, and how to enable the Directory Based Edge Blocking (DBEB) feature.
 

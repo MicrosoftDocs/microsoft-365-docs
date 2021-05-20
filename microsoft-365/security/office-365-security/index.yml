@@ -112,8 +112,8 @@ landingContent:
         links:
           - text: Reporting and message trace in EOP
             url: reporting-and-message-trace-in-exchange-online-protection.md
-          - text: View the admin audit log in standalone EOP
-            url: view-the-admin-audit-log-eop.md
+          - text: View the admin audit log
+            url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
        # Card
   - title: Respond
     linkLists:
