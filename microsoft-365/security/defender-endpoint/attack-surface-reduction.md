@@ -399,7 +399,7 @@ This rule prevents Outlook from creating child processes, while still allowing l
 This rule protects against social engineering attacks and prevents exploiting code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
-> This rule applies to Outlook and Outlook.com only.
+> This rule will also block DLP policy tips or Tool tips on outlook. This rule applies to Outlook and Outlook.com only. 
 
 This rule was introduced in:
 
