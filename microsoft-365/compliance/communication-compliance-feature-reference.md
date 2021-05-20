@@ -306,6 +306,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
+| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). The following languages are supported: Chinese (Simplified - ZH), English (EN), French (FR), German (DE), Italian (IT), Japanese (JP), Portuguese (PT), and Spanish (ES). For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the EmailDetectedLanguage field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 | **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Offensive Language*, *Targeted Harassment*, *Profanity*, *Threat*, and more.
 
@@ -477,7 +478,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
->Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
 To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 

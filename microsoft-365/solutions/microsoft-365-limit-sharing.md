@@ -18,6 +18,7 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: 
 localization_priority: Priority
+recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---
 

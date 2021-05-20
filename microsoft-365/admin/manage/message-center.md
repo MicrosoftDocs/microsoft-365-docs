@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: "Get an overview of Microsoft 365 Message center and its role in change management."
+description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
 # Message center
