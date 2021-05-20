@@ -131,6 +131,9 @@ The settings in Safe Links policies that apply to email messages are described i
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  
+  > [!NOTE]
+  > Sale Links does not work on Mail enabled public folder.
 
 ### How Safe Links works in email messages
 
