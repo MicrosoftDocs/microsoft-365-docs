@@ -64,7 +64,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Defender for Office 365?
-            url: office-365-security/defender-for-office-365.md
+            url: /office-365-security/defender-for-office-365
           - text: Defender for Office 365 service description
             url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
             
@@ -74,9 +74,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: /windows/security/threat-protection/microsoft-defender-atp/overview
+            url: /defender-endpoint/microsoft-defender-endpoint
+          - text: Microsoft Defender Security Center portal overview
+            url: /defender-endpoint/portal-overview
              
   # Card (optional)
   - title: Azure Defender

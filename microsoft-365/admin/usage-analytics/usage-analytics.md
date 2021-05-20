@@ -23,8 +23,6 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 # Microsoft 365 usage analytics
 
-## Overview of Microsoft 365 usage analytics
-
 Use Microsoft 365 usage analytics within Power BI to gain insights on how your organization is adopting the various services within Microsoft 365. You can visualize and analyze Microsoft 365 usage data, create custom reports and share the insights within your organization. You can also gain insights into how specific regions or departments are using Microsoft 365.
   
 Microsoft 365 usage analytics gives you access to a pre-built dashboard that provides a cross-product view of the last 12 months and contains a number of pre-built reports. Each report provides you with specific usage insights. User-specific information is available for the last full calendar month.
@@ -84,6 +82,9 @@ User activity reports are available for certain individual services. These repor
 It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
 To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### Is the Usage Summary Reports Reader role enough to view the usage analytics?
+
+The Usage Summary Reports Reader role only allows access to tenant level aggregates in Microsoft 365 usage analytics.  We recommend the Reports Reader or Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but is not necessarily an IT administrator.
 
 ### Who can connect to Microsoft 365 usage analytics?
 
@@ -195,7 +196,7 @@ This is currently not on the roadmap.
 
 ### I have a specific question about the data I'm seeing for my organization. Who can I reach out to?
 
-You can use the feedback button in the admin center activity overview page, or you can open a [support case](../contact-support-for-business-products.md) to get help with the template app. 
+You can use the feedback button in the admin center activity overview page, or you can open a [support case](../../business-video/get-help-support.md) to get help with the template app. 
 
 ### How can partners access the data?
 
@@ -204,3 +205,11 @@ If a partner has delegated admin rights, he or she can connect to the template a
 ### Can I hide identifiable information such as user, group, and site names in reports?
 
 Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-collected-data-anonymous).
+
+## Related content
+
+[Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)
+
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)
+
+[Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)

@@ -1,7 +1,7 @@
 ---
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
-keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
+keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -40,12 +40,12 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 Here are the ways you can manage your incidents:
 
-- Change the incident name
-- Add incident tags.
-- Assign the incident to a user account
-- Resolve them 
-- Set its classification and determination
-- Add comments.
+- [Edit the incident name](#edit-the-incident-name)
+- [Add incident tags](#add-incident-tags)
+- [Assign the incident to yourself](#assign-incidents)
+- [Resolve them](#resolve-an-incident)
+- [Set its classification and determination](#set-the-classification-and-determination)
+- [Add comments](#add-comments)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
@@ -56,7 +56,7 @@ You can display this pane from the **Manage incident** link on the:
 - Properties pane of an incident in the incident queue.
 - **Summary** page of an incident.
 
-In cases where, while investigating you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
+In cases where you want to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.
 
 ## Edit the incident name
 
@@ -75,9 +75,17 @@ When you start typing, you have the option to select from a list of selected tag
 
 ## Assign incidents
 
-If an incident has not yet been assigned, you can select **Assign to** and specify the user account. Doing so assigns ownership of the incident and all the alerts associated with it.
+To assign an incident, select **Assign to me**. Doing so assigns ownership of the incident and all the alerts associated with it to your user account.
 
-## Resolve incident
+You can get a list of incidents assigned to you by filtering the incident queue. 
+
+1. From the incident queue, select **Filters**.
+2. in the **Incident assignment** section, clear **Select all** and select **Assigned to me**.
+3. Select **Apply**, and then close the **Filters** pane.
+
+You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
+
+## Resolve an incident
 
 If the incident has been remediated, select **Resolve incident** to move the toggle to the right. Note that resolving an incident also resolves all the linked and active alerts related to the incident.
 
@@ -93,7 +101,15 @@ If it was a true alert, you should also specify what type of threat it was with 
 
 You can add multiple comments to an incident with the **Comment** field. Each comment gets added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
-## Related topics
+## Next steps
+
+For new incidents, begin your [investigation](investigate-incidents.md).
+
+For in-process incidents, continue your [investigation](investigate-incidents.md).
+
+For resolved incidents, perform a [post-incident review](first-incident-post.md).
+
+## See also
 
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)

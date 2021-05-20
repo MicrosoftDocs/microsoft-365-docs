@@ -1,7 +1,7 @@
 ---
 title: Investigate alerts in Microsoft 365 Defender
 description: Investigate alerts seen across devices, users, and mailboxes.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
-In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, investigating alerts can be valuable when deeper analysis is required. 
+In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, analyzing alerts can be valuable when deeper analysis is required. 
 
 The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
@@ -128,12 +128,16 @@ The list of additional actions depends on the type of alert.
 
 ## Resolve an alert
 
-Once you're done investigating an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
+Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
 
 Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
+
+## Next steps
+
+As needed for in-process incidents, continue your [investigation](investigate-incidents.md).
 
 ## See also
 
 - [Incidents overview](incidents-overview.md)
-- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+- [Investigate incidents](investigate-incidents.md)

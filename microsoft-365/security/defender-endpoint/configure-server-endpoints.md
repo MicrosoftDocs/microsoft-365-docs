@@ -189,7 +189,7 @@ Defender for Endpoint can integrate with Azure Defender to provide a comprehensi
 
 The following capabilities are included in this integration:
 
-- Automated onboarding - Defender for Endpoint sensor is automatically enabled on Windows Servers that are onboarded to Azure Defender. For more information on Azure Defender onboarding, see [Onboarding to Azure Defender Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
+- Automated onboarding - Defender for Endpoint sensor is automatically enabled on Windows Servers that are onboarded to Azure Defender. For more information on Azure Defender onboarding, see [Use the integrated Microsoft Defender for Endpoint license](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
     > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
@@ -290,7 +290,7 @@ To offboard the Windows server, you can use either of the following methods:
     (MMA Agent .exe x64 [New SHA-2 compliant version](https://go.microsoft.com/fwlink/?LinkId=828603))
 
 **Step-2: Create a file name DeployMMA.cmd (using notepad)**
-Add the following lines to the cmd file. Note that you will need your WORKSPACE ID and KEY.
+Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 ```dos
 @echo off 
@@ -336,13 +336,13 @@ Once this is done, you'll need to create a start-up script policy:
 
 :::image type="content" source="images/startupprops.png" alt-text="start up properties":::
 
-The name of the file to run here is c:\windows\MMA\DeployMMA.cmd
-Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMAAgent, while setting the workspace id and key, and the server will be onboarded.
+The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
+Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
 
-You could also use an **immediate task** to run the deployMMA.cmd if you do not want to reboot all the servers.
+You could also use an **immediate task** to run the deployMMA.cmd if you don't want to reboot all the servers.
 This could be done in two phases. First create **the files and the folder in** GPO – Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
-As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to an Configuration Manager compliance policy it will check daily to ensure the MMA is present.
+As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
 :::image type="content" source="images/schtask.png" alt-text="schedule task":::
 

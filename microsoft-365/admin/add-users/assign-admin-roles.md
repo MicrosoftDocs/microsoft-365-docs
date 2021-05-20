@@ -41,7 +41,7 @@ When you add new users, if you don't assign them an admin role then they are in 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Assign admin roles 
 
@@ -114,12 +114,12 @@ You can check admin role permissions in 2 different ways:
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)
 
-[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)
 
-[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
+[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)
 
-[Authorize or remove partner relationships](../misc/add-partner.md)
+[Authorize or remove partner relationships](../misc/add-partner.md) (article)

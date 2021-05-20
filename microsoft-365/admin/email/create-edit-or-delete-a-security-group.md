@@ -44,8 +44,6 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 4. Follow the steps to complete creation of the group. 
  
 ### Add members to a security group
-
-::: moniker range="o365-worldwide"
     
 1. Select the security group name on the **Groups** page, and on the **Members** tab, select **View all and manage members**. 
     
@@ -53,65 +51,13 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
     
     To remove members, select the X next to their name. 
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select the security group name on the **Groups** page, and then select **Edit** next to **Members**. 
-    
-2. In the group pane, select **Add members** and choose the person from the list or type the name of the person you want to add in the **Search** box, and then select **Save**.
-    
-    To remove members, select the X next to their name. 
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-
-1. Select the security group name on the **Groups** page, and then select **Edit** next to **Members**. 
-    
-2. In the group pane, select **Add members** and choose the person from the list or type the name of the person you want to add in the **Search** box, and then select **Save**.
-    
-    To remove members, select the X next to their name.
-
-::: moniker-end
-
 ### Edit a security group
-
-::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
   
 2. On the **Groups** page, select the group's name. 
     
 3. In the settings pane, select the **General** tab or the **Members** tab to edit either group details or members.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.  
-  
-2. On the **Groups** page, select the group's name. 
-    
-3. In the security group pane, select **Edit** next to either **Name** or **Members** tab to edit either group details or members.
-    
-4. After you've made changes, select **Save** \> **Close**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.
-  
-2. On the **Groups** page, select the group's name. 
-    
-3. In the security group pane, select **Edit** next to either **Name** or **Members** tab to edit either group details or members.
-    
-4. After you've made changes, select **Save** > **Close**.
-
-::: moniker-end
-
 
 ### Delete a security group
 

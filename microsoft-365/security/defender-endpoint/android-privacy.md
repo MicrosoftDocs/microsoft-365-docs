@@ -73,7 +73,7 @@ Information about **malicious** Android application packages (APKs) on the devic
     -   Azure tenant ID - GUID that identifies your organization within
             Azure Active Directory
 
-    -   Microsoft Defender ATP org ID - Unique identifier associated with
+    -   Microsoft Defender for Endpoint org ID - Unique identifier associated with
             the enterprise that the device belongs to. Allows Microsoft to
             identify whether issues are impacting a select set of enterprises
             and how many enterprises are impacted 
