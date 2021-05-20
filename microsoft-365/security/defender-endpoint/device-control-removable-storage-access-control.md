@@ -267,7 +267,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability is not yet available. 
+This capability (will be shown at Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Device Control) is not yet available. 
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
