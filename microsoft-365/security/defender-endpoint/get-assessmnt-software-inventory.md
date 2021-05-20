@@ -42,7 +42,7 @@ There are different API calls to get different types of data. Since the amount o
 
 - [2. Export software inventory assessment \(via files\)](#2-export-software-inventory-assessment-via-files): The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
-The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+The data collected is the current snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 > [!Note]
 >

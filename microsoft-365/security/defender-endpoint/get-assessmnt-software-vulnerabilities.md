@@ -36,15 +36,15 @@ Returns all the known vulnerabilities on a device and their details, for all dev
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
 
-- [1. Export software vulnerabilities assessment \(OData\)](#1-export-software-vulnerabilities-assessment-odata) Full export OData: The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
+- [1. Export software vulnerabilities assessment \(OData\)](#1-export-software-vulnerabilities-assessment-odata): The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
 
   - Call the API to get a list of download URLs with all of your organization data.
 
   - Download all the files using the download URLs and process the data as you like.
 
-- [2. Export software vulnerabilities assessment](#2-export-software-vulnerabilities-assessment-via-files) \(via files\): The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
+- [2. Export software vulnerabilities assessment \(via files\)](#2-export-software-vulnerabilities-assessment-via-files): The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
 
-The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+The data collected is the current snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 > [!Note]
 >
@@ -298,7 +298,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 >[!Note]
 >
->- The files are gzip compressed & in multiline json format.
+>- The files are gzip compressed & in multiline Json format.
 >
 >- The download URLs are only valid for 3 hours; otherwise you can use the parameter.
 >
@@ -314,25 +314,10 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 >
 
-Property (id) | Data type | Description | Example of a returned value
-:---|:---|:---|:---
-CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. | CVE-2020-15992
-CvssScore | string | The CVSS score of the CVE. | 6.2
-DeviceId | string | Unique identifier for the device in the service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Fully qualified domain name (FQDN) of the device. | johnlaptop.europe.contoso.com
-ExploitabilityLevel | string | The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
-FirstSeenTimestamp | string | First time the CVE of this product was seen on the device. | 2020-11-03 10:13:34.8476880
-Id | string | Unique identifier for the record. | 123ABG55_573AG&mnp!
-LastSeenTimestamp | string | Last time the CVE was seen on the device. | 2020-11-03 10:13:34.8476880
-OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details. | Windows10
-RbacGroupName  | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.” | Servers
-RecommendationReference | string | A reference to the recommendation ID related to this software. | va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability. | April 2020 Security Updates
-RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles | 4550961
-SoftwareName | string | Name of the software product. | chrome
-SoftwareVendor | string | Name of the software vendor. | google
-SoftwareVersion | string | Version number of the software product. | 81.0.4044.138
-VulnerabilitySeverityLevel  | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape. | Medium
+Property (id) | Data type | Description
+:---|:---|:---
+Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
+GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
 
 ### 2.6 Examples
 

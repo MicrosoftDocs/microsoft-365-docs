@@ -40,7 +40,7 @@ There are different API calls to get different types of data. Since the amount o
 
 - [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for _large organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage. The API enables you to download all of your data from Azure Storage as follows: The API method will pull all of the data in your organization as download files.
 
-The data that is collected is a snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
 
 > [!Note]
 >
