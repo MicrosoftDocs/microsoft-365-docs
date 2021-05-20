@@ -37,11 +37,11 @@ ms.custom: api
 
 ## API description
 
-Provides methods and property details about the APIs that pull threat and vulnerability management data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
+Provides methods and property details about the APIs that pull threat and vulnerability management data on a per-device basis.There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-The API will pull all data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- The API will pull all data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
+- The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage.
 
 The data collected is a snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
@@ -49,7 +49,7 @@ The data collected is a snapshot of the available threat and vulnerability datas
 >
 >The properties defined in the three properties tables that follow are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 
-## 1. Export per-device secure configurations assessment
+## 1. Export secure configurations assessment per device
 
 Returns all of the configurations and their status, on a per-device basis.
 
@@ -79,7 +79,7 @@ RbacGroupName | string | The role-based access control (RBAC) group. If this dev
 RecommendationReference | string | A reference to the recommendation ID related to this software.
 Timestamp | string | Last time the configuration was seen on the device
 
-## 2. Export per-device software inventory assessment
+## 2. Export software inventory assessment per device
 
 Returns all of the installed software and their details on each device.
 
@@ -109,7 +109,7 @@ SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
 
-## 3. Export per-device software vulnerabilities assessment
+## 3. Export software vulnerabilities assessment per device
 
 Returns all the known vulnerabilities on a device and their details, for all devices.
 

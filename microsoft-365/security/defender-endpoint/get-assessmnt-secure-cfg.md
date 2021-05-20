@@ -37,8 +37,7 @@ ms.custom: api
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- Full export: The API will pull all data in your organization as a Json response.
-This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- Full export: The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
 - Full export via files: The API will pull all data in your organization as download files. This method is best for _big organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage.
 
