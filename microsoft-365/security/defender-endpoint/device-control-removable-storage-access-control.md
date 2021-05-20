@@ -43,6 +43,9 @@ Deploy Removable Storage Access Control on Windows 10 devices that have Anti-mal
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
+   > [!NOTE]
+   > None of Windows Security components need to be active, you can run Removable Storage Access Control independent of Windows Security status.
+
 ## Policy properties
 
 You can use the following properties to create a removable storage group:
