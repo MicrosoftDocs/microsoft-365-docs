@@ -37,7 +37,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-[![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/Identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity-device-access-policies-byplan.png)
+[![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Here's a one-page PDF summary with links to the individual policies:
 
