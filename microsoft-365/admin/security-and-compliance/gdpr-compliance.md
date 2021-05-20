@@ -72,96 +72,23 @@ The GDPR establishes data subject rights, which means that, with respect to thei
 - **Object:** An individual can object to their data being used for various uses including direct marketing. 
     
 - **Ask not to be subject to automated decision-making, including profiling:** The GDPR has strict rules about using data to profile people and automate decisions based on that profiling. 
-    
-## Common small business questions about the GDPR
-
-### I'm a sole proprietor - do I really have to worry about the GDPR?
-
-The GDPR is about the data you process, not the number of employees you have. It affects companies of all sizes, even sole proprietors. However, companies with fewer than 250 employees do have some exemptions, such as reduced record keeping, but only if you are sure the data processing doesn't affect the individual's rights and is occasional processing.
-  
-As an example, processing of non-personal data would be exempt or need reduced measures. However, if you process any data that is seen as "special category sensitive data", even if it only occasionally, you will have to record this data processing. The definition of "occasional processing" is vague, but it's meant to apply to data that is used once or rarely.
-  
-You should also make sure that personal data that you collect is protected. This means that you need to encrypt it and make sure that access to it is controlled using at least a password. Keeping your customer data on a spreadsheet on your desktop with no protection won't meet GDPR expectations. 
-  
-### How can I tell if our company website is GDPR compliant?
-
-The first question to ask yourself is: Do you collect personal data anywhere on your site? For example, you might have a contact form that asks for a name and email address. If you want to send marketing emails, make sure you add an 'opt-in' checkbox that explains exactly what you will use the data for. Only if the recipient checks that box can you use their personal data for marketing purposes.
-  
-Also, check that the database that stores the data is protected. Your web hosting company or cloud storage vendor will be able to advise on this. If you use Microsoft 365 for business, storage of data is GDPR-compliant. 
-  
-### My company is outside Europe. Does the GDPR really affect us?
-
-The GDPR is a regulation that protects EU citizens. If your company deals with EU citizens now, or you hope to in the future, you will be affected. This applies to both citizens living in an EU State and those living elsewhere.
-  
-Consider the following examples:
-  
-- A U.S. company that hires cars to EU citizens will need to satisfy GDPR requirements when they collect and process the customer's data. The company will be required to take consent when they take the customer's data and ensure that the data is stored securely. They will also need to make sure the customer can apply all of their data subject rights. 
-    
-- An Australian company sells products online, and its users set up online accounts. GDPR data subject rights and consent will be applied to EU citizens who open an account. The company will need to make sure the customer can apply all of their data subject rights. 
-    
-- An international charity collects data about donors and uses it to send out updates and requests for donations. The GDPR states: '...the processing of personal data for direct marketing purposes may be regarded as carried out for a legitimate interest." However, the responsibility is on the organization to prove their interests override those of the data subject. The company (or in this case, the charitable organization) should always get informed, explicit, opt-in consent.
-    
-The GDPR also applies if customer data moves across borders. If you use cloud computing for data storage, you will need to make sure the service is fully GDPR-compliant. It can get complicated if data storage is in locations that have a poor record of data protection. If you use Microsoft 365 for business, we have the correct legal documentation in place to cover GDPR requirements.
-  
-### Sure, I collect data, but some other company stores it. Does that get me off the hook?
-
-Under the GDPR, if you collect data you are affected to some extent. The GDPR has the concept of a data processor and a data controller: 
-  
-- **Data Controller:** An individual or organization (you can have joint controllers) that decides how, what, and why data is collected. They may store it using another company's cloud servers. For example, a website that collects customer data is a controller. 
-    
-- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Microsoft 365 Apps for business data storage acts as a processor and is fully GDPR compliant. 
-    
-    An organization or system can act as both a controller and a processor. Microsoft 365 for business can act as both and complies with the GDPR.
-    
-### Can I still send out marketing emails to my old customers?
-
-You need to make sure your customers, even ones that you've had for years, have consented to use their data for marketing. You may have previously captured consent, as well as a record to show it. If so, you're all set to continue marketing. If not, you need to get permission from the customer to continue marketing to them. This usually involves sending an email asking customers to go to your site and select an option to consent to receive future emails. 
-  
-### Do I have to worry about the GDPR when I recruit new employees? What about current employees?
-
-The GDPR doesn't just affect customer data; it extends to employee data, too. New recruits are often located using social media platforms such as LinkedIn. Make sure that you don't store any potential recruit data without their express permission.
-  
-As for existing employees and new employee contracts, a signature at the end of a contract does not necessarily assume consent, especially when a non-affirmative clause is used in a contract. In this case, you must capture consent in an explicit manner associated with the clause. What this means depends on your employee contract, but you can use "legitimate interest" in some cases and add an employee data processing notice to make sure your employees are aware of what you will do with their data.
-  
-## Satisfy privacy concerns using Microsoft 365 for business
-
-Becoming compliant with the GDPR is about making sure that personal data is protected. The GDPR has a concept known as Privacy by Design and Default. This means that data protection should be "baked in" to a system and a product so that satisfying privacy concerns is second nature. 
-  
-Like their larger counterparts, a small business needs convenience without sacrificing security. Microsoft 365 for business is designed for companies of fewer than 300 employees. Small companies can use Microsoft cloud-based tools to improve business productivity. With Microsoft 365 for business, a small business can manage emails, documentation, and even meetings and events. It also has built-in security measures and device management, which are vital for GDPR compliance.
-  
-Microsoft 365 for business can help you with the GDPR process in the following ways:
-  
-- **Discover:** An important step to GDPR compliance is knowing what data you have. 
-    
-- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
-    
-- **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
-    
-- **Report:** The GDPR places a lot of emphasis on reporting. Even a business with a single employee, if that business processes large amounts of data, is required to document and report on their procedures. Microsoft 365 for business takes the headache out of reporting requirements for smaller organizations. 
-    
-    Tools such as audit logs allow you to track and report on data movement. Reports include classifying the data you collect and store, what you do with the data, and transfers of the data. 
-    
-Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 for business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
 
 
 ## Steps to prepare for GDPR
 
-So where do you start with GDPR, especially if you are a small business in which handling personal data is not a core business activity? This section highlights several steps a small business can take to get ready for GDPR. Much of the information for these steps was provided through [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
+This section describes steps a small business can take to get ready for GDPR. Much of the information for these steps was provided through [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
 
 A good way for a small business to start with GDPR is to make sure to apply the following key principles when collecting personal data:
 
 - Collect personal data with clearly defined purpose, and
-don’t use them for something else. For example, if you tell your clients to give you their email so they can get your new offers or
-promotions, you can’t use this email for anything else or sell
-it to another business.
-- Don’t collect more data than you need. For example, if you do home
-delivery, you need an address and a name, but
-you don’t need to know if this person is married or single. Be mindful of the personal data under your control.
+don’t use them for anything else. For example, if you tell your clients to give you their email addresses so they can get your new offers or promotions, you can only use their email addresses for only that.
+- Don’t collect more data than you need. For example, if your business requires a delivery of goods, you need an address and a name, but
+you don’t need to know a person's marital status.
 
 
 ### Step 1: Check the personal data you collect and process, the purpose for which you do it, and on which legal basis.
 
-For your employees, you are processing their personal data based
+You are processing your employee's personal data based
 on the employment contract and on legal obligations (for example, 
 reporting to tax authorities).
 
@@ -179,6 +106,9 @@ if they tell you to do so.
 If you manage a list of suppliers or business clients, then you
 do it based on the contracts you have with them. The contracts are
 not necessarily in a written form.
+
+#### Microsoft 365 features that can help
+[Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data.
 
@@ -269,7 +199,79 @@ Impact Assessment. Such an impact assessment is reserved for those that pose mor
 
 If you are a small business managing employees’ wages and a list
 of clients, you do not need to carry out a Data Protection Impact
-Assessment for those processing operations. 
+Assessment for those processing operations.  
+ 
+
+    
+## Common small business questions about the GDPR
+
+### I'm a sole proprietor - do I really have to worry about the GDPR?
+
+The GDPR is about the data you process, not the number of employees you have. It affects companies of all sizes, even sole proprietors. However, companies with fewer than 250 employees do have some exemptions, such as reduced record keeping, but only if you are sure the data processing doesn't affect the individual's rights and is occasional processing.
+  
+As an example, processing of non-personal data would be exempt or need reduced measures. However, if you process any data that is seen as "special category sensitive data", even if it only occasionally, you will have to record this data processing. The definition of "occasional processing" is vague, but it's meant to apply to data that is used once or rarely.
+  
+You should also make sure that personal data that you collect is protected. This means that you need to encrypt it and make sure that access to it is controlled using at least a password. Keeping your customer data on a spreadsheet on your desktop with no protection won't meet GDPR expectations. 
+  
+### How can I tell if our company website is GDPR compliant?
+
+The first question to ask yourself is: Do you collect personal data anywhere on your site? For example, you might have a contact form that asks for a name and email address. If you want to send marketing emails, make sure you add an 'opt-in' checkbox that explains exactly what you will use the data for. Only if the recipient checks that box can you use their personal data for marketing purposes.
+  
+Also, check that the database that stores the data is protected. Your web hosting company or cloud storage vendor will be able to advise on this. If you use Microsoft 365 for business, storage of data is GDPR-compliant. 
+  
+### My company is outside Europe. Does the GDPR really affect us?
+
+The GDPR is a regulation that protects EU citizens. If your company deals with EU citizens now, or you hope to in the future, you will be affected. This applies to both citizens living in an EU State and those living elsewhere.
+  
+Consider the following examples:
+  
+- A U.S. company that hires cars to EU citizens will need to satisfy GDPR requirements when they collect and process the customer's data. The company will be required to take consent when they take the customer's data and ensure that the data is stored securely. They will also need to make sure the customer can apply all of their data subject rights. 
+    
+- An Australian company sells products online, and its users set up online accounts. GDPR data subject rights and consent will be applied to EU citizens who open an account. The company will need to make sure the customer can apply all of their data subject rights. 
+    
+- An international charity collects data about donors and uses it to send out updates and requests for donations. The GDPR states: '...the processing of personal data for direct marketing purposes may be regarded as carried out for a legitimate interest." However, the responsibility is on the organization to prove their interests override those of the data subject. The company (or in this case, the charitable organization) should always get informed, explicit, opt-in consent.
+    
+The GDPR also applies if customer data moves across borders. If you use cloud computing for data storage, you will need to make sure the service is fully GDPR-compliant. It can get complicated if data storage is in locations that have a poor record of data protection. If you use Microsoft 365 for business, we have the correct legal documentation in place to cover GDPR requirements.
+  
+### Sure, I collect data, but some other company stores it. Does that get me off the hook?
+
+Under the GDPR, if you collect data you are affected to some extent. The GDPR has the concept of a data processor and a data controller: 
+  
+- **Data Controller:** An individual or organization (you can have joint controllers) that decides how, what, and why data is collected. They may store it using another company's cloud servers. For example, a website that collects customer data is a controller. 
+    
+- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Microsoft 365 Apps for business data storage acts as a processor and is fully GDPR compliant. 
+    
+    An organization or system can act as both a controller and a processor. Microsoft 365 for business can act as both and complies with the GDPR.
+    
+### Can I still send out marketing emails to my old customers?
+
+You need to make sure your customers, even ones that you've had for years, have consented to use their data for marketing. You may have previously captured consent, as well as a record to show it. If so, you're all set to continue marketing. If not, you need to get permission from the customer to continue marketing to them. This usually involves sending an email asking customers to go to your site and select an option to consent to receive future emails. 
+  
+### Do I have to worry about the GDPR when I recruit new employees? What about current employees?
+
+The GDPR doesn't just affect customer data; it extends to employee data, too. New recruits are often located using social media platforms such as LinkedIn. Make sure that you don't store any potential recruit data without their express permission.
+  
+As for existing employees and new employee contracts, a signature at the end of a contract does not necessarily assume consent, especially when a non-affirmative clause is used in a contract. In this case, you must capture consent in an explicit manner associated with the clause. What this means depends on your employee contract, but you can use "legitimate interest" in some cases and add an employee data processing notice to make sure your employees are aware of what you will do with their data.
+  
+## Satisfy privacy concerns using Microsoft 365 for business
+
+Becoming compliant with the GDPR is about making sure that personal data is protected. The GDPR has a concept known as Privacy by Design and Default. This means that data protection should be "baked in" to a system and a product so that satisfying privacy concerns is second nature. 
+  
+Like their larger counterparts, a small business needs convenience without sacrificing security. Microsoft 365 for business is designed for companies of fewer than 300 employees. Small companies can use Microsoft cloud-based tools to improve business productivity. With Microsoft 365 for business, a small business can manage emails, documentation, and even meetings and events. It also has built-in security measures and device management, which are vital for GDPR compliance.
+  
+Microsoft 365 for business can help you with the GDPR process in the following ways:
+  
+- **Discover:** An important step to GDPR compliance is knowing what data you have. 
+    
+- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
+    
+- **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
+    
+- **Report:** The GDPR places a lot of emphasis on reporting. Even a business with a single employee, if that business processes large amounts of data, is required to document and report on their procedures. Microsoft 365 for business takes the headache out of reporting requirements for smaller organizations. 
+    
+    Tools such as audit logs allow you to track and report on data movement. Reports include classifying the data you collect and store, what you do with the data, and transfers of the data. 
+    
+Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 for business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
 
 
 
