@@ -164,8 +164,6 @@ To add these values, create a single string, separating the values with spaces a
 
 ## Related content
 
-[Change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md) (article)
-
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
-
+[Change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
 [Manage domains](index.yml) (link page)
