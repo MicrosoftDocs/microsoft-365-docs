@@ -90,13 +90,11 @@ Verify that Microsoft Defender Antivirus is installed and is active.
     >Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 4. Select **Download onboarding package** and save the .zip file.
-5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+5. Install the installation package using any of the [Options to install Microsoft Defender Antivirus]()
+6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
-## Options to run the installation package
-In the previous section, you downloaded the installation package.  You can choose any of the following methods to run the installation package to install the application:
-
-- Quiet method
-- Passive method
+## Options to install Microsoft Defender Antivirus
+In the previous section, you downloaded an installation package. The installation package contains the installer for Microsoft Defender Antivirus. You can choose to set Microsoft Defender Antivirus to run on passive mode if you are running a non-Microsoft antivirus/antimalware solution. 
 
 
 ### Agent installation using quiet method
@@ -109,10 +107,14 @@ Run the following command to install the msi silently:
 Msiexec /i md4ws.msi /quiet 
 ```
 
-### Agent installation using passive installation
-Run the installation package to install the application. Follow the installation wizard.
+### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
-   ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
+1. Open Registry Editor, and then navigate to <br/>
+   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+2. Edit (or create) a DWORD entry called **ForcePassiveMode**, and specify the following settings:
+   - Set the DWORD's value to **1**.
+   - Under **Base**, select **Hexadecimal**.
 
 
 
