@@ -93,13 +93,13 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 ## Installer package options
-You can choose any of the following options to run the installation package:
+You can choose any of the following methods to run the installation package:
 
-- Silent
+- Quiet 
 - Passive
 
 
-### Silent installation
+### Agent installation using quiet method
 Use the installation package from the previous step for the following steps.
 
 
@@ -108,6 +108,7 @@ Run the following command to install the msi silently:
     ```
     Msiexec /i md4ws.msi /quiet 
     ```
+
 ### Passive installation
 Run the installation package to install the application. Follow the installation wizard.
 
