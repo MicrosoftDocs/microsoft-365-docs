@@ -92,11 +92,11 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 4. Select **Download onboarding package** and save the .zip file.
 5. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
-## Installer package options
-You can choose any of the following methods to run the installation package:
+## Options to run the installation package
+In the previous section, you downloaded the installation package.  You can choose any of the following methods to run the installation package to install the application:
 
-- Quiet 
-- Passive
+- Quiet method
+- Passive method
 
 
 ### Agent installation using quiet method
@@ -109,7 +109,7 @@ Run the following command to install the msi silently:
 Msiexec /i md4ws.msi /quiet 
 ```
 
-### Passive installation
+### Agent installation using passive installation
 Run the installation package to install the application. Follow the installation wizard.
 
    ![Image of Microsoft Defender for Windows Server Setup](images/window-server-setup.png)
