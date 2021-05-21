@@ -2,8 +2,8 @@
 title: "Build and manage assessments in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: v-jgriffee
+ms.author: jmgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -53,7 +53,7 @@ When two different assessments in the same group share improvement actions that 
 
 ### Create a group
 
-You can create a group while [creating a new assessment](#to-create-an-assessment). Groups can't be created as standalone entities.
+You can create a group while creating a new assessment. Groups can't be created as standalone entities.
 
 ### What to know when working with groups
 

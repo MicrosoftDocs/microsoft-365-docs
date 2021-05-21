@@ -2,8 +2,8 @@
 title: "Working with assessment templates in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: v-jgriffee
+ms.author: jmgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -151,11 +151,11 @@ Only users who hold a Global Administrator or  Compliance Manager Administration
     - If there’s an error with your file, an error message at the top explains what’s wrong. You’ll need to fix your file and upload it again. Errors will result if your spreadsheet is formatted improperly, or if there’s invalid information in certain fields.
 6. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Create template.** (If you need to make changes, select **Back**.)
 7. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
-8. You’ll arrive at your new template’s details page, where you can [create your assessment](compliance-manager-assessments.md#create-your-own-custom-assessment).
+8. You’ll arrive at your new template’s details page, where you can [create your assessment](compliance-manager-assessments.md#create-assessments).
 
 ## Extend an assessment template
 
-Compliance Manager offers the option to add your own controls and improvement actions to an existing Microsoft-provided template. This process is called extending a Microsoft template. When you extend a template, it can still receive updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accepting updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments)).
+Compliance Manager offers the option to add your own controls and improvement actions to an existing Microsoft-provided template. This process is called extending a Microsoft template. When you extend a template, it can still receive updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).
 
 To prepare, you’ll need to assemble a specially formatted Excel spreadsheet to import the necessary template data. The Excel files follow the same general format outlined above, but there are special requirements for extensions. See these additional points to help prevent errors:
 
@@ -187,7 +187,7 @@ After you format your spreadsheet, follow the steps below.
 
 10. The last screen confirms a new template has been created. Select **Done** to exit the wizard.
 
-11. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, see [Build and manage assessments](compliance-manager-assessments.md#to-create-an-assessment).
+11. You’ll arrive at your new template’s details page. From here you can create your assessment by selecting **Create assessment**. For guidance, see [Build and manage assessments](compliance-manager-assessments.md#create-assessments).
 
 ## Modify a template
 
@@ -272,7 +272,7 @@ After your Excel file is completed and saved, follow these steps.
 4. The **Review and finish** screen shows the number of improvement actions and controls and the maximum score for the template. When ready to approve, select **Next**.
 5. The last screen confirms that the template has been modified. Select **Done** to exit the wizard.
 
-Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accepting-updates-to-assessments).
+Your template will now include the changes you made. Any assessments that use this modified template will now show pending updates, and you’ll need to accept the updates to the assessments to reflect the changes made in the template. Learn more about [updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
 > If you use Compliance Manager in a language other than English, you’ll notice that some text appears in English when you export a template to Excel. The titles of actions (both your improvement actions and Microsoft actions) must be in English to be recognized by controls. If you make changes to an action title, be sure to write it in English so that the file imports correctly.
