@@ -225,14 +225,14 @@ The explanation library includes commonly used *phrase list* explanations, inclu
 - Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. 
 - Email subject: A phrase list with the term 'Subject:', often found near the email's subject.
 
-The explanation library includes commonly used *regular expression* explanations, including:
+The explanation library also includes commonly used *regular expression* explanations, including:
 
 - 6 to 17 digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
 - Email address: Matches a common type of email address like meganb@contoso.com.
 - US taxpayer ID number: Matches a three-digit number starting with 9 followed by a 6 digit number starting with 7 or 8. 
 - Web address (URL): Matches the format of a web address, starting with http:// or https://.
 
-The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
+In addition, the explanation library includes three automatic template types that work with the data you've labeled in your example files:
 
 - After label: The words or characters that occur after the labels in the example files.
 - Before label: The words or characters that occur before the labels in the example files.
