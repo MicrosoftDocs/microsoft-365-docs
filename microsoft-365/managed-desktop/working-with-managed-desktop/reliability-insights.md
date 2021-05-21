@@ -1,6 +1,6 @@
 ---
 title: Reliability insights
-description:  
+description:  Describes the view that provides a health summary of managed devices.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
