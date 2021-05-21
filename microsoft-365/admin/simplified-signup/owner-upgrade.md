@@ -48,3 +48,8 @@ When you set up Microsoft 365 for your business, you can create a custom email a
 10. Once you're signed in, set up work accounts for your users. Choose their new email address and make sure you add their alternative email address so they can get the email notification with instructions on how to set up their new user account. Select **Continue**.
 
 11. Select **Continue** after you review the notification email, and then **Done** to complete the upgrade.
+
+## Next steps
+
+Follow up with your users to make sure they received the email notification to set up their new account. You can send them the link to the (placeholder) topic if they need help with set up.
+
