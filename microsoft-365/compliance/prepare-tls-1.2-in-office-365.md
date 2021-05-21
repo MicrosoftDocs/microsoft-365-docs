@@ -27,13 +27,6 @@ For information about how to remove TLS 1.0 and 1.1 dependencies, see the follo
 
  > [!NOTE]
  > Special Notice: Even after upgrading to TLS 1.2, it is important to make sure cipher suites match AFD support because M365 and AFD have a slight difference cipher suite support. 
->
-> For TLS1.2 the following cipher suites are supported by AFD:
-> TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-> TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-> TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-> TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-> [What are the current cipher suites supported by Azure Front Door?](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
 
 ## More information
 
