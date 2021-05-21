@@ -473,6 +473,17 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
     Use the *Export* option to create a .csv file containing the report details.
 
+- **Sensitive information type per location** detailed report (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. Examples are:
+
+    - **Email**: Sensitive information types detected in Exchange email messages.
+    - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
+    - **Skype for Business**: Sensitive information types detected in Skype for business communications.
+    - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
+    - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
+    - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report will not affect any values.
+
+    Use the *Export* option to create a .csv file containing the report details. The values for each third-party source are displayed in separate columns in the .csv file.
+
 ## Audit
 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
