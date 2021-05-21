@@ -26,7 +26,7 @@ The [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/311733
 For information about how to remove TLS 1.0 and 1.1 dependencies, see the following white paper: [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266).
 
  > [!NOTE]
- > Special Notice: Even after upgrading to TLS 1.2, it is important to make sure cipher suites match AFD support because M365 and AFD have a slight difference cipher suite support. 
+ > Even after upgrading to TLS 1.2, it is important to make sure that the cipher suites match Azure Front Door support because Microsoft 365 and Azure Front Door have a slight difference in cipher suite support. For details, see [What are the current cipher suites supported by Azure Front Door?](azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
 
 ## More information
 
