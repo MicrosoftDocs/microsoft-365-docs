@@ -94,7 +94,7 @@ Setting up and configuring EDM-based classification involves:
 
 #### Save sensitive data in .csv or .tsv format
 
-1. Identify the sensitive information you want to use to identify what you want to protect. Export the data to an app, such as Microsoft Excel, and save the file in .csv (comma-separated values) or .tsv (tab-separated values) format. The .tsv format is recommended in cases where your data vaues may have commas included in them (e.g. street addresses).
+1. Identify the sensitive information you want to use to identify what you want to protect. Export the data to an app, such as Microsoft Excel, and save the file in a text file. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values) or pipe-separated (|) format. The .tsv format is recommended in cases where your data values may have commas included in them (e.g. street addresses).
 The data file can include a maximum of:
       - Up to 100 million rows of sensitive data
       - Up to 32 columns (fields) per data source
@@ -438,11 +438,12 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 4. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   This will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
+   THe default format for the sensitive data file is comma-separated values. You can specify a tab-separated file by indicating the "{Tab}" option with the /ColumnSeparator parameter, or you can specify a pipe-separated file by indicating the "|" option, depending on your the format in which you exported your data. 
+   This command will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 5. Check the upload status by running this command:
 
