@@ -9,7 +9,6 @@ metadata:
   ms.topic: landing-page # Required
   ms.collection: commerce # Optional; Remove if no collection is used.
   ms.custom: 
-  - AdminSurgePortfolio
   - commerce_landingpage
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.

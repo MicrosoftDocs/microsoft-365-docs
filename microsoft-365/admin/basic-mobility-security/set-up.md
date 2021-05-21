@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices ."
+description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
 ---
 
 # Set up Basic Mobility and Security
@@ -122,7 +122,8 @@ After you've created and deployed a mobile device management policy, each licens
 
 Users with Android or iOS devices are required to install the Company Portal app as part of the enrollment process.
 
-## Related Topics
+## Related content
 
-[Capabilities of Basic Mobility and Security](capabilities.md)<br/>
-[Create device security policies in Basic Mobility and Security](create-device-security-policies.md)
+[Capabilities of Basic Mobility and Security](capabilities.md) (article)
+
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article)
