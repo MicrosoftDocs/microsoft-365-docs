@@ -105,9 +105,9 @@ Use the installation package from the previous step for the following steps.
 
 Run the following command to install the msi silently:
 
-    ```
-    Msiexec /i md4ws.msi /quiet 
-    ```
+```
+Msiexec /i md4ws.msi /quiet 
+```
 
 ### Passive installation
 Run the installation package to install the application. Follow the installation wizard.
