@@ -38,7 +38,7 @@ The following types of policies are analyzed by the configuration analyzer:
 
   - [Anti-spam policies](configure-your-spam-filter-policies.md).
   - [Anti-malware policies](configure-anti-malware-policies.md).
-  - [EOP Anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
+  - [EOP anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
 - **Microsoft Defender for Office 365 policies**: This includes organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
 

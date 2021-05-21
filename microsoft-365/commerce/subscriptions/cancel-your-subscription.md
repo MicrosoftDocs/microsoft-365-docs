@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
+description: "If you have fewer than 25 user licenses, you can cancel your Microsoft 365 for business trial or paid subscription in the admin center."
 ms.date: 04/08/2021
 ---
 
@@ -41,7 +41,7 @@ If you added your own domain name to use with your subscription, you must remove
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Find the subscription that you want to cancel. Select **More actions** (three dots), then select **Cancel subscription**.
+2. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
 4. Select **Save**.
 
@@ -64,7 +64,7 @@ Your subscription now appears in a **Disabled** state, and has reduced functiona
 ::: moniker-end
 
 2. Select the **Products** tab.
-3. Find the subscription that you want to cancel. Select **More actions** (three dots), then select **Cancel subscription**.
+3. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 4. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
 5. Select **Save**.
 

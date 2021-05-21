@@ -197,7 +197,7 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
 
     >[!NOTE]
-    >If you want to enable [optical character recognition (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) to scan embedded or attached images in messages for printed or handwritten text that match policy conditions, select **Customize policy** > **Conditions and percentage** and enable **Extract printed or handwritten text from images for evaluation**.
+    >If you want to enable [optical character recognition (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) to scan embedded or attached images in messages for printed or handwritten text that match policy conditions, select **Customize policy** > **Conditions and percentage** and enable **Extract printed or handwritten text from images for evaluation**.
 
     If you choose to use the policy wizard to create a custom policy, you will:
 
@@ -217,7 +217,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
 
-    - Enable [optical character recognition (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) to scan embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition scanning.
+    - Enable [optical character recognition (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) to scan embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition scanning.
 
     - Define the percentage of communications to review.
 

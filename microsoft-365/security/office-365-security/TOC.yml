@@ -38,14 +38,6 @@
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 security center overview
          href: ../defender/overview-security-center.md
-       - name: Threat Explorer for Defender for Office 365
-         items:
-            - name: Threat hunting in Threat Explorer
-              href: threat-hunting-in-threat-explorer.md
-            - name: Email security with Threat Explorer
-              href: email-security-in-microsoft-defender.md          
-            - name: Threat Explorer and Real-time detections basics
-              href: real-time-detections.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
@@ -118,8 +110,6 @@
        href: configure-junk-email-settings-on-exo-mailboxes.md
      - name: Configure outbound spam filtering
        href: configure-the-outbound-spam-policy.md
-     - name: Configure spoof intelligence
-       href: learn-about-spoof-intelligence.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists
@@ -150,10 +140,6 @@
        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Install Application Guard for Office
        href: install-app-guard.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Migrate
      items: 
      - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
@@ -178,6 +164,8 @@
        href: attack-simulation-training-insights.md
      - name: Attack simulation training deployment considerations and FAQ
        href: attack-simulation-training-faq.md
+     - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
+       href: configure-advanced-delivery.md
      - name: Recommended settings for configuring EOP and Defender for Office 365 Security
        href: recommended-settings-for-eop-and-office365.md
      - name: Best practices for configuring EOP
@@ -206,6 +194,14 @@
        href: zero-hour-auto-purge.md
    - name: Detect
      items: 
+     - name: Threat Explorer for Defender for Office 365
+       items:
+       - name: Threat hunting in Threat Explorer
+         href: threat-hunting-in-threat-explorer.md
+       - name: Email security with Threat Explorer
+         href: email-security-in-microsoft-defender.md          
+       - name: Threat Explorer and Real-time detections basics
+         href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
      - name: View alerts
@@ -226,13 +222,13 @@
        href: campaigns.md
      - name: Investigate malicious email
        href: investigate-malicious-email-that-was-delivered.md
-     - name: View Defender for Office 365 reports in the Security & Compliance Center
-       href: view-reports-for-mdo.md
      - name: View details and results of an automated investigation
        href: air-view-investigation-results.md
-     - name: View email security reports in the Security & Compliance Center
+     - name: View Defender for Office 365 reports
+       href: view-reports-for-mdo.md 
+     - name: View email security reports
        href: view-email-security-reports.md
-     - name: View mail flow reports in the Security & Compliance Center
+     - name: View mail flow reports
        href: view-mail-flow-reports.md
      - name: View the admin audit log in standalone EOP
        href: view-the-admin-audit-log-eop.md
@@ -240,6 +236,8 @@
        href: reporting-and-message-trace-in-exchange-online-protection.md
      - name: Auto-forwarded messages insight
        href: mfi-auto-forwarded-messages-report.md
+     - name: Impersonation insight
+       href: impersonation-insight.md
      - name: Mail flow map
        href: mfi-mail-flow-map-report.md
      - name: Manually submit messages to Microsoft
@@ -256,6 +254,8 @@
        href: mfi-outbound-and-inbound-mail-flow.md
      - name: SMTP Auth clients insight and report
        href: mfi-smtp-auth-clients-report.md
+     - name: Spoof intelligence insight
+       href: learn-about-spoof-intelligence.md
      - name: Submit malware and non-malware to Microsoft
        href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Top domain mail flow status insight
@@ -266,8 +266,6 @@
        href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
      - name: Queues insight
        href: mfi-queue-alerts-and-queues.md
-     - name: Walkthrough - Spoof intelligence insight
-       href: walkthrough-spoof-intelligence-insight.md
    - name: Respond
      items: 
      - name: Detect and address compromised user accounts quickly

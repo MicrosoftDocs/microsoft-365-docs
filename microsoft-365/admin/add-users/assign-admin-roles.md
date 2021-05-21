@@ -114,12 +114,12 @@ You can check admin role permissions in 2 different ways:
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)
 
-[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)
 
-[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
+[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)
 
-[Authorize or remove partner relationships](../misc/add-partner.md)
+[Authorize or remove partner relationships](../misc/add-partner.md) (article)

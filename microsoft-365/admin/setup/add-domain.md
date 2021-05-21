@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
+description: "Use the setup wizard to add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host."
 ---
 
 # Add a domain to Microsoft 365
@@ -34,17 +34,9 @@ description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center
   
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
- Follow these steps to add, set up, or continue setting up a domain. 
+ ## Add a domain
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+Follow these steps to add, set up, or continue setting up a domain. 
 
 ::: moniker range="o365-worldwide"
 
@@ -137,12 +129,12 @@ After you finish setup, the MX record for your domain is updated to point to Mic
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
 
-## Related articles
+## Related content
 
-[Domains FAQ](domains-faq.yml)
+[Domains FAQ](domains-faq.yml) (article)
 
-[What is a domain?](../get-help-with-domains/what-is-a-domain.md)
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)
 
-[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
 
-[Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[Set up your domain](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)
