@@ -49,7 +49,7 @@
       items: 
         - name: Use Outlook and Teams
           href: collab-outlook-teams.md
-        - name: Get started with Microsoft Teams in your small business
+        - name: Get started with Teams
           href: get-started-teams-small-business.md
         - name: Create a group email address
           href: group-email.md
