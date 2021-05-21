@@ -39,6 +39,8 @@ ms.technology: mde
 
 Defender for Endpoint extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
+
+
 To onboard down-level Windows client endpoints to Defender for Endpoint, you'll need to:
 
 
@@ -46,12 +48,7 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 - [Install and configure Microsoft Monitoring Agent (MMA) to report sensor data](#install-and-configure-microsoft-monitoring-agent-mma)
 
 
-**Windows Server 2008 R2 SP1**
-
-You can onboard Windows Server 2008 R2 SP1 by using any of the following options:
-
-- **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#install-and-configure-microsoft-monitoring-agent-mma)
-- **Option 2**: [Onboard through Azure Defender](#onboard-windows-servers-through-azure-defender)
+For Windows Server 2008 R2 SP1, you have the option of [onboarding through Azure Defender](#onboard-windows-servers-through-azure-defender).
 
 
 > [!NOTE]
@@ -116,15 +113,6 @@ Review the following details to verify minimum system requirements:
 Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ## Configure proxy and Internet connectivity settings
-
-**Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
- 
-- Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](/azure/log-analytics/log-analytics-oms-gateway).
-- If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Defender for Endpoint service URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
-
-
-**Windows Server 2008 R2 SP1**
-
 If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
 
 - [Configure the MMA to use a proxy server](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
