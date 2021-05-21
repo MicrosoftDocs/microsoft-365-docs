@@ -193,14 +193,14 @@ When you created the shared mailbox, you automatically created a shared calendar
 
 3. Any member of the shared mailbox can create, view, and manage appointments on the calendar, just like they would their personal appointments. Everyone who is a member of shared mailbox can see their changes to the shared calendar.
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
+[About shared mailboxes](about-shared-mailboxes.md) (article)
 
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)
 
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md)
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)
 
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
 
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

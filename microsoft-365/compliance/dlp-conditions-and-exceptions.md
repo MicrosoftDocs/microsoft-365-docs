@@ -104,7 +104,7 @@ The tables in the following sections describe the conditions and exceptions that
 |---------|---------|---------|---------|
 | With importance    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Importance    | Messages that are marked with the specified importance level.    |
 | Content character set contains words    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messages that have any of the specified character set names.    |
-| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Data loss prevention](./data-loss-prevention-policies.md).   |
+| Has sender override    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/a    | Messages where the sender has chosen to override a data loss prevention (DLP) policy. For more information about DLP policies see [Learn about data loss prevention](./dlp-learn-about-dlp.md) |
 | Message type matches    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messages of the specified type.    |
 |The message size is greater than or equal to| condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver* |`Size`|Messages where the total size (message plus attachments) is greater than or equal to the specified value. **Note**: Message size limits on mailboxes are evaluated before mail flow rules. A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.|
 

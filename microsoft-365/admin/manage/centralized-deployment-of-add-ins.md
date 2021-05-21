@@ -38,7 +38,7 @@ Centralized Deployment supports three desktop platforms Windows, Mac and Online 
 
 It can take up to 24 hours for an add-in to show up for client for all users.
   
-## Requirements
+## Before you begin
 
 Centralized deployment of add-ins requires that the users are using Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
@@ -146,9 +146,20 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
   
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../contact-support-for-business-products.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
   
 |**Platform**|**Debug information**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler logs  <br/>  Tenant ID ( [learn how](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler logs  <br/>  Tenant ID ( [learn how](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich clients (Windows, Mac)  <br/> | Charles/Fiddler logs  <br/>  Build numbers of the client app (preferably as a screenshot from **File/Account**)  <br/> |
+
+## Related content
+
+[Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)
+
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)
+
+[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)
+
+[Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)
+ 

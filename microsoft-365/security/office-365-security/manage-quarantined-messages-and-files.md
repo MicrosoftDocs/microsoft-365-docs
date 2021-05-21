@@ -68,7 +68,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 ### View quarantined email
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Verify that **View quarantined** is set to the default value **email**.
 
@@ -192,7 +192,7 @@ After you select a message, you have several options for what to do with the mes
 
 - **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
-- **Block Sender**: Prevents the sender from sending messages to recipients in the organization.
+- **Block Sender**: Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Submit message**: In the flyout pane that appears, choose the following options:
 
@@ -230,7 +230,7 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 
 ### View quarantined files
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
 

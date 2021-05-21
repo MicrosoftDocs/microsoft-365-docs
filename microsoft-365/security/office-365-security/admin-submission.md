@@ -85,7 +85,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![URL submission example](../../media/submission-flyout-email.PNG)
+   ![New URL submission example](../../media/submission-flyout-email.PNG)
 
 ### Send a suspect URL to Microsoft
 
@@ -99,7 +99,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. When you're finished, click the **Submit** button.
 
-   ![Email submission example](../../media/submission-url-flyout.png)
+   ![New Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected file to Microsoft
 
@@ -115,7 +115,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 4. When you're finished, click the **Submit** button.
 
-   ![Attachment submission example](../../media/submission-file-flyout.PNG)
+   ![New Attachment submission example](../../media/submission-file-flyout.PNG)
 
 ## View items Submitted for analysis
 
@@ -131,7 +131,7 @@ To change the filter criteria, click the **Submission ID** button and choose one
 - **Submission type**
 - **Status**
 
-![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+![New Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
@@ -225,7 +225,7 @@ To change the filter criteria, click the **Sender** button and choose one of the
 - **Submission type**
 - **Sender IP**
 
-![Filter options for user submissions](../../media/user-submissions-filter-options.png)
+![New Filter options for user submissions](../../media/user-submissions-filter-options.png)
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
@@ -261,11 +261,11 @@ Once a user submits a suspicious email to the custom mailbox, the user and admin
 
 If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis. This effectively moves a user submission to an admin submission.
 
-On the **Custom mailbox** tab, select a message in the list, click the **Action** button, and make one of the following selections:
+On the **User reported messages** tab, select a message in the list, click the **Action** button, and make one of the following selections:
 
 - **Report clean**
 - **Report phishing**
 - **Report malware**
 - **Report spam**
 
-![Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
+![New Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)

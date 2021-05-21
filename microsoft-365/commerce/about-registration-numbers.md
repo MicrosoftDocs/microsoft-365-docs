@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+search.appverid: MET150
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+ms.date: 03/17/2021
 ---
 
 # About registration numbers and under review notifications

@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Microsoft 365 security and collaboration recommendations for smaller businesses, including smaller firms, practices, and political campaigns."
+description: "Microsoft 365 Business Premium security and collaboration recommendations for smaller businesses, including smaller firms, practices, and political campaigns."
 ---
 
 Microsoft 365 for smaller businesses and campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
+If you have Microsoft 365 Business Premium, the guidance in this library is the quickest way to setup security and begin collaborating safely. In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
 
 
 ![Microsoft 365 Business Premium protects your productivity tools, collaboration tools, file storage, email, devices, and identity](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)

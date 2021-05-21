@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: "Get an overview of Microsoft 365 Message center and its role in change management."
+description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
 # Message center
@@ -176,7 +176,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon. <br><br/>You can also choose the emails you want to get, as well as a weekly digest of services you select.
 
@@ -189,7 +189,7 @@ If administration is distributed across your organization, you may not want or n
 We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
   
 > [!NOTE]
-> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language. 
+> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language.
 
 ## Choose columns
 
@@ -244,66 +244,21 @@ See a message that someone else needs to act on? You can share the contents of t
 
 Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to have access to Message center. See [admin roles that don't have access to the Message center](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) for more information.
 
-::: moniker range="o365-worldwide"
-
 1. Select the message to open it.
 
 2. Select **Copy link**.
 
 3. Use Ctrl+V or right-click and select **Paste** to insert the link to whatever document you wish.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select the message to open it.
-
-2. Choose **More** \> **Get a link** from the action bar.
-
-3. Allow the webpage to access your Clipboard. A direct link is copied to your Clipboard.
-
-4. Use Ctrl+V or right-click and select **Paste** to insert the link.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Select the message to open it.
-
-2. Select **Copy link**.
-
-3. Use Ctrl+V or right-click and select **Paste** to insert the link to whatever document you wish.
-
-::: moniker-end
 
 ## Read and unread states
 
 Any message in Message center that is unread will appear in bold. Opening a message marks it as read. You can mark a message as unread.
 
-::: moniker range="o365-worldwide"
 
 - On the main page of the message center, select the **More options** ellipses next to a message, and then select **Mark as unread**.
 
 You can also open a message and mark it as unread in the details panel.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select the message to open it.
-
-2. Select **More** \> **Mark as unread**.
-
-3. Close the message.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- On the main page of the message center, select the **More options** ellipses next to a message, and then select **Mark as unread**.
-
-::: moniker-end
-
 ## Archive and restore
 
 If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from Inbox. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins. There are two ways to archive a message.
@@ -335,7 +290,6 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Unsubscribe from Message center emails
 
 1. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, select **Preferences** and then **Email**.
-
     - De-select the **Send a weekly digest of my messages** checkbox.
     - Email notification for major updates is a separate control. If you don't want to receive email notices about major updates, verify that **Send me emails for major updates** checkbox is not selected.
     -   To stop receiving email notices about data privacy messages, verify that **Send me emails for data privacy messages** checkbox is not selected.  (Data privacy messages are not included in the weekly digest.)

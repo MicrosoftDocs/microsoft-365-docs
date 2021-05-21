@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises."
+description: "Users with valid work or school accounts can get Cortana in Microsoft 365 experiences that meet Office 365 enterprise-level security promises."
 ---
 
 # Cortana in Microsoft 365
@@ -77,6 +77,9 @@ Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform
 
 ### Cortana voice assistance in Teams
 
+> [!NOTE]
+> Cortana voice assistance is supported in Microsoft Teams mobile apps for iOS and Android and Microsoft Teams displays for users in the United States, United Kingdom, Canada, India, and Australia.  Microsoft Teams Rooms on Windows is only supported for users in the United States. Cortana voice assistance isn't currently available for GCC, GCC-High, DoD, EDU tenants. Expansion to additional languages and regions will happen as part of future releases.
+
 Cortana voice assistance in the Teams mobile app and on Microsoft Teams display devices enables Microsoft 365 Enterprise users to streamline communication, collaboration, and meeting-related tasks using spoken natural language. Users can speak to Cortana by selecting the microphone button located in the upper right of the Teams mobile app, or by saying &#8220;Cortana&#8221; in the Microsoft Teams display. To quickly connect with their team hands-free and while on the go, users can say queries such as &#8220;call Megan&#8221; or &#8220;send a message to my next meeting&#8221;. Users can also join meetings by saying &#8220;join my next meeting&#8221; and use voice assistance to share files, check their calendar, and more. These voice assistance experiences are delivered using Cortana enterprise-grade services that fully comply with Office 365's privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
 **Admin control**
@@ -134,7 +137,7 @@ Individuals can opt out of Play My Emails using the following steps.
 
 ### Briefing email
 
-Cortana sends a personalized briefing email with tasks and commitments you made with a convenient way to mark them as **done** or schedule focus time to get them done. It also includes a summary of your meetings and relevant documents for your day. Cortana extracts information from a user’s email messages and stores it in their Exchange Online mailbox until it’s consolidated into the Briefing email. At no time is personal data accessible outside of your Exchange Online mailbox.
+Cortana sends a personalized briefing email with tasks and commitments you made with a convenient way to mark them as **done** or schedule focus time to get them done. It also includes a summary of your meetings and relevant documents for your day. Cortana extracts information from a user’s email messages and stores it in their Exchange Online mailbox until it’s consolidated into the Briefing email. At no time is personal data accessible outside of your Exchange Online mailbox. Users get access to the Briefing email only if they have licenses that include the Exchange Online service plan.
 
 ### How to opt out of Briefing email
 
@@ -175,3 +178,12 @@ Turn off Cortana access to your organization's Microsoft hosted data
 3. Select **Save changes**.
 
 For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+
+
+## Related content
+
+[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)
+
+[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)
+
+[What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)

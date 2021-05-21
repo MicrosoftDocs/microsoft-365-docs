@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: "Learn how to set up your Microsoft 365 Business Standard subscription."
+description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
 # Set up Microsoft Business Standard
@@ -134,4 +134,7 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-More at [Use a public website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9).
+## Related content
+
+[Create a website](../../business-video/create-web-site.md) (video)\
+[Microsoft 365 for your business](../../business-video/index.yml) (link page)
