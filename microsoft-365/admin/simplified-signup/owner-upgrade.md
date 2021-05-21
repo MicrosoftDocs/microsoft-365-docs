@@ -52,4 +52,3 @@ When you set up Microsoft 365 for your business, you can create a custom email a
 ## Next steps
 
 Follow up with your users to make sure they received the email notification to set up their new account. You can send them the link to the (placeholder) topic if they need help with set up.
-
