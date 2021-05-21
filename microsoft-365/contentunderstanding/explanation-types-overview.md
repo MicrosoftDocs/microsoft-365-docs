@@ -75,7 +75,6 @@ A regular expression explanation type allows you to create patterns that help fi
 - Find specific character patterns.
 - Validate text to ensure that it matches a predefined pattern (such as an email address).
 - Extract, edit, replace, or delete text substrings.
-- Add extracted strings to a collection to generate a report.
 
 A regular expression type is especially useful when you create an explanation that identifies and extracts information in similar formats, such as email addresses, bank account numbers, or URLs. For example, an email address, such as megan@contoso.com, is displayed in a certain pattern ("megan" is the first part, and "com" is the last part). 
 
@@ -204,7 +203,7 @@ For example, instead of manually adding all the variations for *date*, you can u
 
 ![Explanation library](../media/content-understanding/explanation-template.png)
  
-The explanation library includes commonly used phrase list explanations, including:
+The explanation library includes commonly used *phrase list* explanations, including:
 
 - Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
 - Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2020).
@@ -219,16 +218,19 @@ The explanation library includes commonly used phrase list explanations, includi
 - Social security number: US Social Security Number format. For example, 111-11-1111. 
 - Checkbox: A phrase list representing variations on a filled in checkbox. For example, _X_, __X_.
 - Currency: Major international symbols. For example, $. 
-- Email address: Regular expression for matching an email address.
 - Email CC: A phrase list with the term 'CC:', often found near the names or email addresses of other people or groups the message was sent to.
 - Email date: A phrase list with the term 'Sent on:', often found near the date the email was sent.
 - Email greeting: Common opening lines for emails.
 - Email recipient: A phrase list with the term 'To:', often found near the names or email addresses of people or groups the message was sent to. 
 - Email sender: A phrase list with the term 'From:', often found near the sender's name or email address. 
 - Email subject: A phrase list with the term 'Subject:', often found near the email's subject.
-- US bank account numbers: Regular expression for identifying US bank account numbers containing between 6 and 17 digits.
-- US ITIN number regular: Regular expression for identifying US Individual Taxpayer Identification Number (ITIN) numbers. 
-- Web address or URL: Regular expression for matching a phrase that starts with http:// or https://.
+
+The explanation library includes commonly used *regular expression* explanations, including:
+
+- 6 to 17 digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
+- Email address: Matches a common type of email address like meganb@contoso.com.
+- US taxpayer ID number: Matches a three-digit number starting with 9 followed by a 6 digit number starting with 7 or 8. 
+- Web address (URL): Matches the format of a web address, starting with http:// or https://.
 
 The explanation library also includes three automatic template types that work with the data you've labeled in your example files:
 
