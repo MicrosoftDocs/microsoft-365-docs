@@ -76,6 +76,8 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
 
+<br>
+
 ****
 
 |Anti-spam policy setting|Description|X-header added|
@@ -89,6 +91,8 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 ## Mark as spam settings
 
 The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
+
+<br>
 
 ****
 
