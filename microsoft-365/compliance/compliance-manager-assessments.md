@@ -22,7 +22,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 ## Introduction to assessments
 
-Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
+Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
@@ -53,7 +53,7 @@ When two different assessments in the same group share improvement actions that 
 
 ### Create a group
 
-You can create a group during the process of [creating a new assessment](#to-create-an-assessment). Groups can't be created as standalone entities.
+You can create a group while [creating a new assessment](#to-create-an-assessment). Groups can't be created as standalone entities.
 
 ### What to know when working with groups
 

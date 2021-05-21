@@ -47,7 +47,7 @@ Templates will display an activation status as either active or inactive:
 
 When you purchase a premium template and create an assessment from it, that template is active for one year. Your purchase will automatically renew unless you cancel.
 
-**Activated templates counter**
+#### Activated templates counter
 
 Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number eligible to use according to your licensing agreement.
 
@@ -59,24 +59,24 @@ For further details, see [Compliance Manager licensing guidance](/office365/serv
 
 ## View and manage templates
 
-The assessment templates page in Compliance Manager displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
+The assessment templates page in Compliance Manager displays a list of templates and key details about them. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, who created it, and whether the template is enabled for assessment creation.
 
 Select a template from its row to bring up its details page. This page contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
 ## Format template data with Excel
 
-The Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) used to create or modify templates contains four tabs, three of which are required:
+The Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) used to create or modify templates has a specific format and schema that must be used in order to import correctly into Compliance Manager. It contains four tabs, three of which are required:
 
 1. [Template](#template-tab) (required)
 2. [ControlFamily](#controlfamily-tab) (required)
 3. [Actions](#actions-tab) (required)
 4. [Dimensions](#dimensions-tab) (optional)
 
-When filling out your spreadsheet with template data, the spreadsheet  **must include the tabs in the order listed above**, otherwise your data won't successfully import to a template.
+When filling out your spreadsheet with template data, the spreadsheet **must include the tabs in the order listed above**, otherwise your data won't successfully import to a template.
 
 ##### Template tab
 
-The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own column **after** the four columns to provide your own dimensions. If you do this, be sure to add them to the **Dimensions** tab using the [instructions below](#dimensions-tab).
+The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own column **after** the four columns to provide your own dimensions. If you do this, be sure to add them to the **Dimensions** tab.
 
 - **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, including your own templates or a Compliance Manager template.
 
@@ -111,10 +111,10 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **implementationType**: In this required field, list one of the three implementation types below:
     - **Operational** - actions implemented by people and processes to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: security awareness and training)
-    - **Technical** - actions completed through the use of technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
+    - **Technical** - actions completed by using technology and mechanisms contained in the hardware, software, or firmware components of the information system to protect the confidentiality, integrity, and availability of organizational systems and data (example: multi-factor authentication)
     - **Documentation** - actions implemented through documented policies and procedures establishing and defining the controls required to protect the confidentiality, integrity, and availability of organizational systems, assets, data, and personnel (example: an information security policy)
 
-- **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
+- **actionScore**: In this required field, provide a numeric score value for your action. The value must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 
 ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
@@ -131,13 +131,13 @@ The **Dimensions** tab is optional. However, if you reference a dimension elsewh
 - **dimensionKey**: list as "product", "certifications," "action purpose"
 - **dimensionValue**: examples: Office 365, HIPPA, Preventative, Detective
 
-You can view your existing dimensions by going to **Tenant Management** and selecting the **Dimensions** tab. Also, anytime you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
+When you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
 
 ## Create an assessment template
 
 To create your own new template for custom assessments, you'll use your specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager.
 
-**Required roles**
+#### Required roles
 
 Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify templates. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -164,8 +164,6 @@ To prepare, you’ll need to assemble a specially formatted Excel spreadsheet to
 - Consider including “extension” in your template’s title, for example, “GDPR – [your company name] extension.” This makes it easier to identify in the list on your **assessment templates** page as distinct from the standard Microsoft-provided template or a custom template with a similar name.
 
 After you format your spreadsheet, follow the steps below.
-
-**Steps for extending a Compliance Manager template**
 
 1. Go to your **Assessment templates** page and select **Create new template**. A template creation wizard will open.
 
@@ -195,7 +193,7 @@ After you format your spreadsheet, follow the steps below.
 
 You may want to modify a template you’ve already created, such as to add controls, or add or remove improvement actions. The process is similar to the template creation process in that you’ll upload formatted Excel file with your template data.
 
-However, there are particular details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**
+However, there are details to be aware of as you format your file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don’t overwrite any existing data that you want to retain.**
 
 ### Format your Excel file to modify an existing template
 
@@ -281,7 +279,7 @@ Your template will now include the changes you made. Any assessments that use th
 
 ## Export a template
 
-You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify the template, as this will be the Excel file you edit and upload in the [modification process](#modify-a-template).
+You can export an Excel file that contains all of a template’s data. You’ll need to export a template in order to modify it, since this will be the Excel file you edit and upload in the [modification process](#modify-a-template).
 
 To export your template, go to your template details page and select the **Export to Excel** button.
 
