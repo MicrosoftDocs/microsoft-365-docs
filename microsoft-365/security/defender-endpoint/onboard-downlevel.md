@@ -41,7 +41,6 @@ Defender for Endpoint extends support to include down-level operating systems, p
 
 To onboard down-level Windows client endpoints to Defender for Endpoint, you'll need to:
 
-**Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise**
 
 - [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients)
 - [Install and configure Microsoft Monitoring Agent (MMA) to report sensor data](#install-and-configure-microsoft-monitoring-agent-mma)
@@ -54,7 +53,6 @@ You can onboard Windows Server 2008 R2 SP1 by using any of the following options
 - **Option 1**: [Onboard by installing and configuring Microsoft Monitoring Agent (MMA)](#install-and-configure-microsoft-monitoring-agent-mma)
 - **Option 2**: [Onboard through Azure Defender](#onboard-windows-servers-through-azure-defender)
 
-After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 > Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Defender (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
