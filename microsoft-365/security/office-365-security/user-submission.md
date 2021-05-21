@@ -35,16 +35,12 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
 
-- [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
+- Third-party reporting tools (see below)
 
-- [Built-in reporting in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
   > [!NOTE]
   > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
-
-You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
-
-Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
 ## Custom mailbox prerequisites
 
@@ -140,9 +136,17 @@ the following settings:
 
        When you're finished, click **Confirm**.
 
+##Third-party reporting tools
+
+You can also configure third-party message reporting tools to forward messages to the mailbox that you specify. The only requirement is that the message is sent as an attachment to the custom mailbox.
+
+Unless the formatting of the message sent is changed, the message will be considered to be a phish submission and Reported as will be shown as Phishing.
+
 ## Message submission format
 
-Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
+Messages sent to custom mailboxes need to follow a specific submission mail format if you want to take advantage of the different subtypes like Junk and Not junk. Otherwise, messages submitted as an attachment to the custom mailbox without this formatting will be considered to be a phish submission.
+
+The Subject (Envelope Title) of the submission should be in this format:
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
