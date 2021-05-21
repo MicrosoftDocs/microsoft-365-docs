@@ -2,8 +2,8 @@
 title: "Assign and complete improvement actions in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: v-jgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
