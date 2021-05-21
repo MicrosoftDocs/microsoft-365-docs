@@ -74,9 +74,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: /defender-endpoint/microsoft-defender-endpoint
+            url: defender-endpoint/microsoft-defender-endpoint.md
           - text: Microsoft Defender Security Center portal overview
-            url: /defender-endpoint/portal-overview
+            url: defender-endpoint/portal-overview.md
              
   # Card (optional)
   - title: Azure Defender
