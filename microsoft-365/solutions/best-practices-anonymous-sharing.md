@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."
 ---
 
