@@ -7,7 +7,6 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
