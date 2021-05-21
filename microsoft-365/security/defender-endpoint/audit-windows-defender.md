@@ -13,6 +13,7 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
+ms.topic: article
 ms.technology: mde
 ---
 
