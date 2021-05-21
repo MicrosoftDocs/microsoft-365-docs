@@ -25,8 +25,8 @@ description: "Use either simplified view in Microsoft 365 to manage common tasks
 
 # Overview of the Microsoft 365 admin center
 
-- [The admin center in simplified view](#the-admin-center-in-simplified-view)
-- [The admin center in dashboard view](#the-admin-center-in-dashboard-view)
+- [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
+- [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
 
 The Microsoft 365 admin center has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
