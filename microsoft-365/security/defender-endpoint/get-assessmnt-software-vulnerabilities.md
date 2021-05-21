@@ -316,7 +316,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 Property (id) | Data type | Description
 :---|:---|:---
-Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
+Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization. [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
 
 ### 2.6 Examples
