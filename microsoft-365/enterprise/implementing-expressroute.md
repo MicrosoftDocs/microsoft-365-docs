@@ -98,7 +98,7 @@ For each service that requires an inbound connection, you'll need some additiona
   
 Inbound connections should be reviewed regardless of whether they're connecting over the internet or ExpressRoute to ensure asymmetric routing hasn't been introduced. In some cases, on-premises endpoints that Office 365 services initiate inbound connections to may also need to be accessed by other Microsoft and non-Microsoft services. It is paramount that enabling ExpressRoute routing to these services for Office 365 purposes doesn't break other scenarios. In many cases, customers may need to implement specific changes to their internal network, such as source based NAT, to ensure that inbound flows from Microsoft remain symmetric after ExpressRoute is enabled.
   
-Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute.
+Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute. 
 
 |**Connection property**|**Value**|
 |----------|-----------|
