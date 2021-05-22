@@ -19,7 +19,7 @@ description: "Learn how to apply a sensitivity label to a model in SharePoint Sy
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to a model in Microsoft SharePoint Syntex. You can do this for document understanding models.
 
-Sensitivity labels let you apply encryption, sharing, and conditional access policies to the documents that your models identify. For example, you want a model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but to also to apply an *Encryption* sensitivity label to them to restrict who can access that content and how it can be used.
+Sensitivity labels let you apply encryption, sharing, and conditional access policies to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but to also to apply an *Encryption* sensitivity label to them to restrict who can access that content and how it can be used.
 
 You can apply a pre-existing sensitivity label to your model through your model settings on your model's home page. 
 
@@ -32,9 +32,9 @@ You can apply a pre-existing sensitivity label to your model through your model 
 
    ![Screenshot of the Models page with the Model settings option highlighted.](../media/content-understanding/sensitivity-model-settings.png)
 
-2. On **Model settings** pane, in the **Security and compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for you to apply to the model.
+2. On **Model settings** pane, in the **Compliance** section, select the **Sensitivity label** menu to see a list of sensitivity labels that are available for you to apply to the model.
 
-   ![Screenshot of the Model settings pane showing the ensitivity label menu.](../media/content-understanding/sensitivity-model-settings-pane.png) 
+   ![Screenshot of the Model settings pane showing the sensitivity label menu.](../media/content-understanding/sensitivity-model-settings-pane.png) 
 
 3. Select the sensitivity label you want to apply to the model, and then select **Save**.
 
@@ -65,8 +65,9 @@ After you apply the update and sync it to your model, you can confirm that it ha
 
 On your model's view page in your document library, a new **Sensitivity label** column will display. As your model classifies files it identifies as belonging to its content type and lists them in the library view, the **Sensitivity label** column will also display the name of the sensitivity label that has been applied to it through the model.
 
-For example, all *Contract* documents that your model identifies will also have the *Sensitive* sensitivity label applied to them, preventing them from being accessed by unauthorized people. If an attempt is made to access the file from the document library by an unauthorized person, an error will display saying it is not allowed because of the applied sensitivity label.
+For example, all financial documents that your model identifies will also have the *Sensitive* sensitivity label applied to them, preventing them from being accessed by unauthorized people. If an attempt is made to access the file from the document library by an unauthorized person, an error will display saying it is not allowed because of the applied sensitivity label.
 
+<!---
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
@@ -109,6 +110,7 @@ You can add a sensitivity label to an existing form processing model that you ow
 
    > [!NOTE]
    > You must be the model owner for the **Model settings** pane to be editable. 
+--->
 
 ## See also
 
