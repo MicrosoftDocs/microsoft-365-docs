@@ -100,6 +100,7 @@ Inbound connections should be reviewed regardless of whether they're connecting 
   
 Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute. 
 
+
 |**Connection property**|**Value**|
 |----------|-----------|
 |**Network traffic direction** <br/> |Inbound  <br/> |
