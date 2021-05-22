@@ -101,7 +101,7 @@ Inbound connections should be reviewed regardless of whether they're connecting 
 Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute.
 
 |**Connection property**|**Value**|
-|:-----|:-----|
+|----------|-----------|
 |**Network traffic direction** <br/> |Inbound  <br/> |
 |**Service** <br/> |Exchange Hybrid  <br/> |
 |**Public Office 365 endpoint (source)** <br/> |Exchange Online (IP addresses)  <br/> |
@@ -118,7 +118,7 @@ Here's a sample of the level of detail required. In this case Exchange Hybrid wo
 Here's a sample of a service that is outbound only:
 
 |**Connection property**|**Value**|
-|:-----|:-----|
+|----------|-----------|
 |**Network traffic direction** <br/> |Outbound  <br/> |
 |**Service** <br/> |SharePoint Online  <br/> |
 |**On-premises endpoint (source)** <br/> |User workstation  <br/> |
@@ -187,6 +187,7 @@ Often times, there are multiple meet-me locations that could be selected within 
 **Planned ExpressRoute meet-me locations in California and New York**
 
 |Location  <br/> |Number of people  <br/> |Expected latency to Microsoft network over Internet egress  <br/> |Expected latency to Microsoft network over ExpressRoute  <br/> |
+|----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (via New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (via New York)  <br/> |
