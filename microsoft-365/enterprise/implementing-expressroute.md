@@ -184,8 +184,8 @@ This means the most important consideration you need to make when selecting meet
   
 Often times, there are multiple meet-me locations that could be selected within a region with relative proximity to your users. Fill out the following table to guide your decisions.
 
-|**Planned ExpressRoute meet-me locations in California and New York**||
-|:-----|:-----|
+**Planned ExpressRoute meet-me locations in California and New York**
+
 |Location  <br/> |Number of people  <br/> |Expected latency to Microsoft network over Internet egress  <br/> |Expected latency to Microsoft network over ExpressRoute  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (via New York)  <br/> |

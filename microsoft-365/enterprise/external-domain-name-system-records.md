@@ -27,9 +27,15 @@ description: A reference list of external Domain Name System records to use when
 
 # External Domain Name System records for Office 365
 
-|||
-|:-----|:-----|
-|![Domain](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) for your domain in Office 365.  <br/> **Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). <br/>  **Sticking around to use the reference list for your own custom deployment?** The below list should be used as a reference for your custom Office 365 deployment. You will need to select which records apply to your organization and fill in the appropriate values. <br/> **Go back to** [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).  <br/> |
+![Domain](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+
+**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) for your domain in Office 365.
+
+**Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+
+**Sticking around to use the reference list for your own custom deployment?** The below list should be used as a reference for your custom Office 365 deployment. You will need to select which records apply to your organization and fill in the appropriate values.
+
+**Go back to** [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).
 
 Often the SPF and MX records are the hardest to figure out. We've updated our SPF records guidance at the end of this article. The important thing to remember is that _you can only have a single SPF record for your domain_. You can have multiple MX records; however, that can cause problems for mail delivery. Having a single MX record that directs email to one mail system removes many potential problems.
   
@@ -40,8 +46,6 @@ The sections below are organized by service in Office 365. To see a customized l
 
 Every Office 365 customer needs to add two records to their external DNS. The first CNAME record ensures that Office 365 can direct workstations to authenticate with the appropriate identity platform. The second required record is to prove you own your domain name.
   
-||||
-|:-----|:-----|:-----|
 |**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |
 |**CNAME** <br/> **(Suite)** <br/> |Used by Office 365 to direct authentication to the correct identity platform. [More information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Note:** This CNAME only applies to Office 365 operated by 21Vianet. [More information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias:** msoid  <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Domain verification)** <br/> |Used by Office 365 to verify only that you own your domain. It doesn't affect anything else.  <br/> |**Host:** @ (or, for some DNS hosting providers, your domain name)  <br/> **TXT Value:** _A text string provided by_ Office 365  <br/> The Office 365 **domain setup wizard** provides the values that you use to create this record.  <br/> |
@@ -61,8 +65,6 @@ Do you just want to switch a few email addresses to Office 365? You can [Pilot O
 
 Email customers who are using Exchange Federation will also need the additional CNAME and TXT record listed at the bottom of the table.
   
-||||
-|:-----|:-----|:-----|
 |**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |Helps Outlook clients to easily connect to the Exchange Online service by using the Autodiscover service. Autodiscover automatically finds the correct Exchange Server host and configures Outlook for users.  <br/> |**Alias:** Autodiscover  <br/> **Target:** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |Sends incoming mail for your domain to the Exchange Online service in Office 365.  <br/> [!NOTE] Once email is flowing to Exchange Online, you should remove the MX records that are pointing to your old system.   |**Domain:** For example, contoso.com  <br/> **Target email server:**\<MX token\>.mail.protection.outlook.com  <br/> **Preference/Priority:** Lower than any other MX records (this ensures mail is delivered to Exchange Online) - for example 1 or 'low'  <br/>  Find your \<MX token\> by following these steps:  <br/>  Sign in to Office 365, go to Office 365 admin \> Domains.  <br/>  In the Action column for your domain, choose Fix issues.  <br/>  In the MX records section, choose What do I fix?  <br/>  Follow the directions on this page to update your MX record.  <br/> [What is MX priority?](../admin/setup/domains-faq.yml) <br/> |
@@ -79,8 +81,6 @@ There are specific steps to take when you use  [Office 365 URLs and IP address r
 > [!NOTE]
 > These DNS records also apply to Teams, especially in a hybrid Teams and Skype for Business scenario, where certain federation issues could arise.
   
-||||
-|:-----|:-----|:-----|
 |**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |
 |**SRV** <br/> **(Skype for Business Online)** <br/> |Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation. Read more about [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |**Service:** sipfederationtls  <br/> **Protocol:** TCP  <br/> **Priority:** 100  <br/> **Weight:** 1  <br/> **Port:** 5061  <br/> **Target:** sipfed.online.lync.com  <br/> **Note:** If the firewall or proxy server blocks SRV lookups on an external DNS, you should add this record to the internal DNS record.   |
 |**SRV** <br/> **(Skype for Business Online)** <br/> |Used by Skype for Business to coordinate the flow of information between Lync clients.  <br/> |**Service:** sip  <br/> **Protocol:** TLS  <br/> **Priority:** 100  <br/> **Weight:** 1  <br/> **Port:** 443  <br/> **Target:** sipdir.online.lync.com  <br/> |
@@ -90,8 +90,6 @@ There are specific steps to take when you use  [Office 365 URLs and IP address r
 ## External DNS records required for Office 365 Single Sign-On
 <a name="BKMK_ReqdCore"> </a>
 
-||||
-|:-----|:-----|:-----|
 |**DNS record** <br/> |**Purpose** <br/> |**Value to use** <br/> |
 |**Host (A)** <br/> |Used for single sign-on (SSO). It provides the endpoint for your off-premises users (and on-premises users, if you like) to connect to your Active Directory Federation Services (AD FS) federation server proxies or load-balanced virtual IP (VIP).  <br/> |**Target:** For example, sts.contoso.com  <br/> |
 
