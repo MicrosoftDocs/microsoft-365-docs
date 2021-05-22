@@ -110,10 +110,10 @@ Here's a sample of the level of detail required. In this case Exchange Hybrid wo
 |**Will this on-premises endpoint be used for by other (non-Office 365) Microsoft services** <br/> |No  <br/> |
 |**Will this on-premises endpoint be used by users/systems on the Internet** <br/> |Yes  <br/> |
 |**Internal systems published through public endpoints** <br/> |Exchange Server client access role (on-premises) 192.168.101, 192.168.102, 192.168.103  <br/> |
-|**IP advertisement of the public endpoint** <br/> |**To Internet**: 5.5.0.0/16  <br/> **To ExpressRoute**: 5.5.5.0/24  <br/> |
-|**Security/Perimeter Controls** <br/> |**Internet path**: DeviceID_002  <br/> **ExpressRoute path**: DeviceID_003  <br/> |
-|**High Availability** <br/> |Active/Active across 2 geo-redundant  <br/> ExpressRoute circuits - Chicago and Dallas  <br/> |
-|**Path symmetry control** <br/> |**Method**: Source NAT  <br/> **Internet path**: Source NAT inbound connections to 192.168.5.5  <br/> |**ExpressRoute path**: Source NAT connections to 192.168.1.0 (Chicago) and 192.168.2.0 (Dallas)  <br/> |
+|**IP advertisement of the public endpoint** <br/> |**To Internet**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
+|**Security/Perimeter Controls** <br/> |**Internet path**: DeviceID_002  **ExpressRoute path**: DeviceID_003  <br/> |
+|**High Availability** <br/> |Active/Active across 2 geo-redundant / ExpressRoute circuits - Chicago and Dallas  <br/> |
+|**Path symmetry control** <br/> |**Method**: Source NAT **Internet path**: Source NAT inbound connections to 192.168.5.5 **ExpressRoute path**: Source NAT connections to 192.168.1.0 (Chicago) and 192.168.2.0 (Dallas)  <br/> |
 
 Here's a sample of a service that is outbound only:
 
