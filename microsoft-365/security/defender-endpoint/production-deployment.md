@@ -77,36 +77,9 @@ To gain access into which licenses are provisioned to your company, and to check
 
 
 ## Tenant Configuration
+Onboarding to Microsoft Defender for Endpoint is simple. From the navigation menu, select any item under the Endpoints section, or and Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
-When accessing Microsoft Defender Security Center for the first time, a wizard that will guide you through some initial steps. At the end of the setup wizard, there will be a dedicated cloud instance of Defender for Endpoint created. The easiest method is to perform these steps from a Windows 10 client device.
-
-1. From a web browser, navigate to <https://securitycenter.windows.com>.
-
-    ![Image of Set up your permissions for Microsoft Defender for Endpoint](images/atp-setup-permissions-wdatp-portal.png)
-
-2. If going through a TRIAL license, go to the link (<https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x>)
-
-    Once the authorization step is completed, the **Welcome** screen will be displayed.
-3. Go through the authorization steps.
-
-    ![Image of Welcome screen for portal set up](images/welcome1.png)
-
-4. Set up preferences.
-
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation. 
-
-    **Data retention** - The default is six months.
-
-    **Enable preview features** - The default is on, can be changed later.
-
-    ![Image of geographic location in set up](images/setup-preferences.png)
-
-5. Select **Next**.
-
-     ![Image of final preference set up](images/setup-preferences2.png)
-
-6. Select **Continue**.
-
+From a web browser, navigate to <https://security.microsoft.com>.
 
 ## Network configuration
 If the organization doesn't require the endpoints to use a Proxy to access the
