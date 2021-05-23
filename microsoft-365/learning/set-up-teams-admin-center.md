@@ -24,6 +24,28 @@ description: "Learn how to configure Microsoft Viva Learning (Preview) in the Te
 
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
 
+1. For Public Preview, you must first set the Update policy. For more details, see the Teams site [Microsoft Teams Public Preview](https://docs.microsoft.com/en-us/MicrosoftTeams/public-preview-doc-updates).
+
+    1. Sign in to the Teams admin center.
+
+    2. Select **Teams** > **Update policies**.
+
+    3. Select **Add**. 
+
+    4. Name the update policy, add a policy, and turn on **Show preview features**.
+
+2. The admin must notify users of the policy update so that they move their build into Public Preview for Teams. 
+
+    1. User must select their profile image --> About --> Public Preview.
+   
+        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+    
+    2. User must accept terms of Public Preview.
+
+        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+ 
+3. For organizations that have restrictive policies and need to enable Viva Learning, follow the process in the next section.
+
 ## Manage settings for Viva Learning (Preview)
 
 You must be an administrator in the Teams admin center to perform these tasks.
