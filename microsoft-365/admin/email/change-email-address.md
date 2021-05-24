@@ -86,4 +86,6 @@ You'll be guided to get everything set up correctly with your domain in Microsof
   
 ## Related content
 
-[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
+[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
+[Manage domains](../get-help-with-domains/index.yml) (link page)\
+[Domains FAQ](../setup/domains-faq.yml) (article)

@@ -61,4 +61,4 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 
 [Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)\
 [Email collaboration](../email/email-collaboration.md) (article)\
-[Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md)
+[Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md) (article)
