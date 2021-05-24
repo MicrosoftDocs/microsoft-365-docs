@@ -37,7 +37,7 @@ Your organization needs a way to identify and classify all contract documents fr
 ## Steps to create and train your model
 
 > [!NOTE]
-> For these steps, you can use the example files in the [Microsoft SharePoint Syntex Samples repository](https://github.com/pnp/syntex-samples). The samples in this repository contain both the document understanding model files and the files used to train the model.
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
 
 ### Create a Contract model
 

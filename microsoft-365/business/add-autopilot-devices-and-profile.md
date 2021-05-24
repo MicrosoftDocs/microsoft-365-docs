@@ -89,3 +89,8 @@ If you haven't created device groups or profiles yet, the best way to get starte
     Choose **Next**.
     
 6. **You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. The settings will be in effect when the device users sign in next. Choose **Close**.
+
+## Related content
+
+[About AutoPilot Profile settings](autopilot-profile-settings.md) (article)\
+[Options for protecting your devices and app data](../admin/devices/choose-device-security.md) (article)
