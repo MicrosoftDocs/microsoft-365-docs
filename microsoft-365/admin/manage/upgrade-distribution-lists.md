@@ -185,3 +185,9 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 ### What happens to the DL if the upgrade from EAC fails?
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
+
+## Related content
+
+[Compare groups](../create-groups/compare-groups.md) (article)\
+[Explaining Microsoft 365 Groups to your users](../create-groups/explain-groups-knowledge-worker.md) (article)\
+[Add or remove members from Microsoft 365 groups using the admin center](../create-groups/add-or-remove-members-from-groups.md)
