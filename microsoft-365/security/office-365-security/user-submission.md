@@ -35,7 +35,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
 
-- Third-party reporting tools (see below)
+- [Third-party reporting tools](#third-party-reporting-tools)
 
 Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
@@ -136,17 +136,17 @@ the following settings:
 
        When you're finished, click **Confirm**.
 
-##Third-party reporting tools
+## Third-party reporting tools
 
-You can also configure third-party message reporting tools to forward messages to the mailbox that you specify. The only requirement is that the message is sent as an attachment to the custom mailbox.
+You can configure third-party message reporting tools to send reported messages to the custom mailbox. The only requirement is that the original message is included as an attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
-Unless the formatting of the message sent is changed, the message will be considered to be a phish submission and Reported as will be shown as Phishing.
+The message formatting requirements are described in the next section.
 
 ## Message submission format
 
-Messages sent to custom mailboxes need to follow a specific submission mail format if you want to take advantage of the different subtypes like Junk and Not junk. Otherwise, messages submitted as an attachment to the custom mailbox without this formatting will be considered to be a phish submission.
+To correctly identify the original attached messages, messages that are sent to the custom mailbox require specific formatting. If the messages don't use this format, the original attached messages are always identified as phishing submissions.
 
-The Subject (Envelope Title) of the submission should be in this format:
+For correct identification of the original attached messages, messages that are sent to the custom mailbox need to use the following syntax for the Subject (Envelope Title):
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -156,7 +156,7 @@ where SafetyAPIAction is one of the following integer values:
 - 2: Not junk
 - 3: Phishing
 
-In the following example:
+This example uses the following values:
 
 - The message is being reported as phishing.
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
@@ -166,4 +166,4 @@ In the following example:
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-Messages that do not follow this format will not display properly in the Submissions portal.
+Messages that don't follow this format will not display properly in the Submissions portal.
