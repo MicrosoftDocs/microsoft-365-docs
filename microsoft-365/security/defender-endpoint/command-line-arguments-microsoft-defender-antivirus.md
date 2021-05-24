@@ -69,18 +69,17 @@ The following table lists common errors that can occur while using the MpCmdRun 
 |Error message | Possible reason |
 |:----|:----|
 | **ValidateMapsConnection failed (800106BA)** or **0x800106BA** | The Microsoft Defender Antivirus service is disabled. Enable the service and try again. If you need help re-enabling Microsoft Defender Antivirus, see [Reinstall/enable Microsoft Defender Antivirus on your endpoints](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> 	**TIP**  In Windows 10 1909 or older, and Windows Server 2019 or older, the service was formerly called *Windows Defender Antivirus*. |
-| `0x80070667` | You're running the `-ValidateMapsConnection` command from a computer that is Windows 10 version 1607 or older, or Windows Server 2016 or older. Run the command from a machine that is Windows 10 version 1703 or newer, or Windows Server 2019 or newer.|
-| `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | The tool needs to be run from either: `%ProgramFiles%\Windows Defender` or `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (where `2012.4-0` might differ since platform updates are monthly except for March)|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Not enough privileges. Use the command prompt (cmd.exe) as an administrator.|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80004005 httpcode=450)` | Possible network-related issues, like name resolution problems|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015` | The firewall is blocking the connection or conducting SSL inspection. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | The firewall is blocking the connection or conducting SSL inspection. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | The firewall is blocking the connection or conducting SSL inspection. |
+| **0x80070667** | You're running the `-ValidateMapsConnection` command from a computer that is Windows 10 version 1607 or older, or Windows Server 2016 or older. Run the command from a machine that is Windows 10 version 1703 or newer, or Windows Server 2019 or newer.|
+| **MpCmdRun is not recognized as an internal or external command, operable program or batch file.** | The tool must be run from either `%ProgramFiles%\Windows Defender` or `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (where `2012.4-0` might differ since platform updates are monthly except for March)|
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)** | The command was attempted using insufficient privileges. Use the command prompt (cmd.exe) as an administrator.|
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)** | The firewall is blocking the connection or conducting SSL inspection. |
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=80004005 httpcode=450)** | Possible network-related issues, like name resolution problems|
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015** | The firewall is blocking the connection or conducting SSL inspection. |
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D** | The firewall is blocking the connection or conducting SSL inspection. |
+| **ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)** | The firewall is blocking the connection or conducting SSL inspection. |
 
 ## See also
 
 - [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
-- [Manage Microsoft Defender Antivirus in your business](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
