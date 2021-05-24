@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises."
+description: "Users with valid work or school accounts can get Cortana in Microsoft 365 experiences that meet Office 365 enterprise-level security promises."
 ---
 
 # Cortana in Microsoft 365
@@ -178,3 +178,10 @@ Turn off Cortana access to your organization's Microsoft hosted data
 3. Select **Save changes**.
 
 For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+
+
+## Related content
+
+[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)\
+[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
+[What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)

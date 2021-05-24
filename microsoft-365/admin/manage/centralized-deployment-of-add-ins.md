@@ -38,7 +38,7 @@ Centralized Deployment supports three desktop platforms Windows, Mac and Online 
 
 It can take up to 24 hours for an add-in to show up for client for all users.
   
-## Requirements
+## Before you begin
 
 Centralized deployment of add-ins requires that the users are using Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
@@ -155,11 +155,8 @@ If you or your users encounter problems loading the add-in while using Office ap
 
 ## Related content
 
-[Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)
-
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)
-
-[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)
-
+[Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)\
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)\
 [Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)
  
