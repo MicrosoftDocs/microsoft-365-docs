@@ -2,7 +2,7 @@
 title: "Working with assessment templates in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: jmgriffee
+ms.author: v-jgriffee
 author: jmgriffee
 manager: laurawi
 audience: Admin
