@@ -31,7 +31,9 @@ Alerts originating from Defender for Identity can now trigger the [Microsoft 365
 
 ## Review security alerts
 
-To access the Defender for Identity alerts in the Microsoft 365 Defender portal, go to **Incidents & alerts** and then to **Alerts**.
+Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.  
+
+In the [Microsoft 365 Defender portal](https://security.microsoft.com/), go to **Incidents & alerts** and then to **Alerts**.
 
 ![Go to Incidents and Alerts, then Alerts](../../media/defender-identity/incidents-alerts.png)
 
@@ -39,17 +41,17 @@ To see alerts from Defender for Identity, on the top-right select **Filter**, an
 
 ![Filter for Defender for Identity events](../../media/defender-identity/filter-defender-for-identity.png)
 
-The alerts displayed can be sorted by the following columns: **Alert name**, **Tags**, **Severity**, **Investigation state**, **Status**, **Category**, **Detection source**, **Impacted assets**, **First activity**, and **Last activity**.
+The alerts are displayed with information in the following columns: **Alert name**, **Tags**, **Severity**, **Investigation state**, **Status**, **Category**, **Detection source**, **Impacted assets**, **First activity**, and **Last activity**.
 
 ![Defender for Identity events](../../media/defender-identity/filtered-alerts.png)
 
 ## Manage alerts
 
-If you select one of the alerts, you'll go to the page with details about the alert. In the left pane, you'll see a summary of **What happened**:
+If you select the **Alert name** for one of the alerts, you'll go to the page with details about the alert. In the left pane, you'll see a summary of **What happened**:
 
 ![What happened in alert](../../media/defender-identity/what-happened.png)
 
-Above the **What happened** box are buttons for the **Accounts**, **Destination Host** and **Source Host** of the alert. Select any of them to get more details about the accounts or hosts involved.
+Above the **What happened** box are buttons for the details such as the **Accounts**, **Destination Host** and **Source Host** of the alert. Select any of them to get more details about the accounts or hosts involved.
 
 On the right pane, you'll see the **Alert details**. Here you can see more details and perform several tasks:
 
