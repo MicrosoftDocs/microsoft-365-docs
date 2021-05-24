@@ -28,7 +28,7 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-If you were using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Configuration Manager](/mem/configmgr/core/understand/introduction) to manage endpoints on your network, you can now use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). For example, you can use Endpoint Manager to configure Microsoft Defender Antivirus scans.
+You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to configure Microsoft Defender Antivirus scans. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) are now part of Endpoint Manager.  
 
 ## Configure Microsoft Defender Antivirus scans in Endpoint Manager
 
@@ -55,5 +55,5 @@ If you were using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or
 
 ## Related articles
 
-- [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Reference articles for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
