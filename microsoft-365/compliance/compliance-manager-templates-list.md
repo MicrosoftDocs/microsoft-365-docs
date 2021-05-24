@@ -27,7 +27,7 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 [Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
-Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accepting-updates-to-assessments).
+Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 View detailed guidance on [working with templates](compliance-manager-templates.md) to create your assessments.
 
@@ -42,10 +42,10 @@ In Compliance Manager, go to your **Assessment templates** page. You'll see a li
 - **Included templates** are templates included as part of your organization's licensing agreement.
  - **Premium templates** displays additional templates your organization may choose to obtain (refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
 
-Read more about [how to view and manage your templates](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page).
+Read more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 > [!NOTE]
-> See [Template types](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) for more information about included and premium templates and understanding which ones are available for your organization to use.
+> See [Template types](compliance-manager-templates.md#template-availability-and-licensing) for more information about included and premium templates and understanding which ones are available for your organization to use.
 
 ## Included templates
 
