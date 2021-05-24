@@ -16,7 +16,6 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: 
 manager: dansimp
-ms.topic: article
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections

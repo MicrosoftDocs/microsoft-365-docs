@@ -16,7 +16,6 @@ ms.custom: nextgen
 ms.date: 05/17/2021
 ms.reviewer: 
 manager: dansimp
-ms.topic: article
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections

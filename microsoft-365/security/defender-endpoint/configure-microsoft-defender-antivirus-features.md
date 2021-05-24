@@ -16,7 +16,6 @@ ms.custom: nextgen
 ms.date: 11/18/2020
 ms.reviewer: 
 manager: dansimp
-ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus features

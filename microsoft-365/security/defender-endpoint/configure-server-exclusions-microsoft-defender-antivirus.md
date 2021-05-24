@@ -17,7 +17,6 @@ ms.topic: article
 ms.custom: nextgen
 
 ms.date: 02/10/2021
-ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server

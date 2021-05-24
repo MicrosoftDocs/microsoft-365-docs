@@ -15,7 +15,6 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
-ms.topic: article
 ---
 
 # Configure exclusions for files opened by processes
