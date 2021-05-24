@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: "Learn how to add a subscription advisor partner as partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
+description: "Add a partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
 ---
 
 # Add, change, or delete a subscription advisor partner
@@ -37,6 +37,8 @@ description: "Learn how to add a subscription advisor partner as partner of reco
 An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
 
 ::: moniker-end
+
+## Before you begin
 
 ::: moniker range="o365-worldwide"
 
@@ -213,6 +215,7 @@ You will have to ask your reseller partner to follow these instructions: [Remove
   
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md)
+[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md) (article)\
+[Plan your setup of Microsoft 365 for business](../setup/plan-your-setup.md) (article)

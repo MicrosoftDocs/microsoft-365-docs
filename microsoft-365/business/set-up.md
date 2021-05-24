@@ -34,6 +34,8 @@ description: "Discover the setup steps for Microsoft 365 Business Premium, inclu
 
 # Set up Microsoft 365 Business Premium in the setup wizard
 
+## Watch: Overview of Microsoft 365 setup
+
 Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
@@ -126,6 +128,6 @@ To install Office on mobile iOS or Android devices, see [Set up mobile devices f
 
 You can also install Office individually. See [install Office on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) for instructions.
 
-## See also
+## Related content
 
-[Microsoft 365 for business training videos](../business-video/index.yml)
+[Microsoft 365 for business training videos](../business-video/index.yml) (link page)
