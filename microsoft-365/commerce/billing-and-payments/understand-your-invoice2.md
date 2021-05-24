@@ -123,12 +123,8 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 ## Related content
 
-[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)
-
-[Change your billing addresses](change-your-billing-addresses.md) (article)
-
-[Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md) (article)
-
-[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)
-
+[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Change your billing addresses](change-your-billing-addresses.md) (article)\
+[Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md) (article)\
+[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)\
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

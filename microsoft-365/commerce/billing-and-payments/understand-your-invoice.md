@@ -140,21 +140,17 @@ Payment instructions depend on your payment method and are provided at the botto
 
 ### Why don't I see Azure prepayment as a payment method?
 
-Azure prepayment is available as a payment method only for eligible Azure product and services.
-
-## Related content
-
-[Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)
-
-[Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance) (article)
-
-[Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)
-
-[Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview) (article)
-
+Azure prepayment is available as a payment method only for eligible Azure product and services
 
 ## Need help? Contact support
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
 If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
+
+## Related content
+
+[Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
+[Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
+[Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
+[Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview) (article)

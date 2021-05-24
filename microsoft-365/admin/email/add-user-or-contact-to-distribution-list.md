@@ -50,7 +50,6 @@ Learn to [send email as a distribution group in Microsoft 365](../manage/send-em
 
 ## Related content
 
-[Manage clutter for your organization](configure-clutter.md) (article)
-
+[Manage clutter for your organization](configure-clutter.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)
 

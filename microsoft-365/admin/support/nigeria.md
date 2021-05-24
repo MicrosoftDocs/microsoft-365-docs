@@ -21,9 +21,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 01 912 5070
 
-Select option 9
+Press 2 for business
 
-Enter code 7705
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:
