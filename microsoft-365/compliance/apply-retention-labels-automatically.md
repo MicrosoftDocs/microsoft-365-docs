@@ -21,7 +21,7 @@ description: Create retention labels and auto-labeling policies so you can autom
 
 # Automatically apply a retention label to retain or delete content
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records).
@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Now in preview, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Recently released, use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -129,9 +129,9 @@ You can apply retention labels to content automatically when that content contai
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
-![Policy templates with sensitive information types](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Policy templates with sensitive information types](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+To learn more about the sensitivity information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md). Currently, [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the instance count and match accuracy. In the example screenshot shown next, a retention label will be auto-applied only when:
   
@@ -153,7 +153,7 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 ![Query editor](../media/new-retention-query-editor.png)
 
-For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
@@ -161,7 +161,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - New, modified, and existing items will be auto-labeled for SharePoint, OneDrive, and Exchange.
 
-- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
+- For SharePoint, crawled properties and custom properties aren't supported for these KQL queries and you must use only predefined managed properties. However, you can use mappings at the tenant level with the predefined managed properties that are enabled as refiners by default (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09). For more information, see [Overview of crawled and managed properties in SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview), and for instructions, see [Create a new managed property](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
 - If you map a custom property to one of the refiner properties, wait 24 hours before you use it in your KQL query for a retention label.
 
@@ -223,7 +223,7 @@ Note that this final example uses the best practice of always including  operato
 ##### Microsoft Teams meeting recordings
 
 > [!NOTE]
-> The ability to retain and delete Teams meeting recordings is in preview and won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+> The ability to retain and delete Teams meeting recordings won't work before recordings are saved to OneDrive or SharePoint. For more information, see [Use OneDrive for Business and SharePoint Online or Stream for meeting recordings](/MicrosoftTeams/tmr-meeting-recording-change).
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
@@ -260,9 +260,9 @@ When you auto-apply retention labels, it can take up to seven days for the reten
   
 ![Diagram of when auto-apply labels take effect](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following command:
     
@@ -277,6 +277,14 @@ When you edit a retention label or auto-apply policy, and the retention label is
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
+
+### Deleting retention labels
+
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+
+However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
 
 ## Locking the policy to prevent changes
 

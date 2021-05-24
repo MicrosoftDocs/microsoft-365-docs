@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
@@ -27,7 +27,7 @@ To help familiarize you with DLP on-premises features and how they surface in DL
 
 > [!IMPORTANT]
 > These DLP on-premises scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
->- [Overview of data loss prevention](data-loss-prevention-policies.md)
+>- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
@@ -42,7 +42,7 @@ Data from DLP on-premises scanner surfaces in several areas
  
 #### Microsoft 365 Audit log
 
-During the public preview the DLP rule matches are available in Audit log UI, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell.
+During the public preview the DLP rule matches are available in Audit log UI, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell.
 
 #### AIP
 
@@ -75,6 +75,6 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 
 - [Learn about DLP on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Get started with  DLP on-premises scanner (preview)](dlp-on-premises-scanner-get-started.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

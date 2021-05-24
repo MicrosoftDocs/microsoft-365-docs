@@ -24,7 +24,7 @@
     - name: Deploy
       items: 
         - name: Add a domain
-          href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+          href: ../admin/setup/add-domain.md
         - name: Configure endpoints to bypass
           items: 
             - name: Office 365 IP Address and URL Web service
@@ -50,7 +50,7 @@
             - name: Microsoft 365 optimization for China users
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
-              href: https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization
+              href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: ExpressRoute for Office 365
           href: azure-expressroute.md
           items: 
@@ -128,7 +128,7 @@
             - name: Single sign-on
               href: microsoft-365-client-support-single-sign-on.md
             - name: Choose between Basic Mobility Security and Intune
-              href: https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune
+              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: Hybrid modern authentication
           items: 
             - name: Prerequisites for Skype for Business Server and Exchange Server
@@ -149,13 +149,13 @@
                 - name: Upgrade from Office 2007 servers and clients
                   href: upgrade-from-office-2007-servers-and-products.md
                 - name: Office 2007 desktop
-                  href: https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap
+                  href: /DeployOffice/endofsupport/office-2007-end-support-roadmap
                 - name: Exchange 2007
                   href: exchange-2007-end-of-support.md
                 - name: SharePoint 2007
                   href: sharepoint-2007-end-of-support.md
                 - name: Office Communications Server
-                  href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: PerformancePoint Server 2007
                   href: pps-2007-end-of-support.md
                 - name: Project Server 2007
@@ -165,13 +165,13 @@
                 - name: Upgrade from Office 2010 servers and clients
                   href: upgrade-from-office-2010-servers-and-products.md
                 - name: Office 2010 desktop
-                  href: https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap
+                  href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
                 - name: Exchange 2010
                   href: exchange-2010-end-of-support.md
                 - name: SharePoint 2010
                   href: upgrade-from-sharepoint-2010.md
                 - name: Lync Server 2010
-                  href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: Project Server 2010
                   href: project-server-2010-end-of-support.md
         - name: Tenant isolation in Microsoft 365
@@ -180,9 +180,9 @@
             - name: Isolation and Access Control in Azure Active Directory
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: Monitoring and Testing Tenant Boundaries
-              href: microsoft-365-monitoring-and-testing.md
+              href: /compliance/assurance/assurance-monitoring-and-testing
             - name: Resource Limits
-              href: microsoft-365-resource-limits.md
+              href: /compliance/assurance/assurance-resource-limits
             - name: Isolation and Access Control
               href: microsoft-365-isolation-in-microsoft-365.md
             - name: Tenant Isolation in Search
@@ -194,7 +194,7 @@
     - name: Deploy
       items: 
         - name: Add a domain
-          href: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+          href: ../admin/setup/add-domain.md
     - name: Manage
       items: 
         - name: Microsoft 365 service health status
@@ -276,15 +276,15 @@
           items: 
           - name: Overview
             href: ms-cloud-germany-transition.md
+          - name: What will change
+            href: ms-cloud-germany-transition-experience.md
           - name: Opt-in for migration
             href: ms-cloud-germany-migration-opt-in.md
-          - name: What has changed
-            href: ms-cloud-germany-transition-experience.md
-          - name: Pre-work
+          - name: Pre-migration
             href: ms-cloud-germany-transition-add-pre-work.md
-          - name: Migration phases actions and impacts (general)
+          - name: Migration phases actions and impacts
             href: ms-cloud-germany-transition-phases.md
-          - name: Migration phases actions and impacts (advanced)
+          - name: Post-migration
             href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
@@ -294,6 +294,8 @@
               href: ms-cloud-germany-transition-add-devices.md
             - name: AD FS migration steps
               href: ms-cloud-germany-transition-add-adfs.md
+            - name: eDiscovery
+              href: ms-cloud-germany-transition-add-scc.md
 
 - name: Identity
   items: 
@@ -324,7 +326,7 @@
               - name: Overview
                 href: hybrid-solutions.md
               - name: Use Azure Active Directory for SharePoint Server 2016 authentication
-                href: using-azure-ad-for-sharepoint-server-authentication.md
+                href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
               - name: Connect an on-premises network to an Azure virtual network
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
               - name: Deploy a directory synchronization server in Azure IaaS
@@ -390,13 +392,13 @@
             - name: Upgrade from Office 2007 servers and clients
               href: upgrade-from-office-2007-servers-and-products.md
             - name: Office 2007 desktop
-              href: https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap
+              href: /DeployOffice/office-2007-end-support-roadmap
             - name: Exchange 2007
               href: exchange-2007-end-of-support.md
             - name: SharePoint 2007
               href: sharepoint-2007-end-of-support.md
             - name: Office Communications Server
-              href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: PerformancePoint Server 2007
               href: pps-2007-end-of-support.md
             - name: Project Server 2007
@@ -406,13 +408,13 @@
             - name: Upgrade from Office 2010 servers and clients
               href: upgrade-from-office-2010-servers-and-products.md
             - name: Office 2010 desktop
-              href: https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap
+              href: /DeployOffice/office-2010-end-support-roadmap
             - name: Exchange 2010
               href: exchange-2010-end-of-support.md
             - name: SharePoint 2010
               href: upgrade-from-sharepoint-2010.md
             - name: Lync Server 2010
-              href: https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 
@@ -431,13 +433,13 @@
         - name: Get ready
           href: configure-services-and-applications.md
         - name: Exchange Online
-          href: https://docs.microsoft.com/Exchange/exchange-online
+          href: /Exchange/exchange-online
         - name: SharePoint
-          href: https://docs.microsoft.com/sharepoint/sharepoint-online
+          href: /sharepoint/sharepoint-online
         - name: Skype for Business
-          href: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: https://docs.microsoft.com/MicrosoftTeams/Teams-overview
+          href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Activate rights management
@@ -445,21 +447,21 @@
         - name: Configuring release options
           href: https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47
         - name: Train your users
-          href: https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
+          href: /office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
     - name: Manage
       items: 
         - name: How to check service health
           href: view-service-health.md
         - name: Support options
-          href: https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+          href: ../business-video/get-help-support.md
         - name: Exchange Online
-          href: https://docs.microsoft.com/Exchange/exchange-online
+          href: /Exchange/exchange-online
         - name: SharePoint
           href: https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
         - name: Skype for Business
-          href: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide
+          href: https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
@@ -480,18 +482,22 @@
             - name: Tune Skype for Business Online performance
               href: tune-skype-for-business-online-performance.md
             - name: Tune Project Online performance
-              href: https://docs.microsoft.com/ProjectOnline/tune-project-online-performance
+              href: /ProjectOnline/tune-project-online-performance
             - name: Performance troubleshooting plan
               href: performance-troubleshooting-plan.md
 
 - name: Windows 10
-  href: https://docs.microsoft.com/windows/deployment/
+  items:
+    - name: How to check release health
+      href: https://docs.microsoft.com/windows/deployment/update/check-release-health
+    - name: Deploy and update
+      href: /windows/deployment/
 
 - name: Microsoft 365 Apps for enterprise
-  href: https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps
+  href: /deployoffice/deployment-guide-microsoft-365-apps
 
 - name: Surface devices
-  href: https://docs.microsoft.com/surface/deploy
+  href: /surface/deploy
 
 - name: Device management
   items:
@@ -499,7 +505,7 @@
       href: device-management-roadmap-microsoft-365.md
 
 - name: Microsoft Edge
-  href: https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment
+  href: /deployedge/deploy-edge-plan-deployment
 
 - name: Deployment and update channel example configurations
   items:
@@ -582,7 +588,7 @@
         - name: Manage SharePoint Online site groups
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Manage Exchange Online
-      href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
+      href: /powershell/exchange/connect-to-exchange-online-powershell
     - name: Use PowerShell to migrate email to Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items: 
@@ -600,11 +606,11 @@
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
-          href: https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell
+          href: /powershell/exchange/connect-to-exchange-online-powershell
         - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams
-      href: https://docs.microsoft.com/microsoftteams/teams-powershell-install
+      href: /microsoftteams/teams-powershell-install
     - name: Manage Skype for Business Online
       href: manage-skype-for-business-online-with-microsoft-365-powershell.md
       items: 
@@ -696,16 +702,16 @@
   href: ../solutions/index.yml
 
 - name: Enterprise Business Continuity Management (EBCM) with cloud services
-  href: ebcm-understanding-ebcm-with-cloud-services.md
+  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items: 
     - name: Customer and cloud partner EBCM responsibilities
-      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+      href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
     - name: Microsoft 365 cloud services resiliency
-      href: ebcm-m365-service-resiliency.md
+      href: /compliance/assurance/assurance-m365-service-resiliency
     - name: Developing your continuity plan
-      href: ebcm-developing-your-ebcm-plan.md
+      href: /compliance/assurance/assurance-developing-your-ebcm-plan
     - name: Service incident mitigation scenarios
-      href: ebcm-microsoft-365-mitigations.md
+      href: /compliance/assurance/assurance-microsoft-365-mitigations
 
 - name: Microsoft 365 for Business
   href: ../admin/index.yml

@@ -15,14 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: Learn how to use the Conversation Reconstruction feature in Advanced eDiscovery to reconstruct, review, and export threaded conversations.
+description: "Learn about the conversation reconstruction feature in Advanced eDiscovery (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Review conversations in Advanced eDiscovery 
+# Conversation threading in Advanced eDiscovery
 
-Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration. 
+Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 
 The Conversation Reconstruction feature in Advanced eDiscovery is designed to help you identify contextual content and produce distinct conversation views. This capability allows you to efficiently and rapidly review complete instant message conversations (also called *threaded conversations*) that are generated in platforms like Microsoft Teams.
 
@@ -46,53 +45,35 @@ Here are few definitions to help you get start using Conversation Reconstruction
 
    ![Microsoft Teams Channel Conversation](../media/threadedchat.png)
 
-   In other apps (such as 1xN chat messages in Teams), there is not a formal reply chain and instead messages appear as a "flat river of messages" within a single thread. In these types apps, conversations are inferred from a group of messages that occur within a certain time. This "soft-grouping" of messages (as opposed to a reply chain) represent the "back and forth" conversation about a specific topic of interest. 
+   In other apps (such as 1xN chat messages in Teams), there is not a formal reply chain and instead messages appear as a "flat river of messages" within a single thread. In these types apps, conversations are inferred from a group of messages that occur within a certain time. This "soft-grouping" of messages (as opposed to a reply chain) represent the "back and forth" conversation about a specific topic of interest.
 
-## Step 1: Run a search
+## Step 1: Create a draft collection
 
-After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Searches** tab in the Advanced eDiscovery case, you can create a search by clicking **New search** and following the wizard. For information about how you can create a search, build a search query, and view the search results, see [Collect data for a case](create-search-to-collect-data.md).
+After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the Advanced eDiscovery case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a draft collection](create-draft-collection.md).
 
-## Step 2: Create a conversation review set
+## Step 2: Commit a draft collection to a review set
 
-In a review set, you can search, tag, annotate, and redact documents, email messages, and chat conversations. In Advanced eDiscovery, you can customize your review of conversations, based in individual messages or threaded conversations. This is determined by the type of review set that you add the results of the search created in Step 1 to. There are two different types of review sets: 
-  
-  - **Standard review sets:** Messages in conversations are processed and displayed as individual items. 
-  
-  -  **Conversation review sets:** Messages in conversations are processed individually but displayed in a conversation view. In a conversation review set, you can annotate, tag, and redact messages in a threaded conversation view. 
+After you have reviewed and finalized the search query in a collection, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
-For more information about how to review and manage content in a review set, see [Manage review sets](managing-review-sets.md). 
-
-## Step 3: Enable conversation retrieval options
-
-After you have reviewed and finalized your search query, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Add search results to a review set](add-data-to-review-set.md). 
-
-When you add data from conversations to a review set, you can use the conversation retrieval options to expand your search and include contextual messages. After you set the conversation retrieval options, the following things can happen:
+When you add items from conversations to a review set, you can use the threaded conversations option to collect contextual messages from conversations that contain items that match the search criteria of the collection. After you select the thread conversations option, the following things can happen:
 
   ![Conversation Retrieval](../media/messagesandconversations.png)
   
-1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*. 
+1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*.
   
-2. When you add the data into a review set and enable the conversation retrieval options, Advanced eDiscovery will go back and collect other items in *CRC1*. 
+2. When you add the data into a review set and enable the conversation retrieval options, Advanced eDiscovery will go back and collect other items in *CRC1*.
   
-3. After the items have been added to the review set, you can review all the individual messages from *CRC1*. 
+3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
-To enable conversation retrieval:
+To enabled the threaded conversations option, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
   
-1. On the **Searches** tab in the Advanced eDiscovery case, select a search, and then click **Add to review set** on the flyout page.
-  
-2. Select an existing review set or create a review set. You can configure retrieval options when adding search results to a standard or a conversation review set.
-  
-3. Under **Collection options**, configure the conversation retrieval options for the content sources that you want to expand in your search, and then click **Add** to start the process.  
-  
-4. After the **Add to review set** job on the **Jobs** tab has finished, you can start reviewing the conversations.
+## Step 3: Review and export threaded conversations
 
-## Step 4: Review and export conversations in a review set
-
-After the content has been processed and added to the review set, you can start reviewing the data in the review set. The review capabilities are different depending on whether the content was added to a standard review set or a conversation review set. 
+After the content has been processed and added to the review set, you can start reviewing the data in the review set. The review capabilities are different depending on whether the content was added to a standard review set or a conversation review set.
 
 ### Reviewing conversations in a standard review set
 
-In a standard review set, messages are processed and displayed as individual items, similar to how they're stored in a mailbox folder. In this workflow, each message is processed as a separate item. As a result, the threaded summary and export options aren't available in a standard review set. 
+In a standard review set, messages are processed and displayed as individual items, similar to how they're stored in a mailbox folder. In this workflow, each message is processed as a separate item. As a result, the threaded summary and export options aren't available in a standard review set.
 
   ![Standard review set](../media/standardrs.PNG)
 
@@ -108,7 +89,7 @@ The following sections describe reviewing and exporting conversations in a conve
 
 In a conversation review set, you can use the following options to facilitate the review process.
 
-- **Group by conversation:** Groups messages within the same conversation together to help users simplify and expedite their review process. 
+- **Group by conversation:** Groups messages within the same conversation together to help users simplify and expedite their review process.
 
 - **Summary view:** Displays the threaded conversation. In this view, you can see the entire conversation and also access the metadata for each individual message.  
   
@@ -116,7 +97,7 @@ In a conversation review set, you can use the following options to facilitate th
    
    - Download individual messages
 
-- **Text view:** Provides the extracted text for the entire conversation. 
+- **Text view:** Provides the extracted text for the entire conversation.
 
 - **Annotate view:** Lets you markup a threaded view of the conversation. All messages in the conversation share the same annotated document.
 
@@ -140,14 +121,14 @@ b. Conversation options
   
    - **Conversation files:** When you export conversation files, the annotated view is converted to a PDF file and downloaded to the export folder. Messages in one conversation file point to the PDF version of the same conversation file.  
   
-   - **Individual chat messages:** When you export individual messages, each unique message in the conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files. 
+   - **Individual chat messages:** When you export individual messages, each unique message in the conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files.
 
      >[!NOTE]
-     > If you applied annotations to the conversation file, these annotations won't be transferred to the individual messages. 
+     > If you applied annotations to the conversation file, these annotations won't be transferred to the individual messages.
 
 c. Other options
 
-   - **Generate text files for all exported content:** Generates a text file for each conversation exported from the review set. 
+   - **Generate text files for all exported content:** Generates a text file for each conversation exported from the review set.
 
    - **Replace exported content with redacted PDFs:** If redacted conversation files are generated during the review process, then these files are available during export. You can decided whether to export only the native files (by not selecting this option) or to replace the native files with the redacted versions of the native files (by selecting this option), which are exported as PDF files.
 

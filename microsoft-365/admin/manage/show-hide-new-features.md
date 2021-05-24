@@ -63,7 +63,7 @@ New features appear on the page based on the following schedule:
 |**Semi-Annual Enterprise (Preview)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features|
 |**Semi-Annual Enterprise** <br/> |Jan 1 and July 1 <br/> | 2 weeks before the major release that brings new features<br/> |
 
-For more information about when new versions are released to each update channel, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+For more information about when new versions are released to each update channel, see [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Add the "What's new in Office" card to the admin center home page
 

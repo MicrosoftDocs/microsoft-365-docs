@@ -22,7 +22,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Learn how to create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without having to type each recipient's name.
+description: "Create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without typing each recipient's name."
 ---
 
 # Create distribution groups in the Microsoft 365 admin center
@@ -65,8 +65,12 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 6. To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).
     
-Check out how to use group in Outlook 2016 and Outlook on the web in the [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) topic. 
+Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
-Check out [Distribution group issues](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues. 
-  
+Check out [Distribution group issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues. 
 
+## Related content
+
+[User email settings](../email/office-365-user-email-settings.md) (article)\
+[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)\
+[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)

@@ -37,13 +37,13 @@ You can use the Exchange Online auto-expanding archiving feature to enable unlim
 
 - Auto-expanding archiving prevents you from recovering or restoring an [inactive mailbox](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). That means if you enable auto-expanding archiving for a mailbox and the mailbox is made inactive at a later date, you won't be able to [recover the inactive mailbox](recover-an-inactive-mailbox.md) (by converting it to an active mailbox) or [restore it](restore-an-inactive-mailbox.md) (by merging the contents to an existing mailbox). If auto-expanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft 365 compliance center to export the data from the mailbox and import to another mailbox. For more information, see the "Inactive mailboxes and auto-expanding archives" section in [Overview of inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
-- You can't use the Exchange admin center or the Security & Compliance Center to enable auto-expanding archiving. You have to use Exchange Online PowerShell. To connect to your Exchange Online organization using remote PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- You can't use the Exchange admin center or the Security & Compliance Center to enable auto-expanding archiving. You have to use Exchange Online PowerShell. To connect to your Exchange Online organization using remote PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Enable auto-expanding archiving for your entire organization
 
 You can enable auto-expanding archiving for your entire organization. After you turn it on, auto-expanding archiving will be enabled for existing user mailboxes and for new user mailboxes that are created. When you create user mailboxes, be sure to enable the user's main archive mailbox so the auto-expanding archiving feature works for the new user mailbox.
   
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for your entire organization.
 
@@ -63,7 +63,7 @@ When you enable auto-expanding archiving for a specific user and the user's mail
 
 This additional space is added to prevent any storage issues that may occur before the auto-expanding archive is provisioned. Additional storage space  *is not*  added when you enable auto-expanding archiving for your entire organization, as described in the previous section.
   
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for a specific user. As previously explained, the user's archive mailbox (main archive) must be enabled before you can turn on auto-expanding archiving for that user.
 

@@ -31,7 +31,7 @@ Usually the command that's provided works when you run it. However, there may be
 
 ## The supported version of AzCopy isn't installed on the local computer
 
-At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in Advanced eDiscovery. The AzCopy command that's displayed on the **Upload files** page shown in the previous screenshot returns an error if you're not using AzCopy v8.1. To install this version, see [Transfer data with the AzCopy v8.1 on Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
+At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in Advanced eDiscovery. The AzCopy command that's displayed on the **Upload files** page shown in the previous screenshot returns an error if you're not using AzCopy v8.1. To install this version, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy).
 
 ## AzCopy isn't installed on the local computer or it's not installed in the default location
 
@@ -39,7 +39,7 @@ If AzCopy isn't installed or it's installed in a location other than the default
 
 > The system cannot find the path specified.
 
-If AzCopy isn't installed on the local computer, you can find installation information in [Transfer data with the AzCopy v8.1 on Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Be sure to install it in the default location.
+If AzCopy isn't installed on the local computer, you can find installation information in [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). Be sure to install it in the default location.
 
 If AzCopy is installed, but it's installed in a location different than the default location, you can copy the command, paste it to a text file, and then change the path to the location where AzCopy is installed. For example, if Azcopy is located in `%ProgramFiles%`, then you can change the first part of the command from `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` to `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy`. After you make this change, copy it from the text file and then run it a Command Prompt.
 

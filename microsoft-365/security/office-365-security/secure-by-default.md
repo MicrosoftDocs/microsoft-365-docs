@@ -27,8 +27,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 "Secure by default" is a term used to define the default settings that are most secure as possible.
 
@@ -66,11 +66,14 @@ Our data indicates that a user is 30 times more likely to click a malicious link
 
 We also determined that the allowed sender and allowed domain lists in anti-spam policies and Safe Senders in Outlook were too broad and were causing more harm than good.
 
-To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised. 
+To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised.
 
 ## Exceptions
 
-The only override that allows high confidence phishing message to bypass filtering is Exchange mail flow rules (also known as transport rules). To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+> [!NOTE]
+> In July 2021, secure by default will be extended to Exchange mail flow rules (also known as transport rules). If you use mail flow rules to allow third-party phishing simulations or unfiltered delivery to security operation mailboxes, you eventually need to eliminate these rules and switch to using the [advanced delivery policy](configure-advanced-delivery.md) _when the feature is available to you_.
+
+The only override that allows high confidence phishing message to bypass filtering is mail flow rules. To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 You should only consider using overrides in the following scenarios:
 

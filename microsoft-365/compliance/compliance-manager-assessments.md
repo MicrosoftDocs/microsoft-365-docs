@@ -21,7 +21,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
 
 > [!IMPORTANT]
-> The assessments available to your organization depend on your licensing agreement. [Review the details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> The assessments available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Introduction to assessments
 
@@ -48,7 +48,7 @@ There are three ways you can set up assessments:
 3. [Create your own custom assessment](#create-your-own-custom-assessment).
 
 > [!NOTE]
-> Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Use a pre-built assessment**
 

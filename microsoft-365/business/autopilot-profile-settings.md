@@ -2,8 +2,8 @@
 title: "About AutoPilot Profile settings"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -43,7 +43,7 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 |**Setting**|**Description**|
 |:-----|:-----|
 |Skip Cortana, OneDrive, and OEM registration  <br/> |Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as the user is a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business Premium.  <br/> |
-|Sign in experience with your company brand  <br/> |If your company has a [Add your company branding to Microsoft 365 Sign In page](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), the device user will get that experience when signing in.  <br/> |
+|Sign in experience with your company brand  <br/> |If your company has a [Add your company branding to Microsoft 365 Sign In page](../admin/setup/customize-sign-in-page.md), the device user will get that experience when signing in.  <br/> |
 |MDM auto-enrollment with configured AAD accounts.  <br/> |The user identity will be managed by Azure Active Directory, and users will sign in to Windows and Microsoft 365 with their Microsoft 365 Business Premium credentials.  <br/> |
    
  **Optional settings:**
@@ -52,4 +52,3 @@ You can use AutoPilot profiles to control how Windows is installed on user devic
 |:-----|:-----|
 |Skip privacy settings (Off by default)  <br/> |If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.  <br/> |
 |Don't allow the user to become the local admin  <br/> |If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.<br/> |
-   

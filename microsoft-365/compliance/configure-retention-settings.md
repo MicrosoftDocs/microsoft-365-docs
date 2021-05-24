@@ -99,7 +99,7 @@ For detailed information about which items are included and excluded when you co
 
 Note that even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Microsoft 365 Groups** location.
 
-The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level. This location is available only for retention policies and not for retention label policies.
+The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
@@ -117,9 +117,16 @@ To verify the syntax for your tenant and identify URLs for users, see [Get a lis
 
 ### Configuration information for Microsoft 365 Groups
 
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a policy for retention that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. Although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you'll see an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A policy for retention that's applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
+By default, a retention policy applied to a Microsoft 365 group includes the group mailbox and SharePoint teams site. Files stored in the SharePoint teams site are covered with this location, but not Teams chats or Teams channel messages that have their own retention policy locations.
+
+To change the default because you want the retention policy to apply to either just the Microsoft 365 mailboxes, or just the connected SharePoint teams sites, use the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet with the *Applications* parameter with one of the following values:
+
+- `Group:Exchange` for just Microsoft 365 mailboxes that are connected to the group.
+- `Group:SharePoint` for just SharePoint sites that are connected to the group.
+
+To return to the default value of both the mailbox and SharePoint site for the selected Microsoft 365 groups, specify `Group:Exchange,SharePoint`.
 
 ### Configuration information for Skype for Business
 

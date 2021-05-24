@@ -44,11 +44,11 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
   - Outlook on the web
   - Outlook 2013 SP1 or later
-  - Outlook 2016 for Mac
+  - Outlook 2016 for Mac or later
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- The Report Phishing add-in is not available for mailboxes in on-premises Exchange organizations.
+- The Report Phishing add-in is not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
 
 - You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
 
@@ -145,4 +145,4 @@ To review messages that users report to Microsoft, you have these options:
 
 - Use the Admin Submissions portal. For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+- Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

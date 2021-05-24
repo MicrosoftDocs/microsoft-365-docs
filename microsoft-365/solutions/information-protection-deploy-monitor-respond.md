@@ -67,11 +67,11 @@ See these articles for setting up auditing, advanced auditing, and alert policie
 
 ## Data subject requests for the GDPR and CCPA
 
-See [Data Subject Requests for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md) for information on responding to a DSR in Microsoft 365.
+See [Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Office365) for information on responding to a DSR in Microsoft 365.
 
 ## Manage deleted users in Microsoft Stream
 
-For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure AD), if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video. See [Manage deleted users from Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) to remove it.
+For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure AD), if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video. See [Manage deleted users from Microsoft Stream](/stream/managing-deleted-users) to remove it.
 
 ## Insider risk management as an investigative tool
 

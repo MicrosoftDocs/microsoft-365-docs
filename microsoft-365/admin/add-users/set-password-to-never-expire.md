@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: "Learn how to set some individual user passwords to never expire, using Windows PowerShell."
+description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Windows PowerShell."
 ---
 # Set an individual user's password to never expire
 
@@ -29,20 +29,20 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../admin-overview/admin-overview.md). 
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md). 
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
-A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users. You can also use [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
+A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users. You can also use [AzureAD](/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 
 This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
 > [!NOTE]
-> Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire. For more information about directory synchronization, see [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
+> Only passwords for user accounts that are not synchronized through directory synchronization can be configured to not expire. For more information about directory synchronization, see [Connect AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## How to check the expiration policy for a password
 
-For more information about the Get-AzureADUser command in the AzureAD module, see the reference article [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+For more information about the Get-AzureADUser command in the AzureAD module, see the reference article [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
 Run one of the following commands:
 
@@ -122,6 +122,6 @@ Run one of the following commands:
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
-
-[Reset passwords](../add-users/reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)

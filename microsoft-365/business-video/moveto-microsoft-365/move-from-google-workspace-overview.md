@@ -2,8 +2,8 @@
 title: "Switch from Google Workspace to Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article

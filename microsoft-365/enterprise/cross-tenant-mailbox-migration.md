@@ -40,7 +40,7 @@ This section does not include the specific steps required to prepare the MailUse
 
 ## Prerequisites
 
-The cross-tenant mailbox move feature requires [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
+The cross-tenant mailbox move feature requires [Azure Key Vault](/azure/key-vault/basic-concepts) to establish a tenant pair-specific Azure application to securely store and access the certificate/secret used to authenticate and authorize mailbox migration from one tenant to the other, removing any requirements to share certificates/secrets between tenants. 
 
 Before starting, be sure you have the necessary permissions to run the deployment scripts in order to configure Azure Key Vault, Move Mailbox application, EXO Migration Endpoint, and the EXO Organization Relationship. Typically, Global Admin has permission to perform all configuration steps.
 
@@ -94,8 +94,8 @@ Prepare the source tenant:
 
     | Parameter | Value | Required or Optional
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | Target tenant domain, such as contoso\.onmicrosoft.com. | Required |
-    | -ResourceTenantDomain                       | Source tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -TargetTenantDomain                         | Target tenant domain, such as fabrikam\.onmicrosoft.com. | Required |
+    | -ResourceTenantDomain                       | Source tenant domain, such as contoso\.onmicrosoft.com. | Required |
     | -ResourceTenantAdminEmail                   | Source tenant admin’s email address. This is the source tenant admin who will be consenting to the use of the mailbox migration application sent from the target admin. This is the admin who will receive the email invite for the application. | Required |
     | -ResourceTenantId                           | Source tenant organization ID (GUID). | Required |
     | -SubscriptionId                             | The Azure subscription to use for creating resources. | Required |
@@ -111,7 +111,7 @@ Prepare the source tenant:
     ||||
 
     >[!Note]
-    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
+    > Please ensure you have installed the Azure AD PowerShell module prior to running the scripts. Please refer to ![here](/powershell/azure/install-az-ps?view=azps-5.1.0) for installation steps
 
 6. The script will pause and ask you to accept or consent to the Exchange mailbox migration application that was created during this process. Here is an example.
 
@@ -182,9 +182,9 @@ The target admin setup is now complete!
     | Parameter | Value |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Mail-enabled security group created by source tenant for the identities/mailboxes that are in scope for migration. |
-    | -ResourceTenantDomain | Source tenant domain name, such as fabrikam\.onmicrosoft.com. |
+    | -ResourceTenantDomain | Source tenant domain name, such as contoso\.onmicrosoft.com. |
     | -ApplicationId | Azure application ID (GUID) of the application used for migration. Application ID available via your Azure portal (Azure AD, Enterprise Applications, app name, application ID) or included in your invitation email.  |
-    | -TargetTenantDomain | Target tenant domain name, such as contoso\.onmicrosoft.com. |
+    | -TargetTenantDomain | Target tenant domain name, such as fabrikam\.onmicrosoft.com. |
     | -TargetTenantId | Tenant ID of the target tenant. For example, the Azure AD tenant ID of contoso\.onmicrosoft.com tenant. |
     |||
 
@@ -431,6 +431,10 @@ Once the mailbox moves from source to target, you should ensure that the on-prem
 
 Yes, you should update the targetAddress (RemoteRoutingAddress/ExternalEmailAddress) of the source on-premises users when the source tenant mailbox moves to target tenant.  While mail routing can follow the referrals across multiple mail users with different targetAddresses, Free/Busy lookups for mail users MUST target the location of the mailbox user. Free/Busy lookups will not chase multiple redirects. 
 
+**Do Teams meetings migrate cross-tenant?**  
+
+The meetings will move however the Teams meeting URL does not update when items migrate cross-tenant. Since the URL will be invalid in the target tenant you will need to remove and recreate the Teams meetings.
+
 **Does the Teams chat folder content migrate cross-tenant?**  
 
 No, the Teams chat folder content does not migrate cross-tenant.  
@@ -450,44 +454,32 @@ Get-MoveRequest -Flags "CrossTenant"
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
-#Note, the filter applied on GetMailbox is for an attribute set on CA1 = “ProjectKermit” 
+#Note, the filter applied on Get-Mailbox is for an attribute set on CustomAttribute1 = "ProjectKermit" 
 #These are the ‘target’ users to be moved to the Northwind org tenant #################################################################  
-$outFile = "$home\desktop\UserListToImport.csv" 
-$outArray = @() 
+$outFileUsers = "$home\desktop\userstomigrate.txt"
+$outFileUsersXML = "$home\desktop\userstomigrate.xml"
 #output the test objects 
-$Mailboxes = get-mailbox -filter "CustomAttribute1 -like ‘ProjectKermit'" -resultsize unlimited  
-#created these mailboxes in adv using separate scripts but you get the idea on how to define the user list to move 
-Foreach ($i in $Mailboxes)  
-{ 
- 	$user = get-Recipient $i.alias 
- 	$myobj = New-Object System.Object 
- 	$myObj | Add-Member -type NoteProperty -name primarysmtpaddress -value $i.PrimarySMTPAddress 
- 	$myObj | Add-Member -type NoteProperty -name alias -value $i.alias 
- 	$myObj | Add-Member -type NoteProperty -name FirstName -value $User.FirstName 
- 	$myObj | Add-Member -type NoteProperty -name LastName -value $User.LastName 
- 	$myObj | Add-Member -type NoteProperty -name DisplayName -value $User.DisplayName 
- 	$myObj | Add-Member -type NoteProperty -name Name -value $i.Name 
- 	$myObj | Add-Member -type NoteProperty -name SamAccountName -value $i.SamAccountName 
- 	$myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN  	$myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
- 	$outArray += $myObj 
-} 
-$outArray | Export-CSV $outfile -notypeinformation  
+Get-Mailbox -Filter "CustomAttribute1 -like 'ProjectKermit'" -ResultSize Unlimited | Select-Object -ExpandProperty Alias | Out-File $outFileUsers
+$mailboxes = Get-Content $outFileUsers
+$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+
 ################################################################# 
 #Copy the file $outfile to the desktop of the target on-premises 
 #then run the below to create MEU in Target 
 #################################################################  
-$ImportUserList = import-csv "$home\desktop\UserListToImport.csv" 
-$pwstr = "Something 98053 Random!!"; 
-$pw = new-object "System.Security.SecureString"; 
-for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($user in $ImportUserList) { 
-     $tmpUser = $null 
- 	$UPNSuffix = "@northwindtraders.com"  	$UPN = $user.Alias+$upnsuffix 
- 	$tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
-                 -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
-                 -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
-                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw       $x500 = "x500:" + $user.legacyExchangeDN 
- 	$tmpUser | Set-MailUser -ExchangeGuid $user.ExchangeGuid -EmailAddresses @{Add=$x500} -CustomAttribute1 "ProjectKermit" 
-}  
+$mailboxes = Import-Clixml $home\desktop\userstomigrate.xml
+
+foreach ($m in $mailboxes) {
+	$organization = "@contoso.onmicrosoft.com"
+	$mosi = $m.Alias+$organization
+	$Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+	$x500 = "x500:" +$m.LegacyExchangeDn
+	$tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+	$tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "ProjectKermit"
+	$tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+	$tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+	}
+
 ################################################################# 
 # On AADSync machine, run AADSync 
 #################################################################  
@@ -585,7 +577,7 @@ No. The source and target tenant domain names must be unique. For example, a sou
 
 Yes, however we only keep the store permissions as described in these articles:
 
-- [Microsoft Docs | Manage permissions for recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft Docs | Manage permissions for recipients in Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [Microsoft Support | How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -599,11 +591,11 @@ Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches
 
 **What if I use Service encryption with Customer Key?**
 
-The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) for more information.  
+The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](../compliance/customer-key-overview.md) for more information.  
 
 **What is the estimated migration time?**
 
-To help you plan your migration, the table present [here](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
+To help you plan your migration, the table present [here](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) shows the guidelines about when to expect bulk mailbox migrations or individual migrations to complete. These estimates are based on a data analysis of previous customer migrations. Because every environment is unique, your exact migration velocity may vary.  
 
 Do remember that this feature is currently in preview and the SLA and any applicable Service Levels do not apply to any performance or availability issues during the preview status of this feature.
 
@@ -728,4 +720,3 @@ Do remember that this feature is currently in preview and the SLA and any applic
    | Microsoft Defender for Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Premium Encryption in Office 365                  |
-    

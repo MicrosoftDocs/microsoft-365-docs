@@ -3,7 +3,6 @@ title: "Learn about the availability key for Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -61,7 +60,7 @@ Microsoft employs a defense-in-depth strategy to prevent malicious actors from i
 
 Microsoft 365 is built to prevent misuse of the availability key. The application layer is the only method through which keys, including the availability key, can be used to encrypt and decrypt data. Only Microsoft 365 service code has the ability to interpret and traverse the key hierarchy for encryption and decryption activities. Logical isolation exists between the storage locations of Customer Keys, availability keys, other hierarchical keys, and customer data. This isolation mitigates the risk of data exposure in the event one or more locations are compromised. Each layer in the hierarchy has built in 24x7 intrusion detection capabilities to protect data and secrets stored.
 
-Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers don't have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Microsoft 365](/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
 Technical controls prevent Microsoft personnel from logging into highly-privileged service accounts, which might otherwise be used by attackers to impersonate Microsoft services. For example, these controls prevent interactive logon.
 
@@ -164,13 +163,13 @@ Automated systems in Microsoft 365 process all data as it flows through the syst
 
 ### Exchange Online and Skype for Business availability key logging
 
-When Exchange Online and Skype for Business accesses availability key to provide service, Microsoft 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called "Customer Key Service Encryption" with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records.
+When Exchange Online and Skype for Business accesses availability key to provide service, Microsoft 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called "Customer Key Service Encryption" with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](./search-the-audit-log-in-security-and-compliance.md) search results to view availability key records.
 
 Log records include attributes such as date, time, activity, organization ID, and data encryption policy ID. The record is available as part of Unified Audit Logs and is accessible from the Security & Compliance Center Audit Log Search tab.
 
 ![Audit log search for availability key events](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
-Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id, and Request Id.
+Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id, and Request Id.
 
 ![Availability key custom parameters](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 

@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
@@ -36,7 +36,7 @@ Before you get started with DLP on-premises scanner, you should confirm your [Mi
 - Microsoft 365 E5 Information Protection & Governance 
 
 
-For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ### Permissions
 
@@ -51,13 +51,13 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 ### DLP on-premises scanner prerequisites
 
 - The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
-- Deploy the AIP  client and scanner. For more information [Install the AIP unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install).
+- Deploy the AIP  client and scanner. For more information [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install).
 - There must be at least one label and policy published in the tenant, even if all your detection rules are based on sensitive information types only.
 
 ## Deploy the DLP on-premises scanner
 
-1. Follow the procedures in [Install the AIP unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2. Follow the procedures in [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) to complete the scanner installation.
+1. Follow the procedures in [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
+2. Follow the procedures in [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install) to complete the scanner installation.
     1. Network discovery jobs configuration is an optional step. You can skip it and define specific repositories to be scanned in your content scan job.
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
@@ -110,7 +110,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
 
-3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
+3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
 
 
 ## Next steps
@@ -122,7 +122,7 @@ Now that you have deployed a test policy for DLP on-premises locations and can v
 
 - [Learn about DLP on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Use DLP on-premises scanner (preview)](dlp-on-premises-scanner-use.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

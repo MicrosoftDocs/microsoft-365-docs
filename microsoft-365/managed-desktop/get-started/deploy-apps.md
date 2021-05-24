@@ -28,7 +28,7 @@ You can add [Win32, or Windows MSI-based apps](#lob-apps), or [Microsoft Store f
 
 ###  Win32 or Windows MSI-based apps to Microsoft Managed Desktop
 
-You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
 
 In this procedure, you'll select which kind of app you want to add, and then configure and upload the app source. 
 
@@ -40,8 +40,8 @@ You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and th
 2.    Under **Inventory**, select **Apps**.
 3.    In the Apps workload, select **Add**.
 4.    In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
-    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
-    - If you selected **Windows app (Win32)**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
+    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
+    - If you selected **Windows app (Win32)**, see [Win32 app management](/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
 <span id="msfb-apps">
 

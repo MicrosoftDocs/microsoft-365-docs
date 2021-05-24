@@ -2,8 +2,8 @@
 title: "Edit or set application protection settings for Windows 10 devices"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -54,7 +54,7 @@ If your users have personal Windows 10 devices on which they perform work tasks,
 6. The **Encrypt work files** is turned on automatically. 
 7. Set **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** to **On** if you don't want the users to save work files on their PC. 
 9. Expand **Recover data on Windows devices**. We recommend that you turn it **On**.
-    Before you can browse to the location of the Data Recovery Agent certificate, you have to first create one. For instructions, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://go.microsoft.com/fwlink/p/?linkid=853700).
+    Before you can browse to the location of the Data Recovery Agent certificate, you have to first create one. For instructions, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
     
     By default, work files are encrypted using a secret key that is stored on the device and associated with the user's profile. Only the user can open and decrypt the file. However, if a device is lost or a user is removed, a file can be stuck in an encrypted state. An admin can use the Data Recovery Agent (DRA) certificate to decrypt the file.
     
@@ -65,4 +65,4 @@ If your users have personal Windows 10 devices on which they perform work tasks,
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
-12. Finally, choose **Add** to save the policy, and assign it to devices. 
+12. Finally, choose **Add** to save the policy, and assign it to devices.

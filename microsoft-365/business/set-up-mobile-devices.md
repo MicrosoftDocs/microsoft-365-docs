@@ -2,8 +2,8 @@
 title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -42,7 +42,7 @@ Watch a short video on how to set up Office apps on iOS devices with Microsoft 3
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
 Go to **App store**, and in the search field type in Microsoft Outlook.
   
@@ -74,7 +74,7 @@ Watch a video about installing Outlook and Office on Android devices.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
 To begin setup on your Android phone, go to the Play Store.
   
@@ -102,6 +102,6 @@ Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready f
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../business-video/index.yml)
 
 ---

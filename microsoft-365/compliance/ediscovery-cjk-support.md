@@ -64,7 +64,7 @@ No, none of your existing searches and review sets will change. You don't need t
 
 **How do I change my display language to Chinese, Japanese, or Korean?**
 
-For information about how to change display language and time zone, see [How to set language and region settings for Office 365](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region).
+For information about how to change display language and time zone, see [How to set language and region settings for Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
 ## Known issues
 
@@ -76,4 +76,4 @@ For information about how to change display language and time zone, see [How to 
 
 - The [Relevance module](using-relevance.md) used to analyze data doesn't support CJK languages.
 
-- [Query-based holds](managing-holds.md#manage-non-custodial-holds) aren't supported for CJK languages. 
+- [Query-based holds](managing-holds.md#manage-non-custodial-holds) aren't supported for CJK languages.

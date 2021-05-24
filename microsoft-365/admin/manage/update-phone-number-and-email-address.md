@@ -19,21 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: "Update your administrator phone number and email address in the admin center. You'll need this information if you want to reset your own admin password."
+description: "Update your administrator phone number and email address in the admin center if you want to reset your own admin password."
 ---
 
 # Update your admin phone number and email address
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
+
+For more information about changing user contact information or removing former employees, see [Related content](#related-content).
   
 ## To update your phone number and email address
 
@@ -55,3 +50,10 @@ For answers to billing questions, see:
 - [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Manage payment methods](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## Related content
+
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)\
+[Add a new employee](../add-users/add-new-employee.md) (video)\
+[Remove a former employee](../add-users/remove-former-employee.md) (video)\
+[Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)

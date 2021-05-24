@@ -30,8 +30,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 > [!NOTE]
 > This topic is intended for admins. For end-user topics, see [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) and [Learn about junk email and phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
@@ -53,17 +53,14 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](configure-the-connection-filter-policy.md).
 
-  > [!NOTE]
-  > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
 - **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure the end-user notification options for messages that were quarantined instead of delivered. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > By default, spam filtering is configured to send messages that were marked as spam to the recipient's Junk Email folder. However, in hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure two mail flow rules (also known as transport rules) in your on-premises Exchange organization to recognize the EOP spam headers that are added to messages. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > By default, spam filtering is configured to send messages that were marked as spam to the recipient's Junk Email folder. However, in hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure two mail flow rules (also known as transport rules) in your on-premises Exchange organization to recognize the EOP spam headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - **Outbound spam filtering**: EOP also checks to make sure that your users don't send spam, either in outbound message content or by exceeding outbound message limits. For more information, see [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
-- **Spoof intelligence**: For more information, see [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
 ## Manage errors in spam filtering
 
@@ -77,7 +74,7 @@ Here are some best practices that apply to either scenario:
 
 - **Point your MX record to Microsoft 365**: In order for EOP to provide the best protection, we always recommend that you have email delivered to Microsoft 365 first. For instructions, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-  If the MX record points to some other location (for example, a third-party anti-spam solution or appliance), it's difficult for EOP to provide accurate spam filtering. In this scenario, you need to configure Enhanced Filtering for connectors (also known as _skip listing_). For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  If the MX record points to some other location (for example, a third-party anti-spam solution or appliance), it's difficult for EOP to provide accurate spam filtering. In this scenario, you need to configure Enhanced Filtering for connectors (also known as _skip listing_). For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Use email authentication**: If you own an email domain, you can use DNS to help insure that messages from senders in that domain are legitimate. To help prevent spam and unwanted spoofing in EOP, use all of the following email authentication methods:
 
@@ -87,11 +84,11 @@ Here are some best practices that apply to either scenario:
 
   - **DMARC**: Domain-based Message Authentication, Reporting, and Conformance helps destination email systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For more information, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
-- **Verify your bulk email settings**: The bulk compliant level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Verify your bulk email settings**: The bulk complaint level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### Prevent the delivery of spam to the Inbox
 
-- **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365-atp.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
+- **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Verify the junk email rule is enabled in the user's mailbox**: It's enabled by default, but if it's disabled, messages marked as junk can't be moved into the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -99,7 +96,7 @@ Here are some best practices that apply to either scenario:
 
 - **Unsubscribe from bulk email** If the message was something that the user signed up for (newsletters, product announcements, etc.) and contains an unsubscribe link from a reputable source, consider asking them to simply unsubscribe.
 
-- **Standalone EOP: create mail flow rules in on-premises Exchange for EOP spam filtering verdicts**: In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- **Standalone EOP: create mail flow rules in on-premises Exchange for EOP spam filtering verdicts**: In EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 ### Prevent good email from being identified as spam
 
@@ -115,9 +112,9 @@ Here are some steps that you can take to help prevent false positives:
 
 - **Use the available safe sender lists**: For information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
-- **Verify users are within the sending and receiving limits** as described in [Receiving and sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in the Exchange Online service description.
+- **Verify users are within the sending and receiving limits** as described in [Receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in the Exchange Online service description.
 
-- **Standalone EOP: use directory synchronization**: If you use standalone EOP to help protect your on-premises Exchange organization, you should sync user settings with the service by using directory synchronization. Doing this ensures that your users' Safe Senders lists are respected by EOP. For more information, see [Use directory synchronization to manage mail users](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
+- **Standalone EOP: use directory synchronization**: If you use standalone EOP to help protect your on-premises Exchange organization, you should sync user settings with the service by using directory synchronization. Doing this ensures that your users' Safe Senders lists are respected by EOP. For more information, see [Use directory synchronization to manage mail users](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
 
 ## Anti-spam legislation
 

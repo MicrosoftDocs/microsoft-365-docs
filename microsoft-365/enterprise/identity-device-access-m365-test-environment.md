@@ -30,7 +30,7 @@ To create a test environment that has the common identity and device access conf
   - [Password hash synchronization (PHS)](phs-prereqs-m365-test-environment.md)
   - [Pass-through authentication (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites configured for your test environment and explore and verify protection for identities and devices.
+2. Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites configured for your test environment and explore and verify protection for identities and devices.
 
 ## See also
 
@@ -42,4 +42,4 @@ To create a test environment that has the common identity and device access conf
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

@@ -2,8 +2,8 @@
 title: "Manage Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: hub-page
@@ -28,9 +28,9 @@ description: "Learn to Manage Microsoft 365 for business related admin tasks, mo
 
 ## General Microsoft 365 for business admin tasks
 
-Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.
+Most of the [admin content](/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.
 
-- [Add more users to Microsoft 365 for business](add-users-m365b.md)
+- [Add more users to Microsoft 365 for business](../admin/add-users/add-users.md)
     
 - [View policies and devices](view-policies-and-devices.md)
     

@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
@@ -16,12 +16,13 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+hideEdit: true
 description: "Understand the maximum number of policies and items per policy for retention policies and retention label policies"
 ---
 
 # Limits for retention policies and retention label policies
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you use [retention policies and retention label policies](retention.md#retention-policies-and-retention-labels) to automatically retain or delete data for your organization, there are some maximum numbers to be aware of.
 
@@ -74,4 +75,3 @@ SharePoint example:
 - **Solution**: Create 20 retention policies for SharePoint with a retention period of 10 years that includes 100 specific sites, and create 80 retention policies for SharePoint with a retention period of 4 years that includes 100 specific sites.
     
     Because you don't need to retain all SharePoint sites, you must create retention policies that specify the specific sites. Because a retention policy doesn't support more than 100 specified sites, you must create multiple policies for the two retention periods. These retention policies  have the maximum number of included sites, so the next new site that needs retaining would require a new retention policy, irrespective of the retention period.
-

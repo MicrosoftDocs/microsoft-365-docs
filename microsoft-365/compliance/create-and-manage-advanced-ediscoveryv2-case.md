@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-aed
 - m365initiative-compliance
+- m365solution-scenario
 search.appverid: 
 - MOE150
 - MET150
@@ -24,13 +25,13 @@ description: "This article describes how to create and manage Advanced eDiscover
 
 After setting up Advanced eDiscovery and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
-This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
+This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal case or other types of investigations.
 
 ## Create a case
 
-Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
+Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft 365 compliance center and perform Advanced eDiscovery tasks.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
+1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
@@ -42,19 +43,17 @@ Complete the following steps to create a case and add members. The user who crea
 
    The new case is created and the **Settings** tab in the new case is displayed.
 
-6. In the **Access & permissions** tile on the **Settings** tab, click **Select**, and then click **Update**.
+6. In the **Access & permissions** tile on the **Settings** tab, click **Select**.
 
-7. Click **Update**.
+7. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
 
-8. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
+8. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
 
-9. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+9. After you've selected the people to add as members of the case, click **Add**.
 
-10. After you've selected the people to add as members of the case, click **Add**.
+10. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
 
-11. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
-
-12. Click the **Home** tab to go to the case home page.
+11. Click the **Home** tab to go to the case home page.
 
 ## Manage the workflow
 
@@ -76,15 +75,15 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
    - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 
-2. **[Search data sources for data relevant to the case](collecting-data-for-ediscovery.md)**. After you add custodians and non-custodial data sources to a case, use the built-in search tool to search these data sources for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
+2. **[Collect relevant content from data sources](create-draft-collection.md)**. After you add custodians and non-custodial data sources to a case, use the built-in collections tool to search these data sources for content that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-   - View [search statistics](search-statistics-in-advanced-ediscovery.md) that may help you refine a search query to narrow the results.
+   - View [collection statistics](collection-statistics-reports.md) that may help you refine a collection to narrow the results.
 
-   - Preview the search results to quickly verify whether the relevant data is being found.
+   - Preview a sample of the collection to quickly verify whether the relevant data is being found.
 
-   - Revise a query and rerun the search.
+   - Revise a query and rerun the collection.
 
-3. **[Add data to a review set](add-data-to-review-set.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
+3. **[Commit collection to a review set](commit-draft-collection.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
 
    There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
@@ -101,3 +100,15 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
    - [Analyze case data](analyzing-data-in-review-set.md). The analytics functionality in Advanced eDiscovery is powerful. After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review. We also generate an Analytics reports that summarize the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Export and download case data**. A final step after collecting, reviewing, and analyzing case data is to export it out of Advanced eDiscovery for external review or for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to [export](export-documents-from-review-set.md) data out of the review set and copy it to a different Azure Storage location (one provided by Microsoft or one managed by your organization). Then you use Azure Storage Explorer to [download](download-export-jobs.md) the data to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
+
+## Advanced eDiscovery architecture
+
+Here's an architecture diagram that shows the Advanced eDiscovery end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
+
+[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Download as a PDF file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Download as a Visio file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

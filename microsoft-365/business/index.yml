@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with less than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams  with advanced security and device management capabilities. # < 160 chars
+summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with fewer than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams with advanced security and device management capabilities. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -21,10 +21,10 @@ productDirectory:
   title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
-    - title: Read
-      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+    - title: Watch
+      imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+      summary: Top five benefits of Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPvideo
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -34,8 +34,8 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
-      url: https://aka.ms/aadp1smbblog
+      summary: Antivirus management and Universal Print are now available in Microsoft 365 Business Premium.
+      url: https://aka.ms/M365BPQ1Update
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
@@ -52,13 +52,13 @@ conceptualContent:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+        - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
-        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Compare plans
-        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
         - url: support/microsoft-365-business-faqs.yml
@@ -73,10 +73,10 @@ conceptualContent:
         - url: secure-win-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
-        - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+        - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+        - url: ../business-video/install-office.md
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -106,56 +106,56 @@ conceptualContent:
   # Card
     - title: Manage users
       links:
-        - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+        - url: ../admin/add-users/add-users.md
           itemType: how-to-guide
           text: Add a user
-        - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+        - url: /office365/admin/add-users/remove-former-employee
           itemType: how-to-guide
           text: Remove a user
-        - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+        - url: /office365/admin/add-users/reset-passwords
           itemType: how-to-guide
           text: Reset someone's password
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/office365/admin/admin-home
+        url: /office365/admin/admin-home
         text: See more 
  # Card
     - title: Manage threats
       links:
-        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
+        - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
           text: Advanced Threat Protection
-        - url: set-up-mfa.md
+        - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
           itemType: how-to-guide
           text: Set up MFA
-        - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+        - url: ./increase-threat-protection.md#protect-against-ransomware
           itemType: how-to-guide
           text: Protect against ransomware
-        - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+        - url: /azure/active-directory/conditional-access/overview
           itemType: overview
           text: Conditional Access
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/office365/admin/admin-home
+        url: /office365/admin/admin-home
         text: See more 
   # Card
     - title: Manage data
       links:
-        - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+        - url: ../compliance/data-loss-prevention-policies.md
           itemType: overview
           text: Data Loss Prevention 
         - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
           itemType: how-to-guide
           text: Send encrypted email
-        - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+        - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+        - url: ../business-video/create-sensitivity-labels.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/microsoft-365/compliance/
+        url: ../compliance/index.yml
         text: See more
   # Card
     - title: Manage devices
@@ -169,7 +169,7 @@ conceptualContent:
         - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
           text: Wipe and reset
-        - url: https://docs.microsoft.com/intune/index
+        - url: /intune/index
           itemType: overview
           text: Intune
         - url: manage-windows-devices.md
@@ -178,7 +178,7 @@ conceptualContent:
         - url: access-resources.md
           itemType: how-to-guide
           text: Set up Azure AD join 
-        - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+        - url: /windows/deployment/windows-autopilot/windows-autopilot
           text: Windows Autopilot
           itemType: overview    
       # footerLink (optional)
@@ -188,18 +188,18 @@ conceptualContent:
   # Card
     - title: Monitor security
       links:
-        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+        - url: ../security/defender/microsoft-secure-score.md
           itemType: how-to-guide
           text: Secure score
-        - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+        - url: /intune/apps/app-protection-policies-monitor
           itemType: overview
           text: Intune App Protection Policies report
-        - url: https://docs.microsoft.com/microsoft-365/enterprise/view-service-health
+        - url: ../enterprise/view-service-health.md
           itemType: how-to-guide
           text: Health monitoring alerts
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/microsoft-365/security/
+        url: ../security/index.yml
         text: See more
   # Card
     - title: Support and community
@@ -235,7 +235,3 @@ conceptualContent:
       footerLink:
         url: microsoft-365-business-overview.md
         text: See more 
-  
-
-
-

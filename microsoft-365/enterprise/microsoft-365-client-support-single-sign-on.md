@@ -32,39 +32,7 @@ The latest versions of the following clients and platforms support single sign-o
 <br>
 <br>
 
-| Clients | Android | iOS | Mac| Windows 10 <br> Modern Apps| Windows 10 <br> Desktop |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Access | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Company portal | N/A | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) | N/A |
-| Cortana | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |
-| Delve | Planned | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Edge | ![Supported](../media/check-mark.png) | Planned | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Excel | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
-| Kaizala | ![Supported](../media/check-mark.png) | Planned | N/A | N/A | N/A |
-| Office Lens| ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Office mobile | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Office portal | N/A | N/A | N/A | ![Supported](../media/check-mark.png) | N/A |
-| OneDrive | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) | Planned |
-| OneNote | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned |
-| Outlook | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | ![Supported](../media/check-mark.png) |
-| Planner | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Power Apps | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | Planned | N/A |
-| Power Automate | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Power BI | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | Planned |
-| PowerPoint | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
-| Project | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Publisher | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Skype for Business | Planned | Planned | N/A | N/A | N/A |
-| SharePoint | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | N/A |
-| Sticky Notes | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Stream | Planned | Planned | N/A | N/A | N/A |
-| Sway | N/A | N/A | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Teams | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | Planned | N/A | Planned |
-| To Do | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | N/A |
-| Visio | N/A | ![Supported](../media/check-mark.png) | N/A | N/A | ![Supported](../media/check-mark.png) |
-| Whiteboard | N/A | ![Supported](../media/check-mark.png) | N/A | ![Supported](../media/check-mark.png) | N/A |
-| Word | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
-| Yammer | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | N/A | N/A | Planned |
+[!INCLUDE [Single sign-on services support table](../includes/microsoft-365-client-support-single-sign-on-include.md)]
 
 ## Supported PowerShell modules
 

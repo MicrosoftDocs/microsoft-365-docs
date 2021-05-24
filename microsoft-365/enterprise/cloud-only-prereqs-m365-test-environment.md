@@ -46,7 +46,7 @@ Here is the resulting configuration.
 
 First, determine the public IP addresses or address ranges used by your organization.
 
-Next, follow the instructions in [Configure named locations in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations. 
+Next, follow the instructions in [Configure named locations in Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations. 
 
 ## Phase 3: Configure self-service password reset
 
@@ -74,11 +74,11 @@ Test multi-factor authentication only for the User 2 account.
 
 ## Phase 5: Enable automatic device registration of domain-joined Windows computers 
 
-Follow [these instructions](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.
+Follow [these instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.
 
 ## Phase 6: Configure Azure AD password protection 
 
-Follow [these instructions](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.
+Follow [these instructions](/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.
 
 ## Phase 7: Enable Azure AD Identity Protection
 
@@ -86,11 +86,11 @@ Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 
-For Exchange Online, follow [these instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+For Exchange Online, follow [these instructions](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
 For Skype for Business Online:
 
-1. Connect to [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+1. Connect to [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 2. Run this command.
 
@@ -108,7 +108,7 @@ The result is a test environment that meets the requirements of the [cloud-only 
 
 ## Next step
 
-Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
+Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 
@@ -120,4 +120,4 @@ Use [Common identity and device access policies](identity-access-policies.md) to
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

@@ -8,9 +8,11 @@ metadata:
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: commerce # Optional; Remove if no collection is used.
-  ms.custom: AdminSurgePortfolio
+  ms.custom: 
+  - commerce_landingpage
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
+  manager: sctov
   ms.date: 02/27/2020 #Required; mm/dd/yyyy format.
   localization_priority: Normal
   search.appverid: MET150
@@ -48,7 +50,7 @@ landingContent:
           - text: Buy licenses for your subscription
             url: licenses/buy-licenses.md
           - text: Remove licenses from your subscription
-            url: licenses/remove-licenses-from-subscription.md
+            url: ./licenses/buy-licenses.md
 
   # Card
   - title: Upgrade, renew, or cancel
@@ -74,9 +76,8 @@ landingContent:
           - text: Try or buy Microsoft 365
             url: try-or-buy-microsoft-365.md
           - text: Buy a subscriptions from your free trial
-            url: buy-a-subscription-from-your-free-trial.md
+            url: ./try-or-buy-microsoft-365.md
           - text: Extend your trial
             url: extend-your-trial.md
           - text: Buy a domain name
             url: ../admin/get-help-with-domains/buy-a-domain-name.md
-            

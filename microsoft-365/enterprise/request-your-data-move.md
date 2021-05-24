@@ -71,8 +71,6 @@ As of January 2020, customers in eligible Office 365 countries can opt-in for mi
 
 [Data move general FAQ](data-move-faq.md)
 
-[New datacenter geos for Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
-  
-

@@ -11,8 +11,8 @@ metadata:
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: Sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: twerner #Required; your GitHub user alias, with correct capitalization.
+  ms.author: twernermsft #Required; microsoft alias of author; optional team alias.
   ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -81,7 +81,7 @@ productDirectory:
     - title: Get support
       imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
       summary: Get help with Microsoft 365 for business.
-      url: find-help-answers.md
+      url: get-help-support.md
 
 # additionalContent section (optional)
 # Card with summary style
@@ -95,9 +95,9 @@ additionalContent:
           summary: Learn how to use Word, Excel, PowerPoint and other Office apps. 
           url: https://support.microsoft.com/training
         # Card
-        - title: Switch from Google Workspace
-          summary: Find out how to switch to Microsoft 365 for business. 
-          url: moveto-microsoft-365/move-from-google-workspace-overview.md
+        - title: Get training for ITPros
+          summary: Complete learning paths for midsize and enterprise businesses.
+          url: https://docs.microsoft.com/learn/m365/
         # Card
         - title: Find more admin resources
           summary: Go to the Microsoft 365 admin center help site.

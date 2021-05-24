@@ -37,11 +37,11 @@ For more information, see [About admin roles](about-admin-roles.md).
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
-## Watch: Add an admin.<br><br>
+## Watch: Add an admin<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Assign admin roles 
 
@@ -54,7 +54,7 @@ You can assign users to a role in 2 different ways:
 
 ### Assign admin roles to users using Roles
 
-1. In the admin center, go to **Roles** > **Roles** to view all of the admin roles available for your organization.
+1. In the admin center, go to **Roles**. Choose the **Azure AD** or **Intune** tabs to view the admin roles available for your organization.
 2. Select the admin role that you want to assign the user to.
 3. Select **Assigned admins** > **Add**.
 4. Type the user's **display name** or **username**, and then select the user from the list of suggestions.
@@ -65,7 +65,7 @@ You can assign users to a role in 2 different ways:
 
 1. In the admin center, go to **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Manage roles**.
+2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, under **Roles**, select **Manage roles**.
 
 3. Select the admin role that you want to assign to the user. If you don't see the role you're looking for, select **Show all** at the bottom of the list.
 
@@ -97,7 +97,7 @@ You can assign users to a role in 2 different ways:
 
 ## Assign admin roles to multiple users
 
-If you know PowerShell, see [Assign roles to user accounts with PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). It's ideal for assigning roles to hundreds of users.
+If you know PowerShell, see [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md). It's ideal for assigning roles to hundreds of users.
   
 Use the following instructions to assign roles to tens of users.
 
@@ -114,12 +114,9 @@ You can check admin role permissions in 2 different ways:
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
-
-[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-
-[Assign roles to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
-
-[Authorize or remove partner relationships](../misc/add-partner.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)\
+[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
+[Authorize or remove partner relationships](../misc/add-partner.md) (article)

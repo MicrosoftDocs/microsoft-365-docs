@@ -40,7 +40,7 @@ Here are some benefits of mailbox auditing on by default:
 
 ## Verify mailbox auditing on by default is turned on
 
-To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -108,7 +108,7 @@ The following table describes the mailbox actions that are available in mailbox 
 |**Default**||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Note**: Audit records for folder bind actions performed by delegates are consolidated. One audit record is generated for individual folder access within a 24-hour period.|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**MailItemsAccessed**|Mail data is accessed by mail protocols and clients. This value is only available for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit for users](advanced-audit.md#set-up-advanced-audit-for-users).|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|Mail data is accessed by mail protocols and clients. This value is only available for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit ](set-up-advanced-audit.md).|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|The user signed into their mailbox. |||![Check mark](../media/checkmark.png)|
 |**MessageBind**|A message was viewed in the preview pane or opened by an admin. **Note**: Although this value is accepted as a mailbox action, these actions are no longer logged.|![Check mark](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**Note**: Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
@@ -116,7 +116,7 @@ The following table describes the mailbox actions that are available in mailbox 
 |**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|An item that's labeled as a record was soft-deleted (moved to the Recoverable Items folder). Items labeled as records can't be permanently deleted (purged from the Recoverable Items folder).|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Note**: Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
-|**Send**|The user sends an email message, replies to an email message, or forwards an email message. This value is only available for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit for users](advanced-audit.md#set-up-advanced-audit-for-users).|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**Send**|The user sends an email message, replies to an email message, or forwards an email message. This value is only available for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit for users](set-up-advanced-audit.md).|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
@@ -337,7 +337,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
@@ -348,19 +348,19 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
   
   - Use the following cmdlets in Exchange Online PowerShell:
 
-    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) to search the mailbox audit log for specific users.
+    - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) to search the mailbox audit log for specific users.
 
-    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
+    - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
 
   - Use the Exchange admin center (EAC) in Exchange Online to do the following actions:
 
-    - [Export mailbox audit logs](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+    - [Export mailbox audit logs](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
-    - [Run a non-owner mailbox access report](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+    - [Run a non-owner mailbox access report](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
 - By default, mailbox audit log records are retained for 90 days before they're deleted. You can change the age limit for audit log records by using the *AuditLogAgeLimit* parameter on the **Set-Mailbox** cmdlet in Exchange Online PowerShell. However, increasing this value doesn't allow you to search for events that are older than 90 days in the audit log.
 
-  If you increase the age limit, you need to use the [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet in Exchange Online PowerShell to search the user's mailbox audit log for records that are older than 90 days.
+  If you increase the age limit, you need to use the [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) cmdlet in Exchange Online PowerShell to search the user's mailbox audit log for records that are older than 90 days.
 
 - If you've changed the *AuditLogAgeLimit* property for a mailbox prior to mailbox auditing on by default being turned on for organization, the mailbox's existing audit log age limit isn't changed. In other words, mailbox auditing on by default doesn't affect the current age limit for mailbox audit records.
 
@@ -374,7 +374,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
     - The mailbox is assigned to a retention policy in the Compliance Center.
 
-  - Mailbox audit records also count against the [folder limit for the Recoverable Items folder](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits). A maximum of 3 million items (audit records) can be stored in the Audits subfolder.
+  - Mailbox audit records also count against the [folder limit for the Recoverable Items folder](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits). A maximum of 3 million items (audit records) can be stored in the Audits subfolder.
 
     > [!NOTE]
     > It's unlikely that mailbox auditing on by default will impact the storage quota or the folder limit for the Recoverable Items folder.

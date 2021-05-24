@@ -77,6 +77,9 @@ If the list mode is set to **Block**, then user will not be able to upload sensi
 
 If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
 
+> [!IMPORTANT]
+> When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
+
 #### Unallowed browsers
 
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
@@ -115,7 +118,8 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
->- [Overview of data loss prevention](data-loss-prevention-policies.md)
+
+>- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
@@ -209,13 +213,13 @@ These scenarios require that you already have devices onboarded and reporting in
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (AAD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)

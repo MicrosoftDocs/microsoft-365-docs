@@ -21,7 +21,7 @@ description: "Use a retention policy to efficiently keep control of the content 
 
 # Create and configure retention policies
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use a retention policy to manage the data for your organization by deciding proactively whether to retain content, delete content, or retain and then delete the content.
 
@@ -67,9 +67,12 @@ When you have more than one retention policy, and when you also use retention la
 
 3. For the **Choose locations to apply the policy** page, select one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
 
-   For **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
-
-   By default, [all teams and all users are selected](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
+   For **Teams channel messages**, message from standard channels but not [private channels](/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
+    
+   By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
+    
+    - For group chats, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
+    - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
@@ -77,7 +80,18 @@ When you have more than one retention policy, and when you also use retention la
 
 5. Complete the wizard to save your settings.
 
-For more information about retention policies for Teams, see [Retention policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies) from the Teams documentation.
+For guidance when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
+
+For technical details about how retention works for Teams, including what elements of messages are supported for retention and timing information with example walkthroughs, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+
+#### Known configuration issues
+
+- Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
+
+- When you select **Choose teams** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
+
+- When you select **Choose users for the Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+
 
 #### Additional retention policy needed to support Teams
 
@@ -99,7 +113,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 > [!NOTE]
 > Retention policies for Yammer are rolling out in preview. If you don't yet see the new locations for Yammer, try again in a few weeks.
 >
-> To use this feature, your Yammer network must be [Native Mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
+> To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
@@ -162,4 +176,3 @@ Use the following instructions for retention policies that apply to any of these
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
 5. Complete the wizard to save your settings.
-

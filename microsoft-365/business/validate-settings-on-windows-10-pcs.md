@@ -2,8 +2,8 @@
 title: "Validate app protection settings on Windows 10 PCs"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -56,12 +56,10 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
   
 ## Related Topics
 
-[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](./index.yml)
   
 [Get started with Microsoft 365 for business](microsoft-365-business-overview.md)
   
 [Manage Microsoft 365 for business](manage.md)
   
 [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
-  
-

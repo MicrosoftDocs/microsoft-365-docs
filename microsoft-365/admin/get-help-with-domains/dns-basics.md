@@ -23,7 +23,7 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: "Learn about domains and their associated DNS records to help you manage your domains."
+description: "The domain name system maps computer hostnames to IP addresses and understanding DNS and domain registrar basics can help you manage domains."
 ---
 
 # DNS basics
@@ -33,6 +33,8 @@ description: "Learn about domains and their associated DNS records to help you m
 ::: moniker range="o365-worldwide"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -41,6 +43,8 @@ Domain names, like contoso.com, are managed by using a worldwide system of domai
 ::: moniker range="o365-germany"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -64,7 +68,7 @@ Domain names are used in URLs and email addresses, and they have different level
     
 Why use a third-level domain? You might want to have different domain names for marketing or a blog. For example, blog.contoso.com. You typically add a second-level domain, like contoso.com, to use with Microsoft but you can also use third-level domains if you like.
   
-Learn more about what you can do with domains for each type of offering in the [Microsoft 365 and Office 365 platform service description](https://go.microsoft.com/fwlink/?LinkId=402693).
+Learn more about what you can do with domains for each type of offering in the [Microsoft 365 and Office 365 platform service description](/office365/servicedescriptions/office-365-platform-service-description/domains).
   
 ## Understand DNS record types
 
@@ -145,14 +149,14 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 ## Why add a domain in Microsoft 365?
 
 
-Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
+Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](../setup/domains-faq.yml) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
   
 > [!NOTE]
 > If you just want to download and use Microsoft apps, like Outlook or Word, you don't need to add a domain: [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 You can use your domain name in Microsoft 365 with your email, public website, and instant messaging address.
   
-- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
+- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](../setup/domains-faq.yml) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
     
 - **Website:** If you have an Microsoft 365 subscription that includes a SharePoint Online Public Website (no longer available for purchase), your public website comes with an initial address like this: contoso-public.sharepoint.com. If you set up your website for your business, you can use a custom domain name to rename the website address to something like www.contoso.com. 
     
@@ -164,14 +168,14 @@ You can use your domain name in Microsoft 365 with your email, public website, a
 ## Why add a domain in Microsoft 365?
 
 
-Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
+Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](../setup/domains-faq.yml) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
   
 > [!NOTE]
 > If you just want to download and use Microsoft 365 apps, like Outlook or Word, you don't need to add a domain: [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 You can use your domain name in Microsoft 365 with your email, public website, and instant messaging address.
   
-- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
+- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](../setup/domains-faq.yml) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
     
 - **Website:** If you have a subscription that includes a SharePoint Online Public Website (no longer available for purchase), your public website comes with an initial address like this: contoso-public.sharepoint.com. If you set up your website for your business, you can use a custom domain name to rename the website address to something like www.contoso.com. 
     
@@ -185,11 +189,17 @@ There are a number of DNS records required for Microsoft 365 to work with your d
   
 You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
   
-Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Microsoft 365, what their function is, and example values. Check out [External Domain Name System records for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
+Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Microsoft 365, what their function is, and example values. Check out [External Domain Name System records for Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## How can I learn more?
+## Next steps
 
 Check out one of the following: 
   
 - Not sure where your domain is registered? [Get help finding your domain registrar.](find-your-domain-registrar.md)
 - Find out [why you have to complete the wizard steps](../setup/add-domain.md) before you can use your domain with Microsoft 365.
+
+## Related content
+
+[Domains FAQ](../setup/domains-faq.yml) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+[Manage domains](index.yml) (link page)

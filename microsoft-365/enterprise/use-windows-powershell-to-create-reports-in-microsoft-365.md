@@ -28,7 +28,7 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
   
 - Get started with reporting using PowerShell for Microsoft 365:
     
-  - [Why you need to use PowerShell for Microsoft 365](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [Why you need to use PowerShell for Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Reports for user accounts and licenses:
@@ -43,16 +43,16 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
     
 - Reports for SharePoint Online:
     
-  - [Get started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+  - [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Get-SPOSiteGroup - Gets all the groups on a specified site collection](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup - Gets all the groups on a specified site collection](/powershell/module/sharepoint-online/get-spositegroup)
     
 - Reports for Exchange Online:
     
-  - [Use Exchange Online PowerShell to display mailbox](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Use Exchange Online PowerShell to display mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## Related articlesl
+## Related articles
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
@@ -61,4 +61,3 @@ These articles describe how to use PowerShell for Microsoft 365 to get informati
 [Manage SharePoint with PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  

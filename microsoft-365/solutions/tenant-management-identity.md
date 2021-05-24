@@ -61,7 +61,7 @@ Here are the two types of authentication when using the hybrid identity model.
 | Federated authentication | Azure AD redirects the client computer requesting authentication to another identity provider. |
 |  |  |
 
-See [choosing the right authentication method](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
 
 ## Enforcing strong sign-ins
 
@@ -69,11 +69,11 @@ To increase the security of user sign-ins, use the features and capabilities in 
 
 | Capability | Description | More information | Licensing requirements |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello for Business | Replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN. | [Windows Hello for Business Overview](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 or E5 |
-| Azure AD Password Protection | Detects and blocks known weak passwords and their variants and can also block additional weak terms that are specific to your organization. | [Configure Azure AD password protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 or E5 |
+| Windows Hello for Business | Replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN. | [Windows Hello for Business Overview](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 or E5 |
+| Azure AD Password Protection | Detects and blocks known weak passwords and their variants and can also block additional weak terms that are specific to your organization. | [Configure Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 or E5 |
 | Use multi-factor authentication (MFA) | MFA requires that user sign-ins be subject to an additional verification beyond the user account password, such as verification with a smartphone app or a text message sent to a smartphone. See [this video](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) for instructions on how users set up MFA. | [MFA for Microsoft 365 for enterprise](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 or E5 |
 | Identity and device access configurations | Settings and policies that consist of recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions.  | [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 or E5 |
-| Azure AD Identity Protection | Protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. | [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 or Microsoft 365 E3 with the Identity & Threat Protection add-on |
+| Azure AD Identity Protection | Protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 or Microsoft 365 E3 with the Identity & Threat Protection add-on |
 |  |  |  |
 
 

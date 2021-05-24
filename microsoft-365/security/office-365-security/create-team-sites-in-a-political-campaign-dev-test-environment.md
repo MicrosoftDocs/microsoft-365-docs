@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 **Applies to**
 
-- [Microsoft Defender for Office 365 plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 - 
  **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment. 
    
@@ -366,7 +366,7 @@ Next, configure a DLP policy that blocks users when they share a document on a S
 
 20. In the **Review your settings** pane, click **Create**, and then click **Close**.
 
-Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](/information-protection/deploy-use/activate-office365).
 
 Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:
 
@@ -412,7 +412,7 @@ Next, configure Azure Information Protection with a new scoped policy and sub-la
 
 You are now ready to begin creating documents in these four sites and test access to them with various user accounts.
 
-To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
+To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
 
 ## See Also
 

@@ -40,7 +40,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
@@ -76,7 +76,7 @@ Wipe a device for these reasons:
 
 The wipe is sent immediately to the mobile device and the device is marked as not compliant in Azure active directory. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
 
-|**Content impace**|**iOS 10 and later**|**Android 5 and later**|
+|**Content impact**|**iOS 10 and later**|**Android 5 and later**|
 |:-----|:-----|:-----|
 |Microsoft 365 app data is wiped if the device is protected by Intune App Protection policies. The apps aren't removed. For devices not protected by Mobile Application Management (MAM) policies, Outlook and OneDrive won't remove cached data.<br/>**Note** For applying Intune App protection policies you must have an Intune license.|Yes|Yes|
 |Policy settings applied by Basic Mobility and Security to devices are no longer enforced; users can change the settings.|Yes|Yes|

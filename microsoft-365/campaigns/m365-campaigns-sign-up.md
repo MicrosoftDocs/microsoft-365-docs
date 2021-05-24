@@ -2,10 +2,10 @@
 title: "Sign up for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -61,7 +61,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 6. **How does this look page**:
     1. Verify the cost per user is $5.00. 
     2. If you only want to set yourself up for now, select **Next**. 
-    3. Optional: Add some extra licenses now by changing the number in the **user** field. [The staff you work with can be assigned licenses to Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) at any time.
+    3. Optional: Add some extra licenses now by changing the number in the **user** field. [The staff you work with can be assigned licenses to Microsoft 365](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) at any time.
 7. **How do you want to pay? page**: Select **New credit card**, enter your business credit card details, and select **Place order**. If you prefer, it's also possible to use a bank account.
 8. **This may take a moment page**: You'll find details about where to sign in and your user ID. We'll also send this information to the email address that you entered during step 2 above.
 
@@ -88,5 +88,5 @@ After you have completed these steps, you're ready to [assign the new licenses](
 ## What's next?
 
 - [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up.
-- [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
+- [Add users](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
 - [Bump up protection for your campaign](m365-campaigns-security-overview.md)

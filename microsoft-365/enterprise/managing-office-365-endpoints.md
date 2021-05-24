@@ -123,13 +123,13 @@ Click the link at the bottom to indicate if the article was helpful or not and s
   
 ### How do I determine the location of my tenant?
 
- **Tenant location** is best determined using our [datacenter map](https://aka.ms/datamaps).
+ **Tenant location** is best determined using our [datacenter map](./o365-data-locations.md).
   
 ### Am I peering appropriately with Microsoft?
 
  **Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).
   
-With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) of good and not so good peering hand-offs to our network.
+With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](/archive/blogs/onthewire/__guidance) of good and not so good peering hand-offs to our network.
   
 <a name="bkmk_MissingIP"> </a>
 ### I see network requests to IP addresses not on the published list, do I need to provide access to them?
@@ -219,7 +219,7 @@ Office 365 does not provide IP addresses of all required network endpoints. Some
   
 [Microsoft Public IP Space](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Network infrastructure requirements for Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [ExpressRoute and Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   

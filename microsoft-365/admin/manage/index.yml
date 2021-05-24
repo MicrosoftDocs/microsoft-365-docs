@@ -8,8 +8,8 @@ metadata:
   description: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
-  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  author: kwekua #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kwekua #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
@@ -74,9 +74,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Teams admin documentation
-            url: https://docs.microsoft.com/en-us/microsoftteams/
+            url: https://docs.microsoft.com/microsoftteams/
           - text: Use Outlook and Teams together 
-            url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
+            url: ../../business-video/collab-outlook-teams.md
       - linkListType: learn
         links:
           - text: Microsoft Teams training
@@ -87,12 +87,12 @@ landingContent:
       - linkListType: overview
         links:
           - text: SharePoint documentation for IT pros and admins
-            url: https://docs.microsoft.com/sharepoint/
+            url: /sharepoint/
           - text: OneDrive documentation for IT pros and admins
-            url: https://docs.microsoft.com/onedrive/
+            url: /onedrive/
       - linkListType: how-to-guide
         links:
           - text: Manage sharing in OneDrive and SharePoint
-            url: https://docs.microsoft.com/onedrive/manage-sharing
+            url: /onedrive/manage-sharing
           - text: Create and manage sites
             url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

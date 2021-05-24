@@ -21,7 +21,7 @@ description: "Learn how retention works for SharePoint and OneDrive."
 
 # Learn about retention for SharePoint and OneDrive
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to SharePoint and OneDrive.
 
@@ -44,7 +44,11 @@ The following files can be deleted:
 > [!TIP]
 > When you use a [query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude specific document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
-List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources.
+List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When you apply a retention label to a supported list item that has a document attachment:
+- For a standard retention label (doesn't declare the item to be a record):
+    - The document attachment doesn't automatically inherit the retention settings of the label, but can be labeled independently.
+- For a retention label that declares the item a record: 
+    - The document attachment automatically inherits the retention settings from the label if the document isn't already labeled.
 
 Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
@@ -61,9 +65,9 @@ Items in SharePoint that have a standard retention label (doesn't declare the it
 
 To retain this content when a user attempts to change or delete it, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content. Any content in a site collection can be copied to the Preservation Hold library, independently from retention settings.
   
-A timer job periodically cleans up the Preservation Hold library. This job compares all content in the Preservation Hold library to all queries used by the retention settings for that content. Content that is older than their configured retention period is deleted from the Preservation Hold library, and the original location if it is still there. This timer job runs every seven days, which means that it can take up to seven days for content to be deleted.
-  
-This behavior applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site collection after it was included in the policy will be retained after deletion. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, you must turn on [versioning](#how-retention-works-with-document-versions).
+A timer job periodically cleans up the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
+
+This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, you must turn on [versioning](#how-retention-works-with-document-versions).
   
 Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
 

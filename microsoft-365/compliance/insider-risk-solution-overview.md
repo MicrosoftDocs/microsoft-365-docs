@@ -1,5 +1,5 @@
 ---
-title: Insider risk solution
+title: Insider risk solutions
 description: Learn how to help minimize risk in your organization with insider risk solutions in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
 localization_priority: Normal
@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-overview
 ---
 
 # Insider risk solutions in Microsoft 365

@@ -60,7 +60,7 @@ To enable modern authentication for any devices running Windows (for example on 
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
   
-Read [How to use Modern Authentication (ADAL) with Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=785431) to learn about how it works with Skype for Business. 
+Read [How to use Modern Authentication (ADAL) with Skype for Business](./hybrid-modern-auth-overview.md) to learn about how it works with Skype for Business. 
   
 Office 2016 and Office 2019 clients support modern authentication by default, and no action is needed for the client to use these new flows. However, explicit action is needed to use legacy authentication.
   
@@ -124,9 +124,9 @@ The following table describes the authentication behavior for Office 2013, Offic
    
 ## See also
 
-[Enable Modern Authentication for Office 2013 on Windows devices](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
+[Enable Modern Authentication for Office 2013 on Windows devices](../admin/security-and-compliance/enable-modern-authentication.md)
 
-[Multi-factor authentication for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
+[Multi-factor authentication for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 
 [Sign in to Microsoft 365 with multi-factor authentication](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 

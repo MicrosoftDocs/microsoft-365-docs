@@ -28,6 +28,13 @@ Creating a custom trainable classifier first involves giving it samples that are
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
+Watch this video for a quick summary of creating a trainable classifier. You'll still need to read this full article to get the details.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+
+
 ## Prerequisites
 
 ### Licensing requirements
@@ -83,7 +90,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
    > The seed and test sample items must not be encrypted and they must be in English.
@@ -115,7 +122,7 @@ Once the trainable classifier has processed enough positive samples to build a p
     > [!div class="mx-imgBorder"]
     > ![trainable classifier ready for testing](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
     > [!IMPORTANT]
     > The sample items must not be encrypted and they must be in English.

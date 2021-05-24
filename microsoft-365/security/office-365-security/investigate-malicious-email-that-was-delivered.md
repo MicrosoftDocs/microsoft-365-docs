@@ -1,6 +1,6 @@
 ---
 title: Investigate malicious email that was delivered in Office 365, Find and investigate malicious email
-keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
+keywords: TIMailData-Inline, Security Incident, incident, Microsoft Defender for Endpoint PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -29,10 +29,10 @@ ms.prod: m365-security
 
 **Applies to**
 
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
+[Microsoft Defender for Office 365](defender-for-office-365.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
 
 > [!NOTE]
 > Jump to the remediation article [here](remediate-malicious-email-delivered-office-365.md).
@@ -41,7 +41,7 @@ ms.prod: m365-security
 
 Make sure that the following requirements are met:
 
-- Your organization has [Microsoft Defender for Office 365](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
 
 - [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization.
 
@@ -208,4 +208,4 @@ Delivery location shows the results of policies and detections that run post-del
 
 [Protect against threats in Office 365](protect-against-threats.md)
 
-[View reports for Defender for Office 365](view-reports-for-atp.md)
+[View reports for Defender for Office 365](view-reports-for-mdo.md)

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,23 +13,15 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
-description: "Learn how to get a free trial or buy a subscription for Microsoft 365 for business."
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_purchase
+search.appverid: MET150 
+description: "Sign up for a free 30-day trial for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business."
 ms.date: 08/07/2020
 ---
 
 # Try or buy a Microsoft 365 for business subscription
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 for business is a subscription service that lets you run
 your organization in the cloud while Microsoft takes care of the IT for
@@ -40,6 +33,18 @@ business and try it out for 30 days.
 
 > [!NOTE]
 > You must use a credit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is  automatically converted to a paid subscription. Your credit card isn't billed until the end of the trial period.
+
+::: moniker range="o365-21vianet"
+
+> [!IMPORTANT]
+> **Payment options for Office 365 operated by 21Vianet in China**
+> International credit cards are not accepted. You can pay for your subscription by:
+>
+> - Invoice
+> - Online payment using Alipay or China UnionPay
+> Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
 
 ## Before you begin
 
@@ -57,7 +62,7 @@ Business Premium, or Microsoft 365 Apps for business.
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The signup process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The sign up process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -76,6 +81,17 @@ these steps:
 5. On the next page, verify the subscription, and select **Checkout**.
 6. On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**. If you need to make any changes, select **Change** next to the applicable section.
 7. When you\'re finished, select **Accept agreement & place order**.
+
+## Extend your trial
+
+Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. On the **Products** tab, select the trial subscription that you want to extend.
+3. On the subscription details page, in the **Subscriptions and payment settings** section, select **Extend end date**.
+4. In the **Extend end date** pane, review the extension information, and if necessary, select a payment method. When you're finished, select **Extend trial**.
+
+When you're ready to buy, see [Buy your trial version](#buy-a-subscription-from-your-free-trial).
 
 ## Cancel your free trial subscription
 
@@ -119,6 +135,22 @@ the additional subscription they need.
 > [!NOTE]
 > You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted.
 
+::: moniker range="o365-21vianet"
+
+## Payment options
+
+You can pay for your subscription by:
+
+- Invoice
+
+- Online payment using Alipay or China UnionPay
+
+Proof of payment will be provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+> [!NOTE]
+> International credit cards are not accepted.
+::: moniker-end
+
 ## Next steps
 
 If you have a new account and are setting up your first subscription,
@@ -134,10 +166,9 @@ you can move users to it. To learn how, see [Move users to a different subscript
 
 ## Related content
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (training
-videos)\
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video)\
 [Add users and assign licenses at the same time](../admin/add-users/add-users.md) (article)\
 [Assign licenses to users](../admin/manage/assign-licenses-to-users.md) (article)\
 [Upgrade to a different plan](subscriptions/upgrade-to-different-plan.md) (article)\
 [Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md) (article)\
-[Add storage space for your subscription](add-storage-space.md)
+[Add storage space for your subscription](add-storage-space.md) (article)

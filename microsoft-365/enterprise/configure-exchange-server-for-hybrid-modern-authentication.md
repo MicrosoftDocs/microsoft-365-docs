@@ -45,7 +45,7 @@ Turning on HMA means:
 
 1. Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 
-1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD.
+1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Azure AD of all the tenants which are in hybrid with EXCH.
 
 1. Ensuring all Virtual Directories are enabled for HMA
 
@@ -53,11 +53,16 @@ Turning on HMA means:
 
 1. Enabling HMA in EXCH.
 
- **Note** Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+> [!NOTE]
+> Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+
 
 ## Make sure you meet all the prerequisites
 
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
+
+> [!NOTE]
+> Outlook Web App and Exchange Control Panel does not work with hybrid Modern Authentication.
 
 ## Add on-premises web service URLs as SPNs in Azure AD
 
@@ -71,14 +76,14 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
-Get-OutlookAnywhere | FL server,*url*
 ```
 
-Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD.
+Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the AAD of all the tenants in hybrid with EXCH.
 
 1. First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).
 
-   **Note** You need to use the _Connect-MsolService_ option from this page to be able to use the command below.
+    > [!NOTE]
+    > You need to use the _Connect-MsolService_ option from this page to be able to use the command below.
 
 2. For your Exchange-related URLs, type the following command:
 
@@ -123,17 +128,20 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-If OAuth is missing from any server and any of the four virtual directories, you need to add it using the relevant commands before proceeding ([Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)).
+If OAuth is missing from any server and any of the four virtual directories, you need to add it using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
 
 ## Confirm the EvoSTS Auth Server Object is Present
 
 Return to the on-premises Exchange Management Shell for this last command. Now you can validate that your on-premises has an entry for the evoSTS authentication provider:
 
 ```powershell
-Get-AuthServer | where {$_.Name -eq "EvoSts"}
+Get-AuthServer | where {$_.Name -like "EvoSts"}
 ```
 
 Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
+
+> [!NOTE]
+> In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each tenant in hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
 
  **Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
 
@@ -146,23 +154,37 @@ Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
+If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+
+> [!NOTE]
+> In case EXCH is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in EXCH with domains corresponding to each tenant.  The **IsDefaultAuthorizationEndpoint** flag should be set to true (using the **IsDefaultAuthorizationEndpoint** cmdlet) for any one of these AuthServer objects. This flag can't be set to true for all the Authserver objects and HMA would be enabled even if one of these AuthServer object's **IsDefaultAuthorizationEndpoint** flag is set to true.
+
 ## Verify
 
 Once you enable HMA, a client's next login will use the new auth flow. Note that just turning on HMA won't trigger a reauthentication for any client. The clients reauthenticate based on the lifetime of the auth tokens and/or certs they have.
 
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an 'Authn' type of 'Bearer\*', which represents the bearer token used in OAuth.
 
- **Note** Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+> [!NOTE]
+> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP ranges:
+If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP address ranges:
 
-```text
+```
 52.125.128.0/20
 52.127.96.0/23
 ```
 
+The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by using Microsoft services to help find, plan, and prioritize your daily life and work. For more information, please refer to [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
+
 ## Related topics
 
-[Modern Authentication configuration requirements for transition from Office 365 dedicated/ITAR to vNext](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[Modern Authentication configuration requirements for transition from Office 365 dedicated/ITAR to vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

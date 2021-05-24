@@ -2,14 +2,13 @@
 title: "What is Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -42,4 +41,6 @@ When you sign up for Microsoft 365 Business Premium, you get all the same produc
 | Secure your devices | You can protect your work files on devices by restricting mobile access, such as copy and paste. You can also selectively wipe business data from enrolled mobile devices if they are lost or stolen. |
 | Additional security features | Advanced features in Microsoft 365 Business Premium are available to help you protect your business against cyber-threats and safeguard sensitive information. The capabilities include Office 365 Advanced Threat Protection, Data loss prevention policies (DLP), Exchange Online archiving, Azure Information Protection, and Intune. |
 
-For full details, see [Microsoft 365 Business content](https://docs.microsoft.com/microsoft-365/business/).
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated hackers. 
+
+For full details, see [Microsoft 365 Business content](../business/index.yml).

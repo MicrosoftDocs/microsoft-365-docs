@@ -38,7 +38,7 @@ The benefits to hybrid identity and directory synchronization your organization 
 - Optionally enabling single sign-on scenario
 - Automating account changes in Microsoft 365
 
-For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
+For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
 
 However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
@@ -108,7 +108,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must be unique within the directory.
 
     > [!NOTE]
-    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](/powershell/module/exchange/set-mailbox).
     >
 
 - **proxyAddresses**
@@ -117,7 +117,7 @@ The attributes that you need to prepare are listed here:
   - Maximum number of characters per value: 256
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
-  - Invalid characters: \< \> ( ) ; , [ ] " '
+  - Invalid characters: \< \> ( ) ; , [ ] "
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 

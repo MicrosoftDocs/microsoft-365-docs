@@ -147,4 +147,4 @@ To provide the best-in-class encryption to our customers, Microsoft plans to dis
 
 We understand that the security of your data is important, and we're committed to transparency about changes that may affect your use of the TLS service. We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
 
-For more information about TLS 1.2 support and services support, see [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365).
+For more information about TLS 1.2 support and services support, see [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](../compliance/prepare-tls-1.2-in-office-365.md).

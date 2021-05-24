@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 # Tenant Isolation in Office 365 Video
 
 > [!NOTE]
-> Office 365 Video will be replaced by Microsoft Stream. To learn more about the new enterprise video service that adds intelligence to video collaboration and learn about the transition plans for current Microsoft 365 Video customers, see [Office 365 Video transition to Microsoft Stream overview](https://docs.microsoft.com/stream/migrate-from-office-365).
+> Office 365 Video will be replaced by Microsoft Stream. To learn more about the new enterprise video service that adds intelligence to video collaboration and learn about the transition plans for current Microsoft 365 Video customers, see [Office 365 Video transition to Microsoft Stream overview](/stream/migrate-from-office-365).
 
 ## Introduction
 

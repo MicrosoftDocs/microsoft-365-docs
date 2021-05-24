@@ -33,7 +33,7 @@ description: "Learn to track down any problems you run into while setting up a c
 Getting your domain set up to work with Microsoft 365 can be challenging. The DNS system is nitpicky to work with, and the DNS setup for your domain affects important business activities, like email!
 
 > [!NOTE]
-> You can check for problems with your domain by checking its status. Go to **Setup** > **Domains** and view the notifications in the **Status** column. If you see an issue, select More actions (three dots), and then choose **Check health**. The pane that opens will describe any issues occurring with your domain.
+> You can check for problems with your domain by checking its status. Go to **Setup** > **Domains** and view the notifications in the **Status** column. If you see an issue, select the three dots (more actions), and then choose **Check health**. The pane that opens will describe any issues occurring with your domain.
   
 ## What's going on?
 
@@ -63,21 +63,21 @@ There are a couple of common reasons that domain verification doesn't work as it
 ## Outlook isn't working?
 <a name="BKMK_OutlookBroken"> </a>
 
-If you've set up your MX record and other DNS records correctly for your domain, but mail doesn't work, let us help you [fix your Outlook problems](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
+If you've set up your MX record and other DNS records correctly for your domain, but mail doesn't work, let us help you [fix your Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## Everyone's email got switched to Microsoft 365 and you only wanted YOUR email to switch?
 <a name="BKMK_EmailSwitched"> </a>
 
 When you add your domain to Microsoft 365, typically your domain's MX record is updated (by you or Microsoft 365) to point to Microsoft 365, and ALL email sent to that domain will start coming to Microsoft 365. Make sure you've created mailboxes in Microsoft 365 for everyone who has email on your domain BEFORE you change the MX record.
   
-What if you don't want to move email for everyone on your domain to Microsoft 365? You can take steps to [pilot Microsoft 365 with just a few email addresses instead](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
+What if you don't want to move email for everyone on your domain to Microsoft 365? You can take steps to [pilot Microsoft 365 with just a few email addresses instead](../setup/domains-faq.yml).
   
 ## Can't confirm non-profit or school account status?
 <a name="BKMK_validateAcct"> </a>
 
 There are a couple of scenarios when you just need to verify your organization's domain and not set up any services. For example, to prove to Microsoft 365 that your organization qualifies for a school subscription.
   
-Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) to make sure you've completed all the required steps. It's a little different for each situation. 
+Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
   
 ## Services not working with your domain?
 <a name="BKMK_Test"> </a>
@@ -85,19 +85,19 @@ Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, 
 We can help you track down issues with your domain's DNS setup. The domains troubleshooter in Microsoft 365 will show you any records that need fixing, and exactly what the records need to be set to. 
 
 > [!TIP]
-> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Got your DNS set up correctly, but mail doesn't work in Outlook on your desktop? Check out the [different mail flow scenarios you can have with Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) to make sure you've got things set up correctly for your business. Or get more troubleshooting help with email here: [Fix Outlook problems](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## Accessing your website isn't working?
 <a name="BKMK_Website"> </a>
 
 If you've fixed any DNS issues and you're still having trouble, try one of the following.
   
-- People can't get to your website at www.mydomain.com: [Track down website issues](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- People can't get to your website at www.mydomain.com: [Track down website issues](../setup/add-domain.md)
     
-- You can't update your A record or CNAME record to point to your website: [Update custom DNS records in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+- You can't update your A record or CNAME record to point to your website: [Update custom DNS records in Microsoft 365](../setup/add-domain.md)
 
 ## Related content
 
-[Troubleshoot: Audit data on verified domain change](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Troubleshoot: Audit data on verified domain change](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
+[Domains FAQ](../setup/domains-faq.yml) (article)
 
-    

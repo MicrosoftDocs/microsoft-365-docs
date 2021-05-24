@@ -29,7 +29,7 @@ There are two model types that you can use:
 While both models are generally used for the same purpose, the key differences listed below affect which ones you can use.
 
 > [!NOTE]
-> See the [SharePoint Syntex adoption: Get started guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) for more information about form processing and document understanding scenario examples.
+> See the [SharePoint Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about form processing and document understanding scenario examples.
 
 
 ## Structured versus unstructured and semi-structured content
@@ -47,9 +47,9 @@ Use form processing models to identify files and extract data from structured or
 Document understanding models are created and managed in a SharePoint content center site. 
 
 > [!NOTE]
-> For more information about input documents, see [Form processing model requirements and limitations](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> For more information about input documents, see [Form processing model requirements and limitations](/ai-builder/form-processing-model-requirements). 
 
-Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they're uploaded to the document library.
+Form processing models are created in PowerApps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they're uploaded to the document library.
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
 
@@ -61,8 +61,26 @@ You can apply document understanding models to SharePoint document libraries tha
 
 Form processing models can currently only be applied to the SharePoint document library from which you created them. This allows licensed users with access to the site to create a form processing model. Note that an admin needs to enable form processing on a SharePoint document library for it to be available to licensed users.
 
- ## See Also
-[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+## Comparison of forms processing and document understanding
+
+Use the following table to understand when to use forms processing and when to use document understanding:
+
+| Feature | Forms processing | Document understanding |
+| ------- | ------- | ------- |
+| Model Type  - when to use each | Used for semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar.  | Used for semi-structured file formats – for example, Office documents where there are differences in the layout, but still similar information to be extracted. |
+| Model creation | Model created in AI builder with seamless access from SharePoint document library.| Model created in SharePoint in a new site, the content center. |
+| Classification type| Settable classifier is used to give clues to the system on what data to extract.| Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract.|
+| Locations | Trained for a single document library.| Can be applied to multiple libraries.|
+| Supported file types| Train on PDF, JPG, PNG format, total 50 MB and 500 pages.| Train on 5-10 PDF, Office, or email files, including negative examples.<br>Office files are truncated at 64k characters. OCR-scanned files are limited to 20 pages.|
+| Integrate with Managed Metadata | No | Yes, by training entity extractor referencing a configured managed metadata field.|
+| Compliance feature integration when Microsoft Information Protection is enabled | Set published Retention labels.<br>Set Sensitivity labels is coming. | Set published Retention labels.<br>Set Sensitivity labels is coming. |
+| Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
+| Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2000 file pages.<br>| N/A |
+| Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
+| Supported languages| English <br>Coming later in 2021: Latin alphabet languages | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
+
+## See Also
+[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

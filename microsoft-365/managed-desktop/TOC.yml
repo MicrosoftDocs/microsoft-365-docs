@@ -15,12 +15,16 @@
     - name: Microsoft Managed Desktop service description
       href: service-description/index.md
       items: 
-        - name: Supported regions and languages
+        - name: Supported regions
           href: service-description/regions-languages.md
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
         - name: Device requirements
           href: service-description/device-requirements.md
+        - name: Device images
+          href: service-description/device-images.md
+        - name: Device names
+          href: service-description/device-names.md
         - name: Program devices
           href: service-description/device-list.md
           items: 
@@ -28,6 +32,8 @@
               href: service-description/archived-device-list.md
         - name: Device services
           href: service-description/device-services.md
+        - name: Device profiles
+          href: service-description/profiles.md
         - name: Device configuration
           href: service-description/device-policies.md
         - name: Security technologies
@@ -42,6 +48,8 @@
           href: service-description/support.md
         - name: Operations and monitoring
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostic logs
+          href: service-description/diagnostic-logs.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
         - name: Application control
@@ -55,23 +63,6 @@
       items: 
         - name: Prerequisites for Microsoft Managed Desktop
           href: get-ready/prerequisites.md
-        - name: Prepare network
-          href: get-ready/network.md
-        - name: Prepare on-premises resources access
-          href: get-ready/authentication.md
-        - name: Prepare mapped drives
-          href: get-ready/mapped-drives.md
-        - name: Prepare certificates and network profiles
-          href: get-ready/certs-wifi-lan.md
-        - name: Prerequisites for guest accounts
-          href: get-ready/guest-accounts.md
-        - name: Prepare printing resources
-          href: get-ready/printing.md
-        - name: Prepare apps
-          href: get-ready/apps.md
-          items: 
-            - name: Working with Microsoft Consulting Services
-              href: get-ready/apps-MCS.md
         - name: Use readiness assessment tools
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -79,6 +70,25 @@
               href: get-ready/readiness-assessment-fix.md
             - name: Downloadable readiness assessment checker
               href: get-ready/readiness-assessment-downloadable.md
+        - name: Prerequisites for guest accounts
+          href: get-ready/guest-accounts.md
+        - name: Prepare network
+          href: get-ready/network.md
+        - name: Prepare certificates and network profiles
+          href: get-ready/certs-wifi-lan.md
+        - name: Prepare on-premises resources access
+          href: get-ready/authentication.md
+        - name: Prepare apps
+          href: get-ready/apps.md
+          items: 
+            - name: Working with Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+        - name: Prepare mapped drives
+          href: get-ready/mapped-drives.md
+        - name: Prepare printing resources
+          href: get-ready/printing.md
+        - name: Address device names
+          href: get-ready/address-device-names.md
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
@@ -94,6 +104,10 @@
           href: get-started/company-portal.md
         - name: Enable Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
+        - name: Localize the user experience
+          href: get-started/localization.md
+        - name: Validate new devices
+          href: get-started/validate-device.md
         - name: Set up devices
           href: get-started/set-up-devices.md
           items: 
@@ -108,6 +122,8 @@
           href: get-started/get-started-devices.md
         - name: First-run experience with Autopilot and the Enrollment Status Page 
           href: get-started/esp-first-run.md
+        - name: Windows 10 location service
+          href: get-started/device-location.md
         - name: Get started with app control
           href: get-started/get-started-app-control.md
         - name: Deploy apps
@@ -147,6 +163,10 @@
           href: working-with-managed-desktop/manage-apps.md
         - name: Work with app control
           href: working-with-managed-desktop/work-with-app-control.md
+        - name: Change device profile
+          href: working-with-managed-desktop/change-device-profile.md
+        - name: Remove devices
+          href: working-with-managed-desktop/remove-devices.md
         - name: Configurable settings
           href: working-with-managed-desktop/config-setting-overview.md
           items: 

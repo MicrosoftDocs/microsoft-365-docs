@@ -30,7 +30,7 @@ This article will help you understand how to optimize images in SharePoint Onlin
 For information about optimizing images in classic publishing sites, see [Image optimization for SharePoint Online](image-optimization-for-sharepoint-online.md)..
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze image optimization
 
@@ -67,7 +67,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
-[Performance in the modern SharePoint experience](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 

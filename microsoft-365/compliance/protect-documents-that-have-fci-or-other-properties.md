@@ -50,7 +50,7 @@ In SharePoint Online and OneDrive for Business, the search index is built up by 
 
 This is important because DLP uses the search crawler to identify and classify sensitive information on your sites, and then store that sensitive information in a secure portion of the search index. When you upload a document to Office 365, SharePoint automatically creates crawled properties based on the document properties. But to use an FCI or other property in a DLP policy, that crawled property needs to be mapped to a managed property so that content with that property is kept in the index.
 
-For more information on search and managed properties, see [Manage the search schema in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
+For more information on search and managed properties, see [Manage the search schema in SharePoint Online](/sharepoint/manage-search-schema).
 
 ### Step 1: Upload a document with the needed property to Office 365
 
@@ -100,9 +100,9 @@ Next, they create a DLP policy with two rules that both use the condition **Docu
 
 The condition **Document properties contain any of these values** is temporarily not available in the UI of the Security &amp; Compliance Center, but you can still use this condition by using PowerShell. You can use the  `New\Set\Get-DlpCompliancePolicy` cmdlets to work with a DLP policy, and use the  `New\Set\Get-DlpComplianceRule` cmdlets with the  `ContentPropertyContainsWords` parameter to add the condition **Document properties contain any of these values**.
 
-For more information on these cmdlets, see [Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
+For more information on these cmdlets, see [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell).
 
-1. [Connect to the Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Create the policy by using  `New-DlpCompliancePolicy`.
 
@@ -120,7 +120,7 @@ This PowerShell creates a DLP policy that applies to all locations.
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI includes many built-in properties, including **Personally Identifiable Information** used in this example. The possible values for each property can be different for every organization. The **High**, **Moderate**, and **Low** values used here are only an example. For your organization, you can view the Windows Server FCI classification properties with their possible values in the file Server Resource Manager on the Windows Server-based file server. For more information, see [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
+   Windows Server FCI includes many built-in properties, including **Personally Identifiable Information** used in this example. The possible values for each property can be different for every organization. The **High**, **Moderate**, and **Low** values used here are only an example. For your organization, you can view the Windows Server FCI classification properties with their possible values in the file Server Resource Manager on the Windows Server-based file server. For more information, see [Create a classification property](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
 When you finish, your policy should have two new rules that both use the **Document properties contain any of these values** condition. This condition won't appear in the UI, though the other conditions, actions, and settings will appear.
 
@@ -137,7 +137,7 @@ To detect content with that property everywhere, you may want to manually reques
 > [!CAUTION]
 > Re-indexing a site can cause a massive load on the search system. Don't re-index your site unless your scenario absolutely requires it.
 
-For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://go.microsoft.com/fwlink/p/?LinkID=627457).
+For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
 ### Reindex a site (optional)
 
@@ -147,7 +147,7 @@ For more information, see [Manually request crawling and re-indexing of a site, 
 
 ## More information
 
-- [Overview of data loss prevention policies](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 

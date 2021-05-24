@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Learn to manage email signatures, including legal disclaimers or disclosure statements for all email messages that enter or leave your organization.
+description: "Manage email signatures, including legal disclaimers or disclosure statements for all email messages that enter or leave your organization."
 ---
 
 # Create organization-wide signatures and disclaimers
 
  You can manage email signatures by adding an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
- Watch a short video about creating a company-wide email signature. <br><br>
+## Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Create a signature that applies to all messages
 
@@ -75,14 +75,14 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 6. Under **Apply this rule**, select **[Apply to all messages]**.
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
+    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
   
 7. Under Do the following, leave **Append the disclaimer** selected. 
     
 8.  Select **Enter text** and type your disclaimer. 
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
+    > [Learn more](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
 
 9. Select **Select one** and choose **Wrap** as a fallback option. Then **OK**. This means that if the disclaimer can't be added because of encryption or another mail setting, it will be wrapped in a message envelope.
     
@@ -110,4 +110,11 @@ To gain these and other capabilities to manage email signatures, use a third-par
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.
+For information about using PowerShell, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+
+## Related content
+
+[Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
+[User email settings](../email/office-365-user-email-settings.md) (article)\
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+

@@ -31,9 +31,9 @@ This article contains links to information about network planning and testing, a
   
 Before you deploy for the first time or migrate to Office 365, you can use the information in these topics to estimate the bandwidth you need and then to test and verify that you have enough bandwidth to deploy or migrate to Office 365.
 
-This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).
+This article is part of [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).
 
-For the steps to optimize your network for Microsoft 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) poster.
+For the steps to optimize your network for Microsoft 365 and other Microsoft cloud platforms and services, see the [Microsoft Cloud Networking for Enterprise Architects](../solutions/cloud-architecture-models.md) poster.
    
 ## Estimate network bandwidth requirements
 <a name="EstimateBandwidthRequirements"> </a>
@@ -46,7 +46,7 @@ To estimate the bandwidth, use the following steps:
     
 2. Determine which Office 365 services and features will be available for clients to use. You will likely have groups of people with different services or usage profiles.
     
-3. Measure the network use for a pilot group of clients. Ensure the pilot clients are representative of the different profiles of people in the organization as well as the different geographic locations. You can cross-check your results against our old calculators for [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) and [Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network) or the [case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) we performed on our own network. 
+3. Measure the network use for a pilot group of clients. Ensure the pilot clients are representative of the different profiles of people in the organization as well as the different geographic locations. You can cross-check your results against our old calculators for [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) and [Microsoft Teams](/microsoftteams/prepare-network) or the [case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) we performed on our own network. 
     
 4. Use the measurements from the pilot group to extrapolate the entire organization's needs and re-test to validate the estimations before making any changes to your network.
     
@@ -66,7 +66,7 @@ Dig a little deeper into these best practices for more information about improvi
   
 1. Want to get started helping your users right away? See [Best practices for using Office 365 on a slow network](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) for tips on using Office 365, including SharePoint Online, Exchange Online, and Lync Online, when your network just isn't cooperating. This article links out to loads of content on TechNet and Support.office.com for optimizing your Office 365 experience and includes information on easy ways to customize your web pages and how to set your Internet Explorer settings for the best Office 365 experience. 
     
-2. Read [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance. This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. 
+2. Read [Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance. This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. 
     
 3. Improve mail migration performance by carefully managing the schedule for Windows Updates. You can update your client computers in batches and ensure that all client computers are updated before migrating to Office 365 to regulate the use of network bandwidth. For more information, see [Manually update and configure desktops for Office 365 for the latest updates](https://support.microsoft.com/gp/office-2013-365-update).
     
@@ -97,7 +97,7 @@ These topics contain detailed Office 365 network reference information.
     
 - [IPv6 support in Office 365 services](ipv6-support.md)
     
-- [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples)
+- [Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md)
     
 - [Office 365 video networking Frequently Asked Questions (FAQ)](office-365-video-networking-faq.md)
     

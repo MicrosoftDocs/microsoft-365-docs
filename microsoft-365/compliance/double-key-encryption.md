@@ -21,15 +21,15 @@ ms.collection:
 
 > *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
-> *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *Service description for: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
-For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
+For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key).
 
 ## When your organization should adopt DKE
 
@@ -55,13 +55,13 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption for Microsoft 365** comes with Microsoft 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
 DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-**Microsoft Office Apps for enterprise** version *.12711 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+**Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
 **Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
 
@@ -69,7 +69,7 @@ DKE sensitivity labels are made available to end users through the sensitivity r
 
 **Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
+**Online content support**. You can store documents and files protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business. You must label and protect documents and files with DKE by supported applications before you upload to these locations. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the supported desktop applications and clients on your local computer.
 
 ## Overview of deploying DKE
 
@@ -77,7 +77,7 @@ You'll follow these general steps to set up DKE. Once you've completed these ste
 
 1. Deploy the DKE service as described in this article.
 
-2. Create a label with Double Key Encryption. Navigate to Information protection under the [Microsoft 365 compliance center](https://compliance.microsoft.com) and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+2. Create a label with Double Key Encryption. Navigate to Information protection under the [Microsoft 365 compliance center](https://compliance.microsoft.com) and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
 
 3. Use Double Key Encryption labels. Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
 
@@ -240,6 +240,8 @@ DKE tenant and key settings are located in the **appsettings.json** file.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
 
 Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
 
@@ -360,7 +362,7 @@ Your setup is now complete. Before you publish the keystore, in appsettings.json
 
 ### Deploy the DKE service and publish the key store
 
-For production deployments, deploy the service either in a third-party cloud or [publish to an on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli).
+For production deployments, deploy the service either in a third-party cloud or [publish to an on-premises system](/aspnet/core/tutorials/publish-to-iis?preserve-view=true&tabs=netcore-cli&view=aspnetcore-3.1).
 
 You may prefer other methods to deploy your keys. Select the method that works best for your organization.
 
@@ -389,7 +391,7 @@ To publish the key store, you'll create an Azure App Service instance to host yo
 
    - [Publish via ZipDeployUI](#publish-via-zipdeployui)
    - [Publish via FTP](#publish-via-ftp)
-   - [Publish via Visual Studio 2019 or later](https://docs.microsoft.com/aspnet/core/tutorials/)
+   - [Publish via Visual Studio 2019 or later](/aspnet/core/tutorials/)
 
 #### Publish via ZipDeployUI
 
@@ -518,13 +520,15 @@ To register the DKE service:
 
     In the new client application:
 
-    1. Define the Client ID as **d3590ed6-52b3-4102-aeff-aad2292ab01c**. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
+    1. Define the Client ID as `d3590ed6-52b3-4102-aeff-aad2292ab01c`. This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
 
     2. Under **Authorized scopes**, select the **user_impersonation** scope.
 
     3. Select **Add application**.
 
     4. Select **Save** at the top to save your changes.
+
+    5. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`. This value is the Azure Information Protection unified labeling client ID. 
 
 Your DKE service is now registered. Continue by [creating labels using DKE](#create-sensitivity-labels-using-dke).
 
@@ -556,6 +560,6 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 
 ## Migrate protected files from HYOK labels to DKE labels
 
-If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner).
 
 If you don't migrate content, your HYOK protected content will remain unaffected.

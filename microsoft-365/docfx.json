@@ -82,7 +82,7 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ],
+      ]
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -98,6 +98,9 @@
       "feedback_product_url": {
         "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
         "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance"
+      },
+      "searchScope": {
+        "security/office-365-security/**/*.md": "Defender for Office"
       }
     },
     "template": [],

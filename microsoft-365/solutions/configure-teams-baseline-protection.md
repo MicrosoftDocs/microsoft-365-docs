@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: "Learn how to deploy teams with a baseline level of protection."
 ---
 
@@ -32,9 +33,9 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-docs.md)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md)<br>[Safe Links](../security/office-365-security/safe-links.md)|
 
 ## Teams guest sharing
 
@@ -54,7 +55,7 @@ To set Teams guest access settings
 > [!NOTE]
 > It may take up to twenty-four hours for the Teams guest setting to become active after you turn it on.
 
-Guest sharing is turned on by default for Office 365 groups and SharePoint, however if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) to ensure that guest sharing will be available in Teams.
+Guest sharing is turned on by default for Office 365 groups and SharePoint, however if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](./collaborate-as-team.md) to ensure that guest sharing will be available in Teams.
 
 ## Site and file sharing
 
@@ -66,7 +67,7 @@ To change the default sharing link
 3. Under **File and folder links**, select **Only people in your organization**.
 4. Click **Save**.
 
-For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## Create a team
 
@@ -89,12 +90,12 @@ To update the site sharing settings
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
+- Have guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
+- Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
+- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
 
 ## See Also
 
-[Manage meeting policies in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams)
 
-[Get started with insider risk management](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Get started with insider risk management](../compliance/insider-risk-management-configure.md)

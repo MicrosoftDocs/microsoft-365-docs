@@ -28,24 +28,24 @@ To deploy your cloud services:
 - [Get your services ready](configure-services-and-applications.md)
 - [Migrate your on-premises data to Microsoft 365](migrate-data-to-office-365.md)
 - Get your cloud services set up for your users
-  - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
-  - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
-  - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+  - [Exchange Online](/Exchange/exchange-online)
+  - [SharePoint Online](/sharepoint/sharepoint-online)
+  - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
+  - [Microsoft Teams](/MicrosoftTeams/Teams-overview)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [Train your users](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+- [Train your users](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## Manage
 
 To manage your cloud services: 
 
 - [Check your service health](view-service-health.md)
-- [Understand your support options](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- [Understand your support options](../business-video/get-help-support.md)
 - Administer your cloud services
-  - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
+  - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
-  - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide)
+  - [Skype for Business](/SkypeForBusiness/skype-for-business-online)
+  - [Microsoft Teams](//MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Perform performance tuning for your cloud services](tune-microsoft-365-performance.md)
 

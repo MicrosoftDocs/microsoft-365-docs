@@ -54,4 +54,4 @@ Exchange Online synchronizes the **PreferredDataLocation** property from Azure A
 
 - Public folders are supported in multi-geo organizations. However, the public folders must remain in the central geo location. You can't move public folders to satellite geo locations.
 
-- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. For more information, see [Manage mailbox auditing](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
+- In a multi-geo environment, cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. For more information, see [Manage mailbox auditing](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).

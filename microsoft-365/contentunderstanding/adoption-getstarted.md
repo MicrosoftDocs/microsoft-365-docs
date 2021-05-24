@@ -21,7 +21,7 @@ localization_priority: Normal
 Think of the intelligent content services available in SharePoint Syntex as having three parts:
 
 - **Content understanding:** create no-code AI models to classify and extract information from content to automatically apply metadata for knowledge discovery and reuse. Learn more about [content understanding](document-understanding-overview.md).
-- **Content processing:** Automate capture, ingestion and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
+- **Content processing:** Automate capture, ingestion, and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
 - **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Information Protection.
 
 With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case:
@@ -35,29 +35,14 @@ With new AI services and capabilities, you can build content understanding and c
 | Restricted to a single library. | Can be applied to multiple libraries. |
 | Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
 
-The following table explains availability and licensing for SharePoint Syntex:
-
-| Form processing | Document understanding |
-|:-------|:-------|
-| Form processing relies on Power Platform. <br>For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions. |
-| Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2000 file pages. | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. |
-| Provisioned against the default common data service environment. | Does not have capacity restrictions. |
-
-For more information about AI Builder credits and units, see [AI Builder licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-SharePoint Syntex integrates with Microsoft 365 compliance features like:
-
-- Retention labels that define records policy based on document age or external events.
-- Sensitivity labels that set DLP, encryption, sharing, and conditional access policies.
-
-Users can apply labels, or they can be applied automatically by SharePoint Syntex AI models. Analytics and file plans provide scaled management of label usage and policies.
+For a more complete comparison of the capabilities, see [Difference between document understanding and form processing models](difference-between-document-understanding-and-form-processing-model.md).
 
 ## Identify pilot business scenarios to optimize
 
-To prepare for using SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The why helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where document understanding can help your organization:
+To prepare for using SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where document understanding can help your organization:
 
-- Content processing: Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data. For more information, see [Form processing overview](form-processing-overview.md).
-- Invoice analysis: Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
+- **Content processing:** Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data. For more information, see [Form processing overview](form-processing-overview.md).
+- **Invoice analysis:** Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
 
 Think about ways that SharePoint Syntex can help your organization:
 
@@ -65,7 +50,18 @@ Think about ways that SharePoint Syntex can help your organization:
 - Improve search accuracy
 - Manage compliance risk
 
-### Form processing scenario example
+When thinking about which business scenarios to consider, ask yourself the following questions:
+
+- Does it solve a real problem?
+- Will it be widely used or have broad impact?
+- Is it obtainable?
+- Can you measure success?
+
+Prioritize scenarios based on impact and ease of implementation. Make your initial focus area higher impact scenarios that can also be easily implemented. De-prioritize lower impact scenarios that are hard to implement.
+
+Use the following example scenarios to prompt ideas about how you can use SharePoint Syntex in your organization.
+
+### Scenario: Track data from invoices with form processing
 
 For example, you can set up a process using SharePoint Syntex and Power Automate features to track and monitor invoices.
 
@@ -82,17 +78,17 @@ For example, you can set up a process using SharePoint Syntex and Power Automate
 When you automate this scenario, you can:
 
 - Save time and money by automatically extracting data from the invoices instead of doing it manually.
-- Reduce potential errors and ensure better compliance by using workflows to act on the invoices and notify you of any issues.
+- Reduce potential errors and ensure better compliance by using workflows to check invoices and notify you of any issues.
 
-### Document understanding scenario example
+### Scenario: Track information from contracts with document understanding
 
-As another example, you can set up a process to identify contracts that your company has with other companies or individuals. You can set up a model to extract key information from those contracts, such as the client name, fees, dates, or other important information, and add that to the library as fields you can quickly view. And you can apply a retention label on the document library to ensure that contracts cannot be deleted before a specific length of time for appropriate compliance with your business regulations.
+As another example, you can set up a process to identify contracts your company has with other companies or individuals. Set up a model to extract key information from those contracts, such as the client name, fees, dates, or other important information, and add the information to the library as fields you can quickly view. Apply a retention label on the document library to ensure that contracts can't be deleted before a specific length of time for appropriate compliance with your business regulations.
 
 1. Start at the content center and create a new document understanding model for contracts.
 1. Upload sample documents for positive and negative examples, then run the training to identify contract documents and review the results.
 1. Train the extractor to identify fields in the contracts, such as the client name, fee, and date, and then test the extractor.
 1. When the model is complete, apply the model to a library where you can upload contracts.
-1. Apply a retention label to the date field, so that contracts are retained in the library for the length of time your organization requires for contracts.
+1. Apply a retention label to the date field, so that contracts are retained in the library for the required length of time.
 
 ![Track and monitor contracts with SharePoint Syntex and retention labels](../media/content-understanding/process-contracts-flow.png)
 
@@ -101,16 +97,72 @@ When you automate this scenario, you can:
 - Save time and money by automatically extracting data from the contracts instead of doing it manually.
 - Ensure better compliance by using retention labels to ensure that the contracts are retained appropriately.
 
-### Tips for identifying scenarios
+### Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex
 
-When thinking about which business scenarios to consider, ask yourself the following questions:
+Reducing risks is a common goal for most companies. You might need:
 
-- Does it solve a real problem?
-- Will it be widely used or have broad impact?
-- Is it obtainable?
-- Can you measure success?
+- A better way to provide/enforce information governance across your tenant.
+- To improve the system for classification of documents, emails and other forms of communication considered ‘records’ for projects.
+- To audit receipts, contracts, and so on, to ensure compliance with company policies.
+- To ensure that projects have all the documentation required for compliance.
 
-Prioritize scenarios based on impact and ease of implementation. Make your initial focus area higher impact scenarios that can also be easily implemented. De-prioritize lower impact scenarios that are hard to implement.
+Set up some processes for compliance with SharePoint Syntex to capture and appropriately classify, audit, and flag documents and forms that need better governance. You can rely on SharePoint Syntex to auto classify content rather than relying on end users to manually tag, or the compliance team to manually apply governance rules and archiving. And you can enable a simplified search experience, manage data volumes, apply records management and retention policies, ensure compliance, and best practice archiving and purging practices.
+
+When you automate this scenario, you can feel secure that:
+
+- Compliance is upheld and risk is reduced.
+- Taxonomy and records management is consistently and accurately applied.
+- Content volumes are controlled.
+- Employees can easily discover the right information in the right context.
+
+### Scenario: Capture information from previously inaccessible documents
+
+Most organizations have large repositories of legal documents, policies, contracts, HR documents, and governance guidelines. Mine these data stores to extract valuable information such as: projects, sectors, themes, people, geographical areas, and so on.
+
+For example, an HR director needs to quickly access all HR documents – including resumes, HR policies, and other forms. And they want to quickly identify necessary information from resumes and other HR-related documents without manually sifting through the documents. They’re looking for a solution that allows them to quickly find the information they need without having to manually look through thousands of resumes, HR policies, and other documentation that may be spread across several sites.
+
+When you automate this scenario, you can:
+
+- Unlock knowledge from digital content.
+- Classify HR policies, resumes, sales documents, technical blueprints, account plans and extract information.
+- Quickly find the correct information or document that you’re looking for.
+- Get instant access to the latest information.
+- Reduce search times.
+
+### Scenario: Improve data processing to provide insights & analytics
+
+For example, a pharmaceutical company could use SharePoint Syntex to extract information from FDA documents to answer questions that their leaders have. Having the answers more easily accessible can reduce the time needed to produce these answers and increase the availability of data to generate more accurate answers to leadership questions.
+
+For example, a project manager needs to quickly provide answers to product-related questions from my leadership team. They need to find information and metrics related to queries in one consolidated dashboard. They’re looking for a solution that extracts the information they need from product labels, product pamphlets, and other materials and generates a consolidated report that they can use when reporting back to their leadership team.
+
+When you automate this scenario, you can:
+
+- Reduce time to produce answers.
+- Increase availability of data.
+- Provide more accurate answers.
+
+### Scenario: Automate order processing
+
+With SharePoint Syntex, you can reduce the time of manual processing of customer orders. For example, you can upload orders from fax, email, or paper into SharePoint by using OCR processing and then extract the metadata from those orders so you can fulfill them by using automated processes.
+
+For example, a supply chain manager wants to reduce errors caused by manual data entry. They want to avoid manual review and data entry of inbound customer orders (paper, fax, or e-mail) to reduce errors going into their business systems. They want a solution that applies AI and machine learning techniques to validate incoming order information, extract core data and automatically push it into their ERP system, for order fulfillment and reconciliation.
+
+When you automate this scenario, you can ensure that:
+
+- Order and shipment accuracy increases.
+- Fees or penalties associated to order or shipment errors are reduced.
+- Delays in invoicing or payments decrease.
+- Personnel costs are reduced.
+
+### Scenario: Simplify visa renewal process
+
+SharePoint Syntex can help you automate reminders and renewals for key contract information. For example, an HR director needs to ensure that employees’ visas are up to date and/or renewed on time. They want to give people a simple and intuitive process for updating their Visas. They need a solution that extracts renewal dates from contracts and automatically sends employees reminders when their renewal dates are approaching.
+
+When you automate this scenario, you can ensure that:
+
+- The levels of non-compliance are reduced.
+- The number of manual reminders is reduced.
+- The number of fines for non-compliance is reduced.
 
 ## Identify roles & responsibilities
 
@@ -118,7 +170,7 @@ Determine who in your organization will build and manage the models? The followi
 
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
-| AAD role| ADD role | AAD role | Champions |
+| AAD role| AAD role | AAD role | Champions |
 | Configure form processing | Configure Common data service environment for form processing | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 

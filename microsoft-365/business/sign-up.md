@@ -2,8 +2,8 @@
 title: "Sign up for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,7 +30,7 @@ description: "Learn what Microsoft 365 Business Premium includes, and get step-b
 
 # Sign up for Microsoft 365 Business Premium
 
-To find out what Microsoft 365 Business Premium includes, watch a [short video](https://go.microsoft.com/fwlink/?linkid=2109651) and see the [Overview](microsoft-365-business-overview.md).
+To find out what Microsoft 365 Business Premium includes, watch a [short video](../business-video/what-is-microsoft-365.md) and see the [Overview](microsoft-365-business-overview.md).
 
 There are three ways to get Microsoft 365 Business Premium:
 - **Buy Microsoft 365 Business Premium and complete your own setup**: To purchase Microsoft 365 Business Premium online, [follow the steps below](#sign-up-steps).
@@ -70,7 +70,7 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
             If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain now. Select **Buy a new domain name**, and enter the name of your business. For example, if your company is called *ContosoSkis*, try entering Contosokis.com, Contososkis.org, or Contososkis.biz. Then select **Check availability** to see whether your chosen domain is available. You can try multiple options before you make a decision. If your domain name is available, we'll let you know the cost and bill you directly with your new plan. 
        
             > [!TIP]
-            > if you're not sure what domain extension to choose for your new domain (for example, .com or .org), see [Buy a domain name](https://go.microsoft.com/fwlink/?linkid=2109700)
+            > if you're not sure what domain extension to choose for your new domain (for example, .com or .org), see [Buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md)
         
         - **I'm not sure, or I own a domain name already** 
         
@@ -81,7 +81,7 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
 
     1. Decide how many people in your business need a Microsoft 365 license, or leave the **Number of users** set to 1 for now and add more people later. 
     2. Select monthly or annual billing, check the total cost, and select **Next**. 
-    3. Add your credit card details. If your company address doesn't match your credit card address, we'll need your company address too. Your company address determines what taxes you pay and which services are available. For more information about taxes, see [What tax will I be charged?](https://go.microsoft.com/fwlink/?linkid=2109701).
+    3. Add your credit card details. If your company address doesn't match your credit card address, we'll need your company address too. Your company address determines what taxes you pay and which services are available. For more information about taxes, see [What tax will I be charged?](../commerce/billing-and-payments/tax-information.md).
     4. Select **Place order**. 
 It takes a short time for Microsoft to finish setting up a new plan.
 
@@ -93,4 +93,4 @@ To get help with setup, see [set up](set-up.md).
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](../business-video/index.yml)

@@ -43,7 +43,7 @@ Use the following block of PowerShell commands to create the virtual machines fo
 Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 First, you create an Azure internal load balancer for the two AD FS servers. Specify the values for the variables, removing the \< and > characters. When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.
   
@@ -154,5 +154,3 @@ Use [Phase 4: Configure web application proxies](high-availability-federated-aut
 [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-

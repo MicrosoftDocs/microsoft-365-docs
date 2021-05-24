@@ -16,7 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: "Learn to verify your domain and create DNS records at any DNS hosting provider for Microsoft 365."
+description: "Connect a domain at any DNS hosting provider to Microsoft 365 by verifying your domain and updating the DNS records in your registrar’s account."
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
@@ -120,11 +120,11 @@ Make sure that the fields are set to the following values:
 
 Save the record.
 
-Validate your SPF record by using one of these [SPF validation tools](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+Validate your SPF record by using one of these [SPF validation tools](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. To protect against these, once you've set up SPF, you should also set up DKIM and DMARC for Microsoft 365. 
 
-To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) and [Use DMARC to validate email in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) and [Use DMARC to validate email in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### Add SRV records for communications services (Teams, Skype for Business)
 
@@ -161,3 +161,9 @@ To add these values, create a single string, separating the values with spaces a
 
 - Example 1: `100 1 443 sipdir.online.lync.com.`
 - Example 2: `100 1 443 sipdir.online.lync.com`
+
+## Related content
+
+[Change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+[Manage domains](index.yml) (link page)

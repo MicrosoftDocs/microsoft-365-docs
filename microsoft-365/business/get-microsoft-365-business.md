@@ -2,8 +2,8 @@
 title: "Get Microsoft 365 Business Premium from partner center"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -47,11 +47,8 @@ You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/st
   
 3. On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business Premium**.
     
-    Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
+    Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](../enterprise/index.yml) instead. 
     
     ![On the New subscription page, choose small business.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     Complete the rest of the steps for adding a new customer, including the business name.
-    
-
-

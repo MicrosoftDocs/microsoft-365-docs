@@ -64,14 +64,18 @@ Each user should have a *preferred data location* (PDL) set so that Microsoft 36
 
 Create a list of your users, and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
-If your users are synchronized from an on-premises Active Directory system to Azure Active Directory, you must set the preferred data location as an Active Directory attribute and synchronize it by using Azure Active Directory Connect. You cannot directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+If your users are synchronized from an on-premises Active Directory system to Azure Active Directory, you must set the preferred data location as an Active Directory attribute and synchronize it by using Azure Active Directory Connect. You cannot directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 Read [User experience in a multi-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a multi-geo environment.
 
-For details about the Teams experience in a Microsoft 365 Multi-Geo tenancy, see [Teams experience in a Microsoft 365 OneDrive and SharePoint Online Multi-Geo-enabled tenancy](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
+For details about the Teams experience in a Microsoft 365 Multi-Geo tenancy, see [Teams experience in a Microsoft 365 OneDrive and SharePoint Online Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 To get started configuring Microsoft 365 Multi-Geo, see [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
 Once you've completed the configuration, remember to [migrate your users' OneDrive libraries](move-onedrive-between-geo-locations.md) as needed to get your users working from their preferred data locations.
+
+## Related topics
+
+[Microsoft 365 Multi-Geo eDiscovery configuration](./multi-geo-ediscovery-configuration.md)

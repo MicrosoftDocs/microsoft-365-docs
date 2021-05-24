@@ -22,15 +22,11 @@ description: "Admin roles map to business functions and give permissions to do s
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
 
-The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
-::: moniker range="o365-worldwide"
-
 In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
-
-::: moniker-end
 
 ## Microsoft Intune Roles available in the Microsoft 365 admin center
 
@@ -53,7 +49,7 @@ A partner can assign these roles:
 
 - Limited administration, which has privileges equivalent to a helpdesk admin.
 
-Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
   
 ## Related articles
 

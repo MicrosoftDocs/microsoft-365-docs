@@ -20,7 +20,7 @@ It is important to plan the best way to set up and configure topics in your envi
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
-If you have configured SharePoint to [require managed devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
+If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), be sure to set up Topics from a managed device.
 
 ## Video demonstration
 
@@ -31,6 +31,27 @@ This video shows the process for setting up Topics in Microsoft 365.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## Assign licenses
+
+You must assign licenses for the users who will be using Topics. Only users with a license can see information on topics including highlights, topic cards, topic pages and the topic center. 
+
+To assign licenses:
+
+1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
+
+2. Select the users that you want to license, and click **Licenses and apps**.
+
+3. Under **Licenses**, select **Viva Topics**.
+
+4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center](../media/topic-experiences-licenses.png)
+
+5. Click **Save changes**.
+
+It may take up to an hour for users to get access to Topics after the licenses are assigned.
 
 ## Set up Topics
 
@@ -118,19 +139,7 @@ To set up Topics
 
     ![Settings applied](../media/ksetup7.png)    
 
-## Assign licenses
-
-Once you have configured topic experiences, you must assign licenses for the users who will be using Topics. Only users with a license can see information on topics including highlights, topic cards, topic pages and the topic center. 
-
-To assign licenses:
-
-1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
-
-2. Select the users that you want to license, and click **Licenses and apps**.
-
-3. Under **Apps**, make sure **Graph Connectors Search with Index** and **Topic Experiences** are both selected.
-
-4. Click **Save changes**.
+Note that the first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
 ## Manage topic experiences
 

@@ -2,8 +2,8 @@
 title: "How do protection features in Microsoft 365 Business Premium map to Intune settings"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 ms.date: 8/13/2018
 audience: Admin
@@ -38,7 +38,7 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
   
  > [!IMPORTANT]
  > 
- > A Microsoft 365 Business Premium subscription gives you a license to modify all the Intune settings. See [Introduction to Intune to get started.](https://docs.microsoft.com/intune/introduction-intune)
+ > A Microsoft 365 Business Premium subscription gives you a license to modify all the Intune settings. See [Introduction to Intune to get started.](/intune/introduction-intune)
   
 Select the Policy name you want &mdash; for example, Application policy for Android &mdash; and then choose **Policy settings**.
   
@@ -103,5 +103,3 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |**Windows spotlight**, all blocked if this is set to **off** in Microsoft 365 Business Premium.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> | This setting is in **Microsoft Intune** \> **Service updates - Windows 10 Update Rings**, choose **Update policy for Windows 10 devices**, and then **Properties** \> **Settings**.  <br/>  When the Microsoft 365 Business Premium setting is set to **On**, all the following settings are set:  <br/> **Service branch** is set to **CB** (CBB when this is turned off in Microsoft 365 Business Premium).  <br/> **Microsoft product updates** is set to **Allow**.  <br/> **Windows drivers** is set to **Allow**.  <br/> **Automatic update behavior** is set to **Auto install at maintenance time** with:  <br/> **After hours start** is set to **6 AM**.  <br/> **Active hours end** is set to **10 PM**.  <br/> **Quality update deferral period (days)** is set to **0**.  <br/> **Feature update deferral period (days)** is set to **0**.  <br/> **Delivery optimization download mode** is set to **HTTP blended with peering behind same NAT**.  <br/> |
 |||
-   
-

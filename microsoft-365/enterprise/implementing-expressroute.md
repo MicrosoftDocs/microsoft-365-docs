@@ -40,11 +40,11 @@ We expect the following pre-requisites to be completed before this implementatio
   
 1. You've completed a network assessment to determine if ExpressRoute is recommended and approved.
 
-2. You've selected an ExpressRoute network service provider. Find details about the [ExpressRoute partners and peering locations](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
+2. You've selected an ExpressRoute network service provider. Find details about the [ExpressRoute partners and peering locations](/azure/expressroute/expressroute-locations).
 
 3. You've already read and understand the [ExpressRoute documentation](https://azure.microsoft.com/documentation/services/expressroute/) and your internal network is able to meet ExpressRoute pre-requisites end to end.
 
-4. Your team has read all of the public guidance and documentation at [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert), and watched the [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) series on Channel 9 to gain an understanding of critical technical details including:
+4. Your team has read all of the public guidance and documentation at [https://aka.ms/expressrouteoffice365](./azure-expressroute.md), [https://aka.ms/ert](https://aka.ms/ert), and watched the [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) series on Channel 9 to gain an understanding of critical technical details including:
 
       - The internet dependencies of SaaS services.
 
@@ -220,7 +220,7 @@ Your implementation plan should encompass both the technical details of configur
 
 - Decide how far ExpressRoute routes will be advertised into your network and what is the mechanism for clients to select Internet or ExpressRoute path; for example, direct routing or application proxy.
 
-- Plan DNS record changes, including [Sender Policy Framework](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx) entries.
+- Plan DNS record changes, including [Sender Policy Framework](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) entries.
 
 - Plan NAT strategy including outbound and inbound source NAT.
 
@@ -229,7 +229,7 @@ Your implementation plan should encompass both the technical details of configur
 
 - For your initial deployment, all inbound services, such as inbound email or hybrid connectivity, are recommended to use the internet.
 
-- Plan end user client LAN routing, such as [configuring a PAC/WPAD file](https://aka.ms/manageo365endpoints), default route, proxy servers, and BGP route advertisements.
+- Plan end user client LAN routing, such as [configuring a PAC/WPAD file](./managing-office-365-endpoints.md), default route, proxy servers, and BGP route advertisements.
 
 - Plan perimeter routing, including proxy servers, firewalls, and cloud proxies.
 
@@ -275,7 +275,7 @@ If your network design doesn't meet these requirements, there is a high risk you
   
 The most common method you can use to meet the above requirements is to use source NAT, either implemented as a part of your network or provided by your ExpressRoute carrier. Source NAT allows you to abstract the details and private IP addressing of your internet network from ExpressRoute and; coupled with proper IP route advertisements, provide an easy mechanism to ensure path symmetry. If you're using stateful network devices that are specific to ExpressRoute peering locations, you must implement separate NAT pools for each ExpressRoute peering to ensure path symmetry.
   
-Read more about the [ExpressRoute NAT requirements](https://azure.microsoft.com/documentation/articles/expressroute-nat/).
+Read more about the [ExpressRoute NAT requirements](/azure/expressroute/expressroute-nat).
   
 Add the changes for the outbound connectivity to the network topology diagram.
   
@@ -398,7 +398,7 @@ It helps to do this paper walk through of routes with a second person. Explain t
 
 ![Using PAC files with ExpressRoute](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
-If you're using a proxy server for internet bound traffic then you need to adjust any PAC or client configuration files to ensure client computers on your network are correctly configured to send the ExpressRoute traffic you desire to Office 365 without transiting your proxy server, and the remaining traffic, including some Office 365 traffic, is sent to the relevant proxy. Read our guide on [managing Office 365 endpoints](https://aka.ms/manageo365endpoints) for example PAC files.
+If you're using a proxy server for internet bound traffic then you need to adjust any PAC or client configuration files to ensure client computers on your network are correctly configured to send the ExpressRoute traffic you desire to Office 365 without transiting your proxy server, and the remaining traffic, including some Office 365 traffic, is sent to the relevant proxy. Read our guide on [managing Office 365 endpoints](./managing-office-365-endpoints.md) for example PAC files.
   
 > [!NOTE]
 > The endpoints change frequently, as often as weekly. You should only make changes based on the services and features your organization has adopted to reduce the number of changes you'll need to make to stay current. Pay close attention to the **Effective Date** in the RSS feed where the changes are announced and a record is kept of all past changes, IP addresses that are announced may not be advertised, or removed from advertisement, until the effective date is reached.
@@ -565,7 +565,7 @@ Run PSPing with a network trace to each customer endpoint and evaluate source an
   
 Keep in mind that while deploying Office 365 with an ExpressRoute connection you'll need to ensure both the network configuration for ExpressRoute is optimally designed and you've also optimized the other components on your network such as client computers. In addition to using this planning guide to troubleshoot the steps you may have missed, we also have written a [Performance troubleshooting plan for Office 365](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c) .
   
-Here's a short link you can use to come back: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+Here's a short link you can use to come back: [https://aka.ms/implementexpressroute365]()
   
 ## Related Topics
 

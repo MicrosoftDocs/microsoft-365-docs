@@ -28,7 +28,7 @@ description: Learn how to use PowerShell for Microsoft 365 to manage  users, gro
 
 SharePoint administrators have to manage sites, site groups, and users. Although you can do some of these tasks in the Microsoft 365 admin center, others are easier in PowerShell. For more information, see the following articles:
 
-- [Get started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+- [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
 - [Create SharePoint online sites and add users with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     

@@ -20,7 +20,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
-Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 

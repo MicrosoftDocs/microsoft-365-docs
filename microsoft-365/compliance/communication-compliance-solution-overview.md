@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-scenario
 ---
 
 # Communication compliance in Microsoft 365

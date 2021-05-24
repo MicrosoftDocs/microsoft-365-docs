@@ -18,6 +18,7 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: 
 localization_priority: Priority
+recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---
 
@@ -40,9 +41,9 @@ The methods of sharing files are listed in the table below. Click the link in th
 
 You can also restrict the conditions under which people access shared content. See [conditional access](#conditional-access) later in this article for more information.
 
-While you can use the admin controls described in this article to limit sharing in your organization, we highly recommend that you consider using the security and compliance features available in Microsoft 365 to create a secure sharing environment. See [File collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) and [Configure a team with security isolation](secure-teams-security-isolation.md) for information.
+While you can use the admin controls described in this article to limit sharing in your organization, we highly recommend that you consider using the security and compliance features available in Microsoft 365 to create a secure sharing environment. See [File collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration) and [Configure a team with security isolation](secure-teams-security-isolation.md) for information.
 
-To understand how sharing is being used in your organization, [run a report on file and folder sharing](https://docs.microsoft.com/sharepoint/sharing-reports).
+To understand how sharing is being used in your organization, [run a report on file and folder sharing](/sharepoint/sharing-reports).
 
 ## Microsoft 365 group or team
 
@@ -68,9 +69,9 @@ To turn off guest sharing in Microsoft 365 Groups
     ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+> If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-You can limit guest sharing to users from specific domains by allowing or blocking domains in Azure Active Directory. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+You can limit guest sharing to users from specific domains by allowing or blocking domains in Azure Active Directory. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 To allow sharing invitations only from specified domains
 1. In Azure Active Directory, on the Overview page, click **Organizational relationships**.
@@ -113,11 +114,11 @@ To limit site sharing by domain
 
 ### Block access to a site
 
-You can block access to a site or make a site read-only by changing the lock state of the site. For details, see [Lock and unlock sites](https://docs.microsoft.com/sharepoint/manage-lock-status).
+You can block access to a site or make a site read-only by changing the lock state of the site. For details, see [Lock and unlock sites](/sharepoint/manage-lock-status).
 
 ### Permissions inheritance
 
-While not recommended, you can use [SharePoint permissions inheritance](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) to customize access levels to sites and subsites.
+While not recommended, you can use [SharePoint permissions inheritance](/sharepoint/what-is-permissions-inheritance) to customize access levels to sites and subsites.
 
 ## Sharing with specific people
 
@@ -188,15 +189,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 By default, users can create new sites, groups, and teams from which they may be able to share content (depending on your sharing settings). You can restrict who can create sites, groups, and teams. See the following references:
 
-- [Manage site creation in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [Manage site creation in SharePoint](/sharepoint/manage-site-creation)
+- [Manage who can create Microsoft 365 Groups](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > Restricting group creation restricts team creation.
 
 ## Email
 
-You can prevent unwanted sharing of emails by using encryption. This prevents emails being forwarded or otherwise shared with unauthorized users. Email encryption can be enabled by using sensitivity labels. See [Restrict access to content by using encryption in sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) for details.
+You can prevent unwanted sharing of emails by using encryption. This prevents emails being forwarded or otherwise shared with unauthorized users. Email encryption can be enabled by using sensitivity labels. See [Restrict access to content by using encryption in sensitivity labels](../compliance/encryption-sensitivity-labels.md) for details.
 
 ## Download or file copy
 
@@ -204,12 +205,12 @@ Users who have access to files and folders in Microsoft 365 can download files a
 
 ## Conditional access
 
-Azure Active Directory conditional access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Azure Active Directory conditional access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
 
 SharePoint provides direct integration with Azure AD conditional access for both unmanaged devices and network location. See the following references for details:
 
-- [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [Control access to SharePoint and OneDrive data based on network location](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)
+- [Control access to SharePoint and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location)
 
 ## See also
 

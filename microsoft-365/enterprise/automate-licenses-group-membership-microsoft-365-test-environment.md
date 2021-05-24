@@ -87,8 +87,8 @@ In time, you should see the:
 
 See these articles to deploy dynamic group membership and automatic licensing in production:
 
-- [Group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-- [Dynamic groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Dynamic groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## Next step
 
@@ -102,4 +102,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

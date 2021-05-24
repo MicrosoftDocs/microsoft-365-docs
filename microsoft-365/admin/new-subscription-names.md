@@ -1,7 +1,7 @@
 ---
 title: "Office 365 is now Microsoft 365"
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,3 +28,13 @@ We've changed some of our Office 365 and Microsoft 365 subscription names. You d
 - **Office 365 ProPlus** is now **Microsoft 365 Apps for enterprise**
 
 [Learn more!](https://go.microsoft.com/fwlink/?linkid=2120533)
+
+## Related content
+
+[Subscriptions and billing](../commerce/index.yml) (links)
+
+[View your bill or invoice](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)
+
+[Paying for your subscription](../commerce/billing-and-payments/pay-for-your-subscription.md) (article)
+
+[Change your billing addresses](../commerce/billing-and-payments/change-your-billing-addresses.md) (article)

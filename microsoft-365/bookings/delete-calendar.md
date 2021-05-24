@@ -41,49 +41,48 @@ The booking calendar is where all relevant information about that booking calend
 
 ## Delete a booking calendar using Exchange Online PowerShell
 
-See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.
+See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
 To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.
 
-1. Enter the following command:
+1. In a PowerShell window, load the EXO V2 module by running the following command:
 
-   ```PowerShell
-    $user = get-credential
+   ```powershell
+   Import-Module ExchangeOnlineManagement
    ```
 
-1. When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.
+   > [!NOTE]
+   > If you've already [installed the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.
+   
+2. The command that you need to run uses the following syntax:
 
-1. At the PowerShell command prompt, enter this command:
-
-   ```PowerShell
-    $s = New-Pssession -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $user -Authentication basic -AllowRedirection -ConfigurationName Microsoft.Exchange
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-1. Enter the following command:
+   - _\<UPN\>_ is your account in user principal name format (for example, `john@contoso.com`).
 
-   ```PowerShell
-    Import-PSSession $s
+3. When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.
+
+4. Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:
+
+   ```powershell
+   Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
-1. Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:
+5. Type the following command:
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
-   ```
-
-1. Type the following command:
-
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
    > Be careful to type the exact name of the booking mailbox alias that you want to permanently delete.
 
-1. To verify that the calendar has been deleted, enter the following command:
+6. To verify that the calendar has been deleted, enter the following command:
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
+   ```powershell
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    The deleted calendar will not appear in the output.

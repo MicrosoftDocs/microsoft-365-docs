@@ -29,8 +29,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
@@ -50,7 +50,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
 ## View your quarantined messages
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
@@ -151,6 +151,10 @@ After you select a message, you have options for what to do with the messages in
   - **Text view**: Shows the message body in plain text.
 
 - **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
+
+- **Block Sender**: Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+
+Add the sender to the Blocked Senders list on your mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 When you're finished, click **Close**.
 

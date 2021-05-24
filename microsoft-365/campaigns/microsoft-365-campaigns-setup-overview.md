@@ -2,11 +2,11 @@
 title: "Setup overview for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -60,4 +60,4 @@ For key staff, we recommend that you use [managed devices](../business/set-up-wi
 
  **If you need to contact support:**
   
-As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
+As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**

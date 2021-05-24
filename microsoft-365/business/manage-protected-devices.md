@@ -2,8 +2,8 @@
 title: "Manage protected devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -21,7 +21,6 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -34,12 +33,8 @@ description: "Learn to remove company data from devices managed through protecti
 
 After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up. Connected devices are listed on the **Devices** page. If a device is lost or stolen, you can manage it from this page to remove any company data. You can also reset Windows 10 devices to their factory settings to wipe out any custom settings. 
 
-For more information on the tasks you can use to manage devices, see these articles: 
+## Related content
   
-[Remove company data from devices](remove-company-data.md)
-  
-[Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md)
-
-[Add a managed device](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[Remove company data from devices](remove-company-data.md) (article)\
+[Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md) (article)\
+[Add a managed device](./app-protection-settings-for-android-and-ios.md) (article)

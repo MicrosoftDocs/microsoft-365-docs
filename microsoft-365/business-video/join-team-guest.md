@@ -1,15 +1,14 @@
 ---
-title: "Join a team as s guest"
+title: "Join a team as a guest"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -44,3 +43,9 @@ If you receive a Microsoft Teams invitation to join a team, there are a couple o
 
 1. Just open Microsoft Teams app and choose  **Yes**  to switch to the team you are invited to.  Now you can collaborate on the project in Teams.
 2. To switch back to your company's team, select it from the  **Organization**  drop-down.
+
+## Related content
+
+[Guest experience in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (article)
+[Manage Microsoft Teams settings for your organization](https://docs.microsoft.com/microsoftteams/enable-features-office-365) (article)
+[Use guest access and external access to collaborate with people outside your organization](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) (article)

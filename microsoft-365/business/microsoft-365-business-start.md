@@ -2,8 +2,8 @@
 title: "Get started with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -40,7 +40,7 @@ Watch this video for a quick overview of Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 for business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
+Microsoft 365 for business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](../enterprise/index.yml) documentation for more information. 
   
 ## Get Microsoft 365 for business
 
@@ -60,7 +60,7 @@ Watch this video for an overview of Microsoft 365 for business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../business-video/index.yml).
 
   
 ### 1: Set up Microsoft 365 for business (Admin)
@@ -75,9 +75,9 @@ Sign in to [Microsoft 365 admin center](https://portal.office.com/adminportal/ho
     
     If you're **permanently moving from a local Active Directory to the cloud**, you can go to the Microsoft 365 admin center and use the setup wizard to add your users manually, or you can do a one-time sync with Azure AD Connect. There are two ways to do this: 
     
-    - If you also have an Exchange 2010, Exchange 2013, or Exchange 2016 server, you can [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). The minimal hybrid steps include a one-time sync of users to Azure AD, and email migration from on-premises to the cloud. After the email migration is complete, the directory synchronization is automatically turned off when you use this method.
+    - If you also have an Exchange 2010, Exchange 2013, or Exchange 2016 server, you can [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Microsoft 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). The minimal hybrid steps include a one-time sync of users to Azure AD, and email migration from on-premises to the cloud. After the email migration is complete, the directory synchronization is automatically turned off when you use this method.
     
-    - Use the directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) to complete this process. After you synchronize your users to the cloud, you'll have to [Turn off directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/turn-off-directory-synchronization).
+    - Use the directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Microsoft 365](../enterprise/set-up-directory-synchronization.md) to complete this process. After you synchronize your users to the cloud, you'll have to [Turn off directory synchronization for Microsoft 365](../enterprise/turn-off-directory-synchronization.md).
     
     You'll also have to give each user that was added this way a license to Microsoft 365 for business. You can do this in the [setup wizard](set-up.md) or you can [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
     
@@ -100,12 +100,12 @@ If you retain a local Active Directory that contains some on-premises resources 
   
 - Contact your partner.
     
-- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
+- As a Microsoft 365 for business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
     
-## See also
+## Related content
 
-[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](./index.yml)
   
 [Manage Microsoft 365 for business](manage.md)[Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 for business training videos](../business-video/index.yml)

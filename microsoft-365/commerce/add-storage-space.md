@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,28 +13,18 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-description: "Learn to add and reduce file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
-ms.date: 
+- commerce_purchase
+search.appverid: MET150
+description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
+ms.date: 04/02/2021
 ---
 
 # Add storage space for your subscription
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 If you start to run out of storage for your SharePoint Online site collections, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
@@ -46,18 +37,18 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 ## View available storage
 
-1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) for your organization.
+1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
 
-   ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Storage bar on the Active sites page](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
 
 After you determine how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you buy more.
   
-For information about setting site collection storage limits, see [Manage site collection storage limits](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits).
+For information about setting site collection storage limits, see [Manage site collection storage limits](/sharepoint/manage-site-collection-storage-limits).
   
 ## Add storage to your subscription
 
@@ -73,7 +64,7 @@ If you haven't yet bought extra storage for your subscription, you can do that.
 
 ## Increase or decrease storage
 
-If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/contact-support-for-business-products.md).
+If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../business-video/get-help-support.md).
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that contains the **Office 365 Extra File Storage** add-on.
@@ -107,5 +98,5 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 ## Related content
 
-[Manage site storage limits](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (article)\
-[Set the default storage space for OneDrive users](https://docs.microsoft.com/onedrive/set-default-storage-space)(article)
+[Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) (article)\
+[Set the default storage space for OneDrive users](/onedrive/set-default-storage-space) (article)

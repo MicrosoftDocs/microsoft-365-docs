@@ -23,8 +23,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
 
@@ -66,7 +66,7 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 ## Use blocked sender lists or blocked domain lists
 
-When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam**, and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **High confidence spam**, and the action that you've configured for the **High confidence spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 The maximum limit for these lists is approximately 1000 entries.
 
@@ -74,7 +74,7 @@ The maximum limit for these lists is approximately 1000 entries.
 
 If you need to block messages that are sent to specific users or across the entire organization, you can use mail flow rules. Mail flow rules are more flexible than block sender lists or blocked sender domain lists because they can also look for keywords or other properties in the unwanted messages.
 
-Regardless of the conditions or exceptions that you use to identify the messages, you configure the action to set the spam confidence level (SCL) of the message to 9, which marks the message a **High confidence spam**. For more information, see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Regardless of the conditions or exceptions that you use to identify the messages, you configure the action to set the spam confidence level (SCL) of the message to 9, which marks the message a **High confidence spam**. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
 > It's easy to create rules that are *overly* aggressive, so it's important that you identify only the messages you want to block using using very specific criteria. Also, be sure to enable auditing on the rule and test the results of the rule to ensure everything works as expected.

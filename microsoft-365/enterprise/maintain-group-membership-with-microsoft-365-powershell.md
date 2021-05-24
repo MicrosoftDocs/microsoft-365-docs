@@ -27,7 +27,7 @@ description: "Learn how to use PowerShell to maintain membership in Microsoft 36
 You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain security group membership in Microsoft 365. 
 
 >[!Note]
->[Learn how to maintain Microsoft 365 group membership](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Learn how to maintain Microsoft 365 group membership](../admin/create-groups/add-or-remove-members-from-groups.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
 >
 
 ## Use the Azure Active Directory PowerShell for Graph module
@@ -153,4 +153,3 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

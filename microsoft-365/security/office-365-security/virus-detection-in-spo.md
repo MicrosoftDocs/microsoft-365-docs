@@ -29,23 +29,23 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
 
 > [!IMPORTANT]
 > The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
 
-## What happens when an infected file is uploaded to SharePoint Online?
+## What happens if an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously within SharePoint Online. **All files are not automatically scanned on upload**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged so it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine runs asynchronously (independent from file uploads) within SharePoint Online. **All files are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 
 1. A user uploads a file to SharePoint Online.
-2. SharePoint Online determines whether the file meets the criteria for a scan.
-3. The virus detection engine scans the file.
-4. If a virus is found, the virus engine sets a property on the file indicating that it's infected.
+2. SharePoint Online, as part of its virus scanning processes, later determines if the file meets the criteria for a scan.
+3. If the file meets the criteria for a scan, the virus detection engine scans the file.
+4. If a virus is found within the scanned file, the virus engine sets a property on the file indicating that it's infected.
 
 ## What happens when a user tries to download an infected file by using the browser?
 
@@ -58,7 +58,7 @@ Here's what happens:
 
 > [!NOTE]
 >
-> Admins can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading infected files, even in the anti-virus warning window. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+> Admins can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading infected files, even in the anti-virus warning window. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 >
 > As soon as you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completely blocked for users and admins.
 
@@ -68,10 +68,10 @@ OneDrive sync clients will not download files that contain viruses. The sync cli
 
 ## Extended capabilities with Microsoft Defender for Office 365
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](office-365-atp.md) included in their subscription or purchased as an add-on can enable Safe Attachments for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on can enable Safe Attachments for SharePoint, OneDrive, and Microsoft Teams for enhanced reporting and protection. For more information, see [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 ## Related Articles
 
-[Malware and ransomware protection in Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
-For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+For more information about anti-virus in SharePoint Online, OneDrive, and Microsoft Teams, see [Protect against threats](protect-against-threats.md) and [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).

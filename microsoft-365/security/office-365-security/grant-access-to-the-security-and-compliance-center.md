@@ -29,8 +29,8 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
 
@@ -60,7 +60,7 @@ For more information about the different permissions you can give to users in th
 
 ## Use Security & Compliance Center PowerShell to give another user access to the Security & Compliance Center
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use the following syntax:
 
@@ -76,7 +76,7 @@ For more information about the different permissions you can give to users in th
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+For detailed syntax and parameter issues, see [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
 ### How do you know this worked?
 
@@ -90,4 +90,4 @@ To verify that you've successfully granted access to the Security & Compliance C
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  For detailed syntax and parameter information, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
+  For detailed syntax and parameter information, see [Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

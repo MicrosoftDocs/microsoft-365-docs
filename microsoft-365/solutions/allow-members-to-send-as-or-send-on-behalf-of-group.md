@@ -1,5 +1,5 @@
 ---
-title: "Allow members to send as or send on behalf of a Group"
+title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,12 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: "Learn how to allow members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
+recommendations: false
+description: "Learn how to allow group members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
 # Allow members to send as or send on behalf of a group
 
-A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. This article explains how a global or Exchange administrator can set these permissions.
+A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. (Guests in the group cannot be granted these permissions.)
+
+This article explains how a global or Exchange administrator can set these permissions.
   
 For example, if Megan Bowen is part of the **Training** Microsoft 365 group, and has **Send as** permissions on the group, if she sends an email as the group, it will look like the **Training** group sent the email. 
   
@@ -77,6 +80,6 @@ This section explains how to allow users to send email on behalf of a group in t
 
 [Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

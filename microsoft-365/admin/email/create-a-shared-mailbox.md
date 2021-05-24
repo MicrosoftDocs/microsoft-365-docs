@@ -28,7 +28,7 @@ description: "Create a shared mailbox to enable multiple users in your business 
 # Create a shared mailbox 
 
 > [!NOTE]
-> If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
+> If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
 > If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to a Microsoft 365 group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
 
 It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
@@ -148,13 +148,13 @@ But what if an admin simply resets the password of the shared mailbox user accou
 4. In the **Edit sign-in status** flyout, verify that Block the user from signing in is selected, select **Save** and then **Close**.
 ::: moniker-end
 
-For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
+For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## Add the shared mailbox to Outlook
 
 If you have automapping enabled in your business (by default, most people do), the shared mailbox will appear in your user's Outlook app automatically after they close and restart Outlook. 
 
-Automapping is set on the user's mailbox, not the shared mailbox. This means if you try to use a security group to manage who has access to the shared mailbox, automapping won't work. So, if you want automapping, you have to assign permissions explicitly. Automapping is on by default. To learn how to turn it off, see [Remove automapping for a shared mailbox](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
+Automapping is set on the user's mailbox, not the shared mailbox. This means if you try to use a security group to manage who has access to the shared mailbox, automapping won't work. So, if you want automapping, you have to assign permissions explicitly. Automapping is on by default. To learn how to turn it off, see [Remove automapping for a shared mailbox](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
 
 To learn more about shared mailboxes in Outlook, see:
 
@@ -193,16 +193,10 @@ When you created the shared mailbox, you automatically created a shared calendar
 
 3. Any member of the shared mailbox can create, view, and manage appointments on the calendar, just like they would their personal appointments. Everyone who is a member of shared mailbox can see their changes to the shared calendar.
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
-
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
-
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md)
-
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
-
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
-
-
+[About shared mailboxes](about-shared-mailboxes.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

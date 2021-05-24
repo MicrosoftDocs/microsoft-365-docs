@@ -39,7 +39,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
 
-Next, compile a list of services to enable. For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+Next, compile a list of services to enable. For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 For the command block below, fill in the user principal name of the user account, the SKU part number, and the list of service plans to enable and remove the explanatory text and the \< and > characters. Then, run the resulting commands at the PowerShell command prompt.
   
@@ -110,7 +110,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
-For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
    
 Now that you have the AccountSkuId and the service plans to disable, you can assign licenses for an individual user or for multiple users.
   

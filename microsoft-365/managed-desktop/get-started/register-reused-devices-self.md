@@ -1,12 +1,16 @@
 ---
 title: Register existing devices yourself
 description: Register reused devices you might already have yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register existing devices yourself
@@ -128,7 +132,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices-by-using-the-admin-portal).
 
 
-#### Register devices by using the Admin Portal
+## Register devices by using the Admin Portal
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
@@ -141,9 +145,11 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devic
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
+3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
-1. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
-
+> [!NOTE]
+> If you manually change the Azure Active Directory (AAD) group membership of a device, it will be automatically reassigned to the group for its device profile and removed from any conflicting groups.
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
@@ -155,7 +161,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 
-#### Troubleshooting device registration
+### Troubleshooting device registration
 
 | Error message | Details |
 |---------------|-------------|
@@ -165,13 +171,13 @@ You can monitor the progress of device registration on the main page. Possible s
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
 | Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
 
-### Check the image
+## Check the image
 
 If your device has come from a Microsoft Managed Desktop partner supplier, the image should be correct.
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
-### Deliver the device
+## Deliver the device
 
 > [!IMPORTANT]
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.

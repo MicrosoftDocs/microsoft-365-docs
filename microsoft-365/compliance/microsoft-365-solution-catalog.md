@@ -39,7 +39,7 @@ The **Information protection & governance** section shows you at a glance how yo
 
 From here, you'll see cards for the following solutions:
 
-- [Data loss prevention](data-loss-prevention-policies.md): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
+- [Data loss prevention](dlp-learn-about-dlp.md): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
 - [Information governance](manage-information-governance.md): Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don't.​
 - [Information protection](information-protection.md): Discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization.
 - [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal, and business-critical records in your organization.
@@ -64,9 +64,9 @@ The **Discovery & response** section on the home page shows you at a glance how 
 From here, you'll see cards for the following solutions:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): Records user and admin activity from your organization so you can search the audit log and investigate a comprehensive list of activities across all locations and services.
-- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user's personal data to help you respond to data subject requests for GDPR.
+- [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool): Finds and exports a user's personal data to help you respond to data subject requests for GDPR.
 - [eDiscovery](manage-legal-investigations.md)
-    - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.
+    - [Core eDiscovery](./get-started-core-ediscovery.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.
     - [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that's relevant to discovery requests.
 
 ## How do I get this?
@@ -94,7 +94,7 @@ If you are looking for an existing compliance solution and it's not available in
 - **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance](communication-compliance.md).
 
 - **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
-    - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
+    - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 - **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.

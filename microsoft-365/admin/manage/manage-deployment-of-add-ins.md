@@ -2,8 +2,8 @@
 title: "Deploy add-ins in the admin center"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,15 +26,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 # Deploy add-ins in the admin center
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization by using the Centralized Deployment feature in the Microsoft 365 admin center. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. 
+Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization by using the Centralized Deployment feature in the Microsoft 365 admin center. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
 
 For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
@@ -60,25 +52,25 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
 1. In the admin center, go to the **Settings** \> **Add-ins** page. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
-    
+
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
- 
+
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
-    
+    > The admin center is getting updated to deployment experience with Integrated Apps. Integrated Apps is only visible to Global administrators, while for others the old experience still exists. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+
 3. Select an option and follow the instructions.
   
 4. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
 
     You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/> 
 
-    > [!NOTE] 
+    > [!NOTE]
     > With the Office Store option, updates and enhancements are automatically deployed to users.
 
 5. On the next page, select **Everyone**, **Specific users/groups**, or **Just me** to specify who the add-in is deployed to. Use the Search box to find specific users or groups. <br/>
 
-    > [!NOTE] 
-    > To learn about other states that apply to an add-in, see [Add-in states](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
+    > [!NOTE]
+    > To learn about other states that apply to an add-in, see [Add-in states](./manage-addins-in-the-admin-center.md).
   
 6. Select **Deploy**.
   
@@ -86,7 +78,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 
     > [!NOTE]
     > Users might need to relaunch Office to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
-    
+
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 
     If you've deployed the add-in to other members of your organization, follow the instructions to announce the deployment of the add-in. <br/>
@@ -95,16 +87,16 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
   
 ### Considerations when assigning an add-in to users and groups
 
-Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
+Global admins and Exchange admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **Everyone** This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization. 
-    
+- **Everyone** This option assigns the add-in to every user in the organization. Use this option sparingly and only for add-ins that are truly universal to your organization.
+
 - **Users** If you assign an add-in to an individual user, and then deploy the add-in to a new user, you must first add the new user.
-    
-- **Groups** If you assign an add-in to a group, users who are added to the group are automatically assigned the add-in. When a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from the admin. 
+
+- **Groups** If you assign an add-in to a group, users who are added to the group are automatically assigned the add-in. When a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from the admin.
 
 - **Just me** If you assign an add-in to just yourself, the add-in is assigned to only your account, which is ideal for testing the add-in.
-    
+
 The right option for your organization depends on your configuration. However, we recommend making assignments by using groups. As an admin, you might find it easier to manage add-ins by using groups and controlling the membership of those groups rather than assigning individual users each time. In some situations, you might want to restrict access to a small set of users by making assignments to specific users by assigning users manually.
   
 ## More about Office add-ins security
@@ -112,34 +104,30 @@ The right option for your organization depends on your configuration. However, w
 Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - Display data.
-    
+
 - Read a user's document to provide contextual services.
-    
+
 - Read and write data to and from a user's document to provide value to that user.
-    
-For more information about the types and capabilities of Office add-ins, see [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins), especially the section "Anatomy of an Office Add-in."
+
+For more information about the types and capabilities of Office add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins), especially the section "Anatomy of an Office Add-in."
   
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
 When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 Updates for add-ins happen as follows:
   
-- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
 
     > [!NOTE]
-    > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.   
-    
-- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
-  
-## Learn more
+    > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.
 
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md)
-
-[Build your first Word task pane add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
-
-[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md)
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
   
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
-  
-[Troubleshoot: User not seeing add-ins](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+## Related content
+
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ 
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
+[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)

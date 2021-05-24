@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -20,6 +20,8 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
+
+
 [Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
 - patterns
@@ -29,7 +31,7 @@ ms.custom: seo-marvel-apr2020
 
  Such custom sensitive information types meet business needs for many organizations.
 
-But what if you wanted a custom sensitive information type that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
+But what if you wanted a custom sensitive information type (SIT) that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
 
 - be dynamic and easily refreshed
 - be more scalable
@@ -40,16 +42,17 @@ But what if you wanted a custom sensitive information type that uses exact data 
 
 ![EDM-based classification](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> Microsoft 365 Information Protection supports in preview double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
 > - Japanese
 > 
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+ 
 
 ## Required licenses and permissions
 
@@ -102,7 +105,7 @@ Setting up and configuring EDM-based classification involves:
 
 #### Define the schema for your database of sensitive information
 
-If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type patter (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
+If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
 
 > [!NOTE]
 > The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
@@ -158,7 +161,7 @@ When you include the ***ignoredDelimiters*** field with supported characters,  E
 - \~
 - \; 
 
-- The `ignoredDelimiters` flag doesn't support:
+The `ignoredDelimiters` flag doesn't support:
 - characters 0-9
 - A-Z
 - a-z
@@ -167,7 +170,7 @@ When you include the ***ignoredDelimiters*** field with supported characters,  E
 
 In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type. 
 
-4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 5. To upload the database schema, run the following cmdlets, one at a time:
 
@@ -198,7 +201,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
       When you set up your rule package, make sure to correctly reference your .csv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
 
-      - **RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
+      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
 
       - **Datastore**: This field specifies EDM lookup data store to be used. You provide a data source name of a configured EDM Schema.
 
@@ -292,6 +295,8 @@ In this example, note that:
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
+ 
+After you have imported your rule package with your EDM sensitive info type and have imported your sensitive data table, you can test your newly created type by using the **Test** function in the EDM wizard in the compliance center. See [Use the Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) for instructions on using this functionality.
 
 #### Editing the schema for EDM-based classification
 
@@ -302,7 +307,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
-2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. To update your database schema, run the following cmdlets, one at a time:
 
@@ -331,7 +336,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:
 
@@ -363,7 +368,10 @@ If you want to hash and upload from one computer, you need to do it from a compu
 If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers.
 
 > [!IMPORTANT]
-> If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must** download the schema for this procedure.
+> If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must*** download the schema for this procedure.
+
+> [!NOTE]
+> If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
 #### Prerequisites
 
@@ -378,7 +386,7 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
@@ -499,12 +507,12 @@ You can refresh your sensitive information database daily, and the EDM Upload To
       > [!NOTE]
       > If there are no changes to the structure (field names) of the .csv file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly.
 
-3. Use [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
+3. Use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
 
       | Method             | What to do |
       | ---------------------- | ---------------- |
-      | Windows PowerShell     | See the [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article |
-      | Task Scheduler API     | See the [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) documentation                                                                                                                                                                                                                                                                                |
+      | Windows PowerShell     | See the [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article |
+      | Task Scheduler API     | See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation                                                                                                                                                                                                                                                                                |
       | Windows user interface | In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.                                                                                                                                                                                                                                                                           |
 
 #### Example PowerShell script for Task Scheduler
@@ -596,6 +604,7 @@ These locations are support EDM sensitive information types:
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
+- Server-side auto-labeling policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
@@ -643,7 +652,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
-- [Overview of DLP policies](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md)

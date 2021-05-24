@@ -5,37 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_subscriptions
 search.appverid: MET150 
 description: Learn how to activate and manage third-party apps in Microsoft 365 admin center.
+ms.date: 04/15/2021
 ---
 
 # Manage third-party app subscriptions for your organization
 
 You can manage licenses and billing for third-party apps in the new Microsoft 365 admin center. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
 You can manage licenses and billing for third-party apps in Microsoft 365 admin center with preview mode turned on. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft's updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from third-party provider.
-
 
 ## How to get software-as-a-service apps
 
 There are a few ways to purchase third-party apps.
 
-- **Direct purchase** – Customers can directly purchase subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://www.appsource.com/).
+- **Direct purchase** – Customers can directly purchase subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://appsource.microsoft.com/).
 - **Partner purchase** –  Work with a partner through Partner Center to purchase subscriptions.
 - **Microsoft proposal** – Respond to a proposal from Microsoft Sales that includes third-party apps.
 
@@ -109,7 +105,7 @@ Software-as-a-service apps each have a billing profile assigned to them. Billing
 - **Contact information** –  Billing address and a contact name
 - **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
 
-For more information on billing profiles, see [Understand billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile).
+For more information on billing profiles, see [Understand billing profiles](/microsoft-store/billing-profile).
 
 ### Change the billing profile on a software-as-a-service app subscription
 

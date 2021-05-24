@@ -35,17 +35,17 @@ To maximize the business value of the Microsoft 365 for enterprise integrated su
 
 Each Microsoft 365 for enterprise license includes a license for Windows 10 Enterprise. To migrate your devices that run Windows 7 or Windows 8.1, you can do an in-place upgrade. Support ended for Windows 7 on *January 14, 2020*. 
 
-For additional methods of installing Windows 10 Enterprise beyond an in-place upgrade, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
+For additional methods of installing Windows 10 Enterprise beyond an in-place upgrade, see [Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](/windows/deployment/planning/) on your own.
 
 ## Migrating to Microsoft 365 Apps for enterprise
 
-Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products (Word, PowerPoint, Excel, and Outlook) that is installed and updated from the Microsoft cloud. For more information, see [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products (Word, PowerPoint, Excel, and Outlook) that is installed and updated from the Microsoft cloud. For more information, see [About Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps).
 
 Rather than keeping your computers current for Office 2019 or older versions, take the following steps:
 
 1. Get and assign a Microsoft 365 license for your users.
 2. Uninstall Office 2013 or Office 2016 on their computers.
-3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Install Microsoft 365 Apps for enterprise, either individually or during an IT rollout. For more information, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs both security updates and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
@@ -55,9 +55,9 @@ Microsoft 365 for enterprise includes cloud-based versions of Office server serv
 
 Use the following resources for information about migrating users and data for specific Microsoft 365 workloads:
 
-- [Move mailboxes from on-premises Exchange Server to Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [Migrate SharePoint data from SharePoint Server to SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [Migrate Skype for Business Online to Microsoft Teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [Move mailboxes from on-premises Exchange Server to Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
+- [Migrate SharePoint data from SharePoint Server to SharePoint Online](/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrate Skype for Business Online to Microsoft Teams](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ## Transition your entire organization
 

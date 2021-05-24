@@ -37,7 +37,7 @@ This category of classification mechanisms include finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about data loss prevention](dlp-learn-about-dlp.md)) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Classifiers
 
@@ -131,7 +131,7 @@ You can help improve the accuracy of all custom classifiers and some pre-trained
 ## See also
 
 - [Retention labels](retention.md)
-- [Data loss prevention (DLP)](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Document finger printing](document-fingerprinting.md)

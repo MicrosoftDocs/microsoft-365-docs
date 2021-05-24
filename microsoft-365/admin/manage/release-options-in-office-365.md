@@ -2,8 +2,8 @@
 title: "Set up the Standard or Targeted release options"
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,16 +26,8 @@ description: "Learn how to set up the release option for new product and feature
 
 # Set up the Standard or Targeted release options
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
-
 > [!IMPORTANT]
-> The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. They do not apply to Microsoft 365 Apps, Skype for Business, Microsoft Teams, and related services. For information about release options for Microsoft 365 Apps, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+> The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. They do not apply to Microsoft 365 Apps, Skype for Business, Microsoft Teams, and related services. For information about release options for Microsoft 365 Apps, see [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
 
@@ -48,7 +40,7 @@ Any new release is first tested and validated by the feature team, then by the e
 For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> You need a Microsoft 365 or Azure AD account to access your Message center through the [admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 home plan users do not have an admin center.
+> You need a Microsoft 365 or Azure AD account to access your Message center through the [admin center](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 home plan users do not have an admin center.
 
 
 ## Standard release
@@ -107,9 +99,11 @@ You can change how your organization receives Microsoft 365 updates by following
 8. Choose **Select users** to add users one at a time, or **Upload users** to add them in bulk.
     
 9. When you're done adding users, select **Save changes**.
-
-
   
-## Learn more
+## Next steps
 
-Discover how to [manage messages](https://docs.microsoft.com/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.
+Discover how to [manage messages](/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.
+
+## Related content
+
+[Join the Office Insider Program](https://insider.office.com/join/windows) (article)

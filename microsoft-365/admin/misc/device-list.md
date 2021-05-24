@@ -2,8 +2,8 @@
 title: "Device list CSV-file"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -45,9 +45,8 @@ When you add devices, you also need to add them to a Profile. A profile is used 
   
 ## Related articles
 
-[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](../../business/index.yml)
   
-[Get started with Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[Get started with Microsoft 365 for business](../../business/microsoft-365-business-overview.md)
   
-[Manage Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[Manage Microsoft 365 for business](../../business/manage.md)

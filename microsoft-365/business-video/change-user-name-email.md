@@ -2,14 +2,13 @@
 title: "Change a user's name or email address"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -56,3 +55,9 @@ Occasionally, you may need to change a user's name or email address. You can do 
 1. Enter the new username, verify the domain, and select **Save changes**.
 
     As a result of this change, the user will need to sign in to Microsoft 365 with this new username and add the new email account to Outlook.
+
+## Related content
+
+[Give mailbox permissions to another user](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (article)
+[Convert a user mailbox to a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) (article)
+[User email settings](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (article)

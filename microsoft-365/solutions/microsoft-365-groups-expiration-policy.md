@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
+recommendations: false
 description: "Learn about Microsoft 365 groups expiration policies."
 ---
 
@@ -33,20 +34,22 @@ Groups that are actively in use are renewed automatically. Any of the following 
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
 - Teams - visiting a teams channel.
 
+Note that the only Yammer activity which will trigger an automatic group renewal is the upload of a document to SharePoint within the community.
+
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
 It's important to know that expiration is turned off by default. Administrators have to enable it for their organization if they want to use it.
 
 > [!NOTE]
-> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information see [Getting started with Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information see [Getting started with Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## Who can configure and use the Microsoft 365 groups expiration policy?
 
 |Role|What they can do|
 |---------|---------|
 |Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Microsoft 365 groups expiration policy settings.|
-|User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
+|User|Renew or [restore](/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
 
 ## How to set the expiration policy
 
@@ -56,7 +59,7 @@ The group lifetime is specified in days and can be set to 180, 365 or to a custo
 
 If the group does not have an owner, the expiration emails will go to the specified administrator.
 
-You can set the policy for all of your groups, only selected groups, or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
+You can set the policy for all of your groups, only selected groups (up to 500), or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 
@@ -86,4 +89,4 @@ If you have a group that you no longer plan to use, but you want to retain its c
 
 [Assign a new owner to an orphaned group](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configure Microsoft 365 groups expiration](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Configure Microsoft 365 groups expiration](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)

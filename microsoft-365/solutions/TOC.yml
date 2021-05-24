@@ -7,11 +7,13 @@
       href: productivity-illustrations.md
     - name: Microsoft cloud architecture models
       href: cloud-architecture-models.md
+    - name: Infographics for users
+      href: infographics-for-users.md
     - name: Architecture icons and templates
       href: architecture-icons-templates.md
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Empower remote workers with Microsoft 365
+    - name: Set up your infrastructure for remote work
       items:
       - name: Overview   
         href: empower-people-to-work-remotely.md
@@ -94,7 +96,7 @@
 - name: Workload solutions and scenarios
   items: 
     - name: Overview
-      href: workload-solutions-scenarios-overview.md
+      href: ./index.yml
 
     - name: Tenant management
       items:
@@ -114,24 +116,23 @@
     - name: Teamwork and collaboration
       items:
       - name: Teams architecture posters
-        href: https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
+        href: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Deploy Teams voice in Microsoft 365
         items:
         - name: Overview
           href: deploy-voice.md
         - name: Step 1. Choose your voice solution 
-          href: https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Step 2. - Set up Phone System
-          href: https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Step 3. - Set up PSTN connectivity
           items: 
           - name: Calling Plan option
-            href: https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: /microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Direct Routing option
-            href: https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: /microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Case study for multi-national corporation 
-          href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-
+          href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Collaboration governance
         items:
         - name: Overview
@@ -170,48 +171,58 @@
             href: choose-domain-to-create-groups.md
           - name: End of lifecycle options
             href: end-life-cycle-groups-teams-sites-yammer.md
-
       - name: File collaboration in SharePoint with Microsoft 365
-        href: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Build an intelligent SharePoint intranet
-        href: https://docs.microsoft.com/sharepoint/intelligent-internet-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: OneDrive Guide for enterprises
-        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-
+        href: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Migrate file shares to Microsoft 365
+        items:
+          - name: Overview
+            href: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 1: Set up agents"
+            href: /sharepointmigration/mm-setup-clients?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 2: Create a migration task"
+            href: /sharepointmigration/mm-how-to-use?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 3: Monitor and report"
+            href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
-        href: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Microsoft 365 security for Business Decision Makers (BDMs)
         href: https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
-      - name: Deploy Microsoft Defender Advanced Threat Protection
+      - name: Identity and device access configurations
+        href: https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+      - name: Deploy Microsoft Defender for Endpoints
         href: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
     - name: Compliance
       items:
       - name: Insider risk solutions in Microsoft 365
         items:
           - name: Overview
-            href: https://docs.microsoft.com/microsoft-365/compliance/insider-risk-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Communication compliance
-            href: https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: ../compliance/communication-compliance-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Insider risk management
-            href: https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: ../compliance/insider-risk-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Information barriers
-            href: https://docs.microsoft.com/microsoft-365/compliance/information-barriers-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: ../compliance/information-barriers-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Privileged access management
-            href: https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-solution-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+            href: ../compliance/privileged-access-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Regulatory compliance action plans
         items: 
         - name: ISO - Recommended action plan
-          href: https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: NIST - Recommended action plan
-          href: https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: CCPA - Frequently asked questions
-          href: https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: GDPR - Recommended action plan
-          href: https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Contoso compliance case study
-        href: https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-case-study?view=o365-worldwide?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Contoso case studies
       items:
@@ -222,7 +233,9 @@
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
       - name: Teams voice migration
-        href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
+        href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Contoso compliance case study
+        href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Test Lab Guides
       items:
@@ -244,17 +257,17 @@
     - name: Healthcare
       items: 
       - name: Teams for Healthcare
-        href: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Education
       items: 
       - name: Teams for Education
-        href: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Government
       items:
       - name: Teams for Government
-        href: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Support remote government workers using Teams
-        href: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 - name: Enterprise architecture design principles
   items: 
     - name: Overview
@@ -268,4 +281,4 @@
 - name: Microsoft 365 deployment resources
   items: 
     - name: Deploy Microsoft 365
-      href: https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise
+      href: ../enterprise/microsoft-365-overview.md

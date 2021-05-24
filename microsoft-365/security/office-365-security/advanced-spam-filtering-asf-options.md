@@ -27,11 +27,11 @@ ms.prod: m365-security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](office-365-atp.md)
-- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+> ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in anti-spam policies in EOP allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
 
@@ -44,7 +44,7 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 >
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Enable, disable, or test ASF settings
 
@@ -76,6 +76,8 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
 
+<br>
+
 ****
 
 |Anti-spam policy setting|Description|X-header added|
@@ -89,6 +91,8 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 ## Mark as spam settings
 
 The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
+
+<br>
 
 ****
 

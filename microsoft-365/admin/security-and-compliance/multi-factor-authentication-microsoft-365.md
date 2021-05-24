@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about multi-factor authentication in Microsoft 365."
+description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
 
 # Multi-factor authentication for Microsoft 365
@@ -76,7 +76,7 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 You can use security defaults with any Microsoft 365 plan.
 
-For more information, see this [overview of security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+For more information, see this [overview of security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### Conditional Access policies
 
@@ -112,24 +112,24 @@ For small businesses with Microsoft 365 Business Premium, you can easily use Con
 
 This Conditional Access policy allows you to roll out the MFA requirement to your users at your own pace.
 
-Enterprises should use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies:
+Enterprises should use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies:
 
-- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
-For more information, see this [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+For more information, see this [overview of Conditional Access](/azure/active-directory/conditional-access/overview).
 
 ### Azure AD Identity Protection
 
-With Azure AD Identity Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk).
+With Azure AD Identity Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk).
 
 You can use Azure AD Identity Protection and risk-based Conditional Access policies with:
 
 - Microsoft 365 E5
 - Azure AD Premium P2 licenses
 
-For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+For more information, see this [overview of Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ### Legacy per-user MFA (not recommended)
 
@@ -165,12 +165,11 @@ In the Azure portal, you can:
 
 In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
 
-## Your next step
+## Next steps
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
 
-## Related topics
+## Related content
 
-[Video: Turn on multi-factor authentication](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
-
-[Video: Turn on multi-factor authentication for your phone](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)\
+[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)

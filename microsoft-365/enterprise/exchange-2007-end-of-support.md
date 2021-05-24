@@ -189,15 +189,15 @@ If you're thinking about doing a full hybrid migration, here are things to consi
     
 If full hybrid migration sounds right for you, see the following resources to help with your migration:
   
-- [Exchange Deployment Assistant](https://aka.ms/exdeploy)
+- [Exchange Deployment Assistant](/exchange/exchange-deployment-assistant)
     
-- [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
+- [Exchange Server Hybrid Deployments](/exchange/exchange-hybrid)
     
-- [Hybrid Configuration wizard](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
+- [Hybrid Configuration wizard](/exchange/hybrid-configuration-wizard)
     
-- [Hybrid Configuration wizard FAQs](https://technet.microsoft.com/library/mt488940%28v=exchg.150%29.aspx)
+- [Hybrid Configuration wizard FAQs](/exchange/hybrid-configuration-wizard-faqs)
     
-- [Hybrid deployment prerequisites](https://technet.microsoft.com/library/hh534377%28v=exchg.150%29.aspx)
+- [Hybrid deployment prerequisites](/exchange/hybrid-deployment-prerequisites)
     
 ### Migrate to a newer version of Exchange Server
 
@@ -221,22 +221,22 @@ We recommend that you initially assume that you'll migrate to Exchange 2016. The
 |Migration path to Exchange 2010 and 2013.  <br/> |Here are the general phases for migrating to Exchange 2010 or Exchange 2013:  <br/> - Install Exchange 2010 or 2013 into your existing Exchange 2007 organization. <br/>- Move services and other infrastructure to Exchange 2010 or 2013.<br/>- Move mailboxes and public folders to Exchange 2010 or 2013.<br/>- Decommission remaining Exchange 2007 servers. |
 |Migration path to Exchange 2016  <br/> |Here are the general phases for migrating to Exchange 2016:  <br/> - Install Exchange 2013 into your existing Exchange 2007 organization.<br/>- Move services and other infrastructure to Exchange 2013.<br/>- Move mailboxes and public folders to Exchange 2013.<br/>- Decommission remaining Exchange 2007 servers.<br/>- Install Exchange 2016 into your existing Exchange 2013 organization.<br/>- Move mailboxes, public folders, services, and other infrastructure to Exchange 2016 (order doesn't matter). Decommission remaining Exchange 2013 servers.<br/><br/> **Note:** Migrating from Exchange 2013 to Exchange 2016 is simple. The two versions have almost the same hardware requirements, and these versions are very compatible. So you can rebuild a server you bought for Exchange 2013 and install Exchange 2016 on it. For online mailbox moves, most users won't even notice that their mailbox was moved off the server and then back after you've rebuilt it with Exchange 2016.           |
 |Version coexistence  <br/> | When migrating to ...  <br/> **Exchange 2016:** Exchange 2016 can't be installed in an organization that includes an Exchange 2007 server. You'll first need to migrate to Exchange 2010 or 2013 (we strongly recommend Exchange 2013), remove all Exchange 2007 servers, and then migrate to Exchange 2016.  <br/> **Exchange 2010 or Exchange 2013:** You can install Exchange 2010 or Exchange 2013 into an existing Exchange 2007 organization. This enables you to install one or more Exchange 2010 or 2013 servers and perform your migration.  <br/> |
-|Server hardware  <br/> | Server hardware requirements have changed from Exchange 2007. Make sure your hardware is compatible. For details, see:  <br/> [Exchange 2016 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 System Requirements](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  You'll find that the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers mean you'll likely need fewer servers to support the same number of mailboxes.  <br/> |
-|Operating system version  <br/> | The minimum supported operating system versions for each version are:  <br/> **Exchange 2016** - Windows Server 2012  <br/> **Exchange 2013** - Windows Server 2008 R2 SP1  <br/> **Exchange 2010** - Windows Server 2008 SP2  <br/>  Find more information about operating system support at [Exchange Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Active Directory forest functional level  <br/> | The minimum supported Active Directory forest functional levels for each version are:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Find more information about forest functional level support at [Exchange Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Office client versions  <br/> | The minimum supported Office client versions for each version are:  <br/> **Exchange 2016** - Office 2010 (with the latest updates)  <br/> **Exchange 2013** - Office 2007 SP3  <br/> **Exchange 2010** - Office 2003  <br/>  Find more information about Office client support at [Exchange Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Server hardware  <br/> | Server hardware requirements have changed from Exchange 2007. Make sure your hardware is compatible. For details, see:  <br/> [Exchange 2016 System Requirements](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange 2013 System Requirements](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange 2010 System Requirements](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  You'll find that the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers mean you'll likely need fewer servers to support the same number of mailboxes.  <br/> |
+|Operating system version  <br/> | The minimum supported operating system versions for each version are:  <br/> **Exchange 2016** - Windows Server 2012  <br/> **Exchange 2013** - Windows Server 2008 R2 SP1  <br/> **Exchange 2010** - Windows Server 2008 SP2  <br/>  Find more information about operating system support at [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Active Directory forest functional level  <br/> | The minimum supported Active Directory forest functional levels for each version are:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Find more information about forest functional level support at [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Office client versions  <br/> | The minimum supported Office client versions for each version are:  <br/> **Exchange 2016** - Office 2010 (with the latest updates)  <br/> **Exchange 2013** - Office 2007 SP3  <br/> **Exchange 2010** - Office 2003  <br/>  Find more information about Office client support at [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
    
 #### How do I migrate?
 
 If you decided to keep your email on-premises, use the following resources to help with your migration:
   
-- [Exchange Deployment Assistant](https://aka.ms/exdeploy)
+- [Exchange Deployment Assistant](/exchange/exchange-deployment-assistant)
     
-- Active Directory schema changes for Exchange [2016](https://technet.microsoft.com/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb738144%28v=exchg.150%29.aspx), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
+- Active Directory schema changes for Exchange [2016](/Exchange/plan-and-deploy/active-directory/ad-schema-changes), [2013](/exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
     
-- System requirements for Exchange [2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx)
+- System requirements for Exchange [2016](/Exchange/plan-and-deploy/system-requirements), [2013](/exchange/exchange-2013-system-requirements-exchange-2013-help), [2010](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141))
     
-- Prerequisites for Exchange [2016](https://technet.microsoft.com/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/bb691354%28v=exchg.141%29.aspx)
+- Prerequisites for Exchange [2016](/Exchange/plan-and-deploy/prerequisites), [2013](/exchange/exchange-2013-prerequisites-exchange-2013-help), [2010](/previous-versions/office/exchange-server-2010/bb691354(v=exchg.141))
     
 ## Get help
 

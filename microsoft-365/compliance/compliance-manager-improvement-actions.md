@@ -51,7 +51,9 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [Comp
 
 2. In the edit status flyout pane, select the **Assigned to** box to show a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
 
-3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action. (Note: US Government Community (GCC) High customers won't receive an email when actions are assigned to them.)
+3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action. 
+> [!NOTE]
+> US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
 
 The assigned user can then perform the recommended actions.
 

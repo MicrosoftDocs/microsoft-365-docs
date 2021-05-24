@@ -2,8 +2,8 @@
 title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article

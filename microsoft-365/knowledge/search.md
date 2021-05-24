@@ -31,16 +31,18 @@ The topic answer will display:
 
 The topic page can display in the search results even if the topic answer card doesn't appear.
 
+The search results in Word, PowerPoint, Outlook and Excel will also show the topic answer when one is found.
+
 
 ## Acronyms
 
 In Viva Topics, you can manually edit a topic to include an acronym for it as an <b>Alternate Name</b>. This allows a user who is searching by only the topic's acronym to find the topic answer through Microsoft Search.
 
-[Acronym Answers](https://docs.microsoft.com/microsoftsearch/manage-acronyms) is a feature provided though Microsoft Search and is managed separately from Viva Topics.
+[Acronym Answers](/microsoftsearch/manage-acronyms) is a feature provided though Microsoft Search and is managed separately from Viva Topics.
 
 ## Bookmarks and topics
 
-[Bookmarks](https://docs.microsoft.com/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). They're created by search admins in the Microsoft 365 admin center. 
+[Bookmarks](/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). They're created by search admins in the Microsoft 365 admin center. 
 
 For users who are looking for information about booking a trip for work:
 
@@ -52,7 +54,4 @@ For users who are looking for information about booking a trip for work:
 In the users search experience, when a user searches for a term like “travel”, search results will display in the following priority in Microsoft Search
 1. Published or Confirmed topics 
 2. Bookmarks
-3. Suggested topics 
-
-
-
+3. Suggested topics

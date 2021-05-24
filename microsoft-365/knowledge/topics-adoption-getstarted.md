@@ -11,7 +11,6 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
 localization_priority: Normal
-ROBOTS: NOINDEX
 ---
 
 # Get started driving adoption of Microsoft Viva Topics
@@ -69,17 +68,21 @@ To plan for adoption of Viva Topics, you need to:
     - Coming soon, training videos and help for end users.
 
 4. [Build a champion network](#build-a-champion-network):
-    - You might have communities of practice or champion networks already in place. These are great ways to socialize and evangelize and get peers involved in helping each other. And they can share success stories which can be really valuable. They can offer advice and generate excitement.
+    - You might have communities of practice or champion networks already in place. These are great ways to socialize and evangelize and get peers involved in helping each other. And they can share success stories which can be valuable. They can offer advice and generate excitement.
 
 ### Target scenarios
 
-You need to determine how you want to use Viva Topics in your organization before you can have success with topics. Here are a few scenarios where knowledge management and topics can help your organization:
+Determine how you want to use Viva Topics in your organization so that you use them successfully. Here are a few scenarios where knowledge management and topics can help your organization:
 
 - Role onboarding & training: Understanding a new organization's terminology, key projects, and culture are important steps in onboarding. Easy discovery of topics can help new employees ramp up on new job, roles, or projects quickly.
 - Expertise finding and information sharing: When topics are managed and shared, people in your organizations can more easily find information and experts to help them in their day to day work.
 - Expanded decision making and improved time to market: When information and experts are easy to reach, you can make decisions more easily and shave time off projects.
 
-For example, here's a scenario for role onboarding:
+#### Example scenario for role onboarding
+
+An HR manager needs to provide information to new employees that will help them quickly onboard to the company and their teams. They want to point them to the correct resources, documents, and team members that they’ll need to onboard quickly and efficiently. They’re looking for a solution that allows the new employee to quickly find the information they need without having to search across multiple repositories or leave the applications they’re already using.
+
+For example:
 
 - An employee (Jordan) is taking on a new role, or has been newly hired and is just starting with a role. Jordan wants to get involved and productive as quickly as possible. But Jordan also needs help with finding a starting place.
 - A colleague (Kim) who was in the role before Jordan created topic pages that can help out new employees and anyone else looking for that information.
@@ -87,13 +90,35 @@ For example, here's a scenario for role onboarding:
 - As Jordan reads through a new post on SharePoint, they see a topic highlight, and hover over it to quickly get a definition of the term and who to contact with more questions. Before, Jordan might have had to hunt around for this information and contact colleagues to see who to ask about something.
 - Exposing this information through topics can be powerful, because although this information may have been available before, it might have been siloed and hard to find. Bringing it into the applications that Jordan is using and helping them find these experts can also drive a sense of engagement and community. It can also help them feel more empowered when dealing with the new role.
 
+When you automate this scenario, you can ensure that:
+
+- New employees can quickly connect with the right people on the right projects.
+- New employees have instant access to the latest project information within the flow of their work.
+- Search times are greatly reduced.
+- Onboarding times are greatly reduced.
+
+#### Example scenario for customer call center
+
+You can enable customer service to quickly find files and experts to help out with unusual tax questions and quickly document the answer for others to easily access with Viva Topics.
+
+For example, a support representative needs to quickly find knowledge base articles, documents and policies so that they can support customers. They want to find the right information at the right time, without having to manually sift through several data bases, repositories, or applications, or dispatching a call. And they're looking for a solution that allows them to remain within their main call prompt and access policies, regulations, and guidelines in the flow of their conversations, so they can quickly respond to questions and update the case.
+
+When you automate this scenario with Viva Topics, you can ensure that:
+
+- Support call times are reduced.
+- Escalations to 2nd and 3rd tier support are reduced.
+- Number of call-backs on a given case are reduced.
+- Customer satisfaction is increased.
+
+#### Prioritize your scenarios
+
 After you identify your scenarios, you can prioritize the scenarios:
 
 One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those ones your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
 
 ![High impact, easy to implement scenarios are high priority](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Pick a couple of key scenarios to focus on initially, work with your early adopters to get some feedback, and then roll out in stages. This way you can iterate, make improvements, and gain feedback so you can grow adoption over time. 
+Pick a couple of key scenarios to focus on initially, work with your early adopters to get some feedback, and then roll out in stages. This way you can iterate, make improvements, and gain feedback so you can grow adoption over time.
 
 ### Identify stakeholders
 

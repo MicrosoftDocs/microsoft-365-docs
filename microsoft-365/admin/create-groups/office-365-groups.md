@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Microsoft 365 Groups."
+description: "With Microsoft 365 Groups, you can drive teamwork across Microsoft 365 by giving a group of people access to a collection of shared resources."
 ---
 
 # Overview of Microsoft 365 Groups for administrators
@@ -36,10 +36,11 @@ Microsoft 365 Groups is the foundational membership service that drives all team
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)
 - Roadmap (if you have Project for the web)
+- Stream
 
 With a Microsoft 365 group, you don't have to manually assign permissions to each of these resources. Adding people to the group automatically gives them the permissions they need.
 
-Any user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). If you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services require the people creating them to be able to create a group. Users can still participate in group activities, such as creating tasks in Planner or using Teams chat, provided they are a member of the group.
+Any user can create a group unless you [limit group creation to a specific set of people](../../solutions/manage-creation-of-groups.md). If you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services require the people creating them to be able to create a group. Users can still participate in group activities, such as creating tasks in Planner or using Teams chat, provided they are a member of the group.
 
 Groups have the following roles:
 
@@ -51,17 +52,17 @@ Only global admins, user admins, and groups admins can create and manage groups 
 
 As an administrator, you can:
 
-- [Specify who can create groups](manage-creation-of-groups.md)
-- [Create a naming policy for groups in your organization](groups-naming-policy.md)
-- [Choose which domain to use when creating a group](choose-domain-to-create-groups.md)
+- [Specify who can create groups](../../solutions/manage-creation-of-groups.md)
+- [Create a naming policy for groups in your organization](../../solutions/groups-naming-policy.md)
+- [Choose which domain to use when creating a group](../../solutions/choose-domain-to-create-groups.md)
 - [Manage guest access to groups](manage-guest-access-in-groups.md)
 - [Recover a deleted group](restore-deleted-group.md) (within 30 days of deletion)
 
-If you prefer a more automated way to manage the lifecycle of your Microsoft 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15, and 1 day before the group expiration that allows them to renew the group if it's still needed. See: [Microsoft 365 group Expiration Policy](office-365-groups-expiration-policy.md).
+If you prefer a more automated way to manage the lifecycle of your Microsoft 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15, and 1 day before the group expiration that allows them to renew the group if it's still needed. See: [Microsoft 365 group Expiration Policy](../../solutions/microsoft-365-groups-expiration-policy.md).
 
-You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
+You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
-If you have many users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Microsoft 365 groups](plan-for-groups-governance.md) for best practices.
+If you have many users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Microsoft 365 groups](../../solutions/collaboration-governance-overview.md) for best practices.
 
 ## Group limits
 
@@ -94,14 +95,14 @@ For example, you can create a label called *Highly Confidential* and specify tha
 > [!IMPORTANT]
 > If you are currently using classification labels, they will no longer be available to users who create groups once sensitivity labels are enabled. 
 
-For information about creating, managing, and using sensitivity labels, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+For information about creating, managing, and using sensitivity labels, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../../compliance/sensitivity-labels-teams-groups-sites.md).
 
 ## Which Microsoft 365 plans include groups?
 
 Any Microsoft 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3, and E5 plans. The group takes on the licensing of the person who creates the group (also known as the "organizer" of the group). As long as the organizer has the proper license for whatever features you want the group to have, that license will convey to the group.
 
 > [!NOTE]
-> For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+> For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
@@ -111,12 +112,10 @@ Microsoft 365 groups work with Azure Active Directory. The groups features you g
 > For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.
 > Periodically we will generate usage reports that tell you which users are missing a license, and need one assigned to them to be compliant with the licensing requirements. For example, let's say a user doesn't have a license and they are added to a group where the naming policy is enforced. The report will flag for you that they need a license.
 
-## Related articles
+## Related content
 
-[Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
-
-[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
-
-[Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
-
-[SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
+[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md) (article)\
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
+[SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)\
+[Organize groups and channels in Microsoft Stream](/stream/groups-channels-organization) (article)

@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."
 ---
 
@@ -54,7 +55,7 @@ To set an expiration date for Anyone links on a specific site
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
 
-You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
+You can set *Anyone* link expiration for a specific OneDrive by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
 
 ## Set link permissions
 
@@ -98,7 +99,7 @@ To set the default file and folder sharing link for a specific site
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [data loss prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
 To create a DLP rule
 1. In the Microsoft 365 compliance admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
@@ -135,7 +136,7 @@ To turn on safe attachments
 
 4. Optionally turn on Safe Documents as well, and then click **Save**
 
-See [ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams) for additional guidance.
+See [ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) for additional guidance.
 
 ## Add copyright information to your files
 
@@ -156,7 +157,7 @@ With content marking enabled for the label, the text you specified will be added
 
 ## See Also
 
-[Overview of sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
+[Overview of sensitivity labels](/Office365/SecurityCompliance/sensitivity-labels)
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 

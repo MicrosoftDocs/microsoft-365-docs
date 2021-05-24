@@ -2,35 +2,26 @@
 title: "Add users and assign licenses"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
-description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."
+description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."
 ms.date: 07/01/2020
 ---
 
 # Add users and assign licenses at the same time
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
-
-::: moniker-end
 
 The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
@@ -38,18 +29,64 @@ The people on your team each need a user account before they can sign in and acc
 
 You must be a global, license, or a user admin to add users and assign licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Watch: Add users in the admin center
+## Add a user in the admin simplified view
+
+If you're seeing this page in the admin center, you're on the **admin simplified view**. Follow the steps below to add a user.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Simplified admin center view":::
+
+::: moniker range="o365-worldwide"
+
+1. Go to the admin center at <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Select **Create an account for another person**.
+3. On the **Add a user account** page, fill in the first and last name, display name, and username they'll use to sign in.
+4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
+5. Select **Add user** and **Download sign-in info** if you want to save this info.
+
+## Watch: Add users in the dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
 
-## Add users one at a time
+## Add users one at a time in the dashboard view
+
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="Screenshot: Admin center dashboard view":::
 
 ::: moniker range="o365-worldwide"
 
 1. Go to the admin center at <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
 2. Go to **Users** > **Active users**, and select **Add a user**.
 3. In the **Set up the basics** pane, fill in the basic user information, and then select **Next**.
     - **Name** Fill in the first and last name, display name, and username.
@@ -61,53 +98,23 @@ You must be a global, license, or a user admin to add users and assign licenses.
 5. In the **Optional settings** pane, expand **Roles** to make this user an admin. Expand **Profile info** to add additional information about the user.
 6. Select **Next**, review your new user's settings, make any changes you like, then select **Finish adding**, then **Close**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <https://portal.office.de/adminportal>.
-2. Go to **Users** > **Active users**, and select **Add a user**.
-3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
-    - **Name** Fill in first, last, display name, and user name.
-    - **Domain** For example, if the user's username is Jakob, and the domain is contoso.com, they'll sign in to by typing jakob@contoso.com.
-    - **Contact information** Expand to fill in a mobile phone number, address, and so on.
-    - **Password** Use the autogenerated password or expand to specify a strong password for the user. They must change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
-    - **Roles** Expand if you need to make this user an admin.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Go to the admin center at <https://portal.partner.microsoftonline.cn>.
-2. Go to **Users** > **Active users**, and select **Add a user**.
-3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
-    - **Name** Fill in first, last, display name, and user name.
-    - **Domain** For example, if the user's username is Jakob, and the domain is contoso.com, they'll sign in to by typing jakob@contoso.com.
-    - **Contact information** Expand to fill in a mobile phone number, address, and so on.
-    - **Password** Use the autogenerated password or expand to specify a strong password for the user. They must change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
-    - **Roles** Expand if you need to make this user an admin.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
-
-::: moniker-end
-
 ## Add multiple users at the same time
 
 You can use any of the following methods to add multiple users at the same time:
 
-- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
-- **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
-- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
-- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
+- **Use a spreadsheet to add people in bulk.** See [Add several users at the same time](../../enterprise/add-several-users-at-the-same-time.md).
+- **Automate adding accounts and assigning licenses.** See [Create user accounts with Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choose this method if you're already familiar with using Windows PowerShell cmdlets.
+- **Using ActiveDirectory?** [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Microsoft 365. The sync only adds the user accounts. You must assign licenses to the synced users before they can use email and other Office apps.
+- **Migrating from Exchange?** See [Ways to migrate multiple email accounts to Office 365](/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you automatically add users as part of the migration. The migration only adds the user accounts. You must assign licenses to the users before they can use email and other Office apps. If you don't assign a license to a user, their mailbox is disabled after a grace period of 30 days. Learn how to [assign licenses to users](../manage/assign-licenses-to-users.md) in the Microsoft 365 admin center.
 
 ## Next steps
 
-After you add a user, you get an email notification from Microsoft. The email contains the person's user ID and password so they can sign in to Microsoft 365. Use your normal process for communicating new passwords. Share the [Employee quickstart guide](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) with your new users to set up things, like how to [download and install Office apps on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and how to [set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+After you add a user, you get an email notification from Microsoft. The email contains the person's user ID and password so they can sign in to Microsoft 365. Use your normal process for communicating new passwords. Share the [Employee quickstart guide](../../business-video/employee-quick-setup.md) with your new users to set up things, like how to [download and install Office apps on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and how to [set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Related content
 
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
-[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (article)\
+[Add several users at the same time to Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (article)\
 [Restore a user in Microsoft 365](restore-user.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
 [Delete a user from your organization](delete-a-user.md) (article)

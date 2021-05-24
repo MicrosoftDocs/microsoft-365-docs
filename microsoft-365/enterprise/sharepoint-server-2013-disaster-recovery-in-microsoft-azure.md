@@ -61,7 +61,7 @@ It's important to evaluate your organization's Recovery Time Objectives (RTOs) a
   
 The guidance in this article describes how to implement a warm standby environment. You can also adapt it to a cold standby environment, although you need to follow additional procedures to support this kind of environment. This article does not describe how to implement a hot standby environment.
   
-For more information about disaster recovery solutions, see [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) and [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+For more information about disaster recovery solutions, see [High availability and disaster recovery concepts in SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts) and [Choose a disaster recovery strategy for SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery).
   
 ## Solution description
 
@@ -191,17 +191,17 @@ If multiple storage groups are implemented (databases are spread across more tha
 
 Multiple technologies are used in this disaster recovery solution. To help ensure that these technologies interact as expected, each component in the on-premises and Azure environment must be installed and configured correctly. We recommend that the person or team who sets up this solution have a strong working knowledge of and hands-on skills with the technologies described in the following articles:
   
-- [Distributed File System (DFS) Replication Services](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [Distributed File System (DFS) Replication Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Windows Server Failover Clustering (WSFC) with SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Windows Server Failover Clustering (WSFC) with SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [AlwaysOn Availability Groups (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn Availability Groups (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [Back Up and Restore of SQL Server Databases](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [Back Up and Restore of SQL Server Databases](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [SharePoint Server 2013 installation and farm deployment](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [SharePoint Server 2013 installation and farm deployment](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
 Finally, we recommend scripting skills that you can use to automate tasks associated with these technologies. It's possible to use the available user interfaces to complete all the tasks described in this solution. However, a manual approach can be time consuming and error prone and delivers inconsistent results.
   
@@ -234,7 +234,7 @@ In addition to the guidance provided in [Microsoft Azure Architectures for Share
 To support log shipping in a disaster-recovery solution, a file share virtual machine is added to the subnet where the database roles reside. The file share also serves as the third node of a Node Majority for the SQL Server AlwaysOn availability group. This is the recommended configuration for a standard SharePoint farm that uses SQL Server AlwaysOn availability groups. 
   
 > [!NOTE]
-> It is important to review the prerequisites for a database to participate in a SQL Server AlwaysOn availability group. For more information, see [Prerequisites, Restrictions, and Recommendations for AlwaysOn Availability Groups](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
+> It is important to review the prerequisites for a database to participate in a SQL Server AlwaysOn availability group. For more information, see [Prerequisites, Restrictions, and Recommendations for AlwaysOn Availability Groups](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability). 
   
 **Figure: Placement of a file server used for a disaster recovery solution**
 
@@ -242,7 +242,7 @@ To support log shipping in a disaster-recovery solution, a file share virtual ma
   
 In this diagram, a file share virtual machine is added to the same subnet in Azure that contains the database server roles. Do not add the file share virtual machine to an availability set with other server roles, such as the SQL Server roles.
   
-If you are concerned about the high availability of the logs, consider taking a different approach by using [SQL Server backup and restore with Azure Blob Storage Service](https://go.microsoft.com/fwlink/p/?LinkId=393113). This is a new feature in Azure that saves logs directly to a blob storage URL. This solution does not include guidance about using this feature.
+If you are concerned about the high availability of the logs, consider taking a different approach by using [SQL Server backup and restore with Azure Blob Storage Service](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service). This is a new feature in Azure that saves logs directly to a blob storage URL. This solution does not include guidance about using this feature.
   
 When you design the recovery farm, keep in mind that a successful disaster recovery environment accurately reflects the production farm that you want to recover. The size of the recovery farm is not the most important thing in the recovery farm's design, deployment, and testing. Farm scale varies from organization to organization based on business requirements. It might be possible to use a scaled-down farm for a short outage or until performance and capacity demands require you to scale the farm.
   
@@ -272,15 +272,15 @@ This phase includes deploying both Windows Server Active Directory and DNS to th
   
 In the illustration, two virtual machines are deployed to the same subnet. These virtual machines are each hosting two roles: Active Directory and DNS.
   
-Before deploying Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?linkid=392681). These guidelines help you determine whether you need a different architecture or different configuration settings for your solution.
+Before deploying Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). These guidelines help you determine whether you need a different architecture or different configuration settings for your solution.
   
-For detailed guidance on setting up a domain controller in Azure, see [Install a Replica Active Directory Domain Controller in Azure Virtual Networks](https://go.microsoft.com/fwlink/p/?LinkId=392687).
+For detailed guidance on setting up a domain controller in Azure, see [Install a Replica Active Directory Domain Controller in Azure Virtual Networks](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100).
   
 Before this phase, you didn't deploy virtual machines to the Virtual Network. The virtual machines for hosting Active Directory and DNS are likely not the largest virtual machines you need for the solution. Before you deploy these virtual machines, first create the largest virtual machine that you plan to use in your Virtual Network. This helps ensure that your solution lands on a tag in Azure that allows the largest size you need. You do not need to configure this virtual machine at this time. Simply create it, and set it aside. If you do not do this, you might run into a limitation when you try to create larger virtual machines later, which was an issue at the time this article was written. 
   
 ## Phase 4: Deploy the SharePoint recovery farm in Azure
 
-Deploy the SharePoint farm in your Virtual Network according to your design plans. It might be helpful to review [Planning for SharePoint 2013 on Azure Infrastructure Services](https://go.microsoft.com/fwlink/p/?LinkId=400984) before you deploy SharePoint roles in Azure.
+Deploy the SharePoint farm in your Virtual Network according to your design plans. It might be helpful to review [Planning for SharePoint 2013 on Azure Infrastructure Services](/previous-versions/azure/dn275958(v=azure.100)) before you deploy SharePoint roles in Azure.
   
 Consider the following practices that we learned by building our proof of concept environment:
   
@@ -322,18 +322,18 @@ The following table provides links to DFSR reference articles and blog posts.
 
 |**Title**|**Description**|
 |:-----|:-----|
-|[Replication](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |DFS Management TechNet topic with links for replication  <br/> |
+|[Replication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |DFS Management TechNet topic with links for replication  <br/> |
 |[DFS Replication: Survival Guide](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki with links to DFS information  <br/> |
-|[DFS Replication: Frequently Asked Questions](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |DFS Replication TechNet topic  <br/> |
-|[Jose Barreto's Blog](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Blog written by a Principal Program Manager on the File Server team at Microsoft  <br/> |
+|[DFS Replication: Frequently Asked Questions](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |DFS Replication TechNet topic  <br/> |
+|[Jose Barreto's Blog](/archive/blogs/josebda/) <br/> |Blog written by a Principal Program Manager on the File Server team at Microsoft  <br/> |
 |[The Storage Team at Microsoft - File Cabinet Blog](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blog about file services and storage features in Windows Server  <br/> |
    
 ## Phase 6: Set up log shipping to the recovery farm
 
-Log shipping is the critical component for setting up disaster recovery in this environment. You can use log shipping to automatically send transaction log files for databases from a primary database server instance to a secondary database server instance. To set up log shipping, see [Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
+Log shipping is the critical component for setting up disaster recovery in this environment. You can use log shipping to automatically send transaction log files for databases from a primary database server instance to a secondary database server instance. To set up log shipping, see [Configure log shipping in SharePoint 2013](/sharepoint/administration/configure-log-shipping). 
   
 > [!IMPORTANT]
-> Log shipping support in SharePoint Server is limited to certain databases. For more information, see [Supported high availability and disaster recovery options for SharePoint databases (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
+> Log shipping support in SharePoint Server is limited to certain databases. For more information, see [Supported high availability and disaster recovery options for SharePoint databases (SharePoint 2013)](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas). 
   
 ## Phase 7: Validate failover and recovery
 
@@ -398,7 +398,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > When you use T-SQL explicitly, specify either **WITH NORECOVERY** or **WITH RECOVERY** in every RESTORE statement to eliminate ambiguity—this is very important when writing scripts. After the full and differential backups are restored, the transaction logs can be restored in SQL Server Management Studio. Also, because log shipping is already stopped, the content database is in a standby state, so you must change the state to full access.
   
-In SQL Server Management Studio, right-click the **WSS_Content** database, point to **Tasks** > **Restore**, and then click **Transaction Log** (if you have not restored the full backup, this is not available). For more information, see[Restore a Transaction Log Backup (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+In SQL Server Management Studio, right-click the **WSS_Content** database, point to **Tasks** > **Restore**, and then click **Transaction Log** (if you have not restored the full backup, this is not available). For more information, see[Restore a Transaction Log Backup (SQL Server)](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server).
   
 ### Crawl the content source
 
@@ -455,7 +455,7 @@ From here, you might run into a couple of different disaster-recovery scenarios:
   
  **Example scenario: The on-premises datacenter is lost completely.** This scenario might occur due to a natural disaster, such as a fire or flood. In this case, for an enterprise, you would likely have a secondary datacenter hosted in another region as well as your Azure subnet that has its own directory services and DNS. As in the previous disaster scenario, you can redirect your internal and external DNS records to point to the Azure SharePoint farm. Again, take note that DNS-record propagation can take some time.
   
-If you are using host-named site collections, as recommended in [Host-named site collection architecture and deployment (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), you might have several site collections hosted by the same web application in your SharePoint farm, with unique DNS names (for example, `https://sales.contoso.com` and `https://marketing.contoso.com`). In this case, you can create DNS records for each site collection that point to your cluster IP address. After a request reaches your SharePoint web-front-end servers, they handle routing each request to the appropriate site collection.
+If you are using host-named site collections, as recommended in [Host-named site collection architecture and deployment (SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment), you might have several site collections hosted by the same web application in your SharePoint farm, with unique DNS names (for example, `https://sales.contoso.com` and `https://marketing.contoso.com`). In this case, you can create DNS records for each site collection that point to your cluster IP address. After a request reaches your SharePoint web-front-end servers, they handle routing each request to the appropriate site collection.
   
 ## Microsoft proof-of-concept environment
 
@@ -523,7 +523,7 @@ The SharePoint farms were deployed in two stages in order to simplify environmen
 We created the database servers with SQL Server installed before creating the SharePoint 2013 servers. Because this was a new deployment, we created the availability groups before deploying SharePoint. We created three groups based on MCS best practice guidance. 
   
 > [!NOTE]
-> Create placeholder databases so that you can create availability groups before the SharePoint installation. For more information, see [Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> Create placeholder databases so that you can create availability groups before the SharePoint installation. For more information, see [Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 We created the farm and joined additional servers in the following order:
   
@@ -535,7 +535,7 @@ We created the farm and joined additional servers in the following order:
     
 - Provision SP-WFE1 and SP-WFE2 to host the distributed cache. 
     
-We used the  _skipRegisterAsDistributedCachehost_ parameter when we ran **psconfig.exe** at the command line. For more information, see [Plan for feeds and the Distributed Cache service in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+We used the  _skipRegisterAsDistributedCachehost_ parameter when we ran **psconfig.exe** at the command line. For more information, see [Plan for feeds and the Distributed Cache service in SharePoint Server 2013](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 We repeated the following steps in the recovery environment:
   
@@ -625,7 +625,7 @@ This happens because the default backup preference for an availability group is 
   
 ### Managed Metadata service (or other SharePoint service) fails to start automatically after installation
 
-Services might take several minutes to start, depending on the performance and current load of your SharePoint Server. Manually click **Start** for the service and provide adequate time for startup while occasionally refreshing the Services on Server screen to monitor its status. In case the service remains stopped, enable SharePoint diagnostic logging, attempt to start the service again, and then check the log for errors. For more information, see [Configure diagnostic logging in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Services might take several minutes to start, depending on the performance and current load of your SharePoint Server. Manually click **Start** for the service and provide adequate time for startup while occasionally refreshing the Services on Server screen to monitor its status. In case the service remains stopped, enable SharePoint diagnostic logging, attempt to start the service again, and then check the log for errors. For more information, see [Configure diagnostic logging in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
 ### After changing DNS to the Azure failover environment, client browsers continue to use the old IP address for the SharePoint site
 
@@ -637,13 +637,10 @@ Ipconfig /flushdns
 
 ## Additional resources
 
-[Supported high availability and disaster recovery options for SharePoint databases](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Supported high availability and disaster recovery options for SharePoint databases](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## See Also
 
-[Microsoft 365 solution and architecture center](../solutions/solution-architecture-center.md)
-
-
-
+[Microsoft 365 solution and architecture center](../solutions/index.yml)

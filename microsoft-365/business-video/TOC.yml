@@ -49,6 +49,8 @@
       items: 
         - name: Use Outlook and Teams
           href: collab-outlook-teams.md
+        - name: Get started with Teams
+          href: get-started-teams-small-business.md
         - name: Create a group email address
           href: group-email.md
         - name: Create a shared calendar
@@ -87,6 +89,8 @@
       items:
         - name: Overview of Bookings
           href: overview-bookings.md
+        - name: Track business info with Microsoft Lists
+          href: track-info-lists.md
         - name: Plan an event
           href: plan-event.md   
     - name: Manage services
@@ -99,6 +103,8 @@
           href: view-bill.md
         - name: Buy new licenses
           href: buy-licenses.md
+        - name: Remove existing licenses
+          href: remove-existing-licenses.md
         - name: Update your payment method
           href: update-payment.md 
         - name: Reset user passwords
@@ -121,6 +127,8 @@
           href: act-on-report.md
         - name: Add another domain
           href: add-domain.md 
+        - name: Set up a new business email address
+          href: set-up-a-new-business-email-address.md
     - name: Manage devices
       items:
         - name: Secure Windows 10 Pro devices
@@ -153,10 +161,10 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Find answers and help
-          href: find-help-answers.md
         - name: Get help or support
           href: get-help-support.md 
+        - name: Find docs and training
+          href: find-help-answers.md
         - name: Employee quick setup  
           href: employee-quick-setup.md  
     - name: Switch from Google Workspace

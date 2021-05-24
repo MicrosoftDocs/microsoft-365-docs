@@ -14,8 +14,9 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
@@ -33,7 +34,7 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure External collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
 
@@ -69,7 +70,7 @@ To set Teams guest access settings
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
 
-Once Teams guest access is turned on, you can optionally control guest access to individual teams and their associated SharePoint sites using sensitivity labels. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Once Teams guest access is turned on, you can optionally control guest access to individual teams and their associated SharePoint sites using sensitivity labels. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > It may take up to twenty-four hours for the Teams guest settings to become active after you turn it on.
@@ -182,6 +183,6 @@ To invite guests to a team
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

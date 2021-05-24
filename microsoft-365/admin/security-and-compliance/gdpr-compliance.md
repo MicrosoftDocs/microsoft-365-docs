@@ -143,7 +143,7 @@ Customers, employees, and clients are becoming more aware of the importance of d
 
 To get ready for the GDPR, here are some suggestions for next steps to take:
   
-- Evaluate your GDPR program with [Accountability Readiness Checklists](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
+- Evaluate your GDPR program with [Accountability Readiness Checklists](/compliance/regulatory/gdpr-arc).
     
 - Investigate [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) as a solution for achieving and maintaining compliance with GDPR. 
    
@@ -163,5 +163,3 @@ European Commission sites:
 - [Data protection](https://ec.europa.eu/info/law/law-topic/data-protection)
     
 - [2018 reform of EU data protection rules](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
-    
-

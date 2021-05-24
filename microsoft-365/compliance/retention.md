@@ -23,30 +23,39 @@ description: Learn about retention policies and retention labels that help you t
 
 # Learn about retention policies and retention labels
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+> [!NOTE]
+> If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
+> -  [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
+>
+> The information on this page is for IT administrators who can create retention policies and retention labels for compliance reasons.
 
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
-  
-- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
 
-- **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep. 
-    
-- **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them. 
-    
-Retention settings that you configure can help you achieve all these goals. Managing content commonly requires two actions:
-  
-- **Retaining** content so that it can't be permanently deleted before the end of the retention period. 
-    
-- **Deleting** content permanently at the end of the retention period. 
-    
+- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years.
+
+- **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep.
+
+- **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them.
+
+Retention settings that you configure can help you achieve these goals. Managing content commonly requires two actions:
+
+| Action| Purpose |
+|:-----|:-----|
+|Retain content | Prevent permanent deletion and remain available for eDiscovery |
+|Delete content | Permanently delete content from your organization|
 
 With these two retention actions, you can configure retention settings for the following outcomes:
 
 - Retain-only: Retain content forever or for a specified period of time.
-- Delete-only: Delete content after a specified period of time.
-- Retain and then delete: Retain content for a specified period of time and then delete it.
+- Delete-only: Permanently delete content after a specified period of time.
+- Retain and then delete: Retain content for a specified period of time and then permanently delete it.
 
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
+
+Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with retention policies and retention labels](get-started-with-retention.md).
 
 ## How retention settings work with content in place
 
@@ -86,7 +95,7 @@ Unlike retention policies, retention settings from retention labels travel with 
 
 - Apply a default label for SharePoint documents.
 
-- Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
+- Support [disposition review](./disposition.md) to review the content before it's permanently deleted.
 
 - Mark the content as a [record](records-management.md#records) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
@@ -216,7 +225,7 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)
-- [Document understanding model for SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Document understanding model for SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -273,7 +282,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
-|Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
+|Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
@@ -378,13 +387,13 @@ You apply Preservation Lock after the retention policy or retention label policy
 
 ## Releasing a policy for retention
 
-Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy but change the location status to off.
+Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy, but remove a site for SharePoint or an account for OneDrive, or change the location status to off, or disable the policy.
  
-When you do either of these actions, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. Additionally, you can't manually delete this content during the grace period.
+When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period deleted files are still retained (files continue to be added to the Preservation Hold library), but the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
 
-You can change the location status back to on during the grace period, and no content will be deleted for that policy.
+For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
-This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+Because of the behavior during the grace period, if you re-enable the policy or change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
 
 ## Auditing retention configuration
 
@@ -392,35 +401,40 @@ Administrator actions for retention policies and retention labels are saved to t
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
+To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
 
-- [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
+- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
-- [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/new-compliancetag)
+- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
 
-- [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/remove-compliancetag)
+- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
 
-- [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/set-compliancetag)
+- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
 
-- [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/enable-compliancetagstorage)
+- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
 
-- [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/get-compliancetagstorage)
+- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
-- [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
+- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
 
-- [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
-- [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
+- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
-- [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
+- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
 
-- [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
+- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
-- [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
+- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
 
-- [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
+- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
+
+- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
+
+- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+
 
 ## When to use retention policies and retention labels or eDiscovery holds
 
@@ -446,11 +460,11 @@ If content is subject to both retention settings and an eDiscovery hold, preserv
 If you are using older eDiscovery tools to preserve data, see the following resources:
 
 - Exchange: 
-    - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124)
-    - [How to identify the type of hold placed on an Exchange Online mailbox](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+    - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
+    - [How to identify the type of hold placed on an Exchange Online mailbox](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint and OneDrive: 
-    - [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+    - [Add content to a case and place sources on hold in the eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
 
@@ -462,7 +476,7 @@ If you currently use these older features, they will continue to work side-by-si
 
 **Older features from Exchange Online:**
 
-- [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only)
+- [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), also known as [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (deletion only)
 
 **Older features from SharePoint and OneDrive:**
 
@@ -478,15 +492,10 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Related information
 
-- [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
+- [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Resources to help you meet regulatory requirements for information governance and records management](retention-regulatory-requirements.md)
 
 ## Configuration guidance
 
-If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
-
-To create and apply retention labels:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
-
+See [Get started with retention policies and retention labels](get-started-with-retention.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

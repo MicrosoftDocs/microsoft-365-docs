@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Insights (preview)"
+title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Insights (preview)"
+description: "Microsoft 365 Network Insights"
 ---
 
-# Microsoft 365 Network Insights (preview)
+# Microsoft 365 Network Insights
 
 **Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
@@ -32,7 +32,7 @@ There are six specific network insights that may be shown for each office locati
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
-There are two tenant level network insights that may be shown for the tenant. These also appear in the producvitivy score pages:
+There are two tenant level network insights that may be shown for the tenant. These also appear in the productivity score pages:
 
 - [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
 - [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
@@ -46,7 +46,8 @@ This insight will be displayed if the network insights service detects that the 
 
 This insight is abbreviated as "Egress" in some summary views.
 
-![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> [!div class="mx-imgBorder"]
+> ![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### What does this mean?
 
@@ -62,7 +63,9 @@ For more information about how to resolve this issue, see [Egress network connec
 
 ## Network intermediary device
 
-This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md). 
+
+One network intermediary insight we show is SSL break and inspection when critical Office 365 network endpoints for Exchange, SharePoint and Teams are intercepted and decrypted by network intermediary devices.
 
 ### What does this mean?
 
@@ -78,7 +81,8 @@ This insight will be displayed if the network insights service detects that a si
 
 This insight is abbreviated as "Peers" in some summary views.
 
-![Relative network performance](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> [!div class="mx-imgBorder"]
+> ![Relative network performance](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### What does this mean?
 
@@ -94,7 +98,8 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Routing" in some summary views.
 
-![Non-optimal EXO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> [!div class="mx-imgBorder"]
+> ![Non-optimal EXO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### What does this mean?
 
@@ -110,7 +115,8 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Afd" in some summary views.
 
-![Non-optimal SPO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> [!div class="mx-imgBorder"]
+> ![Non-optimal SPO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### What does this mean?
 

@@ -24,7 +24,7 @@ description: "Before you can use Microsoft 365 services with your device, you mi
 
 Using your phone, tablet, and other mobile devices for work is a great way to stay informed and work on business projects while you’re away from the office. Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365 using Microsoft Intune Company Portal.
 
-Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
+Organizations choose Basic Mobility and Security so that employees can use their mobile devices to securely access work email, calendars, and documents while the business secures important data and meets their compliance requirements. To learn more, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md). For more info, see [What information can my organization see when I enroll my device?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 >[!IMPORTANT] 
 >When you enroll your device in Basic Mobility and Security for Microsoft 365, you might be required to set up a password, together with allowing the option for your work organization to wipe the device. A device wipe can be performed from the Microsoft 365 admin center, for example, to remove all data from the device if the password is entered incorrectly too many times or if usage terms are broken.
@@ -42,7 +42,7 @@ Basic Mobility and Security for Microsoft 365 hosted by the Intune service works
 If your device is not listed above, and you need to use it with Basic Mobility and Security, contact your work or school administrator.
 
 >[!TIP]
->If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](/basic-mobility-security/troubleshoot.md).
+>If you're having trouble enrolling your device, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
 
 ## Set up your mobile device with Intune and Basic Mobility and Security
 
@@ -55,7 +55,7 @@ The Intune Company Portal enables a device to be managed by Microsoft 365 and Ba
 
 Go to the Apple App Store, and download and install Intune Company Portal.
 
-To connect and configure your iOS phone or tablet with the Company portal to Office 365, see [Set up iOS device access to your company resources](https://go.microsoft.com/fwlink/?linkid=875316).
+To connect and configure your iOS phone or tablet with the Company portal to Office 365, see [Set up iOS device access to your company resources](/mem/intune/user-help/enroll-your-device-in-intune-ios).
 
 ### Android phone or tablet
 
@@ -64,13 +64,13 @@ To connect and configure your iOS phone or tablet with the Company portal to Off
 
 Go to the Google Play store, and download and install Intune Company Portal.
 
-To connect and configure your Android phone or tablet with the Company portal to Microsoft 365, see [Enroll your device with Company Portal](https://go.microsoft.com/fwlink/?linkid=875317).
+To connect and configure your Android phone or tablet with the Company portal to Microsoft 365, see [Enroll your device with Company Portal](/mem/intune/user-help/enroll-device-android-company-portal).
 
 ### Windows 8.1 and Windows 10
 
 Go to the Microsoft Store, and download and install Intune Company Portal
 
-To connect and configure your Windows phone or PC with the Company portal to Microsoft 365, see [Windows device enrollment in Intune Company Portal](https://docs.microsoft.com/intune-user-help/windows-enrollment-company-portal).
+To connect and configure your Windows phone or PC with the Company portal to Microsoft 365, see [Windows device enrollment in Intune Company Portal](/intune-user-help/windows-enrollment-company-portal).
 
 ## What's next?
 

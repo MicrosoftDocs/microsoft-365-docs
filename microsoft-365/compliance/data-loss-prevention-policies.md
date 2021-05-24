@@ -1,18 +1,18 @@
 ---
-title: "Overview of data loss prevention"
+title: "Data Loss Prevention Reference"
 # rename the md file to the above title
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/12/2019
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: low
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -22,16 +22,22 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to identify, monitor, and automatically protect your organization's sensitive information across Office 365.
+description: data loss prevention reference material
 ---
 
-# Overview of data loss prevention
+# Data loss prevention reference
+ 
+> [!IMPORTANT]
+> This is reference topic is no longer the main resource for Microsoft 365 data loss prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
+
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 Advanced Compliance, which is available as a standalone option and is included in Office 365 E5 and Microsoft 365 E5 Compliance. To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 Advanced Compliance, which is available as a standalone option and is included in Office 365 E5 and Microsoft 365 E5 Compliance. To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
-To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
+
+
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
   
 With a DLP policy, you can:
   
@@ -54,12 +60,15 @@ With a DLP policy, you can:
 - **View DLP alerts and reports showing content that matches your organization’s DLP policies.**
     
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
-    
+
+-->    
+## Create and manage DLP policies
+
 You create and manage DLP policies on the Data loss prevention page in the Microsoft 365 Compliance center.
   
 ![Data loss prevention page in the Office 365 Security &amp; Compliance Center](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
-## What a DLP policy contains
+<!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
 A DLP policy contains a few basic things:
   
@@ -69,7 +78,7 @@ A DLP policy contains a few basic things:
     
   - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization. 
     
-  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. 
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
     
 You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all of the rules needed to comply with a specific regulation.
   
@@ -77,12 +86,12 @@ For example, you might have a DLP policy that helps you detect the presence of i
   
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### Locations
+<!-- MOVED TO LEARN ABOUT ### Locations
 
 DLP policies are applied to sensitive items across Microsoft 365 locations and can be further scoped as detailed in this table.
 
 
-|location | include/exclude by|
+|Location | Include/exclude by|
 |---------|---------|
 |Exchange email| distribution groups|
 |SharePoint sites |sites |
@@ -90,11 +99,16 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 |Teams chat and channel messages |accounts |
 |Windows 10 devices |user or group |
 |Microsoft Cloud App Security |instance |
+ -->
 
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
- If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
-If you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
+If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
+
+> [!NOTE]
+> OneDrive for business policy scoping using accounts or groups is in public preview. During this phase, you can either include or exclude user accounts and groups as part of a DLP policy. Both inclusion and exclusion as part of the same policy is not supported.
   
 ### Rules
 
@@ -197,8 +211,9 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 When a rule is matched, you can send an alert email to your compliance officer ( or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
 
 In addition, you can also send an incident report with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
-  
-![Page for configuring incident reports](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![Page for configuring incident reports](../media/Alerts-and-incident-report.png)
 
 DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an alert and incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
   
@@ -248,13 +263,15 @@ For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** 
   
 ## The priority by which rules are processed
 
-When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on. 
-  
-![Rules in priority order](../media/dlp-rules-in-priority-order.png)
+When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on.
+
+> [!div class="mx-imgBorder"]
+> ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
   
 After you have set up more than one DLP policy, you can change the priority of one or more policies. To do that, select a policy, choose **Edit policy**, and use the **Priority** list to specify its priority.
 
-![Set priority for a policy](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![Set priority for a policy](../media/dlp-set-policy-priority.png)
 
 When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the rules are processed in priority order and the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
   
@@ -291,8 +308,9 @@ To address these issues, you can tune your rules by adjusting the instance count
 ### Instance count
 
 Instance count means simply how many occurrences of a specific type of sensitive information must be present for content to match the rule. For example, content matches the rule shown below if between 1 and 9 unique U.S. or U.K. passport numbers are identified.
-  
-Note that the instance count includes only **unique** matches for sensitive information types and keywords. For example, if an email contains 10 occurrences of the same credit card number, those 10 occurrences count as a single instance of a credit card number. 
+
+> [!NOTE]
+> The instance count includes only **unique** matches for sensitive information types and keywords. For example, if an email contains 10 occurrences of the same credit card number, those 10 occurrences count as a single instance of a credit card number.
   
 To use instance count to tune rules, the guidance is straightforward:
   
@@ -363,7 +381,7 @@ When you use a previously created and published [retention label](retention.md#r
 
 ### Using a sensitivity label as a condition in a DLP policy
 
-Sensitivity label as a condition in DLP policies is currently in preview. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
+[Learn more](./dlp-sensitivity-label-as-condition.md) about using Sensitivity label as a condition in DLP policies.
   
 ### How this feature relates to other features
 
@@ -389,7 +407,7 @@ When you create a DLP policy, you'll choose between simple or advanced settings:
     
 - **Advanced settings** use the rule editor to give you complete control over every setting for your DLP policy. 
     
-Don't worry, under the covers, simple settings and advanced settings work exactly the same, by enforcing rules comprised of conditions and actions -- only with simple settings, you don't see the rule editor. It's a quick way to create a DLP policy.
+Don't worry, under the covers, simple settings and advanced settings work exactly the same, by enforcing rules comprised of conditions and actions—only with simple settings, you don't see the rule editor. It's a quick way to create a DLP policy.
   
 ### Simple settings
 
@@ -419,7 +437,9 @@ A preconfigured DLP policy template can help you detect specific types of sensit
   
 Your organization may also have its own specific requirements, in which case you can create a DLP policy from scratch by choosing the **Custom policy** option. A custom policy is empty and contains no premade rules. 
   
-## Roll out DLP policies gradually with test mode
+<!-- ## Roll out DLP policies gradually with test mode
+
+rehomed to Plan for DLP
 
 When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
@@ -439,7 +459,8 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
-    ![Set rule priority](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## DLP reports
 
@@ -494,10 +515,10 @@ As people add or change documents in their sites, the search engine scans the co
 <!-- conflict with a DLP policy is bad wording -->
 Finally, documents can conflict with a DLP policy, but they can also become compliant with a DLP policy. For example, if a person adds credit card numbers to a document, it might cause a DLP policy to block access to the document automatically. But if the person later removes the sensitive information, the action (in this case, blocking) is automatically undone the next time the document is evaluated against the policy.
   
-DLP evaluates any content that can be indexed. For more information on what file types are crawled by default, see [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+DLP evaluates any content that can be indexed. For more information on what file types are crawled by default, see [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> External sharing of new files in SharePoint can be blocked by default until at least one DLP policy scans the new item. See, [Mark new files as sensitive by default](https://docs.microsoft.com/sharepoint/sensitive-by-default) for detailed information. 
+> In order to prevent documents from being shared before DLP policies had the opportunity to analyze them, sharing of new files in SharePoint can be blocked until its content has been indexed. See, [Mark new files as sensitive by default](/sharepoint/sensitive-by-default) for detailed information. 
   
 ### Policy evaluation in Exchange Online, Outlook, and Outlook on the web
 
@@ -539,19 +560,19 @@ These permissions are required only to create and apply a DLP policy. Policy enf
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell).
     
-2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection).
+2. Use any of these [policy-and-compliance-dlp cmdlets](/powershell/module/exchange/export-dlppolicycollection).
     
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
   
-1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Use any of these cmdlets for the DLP reports:
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## More information
 

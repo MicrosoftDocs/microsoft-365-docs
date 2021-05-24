@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,18 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- commerce_billing
 search.appverid:
 - MET150
 - GEA150
-ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: "Learn how to submit your Fapiao request to the 21Vianet Fapiao management system after making a payment in the Office 365 operated by 21Vianet in China."
 monikerRange: 'o365-21vianet'
+ms.date: 03/30/2021
 ---
 
 # Apply for a Fapiao for Office 365 operated by 21Vianet
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 You can submit your Fapiao request to the 21Vianet Fapiao management system about three days after you have paid. After you submit your Fapiao request, it will be processed in two days.
   

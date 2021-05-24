@@ -2,8 +2,8 @@
 title: "Troubleshoot AutoPilot device errors"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article

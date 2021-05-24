@@ -9,6 +9,7 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Apps in Microsoft Managed Desktop
@@ -21,8 +22,7 @@ ms.topic: article
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also deploy additional non-Microsoft apps to your users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise, you can migrate those apps you need yourself; alternatively, Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
-
+You can also deploy additional non-Microsoft apps to your users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. 
 
 ## Apps provided by Microsoft
 
@@ -42,33 +42,23 @@ There are still certain things you need to do with these apps:
 
 ## Apps you provide
 
-You probably have other apps you need for your business operations. These apps can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline. If the app needs it you can have them packaged by a vendor (which could be a non-Microsoft vendor or Microsoft Consulting Services (MCS)) or if you have the means, you can package them yourself. You then add these packages to the Microsoft Managed Desktop portal and assign them to Azure Active Directory groups to trigger the deployment. 
-
-If you currently deploy your apps by using Microsoft Endpoint Configuration Manager, Microsoft Managed Desktop can provide you with a query to assess your apps and discover which ones are ready for to migrate to Microsoft Intune and which ones might require some adjustment.
-
+You probably have other apps you need for your business operations. These apps can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline. For more information about application deployment follow the steps in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).
 
 ### Preparing your own apps for inclusion in Microsoft Managed Desktop
 Review your apps, checking:
 
-- None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](https://aka.ms/app-req).
-- Apps must be ready for management by Microsoft Intune. For more about this topic, see [Windows 10 app deployment using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
+- Apps must be ready for management by Microsoft Intune. For more about this topic, see [Windows 10 app deployment using Microsoft Intune](/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](/intune/apps-add).
 - Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
 
-### Decide how to package apps
+## Steps to get ready
 
-Some independent software publishers might require that your apps are packaged before they are centrally deployed. “Packaging” means that the app’s installer is configured with settings like license keys, remote server locations, or desktop shortcuts so that the app can be installed in the background.
-
-There are three options to get your apps packaged: 
-
-
-- You can package apps yourself
-- You can work with a non-Microsoft vendor
-- You can engage with MCS to package your apps. Work with your Microsoft account representative. For more information, see [Working with Microsoft Consulting Services](apps-MCS.md).
-
-
-
-## Deploying apps
-
-Whatever method you use to get apps packaged, once that is complete, you're ready to follow the steps in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).
-
-
+1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Use [Readiness assessment tools](readiness-assessment-tool.md).
+3. [Prerequisites for guest accounts](guest-accounts.md)
+4. [Network configuration for Microsoft Managed Desktop](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
+7. [Apps in Microsoft Managed Desktop](apps.md) (This article)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)

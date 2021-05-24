@@ -34,7 +34,7 @@ There are three parts that make up a basic DLP query: SensitiveType, count range
   
 ### Sensitive type - required
 
-So what is each part? SharePoint DLP queries typically begin with the property  `SensitiveType:"` and an information type name from the [sensitive information types inventory](https://go.microsoft.com/fwlink/?LinkID=509999), and end with a  `"`. You can also use the name of a [custom sensitive information type](create-a-custom-sensitive-information-type.md) that you created for your organization. For example, you might be looking for documents that contain credit card numbers. In such an instance, you'd use the following format:  `SensitiveType:"Credit Card Number"`. Because you didn't include count range or confidence range, the query returns every document in which a credit card number is detected. This is the simplest query that you can run, and it returns the most results. Keep in mind that the spelling and spacing of the sensitive type matters. 
+So what is each part? SharePoint DLP queries typically begin with the property  `SensitiveType:"` and an information type name from the [sensitive information types inventory](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help), and end with a  `"`. You can also use the name of a [custom sensitive information type](create-a-custom-sensitive-information-type.md) that you created for your organization. For example, you might be looking for documents that contain credit card numbers. In such an instance, you'd use the following format:  `SensitiveType:"Credit Card Number"`. Because you didn't include count range or confidence range, the query returns every document in which a credit card number is detected. This is the simplest query that you can run, and it returns the most results. Keep in mind that the spelling and spacing of the sensitive type matters. 
   
 ### Ranges - optional
 
@@ -53,7 +53,7 @@ Finally, confidence range is the level of confidence that the detected sensitive
 
 DLP in SharePoint also introduces the LastSensitiveContentScan property, which can help you search for files scanned within a specific timeframe. For query examples with the  `LastSensitiveContentScan` property, see the [Examples of complex queries](#examples-of-complex-queries) in the next section. 
   
-You can use not only DLP-specific properties to create a query, but also standard SharePoint eDiscovery search properties such as  `Author` or  `FileExtension`. You can use operators to build complex queries. For the list of available properties and operators, see the [Using Search Properties and Operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093) blog post. 
+You can use not only DLP-specific properties to create a query, but also standard SharePoint eDiscovery search properties such as  `Author` or  `FileExtension`. You can use operators to build complex queries. For the list of available properties and operators, see the [Using Search Properties and Operators with eDiscovery](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) blog post. 
   
 ## Examples of complex queries
 
@@ -61,10 +61,10 @@ The following examples use different sensitive types, properties, and operators 
   
 |**Query**|**Explanation**|
 |:-----|:-----|
-| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |The name might seem strange because it's so long, but it's the correct name for that sensitive type. Make sure to use exact names from the [sensitive information types inventory](https://go.microsoft.com/fwlink/?LinkID=509999). You can also use the name of a [custom sensitive information type](create-a-custom-sensitive-information-type.md) that you created for your organization.  <br/> |
+| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |The name might seem strange because it's so long, but it's the correct name for that sensitive type. Make sure to use exact names from the [sensitive information types inventory](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help). You can also use the name of a [custom sensitive information type](create-a-custom-sensitive-information-type.md) that you created for your organization.  <br/> |
 | `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |This returns documents with at least one match to the sensitive type "Credit Card Number." The values for each range are the respective minimum and maximum values. A simpler way to write this query is  `SensitiveType:"Credit Card Number"`, but where's the fun in that?  <br/> |
 | `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |This returns documents with 5-25 credit card numbers that were scanned from August 11, 2018 through August 13, 2018.  <br/> |
-| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |This returns documents with 5-25 credit card numbers that were scanned from August 11, 2018 through August 13, 2018. Files with an XLSX extension aren't included in the query results.  `FileExtension` is one of many properties that you can include in a query. For more information, see [Using Search Properties and Operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |This returns documents with 5-25 credit card numbers that were scanned from August 11, 2018 through August 13, 2018. Files with an XLSX extension aren't included in the query results.  `FileExtension` is one of many properties that you can include in a query. For more information, see [Using Search Properties and Operators with eDiscovery](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery).  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |This returns documents that contain either a credit card number or a social security number.  <br/> |
    
 ## Examples of queries to avoid
@@ -74,9 +74,9 @@ Not all queries are created equal. The following table gives examples of queries
 |**Unsupported query**|**Reason**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |You must add at least one number.  <br/> |
-| `SensitiveType:"NotARule"` <br/> |"NotARule" isn't a valid sensitive type name. Only names in the [sensitive information types inventory](https://go.microsoft.com/fwlink/?LinkID=509999) work in DLP queries.  <br/> |
+| `SensitiveType:"NotARule"` <br/> |"NotARule" isn't a valid sensitive type name. Only names in the [sensitive information types inventory](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) work in DLP queries.  <br/> |
 | `SensitiveType:"Credit Card Number|0"` <br/> |Zero isn't valid as either the minimum value or the maximum value in a range.  <br/> |
-| `SensitiveType:"Credit Card Number"` <br/> |It's might be difficult to see, but there's extra white space between "Credit" and "Card" that makes the query invalid. Use exact sensitive type names from the [sensitive information types inventory](https://go.microsoft.com/fwlink/?LinkID=509999).  <br/> |
+| `SensitiveType:"Credit Card Number"` <br/> |It's might be difficult to see, but there's extra white space between "Credit" and "Card" that makes the query invalid. Use exact sensitive type names from the [sensitive information types inventory](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help).  <br/> |
 | `SensitiveType:"Credit Card Number|1. .3"` <br/> |The two-period portion shouldn't be separated by a space.  <br/> |
 | `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |There are too many pipe delimiters (|). Follow this format instead: `SensitiveType: "Credit Card Number|1..|80.."` <br/> |
 | `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Because confidence values represent a percentage, they can't exceed 100. Choose a number from 1 through 100 instead.  <br/> |
@@ -86,5 +86,3 @@ Not all queries are created equal. The following table gives examples of queries
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Run a Content Search](content-search.md)
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-  
-

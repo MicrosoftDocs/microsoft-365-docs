@@ -40,7 +40,7 @@ Office 365 Germany plan offerings are aligned with global offers as much as poss
   
 The following services and features are available in some [Office 365 Germany subscription plans](https://go.microsoft.com/fwlink/p/?linkid=839016). Additionally, see the [Online Services Terms](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
-- Microsoft 365 Apps for enterprise, Office 2016, and Office 2013<sup>1</sup>. Note that Office 2013 requires [using Office 365 modern authentication with Office clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
+- Microsoft 365 Apps for enterprise, Office 2016, and Office 2013<sup>1</sup>. Note that Office 2013 requires [using Office 365 modern authentication with Office clients](../../enterprise/modern-auth-for-office-2013-and-2016.md).
     
 - Exchange Online
     
@@ -87,12 +87,12 @@ The following services and features are available in some [Office 365 Germany su
 |Item|Information|
 |-----|-----|
 |Sign in portal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English For details, see [Contact support for business products - Admin Help](../contact-support-for-business-products.md).  <br/> |
-|IP Addresses and URLs  <br/> |See [Office 365 Germany endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints).  <br/> |
+|Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English For details, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).  <br/> |
+|IP Addresses and URLs  <br/> |See [Office 365 Germany endpoints](../../enterprise/microsoft-365-germany-endpoints.md).  <br/> |
 |Yammer  <br/> |Not available.  <br/> |
 |Versions of Office older than Office 2013 or Microsoft 365 Apps for enterprise<sup>1</sup> <br/> |Not supported.  <br/> |
 |Office Lens  <br/> |Not available.  <br/> |
 |Ability to buy a domain from within Microsoft 365  <br/> |Not available.  <br/> |
 |SharePoint Store  <br/> |Each app that is available in a Microsoft app store is provided by either Microsoft or a third-party app publisher and is subject to a separate privacy statement and terms and conditions. Data provided through the use of a Microsoft app store and any app may be accessible to Microsoft or the third-party app publisher, as applicable, and transferred to, stored, and processed in the United States or any other country where Microsoft or the app publisher and their affiliates or service providers maintain facilities. Please work with the app publisher to make sure it meets requirements for your Office 365 Germany deployment.  <br/> |
    
-For a more detailed look at services available for each Microsoft 365 plan, see the [Microsoft 365 Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
+For a more detailed look at services available for each Microsoft 365 plan, see the [Microsoft 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
