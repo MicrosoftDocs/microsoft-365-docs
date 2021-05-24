@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: "Create quick links to your email, documents, apps, SharePoint sites, external sites, and other resources by adding custom tiles to the app launcher. "
+description: "Create quick links to your email, documents, apps, SharePoint sites, external sites, and other resources by adding custom tiles to the app launcher."
 ---
 
 # Add custom tiles to the app launcher
@@ -74,6 +74,12 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
     
 To delete a custom tile, from the **Custom tiles** window, select the tile, select **Remove tile** > **Delete**. 
   
-## What's next?
+## Next steps
 
 In addition to adding tiles to the app launcher, you can add app launcher tiles to the navigation bar ([learn more](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). To customize the look and feel of Microsoft 365 to match your organization's brand, see [Customize the Microsoft 365 theme](../setup/customize-your-organization-theme.md).
+
+## Related content
+
+[Pin apps to your users' app launcher](pin-apps-to-app-launcher.md) (article)\
+[Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)\
+[Manage add-ins in the admin center](../manage/manage-addins-in-the-admin-center.md) (article)
