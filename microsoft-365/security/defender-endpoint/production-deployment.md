@@ -77,7 +77,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 
 ## Tenant Configuration
-Onboarding to Microsoft Defender for Endpoint is simple. From the navigation menu, select any item under the Endpoints section, or and Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
+Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
 From a web browser, navigate to <https://security.microsoft.com>.
 
