@@ -39,9 +39,9 @@ To permit the service to communicate with your on-premises endpoints, you **must
 > [!WARNING]
 > All requests have a **three-week** SLA and cannot be expedited due to the required security and compliance controls and deployment pipelines.  This includes initial onboarding network requests as well as any changes after you have migrated to the service.  Please ensure that your network teams are aware of this timeline and include it in their planning cycles.
 
-Please send an email to [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com) with the following information:
+Please send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@microsoft.com) with the following information:
 
-* **To**: [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com)
+* **To**: [Office 365 Government Allow-List Requests](mailto:o365gwlt@microsoft.com)
 * **From**: A tenant administrator - the send email **must** match a Global Administrator contact in your tenant
 * **Email subject**: Office 365 GCC High Network Request - contoso.onmicrosoft.us (replace this with your tenant name)
 

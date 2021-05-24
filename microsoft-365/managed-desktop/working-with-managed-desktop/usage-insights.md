@@ -1,10 +1,12 @@
 ---
 title: Usage insights
-description:  
+description:  Describes the view that provides Microsoft Managed Desktop usage metrics.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---

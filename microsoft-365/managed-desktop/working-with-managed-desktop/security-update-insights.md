@@ -1,10 +1,12 @@
 ---
 title: Windows security update insights
-description:  
+description:  Describes the view that provides an overview of the status of Microsoft Managed Desktop security updates.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---

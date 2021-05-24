@@ -13,14 +13,13 @@ author: denisebmsft
 ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 05/17/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
 ---
 
 # Configure the notifications that appear on endpoints
-
 
 **Applies to:**
 
@@ -44,11 +43,9 @@ You can configure the display of additional notifications, such as recent threat
 
 **Use the Windows Security app to disable additional notifications:**
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Security**.
 
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
-
-    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+2. Select **Virus & threat protection** tile (or the shield icon on the left menu bar) and, then select **Virus & threat protection settings**
 
 3. Scroll to the **Notifications** section and click **Change notification settings**.
 

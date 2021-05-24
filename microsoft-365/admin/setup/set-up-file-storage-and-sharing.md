@@ -41,7 +41,7 @@ Watch a short video about storing files in the Microsoft 365 cloud.<br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
-## "Microsoft 365 document storage and management"
+## Microsoft 365 document storage and management
 
 - OneDrive is designed for individual use, with the occasional sharing of files.
 

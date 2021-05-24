@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: "Learn about the types of groups you can use."
+description: "Microsoft 365 group members get a group email and shared workspace for conversations, files, and calendar events, Stream and a Planner."
 ---
 
 # Compare groups

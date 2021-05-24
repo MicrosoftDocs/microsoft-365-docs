@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
+recommendations: false
 description: "Learn about Microsoft 365 groups expiration policies."
 ---
 
