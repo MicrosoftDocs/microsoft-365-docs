@@ -4,18 +4,18 @@ description: Configure and test your connection to the Microsoft Defender Antivi
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 05/17/2021
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
-ms.topic: article
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
