@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Network Insights (preview)"
+title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Insights (preview)"
+description: "Microsoft 365 Network Insights"
 ---
 
-# Microsoft 365 Network Insights (preview)
+# Microsoft 365 Network Insights
 
 **Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
