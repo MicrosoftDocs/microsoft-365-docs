@@ -29,7 +29,7 @@ description: "Learn how a Microsoft 365 global admin can change a user's email a
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
-Watch a short video about changing a user's email address. <br><br>
+## Watch: Change a user's name or email address
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -248,8 +248,6 @@ To learn how to change someone's username in Active Directory, in Windows Server
   
 ## Related content
 
-[Admins: Reset a password for one or more users](reset-passwords.md) (article)
-  
-[Add another email address to a user](../email/add-another-email-alias-for-a-user.md) (article)
-
+[Admins: Reset a password for one or more users](reset-passwords.md) (article)\
+[Add another email address to a user](../email/add-another-email-alias-for-a-user.md) (article)\
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)
