@@ -60,4 +60,4 @@ To remove users in the Azure AD portal, see [remove a guest user and resources](
 ## Related content
 
 [Manage guest access in Microsoft 365 groups](../create-groups/manage-guest-access-in-groups.md) (article)\
-[Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams team](../../solutions/per-group-guest-access.md)
+[Prevent guests from being added to a specific Microsoft 365 group or Microsoft Teams team](../../solutions/per-group-guest-access.md) (article)

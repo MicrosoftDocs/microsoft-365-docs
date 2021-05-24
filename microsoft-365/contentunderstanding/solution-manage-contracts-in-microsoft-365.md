@@ -6,12 +6,12 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 ms.collection: m365solution-managecontracts
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 
 description: "Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, Microsoft Teams, and Power Automate."
 ---
 
