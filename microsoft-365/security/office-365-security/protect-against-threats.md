@@ -273,7 +273,7 @@ Along with configuring protection from malware, malicious URLs and files, phishi
 
 - Spam actions are set to **Move message to Junk Email folder** in [anti-spam policies](anti-spam-protection.md).
 
-- Users have kept their default [junk email settings](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md), and haven't turned off junk email protection.
+- Users have kept their default [junk email settings](configure-junk-email-settings-on-exo-mailboxes.md), and haven't turned off junk email protection.
 
 To learn more, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 

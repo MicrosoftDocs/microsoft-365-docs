@@ -31,7 +31,7 @@ description: "Manage email signatures, including legal disclaimers or disclosure
 
  You can manage email signatures by adding an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
- Watch a short video about creating a company-wide email signature. <br><br>
+## Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -114,9 +114,7 @@ For information about using PowerShell, see [Organization-wide message disclaime
 
 ## Related content
 
-[Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)
-
-[User email settings](../email/office-365-user-email-settings.md) (article)
-
+[Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
+[User email settings](../email/office-365-user-email-settings.md) (article)\
 [Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
 
