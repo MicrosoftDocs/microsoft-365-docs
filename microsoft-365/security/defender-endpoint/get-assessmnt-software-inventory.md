@@ -34,11 +34,11 @@ ms.custom: api
 >
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [1. Export software inventory assessment \(OData\)](#1-export-software-inventory-assessment-odata): The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows:
+- [2. Export software inventory assessment \(via files\)](#2-export-software-inventory-assessment-via-files): The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows:
 
-- 1. Call the API to get a list of download URLs with all your organization data. 
+- 1. Call the API to get a list of download URLs with all your organization data.
 - 2. Download all the files using the download URLs and process the data as you like
 
 The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
