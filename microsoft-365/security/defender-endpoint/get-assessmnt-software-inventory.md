@@ -32,17 +32,16 @@ ms.custom: api
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways the data can be retrieved:
+There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- [1. Export software inventory assessment \(OData\)](#1-export-software-inventory-assessment-odata): The API will pull all of the data in your organization as a Json response. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results. You can retrieve the data as follows:
+- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-  - Call the API to get a list of download URLs with all of your organization data.
+- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows:
 
-  - Download all the files using the download URLs and process the data as you like.
+- 1. Call the API to get a list of download URLs with all your organization data. 
+- 2. Download all the files using the download URLs and process the data as you like
 
-- [2. Export software inventory assessment \(via files\)](#2-export-software-inventory-assessment-via-files): The API will pull all of the data in your organization as download files. This method is best for large organizations with more than 100K devices. The response contains URLs to download all of the data from Azure storage.
-
-The data collected is the current snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
 
 > [!Note]
 >
@@ -75,16 +74,21 @@ Delegated (work or school account) | Software.Read | \'Read Threat and Vulnerabi
 GET /api/machines/SoftwareInventoryByMachine
 ```
 
+### 1.4 Parameters
+
+- pageSize (default = 50,000) – number of results in response.
+
+- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data)
+
 ### 1.5 Properties
 
->[!Note]
+>[!NOTE]
 >
->- pageSize (default = 50,000) – number of results in response.
+>-Each record is approximately 0.5KB of data. You should take this into account when choosing the correct pageSize parameter for you.
+
+>-The properties defined in the following table are listed alphanumerically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 >
-- $top – number of results to return (doesn’t return @odata.nextLink and therefore doesn’t pull all the data).
->
-> Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
->
+>-Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
@@ -244,6 +248,10 @@ GET /api/machines/SoftwareInventoryExport
 >
 >_ For maximum download speed of your data, you can make sure you are downloading from the same Azure region that your data resides.
 >
+Property (id) | Data type | Description | Example of a returned value
+:---|:---|:---|:---
+Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
+GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z  ]
 
 ### 2.6 Examples
 

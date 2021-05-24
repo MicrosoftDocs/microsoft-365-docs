@@ -36,11 +36,14 @@ Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as a Json response. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for _large organizations with more than 100K devices_. The response contains URLs to download all the data from Azure storage. The API enables you to download all of your data from Azure Storage as follows: The API method will pull all of the data in your organization as download files.
+- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows:
 
-The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need to keep the data in their own data storages.
+- 1. Call the API to get a list of download URLs with all your organization data. 
+- 2. Download all the files using the download URLs and process the data as you like
+
+The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
 
 > [!Note]
 >
@@ -50,7 +53,7 @@ The data that is collected is the current snapshot of the current state, and doe
 
 ### 1.1 API method description
 
-This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId. This table also includes operating system information.
+This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
 
 #### 1.1.1 Limitations
 
@@ -60,7 +63,7 @@ This API response contains the Secure Configuration Assessment on your exp
 
 ### 1.2 Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
 Permission type | Permission | Permission display name
 ---|---|---
@@ -214,9 +217,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 ### 2.1 API method description
 
 This API response contains the Secure Configuration Assessment on your exposed devices, and returns an entry for every unique combination of DeviceId, ConfigurationId.
-The API response contains the Secure Configuration Assessment on your exposed devices. This table also includes operating system information.
-
-This API call contains the requisite data for devices in your organization.
 
 #### 2.1.2 Limitations
 
@@ -239,7 +239,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### Parameters
 
-- sasValidHours – The number of hours that the download URLs will be valid for (Maximum 24 hours)
+- sasValidHours – The number of hours that the download URLs will be valid for (Maximum 24 hours).
 
 ### 2.5 Properties
 
@@ -254,7 +254,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
+GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z  ]
 
 ### 2.6 Examples
 
