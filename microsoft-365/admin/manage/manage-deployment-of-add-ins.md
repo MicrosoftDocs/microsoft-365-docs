@@ -126,12 +126,8 @@ Updates for add-ins happen as follows:
   
 ## Related content
 
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)
-
-[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article)
-
-[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)
-  
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)
-  
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ 
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
 [Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)
