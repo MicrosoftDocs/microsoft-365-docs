@@ -52,7 +52,7 @@ Unless indicated otherwise, all export assessment methods listed are **_full exp
 
 ### 1.1 API method description
 
-Returns all of the vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID. This table also includes operating system information, CVE IDs, and vulnerability severity information.
+This API response contains all the data of installed software per device. Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
 #### Limitations
 
