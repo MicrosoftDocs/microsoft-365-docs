@@ -84,3 +84,37 @@ To effectively evaluate Microsoft Defender for Office 365, it's important that i
 
 ## Step 5: Activate the evaluation
 
+Use the instructions here to activate your Microsoft Defender for Office 365 evaluation from the Microsoft 365 security center.
+
+1. Log on to your tenant with an account that has access to the Microsoft 365 security center.
+2. Choose whether you want to make the **Microsoft 365 security center** your default interface for Microsoft Defender for Office 365 administration (recommended).
+
+:::image type="content" source="../../media/MDOEval/1-mdo-eval-activate-eval.PNG" alt-text="Click the Turn on settings button to use the centralized and improved Microsoft 365 security center for administration.":::
+
+3. From the navigation menu, select **Policies & Rules** under *Email & Collaboration*.
+
+:::image type="content" source="../../media/MDOEval/2-mdo-eval-activate-eval.PNG" alt-text="Here's an Email & Collaboration menu picture pointing at Policies & rules. Click that!":::
+
+4. On the *Policy & Rules* dashboard, click **Threat Policies**.
+
+:::image type="content" source="../../media/MDOEval/3-mdo-eval-activate-eval.PNG" alt-text="Picture of the Policy & Rules dashboard and an arrow pointing at Threat policies. Click that next!":::
+
+5. Scroll down to *Additional Policies* and select the **Evaluate Defender for Office 365** tile.
+
+:::image type="content" source="../../media/MDOEval/4-mdo-eval-activate-eval.PNG" alt-text="The Eval Defender for Office 365 tile saying it's a 30 day trial across email & collaboration vectors. Click through.":::
+
+6. Now choose whether external email routes to Exchange Online directly, or to a third-party gateway or service, and click Next.
+
+:::image type="content" source="../../media/MDOEval/5-mdo-eval-activate-eval.PNG" alt-text="Defender for Office 365 will evaluate mail send to your Exchange Online mailboxes. Give the details of how your mail is routed now, including the name of the outbound connector that routs your mail. If you only use Exchange Online Protection (EOP) you won't have a connector. Choose one of I'm using a 3rd-party or on-premises provider, or I only use EOP.":::
+
+7. If you use a third-party gateway, select the vendor name from the drop-down along with the inbound connector associated with that solution. When you've listed your answers, click Next.
+
+:::image type="content" source="../../media/MDOEval/6-mdo-eval-activate-eval.PNG" alt-text="In this dialog, you choose the 3rd-party vendor service your organization is using, or select *Other*. In the next dialog down, select the inbound connector. Then click Next.":::
+
+8. Review your settings and click the **Create Evaluation** button.
+
+|  |  |
+|---------|---------|
+|  :::image type="content" source="../../media/MDOEval/7-mdo-eval-activate-eval.PNG" alt-text="This pane has a drop-down to review your settings. It also has a clickable link to Edit your Routing type if you need to. When you're ready click the big blue Create Evaluation button.":::   |   :::image type="content" source="../../media/MDOEval/8-mdo-eval-activate-eval.PNG" alt-text="And now the set up is complete. The blue button on this page says 'Go to Evaluation'.":::      |
+
+
