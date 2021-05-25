@@ -305,7 +305,7 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 **Applies to:** All customers
 
-When the Office 365 tenant completes the final step of the migration (Azure AD Finalization (Phase 9)) all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service.  
+When the Office 365 tenant completes the final step of the migration (Phase 9: Azure AD Finalization), all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as authentication will fail from this point forward against the Microsoft Cloud Deutschland service.  
 
 Microsoft Azure customers must transition their Azure workloads following the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main) as soon as their tenant completes the migration to worldwide (Phase 9).  
 
