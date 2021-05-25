@@ -52,17 +52,13 @@ If audit log search is not turned on for your organization, you can turn it on i
   
 ### Use the compliance center to turn on audit log search
 
-1. [Go to the compliance center](https://protection.office.com) and sign in.
+1. [Go to the compliance center](compliance.microsoft.com ) and sign in.
 
-2. In the compliance center, go to **Search** > **Audit log search**.
+2. In the compliance center, go to **Audit** > **Search**.
 
-   If audit log search is not turned on for your organization, a banner is displayed saying that auditing has to be turned on to record user and admin activity.
+   If audit log search is not turned on for your organization, a banner is displayed saying **Start recording user and admin activity**.
 
-3. Click **Turn on auditing**.
-
-    ![Click Turn on auditing](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
-  
-    The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.
+3. Select **Start recording user and admin activity**. You will be prompted to confirm if **Your Organization settings need to be updated. Do you want to Continue?**. Select **Yes** to turn on audit log search.
 
 ### Use PowerShell to turn on audit log search
 
