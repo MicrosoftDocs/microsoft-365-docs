@@ -50,7 +50,6 @@ If you receive a message that passed through spam filtering that should have bee
 1. Create a new, blank email message with the one of the following recipients:
 
    - **Junk**: `junk@office365.microsoft.com`
-
    - **Phishing**: `phish@office365.microsoft.com`
 
 2. Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
@@ -58,9 +57,7 @@ If you receive a message that passed through spam filtering that should have bee
    > [!NOTE]
    >
    > - You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing messages or junk email messages.
-   >
    > - Leave the body of the new message empty.
-   >
    > - Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
 
 3. When you're finished, click **Send**.
@@ -73,19 +70,16 @@ If you receive a message that passed through spam filtering that should have bee
 > [!TIP]
 > Instead of using the following procedures to report false positives, users in Outlook and Outlook on the web (formerly known as Outlook Web App) can use the Report Message add-in or the Report Phishing add-in. For information about how to install and use these tools, see [Enable the Report Message add-in](enable-the-report-message-add-in.md) and [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).
 
-
 If a message was incorrectly identified as spam, you can submit the message to the Microsoft Spam Analysis Team. The analysts will evaluate the message, and (depending on the results of the analysis) the service-wide filters can be adjusted to allow the message through.
 
-1. Create a new, blank email message with `not_junk@office365.microsoft.com` as the recipient:
+1. Create a new, blank email message with `not_junk@office365.microsoft.com` as the recipient.
 
 2. Drag and drop the misidentified message into the new message. This will save the misidentified message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
 
    > [!NOTE]
    >
    > - You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing messages or junk email messages.
-   >
    > - Leave the body of the new message empty.
-   >
    > - Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
 
 3. When you're finished, click **Send**.
@@ -99,4 +93,4 @@ The data resides in the Office 365 compliance boundary in North American data ce
 
 ## Create a mail flow rule to receive copies of messages that are reported to Microsoft
 
-For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

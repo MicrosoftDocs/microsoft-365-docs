@@ -23,8 +23,7 @@ description: Need a records management solution for Microsoft 365 that manages h
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365? Use the 
-following high-level guidance to get started:
+Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365? Use the following guidance to get started:
 
 1. **Understand the records management solution** and what actions are allowed or blocked when documents and emails are declared records: [Learn about records management](records-management.md). 
 
@@ -82,6 +81,6 @@ Use the following table to help you map your business requirements to the scenar
 
 Retention labels that are used for records management have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following  post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+To help users apply retention labels in SharePoint and OneDrive, which includes information about unlocking records for editing, see [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-You will also find basic user instructions in the following section: [Manually apply retention labels](create-apply-retention-labels.md#manually-apply-retention-labels).
+However, the most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

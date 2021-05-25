@@ -102,7 +102,7 @@ To learn more about anti-malware policy options, see [Configure anti-malware pol
 
 The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Click **Default policy**.
 
@@ -273,7 +273,7 @@ Along with configuring protection from malware, malicious URLs and files, phishi
 
 - Spam actions are set to **Move message to Junk Email folder** in [anti-spam policies](anti-spam-protection.md).
 
-- Users have kept their default [junk email settings](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md), and haven't turned off junk email protection.
+- Users have kept their default [junk email settings](configure-junk-email-settings-on-exo-mailboxes.md), and haven't turned off junk email protection.
 
 To learn more, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 

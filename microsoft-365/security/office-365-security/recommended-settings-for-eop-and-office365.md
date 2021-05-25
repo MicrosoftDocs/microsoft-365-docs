@@ -53,6 +53,8 @@ Anti-spam, anti-malware, and anti-phishing are EOP features that can be configur
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -66,7 +68,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Quarantine retention period <p> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
 |**Safety Tips** <p> _InlineSafetyTipsEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
 |Allowed Senders <p> _AllowedSenders_|None|None|None||
-|Allowed Sender Domains <p> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <p> Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Allowed Sender Domains <p> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <p> Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) in the Security & Compliance Center to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked Senders <p> _BlockedSenders_|None|None|None||
 |Blocked Sender Domains <p> _BlockedSenderDomains_|None|None|None||
 |**Enable end-user spam notifications** <p> _EnableEndUserSpamNotifications_|Disabled <p> `$false`|Enabled <p> `$true`|Enabled <p> `$true`||
@@ -79,6 +81,8 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this article.
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+
+<br>
 
 ****
 
@@ -107,6 +111,8 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -120,6 +126,8 @@ For more information about the default sending limits in the service, see [Sendi
 ### EOP anti-malware policy settings
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+
+<br>
 
 ****
 
@@ -136,13 +144,15 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
 |**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
 |
 
 ## Microsoft Defender for Office 365 security
@@ -167,6 +177,8 @@ EOP customers get basic anti-phishing as previously described, but Microsoft Def
 
 For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -190,18 +202,22 @@ For more information about these settings, see [Impersonation settings in anti-p
 
 Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|---|---|---|---|
 |**Enable anti-spoofing protection** <p> _EnableSpoofIntelligence_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
 |**Enable Unauthenticated Sender** <p> _EnableUnauthenticatedSender_|On <p> `$true`|On <p> `$true`|On <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
-|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+|**If email is sent by someone who's not allowed to spoof your domain** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md).|
 |
 
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
 
 For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+
+<br>
 
 ****
 
@@ -220,6 +236,8 @@ To configure these settings, see [Configure global settings for Safe Links in De
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -237,6 +255,8 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 
 > [!NOTE]
 > As described earlier, there is no default Safe Links policy. The values in the Default column are the default values in new Safe Links policies that you create.
+
+<br>
 
 ****
 
@@ -261,6 +281,8 @@ To configure these settings, see [Turn on Safe Attachments for SharePoint, OneDr
 
 In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -279,6 +301,8 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 > [!NOTE]
 > As described earlier, there is no default Safe Attachments policy. The values in the Default column are the default values in new Safe Attachments policies that you create.
 
+<br>
+
 ****
 
 |Security feature name|Default|Standard|Strict|Comment|
@@ -294,6 +318,6 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 - Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Use these links for info on how to **set up** your [EOP service](set-up-your-eop-service.md), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
+- Use these links for info on how to **set up** your [EOP service](/exchange/standalone-eop/set-up-your-eop-service), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
 
 - **Security baselines for Windows** can be found here: [Where can I get the security baselines?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and [Use security baselines to configure Windows 10 devices in Intune](/intune/protect/security-baselines) for Intune-based security. Finally, a comparison between Microsoft Defender for Endpoint and Microsoft Intune security baselines is available in [Compare the Microsoft Defender for Endpoint and the Windows Intune security baselines](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

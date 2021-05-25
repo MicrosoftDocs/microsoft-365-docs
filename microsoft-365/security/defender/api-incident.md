@@ -71,6 +71,7 @@ status | Enum | Specifies the current status of the incident. Possible values ar
 classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
 determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | List of Incident tags.
+comments | List of incident comments | Incident Comment object contains: comment string, createdBy string, and createTime date time.
 alerts | Alert List | List of related alerts. See examples at [List incidents](api-list-incidents.md) API documentation.
 
 ## Related articles

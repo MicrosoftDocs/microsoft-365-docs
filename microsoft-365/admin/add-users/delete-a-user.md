@@ -19,14 +19,14 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: "Learn how to delete a user account. Decide what to do with the user's email and OneDrive content. And decide whether to keep the product license or stop paying for it."
+description: "Learn how to delete a user account and what to do with the user's email and OneDrive content and whether to keep the product license."
 ---
 
 # Delete a user from your organization
   
 **Looking for how to delete your *own* Microsoft 365 user account that you use at work or school? Contact the technical support at your work or university to do these steps for you.**
 
-## What you need to know about deleting users
+## Before you begin
 
 - Only people who have [Microsoft 365 global admin](about-admin-roles.md) or User management permissions for the business or school can delete user accounts.
 - You have 30 days to [restore](restore-user.md) the account before the user's data is permanently deleted.
@@ -38,7 +38,7 @@ description: "Learn how to delete a user account. Decide what to do with the use
 
 If you are a global administrator, when you delete a user you can also give another user access to their email, and choose what to do with their OneDrive content.
 
-### Things to consider...
+### Things to consider
 
 Before you begin, think about what you want to do with the user's email and OneDrive content, and whether you want to keep the license or stop paying for it.
   
@@ -82,7 +82,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
 
-2. Select the names of the users that you want to delete, select **More options** (**...**), and then choose  **Delete user**.
+2. Select the names of the users that you want to delete, select the three dots (more actions), and then choose  **Delete user**.
 
    Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
 
@@ -150,7 +150,7 @@ Later when you go through the steps to add another person to your business, you'
 
 ## Delete many users at the same time
 
-See the [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
+See the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
 
 ## Fix issues with deleting a user
 
@@ -164,14 +164,10 @@ Here are the most common issues people encounter when deleting a user:
 
 **Do you want to delete Microsoft 365 from your computer? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## Related articles
+## Related content
 
-[Restore a user](restore-user.md)
-  
-[Permanently delete a mailbox](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
-
-[Remove a former employee from Office 365](remove-former-employee.md)
-
-[Add a new employee to Office 365](add-new-employee.md)
-
-[Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365.
+[Restore a user](restore-user.md) (article)\
+[Permanently delete a mailbox](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\
+[Remove a former employee from Office 365](remove-former-employee.md) (article)\
+[Add a new employee to Office 365](add-new-employee.md) (article)\
+[Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365. (article)

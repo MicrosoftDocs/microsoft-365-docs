@@ -88,35 +88,53 @@
          items: 
               - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize incidents
+              - name: Prioritize
                 href: incident-queue.md
-              - name: Manage incidents
+              - name: Manage
                 href: manage-incidents.md
-              - name: Incident response
+              - name: Investigate
+                href: investigate-incidents.md
+              - name: Incident alerts
+                href: investigate-alerts.md    
+              - name: Incident users 
+                href: investigate-users.md                  
+              - name: Respond to your first incident
                 items: 
-                 - name: Analyze incidents
-                   href: investigate-incidents.md
-                 - name: Analyze alerts
-                   href: investigate-alerts.md    
-                 - name: Analyze users 
-                   href: investigate-users.md                  
-              - name: Get email notifications
+                 - name: Introduction
+                   href: first-incident-overview.md
+                 - name: Prepare
+                   href: first-incident-prepare.md
+                 - name: Step 1. Triage and analyze
+                   href: first-incident-analyze.md
+                 - name: Step 2. Remediate
+                   href: first-incident-remediate.md
+                 - name: Step 3. Review
+                   href: first-incident-post.md
+                 - name: Additional incident examples
+                   items: 
+                    - name: Phishing email
+                      href: first-incident-path-phishing.md
+                    - name: Identity
+                      href: first-incident-path-identity.md
+              - name: Incident response playbooks
+                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
+              - name: Email notifications
                 href: get-incident-notifications.md
        - name: Automated investigation and response
          items: 
-              - name: Overview of automated investigation and response
+              - name: Overview
                 href: m365d-autoir.md
-              - name: Configure automated investigation and response capabilities
+              - name: Configure capabilities
                 href: m365d-configure-auto-investigation-response.md
               - name: Remediation actions
                 href: m365d-remediation-actions.md
-              - name: Visit the Action center
+              - name: Use the Action center
                 href: m365d-action-center.md
-              - name: Approve or reject pending remediation actions
+              - name: View and manage remediation actions
                 href: m365d-autoir-actions.md
-              - name: View details and results of automated investigations
+              - name: View details and results
                 href: m365d-autoir-results.md
-              - name: Report false positives/negatives
+              - name: Address false positives and negatives
                 href: m365d-autoir-report-false-positives-negatives.md
        - name: Advanced hunting
          items: 
@@ -152,84 +170,82 @@
                   href: advanced-hunting-limits.md
                 - name: Extend data coverage
                   href: advanced-hunting-extend-data.md
-                - name: Data schema
-                  items: 
-                    - name: Understand the schema
-                      href: advanced-hunting-schema-tables.md
-                    - name: Schema naming changes
-                      href: advanced-hunting-schema-changes.md
-                    - name: AADSignInEventsBeta
-                      href: advanced-hunting-aadsignineventsbeta-table.md
-                    - name: AADSpnSignInEventsBeta
-                      href: advanced-hunting-aadspnsignineventsbeta-table.md
-                    - name: AlertEvidence
-                      href: advanced-hunting-alertevidence-table.md
-                    - name: AlertInfo
-                      href: advanced-hunting-alertinfo-table.md
-                    - name: AppFileEvents
-                      href: advanced-hunting-appfileevents-table.md
-                    - name: CloudAppEvents
-                      href: advanced-hunting-cloudappevents-table.md
-                    - name: DeviceEvents
-                      href: advanced-hunting-deviceevents-table.md
-                    - name: DeviceFileCertificateInfo
-                      href: advanced-hunting-devicefilecertificateinfo-table.md
-                    - name: DeviceFileEvents
-                      href: advanced-hunting-devicefileevents-table.md
-                    - name: DeviceImageLoadEvents
-                      href: advanced-hunting-deviceimageloadevents-table.md
-                    - name: DeviceInfo
-                      href: advanced-hunting-deviceinfo-table.md
-                    - name: DeviceLogonEvents
-                      href: advanced-hunting-devicelogonevents-table.md
-                    - name: DeviceNetworkEvents
-                      href: advanced-hunting-devicenetworkevents-table.md
-                    - name: DeviceNetworkInfo
-                      href: advanced-hunting-devicenetworkinfo-table.md
-                    - name: DeviceProcessEvents
-                      href: advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceRegistryEvents
-                      href: advanced-hunting-deviceregistryevents-table.md
-                    - name: DeviceTvmSecureConfigurationAssessment
-                      href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
-                    - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
-                    - name: DeviceTvmSoftwareInventory
-                      href: advanced-hunting-devicetvmsoftwareinventory-table.md
-                    - name: DeviceTvmSoftwareVulnerabilities
-                      href: advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
-                    - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
-                    - name: EmailAttachmentInfo
-                      href: advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailEvents
-                      href: advanced-hunting-emailevents-table.md
-                    - name: EmailPostDeliveryEvents
-                      href: advanced-hunting-emailpostdeliveryevents-table.md
-                    - name: EmailUrlInfo
-                      href: advanced-hunting-emailurlinfo-table.md
-                    - name: IdentityDirectoryEvents
-                      href: advanced-hunting-identitydirectoryevents-table.md
-                    - name: IdentityInfo
-                      href: advanced-hunting-identityinfo-table.md
-                    - name: IdentityLogonEvents
-                      href: advanced-hunting-identitylogonevents-table.md
-                    - name: IdentityQueryEvents
-                      href: advanced-hunting-identityqueryevents-table.md
-                - name: Functions
-                  items: 
-                    - name: AssignedIPAddresses()
-                      href: advanced-hunting-assignedipaddresses-function.md                    
-                    - name: DeviceFromIP()
-                      href: advanced-hunting-devicefromip-function.md
-                    - name: FileProfile()
-                      href: advanced-hunting-fileprofile-function.md
-                - name: Custom detections
-                  items: 
-                    - name: Custom detections overview
-                      href: custom-detections-overview.md
-                    - name: Create & manage detection rules
-                      href: custom-detection-rules.md
+             - name: Data schema
+               items: 
+                - name: Understand the schema
+                  href: advanced-hunting-schema-tables.md
+                - name: Schema naming changes
+                  href: advanced-hunting-schema-changes.md
+                - name: AADSignInEventsBeta
+                  href: advanced-hunting-aadsignineventsbeta-table.md
+                - name: AADSpnSignInEventsBeta
+                  href: advanced-hunting-aadspnsignineventsbeta-table.md
+                - name: AlertEvidence
+                  href: advanced-hunting-alertevidence-table.md
+                - name: AlertInfo
+                  href: advanced-hunting-alertinfo-table.md
+                - name: CloudAppEvents
+                  href: advanced-hunting-cloudappevents-table.md
+                - name: DeviceEvents
+                  href: advanced-hunting-deviceevents-table.md
+                - name: DeviceFileCertificateInfo
+                  href: advanced-hunting-devicefilecertificateinfo-table.md
+                - name: DeviceFileEvents
+                  href: advanced-hunting-devicefileevents-table.md
+                - name: DeviceImageLoadEvents
+                  href: advanced-hunting-deviceimageloadevents-table.md
+                - name: DeviceInfo
+                  href: advanced-hunting-deviceinfo-table.md
+                - name: DeviceLogonEvents
+                  href: advanced-hunting-devicelogonevents-table.md
+                - name: DeviceNetworkEvents
+                  href: advanced-hunting-devicenetworkevents-table.md
+                - name: DeviceNetworkInfo
+                  href: advanced-hunting-devicenetworkinfo-table.md
+                - name: DeviceProcessEvents
+                  href: advanced-hunting-deviceprocessevents-table.md
+                - name: DeviceRegistryEvents
+                  href: advanced-hunting-deviceregistryevents-table.md
+                - name: DeviceTvmSecureConfigurationAssessment
+                  href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                - name: DeviceTvmSecureConfigurationAssessmentKB
+                  href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareInventory
+                  href: advanced-hunting-devicetvmsoftwareinventory-table.md
+                - name: DeviceTvmSoftwareVulnerabilities
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
+                - name: DeviceTvmSoftwareVulnerabilitiesKB
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                - name: EmailAttachmentInfo
+                  href: advanced-hunting-emailattachmentinfo-table.md
+                - name: EmailEvents
+                  href: advanced-hunting-emailevents-table.md
+                - name: EmailPostDeliveryEvents
+                  href: advanced-hunting-emailpostdeliveryevents-table.md
+                - name: EmailUrlInfo
+                  href: advanced-hunting-emailurlinfo-table.md
+                - name: IdentityDirectoryEvents
+                  href: advanced-hunting-identitydirectoryevents-table.md
+                - name: IdentityInfo
+                  href: advanced-hunting-identityinfo-table.md
+                - name: IdentityLogonEvents
+                  href: advanced-hunting-identitylogonevents-table.md
+                - name: IdentityQueryEvents
+                  href: advanced-hunting-identityqueryevents-table.md
+             - name: Functions
+               items: 
+                - name: AssignedIPAddresses()
+                  href: advanced-hunting-assignedipaddresses-function.md                    
+                - name: DeviceFromIP()
+                  href: advanced-hunting-devicefromip-function.md
+                - name: FileProfile()
+                  href: advanced-hunting-fileprofile-function.md
+             - name: Custom detections
+               items: 
+                - name: Custom detections overview
+                  href: custom-detections-overview.md
+                - name: Create & manage detection rules
+                  href: custom-detection-rules.md
        - name: Microsoft Threat Experts
          items:
               - name: Microsoft Threat Experts overview
@@ -266,42 +282,42 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-            - name: Microsoft 365 Defender APIs (Preview)
+        - name: Microsoft 365 Defender APIs (Preview)
+          items: 
+            - name: Overview of Microsoft 365 Defender APIs (Preview)
+              href: api-overview.md
+            - name: Get started with Microsoft 365 Defender APIs (Preview)
               items: 
-                - name: Overview of Microsoft 365 Defender APIs (Preview)
-                  href: api-overview.md
-                - name: Get started with Microsoft 365 Defender APIs (Preview)
+                - name: Microsoft 365 Defender API license and terms of use
+                  href: api-terms.md
+                - name: Access Microsoft 365 Defender APIs
+                  href: api-access.md
+                - name: Hello World example
+                  href: api-hello-world.md
+                - name: Get access with application context
+                  href: api-create-app-web.md
+                - name: Get access with user context
+                  href: api-create-app-user-context.md
+                - name: Get partner application access
+                  href: api-partner-access.md
+                - name: Other API resources
+                  href: api-articles.md
+            - name: Microsoft 365 Defender APIs & schema (Preview)
+              items: 
+                - name: Supported Microsoft 365 Defender APIs
+                  href: api-supported.md
+                - name: Common REST API error codes
+                  href: api-error-codes.md
+                - name: Advanced Hunting API
+                  href: api-advanced-hunting.md
+                - name: Incident APIs
                   items: 
-                    - name: Microsoft 365 Defender API license and terms of use
-                      href: api-terms.md
-                    - name: Access Microsoft 365 Defender APIs
-                      href: api-access.md
-                    - name: Hello World example
-                      href: api-hello-world.md
-                    - name: Get access with application context
-                      href: api-create-app-web.md
-                    - name: Get access with user context
-                      href: api-create-app-user-context.md
-                    - name: Get partner application access
-                      href: api-partner-access.md
-                    - name: Other API resources
-                      href: api-articles.md
-                - name: Microsoft 365 Defender APIs & schema (Preview)
-                  items: 
-                    - name: Supported Microsoft 365 Defender APIs
-                      href: api-supported.md
-                    - name: Common REST API error codes
-                      href: api-error-codes.md
-                    - name: Advanced Hunting API
-                      href: api-advanced-hunting.md
-                    - name: Incident APIs
-                      items: 
-                        - name: Incident methods and properties
-                          href: api-incident.md
-                        - name: List incidents
-                          href: api-list-incidents.md
-                        - name: Update incident
-                          href: api-update-incidents.md
+                    - name: Incident methods and properties
+                      href: api-incident.md
+                    - name: List incidents
+                      href: api-list-incidents.md
+                    - name: Update incident
+                      href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

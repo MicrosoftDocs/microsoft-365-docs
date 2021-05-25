@@ -64,6 +64,7 @@ Topic | Description
 [Machine methods and properties](machine.md) | Run API calls such as \- get devices, get devices by ID, information about logged on users, edit tags and more.
 [Machine Action methods and properties](machineaction.md) | Run API call such as \- Isolation, Run anti-virus scan and more.
 [Recommendation methods and properties](recommendation.md) | Run API calls such as \- get recommendation by ID.
+[Remediation activity methods and properties](get-remediation-methods-properties.md) | Run API call such as \- get all remediation tasks, get exposed devices remediation task and get one remediation task by id.
 [Score methods and properties](score.md) | Run API calls such as \- get exposure score or get device secure score.
 [Software methods and properties](software.md) | Run API calls such as \- list vulnerabilities by software.
 [User methods](user.md) | Run API calls such as \- get user-related alerts and user-related devices.
