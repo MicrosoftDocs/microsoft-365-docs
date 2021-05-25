@@ -27,7 +27,7 @@ description: "Learn how Microsoft 365 for business can help you with the General
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
 
-So as a small business admin, you are probably asking yourself "how do I get started"? This may be especially true if your business does not handle personal data as a core business activity, or even if GDPR is totally new to you.
+As a small business admin, you are probably asking yourself "how do I get started"? This may be especially true if your business does not handle personal data as a core business activity, or if GDPR is totally new to you.
 
 You can get started by reviewing this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
 
@@ -80,32 +80,20 @@ This section describes steps a small business can take to get ready for GDPR. Mu
 
 A good way for a small business to start with GDPR is to make sure to apply the following key principles when collecting personal data:
 
-- Collect personal data with clearly defined purpose, and
-don’t use them for anything else. For example, if you tell your clients to give you their email addresses so they can get your new offers or promotions, you can only use their email addresses for only that.
-- Don’t collect more data than you need. For example, if your business requires a delivery of goods, you need an address and a name, but
-you don’t need to know a person's marital status.
+- Collect personal data with clearly defined purposes for what you are using it for, and don’t use them for anything else. For example, if you tell your clients to give you their email addresses so they can get your new offers or promotions, you can only use their email addresses for only that specific purpose.
+- Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver good, you need a customers address and a name, but you don’t need to know the person's marital status.
 
 
-### Step 1: Check the personal data you collect and process, the purpose for which you do it, and on which legal basis.
+### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it.
 
-You are processing your employee's personal data based
-on the employment contract and on legal obligations (for example, 
-reporting to tax authorities).
+As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it is needed. This includes data on your employees and your customers.
 
-You manage lists of individual customers, for instance, to
-send them notice about special offers if you obtained
-consent from these customers.
+For example, you need your employee's personal data based
+on the employment contract and for legal reasons (for example, 
+reporting taxes to the Internal Revenue Service).
 
-You don’t always need consent. There are cases when individuals will
-expect you to process their data. For instance, as a pizza merchant
-you can process the delivery address to advertise one of your new
-products. This is called a legitimate interest. You must inform
-individuals about your intended use and stop processing such data
-if they tell you to do so.
-
-If you manage a list of suppliers or business clients, then you
-do it based on the contracts you have with them. The contracts are
-not necessarily in a written form.
+As another example, you may manage lists of individual customers to
+send them notice about special offers, if they opted in to consent to this.
 
 #### Microsoft 365 features that can help
 [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to identify and label document types that contain personal data. 
@@ -113,61 +101,56 @@ not necessarily in a written form.
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data.
 
 Individuals must know that you process their personal data and
-for which purpose.
+for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
 
-But there is no need to inform individuals when they already have
-information on how you will use the data, for instance, when a
-customer asks you to do a home delivery.
+But there is no need to inform individuals when they already know on how you will use the data. For example, when they provide you a home address for a delivery.
 
-You also have to inform individuals on request about the personal
-data you hold on them and give them access to their data. Keep
-your data in order, so if your employee asks you about
-what sort of personal data you have, you can easily provide it.
+You also have to be able to inform individuals on request about the personal data you hold on them and give them access to their data. Being organized with your data makes it easier to provide to them, if needed. 
 
-### Step 3: Keep personal data for only as long as necessary.
+### Step 3: Keep personal data for only as long as necessary
 
 For employees data, keep it as long as the employment relationship remains and for related legal obligations.
 For customer data, keep it as long as the customer relationship lasts and for related legal obligations (for example, tax purposes).
-Delete the data where it is no longer necessary for the purposes for which you collected it.
+Delete the data when it is no longer needed for the purposes for which you collected it.
 
 #### Microsoft 365 features that can help
 [Retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to keep personal data for a certain time and delete it when it’s no longer needed.
 
 
-### Step 4: Secure the personal data you are processing.
+### Step 4: Secure the personal data you are processing
 
 If you store personal data on an IT system, limit the access to the
 files containing the data, for example, by a strong password. Regularly update the security settings of your system.
 
 > [!NOTE]
-> The GDPR does not prescribe the use of any specific IT system.
+> The GDPR does not prescribe the use of any specific IT system, but make that the system has the appropriate level of security. See [GDRP Article 32: Security of Processing](https://gdpr.eu/article-32-security-of-processing/) for more information.
 
-If you store physical documents with personal data, then ensure
-that they are not accessible by unauthorized persons (for example, lock them in a safe in a secured area).
+If you store physical documents with personal data, make sure
+that they are not accessible by unauthorized persons.
 
-If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files.
+If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. We highly recommend that small businesses consider using a cloud solution for storing personal data.
 
 #### Microsoft 365 features that can help
-You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to protect your business's sensitive information. 
+You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities.
 
 Prepare a short document explaining what personal data you
 hold and for what reasons. You might be required to make the
 documentation available to your national data protection authority
-when it requests it.
+if asked.
 
 Such documents should include the information listed below.
 
 | Information | Examples |
 |---|---|
 |The purpose of data processing|Alerting customers about special offers such as providing home delivery; paying suppliers; salary and social security coverage for employees|
-|The types of personal data|Contact details of customers; contact details of suppliers; employees’ data|
+|The types of personal data|Contact details of customers; contact details of suppliers; employee data|
 |The categories of data subjects concerned|Employees; customers; suppliers|
 |The categories of recipients|Labor authorities; tax authorities|
 |The storage periods|Employees’ personal data until the end of the employment contract (and related legal obligations); customers’ personal data until the end of the client/contractual relationship|
-|The technical and organizational security measures to protect the personal data|IT system solutions regularly updated; secured location such as a safe|
-|Whether personal data is transferred to recipients outside the EU|Use of a processor outside the EU (for example, storage in the cloud)|
+|The technical and organizational security measures to protect the personal data|IT system solutions regularly updated; secured location; access control; data encryption; data backup|
+|Whether personal data is transferred to recipients outside the EU|Use of a processor outside the EU (for example, storage in the cloud); data location of the processor; contractual commitments|
 
 </br>
 
@@ -181,9 +164,6 @@ use only a service provider who guarantees the processing in
 compliance with the requirements of the GDPR (for instance, security
 measures). 
 
-Before you sign a contract, check if they have already
-changed and adjusted to the GDPR. Put it in the contract.
-
 
 
 ### Step 7: Check if you are concerned by the provisions below.
@@ -191,15 +171,12 @@ changed and adjusted to the GDPR. Put it in the contract.
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you don’t
 need to designate a Data Protection Officer if processing
-of personal data isn’t a core part of your business, or if you activity isn’t at a large scale. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, he/she could be an existing employee tasked with this function in addition to his/her other tasks. Or it could be an external consultant; the same way many
-organizations use external accountants.
+of personal data isn’t a core part of your business, or if you activity isn’t at a large scale. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, he/she could be an existing employee tasked with this function in addition to his/her other tasks. Or it could chose to hire an external consultant for this duty.
 
-You normally don’t need to carry out a Data Protection
-Impact Assessment. Such an impact assessment is reserved for those that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
+You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for those that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
-If you are a small business managing employees’ wages and a list
-of clients, you do not need to carry out a Data Protection Impact
-Assessment for those processing operations.  
+If you are a small business managing employee wages and a list
+of clients, you do not need to carry out a Data Protection Impact Assessment for those processing operations.  
  
 
     
