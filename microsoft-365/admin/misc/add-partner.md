@@ -38,17 +38,17 @@ An authorized partner of Microsoft who serves as your subscription advisor provi
 
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
+
+::: moniker-end
+
 ## Before you begin
 
 ::: moniker range="o365-worldwide"
 
 The partner you choose depends on the Microsoft services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
 
 ::: moniker-end
 
@@ -131,30 +131,22 @@ To accept this offer
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the subscriptions details page, under **Partner information**, select **Remove**.
-3. Type the **Microsoft Partner Network ID** for the new partner. You can get the partner's Microsoft Partner ID by asking the partner for it.
-4. Select **Add**.
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
-3. Under the **Partner ID**, select **Edit partner of record**.
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
-3. Under the **Partner ID**, select **Edit partner of record**.
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
-
+2. On the subscriptions details page, under **Partner information**, select **Remove**.
+3. Type the **Microsoft Partner Network ID** for the new partner. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Select **Add**.
+  
 ## View your partner relationships
 
 - In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page. Your partners are listed on this page.
@@ -166,50 +158,38 @@ To accept this offer
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 2. On the **Products** tab, select the subscription that you want to edit.
 3. On the subscription details page, under **Partner information**, select **Remove**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
-3. Under the **Partner ID**, select **Edit partner of record**.
-4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. If you have multiple subscriptions, select the name of the subscription that you want to edit.
-3. Under the **Partner ID**, select **Edit partner of record**.
-4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
-
-::: moniker-end
-
 ## Remove a reseller relationship
 
-::: moniker range="o365-worldwide"
-
 You can't remove a reseller relationship yourself.
+
+::: moniker range="o365-worldwide"
   
 If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
-You can't remove a reseller relationship yourself.
   
 If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
-You can't remove a reseller relationship yourself.
   
 You will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](/partner-center/remove-a-relationship).
   
