@@ -166,17 +166,17 @@ measures).
 
 
 
-### Step 7: Check if you are concerned by the provisions below.
+### Step 7: Assign someone to oversee personal data protection.
  
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you don’t
 need to designate a Data Protection Officer if processing
-of personal data isn’t a core part of your business, or if you activity isn’t at a large scale. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, he/she could be an existing employee tasked with this function in addition to his/her other tasks. Or it could chose to hire an external consultant for this duty.
+of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
 
 You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for those that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
 If you are a small business managing employee wages and a list
-of clients, you do not need to carry out a Data Protection Impact Assessment for those processing operations.  
+of clients, you typically do not need to carry out a Data Protection Impact Assessment.  
  
 
     
