@@ -45,9 +45,7 @@ There are different API calls to get different types of data. Since the amount o
 
 The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
 
-> [!Note]
->
-> Unless indicated otherwise, all assessment methods listed are _full export_ and _by device_ (also referred to as _per device_).
+Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export software vulnerabilities assessment (OData)
 
@@ -313,9 +311,9 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
 >
 
-Property (id) | Data type | Description
-:---|:---|:---
-Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization. [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
+Property (id) | Data type | Description | Example of a returned value
+:---|:---|:---|:---
+Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
 
 ### 2.6 Examples

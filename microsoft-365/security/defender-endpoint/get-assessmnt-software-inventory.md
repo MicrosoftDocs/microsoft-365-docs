@@ -43,9 +43,7 @@ There are different API calls to get different types of data. Since the amount o
 
 The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
 
-> [!Note]
->
-> Unless indicated otherwise, all assessment methods listed are _full export_ and _by device_ (also referred to as _per device_).
+Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export software inventory assessment (OData)
 

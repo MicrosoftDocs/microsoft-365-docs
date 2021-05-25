@@ -47,9 +47,7 @@ Because the amount of data can be very large, there are two ways it can be retri
 
 The data collected is the current snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
->[!Note]
->
->The properties defined in the three properties tables that follow are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export secure configurations assessment
 
