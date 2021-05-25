@@ -59,7 +59,7 @@ It's recommended you begin with Microsoft Defender for Identity, and move on fro
 |  |  | |  |
 |---------|---------|---------|---------|
 |**Microsoft Defender for Identity**      |      **Microsoft Defender for Office 365**  |     **Microsoft Defender for Endpoint**    |    **Microsoft Cloud App Security**     |
-|  MDI  |    MDO     |    MDE     |   MCAS      |
+|  MDI  |    [MDO](/microsoft-365/security/defender/eval-defender-office365-enable-eval)     |    MDE     |   MCAS      |
 
 ### Navigation you may need
 
