@@ -41,7 +41,9 @@ To close a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Close case**.
+3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Close case**.
+
+   ![Option in the More options menu to close an Advanced eDiscovery case](..\CloseAdvancedeDiscoveryCase.png)
 
    It might take up to 60 minutes for the closing process to complete.
 
@@ -55,7 +57,9 @@ To reopen a closed case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Reopen case**.
+3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Reopen case**.
+
+   ![Option in the More options menu to reopen an Advanced eDiscovery case](..\ReopenAdvancedeDiscoveryCase.png)
 
    It might take up to 60 minutes for the reopening process to complete.
 
@@ -82,4 +86,6 @@ To delete a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Delete case**.
+3. At the bottom of the **Case Information** flyout page, click (**...**) **More options**, and then click **Delete case**.
+
+   ![Option in the More options menu to delete an Advanced eDiscovery case](..\CloseAdvancedeDiscoveryCase.png)
