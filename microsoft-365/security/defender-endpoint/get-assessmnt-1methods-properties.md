@@ -37,7 +37,7 @@ Provides methods and property details about the APIs that pull threat and vuln
 
 > [!Note]
 >
-> Unless indicated otherwise, all assessment methods listed are _full export_ and _by device_ (also referred to as _per device_).
+> Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 Because the amount of data can be very large, there are two ways it can be retrieved:
 
