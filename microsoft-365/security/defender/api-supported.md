@@ -51,9 +51,14 @@ Tokens can be acquired by accessing https://api.security.microsoft.com.
 
 All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.
 
+
+## Streaming API
+Use the [Streaming API](../defender-endpoint/raw-data-export.md) to ship real-time events and alerts from instances as they occur within a single data stream.
+
 ## Related articles
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Streaming API](../defender-endpoint/raw-data-export.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
