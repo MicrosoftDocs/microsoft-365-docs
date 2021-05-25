@@ -241,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
       For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
 
@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be: 
 
