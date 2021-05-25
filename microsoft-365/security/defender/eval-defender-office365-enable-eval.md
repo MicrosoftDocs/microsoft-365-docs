@@ -20,7 +20,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-overview
   - m365solution-evalutatemtp
-ms.topic: how to
+ms.topic: how-to
 ms.technology: m365d
 ---
 
@@ -28,6 +28,11 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+
+[Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
+[Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
+[Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
+[Step 4: Audit inbound connectors](#step-4-audit-inbound-connectors)
 
 Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.
 
@@ -117,4 +122,6 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 |---------|---------|
 |  :::image type="content" source="../../media/MDOEval/7-mdo-eval-activate-eval.PNG" alt-text="This pane has a drop-down to review your settings. It also has a clickable link to Edit your Routing type if you need to. When you're ready click the big blue Create Evaluation button.":::   |   :::image type="content" source="../../media/MDOEval/8-mdo-eval-activate-eval.PNG" alt-text="And now the set up is complete. The blue button on this page says 'Go to Evaluation'.":::      |
 
+### Navigation you may need
 
+[**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 

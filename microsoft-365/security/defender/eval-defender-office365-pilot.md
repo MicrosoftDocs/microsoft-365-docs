@@ -20,7 +20,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-overview
   - m365solution-evalutatemtp
-ms.topic: how to
+ms.topic: how-to
 ms.technology: m365d
 ---
 
@@ -70,5 +70,8 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Row4     |         |         |
 |Row5     |         |         |
 
+### Navigation you may need
 
+[**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 
+[**Return to the evaluation environment** article | Microsoft Docs](/microsoft-365/security/defender/eval-defender-office365-enable-eval)
