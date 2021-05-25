@@ -121,4 +121,4 @@ This chart in the dashboard view lets you see the number of topics in your Viva 
 
 Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming. 
 
-![Screenshot of topic count dashboard](../media/knowledge-management/topic-count-dashboard.png)
+   ![Screenshot of topic count dashboard](../media/knowledge-management/topic-count-dashboard.png)
