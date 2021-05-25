@@ -139,12 +139,8 @@ If you choose not to show the shared mailbox in the global address list, the mai
 
 ## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md) (article)
-
-[Create a shared mailbox](create-a-shared-mailbox.md) (article)
-
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)
-
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)
-
+[About shared mailboxes](about-shared-mailboxes.md) (article)\
+[Create a shared mailbox](create-a-shared-mailbox.md) (article)\
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
 [Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

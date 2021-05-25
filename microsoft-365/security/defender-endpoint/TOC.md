@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -133,7 +133,7 @@
 ###### [Configure iOS features](ios-configure-features.md)
 
 ##### [Troubleshoot]()
-###### [Troubleshoot issues](ios-troubleshoot.md)
+###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
  
@@ -145,7 +145,8 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
- 
+###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Update](linux-updates.md)
  
 ##### [Configure]()
@@ -155,7 +156,7 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -491,6 +492,12 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+
+###### [Assessments of vulnerabilities and secure configurations]()
+####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
+####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
+####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
