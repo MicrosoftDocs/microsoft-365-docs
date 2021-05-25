@@ -63,10 +63,7 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
   
 ## Related content
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)
-
-[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)
-
-[Using self-service sign up in your organization](self-service-sign-up.md) (article)
-  
+YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
+[Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
+[Using self-service sign up in your organization](self-service-sign-up.md) (article)\
 [Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)
