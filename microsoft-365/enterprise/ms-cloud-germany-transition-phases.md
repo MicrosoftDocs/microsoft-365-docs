@@ -313,7 +313,7 @@ Microsoft Azure customers must transition their Azure workloads following the st
 |:-------|:-------|:-------|
 | Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
-| Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Micrsoft Cloud Deutschland Azure portal. |
+| Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
 
 ### Azure AD Connect
