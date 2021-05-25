@@ -84,7 +84,7 @@ A good way for a small business to start with GDPR is to make sure to apply the 
 - Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver good, you need a customers address and a name, but you don’t need to know the person's marital status.
 
 
-### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it.
+### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it
 
 As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it is needed. This includes data on your employees and your customers.
 
@@ -98,7 +98,7 @@ send them notice about special offers, if they opted in to consent to this.
 #### Microsoft 365 features that can help
 [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to identify and label document types that contain personal data. 
 
-### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data.
+### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
 
 Individuals must know that you process their personal data and
 for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
@@ -133,7 +133,7 @@ If you choose to store personal data in the cloud, such as through Microsoft 365
 #### Microsoft 365 features that can help
 You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
 
-### Step 5: Keep documentation on your data processing activities.
+### Step 5: Keep documentation on your data processing activities
 
 Prepare a short document explaining what personal data you
 hold and for what reasons. You might be required to make the
@@ -157,7 +157,7 @@ Such documents should include the information listed below.
 You can find Microsoft’s contractual commitments with regard to the GDPR in the [Microsoft Online Services Data Protection Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=DPA), which provides Microsoft’s privacy and security commitments, data processing terms and GDPR Terms for Microsoft-hosted services to which customers subscribe under a volume licensing agreement. 
 
 
-### Step 6: Make sure your subcontractors respect the rules.
+### Step 6: Make sure your subcontractors respect the rules
 
 If you sub-contract processing of personal data to another company,
 use only a service provider who guarantees the processing in
@@ -166,7 +166,7 @@ measures).
 
 
 
-### Step 7: Assign someone to oversee personal data protection.
+### Step 7: Assign someone to oversee personal data protection
  
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you don’t
