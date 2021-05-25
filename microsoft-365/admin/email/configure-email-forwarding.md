@@ -36,7 +36,7 @@ As the admin of an organization, you might have company requirements to set up e
 
 Before you set up email forwarding, note the following:
 
-- Allow automatic forwarded messages to be sent to people on the remote domain. [Manage remote domains](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
+- Allow automatically forwarded messages to be sent to people on the remote domain. See [Manage remote domains](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) for details.
 
 - Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be forwarded.
 
@@ -101,4 +101,3 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
-
