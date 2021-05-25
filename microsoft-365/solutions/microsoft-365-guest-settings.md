@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority
+recommendations: false
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---
 
@@ -32,7 +33,7 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 > [!NOTE]
 > These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
 
-### Organizational relationships settings
+### External collaboration settings
 
 **Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > External collaboration settings
 
@@ -40,11 +41,9 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Guest users permissions are limited|Yes|This setting affects the directory tasks that a guest can perform.|
-|Admins and users in the guest inviter role can invite|Yes|When set to **Yes**, admins can invite guests via Azure AD and via  Microsoft 365 sharing experiences such as Teams and SharePoint; when set to **No**, they cannot.|
-|Members can invite|Yes|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 Group members can invite guests with owner approval; when set to **No**, Microsoft 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <br><br>Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <br><br>This is identical to the **Let users add new guests to the organization** setting in Microsoft 365 Security & privacy.|
-|Guests can invite|Yes|When set to **Yes**, guests in the directory can invite other guests to collaborate on Azure AD resources and on files and folders in SharePoint and OneDrive; when set to **No**, they cannot. <br><br>Note that **Allow external users to find user accounts in the directory by typing in exact email address matches** must be turned on in the SharePoint admin center for guests to share files and folders with other guests.|
-|Enable Email One-Time Passcode for guests (Preview)|No|When set to **Yes**, guests without an MSA or a work or school account can [authenticate with Azure AD using a one-time passcode](/azure/active-directory/b2b/one-time-passcode); when set to **No**, users will need to create a Microsoft account in order to authenticate. This setting must be set to **Yes** for [SharePoint and OneDrive integration with Azure AD B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) to work.|
+|Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Guest invite settings|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization.<br><br> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
+|Enable guest self-service sign up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
 |Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains.<br><br> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
 
 These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.

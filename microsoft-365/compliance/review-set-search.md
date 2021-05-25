@@ -59,6 +59,6 @@ In addition to queries that you can save, you can use review set filters to quic
 
 Filters differ from queries in two significant ways:
 
-- Filters are transient. They don't persist beyond the existing session. In other words, you can't save a filter. Queries are saved to the review set, and access them whenever open the review set.
+- Filters are transient. They don't persist beyond the existing session. In other words, you can't save a filter. Queries are saved to the review set, and access them whenever you open the review set.
 
 - Filters are always additive. Filters are applied in addition to the current review set query. Applying a different query will replace the results returned by the current query.

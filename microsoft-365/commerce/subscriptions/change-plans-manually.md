@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +16,9 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
-ROBOTS: NOINDEX
+search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
 ---
 # Change plans manually
@@ -72,7 +70,7 @@ Include a license for each user that you want to move.
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations
     (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/contact-support-for-business-products.md).
+- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../business-video/get-help-support.md).
 
 ### What about the old licenses?
 
@@ -95,7 +93,7 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 2. Select the circles next to the names of the users for whom you want to replace existing licenses.
 
-3. At the top, select **More options** (**...**), and then choose **Manage product licenses**.
+3. At the top, select the three dots (more actions), and then choose **Manage product licenses**.
 
 4. Select **Replace existing product license assignments** \> **Next**.
 
@@ -114,4 +112,4 @@ If you moved all users from one subscription to another, and you no longer need 
 If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
 
 ## Call support to help you change plans
-[Call Microsoft support](../../admin/contact-support-for-business-products.md)
+[Call Microsoft support](../../business-video/get-help-support.md)
