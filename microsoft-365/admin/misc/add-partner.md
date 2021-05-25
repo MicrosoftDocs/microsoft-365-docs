@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: "Learn how to add a subscription advisor partner as partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
+description: "Add a partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
 ---
 
 # Add, change, or delete a subscription advisor partner
@@ -37,6 +37,8 @@ description: "Learn how to add a subscription advisor partner as partner of reco
 An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
 
 ::: moniker-end
+
+## Before you begin
 
 ::: moniker range="o365-worldwide"
 
@@ -105,7 +107,7 @@ Follow the steps on the providers page to either search for, or to get matched w
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 2. If you have more than one subscription, select the subscription that you want to edit.
-3. On the right, under the subscription cost, choose **More actions** > **Add partner of record**.
+3. On the right, under the subscription cost, select the three dots (more actions) > **Add partner of record**.
 4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 5. The partner ID displays on the **Subscriptions** page.
 
@@ -213,6 +215,7 @@ You will have to ask your reseller partner to follow these instructions: [Remove
   
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md)
+[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md) (article)\
+[Plan your setup of Microsoft 365 for business](../setup/plan-your-setup.md) (article)

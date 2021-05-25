@@ -37,7 +37,7 @@ For more information, see [About admin roles](about-admin-roles.md).
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
-## Watch: Add an admin.<br><br>
+## Watch: Add an admin<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -114,12 +114,9 @@ You can check admin role permissions in 2 different ways:
 
 ::: moniker-end
 
-## Related articles
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
-
-[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-
-[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
-
-[Authorize or remove partner relationships](../misc/add-partner.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)\
+[Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
+[Authorize or remove partner relationships](../misc/add-partner.md) (article)

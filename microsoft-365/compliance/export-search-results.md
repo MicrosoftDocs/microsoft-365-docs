@@ -117,7 +117,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 5. Configure the following additional options:
 
-   ![Exchange options](../media/OtherExportOptions.png)
+   ![Configure other export options](../media/OtherExportOptions.png)
 
    1. Select the **Enable de-duplication for Exchange content** checkbox to exclude duplicate messages.
   

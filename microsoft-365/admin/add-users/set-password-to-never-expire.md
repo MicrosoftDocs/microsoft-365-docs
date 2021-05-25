@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: "Learn how to set some individual user passwords to never expire, using Windows PowerShell."
+description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Windows PowerShell."
 ---
 # Set an individual user's password to never expire
 
@@ -29,7 +29,7 @@ This article explains how to set a password for an individual user to not expire
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview). 
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md). 
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
@@ -122,6 +122,6 @@ Run one of the following commands:
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md)
-
-[Reset passwords](../add-users/reset-passwords.md)
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Reset passwords](../add-users/reset-passwords.md) (article)\
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)
