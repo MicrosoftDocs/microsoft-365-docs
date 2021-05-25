@@ -97,13 +97,11 @@
               - name: Manage
                 href: manage-incidents.md
               - name: Investigate
-                items:
-                 - name: Overview
-                   href: investigate-incidents.md
-                 - name: Alerts
-                   href: investigate-alerts.md    
-                 - name: Users 
-                   href: investigate-users.md                  
+                href: investigate-incidents.md
+              - name: Incident alerts
+                href: investigate-alerts.md    
+              - name: Incident users 
+                href: investigate-users.md                  
               - name: Respond to your first incident
                 items: 
                  - name: Introduction
