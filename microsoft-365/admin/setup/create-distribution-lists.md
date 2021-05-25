@@ -71,8 +71,6 @@ Check out [Distribution group issues](/office365/troubleshoot/groups/distributio
 
 ## Related content
 
-[User email settings](../email/office-365-user-email-settings.md) (article)
-
-[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)
-
+[User email settings](../email/office-365-user-email-settings.md) (article)\
+[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)\
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)

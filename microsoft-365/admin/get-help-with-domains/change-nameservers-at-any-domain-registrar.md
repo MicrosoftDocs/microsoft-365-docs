@@ -189,8 +189,6 @@ After the nameserver records are updated to point to Microsoft, your domain setu
   
 ## Related content
 
-[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)
-
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
-
+[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
 [Manage domains](index.yml) (link page)
