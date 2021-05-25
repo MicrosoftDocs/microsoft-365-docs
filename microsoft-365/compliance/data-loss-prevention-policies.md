@@ -540,7 +540,7 @@ When you create a DLP policy that includes Microsoft Teams as a location, the po
  
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
+By default, Global admin, Security admin and Complaince admin will have access to create and apply a DLP policy. Other Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
