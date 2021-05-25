@@ -26,6 +26,7 @@ ms.technology: mde
 
 ## 101.29.64 (30.121042.12964.0)
 
+- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
 - Performance improvements & bug fixes
 
 ## 101.25.72 (30.121022.12563.0)
