@@ -149,9 +149,11 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
 
 
 
-## Verify onboarding
+## Verify the onboarding and installation
 
 Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are running. 
+
+
 
 > [!NOTE]
 > Running Microsoft Defender AV is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
@@ -163,7 +165,7 @@ Verify that Microsoft Defender AV and Microsoft Defender for Endpoint are runnin
 
    ```sc.exe query Windefend```
 
-    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md).
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender AV. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server).
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
@@ -182,6 +184,8 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 You can offboard servers in the same method available for other Windows devices. Following the offboarding steps provided within the guidance on each of the management tools. 
 
+## Next steps
+After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
 
 ## Related topics
 - [Onboard Windows Server 2008 R2 SP1](onboard-server-2008r2.md)

@@ -48,6 +48,7 @@
 #### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Group Policy Objects](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Server migration scenarios](server-migration.md)
 
 
 ## [Configure and onboard devices]()
