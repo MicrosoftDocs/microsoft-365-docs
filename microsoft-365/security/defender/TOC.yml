@@ -286,6 +286,16 @@
           items: 
             - name: Overview of Microsoft 365 Defender APIs (Preview)
               href: api-overview.md
+            - name: Supported Microsoft 365 Defender APIs
+              href: api-supported.md
+            - name: Streaming API
+              items:
+                - name: Microsoft 365 Streaming API
+                  href: ../defender-endpoint/raw-data-export.md
+                - name: Stream advanced hunting evens to Azure Events hub
+                  href: ../defender-endpoint/raw-data-export-event-hub.md
+                - nmae: Stream advanced hunting events to your storage account
+                  href: ../defender-endpoint/raw-data-export-storage
             - name: Get started with Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Microsoft 365 Defender API license and terms of use
@@ -304,8 +314,6 @@
                   href: api-articles.md
             - name: Microsoft 365 Defender APIs & schema (Preview)
               items: 
-                - name: Supported Microsoft 365 Defender APIs
-                  href: api-supported.md
                 - name: Common REST API error codes
                   href: api-error-codes.md
                 - name: Advanced Hunting API
@@ -318,14 +326,6 @@
                       href: api-list-incidents.md
                     - name: Update incident
                       href: api-update-incidents.md
-            - name: Streaming API
-              items:
-                - name: Microsoft 365 Streaming API
-                  href: ../defender-endpoint/raw-data-export.md
-                - name: Stream advanced hunting evens to Azure Events hub
-                  href: ../defender-endpoint/raw-data-export-event-hub.md
-                - nmae: Stream advanced hunting events to your storage account
-                  href: ../defender-endpoint/raw-data-export-storage
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
