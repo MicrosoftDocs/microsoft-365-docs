@@ -111,4 +111,4 @@ Now investigate and respond to threats, and keep a log of your experience. This 
 
 ## Other Articles in this series
 
-List the other articles in this series.
+[Create the Microsoft 365 Defender Evaluation Environment](/microsoft-365/security/defender/eval-environment)
