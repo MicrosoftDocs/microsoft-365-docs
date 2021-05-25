@@ -120,6 +120,12 @@
                 href: https://docs.microsoft.com/security/compass/incident-response-playbooks
               - name: Email notifications
                 href: get-incident-notifications.md
+       - name: Threat analytics
+         items:
+              - name: Track and respond to emerging threats
+                href: threat-analytics.md
+              - name: Understand the analyst report
+                href: threat-analytics-analyst-reports.md
        - name: Automated investigation and response
          items: 
               - name: Overview
