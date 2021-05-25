@@ -36,14 +36,15 @@ Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Since the amount of data can be very large, there are two ways it can be retrieved:
 
-- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata): The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata):  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows:
+- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
-- 1. Call the API to get a list of download URLs with all your organization data. 
-- 2. Download all the files using the download URLs and process the data as you like
+  - Call the API to get a list of download URLs with all your organization data.
 
-The data that is collected is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers need must the data in their own data storages.
+  - Download all the files using the download URLs and process the data as you like.
+
+The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
@@ -118,7 +119,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
+    "@odata.context": "api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetConfiguration)",
     "value": [
         {
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
@@ -206,7 +207,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "recommendationReference": "sca-_-scid-6093"
         }
     ],
-    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
@@ -251,7 +252,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 Property (id) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
-Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
+Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z  ]
 
 ### 2.6 Examples
@@ -266,7 +267,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-eus-stg.cloudapp.net/api/$metadata#contoso.windowsDefenderATP.api.ExportFilesResponse",
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#contoso.windowsDefenderATP.api.ExportFilesResponse",
     "exportFiles": [
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00393-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",
         "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export/2021-01-11/1101/ScaExport/json/OrgId=12345678-195f-4223-9c7a-99fb420fd000/part-00394-e423630d-4c69-4490-8769-a4f5468c4f25.c000.json.gz?sv=2019-12-12&st=2021-01-11T11%3A55%3A51Z&se=2021-01-11T14%3A55%3A51Z&sr=b&sp=r&sig=...",

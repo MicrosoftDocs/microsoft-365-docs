@@ -41,11 +41,15 @@ Provides methods and property details about the APIs that pull threat and vuln
 
 Because the amount of data can be very large, there are two ways it can be retrieved:
 
-- **OData**: The API will pull all data in your organization as Json responses, following the OData protocol. This method is best for small organizations with less than 100K devices. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [1. Export secure configuration assessment \(OData\)](#1-export-secure-configuration-assessment-odata):  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- **Via files**: The API will pull all data in your organization as download files. This method is best for big organizations with more than 100K devices. The response contains URLs to download all the data from Azure storage. This API allows you to download all your data from Azure Storage as follows: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+- [2. Export secure configuration assessment \(via files\)](#2-export-secure-configuration-assessment-via-files): This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
-The data collected is the current snapshot of the available threat and vulnerability dataset, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+  - Call the API to get a list of download URLs with all your organization data.
+
+  - Download all the files using the download URLs and process the data as you like.
+
+The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
@@ -57,8 +61,8 @@ Returns all of the configurations and their status, on a per-device basis.
 
 Method | Data type | Description
 :---|:---|:---
-[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Secure configuration by device collection. See: [1.2 Properties (OData)](#12-properties-odata) | Returns a table has an entry for every unique combination of DeviceId, ConfigurationId. The API will pull all data as Json responses, following the OData protocol.
-[Export secure configuration assessment (via files)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | secure configuration by device files. See: [1.3 Properties (via files)](#13-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage as follows: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Secure configuration by device collection. See: [1.2 Properties (OData)](#12-properties-odata) | Returns a table has an entry for every unique combination of DeviceId, ConfigurationId.
+[Export secure configuration assessment (via files)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | secure configuration by device files. See: [1.3 Properties (via files)](#13-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId.
 
 ### 1.2 Properties (OData)
 
@@ -83,7 +87,7 @@ Timestamp | string | Last time the configuration was seen on the device
 
 Property (id) | Data type | Description
 :---|:---|:---
-Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization.
+Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
 
 ## 2. Export software inventory assessment
@@ -94,8 +98,8 @@ Returns all of the installed software and their details on each device.
 
 Method | Data type | Description
 :---|:---|:---
-[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Software inventory by device collection. See: [2.2 Properties (OData)](#22-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API will pull all data as Json responses, following the OData protocol.
-[Export software inventory assessment (via files)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution allows pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API allows you to download all your data from Azure Storage as follows: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Software inventory by device collection. See: [2.2 Properties (OData)](#22-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+[Export software inventory assessment (via files)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 ### 2.2 Properties (OData)
 
@@ -104,13 +108,13 @@ Property (id) | Data type | Description
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
 DiskPaths | Array[string]  | Disk evidence that the product is installed on the device.
-EndOfSupportDate (optional) | string | The date in which support for this software has or will end.
+EndOfSupportDate | string | The date in which support for this software has or will end.
 EndOfSupportStatus | string | End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 Id | string | Unique identifier for the record.
 NumberOfWeaknesses | int|Number of weaknesses on this software on this device
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
-RegistryPaths (optional) | Array[string] | Registry evidence that the product is installed in the device.
+RegistryPaths | Array[string] | Registry evidence that the product is installed in the device.
 SoftwareFirstSeenTimestamp | string | The first time this software was seen on the device.
 SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
@@ -120,7 +124,7 @@ SoftwareVersion | string | Version number of the software product.
 
 Property (id) | Data type | Description
 :---|:---|:---
-Export files | List\<string\> | A list of download URLs for files holding the current snapshot of the organization.
+Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
 
 ## 3. Export software vulnerabilities assessment per device
@@ -131,8 +135,8 @@ Returns all the known vulnerabilities on a device and their details, for all dev
 
 Method | Data type | Description
 :---|:---|:---
-[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection See: [3.2 Properties (OData)](#32-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API will pull all data as Json responses, following the OData protocol.
-[Export software vulnerabilities assessment (via files)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files) | This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations. This API enables you to download all your data from Azure Storage as follows: 1. Call the API to get a list of download URLs with all your organization data. 2. Download all the files using the download URLs and process the data as you like.
+[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection See: [3.2 Properties (OData)](#32-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
+[Export software vulnerabilities assessment (via files)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId.
 
 ### 3.2 Properties (OData)
 
@@ -142,6 +146,7 @@ CveId | string | Unique identifier assigned to the security vulnerability under 
 CvssScore | string | The CVSS score of the CVE.
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
+DiskPaths | Array\[string\] | Disk evidence that the product is installed on the device.
 ExploitabilityLevel | string | The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp | string | First time the CVE of this product was seen on the device.
 Id | string | Unique identifier for the record.
@@ -149,8 +154,9 @@ LastSeenTimestamp | string | Last time the CVE was seen on the device.
 OSPlatform | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName | string | The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be “Unassigned.” If the organization doesn’t contain any RBAC groups, the value will be “None.”
 RecommendationReference | string | A reference to the recommendation ID related to this software.
-RecommendedSecurityUpdate (optional) | string | Name or description of the security update provided by the software vendor to address the vulnerability.
-RecommendedSecurityUpdateId (optional) | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
+RecommendedSecurityUpdate | string | Name or description of the security update provided by the software vendor to address the vulnerability.
+RecommendedSecurityUpdateId | string | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
+Registry Paths Array\[string\] | Registry evidence that the product is installed in the device.
 SoftwareName | string | Name of the software product.
 SoftwareVendor | string | Name of the software vendor.
 SoftwareVersion | string | Version number of the software product.
@@ -160,7 +166,7 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 
 Property (id) | Data type | Description
 :---|:---|:---
-Export files | List\<string\>  | A list of download URLs for files holding the current snapshot of the organization.
+Export files | array\[string\]  | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
 
 ## See also
