@@ -52,7 +52,7 @@ If audit log search is not turned on for your organization, you can turn it on i
   
 ### Use the compliance center to turn on audit log search
 
-1. [Go to the compliance center](compliance.microsoft.com ) and sign in.
+1. Go to [the compliance center](https://sip.compliance.microsoft.com) and sign in.
 
 2. In the compliance center, go to **Audit** > **Search**.
 
