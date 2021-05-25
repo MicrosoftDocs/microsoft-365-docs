@@ -54,7 +54,13 @@ The second is to [build an environment from scratch](m365d-evaluation.md) for th
 
 It's recommended you begin with Microsoft Defender for Identity, and move on from there as shown (left to right) in the table below. But begin where your own assessment of your organization's determine is best for your implementation.
 
+<!-- Dividing this up by Intent, the next step should be to Enable Eval, then Pilot, then Invest & Respond. The reference material of Architecture et cetera, can come afterward in the same section. This table should link off to Enable Eval for MDO and the transitions from there to pilot et al should be seamless. -->
+
 |  |  | |  |
 |---------|---------|---------|---------|
 |**Microsoft Defender for Identity**      |      **Microsoft Defender for Office 365**  |     **Microsoft Defender for Endpoint**    |    **Microsoft Cloud App Security**     |
 |  MDI  |    MDO     |    MDE     |   MCAS      |
+
+### Navigation you may need
+
+[**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
