@@ -58,7 +58,7 @@ If auditing is not turned on for your organization, you can turn it on in the co
 
    If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
-   ![Banner on Audit page](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![Banner on Audit page](../media/AuditingBanner.png)
 
 3. Click the **Start recording user and admin activity** banner.
 
