@@ -66,14 +66,12 @@ You can also select the **Open the main alert page** action from the **Manage al
 
 An alert page is composed of these sections: 
 
-- Alert story
-- Actions taken (including impacted assets)
-- Related events
+- Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
 ### Analyze affected assets
 

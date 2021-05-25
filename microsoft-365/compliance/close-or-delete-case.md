@@ -41,7 +41,9 @@ To close a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Close case**.
+3. At the bottom of the **Case Information** panel, you will see a "..." with more options.  
+
+4. Click **Close case**.
 
    It might take up to 60 minutes for the closing process to complete.
 
@@ -55,7 +57,9 @@ To reopen a closed case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Reopen case**.
+3. At the bottom of the **Case Information** panel, you will see a "..." with more options.  
+
+4. Click **Reopen case**.
 
    It might take up to 60 minutes for the reopening process to complete.
 
@@ -82,4 +86,6 @@ To delete a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Delete case**.
+3. At the bottom of the **Case Information** panel, you will see a "..." with more options.  
+
+5. Click **Delete case**.
