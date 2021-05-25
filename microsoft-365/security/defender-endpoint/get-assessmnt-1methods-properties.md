@@ -39,7 +39,7 @@ Provides methods and property details about the APIs that pull threat and vuln
 >
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
-There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
+There are different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
 - **OData**  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
@@ -61,18 +61,18 @@ Returns all of the configurations and their status, on a per-device basis.
 
 Method | Data type | Description
 :---|:---|:---
-[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Secure configuration by device collection. See: [1.2 Properties (OData)](#12-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
+[Export secure configuration assessment (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Secure configuration by device collection. See: [1.2 Properties (OData)](#12-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 [Export secure configuration assessment (via files)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | secure configuration by device files. See: [1.3 Properties (via files)](#13-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: 1.  Call the API to get a list of download URLs with all your organization data. 2.  Download all the files using the download URLs and process the data as you like.
 
 ### 1.2 Properties (OData)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls
 ConfigurationId | string | Unique identifier for a specific configuration
 ConfigurationImpact | string | Rated impact of the configuration to the overall configuration score (1-10)
 ConfigurationName | string | Display name of the configuration
-ConfigurationSubcategory | string | Subcategory or sub-grouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
+ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
 IsApplicable | bool | Indicates whether the configuration or policy is applicable
@@ -85,7 +85,7 @@ Timestamp | string | Last time the configuration was seen on the device
 
 ### 1.3 Properties (via files)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
@@ -98,12 +98,12 @@ Returns all of the installed software and their details on each device.
 
 Method | Data type | Description
 :---|:---|:---
-[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Software inventory by device collection. See: [2.2 Properties (OData)](#22-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
+[Export software inventory assessment (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Software inventory by device collection. See: [2.2 Properties (OData)](#22-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 [Export software inventory assessment (via files)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: 1.  Call the API to get a list of download URLs with all your organization data. 2.  Download all the files using the download URLs and process the data as you like.
 
 ### 2.2 Properties (OData)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 DeviceId | string | Unique identifier for the device in the service.
 DeviceName | string | Fully qualified domain name (FQDN) of the device.
@@ -122,7 +122,7 @@ SoftwareVersion | string | Version number of the software product.
 
 ### 2.3 Properties (via files)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
@@ -135,12 +135,12 @@ Returns all the known vulnerabilities on a device and their details, for all dev
 
 Method | Data type | Description
 :---|:---|:---
-[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection See: [3.2 Properties (OData)](#32-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
+[Export software vulnerabilities assessment (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Investigation collection See: [3.2 Properties (OData)](#32-properties-odata) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 [Export software vulnerabilities assessment (via files)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files) | Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: 1.  Call the API to get a list of download URLs with all your organization data. 2.  Download all the files using the download URLs and process the data as you like.
 
 ### 3.2 Properties (OData)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
 CvssScore | string | The CVSS score of the CVE.
@@ -164,7 +164,7 @@ VulnerabilitySeverityLevel | string | Severity level assigned to the security vu
 
 ### 3.3 Properties (via files)
 
-Property (id) | Data type | Description
+Property (ID) | Data type | Description
 :---|:---|:---
 Export files | array\[string\]  | A list of download URLs for files holding the current snapshot of the organization.
 GeneratedTime | string | The time that the export was generated.
