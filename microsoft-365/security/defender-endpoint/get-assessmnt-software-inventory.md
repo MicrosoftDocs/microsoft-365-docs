@@ -42,7 +42,7 @@ There are different API calls to get different types of data. Because the amount
 
   - Download all the files using the download URLs and process the data as you like.
 
-The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contains historic data. In order to collect historic data, customers must save the data in their own data storages.
+The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
