@@ -97,7 +97,9 @@ Verify that Microsoft Defender Antivirus is installed and is active.
 In the previous section, you downloaded an installation package. The installation package contains the installer for Microsoft Defender Antivirus. You can choose to set Microsoft Defender Antivirus to run on passive mode if you are running a non-Microsoft antivirus/antimalware solution. 
 
 
-### Install Microsoft Defender using quiet method
+### Command line installation 
+
+
 Use the installation package from the previous step for the following steps.
 
 
