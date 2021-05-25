@@ -122,7 +122,7 @@
 ###### [Configure iOS features](ios-configure-features.md)
 
 ##### [Troubleshoot]()
-###### [FAQa and Troubleshoot issues](ios-troubleshoot.md)
+###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
  
