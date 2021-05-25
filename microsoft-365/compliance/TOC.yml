@@ -244,7 +244,11 @@
           - name: Learn about the Microsoft Compliance Extension (preview)
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
-            href: dlp-alerts-dashboard-learn.md    
+            href: dlp-alerts-dashboard-learn.md
+        - name: Plan for DLP
+          items:
+          - name: Plan for data loss prevention
+            href: dlp-overview-plan-for-dlp.md
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy

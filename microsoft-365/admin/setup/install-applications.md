@@ -21,7 +21,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices and set up email in Outlook.
+description: "Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices."
 ---
 
 # Install Office applications
@@ -46,6 +46,6 @@ If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, you're 
 
 ::: moniker-end
 
-Having trouble? These troubleshooting resources can help:
+## Related content
   
-- [Troubleshoot installing Office and Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+[Troubleshoot installing Office and Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (article)
