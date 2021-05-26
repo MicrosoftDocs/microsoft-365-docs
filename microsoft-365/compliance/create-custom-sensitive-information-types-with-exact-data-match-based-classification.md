@@ -94,7 +94,7 @@ Setting up and configuring EDM-based classification involves:
 
 #### Save sensitive data in .csv or .tsv format
 
-1. Identify the sensitive information you want to use to identify what you want to protect. Export the data to an app, such as Microsoft Excel, and save the file in a text file. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values) or pipe-separated (|) format. The .tsv format is recommended in cases where your data values may have commas included in them (e.g. street addresses).
+1. Identify the sensitive information you want to use to identify what you want to protect. Export the data to an app, such as Microsoft Excel, and save the file in a text file. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format. The .tsv format is recommended in cases where your data values may have commas included in them (such as street addresses).
 The data file can include a maximum of:
       - Up to 100 million rows of sensitive data
       - Up to 32 columns (fields) per data source
