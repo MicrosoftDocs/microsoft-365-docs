@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ""
+description: "For managed service providers using Microsoft 365 Lighthouse, learn about managing user access and more for all of your customers in one location."
 ---
 
 # Overview of Microsoft 365 Lighthouse
