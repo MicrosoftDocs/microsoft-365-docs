@@ -69,8 +69,6 @@ These steps turn on self-service password reset for everyone in your business.
 
 ## Related content
 
-[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)
-
-[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)
-
+[Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
+[Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
 [Microsoft 365 Business training videos](../../business-video/index.yml) (link page)

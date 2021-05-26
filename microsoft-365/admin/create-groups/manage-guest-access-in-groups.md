@@ -64,10 +64,7 @@ If you want to edit any of a guest's information, you can [Add or update a user'
 
 ## Related content
 
-[Block guest users from a specific group](../../solutions/per-group-guest-access.md) (article)
-
-[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md) (article)
-  
-[Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)
-
+[Block guest users from a specific group](../../solutions/per-group-guest-access.md) (article)\
+[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md) (article)\
+[Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (article)
