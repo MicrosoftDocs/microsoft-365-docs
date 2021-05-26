@@ -1,25 +1,19 @@
 ---
 title: "Overview of Microsoft 365 Lighthouse"
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: sharik
-author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
-- M365-subscription-management 
+ms.collection:
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
-- adminvideo
-monikerRange: 'o365-worldwide'
-search.appverid:
-- BCS160
-- MET150
-- MOE150
+- M365-Lighthouse                         
 description: "For managed service providers using Microsoft 365 Lighthouse, learn about managing user access and more for all of your customers in one location."
 ---
 
