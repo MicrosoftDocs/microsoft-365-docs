@@ -65,7 +65,7 @@ OCR processing works best on documents that meet the following requirements:
 
 - For images, dimensions must be between 50 × 50 and 10,000 × 10,000 pixels.
    > [!NOTE]
-   > Large documents that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
+   > Images that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
  
 - For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
 
