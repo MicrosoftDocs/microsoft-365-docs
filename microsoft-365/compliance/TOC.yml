@@ -126,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Get started with trainable classifiers
           href: classifier-get-started-with.md
-        - name: How to retrain a classifier in communications compliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
