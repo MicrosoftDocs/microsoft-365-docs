@@ -215,8 +215,6 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)
-
-[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
-
+[Domains FAQ](../setup/domains-faq.yml) (article)\
+[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)\
 [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md) (article)

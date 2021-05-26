@@ -155,11 +155,8 @@ If you or your users encounter problems loading the add-in while using Office ap
 
 ## Related content
 
-[Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)
-
-[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)
-
-[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)
-
+[Deploy add-ins in the admin center](../manage/manage-deployment-of-add-ins.md) (article)\
+[Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
+[Centralized Deployment FAQ](../manage/centralized-deployment-faq.md) (article)\
 [Upgrade your Microsoft 365 for business users to the latest Office client](../setup/upgrade-users-to-latest-office-client.md) (article)
  
