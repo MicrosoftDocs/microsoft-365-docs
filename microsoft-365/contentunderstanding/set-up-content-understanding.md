@@ -66,7 +66,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
 2. In the **Files and content** section, select **Automate content understanding**.<br/>
 
-3. On the **Automate content understanding** page, click **Get started** to walk through the setup process.<br/>
+3. On the **Automate content understanding** page, click **Get started** to walk through the setup process. Note that your current AI Builder credit availability is shown in the **At a glance** section.<br/>
 
     > [!div class="mx-imgBorder"]
     > ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
