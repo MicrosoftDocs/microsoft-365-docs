@@ -1,6 +1,6 @@
 ---
-title: Prepare Microsoft Defender ATP deployment
-description: Prepare stakeholder approval, timelines, environment considerations, and adoption order when deploying Microsoft Defender ATP
+title: Prepare Microsoft Defender for Endpoint deployment
+description: Prepare stakeholder approval, timelines, environment considerations, and adoption order when deploying Microsoft Defender for Endpoint
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -75,11 +75,11 @@ required in technologies or processes.
 
 | What                                  | Description |
 |---------------------------------------|-------------|
-| Endpoint count                        |             |
-| Server count                          |             |
-| Management engine                     |             |
-| CDOC distribution                     |             |
-| Security information and event (SIEM) |             |
+| Endpoint count                        |    Total count of endpoints by operating system.         |
+| Server count                          |    Total count of Servers by operating system version.    |
+| Management engine                     |    Management engine name and version (for example, System Center Configuration Manager Current Branch 1803).         |
+| CDOC distribution                     |    High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).         |
+| Security information and event (SIEM) |    SIEM technology in use.         |
 
 
 ## Role-based access control
@@ -156,7 +156,6 @@ how the endpoint security suite should be enabled.
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed. <br>[Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Not applicable      |
 
 ## Next step
-|||
-|:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender for Endpoint deployment
+
+![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender for Endpoint deployment
 

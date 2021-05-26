@@ -1,6 +1,6 @@
 ---
 title: Order and precedence of email protection
-keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+keywords: security, malware, Microsoft 365, M365, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -37,6 +37,8 @@ There are two major factors that determine which policy is applied to a message:
 
 - **The priority of the email protection type**: This order is not configurable, and is described in the following table:
 
+  <br>
+
   ****
 
   |Priority|Email protection|Category|Where to manage|
@@ -44,7 +46,7 @@ There are two major factors that determine which policy is applied to a message:
   |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |4|Spoofing|CAT:SPOOF|[Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md)|
+  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)|
   |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
@@ -53,19 +55,21 @@ There are two major factors that determine which policy is applied to a message:
 
   <sup>\*</sup> These features are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
-- **The priority of the policy**: For each protection type (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users. Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
+- **The priority of the policy**: For each type of policy (anti-spam, anti-malware, anti-phishing, etc.), there's a default policy that applies to everyone, but you can create custom policies that apply to specific users. Each custom policy has a priority value that determines the order that the policies are applied in. The default policy is always applied last.
 
   If a user is defined in multiple policies of the same type, only the policy with the highest priority is applied to them. Any remaining policies of that type are not evaluated for the user (including the default policy).
 
 For example, consider the following anti-phishing policies in Microsoft Defender for Office 365 **that apply to the same users**, and a message that's identified as both user impersonation and spoofing:
 
-  ****
+<br>
 
-  |Policy name|Priority|User impersonation|Anti-spoofing|
-  |---|---|---|---|
-  |Policy A|1|On|Off|
-  |Policy B|2|Off|On|
-  |
+****
+
+|Policy name|Priority|User impersonation|Anti-spoofing|
+|---|---|---|---|
+|Policy A|1|On|Off|
+|Policy B|2|Off|On|
+|
 
 1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (5).
 2. Policy A is applied to the users because it has a higher priority than Policy B.

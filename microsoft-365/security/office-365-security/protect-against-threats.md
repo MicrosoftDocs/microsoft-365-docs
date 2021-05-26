@@ -56,8 +56,8 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 |Anti-spam protection|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Zero-hour auto purge (for email)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection from malicious URLs and files in email and Office documents (Safe Links and Safe Attachments)|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
-|Advanced anti-phishing protection|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams workloads|[Microsoft Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Advanced anti-phishing protection|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### Roles and permissions
 
@@ -102,7 +102,7 @@ To learn more about anti-malware policy options, see [Configure anti-malware pol
 
 The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP anti-phishing**.
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Click **Default policy**.
 
@@ -273,7 +273,7 @@ Along with configuring protection from malware, malicious URLs and files, phishi
 
 - Spam actions are set to **Move message to Junk Email folder** in [anti-spam policies](anti-spam-protection.md).
 
-- Users have kept their default [junk email settings](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md), and haven't turned off junk email protection.
+- Users have kept their default [junk email settings](configure-junk-email-settings-on-exo-mailboxes.md), and haven't turned off junk email protection.
 
 To learn more, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 

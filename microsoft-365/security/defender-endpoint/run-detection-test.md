@@ -1,6 +1,6 @@
 ---
-title: Run a detection test on a newly onboarded Microsoft Defender ATP device
-description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender ATP service.
+title: Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
+description: Run the detection script on a newly onboarded device to verify that it is properly onboarded to the Microsoft Defender for Endpoint service.
 keywords: detection test, detection, powershell, script, verify, onboarding, microsoft defender for endpoint onboarding, clients, servers, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -50,7 +50,7 @@ Run the following PowerShell script on a newly onboarded device to verify that i
 3. At the prompt, copy and run the following command:
 
    ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
 The Command Prompt window will close automatically. If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded device in approximately 10 minutes.

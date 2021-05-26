@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft 365 security center
 description: Learn about changes from the Microsoft Defender Security Center to the Microsoft 365 security center
-keywords: Getting started with the Microsoft 365 security center, OATP, MDATP, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+keywords: Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 search.appverid: 
@@ -24,13 +25,33 @@ ms.collection:
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
-
 **Applies to:**
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+
+## Quick reference
+
+The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and the Microsoft 365 security center.
+
+> [!div class="mx-imgBorder"]
+> ![Image of what moved to where](../../media/mde-m3d-security-center.png)
+
+| Microsoft Defender Security Center | Microsoft 365 security center |
+|---------|---------|
+| Dashboards <ul><li>Security Operations</li><li>Threat Analytics</li></ul>  |Home <ul><li>Threat analytics</li></ul>   |
+| Incidents | Incidents & alerts |
+| Device inventory | Device inventory |
+| Alerts queue | Incidents & alerts |
+| Automated investigations | Action center |
+| Advanced hunting | Hunting |
+| Reports | Reports |
+| Partners & APIs | Partners & APIs |
+| Threat & Vulnerability Management | Vulnerability management |
+| Evaluation and tutorials | Evaluation & tutorials |
+| Configuration management | Configuration management |
+| Settings | Settings | 
 
 The improved [Microsoft 365 security center](overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This security center brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
 
@@ -61,7 +82,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 ### Alerts and actions
 
-|**Area**  |**Description of change** |
+| Area | Description of change |
 |---------|---------|
 | [Incidents & alerts](incidents-overview.md)  | In the Microsoft 365 security center, you can manage incidents and alerts across all of your endpoints, email, and identities. We've converged the experience to help you find related events more easily. For more information, see [Incidents Overview](incidents-overview.md).   |
 | [Hunting](advanced-hunting-overview.md)  |  Modifying custom detection rules created in Microsoft Defender for Endpoint to include identity and email tables automatically moves them to Microsoft 365 Defender. Their corresponding alerts will also appear in Microsoft 365 Defender. For more details about these changes, read [Migrate custom detection rules](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>The `DeviceAlertEvents` table for advanced hunting isn't available in Microsoft 365 Defender. To query device-specific alert information in Microsoft 365 Defender, you can use the `AlertInfo` and `AlertEvidence` tables to accommodate even more information from a diverse set of sources. Craft your next device-related query by following [Write queries without DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
@@ -70,7 +91,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 ### Endpoints
 
-|**Area**  |**Description of change**  |
+| Area | Description of change |
 |---------|---------|
 |Search   |  Instead of being in the heading, Microsoft Defender for Endpoint search bar is moving under the Endpoints section. You can continue to search for devices, files, users, URLs, IPs, vulnerabilities, software, and recommendations.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. See an overview of how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected. |
@@ -83,9 +104,12 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 > [!NOTE]
 > **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
 
+> [!TIP]
+> Device search is done from Endpoints > Search.
+
 ### Access and reporting
 
-|**Area**  |**Description of change**  |
+| Area | Description of change |
 |---------|---------|
 | Reports  | See reports for endpoints and email & collaboration, including Threat protection, Device health and compliance, and Vulnerable devices. |
 | Health  |  Currently links out to the "Service health" page in the [Microsoft 365 admin center](https://admin.microsoft.com/). |
@@ -115,7 +139,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
 
-[Learn more about the Action center](m365d-action-center.md)
+[Learn more about the Action center](m365d-action-center.md).
 
 ### Threat Analytics
 
@@ -127,7 +151,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 
 You can access threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization.
 
-Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md)
+Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md).
 
 ### Endpoints section
 

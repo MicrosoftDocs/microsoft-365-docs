@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a device in Microsoft Defender ATP
+title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
 search.product: eADQiWindows 10XVcnh
@@ -162,6 +162,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 >[!IMPORTANT]
 >- Full isolation is available for devices on Windows 10, version 1703.
 >- Selective isolation is available for devices on Windows 10, version 1709 or later.
+>- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 

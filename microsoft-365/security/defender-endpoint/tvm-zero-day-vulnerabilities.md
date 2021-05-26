@@ -1,7 +1,7 @@
 ---
 title: Mitigate zero-day vulnerabilities - threat and vulnerability management
 description: Learn how to find and mitigate zero-day vulnerabilities in your environment through threat and vulnerability management.
-keywords: mdatp tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
+keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,6 +39,9 @@ Threat and vulnerability management will only display zero-day vulnerabilities i
 ## Find information about zero-day vulnerabilities
 
 Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft Defender Security Center.
+
+>[!NOTE]
+> 0-day capability is not currently available for non-Windows products (Mac, Linux); it will, however, be added in the future.
 
 ### Threat and vulnerability management dashboard
 

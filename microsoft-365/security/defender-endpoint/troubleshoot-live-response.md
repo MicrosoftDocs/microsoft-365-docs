@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Microsoft Defender ATP live response issues
-description: Troubleshoot issues that might arise when using live response in Microsoft Defender ATP
+title: Troubleshoot Microsoft Defender for Endpoint live response issues
+description: Troubleshoot issues that might arise when using live response in Microsoft Defender for Endpoint
 keywords: troubleshoot live response, live, response, locked, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

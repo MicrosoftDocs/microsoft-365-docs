@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Learn how a global admin can change a user's email address and display name. "
+description: "Learn how a Microsoft 365 global admin can change a user's email address and display name when their ame changes. "
 ---
 
 # Change a user name and email address
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
-Watch a short video about changing a user's email address. <br><br>
+## Watch: Change a user's name or email address
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 You must be a [global admin](about-admin-roles.md) to do these steps. 
 
@@ -216,7 +216,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### "A parameter cannot be found that matches parameter name 'EmailAddresses"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](../contact-support-for-business-products.md) and ask them to do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](../../business-video/get-help-support.md) and ask them to do a full sync for you.
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
@@ -246,8 +246,8 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 To learn how to change someone's username in Active Directory, in Windows Server 2003 and earlier, see [Rename a user account](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
-## Related articles
+## Related content
 
-[Admins: Reset a password for one or more users](reset-passwords.md)
-  
-[Add another email address to a user](../email/add-another-email-alias-for-a-user.md)
+[Admins: Reset a password for one or more users](reset-passwords.md) (article)\
+[Add another email address to a user](../email/add-another-email-alias-for-a-user.md) (article)\
+[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)

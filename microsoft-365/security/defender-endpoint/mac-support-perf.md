@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot performance issues for Microsoft Defender for Endpoint for Mac
-description: Troubleshoot performance issues in Microsoft Defender for Endpoint for Mac.
-keywords: microsoft, defender, atp, mac, performance
+title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,32 +20,32 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Troubleshoot performance issues for Microsoft Defender for Endpoint for Mac
+# Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint for Mac.
+This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint on macOS.
 
-Real-time protection (RTP) is a feature of Microsoft Defender for Endpoint for Mac that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
+Real-time protection (RTP) is a feature of Microsoft Defender for Endpoint on macOS that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint for Mac. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint for Mac.
+Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender for Endpoint on macOS.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 
-1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender for Endpoint for Mac is contributing to the performance issues.
+1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender for Endpoint on macOS is contributing to the performance issues.
 
       If your device is not managed by your organization, real-time protection can be disabled using one of the following options:
 
-    - From the user interface. Open Microsoft Defender for Endpoint for Mac and navigate to **Manage settings**.
+    - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
 
       ![Manage real-time protection screenshot](images/mdatp-36-rtp.png)
 
@@ -55,13 +55,13 @@ The following steps can be used to troubleshoot and mitigate these issues:
       mdatp config real-time-protection --value disabled
       ```
 
-      If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint for Mac](mac-preferences.md).
+      If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
       
       If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, please contact customer support for further instructions and mitigation.
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Mac.
+1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
 
       > [!NOTE]
       > This feature is available in version 100.90.70 or newer.
@@ -89,7 +89,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       To collect current statistics, run:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
@@ -99,7 +99,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 1. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     The output of this command should be similar to the following:
@@ -144,11 +144,11 @@ The following steps can be used to troubleshoot and mitigate these issues:
         125  CrashPlanService 164
       ```
 
-      To improve the performance of Defender for Endpoint for Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+      To improve the performance of Defender for Endpoint on Mac, locate the one with the highest number under the Total files scanned row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
       > [!NOTE]
       > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
       > 
-1. Configure Microsoft Defender for Endpoint for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
+1. Configure Microsoft Defender for Endpoint on macOS with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-     See [Configure and validate exclusions for Microsoft Defender for Endpoint for Mac](mac-exclusions.md) for details.
+     See [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md) for details.

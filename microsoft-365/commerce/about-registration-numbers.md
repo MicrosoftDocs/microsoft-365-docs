@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+search.appverid: MET150
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+ms.date: 03/17/2021
 ---
 
 # About registration numbers and under review notifications
@@ -31,7 +32,7 @@ We use the registration number to review the details of your account. This lets 
 
 For countries where the registration number is mandatory, the label above the text box indicates what type of number is required.
 
-For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
+For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 

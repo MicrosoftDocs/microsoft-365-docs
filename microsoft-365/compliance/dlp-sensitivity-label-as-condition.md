@@ -49,7 +49,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |Service  |Item type  |Available to policy tip  |Enforceable  |
 |---------|---------|---------|---------|
 |Exchange    |email message         |yes         |yes         |
-|Exchange    |email attachment         |no *         |yes *         |
+|Exchange    |email attachment         |no         |yes *         |
 |SharePoint Online     |items in SharePoint Online         |yes         |yes         |
 |OneDrive for Business     |items         |yes         |yes         |
 |Teams     |Teams and channel messages         |not applicable         |not applicable         |

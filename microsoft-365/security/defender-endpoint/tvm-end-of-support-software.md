@@ -1,7 +1,7 @@
 ---
 title: Plan for end-of-support software and software versions
 description: Discover and plan for software and software versions that are no longer supported and won't receive security updates.
-keywords: threat and vulnerability management, mdatp tvm security recommendation, cybersecurity recommendation, actionable security recommendation
+keywords: threat and vulnerability management, Microsoft Defender for Endpoint tvm security recommendation, cybersecurity recommendation, actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,6 +34,9 @@ ms.technology: mde
 End-of-support (EOS), otherwise known as end-of-life (EOL), for software or software versions means that they will no longer be supported or serviced, and will not receive security updates. When you use software or software versions with ended support, you're exposing your organization to security vulnerabilities, legal, and financial risks.
 
 It's crucial for Security and IT Administrators to work together and ensure that the organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. They should examine the options to remove or replace apps that have reached end-of-support and update versions that are no longer supported. It's best to create and implement a plan **before** the end of support dates.
+
+>[!NOTE]
+> EOS capability is not currently available for non-Windows products (Mac, Linux); it will, however, be added in the future.
 
 ## Find software or software versions that are no longer supported
 
