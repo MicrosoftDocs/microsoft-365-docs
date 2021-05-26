@@ -127,7 +127,7 @@ You can also filter by additional user profile details used in your organization
 ## Related content
 
 [Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
-[About admin roles](../add-users/about-admin-roles) (video)\
+[About admin roles](../add-users/about-admin-roles.md) (video)\
 [Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)
 
 
