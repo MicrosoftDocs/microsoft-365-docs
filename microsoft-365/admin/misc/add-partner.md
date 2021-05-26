@@ -68,7 +68,7 @@ As an admin for Office 365, you can create or edit users, reset user passwords, 
 
 ## Add a partner at the time of purchase
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page.
 2. Select the product that you want to purchase, and then select **Buy**.
 3. To add a new partner, expand **Need help with your order?** and select **Get assistance from a Microsoft Partner**.<br>
 Follow the steps on the providers page to either search for, or to get matched with a partner.
