@@ -78,40 +78,44 @@ You can also filter by additional user profile details used in your organization
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
-    
-2. On the **Active users** page, select **Filters** and select **New filter**.
   
-3. On the **Custom filter** page, enter the name for your filter, choose the conditions for your custom filter, and then select **Add**. Your custom view is now included in the drop-down list of filters.
-    
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
-
-2. On the **Active users** page, select **Views** and select **Add custom view**.
-  
-3. On the **Custom view** page, enter the name for your filter, choose the conditions for your custom filter, and then select **Add**. Your custom view is now included in the drop-down list of filters.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
 
 ::: moniker-end
-
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
-
-2. On the **Active users** page, select **Views** and select **Add custom view**.
-  
-3. On the **Custom view** page, enter the name for your filter, choose the conditions for your custom filter, and then select **Add**. Your custom view is now included in the drop-down list of filters.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>.  
 
 ::: moniker-end
     
+2. On the **Active users** page, select **Filters** and select **New filter**.
+  
+3. On the **Custom filter** page, enter the name for your filter, choose the conditions for your custom filter, and then select **Add**. Your custom view is now included in the drop-down list of filters.
 
 ## Edit or delete a custom user view
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
+
+::: moniker-end 
     
 2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**. 
     
@@ -119,34 +123,12 @@ You can also filter by additional user profile details used in your organization
     > You can edit only custom views. 
   
 3. On the **Custom filter** page, edit the information as needed, and then select **Save**. Or, to delete the filter, at the bottom of the page select **Delete**. 
-    
-::: moniker-end
 
-::: moniker range="o365-germany"
+## Related content
 
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
-
-2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
-    
-    > [!TIP]
-    > You can edit only custom views. 
-  
-3. On the **Custom view** page, edit the information as needed, and then select **Save**. Or, to delete the filter, at the bottom of the page select **Delete custom view**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
-
-2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
-    
-    > [!TIP]
-    > You can edit only custom views. 
-  
-3. On the **Custom view** page, edit the information as needed, and then select **Save**. Or, to delete the filter, at the bottom of the page select **Delete custom view**. 
-
-::: moniker-end
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
+[About admin roles](../add-users/about-admin-roles) (video)\
+[Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)
 
 
      
