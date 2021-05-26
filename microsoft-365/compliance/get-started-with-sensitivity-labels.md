@@ -97,7 +97,7 @@ The most effective end-user documentation will be customized guidance and instru
 - For built-in labeling: **Learn More** menu option.
 - For the Azure Information Protection unified labeling client: **Help and Feedback** menu option > **Tell Me More** link in the Microsoft Azure Information Protection dialog box.
 
-To help you provide your customized documentation, see the following following page and downloads that you can use to help train your users: [End User Training for Sensitivity Labels](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
+To help you provide your customized documentation, see the following page and downloads that you can use to help train your users: [End User Training for Sensitivity Labels](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 You can also use the following resources for basic instructions:
 
