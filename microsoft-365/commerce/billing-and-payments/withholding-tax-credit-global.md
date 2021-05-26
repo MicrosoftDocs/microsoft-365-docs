@@ -36,7 +36,7 @@ If you withheld tax when remitting payment and deposited the withheld tax with t
 
 Your WHT request must include the following items:
 
-- A completed copy of the Withholding Tax Credit Form <add link?> (filled out by the customer)
+- A completed copy of the [Withholding Tax Credit Form](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (filled out by the customer)
 - A signed or scanned copy of the Withholding Tax Certificate or Receipt
 
 Submit the WHT request by opening a ticket with Microsoft support.
@@ -47,7 +47,7 @@ If your payment method is a credit card and you made a full payment to Microsoft
 
 Your WHT request must include the following items:
 
-- A completed copy of the Withholding Tax Credit Form <add link?> (filled out by the customer)
+- A completed copy of the [Withholding Tax Credit Form](https://download.microsoft.com/download/a/a/f/aaf8306b-79d4-455b-975f-41ce9e67b9cb/wht%20credit%20form%20-%20global.docx) (filled out by the customer)
 - A signed or scanned copy of the Withholding Tax Certificate or Receipt
 
 Submit the WHT request by opening a ticket with Microsoft support.
