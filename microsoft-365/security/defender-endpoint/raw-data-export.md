@@ -30,7 +30,7 @@ ms.technology: mde
 
 ## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
 
-Microsoft 365 Defender supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/event-hubs/).
+Microsoft 365 Defender supports streaming all the events available through [Advanced Hunting](../defender/advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/event-hubs/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
@@ -39,11 +39,11 @@ Microsoft 365 Defender supports streaming all the events available through [Adva
 
 Topic | Description
 :---|:---
-[Stream events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](advanced-hunting-overview.md) to Event Hubs.
-[Stream events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
+[Stream events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](../defender/advanced-hunting-overview.md) to Event Hubs.
+[Stream events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](../defender/advanced-hunting-overview.md) to your Azure storage account.
 
 
 ## Related topics
-- [Overview of Advanced Hunting](advanced-hunting-overview.md)
+- [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)

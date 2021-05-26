@@ -73,15 +73,15 @@ ms.technology: mde
 
 - Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 
-- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. 
 
 ## Data types mapping:
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+1. Log in to [Microsoft 365 security center](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event: 
 
@@ -96,7 +96,7 @@ In order to get the data types for our events properties do the following:
   ![Image of event hub resource ID3](images/machine-info-datatype-example.png)
 
 ## Related topics
-- [Overview of Advanced Hunting](advanced-hunting-overview.md)
+- [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](raw-data-export.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](raw-data-export-storage.md)
-- [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
