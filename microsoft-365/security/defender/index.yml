@@ -30,7 +30,7 @@ landingContent:
             url:  ../defender/microsoft-365-defender.md
       - linkListType: whats-new
         links:
-          - text: What's new iMicrosoft 365 Defender
+          - text: What's new Microsoft 365 Defender
             url: ../defender/whats-new.md
       - linkListType: video
         links:

@@ -22,14 +22,6 @@ ms.date: 03/17/2021
 
 # Manage self-service purchases (Users)
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
@@ -38,12 +30,42 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 You can view a list of all self-service purchased subscriptions that you bought.
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
 
 ## How to buy more or reduce licenses
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 2. On the **Products** tab, select the subscription that you want to buy more or reduce licenses for.
 3. Choose **Buy licenses** or **Remove licenses**.
 4. In the right pane, in the **Total licenses** box, enter the total number of licenses that you want for this subscription, then choose **Save**. For example, if you have 100 licenses and you want to add 5 more, enter 105.
@@ -52,7 +74,23 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To assign licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+:: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
+
+::: moniker-end
 2. Choose the subscription that you want to assign licenses for.
 3. Choose **Assign licenses**.
 4. In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list. You can add up to 20 users at a time.
@@ -62,7 +100,23 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To unassign licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+:: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
+
+::: moniker-end
 2. Choose the product that you want to unassign licenses for.
 3. Choose the users that you want to unassign licenses from.
 4. Choose **Unassign licenses**.
@@ -70,7 +124,22 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ## Cancel a subscription
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+::: moniker-end
 2. On the **Products** tab, find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback you have.
 4. Select **Save**.
