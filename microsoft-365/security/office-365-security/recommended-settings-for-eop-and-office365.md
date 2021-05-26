@@ -133,11 +133,11 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Do you want to notify recipients if their messages are quarantined?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
-|**Common Attachment Types Filter** <p> _EnableFileFilter_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
-|**Malware Zero-hour Auto Purge** <p> _ZapEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
-|**Notify internal senders** of the undelivered message <p> _EnableInternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
-|**Notify external senders** of the undelivered message <p> _EnableExternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
+|**Notify recipients when messages are quarantined as malware** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
+|**Enable the common attachments filter** <p> _EnableFileFilter_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
+|**Enable zero-hour auto purge for malware** <p> _ZapEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Notify internal senders when messages are quarantined as malware** <p> _EnableInternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
+|**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
 |
 
 ### EOP default anti-phishing policy settings
