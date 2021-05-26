@@ -124,6 +124,5 @@ Users with Android or iOS devices are required to install the Company Portal app
 
 ## Related content
 
-[Capabilities of Basic Mobility and Security](capabilities.md) (article)
-
+[Capabilities of Basic Mobility and Security](capabilities.md) (article)\
 [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article)
