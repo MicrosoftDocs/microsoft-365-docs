@@ -28,6 +28,28 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
+## Quick reference
+
+The table below lists the changes in navigation between the Office 365 Security & Compliance Center and the Microsoft 365 security center.
+
+> [!div class="mx-imgBorder"]
+> ![Image of what moved to where](../../media/mde-m3d-security-center.png)
+
+|**Microsoft Defender Security Center**  |**Microsoft 365 security center** |
+|---------|---------|
+| Dashboards <ul><li>Security Operations</li><li>Threat Analytics</li></ul>  |Home <ul><li>Threat analytics</li></ul>   |
+| Alerts | Incidents & alerts |
+| Device inventory | Device inventory |
+| Alerts queue | Incidents & alerts |
+| Automated investigations | Action center |
+| Advanced hunting | Hunting |
+| Reports | Reports |
+| Partners & APIs | Partners & APIs |
+| Threat & Vulnerability Management | Vulnerability management |
+| Evaluation and tutorials | Evaluation & tutorials |
+| Configuration management | Configuration management |
+| Settings | Settings | 
+
 The improved [Microsoft 365 security center](./overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
 If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in the Microsoft 365 security center.
