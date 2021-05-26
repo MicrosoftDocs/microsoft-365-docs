@@ -305,12 +305,15 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 **Applies to:** All customers
 
-When the Office 365 tenant completes the final step of the migration (Azure AD Finalization (Phase 9)) all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
+When the Office 365 tenant completes the final step of the migration (Phase 9: Azure AD Finalization), all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as authentication will fail from this point forward against the Microsoft Cloud Deutschland service.  
+
+Microsoft Azure customers must transition their Azure workloads following the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main) as soon as their tenant completes the migration to worldwide (Phase 9).  
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
+| Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
 
 ### Azure AD Connect
