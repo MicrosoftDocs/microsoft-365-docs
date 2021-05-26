@@ -32,6 +32,10 @@ MIP capabilities are included with Microsoft 365 Compliance and give you the too
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
+## Licensing requirements
+
+License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section from the Microsoft 365 licensing documentation, and download the related PDF or Excel.
+
 ## Know your data
 
 > [!NOTE]
