@@ -33,6 +33,8 @@ description: "The domain name system maps computer hostnames to IP addresses and
 ::: moniker range="o365-worldwide"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -41,6 +43,8 @@ Domain names, like contoso.com, are managed by using a worldwide system of domai
 ::: moniker range="o365-germany"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -187,7 +191,7 @@ You can [find a list of values](information-for-dns-records.md) to set up your d
   
 Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Microsoft 365, what their function is, and example values. Check out [External Domain Name System records for Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## How can I learn more?
+## Next steps
 
 Check out one of the following: 
   
@@ -196,8 +200,6 @@ Check out one of the following:
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)
-
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
-
+[Domains FAQ](../setup/domains-faq.yml) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
 [Manage domains](index.yml) (link page)

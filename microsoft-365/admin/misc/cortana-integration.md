@@ -182,8 +182,6 @@ For services governed by the [Microsoft Services Agreement](https://go.microsoft
 
 ## Related content
 
-[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)
-
-[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)
-
+[Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)\
+[Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)

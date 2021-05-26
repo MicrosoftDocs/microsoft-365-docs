@@ -51,7 +51,7 @@ Microsoft 365 Defender aggregates data from the various supported services that 
 To get the best protection and optimize Microsoft 365 Defender, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Onboard to the service
-Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any item under the Endpoints section, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
+Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any Microsoft 365 Defender items, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
 
 ### Data center location
 
