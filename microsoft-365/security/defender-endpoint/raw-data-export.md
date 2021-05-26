@@ -32,7 +32,6 @@ ms.technology: mde
 
 Microsoft 365 Defender supports streaming all the events available through [Advanced Hunting](../defender/advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/event-hubs/).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 
 ## In this section

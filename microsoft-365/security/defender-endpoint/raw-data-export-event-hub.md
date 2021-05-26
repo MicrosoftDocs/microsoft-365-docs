@@ -39,9 +39,9 @@ ms.technology: mde
 
 1. Log in to the [Microsoft 365 Defender security center](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to the [Data export settings page](https://security.microsoft.com/interoperability/dataexport).
+2. Go to the [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
-3. Click on **Add data export settings**.
+3. Click on **Add**.
 
 4. Choose a name for your new settings.
 
