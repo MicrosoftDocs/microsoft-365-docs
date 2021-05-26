@@ -228,7 +228,7 @@
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
         href: contoso-case-study-solutions.md
-      - name: COVID-19 response and support for remote and onsite work
+      - name: COVID-19 response and support for hybrid work
         href: contoso-remote-onsite-work.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
