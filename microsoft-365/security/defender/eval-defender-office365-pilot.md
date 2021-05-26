@@ -29,10 +29,16 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Introduction --
-1. Create pilot groups
-1. Configure protection
-1. Try out capabilities
+When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
+
+It may not be evident why 'Standard' and 'Strict' are the terms used for this, but that will become clear when you explore more about Defender for Office 365 security presets. Naming groups 'custom' and 'exceptions' speak for themselves, and though most of your users should fall under *standard* and *strict*, custom and exception groups will collect valuable data for you regarding managing risk.
+
+Distribution groups can be created and defined directly in Exchange Online or synchronized from on-premises Active Directory.
+
+1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
+2. From the navigation menu, expand *Recipients* and select *Groups*.
+
+:::image type="content" source="../../media/MDOEval/1-MDO-eval-pilot.png" alt-text="Exchange admin center on the navigation menu (the quick launch) with an arrow pointing at Groups. Click Groups.":::
 
 ![Steps for creating the pilot for Microsoft 365 Defender for Office](../../media/defender/m365-defender-office-pilot.png)
 
@@ -75,3 +81,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 
 [**Return to the evaluation environment** article | Microsoft Docs](/microsoft-365/security/defender/eval-defender-office365-enable-eval)
+
+### Helpful information
+
+[Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)
