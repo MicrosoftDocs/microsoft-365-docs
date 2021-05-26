@@ -709,12 +709,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Predictive coding module (preview)
-              href: predictive-coding-overview.md
             - name: Use the Relevance module to analyze content
               href: using-relevance.md
             - name: Retirement of the Relevance module
               href: relevance-module-retirement.md  
+        - name: Use predictive coding
+          items: 
+            - name: Learn about predictive coding
+              href: predictive-coding-overview.md
+            - name: Create a predictive coding model
+              href: predictive-coding-create-model.md
+            - name: Train a predictive coding model
+              href: predictive-coding-train-model.md
+            - name: Predictive coding reference
+              href: predictive-coding-reference.md
         - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
