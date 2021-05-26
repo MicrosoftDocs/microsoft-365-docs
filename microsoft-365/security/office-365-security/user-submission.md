@@ -35,22 +35,18 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
 
-- [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
+- [Third-party reporting tools](#third-party-reporting-tools)
 
-- [Built-in reporting in Outlook for iOS and Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
   > [!NOTE]
   > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
-
-You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
-
-Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
 
 ## Custom mailbox prerequisites
 
 Use the following articles to configure the prerequisites required so user reported messages go to your custom mailbox:
 
-- Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
+- Skip spam filtering on the custom mailbox by creating an exchange mail flow rule to set the spam confidence level. See [Use the EAC to create a mail flow rule that sets the SCL of a message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **Bypass spam filtering**.
 
 - Turn off scanning attachments for malware in the custom mailbox. Use [Set up Safe Attachments policies in Defender for Office 365](set-up-safe-attachments-policies.md) to create a Safe Attachments policy with the setting **Off** for **Safe Attachments unknown malware response**.
 
@@ -140,9 +136,17 @@ the following settings:
 
        When you're finished, click **Confirm**.
 
+## Third-party reporting tools
+
+You can configure third-party message reporting tools to send reported messages to the custom mailbox. The only requirement is that the original message is included as an attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
+
+The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
+
 ## Message submission format
 
-Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
+To correctly identify the original attached messages, messages that are sent to the custom mailbox require specific formatting. If the messages don't use this format, the original attached messages are always identified as phishing submissions.
+
+For correct identification of the original attached messages, messages that are sent to the custom mailbox need to use the following syntax for the Subject (Envelope Title):
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -152,7 +156,7 @@ where SafetyAPIAction is one of the following integer values:
 - 2: Not junk
 - 3: Phishing
 
-In the following example:
+This example uses the following values:
 
 - The message is being reported as phishing.
 - The Network Message ID is 49871234-6dc6-43e8-abcd-08d797f20abe.
@@ -162,4 +166,4 @@ In the following example:
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-Messages that do not follow this format will not display properly in the Submissions portal.
+Messages that don't follow this format will not display properly in the Submissions portal.

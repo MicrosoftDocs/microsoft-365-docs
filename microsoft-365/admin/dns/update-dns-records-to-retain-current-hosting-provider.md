@@ -32,13 +32,11 @@ description: "Learn how to route traffic to an existing public website hosted ou
 ## Update DNS records in the Microsoft 365 admin center
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-2. On the **Domains** page, select the domain and then choose **DNS Records**.
+1. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-3. Under **DNS settings**, select **Custom Records**.
-
-4. Select **+ New custom record** and enter the following: 
+1. Select **+ Add record** and enter the following: 
     
-   - For **DNS type** enter: **A (Address)**
+   - For **type** enter: **A (Address)**
     
    - For **Host name or Alias**, type the following: **@**
     
@@ -46,13 +44,13 @@ description: "Learn how to route traffic to an existing public website hosted ou
     
    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
-5. Select **Save**. 
+1. Select **Save**. 
     
 In addition, you can create a CNAME record to help customers find your website.
   
-1. Select **+ New custom record** and enter the following: 
+1. Select **+ Add record** and enter the following: 
     
-   - For **DNS type** enter: **CNAME (Alias)**
+   - For **type** enter: **CNAME (Alias)**
     
    - For **Host name or Alias**, type the following: **www**
     

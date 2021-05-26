@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Learn how a global admin can change a user's email address and display name. "
+description: "Learn how a Microsoft 365 global admin can change a user's email address and display name when their ame changes. "
 ---
 
 # Change a user name and email address
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
-Watch a short video about changing a user's email address. <br><br>
+## Watch: Change a user's name or email address
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -246,8 +246,8 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 To learn how to change someone's username in Active Directory, in Windows Server 2003 and earlier, see [Rename a user account](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
-## Related articles
+## Related content
 
-[Admins: Reset a password for one or more users](reset-passwords.md)
-  
-[Add another email address to a user](../email/add-another-email-alias-for-a-user.md)
+[Admins: Reset a password for one or more users](reset-passwords.md) (article)\
+[Add another email address to a user](../email/add-another-email-alias-for-a-user.md) (article)\
+[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)

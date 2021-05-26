@@ -90,9 +90,9 @@ At the first **Policy Settings** step, just accept the defaults for now. You can
 
 ![Options to customize the type of content to protect](../media/DLP-create-test-tune-default-customization-settings.png)
 
-After clicking Next,** you'll be presented with an additional **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
+After clicking Next,** you'll be presented with an more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
 
-- I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behaviour before it happens.
+- I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behavior before it happens.
 - I've also decreased the number of instances from 10 to 1, so that this policy will detect any sharing of Australian PII data, not just bulk sharing of the data.
 - I've also added another recipient to the incident report email.
 
@@ -102,7 +102,7 @@ Finally, I've configured this policy to run in test mode initially. Notice there
 
 ![Option to test out policy first](../media/DLP-create-test-tune-test-mode.png)
 
-On the final review screen click **Create** to finish creating the policy.
+On the final review screen, click **Create** to finish creating the policy.
 
 ## Test a DLP policy
 
@@ -112,11 +112,11 @@ As an example, the DLP policy I created for this article will detect Australian 
 
 ![Documentation on Australia Tax File Number](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a 9 digit string in close proximity will sail through without any issues. The reason it does not trigger the DLP policy is that the 9-digit string must pass the checksum that indicates it is a valid TFN and not just a harmless string of numbers.
+To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a nine digit string in close proximity will sail through without any issues. The reason it does not trigger the DLP policy is that the nine digit string must pass the checksum that indicates it is a valid TFN and not just a harmless string of numbers.
 
 ![Australia tax file number that does not pass checksum](../media/DLP-create-test-tune-email-test1.png)
 
-In comparison, an email with the words "Tax file number" and a valid TFN that passes the checksum will trigger the policy. For the record here, the TFN I'm using was taken from a website that generates valid, but not genuine, TFNs. Such sites are very useful because one of the most common mistakes when testing a DLP policy is using a fake number that's not valid and won't pass the checksum (and therefore won't trigger the policy).
+In comparison, an email with the words "Tax file number" and a valid TFN that passes the checksum will trigger the policy. For the record here, the TFN I'm using was taken from a website that generates valid, but not genuine, TFNs. Such sites are useful because one of the most common mistakes when testing a DLP policy is using a fake number that's not valid and won't pass the checksum (and therefore won't trigger the policy).
 
 ![Australia tax file number that passes the checksum](../media/DLP-create-test-tune-email-test2.png)
 
@@ -128,9 +128,9 @@ If you leave your DLP policy in test mode and analyze the incident report emails
 
 ## Tune a DLP policy
 
-As you analyze your policy hits you might want to make some adjustments to how the policies behave. As a simple example, you might determine that one TFN in email is not a problem (I think it still is, but let's go with it for the sake of demonstration), but two or more instances is a problem. Multiple instances could be a risky scenario such as an employee emailing a CSV export from the HR database to an external party, for example an external accounting service. Definitely something you would prefer to detect and block.
+As you analyze your policy hits, you might want to make some adjustments to how the policies behave. As a simple example, you might determine that one TFN in an email is not a problem (I think it still is, but let's go with it for the sake of demonstration), but two or more instances are a problem. Multiple instances could be a risky scenario such as an employee emailing a CSV export from the HR database to an external party, for example an external accounting service. Definitely something you would prefer to detect and block.
 
-In the Security & Compliance Center you can edit an existing policy to adjust the behaviour.
+In the Compliance Center you can edit an existing policy to adjust the behavior.
 
 ![Option to edit policy](../media/DLP-create-test-tune-edit-policy.png)
  
@@ -142,7 +142,7 @@ You can also adjust the policy settings and edit the rules to better suit your n
 
 ![Option to edit rule](../media/DLP-create-test-tune-edit-rule.png)
 
-When editing a rule within a DLP policy you can change:
+When editing a rule within a DLP policy, you can change:
 
 - The conditions, including the type and number of instances of sensitive data that will trigger the rule.
 - The actions that are taken, such as restricting access to the content.
@@ -152,7 +152,7 @@ When editing a rule within a DLP policy you can change:
 
 ![Options to edit parts of a rule](../media/DLP-create-test-tune-editing-options.png)
 
-For this demonstration I've added user notifications to the policy (be careful of doing this without adequate user awareness training), and allowed users to override the policy with a business justification or by flagging it as a false positive. Note that you can also customize the email and policy tip text if you want to include any additional information about your organization's policies, or prompt users to contact support if they have questions.
+For this demonstration I've added user notifications to the policy (be careful of doing this without adequate user awareness training), and allowed users to override the policy with a business justification or by flagging it as a false positive. You can also customize the email and policy tip text if you want to include any additional information about your organization's policies, or prompt users to contact support if they have questions.
 
 ![Options for user notifications and overrides](../media/DLP-create-test-tune-user-notifications.png)
 
@@ -190,7 +190,7 @@ The user can report the false positive, and the administrator can look into why 
 
 ![Incident report showing false positive](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
-This driver's license case is a good example to dig into. The reason this false positive has occurred is that the "Australian Driver's License" type will be triggered by any 9-digit string (even one that is part of a 10-digit string), within 300 characters proximity to the keywords "sydney nsw" (not case sensitive). So it's triggered by the phone number and email signature, only because the user happens to be in Sydney.
+This driver's license case is a good example to dig into. The reason this false positive has occurred is that the "Australian Driver's License" type will be triggered by any 9-digit string (even one that is part of a 10-digit string), within 300 characters proximity to the keywords "Sydney nsw" (not case sensitive). So it's triggered by the phone number and email signature, only because the user happens to be in Sydney.
 
 
 One option is to remove the Australian driver's license information type from the policy. It's in there because it's part of the DLP policy template, but we're not forced to use it. If you're only interested in Tax File Numbers and not driver's licenses, you can just remove it. For example, you can remove it from the low volume rule in the policy, but leave it in the high volume rule so that lists of multiple drivers licenses are still detected.
@@ -225,4 +225,4 @@ Policies that restrict content will present the warning to the user as part of t
 
 ## Summary
 
-Data loss prevention policies are useful for organizations of all types. Testing some DLP policies is a low risk exercise due to the control you have over things like policy tips, end user overrides, and incident reports. You can quietly test some DLP policies to see what type of violations are already occurring in your organization, and then craft policies with low false positive rates, educate your users on what is allowed and not allowed, and then roll out your DLP policies to the organization.
+Data loss prevention policies are useful for organizations of all types. Testing some DLP policies is a low risk exercise due to the control you have over things like policy tips, end-user overrides, and incident reports. You can quietly test some DLP policies to see what type of violations are already occurring in your organization, and then craft policies with low false positive rates, educate your users on what is allowed and not allowed, and then roll out your DLP policies to the organization.
