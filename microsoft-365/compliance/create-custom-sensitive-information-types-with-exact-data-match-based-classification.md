@@ -399,7 +399,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
 > [!TIP]
-> Optionally, you can run a validation against your csv or tsv file before uploading by running:
+> Optionally, you can run a validation against your .csv or .tsv file before uploading by running:
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
