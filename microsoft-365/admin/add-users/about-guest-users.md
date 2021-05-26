@@ -61,6 +61,6 @@ To remove users in the Azure AD portal, see [remove a guest user and resources](
 
 ## Related content
 
-[Add users and assign licenses at the same time](add-users.md)
+[guest users in microsoft 365 admin center](about-guest-users.md)
 
-[Delete a user from your organization](delete-a-user.md)
+[prevent guests from being added to a specific microsoft 365 group or microsoft teams team](../../solutions/per-group-guest-access.md)
