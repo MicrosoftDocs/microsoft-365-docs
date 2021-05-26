@@ -91,7 +91,7 @@ The first step is to download and install the AzCopy tool, which is the tool tha
 > [!IMPORTANT]
 > To import PST files using the network upload method and command syntax documented in this article, you must use the version of AzCopy that can be downloaded in step 6b in the following procedure. You can also download that same version of AzCopy from [here](https://aka.ms/downloadazcopy). Using a different version of AzCopy isn't supported.
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization.
+1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
 
