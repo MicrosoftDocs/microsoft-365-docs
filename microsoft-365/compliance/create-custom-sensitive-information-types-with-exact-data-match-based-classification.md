@@ -473,7 +473,7 @@ OPTIONAL: If you used the Exact Data Match schema and sensitive information type
    - .EdmHash
    - .EdmSalt
 
-2. Copy these files in a secure fashion to the computer you will use to upload your sensitive items csv or tsv file (PatientRecords) to your tenant.
+2. Copy these files in a secure fashion to the computer you will use to upload your sensitive items .csv or .tsv file (PatientRecords) to your tenant.
 
    To upload the hashed data, run the following command in Windows Command Prompt:
 
