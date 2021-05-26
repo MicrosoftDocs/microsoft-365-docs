@@ -50,21 +50,27 @@ Document understanding models use Optical Character Recognition (OCR) technology
 Note the following differences in regards to Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
 
 - Office files: We truncate at 64K characters (in training and when run against files in a document library).
-- OCR-scanned files: There is a 20 page limit.  
 
-> [!NOTE]
-> Large documents that are very wide and have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy. 
+- OCR-scanned files: There is a 20 page limit.  
 
 ### Requirements
 
-Form processing works on input documents that meet the following requirements:
+OCR processing works best on documents that meet the following requirements:
 
 - JPG, PNG, or PDF format (text or scanned). Text-embedded PDFs are better, because there won't be any errors in character extraction and location.
+
 - If your PDFs are password-locked, you must remove the lock before submitting them.
+
 - The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
+
 - For images, dimensions must be between 50 × 50 and 10,000 × 10,000 pixels.
+   > [!NOTE]
+   > Large documents that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
+ 
 - For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
+
 - If scanned from paper documents, scans should be high-quality images.
+
 - Must use the Latin alphabet (English characters).
 
 > [!NOTE]
