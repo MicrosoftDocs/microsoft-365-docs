@@ -27,10 +27,10 @@ For more information, see [Windows Update for Business: Update types](/windows/d
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any users placed in the test group. The test group is exempt from any established service level agreements and user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
+- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the Azure AD organization ("tenant"). There should not be any users placed in the test group. The test group is exempt from any established service level agreements and user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
 - **First**: Contains early software adopters and devices that could be subject to pre-release updates. Devices in this group might experience outages if there are scenarios that were not covered during testing in the test ring.
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is typically more stable than the Test and First groups. 
-- **Broad**: Last group to have feature and quality updates available. This group contains most of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable.
+- **Broad**: Last group to have feature and quality updates available. This group contains most of users in the Azure AD organization, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable.
 
 ### Moving devices between update groups
 You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, see [Assign devices to a deployment group](../get-started/assign-deployment-group.md).
@@ -41,12 +41,12 @@ For more information on roles and responsibilities within these deployment group
 There are parts of the service that you manage, like app deployment, where it might be necessary to target all managed devices.
 
 ## How update deployment works:
-1. Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified in the following table.
+1. Microsoft Managed Desktop deploys a new feature or quality update according to the schedule specified in the following table.
 2. During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption based on diagnostic data and the user support system. If any are detected, we immediately pause the deployment to all current and future groups.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
     - You can report compatibility issues by filing a ticket in the Microsoft Managed Desktop Admin portal.
     - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
-3. Once the groups are un-paused, deployment resumes according to the schedule in the table.
+3. Once the groups are unpaused, deployment resumes according to the schedule in the table.
 
 This deployment process applies to both feature and quality updates, though the timeline varies for each.
 
@@ -76,4 +76,4 @@ Any devices found with Windows Insider builds might be put into the Test group a
 
 ## Bandwidth management
 
-We use [Delivery Optimization](/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. This minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
+We use [Delivery Optimization](/windows/deployment/update/waas-delivery-optimization) for all operating system and driver updates. Delivery Optimization minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
