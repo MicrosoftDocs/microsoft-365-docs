@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 foundation solutions 
   items: 
-    - name: Set up your infrastructure for remote work
+    - name: Set up your infrastructure for hybrid work
       items:
       - name: Overview   
         href: empower-people-to-work-remotely.md
