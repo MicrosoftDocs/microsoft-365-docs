@@ -380,7 +380,7 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 - a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent
 - a directory on your upload machine for the:
     -  EDMUploadAgent
-    - your sensitive item file in csv or tsv format, **PatientRecords.csv** in our examples
+    - your sensitive item file in .csv or .tsv format, **PatientRecords.csv** in our examples
     -  and the output hash and salt files
     - the datastore name from the **edm.xml** file, for this example its `PatientRecords`
 - If you used the [Exact Data Match schema and sensitive information type wizard](sit-edm-wizard.md) you ***must*** download it
