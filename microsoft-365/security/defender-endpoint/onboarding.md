@@ -73,7 +73,7 @@ The following table lists the available tools based on the endpoint that you nee
 ## Step 2: Configure capabilities
 After onboarding the endpoints, you'll then configure the capabilities. The following table lists the components that you can configure. Choose the components that you'd like to use and remove the ones that do not apply.
 
-| Component | Description |
+| Capability | Description |
 |-|-|
 | [Endpoint Detection & Response (EDR)](overview-endpoint-detection-response.md) | Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. |
 | [Threat & Vulnerability Management (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management is a component of Microsoft Defender for Endpoint, and provides both security administrators and security operations teams with unique value, including: - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities - Invaluable device vulnerability context during incident investigations - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
