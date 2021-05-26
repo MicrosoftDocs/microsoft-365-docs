@@ -140,7 +140,7 @@ the following settings:
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. The only requirement is that the original message is included as an attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
-The message formatting requirements are described in the next section.
+The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
 
 ## Message submission format
 

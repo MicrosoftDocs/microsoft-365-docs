@@ -166,12 +166,8 @@ Here are the most common issues people encounter when deleting a user:
 
 ## Related content
 
-[Restore a user](restore-user.md) (article)
-  
-[Permanently delete a mailbox](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)
-
-[Remove a former employee from Office 365](remove-former-employee.md) (article)
-
-[Add a new employee to Office 365](add-new-employee.md) (article)
-
+[Restore a user](restore-user.md) (article)\
+[Permanently delete a mailbox](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\
+[Remove a former employee from Office 365](remove-former-employee.md) (article)\
+[Add a new employee to Office 365](add-new-employee.md) (article)\
 [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365. (article)
