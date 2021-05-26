@@ -567,7 +567,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming file name is same as data store name and file is in csv format
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name
