@@ -83,37 +83,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 2. On the **Anti-spam settings** page, click **Create a policy**.
 
-3. The policy wizard opens. On the **Name your policy page**, configure these settings:
-   - **Name**: Enter a unique, descriptive name for the policy.
-   - **Description**: Enter an optional description for the policy.
-
-   When you're finished, click **Next**.
-
-4. On the **Users, groups, and domains** flyout that appears, identify the internal recipients that the policy applies to (recipient conditions):
-   - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
-   - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
-   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
-
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
-
-   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
-
-   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
-   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
-
-   When you're finished, click **Next**.
-
-5. On the **Bulk email threshold & spam properties** flyout that appears, configure the following settings:
-
-   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
-
-     By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk email** filtering verdict:
-
-     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk email** filtering verdict is taken on the message.
-     - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk email** filtering verdict. In effect, the BCL threshold and **Bulk email** filtering verdict action are irrelevant.
-
-   - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Contains the Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated, and their functionality is being incorporated into other parts of the filtering stack. We recommend that you leave all of these ASF settings turned off in your anti-spam policies.
+3. In the **New spam filter policy** fly out that opens, configure the following settings:
 
    - **Name**: Enter a unique, descriptive name for the policy. Don't use the following characters: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
@@ -123,7 +93,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 4. (Optional) Expand the **Spam and bulk actions** section, and verify or configure the following settings:
 
-6. On the **Actions** flyout that appears, configure the following settings:
+   - **Select the action to take for incoming spam and bulk email**: Select or review the action to take on messages based on the following spam filtering verdicts:
 
      - **Spam**
      - **High confidence spam**
@@ -189,42 +159,88 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
    - **Phish ZAP**: By default, ZAP is enabled for phishing detections, but you can disable it by clearing the **On** checkbox.
 
-7. On the **Allow & block list** flyout that appears, you are able to configure message senders by email address or email domain that are allowed to skip spam filtering.
+5. (Optional) Expand the **Allow lists** section to configure message senders by email address or email domain that are allowed to skip spam filtering:
 
-   In the **Allowed** section, you can configure allowed senders and allowed domains. In the **Blocked** section, you can add blocked senders and blocked domains.
-
-   > [!IMPORTANT]
+   > [!CAUTION]
    >
-   > - Think very carefully before you add domains to the allowed domains list. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
+   > - Think very carefully before you add domains here. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
    >
-   > - Never add your own [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) or common domains (for example, microsoft.com or office.com) to the allowed domains list. If these domains are allowed to bypass spam filtering, allow attackers an easily send email into your organization.
-   >
-   > - Manually blocking domains by adding the domains to the blocked domains list isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
+   > - Never add accepted domains (domains that you own) or common domains (for example, microsoft.com or office.com) to the allowed domains list. This would allow attackers to send email that bypasses spam filtering into your organization.
 
-   The steps to add entries to any of the lists are the same:
+   - **Allow sender**: Click **Edit**. In the **Allowed sender list** flyout that appears:
 
-   1. Click the link for the list that you want to configure:
-      - **Allowed** \> **Senders**: Click **Manage (nn) sender(s)**.
-      - **Allowed** \> **Domains**: Click **Allow domains**.
-      - **Blocked** \> **Senders**: Click **Manage (nn) sender(s)**.
-      - **Blocked** \> **Domains**: Click **Block domains**.
+      a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;).
 
-   2. In the flyout that appears, do the following steps:
-      1. Click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Add senders** or **Add domains**.
-      2. In the **Add senders** or **Add domains** flyout that appears, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the email address or domain, select the value below the box.
-      3. Repeat the previous step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the senders.
 
-      When you're finished, click **Add senders** or **Add domains**.
+      Repeat these steps as many times as necessary.
 
-      Back on the main flyout, the senders or domains that you added are listed on the page. To remove an entry from this page, do the following steps:
+      The senders you added appear in the **Allowed Sender** section on the flyout. To delete a sender, click ![Remove icon](../../media/scc-remove-icon.png).
 
-      1. Select one or more entries from the list. You can also use the **Search** box to find values in the list.
-      2. After you select at least one entry, the delete icon ![Delete icon](../../media/m365-cc-sc-delete-icon.png) appears.
-      3. Click the delete icon ![Delete icon](../../media/m365-cc-sc-delete-icon.png) to remove the selected entries.
+      When you're finished, click **Save**.
 
-      When you're finished, click **Done**.
+   - **Allow domain**: Click **Edit**. In the **Allowed domain list** flyout that appears do these steps:
 
-8. On the **Review** flyout that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
+      a. Enter the domain. You can specify multiple domains separated by semicolons (;).
+
+      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the domains.
+
+      Repeat these steps as many times as necessary.
+
+      The domains you added appear in the **Allowed Domain** section on the flyout. To delete a domain, click ![Remove icon](../../media/scc-remove-icon.png).
+
+      When you're finished, click **Save**.
+
+6. (Optional) Expand the **Block lists** section to configure message senders by email address or email domain that will always be marked as high confidence spam:
+
+   > [!NOTE]
+   > Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
+
+   - **Block sender**: Click **Edit**. In the **Blocked sender list** flyout that appears do these steps:
+
+      a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;). Wildcards (*) aren't allowed.
+
+      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the senders.
+
+      Repeat these steps as many times as necessary.
+
+      The senders you added appear in the **Blocked Sender** section on the flyout. To delete a sender, click ![Remove button](../../media/scc-remove-icon.png).
+
+      When you're finished, click **Save**.
+
+   - **Block domain**: Click **Edit**. In the **Blocked domain list** flyout that appears:
+
+      a. Enter the domain. You can specify multiple domains separated by semicolons (;). Wildcards (*) aren't allowed.
+
+      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the domains.
+
+      Repeat these steps as many times as necessary.
+
+      The domains you added appear in the **Blocked Domain** list on the flyout. To delete a domain, click ![Remove button](../../media/scc-remove-icon.png).
+
+      When you're finished, click **Save**.
+
+7. (Optional) Expand the **International spam** section to configure the email languages or source countries that are blocked by spam filtering:
+
+   - **Filter email messages written in the following languages**: This setting is disabled by default (**Status: OFF**). Click **Edit**. In the **International spam settings** flyout that appears, configure the following settings:
+
+     - **Filter email messages written in the following languages**: Select the checkbox to enable this setting. Clear the checkbox to disable this setting.
+
+     - Click in the box and start typing the *name* of the language. A filtered list of supported languages will appear, along with the corresponding ISO 639-2 language code. When you find the language you're looking for, select it. Repeat this step as many times as necessary.
+
+       The list of languages you selected appears on the flyout. To delete a language, click ![Remove button](../../media/scc-remove-icon.png).
+
+     When you're finished, click **Save**.
+
+   - **Filter email messages sent from the following countries or regions**: This setting is disabled by default (**Status: OFF**). To enable it, click **Edit**. In the **International spam settings** flyout that appears, configure the following settings:
+
+     - **Filter email messages sent from the following countries or regions**: Select the checkbox to enable this setting. Clear the checkbox to disable this setting.
+
+     - Click in the box and start typing the *name* of the country or region. A filtered list of supported countries will appear, along with the corresponding ISO 3166-1 two-letter country code. When you find the country or region you're looking for, select it. Repeat this step as many times as necessary.
+
+       The list of countries you selected appears on the flyout. To delete a country or region, click ![Remove button](../../media/scc-remove-icon.png).
+
+     When you're finished, click **Save**.
 
 8. The optional **Spam properties** section contains Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated, and their functionality is being incorporated into other parts of the filtering stack. We recommend that you leave all of these ASF settings turned off in your anti-spam policies.
 
@@ -232,32 +248,47 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 9. (Required) Expand the **Applied to** section to identify the internal recipients that the policy applies to.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
-2. On the **Anti-spam policy** page, look for one of the following values:
-   - The **Type** value is **Custom anti-spam policy**
-   - The **Name** value is **Anti-spam inbound policy (Default)**
+    It's easiest to click **Add a condition** three times to see all of the available conditions. You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
 
-   The following properties are displayed on the page:
+    - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
 
-   - **Name**
-   - **Status**
-   - **Priority**
-   - **Type**
+    - **Recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
-3. When you select an anti-spam policy by clicking on the name, the policy settings are displayed in a flyout.
+    - **Recipient is a member of**: Specifies one or more groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
+
+    - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
+
+10. When you're finished, click **Save**.
+
+## Use the Security & Compliance Center to view anti-spam policies
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+
+2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an anti-spam policy:
+
+   - The default policy named **Default spam filter policy**.
+
+   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
+
+3. The important policy settings are displayed in the expanded policy details that appear. To see more details, click **Edit policy**.
 
 ## Use the Security & Compliance Center to modify anti-spam policies
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-2. On the **Anti-spam policy** page, select an anti-spam policy from the list:
+2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an anti-spam policy:
+
+   - The default policy named **Default spam filter policy**.
+
    - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
-   - The default policy named **Anti-spam inbound policy (Default)**.
 
-3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the security center to create anti-spam policies](#use-the-security-center-to-create-anti-spam-policies) section in this article.  
+3. Click **Edit policy**.
 
-   For the default anti-spam policy the **Users, groups, and domains** section isn't available (the policy applies to everyone), and you can't rename the policy.
+For custom anti-spam policies, the available settings in the flyout that appears are identical to those described in the [Use the Security & Compliance Center to create anti-spam policies](#use-the-security--compliance-center-to-create-anti-spam-policies) section.
+
+For the default anti-spam policy named **Default spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
 To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
 
