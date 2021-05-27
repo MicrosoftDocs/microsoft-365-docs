@@ -35,7 +35,7 @@ The image and the table below lists the changes in navigation between the Office
 > [!div class="mx-imgBorder"]
 > ![Image of what moved to where](../../media/mdo-m3d-security-center.png)
 
-|**Microsoft Defender Security Center**  |**Microsoft 365 security center** |**Microsoft 365 compliance center** |**Exchange admin center** |
+|**Office 365 Security & Compliance**  |**Microsoft 365 security center** |**Microsoft 365 compliance center** |**Exchange admin center** |
 |---------|---------|---------|---------|
 | Alerts | Email & collaboration | | |
 | Classification | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
