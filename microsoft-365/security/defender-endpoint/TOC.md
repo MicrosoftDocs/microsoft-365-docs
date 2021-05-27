@@ -52,7 +52,7 @@
 
 
 ## [Configure and onboard devices]()
-### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
+### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
 
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
