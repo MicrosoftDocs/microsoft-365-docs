@@ -122,10 +122,8 @@ Follow these steps:
 2. Ensure you are using the new admin center preview.
 3. On the left nav pane, select **Support**, and then select **New Service Request**. 
 
-     ![New service request](media/new-service-request.png)
 
-
-  This will activate the **Need Help?** pane on the right-hand side of your screen.
+   This will activate the **Need Help?** pane on the right-hand side of your screen.
 
 4.  In the **Briefly describe your issue** area, enter "Launch SharePoint Portal with 100k users".</br>
 5. Select **Contact Support**.
