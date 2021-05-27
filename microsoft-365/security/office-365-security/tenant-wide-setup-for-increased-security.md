@@ -42,12 +42,14 @@ Office 365 Secure Score analyzes your organization's security based on your regu
 
 The Microsoft 365 security center includes capabilities that protect your environment. It also includes reports and dashboards you can use to monitor and take action. Some areas come with default policy configurations. Some areas do not include default policies or rules. Visit these policies under threat management to tune threat management settings for a more secure environment.
 
+<br>
+
 ****
 
 |Area|Includes a default policy|Recommendation|
 |---|---|---|
 |**Anti-phishing**|Yes|<ul><li>Impersonation protection — If you have Defender for Office 365 and a custom domain, configure the impersonation protection settings in the default anti-phishing policy to protect the email accounts of your most valuable users, such as your CEO, and to protect your domain. More information: [Impersonation settings in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and [Impersonation insight](impersonation-insight.md)</li><li>Spoof intelligence — Review senders who are spoofing your domain. Block or allow these senders. More information: [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).</li></ul>|
-|**Anti-Malware Engine**|Yes| Edit the default policy: <ul><li>Common Attachment Types Filter: Select On</li></ul> <p> You can also create custom malware filter policies and apply them to specified users, groups, or domains in your organization. <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[Configure anti-malware policies](configure-anti-malware-policies.md)</li></ul>|
+|**Anti-Malware Engine**|Yes|Edit the default policy: <ul><li>Select **Enable the common attachments filter**</li></ul> <p> You can also create custom malware filter policies and apply them to specified users, groups, or domains in your organization. <p> More information: <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[Configure anti-malware policies](configure-anti-malware-policies.md)</li></ul>|
 |**Safe Attachments in Microsoft Defender for Office 365**|No|On the main page for Safe Attachments, click **Global settings** and turn on this setting: <ul><li>**Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**</li></ul> <p> Create a Safe Attachments policy with these settings: <ul><li> **Block**: Select **Block** as the unknown malware response.</li><li>**Enable redirect**: Check this box and enter an email address, such as an admin or quarantine account.</li><li>**Apply the above selection if malware scanning for attachments times out or error occurs**: Check this box.</li><li>***Applied to**: **The recipient domain is** \> select your domain.</li></ul> <p> More information: [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Set up Safe Attachments policies](set-up-safe-attachments-policies.md)|
 |**Safe Links in Microsoft Defender for Office 365**|Yes|On the main page for Safe Links, click **Global settings**: <ul><li>**Use Safe Links in: Office 365 applications**: Verify this setting is turned on.</li><li>**Do not track when users click Safe Links**: Turn this setting off to track user clicks.</li></ul> <p> Create a Safe Links policy with these settings: <ul><li>**Select the action for unknown potentially malicious URLs in messages**: Verify this setting is **On**.</li><li>**Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Verify this setting is **On**.</li><li>**Apply real-time URL scanning for suspicious links and links that point to files**: Check this box.</li><li>**Wait for URL scanning to complete before delivering the message**: Check this box.</li><li>**Apply Safe Links to email messages sent within the organization**: Check this box</li><li>**Do not allow users to click through to original URL**: Check this box.</li><li>**Applied To**: **The recipient domain is** \> select your domain.</li></ul> <p> More information: [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |**Anti-Spam (Mail filtering)**|Yes| What to watch for: Too much spam — Choose the Custom settings and edit the Default spam filter policy. More information: [Microsoft 365 Email Anti-Spam Protection](anti-spam-protection.md).|
@@ -60,6 +62,8 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 ## View dashboards and reports in the Security & Compliance Center
 
 Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see [Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md).
+
+<br>
 
 ****
 
@@ -76,6 +80,8 @@ Visit these reports and dashboards to learn more about the health of your enviro
 
 Many of the controls for security and protection in the Exchange admin center are also included in the security center. You do not need to configure these in both places. Here are a couple of additional settings that are recommended.
 
+<br>
+
 ****
 
 |Area|Includes a default policy|Recommendation|
@@ -91,6 +97,8 @@ Microsoft recommendations for configuring SharePoint team sites at increasing le
 SharePoint team sites configured at the baseline level allow sharing files with external users by using anonymous access links. This approach is recommended instead of sending files in email.
 
 To support the goals for baseline protection, configure tenant-wide sharing policies as recommended here. Sharing settings for individual sites can be more restrictive than this tenant-wide policy, but not more permissive.
+
+<br>
 
 ****
 
@@ -134,9 +142,7 @@ Because this solution recommends the EMS E5 plan, we recommend you start with Cl
 More information:
 
 - [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

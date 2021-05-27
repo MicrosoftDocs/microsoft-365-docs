@@ -38,7 +38,6 @@ Follow these instructions to add and set up your domain in Microsoft 365 so your
 - You want Microsoft 365 to manage your DNS records for you. (If you prefer, you can [manage your own DNS records](../setup/add-domain.md).)
     
 ## Add a TXT or MX record for verification
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > You will create only one or the other of these records. TXT is the preferred record type, but some DNS hosting providers don't support it, in which case you can create an MX record instead. 
@@ -89,17 +88,13 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 3. On the **Setup** page, select **Start setup**.
  
-    
   
 4. On the **Verify domain** page, select **Verify**.
-    
-    
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Change your domain's nameserver (NS) records
-<a name="BKMK_nameservers"> </a>
 
 When you get to the last step of the domains setup wizard in Microsoft 365, you have one task remaining. To set up your domain with Microsoft 365 services, like email, you change your domain's nameserver (or NS) records at your domain registrar to point to the Microsoft 365 primary and secondary nameservers. Then, because Microsoft 365 hosts your DNS, the required DNS records for your services are set up automatically for you. You can update the nameserver records yourself by following the steps your domain registrar may provide in the help content at their website. If you're not familiar with DNS, contact support at the domain registrar.
 
@@ -193,8 +188,6 @@ After the nameserver records are updated to point to Microsoft, your domain setu
   
 ## Related content
 
-[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)
-
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
-
+[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
 [Manage domains](index.yml) (link page)

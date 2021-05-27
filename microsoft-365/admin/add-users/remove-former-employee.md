@@ -56,4 +56,7 @@ You need to be a global administrator to complete the steps in this solution.
 
 ## Related content
 
-[Restore a user](restore-user.md) (article)
+[Restore a user](restore-user.md) (article)\
+[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
+[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)

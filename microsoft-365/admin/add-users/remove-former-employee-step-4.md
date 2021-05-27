@@ -158,8 +158,6 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 ## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)
-
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)
-  
+[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)\
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)\
 [OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)

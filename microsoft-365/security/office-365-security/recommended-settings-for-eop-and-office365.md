@@ -133,11 +133,11 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Do you want to notify recipients if their messages are quarantined?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
-|**Common Attachment Types Filter** <p> _EnableFileFilter_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
-|**Malware Zero-hour Auto Purge** <p> _ZapEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
-|**Notify internal senders** of the undelivered message <p> _EnableInternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
-|**Notify external senders** of the undelivered message <p> _EnableExternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
+|**Notify recipients when messages are quarantined as malware** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
+|**Enable the common attachments filter** <p> _EnableFileFilter_|Off <p> `$false`|On <p> `$true`|On <p> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
+|**Enable zero-hour auto purge for malware** <p> _ZapEnabled_|On <p> `$true`|On <p> `$true`|On <p> `$true`||
+|**Notify internal senders when messages are quarantined as malware** <p> _EnableInternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
+|**Notify external senders when messages are quarantined as malware** <p> _EnableExternalSenderNotifications_|Disabled <p> `$false`|Disabled <p> `$false`|Disabled <p> `$false`||
 |
 
 ### EOP default anti-phishing policy settings
@@ -318,6 +318,6 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 - Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Use these links for info on how to **set up** your [EOP service](set-up-your-eop-service.md), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
+- Use these links for info on how to **set up** your [EOP service](/exchange/standalone-eop/set-up-your-eop-service), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
 
 - **Security baselines for Windows** can be found here: [Where can I get the security baselines?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and [Use security baselines to configure Windows 10 devices in Intune](/intune/protect/security-baselines) for Intune-based security. Finally, a comparison between Microsoft Defender for Endpoint and Microsoft Intune security baselines is available in [Compare the Microsoft Defender for Endpoint and the Windows Intune security baselines](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
