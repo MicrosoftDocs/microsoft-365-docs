@@ -49,7 +49,7 @@ available currently.
 
 ## Microsoft Endpoint Configuration Manager migration scenarios 
 
-### We are currently using Microsoft Endpoint Configuration Manager to manage our servers,  including System Center Endpoint Protection (SCEP) and Microsoft Monitoring Agent (MMA), and want to move to the new Microsoft Defender for Endpoint instead. How do I proceed? (SCEP & MMA \> Microsoft Endpoint Manager tenant attach)
+### We are currently using Microsoft Endpoint Configuration Manager to manage our servers,  including System Center Endpoint Protection (SCEP) and Microsoft Monitoring Agent (MMA), and want to move to the new Microsoft Defender for Endpoint instead. How do we proceed? (SCEP & MMA \> Microsoft Endpoint Manager tenant attach)
 
 Preferred method: Microsoft Endpoint Manager tenant attach (connect Microsoft Endpoint
 Configuration Manager to Intune using a few clicks, then
@@ -74,7 +74,7 @@ target SCEP and Microsoft Defender Antivirus onboarding policies to your servers
 
  
 
-### We're using Microsoft Endpoint Configuration Manager to manage our servers. I have a 3rd party AV + MMA and want to move to new Microsoft Defender for Endpoint  instead. How do I proceed? (3rd party \> Microsoft Endpoint Manager tenant attach) 
+### We're using Microsoft Endpoint Configuration Manager to manage our servers. We have a 3rd party AV + MMA and want to move to new Microsoft Defender for Endpoint  instead. How do we proceed? (Third-party \> Microsoft Endpoint Manager tenant attach) 
 
 Preferred method: Tenant attach 
 
@@ -107,7 +107,7 @@ If you want to move **from tenant attach to MDE attach**, ensure the server is a
 
 -   MDE attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for MDE attach but only after Microsoft Endpoint Configuration Manager agent is removed, policies will be applied. 
 
-### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage our servers, including SCEP&MMA, and want to move to Microsoft Defender for Endpoint instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do I proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
+### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage our servers, including SCEP&MMA, and want to move to Microsoft Defender for Endpoint instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do we proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
 
 Timelines TBC. 
 
@@ -141,7 +141,7 @@ Migration steps:
 
 ## Non-Microsoft scenarios 
 
-### I have a server I would like to install to. I have another solution running a non-Microsoft antivirus solution. 
+### We have a server We would like to install to. We have another solution running a non-Microsoft antivirus solution. 
 
 Preferred method: MDE Attach 
 
@@ -157,7 +157,7 @@ Preferred method: MDE Attach
 
  
 
-### I have a clean server I would like to install to
+### We have a clean server that we would like to install to
 
 Preferred method: MDE Attach 
 
@@ -172,7 +172,7 @@ Preferred method: MDE Attach
 5.  Remove the non-Microsoft antivirus solution and remove passive mode settings.
 
  
-### I have a clean server would like to install to. I don t want to use Azure Defender. I don t want to use Microsoft Endpoint Manager. 
+### We have a clean server would like to install to. We don't want to use Azure Defender or  Microsoft Endpoint Manager. 
 
 Preferred method: Group Policy. 
 
@@ -191,7 +191,7 @@ existing Group Policy/PowerShell/WMI interfaces. For deployment, you can use the
 
 ## Azure scenarios
 
-### We're using Azure Defender, Microsoft Monitoring Agent (MMA) and SCEP are installed and I want to upgrade
+### We're using Azure Defender, Microsoft Monitoring Agent (MMA) and SCEP are installed and we want to upgrade. How do we proceed?
 
 1. Uninstall SCEP if it is present. 
 
@@ -202,7 +202,7 @@ existing Group Policy/PowerShell/WMI interfaces. For deployment, you can use the
 4. [Re-connect the machine to Azure Security Center](/azure/security-center/quickstart-onboard-machines?pivots=azure-portal).
 
 
-### We're using Group policy / PowerShell / other tools to manage SCEP today and want to move to Azure Defender. How do I proceed?
+### We're using Group policy / PowerShell / other tools to manage SCEP today and want to move to Azure Defender. How do we proceed?
 
 Follow the steps outlined in the previous section. To ensure continued application of settings, adjust your existing policy configuration mechanism to be the equivalent of Windows Server 2019. Microsoft Defender for Endpoint for downlevel server supports GPO/PowerShell/WMI interfaces as well as MDE Attach. 
 
