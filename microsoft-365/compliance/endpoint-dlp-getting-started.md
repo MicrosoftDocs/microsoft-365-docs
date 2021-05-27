@@ -99,7 +99,6 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 4. All devices must be one of these:
 - [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
-- AD joined
 - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
