@@ -17,7 +17,7 @@ description: "Learn how to apply a sensitivity label to a model in SharePoint Sy
 
 # Apply a sensitivity label to a model in Microsoft SharePoint Syntex
 
-You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to a model in Microsoft SharePoint Syntex. You can do this for document understanding models.
+You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to document understanding models in Microsoft SharePoint Syntex. This is not yet available for form processing models.
 
 Sensitivity labels let you apply encryption, sharing, and conditional access policies to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but to also to apply an *Encryption* sensitivity label to them to restrict who can access that content and how it can be used.
 
