@@ -1,7 +1,7 @@
 ---
 title: Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics
 ms.reviewer: 
-description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
+description: Understand emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Track and respond to emerging threats with threat analytics
+# Track and respond to emerging threats through threat analytics
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
