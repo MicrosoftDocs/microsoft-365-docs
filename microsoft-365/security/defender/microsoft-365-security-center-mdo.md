@@ -35,21 +35,26 @@ The image and the table below lists the changes in navigation between the Office
 > [!div class="mx-imgBorder"]
 > ![Image of what moved to where](../../media/mdo-m3d-security-center.png)
 
-|**Office 365 Security & Compliance**  |**Microsoft 365 security center** |**Microsoft 365 compliance center** |**Exchange admin center** |
-|---------|---------|---------|---------|
-| Alerts | Email & collaboration | | |
-| Classification | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
-| Data loss prevention | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
-| Records management | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
-| Information governance | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
-| Threat management | Email & collaboration | | |
-| Mail flow | | |See [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
-| Data privacy | | See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) | |
-| Search | Search | | |
-| Reports | Report | | |
-| Service assurance | Settings | | |
+<br>
 
-The improved [Microsoft 365 security center](./overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+****
+
+|Office 365 Security & Compliance|Microsoft 365 security center|Microsoft 365 compliance center|Exchange admin center|
+|---|---|---|---|
+|Alerts|Email & collaboration|||
+|Classification||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Data loss prevention||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Records management||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) ||
+|Information governance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Threat management|Email & collaboration|||
+|Mail flow|||See [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
+|Data privacy||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Search|Search|||
+|Reports|Report|||
+|Service assurance|Settings|||
+|
+
+The improved [Microsoft 365 security center](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
 If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in the Microsoft 365 security center.
 
@@ -85,7 +90,7 @@ No changes to these areas:
 Also, check the **Related Information** section at the bottom of this article.
 
 > [!IMPORTANT]
-> The Microsoft 365 Security portal (https://security.microsoft.com) combines security features in https://securitycenter.windows.com, and https://protection.office.com. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
+> The Microsoft 365 Security portal (<https://security.microsoft.com>) combines security features in <https://securitycenter.windows.com>, and <https://protection.office.com>. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
 
 > [!TIP]
 > All Exchange Online Protection (EOP) functions will be included in the Microsoft 365 security center, as EOP is a core element of Defender for Office 365.
@@ -163,15 +168,15 @@ Want to get started searching for email threats using advanced hunting? Try this
 
 The [Getting Started](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) section of the [Microsoft Defender for Office 365 article](/microsoft-365/security/office-365-security/defender-for-office-365) has logical early configuration chunks that look like this:
 
-1. Configure everything with 'anti' in the name.
-   - anti-malware
-   - anti-phishing
-   - anti-spam
-2. Set up everything with 'safe' in the name.
-   - safe links
-   - safe attachments
-3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
-4. Protect with Zero-Hour auto purge
+1. Configure everything with 'Anti' in the name.
+   - Anti-malware
+   - Anti-phishing
+   - Anti-spam
+2. Set up everything with 'Safe' in the name.
+   - Safe Links
+   - Safe Attachments
+3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams).
+4. Protect with zero-Hour auto purge.
 
 Along with a [link](../office-365-security/protect-against-threats.md) to jump right in and get configuration going on Day 1.
 
