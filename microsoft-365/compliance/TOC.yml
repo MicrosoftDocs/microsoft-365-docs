@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create notifications for exact data match activities (preview)
           href: sit-edm-notifications-activities.md  
-        - name: Create a custom sensitive information type - Security & Compliance Center
+        - name: Create a custom sensitive information type - Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
+        - name: Modify a keyword dictionary
+          href: sit-modify-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
     - name: Trainable classifiers
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Get started with trainable classifiers
           href: classifier-get-started-with.md
-        - name: How to retrain a classifier in communications compliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
@@ -244,7 +244,11 @@
           - name: Learn about the Microsoft Compliance Extension (preview)
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
-            href: dlp-alerts-dashboard-learn.md    
+            href: dlp-alerts-dashboard-learn.md
+        - name: Plan for DLP
+          items:
+          - name: Plan for data loss prevention
+            href: dlp-overview-plan-for-dlp.md
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -794,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
-        - name: Turn audit log search on or off
+        - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md

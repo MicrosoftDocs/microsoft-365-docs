@@ -19,12 +19,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: "Learn to convert a private mailbox to a shared mailbox that can be accessed by multiple users. "
+description: "Learn to convert a private mailbox to a shared mailbox that can be accessed by several people instead of by just one person. "
 ---
 
 # Convert a user mailbox to a shared mailbox
 
 When you convert a user's mailbox to a shared mailbox, all of the existing email and calendar is retained. Only now it's in a shared mailbox where several people will be able to access it instead of one person. At a later date, you can convert a shared mailbox back to a user (private) mailbox.
+
+## Before you begin
 
 **Here are some really important things that you need to know:**
 
@@ -54,7 +56,6 @@ For everything else you need to know about shared mailboxes, see [About shared m
 > [!NOTE]
 > Shared mailboxes don’t require a separate license. However, if you want to enable In-Place Archive or put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 1 with Exchange Online Archiving or Exchange Online Plan 2 license to the mailbox.
 
-
 ## Convert the mailbox of a deleted user
 
 Let's say you've deleted a user account and now you want to convert their old mailbox to a share mailbox. Here's what you need to do:
@@ -72,7 +73,6 @@ Let's say you've deleted a user account and now you want to convert their old ma
 6. After that's done, you can remove the license from the user's mailbox. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor.
     
 7. Add members to the shared mailbox.
-
 
 ## Convert a shared mailbox back to a user's (private) mailbox
 
@@ -97,14 +97,10 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 > [!NOTE]
 > If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management Shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
-
-[Create a shared mailbox](create-a-shared-mailbox.md)
-
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
-
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md)
-
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[About shared mailboxes](about-shared-mailboxes.md) (article)\
+[Create a shared mailbox](create-a-shared-mailbox.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
