@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -149,7 +149,7 @@ Set-MpPreference -PUAProtection Disabled
 
 Setting the value for this cmdlet to `Disabled` turns off the feature if it has been enabled.
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index).
 
 ## View PUA events using PowerShell
 

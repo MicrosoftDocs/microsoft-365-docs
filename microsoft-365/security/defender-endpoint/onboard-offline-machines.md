@@ -69,7 +69,7 @@ For more information about onboarding methods, see the following articles:
       - Configure Azure Log Analytics IP as a proxy
       - Azure Log Analytics Workspace Key & ID
 
-    - Azure Security Center (ASC)
+    - Azure Defender
       - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Threat Detection \> Allow Defender for Endpoint to access my data](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

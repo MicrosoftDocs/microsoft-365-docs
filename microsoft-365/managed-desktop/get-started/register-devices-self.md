@@ -20,6 +20,8 @@ Microsoft Managed Desktop can work with brand-new devices or you can reuse devic
 > [!NOTE]
 > Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
 
+
+
 ## Prepare to register brand-new devices
 
 

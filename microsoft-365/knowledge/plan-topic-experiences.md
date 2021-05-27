@@ -27,6 +27,8 @@ In this article we'll examine these planning decisions:
 
 Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
+To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
 ## Requirements
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
@@ -65,6 +67,9 @@ All processing and storage of content is done in the central location.
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
+
+> [!Note] 
+> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
 
 *Manage topics*
 

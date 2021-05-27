@@ -1,5 +1,5 @@
 ---
-title: "Get started with core eDiscovery cases in Microsoft 365"
+title: "Get started with Core eDiscovery cases in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to get started using core eDiscovery in Microsoft 365. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export data that's relevant to your investigation."
+description: "Describes how to get started using Core eDiscovery in Microsoft 365. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export content that's relevant to your investigation."
 ---
 
-# Get started with Core eDiscovery
+# Get started with Core eDiscovery in Microsoft 365
 
 Core eDiscovery in Microsoft 365 provides a basic eDiscovery tool that organizations can use to search and export content in Microsoft 365 and Office 365. You can also use Core eDiscovery to place an eDiscovery hold on content locations, such as Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft Teams. Nothing is needed to deploy Core eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start using Core eDiscovery to search, export, and preserve content.
 
@@ -75,9 +75,9 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 There are two subgroups in the eDiscovery Manager role group. The difference between these subgroups is based on scope.
 
-- **eDiscovery Manager:** Can view and manage the Core eDiscovery cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the Core eDiscovery page in the compliance center. In general, most people in your organization can be added to the eDiscovery Manager subgroup.
+- **eDiscovery Manager**: Can view and manage the Core eDiscovery cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the Core eDiscovery page in the compliance center. In general, most people in your organization can be added to the eDiscovery Manager subgroup.
 
-- **eDiscovery Administrator:** Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
+- **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
 
   - View all cases that are listed on the Core eDiscovery page.
   
@@ -99,27 +99,27 @@ The next step is to create a case and start using Core eDiscovery. Complete the 
 
 3. On the **Core eDiscovery** page, click **Create a case**.
 
-4. On the **New case** flyout page, give the case a name (required), and then type an optional case number and description. The case name must be unique in your organization.
+4. On the **New case** flyout page, give the case a name (required) and then type an optional description. The case name must be unique in your organization.
 
 5. Click **Save** to create the case.
 
-   The new case is created and displayed on the Core eDiscovery page. You may have to click **Refresh** to display the new case. 
+   The new case is created and displayed on the Core eDiscovery page. You may have to click **Refresh** to display the new case.
 
 ## Step 4 (optional): Add members to a Core eDiscovery case
 
-If you create a case in Step 3 and you're the only person who will use the case, then you don't have to perform this step. You can start using the case to create eDiscovery holds, search for content, or export search results. Perform this step if you want to give other users (or roles group) access to the case.
+If you create a case in Step 3 and you're the only person who will use the case, then you don't have to perform this step. You can start using the case to create eDiscovery holds, search for content, and export search results. Perform this step if you want to give other users (or roles group) access to the case.
 
 1. On the **Core eDiscovery** page in the Microsoft 365 compliance center, click the name of the case that you want to add members to.
 
-2. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case. 
+2. On the case home page, select the **Settings** tab, and then select **Access & permissions**.
 
-    You can also choose to add role group as members of a case. Under **Manage role groups**, click **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
+3. On the **Access & permissions** flyout page, under **Members**, click **Add** to add members to the case.
 
-3. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people (or role groups) that you want to add. If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list.
+    You can also choose to add role groups as members of a case. Under **Role groups**, click **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
+
+4. In the list of people or role groups that can be added as members of the case, click to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can added as members, use the **Search** box to search for a specific person or role group in the list.
   
-4. After you select the people or role groups to add as members of the case, click **Add**.
-
-5. Click **Save** to save the new list of case members.
+5. After you select the people or role groups to add as members of the case, click **Save** to save the new members or role groups.
 
 ## Explore the Core eDiscovery workflow
 
@@ -127,7 +127,7 @@ To get you started using core eDiscovery, here's a simple workflow of creating e
 
 ![Core eDiscovery workflow](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**. The first step after creating a case is placing a hold (also called an *eDiscovery hold*) on the content locations of the people of interest in your investigation. Content locations include Exchange mailboxes, SharePoint sites, OneDrive accounts, as well as the mailboxes and sites associated with Microsoft Teams and Office 365 Groups. While this step is optional, creating an eDiscovery hold preserves content that may be relevant to the case during the investigation. When you create an eDiscovery hold you can preserve all content in specific content locations or you can create a query-based hold to preserve only the content that matches a hold query. In addition to preserving content, another good reason to create eDiscovery holds is to quickly search the content locations on hold (instead of having to select each location to search) when you create and run searches in the next step. After you complete your investigation, you can release any hold that you created.
+1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**. The first step after creating a case is placing a hold (also called an *eDiscovery hold*) on the content locations of the people of interest in your investigation. Content locations include Exchange mailboxes, SharePoint sites, OneDrive accounts, and the mailboxes and sites associated with Microsoft Teams and Office 365 Groups. While this step is optional, creating an eDiscovery hold preserves content that may be relevant to the case during the investigation. When you create an eDiscovery hold you can preserve all content in specific content locations or you can create a query-based hold to preserve only the content that matches a hold query. In addition to preserving content, another good reason to create eDiscovery holds is to quickly search the content locations on hold (instead of having to select each location to search) when you create and run searches in the next step. After you complete your investigation, you can release any hold that you created.
 
 2. **[Search for content](search-for-content-in-core-ediscovery.md)**. After you create eDiscovery holds, use the built-in search tool to search the content locations on hold. You can also search other content locations for data that may be relevant to the case. You can create and run different searches that are associated with the case. You use keywords, properties, and conditions to [build search queries](keyword-queries-and-search-conditions.md) that return search results with the data that's most likely relevant to the case. You can also:
 

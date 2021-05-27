@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -61,7 +61,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint for Mac.
+1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
 
       > [!NOTE]
       > This feature is available in version 100.90.70 or newer.
@@ -89,7 +89,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
       To collect current statistics, run:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
@@ -99,7 +99,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 1. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     The output of this command should be similar to the following:

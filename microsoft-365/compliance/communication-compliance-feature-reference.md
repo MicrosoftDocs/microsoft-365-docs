@@ -138,7 +138,7 @@ By default, the **Direction is** condition is displayed and can't be removed. Co
 
 ### Sensitive information types
 
-You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [data loss prevention (DLP)](data-loss-prevention-policies.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
+You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As part of [Learn about data loss prevention](dlp-learn-about-dlp.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
 
 - Financial
 - Medical and health
@@ -182,9 +182,9 @@ The built-in trainable and global classifiers don't provide an exhaustive list o
 
 For information about trainable classifiers in Microsoft 365, see [Getting started with trainable classifiers](classifier-get-started-with.md).
 
-### Optical character recognition (OCR) (preview)
+### Optical character recognition (OCR)
 
-Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated Azure Cognitive Services and optical scanning support for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
+Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 
 You can enable optical character recognition (OCR) in new policies from templates, custom policies, or update existing policies to expand support for processing embedded images and attachments. When enabled in a policy created from a policy template, automatic scanning is supported for embedded or attached images in email and Microsoft Teams chat messages. For custom policies, one or more conditional settings associated with keywords, built-in classifiers, or sensitive info types must be configured in the policy to enable the selection of OCR scanning.
 
@@ -306,6 +306,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
+| **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). The following languages are supported: Chinese (Simplified - ZH), English (EN), French (FR), German (DE), Italian (IT), Japanese (JP), Portuguese (PT), and Spanish (ES). For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the EmailDetectedLanguage field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 | **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Offensive Language*, *Targeted Harassment*, *Profanity*, *Threat*, and more.
 
@@ -472,12 +473,23 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 
     Use the *Export* option to create a .csv file containing the report details.
 
+- **Sensitive information type per location** detailed report (preview): Review and export information about the detection of sensitive information types and the associated sources in communication compliance policies. Includes the overall total and the specific breakdown of sensitive information type instances in the sources configured in your organization. Examples are:
+
+    - **Email**: Sensitive information types detected in Exchange email messages.
+    - **Teams**: Sensitive information types detected in Microsoft Teams channels and chat messages.
+    - **Skype for Business**: Sensitive information types detected in Skype for business communications.
+    - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
+    - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
+    - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report will not affect any values.
+
+    Use the *Export* option to create a .csv file containing the report details. The values for each third-party source are displayed in separate columns in the .csv file.
+
 ## Audit
 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
->Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
 To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 

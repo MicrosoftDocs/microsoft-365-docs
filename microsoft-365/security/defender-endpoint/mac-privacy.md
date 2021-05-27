@@ -1,7 +1,7 @@
 ---
-title: Privacy for Microsoft Defender for Endpoint for Mac
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint for Mac.
-keywords: microsoft, defender, atp, mac, privacy, diagnostic
+title: Privacy for Microsoft Defender for Endpoint on Mac
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Mac.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -128,6 +128,7 @@ The following fields are collected:
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
+| cloud_service.automatic_definition_update_enabled   | Whether automatic definition update is turned on or not. |
 | edr.early_preview                                   | Whether the device should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
 | edr.tags                                            | User-defined tags. |
@@ -214,6 +215,7 @@ The following fields are collected:
 | antivirus_engine.scan_cache_maximum                | Size of the product cache. |
 | antivirus_engine.maximum_scan_threads              | Maximum number of threads used for scanning. |
 | antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can be detected again. |
+| antivirus_engine.threat_type_settings              | Configuration for how different threat types are handled by the product. |
 | filesystem_scanner.full_scan_directory             | Full scan directory. |
 | filesystem_scanner.quick_scan_directories          | List of directories used in quick scan. |
 | edr.latency_mode                                   | Latency mode used by the detection and response component. |

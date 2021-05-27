@@ -1,7 +1,7 @@
 ---
 title: Configure Microsoft 365 Defender pillars for the trial lab or pilot environment
 description: Configure Microsoft 365 Defender pillars, such as Microsoft Defender for Office 365 , Microsoft Defender for Identity, Microsoft Cloud App Security, and Microsoft Defender for Endpoint, for your trial lab or pilot environment.
-keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection pilot project, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars
+keywords: configure Microsoft 365 Defender trial, Microsoft 365 Defender trial configuration, configure Microsoft 365 Defender pilot project, configure Microsoft 365 Defender  pillars, Microsoft 365 Defender pillars
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -157,9 +157,6 @@ There's a PowerShell Module called the *Office 365 Advanced Threat Protection Re
 11. Under the [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Microsoft Defender for Endpoint **, then turn on the toggle. Click **Save**. 
 
     ![Image of_the Microsoft Defender for Identity settings page where you should turn the Microsoft Defender for Endpoint  toggle on](../../media/mtp-eval-52.png)
-
-> [!NOTE]
-> Windows Defender ATP has been rebranded as Microsoft Defender for Endpoint. Rebranding changes across all of our portals are being rolled out the for consistency.
 
 
 ## Configure Microsoft Cloud App Security

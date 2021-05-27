@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft 365 Defender
 description: Lists the new features and functionality in Microsoft 365 Defender
-keywords: what's new in microsoft threat protection, ga, generally available, capabilities, available, new
+keywords: what's new in Microsoft 365 Defender, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,6 +33,12 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## April 2021
+- Improved Microsoft 365 security center <br> The improved [Microsoft 365 security center](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. This is the new home to manage your security controls. [Learn what's new](./overview-security-center.md).
+
+- [Microsoft 365 Defender threat analytics report](threat-analytics.md)<br>
+ Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
 
 ## March 2021
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in `AppFileEvents`.
