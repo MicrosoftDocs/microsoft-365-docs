@@ -69,7 +69,7 @@ Also, the VPN used is a local VPN and unlike a traditional VPN, network traffic 
 
 ## Data usage
 
-Microsoft Defender for Endpoint uses a local/loopback VPN to check web traffic for any malicious websites or connections. Due to this reason Apple can account data usage to Microsoft Defender for Endpoint inaccurately. The actual data usage by Microsoft Defender for Endpoint is not significant and lesser than what is shown on the Data Usage Settings on the device.
+Microsoft Defender for Endpoint uses a local/loopback VPN to check web traffic for any malicious websites or connections. Due to this reason, Microsoft Defender for Endpoint data usage can be inaccurately accounted for. The actual data usage by Microsoft Defender for Endpoint is not significant and lesser than what is shown on the Data Usage Settings on the device.
 
 ## Report unsafe site
 
