@@ -90,7 +90,7 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
     - Less than 10k users: Two waves
     - 10k to 30k users: Three waves 
     - 30k+ to 100k users: Five waves
-    - More than 100k users: Five waves and contact your Microsoft account team
+    - More than 100k users: Five waves and contact your Microsoft via the steps listed in Launch portal with over 100k users section. 
 
 5.	Then, determine the **Type of redirect** needed:
 
@@ -113,6 +113,27 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
+
+### Launch portal with over 100k users
+
+If you are planning to migrate over 100TB, please submit a support request following the steps listed below. Make sure to include all requested information.
+
+Follow these steps:
+1. Navigate to https://admin.microsoft.com
+2. Ensure you are using the new admin center preview.
+3. On the left nav pane, select **Support**, and then select **New Service Request**. 
+
+     ![New service request](media/new-service-request.png)
+
+
+  This will activate the **Need Help?** pane on the right-hand side of your screen.
+
+4.  In the **Briefly describe your issue** area, enter "Launch SharePoint Portal with 100k users".</br>
+5. Select **Contact Support**.
+6. Under **Description**, enter "Launch SharePoint Portal with 100k users". 
+7. Fill out the remaining info, and select **Contact me**.
+8. After the ticket has been created, ensure you provide the support agent with the following information:
+- Launch Portal URL's 
 
 ## Make changes to a scheduled portal launch
 
