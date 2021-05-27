@@ -105,7 +105,7 @@ After the engineering change is made and the attribute is synchronized to OneDri
   
 ## Step 3: Create a role group for each agency
 
-The next step is to create the role groups in the Security & Compliance Center that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+The next step is to create the role groups in the Security & Compliance Center that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
 To create the role groups, go to the **Permissions** page in the Security & Compliance Center and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
   
@@ -135,7 +135,7 @@ Here's a description of each parameter in the command:
   
 - `FilterName`: Specifies the name of the filter. Use a name that describes or identifies the agency that the filter is used in.
 
-- `Users`: Specifies the users or groups who get this filter applied to the Content Search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 3) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas.
+- `Users`: Specifies the users or groups who get this filter applied to the search actions they perform. For compliance boundaries, this parameter specifies the role groups (that you created in Step 3) in the agency that you're creating the filter for. Note this is a multi-value parameter so you can include one or more role groups, separated by commas.
 
 - `Filters`: Specifies the search criteria for the filter. For the compliance boundaries, you define the following filters. Each one applies to a content location. 
 
@@ -148,9 +148,9 @@ Here's a description of each parameter in the command:
      > [!NOTE]
      > The syntax for the `Filters` parameter includes a *filters list*. A filters list is a filter that includes a mailbox filter and a site filter separated by a comma. In the previous example, notice that a comma separates **Mailbox_ComplianceAttribute** and **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. When this filter is processed during the running of a content search, two search permissions filters are created from the filters list: one mailbox filter and one site filter. An alternative to using a filters list would be to create two separate search permissions filters for each agency: one search permissions filter for the mailbox attribute and one filter for the site attributes. In either case, the results will be the same. Using a filters list or creating separate search permissions filters is a matter of preference.
 
-- `Action`: Specifies the type of Compliance Search action that the filter is applied to. For example,  `-Action Search` would only apply the filter when members of the role group defined in the `Users` parameter run a content search. In this case, the filter wouldn't be applied when exporting search results. For compliance boundaries, use  `-Action All` so the filter applies to all search actions. 
+- `Action`: Specifies the type of search action the filter is applied to. For example,  `-Action Search` would only apply the filter when members of the role group defined in the `Users` parameter run a search. In this case, the filter wouldn't be applied when exporting search results. For compliance boundaries, use  `-Action All` so the filter applies to all search actions. 
 
-    For a list of the Content Search actions, see the "New-ComplianceSecurityFilter" section in [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+    For a list of the search actions, see the "New-ComplianceSecurityFilter" section in [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
 Here are examples of the two search permissions filters that would be created to support the Contoso compliance boundaries scenario. Both of these examples include a comma-separated filters list, in which the mailbox and site filters are included in the same search permissions filter and are separated by a comma.
   
@@ -180,13 +180,11 @@ To create a case and assign members:
 
 2. In the list of cases, click the name of the case you created.
 
-3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
+3. Add role groups as members to the case. For instructions, see the one of the following articles:
 
-    ![Add a role group as a member of an eDiscovery case](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
-  
-4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
+   - [Add members to a Core eDiscovery case](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
 
-5. Click **Save** on the **Manage this case** flyout to save the change.
+   - [Add members to an Advanced eDiscovery case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 > [!NOTE]
 > When adding a role group to a case, you can only add the role groups that you are a member of.
@@ -248,7 +246,7 @@ Keep the following things in mind when searching and exporting content in multi-
   
 - The **Region** parameter doesn't control searches of Exchange mailboxes. All datacenters will be searched when you search mailboxes. To limit the scope of which Exchange mailboxes are searched, use the **Filters** parameter when creating or changing a search permissions filter. 
 
-- If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, you need to create a different user account for that eDiscovery manager to use in the search permissions filter to specify the region where the SharePoint sites or OneDrive accounts are located. For more information about setting this up, see the "Searching for content in a SharePoint Multi-Geo environment" section in [Content Search](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, you need to create a different user account for that eDiscovery manager to use in the search permissions filter to specify the region where the SharePoint sites or OneDrive accounts are located. For more information about setting this up, see the "Searching for content in a SharePoint Multi-Geo environment" section in [Content Search](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
 
 - When searching for content in SharePoint and OneDrive, the **Region** parameter directs searches to either the primary or satellite location where the eDiscovery manager will conduct eDiscovery investigations. If an eDiscovery manager searches SharePoint and OneDrive sites outside of the region that's specified in the search permissions filter, no search results are returned.
 

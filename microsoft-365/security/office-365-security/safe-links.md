@@ -48,6 +48,9 @@ Safe Links protection is available in the following locations:
 - **Email messages**: Safe Links protection for links in email messages is controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in email messages, you need to create one or more Safe Links policies**. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
+  
+  > [!NOTE]
+  > Safe Links does not work on mail-enabled public folders.
 
 - **Microsoft Teams** (currently in TAP Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
 
@@ -131,7 +134,7 @@ The settings in Safe Links policies that apply to email messages are described i
 - **Priority**: If you create multiple policies, you can specify the order that they're applied. No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
   For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
-
+  
 ### How Safe Links works in email messages
 
 At a high level, here's how Safe Links protection works on URLs in email messages:

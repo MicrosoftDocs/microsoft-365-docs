@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -27,6 +27,11 @@
 #### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
+### [Switch from non-Microsoft endpoint protection to Defender for Endpoint]()
+#### [Overview of migration](switch-to-microsoft-defender-migration.md)
+#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
+#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
+#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
 ### [Switch from McAfee to Microsoft Defender for Endpoint]()
 #### [Overview of migration](mcafee-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) 
@@ -37,11 +42,6 @@
 #### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
-### [Switch from your non-Microsoft endpoint security solution to Microsoft Defender for Endpoint]()
-#### [Overview of migration](switch-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
 ### [Manage Microsoft Defender for Endpoint after migration]()
 #### [Overview of managing Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 #### [Intune (recommended)](manage-atp-post-migration-intune.md)
@@ -120,6 +120,10 @@
  
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
+
+##### [Troubleshoot]()
+###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+
 ##### [Privacy](ios-privacy.md)
  
  
@@ -130,7 +134,8 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
- 
+###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Update](linux-updates.md)
  
 ##### [Configure]()
@@ -140,7 +145,7 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -211,7 +216,7 @@
 #### [Overview](next-gen-threat-and-vuln-mgt.md)
 #### [Get started]()
 ##### [Permissions & prerequisites](tvm-prerequisites.md)
-##### [Supported operating systems and platforms](tvm-supported-os.md)
+##### [Supported operating systems platforms and capabilities](tvm-supported-os.md)
 ##### [Assign device value](tvm-assign-device-value.md)
 #### [Assess your security posture]()
 ##### [Dashboard insights](tvm-dashboard-insights.md)
@@ -344,6 +349,8 @@
 #### [Device Control]()
 ##### [Device Control reports](device-control-report.md)
 ##### [Control USB devices](control-usb-devices-using-intune.md)
+##### [Removable Storage Protection](device-control-removable-storage-protection.md)
+##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -475,6 +482,12 @@
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
+###### [Assessments of vulnerabilities and secure configurations]()
+####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
+####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
+####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
 ####### [List Investigation](get-investigation-collection.md)
@@ -535,7 +548,7 @@
 ###### [Recommendation]()
 ####### [Recommendation methods and properties](recommendation.md)
 ####### [List all recommendations](get-all-recommendations.md)
-####### [Get recommendation by Id](get-recommendation-by-id.md)
+####### [Get recommendation by ID](get-recommendation-by-id.md)
 ####### [Get recommendation by software](get-recommendation-software.md)
 ####### [List machines by recommendation](get-recommendation-machines.md)
 ####### [List vulnerabilities by recommendation](get-recommendation-vulnerabilities.md)
@@ -555,7 +568,7 @@
 ###### [Software]()
 ####### [Software methods and properties](software.md)
 ####### [List software](get-software.md)
-####### [Get software by Id](get-software-by-id.md)
+####### [Get software by ID](get-software-by-id.md)
 ####### [List software version distribution](get-software-ver-distribution.md)
 ####### [List machines by software](get-machines-by-software.md)
 ####### [List vulnerabilities by software](get-vuln-by-software.md)
@@ -570,7 +583,7 @@
 ####### [Vulnerability methods and properties](vulnerability.md)
 ####### [List vulnerabilities](get-all-vulnerabilities.md)
 ####### [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
-####### [Get vulnerability by Id](get-vulnerability-by-id.md)
+####### [Get vulnerability by ID](get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()

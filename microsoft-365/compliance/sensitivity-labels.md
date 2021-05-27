@@ -39,12 +39,14 @@ Sensitivity labels from the Microsoft Information Protection solution let you cl
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
-![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
+![Sensitivity label on the Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
 > [!NOTE]
-> For US Government tenants, sensitivity labels are [now supported for GCC and GCC High environments](/officeupdates/current-channel#version-2101-january-26) and currently rolling out for DoD environments.
+> For US Government tenants, sensitivity labels are now supported for all platforms:
+> - For GCC and GCC High environments: Release notes for [Office for Windows](/officeupdates/current-channel#version-2101-january-26) and [Office for Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
+> - For DoD environments: Release notes for [Office for Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > If you use the Azure Information Protection unified labeling client and scanner for these environments, see the [Azure Information Protection Premium Government Service Description](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -202,7 +204,7 @@ When you configure a label policy, you can:
 
 After you create a label policy that assigns new sensitivity labels to users and groups, users start to see those labels in their Office apps. Allow up to 24 hours for the latest changes to replicate throughout your organization.
 
-There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels that you can create. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
+There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption that specifies the users and permissions, there is a maximum of 500 labels supported with this configuration. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
 ### Label policy priority (order matters)
 
@@ -214,13 +216,14 @@ A label policy consists of:
 - The users and groups that will be assigned the policy with labels.
 - The scope of the policy and policy settings for that scope (such as default label for files and emails).
 
-You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there is a conflict in settings from multiple policies, the setting from the policy with the highest priority is applied. In other words, the highest priority wins for each setting.
+You can include a user in multiple label policies, and the user will get all the sensitivity labels and settings from those policies. If there is a conflict in settings from multiple policies, the settings from the policy with the highest priority (lowest position) is applied. In other words, the highest priority wins for each setting.
 
-If you're not seeing the label or label policy setting behavior that you expect for a user or group, check the order of the sensitivity label policies. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
+If you're not seeing the label or label policy setting behavior that you expect for a user or group, check the order of the sensitivity label policies. You might need to move the policy down. To reorder the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
 
 ![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
 
-If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention labels](retention.md#the-principles-of-retention-or-what-takes-precedence).
+> [!NOTE]
+> Remember: When there is a conflict of settings for a user who has multiple policies assigned, the setting from the policy with the highest priority (lowest position) is applied.
 
 ## Sensitivity labels and Azure Information Protection
 
@@ -245,7 +248,7 @@ If you are new to Azure Information Protection, or if you are an existing Azure 
 > [!NOTE]
 > Label management for Azure Information Protection labels in the Azure portal was deprecated **March 31, 2021**. Learn more from the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-If your tenant isn't yet on the [unified labeling platform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), you must first activate unified labeling before you can use sensitivity labels. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels). 
+If your tenant isn't yet on the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), you must first activate unified labeling before you can use sensitivity labels. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels). 
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 

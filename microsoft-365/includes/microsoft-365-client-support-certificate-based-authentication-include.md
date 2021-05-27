@@ -33,7 +33,7 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|✔|✔|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|✔|Planned|N/A|
+|TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|Planned|N/A|N/A|✔|
