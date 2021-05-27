@@ -15,7 +15,6 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.topic: article
 ---
 
 # Manage updates for mobile devices and virtual machines (VMs)
