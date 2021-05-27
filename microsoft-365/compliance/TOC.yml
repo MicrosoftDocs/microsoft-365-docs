@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create notifications for exact data match activities (preview)
           href: sit-edm-notifications-activities.md  
-        - name: Create a custom sensitive information type - Security & Compliance Center
+        - name: Create a custom sensitive information type - Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
+        - name: Modify a keyword dictionary
+          href: sit-modify-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
     - name: Trainable classifiers
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Get started with trainable classifiers
           href: classifier-get-started-with.md
-        - name: How to retrain a classifier in communications compliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
