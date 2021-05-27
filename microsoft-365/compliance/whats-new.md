@@ -49,7 +49,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 ### Data Loss Prevention
 
 - New topic for [Data loss prevention policy tips reference](/microsoft-365/compliance/dlp-policy-tips-reference).
-- New topic for [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide).
+- New topic for [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
 - New topic for [Get started with the data loss prevention alert dashboard](/microsoft-365/compliance/dlp-alerts-dashboard-get-started).
 
 ### Retention policies and retention label policies
