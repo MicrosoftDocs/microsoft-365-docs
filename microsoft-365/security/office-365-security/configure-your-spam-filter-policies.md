@@ -108,10 +108,10 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
    - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-     By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk email** filtering verdict:
+     By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk** filtering verdict:
 
-     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk email** filtering verdict is taken on the message.
-     - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk email** filtering verdict. In effect, the BCL threshold and **Bulk email** filtering verdict action are irrelevant.
+     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk** filtering verdict is taken on the message.
+     - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk** filtering verdict. In effect, the BCL threshold and **Bulk** filtering verdict action are irrelevant.
 
    - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Contains the Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated, and their functionality is being incorporated into other parts of the filtering stack. We recommend that you leave all of these ASF settings turned off in your anti-spam policies.
 
@@ -130,8 +130,8 @@ Creating a custom anti-spam policy in the security center creates the spam filte
    - **Message actions**: Select or review the action to take on messages based on the following spam filtering verdicts:
      - **Spam**
      - **High confidence spam**
-     - **Phishing email**
-     - **High confidence phishing email**
+     - **Phishing**
+     - **High confidence phishing**
      - **Bulk**
 
      The available actions for spam filtering verdicts are described in the following table.
@@ -143,7 +143,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
      ****
 
-     |Action|Spam|High<br>confidence<br>spam|Phishing<br>email|High<br>confidence<br>phishing<br>email|Bulk<br>email|
+     |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|
      |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)<sup>\*</sup>|
