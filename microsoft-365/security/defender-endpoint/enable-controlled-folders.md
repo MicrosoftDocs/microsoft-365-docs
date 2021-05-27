@@ -45,7 +45,7 @@ Group Policy settings that disable local administrator list merging will overrid
 * Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
 * System Center Endpoint Protection **Allow users to add exclusions and overrides**
 
-For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender AV policy settings](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged).
+For more information about disabling local list merging, see [Prevent or allow users to locally modify Microsoft Defender AV policy settings](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## Windows Security app
 
@@ -81,7 +81,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 ## Mobile Device Management (MDM)
 
-Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) configuration service provider (CSP) to allow apps to make changes to protected folders.
+Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to allow apps to make changes to protected folders.
 
 ## Microsoft Endpoint Configuration Manager
 

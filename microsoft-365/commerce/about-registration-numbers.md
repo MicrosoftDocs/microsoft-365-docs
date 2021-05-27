@@ -64,8 +64,9 @@ The following screenshot shows the notification displayed on the billing account
 
 The following table contains samples of the registration numbers collected for each country.  In cases where multiple IDs are listed, only one is required.
 
+
 | Country or region | Details |
-|:--|:--|
+|--|--|
 | **Armenia** | INN – Tax identification number<br>VAT number – Also known as a VAT Registration Number. This is the unique number that identifies a taxable person (business) or non-taxable legal entity that is registered for VAT.<br>Public service number |
 | **Azerbaijan**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – Tax Identification number<br>INN – Tax identification number | **Belarus**  | UNP – This is a nine-digit number (numeric for organizations, alphanumeric for individuals) that contains a region identifier, a serial per region, and a check digit. |
 |**Brazil** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, or National Registry of Legal Entities). This is an identification number issued to Brazilian companies by the Department of Federal Revenue of Brazil  |
