@@ -139,9 +139,9 @@ Migration steps:
 6.  Remove the non-Microsoft antivirus solution and remove passive mode settings.
 
 
-### Greenfield or third-party only 
+## Non-Microsoft scenario 
 
-1.  I have a server I would like to install to. I have another solution running a non-Microsoft antivirus solution. 
+### I have a server I would like to install to. I have another solution running a non-Microsoft antivirus solution. 
 
 Preferred method: MDE Attach 
 
@@ -188,3 +188,22 @@ Preferred method: Group Policy.
 
 If you want to use a different/3rd party management solution, we will support
 existing Group Policy/PowerShell/WMI interfaces. For deployment, you can use the same MSI and the onboarding instructions.
+
+## Azure scenarios
+
+### We're using Azure Defender, Microsoft Monitoring Agent (MMA) and SCEP are installed and I want to upgrade
+
+1. Uninstall SCEP if it is present. 
+
+2. Remove the workspace configuration from the Microsoft Monitoring Agent. 
+
+3. Proceed with instructions from the Installation and onboarding steps. 
+
+4. [Re-connect the machine to Azure Security Center](/azure/security-center/quickstart-onboard-machines?pivots=azure-portal).
+
+
+### We're using Group policy / PowerShell / other tools to manage SCEP today and want to move to Azure Defender. How do I proceed?
+
+Follow the steps outlined in the previous section. To ensure continued application of settings, adjust your existing policy configuration mechanism to be the equivalent of Windows Server 2019. Microsoft Defender for Endpoint for downlevel server supports GPO/PowerShell/WMI interfaces as well as MDE Attach. 
+
+
