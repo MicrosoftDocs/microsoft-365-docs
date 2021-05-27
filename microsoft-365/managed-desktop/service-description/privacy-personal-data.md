@@ -87,7 +87,7 @@ For more information about the regions Azure uses for data storage, see [Azure A
 
 ### Microsoft Intune
 
-Intune data can be stored in a few different regions, such as Europe North (Ireland) and Europe West (Netherlands). Your IT administrator creates a tenant account and chooses the country where data will be stored when they initially enroll in Intune services. For a list of datacenter locations used by Intune, see [Microsoft Intune—Where is my customer data?](http://intunedatacentermap.azurewebsites.net/). For more information about data storage and use by Intune, see [Data collection in Intune](/intune/privacy-data-collect).
+Intune data can be stored in a few different regions, such as Europe North (Ireland) and Europe West (Netherlands). Your IT administrator creates a tenant account and chooses the country where data will be stored when they initially enroll in Intune services. For a list of datacenter locations used by Intune, see [Where your Microsoft 365 customer data is stored?](https://docs.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide/). For more information about data storage and use by Intune, see [Data collection in Intune](/intune/privacy-data-collect).
 
 ### Microsoft Defender for Endpoint
 
