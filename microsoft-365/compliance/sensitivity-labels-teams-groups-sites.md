@@ -161,11 +161,9 @@ Known limitations for this preview:
 
 - This feature is still rolling out to some tenants. If the Conditional Access policy with your selected authentication context is not taking effect when a user accesses the site, you can confirm that your configuration is correct and prerequisites are met by removing the label from the site, and configuring the site for the authentication context by using PowerShell, instead. If this method works, wait a few more days before you try applying the sensitivity label again.
     
-    To test the authentication context by using PowerShell:
+    To test the authentication context by using PowerShell, use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online):
     
-    Use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) with the *ConditionalAccessPolicy* type of "AuthenticationContext", and the *AuthenticationContextName* parameter with the name of the authentication context:
-    
-    ````PowerShell
+    ```PowerShell
     Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
     ```
 
