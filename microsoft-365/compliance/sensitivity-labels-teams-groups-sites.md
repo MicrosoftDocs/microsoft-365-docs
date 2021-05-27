@@ -159,7 +159,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
 
 Known limitations for this preview:
 
-- This feature is still rolling out to some tenants. If the Conditional Access policy with your selected authentication context is not taking effect when a user accesses the site, you can confirm that your configuration is correct and prerequisites are met by removing the label from the site, and configuring the site for the authentication context by using PowerShell, instead. If this method works, wait a few more days before you try applying the sensitivity label again.
+- This feature is still rolling out to some tenants. If the Conditional Access policy with your selected authentication context is not taking effect when a user accesses the site, you can confirm that your configuration is correct and all prerequisites are met. To do this confirmation, remove the label from the site and configure the site for the authentication context by using PowerShell, instead. If this method works, wait a few more days before you try to apply the sensitivity label again.
     
     To test the authentication context by using PowerShell, use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online):
     
@@ -167,7 +167,7 @@ Known limitations for this preview:
     Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
     ```
     
-    To remove the authentication context so you can try applying the sensitivity label again:
+    To remove the authentication context so you can try to apply the sensitivity label again:
     
     ```powershell
     Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
