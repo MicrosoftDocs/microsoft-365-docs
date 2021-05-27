@@ -719,6 +719,8 @@
               href: predictive-coding-create-model.md
             - name: Train a predictive coding model
               href: predictive-coding-train-model.md
+            - name: Apply prediction filter to review set
+              href: predictive-coding-apply-prediction-filter.md
             - name: Predictive coding reference
               href: predictive-coding-reference.md
         - name: Export case content
