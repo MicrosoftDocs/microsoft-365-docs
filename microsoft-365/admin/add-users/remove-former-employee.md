@@ -30,30 +30,18 @@ description: "Follow the steps in this solution to remove a former employee from
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data, and how to allow other employees to access the data.
 
-Watch a short video about removing an employee. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-
-To prevent an employee from logging in:
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. Select the box next to the user's name, and then select **Reset password**.
-3. Enter a new password, and then select **Reset**. (Don't send it to them.)
-4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
-
-> [!NOTE]
-> You need to be a global administrator to initiate sign-out.
-
-Within an hour - or after they leave the current Microsoft 365 page they are on - they're prompted to sign in again. An access token is good for an hour, so the timeline depends on how much time is left on that token, and whether they navigate out of their current webpage.
-
-> [!IMPORTANT]
-> Although we've numbered the steps in this solution and you don't have to complete the solution using the exact order, we do recommend doing the steps this way.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
 
 ## Before you begin
 
 You need to be a global administrator to complete the steps in this solution.
+
+## Solution: Remove a former employee
+
+> [!IMPORTANT]
+> Although we've numbered the steps in this solution and you don't have to complete the solution using the exact order, we do recommend doing the steps this way.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Steps for removing a former employee from your organization":::
 
 |||
 |:-----|:-----|
@@ -66,6 +54,9 @@ You need to be a global administrator to complete the steps in this solution.
 |[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-7.md) <br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
 |[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md) <br/> |This removes the account from your admin center. Keeps things clean. <br/> |
 
-## Related articles
+## Related content
 
-[Restore a user](restore-user.md)
+[Restore a user](restore-user.md) (article)\
+[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
+[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)

@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -27,6 +27,11 @@
 #### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
+### [Switch from non-Microsoft endpoint protection to Defender for Endpoint]()
+#### [Overview of migration](switch-to-microsoft-defender-migration.md)
+#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
+#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
+#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
 ### [Switch from McAfee to Microsoft Defender for Endpoint]()
 #### [Overview of migration](mcafee-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](mcafee-to-microsoft-defender-prepare.md) 
@@ -37,11 +42,6 @@
 #### [Phase 1: Prepare](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
 #### [Phase 3: Onboard](symantec-to-microsoft-defender-atp-onboard.md)
-### [Switch from your non-Microsoft endpoint security solution to Microsoft Defender for Endpoint]()
-#### [Overview of migration](switch-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
 ### [Manage Microsoft Defender for Endpoint after migration]()
 #### [Overview of managing Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 #### [Intune (recommended)](manage-atp-post-migration-intune.md)
@@ -120,6 +120,10 @@
  
 ##### [Configure]()
 ###### [Configure iOS features](ios-configure-features.md)
+
+##### [Troubleshoot]()
+###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
+
 ##### [Privacy](ios-privacy.md)
  
  
@@ -130,7 +134,8 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
- 
+###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Update](linux-updates.md)
  
 ##### [Configure]()
@@ -140,7 +145,7 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -476,6 +481,12 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+
+###### [Assessments of vulnerabilities and secure configurations]()
+####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
+####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
+####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)

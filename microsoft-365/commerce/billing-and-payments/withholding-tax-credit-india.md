@@ -26,7 +26,7 @@ ms.date: 05/03/2021
 
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
 
-## For invoice pay customers who pay by check and wire
+## For invoice pay customers who pay by check or wire
 
 If you withheld tax when remitting payment to MRS and deposited the withheld tax with the Income Tax Department, you must submit a WHT request to settle the tax amount withheld in your account.
 
@@ -39,7 +39,7 @@ Submit the WHT request by opening a ticket with Microsoft support.
 
 ## For customers who pay by credit card
 
-If your payment method is a credit card and you made a full payment to MRS, and paid WHT to the Income Tax Department, you must submit a WHT request to claim the refund of the tax amount.
+If your payment method is a credit card and you made a full payment to MRS, and also paid WHT to the Income Tax Department, you must submit a WHT request to claim the refund of the tax amount.
 
 Your WHT request must include the following items:
 
@@ -63,11 +63,11 @@ The following table shows the due dates and timelines to submit digitally signed
 >
 > - Customers can only submit a request for a refund of the WHT amount after paying the invoice.
 > - The invoice amount on the Withholding Tax Credit Form must match the invoice amount identified in the TDS certificate. If the invoice amount is different between the two forms, you must specify the reason for the difference in the Withholding Tax Credit Form. This information is checked by the review team, who might ask clarifying questions, if required.
-> - TDS certificate files must be in one of the following file formats: .PDF or Image only (.JPEG, .PNG and .GIF). Additionally, file names must not contain spaces or special characters. File size cannot exceed 1 MB.
+> - TDS certificate files must be in one of the following file formats: .PDF or Image only (.JPEG, .PNG, or .GIF). Additionally, file names must not contain spaces or special characters. File size cannot exceed 1 MB.
 
 After you submit the request, it goes into the approval process where it is either approved for completion or is sent back to you for correction.
 
-If there’s a problem with your request, the review team might require corrections to the withholding amount or replacement of the TDS certificate. You must resubmit the request before it’s approved. The review team will either approve the request or ask for more changes.
+If there’s a problem with your request, the review team might require corrections to the withholding amount or replacement of the TDS certificate. You must resubmit the request before it can be approved. The review team will either approve the request or ask for more changes.
 
 ## Approved requests
 
