@@ -49,7 +49,7 @@ available currently.
 
 ## Microsoft Endpoint Configuration Manager migration scenarios 
 
-### We are currently using Microsoft Endpoint Configuration Manager to manage my servers,  including System Center Endpoint Protection (SCEP) and Microsoft Monitoring Agent (MMA), and want to move to the new Microsoft Defender Antivirus instead. How do I proceed? (SCEP & MMA \> Microsoft Endpoint Manager tenant attach)
+### We are currently using Microsoft Endpoint Configuration Manager to manage our servers,  including System Center Endpoint Protection (SCEP) and Microsoft Monitoring Agent (MMA), and want to move to the new Microsoft Defender for Endpoint instead. How do I proceed? (SCEP & MMA \> Microsoft Endpoint Manager tenant attach)
 
 Preferred method: Microsoft Endpoint Manager tenant attach (connect Microsoft Endpoint
 Configuration Manager to Intune using a few clicks, then
@@ -74,7 +74,7 @@ target SCEP and Microsoft Defender Antivirus onboarding policies to your servers
 
  
 
-### We're using Microsoft Endpoint Configuration Manager to manage my servers. I have a 3rd party AV + MMA and want to move to new Defender instead. How do I proceed? (3rd party \> Microsoft Endpoint Manager tenant attach) 
+### We're using Microsoft Endpoint Configuration Manager to manage our servers. I have a 3rd party AV + MMA and want to move to new Microsoft Defender for Endpoint  instead. How do I proceed? (3rd party \> Microsoft Endpoint Manager tenant attach) 
 
 Preferred method: Tenant attach 
 
@@ -107,7 +107,7 @@ If you want to move **from tenant attach to MDE attach**, ensure the server is a
 
 -   MDE attach will not work if the client is managed by Microsoft Endpoint Configuration Manager. Therefore, a server can be in scope for MDE attach but only after Microsoft Endpoint Configuration Manager agent is removed, policies will be applied. 
 
-### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage my servers, including SCEP&MMA, and want to move to new Defender instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do I proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
+### INCLUDE HERE??? We're using Microsoft Endpoint Configuration Manager to manage our servers, including SCEP&MMA, and want to move to Microsoft Defender for Endpoint instead but keep using Microsoft Endpoint Configuration Manager for configuration of endpoint security policies. How do I proceed? (SCEP&MMA \> Microsoft Endpoint Configuration Manager) 
 
 Timelines TBC. 
 
@@ -139,7 +139,7 @@ Migration steps:
 6.  Remove the non-Microsoft antivirus solution and remove passive mode settings.
 
 
-## Non-Microsoft scenario 
+## Non-Microsoft scenarios 
 
 ### I have a server I would like to install to. I have another solution running a non-Microsoft antivirus solution. 
 
