@@ -60,6 +60,12 @@ You'll need to complete the following genaral steps to succesfully onboard serve
 - Follow the onboarding steps for the corresponding tool
 
 
+### Previous onboarding implementation
+Earlier implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). The updated guidance makes it easier to onboard servers. 
+
+If you onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+
+
 ## Integration with Azure Defender
 Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as an Azure Defender customer. 
 
