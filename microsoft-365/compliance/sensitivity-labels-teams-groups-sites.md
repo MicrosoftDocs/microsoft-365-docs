@@ -163,8 +163,14 @@ Known limitations for this preview:
     
     To test the authentication context by using PowerShell, use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online):
     
-    ```PowerShell
+    ```powershell
     Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    To remove the authentication context so you can try applying the sensitivity label again:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
     ```
 
 - For the OneDrive sync app, supported for OneDrive only and not for other sites.
