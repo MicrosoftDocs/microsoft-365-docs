@@ -1,5 +1,5 @@
 ---
-title: "Apply the prediction filter to the documents in a review set "
+title: "Apply the prediction score filter to the documents in a review set"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,5 +16,5 @@ ms.collection: M365-security-compliance
 description: ""
 ---
 
-# Apply a prediction filter to a review set
+# Apply a prediction score filter to a review set
 
