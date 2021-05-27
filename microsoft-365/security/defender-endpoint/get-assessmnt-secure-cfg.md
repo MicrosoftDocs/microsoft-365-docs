@@ -34,19 +34,21 @@ ms.custom: api
 >
 Returns all of the configurations and their status, on a per-device basis.
 
-There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
+There are different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
-- **OData**  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [Export secure configuration assessment **OData**](#1-export-secure-configuration-assessment-odata):  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- **via files** This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+- [Export secure configuration assessment **via files**](#2-export-secure-configuration-assessment-via-files): This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
   - Call the API to get a list of download URLs with all your organization data.
 
   - Download all the files using the download URLs and process the data as you like.
 
-The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
-Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
+> [!Note]
+>
+> Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export secure configuration assessment (OData)
 
@@ -85,12 +87,12 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 >[!Note]
 >
->- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 >
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
 
-Property (id) | Data type | Description | Example of a returned value
+Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls | Security controls
 ConfigurationId | string | Unique identifier for a specific configuration | scid-10000
@@ -250,7 +252,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 >- For maximum download speed of your data, you can make sure you are downloading from the same Azure region in which your data resides.
 >
-Property (id) | Data type | Description | Example of a returned value
+Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 Export files | array\[string\] | A list of download URLs for files holding the current snapshot of the organization | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z  ]
