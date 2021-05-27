@@ -98,8 +98,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 You can also pass multiple DLs as a batch and upgrade them together:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, < DL SMTP address2>,
-< DL SMTP address3>, < DL SMTP address 4>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
