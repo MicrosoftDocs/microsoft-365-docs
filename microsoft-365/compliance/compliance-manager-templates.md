@@ -21,7 +21,7 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Templates overview
 
