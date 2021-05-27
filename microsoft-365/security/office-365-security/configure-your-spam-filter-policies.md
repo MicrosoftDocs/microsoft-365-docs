@@ -79,15 +79,17 @@ To increase the effectiveness of spam filtering, you can create custom anti-spam
 
 Creating a custom anti-spam policy in the security center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** \> click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create policy** \> select **Inbound**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. The policy wizard opens. On the **Name your policy page**, configure these settings:
+2. Click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create policy** and then select **Inbound** from the dropdown list.
+
+3. The policy wizard opens. On the **Name your policy page**, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
    - **Description**: Enter an optional description for the policy.
 
    When you're finished, click **Next**.
 
-3. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
+4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
    - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
@@ -102,7 +104,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
    When you're finished, click **Next**.
 
-4. On the **Bulk email threshold & spam properties** page that appears, configure the following settings:
+5. On the **Bulk email threshold & spam properties** page that appears, configure the following settings:
 
    - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
@@ -123,7 +125,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
    When you're finished, click **Next**.
 
-5. On the **Actions** page that appears, configure the following settings:
+6. On the **Actions** page that appears, configure the following settings:
 
    - **Message actions**: Select or review the action to take on messages based on the following spam filtering verdicts:
      - **Spam**
@@ -189,15 +191,17 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
    When you're finished, click **Next**.
 
-6. On the **Allow & block list** page that appears, you are able to configure message senders by email address or email domain that are allowed to skip spam filtering:
+7. On the **Allow & block list** page that appears, you are able to configure message senders by email address or email domain that are allowed to skip spam filtering:
 
    > [!CAUTION]
    >
    > - Think very carefully before you add domains here. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
    >
    > - Never add [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (domains that you own) or common domains (for example, microsoft.com or office.com) to the allowed domains list. This would allow attackers to send email that bypasses spam filtering into your organization.
+   >
+   > - Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
-   - **Allowed** \> **Senders**: Click **Manage (nn) sender(s)**. In the **Manage allowed senders** flyout that appears do the following steps:
+   - **Allowed** \> **Senders**: Click **Manage (nn) sender(s)**. In the **Manage allowed senders** flyout that appears, do the following steps:
 
       a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;).
 
@@ -209,7 +213,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       When you're finished, click **Save**.
 
-   - **Allow domain**: Click **Edit**. In the **Allowed domain list** flyout that appears do these steps:
+   - **Allowed** \> **Domains**: Click **Allow domains**. In the **Manage allowed domains** flyout that appears, do the following steps:
 
       a. Enter the domain. You can specify multiple domains separated by semicolons (;).
 
@@ -221,12 +225,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       When you're finished, click **Save**.
 
-6. (Optional) Expand the **Block lists** section to configure message senders by email address or email domain that will always be marked as high confidence spam:
-
-   > [!NOTE]
-   > Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
-
-   - **Block sender**: Click **Edit**. In the **Blocked sender list** flyout that appears do these steps:
+   - **Blocked** \> **Senders**:  Click **Manage (nn) sender(s)**. In the **Manage blocked senders** flyout that appears, do the following steps:
 
       a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;). Wildcards (*) aren't allowed.
 
@@ -238,7 +237,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       When you're finished, click **Save**.
 
-   - **Block domain**: Click **Edit**. In the **Blocked domain list** flyout that appears:
+   - **Blocked** \> **Domains**: Click **Block domains**. In the **Manage blocked domains** flyout that appears, do the following steps:
 
       a. Enter the domain. You can specify multiple domains separated by semicolons (;). Wildcards (*) aren't allowed.
 
@@ -248,37 +247,13 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       The domains you added appear in the **Blocked Domain** list on the flyout. To delete a domain, click ![Remove button](../../media/scc-remove-icon.png).
 
-      When you're finished, click **Save**.
+   When you're finished, click **Next**.
 
-7. 
+8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
 
-   - **Filter email messages sent from the following countries or regions**: This setting is disabled by default (**Status: OFF**). To enable it, click **Edit**. In the **International spam settings** flyout that appears, configure the following settings:
+   When you're finished, click **Create**.
 
-     - **Filter email messages sent from the following countries or regions**: Select the checkbox to enable this setting. Clear the checkbox to disable this setting.
-
-     - Click in the box and start typing the *name* of the country or region. A filtered list of supported countries will appear, along with the corresponding ISO 3166-1 two-letter country code. When you find the country or region you're looking for, select it. Repeat this step as many times as necessary.
-
-       The list of countries you selected appears on the flyout. To delete a country or region, click ![Remove button](../../media/scc-remove-icon.png).
-
-     When you're finished, click **Save**.
-
-8. 
-
-9. (Required) Expand the **Applied to** section to identify the internal recipients that the policy applies to.
-
-    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
-    It's easiest to click **Add a condition** three times to see all of the available conditions. You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
-
-    - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
-
-    - **Recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
-
-    - **Recipient is a member of**: Specifies one or more groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
-
-    - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
-
-10. When you're finished, click **Save**.
+9. On the confirmation page that appears, click **Done**.
 
 ## Use the security center to view anti-spam policies
 
@@ -312,41 +287,41 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
 ### Enable or disable anti-spam policies
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
-
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand a custom policy that you created (the value in the **Type** column is **Custom anti-spam policy**).
-
-3. In the expanded policy details that appear, notice the value in the **On** column.
-
-   Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
-
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
-
 You can't disable the default anti-spam policy.
+
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+
+2. Select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, you'll see one of the following values:
+   - **Policy off**: To turn on the policy, click ![Turn on icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
+
+3. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
+
+4. Click **Close** in the policy details flyout.
+
+Back on the main policy page, the **Status** value of the policy will be **On** or **Off**.
 
 ### Set the priority of custom anti-spam policies
 
-By default, anti-spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
+By default, anti-spam policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
-For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the security center). Changing the priority of a policy only makes sense if you have multiple policies.
 
-Custom anti-spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-spam policy named **Default spam filter policy** has the priority value **Lowest**, and you can't change it.
+ **Notes**:
 
- **Note**: In the security center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
+- In the security center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
+- Anti-spam policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default anti-spam policy named Default has the priority value **Lowest**, and you can't change it.
 
-To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the security center).
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+2. Select a custom policy from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
+   - The anti-spam policy with the **Priority** value **0** has only the **Decrease priority** option available.
+   - The anti-spam policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
+   - If you have three or more anti-spam policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
-2. On the **Anti-spam settings** page, find the policies where the value in the **Type** column is **Custom anti-spam policy**. Notice the values in the **Priority** column:
+3. Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
-   - The custom anti-spam policy with the highest priority has the value ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
-
-   - The custom anti-spam policy with the lowest priority has the value ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
-
-   - If you have three or more custom anti-spam policies, the policies between the highest and lowest priority have values ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
-
-3. Click ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) or ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) to move the custom anti-spam policy up or down in the priority list.
+4. When you're finished, click **Close** in the policy details flyout.
 
 ### Configure end-user spam notifications
 
