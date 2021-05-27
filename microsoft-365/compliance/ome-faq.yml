@@ -215,7 +215,7 @@ sections:
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           
-          - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, Outlook for Android, Outlook for iOS and Outlook on the web.
+          - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, Outlook for Android, Outlook for iOS, and Outlook on the web.
           
           The following table lists the supported clients for shared mailboxes.
           
