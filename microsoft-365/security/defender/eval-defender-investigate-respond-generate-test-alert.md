@@ -1,6 +1,6 @@
 ---
-title: Generate a test alert for Microsoft 365 Defender
-description: Generate a test alert for Microsoft 365 Defender.
+title: Generate a test alert for Microsoft 365 Defender in a pilot environment
+description: Generate a test alert for Microsoft 365 Defender in a pilot environment.
 keywords: Microsoft 365 Defender simulation, try Microsoft 365 Defender, generate test alert in Microsoft 365 Defender, test alert in Microsoft 365 Defender evaluation lab
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Generate a test alert for Microsoft 365 Defender
+# Generate a test alert for Microsoft 365 Defender in a pilot environment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

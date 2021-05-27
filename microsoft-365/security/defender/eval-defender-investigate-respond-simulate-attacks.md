@@ -1,5 +1,5 @@
 ---
-title: Run Microsoft 365 Defender attack simulations
+title: Run Microsoft 365 Defender attack simulations in a pilot environment 
 description: Run attack simulations for Microsoft 365 Defender to see how it unfolds and is quickly remediated.
 keywords: Microsoft 365 Defender pilot attack simulation, run Microsoft 365 Defender pilot attack simulation, simulate attack in Microsoft 365 Defender, Microsoft 365 Defender pilot project, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Run Microsoft 365 Defender attack simulations
+# Run Microsoft 365 Defender attack simulations in a pilot environment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Try additional incident response capabilities
+title: Try additional Microsoft 365 Defender incident response capabilities in a pilot environment
 description: Try additional incident response capabilities.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -25,7 +25,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Try additional incident response capabilities
+# Try additional Microsoft 365 Defender incident response capabilities in a pilot environment
 
 
 **Applies to:**
