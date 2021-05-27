@@ -69,10 +69,10 @@ The **Response API** exposes the ability to take actions in the service and on d
 ## Streaming API 
 Streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
 
+Event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
+
 >[!NOTE]
 >Streaming API has now moved to Microsoft 365 Defender. For more information, see [Streaming API](raw-data-export.md).
-
-Event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
 
 
 ## SIEM API
