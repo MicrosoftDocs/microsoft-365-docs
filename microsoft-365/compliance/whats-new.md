@@ -37,17 +37,31 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-
 
 - [Limits in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Organizations can now export up to 5 million items or 500 MB, whichever is smaller, in a single export of items from a review set.
 
+### Data Classification
+
+- [Labeling activities that are available in Activity explorer](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-activity-explorer-available-events?view=o365-worldwide)
+
+### Data connectors
+
+- [Set up a connector to archive Cisco Jabber on Oracle data](https://docs.microsoft.com/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Set up a connector to archive Cisco Jabber on PostgreSQL data](https://docs.microsoft.com/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### Data Loss Prevention
+
+- New topic for [Data loss prevention policy tips reference](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide).
+- New topic for [Learn about data loss prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide).
+- New topic for [Get started with the data loss prevention alert dashboard](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-alerts-dashboard-get-started?view=o365-worldwide).
+
 ### Retention policies and retention label policies
 
-- **Retention policy**. The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the Applications parameter.
+- The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the Applications parameter.
 
 ### Sensitivity labels
 
 Outlook releases and updates:
-- **Built-in labeling support**. Previously supported only by the AIP unified labeling client, built-in labeling now supports [different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- **Encrypt-Only** is now supported by macOS, iOS, and Android
-- **Mandatory labeling** is rolling out to the remaining platforms
-- [Dynamic markings with all variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) are supported across all Outlook clients 
+- Previously supported only by the AIP unified labeling client, built-in labeling now supports [different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- Encrypt-Only is now supported by macOS, iOS, and Android
+- [Manage sensitivity labels in Office apps](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) topic updated with new entries in the [Outlook capabilities table](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#sensitivity-label-capabilities-in-outlook) for [Different settings for default label and mandatory labeling](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#outlook-specific-options-for-default-label-and-mandatory-labeling) for the new Outlook feature release for built-in labeling to support a different default label and exemption from mandatory labeling. Additionally, the Encrypt-Only option is now supported by macOS/iOS/Android, and all dynamic markings with variables are now supported across all Outlook clients. Mandatory labeling is now rolling out to the remaining platforms.
 
 ## March 2021
 
