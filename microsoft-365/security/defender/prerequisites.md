@@ -70,15 +70,15 @@ Currently, Microsoft 365 Defender is *not* available to:
 - All US government institutions with commercial licenses
 
 
-No current plans for the following data center locations:
+Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 
-- Brazil (BRA01)
-- Germany (DEU01)
-- Norway (NOR01)
-- Singapore (SGP01)
-- South Africa (ZAF01)
-- Switzerland (CHE01)
-- UAE (ARE01)
+- Brazil 
+- Germany 
+- Norway 
+- Singapore 
+- South Africa
+- Switzerland 
+- United Arab Emirates 
 
 
 ## Related topics
