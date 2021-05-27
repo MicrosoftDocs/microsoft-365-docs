@@ -122,7 +122,7 @@ Use these steps to secure and optimize access to your organization's servers and
 3. [Deploy security and compliance services](empower-people-to-work-remotely-security-compliance.md)
 4. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
 5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
+6. [Train your workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
 [![The steps to set up your infrastructure for hybrid work with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
