@@ -104,9 +104,9 @@ To add users to a Microsoft 365 group, see [Add users and assign licenses at the
   
 Learn how to handle access requests with [Set up and manage access requests](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   
-## Here are more articles you might be interested in
+## Next steps
 
-- **Set up Office apps on your tablets and phones**. You must do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+You must set up Office apps on your devices so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
     
   - [Install and set up Office on an Android with Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
