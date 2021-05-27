@@ -74,27 +74,26 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 
 To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Before you begin, turn on Audit logging for reporting and investigation
+### Turn on Audit logging for reporting and investigation
 
-Start your audit logging early. You'll need auditing to be **ON** for certain of the steps that follow. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection
 
-[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+For more information about the recommended settings for anti-malware, see [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-malware**.
+1. Open <https://security.microsoft.com/antimalwarev2>.
 
-2. Double-click the **Default** policy, and then choose **settings**.
+2. Select the Default policy by clicking on the name of the policy.
 
-3. Specify the following settings:
+3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
+   - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
+   - Verify that **Enable zero-hour auto purge for malware** is selected.
+   - Verify that none of the settings in the **Notification** section are selected.
 
-    - In the **Malware Detection Response** section, keep the default setting of **No**.
+   When you're finished, click **Save**
 
-    - In the **Common Attachment Types Filter** section, choose **On**.
-
-4. Click **Save**.
-
-To learn more about anti-malware policy options, see [Configure anti-malware policies](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 ## Part 2 - Anti-phishing protection
 
