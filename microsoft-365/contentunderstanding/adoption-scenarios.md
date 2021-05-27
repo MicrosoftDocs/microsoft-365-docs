@@ -21,13 +21,13 @@ description: "Find scenarios about how to use SharePoint Syntex in your organiza
 
 Use the following example scenarios to prompt ideas about how you can use SharePoint Syntex in your organization.
 
-- [Scenario: Track data from invoices with form processing](scenario-track-data-from-invoices-with-form-processing.md)
-- [Scenario: Track information from contracts with document understanding](scenario-track-information-from-contracts-with-document-understanding)
-- [Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex](scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharePoint-syntex)
-- [Scenario: Capture information from previously inaccessible documents](scenario-capture-information-from-previously-inaccessible-documents)
-- [Scenario: Improve data processing to provide insights & analytics](scenario-improve-data-processing-to-provide-insights-analytics)
-- [Scenario: Automate order processing](scenario-automate-order-processing)
-- [Scenario: Simplify visa renewal process](scenario-simplify-visa-renewal-process)
+- [Scenario: Track data from invoices with form processing](adoption-getstarted.md#scenario-track-data-from-invoices-with-form-processing.md)
+- [Scenario: Track information from contracts with document understanding](adoption-getstarted.md#scenario-track-information-from-contracts-with-document-understanding)
+- [Scenario: Avoid risk with records management, document governance, and compliance processes based on SharePoint Syntex](adoption-getstarted.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharePoint-syntex)
+- [Scenario: Capture information from previously inaccessible documents](adoption-getstarted.md#scenario-capture-information-from-previously-inaccessible-documents)
+- [Scenario: Improve data processing to provide insights & analytics](adoption-getstarted.md#scenario-improve-data-processing-to-provide-insights-analytics)
+- [Scenario: Automate order processing](adoption-getstarted.md#scenario-automate-order-processing)
+- [Scenario: Simplify visa renewal process](adoption-getstarted.md#scenario-simplify-visa-renewal-process)
 
 ## Scenario: Track data from invoices with form processing
 
