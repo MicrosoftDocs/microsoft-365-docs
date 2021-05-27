@@ -56,7 +56,7 @@ The end user whose PC:
     
 The following table shows what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 for business admin console.<br/>
 
-  
+
 |Starting Office install status|Action to take before Microsoft 365 for business Office install|End state|
 |:-----|:-----|:-----|
 |No Office suite installed  <br/> |None  <br/> |Office 2016 32-bit is installed by using Click-to-Run  <br/> |
