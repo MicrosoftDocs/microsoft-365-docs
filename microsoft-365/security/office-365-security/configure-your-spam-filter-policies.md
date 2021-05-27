@@ -191,63 +191,44 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
    When you're finished, click **Next**.
 
-7. On the **Allow & block list** page that appears, you are able to configure message senders by email address or email domain that are allowed to skip spam filtering:
+7. On the **Allow & block list** flyout that appears, you are able to configure message senders by email address or email domain that are allowed to skip spam filtering.
 
-   > [!CAUTION]
+   In the **Allowed** section, you can configure allowed senders and allowed domains. In the **Blocked** section, you can add blocked senders and blocked domains.
+
+   > [!IMPORTANT]
    >
-   > - Think very carefully before you add domains here. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
+   > Think very carefully before you add domains to the allowed domains list. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
    >
-   > - Never add [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (domains that you own) or common domains (for example, microsoft.com or office.com) to the allowed domains list. This would allow attackers to send email that bypasses spam filtering into your organization.
+   > Never add your own [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) or common domains (for example, microsoft.com or office.com) to the allowed domains list. If these domains are allowed to bypass spam filtering, allow attackers an easily send email into your organization.
    >
-   > - Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
+   > Manually blocking domains by adding the domains to the blocked domains list isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
+   >
+   > There will be times when our filters will miss a message, you don't agree with the filtering verdict, or it takes time for our systems to catch up to it. In these cases, the allow list and block list are available to override the current filtering verdicts. But, you should use these lists sparingly and temporarily: longs lists can become unmanageable, and our filtering stack should be doing what it's supposed to be doing. If you're going to keep an allowed domain for an extended period of time, you should tell the sender to verify that their domain is authenticated and set to DMARC reject if it's not.
 
-   - **Allowed** \> **Senders**: Click **Manage (nn) sender(s)**. In the **Manage allowed senders** flyout that appears, do the following steps:
+   The steps to add entries to any of the lists are the same:
 
-      a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;).
+   1. Click the link for the list that you want to configure:
+      - **Allowed** \> **Senders**: Click **Manage (nn) sender(s)**.
+      - **Allowed** \> **Domains**: Click **Allow domains**.
+      - **Blocked** \> **Senders**: Click **Manage (nn) sender(s)**.
+      - **Blocked** \> **Domains**: Click **Block domains**.
 
-      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the senders.
+   2. In the flyout that appears, do the following steps:
+      1. Click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Add senders** or **Add domains**.
+      2. In the **Add senders** or **Add domains** flyout that appears, enter the sender's email address in the **Sender** box or the domain in the **Domain** box. As you're typing, the value appears below the box. When you're finished typing the email address or domain, select the value below the box.
+      3. Repeat the previous step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-      Repeat these steps as many times as necessary.
+      When you're finished, click **Add senders** or **Add domains**.
 
-      The senders you added appear in the **Allowed Sender** section on the flyout. To delete a sender, click ![Remove icon](../../media/scc-remove-icon.png).
+      Back on the main flyout, the senders or domains that you added are listed on the page. To remove an entry from this page, do the following steps:
 
-      When you're finished, click **Save**.
+      1. Select one or more entries from the list. You can also use the **Search** box to find values in the list.
+      2. After you select at least one entry, the delete icon ![Delete icon](../../media/m365-cc-sc-delete-icon.png) appears.
+      3. Click the delete icon ![Delete icon](../../media/m365-cc-sc-delete-icon.png) to remove the selected entries.
 
-   - **Allowed** \> **Domains**: Click **Allow domains**. In the **Manage allowed domains** flyout that appears, do the following steps:
+      When you're finished, click **Done**.
 
-      a. Enter the domain. You can specify multiple domains separated by semicolons (;).
-
-      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the domains.
-
-      Repeat these steps as many times as necessary.
-
-      The domains you added appear in the **Allowed Domain** section on the flyout. To delete a domain, click ![Remove icon](../../media/scc-remove-icon.png).
-
-      When you're finished, click **Save**.
-
-   - **Blocked** \> **Senders**:  Click **Manage (nn) sender(s)**. In the **Manage blocked senders** flyout that appears, do the following steps:
-
-      a. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;). Wildcards (*) aren't allowed.
-
-      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the senders.
-
-      Repeat these steps as many times as necessary.
-
-      The senders you added appear in the **Blocked Sender** section on the flyout. To delete a sender, click ![Remove button](../../media/scc-remove-icon.png).
-
-      When you're finished, click **Save**.
-
-   - **Blocked** \> **Domains**: Click **Block domains**. In the **Manage blocked domains** flyout that appears, do the following steps:
-
-      a. Enter the domain. You can specify multiple domains separated by semicolons (;). Wildcards (*) aren't allowed.
-
-      b. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the domains.
-
-      Repeat these steps as many times as necessary.
-
-      The domains you added appear in the **Blocked Domain** list on the flyout. To delete a domain, click ![Remove button](../../media/scc-remove-icon.png).
-
-   When you're finished, click **Next**.
+      Back on the **Allow & block list** page, click **Next** when you're read to continue.
 
 8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
 
@@ -257,31 +238,32 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
 ## Use the security center to view anti-spam policies
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an anti-spam policy:
+2. On the **Anti-spam policy** page, look for one of the following values:
+   - The **Type** value is **Custom anti-spam policy**
+   - The **Name** value is **Anti-spam inbound policy (Default)**
 
-   - The default policy named **Default spam filter policy**.
+   The following properties are displayed in the list of anti-spam policies:
 
-   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
+   - **Name**
+   - **Status**
+   - **Priority**
+   - **Type**
 
-3. The important policy settings are displayed in the expanded policy details that appear. To see more details, click **Edit policy**.
+3. When you select an anti-spam policy by clicking on the name, the policy settings are displayed in a flyout.
 
 ## Use the security center to modify anti-spam policies
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an anti-spam policy:
-
-   - The default policy named **Default spam filter policy**.
-
+2. On the **Anti-spam policy** page, select an anti-spam policy from the list by clicking on the name:
    - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
+   - The default policy named **Anti-spam inbound policy (Default)**.
 
-3. Click **Edit policy**.
+3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the security center to create anti-spam policies](#use-the-security-center-to-create-anti-spam-policies) section in this article.
 
-For custom anti-spam policies, the available settings in the flyout that appears are identical to those described in the [Use the security center to create anti-spam policies](#use-the-security-center-to-create-anti-spam-policies) section.
-
-For the default anti-spam policy named **Default spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
+   For the default anti-spam policy, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
 To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
 
@@ -291,13 +273,15 @@ You can't disable the default anti-spam policy.
 
 1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. Select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, you'll see one of the following values:
+2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name.
+
+3. At the top of the policy details flyout that appears, you'll see one of the following values:
    - **Policy off**: To turn on the policy, click ![Turn on icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
    - **Policy on**: To turn off the policy, click ![Turn off icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
-3. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
+4. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
 
-4. Click **Close** in the policy details flyout.
+5. Click **Close** in the policy details flyout.
 
 Back on the main policy page, the **Status** value of the policy will be **On** or **Off**.
 
@@ -310,16 +294,18 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
  **Notes**:
 
 - In the security center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
-- Anti-spam policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default anti-spam policy named Default has the priority value **Lowest**, and you can't change it.
+- Anti-spam policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default anti-spam policy has the priority value **Lowest**, and you can't change it.
 
 1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. Select a custom policy from the list by clicking on the name of the policy. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
+2. On the **Anti-spam policies** page, select a select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name.
+
+3. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
    - The anti-spam policy with the **Priority** value **0** has only the **Decrease priority** option available.
    - The anti-spam policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
    - If you have three or more anti-spam policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
-3. Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
+   Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
 4. When you're finished, click **Close** in the policy details flyout.
 
@@ -327,42 +313,38 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an anti-spam policy:
-
-   - The default policy named **Default spam filter policy**.
-
+2. On the **Anti-spam policies** page, select an anti-spam policy from the list by clicking on the name:
    - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
+   - The default policy named **Anti-spam inbound policy (Default)**.
 
-3. In the expanded policy details that appear, click **Configure end-user spam notifications**.
+3. In the policy details flyout that appears, click **Edit** in the **Actions** section. In the **Actions** flyout that appears, configure the following settings:
 
-4. In the **\<Policy Name\>** dialog that opens, configure the following settings:
+   - **Enable end-user spam notifications**: Select the checkbox to enable notifications or clear the checkbox to disable notifications. When you select the checkbox, the following additional settings appear:
 
-   - **Enable end-user spam notifications**: Select the checkbox to enable notifications. Clear the checkbox to disable notifications.
+     - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
 
-   - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
+       There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC.
 
-     There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC.
+       > [!NOTE]
+       > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This might give the appearance of multiple notifications within the same day.
 
-     > [!NOTE]
-     > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This may give the appearance of multiple notifications within the same day.
-
-   - **Notification language**: Click the drop down an select an available language from the list. The default value is **Default**, which means English.
+     - **Language**: Click the drop down an select an available language from the list. The default value is **Default**, which means English.
 
    When you're finished, click **Save**.
 
+4. Back on the policy details flyout, click **Close**.
+
 ## Use the security center to remove anti-spam policies
 
-1. In the security center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+When you use the security center to remove an anti-spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default policy.
 
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand the custom policy that you want to delete (the **Type** column is **Custom anti-spam policy**).
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
 
-3. In the expanded policy details that appear, click **Delete policy**.
+2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
-4. Click **Yes** in the warning dialog that appears.
-
-You can't remove the default policy.
+3. In the confirmation dialog that appears, click **Yes**.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-spam policies
 
@@ -379,9 +361,7 @@ The following anti-spam policy settings are only available in PowerShell:
 - The _MarkAsSpamBulkMail_ parameter that's `On` by default. The effects of this setting were explained in the [Use the security center to create anti-spam policies](#use-the-security-center-to-create-anti-spam-policies) section earlier in this article.
 
 - The following settings for end-user spam quarantine notifications:
-
   - The _DownloadLink_ parameter that shows or hides the link to the Junk Email Reporting Tool for Outlook.
-
   - The _EndUserSpamNotificationCustomSubject_ parameter that you can use to customize the subject line of the notification.
 
 ### Use PowerShell to create anti-spam policies
@@ -413,15 +393,11 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 This example creates a spam filter policy named Contoso Executives with the following settings:
 
 - Quarantine messages when the spam filtering verdict is spam or high confidence spam.
-
-- BCL 6 triggers the action for a bulk email spam filtering verdict.
+- BCL 7, 8, or 9 triggers the action for a bulk email spam filtering verdict.
 
 ```PowerShell
 New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamAction Quarantine -SpamAction Quarantine -BulkThreshold 6
 ```
-
-> [!NOTE]
-> **New-HostedContentFilterPolicy** and **Set-HostedContentFilterPolicy** contain an older _ZapEnabled_ parameter, as well as newer _PhishZapEnabled_ and _SpamZapEnabled_ parameters. The _ZapEnabled_ parameter was deprecated in February 2020. The _PhishZapEnabled_ and _SpamZapEnabled_ parameters used to inherit their values from the _ZapEnabled_ parameter. But, if you use the _PhishZapEnabled_ and _SpamZapEnabled_ parameters in a command or you use the **Spam ZAP** or **Phish ZAP** settings in the anti-spam policy in the security center, the value of the _ZapEnabled_ parameter is ignored. In other words, don't use the _ZapEnabled_ parameter; use the  _PhishZapEnabled_ and _SpamZapEnabled_ parameters instead.
 
 For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
@@ -436,7 +412,6 @@ New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<Poli
 This example creates a new spam filter rule named Contoso Executives with these settings:
 
 - The spam filter policy named Contoso Executives is associated with the rule.
-
 - The rule applies to members of the group named Contoso Executives Group.
 
 ```PowerShell
@@ -510,7 +485,6 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterRule]
 Other than the following items, the same settings are available when you modify a spam filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create a spam filter policy](#step-1-use-powershell-to-create-a-spam-filter-policy) section earlier in this article.
 
 - The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify a spam filter policy in PowerShell.
-
 - You can't rename a spam filter policy (the **Set-HostedContentFilterPolicy** cmdlet has no _Name_ parameter). When you rename an anti-spam policy in the security center, you're only renaming the spam filter _rule_.
 
 To modify a spam filter policy, use this syntax:
@@ -533,7 +507,7 @@ To modify a spam filter rule, use this syntax:
 Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-This example renames the existing spam filter rule named `{Fabrikam Spam Filter}` that might cause problems in the security center.
+This example renames the existing spam filter rule named `{Fabrikam Spam Filter}`.
 
 ```powershell
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
@@ -584,7 +558,6 @@ Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 **Notes**:
 
 - To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedContentFilterRule** cmdlet instead.
-
 - The default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
 
 ### Use PowerShell to remove spam filter policies
@@ -628,7 +601,7 @@ For detailed syntax and parameter information, see [Remove-HostedContentFilterRu
 ### Send a GTUBE message to test your spam policy settings
 
 > [!NOTE]
-> These steps will only work if the email organization that you're sending the GTUBE message from doesn't scan for outbound spam. If it does, the test message can't be sent.
+> These steps will only work if the email organization that you're sending the GTUBE message from doesn't scan for outbound spam. If it does, you can't send the test message.
 
 Generic Test for Unsolicited Bulk Email (GTUBE) is a text string that you include in a test message to verify your organization's anti-spam settings. A GTUBE message is similar to the European Institute for Computer Antivirus Research (EICAR) text file for testing malware settings.
 
@@ -637,10 +610,3 @@ Include the following GTUBE text in an email message on a single line, without a
 ```text
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
-
-## Allow/Block Lists
-
-There will be times when our filters will miss the message or it takes time for our systems to catch up to it. In this cases, the anti-spam policy has an Allow and a Block list available to override the current verdict. This option should only be used sparingly since lists can become unmanageable and temporarily since our filtering stack should be doing what it is supposed to be doing.
-
-> [!TIP]
-> There may be situations where your organization may not agree with the verdict the service provides. In this case, you may want to keep the Allow or Block listing permanent. However, if you are going to put a domain on the Allow list for extended periods of time, you should tell the sender to make sure that their domain is authenticated and set to DMARC reject if it is not.
