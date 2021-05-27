@@ -21,6 +21,8 @@ description: "Find scenarios about how to use SharePoint Syntex in your organiza
 
 Use the following example scenarios to prompt ideas about how you can use SharePoint Syntex in your organization.
 
+- [Scenario: Track data from invoices with form processing](scenario-track-data-from-invoices-with-form-processing.md)
+
 ## Scenario: Track data from invoices with form processing
 
 For example, you can set up a process using SharePoint Syntex and Power Automate features to track and monitor invoices.
