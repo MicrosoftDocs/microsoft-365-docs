@@ -64,7 +64,6 @@ The following screenshot shows the notification displayed on the billing account
 
 The following table contains samples of the registration numbers collected for each country.  In cases where multiple IDs are listed, only one is required.
 
-
 | Country or region | Details |
 |--|--|
 | **Armenia** | INN – Tax identification number<br>VAT number – Also known as a VAT Registration Number. This is the unique number that identifies a taxable person (business) or non-taxable legal entity that is registered for VAT.<br>Public service number |
