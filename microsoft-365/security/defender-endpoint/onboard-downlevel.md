@@ -196,11 +196,11 @@ cd "C:"
 IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
 exit
 ) ELSE (
-wusa.exe c:\Windows\MMA\Windows6.1-KB123456-x86.msu /quiet /norestart
-wusa.exe c:\Windows\MMA\Windows8.1-KB123456-x86.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
 "c:\windows\MMA\MMASetup-AMD64.exe" /C:"setup.exe /qn ADD_OPINSIGHTS_WORKSPACE=1
 OPINSIGHTS_WORKSPACE_ID=<your workspace ID>
-OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
+OPINSIGHTS_WORKSPACE_KEY=<your workspace key> AcceptEndUserLicenseAgreement=1"
 )
 ```
 
