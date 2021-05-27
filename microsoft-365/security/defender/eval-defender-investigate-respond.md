@@ -13,6 +13,8 @@ f1.keywords:
 ms.author: 
 author: 
 localization_priority: Normal
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: dansimp
 audience: ITPro
 ms.collection: 
