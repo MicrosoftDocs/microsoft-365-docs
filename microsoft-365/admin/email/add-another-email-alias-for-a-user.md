@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: "Learn how you can have more than one email address, called email alias, associated with your Microsoft 365 for business account. "
+description: "Learn how you can have more than one email address, called an email alias, associated with your Microsoft 365 for business account. "
 ---
 
 # Add another email alias for a user
@@ -31,7 +31,6 @@ This article is for Microsoft 365 administrators who have business subscriptions
 A primary email address in Microsoft 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Microsoft 365 for business account. These additional addresses are called aliases. 
   
 For example, let's say Jenna has the email address jenna@contosoco.com, but she also wants to receive email at jen@contosoco.com because some people refer to her by that name. You can create aliases for her so that both email addresses go to Jenna's inbox.
-<br><br>  
   
 You can create up to 400 aliases for a user. No additional fees or licenses are required.
   
@@ -81,8 +80,10 @@ If you purchased your subscription from GoDaddy or another Partner, to set the n
 
 A new feature is rolling out in April 2021 that allows users to send from their aliases easily when using Outlook on the web. When the feature rolls out to a tenancy where the tenant admin uses the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the tenancy will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the From dropdown in the Compose form.
   
-## Related articles
+## Related content
 
-[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
 
-[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md)
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
+
+[Configure email forwarding in Microsoft 365](configure-email-forwarding.md) (article)

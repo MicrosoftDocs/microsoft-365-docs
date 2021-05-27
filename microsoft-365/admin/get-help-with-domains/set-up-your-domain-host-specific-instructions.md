@@ -1,5 +1,5 @@
 ---
-title: "Set up your domain (host-specific instructions)"
+title: "Set up your domain"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: "Learn how to manage your own DNS records or let Microsoft manage your DNS records for you."
 ---
 
-# Set up your domain (host-specific instructions)
+# Set up your domain
 
 To start using a custom domain (contoso.com) with Microsoft 365, you need to verify your domain and configure your domain's DNS records. 
   
