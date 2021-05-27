@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,10 +16,11 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments."
+ms.date: 03/17/2021
 ---
 
 # Manage billing notifications and invoice attachments

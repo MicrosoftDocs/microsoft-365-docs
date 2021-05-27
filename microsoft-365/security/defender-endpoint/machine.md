@@ -59,7 +59,7 @@ computerDnsName | String | [machine](machine.md) fully qualified name.
 firstSeen | DateTimeOffset | First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.
 lastSeen | DateTimeOffset |Time and date of the last received full device report. A device typically sends a full report every 24 hours.
 osPlatform | String | Operating system platform.
-osProcessor | String | Operating system processor.
+osProcessor | String | Operating system processor. Use osArchitecture property instead.
 version | String | Operating system Version.
 osBuild | Nullable long | Operating system build number.
 lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
@@ -73,5 +73,6 @@ machineTags | String collection | Set of [machine](machine.md) tags.
 exposureLevel | Nullable Enum | Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
 ipAddresses | IpAddress collection | Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).
+osArchitecture | String | Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.
 
 

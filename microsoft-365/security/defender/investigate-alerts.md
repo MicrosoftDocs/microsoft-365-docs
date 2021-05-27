@@ -1,6 +1,6 @@
 ---
-title: Analyze alerts in Microsoft 365 Defender
-description: Analyze alerts seen across devices, users, and mailboxes.
+title: Investigate alerts in Microsoft 365 Defender
+description: Investigate alerts seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Analyze alerts in Microsoft 365 Defender
+# Investigate alerts in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -66,14 +66,12 @@ You can also select the **Open the main alert page** action from the **Manage al
 
 An alert page is composed of these sections: 
 
-- Alert story
-- Actions taken (including impacted assets)
-- Related events
+- Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
 ### Analyze affected assets
 
@@ -132,8 +130,12 @@ Once you're done analyzing an alert and it can be resolved, go to the **Manage a
 
 Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
 
+## Next steps
+
+As needed for in-process incidents, continue your [investigation](investigate-incidents.md).
+
 ## See also
 
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
