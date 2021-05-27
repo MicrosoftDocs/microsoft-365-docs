@@ -73,6 +73,23 @@ An alert page is composed of these sections:
 
 Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
+### Alert sources
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+
+> [!NOTE]
+> - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.<br>
+> - The prepended character does not change the GUID of the alert. The only change to the GUID is the prepended component.<br>
+
+
+Alert source | Prepended character 
+:---|:---
+Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
+
 ### Analyze affected assets
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert. 
