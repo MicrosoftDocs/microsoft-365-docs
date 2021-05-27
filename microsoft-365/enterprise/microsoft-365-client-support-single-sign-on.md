@@ -28,7 +28,7 @@ Learn more about [single sign-on](/azure/active-directory/manage-apps/what-is-si
 
 ## Supported clients & platforms
 
-The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+The latest versions of the following clients and platforms support single sign-on. For more information about platform support in Microsoft 365, see [System requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
