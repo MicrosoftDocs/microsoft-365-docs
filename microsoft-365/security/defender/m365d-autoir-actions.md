@@ -93,4 +93,4 @@ If you’ve determined that a device or a file is not a threat, you can undo rem
 ## Next steps
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
-- [Address false positives or false negatives)](m365d-autoir-report-false-positives-negatives.md)
+- [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)

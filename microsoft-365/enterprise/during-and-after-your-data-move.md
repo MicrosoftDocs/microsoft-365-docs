@@ -99,6 +99,8 @@ The following search features are affected:
     
 - Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
 
+As part of the migration, the default region will change and all new content will be stored at rest in the new default region. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
+
 ## Microsoft Teams
 
 In addition to Exchange Online, SharePoint Online, and OneDrive for Business, Microsoft will migrate Teams chat service data to the local datacenter.

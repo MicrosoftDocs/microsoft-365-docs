@@ -20,9 +20,6 @@ ms.topic: article
 
 # Configure and validate Microsoft Defender Antivirus network connections
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
@@ -102,11 +99,9 @@ A similar message occurs if you're using Internet Explorer:
 
 You'll also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Security app:
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
-
-    ![Screenshot of the Scan history label in the Windows Security app](images/defender/wdav-history-wdsc.png)
+2. Select **Virus & threat protection**, and then select **Protection history**.
 
 3. Under the **Quarantined threats** section, select **See full history** to see the detected fake malware.
 

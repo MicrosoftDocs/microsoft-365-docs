@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Follow these steps to give another employee access to the former employee's OneDrive and Outlook data."
+description: "Follow the steps in this article to give another employee access to the former employee's OneDrive and Outlook data."
 ---
 
 # Step 4 - Give another employee access to OneDrive and Outlook data
@@ -156,10 +156,8 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
 
-## Related articles
+## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
-
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive)
-  
-[OneDrive retention and deletion](/onedrive/retention-and-deletion)
+[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)\
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)\
+[OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)

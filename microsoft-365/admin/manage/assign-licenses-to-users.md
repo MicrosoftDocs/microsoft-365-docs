@@ -21,7 +21,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: "Learn how to assign licenses to users."
+description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
 ms.date: 04/26/2021
 ---
 

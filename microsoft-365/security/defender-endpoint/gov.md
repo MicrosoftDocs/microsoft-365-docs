@@ -162,7 +162,7 @@ Integrations: Azure Sentinel | ![Yes](images/svg/check-yes.svg) | ![Yes](images/
 Integrations: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Integrations: Microsoft Compliance Manager | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Integrations: Microsoft Defender for Identity | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
-Integrations: Microsoft Endpoint DLP | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog
-Integrations: Microsoft Intune | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+Integrations: Microsoft Endpoint DLP | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
+Integrations: Microsoft Intune | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg) | ![Yes](images/svg/check-yes.svg)
 Integrations: Microsoft Power Automate & Azure Logic Apps | ![Yes](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In development | ![No](images/svg/check-no.svg) In development
 Microsoft Threat Experts | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog | ![No](images/svg/check-no.svg) On engineering backlog

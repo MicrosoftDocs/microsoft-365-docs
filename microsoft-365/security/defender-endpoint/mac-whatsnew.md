@@ -33,6 +33,14 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.29.64 (20.121042.12964.0)
+
+- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+  - `--sort`: sorts the output descending by total number of files scanned
+  - `--top N`: displays the top N results (only works if `--sort` is also specified)
+- Performance improvements (specifically for when YARN is used) & bug fixes
+
 ## 101.27.50 (20.121022.12750.0)
 
 - Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Threat & Vulnerability Management (TVM) functionality.
