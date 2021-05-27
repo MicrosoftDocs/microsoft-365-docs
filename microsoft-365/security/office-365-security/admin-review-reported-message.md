@@ -11,7 +11,7 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
-description: Learn how to review messaged that are reported in Outlook. 
+description: Learn how to review messages that are reported and give feedback to your users. 
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -26,15 +26,15 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defender for Office 365, admins can now send templated messages back to end users after they review reported messages. This can be customized for your organization and based on your admin’s verdict as well.
 
-This feature is designed to give feedback to your users but does not change the verdicts of messages in the system. To help Microsoft update and improve its filters, you will need to submit messages for analysis using [Admin submission](../../office-365-security/admin-submission.md).
+This feature is designed to give feedback to your users but does not change the verdicts of messages in the system. To help Microsoft update and improve its filters, you will need to submit messages for analysis using [Admin submission](admin-submission.md).
 
-You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](../../office-365-security/report-false-positives-and-false-negatives.md).
+You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](report-false-positives-and-false-negatives.md).
 
 ## What do you need to know before you begin?
 
-- Open the [Security & Compliance Center](https://protection.office.com/), and go to the [User submissions page](https://protection.office.com/userSubmissionsReportMessage). 
+- Open the [Security & Compliance Center](https://protection.office.com/), and go to the [User submissions page](https://protection.office.com/userSubmissionsReportMessage.). 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
-    - Organization Management or Security Administrator in the [Security & Compliance Center](../../office-365-security/permissions-in-the-security-and-compliance-center.md).
+    - Organization Management or Security Administrator in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - Organization Management in [Exchange Online](https://docs.microsoft.com/en-us/Exchange/permissions-exo/permissions-exo).
 - You'll also need access to the Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that says *Specify an email address in your domain*. 
 - For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
