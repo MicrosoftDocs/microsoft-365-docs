@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Office 365 Security overview
+# Office 365 security
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

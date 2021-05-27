@@ -1,7 +1,7 @@
 ---
 title: Understand the analyst report section in threat analytics.
 ms.reviewer: 
-description: Learn about the analyst report section of threat analytics reports. Understand how it provides information about threats, mitigation, detections, advanced hunting queries, and more.
+description: How the report section of threat analytics reports provides information about threats, mitigation, detections, advanced hunting queries, and more.
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# The analyst report in threat analytics 
+# The analyst report in threat analytics
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
