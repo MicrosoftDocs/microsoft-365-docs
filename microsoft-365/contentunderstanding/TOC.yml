@@ -44,6 +44,10 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+          items:
+            - name: Scenarios and use cases
+              href: adoption-scenarios.md 
+
         - name: Manage contracts in Microsoft 365
           items:
             - name: Overview
