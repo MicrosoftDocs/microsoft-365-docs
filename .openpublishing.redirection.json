@@ -3979,6 +3979,11 @@
       "source_path": "microsoft-365/compliance/customer-key-tenant-level.md",
       "redirect_url": "/microsoft-365/compliance/customer-key-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/classifier-how-retrain-comms-compliance.md",
+      "redirect_url": "/microsoft-365/compliance/classifier-learn-about",
+      "redirect_document_id": false
     }
   ]
 }
