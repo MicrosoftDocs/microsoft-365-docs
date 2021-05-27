@@ -105,13 +105,13 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Phase 4 of filtering in Defender for Office 365 is Post-delivery protection.":::
 
-1. **Safe Links** is MDO's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
+1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
-2. **Phish Zero-Hour Auto-purge (ZAP)** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
+2. **Zero-Hour Auto-purge (ZAP) for phishing** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
 
-3. **Malware ZAP** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
+3. **ZAP for malware** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
 
-4. **Spam ZAP** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
+4. **ZAP for phishing** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
 
 5. **Campaign Views** let administrators see the big picture of an attack, faster and more completely, than any team could without automation. Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns, and then allows admins to investigate them from start to end, including targets, impacts, and flows, that are also available in a downloadable campaign write-up.
 
@@ -122,7 +122,6 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 8. **Protection for OneDrive, SharePoint, and Teams** offers the same Safe Attachments protection against malicious files, natively, inside of OneDrive, SharePoint, and Microsoft Teams.
 
 9. When a URL that points to a file is selected post delivery, **linked content detonation** displays a warning page until the sandboxing of the file is complete, and the URL is found to be safe.
-
 
 ## The filtering stack diagram
 
