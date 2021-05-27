@@ -84,7 +84,7 @@ To upgrade a single DL, run the following command:
 Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
+For example, if you want to upgrade a DL with SMTP address dl1@contoso.com, run the following command:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
