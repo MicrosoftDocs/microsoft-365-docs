@@ -60,6 +60,6 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ## Related content
 
-[Give mailbox permissions to another user](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (article)\
-[Convert a user mailbox to a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) (article)\
-[User email settings](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (article)
+[Give mailbox permissions to another user](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)\
+[Convert a user mailbox to a shared mailbox](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)\
+[User email settings](../admin/email/office-365-user-email-settings.md) (article)

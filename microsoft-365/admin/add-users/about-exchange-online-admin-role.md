@@ -41,7 +41,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address.
 
-- [Email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) and malware filters for the organization.
+- [Email anti-spam protection](../../security/office-365-security/anti-spam-protection.md) and malware filters for the organization.
 
 - Manage Microsoft 365 groups
 
