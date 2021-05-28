@@ -38,6 +38,7 @@ Article | Description
 -|-
 [Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries.
 [Incident APIs](api-incident.md) | List and update incidents, along with other practical tasks.
+[Streaming API](../defender-endpoint/raw-data-export.md) (Preview) | Ship real-time events and alerts as they occur in a single data stream.
 
 ### Endpoint URIs
 
@@ -50,10 +51,6 @@ The base URI for both of the main APIs is: https://api.security.microsoft.com. F
 Tokens can be acquired by accessing https://api.security.microsoft.com.
 
 All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.
-
-
-## Streaming API
-Use the [Streaming API](../defender-endpoint/raw-data-export.md) to ship real-time events and alerts from instances as they occur within a single data stream.
 
 ## Related articles
 
