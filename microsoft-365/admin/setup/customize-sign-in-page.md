@@ -44,6 +44,8 @@ The following figure shows which parts of the sign-in page can be modified in Az
     
 In addition to the sign-in page, you can customize the Access Panel page in Azure.
   
+## Next steps
+
 If you are ready to add branding, explore the customization options in the Azure content set: [Add company branding to your Sign-in and Access Panel pages](/azure/active-directory/fundamentals/customize-branding).
 
 ## Related content

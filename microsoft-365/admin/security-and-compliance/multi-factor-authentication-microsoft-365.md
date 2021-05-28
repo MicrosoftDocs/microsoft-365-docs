@@ -165,7 +165,7 @@ In the Azure portal, you can:
 
 In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
 
-## Your next step
+## Next steps
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
 
