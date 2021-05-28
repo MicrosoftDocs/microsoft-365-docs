@@ -30,7 +30,7 @@ description: "Discover ways you can upgrade your Windows devices to Windows 10 P
 
 # Upgrade Windows devices to Windows 10 Pro
 
-Watch a short video about upgrading Windows devices to Windows 10 Pro.<br><br>
+## Watch: Upgrade Windows 10 Home to Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
@@ -51,9 +51,11 @@ To upgrade to Windows 10 Pro, you have several options. You can:
 > [!NOTE]
 > If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 for business subscription entitles you to a Windows Pro 10 upgrade.
     
-See [Set up Windows devices for Microsoft 365 for business users](set-up-windows-devices.md) to complete setting up Windows 10 devices. 
+## Next steps
+
+To complete setting up Windows 10 devices, see [Set up Windows devices for Microsoft 365 for business users](set-up-windows-devices.md). 
   
-See [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices. 
+To complete setting up Android and iOS devices, see [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-devices.md). 
   
 ## Related content
 
