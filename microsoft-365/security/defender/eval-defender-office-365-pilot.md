@@ -86,12 +86,34 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 5. On the Policy dashboard, click the *Preset security policies* tile. 
 :::image type="content" source="../../media/MDOEval/7-MDO-eval-pilot.png" alt-text="Click the Preset Security Policies tile.":::
 6. Click *Edit* to configure and assign the Standard policy and/or Strict policy. :::image type="content" source="../../media/MDOEval/8-MDO-eval-pilot.png" alt-text="On the Preset security policies panel, click Edit.":::
-7. 
-
+7. Add conditions to apply baseline ***EOP*** protections to specific pilot users, or groups of users, as needed, and select *Next* to continue.
+    - Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by simply adding accounts to, or removing account from, the group.
+ :::image type="content" source="../../media/MDOEval/9-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the EOP security level to your pilot group.":::
+9. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
+    - For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by simply adding / removing accounts via the group.
+1:::image type="content" source="../../media/MDOEval/10-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
+8. Review and confirm your changes for assigning preset security policies.
+9. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Security Admin Center and clicking the *Preset security policies* tile.
 
 ### Configure custom protection policies
 
+The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates give your pilot users the recommended baseline protection. However, you can also build and assign custom protection policies as part of your evaluation.
 
+It's *important* to be aware of the precedence these protection policies take when applied and enforced, as [Order and precedence of email protection - Office 365](../office-365-security/how-policies-and-protections-are-combined.md) explains.
+
+The table below provides references and additional guidance for configuring and assigning custom protection policies:
+
+|Policy   |Description  |Reference  |
+|:---------:|---------|---------|
+|Connection Filtering     |    Identify good or bad source email servers by their IP addresses.     |     [Configure the default connection filter policy in EOP](../office-365-security/configure-the-connection-filter-policy.md)    |
+|Anti-Malware    |    Protect users from email malware including what actions to take and who to notify if malware is detected.     |    [Configure anti-malware policies in EOP](../office-365-security/configure-anti-malware-policies.md)     |
+|Anti-Spoofing     |  Protect users from spoofing attempts using spoof intelligence and spoof intelligence insights.   |     [Configure spoof intelligence in Defender for Office 365](../office-365-security/learn-about-spoof-intelligence.md)    |
+|Anti-Spam     |    Protect users from email spam including what actions to take if spam is detected.     |    [Configure anti-spam policies in Defender for Office 365](../office-365-security/configure-your-spam-filter-policies.md)     |
+|Anti-Phishing     |   Protect users from phishing attacks and configure safety tips on suspicious messages      |     [Configure anti-phishing policies in Defender for Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)    |
+|Safe Attachments     |    Protect users from malicious content in email attachments and files in SharePoint, OneDrive, and Teams.     |    [Set up safe attachment policies in Defender for Office 365](../office-365-security/set-up-safe-attachments-policies.md)     |
+|Safe Links     |     Protect users from opening and sharing malicious links in email messages or Office desktop apps.    |    [Set up safe links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)     |
+
+<!-- 
 ## Step 3: Try out capabilities
 
 Now that your pilot is set up and configured, it's helpful to become familiar with the reporting and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
@@ -104,6 +126,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
 |Row4     |         |         |
 |Row5     |         |         |
+ -->
 
 ### Navigation you may need
 
