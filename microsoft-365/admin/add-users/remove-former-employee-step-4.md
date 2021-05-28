@@ -65,7 +65,7 @@ You can also grant access to another user on former employee's onedrive
 
 6. Under **People**, select **Manage User Profiles**.
 
-7. Enter the Former employee's name and select **Find**.
+7. Enter the former employee's name and select **Find**.
 
 8. Right-click the user, and then choose **Manage site collection owners**.
 
