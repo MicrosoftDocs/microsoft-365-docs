@@ -36,6 +36,8 @@ Maximum number of policies for retention per workload:
 - SharePoint or OneDrive: (all sites automatically included): 13
 - SharePoint or OneDrive (specific locations included or excluded): 2,600
 
+Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer. 
+
 ## Maximum number of items per policy
 
 If you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of: 
