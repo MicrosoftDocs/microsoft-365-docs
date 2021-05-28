@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Specify the cloud-delivered protection level

@@ -381,7 +381,7 @@ When you use a previously created and published [retention label](retention.md#r
 
 ### Using a sensitivity label as a condition in a DLP policy
 
-Sensitivity label as a condition in DLP policies is currently in preview. [Learn more](./dlp-sensitivity-label-as-condition.md).
+[Learn more](./dlp-sensitivity-label-as-condition.md) about using Sensitivity label as a condition in DLP policies.
   
 ### How this feature relates to other features
 
@@ -437,7 +437,9 @@ A preconfigured DLP policy template can help you detect specific types of sensit
   
 Your organization may also have its own specific requirements, in which case you can create a DLP policy from scratch by choosing the **Custom policy** option. A custom policy is empty and contains no premade rules. 
   
-## Roll out DLP policies gradually with test mode
+<!-- ## Roll out DLP policies gradually with test mode
+
+rehomed to Plan for DLP
 
 When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
@@ -458,7 +460,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set rule priority](../media/dlp-set-rule-priority.png)
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## DLP reports
 

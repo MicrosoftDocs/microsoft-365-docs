@@ -15,6 +15,7 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
+recommendations: false
 description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
 ---
 

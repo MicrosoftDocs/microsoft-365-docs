@@ -105,6 +105,7 @@ determination | Specifies the determination of the incident. The property values
 status | Categorize incidents (as *Active*, or *Resolved*). It can help you organize and manage your response to incidents. | Active
 severity | Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention.<br /><br />One of the following values: *Informational*, *Low*, *Medium, and *High*. | Medium
 tags | Array of custom tags associated with an incident, for example to flag a group of incidents with a common characteristic. | \[\]
+comments | Array of comments created by secops when managing the incident, for example additional information about the classification selection. | \[\]
 alerts | Array containing all of the alerts related to the incident, plus other information, such as severity, entities that were involved in the alert, and the source of the alerts. | \[\] (see details on alert fields below)
 
 ### Alerts metadata
@@ -210,6 +211,13 @@ GET https://api.security.microsoft.com/api/incidents
 			"status": "Active",
 			"severity": "Medium",
 			"tags": [],
+			"comments": [
+				{
+					"comment": "test comment for docs",
+					"createdBy": "secop123@contoso.com",
+					"createdTime": "2021-01-26T01:00:37.8404534Z"
+				}
+			],
 			"alerts": [
 				{
 					"alertId": "caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC",
@@ -318,6 +326,7 @@ GET https://api.security.microsoft.com/api/incidents
 			"status": "Active",
 			"severity": "Low",
 			"tags": [],
+			"comments": [],
 			"alerts": [
 				{
 					"alertId": "da637349914833441527_393341063",
@@ -408,6 +417,7 @@ GET https://api.security.microsoft.com/api/incidents
 			"status": "Active",
 			"severity": "Informational",
 			"tags": [],
+			"comments": [],
 			"alerts": [
 				{
 					"alertId": "faf8edc936-85f8-a603-b800-08d8525cf099",

@@ -3,8 +3,8 @@ title: Automated investigation and response in Microsoft Defender for Office 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -73,9 +73,9 @@ During and after each automated investigation, your security operations team can
 AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
 - [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) (should be turned on)
-- [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
-- [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
-- [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection)
+- [Anti-malware policies](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Anti-phishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
