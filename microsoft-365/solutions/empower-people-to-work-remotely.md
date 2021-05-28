@@ -31,7 +31,7 @@ Hybrid workers can work on-site or remotely in a combination of locations. Allow
 - Reduce worker commuting, leaving workers with more time to be productive and for stress-reducing activities outside of work.
 - Save on office space.
 
-Microsoft 365 has the capabilities to empower your workers to work either on-site or remotely.
+Microsoft 365 has the capabilities to empower your hybrid workers to work either on-site or remotely.
 
 ![Empower your hybrid workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
@@ -60,11 +60,11 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 - Managed
 
-  Your remote worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health.
+  Your hybrid worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health.
 
 - Collaborative and productive
 
-  Your remote workers can be as productive as on-premises in a highly collaborative way with:
+  Your hybrid workers can be as productive as on-premises in a highly collaborative way with:
 
   - Online meetings and chat sessions with Teams. 
 
@@ -74,9 +74,9 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
-![The basic infrastructure for remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![The basic infrastructure for hybrid workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-To enable the capabilities of Microsoft 365 for your remote workers, use these Microsoft 365 features.
+To enable the capabilities of Microsoft 365 for your hybrid workers, use these Microsoft 365 features.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
@@ -99,13 +99,13 @@ To enable the capabilities of Microsoft 365 for your remote workers, use these M
 For security and compliance criteria, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md).
 
 <a name="poster"></a>
-For a 2-page summary of this solution, see the [Empower remote workers poster](../downloads/empower-remote-workers.pdf).
+For a 2-page summary of this solution, see the [Empower hybrid workers poster](../downloads/empower-remote-workers.pdf).
 
-[![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+[![Empower hybrid workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) or  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
-## Provide remote working for all of your workers
+## Provide hybrid working for all of your workers
 
 You can enable all of your workers to stay productive from anywhere with these devices:
 
@@ -115,13 +115,13 @@ You can enable all of your workers to stay productive from anywhere with these d
 
 ## Next steps
 
-Use these steps to secure and optimize access to your organization's servers and cloud services and maximize your remote worker's productivity.
+Use these steps to secure and optimize access to your organization's servers and cloud services and maximize your hybrid worker's productivity.
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)
 3. [Deploy security and compliance services](empower-people-to-work-remotely-security-compliance.md)
 4. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
-5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
+5. [Deploy hybrid worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train your workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
 [![The steps to set up your infrastructure for hybrid work with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
