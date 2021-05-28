@@ -62,7 +62,7 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 |
 
 > [!IMPORTANT]
-> You must be a global administrator or have the security administrator role assigned for the Security & Compliance Center to set up SIEM integration with Microsoft Defender for Office 365.
+> You must be a global administrator or have the security administrator role assigned for the Microsoft 365 security center to set up SIEM integration with Microsoft Defender for Office 365.
 >
 > Audit logging must be turned on for your Microsoft 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 

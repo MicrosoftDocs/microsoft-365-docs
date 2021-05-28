@@ -36,17 +36,17 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify the following types of overrides:
+The Tenant Allow/Block List in the Microsoft 365 security center gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify the following types of overrides:
 
 - URLs to block.
 - Files to block.
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 
-This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+This article describes how to configure entries in the Tenant Allow/Block List in the Microsoft 365 security center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
@@ -86,9 +86,9 @@ This article describes how to configure entries in the Tenant Allow/Block List i
   >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-## Use the Security & Compliance Center to create block URL entries in the Tenant Allow/Block List
+## Use the Microsoft 365 security center to create block URL entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
 2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Block**
 
@@ -108,9 +108,9 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create block file entries in the Tenant Allow/Block List
+## Use the Microsoft 365 security center to create block file entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block List**.
 
 2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click **Block**.
 
@@ -130,7 +130,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create allow or block spoofed sender entries in the Tenant Allow/Block List
+## Use the Microsoft 365 security center to create allow or block spoofed sender entries in the Tenant Allow/Block List
 
 **Notes**:
 
@@ -138,7 +138,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
 - Entries for spoofed senders never expire.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block List**.
 
 2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click **Add**.
 
@@ -154,9 +154,9 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to view entries in the Tenant Allow/Block List
+## Use the Microsoft 365 security center to view entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block List**.
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
@@ -216,9 +216,9 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
    When you're finished, click **Apply**. To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
-## Use the Security & Compliance Center to modify entries in the Tenant Allow/Block List
+## Use the Microsoft 365 security center to modify entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block List**.
 
 2. Select the tab that contains the type of entry that you want to modify:
    - **URLs**
@@ -244,9 +244,9 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Save**.
 
-## Use the Security & Compliance Center to remove entries from the Tenant Allow/Block List
+## Use the Microsoft 365 security center to remove entries from the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
 2. Select the tab that contains the type of entry that you want to remove:
    - **URLs**

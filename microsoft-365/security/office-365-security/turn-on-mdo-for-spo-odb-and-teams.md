@@ -37,9 +37,9 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com>. To go directly to the **ATP Safe Attachments** page, open <https://protection.office.com/safeattachmentv2>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **ATP Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
 
-- To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.
 
@@ -47,9 +47,9 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 - Allow up to 30 minutes for the settings to take effect.
 
-## Step 1: Use the Security & Compliance Center to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+## Step 1: Use the Microsoft 365 security center to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.
 
 2. In the **Global settings** fly out that appears, go to the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/scc-toggle-on.png) to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 
@@ -82,13 +82,13 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
-## Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files
+## Step 3 (Recommended) Use the Microsoft 365 security center to create an alert policy for detected files
 
 You can create an alert policy that notifies you and other admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
 
-1. In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Policies & rules** \> **Alert policy** or open <https://security.microsoft.com/alertpolicies>.
 
-2. On the **Alert policies** page, click **New alert policy**.
+2. On the **Alert policy** page, click **New alert policy**.
 
 3. The **New alert policy** wizard opens in a fly out. On the **Name your alert** page, configure the following settings:
 
@@ -135,7 +135,7 @@ For detailed syntax and parameter information, see [New-ActivityAlert](/powershe
 
 - To verify that you've successfully turned on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, use either of the following steps:
 
-  - In the [Security & Compliance Center](https://protection.office.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, select **Global settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
+  - In the [Microsoft 365 security center](https://security.microsoft.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, select **Global settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
 
   - In Exchange Online PowerShell, run the following command to verify the property setting:
 
@@ -155,9 +155,9 @@ For detailed syntax and parameter information, see [New-ActivityAlert](/powershe
 
 - To verify that you've successfully configured an alert policy for detected files, use any of the following steps:
 
-  - In the Security & Compliance Center, go to **Alerts** \> **Alert policies** \> select the alert policy, and verify the settings.
+  - In the Microsoft 365 security center, go to **Policies & rules** \> **Alert policy** \> select the alert policy, and verify the settings.
 
-  - In Security & Compliance Center PowerShell, replace \<AlertPolicyName\> with the name of the alert policy, run the following command, and verify the property values:
+  - In Microsoft 365 security center PowerShell, replace \<AlertPolicyName\> with the name of the alert policy, run the following command, and verify the property values:
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

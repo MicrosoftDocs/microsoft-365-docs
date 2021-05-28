@@ -46,7 +46,7 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, go to the Security & Compliance Center (<https://protection.office.com>) and choose **Threat management** \> **Threat tracker**.
+To view and use your Threat Trackers for your organization, go to the Microsoft 365 security center (<https://protection.office.com>) and choose **Threat management** \> **Threat tracker**.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -101,7 +101,7 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Security & Compliance Center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Microsoft 365 security center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers [here](https://protection.office.com/). Go to **Threat management** \> **Threat trackers**.
 

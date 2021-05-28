@@ -39,7 +39,7 @@ There's no built-in or default Safe Links policy. To get Safe Links scanning of 
 > [!NOTE]
 > You configure the global settings for Safe Links protection **outside** of Safe Links policies. For instructions, see [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-You can configure Safe Links policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
+You can configure Safe Links policies in the Microsoft 365 security center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Microsoft Defender for Office 365 add-on subscriptions).
 
 The basic elements of a Safe Links policy are:
 
@@ -49,7 +49,7 @@ The basic elements of a Safe Links policy are:
 > [!IMPORTANT]
 > Admins should consider the different configuration settings for SafeLinks. One of the available options is to include user identifiable information in SafeLinks. This feature enables *Security Ops teams* to investigate potential user compromise, take corrective action, and limit costly breaches.
 
-The difference between these two elements isn't obvious when you manage Safe Links polices in the Security & Compliance Center:
+The difference between these two elements isn't obvious when you manage Safe Links polices in the Microsoft 365 security center:
 
 - When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.
 - When you modify a Safe Links policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule. All other settings modify the associated safe links policy.
@@ -59,19 +59,19 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Safe Links** page, use <https://protection.office.com/safelinksv2>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article:
-  - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center **and** a member of the **Organization Management** role group in Exchange Online.
+  - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center **and** a member of the **Organization Management** role group in Exchange Online.
   - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   . - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -80,11 +80,11 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
-## Use the Security & Compliance Center to create Safe Links policies
+## Use the Microsoft 365 security center to create Safe Links policies
 
-Creating a custom Safe Links policy in the Security & Compliance Center creates the safe links rule and the associated safe links policy at the same time using the same name for both.
+Creating a custom Safe Links policy in the Microsoft 365 security center creates the safe links rule and the associated safe links policy at the same time using the same name for both.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. On the **Safe Links** page, click **Create**.
 
@@ -154,17 +154,17 @@ Creating a custom Safe Links policy in the Security & Compliance Center creates 
 
    When you're finished, click **Finish**.
 
-## Use the Security & Compliance Center to view Safe Links policies
+## Use the Microsoft 365 security center to view Safe Links policies
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
    The policy details appear in a fly out
 
-## Use the Security & Compliance Center to modify Safe Links policies
+## Use the Microsoft 365 security center to modify Safe Links policies
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
@@ -176,7 +176,7 @@ To enable or disable a policy or set the policy priority order, see the followin
 
 ### Enable or disable Safe Links policies
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. Notice the value in the **Status** column:
 
@@ -193,11 +193,11 @@ For more information about the order of precedence and how multiple policies are
 Safe Links policies are displayed in the order they're processed (the first policy has the **Priority** value 0).
 
 > [!NOTE]
-> In the Security & Compliance Center, you can only change the priority of the Safe Links policy after you create it. In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).
+> In the Microsoft 365 security center, you can only change the priority of the Safe Links policy after you create it. In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).
 
-To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).
+To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Microsoft 365 security center).
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
@@ -213,9 +213,9 @@ To change the priority of a policy, move the policy up or down in the list (you 
 
 5. When you're finished, click **Close**.
 
-## Use the Security & Compliance Center to remove Safe Links policies
+## Use the Microsoft 365 security center to remove Safe Links policies
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
@@ -242,12 +242,12 @@ Creating a Safe Links policy in PowerShell is a two-step process:
 > 
 > - You can create a new safe links rule and assign an existing, unassociated safe links policy to it. A safe links rule can't be associated with more than one safe links policy.
 > 
-> - You can configure the following settings on new safe links policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
+> - You can configure the following settings on new safe links policies in PowerShell that aren't available in the Microsoft 365 security center until after you create the policy:
 > 
 >   - Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeLinksRule** cmdlet).
 >   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeLinksRule** cmdlet).
 > 
-> - A new safe links policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a safe links rule.
+> - A new safe links policy that you create in PowerShell isn't visible in the Microsoft 365 security center until you assign the policy to a safe links rule.
 
 #### Step 1: Use PowerShell to create a safe links policy
 
@@ -356,7 +356,7 @@ For detailed syntax and parameter information, see [Get-SafeLinksRule](/powershe
 
 ### Use PowerShell to modify safe links policies
 
-You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Links policy in the Security & Compliance Center, you're only renaming the safe links _rule_.
+You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Links policy in the Microsoft 365 security center, you're only renaming the safe links _rule_.
 
 The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):
 
@@ -468,13 +468,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 For detailed syntax and parameter information, see [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](view-reports-for-mdo.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).
+To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](view-reports-for-mdo.md) and [Use Explorer in the Microsoft 365 security center](threat-explorer.md).
 
 ## How do you know these procedures worked?
 
 To verify that you've successfully created, modified, or removed Safe Links policies, do any of the following steps:
 
-- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list, and view the details in the fly out.
+- In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list, and view the details in the fly out.
 
 - In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 
