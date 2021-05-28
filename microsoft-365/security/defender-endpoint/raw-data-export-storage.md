@@ -25,8 +25,6 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Office 365](ENTER MDO FWLINK HERE)
 
 
 ## Before you begin:
@@ -76,7 +74,6 @@ ms.technology: mde
 
 - For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. 
 
 ## Data types mapping:
 
