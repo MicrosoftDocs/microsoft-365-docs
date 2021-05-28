@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
@@ -12,14 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
-- commerce 
+- commerce_ssp
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
+ms.date: 03/26/2021
 ---
 
 # Manage self-service purchases (Admin)
@@ -194,6 +195,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 ## Need help? Contact us.
 
-For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
+For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with self-service purchases, [contact support](../../business-video/get-help-support.md).

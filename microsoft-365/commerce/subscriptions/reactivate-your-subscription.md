@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,9 +18,8 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-search.appverid: MET150
-description: "Learn how to reactivate your subscription when it expires, is disabled, or canceled."
+search.appverid: MET150 
+description: "Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term."
 ms.date: 04/07/2021
 ---
 
@@ -54,7 +53,7 @@ You must be a Global or Billing admin to reactivate a subscription. For more inf
 
 ::: moniker-end
 
-2. On the **Products** tab, find the subscription that you want to reactivate. Select **More actions** (three dots), then select **Reactivate this subscription**.\
+2. On the **Products** tab, find the subscription that you want to reactivate. Select the three dots (more actions), then select **Reactivate this subscription**.\
     If you don't see **Reactivate this subscription**, [contact support](../../business-video/get-help-support.md).
 3. In the **Reactivate this subscription** pane, select a payment method from the drop-down list, or select **Add payment method**.
 4. Select **Save**.
