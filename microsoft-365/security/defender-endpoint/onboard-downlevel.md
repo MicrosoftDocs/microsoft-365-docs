@@ -190,6 +190,7 @@ The following command is an example. Replace the following values:
 - KB - Use the applicable KB relevant to the endpoint you're onboarding
 - Workspace ID and KEY - Use your ID and key
 
+
 ```dos
 @echo off 
 cd "C:"
@@ -198,11 +199,11 @@ exit
 ) ELSE (
 wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
 wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /C:"setup.exe /qn ADD_OPINSIGHTS_WORKSPACE=1
-OPINSIGHTS_WORKSPACE_ID=<your workspace ID>
-OPINSIGHTS_WORKSPACE_KEY=<your workspace key> AcceptEndUserLicenseAgreement=1"
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"
+"C:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="your workspace ID" OPINSIGHTS_WORKSPACE_KEY="your workspace key" AcceptEndUserLicenseAgreement=1
 )
 ```
+
 
 
 
