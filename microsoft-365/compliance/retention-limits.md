@@ -40,9 +40,11 @@ Although retention policies for Microsoft Teams and Yammer use mailboxes to stor
 
 ## Maximum number of items per policy
 
-If you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of: 
+Applicable only if you use [static scopes rather than adaptive scopes](retention.md#scopes-for-retention-policies).
 
-Maximum numbers of items per policy for retention:
+If you use static scopes and the optional configuration to include or exclude specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of. 
+
+Maximum numbers of items per policy for retention for static scopes:
 
   - 1,000 mailboxes (user mailboxes or group mailboxes)
   - 1,000 Microsoft 365 groups
@@ -51,14 +53,11 @@ Maximum numbers of items per policy for retention:
 
 Because these limitations are per policy, if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) that use multiple retention policies for this reason.
 
-However, multiple policies result in higher administrative overheads, so always confirm whether you really need inclusions and exclusions. Remember that the default configuration that applies to the entire location doesn't have any limitations, and this configuration choice might be a better solution than creating and maintaining multiple policies.
-
-> [!TIP]
-> If do you need to create and maintain multiple policies for this scenario, consider using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) for more efficient configuration.
+However, multiple policies result in higher administrative overheads. Consider using adaptive scopes rather than creating and maintaining multiple policies with includes and excludes.
 
 ### Examples of using multiple policies to avoid exceeding maximum numbers
 
-The following examples provide some design solutions for when you can't specify just the location for a retention policy, and must take into account the maximum number of items documented in the previous section.
+The following examples are for static scopes and provide some design solutions for when you can't specify just the location for a retention policy, and must take into account the maximum number of items documented in the previous section.
 
 Exchange example:
 
