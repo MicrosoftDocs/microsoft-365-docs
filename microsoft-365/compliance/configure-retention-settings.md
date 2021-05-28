@@ -46,13 +46,15 @@ Use the following information to help you configure the type of scope that you c
 > [!NOTE]
 > Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
 
-When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes that you can use to define your adaptive scope. 
+When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes:
 
 | Adaptive scope type | Attributes supported |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Team chats| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street Address <br/> City <br/>Zip or Post Code <br/> Country or region <br/> Email Address <br/> Aliases <br/> Custom exchange attributes, CustomAttribute1 - CustomAttribute15|
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 groups <br/> - Teams channel messages |Name <br/> Description <br/> Email Address <br/> Aliases|
 |**Sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |SharePoint URL <br/> SharePoint Property bag|
+
+Create as many adaptive scopes as you need. A single policy for retention can have one or many adaptive scopes.
 
 Follow the prompts in the wizard to select the attributes you want to use to build the dynamic membership, and type in the attribute values. For example, to configure a retention policy for Exchange mail that will be assigned to users in Europe, select the **Country or region** attribute, and then type in **Europe**. The wizard will query Azure AD and identify all users who have the value **Europe** specified for in their account for the **Country or region** attribute.
 
@@ -63,6 +65,8 @@ Follow the prompts in the wizard to select the attributes you want to use to bui
 You can use any combination of attributes that are supported for their locations, together with logical operators to build queries. For example,  
 
 Use the **Items included for now** displayed value to help you identify mistyped attribute values or misconfigured queries.
+
+
 
 ### Configuration information for static scopes
 

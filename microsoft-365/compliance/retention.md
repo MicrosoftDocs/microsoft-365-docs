@@ -126,13 +126,13 @@ Items inherit the retention settings from their container specified in the reten
 
 When you configure a policy for retention, you choose between an adaptive scope and a static scope to define assigning the policy.
 
-- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations.
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
 
 Advantages of using adaptive scopes:
 
-- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-policy) limitations, the more flexible configuration will likely result in far fewer policies.
+- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
 - More powerful targeting for your retention policies. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
 
@@ -145,6 +145,9 @@ Advantages of using static scopes:
     For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low and do not change. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
 
 For more information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+
+> [!IMPORTANT]
+> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ### Retention labels
 
