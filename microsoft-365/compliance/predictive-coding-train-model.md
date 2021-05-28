@@ -66,7 +66,7 @@ After you perform the first training round, a job is started that does the follo
   |**Reviewer labels item as not relevant**| False negative |True negative         |
   ||||
 
-  Based on these comparisons, the model derives values for the F-Score, Recall, Richness, and Precision metrics of the model and the margin of error for each one.
+  Based on these comparisons, the model derives values for the F-Score, Recall, Richness, and Precision metrics of the model and the margin of error for each one. These metrics are displayed on a flyout page for the training round.
 
 - Finally, the model determines the next 50 documents that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designated them as part of the training set for the next round. The sampling for the training round is not uniformly sampled. The model will optimize sampling (biased-selection) of documents from the review set to optimally select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range.
 
