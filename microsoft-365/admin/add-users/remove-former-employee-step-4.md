@@ -71,7 +71,7 @@ You can also grant access to another user on former employee's onedrive
 
 9. Add the **User** to the **Site collection Administrators** and Click On **Ok**
 
-10. The **User** will now able to access the former employees Onedrive using the onedrive **URL** 
+10. The user will now be able to access the former employee's OneDrive using the OneDrive URL. 
 
 ### Revoke admin access to a user's OneDrive
 
