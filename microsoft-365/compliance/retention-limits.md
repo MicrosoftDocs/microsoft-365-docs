@@ -28,7 +28,7 @@ When you use [retention policies and retention label policies](retention.md#rete
 
 ## Maximum number of policies per tenant
 
-A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention, and other policies for compliance such as policies for DLP, information barriers, eDiscovery holds, and policies for sensitivity labels.
+A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention, and other policies for compliance such as policies for DLP, information barriers, eDiscovery holds, and sensitivity labels.
 
 Within this 10,000 policies limit, there are also some limits on the maximum number of policies for retention per workload:
 
