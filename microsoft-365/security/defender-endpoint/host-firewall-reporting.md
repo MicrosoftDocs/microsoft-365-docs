@@ -55,31 +55,27 @@ The following scenarios are supported during Ring0 Preview.
 
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to https://security.microsoft.com/firewall. 
 
-Image 1
+Image: host-firewall-reporting-page
 
-Image 2
-
-These reports can also be accessed by going to **Reports** > **Devices** > **Firewall** located at the bottom of the **Firewall Blocked Inbound Connections** section.
-
-Image 3
+These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
 ### From "Computers with a blocked connection" to device
 
-Cards support interactive objects. You can drill into the activity of a device by clicking on **Test-Machine-2**, which will launch https://securitycenter.microsoft.com in a new tab, and take you directly to the **Device Timeline** tab. 
+Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch https://securitycenter.microsoft.com in a new tab, and take you directly to the **Device Timeline** tab. 
 
-Image 4
+Image: firewall-reporting-blocked-connection
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device. 
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events. 
 
-Image 5
+Image: firewall-reporting-filters-button
 
 ### Drill into advanced hunting (preview refresh)
 
 Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated. 
 
-Image 6
+Image: firewall-reporting-advanced-hunting
 
 The query can now be executed, and all related Firewall events from the last 30 days can be explored. 
 
