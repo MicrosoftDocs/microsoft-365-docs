@@ -26,19 +26,20 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Office 365](ENTER MDO FWLINK HERE)
 
 
 ## Before you begin:
 
 1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
 
 ## Enable raw data streaming:
 
 1. Log in to [Microsoft 365 Defender security center](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) on Microsoft Defender Security Center.
+2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender Security Center.
 
 3. Click on **Add data export settings**.
 
@@ -46,7 +47,7 @@ ms.technology: mde
 
 5. Choose **Forward events to Azure Storage**.
 
-6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
+6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage Account Resource ID**:
 
    ![Image of event hub resource ID1](images/storage-account-resource-id.png)
 
