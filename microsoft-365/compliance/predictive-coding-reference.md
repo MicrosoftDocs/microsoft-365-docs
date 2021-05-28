@@ -20,20 +20,25 @@ description: ""
 
 This article describes the key concepts and metrics of the predictive coding tool in Advanced eDiscovery. The sections in the article are listed in alphabetical order.
 
-
 ## Confidence level
 
-The confidence level is an advanced setting when you create a predictive coding mode. 
-
-The probability that our model's performance metrics (for example, richness, precision, and recall) fall within a specified range (determined by your margin of error) that's representative of the true values. ​
-
-When you create a model, we gather a sample of items from the review set to use as the control set. The control set is used during the training process to evaluate the model's predictions based on the feedback you provide during each round of training. You can define confidence level and margin of error values to refine how many items are included in the control set.
+The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to documents in the review set.​ The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
 
 ## Control set
 
+A control set is used during the training process of a predictive coding model. The control set is to evaluate the prediction scores that the model assigns to documents with the labeling that you perform during training rounds. The size of the control set is based on the number of documents in the review set and the confidence level and margin of error values that are set when creating the model. Documents in the control set never change and aren't identifiable to users. The total number of items in the control set is displayed on the flyout page for a training round.
 
 ## Control set confusion matrix
 
+After you complete a training round, the model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classifications to assess the model's prediction performance:
+  
+  |          |Model predicts item is relevant |Model predicts item is not relevant |
+  |:---------|:---------|:---------|
+  |**Reviewer labels item as relevant**| True positive| False positive |
+  |**Reviewer labels item as not relevant**| False negative |True negative |
+  ||||
+
+  Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. The number of each of the confusion types from the matrix is displayed on the flyout page for a training round.
 
 ## F-score
 
@@ -41,15 +46,11 @@ The F-score is a weighted average of the scores for the precision and recall met
 
 ## Margin of error
 
-The margin of error is an advanced setting when you create a predictive coding mode. 
-
-
-The degree of error in performance metrics (for example, richness, precision, and recall) that's derived from a random sampling of items in your control set. A lower margin of error requires a larger control set to ensure that our performance metrics fall within a smaller range of the true value.
-
-When you create a model, we gather a sample of items from the review set to use as the control set. The control set is used during the training process to evaluate the model's predictions based on the feedback you provide during each round of training. You can define confidence level and margin of error values to refine how many items are included in the control set.
+The margin of error is an advanced setting when you create a predictive coding mode. It specifies the degree of error in performance metrics (for example, richness, precision, and recall) that's derived from the random sampling of items in your control set. A lower margin of error requires a larger control set to ensure that the model's performance metrics fall within a smaller range. The values for the margin of error and confidence level also help determine how many items are included in the control set. The default value for the margin of error is 0.05 or 5%.
 
 ## Model stability
 
+Model stability indicates the model's ability to accurately predict whether a document in a review set is relevant or not relevant. When a model is unstable, more training rounds may need to be performed to include the model's stability. When the model is stable, no more training rounds may need to be performed. The model dashboard indicates the current state of the model's stability. When a model is stable, the performance metrics have reached a level that matches the settings for the confidence level and margin of error.
 
 ## Overturn rate
 
@@ -69,6 +70,7 @@ The recall metric measures the proportion of items the model predicted were rele
 
 ## Review set
 
+A review set provides the scope of a predictive coding model. When you create a new model for the review set, items for the control set and training sets are selected from the review set. When the model assigns prediction scores, it assigns those scores the documents in the review. You have to add all documents to the review set before you create a predictive coding model. If you add documents after you create a model, those documents will not be assigned a prediction score.
 
 ## Richness
 
@@ -80,6 +82,4 @@ The term *sampled items* is a reference to random sample of documents in a revie
 
 ## Training set
 
-
-
-
+The model randomly selects documents from the review set and adds them to a training set. During a training round, documents from the training set (in addition to documents from the control set) are presented to you so that you can label each one as either "relevant" or "not relevant". This labeling or "training" process helps the model learn how to predict which documents in the review are relevant or not relevant. Each time you perform a training round, the model selects more documents from the review and adds them to the training set for that training round. Documents from the control set are never selected for a training set.
