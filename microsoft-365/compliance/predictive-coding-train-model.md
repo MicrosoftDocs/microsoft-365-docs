@@ -50,26 +50,38 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 After you perform the first round of training, you can perform subsequent training rounds by following the steps in the previous section. The only difference is the number of the training round will be updated on the model **Overview** tab. For example, after performing the first training round, you can click **Start next training round** to start the second round of training. And so on.
 
+Each round of training (both those in progress and those that are complete) is displayed on the **Training** tab for the model. When you select a training round, a flyout page with information and metrics for the round is displayed.
+
 ## What happens after you perform a training round
 
 After you perform the first training round, a job is started that does the following things:
 
 - Based on how you labeled the 40 items in the training set, the model learns from your labeling and updates itself to become more accurate.
 
-- The model then processes each item in the entire review set and assigns a prediction score between **0** (not relevant) and **1.0** (relevant).  
+- The model then processes each item in the entire review set and assigns a prediction score between **0** (not relevant) and **1** (relevant).  
 
-- The model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classification (called the *confusion matrix*) to assess the model's prediction performance:
+- The model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classification (called the *Control set confusion matrix*) to assess the model's prediction performance:
   
-  |          |Model predicts item is relevant   |Model predicts item is not relevant |
+  |          |Model predicts item is relevant |Model predicts item is not relevant |
   |:---------|:---------|:---------|
-  |**Reviewer labels item as relevant**| True positive| False positive         |
-  |**Reviewer labels item as not relevant**| False negative |True negative         |
+  |**Reviewer labels item as relevant**| True positive| False positive |
+  |**Reviewer labels item as not relevant**| False negative |True negative |
   ||||
 
-  Based on these comparisons, the model derives values for the F-Score, Recall, Richness, and Precision metrics of the model and the margin of error for each one. These metrics are displayed on a flyout page for the training round.
+  Based on these comparisons, the model derives values for the F-score, Precision, and Recall metrics and the margin of error for each one. Scores for these model performance metrics are displayed on a flyout page for the training round. For a description of these metrics, see [Predictive coding reference](predictive-coding-reference.md).
 
-- Finally, the model determines the next 50 documents that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designated them as part of the training set for the next round. The sampling for the training round is not uniformly sampled. The model will optimize sampling (biased-selection) of documents from the review set to optimally select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range.
+- Finally, the model determines the next 50 documents that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designate them as the training set for the next round. The sampling for the next training round is not uniformly sampled. The model will optimize the sampling selection of documents from the review set to select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range. This process is known as *biased selection*.
+
+### What happens after you perform subsequent training rounds
+
+After you perform subsequent training rounds (after the first training round), the model does the following things:
+
+- The model is updated based on the labels that you applied to the training set in that round of training.
+
+- The system evaluates the model's prediction score on the items in the control set and check whether the score aligns with the how you labeled items in the control set. The evaluation is performed on all labeled items from control set for all training rounds. The results of this evaluation is incorporated in the dashboard on the **Overview** tab for the model.
+
+- The updated model reprocesses every item in the review set and assign each item an updated prediction score.
 
 ## Next steps
 
-After you perform the first training round, you can perform more training rounds or apply the prediction score filter to the review set to view the documents that the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).
+After you perform the first training round, you can perform more training rounds or apply the model's prediction score filter to the review set to view the documents the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).
