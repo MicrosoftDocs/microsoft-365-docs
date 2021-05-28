@@ -46,6 +46,9 @@ The basic elements of a Safe Links policy are:
 - **The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.
 - **The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).
 
+> [!IMPORTANT]
+> Admins should consider the different configuration settings for SafeLinks. One of the available options is to include user identifiable information in SafeLinks. This feature enables *Security Ops teams* to investigate potential user compromise, take corrective action, and limit costly breaches.
+
 The difference between these two elements isn't obvious when you manage Safe Links polices in the Security & Compliance Center:
 
 - When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.
