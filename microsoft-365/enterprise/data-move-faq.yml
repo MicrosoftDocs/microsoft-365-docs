@@ -154,9 +154,9 @@ sections:
           Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
 
       - question: |
-          My tenant has configured the [Multi Geo add-on](https://aka.ms/multi-geo). Can I still enroll in my tenant in the Microsoft 365 Move Program to change my default geo and move any user not in a satellite region to the new default geo?
+          My tenant has configured the Multi Geo add-on. Can I still enroll in my tenant in the Microsoft 365 Move Program to change my default geo and move any user not in a satellite region to the new default geo?
         answer: |
-          Yes, your tenant is eligible to enroll but there are significant considerations as tenant-level move is not fully supported for customers that have configured Multi-Geo.
+          Yes, your tenant is eligible to enroll but there are significant considerations as tenant-level move is not fully supported for customers that have configured [Multi-Geo](https://aka.ms/multi-geo).
           
           SharePoint Online and OneDrive for Business cannot migrate to the new datacenter geo at the tenant level through this program. The customer administrator can configure OneDrive for Business shares to move to any available region using Multi-Geo, but the default location for the tenant cannot be changed once Multi-Geo has been configured for a tenant.
           
@@ -173,7 +173,7 @@ additionalContent: |
           
     [Microsoft 365 interactive datacenter map](https://office.com/datamaps)
           
-    [Microsoft 365 Support](../admin/contact-support-for-business-products.md)
+    [Microsoft 365 Support](../business-video/get-help-support.md)
           
     [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
             
