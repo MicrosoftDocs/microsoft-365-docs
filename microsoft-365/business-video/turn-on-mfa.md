@@ -20,10 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to turn on multi-factor authentication."
+description: "Learn how to turn on multi-factor authentication, sometimes known as two-factor authentication."
 ---
 
 # Turn on multi-factor authentication
+
+## Watch: Turn on multi-factor authentication
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 

@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to add another domain to your subscription."
+description: "Your organization might need multiple domains so customers can find you. Learn how to add another domain to your subscription."
 ---
 
 # Add another domain
@@ -51,7 +51,7 @@ To receive email at your new domain, you'll need to add a new email alias for ea
 
 ## Related content
 
-[Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (article)
-[Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (article)
-[Change nameservers to set up Microsoft 365 with any domain registrar](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (article)
+[Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (article)\
+[Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (article)\
+[Change nameservers to set up Microsoft 365 with any domain registrar](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (article)\
 [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article)
