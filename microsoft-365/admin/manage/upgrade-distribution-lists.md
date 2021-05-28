@@ -81,10 +81,10 @@ If you're experienced at using PowerShell, you might want to go this route inste
 To upgrade a single DL, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
+For example, if you want to upgrade a DL with SMTP address dl1@contoso.com, run the following command:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
@@ -98,8 +98,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 You can also pass multiple DLs as a batch and upgrade them together:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
@@ -154,7 +154,7 @@ You can only upgrade cloud-managed, simple, non-nested distribution lists. The t
 
 If you want to check whether a DL is eligible or not, you can run the below command:
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 If you want to check which DLs are eligible for upgrade just run the following command:
 
