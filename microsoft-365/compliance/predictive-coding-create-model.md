@@ -34,7 +34,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 1. In the Microsoft 365 compliance center, open an Advanced eDiscovery case and then select the **Review sets** tab.
 
-2. In the review set, click **Analytics** > **Manage predictive coding (preview)**.
+2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
 
    ![Click the Analyze dropdown menu in review set to go to the Predictive coding page](..\media\ManagePredictiveCoding.png)
 
