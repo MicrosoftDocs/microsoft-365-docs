@@ -23,12 +23,12 @@ description: Step through the layers of infrastructure so your hybrid workers ca
 
 # Set up your infrastructure for hybrid work with Microsoft 365
 
-To secure and optimize your hybrid worker’s productivity and collaboration, you need to configure your IT and cloud infrastructure to enable hybrid work and to provide access to your organization's on-premises and cloud-based information, tools, and resources. This solution steps through the deployment of key layers of infrastructure that empower your workers to do their best work, wherever they are.
+To secure and optimize your worker’s productivity and collaboration, you need to allow on-site and remote workers to easily and securely access your organization's on-premises and cloud-based information, tools, and resources. This solution steps through the deployment of key layers of infrastructure that empower your workers to do their best work, wherever they are.
 
-Allowing workers to work away from the office is important for many organizations to:
+Hybrid workers can work on-site or remotely in a combination of locations. Allowing workers to work away from a traditional office is important for many organizations to:
 
 - Hire and retain workers who are unwilling to relocate or require a flexible work environment.
-- Reduce worker commuting or commuting time, leaving workers with more time to be productive and for stress-reducing activities outside of work.
+- Reduce worker commuting, leaving workers with more time to be productive and for stress-reducing activities outside of work.
 - Save on office space.
 
 Microsoft 365 has the capabilities to empower your workers to work either on-site or remotely.
