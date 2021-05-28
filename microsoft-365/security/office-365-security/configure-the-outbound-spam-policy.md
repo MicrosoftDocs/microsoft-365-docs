@@ -74,10 +74,10 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+  > [!NOTE]
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  > 
+  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
@@ -284,16 +284,15 @@ Creating an outbound spam policy in PowerShell is a two-step process:
 1. Create the outbound spam filter policy.
 2. Create the outbound spam filter rule that specifies the outbound spam filter policy that the rule applies to.
 
- **Notes**:
-
-- You can create a new outbound spam filter rule and assign an existing, unassociated outbound spam filter policy to it. An outbound spam filter rule can't be associated with more than one outbound spam filter policy.
-
-- You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
-
-  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).
-  - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).
-
-- A new outbound spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.
+> [!NOTE]
+> - You can create a new outbound spam filter rule and assign an existing, unassociated outbound spam filter policy to it. An outbound spam filter rule can't be associated with more than one outbound spam filter policy.
+> 
+> - You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
+> 
+>   - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).
+>   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).
+> 
+> - A new outbound spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.
 
 #### Step 1: Use PowerShell to create an outbound spam filter policy
 
@@ -511,6 +510,6 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Anti-spam protection FAQ](anti-spam-protection-faq.md)
+[Anti-spam protection FAQ](anti-spam-protection-faq.yml)
 
 [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)

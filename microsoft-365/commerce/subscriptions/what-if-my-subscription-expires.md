@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +13,12 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: "Learn what happens to your data when your Microsoft 365 for business subscription expires, is disabled, or if you cancel."
+ms.date: 04/08/2021
 ---
 
 # What happens to my data and access when my Microsoft 365 for business subscription ends?
@@ -46,6 +45,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 *For most offers, in most countries and regions.
   
 > [!NOTE]
+>
 > **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## What happens if I cancel a subscription?
@@ -64,6 +64,7 @@ To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.
 > If you want your subscription data to be deleted before the typical Disabled stage is over, you can [close your account](../close-your-account.md).
   
 > [!NOTE]
+>
 > If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
 ## What are my options if my subscription is about to expire?
@@ -73,23 +74,14 @@ While a subscription is active, you and your end users have normal access to you
 Before the subscription actually reaches its expiration date, you have a few options:
   
 - **Enable recurring billing for the subscription.**
-
   - If **Recurring billing** is already turned on, you don't have to take any action. Your subscription is automatically billed, and you are charged for an additional year or month, depending on your current payment frequency. If for any reason you've turned **Recurring billing** off, you can always [turn Recurring billing back on](renew-your-subscription.md).
-
   - If you purchased Microsoft 365 Apps for business with a prepaid card, you can [turn on Recurring billing](renew-your-subscription.md) for your subscription.
-
   - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
-
   - If you have Microsoft 365 Apps for business, see [Manage recurring billing for your subscription](renew-your-subscription.md).
-
 - **Let the subscription expire.**
-
   - If you're paying by credit card or invoice and you don't want to continue your subscription, [turn Recurring billing off](renew-your-subscription.md). Your subscription ends on its expiration date, and you can ignore all related email notifications.
-
   - If you're an Open Volume Licensing customer working with a partner, you can let your subscription expire by taking no action.
-
   - If you're a Microsoft 365 Business Standard customer, and you prepaid for your subscription and activated it with a product key, you can let your subscription expire by taking no action.
-
 - **Cancel before the subscription expires.** For details, see [Cancel your subscription](cancel-your-subscription.md).
 
 ## What happens after my subscription expires?
@@ -100,7 +92,7 @@ Here's what you can expect when your subscription is in each state.
   
 ### State: Expired
 
- **What to expect:** The Expired stage lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the Expired stage lasts 90 days.
+**What to expect:** The Expired stage lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the Expired stage lasts 90 days.
 
 In this state, users have normal access to the Microsoft 365 portal, Office applications, and services such as email and SharePoint Online.
   
@@ -108,7 +100,7 @@ As an admin, you still have access to the admin center. Don't worry—global or 
   
 ### State: Disabled
 
- **What to expect:** If you don't reactivate your subscription while it is in the Expired stage, it moves into a Disabled stage, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the Disabled stage lasts 30 days.
+**What to expect:** If you don't reactivate your subscription while it is in the Expired stage, it moves into a Disabled stage, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the Disabled stage lasts 30 days.
 
 In this state, your access decreases significantly. Your users can't sign in, or access services like email or SharePoint Online. Office applications eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). You can still sign in and get to the admin center, but can't assign licenses to users. Your customer data, including all user data, email, and files on team sites, is available only to you and other admins.
 
@@ -116,13 +108,14 @@ As a global or billing admin, you can [reactivate the subscription](reactivate-y
 
 ### State: Deleted
   
- **What to expect:** If you don't reactivate your subscription while it is expired or disabled, the subscription is deleted.
+**What to expect:** If you don't reactivate your subscription while it is expired or disabled, the subscription is deleted.
   
 Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and is unrecoverable.
   
 At this point, you can't reactivate the subscription. However, as a global or billing admin, you can still access the admin center to manage other subscriptions, or to buy new subscriptions to meet your business needs.
   
 > [!NOTE]
+>
 > - Adding a new subscription of the same type that has been deleted does not restore the data that was associated with the deleted subscription.
 > - If a CSP license is suspended, there is no 30 day Expired stage, and services are disabled immediately. Data is deleted after 90 days if the tenant is not reactivated by adding a new license.
 
@@ -131,12 +124,11 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 When your trial ends, you can't continue using Microsoft 365 for free. You have a few options:
 
 - **Buy Microsoft 365.** When your trial expires, it moves into the Expired stage, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy a subscription from your free trial](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
-
 - **Extend your trial.** Need more time to evaluate Microsoft 365? In certain cases, you can [extend your trial](../extend-your-trial.md).
-
 - **Cancel the trial or let it expire.** If you decide not to buy Microsoft 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Back up any data you want to keep. Soon after the 30 day Expired stage, your trial account information and data is permanently erased.
 
 > [!NOTE]
+>
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.
 
 ## Related content

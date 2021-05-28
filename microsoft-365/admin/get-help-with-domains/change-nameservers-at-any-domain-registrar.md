@@ -31,8 +31,6 @@ description: "Learn how to add and set up your domain in Microsoft 365 so that y
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
-Check [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) first to see if we have instructions for your registrar. 
-  
 Follow these instructions to add and set up your domain in Microsoft 365 so your services like email and Teams will use your own domain name. To do this, you'll verify your domain, and then change your domain's nameservers to Microsoft 365 so the correct DNS records can be set up for you. Follow these steps if the following statements describe your situation:
   
 - You have your own domain and want to set it up to work with Microsoft 365.
@@ -40,7 +38,6 @@ Follow these instructions to add and set up your domain in Microsoft 365 so your
 - You want Microsoft 365 to manage your DNS records for you. (If you prefer, you can [manage your own DNS records](../setup/add-domain.md).)
     
 ## Add a TXT or MX record for verification
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > You will create only one or the other of these records. TXT is the preferred record type, but some DNS hosting providers don't support it, in which case you can create an MX record instead. 
@@ -91,17 +88,13 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 3. On the **Setup** page, select **Start setup**.
  
-    
   
 4. On the **Verify domain** page, select **Verify**.
-    
-    
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Change your domain's nameserver (NS) records
-<a name="BKMK_nameservers"> </a>
 
 When you get to the last step of the domains setup wizard in Microsoft 365, you have one task remaining. To set up your domain with Microsoft 365 services, like email, you change your domain's nameserver (or NS) records at your domain registrar to point to the Microsoft 365 primary and secondary nameservers. Then, because Microsoft 365 hosts your DNS, the required DNS records for your services are set up automatically for you. You can update the nameserver records yourself by following the steps your domain registrar may provide in the help content at their website. If you're not familiar with DNS, contact support at the domain registrar.
 
@@ -159,14 +152,42 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-2. On the **Domains** page, select the domain and then choose **DNS Records**.
+2. On the **Domains** page, select a domain.
 
-3. Under **Manage DNS**, select **Custom Records**, and then choose **New custom record**.
+3. On the domain details page, select the **DNS records** tab.
+ 
+4. Select **Add record**.
 
-4. Select the type of DNS record you want to add, and type the information for the new record.
+5. In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **A (Address)**.
 
-5. Select **Save**.
+6. In the **Host name or Alias** box, type **@**.
+
+7. In the **IP Address** box, type the static IP address for the website where it's currently hosted. For example, 172.16.140.1.
+    
+> [!IMPORTANT]
+>  This must be a _static_ IP address for the website, not a _dynamic_ IP address. To make sure you can get a static IP address for your public website, check with the site that hosts your website.
+   
+8. If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 9.
+    
+9. Select **Save**. 
+    
+In addition, you can create a CNAME record to help customers find your website.
+  
+1.	Select **Add record**.
+
+3.	In the **Add a custom DNS record** pane, from the **Type** dropdown list, select **CNAME (Alias)**.
+4.	In the **Host name or Alias** box, type **www**.
+5.	In the **Points to address** box, type the fully qualified domain name (FQDN) for your website. For example, **contoso.com**.
+6.	If you want to change the TTL setting for the record, select a new length of time from the **TTL** dropdown list. Otherwise, continue to step 6.
+7.	Select **Save**.
+
+After the nameserver records are updated to point to Microsoft, your domain setup is complete. Email is routed to Microsoft, and traffic to your website address continues to go to your current website host.`
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
+## Related content
+
+[Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+[Manage domains](index.yml) (link page)

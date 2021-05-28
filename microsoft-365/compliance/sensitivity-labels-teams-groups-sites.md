@@ -29,9 +29,10 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - External user access
 - External sharing from SharePoint sites
 - Access from unmanaged devices
+- Authentication contexts (in preview)
 
 > [!IMPORTANT]
-> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
+> The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
 
@@ -42,7 +43,7 @@ Content in these containers however, do not inherit the labels for the classific
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users could see and apply sensitivity labels in their apps. For example, from Word:
+Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
@@ -51,6 +52,8 @@ After you enable and configure sensitivity labels for containers, users can addi
 ![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 ## How to enable sensitivity labels for containers and synchronize labels
+
+If you haven't yet enabled sensitivity labels for containers, do the following set of steps as a one-time procedure:
 
 1. Because this feature uses Azure AD functionality, follow the instructions from the Azure AD documentation to enable sensitivity label support: [Assign sensitivity labels to Microsoft 365 groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
@@ -66,7 +69,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ## How to configure groups and site settings
 
-Enabling sensitivity labels for containers means that you can now configure protection settings for groups and sites in the sensitivity labeling wizard. Until you enable this support, the settings are visible in the wizard but you can't configure them.
+After sensitivity labels are enabled for containers as described in the previous section, you can then configure protection settings for groups and sites in the sensitivity labeling wizard. Until sensitivity labels are enabled for containers, the settings are visible in the wizard but you can't configure them.
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
@@ -79,7 +82,7 @@ Enabling sensitivity labels for containers means that you can now configure prot
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
-    - **Device access and external sharing settings** to configure the **Control external sharing from labeled SharePoint sites** and **Access from unmanaged devices** setting.
+    - **External sharing and Conditional Access settings** to configure the **Control external sharing from labeled SharePoint sites** and **Use Azure AD Conditional Access to protect labeled SharePoint sites** setting.
 
 3. If you selected **Privacy and external user access settings**, now configure the following settings:
     
@@ -93,13 +96,25 @@ Enabling sensitivity labels for containers means that you can now configure prot
     
     - **External user access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. If you selected **Device access and external sharing setting**, now configure the following settings:
+4. If you selected **Device external sharing and device access settings**, now configure the following settings:
     
     - **Control external sharing from labeled SharePoint sites**: Select this option to then select either external sharing for anyone, new and existing guests, existing guests, or only people in your organization. For more information about this configuration and settings, see the SharePoint documentation, [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site).
     
-    - **Access from unmanaged devices**: This option uses the SharePoint feature that uses Azure AD conditional access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices) from the SharePoint documentation. The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 3-5 from the [Block or limit access to a specific SharePoint site or OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) section from the SharePoint instructions.
-        
-        For additional information, see [More information about the dependencies for the unmanaged devices option](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) at the end of this section.
+    - **Use Azure AD Conditional Access to protect labeled SharePoint sites**: Select this option only if your organization has configured and is using [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview). Then, select one of the following settings:
+    
+        - **Determine whether users can access SharePoint sites from unmanaged devices**: This option uses the SharePoint feature that uses Azure AD Conditional Access to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices) from the SharePoint documentation. The option you specify for this label setting is the equivalent of running a PowerShell command for a site, as described in steps 3-5 from the [Block or limit access to a specific SharePoint site or OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) section from the SharePoint instructions.
+            
+            For additional configuration information, see [More information about the dependencies for the unmanaged devices option](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) at the end of this section.
+            
+        - **Choose an existing authentication context**: Currently in preview, this option lets you enforce more stringent access conditions when users access SharePoint sites that have this label applied. These conditions are enforced when you select an existing authentication context that has been created and published for your organization's Conditional Access deployment. If users don't meet the configured conditions or if they use apps that don't support authentication contexts, they are denied access.
+            
+            For additional configuration information, see [More information about the dependencies for the authentication context option](#more-information-about-the-dependencies-for-the-authentication-context-option) at the end of this section.
+            
+            Examples for this label configuration:
+            
+             - You choose an authentication context that is configured to require [multi-factor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
+             
+             - You choose an authentication context that is configured for [terms of use (ToU) policies](/azure/active-directory/conditional-access/terms-of-use). This label is then applied to a SharePoint site that contains items that require a terms of use acceptance for legal or compliance reasons. As a result, when users attempt to access a document in this site, they see a terms of use document that they must accept before they can access the original document.
 
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply the label to a team, group, or site. If the [label's scope](sensitivity-labels.md#label-scopes) includes files and emails, other label settings such as encryption and content marking aren't applied to the content within the team, group, or site.
@@ -113,6 +128,57 @@ If you don't configure the dependent conditional access policy for SharePoint as
 For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
 
 Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
+
+##### More information about the dependencies for the authentication context option
+
+To display in the drop-down list for selection, authentication contexts must be created, configured, and published as part of your Azure Active Directory Condition Access configuration. For more information and instructions, see the [Configure authentication contexts](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) section from the Azure AD Conditional Access documentation.
+
+Not all apps support authentication contexts. If a user with an unsupported app connects to the site that's configured for an authentication context, they see either an access denied message or they are prompted to authenticate but rejected. The apps that currently support authentication contexts:
+
+- Office for the web, which includes Outlook for the web
+
+- Microsoft Planner
+
+- Microsoft 365 Apps for Word, Excel, and PowerPoint; minimum versions:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 2.48.303
+    - Android: 16.0.13924.10000
+
+- Microsoft 365 Apps for Outlook; minimum versions:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 4.2109.0
+    - Android: 4.2025.1
+
+- OneDrive sync app, minimum versions:
+    - Windows: 21.002
+    - macOS: 21.002
+    - iOS: Rolling out in 12.30
+    - Android: Not yet supported
+
+Known limitations for this preview:
+
+- This feature is still rolling out to some tenants. If the Conditional Access policy with your selected authentication context is not taking effect when a user accesses the site, you can use PowerShell to confirm that your configuration is correct and all prerequisites are met. You'll need to remove the sensitivity label from the site and then configure the site for the authentication context by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). If this method works, wait a few more days before you try to apply the sensitivity label again.
+    
+    To test the authentication context by using PowerShell:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    To remove the authentication context so you can try to apply the sensitivity label again:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
+
+- For the OneDrive sync app, supported for OneDrive only and not for other sites.
+
+- The following features and apps might be incompatible with authentication contexts, so we encourage you to check that these continue to work after a user successfully accesses  a site by using an authentication context:
+    
+    - Workflows that use PowerApps or Power Automate
+    - Third-party apps
 
 ## Sensitivity label management
 

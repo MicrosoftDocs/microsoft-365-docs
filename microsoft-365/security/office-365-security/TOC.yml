@@ -22,30 +22,14 @@
               href: exchange-online-protection-overview.md
             - name: EOP features
               href: eop-features.md
-            - name: Permissions in standalone EOP
-              href: feature-permissions-in-eop.md
-            - name: Exchange admin center in standalone EOP
-              href: exchange-admin-center-in-exchange-online-protection-eop.md
-            - name: Manage recipients in standalone EOP
-              href: manage-recipients-in-eop.md
             - name: Mail flow in EOP
               href: mail-flow-in-eop.md
             - name: Quarantine
               href: quarantine-email-messages.md
-            - name: Auditing reports in standalone EOP
-              href: auditing-reports-in-eop.md
        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 security center overview
          href: ../defender/overview-security-center.md
-       - name: Threat Explorer for Defender for Office 365
-         items:
-            - name: Threat hunting in Threat Explorer
-              href: threat-hunting-in-threat-explorer.md
-            - name: Email security with Threat Explorer
-              href: email-security-in-microsoft-defender.md          
-            - name: Threat Explorer and Real-time detections basics
-              href: real-time-detections.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
@@ -80,18 +64,6 @@
          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
    - name: Deploy
      items: 
-     - name: Exchange Online Protection
-       items: 
-       - name: Configure anti-phishing policies in EOP
-         href: configure-anti-phishing-policies-eop.md
-       - name: Configure standalone EOP to deliver spam to the Junk Email folder
-         href: ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
-       - name: Manage groups in standalone EOP
-         href: manage-groups-in-eop.md
-       - name: Manage mail users in standalone EOP
-         href: manage-mail-users-in-eop.md
-       - name: Set up your EOP service
-         href: set-up-your-eop-service.md
      - name: Protect against threats
        href: protect-against-threats.md
      - name: Integrate Defender for Office 365 with Defender for Endpoint
@@ -106,27 +78,29 @@
        href: secure-by-default.md
      - name: Configure anti-phishing policies in Defender for Office 365
        href: configure-mdo-anti-phishing-policies.md
+     - name: Configure anti-phishing policies in EOP
+       href: configure-anti-phishing-policies-eop.md
      - name: Configure anti-malware policies
        href: configure-anti-malware-policies.md
      - name: Configure anti-spam policies
        href: configure-your-spam-filter-policies.md
+     - name: Configure EOP to deliver spam to Junk Email folders in hybrid
+       href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
+     - name: Configure junk email settings on Exchange Online mailboxes
+       href: configure-junk-email-settings-on-exo-mailboxes.md
      - name: Configure connection filtering
        href: configure-the-connection-filter-policy.md
      - name: Configure global settings for Safe Links in Defender for Office 365
        href: configure-global-settings-for-safe-links.md
-     - name: Configure junk email settings on Exchange Online mailboxes
-       href: configure-junk-email-settings-on-exo-mailboxes.md
      - name: Configure outbound spam filtering
        href: configure-the-outbound-spam-policy.md
-     - name: Configure spoof intelligence
-       href: learn-about-spoof-intelligence.md
      - name: Create block sender lists
        href: Create-block-sender-lists-in-office-365.md
      - name: Create safe sender lists
        href: Create-safe-sender-lists-in-office-365.md
      - name: Email authentication
        href: email-validation-and-authentication.md
-     - name: Give users access to the Security center
+     - name: Give users access to the Security & Compliance Center
        href: grant-access-to-the-security-and-compliance-center.md
      - name: Safe Documents in Defender for Office 365
        href: safe-docs.md
@@ -150,10 +124,6 @@
        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Install Application Guard for Office
        href: install-app-guard.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Migrate
      items: 
      - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
@@ -178,12 +148,10 @@
        href: attack-simulation-training-insights.md
      - name: Attack simulation training deployment considerations and FAQ
        href: attack-simulation-training-faq.md
+     - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
+       href: configure-advanced-delivery.md
      - name: Recommended settings for configuring EOP and Defender for Office 365 Security
        href: recommended-settings-for-eop-and-office365.md
-     - name: Best practices for configuring EOP
-       href: best-practices-for-configuring-eop.md
-     - name: Protect on-premises mailboxes in China with standalone EOP
-       href: protect-on-premises-mailboxes-with-exchange-online-protection.md
      - name: Integrate AIR with a custom solution or third-party solution
        href: air-custom-reporting.md
      - name: Advanced Spam Filter (ASF) settings
@@ -196,16 +164,24 @@
        href: report-junk-email-messages-to-microsoft.md
      - name: Enable the Report Message and the Report Phishing add-ins
        href: enable-the-report-message-add-in.md
-     - name: Use mail flow rules to block messages with executable attachments in EOP
-       href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-     - name: Use mail flow rules to filter bulk email in EOP
-       href: use-transport-rules-to-configure-bulk-email-filtering.md
+     - name: Use mail flow rules to block messages with executable attachments
+       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+     - name: Use mail flow rules to filter bulk mail
+       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
      - name: Use mail flow rules to set the SCL in messages
-       href: use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
      - name: Zero-hour auto purge - protection against spam and malware
        href: zero-hour-auto-purge.md
    - name: Detect
      items: 
+     - name: Threat Explorer for Defender for Office 365
+       items:
+       - name: Threat hunting in Threat Explorer
+         href: threat-hunting-in-threat-explorer.md
+       - name: Email security with Threat Explorer
+         href: email-security-in-microsoft-defender.md          
+       - name: Threat Explorer and Real-time detections basics
+         href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
      - name: View alerts
@@ -214,10 +190,10 @@
        href: reports-and-insights-in-security-and-compliance.md
      - name: Report false positives and false negatives in Outlook
        href: report-false-positives-and-false-negatives.md
-     - name: Mail flow rules (transport rules) in standalone EOP
-       href: mail-flow-rules-transport-rules-0.md
-     - name: Run an administrator role group report in standalone EOP
-       href: run-an-administrator-role-group-report-in-eop-eop.md
+     - name: Mail flow rules (transport rules)
+       href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+     - name: Run an administrator role group report
+       href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
    - name: Investigate
      items: 
      - name: Threat Explorer views
@@ -226,20 +202,22 @@
        href: campaigns.md
      - name: Investigate malicious email
        href: investigate-malicious-email-that-was-delivered.md
-     - name: View Defender for Office 365 reports in the Security & Compliance Center
-       href: view-reports-for-mdo.md
      - name: View details and results of an automated investigation
        href: air-view-investigation-results.md
-     - name: View email security reports in the Security & Compliance Center
+     - name: View Defender for Office 365 reports
+       href: view-reports-for-mdo.md 
+     - name: View email security reports
        href: view-email-security-reports.md
-     - name: View mail flow reports in the Security & Compliance Center
+     - name: View mail flow reports
        href: view-mail-flow-reports.md
-     - name: View the admin audit log in standalone EOP
-       href: view-the-admin-audit-log-eop.md
+     - name: View the admin audit log
+       href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
      - name: Reporting and message trace in standalone EOP
        href: reporting-and-message-trace-in-exchange-online-protection.md
      - name: Auto-forwarded messages insight
        href: mfi-auto-forwarded-messages-report.md
+     - name: Impersonation insight
+       href: impersonation-insight.md
      - name: Mail flow map
        href: mfi-mail-flow-map-report.md
      - name: Manually submit messages to Microsoft
@@ -256,18 +234,18 @@
        href: mfi-outbound-and-inbound-mail-flow.md
      - name: SMTP Auth clients insight and report
        href: mfi-smtp-auth-clients-report.md
+     - name: Spoof intelligence insight
+       href: learn-about-spoof-intelligence.md
      - name: Submit malware and non-malware to Microsoft
        href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Top domain mail flow status insight
        href: mfi-domain-mail-flow-status-insight.md
      - name: Use Admin Submission
        href: admin-submission.md
-     - name: Use mail flow rules to see what your users are reporting to Microsoft
-       href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+     - name: Use mail flow rules to see what users are reporting to Microsoft
+       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
      - name: Queues insight
        href: mfi-queue-alerts-and-queues.md
-     - name: Walkthrough - Spoof intelligence insight
-       href: walkthrough-spoof-intelligence-insight.md
    - name: Respond
      items: 
      - name: Detect and address compromised user accounts quickly
@@ -303,19 +281,19 @@
    - name: FAQ
      items: 
      - name: Delegated administration FAQ
-       href: delegated-administration-faq.md
+       href: delegated-administration-faq.yml
      - name: EOP general FAQ
-       href: eop-general-faq.md
+       href: eop-general-faq.yml
      - name: EOP queued, deferred, and bounced messages FAQ
-       href: eop-queued-deferred-and-bounced-messages-faq.md
+       href: eop-queued-deferred-and-bounced-messages-faq.yml
      - name: Anti-malware protection FAQ
-       href: anti-malware-protection-faq-eop.md
+       href: anti-malware-protection-faq-eop.yml
      - name: Anti-spam protection FAQ
-       href: anti-spam-protection-faq.md
+       href: anti-spam-protection-faq.yml
      - name: Anti-spoofing protection FAQ
-       href: anti-spoofing-protection-faq.md
+       href: anti-spoofing-protection-faq.yml
      - name: Quarantine FAQ
-       href: quarantine-faq.md
+       href: quarantine-faq.yml
    - name: Reference
      items: 
      - name: Security roadmap
@@ -348,8 +326,6 @@
        href: reference-policies-practices-and-guidelines.md
      - name: Safety tips in email messages
        href: safety-tips-in-office-365.md
-     - name: Sample script for applying EOP settings to multiple tenants
-       href: sample-script-for-applying-eop-settings-to-multiple-tenants.md
      - name: Sending mail to Office 365
        href: sending-mail-to-office-365.md
      - name: Services for non-customers
@@ -362,27 +338,10 @@
        href: virus-detection-in-spo.md
      - name: What's the difference between junk email and bulk email?
        href: what-s-the-difference-between-junk-email-and-bulk-email.md
-     - name: S/MIME
-       href: s-mime-for-message-signing-and-encryption.md
-       items:
-        - name: S/MIME for message signing and encryption
-          href: s-mime-for-message-signing-and-encryption.md
-        - name: Configure S/MIME settings for Outlook on the web
-          href: configure-s-mime-settings-for-outlook-web-app.md
-        - name: Send and receive S/MIME signed and encrypted email
-          href: send-and-receive-s-mime-signed-and-encrypted-email.md
-        - name: Sync user certificates to Microsoft 365 for S/MIME
-          href: sync-user-certificates-to-office-365-for-s-mime.md
-        - name: Set up virtual certificate collection to validate S/MIME
-          href: set-up-virtual-certificate-collection-to-validate-s-mime.md
-        - name: Configure groups and users for a political campaign dev/test environment
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: Create team sites in a political campaign dev/test environment
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-        - name: Move domains and settings from one EOP organization to another
-          href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-        - name: Manage role groups in standalone EOP
-          href: manage-admin-role-group-permissions-in-eop.md
+     - name: Configure groups and users for a political campaign dev/test environment
+       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+     - name: Create team sites in a political campaign dev/test environment
+       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Microsoft 365 Defender
      href: ../defender/index.yml
    - name: Microsoft Defender for Endpoint
