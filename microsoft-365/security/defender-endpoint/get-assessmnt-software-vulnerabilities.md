@@ -32,21 +32,23 @@ ms.custom: api
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-Returns all the known vulnerabilities and their details for all devices, on a per-device basis.
+Returns all known software vulnerabilities and their details for all devices, on a per-device basis.
 
 There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
 
-- **OData**  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [Export software vulnerabilities assessment OData](#1-export-software-vulnerabilities-assessment-odata)  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- **via files** This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+- [Export software vulnerabilities assessment via files](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
   - Call the API to get a list of download URLs with all your organization data.
 
   - Download all the files using the download URLs and process the data as you like.
 
-The data that is collected (for either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _OData_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
-Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
+> [!Note]
+>
+> Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
 
 ## 1. Export software vulnerabilities assessment (OData)
 
@@ -88,10 +90,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
->- The properties defined in the following table are listed alphanumerically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
+>- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 >
 
-Property (id) | Data type | Description | Example of a returned value
+Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. | CVE-2020-15992
 CvssScore | string | The CVSS score of the CVE. | 6.2
@@ -265,7 +267,7 @@ Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
 ### 2.2 Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details](apis-intro.md).
 
 Permission type | Permission | Permission display name
 ---|---|---
@@ -299,10 +301,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 >
->- The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in these tables.
->
 
-Property (id) | Data type | Description | Example of a returned value
+Property (ID) | Data type | Description | Example of a returned value
 :---|:---|:---|:---
 Export files | array\[string\]  | A list of download URLs for files holding the current snapshot of the organization. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | The time that the export was generated. | 2021-05-20T08:00:00Z
