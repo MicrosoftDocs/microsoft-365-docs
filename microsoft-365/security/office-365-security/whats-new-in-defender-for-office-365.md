@@ -38,6 +38,13 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## April/May 2021 
+
+- [Email entity page](mdo-email-entity-page.md): A unified 360-degree view of an email with enriched information around Threats, authentication and detections, detonation details, and a brand-new Email Preview experience
+- Office 365 Management API: Updates to EmailEvents (RecordType 28) to add Delivery Action, Original and Latest Delivery Locations, and updated Detection details. https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events 
+- Threat Analytics for Defender for Office 365: View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns. https://docs.microsoft.com/en-us/microsoft-365/security/defender/threat-analytics 
+
+
 ## February/March 2021 
 
 - Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
