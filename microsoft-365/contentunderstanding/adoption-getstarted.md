@@ -141,4 +141,4 @@ To get ready for implementing SharePoint Syntex, you need to:
 
 ## See also
 
-[Scenarios and use cases in SharePoint Syntex](adoption-scenarios.md)
+[Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
