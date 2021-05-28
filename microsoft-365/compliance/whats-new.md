@@ -43,7 +43,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Data connectors
 
-- [Set up a connector to archive Cisco Jabber on Oracle data]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Set up a connector to archive Cisco Jabber on Oracle data](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Set up a connector to archive Cisco Jabber on PostgreSQL data](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### Data Loss Prevention
@@ -54,14 +54,15 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Retention policies and retention label policies
 
-- The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the Applications parameter.
+- The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the *Applications* parameter.
 
 ### Sensitivity labels
 
 Outlook releases and updates:
 - Previously supported only by the AIP unified labeling client, built-in labeling now supports [different settings for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only is now supported by macOS, iOS, and Android
-- [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps) topic updated with new entries in the [Outlook capabilities table](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) for [Different settings for default label and mandatory labeling](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) for the new Outlook feature release for built-in labeling to support a different default label and exemption from mandatory labeling. Additionally, the Encrypt-Only option is now supported by macOS/iOS/Android, and all dynamic markings with variables are now supported across all Outlook clients. Mandatory labeling is now rolling out to the remaining platforms.
+- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) is now supported by macOS, iOS, and Android
+- [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is rolling out to the remaining platforms
+- [Dynamic markings with all variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) are supported across all Outlook clients
 
 ## March 2021
 
