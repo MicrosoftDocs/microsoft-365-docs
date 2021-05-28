@@ -48,8 +48,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 > You can move or copy up to 500 MB of files and folders at a time.<br/>
 > When you move or copy documents that have version history, only the latest version is moved.  
 
-You can also grant access to another user on former employee's onedrive
-
+You can also grant access to another user to a former employee's OneDrive.
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin.
 
