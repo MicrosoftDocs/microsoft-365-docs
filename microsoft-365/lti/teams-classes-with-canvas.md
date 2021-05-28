@@ -18,31 +18,43 @@ description: "Integrate Microsoft Teams classes with Canvas"
 
 # Use Microsoft Teams classes with Canvas
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
-For administrators.
+## Microsoft O365 Admin
 
-1. Sign in to the Teams admin center.
-2.	Select **Settings**, and then select the **Integrations** tab.
-3.	Enter the **Tenant Name**, and then select **ON**.
-4.	Select the **Grant Tenant Access** link. 
+Before managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s ‘Microsoft-Teams-Sync-for-Canvas’ Azure app approved by your institution’s O365 admin in your Microsoft Azure tenant before completing the Canvas admin setup.
 
-> [!NOTE] 
-> This might have to be done by the Microsoft 365 admin at your school if you don't have sufficient access.
+1. Login to Canvas, click on Admin link in the global navigation, and select your account.
 
-For teachers.
+2. In the admin navigation, click on the Settings link and then the Integrations tab. Enter your Microsoft tenant name and login attribute. Login attribute will be used for associating the Canvas user with an Azure Active Directory user. Click on Update Settings once done.
 
-1.	In Canvas, select the **Course** > **Settings** > **Integrations** tab
-2.	Select **ON**.
-3.	Select **Sync Now**.
+3. To approve access for Canvas’s ‘Microsoft-Teams-Sync-for-Canvas’ Azure app, click on the ‘Grant tenant access’ link which will redirect to the Microsoft Identity Platform Admin Consent Endpoint
 
-Notes
-•	On Course syncs after Sync Now is selected there is a 10 minute window where it can not be re-selected
-•	Course roster changes are queued automatically to be sent to Microsoft 10 minutes after
-Limitations
-•	Does not support syncing for multi-tenant, currently this only supports one Microsoft tenant per Canvas account
-•	Does not support syncing course sections and groups
-•	Does not support syncing for courses that have more than 20,000 enrollments
-•	When matching on email, only supports matching on the user's primary Canvas email address
-•	Does not support courses that have more than 100 Team Owners which is any role in Canvas other than students
+<img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image1.png" style="width:2.40989in;height:3.95545in" alt="Graphical user interface, text, application Description automatically generated" />
+
+1. Enable the Microsoft Teams sync by turning the toggle on.
+
+<img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image2.png" style="width:5.35644in;height:2.22269in" alt="Graphical user interface, text, application, Word Description automatically generated" />
+
+## Canvas Admin
+
+Setting up the Microsoft Teams LTI 1.3 Integration
+
+As a Canvas Admin you will need to add the Microsoft Teams classes LTI app within your environment. Make a note of the LTI Client ID for the app.
+
+1.  Microsoft Teams classes - 170000000000570
+
+
+1.  Access Apps tab under Admin Settings
+
+> <img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image3.png" style="width:5.82673in;height:1.03586in" alt="Text Description automatically generated with medium confidence" />
+
+1.  Click on + App to add the Teams LTI apps. Select ‘By Client ID’ under configuration type.
+
+> <img src="c:\Users\v-cichur\microsoft-365-docs-pr\microsoft-365\lti/media/image4.png" style="width:5.79703in;height:2.02586in" alt="Graphical user interface, text, application, email Description automatically generated" />
+
+1.  Enter the Client ID provided above and click Submit.
+
+2.  You will notice the Microsoft Teams classes LTI app name for the Client ID for confirmation. Click on Install.
+
+3.  The Microsoft Teams classes LTI app will be added to the list of external apps.
