@@ -52,7 +52,7 @@ You will only be able to mark and notify users of review results if the message 
 
 1. In the Security & Compliance Center, go to **Threat management** > **Policy** > **User submissions**.
 
-2. If you want to specify the sender display name, check the box for **Specify a sender display name**, and enter in the name you wish to use. This will be the email address that will be seen in Outlook, but the actual message will be coming from Submissions@messaging.microsoft.com.
+2. If you want to specify the sender display name, check the box for **Specify a sender display name**, and enter in the name you wish to use. This is the email address that will be seen in Outlook, but the actual message will come from Submissions@messaging.microsoft.com.
 
 3. If you want to customize any of the templates, click **Customize email notification**. In this flyout, you will be able to customize only the following:
     - Phishing
