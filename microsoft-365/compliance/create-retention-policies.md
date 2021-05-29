@@ -36,7 +36,7 @@ For more information about retention policies and how retention works in Microso
 
 The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
-Decide before you create your retention policy whether it will be adaptive or static. For more information, see [Scopes and retention policies](retention.md#scopes-for-retention policies). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process.
+Decide before you create your retention policy whether it will be adaptive or static. For more information, see [Scopes and retention policies](retention.md#scopes-for-retention policies). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
 
 ## Create and configure a retention policy
 
