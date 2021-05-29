@@ -128,6 +128,6 @@ For information about requirements, important limits, and feature availability a
 |Phone and web technical support 24 hours a day, seven days a week|[Help and support for EOP](help-and-support-for-eop.md).|
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the [EOP datacenters](#eop-datacenters) section earlier in this article.|
-|Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.md).|
+|Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.yml).|
 |Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|
 |||
