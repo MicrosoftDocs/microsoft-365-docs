@@ -303,10 +303,11 @@ Not all locations support adaptive scopes. For those locations, you must use a s
 |**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png)|
 |**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
 |**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Teams channel messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)|
-|**Teams chats**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |
-|**Yammer community messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Yammer private messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
+|**Teams channel messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png)|
+|**Teams chats**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
+|**Teams private channel messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
+|**Yammer community messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
+|**Yammer user messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
 
 For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
 

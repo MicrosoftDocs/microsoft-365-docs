@@ -37,7 +37,7 @@ For overview information about policies for retention and how retention works in
 
 ## Scopes - adaptive and static
 
-To understand the differences between the two different types of scopes that you must choose between, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention).
+To understand the differences between the two different types of scopes that you must choose between, see [Adaptive or static policy scopes for retention(retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
 Use the following information to help you configure the type of scope that you choose.
 
@@ -50,14 +50,11 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 
 | Adaptive scope type | Attributes supported |
 |:-----|:-----|
-|**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Team chats| First Name <br/> Last name <br/>Display name <br/> Job Title <br/> Department <br/> Office <br/>Street Address <br/> City <br/>Zip or Post Code <br/> Country or region <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15|
+|**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> -Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job Title <br/> Department <br/> Office <br/>Street Address <br/> City <br/>Zip or Post Code <br/> Country or region <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |SharePoint URL <br/> SharePoint managed properties |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 groups <br/> - Teams channel messages |Name <br/> Description <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer Community messages |Name <br/> Description <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15 |
 
 A single policy for retention can have one or many adaptive scopes.
-
-Adaptive scopes are not supported for the following locations:
-Teams
 
 #### To configure an adaptive scope
 
