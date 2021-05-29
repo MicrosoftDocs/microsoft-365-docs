@@ -153,7 +153,7 @@ Not all locations support adaptive scopes. For those locations, you must use a s
 |**OneDrive accounts**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png) |
 |**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png)|
 |**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) !
+|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
 |**Teams channel messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)|
 |**Teams chats**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |
 |**Yammer community messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
