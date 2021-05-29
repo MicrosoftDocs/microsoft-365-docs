@@ -144,7 +144,22 @@ Advantages of using static scopes:
     
     For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low and do not change. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
 
-For more information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+Not all locations support adaptive scopes. For those locations, you must use a static scope. 
+
+|Location for retention|Adaptive scopes|Static scopes|
+|:------|:------------:|:---------------------:|:-----------------------------:|
+|**Exchange email**| ![yes](../media/yes-icon.png)   | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png) |
+|**SharePoint site**| ![yes](../media/yes-icon.png)   | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**OneDrive accounts**| ![yes](../media/yes-icon.png)   | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)   | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Teams channel messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Teams chats**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Yammer community messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+|**Yammer private messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |![yes](../media/yes-icon.png)|
+
+For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
 
 > [!IMPORTANT]
 > Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
