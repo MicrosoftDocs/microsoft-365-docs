@@ -36,7 +36,7 @@ For more information about retention policies and how retention works in Microso
 
 The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
-Decide before you create your retention policy whether it will be adaptive or static. For more information, see [Scopes and retention policies](retention.md#scopes-for-retention policies). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Scopes and retention policies](retention.md#scopes-for-retention policies). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
 
 ## Create and configure a retention policy
 
@@ -165,7 +165,12 @@ Use the following instructions for retention policies that apply to any of these
 
 2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For the **Choose locations** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
+3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you won't be able to select **Adaptive** and finish the wizard.
+
+4. Depending on your selected scope:
+    
+    - If you chose **Adaptive**: On the **Define adaptive scope** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the scope types added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
+    - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
     Information specific to locations:
     - [Exchange email and Exchange public folders](configure-retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -173,8 +178,8 @@ Use the following instructions for retention policies that apply to any of these
     - [Microsoft 365 Groups](configure-retention-settings.md#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](configure-retention-settings.md#configuration-information-for-skype-for-business)
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+5. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
-5. Complete the wizard to save your settings.
+6. Complete the wizard to save your settings.
