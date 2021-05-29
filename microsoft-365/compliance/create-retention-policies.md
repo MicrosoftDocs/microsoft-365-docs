@@ -67,7 +67,9 @@ When you have more than one retention policy, and when you also use retention la
 
 2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For the **Choose locations to apply the policy** page, select one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
+3. For the **Choose the type of retention policy to create** page, select **Static**. Adaptive policies aren't supported for Teams.
+
+4. For the **Choose locations to apply the policy** page, select one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
 
    For **Teams channel messages**, message from standard channels but not [private channels](/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
     
@@ -76,11 +78,11 @@ When you have more than one retention policy, and when you also use retention la
     - For group chats, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
     - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+5. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
 
    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content).
 
-5. Complete the wizard to save your settings.
+6. Complete the wizard to save your settings.
 
 For guidance when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
@@ -121,13 +123,15 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 2. Select **New retention policy** to create a new retention policy.
 
-3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+3. For the **Choose the type of retention policy to create** page, select **Static**. Adaptive policies aren't supported for Yammer.
+
+4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
     
     Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
-4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
+5. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
     
     By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
     
@@ -135,7 +139,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     - If you leave the default at **All**, Azure B2B guest users are not included. 
     - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
 
-5. Complete the wizard to save your settings.
+6. Complete the wizard to save your settings.
 
 For more information about how retention policies work for Yammer, see [Learn about retention for Yammer](retention-policies-yammer.md).
 
@@ -165,7 +169,7 @@ Use the following instructions for retention policies that apply to any of these
 
 2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you won't be able to select **Adaptive** and finish the wizard.
+3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you won't be able to select **Adaptive** and finish the wizard. Adaptive policies can't support Exchange public folders or Skype for Business.
 
 4. Depending on your selected scope:
     
