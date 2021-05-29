@@ -119,51 +119,6 @@ For the start of the retention period, you can choose when the content was creat
 
 Items inherit the retention settings from their container specified in the retention policy. If they are then moved outside that container when the policy is configured to retain content, a copy of that item is retained in the workload's secured location. However, the retention settings don't travel with the content in its new location. If that's required, use retention labels instead of retention policies.
 
-### Scopes for retention policies
-
-> [!NOTE]
-> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
-
-When you configure a policy for retention, you choose between an adaptive scope and a static scope to define assigning the policy.
-
-- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
-
-- A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
-
-Advantages of using adaptive scopes:
-
-- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
-
-- More powerful targeting for your retention policies. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
-
-- Query-based membership provides more robust targeting to accommodate business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
-
-Advantages of using static scopes:
-
-- Simpler configuration if you want all instances automatically selected for a workload.
-    
-    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low and do not change. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
-
-Not all locations support adaptive scopes. For those locations, you must use a static scope. 
-
-|Location for retention|Adaptive scopes|Static scopes|
-|:------|:------------:|:---------------------:|:-----------------------------:|
-|**Exchange email**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png)   |
-|**SharePoint site**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
-|**OneDrive accounts**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png) |
-|**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png)|
-|**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Teams channel messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)|
-|**Teams chats**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |
-|**Yammer community messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Yammer private messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-
-For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
-
-> [!IMPORTANT]
-> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
-
 ### Retention labels
 
 Use retention labels for different types of content that require different retention settings. For example:
@@ -312,6 +267,52 @@ Note that you can use both retention policies and retention labels as complement
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
+
+## Adaptive or static policy scopes for retention
+
+> [!NOTE]
+> Adaptive policy scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
+
+When you configure retention policy or retention label policy for retention, you choose between using an adaptive scope and a static scope to define assigning the policy.
+
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
+
+- A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
+
+Advantages of using adaptive scopes:
+
+- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive scopes are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
+
+- More powerful targeting for your retention policies. For example, you can assign different retention settings to users according to their geographical location without the administrative overhead of creating and maintaining groups.
+
+- Query-based membership provides more robust targeting to accommodate business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
+
+Advantages of using static scopes:
+
+- Simpler configuration if you want all instances automatically selected for a workload.
+    
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low and do not change. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
+
+Not all locations support adaptive scopes. For those locations, you must use a static scope. 
+
+|Location for retention|Adaptive scopes|Static scopes|
+|:------|:------------:|:---------------------:|:-----------------------------:|
+|**Exchange email**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png)   |
+|**SharePoint site**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
+|**OneDrive accounts**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png) |
+|**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png)|
+|**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
+|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
+|**Teams channel messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)|
+|**Teams chats**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png)   |
+|**Yammer community messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
+|**Yammer private messages**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
+
+For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+
+> [!IMPORTANT]
+> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
+
 
 ## The principles of retention, or what takes precedence?
 

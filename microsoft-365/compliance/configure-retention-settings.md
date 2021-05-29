@@ -37,7 +37,7 @@ For overview information about policies for retention and how retention works in
 
 ## Scopes - adaptive and static
 
-To understand the differences between the two different types of scopes that you must choose between, see [Scopes and retention policies](retention.md#scopes-for-retention policies).
+To understand the differences between the two different types of scopes that you must choose between, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 Use the following information to help you configure the type of scope that you choose.
 
@@ -55,6 +55,9 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 groups <br/> - Teams channel messages |Name <br/> Description <br/> Email Address <br/> Aliases <br/> Custom exchange attributes: CustomAttribute1 - CustomAttribute15 |
 
 A single policy for retention can have one or many adaptive scopes.
+
+Adaptive scopes are not supported for the following locations:
+Teams
 
 #### To configure an adaptive scope
 
