@@ -273,7 +273,7 @@ For more information about how retention policies and retention labels work toge
 > [!NOTE]
 > Adaptive policy scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
 
-When you configure retention policy or retention label policy for retention, you choose between using an adaptive scope and a static scope to define assigning the policy.
+When you create a retention policy or retention label policy for retention, you must choose between adaptive and static to define the scope of the policy.
 
 - An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by periodically running the query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
 
