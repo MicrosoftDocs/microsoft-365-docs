@@ -73,7 +73,7 @@ Review the following details to verify minimum system requirements:
     > Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
     > Don't install .NET Framework 4.0.x, since it will negate the above installation.
 
-- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).
 
 
 
@@ -106,4 +106,3 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint. 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink).
-
