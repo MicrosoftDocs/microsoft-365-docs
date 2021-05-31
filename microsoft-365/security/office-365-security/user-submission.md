@@ -62,7 +62,7 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
@@ -78,9 +78,9 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## Use the Security & Compliance Center to configure the user submissions mailbox
+## Use the Microsoft 365 security center to configure the user submissions mailbox
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **User submissions**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **User submissions**.
 
 2. In the **User submissions** page that appears, select one of the following options:
 

@@ -42,7 +42,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Campaign Views](campaigns.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
-This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
+This article explains how to configure user tags in the Microsoft 365 security center. There are no cmdlets in Microsoft 365 security center to manage user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
@@ -51,9 +51,9 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
 
-- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+- You need to be assigned permissions in the Microsoft 365 security center before you can do the procedures in this article:
   - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
   - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
@@ -62,16 +62,16 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
   **Notes**:
 
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
 - For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
 
-## Use the Security & Compliance Center to create user tags
+## Use the Microsoft 365 security center to create user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, click **Create tag**.
 
@@ -100,9 +100,9 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
    When you're finished, click **Submit**.
 
-## Use the Security & Compliance Center to view user tags
+## Use the Microsoft 365 security center to view user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
 
@@ -110,9 +110,9 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
    When you're finished, click **Close**.
 
-## Use the Security & Compliance Center to modify user tags
+## Use the Microsoft 365 security center to modify user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
 
@@ -120,10 +120,10 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
    When you're finished, click **Submit**.
 
-## Use the Security & Compliance Center to remove user tags
+## Use the Microsoft 365 security center to remove user tags
 
 **Note**: You can't remove the built-in **Priority account** tag.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.

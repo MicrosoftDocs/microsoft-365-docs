@@ -79,7 +79,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
   - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
   - Granular time filters (day, hour, half-hour)
 
-- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Security & Compliance Center, go to **Threat management** \> **Review**.) (Microsoft Defender for Office 365 Plan 2)
+- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Microsoft 365 security center, go to **Threat management** \> **Review**.) (Microsoft Defender for Office 365 Plan 2)
 
 - [Safe Documents in Microsoft 365](safe-docs.md) **(preview)**
 

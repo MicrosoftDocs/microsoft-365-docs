@@ -17,13 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Find and use reports for Microsoft Defender for Office 365 in the Security & Compliance Center.
+description: Find and use reports for Microsoft Defender for Office 365 in the Microsoft 365 security center.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# View Defender for Office 365 reports in the Reports dashboard in the Security & Compliance Center
+# View Defender for Office 365 reports in the Reports dashboard in the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,7 +31,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
+Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 security center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
 ![The Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -41,7 +41,7 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
  The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 file types**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 file types**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.
 
 ![Defender for Office 365 file types widget in the Reports dashboard](../../media/atp-file-types-report-widget.png)
 
@@ -123,7 +123,7 @@ To get back to the reports view, click **View report**.
 
 The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
 
 ![Defender for Office 365 message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
@@ -211,7 +211,7 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 
 Client side and network latency are not included.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
 
 ![Mail latency report widget in the Reports dashboard](../../media/mail-latency-report-widget.png)
 
@@ -264,7 +264,7 @@ The **Threat protection status** report is a single view that brings together in
 
 The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
 
 ![URL protection report widget in the Reports dashboard](../../media/url-protection-report-widget.png)
 
@@ -332,7 +332,7 @@ In addition to the reports described in this article, several other reports are 
 |Report|Topic|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
-|**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Security & Compliance Center](view-email-security-reports.md)|
+|**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Microsoft 365 security center](view-email-security-reports.md)|
 |**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
 |**URL trace for Safe Links** (PowerShell only). The output of this cmdlet shows you the results of Safe Links actions over the past seven days.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
@@ -341,7 +341,7 @@ In addition to the reports described in this article, several other reports are 
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
-In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 security center:
 
 - **Organization Management**
 - **Security Administrator**
@@ -350,7 +350,7 @@ In order to view and use the reports described in this article, you need to be a
 
 For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## What if the reports aren't showing data?
 
