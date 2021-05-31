@@ -41,7 +41,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 ## April/May 2021 
 
 - [Email entity page](mdo-email-entity-page.md): A unified 360-degree view of an email with enriched information around threats, authentication and detections, detonation details, and a brand-new email preview experience.
-- Office 365 Management API: Updates to EmailEvents (RecordType 28) to add Delivery Action, Original and Latest Delivery Locations, and updated Detection details. https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events 
+- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Updates to EmailEvents (RecordType 28) to add delivery action, original and latest delivery locations, and updated detection details.
 - Threat Analytics for Defender for Office 365: View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns. https://docs.microsoft.com/en-us/microsoft-365/security/defender/threat-analytics 
 
 
