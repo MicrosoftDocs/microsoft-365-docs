@@ -115,7 +115,7 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 ### Launch portal with over 100k users
 
-If you are planning to launch are portal with over 100k users, please submit a support request following the steps listed below. Make sure to include all requested information.
+If you are planning to launch a portal with over 100,000 users, please submit a support request following the steps listed below. Make sure to include all requested information.
 
 Follow these steps:
 1. Navigate to https://admin.microsoft.com
