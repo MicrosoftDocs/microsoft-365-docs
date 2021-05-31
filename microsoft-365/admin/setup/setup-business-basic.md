@@ -28,7 +28,7 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 # Set up Microsoft 365 Business Basic
 
- Watch a short video about setting up Microsoft 365 Business Basic.<br><br>
+## Watch: Set up Microsoft 365 Business Basic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 

@@ -233,8 +233,7 @@ If a device is lost or stolen, you can remove sensitive organizational data and 
 
 For more information, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
-## Related topics
+## Related content
 
-[Overview of Basic Mobility and Security for Microsoft 365](overview.md)
-
-[Create device security policies in Basic Mobility and Security](create-device-security-policies.md)
+[Overview of Basic Mobility and Security for Microsoft 365](overview.md) (article)\
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article)

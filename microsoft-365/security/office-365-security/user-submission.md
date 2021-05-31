@@ -52,9 +52,9 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
 
-- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
+- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
-- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
+- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Security & Compliance Center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
 
 - Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
 
@@ -140,7 +140,7 @@ the following settings:
 
 You can configure third-party message reporting tools to send reported messages to the custom mailbox. The only requirement is that the original message is included as an attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
 
-The message formatting requirements are described in the next section.
+The message formatting requirements are described in the next section. The formatting is optional, but if it does not follow the prescribed format, the reports will always be submitted as phish.
 
 ## Message submission format
 
