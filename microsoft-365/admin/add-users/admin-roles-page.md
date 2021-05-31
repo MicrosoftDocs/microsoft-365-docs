@@ -92,8 +92,7 @@ In the admin center:
 
 ![A figure that shows a comparison of admin roles](../../media/compare-roles-list.png)
 
-## Related topics
+## Related content
 
-[About Microsoft 365 admin roles](about-admin-roles.md)
-
-[Assign admin roles](assign-admin-roles.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[Assign admin roles](assign-admin-roles.md) (article)

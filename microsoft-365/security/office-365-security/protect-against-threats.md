@@ -46,6 +46,8 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 > [!TIP]
 > Notice that, beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Defender for Office 365 article, until you remember (**Defender for Office 365**) contains, and builds on, EOP.
 
+<br>
+
 ****
 
 |Protection type|Subscription requirement|
@@ -63,6 +65,8 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 
 To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
+<br>
+
 ****
 
 |Role or role group|Where to learn more|
@@ -78,20 +82,22 @@ To learn more, see [Permissions in the Security & Compliance Center](permissions
 
 - Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## Part 1 - Anti-malware protection
+## Part 1 - Anti-malware protection in EOP
 
 For more information about the recommended settings for anti-malware, see [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
 1. Open <https://security.microsoft.com/antimalwarev2>.
 
-2. Select the Default policy by clicking on the name of the policy.
+2. On the **Anti-malware** page, select the policy named **Default** policy by clicking on the name.
 
 3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
    - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
    - Verify that **Enable zero-hour auto purge for malware** is selected.
    - Verify that none of the settings in the **Notification** section are selected.
 
-   When you're finished, click **Save**
+   When you're finished, click **Save**.
+
+4. Back on the policy details flyout, click **Close**.
 
 For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
@@ -131,23 +137,23 @@ The following procedure describes how to configure an anti-phishing policy in Mi
 
 To learn more about your anti-phishing policy options, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## Part 3 - Anti-spam protection
+## Part 3 - Anti-spam protection in EOP
 
-[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+For more information about the recommended settings for anti-spam, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-spam**.
+1. Open <https://security.microsoft.com/antispam>.
 
-2. On the **Custom** tab, turn on Custom settings.
+2. On the **Anti-spam policies** page, select the policy named **Anti-spam inbound policy** from the list by clicking on the name.
 
-3. Expand **Default spam filter policy**, click **Edit policy**, and then specify the following settings:
+3. In the policy details flyout that appears, click **Edit spam threshold and properties** in the **Bulk email threshold & spam properties** section.
 
-   - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
+4. In the **spam threshold and properties** flyout that appears, set the **Bulk email threshold** value to 5 (Strict) or 6 (Standard). When you're finished, click **Save**
 
-   - In the **Allow lists** section, review (and/or edit) your allowed senders and domains.
+5. Back on the policy details flyout, go to the **Allowed and blocked senders and domains** section and review or edit your allowed senders and allowed domains.
 
-4. Click **Save**.
+6. When you're finished, click **Close**.
 
-To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
