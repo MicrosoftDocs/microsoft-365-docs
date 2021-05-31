@@ -73,7 +73,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 
 For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. Only admins can view and manage high confidence phish messages from quarantine. 
 
-ZAP for high confidence phish in enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
+ZAP for high confidence phish is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
 
 ### ZAP for spam
 
