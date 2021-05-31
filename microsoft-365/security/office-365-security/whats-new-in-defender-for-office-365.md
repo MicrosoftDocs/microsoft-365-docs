@@ -44,7 +44,6 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 - [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Updates to EmailEvents (RecordType 28) to add delivery action, original and latest delivery locations, and updated detection details.
 - [Threat Analytics for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns. 
 
-
 ## February/March 2021 
 
 - Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
