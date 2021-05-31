@@ -124,7 +124,7 @@ The hardware requirements for Defender for Endpoint on devices are the same for 
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> You'll need to confirm the Linux distributions and versions of Android, iOS and macOS are compatible with Defender for Endpoint for the integration to work.
+> You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint for the integration to work.
 
 
 
