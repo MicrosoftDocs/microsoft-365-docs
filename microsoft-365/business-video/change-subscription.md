@@ -22,10 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to move users to a different subscription."
+description: "Learn how to move users to a different subscription when you need new features."
 ---
 
 # Move users to different subscriptions
+
+## Watch: Move users to a different subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

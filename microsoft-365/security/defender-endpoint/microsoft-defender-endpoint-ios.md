@@ -58,9 +58,6 @@ iOS devices along with other platforms.
 
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
 
-**Network Requirements**
-- For Microsoft Defender for Endpoint on iOS to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-
 **System Requirements**
 
 - iOS devices running iOS 11.0 and above. iPad devices are officially supported from version 1.1.15010101 onward.
@@ -68,7 +65,7 @@ iOS devices along with other platforms.
 - Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender for Endpoint) on iOS is now available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
+> **Microsoft Defender for Endpoint on iOS is available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
 
 ## Installation instructions
 

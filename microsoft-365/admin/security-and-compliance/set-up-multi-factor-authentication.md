@@ -99,6 +99,5 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 
 ## Related content
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
-
+[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)\
 [Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)

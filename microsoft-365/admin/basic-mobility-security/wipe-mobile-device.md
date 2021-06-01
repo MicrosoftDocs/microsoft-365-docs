@@ -83,7 +83,3 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 |Email profiles created by Basic Mobility and Security are removed and cached email on the device is deleted.|Yes|N/A|
 >[!NOTE]
 >Company Portal app is available at the App Store for iOS and the Play Store for Android devices.
-
-## Related topics
-
-[Set up Basic Mobility and Security](set-up.md)

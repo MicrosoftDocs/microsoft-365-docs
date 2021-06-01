@@ -41,7 +41,7 @@ For more information on how to upgrade Windows devices to Windows 10 Pro Creator
   
 See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to verify you have the upgrade, or to make sure the upgrade worked.
 
-Watch a short video about connecting Windows to Microsoft 365.<br><br>
+## Watch: Connect your PC to Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
