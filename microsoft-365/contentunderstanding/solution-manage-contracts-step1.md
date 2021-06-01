@@ -6,11 +6,11 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 
 description: "Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution."
 ---
 
@@ -35,6 +35,9 @@ Your organization needs a way to identify and classify all contract documents fr
 5. If you have retention requirements for your contracts, you can also use your model to [apply a retention label](apply-a-retention-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time.
 
 ## Steps to create and train your model
+
+> [!NOTE]
+> For these steps, you can use the example files in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). The examples in this repository contain both the document understanding model files and the files used to train the model.
 
 ### Create a Contract model
 

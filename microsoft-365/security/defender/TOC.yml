@@ -18,6 +18,8 @@
         href: microsoft-365-security-mde-redirection.md 
       - name: Redirecting Defender for Office 365 to Microsoft 365 security center
         href: microsoft-365-security-mdo-redirection.md   
+      - name: Microsoft 365 Defender integration with Azure Sentinel
+        href: microsoft-365-defender-integration-with-azure-sentinel.md   
       - name: Preview features
         href: preview.md
       - name: Troubleshoot issues
@@ -82,61 +84,69 @@
             href: microsoft-secure-score-whats-coming.md
           - name: What's new
             href: microsoft-secure-score-whats-new.md
+      - name: Protect your identities
+        items:
+          - name: Manage security alerts
+            href: ../defender-identity/manage-security-alerts.md
     - name: Investigate and respond to threats
       items: 
        - name: Incidents
          items: 
               - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize incidents
+              - name: Prioritize
                 href: incident-queue.md
-              - name: Manage incidents
+              - name: Manage
                 href: manage-incidents.md
-              - name: Incident response
+              - name: Investigate
+                href: investigate-incidents.md
+              - name: Incident alerts
+                href: investigate-alerts.md    
+              - name: Incident users 
+                href: investigate-users.md                  
+              - name: Respond to your first incident
                 items: 
-                 - name: Investigate incidents
-                   href: investigate-incidents.md
-                 - name: Investigate alerts
-                   href: investigate-alerts.md    
-                 - name: Investigate users 
-                   href: investigate-users.md                  
-                 - name: Incident response playbooks
-                   href: https://docs.microsoft.com/security/compass/incident-response-playbooks
-                 - name: Respond to your first incident
+                 - name: Introduction
+                   href: first-incident-overview.md
+                 - name: Prepare
+                   href: first-incident-prepare.md
+                 - name: Step 1. Triage and analyze
+                   href: first-incident-analyze.md
+                 - name: Step 2. Remediate
+                   href: first-incident-remediate.md
+                 - name: Step 3. Review
+                   href: first-incident-post.md
+                 - name: Additional incident examples
                    items: 
-                    - name: Introduction
-                      href: first-incident-overview.md
-                    - name: Prepare
-                      href: first-incident-prepare.md
-                    - name: Step 1. Triage and analyze
-                      href: first-incident-analyze.md
-                    - name: Step 2. Remediate
-                      href: first-incident-remediate.md
-                    - name: Step 3. Review
-                      href: first-incident-post.md
-                    - name: Additional incident examples
-                      items: 
-                        - name: Phishing email
-                          href: first-incident-path-phishing.md
-                        - name: Identity
-                          href: first-incident-path-identity.md
-              - name: Get email notifications
+                    - name: Phishing email
+                      href: first-incident-path-phishing.md
+                    - name: Identity
+                      href: first-incident-path-identity.md
+              - name: Incident response playbooks
+                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
+              - name: Email notifications
                 href: get-incident-notifications.md
+       - name: Threat analytics
+         items:
+              - name: Track and respond to emerging threats
+                href: threat-analytics.md
+              - name: Understand the analyst report
+                href: threat-analytics-analyst-reports.md
        - name: Automated investigation and response
          items: 
-              - name: Overview of automated investigation and response
+              - name: Overview
                 href: m365d-autoir.md
-              - name: Configure automated investigation and response capabilities
+              - name: Configure capabilities
                 href: m365d-configure-auto-investigation-response.md
               - name: Remediation actions
                 href: m365d-remediation-actions.md
-              - name: Visit the Action center
+              - name: Use the Action center
                 href: m365d-action-center.md
               - name: View and manage remediation actions
                 href: m365d-autoir-actions.md
-              - name: View details and results of automated investigations
+              - name: View details and results
                 href: m365d-autoir-results.md
-              - name: Address false positives/negatives
+              - name: Address false positives and negatives
                 href: m365d-autoir-report-false-positives-negatives.md
        - name: Advanced hunting
          items: 
@@ -284,42 +294,51 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-            - name: Microsoft 365 Defender APIs (Preview)
+        - name: Microsoft 365 Defender APIs (Preview)
+          items: 
+            - name: Overview of Microsoft 365 Defender APIs (Preview)
+              href: api-overview.md
+            - name: Supported Microsoft 365 Defender APIs
+              href: api-supported.md
+            
+            - name: Get started with Microsoft 365 Defender APIs (Preview)
               items: 
-                - name: Overview of Microsoft 365 Defender APIs (Preview)
-                  href: api-overview.md
-                - name: Get started with Microsoft 365 Defender APIs (Preview)
+                - name: Microsoft 365 Defender API license and terms of use
+                  href: api-terms.md
+                - name: Access Microsoft 365 Defender APIs
+                  href: api-access.md
+                - name: Hello World example
+                  href: api-hello-world.md
+                - name: Get access with application context
+                  href: api-create-app-web.md
+                - name: Get access with user context
+                  href: api-create-app-user-context.md
+                - name: Get partner application access
+                  href: api-partner-access.md
+                - name: Other API resources
+                  href: api-articles.md
+            - name: Microsoft 365 Defender APIs & schema (Preview)
+              items: 
+                - name: Common REST API error codes
+                  href: api-error-codes.md
+                - name: Streaming API
+                  items:
+                    - name: Microsoft 365 Streaming API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: Stream advanced hunting evens to Azure Events hub
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: Stream advanced hunting events to your storage account
+                      href: ../defender-endpoint/raw-data-export-storage.md
+                - name: Advanced Hunting API
+                  href: api-advanced-hunting.md
+                - name: Incidents APIs
                   items: 
-                    - name: Microsoft 365 Defender API license and terms of use
-                      href: api-terms.md
-                    - name: Access Microsoft 365 Defender APIs
-                      href: api-access.md
-                    - name: Hello World example
-                      href: api-hello-world.md
-                    - name: Get access with application context
-                      href: api-create-app-web.md
-                    - name: Get access with user context
-                      href: api-create-app-user-context.md
-                    - name: Get partner application access
-                      href: api-partner-access.md
-                    - name: Other API resources
-                      href: api-articles.md
-                - name: Microsoft 365 Defender APIs & schema (Preview)
-                  items: 
-                    - name: Supported Microsoft 365 Defender APIs
-                      href: api-supported.md
-                    - name: Common REST API error codes
-                      href: api-error-codes.md
-                    - name: Advanced Hunting API
-                      href: api-advanced-hunting.md
-                    - name: Incident APIs
-                      items: 
-                        - name: Incident methods and properties
-                          href: api-incident.md
-                        - name: List incidents
-                          href: api-list-incidents.md
-                        - name: Update incident
-                          href: api-update-incidents.md
+                    - name: Incidents methods and properties
+                      href: api-incident.md
+                    - name: List incidents
+                      href: api-list-incidents.md
+                    - name: Update incidents
+                      href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

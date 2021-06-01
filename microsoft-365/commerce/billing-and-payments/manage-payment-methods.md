@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: "Learn how to manage your payment methods in the Microsoft 365 admin center."
+description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
 ms.date: 04/02/2021
 ---
 
@@ -82,7 +82,7 @@ You can change the payment method used to pay for a single subscription.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, find the subscription that you want to pay for with the alternate payment method.
-3. Select **More actions** (three dots), then select **Replace payment method**.
+3. Select the three dots (more actions), then select **Replace payment method**.
 4. In the **Replace payment method** pane, from the drop-down list, choose an alternate payment method, or choose to add a payment method.
 5. If you add a payment method, enter the card or account details, then select **Save**.
 6. Verify that the selected payment method is correct, then select **Replace**.
