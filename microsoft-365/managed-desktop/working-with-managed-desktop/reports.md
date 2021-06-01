@@ -32,16 +32,6 @@ Additionally, in several locations throughout Microsoft Endpoint Manager you can
 > [!NOTE]
 > Custom Microsoft Managed Desktop roles guarantee access only to the Microsoft Managed Desktop reports. To access other parts of Microsoft Endpoint Manager, such as **All devices**, see [Role-based access control with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control). 
 
-## Reports in Microsoft 365 Admin Center
-
-You can find Microsoft Managed Desktop insights reports by opening the [Microsoft 365 Admin Center](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop), and then navigating to **Reports** and selecting **Microsoft Managed Desktop**. You can also follow the direct link to these reports from the **Microsoft Managed Desktop** tab on the homepage [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
-
-These reports include: 
-
-- [Usage insights](usage-insights.md) - This view provides usage metrics for your Microsoft Managed Desktop devices.
-- [Reliability insights](reliability-insights.md) - This view provides you with a health summary of your managed devices.
-- [Battery insights](battery-insights.md) - This view shows you information about the energy consumption of apps and projected battery life for devices in your environment.
-- [Windows security update insights](security-update-insights.md) - This view shows you information about the status of security updates for your Microsoft Managed Desktop devices.
 
  ## Inventory data
 
