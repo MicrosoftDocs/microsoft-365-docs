@@ -28,14 +28,14 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing Security & Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
+Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Security center](https://security.microsoft.com) will let you see and use the email entity page..
 
 |Center|URL|Navigation|
 |---|---|---|
 |Security & Compliance |protection.office.com|Threat Management \> Explorer|
 |Microsoft 365 security center |security.microsoft.com|Email & Collaboration \> Explorer|
 
-In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
+In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
 :::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
 
@@ -52,7 +52,7 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Graphic of the email entity page with the left side highlighted. The title and facts about the mail delivery are over here.":::
 
-2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through Explorer will also be available through email entity page.
+2. On the top-right corner are the actions that can be taken on an email. Any actions that can be taken through **Explorer** will also be available through email entity page.
 
     :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Graphic of the email entity page with the *right* side highlighted, this time. Actions like 'Email preview' and 'Go to quarantine' are here.":::
 
@@ -64,7 +64,7 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
 The tabs along the top of the entity page will allow you to investigate email efficiently.
 
-1. **Timeline**: The timeline view for an email (per the Threat Explorer timeline) shows the original delivery to post-delivery events that happen on an email. For emails that have no post-delivery actions, the view shows the original delivery row in timeline view. Events like: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
+1. **Timeline**: The timeline view for an email (per **Explorer** timeline) shows the original delivery to post-delivery events that happen on an email. For emails that have no post-delivery actions, the view shows the original delivery row in timeline view. Events like: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
 2. **Analysis**: Analysis shows fields that help admins analyze an email in depth. For cases where admins need to understand more about detection, sender / recipient, and email authentication details, they should use the Analysis tab. Links for Attachments and URLs are also found on this page, under 'Related Entities'. Both attachments and identified threats are numbered here, and clicking will take you straight to the Attachments and URL pages. This tab also has a View header option to *show the email header*. Admins can compare any detail from email headers, side by side with information on the main panel, for clarity.
 3. **Attachments**: This examines attachments found in the email with other details found on attachments. The number of attachments shown is currently limited to 10. Notice that detonation details for attachments found to be malicious is also shown here.
 4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs which were found to be malicious and detonated will also be shown here.
@@ -79,7 +79,7 @@ There are new capabilities that come with this email entity page. Here's the lis
 Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
-> Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in Threat Explorer.
+> Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in **Explorer**.
 
 ### Detonation details
 
