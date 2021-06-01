@@ -1,5 +1,5 @@
 ---
-title: "Query the data in a review set"
+title: "Query the content in a review set"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,50 +15,92 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to create and run a query in a review set to organize data for a more efficient review in an Advanced eDiscovery case."
+description: "Learn how to create and run a query in a review set to organize content for a more efficient review in an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 
-# Query the data in a review set
+# Query and filter content in a review set
 
-In most cases, it will be useful to be able to dig deeper into the data in a review set and organize that data to facilitate a more efficient review. Using Queries in a review set helps you focus on a subset of documents that meet the criteria of your review.
+In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review. Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.
 
-## Creating and running a query in a review set
+## Default filters
 
-To create and run a query on the documents in a review set, select **New query** in the review set. After you name your query and define the conditions, select **Save** to save and run the query. To run a query that has been previously saved, select a saved query.
+In a review set, there are five default filters that are pre-loaded in the review set:
 
-![Review set queries](../media/AeDReviewSetQueries.png)
+- Keyword
+- Date
+- Sender/Author
+- Subject/Title
+- Tags
 
-## Building a review set query
+Click each filter to expand it and assign a value. Click outside the filter to automatically apply the filter to the review set. 
 
-You can build a query by using a combination of keywords, properties, and conditions in the Keywords condition. You can also group conditions as a block (called a *condition group*) to build a more complex query. For a list and description of metadata properties that you can search, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+![Default filter expanded](../media/ExpandedFilter.png)
 
-### Conditions
+## Add or remove filters
 
-Every searchable field in a review set has a corresponding condition that you can use to build your query.
+To add or remove filters, select **Filters** to open the filter panel. The available filters are categorized in four sections:
 
-There are multiple types of conditions:
+- **Search**: Filters that provide different search capabilities.
 
-- Freetext: A freetext condition is used for text fields such as subject. You can list multiple search terms by separating them out with a comma.
+- **Analytics & predictive coding**: Filters for properties generated and added to documents when you run the **Document & email analytic** job or use predictive coding models.
 
-- Date: A date condition is used for date fields such as last modified date.
+- **IDs**: Filters for all ID properties of documents.
 
-- Search options: A search options condition will provide a list of possible values for the particular field in your review set. This is used for fields, such as sender, where there is a finite number of possible values in your review set.
+- **Item properties**: Filters for document properties. 
 
-- Keyword: A keyword condition is a specific instance of freetext condition that you can use to search for terms, or use KQL-like query language in. See below for more detail.
+Expand each section and select or deselect filters to add or remove them in the filter set. 
 
-### Query language
+![List of filters in filter panel](../media/FilterPanel.png)
 
-In addition to conditions, you can use a KQL-like query language in the Keywords condition to build your query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
+## Filter types
 
-## Filters
+Every searchable field in a review set has a corresponding filter that you can use for filter items based on a specific field.
 
-In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. Using filters help you further refine the results displayed by a review set query.
+There are multiple types of filters:
 
-![Review set filters](../media/AeDReviewSetFilters.png)
+- **Freetext**: A freetext filter is applied to text fields such as "Subject". You can list multiple search terms by separating them with a comma.
 
-Filters differ from queries in two significant ways:
+- **Date**: A date filter is used for date fields such as "Last modified date".
 
-- Filters are transient. They don't persist beyond the existing session. In other words, you can't save a filter. Queries are saved to the review set, and access them whenever you open the review set.
+- **Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review. This filter is used for fields, such as "Sender", where there is a finite number of possible values in the review set.
 
-- Filters are always additive. Filters are applied in addition to the current review set query. Applying a different query will replace the results returned by the current query.
+- **Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms. You can also use KQL-like query language in this type of filter. For more information, see the Query language and Advanced query builder sections in this topic.
+
+## Include and exclude filter relationships
+
+You have the option to change the include and exclude relationship for a particular filter. For example, in the Tag filter, you can exclude items that are tagged with a particular tag by selecting **Equals none of** in the dropdown filter. 
+
+![Exclude tag filter](../media/TagFilterExclude.png)
+
+## Save filters as queries
+
+After you are satisfied with your filters, you can save the filter combination as a filter query. This lets you apply the filter in the future review sessions.
+
+To save a filter, select **Save the query** and name it. You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting the a filter query to apply to review set documents. 
+
+![Save a filter query](../media/SaveFilterQuery.png)
+
+To delete a filter query, open the filter panel and select the trashcan icon next to the query. 
+
+![Delete a filter query](../media/DeleteFilterQuery.png)
+
+## Query language
+
+In addition to using filters, you can also use a KQL-like query language in the Keywords filter to build your review set search query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
+
+## Advanced query builder
+
+You can also build more advanced queries to search for documents in a review set.
+
+1. Open the filter panel, select **Filters**, and expand the **Search** section to find the **KQL** filter.
+
+![Add KQL filter](../media/AddKQLFilter.png)
+
+2. Select the **KQL** filter and click **Open query builder**. 
+
+  In this panel, you can create complex KQL queries by using the query builder. You have the option to create conditions within various condition groups as well as defining **AND**/**OR** relationships between them. 
+
+![Complex query](.../media/ComplexQuery.png)
+
+
