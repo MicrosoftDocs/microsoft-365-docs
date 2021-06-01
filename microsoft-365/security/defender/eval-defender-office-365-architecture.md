@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and key concepts
+title: Review architecture requirements and key concepts for Microsoft Defender for Office 365
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -24,13 +24,20 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Review architecture requirements and key concepts
+# Review Microsoft Defender for Office 365 architecture requirements and key concepts
 
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements. 
+[Defender for Office 365 architecture](a)
+[Understand key concepts](a)
+[Review architecture requirements](a)
+[Understand key concepts](a)
+[SIEM integration](a)
+
+
+Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements.
 
 ## Understand the architecture
 
