@@ -1,5 +1,5 @@
 ---
-title: "Simplified purchase of Microsoft 365 for business"
+title: "Simplified invite for employees"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn about the Business Assist program and how it can help your organization with improved help and usage for Microsoft 365 for business."
+description: "Set up your business email account in Microsoft 365"
 ---
 
 # Set up my business account in Microsoft 365
