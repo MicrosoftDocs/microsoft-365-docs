@@ -513,6 +513,8 @@
           href: mapg-detect-remediate-overview.md
         - name: Get started
           href: mapg-detect-remediate-get-started.md
+        - name: Investigate anomaly detection alerts
+          href: mapg-anomaly-detection-alerts.md
         - name: Remediate app threats
           href: mapg-detect-remediate-detect-threats.md
 
