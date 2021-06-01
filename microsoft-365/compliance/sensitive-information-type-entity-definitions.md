@@ -6335,7 +6335,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Finland passport number
 
-This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 combination of nine letters and digits
@@ -6415,7 +6415,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## France driver's license number
 
-This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7232,7 +7232,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Germany passport number
 
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7449,7 +7449,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Greece driver's license number
 
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -9262,7 +9262,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
    
 ## Italy driver's license number
 
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
