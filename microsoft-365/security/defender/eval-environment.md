@@ -26,7 +26,6 @@ ms.technology: m365d
 # Create the Microsoft 365 Defender Evaluation Environment
 
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
-- [Establishing the Evaluation Environment](#establishing-the-evaluation-environment)
 - [What's next?](#whats-next)
 
 There are two common ways to do this next step in evaluation. This document assumes you already have a production M365 tenant, and will activate E5 trial licenses to evaluate M365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.

@@ -30,12 +30,12 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Defender for Office 365 architecture](a)
-[Understand key concepts](a)
-[Review architecture requirements](a)
-[Understand key concepts](a)
-[SIEM integration](a)
-
+##### Navigate
+- [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
+- [Defender for Office 365 architecture](#understand-the-architecture)
+- [Understand key concepts](#understand-key-concepts)
+- [Review architecture requirements](#review-architecture-requirements)
+- [SIEM integration](#siem-integration)
 
 Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements.
 
