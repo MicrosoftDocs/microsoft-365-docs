@@ -52,7 +52,16 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
 4. On the email forwarding page, select **Forward all emails sent to this mailbox**, enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. If you don't see this option, make sure a license is assigned to the user account. Select **Save changes**.
 
-    **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. To learn more, see [Use rules to automatically forward messages](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. 
+    
+    1.  Open **outlook** > **Home** >  **Rules** > Select **Manage Rules & Alerts**
+    1. Select **New Rule** > **Select Apply rule on message I receive** located near bottom of list, then click **Next**.
+    1. Click **Yes** when asked This rule will be applied to every message you receive. 
+    1. On the next list select the actions **redirect it to people or public group** and **stop processing more rules**
+    1. Click the underlined phrase **people or public group** in the bottom part of window.
+    1. Type the **email address** to forward mail to in the To field, then click **OK**.
+    1. Select **Finish**
+    
 
      Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
 
