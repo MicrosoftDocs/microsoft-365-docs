@@ -21,7 +21,7 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!NOTE]
-> This features is in preview and might undergo changes before becoming available in the public release. This document is provided for evaluation and exploration purposes only. 
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released. This document is provided for evaluation and exploration purposes only.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -36,24 +36,18 @@ You will only be able to mark and notify users of review results if the message 
 ## What do you need to know before you begin?
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
-
     - Organization Management or Security Administrator in the [Security center](permissions-microsoft-365-compliance-security.md).
-
     - Organization Management in [Exchange Online](/Exchange/permissions-exo/permissions-exo).
 
-- You'll also need access to the Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that says *Specify an email address in your domain*.
-
-- For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
-
+- You'll also need access to the Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that says *Specify an email address in your domain*. For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
     - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell?view=exchange-ps)
-
     - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## Configure the messages used to notify users
 
-1. In the [M365 Security center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center), go to **Policies & rules** > **Threat policies** > **User reported message settings**.
+1. In the [Microsoft 365 security center](../defender/overview-security-center.md), go to **Policies & rules** \> **Threat policies** \> **User reported message settings**.
 
-2. If you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. This is the mailbox from which the email address that will be seen in Outlook and where replies will go to.
+2. If you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. This is the email address that will be visible in Outlook and where replies will go to.
 
 3. If you want to customize any of the templates, click **Customize email notification**. In this flyout, you will be able to customize only the following:
     - Phishing
@@ -63,6 +57,3 @@ You will only be able to mark and notify users of review results if the message 
     - Footer
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.
-
-
-
