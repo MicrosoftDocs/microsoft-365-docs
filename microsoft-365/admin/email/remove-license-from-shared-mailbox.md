@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Remove license from a shared mailbox to assign it to another user. "
+description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
 ---
 
 # Remove a license from a shared mailbox
@@ -69,14 +69,10 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 6. You're still paying for the license. To stop paying for it, [remove the license from your subscription](../../commerce/licenses/buy-licenses.md).
 
-## Related articles
+## Related content
 
-[About shared mailboxes](about-shared-mailboxes.md)
-
-[Create a shared mailbox](create-a-shared-mailbox.md)
-
-[Configure a shared mailbox](configure-a-shared-mailbox.md)
-
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md)
-
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md)
+[About shared mailboxes](about-shared-mailboxes.md) (article)\
+[Create a shared mailbox](create-a-shared-mailbox.md) (article)\
+[Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
