@@ -325,7 +325,7 @@
                   items:
                     - name: Microsoft 365 Streaming API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: Stream advanced hunting evens to Azure Events hub
+                    - name: Stream advanced hunting events to Azure Events hub
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: ../defender-endpoint/raw-data-export-storage.md
