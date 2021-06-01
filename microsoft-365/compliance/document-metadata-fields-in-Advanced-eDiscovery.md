@@ -46,7 +46,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|Conversation Body||Conversation body of the item.|
 |Conversation Topic|Conversation Topic||Conversation topic of the item.|
-|Conversation ID|ConversationId|Email_conversation_ID|Conversation Id from the message.|
+|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
@@ -69,12 +69,12 @@ The following table lists the metadata fields for documents in a review set in a
 |Dominant theme|DominantTheme|Dominant_theme|Dominant theme as calculated for analytics.|
 |Duplicate subset||Duplicate_subset|Group ID for exact duplicates.|
 |EmailAction*||Email_action|Values are **None**, **Reply**, or **Forward**; based on the subject line of a message.|
-|Email Delivery Receipt Requested||Email_delivery_receipt_requested|Email address supplied in Internet Headers for delivery receipt.|
+|Email Delivery Receipt Requested||Email_delivery_receipt|Email address supplied in Internet Headers for delivery receipt.|
 |Importance|EmailImportance|Email_importance|Importance of the message: **0** - Low; **1** - Normal; **2** - High|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|The full set of email headers from the email message|
 |EmailLevel*||Email_level|Indicates a message's level within the email thread it belongs to; attachments inherit its parent message's value.|
 |Email Message Id||Email_message_ID|Internet message Id from the message.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|Email address supplied in Internet Headers for read receipt.|
+|EmailReadReceiptRequested||Email_read_receipt|Email address supplied in Internet Headers for read receipt.|
 |Email Security|EmailSecurity|Email_security|Security setting of the message: **0** - None; **1** - Signed; **2** -  Encrypted; **3** -  Encrypted and signed.|
 |Email Sensitivity|EmailSensitivity|email_sensitivity|Sensitivity setting of the message: **0** - None; **1** Personal; **2** - Private; **3** - CompanyConfidential.|
 |Email set|EmailSet|Email_set|Group ID for all messages in the same email set.|
@@ -127,7 +127,7 @@ The following table lists the metadata fields for documents in a review set in a
 |O365 date created||O365_date_created|Created date from SharePoint.|
 |O365 date modified||O365_date_modified|Last modified date from SharePoint.|
 |O365 modified by||O365_modified_by|Modified by from SharePoint.|
-|Parent ID|ParentId|Container_ID|Id of the item's parent.|
+|Parent ID|ParentId|Parent_ID|Id of the item's parent.|
 |ParentNode||Parent_node|The closest preceding email message in the email thread.|
 |Participant domains|ParticipantDomains|Email_participant_domains|List of all domains of participants of a message.|
 |Participants|Participants|Email_participants|List of all participants of a message; for example, Sender, To, Cc, Bcc.|
