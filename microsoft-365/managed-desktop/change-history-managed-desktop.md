@@ -81,7 +81,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Prerequisites](get-ready/prerequisites.md) | Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
+Work with insights | Updated article
 [Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
 [Access the admin portal](get-started/access-admin-portal.md) | Updated article
 [Deploy apps to devices](get-started/deploy-apps.md) | Updated article
@@ -104,7 +104,7 @@ New or changed article | Description
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Updated article
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
+Work with insights| Updated article
 
 ## August 2020
 New or changed article | Description
@@ -174,8 +174,8 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Security in Microsoft Managed Desktop](service-description/security.md)| Updated article
-[Work with insights](working-with-managed-desktop/insights.md) | Updated article
-[Windows security update insights](working-with-managed-desktop/security-update-insights.md) | New article
+Work with insights | Updated article
+Windows security update insights| New article
 [How updates are handled in Microsoft Managed Desktop](service-description/updates.md) | Updated article
 [Microsoft Managed Desktop device services](service-description/device-services.md) | Updated article
 
@@ -201,9 +201,9 @@ New or changed article | Description
 ## November 2019
 New or changed article | Description
 --- | ---
-[Work with insights](working-with-managed-desktop/insights.md) | New article
-[Usage insights](working-with-managed-desktop/usage-insights.md) | New article
-[Reliability insights](working-with-managed-desktop/reliability-insights.md) | New article
+Work with insights | New article
+Usage insights | New article
+Reliability insights | New article
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
 [Microsoft Managed Desktop main page](./index.yml) | Updated article
 [What is Microsoft Managed Desktop?](./intro/index.md) | Updated article

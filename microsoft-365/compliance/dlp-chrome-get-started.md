@@ -256,9 +256,8 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Drag & Drop enforcement for folder upload is not supported.
-2. Block Override enforcement for cloud egress is not supported.
-3. Incognito mode is not supported and must be disabled.
+1. Block Override enforcement for cloud egress is not supported.
+2. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
