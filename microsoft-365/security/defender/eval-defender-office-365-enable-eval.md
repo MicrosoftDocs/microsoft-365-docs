@@ -42,7 +42,7 @@ Microsoft Defender for Office 365 can be evaluated as part of a full E5 license 
 
 Log on to your existing Microsoft Defender for Office 365 environment or tenant administration portal.
 
-**Contact RYAN CAIRNS to confirm the login roles needed.**
+<!--**Contact RYAN CAIRNS to confirm the login roles needed.**-->
 
 1. Navigate to the administration portal.
 2. Select Purchase Services from the quick launch.
