@@ -48,10 +48,10 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, and KOR.
 
-- Attack simulation training is now available in GCC (starting June 15, 2021). If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft Security Center to run realistic attack scenarios in your organization as outlined in the sections below. Attack simulation training is not yet available in GCC-H and DoD environments.
+- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft Security Center to run realistic attack scenarios in your organization as described in this article. Attack simulation training is not yet available in GCC High or DoD environments.
 
 > [!NOTE]
-> Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select from 2 training experiences, 'ISA Phishing' and 'Mass Market Phishing'. No other capabilities are part of the E3 trial offering.
+> Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
 
 ## Simulations
 
