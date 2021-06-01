@@ -113,11 +113,9 @@ The table below provides references and additional guidance for configuring and 
 |Safe Attachments     |    Protect users from malicious content in email attachments and files in SharePoint, OneDrive, and Teams.     |    [Set up safe attachment policies in Defender for Office 365](../office-365-security/set-up-safe-attachments-policies.md)     |
 |Safe Links     |     Protect users from opening and sharing malicious links in email messages or Office desktop apps.    |    [Set up safe links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)     |
 
-<!-- 
 ## Step 3: Try out capabilities
 
 Now that your pilot is set up and configured, it's helpful to become familiar with the reporting and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
-
 
 |Capability  |Description  |More information  |
 |---------|---------|---------|
@@ -126,7 +124,6 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
 |Row4     |         |         |
 |Row5     |         |         |
- -->
 
 ### Navigation you may need
 
