@@ -13,7 +13,7 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Manage your MAPG app policies."
+description: "Manage your app governance policies."
 ---
 
 # Manage app policies
@@ -35,8 +35,8 @@ Here's an example of a process for managing an existing policy:
   - If needed, change the status to **Audit mode** for testing.
 
 2. Check for expected behavior, such as alerts generated.
-3. If the behavior is not expected, go back to step 1.
-4. If the behavior is expected, edit the policy and change its status to active (if needed).
+1. If the behavior is not expected, go back to step 1.
+1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
 ![The manage app policy workflow](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
@@ -62,8 +62,4 @@ To delete an app policy, you can:
 - Select the policy in the policy list, and then select **Delete** on the app policy pane.
 - Select the vertical ellipses for the policy in the list, and then select **Delete**.
 
-
-<!--
 An alternative to deleting an app policy is to change its status to inactive. Once inactive, it will not generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful for a future policy, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.
---> 
-

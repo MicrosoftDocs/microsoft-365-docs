@@ -20,9 +20,9 @@ description: "Create app policies."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft Application Protection and Governance (MAPG) are a way for you to:
+Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft app governance are a way for you to:
 
-- Specify conditions by which MAPG can alert you to app behavior for automatic or manual remediation.
+- Specify conditions by which app governance can alert you to app behavior for automatic or manual remediation.
 - Implement the app compliance policies for your organization.
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
@@ -37,11 +37,11 @@ To create a new app policy, go to **Microsoft 365 Compliance Center > App protec
 
 To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, select the name of the template, and then select **Next**.
 
-MAPG has three categories of app policy templates.
+App governance has three categories of app policy templates.
 
 ### App usage
 
-MAPG includes these templates to generate alerts for app usage.
+App governance includes these templates to generate alerts for app usage.
 
 | Template name | Description |
 |:-------|:-----|
@@ -51,7 +51,7 @@ MAPG includes these templates to generate alerts for app usage.
 
 ### App Permissions
 
-MAPG includes these templates to generate alerts for app permissions.
+App governance includes these templates to generate alerts for app permissions.
 
 | Template name | Description |
 |:-------|:-----|
@@ -62,7 +62,7 @@ MAPG includes these templates to generate alerts for app permissions.
 
 ### App certification
 
-MAPG includes these templates to generate alerts for app certification.
+App governance includes these templates to generate alerts for app certification.
 
 | Template name | Description |
 |:-------|:-----|

@@ -20,7 +20,7 @@ description: "Get started with Learn about app policies."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-App policies for Microsoft Application Protection and Governance (MAPG) are the way that you can implement more proactive or reactive conditions to create alerts or automatic remediation for your specific needs for app compliance in your organization.
+App policies for Microsoft app governance are the way that you can implement more proactive or reactive conditions to create alerts or automatic remediation for your specific needs for app compliance in your organization.
 
 To see the list of current app policies, go to **Microsoft 365 Compliance Center > App protection & governance > Policies**.
 

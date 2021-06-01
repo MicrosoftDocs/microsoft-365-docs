@@ -20,11 +20,11 @@ description: "Get started with visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The first place to get started is the Microsoft Application Protection and Governance (MAPG) dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection). Note that your sign-in account must have one of [these MAPG administrator roles](manage-app-protection-governance.md#administrator-roles) to view any MAPG data.
+The first place to get started is the Microsoft App Governance dashboard at [https://compliance.microsoft.com/m365appprotection](https://compliance.microsoft.com/m365appprotection). Note that your sign-in account must have one of [these app governance administrator roles](manage-app-protection-governance.md#administrator-roles) to view any app governance data.
 
-![The MAPG overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The App Governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-You can also access the MAPG dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App protection & governance > Overview page**.
+You can also access the App Governance dashboard from **Microsoft 365 admin center > Microsoft 365 Compliance Center > App protection & governance > Overview page**.
 
 ## What’s available on the dashboard
 
@@ -38,7 +38,7 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   
   - **All categories**: Sorts across all available categories.
   - **High privilege**: High privilege is an internally determined category based on platform machine learning and signals.
-  - **Overprivileged**: When MAPG receives telemetry that indicates that a permission granted to an application has not been used in the last 90 days, that application is overpermissioned. MAPG must be operating for at least 90 days to determine if any app is overpermissioned.  
+  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application has not been used in the last 90 days, that application is overpermissioned. App governance must be operating for at least 90 days to determine if any app is overpermissioned.  
   - **Unverified**: Applications that have not received [publisher certification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only**: [Application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  

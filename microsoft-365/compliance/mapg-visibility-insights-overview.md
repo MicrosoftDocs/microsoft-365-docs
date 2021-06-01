@@ -20,15 +20,15 @@ description: "Learn about visibility and insights."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-With Microsoft Application Protection and Governance (MAPG), you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the MAPG dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
+With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level summary of the apps in your tenant and from there you can efficiently navigate to top tasks.
 
-With MAPG visibility and insights, you can see:
+With app governance visibility and insights, you can see:
 
 - A list of all the third-party Microsoft 365 platform apps with their compliance status in your tenant on a single dashboard.
 - A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
->Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in MAPG.
+>Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in app governance.
 >
 
 Here's a quick review of required administrator roles for visibility and insights.
@@ -59,7 +59,7 @@ M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
 M365 API Error Analysis per App
 -->
 
-With MAPG, you can see:
+With app governance, you can see:
 
 - A dashboard of all insights.
 - Network insights of single and all apps with workload and user level insights.
@@ -80,8 +80,8 @@ With MAPG, you can see:
 - Policy list insights.
 - Policy hit and success rates insight.
 - Insights from Microsoft Cloud App Security (MCAS).
-- Policies created in MCAS in the MAPG portal.
-- Alerts for OAuth apps generated in MCAS, in the MAPG portal.
+- Policies created in MCAS in the app governance portal.
+- Alerts for OAuth apps generated in MCAS, in the app governance portal.
 
 You can also:
 

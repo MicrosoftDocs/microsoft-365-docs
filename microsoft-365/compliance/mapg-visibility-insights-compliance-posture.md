@@ -20,12 +20,12 @@ description: "Determine your app compliance posture."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the MAPG Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection).
+Microsoft app governance allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the app governance Overview page in the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/m365appprotection).
 
-![The MAPG overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The App Governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 >[!Note]
-> Your sign-in account must have one of [these roles](manage-app-protection-governance.md#administrator-roles) to view any MAPG data.
+> Your sign-in account must have one of [these roles](manage-app-protection-governance.md#administrator-roles) to view any app governance data.
 >
 
 From this page, you can see:
@@ -41,7 +41,7 @@ From this page, you can see:
 - For alerts:
 
   - How many alerts your tenant has
-  - How many are based on MAPG detections (**Threat alerts**)
+  - How many are based on app governance detections (**Threat alerts**)
   - How many are based on app policies you have in place (**Policy alerts**)
   - The 10 latest alerts
 

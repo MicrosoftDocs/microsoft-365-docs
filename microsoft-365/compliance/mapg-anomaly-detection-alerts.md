@@ -18,13 +18,13 @@ description: "Investigate anomaly detection alerts."
 
 # Investigate anomaly detection alerts
 
- Microsoft Application Governance Management provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+ Microsoft app governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT&CK
 
-To make it easier to map the relationship between Microsoft Application Security and Governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when Microsoft Application Security and Governance alert is triggered.
+To make it easier to map the relationship between Microsoft app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when Microsoft Application Security and Governance alert is triggered.
 
-This guide provides information about investigating and remediating Microsoft Application Security and Governance alerts in the following categories.
+This guide provides information about investigating and remediating Microsoft app governance alerts in the following categories.
 
 - Initial Access
 - Execution
@@ -38,7 +38,7 @@ This guide provides information about investigating and remediating Microsoft Ap
 
 ## Security alert classifications
 
-Following proper investigation, all Microsoft Application Security and Governance alerts can be classified as one of the following activity types:
+Following proper investigation, all Microsoft app governance alerts can be classified as one of the following activity types:
 
 - True positive (TP): An alert on a confirmed malicious activity.
 - Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
@@ -85,7 +85,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](https://docs.micros
 
 **Severity**: Medium
 
-**Description**: This detection identifies an OAuth app with only Read scopes such as User. Read, People.Read, Contacts.Read, Mail.Read, Contacts.Read.Shared redirects to suspicious Reply URL through Graph API.  This activity attempts to indicate that malicious app with less privilege permission (such as Read scopes) could be exploited to conduct users account reconnaissance.
+**Description**: This detection identifies an OAuth app with only Read scopes such as User.Read, People.Read, Contacts.Read, Mail.Read, Contacts.Read.Shared redirects to suspicious Reply URL through Graph API. This activity attempts to indicate that malicious app with less privilege permission (such as Read scopes) could be exploited to conduct users account reconnaissance.
 
 **TP or FP?**
 
@@ -93,7 +93,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](https://docs.micros
 
   **Recommended action**: Review the Reply URL and scopes requested by the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they will not have access to the connected app. If you do not want them to know, unselect Notify users who granted access to this banned app in the dialog. - It is recommended that you let the app users know their app is about to be banned from use.
+  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they will not have access to the connected app. If you do not want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **B-TP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 

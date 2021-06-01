@@ -20,7 +20,7 @@ description: "View your apps."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft Application Protection and Governance (MAPG) allows you to quickly gain deep insights into the Microsoft 365 apps in your tenant. For example, you can see:
+Microsoft app governance allows you to quickly gain deep insights into the Microsoft 365 apps in your tenant. For example, you can see:
 
 - A list of all OAuth-enabled Microsoft 365 apps in the tenant, together with relevant app metadata and usage data.
 - App details with deeper insights and information by selecting an app in the list.
@@ -32,7 +32,7 @@ For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > 
 ![The MAPG app summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
-> Your sign-in account must have one of [these roles](manage-app-protection-governance.md#administrator-roles) to view any MAPG data.
+> Your sign-in account must have one of [these roles](manage-app-protection-governance.md#administrator-roles) to view any app governance data.
 >
 
 You will see a list of apps and this information:
@@ -51,7 +51,7 @@ You will see a list of apps and this information:
 
   The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
 
-MAPG sorts the app list by **Last modified** by default. To sort the list by another app attribute, select the attribute name.
+App governance sorts the app list by **Last modified** by default. To sort the list by another app attribute, select the attribute name.
 
 You can also select **Search** to search for an app by name.
 
@@ -59,7 +59,7 @@ You can also select **Search** to search for an app by name.
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App protection & governance > Apps page > *app name***.
 
-![The MAPG app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![The app governance app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 The app details pane provides additional information on these tabs:
 
