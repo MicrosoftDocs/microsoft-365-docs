@@ -1,6 +1,6 @@
 ---
 title: Working with Microsoft Managed Desktop 
-description:  
+description:  Landing page for the "working with" section
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
