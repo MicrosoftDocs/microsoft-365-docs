@@ -27,19 +27,25 @@ In most cases, it will be useful to dig deeper into the content in a review set 
 
 In a review set, there are five default filters that are pre-loaded in the review set:
 
-- Keyword
+- Keywords
 - Date
 - Sender/Author
 - Subject/Title
 - Tags
 
-Click each filter to expand it and assign a value. Click outside the filter to automatically apply the filter to the review set. 
+![Default filter types](../media/DefaultFilterTypes.png)
+
+Click each filter to expand it and assign a value. Click outside the filter to automatically apply the filter to the review set. The following screenshot shows the Date filter configured to show documents within a date range.
 
 ![Default filter expanded](../media/ExpandedFilter.png)
 
 ## Add or remove filters
 
-To add or remove filters, select **Filters** to open the filter panel. The available filters are categorized in four sections:
+To add or remove filters that are displayed for the review set, select **Filters** to open the filter panel, which is displayed on a flyout page. 
+
+![Filter panel](../media/FilterPanel.png)
+
+The available filters are organized in four sections:
 
 - **Search**: Filters that provide different search capabilities.
 
@@ -49,9 +55,12 @@ To add or remove filters, select **Filters** to open the filter panel. The avail
 
 - **Item properties**: Filters for document properties. 
 
-Expand each section and select or deselect filters to add or remove them in the filter set. 
+Expand each section and select or deselect filters to add or remove them in the filter set. When you add a filter, it's displayed in the filter set. 
 
-![List of filters in filter panel](../media/FilterPanel.png)
+![List of filter sections and properties in the filter panel](../media/FilterPanel2.png)
+
+> [!NOTE]
+> When you expand a section in the filter panel, you'll notice that the default filter types are selected. You can keep these selected or deselect them and removed them from the filter set. 
 
 ## Filter types
 
@@ -77,11 +86,11 @@ You have the option to change the include and exclude relationship for a particu
 
 After you are satisfied with your filters, you can save the filter combination as a filter query. This lets you apply the filter in the future review sessions.
 
-To save a filter, select **Save the query** and name it. You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting the a filter query to apply to review set documents. 
+To save a filter, select **Save the query** and name it. You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting a filter query to apply to review set documents. 
 
 ![Save a filter query](../media/SaveFilterQuery.png)
 
-To delete a filter query, open the filter panel and select the trashcan icon next to the query. 
+To delete a filter query, open the filter panel and select the trashcan icon next to the query.
 
 ![Delete a filter query](../media/DeleteFilterQuery.png)
 
@@ -93,14 +102,12 @@ In addition to using filters, you can also use a KQL-like query language in the 
 
 You can also build more advanced queries to search for documents in a review set.
 
-1. Open the filter panel, select **Filters**, and expand the **Search** section to find the **KQL** filter.
+1. Open the filter panel, select **Filters**, and expand the **Search** section.
 
-![Add KQL filter](../media/AddKQLFilter.png)
+  ![Add a KQL filter](../media/AddKQLFilter.png)
 
-2. Select the **KQL** filter and click **Open query builder**. 
+2. Select the **KQL** filter and click **Open query builder**.
 
-  In this panel, you can create complex KQL queries by using the query builder. You have the option to create conditions within various condition groups as well as defining **AND**/**OR** relationships between them. 
+   In this panel, you can create complex KQL queries by using the query builder. You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.
 
-![Complex query](.../media/ComplexQuery.png)
-
-
+   ![Use query builder to configure complex filter queries](../media/ComplexQuery.png)
