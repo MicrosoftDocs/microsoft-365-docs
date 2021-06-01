@@ -40,7 +40,7 @@ You will only be able to mark and notify users of review results if the message 
     - Organization Management in [Exchange Online](/Exchange/permissions-exo/permissions-exo).
 
 - You'll also need access to the Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that says *Specify an email address in your domain*. For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:
-    - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell?view=exchange-ps)
+    - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
     - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## Configure the messages used to notify users
