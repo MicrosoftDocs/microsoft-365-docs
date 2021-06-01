@@ -18,7 +18,7 @@ search.appverid:
 description: "Learn about upgrading your Microsoft 365 subscription to a Microsoft 365 for business subscription."
 ---
 
-# Consumer upgrade of Microsoft 365 for business
+# Simplified upgrade of Microsoft 365 for business
 
 When you set up Microsoft 365 for your business, you can create a custom email address that includes your business name. This makes the address easier to remember, gives you and your employees the same company branded email, and provides more security in the Microsoft Cloud.
 
