@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Compliance Extension (preview)"
+title: "Get started with the Microsoft Compliance Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Compliance Extension."
 ---
 
-# Get started with Microsoft Compliance Extension (preview)
+# Get started with Microsoft Compliance Extension
 
 Use these procedures to roll out the Microsoft Compliance Extension.
 
