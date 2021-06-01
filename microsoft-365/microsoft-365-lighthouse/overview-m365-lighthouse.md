@@ -19,7 +19,24 @@ description: "For managed service providers using Microsoft 365 Lighthouse, lear
 
 # Overview of Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse is a new portal service that gives managed service providers the ability to onboard, monitor, and manage your Microsoft 365 customers and users from a single location. Microsoft 365 Lighthouse allows an admin to manage device compliance, threat protection, and user access for multiple tenants. 
+Microsoft 365 Lighthouse is a new portal service that gives managed service providers the ability to view, monitor, and manage your Microsoft 365 customers and users from a single location. Microsoft 365 Lighthouse allows an admin to manage device compliance, threat protection, and user access for multiple tenants. 
+
+Microsoft 365 Lighthouse doesn't support indirect providers. Only Cloud Solution Provider partners are eligible at this time. 
+
+## Before you begin
+
+The following are required to use Microsoft 365 Lighthouse: 
+
+**Delegated Admin Privileges (DAP)**: To manage a customer's service or subscription on their behalf, the customer must grant you administrator permissions for that service. To learn more about how to establish a DAP relationship, see [Obtain permissions to manage a customer’s service or subscription](/mem/intune/enrollment/windows-enrollment-methods).  
+
+**Microsoft 365 Business Premium Subscription**: Your customer must have a Business Premium subscription in their tenant to be enrolled in Microsoft 365 Lighthouse. 
+
+The following is recommended: 
+
+**Intune Enrolled Devices**: Tenants must have active enrolled devices. For more information, see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods).
+
+>[!NOTE]
+>Many of the initial capabilities of the service are based on Intune functionality. If a customer doesn't have Intune enrolled devices and associated policies, limited data shows for this customer. 
 
 ## Standardize device compliance
 
@@ -27,7 +44,7 @@ Microsoft 365 Lighthouse allows you to monitor and manage device compliance for 
 
 ## Manage antivirus and threat protection
 
-Microsoft 365 Lighthouse threat management capabilities give you a view into the protection status of Microsoft Defender Antivirus across all Windows 10 devices under your management. You can determine which devices in your business are running Defender Antivirus, whether those devices are up to date, whether they have active threats, and where a reboot, required update, or an overdue scan is necessary. You're also able to view active threats in your environment, determine which users and devices are affected and which were blocked or quarantined and where further review is needed.
+Microsoft 365 Lighthouse threat management capabilities give you a view into the protection status of Microsoft Defender Antivirus across all Windows 10 devices under your management. You can view which devices in your business are running Defender Antivirus, whether those devices are up to date, whether they have active threats, and where a reboot, required update, or an overdue scan is necessary. You're also able to view active threats in your environment, determine which users and devices are affected and which were blocked or quarantined and where further review is needed.
 
 ## Manage user access
 
@@ -38,10 +55,10 @@ Microsoft 365 Lighthouse provides tracing and auditing for all user access actio
 
 ## Next steps
 
-<!-- Include this section for how-to articles only, if needed. Next logical action might be to enable features for customers, but I'm not certain of that. Next steps seem appropriate, especially for a new service overview. LMK what you think is the appropriate how-to article for this section. -->
+[Sign up for Microsoft 365 Lighthouse]()
+[Enable features for customers]()
 
 ## Related content
 
-[Enable features for customers]() (article)\
 [Overview of managing tenants]() (article)\
 [Overview of managing devices]() (article)
