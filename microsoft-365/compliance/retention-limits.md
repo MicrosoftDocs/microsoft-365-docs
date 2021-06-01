@@ -28,13 +28,15 @@ When you use [retention policies and retention label policies](retention.md#rete
 
 ## Maximum number of policies per tenant
 
-A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention and other policies for compliance, such as DLP policies.
+A single tenant can have a maximum of 10,000 policies (any configuration). This maximum number includes the different policies for retention, and other policies for compliance such as policies for DLP, information barriers, eDiscovery holds, and sensitivity labels.
 
-Maximum number of policies for retention per workload:
+Within this 10,000 policies limit, there are also some limits on the maximum number of policies for retention per workload:
 
 - Exchange Online (any configuration): 1,800
 - SharePoint or OneDrive: (all sites automatically included): 13
 - SharePoint or OneDrive (specific locations included or excluded): 2,600
+
+Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer.
 
 ## Maximum number of items per policy
 
