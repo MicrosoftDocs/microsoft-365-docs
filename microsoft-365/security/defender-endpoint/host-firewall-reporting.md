@@ -31,9 +31,9 @@ If you are an admin, you can now host firewall reporting to [Microsoft 365 secur
 - You must be running Windows 10 or Windows Server 2019.
 - To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md). 
 - For Microsoft 365 security center to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security: 
-    - [Audit Filtering Platform Packet Drop](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
-    - [Audit Filtering Platform Connection](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
-- Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](https://docs.microsoft.com/windows/win32/fwp/auditing-and-logging). 
+    - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
+    - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
+- Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging). 
     - The two PowerShell commands are:
         - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable** 
         - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable** 
@@ -56,7 +56,7 @@ The following scenarios are supported during Ring0 Preview.
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to https://security.microsoft.com/firewall. 
 
 > [!div class="mx-imgBorder"]
-> ![Host firewall reporting page](../security/defender-endpoint/images/host-firewall-reporting-page.png)
+> ![Host firewall reporting page](\images\host-firewall-reporting-page.png)
 
 These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
@@ -65,21 +65,21 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch https://securitycenter.microsoft.com in a new tab, and take you directly to the **Device Timeline** tab. 
 
 > [!div class="mx-imgBorder"]
-> ![Computers with a blocked connection](../security/defender-endpoint/images/firewall-reporting-blocked-connection.png)
+> ![Computers with a blocked connection](\images\firewall-reporting-blocked-connection.png)
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device. 
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events. 
 
 > [!div class="mx-imgBorder"]
-> ![Filters button](../security/defender-endpoint/images/firewall-reporting-filters-button.png)
+> ![Filters button](\images\firewall-reporting-filters-button.png)
 
 ### Drill into advanced hunting (preview refresh)
 
 Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated. 
 
 > [!div class="mx-imgBorder"]
-> ![Open Advanced hunting button](../security/defender-endpoint/images/firewall-reporting-advanced-hunting.png)
+> ![Open Advanced hunting button](\images\firewall-reporting-advanced-hunting.png)
 
 The query can now be executed, and all related Firewall events from the last 30 days can be explored. 
 
