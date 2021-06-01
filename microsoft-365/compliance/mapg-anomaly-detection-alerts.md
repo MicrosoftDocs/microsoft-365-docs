@@ -79,7 +79,7 @@ This section describes alerts indicating that a malicious app may be attempting 
 
 #### Understand the scope of the breach
 
-Follow the tutorial on how to investigate risky OAuth apps.
+Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth).
 
 ### OAuth App with read Scopes have suspicious Reply URL
 
@@ -101,7 +101,7 @@ Follow the tutorial on how to investigate risky OAuth apps.
 
 #### Understand the scope of the breach 
 
-1. Review all graph activities done by the app.
+1. Review all activities done by the app.
 1. If you suspect that an app is suspicious, we recommend that you investigate the app’s name and Reply URL in different app stores. When checking app stores, focus on the following types of apps:
    - Apps that have been created recently.
    - Apps with a suspicious Reply URL
@@ -134,7 +134,7 @@ This detection identifies an OAuth App that consented to suspicious scopes, crea
 
 #### Understand the scope of the breach
 
-1. Review all graph activities done by the app.
+1. Review all activities done by the app.
 1. Review the scopes granted by the app.
 1. Review the inbox rule action and condition created by the app.
 
@@ -164,5 +164,5 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 #### Understand the scope of the breach
 
-1. Review the Graph activity log for events performed by this app to gain a better understanding of other Graph activities to read emails and attempt to collect users sensitive email information.
+1. Review the activity log for events performed by this app to gain a better understanding of other Graph activities to read emails and attempt to collect users sensitive email information.
 1. Monitor for unexpected credential being added to the app.
