@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 
 localization_priority: Normal
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
 ms.technology: mdo
@@ -51,7 +51,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 For messages in the Inbox or any other email folder except Junk Email, use the following method to report spam and phishing messages:
 
 1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
-  
+
    > [!div class="mx-imgBorder"]
    > ![Report Message - More actions](../../media/report-message-more-actions.png)
 
@@ -63,10 +63,10 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
    - Moved to the Junk Email folder if it was reported as spam.
 
    - Deleted if it was reported as phishing.
-   
+
 ### Report messages that are not junk
 
-1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.  
+1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.
 
    > [!div class="mx-imgBorder"]
    > ![Report Message - More actions](../../media/report-message-more-actions.png)
@@ -82,4 +82,4 @@ To review messages that users report to Microsoft, you have these options:
 
 - Use the Admin Submissions portal. For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+- Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

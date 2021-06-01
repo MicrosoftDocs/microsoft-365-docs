@@ -70,9 +70,8 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 >[!NOTE]
 >- Depending the type of environment structure you select, devices will be available for the specified number of hours from the day of activation.
->- Each environment is provisioned with a limited set of test devices. When you've used up the provisioned devices, no new devices are provided. A deleted device does not refresh the available test device count.
->- You can no longer use the lab when the resources have been used up. It does not reset nor refresh.
->- It is advisable to use the resources carefully.The lab resources are limited. They will not reset nor refresh. 
+>- Each environment is provisioned with a limited set of test devices. When you've used up the provisioned devices and have deleted them, you can request for more devices. 
+>- You can request for lab resources once a month. 
 
 Already have a lab? Make sure to enable the new threat simulators and have active devices.
 
@@ -107,9 +106,6 @@ After the lab setup process is complete, you can add devices and run simulations
 When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10 or Windows Server 2019 devices.
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
-
-   >[!TIP]
-   > Need more devices in your lab? Submit a support ticket to have your request reviewed by the Defender for Endpoint team. 
 
 If you chose to add a threat simulator during the lab setup, all devices will have the threat simulator agent installed in the devices that you add.
 
@@ -158,10 +154,29 @@ Automated investigation settings will be dependent on tenant settings. It will b
     ![Image of devices tab](images/machines-tab.png)
     
 
-    >[!TIP]
-    >In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+    > [!TIP]
+    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
+## Request for more devices
+When all existing devices are used and deleted, you can request for more devices. You can request for lab resources once a month. 
 
 
+1. From the evaluation lab dashboard, select **Request for more devices**.
+
+   ![Image of request for more devices](images/request-more-devices.png)
+
+2. Choose your configuration. 
+3. Submit the request. 
+
+When the request is submitted successfully you'll see a green confirmation banner and the date of the last submission.
+ 
+You can find the status of your request in the **User Actions** tab, which will be approved in a matter of hours.
+
+When approved, the requested devices will be added to your lab set up and you’ll be able to create more devices. 
+
+
+> [!TIP]
+> To get more out of your lab, don’t forget to check out our simulations library.
 
 ## Simulate attack scenarios
 Use the test devices to run your own attack simulations by connecting to them. 
