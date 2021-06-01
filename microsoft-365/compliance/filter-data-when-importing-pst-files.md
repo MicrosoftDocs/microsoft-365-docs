@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: "Learn how to filter data using the intelligent import feature in the Office 365 import service when you import PST files to Office 365."
+description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 ---
 
 # Filter data when importing PST files
 
-Use the new Intelligent Import feature in the Office 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
+Use the new Intelligent Import feature in the Microsoft 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   
 - After you create and submit a PST import job, PST files are uploaded to an Azure storage area in the Microsoft cloud.
   
