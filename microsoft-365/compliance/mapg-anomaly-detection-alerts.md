@@ -79,7 +79,7 @@ This section describes alerts indicating that a malicious app may be attempting 
 
 #### Understand the scope of the breach
 
-Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth.md).
+Follow the tutorial on how to [investigate risky OAuth apps](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth).
 
 ### OAuth App with read Scopes have suspicious Reply URL
 
