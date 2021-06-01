@@ -80,7 +80,7 @@ CRON_TZ=America/Los_Angeles
 
 > #!Ubuntu and Debian systems
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > In the examples above, we are setting it to 00 minutes, 6 a.m.(hour in 24 hour format), any day of the month, any month, on Sundays.[$(date +\%d) -le 15] == Won’t run unless it’s equal or less than the 15th day (3rd week). Meaning it will run every 3rd Sundays(7) of the month at 6:00 a.m. Pacific (UTC -8).
