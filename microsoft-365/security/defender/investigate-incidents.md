@@ -81,7 +81,20 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
 
-By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. Selecting each alert takes you to the alert's main page where you can conduct an in-depth analysis of that alert. 
+By default, the alerts are ordered chronologically to allow you to see how the incident played out over time. 
+When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
+
+You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including files, users, and mailboxes.
+
+Here's an example.
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident":::
+
+This incident alert page is composed of these sections:
+
+- Alert story, which includes a summary of what happened
+- Related events and alerts
+- Summary details
 
 Learn how to use the alert queue and alert pages in [investigate alerts](investigate-alerts.md).
 
@@ -106,8 +119,10 @@ The **Users** tab lists all the users that have been identified to be part of or
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
 
-You can select the check mark for a user to see details of the user account threat, exposure, and contact information. 
-Select the user name to see additional user account details.
+You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
+
+Learn how to view additional user information and manage the users of an incident in [investigate users](investigate-users.md).
+
 
 ## Mailboxes
 

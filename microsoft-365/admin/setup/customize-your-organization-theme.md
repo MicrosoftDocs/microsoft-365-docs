@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: "Learn to change the default theme of Microsoft 365 and customize it to match your company logo or color. "
+description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
 # Customize the Microsoft 365 theme for your organization
@@ -147,10 +147,9 @@ The recommended contrast ratio between text, icon or button color and background
 
 ### If I define a theme, which places in Microsoft 365 will this be used?
 
-Any theme will be appear in the top navigation bar for everyone in the organization as part of the Microsoft 365 suite header.  
+Any theme appears in the top navigation bar for everyone in the organization as part of the Microsoft 365 suite header.  
   
-## Related articles
+## Related content
 
-[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md)
-
-[Overview of Microsoft 365 Groups for administrators](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)\
+[Overview of Microsoft 365 Groups for administrators](../create-groups/office-365-groups.md) (article)
