@@ -101,7 +101,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Preset security policies** page, use <https://protection.office.com/presetSecurityPolicies>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -113,9 +113,9 @@ In other words, the settings of the **Strict protection** policy override the se
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-### Use the Security & Compliance Center to assign preset security policies to users
+### Use the Microsoft 365 security center to assign preset security policies to users
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Preset security policies**.
+1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **Preset security policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
@@ -147,7 +147,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 5. On the **Confirm** step, verify your selections, and then click **Confirm**.
 
-### Use the Security & Compliance Center to modify the assignments of preset security policies
+### Use the Microsoft 365 security center to modify the assignments of preset security policies
 
 The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
