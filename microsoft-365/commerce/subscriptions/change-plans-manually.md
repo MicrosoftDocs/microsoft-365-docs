@@ -38,6 +38,14 @@ To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-
 > [!IMPORTANT]
 > If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](back-up-data-before-switching-plans.md).
 
+>[!NOTE]
+>If you are renewing your Office 365 subscription and are upgrading from an Office 365 sku to a Microsoft 365 sku, this will require you to change the license assignment for all users. The switch from an Office 365 sku to a Microsoft 365 sku will not happen automatically.
+>
+>For Example:
+>
+>If users are currently assigned "Office 365 E3", and you renew your subscription to "Microsoft 365 E3", you will need to update the user license assignments to reflect this sku change.
+
+
 ## Step 2: Buy a new subscription
 
 **Already purchased?** If you already have a subscription you want to move users to, skip this step and go to [Step 3: Check your new subscription and licenses](#step-3-check-your-new-subscription-and-licenses) in this topic.
