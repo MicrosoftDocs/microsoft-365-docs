@@ -143,8 +143,7 @@ The policy is removed from the mobile device for each user the policy applies to
 
 You can also wipe a device either completely, or selectively wipe organizational information from the device. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
-## Related topics
+## Related content
 
-[Overview of Basic Mobility and Security](overview.md)
-
-[Capabilities of Basic Mobility and Security](capabilities.md)
+[Overview of Basic Mobility and Security](overview.md) (article)\
+[Capabilities of Basic Mobility and Security](capabilities.md) (article)

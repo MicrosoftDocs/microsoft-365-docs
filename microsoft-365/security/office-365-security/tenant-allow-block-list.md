@@ -40,7 +40,6 @@ The Tenant Allow/Block List in the Security & Compliance Center gives you a way 
 
 - URLs to block.
 - Files to block.
-- Bulk mail sender domains to allow. For more information about bulk mail, the bulk confidence level (BCL), and bulk mail filtering by anti-spam policies, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).
 - Spoofed senders to allow or block. If you override the allow or block verdict in the [spoof intelligence insight](learn-about-spoof-intelligence.md), the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders here before they're detected by spoof intelligence.
 
 This article describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
@@ -72,7 +71,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
-  - **URLs, files, and allow bulk senders**:
+  - **URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
     - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
   - **Spoofing**: One of the following combinations:
@@ -131,26 +130,6 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create allow bulk mail sender domain entries in the Tenant Allow/Block List
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. On the **Tenant Allow/Block List** page, select the **Sender domains for BCL bypass** tab, and then click **Add**.
-
-3. In the **Add sender domain for BCL bypass** flyout that appears, configure the following settings:
-
-   - **Add sender domains for BCL bypass**: Enter one source domain of good bulk mail per line, up to a maximum of 20.
-
-   - **Never expire**: Do one of the following steps:
-
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
-
-     or
-
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
-
-4. When you're finished, click **Add**.
-
 ## Use the Security & Compliance Center to create allow or block spoofed sender entries in the Tenant Allow/Block List
 
 **Notes**:
@@ -194,11 +173,6 @@ This article describes how to configure entries in the Tenant Allow/Block List i
      - **Last updated date**
      - **Expiration date**
      - **Note**
-
-   - **Sender domains for BCL bypass**
-     - **Value**: The bulk mail sender's domain.
-     - **Last updated date**
-     - **Expiration date**
 
    - **Spoofing**
      - **Spoofed user**
@@ -308,23 +282,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### Use PowerShell to add allow bulk mail sender domain entries to the Tenant Allow/Block List
-
-To add allow bulk mail sender domain entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-This example adds an allowed bulk sender entry for the specified domain that never expires.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
 ### Use PowerShell to add allow or block spoofed sender entries to the Tenant Allow/Block List
 
 To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
@@ -353,28 +310,6 @@ This example returns all blocked URLs.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-### Use PowerShell to view allow bulk mail sender domain entries in the Tenant Allow/Block List
-
-To view allow bulk mail sender domain entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-This example returns all allowed bulk mail sender domains.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-This example returns information for the specified bulk sender domain.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
@@ -423,22 +358,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Use PowerShell to modify allow bulk mail sender domain entries in the Tenant Allow/Block List
-
-To modify allow bulk mail sender domain entries in the Tenant Allow/Block List, use the following syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-This example changes the expiration of the specified allow bulk mail sender domain entry to never expire.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
 ### Use PowerShell to modify allow or block spoofed sender entries in the Tenant Allow/Block List
 
 To modify allow or block spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
@@ -455,12 +374,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### Use PowerShell to remove bulk mail sender domain, file, and domain entries from the Tenant Allow/Block List
+### Use PowerShell to remove URL or file entries from the Tenant Allow/Block List
 
-To remove allow bulk mail sender domain entries, block file entries, and block URL entries from the Tenant Allow/Block List, use the following syntax:
+To remove file and URL entries from the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 This example removes the specified block URL entry from the Tenant Allow/Block List.
