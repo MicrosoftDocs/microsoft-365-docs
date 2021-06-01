@@ -54,13 +54,13 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
     **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. 
     
-    A. Open **outlook** > **Home** >  **Rules** > Select **Manage Rules & Alerts**
-    B. Select **New Rule** > **Select Apply rule on message I receive** located near bottom of list, then click **Next**.
-    C. Click **Yes** when asked This rule will be applied to every message you receive. 
-    D. On the next list select the actions **redirect it to people or public group** and **stop processing more rules**
-    E. Click the underlined phrase **people or public group** in the bottom part of window.
-    F. Type the **email address** to forward mail to in the To field, then click **OK**.
-    G. Select **Finish**
+    1.  Open **outlook** > **Home** >  **Rules** > Select **Manage Rules & Alerts**
+    1. Select **New Rule** > **Select Apply rule on message I receive** located near bottom of list, then click **Next**.
+    1. Click **Yes** when asked This rule will be applied to every message you receive. 
+    1. On the next list select the actions **redirect it to people or public group** and **stop processing more rules**
+    1. Click the underlined phrase **people or public group** in the bottom part of window.
+    1. Type the **email address** to forward mail to in the To field, then click **OK**.
+    1. Select **Finish**
     
 
      Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
