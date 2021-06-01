@@ -32,7 +32,7 @@ ms.technology: m365d
 
 ##### Navigate
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
-- [Defender for Office 365 architecture](#understand-the-architecture)
+- [Understand Defender for Office 365 architecture](#understand-the-architecture)
 - [Understand key concepts](#understand-key-concepts)
 - [Review architecture requirements](#review-architecture-requirements)
 - [SIEM integration](#siem-integration)
@@ -82,12 +82,13 @@ For more detailed information about the capabilities included with Microsoft Def
 
 ## Review architecture requirements
 A successful MDO evaluation or production pilot assumes the following pre-requisites:
-- All your recipient mailboxes currently reside in Exchange Online.
-- Your public MX record currently resolves directly to EOP or a third-party SMTP gateway which then relays inbound external email directly to EOP.
-- Your primary email domain is configured as authoritative in Exchange Online.
-- You have successfully deployed and configured Directory Based Edge Blocking (DBEB) as appropriate. For more information, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+- All your recipient mailboxes are currently in Exchange Online.
+- Your public MX record resolves directly to EOP or a third-party SMTP gateway that then relays inbound external email directly to EOP.
+- Your primary email domain is configured as *authoritative* in Exchange Online.
+- You successfully deployed and configured *Directory Based Edge Blocking* (DBEB) as appropriate. For more information, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-IMPORTANT: If these requirements are not applicable or you are still in a hybrid coexistence scenario, then a Microsoft Defender for Office 365 evaluation can require more complex or advanced configurations which are not fully covered in this guidance.
+> [!IMPORTANT]
+> If these requirements are not applicable or you are still in a hybrid coexistence scenario, then a Microsoft Defender for Office 365 evaluation can require more complex or advanced configurations which are not fully covered in this guidance.
 
 ## SIEM integration
 
