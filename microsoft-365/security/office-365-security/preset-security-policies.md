@@ -27,9 +27,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Preset security policies provide a centralized location for applying all of the recommended spam, malware, and phishing policies to users at once. The policy settings are not configurable. Instead, they are set by us and are based on our observations and experiences in the datacenters for a balance between keeping harmful content away from users without disrupting their work.
+Preset security policies provide a centralized location for applying all of the recommended spam, malware, and phishing policies to users at once. The policy settings are not configurable. Instead, they are set by us and are based on our observations and experiences in the datacenters for a balance between keeping harmful content away from users and avoiding unnecessary disruptions.
 
-The rest of this topic describes preset security policies and how to configure them.
+The rest of this article describes preset security policies and how to configure them.
 
 ## What preset security policies are made of
 
@@ -50,13 +50,13 @@ A profile determines the level of protection. The following profiles are availab
 
 You use rules with conditions and exceptions that determine who the profiles are or are not applied to.
 
-You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
 The available conditions and exceptions are:
 
-- **The recipients are**: Mailboxes, mail users, or mail contacts in your organization.
-- **The recipients are members of**: Groups in your organization.
-- **The recipient domains are**: Accepted domains that are configured in Microsoft 365.
+- **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
+- **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+- **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+
+You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
 ### Policies in preset security policies
 
@@ -113,45 +113,38 @@ In other words, the settings of the **Strict protection** policy override the se
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-### Use the Microsoft 365 security center to assign preset security policies to users
+### Use the security center to assign preset security policies to users
 
-1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Anti-malware**.
+1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
-3. The **Apply Standard protection** or **Apply Strict protection** wizard starts. On the **EOP protections apply to** step, identify the internal recipients that the [EOP protections](#policies-in-preset-security-policies) apply to:
+3. The **Apply Standard protection** or **Apply Strict protection** wizard starts. On the **EOP protections apply to** page, identify the internal recipients that the [EOP protections](#policies-in-preset-security-policies) apply to (recipient conditions):
+   - **Users**
+   - **Groups**
+   - **Domains**
 
-   1. Click **Add a condition**. In the dropdown that appears, select a condition under **Applied if**:
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-      - **The recipients are**
-      - **The recipients are members of**
-      - **The recipient domains are**
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
-      You can only use a condition once, but you can specify multiple values for the condition. Multiple values of the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).
-
-   2. The condition that you selected appears in a shaded section. In that section, click in the **Any of these** box. If you wait a moment, a list will appear so you can select a value. Or, you can start typing a value to filter the list and select a value. Repeat this step as many times as necessary. To remove an individual value, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value. To remove the entire condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.
-
-   3. To add another condition, click **Add a condition** and select from the remaining conditions. Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
-      Repeat the previous step to add values to the condition, and repeat this step as many times as necessary or until you run out of conditions.
-
-   4. To add an exception, click **Add a condition**. In the dropdown that appears, select a condition under **Except when**. The settings and behavior are exactly like the conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    When you're finished, click **Next**.
 
-4. If your organization has Microsoft Defender for Office 365, you're taken to the **ATP protections apply to** step to identify the internal recipients that the [Microsoft Defender for Office 365 protections](#policies-in-preset-security-policies) apply to.
+4. In Microsoft Defender for Office 365 organizations, you're taken to the **Defender for Office 365 protections apply to** page to identify the internal recipients that the [Microsoft Defender for Office 365 protections](#policies-in-preset-security-policies) apply to (recipient conditions).
 
-   The settings and behavior are exactly like the **EOP protections apply to** step.
+   The settings and behavior are exactly like the **EOP protections apply to** page.
 
    When you're finished, click **Next**.
 
-5. On the **Confirm** step, verify your selections, and then click **Confirm**.
+5. On the **Review and confirm your changes** page, verify your selections, and then click **Confirm**.
 
-### Use the Microsoft 365 security center to modify the assignments of preset security policies
+### Use the security center to modify the assignments of preset security policies
 
 The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-security-center-to-assign-preset-security-policies-to-users).
 
-To disable the **Standard protection** or **Strict protection** security policies while still preserving the existing conditions and exceptions, slide the toggle to **Disabled**. To enable the policies, slide the toggle to **Enabled**.
+To disable the **Standard protection** or **Strict protection** security policies while still preserving the existing conditions and exceptions, slide the toggle to **Disabled** ![Toggle Off](../../media/scc-toggle-off.png). To enable the policies, slide the toggle to **Enabled** ![Toggle On](../../media/scc-toggle-on.png).
 
 ### How do you know these procedures worked?
 
@@ -159,4 +152,4 @@ To verify that you've successfully assigned the **Standard protection** or **Str
 
 For example, for email that's detected as spam (not high confidence spam) verify that the message is delivered to the Junk Email folder for **Standard protection** users, and quarantined for **Strict protection** users.
 
-Or, for [bulk email](bulk-complaint-level-values.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
+Or, for [bulk mail](bulk-complaint-level-values.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
