@@ -3,7 +3,7 @@ title: "Run a pilot for Microsoft SharePoint Syntex"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris; jaeccles
 ms.date: 
 audience: admin
 ms.topic: article
