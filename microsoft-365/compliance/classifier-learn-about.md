@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained, you confirm that its results are accurate. Then you use it to search through your organization's content and classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
+description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content for labling or policy application by giving it positive and negative samples to look at."
 ---
 
 # Learn about trainable classifiers
@@ -97,6 +97,7 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
+- **Discrimination**: detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
