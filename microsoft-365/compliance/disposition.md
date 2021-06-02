@@ -33,7 +33,7 @@ Use the **Disposition** page from **Records Management** in the Microsoft 365 co
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md) for disposition.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-number-of-items-for-disposition) for disposition.
 
 ### Permissions for disposition
 
