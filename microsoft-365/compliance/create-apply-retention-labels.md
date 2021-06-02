@@ -44,6 +44,8 @@ Use the following instructions for the two admin steps.
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
+Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
+
 ## How to create and publish retention labels
 
 First, create your retention labels. Then create a label policy to make the labels available to apply in apps.
@@ -62,7 +64,11 @@ Where you create and configure your retention labels depend on whether you're us
     
     Don't immediately see your option? First select **Show all**. 
 
-2. Follow the prompts in the wizard. If you are using records management:
+2. Follow the prompts in the wizard.
+    
+    For more information about the retention settings, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    If you are using records management:
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md).
     
@@ -90,7 +96,7 @@ Publish retention labels so that they can be applied by users in apps, such as S
 
 2. Follow the prompts in the wizard.
     
-    For information about the locations supported by retention labels, see [Retention labels and locations](retention.md#retention-label-policies-and-locations). 
+    For information about the location choices , see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content). 
 
 To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
