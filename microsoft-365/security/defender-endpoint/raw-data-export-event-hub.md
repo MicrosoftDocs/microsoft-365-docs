@@ -33,7 +33,7 @@ ms.technology: mde
 
 1. Create an [event hub](/azure/event-hubs/) in your tenant.
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**.
+2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
 
 ## Enable raw data streaming
 
