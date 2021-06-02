@@ -25,6 +25,8 @@ description: "Learn how to add users in Microsoft 365 for business."
 
 # Add a new user
 
+## Watch: Add a user
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 When a new person joins your company, you need to add them to your Microsoft 365 Business Premium subscription as a new user.
