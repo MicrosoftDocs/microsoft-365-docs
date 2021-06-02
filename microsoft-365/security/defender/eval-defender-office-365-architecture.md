@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and key concepts
+title: Review architecture requirements and key concepts for Microsoft Defender for Office 365
 description: Set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -24,13 +24,20 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Review architecture requirements and key concepts
+# Review Microsoft Defender for Office 365 architecture requirements and key concepts
 
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements. 
+##### Navigate
+- [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
+- [Understand Defender for Office 365 architecture](#understand-the-architecture)
+- [Understand key concepts](#understand-key-concepts)
+- [Review architecture requirements](#review-architecture-requirements)
+- [SIEM integration](#siem-integration)
+
+Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements.
 
 ## Understand the architecture
 
@@ -60,27 +67,28 @@ The following table identified key concepts that are important to understand whe
 
 |Concept  |Description |More information  |
 |---------|---------|---------|
-|Administration Portal    |         |         |
-|Exchange Online Protection      |         |         |
-|Anti-malware protection     |         |         |
-|Anti-spam protection     |         |         |
-|Anti-phishing protection |     |    |
-|Anti-spoofing protection     |         |         |
-|Safe attachments     |         |         |
-|Safe attachments for SharePoint, OneDrive, and Microsoft Teams     |         |         |
-|Safe Links     |         |         |
+|Administration Portal    |   The URL location where management of tools and features of Office 365 and device, as well as identity and app security takes place.      |    [The unified Microsoft 365 security center](overview-security-center.md)     |
+|Exchange Online Protection      |    Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware emails. EOP is included in all Microsoft 365 licenses which include Exchange Online.     |   [Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)      |
+|Anti-malware protection     |    Organizations with mailboxes in EXO are automatically protected against malware.     |  [Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)       |
+|Anti-spam protection     |   Organizations with mailboxes in EXO are automatically protected against junk mail and spam policies.      |  [Anti-spam protection in EOP](../office-365-security/anti-spam-protection.md)       |
+|Anti-phishing protection |  MDO offers more advanced anti-phishing  protection related to spear phishing, whaling, ransomware, and other malicious activities.   | [Additional anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection.md)   |
+|Anti-spoofing protection     |   EOP includes features to help protect your organization from spoofed (forged) senders.      |   [Anti-spoofing protection in EOP](../office-365-security/anti-spoofing-protection.md)      |
+|Safe attachments     |   Safe Attachments provides an additional layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they are delivered.      |   [Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments.md)      |
+|Safe attachments for SharePoint, OneDrive, and Microsoft Teams     |    In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an additional layer of protection for files that have been uploaded to cloud storage repositories.     |  [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
+|Safe Links     | Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.        |   [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 
 For more detailed information about the capabilities included with Microsoft Defender for Office, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## Review architecture requirements
 A successful MDO evaluation or production pilot assumes the following pre-requisites:
-- All your recipient mailboxes currently reside in Exchange Online.
-- Your public MX record currently resolves directly to EOP or a third-party SMTP gateway which then relays inbound external email directly to EOP.
-- Your primary email domain is configured as authoritative in Exchange Online.
-- You have successfully deployed and configured Directory Based Edge Blocking (DBEB) as appropriate. For more information, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+- All your recipient mailboxes are currently in Exchange Online.
+- Your public MX record resolves directly to EOP or a third-party SMTP gateway that then relays inbound external email directly to EOP.
+- Your primary email domain is configured as *authoritative* in Exchange Online.
+- You successfully deployed and configured *Directory Based Edge Blocking* (DBEB) as appropriate. For more information, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-IMPORTANT: If these requirements are not applicable or you are still in a hybrid coexistence scenario, then a Microsoft Defender for Office 365 evaluation can require more complex or advanced configurations which are not fully covered in this guidance.
+> [!IMPORTANT]
+> If these requirements are not applicable or you are still in a hybrid coexistence scenario, then a Microsoft Defender for Office 365 evaluation can require more complex or advanced configurations which are not fully covered in this guidance.
 
 ## SIEM integration
 
