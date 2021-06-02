@@ -154,3 +154,4 @@ It is crucial to respond in quickly to keep the investigation moving.
 
 ## Related topic
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)
+- [Microsoft Threat Experts in Microsoft 365 Overview](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/microsoft-threat-experts?view=o365-worldwide)
