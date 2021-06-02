@@ -244,17 +244,14 @@
 
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
+#### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
+#### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-#### [Attack surface reduction configuration settings](configure-attack-surface-reduction.md)
+#### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+#### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
-
-#### [Attack surface reduction controls]()
-##### [Attack surface reduction rules](attack-surface-reduction.md)
-##### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
-##### [View attack surface reduction events](event-views.md)
-
-#### [Use audit mode](audit-windows-defender.md)
+#### [View attack surface reduction events](event-views.md)
+#### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
 #### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
@@ -593,10 +590,12 @@
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](exposed-apis-odata-samples.md)
 
+
 #### [Raw data streaming API]()
 ##### [Raw data streaming](raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
+
 
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
