@@ -51,11 +51,11 @@ Logo |Partner name   | Description
 ![Image of White Shark Managed Security Services](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |True expert approach to cyber security with transparent pricing on every platform, mobile included.
 ![Image of Wortell's cloud SOC logo](images/wortell-logo.png)| [Wortell's cloud SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | 24x7 managed Defender for Endpoint service for monitoring & response
 ![Image of Zero Trust Analytics Platform (ZTAP) logo](images/ztap-logo.png)| [Zero Trust Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Reduce your alerts by 99% and access a full range of security capabilities from mobile devices
-![Image of Mandiant logo](images/aujas-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint]
+![Image of Mandiant logo](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint]
 (https://go.microsoft.com/fwlink/?linkid=2164352) | Fortify your Defender for Endpoint with 24/7 frontline MDR intelligence and expertise from Mandiant.
-![Image of Accenture logo](images/aujas-logo.png) | [Accenture Managed Detection & Response (MDR)]
+![Image of Accenture logo](images/accenture-logo.png) | [Accenture Managed Detection & Response (MDR)]
 (https://go.microsoft.com/fwlink/?linkid=2164353) | Manage, maintain and enhance global cybersecurity operations with extended capabilities that detect, proactively hunt for and respond to advanced cyber-attacks across both IT and OT environments located in the cloud and on-premise.
-![Image of CyberProof logo](images/aujas-logo.png) | [CyberProof Managed Detection & Response (MDR)]
+![Image of CyberProof logo](images/cyberproof-logo.png) | [CyberProof Managed Detection & Response (MDR)]
 (https://go.microsoft.com/fwlink/?linkid=2163964) | 24x7 managed threat detection and response services fully integrated with Azure Sentinel and Defender for Endpoint.
 
 ## Related topics
