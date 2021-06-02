@@ -3731,6 +3731,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/eop-features.md",
       "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview#eop-features",
       "redirect_document_id": false
@@ -3984,6 +3989,31 @@
       "source_path": "microsoft-365/compliance/customer-key-tenant-level.md",
       "redirect_url": "/microsoft-365/compliance/customer-key-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/reliability-insights.md",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/usage-insights",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/security-update-insights",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/insights",
+      "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
+      "redirect_document_id": false 
     },
     {
       "source_path": "microsoft-365/compliance/classifier-how-retrain-comms-compliance.md",
