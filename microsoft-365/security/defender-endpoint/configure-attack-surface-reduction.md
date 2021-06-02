@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -38,21 +38,22 @@ Defender for Endpoint includes several attack surface reduction capabilities. To
    2. See the [application control design guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. Refer to the [application control design guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
-3. [Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
+3. [Enable controlled folder access](enable-controlled-folders.md).
 
-4. [Network protection](./enable-network-protection.md)|How to prevent users from using any apps to access dangerous domains
+4. [Turn on Network protection](enable-network-protection.md).
 
-5. [Exploit protection](./enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
+5. [Enable exploit protection](enable-exploit-protection.md).
 
-6. [Attack surface reduction rules](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used by exploit-seeking malware
+6. [Configure attack surface reduction rules](enable-attack-surface-reduction.md).
 
-7. [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|How to protect devices and data across a network
+7. Set up your network firewall.
 
+   1. Get an overview of [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use the [Windows Defender Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
+   3. Use the [Windows Defender Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security. 
 
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
-> 
 > - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
 > - Group Policy
 > - PowerShell cmdlets
-
