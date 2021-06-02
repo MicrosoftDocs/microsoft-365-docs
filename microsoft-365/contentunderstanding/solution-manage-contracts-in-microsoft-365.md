@@ -69,6 +69,14 @@ This contract management solution guidance includes four components of Microsoft
 
      ![Contracts tab.](../media/content-understanding/tile-view.png)
 
+### Licensing requirements
+
+This solution relies on the following functionality, all available as part of a Microsoft 365 Enterprise (E1, E3, E5, F3) or Business (Basic, Standard, or Premium) license:
+
+-	Microsoft SharePoint Syntex
+-	Microsoft Teams
+-	Power Automate
+
 ## Create the solution
 
 The next sections will go into detail about how to configure your contracts management solution. It's divided into three steps:
