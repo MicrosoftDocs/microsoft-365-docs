@@ -56,7 +56,7 @@ ms.technology: mde
 
    To get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   ![Image of event hub resource Id1](images/event-hub-resource-id.png)
+   ![Image of event hub resource Id1](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. Choose the events you want to stream and click **Save**.
 
@@ -80,7 +80,7 @@ ms.technology: mde
 
 - Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
 
-- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
+- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. 
 
