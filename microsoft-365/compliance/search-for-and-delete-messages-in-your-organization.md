@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the search and purge feature in the Security & Compliance Center to search for and delete an email message from all mailboxes in your organization."
+description: "Use the search and purge feature in the Microsoft 365 compliance center to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages
@@ -41,7 +41,7 @@ You can use the Content Search feature to search for and delete an email message
   > [!NOTE]
   > The **Organization Management** role group exists in both Exchange Online and Security & Compliance Center. These are separate role groups that give different permissions. Being a member of **Organization Management** in Exchange Online does not grant the required permissions to delete email messages. If you aren't assigned the **Search And Purge** role in Security & Compliance Center (either directly or through a role group such as **Organization Management**), you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet with the message "A parameter cannot be found that matches parameter name 'Purge'".
 
-- You have to use Security & Compliance Center PowerShell to delete messages. See [Step 2](#step-2-connect-to-security--compliance-center-powershell) for instructions about how to connect.
+- You have to use Security & Compliance Center PowerShell to delete messages. See [Step 1](#step-1-connect-to-security--compliance-center-powershell) for instructions about how to connect.
 
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove messages is intended to be an incident-response tool, this limit helps ensure that messages are quickly removed from mailboxes. This feature isn't intended to clean up user mailboxes.
 
@@ -51,20 +51,24 @@ You can use the Content Search feature to search for and delete an email message
 
 - Email items in a review set in an Advanced eDiscovery case can't be deleted by using the procedures in this article. That's because items in a review set are stored in an Azure Storage location, and not in the live service. This means they won't be returned by the content search that you create in Step 1. To delete items in a review set, you have to delete the Advanced eDiscovery case that contains the review set. For more information, see [Close or delete an Advanced eDiscovery case](close-or-delete-case.md).
 
-## Step 1: Create a Content Search to find the message to delete
+## Step 1: Connect to Security & Compliance Center PowerShell
 
-The first step is to create and run a Content Search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Security & Compliance Center or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content Search and configuring search queries, see the following topics:
+The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-- [Content Search in Office 365](content-search.md)
+## Step 2: Create a Content Search to find the message to delete
 
-- [Keyword queries for Content Search](keyword-queries-and-search-conditions.md)
+The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Microsoft 365 compliance center or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
+
+- [Content search in Office 365](content-search.md)
+
+- [Keyword queries for Content search](keyword-queries-and-search-conditions.md)
 
 - [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
-> The content locations that are searched in the Content Search that you create in this step can't include SharePoint or OneDrive for Business sites. You can include only mailboxes and public folders in a Content Search that will be used to email messages. If the Content Search includes sites, you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet.
+> The content locations that are searched in the Content search that you create in this step can't include SharePoint or OneDrive for Business sites. You can include only mailboxes and public folders in a Content search that will be used to email messages. If the Content search includes sites, you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet.
 
 ### Tips for finding messages to remove
 
@@ -78,7 +82,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (displayed in the details pane of the search in the Security & Compliance Center or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
+- Use the search estimate statistics (displayed in the details pane of the search in the Microsoft 365 compliance center or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
 
 Here are two examples of queries to find suspicious email messages.
 
@@ -101,17 +105,11 @@ $Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation A
 Start-ComplianceSearch -Identity $Search.Identity
 ```
 
-## Step 2: Connect to Security & Compliance Center PowerShell
-
-The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
-After you've connected to Security & Compliance Center PowerShell, run the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets that you prepared in the previous step.
-
 ## Step 3: Delete the message
 
-After you've created and refined a Content Search to return the message that you want to remove and are connected to Security & Compliance Center PowerShell, the final step is to run the **New-ComplianceSearchAction** cmdlet to delete the message. You can soft- or hard-delete the message. A soft-deleted message is moved to a user's Recoverable Items folder and retained until the deleted item retention period expires. Hard-deleted messages are marked for permanent removal from the mailbox and will be permanently removed the next time the mailbox is processed by the Managed Folder Assistant. If single item recovery is enabled for the mailbox, hard-deleted items will be permanently removed after the deleted item retention period expires. If a mailbox is placed on hold, deleted messages are preserved until the hold duration for the item expires or until the hold is removed from the mailbox.
+After you've created and refined a Content search to return the message that you want to remove and are connected to Security & Compliance Center PowerShell, the final step is to run the **New-ComplianceSearchAction** cmdlet to delete the message. You can soft- or hard-delete the message. A soft-deleted message is moved to a user's Recoverable Items folder and retained until the deleted item retention period expires. Hard-deleted messages are marked for permanent removal from the mailbox and will be permanently removed the next time the mailbox is processed by the Managed Folder Assistant. If single item recovery is enabled for the mailbox, hard-deleted items will be permanently removed after the deleted item retention period expires. If a mailbox is placed on hold, deleted messages are preserved until the hold duration for the item expires or until the hold is removed from the mailbox.
 
-In the following example, the command soft-deletes the search results returned by a Content Search named "Remove Phishing Message".
+In the following example, the command soft-deletes the search results returned by a Content search named "Remove Phishing Message".
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
