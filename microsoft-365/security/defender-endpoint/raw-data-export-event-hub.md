@@ -31,7 +31,7 @@ ms.technology: mde
 
 ## Before you begin
 
-1. Create an [event hub](https://docs.microsoft.com/azure/event-hubs/) in your tenant.
+1. Create an [event hub](/azure/event-hubs/) in your tenant.
 
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights**.
 
@@ -101,5 +101,5 @@ To get the data types for event properties do the following:
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
-- [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
-- [Troubleshoot connectivity issues - Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide)
+- [Azure Event Hubs documentation](/azure/event-hubs/)
+- [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
