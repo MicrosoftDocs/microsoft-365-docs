@@ -93,16 +93,12 @@ The OCCT can be deployed on Windows clients at any time before phase 9. If the O
 
 ## Active Directory Federation Services (AD FS)
 
-<!-- before phase 4 -->
-
 **Applies to**: Customers using AD FS on premises to authenticate users connecting to Microsoft Office 365<br>
-**When applied**: Any time before phase 4 starts
+**When applied**: Any time before phase 2 starts
 
 Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.md)
 
 ## SharePoint Online
-
-<!-- before phase 4 -->
 
 **Applies to**: Customers using SharePoint 2013 on-premises<br>
 **When applied**: Any time before phase 4 starts
