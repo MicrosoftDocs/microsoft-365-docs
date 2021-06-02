@@ -71,6 +71,7 @@ The following table lists the metadata fields for documents in a review set in a
 |EmailAction*||Email_action|Values are **None**, **Reply**, or **Forward**; based on the subject line of a message.|
 |Email Delivery Receipt Requested||Email_delivery_receipt|Email address supplied in Internet Headers for delivery receipt.|
 |Importance|EmailImportance|Email_importance|Importance of the message: **0** - Low; **1** - Normal; **2** - High|
+|Ignored processing errors|ErrorIgnored|Error_Ignored|Error was ignored and not remediated|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|The full set of email headers from the email message|
 |EmailLevel*||Email_level|Indicates a message's level within the email thread it belongs to; attachments inherit its parent message's value.|
 |Email Message Id||Email_message_ID|Internet message Id from the message.|
