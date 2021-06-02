@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
-            - name: Query the data in a review set
+            - name: Query and filter content in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
