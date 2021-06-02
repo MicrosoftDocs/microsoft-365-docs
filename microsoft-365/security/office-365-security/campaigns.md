@@ -29,7 +29,7 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Security & Compliance Center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 security center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
@@ -50,18 +50,18 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views in the Security & Compliance Center
+## Campaign Views in the security center
 
-Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**, or directly at <https://protection.office.com/campaigns>.
+Campaign Views is available in the [Microsoft 365 security center](https://security.microsoft.com) at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
 ![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
 You can also get to Campaign Views from:
 
-- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
-- **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
-- **Threat management** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Campaigns**
+- **Email & collaboration** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
 To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
