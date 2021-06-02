@@ -21,6 +21,7 @@ ms.prod: m365-security
 
 # Office 365 security
 
+
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)

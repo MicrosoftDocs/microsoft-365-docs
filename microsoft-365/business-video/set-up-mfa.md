@@ -20,10 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set up multi-factor authentication on your phone."
+description: "Learn how to set up multi-factor authentication, sometimes also referred to as two-factor authentication, on your phone."
 ---
 
 # Set up multi-factor authentication on your phone
+
+## Watch: Set up multi-factor authentication with a mobile device
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
