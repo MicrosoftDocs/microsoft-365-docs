@@ -18,7 +18,7 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: "Learn how to close your account with Microsoft."
+description: "When you close your account with Microsoft all information related to your account is deleted including licenses, users, and user data."
 ms.date: 04/02/2021
 ---
 
@@ -47,7 +47,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 ## Step 2: Cancel all active subscriptions
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, find an active subscription. Select **More actions** (three dots), then select **Cancel subscription**.
+2. On the **Products** tab, find an active subscription. Select the three dots (more actions), then select **Cancel subscription**.
 3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
 4. Select **Save**.
 5. Repeat steps 1 through 4 to cancel all active subscriptions.
@@ -83,3 +83,9 @@ You can also [use PowerShell to disable multi-factor authentication for multiple
 5. If your organization fails one or more checks, you see a link to more information on how to pass the checks. After you pass all checks, select **Delete** to complete the process.
 
 After you complete this final step, your account with Microsoft is closed and deleted.
+
+## Related content 
+
+[Understand your bill or invoice for Microsoft 365 for business](./billing-and-payments/understand-your-invoice2.md) (article)\
+[Cancel your subscription](./subscriptions/cancel-your-subscription.md) (article)
+

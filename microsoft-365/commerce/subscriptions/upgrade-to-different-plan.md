@@ -17,8 +17,8 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-search.appverid: MET150
-description: "Learn how to upgrade to a different plan."
+search.appverid: MET150 
+description: "The easiest way to upgrade plans is to use the Upgrade tab in the admin center. However, the Upgrade tab isn't always supported."
 ms.date: 04/21/2021
 ---
 
@@ -92,7 +92,7 @@ You can [change plans manually](change-plans-manually.md) or [call support](../.
 
 You can [change plans manually](change-plans-manually.md) or [call support](../../business-video/get-help-support.md).
 
-### Additional reasons you can't Upgrade
+### Additional reasons you can't upgrade
 
 #### You have two or more plans for the same product
 
@@ -120,7 +120,7 @@ When you upgrade plans, the plans that are available for you to upgrade to are d
 If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md),
 instead. You can also [call support](../../business-video/get-help-support.md) for help.
 
-#### Your subscription has an Add-on
+#### Your subscription has an add-on
 
 If you have an Add-on with your subscription, you might be able to [change plans manually](change-plans-manually.md).
 

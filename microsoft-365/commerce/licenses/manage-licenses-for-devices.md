@@ -49,5 +49,5 @@ When you unassign licenses from a group, you remove the licenses from all device
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Licenses** page, choose **Microsoft 365 Apps for Education (device)** or **Microsoft 365 Apps for enterprise (device)**.
-3. On the next page, choose a subscription, choose **More actions**, then choose **Unassign licenses**.
+3. On the next page, choose a subscription, select the three dots (more actions), and then choose **Unassign licenses**.
 4. In the **Unassign licenses** dialog box, choose **Unassign**.

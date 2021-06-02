@@ -3,7 +3,6 @@ title: "Roll or rotate a Customer Key or an availability key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -38,12 +37,34 @@ For example:
 2. Run the Add-AzKeyVaultKey cmdlet as shown in the following example:
 
    ```powershell
-   Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
+   Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   In this example, since a key named **Contoso-O365EX-NA-VaultA1-Key001** exists in the **Contoso-O365EX-NA-VaultA1** vault, the cmdlet creates a new version of the key. This operation preserves the previous key versions in the version history for the key. You need the previous key version to decrypt the data that it still encrypts. Once you complete rolling any key associated with a DEP,  run an extra cmdlet to ensure that Customer Key begins using the new key. The following sections describe the cmdlets in more detail.
+   In this example, since a key named **Contoso-CK-EX-NA-VaultA1-Key001** exists in the **Contoso-CK-EX-NA-VaultA1** vault, the cmdlet creates a new version of the key. This operation preserves the previous key versions in the version history for the key. You need the previous key version to decrypt the data that it still encrypts. Once you complete rolling any key associated with a DEP,  run an extra cmdlet to ensure that Customer Key begins using the new key. The following sections describe the cmdlets in more detail.
   
-## Update the Customer Key for Exchange Online and Skype for Business
+## Update the keys for multi-workload DEPs
+
+When you roll either of the Azure Key Vault keys associated with a DEP used with multiple workloads, you must update the DEP to point to the new key. This process does not rotate the availability key.
+
+To instruct Customer Key to use the new key to encrypt multiple workloads, complete these steps:
+
+1. On your local computer, using a work or school account that has global administrator or compliance admin permissions in your organization, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in a Windows PowerShell window.
+
+2. Run the Set-M365DataAtRestEncryptionPolicy cmdlet.
+  
+   ```powershell
+   Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Refresh
+   ```
+
+Where *PolicyName* is the name or unique ID of the policy. For example, Contoso_Global.
+
+Example:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
+```
+
+## Update the keys for Exchange Online DEPs
 
 When you roll either of the Azure Key Vault keys associated with a DEP used with Exchange Online and Skype for Business, you must update the DEP to point to the new key. This does not rotate the availability key.
 
@@ -55,11 +76,9 @@ To instruct Customer Key to use the new key to encrypt mailboxes, run the Set-Da
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-   Within 72 hours, the active mailboxes associated with this DEP become encrypted with the new key.
-
 2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). The value for this property changes once the service applies the updated key.
   
-## Update the Customer Key for SharePoint Online, OneDrive for Business, and Teams files
+## Update the keys for SharePoint Online, OneDrive for Business, and Teams files
 
 SharePoint Online only allows you to roll one key at a time. If you want to roll both keys in a key vault, wait for the first operation to complete. Microsoft recommends that you stagger your operations to avoid this issue. When you roll either of the Azure Key Vault keys associated with a DEP used with SharePoint Online and OneDrive for Business, you must update the DEP to point to the new key. This does not rotate the availability key.
 

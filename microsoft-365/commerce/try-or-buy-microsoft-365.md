@@ -16,8 +16,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
-description: "Learn how to get a free trial or buy a subscription for Microsoft 365 for business."
+search.appverid: MET150 
+description: "Sign up for a free 30-day trial for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business."
 ms.date: 08/07/2020
 ---
 
@@ -166,10 +166,9 @@ you can move users to it. To learn how, see [Move users to a different subscript
 
 ## Related content
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (training
-videos)\
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video)\
 [Add users and assign licenses at the same time](../admin/add-users/add-users.md) (article)\
 [Assign licenses to users](../admin/manage/assign-licenses-to-users.md) (article)\
 [Upgrade to a different plan](subscriptions/upgrade-to-different-plan.md) (article)\
 [Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md) (article)\
-[Add storage space for your subscription](add-storage-space.md)
+[Add storage space for your subscription](add-storage-space.md) (article)

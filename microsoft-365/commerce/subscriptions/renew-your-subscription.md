@@ -17,8 +17,8 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-search.appverid: MET150
-description: "Learn how to renew your Microsoft 365 by turning recurring billing off or on."
+search.appverid: MET150 
+description: "Learn how to renew most Microsoft 365 for business subscriptions by turning recurring billing off or on."
 ms.date: 05/04/2021
 ---
 

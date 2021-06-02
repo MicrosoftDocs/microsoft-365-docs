@@ -21,9 +21,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Phone number
 01 24 37 35 55
 
-Select option 9
+Press 2 for business
 
-Enter code 7706
+Press 1 for Microsoft 365
 
 ## Hours
 ### Billing Support:

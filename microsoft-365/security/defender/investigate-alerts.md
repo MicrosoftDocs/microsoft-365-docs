@@ -66,14 +66,29 @@ You can also select the **Open the main alert page** action from the **Manage al
 
 An alert page is composed of these sections: 
 
-- Alert story
-- Actions taken (including impacted assets)
-- Related events
+- Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 security center":::
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the specific asset page or taking specific remediation steps.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
+
+### Alert sources
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+
+> [!NOTE]
+> - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.<br>
+> - The prepended character does not change the GUID of the alert. The only change to the GUID is the prepended component.<br>
+
+
+Alert source | Prepended character 
+:---|:---
+Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### Analyze affected assets
 

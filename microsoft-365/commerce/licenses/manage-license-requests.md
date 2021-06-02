@@ -25,7 +25,7 @@ ms.date: 08/07/2020
 # Manage license requests
 
 > [!NOTE]
-> The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.md).
+> The information in this article only applies to self-service purchased products. To learn more, see [Self-service purchase FAQ](../subscriptions/self-service-purchase-faq.yml).
 
 If you disable self-service purchases in your organization, you can use licenses requests to manage the license request process for your users. When a user tries to make a self-service purchase for a product that you’ve blocked, they can submit a request for a license to you, the admin. When they make a request, they can add the names of other users who also need licenses for the product.
 
