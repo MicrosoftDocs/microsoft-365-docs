@@ -49,7 +49,7 @@ ms.technology: mde
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage Account Resource ID**:
 
-   ![Image of event hub resource ID1](images/storage-account-resource-id.png)
+   ![Image of event hub resource ID1](../defender-endpoint/images/storage-account-resource-id.png)
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -57,7 +57,7 @@ ms.technology: mde
 
 - A blob container will be created for each event type: 
 
-  ![Image of event hub resource ID2](images/storage-account-event-schema.png)
+  ![Image of event hub resource ID2](../defender-endpoint/images/storage-account-event-schema.png)
 
 - The schema of each row in a blob is the following JSON: 
 
@@ -77,7 +77,7 @@ ms.technology: mde
 - For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
 
-## Data types mapping:
+## Data types mapping
 
 In order to get the data types for our events properties do the following:
 
