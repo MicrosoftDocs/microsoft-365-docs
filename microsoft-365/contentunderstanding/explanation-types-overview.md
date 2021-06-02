@@ -110,6 +110,15 @@ To add a regular expression explanation type:
 
    ![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
 
+### Limitations
+
+The following table shows inline character options that currently are not available for use in regular expression patterns. 
+
+|Option  |State  |Current functionality  |
+|---------|---------|---------|
+|Case sensitivity | Currently not supported. | All matches performed are case-insensitive.  |
+|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where the match must occur.   |
+
 ## Proximity 
 
 The proximity explanation type helps your model identify data by defining how close another piece of data is to it. For example, in your model say you have defined two explanations that label both the customer *street address number* and *phone number*. 
