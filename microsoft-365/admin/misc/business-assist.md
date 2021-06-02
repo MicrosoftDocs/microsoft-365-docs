@@ -26,7 +26,7 @@ Get the most out of your subscription with expert advice from small business spe
 
 ## Business Assist services
 
-||||
+|&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
 |**Get up and running quickly** <br> Work with a small business specialist to set up Microsoft 365 features that protect your business and give it a professional look. |**Empower everyone in your business** <br> All your employees, not just the person in charge of IT can go directly to Microsoft experts for faster ongoing support. |**Unlock business potential** <br> Learn about underutilized features and get advice on ways to get more value out of your subscription. |
 |**Accelerate your cloud migration** <br> Get personalized help moving all your current files (email, storage, documents, and communication) to Microsoft 365. |**Access specialists with ease** <br> Our team will pick up the conversation where you left it last. No tickets to track, no robots, no long waiting times. |**Stay up to date** <br> Regular check-ups that help you stay current as new service capabilities are added, and your company’s needs evolve. |
