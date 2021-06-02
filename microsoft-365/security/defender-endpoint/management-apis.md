@@ -66,14 +66,12 @@ The **Investigation API** exposes the richness of Defender for Endpoint - exposi
 
 The **Response API** exposes the ability to take actions in the service and on devices, enabling customers to ingest indicators, manage settings, alert status, as well as take response actions on devices programmatically such as isolate devices from the network, quarantine files, and others. 
 
-## Streaming API 
-Streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
+## Raw data streaming API 
+Defender for Endpoint raw data streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
 
-Event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
+The Defender for Endpoint event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
 
->[!NOTE]
->Streaming API has now moved to Microsoft 365 Defender. For more information, see [Streaming API](raw-data-export.md).
-
+For more information, see [Raw data streaming API](raw-data-export.md).
 
 ## SIEM API
 When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. For more information, see [SIEM integration](enable-siem-integration.md).
