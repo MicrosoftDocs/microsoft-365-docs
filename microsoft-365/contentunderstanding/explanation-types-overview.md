@@ -117,7 +117,7 @@ The following table shows inline character options that currently are not availa
 |Option  |State  |Current functionality  |
 |---------|---------|---------|
 |Case sensitivity | Currently not supported. | All matches performed are case-insensitive.  |
-|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where the match must occur.   |
+|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where a match must occur.   |
 
 ## Proximity 
 
