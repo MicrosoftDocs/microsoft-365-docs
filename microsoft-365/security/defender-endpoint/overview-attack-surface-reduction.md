@@ -45,6 +45,4 @@ Your attack surfaces are all the places where your organization is vulnerable to
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus) |
 | [Exploit protection](exploit-protection.md) | Help protect operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
 | [Attack surface reduction rules](attack-surface-reduction.md) | Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware. (Requires Microsoft Defender Antivirus). |
-| [Web protection](web-protection-overview.md) | Secure your devices against web threats and help you regulate unwanted content. |
-| [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Prevent unauthorized traffic from flowing to or from your organization's devices with two-way network traffic filtering. |
-| [Attack surface reduction FAQ](./attack-surface-reduction-faq.md) | Frequently asked questions about Attack surface reduction rules, licensing, and more. |
+| [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
