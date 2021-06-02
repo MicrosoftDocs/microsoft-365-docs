@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: 
 manager: dansimp
 ms.technology: mde
 ---
