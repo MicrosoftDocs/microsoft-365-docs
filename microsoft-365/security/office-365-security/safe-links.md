@@ -70,7 +70,7 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. But, the settings apply only to users who are included in active Safe Links policies. These settings include:
+- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. These settings include:
 
   - [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps)
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
