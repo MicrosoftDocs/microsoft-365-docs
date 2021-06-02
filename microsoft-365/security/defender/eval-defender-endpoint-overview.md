@@ -29,4 +29,4 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender evaluation and piloting process](../../media/defender/m365-defender-eval-processs.png)
+![Microsoft 365 Defender evaluation and piloting process](../../media/defender/m365-defender-eval-process.png)
