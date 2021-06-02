@@ -593,6 +593,13 @@
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](exposed-apis-odata-samples.md)
 
+
+#### [Raw data streaming API]()
+##### [Raw data streaming](raw-data-export.md)
+##### [Stream advanced hunting events to Azure Events hub](raw-data-export-event-hub.md)
+##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
+
+
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ##### [Learn about different ways to pull detections](configure-siem.md)
