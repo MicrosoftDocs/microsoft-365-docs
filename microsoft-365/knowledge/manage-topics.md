@@ -35,15 +35,21 @@ Knowledge managers help to guide discovered topics through the various topic lif
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
-- **Confirmed**: A topic that has been suggested by AI is validated. Topic validation must be confirmed by a knowledge manager. For a topic to be confirmed, there must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
+- **Confirmed**: A topic that has been discovered by AI and has been validated. Topic validation occurs when either:
+
+   - A knowledge manager confirms a topic. A knowledge manager [confirms a topic](manage-topics.md#confirmed-topics) on the **Manage topics** page.
+
+   - Multiple users confirm a topic. There must be a net of two positive votes received from users who voted using the feedback mechanism on the topic card. For example, if one user voted positive and one user voted negative for a particular topic, you would still need two more positive votes for the topic to be confirmed.
  
-- **Published**: A confirmed topic that has been curated: manual edits have been made to improve its quality.
+- **Published**: A topic that has been curated. Manual edits have been made to improve its quality, or it has been created by a user.
 
-- **Removed**: A topic is rejected by a knowledge manager and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). For a topic to be removed, there must be a net of two negative votes received from users who voted using the feedback mechanisms on the topic card. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed. When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
+- **Removed**: A topic that has been rejected and will no longer be visible to viewers. A topic can be removed in any state (suggested, confirmed, or published). Topic removal occurs when either:
 
-On the **Manage topics** page, a knowledge manager can see whether a topic was confirmed or removed by user votes or by a specific person. For example, for topics removed by user votes, the reason is shown in the **Removed by** column as **User votes** rather than a person's name. 
+   - A knowledge manager removes a topic. A knowledge manager removes a topic on the **Manage topics** page.
 
-   ![Screenshot of Manage topics page showing removed topics list with User votes highlighted.](../media/knowledge-management/removed-topics-user-votes.png) 
+   - Multiple users cast negative votes using the feedback mechanism on the topic card. For a topic to be removed, there must be a net of two negative votes received from users. For example, if one user voted negative and one user voted positive for a particular topic, you would still need two more negative votes for the topic to be removed.
+
+  When a published topic is removed, the page with the curated details will need to be deleted manually through the Pages Library of the topic center.
 
 > [!Note] 
 > On the **Manage topics** page, each knowledge manager will only be able to see topics where they have access to the underlying files and pages connected to the topic. This permission trimming will be reflected in the list of topics that appear in the **Suggested**, **Confirmed**, **Published**, and **Removed** tabs. The topic counts, however, show the total counts in the organization regardless of permissions.
@@ -108,3 +114,11 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
    ![Manage Topics](../media/knowledge-management/manage-topics-new.png)
+
+## Topic count dashboard
+
+This chart in the dashboard view lets you see the number of topics in your Viva Topics topic center. The chart shows the topic counts per topic lifecycle stage and also shows how topic counts have trended over time. Knowledge managers can visually monitor the rate at which new topics are being discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
+
+Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming. 
+
+   ![Screenshot of topic count dashboard](../media/knowledge-management/topic-count-dashboard.png)

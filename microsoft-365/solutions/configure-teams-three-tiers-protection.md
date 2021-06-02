@@ -20,6 +20,7 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
@@ -111,6 +112,14 @@ See the following references to create a secure and productive guest sharing env
 For the sensitive and highly sensitive tiers, we restrict access to SharePoint content with sensitivity labels. Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
 
 Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
+
+### Control device access across Microsoft 365
+
+The unmanaged devices setting in sensitivity labels only affect SharePoint access. If you want to expand control of unmanaged devices beyond SharePoint, you can [Create an Azure Active Directory conditional access policy for all apps and services in your organization](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) instead. To configure this policy specifically for [Microsoft 365 services](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), select the **Office 365** cloud app under **Cloud apps or actions**.
+
+![Screenshot of the Office 365 cloud app in an Azure Active Directory conditional access policy](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 
 ## Next step
 

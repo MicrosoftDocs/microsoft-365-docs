@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create notifications for exact data match activities (preview)
           href: sit-edm-notifications-activities.md  
-        - name: Create a custom sensitive information type - Security & Compliance Center
+        - name: Create a custom sensitive information type - Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
+        - name: Modify a keyword dictionary
+          href: sit-modify-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
     - name: Trainable classifiers
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Get started with trainable classifiers
           href: classifier-get-started-with.md
-        - name: How to retrain a classifier in communications compliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
@@ -172,13 +172,11 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key for Microsoft 365 at the tenant level (public preview)
-              href: customer-key-tenant-level.md
-            - name: Service encryption with Customer Key in Office 365
+            - name: Customer Key in Microsoft 365
               href: customer-key-overview.md
-            - name: Set up Customer Key for Office 365
+            - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
-            - name: Manage Customer Key for Office 365
+            - name: Manage Customer Key for Microsoft 365
               href: customer-key-manage.md
             - name: Roll or rotate a Customer Key or an availability key
               href: customer-key-availability-key-roll.md
@@ -246,7 +244,11 @@
           - name: Learn about the Microsoft Compliance Extension (preview)
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
-            href: dlp-alerts-dashboard-learn.md    
+            href: dlp-alerts-dashboard-learn.md
+        - name: Plan for DLP
+          items:
+          - name: Plan for data loss prevention
+            href: dlp-overview-plan-for-dlp.md
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -501,9 +503,11 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use content search
+        - name: Search for content
           href: content-search.md
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Preview eDiscovery search results
@@ -690,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
-            - name: Query the data in a review set
+            - name: Query and filter content in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
@@ -782,10 +786,10 @@
   items: 
     - name: Microsoft 365 auditing solutions
       href: auditing-solutions-overview.md
-    - name: Basic auditing
+    - name: Basic Audit
       items:
-        - name: Set up Basic auditing
-          href: set-up-basic-auditing.md
+        - name: Set up Basic Audit
+          href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Use a PowerShell script to search the audit log
@@ -794,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
-        - name: Turn audit log search on or off
+        - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
@@ -828,6 +832,8 @@
       items: 
         - name: Learn about Compliance Manager
           href: compliance-manager.md
+        - name: What's new in Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance Manager quickstart
           href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager

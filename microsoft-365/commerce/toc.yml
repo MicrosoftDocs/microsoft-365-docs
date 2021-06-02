@@ -66,9 +66,11 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: About Payment Services Directive 2 and Strong Customer Authentication
       href: billing-and-payments/psd2.md
+    - name: Request a credit for Withholding Tax on your account
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: Billing accounts
   items: 
-    - name: Manage billing accounts
+    - name: Understand billing accounts
       href: manage-billing-accounts.md
     - name: Associate a tenant with your billing account
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business

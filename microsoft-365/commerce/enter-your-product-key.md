@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-description: "Learn how to redeem a Microsoft 365 Business Standard product key purchased at a retail store." 
+description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
 ms.date: 11/13/2020
 ---
 
@@ -54,12 +52,16 @@ If you purchased Microsoft 365 Business Standard from a retail store, this artic
 
 To extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, use a new and unused key for the same Microsoft 365 plan. Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
 
-## What's next?
+## Next steps
 
 If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365](../admin/setup/setup.md).
-  
-## Still having trouble with product keys?
 
 Check out this list of common errors and solutions: [Problems with your Microsoft 365 for business product key?](product-key-errors-and-solutions.md)
   
 Or, [call Microsoft Support](../business-video/get-help-support.md).
+
+## Related content
+
+[Upgrade to a different plan](./subscriptions/upgrade-to-different-plan.md) (article)\
+[What happens to my data and access when my Microsoft 365 for business subscription ends?](./subscriptions/what-if-my-subscription-expires.md) (article)\
+[Understand subscriptions and licenses in Microsoft 365 for business](./licenses/subscriptions-and-licenses.md) (article)

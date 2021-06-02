@@ -3,7 +3,7 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/05/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -28,12 +28,15 @@ Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany"
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
+> [!NOTE]
+> The migration of Azure services is not part of this documentation. For that information, see [Migration guidance for Azure Germany](/azure/germany/germany-migration-main).
+
 |Step|Duration|Responsible party|Description|
 |:--------|:--------|:--------|:--------|
 |Opt-In|Hours|Customer|Opt your organization into the migration.|
 |Pre-Work|Days|Customer|Complete the work needed to prepare users, workstations, and network for migration.|
 |Azure Active Directory (Azure AD)|1-2 days|Microsoft|Migrate Azure AD organization to worldwide.|
-|Azure|Weeks|Customer|Create new worldwide Azure subscriptions and transition Azure services.|
+|Azure|Weeks|Customer|Create new worldwide Azure subscriptions and [transition Azure services](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
 |Subscription & License Transition|1-2 days|Microsoft|Purchase worldwide subscriptions, cancel Microsoft Cloud Deutschland subscriptions, and transition user licenses.|
 |SharePoint and OneDrive|15+ days|Microsoft|Migrate SharePoint and OneDrive for Business content, persisting sharepoint.de URLs.|
 |Exchange Online|15+ days|Microsoft|Migrate Exchange Online content and transition to worldwide URLs.|
@@ -73,7 +76,7 @@ In case you are using single sign on for Office 365 and Azure in the Microsoft C
 
 **When applied**: Before phase 2 starts
 
-If you are using Active Directory Federation Services (AD FS), make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-azure-ad.md) for the Office 365 Global service **before** the beginning of phase 2.
+If you are using Active Directory Federation Services (AD FS), make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-add-adfs.md) for the Office 365 Global service **before** the beginning of phase 2.
 
 ## Phase 2: Azure AD Migration
 In this phase the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
@@ -210,8 +213,7 @@ Make sure the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exc
 Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
 ```
 
-## Phase 7: Skype for Business Online
-
+## Phase 7: Skype for Business Online - Transition to Microsoft Teams
 **Applies to:** All customers using Skype for Business Online
 
 Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
@@ -224,15 +226,23 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Contacts and meetings will be migrated to Microsoft Teams.
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
-- The web browser version of Microsoft Teams will not work until phase 9 has been completed.
+
+When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Please refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration. 
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
 ```powershell
 Import-Module MicrosoftTeams
 $userCredential = Get-Credential
-Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
+Connect-MicrosoftTeams -Credential $userCredential
 ```
+
+### Known limitations until finalizing Azure AD migration
+Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
+
+- Apps cannot be managed in the Microsoft Teams admin center.
+- New teams can be created in the Microsoft Teams client only unless the Teams administrator has limited the permissions for users to create new teams. New teams cannot be created in the Microsoft Teams admin center. 
+- The web version of Microsoft Teams is not available.
 
 ## Phase 8: Dynamics 365
 
@@ -295,12 +305,15 @@ In case you have line-of-business apps, make sure you have completed the [prewor
 
 **Applies to:** All customers
 
-When the Office 365 tenant completes the final step of the migration (Azure AD Finalization (Phase 9)) all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. 
+When the Office 365 tenant completes the final step of the migration (Phase 9: Azure AD Finalization), all services are transitioned to worldwide. No application or user should be accessing resources for the tenant against any of the Microsoft Cloud Deutschland endpoints. Automatically, 30 days after the finalization completes, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned tenant. Endpoint requests such as authentication will fail from this point forward against the Microsoft Cloud Deutschland service.  
+
+Microsoft Azure customers must transition their Azure workloads following the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main) as soon as their tenant completes the migration to worldwide (Phase 9).  
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Update user endpoints | Ensure all users access the service using the proper Microsoft worldwide endpoints |30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail.  |
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
+| Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
 
 ### Azure AD Connect

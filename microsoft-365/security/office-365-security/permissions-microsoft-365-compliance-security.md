@@ -30,16 +30,16 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Your organization needs to manage security scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group.
+You need to manage security scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization's IT group.
 
-The Microsoft 365 security center supports directly managing permissions for users who perform security tasks in Microsoft 365. This means you'll no longer need to use the [Security & Compliance Center to manage permissions](permissions-in-the-security-and-compliance-center.md) for security features. By using the Microsoft 365 security center, you can manage permissions centrally for all tasks related to security.
+The Microsoft 365 security center at <https://security.microsoft.com> supports directly managing permissions for users who perform security tasks in Microsoft 365. This means you'll no longer need to use the [Security & Compliance Center to manage permissions](permissions-in-the-security-and-compliance-center.md) for security features. By using the security center, you can manage permissions centrally for all tasks related to security.
 
-To view the **Permissions** tab in the Microsoft 365 security center, users need to be a global administrator or need to be assigned the Role Management role (a role that by default is assigned only to the Organization Management role group). The Role Management role allows users to view, create, and modify role groups.
+To manage permissions in the security center, go to **Permissions & roles** or <https://securit.microsoft.com/securitypermissions>. You need to be a global administrator or need to be assigned the Role Management role (a role that by default is assigned only to the **Organization Management** role group). The Role Management role allows users to view, create, and modify role groups.
 
 > [!NOTE]
 > For compliance-related permissions in the Microsoft 365 compliance center, see [Permissions in the Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
 
-Permissions in the Microsoft 365 security center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Microsoft 365 security center will be very similar. But, It's important to remember that Exchange role groups and Microsoft 365 security center role groups don't share membership or permissions. For example, both environments have an Organization Management role group, but the permissions they grant, and the group memberships are different.
+Permissions in the security center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the security center will be very similar. But, It's important to remember that Exchange role groups and security center role groups don't share membership or permissions. For example, both environments have an Organization Management role group, but the permissions they grant, and the group memberships are different.
 
 ![Permissions page in the Security & Compliance Center](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
@@ -55,7 +55,7 @@ The Security & Compliance Center includes default role groups for the most commo
 
 ## What the Microsoft 365 roles are
 
-The roles that appear in the Microsoft 365 compliance center and Microsoft 365 security center are Azure Active Directory roles. These roles are designed to align with job functions in your organization's IT group, making it easy to give a person all the permissions necessary to get their job done.
+The roles that appear in the Microsoft 365 security center are Azure Active Directory roles. These roles are designed to align with job functions in your organization's IT group, making it easy to give a person all the permissions necessary to get their job done.
 
 ****
 

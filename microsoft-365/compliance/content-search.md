@@ -83,7 +83,7 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
 7. Review the search settings (and edit if necessary), and then submit the search to start it.
   
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**.
-  
+
 ## Next steps
 
 Here's a list of next steps to perform after you create and run a Content search.
@@ -95,3 +95,7 @@ Here's a list of next steps to perform after you create and run a Content search
 - [Export search results](export-search-results.md)
 
 - [Export a search report](export-a-content-search-report.md)
+
+## More information
+
+For more information about Content search, such as searching for content in different Microsoft 365 services, see [Feature reference for Content search](content-search-reference.md).

@@ -49,13 +49,13 @@ The ZAP action is seamless for the user; they aren't notified if a message is de
 
 [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
-### Malware ZAP
+### ZAP for malware
 
 For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. Only admins can view and manage malware messages from quarantine.
 
-Malware ZAP is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-### Phish ZAP
+### ZAP for phishing
 
 For **read or unread messages** that are identified as phishing after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phishing and their possible ZAP outcomes are described in the following list:
 
@@ -65,11 +65,17 @@ For **read or unread messages** that are identified as phishing after delivery, 
 
 - **Quarantine message**: ZAP quarantines the message.
 
-By default, phish ZAP is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means phish ZAP quarantines the message by default.
+By default, ZAP for phishing is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means ZAP for phishing quarantines the message by default.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### Spam ZAP
+### ZAP for high confidence phishing 
+
+For **read or unread messages** that are identified as high confidence phishing after delivery, ZAP quarantines the message. Only admins can view and manage high confidence phish messages from quarantine. 
+
+ZAP for high confidence phish is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
+
+### ZAP for spam
 
 For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
 
@@ -115,6 +121,6 @@ ZAP still works as long as the message has not been deleted, or as long as the s
 
 ### How does ZAP affect mailboxes on hold?
 
-ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
+ZAP will quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
 For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).
