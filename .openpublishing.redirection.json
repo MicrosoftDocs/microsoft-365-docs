@@ -3731,6 +3731,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/eop-features.md",
       "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview#eop-features",
       "redirect_document_id": false
