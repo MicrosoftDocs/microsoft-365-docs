@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use the search and purge feature in the Security & Compliance Center to search for and delete an email message from all mailboxes in your organization."
+description: "Use the search and purge feature in the Microsoft 365 compliance center to search for and delete an email message from all mailboxes in your organization."
 ---
 
 # Search for and delete email messages
@@ -57,18 +57,18 @@ The first step is to connect to Security & Compliance Center PowerShell for your
 
 ## Step 2: Create a Content Search to find the message to delete
 
-The second step is to create and run a Content Search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Security & Compliance Center or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content Search and configuring search queries, see the following topics:
+The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the Microsoft 365 compliance center or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following topics:
 
-- [Content Search in Office 365](content-search.md)
+- [Content search in Office 365](content-search.md)
 
-- [Keyword queries for Content Search](keyword-queries-and-search-conditions.md)
+- [Keyword queries for Content search](keyword-queries-and-search-conditions.md)
 
 - [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
-> The content locations that are searched in the Content Search that you create in this step can't include SharePoint or OneDrive for Business sites. You can include only mailboxes and public folders in a Content Search that will be used to email messages. If the Content Search includes sites, you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet.
+> The content locations that are searched in the Content search that you create in this step can't include SharePoint or OneDrive for Business sites. You can include only mailboxes and public folders in a Content search that will be used to email messages. If the Content search includes sites, you'll receive an error in Step 3 when you run the **New-ComplianceSearchAction** cmdlet.
 
 ### Tips for finding messages to remove
 
@@ -82,7 +82,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (displayed in the details pane of the search in the Security & Compliance Center or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
+- Use the search estimate statistics (displayed in the details pane of the search in the Microsoft 365 compliance center or by using the [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of results.
 
 Here are two examples of queries to find suspicious email messages.
 
@@ -107,9 +107,9 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## Step 3: Delete the message
 
-After you've created and refined a Content Search to return the message that you want to remove and are connected to Security & Compliance Center PowerShell, the final step is to run the **New-ComplianceSearchAction** cmdlet to delete the message. You can soft- or hard-delete the message. A soft-deleted message is moved to a user's Recoverable Items folder and retained until the deleted item retention period expires. Hard-deleted messages are marked for permanent removal from the mailbox and will be permanently removed the next time the mailbox is processed by the Managed Folder Assistant. If single item recovery is enabled for the mailbox, hard-deleted items will be permanently removed after the deleted item retention period expires. If a mailbox is placed on hold, deleted messages are preserved until the hold duration for the item expires or until the hold is removed from the mailbox.
+After you've created and refined a Content search to return the message that you want to remove and are connected to Security & Compliance Center PowerShell, the final step is to run the **New-ComplianceSearchAction** cmdlet to delete the message. You can soft- or hard-delete the message. A soft-deleted message is moved to a user's Recoverable Items folder and retained until the deleted item retention period expires. Hard-deleted messages are marked for permanent removal from the mailbox and will be permanently removed the next time the mailbox is processed by the Managed Folder Assistant. If single item recovery is enabled for the mailbox, hard-deleted items will be permanently removed after the deleted item retention period expires. If a mailbox is placed on hold, deleted messages are preserved until the hold duration for the item expires or until the hold is removed from the mailbox.
 
-In the following example, the command soft-deletes the search results returned by a Content Search named "Remove Phishing Message".
+In the following example, the command soft-deletes the search results returned by a Content search named "Remove Phishing Message".
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
