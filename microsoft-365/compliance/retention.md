@@ -287,27 +287,15 @@ Advantages of using adaptive scopes:
 
 - Query-based membership provides more robust targeting to accommodate business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
+- A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
+
 Advantages of using static scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
     
     For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers you have to specify are low and do not change. However, when these numbers start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
 
-Not all locations support adaptive scopes. For those locations, you must use a static scope. 
-
-|Location for retention|Adaptive scopes|Static scopes|
-|:------|:------------:|:---------------------:|:-----------------------------:|
-|**Exchange email**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png)   |
-|**SharePoint site**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
-|**OneDrive accounts**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png) |
-|**Microsoft 365 Groups**| ![yes](../media/yes-icon.png)| ![yes](../media/yes-icon.png)|
-|**Skype for Business**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Exchange public folders**| ![no](../media/no-icon.png) | ![yes](../media/yes-icon.png) |
-|**Teams channel messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png)|
-|**Teams chats**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
-|**Teams private channel messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
-|**Yammer community messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
-|**Yammer user messages**| ![yes](../media/yes-icon.png) | ![yes](../media/yes-icon.png) |
+- The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope. 
 
 For configuration information, see [Configuring adaptive scopes](configure-retention-settings.md#configuration-information-for-adaptive-scopes).
 
