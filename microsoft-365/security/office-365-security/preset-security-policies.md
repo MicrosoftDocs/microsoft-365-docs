@@ -149,7 +149,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the Microsoft 365 security center to modify the assignments of preset security policies
 
-The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#Use-the-Microsoft-365-security-center-to-assign-preset-security-policies-to-users).
+The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#use-the-Microsoft-365-security-center-to-assign-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** security policies while still preserving the existing conditions and exceptions, slide the toggle to **Disabled**. To enable the policies, slide the toggle to **Enabled**.
 
