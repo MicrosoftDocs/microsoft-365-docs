@@ -108,6 +108,6 @@ To get the data types for event properties do the following:
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
-- [Stream Microsoft 365 Defender events to your Azure storage account](streaming-storage.md)
+- [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
