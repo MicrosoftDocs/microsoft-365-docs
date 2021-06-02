@@ -65,7 +65,7 @@
             - name: Review architecture requirements
               href: eval-defender-endpoint-architecture.md
             - name: Enable the evaluation
-              href: eval-defender-endpoint-enable.md
+              href: eval-defender-endpoint-enable-eval.md
             - name: Pilot Defender for Endpoint
               href: eval-defender-endpoint-pilot.md         
         - name: Microsoft Cloud App Security
