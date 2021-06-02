@@ -173,6 +173,10 @@ If you use the [Defender for Endpoint SIEM API](../defender-endpoint/enable-siem
 
 You can continue to use email alerts for Defender for Endpoint. We've added new links in the emails that point to the alert page or the incident page in the Microsoft 365 security center. For more information, see [Redirecting accounts from Microsoft Defender for Endpoint to the Microsoft 365 security center](./microsoft-365-security-mde-redirection.md).
 
+### Managed Security Service Providers (MSSP)
+
+Logging in to multiple tenants simultaneously in the same browsing session is currently not supported in the unified portal. You can opt-out of the automatic redirection by [reverting to the former Microsoft Defender for Endpoint portal](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal), to maintain this functionality until the issue is resolved.
+
 ## Related information
 
 - [Microsoft 365 security center](overview-security-center.md)
