@@ -216,7 +216,7 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 ### Configuration information for Skype for Business
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
+Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
 ![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
 
