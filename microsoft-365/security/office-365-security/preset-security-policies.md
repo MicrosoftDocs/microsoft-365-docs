@@ -115,7 +115,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the Microsoft 365 security center to assign preset security policies to users
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **Preset security policies**.
+1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Anti-malware**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
