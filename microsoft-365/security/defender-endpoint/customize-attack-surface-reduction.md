@@ -13,12 +13,10 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Customize attack surface reduction rules
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
