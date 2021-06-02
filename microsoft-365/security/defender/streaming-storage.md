@@ -93,10 +93,10 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event: 
 
-  ![Image of event hub resource ID3](images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
-- [Microsoft 365 Defender Streaming API](raw-data-export.md)
-- [Stream Microsoft 365 Defender events to your Azure storage account](raw-data-export-storage.md)
+- [Microsoft 365 Defender Streaming API](streaming-api.md)
+- [Stream Microsoft 365 Defender events to your Azure storage account](streaming-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
