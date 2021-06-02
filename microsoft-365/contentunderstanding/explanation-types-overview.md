@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn more about explanation types in Microsoft SharePoint Syntex."
+description: "Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex."
 ---
 
 # Explanation types in Microsoft SharePoint Syntex
