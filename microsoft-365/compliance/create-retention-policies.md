@@ -218,9 +218,9 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
-![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Edit Skype location for retention policies](../media/skype-location-retention-policies.png)
 
-When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting the **Select all** box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
+When you select this **Edit**, you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
 Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
