@@ -51,17 +51,17 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Keep track of support ticket updates using the Admin mobile app
 
-For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments. 
+For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments.
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Screenshot: Track support ticket updates":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
 
-### Stay on top of all the major updates to the app and your Microsoft 365 subscription 
+### Stay on top of all the major updates to the app and your Microsoft 365 subscription
 
-- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default). 
+- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default).
 
 - Keep track of the latest features available in the app using the **What's New** section. Go to **Settings** > **What’s new?**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot: Track major updates and features":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
 
 ## April 2021
 
