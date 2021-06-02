@@ -96,7 +96,7 @@ Publish retention labels so that they can be applied by users in apps, such as S
 
 2. Follow the prompts in the wizard.
     
-    For information about the location choices , see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content). 
+    For information about the location choices, see [Locations](configure-retention-settings.md#locations). 
 
 To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 

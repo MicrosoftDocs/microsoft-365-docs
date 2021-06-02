@@ -112,7 +112,7 @@ When you create an auto-apply policy, you select a retention label to automatica
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about the location choices, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content).
+    For information about the location choices, see [Locations](configure-retention-settings.md#locations).
 
 To edit an existing auto-apply policy, select it to start the Edit retention policy wizard that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
