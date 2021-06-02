@@ -30,7 +30,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Defender for Office 365
 
-This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.com), to the Microsoft 365 security center (security.microsoft.com).
+This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Office 365 Security and Compliance Center (protection.office.com), to the Microsoft 365 security center (security.microsoft.com).
 
 ## What to expect
 Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to the Microsoft 365 security center (https://security.microsoft.com).  
