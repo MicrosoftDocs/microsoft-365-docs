@@ -21,7 +21,7 @@ description: "Microsoft Compliance Manager provides templates for building asses
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depends on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Overview
 
@@ -35,29 +35,23 @@ View detailed guidance on [working with templates](compliance-manager-templates.
 
 Below is the complete list of templates in Compliance Manager. Each template details page provides information about the regulation or standard to which it applies. The links in the template names below take you to related documentation about that standard, regulation, or law.
 
-**Where to find your templates**
+### Where to find your templates
 
-In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization. It’s important to understand the distinction between included and premium templates:
-
-- **Included templates** are templates included as part of your organization's licensing agreement.
- - **Premium templates** displays additional templates your organization may choose to obtain (refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
-
-Read more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
-
-> [!NOTE]
-> See [Template types](compliance-manager-templates.md#template-availability-and-licensing) for more information about included and premium templates and understanding which ones are available for your organization to use.
+In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
+One or more of these templates will be available based on your [licensing agreement](compliance-manager-templates.md#template-availability-and-licensing). The Data Protection Baseline template is included for all users.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [European Union GDPR](/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
-- [ISO 27001:2013](/compliance/regulatory/offering-iso-27001)
+- [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 and 5
 
 > [!NOTE]
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
+These templates may be purchased by your organization. Refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for more information.
 
 ### Global
 - Guidelines and Functional Requirements for Electronic Records Management Systems (ICA Module 2) (Microsoft 365)
@@ -74,7 +68,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - ISO 31000:2018 (Microsoft 365)
 - ISO 55001 – Asset management -- Management systems--Requirements (Microsoft 365)
 - ISO IEC 80001-1:2010 (Microsoft 365)
-- ISO/IEC 27001:2013 (Microsoft 365)
+- ISO/IEC 27001:2013
 - [ISO/IEC 27018:2019](/compliance/regulatory/offering-iso-27018) (Microsoft 365)
 - ISO/IEC 27033-1:2015 (Microsoft 365)
 - [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701) (Microsoft 365)
@@ -86,6 +80,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - ARMA - Implementing the Generally Accepted Record Keeping Principles (GARP) (Microsoft 365)
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa) (Microsoft 365)
 - [CIS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
+- CIS Microsoft 365 Foundation Level 1 and 2
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5 (Microsoft 365)
 - FINRA Cybersecurity Checklist (Microsoft 365)
@@ -95,6 +90,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
 - SWIFT Customer Security Controls (Microsoft 365)
 - OWASP ProActive Controls for Developers 2018 v3.0 (Microsoft 365)
+- (NAIC) Standards for Safeguarding Customer Information Model Regulation MDL-673
 - [PCI DSS v3.2.1](/compliance/regulatory/offering-pci-dss) (Microsoft 365)
 - Privacy of Consumer Financial and Health Information Regulation, NAIC MDL-672, Q2 2017 (Microsoft 365)
 - Revisions to the principles for the sound management of operational risk (Basel III Ops Risks) (Microsoft 365)
@@ -191,6 +187,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Code of Maryland State Government - Protection of Information by Government Agencies (Microsoft 365)
 - Maryland Personal Information Protection Act - Security Breach Notification Requirements, HB 1154 (Microsoft 365)
 - Maryland's Student Data Privacy Act (Microsoft 365)
+- Massachusetts - 201 CMR 17.00: Standards For The Protection Of Personal Information Of Residents Of The Commonwealth
 - Massachusetts Data Breach Notification Law 93H section 1-6 (Microsoft 365)
 - Michigan Identity Theft Protection Act (Microsoft 365)
 - Mississippi Security Breach Notification (Microsoft 365)
@@ -283,6 +280,7 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Singapore - Personal Data Protection Act / 2012 (Microsoft 365)
 - Singapore Spam Control Act (Microsoft 365)
 - Taiwan - Implementation Rules for the Internal Audit and Internal Control System of Electronic Payment Institutions - 2015 (Microsoft 365)
+- Taiwan - Implementation Rules of Internal Audit and Internal Control System of Financial Holding Companies and Banking
 - Taiwan - Regulations Governing Approval and Administration of Financial Information Service Enterprises Engaging in Interbank Funds Transfer and Settlement (Microsoft 365)
 - Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions (Microsoft 365)
 - Taiwan Personal Data Protection Act (PDPA) (Microsoft 365)
@@ -308,8 +306,8 @@ Read more about [how to view and manage your templates](compliance-manager-templ
 - Cyprus The Processing of Personal Data Law (Microsoft 365)
 - Czech - Act No. 110/2019 Coll. on Personal Data Processing - 2019 (Microsoft 365)
 - Czech - On Cyber Security and Change of Related Acts (Act on Cyber Security) - Act No. 181 (Microsoft 365)
-- Denmark - Executive Order on Information and Consent Required in Case of Storing and Accessing Information in End-User Terminal Equipment
 - Denmark - The Data Protection Act (Microsoft 365)
+- Denmark - Executive Order on Information and Consent Required in Case of Storing and Accessing Information in End-User Terminal Equipment
 - Directive 2013/40/EU Of The European Parliament And Of The Council (Microsoft 365)
 - Dubai - Health Data Protection Regulation (Microsoft 365)
 - Dubai Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
