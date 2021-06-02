@@ -23,16 +23,23 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-## Step 2: Enable MDE Evaluation
+**Applies to:**
+
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+
+## Enable MDE Evaluation
 
 ### Configure Attack Surface Reduction
 
 You can configure attack surface reduction with many tools, including:
 
-* Microsoft Intune
-* Microsoft Endpoint Configuration Manager
-* Group Policy
-* PowerShell cmdlets
+- Microsoft Intune
+
+- Microsoft Endpoint Configuration Manager
+
+- Group Policy
+
+- PowerShell cmdlets
 
 Article | Description
 -|-
@@ -43,5 +50,32 @@ Article | Description
 [Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
 [Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used by exploit-seeking malware
 [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|How to protect devices and data across a network
+
+### Configure Microsoft Defender Antivirus
+
+You can configure Microsoft Defender Antivirus with a number of tools, including:
+
+- Microsoft Intune
+- Microsoft Endpoint Configuration Manager
+- Group Policy
+- PowerShell cmdlets
+- Windows Management Instrumentation (WMI)
+
+The following broad categories of features can be configured:
+
+- Cloud-delivered protection
+- Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
+- How end users interact with the client on individual endpoints
+
+The following articles describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each article includes instructions for the applicable configuration tool (or tools).
+
+|Article  |Description  |
+|---------|---------|
+|[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](cloud-protection-microsoft-defender-antivirus.md)     | Use cloud-delivered protection for advanced, fast, robust antivirus detection.        |
+|[Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)     |Enable behavior-based, heuristic, and real-time antivirus protection.         |
+|[Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configure how end users in your organization interact with Microsoft Defender Antivirus, what notifications they see, and whether they can override settings. |
+
+> [!TIP]
+> You can also review the [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md) topic for an overview of each tool and links to further help.
 
 See

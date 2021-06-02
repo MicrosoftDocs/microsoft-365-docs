@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
+ms.author: v-jweston
+author: jweston
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -25,9 +25,8 @@ ms.technology: m365d
 
 # Evaluate Microsoft 365 Defender for Endpoint overview
 
-
-
-
 **Applies to:**
+
 - Microsoft 365 Defender
 
+![Microsoft 365 Defender evaluation and piloting process](../../media/defender/m365-defender-eval-processs.png)
