@@ -47,7 +47,7 @@ Here's a how to manage a data spillage incident:
 
 - When a mailbox is on hold, a deleted message remains in the Recoverable Items folder until the retention period expires or the hold is released. [Step 6](#step-6-prepare-the-mailboxes) describes how to remove hold from the mailboxes. Check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority. 
     
-- To control which user mailboxes an data spillage investigator can search and manage who can access the case, you can set up compliance boundaries and create a custom role group, which is described in [Step 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). To do this, you have to be a member of the Organization Management role group or be assigned the role management role. If you or in administrator in your organization has already set compliance boundaries, you can skip Step 1.
+- To control which user mailboxes a data spillage investigator can search and manage who can access the case, you can set up compliance boundaries and create a custom role group, which is described in [Step 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). To do this, you have to be a member of the Organization Management role group or be assigned the role management role. If you or an administrator in your organization has already set compliance boundaries, you can skip Step 1.
     
 - To create a case, you must be a member of the eDiscovery Manager role group or be a member of a custom role group that's assigned the Case Management role. If you're not a member, ask a Microsoft 365 administrator to [add you to the eDiscovery manager role group](assign-ediscovery-permissions.md).
     
@@ -59,7 +59,7 @@ Here's a how to manage a data spillage incident:
 
 Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set up compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Security & Compliance Center and then add the role group as a member of the eDiscovery case. For information about the built-in eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and collaborate on all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning the appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](tagging-and-assessment-in-advanced-ediscovery.md) for detailed instructions on how to do this. 
+You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and collaborate on all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning the appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md) for detailed instructions on how to do this. 
   
 ## Step 2: Create an eDiscovery case
 
@@ -84,7 +84,7 @@ If you have more than 1,000 mailboxes or more than 100 email messages per mailbo
 
 If a custodian or end user is assigned an Office 365 E5 license, you can examine up to 10,000 search results at once using Advanced eDiscovery. If there are more than 10,000 email messages to review, you can divide the search query by date range and review each result individually as search results are sorted by date. In Advanced eDiscovery, you can tag search results using the **Label as** feature in the preview panel and filter the search result by the tag you labeled. This is helpful when you collaborate with a secondary reviewer. By using additional analytics tools in Advanced eDiscovery, such as optical character recognition, email threading, and predictive coding, you can quickly process and review thousands of messages and tag them for further review. See [Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
-When you find an email message that contains spilled data, check the recipients of the message to determine if it was shared externally. To further trace an message, you can collect sender information and date range so you can use the message trace logs, which is described in [Step 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
+When you find an email message that contains spilled data, check the recipients of the message to determine if it was shared externally. To further trace a message, you can collect sender information and date ranges so you can use the message trace logs. This process is described in [Step 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
 After you verified the search results, you may want to share your findings with others for a secondary review. People who you assigned to the case in Step 1 can review the case content in both eDiscovery and Advanced eDiscovery and approve case findings. You can also generate a report without exporting the actual content. You can also use this same report as a proof of deletion, which is described in [Step 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
@@ -100,7 +100,7 @@ After you verified the search results, you may want to share your findings with 
     
 3. Select **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** and then click **Generate report**.
 
-4. In the eDiscovery case, click **Export** to display the list of export jobs. You may have to click **Refresh** to update the list to display the export job you just created.
+4. In the eDiscovery case, click **Export** to display the list of export jobs. You may have to click **Refresh** to update the list to display the export job you created.
 
 5. Click the export job, and then click **Download** report on the flyout page.
  
@@ -112,17 +112,17 @@ For more information about exporting reports, see [Export a Content Search repor
     
 ## Step 5: Use message trace log to check how spilled data was shared
 
-To further investigate if email with spilled data was shared, you can optionally query the message trace logs with the sender information and the date range information that you gathered in Step 4. Note that the retention period for message trace is 30 days for real time data and 90 days for historical data.
+To further investigate if email with spilled data was shared, you can optionally query the message trace logs with the sender information and the date range information that you gathered in Step 4. The retention period for message trace is 30 days for real-time data and 90 days for historical data.
   
 You can use Message trace in the security and compliance center or use the corresponding cmdlets in Exchange Online PowerShell. It's important to note that message tracing doesn't offer full guarantees on the completeness of data returned. For more information about using Message trace, see: 
   
 - [Message trace in the Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
     
-- [New Message Trace in Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [New Message Trace in Security & Compliance Center](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## Step 6: Prepare the mailboxes
 
-After you review and validate that the search results contains only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you delete the spilled data. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold.
+After you review and validate that the search results contain only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you delete the spilled data. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold.
   
 ### Get a list of addresses of mailboxes with spilled data
 
@@ -169,14 +169,20 @@ Be sure to revert the mailbox to previous configurations after you verify that t
 
 Using the mailbox locations that you collected and prepared in Step 6 and the search query that was created and refined in Step 3 to find email messages that contain the spilled data, you can now permanently delete the spilled data.  As previously explained, to delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](./assign-ediscovery-permissions.md).
 
-To delete the spilled messages, see steps 2 & 3 in [Search for and delete email messages](./search-for-and-delete-messages-in-your-organization.md)
+To delete the spilled messages, see [Search for and delete email messages](search-for-and-delete-messages-in-your-organization.md).
+
+Keep the following limits in mind when deleting spilled data:
+
+- The maximum number of mailboxes in a search that you can use to delete items by doing a search and purge action is 50,000. If the search that you create in Step 3 searches more than 50,000 mailboxes, the purge action will fail. Searching more than 50,000 mailbox in a single search might typically happen when you configure the search to include all mailboxes in your organization. This restriction still applies even when less than 50,000 mailboxes contain items that match the search query.
+
+- A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove messages is intended to be an incident-response tool, this limit helps ensure that messages are quickly removed from mailboxes. This feature isn't intended to clean up user mailboxes.
 
 > [!IMPORTANT]
 > Email items in a review set in an Advanced eDiscovery case can't be deleted by using the procedures in this article. That's because items in a review set are copies of items in the live service that are copied and stored in an Azure Storage location. This means they won't be returned by a content search that you create in Step 3. To delete items in a review set, you have to delete the Advanced eDiscovery case that contains the review set. For more information, see [Close or delete an Advanced eDiscovery case](close-or-delete-case.md).
   
 ## Step 8: Verify, provide a proof of deletion, and audit
 
-The final step in the workflow to manage a data spillage incident is to verify that the spilled data was permanently removed from the mailbox by going to the eDiscovery case and re-running the same search query that was used to delete that data to confirm that no results are returned. After you confirm the spilled data has been permanently removed, you can export a report and include it (along with the original report) as a proof of deletion. Then you can [close the case](close-reopen-delete-core-ediscovery-cases.md) which will allow you to re-open it if you have refer to it in the future. Additionally, you can also revert mailboxes to their previous state, delete the search query used to find the spilled data, and search for auditing records of tasks performed when managing the data spillage incident.
+The final step in the workflow to manage a data spillage incident is to verify that the spilled data was permanently removed from the mailbox by going to the eDiscovery case and rerunning the same search query that was used to delete that data to confirm that no results are returned. After you confirm the spilled data has been permanently removed, you can export a report and include it (along with the original report) as a proof of deletion. Then you can [close the case](close-reopen-delete-core-ediscovery-cases.md) which will allow you to reopen it if you have to refer to it in the future. Additionally, you can also revert mailboxes to their previous state, delete the search query used to find the spilled data, and search for auditing records of tasks performed when managing the data spillage incident.
   
 ### Reverting the mailboxes to their previous state
 
@@ -187,11 +193,11 @@ If you changed any mailbox configuration in Step 6 to prepare the mailboxes befo
 If the keywords in the search query that you created and used in Step 3 contains some of all of the actual spilled data, you should delete the search query to prevent further data spillage.
   
 1. In the security and compliance center, open the eDiscovery case, go to the **Search** page, and select the appropriate content search.
-    
+
 2. On the flyout page, click **Delete**.
 
     ![Select the search and then click Delete on the flyout page](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### Auditing the data spillage investigation process
 
 You can search the audit log for the eDiscovery activities that were performed during the investigation. You can also search the audit log to return the audit records for the **New-ComplianceSearchAction -Purge** command that you ran in Step 7 to delete the spilled data. For more information, see:

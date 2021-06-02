@@ -23,6 +23,8 @@ description: "You must be an admin for a business subscription to get admin help
 
 # Get support
 
+## Watch: Get help or support 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
@@ -252,8 +254,6 @@ You can also [search the Microsoft 365 for business community forums](https://go
 
 ## Related content
 
-[Find docs and training](find-help-answers.md) (article)
-
-[Employee quick setup](employee-quick-setup.md) (article)
-
+[Find docs and training](find-help-answers.md) (article)\
+[Employee quick setup](employee-quick-setup.md) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup-overview.md) (video)

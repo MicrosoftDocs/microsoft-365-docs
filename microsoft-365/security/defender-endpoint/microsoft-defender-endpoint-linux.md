@@ -72,7 +72,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-- Supported Linux server distributions and versions:
+- Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
   - Red Hat Enterprise Linux 7.2 or higher
   - CentOS 7.2 or higher

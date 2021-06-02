@@ -25,6 +25,8 @@ description: "Learn how to create a company-wide email signature."
 
 # Create a company-wide email signature
 
+## Watch: Create a company-wide email signature
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
 A company-wide email signature appears on every email sent by people in your organization. You can use it to display important details, like your company contact information or a legal disclaimer. 

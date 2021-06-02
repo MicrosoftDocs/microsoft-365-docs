@@ -49,7 +49,7 @@ Although a retention policy can support multiple services that are identified as
 - Teams channel messages
 - Teams chats
 - Yammer community messages
-- Yammer private messages
+- Yammer user messages
 
 If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
@@ -126,11 +126,11 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     
     Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
-4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
+4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
     
     By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
     
-    For Yammer private messages: 
+    For Yammer user messages: 
     - If you leave the default at **All**, Azure B2B guest users are not included. 
     - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
 

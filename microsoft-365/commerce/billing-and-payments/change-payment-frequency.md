@@ -34,10 +34,7 @@ When you buy a subscription, you choose monthly or annual billing. To change how
 
 ## Related content
 
-[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)
-
-[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)
-
-[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)
-
+[View your bill or invoice](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
+[Paying for your subscription](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
+[Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md) (article)\
 [Change your billing addresses](change-your-billing-addresses.md) (article)
