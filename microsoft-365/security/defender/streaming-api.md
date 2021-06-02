@@ -37,8 +37,8 @@ Microsoft 365 Defender supports streaming all the events available through [Adva
 
 Topic | Description
 :---|:---
-[Stream events to Azure Event Hubs](streaming-api.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](../defender/advanced-hunting-overview.md) to Event Hubs.
-[Stream events to your Azure storage account](streaming-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
+[Stream events to Azure Event Hubs](streaming-api-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](../defender/advanced-hunting-overview.md) to Event Hubs.
+[Stream events to your Azure storage account](streaming-api-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
 
 
 ## Related topics
