@@ -111,28 +111,30 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
 
+    >[!NOTE]
+    > Up to 50 distinct users or security groups max can be added. Use security groups when you need more than 50 individuals to get access to the portal before the waves start launching. 
+
 8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
 
-### Launch portal with over 100k users
+### Launch a portal with over 100k users
 
-If you are planning to launch a portal with over 100,000 users, please submit a support request following the steps listed below. Make sure to include all requested information.
+If you are planning to launch a portal with over 100,000 users, submit a support request following the steps listed below. Make sure to include all the requested information.
 
-Follow these steps:
-1. Navigate to https://admin.microsoft.com
-2. Ensure you are using the new admin center preview.
-3. On the left nav pane, select **Support**, and then select **New Service Request**. 
-
+**Follow these steps:**
+1. Go to https://admin.microsoft.com
+2. Ensure you are using the new admin center preview
+3. On the left navigational pane, select **Support**, and then select **New Service Request**
 
    This will activate the **Need Help?** pane on the right-hand side of your screen.
 
-4.  In the **Briefly describe your issue** area, enter "Launch SharePoint Portal with 100k users".</br>
-5. Select **Contact Support**.
-6. Under **Description**, enter "Launch SharePoint Portal with 100k users". 
-7. Fill out the remaining info, and select **Contact me**.
+4. For **Briefly describe your issue**, enter "Launch SharePoint Portal with 100k users"</br>
+5. Then, select **Contact Support**
+6. Under **Description**, enter "Launch SharePoint Portal with 100k users"
+7. Fill out the remaining information, and then select **Contact me**
 8. After the ticket has been created, ensure you provide the support agent with the following information:
-- Launch Portal URL's 
+- Portal URL's 
 - Number of users expected
-- Estimated time of launch 
+- Estimated launch schedule
 
 ## Make changes to a scheduled portal launch
 
