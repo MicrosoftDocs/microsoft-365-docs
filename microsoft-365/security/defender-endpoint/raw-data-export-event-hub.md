@@ -26,7 +26,7 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Before you begin:
 
