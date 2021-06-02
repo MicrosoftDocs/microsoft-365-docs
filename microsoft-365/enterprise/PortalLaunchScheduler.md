@@ -24,7 +24,7 @@ description: "This article describes how you can launch your portal using the Po
 A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
 <br>
 <br>
-The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
+The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
 
 **There are two types of redirections:**
 
@@ -132,9 +132,9 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 6. Under **Description**, enter "Launch SharePoint Portal with 100k users"
 7. Fill out the remaining information, and then select **Contact me**
 8. After the ticket has been created, ensure you provide the support agent with the following information:
-- Portal URL's 
-- Number of users expected
-- Estimated launch schedule
+   - Portal URL's 
+   - Number of users expected
+   - Estimated launch schedule
 
 ## Make changes to a scheduled portal launch
 
