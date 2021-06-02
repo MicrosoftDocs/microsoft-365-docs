@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.date: 06/02/2021
+ms.topic: article
 ---
 
 # Test attack surface reduction in Microsoft Defender for Endpoint
