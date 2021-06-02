@@ -182,10 +182,9 @@ If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md
 ```console
 DeviceEvents
 | where ActionType == "AntivirusDetection"
-| project Timestamp, DeviceName, FolderPath, FileName, SHA256, x = parse_json(AdditionalFields)
-| evaluate bag_unpack(x)
+| extend x = parse_json(AdditionalFields)
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName = tostring(x.ThreatName), WasExecutingWhileDetected = tostring(x.WasExecutingWhileDetected), WasRemediated = tostring(x.WasRemediated)
 | where ThreatName startswith_cs 'PUA:'
-| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
 To learn more about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
