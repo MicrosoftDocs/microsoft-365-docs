@@ -73,7 +73,7 @@ In case you are using single sign on for Office 365 and Azure in the Microsoft C
 
 **When applied**: Before phase 2 starts
 
-If you are using Active Directory Federation Services (AD FS), make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-azure-ad.md) for the Office 365 Global service **before** the beginning of phase 2.
+If you are using Active Directory Federation Services (AD FS), make sure to [back up your ADFS configuration before and after adding the relying party trust](ms-cloud-germany-transition-add-adfs.md) for the Office 365 Global service **before** the beginning of phase 2.
 
 ## Phase 2: Azure AD Migration
 In this phase the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
