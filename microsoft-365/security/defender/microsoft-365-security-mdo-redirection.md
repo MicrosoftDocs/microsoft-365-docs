@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Office 365 Security and Compliance Center to the Microsoft 365 security center
+# Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
