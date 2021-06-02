@@ -72,7 +72,7 @@ To revert to the former portal:
 
 This setting can be enabled again at any time.
 
-Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
+Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal—securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
 - [Microsoft 365 security center overview](overview-security-center.md)
