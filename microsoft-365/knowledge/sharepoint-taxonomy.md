@@ -1,9 +1,9 @@
 ---
-title: "Use SharePoint Taxonomy to find topics in Microsoft Viva Topics"
+title: "Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics"
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: anfra
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,5 +14,5 @@ ms.collection:
 localization_priority: None
 description: "Learn about how to find topics in Viva Topics by using SharePoint taxonomy."
 ---
-# Use SharePoint Taxonomy to find topics in Microsoft Viva Topics
+# Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics
 
