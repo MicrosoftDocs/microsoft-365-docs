@@ -179,13 +179,15 @@ Use the following instructions for retention policies that apply to any of these
 
 #### Configuration information for Exchange email and Exchange public folders
 
-The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox.
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Retention Policy can only be applied to a Licensed Mailbox, distribution group or mail-enabled security group (all mailboxes that are currently members of the group).
 
 For detailed information about which items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 Note that even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Microsoft 365 Groups** location.
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
+
+
 
 #### Configuration information for SharePoint sites and OneDrive accounts
 
