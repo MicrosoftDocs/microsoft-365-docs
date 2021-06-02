@@ -80,13 +80,21 @@ Before you configure your adaptive scope, use the previous section to identify w
     You can use any combination of attributes that are supported for their scope type, together with logical operators to build queries. For example,  
     
     Alternatively, you can select **Advanced query builder** to write your own queries:
-    - For **User** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters).
-    - For **Sites** and **Microsoft 365 Group** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance provided for that configuration.
+    - For **User** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state: `(Department -eq "HR") -and (CountryOrRegion -eq "United States") -and (State -eq "California")`
+    - For **Sites** and **Microsoft 365 Group** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
 
 3. Create as many adaptive scopes as you need. You select one or more adaptive scopes when you create your policy for retention.
 
 > [!NOTE]
 > It can take a few days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a new scope to a policy for retention.
+
+To confirm the current membership and changes for an adaptive scope:
+
+1. Select the scope on the **Adaptive scopes** page
+
+2. From the **Details** pane, select **Scope details**. 
+    
+    Review the information that identifies all the users, sites, or groups currently in the scope and when they were automatically added or removed.
 
 ### Configuration information for static scopes
 
