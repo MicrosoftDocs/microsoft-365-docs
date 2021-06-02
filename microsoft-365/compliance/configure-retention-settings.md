@@ -77,7 +77,7 @@ Before you configure your adaptive scope, use the previous section to identify w
     > [!IMPORTANT]
     > Because no matches might be a valid result, there's no validation that you typed in the value correctly.
     
-    You can use any combination of attributes that are supported for their scope type, together with logical operators to build queries. For example,  
+    Select **Add attribute** to use any combination of attributes that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes.
     
     Alternatively, you can select **Advanced query builder** to write your own queries:
     - For **User** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state: `(Department -eq "HR") -and (CountryOrRegion -eq "United States") -and (State -eq "California")`
