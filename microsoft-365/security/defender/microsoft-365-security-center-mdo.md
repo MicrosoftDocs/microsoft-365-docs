@@ -108,7 +108,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
 
-[Learn more about Action Center](m365d-action-center.md)
+[Learn more about Action center](m365d-action-center.md)
 
 #### Threat Analytics
 
