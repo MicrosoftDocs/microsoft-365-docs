@@ -1,5 +1,5 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center
+title: Redirecting accounts from Office 365 Security and Compliance Center to the new Microsoft 365 security center
 description: How to redirect from the Defender for Office 365 to the Microsoft 365 security center.
 keywords: Microsoft 365 security center, Getting started with the Microsoft 365 security center, security center redirection
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center
+# Redirecting accounts from Office 365 Security and Compliance Center to the Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Defender for Office 365
 
-This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.com or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
+This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.com), to the Microsoft 365 security center (security.microsoft.com).
 
 ## What to expect
 Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to the Microsoft 365 security center (https://security.microsoft.com).  
