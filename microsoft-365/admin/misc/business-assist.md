@@ -22,7 +22,7 @@ description: "Learn about the Business Assist program and how it can help your o
 
 Get the most out of your subscription with expert advice from small business specialists.
 
-**Business Assist for Microsoft 365** is designed for businesses with less than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+**Business Assist for Microsoft 365** is designed for businesses with fewer than 5 users to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Business Assist services
 
@@ -37,7 +37,7 @@ Get the most out of your subscription with expert advice from small business spe
 
 ## Eligibility for Business Assist
 
-Customers with an active Microsoft 365 for business subscription plan can use Business Assist onboarding, migration and management services. Your organization must have 5 or less user licenses.
+Customers with an active Microsoft 365 for business subscription plan can use Business Assist onboarding, migration and management services. Your organization must have 5 or fewer user licenses.
 
 > [!IMPORTANT]
 > Business Assist is only available in the United States.
@@ -46,9 +46,9 @@ Customers with an active Microsoft 365 for business subscription plan can use Bu
 
 Only organizations that are eligible will see the option to buy Business Assist. Business Assist costs $5 per user per month. Here's how you can buy Business Assist.
 
-1. In the Microsoft 365 admin center, go to **Billing** > **Purchase services**.
+1. In the simplified view of the Microsoft 365 admin center, go to the **Subscriptions** tab and select **Add products**.
 
-2. Select **Details** on the **Small Business Assist for Microsoft 365** and complete your purchase.
+2. On the Purchase services page, Select **Details** on **Business Assist for Microsoft 365** and complete your purchase.
 
 :::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
