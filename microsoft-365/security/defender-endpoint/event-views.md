@@ -13,6 +13,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # View attack surface reduction events
