@@ -29,6 +29,11 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+**Navigate to:**
+- [Step 1: Create pilot groups](#step-1:-create-pilot-groups)
+- [Step 2: Congfigure protection](#step-2:-configure-protection)
+- [Step 3: Get familiar with simulation, monitoring, and metrics](#step-3:-get-familiar-with-simulation-monitoring-and-metrics)
+
 ![Steps for creating the pilot for Microsoft 365 Defender for Office](../../media/defender/m365-defender-office-pilot.png)
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
@@ -113,17 +118,15 @@ The table below provides references and additional guidance for configuring and 
 |Safe Attachments     |    Protect users from malicious content in email attachments and files in SharePoint, OneDrive, and Teams.     |    [Set up safe attachment policies in Defender for Office 365](../office-365-security/set-up-safe-attachments-policies.md)     |
 |Safe Links     |     Protect users from opening and sharing malicious links in email messages or Office desktop apps.    |    [Set up safe links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)     |
 
-## Step 3: Try out capabilities
+## Step 3: Get familiar with simulation, monitoring, and metrics
 
-Now that your pilot is set up and configured, it's helpful to become familiar with the reporting and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
+Now that your pilot is set up and configured, it's helpful to become familiar with the reporting, monitoring, and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
 
 |Capability  |Description  |More information  |
 |---------|---------|---------|
-|Row1     |         |         |
 |Threat Explorer     | Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.        | [Views in Threat Explorer and real-time detections ](../office-365-security/threat-explorer-views.md)       |
 |Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
-|Row4     |         |         |
-|Row5     |         |         |
+|Reports dashboard     | On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.  |    [v](../office-365-security/view-email-security-reports.md)     |
 
 ### Navigation you may need
 
