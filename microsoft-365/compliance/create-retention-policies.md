@@ -51,13 +51,16 @@ Although a retention policy can support multiple services that are identified as
 - Teams channel messages
 - Teams chats
 - Yammer community messages
-- Yammer private messages
+- Yammer user messages
 
 If you select the Teams or Yammer locations when you create a retention policy, the other locations are automatically excluded. This means that the instructions to follow depend on whether you need to include the Teams or Yammer locations:
 
 - [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
 - [Instructions for a retention policy for Yammer locations](#retention-policy-for-yammer-locations)
 - [Instructions for a retention policy for locations other than Teams and Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
+
+> [!NOTE]
+> When you use adaptive policies instead of static policies, you can configure a single retention policy to include both Teams and Yammer locations. This isn't the case for static policies where Teams and Yammer locations require their own retention policy.
 
 When you have more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) to understand the outcome when multiple retention settings apply to the same content.
 
@@ -129,7 +132,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 4. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Define adaptive scope** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the scope types added. For example, if you only added a scope type of **User**, you will be able to select **Yammer user messages** but not **Yammer community messages**. 
-    - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer private messages**.
+    - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
         
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
@@ -140,8 +143,6 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 5. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](configure-retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
-    
-    Do not select **Use advanced retention settings** because this option isn't supported for Yammer locations. 
 
 6. Complete the wizard to save your settings.
 
