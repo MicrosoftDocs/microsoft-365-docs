@@ -451,6 +451,12 @@
               href: archive-enterprise-number-data.md
             - name: O2 Network
               href: archive-o2-network-data.md
+            - name: Rogers Network
+              href: archive-rogers-sms-mms-network-data.md
+            - name: Signal
+              href: archive-signal-archiver-data.md
+            - name: Telegram
+              href: archive-telegram-archiver-data.md
             - name: TELUS Network
               href: archive-telus-network-data.md
             - name: Verizon Network
