@@ -18,11 +18,16 @@ description: "Learn how to request a credit on your account for Withholding Tax 
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: 'o365-worldwide'
 ms.date: 05/03/2021
 ---
 
 # Request a credit for Withholding Tax on your account (India customers)
+
+> [!NOTE]
+>
+> If your organization is not based in India, please see [Request a credit for Withholding Tax on your account (Global customers)](withholding-tax-credit-global.md).
 
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
 
