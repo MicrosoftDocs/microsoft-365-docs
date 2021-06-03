@@ -14,6 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+MS.technology: mde
+ms.custom: api
 ---
 
 # Get recommendation by ID
