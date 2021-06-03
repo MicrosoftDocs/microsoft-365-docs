@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
+ms.date: 06/03/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -460,6 +460,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2106.01</summary>
+
+&ensp;Package version: **1.1.2106.01**    
+&ensp;Platform version: **4.18.2104.14**   
+&ensp;Engine version: **1.1.18100.6**  
+&ensp;Signature version: **1.339.1923.0**    
+    
+### Fixes
+- None
+
+### Additional information
+- None  
+<br/>
+</details><details>
 <summary>1.1.2105.01</summary>
 
 &ensp;Package version: **1.1.2105.01**    
