@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive Rogers Network data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Rogers Network data
+# Set up a connector to archive Rogers Network data (preview)
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive SMS and MMS data from the Rogers Network. After you set up and configure a connector, it connects to your organization's Rogers Network once every day, and imports SMS/MMS data to mailboxes in Microsoft 365.
 
@@ -46,7 +46,7 @@ The following overview explains the process of using a connector to archive  Ro
 
 - Employees in your organization must have corporate-owned and corporate-liable mobile phones on the Rogers Mobile Network. This product is not available for employee-owned devices (but can be combined with other products for capturing mobile communication from employee-owned devices).
 
-- The user who creates a Rogers Network connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates a Rogers Network connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Create a Rogers Network connector
 

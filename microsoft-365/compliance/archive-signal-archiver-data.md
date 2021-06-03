@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive Signal communications data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Signal communications data
+# Set up a connector to archive Signal communications data (preview)
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive Signal chats, attachments, files, and deleted messages and calls. After you set up and configure a connector, it connects to your organization's TeleMessage account, and imports the mobile communication of employees using the TeleMessage Signal Archiver to mailboxes in Microsoft 365.
 
@@ -44,13 +44,13 @@ The following overview explains the process of using a connector to archive  Si
 
 - Install the Signal Archiver app on the mobile phones of your employees and activate it. The Signal Archiver app allows them to communicate and chat with other Signal users.
 
-- The user who creates a Signal Archiver connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates a Signal Archiver connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Create a Signal Archiver connector
 
 After you've completed the prerequisites described in the previous section, you can create the Signal Archiver connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the TeleMessage site and transfers Signal communications data to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** &gt; **Signal Archiver**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors** > **Signal Archiver**.
 
 2. On the **Signal Archiver** product description page, click **Add connector.**
 
