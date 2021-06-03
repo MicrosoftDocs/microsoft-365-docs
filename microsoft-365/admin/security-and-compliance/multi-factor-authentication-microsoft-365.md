@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about multi-factor authentication in Microsoft 365."
+description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
 
 # Multi-factor authentication for Microsoft 365
@@ -165,12 +165,11 @@ In the Azure portal, you can:
 
 In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
 
-## Your next step
+## Next steps
 
 [Set up MFA for Microsoft 365](set-up-multi-factor-authentication.md)
 
-## Related topics
+## Related content
 
-[Video: Turn on multi-factor authentication](../../business-video/turn-on-mfa.md)
-
-[Video: Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md)
+[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)\
+[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)
