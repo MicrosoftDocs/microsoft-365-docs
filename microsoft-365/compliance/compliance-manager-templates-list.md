@@ -49,7 +49,7 @@ One or more of these templates will be available based on your [licensing agreem
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
-These templates may be purchased by your organization. Refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) for more information.
+These templates may be purchased by your organization. Refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) for more information.
 
 ### Global
 - Guidelines and Functional Requirements for Electronic Records Management Systems (ICA Module 2) (Microsoft 365)
