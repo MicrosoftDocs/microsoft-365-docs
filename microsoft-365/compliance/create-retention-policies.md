@@ -179,7 +179,7 @@ Use the following instructions for retention policies that apply to any of these
 
 #### Configuration information for Exchange email and Exchange public folders
 
-The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Retention Policy can only be applied to a Licensed Mailbox, distribution group or mail-enabled security group (all mailboxes that are currently members of the group).
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Retention policies can only be applied to licensed mailboxes, distribution groups, or mail-enabled security groups (to all mailboxes that are currently members of the group).
 
 For detailed information about which items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
