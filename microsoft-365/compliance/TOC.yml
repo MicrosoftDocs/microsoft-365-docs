@@ -12,6 +12,8 @@
       href: microsoft-365-compliance-center.md
     - name: Permissions in the Microsoft 365 compliance center
       href: microsoft-365-compliance-center-permissions.md
+    - name: Redirecting users to the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
