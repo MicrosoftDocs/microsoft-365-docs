@@ -38,7 +38,7 @@ In this article:
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats. 
 
-In the **Microsoft 365 security center**, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+In the **Microsoft 365 security center**, go to **Email & collaboration**, and then choose **Explorer**.
 
 <br>
 
@@ -64,7 +64,7 @@ In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 
 
 Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
 
-To open the Explorer tool, go to **Microsoft 365 security center** > **Threat management** > **Explorer** (or **Real-time detections**). By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
+To open the Explorer tool, go to **Microsoft 365 security center** > **Email & collaboration** > **Explorer**. By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
 
 > [!div class="mx-imgBorder"]
 > ![View drop down in Threat Explorer](../../media/threat-explorer-view-drop-down.png)
