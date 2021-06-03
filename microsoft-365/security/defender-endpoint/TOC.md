@@ -527,6 +527,7 @@
 ####### [Get machine by ID](get-machine-by-id.md)
 ####### [Get machine log on users](get-machine-log-on-users.md)
 ####### [Get machine related alerts](get-machine-related-alerts.md)
+####### [Get live response result](get-live-response-result.md)
 ####### [Get installed software](get-installed-software.md)
 ####### [Get discovered vulnerabilities](get-discovered-vulnerabilities.md)
 ####### [Get security recommendations](get-security-recommendations.md)
@@ -535,6 +536,7 @@
 ####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
+####### [Cancel machine action](cancel-machine-action.md)
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
