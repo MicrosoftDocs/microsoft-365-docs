@@ -33,11 +33,9 @@ View detailed guidance on [working with templates](compliance-manager-templates.
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. Each template details page provides information about the regulation or standard to which it applies. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
 
-### Where to find your templates
-
-In Compliance Manager, go to your **Assessment templates** page. You'll see a list of all the templates available to your organization. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
+To review the templates available to your organization in Compliance Manager, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
 One or more of these templates will be available based on your [licensing agreement](compliance-manager-templates.md#template-availability-and-licensing). The Data Protection Baseline template is included for all users.
