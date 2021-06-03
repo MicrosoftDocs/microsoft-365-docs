@@ -24,7 +24,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 ## Before you train a model
 
-- During a training round, label documents as **Relevant** or **Not relevant** based on the relevancy of the content in the document. Don't base your decision on the values in the metadata fields. For example, for email messages or Teams conversations, don't base your labeling decision on the message participants. 
+- During a training round, label items as **Relevant** or **Not relevant** based on the relevancy of the content in the document. Don't base your decision on the values in the metadata fields. For example, for email messages or Teams conversations, don't base your labeling decision on the message participants. 
 
 ## Train a model for the first time
 
@@ -36,7 +36,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 4. On the **Overview** tab, under **Round 1**, click **Start next training round**.
 
-   The **Training** tab is displayed and contains 50 documents for you to label.
+   The **Training** tab is displayed and contains 50 items for you to label.
 
 5. Review each document and then select the **Relevant** or **Not relevant** button at the bottom of the reading pane to label it.
 
@@ -70,7 +70,7 @@ After you perform the first training round, a job is started that does the follo
 
   Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. Scores for these model performance metrics are displayed on a flyout page for the training round. For a description of these metrics, see [Predictive coding reference](predictive-coding-reference.md).
 
-- Finally, the model determines the next 50 documents that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designate them as the training set for the next round. The sampling for the next training round is not uniformly sampled. The model will optimize the sampling selection of documents from the review set to select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range. This process is known as *biased selection*.
+- Finally, the model determines the next 50 items that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designate them as the training set for the next round. The sampling for the next training round is not uniformly sampled. The model will optimize the sampling selection of items from the review set to select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range. This process is known as *biased selection*.
 
 ### What happens after you perform subsequent training rounds
 
@@ -84,4 +84,4 @@ After you perform subsequent training rounds (after the first training round), t
 
 ## Next steps
 
-After you perform the first training round, you can perform more training rounds or apply the model's prediction score filter to the review set to view the documents the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).
+After you perform the first training round, you can perform more training rounds or apply the model's prediction score filter to the review set to view the items the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).

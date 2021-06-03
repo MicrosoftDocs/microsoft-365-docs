@@ -60,3 +60,7 @@ Here are two ways you can use the prediction score filter:
 
   > [!TIP]
   > To view the actual prediction score assign to a document, you can click the **Metadata** tab in the reading pane. The prediction scores for all models in the review set are displayed in the **RelevanceScores** metadata property.
+
+## More information
+
+- For more information about using filters, see [Query and filter content in a review set](review-set-search.md).

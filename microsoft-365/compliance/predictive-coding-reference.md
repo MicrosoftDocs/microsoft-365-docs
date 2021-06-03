@@ -22,11 +22,11 @@ This article describes the key concepts and metrics of the predictive coding too
 
 ## Confidence level
 
-The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to documents in the review set.​ The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
+The confidence level is an advanced setting when you create a predictive coding model. It defines that the model's performance metrics (for example, richness, precision, and recall) fall within a specified range (that's determined the margin of error defined for the model) that's representative of the true values of the prediction scores the model assigns to items in the review set.​ The values for the confidence level and margin of error also help determine how many items are included in the control set. The default value for the confidence level is 0.95 or 95%.
 
 ## Control set
 
-A control set is used during the training process of a predictive coding model. The control set is to evaluate the prediction scores that the model assigns to documents with the labeling that you perform during training rounds. The size of the control set is based on the number of documents in the review set and the confidence level and margin of error values that are set when creating the model. Documents in the control set never change and aren't identifiable to users. The total number of items in the control set is displayed on the flyout page for a training round.
+A control set is used during the training process of a predictive coding model. The control set is to evaluate the prediction scores that the model assigns to items with the labeling that you perform during training rounds. The size of the control set is based on the number of items in the review set and the confidence level and margin of error values that are set when creating the model. Items in the control set never change and aren't identifiable to users. The total number of items in the control set is displayed on the flyout page for a training round.
 
 ## Control set confusion matrix
 
@@ -62,7 +62,7 @@ The precision metric measures the proportion of items that are actually relevant
 
 ## Prediction score
 
-This is the score that a model assigns to each document in a review set. The score is based on the document's relevance compared to model's learning from the training rounds. In general, documents with prediction scores between **0** and **0.5** are considered not relevant and documents with prediction scores between **0.5** and **1** are considered relevant. The prediction score is contained in a document metadata field. You can use a prediction filter to display the documents in a review set that fall within a specified prediction range.
+This is the score that a model assigns to each document in a review set. The score is based on the document's relevance compared to model's learning from the training rounds. In general, items with prediction scores between **0** and **0.5** are considered not relevant and items with prediction scores between **0.5** and **1** are considered relevant. The prediction score is contained in a document metadata field. You can use a prediction filter to display the items in a review set that fall within a specified prediction range.
 
 ## Recall
 
@@ -70,7 +70,7 @@ The recall metric measures the proportion of items the model predicted were rele
 
 ## Review set
 
-A review set provides the scope of a predictive coding model. When you create a new model for the review set, items for the control set and training sets are selected from the review set. When the model assigns prediction scores, it assigns those scores the documents in the review. You have to add all documents to the review set before you create a predictive coding model. If you add documents after you create a model, those documents will not be assigned a prediction score.
+A review set provides the scope of a predictive coding model. When you create a new model for the review set, items for the control set and training sets are selected from the review set. When the model assigns prediction scores, it assigns those scores the items in the review. You have to add all items to the review set before you create a predictive coding model. If you add items after you create a model, those items will not be assigned a prediction score.
 
 ## Richness
 
@@ -78,8 +78,8 @@ The richness metric measures the percentage of review set items the model predic
 
 ## Sampled items
 
-The term *sampled items* is a reference to random sample of documents in a review set (that contain text) that are selected and associated with the control set when you create a predictive coding model. A random sample of documents is also selected for each training round. Documents selected for the control set of a model are never included in a training set for that same model. The reverse is also true: training set documents are never included in the control set.
+The term *sampled items* is a reference to random sample of items in a review set (that contain text) that are selected and associated with the control set when you create a predictive coding model. A random sample of items is also selected for each training round. Items selected for the control set of a model are never included in a training set for that same model. The reverse is also true: training set items are never included in the control set.
 
 ## Training set
 
-The model randomly selects documents from the review set and adds them to a training set. During a training round, documents from the training set (in addition to documents from the control set) are presented to you so that you can label each one as either "relevant" or "not relevant". This labeling or "training" process helps the model learn how to predict which documents in the review are relevant or not relevant. Each time you perform a training round, the model selects more documents from the review and adds them to the training set for that training round. Documents from the control set are never selected for a training set.
+The model randomly selects items from the review set and adds them to a training set. During a training round, items from the training set (in addition to items from the control set) are presented to you so that you can label each one as either "relevant" or "not relevant". This labeling or "training" process helps the model learn how to predict which items in the review are relevant or not relevant. Each time you perform a training round, the model selects more items from the review and adds them to the training set for that training round. Items from the control set are never selected for a training set.
