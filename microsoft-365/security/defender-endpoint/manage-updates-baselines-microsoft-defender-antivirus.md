@@ -87,8 +87,7 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- item
-- item
+- Improvements to behavior monitoring 
 
 ### Known Issues
 No known issues  
