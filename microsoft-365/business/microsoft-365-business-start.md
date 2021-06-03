@@ -36,7 +36,7 @@ description: "Learn about Microsoft 365 for business, how to set it up, and how 
 
 Microsoft 365 for business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products, that are always up to date. You can protect your work files on all your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
 
-Watch this video for a quick overview of Microsoft 365 for business.<br><br>
+## Watch: What is Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -56,7 +56,7 @@ The following diagram describes how admins set up Microsoft 365 for business. It
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Watch this video for an overview of Microsoft 365 for business setup.<br><br>
+## Watch: Set up Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -104,8 +104,7 @@ If you retain a local Active Directory that contains some on-premises resources 
     
 ## Related content
 
-[Microsoft 365 for business documentation and resources](./index.yml)
-  
-[Manage Microsoft 365 for business](manage.md)[Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md)
-
-[Microsoft 365 for business training videos](../business-video/index.yml)
+[Microsoft 365 for business documentation and resources](./index.yml) (link page)\
+[Manage Microsoft 365 for business](manage.md) (article)\
+[Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md) (article)\
+[Microsoft 365 for business training videos](../business-video/index.yml) (link page)

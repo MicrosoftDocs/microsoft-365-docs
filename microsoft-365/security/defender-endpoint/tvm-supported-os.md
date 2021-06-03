@@ -54,6 +54,7 @@ macOS 10.14 "Mojave" and above | Yes | Yes | Yes (preview) | Yes (preview) | Yes
 Red Hat Enterprise Linux 7.2 or higher **(preview)** (\* See "Important" notice below) | Yes | Yes | Yes | Yes | Yes
 CentOS 7.2 or higher **(preview)** | Yes | Yes | Yes | Yes | Yes
 Ubuntu 16.04 LTS or higher LTS **(preview)** | Yes | Yes | Yes | Yes | Yes
+Oracle Linux 7.2 or higher | Yes | Yes | Yes | Yes | Yes
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux:

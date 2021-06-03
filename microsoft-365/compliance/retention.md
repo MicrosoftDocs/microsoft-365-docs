@@ -111,7 +111,7 @@ Retention policies can be applied to the following locations:
 - Teams channel messages
 - Teams chats
 - Yammer community messages
-- Yammer private messages
+- Yammer user messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
@@ -303,7 +303,7 @@ Explanation for the four different levels:
     
     Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
 
-3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
+3. **Explicit wins over implicit for deletions.** With conflicts now resolved for retention, only conflicts for deletions remain: 
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
@@ -363,7 +363,7 @@ You apply Preservation Lock after the retention policy or retention label policy
 
 Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy, but remove a site for SharePoint or an account for OneDrive, or change the location status to off, or disable the policy.
  
-When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period, you can't delete the site, deleted files are still retained (files continue to be added to the Preservation Hold library), but the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
+When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period deleted files are still retained (files continue to be added to the Preservation Hold library), but the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
 
 For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
