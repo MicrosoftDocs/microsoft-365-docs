@@ -46,8 +46,8 @@ Cancel an already launched machine action
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide)
+including how to choose permissions, see [Get
+started](apis-intro.md).
 
 | Permission type                | Permission        | Permission display name              |
 |------------------------------------|-----------------------|------------------------------------------|
@@ -90,7 +90,6 @@ Found.
 Here is an example of the request.
 
 ```HTTP
-
 POST
 [https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel](https://api.securitycenter.microsoft.com/api/machineactions/%7bmachine%20action%20id%7d/cancel)
 ```

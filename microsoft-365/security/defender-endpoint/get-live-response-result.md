@@ -46,12 +46,11 @@ Retrieves specific live response command by its index
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide)
+including how to choose permissions, see [Get
+started](apis-intro.md).
 
-| PERMISSIONS                        |                      |                                           |
-|------------------------------------|----------------------|-------------------------------------------|
 | Permission type                    | Permission           | Permission display name                   |
+|------------------------------------|----------------------|-------------------------------------------|
 | Application                        | Machine.LiveResponse | 'Run live response on a specific machine' |
 | Delegated (work or school account) | Machine.LiveResponse | 'Run live response on a specific machine' |
 
