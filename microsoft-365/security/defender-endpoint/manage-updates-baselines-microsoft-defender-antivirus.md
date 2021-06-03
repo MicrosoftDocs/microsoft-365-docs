@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
+ms.date: 06/03/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
