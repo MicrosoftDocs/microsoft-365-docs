@@ -16,7 +16,7 @@
         href: microsoft-365-security-center-mdo.md  
       - name: Redirecting Defender for Endpoint to Microsoft 365 security center
         href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 security center
         href: microsoft-365-security-mdo-redirection.md   
       - name: Microsoft 365 Defender integration with Azure Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
@@ -324,11 +324,11 @@
                 - name: Streaming API
                   items:
                     - name: Microsoft 365 Streaming API
-                      href: ../defender-endpoint/raw-data-export.md
+                      href: streaming-api.md
                     - name: Stream advanced hunting events to Azure Events hub
-                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                      href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
-                      href: ../defender-endpoint/raw-data-export-storage.md
+                      href: streaming-api-storage.md
                 - name: Advanced Hunting API
                   href: api-advanced-hunting.md
                 - name: Incidents APIs
