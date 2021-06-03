@@ -4019,8 +4019,8 @@
       "source_path": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
       "redirect_document_id": true
-
-=======
+    },
+{
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/reliability-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
       "redirect_document_id": false
