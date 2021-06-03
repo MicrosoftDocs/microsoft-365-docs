@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn more about explanation types in Microsoft SharePoint Syntex."
+description: "Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex."
 ---
 
 # Explanation types in Microsoft SharePoint Syntex
@@ -109,6 +109,15 @@ To add a regular expression explanation type:
    When you add a regular expression by using a template, it automatically adds the name and the regular expression to the text box. For example, if you choose the **Email address** template, the **Create an explanation** panel will be populated.
 
    ![Screenshot showing the Create an explanation panel with Email address template applied.](../media/content-understanding/create-regular-expression-email.png)
+
+### Limitations
+
+The following table shows inline character options that currently are not available for use in regular expression patterns. 
+
+|Option  |State  |Current functionality  |
+|---------|---------|---------|
+|Case sensitivity | Currently not supported. | All matches performed are case-insensitive.  |
+|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where a match must occur.   |
 
 ## Proximity 
 
