@@ -45,6 +45,16 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## June 2021
+
+### Microsoft 365 admin center search
+
+We've added a couple of new categories to Search functionality.
+
+- **Admin roles**: You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page.
+
+- **Setup and onboarding**: Find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features.
+
 ## May 2021
 
 ### Admin mobile app
