@@ -51,9 +51,9 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 We've added a couple of new categories to Search functionality.
 
-- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **user administrator** or **teams administrator**.
+- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **Intune administrator**.
 
-- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **add users** or **install Office**.
+- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
 
 To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
 
