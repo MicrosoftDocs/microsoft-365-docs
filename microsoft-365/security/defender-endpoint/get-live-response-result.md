@@ -34,16 +34,16 @@ ms.custom: api
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-API description
+## API description
 
 Retrieves specific live response command by its index
 
-Limitations
+##Limitations
 
 1.  Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
 
-Permissions
+## Permissions
 
 One of the following permissions is required to call this API. To learn more,
 including how to choose permissions, see [Get
@@ -55,24 +55,24 @@ started](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoi
 | Application                        | Machine.LiveResponse | 'Run live response on a specific machine' |
 | Delegated (work or school account) | Machine.LiveResponse | 'Run live response on a specific machine' |
 
-HTTP request
+## HTTP request
 
 *HTTP*
 
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action
 id}/GetLiveResponseResultDownloadLink(index={command-index})
 
-Request headers
+## Request headers
 
 | Name      | Type | Description               |
 |---------------|----------|-------------------------------|
 | Authorization | String   | Bearer {token}. Required. |
 
-Request body
+## Request body
 
 Empty
 
-Response
+## Response
 
 If successful, this method returns 200, Ok response code with object that holds
 the link to the command result in the “value” property. This link is valid for
@@ -89,18 +89,18 @@ need to run Live Response again.
 | script_output | Executed script standard output       |
 | script_error  | Executed script standard error output |
 
-Example
+## Example
 
-Request
+**Request**
 
 Here is an example of the request.
 
-*HTTP*
-
+```HTTP
 GET
 https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
+```
 
-Response
+**Response**
 
 Here is an example of the response.
 
@@ -108,7 +108,7 @@ HTTP/1.1 200 Ok
 
 Content-type: application/json
 
-*File content:*
+*File content:* 
 
 ### Related topic
 
