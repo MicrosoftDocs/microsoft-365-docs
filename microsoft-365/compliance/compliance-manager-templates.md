@@ -51,7 +51,7 @@ You may also try premium templates on a trial basis. Trial licenses are good for
 
 #### Activated templates counter
 
-Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number eligible to use according to your licensing agreement. Template use is counted at the level of the underlying certifications.
+Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement. Template use is counted at the certification level.
 
 For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
 
