@@ -606,10 +606,6 @@ These locations are support EDM sensitive information types:
 - Microsoft Cloud App Security DLP policies
 - Server-side auto-labeling policies
 
-EDM sensitive information types for following scenarios are currently in development, but not yet available:
-
-- Auto-classification of sensitivity labels and retention labels
-
 #### To create a DLP policy with EDM
 
 1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).
