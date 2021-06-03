@@ -55,6 +55,8 @@ We've added a couple of new categories to Search functionality.
 
 - **Setup and onboarding**: Find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features.
 
+For more information about search, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
+
 ## May 2021
 
 ### Admin mobile app
