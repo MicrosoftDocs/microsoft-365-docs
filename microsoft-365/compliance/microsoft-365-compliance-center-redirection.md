@@ -9,7 +9,7 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-description: Learn about managing permissions in the Microsoft 365 compliance center.
+description: Learn about automatically redirecting Office 365 Security and Compliance center users to the Microsoft 365 compliance center..
 ms.collection: M365-security-compliance
 ---
 
