@@ -30,7 +30,7 @@ ms.custom: api
 
 ## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
 
-Defender for Endpoint supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
+Defender for Endpoint supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/event-hubs/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
@@ -45,5 +45,5 @@ Topic | Description
 
 ## Related topics
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
-- [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
-- [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs documentation](/azure/event-hubs/)
+- [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)

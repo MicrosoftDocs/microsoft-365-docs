@@ -6,11 +6,11 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 
 description: "Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution."
 ---
 
@@ -39,13 +39,13 @@ After you attach the SharePoint document library, you'll be able to view any cla
 ## Customize your Contracts tab tile view
 
 > [!NOTE]
-> This section references code examples that are contained in the **ContractCard.json** file that is included in the **solutionfiles** zip file.
+> This section references code examples that are contained in the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file that is included in the [Contracts Management Solution Assets repository](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management).
 
 While Teams lets you view your contracts in a tile view, you might want to customize it to view the contract data you want to make visible in the contract card. For example, for the **Contracts** tab, it is important for members to see the client, contractor, and fee amount on the contract card. All of these fields were extracted from each contract through your SharePoint Syntex model that was applied to your document library. You also want to be able to change the tile header bar to different colors for each status so that members can easily see where the contract is in the approval process. For example, all approved contracts will have a blue header bar.
 
    ![List view.](../media/content-understanding/tile.png)
 
-The custom tile view you use requires you to make changes to the JSON file used to format the current tile view. You can reference the JSON file used to create the card view by downloading the **ContractCard.json** file. In the following sections, you'll see specific sections of the code for features that are in the contract cards.
+The custom tile view you use requires you to make changes to the JSON file used to format the current tile view. You can reference the JSON file used to create the card view by looking at the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file. In the following sections, you'll see specific sections of the code for features that are in the contract cards.
 
 If you want to see or make changes to the JSON code for your view in your Teams channel, in the Teams channel, select the view drop-down menu, and then select **Format current view**.
 
@@ -53,7 +53,7 @@ If you want to see or make changes to the JSON code for your view in your Teams 
 
 ## Card size and shape
 
-In the **ContractCard.json** file that you downloaded in the reference zip file, look at the following section to see the code for how the size and shape of the card is formatted.
+In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, look at the following section to see the code for how the size and shape of the card is formatted.
 
 ```JSON
                   {
@@ -79,7 +79,7 @@ In the **ContractCard.json** file that you downloaded in the reference zip file,
 
 ## Contract status
 
-The following code lets you define the status of each title card. Note that each status value (*New*, *In review*, *Approved*, and *Rejected*) will display a different color code for each. In the **ContractCard.json** file that you downloaded, look at the section that defines the status.
+The following code lets you define the status of each title card. Note that each status value (*New*, *In review*, *Approved*, and *Rejected*) will display a different color code for each. In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, look at the section that defines the status.
 
 ```JSON
           {
@@ -104,7 +104,7 @@ The following code lets you define the status of each title card. Note that each
 
 Each contract card will display three fields that were extracted for each contract (*Client*, *Contractor*, and *Fee Amount*). Additionally, you also want to display the time/date that the file was classified by the SharePoint Syntex model used to identify it. 
 
-In the **ContractCard.json** file that you downloaded, the following sections define each of these.
+In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file, the following sections define each of these.
 
 ### Client
 

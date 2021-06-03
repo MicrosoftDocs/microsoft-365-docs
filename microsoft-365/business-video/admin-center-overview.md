@@ -20,17 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn more about the Microsoft 365 admin center."
+description: "Use either simplified view in Microsoft 365 to manage common tasks or dashboard view for more complex settings and tasks."
 ---
 
 # Overview of the Microsoft 365 admin center
 
-- [The admin center in simplified view](#the-admin-center-in-simplified-view)
-- [The admin center in dashboard view](#the-admin-center-in-dashboard-view)
+- [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
+- [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
 
 The Microsoft 365 admin center has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
-## The admin center in simplified view
+## Watch: The admin center in simplified view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -52,7 +52,7 @@ On the **Learn** tab, browse videos and articles about the admin center and othe
 
 If you need assistance, select **Help & support**. Search for topic you want help with and view the recommended solution or select the headset to contact support, and then enter your question and contact information. 
 
-## The admin center in dashboard view
+## Watch: The admin center in dashboard view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -183,4 +183,10 @@ The Microsoft 365 admin center is fully localized in 40 languages.
 |Vietnamese | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## Related content
+
+[What is a Microsoft 365 admin?](what-is-admin.md) (video)\
+[Add an admin](add-admin.md) (video)\
+[Customize the Microsoft 365 theme for your organization](../admin/setup/customize-your-organization-theme.md) (article)
   

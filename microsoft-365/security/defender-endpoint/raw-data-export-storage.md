@@ -29,13 +29,13 @@ ms.custom: api
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## Before you begin:
+## Before you begin
 
-1. Create a [Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) in your tenant.
+1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
 
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.
 
-## Enable raw data streaming:
+## Enable raw data streaming
 
 1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
 
@@ -53,7 +53,7 @@ ms.custom: api
 
 7. Choose the events you want to stream and click **Save**.
 
-## The schema of the events in the Storage account:
+## The schema of the events in the Storage account
 
 - A blob container will be created for each event type: 
 
@@ -78,7 +78,7 @@ ms.custom: api
 
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
 
-## Data types mapping:
+## Data types mapping
 
 In order to get the data types for our events properties do the following:
 
@@ -100,4 +100,4 @@ In order to get the data types for our events properties do the following:
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
-- [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)

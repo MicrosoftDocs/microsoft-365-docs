@@ -24,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: "Change your initial email address to a friendly email address like tom@fourthcoffee.com. To do this, you need to buy a domain name, and add it to Microsoft 365. "
+description: "Change your email address to a friendly email address like tom@fourthcoffee.com by buying a domain name and adding it to Microsoft 365."
 ---
 
 # Change your email address to use your custom domain
@@ -49,7 +49,7 @@ Your initial email address in Office 365 operated by 21Vianet includes partner.o
 
 ::: moniker-end
 
-When you change your domain's email to come to Microsoft 365, by updating your domain's MX record during setup, ALL email sent to that domain will start coming to Microsoft 365. Make sure you've added users and created mailboxes in Microsoft 365 for everyone who has email on your domain BEFORE you change the MX record. Don't want to move email for everyone on your domain to Microsoft 365? You can take steps to [pilot Microsoft 365 with just a few email addresses instead](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide).
+When you change your domain's email to come to Microsoft 365, by updating your domain's MX record during setup, ALL email sent to that domain will start coming to Microsoft 365. Make sure you've added users and created mailboxes in Microsoft 365 for everyone who has email on your domain BEFORE you change the MX record. Don't want to move email for everyone on your domain to Microsoft 365? You can take steps to [pilot Microsoft 365 with just a few email addresses instead](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## Change your email address to use your custom domain using the Microsoft 365 admin center
 
@@ -84,6 +84,8 @@ You'll be guided to get everything set up correctly with your domain in Microsof
 > [!NOTE]
 > If you are not using an Exchange license, you cannot use the domain to send or receive emails from the Microsoft 365 tenant.
   
-## Related articles
+## Related content
 
-[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
+[Manage domains](../get-help-with-domains/index.yml) (link page)\
+[Domains FAQ](../setup/domains-faq.yml) (article)

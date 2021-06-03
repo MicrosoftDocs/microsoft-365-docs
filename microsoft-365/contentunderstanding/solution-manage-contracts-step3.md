@@ -6,11 +6,11 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 
 description: "Learn how to use Power Automate to create your flow to process your contracts by using a Microsoft 365 solution."
 ---
 
@@ -31,11 +31,11 @@ The following diagram shows the Power Automate flow for the contract management 
 
 ## Prepare your contract for review
 
-When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to "In review."
+When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.
 
 ![Update status.](../media/content-understanding/flow-overview.png)
 
-After checking out the file, change the status value to "In review."
+After checking out the file, change the status value to **In review**.
 
 ![In review status.](../media/content-understanding/in-review.png)
 
@@ -136,7 +136,7 @@ When a contract has been approved, the following things occur:
 
    ![Card status approved.](../media/content-understanding/approved-contracts-tab.png)
 
-- In your flow, the status is changed to "Approved."
+- In your flow, the status is changed to **Approved**.
 
    ![Flow status approved.](../media/content-understanding/status-approved.png)
 

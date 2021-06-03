@@ -46,7 +46,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|Conversation Body||Conversation body of the item.|
 |Conversation Topic|Conversation Topic||Conversation topic of the item.|
-|Conversation ID|ConversationId|Email_conversation_ID|Conversation Id from the message.|
+|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
@@ -69,12 +69,13 @@ The following table lists the metadata fields for documents in a review set in a
 |Dominant theme|DominantTheme|Dominant_theme|Dominant theme as calculated for analytics.|
 |Duplicate subset||Duplicate_subset|Group ID for exact duplicates.|
 |EmailAction*||Email_action|Values are **None**, **Reply**, or **Forward**; based on the subject line of a message.|
-|Email Delivery Receipt Requested||Email_delivery_receipt_requested|Email address supplied in Internet Headers for delivery receipt.|
+|Email Delivery Receipt Requested||Email_delivery_receipt|Email address supplied in Internet Headers for delivery receipt.|
 |Importance|EmailImportance|Email_importance|Importance of the message: **0** - Low; **1** - Normal; **2** - High|
+|Ignored processing errors|ErrorIgnored|Error_Ignored|Error was ignored and not remediated.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|The full set of email headers from the email message|
 |EmailLevel*||Email_level|Indicates a message's level within the email thread it belongs to; attachments inherit its parent message's value.|
 |Email Message Id||Email_message_ID|Internet message Id from the message.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|Email address supplied in Internet Headers for read receipt.|
+|EmailReadReceiptRequested||Email_read_receipt|Email address supplied in Internet Headers for read receipt.|
 |Email Security|EmailSecurity|Email_security|Security setting of the message: **0** - None; **1** - Signed; **2** -  Encrypted; **3** -  Encrypted and signed.|
 |Email Sensitivity|EmailSensitivity|email_sensitivity|Sensitivity setting of the message: **0** - None; **1** Personal; **2** - Private; **3** - CompanyConfidential.|
 |Email set|EmailSet|Email_set|Group ID for all messages in the same email set.|
@@ -84,14 +85,14 @@ The following table lists the metadata fields for documents in a review set in a
 |||Extracted_text_path|The path to the extracted text file in the export.|
 |ExtractedTextLength*||Extracted_text_length|Number of characters in the extracted text.|
 |FamilyDuplicateSet*||Family_duplicate_set|Numeric identifier for families that are exact duplicates of each other (same content and all the same attachments).|
-|Family ID|FamilyId|Family_ID|Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items.|
+|Family ID|FamilyId|Family_ID|Groups together all items for email. This includes the message and all attachments and extracted items.|
 |Family Size||Family_size|Number of documents in the family.|
 |File class|FileClass|File_class|For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email** or **Attachment**.|
 |File ID|FileId|File_ID|Document identifier unique within the case.|
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
-|Group Id|GroupID||Group ID for grouped content.|
+|Group Id|Group Id|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
 |Has attachment|HasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
@@ -122,12 +123,13 @@ The following table lists the metadata fields for documents in a review set in a
 |NativeSHA256||Native_SHA_256|SHA256 hash (256-bit hash value) of the file stream.|
 |ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets.|
 |ND/ET Sort: Including attachments|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of an email thread (ET) set and near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets. Each email item in an ET set is followed by its appropriate attachments.|
+|Near Duplicate Set||ND_set|Items that are similar to the pivot document share the same ND_set.|
 |O365 authors||O365_authors|Author from SharePoint.|
 |O365 created by||O365_created_by|Created by from SharePoint.|
 |O365 date created||O365_date_created|Created date from SharePoint.|
 |O365 date modified||O365_date_modified|Last modified date from SharePoint.|
 |O365 modified by||O365_modified_by|Modified by from SharePoint.|
-|Parent ID|ParentId|Container_ID|Id of the item's parent.|
+|Parent ID|ParentId|Parent_ID|Id of the item's parent.|
 |ParentNode||Parent_node|The closest preceding email message in the email thread.|
 |Participant domains|ParticipantDomains|Email_participant_domains|List of all domains of participants of a message.|
 |Participants|Participants|Email_participants|List of all participants of a message; for example, Sender, To, Cc, Bcc.|
@@ -151,6 +153,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Sender domain|SenderDomain|Email_sender_domain|Domain of the sender.|
 |Sent|Sent|Email_date_sent|Sent date of the message.|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological; documents: pivot first then by descending similarity score.|
+|Set ID||Set_ID|Documents of similar content (ND_set) or email within the same email thread (Email_set) share the same Set_ID.|
 |SimilarityPercent||Similarity_percent|Indicates how similar a document is to the pivot of the near duplicate set.|
 |Native file size|Size|Native_size|Number of bytes of the native item.|
 |Subject|Subject|Email_subject|Subject of the message.|

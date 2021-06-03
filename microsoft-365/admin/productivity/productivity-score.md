@@ -18,7 +18,7 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: "Overview of Microsoft productivity score."
+description: "Learn how Microsoft Productivity Score reflects people and technology experience measurements and compare to organizations of similar size."
 ---
 
 # Microsoft Productivity Score 
@@ -39,35 +39,9 @@ We provide metrics, insights, and recommendations in two areas:
 
 - **Technology experiences:** Your organization depends on reliable and well performing technology as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
+## Before you begin
+
 See [What is Endpoint Analytics](/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](../../enterprise/microsoft-365-networking-overview.md).
-  
-
-## How the score is calculated
-
-Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 800.
-
-### Score categories 
-
-- Communication (100 points)
-- Meetings (100 points)
-- Content collaboration (100 points)
-- Teamwork (100 points)
-- Mobility (100 points)
-- Endpoint analytics (100 points)
-- Network connectivity (100 points)
-- Microsoft 365 Apps Health (100 points)
-- **Total possible = 800 points**
- 
-In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
-
-### Products included in Productivity Score 
-
-Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
-
-Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
-
-
-## Prerequisites 
 
 For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/). 
 
@@ -93,6 +67,30 @@ The role-based access control model for Productivity Score helps organizations f
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Productivity Score**.
+  
+## How the score is calculated
+
+Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 800.
+
+### Score categories 
+
+- Communication (100 points)
+- Meetings (100 points)
+- Content collaboration (100 points)
+- Teamwork (100 points)
+- Mobility (100 points)
+- Endpoint analytics (100 points)
+- Network connectivity (100 points)
+- Microsoft 365 Apps Health (100 points)
+- **Total possible = 800 points**
+ 
+In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
+
+### Products included in Productivity Score 
+
+Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
+
+Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
 ## Interpreting your organization's Productivity Score 
 
@@ -156,6 +154,6 @@ Share your thoughts about Productivity Score and your ideas about how to improve
 
 ## Related content
 
-[Monitor Microsoft 365 activity by using reports](/microsoft-365/admin/activity-reports/activity-reports) (article)\
-[Enable Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (article)\
-[Overview of the Microsoft 365 admin center](/microsoft-365/business-video/admin-center-overview) (video)
+[Monitor Microsoft 365 activity by using reports](../../admin/activity-reports/activity-reports.md) (article)\
+[Enable Microsoft 365 usage analytics](../../admin/usage-analytics/enable-usage-analytics.md) (article)\
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)

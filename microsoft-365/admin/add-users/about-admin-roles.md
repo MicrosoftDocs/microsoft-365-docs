@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin can open support tickets through the admin center."
+description: "Admin roles such as the Service admin map to business functions and give permissions to do specific tasks in the admin center."
 ---
 
 # About admin roles
@@ -38,7 +38,7 @@ Looking for the full list of detailed Intune role descriptions you can manage in
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
-### Watch: What is an admin?
+## Watch: What is an admin?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -88,12 +88,9 @@ A partner can assign these roles:
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
   
-## Related articles
+## Related content
 
-[Assign admin roles](assign-admin-roles.md)
-
-[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md)
-
-[Exchange Online admin role](about-exchange-online-admin-role.md)
-  
-[Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md)
+[Assign admin roles](assign-admin-roles.md) (article)\
+[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md) (article)\
+[Exchange Online admin role](about-exchange-online-admin-role.md) (article)\ 
+[Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md) (article)
