@@ -33,22 +33,22 @@ Conducting a thorough security product evaluation can help give you informed dec
 
 The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation experience is designed to eliminate the complexities of device and environment configuration so that you can focus on evaluating the capabilities of Microsoft Defender for Office 365. With evaluation mode, all messages sent to Exchange Online mailboxes can be evaluated without pointing MX records to Microsoft. The feature only applies to email protection and not to Office Clients like Word, SharePoint, or Teams.
 
-If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Office 365 Security & Compliance center (https://protection.office.com/homepage). You'll enjoy the quick set-up and you can easily turn it off if necessary.
+If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the [Microsoft 365 security center](https://security.microsoft.com). You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 > [!NOTE]
-> If you're in the unified Microsoft 365 security portal (security.microsoft.com) you can start a Defender for Office 365 evaluation here: Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
+> If you're in the unified [Microsoft 365 security center](https://security.microsoft.com) portal you can start a Defender for Office 365 evaluation here: Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
 
 ## How the evaluation works
 
 Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages. You are not required to change your MX record configuration.
 
-With evaluation mode, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [mailbox intelligence based impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies are created in non-enforcement mode in the background and are not visible to you.
+With evaluation mode, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [mailbox intelligence based impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies is created in non-enforcement mode in the background and are not visible to you.
 
 As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
-Enabled Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; MDO policies setup as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
+Enabled Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; MDO policies set up as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass all EOP filtering by creating a transport rule to set the Spam Confidence Level (SCL) to -1. See [Use the EAC to create a mail flow rule that sets the SCL of a message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) for details.
 
-When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked if the policies were implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Threat Explorer.
+When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked if the policies were implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Explorer.
 
 With the simplified set-up experience, you can focus on:
 
@@ -137,10 +137,10 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation
 
-Find the Microsoft Defender for Office 365 evaluation set-up card in the Office 365 Security & Compliance center (https://protection.office.com/homepage) from three access points:
+Find the Microsoft Defender for Office 365 evaluation set-up card in the [Microsoft 365 security center](https://security.microsoft.com/homepage) from three access points:
 
-- Threat management > Dashboard
-- Threat management > Policy
+- Endpoints > Vulnerability Management > Dashboard
+- Email & collaboration > Policies & rules
 - Reports > Dashboard
 
 ## Setting up the evaluation
@@ -157,7 +157,7 @@ Your Microsoft Defender for Office 365 evaluation report is generated once per d
 
 ### Exchange rules (optional)
 
-If you have an existing gateway, enabling evaluation mode will activate enhanced filtering for connectors. This improves filtering accuracy by altering the incoming sender IP address. This may change the filter verdicts and if you are not bypassing Exchange Online Protection this may alter deliverability for certain messages. In this case you might want to temporarily bypass filtering to analyze impact. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see Mail flow rules (transport rules) in Exchange Online.
+If you have an existing gateway, enabling evaluation mode will activate enhanced filtering for connectors. This improves filtering accuracy by altering the incoming sender IP address. This may change the filter verdicts and if you are not bypassing Exchange Online Protection this may alter deliverability for certain messages. In this case, you might want to temporarily bypass filtering to analyze impact. To bypass, navigate to the Exchange admin center and create a policy of SCL -1 (if you don't already have one). For details on the rule components and how they work, see [Mail flow rules (transport rules)](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) in Exchange Online.
 
 ## Evaluate capabilities
 
