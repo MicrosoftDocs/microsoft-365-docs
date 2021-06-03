@@ -27,13 +27,15 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 [Microsoft Compliance Manager](compliance-manager.md) provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
-Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager updates its templates when the underlying laws or regulations change. Learn more about how [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
+Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 View detailed guidance on [working with templates](compliance-manager-templates.md).
 
 ## List of templates and where to find them
 
 Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
+
+### Where to find your templates
 
 To review the templates available to your organization in Compliance Manager, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
