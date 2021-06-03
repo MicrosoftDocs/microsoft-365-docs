@@ -11,15 +11,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.reviewer: 
+ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.date: 06/02/2021
 ---
 
 # Detect and block potentially unwanted applications
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -184,9 +183,8 @@ If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md
 DeviceEvents
 | where ActionType == "AntivirusDetection"
 | extend x = parse_json(AdditionalFields)
-| evaluate bag_unpack(x)
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName = tostring(x.ThreatName), WasExecutingWhileDetected = tostring(x.WasExecutingWhileDetected), WasRemediated = tostring(x.WasRemediated)
 | where ThreatName startswith_cs 'PUA:'
-| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
 To learn more about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
