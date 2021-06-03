@@ -28,7 +28,7 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Security center](https://security.microsoft.com) will let you see and use the email entity page..
+Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Security center](https://security.microsoft.com) will let you see and use the email entity page.
 
 |Center|URL|Navigation|
 |---|---|---|
@@ -37,12 +37,12 @@ Either of the existing [Security & Compliance center](https://protection.office.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You will see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="You'll see a gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience.":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="This graphic of the email entity page focuses on headings that you'll see. Note the email header is displayed here.":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view Threat Explorer. The admin must be a member of Global admin or global reader, or Security admin or security reader.
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or security reader.
 
 ## Read the email entity page
 
@@ -67,7 +67,7 @@ The tabs along the top of the entity page will allow you to investigate email ef
 1. **Timeline**: The timeline view for an email (per **Explorer** timeline) shows the original delivery to post-delivery events that happen on an email. For emails that have no post-delivery actions, the view shows the original delivery row in timeline view. Events like: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
 2. **Analysis**: Analysis shows fields that help admins analyze an email in depth. For cases where admins need to understand more about detection, sender / recipient, and email authentication details, they should use the Analysis tab. Links for Attachments and URLs are also found on this page, under 'Related Entities'. Both attachments and identified threats are numbered here, and clicking will take you straight to the Attachments and URL pages. This tab also has a View header option to *show the email header*. Admins can compare any detail from email headers, side by side with information on the main panel, for clarity.
 3. **Attachments**: This examines attachments found in the email with other details found on attachments. The number of attachments shown is currently limited to 10. Notice that detonation details for attachments found to be malicious is also shown here.
-4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs which were found to be malicious and detonated will also be shown here.
+4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated will also be shown here.
 5. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
 
 ## New to the email entity page
@@ -76,7 +76,7 @@ There are new capabilities that come with this email entity page. Here's the lis
 
 ### Email preview for Cloud mailboxes
 
-Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never actually made it into the mailbox. As a result, admins won't be able to preview those emails either.
+Admins can preview emails in Cloud mailboxes, ***if*** the mails are still present in the Cloud. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), emails are no longer present in the Cloud location. In that case, admins won't be able to preview those specific mails. Emails that were dropped, or where delivery failed, never made it into the mailbox. As a result, admins won't be able to preview those emails either.
 
 > [!WARNING]
 > Previewing emails requires a special role called ***Preview*** to be assigned to admins. You can add this role by going to **Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, or **Permissions** in *protection.office.com*. Add the ***Preview*** role to any of the role groups, or a copy of a role group that allows admins in your organization to work in **Explorer**.
@@ -141,10 +141,10 @@ Users will see enriched detonation details for known malicious attachments or hy
   - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.
   - None: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.
 
-- Domain-based Message Authentication, Reporting and Conformance (**DMARC**):
+- Domain-based Message Authentication, Reporting, and Conformance (**DMARC**):
   - Pass: Indicates the DMARC check for the message passed.
   - Fail: Indicates the DMARC check for the message failed.
   - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
-*Composite Authentication*: This is a value is used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+*Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
