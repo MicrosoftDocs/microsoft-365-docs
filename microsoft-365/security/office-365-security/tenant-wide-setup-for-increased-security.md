@@ -61,7 +61,7 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 
 ## View dashboards and reports in the Microsoft 365 security center
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see [Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md).
+Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see [Reports in the Microsoft 365 security center](../../compliance/reports-in-security-and-compliance.md).
 
 <br>
 

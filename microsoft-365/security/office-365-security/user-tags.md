@@ -51,7 +51,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/userTags>.
 
 - You need to be assigned permissions in the Microsoft 365 security center before you can do the procedures in this article:
   - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.

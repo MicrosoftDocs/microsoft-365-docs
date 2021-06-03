@@ -46,7 +46,7 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, go to the Microsoft 365 security center (<https://protection.office.com>) and choose **Threat management** \> **Threat tracker**.
+To view and use your Threat Trackers for your organization, go to the Microsoft 365 security center (<https://protection.office.com>) and choose **Email & collaboration** \> **Threat tracker**.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

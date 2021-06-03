@@ -37,7 +37,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **ATP Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
 
 - To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -49,7 +49,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 ## Step 1: Use the Microsoft 365 security center to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Safe attachments**, and click **Global settings**.
 
 2. In the **Global settings** fly out that appears, go to the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting. Move the toggle to the right ![Toggle on](../../media/scc-toggle-on.png) to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 
@@ -95,7 +95,7 @@ You can create an alert policy that notifies you and other admins when Safe Atta
    - **Name**: Type a unique and descriptive name. For example, Malicious Files in Libraries.
    - **Description**: Type an optional description. For example, Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams.
    - **Severity**: Leave the default value **Low** selected, or select **Medium** or **High**.
-   - **Select a category**: Select **Threat management**.
+   - **Category**: Select **Threat management**.
 
    When you're finished, click **Next**.
 
@@ -135,7 +135,7 @@ For detailed syntax and parameter information, see [New-ActivityAlert](/powershe
 
 - To verify that you've successfully turned on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, use either of the following steps:
 
-  - In the [Microsoft 365 security center](https://security.microsoft.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, select **Global settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
+  - In the [Microsoft 365 security center](https://security.microsoft.com), go to **Policies & rules** \> **Threat Policies** \> **Safe attachments**, select **Global settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
 
   - In Exchange Online PowerShell, run the following command to verify the property setting:
 
