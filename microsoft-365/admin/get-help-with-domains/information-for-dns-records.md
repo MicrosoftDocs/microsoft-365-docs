@@ -89,6 +89,4 @@ description: "Learn to find the values/information you need to create DNS record
     
     The groups of DNS records that are listed on the page depend on your choices listed under **Domain purpose**.
     
-4. Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.
-    
-5. Follow the steps for creating the records at your DNS host.
+4. Go to [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md), and follow the steps to add records at your DNS host's website.
