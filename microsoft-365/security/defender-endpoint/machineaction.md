@@ -48,6 +48,9 @@ ms.technology: mde
 | [Run antivirus scan](run-av-scan.md)                              | [Machine Action](machineaction.md) | Run an AV scan using Windows Defender (when applicable).    |
 | [Offboard machine](offboard-machine-api.md)                       | [Machine Action](machineaction.md) | Offboard [machine](machine.md) from Microsoft Defender for Endpoint. |
 | [Stop and quarantine file](stop-and-quarantine-file.md)           | [Machine Action](machineaction.md) | Stop execution of a file on a machine and delete it.        |
+| [Run live response]                      | [Machine Action](machineaction.md)  | Runs a sequence of live response commands on a device                       |
+| [Get live response result download link | URL entity      | Retrieves specific live response command result download link by its index. |
+| Cancel                                 | [Machine Action](machineaction.md)  | Cancel an active machine action.                                            |
 
 <br>
 
@@ -66,6 +69,7 @@ ms.technology: mde
 | creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | The last date and time when the action status was updated.                                                                                                                                                     |
 | relatedFileInfo     | Class          | Contains two Properties. string ```fileIdentifier```, Enum ```fileIdentifierType``` with the possible values: "Sha1", "Sha256" and "Md5".                                                                         |
+| commands     | Live Response command collection | Array of Command objects. See live response API[link]. |
 
 
 ## Json representation

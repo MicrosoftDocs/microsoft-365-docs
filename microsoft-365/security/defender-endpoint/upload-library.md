@@ -1,5 +1,5 @@
 ---
-title: Upload to library 
+title: Upload files to the live response library 
 description: Learn how to upload a file to the live response library.
 keywords: apis, graph api, supported apis, upload to library
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-#  Upload to library  
+#  Upload files to the live response library  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
