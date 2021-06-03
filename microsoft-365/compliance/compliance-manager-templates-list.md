@@ -38,7 +38,7 @@ Below is the complete list of templates in Compliance Manager. The links in the 
 To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
-One or more of these templates will be available based on your [licensing agreement](compliance-manager-templates.md#template-availability-and-licensing). The Data Protection Baseline template is included for all users.
+One or more of these templates will be available based on your licensing agreement. The Data Protection Baseline template is included for all users.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [European Union GDPR](/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
@@ -49,7 +49,7 @@ One or more of these templates will be available based on your [licensing agreem
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
-These templates may be purchased by your organization. Refer to the [service terms](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) for more information.
+These templates may be purchased by your organization.
 
 ### Global
 - Guidelines and Functional Requirements for Electronic Records Management Systems (ICA Module 2) (Microsoft 365)
