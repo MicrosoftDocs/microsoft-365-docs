@@ -3991,32 +3991,32 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
       "redirect_document_id": true
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-prepare.md",
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-prepare.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
       "redirect_document_id": true
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-setup.md",
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-setup.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
       "redirect_document_id": true
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-setup.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-setup.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
       "redirect_document_id": true
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-onboard.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
       "redirect_document_id": true
     },
     {
-      "source_path": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-onboard.md",
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
       "redirect_document_id": true
     },
