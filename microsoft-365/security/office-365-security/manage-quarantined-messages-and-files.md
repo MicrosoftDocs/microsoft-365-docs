@@ -37,11 +37,11 @@ Admins can view, release, and delete all types of quarantined messages for all u
 
 Admins in organizations with Microsoft Defender for Office 365 can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
-You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+You view and manage quarantined messages in the Microsoft 365 security center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- To open the Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
+- To open the Microsoft 365 security center, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -64,13 +64,13 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
   When a message expires from quarantine, you can't recover it.
 
-## Use the Security & Compliance Center to manage quarantined email messages
+## Use the Microsoft 365 security center to manage quarantined email messages
 
 ### View quarantined email
 
-1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 
-2. Verify that **View quarantined** is set to the default value **email**.
+2. Verify that **View quarantined** is set to the default value **emails**.
 
 3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
@@ -221,7 +221,7 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 
 When you're finished, click **Close**.
 
-## Microsoft Defender for Office 365 Only: Use the Security & Compliance Center to manage quarantined files
+## Microsoft Defender for Office 365 Only: Use the Microsoft 365 security center to manage quarantined files
 
 > [!NOTE]
 > The procedures for quarantined files in this section are available only to Microsoft Defender for Office 365 Plan 1 and Plan 2 subscribers.
@@ -230,7 +230,7 @@ In organizations with Defender for Office 365, admins can manage quarantined fil
 
 ### View quarantined files
 
-1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 
 2. Change **View quarantined** to the value **files**. You can sort on a field by clicking on an available column header.
 

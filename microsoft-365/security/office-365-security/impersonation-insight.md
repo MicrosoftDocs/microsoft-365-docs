@@ -47,24 +47,23 @@ You can use the impersonation insight to quickly identify messages from imperson
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
-- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+- You need to be assigned permissions in the Microsoft 365 security center before you can do the procedures in this article:
   - **Organization Management**
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection is not enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## Open the impersonation insight in the Security & Compliance Center
+## Open the impersonation insight in the Microsoft 365 security center
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
-
+1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing**.
 2. On the main **Anti-phishing page**, the impersonation insight looks like this:
 
    This insight has two modes:

@@ -34,11 +34,11 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
-As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam or bulk email. As of April 2020, you can view or delete quarantined phishing (not high confidence phishing) messages where you are a recipient. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam or bulk email. As of April 2020, you can view or delete quarantined phishing (not high confidence phishing) messages where you are a recipient. You view and manage your quarantined messages in the Microsoft 365 security center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 
-- To open the Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
+- To open the Microsoft 365 security center, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -50,7 +50,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
 ## View your quarantined messages
 
-1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 security center, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 
 2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 

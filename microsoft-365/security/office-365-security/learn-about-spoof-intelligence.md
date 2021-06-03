@@ -49,13 +49,13 @@ When a sender spoofs an email address, they appear to be a user in one of your o
   - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
   - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
-You can use the **spoof intelligence insight** in the Security & Compliance Center to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
+You can use the **spoof intelligence insight** in the Microsoft 365 security center to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
 
 By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
 
 Likewise, you can review spoofed senders that were allowed by spoof intelligence and manually block those senders from the spoof intelligence insight.
 
-The rest of this article explains how to use the spoof intelligence insight in the Security & Compliance Center and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+The rest of this article explains how to use the spoof intelligence insight in the Microsoft 365 security center and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 > [!NOTE]
 >
@@ -67,7 +67,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

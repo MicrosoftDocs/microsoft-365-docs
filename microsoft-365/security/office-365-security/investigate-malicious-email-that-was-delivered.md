@@ -47,7 +47,7 @@ Make sure that the following requirements are met:
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Security & Compliance Center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). For some actions, you must also have a new Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Microsoft 365 security center. See [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md). For some actions, you must also have a new Preview role assigned.
 
 ### Preview role permissions
 
@@ -64,9 +64,9 @@ To perform certain actions, such as viewing message headers or downloading email
 
 > [!NOTE]
 > *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365 (at <https://protection.office.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
-> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Security & Compliance Center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in the Microsoft 365 security center (<https://protection.office.com>). To learn more about roles and permissions, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Security & Compliance Center (<https://protection.office.com>). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Office 365 Microsoft 365 security center (<https://protection.office.com>). Go to **Search** > **Audit log search** and filter on the admin name in Search section. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -75,9 +75,9 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include Zapped items.  This applies to all views, for example malware or phish views. To include Zapped items you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including Zapped items.
 
-1. **Navigate to Threat Explorer**: Go to <https://protection.office.com> and sign in using your work or school account for Office 365. This takes you to the Security & Compliance Center.
+1. **Navigate to Threat Explorer**: Go to <https://protection.office.com> and sign in using your work or school account for Office 365. This takes you to the Microsoft 365 security center.
 
-2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
+2. In the left navigation quick-launch, choose **Email & collaboration** \> **Explorer**.
 
     ![Explorer with Delivery Action and Delivery Location fields.](../../media/ThreatExFields.PNG)
 

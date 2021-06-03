@@ -45,7 +45,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the **Security & Compliance Center** at <https://protection.office.com>.
+1. Open the **Microsoft 365 security center** at <https://security.microsoft.com>.
 
 2. Navigate to **Search** and select **Audit log search**.
 
@@ -138,7 +138,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 
 ## Determine the scope of the attack
 
-After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 security center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [Mailbox auditing](../../compliance/enable-mailbox-auditing.md) and [Activity auditing for admins and users](../../compliance/turn-audit-log-search-on-or-off.md) must have been enabled prior to the attack for you to get this information.
