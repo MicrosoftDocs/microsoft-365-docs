@@ -19,7 +19,6 @@ Your gateway to the Microsoft Managed Desktop service is [Microsoft Endpoint Man
 > [!NOTE]
 > In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) the following browsers are supported:
 > - Microsoft Edge (latest version)
-> - Microsoft Internet Explorer 11
 > - Safari (latest version, Mac only)
 > - Chrome (latest version)
 > - Firefox (latest version)
