@@ -19,7 +19,7 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
-## April 2021
+## May 2021
 New or changed article | Description
 --- | ---
 [Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | Updated article
