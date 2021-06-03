@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: "The new predictive coding module in Advanced eDiscovery uses machine learning to analyze items in a review set to predictive which the items that are relevant to your case or investigation."
 ---
 
-# Learn about predictive coding in Advanced eDiscovery
+# Learn about predictive coding in Advanced eDiscovery (preview)
 
 The predictive coding module in Advanced eDiscovery uses the intelligent, machine learning capabilities in Advanced eDiscovery to help you reduce the amount of content to review. Predictive coding helps you reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set.
 

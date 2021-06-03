@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: ""
 ---
 
-# Create a predictive coding model
+# Create a predictive coding model (preview)
 
 The first step in using the machine learning capabilities of predictive coding in Advanced eDiscovery is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
 

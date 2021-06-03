@@ -711,7 +711,7 @@
               href: using-relevance.md
             - name: Retirement of the Relevance module
               href: relevance-module-retirement.md  
-        - name: Use predictive coding
+        - name: Use predictive coding (preview)
           items: 
             - name: Learn about predictive coding
               href: predictive-coding-overview.md
