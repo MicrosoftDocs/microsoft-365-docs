@@ -53,7 +53,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com/>. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
+- You open the security center at <https://security.microsoft.com>. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -71,7 +71,7 @@ The **Standard** and **Strict** policy setting values that are used as baselines
 
 ## Use the configuration analyzer in the security center
 
-In the security center, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Configuration analyzer**.
+In the security center, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Templated policies** section \> **Configuration analyzer**.
 
 The configuration analyzer has two main tabs:
 
