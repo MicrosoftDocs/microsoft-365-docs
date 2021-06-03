@@ -18,7 +18,7 @@ The Staff page in Bookings is where you create your staffing list and manage sta
 
 Although Bookings is a feature of Microsoft 365, not all of your staff members are required to have a Microsoft 365 account. All staff members must have a valid email address so they can receive bookings and schedule changes.
 
-## Watch: Add your staff in Microsoft Bookings
+## Watch: Add your staff to Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
