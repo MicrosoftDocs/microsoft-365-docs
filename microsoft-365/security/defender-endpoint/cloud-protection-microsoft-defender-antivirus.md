@@ -14,12 +14,10 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
+ms.date: 06/03/2021
 ---
 
-# Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+# Cloud-delivered protection and Microsoft Defender Antivirus
 
 **Applies to:**
 
