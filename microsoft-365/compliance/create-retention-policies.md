@@ -133,11 +133,12 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 4. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Define adaptive scope** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the scope types added. For example, if you only added a scope type of **User**, you will be able to select **Yammer user messages** but not **Yammer community messages**. 
+    
     - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
         
         By default, all communities and users are selected, but you can refine this by specifying communities and users to be included or excluded.
         
-        For Yammer private messages: 
+        For Yammer user messages: 
         - If you leave the default at **All**, Azure B2B guest users are not included. 
         - If you select **Choose user**, you can apply a retention policy to external users if you know their account.
 
@@ -180,6 +181,7 @@ Use the following instructions for retention policies that apply to any of these
 4. Depending on your selected scope:
     
     - If you chose **Adaptive**: On the **Define adaptive scope** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the scope types added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
+    
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](configure-retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](configure-retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
     Information specific to locations:
