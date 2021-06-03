@@ -57,8 +57,7 @@ Runs a sequence of live response commands on a device
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/apis-intro?view=o365-worldwide)
+including how to choose permissions, see [Get started](apis-intro.md).
 
 | PERMISSIONS                        |                      |                                           |
 |------------------------------------|----------------------|-------------------------------------------|
