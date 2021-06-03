@@ -164,7 +164,7 @@ Creating a custom Safe Links policy in the Microsoft 365 security center creates
 
 ## Use the Microsoft 365 security center to modify Safe Links policies
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to ***Policies & rules** \> **Threat Policies** \> **Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
@@ -197,7 +197,7 @@ Safe Links policies are displayed in the order they're processed (the first poli
 
 To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Microsoft 365 security center).
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat Policies** \> **Safe Links**.
 
 2. On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).
 
