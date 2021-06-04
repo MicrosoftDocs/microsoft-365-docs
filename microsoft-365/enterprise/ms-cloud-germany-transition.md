@@ -196,7 +196,7 @@ There are currently 39 services available as part of Office 365 services in the 
 
 If you are an Azure customer only, you can begin [migrating](/azure/germany/germany-migration-main) your Azure resources to another region today. 
 
-If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migration AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
+If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process for Office 365 services first to ensure the successful migration of Azure AD before you could begin the self-directed Azure migration. You must complete the Azure migration before finalizing your tenant migration to maintain your Azure workloads with your Azure AD and Office 365 organization. Refer to [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) for additional details.
 
 **Office 365**
 
@@ -298,7 +298,7 @@ The migration is designed to have minimal impact to end users/customers.
 
 ### Which customers are affected by the Azure Active Directory migration? 
 
-All customers of Office365 depend on Azure Active Directory to authenticate and store critical service components needed for operation of Microsoft hosted services. 
+All customers of Office 365 depend on Azure Active Directory to authenticate and store critical service components needed for operation of Microsoft hosted services. 
 
 
 ### What are the impacts of the Azure Active Directory Migration?
