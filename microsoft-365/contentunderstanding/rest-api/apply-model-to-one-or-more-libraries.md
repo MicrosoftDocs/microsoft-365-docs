@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - m365initiative-syntex
 localization_priority: Priority
-description: REST API - apply model
+description: REST API - Learn how to apply a document understanding model to one or more libraries.
 ---
 
 # Apply a model to one or more libraries
