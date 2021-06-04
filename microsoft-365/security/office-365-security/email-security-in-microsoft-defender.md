@@ -49,15 +49,14 @@ If you're in the converged Microsoft 365 security center (https://security.micro
 
 3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
-   Your detection technologies are now available as filters for the report.
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech_new.png" alt-text="malware detection technology":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Malware detection technologies](../../media/ExplorerEmailMalwareDetectionTech.png)
+   Your detection technologies are now available as filters for the report.
 
 4. Choose an option. Then select the **Refresh** button to apply that filter.
 
-   > [!div class="mx-imgBorder"]
-   > ![Selected detection technology](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2_new.png" alt-text="selected detection technology"::: 
 
    The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis. 
 
@@ -78,8 +77,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
 4. Select one or more options, such as **Blocked** and **Block overridden**, and then select the **Refresh** button on the same line as the options to apply that filter. (Don't refresh your browser window.)
 
-   > [!div class="mx-imgBorder"]
-   > ![URLs and click verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict_new.png" alt-text="URLs and click verdicts":::
 
    The report refreshes to show two different URL tables on the URL tab under the report:
 
