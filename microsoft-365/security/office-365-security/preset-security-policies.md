@@ -115,7 +115,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the security center to assign preset security policies to users
 
-1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Preset Security Policies**.
+1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Templated policies** section \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
