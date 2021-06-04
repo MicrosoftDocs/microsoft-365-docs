@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - Learn how to get information about a model and the library where it has been applied.
+description: Use REST API to get information about a model and the library where it has been applied.
 ---
 
 # Get model and primed library information
