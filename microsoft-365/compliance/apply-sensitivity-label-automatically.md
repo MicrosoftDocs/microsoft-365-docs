@@ -88,7 +88,7 @@ Use the following table to help you identify the differences in behavior for the
 |Exchange attachments checked for conditions|No | Yes|
 |Apply visual markings |Yes |Yes (email only) |
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
-|Label incoming email|No |Yes (encryption not applied) |
+|Label incoming email|No |Yes|
 
 \* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
 

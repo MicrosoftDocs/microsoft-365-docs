@@ -54,15 +54,12 @@ DLP protection are applied differently to Teams entities.
 |---------|---------|---------|
 |individual user accounts     |1:1/n chats         |yes         |
 |     |general chats         |no         |
-|     |shared channels         |no         |
 |     |private channels         |yes         |
 |security groups/distribution lists  | 1:1/n chats         |yes         |
 |     |general chats         |no         |
-|     |shared channels         |no      |
 |     |private channels         |yes        |
 |Microsoft 365 group    |1:1/n chats          |no         |
 |     |general chats          |yes        |
-|     |shared channels|yes |
 |     |private channels|no| 
 
 
