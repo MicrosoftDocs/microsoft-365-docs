@@ -86,7 +86,7 @@ Alert source | Prepended character
 Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> 
 Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Example: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 
