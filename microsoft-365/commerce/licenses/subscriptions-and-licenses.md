@@ -85,8 +85,6 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 - [Create a shared mailbox](../../admin/email/create-a-shared-mailbox.md)
 - [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md)
 - [Shared Mailboxes in Exchange Online](/exchange/collaboration-exo/shared-mailboxes) for all other Microsoft 365 plans.
-- [Create and Manage Room Mailboxes](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Manage Equipment Mailboxes](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## Who can assign licenses?
 
