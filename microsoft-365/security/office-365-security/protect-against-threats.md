@@ -172,6 +172,7 @@ To set up [Safe Attachments](safe-attachments.md), create at least one Safe Link
    - In the **Users and domains** page, enter the users, groups and domains, and then click **Next**.
 
    - On the **Settings** page, configure the following settings:
+  
      - In the **Safe attachments unknown malware response** section, choose **Block - Block current and future messages and attachments with detected malware.**.
   
      - In the **Redirect messages with detected attachments** section, select the option **Enable redirect**. Specify the email address for your organization's security administrator or operator, who will review detected files.
@@ -204,23 +205,23 @@ To set up [Safe Links](safe-links.md), review and edit your global settings for 
 
    - In the **Protection settings** page, configure the following settings:
   
-      a. In **Select the action for unknown potentially malicious URLs in messages.** section, choose **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.
+     a. In **Select the action for unknown potentially malicious URLs in messages.** section, choose **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.
   
-      b. In **Select the action for unknown or potentially malicious URLs within Microsoft Teams.** section, choose the following:
+     b. In **Select the action for unknown or potentially malicious URLs within Microsoft Teams.** section, choose the following:
   
-         - **On - Microsoft Teams will check against a list of known malicious links when user clicks on a link; URLs will not be rewritten.
+       - **On - Microsoft Teams will check against a list of known malicious links when user clicks on a link; URLs will not be rewritten.**
+   
+       - **Apply real-time URL scanning for suspicious links and links that point to files**
   
-         - **Apply real-time URL scanning for suspicious links and links that point to files**
+       - **Wait for URL scanning to complete before delivering the message**
   
-         - **Wait for URL scanning to complete before delivering the message**
+       - **Apply Safe links to email messages sent within the organization**
   
-         - **Apply Safe links to email messages sent within the organization**
-  
-         - **Do not let users click through to the original URL**
+       - **Do not let users click through to the original URL**
 
-      c. Click **Next**.
+     c. Click **Next**.
   
-  - In the **Notification** page, select the preferred type of notification text and then click **Next**.
+   - In the **Notification** page, select the preferred type of notification text and then click **Next**.
 
 4. Review your settings, click **Submit** and then click **Done**.
 
