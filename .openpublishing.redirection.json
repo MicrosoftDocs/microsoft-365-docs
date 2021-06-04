@@ -4019,6 +4019,31 @@
       "source_path": "microsoft-365/compliance/classifier-how-retrain-comms-compliance.md",
       "redirect_url": "/microsoft-365/compliance/classifier-learn-about",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-secure-cfg.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-secure-config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-inventory.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-inventory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-vulnerabilities.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
+      "redirect_document_id": true
     }
   ]
 }
