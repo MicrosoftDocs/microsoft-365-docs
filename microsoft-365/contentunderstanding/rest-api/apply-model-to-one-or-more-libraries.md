@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
 description: REST API - apply model
@@ -17,7 +16,7 @@ description: REST API - apply model
 
 # Apply a model to one or more libraries
 
-Applies (or syncs) a trained document understanding model to one or more libraries. (See [example](apply-model-to-one-or-more-libraries.md#example).)
+Applies (or syncs) a trained document understanding model to one or more libraries (see [example](apply-model-to-one-or-more-libraries.md#example).
 
 ## HTTP request
 
