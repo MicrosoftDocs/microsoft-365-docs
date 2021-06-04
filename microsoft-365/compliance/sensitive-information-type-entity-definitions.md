@@ -23,7 +23,7 @@ description: "There are 200 sensitive information types that are ready for you t
 
 # Sensitive information type entity definitions
 
-This article lists all sensitive information type entity definitions and shows what a DLP policy looks for when it detects each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
+This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detects each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 ## ABA routing number
 
