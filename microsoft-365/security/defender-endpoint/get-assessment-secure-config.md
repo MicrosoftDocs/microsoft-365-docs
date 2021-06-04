@@ -36,9 +36,9 @@ Returns all of the configurations and their status, on a per-device basis.
 
 There are different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
-- [Export secure configuration assessment **OData**](#1-export-secure-configuration-assessment-odata):  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+- [Export secure configuration assessment **OData**](#1-export-secure-configuration-assessment-odata):  The API pulls all data in your organization as Json responses, following the OData protocol. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- [Export secure configuration assessment **via files**](#2-export-secure-configuration-assessment-via-files): This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+- [Export secure configuration assessment **via files**](#2-export-secure-configuration-assessment-via-files): This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
 
   - Call the API to get a list of download URLs with all your organization data.
 
@@ -281,11 +281,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## See also
 
-- [Export assessment methods and properties per device](get-assessmnt-1methods-properties.md)
+- [Export assessment methods and properties per device](get-assessment-methods-properties.md)
 
-- [Export software inventory assessment per device](get-assessmnt-software-inventory.md)
+- [Export software inventory assessment per device](get-assessment-software-inventory.md)
 
-- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
 
 Other related
 
