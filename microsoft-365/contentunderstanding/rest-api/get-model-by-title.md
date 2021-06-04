@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - Learn how to get or update information about a SharePoint Syntex document understanding model using the model title.
+description: Use REST API to get or update information about a SharePoint Syntex document understanding model using the model title.
 ---
 
 # GetByTitle
