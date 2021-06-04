@@ -32,6 +32,8 @@ ms.technology: m365d
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 
 ## Methods
 
