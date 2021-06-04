@@ -74,26 +74,26 @@ POST
 
 | Name      | Type | Description                 |
 |---------------|----------|---------------------------------|
-| Authorization | String   | Bearer {token}. Required.   |
+| Authorization | String   | Bearer {token}.Required.   |
 | Content-Type  | string   | application/json. Required. |
 
 ## Request body
 
 | Parameter | Type | Description                                                        |
 |---------------|----------|------------------------------------------------------------------------|
-| Comment       | String   | Comment to associate with the action.                                  |
-| Commands      | Array    | Commands to run. Allowed values are “PutFile”, “RunScript”, “GetFile”. |
+| Comment       | String   | Comment to associate with the action.                                 |
+| Commands      | Array    | Commands to run. Allowed values are PutFile, RunScript, GetFile. |
 
 Commands:
 
 | Command Type | Parameters                                                                          | Description                                                                                                                      |
 |------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| PutFile      | Key: “FileName”                                                                         | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
+| PutFile      | Key: FileName                                                                         | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
 |                  | Value: \<file name\>                                                                    |                                                                                                                                      |
-| RunScript    | Key: “ScriptName” Value: \<Script from library\> Key: “Args”                            | Runs a script from the library on a device.                                                                                          |
+| RunScript    | Key: ScriptName Value: \<Script from library\> Key: Args                            | Runs a script from the library on a device.                                                                                          |
 |                  | Value: \<Script arguments\>                                                             |                                                                                                                                      |
 |                  |                                                                                         | The Args parameter is passed to your script. Timeouts after 10 minutes.                                                              |
-| GetFile      | Key: “Path” Value: \<File path\>                                                        | Collect file from a device. Backslashes in path must be escaped                                                                      |
+| GetFile      | Key: Path Value: \<File path\>                                                        | Collect file from a device. Backslashes in path must be escaped                                                                      |
 
 ## Response
 

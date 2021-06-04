@@ -38,7 +38,7 @@ ms.custom: api
 
 Retrieves specific live response command by its index
 
-##Limitations
+## Limitations
 
 1.  Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
@@ -65,7 +65,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 | Name      | Type | Description               |
 |---------------|----------|-------------------------------|
-| Authorization | String   | Bearer {token}. Required. |
+| Authorization | String   | Bearer {token}.Required. |
 
 ## Request body
 
@@ -74,7 +74,7 @@ Empty
 ## Response
 
 If successful, this method returns 200, Ok response code with object that holds
-the link to the command result in the “value” property. This link is valid for
+the link to the command result in the *value* property. This link is valid for
 30 minutes and should be used immediately for downloading the package to a local
 storage. An expired link can be re-created by another redirect, and there is no
 need to run Live Response again.

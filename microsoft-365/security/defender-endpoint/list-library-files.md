@@ -45,7 +45,7 @@ List [live response library files](live-response-library-methods.md).
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
+including how to choose permissions, see [Get
 started](apis-intro.md).
 
 |Permission type                       |      Permission          |  Permission display name | 
@@ -63,7 +63,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 | Name         |      Type                     | Description
 |-----------------|--------|---------------------------|
-| Authorization   | String | Bearer {token}. Required. |
+| Authorization   | String | Bearer {token}.Required. |
 
 ## Request body
 Empty

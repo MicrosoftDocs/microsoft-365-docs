@@ -47,7 +47,7 @@ library](live-response-library-methods.md).
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get started](apis-intro.md).
+including how to choose permissions, see[Get started](apis-intro.md).
 
 | Permission type                    | Permission     | Permission display name        |
 |------------------------------------|----------------|--------------------------------|
@@ -62,7 +62,7 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
 | Name            | Type   | Description               |
 |-----------------|--------|---------------------------|
-| Authorization   | String | Bearer {token}. Required. |
+| Authorization   | String | Bearer {token}.Required. |
 
 ## Request body
 
@@ -70,9 +70,9 @@ Empty
 
 ## Response
 
--   If file exists in library and deleted successfully – 204 No Content.
+-   If file exists in library and deleted successfully  204 No Content.
 
--   If specified file name was not found – 404 Not Found.
+-   If specified file name was not found  404 Not Found.
 
 ## Example
 

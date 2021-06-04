@@ -68,8 +68,8 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 |  Name   |    Type    |       Description                         |
 |-----------------|--------|--------------------------------|
-| Authorization   | String | Bearer {token}. Required.      |
-| Content-Type    | string | multipart/form-data. Required. |
+| Authorization   | String | Bearer {token}.Required.      |
+| Content-Type    | string | multipart/form-data.Required. |
 
 ## Request body
 
@@ -77,8 +77,8 @@ In the request body, supply a form-data object with the following parameters:
 
 | Parameter         |     Type         |       Description                                        |
 |-----------------------|--------------|------------------------------------------------------------|
-| File                  | File content | The file to be uploaded to live response library. Required |
-| Description           | String       | Description of the file.                                   |
+| File                  | File content | The file to be uploaded to live response library.Required |
+| Description           | String       | Description of the file.                                  |
 | ParametersDescription | String       | Parameters required for the script to run.                 |
 | OverrideIfExists      | Boolean      | Whether to override the file if it already exists          |
 

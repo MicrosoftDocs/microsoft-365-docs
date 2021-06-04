@@ -68,14 +68,14 @@ id}/cancel](https://api.securitycenter.microsoft.com/api/machineactions/%7bmachi
 
 | Name      | Type | Description                 |
 |---------------|----------|---------------------------------|
-| Authorization | String   | Bearer {token}. Required.   |
+| Authorization | String   | Bearer {token}.Required.   |
 | Content-Type  | string   | application/json. Required. |
 
 ## Request body
 
 | Parameter | Type | Description                        |
 |---------------|----------|----------------------------------------|
-| Comment       | String   | Comment to associate with the action.  |
+| Comment       | String   | Comment to associate with the action. |
 
 ## Response
 
