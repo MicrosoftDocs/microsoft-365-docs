@@ -108,7 +108,9 @@ Creating a custom anti-phishing policy in the security center creates the anti-p
 
    When you're finished, click **Next**.
 
-5. On the **Phishing threshold & protection** page that appears, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. The default value is on (selected), and we recommend that you leave it on. To turn it off, clear the check box.
+5. On the **Phishing threshold & protection** page that appears, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. The default value is on (selected), and we recommend that you leave it on. You configure the action to take on blocked spoofed messages on the next page.
+
+   To turn off spoof intelligence, clear the check box.
 
    > [!NOTE]
    > You don't need to turn off anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
@@ -116,13 +118,18 @@ Creating a custom anti-phishing policy in the security center creates the anti-p
    When you're finished, click **Next**.
 
 6. On the **Actions** page that appears, configure the following settings:
-   - **If message is detected as spoof**: Select the action to take on messages from blocked spoofed senders from the drop down list:
+   - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
      - **Move message to the recipients' Junk Email folders**
      - **Quarantine the message**
 
-   - **Safety tips & indicators**: Configure the following settings:
-     - **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). The default value is on (selected). To turn it off, clear the check box.
-     - **Show "via" tag**: Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is on (selected). To turn it off, clear the check box.
+   - **Safety tips & indicators**: This setting is available only if you selected **Enable spoof intelligence** on the previous page:
+     - **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
+     - **Show "via" tag**: Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address.
+
+       > [!NOTE]
+       > Currently, the **Show "via" tag** setting is not available in all organizations. If you don't have the **Show "via" tag** setting, the the question mark **and** the via tag are both controlled by the **Show (?) for unauthenticated senders for spoof** setting in your organization.
+
+     To turn on a setting, select the check box. To turn it off, clear the check box.
 
    When you're finished, click **Next**.
 
@@ -151,7 +158,7 @@ Creating a custom anti-phishing policy in the security center creates the anti-p
 
 2. On the **Anti-phishing** page, select a policy from the list by clicking on the name.
 
-3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the security center to create anti-phishing policies](#use-the-security-center-to-create-anti-phishing-policies) section in this article.  
+3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Use the security center to create anti-phishing policies](#use-the-security-center-to-create-anti-phishing-policies) section earlier in this article.  
 
    For the default anti-phishing policy, the **Users, groups, and domains** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
