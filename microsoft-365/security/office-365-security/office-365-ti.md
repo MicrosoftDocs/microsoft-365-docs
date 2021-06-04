@@ -45,7 +45,7 @@ Threat investigation and response capabilities provide insights into threats and
 
 Threat investigation and response capabilities surface in the Microsoft 365 security center, as a set of tools and response workflows, including the following:
 
-- [Threat & Vulnerability Management dashboard](#threat-&-vulnerability-management-dashboard)
+- [Threat & Vulnerability Management dashboard](#threat--vulnerability-management-dashboard)
 - [Explorer](#explorer)
 - [Incidents](#incidents)
 - [Attack Simulator](#attack-simulator)
