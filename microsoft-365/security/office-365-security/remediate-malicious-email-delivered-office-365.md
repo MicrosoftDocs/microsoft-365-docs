@@ -28,20 +28,20 @@ ms.prod: m365-security
 Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
-> To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through [permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Security & Compliance Center** \> **Permissions**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Microsoft 365 security center** \> **Permissions & roles**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
 
 ## Manual and automated remediation
 
-*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Threat Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
+*Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
 > [!div class="mx-imgBorder"]
 > [![Manual hunting in Office 365 Threat Explorer by date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
-Security teams can use Threat Explorer to select emails in several ways:
+Security teams can use Explorer to select emails in several ways:
 
 - Choose emails by hand: Use filters in various views. Select up to 100 emails to remediate.
 
@@ -49,23 +49,23 @@ Security teams can use Threat Explorer to select emails in several ways:
 
 - Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
 
-Once emails are selected through Threat Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
+Once emails are selected through Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
 
 - Direct approval: When actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete* are selected by security personnel who have appropriate permissions, and the next steps in remediation are followed, the remediation process begins to execute the selected action. A temporary flyout shows remediation in progress.
 
 - Two-step approval: An "add to remediation" action can be taken by admins who don't have appropriate permissions or who need to wait to execute the action. In this case, the targeted emails are added to a remediation container. Approval is needed before the remediation is executed.
 
-**Automated investigation and response** actions are triggered by alerts or by security operations teams from Threat Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
+**Automated investigation and response** actions are triggered by alerts or by security operations teams from Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
 > [!div class="mx-imgBorder"]
 > [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-All remediations (either direct approval or two-step approval) that were created in Threat Explorer as well as approved actions coming from automated investigations are displayed in the Action Center. Access these via the left navigation panel under **Review** \> **Action Center**.
+All remediations (either direct approval or two-step approval) that were created in Explorer as well as approved actions coming from automated investigations are displayed in the Action Center. Access these via the left navigation panel under **Review** \> **Action Center**.
 
 > [!div class="mx-imgBorder"]
 > [![The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
-Action Center shows all remediation actions for the past 30 days. Actions taken through Threat Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
+Action Center shows all remediation actions for the past 30 days. Actions taken through Explorer are listed by the name that the security operations team provided when the remediation was created. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as "Zap email cluster... ."
 
 Open any remediation item to view details about it, including its name, creation date, description, threat severity, and status. It also shows the following two tabs.
 
@@ -89,11 +89,11 @@ Open any remediation item to view details about it, including its name, creation
     - On-premises/external
     - Failed/dropped
 
-  Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Threat Explorer retention period for your organization.
+  Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
-  Unless you're remediating old messages after your organization's Threat Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
+  Unless you're remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
 
-  If your organization's retention period for email in Threat Explorer is 30 days and you're remediating emails going back 29-30 days, mail submission counts may not always add up. The emails might have started moving out of the retention period already.
+  If your organization's retention period for email in Explorer is 30 days and you're remediating emails going back 29-30 days, mail submission counts may not always add up. The emails might have started moving out of the retention period already.
 
   If remediations are stuck in the "In progress" state for a while, it's likely due to system delays. It could take up to a few hours to remediate. You might see variations in mail submission counts, as some of the emails may not have been included the query at the start of remediation due to system delays. It is a good idea to retry remediating in such cases.
 
@@ -102,23 +102,27 @@ Open any remediation item to view details about it, including its name, creation
 
   Only remediable emails are acted on during remediation. Nonremediable emails can't be remediated by the Office 365 email system, as they aren't stored in cloud mailboxes.
 
-  Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Threat Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
+  Admins can take actions on emails in quarantine if necessary, but those emails will expire out of quarantine if they're not manually purged. Emails quarantined because of malicious content aren't accessible by users, so security personnel don't have to take any action to get rid of threats in quarantine. If the emails are on-premises or external, the user can be contacted to address the suspicious email. Or the admins can use separate email server/security tools for removal. These emails can be identified by applying the *delivery location = on-prem* external filter in Explorer. For failed or dropped email, or email not accessible by users, there won't be any email to mitigate, since these mails don't reach the mailbox.
 
   The following image shows how a submission looks in Action Center. A remediation can contain multiple submissions. If multiple actions get approved through one automated investigation, each email or email cluster action appears in the same remediation as a different submission.
 
   > [!div class="mx-imgBorder"]
   > [![ZAP email cluster flyout panel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Threat Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Threat Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
+  Select a mail submission item to show the details of that remediation, such as the query (when remediation is triggered through automated investigations or Explorer through selecting a query) and the start and end times of remediation. It also displays a list of messages that were submitted for remediation. As messages move out of the Explorer retention period, the messages disappear from this list. The list also shows individual messages that are remediable.
 
 - **Action logs**: This tab shows the messages remediated, including approved date, admin who approved the action, action, status, and counts.
 
   Status can be:
 
   - **Started**: Remediation is triggered.
+  
   - **Queued**: Remediation is queued up for mitigation of emails.
+  
   - **In progress**: Mitigation is in progress.
+  
   - **Completed**: Mitigation on all remediable emails either completed successfully or with some failures.
+  
   - **Failed**: No remediations were successful.
 
   As only remediable emails can be acted on, each email's cleanup is shown as successful or failed. From the total remediable emails, successful and failed mitigations are reported.
