@@ -8,10 +8,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - Learn how to apply a document understanding model to one or more libraries.
+description: Use REST API to apply a document understanding model to one or more libraries.
 ---
 
 # Apply a model to one or more libraries
