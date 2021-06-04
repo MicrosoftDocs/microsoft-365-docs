@@ -16,7 +16,7 @@ description: REST API - apply model
 
 # Apply a model to one or more libraries
 
-Applies (or syncs) a trained document understanding model to one or more libraries (see [example](apply-model-to-one-or-more-libraries.md#example).
+Applies (or syncs) a trained document understanding model to one or more libraries (see [example](apply-model-to-one-or-more-libraries.md#example)).
 
 ## HTTP request
 
