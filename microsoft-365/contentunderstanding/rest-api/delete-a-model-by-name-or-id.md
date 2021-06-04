@@ -11,14 +11,14 @@ search.appverid:
 ms.collection: 
     - m365initiative-syntex
 localization_priority: Priority
-description: REST API - Learn how to delete a model by a unique ID or file name.
+description: REST API - Learn how to delete a model by a unique ID or it file name.
 ---
 
 # Delete a model by ID or name
 
-## Delete by unique id
+## Delete by unique ID
 
-Deletes a model by unique ID. See [example](delete-a-model-by-name-or-id.md#examples)).
+Deletes a model by a unique ID (see [example](delete-a-model-by-name-or-id.md#examples)).
 
 ### HTTP request
 
@@ -34,7 +34,7 @@ DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
 
 ## Delete by model file name
 
-Deletes a model by its file name. (See [example](delete-a-model-by-name-or-id.md#examples).)
+Deletes a model by its file name (see [example](delete-a-model-by-name-or-id.md#examples)).
 
 ### HTTP request
 
