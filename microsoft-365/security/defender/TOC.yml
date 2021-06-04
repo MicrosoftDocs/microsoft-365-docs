@@ -51,13 +51,13 @@
         - name: Defender for Office 365
           items:
             - name: Overview
-              href: eval-defender-office-overview.md
+              href: eval-defender-office-365-overview.md
             - name: Review architecture requirements
-              href: eval-defender-office-architecture.md
+              href: eval-defender-office-365-architecture.md
             - name: Enable the evaluation 
-              href: eval-defender-office-enable-eval.md
+              href: eval-defender-office-365-enable-eval.md
             - name: Pilot Defender for Office
-              href: eval-defender-office-pilot.md        
+              href: eval-defender-office-365-pilot.md        
         - name: Defender for Endpoint
           items: 
             - name: Overview
