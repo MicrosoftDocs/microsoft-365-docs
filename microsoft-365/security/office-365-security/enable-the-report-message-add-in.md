@@ -49,7 +49,6 @@ f you're a global administrator or an Exchange Online administrator, and Exchang
 ## What do you need to know before you begin?
 
 - Both the Report Message add-in and the Report Phishing add-in works with most Microsoft 365 subscriptions and the following products:
-
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
@@ -66,8 +65,8 @@ f you're a global administrator or an Exchange Online administrator, and Exchang
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
-> [!CAUTION]
-> The reporting experience built into Outlook is not recommended because it does not leverage the [User submission policy](./user-submission.md). You should use the add-ins to do that.
+> [!IMPORTANT]
+> We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
 
 ## Get the Report Message add-in
 
