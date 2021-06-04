@@ -47,7 +47,7 @@ This article explains how to configure user tags in the Security & Compliance Ce
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
 > [!NOTE]
-> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
+> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/securitysettings/userTags.
 
 ## What do you need to know before you begin?
 
@@ -60,10 +60,11 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
   For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
+  > [!NOTE]
+  >
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  >
+  > - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
@@ -122,7 +123,8 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## Use the Security & Compliance Center to remove user tags
 
-**Note**: You can't remove the built-in **Priority account** tag.
+> [!NOTE]
+> You can't remove the built-in **Priority account** tag.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
 

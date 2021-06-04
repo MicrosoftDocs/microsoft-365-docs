@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: "Learn how to send email as a distribution list in Microsoft 365."
+description: "Send email as a distribution list in Microsoft 365 so that when a member replies to a message it appears to be from the distribution list."
 ---
 
 # Send email as a distribution list
 
 In Microsoft 365, you can send email as a distribution list. When a person who is a member of the distribution list replies to a message sent to the distribution list, the email appears to be from the distribution list, not from the individual user. This topic shows you how to do this.
   
-## Send email as a distribution list
+## Before you begin
 
 Before you perform these steps, make sure you've been added to a Microsoft 365 distribution list and you've have been granted Send as permission on it.
   
@@ -56,3 +56,9 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 3. Select the **Distribution List** address from the Global Address List.
 
 4. Send the email.
+
+## Related content
+
+[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)\
+[Email collaboration](../email/email-collaboration.md) (article)\
+[Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md) (article)

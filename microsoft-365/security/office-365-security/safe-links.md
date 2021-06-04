@@ -50,7 +50,7 @@ Safe Links protection is available in the following locations:
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
   
   > [!NOTE]
-  > Sale Links does not work on mail-enabled public folders.
+  > Safe Links does not work on mail-enabled public folders.
 
 - **Microsoft Teams** (currently in TAP Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
 
@@ -70,7 +70,7 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. But, the settings apply only to users who are included in active Safe Links policies. These settings include:
+- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. These settings include:
 
   - [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps)
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)

@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: "Learn how to restore deleted user accounts and all associated data."
+description: "Within 30 days after deleting a user account, you can restore the account and all data, and the user can sign in with the same account."
 ---
 
 # Restore a user
@@ -33,7 +33,7 @@ Here are a couple of tips:
   
 - Make sure licenses are available to assign to the account.
     
-- If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) for instructions on restoring a user account. 
+- If your business uses Active Directory, for instrutcions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## Restore one or more user accounts
 
@@ -86,6 +86,8 @@ You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do t
     
 4. Review the results, and then select **Close**.
 
-## Related articles
+## Related content
 
-[Delete a user](delete-a-user.md)
+[Delete a user](delete-a-user.md) (article)\
+[Assign admin roles](assign-admin-roles.md) (video)\
+[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)
