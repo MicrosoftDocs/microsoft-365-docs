@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: REST API - batch delete model
+description: Use REST API to remove an applied document understanding model from one or more libraries.
 ---
 
 # Remove a model from one or more libraries
 
-Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted. (see [example](#examples)).
+Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](remove-model-from-one-or-more-libraries.md#examples)).
 
 ## HTTP request
 
@@ -110,4 +110,4 @@ In the response, TotalFailures and TotalSuccesses refers to the number of failur
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
