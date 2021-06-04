@@ -51,7 +51,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’)
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](get-model-and-primed-library-information.md#response-body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](get-model-and-primed-library-information.md#request-body) for details.|
 
 ## Example
 
