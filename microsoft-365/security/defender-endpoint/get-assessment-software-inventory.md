@@ -280,9 +280,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 - [Export assessment methods and properties per device](get-assessment-methods-properties.md)
 
-- [Export secure configuration assessment per device](get-assessmnt-secure-cfg.md)
+- [Export secure configuration assessment per device](get-assessment-secure-config.md)
 
-- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
 
 Other related
 

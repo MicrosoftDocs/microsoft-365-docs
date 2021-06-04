@@ -333,9 +333,9 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 - [Export assessment methods and properties per device](get-assessment-methods-properties.md)
 
-- [Export secure configuration assessment per device](get-assessmnt-secure-cfg.md)
+- [Export secure configuration assessment per device](get-assessment-secure-config.md)
 
-- [Export software inventory assessment per device](get-assessmnt-software-inventory.md)
+- [Export software inventory assessment per device](get-assessment-software-inventory.md)
 
 Other related
 
