@@ -125,7 +125,7 @@ PowerShell Core doesn't support the Microsoft Azure Active Directory Module for 
 
 These steps are required only one time on your computer. But you'll likely need to update the software periodically.
   
-1.  If you're not running Windows 10, install the 64-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
+1.  If you're not running Windows 10, install the 64-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Follow these steps to install the Microsoft Azure Active Directory Module for Windows PowerShell:
     

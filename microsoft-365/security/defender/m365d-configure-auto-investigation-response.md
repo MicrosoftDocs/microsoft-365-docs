@@ -68,8 +68,8 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 1. In the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), go to **Policies & Rules** \> **Threat policies**.
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
-   - [Anti-malware)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Anti-phishing)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+   - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [Safe Attachments](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Safe Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Anti-spam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
