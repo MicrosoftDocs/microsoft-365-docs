@@ -8,16 +8,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - UpdateModelSettings
+description: Use REST API to update available models settings for a SharePoint Syntex document understanding model.
 ---
 
 # UpdateModelSettings
 
-Updates available models settings (associated retention label and model description) for a Syntex document understanding model (see [example](#examples)).
+Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model (see [example](rest-updatemodelsettings.md#examples)).
 
 ## HTTP request
 
@@ -39,10 +37,11 @@ None
 
 ## Request body
 
+|Name    |Type   |Description |
 |--------|-------|-------|
 |ModelSettings|string|JSON of model settings.|
 |Description|string|The model description.|
-|RetentionLabel| |Info for the associated label (label Id and name)|
+|RetentionLabel| |Info for the associated label (label Id and name).|
 
 ## Responses
 
@@ -71,4 +70,4 @@ In this example, the model description and "Standard Hold" retention label are u
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
