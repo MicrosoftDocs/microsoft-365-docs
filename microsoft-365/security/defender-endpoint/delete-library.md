@@ -84,6 +84,5 @@ Here is an example of the request.
 DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
 ```
 
-Related topic
-
--   Run live response API [link to machine actions / run live response]
+## Related topic
+- [Run live response](run-live-response.md) 

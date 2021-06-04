@@ -129,10 +129,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 ## Related topics
-Get machine action API [link to machine actions / Get machine action API ]
-Get live response result API [link to machine actions / get live response
-result]
-Cancel machine action API [link to machine actions / run live response]
-Run live response API [link to machine actions / run live response]
-Upload to live response library API [link to machine actions / run live
-response]
+- [Get machine action API](get-machineaction-object.md)
+- [Get live response result](get-live-response-result.md)
+- [Cancel machine action](cancel-machine-action.md)
+- [Upload to library](upload-library.md)

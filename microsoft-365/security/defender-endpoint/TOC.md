@@ -518,7 +518,7 @@
 ###### [Live response library]()
 ####### [Live response library methods and properties](live-response-library-methods.md)
 ####### [List library files](list-library-files.md)
-####### [Upload to library](upload-library.md)
+####### [Upload to live response library](upload-library.md)
 ####### [Delete from library](delete-library.md)
 
 ###### [Machine]()
@@ -527,7 +527,6 @@
 ####### [Get machine by ID](get-machine-by-id.md)
 ####### [Get machine log on users](get-machine-log-on-users.md)
 ####### [Get machine related alerts](get-machine-related-alerts.md)
-####### [Get live response result](get-live-response-result.md)
 ####### [Get installed software](get-installed-software.md)
 ####### [Get discovered vulnerabilities](get-discovered-vulnerabilities.md)
 ####### [Get security recommendations](get-security-recommendations.md)
@@ -536,13 +535,12 @@
 ####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
-####### [Cancel machine action](cancel-machine-action.md)
+
 
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
 ####### [List Machine Actions](get-machineactions-collection.md)
 ####### [Get Machine Action](get-machineaction-object.md)
-####### [Cancel machine action](cancel-machine-action.md)
 ####### [Collect investigation package](collect-investigation-package.md)
 ####### [Get investigation package SAS URI](get-package-sas-uri.md)
 ####### [Get live response result](get-live-response-result.md)
@@ -554,6 +552,7 @@
 ####### [Run live response](run-live-response.md) 
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
+####### [Cancel machine action](cancel-machine-action.md)
 
 ###### [Recommendation]()
 ####### [Recommendation methods and properties](recommendation.md)

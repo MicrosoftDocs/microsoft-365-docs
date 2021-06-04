@@ -109,16 +109,9 @@ Content-type: application/json
 
 *File content:* 
 
-### Related topic
+## Related topic
 
-Get machine action API [link to machine actions / Get machine action API ]
-
-Get live response result API [link to machine actions / get live response
-result]
-
-Cancel machine action API [link to machine actions / run live response]
-
-Run live response API [link to machine actions / run live response]
-
-Upload to live response library API [link to machine actions / run live
-response]
+- [Get machine action API](get-machineaction-object.md)
+- [Cancel machine action](cancel-machine-action.md)
+- [Run live response](run-live-response.md) 
+- [Upload to library](upload-library.md)

@@ -104,6 +104,6 @@ curl -X POST https://api.securitycenter.microsoft.com/api/libraryfiles -H
 description"
 ```
 
-Related topic
+## Related topic
 
--   Run live response API [link to machine actions / run live response]
+-  [Run live response](run-live-response.md) 

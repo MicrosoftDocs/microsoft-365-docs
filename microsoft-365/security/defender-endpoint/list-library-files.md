@@ -127,5 +127,5 @@ Content-type: application/json
 ```
 
 
-### Related topic
-- [Run live response API]() [link to machine actions / run live response]
+## Related topic
+- [Run live response](run-live-response.md) 

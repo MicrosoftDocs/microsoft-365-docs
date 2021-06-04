@@ -103,4 +103,4 @@ POST
 
 ## Related topic
 
-Get machine action API [link to machine actions / Get machine action API ]
+- [Get machine action API](get-machineaction-object.md)
