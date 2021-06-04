@@ -97,4 +97,4 @@ DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9b
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
