@@ -81,7 +81,8 @@
         
     - name: REST API
       items:
-
+        - name: Overview
+          href: rest-api/syntex-model-rest-api.md
         - name: Apply a model to one or more libraries
           href: rest-api/apply-model-to-one-or-more-libraries.md
         - name: Delete a model by name or id
