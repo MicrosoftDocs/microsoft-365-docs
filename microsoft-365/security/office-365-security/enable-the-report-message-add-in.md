@@ -66,6 +66,9 @@ f you're a global administrator or an Exchange Online administrator, and Exchang
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
+> [!CAUTION]
+> The reporting experience built into Outlook is not recommended because it does not leverage the [User submission policy](./user-submission.md). You should use the add-ins to do that.
+
 ## Get the Report Message add-in
 
 ### Get the add-in for yourself
