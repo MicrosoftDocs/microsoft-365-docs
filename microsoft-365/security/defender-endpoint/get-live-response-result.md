@@ -79,7 +79,7 @@ If successful, this method returns 200, Ok response code with object that holds
 the link to the command result in the *value* property. This link is valid for
 30 minutes and should be used immediately for downloading the package to a local
 storage. An expired link can be re-created by another redirect, and there is no
-need to run Live Response again.
+need to run live response again.
 
 *Runscript transcript properties:*
 
