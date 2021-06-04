@@ -264,7 +264,7 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 > When you're finished configuring, use these links to start workload investigations:
 >
 >- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
->- [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Use the Microsoft 365 security center to manage quarantined email messages](manage-quarantined-messages-and-files.md#use-the-microsoft-365-security-center-to-manage-quarantined-email-messages)
 >- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
