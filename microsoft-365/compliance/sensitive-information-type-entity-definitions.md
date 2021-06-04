@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes over 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+description: "There are 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # Sensitive information type entity definitions
 
-Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
+This article lists all sensitive information type entity definitions and shows what a DLP policy looks for when it detects each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 ## ABA routing number
 
@@ -142,11 +142,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-Eleven digits with dash
+11 digits with dash
 
 ### Pattern
 
-Eleven digits with a dash:
+11 digits with a dash:
 - two digits in 20, 23, 24, 27, 30, 33 or 34
 - a hyphen (-)
 - eight digits
