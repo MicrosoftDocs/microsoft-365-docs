@@ -6,10 +6,14 @@
       href: compliance-quick-tasks.md
     - name: What's new in Microsoft 365 compliance
       href: whats-new.md
-    - name: Microsoft 365 compliance center
-      href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 compliance center
+      href: microsoft-365-compliance-center.md
+    - name: Permissions in the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Redirecting users to the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -110,12 +114,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Create notifications for exact data match activities (preview)
           href: sit-edm-notifications-activities.md  
-        - name: Create a custom sensitive information type - Security & Compliance Center
+        - name: Create a custom sensitive information type - Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Create a custom sensitive information type - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Create a keyword dictionary
           href: create-a-keyword-dictionary.md
+        - name: Modify a keyword dictionary
+          href: sit-modify-keyword-dictionary.md
         - name: Document Fingerprinting
           href: document-fingerprinting.md
     - name: Trainable classifiers
@@ -124,8 +130,6 @@
           href: classifier-learn-about.md
         - name: Get started with trainable classifiers
           href: classifier-get-started-with.md
-        - name: How to retrain a classifier in communications compliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: How to retrain a classifier in content explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
@@ -172,13 +176,11 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items: 
-            - name: Customer Key for Microsoft 365 at the tenant level (public preview)
-              href: customer-key-tenant-level.md
-            - name: Service encryption with Customer Key in Office 365
+            - name: Customer Key in Microsoft 365
               href: customer-key-overview.md
-            - name: Set up Customer Key for Office 365
+            - name: Set up Customer Key for Microsoft 365
               href: customer-key-set-up.md
-            - name: Manage Customer Key for Office 365
+            - name: Manage Customer Key for Microsoft 365
               href: customer-key-manage.md
             - name: Roll or rotate a Customer Key or an availability key
               href: customer-key-availability-key-roll.md
@@ -246,7 +248,11 @@
           - name: Learn about the Microsoft Compliance Extension (preview)
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
-            href: dlp-alerts-dashboard-learn.md    
+            href: dlp-alerts-dashboard-learn.md
+        - name: Plan for DLP
+          items:
+          - name: Plan for data loss prevention
+            href: dlp-overview-plan-for-dlp.md
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -501,59 +507,61 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use content search
+        - name: Search for content
           href: content-search.md
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: View keyword statistics for search results
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
+          - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Export search results
             href: export-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
-          - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
-          - name: Bulk edit multiple content searches
-            href: bulk-edit-content-searches.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Check your search query for errors
-            href: check-your-content-search-query-for-errors.md
+          - name: Configure permissions filtering for content search
+            href: permissions-filtering-for-content-search.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-        - name: Configure content search
-          items: 
-          - name: Configure permissions filtering for content search
-            href: permissions-filtering-for-content-search.md
-          - name: Change the size of PST files when exporting search results
-            href: change-the-size-of-pst-files-when-exporting-results.md
-          - name: Disable reports when you export search results
-            href: disable-reports-when-you-export-content-search-results.md
         - name: Content search reference
           items: 
-          - name: Content search limits
+          - name: eDiscovery search limits
             href: limits-for-content-search.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
+          - name: Differences between estimated and actual search results
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md
           - name: Partially indexed items
             href: partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
             href: investigating-partially-indexed-items-in-ediscovery.md
           - name: De-duplication in search results
             href: de-duplication-in-ediscovery-search-results.md
-          - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
-          - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Change the size of PST files when exporting search results
+            href: change-the-size-of-pst-files-when-exporting-results.md
+          - name: Disable reports when you export search results
+            href: disable-reports-when-you-export-content-search-results.md
+          - name: Check your search query for errors
+            href: check-your-content-search-query-for-errors.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
+          - name: Bulk edit multiple content searches
+            href: bulk-edit-content-searches.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -578,23 +586,29 @@
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: Core eDiscovery reference
           items:
+          - name: eDiscovery search limits
+            href: limits-for-content-search.md
           - name: Assign eDiscovery permissions
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Content stored in mailboxes for eDiscovery
             href: what-is-stored-in-exo-mailbox.md
-          - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
+          - name: Configure search permissions filtering
+            href: permissions-filtering-for-content-search.md
+          - name: Differences between estimated and actual search results
+            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Export a search report
+            href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
           - name: Create a report on eDiscovery holds
             href: create-a-report-on-holds-in-ediscovery-cases.md
-          - name: Export a search report
-            href: export-a-content-search-report.md
-          - name: View keyword statistics for search results
+          - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
           - name: Search and purge spilled data
             href: data-spillage-scenariosearch-and-purge.md
@@ -657,32 +671,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Single item error remediation
               href: single-item-error-remediation.md        
-        - name: Collect content for a case (preview)
+        - name: Collect content for a case
           items: 
-            - name: Learn about collections (preview)
+            - name: Learn about collections
               href: collections-overview.md
-            - name: Create a draft collection (preview)
+            - name: Create a draft collection
               href: create-draft-collection.md
-            - name: Commit a draft collection to a review set (preview)
+            - name: Commit a draft collection to a review set
               href: commit-draft-collection.md
-            - name: Collection statistics and reports (preview)
+            - name: Collection statistics and reports
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
-        - name: Collect data for a case
-          items: 
-            - name: Create a search
-              href: create-search-to-collect-data.md
-            - name: Build search queries
-              href: building-search-queries.md
-            - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md
-            - name: Search statistics
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Add search results to a review set
-              href: add-data-to-review-set.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
@@ -696,7 +698,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
-            - name: Query the data in a review set
+            - name: Query and filter content in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
@@ -786,18 +788,22 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Basic auditing
+    - name: Microsoft 365 auditing solutions
+      href: auditing-solutions-overview.md
+    - name: Basic Audit
       items:
+        - name: Set up Basic Audit
+          href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
-        - name: Turn audit log search on or off
-          href: turn-audit-log-search-on-or-off.md
         - name: Detailed properties in the audit log
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: Export, configure, and view audit log records
           href: export-view-audit-log-records.md
+        - name: Turn auditing on or off
+          href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
           href: auditing-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
@@ -810,16 +816,18 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 Management Activity API FAQs and troubleshooting
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Mailbox auditing
-      href: enable-mailbox-auditing.md
     - name: Advanced Audit
       items:
         - name: Overview of Advanced Audit
           href: advanced-audit.md
+        - name: Set up Advanced Audit
+          href: set-up-advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
         - name: Use Advanced Audit to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
+    - name: Mailbox auditing
+      href: enable-mailbox-auditing.md
     - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
@@ -828,6 +836,8 @@
       items: 
         - name: Learn about Compliance Manager
           href: compliance-manager.md
+        - name: What's new in Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance Manager quickstart
           href: compliance-manager-quickstart.md
         - name: Get started with Compliance Manager

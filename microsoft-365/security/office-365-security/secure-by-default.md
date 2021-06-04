@@ -66,11 +66,14 @@ Our data indicates that a user is 30 times more likely to click a malicious link
 
 We also determined that the allowed sender and allowed domain lists in anti-spam policies and Safe Senders in Outlook were too broad and were causing more harm than good.
 
-To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised. 
+To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised.
 
 ## Exceptions
 
-The only override that allows high confidence phishing message to bypass filtering is Exchange mail flow rules (also known as transport rules). To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+> [!NOTE]
+> In July 2021, secure by default will be extended to Exchange mail flow rules (also known as transport rules). If you use mail flow rules to allow third-party phishing simulations or unfiltered delivery to security operation mailboxes, you eventually need to eliminate these rules and switch to using the [advanced delivery policy](configure-advanced-delivery.md) _when the feature is available to you_.
+
+The only override that allows high confidence phishing message to bypass filtering is mail flow rules. To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 You should only consider using overrides in the following scenarios:
 

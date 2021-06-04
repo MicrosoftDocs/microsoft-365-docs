@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: "Understand what a domain is and how you can buy a domain or use the default domain of your business."
+description: "Learn what a domain is and how you can buy a domain or use the default domain of your business to get started with OneDrive and Microsoft apps."
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
@@ -52,6 +52,14 @@ You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log i
   
 ## Feeling stuck?
 
-Call Microsoft Support - [Get help setting up a domain](../contact-support-for-business-products.md)
-  
+Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
+
+## Related content
+
+[Buy a domain](buy-a-domain-name.md) (article)
+
+[Add a domain to Microsoft 365](../setup/add-domain.md) (article)
+
+[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
+
 
