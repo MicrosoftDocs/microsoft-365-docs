@@ -46,7 +46,7 @@ You can specify the cloud block timeout period with an [endpoint security policy
 
 5. (This is optional) Make any other changes to your antivirus policy. (Need help? See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
-6. Choose **Next**.
+6. Choose **Next**, and finish configuring your policy.
 
 ## Specify the extended timeout period using Group Policy
 
