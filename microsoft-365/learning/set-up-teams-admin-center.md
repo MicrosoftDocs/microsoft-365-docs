@@ -55,7 +55,7 @@ Users who have been enabled for Public Preview testing (by enabling policies [pr
    
     ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
     
-2. Users must accept the **Public Preview** terms and conditions.
+2. Users must accept the Public Preview terms and conditions.
 
     ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
  
