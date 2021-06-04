@@ -45,10 +45,7 @@ If you're in the converged Microsoft 365 security center (https://security.micro
 
    From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
-2. In the **View** menu, choose **Email** \> **Malware**.
-
-   > [!div class="mx-imgBorder"]
-   > ![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
+2. In the **View** menu, choose **Malware** under **Email**.
 
 3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 

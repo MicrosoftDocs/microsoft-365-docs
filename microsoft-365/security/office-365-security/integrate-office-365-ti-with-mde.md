@@ -43,19 +43,17 @@ In this example, you can see that the recipients of the detected email message h
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
 
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com). (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Microsoft 365 security center](https://security.microsoft.com). (See [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md))
 
-- You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.
+- You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Microsoft 365 security center and the Microsoft Defender Security Center.
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 
-Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.
+Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Microsoft 365 security center AND the Microsoft Defender Security Center.
 
-1. As a global administrator or a security administrator, go to <https://protection.office.com> and sign in. (This takes you to the Office 365 Security & Compliance Center.)
+1. As a global administrator or a security administrator, go to <https://security.microsoft.com> and sign in. (This takes you to the Office 365 Microsoft 365 security center.)
 
-2. In the navigation pane, choose **Threat management** \> **Explorer**.
-
-   ![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)
+2. In the navigation pane, choose **Email & collaboration** \> **Explorer**.
 
 3. In the upper right corner of the screen, choose **Defender for Endpoint Settings (MDE Settings)**.
 
