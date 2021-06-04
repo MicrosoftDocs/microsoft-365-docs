@@ -29,12 +29,17 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-**Navigate to:**
+
+
+This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
+
+Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
+
+![Steps for creating the pilot for Microsoft 365 Defender for Office](../../media/defender/m365-defender-office-pilot.png)
+
 - [Step 1: Create pilot groups](#step-1:-create-pilot-groups)
 - [Step 2: Congfigure protection](#step-2:-configure-protection)
 - [Step 3: Get familiar with simulation, monitoring, and metrics](#step-3:-get-familiar-with-simulation-monitoring-and-metrics)
-
-![Steps for creating the pilot for Microsoft 365 Defender for Office](../../media/defender/m365-defender-office-pilot.png)
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
 
@@ -137,5 +142,7 @@ Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-def
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
 
 ### Helpful information
+
+Bcarter -- how is this different than [Protect against threats](../office-365-security/protect-against-threats.md)? We need to consolidate recommendations into an authoritative article and retire all the articles that serve the same purpose. We're doing this across security
 
 [Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)

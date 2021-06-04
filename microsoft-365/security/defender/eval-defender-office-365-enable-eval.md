@@ -31,7 +31,7 @@ ms.technology: m365d
 
 This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
-Use the following steps to enable and pilot Microsoft Defender for Office 365.
+Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
 
 <!--Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.-->
