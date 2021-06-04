@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: REST API - CreateModel
+description: Use REST API to creates a model and its associated content type.
 ---
 
-# Create model
+# CreateModel
 
-Creates a model and its associated content type. Note that this only creates the model. It will still need to be trained in the content center (see [example](#examples)).
+Creates a model and its associated content type. Note that this only creates the model. It will still need to be trained in the content center (see [example](rest-createmodel-method.md#examples)).
 
 ## HTTP request
 
@@ -38,6 +38,7 @@ None
 
 ## Request body
 
+|Name    |Type   |Description |
 |--------|-------|------------|
 |_metadata| |Set the object meta on the SPO. Always use the value:
 {
@@ -75,4 +76,4 @@ None
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
