@@ -333,7 +333,7 @@ In addition to the reports described in this article, several other reports are 
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
 |**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Microsoft 365 security center](view-email-security-reports.md)|
-|**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
+|**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Microsoft 365 security center](view-mail-flow-reports.md)|
 |**URL trace for Safe Links** (PowerShell only). The output of this cmdlet shows you the results of Safe Links actions over the past seven days.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Mail detail reports for EOP and Defender for Office 365 detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
@@ -348,7 +348,7 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
@@ -358,6 +358,6 @@ If you are not seeing data in your Defender for Office 365 reports, double-check
 
 ## Related topics
 
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smart reports and insights in the Microsoft 365 security center](reports-and-insights-in-security-and-compliance.md)
 
 [Role permissions (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

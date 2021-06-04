@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 A variety of reports are available in the [Microsoft 365 security center](https://security.microsoft.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 security center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
-![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Reports dashboard in the Microsoft 365 security center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## Compromised users report
 
@@ -522,7 +522,7 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
@@ -534,8 +534,8 @@ If you are not seeing data in your reports, double-check that your policies are 
 
 [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
 
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smart reports and insights in the Microsoft 365 security center](reports-and-insights-in-security-and-compliance.md)
 
-[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
+[View mail flow reports in the Microsoft 365 security center](view-mail-flow-reports.md)
 
 [View reports for Defender for Office 365](view-reports-for-mdo.md)

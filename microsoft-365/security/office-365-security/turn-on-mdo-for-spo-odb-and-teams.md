@@ -39,7 +39,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 - You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
 
-- To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center. For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
 - To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.
 
@@ -84,7 +84,7 @@ For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/m
 
 ## Step 3 (Recommended) Use the Microsoft 365 security center to create an alert policy for detected files
 
-You can create an alert policy that notifies you and other admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
+You can create an alert policy that notifies you and other admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alerts, see [Create activity alerts in the Microsoft 365 security center](../../compliance/create-activity-alerts.md).
 
 1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Policies & rules** \> **Alert policy** or open <https://security.microsoft.com/alertpolicies>.
 

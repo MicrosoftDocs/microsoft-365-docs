@@ -67,7 +67,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
   - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 security center **and** a member of the **Organization Management** role group in Exchange Online.
   - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
@@ -170,7 +170,7 @@ Creating a custom Safe Links policy in the Microsoft 365 security center creates
 
 3. In the policy details fly out that appears, click **Edit policy**.
 
-The available settings in the fly out that appears are identical to those described in the [Use the Security & Compliance Center to create Safe Links policies](#use-the-security--compliance-center-to-create-safe-links-policies) section.
+The available settings in the fly out that appears are identical to those described in the [Use the Microsoft 365 security center to create Safe Links policies](#use-the-security--compliance-center-to-create-safe-links-policies) section.
 
 To enable or disable a policy or set the policy priority order, see the following sections.
 

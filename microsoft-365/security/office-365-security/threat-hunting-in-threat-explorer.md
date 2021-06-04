@@ -263,7 +263,7 @@ To view and use Explorer or Real-time detections, you must have the following:
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

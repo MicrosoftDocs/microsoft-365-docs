@@ -36,7 +36,7 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
-- [Alerts in the Security & Compliance Center](alerts.md)
+- [Alerts in the Microsoft 365 security center](alerts.md)
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
@@ -58,7 +58,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
   - To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
   - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
   **Notes**:
 
