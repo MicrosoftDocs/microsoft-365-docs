@@ -101,7 +101,7 @@ Microsoft Defender for Office 365 can also be integrated into other Security Inf
 
 ## Next steps
 
-[Enable the evaluation environment Microsoft Defender for Office 365](eval-defender-office-365-enable-eval.md)
+Step 2 of 3: [Enable the evaluation environment Microsoft Defender for Office 365](eval-defender-office-365-enable-eval.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 

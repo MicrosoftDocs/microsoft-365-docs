@@ -128,11 +128,13 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
 |Reports dashboard     | On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.  |    [v](../office-365-security/view-email-security-reports.md)     |
 
-### Navigation you may need
+## Next steps
 
-[**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
+[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
 
-[**Return to the evaluation environment** article | Microsoft Docs](/microsoft-365/security/defender/eval-defender-office365-enable-eval)
+Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
 
 ### Helpful information
 
