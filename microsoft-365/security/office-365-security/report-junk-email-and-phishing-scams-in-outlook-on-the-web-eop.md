@@ -33,8 +33,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 ## What do you need to know before you begin?
 
-> [!CAUTION]
-> The recommended user submission experience is done using the Report Message or the Report Phishing add-ins. See [Enable the Report Message or the Report Phishing add-ins](./enable-the-report-message-add-in.md) for more information. The built-in experience is not recommended because it does not leverage the [User submission policy](./user-submission.md).
+> [!IMPORTANT]
+> We recommend the Report Message add-in or the Report Phishing add-in for user submissions. For more information, see [Enable the Report Message or the Report Phishing add-ins](./enable-the-report-message-add-in.md). We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md).
 
 - If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
