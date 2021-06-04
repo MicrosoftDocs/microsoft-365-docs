@@ -8,10 +8,9 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - Learn how to delete a model by a unique ID or it file name.
+description: Use REST API to delete a model by a unique ID or it file name.
 ---
 
 # Delete a model by ID or name
