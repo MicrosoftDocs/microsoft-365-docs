@@ -49,7 +49,7 @@ Because the Viva Learning (Preview) is not yet generally available, certain step
 
 ### User steps for Public Preview tenants
 
-Users who have been enabled for Public Preview testing by enabling the [policies previously described](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) need to [switch to Public Preview](https://docs.microsoft.com/microsoftteams/public-preview-doc-updates#enable-public-preview) in their Teams client.
+Users who have been enabled for Public Preview testing — by enabling the [policies previously described](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) — need to [switch to Public Preview](https://docs.microsoft.com/microsoftteams/public-preview-doc-updates#enable-public-preview) in their Teams client.
 
 1. Users must select their profile image > **About** > **Public Preview**.
    
