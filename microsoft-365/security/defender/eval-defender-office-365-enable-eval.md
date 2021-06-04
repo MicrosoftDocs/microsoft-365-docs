@@ -29,14 +29,17 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
-[Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
-[Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
-[Step 4: Audit inbound connectors](#step-4-audit-inbound-connectors)
+Use the following steps to enable and pilot Microsoft Defender for Office 365.
+
 
 Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.
 
 ![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+
+- [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
+- [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
+- [Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
+- [Step 4: Audit inbound connectors](#step-4-audit-inbound-connectors)
 
 ## Step 1: Activate trial licenses
 
