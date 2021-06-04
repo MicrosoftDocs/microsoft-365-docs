@@ -79,7 +79,7 @@ Check with your organization's Exchange admin to find out which configuration is
 
 ### Centralized Deployment Compatibility Checker
 
-Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel and PowerPoint. The Compatibility Checker is not required for Outlook support. Download the compatibility checker [here](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel and PowerPoint. The Compatibility Checker is not required for Outlook support. Download the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### Run the compatibility checker
   
@@ -150,7 +150,7 @@ If you or your users encounter problems loading the add-in while using Office ap
   
 |**Platform**|**Debug information**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler logs  <br/>  Tenant ID ( [learn how](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler logs  <br/>  Tenant ID ( [learn how](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. View the source of one of the office pages and look for the Correlation ID value and send it to support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich clients (Windows, Mac)  <br/> | Charles/Fiddler logs  <br/>  Build numbers of the client app (preferably as a screenshot from **File/Account**)  <br/> |
 
 ## Related content
