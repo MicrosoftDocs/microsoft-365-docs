@@ -28,19 +28,19 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Introduction
+This article outlines the process to enable and pilot Microsoft Defender for Office 365. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
 <br>
 
 Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
 ![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
 
+The following table describes the steps in the illustration.
 
-
-|Step  |Description  |
-|---------|---------|
-|[Review architecture requirements and key concepts](eval-defender-office-architecture.md)    |         |
-|[Enable the evaluation environment](eval-defender-office-enable-eval.md)     |         |
-|[Set up the pilot ](eval-defender-office-pilot.md)    |         |
+| |Step  |Description  |
+|---------|---------|---------|
+|1|[Review architecture requirements and key concepts](eval-defender-office-architecture.md)    | Understand the Defender for Office architecture and be sure your Exchange Online environment meets the architecture prerequisites.       |
+|2|[Enable the evaluation environment](eval-defender-office-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|3|[Set up the pilot ](eval-defender-office-pilot.md)    |    Create pilot groups, configure protection, and become familiar with key features and dashboards.     |
 
 
