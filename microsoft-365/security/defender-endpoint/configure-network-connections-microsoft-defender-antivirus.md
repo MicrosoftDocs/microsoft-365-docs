@@ -46,10 +46,12 @@ After you've enabled the service, you might need to configure your network or fi
 
 ## Services and URLs
 
-The table below lists the services and their associated website addresses (URLs). Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
+The table in this section lists the services and their associated website addresses (URLs). 
+
+Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you might need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
 
 | Service and description | URL |
-|:----|:---- |
+|----|---- |
 | Microsoft Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)<p>This service is used by Microsoft Defender Antivirus to provide cloud-delivered protection|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
 | Microsoft Update Service (MU) and Windows Update Service (WU) <p>These services allow for security intelligence and product updates	|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> For more details, see [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
 |Security intelligence updates Alternate Download Location (ADL)<p>This is an alternate location for Microsoft Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	`*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
