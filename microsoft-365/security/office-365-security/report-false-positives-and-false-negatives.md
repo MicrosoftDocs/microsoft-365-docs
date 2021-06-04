@@ -33,8 +33,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - For the best user submission experience, use the Report Message add-in or the Report Phishing add-in.
 
-> [!IMPORTANT]
-> The experience for reporting junk or phishing that is built into Outlook does not leverage [User submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
+  > [!IMPORTANT]
+  > The built-in experience for reporting junk or phishing in Outlook can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
 
 - The the Report Message add-in and the Report Phishing add-in work for Outlook in all platforms (Outlook on the web, iOS, Android, and Desktop).
 
@@ -52,17 +52,23 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 For messages in the Inbox or any other email folder except Junk Email, use the following method to report spam and phishing messages:
 
-1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.<br/>![Report Message - More actions](../../media/report-message-more-actions.png) <br/>![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
+1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
+
+   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   
+   ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
-
    - Moved to the Junk Email folder if they were reported as spam.
-
    - Deleted if they were reported as phishing.
 
 ### Report messages that are not junk
 
-1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**. <br/>![Report Message - More actions](../../media/report-message-more-actions.png) <br/>![Report Message - Not junk](../../media/report-message-not-junk.png)
+1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**.
+
+   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   
+   ![Report Message - Not junk](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
@@ -71,5 +77,4 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 To review messages that users report to Microsoft, you have these options:
 
 - Use the Admin Submissions portal. For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
-
 - Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
