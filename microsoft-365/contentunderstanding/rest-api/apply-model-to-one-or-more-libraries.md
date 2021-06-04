@@ -17,7 +17,7 @@ description: REST API - apply model
 
 # Apply a model to one or more libraries
 
-Applies (or syncs) a trained document understanding model to one or more libraries. (See [example](apply-model-to-one-or-more-libraries.md#response-body#example)).
+Applies (or syncs) a trained document understanding model to one or more libraries. (See [example](apply-model-to-one-or-more-libraries.md#example).)
 
 ## HTTP request
 
@@ -52,7 +52,7 @@ ViewOption|no|string|Specifies whether to set new model view as the library defa
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Response body](apply-model-to-one-or-more-libraries.md#response-body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](apply-model-to-one-or-more-libraries.md#request-body) for details.|
 
 ## Example
 
