@@ -8,16 +8,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - GetByTitle
+description: REST API - Learn how to get or update information about a SharePoint Syntex document understanding model using the model title.
 ---
 
 # GetByTitle
 
-Gets or updates information about a Syntex document understanding model using model title. (see [example](#examples)).
+Gets or updates information about a Syntex document understanding model using the model title (see [example](get-model-by-title.md#examples)).
 
 ## HTTP request
 
@@ -95,4 +93,4 @@ GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
