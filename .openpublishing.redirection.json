@@ -4039,6 +4039,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-vulnerabilities.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
+      "redirect_document_id": true
     }
   ]
 }
