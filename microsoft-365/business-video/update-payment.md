@@ -23,7 +23,9 @@ search.appverid:
 description: "Learn how to update your payment method for Microsoft 365 for business."
 ---
 
-# Update yor payment method for your subscription
+# Update the payment method for your subscription
+
+## Watch: Update your payment method
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 

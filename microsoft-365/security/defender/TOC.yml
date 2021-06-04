@@ -16,8 +16,10 @@
         href: microsoft-365-security-center-mdo.md  
       - name: Redirecting Defender for Endpoint to Microsoft 365 security center
         href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Defender for Office 365 to Microsoft 365 security center
+      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 security center
         href: microsoft-365-security-mdo-redirection.md   
+      - name: Microsoft 365 Defender integration with Azure Sentinel
+        href: microsoft-365-defender-integration-with-azure-sentinel.md   
       - name: Preview features
         href: preview.md
       - name: Troubleshoot issues
@@ -296,6 +298,9 @@
           items: 
             - name: Overview of Microsoft 365 Defender APIs (Preview)
               href: api-overview.md
+            - name: Supported Microsoft 365 Defender APIs
+              href: api-supported.md
+            
             - name: Get started with Microsoft 365 Defender APIs (Preview)
               items: 
                 - name: Microsoft 365 Defender API license and terms of use
@@ -314,19 +319,25 @@
                   href: api-articles.md
             - name: Microsoft 365 Defender APIs & schema (Preview)
               items: 
-                - name: Supported Microsoft 365 Defender APIs
-                  href: api-supported.md
                 - name: Common REST API error codes
                   href: api-error-codes.md
+                - name: Streaming API
+                  items:
+                    - name: Microsoft 365 Streaming API
+                      href: streaming-api.md
+                    - name: Stream advanced hunting events to Azure Events hub
+                      href: streaming-api-event-hub.md
+                    - name: Stream advanced hunting events to your storage account
+                      href: streaming-api-storage.md
                 - name: Advanced Hunting API
                   href: api-advanced-hunting.md
-                - name: Incident APIs
+                - name: Incidents APIs
                   items: 
-                    - name: Incident methods and properties
+                    - name: Incidents methods and properties
                       href: api-incident.md
                     - name: List incidents
                       href: api-list-incidents.md
-                    - name: Update incident
+                    - name: Update incidents
                       href: api-update-incidents.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
