@@ -63,7 +63,7 @@ The table below lists the services and their associated URLs. Make sure that the
 
 After allowing the URLs listed above, you can test if you're connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you're fully protected.
 
-**Use the cmdline tool to validate cloud-delivered protection:**
+### Use the cmdline tool to validate cloud-delivered protection
 
 Use the following argument with the Microsoft Defender Antivirus command-line utility (`mpcmdrun.exe`) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service:
 
@@ -76,7 +76,7 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
-**Attempt to download a fake malware file from Microsoft:**
+### Attempt to download a fake malware file from Microsoft
 
 You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud.
 
@@ -108,12 +108,3 @@ You'll also see a detection under **Quarantined threats** in the **Scan history*
 
    The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
 
-## Related articles
-
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-
-- [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-- [Command line arguments](command-line-arguments-microsoft-defender-antivirus.md)
-
-- [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006)
