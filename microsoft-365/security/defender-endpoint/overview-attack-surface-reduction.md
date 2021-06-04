@@ -18,6 +18,7 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
+ms.date: 06/02/2021
 ---
 
 # Overview of attack surface reduction capabilities
@@ -36,6 +37,8 @@ Your attack surfaces are all the places where your organization is vulnerable to
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
 ## Resources to learn more about attack surface reduction
+
+As mentioned in the video, Defender for Endpoint includes several attack surface reduction capabilities. Use the following resources to learn more:
 
 | Article | Description |
 |:---|:---|
