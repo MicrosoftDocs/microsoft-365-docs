@@ -30,14 +30,17 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+This article is [Step 1 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
+
+<!--
 ##### Navigate
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 - [Understand Defender for Office 365 architecture](#understand-the-architecture)
 - [Understand key concepts](#understand-key-concepts)
 - [Review architecture requirements](#review-architecture-requirements)
-- [SIEM integration](#siem-integration)
+- [SIEM integration](#siem-integration) -->
 
-Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements.
+Before enabling Defender for Office 365, be sure you understand the architecture and can meet the requirements. This article describes the architecture, key concepts, and the prerequisites that your Exchange Online environment must meet. 
 
 ## Understand the architecture
 
@@ -95,3 +98,11 @@ A successful MDO evaluation or production pilot assumes the following pre-requis
 You can integrate Microsoft Defender for Office 365 with Azure Sentinel to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response. For more information, see [Connect alerts from Microsoft Defender for Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).
 
 Microsoft Defender for Office 365 can also be integrated into other Security Information and Event Management (SIEM) solutions using the [Office 365 Activity Management API](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+## Next steps
+
+[Enable the evaluation environment Microsoft Defender for Office 365](eval-defender-office-365-enable-eval.md)
+
+Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
