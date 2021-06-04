@@ -8,16 +8,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - info about where model applied
+description: REST API - Learn how to get information about a model and the library where it has been applied.
 ---
 
 # Get model and primed library information
 
-Use to get information about a model and the library where it has been applied. (see [example](#examples)).
+Use to get information about a model and the library where it has been applied (see [example](get-model-and-primed-library-information.md#example)).
 
 ## HTTP request
 
@@ -53,9 +51,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’)
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries.
-Check the response body to understand if the model has been successfully applied to
-all the specified libraries. See [Response body](#Response body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](get-model-and-primed-library-information.md#response-body) for details.|
 
 ## Example
 
@@ -130,6 +126,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
 		}
 	]
 }```
+```
 
 ## See also
 
