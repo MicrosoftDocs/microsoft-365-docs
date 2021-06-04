@@ -4021,23 +4021,23 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/get-assessmnt-1methods-properties.md",
-      "redirect_url": "/microsoft-365/security/get-assessment-methods-properties",
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/get-assessmnt-secure-cfg.md",
-      "redirect_url": "/microsoft-365/security/get-assessment-secure-config.md",
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-secure-cfg.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-secure-config",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/get-assessmnt-software-inventory.md",
-      "redirect_url": "/microsoft-365/security/get-assessment-software-inventory",
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-inventory.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-inventory",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/get-assessmnt-software-vulnerabilities.md",
-      "redirect_url": "/microsoft-365/security/get-assessment-software-vulnerabilities",
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-vulnerabilities.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities",
       "redirect_document_id": true
     }
   ]
