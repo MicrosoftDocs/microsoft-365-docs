@@ -130,4 +130,4 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
