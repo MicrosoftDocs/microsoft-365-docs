@@ -140,7 +140,7 @@ Here, the analyst can take actions like reporting the mail as Spam, Phishing, or
 
 When navigating from an alert into Threat Explorer, the **View** will be filtered by **Alert ID**. This also applies in Real-time detection. Messages relevant to the specific alert, and an email total (a count) are shown. You will be able to see if a message was part of an alert, as well as navigate from that message to the related alert.
 
-Finally, alert ID is included in the URL, for example: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Finally, alert ID is included in the URL, for example: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
 > ![Filtering for Alert ID](../../media/AlertID-Filter.png)

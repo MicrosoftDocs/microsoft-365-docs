@@ -62,7 +62,7 @@ After you've verified that your mailbox meets all applicable prerequisites, [Use
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
