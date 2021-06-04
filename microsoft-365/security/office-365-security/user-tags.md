@@ -47,7 +47,7 @@ This article explains how to configure user tags in the Microsoft 365 security c
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
 > [!NOTE]
-> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
+> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/securitysettings/userTags.
 
 ## What do you need to know before you begin?
 
@@ -122,7 +122,8 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## Use the Microsoft 365 security center to remove user tags
 
-**Note**: You can't remove the built-in **Priority account** tag.
+> [!NOTE]
+> You can't remove the built-in **Priority account** tag.
 
 1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
 
