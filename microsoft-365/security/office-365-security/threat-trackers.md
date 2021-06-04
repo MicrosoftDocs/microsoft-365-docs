@@ -85,13 +85,13 @@ Whether you're reviewing email, content, or Office activities (coming soon), Exp
 
 And remember that you can always provide us feedback on this or other Microsoft 365 security features by clicking on the **Feedback** button in the lower right corner of the [Overview of the Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
 
-![Security & Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Microsoft 365 security center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
 
 ## Trackers and Microsoft Defender for Office 365
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links.md) features work best when your main email security solution is through Office 365.
 
-![Microsoft Defender for Office 365 in the Security & Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender for Office 365 in the Microsoft 365 security center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Today's more sophisticated attackers use commonly available tools to create new, obfuscated, or delayed attacks that won't be recognized by traditional signature-based anti-malware engines. The Safe Attachments feature takes email attachments and detonates them in a virtual environment to determine whether they're safe or malicious. This detonation process opens each file in a virtual computer environment, then watches what happens after the file is opened. Whether it's a PDF, and compressed file, or an Office document, malicious code can be hidden in a file, activating only once the victim opens it on their computer. By detonating and analyzing the file in the email flow, Defender for Office 365 capabilities finds these threats based on behaviors, file reputation, and a number of heuristic rules.
 

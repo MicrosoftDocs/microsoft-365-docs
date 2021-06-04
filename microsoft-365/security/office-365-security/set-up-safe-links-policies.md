@@ -474,7 +474,7 @@ To verify that Safe Links is scanning messages, check the available Microsoft De
 
 To verify that you've successfully created, modified, or removed Safe Links policies, do any of the following steps:
 
-- In the Microsoft 365 security center, go to **Threat management** \> **Policy** \> **ATP Safe Links**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list, and view the details in the fly out.
+- In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **Safe Links**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list, and view the details in the fly out.
 
 - In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 
