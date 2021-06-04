@@ -34,17 +34,17 @@ ms.prod: m365-security
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
-The user is added to the Restricted Users portal in the Security & Compliance Center. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+The user is added to the Restricted Users portal in the Microsoft 365 security center. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
 > "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
 > assistance. Remote Server returned '550 5.1.8 Access denied, bad outbound sender."
 
-Admins can remove users from the Restricted Senders portal in the Security & Compliance Center or in Exchange Online PowerShell.
+Admins can remove users from the Restricted Senders portal in the Microsoft 365 security center or in Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Restricted Users** page, use <https://protection.office.com/restrictedusers>.
+- You can open the Microsoft 365 security center at <https://security.microsoft.com>. Or to go directly to the **Restricted Users** page, use <https://security.microsoft.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -62,9 +62,9 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 
 - A sender exceeding the outbound email limits is an indicator of a compromised account. Before you remove the user from the Restricted Users portal, be sure to follow the required steps to regain control of their account. For more information, see [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
-## Use the Security & Compliance Center to remove a user from the Restricted Users list
+## Use the Microsoft 365 security center to remove a user from the Restricted Users list
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Restricted users**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Email & collaboration** > **Review** > **Restricted users**.
 
 2. Find and select the user that you want to unblock. In the **Actions** column, click **Unblock**.
 
@@ -84,7 +84,7 @@ The default alert policy named **User restricted from sending email** will autom
 > [!IMPORTANT]
 > For alerts to work, audit log search must to be turned on. For more information, see [Turn the audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. In the Security & Compliance Center, go to **Alerts** \> **Alert policies**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Email & collaboration** > **Policies & rules** > **Alert policy**.
 
 2. Find and select the **User restricted from sending email** alert.
 
