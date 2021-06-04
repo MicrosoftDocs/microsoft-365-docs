@@ -42,9 +42,9 @@ You can specify the cloud block timeout period with an [endpoint security policy
 
 3. Select (or create) an antivirus policy.
 
-4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Defender Cloud Extended Timeout In Seconds** box, specify the additional time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
+4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Defender Cloud Extended Timeout In Seconds** box, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
 
-5. (This is optional) Make any other changes to your antivirus policy. (Need help? See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+5. (This step is optional) Make any other changes to your antivirus policy. (Need help? See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
 6. Choose **Next**, and finish configuring your policy.
 
@@ -62,7 +62,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 4. Double-click **Configure extended cloud check** and ensure the option is enabled. 
 
-   Specify the additional amount of time to prevent the file from running while waiting for a cloud determination. Specify the additional time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
+   Specify the extra amount of time to prevent the file from running while waiting for a cloud determination. Specify the extra time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
 
 5. Select **OK**.
 
