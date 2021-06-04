@@ -29,10 +29,12 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
+
 Use the following steps to enable and pilot Microsoft Defender for Office 365.
 
 
-Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.
+<!--Microsoft Defender for Office 365 can be evaluated as part of a full E5 license of can be enabled as an add-on.-->
 
 ![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
@@ -40,6 +42,7 @@ Microsoft Defender for Office 365 can be evaluated as part of a full E5 license 
 - [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)
 - [Step 3: Audit accepted domains](#step-3-audit-accepted-domains)
 - [Step 4: Audit inbound connectors](#step-4-audit-inbound-connectors)
+- [Step 5: Activate the evaluation](#step-5-activate-the-evaluation)
 
 ## Step 1: Activate trial licenses
 
@@ -125,6 +128,10 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 |---------|---------|
 |  :::image type="content" source="../../media/MDOEval/7-mdo-eval-activate-eval.PNG" alt-text="This pane has a drop-down to review your settings. It also has a clickable link to Edit your Routing type if you need to. When you're ready click the big blue Create Evaluation button.":::   |   :::image type="content" source="../../media/MDOEval/8-mdo-eval-activate-eval.PNG" alt-text="And now the set up is complete. The blue button on this page says 'Go to Evaluation'.":::      |
 
-### Navigation you may need
+## Next steps
 
-[**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
+[Set up the pilot for Microsoft Defender for Office 365](eval-defender-office-pilot.md)
+
+Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
