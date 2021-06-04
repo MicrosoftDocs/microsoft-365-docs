@@ -63,7 +63,7 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 
 ### Roles and permissions
 
-To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
+To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Microsoft 365 security center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
 <br>
 
@@ -74,9 +74,8 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |global administrator|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
 |Security Administrator|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> and <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|
 
-To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+To learn more, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
 
 ### Turn on Audit logging for reporting and investigation
 
@@ -86,13 +85,16 @@ To learn more, see [Permissions in the Security & Compliance Center](permissions
 
 For more information about the recommended settings for anti-malware, see [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. Open <https://security.microsoft.com/antimalwarev2>.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Anti-malware**. Or to go directly to the anti-malware page, use <https://security.microsoft.com/antimalwarev2>.
 
 2. On the **Anti-malware** page, select the policy named **Default** policy by clicking on the name.
 
 3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
+  
    - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
+  
    - Verify that **Enable zero-hour auto purge for malware** is selected.
+  
    - Verify that none of the settings in the **Notification** section are selected.
 
    When you're finished, click **Save**.
@@ -107,31 +109,29 @@ For detailed instructions for configuring anti-malware policies, see [Configure 
 
 The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-phishing**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Anti-phishing**. Or to go directly to the anti-phishing page, use <https://security.microsoft.com/antiphishing>.
 
 2. Click **Default policy**.
 
-3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
+3. In the **Phishing threshold & protection** section, click **Edit protection settings**, and then configure the following settings:
 
-   - On the **Add users to protect** tab, turn *On* protection. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+   - Select **Enable domains to protect** to enable impersonation protection for internal and external sender domains.
+  
+   - Click **Manage trusted sender(s) and domain(s)** to add domains and users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+  
+   - Select **Enable mailbox intelligence** and **Enable intelligence for impersonation protection** to turn on mailbox intelligence-based impersonation protection.
+  
+   - Select **Enable spoof intelligence** to turn on anti-spoofing protection.
+  
+   - Click **Save**.
 
-   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add them now.
+4. In the **Actions** section, click **Edit actions**, and then configure the following settings:
 
-   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. Also, turn on impersonation safety tips.
-
-   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on and turn on mailbox intelligence-based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
-
-   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
-
-   - **Save** on the **Review your settings** tab after you've reviewed your settings.
-
-4. In the **Spoof** section, click **Edit**, and then specify the following settings:
-
-   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
-
-   - On the **Actions** tab, choose **Quarantine the message**.
-
-   - **Save** on the **Review your settings** tab after you have reviewed your changes. (If you didn't make any changes, **Cancel**.)
+   - Under **If message is detected as spoof** section, choose **Quarantine the message** from the drop-down list.
+  
+   - Under **Safety tips & indicators** section, select **Show for unauthenticated senders for spoof**.
+  
+   - Click **Save**.
 
 5. Close the default policy settings page.
 
@@ -141,7 +141,7 @@ To learn more about your anti-phishing policy options, see [Configure anti-phish
 
 For more information about the recommended settings for anti-spam, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-1. Open <https://security.microsoft.com/antispam>.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Anti-spam policies**. Or to go directly to the anti-spam page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, select the policy named **Anti-spam inbound policy** from the list by clicking on the name.
 
@@ -163,31 +163,34 @@ Time-of-click protection from malicious URLs and files is available in subscript
 
 To set up [Safe Attachments](safe-attachments.md), create at least one Safe Links policy.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Create**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe Attachments**, and then click **Create**.
 
 2. In the **New Safe Attachments policy** wizard that appears, configure the following settings:
 
-   - In the **Name** box, type `Block malware`, and then click **Next**.
+   - In the **Name your policy** page, enter the name as 'Block malware', and then click **Next**.
+  
+   - In the **Users and domains** page, enter the users, groups and domains, and then click **Next**.
 
    - On the **Settings** page, configure the following settings:
-     - In the **Safe attachments unknown malware response** section, choose **Block**.
-     - In the **Redirect attachment** section, select the option **Enable redirect**. Specify the email address for your organization's security administrator or operator, who will review detected files.
+     - In the **Safe attachments unknown malware response** section, choose **Block - Block current and future messages and attachments with detected malware.**.
+  
+     - In the **Redirect messages with detected attachments** section, select the option **Enable redirect**. Specify the email address for your organization's security administrator or operator, who will review detected files.
 
-     Click **Next**.
+   -  Click **Next**.
 
-3. On the **Applied to** page, click **Add a condition**, choose **Applied if: The recipient domain is**, click **Add**, select your domain or domains, click **Add**, click **Done**, and then click **Next**.
-
-4. Review your settings and then click **Finish**.
+3. Review your settings, click **Submit** and then click **Done**.
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
 To set up [Safe Links](safe-links.md), review and edit your global settings for Safe Links, and create at least one Safe Links policy.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Links**, and click **Global settings**, and then configure the following settings:
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe Links**, and click **Global settings**, and then configure the following settings:
 
-   - Verify **Use Safe Links in: Office 365 applications** is turned on: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Do not track when users click Safe Links**: Turn this setting off to track user clicks: ![Toggle off](../../media/scc-toggle-off.png).
-   - **Do not let users click through safe links to original URL**: Verify this setting is turned on: ![Toggle on](../../media/scc-toggle-on.png).
+   - Verify **Use Safe Links in Office 365 apps:** is turned on: ![Toggle on](../../media/scc-toggle-on.png).
+  
+   - **Do not track when users click protected links in Office 365 apps**: Turn this setting off to track user clicks: ![Toggle off](../../media/scc-toggle-off.png).
+  
+   - **Do not let users click through to the original URL in Office 365 apps**: Verify this setting is turned on: ![Toggle on](../../media/scc-toggle-on.png).
 
    When you're finished, click **Save**.
 
@@ -195,21 +198,31 @@ To set up [Safe Links](safe-links.md), review and edit your global settings for 
 
 3. In the **Create Safe Links policy** wizard that appears, configure the following settings:
 
-   - In the **Name** box, type a name, such as `Safe Links`, and then click **Next**.
+   - In the **Name your policy** page, enter the name as 'Safe Links', and then click **Next**.
+  
+   - In the **Users and domains** page, enter the users, groups and domains, and then click **Next**.
 
-   - On the **Settings** page, configure the following settings:
-     - **Select the action for unknown potentially malicious URLs in messages**: Choose **On**.
-     - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Choose **On**.
-     - **Apply safe links to email messages sent within the organization**
-     - **Wait for URL scanning to complete before delivering the message**
-     - **Apply safe links to email messages sent within the organization**
-     - **Do not allow users to click through to original URL**
+   - In the **Protection settings** page, configure the following settings:
+  
+      a. In **Select the action for unknown potentially malicious URLs in messages.** section, choose **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.
+  
+      b. In **Select the action for unknown or potentially malicious URLs within Microsoft Teams.** section, choose the following:
+  
+         - **On - Microsoft Teams will check against a list of known malicious links when user clicks on a link; URLs will not be rewritten.
+  
+         - **Apply real-time URL scanning for suspicious links and links that point to files**
+  
+         - **Wait for URL scanning to complete before delivering the message**
+  
+         - **Apply Safe links to email messages sent within the organization**
+  
+         - **Do not let users click through to the original URL**
 
-     Click **Next**
+      c. Click **Next**.
+  
+  - In the **Notification** page, select the preferred type of notification text and then click **Next**.
 
-4. On the **Applied to** page, click **Add a condition**, choose **Applied if: The recipient domain is**, click **Add**, select your domain or domains, click **Add**, click **Done**, and then click **Next**.
-
-5. Review your settings and then click **Finish**.
+4. Review your settings, click **Submit** and then click **Done**.
 
 To learn more, see [Set up Safe Links policies](set-up-safe-links-policies.md).
 
@@ -220,9 +233,9 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 > [!IMPORTANT]
 > **Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **ATP Safe Attachments**, and then click **Global settings**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe Attachments**, and then click **Global settings**.
 
-2. Verify the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle is to the right: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
+2. Verify **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is turned on: ![Toggle on](../../media/scc-toggle-on.png), and then click **Save**.
 
 3. Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-safe-attachments-policies.md) and [Safe Links policies](set-up-safe-links-policies.md).
 
@@ -240,7 +253,7 @@ Workloads like SharePoint, OneDrive, and Teams are built for collaboration. Usin
 
 To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Alerts** \> **Manage alerts**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), choose **Incidents & alerts** > **Alerts** > **Manage alerts**.
 
 2. Choose **New alert policy**.
 
@@ -258,7 +271,7 @@ To receive notification when a file in SharePoint Online, OneDrive for Business,
 
 7. **Save**.
 
-To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
+To learn more about alerts, see [Create activity alerts in the Microsoft 365 security center](../../compliance/create-activity-alerts.md).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
