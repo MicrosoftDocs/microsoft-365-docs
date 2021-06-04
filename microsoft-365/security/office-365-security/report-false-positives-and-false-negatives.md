@@ -52,29 +52,17 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 For messages in the Inbox or any other email folder except Junk Email, use the following method to report spam and phishing messages:
 
-1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Report Message - More actions](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
+1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.<br/>![Report Message - More actions](../../media/report-message-more-actions.png) <br/>![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
 
-   - Moved to the Junk Email folder if it was reported as spam.
+   - Moved to the Junk Email folder if they were reported as spam.
 
-   - Deleted if it was reported as phishing.
+   - Deleted if they were reported as phishing.
 
 ### Report messages that are not junk
 
-1. Click the **More actions** ellipses on the top-right corner of the selected message, click **Report message** from the dropdown menu, and then click **Not Junk**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Report Message - More actions](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![Report Message - Not junk](../../media/report-message-not-junk.png)
+1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**. <br/>![Report Message - More actions](../../media/report-message-more-actions.png) <br/>![Report Message - Not junk](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
