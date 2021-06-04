@@ -78,12 +78,12 @@ All our updates contain
 - integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
-<summary> May-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.6)</summary>
+<summary> May-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18200.4)</summary>
 
-&ensp;Security intelligence update version: **1.339.1969.0**  
+&ensp;Security intelligence update version: **1.341.8.0**  
 &ensp;Released: **June 3, 2021**  
 &ensp;Platform: **4.18.2104.14**  
-&ensp;Engine: **1.1.18100.6**  
+&ensp;Engine: **1.1.18200.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
