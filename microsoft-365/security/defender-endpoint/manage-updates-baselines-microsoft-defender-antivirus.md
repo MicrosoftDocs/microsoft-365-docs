@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
+ms.date: 06/04/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -78,6 +78,21 @@ All our updates contain
 - integration improvements (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
+<summary> May-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18200.4)</summary>
+
+&ensp;Security intelligence update version: **1.341.8.0**  
+&ensp;Released: **June 4, 2021**  
+&ensp;Platform: **4.18.2105.X**  
+&ensp;Engine: **1.1.18200.4**  
+&ensp;Support phase: **Security and Critical Updates**
+    
+### What's new
+- Improvements to behavior monitoring 
+
+### Known Issues
+No known issues  
+<br/>
+</details><details>
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
@@ -93,9 +108,7 @@ All our updates contain
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
@@ -113,14 +126,20 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
+<br/><br/>
+<details>
 <summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
 &ensp;Security intelligence update version: **1.333.7.0**  
 &ensp;Released: **March 9, 2021**  
 &ensp;Platform: **4.18.2102.3**  
 &ensp;Engine: **1.1.17900.7**  
-&ensp;Support phase: **Security and Critical Updates**
+&ensp;Support phase: **Technical upgrade support (only)**
     
 ### What's new
 
@@ -130,13 +149,7 @@ No known issues
 ### Known Issues
 No known issues  
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only. 
-<br/><br/>
-<details>
+</details><details>
 <summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
 &ensp;Security intelligence update version: **1.327.1854.0**  
