@@ -8,16 +8,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: REST API - GetByUniqueId
+description: Use REST API to get or update information about a SharePoint Syntex document understanding model.
 ---
 
 # GetByUniqueId
 
-Gets or updates information about a Syntex document understanding model (see [example](#examples)).
+Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getmodelbyid-method.md#examples)).
 
 ## HTTP request
 
@@ -95,4 +93,4 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
 
 ## See also
 
-- [Syntex document understanding model REST API](syntex-model-rest-api.md)
+[Syntex document understanding model REST API](syntex-model-rest-api.md)
