@@ -15,7 +15,7 @@ description: REST API - Learn how to get or update information about a SharePoin
 
 # GetByTitle
 
-Gets or updates information about a Syntex document understanding model using the model title (see [example](get-model-by-title.md#examples)).
+Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](get-model-by-title.md#examples)).
 
 ## HTTP request
 
