@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Use Microsoft Defender for Endpoint APIs
