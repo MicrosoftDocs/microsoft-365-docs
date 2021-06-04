@@ -107,9 +107,13 @@ HTTP/1.1 200 Ok
 
 Content-type: application/json
 
+![Image of odata context](images/get-live-response-odata.png)
+
 *File content:* 
 
-## Related topic
+![Image of file content](images/file-content.png)
+
+## Related topics
 
 - [Get machine action API](get-machineaction-object.md)
 - [Cancel machine action](cancel-machine-action.md)

@@ -115,8 +115,7 @@ https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e4
 ```
 **JSON**
 
-image
-
+![Image of JSON request response](images/run-live-response-json.png)
 
 **Response**
 
@@ -127,6 +126,8 @@ HTTP/1.1 200 Ok
 ```
 
 Content-type: application/json
+
+![Image of JSON response](images/json-response.png)
 
 ## Related topics
 - [Get machine action API](get-machineaction-object.md)
