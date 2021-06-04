@@ -101,7 +101,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+- You can get to the Microsoft 365 security center at <https://security.microsoft.com/> and sign in using your credentials. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -115,7 +115,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the security center to assign preset security policies to users
 
-1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Preset Security Policies**.
+1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
@@ -128,7 +128,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
-   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    When you're finished, click **Next**.
 
