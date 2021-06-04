@@ -143,7 +143,7 @@ Create a subtask or role files that contribute to a playbook or task.
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      keyserver: https://packages.microsoft.com/
+      keyserver: https://packages.microsoft.com/keys/microsoft.asc
       id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
     when: ansible_os_family == "Debian"
 
