@@ -28,7 +28,7 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 # Set up Microsoft 365 Business Basic
 
- Watch a short video about setting up Microsoft 365 Business Basic.<br><br>
+## Watch: Set up Microsoft 365 Business Basic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
@@ -48,13 +48,13 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 ::: moniker range="o365-germany"
 
-1. If you're using Office 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. If you're using Office 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 

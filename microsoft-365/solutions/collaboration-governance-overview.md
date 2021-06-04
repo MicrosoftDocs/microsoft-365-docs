@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about how to govern related features in Microsoft 365 groups, Teams, SharePoint, and Yammer."
 ---
 

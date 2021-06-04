@@ -1,5 +1,5 @@
 ---
-title: "Network connectivity in the Microsoft 365 Admin Center (preview)"
+title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,10 +14,10 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: "Overview of network connectivity in the Microsoft 365 Admin Center (preview)"
+description: "Overview of network connectivity in the Microsoft 365 Admin Center"
 ---
 
-# Network connectivity in the Microsoft 365 Admin Center (preview)
+# Network connectivity in the Microsoft 365 Admin Center
 
 The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant.
 
@@ -48,7 +48,7 @@ For this option, you must have at least two computers running at each office loc
 
 Windows Location Service must be consented on the machines. You can test this by running the **Maps** app and locating yourself. It can be enabled on a single machine with **Settings | Privacy | Location** where the setting _Allow apps to access your location_ must be enabled. Windows Location Services consent can be deployed to PCs using MDM or Group Policy with the setting _LetAppsAccessLocation_.
 
-You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. Multiple office locations within the same city will not be shown when using Windows Location Services. Location information is rounded to the nearest 300 metres by 300 metres so that more precise location information is not accessed.
+You do not need to add locations in the Admin Center with this method as they are automatically identified at the city resolution. Multiple office locations within the same city will not be shown when using Windows Location Services. Location information is rounded to the nearest 300 meters by 300 meters so that more precise location information is not accessed.
 
 The machines should have Wi-Fi networking rather than an ethernet cable. Machines with an ethernet cable do not have accurate location information.
 

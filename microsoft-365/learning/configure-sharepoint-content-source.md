@@ -1,10 +1,10 @@
 ---
-title: "Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,13 +15,17 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: None
 description: "Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)."
-ROBOTS: NOINDEX, NOFOLLOW
+
 ---
 
-# Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
+# Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
 
 > [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+> This feature is not yet available in product preview. 
+
+
+
+<!---
 
 You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
 
@@ -35,11 +39,11 @@ Viva Learning (Preview) supports the following document types:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-For more information, see the [SharePoint Online documentation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## Permissions
 
-Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visable within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
+Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning (Preview) follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning (Preview). Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
 Content deletion from your organization’s repository is not currently supported.
 
@@ -65,11 +69,11 @@ To configure SharePoint as a learning content sources in for Viva Learning (Prev
 
 1.	In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
  
-2.	On the **Org settings** page, on the **Services** tab, select **Learning app (Preview)**.
+2.	On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
 
      ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
 
-3.	On the **Learning app (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning to create a centralized repository.
+3.	On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
 
      ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
 
@@ -134,3 +138,4 @@ Knowledge admins can access their organization’s Learning App Content Reposito
 
 3. Select **Check access** to connect to your organization’s centralized library.
 	 
+--->

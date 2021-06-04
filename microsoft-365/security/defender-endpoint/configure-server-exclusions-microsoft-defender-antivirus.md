@@ -9,12 +9,13 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
+ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
