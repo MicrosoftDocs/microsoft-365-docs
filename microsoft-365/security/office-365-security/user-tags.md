@@ -47,7 +47,7 @@ This article explains how to configure user tags in the Security & Compliance Ce
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
 > [!NOTE]
-> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
+> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/securitysettings/userTags.
 
 ## What do you need to know before you begin?
 
