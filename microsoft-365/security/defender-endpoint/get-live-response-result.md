@@ -34,6 +34,8 @@ ms.custom: api
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
 ## API description
 
 Retrieves specific live response command by its index
@@ -56,10 +58,10 @@ started](apis-intro.md).
 
 ## HTTP request
 
-*HTTP*
-
+```HTTP
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action
 id}/GetLiveResponseResultDownloadLink(index={command-index})
+```
 
 ## Request headers
 

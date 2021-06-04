@@ -99,8 +99,7 @@ Commands:
 ## Response
 
 -   If successful, this method returns 200, Created response code with a Machine
-    Action entity. If machine action entity with the specified ID was not found
-    - 404 Not Found.
+    Action entity. If machine action entity with the specified ID was not found - 404 Not Found.
 
 ## Example
 
