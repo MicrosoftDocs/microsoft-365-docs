@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
+ms.date: 06/04/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -81,8 +81,8 @@ All our updates contain
 <summary> May-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**  
-&ensp;Released: **June 3, 2021**  
-&ensp;Platform: **4.18.2104.14**  
+&ensp;Released: **June 4, 2021**  
+&ensp;Platform: **4.18.2105.X**  
 &ensp;Engine: **1.1.18200.4**  
 &ensp;Support phase: **Security and Critical Updates**
     
