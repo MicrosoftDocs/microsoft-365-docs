@@ -85,7 +85,7 @@
           href: rest-api/syntex-model-rest-api.md
         - name: Apply a model to one or more libraries
           href: rest-api/apply-model-to-one-or-more-libraries.md
-        - name: Delete a model by name or id
+        - name: Delete a model by ID or name
           href: rest-api/delete-a-model-by-name-or-id.md
         - name: Get model and primed library information
           href: rest-api/get-model-and-primed-library-information.md
