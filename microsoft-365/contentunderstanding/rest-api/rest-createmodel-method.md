@@ -40,12 +40,8 @@ None
 
 |Name    |Type   |Description |
 |--------|-------|------------|
-|_metadata| |Set the object meta on the SPO. Always use the value:
-{
-    "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
-}
-|
-|ContentTypeGroup|string|The associated content type group assocated with the model. Defaulted to "Intelligent Document Content Types"|
+|_metadata|  |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|ContentTypeGroup|string|The associated content type group associated with the model. Defaulted to "Intelligent Document Content Types".|
 |ContentTypeName|string|The associated content type name. The created model file will have the same name.|
 
 ## Responses
