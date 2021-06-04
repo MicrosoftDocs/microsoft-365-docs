@@ -288,6 +288,9 @@
 ##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
+##### [Specify whether users can locally modify Microsoft Defender Antivirus policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Specify whether users can see or interact with Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Deploy and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
-####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
-####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
-####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
-####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+####### [Export assessment methods and properties](get-assessment-methods-properties.md)
+####### [Export secure configuration assessment](get-assessment-secure-config.md)
+####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
