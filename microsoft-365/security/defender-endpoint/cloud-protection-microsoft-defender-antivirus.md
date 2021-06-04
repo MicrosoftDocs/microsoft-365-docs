@@ -45,10 +45,10 @@ With cloud-delivered protection, next-generation technologies provide rapid iden
 
 Cloud-delivered protection is enabled by default. However, you may need to re-enable it if it has been disabled as part of previous organizational policies. To learn more, see [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud-delivered protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. You can also [configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
+Organizations running Windows 10 E5 can also take advantage of emergency dynamic intelligence updates, which provide near real-time protection from emerging threats. When you turn on cloud-delivered protection, fixes for malware issues can be delivered via the cloud within minutes, instead of waiting for the next update. [Configure Microsoft Defender Antivirus to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
 > [!TIP]
-> You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+> Visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 ## Next steps
 
