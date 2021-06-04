@@ -79,3 +79,7 @@ The following articles describe how to perform key tasks when configuring Micros
 > You can also review the [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md) topic for an overview of each tool and links to further help.
 
 See
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

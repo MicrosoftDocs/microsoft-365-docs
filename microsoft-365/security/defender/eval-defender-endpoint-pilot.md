@@ -32,3 +32,8 @@ Attack surface reduction rules help prevent actions typically used by malware to
 [Evaluate attack surface reduction rules - Windows security | Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-attack-surface-reduction)
 
 ## Promote MDE Pilot to Production
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

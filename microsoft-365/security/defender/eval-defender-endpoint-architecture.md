@@ -64,4 +64,6 @@ Threat Analytics |  | [Track and respond to emerging threats with Microsoft Defe
 
 ## SIEM integration
 
-??
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

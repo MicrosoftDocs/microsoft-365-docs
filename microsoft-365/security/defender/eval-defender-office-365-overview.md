@@ -44,3 +44,9 @@ The following table describes the steps in the illustration.
 |3|[Set up the pilot ](eval-defender-office-pilot.md)    |    Create pilot groups, configure protection, and become familiar with key features and dashboards.     |
 ||||
 
+
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

@@ -30,3 +30,9 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 ![Microsoft 365 Defender evaluation and piloting process](../../media/defender/m365-defender-eval-process.png)
+
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

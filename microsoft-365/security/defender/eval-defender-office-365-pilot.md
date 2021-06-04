@@ -146,3 +146,7 @@ Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office
 Bcarter -- how is this different than [Protect against threats](../office-365-security/protect-against-threats.md)? We need to consolidate recommendations into an authoritative article and retire all the articles that serve the same purpose. We're doing this across security
 
 [Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

@@ -447,3 +447,10 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 
 |![Closing and summary phase](../../media/mtp/close.png) <br>[Closing and summary phase](m365d-pilot-close.md)|Analyze your Microsoft 365 Defender pilot outcome, present them to your stakeholders, and take the next step.
 |:-----|:-----|
+
+
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

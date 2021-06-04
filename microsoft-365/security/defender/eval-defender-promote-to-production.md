@@ -47,3 +47,8 @@ After successfully evaluating or piloting MDO, it can be promoted to your entire
 
 
 ## Microsoft Cloud App Security
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

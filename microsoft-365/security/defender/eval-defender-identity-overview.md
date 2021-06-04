@@ -31,3 +31,8 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

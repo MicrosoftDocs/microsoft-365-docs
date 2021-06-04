@@ -45,3 +45,10 @@ update this illustration
 |[Set up the pilot ](eval-defender-mcas-pilot.md)    |         |
 
 
+
+
+
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
