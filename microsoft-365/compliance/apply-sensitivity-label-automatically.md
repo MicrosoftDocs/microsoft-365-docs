@@ -57,7 +57,7 @@ There are two different methods for automatically applying a sensitivity label t
     - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Note that files cannot be auto-labeled if they are part of an open session (the file is open).
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive).
+    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), these numbers increase to 100 polices and 100 sites when they are specified individually. You can also specify all sites that are exempt from the 100 sites maximum. 
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -231,6 +231,8 @@ Workflow for an auto-labeling policy:
 1. Create and configure an auto-labeling policy.
 
 2. Run the policy in simulation mode, which can take 48 hours to complete.
+    
+    Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), this time is reduced to 12 hours and when complete, sends an email notification.
 
 3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
 
@@ -276,6 +278,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    
+    Preview improvements: If you opt-in to the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), you can specify **All sites**.
+
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
     
