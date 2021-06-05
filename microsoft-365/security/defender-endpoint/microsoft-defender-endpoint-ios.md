@@ -54,7 +54,7 @@ iOS devices along with other platforms.
 - Access to the Microsoft Defender Security Center portal.
 
     > [!NOTE]
-    > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on iOS. Currently only enrolled devices are supported for enforcing Defender for Endpoint on iOS related device compliance policies in Intune.
+    > Microsoft Intune is the only supported Unified Endpoint Management (UEM) solution for deploying Microsoft Defender for Endpoint and enforcing Defender for Endpoint on iOS related device compliance policies in Intune.
 
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
 
@@ -64,12 +64,9 @@ iOS devices along with other platforms.
 
 - Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
-> [!NOTE]
-> **Microsoft Defender for Endpoint on iOS is available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
-
 ## Installation instructions
 
-Deployment of Microsoft Defender for Endpoint on iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported.
+Deployment of Microsoft Defender for Endpoint on iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported. End-users can also directly install the app from the [Apple app store](https://aka.ms/mdatpiosappstore).
 For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
 
 ## Resources
