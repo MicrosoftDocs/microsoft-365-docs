@@ -37,7 +37,7 @@ The following information lists the updates made to the Microsoft Defender for E
 
 ### 05.25.2021
 
-- Added new API [Export assessment methods and properties per device](get-assessmnt-1methods-properties.md).
+- Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).
 
 ### 03.05.2021
 
