@@ -63,7 +63,7 @@ For each device property, see **Device Properties** section above for more detai
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: although InstancePathId is a string uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0, the number at the end, e.g. '&0' in previous value, representing the avaliable slot may change in different machine. You can use wildcard at the end, e.g. USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -194,7 +194,7 @@ The Removable Storage Access Control feature enables you to apply policy via Gro
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
 ### Deploying policy via Group Policy
 
@@ -241,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
       For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
 
@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be: 
 
