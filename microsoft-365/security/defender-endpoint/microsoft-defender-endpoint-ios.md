@@ -54,7 +54,7 @@ iOS devices along with other platforms.
 - Access to the Microsoft Defender Security Center portal.
 
     > [!NOTE]
-    > Microsoft Intune is the only supported Unified Endpoint Management (UEM) solution for deploying Microsoft Defender for Endpoint and enforcing Defender for Endpoint on iOS related device compliance policies in Intune.
+    > Microsoft Intune is the only supported Unified Endpoint Management (UEM) solution for deploying Microsoft Defender for Endpoint and enforcing Defender for Endpoint related device compliance policies in Intune.
 
 - Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.
 
