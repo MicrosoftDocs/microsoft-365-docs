@@ -372,7 +372,7 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-### Opt in to the new preview for auto-labeling policies
+## Opt in to the new preview for auto-labeling policies
 
 The new preview version of auto-labeling policies for OneDrive and SharePoint has the following improvements from the general availability version:
 
