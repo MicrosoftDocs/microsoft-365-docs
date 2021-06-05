@@ -198,7 +198,7 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 If you are using the same Azure Active Directory identity partition for Office 365 and Microsoft Azure in the Microsoft Cloud Deutschland instance, make sure that you are preparing for the customer driven migration of Microsoft Azure services.
 
 > [!NOTE]
-> The migration of your Microsoft Azure services may not start before your Office 365 tenant has reached migration phase 9 and must be completed before migration phase 10 has been completed.
+> The migration of your Microsoft Azure services may not start before your Office 365 tenant has reached migration phase 9 and must be completed before migration phase 10 has been started.
 
 Customers who use Office 365 and Azure resources (for example, networking, compute, and storage) will perform the migration of resources to the Office 365 services instance. This migration is the customer's responsibility. Message Center posts will signal the start. Migration must be completed before finalization of the Azure AD organization in the Office 365 services environment. For Azure migrations, see the Azure migration playbook, [Overview of migration guidance for Azure Germany](https://docs.microsoft.com/azure/germany/germany-migration-main).
 
