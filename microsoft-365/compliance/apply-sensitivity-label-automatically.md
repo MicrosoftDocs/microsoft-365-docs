@@ -57,7 +57,7 @@ There are two different methods for automatically applying a sensitivity label t
     - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
         - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Note that files cannot be auto-labeled if they are part of an open session (the file is open).
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), these numbers increase to 100 polices and 100 sites when they are specified individually. You can also specify all sites that are exempt from the 100 sites maximum. 
+    - Maximum of 10 auto-labeling policies per tenant, each targeting up to 10 sites (SharePoint or OneDrive). Preview improvements: With the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), these numbers increase to 100 policies and 100 sites when they are specified individually. You can also specify all sites that are exempt from the 100 sites maximum. 
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
@@ -197,7 +197,7 @@ Specific to the Azure Information Protection unified labeling client:
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
 > [!NOTE]
-> Consider opting in to the current preview that contains many improvements from the general availability version for auto-labeling policies. For more information, see [Opt-in to the new preview for auto-labeling policies](#opt-in-to-the-new-preview-for-auto-labeling-policies).
+> Consider opting in to the current preview that contains many improvements from the general availability version for auto-labeling policies. For more information, see [Opt in to the new preview for auto-labeling policies](#opt-in-to-the-new-preview-for-auto-labeling-policies).
 
 Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
 
@@ -279,7 +279,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
     
-    Preview improvements: If you opt-in to the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), you can specify **All sites**.
+    Preview improvements: If you opt in to the new [preview](#opt-in-to-the-new-preview-for-auto-labeling-policies), you can specify **All sites**.
 
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
@@ -372,7 +372,7 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-### Opt-in to the new preview for auto-labeling policies
+### Opt in to the new preview for auto-labeling policies
 
 The new preview version of auto-labeling policies for OneDrive and SharePoint has the following improvements from the general availability version:
 
@@ -397,7 +397,7 @@ To opt in to this preview, ...
 
 Before you request a tenant opts in to the preview, be aware of the following conditions:
 
-- After your tenant is running the preview, you cannot opt-out and return to the general availability version. It will continue to run the preview until this version becomes general availability.
+- After your tenant is running the preview, you cannot opt out and return to the general availability version. It will continue to run the preview until this version becomes general availability.
 
 - If you have any auto-labeling policies that are currently in simulation mode, you must re-run the simulation by selecting **Restart Simulation** when prompted. If you don't, the simulation won't complete and the preview won't be enabled.
 
