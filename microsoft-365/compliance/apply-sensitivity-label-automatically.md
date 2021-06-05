@@ -369,11 +369,13 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 
 ### Opt-in to the new preview for auto-labeling policies
 
-The new preview version of auto-labeling policies has the following improvements from the general availability version:
+The new preview version of auto-labeling policies for OneDrive and SharePoint has the following improvements from the general availability version:
+
+- Maximum of 100 auto-labeling policies per tenant instead of 10.
 
 - Support for all OneDrive and SharePoint sites by specifying **All sites** instead of having to enter each site by URL. As a result, all existing sites and any newly created sites are automatically selected, although you can still manually enter sites by their URL if needed.
 
-- For OneDrive and SharePoint sites that you manually enter, up to 100 sites are now supported instead of 10 sites.
+- For the sites that you manually enter, up to 100 sites are now supported instead of 10 sites.
 
 - Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
 
