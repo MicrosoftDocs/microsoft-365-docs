@@ -197,7 +197,7 @@ Specific to the Azure Information Protection unified labeling client:
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 
 > [!NOTE]
-> Consider opting in to the current preview that removes some restrictions and contains many improvements from the general availability version for auto-labeling policies. For more information, see [Opt-in to the new preview for auto-labeling policies](#opt-in-to-the-new-preview-for-auto-labeling-policies).
+> Consider opting in to the current preview that contains many improvements from the general availability version for auto-labeling policies. For more information, see [Opt-in to the new preview for auto-labeling policies](#opt-in-to-the-new-preview-for-auto-labeling-policies).
 
 Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
 
