@@ -373,18 +373,18 @@ The new preview version of auto-labeling policies has the following improvements
 
 - Support for all OneDrive and SharePoint sites by specifying **All sites** instead of having to enter each site by URL. As a result, all existing sites and any newly created sites are automatically selected, although you can still manually enter sites by their URL if needed.
 
-- For OneDrive and SharePoint sites that you manually entered, up to 100 sites are now supported instead of 10 sites.
+- For OneDrive and SharePoint sites that you manually enter, up to 100 sites are now supported instead of 10 sites.
 
 - Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
 
 - Simulation improvements:
     - Running the auto-labeling policy in simulation mode takes up to 12 hours to complete for the initial run, instead of up to 48 hours. Rerunning the policy takes less than 3 hours to complete.
-    - Better performance by providing up to 100 randomly sampled matched files for review for each site (OneDrive or SharePoint) instead of every matched items for review.
+    - Better performance by providing up to 100 randomly sampled matched files for review for each site (OneDrive or SharePoint) instead of every matched item for review.
     - When simulation is complete, an email notification is sent to the user configured to receive [activity alerts](alert-policies.md).
 
 - Improvements to help you review matched items:
     - Additional metadata information for the sampled matched items.
-    - Ability to export information about the matched items such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
+    - Ability to export information about the matched items, such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
 
 To opt in to this preview, ...
 
