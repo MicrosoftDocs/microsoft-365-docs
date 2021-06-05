@@ -26,7 +26,7 @@ description: "Summary: Understand the migration from Microsoft Cloud Germany (Mi
 > [!NOTE]
 > This article only applies to eligible Microsoft Cloud Deutschland customers.
 
-In August 2018, Microsoft announced our intention to deliver the complete Microsoft cloud — Azure, Office 365, Dynamics 365, and Power Platform – from new cloud regions in Germany to better enable the digital transformation of our customers. In August 2019, we announced we are now in the process of opening of the new cloud regions in Germany. We have since announced the availability of Azure, Office 365, Dynamics 365, and Power Platform.
+In August 2018, Microsoft announced our intention to deliver the complete Microsoft cloud — Azure, Office 365, Dynamics 365, and Power Platform — from new cloud regions in Germany to better enable the digital transformation of our customers. In August 2019, we announced we are now in the process of opening of the new cloud regions in Germany. We have since announced the availability of Azure, Office 365, Dynamics 365, and Power Platform.
 
 The new regions are designed to address the evolving needs of German customers with greater flexibly, the latest intelligent cloud services, and full connectivity to our Microsoft 365 services cloud network as well as customer data residency within Germany.
 
