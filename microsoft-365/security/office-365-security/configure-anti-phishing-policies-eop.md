@@ -133,7 +133,7 @@ Creating a custom anti-phishing policy in the security center creates the anti-p
 
    When you're finished, click **Next**.
 
-7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
+7. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished, click **Submit**.
 
