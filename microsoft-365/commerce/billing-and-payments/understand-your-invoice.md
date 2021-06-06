@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,13 +13,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices
+ms.date: 05/04/2021
 ---
 
 # Understand your bill or invoice
@@ -101,17 +104,13 @@ Invoices are available online. A link to your online invoice is available from y
 see more details for each item. The online invoice includes:
 
 - **Pricing details**&mdash;Additional information including details about discounts and product pricing.
-
 - **Online payment**&mdash;You can choose to make a payment online from the invoice.
-
 - **Azure cost management**&mdash;For Azure customers, online invoices include a link to Azure cost management.
 
 ### To view your online invoice
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
 2. To download the .pdf version of your invoice, choose **Download invoice PDF** in the row for the invoice you want to see.
-
 3. To view your online invoice, choose an invoice from the list. You can also download the .pdf from the invoice details page.
 
 ## Invoice FAQ
@@ -141,10 +140,17 @@ Payment instructions depend on your payment method and are provided at the botto
 
 ### Why don't I see Azure prepayment as a payment method?
 
-Azure prepayment is available as a payment method only for eligible Azure product and services.
+Azure prepayment is available as a payment method only for eligible Azure product and services
 
-## Need help? Contact support.
+## Need help? Contact support
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../business-video/get-help-support.md).
+
+## Related content
+
+[Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
+[Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
+[Review your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
+[Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview) (article)

@@ -93,7 +93,7 @@ Download the onboarding package from Microsoft Defender Security Center:
 
 ## Create Ansible YAML files
 
-Create a subtask or role files that contribute to an playbook or task.
+Create a subtask or role files that contribute to a playbook or task.
 
 - Create the onboarding task, `onboarding_setup.yml`:
 
@@ -122,7 +122,7 @@ Create a subtask or role files that contribute to an playbook or task.
       when: not mdatp_onboard.stat.exists
     ```
 
-- Add the Defender for Endpoint repository and key.
+- Add the Defender for Endpoint repository and key, `add_apt_repo.yml`:
 
     Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
@@ -277,3 +277,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Add and remove APT repositories](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [Manage apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## See also
+- [Investigate agent health issues](health-status.md)

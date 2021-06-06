@@ -73,7 +73,7 @@ See [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
 ## Audit logging
 
-Tracks specific changes made by admins to your organization. These reports can help you troubleshoot configuration issues or find the cause of security or compliance-related problems. See [Auditing reports in EOP](auditing-reports-in-eop.md).
+Tracks specific changes made by admins to your organization. These reports can help you troubleshoot configuration issues or find the cause of security or compliance-related problems. See [Auditing reports in Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## Reporting and message trace data availability and latency
 

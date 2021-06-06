@@ -92,9 +92,12 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 
 ## End-user documentation for sensitivity labels
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. For built-in labeling, you can use the label policy setting **Provide users with a link to a custom help page** to specify an internal link for this documentation. Users can then easily access it by selecting **Learn More** from the **Sensitivity** button on the Office ribbon for Word, PowerPoint, Excel, and Outlook.
+The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. You can use the label policy setting **Provide users with a link to a custom help page** to specify an internal link for this documentation. Users can then easily access it from the **Sensitivity** button:
 
-To help you write your customized documentation, see the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Sensitivity Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+- For built-in labeling: **Learn More** menu option.
+- For the Azure Information Protection unified labeling client: **Help and Feedback** menu option > **Tell Me More** link in the Microsoft Azure Information Protection dialog box.
+
+To help you provide your customized documentation, see the following page and downloads that you can use to help train your users: [End User Training for Sensitivity Labels](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 You can also use the following resources for basic instructions:
 

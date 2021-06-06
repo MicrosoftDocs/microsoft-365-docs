@@ -175,10 +175,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 *Additional actions* were applied after delivery of the email. They can include *ZAP*, *manual remediation* (action taken by an Admin such as soft delete), *dynamic delivery*, and *reprocessed* (for an email that was retroactively detected as good).
 
 > [!NOTE]
->
-> - As part of the pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through **Additional actions**.
->
-> - There will be new fields and values for **Detection technologies** and **Additional actions** (especially for ZAP scenarios). You'll need to evaluate your existing saved queries and tracked queries to make sure they work with the new values.
+> As part of the pending changes, the "Removed by ZAP" value currently surfaced in the Delivery Action filter is going away. You'll have a way to search for all email with the ZAP attempt through **Additional actions**.
 
 > [!div class="mx-imgBorder"]
 > ![Additional Actions in Explorer](../../media/Additional_Actions.png)

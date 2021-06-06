@@ -68,7 +68,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 Distribution lists that fail to upgrade remain unchanged.
 
-If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../contact-support-for-business-products.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
+If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../../business-video/get-help-support.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
 It's possible that the distribution list didn't get upgraded because of a service outage, but unlikely. If you want, wait a while and then try to upgrade the DL again.
 
@@ -81,13 +81,13 @@ If you're experienced at using PowerShell, you might want to go this route inste
 To upgrade a single DL, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
+For example, if you want to upgrade a DL with SMTP address dl1@contoso.com, run the following command:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 ```
 
 > [!NOTE]
@@ -98,8 +98,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 You can also pass multiple DLs as a batch and upgrade them together:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 For example, if you want to upgrade five DLs with SMTP address `dl1@contoso.com` and `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` and `dl5@contoso.com`, run the following command:
@@ -154,7 +154,7 @@ You can only upgrade cloud-managed, simple, non-nested distribution lists. The t
 
 If you want to check whether a DL is eligible or not, you can run the below command:
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 If you want to check which DLs are eligible for upgrade just run the following command:
 
@@ -185,3 +185,9 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 ### What happens to the DL if the upgrade from EAC fails?
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
+
+## Related content
+
+[Compare groups](../create-groups/compare-groups.md) (article)\
+[Explaining Microsoft 365 Groups to your users](../create-groups/explain-groups-knowledge-worker.md) (article)\
+[Add or remove members from Microsoft 365 groups using the admin center](../create-groups/add-or-remove-members-from-groups.md)

@@ -5,23 +5,24 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - okr_SMB
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
-description: "Learn how to assign licenses to users."
+- commerce_licensing
+search.appverid: MET150
+description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
+ms.date: 04/26/2021
 ---
 
 # Assign licenses to users
@@ -36,9 +37,10 @@ You can assign licenses to users on either the **Active users** page, or on the 
 ## Before you begin
 
 - You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- You can [assign licenses to user accounts with Office 365 PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- You can [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
+
 
 ## Use the Licenses page to assign licenses to users
 
@@ -46,20 +48,22 @@ When you use the **Licenses** page to assign licenses, you assign licenses for a
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
 
 ::: moniker-end
+
 
 2. Select a product.
 3. On the product details page, select **Assign licenses**.
@@ -73,21 +77,22 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
 
 ::: moniker-end
+
 
 2. On the **Licenses** page, select the row for a specific user.
 3. In the right pane, select or deselect the apps and services that you want to give access to or remove access from.
@@ -107,22 +112,27 @@ When you use the **Active users** page to assign licenses, you assign users lice
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
+
 2. Select the circles next to the names of the users that you want to assign licenses to.
-3. At the top, select **More options (...)**, then select **Manage product licenses**.
+3. At the top, select the three dots (more actions), then select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select **Add to existing product license assignments** \> **Next**.
 5. In the **Add to existing products** pane, switch the toggle to the **On** position for the license that you want the selected users to have.\
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
 6. At the bottom of the pane, select **Add** \> **Close**.  
+
+
+> [!NOTE]
+> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### Assign licenses to one user
 
@@ -134,15 +144,16 @@ When you use the **Active users** page to assign licenses, you assign users lice
 
 ::: moniker range="o365-germany"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Active users** page.
+ 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
+
 
 2. Select the row of the user that you want to assign a license to.
 3. In the right pane, select **Licenses and Apps**.
