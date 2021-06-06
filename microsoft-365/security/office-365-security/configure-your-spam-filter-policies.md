@@ -230,7 +230,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       Back on the **Allow & block list** page, click **Next** when you're read to continue.
 
-8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
+8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished, click **Create**.
 
