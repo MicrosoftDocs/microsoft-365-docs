@@ -33,29 +33,29 @@ description: "Learn to find the values/information you need to create DNS record
 
 ::: moniker range="o365-worldwide"
 
-1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the Microsoft 365 admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
 
 ::: moniker-end
     
 2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
-3. On the **Verify domain** page, select **Add a TXT record instead**, then select **Next**.
+3. On the **Domain Verification** page, select **Add a TXT record to the domain's DNS records**, then select **Continue**.
     
 4. Copy the **TXT value** shown. It looks like this: **MS=msXXXXXXXX**. 
     
-5. Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.
+5. Go to [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md), and follow the steps to add records at your DNS host's website.
     
 6. Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Microsoft 365.
 
@@ -81,7 +81,7 @@ description: "Learn to find the values/information you need to create DNS record
 
 ::: moniker-end
     
-2. On the **Domains** page, select your domain. 
+2. On the **Domains** page, select your domain.
     
 3. Choose  **Manage DNS**, select **More Options** > **Add your own DNS** and select **Continue** to see the DNS records to add.
     
