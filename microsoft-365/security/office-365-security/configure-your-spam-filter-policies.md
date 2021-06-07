@@ -79,9 +79,9 @@ To increase the effectiveness of spam filtering, you can create custom anti-spam
 
 Creating a custom anti-spam policy in the security center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-2. Click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create policy** and then select **Inbound** from the dropdown list.
+2. On the **Anti-spam policies** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create policy** and then select **Inbound** from the drop down list.
 
 3. The policy wizard opens. On the **Name your policy page**, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
@@ -119,9 +119,9 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       <sup>\*</sup> **Contains specific languages** and **from these countries** are not part of ASF settings.
 
-   - **Contains specific languages**: Click the box and select **On** or **Off** from the dropdown list. If you turn it on, a box appears. Start typing the name of a language in the box. A filtered list of supported languages will appear. When you find the language that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   - **Contains specific languages**: Click the box and select **On** or **Off** from the drop down list. If you turn it on, a box appears. Start typing the name of a language in the box. A filtered list of supported languages will appear. When you find the language that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-   - **From these countries***: Click the box and select **On** or **Off** from the dropdown list. If you turn it on, a box appears. Start typing the name of a country in the box. A filtered list of supported countries will appear. When you find the country that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   - **From these countries***: Click the box and select **On** or **Off** from the drop down list. If you turn it on, a box appears. Start typing the name of a country in the box. A filtered list of supported countries will appear. When you find the country that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    When you're finished, click **Next**.
 
@@ -230,7 +230,7 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
       Back on the **Allow & block list** page, click **Next** when you're read to continue.
 
-8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section.
+8. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
    When you're finished, click **Create**.
 
@@ -238,9 +238,9 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
 ## Use the security center to view anti-spam policies
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-2. On the **Anti-spam policy** page, look for one of the following values:
+2. On the **Anti-spam policies** page, look for one of the following values:
    - The **Type** value is **Custom anti-spam policy**
    - The **Name** value is **Anti-spam inbound policy (Default)**
 
@@ -255,9 +255,9 @@ Creating a custom anti-spam policy in the security center creates the spam filte
 
 ## Use the security center to modify anti-spam policies
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-2. On the **Anti-spam policy** page, select an anti-spam policy from the list by clicking on the name:
+2. On the **Anti-spam policies** page, select an anti-spam policy from the list by clicking on the name:
    - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
    - The default policy named **Anti-spam inbound policy (Default)**.
 
@@ -271,7 +271,7 @@ To enable or disable a policy, set the policy priority order, or configure the e
 
 You can't disable the default anti-spam policy.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name.
 
@@ -296,7 +296,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 - In the security center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
 - Anti-spam policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default anti-spam policy has the priority value **Lowest**, and you can't change it.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, select a select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name.
 
@@ -313,7 +313,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, select an anti-spam policy from the list by clicking on the name:
    - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
@@ -336,11 +336,11 @@ When a spam filtering verdict quarantines a message, you can configure end-user 
 
 4. Back on the policy details flyout, click **Close**.
 
-## Use the security center to remove anti-spam policies
+## Use the security center to remove custom anti-spam policies
 
-When you use the security center to remove an anti-spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default policy.
+When you use the security center to remove a custom anti-spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default anti-spam policy.
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
 2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom anti-spam policy** from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
@@ -374,9 +374,7 @@ Creating an anti-spam policy in PowerShell is a two-step process:
  **Notes**:
 
 - You can create a new spam filter rule and assign an existing, unassociated spam filter policy to it. A spam filter rule can't be associated with more than one spam filter policy.
-
 - You can configure the following settings on new spam filter policies in PowerShell that aren't available in the security center until after you create the policy:
-
   - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
 
