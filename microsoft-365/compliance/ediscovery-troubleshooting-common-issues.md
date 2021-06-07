@@ -222,7 +222,7 @@ This is a client-side issue and in order to remediate it, please attempt the fol
 
 1. Try using another client/machine to download.
 
-2. Remove old searches that are no longer needed using [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch] cmdlet.
+2. Remove old searches that are no longer needed using [Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) cmdlet.
 
 3. Make sure to download to a local drive.
 
