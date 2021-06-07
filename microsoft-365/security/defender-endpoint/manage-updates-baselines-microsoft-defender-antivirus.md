@@ -75,7 +75,7 @@ For information how to update or install the platform update, see [Update for Wi
 All our updates contain 
 - performance improvements;
 - serviceability improvements; and 
-- integration improvements (Cloud, Microsoft 365 Defender).
+- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
@@ -87,7 +87,8 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**
     
 ### What's new
-- Improvements to behavior monitoring 
+- Improvements to [behavior monitoring](client-behavioral-blocking.md) 
+- Fixed [network protection](network-protection.md) notification filtering feature
 
 ### Known Issues
 No known issues  
