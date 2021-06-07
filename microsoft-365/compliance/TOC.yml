@@ -713,6 +713,8 @@
               href: themes-in-advanced-ediscovery.md
         - name: Use predictive coding (preview)
           items: 
+            - name: Quick start - Predictive coding
+              href: predictive-coding-quick-start.md
             - name: Learn about predictive coding
               href: predictive-coding-overview.md
             - name: Create a predictive coding model
