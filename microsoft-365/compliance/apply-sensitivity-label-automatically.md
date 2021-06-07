@@ -393,14 +393,12 @@ The new preview version of auto-labeling policies for OneDrive and SharePoint ha
     - Additional metadata information for the sampled matched items.
     - Ability to export information about the matched items, such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
 
-To opt in to this preview, ...
+### How to opt in to the new preview
 
-Before you request a tenant opts in to the preview, be aware of the following conditions:
+To opt in to this preview, use the request form for [Auto-labelling V2 Preview for Exchange, OneDrive, and SharePoint online files](https://aka.ms/AutoLabelV2-Preview]).
 
-- After your tenant is running the preview, you cannot opt out and return to the general availability version. It will continue to run the preview until this version becomes general availability.
+Before you submit the form, be aware of the following conditions:
+
+- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes general availability.
 
 - If you have any auto-labeling policies that are currently in simulation mode, you must re-run the simulation by selecting **Restart Simulation** when prompted. If you don't, the simulation won't complete and the preview won't be enabled.
-
-
-
- 
