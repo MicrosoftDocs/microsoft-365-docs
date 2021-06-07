@@ -70,9 +70,8 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 >[!NOTE]
 >- Depending the type of environment structure you select, devices will be available for the specified number of hours from the day of activation.
->- Each environment is provisioned with a limited set of test devices. When you've used up the provisioned devices, no new devices are provided. A deleted device does not refresh the available test device count.
->- You can no longer use the lab when the resources have been used up. It does not reset nor refresh.
->- It is advisable to use the resources carefully.The lab resources are limited. They will not reset nor refresh. 
+>- Each environment is provisioned with a limited set of test devices. When you've used up the provisioned devices and have deleted them, you can request for more devices. 
+>- You can request for lab resources once a month. 
 
 Already have a lab? Make sure to enable the new threat simulators and have active devices.
 
@@ -108,26 +107,23 @@ When you add a device to your environment, Defender for Endpoint sets up a well-
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
 
-   >[!TIP]
-   > Need more devices in your lab? Submit a support ticket to have your request reviewed by the Defender for Endpoint team. 
-
 If you chose to add a threat simulator during the lab setup, all devices will have the threat simulator agent installed in the devices that you add.
 
 The device will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
 The following security components are pre-configured in the test devices:
 
-- [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [Block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [Network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [Potentially unwanted application detection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [Attack surface reduction](attack-surface-reduction.md)
+- [Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Controlled folder access](controlled-folders.md)
+- [Exploit protection](enable-exploit-protection.md)
+- [Network protection](network-protection.md)
+- [Potentially unwanted application detection](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [Cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus will be on (not in audit mode). If Microsoft Defender Antivirus blocks you from running your simulation, you can turn off real-time protection on the device through Windows Security. For more information, see [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus will be on (not in audit mode). If Microsoft Defender Antivirus blocks you from running your simulation, you can turn off real-time protection on the device through Windows Security. For more information, see [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
@@ -158,10 +154,29 @@ Automated investigation settings will be dependent on tenant settings. It will b
     ![Image of devices tab](images/machines-tab.png)
     
 
-    >[!TIP]
-    >In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+    > [!TIP]
+    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
+## Request for more devices
+When all existing devices are used and deleted, you can request for more devices. You can request for lab resources once a month. 
 
 
+1. From the evaluation lab dashboard, select **Request for more devices**.
+
+   ![Image of request for more devices](images/request-more-devices.png)
+
+2. Choose your configuration. 
+3. Submit the request. 
+
+When the request is submitted successfully you'll see a green confirmation banner and the date of the last submission.
+ 
+You can find the status of your request in the **User Actions** tab, which will be approved in a matter of hours.
+
+When approved, the requested devices will be added to your lab set up and you’ll be able to create more devices. 
+
+
+> [!TIP]
+> To get more out of your lab, don’t forget to check out our simulations library.
 
 ## Simulate attack scenarios
 Use the test devices to run your own attack simulations by connecting to them. 
@@ -170,7 +185,7 @@ You can simulate attack scenarios using:
 - The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
 - Threat simulators
 
-You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
+You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.

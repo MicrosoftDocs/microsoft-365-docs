@@ -86,11 +86,11 @@ Cert and File IoC policy handling conflict will follow the below order:
 
 - If the file is not allowed by Windows Defender Application Control and AppLocker enforce mode policy/policies, then **Block**
 
-- Else if the file is allowed by the Defender Anti-Virus Exclusion, then **Allow**
+- Else if the file is allowed by the Microsoft Defender Antivirus exclusion, then **Allow**
 
 - Else if the file is blocked or warned by a block or warn file IoC, then **Block/Warn**
 
-- Else if the file is allowed by an allow file IOC policy, then **Allow**
+- Else if the file is allowed by an allow file IoC policy, then **Allow**
 
 - Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**  
 

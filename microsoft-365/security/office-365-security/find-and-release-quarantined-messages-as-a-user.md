@@ -50,7 +50,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
 ## View your quarantined messages
 
-1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
+1. In the Security & Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 

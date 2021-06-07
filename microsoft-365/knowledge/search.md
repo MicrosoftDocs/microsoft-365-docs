@@ -50,8 +50,5 @@ For users who are looking for information about booking a trip for work:
 - For users who search generally for "travel", create a topic on "Travel" that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the “Pinned Resources”.
  
 ### Search results priority 
- 
-In the users search experience, when a user searches for a term like “travel”, search results will display in the following priority in Microsoft Search
-1. Published or Confirmed topics 
-2. Bookmarks
-3. Suggested topics
+
+In the user's search experience, when a user searches for a term like “travel”, a bookmark will appear ahead of a topic, if a bookmark is available.

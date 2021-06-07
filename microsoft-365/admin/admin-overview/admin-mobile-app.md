@@ -45,6 +45,10 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
   
 > [!IMPORTANT]
 > If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
+
+## Before you begin
+
+You must be an administrator in a Microsoft 365 organization to use the admin mobile app.
   
 ## Download the admin mobile app
 
@@ -110,7 +114,11 @@ From the left navigation menu, go to **Settings** > **Notifications**. You can m
 ### What do I do if my question isn't answered?
 
 Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article.
-  
-## Related content 
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+## Next steps
+
+Once you've downloaded the admin mobile, you can add users to get you started.
+  
+## Related content
+
+[Microsoft 365 for business training videos](../../business-video/index.yml)

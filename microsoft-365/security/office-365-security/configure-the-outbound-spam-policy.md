@@ -39,14 +39,14 @@ EOP uses outbound spam policies as part of your organization's overall defense a
 
 Admins can view, edit, and configure (but not delete) the default outbound spam policy. For greater granularity, you can also create custom outbound spam policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
-You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+You can configure outbound spam policies in the Microsoft 365 security center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 The basic elements of an outbound spam policy in EOP are:
 
 - **The outbound spam filter policy**: Specifies the actions for outbound spam filtering verdicts and the notification options.
 - **The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.
 
-The difference between these two elements isn't obvious when you manage outbound spam polices in the Security & Compliance Center:
+The difference between these two elements isn't obvious when you manage outbound spam polices in the security center:
 
 - When you create a policy, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
 - When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
@@ -64,7 +64,7 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.
+- You open the security center at <https://security.microsoft.com/>. To go directly to the **Anti-spam settings** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -83,46 +83,79 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 - The default [alert policies](../../compliance/alert-policies.md) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). We recommend that you use these alert policies instead of the the notification options in outbound spam policies.
 
-## Use the Security & Compliance Center to create outbound spam policies
+## Use the security center to create outbound spam policies
 
-Creating a custom outbound spam policy in the Security & Compliance Center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
+Creating a custom outbound spam policy in the security center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-2. On the **Anti-spam settings** page, click **Create an outbound policy**.
+2. On the **Anti-spam policies** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create policy** and then select **Outbound** from the drop down list.
 
-3. In the **Outbound spam filter policy** fly out that opens, configure the following settings:
-
+3. The policy wizard opens. On the **Name your policy page**, configure these settings:
    - **Name**: Enter a unique, descriptive name for the policy.
-
    - **Description**: Enter an optional description for the policy.
 
-4. (Optional) Expand the **Notifications** section to configure additional users who should receive copies and notifications of suspicious outbound email messages:
+   When you're finished, click **Next**.
 
-   - **Send a copy of suspicious outbound email messages to specific people**: This setting adds the specified users as Bcc recipients to the suspicious outbound messages.
+4. On the **Users, groups, and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
+   - **Users**: The specified mailboxes, mail users, or mail contacts in your organization.
+   - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
+   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
+
+   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recpient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
+
+   When you're finished, click **Next**.
+
+5. On the **Protection settings** page that opens, configure the following settings:
+   - **Message limits**: The settings in this section configure the limits for outbound email messages from **Exchange Online** mailboxes:
+     - **Set an external message limit**: The maximum number of external recipients per hour.
+     - **Set an internal message limit**: The maximum number of internal recipients per hour.
+     - **Set a daily message limit**: The maximum total number of recipients per day.
+
+     A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
+
+    Enter a value in the box, or use the increase/decrease arrows on the box.
+
+   - **Restriction placed on users who reach the message limit**: Select an action from the drop down list when any of the limits in the **Protection settings** section are exceeded.
+
+     For all actions, the recipients specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify these users and groups if a sender is blocked due to sending outbound spam** setting later on this page) receive email notifications.
+
+     - **Restrict the user from sending mail until the following day**: This is the default value. Email notifications are sent, and the user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
+       - The activity alert named **User restricted from sending email** notifies admins (via email and on the **View alerts** page).
+       - Any recipients specified in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the policy are also notified.
+       - The user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
+     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to **Restricted users** <https://security.microsoft.com/restrictedusers> in the security center, and the user can't send email until they're removed from **Restricted users** by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
+     - **No action, alert only**: Email notifications are sent.
+
+   - **Forwarding rules**: Use the settings in this section to control automatic email forwarding by **Exchange Online mailboxes** to external senders. For more information, see [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
 
      > [!NOTE]
-     > This setting only works in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.
+     > When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the message is sent by an internal sender **and** the forwarding method is [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_), the internal sender will get the NDR. The internal sender does not get an NDR if the forwarding occurred due to an inbox rule.
 
-     To enable this setting:
+     Select one of the following actions from the **Automatic forwarding rules** drop down list:
 
-     1. Select the check box to enable the setting.
+     - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
+     - **On**: Automatic external email forwarding is not disabled by the policy.
+     - **Off**: All automatic external email forwarding is disabled by the policy.
 
-     1. Click **Add people**. In the **Add or remove recipients** flyout that appears:
+   - **Notifications**: Use the settings in the section to configure additional recipients who should receive copies and notifications of suspicious outbound email messages:
 
-     1. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;) or one recipient per line.
+     - **Send a copy of suspicious outbound that exceed these limits to these users and groups**: This setting adds the specified recipients to the Bcc field of suspicious outbound messages.
 
-     1. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the recipients.
+       > [!NOTE]
+       > This setting only works in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.
 
-        Repeat these steps as many times as necessary.
+       To enable this setting, select the check box. In the box that appears, click in the box, enter a valid email address, and then press Enter or select the complete value that's displayed below the box.
 
-        The recipients you added appear in the **Recipient list** section on the flyout. To delete a recipient, click ![Remove button](../../media/scc-remove-icon.png).
+       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-     1. When you're finished, click **Save**.
-
-        To disable this setting, clear the check box.
-
-   - **Notify specific people if a sender is blocked due to sending outbound spam**:
+   - **Notify these users and groups if a sender is blocked due to sending outbound spam**
 
      > [!IMPORTANT]
      >
@@ -130,142 +163,96 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
      >
      > - The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
-5. (Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages:
+   When you're finished, click **Next**.
 
-   > [!NOTE]
-   > These settings are only applicable to cloud-based mailboxes.
+6. On the **Review** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   - **Maximum number of recipients per user**
+   When you're finished, click **Create**.
 
-     A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
+7. On the confirmation page that appears, click **Done**.
 
-     - **External hourly limit**: The maximum number of external recipients per hour.
+## Use the security center to view outbound spam policies
 
-     - **Internal hourly limit**: The maximum number of internal recipients per hour.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-     - **Daily limit**: The maximum total number of recipients per day.
+2. On the **Anti-spam policies** page, look for one of the following values:
+   - The **Type** value is **Custom outbound spam policy**
+   - The **Name** value is **Anti-spam outbound policy (Default)**
 
-   - **Action when a user exceeds the limits above**: Configure the action to take when any one of the **Recipient Limits** are exceeded. For all actions, the recipients specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify specific people if a sender is blocked due to sending outbound spam** setting in the outbound spam policy receive email notifications.
+   The following properties are displayed in the list of anti-spam policies:
 
-     - **Restrict the user from sending mail till the following day**: This is the default value. Email notifications are sent, and the user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
+   - **Name**
+   - **Status**
+   - **Priority**
+   - **Type**
 
-       - The activity alert named **User restricted from sending email** notifies admins (via email and on the **View alerts** page).
+3. When you select an outbound spam policy by clicking on the name, the policy settings are displayed in a flyout.
 
-       - Any recipients specified in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the policy are also notified.
+## Use the security center to modify outbound spam policies
 
-       - The user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
-
-     - **No action, alert only**: Email notifications are sent.
-
-6. (Optional) Expand **Automatic forwarding** section to control automatic email forwarding by users to external senders. For more information, see [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
-
-   > [!NOTE]
-   >
-   > - Before September 2020, these settings are available but not enforced.
-   >
-   > - These settings apply only to cloud-based mailboxes.
-   >
-   > - When automatic forwarding is disabled, the recipient will receive a non-delivery report (also known as an NDR or bounce message) if external senders send email to a mailbox that has forwarding in place. If the message is sent by an internal sender **and** the forwarding method is [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as _SMTP forwarding_), the internal sender will get the NDR. The internal sender does not get an NDR if the forwarding occurred due to an inbox rule.
-
-   The available values are:
-
-   - **Automatic - System-controlled**: Allows outbound spam filtering to control automatic external email forwarding. This is the default value.
-   - **On**: Automatic external email forwarding is not disabled by the policy.
-   - **Off**: All automatic external email forwarding is disabled by the policy.
-
-7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
-
-    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).
-
-    It's easiest to click **Add a condition** three times to see all of the available conditions. You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
-
-    - **The sender domain is**: Specifies senders in one or more of the configured accepted domains in the organization. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
-
-    - **Sender is**: Specifies one or more users in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional senders.
-
-    - **Sender is a member of**: Specifies one or more groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional senders.
-
-    - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
-
-8. When you're finished, click **Save**.
-
-## Use the Security & Compliance Center to view outbound spam policies
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
-
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an outbound spam policy:
-
-   - The default policy named **Outbound spam filter policy**.
-
+2. On the **Anti-spam policies** page, select an outbound spam policy from the list by clicking on the name:
    - A custom policy that you created where the value in the **Type** column is **Custom outbound spam policy**.
+   - The default policy named **Anti-spam outbound policy (Default)**.
 
-3. The policy settings are displayed in the expanded policy details that appear, or you can click **Edit policy**.
+3. In the policy details flyout that appears, select **Edit** in each section to modify the settings within the section. For more information about the settings, see the previous [Use the security center to create outbound spam policies](#use-the-security-center-to-create-outbound-spam-policies) section in this article.
 
-## Use the Security & Compliance Center to modify outbound spam policies
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
-
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an outbound spam policy:
-
-   - The default policy named **Outbound spam filter policy**.
-
-   - A custom policy that you created where the value in the **Type** column is **Custom outbound spam policy**.
-
-3. Click **Edit policy**.
-
-For custom outbound spam policies, the available settings in the flyout that appears are identical to those described in the [Use the Security & Compliance Center to create outbound spam policies](#use-the-security--compliance-center-to-create-outbound-spam-policies) section.
-
-For the default outbound spam policy named **Outbound spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
+   For the default outbound spam policy, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
 To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
 
-### Enable or disable outbound spam policies
-
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
-
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand a custom policy that you created (the value in the **Type** column is **Custom outbound spam policy**).
-
-3. In the expanded policy details that appear, notice the value in the **On** column.
-
-   Move the toggle to the left to disable the policy: ![Toggle off](../../media/scc-toggle-off.png)
-
-   Move the toggle to the right to enable the policy: ![Toggle on](../../media/scc-toggle-on.png)
+### Enable or disable custom outbound spam policies
 
 You can't disable the default outbound spam policy.
 
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
+
+2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom  outbound spam policy** from the list by clicking on the name.
+
+3. At the top of the policy details flyout that appears, you'll see one of the following values:
+   - **Policy off**: To turn on the policy, click ![Turn on icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
+
+4. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
+
+5. Click **Close** in the policy details flyout.
+
+Back on the main policy page, the **Status** value of the policy will be **On** or **Off**.
+
 ### Set the priority of custom outbound spam policies
 
-By default, outbound spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
+By default, outbound spam policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority, and policy processing stops after the first policy is applied.
 
-Custom outbound spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default outbound spam policy named **Outbound spam filter policy** has the priority value **Lowest**, and you can't change it.
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the security center). Changing the priority of a policy only makes sense if you have multiple policies.
 
-To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).
+ **Notes**:
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+- In the security center, you can only change the priority of the outbound spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
+- Outbound spam policies are processed in the order that they're displayed (the first policy has the **Priority** value 0). The default outbound spam policy has the priority value **Lowest**, and you can't change it.
 
-2. On the **Anti-spam settings** page, find the policies where the value in the **Type** column is **Custom outbound spam policy**. Notice the values in the **Priority** column:
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-   - The custom outbound spam policy with the highest priority has the value ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
+2. On the **Anti-spam policies** page, select a select a policy with the **Type value** of **Custom outbound spam policy** from the list by clicking on the name.
 
-   - The custom outbound spam policy with the lowest priority has the value ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
+3. At the top of the policy details flyout that appears, you'll see **Increase priority** or **Decrease priority** based on the current priority value and the number of custom policies:
+   - The outbound spam policy with the **Priority** value **0** has only the **Decrease priority** option available.
+   - The outbound spam policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
+   - If you have three or more outbound spam policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
-   - If you have three or more custom outbound spam policies, the policies between the highest and lowest priority have values ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
+   Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
-3. Click ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) or ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) to move the custom outbound spam policy up or down in the priority list.
+4. When you're finished, click **Close** in the policy details flyout.
 
-## Use the Security & Compliance Center to remove outbound spam policies
+## Use the security center to remove custom outbound spam policies
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
+When you use the security center to remove a custom outbound spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default outbound spam policy.
 
-2. On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand the custom policy that you want to delete (the **Type** column is **Custom outbound spam policy**).
+1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-spam**.
 
-3. In the expanded policy details that appear, click **Delete policy**.
+2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom outbound spam policy** from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
-4. Click **Yes** in the warning dialog that appears.
-
-You can't remove the default policy.
+3. In the confirmation dialog that appears, click **Yes**.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure outbound spam policies
 
@@ -284,16 +271,13 @@ Creating an outbound spam policy in PowerShell is a two-step process:
 1. Create the outbound spam filter policy.
 2. Create the outbound spam filter rule that specifies the outbound spam filter policy that the rule applies to.
 
- **Notes**:
+   **Notes**:
 
-- You can create a new outbound spam filter rule and assign an existing, unassociated outbound spam filter policy to it. An outbound spam filter rule can't be associated with more than one outbound spam filter policy.
-
-- You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
-
-  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).
-  - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).
-
-- A new outbound spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.
+   - You can create a new outbound spam filter rule and assign an existing, unassociated outbound spam filter policy to it. An outbound spam filter rule can't be associated with more than one outbound spam filter policy.
+   - You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the security center until after you create the policy:
+     - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).
+     - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).
+   - A new outbound spam filter policy that you create in PowerShell isn't visible in the security center until you assign the policy to an outbound spam filter rule.
 
 #### Step 1: Use PowerShell to create an outbound spam filter policy
 
@@ -399,7 +383,7 @@ For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilter
 The same settings are available when you modify a malware filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an outbound spam filter policy](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) section earlier in this article.
 
 > [!NOTE]
-> You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter). When you rename an outbound spam policy in the Security & Compliance Center, you're only renaming the outbound spam filter _rule_.
+> You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter). When you rename an outbound spam policy in the security center, you're only renaming the outbound spam filter _rule_.
 
 To modify an outbound spam filter policy, use this syntax:
 
@@ -463,11 +447,10 @@ This example sets the priority of the rule named Marketing Department to 2. All 
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-> [!NOTE]
->
-> - To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedOutboundSpamFilterRule** cmdlet instead.
->
-> - The outbound default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
+**Notes**:
+
+- To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedOutboundSpamFilterRule** cmdlet instead.
+- The outbound default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
 
 ### Use PowerShell to remove outbound spam filter policies
 

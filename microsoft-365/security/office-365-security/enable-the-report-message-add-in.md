@@ -44,12 +44,11 @@ The Report Phishing add-in provides the option to report only phishing messages.
 
 If you're an individual user, you can enable both the add-ins for yourself.
 
-f you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can enable the Report Message add-in and the Report Phishing add-in for your organization. Both add-ins are now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).
+If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can enable the Report Message add-in and the Report Phishing add-in for your organization. Both add-ins are now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 ## What do you need to know before you begin?
 
 - Both the Report Message add-in and the Report Phishing add-in works with most Microsoft 365 subscriptions and the following products:
-
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
@@ -65,6 +64,9 @@ f you're a global administrator or an Exchange Online administrator, and Exchang
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+
+> [!IMPORTANT]
+> We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
 
 ## Get the Report Message add-in
 

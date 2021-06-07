@@ -38,6 +38,7 @@ Article | Description
 -|-
 [Advanced Hunting API](api-advanced-hunting.md) | Run Advanced Hunting queries.
 [Incident APIs](api-incident.md) | List and update incidents, along with other practical tasks.
+[Streaming API](../defender-endpoint/raw-data-export.md) (Preview) | Ship real-time events and alerts as they occur in a single data stream.
 
 ### Endpoint URIs
 
@@ -55,5 +56,6 @@ All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for ex
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Streaming API](../defender-endpoint/raw-data-export.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
