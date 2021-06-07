@@ -164,7 +164,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 3. In the [Microsoft 365 security center](https://security.microsoft.com), do the following steps:
 
-   Select **Permissions**, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
+   Select **[Permissions & roles](https://security.microsoft.com/emailandcollabpermissions)**, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
 
    a. Click **Edit** next to **Members**.
    b. On the **Editing Choose members** flyout that appears, click **Edit**.
