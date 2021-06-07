@@ -23,7 +23,7 @@ description: "Learn how Microsoft 365 for business can help you with the General
 
 # GDPR simplified: A guide for your small business
 
- *Using Microsoft 365 for business to mitigate and manage GDPR compliance* 
+ *Using Microsoft 365 for business to help you to mitigate and manage GDPR compliance* 
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
 
@@ -32,6 +32,9 @@ As a small business admin, you are probably asking yourself "how do I get starte
 You can get started by reviewing this article, which is aimed at helping you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
 
 It also includes answers to common questions about GDPR that small businesses may have, and highlights steps a small business can take to prepare for GDPR.
+
+> [!IMPORTANT]
+> Recommendations from this article should not be interpreted as a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own advisors - including lawyers and compliance professionals - when needed. The Microsoft 365 solutions mentioned in this article are tools that can help you manage your data, but are not a guarantee of GDPR compliance.
   
 ## A quick overview of the GDPR
 
@@ -76,9 +79,9 @@ The GDPR establishes data subject rights, which means that, with respect to thei
 
 ## Steps to prepare for GDPR
 
-This section describes steps a small business can take to get ready for GDPR. Much of the information for these steps was provided through [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
+This section describes steps a small business can take to help it get ready for GDPR. Much of the information for these steps was provided through [Seven steps for businesses to get ready for the General Data Protection Regulation](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), a publication provided through the Publications Office of the European Union.
 
-A good way for a small business to start with GDPR is to make sure to apply the following key principles when collecting personal data:
+A good way for a small business to get started with GDPR is to make sure to apply the following key principles when collecting personal data:
 
 - Collect personal data with clearly defined purposes for what you are using it for, and don’t use them for anything else. For example, if you tell your clients to give you their email addresses so they can get your new offers or promotions, you can only use their email addresses for only that specific purpose.
 - Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver good, you need a customers address and a name, but you don’t need to know the person's marital status.
@@ -86,9 +89,9 @@ A good way for a small business to start with GDPR is to make sure to apply the 
 
 ### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it
 
-As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it is needed. This includes data on your employees and your customers.
+As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it is needed. This includes data on both your employees and your customers.
 
-For example, you need your employee's personal data based
+For example, you may need your employee's personal data based
 on the employment contract and for legal reasons (for example, 
 reporting taxes to the Internal Revenue Service).
 
@@ -103,7 +106,7 @@ send them notice about special offers, if they opted in to consent to this.
 Individuals must know that you process their personal data and
 for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
 
-But there is no need to inform individuals when they already know on how you will use the data. For example, when they provide you a home address for a delivery.
+But there is no need to inform individuals when they already know how you will use the data. For example, when they provide you a home address for a delivery.
 
 You also have to be able to inform individuals on request about the personal data you hold on them and give them access to their data. Being organized with your data makes it easier to provide to them, if needed. 
 
@@ -169,8 +172,7 @@ measures).
 ### Step 7: Assign someone to oversee personal data protection
  
 To better protect personal data, organizations might have to
-appoint a <b>Data Protection Officer (DPO)</b>. However, you don’t
-need to designate a Data Protection Officer if processing
+appoint a <b>Data Protection Officer (DPO)</b>. However, you may not need to designate a Data Protection Officer if processing
 of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
 
 You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for those that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
