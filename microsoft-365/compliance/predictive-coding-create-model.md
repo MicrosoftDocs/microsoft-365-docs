@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: ""
+description: "Learn how to create a predictive coding model in Advanced eDiscovery. This is the first step in using the machine learning capabilities in Advanced eDiscovery to help you identify relevant and non-relevant content in a review set."
 ---
 
 # Create a predictive coding model (preview)
