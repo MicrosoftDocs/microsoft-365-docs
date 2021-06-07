@@ -399,6 +399,6 @@ To opt in to this preview, use the request form for [Auto-labelling V2 Preview f
 
 Before you submit the form, be aware of the following conditions:
 
-- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes general available.
+- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes generally available.
 
 - If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete and the preview won't be enabled.
