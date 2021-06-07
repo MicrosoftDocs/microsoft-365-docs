@@ -27,7 +27,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
-1. You'll then see the **Sensors** page, which displays all of your Defender for Identity sensors. For each sensor, you'll see its name, its domain membership, the version number, if updates should be delayed, the service status, update status, health status, the number of health issues, and when the sensor was created.
+1. Select the **Sensors** page, which displays all of your Defender for Identity sensors. For each sensor, you'll see its name, its domain membership, the version number, if updates should be delayed, the service status, update status, health status, the number of health issues, and when the sensor was created.
 
     ![Sensor page](../../media/defender-identity/sensor-page.png)
 
@@ -79,6 +79,28 @@ From the **Sensors** page, you can add a new sensor.
 1. Copy the **Access key**. The access key is required for the Defender for Identity sensor to connect to your Defender for Identity instance. The access key is a one-time-password for sensor deployment, after which all communication is performed using certificates for authentication and TLS encryption. Use the **Regenerate key** button if you ever need to regenerate the new access key. It won't affect any previously deployed sensors, because it's only used for initial registration of the sensor.
 
 1. Copy the package to the dedicated server or domain controller onto which you're installing the Defender for Identity sensor.
+
+## Configure Directory Services account
+
+To connect the sensor with your Active Directory domains, you'll need to configure Directory Services accounts.
+
+1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+
+    ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
+
+1. Select **Directory Service accounts**. You'll see which accounts are associated with which domains.
+
+    ![Directory Service accounts](../../media/defender-identity/directory-service-accounts.png)
+
+1. If you select an account, a pane will open with the settings for that account.
+
+    ![Account settings](../../media/defender-identity/account-settings.png)
+
+1. To add a new Directory Services account, select **Create new account** and fill in the **Account name**, **Domain**, and **Password**. You can also choose if it's a **Group managed service account** (gMSA), and if it belongs to a **Single label domain**.
+
+    ![New Directory Service account](../../media/defender-identity/new-directory-service-account.png)
+
+1. Select **Save**.
 
 ## See also
 

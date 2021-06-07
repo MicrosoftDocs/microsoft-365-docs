@@ -88,6 +88,8 @@
         items:
           - name: Sensor settings and health
             href: ../defender-identity/sensor-health.md
+          - name: VPN integration
+            href: ../defender-identity/vpn-integration.md
           - name: Manage security alerts
             href: ../defender-identity/manage-security-alerts.md
     - name: Investigate and respond to threats
