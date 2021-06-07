@@ -28,7 +28,7 @@ You can easily see how people in your business are using Microsoft 365 services.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
-Watch this video for on overview: on how you can use the reports:
+## Watch: Act on a usage report in Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
