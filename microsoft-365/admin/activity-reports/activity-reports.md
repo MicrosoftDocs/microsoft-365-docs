@@ -83,52 +83,30 @@ Depending on your subscription, here are the available reports.
 - [Microsoft browser usage](browser-usage-report.md) 
   
 - [Email activity](email-activity-ww.md)
-
-- [Email activity for US Government](email-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
 - [Office activations](microsoft-office-activations-ww.md)
 
-- [Office activations for US Government](microsoft-office-activations.md)
-
 - [Active Users](active-users-ww.md)
-
-- [Active Users for US Government](active-users.md)
   
 - [Email apps usage](email-apps-usage-ww.md)
 
-- [Email apps usage for US Government](email-apps-usage.md)
-
 - [Forms activity](forms-activity-ww.md)
 
-- [Forms activity for US Government](forms-activity.md)
-
 - [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
-  
-- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
 
 - [Microsoft 365 groups](office-365-groups-ww.md)
-
-- [Microsoft 365 groups for US Government](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
 
-- [OneDrive for Business user activity for US Government](onedrive-for-business-activity.md)
-
 - [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
-
-- [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
   
 - [SharePoint site usage](sharepoint-site-usage-ww.md)
-
-- [SharePoint site usage for US Government](sharepoint-site-usage.md)
   
 - [SharePoint activity](sharepoint-activity-ww.md)
-
-- [SharePoint activity for US Government](sharepoint-activity.md)
   
 - [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -140,23 +118,13 @@ Depending on your subscription, here are the available reports.
 
 - [Yammer activity](yammer-activity-report-ww.md)
 
-- [Yammer activity for US Government](yammer-activity-report.md)
-
 - [Yammer device usage](yammer-device-usage-report-ww.md)
-
-- [Yammer device usage for US Government](yammer-device-usage-report.md)
 
 - [Yammer groups activity report](yammer-groups-activity-report-ww.md)
 
-- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
-
 - [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
 
-- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
-
 - [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
-
-- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
 
 ## How to view licensing information
 
@@ -196,8 +164,6 @@ However, when you select a particular day (see number 3), up to 28 days from the
   
 ## Related content
 
-[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)
-
-[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)
-
+[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
 [Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)
