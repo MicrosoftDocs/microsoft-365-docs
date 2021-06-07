@@ -276,8 +276,8 @@
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [Manage gradual rollout process for Microsoft Defender updates](updates.md)
-#####  [Configure gradual rollout process for Microsoft Defender updates](configure-updates.md)
+##### [Manage gradual rollout process for Microsoft Defender updates](updates.md)
+##### [Configure gradual rollout process for Microsoft Defender updates](configure-updates.md)
 ##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -311,7 +311,6 @@
 ##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
 
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
