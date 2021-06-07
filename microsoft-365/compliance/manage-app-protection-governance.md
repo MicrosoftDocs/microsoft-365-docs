@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Application Protection and Governance in Microsoft 365"
+title: "Microsoft App Governance in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -16,7 +16,7 @@ search.appverid:
 description: "Implement Microsoft app governance capabilities to govern your apps."
 ---
 
-# Microsoft Application Protection and Governance in Microsoft 365 (in preview)
+# Microsoft app governance in Microsoft 365 (in preview)
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
