@@ -35,7 +35,7 @@ To declare the Cortana Scheduler mailbox, an authorized admin must run a one-lin
 
    `Set-mailbox cortana@contoso.com - SchedulerAssistant:$true` 
 
-After running this "set" command on the Cortana Scheduler mailbox, a new "PersistedCapability" is set on the mailbox to note that this mailbox is the "SchedulerAssistant."
+After running this "set" command on the Cortana Scheduler mailbox, a new "PersistedCapability" is set on the mailbox to note that this mailbox is the "SchedulerAssistant".
 
 > [!NOTE]
 > To connect to PowerShell for your organization follow these steps if you’ve not done so previously: [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Docs](../enterprise/connect-to-microsoft-365-powershell.md)

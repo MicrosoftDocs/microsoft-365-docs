@@ -21,7 +21,7 @@ As long as you have a license, Other than the three requirements above, users ca
 Meeting attendees can be anyone with an email address inside or outside the company. Unfortunately, Scheduler cannot automatically translate names to email addresses / alias by looking it up in the GAL today.
 
 **Question:** Can I use Scheduler with my installed version (on-premises) version of Outlook?</br>
-Scheduler requires Exchange Online. Does not work with Exchange Server (On-Prem). Works with any email client, Outlook Desktop, OWA, iOS, android, gmail, and so on.
+Scheduler requires Exchange Online. Does not work with Exchange Server (On-prem). Works with any email client, Outlook Desktop, OWA, iOS, android, gmail, and so on.
 
 **Question:** Does Outlook have to be open in the background?</br>
 Outlook doesn't need to be open in the background. All you need to do is send Cortana a mail and rely on it to do the bulk of the work.
