@@ -80,7 +80,7 @@ For Intune, currently Device Control Printer Protection supports OMA-URI only.
 
 The CSP support string with `` <enabled/>``: 
 
-:::image type="content" source="images/customeditrow.PNG" alt-text="custom edit row":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="custom edit row":::
 
 **Scenario 2: Allow specific approved USB printers**
 
@@ -94,7 +94,7 @@ The CSP support string with `` <enabled/>``:
 
 The CSP support string with approved USB printers via ‘ApprovedUsbPrintDevices’ property, example `` <enabled/><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>``: 
 
-:::image type="content" source="images/editrow.PNG" alt-text="edit row":::
+:::image type="content" source="../../media/editrow.png" alt-text="edit row":::
 
 ## Deploy policy via Group Policy 
 
@@ -110,7 +110,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
     - User Configuration > Administrative Templates > Control Panel > Printers: Enable Device control Printing Restrictions 
 
-:::image type="content" source="images/enable-device-ctrl-printing-restrictions.PNG" alt-text="enable device printing restrictions":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="enable device printing restrictions":::
  
 
 **Scenario 2: Allow specific approved USB printers**
@@ -123,7 +123,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
     - User Configuration > Administrative Templates > Control Panel > Printers: List of Approved USB-connected print devices 
  
- :::image type="content" source="images/list-of-approved-connected-print-devices.PNG" alt-text="list of approved usb connected print devices":::
+ :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="list of approved usb connected print devices":::
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal 
 
@@ -149,4 +149,4 @@ DeviceEvents
 | order by Timestamp desc 
 ```
 
- :::image type="content" source="images/advanced-hunting.PNG" alt-text="advanced hunting":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting":::
