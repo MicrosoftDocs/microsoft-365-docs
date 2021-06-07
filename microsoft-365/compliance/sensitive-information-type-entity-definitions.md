@@ -33,19 +33,17 @@ nine digits that may be in a formatted or unformatted pattern
 
 ### Pattern
 
-Formatted:
-- four digits beginning with 0, 1, 2, 3, 6, 7, or 8
-- a hyphen
+- two digits in the ranges 00-12, 21-32, 61-72, or 80
+- two digits
+- an optional hyphen
 - four digits
-- a hyphen
+- an optional hyphen
 - a digit
 
-Unformatted:
-nine consecutive digits beginning with 0, 1, 2, 3, 6, 7, or 8 
 
 ### Checksum
 
-No
+Yes
 
 ### Definition
 
@@ -615,11 +613,13 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### Format
 
-A letter followed by seven digits
+eight or nine alphanumeric characters 
 
 ### Pattern
 
-A letter (not case-sensitive) followed by seven digits
+- one letter (N, E, D, F, A, C, U, X) followed by 7 digits
+or
+- 2 letters (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) followed by 7 digits.
 
 ### Checksum
 
@@ -628,60 +628,48 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_australia_passport_number finds content that matches the pattern.
-- A keyword from Keyword_passport or Keyword_australia_passport_number is found.
+- The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
+- A keyword from `Keyword_australia_passport_number` is found.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### Keywords
 
-#### Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport #
-- Passport#
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport#
-- PasseportNon
-- Passeportn °
-
 #### Keyword_australia_passport_number
 
-- passport
-- passport details
-- immigration and citizenship
-- commonwealth of australia
-- department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
-- national identity card
-- passport number
-- travel document
-- issuing authority
-   
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- national identity card
+- travel document
+- issuing authority
+
+
 ## Australia tax file number
 
 ### Format
