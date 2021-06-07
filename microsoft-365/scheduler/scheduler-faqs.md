@@ -15,7 +15,7 @@ description: "Scheduler for Microsoft 365 FAQs"
 Scheduler is an independent service from other Cortana features. Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address. Currently, users can only interact with Scheduler via email.
 
 **Question:** Does this work only with Outlook? Are other email products supported?</br>
-As long as you have a license, Other than the three requirements above, users can email cortana@yourdomain.com from any email client on any device.
+As long as you have a license, other than the three requirements above, users can email cortana@yourdomain.com from any email client on any device.
 
 **Question:** Can contacts be in a personal contact list on Outlook and GAL or other company equivalent?</br>
 Meeting attendees can be anyone with an email address inside or outside the company. Unfortunately, Scheduler cannot automatically translate names to email addresses / alias by looking it up in the GAL today.
