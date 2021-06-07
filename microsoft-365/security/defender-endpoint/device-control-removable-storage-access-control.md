@@ -63,7 +63,7 @@ For each device property, see **Device Properties** section above for more detai
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId: although InstancePathId is a string uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0, the number at the end, e.g. '&0' in previous value, representing the avaliable slot may change in different machine. You can use wildcard at the end, e.g. USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
+    - InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example **&0**) represents the avaliable slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
