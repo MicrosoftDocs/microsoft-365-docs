@@ -32,7 +32,7 @@ After a unique mailbox for Cortana Scheduler has been created, you must designat
 To designate the Cortana Scheduler mailbox, an authorized admin must run a one-line PowerShell command. 
 
 1. Connect to Microsoft 365 remote PowerShell run space for your organization.
-1. Run the following PowerShell script to declare the mailbox for Scheduler:
+2. Run the following PowerShell script to designate the mailbox for Scheduler:
 
 ```powershell
 
