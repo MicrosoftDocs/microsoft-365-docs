@@ -6,10 +6,14 @@
       href: compliance-quick-tasks.md
     - name: What's new in Microsoft 365 compliance
       href: whats-new.md
-    - name: Microsoft 365 compliance center
-      href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 compliance center
+      href: microsoft-365-compliance-center.md
+    - name: Permissions in the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Redirecting users to the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -694,7 +698,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
-            - name: Query the data in a review set
+            - name: Query and filter content in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md

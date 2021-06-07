@@ -1,7 +1,7 @@
 ---
 title: Go to the Action center to view and approve your automated investigation and remediation tasks
-description: Use the Action Center to view details about automated investigation and approve pending actions
-keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
+description: Use the Action center to view details about automated investigation and approve pending actions
+keywords: Action center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -47,7 +47,7 @@ The unified Action center ([https://security.microsoft.com/action-center](https:
 For example: 
 
 - If you were previously using the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), try the unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
-- If you were using the Action Center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
+- If you were using the Action center in the Microsoft Defender Security Center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), try the unified Action center in the Microsoft 365 security center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 - If you were already using the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), you'll see several improvements in the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions and provides a unified investigation experience. Your security operations team has a "single pane of glass" experience to view and manage remediation actions.  

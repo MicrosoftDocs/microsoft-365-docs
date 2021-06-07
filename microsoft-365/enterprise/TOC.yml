@@ -621,6 +621,9 @@
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 
+- name: Windows 10 and Office 365 deployment lab kit
+  href: modern-desktop-deployment-and-management-lab.md
+
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md
   items: 
