@@ -19,7 +19,7 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
-ms.date: 08/07/2020
+ms.date: 06/07/2021
 ---
 
 # Manage license requests
