@@ -46,7 +46,7 @@ You can use the impersonation insight in the Microsoft 365 security center to qu
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com/>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
+- You open the security center at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 - You need to be assigned permissions in the security center before you can do the procedures in this article:
   - **Organization Management**
