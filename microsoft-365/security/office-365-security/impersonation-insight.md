@@ -46,7 +46,7 @@ You can use the impersonation insight in the Microsoft 365 security center to qu
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
+- You open the security center at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
 - You need to be assigned permissions in the security center before you can do the procedures in this article:
   - **Organization Management**
@@ -64,11 +64,11 @@ You can use the impersonation insight in the Microsoft 365 security center to qu
 
 1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
-2. On the main **Anti-phishing page**, the impersonation insight looks like this:
+2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
    ![Impersonation insight and spoof intelligence on the Anti-phishing policy page](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
 
-   This insight has two modes:
+   The insight has two modes:
 
     - **Insight mode**: If impersonation protection is enabled and configured in any anti-phishing policies, the insight shows the number of detected messages from impersonated domains and impersonated users (senders) over the past seven days. This is the total of all detected impersonated senders from all anti-phishing policies.
     - **What if mode**: If impersonation protection is not enabled and configured in any active anti-phishing policies, the insight shows you how many messages *would* have been detected by our impersonation protection capabilities over the past seven days.
