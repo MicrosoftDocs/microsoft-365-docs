@@ -46,7 +46,7 @@ To switch back to the Office 365 Security and Compliance center (protection.micr
 1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global administrator or using any account with compliance administrator permissions in Azure Active directory.
 2. Navigate to **Settings** > **Compliance center redirection**.
 3. Toggle the Automatic redirection setting to **Off**.
-4. Select **Disable** and share feedback when prompted.
+4. Select **Turn off** and share feedback when prompted.
 
 Once disabled, users will no longer be routed to compliance.microsoft.com and they will be directed to the Office 365 Security and Compliance center (protection.microsoft.com). This setting can be enabled again at any time by Global or Compliance admins.
 
