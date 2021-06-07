@@ -123,7 +123,7 @@ Signals from third-party data, like selective HR data, can be used by the [Insid
 
 ## Data connectors in the US Government cloud
 
-As previously mentioned, data connectors provided by TeleMessage are available in the US Government cloud. The following table indicates the specific government environments that support each data connector. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
+As previously mentioned, data connectors provided by TeleMessage are available in the US Government cloud. The following table indicates the specific government environments that support each TeleMessage data connector. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
 |TeleMessage data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
