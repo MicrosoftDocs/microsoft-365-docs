@@ -395,10 +395,10 @@ The new preview version of auto-labeling policies for OneDrive and SharePoint ha
 
 ### How to opt in to the new preview
 
-To opt in to this preview, use the request form for [Auto-labelling V2 Preview for Exchange, OneDrive, and SharePoint online files](https://aka.ms/AutoLabelV2-Preview]).
+To opt in to this preview, use the request form for [Auto-labelling V2 Preview for OneDrive and SharePoint online files](https://aka.ms/AutoLabelV2-Preview]). Wait a few days and confirm your tenant has been enabled for the preview when you see **(Preview)** added to the **Auto-labeling** tab in the Microsoft 365 compliance center.
 
 Before you submit the form, be aware of the following conditions:
 
-- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes general availability.
+- After your tenant is running the preview, you cannot opt out and return to the general availability version. The tenant will continue to run the preview until this version becomes general available.
 
-- If you have any auto-labeling policies that are currently in simulation mode, you must re-run the simulation by selecting **Restart Simulation** when prompted. If you don't, the simulation won't complete and the preview won't be enabled.
+- If had any auto-labeling policies that are still in simulation mode when your preview request was accepted, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation**. If you don't, the simulation won't complete and the preview won't be enabled.
