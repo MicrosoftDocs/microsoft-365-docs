@@ -14,7 +14,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 04/23/2021
+ms.date: 05/13/2021
 ---
 
 # Microsoft Defender Antivirus on Windows Server
@@ -126,9 +126,9 @@ By default, Windows Update does not download and install updates automatically o
 
 |Method  |Description  |
 |---------|---------|
-|**Windows Update** in Control Panel     |- **Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/>- **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.       |
+|**Windows Update** in Control Panel     | **Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p>**Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.       |
 |**Group Policy**     | You can set up and manage Windows Update by using the settings available in Group Policy, in the following path: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**         |
-|The **AUOptions** registry key     |The following two values allow Windows Update to automatically download and install Security intelligence updates: <br/>- **4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <br/>- **3** - **Download updates but let me choose whether to install them**.  This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.         |
+|The **AUOptions** registry key     | The following two values allow Windows Update to automatically download and install Security intelligence updates: <p>**4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p>**3** - **Download updates but let me choose whether to install them**.  This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.         |
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
@@ -180,16 +180,6 @@ If you are using a non-Microsoft antivirus product as your primary antivirus sol
 - On Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode.  
 
 - On Windows Server 2016, Microsoft Defender Antivirus is not supported alongside a non-Microsoft antivirus/antimalware product. In these cases, you must set Microsoft Defender Antivirus to disabled mode.
-
-### Set Microsoft Defender Antivirus to passive mode using PowerShell
-
-If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by using the following PowerShell cmdlet:
-
-`CMDLET NEEDED`
-
-### Set Microsoft Defender Antivirus to passive mode using Group Policy
-
-PROCEDURE NEEDED
 
 ### Set Microsoft Defender Antivirus to passive mode using a registry key
 

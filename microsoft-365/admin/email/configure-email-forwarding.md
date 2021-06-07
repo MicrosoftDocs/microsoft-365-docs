@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: "Set up email forwarding to one or more email accounts using Office365."
+description: "Email forwarding lets you forward email messages sent to a Microsoft 365 user mailbox to another mailbox inside or outside of your organization."
 ---
 
 # Configure email forwarding in Microsoft 365
@@ -35,6 +35,8 @@ As the admin of an organization, you might have company requirements to set up e
 ## Configure email forwarding
 
 Before you set up email forwarding, note the following:
+
+- Allow automatically forwarded messages to be sent to people on the remote domain. See [Manage remote domains](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) for details.
 
 - Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be forwarded.
 
@@ -50,7 +52,16 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
 4. On the email forwarding page, select **Forward all emails sent to this mailbox**, enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. If you don't see this option, make sure a license is assigned to the user account. Select **Save changes**.
 
-    **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. To learn more, see [Use rules to automatically forward messages](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. 
+    
+    1.  Open **outlook** > **Home** >  **Rules** > Select **Manage Rules & Alerts**
+    1. Select **New Rule** > **Select Apply rule on message I receive** located near bottom of list, then click **Next**.
+    1. Click **Yes** when asked This rule will be applied to every message you receive. 
+    1. On the next list select the actions **redirect it to people or public group** and **stop processing more rules**
+    1. Click the underlined phrase **people or public group** in the bottom part of window.
+    1. Type the **email address** to forward mail to in the To field, then click **OK**.
+    1. Select **Finish**
+    
 
      Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
 
@@ -90,7 +101,12 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
    Or, in the admin center, [create a distribution group](../setup/create-distribution-lists.md), [add the addresses to it](add-user-or-contact-to-distribution-list.md), and then set up forwarding to point to the DL using the instructions in this article.
 
-5. Don't delete the account of the user who's email you're forwarding or remove their license!  If you do, email forwarding will stop.
+5. Don't delete the account of the user who's email you're forwarding or remove their license! If you do, email forwarding will stop.
 
 ::: moniker-end
 
+## Related content 
+
+[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)

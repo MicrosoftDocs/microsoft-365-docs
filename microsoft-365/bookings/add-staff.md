@@ -7,7 +7,6 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
@@ -15,13 +14,15 @@ description: "Use this page to create your staff list and to manage staff member
 
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
-## Add staff
+## Before you begin
 
 Although Bookings is a feature of Microsoft 365, not all of your staff members are required to have a Microsoft 365 account. All staff members must have a valid email address so they can receive bookings and schedule changes.
 
-Watch this video or follow the steps below to add your staff.
+## Watch: Add your staff to Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+
+## Steps
 
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 
@@ -60,3 +61,40 @@ Watch this video or follow the steps below to add your staff.
 
     > [!NOTE]
     > Only the first 31 staff members that you add to your staff page will appear when you assign staff members to a service.
+
+## Make a Bookings user a super user without adding them as Staff in Bookings
+
+You may want to add a person to your staff list in Bookings without making them available to customers or clients. Once you make them a super user, they'll become an administrator of the booking mailbox. Being an administrator of a booking mailbox is defined as having full access and send-as permissions to the booking mailbox.
+
+> [!NOTE]
+> These steps only work if the user being added isn't already assigned a **viewer** role in Bookings.
+
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. Using PowerShell, assign full access with the following commands:
+
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. And then run this command to assign send-as permissions.
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+Here's an example PowerShell command to add Allie Bellew to the Contoso daycare booking mailbox.
+
+1. First run this command:
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. Then run this command:
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.

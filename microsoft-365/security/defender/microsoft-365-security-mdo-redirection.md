@@ -1,5 +1,5 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Office 365 to the new Microsoft 365 security center
+title: Redirecting accounts from Office 365 Security and Compliance Center to the new Microsoft 365 security center
 description: How to redirect from the Defender for Office 365 to the Microsoft 365 security center.
 keywords: Microsoft 365 security center, Getting started with the Microsoft 365 security center, security center redirection
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ---
-# Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center
+# Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 security center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Defender for Office 365
 
-This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Microsoft Security and Compliance Center (protection.office.com or securitycenter.microsoft.com), to the Microsoft 365 security center (security.microsoft.com).
+This article explains how to route accounts to the Microsoft 365 security center by enabling automatic redirection from the former Office 365 Security and Compliance Center (protection.office.com), to the Microsoft 365 security center (security.microsoft.com).
 
 ## What to expect
 Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to the Microsoft 365 security center (https://security.microsoft.com).  
@@ -58,13 +58,13 @@ To start routing accounts to the Microsoft 365 security center at security.micro
 > After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to the Microsoft 365 security center after ending their current session and signing back in again.
 
 ## Can I go back to using the former portal?
-If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it using the portal feedback option. If you’ve encountered any issues with redirection, we encourage you to reach out to your PM buddy directly through private preview or let us know via the Give feedback submission form.
+If something isn’t working for you or if there’s anything you’re unable to complete through the Microsoft 365 security center portal, we want to hear about it using the portal feedback option. If you’ve encountered any issues with redirection, please let us know.
 
 To revert to the former portal:
 
 1. [Sign in](https://security.microsoft.com/) to the Microsoft 365 security center as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
-2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection**.  
+2. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.   
 
 3. Toggle the Automatic redirection setting to **Off**.
 
@@ -72,7 +72,7 @@ To revert to the former portal:
 
 This setting can be enabled again at any time.
 
-Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
+Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal—securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
 - [Microsoft 365 security center overview](overview-security-center.md)

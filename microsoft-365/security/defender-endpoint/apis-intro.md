@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Access the Microsoft Defender for Endpoint APIs 
@@ -40,7 +41,7 @@ Watch this video for a quick overview of Defender for Endpoint's APIs.
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 In general, you’ll need to take the following steps to use the APIs:
-- Create an AAD application
+- Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 

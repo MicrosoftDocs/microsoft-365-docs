@@ -57,7 +57,7 @@ Microsoft 365 security center helps security teams investigate and respond to at
 
 - Incidents & alerts
 - Hunting
-- Action Center
+- Action center
 - Threat analytics
 
 The Microsoft 365 security center emphasizes *unity, clarity, and common goals* as it merges Microsoft Defender for Office 365 and Microsoft Defender for Endpoint. The merge was based on the priorities listed below, and made without sacrificing the capabilities that each security suite brought to the combination of:

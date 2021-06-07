@@ -88,7 +88,7 @@ Use the following table to help you identify the differences in behavior for the
 |Exchange attachments checked for conditions|No | Yes|
 |Apply visual markings |Yes |Yes (email only) |
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
-|Label incoming email|No |Yes (encryption not applied) |
+|Label incoming email|No |Yes|
 
 \* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the Auto-labeling tab isn't visible in the admin labeling center.
 
@@ -128,7 +128,7 @@ When you select the **Sensitive info types** option, you see the same list of se
 
 Similarly to when you configure DLP policies, you can then refine your condition by changing the instance count and match accuracy. For example:
 
-![Options for match accuracy and instance count](../media/sensitivity-labels-instance-count-match-accuracy.png)
+![Options for match accuracy and instance count](../media/sit-confidence-level.png)
 
 You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
