@@ -1,5 +1,5 @@
 ﻿---
-title: Manage the gradual rollout process for updates
+title: Manage the gradual rollout process for Microsoft Defender updates
 description: Learn about the gradual update process and controls 
 keywords: update, update process, controls, release
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Manage the gradual rollout process for monthly updates
+#  Manage the gradual rollout process for Microsoft Defender updates
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Capabilities are provided through several components:
 Updates are released monthly using a gradual release process. This process helps to enable early failure detection to catch impact as it occurs and address it quickly before a larger rollout. 
 
 > [!NOTE]
-> For more information on how to control daily protection updates, see [Schedule Microsoft Defender Antivirus protection updates - Windows security | Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md). Protection updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
+> For more information on how to control daily definition updates, see [Schedule Microsoft Defender Antivirus definition updates - Windows security | Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md). Definition updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
 
 ## Microsoft gradual rollout model
 
@@ -62,7 +62,7 @@ If your machines are receiving Defender updates from Windows Update, the gradual
 > [!NOTE]
 > When planning for your own gradual release, please make sure to always have a selection of devices subscribed to the preview and staged channels. This will provide your organization as well as Microsoft the opportunity to prevent or find and fix issues specific to your environment.
 
-For machines receiving updates through for example Windows Server Update Services (WSUS) or Microsoft Endpoint Configuration Manager (MECM), more options are available to all Windows updates, including those for Microsoft Defender for Endpoint.
+For machines receiving updates through, for example, Windows Server Update Services (WSUS) or Microsoft Endpoint Configuration Manager (MECM), more options are available to all Windows updates, including options  for Microsoft Defender for Endpoint.
 
 - Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security | Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
@@ -70,11 +70,9 @@ For machines receiving updates through for example Windows Server Update Service
 
 You can assign a machine to an update channel to define the cadence in which a machine receives monthly engine and platform updates.
 
-For more information on how to configure updates, see [Create a custom gradual rollout process for monthly updates](configure-updates.md).
+For more information on how to configure updates, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
 
 The following update channels are available:
-
-### Monthly
 
 | Channel name  | Description  | Application  |
 |-|-|-|
@@ -84,7 +82,7 @@ The following update channels are available:
 | Current Channel (Broad) | Get updates at the end of gradual release  | Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).  |
 | (default)  |   | If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices.  |
 
-### Update channels for daily protection updates
+### Update channels for daily definition updates
 
 You can assign a machine to an update channel to define the cadence in which a machine receives daily definition updates.
   
@@ -121,4 +119,4 @@ To create your own custom gradual rollout process for monthly updates, you can u
 - Microsoft Endpoint Manager
 - PowerShell
 
-For details on how to use these tools, see [Create a custom gradual rollout process for monthly updates](configure-updates.md).
+For details on how to use these tools, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
