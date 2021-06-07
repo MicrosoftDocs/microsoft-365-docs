@@ -43,7 +43,8 @@ To see device configuration reports, the account must have view reports permissi
 
 Make sure that the Windows 10 devices that you plan on deploying Printer Protection to meet these requirements.
 
-1. Join the Insider Program. 
+1. Join the Insider Program.
+
 1. The following Windows Updates are installed. 
 
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46) 
@@ -56,14 +57,13 @@ Make sure that the Windows 10 devices that you plan on deploying Printer Protect
 
 You can deploy the policy via Group Policy or Intune.
 
-|||||||
+| Title | Description | CSP Support | GPO Support | User-based Support | Machine-based Support |
 |:--|:--|:--|:--|:--|:--|
-|**Title**|**Description**|**CSP Support**|**GPO Support**|**User-based Support**|**Machine-based Support**|
 |**Enable Device control Printing Restrictions**|Block people from printing via non-corporate printer|Yes|Yes|Yes|Yes|
-|**List of Approved USB-connected print devices** *|Allow specific USB printer|Yes|Yes|Yes|Yes|
+|**List of Approved USB-connected print devices** \*|Allow specific USB printer|Yes|Yes|Yes|Yes|
 |||||||
 
-*This policy must be used together with **Enable Device control Printing Restrictions**
+\* This policy must be used together with **Enable Device control Printing Restrictions**
 ## Deploy policy via Intune 
 
 For Intune, currently Device Control Printer Protection supports OMA-URI only.
