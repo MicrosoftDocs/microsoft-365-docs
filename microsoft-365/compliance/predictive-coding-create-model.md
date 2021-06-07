@@ -46,7 +46,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 6. Click **Save** to create the model.
 
-   It will a couple minutes for the system to prepare your model. After it's ready, you can perform the first round of training.
+   It will take a couple minutes for the system to prepare your model. After it's ready, you can perform the first round of training.
 
 ## What happens after you create a model
 

@@ -1326,6 +1326,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/using-relevance.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization.md",
       "redirect_url": "/microsoft-365/compliance/use-network-upload-to-import-pst-files",
       "redirect_document_id": false

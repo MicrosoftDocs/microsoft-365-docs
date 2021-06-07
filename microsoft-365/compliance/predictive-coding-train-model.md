@@ -44,7 +44,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 6. After you've labeled all 50 items, click **Finish**.
 
-    It will a couple minutes for the system to "learn" from your labeling and update the model. When this process is complete, a status of **Ready** is displayed for the model on the **Predictive coding models (preview)** page.
+    It will take a couple minutes for the system to "learn" from your labeling and update the model. When this process is complete, a status of **Ready** is displayed for the model on the **Predictive coding models (preview)** page.
 
 ## Perform additional training rounds
 
@@ -78,7 +78,7 @@ After you perform subsequent training rounds (after the first training round), t
 
 - The model is updated based on the labels that you applied to the training set in that round of training.
 
-- The system evaluates the model's prediction score on the items in the control set and check whether the score aligns with the how you labeled items in the control set. The evaluation is performed on all labeled items from control set for all training rounds. The results of this evaluation is incorporated in the dashboard on the **Overview** tab for the model.
+- The system evaluates the model's prediction score on the items in the control set and check whether the score aligns with how you labeled items in the control set. The evaluation is performed on all labeled items from control set for all training rounds. The results of this evaluation are incorporated in the dashboard on the **Overview** tab for the model.
 
 - The updated model reprocesses every item in the review set and assign each item an updated prediction score.
 

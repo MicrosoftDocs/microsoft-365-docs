@@ -28,7 +28,7 @@ Here are two ways you can use the prediction score filter:
 
 ## Before you apply a prediction score filter
 
-- You have to create a predictive coding model so that a corresponding prediction score filter is created.
+- Create a predictive coding model so that a corresponding prediction score filter is created.
 
 - You can apply a prediction score filter after any of the training rounds. But you may want to wait after performing several rounds or until the model is stable before using the prediction score filter.
 
