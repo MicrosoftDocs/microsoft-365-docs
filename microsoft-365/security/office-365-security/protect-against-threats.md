@@ -101,41 +101,53 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-## Part 2 - Anti-phishing protection
+## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
 [Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
+For more information about the recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-phishing**.
+The following procedure describes how to configure the default anti-phishing policy. Settings that are only available in Defender for Office 365 are clearly marked.
 
-2. Click **Default policy**.
+1. Open <https://security.microsoft.com/antiphishing>.
 
-3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
+2. On the **Anti-phishing** page, select the policy named **Office365 AntiPhish Default (Default)** by clicking on the name.
 
-   - On the **Add users to protect** tab, turn *On* protection. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+3. In the policy details flyout that appears, configure the following settings:
 
-   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add them now.
+   - **Phishing threshold & protection** section: Click **Edit protection settings** and configure the following settings in the **Edit protection settings** flyout that opens:
+     - **Phishing email threshold**<sup>\*</sup>: Select **2 - Aggressive** (Standard) or **3 - More Aggressive** (Strict).
+     - **Impersonation** section<sup>\*</sup>: Configure the following values:
+       - Select **Enable users to protect**, click the **Manage (nn) sender(s)** link that appears, and then add internal and external senders to protect from impersonation, such as your organization's board members, your CEO, CFO, and other senior leaders.
+       - Select **Enable domains to protect**, and then configure the following settings that appear:
+         - Select **Include domains I own** to protect internal senders in your accepted domains (visible by clicking **View my domains**) from impersonation.
+         - To protect senders in other domains, select **Include custom domains**, click the **Manage (nn) custom domain(s)** link that appears, and then add other domains to protect from impersonation.
+     - **Add trusted senders and domains** section<sup>\*</sup>: Click **Manage (nn) trusted sender(s) and domains(s)** to configure sender and sender domain exceptions to impersonation protection if needed.
+     - Mailbox intelligence settings<sup>\*</sup>: Verify that **Enable mailbox intelligence** and **Enable intelligence for impersonation protection** are selected.
+     - **Spoof** section: Verify **Enable spoof intelligence** is selected.
 
-   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. Also, turn on impersonation safety tips.
+     When you're finished, click **Save**.
 
-   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on and turn on mailbox intelligence-based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
+   - **Actions** section: Click **Edit actions** and configure the following settings in the **Edit actions** flyout that opens:
+     - **Message actions** section: Configure the following settings:
+       - **If message is detected as an impersonated user**<sup>\*</sup>: Select **Quarantine the message**.
+       - **If message is detected as an impersonated domain**<sup>\*</sup>: Select **Quarantine the message**.
+       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
+       - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
+     - **Safety tips & indicators** section: Configure the following settings:
+       - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show domain impersonation safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show user impersonation unusual characters safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
+       - **Show "via" tag**: Select (turn on) if this setting is available.
 
-   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
+     When you're finished, click **Save**.
 
-   - **Save** on the **Review your settings** tab after you've reviewed your settings.
+   <sup>\*</sup> This setting is available only in Defender for Office 365.
 
-4. In the **Spoof** section, click **Edit**, and then specify the following settings:
+4. Click **Save** and then click **Close**
 
-   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
-
-   - On the **Actions** tab, choose **Quarantine the message**.
-
-   - **Save** on the **Review your settings** tab after you have reviewed your changes. (If you didn't make any changes, **Cancel**.)
-
-5. Close the default policy settings page.
-
-To learn more about your anti-phishing policy options, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 ## Part 3 - Anti-spam protection in EOP
 
@@ -143,15 +155,13 @@ For more information about the recommended settings for anti-spam, see [EOP anti
 
 1. Open <https://security.microsoft.com/antispam>.
 
-2. On the **Anti-spam policies** page, select the policy named **Anti-spam inbound policy** from the list by clicking on the name.
+2. On the **Anti-spam policies** page, select the policy named **Anti-spam inbound policy (Default)** from the list by clicking on the name.
 
-3. In the policy details flyout that appears, click **Edit spam threshold and properties** in the **Bulk email threshold & spam properties** section.
+3. In the policy details flyout that appears, do the following steps:
+   - **Bulk email threshold & spam properties** section: Click **Edit spam threshold and properties**. In the **spam threshold and properties** flyout that appears, set the **Bulk email threshold** value to 5 (Strict) or 6 (Standard). When you're finished, click **Save**.
+   - **Allowed and blocked senders and domains** section: Review or edit your allowed senders and allowed domains.
 
-4. In the **spam threshold and properties** flyout that appears, set the **Bulk email threshold** value to 5 (Strict) or 6 (Standard). When you're finished, click **Save**
-
-5. Back on the policy details flyout, go to the **Allowed and blocked senders and domains** section and review or edit your allowed senders and allowed domains.
-
-6. When you're finished, click **Close**.
+4. When you're finished, click **Close**.
 
 For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
