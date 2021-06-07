@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft Teams classes in your Learning Management System
+title: Use Microsoft Teams classes with Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -16,7 +16,7 @@ description: "Integrate Microsoft Teams classes in your Learning Management Syst
 ---
 
 
-# Use Microsoft Teams classes in your Learning Management System
+# Use Microsoft Teams classes with Blackboard
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
