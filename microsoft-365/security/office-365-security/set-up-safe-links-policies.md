@@ -170,7 +170,7 @@ Creating a custom Safe Links policy in the Microsoft 365 security center creates
 
 3. In the policy details fly out that appears, click **Edit policy**.
 
-The available settings in the fly out that appears are identical to those described in the [Use the Microsoft 365 security center to create Safe Links policies](#use-the-security--compliance-center-to-create-safe-links-policies) section.
+The available settings in the fly out that appears are identical to those described in the Use the [Microsoft 365 security center to create Safe Links policies](#use-the-microsoft-365-security-center-to-create-safe-links-policies) section.
 
 To enable or disable a policy or set the policy priority order, see the following sections.
 

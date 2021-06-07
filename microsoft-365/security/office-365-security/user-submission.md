@@ -58,7 +58,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
 
-After you've verified that your mailbox meets all applicable prerequisites, [Use the Microsoft 365 security center to configure the user submissions mailbox](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in this article).
+After you've verified that your mailbox meets all applicable prerequisites, implement the procedure specified in [Use the Microsoft 365 security center to configure the user submissions mailbox](#use-the-microsoft-365-security-center-to-configure-the-user-submissions-mailbox).
 
 ## What do you need to know before you begin?
 
