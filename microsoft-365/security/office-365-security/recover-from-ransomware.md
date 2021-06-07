@@ -125,6 +125,8 @@ Scam reporting websites provide information about how to prevent and avoid scams
 
 - New Zealand: [Consumer Affairs Scams](http://www.consumeraffairs.govt.nz/scams)
 
+- Switzerland [Nationales Zentrum für Cybersicherheit NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
+
 - United Kingdom: [Action Fraud](http://www.actionfraud.police.uk/)
 
 - United States: [On Guard Online](http://www.onguardonline.gov/)

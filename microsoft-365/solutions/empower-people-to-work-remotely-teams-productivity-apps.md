@@ -1,5 +1,5 @@
 ---
-title: "Step 5. Deploy remote worker productivity apps and services"
+title: "Step 5. Deploy hybrid worker productivity apps and services"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -19,7 +19,7 @@ ms.custom:
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
 
-# Step 5. Deploy remote worker productivity apps and services
+# Step 5. Deploy hybrid worker productivity apps and services
 
 To be productive, people need to communicate and collaborate with one another. They need to meet, chat by voice and text, create new content and share information and files, exchange email, and manage calendars and tasks. Microsoft 365 provides cloud-based services for all of these key functions:
 
@@ -35,11 +35,11 @@ To be productive, people need to communicate and collaborate with one another. T
 
 ## Keep people connected with Microsoft Teams
 
-Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work remotely into a hub for teamwork. 
+Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork. 
 
 For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
-Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) for guidance and demos on using Teams for remote work.
+Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) for guidance and demos on using Teams for hybrid work.
 
 ### Chat and conversations
 
@@ -47,27 +47,27 @@ Chat and threaded conversations are at the center of Teams with support for indi
 
 ### Meetings and conferencing 
 
-Teams can certainly help maintain communications and information sharing with remote workers, especially with meetings that support up to 250 people. Teams meetings enable interactive, collaborative meetings with people inside and outside your organization. Remote workers can use Teams meetings for day-to-day activities including recurring project checkpoints, catching-up with colleagues, brainstorming sessions, and facilitating conversations with customers. 
+Teams can certainly help maintain communications and information sharing with hybrid workers, especially with meetings that support up to 250 people. Teams meetings enable interactive, collaborative meetings with people inside and outside your organization. Remote workers can use Teams meetings for day-to-day activities including recurring project checkpoints, catching-up with colleagues, brainstorming sessions, and facilitating conversations with customers. 
 
 ### Calling
 
-Teams supports direct VoIP calling between users and even other organizations using federation. It uses the same codecs as meetings and provide great audio world-wide without additional PSTN charges. However, some users may need a dedicated phone number to take external calls when working remotely. Teams can quickly provide cloud phone service for these users to make and receive phone calls.
+Teams supports direct VoIP calling between users and even other organizations using federation. It uses the same codecs as meetings and provide great audio world-wide without additional PSTN charges. However, some users may need a dedicated phone number to take external calls when working on-site or remotely. Teams can quickly provide cloud phone service for these users to make and receive phone calls.
 
 ### Apps and workflows
 
 Teams provides a platform for apps and workflows that can be accessed from the desktop, web, and mobile versions of Teams. Teams provides hundreds of apps published by Microsoft and by third parties to engage users, support productivity, and integrate commonly used business services into Teams. Users and Admins can also create custom apps and automated workflows for Teams using the low-code Power Apps and Power Automate development tools.
 
-Apps and workflows let remote workers be more productive in Teams, by collecting and sharing critical information, automating repetitive tasks, and allowing them to chat with interactive bot. Pinning apps to a channel or the Teams app bar is a great way for users to make these apps easily accessible in a relevant space, and admins can pin apps to drive awareness and adoption of the apps that everyone should be using.
+Apps and workflows let hybrid workers be more productive in Teams, by collecting and sharing critical information, automating repetitive tasks, and allowing them to chat with interactive bot. Pinning apps to a channel or the Teams app bar is a great way for users to make these apps easily accessible in a relevant space, and admins can pin apps to drive awareness and adoption of the apps that everyone should be using.
 
 ## Exchange email and manage calendars, contacts, and tasks with Exchange Online and Outlook
 
-With Outlook, remote workers can stay connected and organized with email, calendars, contacts, tasks, and more—together in one place. Outlook helps you stay on track and prioritize your day based on what’s relevant to you. Outlook enables you to share attachments right from OneDrive, plan and join Teams meetings, view and share calendars, and provide delegate permissions to others. Knowing what’s coming up next across both work and personal commitments and what needs attention can help remote workers focus on what matters. Outlook provides helpful ways for remote workers to manage their time and to find what they need easily, including files, people in the organization, and more. 
+With Outlook, hybrid workers can stay connected and organized with email, calendars, contacts, tasks, and more—together in one place. Outlook helps you stay on track and prioritize your day based on what’s relevant to you. Outlook enables you to share attachments right from OneDrive, plan and join Teams meetings, view and share calendars, and provide delegate permissions to others. Knowing what’s coming up next across both work and personal commitments and what needs attention can help hybrid workers focus on what matters. Outlook provides helpful ways for hybrid workers to manage their time and to find what they need easily, including files, people in the organization, and more. 
 
 See [this article](../security/office-365-security/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
 
 ## Store and collaborate on files with SharePoint and OneDrive
 
-For content collaboration, remote workers can use SharePoint and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
+For content collaboration, hybrid workers can use SharePoint and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
 
 You might have to migrate your documents to SharePoint or OneDrive from:
 
