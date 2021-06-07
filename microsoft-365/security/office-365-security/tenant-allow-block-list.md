@@ -658,7 +658,7 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Maximum number of entries under Spoof Allow/Block list is 1000 entries. 
+The maximum number of spoofed sender entries is 1000. 
 
 Adding a domain pair only allows or blocks the *combination* of the spoofed user *and* the sending infrastructure. It does not allow email from the spoofed user from any source, nor does it allow email from the sending infrastructure source for any spoofed user. 
 
