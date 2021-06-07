@@ -62,9 +62,9 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 
 - An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
-If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
+If a user reports any of the above symptoms, you should perform further investigation. The [Microsoft 365 security center](https://security.microsoft.com) and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
-- **Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
+- **Unified Audit Logs in the Microsoft 365 security center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
 - **Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
 
@@ -162,7 +162,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
    2. Find and select the user account, click ![More icon](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-3. In the Security & Compliance Center at <https://protection.office.com>, do the following steps:
+3. In the [Microsoft 365 security center](https://security.microsoft.com), do the following steps:
 
    Select **Permissions**, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
 
