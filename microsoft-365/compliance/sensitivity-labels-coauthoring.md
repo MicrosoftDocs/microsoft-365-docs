@@ -20,11 +20,7 @@ description: "Turn on a setting that enables co-authoring and AutoSave in deskto
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and subject to change. 
->
-> Enable this feature in a test tenant rather than a production tenant because:
-> - This feature makes changes to labeling metadata and not all apps on all platforms currently support this change
-> - You cannot disable this feature yourself after it is enabled
+> This feature is in preview and subject to change.
 
 Enable the setting to support [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) for Office desktop apps so that when documents are labeled and encrypted by [sensitivity labels](sensitivity-labels.md), multiple users can edit these documents at the same time.
 
@@ -32,7 +28,7 @@ Without this setting enabled for your tenant, users must check out an encrypted 
 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for these labeled and encrypted files.
 
-To read the release announcement, see the blog post [Announcing co-authoring on Microsoft Information Protection-encrypted documents and labeling updates](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+To read the initial release announcement, see the blog post [Announcing co-authoring on Microsoft Information Protection-encrypted documents and labeling updates](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
 
 ## Metadata changes for sensitivity labels
 
@@ -70,8 +66,6 @@ Check the following section for a list of apps and services that support this se
 ## Prerequisites
 
 Make sure you understand the following prerequisites before you turn on this feature.
-
-- You must use a test tenant for this preview.
 
 - You must be a global admin to turn on this feature.
 
@@ -137,7 +131,7 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 ## How to enable co-authoring for files with sensitivity labels
 
 > [!CAUTION]
-> Turning on this setting is a one-way action. While the feature is in preview, test it only in a non-production environment and only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
+> Turning on this setting is a one-way action. While the feature is in preview, enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
 During the preview, you must use a specific URL to access this setting in the Microsoft 365 compliance center.
 
@@ -164,7 +158,7 @@ During the preview, you must use a specific URL to access this setting in the Mi
 > [!IMPORTANT]
 > If you do need to disable this feature, be aware that labeling information can be lost.
 
-After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting. It's also why we recommend that you test this feature with a test tenant rather than a production tenant.
+After you've enabled co-authoring for files with sensitivity labels for your tenant, you can't disable this setting yourself. That's why it's so important that you check and understand the prerequisites, consequences, and limitations before you enable this setting.
 
 ![Option that shows co-authoring turned on for sensitivity labels](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
