@@ -33,7 +33,7 @@ ms.technology: mde
 
 ## Overview
 
-Today’s threat landscape is overrun by [fileless malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](https://docs.microsoft.com/windows/security). 
+Today’s threat landscape is overrun by [fileless malware](/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions are not sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security). 
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities. 
 
@@ -41,11 +41,11 @@ Behavioral blocking and containment capabilities can help identify and stop thre
 
 Behavioral blocking and containment capabilities work with multiple components and features of Defender for Endpoint to stop attacks immediately and prevent attacks from progressing.
 
-- [Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
+- [Next-generation protection](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
 
-- [Endpoint detection and response](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
+- [Endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
-- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR. A component of [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection), Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
+- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR. A component of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection), Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
 
 With these capabilities, more threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
 
@@ -55,7 +55,7 @@ The following image shows an example of an alert that was triggered by behaviora
 
 ## Components of behavioral blocking and containment
 
-- **On-client, policy-driven [attack surface reduction rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) as informational alerts. (Attack surface reduction rules are not enabled by default; you configure your policies in the Microsoft Defender Security Center.)
+- **On-client, policy-driven [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in the Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) as informational alerts. (Attack surface reduction rules are not enabled by default; you configure your policies in the Microsoft Defender Security Center.)
 
 - **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.) 
 
@@ -115,7 +115,7 @@ This example shows that with behavioral blocking and containment capabilities, t
 
 ## Next steps
 
-- [Learn more about Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Learn more about Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [Configure your attack surface reduction rules](attack-surface-reduction.md)
 
@@ -123,4 +123,4 @@ This example shows that with behavioral blocking and containment capabilities, t
 
 - [See recent global threat activity](https://www.microsoft.com/wdsi/threats)
 
-- [Get an overview of Microsoft 365 Defender ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Get an overview of Microsoft 365 Defender ](/microsoft-365/security/defender/microsoft-threat-protection)
