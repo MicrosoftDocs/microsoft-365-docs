@@ -38,7 +38,7 @@ For more information on preview features, see [Preview features](preview.md).
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: 
 > 
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## March 2021

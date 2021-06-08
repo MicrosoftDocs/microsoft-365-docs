@@ -72,7 +72,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
    5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy.
 
-   6. **Priority:** This value determines the order in which audit log retention policies in your organization are processed. A higher value indicates a higher priority. For example, a policy with a priority value of **5** would take priority over a policy with a priority value of **0**. As previously explained, any custom audit log retention policy takes priority over the default policy for your organization.
+   6. **Priority:** This value determines the order in which audit log retention policies in your organization are processed. A lower value indicates a higher priority. Valid priorities are numerical values between **1** and **10000**. A value of **1** is the highest priority, and a value of **10000** is the lowest priority. For example, a policy with a value of **5** takes priority over a policy with a value of **10**. As previously explained, any custom audit log retention policy takes priority over the default policy for your organization.
 
 5. Click **Save** to create the new audit log retention policy.
 
