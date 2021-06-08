@@ -1,5 +1,5 @@
 ---
-title: Get model and primed library information
+title: GetModelAndLibraryInfo
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,9 +13,9 @@ localization_priority: Priority
 description: Use REST API to get information about a model and the library where it has been applied.
 ---
 
-# Get model and primed library information
+# GetModelAndLibraryInfo
 
-Use to get information about a model and the library where it has been applied (see [example](get-model-and-primed-library-information.md#example)).
+Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo-method.md#example)).
 
 ## HTTP request
 
@@ -51,7 +51,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’)
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](get-model-and-primed-library-information.md#request-body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-getmodelandlibraryinfo-method.md#request-body) for details.|
 
 ## Example
 
