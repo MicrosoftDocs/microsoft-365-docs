@@ -90,6 +90,8 @@
             href: ../defender-identity/sensor-health.md
           - name: VPN integration
             href: ../defender-identity/vpn-integration.md
+          - name: Set entity tags
+            href: ../defender-identity/entity-tags.md
           - name: Manage security alerts
             href: ../defender-identity/manage-security-alerts.md
           - name: Email and syslog notifications

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Identity security alerts in Microsoft 365 Defender 
-description: Learn how to manage and review security alerts issued by Microsoft Defender for Identity in Microsoft 365 Defender 
-ms.date: 05/20/2021
+title: Microsoft Defender for Identity entity tags in Microsoft 365 Defender 
+description: Learn how to apply Microsoft Defender for Identity entity tags in Microsoft 365 Defender 
+ms.date: 06/08/2021
 ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
@@ -9,80 +9,84 @@ ms.service: microsoft-defender-for-identity
 manager: raynew
 ---
 
-# Defender for Identity security alerts in Microsoft 365 Defender
+# Defender for Identity entity tags in Microsoft 365 Defender
 
 **Applies to:**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-This article explains the basics of how to work with [Microsoft Defender for Identity](/defender-for-identity) security alerts in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center).
-
-Defender for Identity alerts are natively integrated into the [Microsoft 365 security center](https://security.microsoft.com) with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
-
-The new Identity alert page gives Microsoft Defender for Identity customers better cross-domain signal enrichment and new automated identity response capabilities. It ensures that you stay secure and helps improve the efficiency of your security operations.
-
-One of the benefits of investigating alerts through [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) is that Microsoft Defender for Identity alerts are further correlated with information obtained from each of the other products in the suite. These enhanced alerts are consistent with the other Microsoft 365 Defender alert formats originating from [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) and [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint). The new page effectively eliminates the need to navigate to another product portal to investigate alerts associated with identity.
-
-Alerts originating from Defender for Identity can now trigger the [Microsoft 365 Defender automated investigation and response (AIR)](/microsoft-365/security/defender/m365d-autoir) capabilities, including automatically remediating alerts and the mitigation of tools and processes that can contribute to the suspicious activity.
+This article explains how to apply [Microsoft Defender for Identity](/defender-for-identity) entity tags in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
-## Review security alerts
+## Entity tags
 
-Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.  
+In the Microsoft 365 security center, you can set three types of Defender for Identity entity tags: **Sensitive tags**, **Honeytoken tags**, and **Exchange server tags**.
 
-In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Incidents & alerts** and then to **Alerts**.
+To set these tags, in the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
-![Go to Incidents and Alerts, then Alerts](../../media/defender-identity/incidents-alerts.png)
+![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
-To see alerts from Defender for Identity, on the top-right select **Filter**, and then under **Service sources** select **Microsoft Defender for Identity**, and select **Apply**:
+The tag settings will appear in the **Settings** column.
 
-![Filter for Defender for Identity events](../../media/defender-identity/filter-defender-for-identity.png)
+![Tag setting types](../../media/defender-identity/tag-settings.png)
 
-The alerts are displayed with information in the following columns: **Alert name**, **Tags**, **Severity**, **Investigation state**, **Status**, **Category**, **Detection source**, **Impacted assets**, **First activity**, and **Last activity**.
+To set each type of tag, follow the instructions below.
 
-![Defender for Identity events](../../media/defender-identity/filtered-alerts.png)
+## Sensitive  tags
 
-## Manage alerts
+The **Sensitive tag** is used to identify high value assets. The lateral movement path also relies on an entity's sensitivity status. Some entities are considered sensitive automatically by Defender for Identity. For a list of those assets, see [Sensitive entities](/defender-for-identity/manage-sensitive-honeytoken-accounts#sensitive-entities).
 
-If you click the **Alert name** for one of the alerts, you'll go to the page with details about the alert. In the left pane, you'll see a summary of **What happened**:
+You can also manually tag users, devices, or groups as sensitive.
 
-![What happened in alert](../../media/defender-identity/what-happened.png)
+1. Select **Sensitive tag**. You will then see the existing sensitive **Users**, **Devices**, and **Groups**.
 
-Above the **What happened** box are buttons for the **Accounts**, **Destination Host** and **Source Host** of the alert. For other alerts, you might see buttons for details about additional hosts, accounts, IP addresses, domains, and security groups. Select any of them to get more details about the entities involved.
+    ![Sensitive entities](../../media/defender-identity/sensitive-entities.png)
 
-On the right pane, you'll see the **Alert details**. Here you can see more details and perform several tasks:
+1. Under each category, select **Tag...** to tag that type of entity. For example, under **Groups**, select **Tag groups.** A pane will open with the groups you can select to tag. To search for a group, enter its name in the search box.
 
-- **Classify this alert** - Here you can designate this alert as a **True alert** or **False alert**
+    ![Add groups](../../media/defender-identity/add-groups.png)
 
-    ![Classify alert](../../media/defender-identity/classify-alert.png)
+1. Select your group, and click **Add selection.**
 
-- **Alert state** - In **Set Classification**, you can classify the alert as **True** or **False**. In **Assigned to**, you can assign the alert to yourself or unassign it.
+    ![Add selection](../../media/defender-identity/add-selection.png)
 
-    ![Alert state](../../media/defender-identity/alert-state.png)
+## Honeytoken tags
 
-- **Alert details** - Under **Alert details**, you can find more information about the specific alert, follow a link to documentation about the type of alert, see which incident the alert is associated with, review any automated investigations linked to this alert type, and see the impacted devices and users.
+Honeytoken entities are used as traps for malicious actors. Any authentication associated with these honeytoken entities triggers an alert.
 
-    ![Alert details](../../media/defender-identity/alert-details.png)
+You can tag users or devices with the **Honeytoken** tag in the same way you tag sensitive accounts.
 
-- **Comments & history** - Here you can add your comments to the alert, and see the history of all actions associated with the alert.
+1. Select **Honeytoken tag**. You'll then see the existing honeytoken **Users** and **Devices**.
 
-    ![Comments and history](../../media/defender-identity/comments-history.png)
+    ![Honeytoken entities](../../media/defender-identity/honeytoken-entities.png)
 
-- **Manage alert** - If you select **Manage alert**, you'll go to a pane that will allow you to edit the:
-  - **Status** - You can choose **New**, **Resolved** or **In progress**.
-  - **Classification** - You can choose **True alert** or **False alert**.
-  - **Comment** - You can add a comment about the alert.
+1. Under each category, select **Tag...** to tag that type of entity. For example, under **Users**, select **Tag users.** A pane will open with the groups you can select to tag. To search for a group, enter its name in the search box.
 
-    If you select the three dots next to **Manage alert**, you can **Consult a threat expert**, **Export** the alert to an Excel file, or **Link to another incident**.
+    ![Add users](../../media/defender-identity/add-users.png)
 
-    ![Manage alert](../../media/defender-identity/manage-alert.png)
+1. Select your user, and click **Add selection.**
 
-    >[!NOTE]
-    >In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft 365 Defender**. Each link will bring you to the relevant portal, and provide information about the alert there.
+    ![Add selected user](../../media/defender-identity/add-selected-user.png)
+
+## Exchange server tags
+
+Defender for Identity considers Exchange servers as high-value assets and automatically tags them as **Sensitive**. You can also manually tag devices as Exchange servers.
+
+1. Select **Exchange server tag**. You'll then see the existing devices labeled with the **Exchange server** tag.
+
+    ![Exchange servers](../../media/defender-identity/exchange-servers.png)
+
+1. To tag a device as an Exchange server, select **Tag devices**.  A pane will open with the devices that you can select to tag. To search for a device, enter its name in the search box.
+
+    ![Add devices](../../media/defender-identity/add-devices.png)
+
+1. Select your device, and click **Add selection.**
+
+    ![Select device](../../media/defender-identity/select-device.png)
 
 ## See also
 
-- [Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)
+- [Manage Defender for Identity security alerts](manage-security-alerts.md)
