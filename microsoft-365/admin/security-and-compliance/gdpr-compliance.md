@@ -34,7 +34,7 @@ You can get started by reviewing this article, which is aimed at helping you und
 It also includes answers to common questions about GDPR that small businesses may have, and highlights steps a small business can take to prepare for GDPR.
 
 > [!IMPORTANT]
-> Recommendations from this article are to help you get started with GDPR, and should not be interpreted as a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own advisors - such lawyers and compliance professionals - when needed. The Microsoft 365 solutions mentioned in this article are tools and resources that can help you manage and protect your data, but are not a guarantee of GDPR compliance.
+> The Microsoft 365 solutions and recommendations in this article are tools and resources that can help you manage and protect your data, but are not a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own legal and/or professional advisors when needed. 
   
 ## A quick overview of the GDPR
 
