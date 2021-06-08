@@ -327,7 +327,7 @@
             - name: Set up compliance features
               href: ../business/set-up-compliance.md
         - name: Secure score
-          href: https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
