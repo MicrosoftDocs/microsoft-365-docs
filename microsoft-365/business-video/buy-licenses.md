@@ -2,9 +2,10 @@
 title: "Buy new licenses"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +16,14 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: "Learn how to buy new Microsoft 365 for business licenses."
+ms.date: 05/11/2021
 ---
 
 # Buy Microsoft 365 licenses

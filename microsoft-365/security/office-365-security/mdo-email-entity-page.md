@@ -14,7 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 E5 and ATP P1 and ATP P2 customers can now get a 360-degree view of each email with email entity page.
+description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
 
@@ -28,7 +28,7 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing Office Security and Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
+Either of the existing Security & Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
 
 |Center|URL|Navigation|
 |---|---|---|

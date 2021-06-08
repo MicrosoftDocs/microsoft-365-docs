@@ -453,7 +453,7 @@
         - name: How to check service health
           href: view-service-health.md
         - name: Support options
-          href: https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+          href: ../business-video/get-help-support.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
@@ -620,6 +620,9 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Manage add-ins with Centralized Deployment PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+
+- name: Windows 10 and Office 365 deployment lab kit
+  href: modern-desktop-deployment-and-management-lab.md
 
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md

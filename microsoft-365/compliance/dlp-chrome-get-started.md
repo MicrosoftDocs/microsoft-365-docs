@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Compliance Extension (preview)"
+title: "Get started with the Microsoft Compliance Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Compliance Extension."
 ---
 
-# Get started with Microsoft Compliance Extension (preview)
+# Get started with Microsoft Compliance Extension
 
 Use these procedures to roll out the Microsoft Compliance Extension.
 
@@ -30,7 +30,7 @@ Use these procedures to roll out the Microsoft Compliance Extension.
 To use Microsoft Compliance Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
 - [Learn about Microsoft Compliance Extension](dlp-chrome-learn-about.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
@@ -256,9 +256,8 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Drag & Drop enforcement for folder upload is not supported.
-2. Block Override enforcement for cloud egress is not supported.
-3. Incognito mode is not supported and must be disabled.
+1. Block Override enforcement for cloud egress is not supported.
+2. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
@@ -269,7 +268,7 @@ Now that you have onboarded devices and can view the activity data in Activity e
 
 - [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)

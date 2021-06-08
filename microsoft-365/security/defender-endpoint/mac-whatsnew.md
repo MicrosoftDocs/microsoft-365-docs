@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,10 +33,22 @@ ms.technology: mde
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
 
+## 101.29.64 (20.121042.12964.0)
+
+- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+  - `--sort`: sorts the output descending by total number of files scanned
+  - `--top N`: displays the top N results (only works if `--sort` is also specified)
+- Performance improvements (specifically for when YARN is used) & bug fixes
+
+## 101.27.50 (20.121022.12750.0)
+
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Threat & Vulnerability Management (TVM) functionality.
+
 ## 101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes
+- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes.
 
 ## 101.23.64 (20.121021.12364.0)
 

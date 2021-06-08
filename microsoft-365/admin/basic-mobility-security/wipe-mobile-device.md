@@ -40,7 +40,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Go to the [Microsoft 365 admin center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
@@ -83,7 +83,3 @@ The wipe is sent immediately to the mobile device and the device is marked as no
 |Email profiles created by Basic Mobility and Security are removed and cached email on the device is deleted.|Yes|N/A|
 >[!NOTE]
 >Company Portal app is available at the App Store for iOS and the Play Store for Android devices.
-
-## Related topics
-
-[Set up Basic Mobility and Security](set-up.md)

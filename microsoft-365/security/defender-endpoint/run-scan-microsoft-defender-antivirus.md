@@ -1,5 +1,5 @@
 ---
-title: Run and customize on-demand scans in Microsoft Defender AV
+title: Run and customize on-demand scans in Microsoft Defender Antivirus
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
 search.product: eADQiWindows 10XVcnh
@@ -7,19 +7,18 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/13/2020
+ms.date: 06/04/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: how-to
 ---
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -34,14 +33,12 @@ Quick scan looks at all the locations where there could be malware registered to
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md)--which reviews files when they're opened and closed, and whenever a user navigates to a folder--a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
+Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Always-on, real-time protection reviews files when they're opened and closed, and whenever a user navigates to a folder. By default, quick scans run on mounted removable devices, such as USB drives. In most instances, a quick scan is adequate to find malware that wasn't picked up by real-time protection.
 
-In most instances, a quick scan is adequate to find malware that wasn't picked up by real-time protection.
+A full scan can be useful when a malware threat is reported on an endpoint. The scan can identify whether there are any inactive components that require a more thorough clean-up. However, Microsoft generally recommends using quick scans instead of full scans. A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned. 
 
-A full scan can be useful on endpoints that have reported a malware threat. The scan can identify if there are any inactive components that require a more thorough clean-up. This is  ideal if your organization is running on-demand scans.
-
-> [!NOTE]
-> By default, quick scans run on mounted removable devices, such as USB drives.
+> [!TIP]
+> To learn more about the differences between quick and full scans, see [Quick scan versus full scan and custom scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan).
 
 ## Use Microsoft Endpoint Manager to run a scan
 

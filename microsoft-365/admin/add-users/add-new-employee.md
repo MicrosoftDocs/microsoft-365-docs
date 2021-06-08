@@ -67,7 +67,7 @@ Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 36
 ## Step 4: Help your employee get started
 
 
-Share with them the [Employee quick setup for Microsoft 365](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) to sign in, install software, set up email, and more. 
+Share with them the [Employee quick setup for Microsoft 365](../../business-video/employee-quick-setup.md) to sign in, install software, set up email, and more. 
   
 And here's a quick reference to help get them started:
   
@@ -81,8 +81,7 @@ And here's a quick reference to help get them started:
 |Complete the OneDrive for Business training to help you learn how to store and organize your documents, presentations, and spreadsheets in the cloud.  <br/> |Keep your business-related documents in the cloud by using OneDrive for Business. You can always get to your content, even if you're signed in to Microsoft 365 on a different computer. [Watch a video to learn how to use your OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Training:** [OneDrive for Business training](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Select OneDrive for Business).  <br/> |
 |Complete the SharePoint Online training to help you collaborate with coworkers and share content.  <br/> |The best place to keep documents that your coworkers will also access is in SharePoint Online.  <br/> <br/>**Training:** [Video: Collaborate with team content using SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Find out:** How is your organization using SharePoint Online, and what type of documents get stored there. Also, which documents are stored in OneDrive for Business.  <br/> |
 
-## Related articles
+## Related content
 
-[Remove a former employee from Microsoft 365](remove-former-employee.md)
-  
-[Add users  and assign licenses at the same time65](add-users.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md) (article)\
+[Add users  and assign licenses at the same time65](add-users.md) (article)

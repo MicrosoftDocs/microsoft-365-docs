@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: 
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -82,6 +82,8 @@ The three most recent major releases of macOS are supported.
 
 Beta versions of macOS are not supported.
 
+macOS devices with M1 processors are not supported.
+
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 ### Licensing requirements
@@ -91,6 +93,8 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.

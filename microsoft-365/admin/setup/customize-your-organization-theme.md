@@ -21,63 +21,135 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: "Learn to change the default theme of Microsoft 365 and customize it to match your company logo or color. "
+description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
 # Customize the Microsoft 365 theme for your organization
 
-As the admin of your Microsoft 365 for business subscription, you can change the default theme that appears in the top navigation bar for everyone in the organization:
+As the admin of your organization, you can create multiple themes for the people in your organization, and select which themes apply to different members of your organization. The organization theme is what appears in the top navigation bar for people in your organization.
 
-- Add your company logo.
-- Change the colors to match the rest of your brand.
-- Add a destination link users go when they select your logo.
+You can add or update a default theme that applies to everyone within your org. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
   
-## Customize your theme in the admin center
+## Add or update your organization's theme
 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
-2. On the **Organization profile** tab, choose **Custom themes**.
+2. On the **Organization profile** tab, select **Custom themes**.
 
-3. On the **Customs themes** panel, change the theme elements that you want for your organization:
+All themes can be customized using the following tabs.
 
-    - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, make sure that the URL uses HTTPS and that the image is 200 x 30 pixels of any format of any size. You can upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
+|**Tab**|**What can you do?**|
+|:-----|:-----|
+|[General](#general-modify-a-theme) <br/> |Modify a theme name and assign to up to five groups (if applicable).  <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Add your theme logo, including the Office dark theme and mobile options.  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |Customize a color scheme by specifying navigation bar, accent, text, and icon colors. <br/> |
 
-      > [!NOTE]
-      > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don't display in the app. Logos are not clickable in the SharePoint Mobile app.
+## General: Modify a theme
 
-    - **Make logo clickable**: You can use your logo in the navigation bar as a link to any company resource. You can enter the URL for the logo here, starting with http:// or https://. This is optional.
+Your experience on the General tab depends on whether you're adding or modifying the default theme or a group theme.
 
-    - **Select background image**: Select the image and upload your own JPG, PNG, or GIF with a resolution of 1366 x 50 pixels, no larger than 15 KB. The background image appears in the top navigation bar on every page.
+### Update the default theme
 
-      > [!NOTE]
-      > Images that contain text might not display as expected. Built-in elements that appear on the right and left sides of the navigation bar can vary across services, and your text might be obscured by those elements.
+The default theme is the first theme displayed.  
 
-    - **Navigation bar color**: Select a color to use for the background of the navigation bar. The navigation bar appears at the top on every page.
+1. If you previously customized a theme for your organization, select **Default Theme** and use one of your saved customizations, or, select **Add theme**.
+2. On the **General** page, you can prevent users from overriding their theme and show the user’s display name.
+3. Select **Save** to save your changes.  
 
-    - **Text and icons**: Select a color to use for the text and icons on the top navigation bar.
+> [!IMPORTANT]
+> The default theme is unique, it can't be renamed and applies to everyone within your organization. To delete the default theme, you have to delete all other themes first.
 
-    - **Accent color**: Select a color to use for the navigation bar button hover color and page accents like buttons and text on certain applications.
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
-    - **Prevent users from overriding theme**: Flip this toggle to prevent users from choosing their own theme from our theme selection. This doesn't prevent users from being able to set a high contrast theme.
+### Create a group theme
 
-    - **Show the user name**: Choose whether to show a user's full name at the entry point to the account manager in the top right of the page when the user is signed in. By default, users see their photo or their initials, if no photo was uploaded.
+You can create up to four additional group themes.
 
-4. Select **Save changes**.
+1. On the **General** page, enter a name for your theme.
 
-You can see your new theme in the admin center right away. After a short delay, you can see it throughout Microsoft 365, including on pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
+2. Under **Groups**, you can select up to 5 Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
 
-You can remove your custom icon or custom colors at any time. Just return to the theme page and select **Remove custom theming**.
+3. Select **Save**.
+
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+
+## Logos: Specify your theme logos
+
+On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
+
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS and that the image is at least 200 x 30 pixels. Your default logo can be in the JPG, PNG, GIF, or SVG format.
+- **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
+- **Small default logo**: Add a URL location that points to your logo. The image must be at least 48 x 48 pixels. You can scale this image so it fits on smaller or mobile devices.
+- **Small alternate logo**: Add a URL location that points to your logo. This image has the same requirements as the small default logo.
+- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website.
+
+Select **Save** to save your changes.
+
+You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
+
+:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
+
+> [!NOTE]
+> By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
   
-## Best Practices
+## Colors: Choose theme colors
 
-- **Logo image**: Use an SVG file type so that your logo appears at high resolution on all screens and at all zoom levels.
+On the **Colors** page, you can set the default colors and choose which logo should be used.
 
-- **Custom colors**: Choose a **Nav bar background color** with a high contrast ratio with the **Logo image** that you picked. Choose a **Text and icons** color with a high contrast ratio to the **Nav bar background color** so that all text and icons are clearly visible.
-
+- **Navigation bar color**: Select a color to use for the background of the navigation bar. The navigation bar appears at the top on every page.
+- **Text and icon color**: Select a color to use for the text and icons on the top navigation bar.
 - **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their Office.com portal page.
-  
-- **Contrast ratio**: The recommended contrast ratio between text, icon, or button color and background color is 4.5:1.
-  
-## Related articles
+- **Reset color**: Select this link to reset colors to the default colors.
+- **Which logo should be used?**: Select default logos or any other logos you've created yourself.
 
-[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md)
+:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+
+## Frequently asked questions
+
+### My organization already has a theme for all employees. How will this change?
+
+The default theme will continue to be shown to all employees. Adding a new group theme will only be made available to the Microsoft 365 groups associated with that theme.
+
+### Why don’t I see group themes in the Admin Center?
+
+Only global admins can customize company themes. Global readers have read-only access.
+
+### How many different themes can I set up for my organization?  
+
+Up to five themes can be created. A default theme and four group themes.  
+
+### Can I use security groups or distribution groups instead of Microsoft 365 Groups?
+
+No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
+
+> [!NOTE]
+> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
+
+### Can I manually assign a theme independent of Microsoft 365 Groups?  
+
+No, new group themes must be mapped to one or more Microsoft 365 groups. Users who are members of the Microsoft 365 group will get the theme applied to their group. You can [create and add new members to a Microsoft 365 Group](../create-groups/create-groups.md) by going to the **Settings** > **Groups** in the admin center.
+
+### What happens if a user is assigned to multiple group themes?  
+
+Users who are assigned to multiple group themes will be shown the default theme.  
+
+### Why can’t I delete the default theme?  
+
+The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
+
+### Why am I receiving an error message every time I upload a logo URL.  
+
+Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
+
+### Why am I receiving the message “Doesn’t meet minimum color contrast ratio of 4.5:1”?
+
+The recommended contrast ratio between text, icon or button color and background color is 4.5:1. You can override this recommendation and still save your theme as this is not a requirement.
+
+### If I define a theme, which places in Microsoft 365 will this be used?
+
+Any theme appears in the top navigation bar for everyone in the organization as part of the Microsoft 365 suite header.  
+  
+## Related content
+
+[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)\
+[Overview of Microsoft 365 Groups for administrators](../create-groups/office-365-groups.md) (article)

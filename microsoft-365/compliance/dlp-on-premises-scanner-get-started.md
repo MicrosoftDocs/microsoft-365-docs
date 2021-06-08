@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
@@ -122,7 +122,7 @@ Now that you have deployed a test policy for DLP on-premises locations and can v
 
 - [Learn about DLP on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Use DLP on-premises scanner (preview)](dlp-on-premises-scanner-use.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

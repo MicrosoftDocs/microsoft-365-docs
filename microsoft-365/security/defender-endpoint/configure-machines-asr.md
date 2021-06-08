@@ -1,7 +1,7 @@
 ---
 title: Optimize ASR rule deployment and detections
 description: Optimize your attack surface reduction (ASR) rules to identify and prevent typical malware exploits.
-keywords: onboard, Intune management, MDATP, WDATP, Microsoft Defender, Windows Defender, advanced threat protection, attack surface reduction, ASR, security baseline
+keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

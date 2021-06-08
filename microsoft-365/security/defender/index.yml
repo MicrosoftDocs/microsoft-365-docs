@@ -28,8 +28,73 @@ landingContent:
         links:
           - text: What is Microsoft 365 Defender?
             url:  ../defender/microsoft-365-defender.md
-          - text: Microsoft 365 security center
-            url: ../defender/overview-security-center.md
+      - linkListType: whats-new
+        links:
+          - text: What's new Microsoft 365 Defender
+            url: ../defender/whats-new.md
+      - linkListType: video
+        links:
+          - text: Overview video
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
+
+# Card
+  - title: Evaluate capabilities
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Create a trial lab
+          url: m365d-evaluation.md 
+        - text: Run pilot project in production
+          url: m365d-pilot.md
+ 
+# Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Get started with Microsoft 365 Defender
+          url: get-started.md 
+      - linkListType: deploy
+        links:
+        - text: Turn on Microsoft 365 Defender
+          url: m365d-enable.md
+        - text: Deploy supported services
+          url: deploy-supported-services.md
+# Card
+  - title: Microsoft Defender for Identity
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Identity?
+            url: /azure-advanced-threat-protection/what-is-atp
+          - text: Microsoft Defender for Identity architecture
+            url: /azure-advanced-threat-protection/atp-architecture
+
+   # Card
+  - title: Microsoft Defender for Office 365
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Defender for Office 365?
+            url: /office-365-security/defender-for-office-365
+          - text: Defender for Office 365 service description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-center-mdo
+          - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mdo-redirection
+            
+  # Card
+  - title: Microsoft Defender for Endpoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Endpoint?
+            url: /defender-endpoint/microsoft-defender-endpoint
+          - text: Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-cente
+          - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
+            url: /defender/microsoft-365-security-mde-redirection
 
 # Card (optional)
   - title: Microsoft 365 security center
@@ -42,6 +107,19 @@ landingContent:
             url: microsoft-365-security-center-mde.md
           - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
             url: ../defender/microsoft-365-security-center-mdo.md
+
+ 
+             
+   # Card
+  - title: Microsoft Cloud App Security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Cloud App Security?
+            url: /cloud-app-security/what-is-cloud-app-security
+          - text: Get started with Microsoft Cloud App Security
+            url: /cloud-app-security/getting-started-with-cloud-app-security
+
 # Card
   - title: Manage incidents and alerts
     linkLists:
@@ -49,7 +127,17 @@ landingContent:
         links:
           - text: Investigate incidents
             url: investigate-incidents.md
+          - text: Track and respond to emerging threats
+            url: threat-analytics.md
           - text: Automated investigation and response
             url: m365d-autoir.md
           - text: Hunt for threats
             url: advanced-hunting-overview.md
+
+# Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft 365 Defender APIs (preview)
+            url: api-overview.md

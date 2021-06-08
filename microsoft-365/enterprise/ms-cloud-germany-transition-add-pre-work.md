@@ -3,7 +3,7 @@ title: "Pre-migration activities for the migration from Microsoft Cloud Deutschl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/09/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -28,13 +28,12 @@ If you're using
 
 - **Office 365 in Microsoft Cloud Deutschland**, do [these steps](#general-tenant-migration-considerations).
 - **Custom Domains**, do [this step](#dns-entries-for-custom-domains).
-
+- **Office Apps**, consider [this step](#office-apps).
 - **SharePoint Online**, do [this step](#sharepoint-online).
 - **Exchange Online** or **Exchange Hybrid**, do [this step](#exchange-online).
 - **Skype for Business Online**, do [this step](#skype-for-business-online).
 - **Dynamics 365**, do [this step](#dynamics365).
 - **Power BI**, do [this step](#power-bi).
-
 - **Active Directory Federation Services** for Azure AD Connect, do [these steps](#active-directory-federation-services-ad-fs).
 - **Third-party services** or **line-of-business (LOB) apps** that are integrated with Office 365, do [this step](#line-of-business-apps).
 - A third-party mobile device management (MDM) solution, do [this step](#mobile-device-management).
@@ -79,18 +78,27 @@ If the command line returns a DNS record, remove the _msoid_ CNAME from your dom
 > [!NOTE]
 > If you are using a custom domain for Exchange Online, you'll need to have access to your DNS hosting provider. Please make sure you can access and edit your DNS settings, you'll be modifying DNS records during the migration.
 
+## Office Apps
+
+**Applies to**: Customers using Office Apps, especially on Windows clients <br>
+**When applied**: Any time before phase 9 starts
+
+Office 365 tenants transitioning to the region "Germany" require all users to close, sign out from Office 365 and back in for all Office desktop applications (Word, Excel, PowerPoint, Outlook, etc.) and OneDrive for Business client after the tenant migration has reached phase 9. Signing out and in, allows the Office services to obtain new authentication tokens from the global Azure AD service.
+
+This is required for all clients. To ensure a smooth migration experience, it is strongly recommended to inform and instruct all affected users in advance and at an early stage about this forthcoming activity.
+
+Customers with managed Windows clients can prepare Windows machines with the [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT). The OCCT is designed to run periodically on Windows clients until the tenant reached phase 9 of the migration. When phase 9 has been reached, the OCCT will perform all necessary changes on the machine automatically without user interaction.
+
+The OCCT can be deployed on Windows clients at any time before phase 9. If the OCCT shall support the migration experience, we recommend starting the deployment as soon as possible to equip a maximum number of clients.
+
 ## Active Directory Federation Services (AD FS)
 
-<!-- before phase 4 -->
-
 **Applies to**: Customers using AD FS on premises to authenticate users connecting to Microsoft Office 365<br>
-**When applied**: Any time before phase 4 starts
+**When applied**: Any time before phase 2 starts
 
 Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.md)
 
 ## SharePoint Online
-
-<!-- before phase 4 -->
 
 **Applies to**: Customers using SharePoint 2013 on-premises<br>
 **When applied**: Any time before phase 4 starts
@@ -190,7 +198,7 @@ If you're using a third-party service or line-of-business (LOB) apps that are in
 If you are using the same Azure Active Directory identity partition for Office 365 and Microsoft Azure in the Microsoft Cloud Deutschland instance, make sure that you are preparing for the customer driven migration of Microsoft Azure services.
 
 > [!NOTE]
-> The migration of your Microsoft Azure services must not be started before your Office 365 tenant has reached migration phase 3 and must be completed before migration phase 8 has been completed.
+> The migration of your Microsoft Azure services may not start before your Office 365 tenant has reached migration phase 9 and must be completed before migration phase 10 has been started.
 
 Customers who use Office 365 and Azure resources (for example, networking, compute, and storage) will perform the migration of resources to the Office 365 services instance. This migration is the customer's responsibility. Message Center posts will signal the start. Migration must be completed before finalization of the Azure AD organization in the Office 365 services environment. For Azure migrations, see the Azure migration playbook, [Overview of migration guidance for Azure Germany](https://docs.microsoft.com/azure/germany/germany-migration-main).
 

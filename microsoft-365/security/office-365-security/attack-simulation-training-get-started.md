@@ -34,7 +34,7 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft Security Center, go to <https://security.microsoft.com/>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, open <https://security.microsoft.com/attacksimulator>.
+- To open the Microsoft Security Center, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, open <https://security.microsoft.com/attacksimulator>.
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -47,6 +47,11 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
 - Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation is available in the following regions: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, and KOR.
+
+- As of June 15 2021, Attack simulation training is available in GCC. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training in the Microsoft Security Center to run realistic attack scenarios in your organization as described in this article. Attack simulation training is not yet available in GCC High or DoD environments.
+
+> [!NOTE]
+> Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
 
 ## Simulations
 

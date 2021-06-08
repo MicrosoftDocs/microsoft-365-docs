@@ -1,5 +1,5 @@
 ---
-title: Check the health state of the sensor in Microsoft Defender ATP
+title: Check the health state of the sensor in Microsoft Defender for Endpoint
 description: Check the sensor health on devices to identify which ones are misconfigured, inactive, or are not reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh

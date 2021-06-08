@@ -1,7 +1,7 @@
 ---
 title: List software version distribution 
 description: Retrieves a list of your organization's software version distribution 
-keywords: apis, graph api, supported apis, get, software version distribution, mdatp tvm api
+keywords: apis, graph api, supported apis, get, software version distribution, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+MS.technology: mde
+ms.custom: api
 ---
 
 # List software version distribution 

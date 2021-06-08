@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP on iOS 
+title: Microsoft Defender for Endpoint on iOS 
 ms.reviewer: 
-description: Describes how to install and use Microsoft Defender ATP for iOS
-keywords: microsoft, defender, atp, ios, overview, installation, deploy, uninstallation, intune
+description: Describes how to install and use Microsoft Defender for Endpoint on iOS
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -65,7 +65,7 @@ iOS devices along with other platforms.
 - Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender for Endpoint) on iOS is now available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
+> **Microsoft Defender for Endpoint on iOS is available on [Apple App Store](https://aka.ms/mdatpiosappstore).**
 
 ## Installation instructions
 

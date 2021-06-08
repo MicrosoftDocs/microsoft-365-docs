@@ -47,7 +47,7 @@ The Security & Compliance Center includes default role groups for the most commo
 
 ![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## Permissions needed to use features in the Security & Compliance Center
+## Role groups in the Security & Compliance Center
 
 The following table lists the default role groups that are available in the Security & Compliance Center, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a compliance task, add them to the appropriate Security & Compliance Center role group.
 
@@ -58,7 +58,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 > [!NOTE]
 > To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
-<br><br>
+<br>
 
 ****
 
@@ -82,7 +82,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**Insider Risk Management**|Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, and investigators, you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.|Case Management <p> Insider Risk Management Admin <p> Insider Risk Management Analysis <p> Insider Risk Management Investigation <p> View-Only Case|
 |**Insider Risk Management Admins**|Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group. Users in this role group can create, read, update, and delete insider risk management policies, global settings, and role group assignments.|Case Management <p> Insider Risk Management Admin <p> View-Only Case|
 |**Insider Risk Management Analysts**|Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer.|Case Management <p> Insider Risk Management Analysis <p> View-Only Case|
-|**Insider Risk Management Auditors**|Auditors of insider risk management that can view the audit logs of actions performed by Analysts, Investigators and Administrators.|Insider Risk Management Audit|
+|**Insider Risk Management Auditors**|Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log.|Insider Risk Management Audit|
 |**Insider Risk Management Investigators**|Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access all insider risk management alerts, cases, notices templates, and the Content Explorer for all cases.|Case Management <p> Insider Risk Management Investigation <p> View-Only Case|
 |**IRM Contributors**|This role group is visible, but is used by background services only.|Insider Risk Management Permanent contribution <p> Insider Risk Management Temporary contribution|
 |**MailFlow Administrator**|Members can monitor and view mail flow insights and reports in the Security & Compliance Center. Global admins can add ordinary users to this group, but, if the user isn't a member of the Exchange Admin group, the user will not have access to Exchange admin-related tasks.|View-Only Recipients|
@@ -136,7 +136,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 - RMS Decrypt
 - Supervisory Review Administrator
 
-<br><br>
+<br>
 
 ****
 
