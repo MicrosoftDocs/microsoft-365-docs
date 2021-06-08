@@ -1,5 +1,5 @@
 ---
-title: "Learn about the Microsoft Compliance Extension (preview)"
+title: "Learn about the Microsoft Compliance Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "The Microsoft Compliance Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
 ---
 
-# Learn about the Microsoft Compliance Extension (preview)
+# Learn about the Microsoft Compliance Extension
 
 [Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft 365 data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
@@ -58,5 +58,5 @@ See [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Insider Risk management](insider-risk-management.md)

@@ -46,6 +46,8 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 > [!TIP]
 > Notice that, beyond the directions to turn on auditing, *steps* start anti-malware, anti-phishing, and anti-spam, which are marked as part of Office 365 Exchange Online Protection (**EOP**). This can seem odd in an Defender for Office 365 article, until you remember (**Defender for Office 365**) contains, and builds on, EOP.
 
+<br>
+
 ****
 
 |Protection type|Subscription requirement|
@@ -63,6 +65,8 @@ Threat protection features are included in *all* Microsoft or Office 365 subscri
 
 To configure Defender for Office 365 policies, you must be assigned an appropriate role in the [Security & Compliance Center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Take a look at the table below for roles that can do these actions.
 
+<br>
+
 ****
 
 |Role or role group|Where to learn more|
@@ -74,81 +78,92 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 
 To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Before you begin, turn on Audit logging for reporting and investigation
+### Turn on Audit logging for reporting and investigation
 
-Start your audit logging early. You'll need auditing to be **ON** for certain of the steps that follow. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## Part 1 - Anti-malware protection
+## Part 1 - Anti-malware protection in EOP
 
-[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+For more information about the recommended settings for anti-malware, see [EOP anti-malware policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-malware**.
+1. Open <https://security.microsoft.com/antimalwarev2>.
 
-2. Double-click the **Default** policy, and then choose **settings**.
+2. On the **Anti-malware** page, select the policy named **Default** policy by clicking on the name.
 
-3. Specify the following settings:
+3. In the policy details flyout that opens, click **Edit protection settings**, and then configure the following settings:
+   - Select **Enable the common attachments filter** to turn on the common attachments filter. Click **Customize file types** to add more file types.
+   - Verify that **Enable zero-hour auto purge for malware** is selected.
+   - Verify that none of the settings in the **Notification** section are selected.
 
-    - In the **Malware Detection Response** section, keep the default setting of **No**.
+   When you're finished, click **Save**.
 
-    - In the **Common Attachment Types Filter** section, choose **On**.
+4. Back on the policy details flyout, click **Close**.
 
-4. Click **Save**.
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-To learn more about anti-malware policy options, see [Configure anti-malware policies](configure-anti-malware-policies.md).
-
-## Part 2 - Anti-phishing protection
+## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
 [Anti-phishing protection](anti-phishing-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Advanced anti-phishing protection is available in [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-The following procedure describes how to configure an anti-phishing policy in Microsoft Defender for Office 365. The steps are similar for configuring an anti-phishing policy in EOP.
+For more information about the recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-phishing**.
+The following procedure describes how to configure the default anti-phishing policy. Settings that are only available in Defender for Office 365 are clearly marked.
 
-2. Click **Default policy**.
+1. Open <https://security.microsoft.com/antiphishing>.
 
-3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
+2. On the **Anti-phishing** page, select the policy named **Office365 AntiPhish Default (Default)** by clicking on the name.
 
-   - On the **Add users to protect** tab, turn *On* protection. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+3. In the policy details flyout that appears, configure the following settings:
 
-   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add them now.
+   - **Phishing threshold & protection** section: Click **Edit protection settings** and configure the following settings in the **Edit protection settings** flyout that opens:
+     - **Phishing email threshold**<sup>\*</sup>: Select **2 - Aggressive** (Standard) or **3 - More Aggressive** (Strict).
+     - **Impersonation** section<sup>\*</sup>: Configure the following values:
+       - Select **Enable users to protect**, click the **Manage (nn) sender(s)** link that appears, and then add internal and external senders to protect from impersonation, such as your organization's board members, your CEO, CFO, and other senior leaders.
+       - Select **Enable domains to protect**, and then configure the following settings that appear:
+         - Select **Include domains I own** to protect internal senders in your accepted domains (visible by clicking **View my domains**) from impersonation.
+         - To protect senders in other domains, select **Include custom domains**, click the **Manage (nn) custom domain(s)** link that appears, and then add other domains to protect from impersonation.
+     - **Add trusted senders and domains** section<sup>\*</sup>: Click **Manage (nn) trusted sender(s) and domains(s)** to configure sender and sender domain exceptions to impersonation protection if needed.
+     - Mailbox intelligence settings<sup>\*</sup>: Verify that **Enable mailbox intelligence** and **Enable intelligence for impersonation protection** are selected.
+     - **Spoof** section: Verify **Enable spoof intelligence** is selected.
 
-   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. Also, turn on impersonation safety tips.
+     When you're finished, click **Save**.
 
-   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on and turn on mailbox intelligence-based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
+   - **Actions** section: Click **Edit actions** and configure the following settings in the **Edit actions** flyout that opens:
+     - **Message actions** section: Configure the following settings:
+       - **If message is detected as an impersonated user**<sup>\*</sup>: Select **Quarantine the message**.
+       - **If message is detected as an impersonated domain**<sup>\*</sup>: Select **Quarantine the message**.
+       - **If mailbox intelligence detects an impersonated user**<sup>\*</sup>: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
+       - **If message is detected as spoof**: Select **Move message to the recipients' Junk Email folders** (Standard) or **Quarantine the message** (Strict).
+     - **Safety tips & indicators** section: Configure the following settings:
+       - **Show user impersonation safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show domain impersonation safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show user impersonation unusual characters safety tip**<sup>\*</sup>: Select (turn on).
+       - **Show (?) for unauthenticated senders for spoof**: Select (turn on).
+       - **Show "via" tag**: Select (turn on) if this setting is available.
 
-   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
+     When you're finished, click **Save**.
 
-   - **Save** on the **Review your settings** tab after you've reviewed your settings.
+   <sup>\*</sup> This setting is available only in Defender for Office 365.
 
-4. In the **Spoof** section, click **Edit**, and then specify the following settings:
+4. Click **Save** and then click **Close**
 
-   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
+For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-   - On the **Actions** tab, choose **Quarantine the message**.
+## Part 3 - Anti-spam protection in EOP
 
-   - **Save** on the **Review your settings** tab after you have reviewed your changes. (If you didn't make any changes, **Cancel**.)
+For more information about the recommended settings for anti-spam, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-5. Close the default policy settings page.
+1. Open <https://security.microsoft.com/antispam>.
 
-To learn more about your anti-phishing policy options, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+2. On the **Anti-spam policies** page, select the policy named **Anti-spam inbound policy (Default)** from the list by clicking on the name.
 
-## Part 3 - Anti-spam protection
+3. In the policy details flyout that appears, do the following steps:
+   - **Bulk email threshold & spam properties** section: Click **Edit spam threshold and properties**. In the **spam threshold and properties** flyout that appears, set the **Bulk email threshold** value to 5 (Strict) or 6 (Standard). When you're finished, click **Save**.
+   - **Allowed and blocked senders and domains** section: Review or edit your allowed senders and allowed domains.
 
-[Anti-spam protection](anti-spam-protection.md) is available in subscriptions that include [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+4. When you're finished, click **Close**.
 
-1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** \> **Policy** \> **Anti-spam**.
-
-2. On the **Custom** tab, turn on Custom settings.
-
-3. Expand **Default spam filter policy**, click **Edit policy**, and then specify the following settings:
-
-   - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
-
-   - In the **Allow lists** section, review (and/or edit) your allowed senders and domains.
-
-4. Click **Save**.
-
-To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
@@ -259,7 +274,7 @@ To learn more about alerts, see [Create activity alerts in the Security & Compli
 > When you're finished configuring, use these links to start workload investigations:
 >
 >- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
->- [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Use the security center to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
 >- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
@@ -273,7 +288,7 @@ Along with configuring protection from malware, malicious URLs and files, phishi
 
 - Spam actions are set to **Move message to Junk Email folder** in [anti-spam policies](anti-spam-protection.md).
 
-- Users have kept their default [junk email settings](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md), and haven't turned off junk email protection.
+- Users have kept their default [junk email settings](configure-junk-email-settings-on-exo-mailboxes.md), and haven't turned off junk email protection.
 
 To learn more, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 

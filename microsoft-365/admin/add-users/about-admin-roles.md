@@ -71,7 +71,10 @@ You'll probably only need to assign the following roles in your organization. By
 |License admin    |   Assign the License admin role to users who need to assign and remove licenses from users and edit their usage location. <br/><br/> License admins also can: <br> - Reprocess license assignments for group-based licensing <br> - Assign product licenses to groups for group-based licensing  |
 |Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Office cloud policy service to create and manage cloud-based policies for Office <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Office apps   <br> - Monitor service health  |
 |Password admin  |   Assign the Password admin role to a user who needs to reset passwords for non-administrators and Password Administrators.   |
-|Service support admin   |   Assign the Service Support admin role as an additional role to admins or users need to do the following in addition to their usual admin role: <br> - Open and manage service requests <br> - View and share message center posts <br> - Monitor service health   |
+|Message center reader |   Assign the Reports reader role to users who need to do the following: <br> - Monitor message center notifications <br> - Get weekly email digests of message center posts and updates <br> - Share message center posts <br> - Have read-only access to Azure AD services, such as users and groups|
+|Power Platform admin |   Assign the Reports reader role to users who need to do the following: <br> - Manage all admin features for PowerApps, Microsoft Flow, and data loss prevention <br> - Create and manage service requests <br> - Monitor service health  |
+|Reports reader |   Assign the Reports reader role to users who need to do the following: <br> - View usage data and the activity reports in the Microsoft 365 admin center <br> - Get access to the Power BI adoption content pack <br> - Get access to sign-in reports and activity in Azure AD <br> - View data returned by Microsoft Graph reporting API|
+|Service Support admin   |   Assign the Service Support admin role as an additional role to admins or users who need to do the following in addition to their usual admin role: <br> - Open and manage service requests <br> - View and share message center posts <br> - Monitor service health   |
 |SharePoint admin    |   Assign the SharePoint admin role to users who need to access and manage the SharePoint Online admin center. <br><br>SharePoint admins can also: <br> - Create and delete sites <br> - Manage site collections and global SharePoint settings   |
 |Teams service admin    |   Assign the Teams service admin role to users who need to access and manage the Teams admin center. <br><br>Teams service admins can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
@@ -90,10 +93,7 @@ Before the partner can assign these roles to users, you must add the partner as 
   
 ## Related content
 
-[Assign admin roles](assign-admin-roles.md) (article)
-
-[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md) (article)
-
-[Exchange Online admin role](about-exchange-online-admin-role.md) (article)
-  
+[Assign admin roles](assign-admin-roles.md) (article)\
+[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md) (article)\
+[Exchange Online admin role](about-exchange-online-admin-role.md) (article)\ 
 [Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md) (article)

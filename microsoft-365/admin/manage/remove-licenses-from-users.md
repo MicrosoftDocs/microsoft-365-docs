@@ -19,7 +19,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: "Learn how to unassign licenses from user accounts."
+description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
 ms.date: 07/01/2020
 ---
 
