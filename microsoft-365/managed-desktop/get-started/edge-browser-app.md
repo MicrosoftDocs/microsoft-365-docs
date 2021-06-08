@@ -103,7 +103,7 @@ We don't recommend using Flash because of associated security risks. If you stil
 The password manager is disabled by default. If you's like this feature enabled, file a support request and our service engineers can enable the setting in your environment. 
 
 ### Internet Explorer Mode in Microsoft Edge
-IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more](/DeployEdge/edge-ie-mode) 
 
 Microsoft Managed Desktop enables Internet Explorer mode for your devices by default 
 
