@@ -194,7 +194,7 @@ The Removable Storage Access Control feature enables you to apply policy via Gro
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
@@ -224,7 +224,7 @@ The Removable Storage Access Control feature enables you to apply policy via OMA
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Permission
 
@@ -267,7 +267,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability is not yet available. 
+This capability (in Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) is not yet available. 
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
