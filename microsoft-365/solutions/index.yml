@@ -144,14 +144,12 @@ landingContent:
   # Card
   - title: Administration and migration solution guides
     linkLists:
-      - linkListType: deploy
+      - linkListType: how-to-guide
         links:
           - text: Tenant management
             url: tenant-management-overview.md
           - text: Remove a former employee
             url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-      - linkListType: how-to-guide
-        links:
           - text: Migrate your file shares to Microsoft 365
             url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
