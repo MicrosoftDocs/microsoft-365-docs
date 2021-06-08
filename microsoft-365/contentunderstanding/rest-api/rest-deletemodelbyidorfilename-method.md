@@ -17,7 +17,7 @@ description: Use REST API to delete a model by a unique ID or it file name.
 
 ## Delete by unique ID
 
-Deletes a model by a unique ID (see [example](rest-deletemodelbyidorfilename.md#examples)).
+Deletes a model by a unique ID (see [example](rest-deletemodelbyidorfilename-method.md#examples)).
 
 ### HTTP request
 
