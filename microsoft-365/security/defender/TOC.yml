@@ -82,9 +82,7 @@
           items:
             - name: Overview
               href: eval-defender-investigate-respond.md  
-            - name: Generate a test alert
-              href: eval-defender-investigate-respond-generate-test-alert.md    
-            - name: Simulate attacks
+            - name: Simulate an attack
               href: eval-defender-investigate-respond-simulate-attacks.md    
             - name: Additional incident response capabilities
               href: eval-defender-investigate-respond-additional.md    
