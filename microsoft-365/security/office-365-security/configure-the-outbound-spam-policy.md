@@ -64,7 +64,7 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com/>. To go directly to the **Anti-spam settings** page, use <https://security.microsoft.com/antispam>.
+- You open the security center at <https://security.microsoft.com>. To go directly to the **Anti-spam settings** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
