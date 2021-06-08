@@ -33,7 +33,7 @@ Attack surface reduction rules help prevent actions typically used by malware to
 - Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-> [!Warning]
+> [!WARNING]
 > Enabling attack service reduction rules on Windows Server 2016 may lead to unexpected results and impact server performance. We do not recommend enabling or deploying attack surface reduction rules to unsupported platforms.
 
 Learn how to evaluate attack surface reduction rules by enabling audit mode to test the feature directly in your organization.
