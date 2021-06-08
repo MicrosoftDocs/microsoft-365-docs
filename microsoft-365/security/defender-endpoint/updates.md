@@ -51,7 +51,7 @@ The following gradual rollout model is followed:
 
 1. The first release goes out to Beta channel subscribers.
 2. After validation, feedback, and fixes, we start the gradual rollout process in a throttled way and to Preview channel subscribers first.
-3. We then proceed to release the update ato the rest of the global population, scaling out from 10-100%.
+3. We then proceed to release the update to the rest of the global population, scaling out from 10-100%.
 
 Our engineers continuously monitor impact and escalate any issues to create a fix as needed.
 
