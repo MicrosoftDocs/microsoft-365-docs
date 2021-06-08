@@ -123,7 +123,7 @@
                     - name: Identity
                       href: first-incident-path-identity.md
               - name: Incident response playbooks
-                href: https://docs.microsoft.com/security/compass/incident-response-playbooks
+                href: /security/compass/incident-response-playbooks
               - name: Email notifications
                 href: get-incident-notifications.md
        - name: Threat analytics
