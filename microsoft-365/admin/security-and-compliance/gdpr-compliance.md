@@ -34,7 +34,7 @@ You can get started by reviewing this article, which is aimed at helping you und
 It also includes answers to common questions about GDPR that small businesses may have, and highlights steps a small business can take to prepare for GDPR.
 
 > [!IMPORTANT]
-> Recommendations from this article should not be interpreted as a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own advisors - including lawyers and compliance professionals - when needed. The Microsoft 365 solutions mentioned in this article are tools that can help you manage your data, but are not a guarantee of GDPR compliance.
+> Recommendations from this article are to help you get started with GDPR, and should not be interpreted as a guarantee of GDPR compliance. It is up to you to assess your own compliance status. Consult with your own advisors - such lawyers and compliance professionals - when needed. The Microsoft 365 solutions mentioned in this article are tools and resources that can help you manage and protect your data, but are not a guarantee of GDPR compliance.
   
 ## A quick overview of the GDPR
 
@@ -99,14 +99,14 @@ As another example, you may manage lists of individual customers to
 send them notice about special offers, if they opted in to consent to this.
 
 #### Microsoft 365 features that can help
-[Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to identify and label document types that contain personal data. 
+[Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
 
 Individuals must know that you process their personal data and
 for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
 
-But there is no need to inform individuals when they already know how you will use the data. For example, when they provide you a home address for a delivery.
+But there is no need to inform individuals when they already know how you will use the data. For example, when they provide you a home address for a delivery they ordered.
 
 You also have to be able to inform individuals on request about the personal data you hold on them and give them access to their data. Being organized with your data makes it easier to provide to them, if needed. 
 
@@ -117,7 +117,7 @@ For customer data, keep it as long as the customer relationship lasts and for re
 Delete the data when it is no longer needed for the purposes for which you collected it.
 
 #### Microsoft 365 features that can help
-[Retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to keep personal data for a certain time and delete it when it’s no longer needed.
+[Retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to help you keep personal data for a certain time and delete it when it’s no longer needed.
 
 
 ### Step 4: Secure the personal data you are processing
@@ -134,7 +134,7 @@ that they are not accessible by unauthorized persons.
 If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. We highly recommend that small businesses consider using a cloud solution for storing personal data.
 
 #### Microsoft 365 features that can help
-You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
+You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to help to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 
