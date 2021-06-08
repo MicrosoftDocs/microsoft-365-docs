@@ -604,7 +604,7 @@ These locations are support EDM sensitive information types:
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
-- Server-side auto-labeling policies
+- Server-side auto-labeling policies - available for commercial cloud customers <!--, and government cloud customers-->
 
 #### To create a DLP policy with EDM
 
