@@ -84,9 +84,6 @@ On the **Logos** page, you can you can add your logos, and specify the URL where
 Select **Save** to save your changes.
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-
-> [!NOTE]
-> By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
   
 ## Colors: Choose theme colors
 
