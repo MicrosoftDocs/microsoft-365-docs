@@ -83,22 +83,23 @@
       items:
         - name: Overview
           href: rest-api/syntex-model-rest-api.md
-        - name: Apply a model to one or more libraries
-          href: rest-api/apply-model-to-one-or-more-libraries.md
-        - name: Delete a model by ID or name
-          href: rest-api/delete-a-model-by-name-or-id.md
-        - name: Get model and primed library information
-          href: rest-api/get-model-and-primed-library-information.md
-        - name: GetByTitle
-          href: rest-api/get-model-by-title.md
-        - name: Remove a model from one or more libraries
-          href: rest-api/remove-model-from-one-or-more-libraries.md
-        - name: CreateModel
           href: rest-api/rest-createmodel-method.md
         - name: GetByUniqueId
+        - name: CreateModel
           href: rest-api/rest-getmodelbyid-method.md
+        - name: GetByTitle
+          href: rest-api/rest-getmodelbytitle-method.md
+        - name: ApplyModel
+          href: rest-api/rest-applymodel-method.md
+        - name: GetModelAndLibraryInfo
+          href: rest-api/rest-getmodelandlibraryinfo-method.md
         - name: UpdateModelSettings
           href: rest-api/rest-updatemodelsettings-method.md        
+        - name: RemoveModel
+          href: rest-api/rest-removemodel-method.md
+        - name: DeleteModelByIdOrFilename
+          href: rest-api/rest-deletemodelbyidorfilename-method.md
+
 
 
 
