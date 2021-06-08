@@ -52,16 +52,17 @@ The blocking experience for 3rd party supported browsers is provided by Network 
 
 ## Prerequisites
 
-Before trying out this feature, make sure you have the following requirements:
+Before trying out this feature, make sure you meet the following requirements:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on or the Microsoft Defender for Endpoint standalone license. 
 - Access to Microsoft Defender Security Center portal (https://securitycenter.windows.com).
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 - Windows Defender SmartScreen and Network protection enabled.
 
+
 ## Data handling
 
-We will follow whichever region you have elected to use as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers.
+Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers.
 
 ## Turn on web content filtering
 
@@ -87,14 +88,10 @@ To add a new policy:
 
 5. Review the summary and save the policy. The policy refresh may take up to 2 hours to apply to your selected devices.
 
-> [!TIP]
-> You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
-
->[!NOTE]
->If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
-
->[!IMPORTANT]
->Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
+> [!NOTE]
+> - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
+> - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
+> - Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
 
 ### Allow specific websites
 
@@ -116,7 +113,7 @@ A panel will open where you can select the priority and add additional details s
 
 ## Web content filtering cards and details
 
-Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
+Select **Reports** > **Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
 
 ### Web activity by category
 
@@ -162,10 +159,11 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 - Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the Domains report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
 
-## Related topics
+
 
 - [Web protection overview](web-protection-overview.md)
 - [Web threat protection](web-threat-protection.md)
 - [Monitor web security](web-protection-monitoring.md)
 - [Respond to web threats](web-protection-response.md)
 - [Requirements for Network Protection](web-content-filtering.md)
+
