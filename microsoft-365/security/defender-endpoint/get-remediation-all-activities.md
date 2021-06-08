@@ -50,7 +50,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type | Permission | Permission display name
 :---|:---|:---
 Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | RemediationTask.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties
 
