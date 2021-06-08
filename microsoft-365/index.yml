@@ -94,9 +94,9 @@ productDirectory:
           text: Microsoft cloud architecture models
         - url: solutions/design-principles.md
           text: Enterprise architecture design principles
-        - url: solutions/infographics-for-users
+        - url: solutions/infographics-for-users.md
           text: Infographics for your users
-        - url: solutions/architecture-icons-templates
+        - url: solutions/architecture-icons-templates.md
           text: Architecture icons and templates
     # Card
     - title: Secure your organization

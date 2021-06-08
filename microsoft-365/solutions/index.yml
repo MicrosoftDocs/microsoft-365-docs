@@ -37,7 +37,7 @@ landingContent:
           - text: Deploy information protection for data privacy regulations 
             url: information-protection-deploy.md
           - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../campaigns/
+            url: ../campaigns
 
   # Card
   - title: Architecture illustrations and design principles
@@ -121,25 +121,25 @@ landingContent:
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Identity and device access configurations
-            url: ../security/office-365-security/microsoft-365-policies-configurations?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/office-365-security/microsoft-365-policies-configurations.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Deploy Microsoft Defender for Endpoint
-            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Evaluate Microsoft 365 Defender
-            url: ../security/defender-endpoint/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Security recommendations for priority accounts
-            url: ../security/office-365-security/security-recommendations-for-priority-accounts?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/office-365-security/security-recommendations-for-priority-accounts.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Evaluate Microsoft 365 Defender
-            url: ../security/defender-endpoint/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Address false positives/negatives in Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives
+            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
       - linkListType: how-to-guide
         links:
           - text: Migrate from Symantec to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Migrate from McAfee to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/switch-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
   - title: Administration and migration solution guides
@@ -151,7 +151,7 @@ landingContent:
           - text: Remove a former employee
             url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Migrate your file shares to Microsoft 365
-            url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
   - title: Industry-specific guidance
