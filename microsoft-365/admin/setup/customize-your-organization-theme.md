@@ -34,7 +34,7 @@ You can add or update a default theme that applies to everyone within your org. 
 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
-2. On the **Organization profile** tab, select **Organization theme**.
+2. On the **Organization profile** tab, select **Custom themes**.
 
 All themes can be customized using the following tabs.
 
