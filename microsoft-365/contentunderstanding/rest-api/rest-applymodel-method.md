@@ -15,7 +15,7 @@ description: Use REST API to apply a document understanding model to one or more
 
 # ApplyModel
 
-Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#example)).
+Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#examples)).
 
 ## HTTP request
 
@@ -39,10 +39,10 @@ None
 
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
-|ModelUniqueId|yes|string|The unique id of the model file.|
-TargetSiteUrl|yes|string|The full url of the target library site.|
-TargetWebServerRelativeUrl|yes|string|The server relative Url of the web for the target library.|
-TargetLibraryServerRelativeUrl|yes|string|The server relative Url of the target library.|
+|ModelUniqueId|yes|string|The unique ID of the model file.|
+TargetSiteUrl|yes|string|The full URL of the target library site.|
+TargetWebServerRelativeUrl|yes|string|The server relative URL of the web for the target library.|
+TargetLibraryServerRelativeUrl|yes|string|The server relative URL of the target library.|
 ViewOption|no|string|Specifies whether to set new model view as the library default.|
 
 ## Response
@@ -52,7 +52,7 @@ ViewOption|no|string|Specifies whether to set new model view as the library defa
 |200 OK| |Success|
 |201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-applymodel-method.md#request-body) for details.|
 
-## Example
+## Examples
 
 ### Apply a model to the contracts document library in the repository site
 
