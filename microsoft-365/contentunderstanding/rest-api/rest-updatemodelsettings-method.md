@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
@@ -41,7 +41,7 @@ None
 |--------|-------|-------|
 |ModelSettings|string|JSON of model settings.|
 |Description|string|The model description.|
-|RetentionLabel| |Info for the associated label (label Id and name).|
+|RetentionLabel| |Info for the associated label (label ID and name).|
 
 ## Responses
 
