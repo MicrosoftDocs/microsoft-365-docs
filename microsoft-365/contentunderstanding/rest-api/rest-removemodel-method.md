@@ -1,5 +1,5 @@
 ---
-title: Remove a model from one or more libraries
+title: RemoveModel
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,16 +8,14 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Use REST API to remove an applied document understanding model from one or more libraries.
 ---
 
-# Remove a model from one or more libraries
+# RemoveModel
 
-Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](remove-model-from-one-or-more-libraries.md#examples)).
+Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](rest-removemodel-method.md#examples)).
 
 ## HTTP request
 

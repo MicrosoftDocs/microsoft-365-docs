@@ -1,5 +1,5 @@
 ---
-title: GetByUniqueId
+title: GetModelById
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to get or update information about a SharePoint Syntex document understanding model.
 ---
 
-# GetByUniqueId
+# GetModelById
 
 Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getmodelbyid-method.md#examples)).
 

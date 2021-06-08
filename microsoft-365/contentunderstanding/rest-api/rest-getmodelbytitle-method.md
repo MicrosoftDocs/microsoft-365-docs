@@ -1,5 +1,5 @@
 ---
-title: GetByTitle
+title: GetModelByTitle
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,9 +13,9 @@ localization_priority: Priority
 description: Use REST API to get or update information about a SharePoint Syntex document understanding model using the model title.
 ---
 
-# GetByTitle
+# GetModelByTitle
 
-Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](get-model-by-title.md#examples)).
+Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](rest-getmodelbytitle-method.md#examples)).
 
 ## HTTP request
 
