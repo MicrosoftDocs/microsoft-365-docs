@@ -10,8 +10,6 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: 
-author: 
 localization_priority: Normal
 ms.author: josephd
 author: JoeDavies-MSFT
