@@ -316,6 +316,11 @@ Microsoft Azure customers must transition their Azure workloads following the st
 | Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
 
+**Applies to:** Customers with Azure AD registered or joined devices
+
+After phase 9 has been completed, Azure AD registered and joined devices must be connected to the transitioned Azure AD instance in the new German datacenter region.
+Devices that are not re-joined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, please refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
+
 ### Azure AD Connect
 **Applies to:** All customers synchronizing identities with Azure AD connect
 
