@@ -50,7 +50,7 @@ update channels:
 > [!NOTE]
 > An updated Defender ADMX template will be published together with the 21H2 release of Windows 10.
 
-You can use [Group Policy](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) to configure and manage Microsoft Defender Antivirus on your endpoints.
+You can use [Group Policy](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
 In general, you can use the following procedure to configure or change Microsoft Defender Antivirus group policy settings:
 
@@ -70,7 +70,7 @@ In general, you can use the following procedure to configure or change Microsoft
 
 Follow the instructions in below link to create a custom policy in Intune:
 
-[Add custom settings for Windows 10 devices in Microsoft Intune - Azure \| Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Add custom settings for Windows 10 devices in Microsoft Intune - Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
 ## PowerShell
 
@@ -90,4 +90,4 @@ Example:
 
 Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform updates to arrive from the Beta Channel.
 
-For more information on the parameters and how to configure them, see [Set-MpPreference (Defender) | Microsoft Docs](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
+For more information on the parameters and how to configure them, see [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
