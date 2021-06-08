@@ -129,8 +129,6 @@
 
     - name: Teamwork and collaboration
       items:
-      - name: Teams architecture posters
-        href: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Deploy Teams voice in Microsoft 365
         items:
         - name: Overview
