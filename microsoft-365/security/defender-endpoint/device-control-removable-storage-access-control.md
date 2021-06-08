@@ -63,7 +63,7 @@ For each device property, see **Device Properties** section above for more detai
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example **&0**) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -194,7 +194,7 @@ The Removable Storage Access Control feature enables you to apply policy via Gro
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
@@ -224,7 +224,7 @@ The Removable Storage Access Control feature enables you to apply policy via OMA
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Permission
 
@@ -241,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
       For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
 
@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be: 
 
@@ -263,11 +263,11 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
+      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Display of XML file for the STRING data type":::
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability is not yet available. 
+This capability (in Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) is not yet available. 
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
@@ -275,7 +275,7 @@ The Microsoft 365 security portal shows removable storage blocked by the Device 
 
 - Microsoft 365 for E5 reporting
 
-```
+```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
 | where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 
