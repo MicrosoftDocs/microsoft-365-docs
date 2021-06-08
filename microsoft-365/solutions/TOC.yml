@@ -203,11 +203,11 @@
       - name: Deploy Microsoft Defender for Endpoints
         href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Migrate from Symantec to Microsoft Defender for Endpoint
-        url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Migrate from McAfee to Microsoft Defender for Endpoint
-        url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
-        url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Compliance
       items:
@@ -224,9 +224,9 @@
           - name: Privileged access management
             href: ../compliance/privileged-access-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Auditing solutions
-        url: ../compliance/auditing-solutions-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+        href: ../compliance/auditing-solutions-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - name: Microsoft 365 Advanced eDiscovery
-        url: ../compliance/overview-ediscovery-20.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+        href: ../compliance/overview-ediscovery-20.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - name: Regulatory compliance action plans
         items: 
         - name: ISO - Recommended action plan
