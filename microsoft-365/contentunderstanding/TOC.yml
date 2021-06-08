@@ -85,9 +85,9 @@
           href: rest-api/syntex-model-rest-api.md
         - name: CreateModel
           href: rest-api/rest-createmodel-method.md
-        - name: GetByUniqueId
+        - name: GetModelById
           href: rest-api/rest-getmodelbyid-method.md
-        - name: GetByTitle
+        - name: GetModelByTitle
           href: rest-api/rest-getmodelbytitle-method.md
         - name: ApplyModel
           href: rest-api/rest-applymodel-method.md
