@@ -1,5 +1,5 @@
 ---
-title: Apply a model to one or more libraries
+title: ApplyModel
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,9 +13,9 @@ localization_priority: Priority
 description: Use REST API to apply a document understanding model to one or more libraries.
 ---
 
-# Apply a model to one or more libraries
+# ApplyModel
 
-Applies (or syncs) a trained document understanding model to one or more libraries (see [example](apply-model-to-one-or-more-libraries.md#example)).
+Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#example)).
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ ViewOption|no|string|Specifies whether to set new model view as the library defa
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](apply-model-to-one-or-more-libraries.md#request-body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](applymodel.md#request-body) for details.|
 
 ## Example
 
