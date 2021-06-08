@@ -204,8 +204,6 @@ If you're planning to synchronize your on-premises Active Directory with Microso
 
 ## Related content
 
-[Transfer a domain from Micrsoft 365 to another host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (article)
-
-[Pilot Microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (article)
-
-[Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article)
+[Transfer a domain from Micrsoft 365 to another host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
+[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
+[Domains FAQ](../setup/domains-faq.yml) (article)
