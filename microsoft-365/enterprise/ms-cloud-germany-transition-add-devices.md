@@ -22,7 +22,7 @@ description: "Summary: Additional device information on services when moving fro
 
 # Additional device information for the migration from Microsoft Cloud Deutschland
 
-Azure AD joined and registered devices connected to Microsoft Cloud Deutschland need to be migrated after phase 9 and before phase 10. The migration of a device depends on the devices type, operating system and AAD relation. 
+Azure AD joined and registered devices connected to Microsoft Cloud Deutschland must be migrated after phase 9 and before phase 10. The migration of a device depends on the devices type, operating system and AAD relation. 
 
 ## Frequently asked questions
 
