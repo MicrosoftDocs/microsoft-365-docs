@@ -36,6 +36,8 @@ landingContent:
             url: deploy-threat-protection.md
           - text: Deploy information protection for data privacy regulations 
             url: information-protection-deploy.md
+          - text: Microsoft 365 for smaller businesses and campaigns
+            url: ../campaigns/
 
   # Card
   - title: Architecture illustrations and design principles
@@ -50,6 +52,10 @@ landingContent:
             url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Design principles
             url: design-principles.md
+          - text: Infographics for your users
+            url: infographics-for-users.md
+          - text: Architecture icons and templates
+            url: architecture-icons-templates.md
 
   # Card
   - title: Workload resources
@@ -70,6 +76,8 @@ landingContent:
         links:
           - text: Plan and deploy a Teams Voice solution
             url: deploy-voice.md
+          - text: Manage contracts for your business
+            url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - linkListType: overview
         links:
           - text: Collaboration governance
@@ -82,7 +90,7 @@ landingContent:
             url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
-  - title: Security and compliance solution guides
+  - title: Security solution guides
     linkLists:
       - linkListType: deploy
         links:
@@ -90,8 +98,38 @@ landingContent:
             url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Identity and device access configurations
+            url: ../security/office-365-security/microsoft-365-policies-configurations?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Deploy Microsoft Defender for Endpoint
             url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Evaluate Microsoft 365 Defender
+            url: ../security/defender-endpoint/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Security recommendations for priority accounts
+            url: ../security/office-365-security/security-recommendations-for-priority-accounts?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Evaluate Microsoft 365 Defender
+            url: ../security/defender-endpoint/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Address false positives/negatives in Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate from Symantec to Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Migrate from McAfee to Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/switch-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Compliance solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Insider risk solutions
+            url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Auditing solutions
+            url: ../compliance/auditing-solutions-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 Advanced eDiscovery
+            url: ../compliance/overview-ediscovery-20.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - linkListType: reference
         links:
           - text: ISO - Recommended action plan
@@ -102,6 +140,20 @@ landingContent:
             url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: GDPR - Recommended action plan
             url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Administration and migration solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Tenant management
+            url: tenant-management-overview.md
+          - text: Remove a former employee
+            url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate your file shares to Microsoft 365
+            url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
   - title: Industry-specific guidance
