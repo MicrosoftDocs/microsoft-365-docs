@@ -63,7 +63,7 @@ For each device property, see **Device Properties** section above for more detai
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example **&0**) represents the avaliable slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -241,7 +241,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData
 
       For example, for **any removable storage and CD/DVD** group in the sample, the link must be:
 
@@ -255,7 +255,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - OMA-URI:
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be: 
 
