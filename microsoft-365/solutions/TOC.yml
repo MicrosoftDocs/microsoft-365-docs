@@ -147,6 +147,8 @@
           href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Manage contracts for your business
         href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+      - name: Build an intelligent SharePoint intranet
+        href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Collaboration governance
         items:
         - name: Overview
@@ -187,8 +189,6 @@
             href: end-life-cycle-groups-teams-sites-yammer.md
       - name: File collaboration in SharePoint with Microsoft 365
         href: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - name: Build an intelligent SharePoint intranet
-        href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: OneDrive Guide for enterprises
         href: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
@@ -202,11 +202,11 @@
         href: ../security/office-365-security/microsoft-365-policies-configurations?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Deploy Microsoft Defender for Endpoints
         href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - text: Migrate from Symantec to Microsoft Defender for Endpoint
+      - name: Migrate from Symantec to Microsoft Defender for Endpoint
         url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - text: Migrate from McAfee to Microsoft Defender for Endpoint
+      - name: Migrate from McAfee to Microsoft Defender for Endpoint
         url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - text: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
+      - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         url: ../security/defender-endpoint/switch-to-microsoft-defender-migration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Compliance
@@ -223,6 +223,10 @@
             href: ../compliance/information-barriers-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Privileged access management
             href: ../compliance/privileged-access-management-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Auditing solutions
+        url: ../compliance/auditing-solutions-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+      - name: Microsoft 365 Advanced eDiscovery
+        url: ../compliance/overview-ediscovery-20.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
       - name: Regulatory compliance action plans
         items: 
         - name: ISO - Recommended action plan
@@ -233,8 +237,6 @@
           href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: GDPR - Recommended action plan
           href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-      - name: Contoso compliance case study
-        href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Contoso case studies
       items:
