@@ -37,7 +37,7 @@ landingContent:
           - text: Deploy information protection for data privacy regulations 
             url: information-protection-deploy.md
           - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../campaigns
+            url: ../campaigns/index.md
 
   # Card
   - title: Architecture illustrations and design principles
