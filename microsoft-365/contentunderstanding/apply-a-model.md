@@ -10,7 +10,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+localization_priority: Normal
 description: "Learn how to apply a published a model to a SharePoint document library"
 ---
 
