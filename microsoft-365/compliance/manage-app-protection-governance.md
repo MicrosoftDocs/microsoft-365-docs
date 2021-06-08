@@ -16,7 +16,7 @@ search.appverid:
 description: "Implement Microsoft app governance capabilities to govern your apps."
 ---
 
-# Microsoft app governance in Microsoft 365 (in preview)
+# App governance for Microsoft 365 platform
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -105,7 +105,7 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
 Here's a summary of the integration.
 
-![The integration of MAPG with Azure AD and Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![The integration of app governance with Azure AD and Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Additionally, app governance sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 
