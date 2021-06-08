@@ -83,9 +83,9 @@
       items:
         - name: Overview
           href: rest-api/syntex-model-rest-api.md
+        - name: CreateModel
           href: rest-api/rest-createmodel-method.md
         - name: GetByUniqueId
-        - name: CreateModel
           href: rest-api/rest-getmodelbyid-method.md
         - name: GetByTitle
           href: rest-api/rest-getmodelbytitle-method.md
