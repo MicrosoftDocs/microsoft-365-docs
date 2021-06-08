@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/07/2021
+ms.date: 06/08/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -105,6 +105,7 @@ No known issues
 ### What's new
 - Additional behavior monitoring logic
 - Improved kernel mode keylogger detection
+- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](updates.md)
 
 ### Known Issues
 No known issues  
