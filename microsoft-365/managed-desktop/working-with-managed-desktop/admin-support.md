@@ -46,7 +46,6 @@ Severity level	| Customer situation |	Initial response time	| Expected customer 
 More details:
 - **Support languages** - All support is provided in English.
 - **Severity level changes** - Microsoft may downgrade the severity level if the customer is not able to provide adequate resources or responses to enable Microsoft to continue with problem resolution efforts. 
-- **Business hours** - For most countries, business hours are from 9:00 AM to 5:00 PM, Pacific Standard Time.
 - **Application compatibility** - For an application compatibility issue to be considered, there must be a reproducible error, of the same version of the application, between the previous and current version of Windows or Office. To resolve application compatibility issues, Microsoft requires a customer point of contact to work with. The individual must work directly with our Fast Track team to investigate and resolve the issue.
 - **Customer response time** If a customer is unable to meet the expected response requirements, Microsoft will downgrade the request by one severity level, to a minimum of Severity C. If a customer is unresponsive to requests for action, Microsoft will mitigate and close the support request within 48 hours of the last request.
 
