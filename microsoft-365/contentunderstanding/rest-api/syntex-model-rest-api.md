@@ -39,7 +39,7 @@ The following REST commands are available for working with Syntex document under
 - [GetModelAndLibraryInfo](rest-getmodelandlibraryinfo-method.md) – Gets information about a model and the library where it has been applied.
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) – Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
 - [RemoveModel](rest-removemodel-method.md) – Removes an applied document understanding model from one or more libraries.
-- [DeleteModelByIdOrFilename](rest-deletemodelbyidorfilename-method.md) – Deletes a model by a unique ID or its file name.
+- [DeleteModelByIdOrFileName](rest-deletemodelbyidorfilename-method.md) – Deletes a model by a unique ID or its file name.
 - [Create classification work item] (rest-createmodelworkitem-method.md) – Creates a single or batch work item to process the applied model to one or more files.
 
 ## Scenarios

@@ -97,7 +97,7 @@
           href: rest-api/rest-updatemodelsettings-method.md        
         - name: RemoveModel
           href: rest-api/rest-removemodel-method.md
-        - name: DeleteModelByIdOrFilename
+        - name: DeleteModelByIdOrFileName
           href: rest-api/rest-deletemodelbyidorfilename-method.md
 
 
