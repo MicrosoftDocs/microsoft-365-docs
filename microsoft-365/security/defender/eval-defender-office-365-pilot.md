@@ -72,12 +72,12 @@ Some capabilities in Defender for Office 365 are configured and turned on by def
 
 Some capabilities are *not yet* configured. You have three options for configuring protection:
 
-- **Assign preset security policies** — Preset security policies are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***standard*** or ***strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
+- **Assign preset security policies automatically** — [Preset security policies](../office-365-security/preset-security-policies.md) are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***standard*** or ***strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
 - **Configure baseline protection manually** — If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach you get to learn more about the settings that are configurable. And, of course, you can fine-tune the policies later.
-- **Configure custom protection policies** — You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
+- **Configure *custom* protection policies** — You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
 
 > [!IMPORTANT]
-> What goes into the **Standard** and **Strict** preset security policies? See the full list of configurations here *[Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)*.
+> **If you need to configure custom protection policies**, you should examine the values that make up the **Standard** and **Strict** security definitions here: *[Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)*. Default values, as seen before  any configuration takes place are also listed. Keep a spreadsheet of where your custom build deviates.
 
 ### Assign preset security policies
 
@@ -131,7 +131,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |---------|---------|---------|
 |Threat Explorer     | Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.        | [Views in Threat Explorer and real-time detections ](../office-365-security/threat-explorer-views.md)       |
 |Attack Simulator     | You can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.        |  [Attack Simulator in Microsoft Defender for Office 365](../office-365-security/attack-simulator.md)       |
-|Reports dashboard     | On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.  |    [v](../office-365-security/view-email-security-reports.md)     |
+|Reports dashboard     | On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.  |    [View Reports](../office-365-security/view-email-security-reports.md)     |
 
 ## Next steps
 
@@ -139,13 +139,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
-
-### Helpful information
-
-Bcarter -- how is this different than [Protect against threats](../office-365-security/protect-against-threats.md)? We need to consolidate recommendations into an authoritative article and retire all the articles that serve the same purpose. We're doing this across security
-
-[Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md)
 
 ### Navigation you may need
 
