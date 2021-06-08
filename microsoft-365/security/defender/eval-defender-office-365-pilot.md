@@ -87,21 +87,31 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 1. Log on to your Microsoft 365 tenant. Use an account with access to the Security Center, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
 2. From the navigation menu, select "Polices & Rules" under Email & Collaboration.
+
 :::image type="content" source="../../media/MDOEval/5-MDO-eval-pilot.png" alt-text="Under Email & Collaboration on the navigation panel, click Policies & rules.":::
+
 3. On the Policy & Rules dashboard, click "Threat Policies".
+
 :::image type="content" source="../../media/MDOEval/6-MDO-eval-pilot.png" alt-text="a":::
+
 4. From the Security Admin Center, expand Threat Management from the navigation menu and then select Policy from the submenu.
-5. On the Policy dashboard, click the *Preset security policies* tile. 
+5. On the Policy dashboard, click the *Preset security policies* tile.
+
 :::image type="content" source="../../media/MDOEval/7-MDO-eval-pilot.png" alt-text="Click the Preset Security Policies tile.":::
+
 6. Click *Edit* to configure and assign the Standard policy and/or Strict policy. :::image type="content" source="../../media/MDOEval/8-MDO-eval-pilot.png" alt-text="On the Preset security policies panel, click Edit.":::
 7. Add conditions to apply baseline ***EOP*** protections to specific pilot users, or groups of users, as needed, and select *Next* to continue.
     - Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by simply adding accounts to, or removing account from, the group.
+
  :::image type="content" source="../../media/MDOEval/9-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the EOP security level to your pilot group.":::
-9. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
+
+8. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
     - For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by simply adding / removing accounts via the group.
-1:::image type="content" source="../../media/MDOEval/10-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
-8. Review and confirm your changes for assigning preset security policies.
-9. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Security Admin Center and clicking the *Preset security policies* tile.
+
+:::image type="content" source="../../media/MDOEval/10-MDO-eval-pilot.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
+
+9. Review and confirm your changes for assigning preset security policies.
+10. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Security Admin Center and clicking the *Preset security policies* tile.
 
 ### Configure custom protection policies
 
