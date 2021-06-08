@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 

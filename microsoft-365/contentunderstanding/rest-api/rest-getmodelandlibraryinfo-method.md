@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
@@ -15,7 +15,7 @@ description: Use REST API to get information about a model and the library where
 
 # GetModelAndLibraryInfo
 
-Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo-method.md#example)).
+Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo-method.md#examples)).
 
 ## HTTP request
 
@@ -40,10 +40,10 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’)
 
 | Name | Required | Type | Description |
 |--------|-------|--------|------------|
-|ModelUniqueId|yes|string|The unique id of the model file.|
-|TargetSiteUrl|yes|string|The full url of the target library site.|
-|TargetWebServerRelativeUrl|yes|string|The server relative Url of the web for the target library.|
-|TargetLibraryServerRelativeUrl|yes|string|The server relative Url of the target library.|
+|ModelUniqueId|yes|string|The unique ID of the model file.|
+|TargetSiteUrl|yes|string|The full URL of the target library site.|
+|TargetWebServerRelativeUrl|yes|string|The server relative URL of the web for the target library.|
+|TargetLibraryServerRelativeUrl|yes|string|The server relative URL of the target library.|
 |TargetLibraryRemoved|yes|int|The flag which indicates if the target library has been removed or not.|
 
 ## Response
@@ -53,7 +53,7 @@ GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’)
 |200 OK| |Success|
 |201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-getmodelandlibraryinfo-method.md#request-body) for details.|
 
-## Example
+## Examples
 
 ### Get information about the contracts model and primed document library in the repository site
 
