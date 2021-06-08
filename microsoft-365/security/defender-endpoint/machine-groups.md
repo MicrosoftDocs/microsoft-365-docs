@@ -106,4 +106,4 @@ For more information on linking to device groups definitions, see [Device groups
 
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage device tags](machine-tags.md)
-- [Get list of tenant device groups using Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Get list of tenant device groups using Graph API](/graph/api/device-list-memberof)
