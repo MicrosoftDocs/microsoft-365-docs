@@ -1,5 +1,5 @@
 ---
-title: Delete a model by ID or name
+title: DeleteModelByIdOrFilename
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,11 +13,11 @@ localization_priority: Priority
 description: Use REST API to delete a model by a unique ID or it file name.
 ---
 
-# Delete a model by ID or name
+# DeleteModelByIdOrFilename
 
 ## Delete by unique ID
 
-Deletes a model by a unique ID (see [example](delete-a-model-by-name-or-id.md#examples)).
+Deletes a model by a unique ID (see [example](rest-deletemodelbyidorfilename.md#examples)).
 
 ### HTTP request
 
