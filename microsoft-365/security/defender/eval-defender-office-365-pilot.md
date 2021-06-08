@@ -29,8 +29,6 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-
-
 This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
