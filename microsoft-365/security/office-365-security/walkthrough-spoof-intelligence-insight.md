@@ -65,7 +65,7 @@ You can manage spoof intelligence in the Security & Compliance Center, or in Pow
   - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
   - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-- For our recommended settings for spoof intelligence, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings).
+- For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 ## Manage spoofed senders
 
