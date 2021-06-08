@@ -68,8 +68,14 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 
 ## Azure AD Join
-Applies to Windows 10 devices. 
-If a device is Azure AD joined, it must be disconnected from Azure AD and be connected again. If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and re-join it again. If he has no administrator privileges, the user needs credentials of a local administrator account on this machine. 
+This applies to Windows 10 devices. 
+
+If a device is Azure AD joined, it must be disconnected from Azure AD and be connected again. 
+
+[ ![Azure AD Device Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+
+
+If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and re-join it again. If he has no administrator privileges, the user needs credentials of a local administrator account on this machine. 
 
 
 An Administrator can create an local administrator account on the device following this configuration path:
