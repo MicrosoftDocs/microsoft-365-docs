@@ -8,7 +8,9 @@ audience: admin
 ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
-ms.collection: m365solution-managecontracts
+ms.collection: 
+    m365solution-managecontracts
+    m365solution-overview
 search.appverid: 
 localization_priority: None
 ROBOTS: 
@@ -68,6 +70,14 @@ This contract management solution guidance includes four components of Microsoft
 6. The end result of this solution is an automated business process for your organization. Employees can easily use the custom tile view in Teams to initiate and monitor the approval workflow of your documents. 
 
      ![Contracts tab.](../media/content-understanding/tile-view.png)
+
+### Licensing requirements
+
+This solution relies on the following functionality, all available as part of a Microsoft 365 Enterprise (E1, E3, E5, F3) or Business (Basic, Standard, or Premium) license:
+
+-	Microsoft SharePoint Syntex
+-	Microsoft Teams
+-	Power Automate
 
 ## Create the solution
 

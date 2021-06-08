@@ -33,6 +33,8 @@ For more information about data storage, see [Microsoft Defender for Endpoint da
 
 Information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected and to support the service.
 
+For more information on most common privacy questions about Microsoft Defender for Endpoint on Android and iOS mobile devices, see [Microsoft Defender for Endpoint and your privacy on Android and iOS mobile devices](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
+
 ## Required Data 
 
 Required data consists of data that is necessary to make Defender for Endpoint

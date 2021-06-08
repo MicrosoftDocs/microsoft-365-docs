@@ -111,7 +111,7 @@ Retention policies can be applied to the following locations:
 - Teams channel messages
 - Teams chats
 - Yammer community messages
-- Yammer private messages
+- Yammer user messages
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
@@ -306,7 +306,7 @@ Explanation for the four different levels:
     
     Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
 
-3. **Explicit wins over implicit.** Applicable to determine when items will be deleted: 
+3. **Explicit wins over implicit for deletions.** With conflicts now resolved for retention, only conflicts for deletions remain: 
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
