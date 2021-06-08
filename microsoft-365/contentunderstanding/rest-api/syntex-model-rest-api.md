@@ -32,15 +32,15 @@ Before you get started, make sure that you're familiar with the following:
 
 The following REST commands are available for working with Syntex document understanding models:
 
-- [CreateModel](rest-createmodel-method.md) &ndash; Creates a model and its associated content type.
-- [GetById](rest-getmodelbyid-method.md) &ndash; Gets or updates information about a SharePoint Syntex document understanding model.
-- [GetByTitle](rest-getmodelbytitle-method.md) &ndash; Gets or updates information about a SharePoint Syntex document understanding model using the model title.
-- [ApplyModel](rest-applymodel-method.md) &ndash; Applies (or syncs) a trained document understanding model to one or more libraries.
-- [Get model and library information] (rest-getmodelandlibraryinfo-method.md) &ndash; Use to get information about a model and the library where it has been applied.
-- [UpdateModelSettings] (rest-updatemodelsettings-method.md) &ndash; Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
-- [Remove model] (rest-removemodel-method.md) &ndash; Removes an applied document understanding model from one or more libraries.
-- [Delete model] (rest-deletemodelbyidorfilename-method.md) &ndash; Deletes a model by a unique ID or its file name.
-- [Create classification work item] (rest-createmodelworkitem-method.md) &ndash; Create a single or batch work item to process the applied model to one or more files.
+- [CreateModel](rest-createmodel-method.md) – Creates a model and its associated content type.
+- [GetModelById](rest-getmodelbyid-method.md) – Gets or updates information about a SharePoint Syntex document understanding model.
+- [GetModelByTitle](rest-getmodelbytitle-method.md) – Gets or updates information about a SharePoint Syntex document understanding model using the model title.
+- [ApplyModel](rest-applymodel-method.md) – Applies (or syncs) a trained document understanding model to one or more libraries.
+- [GetModelAndLibraryInfo](rest-getmodelandlibraryinfo-method.md) – Gets information about a model and the library where it has been applied.
+- [UpdateModelSettings](rest-updatemodelsettings-method.md) – Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
+- [RemoveModel](rest-removemodel-method.md) – Removes an applied document understanding model from one or more libraries.
+- [DeleteModelByIdOrFilename](rest-deletemodelbyidorfilename-method.md) – Deletes a model by a unique ID or its file name.
+- [Create classification work item] (rest-createmodelworkitem-method.md) – Creates a single or batch work item to process the applied model to one or more files.
 
 ## Scenarios
 
@@ -51,7 +51,6 @@ The create model method only creates the model object and its associated content
 The apply model method is use to configure the model on the target library to classify documents and optionally extract additional information. This API also support batch applying the model to multiple libraries.
 
 The remove model method just removes the model from one or more libraries where it was previously applied. If you wish to delete the model it must first be removed from all the libraries where it was applied.
-
 
 
 ## See also
