@@ -267,7 +267,7 @@
             - name: Manage add-ins in the admin center 
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
