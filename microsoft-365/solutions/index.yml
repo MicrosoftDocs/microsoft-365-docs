@@ -48,8 +48,6 @@ landingContent:
             url: cloud-architecture-models.md
           - text: Microsoft 365 productivity illustrations
             url: productivity-illustrations.md
-          - text: Teams architecture posters
-            url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Design principles
             url: design-principles.md
           - text: Infographics for your users
@@ -77,11 +75,11 @@ landingContent:
           - text: Plan and deploy a Teams Voice solution
             url: deploy-voice.md
           - text: Manage contracts for your business
-            url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
       - linkListType: overview
         links:
           - text: Intelligent intranet
-            url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /sharepoint/intelligent-internet-overview.md
           - text: Collaboration governance
             url: collaboration-governance-overview.md
           - text: File collaboration
@@ -97,9 +95,9 @@ landingContent:
           - text: Insider risk solutions
             url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Auditing solutions
-            url: ../compliance/auditing-solutions-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../compliance/auditing-solutions-overview.md
           - text: Microsoft 365 Advanced eDiscovery
-            url: ../compliance/overview-ediscovery-20.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../compliance/overview-ediscovery-20.md
       - linkListType: reference
         links:
           - text: ISO - Recommended action plan
@@ -121,25 +119,25 @@ landingContent:
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Identity and device access configurations
-            url: ../security/office-365-security/microsoft-365-policies-configurations.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/office-365-security/microsoft-365-policies-configurations.md
           - text: Deploy Microsoft Defender for Endpoint
-            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
           - text: Evaluate Microsoft 365 Defender
-            url: ../security/defender-endpoint/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
-            url: ../security/office-365-security/security-recommendations-for-priority-accounts.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
           - text: Evaluate Microsoft 365 Defender
-            url: ../security/defender-endpoint/deployment-phases.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/deployment-phases.md
           - text: Address false positives/negatives in Microsoft Defender for Endpoint
             url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
       - linkListType: how-to-guide
         links:
           - text: Migrate from Symantec to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
           - text: Migrate from McAfee to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
           - text: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+            url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
 
   # Card
   - title: Administration and migration solution guides
