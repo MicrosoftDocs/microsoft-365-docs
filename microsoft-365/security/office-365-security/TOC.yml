@@ -66,6 +66,8 @@
        href: protect-against-threats.md
      - name: Integrate Defender for Office 365 with Defender for Endpoint
        href: integrate-office-365-ti-with-mde.md
+     - name: Permissions in the Microsoft 365 security center
+       href: permissions-microsoft-365-security-center.md
      - name: Permissions in the Security & Compliance Center
        href: permissions-in-the-security-and-compliance-center.md
      - name: SIEM server integration
@@ -347,4 +349,4 @@
    - name: Microsoft Defender for Endpoint
      href: ../defender-endpoint/index.yml
    - name: Microsoft Defender for Identity
-     href: https://docs.microsoft.com/defender-for-identity/
+     href: /defender-for-identity/

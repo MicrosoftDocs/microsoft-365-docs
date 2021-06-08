@@ -1326,6 +1326,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/using-relevance.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization.md",
       "redirect_url": "/microsoft-365/compliance/use-network-upload-to-import-pst-files",
       "redirect_document_id": false
@@ -3731,6 +3736,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/eop-features.md",
       "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview#eop-features",
       "redirect_document_id": false
@@ -3988,7 +3998,7 @@
     {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/reliability-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/battery-insights",
@@ -4014,6 +4024,31 @@
       "source_path": "microsoft-365/compliance/classifier-how-retrain-comms-compliance.md",
       "redirect_url": "/microsoft-365/compliance/classifier-learn-about",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-secure-cfg.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-secure-config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-inventory.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-inventory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-software-vulnerabilities.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
+      "redirect_document_id": true
     }
   ]
 }

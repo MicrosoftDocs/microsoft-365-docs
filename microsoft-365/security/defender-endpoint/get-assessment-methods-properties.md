@@ -177,11 +177,11 @@ GeneratedTime | string | The time that the export was generated.
 
 ## See also
 
-- [Export secure configuration assessment per device](get-assessmnt-secure-cfg.md)
+- [Export secure configuration assessment per device](get-assessment-secure-config.md)
 
-- [Export software inventory assessment per device](get-assessmnt-software-inventory.md)
+- [Export software inventory assessment per device](get-assessment-software-inventory.md)
 
-- [Export software vulnerabilities assessment per device](get-assessmnt-software-vulnerabilities.md)
+- [Export software vulnerabilities assessment per device](get-assessment-software-vulnerabilities.md)
 
 Other related
 
