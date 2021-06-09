@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP partner opportunities and scenarios
+title: Microsoft Defender for Endpoint partner opportunities and scenarios
 ms.reviewer: 
-description: Learn how you can extend existing security offerings on top of the open framework and a rich set of APIs to build extensions and integrations with Microsoft Defender ATP
+description: Learn how you can extend existing security offerings on top of the open framework and a rich set of APIs to build extensions and integrations with Microsoft Defender for Endpoint
 keywords: API, partner, extend, open framework, apis, extensions, integrations, detection, management, response, vulnerabilities, intelligence
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

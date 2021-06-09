@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint data storage and privacy
 description: Learn about how Microsoft Defender for Endpoint handles privacy and data that it collects.
-keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+keywords: Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -51,7 +51,7 @@ Microsoft does not use your data for advertising.
 ## Data protection and encryption
 The Defender for Endpoint service utilizes state of the art data protection technologies which are based on Microsoft Azure infrastructure. 
 
-There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Defender for Endpoint service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
+There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Defender for Endpoint service, see [Azure encryption overview](/azure/security/security-azure-encryption-overview). 
 
 In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 
@@ -85,7 +85,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ## How long will Microsoft store my data? What is Microsoft’s data retention policy?
 **At service onboarding**<br>
-You can choose the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
+By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Window Defender for Endpoint will store your data. There’s a flexibility of choosing in the range of one month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
 Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.

@@ -1,7 +1,7 @@
 ---
-title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
-description: Install Microsoft Defender ATP for Mac on other management solutions.
-keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
+title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
+description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,9 +35,11 @@ ms.technology: mde
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
+
 ## Approach
 
 > [!CAUTION]
+
 > Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint on macOS. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
 If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint on macOS.
@@ -69,6 +71,7 @@ In order to deploy the package to your enterprise, use the instructions associat
 ### License settings
 
 Set up [a system configuration profile](mac-install-with-jamf.md). 
+
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS is not part of macOS.
 
 Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).

@@ -1,7 +1,7 @@
 ---
 title: Onboarding using Microsoft Endpoint Configuration Manager
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
+keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -247,9 +247,9 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 needs on how Antivirus is configured.
 
   
-    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [Quick scan versus full scan and custom scan](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    For more details, see [Windows Security configuration framework](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Image of next generation protection pane2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -341,7 +341,7 @@ endpoints. (This may take few minutes)
     ![A screenshot of attack surface reduction rules reports2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
 See [Optimize ASR rule deployment and
-detections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.  
+detections](/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.  
 
 
 #### Set Network Protection rules in Audit mode:

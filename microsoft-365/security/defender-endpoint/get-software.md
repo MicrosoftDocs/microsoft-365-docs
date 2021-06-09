@@ -1,7 +1,7 @@
 ---
 title: List software
 description: Retrieves a list of software inventory
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, mdatp tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,6 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+MS.technology: mde
+ms.custom: api
 ---
 
 # List software inventory API
@@ -92,5 +94,5 @@ Here is an example of the response.
 ```
 
 ## Related topics
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability software inventory](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

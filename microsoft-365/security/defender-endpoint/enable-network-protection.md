@@ -23,20 +23,24 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
 
-[Learn more about network filtering configuration options](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Learn more about network filtering configuration options](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## Check if network protection is enabled
 
 Check if network protection has been enabled on a local device by using Registry editor.
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
-1. Choose **HKEY_LOCAL_MACHINE** from the side menu
-1. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
-1. Select **EnableNetworkProtection** to see the current state of network protection on the device
+
+2. Choose **HKEY_LOCAL_MACHINE** from the side menu
+
+3. Navigate through the nested menus to **SOFTWARE** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
+
+4. Select **EnableNetworkProtection** to see the current state of network protection on the device
 
     * 0, or **Off**
     * 1, or **On**
@@ -72,15 +76,15 @@ Enable network protection by using any of these methods:
 
 ### Mobile device management (MDM)
 
-Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
+Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
 ### Microsoft Endpoint Manager (formerly Intune)
 
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com)
 
-2. Create or edit an [endpoint protection configuration profile](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. Create or edit an [endpoint protection configuration profile](/mem/intune/protect/endpoint-protection-configure)
 
-3. Under "Configuration Settings" in the profile flow, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit only**
+3. Under **Configuration Settings** in the profile flow, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit only**
 
 ### Group Policy
 
@@ -111,7 +115,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 1. Select **Start** and type **regedit** to open **Registry Editor**.
 
-2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Select **EnableNetworkProtection** and confirm the value:
    * 0=Off

@@ -28,7 +28,7 @@ On the Roles page, you can give users permissions to do tasks in the admin cente
 ![A figure that shows admin roles](../../media/roles-main-page.png)
 
 > [!TIP]
-> Looking for the detailed role descriptions? Check out [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) and [About admin roles](/office365/admin/add-users/about-admin-roles).
+> Looking for the detailed role descriptions? Check out [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## About the admin roles page
 
@@ -51,23 +51,23 @@ This isn't an exhaustive list of all the permissions that these roles have. Sele
 
 ### Exchange admin
 
-Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](/office365/admin/add-users/about-exchange-online-admin-role)
+Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### Global admin
 
-Assign the global admin role to users who need global access to most management features and data across Microsoft online services. Giving too many users global access is a security risk and we recommend that you have between 2 and 4 Global admins. Only global admins can reset passwords for all user and add and manage domains. They can also open and manage service requests to Microsoft support . The person who signed up for Microsoft online services automatically becomes a global admin. [Learn more](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the global admin role to users who need global access to most management features and data across Microsoft online services. Giving too many users global access is a security risk and we recommend that you have between 2 and 4 Global admins. Only global admins can reset passwords for all user and add and manage domains. They can also open and manage service requests to Microsoft support . The person who signed up for Microsoft online services automatically becomes a global admin. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### Global reader
 
-Assign the global reader admin role to user's who need to view admin features and settings in all admin centers that the global admin can view. The global reader admin role can't edit any settings. [Learn more](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the global reader admin role to user's who need to view admin features and settings in all admin centers that the global admin can view. The global reader admin role can't edit any settings. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### Helpdesk admin
 
-Assign the Helpdesk admin role to users who want to reset passwords, force users to sign out for any security issues. They can also open and manage service requests to Microsoft support. The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader. [Learn more](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the Helpdesk admin role to users who want to reset passwords, force users to sign out for any security issues. They can also open and manage service requests to Microsoft support. The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### Service admin
 
-Assign the service admin role to users who need to create service requests for Azure, Microsoft 365, and Office 365 services. [Learn more](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the service admin role to users who need to create service requests for Azure, Microsoft 365, and Office 365 services. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### SharePoint admin
 
@@ -79,9 +79,7 @@ Assign the Teams admin role to users who you want to access and manage the Teams
 
 ### User admin
 
-Assign the user admin role to users who you want to access and manage user password resets and manage users and groups. They can also open and manage service requests to Microsoft support. [Learn more](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
-
-::: moniker range="o365-worldwide"
+Assign the user admin role to users who you want to access and manage user password resets and manage users and groups. They can also open and manage service requests to Microsoft support. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## Compare roles
 
@@ -93,10 +91,7 @@ In the admin center:
 
 ![A figure that shows a comparison of admin roles](../../media/compare-roles-list.png)
 
-::: moniker-end
+## Related content
 
-## Related topics
-
-[About Microsoft 365 admin roles](about-admin-roles.md)
-
-[Assign admin roles](assign-admin-roles.md)
+[About Microsoft 365 admin roles](about-admin-roles.md) (article)\
+[Assign admin roles](assign-admin-roles.md) (article)

@@ -6,14 +6,16 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
+audience: ITPro
+ms.topic: how-to
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus
@@ -26,6 +28,8 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage Microsoft Defender Antivirus on your endpoints.
+
+## Configure Microsoft Defender Antivirus using Group Policy
 
 In general, you can use the following procedure to configure or change Microsoft Defender Antivirus group policy settings:
 
@@ -41,7 +45,12 @@ In general, you can use the following procedure to configure or change Microsoft
 
 6. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
-The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
+## Group Policy settings and resources
+
+The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable). 
+
+> [!TIP]
+> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure refer to the spreadsheet when you edit Group Policy Objects.
 
 | Location | Setting | Article |
 |:---|:---|:---|
@@ -59,9 +68,9 @@ The following table in this topic lists the Group Policy settings available in W
 | MAPS | Configure local setting override for reporting to Microsoft MAPS | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Configure extended cloud check | [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Select cloud protection level | [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| Network inspection system | Specify additional definition sets for network traffic inspection | No longer relevant |
-| Network inspection system | Turn on definition retirement | No longer relevant |
-| Network inspection system | Turn on protocol recognition | No longer relevant |
+| Network inspection system | Specify additional definition sets for network traffic inspection | [Specify additional definition sets for network traffic inspection](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| Network inspection system | Turn on definition retirement | [Configure definition retirement](turn-on-definition-retirement.md)  |
+| Network inspection system | Turn on protocol recognition | [Turn on protocol recognition](turn-on-protocol-recognition.md)  |
 | Quarantine | Configure local setting override for the removal of items from Quarantine folder | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Quarantine | Configure removal of items from Quarantine folder | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Real-time protection | Configure local setting override for monitoring file and program activity on your computer | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -82,9 +91,9 @@ The following table in this topic lists the Group Policy settings available in W
 | Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Turn off Microsoft Defender Antivirus | Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
-| Root | Define addresses to bypass proxy server | No longer relevant |
-| Root | Define proxy autoconfig (.pac) for connecting to the network | No longer relevant |
-| Root | Define proxy server for connecting to the network | No longer relevant |
+| Root | Define addresses to bypass proxy server | Not used |
+| Root | Define proxy autoconfig (.pac) for connecting to the network | Not used |
+| Root | Define proxy server for connecting to the network | Not used |
 | Root | Configure local administrator merge behavior for lists | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Root | Allow antimalware service to start up with normal priority | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Root | Allow antimalware service to remain running always | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
@@ -137,8 +146,7 @@ The following table in this topic lists the Group Policy settings available in W
 | Threats | Specify threat alert levels at which default action should not be taken when detected | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## Related articles
+## See also
 
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

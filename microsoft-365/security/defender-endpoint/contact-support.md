@@ -1,6 +1,6 @@
 ---
-title: Contact Microsoft Defender ATP support
-description: Learn how to contact Microsoft Defender ATP support
+title: Contact Microsoft Defender for Endpoint support
+description: Learn how to contact Microsoft Defender for Endpoint support
 keywords: support, contact, premier support, solutions, problems, case
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -41,9 +41,9 @@ It's important to know the specific roles that have permission to open support c
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
 
-For more information on which roles have permission see, [Security Administrator permissions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
-For general information on admin roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
+For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
 
 ## Access the widget
@@ -74,8 +74,8 @@ In case the suggested articles are not sufficient, you can open a service reques
 
 Learn how to open support tickets by contacting Defender for Endpoint support. 
 
-
-
+> [!Note]
+> If you have a permier support contract with Microsoft, you will see the premier tag on the widget. If not, contact your Microsoft account manager.
 
 ### Contact support
 This option is available by clicking the icon that looks like a headset. You will then get the following page to submit your support case:

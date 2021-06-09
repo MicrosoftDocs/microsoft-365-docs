@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP on Android
+title: Microsoft Defender for Endpoint on Android
 ms.reviewer: 
-description: Describes how to install and use Microsoft Defender ATP for Android
-keywords: microsoft, defender, atp, android, installation, deploy, uninstallation, intune
+description: Describes how to install and use Microsoft Defender for Endpoint on Android
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,10 +31,10 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic describes how to install, configure, update, and use Defender for Endpoint for Android.
+This topic describes how to install, configure, update, and use Defender for Endpoint on Android.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Defender for Endpoint for Android is likely to cause performance problems and unpredictable system errors.
+> Running other third-party endpoint protection products alongside Defender for Endpoint on Android is likely to cause performance problems and unpredictable system errors.
 
 
 ## How to install Microsoft Defender for Endpoint on Android
@@ -43,19 +43,19 @@ This topic describes how to install, configure, update, and use Defender for End
 
 -   **For end users**
 
-    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+    -   Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
     -   Intune Company Portal app can be downloaded from [Google
         Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)
         and is available on the Android device.
 
         -   Additionally, device(s) can be
-            [enrolled](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)
+            [enrolled](/mem/intune/user-help/enroll-device-android-company-portal)
             via the Intune Company Portal app to enforce Intune device compliance
             policies. This requires the end user to be assigned a Microsoft Intune license.
 
     -   For more information on how to assign licenses, see [Assign licenses to
-        users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+        users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
         
 
 -   **For Administrators**
@@ -63,11 +63,15 @@ This topic describes how to install, configure, update, and use Defender for End
     -   Access to the Microsoft Defender Security Center portal.
 
         > [!NOTE]
-        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on Android. Currently only enrolled devices are supported for enforcing Defender for Endpoint for Android related device compliance policies in Intune. 
+        > Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on Android. Currently only enrolled devices are supported for enforcing Defender for Endpoint on Android related device compliance policies in Intune. 
 
     -   Access [Microsoft Endpoint Manager admin
         center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the
         app to enrolled user groups in your organization.
+        
+### Network Requirements
+
+- For Microsoft Defender for Endpoint on Android to function when connected to a network the firewall/proxy will need to be configured to [enable access to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 ### System Requirements
 

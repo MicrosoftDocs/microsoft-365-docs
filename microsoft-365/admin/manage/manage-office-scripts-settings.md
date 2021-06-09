@@ -20,7 +20,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 # Manage Office Scripts settings
 
-Office Scripts‎ allows users to automate tasks by recording, editing, and running scripts in ‎Excel‎ on the web. ‎Office Scripts‎ works with Power Automate, and users run scripts on workbooks by using the ‎Excel‎ Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
+[Office Scripts](/office/dev/scripts)‎ allows users to automate tasks by recording, editing, and running scripts in ‎Excel‎ on the web. ‎Office Scripts‎ works with Power Automate, and users run scripts on workbooks by using the ‎Excel‎ Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
 
 ## Before you begin
 
@@ -85,7 +85,7 @@ Office Scripts‎ allows users to automate tasks by recording, editing, and runn
 
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-    - To learn more about using Office Scripts with Power Automate, including how your data loss prevention policies may be impacted, see [Run Office Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration).
+    - To learn more about using Office Scripts with Power Automate, see [Run Office Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration).
 
 8. Select **Save**.
 

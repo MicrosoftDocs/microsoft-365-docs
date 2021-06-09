@@ -1,7 +1,7 @@
 ---
-title: Deploy updates for Microsoft Defender ATP for Mac
-description: Control updates for Microsoft Defender ATP for Mac in enterprise environments.
-keywords: microsoft, defender, atp, mac, updates, deploy
+title: Deploy updates for Microsoft Defender for Endpoint on Mac
+description: Control updates for Microsoft Defender for Endpoint on Mac in enterprise environments.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +43,7 @@ If you decide to deploy updates by using your software distribution tools, you s
 
 ## Use msupdate
 
-MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU, the application identifier for Microsoft Defender for Endpoint on macOS is *WDAV00*. To download and install the latest updates for Microsoft Defender for Endpoint on macOS, execute the following command from a Terminal window:
 
@@ -73,7 +73,7 @@ The `Current` channel contains the most stable version of the product.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **Data type** | String |
 | **Possible values** | Beta <br/> Preview <br/> Current |
@@ -91,7 +91,7 @@ Change how often MAU searches for updates.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **Data type** | Integer |
 | **Default value** | 720 (minutes) |
@@ -104,7 +104,7 @@ Change how MAU searches for updates.
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **Data type** | String |
 | **Possible values** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -117,7 +117,7 @@ Change whether local users will be able to click the "Check for Updates" option 
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **Data type** | Boolean |
 | **Possible values** | True (default) <br/> False |
@@ -129,7 +129,7 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **Data type** | Boolean |
 | **Possible values** | False (default) <br/> True |
@@ -141,7 +141,7 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 
 |Section|Value|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domain** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **Data type** | Boolean |
 | **Possible values** | True (default) <br/> False |
@@ -150,10 +150,17 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 ## Example configuration profile
 
 The following configuration profile is used to:
-- Place the device in the Beta channel
+- Place the device in the Production channel
 - Automatically download and install updates
 - Enable the "Check for updates" button in the user interface
 - Allow users on the device to enroll into the Insider channels
+
+
+>[!WARNING]
+>The below configuration is an example configuration and should not be used in production without proper review of settings and tailor of configurations.
+
+>[!TIP]
+>In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
 
 ### JAMF
 
@@ -163,7 +170,7 @@ The following configuration profile is used to:
 <plist version="1.0">
 <dict>
 	<key>ChannelName</key>
-	<string>Beta</string>
+	<string>Production</string>
 	<key>HowToCheck</key>
 	<string>AutomaticDownload</string>
 	<key>EnableCheckForUpdatesButton</key>
@@ -223,7 +230,7 @@ The following configuration profile is used to:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>
@@ -244,4 +251,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 
 ## Resources
 
-- [msupdate reference](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [msupdate reference](/deployoffice/mac/update-office-for-mac-using-msupdate)

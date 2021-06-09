@@ -41,7 +41,7 @@ For other workloads, see:
 Teams chats messages and channel messages can be deleted by using retention policies for Teams, and in addition to the text in the messages, the following items can be retained for compliance reasons: Embedded images, tables, hypertext links, links to other Teams messages and files, and [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied). 
 
 > [!NOTE]
-> Including card content is a recent addition and now fully rolled out to tenants. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
+> Including card content in a retention policy for Teams is a fairly recent addition. For more information, see [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams messages in private channels are currently not supported for retention policies. Code snippets, recorded voice memos from the Teams mobile client, thumbnails, announcement images, and reactions from others in the form of emoticons are not retained when you use retention policies for Teams.
 
@@ -102,6 +102,69 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 1. **If the chat or channel message is edited or deleted** by a user during the retention period: The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is retained there for at least 1 day and permanently deleted the next time the timer job runs (typically between 1-7 days).
 
 2. **If a chat or channel message is not deleted** by a user during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. This action typically takes between 1-7 days from the expiry date. The message is retained there for at least 1 day and then permanently deleted the next time the timer job runs (typically between 1-7 days).
+
+#### Example flows and timings for retention policies
+
+Use the following examples to see how the processes and timings explained in the previous sections apply to retention policies that have the following configurations:
+
+- [Example 1: Retain-only for 7 years](#example-1-retain-only-for-7-years)
+- [Example 2: Retain for 30 days and then delete](#example-2-retain-for-30-days-and-then-delete)
+- [Example 3: Delete-only after 1 day](#example-3-delete-only-after-1-day)
+
+For all examples that refer to permanent deletion, because of the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), this action is suspended if the message is subject to another retention policy to retain the item or it is subject to an eDiscovery hold.
+
+##### Example 1: Retain-only for 7 years
+
+On day 1, a user creates a chat or channel message.
+
+On day 5, the user edits that message.
+
+On day 30, the user deletes the current message.
+
+Retention outcomes:
+
+- For the original message:
+    - On day 5, the message is copied to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
+
+- For the current (edited) message:
+    - On day 30, the message moves to the SubstrateHolds folder where it can still be searched with eDiscovery tools for a minimum of 7 years from day 1 (the retention period).
+
+If the user had deleted the current message after the specified retention period, instead of within the retention period, the message would still be moved to the SubstrateHolds folder. However, now the retention period has expired, the message would be permanently deleted after the minimum of 1 day and then typically within 1-7 days.
+
+##### Example 2: Retain for 30 days and then delete
+
+On day 1, a user creates a chat or channel message.
+
+On day 10, the user edits that message.
+
+The user doesn't make further edits and doesn't delete the message.
+
+Retention outcomes:
+
+- For the original message:
+    - On day 10, the message is copied to the SubstrateHolds folder, where it can still be searched with eDiscovery tools.
+    - At the end of the retention period (30 days from day 1), the message is permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
+
+- For the current (edited) message:
+    - At the end of the retention period (30 days from day 1), the message moves to the SubstrateHolds folder typically within 1-7 days, where it can still be searched with eDiscovery tools.
+    - The message is then permanently deleted typically within 1-7 days after the minimum of 1 day, and then won't be returned with eDiscovery searches.
+
+##### Example 3: Delete-only after 1 day
+
+> [!NOTE]
+> Because of the short one-day duration of this configuration and retention processes that operate within a time period of 1-7 days, this section shows example timings that are within the typical time ranges.
+
+On day 1, a user creates a chat or channel message.
+
+Example retention outcome if the user doesn't edit or delete the message:
+
+- Day 5 (typically 1-7 days after the start of the retention period on day 2):
+    - The message moves to the SubstrateHolds folder and remains there for at least 1 day where it can still be searched with eDiscovery tools.
+
+- Day 9 (typically 1-7 days after a minimum of 1 day in the SubstrateHolds folder):
+    - The message is permanently deleted and then won't be returned with eDiscovery searches.
+
+As this example shows, although you can configure a retention policy to delete messages after just one day, the service undergoes multiple processes to ensure a compliant deletion. As a result, a delete action after 1 day could take 16 days before the message is permanently deleted so that it's no longer returned in eDiscovery searches.
 
 ## Skype for Business and Teams interop chats
 

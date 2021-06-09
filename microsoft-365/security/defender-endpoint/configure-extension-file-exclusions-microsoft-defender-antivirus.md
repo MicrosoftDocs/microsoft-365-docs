@@ -6,13 +6,14 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure and validate exclusions based on file extension and folder location

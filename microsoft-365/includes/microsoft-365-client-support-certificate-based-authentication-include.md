@@ -7,7 +7,6 @@
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
 |DELVE|✔|✔|N/A|N/A|N/A|
-|EDGE|✔|✔|N/A|✔|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
@@ -34,10 +33,10 @@
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|✔|✔|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|✔|Planned|N/A|
+|TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|WHITEBOARD|N/A|Planned|N/A|N/A|✔|
+|WHITEBOARD|✔|Planned|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|Planned|Planned|N/A|

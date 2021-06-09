@@ -7,14 +7,15 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/18/2020
+ms.date: 06/04/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.topic: article
 ---
 
 # Configure Microsoft Defender Antivirus features
@@ -26,27 +27,24 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-You can configure Microsoft Defender Antivirus with a number of tools, including:
+You can configure Microsoft Defender Antivirus with a number of tools, such as:
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager (which includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)
 
 The following broad categories of features can be configured:
 
-- Cloud-delivered protection
-- Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
-- How end users interact with the client on individual endpoints
+- Cloud-delivered protection. See [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+ 
+- Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection. See [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md).
 
-The following articles describe how to perform key tasks when configuring Microsoft Defender Antivirus. Each article includes instructions for the applicable configuration tool (or tools).
+- How end users interact with the client on individual endpoints. See the following resources:
+   
+   - [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
-|Article  |Description  |
-|---------|---------|
-|[Utilize Microsoft cloud-provided Microsoft Defender Antivirus protection](cloud-protection-microsoft-defender-antivirus.md)     | Use cloud-delivered protection for advanced, fast, robust antivirus detection.        |
-|[Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)     |Enable behavior-based, heuristic, and real-time antivirus protection.         |
-|[Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configure how end users in your organization interact with Microsoft Defender Antivirus, what notifications they see, and whether they can override settings. |
+   - [Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) 
 
 > [!TIP]
-> You can also review the [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md) topic for an overview of each tool and links to further help.
+> Review [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md).

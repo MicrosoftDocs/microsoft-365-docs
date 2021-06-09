@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
-keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
+keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
 
 ms.sitesec: library
@@ -37,6 +37,12 @@ This article lists new features in the latest release of Microsoft Defender for 
 Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
+
+## April/May 2021 
+
+- [Email entity page](mdo-email-entity-page.md): A unified 360-degree view of an email with enriched information around threats, authentication and detections, detonation details, and a brand-new email preview experience.
+- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Updates to EmailEvents (RecordType 28) to add delivery action, original and latest delivery locations, and updated detection details.
+- [Threat Analytics for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns. 
 
 ## February/March 2021 
 

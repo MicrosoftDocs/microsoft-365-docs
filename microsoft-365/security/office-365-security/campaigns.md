@@ -29,7 +29,7 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Security & Compliance Center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with an Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 security center identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 - Better understand the scope of the attack.
@@ -50,20 +50,20 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views in the Security & Compliance Center
+## Campaign Views in the security center
 
-Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**, or directly at <https://protection.office.com/campaigns>.
+Campaign Views is available in the [Microsoft 365 security center](https://security.microsoft.com) at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
+![Campaigns overview in the Microsoft 365 security center](../../media/campaigns-overview.png)
 
 You can also get to Campaign Views from:
 
-- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
-- **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
-- **Threat management** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Campaigns**
+- **Email & collaboration** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
+- **Email & collaboration** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
-To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the security center. For more information, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](permissions-microsoft-365-security-center.md).
 
 ## Campaigns overview
 
@@ -74,7 +74,7 @@ On the default **Campaign** tab, the **Campaign type** area shows a bar graph th
 > [!TIP]
 > If you don't see any campaign data, try changing the date range or [filters](#filters-and-settings).
 
-The rest of the overview page shows the following information on the **Campaign** tab:
+The table below the graph on the overview page shows the following information on the **Campaign** tab:
 
 - **Name**
 
@@ -106,7 +106,7 @@ The **Campaign origin** tab shows the message sources on a map of the world.
 
 ### Filters and settings
 
-At the top of the Campaign Views page, there are several filter and query settings to help you find and isolate specific campaigns.
+At the top of the **Campaign** page, there are several filter and query settings to help you find and isolate specific campaigns.
 
 ![Campaign filters](../../media/campaign-filters-and-settings.png)
 
@@ -127,7 +127,6 @@ The filterable campaign properties that are available in the **Campaign type** b
   - **Attachment filename**
   - **Malware family**
   - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
-  - **System overrides**
   - **Delivery action**
   - **Additional action**
   - **Directionality**
@@ -142,7 +141,9 @@ The filterable campaign properties that are available in the **Campaign type** b
   - **Sender IP**
   - **Attachment SHA256**: To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
   - **Cluster ID**
+  - **Alert ID**
   - **Alert Policy ID**
+  - **Campaign ID**
   - **ZAP URL signal**
 
 - **URLs**:
@@ -160,7 +161,7 @@ For more advanced filtering, including filtering by multiple properties, you can
 
 When you're finished, click the **Query** button.
 
-After you create a basic or advanced filter, you can save it by using **Save query** or **Save query as**. Later, when you return to Campaign Views, you can load a saved filter by clicking **Saved query settings**.
+After you create a basic or advanced filter, you can save it by using **Save query** or **Save query as**. Later, when you return to the **Campaigns** page, you can load a saved filter by clicking **Saved query settings**.
 
 To export the graph or the list of campaigns, click **Export** and select **Export chart data** or **Export campaign list**.
 
@@ -174,30 +175,26 @@ When you click on the name of a campaign, the campaign details appear in a flyou
 
 At the top of the campaign details view, the following campaign information is available:
 
-- **ID**: The unique campaign identifier.
-
-- **Started** and **Ended**: The start date and end date of the campaign. Note that these dates might extend further than your filter dates that you selected on the overview page.
-
-- **Impact**: This section contains the following data for the date range filter you selected (or that you select in the timeline):
-  - The total number of recipients.
-  - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to the Junk Email folder).
-  - How many users clicked on the URL payload in the phishing message.
-  - Howe many users visited the URL.
-
-- **Targeted**: The percentage as calculated by: (the number of campaign recipients in your organization) / (the total number of recipients in the campaign across all organizations in the service). Note that this value is calculated over the entire lifetime of the campaign, and doesn't change based on date filters.
-
-- An interactive timeline of campaign activity: The timeline shows activity over the entire lifetime of the campaign. By default, the shaded area includes the date range filter that you selected in the overview. You can click and drag to select a specific start point and end point, <u>which will change the data that's displayed in **Impact** area, and on the rest of the page as described in the next sections</u>.
-
-In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign details to a Word document (by default, named CampaignReport.docx). Note that the download contains details over the entire lifetime of the campaign (not just the filter dates you selected).
+- **Campaign ID**: The unique campaign identifier.
+- **Activity**: The duration and activity of the campaign.
+- The following data for the date range filter you selected (or that you select in the timeline):
+- **Impact**
+- **Messages**: The total number of recipients.
+- **Inboxed**: The number of messages that were delivered to the Inbox, not to the Junk Email folder.
+- **Clicked link**: How many users clicked on the URL payload in the phishing message.
+- **Visited link**: How many users visited the URL.
+- **Targeted(%)**: The percentage as calculated by: (the number of campaign recipients in your organization) / (the total number of recipients in the campaign across all organizations in the service). Note that this value is calculated over the entire lifetime of the campaign, and doesn't change based on date filters.
+- Start date/time and end data/time filters for the campaign flow as described in the next section.
+- An interactive timeline of campaign activity: The timeline shows activity over the entire lifetime of the campaign. You can hover over the data points in the graph to see the amount of detected messages.
 
 ![Campaign information](../../media/campaign-details-campaign-info.png)
 
 ### Campaign flow
 
-In the middle of the campaign details view, important details about the campaign are presented in the **Flow** section in a horizontal flow diagram (known as a _Sankey_ diagram). These details will help you to understand the elements of the campaign and the potential impact in your organization.
+In the middle of the campaign details view, important details about the campaign are presented in a horizontal flow diagram (known as a _Sankey_ diagram). These details will help you to understand the elements of the campaign and the potential impact in your organization.
 
 > [!TIP]
-> The information that's displayed in the **Flow** diagram is controlled by the shaded date range in the timeline as described in the previous section.
+> The information that's displayed in the flow diagram is controlled by the date range filter in the timeline as described in the previous section.
 
 ![Campaign details that don't contain user URL clicks](../../media/campaign-details-no-recipient-actions.png)
 
@@ -208,6 +205,8 @@ The diagram contains the following information:
 - **Sender IPs**
 - **Sender domains**
 - **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
+
+  <br>
 
   ****
 
@@ -229,7 +228,7 @@ The diagram contains the following information:
 
   <sup>\*\*</sup> Review your anti-spam policies, because these messages should be quarantined, not delivered.
 
-- **Delivery locations**: You'll likely want to investigate messages that were delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
+- **Message destinations**: You'll likely want to investigate messages that were delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
   - **Deleted folder**
   - **Dropped**
   - **External**: The recipient is located in your on-premises email organization in hybrid environments.
@@ -262,7 +261,7 @@ If a user clicked on the payload URL in the phishing message, the actions are di
 The tabs in the campaign details view allow you to further investigate the campaign.
 
 > [!TIP]
-> The information that's displayed on the tabs is controlled by the shaded date range in the timeline as described in [Campaign information](#campaign-information) section.
+> The information that's displayed on the tabs is controlled by the date range filter in the timeline as described in [Campaign information](#campaign-information) section.
 
 - **URL clicks**: If users didn't click on the payload URL in the message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
   - **User**<sup>\*</sup>
@@ -299,7 +298,11 @@ The tabs in the campaign details view allow you to further investigate the campa
 
 ### Buttons
 
-The buttons in the campaign details view allow you to use the power of Threat Explorer to further investigate the campaign.
+The buttons at the bottom the campaign details view allow you to investigate and record details about the campaign:
 
-- **Explore campaign**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
-- **Explore Inboxed messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
+- **Explore messages**: Use the power of Threat Explorer to further investigate the campaign:
+  - **All messages**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
+  - **Inboxed messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
+  - **Internal messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Directionality: Intra-org** as the search filter.
+
+- **Download threat report**: Download the campaign details to a Word document (by default, named CampaignReport.docx). Note that the download contains details over the entire lifetime of the campaign (not just the filter dates you selected).

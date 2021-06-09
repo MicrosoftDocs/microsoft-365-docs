@@ -7,13 +7,14 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.topic: article
 ---
 
 # Next-generation protection

@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft Defender ATP incidents
+title: Manage Microsoft Defender for Endpoint incidents
 description: Manage incidents by assigning it, updating its status, or setting its classification.
 keywords: incidents, manage, assign, status, classification, true alert, false alert
 search.product: eADQiWindows 10XVcnh
@@ -76,6 +76,6 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Incidents queue](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Incidents queue](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)

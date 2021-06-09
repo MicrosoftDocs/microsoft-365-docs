@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 security documentation # < 60 chars
-summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+summary: Microsoft 365 security center unites multiple security technologies in one comprehensive administration console, with enhancements to protect your enterprise.  # < 160 chars
 
 metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -74,9 +74,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: /windows/security/threat-protection/microsoft-defender-atp/overview
+            url: defender-endpoint/microsoft-defender-endpoint.md
+          - text: Microsoft Defender Security Center portal overview
+            url: defender-endpoint/portal-overview.md
              
   # Card (optional)
   - title: Azure Defender

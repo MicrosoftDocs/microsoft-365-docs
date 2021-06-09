@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +13,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+search.appverid: MET150
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
+ms.date: 03/17/2021
 ---
 
 # About registration numbers and under review notifications
@@ -31,7 +32,7 @@ We use the registration number to review the details of your account. This lets 
 
 For countries where the registration number is mandatory, the label above the text box indicates what type of number is required.
 
-For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
+For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 
@@ -80,7 +81,7 @@ The following table contains samples of the registration numbers collected for e
 | **Poland**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Tax Identification   number<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – The national identification number used in Poland (Polish Powszechny Elektroniczny System Ewidencji Ludności, Universal Electronic System for Registration of the Population) |  |  |  |  |
 | **Russia**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – Tax identification number (Russian “Individualiy Nomer Nalogoplatelshika”) |  |  |  |  |
 | **Saudi Arabia** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – Tax Identification number |  |  |  |  |
-| **South Africa** | TRN – traffic registration number |  |  |  |  |
+| **South Africa** | TRN – tax reference number |  |  |  |  |
 | **South Sudan** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Tax Identification number |  |  |  |  |
 | **Tajikistan**  | INN – Tax Identification   number<br>EIN – Employer Identification number<br>KPP – This is a code that reflects the reason for the organization   registration. |  |  |  |  |
 | **Thailand** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Tax Identification number |  |  |  |  |

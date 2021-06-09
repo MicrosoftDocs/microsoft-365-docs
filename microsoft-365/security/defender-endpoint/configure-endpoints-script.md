@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows 10 devices using a local script
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
-keywords: configure devices using a local script, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
+keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -53,7 +53,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
     1. Click **Download package** and save the .zip file.
 
   
-2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
+2.  Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPLocalOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the device and run the script:
 
@@ -63,7 +63,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
         ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Press the **Enter** key or click **OK**.
 

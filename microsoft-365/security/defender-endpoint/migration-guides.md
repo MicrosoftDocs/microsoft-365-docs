@@ -1,6 +1,6 @@
 ---
 title: Migration guides to make the switch to Microsoft Defender for Endpoint
-description: Learn how to make the switch from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint
+description: Learn how to make the switch from a non-Microsoft 365 Defender solution to Microsoft Defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -31,7 +31,7 @@ ms.technology: mde
 
 ## Migration guides
 
-If you're considering switching from a non-Microsoft threat protection solution to Microsoft Defender for Endpoint with Microsoft Defender Antivirus, check out our migration guidance. Select the scenario that best represents where you are in your deployment process, and see the guidance.
+If you're considering switching from a non-Microsoft 365 Defender solution to Microsoft Defender for Endpoint with Microsoft Defender Antivirus, check out our migration guidance. Select the scenario that best represents where you are in your deployment process, and see the guidance.
 
 |Scenario |Guidance |
 |:--|:--|
@@ -49,6 +49,6 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 
 ## See also
 
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
-- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection?) 
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection?) 

@@ -67,14 +67,14 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## Limitations
 
-> [!WARNING]
-> There is a current problem with Power Query and custom add-ins with Excel on the web: Do not encrypt these files by using sensitivity labels because data can be lost when the file is saved. Instead, apply a label without encryption.
+- SharePoint and OneDrive can't process some files that are labeled and encrypted from Office desktop apps when these files contain PowerQuery data, data stored by custom add-ins, or custom XML parts such as Cover Page Properties, content type schemas, custom Document Information Panel, and Custom XSN. This limitation also applies to files that have a [Document ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) added when they are uploaded.
+    
+    For these files, either apply a label without encryption so that they can later be opened in Office on the web, or instruct users to open the files in their desktop apps. Files that are labeled and encrypted only in Office on the web aren't affected.
 
 - SharePoint and OneDrive don't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, for the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     
-    1. Make sure you have [migrated the Azure Information Protection labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft 365 compliance center, or equivalent labeling admin center.
-    
-    2. Download the files and then upload them to SharePoint.
+    1. Make sure you have [migrated the Azure Information Protection labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft 365 compliance center.
+    2. Download the labeled files and then upload them to their original location in SharePoint or OneDrive.
 
 - SharePoint and OneDrive can't process encrypted files when the label that applied the encryption has any of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
@@ -82,6 +82,8 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
     - **Double Key Encryption** is selected.
     
     For labels with any of these encryption configurations, the labels aren't displayed to users in Office for the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
+
+- For performance reasons, when you upload or save a document to SharePoint and the file's label doesn't apply encryption, the **Sensitivity** column in the document library can take a while to display the label name. Factor in this delay if you use scripts or automation that depend on the label name in this column.
 
 - Users might experience delays in being able to open encrypted documents in the following Save As scenario: Using a desktop version of Office, a user chooses Save As for a document that has a sensitivity label that applies encryption. The user selects SharePoint or OneDrive for the location, and then immediately tries to open that document in Office for the web. If the service is still processing the encryption, the user sees a message that the document must be opened in their desktop app. If they try again in a couple of minutes, the document successfully opens in Office for the web. 
 
@@ -164,7 +166,8 @@ To enable the new capabilities, use the [Set-SPOTenant](/powershell/module/share
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Microsoft 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Note: If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
+    > [!NOTE]
+    > If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
 2. Run the following command and press **Y** to confirm:
 
@@ -212,7 +215,11 @@ Use the managed property **InformationProtectionLabelId** to find all documents 
 
 For example, to search for all documents that have been labeled as "Confidential", and that label has a GUID of "8faca7b8-8d20-48a3-8ea2-0f96310a848e", in the search box, type:
 
-`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`	
+```
+InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
+```
+
+Search won't find labeled documents in a compressed file, such as a .zip file.
 
 To get the GUIDs for your sensitivity labels, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet:	
 

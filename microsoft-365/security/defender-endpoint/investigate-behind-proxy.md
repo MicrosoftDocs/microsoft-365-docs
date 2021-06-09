@@ -1,6 +1,6 @@
 ---
 title: Investigate connection events that occur behind forward proxies
-description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender ATP, which surfaces a real target, instead of a proxy.
+description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender for Endpoint, which surfaces a real target, instead of a proxy.
 keywords: proxy, network protection, forward proxy, network events, audit, block, domain names, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -89,4 +89,4 @@ DeviceNetworkEvents
 
 
 ## Related topics
-- [Applying network protection with GP - policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Applying network protection with GP - policy CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

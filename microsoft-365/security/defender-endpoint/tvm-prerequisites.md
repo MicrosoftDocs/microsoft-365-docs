@@ -1,7 +1,7 @@
 ---
 title: Prerequisites & permissions - threat and vulnerability management
 description: Before you begin using threat and vulnerability management, make sure you have the relevant configurations and permissions.
-keywords: threat & vulnerability management permissions prerequisites, threat and vulnerability management permissions prerequisites, MDATP TVM permissions prerequisites, vulnerability management
+keywords: threat & vulnerability management permissions prerequisites, threat and vulnerability management permissions prerequisites, Microsoft Defender for Endpoint TVM permissions prerequisites, vulnerability management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +43,7 @@ Ensure that your devices:
 > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- Are onboarded to [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure) to help remediate threats found by threat and vulnerability management. If you're using Configuration Manager, update your console to the latest version.
+- Are onboarded to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) to help remediate threats found by threat and vulnerability management. If you're using Configuration Manager, update your console to the latest version.
     - **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
 - Have at least one security recommendation that can be viewed in the device page
 - Are tagged or marked as co-managed

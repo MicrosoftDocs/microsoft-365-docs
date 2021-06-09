@@ -105,9 +105,9 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Microsoft Defender for Endpoint Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> If it doesn't exist, open an elevated command and add the key.
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
  | | | | All | **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently supported platforms:<br> Enterprise, Education, and Professional.<br> Server is not supported.
  0x87D101A9 | -2016345687 |SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient. | All |  **Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU.<br><br> Currently supported platforms:<br>  Enterprise, Education, and Professional.
 
@@ -246,11 +246,11 @@ First, you should check that the service is set to start automatically when Wind
 
 ### Ensure the device has an Internet connection
 
-The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
+The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service.
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
@@ -287,8 +287,9 @@ If the verification fails and your environment is using a proxy to connect to th
     ![Image of registry key for Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > In addition, you must ensure that wdfilter.sys and wdboot.sys are set to their default start values of "0".
+   > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
    >
+   > Example default configurations for WdBoot and WdFilter:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
@@ -296,8 +297,8 @@ If the verification fails and your environment is using a proxy to connect to th
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md#server-mma)
-- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md#server-proxy)
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
+- [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
 
 You might also need to check the following:
 
@@ -329,7 +330,7 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 

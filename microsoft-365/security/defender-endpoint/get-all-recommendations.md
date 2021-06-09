@@ -1,7 +1,7 @@
 ---
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
-keywords: apis, graph api, supported apis, get, security recommendations, mdatp tvm api, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # List all recommendations
@@ -115,6 +116,6 @@ Here is an example of the response.
 }
 ```
 ## See also
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability security recommendation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
 

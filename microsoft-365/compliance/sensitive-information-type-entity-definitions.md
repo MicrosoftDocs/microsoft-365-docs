@@ -17,24 +17,13 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+recommendations: false
+description: "There are 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # Sensitive information type entity definitions
 
-Data loss prevention (DLP) in the Compliance Center includes many sensitive information types that are ready to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. Corroborative evidence, like keywords and checksums, can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
-
-Sensitive information types require one of these subscriptions:
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-Sensitive information types are used in:
-
-- [Data loss prevention policies](data-loss-prevention-policies.md) 
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](retention.md)
-- [Communication compliance](communication-compliance.md)
-- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
 ## ABA routing number
 
@@ -44,19 +33,17 @@ nine digits that may be in a formatted or unformatted pattern
 
 ### Pattern
 
-Formatted:
-- four digits beginning with 0, 1, 2, 3, 6, 7, or 8
-- a hyphen
+- two digits in the ranges 00-12, 21-32, 61-72, or 80
+- two digits
+- an optional hyphen
 - four digits
-- a hyphen
+- an optional hyphen
 - a digit
 
-Unformatted:
-nine consecutive digits beginning with 0, 1, 2, 3, 6, 7, or 8 
 
 ### Checksum
 
-No
+Yes
 
 ### Definition
 
@@ -151,11 +138,94 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - registro nacional de las personas 
 - rnp 
    
+## Argentina Unique Tax Identification Key (CUIT/CUIL)
+
+### Format
+
+11 digits with dash
+
+### Pattern
+
+11 digits with a dash:
+- two digits in 20, 23, 24, 27, 30, 33 or 34
+- a hyphen (-)
+- eight digits
+- a hyphen (-)
+- one check digit
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
+- A keyword from `Keyword_Argentina_Unique_Tax_Key` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_Argentina_Unique_Tax_Key` finds content that matches the pattern.
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- unique code of labour identification 
+- Clave Única de Identificación Tributaria
+- unique labour identification code
+- CUIL
+- Unique Tax Identification Key
+- Unique Labour Identification Key
+- Unique Key of Labour Identification
+- Unique Work Identification Code
+- Unique Code of Work Identification
+- Unique Work Identification Key
+- Unique Key of Work Identification
+- Unique Code of Tax Identification
+- Unique Key of Tax Identification
+- Unique Labor Identification Code
+- Unique Code of Labor Identification
+- Unique Labor Identification Key
+- Unique Key of Labor Identification
+- tax ID
+- taxID#
+- taxId
+- taxidnumber
+- tax number
+- tax no
+- tax #
+- tax#
+- taxpayer ID
+- taxpayer number
+- taxpayer no
+- taxpayer #
+- taxpayer#
+- tax identity
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
+   
 ## Australia bank account number
 
 ### Format
 
-six to ten digits with or without a bank state branch number
+six to 10 digits with or without a bank state branch number
 
 ### Pattern
 
@@ -498,7 +568,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 10-11 digits:
 - First digit is in the range 2-6
-- Nine digit is a check digit
+- Ninth digit is a check digit
 - Tenth digit is the issue digit
 - Eleventh digit (optional) is the individual number
 
@@ -543,11 +613,13 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### Format
 
-A letter followed by seven digits
+eight or nine alphanumeric characters 
 
 ### Pattern
 
-A letter (not case-sensitive) followed by seven digits
+- one letter (N, E, D, F, A, C, U, X) followed by seven digits
+or
+- Two letters (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) followed by seven digits.
 
 ### Checksum
 
@@ -556,60 +628,48 @@ No
 ### Definition
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_australia_passport_number finds content that matches the pattern.
-- A keyword from Keyword_passport or Keyword_australia_passport_number is found.
+- The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
+- A keyword from `Keyword_australia_passport_number` is found.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_australia_passport_number` finds content that matches the pattern.
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### Keywords
 
-#### Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport #
-- Passport#
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport#
-- PasseportNon
-- Passeportn °
-
 #### Keyword_australia_passport_number
 
-- passport
-- passport details
-- immigration and citizenship
-- commonwealth of australia
-- department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
-- national identity card
-- passport number
-- travel document
-- issuing authority
-   
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- national identity card
+- travel document
+- issuing authority
+
+
 ## Australia tax file number
 
 ### Format
@@ -2682,7 +2742,17 @@ Varies by province
 
 ### Pattern
 
-Various patterns covering Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland/Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan
+Various patterns covering:
+- Alberta
+- British Columbia
+- Manitoba
+- New Brunswick
+- Newfoundland/Labrador
+- Nova Scotia
+- Ontario
+- Prince Edward Island
+- Quebec
+- Saskatchewan
 
 ### Checksum
 
@@ -3103,7 +3173,7 @@ Yes
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_canadian_sin finds content that matches the pattern.
-- At least two of any combination of the following:
+- At least two of the following patterns:
     - A keyword from Keyword_sin is found.
     - A keyword from Keyword_sin_collaborative is found.
     - The function Func_eu_date finds a date in the right date format.
@@ -3313,7 +3383,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Pattern
 
-Complex and robust pattern that detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
+Detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
 
 ### Checksum
 
@@ -3768,7 +3838,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Croatia identity card number
-This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+This entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -6275,7 +6345,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Finland passport number
 
-This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 combination of nine letters and digits
@@ -6355,7 +6425,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## France driver's license number
 
-This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is available in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -6614,7 +6684,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
    
 ## France passport number
-This sensitive information type entity is available in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+This entity is available in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -6926,7 +6996,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Germany driver's license number
 
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7172,7 +7242,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Germany passport number
 
-This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7389,7 +7459,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Greece driver's license number
 
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This entity is included in the EU Driver's License Number sensitive information type. It is also available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -7693,12 +7763,12 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-Eleven digits without spaces and delimiters
+11 digits without spaces and delimiters
   
 ### Pattern
 
-- 6 digits as date of birth YYMMDD
-- 4 digits
+- Six digits as date of birth YYMMDD
+- Four digits
 - a check digit
   
 ### Checksum
@@ -8077,7 +8147,7 @@ This sensitive information type is only available for use in:
 
 11 digits:
   
-- One digit that corresponds to gender (1-male, 2-female, other numbers are also possible for citizens born before 1900 or citizens with double citizenship) 
+- One digit that corresponds to gender, 1 for male, 2 for female. Other numbers are also possible for citizens born before 1900 or citizens with double citizenship.
 - Six digits that correspond to birth date (YYMMDD)
 - Three digits that correspond to a serial number
 - One check digit
@@ -8577,7 +8647,66 @@ Pattern must include all of the following:
 
 The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
+- ad
+- ae
+- al
+- at
+- az
+- ba
+- be
+- bg
+- bh
+- ch
+- cr
+- cy
+- cz
+- de
+- dk
+- do
+- ee
+- es
+- fi
+- fo
+- fr
+- gb
+- ge
+- gi
+- gl
+- gr
+- hr
+- hu
+- ie
+- il
+- is
+- it
+- kw
+- kz
+- lb
+- li
+- lt
+- lu
+- lv
+- mc
+- md
+- me
+- mk
+- mr
+- mt
+- mu
+- nl
+- no
+- pl
+- pt
+- ro
+- rs
+- sa
+- se
+- si
+- sk
+- sm
+- tn
+- tr
+- vg
 
 ### Checksum
 
@@ -9202,7 +9331,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
    
 ## Italy driver's license number
 
-This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand-alone sensitive information type entity.
+This type entity is included in the EU Driver's License Number sensitive information type. It is also available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -9390,7 +9519,7 @@ A 16-character combination of letters and digits:
 - three letters that correspond to the first, third, and fourth consonants in the first name
 - two digits that correspond to the last digits of the birth year
 - one letter that corresponds to the letter for the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (so, January is A and October is R)
-- two digits that correspond to the day of the month of birth—in order to differentiate between genders, 40 is added to the day of birth for women
+- two digits that correspond to the day of the month of birth in order to differentiate between genders, 40 is added to the day of birth for women
 - four digits that correspond to the area code specific to the municipality where the person was born (country-wide codes are used for foreign countries)
 - one parity digit
     
@@ -11689,6 +11818,132 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - unique identity number
 - uniqueidentityno#
 
+
+## Medicare Beneficiary Identifier (MBI) card
+
+### Format
+
+11 character alphanumeric pattern
+  
+### Pattern
+
+- one digit between 1 to 9
+- one letter excluding  S, L, O, I, B, Z
+- one digit or letter excluding S, L, O, I, B, Z
+- one digit
+- an optional Hyphen
+- one letter excluding  S, L, O, I, B, Z
+- one digit or letter excluding S, L, O, I, B, Z
+- one digit
+- an optional Hyphen
+- two letters excluding  S, L, O, I, B, Z
+- two digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_mbi_card` finds content that matches the pattern. 
+- A keyword from  `Keyword_mbi_card` is found. 
+    
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_mbi_card` finds content that matches the pattern. 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_mbi_card
+
+- mbi
+- mbi#
+- medicare beneficiary #
+- medicare beneficiary identifier
+- medicare beneficiary no
+- medicare beneficiary number
+- medicare beneficiary#
+
+
+## Mexico Unique Population Registry Code (CURP)
+
+### Format
+
+18 character alphanumeric pattern
+  
+### Pattern
+
+- four letters (case insensitive)
+- six digits indicating a valid date
+- a letter - H/h or M/m
+- two letters indicating a valid Mexican state code
+- three letters
+- one letter or digit
+- one digit
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_mexico_population_registry_code` finds content that matches the pattern. 
+- A keyword from  `Keyword_mexico_population_registry_code` is found. 
+    
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function  `Func_mexico_population_registry_code` finds content that matches the pattern. 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Unique Population Registry Code 
+- unique population code
+- CURP
+- Personal ID
+- Unique ID
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave personal Identidad
+- personal Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## Netherlands citizen's service (BSN) number
 
 ### Format
@@ -11755,11 +12010,11 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### Format
 
-ten digits without spaces and delimiters
+10 digits without spaces and delimiters
   
 ### Pattern
 
-ten digits
+10 digits
   
 ### Checksum
 
@@ -12494,7 +12749,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 ### Pattern
 
 11 digits:
-- six digits in the format DDMMYY which are the date of birth 
+- six digits in the format DDMMYY, which are the date of birth 
 - three-digit individual number 
 - two check digits
 
@@ -12850,7 +13105,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
    
 ## Poland passport number
-This sensitive information type entity is included in the EU Passport Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+This sensitive information type entity is included in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
 ### Format
 
@@ -14204,7 +14459,7 @@ This sensitive information type is only available for use in:
 
 ### Format
 
-nine or ten digits containing optional backslash
+nine or 10 digits containing optional backslash
   
 ### Pattern
 
@@ -14550,7 +14805,7 @@ This sensitive information type is only available for use in:
   
 - seven digits that correspond to the birth date (DDMMLLL) where "LLL" corresponds to the last three digits of the birth year 
 - two digits that correspond to the area of birth "50"
-- three digits that correspond to a combination of gender and serial number for persons born on the same day (000-499 for male and 500-999 for female)
+- three digits that correspond to a combination of gender and serial number for persons born on the same day. 000-499 for male and 500-999 for female.
 - one check digit
     
 ### Checksum
@@ -15439,7 +15694,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 #### CEP_PasswordPlaceHolder
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - Password or pwd followed by 0-2 spaces, an equal sign (=), 0-2 spaces, and an asterisk (*)
 -OR-
@@ -15451,7 +15706,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 #### CEP_CommonExampleKeywords
 
-(Note that technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
@@ -15467,11 +15722,11 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ### Format
 
-ten digits containing a hyphen
+10 digits containing a hyphen
   
 ### Pattern
 
-ten digits containing a hyphen:
+10 digits containing a hyphen:
   
 - six digits 
 - a hyphen
@@ -16551,7 +16806,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - Birth Date 
    
 ## U.K. national insurance number (NINO)
-This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's available as a stand-alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
 ### Format
 

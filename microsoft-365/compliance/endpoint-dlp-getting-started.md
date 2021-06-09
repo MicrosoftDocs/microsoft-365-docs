@@ -23,7 +23,7 @@ description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file
 
 # Get started with Endpoint data loss prevention
 
-Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
 
@@ -97,7 +97,10 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 	- For Windows 10 2004 - KB4568831, KB4577063
 	- For devices running Office 2016 (and not any other Office version) - KB4577063 
 
-4. All devices must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join), or Hybrid Azure AD joined.
+4. All devices must be one of these:
+- [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -142,7 +145,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
     - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
 Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
@@ -204,7 +207,7 @@ Now that you have onboarded devices and can view the activity data in Activity e
 
 - [Learn about Endpoint data loss prevention ](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention ](endpoint-dlp-using.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

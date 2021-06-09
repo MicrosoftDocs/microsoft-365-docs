@@ -1,7 +1,7 @@
 ---
 title: Get discovered vulnerabilities
 description: Retrieves a collection of discovered vulnerabilities related to a given device ID.
-keywords: apis, graph api, supported apis, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, mdatp tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Get discovered vulnerabilities
@@ -104,5 +105,5 @@ Here is an example of the response.
 
 ## See also
 
-- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnerabilities in your organization](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
