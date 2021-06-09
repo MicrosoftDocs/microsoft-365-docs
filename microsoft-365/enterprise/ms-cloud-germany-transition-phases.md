@@ -45,8 +45,7 @@ The migration process will complete over many weeks depending on the overall siz
 |Power BI & Dynamics 365|15+ days|Microsoft|Migrate Power BI and Dynamics 365 content.|
 |Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worldwide.|
 |Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
-|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. |
-
+|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. Customers running Azure workloads in the instance linked to Office 365 services in Microsoft Cloud Deutschland will be moved to the final migration phase later on. |
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 Global services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -134,6 +133,7 @@ Additional considerations:
 - If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
  - Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 - During this phase, the IP addresses behind the SharePoint URLs will change. After the transition to Office 365 Global services, the addresses for the preserved tenant URLs (for example, `contoso.sharepoint.de` and `contoso-my.sharepoint.de`) will be changed to the [Worldwide Microsoft 365 URLs and IP address ranges (SharePoint Online and OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business).
+- While SharePoint and OneDrive services are transitioned, Office Online may not work as expected. 
 
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-scc.md).
@@ -254,7 +254,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Microsoft Engineering or Microsoft FastTrack to transition Microsoft Dynamics 365 to the Office 365 Global services instance.* |<ul><li>After migration, the admin validates the organization. <</li><li>The admin modifies workflows, as necessary. </li><li>The admin clears AdminOnly mode as appropriate.</li><li>The admin changes the organization type from _Sandbox_, as appropriate</li><li>Notify end users of the new URL to access the instance (org).</li><li>Update any inbound connections to the new endpoint URL. </li><li>The Dynamics service will be unavailable to users during the transition. </li><li>Users are required to validate the org health and features after migration of each org.</li></ul>|
+| Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Microsoft Engineering or Microsoft FastTrack to transition Microsoft Dynamics 365 to the Office 365 Global services instance.* |<ul><li>After migration, the admin validates the organization. </li><li>The admin modifies workflows, as necessary. </li><li>The admin clears AdminOnly mode as appropriate.</li><li>The admin changes the organization type from _Sandbox_, as appropriate</li><li>Notify end users of the new URL to access the instance (org).</li><li>Update any inbound connections to the new endpoint URL. </li><li>The Dynamics service will be unavailable to users during the transition. </li><li>Users are required to validate the org health and features after migration of each org.</li></ul>|
 ||||
 
 \*
@@ -315,6 +315,11 @@ Microsoft Azure customers must transition their Azure workloads following the st
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
 | Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
+
+**Applies to:** Customers with Azure AD registered or joined devices
+
+After phase 9 has been completed, Azure AD registered and joined devices must be connected to the transitioned Azure AD instance in the new German datacenter region.
+Devices that are not re-joined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, please refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
 
 ### Azure AD Connect
 **Applies to:** All customers synchronizing identities with Azure AD connect
