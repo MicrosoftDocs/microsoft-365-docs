@@ -29,7 +29,6 @@ MS.technology: mde
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 Learn how to configure your Event Hub so that it can ingest events from Microsoft 365 Defender.
 
 
