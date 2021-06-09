@@ -40,7 +40,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-## Use PowerShell cmdlets to schedule scans when an endpoint is not in use
+## PowerShell cmdlets for scheduling scans when an endpoint is not in use
 
 Use the following cmdlets:
 
@@ -53,7 +53,7 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 > [!NOTE]
 > When you schedule scans for times when endpoints are not in use, scans do not honor the CPU throttling configuration and will take full advantage of the resources available to complete the scan as fast as possible.
 
-## Use PowerShell cmdlets to schedule scans to complete remediation
+## PowerShell cmdlets for scheduling scans to complete remediation
 
 Use the following cmdlets:
 
