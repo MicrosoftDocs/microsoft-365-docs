@@ -33,8 +33,8 @@ MS.technology: mde
 Learn how to configure your Event Hub so that it can ingest events from Microsoft 365 Defender.
 
 
-Setup the required Resource Provider in the Event Hub subscription
---------------------------------------------------------------------
+## Setup the required Resource Provider in the Event Hub subscription
+
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Select **Subscriptions \> {***Select the subscription the event hub will be deployed
@@ -43,8 +43,8 @@ to***} \> Resource providers**.
 
 ![Image of resource providers in Microsoft Azure](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
-Setup Azure Active Directory App Registration
---------------------------
+## Setup Azure Active Directory App Registration
+
 
 >![NOTE]
 >You must have Administrator role or Azure Active Directory (AAD) must be
@@ -71,8 +71,8 @@ Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
 >**You won't be able to access the client secret again so make sure
 to save it**.
 
-Setup Event Hub namespace
--------------------------
+## Setup Event Hub namespace
+
 
 1. Create an Event Hub Namespace:
 
@@ -98,8 +98,8 @@ verify under **Role assignments**:
 
     ![Image of access control](../../media/9c9c29137b90d5858920202d87680d16.png)
 
-Setup Event Hub
----------------
+## Setup Event Hub
+
 
 **Option 1:**
 
@@ -139,11 +139,11 @@ check **Send** and **Listen**.
 
 ![Image of shared access policies](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
-Configure Microsoft 365 Defender to send email tables
-================================
+## Configure Microsoft 365 Defender to send email tables
 
-Setup Microsoft 365 Defender send Email tables to Splunk via Event Hub:
------------------------------------------------------------------------
+
+### Setup Microsoft 365 Defender send Email tables to Splunk via Event Hub
+
 
 1. Login to Microsoft 365 Defender at <https://security.microsoft.com> with an
 account that meets all the following role requirements:
@@ -185,8 +185,8 @@ account that meets all the following role requirements:
 
 1. Make sure to click **Submit**.
 
-Verify that the events are being exported to the Event Hub
-==========================================================
+### Verify that the events are being exported to the Event Hub
+
 
 You can verify that events are being sent to the Event Hub by running a basic
 Advanced Hunting query. Select **Hunting \> Advanced Hunting \> Query** and
