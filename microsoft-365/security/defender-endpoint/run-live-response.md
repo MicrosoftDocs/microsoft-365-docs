@@ -69,8 +69,10 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 ## HTTP request
 
+```HTTP
 POST
-[https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse](https://api.securitycenter.microsoft.com/API/machines/%7bmachine_id%7d/runliveresponse)
+https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliveresponse
+```
 
 ## Request headers
 
