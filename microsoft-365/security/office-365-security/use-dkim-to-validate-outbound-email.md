@@ -211,7 +211,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 2. Go to [security.microsoft.com](https://security.microsoft.com) and follow the path below.
 
-3. Go to **Email & Collaboration > Policies & rules > Threat policies > Additional policies > DKIM**.
+3. Go to **Email & Collaboration > Policies & rules > Threat policies > DKIM**.
 
 4. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
 

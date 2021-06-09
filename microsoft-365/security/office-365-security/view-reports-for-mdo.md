@@ -31,7 +31,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 security center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://security.microsoft.com/insightdashboard>.
+Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 security center by going to **Reports** \> **Email collaboration** \> **Email collaboration reports**. To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.
 
 ![The Reports dashboard in the Microsoft 365 security center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -123,7 +123,7 @@ To get back to the reports view, click **View report**.
 
 The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.
 
-To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and select **Defender for Office 365 message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
 
 ![Defender for Office 365 message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
@@ -211,7 +211,7 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 
 Client side and network latency are not included.
 
-To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **Mail latency report**. To go directly to the report, open <https://protection.office.com/mailLatencyReport?viewid=P50>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Mail latency report**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
 
 ![Mail latency report widget in the Reports dashboard](../../media/mail-latency-report-widget.png)
 
@@ -264,7 +264,7 @@ The **Threat protection status** report is a single view that brings together in
 
 The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
-To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
+To view the report, open the [Microsoft 365 security center](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **URL protection report**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
 ![URL protection report widget in the Reports dashboard](../../media/url-protection-report-widget.png)
 

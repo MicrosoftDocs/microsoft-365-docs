@@ -51,7 +51,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/userTags>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions in the Microsoft 365 security center before you can do the procedures in this article:
   - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
@@ -71,7 +71,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## Use the Microsoft 365 security center to create user tags
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Settings** \> **Email & collaboration \> User tags**.
 
 2. On the **User tags** page that opens, click **Create tag**.
 
@@ -102,7 +102,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## Use the Microsoft 365 security center to view user tags
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Settings** \> **Email & collaboration \> User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
 
@@ -112,7 +112,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## Use the Microsoft 365 security center to modify user tags
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Settings** \> **Email & collaboration \> User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
 
@@ -125,6 +125,6 @@ To see how user tags are part of the strategy to help protect high-impact user a
 > [!NOTE]
 > You can't remove the built-in **Priority account** tag.
 
-1. In the Microsoft 365 security center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 security center, go to **Settings** \> **Email & collaboration \> User tags**.
 
 2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.

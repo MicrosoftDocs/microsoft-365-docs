@@ -80,7 +80,7 @@ After you've verified that your mailbox meets all applicable prerequisites, impl
 
 ## Use the Microsoft 365 security center to configure the user submissions mailbox
 
-1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **User submissions**.
+1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** \> **User submissions**.
 
 2. In the **User submissions** page that appears, select one of the following options:
 
