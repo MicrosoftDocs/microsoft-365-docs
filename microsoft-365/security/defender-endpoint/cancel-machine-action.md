@@ -30,6 +30,8 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -38,7 +40,7 @@ ms.custom: api
 
 ## API description
 
-Cancel an already launched machine action
+Cancel an already launched machine action that are not yet in final state (completed, cancelled, failed).
 
 ## Limitations
 
@@ -53,31 +55,30 @@ started](apis-intro.md).
 
 | Permission type                | Permission        | Permission display name              |
 |------------------------------------|-----------------------|------------------------------------------|
-| Application                        | Machine.Read.All      | 'Read all machine profiles'              |
-| Application                        | Machine.ReadWrite.All | 'Read and write all machine information' |
-| Delegated (work or school account) | Machine.Read          | 'Read machine information'               |
-| Delegated (work or school account) | Machine.ReadWrite     | 'Read and write machine information'     |
+| Application                        | Machine.CollectForensic <br> Machine.Isolate <bt>Machine.RestrictExecution <br>Machine.Scan <br>Machine.Offboard <br>Machine.StopAndQuarantine <br>Machine.LiveResponse       | Read all machine profiles              |
+| Application                        |  Machine.CollectForensic <br> Machine.Isolate <bt>Machine.RestrictExecution <br>Machine.Scan <br>Machine.Offboard <br>Machine.StopAndQuarantine <br>Machine.LiveResponse  | Read and write all machine information |
+| Delegated (work or school account) | Machine.Read          | Read machine information               |
+| Delegated (work or school account) | Machine.ReadWrite     | Read and write machine information     |
 
 ## HTTP request
 
-*HTTP*
+```
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
+```
 
-POST [https://api.securitycenter.microsoft.com/api/machineactions/{machine
-action
-id}/cancel](https://api.securitycenter.microsoft.com/api/machineactions/%7bmachine%20action%20id%7d/cancel)
 
 ## Request headers
 
 | Name      | Type | Description                 |
 |---------------|----------|---------------------------------|
-| Authorization | String   | Bearer {token}.Required.   |
+| Authorization | String   | Bearer {token}. Required.   |
 | Content-Type  | string   | application/json. Required. |
 
 ## Request body
 
 | Parameter | Type | Description                        |
 |---------------|----------|----------------------------------------|
-| Comment       | String   | Comment to associate with the action. |
+| Comment       | String   | Comment to associate with the cancellation action.  |
 
 ## Response
 
@@ -93,13 +94,13 @@ Here is an example of the request.
 
 ```HTTP
 POST
-[https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel](https://api.securitycenter.microsoft.com/api/machineactions/%7bmachine%20action%20id%7d/cancel)
+https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel
 ```
 
 
 ```JSON
 {
-"Comment": "Machine action was canceled by automation"
+    "Comment": "Machine action was canceled by automation"
 }
 ```
 

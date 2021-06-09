@@ -29,6 +29,8 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 - Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -52,8 +54,8 @@ started](apis-intro.md).
 
 |Permission type                       |      Permission          |  Permission display name | 
 |-----------------|--------|---------------------------|  
-| Application                        | Library.Manage | 'Manage live response library' |
-| Delegated (work or school account) | Library.Manage | 'Manage live response library' |
+| Application                        | Library.Manage | Manage live response library |
+| Delegated (work or school account) | Library.Manage | Manage live response library |
 
 ## HTTP request
 
@@ -65,7 +67,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 | Name         |      Type                     | Description
 |-----------------|--------|---------------------------|
-| Authorization   | String | Bearer {token}.Required. |
+| Authorization   | String | Bearer {token}. Required. |
 
 ## Request body
 Empty
@@ -100,7 +102,7 @@ Content-type: application/json
     "sha256": "6e212a0db618507c44e4ec8ee7499dfef7e5767e5f8d31144df3b96fd1145caf",
     "description": null,
     "creationTime": "2019-10-24T10:54:23.2009016Z",
-    "lastUpdatedTime": "2019-10-24T10:54:23.2009016Z"",
+    "lastUpdatedTime": "2019-10-24T10:54:23.2009016Z",
     "createdBy": "admin",
     "hasParameters": true,
     "parametersDescription": "test"
@@ -124,7 +126,6 @@ Content-type: application/json
     "hasParameters": false
     }
 ]
-
 }
 ```
 

@@ -30,6 +30,8 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -43,7 +45,7 @@ library](live-response.md#put-a-file-in-the-library).
 
 ## Limitations
 
-1.  File max size limitation is 4MB.
+1.  File max size limitation is 20MB.
 
 2.  Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
@@ -56,8 +58,8 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 | Permission type                    | Permission     | Permission display name        |
 |------------------------------------|----------------|--------------------------------|
-| Application                        | Library.Manage | 'Manage live response library' |
-| Delegated (work or school account) | Library.Manage | 'Manage live response library' |
+| Application                        | Library.Manage | Manage live response library |
+| Delegated (work or school account) | Library.Manage | Manage live response library |
 
 ## HTTP request
 
@@ -69,8 +71,8 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 |  Name   |    Type    |       Description                         |
 |-----------------|--------|--------------------------------|
-| Authorization   | String | Bearer {token}.Required.      |
-| Content-Type    | string | multipart/form-data.Required. |
+| Authorization   | String | Bearer\<token>. Required.      |
+| Content-Type    | string | multipart/form-data. Required. |
 
 ## Request body
 
@@ -80,8 +82,10 @@ In the request body, supply a form-data object with the following parameters:
 |-----------------------|--------------|------------------------------------------------------------|
 | File                  | File content | The file to be uploaded to live response library.Required |
 | Description           | String       | Description of the file.                                  |
-| ParametersDescription | String       | Parameters required for the script to run.                 |
-| OverrideIfExists      | Boolean      | Whether to override the file if it already exists          |
+| ParametersDescription | String       | (Optional) Parameters required for the script to run.                 |
+| OverrideIfExists      | Boolean      | (Optional) Whether to override the file if it already exists          |
+
+
 
 ## Response
 
@@ -97,7 +101,7 @@ Request
 
 Here is an example of the request using curl.
 
-```HTTP
+```CURL
 curl -X POST https://api.securitycenter.microsoft.com/api/libraryfiles -H
 "Authorization: Bearer \$token" -F "file=\@mdatp1.png" -F
 "ParametersDescription=test"  

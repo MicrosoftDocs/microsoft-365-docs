@@ -1,6 +1,6 @@
 ---
 title: Get live response results
-description: Learn how to retrieve live response commands by its index.
+description: Learn how to retrieve a specific live response command result by its index.
 keywords: apis, graph api, supported apis, upload to library
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -30,6 +30,8 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -38,7 +40,7 @@ ms.custom: api
 
 ## API description
 
-Retrieves specific live response command by its index
+Retrieves a specific live response command result by its index.
 
 ## Limitations
 
@@ -53,8 +55,8 @@ started](apis-intro.md).
 
 | Permission type                    | Permission           | Permission display name                   |
 |------------------------------------|----------------------|-------------------------------------------|
-| Application                        | Machine.LiveResponse | 'Run live response on a specific machine' |
-| Delegated (work or school account) | Machine.LiveResponse | 'Run live response on a specific machine' |
+| Application                        | Machine.LiveResponse | Run live response on a specific machine |
+| Delegated (work or school account) | Machine.LiveResponse | Run live response on a specific machine |
 
 ## HTTP request
 
@@ -67,7 +69,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 | Name      | Type | Description               |
 |---------------|----------|-------------------------------|
-| Authorization | String   | Bearer {token}.Required. |
+| Authorization | String   | Bearer {token}. Required. |
 
 ## Request body
 
@@ -78,7 +80,7 @@ Empty
 If successful, this method returns 200, Ok response code with object that holds
 the link to the command result in the *value* property. This link is valid for
 30 minutes and should be used immediately for downloading the package to a local
-storage. An expired link can be re-created by another redirect, and there is no
+storage. An expired link can be re-created by another call, and there is no
 need to run live response again.
 
 *Runscript transcript properties:*

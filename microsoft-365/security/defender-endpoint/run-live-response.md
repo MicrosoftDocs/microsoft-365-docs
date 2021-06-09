@@ -30,6 +30,9 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -43,12 +46,11 @@ Runs a sequence of live response commands on a device
 ## Limitations
 
 1.  Rate limitations for this API are 10 calls per minute (additional requests
-    are responded with HTTP 429)
+    are responded with HTTP 429).
 
-2.  25 concurrently running sessions (additional requests are queued)
+2.  25 concurrently running sessions (requests exceeding the throttling limit will receive a "429 - Too many requests" response).
 
-3.  If the machine is not available, the session will be queued for up to 7
-    days.
+3.  If the machine is not available, the session will be queued for up to 3 days.
 
 4.  RunScript command timeouts after 10 minutes.
 
@@ -60,11 +62,10 @@ Runs a sequence of live response commands on a device
 One of the following permissions is required to call this API. To learn more,
 including how to choose permissions, see [Get started](apis-intro.md).
 
-| PERMISSIONS                        |                      |                                           |
-|------------------------------------|----------------------|-------------------------------------------|
 | Permission type                    | Permission           | Permission display name                   |
-| Application                        | Machine.LiveResponse | 'Run live response on a specific machine' |
-| Delegated (work or school account) | Machine.LiveResponse | 'Run live response on a specific machine' |
+|------------------------------------|----------------------|-------------------------------------------|
+| Application                        | Machine.LiveResponse | Run live response on a specific machine |
+| Delegated (work or school account) | Machine.LiveResponse | Run live response on a specific machine |
 
 ## HTTP request
 
@@ -75,7 +76,7 @@ POST
 
 | Name      | Type | Description                 |
 |---------------|----------|---------------------------------|
-| Authorization | String   | Bearer {token}.Required.   |
+| Authorization | String   | Bearer\<token>\. Required.   |
 | Content-Type  | string   | application/json. Required. |
 
 ## Request body
@@ -89,16 +90,13 @@ Commands:
 
 | Command Type | Parameters                                                                          | Description                                                                                                                      |
 |------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| PutFile      | Key: FileName                                                                         | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default. |
-|                  | Value: \<file name\>                                                                    |                                                                                                                                      |
-| RunScript    | Key: ScriptName Value: \<Script from library\> Key: Args                            | Runs a script from the library on a device.                                                                                          |
-|                  | Value: \<Script arguments\>                                                             |                                                                                                                                      |
-|                  |                                                                                         | The Args parameter is passed to your script. Timeouts after 10 minutes.                                                              |
-| GetFile      | Key: Path Value: \<File path\>                                                        | Collect file from a device. Backslashes in path must be escaped                                                                      |
+| PutFile      | Key: FileName  <br><br>  Value: \<file name\>                                                                          | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.
+| RunScript    | Key: ScriptName Value: \<Script from library\> <br><br> Key: Args  <br> Value: \<Script arguments\>                          | Runs a script from the library on a device.    <br><br>  The Args parameter is passed to your script. <br><br Timeouts after 10 minutes.     
+| GetFile      | Key: Path <br><br> Value: \<File path\>                                                        | Collect file from a device. NOTE: Backslashes in path must be escaped.                                                                      |
 
 ## Response
 
--   If successful, this method returns 200, Created response code with a Machine
+-   If successful, this method returns 200, Ok.
     Action entity. If machine action entity with the specified ID was not found - 404 Not Found.
 
 ## Example

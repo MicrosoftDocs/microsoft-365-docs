@@ -30,6 +30,8 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -49,12 +51,12 @@ library](live-response-library-methods.md).
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see[Get started](apis-intro.md).
+including how to choose permissions, see [Get started](apis-intro.md).
 
 | Permission type                    | Permission     | Permission display name        |
 |------------------------------------|----------------|--------------------------------|
-| Application                        | Library.Manage | 'Manage live response library' |
-| Delegated (work or school account) | Library.Manage | 'Manage live response library' |
+| Application                        | Library.Manage | Manage live response library |
+| Delegated (work or school account) | Library.Manage | Manage live response library |
 
 ## HTTP request
 
@@ -64,7 +66,7 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
 | Name            | Type   | Description               |
 |-----------------|--------|---------------------------|
-| Authorization   | String | Bearer {token}.Required. |
+| Authorization   | String | Bearer\<token>\. Required. |
 
 ## Request body
 
