@@ -17,10 +17,10 @@ ms.topic: conceptual
 ---
  
 # Threat Protection
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 > [!TIP]
-> Enable your users to access cloud services and on-premises applications with ease and enable modern management capabilities for all devices. For more information, see [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
+> Enable your users to access cloud services and on-premises applications with ease and enable modern management capabilities for all devices. For more information, see [Secure your remote workforce](/enterprise-mobility-security/remote-work/). 
 
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
@@ -62,24 +62,24 @@ This built-in capability uses a game-changing risk-based approach to the discove
 The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
 - [Hardware based isolation](overview-hardware-based-isolation.md)
-- [Application control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [Device control](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [Application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Device control](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Exploit protection](exploit-protection.md)
 - [Network protection](network-protection.md), [web protection](web-protection-overview.md)
 - [Controlled folder access](controlled-folders.md)
-- [Network firewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Network firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Attack surface reduction rules](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[Next-generation protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Next-generation protection](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 To further reinforce the security perimeter of your network, Microsoft Defender for Endpoint uses next-generation protection designed to catch all types of emerging threats.
 
-- [Behavior monitoring](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [Cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [Automated sandbox service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Behavior monitoring](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [Cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [Machine learning](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL Protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [Automated sandbox service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -88,7 +88,7 @@ Endpoint detection and response capabilities are put in place to detect, investi
 
 - [Alerts](alerts-queue.md)
 - [Historical endpoint data](investigate-machines.md#timeline)
-- [Response orchestration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [Response orchestration](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [Forensic collection](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Threat intelligence](threat-indicator-concepts.md)
 - [Advanced detonation and analysis service](respond-file-alerts.md#deep-analysis)
@@ -134,5 +134,5 @@ Integrate Microsoft Defender for Endpoint into your existing workflows.
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  With Microsoft 365 Defender, Microsoft Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.

@@ -242,6 +242,8 @@
 
 ### [Network devices](network-devices.md)
 
+### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
+
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Manage gradual rollout process for Microsoft Defender updates](updates.md)
+#####  [Configure gradual rollout process for Microsoft Defender updates](configure-updates.md)
 ##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -288,6 +292,9 @@
 ##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
+##### [Specify whether users can locally modify Microsoft Defender Antivirus policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Specify whether users can see or interact with Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Deploy and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -348,6 +355,7 @@
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Control Printer Protection](printer-protection.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -480,10 +488,10 @@
 ####### [Get alert related user information](get-alert-related-user-info.md)
 
 ###### [Assessments of vulnerabilities and secure configurations]()
-####### [Export assessment methods and properties](get-assessmnt-1methods-properties.md)
-####### [Export secure configuration assessment](get-assessmnt-secure-cfg.md)
-####### [Export software inventory assessment](get-assessmnt-software-inventory.md)
-####### [Export software vulnerabilities assessment](get-assessmnt-software-vulnerabilities.md)
+####### [Export assessment methods and properties](get-assessment-methods-properties.md)
+####### [Export secure configuration assessment](get-assessment-secure-config.md)
+####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)

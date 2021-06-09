@@ -30,14 +30,14 @@ The following information lists the updates made to the Microsoft Defender for E
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
 > ```http
-> https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
+> /api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
 
 ### 05.25.2021
 
-- Added new API [Export assessment methods and properties per device](get-assessmnt-1methods-properties.md).
+- Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).
 
 ### 03.05.2021
 
