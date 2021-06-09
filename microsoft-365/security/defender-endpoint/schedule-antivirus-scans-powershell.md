@@ -53,10 +53,6 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 > [!NOTE]
 > When you schedule scans for times when endpoints are not in use, scans do not honor the CPU throttling configuration and will take full advantage of the resources available to complete the scan as fast as possible.
 
-## Configure when full scans should be run to complete remediation
-
-Some threats might require a full scan to complete their removal and remediation. You can specify when these scans should occur with Group Policy, PowerShell, or WMI.
-
 ## Use PowerShell cmdlets to schedule scans to complete remediation
 
 Use the following cmdlets:
