@@ -69,7 +69,7 @@ ms.technology: mde
 | creationDateTimeUtc | DateTimeOffset | The date and time when the action was created.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | The last date and time when the action status was updated.                                                                                                                                                     |
 | relatedFileInfo     | Class          | Contains two Properties. string ```fileIdentifier```, Enum ```fileIdentifierType``` with the possible values: "Sha1", "Sha256" and "Md5".                                                                         |
-| commands     | Live response command collection | Array of Command objects. See [Live response library methods and properties](live-response-library-methods.md).  |
+
 
 
 ## Json representation
