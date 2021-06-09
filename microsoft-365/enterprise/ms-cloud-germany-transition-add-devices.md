@@ -32,13 +32,13 @@ Administrators should check `https://portal.microsoftazure.de` to determine if t
 
 **What is the impact on my users?**
 
-Users from a registered device will no longer be able to sign in after [migration phase 10](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed and the endpoints for Microsoft Cloud Deutschland have been disabled.  
+Users from a registered device will no longer be able to sign in after [migration phase 10](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) has been completed and the endpoints for Microsoft Cloud Deutschland have been disabled.  
 
 Ensure that all of your devices are registered with the worldwide endpoint before your organization is disconnected from Microsoft Cloud Deutschland.
   
 **When do my users re-register their devices?**
 
-It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
+It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
 
 **How do I restore my device state after migration?**
 
