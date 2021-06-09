@@ -33,7 +33,7 @@ MS.technology: mde
 Learn how to configure your Event Hub so that you can ingest events from Microsoft 365 Defender.
 
 
-Setup the required Resource Provider in the Event Hub’s subscription
+Setup the required Resource Provider in the Event Hub subscription
 --------------------------------------------------------------------
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
@@ -68,7 +68,7 @@ Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
     ![Image of certificates and secrets](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
 
 >[!WARNING]
->**You won’t be able to access the client secret again so make sure
+>**You won't be able to access the client secret again so make sure
 to save it**.
 
 Setup Event Hub namespace
@@ -148,14 +148,14 @@ Setup Microsoft 365 Defender send Email tables to Splunk via Event Hub:
 1. Login to Microsoft 365 Defender at <https://security.microsoft.com> with an
 account that meets all the following role requirements:
 
--   Contributor role at the Event Hub *Namespace* Resource level or higher for
+    - Contributor role at the Event Hub *Namespace* Resource level or higher for
     the Event Hub that you will be exporting to. Without this you will get an
     export error when you try to save the settings.
 
--   Global Admin or Security Admin Role on the tenant tied to Microsoft 365
+    - Global Admin or Security Admin Role on the tenant tied to Microsoft 365
     Defender and Azure.
 
-![Image of security portal](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
+    ![Image of security portal](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
 
 1. Click on **Raw Data Export \> +Add**.
 
@@ -194,16 +194,16 @@ enter the following query:
 
 ```
 EmailEvents
-| join kind=fullouter EmailAttachmentInfo on NetworkMessageId
-| join kind=fullouter EmailUrlInfo on NetworkMessageId
-| join kind=fullouter EmailPostDeliveryEvents on NetworkMessageId
-| where Timestamp \> ago(1h)
-| count
+|joinkind=fullouterEmailAttachmentInfoonNetworkMessageId
+|joinkind=fullouterEmailUrlInfoonNetworkMessageId
+|joinkind=fullouterEmailPostDeliveryEventsonNetworkMessageId
+|whereTimestamp\>ago(1h)
+|count
 ```
 
 This will show you how many emails were received in the last hour joined across
 all the other tables. It will also show you if you are seeing events that could
-be exported to the event hub. If this count shows 0 then you won’t see any data
+be exported to the event hub. If this count shows 0 then you won't see any data
 going out to the Event Hub.
 
 ![Image of advanced hunting](../../media/c305e57dc6f72fa9eb035943f244738e.png)
@@ -214,7 +214,7 @@ verify that messages are incoming. This can take up to one hour.
 1. In Azure, go to **Event Hubs \> Click on the Namespace \> Event Hubs \> Click on
 the Event Hub**.  
 1. Under **Overview**, scroll down and in the Messages graph you should see
-Incoming Messages. If you don’t see any results, then there will be no messages
+Incoming Messages. If you don't see any results, then there will be no messages
 for your custom app to ingest.
 
     ![Image of the overview tab with messages](../../media/e88060e315d76e74269a3fc866df047f.png)
