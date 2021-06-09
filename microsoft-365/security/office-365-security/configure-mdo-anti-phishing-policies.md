@@ -57,7 +57,7 @@ To increase the effectiveness of anti-phishing protection in Defender for Office
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com/>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
+- You open the security center at <https://security.microsoft.com>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

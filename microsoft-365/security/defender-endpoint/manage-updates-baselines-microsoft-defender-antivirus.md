@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -105,6 +105,7 @@ No known issues
 ### What's new
 - Additional behavior monitoring logic
 - Improved kernel mode keylogger detection
+- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](updates.md)
 
 ### Known Issues
 No known issues  
@@ -435,7 +436,7 @@ Support phase: **No support**
 - add MRT logs to support files
    
 ### Known Issues
-When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
+When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 
