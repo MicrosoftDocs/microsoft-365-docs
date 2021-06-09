@@ -31,7 +31,7 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!NOTE]
-> This functionality requires Microsoft Defender Antivirus version 4.18.2105.X or newer.
+> This functionality requires Microsoft Defender Antivirus version 4.18.2105.4 or newer.
 
 To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Endpoint Manager, and PowerShell.
 
@@ -48,7 +48,7 @@ update channels:
 ## Group Policy
 
 > [!NOTE]
-> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10.
+> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10. A non-localized version is available for download at https://github.com/microsoft/defender-updatecontrols.
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
