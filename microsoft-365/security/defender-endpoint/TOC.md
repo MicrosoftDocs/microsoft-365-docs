@@ -275,6 +275,8 @@
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
 ##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
