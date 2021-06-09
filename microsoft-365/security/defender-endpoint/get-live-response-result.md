@@ -111,15 +111,27 @@ HTTP/1.1 200 Ok
 
 Content-type: application/json
 
-![Image of odata context](images/get-live-response-odata.png)
+```JSON
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Edm.String",
+    "value": "https://core.windows.net/investigation-actions-data/ID/CustomPlaybookCommandOutput/4ed5e7807ad1fe59b00b664fe06a0f07?se=2021-02-04T16%3A13%3A50Z&sp=r&sv=2019-07-07&sr=b&sig=1dYGe9rPvUlXBPvYSmr6/OLXPY98m8qWqfIQCBbyZTY%3D"
+}
+```
 
 *File content:* 
 
-![Image of file content](images/file-content.png)
+```JSON
+{
+    "script_name": "minidump.ps1",
+    "exit_code": 0,
+    "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
+C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
+    "script_error":""
+}
+```
 
 ## Related topics
 
 - [Get machine action API](get-machineaction-object.md)
 - [Cancel machine action](cancel-machine-action.md)
 - [Run live response](run-live-response.md) 
-- [Upload to library](upload-library.md)

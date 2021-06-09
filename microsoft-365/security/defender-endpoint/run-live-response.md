@@ -99,7 +99,7 @@ Commands:
 ## Response
 
 -   If successful, this method returns 200, Ok.
-    Action entity. If machine action entity with the specified ID was not found - 404 Not Found.
+    Action entity. If machine with the specified ID was not found - 404 Not Found.
 
 ## Example
 
@@ -115,7 +115,36 @@ https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e4
 ```
 **JSON**
 
-![Image of JSON request response](images/run-live-response-json.png)
+```JSON
+{
+   "Commands":[
+      {
+         "type":"RunScript",
+         "params":[
+            {
+               "key":"ScriptName",
+               "value":"minidump.ps1"
+            },
+            {
+               "key":"Args",
+               "value":"OfficeClickToRun"
+            }
+
+         ]
+      },
+      {
+         "type":"GetFile",
+         "params":[
+            {
+               "key":"Path",
+               "value":"C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip"
+            }
+         ]
+      }
+   ],
+   "Comment":"Testing Live Response API"
+}
+```
 
 **Response**
 
@@ -127,7 +156,57 @@ HTTP/1.1 200 Ok
 
 Content-type: application/json
 
-![Image of JSON response](images/json-response.png)
+```JSON
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#MachineActions/$entity",
+    "id": "{machine_action_id}",
+    "type": "LiveResponse",
+    "requestor": "analyst@microsoft.com",
+    "requestorComment": "Testing Live Response API",
+    "status": "Pending",
+    "machineId": "{machine_id}",
+    "computerDnsName": "hostname",
+    "creationDateTimeUtc": "2021-02-04T15:36:52.7788848Z",
+    "lastUpdateDateTimeUtc": "2021-02-04T15:36:52.7788848Z",
+    "errorHResult": 0,
+    "commands": [
+        {
+            "index": 0,
+            "startTime": null,
+            "endTime": null,
+            "commandStatus": "Created",
+            "errors": [],
+            "command": {
+                "type": "RunScript",
+                "params": [
+                    {
+                        "key": "ScriptName",
+                        "value": "minidump.ps1"
+                    },{
+                        "key": "Args",
+                        "value": "OfficeClickToRun"
+                    }
+                ]
+            }
+        }, {
+            "index": 1,
+            "startTime": null,
+            "endTime": null,
+            "commandStatus": "Created",
+            "errors": [],
+            "command": {
+                "type": "GetFile",
+                "params": [{
+                        "key": "Path", "value": "C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip"
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+
+```
 
 ## Related topics
 - [Get machine action API](get-machineaction-object.md)
