@@ -49,7 +49,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 3. Fill in an appropriate **Name** and **Description**.
 
-4. Choose **Ignore delimiters and punctuations for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimitere, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
 
@@ -72,7 +72,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 13. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
 
-13. Choose **Create pattern** if you want to creaet additional patterns for your EDM sensitive info type.
+13. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
 
 14. Choose **Next** and fill in a **Name** and **Description for admins**.
 
@@ -93,7 +93,7 @@ After verifying that your sensitive information table has correctly been uploade
 2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
 3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
 4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
-5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference. 
+5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference. 
 
 ### Troubleshooting
 
