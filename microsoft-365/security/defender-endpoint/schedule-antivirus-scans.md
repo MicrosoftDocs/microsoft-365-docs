@@ -26,7 +26,11 @@ ms.topic: how-to
 
 In addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when an endpoint is not being used. You can also set up special scans to complete remediation actions if needed.
 
-This article describes scan types. 
+This article describes scan types. To schedule scans, see the following resources:
+
+- [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+- [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
+- [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
 
 ## Keep the following points in mind
 
