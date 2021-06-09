@@ -35,20 +35,20 @@ The table below lists the changes in navigation between the Office 365 Security 
 
 ****
 
-|[Office 365 Security & Compliance](protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com/#/)|
+|[Office 365 Security & Compliance](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |---|---|---|---|
-|Alerts|<ul><li>[Alert Policies](security.microsoft.com/alertpolicies)</li><li>[Incidents & alerts](security.microsoft.com/alerts)</li></ul>|[Alerts page](https://compliance.microsoft.com/homepage)||
+|Alerts|<ul><li>[Alert Policies](https://security.microsoft.com/alertpolicies)</li><li>[Incidents & alerts](https://security.microsoft.com/alerts)</li></ul>|[Alerts page](https://compliance.microsoft.com/homepage)||
 |Classification||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Data loss prevention||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Records management||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Information governance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Threat management|[Email & Collaboration](security.microsoft.com/homepage)|||
-|Permissions|[Permissions & roles](security.microsoft.com/emailandcollabpermissions)|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Threat management|[Email & Collaboration](https://security.microsoft.com/homepage)|||
+|Permissions|[Permissions & roles](https://security.microsoft.com/emailandcollabpermissions)|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Mail flow|||See [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |Data privacy||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Search|[Audit](security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Search (content search)||
-|Reports|[Report](security.microsoft.com/emailandcollabreport)|||
-|Service assurance|security.microsoft.com/securitysettings/portalRedirection|||
+|Search|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Search (content search)||
+|Reports|[Report](https://security.microsoft.com/emailandcollabreport)|||
+|Service assurance|[See here](https://security.microsoft.com/securitysettings/portalRedirection)|||
 |Supervision||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |eDiscovery||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 
