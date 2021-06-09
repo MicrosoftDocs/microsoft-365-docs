@@ -42,11 +42,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 See the following resources for more information:
 
 - [Microsoft 365 Reports in the admin center - Microsoft 365 groups](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365 Reports in the admin center - Email activity](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365 Reports in the admin center - Email apps usage](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365 Reports in the admin center - Mailbox usage](../../admin/activity-reports/mailbox-usage.md)
 
 ## Security & compliance reports in the Microsoft 365 admin center

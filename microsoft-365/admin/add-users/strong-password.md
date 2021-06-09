@@ -28,7 +28,7 @@ This article explains how to turn off strong password requirements for your user
 
 ## Before you begin
 
-This article is for people who manage password policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+This article is for people who manage password policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](/microsoft-365/business-video/admin-center-overview) You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 You must also connect to Microsoft 365 with PowerShell.
 

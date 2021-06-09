@@ -41,7 +41,7 @@ In the [Planning](deployment-strategy.md) topic, there were several methods prov
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
 
 
 This topic guides users in:
@@ -71,10 +71,10 @@ Here are the links you'll need for the rest of the process:
 
 -   [Security Center](https://securitycenter.windows.com/)
 
--   [Intune Security baselines](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Endpoint Manager, check out these resources:
-- [Microsoft Endpoint Manager page](https://docs.microsoft.com/mem/)
+- [Microsoft Endpoint Manager page](/mem/)
 - [Blog post on convergence of Intune and ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduction video on MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -86,7 +86,7 @@ In this section, we will create a test group to assign your configurations on.
 >Intune uses Azure Active Directory (Azure AD) groups to manage devices and
 users. As an Intune admin, you can set up groups to suit your organizational
 needs.<br>
-> For more information, see [Add groups to organize users and devices](https://docs.microsoft.com/mem/intune/fundamentals/groups-add).
+> For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
 ### Create a group
 
@@ -153,7 +153,7 @@ different types of endpoint security policies:
     > ![Image of Microsoft Endpoint Manager portal6](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > In this instance, this has been auto populated as Defender for Endpoint has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
+    > In this instance, this has been auto populated as Defender for Endpoint has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
     > 
     > The following image is an example of what you'll see when Microsoft Defender for Endpoint is NOT integrated with Intune:
     >
@@ -330,7 +330,7 @@ different types of endpoint security policies:
 
 Once the Configuration policy has been assigned, it will take some time to apply.
 
-For information on timing, see [Intune configuration information](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
+For information on timing, see [Intune configuration information](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 To confirm that the configuration policy has been applied to your test device, follow the following process for each configuration policy.
 
