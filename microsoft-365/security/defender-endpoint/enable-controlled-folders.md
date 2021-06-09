@@ -4,6 +4,7 @@ keywords: Controlled folder access, windows 10, windows defender, ransomware, pr
 description: Learn how to protect your important files by enabling Controlled folder access
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -31,7 +32,7 @@ ms.technology: mde
 You can enable controlled folder access by using any of these methods:
 
 * [Windows Security app](#windows-security-app)
-* [Microsoft Endpoint Manager](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
