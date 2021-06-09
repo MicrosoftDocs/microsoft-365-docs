@@ -63,6 +63,6 @@ Additional examples of first incident responses:
 - [Phishing email](first-incident-path-phishing.md)
 - [Identity-base attack](first-incident-path-identity.md)
 
-[Detailed incident response playbooks](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+[Detailed incident response playbooks](/security/compass/incident-response-playbooks)
 
 
