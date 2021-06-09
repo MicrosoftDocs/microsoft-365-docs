@@ -35,24 +35,24 @@ The table below lists the changes in navigation between the Office 365 Security 
 
 ****
 
-|Office 365 Security & Compliance|Microsoft 365 Defender|Microsoft 365 compliance center|Exchange admin center|
+|[Office 365 Security & Compliance](protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |---|---|---|---|
-|Alerts|<ul><li>Email & collaboration (Alert policies)</li><li>Incidents & alerts (Alerts page)</li></ul>|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage) (Alerts page)||
+|Alerts|<ul><li>[Alert Policies](security.microsoft.com/alertpolicies)</li><li>[Incidents & alerts](security.microsoft.com/alerts)</li></ul>|[Alerts page](https://compliance.microsoft.com/homepage)||
 |Classification||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Data loss prevention||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Records management||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Information governance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Threat management|Email & collaboration|||
-|Permissions|Permissions & roles|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
+|Threat management|[Email & Collaboration](security.microsoft.com/homepage)|||
+|Permissions|[Permissions & roles](security.microsoft.com/emailandcollabpermissions)|See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Mail flow|||See [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |Data privacy||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
-|Search|Search (audit search)|Search (content search)||
-|Reports|Report|||
-|Service assurance|Settings|||
+|Search|[Audit](security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Search (content search)||
+|Reports|[Report](security.microsoft.com/emailandcollabreport)|||
+|Service assurance|security.microsoft.com/securitysettings/portalRedirection|||
 |Supervision||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |eDiscovery||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 
-[Microsoft 365 Defender](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+[Microsoft 365 Defender](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
 If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in Microsoft 365 Defender.
 
@@ -174,9 +174,9 @@ The last step in **Getting Started** is protecting users with **Zero-Hour auto p
 
 Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** \> **Advanced Hunting**.
 
-1. On the Advanced Hunting page, click Query.
+1. On the Advanced Hunting page, click **Query**.
 1. Copy the query below into the query window.
-1. Select Run query.
+1. Select **Run query**.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -198,7 +198,7 @@ The data from this query will appear in the results panel below the query itself
 
 ## Related information
 
-- [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
+- [Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender](microsoft-365-security-mdo-redirection.md)
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
