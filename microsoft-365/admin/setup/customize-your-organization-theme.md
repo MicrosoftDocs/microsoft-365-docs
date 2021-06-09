@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: "Learn to change the default theme of Microsoft 365 and customize it to match your company logo or color. "
+description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
 # Customize the Microsoft 365 theme for your organization
@@ -34,7 +34,7 @@ You can add or update a default theme that applies to everyone within your org. 
 
 1. In the admin center, go to the **Settings** \> **Org Settings** page, and then choose the **Organization profile** tab.
 
-2. On the **Organization profile** tab, select **Organization theme**.
+2. On the **Organization profile** tab, select **Custom themes**.
 
 All themes can be customized using the following tabs.
 
@@ -77,20 +77,13 @@ You can create up to four additional group themes.
 
 On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
 
-- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS and that the image is at least 200 x 30 pixels. Your default logo can be in the JPG, PNG, GIF, or SVG format.
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. If you are uploading a logo, make sure it is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
-- **Small default logo**: Add a URL location that points to your logo. The image must be at least 48 x 48 pixels. You can scale this image so it fits on smaller or mobile devices.
-- **Small alternate logo**: Add a URL location that points to your logo. This image has the same requirements as the small default logo.
 - **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website.
 
 Select **Save** to save your changes.
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
-
-> [!NOTE]
-> By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
   
 ## Colors: Choose theme colors
 
@@ -147,10 +140,9 @@ The recommended contrast ratio between text, icon or button color and background
 
 ### If I define a theme, which places in Microsoft 365 will this be used?
 
-Any theme will be appear in the top navigation bar for everyone in the organization as part of the Microsoft 365 suite header.  
+Any theme appears in the top navigation bar for everyone in the organization as part of the Microsoft 365 suite header.  
   
-## Related articles
+## Related content
 
-[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md)
-
-[Overview of Microsoft 365 Groups for administrators](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)\
+[Overview of Microsoft 365 Groups for administrators](../create-groups/office-365-groups.md) (article)

@@ -82,7 +82,7 @@ The following table lists the third-party data connectors available in the Micro
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> Data connector provided by TeleMessage. Before you can archive data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.<br/><br/><sup>2</sup> Data connector provided by Veritas. Before you can archive data in Microsoft 365, you have to work with Veritas to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.
+> <sup>1</sup> Data connector provided by TeleMessage. Before you can archive data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type. TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the [Data connectors in the US Government cloud](#data-connectors-in-the-us-government-cloud) section in this article. <br/><br/><sup>2</sup> Data connector provided by Veritas. Before you can archive data in Microsoft 365, you have to work with Veritas to set up their archiving service for your organization. For more information, see the prerequisite section in the step-by-step instructions for this data type.
 
 The third-party data listed in the previous table (except for HR data and physical badging data) is imported into user mailboxes. The corresponding compliance solutions that support third-party data are applied to the user mailbox where the data is stored.
 
@@ -121,6 +121,22 @@ You can use [Communication compliance](communication-compliance.md) to examine t
 ### Insider risk management
 
 Signals from third-party data, like selective HR data, can be used by the [Insider risk management](insider-risk-management.md) solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization. For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
+
+## Data connectors in the US Government cloud
+
+As previously mentioned, data connectors provided by TeleMessage are available in the US Government cloud. The following table indicates the specific government environments that support each TeleMessage data connector. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
+
+|TeleMessage data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android Archiver | Yes | No | No |
+|AT&T SMS/MMS Network Archiver | Yes | No | No |
+|Bell SMS/MMS Network Archiver | Yes | No | No |
+|Enterprise Number Archiver | Yes | No | No |
+|O2 SMS and Voice Network Archiver | Yes         | No | No |
+|TELUS SMS Network Archiver | Yes | No | No |
+|Verizon SMS/MMS Network Archiver | Yes | No | No |
+|WhatsApp Archiver | Yes | No | No |
+|||||
 
 ## Working with a Microsoft partner to archive third-party data
 

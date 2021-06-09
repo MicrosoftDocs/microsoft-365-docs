@@ -28,40 +28,46 @@ Once your devices are registered with the service, you can enable ESP for your M
 
 Microsoft Managed Desktop uses these settings in the Autopilot profile used for your users' devices:
 
+<br>
 
-|Setting  |Value  |
-|---------|---------|
-|Deployment mode |  User Driven       |
-|Join to Azure AD as     |  Azure AD joined       |
-|Language (Region)     | User Select        |
-|Automatically configure keyboard     | No        |
-|Microsoft Software License Terms     |  Hide       |
-|Privacy settings     | Hide        |
-|Hide change account options     | Show        |
-|User account type     |  Standard       |
-|Allow White Glove OOBE     |  Yes       |
-|Apply device name template     | Yes        |
-|Enter a name     | MMD-%RAND:11%        |
+****
+
+|Setting|Value|
+|---|---|
+|Deployment mode|User Driven|
+|Join to Azure AD as|Azure AD joined|
+|Language (Region)|User Select|
+|Automatically configure keyboard|No|
+|Microsoft Software License Terms|Hide|
+|Privacy settings|Hide|
+|Hide change account options|Show|
+|User account type|Standard|
+|Allow White Glove OOBE|Yes|
+|Apply device name template|Yes|
+|Enter a name|MMD-%RAND:11%|
+|
 
 ## Enrollment Status Page settings
 
 Microsoft Managed Desktop uses these settings for the Enrollment Status Page experience:
 
+<br>
 
-|Setting  |Value  |
-|---------|---------|
-|Show app and profile configuration progress     | Yes        |
-|Show an error when installation takes longer than specified number of minutes     |  60       |
-|Show custom message when time limit error occurs     |  Yes       |
-|Error message     | Yes, It's taking a little longer to set up your device than expected. Click below to get started and we'll finish setting up in the background        |
-|Allow users to collect logs about installation errors     |  Yes       |
-|Only show page to devices provisioned by out-of-box experience (OOBE)     | Yes        |
-|Block device use until all apps and profiles are installed     |  Yes       |
-|Allow users to reset device if installation error occurs     |  Yes       |
-|Allow users to use device if installation error occurs     |  Yes       |
-|Block device use until these required apps are installed if they are assigned to the user/device     |  Modern Workplace - Time Correction       |
+****
 
-
+|Setting|Value|
+|---|---|
+|Show app and profile configuration progress|Yes|
+|Show an error when installation takes longer than specified number of minutes|60|
+|Show custom message when time limit error occurs|Yes|
+|Error message|Yes, It's taking a little longer to set up your device than expected. Click below to get started and we'll finish setting up in the background|
+|Allow users to collect logs about installation errors|Yes|
+|Only show page to devices provisioned by out-of-box experience (OOBE)|Yes|
+|Block device use until all apps and profiles are installed|Yes|
+|Allow users to reset device if installation error occurs|Yes|
+|Allow users to use device if installation error occurs|Yes|
+|Block device use until these required apps are installed if they are assigned to the user/device|Modern Workplace - Time Correction|
+|
 
 The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 
@@ -78,32 +84,35 @@ The experience proceeds as follows:
 ![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/mmd-autopilot-screenshot.png)
 
 ## Autopilot for pre-provisioned deployment
+
 > [!NOTE]
 > Autopilot for pre-provisioned deployment in Microsoft Managed Desktop is currently in public preview.
 
 ## Additional prerequisites for Autopilot for pre-provisioned deployment
+
 - You must have Enrollment Status Page (ESP) enabled. For more information, see [Initial deployment](#initial-deployment).
 - Device must have a wired network connection.
 - If you have devices that were registered using the Microsoft Managed Desktop portal before August 2020, de-register and register them again.
 - Devices must must have a factory image that includes the November 2020 cumulative update [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) or [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) as appropriate installed or must be reimaged with the latest Microsoft Managed Desktop image.
-- Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm).
+- Physical devices must support TPM 2.0 and device attestation. Virtual machines aren't supported. The pre-provisioning process uses Windows Autopilot self-deploying capabilities, so TPM 2.0 is required. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](/mem/autopilot/networking-requirements#tpm).
 
 ## Sequence of events in Autopilot for pre-provisioned deployment
+
 1. IT Admin reimages or resets the device if needed.
 2. IT Admin boots the device, reaches the out-of-box-experience, and presses the Windows key five times.
 3. IT Admin selects Windows Autopilot Provisioning and then selects **Continue**. On the Windows Autopilot configuration screen, information will be displayed about the device.
-5. IT admin selects **Provision** to start the provisioning process.
-6. Device starts ESP and goes through device preparation and setup phases. During the device setup phase, you'll see **App installation x of x** displayed (depending on the exact configuration of the ESP profile).
-7. The account setup step is currently skipped in the Microsoft Managed Desktop configuration, since we disable User ESP.
-8. The device restarts.
+4. IT admin selects **Provision** to start the provisioning process.
+5. Device starts ESP and goes through device preparation and setup phases. During the device setup phase, you'll see **App installation x of x** displayed (depending on the exact configuration of the ESP profile).
+6. The account setup step is currently skipped in the Microsoft Managed Desktop configuration, since we disable User ESP.
+7. The device restarts.
 
 After it restarts, the device will show the green status screen, with a **Reseal** button.
 
 > [!IMPORTANT]
-> Known issues : 
+> Known issues:
+>
 > - ESP does not run again after the Autopilot for pre-provisioned deployment reseal function.
 > - Device are not being renamed by Autopilot for pre-provisioned deployment. The device will only be renamed after going through the ESP user flow.
-
 
 ## Change to Autopilot and Enrollment Status Page settings
 

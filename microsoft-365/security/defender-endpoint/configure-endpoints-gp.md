@@ -57,7 +57,7 @@ Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/publ
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
@@ -94,13 +94,13 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
     - Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
 
-2.  Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
+2.  Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor**, go to **Computer configuration**.
 
 4.  Click **Policies**, then **Administrative templates**.
 
-5.  Click **Windows components** and then **Windows Defender ATP**.
+5.  Click **Windows components** and then **Windows Defender SmartScreen**.
 
 6.  Choose to enable or disable sample sharing from your devices.
 
@@ -116,7 +116,7 @@ After configuring the onboarding script, continue editing the same group policy 
 
 All policies are located under `Computer Configuration\Policies\Administrative Templates`.
 
-**Policy location:** \Windows Components\Windows Defender ATP
+**Policy location:** \Windows Components\Windows Defender SmartScreen*
 
 Policy | Setting 
 :---|:---
@@ -124,7 +124,7 @@ Enable\Disable Sample collection|	Enabled - "Enable sample collection on machine
 
 <br/>
 
-**Policy location:**  \Windows Components\Windows Defender Antivirus
+**Policy location:**  \Windows Components\Microsoft Defender Antivirus
 
 Policy | Setting 
 :---|:---
@@ -132,7 +132,7 @@ Configure detection for potentially unwanted applications | Enabled, Block
 
 <br/>
 
-**Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
+**Policy location:** \Windows Components\Microsoft Defender Antivirus\MAPS
 
 Policy | Setting 
 :---|:---
@@ -141,7 +141,7 @@ Send file samples when further analysis is required | Enabled, Send safe samples
 
 <br/>
 
-**Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
+**Policy location:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection
 
 Policy | Setting 
 :---|:---
@@ -152,7 +152,7 @@ Monitor file and program activity on your computer|Enabled
 
 <br/>
 
-**Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
+**Policy location:**  \Windows Components\Microsoft Defender AntivirusScan
 
 These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
 
@@ -163,7 +163,7 @@ Check for the latest virus and spyware security intelligence before running a sc
 
 <br/>
 
-**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+**Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 
@@ -205,7 +205,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+3. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
 

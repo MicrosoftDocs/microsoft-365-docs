@@ -15,7 +15,7 @@ ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
 
-# Microsoft cloud for enterprise architects illustrations
+# Microsoft cloud for IT architects illustrations
 
 These cloud architecture posters give you information about Microsoft cloud services, including Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. 
 
@@ -23,7 +23,7 @@ IT decision makers and architects can use these resources to determine the ideal
 
 
 <a name="identity"></a>
-### Microsoft cloud identity for enterprise architects
+### Microsoft cloud identity for IT architects
 
 What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.
   
@@ -32,7 +32,7 @@ What IT architects need to know about designing identity for organizations using
 |[![Thumb image for Microsoft cloud identity model](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [View as a PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx) <br/>Updated September 2020 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Azure AD IDaaS capabilities </li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Azure AD </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
-### Microsoft cloud security for enterprise architects
+### Microsoft cloud security for IT architects
 
 What IT architects need to know about security in Microsoft cloud services and platforms.
   
@@ -41,7 +41,7 @@ What IT architects need to know about security in Microsoft cloud services and p
 |[![Microsoft cloud security for enterprise architects model thumbnail](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Updated April 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
    
 <a name="networking"></a>
-### Microsoft cloud networking for enterprise architects
+### Microsoft cloud networking for IT architects
 
 What IT architects need to know about networking for Microsoft cloud services and platforms.
   
@@ -50,7 +50,7 @@ What IT architects need to know about networking for Microsoft cloud services an
 |[![Thumb image for Microsoft cloud networking model](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx) <br/>Updated August 2020 | This model contains: <ul><li> Evolving your network for cloud connectivity </li><li> Common elements of Microsoft cloud connectivity </li><li> ExpressRoute for Microsoft cloud connectivity </li><li> Designing networking for Microsoft SaaS, Azure PaaS, and Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
-### Microsoft hybrid cloud for enterprise architects
+### Microsoft hybrid cloud for IT architects
 
 What IT architects need to know about hybrid cloud for Microsoft services and platforms.
   

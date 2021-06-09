@@ -1,10 +1,10 @@
 ---
-title: "Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 
 audience: admin
 ms.topic: article
 ms.service: 
@@ -18,10 +18,14 @@ description: "Learn how to configure SharePoint as a learning content source for
 
 ---
 
-# Coming soon: Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
+# Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
 
 > [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+> This feature is not yet available in product preview. 
+
+
+
+<!---
 
 You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning (Preview).
 
@@ -134,3 +138,4 @@ Knowledge admins can access their organization’s Learning App Content Reposito
 
 3. Select **Check access** to connect to your organization’s centralized library.
 	 
+--->

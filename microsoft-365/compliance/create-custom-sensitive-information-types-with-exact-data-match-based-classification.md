@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -371,7 +371,7 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 > If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must*** download the schema for this procedure.
 
 > [!NOTE]
-> If your organization has set up [Customer Key for Microsoft 365 at the tenant level (public preview)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
+> If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
 #### Prerequisites
 
@@ -604,10 +604,7 @@ These locations are support EDM sensitive information types:
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
-
-EDM sensitive information types for following scenarios are currently in development, but not yet available:
-
-- Auto-classification of sensitivity labels and retention labels
+- Server-side auto-labeling policies - available for commercial cloud customers <!--, UNCOMMENT THIS ON 6/15 and government cloud customers-->
 
 #### To create a DLP policy with EDM
 

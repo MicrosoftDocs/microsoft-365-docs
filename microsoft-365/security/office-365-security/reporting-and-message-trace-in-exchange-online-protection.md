@@ -42,11 +42,8 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 See the following resources for more information:
 
 - [Microsoft 365 Reports in the admin center - Microsoft 365 groups](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365 Reports in the admin center - Email activity](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365 Reports in the admin center - Email apps usage](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365 Reports in the admin center - Mailbox usage](../../admin/activity-reports/mailbox-usage.md)
 
 ## Security & compliance reports in the Microsoft 365 admin center
@@ -73,7 +70,7 @@ See [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
 ## Audit logging
 
-Tracks specific changes made by admins to your organization. These reports can help you troubleshoot configuration issues or find the cause of security or compliance-related problems. See [Auditing reports in EOP](auditing-reports-in-eop.md).
+Tracks specific changes made by admins to your organization. These reports can help you troubleshoot configuration issues or find the cause of security or compliance-related problems. See [Auditing reports in Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## Reporting and message trace data availability and latency
 

@@ -43,7 +43,7 @@ To read the release announcement, see the blog post [Announcing co-authoring on 
 
 Before you enable the setting to support co-authoring for Office desktop apps, it's important to understand that this action makes changes to the labeling metadata that is saved to and read from Office files.
 
-The labeling metadata includes information that identifies your tenant and applied sensitivity label. The change that this setting makes is the metadata format and location for unencrypted files for Word, Excel, and PowerPoint. There are no labeling metadata changes for encrypted files or emails.
+The labeling metadata includes information that identifies your tenant and applied sensitivity label. The change that this setting makes is the metadata format and location for Word, Excel, and PowerPoint files. You do not need to take any action for encrypted files or emails; the metadata change for encrypted files is backward-compatible and there are no changes for emails. However, you do need to be aware of the metadata changes for encrypted files that can be automatically upgraded but aren't backward-compatible.
 
 This change affects both files that are newly labeled and files that are already labeled. When you use apps and services that support the co-authoring setting:
 - For files that are newly labeled, only the new format and location is used for the labeling metadata.

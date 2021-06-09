@@ -35,6 +35,9 @@ Defender for Endpoint on iOS collects information from your configured iOS devic
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
+
+For more information on most common privacy questions about Microsoft Defender for Endpoint on Android and iOS mobile devices, see [Microsoft Defender for Endpoint and your privacy on Android and iOS mobile devices](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
+
 ## Required data 
 
 Required data consists of data that is necessary to make Defender for Endpoint on iOS work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. 
@@ -43,7 +46,7 @@ Here is a list of the types of data being collected:
 
 ### Web page or Network information 
 
-- Domain name of the website only when a malicious connection or web page is detected. 
+- Domain name and IP address of the website only when a malicious connection or web page is detected. 
 
 ### Device and account information 
 
