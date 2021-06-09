@@ -108,7 +108,7 @@ The following table describes the Content Search and Core eDiscovery activities 
 |Started export report  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |A user exported a content search report.  <br/> |
 |Stopped content search  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |A user stopped a content search.  <br/> |
 |(none)|CaseViewed|Get-ComplianceCase|A user viewed a Core eDiscovery case in the compliance center. The audit record for this event includes the name of the case that was viewed. |
-|(none)|SearchViewed|Get-ComplianceSearch|A user viewed a Content search in the compliance center by accessing the search on the **Searches** tab on the **Content search** page. This activity is also logged when a user views a search associated with a Core eDiscovery case. The audit record for this event includes the identity of the search that was viewed.|
+|(none)|SearchViewed|Get-ComplianceSearch|A user viewed a Content search in the compliance center by accessing the search on the **Searches** tab in a Core eDiscovery case or a search on the **Content search** page. The audit record for this event includes the identity of the search that was viewed.|
 |(none)|ViewedSearchExported|Get-ComplianceSearchAction -Export|A user viewed a Content search export in the compliance center by accessing the export on the **Exports** tab on the **Content search** page. This activity is also logged when a user views an export associated with a Core eDiscovery case.|
 |(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previewed the results of a Content search in the compliance center. This activity is also logged when a user previews the results of a search associated with a Core eDiscovery case.|
 |||||
