@@ -245,7 +245,7 @@
             href: dlp-teams-default-policy.md
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Compliance Extension (preview)
+          - name: Learn about the Microsoft Compliance Extension
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Endpoint DLP
             href: endpoint-dlp-configure-proxy.md
-          - name: Get started with the Microsoft Compliance Extension (preview)
+          - name: Get started with the Microsoft Compliance Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Webpages
               href: archive-webpagecapture-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon Network
               href: archive-verizon-network-data.md
+            - name: WeChat (preview)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
