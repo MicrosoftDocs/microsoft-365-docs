@@ -92,7 +92,7 @@ landingContent:
           - text: What is Microsoft Defender for Endpoint?
             url: ../defender-endpoint/microsoft-defender-endpoint.md
           - text: Defender for Endpoint in Microsoft 365 Defender
-            url: microsoft-365-security-center.md
+            url: microsoft-365-security-center-mde.md
           - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
             url: ../defender/microsoft-365-security-mde-redirection.md
 
