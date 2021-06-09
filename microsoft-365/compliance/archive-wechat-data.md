@@ -71,3 +71,7 @@ Follow the steps in this section to create a WeChat Archiver connector in the Mi
 7. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
 8. Go to the **Connectors** tab on **Data connectors** page to see the progress of the import process for the new connector.
+
+## Known issues
+
+- At this time, we don't support importing attachments or items that are larger than 10 MB. Support for larger items will be available at a later date.

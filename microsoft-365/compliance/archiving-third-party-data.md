@@ -135,6 +135,7 @@ As previously mentioned, data connectors provided by TeleMessage are available i
 |O2 SMS and Voice Network Archiver | Yes         | No | No |
 |TELUS SMS Network Archiver | Yes | No | No |
 |Verizon SMS/MMS Network Archiver | Yes | No | No |
+|WeChat Archiver | Yes | No | No |
 |WhatsApp Archiver | Yes | No | No |
 |||||
 
