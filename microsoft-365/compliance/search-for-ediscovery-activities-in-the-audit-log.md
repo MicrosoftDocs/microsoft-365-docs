@@ -43,7 +43,7 @@ Currently, you have to do a few specific things to view eDiscovery activities in
   
 1. Go to <https://compliance.microsoft.com> and sign in using your work or school account.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Audit**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Audit**.
 
 3. In the **Activities** drop-down list, under **eDiscovery activities** or **Advanced eDiscovery activities**, click one or more activities to search for.
 
@@ -66,10 +66,10 @@ Currently, you have to do a few specific things to view eDiscovery activities in
 
 ## eDiscovery activities
 
-The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the compliance center or running the corresponding cmdlet in Security & Compliance Center PowerShell. Note also that some activities performed in Advanced eDiscovery may be returned when you search for activities in this list.
+The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the Microsoft 365 compliance center. Some activities performed in Advanced eDiscovery may be returned when you search for activities in this list.
   
 > [!NOTE]
-> The eDiscovery activities described in this section provide similar information to the eDiscovery cmdlet activities described in the next section. We recommend that you use the eDiscovery activities described in this section because they will appear in the audit log search results within 30 minutes. It takes up to 24 hours for the eDiscovery cmdlet activities to appear in audit log search results.
+> The eDiscovery activities described in this section provide similar information to the eDiscovery cmdlet activities described in the next section. We recommend that you use the eDiscovery activities described in this section because they will appear in the audit log search results within 30 minutes. It may take up to 24 hours for eDiscovery cmdlet activities to appear in audit log search results.
   
 |**Friendly name**|**Operation**|**Corresponding cmdlet**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -81,7 +81,7 @@ The following table describes the Content Search and Core eDiscovery activities 
 |Changed search permissions filter  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |A search permissions filter was changed.  <br/> |
 |Changed search query for eDiscovery case hold  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |A query-based hold associated with an eDiscovery case was changed. Possible changes include editing the query or date range for a query-based hold.  <br/> |
 |Content search preview item downloaded  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |A user downloaded an item to their local computer (by clicking the **Download original item** link) when previewing search results.  <br/> |
-|Content search preview item listed  <br/> |PreviewItemListed  <br/> |N/A  <br/> |A user clicked **Preview search results** to display the preview search results page, which lists up to 1000 items from the results of a Content Search.  <br/> |
+|Content search preview item listed  <br/> |PreviewItemListed  <br/> |N/A  <br/> |A user clicked **Preview search results** to display the preview search results page, which lists up to 1,000 items from the results of a search.  <br/> |
 |Content search preview item viewed  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |An eDiscovery manager viewed an item by clicking it when previewing search results.  <br/> |
 |Created content search  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |A new content search was created.  <br/> |
 |Created eDiscovery administrator  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |A user was added as an eDiscovery Administrator in the organization.  <br/> |
@@ -95,7 +95,7 @@ The following table describes the Content Search and Core eDiscovery activities 
 |Deleted search query for eDiscovery case hold  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |A query-based hold associated with an eDiscovery case was deleted. Removing the query from the hold is often the result of deleting a hold. When a hold or a hold query is deleted, the content locations that were on hold are released.  <br/> |
 |Downloaded export of content search  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |A user downloaded the results of a content search to their local computer. A **Started export of content search** activity has to be initiated before search results can be downloaded.  <br/> |
 |Previewed results of content search  <br/> |SearchPreviewed  <br/> |N/A  <br/> |A user previewed the results of a content search.  <br/> |
-|Purged results of content search  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |A user purged the results of a Content Search by running the **New-ComplianceSearchAction -Purge** command.  <br/> |
+|Purged results of content search  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |A user purged the results of a Content search by running the **New-ComplianceSearchAction -Purge** command.  <br/> |
 |Removed analysis of content search  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |A content search prepare action (to prepare search results for Advanced eDiscovery) was deleted. If the preparation action was less than two weeks old, the search results that were prepared for Advanced eDiscovery were deleted from the Microsoft Azure storage area. If the preparation action was older than 2 weeks, then this event indicates that only the corresponding preparation action was deleted.  <br/> |
 |Removed export of content search  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |A content search export action was deleted. If the export action was less than two weeks old, the search results that were uploaded to the Microsoft Azure storage area were deleted. If the export action was older than 2 weeks, then this event indicates that only the corresponding export action was deleted.  <br/> |
 |Removed member from eDiscovery case  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |A user was removed as a member of an eDiscovery case.  <br/> |
@@ -103,14 +103,14 @@ The following table describes the Content Search and Core eDiscovery activities 
 |Removed purge action performed on content search  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |A content search purge action was deleted.  <br/> |
 |Removed search report  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |A content search export report action was deleted.  <br/> |
 |Started analysis of content search  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |The results of a content search were prepared for analysis in Advanced eDiscovery.  <br/> |
-|Started content search  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |A content search was started. When you create or change a content search by using the Microsoft 365 compliance center GUI, the search is automatically started. If you create or change a search by using the **New-ComplianceSearch** or **Set-ComplianceSearch** cmdlet, you have to run the **Start-ComplianceSearch** cmdlet to start the search.  <br/> |
+|Started content search  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |A content search was started. When you create or change a content search by using the Microsoft 365 compliance center, the search is automatically started.<br/> |
 |Started export of content search  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |A user exported the results of a content search.  <br/> |
 |Started export report  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |A user exported a content search report.  <br/> |
 |Stopped content search  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |A user stopped a content search.  <br/> |
-|(none)|CaseViewed|Get-ComplianceCase|A user viewed the list of cases on the **Core eDiscovery** page or the **Advanced eDiscovery** page in the compliance center or by running the Get-ComplianceCase cmdlet.|
-|(none)|SearchViewed|Get-ComplianceSearch|A user viewed the list on content searches (listed on the **Searches** tab) in the compliance center or by running the cmdlet. This activity is also logged when a user views the list of content searches associated with an eDiscovery case (by clicking the **Searches** tab in a case) or by running the **Get-ComplianceSearch -Case** command.|
-|(none)|ViewedSearchExported|Get-ComplianceSearchAction -Export|A user viewed the list of content search export jobs (listed on the **Exports** tab) in the compliance center or by running the cmdlet. This activity is also logged when a user views the list of export jobs in an eDiscovery case (listed on the **Exports** tab in a case) or by running the **Get-ComplianceSearchAction -Case -Export** command.|
-|(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previews the results of a content search in the compliance center or by running the cmdlet.|
+|(none)|CaseViewed|Get-ComplianceCase|A user viewed a Core eDiscovery case in the compliance center. The audit record for this event includes the name of the case that was viewed. |
+|(none)|SearchViewed|Get-ComplianceSearch|A user viewed a Content search in the compliance center by accessing the search on the **Searches** tab on the **Content search** page. This activity is also logged when a user views a search associated with a Core eDiscovery case. The audit record for this event includes the identity of the search that was viewed.|
+|(none)|ViewedSearchExported|Get-ComplianceSearchAction -Export|A user viewed a Content search export in the compliance center by accessing the export on the **Exports** tab on the **Content search** page. This activity is also logged when a user views an export associated with a Core eDiscovery case.|
+|(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previewed the results of a Content search in the compliance center. This activity is also logged when a user previews the results of a search associated with a Core eDiscovery case.|
 |||||
   
 ## Advanced eDiscovery activities
@@ -148,7 +148,7 @@ The following table describes the Advanced eDiscovery activities logged in the a
 
 The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance Center PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
-As previously stated, it takes up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
+As previously stated, it may take up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   
 > [!TIP]
 > The cmdlets in the **Operation** column in the following table are linked to the corresponding cmdlet help topic on TechNet. Go to the cmdlet help topic for a description of the available parameters for each cmdlet. The parameter and the parameter value that were used with a cmdlet are included in the audit log entry for each eDiscovery cmdlet activity that's logged. 
@@ -180,6 +180,10 @@ As previously stated, it takes up to 24 hours for eDiscovery cmdlet activities t
 |Created eDiscovery administrator  <br/> |[Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |A user was added as an eDiscovery Administrator in your organization.  <br/> |
 |Deleted eDiscovery administrator  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |An eDiscovery Administrator was deleted from your organization.  <br/> |
 |Changed eDiscovery administrator membership  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |The list of eDiscovery Administrators in your organization was changed. This activity is logged when the list of eDiscovery Administrators is replaced with a group of new users. If a single user is added or removed, the **Add-eDiscoveryCaseAdmin** or **Remove-eDiscoveryCaseAdmin** operation is logged.  <br/> |
+|(none)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|This activity is logged when a user viewed a list of Core eDiscovery cases. This activity is also logged when a user views a specific case. When a user views a specific case, the audit record includes the identity of the case that was viewed. If the user only viewed a list of cases, the audit record doesn't contain a case identity.|
+|(none)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|This activity is logged when a user viewed a list of Content searches or searches associated with a Core eDiscovery case. This activity is also logged when a user views a specific Content search or views a specific search associated with a Core eDiscovery case. When a user views a specific search, the audit record includes the identity of the search that was viewed. If the user only viewed a list of searches, the audit record doesn't contain a search identity.
+|(none)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|This activity is logged when a user viewed a list of compliance search actions (such as exports, previews, or purges) or actions associated with a Core eDiscovery case. This activity is also logged when a user views a specific compliance search action (such as an export) or views a specific action associated with a Core eDiscovery case. When a user views a search action, the audit record includes the identity of the search action that was viewed. If the user only viewed a list of actions, the audit record doesn't contain an action identity.|
+||||
 
 ## Detailed properties for eDiscovery activities
 
@@ -202,7 +206,7 @@ The following table describes the properties that are included when you click **
 |ExtendedProperties  <br/> |Additional properties from a content search, a content search action, or hold in an eDiscovery case, such as the object GUID and the corresponding cmdlet and cmdlet parameters that were used when the activity was performed.  <br/> |
 |Id  <br/> |The ID of the report entry. The ID uniquely identifies the audit log entry.  <br/> |
 |NonPIIParameters  <br/> |A list of the parameters (without any values) that were used with the cmdlet identified in the Operation property. The parameters listed in this property are the same as those listed in the Parameters property.  <br/> |
-|ObjectId  <br/> |The GUID or name of the object (for example, a Content Search or an eDiscovery case) that was created, changed, or deleted by the activity listed in the Operation property. This object is also identified in the Item column in the audit log search results.  <br/> |
+|ObjectId  <br/> |The GUID or name of the object (for example, a Content search or a Core eDiscovery case) that was created, accessed, changed, or deleted by the activity listed in the Operation property. This object is also identified in the Item column in the audit log search results.  <br/> |
 |ObjectType  <br/> |The type of eDiscovery object that the user created, deleted, or modified; for example, a content search action (preview, export, or purge), an eDiscovery case, or a content search.  <br/> |
 |Operation  <br/> |The name of the operation that corresponds to the eDiscovery activity that was performed.  <br/> |
 |OrganizationId  <br/> |The GUID for your Microsoft 365 organization.  <br/> |
@@ -219,4 +223,4 @@ The following table describes the properties that are included when you click **
 |UserServicePlan  <br/> |The  subscription used by your organization. For eDiscovery activities, this property is typically blank.  <br/> |
 |UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   A regular user. 2   An administrator in your organization. 3   A Microsoft datacenter administrator or datacenter system account. 4   A system account. 5   An application. 6   A service principal. |
 |Version  <br/> |Indicates the version number of the activity (identified by the Operation property) that's logged.  <br/> |
-|Workload  <br/> |Theservice where the activity occurred. For eDiscovery activities, the value is **SecurityComplianceCenter**.  <br/> |
+|Workload  <br/> |The service where the activity occurred. For eDiscovery activities, the value is **SecurityComplianceCenter**.  <br/> |
