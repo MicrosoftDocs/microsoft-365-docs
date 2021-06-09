@@ -101,7 +101,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -115,7 +115,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### Use the security center to assign preset security policies to users
 
-1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Preset Security Policies**.
+1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Templated policies** section \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
