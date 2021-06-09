@@ -34,9 +34,9 @@ If your organization has Microsoft Defender for Office 365 Plan 2, which include
 
 > [!NOTE]
 >
-> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the [Microsoft 365 security center](https://security.microsoft.com). For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
-> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports for up to 90 days from January 24, 2021.
+> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports until April 24, 2021.
 
 ## What do you need to know before you begin?
 
