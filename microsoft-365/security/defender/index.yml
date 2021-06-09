@@ -66,9 +66,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Identity?
-            url: /azure-advanced-threat-protection/what-is-atp
+            url: /defender-for-identity/what-is
           - text: Microsoft Defender for Identity architecture
-            url: /azure-advanced-threat-protection/atp-architecture
+            url: /defender-for-identity/architecture
 
    # Card
   - title: Microsoft Defender for Office 365
@@ -80,7 +80,7 @@ landingContent:
           - text: Defender for Office 365 service description
             url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
           - text: Defender for Office 365 in Microsoft 365 Defender
-            url: ../defender/microsoft-365-security-center-mdo.md
+            url: microsoft-365-security-center-mdo.md
           - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
             url: microsoft-365-security-mdo-redirection.md
             
