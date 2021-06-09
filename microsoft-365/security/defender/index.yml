@@ -78,7 +78,7 @@ landingContent:
           - text: What is Defender for Office 365?
             url: ../office-365-security/defender-for-office-365.md
           - text: Defender for Office 365 service description
-            url: ../office365/servicedescriptions/office-365-advanced-threat-protection-service-description.md
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
           - text: Defender for Office 365 in Microsoft 365 Defender
             url: ../defender/microsoft-365-security-center-mdo.md
           - text: Redirecting Defender for Office 365 in Microsoft 365 Defender
@@ -92,7 +92,7 @@ landingContent:
           - text: What is Microsoft Defender for Endpoint?
             url: ../defender-endpoint/microsoft-defender-endpoint.md
           - text: Defender for Endpoint in Microsoft 365 Defender
-            url: ../defender/microsoft-365-security-center.md
+            url: microsoft-365-security-center.md
           - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
             url: ../defender/microsoft-365-security-mde-redirection.md
 
