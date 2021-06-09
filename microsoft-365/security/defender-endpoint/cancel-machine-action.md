@@ -53,12 +53,11 @@ One of the following permissions is required to call this API. To learn more,
 including how to choose permissions, see [Get
 started](apis-intro.md).
 
-| Permission type                | Permission        | Permission display name              |
-|------------------------------------|-----------------------|------------------------------------------|
-| Application                        | Machine.CollectForensic <br> Machine.Isolate <bt>Machine.RestrictExecution <br>Machine.Scan <br>Machine.Offboard <br>Machine.StopAndQuarantine <br>Machine.LiveResponse       | Read all machine profiles              |
-| Application                        |  Machine.CollectForensic <br> Machine.Isolate <bt>Machine.RestrictExecution <br>Machine.Scan <br>Machine.Offboard <br>Machine.StopAndQuarantine <br>Machine.LiveResponse  | Read and write all machine information |
-| Delegated (work or school account) | Machine.Read          | Read machine information               |
-| Delegated (work or school account) | Machine.ReadWrite     | Read and write machine information     |
+|     Permission    type     |     Permission     |    Permission    display name     |
+|-|-|-|
+|    <br>Application    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    <br>Collect   forensics<br>   <br>Isolate   machine<br>   <br>Restrict   code execution<br>   <br>Scan   machine<br>   <br>Offboard   machine<br>   <br>Stop And   Quarantine<br>   <br>Run live   response on a specific machine    |
+|    <br>Delegated   (work or school account)    |    <br>Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    <br>Collect   forensics<br>   <br>Isolate   machine<br>   <br>Restrict   code execution<br>   <br>Scan   machine<br>   <br>Offboard   machine<br>   <br>Stop And   Quarantine<br>   <br>Run live   response on a specific machine    |
+|  |  |  |
 
 ## HTTP request
 
