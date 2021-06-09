@@ -28,12 +28,17 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing Security & Compliance center (protection.office.com) or new Microsoft 365 Security center (security.microsoft.com) will let you see and use the email entity page..
+Either the existing Security & Compliance center or new Microsoft 365 Defender portal will let you see and use the email entity page.
+
+<br>
+
+****
 
 |Center|URL|Navigation|
 |---|---|---|
-|Security & Compliance |protection.office.com|Threat Management \> Explorer|
-|Microsoft 365 security center |security.microsoft.com|Email & Collaboration \> Explorer|
+|Security & Compliance Center|<https://protection.office.com>|Threat Management \> Explorer|
+|Microsoft 365 Defender portal|<https://security.microsoft.com>|Email & Collaboration \> Explorer|
+|
 
 In Threat Explorer, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -105,7 +110,7 @@ Users will see enriched detonation details for known malicious attachments or hy
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange Transport Rules (ETRs or mail flow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
