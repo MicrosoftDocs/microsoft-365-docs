@@ -133,25 +133,16 @@ This preview version of co-authoring for files encrypted with sensitivity labels
 > [!CAUTION]
 > Turning on this setting is a one-way action. While the feature is in preview, enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
-During the preview, you must use a specific URL to access this setting in the Microsoft 365 compliance center.
+1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com) as a global admin for your tenant.
 
-1. Sign in to the Microsoft 365 compliance center as a global admin for your test tenant, using the following link:
-    
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    This link takes you directly to the tenant setting, **Co-authoring for files with sensitivity labels**.
+2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 
-    > [!IMPORTANT]
-    > Before you continue, check you're signed in to a test tenant that won't affect your users: 
-    >
-    > Select the circle with your account initials in the top right of the compliance center, and confirm that the tenant name does display your intended test tenant.
-    
-2. Read the summary description, prerequisites, what to expect, and the warning that you can't turn off this setting after you've turned it on. Then select **Turn on co-authoring for files with sensitivity labels**, and **Apply**:
+2. On the **Co-authoring for files with sensitivity labels (preview)** page, read the summary description, prerequisites, what to expect, and the warning that you can't turn off this setting after you've turned it on.        
+    Then select **Turn on co-authoring for files with sensitivity labels**, and **Apply**:
     
     ![Option to turn on co-authoring for files with sensitivity labels](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. Wait 24 hours for this setting to replicate across your environment before you test this new feature for co-authoring.
+3. Wait 24 hours for this setting to replicate across your environment before you use this new feature for co-authoring.
 
 ## Contact Support if you need to disable this feature
 
