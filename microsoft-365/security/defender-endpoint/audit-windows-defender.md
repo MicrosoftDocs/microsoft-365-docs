@@ -41,7 +41,7 @@ You can use Group Policy, PowerShell, and configuration service providers (CSPs)
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
 
- **Audit options** | **How to enable audit mode** | **How to view events**
+| Audit options | How to enable audit mode | How to view events |
 |---------|---------|---------|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | Audit applies to individual rules | [Enable attack surface reduction rules](enable-attack-surface-reduction.md) | [Attack surface reduction rule events](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
