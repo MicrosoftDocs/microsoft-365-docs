@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to manage Core eDiscovery cases. This includes closing a case, reopening a closed case, and deleting a case."
+description: "This is an article describes how to manage Core eDiscovery cases. This includes closing a case, reopening a closed case, and deleting a case."
 ---
 
 # Close, reopen, and delete a Core eDiscovery case
