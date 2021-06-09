@@ -39,7 +39,6 @@ RandomizeScheduleTaskTimes
 
 For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-
 ## Use WMI to schedule scans when an endpoint is not in use
 
 Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
