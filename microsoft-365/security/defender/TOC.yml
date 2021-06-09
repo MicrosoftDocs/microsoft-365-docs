@@ -329,6 +329,8 @@
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
+                    - name: Configure your Event hub
+                      href: configure-event-hub.md
                 - name: Advanced Hunting API
                   href: api-advanced-hunting.md
                 - name: Incidents APIs
