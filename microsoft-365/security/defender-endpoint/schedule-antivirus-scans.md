@@ -24,96 +24,15 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-
 In addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when an endpoint is not being used. You can also set up special scans to complete remediation actions if needed.
 
-This article describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) (which now includes [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) and [Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10)).
+This article describes scan types. 
 
 ## Keep the following points in mind
 
 - By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
 
 - If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
-
-- When you schedule scans for times when endpoints are not in use, scans do not honor the CPU throttling configuration and will take full advantage of the resources available to complete the scan as fast as possible.
-
-## Configure antivirus scans using Group Policy
-
-1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
-
-2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
-
-3. Specify settings for the Group Policy Object, and then select **OK**. 
-
-4. Repeat steps 1-4 for each setting you want to configure.
-
-5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
-
-> [!TIP]
-> See the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
-
-### Scan settings in Group Policy
-
-| Location | Setting | Description | Default setting (if not configured) |
-|:---|:---|:---|:---|
-| Scan | Specify the scan type to use for a scheduled scan | Quick scan |
-| Scan | Specify the day of the week to run a scheduled scan | Specify the day (or never) to run a scan. | Never |
-| Scan | Specify the time of day to run a scheduled scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.). | 2 a.m. |
-| Root | Randomize scheduled task times |In Microsoft Defender Antivirus, randomize the start time of the scan to any interval from 0 to 4 hours. <p>In [SCEP](/mem/intune/protect/certificates-scep-configure), randomize scans to any interval plus or minus 30 minutes. This can be useful in virtual machines or VDI deployments. | Enabled |
-
-### Group Policy settings to schedule scans when an endpoint is not in use
-
-| Location | Setting | Description | Default setting (if not configured) |
-|:---|:---|:---|:---|
-|Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled |
-
-## Use PowerShell cmdlets to schedule scans
-
-To schedule antivirus scans using PowerShell, open the Windows PowerShell app, and then use the following cmdlets:
-
-```PowerShell
-Set-MpPreference -ScanParameters
-Set-MpPreference -ScanScheduleDay
-Set-MpPreference -ScanScheduleTime
-Set-MpPreference -RandomizeScheduleTaskTimes
-
-```
-
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
-
-### Use PowerShell cmdlets to schedule scans when an endpoint is not in use
-
-Use the following cmdlets:
-
-```PowerShell
-Set-MpPreference -ScanOnlyIfIdleEnabled
-```
-
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
-
-
-## Use Windows Management Instruction (WMI) to schedule scans
-
-Use the [Set method of the MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
-
-```WMI
-ScanParameters
-ScanScheduleDay
-ScanScheduleTime
-RandomizeScheduleTaskTimes
-```
-
-For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-### Use WMI to schedule scans when an endpoint is not in use
-
-Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
-
-```WMI
-ScanOnlyIfIdleEnabled
-```
-
-For more information about APIs and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 
 ## Quick scan, full scan, and custom scan
@@ -127,7 +46,7 @@ When you set up scheduled scans, you can specify whether the scan should be a fu
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
-### How do I know which scan type to choose?
+## How do I know which scan type to choose?
 
 Use the following table to choose a scan type.
 
@@ -138,7 +57,7 @@ Use the following table to choose a scan type.
 | You want to run an [on-demand scan](run-scan-microsoft-defender-antivirus.md)     | Quick scan       |
 | You want to make sure a portable device, such as a USB drive, does not contain malware | Custom scan <p>A custom scan enables you to select specific locations, folders, or files, and runs a quick scan. |
 
-### What else do I need to know about quick and full scans?
+## What else do I need to know about quick and full scans?
 
 - Malicious files can be stored in locations that are not included in a quick scan. However, always-on real-time protection reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. The combination of real-time protection and a quick scan helps provide strong protection against malware.
 
@@ -149,81 +68,4 @@ Use the following table to choose a scan type.
 - A full scan can detect malicious files that were not detected by other scans, such as a quick scan. However, a full scan can take a while and use valuable system resources to complete.
 
 - If a device is offline for an extended period of time, a full scan can take longer to complete. 
-
-
-## Configure when full scans should be run to complete remediation
-
-Some threats might require a full scan to complete their removal and remediation. You can specify when these scans should occur with Group Policy, PowerShell, or WMI.
-
-### Use Group Policy to schedule remediation-required scans
-
-| Location | Setting | Description | Default setting (if not configured) |
-|---|---|---|---|
-|Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | Specify the day (or never) to run a scan. | Never |
-|Remediation | Specify the time of day to run a scheduled full scan to complete remediation | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.) | 2 a.m. |
-
-### Use PowerShell cmdlets
-
-Use the following cmdlets:
-
-```PowerShell
-Set-MpPreference -RemediationScheduleDay
-Set-MpPreference -RemediationScheduleTime
-```
-
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
-
-### Use Windows Management Instruction (WMI)
-
-Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
-
-```WMI
-RemediationScheduleDay
-RemediationScheduleTime
-```
-
-For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
-
-
-## Set up daily quick scans
-
-You can enable a daily quick scan that can be run in addition to your other scheduled scans with Group Policy, PowerShell, or WMI.
-
-### Use Group Policy to schedule daily scans
-
-|Location | Setting | Description | Default setting (if not configured) |
-|:---|:---|:---|:---|
-|Scan | Specify the interval to run quick scans per day | Specify how many hours should elapse before the next quick scan. For example, to run every two hours, enter **2**, for once a day, enter **24**. Enter **0** to never run a daily quick scan. | Never |
-|Scan | Specify the time for a daily quick scan | Specify the number of minutes after midnight (for example, enter **60** for 1 a.m.) | 2 a.m. |
-
-### Use PowerShell cmdlets to schedule daily scans
-
-Use the following cmdlets:
-
-```PowerShell
-Set-MpPreference -ScanScheduleQuickScanTime
-```
-
-For more information about how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
-
-### Use Windows Management Instruction (WMI) to schedule daily scans
-
-Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
-
-```WMI
-ScanScheduleQuickScanTime
-```
-
-For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
-
-
-## Enable scans after protection updates
-
-You can force a scan to occur after every [protection update](manage-protection-updates-microsoft-defender-antivirus.md) with Group Policy.
-
-### Use Group Policy to schedule scans after protection updates
-
-|Location | Setting | Description | Default setting (if not configured)|
-|:---|:---|:---|:---|
-|Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled |
 

@@ -57,6 +57,9 @@ This article describes how to configure scheduled scans using Group Policy. To l
 |:---|:---|:---|:---|
 |Scan | Start the scheduled scan only when computer is on but not in use | Scheduled scans will not run, unless the computer is on but not in use | Enabled |
 
+> [!NOTE]
+> When you schedule scans for times when endpoints are not in use, scans do not honor the CPU throttling configuration and will take full advantage of the resources available to complete the scan as fast as possible.
+
 ## Use Group Policy to schedule remediation-required scans
 
 | Location | Setting | Description | Default setting (if not configured) |
