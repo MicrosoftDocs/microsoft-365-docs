@@ -35,6 +35,10 @@ The following information lists the updates made to the Microsoft Defender for E
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
 
+### 06.10.2021
+
+- Added new Export assessment API method  - _Delta Export software vulnerabilities assessment (OData)_ [Export assessment methods and properties per device](get-assessment-methods-properties.md).
+
 ### 05.25.2021
 
 - Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).
