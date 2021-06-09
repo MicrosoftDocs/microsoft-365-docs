@@ -513,8 +513,9 @@
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](ti-indicator.md)
-####### [Submit Indicator](post-ti-indicator.md)
 ####### [List Indicators](get-ti-indicators-collection.md)
+####### [Submit Indicator](post-ti-indicator.md)
+####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
 
 ###### [IP]()
