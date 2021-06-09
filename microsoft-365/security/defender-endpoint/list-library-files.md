@@ -72,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 ## Request body
 Empty
 
-## Response
+## Response 
 If successful, this method returns 200 - OK response code with a collection
     of live response library file entities.
 
@@ -86,7 +86,7 @@ Here is an example of a request that gets all live response library files
 GET https://api.securitycenter.microsoft.com/api/libraryfiles
 ```
 
-## Response
+## Response example
 
 Here is an example of the response.
 
