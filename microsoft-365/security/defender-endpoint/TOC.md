@@ -515,11 +515,6 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
-###### [Live response library]()
-####### [Live response library methods and properties](live-response-library-methods.md)
-####### [List library files](list-library-files.md)
-####### [Upload to live response library](upload-library.md)
-####### [Delete from library](delete-library.md)
 
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
