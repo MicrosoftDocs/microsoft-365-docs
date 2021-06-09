@@ -35,7 +35,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **User submissions** page, use <nttps://security.microsoft.com/userSubmissionsReportMessage>
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **User submissions** page, use <https://security.microsoft.com/userSubmissionsReportMessage>
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
   - Organization Management or Security Administrator in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
