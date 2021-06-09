@@ -88,19 +88,19 @@ If the user is an administrator on the Windows 10 device, the user can unregiste
 3.	Enter the local administrator username and password. The device is disconnected.
 4.	Restart the device.
 ### Step 3: Join the device to Azure AD
-1.	the user signs in with the credentials of the local administrator.
+1.	Signs in with the credentials of the local administrator.
 2.	Go to **Settings** then **Accounts** then **Access Work Or School**.
 3.	Tap **Connect**.
 4.	**IMPORTANT**: Tap **Join to Azure AD**.
 5.	Enter the e-mail address and password of your work account. The device is connected.
 6.	Restart the device .
-7.	sign with your e-mail address and password of your work account.
+7.	Sign with the email address and password of your work account.
 
-If the user is not an administrator of the device an Administrator can create the local administrator account on the device following this configuration path:
+If the user is not an administrator of the device a global administrator can create the local administrator account on the device following this configuration path and unjoin the device:
 
 *Settings > Accounts > Other Accounts > Credentials unknown > Add user without Microsoft-Account*
 
-
+For the rejoin the credentials of the user's work account are required.
 
 ## Azure AD Registered (workplace Join)
 Relevant for Windows 10 devices. If a device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again. 
@@ -115,7 +115,7 @@ Relevant for Windows 10 devices. If a device is Azure AD registered, it needs to
 3.	Confirm account removal from the device by clicking Yes.
 ### Step 3: Connect the device to Azure AD
 1.	Tap + Connect 
-2.	Enter the Email address of your work account and click **Next**.
+2.	Enter the email address of your work account and click **Next**.
 3.	Enter the password of your work account and click **Sign in**.
 4.	Confirm by clicking **Done**. Your work account is shown.
 
