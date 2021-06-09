@@ -1,7 +1,7 @@
 ---
 title: "Use Microsoft Search to find topics in Microsoft Viva Topics"
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -16,9 +16,9 @@ description: "Learn how you can search for topics in Microsoft Viva."
 
 While Viva Topics users can find topics through topic highlights in their SharePoint sites, they can also find them through Microsoft Search. 
 
-## Topic Answer
+## Topic answer
 
-When you search for a specific topic in Microsoft Search (for example, "Saturn"), if a topic exists and is found, it will display the result in the Answers suggestion format.
+When you search for a specific topic in Microsoft Search (for example, "Saturn"), if a topic exists and is found, it will display the result in the topic answer suggestion format.
 
 The topic answer will display:
 - Topic name
@@ -50,8 +50,5 @@ For users who are looking for information about booking a trip for work:
 - For users who search generally for "travel", create a topic on "Travel" that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the “Pinned Resources”.
  
 ### Search results priority 
- 
-In the users search experience, when a user searches for a term like “travel”, search results will display in the following priority in Microsoft Search
-1. Published or Confirmed topics 
-2. Bookmarks
-3. Suggested topics
+
+In the user's search experience, when a user searches for a term like “travel”, a bookmark will appear in place of a topic, if a bookmark is available.

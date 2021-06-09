@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # List all remediation activities
@@ -49,7 +50,7 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type | Permission | Permission display name
 :---|:---|:---
 Application | RemediationTask.Read.All | \'Read Threat and Vulnerability Management vulnerability information\'
-Delegated (work or school account) | RemediationTask.Read.Read | \'Read Threat and Vulnerability Management vulnerability information\'
+Delegated (work or school account) | RemediationTask.Read | \'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties
 
@@ -67,7 +68,7 @@ id | String | ID of this remediation activity | 097d9735-5479-4899-b1b7-77398899
 nameId | String | Related product name | Microsoft Silverlight
 priority | String | Priority the creator set for this remediation activity (High\Medium\Low) | High
 productId | String | Related product ID | microsoft-_-silverlight
-productivityImpactRemediationType | String | A few configuration changes could be requested only for devices with no user impact. This value indicate the selection between “all exposed devices” or “only devices with no user impact.” | AllExposedAssets
+productivityImpactRemediationType | String | A few configuration changes could be requested only for devices with no user impact. This value indicates the selection between “all exposed devices” or “only devices with no user impact.” | AllExposedAssets
 rbacGroupNames | String | Related device group names | [ "Windows Servers", "Windows 10" ]
 recommendedProgram | String | Recommended program to upgrade to | null
 recommendedVendor | String | Recommended vendor to upgrade to | null

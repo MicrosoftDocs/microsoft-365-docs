@@ -76,6 +76,6 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Incidents queue](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Incidents queue](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)
