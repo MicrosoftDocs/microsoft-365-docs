@@ -274,7 +274,7 @@
 #### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
-##### 
+##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 

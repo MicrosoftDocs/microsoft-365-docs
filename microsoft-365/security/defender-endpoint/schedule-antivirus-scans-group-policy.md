@@ -25,7 +25,7 @@ ms.topic: how-to
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 
-This article describes how to configure scheduled scans using Group Policy. To learn more about scheduling scans, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
+This article describes how to configure scheduled scans using Group Policy. To learn more about scheduling scans and about scan types, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
 
 ## To configure antivirus scans using Group Policy
 
