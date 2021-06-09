@@ -25,11 +25,15 @@ ms.topic: how-to
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 
-In addition to always-on real-time protection and [on-demand](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
+In addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when an endpoint is not being used. You can also set up special scans to complete remediation actions if needed.
 
-This article describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with Microsoft Endpoint Manager (which now includes [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) and [Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10)).
+This article describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) (which now includes [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) and [Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10)).
 
-## To configure the Group Policy settings described in this article
+> [!NOTE]
+> By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
+
+
+## To configure antivirus scans using Group Policy
 
 1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
 
@@ -41,16 +45,17 @@ This article describes how to configure scheduled scans with Group Policy, Power
 
 5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
-Also see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
+> [!TIP]
+> See the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
-## Quick scan versus full scan and custom scan
+## Quick scan, full scan, and custom scan
 
-When you set up scheduled scans, you can set up whether the scan should be a full or quick scan.
+When you set up scheduled scans, you can specify whether the scan should be a full or quick scan. In most cases, a quick scan is recommended. 
 
 
 |Quick scan  |Full scan  | Custom scan |
 |---------|---------|---------|
-|A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <p>In most cases, a quick scan is sufficient and is recommended for scheduled scans. |A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so). <p>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<p>When the full scan is complete, new security intelligence is available, and a new scan is required to make sure that no other threats are detected with the new security intelligence.   | A custom scan is a quick scan that runs on the files and folders you specify. For example, you can opt to scan a USB drive, or a specific folder on your device's local drive. <p> | 
+|(Recommended) A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <p>Combined with always-on, real-time protection, which reviews files when they are opened and closed, and whenever a user navigates to a folder, a quick scan helps provide strong protection against malware that starts with the system and kernel-level malware. <p>In most cases, a quick scan is sufficient and is the recommended option for scheduled scans. |A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so). <p>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<p>When the full scan is complete, new security intelligence is available, and a new scan is then required to make sure that no other threats are detected with the new security intelligence. <p>Because of the time and resources involved in a full scan, in general, Microsoft does not recommend scheduling full scans.  | A custom scan is a quick scan that runs on the files and folders you specify. For example, you can opt to scan a USB drive, or a specific folder on your device's local drive. <p> | 
 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
