@@ -105,7 +105,6 @@ No known issues
 ### What's new
 - Additional behavior monitoring logic
 - Improved kernel mode keylogger detection
-- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](updates.md)
 
 ### Known Issues
 No known issues  
