@@ -4,6 +4,7 @@ keywords: Controlled folder access, windows 10, windows defender, ransomware, pr
 description: Learn how to protect your important files by enabling Controlled folder access
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
