@@ -49,17 +49,20 @@ When a sender spoofs an email address, they appear to be a user in one of your o
   - The sender is on a mailing list (also known as a discussion list), and the mailing list relays email from the original sender to all the participants on the mailing list.
   - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
-You can use the **spoof intelligence insight** in the Microsoft 365 Defender to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
+
+You can use the **spoof intelligence insight** in the Microsoft 365 Defender portal to quickly identify spoofed senders who are legitimately sending you unauthenticated email (messages from domains that don't pass SPF, DKIM, or DMARC checks), and manually allow those senders.
+
 
 By allowing known senders to send spoofed messages from known locations, you can reduce false positives (good email marked as bad). By monitoring the allowed spoofed senders, you provide an additional layer of security to prevent unsafe messages from arriving in your organization.
 
 Likewise, you can review spoofed senders that were allowed by spoof intelligence and manually block those senders from the spoof intelligence insight.
 
-The rest of this article explains how to use the spoof intelligence insight in the Microsoft 365 Defender and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+The rest of this article explains how to use the spoof intelligence insight in the Microsoft 365 Defender portal and in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+
 
 > [!NOTE]
 >
-> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 >
 > - The spoof intelligence insight and the **Spoof** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
@@ -67,7 +70,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender at <https://security.microsoft.com/>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Spoof intelligence insight** page, use <https://security.microsoft.com/spoofintelligence>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -86,31 +89,30 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 - For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
 
-## Open the spoof intelligence insight in the Security & Compliance Center
+## Open the spoof intelligence insight in the Microsoft 365 Defender portal
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
-2. On the main **Anti-phishing page**, the spoof intelligence insight has two modes:
+2. On the **Anti-phishing** page, the spoof intelligence insight looks like this:
+
+   ![Spoof intelligence insight on the Anti-phishing policy page](../../media/m365-sc-spoof-intelligence-insight.png)
+
+   The insight has two modes:
 
    - **Insight mode**: If spoof intelligence is enabled, the insight shows you how many messages were detected by spoof intelligence during the past seven days.
    - **What if mode**: If spoof intelligence is disabled, then the insight shows you how many messages *would* have been detected by spoof intelligence during the past seven days.
 
-   Either way, the spoofed domains displayed in the insight are separated into two categories: **Suspicious domains** and **Non-suspicious domains**.
-
-   - **Suspicious domains** include:
-
-     - High-confidence spoof: Based on the historical sending patterns and the reputation score of the domains, we're highly confident that the domains are spoofing, and messages from these domains are more likely to be malicious.
-
-     - Moderate confidence spoof: Based on historical sending patterns and the reputation score of the domains, we're moderately confident that the domains are spoofing, and that messages sent from these domains are legitimate. False positives are more likely in this category than high-confidence spoof.
-
-   **Non-suspicious domains**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
+To view information about the spoof intelligence detections, click **View spoofing activity** in the spoof intelligence insight.
 
 ### View information about spoofed messages
 
-On the spoof intelligence insight, click **Suspicious domains** or **Non-suspicious domains** to go to the **Spoof intelligence insight** page. The page contains the following information:
+> [!NOTE]
+> Remember, only spoofed senders that were detected by spoof intelligence appear on this page. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoof** tab in the Tenant Allow/Block List.
 
-- **Spoofed domain**: The domain of the spoofed user that's displayed in the **From** box in email clients. This address is also known as the `5322.From` address.
-- **Infrastructure**: Also known as the _sending infrastructure_. This will be one of the following values:
+On the **Spoof intelligence insight** page that appears after you click **View spoofing activity** in the spoof intelligence insight, the page contains the following information:
+
+- **Spoofed user**: The **domain** of the spoofed user that's displayed in the **From** box in email clients. The From address is also known as the `5322.From` address.
+- **Sending infrastructure**: Also known as the _infrastructure_. The sending infrastructure will be one of the following values:
   - The domain found in a reverse DNS lookup (PTR record) of the source email server's IP address.
   - If the source IP address has no PTR record, then the sending infrastructure is identified as \<source IP\>/24 (for example, 192.168.100.100/24).
 - **Message count**: The number of messages from the combination of the spoofed domain _and_ the sending infrastructure to your organization within the last 7 days.
@@ -118,35 +120,34 @@ On the spoof intelligence insight, click **Suspicious domains** or **Non-suspici
 - **Spoof type**: One of the following values:
   - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **External**: The spoofed sender is in an external domain.
-- **Allowed to spoof**: The value depends on whether you clicked **Suspicious domains** or **Non-suspicious domains** on the insight:
-  - **Suspicious domains**: The **Allowed to spoof** value is always **No**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
-  - **Non-suspicious domains**: The **Allowed to spoof** value is always **Yes**. Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as good by spoof intelligence.
+- **Action**: This value is **Allowed** or **Blocked**:
+  - **Allowed**: The domain failed explicit email authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)). However, the domain passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
+  - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 You can click selected column headings to sort the results.
 
 To filter the results, you have the following options:
 
-- Use the **Filter spoofed domain** box to enter a comma-separated list of spoofed domain values to filter the results.
-- Use the **Filter infrastructure** box to enter a comma-separated list of infrastructure values to filter the results.
-- Click the **Filter** button to filter the results by **Spoof type**.
+- Click the **Filter** button. In the **Filter** flyout that appears, you can filter the results by:
+  - **Spoof type**
+  - **Action**
+- Use the **Search** box to enter a comma-separated list of spoofed domain values or sending infrastructure values to filter the results.
 
 ### View details about spoofed messages
 
-Select an item in the list to view details. A flyout appears with the following information and features:
+When you select an entry from the list, a details flyout appears that contains the following information and features:
 
-- **Allowed to spoof**: Use this toggle to override the spoof intelligence verdict:
-  - If you originally selected **Suspicious domains** in the insight, **Allowed to spoof** is turned off. To turn it on, which moves the entry from the spoof intelligence insight to the Tenant Allow/Block List as an allow entry for spoof, slide the toggle to on: ![Toggle on](../../media/scc-toggle-on.png).
-  - If you originally selected **Non-suspicious domains** in the insight, **Allowed to spoof** is turned on. To turn it off, which moves the entry from the spoof intelligence insight to the Tenant Allow/Block List as a block entry for spoof, slide the toggle to off: ![Toggle off](../../media/scc-toggle-off.png).
-
+- **Allow to spoof** or **Block from spoofing**: Select one of these values to override the original spoof intelligence verdict and move the entry from the spoof intelligence insight to the Tenant Allow/Block List as an allow or block entry for spoof.
 - Why we caught this.
 - What you need to do.
 - A domain summary that includes most of the same information from the main spoof intelligence page.
 - WhoIs data about the sender.
+- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender (Microsoft Defender for Office 365).
 - Similar messages we have seen in your tenant from the same sender.
 
 ### About allowed spoofed senders
 
-An allowed spoofed sender in **Non-suspicious domains** in the spoof intelligence insight or a blocked sender in **Suspicious domains** that you manually changed to **Allowed to spoof** only allows messages from the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
+An allowed spoofed sender in the spoof intelligence insight or a blocked spoofed sender that you manually changed to **Allow to spoof** only allows messages from the combination of the spoofed domain *and* the sending infrastructure. It does not allow email from the spoofed domain from any source, nor does it allow email from the sending infrastructure for any domain.
 
 For example, the following spoofed sender is allowed to spoof:
 

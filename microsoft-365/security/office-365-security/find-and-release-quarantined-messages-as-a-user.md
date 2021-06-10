@@ -34,13 +34,15 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantine in EOP](quarantine-email-messages.md).
 
-As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam or bulk email. As of April 2020, you can view or delete quarantined phishing (not high confidence phishing) messages where you are a recipient. You view and manage your quarantined messages in the Microsoft 365 Defender or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+
+You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
+master
 
-- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 - Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release quarantined spam messages directly from these notifications. Users can review quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -50,7 +52,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
 ## View your quarantined messages
 
-1. In the Microsoft 365 Defender, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 
 2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
@@ -85,21 +87,22 @@ As a user, you can view, release, and delete quarantined messages where you are 
      - **Phish**
 
    - **Policy Type**: Filter messages by policy type:
+     - **Anti-malware policy**
+     - **Safe Attachments policy** (Defender for Office 365)
      - **Anti-phish policy**
      - **Hosted content filter policy** (anti-spam policy)
+     - **Transport rule**
+
+     <sup>\*</sup>
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
 4. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
    - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
-
    - **Sender email address**: A single sender's email address.
-
    - **Policy name**: Use the entire policy name of the message. The search is not case-sensitive.
-
    - **Recipient email address**: A single recipient's email address.
-
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
 
    After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
@@ -119,21 +122,13 @@ After you find a specific quarantined message, select the message to view detail
 When you select an email message in the list, the following message details appear in the **Details** flyout pane:
 
 - **Message ID**: The globally unique identifier for the message.
-
 - **Sender address**
-
 - **Received**: The date/time when the message was received.
-
 - **Subject**
-
 - **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or **Phish**.
-
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
-
 - **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
-
 - **Released to**: All email addresses (if any) to which the message has been released.
-
 - **Not yet released to**: All email addresses (if any) to which the message has not yet been released.
 
 ### Take action on quarantined email
@@ -165,7 +160,6 @@ If you don't release or remove the message, it will be deleted after the default
 When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
 - **Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.
-
 - **Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.
 
 When you're finished, click **Close**.

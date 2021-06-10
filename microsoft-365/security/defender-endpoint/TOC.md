@@ -242,6 +242,8 @@
 
 ### [Network devices](network-devices.md)
 
+### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
+
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
@@ -351,6 +353,7 @@
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Control Printer Protection](printer-protection.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -508,8 +511,9 @@
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](ti-indicator.md)
-####### [Submit Indicator](post-ti-indicator.md)
 ####### [List Indicators](get-ti-indicators-collection.md)
+####### [Submit Indicator](post-ti-indicator.md)
+####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
 
 ###### [IP]()
