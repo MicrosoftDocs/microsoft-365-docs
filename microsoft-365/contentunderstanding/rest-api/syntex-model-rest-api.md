@@ -39,7 +39,7 @@ The following REST commands are available for working with Syntex document under
 - [Get model and library information](rest-getmodelandlibraryinfo.md) – Gets information about a model and the library where it has been applied.
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) – Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
 - [BatchDelete](rest-batchdelete-method.md) – Removes an applied document understanding model from one or more libraries.
-- [Create a classification request](rest-createclassificationrequest.md) – Creates a request to classify a specified file or files using the applied model.
+- [Create classification request](rest-createclassificationrequest.md) – Creates a request to classify a specified file or files using the applied model.
 
 ## Scenarios
 
