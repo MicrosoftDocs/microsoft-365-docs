@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
-description: Admins can learn how to use the Submissions portal in the Security & Compliance Center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
+description: Admins can learn how to use the Submissions portal in the Microsoft 365 security center to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -46,11 +46,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Submission** page, use <https://protection.office.com/reportsubmission>.
+- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Reader** in the [Microsoft 365 security center](permissions-microsoft-365-security-center.md).
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
@@ -60,24 +60,24 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Report suspicious content to Microsoft
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Admin submissions** tab, and then click **New submission**.
+1. In the [Microsoft 365 security center](../defender/overview-security-center.md), go to **Submissions** and verify that you're on the **Submitted for analysis** tab, and then click **Submit to Microsoft for review**.
 
-2. Use **New submission** flyout that appears to submit the message, URL, or attachment as described in the following sections.
+2. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
 
 ### Submit a questionable email to Microsoft
 
-1. In the **Object type** section, select **Email**. In the **Submission format** section, use one of the following options:
+1. In the **Select the submission type** section, select **Email**. In the **Add the network message ID or upload the email file** section, use one of the following options:
 
-   - **Network Message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message, or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
+   - **Add the email network message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
 
-   - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
+   - **Upload the email file**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
    > [!NOTE]
    > The ability to submit messages as old as 30 days has been temporarily suspended for Defender for Office 365 customers. Admins will only be able to go back 7 days.
 
-2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
+2. In the **Choose a recipient who had an issue** section, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-3. In the **Reason for submission** section, select one of the following options:
+3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
 
    - **Should not have been blocked**
 
@@ -89,7 +89,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Send a suspect URL to Microsoft
 
-1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
+1. In the **Select the submission type** section, select **URL**. In the box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
 2. In the **Reason for submission** section, select one of the following options:
 
@@ -101,9 +101,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    ![New Email submission example](../../media/submission-url-flyout.png)
 
-### Submit a suspected file to Microsoft
+### Submit a suspected email attachment to Microsoft
 
-1. In the **Object type** section, select **Attachment**.
+1. In the **Select the submission type** section, select **Email attachment**.
 
 2. Click **Choose File**. In the dialog that opens, find and select the file, and then click **Open**.
 
@@ -111,7 +111,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    - **Should not have been blocked**
 
-   - **Should have been blocked**: **Malware** is the only choice, and is automatically selected..
+   - **Should have been blocked**: **Malware** is the only choice, and is automatically selected.
 
 4. When you're finished, click the **Submit** button.
 
@@ -119,11 +119,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## View items Submitted for analysis
 
-In the Security & Compliance Center, go to **Threat management** \> **Submissions**, verify that you're on the **Submitted for analysis** tab
+In the Microsoft 365 security center, go to **Submissions**, and verify that you're on the **Submitted for analysis** tab
 
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+In the command bar in the middle of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** (a GUID value that's assigned to every submission) by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
 
-To change the filter criteria, click the **Submission ID** button and choose one of the following values:
+To change the filter criteria, click the **Filter** button and choose one of the following values:
 
 - **Sender**
 - **Subject/URL/File name**
@@ -135,13 +135,11 @@ To change the filter criteria, click the **Submission ID** button and choose one
 
 To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
 
-Below the graph, there are three tabs: **Email** (default), **URL**, and **Attachment**.
+Below the graph, there are three tabs: **Email** (default), **URL**, and **Email attachment**.
 
 ### View admin email submissions
 
-Click the **Email** tab.
-
-You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+You can click the **Customize columns** button near the bottom of the page to add or remove columns from the view:
 
 - **Date**
 - **Submission ID**: A GUID value that's assigned to every submission.
@@ -157,7 +155,7 @@ You can click the **Column options** button near the bottom of the page to add o
 
 #### Admin submission rescan details
 
-Messages that are submitted in admin submissions are rescanned and results shown in the details flyout:
+Messages that are submitted in admin submissions are rescanned and results shown in the submissions detail flyout:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policy hits that could have affected or overridden the verdict of a message.
@@ -181,7 +179,7 @@ You can click the **Column options** button near the bottom of the page to add o
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
 
-### View admin attachment submissions
+### View email attachment submissions
 
 Click the **Attachments** tab.
 
