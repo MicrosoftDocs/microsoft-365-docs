@@ -1,5 +1,5 @@
 ---
-title: Create Model
+title: Create a model
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,14 +8,12 @@ audience: admin
 ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: Use REST API to creates a model and its associated content type.
+description: Use REST API to create a model and its associated content type.
 ---
 
-# Create Model
+# Create a model
 
 Creates a model and its associated content type. Note that this only creates the model. It will still need to be trained in the content center (see [example](rest-createmodel-method.md#examples)).
 
