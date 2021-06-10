@@ -1,5 +1,5 @@
 ---
-title: GetModelAndLibraryInfo
+title: Get model and library info
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,9 +13,9 @@ localization_priority: Priority
 description: Use REST API to get information about a model and the library where it has been applied.
 ---
 
-# GetModelAndLibraryInfo
+# Get model and library information
 
-Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo-method.md#examples)).
+Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo.md#examples)).
 
 ## HTTP request
 
