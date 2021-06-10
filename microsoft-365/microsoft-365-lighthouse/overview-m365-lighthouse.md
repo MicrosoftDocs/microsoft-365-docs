@@ -6,7 +6,7 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.prod: m365-lighthouse
+ms.prod: microsoft-365-lighthouse
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
