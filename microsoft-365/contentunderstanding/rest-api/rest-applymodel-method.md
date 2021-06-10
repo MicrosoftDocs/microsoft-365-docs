@@ -1,5 +1,5 @@
 ---
-title: ApplyModel
+title: Apply a model
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to apply a document understanding model to one or more libraries.
 ---
 
-# ApplyModel
+# Apply a model
 
 Applies (or syncs) a trained document understanding model to one or more libraries (see [example](rest-applymodel-method.md#examples)).
 
