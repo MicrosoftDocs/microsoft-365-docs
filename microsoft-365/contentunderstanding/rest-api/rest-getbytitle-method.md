@@ -1,5 +1,5 @@
 ---
-title: GetModelByTitle
+title: GetByTitle
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,20 @@ localization_priority: Priority
 description: Use REST API to get or update information about a SharePoint Syntex document understanding model using the model title.
 ---
 
-# GetModelByTitle
+# GetByTitle
 
-Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](rest-getmodelbytitle-method.md#examples)).
+Gets or updates information about a SharePoint Syntex document understanding model using the model title (see [example](rest-getbytitle-method.md#examples)).
 
 ## HTTP request
 
 ```HTTP
 GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+```
+
+This same method can be used for deleting a model, too.
+
+```HTTP
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
 ```
 
 ## URI parameters
@@ -89,6 +95,16 @@ GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
 	"SourceUrl": null,
 	"UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
+```
+
+### Get and delete the Contoso Contract model by name
+
+In this sample, the name of the Contoso Contract document understanding model is `Contoso Contract`.
+
+##### Sample request
+
+```HTTP
+DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
 ```
 
 ## See also
