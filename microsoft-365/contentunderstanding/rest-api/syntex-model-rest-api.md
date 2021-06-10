@@ -32,10 +32,10 @@ Before you get started, make sure that you're familiar with the following:
 
 The following REST commands are available for working with Syntex document understanding models:
 
-- [Create a model](rest-createmodel-method.md) – Creates a model and its associated content type.
+- [Create model](rest-createmodel-method.md) – Creates a model and its associated content type.
 - [GetByUniqueId](rest-getbyuniqueid-method.md) – Gets or updates information about a SharePoint Syntex document understanding model.
 - [GetByTitle](rest-getbytitle-method.md) – Gets or updates information about a SharePoint Syntex document understanding model using the model title.
-- [Applya model](rest-applymodel-method.md) – Applies (or syncs) a trained document understanding model to one or more libraries.
+- [Apply model](rest-applymodel-method.md) – Applies (or syncs) a trained document understanding model to one or more libraries.
 - [Get model and library information](rest-getmodelandlibraryinfo.md) – Gets information about a model and the library where it has been applied.
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) – Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
 - [BatchDelete](rest-batchdelete-method.md) – Removes an applied document understanding model from one or more libraries.
