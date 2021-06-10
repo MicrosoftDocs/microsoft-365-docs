@@ -1,5 +1,5 @@
 ---
-title: RemoveModel
+title: BatchDelete
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,7 +15,7 @@ description: Use REST API to remove an applied document understanding model from
 
 # RemoveModel
 
-Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](rest-removemodel-method.md#examples)).
+Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](rest-batchdelete-method.md#examples)).
 
 ## HTTP request
 
