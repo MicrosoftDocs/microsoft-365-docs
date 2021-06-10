@@ -87,7 +87,7 @@ EDM-based classification is included in these subscriptions
 
 Setting up and configuring EDM-based classification involves:
 
-1. [Saving sensitive data in .csv or .tsv format](#save-sensitive-data-in-csv-format)
+1. [Saving sensitive data in .csv or .tsv format](#save-sensitive-data-in-csv-or-tsv-format)
 2. [Define your sensitive information database schema](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Create a rule package](#set-up-a-rule-package)
 
