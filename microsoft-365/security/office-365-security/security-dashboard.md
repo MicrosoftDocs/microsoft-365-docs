@@ -28,7 +28,7 @@ ms.prod: m365-security
 
 ## Basic functions and how to open Security Dashboard
 
-The [Microsoft 365 security center](../../compliance/microsoft-365-compliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
+The [Microsoft 365 Defender](../../compliance/microsoft-365-compliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
 
 Watch the video to get an overview, and then read this article to learn more.
 
@@ -36,10 +36,10 @@ Watch the video to get an overview, and then read this article to learn more.
 
 Depending on what your organization's subscription includes, the Security Dashboard includes several widgets, such as Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware, and more, as described in the following sections.
 
-To view the Security Dashboard, in the [Microsoft 365 security center](../../compliance/microsoft-365-compliance-center.md), go to **Endpoints** > **Vulnerability management** > **Dashboard**.
+To view the Security Dashboard, in the [Microsoft 365 Defender](../../compliance/microsoft-365-compliance-center.md), go to **Endpoints** > **Vulnerability management** > **Dashboard**.
 
 > [!NOTE]
-> You must be a global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
+> You must be a global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
 ## Threat Management Summary
 
@@ -47,7 +47,7 @@ The Threat Management Summary widget tells you at a glance how your organization
 
 ![Security Dashboard - Threat Management Summary widget](../../media/SecDash-ThreatMgmtSummary.png)
 
-The information you'll see in the Threat Management Summary depends on what you subscription includes. The following table describes what information is included for Office 365 E3 and Office 365 E5.
+The information you'll see in the Threat Management Summary depends on what your subscription includes. The following table describes what information is included for Office 365 E3 and Office 365 E5.
 
 |Office 365 E3|Office 365 E5|
 |---|---|
@@ -97,7 +97,7 @@ Insights not only surface key issues you should review, they also include recomm
 
 ![Smart insights](../../media/smartinsights.png)
 
-For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Microsoft 365 security center](reports-and-insights-in-security-and-compliance.md).
+For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md).
 
 ## Threat investigation and response
 
@@ -117,7 +117,7 @@ To view or access the Sent and Received Email widget, you must have permissions 
 
 To view or access the Recent Threat Management Alerts widget, you must have permissions to view alerts. To learn more, see [RBAC permissions required to view alerts](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
-## Related topics
+## Related articles
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 

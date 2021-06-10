@@ -34,11 +34,11 @@ Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security tha
 
 - Safe Documents is supported in Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
-- You can open the Microsoft 365 security center at <https://security.microsoft.com>. Or to go directly to the **Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
+- You can open the Microsoft 365 Defender at <https://security.microsoft.com>. Or to go directly to the **Safe Attachments** page, open <https://security.microsoft.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
+- You need permissions in **Exchange Online** before you can do the procedures in this article:
   - To configure Safe Documents settings, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to Safe Documents settings, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
@@ -56,9 +56,9 @@ To keep you protected, Safe Documents sends files to the [Microsoft Defender for
 
 Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
 
-## Use the Microsoft 365 security center to configure Safe Documents
+## Use the Microsoft 365 Defender to configure Safe Documents
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com), go to **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe attachments**, and then click **Global settings**.
+1. In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Email & collaboration** > **Policies & rules** > **Threat policies** > **Safe attachments**, and then click **Global settings**.
 
 2. In the **Global settings** fly out that appears, configure the following settings:
 
@@ -93,7 +93,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 
 To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Security & Compliance Center.
 
-To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, please refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
+To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
 ### How do I know this worked?
 

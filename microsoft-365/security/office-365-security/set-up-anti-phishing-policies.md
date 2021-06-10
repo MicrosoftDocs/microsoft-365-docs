@@ -52,7 +52,7 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
 |
 
-<sup>\*</sup> In the default policy, the policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
+<sup>\*</sup> In the default policy, the policy name, and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
 To configure anti-phishing policies, see the following articles:
 
@@ -66,7 +66,7 @@ The rest of this article describes the settings that are available in anti-phish
 
 The following policy settings are available in anti-phishing policies in EOP and Microsoft Defender for Office 365:
 
-- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the [Microsoft 365 security center](https://security.microsoft.com/antiphishing).
+- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the [Microsoft 365 Defender](https://security.microsoft.com/antiphishing).
 
 - **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
 
@@ -95,7 +95,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
 - **Enable spoof intelligence?**: Turns spoof intelligence on or off. We recommend that you leave it turned on.
 
-  When spoof intelligence is enabled, the **spoof intelligence insight** shows spoofed senders that were automatically detected and allowed or blocked by spoof intelligence. You can manually override the spoof intelligence verdict to allow or block the detected spoofed senders from within the insight. But when you do, the spoofed sender disappears from the spoof intelligence insight, and is now visible only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders in the Tenant Allow/Block List. For more information, see the following topics:
+  When spoof intelligence is enabled, the **spoof intelligence insight** shows spoofed senders that were automatically detected and allowed or blocked by spoof intelligence. You can manually override the spoof intelligence verdict to allow or block the detected spoofed senders from within the insight. But when you do, the spoofed sender disappears from the spoof intelligence insight, and is now visible only on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders in the Tenant Allow/Block List. For more information, see the following articles:
 
   - [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
   - [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md)

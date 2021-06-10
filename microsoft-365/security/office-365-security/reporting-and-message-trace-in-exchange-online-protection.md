@@ -33,9 +33,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 **Microsoft 365 groups activity**: View information about the number of Microsoft 365 groups that are created and used.
 
-**Email activity**: View information about the number of messages sent, received and read in your whole organization, and by specific users.
+**Email activity**: View information about the number of messages sent, received, and read in your whole organization, and by specific users.
 
-**Email app usage**: View information about the email apps that are used. This include the total number of connections for each app, and the versions of Outlook that are connecting.
+**Email app usage**: View information about the email apps that are used. This includes the total number of connections for each app, and the versions of Outlook that are connecting.
 
 **Mailbox usage**: View information about storage used, quota consumption, item count, and last activity (send or read activity) for mailboxes.
 
@@ -66,7 +66,7 @@ Follows email messages as they travel through EOP. You can determine if an email
 
 You can use this information to efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance.
 
-See [Message trace in the Microsoft 365 security center](message-trace-scc.md).
+See [Message trace in the Microsoft 365 Defender](message-trace-scc.md).
 
 ## Audit logging
 
