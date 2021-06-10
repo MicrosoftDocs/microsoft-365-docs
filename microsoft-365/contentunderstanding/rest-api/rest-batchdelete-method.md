@@ -82,7 +82,7 @@ In this sample, the ID of the Contoso Contract document understanding model is `
 
 #### Sample response
 
-In the response, TotalFailures and TotalSuccesses refers to the number of failures and successes of the model being applies to the specified libraries.
+In the response, TotalFailures and TotalSuccesses refer to the number of failures and successes of the model being applies to the specified libraries.
 
 **Status code:** 200
 
