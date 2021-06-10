@@ -24,27 +24,19 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type.
-
-## Quick scan versus full scan
-
-Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type. When you run a scan, you can choose from among three types: Quick scan, full scan, and custom scan. [Learn more about scan types](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
 
-Combined with [always-on real-time protection capability](configure-real-time-protection-microsoft-defender-antivirus.md), a quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware. Always-on, real-time protection reviews files when they're opened and closed, and whenever a user navigates to a folder. By default, quick scans run on mounted removable devices, such as USB drives. In most instances, a quick scan is adequate to find malware that wasn't picked up by real-time protection.
-
-A full scan can be useful when a malware threat is reported on an endpoint. The scan can identify whether there are any inactive components that require a more thorough clean-up. However, Microsoft generally recommends using quick scans instead of full scans. A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned. 
-
-> [!TIP]
-> To learn more about the differences between quick and full scans, see [Quick scan versus full scan and custom scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan).
-
 ## Use Microsoft Endpoint Manager to run a scan
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+
 2. Choose **Endpoint security** > **Antivirus**.
+
 3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
+
 4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 
 [ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
@@ -65,7 +57,9 @@ For more information about how to use the tool and additional parameters, includ
 ## Use Microsoft Intune to run a scan
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
-2. From the sidebar, select **Devices > All Devices** and choose the device you want to scan.
+
+2. From the sidebar, select **Devices** > **All Devices** and choose the device you want to scan.
+
 3. Select **...More**. From the options, select **Quick Scan** or **Full Scan**.
 
 ## Use the Windows Security app to run a scan
