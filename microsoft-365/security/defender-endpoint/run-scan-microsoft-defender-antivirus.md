@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/04/2021
+ms.date: 06/10/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -28,7 +28,7 @@ You can run an on-demand scan on individual endpoints. These scans will start im
 
 ## Quick scan versus full scan
 
-Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders.
+Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
@@ -45,7 +45,7 @@ A full scan can be useful when a malware threat is reported on an endpoint. The 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
 2. Choose **Endpoint security** > **Antivirus**.
 3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
-4. From the list of actions provided, select **Quick Scan** or **Full Scan**.
+4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 
 [ ![IMAGE](images/mem-antivirus-scan-on-demand.png) ](images/mem-antivirus-scan-on-demand.png#lightbox)
 
@@ -88,8 +88,3 @@ Use the [**Start** method](/previous-versions/windows/desktop/defender/start-msf
 
 For more information about which parameters are allowed, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## Related articles
-
-- [Configure Microsoft Defender Antivirus scanning options](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
