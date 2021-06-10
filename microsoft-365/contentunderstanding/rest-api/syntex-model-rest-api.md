@@ -43,13 +43,13 @@ The following REST commands are available for working with Syntex document under
 
 ## Scenarios
 
-Note the following scenario examples that are not intuitive from the method name. See each article for more details.
+Note the following scenario examples that aren't intuitive from the method name. For more information, see each article.
 
-The create model method only creates the model object and its associated content type. You will need to first train the model in the content center before it can be applied to a library.
+The create model method only creates the model object and its associated content type. You'll need to first train the model in the content center before it can be applied to a library.
 
-The apply model method is use to configure the model on the target library to classify documents and optionally extract additional information. This API also support batch applying the model to multiple libraries.
+The apply model method is used to configure the model on the target library to classify documents and optionally extract additional information. This API also supportss batch applying the model to multiple libraries.
 
-The remove model method just removes the model from one or more libraries where it was previously applied. If you wish to delete the model it must first be removed from all the libraries where it was applied.
+The remove model method just removes the model from one or more libraries where it was previously applied. If you want to delete the model, it must first be removed from all the libraries where it was applied.
 
 
 ## See also
