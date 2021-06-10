@@ -273,15 +273,16 @@
 #### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
-#### [Configure scheduled quick or full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
+##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [Manage gradual rollout process for Microsoft Defender updates](updates.md)
-#####  [Configure gradual rollout process for Microsoft Defender updates](configure-updates.md)
 ##### [Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -470,6 +471,8 @@
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](exposed-apis-create-app-partners.md)
+
+
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 ###### [Common REST API error codes](common-errors.md)
@@ -522,6 +525,7 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
+
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
 ####### [List machines](get-machines.md)
@@ -537,19 +541,23 @@
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 
+
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
 ####### [List Machine Actions](get-machineactions-collection.md)
 ####### [Get Machine Action](get-machineaction-object.md)
 ####### [Collect investigation package](collect-investigation-package.md)
 ####### [Get investigation package SAS URI](get-package-sas-uri.md)
+####### [Get live response result](get-live-response-result.md)
 ####### [Isolate machine](isolate-machine.md)
 ####### [Release machine from isolation](unisolate-machine.md)
 ####### [Restrict app execution](restrict-code-execution.md)
 ####### [Remove app restriction](unrestrict-code-execution.md)
 ####### [Run antivirus scan](run-av-scan.md)
+####### [Run live response](run-live-response.md) 
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
+####### [Cancel machine action](cancel-machine-action.md)
 
 ###### [Recommendation]()
 ####### [Recommendation methods and properties](recommendation.md)
