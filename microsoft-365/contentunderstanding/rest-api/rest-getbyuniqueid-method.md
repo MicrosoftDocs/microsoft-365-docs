@@ -52,7 +52,7 @@ For GET, no request body is needed.
 
 ## Examples
 
-### Get the the Contoso Contract model by id
+### Get the the Contoso Contract model by ID
 
 In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 
@@ -95,7 +95,7 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
 	"UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
 ```
-### Get and delete the Contoso Contract model by id
+### Get and delete the Contoso Contract model by ID
 
 In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 
