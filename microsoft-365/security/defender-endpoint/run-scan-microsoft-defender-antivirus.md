@@ -24,7 +24,9 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type. When you run a scan, you can choose from among three types: Quick scan, full scan, and custom scan. [Learn more about scan types](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
+You can run an on-demand scan on individual endpoints. These scans will start immediately, and you can define parameters for the scan, such as the location or type. When you run a scan, you can choose from among three types: Quick scan, full scan, and custom scan. In most cases, use a quick scan. A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. 
+
+Combined with always-on, real-time protection, which reviews files when they are opened and closed, and whenever a user navigates to a folder, a quick scan helps provide strong protection against malware that starts with the system and kernel-level malware. In most cases, a quick scan is sufficient and is the recommended option for scheduled or on-demand scans.  [Learn more about scan types](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to the access network share.
@@ -60,7 +62,7 @@ For more information about how to use the tool and additional parameters, includ
 
 2. From the sidebar, select **Devices** > **All Devices** and choose the device you want to scan.
 
-3. Select **...More**. From the options, select **Quick Scan** or **Full Scan**.
+3. Select **...More**. From the options, select **Quick Scan** (recommended) or **Full Scan**.
 
 ## Use the Windows Security app to run a scan
 
