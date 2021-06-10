@@ -20,7 +20,7 @@ Gets information about a model and the library where it has been applied (see [e
 ## HTTP request
 
 ```HTTP
-GET /_api/machinelearning/publications/getbymodeluniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
 ```
 
 ## URI parameters
