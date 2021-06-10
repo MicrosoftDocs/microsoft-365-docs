@@ -280,6 +280,7 @@ Custom network indicators are turned on in the [Microsoft 365 Defender](microsof
 When you [create an "allow" indicator for an application certificate](/microsoft-365/security/defender-endpoint/indicator-certificates), it helps prevent applications, such as internally developed applications, that your organization uses from being blocked. `.CER` or `.PEM` file extensions are supported.   
 
 Before you create indicators for application certificates, make sure the following requirements are met:
+
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antimalware client version is 4.18.1901.x or later 
 - Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019 
@@ -438,7 +439,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
