@@ -37,7 +37,12 @@ ms.technology: mde
 3. Create an Event Hub Namespace, go to **Event Hub > Add** and select the pricing tier, throughput units and Auto-Inflate appropriate for expected load. For more information, see [Pricing - Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
 ### Add contributor permissions 
-Once the Event Hub namespace is created you will need to add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (this can also be done at Resource Group or Subscription level). 
+Once the Event Hub namespace is created you will need to:
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor
+
+2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver
+
+(this can also be done at Resource Group or Subscription level). 
 
 Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
 
