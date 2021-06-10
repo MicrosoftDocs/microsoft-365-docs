@@ -20,7 +20,7 @@ Updates available models settings (associated retention label and model descript
 ## HTTP request
 
 ```HTTP
-POST /_api/machinelearning/models/UpdateModelSettings HTTP/1.1
+POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
 ```
 
 ## URI parameters
