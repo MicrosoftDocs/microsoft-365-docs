@@ -39,9 +39,9 @@ RandomizeScheduleTaskTimes
 
 For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## Use WMI to schedule scans when an endpoint is not in use
+## WMI for scheduling scans when an endpoint is not in use
 
-Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
+Use the [Set method of the MSFT_MpPreference class](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) for the following properties:
 
 ```WMI
 ScanOnlyIfIdleEnabled
@@ -53,7 +53,7 @@ For more information about APIs and allowed parameters, see [Windows Defender WM
 > When you schedule scans for times when endpoints are not in use, scans do not honor the CPU throttling configuration and will take full advantage of the resources available to complete the scan as fast as possible.
 
 
-## Use WMI to schedule scans to complete remediation
+## WMI for scheduling scans to complete remediation
 
 Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
@@ -64,7 +64,7 @@ RemediationScheduleTime
 
 For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-## Use WMI to schedule daily scans
+## WMI for scheduling daily scans
 
 Use the [**Set** method of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 

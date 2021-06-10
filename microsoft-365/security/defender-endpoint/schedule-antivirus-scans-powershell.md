@@ -64,7 +64,7 @@ Set-MpPreference -RemediationScheduleTime
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
-## Use PowerShell cmdlets to schedule daily scans
+## PowerShell cmdlets for scheduling daily scans
 
 Use the following cmdlets:
 
