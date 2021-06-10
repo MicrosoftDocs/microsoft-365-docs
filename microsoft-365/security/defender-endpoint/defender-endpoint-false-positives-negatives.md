@@ -36,7 +36,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 ![Definition of false positive and negatives in Defender for Endpoint](images/false-positives-overview.png)
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in your [Microsoft Defender Security Center](../defender/microsoft-365-security-center-mde.md), your security operations can take steps to address them by using the following process:
+Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center), your security operations can take steps to address them by using the following process:
 
 1.	[Review and classify alerts](#part-1-review-and-classify-alerts) 
 2.	[Review remediation actions that were taken](#part-2-review-remediation-actions)
@@ -77,9 +77,9 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 ### Classify an alert
 
-Alerts can be classified as false positives or true positives in the Microsoft Defender Security Center. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
+Alerts can be classified as false positives or true positives in the Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -92,9 +92,9 @@ Alerts can be classified as false positives or true positives in the Microsoft D
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft Defender Security Center. Suppressing alerts helps reduce noise in your security operations dashboard. 
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -130,7 +130,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in. 
+1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
 
 2. Select the **History** tab to view a list of actions that were taken.  
 
@@ -138,7 +138,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -146,7 +146,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -157,7 +157,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) and sign in.
+1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -181,15 +181,12 @@ device where the file was quarantined.
     "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
     ```
 
-    > [!NOTE]
-    > In some scenarios, the **ThreatName** may appear as: `EUS:Win32/
-CustomEnterpriseBlock!cl`. Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
-
     > [!IMPORTANT]
+    > In some scenarios, the **ThreatName** may appear as `EUS:Win32/
+      CustomEnterpriseBlock!cl`. Defender for Endpoint will restore all custom blocked files that were quarantined on this device in the last 30 days.
     > A file that was quarantined as a potential network threat might not be recoverable. If a user attempts to restore the file after quarantine, that file might not be accessible. This can be due to the system no longer having network credentials to access the file. Typically, this is a result of a temporary log on to a system or shared folder and the access tokens expired.
 
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**. 
-
 
 ## Part 3: Review or define exclusions
 
@@ -276,7 +273,7 @@ Before you create indicators for IP addresses, URLs, or domains, make sure the f
 - Antimalware client version is 4.18.1906.x or later 
 - Devices are running Windows 10, version 1709, or later 
 
-Custom network indicators are turned on in the Microsoft Defender Security Center (see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features))   
+Custom network indicators are turned on in the [Microsoft 365 Defender](microsoft-defender-security-center.md). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### Indicators for application certificates 
 
