@@ -61,7 +61,7 @@ Suspicious activities are processes running under a user context. The integratio
 The Skype for Business integration provides a way for analysts to communicate with a potentially compromised user or device owner through a simple button from the portal.
 
 ## Microsoft 365 Defender
-With Microsoft 365 Defender, Microsoft Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks. 
+With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks. 
  
 [Learn more about Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
