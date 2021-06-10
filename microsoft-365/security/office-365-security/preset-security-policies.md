@@ -101,7 +101,7 @@ In other words, the settings of the **Strict protection** policy override the se
 
 ### What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -113,9 +113,9 @@ In other words, the settings of the **Strict protection** policy override the se
 
   **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-### Use the security center to assign preset security policies to users
+### Use the Microsoft 365 Defender portal to assign preset security policies to users
 
-1. In the security center, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Templated policies** section \> **Preset Security Policies**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & Rules** \> **Threat Policies** \> **Templated policies** section \> **Preset Security Policies**.
 
 2. Under **Standard protection** or **Strict protection**, click **Edit**.
 
@@ -140,9 +140,9 @@ In other words, the settings of the **Strict protection** policy override the se
 
 5. On the **Review and confirm your changes** page, verify your selections, and then click **Confirm**.
 
-### Use the security center to modify the assignments of preset security policies
+### Use the Microsoft 365 Defender portal to modify the assignments of preset security policies
 
-The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#use-the-security-center-to-assign-preset-security-policies-to-users).
+The steps to modify the assignment of the **Standard protection** or **Strict protection** security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** security policies while still preserving the existing conditions and exceptions, slide the toggle to **Disabled** ![Toggle Off](../../media/scc-toggle-off.png). To enable the policies, slide the toggle to **Enabled** ![Toggle On](../../media/scc-toggle-on.png).
 

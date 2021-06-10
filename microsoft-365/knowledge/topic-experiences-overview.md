@@ -65,7 +65,7 @@ When a topic is identified and AI determines that it has enough information for 
 
 Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.
 
-See [Topic discovery and curation](./topic-experiences-discovery-curation.md).
+For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
 ## Roles
 
@@ -75,7 +75,7 @@ When you use Viva Topics in your Microsoft 365 environment, your users will have
 
 - Contributors: Users who have rights to edit existing topics or create new ones. Knowledge admins assign contributor permissions to users through the Viva Topics settings in the Microsoft 365 admin center. Note that you can also choose to give all topic viewers the permission to edit and create topics so that everyone can contribute to topics that they see.
 
-- Knowledge managers: Users who guide topics through the topic lifecycle. Knowledge managers use the **Manage topics** page in the Topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as well as edit existing topics or create new ones, and are the only users who have access to it. Knowledge admins assign knowledge manager permissions to users through the Viva Topics admin settings in the Microsoft 365 admin center. 
+- Knowledge managers: Users who guide topics through the topic lifecycle. Knowledge managers use the **Manage topics** page in the topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as well as edit existing topics or create new ones, and are the only users who have access to it. Knowledge admins assign knowledge manager permissions to users through the Viva Topics admin settings in the Microsoft 365 admin center. 
 
 - Knowledge admins: Admins set up Viva Topics and manage it through the admin controls in the Microsoft 365 admin center. Currently, a Microsoft 365 global or SharePoint administrator can serve as a knowledge admin.
 
@@ -85,15 +85,15 @@ For more information, see [Viva Topics roles](topic-experiences-roles.md).
 
 Topic management is done in the **Manage topics** page in your organization's *topic center*. The topic center is created during setup and serves as your center of knowledge for your organization. 
 
-While all licensed users can see topics they're connected with in the Topic center, only users with *Manage topics* permissions (knowledge managers) can view and use the **Manage topics** page.
+While all licensed users can see topics they're connected with in the topic center, only users with *Manage topics* permissions (knowledge managers) can view and use the **Manage topics** page.
 
 Knowledge managers can:
 
 - Confirm or remove topics that were discovered in your tenant.
 - Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).
-- Edit existing topic pages.<br/>
+- Edit existing topic pages.
 
-For more information, see [Manage topics in the Topic center](manage-topics.md).  
+For more information, see [Manage topics in the topic center](manage-topics.md).  
 
 ## Admin controls
 
