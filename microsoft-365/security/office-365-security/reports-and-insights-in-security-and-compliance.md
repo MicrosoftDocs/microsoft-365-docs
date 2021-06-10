@@ -64,6 +64,6 @@ A wide variety of reports are available in the Microsoft 365 security center. (G
 
 ## Related topics
 
-[Monitor and view reports in the Microsoft 365 security center](../defender/overview-security-center.md)
+[Monitor and view reports in the Microsoft 365 Defender portal](../defender/overview-security-center.md)
 
 [Protect against threats in Office 365](protect-against-threats.md)
