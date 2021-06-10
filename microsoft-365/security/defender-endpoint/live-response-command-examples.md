@@ -233,3 +233,15 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
+
+## library
+
+```
+# List files in the library
+library
+```
+
+```
+# Delete a file from the library
+library delete script.ps1
+```
