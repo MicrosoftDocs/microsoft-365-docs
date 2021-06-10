@@ -26,7 +26,7 @@ ms.topic: how-to
 
 This article describes how to configure scheduled scans using Group Policy. To learn more about scheduling scans and about scan types, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
 
-## To configure antivirus scans using Group Policy
+## Configure antivirus scans using Group Policy
 
 1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
 
