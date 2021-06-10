@@ -129,7 +129,7 @@ Creating a custom Safe Attachments policy in the Security & Compliance Center cr
 
 3. In the policy details fly out that appears, click **Edit settings**.
 
-The available settings in the fly out that appears are identical to those described in the [Use the Microsoft 365 Defender to create Safe Attachments policies](#use-the-microsoft-365-security-center-to-create-safe-attachments-policies) section.
+The available settings in the fly out that appears are identical to those described in the [Use the Microsoft 365 Defender to create Safe Attachments policies](#use-the-microsoft-365-defender-to-create-safe-attachments-policies) section.
 
 To enable or disable a policy or set the policy priority order, see the following sections.
 
