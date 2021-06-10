@@ -17,7 +17,7 @@ description: Use REST API to create a request to classify one or more files usin
 
 Creates a request to classify one or more files using the applied document understanding model (see [example](rest-createclassificationrequest.md#examples)).
 
-The SharePoint Online (and SharePoint 2016 and later on-premises) REST service supports combining multiple requests into a single call to the service by using the OData $batch query option. This method can be used to enqueue classification work items for hundreds of documents one time.
+The SharePoint Online (and SharePoint 2016 and later on-premises) REST service supports combining multiple requests. Requests are combined into a single call to the service by using the OData $batch query option. This method can be used to enqueue classification work items for hundreds of documents at one time.
 
 ## HTTP request
 
