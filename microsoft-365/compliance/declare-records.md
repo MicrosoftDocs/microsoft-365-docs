@@ -75,6 +75,18 @@ Example of a document marked as record by using a retention label:
 
 ![Details pane for document tagged as a record](../media/recordversioning7.png)
 
+## Searching the audit log for items that were declared records by using retention labels
+
+The actions of labeling items that declare files and emails as records are logged in the audit log.
+
+For files: 
+- From **File and page activities**, select **Changed retention label for a file**. This audit event is for retention labels with that mark items as records, regulatory records, or standard retention labels.
+
+For emails:
+- From **Exchange mailbox activities**, select **Labeled message as a record**.
+
+For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+
 ## Next steps
 
 For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
