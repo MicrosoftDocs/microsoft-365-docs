@@ -114,7 +114,6 @@ Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers wil
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
-
 ## Phase 4: SharePoint Online
 
 **Applies to**: All customers using SharePoint Online
