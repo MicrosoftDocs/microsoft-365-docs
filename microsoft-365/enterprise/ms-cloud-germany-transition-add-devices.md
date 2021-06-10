@@ -22,55 +22,10 @@ description: "Summary: Additional device information on services when moving fro
 
 # Additional device information for the migration from Microsoft Cloud Deutschland
 
-Azure AD joined and registered devices connected to Microsoft Cloud Deutschland must be migrated after phase 9 and before phase 10. The migration of a device depends on the devices type, operating system and AAD relation. 
+Azure AD joined and registered devices connected to Microsoft Cloud Deutschland must be migrated after phase 9 and before phase 10. The migration of a device depends on the devices type, operating system and Azure AD relation. 
 
-## Frequently asked questions
-
-**How can I tell if my organization is affected?**
-
-Administrators should check `https://portal.microsoftazure.de` to determine if they have any registered or Azure AD joined devices. If your organization has registered devices, you're affected.
-
-**What is the impact on my users?**
-
-Users from a registered device will no longer be able to sign in after [migration phase 10](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed and the endpoints for Microsoft Cloud Deutschland have been disabled.  
-
-Ensure that all of your devices are registered with the worldwide endpoint before your organization is disconnected from Microsoft Cloud Deutschland.
-  
-**When do my users re-register their devices?**
-
-It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
-
-**How do I restore my device state after migration?**
-
-For company-owned Windows devices that are registered with Azure AD, administrators will be able to manage the migration of these devices through remotely triggered workflows that will unregister the old device states.
-  
-For all other devices, including personal Windows devices that are registered in Azure AD, the end user must perform these steps manually. For Azure AD–joined devices, users need to have a local administrator account to unregister and then re-register their devices.
-
-Please refer to detailed instructions for how to successfully restore device states below. 
- 
-**How do I know that all my devices are registered in the public cloud?**
-
-To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the [Separate from Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration phase.
-
-## Additional considerations
-Device registration is deactivated after migration of the tenant and cannot be enabled or disabled. 
-
-If Intune is not used, sign in to your subscription and run this command to re-activate the option:
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-**IMPORTANT:** The Intune service principal will be enabled after commerce migration, which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-
-
-## Azure AD Join
-This applies to Windows 10 devices. 
-
-If a device is Azure AD joined, it must be disconnected from Azure AD and be connected again. 
+## Azure AD Joined Windows 10 devices
+If a Windows 10 device is Azure AD joined, it must be disconnected from Azure AD and must be connected again. 
 
 [ ![Azure AD Device Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
@@ -78,47 +33,55 @@ If a device is Azure AD joined, it must be disconnected from Azure AD and be con
 If the user is an administrator on the Windows 10 device, the user can unregister the device from Azure AD and re-join it again in three steps. 
 
 ### Step 1: Determine if the device is Azure ID joined
-1.	Sign In with your work account.
-2.	Go to Settings > Accounts > Access Work Or School. 
-3.	Look for an account in the list with **connected to … ‘s Azure AD**. 
+1.	Sign in with your work account.
+2.	Go to **Settings** > **Accounts** > **Access Work Or School**. 
+3.	Look for an account in the list with **connected to […]‘s Azure AD**. 
 4.	If a connected account exists, proceed with Step 2. 
 ### Step 2: Disconnect the device from Azure AD
-1.	Tap **Disconnect** on the connected work or School Account. 
+1.	Click **Disconnect** on the connected work or School Account. 
 2.	Confirm the disconnect twice. 
-3.	Enter the local administrator username and password. The device is disconnected.
+3.	Enter a local administrator username and password. The device is disconnected.
 4.	Restart the device.
 ### Step 3: Join the device to Azure AD
-1.	Signs in with the credentials of the local administrator.
-2.	Go to **Settings** then **Accounts** then **Access Work Or School**.
-3.	Tap **Connect**.
-4.	**IMPORTANT**: Tap **Join to Azure AD**.
+1.	Sign in with the credentials of the local administrator.
+2.	Go to **Settings** > **Accounts** > **Access Work Or School**.
+3.	Click **Connect**.
+4.	**IMPORTANT**: Click **Join to Azure AD**.
 5.	Enter the e-mail address and password of your work account. The device is connected.
-6.	Restart the device .
-7.	Sign with the email address and password of your work account.
+6.	Restart the device.
+7.	Sign in with the email address and password of your work account.
 
-If the user is not an administrator of the device a global administrator can create the local administrator account on the device following this configuration path and unjoin the device:
+If the user is not an administrator of the device, an Azure AD global administrator can create the local administrator account on the device following this configuration path and unjoin the device:
 
 *Settings > Accounts > Other Accounts > Credentials unknown > Add user without Microsoft-Account*
 
-For the rejoin the credentials of the user's work account are required.
+For re-joining, the credentials of any work account from your organization can be used in this step. 
 
-## Azure AD Registered (workplace Join)
-Relevant for Windows 10 devices. If a device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again. 
+Please consider that the work account used to join the device will be automatically promoted as an Administrator of the device.
+Any other work account from the organization can sign in to the device, but has no administrator privileges.
+
+## Azure AD registered (workplace-joined) Windows 10 devices
+If a Windows 10 device is Azure AD registered, it needs to be disconnected from the Azure AD and connected again.
+
+[ ![Azure AD Device Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### Step 1: Determine if the device is Azure ID registered
-1.	Sign In with local user
-2.	Go to Settings > Accounts > Access Work Or School. 
-3.	Look for your work account in the list and check if it is connected to … ‘s Azure AD. If your work account is in the list but NOT connected to an Azure AD proceed with Step 2 otherwise see Azure AD join.
+1.	Sign in with your user.
+2.	Go to **Settings** > **Accounts** > **Access Work Or School**. 
+3.	Discover your work account in the list and check if it is **connected to […]‘s Azure AD**.
+
+    If your work account is in the list but NOT connected to an Azure AD, proceed with step 2.
+
+    Otherwise, your device is an Azure AD joined device and you have to refer to [this section](##-Azure-AD-Joined-Windows-10-devices).
 ### Step 2: Disconnect the device from Azure AD
-1.	Tap on your work account. Buttons Info and Disconnect appear.
-2.	Tap on Disconnect. 
-3.	Confirm account removal from the device by clicking Yes.
+1.	Click on your work account. The buttons *Info* and *Disconnect* appear.
+2.	Click **Disconnect**. 
+3.	Confirm account removal from the device by clicking **Yes**.
 ### Step 3: Connect the device to Azure AD
-1.	Tap + Connect 
+1.	Click **Connect**.
 2.	Enter the email address of your work account and click **Next**.
 3.	Enter the password of your work account and click **Sign in**.
-4.	Confirm by clicking **Done**. Your work account is shown.
-
+4.	Confirm by clicking **Done**. Your work account is listed again.
 
 ## Android
 
@@ -173,6 +136,28 @@ On iOS devices, a user will need to manually remove any cached accounts from the
 ### Step 3: Sign out from individual apps if necessary
 
 Users can go to individual apps like Outlook, Teams, and OneDrive, and remove accounts from those apps.
+
+## Frequently asked questions
+
+**How can I tell if my organization is affected?**
+
+Administrators should check `https://portal.microsoftazure.de` to determine if they have any Azure AD registered or Azure AD joined devices. If your organization has Azure AD registered or Azure AD joined devices, your organization has to follow the instructions on this page.
+
+**When do my users re-register their devices?**
+
+It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
+
+**How do I know that all my devices are registered in the public cloud?**
+
+To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization).
+
+## Additional considerations
+
+**IMPORTANT:** The Intune service principal will be enabled after [phase 3 of the migration process](ms-cloud-germany-transition-phases.md#Phase-3:-Subscription-transfer), which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ## More information
 
