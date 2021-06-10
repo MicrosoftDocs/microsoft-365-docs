@@ -51,6 +51,7 @@ Method | Return Type | Description
 -|-|-
 [List incidents](api-list-incidents.md) | [Incident](api-incident.md) list | Get a list of incidents.
 [Update incident](api-update-incidents.md) | [Incident](api-incident.md) | Update a specific incident.
+[Get incidents](get-incident.md) | [Incident](api-incident.md) | Get an incident.
 
 ## Request body, response, and examples
 
