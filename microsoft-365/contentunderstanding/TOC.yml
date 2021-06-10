@@ -85,20 +85,22 @@
           href: rest-api/syntex-model-rest-api.md
         - name: CreateModel
           href: rest-api/rest-createmodel-method.md
-        - name: GetModelById
-          href: rest-api/rest-getmodelbyid-method.md
-        - name: GetModelByTitle
-          href: rest-api/rest-getmodelbytitle-method.md
-        - name: ApplyModel
+        - name: GetByUniqueId
+          href: rest-api/rest-getbyuniqueid-method.md
+        - name: GetByTitle
+          href: rest-api/rest-getbytitle-method.md
+        - name: Apply a model
           href: rest-api/rest-applymodel-method.md
-        - name: GetModelAndLibraryInfo
-          href: rest-api/rest-getmodelandlibraryinfo-method.md
+        - name: Get model and library information
+          href: rest-api/rest-getmodelandlibraryinfo.md
         - name: UpdateModelSettings
           href: rest-api/rest-updatemodelsettings-method.md        
-        - name: RemoveModel
-          href: rest-api/rest-removemodel-method.md
+        - name: BatchDelete
+          href: rest-api/rest-batchdelete-method.md
         - name: DeleteModelByIdOrFileName
           href: rest-api/rest-deletemodelbyidorfilename-method.md
+        - name: Create classification request
+          href: rest-api/rest-createclassificationrequest-method.md
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Create classification request
+title: Create a classification request
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,14 +8,12 @@ audience: admin
 ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: Use REST API to creates a request to classify one or more files using a trained document understanding model.
+description: Use REST API to create a request to classify one or more files using a trained document understanding model.
 ---
 
-# Create a request to classify one or more files
+# Create a classification request
 
 Creates a request to classify one or more files using the applied document understanding model (see [example](rest-createclassificationrequest.md#examples)).
 

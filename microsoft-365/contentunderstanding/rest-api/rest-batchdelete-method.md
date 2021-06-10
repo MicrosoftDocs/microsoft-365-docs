@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to remove an applied document understanding model from one or more libraries.
 ---
 
-# RemoveModel
+# BatchDelete
 
 Removes an applied document understanding model from one or more libraries. Note that a model must be removed from all libraries before it can be deleted (see [example](rest-batchdelete-method.md#examples)).
 
