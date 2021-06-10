@@ -325,7 +325,7 @@ You can view mount, unmount, and volume change events originating from USB devic
 
 ```
 DeviceEvents 
-    | where ActionType == "UsbDriveMount" or ActionType == "UsbDriveUnmount" or ActionType == "UsbDriveDriveLetterChanged"
+    | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```
 
