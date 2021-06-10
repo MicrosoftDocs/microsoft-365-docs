@@ -213,7 +213,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 |protection.office.com  |security.microsoft.com  |
 |---------|---------|
-| Threat Management > Policy > Rules > DKIM     | Email & Collaboration > Policies & rules > Threat policies > Additional policies > DKIM        | 
+| Threat Management > Policy > Rules > DKIM     | Email & Collaboration > Policies & rules > Threat policies > Rules > DKIM        | 
 
 3. Select the domain for which you want to enable DKIM and for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Then select **Rotate DKIM keys**. Repeat this step for each custom domain.
 
