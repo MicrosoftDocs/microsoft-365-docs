@@ -50,7 +50,7 @@ ViewOption|no|string|Specifies whether to set new model view as the library defa
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-applymodel-method.md#request-body) for details.|
+|201 Created| |Note that because this API supports applying model to multiple libraries, a 201 could be returned even if there's a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-applymodel-method.md#request-body) for details.|
 
 ## Examples
 
