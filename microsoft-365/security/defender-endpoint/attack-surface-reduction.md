@@ -115,7 +115,7 @@ Although attack surface reduction rules don't require a [Windows E5 license](/wi
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Defender for Endpoint data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-security-center.md) by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
