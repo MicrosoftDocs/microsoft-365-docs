@@ -26,18 +26,18 @@ ms.topic: how-to
 
 In addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled antivirus scans. You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when an endpoint is not being used. You can also set up special scans to complete remediation actions if needed.
 
-This article describes scan types. To schedule scans, see the following resources:
+## What do you want to do?
 
-- [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
-- [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
-- [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+- [Learn about quick scans, full scans, and custom scans](#quick-scan-full-scan-and-custom-scan)
+- [Use Group Policy to schedule antivirus scans](schedule-antivirus-scans-group-policy.md)
+- [Use Windows PowerShell to Schedule antivirus scans](schedule-antivirus-scans-powershell.md)
+- [Use Windows Management Instrumentation to schedule antivirus scans](schedule-antivirus-scans-wmi.md)
 
 ## Keep the following points in mind
 
 - By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
 
 - If a device is unplugged and running on battery during a scheduled full scan, the scheduled scan will stop with event 1002, which states that the scan stopped before completion. Microsoft Defender Antivirus will run a full scan at the next scheduled time.
-
 
 ## Quick scan, full scan, and custom scan
 
