@@ -51,7 +51,7 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 | Name   | Type  | Description|
 |--------|-------|------------|
 |200 OK| |Success|
-|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-getmodelandlibraryinfo-method.md#request-body) for details.|
+|201 Created| |Note that since this API supports applying model to multiple libraries, a 201 could be returned even if there is a failure applying the model to one of the libraries. <br>Check the response body to understand if the model has been successfully applied to all the specified libraries. See [Request body](rest-getmodelandlibraryinfo.md#request-body) for details.|
 
 ## Examples
 
