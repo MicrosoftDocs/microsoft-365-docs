@@ -55,9 +55,9 @@ started](apis-intro.md).
 
 |     Permission    type     |     Permission     |    Permission    display name     |
 |-|-|-|
-|    <br>Application    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    <br>Collect   forensics<br>   <br>Isolate   machine<br>   <br>Restrict   code execution<br>   <br>Scan   machine<br>   <br>Offboard   machine<br>   <br>Stop And   Quarantine<br>   <br>Run live   response on a specific machine    |
-|    <br>Delegated   (work or school account)    |    <br>Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    <br>Collect   forensics<br>   <br>Isolate   machine<br>   <br>Restrict   code execution<br>   <br>Scan   machine<br>   <br>Offboard   machine<br>   <br>Stop And   Quarantine<br>   <br>Run live   response on a specific machine    |
-|  |  |  |
+|    <br>Application    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    Collect   forensics   <br>Isolate   machine<br>Restrict   code execution<br>  Scan   machine<br>  Offboard   machine<br>   Stop And   Quarantine<br>   Run live   response on a specific machine    |
+|    <br>Delegated   (work or school account)    |    Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    Collect   forensics<br>   Isolate   machine<br>  Restrict   code execution<br> Scan   machine<br>Offboard   machine<br> Stop And   Quarantine<br> Run live   response on a specific machine    |
+
 
 ## HTTP request
 

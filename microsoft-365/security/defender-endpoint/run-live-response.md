@@ -93,8 +93,8 @@ Commands:
 | Command Type | Parameters                                                                          | Description                                                                                                                      |
 |------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | PutFile      | Key: FileName  <br><br>  Value: \<file name\>                                                                          | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.
-| RunScript    | Key: ScriptName Value: \<Script from library\> <br><br> Key: Args  <br> Value: \<Script arguments\>                          | Runs a script from the library on a device.    <br><br>  The Args parameter is passed to your script. <br><br Timeouts after 10 minutes.     
-| GetFile      | Key: Path <br><br> Value: \<File path\>                                                        | Collect file from a device. NOTE: Backslashes in path must be escaped.                                                                      |
+| RunScript    | Key: ScriptName<br>Value: \<Script from library\> <br><br> Key: Args  <br> Value: \<Script arguments\>                          | Runs a script from the library on a device.    <br><br>  The Args parameter is passed to your script. <br><br> Timeouts after 10 minutes.     
+| GetFile      | Key: Path <br> Value: \<File path\>                                                        | Collect file from a device. NOTE: Backslashes in path must be escaped.                                                                      |
 
 ## Response
 
