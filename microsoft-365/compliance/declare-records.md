@@ -75,7 +75,7 @@ Example of a document marked as record by using a retention label:
 
 ![Details pane for document tagged as a record](../media/recordversioning7.png)
 
-## Searching the audit log for items that were declared records by using retention labels
+## Searching the audit log for labeled items that were declared records
 
 The actions of labeling items that declare files and emails as records are logged in the audit log.
 
