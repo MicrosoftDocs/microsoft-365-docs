@@ -1,5 +1,5 @@
 ---
-title: GetModelById
+title: GetByUniqueId
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,9 +13,9 @@ localization_priority: Priority
 description: Use REST API to get or update information about a SharePoint Syntex document understanding model.
 ---
 
-# GetModelById
+# GetByUniqueId
 
-Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getmodelbyid-method.md#examples)).
+Gets or updates information about a SharePoint Syntex document understanding model (see [example](rest-getbyuniqueid-method.md#examples)).
 
 ## HTTP request
 
@@ -23,6 +23,11 @@ Gets or updates information about a SharePoint Syntex document understanding mod
 GET /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
 ```
 
+This same method can be used for deleting a model, too. 
+
+```HTTP
+DELETE /_api/machinelearning/models/getbyuniqueid(‘{modelUniqueId}') HTTP/1.1
+```
 ## URI parameters
 
 |Name |In |Required|Type|Description|
@@ -47,7 +52,7 @@ For GET, no request body is needed.
 
 ## Examples
 
-### Get information about the Contoso Contract model
+### Get the the Contoso Contract model by id
 
 In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
 
@@ -89,6 +94,15 @@ GET /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa
 	"SourceUrl": null,
 	"UniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc"
 }
+```
+### Get and delete the Contoso Contract model by id
+
+In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.
+
+#### Sample request
+
+```HTTP
+DELETE /_api/machinelearning/models/getbyuniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}') HTTP/1.1
 ```
 
 ## See also
