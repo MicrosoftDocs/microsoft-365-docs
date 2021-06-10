@@ -68,7 +68,7 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
    When you're finished, click **Save**.
 
-   ![Safe Documents settings after selecting Global settings on the Safe Attachments page.](../../media/safe-docs.png)
+   ![Safe Documents settings after selecting Global settings on the Safe Attachments page.](../../media/safe-docs-global-settings.png)
 
 ### Use Exchange Online PowerShell to configure Safe Documents
 
