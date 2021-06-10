@@ -100,7 +100,7 @@
         - name: DeleteModelByIdOrFileName
           href: rest-api/rest-deletemodelbyidorfilename-method.md
         - name: Create classification request
-          href: rest-api/rest-createclassificationrequest-method.md
+          href: rest-api/rest-createclassificationrequest.md
 
 
 
