@@ -18,7 +18,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Get incident API
+# Get incident information API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.custom: api
 
 
 ## API description
-Retrieves a single incident
+Retrieves a specific incident by its ID
 
 
 ## Limitations
@@ -45,15 +45,15 @@ One of the following permissions is required to call this API.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Alert.Read.All |	'Read all alerts'
-Application |	Alert.ReadWrite.All |	'Read and write all alerts'
-Delegated (work or school account) | Alert.Read | 'Read alerts'
-Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
+Application |	Incident.Read.All |	'Read all Incidents'
+Application |	Incident.ReadWrite.All |	'Read and write all Incidents'
+Delegated (work or school account) | Incident.Read | 'Read Incidents'
+Delegated (work or school account) | Incident.ReadWrite | 'Read and write Incidents'
 
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data'
->- Response will include only an incident, associated with devices, that the user have access to, based on device group settings 
+>- The response will only include incidents that the user is exposed to
 
 ## HTTP request
 
@@ -72,8 +72,9 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with incident entity in the body. If file does not exist - 404 Not Found.
 
+If successful, this method returns 200 OK, and the incident entity in the response body. 
+If incident with the specified id was not found - 404 Not Found.
 
 ## Example
 
@@ -82,5 +83,5 @@ If successful and file exists - 200 OK with incident entity in the body. If file
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/incident/6532ec91d513acc05f43ee0aa3002599729fd3e1
+GET https://api.security.microsoft.com/api/incidents/{id}
 ```
