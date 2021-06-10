@@ -52,21 +52,21 @@ Use the following articles to configure the prerequisites required so user repor
 
 - Turn off URL scanning on messages in the custom mailbox. Use [Set up Safe Links policies in Defender for Office 365](set-up-safe-links-policies.md) to create a Safe Links policy with the setting **Off** for **Select the action for unknown potentially malicious URLs in messages**.
 
-- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Microsoft 365 security center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
+- Create an anti-malware policy to turn off Malware Zero-hour Auto Purge. See [Use the Microsoft 365 Defender portal to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) to set **Malware Zero-hour Auto Purge** to **Off**.
 
-- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Microsoft 365 security center to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
+- Create a spam filter policy to disable zero-hour auto purge (ZAP) for spam and phishing in the custom mailbox. See [Use the Microsoft 365 Defender portal to create anti-spam policies](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) and clear the **On** checkboxes for **Spam ZAP** and **Phish ZAP**.
 
 - Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Once disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
 
-After you've verified that your mailbox meets all applicable prerequisites, implement the procedure specified in [Use the Microsoft 365 security center to configure the user submissions mailbox](#use-the-microsoft-365-security-center-to-configure-the-user-submissions-mailbox).
+After you've verified that your mailbox meets all applicable prerequisites, implement the procedure specified in [Use the Microsoft 365 Defender portal to configure the user submissions mailbox](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox).
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 security center at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specify the submissions mailbox:
@@ -78,9 +78,9 @@ After you've verified that your mailbox meets all applicable prerequisites, impl
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## Use the Microsoft 365 security center to configure the user submissions mailbox
+## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 security center, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** \> **User submissions**.
+1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** \> **User submissions**.
 
 2. In the **User submissions** page that appears, select one of the following options:
 

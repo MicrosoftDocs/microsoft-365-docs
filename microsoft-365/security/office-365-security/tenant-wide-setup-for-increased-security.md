@@ -59,9 +59,9 @@ The Microsoft 365 Defender portal includes capabilities that protect your enviro
 > [!NOTE]
 > For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-## View dashboards and reports in the Microsoft 365 security center
+## View dashboards and reports in the Microsoft 365 Defender portal
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see [Reports in the Microsoft 365 security center](../../compliance/reports-in-security-and-compliance.md).
+Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see [Reports in the Microsoft 365 Defender portal](../../compliance/reports-in-security-and-compliance.md).
 
 <br>
 
