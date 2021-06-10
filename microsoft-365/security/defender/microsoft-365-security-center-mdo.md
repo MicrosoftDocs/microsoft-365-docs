@@ -60,6 +60,72 @@ Learn more about the benefits: [Overview of Microsoft 365 Defender](overview-sec
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
+## New and improved capabilities
+
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+
+With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
+
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image of Microsoft 365 Defender converged experience":::
+
+Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
+
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image of Defender for Office 365":::
+
+### Incidents and alerts
+
+Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.
+
+- [Learn more about Investigations](incidents-overview.md)
+- [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
+
+![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
+
+### Hunting
+
+Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). These powerful queries can be used to  locate and review threat indicators and entities for both known and potential threats.
+
+[Custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
+
+Here is an [example on advanced hunting](advanced-hunting-example.md) in Microsoft Defender for Office 365.  
+
+### Action center
+
+Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
+
+Learn more about [Action center](m365d-action-center.md).
+
+#### Threat Analytics
+
+Get threat intelligence from expert Microsoft security researchers. Threat Analytics helps security teams be more efficient when facing emerging threats. Threat Analytics includes:
+
+- Email-related detections and mitigations from Microsoft Defender for Office 365. This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
+- Incidents view related to the threats.
+- Enhanced experience for quickly identifying and using actionable information in the reports.
+
+You can access Threat analytics either from the upper left navigation bar in Microsoft 365 Defender, or from a dedicated dashboard card that shows the top threats for your organization.
+
+Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md).
+
+### Email & collaboration
+
+Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will be familiar.
+
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of Microsoft 365 Defender.":::
+
+#### Email entity page 
+
+The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifies* email information that had been scattered across different pages or views in the past. Investigating email for threats and trends is *centralized*. Header information and email preview are accessible through the same email page, along with other useful email-related information. Likewise, the detonation status for malicious file attachments or URLs can be found on a tab of the same page. The Email entity page empowers admins and security operations teams to understand an email threat and its status, fast, and then act quickly determine handling.
+
+### Access and Reports
+
+View reports, change your settings, and modify user roles.
+
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the security center.":::
+
+> [!NOTE]
+> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
+
 ## What's changed
 
 This table is a quick reference of Threat management where change has occurred between the **Security & Compliance center** and the **Microsoft 365 Defender** portal. Click the links to read more about these areas.
@@ -70,7 +136,6 @@ This table is a quick reference of Threat management where change has occurred b
 
 |Area|Description of change|
 |---|---|
-|[Email entity page](../office-365-security/mdo-email-entity-page.md)|This page **unifies** email information that had been scattered across different pages or views in the past. Investigating email for threats and trends is *centralized*. Header information and email preview are accessible through the same email page, along with other useful email-related information. Likewise, the detonation status for malicious file attachments or URLs can be found on a tab of the same page. The Email entity page empowers admins and security operations teams to understand an email threat and its status, fast, and then act quickly determine handling.|
 |[Investigation](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
 |[Alert view](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Office Security and Compliance center now includes links to Microsoft 365 Defender. Click on the **Open Alert Page** link and Microsoft 365 Defender opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
 |[Attack Simulation training](../office-365-security/attack-simulation-training-insights.md)|Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.|
@@ -100,102 +165,6 @@ The Home page of the portal surfaces important summary information about the sec
 Using the **Guided tour** you can take a quick tour of Endpoint or Email & collaboration pages. Note that what you see here will depend on if you have license for Defender for Office 365 and/or Defender for Endpoint.
 
 Also included is a link to the **Office 365 Security and Compliance center** for comparison. The last link is to the **What's New** page that describes recent updates.
-
-## New and improved capabilities
-
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
-
-### Incidents and alerts
-
-Brings together incident and alert management across your email, devices, and identities. Alerts are now available under the Investigation node, and help provide a broader view of an attack. The alert page provides full context to the alert, by combining attack signals to construct a detailed story. Previously, alerts were specific to different workloads. A new, unified experience now brings together a consistent view of alerts across workloads. You can quickly triage, investigate, and take effective action.
-
-- [Learn more about Investigations](incidents-overview.md)
-- [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
-
-![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
-
-### Hunting
-
-Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using [advanced hunting queries](advanced-hunting-overview.md). These powerful queries can be used to  locate and review threat indicators and entities for both known and potential threats.
-
-[Custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)  can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
-
-### Action center
-
-Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
-
-[Learn more about Action center](m365d-action-center.md)
-
-#### Threat Analytics
-
-Get threat intelligence from expert Microsoft security researchers. Threat Analytics helps security teams be more efficient when facing emerging threats. Threat Analytics includes:
-
-- Email-related detections and mitigations from Microsoft Defender for Office 365. This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
-- Incidents view related to the threats.
-- Enhanced experience for quickly identifying and using actionable information in the reports.
-
-You can access Threat analytics either from the upper left navigation bar in Microsoft 365 Defender, or from a dedicated dashboard card that shows the top threats for your organization.
-
-Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md)
-
-### Email & collaboration
-
-Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will be familiar.
-
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of Microsoft 365 Defender.":::
-
-### Access and Reports
-
-View reports, change your settings, and modify user roles.
-
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the security center.":::
-
-> [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
-
-## Advanced Hunting example for Microsoft Defender for Office 365
-
-Want to get started searching for email threats using advanced hunting? Try this:
-
-The [Getting Started](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) section of the [Microsoft Defender for Office 365 article](/microsoft-365/security/office-365-security/defender-for-office-365) has logical early configuration chunks that look like this:
-
-1. Configure everything with 'Anti' in the name.
-   - Anti-malware
-   - Anti-phishing
-   - Anti-spam
-2. Set up everything with 'Safe' in the name.
-   - Safe Links
-   - Safe Attachments
-3. Defend the workloads (ex. SharePoint Online, OneDrive, and Teams).
-4. Protect with zero-Hour auto purge.
-
-Along with a [link](../office-365-security/protect-against-threats.md) to jump right in and get configuration going on Day 1.
-
-The last step in **Getting Started** is protecting users with **Zero-Hour auto purge**, also known as ZAP. Knowing if your efforts to ZAP a suspicious or malicious mail, post-delivery, were successful can be very important.
-
-Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps [here](https://security.microsoft.com/advanced-hunting), under **Hunting** \> **Advanced Hunting**.
-
-1. On the Advanced Hunting page, click **Query**.
-1. Copy the query below into the query window.
-1. Select **Run query**.
-
-```kusto
-EmailPostDeliveryEvents 
-| where Timestamp > ago(7d)
-//List malicious emails that were not zapped successfullyconverge-2-endpoints-new.png
-| where ActionType has "ZAP" and ActionResult == "Error"
-| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
-//Get logon activity of recipients using RecipientEmailAddress and AccountUpn
-| join kind=inner IdentityLogonEvents on $left.RecipientEmailAddress == $right.AccountUpn
-| where Timestamp between ((ZapTime-24h) .. (ZapTime+24h))
-//Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
-| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
-LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
-```
-
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="The Advanced hunting page (under Hunting) with Query selected at the top of the query panel, and running a Kusto query to capture ZAP actions over the last 7 days.":::
-
-The data from this query will appear in the results panel below the query itself. Results include information like 'DeviceName', 'AccountDisplayName', and 'ZapTime' in a customizable result set. Results can also be exported for your records. If the query is one you'll need again, select **Save** > **Save As** and add the query to your list of queries, shared, or community queries.
 
 ## Related information
 
