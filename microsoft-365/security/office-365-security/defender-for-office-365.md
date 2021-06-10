@@ -91,7 +91,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 security center (Go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies and rules**.)
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender (Go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies and rules**.)
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
@@ -112,7 +112,7 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Microsoft 365 security center.
+Microsoft Defender for Office 365 includes an advanced [reporting dashboard](view-reports-for-mdo.md) to monitor your Defender for Office 365  performance. You can access it at **Reports** \> **Dashboard** in the Microsoft 365 Defender.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
@@ -142,16 +142,16 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 ## Permissions required to use Microsoft Defender for Office 365 features
 
-To access Microsoft Defender for Office 365 features in the Microsoft 365 security center, you must be assigned an appropriate role. The following table includes some examples:
+To access Microsoft Defender for Office 365 features in the Microsoft 365 Defender, you must be assigned an appropriate role. The following table includes some examples:
 
 |Role or role group|Resources to learn more|
 |---|---|
-|global administrator (this can be assigned in either Azure Active Directory or in the Microsoft 365 security center)|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
-|Security Administrator (this can be assigned in either Azure Active Directory or the Microsoft 365 security center)|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md)|
+|global administrator (this can be assigned in either Azure Active Directory or in the Microsoft 365 Defender)|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
+|Security Administrator (this can be assigned in either Azure Active Directory or the Microsoft 365 Defender)|[Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online Organization Management (this is assigned in Exchange Online)|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge (this is assigned only in the Microsoft 365 security center)|[Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md)|
+|Search and Purge (this is assigned only in the Microsoft 365 Defender)|[Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
 
-For more information, see [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
 ## Get Microsoft Defender for Office 365
 
