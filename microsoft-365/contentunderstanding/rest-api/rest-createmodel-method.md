@@ -1,5 +1,5 @@
 ---
-title: Create a model
+title: Create model
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to create a model and its associated content type.
 ---
 
-# Create a model
+# Create model
 
 Creates a model and its associated content type. Note that this only creates the model. It will still need to be trained in the content center (see [example](rest-createmodel-method.md#examples)).
 
