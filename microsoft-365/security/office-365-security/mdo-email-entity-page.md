@@ -92,14 +92,16 @@ These details are specific to email attachments and URLs. Users can see these de
 
 Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-a. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
-NOTE: This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
-b. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
-c. *Screenshots* shows the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
-	• Container type files like .zip or .rar.
-	• If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
-d. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
-	• Container files like .zip or .rar that are holding other files.
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+    > [!NOTE]
+    > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+
+1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
+1. *Screenshots* shows the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
+    - Container type files like .zip or .rar.
+    - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
+1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
+    - Container files like .zip or .rar that are holding other files.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
 
