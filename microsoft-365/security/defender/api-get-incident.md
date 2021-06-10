@@ -1,6 +1,6 @@
 ---
-title: Get incidents API
-description: Learn how to use the Get incidents API to get a collection of incidents in Microsoft 365 Defender.
+title: Get incident API
+description: Learn how to use the Get incidents API to get a single incident in Microsoft 365 Defender.
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,7 +18,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Get incidents API
+# Get incident API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.custom: api
 
 
 ## API description
-Retrieves a collection of incidents
+Retrieves a single incident
 
 
 ## Limitations
@@ -53,7 +53,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data'
->- Response will include only incidents, associated with devices, that the user have access to, based on device group settings 
+>- Response will include only an incident, associated with devices, that the user have access to, based on device group settings 
 
 ## HTTP request
 
@@ -72,7 +72,7 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and file exists - 200 OK with list of incident entities in the body. If file does not exist - 404 Not Found.
+If successful and file exists - 200 OK with incident entity in the body. If file does not exist - 404 Not Found.
 
 
 ## Example
@@ -82,5 +82,5 @@ If successful and file exists - 200 OK with list of incident entities in the bod
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/incidents/6532ec91d513acc05f43ee0aa3002599729fd3e1/incidents
+GET https://api.securitycenter.microsoft.com/api/incident/6532ec91d513acc05f43ee0aa3002599729fd3e1
 ```
