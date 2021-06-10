@@ -97,8 +97,6 @@
           href: rest-api/rest-updatemodelsettings-method.md        
         - name: BatchDelete
           href: rest-api/rest-batchdelete-method.md
-        - name: Delete model by Unique ID or file name
-          href: rest-api/rest-deletemodelbyidorfilename-method.md
         - name: Create classification request
           href: rest-api/rest-createclassificationrequest.md
 
