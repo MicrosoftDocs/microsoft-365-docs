@@ -369,9 +369,31 @@ For more information about the Preservation Hold library, see [How retention wor
 
 Because of the behavior during the grace period, if you re-enable the policy or change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
 
-## Auditing retention configuration
+## Auditing retention configuration and actions
 
-Administrator actions for retention policies and retention labels are saved to the audit log when [auditing is enabled](turn-audit-log-search-on-or-off.md). For example, an audit event is created when a retention policy or label is created, configured, or deleted. For the full list, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+When [auditing is enabled](turn-audit-log-search-on-or-off.md), auditing events for retention are supported for both administration configuration (retention policies and retention labels) and retention actions (retention labels only).
+
+### Auditing retention configuration
+
+Administrator configuration for retention policies and retention labels are logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
+
+For the full list of auditing events, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### Auditing retention actions
+
+Retention actions that are logged as auditing events are available only for retention labels and not for retention policies:
+
+- When a retention label is applied, changed, or removed from an item in SharePoint:
+    - From **File and page activities**, select **Changed retention label for a file** 
+
+- When a labeled item in SharePoint is marked as a record, and it is unlocked or locked by a user:
+    - From **File and page activities**, select **Changed record status to unlocked** and **Changed record status to locked**
+
+- When a retention label that marks content as a record or regulatory record is applied to an item in Exchange:
+    - From **Exchange mailbox activities**, select **Labeled message as a record**
+
+- When a labeled item in SharePoint or Exchange is marked as a record or regulatory record, and it is permanently deleted:
+    - From **File and page activities**, select **Deleted file marked as a record**
 
 ## PowerShell cmdlets for retention policies and retention labels
 
