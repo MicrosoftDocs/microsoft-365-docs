@@ -258,7 +258,13 @@ Use the following table to help you identify whether to use a retention policy o
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|
+|Audit retention actions| No | Yes <sup>\*</sup> |
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
+
+**Footnote:**
+
+<sup>\*</sup>
+For retention labels that don't mark the content as a record or regulatory record, auditing events are restricted to when an item in SharePoint has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
 
