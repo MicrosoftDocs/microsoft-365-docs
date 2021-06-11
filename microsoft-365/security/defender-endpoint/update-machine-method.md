@@ -39,8 +39,9 @@ Updates properties of existing [Machine](machine.md).
 
 
 ## Limitations
-1. You can update machines that available in the API. 
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. You can update machines that are available in the API. 
+2. Update machine only appends tags to the tag collection. If tags exist, they must be incuded in the tags collection in the body.
+3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
 ## Permissions
@@ -48,8 +49,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Alerts.ReadWrite.All |	'Read and write all alerts'
-Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
+Application |	Machine.ReadWrite.All |	'Read and write machine information for all machines'
+Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine information'
 
 >[!Note]
 > When obtaining a token using user credentials:
@@ -80,7 +81,9 @@ machineTags | String collection | Set of [machine](machine.md) tags.
 deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
 
 ## Response
-If successful, this method returns 200 OK, and the [machine](machine.md) entity in the response body with the updated properties. If machine with the specified id was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [machine](machine.md) entity in the response body with the updated properties. 
+If machine tags collection in body don't contain existing machine tags - 400 Invalid Input and a message informing of the missing tag/s.
+If machine with the specified id was not found - 404 Not Found.
 
 
 ## Example
@@ -90,27 +93,17 @@ If successful, this method returns 200 OK, and the [machine](machine.md) entity 
 Here is an example of the request.
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/machines/121688558380765161_2136280442
+PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
 ```
 
 ```json
 {
-    "healthStatus": "Active",
     "deviceValue": "Normal",
-    "rbacGroupId": 0,
-    "rbacGroupName": null,
-    "riskScore": "Medium",
-    "exposureLevel": "Medium",
-    "isAadJoined": true,
-    "aadDeviceId": "11c7d91a-4728-484e-82cc-220d280fe29c",
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
                      "Windows 10",
                      "Windows Insider - Fast"
-    ],
-    "defenderAvStatus": "Updated",
-    "onboardingStatus": "Onboarded",
-
+    ]
 }
 ```
