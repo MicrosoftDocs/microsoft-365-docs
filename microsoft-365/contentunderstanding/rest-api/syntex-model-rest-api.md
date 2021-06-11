@@ -54,5 +54,5 @@ The remove model method just removes the model from one or more libraries where 
 
 ## See also
 
-- [Document understanding overview](document-understanding-overview.md)
+[Document understanding overview](../document-understanding-overview.md)
 
