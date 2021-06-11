@@ -72,9 +72,6 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Compliance admin
 - Security admin
 - Compliance data admin
-- Global reader
-- Security reader
-- Reports reader
 
 ### Prepare your endpoints
 
