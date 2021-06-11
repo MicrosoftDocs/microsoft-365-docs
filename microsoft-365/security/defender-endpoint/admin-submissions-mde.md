@@ -50,7 +50,7 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](microsoft-365\security\office-365-security\permissions-microsoft-365-security-center.md).
+  - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](../../office-365-security/permissions-microsoft-365-security-center.md).
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
@@ -76,8 +76,10 @@ New content
 
 New content
 
+You can also [view and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md). 
+
 ## Related information
 
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365\security\defender\microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide)
