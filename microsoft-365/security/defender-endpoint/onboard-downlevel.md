@@ -181,7 +181,24 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
-1. Download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/topic/update-for-customer-experience-and-diagnostic-telemetry-0b4f29c3-8361-b748-f862-7ecedbc57cbf) file.
+1. Download the following and place them in the MMA folder:
+   
+    - Update for customer experience and diagnostic telemetry:
+      - [For Windows Server 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
+     
+    For Windows Server 2008 R2 SP1, following updates are also required:
+
+    February 2018 Monthly Roll up - KB4074598 (Windows Server 2008 R2)
+
+    [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)_
+    Download updates for Windows Server 2008 R2 x64
+    
+    .NET Framework 3.5.1 (KB315418)
+    [For Windows Server 2008 R2 x64](http://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    
+    >[!NOTE]
+    > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
+
 
 **Step-2: Create a file name DeployMMA.cmd (using notepad)**
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
@@ -197,10 +214,16 @@ cd "C:"
 IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
 exit
 ) ELSE (
+
 wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
 wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"
-"C:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="your workspace ID" OPINSIGHTS_WORKSPACE_KEY="your workspace key" AcceptEndUserLicenseAgreement=1
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"c:\windows\MMA\ setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1
+OPINSIGHTS_WORKSPACE_ID="<your workspace ID>"
+OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
+)
+
 )
 ```
 
@@ -231,6 +254,10 @@ Repeat the process but create item level targeting on the COMMON tab, so the fil
 
 :::image type="content" source="images/targeteditor.png" alt-text="target editor":::
 
+For Windows Server 2008 R2 you'll need (and it will only copy down) the following:
+- Windows6.1-KB3080149-x64.msu
+- Windows6.1-KB3154518-x64.msu
+- Windows6.1-KB4075598-x64.msu
 
 
 Once this is done, you'll need to create a start-up script policy:
@@ -254,6 +281,12 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
 
+As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
+For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
+•	Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+•	Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+
+Please check the KBs are present before onboarding Windows Server 2008 R2. This process allows you to onboard all the servers if you don’t have Configuration Manager managing Servers.
 
 
 ## Offboard endpoints
