@@ -50,7 +50,7 @@ None
 
 ## Examples
 
-### Create a new document understanding model called "Contoso Contract".
+### Create a new document understanding model called "Contoso Contract"
 
 #### Sample request
 
