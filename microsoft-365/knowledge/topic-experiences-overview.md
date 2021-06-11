@@ -37,6 +37,7 @@ Topics are displayed to users through:
 - [Topic highlights](topic-experiences-overview.md#topic-highlights) in SharePoint pages.
 - Topic answers in [search results](topic-experiences-overview.md#search-results).
 - Search in [office applications](topic-experiences-overview.md#office-application-search).
+- [Topic center](topic-experiences-overview.md#topic-center) home page.
 
 ### Topic highlights
 
@@ -57,6 +58,10 @@ When you use Search in Office apps such as Word, PowerPoint, Outlook, or Excel â
    ![Screenshot showing search in Word through the Search box.](../media/knowledge-management/word-search-2.png)
 
    ![Screenshot showing search in Word through the Search context menu.](../media/knowledge-management/word-search-1.png)
+
+### Topic center
+
+Users can see topics in their organization to which they have a connection on the [topic center home page](topic-center-overview.md#home-page).
 
 ## Knowledge indexing
 
