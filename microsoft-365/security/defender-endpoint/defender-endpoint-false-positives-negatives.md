@@ -79,7 +79,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 Alerts can be classified as false positives or true positives in the Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
+1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -94,7 +94,7 @@ Alerts can be classified as false positives or true positives in the Microsoft 3
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
-1. Go to Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
+1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -130,7 +130,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
 
 2. Select the **History** tab to view a list of actions that were taken.  
 
@@ -138,7 +138,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -146,7 +146,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -157,7 +157,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file](images/autoir-quarantine-file-1.png)
 
-1. Go to the Action center ([https://defender.microsoft.com/action-center](https://defender.microsoft.com/action-center)) and sign in. 
+1. Go to the Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) and sign in. 
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -439,7 +439,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to the Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
