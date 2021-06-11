@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -34,24 +34,24 @@ The following image depicts what the **Devices** tab looks like when you have Mi
 
 ![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the Microsoft Defender Security Center (<https://securitycenter.windows.com>).
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center).
 
 > [!TIP]
-> **[Learn more about the Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender for Endpoint portal.)
+> The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center. See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 ## Requirements
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
 
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com). (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in Microsoft 365. (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
 
-- You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.
+- You must have access to [Explorer (or real-time detections)](threat-explorer.md).
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 
-Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.
+Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
-1. As a global administrator or a security administrator, go to <https://protection.office.com> and sign in. (This takes you to the Office 365 Security & Compliance Center.)
+1. As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in. (This takes you to the Office 365 Security & Compliance Center.)
 
 2. In the navigation pane, choose **Threat management** \> **Explorer**.
 
@@ -63,7 +63,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
    ![Microsoft Defender for Endpoint connection](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Go to the Microsoft Defender Security Center (<https://securitycenter.windows.com>).
+5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com).
 
 6. In the navigation bar, choose **Settings**. Then, under **General**, choose **Advanced features**.
 
