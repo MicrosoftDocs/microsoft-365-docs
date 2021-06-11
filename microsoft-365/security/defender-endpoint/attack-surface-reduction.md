@@ -90,7 +90,7 @@ Whenever an attack surface reduction rule is triggered, a notification is displa
 
 In addition, when certain attack surface reduction rules are triggered, alerts are generated.
 
-Notifications and any alerts that are generated can be viewed in the Microsoft 365 Defender ([https://defender.microsoft.com](https://defender.microsoft.com)) (formerly [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
+Notifications and any alerts that are generated can be viewed in the Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) (formerly [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
 
 ## Advanced hunting and attack surface reduction events
 
