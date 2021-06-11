@@ -77,20 +77,16 @@ You can create up to four additional group themes.
 
 On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
 
-- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS and that the image is at least 200 x 30 pixels. Your default logo can be in the JPG, PNG, GIF, or SVG format.
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. If you are uploading a logo, make sure it is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
-- **Small default logo**: Add a URL location that points to your logo. The image must be at least 48 x 48 pixels. You can scale this image so it fits on smaller or mobile devices.
-- **Small alternate logo**: Add a URL location that points to your logo. This image has the same requirements as the small default logo.
 - **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website.
 
 Select **Save** to save your changes.
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
 
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
-
 > [!NOTE]
-> By default, we first show logo selections that most organizations use. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
+> By default, we first show logo selections that most organizations use. The upload option is only applicable to default themes and not group themes.
   
 ## Colors: Choose theme colors
 

@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
+ms.date: 06/09/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -81,7 +81,7 @@ All our updates contain
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**  
-&ensp;Released: **June 4, 2021**  
+&ensp;Released: **June 3, 2021**  
 &ensp;Platform: **4.18.2105.4**  
 &ensp;Engine: **1.1.18200.4**  
 &ensp;Support phase: **Security and Critical Updates**
@@ -97,7 +97,7 @@ No known issues
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
-&ensp;Released: **April 1, 2021**  
+&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
 &ensp;Platform: **4.18.2104.14**  
 &ensp;Engine: **1.1.18100.5**  
 &ensp;Support phase: **Security and Critical Updates**
@@ -113,7 +113,7 @@ No known issues
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
-&ensp;Released: **April 1, 2021**  
+&ensp;Released: **April 2, 2021**  
 &ensp;Platform: **4.18.2103.7**  
 &ensp;Engine: **1.1.18000.5**  
 &ensp;Support phase: **Security and Critical Updates**
@@ -435,7 +435,7 @@ Support phase: **No support**
 - add MRT logs to support files
    
 ### Known Issues
-When this update is installed, the device needs the jump package 4.10.2001.10 to be able to update to the latest platform version.
+When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
 
