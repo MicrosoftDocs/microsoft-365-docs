@@ -100,8 +100,6 @@ Failing to complete this task may result in hybrid free-busy requests failing to
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
 
-Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers will be migrated to Office 365 services under the new Office 365 services tenant of the same partner. After customer migration, the partner can manage this customer only from the Office 365 services tenant.
-
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Subscriptions are transferred| The Microsoft Cloud Deutschland subscription will be migrated to corresponding Office 365 Global services subscription. <ul><li>The Office 365 Global services offer of that subscription is defined by Microsoft (also known as _Offer mapping_).</li><li> Corresponding Office 365 Global services subscriptions are purchased in the Office 365 Global instance for the transferred Microsoft Cloud Deutschland subscriptions.</li><li>Legacy Microsoft Cloud Deutschland subscriptions are removed from the Office 365 services tenant on completion.</li></ul>| <ul><li>Changes to existing subscriptions will be blocked (for example, no new subscription purchases or seat count changes) during this phase.</li><li>License assignment changes will be blocked.</li><li>When subscription migration is complete, both Office 365 services and Microsoft Cloud Deutschland subscriptions will be visible in the Office 365 Admin Portal, with the status of Microsoft Cloud Deutschland subscriptions as _deprovisioned_. </li><li>Any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs will be broken and need to be revised with the Office 365 services offering. </li><li>New subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly), and the customer will receive a prorated refund for the unused balance of the Microsoft Cloud Deutschland subscription. </li></ul> |
@@ -114,6 +112,7 @@ Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers wil
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
+Additional information for Cloud Solution Providers are available [here](ms-cloud-germany-transition-add-csp.md#Partner-tenant-migration).
 
 ## Phase 4: SharePoint Online
 
