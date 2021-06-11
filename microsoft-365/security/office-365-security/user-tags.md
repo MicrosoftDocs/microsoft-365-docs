@@ -37,7 +37,7 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts](alerts.md)
-- [Custom alert policies](alert-policies.md#viewing-alerts)
+- [Custom alert policies](../compliance/alert-policies.md#viewing-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
