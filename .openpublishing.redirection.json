@@ -4070,5 +4070,9 @@
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": true
     },
+      "source_path": "microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/schedule-antivirus-scans",
+      "redirect_document_id": true
+    }
   ]
 }
