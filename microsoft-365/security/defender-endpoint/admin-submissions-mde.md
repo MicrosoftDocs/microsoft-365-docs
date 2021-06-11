@@ -50,28 +50,34 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](../../office-365-security/permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](..\..\office-365-security\permissions-microsoft-365-security-center.md).
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
-    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this article.
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](add link when available).
 
 ## Report suspicious content to Microsoft
 
-If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the [sample submissions portal](https://www.microsoft.com/wdsi/filesubmission/). [Needs to be updated]
+If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the [sample submissions portal](https://www.microsoft.com/wdsi/filesubmission/). [Needs to be updated for the unified experience]
 
 ### Send a suspected URL 
 
+New content
+
 ### Submit a suspected file 
+
+New content
 
 ### Submit a suspected email 
 
+New content
+
 ## Manage alerts
+
+New content
 
 ## Related information
 
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
-- [Submit files for analysis](../../threat-protection/intelligence/submission-guide)
+- [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide)
