@@ -53,7 +53,7 @@ None
 
 ## Examples
 
-### Enqueue a request to classify a file of id "e6cff8b7-c90c-4564-b5b8-033449090932".
+### Enqueue a request to classify a file of id "e6cff8b7-c90c-4564-b5b8-033449090932"
 
 #### Sample request
 
