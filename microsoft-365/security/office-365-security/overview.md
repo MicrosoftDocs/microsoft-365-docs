@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Office 365 Security overview
+# Microsoft Defender for Office 365 security overview
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -30,7 +30,7 @@ This article will introduce you to your new Microsoft Defender for Office 365 se
 > [!CAUTION]
 > If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need *Safe Links* or *Safe Attachments* info, ***click this link***: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## Office 365 security spelled out
+## What is Defender for Office 365 security
 
 Every Office 365 subscription comes with security capabilities. The goals and actions that you can take depend on the focus of these different subscriptions. In Office 365 security, there are three main security services (or products) tied to your subscription type:
 
