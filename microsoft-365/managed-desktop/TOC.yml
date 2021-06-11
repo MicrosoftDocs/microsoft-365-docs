@@ -147,14 +147,6 @@
           items:
             - name: Device inventory report
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Usage insights
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Reliability insights
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Battery insights
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Windows security update insights
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support
