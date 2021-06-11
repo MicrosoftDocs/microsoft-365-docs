@@ -52,7 +52,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
   - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-the-custom-mailbox) as described later in this article.
+    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
