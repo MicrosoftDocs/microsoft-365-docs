@@ -21,10 +21,11 @@ description: "Learn about LTI Office apps in M365."
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Apps list:
-[OneDrive LTI with Canvas](#onedrive-lti-with-canvas)
-[Teams Meetings LTI with Canvas](#teams-meetings-lti-with-canvas)
-[Teams Classes LTI with Canvas](#teams-classes-lti-with-canvas)
-[Teams Classes LTI with Blackboard](#teams-classes-lti-with-blackboard)
+
+- [OneDrive LTI with Canvas](#onedrive-lti-with-canvas)
+- [Teams Meetings LTI with Canvas](#teams-meetings-lti-with-canvas)
+- [Teams Classes LTI with Canvas](#teams-classes-lti-with-canvas)
+- [Teams Classes LTI with Blackboard](#teams-classes-lti-with-blackboard)
 
 Microsoft Education and our third-party partners understand that the flow of teaching and learning invariably crosses solution boundaries. We're working on providing more seamless experiences, keeping educators and learners focused on their goals, rather than having to juggle tools. We're integrating Microsoft products wherever teaching and learning occurs – including within and alongside Learning Management Systems (LMS). We've worked with our LMS partners to create a suite of tools using the [Learning Tools Interoperability (LTI) standard](https://www.imsglobal.org/activity/learning-tools-interoperability) that brings the best of Microsoft directly into your LMS.
 
