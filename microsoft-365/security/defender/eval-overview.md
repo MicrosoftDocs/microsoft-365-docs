@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: bcarter
+author: brendacarter
 ms.date: 05/18/2021
 localization_priority: Normal
 manager: dansimp 
@@ -25,7 +25,7 @@ ms.technology: m365d
 ---
 
 # Evaluate and pilot Microsoft 365 Defender
-
+<!--
 - [Microsoft 365 Defender evaluation gains](#evaluate-and-pilot-microsoft-365-defender)
 - [The anatomy of thwarting an Attack](#the-anatomy-of-thwarting-an-attack)
 - [Understand Microsoft 365 Defender components](#understand-microsoft-365-defender-components)
@@ -33,13 +33,11 @@ ms.technology: m365d
 - [Plan your Evaluation](#plan-your-evaluation)
 - [Other Articles in this series](#other-articles-in-this-series)
 
-**Applies to:**
-- Microsoft 365 Defender
-
-<!--
 Cyberattacks can cause major problems, from a loss of trust to financial woes, for your organization. Business-threatening downtime, and worse, isn't uncommon. Protecting against threats is *critical*, but it can be challenging to decide where to focus your organization's time, effort, and resources.-->
 
-**The strength of Microsoft security solutions is built on *trillions* of signals Microsoft processes every day in the Intelligent Security Graph**. That experience becomes the basis for 'teaching' security solutions like *Microsoft 365 Defender*, which  brings together signals from across your *email*, *data*, *devices*, *apps*, and *identities* to paint a picture of advanced threats against your organization. Microsoft 365 E5 security solutions are *built into* Microsoft products and services, and include machine learning and automation that can lighten the load faced by security teams, by processing the flood of data and alerting security teams to only the signals they need to see.
+**Applies to:**
+- Microsoft 365 Defender
+**The strength of Microsoft security solutions is built on *trillions* of signals Microsoft processes every day in the Intelligent Security Graph**. This experience becomes the basis for 'teaching' security solutions like *Microsoft 365 Defender*, which  brings together signals from across your *email*, *data*, *devices*, *apps*, and *identities* to paint a picture of advanced threats against your organization. Microsoft 365 E5 security solutions are *built into* Microsoft products and services. These include machine learning and automation that can lighten the load faced by security teams by processing the flood of data and alerting security teams to only the signals they need to see.
 
 Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite that coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
 
