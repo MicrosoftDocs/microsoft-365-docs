@@ -50,7 +50,7 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 
 - To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organization Management** or **Security Reader** in the [Security & Compliance Center](../../office-365-security/permissions-in-the-security-and-compliance-center.md).
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
@@ -62,16 +62,16 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 
 If you have a file that you suspect might be malware or is being incorrectly detected, you can submit it to Microsoft for analysis using the [sample submissions portal](https://www.microsoft.com/wdsi/filesubmission/). [Needs to be updated]
 
-### Send a suspected URL to Microsoft
+### Send a suspected URL 
 
-### Submit a suspected file to Microsoft
+### Submit a suspected file 
 
-### Submit a suspected email to Microsoft
+### Submit a suspected email 
 
-### Manage alerts
+## Manage alerts
 
 ## Related information
 
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
-- [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide)
+- [Submit files for analysis](../../threat-protection/intelligence/submission-guide)
