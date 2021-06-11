@@ -49,7 +49,7 @@ Severity level	| Situation |	Initial response time	| Expected response from you
 
 - **Support languages** - All support is provided in English.
 - **Severity level changes** - Microsoft might downgrade the severity level if you aren't able to provide adequate resources or responses to enable us to continue with problem resolution efforts. 
-- **Application compatibility** - For an application compatibility issue to be considered, there must be a reproducible error, of the same version of the application, between the previous and current version of Windows or Microsoft 365 Apps for enterprise. To resolve application compatibility issues, we requires a point of contact in you org to work with. The contact must work directly with our Fast Track team to investigate and resolve the issue.
+- **Application compatibility** - For an application compatibility issue to be considered, there must be a reproducible error, of the same version of the application, between the previous and current version of Windows or Microsoft 365 Apps for enterprise. To resolve application compatibility issues, we requires a point of contact in your org to work with. The contact must work directly with our Fast Track team to investigate and resolve the issue.
 - **Customer response time** If you aren't able to meet the expected response requirements, we'll downgrade the request by one severity level, to a minimum of Severity C. If you're unresponsive to requests for action, we'll mitigate and close the support request within 48 hours of the last request.
 
 ## Provide feedback
@@ -58,8 +58,7 @@ We appreciate your feedback and use it to improve the admin support experience.
 
 Once a ticket is in the **Mitigated** or **Resolved** state, you can share your feedback on your experience with that particular issue. To share feedback, go to the **Service requests** page in the **Troubleshooting + support** menu of the Microsoft Endpoint Manager portal. Select the specific ticket. The ticket details will appear in the fly-in on the right side. Select the **Feedback** tab, and provide the requested information. Be careful not to include any personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-![Feedback form](../../media/feedback_form.png)
-
+:::image type="content" alt-text="Example of a feedback form." source="../../media/feedback_form.png" lightbox="../../media/feedback_form.png":::
 
 
 ## More resources
