@@ -37,7 +37,9 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts](alerts.md)
+- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
+- [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).

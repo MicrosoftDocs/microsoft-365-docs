@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
@@ -84,9 +84,9 @@ Windows system folders are protected by default, along with several other folder
 
 Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
-## Review controlled folder access events in the Microsoft Defender Security Center
+## Review controlled folder access events in the Microsoft 365 Defender portal
 
-Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md).
+Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md) in the Microsoft 365 Defender portal. (See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
 
 You can query Microsoft Defender for Endpoint data by using [Advanced hunting](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use [advanced hunting](advanced-hunting-overview.md) to see how controlled folder access settings would affect your environment if they were enabled.
 
@@ -130,8 +130,4 @@ You can use the Windows Security app to view the list of folders that are protec
 > [!NOTE]
 > [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list.
 
-## See also
 
-- [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
-- [Customize controlled folder access](customize-controlled-folders.md)
-- [Protect more folders](customize-controlled-folders.md#protect-additional-folders)
