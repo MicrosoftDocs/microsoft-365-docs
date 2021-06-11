@@ -264,7 +264,7 @@ Use the following table to help you identify whether to use a retention policy o
 **Footnote:**
 
 <sup>\*</sup>
-For retention labels that don't mark the content as a record or regulatory record, auditing events are restricted to when an item in SharePoint has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
+For retention labels that don't mark the content as a record or regulatory record, auditing events are limited to when an item in SharePoint has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
 
 ### Combining retention policies and retention labels
 
