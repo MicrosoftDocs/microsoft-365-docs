@@ -28,12 +28,14 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Security center](https://security.microsoft.com) will let you see and use the email entity page.
+
+Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Defender](https://security.microsoft.com) will let you see and use the email entity page.
 
 |Center|URL|Navigation|
 |---|---|---|
-|Security & Compliance |protection.office.com|Threat Management \> Explorer|
-|Microsoft 365 security center |security.microsoft.com|Email & Collaboration \> Explorer|
+|Security & Compliance Center|<https://protection.office.com>|Threat Management \> Explorer|
+|Microsoft 365 Defender portal|<https://security.microsoft.com>|Email & Collaboration \> Explorer|
+|
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -83,17 +85,20 @@ Admins can preview emails in Cloud mailboxes, ***if*** the mails are still prese
 
 ### Detonation details
 
-These details are specific to email attachments and URLs.
+These details are specific to email attachments and URLs. Users can see these details by going to Explorer and applying the *detection technology* filter set to file detonation or URL detonation. Emails filtered for file detonation will contain a malicious file with detonation details, and those filtered for URLs contain a malicious URL and its detonation details.
 
-Users will see enriched detonation details for known malicious attachments or hyperlinks found in their mailboxes, including Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-- *Detonation chain*: A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.
-- *Detonation summary*: This gives information on:
-  - Detonation time range.
-  - Verdict of the attached file, or URL.
-  - Related info (file number, URLs, IPs, or Domains), which are other entities examined during detonation.
-- *Detonation screenshot*: This shows screenshot(s) taken during detonation process.
-- *Detonation details*: These are the exact behavior details of each process that took place during the detonation.
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+    > [!NOTE]
+    > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+
+1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
+1. *Screenshots* shows the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
+    - Container type files like .zip or .rar.
+    - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
+1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
+    - Container files like .zip or .rar that are holding other files.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Screenshot of the detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*.":::
 
@@ -105,7 +110,7 @@ Users will see enriched detonation details for known malicious attachments or hy
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange Transport Rules (ETRs or Mailflow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange Transport Rules (ETRs or mail flow rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
