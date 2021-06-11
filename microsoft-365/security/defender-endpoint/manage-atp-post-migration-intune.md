@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
 ---
 
@@ -76,9 +76,7 @@ The following table lists various tasks you can perform to configure Microsoft D
 
 ## Configure your Microsoft Defender Security Center
 
-If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. 
-
-You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft Defender Security Center](microsoft-defender-security-center.md). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
 
 - [Overview of the Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
 

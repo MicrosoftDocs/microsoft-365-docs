@@ -4,6 +4,7 @@ keywords: Controlled folder access, windows 10, windows defender, ransomware, pr
 description: Learn how to protect your important files by enabling Controlled folder access
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -31,7 +32,7 @@ ms.technology: mde
 You can enable controlled folder access by using any of these methods:
 
 * [Windows Security app](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
@@ -59,24 +60,30 @@ For more information about disabling local list merging, see [Prevent or allow u
 > If the feature is set to **Audit mode** with any of those tools, the Windows Security app will show the state as **Off**.
 > If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
 
-## Intune
+## Endpoint Manager
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and open Intune.
+1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open **Endpoint Security**.
 
-2. Go to **Device configuration** > **Profiles** > **Create profile**.
+2. Go to **Attack Surface Reduction** > **Policy**.
 
-3. Name the profile, choose **Windows 10 and later** and **Endpoint protection**. <br/> ![Create endpoint protection profile](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** > **Create**.
 
-4. Go to **Configure** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Enable**.
+4.  Name the policy and add a description. Select **Next**.
 
-5. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection. Select **Add**.<br/> ![Enable controlled folder access in Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
+
+6.  Select **List of additional folders that need to be protected** and add the folders that need to be protected.
+
+7.  Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
+
+8.  Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
+
+9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
+
+10.  Select **Next** to save each open blade and then **Create**.
 
    > [!NOTE]
-   > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
-
-6. Select **OK** to save each open blade and **Create**.
-
-7. Select the profile **Assignments**, assign to **All Users & All Devices**, and **Save**.
+   > Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
 ## Mobile Device Management (MDM)
 
