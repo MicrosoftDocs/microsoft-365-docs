@@ -34,10 +34,10 @@ Viva Topics uses AI to automatically search for and identify *topics* in your or
 
 Topics are displayed to users through:
 
-- [Topic highlights](topic-experiences-overview.md#topic-highlights) in SharePoint pages.
-- Topic answers in [search results](topic-experiences-overview.md#search-results).
-- Search in [office applications](topic-experiences-overview.md#office-application-search).
-- [Topic center](topic-experiences-overview.md#topic-center) home page.
+- [Topic highlights](topic-experiences-overview.md#topic-highlights) in SharePoint pages
+- Topic answers in [search results](topic-experiences-overview.md#search-results)
+- Search in [office applications](topic-experiences-overview.md#office-application-search)
+- [Topic center](topic-experiences-overview.md#topic-center) home page
 
 ### Topic highlights
 
