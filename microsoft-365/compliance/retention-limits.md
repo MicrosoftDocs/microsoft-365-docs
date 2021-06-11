@@ -32,7 +32,7 @@ A single tenant can have a maximum of 10,000 policies (any configuration). This 
 
 Within this 10,000 policies limit, there are also some limits on the maximum number of policies for retention per workload:
 
-- Exchange Online (any configuration): 1,800
+- Exchange (any configuration): 1,800
 - SharePoint or OneDrive: (all sites automatically included): 13
 - SharePoint or OneDrive (specific locations included or excluded): 2,600
 
@@ -44,13 +44,14 @@ If you use the optional configuration to scope your retention settings to specif
 
 Maximum numbers of items per policy for retention:
 
-- 1,000 mailboxes (user mailboxes or group mailboxes)
-- 1,000 Microsoft 365 groups
-- 1,000 teams for Teams channel messages
-- 1,000 users for Teams chat messages
-- 1,000 communities for Yammer community messages
-- 1,000 users for Yammer user messages
-- 100 sites (OneDrive or SharePoint)
+- Exchange mailboxes: 1,000
+- Microsoft 365 Groups: 1,000
+- Teams channel messages: 1,000
+- Teams chats: 1,000
+- Yammer community messages: 1,000
+- Yammer user messages: 1,000
+- SharePoint sites: 100
+- OneDrive accounts: 100
 
 Skype for Business has to be scoped to specific users and the maximum number supported per policy is 1,000.
 
