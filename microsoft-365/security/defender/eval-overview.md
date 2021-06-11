@@ -78,15 +78,17 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 
 |  |  |
 |---------|---------|
-|A     |     External access and entry points (including email, sharing, and collaboration) for Microsoft 365 services is primarily controlled by Azure Active Directory and Exchange Online Protection policies.    |
-|B     |    Microsoft Defender for Office 365 is used to manage, monitor, and enforce advanced threat protection policies for Exchange Online, SharePoint Online, Microsoft Teams, and OneDrive for Business and can evaluate signals from Microsoft Defender for Identity.     |
-|C     |    Microsoft Defender for Identity analyzes authentication and authorization signals from Azure Active Directory, Active Directory Domain Services, and Active Directory Federation services to evaluate and report risk-based conditional access and collaboration.     |
-|D    |    Microsoft Defender for Endpoint manages and enforce advanced device protections while integrating and evaluating signals from Microsoft Defender for Identity.     |
-|E    |   Microsoft Cloud App Security evaluates collaboration, identity, and client signals to provide policy-based protection and reporting related to M365 workloads and other cloud solutions.      |
-|F    |    Microsoft 365 Security Center offers a unified dashboard to configure and manage various Defender components, perform investigations, and      |
+|A     |     External access and entry points (including email, sharing, and collaboration) for Microsoft 365 services is primarily controlled by Azure Active Directory (where conditional access and other access policies are enforced) and Exchange Online Protection policies.    |
+|B     |    Microsoft Defender for Identity analyzes authentication and authorization signals from Azure Active Directory to evaluate and report risk-based conditional access and collaboration. If Active Directory Domain Services and Active Directory Federation services are used in the environment, signals from these service are also used. |
+|C     |    Microsoft Defender for Office 365 is used to manage, monitor, and enforce advanced threat protection policies for Exchange Online, SharePoint Online, Microsoft Teams, and OneDrive for Business. Microsoft Defender for Office 365 can also evaluate signals from Microsoft Defender for Identity.   |
+|D    |    Microsoft Defender for Endpoint manages and enforce advanced device protections while integrating and evaluating signals from Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Cloud App Security.     |
+|E    |   Microsoft Cloud App Security evaluates identity, endpoint, and Office 365 signals to provide policy-based protection and reporting for cloud applications, including Microsoft 365 apps.  |
+|F    |    Microsoft 365 Security Center offers a unified dashboard to configure and manage most Defender components and to perform investigations. The shared signals across the Microsoft 365 Defender components are stitched together across alerts and incidents, illuminating the breadth of a breach. Currently, Microsoft Cloud App Security policies are configured directly in the Cloud App Security dashboard.  |
 |G    |    Azure Active Directory is the primary authentication provider for all Microsoft 365 services and used to evaluate, enforce, and control Microsoft Defender policies.     |
-|H     |    Identity provisioning and federated authentication can be integrated with on-premises Active Directory Domain Services by deploying Azure Active Directory Connect and/or Active Directory Federation Services and then monitored using Microsoft Defender for Identity.     |
-|I    |   Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.      |
+
+Additional optional architecture components not included in this illustration:
+- Identity provisioning and federated authentication can be integrated with on-premises Active Directory Domain Services by deploying Azure Active Directory Connect and/or Active Directory Federation Services and then monitored using Microsoft Defender for Identity. 
+- Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.   
 
 ## Plan your Evaluation
 
