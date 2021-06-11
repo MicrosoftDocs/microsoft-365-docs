@@ -38,13 +38,11 @@ ms.technology: mde
 
 ### Add contributor permissions 
 Once the Event Hub namespace is created you will need to:
-1. Define the user who will be logging into Microsoft 365 Defender as Contributor
+1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
 
-2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver
+2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver (this can also be done at Resource Group or Subscription level). 
 
-(this can also be done at Resource Group or Subscription level). 
-
-Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
+    Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
 
 ## Enable raw data streaming
 
@@ -70,7 +68,7 @@ Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **R
 
 ## The schema of the events in Azure Event Hub
 
-```
+```JSON
 {
 	"records": [
 					{
@@ -103,7 +101,7 @@ To get the data types for event properties do the following:
 
 2. Run the following query to get the data types mapping for each event:
  
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
