@@ -35,12 +35,11 @@ ms.custom: api
 
 ## API description
 Updates properties of existing [Machine](machine.md).
-<br>Submission of **comment** is available with or without updating properties.
 <br>Updatable properties are: ```machineTags``` and ```deviceValue```.
 
 
 ## Limitations
-1. You can update alerts that available in the API. See [List Alerts](get-alerts.md) for more information.
+1. You can update machines that available in the API. 
 2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
