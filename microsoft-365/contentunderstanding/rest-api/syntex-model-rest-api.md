@@ -47,7 +47,7 @@ Note the following scenario examples that aren't intuitive from the method name.
 
 The create model method only creates the model object and its associated content type. You'll need to first train the model in the content center before it can be applied to a library.
 
-The apply model method is used to configure the model on the target library to classify documents and optionally extract additional information. This API also supportss batch applying the model to multiple libraries.
+The apply model method is used to configure the model on the target library to classify documents and optionally extract additional information. This API also supports batch applying the model to multiple libraries.
 
 The remove model method just removes the model from one or more libraries where it was previously applied. If you want to delete the model, it must first be removed from all the libraries where it was applied.
 
