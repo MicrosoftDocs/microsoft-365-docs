@@ -39,11 +39,11 @@ Threat investigation and response capabilities in [Microsoft Defender for Office
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
 - Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
 
-Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft 365 security center. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
+Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft 365 Defender. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the Microsoft 365 security center, as a set of tools and response workflows, including the following:
+Threat investigation and response capabilities surface in the Microsoft 365 Defender, as a set of tools and response workflows, including the following:
 
 - [Threat & Vulnerability Management dashboard](#threat--vulnerability-management-dashboard)
 - [Explorer](#explorer)
@@ -57,7 +57,7 @@ Use the Threat & Vulnerability Management dashboard (this is also referred to as
 
 ![Threat Dashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
 
-To view and use this dashboard, in the Microsoft 365 security center, go to **Endpoints** > **Vulnerability Management** > **Dashboard**.
+To view and use this dashboard, in the Microsoft 365 Defender, go to **Endpoints** > **Vulnerability Management** > **Dashboard**.
 
 ### Explorer
 
@@ -65,7 +65,7 @@ Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats
 
 ![Threat explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-To view and use this report, in the Microsoft 365 security center, go to **Email & collaboration** > **Explorer**.
+To view and use this report, in the Microsoft 365 Defender, go to **Email & collaboration** > **Explorer**.
 
 ### Incidents
 
@@ -73,7 +73,7 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 ![List of current Threat Incidents in Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-To view the list of current incidents for your organization, in the Microsoft 365 security center, go to **Incidents & alerts** > **Incidents**.
+To view the list of current incidents for your organization, in the Microsoft 365 Defender center, go to **Incidents & alerts** > **Incidents**.
 
 ![In the Security & Compliance Center, choose Threat management \> Review](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -99,12 +99,12 @@ Microsoft 365 threat investigation and response capabilities are included in Mic
 
 ## Required roles and permissions
 
-Microsoft Defender for Office 365 uses role-based access control. Permissions are assigned through certain roles in Azure Active Directory, the Microsoft 365 admin center, or the Microsoft 365 security center.
+Microsoft Defender for Office 365 uses role-based access control. Permissions are assigned through certain roles in Azure Active Directory, the Microsoft 365 admin center, or the Microsoft 365 Defender.
 
 > [!TIP]
-> Although some roles, such as Security Administrator, can be assigned in the Microsoft 365 security center, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
+> Although some roles, such as Security Administrator, can be assigned in the Microsoft 365 Defender, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
 >
-> - [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+> - [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

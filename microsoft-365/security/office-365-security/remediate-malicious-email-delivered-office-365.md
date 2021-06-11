@@ -28,11 +28,11 @@ ms.prod: m365-security
 Remediation means taking a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 P2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
-> To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md).
+> To remediate malicious email, security teams need the *search and purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Microsoft 365 security center** \> **Permissions & roles**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *search and purge* role assigned to them via **Microsoft 365 Defender** \> **Permissions & roles**. Without the "search and purge" role added to one of the role-groups, they won't be able to execute the action.
 
 ## Manual and automated remediation
 
@@ -131,11 +131,11 @@ Open any remediation item to view details about it, including its name, creation
 
   - **Failure**: The desired action on remediable emails failed. For example: An admin wants to remove emails from mailboxes, so the admin takes the action of soft-deleting emails. If a remediable email is still found in the mailbox after the action is taken, status will show as failed.
   
-  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one which are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
+  - **Already in destination**: The desired action was already taken on the email OR the email already existed in the destination location. For example: An email was soft deleted by the admin through Explorer on day one. Then similar emails show up on day 2, which are again soft deleted by the admin. While selecting these emails, admin ends up picking some emails from day one that are already soft deleted. Now these emails will not be acted upon again, they will just show as "already in destination", since no action was taken on them as they existed in the destination location.
 
   Select any item in the action log to display remediation details. If the details say "successful" or "not found in mailbox," that item was already removed from the mailbox. Sometimes there's a systemic error during remediation. In those cases, it's a good idea to retry remediation.
 
-  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages which got remediated via Action Logs. The export limit is increased to 100k records.
+  In case of remediating large batches, you can also export the messages send for remediation via Mail Submission and messages that got remediated via Action Logs. The export limit is increased to 100k records.
 
 Security team can take up to 50 concurrent manual remediations; however, there is no limit set for automated investigation and response actions.
 

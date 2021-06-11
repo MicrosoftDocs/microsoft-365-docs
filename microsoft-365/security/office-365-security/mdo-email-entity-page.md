@@ -28,14 +28,12 @@ Admins of Microsoft Defender for Office 365 (or MDO) E5, and MDO P1 and P2 have 
 
 ## Reach the email entity page
 
-
 Either of the existing [Security & Compliance center](https://protection.office.com) or new [Microsoft 365 Defender](https://security.microsoft.com) will let you see and use the email entity page.
 
 |Center|URL|Navigation|
 |---|---|---|
 |Security & Compliance Center|<https://protection.office.com>|Threat Management \> Explorer|
 |Microsoft 365 Defender portal|<https://security.microsoft.com>|Email & Collaboration \> Explorer|
-|
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -94,7 +92,7 @@ Users will see enriched detonation details for known malicious attachments or UR
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
 
 1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
-1. *Screenshots* shows the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
+1. *Screenshots* show the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
     - Container type files like .zip or .rar.
     - If a URL opens into a link that directly downloads a file. However, you will see the downloaded file in the detonation chain.
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:

@@ -36,7 +36,7 @@ This article explains the difference between Explorer and real-time detections r
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 
-In the [Microsoft 365 security center](https://security.microsoft.com), go to **Email & collaboration**, and then choose **Explorer** _or_ **Real-time detections**.
+In the [Microsoft 365 Defender](https://security.microsoft.com), go to **Email & collaboration**, and then choose **Explorer** _or_ **Real-time detections**.
 
 <br>
 
@@ -56,7 +56,7 @@ With these tools, you can:
 
 For more information, see [Email security with Explorer](email-security-in-microsoft-defender.md).
 
-## Differences between Threat Explorer and Real-time detections
+## Differences between Explorer and Real-time detections
 
 - *Real-time detections* is a reporting tool available in Defender for Office 365 Plan 1. *Threat Explorer* is a threat hunting and remediation tool available in Defender for Office 365 Plan 2.
 - The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it provides additional details for a given attack, such as highlighting attack campaigns, and gives security operations teams the ability to remediate threats (including triggering an [Automated Investigation and Response investigation](automated-investigation-response-office.md)).
@@ -74,7 +74,7 @@ Security Operations teams need to assign licenses for all users who should be pr
 
 To view and use Explorer *or* Real-time detections, you must have the following:
 
-- For the [Microsoft 365 security center](https://security.microsoft.com):
+- For the [Microsoft 365 Defender](https://security.microsoft.com):
 
   - Organization Management
   
@@ -94,7 +94,7 @@ To view and use Explorer *or* Real-time detections, you must have the following:
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 security center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)
 
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
