@@ -48,7 +48,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Remove relying party trusts from Microsoft Cloud Deutschland AD FS. | After the cut-over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to remove the relying party trust to the Microsoft Cloud Deutschland endpoints. This can only be done when none of the customer's applications points to Microsoft Cloud Deutschland endpoints when Azure AD is leveraged as an Identity Provider (IdP). | Federated Authentication organizations | None. |
+| Remove relying party trusts from Microsoft Cloud Deutschland AD FS. | After the cut-over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland. At this point, the customer needs to remove the relying party trust to the Microsoft Cloud Deutschland endpoints. This can only be done when none of the customer's applications points to Microsoft Cloud Deutschland endpoints when Azure AD is leveraged as an Identity Provider (IdP). | Federated Authentication organizations | 
 ||||
 
 <!--
