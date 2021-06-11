@@ -6,10 +6,14 @@
       href: compliance-quick-tasks.md
     - name: What's new in Microsoft 365 compliance
       href: whats-new.md
-    - name: Microsoft 365 compliance center
-      href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 compliance center
+      href: microsoft-365-compliance-center.md
+    - name: Permissions in the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Redirecting users to the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -241,7 +245,7 @@
             href: dlp-teams-default-policy.md
           - name: Learn about Microsoft 365 data loss prevention on-premises scanner (preview)
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Compliance Extension (preview)
+          - name: Learn about the Microsoft Compliance Extension
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
@@ -263,7 +267,7 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Endpoint DLP
             href: endpoint-dlp-configure-proxy.md
-          - name: Get started with the Microsoft Compliance Extension (preview)
+          - name: Get started with the Microsoft Compliance Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
@@ -427,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Webpages
               href: archive-webpagecapture-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -453,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon Network
               href: archive-verizon-network-data.md
+            - name: WeChat (preview)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
@@ -558,6 +566,8 @@
             href: configure-edge-to-export-search-results.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -690,14 +700,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Review case content
           items: 
-            - name: Use the review set dashboard
-              href: advanced-ediscovery-dashboard.md
-            - name: View documents in a review set
-              href: view-documents-in-review-set.md
             - name: Query and filter content in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
+            - name: View documents in a review set
+              href: view-documents-in-review-set.md
+            - name: Use the review set dashboard
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case content
           href: analyzing-data-in-review-set.md
           items: 
@@ -707,12 +717,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Themes
               href: themes-in-advanced-ediscovery.md
-            - name: Predictive coding module (preview)
+        - name: Use predictive coding (preview)
+          items: 
+            - name: Quick start - Predictive coding
+              href: predictive-coding-quick-start.md
+            - name: Learn about predictive coding
               href: predictive-coding-overview.md
-            - name: Use the Relevance module to analyze content
-              href: using-relevance.md
-            - name: Retirement of the Relevance module
-              href: relevance-module-retirement.md  
+            - name: Create a predictive coding model
+              href: predictive-coding-create-model.md
+            - name: Train a predictive coding model
+              href: predictive-coding-train-model.md
+            - name: Apply prediction score filter
+              href: predictive-coding-apply-prediction-filter.md
+            - name: Predictive coding reference
+              href: predictive-coding-reference.md
         - name: Export case content
           href: exporting-data-ediscover20.md
           items: 
