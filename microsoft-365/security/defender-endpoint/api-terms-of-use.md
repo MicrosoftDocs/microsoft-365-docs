@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+MS.technology: mde
+ms.custom: api
 ---
 
 # Microsoft Defender for Endpoint API license and terms of use
@@ -27,7 +28,7 @@ ms.technology: mde
 
 ## APIs
 
-Defender for Endpoint APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+Defender for Endpoint APIs are governed by [Microsoft API License and Terms of use](/legal/microsoft-apis/terms-of-use).
 
 ### Throttling limits
 

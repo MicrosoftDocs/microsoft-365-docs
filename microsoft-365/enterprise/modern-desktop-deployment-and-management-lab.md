@@ -1,5 +1,5 @@
 ---
-title: Windows and Office deployment lab kit
+title: Windows 10 and Office 365 deployment lab kit
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -17,21 +17,21 @@ ms.custom:
 description: Learn about and where to access the Windows and Office Deployment Lab Kit.
 ---
 
-# Windows and Office deployment lab kit
+# Windows 10 and Office 365 deployment lab kit
 
-The Windows and Office deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, Desktop Analytics, the Office Customization Tool, OneDrive, Windows Autopilot, and more.
+The Windows 10 and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, Desktop Analytics, the Office Customization Tool, OneDrive, Windows Autopilot, and more.
 
 This kit is highly recommended for organizations preparing for Windows 8.1 upgrades to Windows 10. It also applies if you're currently using Windows 10, Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus), or Office 2019. As an isolated environment, the resulting lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-[Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## A complete lab environment
 
 The kit provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an Internet gateway, and a fully configured Configuration Manager instance. The kit contains the latest evaluation versions of the following products:
 
-  - NEW! Windows 10 Enterprise, Version 20H2
+  - NEW! Windows 10 Enterprise, Version 21H1
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, Version 2010*
+  - NEW! Microsoft Endpoint Configuration Manager, Version 2103
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -42,6 +42,7 @@ The kit provides you with an automatically provisioned virtual lab environment, 
 The resulting lab is designed to be connected to trials for: 
 
   - Microsoft 365 E5
+  - Microsoft 365 Apps for enterprise
   - Office 365 E5 with Enterprise Mobility + Security (EMS)
 
 ## Step-by-step labs
@@ -90,11 +91,12 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 - Prepare, deploy, optimize
  
-## Where to find the Windows and Office Deployment Lab Kit
+## Where to find the Windows 10 and Office 365 deployment lab kit
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* The installed baseline version 2002 can be updated to Version 2010 using and in-console update. Please use a broad bandwidth Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The kit expires July 22, 2021. A new version will be published prior to expiration.
+> [!NOTE]
+> Please use a broadband Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The kit expires August 23, 2021. A new version will be published prior to expiration.
 
 ## Additional guidance
 
