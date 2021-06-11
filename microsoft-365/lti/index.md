@@ -34,7 +34,7 @@ These tools include a new OneDrive LTI app, a new Teams Meetings LTI app, and a 
 
 Learn the benefits of using Microsoft OneDrive with your Learning Management System (LMS).
 
-### Brings Microsoft Office 365 directly into your workflows
+**Brings Microsoft Office 365 directly into your workflows**
 
 The Microsoft OneDrive Learning Tools Interoperability (LTI) App integrates with your LMS to bring Microsoft OneDrive and Microsoft Office 365 directly into your most important workflows that include:
 
@@ -42,11 +42,11 @@ The Microsoft OneDrive Learning Tools Interoperability (LTI) App integrates with
 - Starting collaborative documents.
 - Creating and grading assignments.
 
-### Secure and fully compliant with latest LTI standards
+**Secure and fully compliant with latest LTI standards**
 
 The Microsoft OneDrive LTI App is compatible with LTI 1.3 and LTI Advantage. This advantage allows for a highly secure and tightly integrated user experience.
 
-### Modern and Rich User Experience
+**Modern and Rich User Experience**
 
 The Microsoft OneDrive LTI App brings the best of Microsoft right into your LMS experience. We're improving upon the existing Office 365 integration in your LMS by delivering a more modern user experience, complete with a new and expanded Microsoft OneDrive file picker and richer editing experiences for Office files. Microsoft will also fully own the Microsoft OneDrive LTI App going forward, which means you’ll always get the latest and greatest from Microsoft automatically.
 
