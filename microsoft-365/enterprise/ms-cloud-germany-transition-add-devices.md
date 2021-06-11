@@ -153,7 +153,8 @@ To check whether your devices are registered in the public cloud, you should exp
 
 ## Additional considerations
 
-**IMPORTANT:** The Intune service principal will be enabled after [phase 3 of the migration process](ms-cloud-germany-transition-phases.md#Phase-3:-Subscription-transfer), which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
+> [!IMPORTANT]
+> The Intune service principal will be enabled after [phase 3 of the migration process](ms-cloud-germany-transition-phases.md#Phase-3:-Subscription-transfer), which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
