@@ -247,7 +247,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to another user's mailbox with Fullaccess?
         answer: |
-          Users can open encrypted messages in outlook as long as they are given direct access and automapping is turned ON. Access is not allowed in outlook if the access is granted via an email-enabled security group. The users can access encrypted messages through Outlook on the web.
+          Users can open encrypted messages in Outlook as long as they are given direct access and automapping is turned ON. Access is not allowed in Outlook if the access is granted via an email-enabled security group. Users can access encrypted messages using Outlook on the web.
 
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
