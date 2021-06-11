@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Webpages
               href: archive-webpagecapture-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md    
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon Network
               href: archive-verizon-network-data.md
+            - name: WeChat (preview)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Work with a partner to archive third-party data
@@ -562,6 +566,8 @@
             href: configure-edge-to-export-search-results.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections

@@ -1,5 +1,5 @@
 ---
-title: Permissions in the Microsoft 365 security center
+title: Permissions in the Microsoft 365 Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn how to manage permissions in the Microsoft 365 security center for all tasks related to security.
+description: Admins can learn how to manage permissions in the Microsoft 365 Defender portal for all tasks related to security.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Permissions in the Microsoft 365 security center
+# Permissions in the Microsoft 365 Defender portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,33 +32,36 @@ ms.prod: m365-security
 
 You need to manage security scenarios that span all the Microsoft 365 services. And you need the flexibility to give the right admin permissions to the right people in your organization.
 
-The Microsoft 365 security center at <https://security.microsoft.com> supports directly managing permissions for users who perform security tasks in Microsoft 365. By using the security center to manage permissions, you can manage permissions centrally for all tasks related to security.
+The Microsoft 365 Defender portal at <https://security.microsoft.com> supports directly managing permissions for users who perform security tasks in Microsoft 365. By using the Microsoft 365 Defender portal to manage permissions, you can manage permissions centrally for all tasks related to security.
 
-To manage permissions in the security center, go to **Permissions & roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **global administrator** or a member of the **Organization Management** role group in the security center. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the security center, and by default, that role is assigned only to the **Organization Management** role group.
+To manage permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
+
+> [!NOTE]
+> For information about permissions in the Microsoft 365 compliance center, see [Permissions in the Microsoft 365 compliance center](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## Relationship of members, roles, and role groups
 
-Permissions in the security center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the security center will be very familiar.
+Permissions in the Microsoft 365 Defender portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 Defender portal will be very familiar.
 
 A **role** grants the permissions to do a set of tasks.
 
-A **role group** is a set of roles that lets people do their jobs in the security center. For example, the Attack Simulator Administrators role group includes the Attack Simulator Admin role to create and manage all aspects of attack simulation training.
+A **role group** is a set of roles that lets people do their jobs in the Microsoft 365 Defender portal. For example, the Attack Simulator Administrators role group includes the Attack Simulator Admin role to create and manage all aspects of attack simulation training.
 
-The security center includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
+The Microsoft 365 Defender portal includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
 
 ![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## Roles and role groups in the security center
+## Roles and role groups in the Microsoft 365 Defender portal
 
-The following types of roles and role groups are available in **Permissions & roles** in the security center:
+The following types of roles and role groups are available in **Permissions & roles** in the Microsoft 365 Defender portalr:
 
-- **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the security center. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
+- **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
 
-- **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the security center. The permissions that you assign here are specific to the Microsoft 365 security center, the Microsoft 365 compliance center, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
+- **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the Microsoft 365 Defender portal. The permissions that you assign here are specific to the Microsoft 365 Defender portal, the Microsoft 365 compliance center, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
 
-![Permissions & roles page in the Microsoft 365 security center](../../media/m365-sc-permissions-and-roles-page.png)
+![Permissions & roles page in the Microsoft 365 Defender portal](../../media/m365-sc-permissions-and-roles-page.png)
 
-### Azure AD roles in the security center
+### Azure AD roles in the Microsoft 365 Defender portal
 
 When you go **Email & collaboration roles** \> **Permissions & roles** \> **Azure AD roles** \> **Roles** (or directly to <https://security.microsoft.com/aadpermissions>) you'll see the Azure AD roles that are described in this section.
 
@@ -85,15 +88,15 @@ For more information, see [View and assign administrator roles in Azure Active D
 |**Attack payload author**|Create attack payloads but not actually launch or schedule them. For more information, see [Attack Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
-### Email & collaboration roles in the security center
+### Email & collaboration roles in the Microsoft 365 Defender portal
 
 When you go to **Email & collaboration roles** \> **Permissions & roles** \> **Email & collaboration roles** \> **Roles** (or directly to <https://security.microsoft.com/emailandcollabpermissions>) you'll see the same role groups that are available in the Security & Compliance Center.
 
 For complete information about these role groups, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
-#### Modify Email & collaboration role membership in the security center
+#### Modify Email & collaboration role membership in the Microsoft 365 Defender portal
 
-1. In the security center, go to **Email & collaboration roles** \> **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration roles** \> **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
 
 2. In the **Permissions** page that opens, select the role group that you want to modify from the list. You can click on the **Name** column header to sort the list by name, or you can click **Search** ![Search icon](../../media/m365-cc-sc-search-icon.png) to find the role group.
 

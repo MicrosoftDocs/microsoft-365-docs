@@ -104,10 +104,8 @@ For more information about the diagnostic data collection of Windows 10, see the
 Direct access to Microsoft Managed Desktop’s internal data stores is restricted in several ways:
 
 - It requires engineering lead level approval.
-- It is both audited and time limited.
-- It requires the use of a highly secured and restricted workstation.
+- It is time-bounded and audited.
 - All data is encrypted while it is stored.
-- There is no standing access.
 - Access to Microsoft Managed Desktop’s internal management portal requires a highly secured and restricted workstation.
 
 ## Processing personal data in a compliant manner

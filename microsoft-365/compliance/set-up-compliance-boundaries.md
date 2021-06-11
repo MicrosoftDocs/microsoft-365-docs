@@ -88,6 +88,9 @@ Although more user attributes are available, particularly for Exchange mailboxes
   
 ## Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts
 
+> [!IMPORTANT]
+> This step is no longer required. Starting in June 2021, mailbox filters will apply to OneDrive for Business. Support requests to synchronize the attribute to OneDrive will be declined because it's no longer required. This article will be updated in the near future.
+
 The next step is to file a request with Microsoft Support to synchronize the Azure AD attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property named `ComplianceAttribute`. You use this attribute to create the search permissions filter for OneDrive in Step 4.
   
 Include the following information when you submit the request to Microsoft support:
