@@ -44,10 +44,15 @@ If you use the optional configuration to scope your retention settings to specif
 
 Maximum numbers of items per policy for retention:
 
-  - 1,000 mailboxes (user mailboxes or group mailboxes)
-  - 1,000 Microsoft 365 groups
-  - 1,000 users for Teams private chats
-  - 100 sites (OneDrive or SharePoint)
+- 1,000 mailboxes (user mailboxes or group mailboxes)
+- 1,000 Microsoft 365 groups
+- 1,000 teams for Teams channel messages
+- 1,000 users for Teams chat messages
+- 1,000 communities for Yammer community messages
+- 1,000 users for Yammer user messages
+- 100 sites (OneDrive or SharePoint)
+
+Skype for Business has to be scoped to specific users and the maximum number supported per policy is 1,000.
 
 Because these limitations are per policy, if you need to use specific inclusions or exclusions that result in going over these numbers, you can create additional policies that have the same retention settings. See the next section for some [example scenarios and solutions](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) that use multiple retention policies for this reason.
 
