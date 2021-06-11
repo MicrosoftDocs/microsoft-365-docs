@@ -46,7 +46,7 @@ When a topic is mentioned in content on SharePoint news and pages, you'll see it
 
 ### Search results
 
-You can see a [topic answer](search.md#topic-answer) in search results when you search from your SharePoint home page, search on office.com, or search from a SharePoint site after you you change the search scope to include the full organization. The topic answer will appear at the topic of the results list and give you a short set of information related to that topic. 
+You can see a [topic answer](search.md#topic-answer) in search results when you search from the SharePoint start page, search on office.com, or search from a SharePoint site after you you change the search scope to include the full organization. The topic answer will appear at the topic of the results list and give you a short set of information related to that topic. 
 
    ![Screenshot showing the search results of a SharePoint site search.](../media/knowledge-management/site-search-results.png) 
 
