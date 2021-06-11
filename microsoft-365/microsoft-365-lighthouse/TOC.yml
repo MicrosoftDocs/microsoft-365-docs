@@ -1,10 +1,10 @@
 - name: Microsoft 365 Lighthouse
   items: 
-    - name: Overview
+    - name: Overview of Microsoft 365 Lighthouse
       href: overview-m365-lighthouse.md
 - name: Get started
   items: 
-    - name: Sign up
+    - name: Sign up for Microsoft 365 Lighthouse
       href: sign-up-m365-lighthouse.md
     - name: Enable features for customers
       href: 
@@ -16,7 +16,7 @@
   items: 
     - name: Overview of Baselines
       href: 
-    - name: Apply Baselines to tenants
+    - name: Deploy standard configurations to tenants
       href: 
 - name: Manage tenants
   items: 
@@ -24,7 +24,7 @@
       href: 
 - name: Get help and support
   items: 
-    - name: Contact support
+    - name: Get help and support
       href: 
-    - name: FAQ
+    - name: Microsoft 365 Lighthouse FAQ
       href: 
