@@ -18,7 +18,7 @@ While Viva Topics users can find topics through topic highlights in their ShareP
 
 ## Topic answer
 
-When you search for a specific topic from the SharePoint home page, on Office.com, or from a SharePoint site that has been scoped to your organization, if a topic exists and is found, it will display the result in the topic answer suggestion format.
+When you search for a specific topic from the SharePoint start page, on Office.com, or from a SharePoint site that has been scoped to your organization, if a topic exists and is found, it will display the result in the topic answer suggestion format.
 
 The topic answer will display:
 
