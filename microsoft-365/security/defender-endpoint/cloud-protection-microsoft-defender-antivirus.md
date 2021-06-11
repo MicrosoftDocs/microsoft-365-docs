@@ -14,6 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
+ms.date: 06/03/2021
 ---
 
 # Cloud-delivered protection and Microsoft Defender Antivirus

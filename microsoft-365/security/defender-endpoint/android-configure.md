@@ -34,7 +34,7 @@ based on device risk levels. Defender for Endpoint is a Mobile Threat Defense
 (MTD) solution that you can deploy to leverage this capability via Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and
-Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+Intune](/mem/intune/protect/advanced-threat-protection).
 
 ## Configure custom indicators  
 
@@ -48,7 +48,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 
 > [!NOTE]
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device. 
-For more information, see [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
+For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Related topics
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
