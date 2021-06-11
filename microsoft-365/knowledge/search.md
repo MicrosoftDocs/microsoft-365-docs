@@ -18,9 +18,10 @@ While Viva Topics users can find topics through topic highlights in their ShareP
 
 ## Topic answer
 
-When you search for a specific topic in Microsoft Search (for example, "Saturn"), if a topic exists and is found, it will display the result in the topic answer suggestion format.
+When you search for a specific topic from the SharePoint home page, on Office.com, or from a SharePoint site that has been scoped to your organization, if a topic exists and is found, it will display the result in the topic answer suggestion format.
 
 The topic answer will display:
+
 - Topic name
 - Alternate names: Alternate names or acronyms for the topic.
 - Definition: Description of the topic provided by AI or manually added by a person.
@@ -31,12 +32,11 @@ The topic answer will display:
 
 The topic page can display in the search results even if the topic answer card doesn't appear.
 
-The search results in Word, PowerPoint, Outlook and Excel will also show the topic answer when one is found.
-
+The search results in Word, PowerPoint, Outlook, and Excel will also show the topic answer when one is found.
 
 ## Acronyms
 
-In Viva Topics, you can manually edit a topic to include an acronym for it as an <b>Alternate Name</b>. This allows a user who is searching by only the topic's acronym to find the topic answer through Microsoft Search.
+In Viva Topics, you can manually edit a topic to include an acronym for it as an *Alternate Name*. This allows a user who is searching by only the topic's acronym to find the topic answer through Microsoft Search.
 
 [Acronym Answers](/microsoftsearch/manage-acronyms) is a feature provided though Microsoft Search and is managed separately from Viva Topics.
 
@@ -47,8 +47,13 @@ In Viva Topics, you can manually edit a topic to include an acronym for it as an
 For users who are looking for information about booking a trip for work:
 
 - If some users know the travel tool name (for example, "Concur"), it's easier to create a bookmark to go directly to the external site.
+
 - For users who search generally for "travel", create a topic on "Travel" that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the “Pinned Resources”.
  
 ### Search results priority 
 
 In the user's search experience, when a user searches for a term like “travel”, a bookmark will appear in place of a topic, if a bookmark is available.
+
+## See also
+
+[Viva Topics overview](topic-experiences-overview.md)
