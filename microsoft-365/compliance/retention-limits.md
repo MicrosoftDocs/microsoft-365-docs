@@ -92,4 +92,4 @@ For the [disposition of content](disposition.md), there are some limits to be aw
 
 - Proof of disposition for up to seven years after the item was disposed, with a limit of 1,000,000 items per retention label for that period. 
     
-    If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../business-video/get-help-support.md).
+If you need proof of disposition higher than this limit of 1,000,000 for items that are marked as records, contact [Microsoft Support](../business-video/get-help-support.md).
