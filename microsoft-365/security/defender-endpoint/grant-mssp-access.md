@@ -36,9 +36,9 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 1. Enable [role-based access control](rbac.md) in Defender for Endpoint and connect with Active Directory (AD) groups.
 
-2. Configure [Governance Access Packages](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
+2. Configure [Governance Access Packages](/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 
-3. Manage access requests and audits in [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve).
+3. Manage access requests and audits in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## Enable role-based access controls in Microsoft Defender for Endpoint
 
@@ -87,7 +87,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     ![Image of new catalog](images/goverance-catalog.png)
 
-    Further more information, see [Create a catalog of resources](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create).
+    Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 
 3. **Create access packages for MSSP resources Customer AAD: Identity Governance**
@@ -104,7 +104,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
     > [!div class="mx-imgBorder"]
     > ![Image of new access package](images/new-access-package.png)
 
-    For more information, see [Create a new access package](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create).
+    For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 
 4. **Provide access request link to MSSP resources from Customer AAD: Identity Governance**
