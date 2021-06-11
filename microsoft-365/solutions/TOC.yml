@@ -162,9 +162,33 @@
         - name: Case study for multi-national corporation 
           href: /MicrosoftTeams/voice-case-study-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Manage contracts for your business
-        href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+        items:
+          - name: Overview
+            href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Step 1. Use SharePoint Syntex
+            href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Step 2. Use Microsoft Teams
+            href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Step 3. Power Automate
+            href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
       - name: Build an intelligent SharePoint intranet
-        href: /sharepoint/intelligent-internet-overview.md
+        items:
+          - name: Overview
+            href: /sharepoint/intelligent-internet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: How to think about your intelligent intranet
+            href: /sharepoint/itrad-vs-modern-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Intranet roadmap
+            href: /sharepoint/iintranet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Plan your intranet
+            href: /sharepoint/iplan-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Considerations when planning for a global intranet
+            href: /sharepoint/iset-up-global-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Intranet governance
+            href: /sharepoint/iintranet-governance.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - name: Workplace communication
+            href: /sharepoint/iworkplace-communications.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
       - name: Collaboration governance
         items:
         - name: Overview
@@ -204,16 +228,16 @@
           - name: End of lifecycle options
             href: end-life-cycle-groups-teams-sites-yammer.md
       - name: File collaboration in SharePoint with Microsoft 365
-        href: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /sharepoint/deploy-file-collaboration
       - name: OneDrive Guide for enterprises
-        href: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /onedrive/plan-onedrive-enterprise
 
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
-        href: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../security/top-security-tasks-for-remote-work.md
       - name: Microsoft 365 security for Business Decision Makers (BDMs)
-        href: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../security/microsoft-365-security-for-bdm.md
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
       - name: Deploy Microsoft Defender for Endpoints
@@ -263,9 +287,9 @@
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
       - name: Teams voice migration
-        href: /MicrosoftTeams/voice-case-study-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /MicrosoftTeams/voice-case-study-overview.md
       - name: Contoso compliance case study
-        href: ../compliance/communication-compliance-case-study.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&view=o365-worldwide%3ftoc%3d%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: ../compliance/communication-compliance-case-study.md
 
     - name: Test Lab Guides
       items:
@@ -287,17 +311,17 @@
     - name: Healthcare
       items: 
       - name: Teams for Healthcare
-        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc.md
     - name: Education
       items: 
       - name: Teams for Education
-        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page.md
     - name: Government
       items:
       - name: Teams for Government
-        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page.md
       - name: Support remote government workers using Teams
-        href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams.md
 - name: Enterprise architecture design principles
   items: 
     - name: Overview
