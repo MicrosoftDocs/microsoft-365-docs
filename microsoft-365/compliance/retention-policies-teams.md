@@ -66,7 +66,7 @@ Teams uses an Azure-powered chat service as its primary storage for all messages
 Although this data from Teams chats and channel messages are stored in mailboxes, you must configure a retention policy for the **Teams channel messages** and **Teams chats** locations. Teams chats and channel messages are not included in retention policies that are configured for Exchange user or group mailboxes.
 
 > [!NOTE]
-> If a user is included in an active retention policy that retains Teams messages and you a delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
+> If a user is included in an active retention policy that retains Teams messages and you delete a mailbox of a user who is included in this policy, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md) to retain the Teams data. If you don't need to retain this Teams data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
 After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job typically takes 1-7 days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted. 
 
