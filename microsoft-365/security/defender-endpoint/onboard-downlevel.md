@@ -194,7 +194,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
     Download updates for Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [For Windows Server 2008 R2 x64](http://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [For Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
     
     >[!NOTE]
     > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
