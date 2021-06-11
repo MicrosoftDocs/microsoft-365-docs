@@ -266,7 +266,9 @@ Use the following table to help you identify whether to use a retention policy o
 <sup>\*</sup>
 For retention labels that don't mark the content as a record or regulatory record, auditing events are restricted to when an item in SharePoint has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
 
-Note that you can use both retention policies and retention labels as complementary retention methods. For example:
+### Combining retention policies and retention labels
+
+You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution. For example:
 
 1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
