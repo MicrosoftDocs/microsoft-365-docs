@@ -96,7 +96,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 
-- Memory: 1 GB
+- Cores - 2 minimum, 4 preferred
+
+- Memory: 1 GB minimum, 4 preferred
 
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
