@@ -540,6 +540,8 @@
 ####### [Find machines by tag](find-machines-by-tag.md)
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
+####### [Update machine](update-machine-method.md)
+
 
 
 ###### [Machine Action]()

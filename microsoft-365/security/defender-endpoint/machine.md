@@ -50,6 +50,7 @@ Method|Return Type |Description
 [Find machines by tag](find-machines-by-tag.md) | [machine](machine.md) collection | Find machines by [Tag](machine-tags.md).
 [Get missing KBs](get-missing-kbs-machine.md) | KB collection | Get a list of missing KBs associated with the machine ID
 [Set device value](set-device-value.md)| [machine](machine.md) collection | Set the [value of a device](tvm-assign-device-value.md).
+[Update machine](update-machine-method.md) |[machine](machine.md) collection | Get the update status of a machine.
 
 ## Properties
 
