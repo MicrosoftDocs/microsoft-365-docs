@@ -3,7 +3,7 @@ title: Use Microsoft Teams classes with Blackboard
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman 
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,7 +14,6 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Integrate Microsoft Teams classes in your Learning Management System"
 ---
-
 
 # Use Microsoft Teams classes with Blackboard
 

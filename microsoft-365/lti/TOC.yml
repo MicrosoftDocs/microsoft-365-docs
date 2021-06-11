@@ -1,0 +1,11 @@
+    - name: M365 Office LTI (Preview)
+      href: index.md
+
+    - name: Use Microsoft OneDrive LTI with Canvas (Preview)
+      href: use-onedrive-with-lms.md
+    - name: Use Microsoft Teams classes with Canvas (Preview)
+      href: teams-classes-with-canvas.md
+    - name: Use Microsoft Teams meetings with Canvas (Preview)
+      href: teams-meetings-with-canvas.md
+    - name: Use Microsoft Teams classes with Blackboard (Preview)
+      href: teams-classes-lms.md

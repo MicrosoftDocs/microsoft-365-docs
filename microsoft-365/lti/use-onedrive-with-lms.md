@@ -15,44 +15,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new OneDrive Learning Tools Interoperability App."
 ---
 
-# Use Microsoft OneDrive with your Learning Management System
+# Use Microsoft OneDrive LTI with Canvas
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-Learn the benefits of using Microsoft OneDrive with your Learning Management System (LMS).
-
-**Brings Microsoft Office 365 directly into your workflows**
-
-The Microsoft OneDrive Learning Tools Interoperability (LTI) App integrates with your LMS to bring Microsoft OneDrive and Microsoft Office 365 directly into your most important workflows that include:
-
-- Attaching resources and organizing content.
-- Starting collaborative documents.
-- Creating and grading assignments.
-
-**Secure and fully compliant with latest LTI standards**
-
-The Microsoft OneDrive LTI App is compatible with LTI 1.3 and LTI Advantage. This advantage allows for a highly secure and tightly integrated user experience.
-
-**Modern and Rich User Experience**
-
-The Microsoft OneDrive LTI App brings the best of Microsoft right into your LMS experience. We're improving upon the existing Office 365 integration in your LMS by delivering a more modern user experience, complete with a new and expanded Microsoft OneDrive file picker and richer editing experiences for Office files. Microsoft will also fully own the Microsoft OneDrive LTI App going forward, which means you’ll always get the latest and greatest from Microsoft automatically.
-
-The Microsoft OneDrive LTI App allows you to:
-
-- Attach Office 365 files including Word documents, PowerPoint presentations, and Excel from the Rich Content Editor.
-
-- Distribute Office 365 cloud assignments.
-
-- View and organize your personal and course Microsoft OneDrive files.
-
-- Create collaborations where course members can work together on shared documents in real time.
-
-- Access multiple Microsoft OneDrive accounts, including personal and school accounts.
-
-- Integrate Office 365 files with your course modules.
-
-- Use your Microsoft account for single sign-on with your LMS.
 
 ## Integrate with Canvas
 
