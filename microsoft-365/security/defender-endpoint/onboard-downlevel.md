@@ -177,7 +177,7 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ### Using Group Policy
 
-**Step-1: Download the corresponding udpate for your endpoint.**
+**Step 1: Download the corresponding udpate for your endpoint.**
 
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
@@ -190,17 +190,17 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
     February 2018 Monthly Roll up - KB4074598 (Windows Server 2008 R2)
 
-    [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)_
+    [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)<br>
     Download updates for Windows Server 2008 R2 x64
     
-    .NET Framework 3.5.1 (KB315418)
+    .NET Framework 3.5.1 (KB315418)<br>
     [For Windows Server 2008 R2 x64](http://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
     
     >[!NOTE]
     > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
 
 
-**Step-2: Create a file name DeployMMA.cmd (using notepad)**
+**Step 2: Create a file name DeployMMA.cmd (using notepad)**
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 The following command is an example. Replace the following values:
@@ -283,10 +283,11 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
-•	Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-•	Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-Please check the KBs are present before onboarding Windows Server 2008 R2. This process allows you to onboard all the servers if you don’t have Configuration Manager managing Servers.
+- Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+
+Please check the KBs are present before onboarding Windows Server 2008 R2. This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
 
 
 ## Offboard endpoints
