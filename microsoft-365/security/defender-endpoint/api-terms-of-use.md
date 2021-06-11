@@ -28,7 +28,7 @@ ms.custom: api
 
 ## APIs
 
-Defender for Endpoint APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+Defender for Endpoint APIs are governed by [Microsoft API License and Terms of use](/legal/microsoft-apis/terms-of-use).
 
 ### Throttling limits
 
