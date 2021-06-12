@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: bcarter
-author: brendacarter
+ms.author: tracyp
+author: MSFTTracyP
 ms.date: 05/18/2021
 localization_priority: Normal
 manager: dansimp 
@@ -37,26 +37,30 @@ Cyberattacks can cause major problems, from a loss of trust to financial woes, f
 
 **Applies to:**
 - Microsoft 365 Defender
-**The strength of Microsoft security solutions is built on *trillions* of signals Microsoft processes every day in the Intelligent Security Graph**. This experience becomes the basis for 'teaching' security solutions like *Microsoft 365 Defender*, which  brings together signals from across your *email*, *data*, *devices*, *apps*, and *identities* to paint a picture of advanced threats against your organization. Microsoft 365 E5 security solutions are *built into* Microsoft products and services. These include machine learning and automation that can lighten the load faced by security teams by processing the flood of data and alerting security teams to only the signals they need to see.
 
-Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite that coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
+As threats become more complex and persistent, security teams can become overwhelmed. The consequences of a security breach can be severe. Protecting against threats is *critical*, but it can be challenging to decide where to focus your organization's time, effort, and resources. Microsoft 365 Defender automatically analyzes threat data across your environment, building a complete picture of each attack in a single dashboard. With this breadth and depth of clarity defenders can now focus on critical threats and hunt for sophisticated breaches, trusting that the powerful automation in Microsoft 365 Defender detects and stops attacks anywhere in the kill chain and returns the organization to a secure state.
 
-> [!IMPORTANT]
-> ***You can do the work once*** by evaluating in an existing online environment, and end your evaluation by promoting those configurations from evaluation to live.
+This guidance steps you through the process of setting up an evaluation environment so you can begin to see the strength of Microsoft 365 Defender in your own live environment. You'll enable each component, configure starting-point settings, and begin monitoring with a pilot group (where applicable). When you're ready, you can promote your evaluation environment to production. 
+
+Yes, Microsoft recommends creating your evaluation environment in your existing production environment! You will gain insights immediately through the shared signals. You can tune settings to work against current threats. After you've gained experience, you can promote each component of Microsoft 365 Defender to production (one at a time). You can also gradually increase the scope of the pilot group until you've reached production capacity. 
+
 
 ## The anatomy of thwarting an Attack
+
+Microsoft 365 Defender is a Cloud-based, unified, pre- and post-breach enterprise defense suite that coordinates *prevention*, *detection*, *investigation*, and *response* across endpoints, identities, apps, email, collaborative applications, and all of their data.
 
 In this illustration an attack is underway. Phishing email arrives at the Inbox of an employee in your organization, who unknowingly opens the email attachment. This installs malware, which leads to a chain of events that could end with the theft of sensitive data. But in this case, Defender for Office 365 is in operation.
 
 ![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
 
+In the illustration: 
 - **Exchange Online Protection**, part of Microsoft Defender for Office 365, can detect the phishing email and use mail flow rules to make certain it never arrives in the Inbox.
 - **Defender for Office 365** safe attachments tests the attachment and determines it is harmful, so the mail that arrives either isn't actionable by the user, or policies prevent the mail from arriving at all.
 - **Defender for Endpoint** manages devices that connect to the corporate network and detect device and network vulnerabilities that might otherwise be exploited.
 - **Defender for Identity** takes note of sudden account changes like privilege escalation, or high-risk lateral movement. It also reports on easily exploited identity issues like unconstrained Kerberos delegation, for correction by the security team.
 - **Microsoft Cloud App Security** notices anomalous behaviour like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team.
 
-## Understand Microsoft 365 Defender components
+### Microsoft 365 Defender components
 
 Microsoft 365 Defender is made up of these security technologies, operating in tandem:
 
@@ -70,6 +74,8 @@ Microsoft 365 Defender is made up of these security technologies, operating in t
 
 ## Microsoft 365 Defender architecture
 
+**The strength of Microsoft security solutions is built on *trillions* of signals Microsoft processes every day in the Intelligent Security Graph**. This experience becomes the basis for 'teaching' security solutions like *Microsoft 365 Defender*, which  brings together signals from across your *email*, *data*, *devices*, *apps*, and *identities* to paint a picture of advanced threats against your organization. Microsoft 365 E5 security solutions are *built into* Microsoft products and services. These include machine learning and automation that can lighten the load faced by security teams by processing the flood of data and alerting security teams to only the signals they need to see.
+
 The diagram below illustrates high-level architecture for key Microsoft 365 Defender components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
 ![Microsoft 365 Defender high-level architecture](../../media/defender/m365-defender-eval-architecture.png)
@@ -78,37 +84,53 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 |---------|---------|
 |A     |     External access and entry points (including email, sharing, and collaboration) for Microsoft 365 services is primarily controlled by Azure Active Directory (where conditional access and other access policies are enforced) and Exchange Online Protection policies.    |
 |B     |    Microsoft Defender for Identity analyzes authentication and authorization signals from Azure Active Directory to evaluate and report risk-based conditional access and other threats. If Active Directory Domain Services and Active Directory Federation services are used in the environment, signals from these service are also used. |
-|C     |    Microsoft Defender for Office 365 is used to manage, monitor, and enforce advanced threat protection policies for Exchange Online, SharePoint Online, Microsoft Teams, and OneDrive for Business. Microsoft Defender for Office 365 can also evaluate signals from Microsoft Defender for Identity.   |
+|C     |    Microsoft Defender for Office 365 is used to manage, monitor, and enforce advanced threat protection policies for Exchange Online, SharePoint Online, Microsoft Teams, and OneDrive for Business. Microsoft Defender for Office 365 also evaluates signals from Microsoft Defender for Identity.   |
 |D    |    Microsoft Defender for Endpoint manages and enforce advanced device protections while integrating and evaluating signals from Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Cloud App Security.    |
 |E    |   Microsoft Cloud App Security evaluates identity, endpoint, and Office 365 signals to provide policy-based protection and reporting for cloud applications, including Microsoft 365 apps.  |
 |F    |    Microsoft 365 Security Center offers a unified dashboard to configure and manage most Defender components and to perform investigations. The shared signals across the Microsoft 365 Defender components are stitched together across alerts and incidents, illuminating the breadth of a breach. Currently, Microsoft Cloud App Security policies are configured directly in the Cloud App Security dashboard.  |
 |G    |    Azure Active Directory is the primary authentication provider for all Microsoft 365 services and used to evaluate, enforce, and control Microsoft Defender policies.     |
+| | |
 
 Additional optional architecture components not included in this illustration:
 - Identity provisioning and federated authentication can be integrated with on-premises Active Directory Domain Services by deploying Azure Active Directory Connect and/or Active Directory Federation Services. These are monitored using Microsoft Defender for Identity. 
 - Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.   
 
-## Plan your Evaluation
+## The evaluation process
 
-> [!IMPORTANT]
-> **Be sure to review** the architectural requirements before you enable the evaluation of each component in Microsoft 365 Defender.
+Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-**You can start** with the creation of an evaluation environment, or you can use an existing environment, but the *recommended* process is to start with Defender for Identity, and then enable evaluation for Defender for Office (this product includes EOP and so you will actually evaluate *both* here), Defender for Endpoint, and Cloud App Security.
+![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
 
+The following table describes this illustration.
+|      |Step  |Description  |
+|------|---------|---------|
+|1     | [Create the evaluation environment ](eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
+|2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements and enable the evaluation. This component cannot be limited to a pilot group.         |
+|3     | [Enable Defender for Office 365 ](eval-defender-office-365-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment. This component includes Exchange Online Protection and so you will actually evaluate *both* here.      |
+|4     | [Enable Defender for Endpoint ](eval-defender-endpoint-overview.md)       | Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.         |
+|5     | [Enable Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.        |
+|6     | [Investigate and respond to threats](eval-defender-investigate-respond.md)        |   Simulate an attack and begin using the incident response capabilities      |
+|7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
+
+Of course you can prioritize the components to meet your business needs and enable these in a different order. 
+
+
+<!--
 Next create any pilot user groups or specifics of the pilot environment you want to evaluate in (if this is an environment without real business signals, some of the work here might include prepping to use Attack Simulator in Defender for Office). If you are aware of the reporting in Microsoft 365 Defender, you can choose any measurement metrics during this phase.
 
 Now investigate and respond to threats, and keep a log of your experience. This may include taking note of the reports generated, who should see and act on them, and the number of threats logged, for example. Or it may involve polling your pilot group for feedback as you apply features and policies. The metrics should be determined by your priorities.
 
 **At the end** of the evaluation process, if you are testing in an existing environment, simply promote your evaluation configurations to production. If you're testing in an isolated environment, you may plan to take what you've already learned and evaluate in an existing live environment next. This will give you the opportunity to apply your learnings and configurations to the live environment post evaluation.
+-->
 
-![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
-
+<!--
 > [!IMPORTANT]
 > If you already have a production M365 tenant, then you can activate E5 trial licenses to evaluate M365 Defender in your *current environment* and ultimately retain these features with the purchase of licenses after the evaluation period.
 
 > [!TIP]
 > This is the *recommended* configuration. However, your configuration may vary according to the needs of your company.
+-->
 
-## Other Articles in this series
+## Next steps
 
 [Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
