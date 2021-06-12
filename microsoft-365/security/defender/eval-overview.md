@@ -112,6 +112,7 @@ The following table describes this illustration.
 |5     | [Enable Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.        |
 |6     | [Investigate and respond to threats](eval-defender-investigate-respond.md)        |   Simulate an attack and begin using the incident response capabilities      |
 |7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
+| | | |
 
 Of course you can prioritize the components to meet your business needs and enable these in a different order. 
 
