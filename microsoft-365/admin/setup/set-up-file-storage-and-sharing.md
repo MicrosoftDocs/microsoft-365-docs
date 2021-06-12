@@ -56,7 +56,7 @@ Here are recommendations for what to store in each location when you use OneDriv
   
 |Storage location|What's it for|What to store here|
 |:-----|:-----|:-----|
-|**OneDrive** |Storing content in OneDrive is like storing files on your computer; no one else can easily access them.<br/> For more info, see [What is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Business files that other team members won't need to collaborate on or access regularly.<br/> ||
+|**OneDrive** |Storing content in OneDrive is like storing files on your computer; no one else can easily access them.<br/> For more info, see [What is OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Business files that other team members won't need to collaborate on or access regularly.<br/> |
 |**SharePoint team sites** <br/> |Collaboration. When you create a Microsoft 365 group (for example, in the Microsoft 365 admin center, in Outlook, or by creating a team in Microsoft Teams), a SharePoint team site is created for that group. Likewise, when you create a new SharePoint team site from the SharePoint home page or from the new SharePoint admin center, it also creates a Microsoft 365 group. For more info, see [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) and [Create a team site in SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Files that have shared ownership. We recommend separate team sites for each unit of work in your organization. For example, to keep personnel and financial documents private to a small team, create a separate team site.  <br/> |
 
 > [!NOTE]
