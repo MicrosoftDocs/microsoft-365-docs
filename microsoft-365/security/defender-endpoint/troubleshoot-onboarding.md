@@ -330,7 +330,7 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 <div class="alert"><b>NOTE:</b> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384) </br> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396) </br> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391) </div> 
-
+<br></br>
 > [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
