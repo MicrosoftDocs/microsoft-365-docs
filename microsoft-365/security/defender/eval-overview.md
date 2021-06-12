@@ -102,6 +102,7 @@ Microsoft recommends enabling the components of Microsoft 365 in the order illus
 ![Microsoft 365 Defender high-level evaluation process](../../media/defender/m365-defender-eval-process.png)
 
 The following table describes this illustration.
+
 |      |Step  |Description  |
 |------|---------|---------|
 |1     | [Create the evaluation environment ](eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
