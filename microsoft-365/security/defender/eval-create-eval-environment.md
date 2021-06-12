@@ -25,12 +25,16 @@ ms.technology: m365d
 ---
 # Create the Microsoft 365 Defender Evaluation Environment
 
+<!--
 - [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 - [What's next?](#whats-next)
+-->
 
-There are two common ways to do this next step in evaluation. This document assumes you already have a production M365 tenant, and will activate E5 trial licenses to evaluate M365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.
+There are two common ways to create an evaluation environment. This article assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft 365 Defender in *the current environment* in order to ultimately retain these features with the purchase of licenses after the evaluation period.
 
 The second is to <!--[build an environment from scratch](m365d-evaluation.md)--> [Set up your Microsoft 365 Defender trial lab environment](setup-m365deval.md) for the purpose of evaluation. It may not have many real signals from the business, so be aware of that caveat.
+
+## To activate E5 trial licenses to evaluate Microsoft 365 Defender 
 
 1. Logon to your existing M365 tenant administration portal.
 2. Select "Purchase Services" from the navigation menu.
@@ -49,11 +53,16 @@ The second is to <!--[build an environment from scratch](m365d-evaluation.md)-->
 
 :::image type="content" source="../../media/MDOEval/4. Four.PNG" alt-text="There is a 'Try Now' buttong on the 'Check out, confirm your order' panel (for a Office 365 E5 trial of a month for 25 users).":::
 
-## What's next?
+## Next steps
 
+[Enable Microsoft 365 for Identity](eval-defender-identity-overview.md)
+
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+
+<!--
 It's recommended you begin with Microsoft Defender for Identity, and move on from there as shown (left to right) in the table below. But begin where your own assessment of your organization's determine is best for your implementation.
 
-<!-- Dividing this up by Intent, the next step should be to Enable Eval, then Pilot, then Invest & Respond. The reference material of Architecture et cetera, can come afterward in the same section. This table should link off to Enable Eval for MDO and the transitions from there to pilot et al should be seamless. -->
+ Dividing this up by Intent, the next step should be to Enable Eval, then Pilot, then Invest & Respond. The reference material of Architecture et cetera, can come afterward in the same section. This table should link off to Enable Eval for MDO and the transitions from there to pilot et al should be seamless. 
 
 |  |  | |  |
 |---------|---------|---------|---------|
@@ -64,3 +73,4 @@ It's recommended you begin with Microsoft Defender for Identity, and move on fro
 
 [**Return to the Eval Overview** 'Evaluate and pilot Microsoft 365 Defender' | Microsoft Docs](../office-365-security/defender/eval-overview.md) 
 
+-->
