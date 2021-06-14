@@ -36,7 +36,7 @@ To designate the Cortana Scheduler mailbox, an authorized admin must run a one-l
 
 ```powershell
 
-Set-mailbox cortana@contoso.com -SchedulerAssistant:$true
+Set-Mailbox -Identity cortana@contoso.com -SchedulerAssistant:$true
 
 ```
 
@@ -49,7 +49,7 @@ To discover which mailbox in your organization is currently set as the Cortana S
  
 ```powershell
 
-Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
+Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 
 ```
 
