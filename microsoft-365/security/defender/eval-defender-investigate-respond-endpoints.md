@@ -61,7 +61,7 @@ If you use tenant and device groups, create a dedicated device group for the tes
 
 ## Next step
 
-[Simulate an attack and response with Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attacks.md)
+Step 2 of 3: [Simulate an attack and response with Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attacks.md)
 
 ### Navigation you may need
 
