@@ -45,7 +45,7 @@ In this example, you can see that the recipients of the detected email message h
 
 - You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in Microsoft 365. (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
 
-- You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.
+- You must have access to [Explorer (or real-time detections)](threat-explorer.md).
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 
@@ -63,7 +63,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
    ![Microsoft Defender for Endpoint connection](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Go to the Microsoft Defender Security Center ([https://security.microsoft.com](https://security.microsoft.com).
+5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com).
 
 6. In the navigation bar, choose **Settings**. Then, under **General**, choose **Advanced features**.
 
