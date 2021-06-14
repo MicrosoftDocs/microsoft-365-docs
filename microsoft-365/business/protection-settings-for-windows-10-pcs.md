@@ -62,10 +62,10 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business Pre
 By default all settings are **On**. The following settings are available.
   
 For more information, see [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
-  
-|||
-|:-----|:-----|
+
+
 |Setting  <br/> |Description  <br/> |
+|:-----|:-----|
 |Help protect PCs from viruses and other threats using Windows Defender Antivirus  <br/> |Requires that Windows Defender Antivirus is turned on to protect PCs from the dangers of being connected to the internet.  <br/> |
 |Help protect PCs from web-based threats in Microsoft Edge  <br/> |Turns on settings in Edge that help protect users from malicious sites and downloads.  <br/> |
 |Use rules that reduce the attack surface of devices  <br/> |When turned On, attack surface reduction helps block actions and apps typically used by malware to infect devices. This setting is only available if Windows Defender Antivirus is set to On. See [Reduce attack surfaces](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) to learn more.  <br/> |

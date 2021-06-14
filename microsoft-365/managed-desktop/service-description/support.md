@@ -1,10 +1,12 @@
 ---
 title: Support for Microsoft Managed Desktop
-description:  
+description:  Describes proactive and reactive incident management for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
