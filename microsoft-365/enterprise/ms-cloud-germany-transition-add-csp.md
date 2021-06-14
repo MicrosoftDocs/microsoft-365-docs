@@ -30,6 +30,6 @@ Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers wil
 
 ## Missing subscriptions in Azure
 
-After [the subscription and license transition (phase 3)](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed, Cloud Solution Providers will not have access to the Azure subscription anymore.
+After [the subscription and license transition (phase 3)](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) has been completed, Cloud Solution Providers will not have access to the Azure subscription anymore.
 
-To recover access, follow these steps to [elevate access to manage all Azure subscriptions and management groups](azure/role-based-access-control/elevate-access-global-admin).
+To recover access, follow these steps to [elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin).
