@@ -28,37 +28,25 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Now that your pilot environment has all of the Microsoft 365 Defender components enabled, it's time to create an incident with a simulated attack and use the Microsoft 365 Defender portal to investigate and respond.
+This article outlines the process to create an incident with a simulated attack and use Microsoft 365 Defender to investigate and respond. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md) and you have [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md). 
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack. 
-Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
+Use the following steps.
 
-You'll simulate an attack on a Windows 10 device using a PowerShell script and then investigate, remediate, and resolve the incident.
+![Steps for performing a simulated incident response in the Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
-First, you need to add to your pilot environment.
+The following table describes the steps in the illustration.
 
-## Additional pilot environment requirements
-
-To simulate an attack on a Windows 10 device, you need to add an Active Directory Domain Services (AD DS) domain controller and a Windows 10 device to your pilot environment.
-
-1. Verify your pilot environment tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
-
-2. Verify that your domain controller:
-
-   - Runs Windows Server 2008 R2 or a later version.
-   - Reports to [Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) and has enabled [remote management](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
-   - Has [Microsoft Defender for Identity and Microsoft Cloud App Security integration](/cloud-app-security/mdi-integration) enabled.
-   - Has a test user is created in the test domain. Administrator-level permissions are not needed.
-
-3. Verify that your test device:
-
-   - Runs Windows 10 version 1903 or a later version.
-   - Is joined to the AD DS domain controller domain.
-   - Has [Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) enabled. If you are having trouble enabling Windows Defender Antivirus, see this [troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-   - Is [onboarded to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
-
-If you use an existing tenant and device groups, create a dedicated device group for the test device and push it to top level.
+| |Step  |Description  |
+|---------|---------|---------|
+|1|[Add endpoints](eval-defender-investigate-respond-endpoints.md)    | Add a domain controller and a Windows device to your Microsoft 365 Defender evaluation environment.       |
+|2|[Simulate an attack](eval-defender-investigate-respond-simulate-attacks.md)     |   Follow the steps to simulate an attack on the evaluation environment.      |
+|3|[Learn about additional incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Learn about additional features and capabilities for performing incident response.     |
+||||
 
 ## Next step
 
-[Simulate an attack and response with Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attacks.md)
+[Add endpoints to your Microsoft 365 Defender pilot environment](eval-defender-investigate-respond-endpoints.md)
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)

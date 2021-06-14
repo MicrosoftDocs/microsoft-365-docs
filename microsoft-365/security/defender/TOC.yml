@@ -82,9 +82,11 @@
           items:
             - name: Overview
               href: eval-defender-investigate-respond.md  
+            - name: Add endpoints
+              href: eval-defender-investigate-respond-endpoints.md    
             - name: Simulate an attack
               href: eval-defender-investigate-respond-simulate-attacks.md    
-            - name: Additional incident response capabilities
+            - name: Learn about additional capabilities
               href: eval-defender-investigate-respond-additional.md    
         - name: Promote the trial to production
           href: eval-defender-promote-to-production.md                    
