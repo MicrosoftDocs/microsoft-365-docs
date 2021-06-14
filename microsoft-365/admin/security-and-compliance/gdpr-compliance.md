@@ -99,7 +99,7 @@ As another example, you may manage lists of individual customers to
 send them notices about special offers, if they have consented to this.
 
 #### Microsoft 365 features that can help
-[Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
+[Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
 
 ### Step 2: Inform your customers, employees, and other individuals when you need to collect their personal data
 
@@ -117,7 +117,7 @@ For customer data, keep it as long as the customer relationship lasts and for re
 Delete the data when it is no longer needed for the purposes for which you collected it.
 
 #### Microsoft 365 features that can help
-[Retention policies and labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide) can be used to help you keep personal data for a certain time and delete it when it’s no longer needed.
+[Retention policies and labels](/microsoft-365/compliance/retention) can be used to help you keep personal data for a certain time and delete it when it’s no longer needed.
 
 
 ### Step 4: Secure the personal data you are processing
@@ -134,7 +134,7 @@ that they are not accessible by unauthorized persons.
 If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to help you to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. 
 
 #### Microsoft 365 features that can help
-You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to help to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
+You can use [Microsoft Data Loss Prevention (DLP)](/microsoft-365/business-video/set-up-dlp) to help to protect your business's sensitive information. You can [set up a DLP policy](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) that uses the [GDPR template](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### Step 5: Keep documentation on your data processing activities
 
@@ -260,7 +260,7 @@ To get ready for the GDPR, here are some suggestions for next steps to take:
   
 - Evaluate your GDPR program with [Accountability Readiness Checklists](/compliance/regulatory/gdpr-arc).
     
-- Investigate [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) as a solution for achieving and maintaining compliance with GDPR. 
+- Investigate [Microsoft 365 for business](/microsoft-365/business) as a solution for achieving and maintaining compliance with GDPR. 
    
 
 > [!IMPORTANT]
