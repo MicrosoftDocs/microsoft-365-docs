@@ -114,6 +114,7 @@ Between Phase 2 and phase 3, Partner Portal may not be accessible. During this t
 
 Additional information for Cloud Solution Providers is available in [Partner tenant migration](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration).
 
+
 ## Phase 4: SharePoint Online
 
 **Applies to**: All customers using SharePoint Online
