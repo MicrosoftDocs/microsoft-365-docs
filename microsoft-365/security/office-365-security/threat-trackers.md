@@ -46,10 +46,10 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, go to the Security & Compliance Center (<https://protection.office.com>) and choose **Threat management** \> **Threat tracker**.
+To view and use your Threat Trackers for your organization, go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and choose **Email & collaboration** \> **Threat tracker**.
 
 > [!NOTE]
-> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
 ### Noteworthy trackers
 
@@ -83,15 +83,15 @@ You can always save a Noteworthy tracker query or any of your own Explorer queri
 
 Whether you're reviewing email, content, or Office activities (coming soon), Explorer and Trackers work together to help you investigate and track security risks and threats. All together, Trackers provide you with information to protect your users by highlighting new, notable, and frequently searched issues - ensuring your business is better protected as it moves to the cloud.
 
-And remember that you can always provide us feedback on this or other Microsoft 365 security features by clicking on the **Feedback** button in the lower right corner of the [Overview of the Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+And remember that you can always provide us feedback on this or other Microsoft 365 security features by clicking on the **Feedback** button in the lower-right corner.
 
-![Security & Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Microsoft 365 Defender portal](../../media/microsoft-365-defender-portal.png)
 
 ## Trackers and Microsoft Defender for Office 365
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links.md) features work best when your main email security solution is through Office 365.
 
-![Microsoft Defender for Office 365 in the Security & Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender for Office 365 in the Microsoft 365 Defender portal](../../media/policies.png)
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Today's more sophisticated attackers use commonly available tools to create new, obfuscated, or delayed attacks that won't be recognized by traditional signature-based anti-malware engines. The Safe Attachments feature takes email attachments and detonates them in a virtual environment to determine whether they're safe or malicious. This detonation process opens each file in a virtual computer environment, then watches what happens after the file is opened. Whether it's a PDF, and compressed file, or an Office document, malicious code can be hidden in a file, activating only once the victim opens it on their computer. By detonating and analyzing the file in the email flow, Defender for Office 365 capabilities finds these threats based on behaviors, file reputation, and a number of heuristic rules.
 
@@ -101,8 +101,8 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Security & Compliance Center. See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers [here](https://protection.office.com/). Go to **Threat management** \> **Threat trackers**.
+- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers [here](https://https://security.microsoft.com/). Go to **Email & collaboration** \> **Threat tracker**.
 
 - If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links.md) and [Safe Attachments](safe-attachments.md).
