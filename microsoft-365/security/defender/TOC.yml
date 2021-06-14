@@ -6,17 +6,17 @@
       items:
       - name: What is Microsoft 365 Defender?
         href: microsoft-365-defender.md
-      - name: Microsoft 365 security center
+      - name: Microsoft 365 Defender Overview
         href: overview-security-center.md  
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Defender for Endpoint in the Microsoft 365 security center
+      - name: Defender for Endpoint in Microsoft 365 Defender
         href: microsoft-365-security-center-mde.md
-      - name: Defender for Office 365 in the Microsoft 365 security center
+      - name: Defender for Office 365 in Microsoft 365 Defender
         href: microsoft-365-security-center-mdo.md  
-      - name: Redirecting Defender for Endpoint to Microsoft 365 security center
+      - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
         href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 security center
+      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
         href: microsoft-365-security-mdo-redirection.md   
       - name: Microsoft 365 Defender integration with Azure Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
@@ -339,6 +339,8 @@
                       href: api-list-incidents.md
                     - name: Update incidents
                       href: api-update-incidents.md
+                    - name: Get Incident
+                      href: api-get-incident.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint

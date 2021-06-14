@@ -55,9 +55,8 @@ You can filter which features appear on the **Manage which ‎Office‎ features
 
 New features appear on the page based on the following schedule:
 
-||||
+|Channel|Date|Take action|
 |:-----|:-----|:-----|
-|**Channel** <br/> |**Date** <br/> |**Take action** <br/> |
 |**Current** <br/> |15th of the month  <br/> |1 - 3 weeks before the monthly release <br/> |
 |**Monthly Enterprise** <br/> |First of the month  <br/> |Two weeks before the major release that brings new features |
 |**Semi-Annual Enterprise (Preview)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features|
