@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint on Linux resources
-ms.reviewer: 
+ms.reviewer:
 description: Describes resources for Microsoft Defender for Endpoint on Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -14,7 +14,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -26,6 +26,7 @@ ms.technology: mde
 
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -64,6 +65,7 @@ If you can reproduce a problem, first increase the logging level, run the system
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -72,7 +74,8 @@ If you can reproduce a problem, first increase the logging level, run the system
 
 If an error occurs during installation, the installer will only report a general failure.
 
-The detailed log will be saved to `/var/log/microsoft/mdatp_install.log`. If you experience issues during installation, send us this file so we can help diagnose the cause.
+The detailed log will be saved to `/var/log/microsoft/mdatp/install.log`.
+If you experience issues during installation, send us this file so we can help diagnose the cause.
 
 ## Uninstall
 
@@ -99,7 +102,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Group                 |Scenario                                                |Command                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuration         |Turn on/off real-time protection                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|Configuration         |Turn on/off behavior monitoring                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|Configuration         |Turn on/off behavior monitoring                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configuration         |Turn on/off cloud protection                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configuration         |Turn on/off product diagnostics                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configuration         |Turn on/off automatic sample submission                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
