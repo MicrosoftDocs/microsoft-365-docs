@@ -26,7 +26,9 @@ Cloud Solution Providers (CSPs) supporting customers  need to take additional st
 
 ## Partner tenant migration
 
-Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers will be migrated to Office 365 services under the new Office 365 services tenant of the same partner. After customer migration, the partner can manage this customer only from the Office 365 services tenant.
+Partner Microsoft Cloud Deutschland tenants won't be migrated. Instead, a new Office 365 services tenant will be created for each Microsoft Partner in the new German datacenter region.
+
+CSP customer tenants will be migrated to the new German datacenter region and be linked to the new Office 365 services tenant of the same partner. After customer transition, the partner can manage the customer using the new Office 365 services tenant in the German datacenter region.
 
 ## Missing subscriptions in Azure
 
