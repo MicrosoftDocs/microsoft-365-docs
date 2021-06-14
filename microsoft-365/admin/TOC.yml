@@ -256,7 +256,7 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Test and deploy Microsoft 365 Apps in the Microsoft 365 admin center
+         - name: Integrated apps
            href: manage/test-and-deploy-microsoft-365-apps.md
          - name: Centralized deployment of add-ins
            items:
