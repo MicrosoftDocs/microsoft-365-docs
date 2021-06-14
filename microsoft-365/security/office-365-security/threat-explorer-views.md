@@ -29,7 +29,7 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
+![Threat Explorer](../../media/explorer.png)
 
 [Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
@@ -54,7 +54,7 @@ When you first open Explorer (or the real-time detections report), the default v
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
-![Threat Explorer View menu](../../media/ThreatExplorerViewMenu.png)
+![Threat Explorer View menu](../../media/explorer.png)
 
 Once you have selected a view, you can apply filters and set up queries to conduct further analysis. The following sections provide a brief overview of the various views available in Explorer (or real-time detections).
 
