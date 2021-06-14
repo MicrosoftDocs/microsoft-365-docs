@@ -46,7 +46,7 @@ In the **Microsoft 365 Defender portal**, go to **Email & collaboration**, and t
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
-|![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
+|![Threat explorer](../../media/path-to-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
 With these tools, you can:
@@ -67,12 +67,12 @@ Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of
 To open the Explorer tool, go to **Microsoft 365 Defender portal** > **Email & collaboration** > **Explorer**. By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
 
 > [!div class="mx-imgBorder"]
-> ![View drop down in Threat Explorer](../../media/threat-explorer-view-drop-down.png)
+> ![View drop down in Threat Explorer](../../media/view-drop-down.png)
 
 Once a security operations (Sec Ops) person selects the data they want to see, whether the scope is narrow view like user **Submissions**, or a wider view, like **All email**, they can use the **Sender** button to further filter. Remember to select Refresh to complete your filtering actions.
 
 > [!div class="mx-imgBorder"]
-> ![Sender button in Threat Explorer](../../media/threat-explorer-sender-button.png)
+> ![Sender button in Threat Explorer](../../media/sender-drop-down.png)
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
@@ -82,7 +82,7 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
 
 > [!div class="mx-imgBorder"]
-> ![Advanced filter in Threat Explorer](../../media/threat-explorer-advanced-filter.png)
+> ![Advanced filter in Threat Explorer](../../media/advanced-filter.png)
 
 Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results. 
 
@@ -95,7 +95,7 @@ Use the **Column options** button to get the kind of information on the table th
 > ![Column options button highlighted](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Available options in Columns](../../media/threat-explorer-column-options-details.png)
+> ![Available options in Columns](../../media/column-options.png)
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions. 
 

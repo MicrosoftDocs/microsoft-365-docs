@@ -54,7 +54,7 @@ When you first open Explorer (or the real-time detections report), the default v
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
-![Threat Explorer View menu](../../media/explorer.png)
+![Threat Explorer View menu](../../media/all-email.png)
 
 Once you have selected a view, you can apply filters and set up queries to conduct further analysis. The following sections provide a brief overview of the various views available in Explorer (or real-time detections).
 
@@ -62,7 +62,7 @@ Once you have selected a view, you can apply filters and set up queries to condu
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Malware**. This view shows information about email messages that were identified as containing malware.
 
-![View data about email identified as malware](../../media/ExplorerEmailMalwareMenu.png)
+![View data about email identified as malware](../../media/detection-technology.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, subject, detection technology, protection status, and more.
 
@@ -78,13 +78,13 @@ Below the chart, view more details about specific messages. When you select an i
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Phish**. This view shows email messages identified as phishing attempts.
 
-![View data about email identified as phishing attempts](../../media/ThreatExplorerEmailPhish.png)
+![View data about email identified as phishing attempts](../../media/phish.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more.
 
 For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, choose **Click verdict** in the list, select one or more options, and then click the Refresh button.
 
-![Click verdict options for the Phish report](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Click verdict options for the Phish report](../../media/click-verdict.png)
 
 Below the chart, view more details about specific messages, URL clicks, URLs, and email origin.
 
@@ -131,7 +131,7 @@ To view this report, in Explorer (or real-time detections), choose **View** \> *
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 
-![View data about detected malware](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![View data about detected malware](../../media/malware-family.png)
 
 Below the chart, view more details about specific files, such as attachment filename, workload, file size, who last modified the file, and more.
 
