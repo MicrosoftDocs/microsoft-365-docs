@@ -145,7 +145,7 @@ After being enabled, the next time the user signs in, they will be prompted to r
 
 This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
 
-||Enabled|Disabled|Secondary authentication method|
+|*Item*|Enabled|Disabled|Secondary authentication method|
 |---|---|---|---|
 |**Security defaults**|Can't use Conditional Access policies|Can use Conditional Access policies|Microsoft Authenticator app|
 |**Conditional Access policies**|If any are enabled, you can't enable security defaults|If all are disabled, you can enable security defaults|User-specified during MFA registration|
