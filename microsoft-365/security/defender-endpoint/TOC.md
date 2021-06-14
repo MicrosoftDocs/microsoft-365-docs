@@ -32,8 +32,6 @@
 #### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-### [Switch from McAfee to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md)
-### [Switch from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md)
 ### [Manage Defender for Endpoint after migration]()
 #### [Overview of managing Defender for Endpoint](manage-atp-post-migration.md)
 #### [Intune (recommended)](manage-atp-post-migration-intune.md)
