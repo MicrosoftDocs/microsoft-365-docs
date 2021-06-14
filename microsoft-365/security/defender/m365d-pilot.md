@@ -37,7 +37,7 @@ This guide helps you run a pilot project by providing pointers to ensure you hav
 ![Phases in running a Microsoft 365 Defender pilot](../../media/pilotphases.png)
 
 
-Running a pilot helps you effectively determine the benefit of adoptiing Microsoft 365 Defender. Before enabling Microsoft 365 Defender in your production environment and starting your use cases, it's best to plan to determine the tasks to accomplish for your pilot project and set the success criteria. 
+Running a pilot helps you effectively determine the benefit of adopting Microsoft 365 Defender. Before enabling Microsoft 365 Defender in your production environment and starting your use cases, it's best to plan to determine the tasks to accomplish for your pilot project and set the success criteria. 
 
 
 ## How to use this pilot playbook

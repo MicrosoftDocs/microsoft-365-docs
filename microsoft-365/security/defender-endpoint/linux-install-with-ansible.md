@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
@@ -143,8 +143,8 @@ Create a subtask or role files that contribute to a playbook or task.
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      keyserver: https://packages.microsoft.com/
-      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
@@ -152,7 +152,7 @@ Create a subtask or role files that contribute to a playbook or task.
       repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
-      filename: microsoft-[channel].list
+      filename: microsoft-[channel]
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft DNF/YUM key

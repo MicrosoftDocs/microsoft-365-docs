@@ -45,8 +45,7 @@ The migration process will complete over many weeks depending on the overall siz
 |Power BI & Dynamics 365|15+ days|Microsoft|Migrate Power BI and Dynamics 365 content.|
 |Finalize Azure AD|1-2 days|Microsoft|Complete tenant cutover to worldwide.|
 |Clean-Up|1-2 days|Customer|Clean up legacy connections to Microsoft Cloud Deutschland, such as Active Directory Federation Services (AD FS) Relying Party Trust, Azure AD Connect, and Office client restarts.|
-|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. |
-
+|Endpoints Disabled|30 days|Microsoft|30 days after the finalization of Azure AD, the Microsoft Cloud Deutschland Azure AD service will stop endpoint access for the transitioned organization. Endpoint requests such as Authentication will fail from this point forward against the Microsoft Cloud Deutschland service. Customers running Azure workloads in the instance linked to Office 365 services in Microsoft Cloud Deutschland will be moved to the final migration phase later on. |
 
 The phases and their actions ensure that critical data and experiences are migrated to the Office 365 Global services. After your tenant is added to the migration queue, each workload will be completed as a set of steps that are executed on the backend service. Some workloads may require actions by the administrator (or user), or the migration may affect usage for the phases that are executed and discussed in [How is the migration organized?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -101,8 +100,6 @@ Failing to complete this task may result in hybrid free-busy requests failing to
 
 **Applies to**: All customers with an Office 365 tenant hosted in the Microsoft Cloud Deutschland (MCD)
 
-Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers will be migrated to Office 365 services under the new Office 365 services tenant of the same partner. After customer migration, the partner can manage this customer only from the Office 365 services tenant.
-
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
 | Subscriptions are transferred| The Microsoft Cloud Deutschland subscription will be migrated to corresponding Office 365 Global services subscription. <ul><li>The Office 365 Global services offer of that subscription is defined by Microsoft (also known as _Offer mapping_).</li><li> Corresponding Office 365 Global services subscriptions are purchased in the Office 365 Global instance for the transferred Microsoft Cloud Deutschland subscriptions.</li><li>Legacy Microsoft Cloud Deutschland subscriptions are removed from the Office 365 services tenant on completion.</li></ul>| <ul><li>Changes to existing subscriptions will be blocked (for example, no new subscription purchases or seat count changes) during this phase.</li><li>License assignment changes will be blocked.</li><li>When subscription migration is complete, both Office 365 services and Microsoft Cloud Deutschland subscriptions will be visible in the Office 365 Admin Portal, with the status of Microsoft Cloud Deutschland subscriptions as _deprovisioned_. </li><li>Any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs will be broken and need to be revised with the Office 365 services offering. </li><li>New subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly), and the customer will receive a prorated refund for the unused balance of the Microsoft Cloud Deutschland subscription. </li></ul> |
@@ -115,6 +112,8 @@ Partner Microsoft Cloud Deutschland tenants won't be migrated. CSP customers wil
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
+Additional information for Cloud Solution Providers is available in [Partner tenant migration](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration).
+
 
 ## Phase 4: SharePoint Online
 
@@ -125,7 +124,7 @@ In case you are still using SharePoint 2013 workflows, limit the use of SharePoi
 | Step(s) | Description | Impact |
 |:-------|:-----|:-------|
 | SharePoint and OneDrive are transitioned | SharePoint Online and OneDrive for Business are migrated from Microsoft Cloud Deutschland to Office 365 Global services in this phase.<br><ul><li>Existing Microsoft Cloud Deutschland URLs are preserved (for example, `contoso.sharepoint.de`).</li><li>Existing sites are preserved.</li><li>Client-side authentication tokens that were issued by the Security Token Service (STS) in the Microsoft Cloud Deutschland or Office 365 Global services instance are valid during the transition.</li></ul>|<ul><li>Content will be read-only for two brief periods during migration. During this time, expect a "you can't edit content" banner in SharePoint.</li><li>The search index won't be preserved, and may take up to 10 days to be rebuilt.</li><li>SharePoint Online and OneDrive for Business content will be read-only for two brief periods during migration. Users will see a "you can't edit content" banner briefly during this time.</li><li>Upon completion of the SharePoint Online migration, the search results for SharePoint Online and OneDrive for Business content may be unavailable while the index is rebuilt. During this period, search queries might not return complete results. Features that are dependent on search indexes, such as SharePoint Online News, may be affected while reindexing completes.</li><li>SharePoint 2013 workflows will be broken during migration and must be republished after migration.</li></ul>
-|**SPO Admin**: Republish SharePoint 2013 workflows| A SharePoint Online admin republishes the SharePoint 2013 workflows after the migration.|SharePoint 2013 workflows are available.
+|**SPO Admin**: Republish SharePoint 2013 workflows| A SharePoint Online admin republishes the SharePoint 2013 workflows after the migration.| This is a required action. Failure to do so may result in user confusion, help desk calls and decreased productivity.
 |**PowerShell user**: Update to new module| All users of the SharePoint Online PowerShell module need to update module/Microsoft.SharePointOnline.CSOM to version 16.0.20717.12000 or above after the SharePoint Online migration is completed. Completion is communicated in the message center.| SharePoint Online via PowerShell or the client-side object model will no longer fail.
 ||||
 
@@ -134,6 +133,7 @@ Additional considerations:
 - If your organization still uses SharePoint 2010 workflows, they'll no longer function after December 31, 2021. SharePoint 2013 workflows will remain supported, although turned off by default for new tenants starting on November 1, 2020. After migration to the SharePoint Online service is complete, we recommend that you to move to Power Automate or other supported solutions.
  - Microsoft Cloud Deutschland customers whose SharePoint Online instance is not yet migrated need to stay on SharePoint Online PowerShell module/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 or below. Otherwise, connections to SharePoint Online via PowerShell or the client-side object model will fail.
 - During this phase, the IP addresses behind the SharePoint URLs will change. After the transition to Office 365 Global services, the addresses for the preserved tenant URLs (for example, `contoso.sharepoint.de` and `contoso-my.sharepoint.de`) will be changed to the [Worldwide Microsoft 365 URLs and IP address ranges (SharePoint Online and OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business).
+- While SharePoint and OneDrive services are transitioned, Office Online may not work as expected. 
 
 > [!NOTE]
 > In case you are using eDiscovery, make sure you are aware of the [eDiscovery migration experience](ms-cloud-germany-transition-add-scc.md).
@@ -187,6 +187,8 @@ Additional considerations:
 - Users of Outlook Web App that access a shared mailbox in the other environment (for example, a user in the MCD environment accesses a shared mailbox in the Global environment) will be prompted to authenticate a second time. The user must first authenticate and access their mailbox in `outlook.office.de`, then open the shared mailbox that is in `outlook.office365.com`. They'll need to authenticate a second time when accessing the shared resources that are hosted in the other service.
 - For existing Microsoft Cloud Deutschland customers or those in transition, when a shared mailbox is added to Outlook by using **File > Info > Add Account**, viewing calendar permissions may fail (the Outlook client attempts to use the Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`). Customers who want to add an account to view calendar permissions can add the registry key as described in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) to ensure this action will succeed. This registry key can be deployed organization-wide by using Group Policy.
 - All customers using an active Exchange Hybrid Configuration are not able to move mailboxes from on-premises Exchange Server to Exchange Online, neither to Microsoft Cloud Deutschland, nor to the new datacenter region in Germany. Customers need to ensure that ongoing mailbox moves have been completed prior to phase 5 and will be resumed after completion this phase.
+- Running `Test-MigrationServerAvailabiilty`, a PowerShell cmdlet, during migration of Exchange from Microsoft Cloud Deutschland to Office 365 services might not work. However, it will work properly after migration is complete.
+- If clients run into issues with credentials or authorization after mailboxes are migrated, reenter the on-premises administrator credentials in the migration endpoint by running `Set-MigrationEndpoint -Identity <endpointName> -Credential $(Get-Credential)`, or by setting the same by using Exchange Control Panel (ECP).
 - Ensure that all users using legacy protocols (POP3/IMAP4/SMTP) for their devices are prepared to change the endpoints in their client after their Exchange mailbox has been moved to the new German datacenter region as described in the [pre-migration steps for Exchange Online](ms-cloud-germany-transition-add-pre-work.md#exchange-online).
 - Scheduling Skype for Business meetings in Outlook Web App is not available anymore after the mailbox has been migrated. If necessary, users have to use Outlook instead.
 
@@ -254,7 +256,7 @@ Customers with Dynamics 365 require additional engagement to migrate the organiz
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|
-| Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Microsoft Engineering or Microsoft FastTrack to transition Microsoft Dynamics 365 to the Office 365 Global services instance.* |<ul><li>After migration, the admin validates the organization. <</li><li>The admin modifies workflows, as necessary. </li><li>The admin clears AdminOnly mode as appropriate.</li><li>The admin changes the organization type from _Sandbox_, as appropriate</li><li>Notify end users of the new URL to access the instance (org).</li><li>Update any inbound connections to the new endpoint URL. </li><li>The Dynamics service will be unavailable to users during the transition. </li><li>Users are required to validate the org health and features after migration of each org.</li></ul>|
+| Microsoft Dynamics resources | Customers with Microsoft Dynamics will be engaged by Microsoft Engineering or Microsoft FastTrack to transition Microsoft Dynamics 365 to the Office 365 Global services instance.* |<ul><li>After migration, the admin validates the organization. </li><li>The admin modifies workflows, as necessary. </li><li>The admin clears AdminOnly mode as appropriate.</li><li>The admin changes the organization type from _Sandbox_, as appropriate</li><li>Notify end users of the new URL to access the instance (org).</li><li>Update any inbound connections to the new endpoint URL. </li><li>The Dynamics service will be unavailable to users during the transition. </li><li>Users are required to validate the org health and features after migration of each org.</li></ul>|
 ||||
 
 \*
@@ -315,6 +317,11 @@ Microsoft Azure customers must transition their Azure workloads following the st
 | Update Azure AD application endpoints | You must update Authentication, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications to those of the Microsoft Worldwide service. | 30 days after the migration finalizes, the Microsoft Cloud Deutschland endpoints will stop honoring requests; client or application traffic will fail. |
 | Migrate Azure Workloads | Azure services customers must provision new worldwide subscriptions for Azure services and execute migration per the [Azure migration playbook](/azure/germany/germany-migration-main). | When fully transitioned to the worldwide service (Phase 10), customers will no longer be able to access Azure workloads present in the Microsoft Cloud Deutschland Azure portal. |
 ||||
+
+**Applies to:** Customers with Azure AD registered or joined devices
+
+After phase 9 has been completed, Azure AD registered and joined devices must be connected to the transitioned Azure AD instance in the new German datacenter region.
+Devices that are not re-joined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, please refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
 
 ### Azure AD Connect
 **Applies to:** All customers synchronizing identities with Azure AD connect
