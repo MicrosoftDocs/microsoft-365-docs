@@ -7,6 +7,8 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -33,7 +35,7 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Broad**: Last group to have feature and quality updates available. This group contains most of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
 ### Moving devices between update groups
-You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) and we will move the devices for you. 
+You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, [submit an administrator support request](../working-with-managed-desktop/admin-support.md) and we will move the devices for you. 
 
 > [!NOTE]
 > If you need to move a user to a different update group, submit a support request. Do not move devices between update groups yourself. There are serious consequences if a device is moved incorrectly. The device could update unexpectedly and policies might conflict, changing the device configuration.
