@@ -28,9 +28,8 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 ## Stay on top of Microsoft 365 changes
 
-||||
+|Feature|Description|How to use|
 |:-----|:-----|:-----|
-|**Feature** <br/> |**Description** <br/> |**How to use** <br/> |
 |**Message center** <br/> |Learn about official service announcements and feature changes. You can read these messages in the Microsoft 365 admin center, the admin mobile app, or receive a weekly digest in email. Share these messages with others in your organization when you see a message someone else should act on. You can also use the Service Communications API to retrieve messages.  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). Select **Health** \> **Message center**. Select a message to read or share.  <br/> Change the services you see messages about or opt-in to the weekly digest by choosing **Edit preferences** in the admin center. This is also where you can opt-out of the weekly digest.  <br/> [Overview of the Microsoft 365 Message center](message-center.md) <br/> |
 |**Targeted release** <br/> |Sign up for Targeted release for yourself and a select group of individuals at your organization. Get the latest Microsoft 365 updates before everyone else and then inform or train your users on the new experience.  <br/> |Sign in to the [admin center](../admin-overview/about-the-admin-center.md) or [admin mobile app](../admin-overview/admin-mobile-app.md). Selece **Settings** \> **Organization profile** \> **Release preferences**. Learn more about [Targeted release](release-options-in-office-365.md).  <br/> |
 |**Roadmap** <br/> |Visit the Microsoft 365 Roadmap to learn about features that have been launched, are rolling out, are in development, have been cancelled, or previously released. The roadmap is the official site for Microsoft 365 updates and changes.  <br/> |Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) frequently and learn about planned updates and releases.  <br/> |
