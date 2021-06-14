@@ -151,16 +151,16 @@ Newly quarantined files from any supported endpoint in your organization will be
 
 Go to **Settings** > **Endpoints** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
 
-#### Automatic sample submission dependencies
+#### Backing up quarantined files
 
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-intune-to-enable-cloud-delivered-protection).
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-intune-to-enable-cloud-delivered-protection).
 
 This feature will not work if automatic sample submission is turned off. If automatic sample submission set to request permission from the user, only samples that the user agrees to send will be collected.
 
 >[!IMPORTANT]
 >Download quarantined file requirements:
 >- Your organization uses Microsoft Defender Antivirus 
->- Cloud–based protection is enabled. See [Manage cloud–based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+>- Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 >- Microsoft Defender for Endpoint is in active mode
 >- Engine version is 1.1.17300.4 or later
 >- Devices have Windows 10 version 1703 or later, or Windows server 2016 and 2019
