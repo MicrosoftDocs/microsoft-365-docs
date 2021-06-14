@@ -64,7 +64,7 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 >- Data loss prevention
 >- Live response
 >- SIEM
->- Threat & Vulnerability Management (partially supported)
+
 
 ## Microsoft Defender for Endpoint on Linux
 
@@ -87,7 +87,7 @@ Linux
 >- Data loss prevention
 >- Live response
 >- SIEM
->- Threat & Vulnerability Management (partially supported)
+
 
 
 ## Microsoft Defender for Endpoint on Android
