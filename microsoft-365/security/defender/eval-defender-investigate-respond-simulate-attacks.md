@@ -242,3 +242,7 @@ This wraps up the attack simulation for the incident management and automated in
 ## Next step
 
 [Try additional Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
+
+### Navigation you may need
+
+[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
