@@ -25,8 +25,6 @@ ms.date: 04/15/2021
 
 You can manage licenses and billing for third-party apps in the new Microsoft 365 admin center. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
 
-You can manage licenses and billing for third-party apps in Microsoft 365 admin center with preview mode turned on. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft's updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from third-party provider.
-
 ## How to get software-as-a-service apps
 
 There are a few ways to purchase third-party apps.

@@ -50,7 +50,7 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 
 |Type of information|How to get there|Where to go to learn more|
 |---|---|---|
-|**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Monitor and view reports in the Microsoft 365 security center](../defender/overview-security-center.md)|
+|**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**||
 |**Data loss prevention** <p> Data loss prevention policy matches, false positives and overrides, and links to create or edit policies|In the Security & Compliance Center, go to **Data loss prevention** \> **Policy**|[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md)|
 |**Data governance** <p> Information about how labels are applied, labels classified as records, label trends, and more|In the Security & Compliance Center, go to **Information governance** \> **Dashboard**|[View the data governance reports](../../compliance/view-the-data-governance-reports.md)|
 |**Threat management dashboard** (this is also referred to as the Security dashboard) <p> Threat detections, malware trends, top targeted users, details about sent and received email messages, and more|In the Security & Compliance Center, go to **Threat management** \> **Dashboard**|[View reports for Defender for Office 365](view-reports-for-mdo.md)|
@@ -64,6 +64,6 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 
 ## Related topics
 
-[Monitor and view reports in the Microsoft 365 security center](../defender/overview-security-center.md)
+[Monitor and view reports in the Microsoft 365 Defender portal](../defender/overview-security-center.md)
 
 [Protect against threats in Office 365](protect-against-threats.md)
