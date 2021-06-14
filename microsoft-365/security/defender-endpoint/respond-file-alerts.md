@@ -153,7 +153,7 @@ Go to **Settings** > **Endpoints** > **Advanced features** > **Download quaranti
 
 #### Backing up quarantined files
 
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-intune-to-enable-cloud-delivered-protection).
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [automatic sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-intune-to-turn-on-cloud-delivered-protection).
 
 This feature will not work if automatic sample submission is turned off. If automatic sample submission set to request permission from the user, only samples that the user agrees to send will be collected.
 
