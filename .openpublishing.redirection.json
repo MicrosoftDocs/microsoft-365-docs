@@ -3991,6 +3991,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
       "redirect_document_id": true
