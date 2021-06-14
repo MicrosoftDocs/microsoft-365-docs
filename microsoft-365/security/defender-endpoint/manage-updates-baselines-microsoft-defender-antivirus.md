@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
+ms.date: 06/14/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -32,11 +32,9 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 - Product updates
 
 > [!IMPORTANT]
-> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.
-> 
-> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
-> 
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
+
+To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## Security intelligence updates
 
@@ -76,7 +74,7 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
