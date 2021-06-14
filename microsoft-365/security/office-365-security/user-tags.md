@@ -36,94 +36,104 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
-- [Alerts in the Security & Compliance Center](alerts.md)
+- [Alerts](alerts.md)
+- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
+- [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
-This article explains how to configure user tags in the Security & Compliance Center. There are no cmdlets in Security & Compliance Center to manage user tags.
+This article explains how to configure user tags in the Microsoft 365 Defender portal. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
-> [!NOTE]
-> If you use the unified Microsoft 365 security center, you can set tags here: https://security.microsoft.com/userTags.
-
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User tags** page, open <https://protection.office.com/userTags>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
 
-- You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:
+- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
   - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
+  > [!NOTE]
+  >
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  >
+  > - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
 - For information about securing _privileged accounts_ (admin accounts), see [this topic](/azure/architecture/framework/security/critical-impact-accounts).
 
-## Use the Security & Compliance Center to create user tags
+## Use the Microsoft 365 Defender portal to create user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page that opens, click **Create tag**.
+2. On the **User tags** page, click ![Create tag icon](../../media/m365-cc-sc-create-icon.png) **Create tag**.
 
-3. The **Create tag** wizard opens in a new fly out. On the **Define tag** page, configure the following settings:
-   - **Name**: Enter a unique, descriptive name for the tag. This is the value that you'll see and use.
+3. The **Create tag** wizard opens in a new flyout. On the **Define tag** page, configure the following settings:
+   - **Name**: Enter a unique, descriptive name for the tag. This is the value that you'll see and use. Note that you can't rename a tag after you create it.
    - **Description**: Enter an optional description for the tag.
 
    When you're finished, click **Next**.
 
-4. On the **Assign users** page, do either of the following steps:
-
-   - Click **Add users**. In the fly out that appears, do any of the following steps to add individual users or groups:
+4. On the **Assign members** page, do either of the following steps:
+   - Click ![Add members icon](../../media/m365-cc-sc-create-icon.png) **Add members**. In the fly out that appears, do any of the following steps to add individual users or groups:
      - Click in the box and scroll through the list to select a user or group.
      - Click in the box and start typing to filter the list and select a user or group.
      - To add additional values, click in an empty area in the box.
-     - To remove individual entries from the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user or group in the box.
-     - To remove existing entries from the list below the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) the entry.
+     - To remove individual entries, click ![Remove entry icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry in the box.
+     - To remove all entries, click ![Remove entry icon](../../media/m365-cc-sc-remove-selection-icon.png) on the **Selected nn users and nn groups** item below the box.
 
      When you're finished, click **Add**.
+
+     Back on the **Assign members** page, you can also remove entries by clicking ![Delete icon](../../media/m365-cc-sc-delete-icon.png) next to the entry.
 
    - Click **Import** to select a text file that contains the email addresses of the users or groups. Be sure the text file contains one entry per line.
 
    When you're finished, click **Next**.
 
-5. On the **Review tag** page, review your settings. You can click **Edit** in the specific section to make changes.
+5. On the **Review tag** page that appears, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished, click **Submit**.
+   When you're finished, click **Submit**, and then click **Done**.
 
-## Use the Security & Compliance Center to view user tags
+## Use the Microsoft 365 Defender portal to view user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).
+2. On the **User tags** page, the following properties are displayed in the list of user tags:
 
-3. In the read-only details fly out that appears, review the settings.
+   - **Tag**: The name of the user tag. Note that this includes the built-in **Priority account** system tag.
+   - **Applied to**: The number of members
+   - **Last modified**
+   - **Created on**
 
-   When you're finished, click **Close**.
+3. When you select a user tag by clicking on the name, the details are displayed in a flyout.
 
-## Use the Security & Compliance Center to modify user tags
+## Use the Microsoft 365 Defender portal to modify user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.
+2. On the **User tags** page, select the user tag from the list, and then click ![Edit tag icon](../../media/m365-cc-sc-edit-icon.png) **Edit tag**.
 
-3. The policy wizard opens in an **Edit tag** fly out. Click **Next** to review and modify the settings.
+3. In the details flyout that appears, the same wizard and settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article.
 
-   When you're finished, click **Submit**.
+   **Notes**:
 
-## Use the Security & Compliance Center to remove user tags
+   - The **Define tag** page is not available for the built-in **Priority account** system tag, so you can't rename this tag or change the description.
+   - You can't rename a custom tag, but you can change the description.
 
-**Note**: You can't remove the built-in **Priority account** tag.
+## Use the Microsoft 365 Defender portal to remove user tags
 
-1. In the Security & Compliance Center, go to **Threat management** \> **User tags**.
+> [!NOTE]
+> You can't remove the built-in **Priority account** system tag.
 
-2. On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.
+1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
+
+2. On the **User tags** page, select the user tag from the list, and then click ![Delete tag icon](../../media/m365-cc-sc-delete-icon.png) **Delete tag**.
+
+3. Read the warning in the confirmation dialog that appears, and then click **Yes, remove**.

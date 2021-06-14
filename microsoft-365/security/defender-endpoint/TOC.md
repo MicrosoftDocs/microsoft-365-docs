@@ -3,7 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -122,7 +122,7 @@
 ###### [Configure iOS features](ios-configure-features.md)
 
 ##### [Troubleshoot]()
-###### [Troubleshoot issues](ios-troubleshoot.md)
+###### [FAQs and Troubleshoot issues](ios-troubleshoot.md)
 
 ##### [Privacy](ios-privacy.md)
  
@@ -134,7 +134,8 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
- 
+###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Update](linux-updates.md)
  
 ##### [Configure]()
@@ -144,7 +145,7 @@
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 ###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
-###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Troubleshoot]()
 ###### [Troubleshoot installation issues](linux-support-install.md)
@@ -241,40 +242,42 @@
 
 ### [Network devices](network-devices.md)
 
+### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
+
 ### [Attack surface reduction]()
 #### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
+#### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
+#### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-#### [Attack surface reduction configuration settings](configure-attack-surface-reduction.md)
+#### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+#### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.md)
-
-#### [Attack surface reduction controls]()
-##### [Attack surface reduction rules](attack-surface-reduction.md)
-##### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
-##### [View attack surface reduction events](event-views.md)
-
-#### [Use audit mode](audit-windows-defender.md)
+#### [View attack surface reduction events](event-views.md)
+#### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
 #### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
-#### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
-#### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
-#### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
-#### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
+#### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
-##### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
-##### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
-##### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-##### [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
-##### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
-##### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-##### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
-##### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
-##### [Configure scheduled quick or full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-##### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
+#### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+#### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+#### [Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+#### [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+#### [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+#### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
+#### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
+#### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
+##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+#### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
@@ -290,6 +293,9 @@
 ##### [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
+##### [Specify whether users can locally modify Microsoft Defender Antivirus policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Specify whether users can see or interact with Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Deploy and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -350,6 +356,7 @@
 ##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Control Printer Protection](printer-protection.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -464,6 +471,8 @@
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](exposed-apis-create-app-partners.md)
+
+
 ##### [Microsoft Defender for Endpoint APIs Schema]()
 ###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 ###### [Common REST API error codes](common-errors.md)
@@ -480,6 +489,12 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
+
+###### [Assessments of vulnerabilities and secure configurations]()
+####### [Export assessment methods and properties](get-assessment-methods-properties.md)
+####### [Export secure configuration assessment](get-assessment-secure-config.md)
+####### [Export software inventory assessment](get-assessment-software-inventory.md)
+####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](investigation.md)
@@ -501,13 +516,15 @@
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](ti-indicator.md)
-####### [Submit Indicator](post-ti-indicator.md)
 ####### [List Indicators](get-ti-indicators-collection.md)
+####### [Submit Indicator](post-ti-indicator.md)
+####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
+
 
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
@@ -524,19 +541,23 @@
 ####### [Get missing KBs](get-missing-kbs-machine.md)
 ####### [Set device value](set-device-value.md)
 
+
 ###### [Machine Action]()
 ####### [Machine Action methods and properties](machineaction.md)
 ####### [List Machine Actions](get-machineactions-collection.md)
 ####### [Get Machine Action](get-machineaction-object.md)
 ####### [Collect investigation package](collect-investigation-package.md)
 ####### [Get investigation package SAS URI](get-package-sas-uri.md)
+####### [Get live response result](get-live-response-result.md)
 ####### [Isolate machine](isolate-machine.md)
 ####### [Release machine from isolation](unisolate-machine.md)
 ####### [Restrict app execution](restrict-code-execution.md)
 ####### [Remove app restriction](unrestrict-code-execution.md)
 ####### [Run antivirus scan](run-av-scan.md)
+####### [Run live response](run-live-response.md) 
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
+####### [Cancel machine action](cancel-machine-action.md)
 
 ###### [Recommendation]()
 ####### [Recommendation methods and properties](recommendation.md)
@@ -586,10 +607,12 @@
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](exposed-apis-odata-samples.md)
 
+
 #### [Raw data streaming API]()
 ##### [Raw data streaming](raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
+
 
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](threat-indicator-concepts.md)

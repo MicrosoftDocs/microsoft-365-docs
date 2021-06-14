@@ -41,7 +41,7 @@ This article describes:
 - The [overall flow of AIR](#the-overall-flow-of-air);
 - [How to get AIR](#how-to-get-air); and
 - The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities.
-- Changes that are coming soon to your security center
+- Changes that are coming soon to your Microsoft 365 Defender portal
 
 This article also includes [next steps](#next-steps), and resources to learn more.
 
@@ -73,9 +73,9 @@ During and after each automated investigation, your security operations team can
 AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
 - [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) (should be turned on)
-- [Antimalware policies](protect-against-threats.md#part-1---anti-malware-protection)
-- [Antiphishing protection](protect-against-threats.md#part-2---anti-phishing-protection)
-- [Antispam protection](protect-against-threats.md#part-3---anti-spam-protection)
+- [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
+- [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Zero-hour auto purge for email](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
@@ -84,7 +84,11 @@ In addition, make sure to [review your organization's alert policies](../../comp
 
 ## Which alert policies trigger automated investigations?
 
-Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](../../compliance/alert-policies.md#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft 365 security center, and how they're generated:
+Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](../../compliance/alert-policies.md#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft 365 Defender portal, and how they're generated:
+
+<br>
+
+****
 
 |Alert|Severity|How the alert is generated|
 |---|---|---|
@@ -103,10 +107,15 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 
 Permissions are granted through certain roles, such as those that are described in the following table:
 
+<br>
+
+****
+
 |Task|Role(s) required|
 |---|---|
 |Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <p> These roles can be assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).|
 |Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). You might have to create a new role group there and add the Search and Purge role to that new role group.</li></ul>|
+|
 
 ## Required licenses
 
@@ -116,16 +125,16 @@ Permissions are granted through certain roles, such as those that are described 
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)
 - End users
 
-## Changes are coming soon in your security center
+## Changes are coming soon in your Microsoft 365 Defender portal
 
-If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 security center](../defender/overview-security-center.md).
+If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 Defender portal](../defender/overview-security-center.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center":::
 
-The new and improved security center brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+The new and improved Microsoft 365 Defender portal brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
-> The new Microsoft 365 security center (<https://security.microsoft.com>) replaces the following centers:
+> The new Microsoft 365 Microsoft 365 Defender portal (<https://security.microsoft.com>) replaces the following centers:
 >
 > - Office 365 Security & Compliance Center (<https://protection.office.com>)
 > - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
@@ -135,6 +144,10 @@ The new and improved security center brings together AIR capabilities in [Micros
 ### What to expect
 
 The following table lists changes and improvements coming to AIR in Microsoft Defender for Office 365.
+
+<br>
+
+****
 
 |Item|What's changing?|
 |---|---|

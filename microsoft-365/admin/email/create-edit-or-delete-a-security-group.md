@@ -94,3 +94,9 @@ No. This is just one more way you can manage security for your organization. You
 ## Can I send email to a security group?
 
 Yes. But if you want to use groups for email and collaboration, we recommend that you [create a Microsoft 365 group](../create-groups/create-groups.md) instead. 
+
+## Related content
+
+[Create a group in the Microsoft 365 admin center](../create-groups/create-groups.md) (article)\
+[Explaining Microsoft 365 Groups to your users](../create-groups/explain-groups-knowledge-worker.md) (article)\
+[Manage a group in the Microsoft 365 admin center](../create-groups/manage-groups.md) (article)

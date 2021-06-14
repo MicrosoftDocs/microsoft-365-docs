@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -97,7 +97,10 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 	- For Windows 10 2004 - KB4568831, KB4577063
 	- For devices running Office 2016 (and not any other Office version) - KB4577063 
 
-4. All devices must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join), AD joined, Hybrid Azure AD joined, or AAD registered.
+4. All devices must be one of these:
+- [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 

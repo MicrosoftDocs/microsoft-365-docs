@@ -51,7 +51,7 @@ Microsoft 365 Defender aggregates data from the various supported services that 
 To get the best protection and optimize Microsoft 365 Defender, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Onboard to the service
-Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any item under the Endpoints section, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
+Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select any Microsoft 365 Defender items, such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process. 
 
 ### Data center location
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender will store and process data in the [same location used by
 Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner.
+> In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
 
 ### Confirm that the service is on
 

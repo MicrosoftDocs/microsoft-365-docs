@@ -43,7 +43,7 @@ If you decide to deploy updates by using your software distribution tools, you s
 
 ## Use msupdate
 
-MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU, the application identifier for Microsoft Defender for Endpoint on macOS is *WDAV00*. To download and install the latest updates for Microsoft Defender for Endpoint on macOS, execute the following command from a Terminal window:
 
@@ -150,10 +150,17 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 ## Example configuration profile
 
 The following configuration profile is used to:
-- Place the device in the Beta channel
+- Place the device in the Production channel
 - Automatically download and install updates
 - Enable the "Check for updates" button in the user interface
 - Allow users on the device to enroll into the Insider channels
+
+
+>[!WARNING]
+>The below configuration is an example configuration and should not be used in production without proper review of settings and tailor of configurations.
+
+>[!TIP]
+>In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
 
 ### JAMF
 
@@ -163,7 +170,7 @@ The following configuration profile is used to:
 <plist version="1.0">
 <dict>
 	<key>ChannelName</key>
-	<string>Beta</string>
+	<string>Production</string>
 	<key>HowToCheck</key>
 	<string>AutomaticDownload</string>
 	<key>EnableCheckForUpdatesButton</key>
@@ -223,7 +230,7 @@ The following configuration profile is used to:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>
@@ -244,4 +251,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 
 ## Resources
 
-- [msupdate reference](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [msupdate reference](/deployoffice/mac/update-office-for-mac-using-msupdate)

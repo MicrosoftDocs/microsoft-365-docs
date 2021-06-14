@@ -48,7 +48,7 @@ If you would like to learn how to get started with general Office 365 services, 
   
 ## Office 365 Suite
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Custom domains  <br/> |Administrators can create and/or use custom domains registered through Chinese-specific domain providers. If you don't have a custom domain, you can [How to buy a domain name](../get-help-with-domains/buy-a-domain-name.md) from a domain name registrar. If you already have one, [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Additionally, if you create a public website using the Office 365 SharePoint Online service, China Internet compliance policy requires that you get an Internet Content Provider (ICP) number.  **Note:** Automatic validation for disallowed words in custom domain names is not available.           |
 |Subscriptions, billing, and technical support  <br/> |Provided by 21Vianet. For information on how to contact support, see [Contact Office 365 for business support](../../business-video/get-help-support.md).  <br/> |
@@ -67,7 +67,7 @@ If you would like to learn how to get started with general Office 365 services, 
   
 ## SharePoint Online
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Sharing a document, library, or site by email with someone outside of your organization  <br/> |This feature is available, but off by default as using it could make files shared accessible outside of your country. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
 |Access Services  <br/> |Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality is not supported, and attempting to use an Access 2010 database will result in errors and possible data loss.  <br/> |
@@ -86,7 +86,7 @@ If you would like to learn how to get started with general Office 365 services, 
   
 ## Outlook Web App
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Blackberry Business Cloud Services (BBCS)  <br/> |Not available, but you can use Exchange ActiveSync devices or an offering from Research in Motion (RIM, the BlackBerry wireless email solution) to run Blackberry Enterprise Server (BES).  <br/> |
 |Information Rights Management  <br/> |Coming soon.  <br/> |
@@ -162,8 +162,8 @@ To learn more about configuring a hybrid deployment with Office 365 tenants host
 > [!IMPORTANT]
 >  The [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) is a free web-based tool that helps you configure a hybrid deployment between your on-premises organization and Office 365, or to migrate completely to Office 365. The tool asks you a small set of simple questions and then, based on your answers, creates a customized checklist with instructions to configure your hybrid deployment. We strongly recommend using the Deployment Assistant to configure a hybrid deployment. >  For organizations not wishing to upgrade to or add Exchange 2013 CU5 servers, Exchange 2013 SP1 organizations can configure shared calendar free/busy sharing between their on-premises and Exchange Online organizations. To configure this hybrid deployment feature, see [Configuring Exchange hybrid deployment features with Office 365 operated by 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
-|||  
-|---|---|
+|Function|Availability|
+|:-----|:-----|
 |Coexistence and Free/Busy Sharing|Sharing calendar free/busy information between two or more on-premises Exchange organizations or sharing between two 21Vianet Office 365 tenants isn't supported. This feature is coming soon! | 
 |Calendar sharing|Exchange 2013 SP1 and greater supports manually configuring Internet calendar sharing with other on-premises Exchange or Exchange Online organizations. For more details about configuring this feature manually, see [Enable Internet Calendar Publishing](/exchange/enable-internet-calendar-publishing-exchange-2013-help). | 
 Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This setting/feature is enabled by default. Administrators should turn this feature off to help prevent users from sharing Exchange data outside of your organization. |
@@ -172,7 +172,7 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This
    
 ## Office
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Open an Office application from the **File** \> **Open in**… button  <br/> |Available. The ability to do so while roaming is coming soon.  <br/> |
 |Save to OneDrive for Business while signed in with a Microsoft account  <br/> |To keep your data within your country, you cannot save a document to your organization site (OneDrive for Business) when you are signed in to Office with a Microsoft account.  <br/> |
@@ -180,13 +180,13 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This
    
 ## Office client
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Manage account (from within the Office client)  <br/> |This feature, and others like it that are intended to go to your Office 365 portal, currently point to the worldwide Office 365 portal, and you cannot sign in with your Office 365 operated by 21Vianet account. This is a known issue that is being fixed. In the meantime, you can use the URL https://portal.partner.microsoftonline.cn/ to sign into your account and manage settings from there. For more information, see [Manage your Microsoft 365 Apps for enterprise account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
    
 ## OneNote
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Insert and playback online video  <br/> |Not available.  <br/> |
 |Research pane integration to Bing services  <br/> |Not available.  <br/> |
@@ -204,7 +204,7 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud. |This
    
 ## Skype for Business
 
-|||
+|Function|Availability|
 |:-----|:-----|
 |Domain providers to support Skype for Business  <br/> |You will need to register your domain with a Chinese-specific domain provider that supports SRV records. For more information on how to register domains, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).  <br/> |
 |Dial-in conferencing (the ability to add telephone access to meetings for users who can't get to a computer)  <br/> |You may see options in Skype for Business and in the Skype for Business Admin Center for Dial-in conferencing and providers, but these features are not yet available. They are coming soon.  <br/> |
@@ -231,8 +231,6 @@ For details and instructions, see [Data Subject Requests (DSR) for GDPR](https:/
 
 ## Related content
 
-[Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)
-
-[Azure Information Protection support for Office 365 operated by 21Vianet](parity-between-azure-information-protection.md) (article)
-
+[Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md) (article)\
+[Azure Information Protection support for Office 365 operated by 21Vianet](parity-between-azure-information-protection.md) (article)\
 [View your bill or get a Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)

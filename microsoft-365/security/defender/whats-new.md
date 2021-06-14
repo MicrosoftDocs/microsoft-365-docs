@@ -31,7 +31,7 @@ The following features are generally available (GA) in the latest release of Mic
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 ## April 2021
