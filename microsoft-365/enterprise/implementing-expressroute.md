@@ -98,10 +98,10 @@ For each service that requires an inbound connection, you'll need some additiona
   
 Inbound connections should be reviewed regardless of whether they're connecting over the internet or ExpressRoute to ensure asymmetric routing hasn't been introduced. In some cases, on-premises endpoints that Office 365 services initiate inbound connections to may also need to be accessed by other Microsoft and non-Microsoft services. It is paramount that enabling ExpressRoute routing to these services for Office 365 purposes doesn't break other scenarios. In many cases, customers may need to implement specific changes to their internal network, such as source based NAT, to ensure that inbound flows from Microsoft remain symmetric after ExpressRoute is enabled.
   
-Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute.
+Here's a sample of the level of detail required. In this case Exchange Hybrid would route to the on-premises system over ExpressRoute. 
 
-|**Connection property**|**Value**|
-|:-----|:-----|
+|Connection property   |Value  |
+|----------|-----------|
 |**Network traffic direction** <br/> |Inbound  <br/> |
 |**Service** <br/> |Exchange Hybrid  <br/> |
 |**Public Office 365 endpoint (source)** <br/> |Exchange Online (IP addresses)  <br/> |
@@ -110,15 +110,15 @@ Here's a sample of the level of detail required. In this case Exchange Hybrid wo
 |**Will this on-premises endpoint be used for by other (non-Office 365) Microsoft services** <br/> |No  <br/> |
 |**Will this on-premises endpoint be used by users/systems on the Internet** <br/> |Yes  <br/> |
 |**Internal systems published through public endpoints** <br/> |Exchange Server client access role (on-premises) 192.168.101, 192.168.102, 192.168.103  <br/> |
-|**IP advertisement of the public endpoint** <br/> |**To Internet**: 5.5.0.0/16  <br/> **To ExpressRoute**: 5.5.5.0/24  <br/> |
-|**Security/Perimeter Controls** <br/> |**Internet path**: DeviceID_002  <br/> **ExpressRoute path**: DeviceID_003  <br/> |
-|**High Availability** <br/> |Active/Active across 2 geo-redundant  <br/> ExpressRoute circuits - Chicago and Dallas  <br/> |
-|**Path symmetry control** <br/> |**Method**: Source NAT  <br/> **Internet path**: Source NAT inbound connections to 192.168.5.5  <br/> |**ExpressRoute path**: Source NAT connections to 192.168.1.0 (Chicago) and 192.168.2.0 (Dallas)  <br/> |
+|**IP advertisement of the public endpoint** <br/> |**To Internet**: 5.5.0.0/16 **To ExpressRoute**: 5.5.5.0/24  <br/> |
+|**Security/Perimeter Controls** <br/> |**Internet path**: DeviceID_002  **ExpressRoute path**: DeviceID_003  <br/> |
+|**High Availability** <br/> |Active/Active across 2 geo-redundant / ExpressRoute circuits - Chicago and Dallas  <br/> |
+|**Path symmetry control** <br/> |**Method**: Source NAT **Internet path**: Source NAT inbound connections to 192.168.5.5 **ExpressRoute path**: Source NAT connections to 192.168.1.0 (Chicago) and 192.168.2.0 (Dallas)  <br/> |
 
 Here's a sample of a service that is outbound only:
 
 |**Connection property**|**Value**|
-|:-----|:-----|
+|----------|-----------|
 |**Network traffic direction** <br/> |Outbound  <br/> |
 |**Service** <br/> |SharePoint Online  <br/> |
 |**On-premises endpoint (source)** <br/> |User workstation  <br/> |
@@ -184,9 +184,10 @@ This means the most important consideration you need to make when selecting meet
   
 Often times, there are multiple meet-me locations that could be selected within a region with relative proximity to your users. Fill out the following table to guide your decisions.
 
-|**Planned ExpressRoute meet-me locations in California and New York**||
-|:-----|:-----|
+**Planned ExpressRoute meet-me locations in California and New York**
+
 |Location  <br/> |Number of people  <br/> |Expected latency to Microsoft network over Internet egress  <br/> |Expected latency to Microsoft network over ExpressRoute  <br/> |
+|----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |~10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (via New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (via New York)  <br/> |

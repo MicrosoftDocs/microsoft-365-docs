@@ -177,6 +177,9 @@ This button starts the **Create policy** wizard, which lets you edit which label
 
 When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, allow up to 24 hours for changes to replicate to all apps and services.
 
+> [!NOTE]
+> Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
+
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
 Additional label policy settings are available with the [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
