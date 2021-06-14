@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
+description: "Admin roles map to business functions and provide permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
 ---
 
 # Get started with the roles page
@@ -36,11 +36,12 @@ You can export the admin list as well as search and filter by role.
 
 ![Filter or import admin roles](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |Use **Export admin list** to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.   <br/> |
-|  <br/> |Use **Search** to search for an admin role and see your users who are assigned to that role.   <br/> |
-|  <br/> |Use **Filter** to change your view of displayed admin roles.   <br/> |
+- Use Export admin list to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.
+
+- Use Search to search for an admin role and see your users who are assigned to that role.
+
+- Use Filter to change your view of displayed admin roles.
+
 
 ## Get the most out of the roles
 
