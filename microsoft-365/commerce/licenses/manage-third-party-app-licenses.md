@@ -55,7 +55,7 @@ Depending on the ISV app that you bought, your next step might be to install the
 
 1. In the admin center, **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. Select the app that you want to install into your account.
-3. On the license details page, select Install this product. You are redirected to a different platform site where you install the app into your environment.
+3. On the license details page, select **Install this product**. You are redirected to a different platform site where you install the app into your environment.
 
 ## Related content
 
