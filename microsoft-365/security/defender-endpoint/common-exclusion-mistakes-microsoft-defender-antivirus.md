@@ -227,7 +227,9 @@ In general, do not define exclusions for the following processes:
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
