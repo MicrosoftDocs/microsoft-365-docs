@@ -50,7 +50,7 @@ If you're in the converged Microsoft 365 Defender portal (https://security.micro
 3. Click **Sender**, and then choose **Basic** \> **Detection technology**.
 
    
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech_new.png" alt-text="malware detection technology":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech_newimg.png" alt-text="malware detection technology":::
 
    Your detection technologies are now available as filters for the report.
 
