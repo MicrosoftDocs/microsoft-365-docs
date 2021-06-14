@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -84,7 +84,7 @@ This section describes steps a small business can take to help it get ready for 
 A good way for a small business to get started with GDPR is to make sure to apply the following key principles when collecting personal data:
 
 - Collect personal data with clearly defined purposes for what you are using it for, and don’t use them for anything else. For example, if you tell your clients to give you their email addresses so they can get your new offers or promotions, you can only use their email addresses for only that specific purpose.
-- Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver good, you need a customers address and a name, but you don’t need to know the person's marital status.
+- Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver goods, you need a customer's address and a name, but you don’t need to know the person's marital status.
 
 
 ### Step 1: Know the personal data that you collect and use within your business, and the reasons you need it
@@ -96,7 +96,7 @@ on the employment contract and for legal reasons (for example,
 reporting taxes to the Internal Revenue Service).
 
 As another example, you may manage lists of individual customers to
-send them notice about special offers, if they opted in to consent to this.
+send them notices about special offers, if they have consented to this.
 
 #### Microsoft 365 features that can help
 [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection) can help you discover, classify, and protect sensitive information in your company. You can use trainable classifiers to help you identify and label document types that contain personal data. 
@@ -131,7 +131,7 @@ files containing the data, for example, by a strong password. Regularly update t
 If you store physical documents with personal data, make sure
 that they are not accessible by unauthorized persons.
 
-If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. We highly recommend that small businesses consider using a cloud solution for storing personal data.
+If you choose to store personal data in the cloud, such as through Microsoft 365, you have security features such as the ability to help you to manage permissions to files and folders, centralized secure locations to save your files (OneDrive or SharePoint document libraries), and data encryption when sending or retrieving your files. 
 
 #### Microsoft 365 features that can help
 You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/business-video/set-up-dlp?view=o365-worldwide) to help to protect your business's sensitive information. You can [set up a DLP policy](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide) that uses the [GDPR template](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include?view=o365-worldwide#general-data-protection-regulation-gdpr).
@@ -141,7 +141,7 @@ You can use [Microsoft Data Loss Prevention (DLP)](https://docs.microsoft.com/mi
 Prepare a short document explaining what personal data you
 hold and for what reasons. You might be required to make the
 documentation available to your national data protection authority
-if asked.
+if needed.
 
 Such documents should include the information listed below.
 
@@ -163,7 +163,7 @@ You can find Microsoft’s contractual commitments with regard to the GDPR in th
 ### Step 6: Make sure your subcontractors respect the rules
 
 If you sub-contract processing of personal data to another company,
-use only a service provider who guarantees the processing in
+only use a service provider who guarantees the processing in
 compliance with the requirements of the GDPR (for instance, security
 measures). 
 
@@ -173,12 +173,12 @@ measures).
  
 To better protect personal data, organizations might have to
 appoint a <b>Data Protection Officer (DPO)</b>. However, you may not need to designate a Data Protection Officer if processing
-of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you do not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
+of personal data isn’t a core part of your business, or if your are a small business. For example, if your business only collects data on your customers for home delivery, you should not need to appoint a DPO. Even if you need to make use of a DPO, these duties might be assigned to an existing employee in addition to his/her other tasks. Or you could chose to hire an external consultant for this duty as needed.
 
-You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for those that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
+You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for businesses that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
 If you are a small business managing employee wages and a list
-of clients, you typically do not need to carry out a Data Protection Impact Assessment.  
+of clients, you typically do not need to do a Data Protection Impact Assessment.  
  
 
     
