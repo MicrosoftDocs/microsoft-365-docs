@@ -90,7 +90,7 @@ Whenever an attack surface reduction rule is triggered, a notification is displa
 
 In addition, when certain attack surface reduction rules are triggered, alerts are generated.
 
-Notifications and any alerts that are generated can be viewed in the Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) (formerly [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
+Notifications and any alerts that are generated can be viewed in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) (formerly called the [Microsoft Defender Security Center](microsoft-defender-security-center.md)).
 
 ## Advanced hunting and attack surface reduction events
 
@@ -111,7 +111,7 @@ You can set attack surface reduction rules for devices that are running any of t
 
 Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. These capabilities available only in Windows E5 include monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-endpoint.md), as well as reporting and configuration capabilities in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center). These advanced capabilities aren't available with a Windows Professional or Windows E3 license; however, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
 
-## Review attack surface reduction events in the Microsoft Defender Security Center
+## Review attack surface reduction events in the Microsoft 365 Defender portal
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
