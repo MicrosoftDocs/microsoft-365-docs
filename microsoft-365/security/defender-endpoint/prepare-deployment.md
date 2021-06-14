@@ -1,6 +1,6 @@
 ---
 title: Prepare Microsoft Defender for Endpoint deployment
-description: Prepare stakeholder approval, timelines, environment considerations, and adoption order when deploying Microsoft Defender for Endpoint
+description: Prepare stakeholder approval, timelines, environment considerations, and adoption order for deploying Microsoft Defender for Endpoint
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -118,8 +118,8 @@ Defender for Endpoint supports two ways to manage permissions:
 Microsoft recommends leveraging RBAC to ensure that only users that have a
 business justification can access Defender for Endpoint.
 
-You can find details on permission guidelines
-[here](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
+You can find details on permission guidelines here:
+[Create roles and assign the role to an Azure Active Directory group](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
 
 The following example table serves to identify the Cyber Defense Operations
 Center structure in your environment that will help you determine the RBAC
@@ -157,5 +157,6 @@ how the endpoint security suite should be enabled.
 
 ## Next step
 
-![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender for Endpoint deployment
-
+|||
+|:-------|:-----|
+|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender for Endpoint deployment |
