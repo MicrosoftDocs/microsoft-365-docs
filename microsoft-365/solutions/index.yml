@@ -28,7 +28,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Empower remote workers with Microsoft 365
+          - text: Set up your infrastructure for hybrid work
             url: empower-people-to-work-remotely.md
           - text: Set up secure collaboration with Microsoft 365
             url: setup-secure-collaboration-with-teams.md

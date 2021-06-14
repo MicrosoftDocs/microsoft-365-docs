@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Office 365 in the Microsoft 365 security center
-description: Learn about changes from the Office 365 Security and Compliance center to the Microsoft 365 security center.
-keywords: Microsoft 365 security, Getting started with the Microsoft 365 security center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
+title: Microsoft Defender for Office 365 in Microsoft 365 Defender
+description: Learn about changes from the Office 365 Security and Compliance center to Microsoft 365 Defender.
+keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, new security portal, new defender security portal
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -19,7 +19,7 @@ ms.prod: m365-security
 ms.technology: m365d
 ---
 
-# Microsoft Defender for Office 365 in the Microsoft 365 security center
+# Microsoft Defender for Office 365 in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.technology: m365d
 
 ## Quick reference
 
-The image and the table below lists the changes in navigation between the Office 365 Security & Compliance Center and the Microsoft 365 security center.
+The image and the table below lists the changes in navigation between the Office 365 Security & Compliance Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Image of what moved to where](../../media/mdo-m3d-security-center.png)
@@ -39,7 +39,7 @@ The image and the table below lists the changes in navigation between the Office
 
 ****
 
-|Office 365 Security & Compliance|Microsoft 365 security center|Microsoft 365 compliance center|Exchange admin center|
+|Office 365 Security & Compliance|Microsoft 365 Defender|Microsoft 365 compliance center|Exchange admin center|
 |---|---|---|---|
 |Alerts|Email & collaboration|||
 |Classification||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
@@ -54,11 +54,11 @@ The image and the table below lists the changes in navigation between the Office
 |Service assurance|Settings|||
 |
 
-The improved [Microsoft 365 security center](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+[Microsoft 365 Defender](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
-If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in the Microsoft 365 security center.
+If you are familiar with the Office 365 Security and Compliance portal (protection.office.com), this article describes some of the changes and improvements in Microsoft 365 Defender.
 
-Learn more about the benefits: [Overview of the Microsoft 365 security center](overview-security-center.md)
+Learn more about the benefits: [Overview of Microsoft 365 Defender](overview-security-center.md)
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
@@ -73,8 +73,8 @@ This table is a quick reference of Email & Collaboration areas where change has 
 |Area|Description of change|
 |---|---|
 |[Email entity page](../office-365-security/mdo-email-entity-page.md)|This page **unifies** email information that had been scattered across different pages or views in the past. Investigating email for threats and trends is *centralized*. Header information and email preview are accessible through the same email page, along with other useful email-related information. Likewise, the detonation status for malicious file attachments or URLs can be found on a tab of the same page. The Email entity page empowers admins and security operations teams to understand an email threat and its status, fast, and then act quickly determine handling.|
-|[Investigation](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
-|[Alert view](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Office Security and Compliance center now includes links to the Microsoft 365 security center. Click on the **Open Alert Page** link and the Microsoft 365 security center opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
+|[Investigation](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
+|[Alert view](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Office Security and Compliance center now includes links to Microsoft 365 Defender. Click on the **Open Alert Page** link and Microsoft 365 Defender opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
 |[Attack Simulation training](../office-365-security/attack-simulation-training-insights.md)|Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.|
 |
 
@@ -93,9 +93,9 @@ Also, check the **Related Information** section at the bottom of this article.
 > The Microsoft 365 Security portal (<https://security.microsoft.com>) combines security features in <https://securitycenter.windows.com>, and <https://protection.office.com>. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
 
 > [!TIP]
-> All Exchange Online Protection (EOP) functions will be included in the Microsoft 365 security center, as EOP is a core element of Defender for Office 365.
+> All Exchange Online Protection (EOP) functions will be included in Microsoft 365 Defender, as EOP is a core element of Defender for Office 365.
 
-## Microsoft 365 security center Home page
+## Microsoft 365 Defender Home page
 
 The Home page of the portal surfaces:
 
@@ -134,7 +134,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
 
-[Learn more about Action Center](m365d-action-center.md)
+[Learn more about Action center](m365d-action-center.md)
 
 #### Threat Analytics
 
@@ -143,7 +143,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 - Email-related detections and mitigations from Microsoft Defender for Office 365. This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
 - Incidents view related to the threats.
 - Enhanced experience for quickly identifying and using actionable information in the reports.
-You can access Threat analytics either from the upper left navigation bar in the Microsoft 365 security center, or from a dedicated dashboard card that shows the top threats for your organization.
+You can access Threat analytics either from the upper left navigation bar in Microsoft 365 Defender, or from a dedicated dashboard card that shows the top threats for your organization.
 
 Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md)
 
@@ -151,16 +151,16 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Office 365 Security and Compliance center, this will be familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of the Microsoft 365 security center.":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left side of Microsoft 365 Defender.":::
 
 ### Access and Reports
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 security center permissions and reporting, on the left side of the security center.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the security center.":::
 
 > [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through the Microsoft 365 security center: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
+> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
 
 ## Advanced Hunting example for Microsoft Defender for Office 365
 
@@ -208,7 +208,7 @@ The data from this query will appear in the results panel below the query itself
 
 ## Related information
 
-- [Microsoft Defender for Office 365 in the Microsoft 365 security center](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)

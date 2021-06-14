@@ -156,7 +156,7 @@ Key resources:
 
    - The upgrade process will not only convert your Project Server 2010 data to Project Server 2013 format but will also consolidate the four Project Server 2010 databases into a single Project Web App database.
 
-   - Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. If you're using classic authentication, you'll need to consider this when you upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
+   - Both SharePoint Server 2013 and Project Server 2013 changed to claims-based authentication from the previous version. If you're using classic authentication, you'll need to consider this when you upgrade. For more information, see [Migrate from classic-mode to claims-based authentication in SharePoint 2013]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
 
 Key resources:
 
