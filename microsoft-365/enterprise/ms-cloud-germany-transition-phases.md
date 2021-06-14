@@ -112,7 +112,7 @@ Failing to complete this task may result in hybrid free-busy requests failing to
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
-Additional information for Cloud Solution Providers are available [here](ms-cloud-germany-transition-add-csp.md#Partner-tenant-migration).
+Additional information for Cloud Solution Providers is available in [Partner tenant migration](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration).
 
 ## Phase 4: SharePoint Online
 
