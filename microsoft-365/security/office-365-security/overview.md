@@ -67,8 +67,6 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 
 ## The Office 365 security ladder from EOP to Microsoft Defender for Office 365
 
-![EOP and Microsoft Defender for Office 365 and their security emphasis, going from Protect and Detect to Investigate and Respond. Email Authentication configuration (at least DKIM and DMARC) should be set up for EOP and up.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
-
 > [!IMPORTANT]
 > Learn the details on these pages: [Exchange Online Protection](exchange-online-protection-overview.md), and [Defender for Office 365](defender-for-office-365.md).
 
