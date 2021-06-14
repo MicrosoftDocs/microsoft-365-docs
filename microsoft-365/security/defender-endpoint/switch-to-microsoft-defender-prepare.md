@@ -17,9 +17,11 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-migratetomdatp
+  - m365solution-mcafeemigrate
+  - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 

@@ -23,6 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Learn about how to upgrade Microsoft Office to the latest Office client for users in your organization.
+ms.topic: article
 ---
 
 # Upgrade your Microsoft 365 for business users to the latest Office client
