@@ -48,7 +48,7 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 To run the attack scenario simulation:
 
-1. Ensure that your pilot environment includes the [Active Directory Domain Services (AD DS) domain controller and Windows 10 device](eval-defender-investigate-respond.md#additional-pilot-environment-requirements).
+1. Ensure that your pilot environment includes the [Active Directory Domain Services (AD DS) domain controller and Windows 10 device](eval-defender-investigate-endpoints.md).
 
 2. Sign in to the test device with the test user account.
 
