@@ -76,6 +76,12 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 
 ::: moniker-end
 
+> [!NOTE]
+> 
+> Microsoft 365 services do not provide payment receipts.
+> For credit card payments, please use the invoice and credit card billing statement to match your payment.
+
+
 ## Receive a copy of your billing statement in email
 
 You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
