@@ -24,11 +24,10 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-
 > [!NOTE]
-> By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default. 
+> By default, Microsoft Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) to override this default.
 
-In addition to always-on real-time protection and [on-demand](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled scans. 
+Also, to always-on real-time protection and [on-demand](run-scan-microsoft-defender-antivirus.md) scans, you can set up regular, scheduled scans.
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
@@ -195,7 +194,6 @@ RemediationScheduleTime
 ```
 
 For more information and allowed parameters, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
-
 
 ## Set up daily quick scans
 
