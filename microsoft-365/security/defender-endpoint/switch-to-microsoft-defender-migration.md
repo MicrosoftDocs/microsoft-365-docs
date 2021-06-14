@@ -28,15 +28,11 @@ ms.technology: mde
 
 # Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
 
-If you are thinking about switching from your non-Microsoft endpoint protection to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), you're in the right place. Use this article as a guide.
+If you are thinking about switching from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), you're in the right place. Use this article as a guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Overview of migrating to Defender for Endpoint":::
 
-When you make the switch to Defender for Endpoint, you begin with your non-Microsoft solution operating in active mode, configure Defender for Endpoint in passive mode, onboard to Defender for Endpoint, set Defender for Endpoint to active mode, and then remove the non-Microsoft solution.
-
-> [!TIP]
-> - If you're currently using McAfee Endpoint Security (McAfee), see [Migrate from McAfee to Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
-> - If you're currently using Symantec Endpoint Protection (Symantec), see [Migrate from Symantec to Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md).
+When you make the switch to Defender for Endpoint, you begin with your non-Microsoft solution operating in active mode. Then, you configure Defender for Endpoint in passive mode, and onboard your devices to Defender for Endpoint. Next, you set Defender for Endpoint to active mode. Finally, you remove the non-Microsoft solution.
 
 ## The migration process
 
