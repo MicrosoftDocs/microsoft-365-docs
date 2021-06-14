@@ -127,7 +127,7 @@ View reports, change your settings, and modify user roles.
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
 > For Defender for Office 365 users, you can now *manage and rotate* DKIM keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
 > 
-> For more information, see [Use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
+> For more information, see [Use DKIM to validate outbound email sent from your custom domain](../../office-365-security/use-dkim-to-validate-outbound-email.md).
 
 ## What's changed
 
