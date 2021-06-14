@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 A variety of reports are available in the [Microsoft 365 Defender portal](https://security.microsoft.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.
 
-![Reports dashboard in the Microsoft 365 Defender portal](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Reports dashboard in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
 
 ## Compromised users report
 
@@ -506,7 +506,7 @@ To view this report, in the [Microsoft 365 Defender portal](https://security.mic
 
 - Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **User reported messages**.
 
-![In the Microsoft 365 Defender portal, choose Reports \> Email & collaboration \> Email & collaboration reports \> User reported messages](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![In the Microsoft 365 Defender portal, choose Reports \> Email & collaboration \> Email & collaboration reports \> User reported messages](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
 > In order for the User reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
