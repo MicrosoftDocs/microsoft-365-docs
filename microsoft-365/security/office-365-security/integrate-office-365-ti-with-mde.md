@@ -43,7 +43,7 @@ In this example, you can see that the recipients of the detected email message h
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
 
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in Microsoft 365. (See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in Microsoft 365. (See [Permissions in the Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md))
 
 - You must have access to [Explorer (or real-time detections)](threat-explorer.md).
 
@@ -51,11 +51,11 @@ In this example, you can see that the recipients of the detected email message h
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
-1. As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in. (This takes you to the Office 365 Security & Compliance Center.)
+1. As a global administrator or a security administrator, go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. (This takes you to the Microsoft 365 Defender portal.)
 
 2. In the navigation pane, choose **Email & collaboration** \> **Explorer**.
 
-3. In the upper right corner of the screen, choose **Defender for Endpoint Settings (MDE Settings)**.
+3. In the upper right corner of the screen, click **MDE Settings**.
 
 4. In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.
 

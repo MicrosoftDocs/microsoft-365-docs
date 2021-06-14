@@ -45,7 +45,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the **Microsoft 365 Defender** at <https://security.microsoft.com>.
+1. Open the **Microsoft 365 Defender** portal at <https://security.microsoft.com>.
 
 2. Navigate to **Search** and select **Audit log search**.
 
