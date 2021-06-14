@@ -52,7 +52,8 @@ List items are not supported by retention policies but are supported by retentio
 
 Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
-For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
+> [!NOTE]
+> For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
 
 ## How retention works for SharePoint and OneDrive
 
