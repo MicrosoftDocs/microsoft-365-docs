@@ -3,7 +3,7 @@ title: "Microsoft Viva Topics overview"
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
 ms.service: 
@@ -18,7 +18,7 @@ description: "Overview of Viva Topics."
 
 # Microsoft Viva Topics overview 
 
-Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word, PowerPoint, Outlook and Excel.
+Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word, PowerPoint, Outlook, and Excel.
 
 <br/>
 
@@ -32,15 +32,36 @@ Viva Topics uses AI to automatically search for and identify *topics* in your or
 
 ## How topics are displayed to users
 
-When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. You can open the topic summary from the highlight. Open the topic details from the title of the summary. The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author. 
+Topics are displayed to users through:
 
-   ![Topic highlights](../media/knowledge-management/saturn.png) 
+- [Topic highlights](topic-experiences-overview.md#topic-highlights) in SharePoint pages
+- Topic answers in [search results](topic-experiences-overview.md#search-results)
+- Search in [office applications](topic-experiences-overview.md#office-application-search)
+- [Topic center](topic-experiences-overview.md#topic-center) home page
 
-When you use Search in Word, PowerPoint, Outlook or Excel, either through the search box, or by selecting **Search** in the context menu, the results that are displayed might also show the topic summary.
+### Topic highlights
+
+When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. You can open the topic summary from the highlight. Open the topic details from the title of the summary to view the full topic page. The mentioned topic could be identified automatically or could have been added to the page with a direct reference to the topic by the page author. 
+
+   ![Screenshot showing topic highlights.](../media/knowledge-management/saturn.png) 
+
+### Search results
+
+You can see a [topic answer](search.md#topic-answer) in search results when you search from the SharePoint start page, search on Office.com, or search from a SharePoint site after you you change the search scope to include the full organization. The topic answer will appear at the topic of the results list and give you a short set of information related to that topic. 
+
+   ![Screenshot showing the search results of a SharePoint site search.](../media/knowledge-management/site-search-results.png) 
+
+### Office application search
+
+When you use Search in Office apps such as Word, PowerPoint, Outlook, or Excel — either through the search box or by selecting **Search** in the context menu — topic answers are displayed in the search results.
 
    ![Screenshot showing search in Word through the Search box.](../media/knowledge-management/word-search-2.png)
 
    ![Screenshot showing search in Word through the Search context menu.](../media/knowledge-management/word-search-1.png)
+
+### Topic center
+
+Users can see topics in their organization to which they have a connection on the [topic center home page](topic-center-overview.md#home-page).
 
 ## Knowledge indexing
 

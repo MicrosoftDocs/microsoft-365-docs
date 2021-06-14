@@ -72,7 +72,8 @@ If a Windows 10 device is Azure AD registered, it needs to be disconnected from 
 
     If your work account is in the list but NOT connected to an Azure AD, proceed with step 2.
 
-    Otherwise, your device is an Azure AD joined device and you have to refer to [this section](##-Azure-AD-Joined-Windows-10-devices).
+    Otherwise, your device is an Azure AD joined device and you have to refer to [Azure AD Joined Windows 10 devices](#azure-ad-joined-windows-10-devices).
+
 ### Step 2: Disconnect the device from Azure AD
 1.	Click on your work account. The buttons *Info* and *Disconnect* appear.
 2.	Click **Disconnect**. 
@@ -145,15 +146,16 @@ Administrators should check `https://portal.microsoftazure.de` to determine if t
 
 **When do my users re-register their devices?**
 
-It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
+It's critical to your success that you only unregister and re-register your devices after [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) has been completed. You must finish the re-registration before phase 10 starts, otherwise you could lose access to your device.
 
 **How do I know that all my devices are registered in the public cloud?**
 
-To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#Phase-9-&-10:-Azure-AD-Finalization).
+To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
 
 ## Additional considerations
 
-**IMPORTANT:** The Intune service principal will be enabled after [phase 3 of the migration process](ms-cloud-germany-transition-phases.md#Phase-3:-Subscription-transfer), which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
+> [!IMPORTANT]
+> The Intune service principal will be enabled after [phase 3 of the migration process](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer), which implies the activation of Azure AD Device Registration. If you blocked Azure AD Device Registration before migration, you must disable the Intune service principal with PowerShell to disable Azure AD Device Registration with the Azure AD portal again. You can disable the Intune service principal with this command in the Azure Active Directory PowerShell for Graph module.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
