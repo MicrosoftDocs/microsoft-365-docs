@@ -48,7 +48,7 @@ The table below lists the changes in navigation between the Office 365 Security 
 |Data privacy||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Search|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Search (content search)||
 |Reports|[Report](https://security.microsoft.com/emailandcollabreport)|||
-|Service assurance|[See here](https://security.microsoft.com/securitysettings/portalRedirection)|||
+|Service assurance||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |Supervision||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |eDiscovery||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 
@@ -124,7 +124,10 @@ View reports, change your settings, and modify user roles.
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the security center.":::
 
 > [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DomainKeys Identified Mail (DKIM) keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
+> DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
+> For Defender for Office 365 users, you can now *manage and rotate* DKIM keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> **DKIM**.
+> 
+> For more information, see [Use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
 ## What's changed
 
