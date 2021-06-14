@@ -118,7 +118,7 @@ Skype for Business moves are no longer available.  [Skype for Business Online wi
  
 [How to request your data move](request-your-data-move.md)
     
-[Data move general FAQ](data-move-faq.md)
+[Data move general FAQ](data-move-faq.yml)
   
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

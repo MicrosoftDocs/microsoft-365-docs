@@ -61,7 +61,7 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Alerts queue**.
 
@@ -79,7 +79,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 Alerts can be classified as false positives or true positives in the Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -94,7 +94,7 @@ Alerts can be classified as false positives or true positives in the Microsoft 3
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in the Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard. 
 
-1. Go to Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -206,7 +206,7 @@ The procedures in this section describe how to define exclusions and indicators.
 In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
 > [!TIP]
-> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### Use Microsoft Endpoint Manager to manage antivirus exclusions (for existing policies)
 
@@ -244,7 +244,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 [Indicators](/microsoft-365/security/defender-endpoint/manage-indicators) (specifically, indicators of compromise, or IoCs) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, you can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
-To specify entities as exclusions for Microsoft Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to [next-generation protection](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), [endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), and [automated investigation & remediation](/microsoft-365/security/defender-endpoint/automated-investigations).
+To specify entities as exclusions for Microsoft Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to [next-generation protection](microsoft-defender-antivirus-in-windows-10.md), [endpoint detection and response](overview-endpoint-detection-response.md), and [automated investigation & remediation](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 "Allow" indicators can be created for:
 
@@ -281,7 +281,7 @@ When you [create an "allow" indicator for an application certificate](/microsoft
 
 Before you create indicators for application certificates, make sure the following requirements are met:
 
-- Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
+- Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - Antimalware client version is 4.18.1901.x or later 
 - Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019 
 - Virus and threat protection definitions are up to date  
@@ -449,4 +449,4 @@ If you have worked through all the steps in this article and still need help, co
 
 [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 
-[Overview of Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use) 
+[Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use) 
