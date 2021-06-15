@@ -40,6 +40,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have Anti-mal
 1. **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 
 2. **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
+3. **4.18.2106 or later**: Add UserName
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
 
@@ -182,7 +183,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
     > You have to replace `&` with `&amp;` in the value.
 
 2. Create policy
-    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs .xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
@@ -312,3 +313,19 @@ DeviceEvents
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
+
+
+## Q&A
+1. Q: The removable storage media limitation, what is the maximum number of USBs?   
+    - A: Internally we have validate one USB group with 100,000 medias - up to 7MB size. The policy works fine in both Intune and GPO without performance issue. 
+2. Q: The policy does not work.
+    - A: The most common no required  [Anti-malware Client Version](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints). If the version is correct, then
+    - Check whether the client machine has the policy via Registry Keys - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Device Control\Policy Rules and HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Device Control\Policy Groups and HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdDevFlt\Parameters\PolicyPackage; 
+    - If the value is not there, the most common no required  [Anti-malware Client Version](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)  or the XML file is not correct formatted, e.g. text editor may add a BOM(byte order mark 0xEF 0xBB 0xBF) at the beginning of the files which makes the xml parsing not work
+    - If the value is there and if the policy is managed via Group Policy, check whether the client machine can access the policy XML path
+
+
+
+
+
+
