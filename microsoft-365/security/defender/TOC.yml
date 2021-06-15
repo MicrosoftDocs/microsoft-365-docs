@@ -194,6 +194,8 @@
                    href: advanced-hunting-query-emails-devices.md
                  - name: Hunt for ransomware
                    href: advanced-hunting-find-ransomware.md
+                 - name: Advanced hunting example
+                   href: advanced-hunting-example.md
                  - name: Transition from Defender for Endpoint 
                    href: advanced-hunting-migrate-from-mde.md
              - name: Work with query results
