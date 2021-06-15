@@ -121,7 +121,7 @@ To learn more, see [Windows Defender Firewall with advanced security](/windows/s
 
 ### Manual response actions
 
-Defender for Endpoint includes certain response actions that can be taken when a device is detected as potentially compromised or having suspicious content. You can run response actions on files that are detected as threats. Table 2 lists the manual response actions that are available in Defender for Endpoint Plan 1. 
+Defender for Endpoint includes certain [response actions that can be taken when a device is detected as potentially compromised](respond-machine-alerts.md) or having suspicious content. You can run response actions on files that are detected as threats. Table 2 lists the manual response actions that are available in Defender for Endpoint Plan 1. 
 
 | File/Device |	Action | Description |
 |:---|:---|:---|
