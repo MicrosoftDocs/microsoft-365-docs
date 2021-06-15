@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Learn how to set up and use a 17a-4 Slack DataParser connector to import and archive Slack data in Microsoft 365 "
+description: "Learn how to set up and use a 17a-4 Slack DataParser connector to import and archive Slack data in Microsoft 365."
 ---
 
 # Set up a connector to archive Slack data (preview)
 
-Use [DataParser from 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) to import and archive data from the Slack platform to user mailboxes in your Microsoft 365 organization. DataParser includes a Slack connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The DataParser connector converts Slack data to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+Use [DataParser from 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) to import and archive data from the Slack platform to user mailboxes in your Microsoft 365 organization. DataParser includes a Slack connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The Slack DataParser connector converts Slack data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
 After Slack data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using a Slack connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -26,7 +26,7 @@ The following overview explains the process of using a data connector to archive
 
 ![Archiving workflow for Slack data from 17a-4](../media/SlackDataParserConnectorWorkflow.png)
 
-1. Your organization works with 17a-4 to set up and configure a Slack connector.
+1. Your organization works with 17a-4 to set up and configure Slack DataParser.
 
 2. On a regular basis, Slack items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 
@@ -38,7 +38,7 @@ The following overview explains the process of using a data connector to archive
 
 - Create a DataParser account for Microsoft connectors. To do this, contact [17a-4 LLC](https://www.17a-4.com/contact/). You need to sign into this account when you create the connector in Step 1.
 
-- The user who creates the Slack connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to a role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the Slack DataParser connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to a role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Set up a Slack DataParser connector
 
