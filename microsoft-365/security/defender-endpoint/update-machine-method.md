@@ -40,7 +40,7 @@ Updates properties of existing [Machine](machine.md).
 
 ## Limitations
 1. You can update machines that are available in the API. 
-2. Update machine only appends tags to the tag collection. If tags exist, they must be incuded in the tags collection in the body.
+2. Update machine only appends tags to the tag collection. If tags exist, they must be included in the tags collection in the body.
 3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 
@@ -54,8 +54,8 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
->- The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>- The user needs to have at least the following role permission: 'Alerts investigation'. For more information, see [Create and manage roles](user-roles.md).
+>- The user needs to have access to the device associated with the alert, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
 ```
@@ -73,7 +73,7 @@ Content-Type | String | application/json. **Required**.
 ## Request body
 In the request body, supply the values for the relevant fields that should be updated.
 <br>Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
-<br>For best performance you shouldn't include existing values that haven't change.
+<br>For best performance, you shouldn't include existing values that haven't change.
 
 Property | Type | Description
 :---|:---|:---
@@ -82,15 +82,15 @@ deviceValue | Nullable Enum | The [value of the device](tvm-assign-device-value.
 
 ## Response
 If successful, this method returns 200 OK, and the [machine](machine.md) entity in the response body with the updated properties. 
-If machine tags collection in body don't contain existing machine tags - 400 Invalid Input and a message informing of the missing tag/s.
-If machine with the specified id was not found - 404 Not Found.
+If machine tags collection in body doesn't contain existing machine tags - 400 Invalid Input and a message informing of the missing tag/s.
+If machine with the specified ID was not found - 404 Not Found.
 
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
