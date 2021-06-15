@@ -26,7 +26,7 @@ For more info on how partners create these apps, see [How to plan a SaaS offer f
 
 The Integrated apps portal is only accessible to global admins and available to world wide customers only. This feature is not available in sovereign and government clouds.
 
-The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, we you can see 2 kinds of apps.
+The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office add-ins and Teams apps are listed. For web apps, we you can see two kinds of apps.
 
 - SaaS apps that are available in appsource.microsoft.com, and can be deployed by admins giving consent on behalf of organization.
 - SAML gallery apps that are linked with office add-ins.
@@ -100,7 +100,7 @@ You won't be able to deploy a single store app or Microsoft 365 Apps by partner 
 
 6. Select **Next** to review the deployment and choose **Finish deployment**. You can view the deployment from the **Overview** tab by choosing **View this deployment**.
 
-## Upload custom line of business apps for testing and full deployment 
+## Prepare to deploy add-ins in Integrated apps
 
 Office add-ins help you personalize your documents and streamline the way you access information on the web (see Start using your Office Add-in). 
 
@@ -152,7 +152,7 @@ Microsoft Exchange stores the add-in manifests within your organization's tenant
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet. 
 
-## User and group assignments
+### User and group assignments
 The deployment of add-in is currently supported to the majority of groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups. Deployment supports users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. 
 
 > [!NOTE]
