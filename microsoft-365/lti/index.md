@@ -71,12 +71,7 @@ For configuration steps, see [Use Microsoft Teams meetings with Canvas](teams-me
 
 ### Teams Classes LTI
 
-The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course directly from within their LMS.
+The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams. Users can access their class teams associated with their course directly from within their LMS. You can find configuration steps below:
 
-#### Teams Classes LTI with Canvas
-
-For configuration steps, see [Use Microsoft Teams classes with Canvas](teams-classes-with-canvas.md).
-
-#### Teams Classes LTI with Blackboard
-
-For configuration steps, see [Use Microsoft Teams classes with Blackboard](teams-classes-lms.md).
+- **Teams Classes LTI with Canvas** [Use Microsoft Teams classes with Canvas](teams-classes-with-canvas.md).
+- **Teams Classes LTI with Blackboard** [Use Microsoft Teams classes with Blackboard](teams-classes-lms.md).
