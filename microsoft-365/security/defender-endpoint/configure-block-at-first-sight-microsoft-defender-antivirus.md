@@ -141,7 +141,7 @@ You can confirm that block at first sight is enabled on individual client device
 
 ## Validate block at first sight is working
 
-To validate that the feature is working, download the [Block at First Sight sample file](https://demo.wd.microsoft.com/Page/BAFS). To download the file, you will need an account in Azure AD that has either the Security Administrator or Global Administrator role assigned.
+To validate that the feature is working, download the [Block at first sight sample file](https://demo.wd.microsoft.com/Page/BAFS). To download the file, you will need an account in Azure AD that has either the Security Administrator or Global Administrator role assigned.
 
 To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
