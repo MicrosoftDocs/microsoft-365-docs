@@ -6,14 +6,14 @@ search.appverid: met150
 
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 ms.topic: conceptual
@@ -38,13 +38,13 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
-## April/May 2021 
+## April/May 2021
 
 - [Email entity page](mdo-email-entity-page.md): A unified 360-degree view of an email with enriched information around threats, authentication and detections, detonation details, and a brand-new email preview experience.
 - [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Updates to EmailEvents (RecordType 28) to add delivery action, original and latest delivery locations, and updated detection details.
-- [Threat Analytics for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns. 
+- [Threat Analytics for Defender for Office 365](/microsoft-365/security/defender/threat-analytics): View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns.
 
-## February/March 2021 
+## February/March 2021
 
 - Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
@@ -85,7 +85,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
   - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
   - Granular time filters (day, hour, half-hour)
 
-- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Security & Compliance Center, go to **Threat management** \> **Review**.) (Microsoft Defender for Office 365 Plan 2)
+- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets in the Security & Compliance Center, go to **Threat management** \> **Review**.) (Microsoft Defender for Office 365 Plan 2)
 
 - [Safe Documents in Microsoft 365](safe-docs.md) **(preview)**
 
