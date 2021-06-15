@@ -61,12 +61,12 @@ To learn more, see [Next-generation protection in Windows](microsoft-defender-an
 
 Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities in Defender for Endpoint Plan 1 are described in the following sections.
 
-- Ransomware mitigation
-- Attack surface reduction rules
-- Device control
-- Web protection
-- Network protection
-- Network firewall
+- [Ransomware mitigation](#ransomware-mitigation)
+- [Attack surface reduction rules](#attack-surface-reduction-rules)
+- [Device control](#device-control)
+- [Web protection](#web-protection)
+- [Network protection](#web-protection)
+- [Network firewall](#network-firewall)
 
 To learn more about attack surface reduction capabilities in Defender for Endpoint, see Overview of attack surface reduction.
 
