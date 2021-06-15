@@ -13,10 +13,10 @@ ms.topic: article
 
 # Assign devices to a deployment group
 
-Microsoft Managed Desktop will assign devices to deployment groups automatically, but you can change the group a device is assigned to by using the Admin portal. You can change the assignment after a device is registered or after a user has enrolled.
+Microsoft Managed Desktop will assign devices to the various deployment groups, but you can specify or change group a device is assigned to a device by using the Admin portal. You change the assignment after a device is registered or after a user has enrolled.
 
 > [!IMPORTANT]
-> If you change the assignment after a user has enrolled, policies that are specific to that group will be applied to the device, which can change the user experience. It's best to evaluate and understand the effect a group change will have before you move devices in bulk. The change will install the latest version of Windows 10 (including any new feature or quality updates) and will restart the device. Double-check that you've selected the right devices to assign. It can take up to 24 hours for the assignment to take effect.
+> If you change the assignment, policies that are specific to that group will be applied to the device. The change might install the latest version of Windows 10 (including any new feature or quality updates). It's best to move just a few devices at first and then check the resulting user experience. Be aware that certain updates will restart the device. Double-check that you've selected the right devices to assign. It can take up to 24 hours for the assignment to take effect.
 
 To assign devices to a deployment group, follow these steps. If you want to move separate devices to different groups, repeat these steps for each group.
 
@@ -26,7 +26,9 @@ To assign devices to a deployment group, follow these steps. If you want to move
 4. Select **Assign device to group**. A fly-in opens.
 5. Use the drop-down menu to select the group to move devices to, and then select **Save**. The **Group assigned by** will change to **Pending**.
 
-When the assignment is complete, **Group assigned by** status will change to **Admin** (indicating that you made the change) and the **Group** column will show the new group assignment.
+When the assignment is complete, **Group assigned by** will change to **Admin** (indicated that you made the change) and the **Group** column will show the new group assignment.
 
 > [!NOTE]
-> You can't move devices to other groups if they're in the "error" or "pending" registration state. If a device hasn't been properly removed, it could show a status of "ready." If you move such a device, it's possible that the move won't complete. If you don't see **Group assigned by** change to **Pending** in Step 5, check that the device is available in Intune. For more information about checking in Intune, see [Monitor device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-monitor). 
+> You can't move devices to other groups if they're in the "error" or "pending" registration state.
+>
+>If a device hasn't been properly removed, it could show a status of "ready." If you move such a device, it's possible that the move won't complete. If you don't see **Group assigned by** change to **Pending** in Step 5, check that the device is available by searching for it in Intune. For more information, see [See device details in Intune](/mem/intune/remote-actions/device-inventory).
