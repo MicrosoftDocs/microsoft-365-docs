@@ -15,7 +15,7 @@ localization_priority: Normal
 f1.keywords: NOCSH  
 ---
 
-# COmpare Microsoft Defender for Endpoint Plan 1 to Plan 2
+# Compare Microsoft Defender for Endpoint Plan 1 to Plan 2
 
 Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Soon, Defender for Endpoint will be available in two plans:
 
