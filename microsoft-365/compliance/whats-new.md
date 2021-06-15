@@ -33,10 +33,18 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ## May 2021
 
+### Data Loss Prevention
+
+- New guidance for [planning your Data Loss Prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-overview-plan-for-dlp?view=o365-worldwide) strategy.
+
 ### Retention and records management
 
 - If you release a retention policy from a SharePoint site or OneDrive account, you no longer have to wait the 30-day grace period before you can delete the site or account. A popular request by customers, this change is now complete for all tenants.
 - In preview, **multi-stage disposition review**:  An administrator can now add up to five consecutive stages of [disposition review ](disposition.md) for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
+
+### Sensitive Information Types
+
+- New information added to help you [Modify a Keyword Dictionary](https://docs.microsoft.com/en-us/microsoft-365/compliance/sit-modify-keyword-dictionary?view=o365-worldwide).
 
 ### Sensitivity labels
 
