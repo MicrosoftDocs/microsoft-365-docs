@@ -19,7 +19,7 @@ ms.date: 06/14/2021
 ms.technology: mde
 ---
 
-# Make the switch to Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+# Make the switch to Microsoft Defender for Endpoint
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
