@@ -59,7 +59,7 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 4. In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialog-new.png" alt-text="MDE Connection":::
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection":::
 
 5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com).
 
