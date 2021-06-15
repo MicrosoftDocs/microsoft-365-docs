@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MET150
+search.appverid: GEA150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
