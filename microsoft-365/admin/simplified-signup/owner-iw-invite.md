@@ -18,6 +18,16 @@ description: "Set up your business email account in Microsoft 365"
 
 # Invite users to Microsoft 365 Business Standard
 
+As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use subscriptions.
+
+## Share an invite to a Microsoft 365 Business Standard subscription
+
+1. In the Microsoft 365 admin center, select **Create an account for another person**.
+
+2. Add the usernames and email addresses for the people you want to invite and choose **Send**.
+
+## Accept an invitation to a Microsoft 365 Business Standard subscription
+
 You'll get an email notification that looks like this when someone in your organization sets you up with a new Microsoft 365 for business user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
 :::image type="content" source="../../media/new-business-account-email.png" alt-text="Screenshot: Email notification letting user know that a new business account has been created for them.":::
@@ -28,13 +38,26 @@ Make sure you have your current account sign in details before you start these s
 
 ## Set up your user account
 
-1. From the email, select **Set up this account**.
+1. From the invitation email, select **Accept**.
 
-2. Sign in to your current account by choosing **Sign in**.
+2. On the **Join Microsoft 365 Business...** page, select **Next**.
 
-3. Choose **Next** on the **Terms and Conditions** page.
+3. On the Sign up page, make sure you use the email used in the invitation email, and create a password. Select **Create account**.
 
-4. Choose **Next** to add your new user account to Microsoft 365 apps and set up OneDrive for Business.
+3. Choose **Accept** on the **Terms and Conditions** page.
+
+1. On the Review permissions page, choose **Accept**.
+
+1. On the Welcome to Microsoft 365 page, you can download Office desktop and mobile apps, and set up OneDrive.
+
+## Set up Microsoft 365 Business Standard
+sf
+
+### Download desktop apps
+sdfdf
+
+### D
+
 
 5. Open any of your Microsoft 365 apps, like Word, Excel or PowerPoint, select your profile icon and then **Sign in with a different account**. Follow the steps and choose **Next** to set up Outlook.
 

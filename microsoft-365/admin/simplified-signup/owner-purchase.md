@@ -45,25 +45,9 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
 
 7. Decide how you'll sign in to Microsoft 365. You can use your current email address or create a new business email by adding a domain. In this example, we'll select **Next** to sign in with your personal email address.
 
-        - **Sign in with your personal email, for example, alliebellew@hotmail.com.** 
-        
-            If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain later. You'll sign into Microsoft 365 with this email address.
-        
-        - **Create a new business email account (advanced)** 
-        
-             You want to create a new business account with a website that uses your business name. To do this, you'll need a domain. You can either buy a domain in the next step or add a domain you already own. You'll then sign into Microsoft 365 with this new email address.
+- **Sign in with your personal email, for example, alliebellew@hotmail.com.** If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain later. You'll sign into Microsoft 365 with this email address.
 
-
-        - **I don't own a domain name** 
-        
-            If your email address doesn't include your business name and if you don't have a web site that uses your business name, you can easily buy a domain in the next step. Select **Buy a new domain name**, and enter the name of your business. For example, if your company is called *ContosoSkis*, try entering Contosokis.com, Contososkis.org, or Contososkis.biz. Then select **Check availability** to see whether your chosen domain is available. You can try multiple options before you make a decision. If your domain name is available, we'll let you know the cost and bill you directly with your new plan. 
-       
-            > [!TIP]
-            > if you're not sure what domain extension to choose for your new domain (for example, .com or .org), see [Buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md)
-        
-        - **I'm not sure, or I own a domain name already** 
-        
-             Choose **Get a Microsoft domain for now**. This doesn't cost anything, and later you can get a custom name for your business, or connect to one you already own. We'll show you how.
+- **Create a new business email account (advanced)** You want to create a new business account with a website that uses your business name. To do this, you'll need a domain. You can either buy a domain or add a domain you already own. You'll then sign into Microsoft 365 with this new email address.
 
 8. Then create a password on the next page. Select **Create account** to continue. On the next page, read about how handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
