@@ -117,7 +117,7 @@ With network firewall protection, you can set rules that determine which network
 - Safeguard sensitive data and intellectual property
 - Extend your security investment
 
-To learn more, see Windows Defender Firewall with advanced security.
+To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### Manual response actions
 
