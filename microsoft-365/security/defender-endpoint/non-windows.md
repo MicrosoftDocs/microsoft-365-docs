@@ -59,6 +59,13 @@ benefits, read our
 For more details on how to get started, visit the Defender for Endpoint on macOS
 [documentation](microsoft-defender-endpoint-mac.md).
 
+>[!NOTE]
+>The following capabilities are not currently supported on macOS endpoints:
+>- Data loss prevention
+>- Live response
+>- SIEM
+
+
 ## Microsoft Defender for Endpoint on Linux
 
 Microsoft Defender for Endpoint on Linux offers preventative (AV) capabilities for Linux
@@ -74,6 +81,14 @@ the key features and benefits, read our
 For more details on how to get started, visit the Microsoft Defender for Endpoint on
 Linux
 [documentation](microsoft-defender-endpoint-linux.md).
+
+>[!NOTE]
+>The following capabilities are not currently supported on Linux endpoints:
+>- Data loss prevention
+>- Live response
+>- SIEM
+
+
 
 ## Microsoft Defender for Endpoint on Android
 
