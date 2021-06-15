@@ -41,6 +41,8 @@ Intro
 
 ## Step 1. Set up the Defender for Identity Instance
 
+Intro
+
 |  |Step     |More information  |
 |---------|---------|---------|
 |1     | Create the Defender for Identity instance        | [Quickstart: Create your Microsoft Defender for Identity instance](/defender-for-identity/install-step1)        |
