@@ -40,14 +40,14 @@ Thank you for participating in our preview program! Give us feedback on your ove
 At a high level, Defender for Endpoint Plan 1 includes all of the following features and capabilities:
 
 - [Next-generation protection](#next-generation-protection) (includes antimalware and antivirus)
-- Attack surface reduction
+- [Attack surface reduction](#attack-surface-reduction)
 - Manual response actions
 - Centralized management
 - Support for Windows devices and iOS devices
 
 These features and capabilities are described in the following sections.
 
-### Next-generation protection
+## Next-generation protection
 
 Your next-generation protection in Defender for Endpoint Plan 1 includes Microsoft Defender Antivirus and robust antimalware protection. With this protection, you get:
 
@@ -57,7 +57,7 @@ Your next-generation protection in Defender for Endpoint Plan 1 includes Microso
 
 To learn more, see [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md).
 
-### Attack surface reduction
+## Attack surface reduction
 
 Your organization’s attack surfaces are all the places where you’re vulnerable to cyberattacks. With Defender for Endpoint Plan 1, you can reduce your attack surfaces by protecting the devices and applications that your organization uses. The attack surface reduction capabilities in Defender for Endpoint Plan 1 are described in the following sections.
 
@@ -70,13 +70,13 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 
 To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
-#### Ransomware mitigation
+### Ransomware mitigation
 
 With controlled folder access, you get ransomware mitigation. Controlled folder access allows only trusted apps to access protected folders on your endpoints. Apps are added to the trusted apps list based on their prevalence and reputation. Your security operations team can add or remove apps from the trusted apps list, too.
 
 To learn more, see [Protect important folders with controlled folder access](controlled-folders.md).
 
-#### Attack surface reduction rules
+### Attack surface reduction rules
 
 Attack surface reduction rules target certain software behaviors that are considered risky. Such behaviors include:
 
@@ -88,13 +88,13 @@ Legitimate business applications can exhibit such software behaviors; however, t
 
 To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).
 
-#### Device control
+### Device control
 
 Sometimes threats to your organization’s devices come in the form of files on removable drives, such as USB drives. Defender for Endpoint includes capabilities to help prevent threats from unauthorized peripherals from compromising your devices. You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. 
 
 To learn more, see [Control USB devices and removable media](control-usb-devices-using-intune.md).
 
-#### Web protection
+### Web protection
 
 With web protection, you can protect your organization’s devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
 
@@ -103,13 +103,13 @@ With web protection, you can protect your organization’s devices from web thre
 
 To learn more, see [web protection](web-protection-overview.md).
 
-#### Network protection
+### Network protection
 
 With network protection, you can prevent your organization from accessing dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. 
 
 To learn more, see [Protect your network](network-protection.md).
 
-#### Network firewall
+### Network firewall
 
 With network firewall protection, you can set rules that determine which network traffic is permitted to flow to or from your organization’s devices. With your network firewall and advanced security that you get with Defender for Endpoint, you can:
 
@@ -119,7 +119,7 @@ With network firewall protection, you can set rules that determine which network
 
 To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
-### Manual response actions
+## Manual response actions
 
 Defender for Endpoint includes certain [response actions that can be taken when a device is detected as potentially compromised](respond-machine-alerts.md) or having suspicious content. You can run response actions on files that are detected as threats. Table 2 lists the manual response actions that are available in Defender for Endpoint Plan 1. 
 
@@ -132,7 +132,7 @@ Defender for Endpoint includes certain [response actions that can be taken when 
 
 To learn more, see Take response actions on devices and Take response actions on files.
 
-### Centralized management
+## Centralized management
 
 Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Defender for Endpoint integrates with Microsoft Endpoint Manager and other Microsoft solutions. Choose from several methods to configure and manage Defender for Endpoint:
 
@@ -142,12 +142,12 @@ Defender for Endpoint enables your security operations team to centrally manage 
  
 To learn more, see Manage Defender for Endpoint.
 
-#### Role-based access control
+### Role-based access control
 
 Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 security center (https://security.microsoft.com). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
 To learn more, see Manage portal access using role-based access control.
 
-#### Reporting
+### Reporting
 
 The Microsoft 365 security center (https://security.microsoft.com) provides easy access to information about detected threats and actions to address those threats. 
 
@@ -158,11 +158,11 @@ The Microsoft 365 security center (https://security.microsoft.com) provides easy
 
 To learn more, see the Getting started section in this guide.
 
-#### APIs
+### APIs
 
 With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization’s custom solutions. To learn more, see Defender for Endpoint APIs. 
 
-### Cross-platform support
+## Cross-platform support
 
 Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Defender for Endpoint Plan 1 provides threat protection across your organization’s Windows and iOS devices (with plans to support other operating systems soon). 
 
