@@ -148,12 +148,12 @@ To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
 
 ### Role-based access control
 
-Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 security center (https://security.microsoft.com). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
+Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com]https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
 To learn more, see Manage portal access using role-based access control.
 
 ### Reporting
 
-The Microsoft 365 security center (https://security.microsoft.com) provides easy access to information about detected threats and actions to address those threats. 
+The Microsoft 365 Defender portal ([https://security.microsoft.com]https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats. 
 
 - The Home page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
 - The Incidents & alerts section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
