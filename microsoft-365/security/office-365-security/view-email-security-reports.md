@@ -31,9 +31,15 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A variety of reports are available in the [Microsoft 365 Defender portal](https://security.microsoft.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.
+A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
 
-![Reports dashboard in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
+![Email & collaboration reports page in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
+
+> [!NOTE]
+>
+> Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
+>
+> Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## Compromised users report
 
@@ -42,126 +48,257 @@ A variety of reports are available in the [Microsoft 365 Defender portal](https:
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
-![Compromised users widget in the Reports dashboard](../../media/compromised-users-report-widget.png)
+![Compromised users widget on the Email & collaboration reports page](../../media/compromised-users-report-widget.png)
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Compromised users**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
+To view the report, open the Microsoft 365 Defender portal and go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On **Compromised users**, click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
 
-You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
-- **Start date** and **End date**
+- **Date (UTC)**: **Start date** and **End date**.
+- **Activity**:
+  - **Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.
+  - **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
 
-- **Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.
-
-- **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
+When you're finished, click **Apply** or **Cancel**.
 
 ![Report view in the Compromised users report](../../media/compromised-users-report-activity-view.png)
 
-If you click **View details table**, you can see the following details:
+In the table below the graph, you can see the following details:
 
 - **Creation time**
 - **User ID**
 - **Action**
 
-To go back to the report view, click **View report**.
-
-## Encryption report
-
-The **Encryption report** is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes). Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages. For example:
-
-- If you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. For more information, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
-
-- If you have a number of encryption templates available but no one is using them, you might explore whether users need feature training.
-
-The aggregate view allows filtering for the last 90 days, while the detail view allows filtering for 10 days.
-
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Encryption report**. To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.
-
-To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).
-
-### Report view for the Encryption report
-
-You can use the following filters on the chart:
-
-- **View data by: Message Encryption Report** and **Break down by: Encryption method**: The following encryption methods are available:
-
-  - **Encryption by user**
-  - **Encryption by policy**
-
-  If you click **Filters**, you can modify the chart with the following filters:
-
-  - **Start date** and **End date**
-  - Encryption method.
-  - Encryption template.
-
-- **View data by: Message Encryption Report** and **Break down by: Encryption template**: The following encryption methods are available:
-
-  - **Do not forward**
-  - **Encrypt only**
-  - **OME previous**
-  - **Custom**
-
-  If you click **Filters**, you can modify the chart with the following filters:
-
-  - **Start date** and **End date**
-  - Encryption method
-  - Encryption template
-
-- **View data by: Top 5 recipient domains**: This view shows a pie chart with sent message counts for the top 5 recipient domains.
-
-  If you click **Filters**, you can select a **Start date** and **End date**.
-
-### Details table view for the Encryption report
-
-If you click **View details table**, the information that's shown depends on the chart you were looking at:
-
-- **Break down by: Encryption method** or **Break down by: Encryption template**: The following information is shown:
-
-  - **Date**
-  - **Sender address**
-  - **Encryption template**
-  - **Encryption method**
-  - **Recipient address**
-  - **Subject**
-
-- **View data by: Top 5 recipient domains**:
-
-  - **Date**
-  - **Recipient domain**
-  - **Message count**
-
-If you click **Filters** in a details table view, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Encryption method
-- Encryption template
-
-To go back to the report view, click **View report**.
-
 ## Mailflow status report
 
-The **Mailflow status report** contains information about malware, spam, phishing and edge blocked messages. For more details, see [Mailflow status report](view-mail-flow-reports.md#mailflow-status-report).
+The **Mailflow status report** is a smart report that shows information about incoming and outgoing email, spam detections, malware, email identified as "good", and information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
-## Malware detections in email report
+To view the report, open the Microsoft 365 Defender portal and go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On **Mailflow status summary**, click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-The **Malware detections in email** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP). For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).
+![Mailflow status summary widget on the Email & collaboration reports page](../../media/mail-flow-status-report-widget.png)
 
- The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.
+### Type view for the Mailflow status report
 
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Malware detected in email**. To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.
+When you open the report, the **Type** tab is selected by default. By default, this view contains a chart and a data table that's configured with the following filters:
 
-![Malware detections in email widget in the Reports dashboard](../../media/malware-detections-widget.png)
+- **Date**: The last 7 days.
+- **Mail direction**:
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com  (counted separately from **Inbound** and **Outbound**)
+- **Type**:
+  - **Good mail**
+  - **Malware**
+  - **Spam**
+  - **Edge protection**
+  - **Rule messages**
+  - **Phishing email**
+- **Domain**: **All**
 
-You can filter both the chart and the details table by clicking **Filters** and selecting:
+The chart is organized by the **Type** values.
 
-- **Start date** and **End date**
-- **Inbound**
-- **Outbound**
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend.
+
+The data table contains the following information:
+
+- **Direction**
+- **Type**
+- **24 hours**
+- **3 days**
+- **7 days**
+- **15 days**
+- **30 days**
+
+If you click **Choose a category for more details**, you can select from the following values:
+
+- **Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- **Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+- **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+
+#### Export from Type view
+
+For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
+
+Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
+
+![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
+
+### Direction view for the Mailflow status report
+
+If you click the **Direction** tab, the same default filters from the **Type** view are used.
+
+The chart is organized by **Direction** values.
+
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend. The same filters from the **Type** view are used.
+
+The data table contains same information from the **Type** view.
+
+The **Choose a category for more details** available selections and behavior are the same as the **Type** view.
+
+#### Export from Direction view
+
+For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
+
+Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
+
+![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
+
+### Funnel view for the Mailflow status report
+
+The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+
+If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+
+- **Direction**:
+
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).
+
+The aggregate view and data table view allow for 90 days of filtering.
+
+If you click **Filter**, you can filter both the chart and the data table.
+
+This chart shows the email count organized by:
+
+- **Total email**
+- **Email after edge protection**
+- **Email after transport rule** (mail flow rule)
+- **Email after anti-malware, file reputation, file type block**
+- **Email after anti-phish, URL reputation, brand impersonation, anti-spoof**
+- **Email after anti-spam, bulk mail filtering**
+- **Email after user and domain impersonation**<sup>\*</sup>
+- **Email after file and URL detonation**<sup>\*</sup>
+- **Email detected as benign after post-delivery protection (URL click time protection)**
+
+<sup>\*</sup> Defender for Office 365 only
+
+To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.
+
+The data table contains the following information, shown in descending date order:
+
+- **Date**
+- **Total email**
+- **Edge protection**
+- **Anti-malware, file reputation, file type block**:
+  - **File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.
+  - **File type block**: Messages filtered due to the type of malicious file identified in the message.
+- **Anti-phish, URL reputation, Brand impersonation, anti-spoof**:
+  - **URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.
+  - **Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.
+  - **Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.
+- **Anti-spam, bulk mail filtering**:
+  - **Bulk mail filtering**: Messages filtered based on the bulk complain level (BCL) threshold in an anti-spam policy.
+- **User and domain impersonation (Defender for Office 365)**:
+  - **User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.
+  - **Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy.
+- **File and URL detonation (Defender for Office 365)**:
+  - **File detonation**: Messages filtered by a Safe Attachments policy.
+  - **URL detonation**: Message filtered by a Safe Links policy.
+- **Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: Zero-hour auto purge (ZAP) for malware, spam, and phishing.
+
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
+
+#### Export from Funnel view
+
+After you click **Export** under **Options**, you can select one of the following values:
+
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
+
+### Tech view for the Mailflow status report
+
+The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features. From the chart, you can see how messages are categorized at the different stages of threat protection.
+
+If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:
+
+- **Date**: The last 7 days.
+
+- **Direction**:
+
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org**: this count is for messages within a tenant i.e sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)
+
+The aggregate view and data table view allow for 90 days of filtering.
+
+If you click **Filter**, you can filter both the chart and the data table.
+
+This chart shows messages organized into the following categories:
+
+- **Total email**
+- **Edge allow** and **Edge filtered**
+- **Transport rule allow** and **Transport rule filtered** (mail flow rules)
+- **Not malware**, **Safe Attachments detection**<sup>\*</sup>, and **Anti-malware engine detection**
+- **Not phish**, **DMARC failure**, **Impersonation detection**<sup>\*</sup>, **Spoof detection**, and **Phish detection**
+- **No detection with URL detonation** and **URL detonation detection**<sup>\*</sup>
+- **Not spam** and  **Spam**
+- **Non-malicious email**, **Safe Links detection**<sup>\*</sup>, and **ZAP**
+
+<sup>\*</sup> Defender for Office 365
+
+When you hover over a category in the chart, you can see the number of messages in that category.
+
+The data table contains the following information, shown in descending date order:
+
+- **Date**
+- **Total email**
+- **Edge filtered**
+- **Rule messages**: Messages filtered due to  mail flow rules (also known as transport rules).
+- **Anti-malware engine**, **Safe Attachments**<sup>\*</sup>:
+- **DMARC, impersonation**<sup>\*</sup>, **spoof**, **phish filtered**:
+  - **DMARC**: Messages filtered due to the message failing its DMARC authentication check.
+- **URL detonation detection**<sup>\*</sup>
+- **Anti-spam filtered**
+- **ZAP removed**
+- **Detection by Safe Links**<sup>\*</sup>
+
+<sup>\*</sup> Defender for Office 365
+
+If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.
+
+#### Export from Tech view
+
+On clicking **Export**, under **Options** you can select one of the following values:
+
+- **Summary (with data for last 90 days at most)**
+- **Details (with data for last 30 days at most)**
+
+Under **Date**, choose a range, and then click **Apply**. Data for the current filters will be exported to a .csv file.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
+
+![Tech view in the Mailflow status report](../../media/mail-flow-status-report-tech-view.png)
+
+## Malware detections report
+
+The **Malware detections report** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP). For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).
+
+The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.
+
+To view the report, open the Microsoft 365 Defender portal and go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On **Malware detected in email**, click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.
+
+![Malware detections in email widget on the Email & collaboration reports page](../../media/malware-detections-widget.png)
+
+You can filter both the chart and the details table by clicking **Filter** and selecting:
+
+- **Date**: **Start date** and **End date**
+- **Direction**: **Inbound** and **Outbound**
 
 ![Report view in the Malware detection in email report](../../media/malware-detections-report-view.png)
 
-If you click **View details table**, you can see the following details:
+In the details table below the graph, you can see the following details:
 
 - **Date**
 - **Sender address**
@@ -171,79 +308,19 @@ If you click **View details table**, you can see the following details:
 - **Filename**
 - **Malware name**
 
-To go back to the report view, click **View report**.
-
 ## Mail latency report
 
 The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).
 
-## Sent and received email report
-
-The **Sent and received email** report contains information about malware, spam, mail flow rules (also known as transport rules), and advanced malware detections after email enters the service. For more information, see [Sent and received email report](view-mail-flow-reports.md#sent-and-received-email-report).
-
 ## Spam detections report
 
-The **Spam detections** report shows spam email messages that were blocked by EOP. Messages are counted individually, not per recipient. For example, if the same spam message was sent to 100 recipients in your organization, it counts as one message.
-
-The aggregate view allows for 90 days filtering, while the details table allows for 10 days filtering.
-
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click click **View details** under **Spam detections**. To go directly to the report, open <https://security.microsoft.com/reports/SpamDetections>.
-
-![Spam detections widget in the Reports dashboard](../../media/spam-detections-report-widget.png)
-
-For more information about anti-spam protection, see [Anti-spam protection in EOP](anti-spam-protection.md).
-
-### Report view for the Spam detections report
-
-The following charts are available in the report view:
-
-- **Break down by: Action**: The following event types are shown:
-
-  - **Spam content filtered**
-  - **Spam IP block**
-  - **Spam envelope block**
-  - **Spam DBEB filter**: Directory based edge blocking (DBEB)
-
-  When you hover over a day (data point) in the chart, you can see how many items were blocked that day, as well as how those items are categorized.
-
-  ![Action view in the Spam detections report](../../media/spam-detections-report-action-view.png)
-
-- **Break down by: Direction**: The following directions are shown:
-
-  - **Inbound**
-  - **Outbound**
-
-  ![Direction view in in the Spam detections report](../../media/spam-detections-report-direction-view.png)
-
-If you click **Filters** in a report view, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Direction values
-- Event type values
-
-### Details table view for the Spam detections report
-
-If you click **View details table** in any report view, the following information is shown:
-
-- **Date**
-- **Sender address**
-- **Recipient address**
-- **Event type**
-- **Action**
-- **Subject**
-
-If you click **Filters** in a details table, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Direction values
-- Event type values
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> The **Spam detections report** will go away on June 30, 2021. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Spoof detections report
 
 > [!NOTE]
-> The improved Spoof detections report as described in this article is in Preview, is subject to change, and is not available in all organizations. The older version of the report showed only **Good mail** and **Caught as spam**.
+> The improved Spoof detections report as described in this article is in Preview, is subject to change, and is not available in all organizations. The older version of the report shows only **Good mail** and **Caught as spam**.
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
@@ -251,28 +328,26 @@ The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, w
 
 <sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.
 
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Spoof detections**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On **Spoof detections**, click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
 
-![Spoof detections widget in the Reports dashboard](../../media/spoof-detections-widget.png)
+![Spoof detections widget on the Email & collaboration reports page](../../media/spoof-detections-widget.png)
 
 When you hover over a day (data point) in the chart, you can see how many spoofed messages were detected and why.
 
-You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
+You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values:
 
-- **Start date** and **End date**
-
-- **Result**
+- **Date**: **Start date** and **End date**
+- **Result**:
   - **Pass**
   - **Fail**
   - **SoftPass**
   - **None**
   - **Other**
-
 - **Spoof type**: **Internal** and **External**
 
-![Report view in the Spoof detections report](../../media/spoof-detections-report-view.png)
+![Spoof mail report page in the Microsoft 365 Defender portal](../../media/spoof-detections-report-page.png)
 
-If you click **View details table**, you can see the following details:
+In the table below the graph, you can see the following details:
 
 - **Date**
 - **Spoofed user**
@@ -284,8 +359,6 @@ If you click **View details table**, you can see the following details:
 - **DKIM**
 - **DMARC**
 - **Message count**
-
-To go back to the report view, click **View report**.
 
 For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
 
@@ -302,9 +375,9 @@ To view the report, open the [Microsoft 365 Defender portal](https://security.mi
 - Microsoft Defender for Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
-![Threat protection status widget in the Reports dashboard](../../media/threat-protection-status-report-widget.png)
+![Threat protection status widget on the Email & collaboration reports page](../../media/threat-protection-status-report-widget.png)
 
-By default, the chart shows data for the past 7 days. If you click **Filters**, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table view allows filtering for 30 days.
+By default, the chart shows data for the past 7 days. If you click **Filter**, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table view allows filtering for 30 days.
 
 ### Report view for the Threat protection status report
 
@@ -398,7 +471,7 @@ The following views are available:
 
 <sup>2</sup> Zero-hour auto purge (ZAP) isn't available in standalone EOP (it only works in Exchange Online mailboxes).
 
-If you click **Filters**, the filters available depends on the chart you were looking at:
+If you click **Filter**, the filters available depends on the chart you were looking at:
 
 - For **View data by: Content \> Malware**, you can modify the report by **Start date** and **End date**, and the **Detection** value.
 
@@ -430,7 +503,7 @@ If you click **View details table**, the information that's shown depends on the
   - **Directed by**
   - **Malware name**
 
-  If you click **Filters** in this view, you can modify the report by **Start date** and **End date**, and the **Detection** value.
+  If you click **Filter** in this view, you can modify the report by **Start date** and **End date**, and the **Detection** value.
 
 - **View data by: Message Override**:
 
@@ -443,7 +516,7 @@ If you click **View details table**, the information that's shown depends on the
   - **Source of Compromise**
   - **Tags**
 
-  If you click **Filters** in this view, you can modify the report with the following filters:
+  If you click **Filter** in this view, you can modify the report with the following filters:
 
   - **Start date** and **End date**
   - **Override Reason**
@@ -462,7 +535,7 @@ If you click **View details table**, the information that's shown depends on the
   - **Source of Compromise**
   - **Tags**
 
-  If you click **Filters**, you can modify the report with the following filters:
+  If you click **Filter**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
   - **Detection**
@@ -477,7 +550,7 @@ The **Top malware** report shows the various kinds of malware that was detected 
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Top malware**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
-![Top malware widget in the Reports dashboard](../../media/top-malware-report-widget.png)
+![Top malware widget on the Email & collaboration reports page](../../media/top-malware-report-widget.png)
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
@@ -488,7 +561,7 @@ If you click **View details table**, you can see the following details:
 - **Top malware**
 - **Count**
 
-If you click **Filters** in the report view or details table view, you can specify a date range with **Start date** and **End date**.
+If you click **Filter** in the report view or details table view, you can specify a date range with **Start date** and **End date**.
 
 ## URL threat protection report
 
