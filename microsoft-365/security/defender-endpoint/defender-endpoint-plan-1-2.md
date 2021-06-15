@@ -26,7 +26,7 @@ The following table summarizes what’s included in each plan.
 
 | Defender for Endpoint Plan 1 | Defender for Endpoint Plan 2 |
 |:---|:---|
-| Next-generation protection <br/>(includes antimalware and antivirus) <p>Attack surface reduction <p>Manual response actions <p>Centralized management <p>Support for Windows devices and iOS devices | Defender for Endpoint Plan 1, plus: <p>Network discovery <p>Device discovery <p>Threat and vulnerability management <p>Automated investigation and response <p>Advanced hunting <p>Endpoint detection and response <p>Threat intelligence <p>Microsoft Threat Experts <p> Support for Windows, macOS, iOS, Android, and Linux devices |
+| Next-generation protection <br/>(includes antimalware and antivirus) <p> Attack surface reduction <p> Manual response actions <p> Centralized management <p> Support for Windows devices and iOS devices | Defender for Endpoint Plan 1, plus: <p> Network discovery <p> Device discovery <p> Threat and vulnerability management <p> Automated investigation and response <p> Advanced hunting <p> Endpoint detection and response <p> Threat intelligence <p> Microsoft Threat Experts <p> Support for Windows, macOS, iOS, Android, and Linux devices |
 
 ## Next step
 
