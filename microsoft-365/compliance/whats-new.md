@@ -35,7 +35,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Data Loss Prevention
 
-- New guidance for [planning your Data Loss Prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-overview-plan-for-dlp?view=o365-worldwide) strategy.
+- New guidance for [planning your Data Loss Prevention](dlp-overview-plan-for-dlp) strategy.
 
 ### Retention and records management
 
@@ -44,14 +44,13 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/ro
 
 ### Sensitive Information Types
 
-- New information added to help you [Modify a Keyword Dictionary](https://docs.microsoft.com/en-us/microsoft-365/compliance/sit-modify-keyword-dictionary?view=o365-worldwide).
+- New information added to help you [Modify a Keyword Dictionary](sit-modify-keyword-dictionary).
 
 ### Sensitivity labels
 
 - In preview, a new setting for **authentication context** is now available when you configure a [sensitivity label for groups and sites]( sensitivity-labels-teams-groups-sites.md). This option works in conjunction with Azure AD Conditional Access policies to enforce more stringent conditions when users access SharePoint sites that have the label applied. Make sure you read the [dependencies and limitations](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) before you configure this setting.
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) that are configured just for Exchange now support sensitivity labels that apply encryption with **Let users assign permissions** for the Do Not Forward or Encrypt-Only options.
 - [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is now generally available for all Office apps, across all platforms.
-
 
 ## April 2021
 
