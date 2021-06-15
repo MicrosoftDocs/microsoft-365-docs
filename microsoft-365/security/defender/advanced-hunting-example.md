@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Want to get started searching for email threats using advanced hunting? Try this:
 
-The [Getting Started](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) section of the [Microsoft Defender for Office 365 article](/microsoft-365/security/office-365-security/defender-for-office-365) has logical early configuration chunks that look like this:
+The [Getting Started](/microsoft-365/security/office-365-security/defender-for-office-365#getting-started) section of the [Microsoft Defender for Office 365 article](/microsoft-365/security/office-365-security/defender-for-office-365) has logical early configuration chunks that look like this:
 
 1. Configure everything with 'Anti' in the name.
    - Anti-malware
