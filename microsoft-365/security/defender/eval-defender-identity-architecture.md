@@ -53,6 +53,11 @@ The following table describes this illustration.
 |3     |Microsoft Defender for Identity shares signals to the Microsoft 365 Security Center. |
 | | |
 
+Defender for Identity sensors can be directly installed on the following servers:
+
+- Domain controllers: The sensor directly monitors domain controller traffic, without the need for a dedicated server, or configuration of port mirroring.
+- AD FS: The sensor directly monitors network traffic and authentication events.
+
 For a deeper look into the architecture of Defender for Identity, including integration with Cloud App Security, see [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
 
 

@@ -38,17 +38,16 @@ replace this illustration with DfI steps
 
 ![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
-## Step 1: 
 
-
-## Step 2: 
-
-
-## Step 3: 
-
-
-## Step 4: 
-
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+|  |Step     |More information  |
+|---------|---------|---------|
+|1     | Create the Defender for Identity instance        | [Quickstart: Create your Microsoft Defender for Identity instance](/defender-for-identity/install-step1)        |
+|2     | Connect the Defender for Identity instance to your Active Directory forest   | [Quickstart: Connect to your Active Directory Forest](/defender-for-identity/install-step2)  |
+|3     | Download the sensor setup package  |  [Quickstart: Download the Microsoft Defender for Identity sensor setup package](/defender-for-identity/install-step3)   |
+|4     | Install the Defender for Identity sensor    |  [Quickstart: Install the Microsoft Defender for Identity sensor](/defender-for-identity/install-step4)       |
+|5     | Configure the sensor       |  [Configure Microsoft Defender for Identity sensor settings ](/defender-for-identity/install-step5)   |
+|6     | Configure Windows event log collection         | [Configure Windows Event collection](/defender-for-identity/configure-windows-event-collection)        |
+|7     | Configure Internet proxy settings        | [Configure endpoint proxy and Internet connectivity settings for your Microsoft Defender for Identity Sensor](/defender-for-identity/configure-proxy)        |
+|8     | Configure remote calls to SAM        |  [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr)       |
+|9     | Plan for capacity        | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
+|   |         |         |
