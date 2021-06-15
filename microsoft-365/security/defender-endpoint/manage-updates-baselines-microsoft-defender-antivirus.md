@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
+ms.date: 06/14/2021
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -26,17 +26,13 @@ ms.date: 06/08/2021
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
 
 - Security intelligence updates
 - Product updates
 
-> [!IMPORTANT]
-> Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques.
-> 
-> Make sure to update your antivirus protection even if Microsoft Defender Antivirus is running in [passive mode](./microsoft-defender-antivirus-compatibility.md).
-> 
-> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> [!TIP]
+> To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## Security intelligence updates
 
@@ -76,12 +72,12 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and 
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**  
-&ensp;Released: **June 4, 2021**  
+&ensp;Released: **June 3, 2021**  
 &ensp;Platform: **4.18.2105.4**  
 &ensp;Engine: **1.1.18200.4**  
 &ensp;Support phase: **Security and Critical Updates**
@@ -97,7 +93,7 @@ No known issues
 <summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
 &ensp;Security intelligence update version: **1.337.2.0**  
-&ensp;Released: **April 1, 2021**  
+&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
 &ensp;Platform: **4.18.2104.14**  
 &ensp;Engine: **1.1.18100.5**  
 &ensp;Support phase: **Security and Critical Updates**
@@ -105,7 +101,6 @@ No known issues
 ### What's new
 - Additional behavior monitoring logic
 - Improved kernel mode keylogger detection
-- Added new controls to manage the gradual rollout process for [Microsoft Defender updates](updates.md)
 
 ### Known Issues
 No known issues  
@@ -114,7 +109,7 @@ No known issues
 <summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
 &ensp;Security intelligence update version: **1.335.36.0**  
-&ensp;Released: **April 1, 2021**  
+&ensp;Released: **April 2, 2021**  
 &ensp;Platform: **4.18.2103.7**  
 &ensp;Engine: **1.1.18000.5**  
 &ensp;Support phase: **Security and Critical Updates**

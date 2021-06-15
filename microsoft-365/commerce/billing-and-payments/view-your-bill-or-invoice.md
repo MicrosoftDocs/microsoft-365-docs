@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MET150
+search.appverid: GEA150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -100,4 +100,5 @@ If you have a balance and would like to pay it, you can do that online. To learn
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) \
 [Manage payment methods](manage-payment-methods.md) (article) \
+[Billing information for Microsoft 365 for business in Mexico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)
