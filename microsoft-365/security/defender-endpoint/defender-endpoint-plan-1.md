@@ -107,7 +107,7 @@ To learn more, see [web protection](web-protection-overview.md).
 
 With network protection, you can prevent your organization from accessing dangerous domains that might host phishing scams, exploits, and other malicious content on the Internet. 
 
-To learn more, see Protect your network.
+To learn more, see [Protect your network](network-protection.md).
 
 #### Network firewall
 
