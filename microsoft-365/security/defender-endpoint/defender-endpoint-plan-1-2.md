@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint Plan 1 and Plan 2
-description: Compare Defender for Endpoint Plan 1 and Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
+title: Compare Microsoft Defender for Endpoint Plan 1 to Plan 2
+description: Compare Defender for Endpoint Plan 1 to Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
 keywords: Defender for Endpoint, advanced threat protection, endpoint protection
 search.appverid: MET150  
 author: denisebmsft
@@ -15,7 +15,7 @@ localization_priority: Normal
 f1.keywords: NOCSH  
 ---
 
-# Microsoft Defender for Endpoint Plans 1 and 2
+# COmpare Microsoft Defender for Endpoint Plan 1 to Plan 2
 
 Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. If you’re interested in the differences between Defender for Endpoint Plan 1 and Plan 2, the following table summarizes what’s included in each plan.
 
