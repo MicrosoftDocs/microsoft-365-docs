@@ -140,11 +140,11 @@ To learn more, see:
 
 Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Defender for Endpoint integrates with [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) and [other Microsoft solutions](threat-protection-integration.md). Choose from several methods to configure and manage Defender for Endpoint:
 
-- Microsoft Endpoint Manager (this includes Intune and Microsoft Endpoint Configuration Manager)
-- Group Policy Objects
-- … and more!
+- [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) (this includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction))
+- [Group Policy Objects](manage-atp-post-migration-group-policy-objects.md)
+- … and [more](manage-atp-post-migration-other-tools.md)!
  
-To learn more, see Manage Defender for Endpoint.
+To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
 
 ### Role-based access control
 
