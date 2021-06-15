@@ -61,6 +61,12 @@ To simulate an attack on a Windows 10 device, you need to add an Active Director
 
 If you use tenant and device groups, create a dedicated device group for the test device and push it to top level.
 
+One alternative is host your AD DS domain controller and test device as virtual machines in Microsoft Azure infrastructure services. You can use the instructions in [Phase 1 of the simulated enterprise Test Lab Guide](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet), but skip the creation of the APP1 virtual machine.
+
+Here is the result.
+
+![Endpoints for your Defender evaluation environment using the simulated enterprise Test Lab Guide](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
+
 ## Next step
 
 Step 2 of 3: [Simulate an attack and response with Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attack.md)
