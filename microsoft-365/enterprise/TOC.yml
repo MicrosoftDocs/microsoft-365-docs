@@ -288,12 +288,14 @@
             href: ms-cloud-germany-transition-add-experience.md
           - name: Additional information
             items: 
-            - name: Azure AD
-              href: ms-cloud-germany-transition-azure-ad.md
-            - name: Devices
-              href: ms-cloud-germany-transition-add-devices.md
             - name: AD FS migration steps
               href: ms-cloud-germany-transition-add-adfs.md
+            - name: Azure AD
+              href: ms-cloud-germany-transition-azure-ad.md
+            - name: CSPs
+              href: ms-cloud-germany-transition-add-csp.md
+            - name: Devices
+              href: ms-cloud-germany-transition-add-devices.md
             - name: eDiscovery
               href: ms-cloud-germany-transition-add-scc.md
 

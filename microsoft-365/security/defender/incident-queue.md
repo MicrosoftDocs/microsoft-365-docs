@@ -78,6 +78,23 @@ This table lists the filter names that are available.
 | Status | You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved. |
 |||
 
+## Save defined filters as URLs
+
+Once you have configured a useful filter in the incidents queue, you can bookmark the URL of the browser tab or otherwise save it as a link on a Web page, a Word document, or a place of your choice. This will give you single-click access to key views of the incident queue, such as:
+
+- New incidents
+- High-severity incidents
+- Unassigned incidents
+- High-severity, unassigned incidents
+- Incidents assigned to me
+- Incidents assigned to me and for Microsoft Defender for Endpoint
+- Incidents with a specific tag or tags
+- Incidents with a specific threat category
+- Incidents with a specific associated threat
+- Incidents with a specific actor
+
+Once you have compiled and stored your list of useful filter views as URLs, you can use it quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent analysis.
+
 ## Next steps
 
 After you've determined which incident requires the highest priority, select it and:
