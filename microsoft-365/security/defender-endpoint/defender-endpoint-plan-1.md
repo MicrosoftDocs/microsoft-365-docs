@@ -22,7 +22,8 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 - Defender for Endpoint Plan 1 (currently in preview)
 - Defender for Endpoint Plan 2 (available now)
 
-To learn more, see [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md).
+> [!TIP]
+> To learn more, see [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md).
 
 This guide focuses on Defender for Endpoint Plan 1, currently in private preview. Use this guide to:
 
@@ -41,11 +42,11 @@ At a high level, Defender for Endpoint Plan 1 includes all of the following feat
 
 - [Next-generation protection](#next-generation-protection) (includes antimalware and antivirus)
 - [Attack surface reduction](#attack-surface-reduction)
-- Manual response actions
-- Centralized management
-- Support for Windows devices and iOS devices
+- [Manual response actions](#manual-response-actions)
+- [Centralized management](#centralized-management)
+- [Support for Windows devices and iOS devices](#cross-platform-support)
 
-These features and capabilities are described in the following sections.
+The features and capabilities in Defender for Endpoint Plan 1 are described in the following sections.
 
 ## Next-generation protection
 
