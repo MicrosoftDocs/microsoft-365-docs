@@ -18,8 +18,6 @@ description: "Purchase Microsoft 365 Business Standard and set up your organizat
 
 # Sign up for Microsoft 365 Business Standard and set up your organization
 
-See the [Overview](microsoft-365-business-overview.md).
-
 There are a couple of ways to get Microsoft 365 Business Standard:
 - **[Buy](https://go.microsoft.com/fwlink/?linkid=2109397) Microsoft 365 Business Standard and complete your own setup**: To purchase Microsoft 365 Business Standard, [follow the steps below](#sign-up-steps).
 - **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](get-microsoft-365-business.md).
@@ -28,16 +26,12 @@ There are a couple of ways to get Microsoft 365 Business Standard:
 - [Upgrade your Office 365 plan to Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business.
 
+Check out the [Overview of Microsoft 365 for business](microsoft-365-business-overview.md).
+
 ## Sign up steps
 
 > [!IMPORTANT]
 > You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see .
-
-Watch this video for a quick overview of the sign-up process.<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 To sign up and purchase Microsoft 365 for your business, complete the following steps:
 

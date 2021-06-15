@@ -13,8 +13,6 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
-search.appverid:
-- MET150
 description: "Set up your business email account in Microsoft 365"
 ---
 
