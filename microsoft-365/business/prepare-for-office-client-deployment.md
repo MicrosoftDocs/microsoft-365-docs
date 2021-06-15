@@ -54,14 +54,15 @@ The end user whose PC:
     
 - **Doesn't have** any 2016 Windows Installer (MSI) standalone apps (for example, Visio or Project). Microsoft 365 for business upgrades Office to the Click-to-Run version of Office 2016 and that doesn't work with Office 2016 MSI standalone apps. 
     
-The following table shows what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 for business admin console.
-  
-|**Starting Office install status**|**Action to take before Microsoft 365 for business Office install**|**End state**|
+The following table shows what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 for business admin console.<br/>
+
+
+|Starting Office install status|Action to take before Microsoft 365 for business Office install|End state|
 |:-----|:-----|:-----|
 |No Office suite installed  <br/> |None  <br/> |Office 2016 32-bit is installed by using Click-to-Run  <br/> |
 |Existing Click-to-Run 32-bit version of Office (2016 or earlier) and no standalone apps  <br/> |None  <br/> |Upgraded to the latest 32-bit Click-to-Run version of Office 2016, as needed **\*** <br/> |
 |Existing Click-to-Run 32-bit version of Office and Click-to-Run 32-bit or 64-bit standalone Office apps (for example, Visio, Project)  <br/> |None  <br/> |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  <br/> |
-|Existing Click-to-Run 32-bit version of Office and any 32-bit or 64-bit (except 2016) MSI standalone Office apps  <br/> |None  <br/> |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  <br/> ||||
+|Existing Click-to-Run 32-bit version of Office and any 32-bit or 64-bit (except 2016) MSI standalone Office apps  <br/> |None  <br/> |Standalone apps aren't affected. Suite is upgraded to Click-to-Run 32-bit version of Office 2016  <br/> |
 |Any existing Click-to-Run 64-bit version of Office  <br/> |Uninstall the 64-bit Office apps, if it's OK to replace them with 32-bit Office apps  <br/> |If Office 64-bit apps are removed, the Click-to-Run 32-bit version of Office 2016 is installed  <br/> |
 |An existing MSI install of Office 2016 with or without standalone apps  <br/> |Uninstall MSI Office 2016.  <br/> |Click-to-Run 32-bit version of Office 2016 is installed. No change to standalone apps  <br/> |
 |Existing MSI install of Office 2013 (or earlier) and/or standalone Office apps  <br/> |None  <br/> |Click-to-Run 32-bit version of Office 2016 with the pre-existing MSI Office install (and standalone apps) exist side-by-side  <br/> |

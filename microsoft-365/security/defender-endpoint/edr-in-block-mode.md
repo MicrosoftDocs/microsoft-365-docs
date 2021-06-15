@@ -15,7 +15,7 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -57,7 +57,7 @@ The following image shows an instance of unwanted software that was detected and
 > [!IMPORTANT]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in. 
+1. Go to the [Microsoft 365 Defender portal](microsoft-defender-security-center.md) and sign in. 
 
 2. Choose **Settings** > **Advanced features**.
 
