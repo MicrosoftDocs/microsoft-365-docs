@@ -30,9 +30,6 @@ Check out the [Overview of Microsoft 365 for business](microsoft-365-business-ov
 
 ## Sign up steps
 
-> [!IMPORTANT]
-> You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see .
-
 To sign up and purchase Microsoft 365 for your business, complete the following steps:
 
 1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**.
@@ -73,6 +70,9 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
 9. On the next page, select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
 10. On the Confirmation details, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more.
+
+> [!IMPORTANT]
+> You can follow these steps to purchase Microsoft 365 Apps as well. For more info, see [Microsoft 365 Apps for business](setup-apps-for-business.md) after you purchase Microsoft 365 Apps for business.
 
 ## Next steps
 

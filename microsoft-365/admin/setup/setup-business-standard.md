@@ -28,8 +28,6 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 # Set up Microsoft Business Standard
 
-
-
 ## Add your domain to personalize sign-in
 
 When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up.
@@ -41,13 +39,13 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 2. Choose **Go to setup** to start the wizard.
 
 3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
-    
+
 4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
-    
+
 4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also the [host specific instructions](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.

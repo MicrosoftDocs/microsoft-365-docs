@@ -1,5 +1,5 @@
 ---
-title: "Simplified invite to end users"
+title: "Invite users to Microsoft 365 Business Standard subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,7 +16,7 @@ ms.custom:
 description: "Set up your business email account in Microsoft 365"
 ---
 
-# Simplified invite to end users
+# Invite users to Microsoft 365 Business Standard
 
 You'll get an email notification that looks like this when someone in your organization sets you up with a new Microsoft 365 for business user account. When you get this email, you'll have to complete a few steps before you can start using your new user account.
 
