@@ -23,4 +23,4 @@ Defender for Endpoint provides advanced threat protection that includes antiviru
 |:---|:---|
 | Next-generation protection (includes antimalware and antivirus) <p>Attack surface reduction <p>Manual response actions <p>Centralized management <p>Support for Windows devices and iOS devices | Defender for Endpoint Plan 1 <p>Network discovery <p>Device discovery <p>Threat and vulnerability management <p>Automated investigation and response <p>Advanced hunting <p>Endpoint detection and response <p>Threat intelligence <p>Microsoft Threat Experts <p> Support for Windows, macOS, iOS, Android, and Linux devices |
 
-
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
