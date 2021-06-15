@@ -131,7 +131,10 @@ Defender for Endpoint includes certain [response actions that can be taken when 
 | File | Stop and quarantine |Stops processes from running and quarantines associated files. |
 | File | Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p>--- or --- <p>Allow indicators prevent files from being blocked or remediated. |
 
-To learn more, see Take response actions on devices and Take response actions on files.
+To learn more, see: 
+
+- [Take response actions on devices](respond-machine-alerts.md) 
+- [Take response actions on files](respond-file-alerts.md)
 
 ## Centralized management
 
