@@ -86,7 +86,7 @@ Attack surface reduction rules target certain software behaviors that are consid
 
 Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
 
-To learn more, see Use attack surface reduction rules to prevent malware infection.
+To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md).
 
 #### Device control
 
