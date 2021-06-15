@@ -53,7 +53,7 @@ The Microsoft 365 Defender portal includes default role groups for the most comm
 
 ## Roles and role groups in the Microsoft 365 Defender portal
 
-The following types of roles and role groups are available in **Permissions & roles** in the Microsoft 365 Defender portalr:
+The following types of roles and role groups are available in **Permissions & roles** in the Microsoft 365 Defender portal:
 
 - **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
 
