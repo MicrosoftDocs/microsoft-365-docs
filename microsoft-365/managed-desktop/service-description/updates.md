@@ -36,7 +36,7 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - **Broad**: Last group to have feature and quality updates available. This group contains most of users in the Azure AD organization, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable.
 
 ### Moving devices between update groups
-You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, see [Assign devices to a deployment group](../get-started/assign-deployment-group.md).
+You might want some devices to receive updates last and others that you want to go first. To move these devices into the appropriate update group, see [Assign devices to a deployment group](../working-with-managed-desktop/assign-deployment-group.md).
 
 For more information on roles and responsibilities within these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 

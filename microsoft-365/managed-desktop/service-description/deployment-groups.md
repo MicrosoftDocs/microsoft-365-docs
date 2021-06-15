@@ -27,5 +27,5 @@ Microsoft Managed Desktop uses some additional groups to control deployments, bu
 If a device is in a group you've specified, **Group assigned by** will say **Admin**. If Microsoft Managed Desktop has assigned the group, it will say **Auto**. While a device is in the process of moving to a group, it will say **Pending**. The **Group** field always shows the group the device is currently in and only updates when a move is complete.
 
 > [!IMPORTANT]
-> Don't try to directly modify the membership of these groups. Always follow the steps described in [Assign devices to a deployment group](../get-started/assign-deployment-group.md).
+> Don't try to directly modify the membership of these groups. Always follow the steps described in [Assign devices to a deployment group](../working-with-managed-desktop/assign-deployment-group.md).
 
