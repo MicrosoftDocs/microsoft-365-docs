@@ -209,18 +209,16 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 1. [Sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account.
 
-2. Go to [protection.office.com](https://protection.office.com) or [security.microsoft.com](https://security.microsoft.com) depending on which portal you use, and follow the path below.
+2. Go to [security.microsoft.com](https://security.microsoft.com) and follow the path below.
 
-|protection.office.com  |security.microsoft.com  |
-|---------|---------|
-| Threat Management > Policy > Additional Policies > DKIM     | Email & Collaboration > Policies & rules > Threat policies > Additional policies > DKIM        | 
+3. Go to **Email & Collaboration > Policies & rules > Threat policies > DKIM**.
 
-3. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
+4. Select the domain for which you want to enable DKIM and then, for **Sign messages for this domain with DKIM signatures**, choose **Enable**. Repeat this step for each custom domain.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="The 'No DKIM keys saved for this domain.' error.":::
+>:::image type="content" source="../../media/dkim.png" alt-text="The 'No DKIM keys saved for this domain.' error.":::
 > If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain.' complete the command in step 2, below (for example, *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) to see the key.
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

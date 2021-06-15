@@ -28,7 +28,7 @@ Once you've deployed Microsoft 365, you can maintain Microsoft 365 connectivity 
   
 ## Monitoring Microsoft 365 Connectivity
 
-|||
+|Type of monitoring |Description |
 |:-----|:-----|
 |**Getting notified of new Microsoft 365 endpoints** <br/> |If you're [Managing Microsoft 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), you'll want to receive notifications when we publish new endpoints, you can subscribe to our RSS feed using your favorite RSS reader. Here is how to [subscribe via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) or you can [have the RSS feed updates emailed to you](https://go.microsoft.com/fwlink/p/?LinkId=532417).  <br/> |
 |**Use System Center to Monitor Microsoft 365** <br/> |If you're using Microsoft System Center, you can download the [System Center Management Pack for Office 365](https://www.microsoft.com/download/details.aspx?id=43708) to begin monitoring Microsoft 365 today. For more detailed guidance, please see the management pack operations guide. <br/> |

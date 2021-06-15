@@ -55,8 +55,10 @@ It may take up to an hour for users to get access to Topics after the licenses a
 
 ## Set up Topics
 
-To set up Topics
+> [!Note]
+> The first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
+To set up Topics
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then view the **Files and content** section.
 2. In the **Files and content** section, click **Connect people to knowledge**.
 
@@ -138,8 +140,6 @@ To set up Topics
 12. You'll be returned to your **Connect people to knowledge** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
     ![Settings applied](../media/ksetup7.png)    
-
-Note that the first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
 
 ## Manage topic experiences
 

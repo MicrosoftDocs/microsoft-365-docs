@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: deployment
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
