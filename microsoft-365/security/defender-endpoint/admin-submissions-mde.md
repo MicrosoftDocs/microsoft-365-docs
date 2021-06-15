@@ -39,7 +39,7 @@ In Microsoft Defender for Endpoint, admins can use the Submissions feature in th
 
 ## Microsoft Defender for Endpoint interactive guide
 
-In this interactive guide, you'll learn how to investigate threats to your organization with Microsoft Defender for Endpoint. You'll see how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
+In this interactive guide, you'll learn how Microsoft Defender for Endpoint can help you identify suspicious activities, investigate risks to your organization, and remediate threats.
 
 [Check out the interactive guide](https://aka.ms/MSDE-IG)
 
@@ -53,7 +53,7 @@ In this interactive guide, you'll learn how to investigate threats to your organ
 
   - **Organization Management** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- For more information about how you can submit spam, phish, URLs to Microsoft, see [Report messages and files to Microsoft](microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
+- For more information about how you can submit spam, phish, URLs to Microsoft, see [Report messages and files to Microsoft](../../office-365-security/report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
 
@@ -65,7 +65,7 @@ New content
 
 ## Related information
 
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../../defender/microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../../defender/microsoft-365-security-center-mde)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
-- [Submit files for analysis](https://docs.microsoft.com/windows/security/threat-protection/intelligence/submission-guide)
+- [Submit files for analysis](windows/security/threat-protection/intelligence/submission-guide)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
