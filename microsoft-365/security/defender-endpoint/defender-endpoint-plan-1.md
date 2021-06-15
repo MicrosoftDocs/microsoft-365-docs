@@ -138,7 +138,7 @@ To learn more, see:
 
 ## Centralized management
 
-Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Defender for Endpoint integrates with Microsoft Endpoint Manager and other Microsoft solutions. Choose from several methods to configure and manage Defender for Endpoint:
+Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Defender for Endpoint integrates with [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) and [other Microsoft solutions](threat-protection-integration.md). Choose from several methods to configure and manage Defender for Endpoint:
 
 - Microsoft Endpoint Manager (this includes Intune and Microsoft Endpoint Configuration Manager)
 - Group Policy Objects
