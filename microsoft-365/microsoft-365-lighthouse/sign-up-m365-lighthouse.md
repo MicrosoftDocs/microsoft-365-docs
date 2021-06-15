@@ -35,7 +35,7 @@ Sign up with these steps to acquire the Microsoft 365 Lighthouse service plan:
 
 1. Select **Start free trial**.
 
-1. If you aren't directed to [Microsoft 365 Lighthouse](https://lighthouse.microsoft.com/), copy and paste 'https://lighthouse.microsoft.com/' into your open browser.
+1. If you aren't directed to [Microsoft 365 Lighthouse](https://lighthouse.microsoft.com/), copy and paste `https://lighthouse.microsoft.com/` into your open browser.
 
 1. Select **Agree & Continue** to complete the partner agreement amendment.
 
