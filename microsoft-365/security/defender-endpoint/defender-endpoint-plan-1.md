@@ -68,7 +68,7 @@ Your organization’s attack surfaces are all the places where you’re vulnerab
 - [Network protection](#web-protection)
 - [Network firewall](#network-firewall)
 
-To learn more about attack surface reduction capabilities in Defender for Endpoint, see Overview of attack surface reduction.
+To learn more about attack surface reduction capabilities in Defender for Endpoint, see [Overview of attack surface reduction](overview-attack-surface-reduction.md).
 
 #### Ransomware mitigation
 
