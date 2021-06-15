@@ -137,8 +137,6 @@ Users with edit or create topics permissions can make updates to topic pages dir
 
 Users that you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
 
-Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic. 
-
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
 ## See also
