@@ -9,14 +9,16 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
+ms.topic: article
 ms.technology: mde
+ms.date: 06/02/2021
 ---
 
-# Test how Microsoft Defender for Endpoint features work in audit mode
+# Test attack surface reduction in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -24,8 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-You can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
+If you're part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work in your organization. In particular, you can enable attack surface reduction rules, exploit protection, network protection, and controlled folder access in audit mode. Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
 You may want to enable audit mode when testing how the features will work in your organization. This will help make sure your line-of-business apps aren't affected. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
@@ -40,16 +41,11 @@ You can use Group Policy, PowerShell, and configuration service providers (CSPs)
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
 
- **Audit options** | **How to enable audit mode** | **How to view events**
+| Audit options | How to enable audit mode | How to view events |
 |---------|---------|---------|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | Audit applies to individual rules | [Enable attack surface reduction rules](enable-attack-surface-reduction.md) | [Attack surface reduction rule events](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
-## Related topics
 
-* [Protect devices from exploits](exploit-protection.md)
-* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
-* [Protect your network](network-protection.md)
-* [Protect important folders](controlled-folders.md)

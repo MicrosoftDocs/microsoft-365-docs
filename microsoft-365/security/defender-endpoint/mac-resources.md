@@ -114,7 +114,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Do a full scan                             |`mdatp scan full`                                                                 |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp scan cancel`                                                               |
 |Protection   |Request a security intelligence update     |`mdatp definitions update`                                                        |
-|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Add group tag to device. EDR tags are used for managing device groups. For more information, please visit /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Remove group tag from device               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Add Group ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 
