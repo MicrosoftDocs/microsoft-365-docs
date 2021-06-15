@@ -51,6 +51,7 @@ The following table describes this illustration.
 |1     |  Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting. Sensors can also parse Active Directory Federation Services (AD FS) when Azure is configured to use federated authentication. |
 |2     |  Microsoft Defender for Identity aggregates and analyzes Azure AD and sensor data for monitoring, investigating, and responding to authentication and authorization signals. |
 |3     |Microsoft Defender for Identity shares signals to the Microsoft 365 Security Center. |
+| | |
 
 For a deeper look into the architecture of Defender for Identity, including integration with Cloud App Security, see [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
 
@@ -74,14 +75,15 @@ The following table identified key concepts that are important to understand whe
 | | | |
 
 
-## Review  prerequisites
+## Review prerequisites
+
+Defender for Identity requires some prerequisite work to ensure that your on-premises identity and networking components meet minimum requirements. Use this article as a checklist to ensure your environment is ready: [Microsoft Defender for Identity prerequisites](/defender-for-identity/prerequisites).
 
 
+## Next steps
 
-## SIEM integration
+Step 2 of 2: [Enable the evaluation environment Defender for Identity](eval-defender-identity-enable-eval.md)
 
-??
+Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+Return to the overview for [Evaluate and pilot Microsoft 365 Defender](../office-365-security/defender/eval-overview.md) 
