@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150 
+search.appverid: GEA150 
 description: "Sign up for a free 30-day trial for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business."
 ms.date: 08/07/2020
 ---
