@@ -16,14 +16,14 @@ manager: raynew
 - Microsoft 365 Defender
 - Defender for Identity
 
-This article explains how to configure and monitor [Microsoft Defender for Identity](/defender-for-identity) sensors in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center).
+This article explains how to configure and monitor [Microsoft Defender for Identity](/defender-for-identity) sensors in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## View Defender for Identity sensor settings and status
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
@@ -32,7 +32,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
     ![Sensor page](../../media/defender-identity/sensor-page.png)
 
     >[!NOTE]
-    >In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in the Microsoft 365 security center they're now on the same page.
+    >In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft 365 Defender they're now on the same page.
 
 1. If you select **Filters**, you can choose which filters will be available. Then with each filter, you can choose which sensors to display.
 
@@ -84,7 +84,7 @@ From the **Sensors** page, you can add a new sensor.
 
 To connect the sensor with your Active Directory domains, you'll need to configure Directory Services accounts.
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 

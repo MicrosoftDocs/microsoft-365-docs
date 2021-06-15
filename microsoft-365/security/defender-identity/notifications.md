@@ -16,16 +16,16 @@ manager: raynew
 - Microsoft 365 Defender
 - Defender for Identity
 
-This article explains how to work with [Microsoft Defender for Identity](/defender-for-identity) notifications in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center).
+This article explains how to work with [Microsoft Defender for Identity](/defender-for-identity) notifications in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Health issues notifications
 
-In the Microsoft 365 security center, you can add recipients for email notifications of health issues in Defender for Identity.
+In Microsoft 365 Defender, you can add recipients for email notifications of health issues in Defender for Identity.
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
@@ -44,9 +44,9 @@ In the Microsoft 365 security center, you can add recipients for email notificat
 
 ## Alert notifications
 
-In the Microsoft 365 security center, you can add recipients for email notifications of detected alerts.
+In Microsoft 365 Defender, you can add recipients for email notifications of detected alerts.
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
@@ -60,7 +60,7 @@ In the Microsoft 365 security center, you can add recipients for email notificat
 
 Defender for Identity can notify you when it detects suspicious activities by sending security and health alerts to your Syslog server through a nominated sensor.
 
-1. In the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 

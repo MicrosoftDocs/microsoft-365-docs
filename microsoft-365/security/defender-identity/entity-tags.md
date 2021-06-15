@@ -16,16 +16,16 @@ manager: raynew
 - Microsoft 365 Defender
 - Defender for Identity
 
-This article explains how to apply [Microsoft Defender for Identity](/defender-for-identity) entity tags in the [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center).
+This article explains how to apply [Microsoft Defender for Identity](/defender-for-identity) entity tags in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Entity tags
 
-In the Microsoft 365 security center, you can set three types of Defender for Identity entity tags: **Sensitive tags**, **Honeytoken tags**, and **Exchange server tags**.
+In Microsoft 365 Defender, you can set three types of Defender for Identity entity tags: **Sensitive tags**, **Honeytoken tags**, and **Exchange server tags**.
 
-To set these tags, in the [Microsoft 365 security center](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+To set these tags, in [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
 ![Go to Settings, then Identities](../../media/defender-identity/settings-identities.png)
 
