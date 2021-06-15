@@ -152,6 +152,10 @@ It's critical to your success that you only unregister and re-register your devi
 
 To check whether your devices are registered in the public cloud, you should export and download the list of devices from the Azure AD portal to an Excel spreadsheet. Then, filter the devices that are registered (by using the _registeredTime_ column) after the date when your organization has passed [phase 9 of the migration process](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
 
+**Do I still need to add the DNS name as stated in this [Create DNS records for Microsoft using Windows-based DNS](https://docs.microsoft.com/en-us/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)
+
+This DNS entry is no longer needed for re-registering your device. 
+
 ## Additional considerations
 
 > [!IMPORTANT]
