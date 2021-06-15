@@ -68,7 +68,7 @@ Intro
 
 |  |Step     |More information  |
 |---------|---------|---------|
-|1     | Plan for capacity        | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
+|1     | Determine how many Microsoft Defender for Identity sensors you need.        | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Download the sensor setup package  |  [Quickstart: Download the Microsoft Defender for Identity sensor setup package](/defender-for-identity/install-step3)   |
 |3     | Install the Defender for Identity sensor    |  [Quickstart: Install the Microsoft Defender for Identity sensor](/defender-for-identity/install-step4)       |
 |4     | Configure the sensor       |  [Configure Microsoft Defender for Identity sensor settings ](/defender-for-identity/install-step5)   |
