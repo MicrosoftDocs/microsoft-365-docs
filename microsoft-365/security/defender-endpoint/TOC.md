@@ -2,6 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+#### [Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
