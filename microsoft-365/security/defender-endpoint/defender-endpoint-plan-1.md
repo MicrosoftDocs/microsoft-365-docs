@@ -98,10 +98,10 @@ To learn more, see [Control USB devices and removable media](control-usb-devices
 
 With web protection, you can protect your organization’s devices from web threats and unwanted content. Web protection includes web threat protection and web content filtering.
 
-- Web threat protection prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
-- Web content filtering prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
+- [Web threat protection](web-threat-protection.md) prevents access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you explicitly block.
+- [Web content filtering](web-content-filtering.md) prevents access to certain sites based on their category. Categories can include adult content, leisure sites, legal liability sites, and more.
 
-To learn more, see web protection.
+To learn more, see [web protection](web-protection-overview.md).
 
 #### Network protection
 
