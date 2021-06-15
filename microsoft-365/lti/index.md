@@ -22,8 +22,7 @@ description: "Learn about Learning Tools Interoperability (LTI) Office apps in M
 
 - [OneDrive LTI with Canvas](#onedrive-lti-with-canvas)
 - [Teams Meetings LTI with Canvas](#teams-meetings-lti-with-canvas)
-- [Teams Classes LTI with Canvas](#teams-classes-lti-with-canvas)
-- [Teams Classes LTI with Blackboard](#teams-classes-lti-with-blackboard)
+- [Teams Classes LTI](#teams-classes-lti)
 
 Microsoft Education and our third-party partners understand that the flow of teaching and learning invariably crosses solution boundaries. We're working on providing more seamless experiences, keeping educators and learners focused on their goals, rather than having to juggle tools. We're integrating Microsoft products wherever teaching and learning occurs, including within and alongside Learning Management Systems (LMS). We've worked with our LMS partners to create a suite of tools using the [Learning Tools Interoperability (LTI) standard](https://www.imsglobal.org/activity/learning-tools-interoperability) that brings the best of Microsoft directly into your LMS.
 
