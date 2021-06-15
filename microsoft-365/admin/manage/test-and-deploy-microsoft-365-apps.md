@@ -18,7 +18,7 @@ description: "Find, test, and deploy Microsoft and Microsoft partner apps for us
 
 # Test and deploy Microsoft 365 Apps by partners in the Integrated apps portal
 
-The Microsoft 365 admin center gives you the flexibility to deploy single store apps, custom business line of apps and  Microsoft 365 partner apps from a single location. The location can be accessed at Microsoft Admin center > Settings > Integrated apps. The ability to find, test, and fully deploy purchased and licensed apps by Microsoft partners from the Integrated apps portal provides the convenience and benefits your organization requires to keep business services updated regularly and running efficiently.
+The Microsoft 365 admin center gives you the flexibility to deploy single store apps, custom business line of apps and  Microsoft 365 partner apps from a single location. The location can be accessed in the Microsoft Admin center settings, in Integrated apps. The ability to find, test, and fully deploy purchased and licensed apps by Microsoft partners from the Integrated apps portal provides the convenience and benefits your organization requires to keep business services updated regularly and running efficiently.
 
 For additional information about purchasing and licensing Microsoft 365 apps from partners for your organization, see [Manage and deploy Microsoft 365 Apps from the Microsoft 365 admin center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
@@ -118,7 +118,7 @@ Today both Exchange Admins and Global Admins can deploy add-ins from Integrated 
 
 ### Before you begin
 
-Deployment of add-ins requires that the users are using Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory. 
+Deployment of add-ins requires that the users are using Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). The users also need to be signed into Office using their organizational ID) and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory. 
 
 Deployment doesn't support the following: 
 
@@ -126,16 +126,16 @@ Deployment doesn't support the following:
 - An on-premises directory service 
 - Add-in Deployment to an Exchange On-Prem Mailbox 
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins. 
-- Deployments of Microsoft 365 that do not include Exchange Online such as SKUs: Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise. 
+- Deployments of Microsoft 365 that do not include Exchange Online such as Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.  
 
 ### Office Requirements 
 
 For Word, Excel, and PowerPoint add-ins, your users must be using one of the following: 
-- On a Windows device, Version 1704 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium. 
+- On a Windows device, Version 1704 or later of Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). 
 - On a Mac, Version 15.34 or later. 
 
 For Outlook, your users must be using one of the following: 
-- Version 1701 or later of Microsoft 365 Enterprise SKUs: E3/E5/F3 or Business SKUs: Business Basic, Business Standard, Business Premium. 
+- Version 1701 or later of Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). 
 - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019. 
 - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI).
     > [!NOTE]
@@ -158,7 +158,7 @@ The deployment of add-in is currently supported to the majority of groups suppor
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported. 
 
-Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in. 
+In the following example, Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in. 
 
 ![Diagram of sales department](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -172,7 +172,7 @@ You can do the opposite query by resolving the group to see if it's a member of 
 
 ![Membership tab of the Outlook contact card](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations). 
+Note that you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations). 
 
 ## Recommended approach for deploying Office add-ins 
 To roll out add-ins by using a phased approach, we recommend the following: 
