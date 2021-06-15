@@ -169,7 +169,7 @@ With the Defender for Endpoint APIs, you can automate workflows and integrate wi
 
 ## Cross-platform support
 
-Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Defender for Endpoint Plan 1 provides threat protection across your organization’s Windows and iOS devices (with plans to support other operating systems soon). 
+Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Defender for Endpoint Plan 1 provides threat protection across your organization’s Windows and iOS devices (with plans to support other operating systems soon). 
 
 To learn more, see the following resources:
 
