@@ -29,6 +29,8 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
+This article is [Step 1 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
+
 Before enabling Microsoft Defender for Identity, be sure you understand the architecture and can meet the requirements. 
 
 ## Understand the architecture
@@ -42,9 +44,9 @@ The following table describes this illustration.
 
 |Call-out  |Description  |
 |---------|---------|
-|1     |   |
-|2     |   |
-|3     | |
+|1     |  Microsoft Defender for Identity aggregates and analyzes Azure AD and sensor data for monitoring, investigating, and responding to authentication and authorization signals. |
+|2     |  Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting. Sensors can also parse Active Directory Federation Services (AD FS) when Azure is configured to use federated authentication. |
+|3     |Microsoft Defender for Identity shares signals to the Microsoft 365 Security Center. |
 
 
 
