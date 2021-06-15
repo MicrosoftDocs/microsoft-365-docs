@@ -129,7 +129,7 @@ Defender for Endpoint includes certain [response actions that can be taken when 
 | Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, those threats are often addressed during an antivirus scan. |
 | Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
 | File | Stop and quarantine |Stops processes from running and quarantines associated files. |
-| File | Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p>--- or --- <p>Allow indicators prevent files from being blocked or remediated. |
+| File | Add an indicator to block or allow a file | Block indicators prevent portable executable files from being read, written, or executed on devices. <p> --- or --- <p>Allow indicators prevent files from being blocked or remediated. |
 
 To learn more, see: 
 
