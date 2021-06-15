@@ -173,8 +173,8 @@ Most organizations use a variety of devices and operating systems, such as compu
 
 To learn more, see the following resources:
 
-- Defender for Endpoint on Windows
-- Defender for Endpoint on iOS
+- [Defender for Endpoint on Windows](microsoft-defender-endpoint.md)
+- [Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 ## See also
 
