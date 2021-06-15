@@ -463,6 +463,18 @@
               href: archive-wechat-data.md
             - name: WhatsApp Archiver
               href: archive-whatsapp-data.md
+        - name: 17a-4 data connectors
+          items:
+            - name: BlackBerry DataParser (preview)
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser (preview)
+              href: archive-17a-4-bloomberg-data.md
+            - name: Fuze DataParser (preview)
+              href: archive-17a-4-fuze-data.md
+            - name: Slack DataParser (preview)
+              href: archive-17a-4-slack-data.md
+            - name: Symphony DataParser (preview)
+              href: archive-17a-4-symphony-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
         - name: Search for third-party data
