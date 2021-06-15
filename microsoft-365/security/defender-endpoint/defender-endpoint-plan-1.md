@@ -154,7 +154,7 @@ To learn more, see [Manage portal access using role-based access control](rbac.m
 
 ### Reporting
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com]https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats. 
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats. 
 
 - The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
 - The **Incidents & alerts** section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
