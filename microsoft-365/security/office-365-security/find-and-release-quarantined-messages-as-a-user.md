@@ -40,7 +40,6 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 ## What do you need to know before you begin?
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the Quarantine page directly, go to <https://security.microsoft.com/quarantine>.
-master
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
