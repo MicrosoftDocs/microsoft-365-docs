@@ -132,37 +132,44 @@ Defender for Endpoint includes certain response actions that can be taken when a
 
 To learn more, see Take response actions on devices and Take response actions on files.
 
-Centralized management
+### Centralized management
 
 Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Defender for Endpoint integrates with Microsoft Endpoint Manager and other Microsoft solutions. Choose from several methods to configure and manage Defender for Endpoint:
-•	Microsoft Endpoint Manager (this includes Intune and Microsoft Endpoint Configuration Manager)
-•	Group Policy Objects
-•	… and more!
+
+- Microsoft Endpoint Manager (this includes Intune and Microsoft Endpoint Configuration Manager)
+- Group Policy Objects
+- … and more!
+ 
 To learn more, see Manage Defender for Endpoint.
 
-Role-based access control
+#### Role-based access control
+
 Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 security center (https://security.microsoft.com). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
 To learn more, see Manage portal access using role-based access control.
 
-Reporting
+#### Reporting
+
 The Microsoft 365 security center (https://security.microsoft.com) provides easy access to information about detected threats and actions to address those threats. 
-•	The Home page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
-•	The Incidents & alerts section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
-•	The Action center lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
-•	The Reports section includes reports that show threats detected and their status. 
+
+- The Home page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
+- The Incidents & alerts section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
+- The Action center lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
+- The Reports section includes reports that show threats detected and their status. 
+
 To learn more, see the Getting started section in this guide.
 
-APIs
+#### APIs
+
 With the Defender for Endpoint APIs, you can automate workflows and integrate with your organization’s custom solutions. To learn more, see Defender for Endpoint APIs. 
 
-Cross-platform support
+### Cross-platform support
 
 Most organizations use a variety of devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Defender for Endpoint Plan 1 provides threat protection across your organization’s Windows and iOS devices (with plans to support other operating systems soon). 
+
 To learn more, see the following resources:
-•	Defender for Endpoint on Windows
-•	Defender for Endpoint on iOS
 
-
+- Defender for Endpoint on Windows
+- Defender for Endpoint on iOS
 
 ## See also
 
