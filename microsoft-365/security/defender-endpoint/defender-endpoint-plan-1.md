@@ -92,7 +92,7 @@ To learn more, see [Use attack surface reduction rules to prevent malware infect
 
 Sometimes threats to your organization’s devices come in the form of files on removable drives, such as USB drives. Defender for Endpoint includes capabilities to help prevent threats from unauthorized peripherals from compromising your devices. You can configure Defender for Endpoint to block or allow removable devices and files on removable devices. 
 
-To learn more, see Control USB devices and removable media.
+To learn more, see [Control USB devices and removable media](control-usb-devices-using-intune.md).
 
 #### Web protection
 
