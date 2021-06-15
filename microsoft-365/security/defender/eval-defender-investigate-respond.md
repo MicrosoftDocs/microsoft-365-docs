@@ -39,7 +39,7 @@ The following table describes the steps in the illustration.
 | |Step  |Description  |
 |---------|---------|---------|
 |1|[Add endpoints](eval-defender-investigate-respond-endpoints.md)    | Add a domain controller and a Windows device to your Microsoft 365 Defender evaluation environment.       |
-|2|[Simulate an attack](eval-defender-investigate-respond-simulate-attacks.md)     |   Follow the steps to simulate an attack on the evaluation environment.      |
+|2|[Simulate an attack](eval-defender-investigate-respond-simulate-attack.md)     |   Follow the steps to simulate an attack on the evaluation environment.      |
 |3|[Try additional incident response capabilities ](eval-defender-investigate-respond-additional.md)    |    Try additional features and capabilities for performing incident response in Microsoft 365 Defender.     |
 ||||
 

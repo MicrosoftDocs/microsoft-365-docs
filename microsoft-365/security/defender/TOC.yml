@@ -85,7 +85,7 @@
             - name: Add endpoints
               href: eval-defender-investigate-respond-endpoints.md    
             - name: Simulate an attack
-              href: eval-defender-investigate-respond-simulate-attacks.md    
+              href: eval-defender-investigate-respond-simulate-attack.md    
             - name: Try additional capabilities
               href: eval-defender-investigate-respond-additional.md    
         - name: Promote the trial to production

@@ -25,17 +25,17 @@ ms.technology: m365d
 
 # Try additional Microsoft 365 Defender incident response capabilities in a pilot environment
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
-Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attacks.md), here are some additional Microsoft 365 Defender capabilities to explore.
+This article is [Step 3 of 3](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
+Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some additional Microsoft 365 Defender capabilities to explore.
 
 | Capability | Description | Link |
 |:-------|:-----|:-------|
 | Prioritize incidents | Use filtering and sorting of the incidents queue to determine which incidents to address next. | [Prioritize incidents](incident-queue.md) |
-| Manage incidents | Modify incident properties to ensure correct assignment, tags, comments and to resolve an incident. | [Manage incidents](manage-incidents.md)  |
+| Manage incidents | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. | [Manage incidents](manage-incidents.md)  |
 | Automated investigation and response | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. | [Automated investigation and response](m365d-autoir.md) |
 | Action center |  A "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. | [Action center](m365d-action-center.md) |
 | Advanced hunting | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. | [Advanced hunting scenario](#advanced-hunting-scenario) |
