@@ -45,7 +45,7 @@ There are four different ways to find and take auto investigation actions:
 ## Incident queue
 1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Incidents & alerts > Incidents**
-3. Select an incident name and it will open a summary page 
+3. Select an incident name and it will open a summary page.
 4. Go to **Evidence and Response** tab 
 5. Select an item in the list. Its sidepane opens 
 6. In the sidepane take approve or reject actions.
