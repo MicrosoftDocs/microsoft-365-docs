@@ -9,7 +9,7 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: 
+ms.custom:
 - Adm_O365
 - 'O365P_ServiceHealthModern'
 - 'O365M_ServiceHealthModern'
@@ -36,31 +36,30 @@ You can view the health of your Microsoft services, including Office on the web,
 
 If you are unable to sign in to the admin center, you can use the [service status page](https://status.office365.com) to check for known issues preventing you from logging into your tenant.  Also sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on certain events.
 
-  
-### How to check service health
+## How to check service health
 
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), and sign in with an admin account.
 
     > [!NOTE]
     > People who are assigned the global admin or service support admin role can view service health. To allow Exchange, SharePoint, and Skype for Business admins to view service health, they must also be assigned the Service admin role. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
-  
+
 2. If you are not using the new admin center, on the **Home** page, select the **Try the new admin center** toggle in the upper-right corner.
 
 3. To view service health, in the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there is an active service issue and links to the detailed **Service health** page.
-  
+
 4. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
    ![View of current issues in service health](../media/service-health-all-services.png)
 
-The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service. 
+The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service.
 
-To filter your view to services currently experiencing an incident, select the **Incidents** tab at the top of the page. Selecting the **Advisories** tab will show only services that currently have an advisory posted. 
+To filter your view to services currently experiencing an incident, select the **Incidents** tab at the top of the page. Selecting the **Advisories** tab will show only services that currently have an advisory posted.
 
 The **History** tab shows the history of incidents and advisories that have been resolved.
 
 If you're experiencing an issue with a Microsoft 365 service and you don’t see it listed on the **Service health** page, tell us about it by selecting **Report an issue**, and completing the short form. We’ll look at related data and reports from other organizations to see how widespread the issue is, and if it originated with our service. If it did, we’ll add it as a new incident or advisory on the **Service health** page, where you can track its resolution. If you don’t see it appear on the list within about 30 minutes, consider contacting support to resolve the issue.
 
-To customize your view of which services show up on the dashboard, select **Preferences** > **Custom view**,  and clear the check boxes for the services you want to filter out of your Service health dashboard view. Make sure that the check box is selected for each service that you want to monitor.    
+To customize your view of which services show up on the dashboard, select **Preferences** > **Custom view**,  and clear the check boxes for the services you want to filter out of your Service health dashboard view. Make sure that the check box is selected for each service that you want to monitor.
 
 To sign up for email notifications of new incidents that affect your tenant and status changes for an active incident, select **Preferences** > **Email**, click **Send me service heath notifications in email**, and then specify:
 
@@ -72,12 +71,12 @@ To sign up for email notifications of new incidents that affect your tenant and 
 > Each admin can have their Preferences set and the above limit of two email address is per admin account.
 
 > [!TIP]
-> You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p/?linkid=627216) on your mobile device to view Service health, which is a great way to stay current with push notifications. 
-  
+> You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p/?linkid=627216) on your mobile device to view Service health, which is a great way to stay current with push notifications.
+
 ### View details of posted service health
 
 On the **All services** view, selecting the service status will open a summary view of advisories or incidents.
-  
+
 [ ![A screenshot showing the service advisory](../media/service-health-advisory.png) ](../media/service-health-advisory.png#lightbox)
 
 The advisory or incident summary provides the following information:
@@ -96,7 +95,7 @@ Select the issue title to see the issue detail page, which shows more informatio
 ### Translate service health details
 
 Because service health explanations are posted in real-time, they are not automatically translated to your language and the details of a service event are in English only. To translate the explanation, follow these steps:
-  
+
 1. Go to [Translator](https://www.bing.com/translator/).
 
 2. On the **Service health** page, select an incident or advisory. Under **Show details**, copy the text about the issue.
@@ -106,10 +105,10 @@ Because service health explanations are posted in real-time, they are not automa
 ### Definitions
 
 Most of the time, services will appear as healthy with no further information. When a service is having a problem, the issue is identified as either an advisory or an incident and shows a current status.
-  
+
 > [!TIP]
 > Planned maintenance events aren't shown in service health. You can track planned maintenance events by staying up to date with the **Message center**. Filter to messages categorized as Plan for change to find out when the change is going to happen, its effect, and how to prepare for it. See [Message center in Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) for more details.
-  
+
 ### Incidents and advisories
 
 | Icon | Description |
@@ -134,19 +133,21 @@ Most of the time, services will appear as healthy with no further information. W
 ### History
 
 Service health lets you look at current health status and view the history of any service advisories and incidents that have affected your tenant in the past 30 days. To view the past health of all services, select **View history** on the issue detail page.
-  
+
 ![Show link to health history](../media/service-health-view-history.png)
-  
+
 A list of all service health messages posted in the selected timeframe is displayed, as shown below:
-  
+
 ![View service health history](../media/service-health-history.png)
-  
+
 Expand any row to view more details about the issue.
-  
+
 For more information about our commitment to uptime, see [Transparent operations from Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 
 ## Related topics
 
 [Activity Reports in the Microsoft 365 admin center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-[Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
-[How to check Windows release health on admin center](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+
+[Message center Preferences](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
+
+[How to check Windows release health on admin center](/windows/deployment/update/check-release-health)

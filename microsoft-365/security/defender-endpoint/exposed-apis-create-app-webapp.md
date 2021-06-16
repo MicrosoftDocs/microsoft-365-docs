@@ -34,7 +34,7 @@ ms.custom: api
 
 This page describes how to create an application to get programmatic access to Defender for Endpoint without a user. If you need programmatic access to Defender for Endpoint on behalf of a user, see [Get access with user context](exposed-apis-create-app-nativeapp.md). If you are not sure which access you need, see [Get started](apis-intro.md).
 
-Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 - Create an Azure Active Directory (Azure AD) application.
@@ -111,7 +111,7 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Get an access token
 
-For more information on Azure AD tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Use PowerShell
 

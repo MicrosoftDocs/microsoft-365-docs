@@ -64,7 +64,7 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 
 Make sure that audit logging is turned on before you configure SIEM server integration.
 
-- For SharePoint Online, OneDrive for Business, and Azure Active Directory, [audit logging is turned on in the Security & Compliance Center](../../compliance/turn-audit-log-search-on-or-off.md).
+- For SharePoint Online, OneDrive for Business, and Azure Active Directory, [audit logging is turned on in the Microsoft 365 Defender portal](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - For Exchange Online, see [Manage mailbox auditing](../../compliance/enable-mailbox-auditing.md).
 

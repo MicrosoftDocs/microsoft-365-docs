@@ -37,6 +37,9 @@ Set attack surface reduction rules for devices running any of the following edit
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
+> [!WARNING]
+> Enabling attack service reduction rules on Windows Server 2016 may lead to unexpected results and impact server performance. We do not recommend enabling or deploying attack surface reduction rules to unsupported platforms.
+
 Learn how to evaluate attack surface reduction rules by enabling audit mode to test the feature directly in your organization.
 
 > [!TIP]

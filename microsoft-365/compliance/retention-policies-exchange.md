@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
+The following Exchange items from user mailboxes and shared mailboxes can be retained and deleted by using retention policies and retention labels: Mail messages (includes received messages, drafts, sent messages) with any attachments, tasks when they have an end date, and notes. 
 
 Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
 
@@ -43,7 +43,10 @@ Both a mailbox and a public folder use the [Recoverable Items folder](/exchange/
   
 When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
-When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label to retain the item, it is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+
+> [!NOTE]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy or retention label, or it is under eDiscovery holds for legal or investigative reasons.
 
 The timer job can take up to seven days to run and the Exchange location must contain at least 10 MB.
   

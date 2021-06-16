@@ -137,7 +137,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## Sample reports
-View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).
+View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](/samples/browse/?products=mdatp).
 
 
 ## Related topic
