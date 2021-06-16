@@ -74,7 +74,7 @@ There are four different ways to find and take auto investigation actions:
 
 ## Change or undo one remediation action
 
-There are two different ways to re-consider submitted actions 
+There are two different ways to reconsider submitted actions:
    - Through Unified action center (<https://security.microsoft.com/action-center>)
    - Though office action center (<https://security.microsoft.com/threatincidents>)
    
