@@ -28,39 +28,44 @@ In Windows 10, application notifications about malware detection and remediation
 
 If you're part of your organization's security team, you can configure how notifications appear on endpoints, such as notifications that prompt for a system reboot or that indicate a threat has been detected and remediated.
 
-## Configure the additional notifications that appear on endpoints
+## Configure antivirus notifications using Group Policy or the Windows Security app
 
 You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Security app](microsoft-defender-security-center-antivirus.md) and with Group Policy.
 
 > [!NOTE]
-> In Windows 10, version 1607 the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings in all versions of Windows 10, it is called **Enhanced notifications**.
+> In Windows 10, version 1607 the feature was called **Enhanced notifications** and was configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings for all versions of Windows 10, the notification feature is called **Enhanced notifications**.
+
+### Use Group Policy to disable additional notifications
+
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
+
+3. In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4. Select **Administrative templates**.
+
+5. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > Reporting**.
+
+6. Double-click **Turn off enhanced notifications**, and set the option to **Enabled**. Then select **OK**. This will prevent additional notifications from appearing.
 
 > [!IMPORTANT]
 > Disabling additional notifications will not disable critical notifications, such as threat detection and remediation alerts.
 
-**Use the Windows Security app to disable additional notifications:**
+### Use the Windows Security app to disable additional notifications
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Security**.
 
 2. Select **Virus & threat protection** tile (or the shield icon on the left menu bar) and, then select **Virus & threat protection settings**
 
-3. Scroll to the **Notifications** section and click **Change notification settings**.
+3. Scroll to the **Notifications** section and select **Change notification settings**.
 
 4. Slide the switch to **Off** or **On** to disable or enable additional notifications.
 
-**Use Group Policy to disable additional notifications:**
+> [!IMPORTANT]
+> Disabling additional notifications will not disable critical notifications, such as threat detection and remediation alerts.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
-
-3. Click **Administrative templates**.
-
-4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Reporting**.
-
-5. Double-click **Turn off enhanced notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
-
-## Configure standard notifications on endpoints
+## Configure standard notifications on endpoints using Group Policy
 
 You can use Group Policy to:
 
@@ -68,26 +73,29 @@ You can use Group Policy to:
 - Hide all notifications on endpoints
 - Hide reboot notifications on endpoints
 
-Hiding notifications can be useful in situations where you can't hide the entire Microsoft Defender Antivirus interface. See [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. 
+Hiding notifications can be useful in situations where you can't hide the entire Microsoft Defender Antivirus interface. See [Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md) for more information. Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Manager Endpoint Protection monitoring dashboard and reports](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
 
-> [!NOTE]
-> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [Microsoft Endpoint Manager Endpoint Protection monitoring dashboard and reports](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
+To add custom contact information to endpoint notifications, see [Customize the Windows Security app for your organization](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
-See [Customize the Windows Security app for your organization](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) for instructions to add custom contact information to the notifications that users see on their machines.
+### Use Group Policy to hide notifications
 
-**Use Group Policy to hide notifications:**
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and click **Edit**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+3. In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**. 
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Client interface**. 
 
-4. Double-click **Suppress all notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
+5. Double-click **Suppress all notifications** and set the option to **Enabled**. 
 
-**Use Group Policy to hide reboot notifications:**
+6. Select **OK**. This will prevent additional notifications from appearing.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
+### Use Group Policy to hide reboot notifications
+
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+
+2. Right-click the Group Policy Object you want to configure and then select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
