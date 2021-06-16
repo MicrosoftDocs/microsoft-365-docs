@@ -42,9 +42,13 @@ The following table describes this illustration.
 
 |Call-out  |Description  |
 |---------|---------|
-|1     |   |
-|2     |   |
-|3     | |
+|1     | App connectors use APIs from cloud app providers, like Box, to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps for analysis.     |
+|2     | Network traffic from clients, firewalls, proxy servers, etc. is parsed to identify sanctioned and unsanctioned cloud apps.   |
+|3     |Clients leverage the  session proxy to enforce sanctioned and unsanctioned cloud apps access. |
+|4 |Admins can create Cloud App Policies to configure granular control and protection for all apps or for specific apps.|
+|5 | Currently, the Microsoft Cloud App Security dashboard is where you will configure policies, view alerts, and perform other tasks. |
+|6 | Signals are shared with the Microsoft 365 Security Center for . . . |
+| | |
 
 
 
