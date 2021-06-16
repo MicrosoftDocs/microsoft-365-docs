@@ -26,7 +26,7 @@ manager: dansimp
 
 In Windows 10, application notifications about malware detection and remediation are more robust, consistent, and concise. Microsoft Defender Antivirus notifications appear on endpoints when scans are completed and threats are detected. Notifications follow both scheduled and manually triggered scans. These notifications also appear in the **Notification Center**, and a summary of scans and threat detections appear at regular time intervals.
 
-You can also configure how standard notifications appear on endpoints, such as notifications for reboot or when a threat has been detected and remediated.
+If you're part of your organization's security team, you can configure how notifications appear on endpoints, such as notifications that prompt for a system reboot or that indicate a threat has been detected and remediated.
 
 ## Configure the additional notifications that appear on endpoints
 
