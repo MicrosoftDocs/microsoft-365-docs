@@ -88,7 +88,7 @@ There are two different ways to reconsider submitted actions:
 2. Select the appropriate remediation.
 3. In the side pane, click on the mail submissions entry and wait for the list to load. 
 4. Wait for the Action button at the top to enable and select the Action button to change the action type. 
-5. This will create appropriate actions.
+5. This will create the appropriate actions.
 
 ## Next steps
 
