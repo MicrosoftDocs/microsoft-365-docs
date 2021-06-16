@@ -148,7 +148,6 @@ You can only upgrade cloud-managed, simple, non-nested distribution lists. The t
 |Security groups  <br/> |No  <br/> |
 |Dynamic Distribution lists  <br/> |No  <br/> |
 |Distribution lists that were converted to **RoomLists**  <br/> |No  <br/> |
-|Distribution lists where **MemberJoinRestriction** and/or **MemberDepartRestriction** is **Closed**  <br/> |No  <br/> |
 
 ### Check which DLs are eligible for upgrade
 

@@ -1,5 +1,5 @@
 ---
-title: View email security reports in the Security & Compliance Center
+title: View email security reports in the Microsoft 365 Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection: 
   - M365-security-compliance
-description: Learn how to find and use email security reports for your organization. Email security reports are available in the Security & Compliance Center.
+description: Learn how to find and use email security reports for your organization. Email security reports are available in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# View email security reports in the Security & Compliance Center
+# View email security reports in the Microsoft 365 Defender portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -31,9 +31,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A variety of reports are available in the [Security & Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
+A variety of reports are available in the [Microsoft 365 Defender portal](https://security.microsoft.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.
 
-![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Reports dashboard in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
 
 ## Compromised users report
 
@@ -46,7 +46,7 @@ The **Compromised users** report shows shows the number of user accounts that we
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Compromised users**. To go directly to the report, open <https://protection.office.com/reportv2?id=CompromisedUsers>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Compromised users**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
 
 You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
 
@@ -76,7 +76,7 @@ The **Encryption report** is available in EOP (subscriptions with mailboxes in E
 
 The aggregate view allows filtering for the last 90 days, while the detail view allows filtering for 10 days.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Encryption report**. To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Encryption report**. To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.
 
 To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).
 
@@ -149,7 +149,7 @@ The **Malware detections in email** report shows information about malware detec
 
  The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Malware detections in email**. To go directly to the report, open <https://protection.office.com/reportv2?id=MalwareDetections>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Malware detected in email**. To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.
 
 ![Malware detections in email widget in the Reports dashboard](../../media/malware-detections-widget.png)
 
@@ -187,7 +187,7 @@ The **Spam detections** report shows spam email messages that were blocked by EO
 
 The aggregate view allows for 90 days filtering, while the details table allows for 10 days filtering.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spam detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpamDetections>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click click **View details** under **Spam detections**. To go directly to the report, open <https://security.microsoft.com/reports/SpamDetections>.
 
 ![Spam detections widget in the Reports dashboard](../../media/spam-detections-report-widget.png)
 
@@ -251,7 +251,7 @@ The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, w
 
 <sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spoof detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpoofMailReport>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Spoof detections**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Spoof detections widget in the Reports dashboard](../../media/spoof-detections-widget.png)
 
@@ -297,7 +297,7 @@ The report provides the count of email messages with malicious content, such as 
 
 **Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Threat protection status**. To go directly to the report, open one of the following URLs:
 
 - Microsoft Defender for Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -475,7 +475,7 @@ If you click **View details table**, the information that's shown depends on the
 
 The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top malware**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopMalware>.
+To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Top malware**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
 ![Top malware widget in the Reports dashboard](../../media/top-malware-report-widget.png)
 
@@ -494,37 +494,35 @@ If you click **Filters** in the report view or details table view, you can speci
 
 The **URL threat protection report** is available in Microsoft Defender for Office 365. For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).
 
-## User-reported messages report
+## User reported messages report
 
-The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or [The Report Phishing add-in](enable-the-report-phish-add-in.md).
+The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or [The Report Phishing add-in](enable-the-report-phish-add-in.md).
 
 Details are available for each message, including the delivery reason, such a spam policy exception or mail flow rule configured for your organization. To view details, select an item in the user-reports list, and then view the information on the **Summary** and **Details** tabs.
 
-![The User-Reported Messages report shows messages users labeled as junk, not junk, or phishing attempts.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![The User reported messages report shows messages users labeled as junk, not junk, or phishing attempts.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-To view this report, in the [Security & Compliance Center](https://protection.office.com), do one of the following:
+To view this report, in the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \>**Email & collaboration reports** \> **User reported messages**.
 
-- Go to **Threat management** \> **Dashboard** \> **User-reported messages**.
+- Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **User reported messages**.
 
-- Go to **Threat management** \> **Review** \> **User-reported messages**.
-
-![In the Security & Compliance Center, choose Threat management \> Review \> User reported messages](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![In the Microsoft 365 Defender portal, choose Reports \> Email & collaboration \> Email & collaboration reports \> User reported messages](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+> In order for the User reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Security & Compliance Center:
+In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:
 
 - **Organization Management**
 - **Security Administrator**
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## What if the reports aren't showing data?
 
@@ -534,8 +532,8 @@ If you are not seeing data in your reports, double-check that your policies are 
 
 [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
 
-[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
-[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
+[View mail flow reports in the Microsoft 365 Defender portal](view-mail-flow-reports.md)
 
 [View reports for Defender for Office 365](view-reports-for-mdo.md)
