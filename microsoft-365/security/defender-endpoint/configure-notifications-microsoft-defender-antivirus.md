@@ -101,11 +101,9 @@ To add custom contact information to endpoint notifications, see [Customize the 
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**.
+4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Client interface**.
 
-5. Double-click **Suppresses reboot notifications** and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
+5. Double-click **Suppresses reboot notifications** and set the option to **Enabled**. 
 
-## Related topics
+5. Select **OK**. This will prevent additional notifications from appearing.
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
