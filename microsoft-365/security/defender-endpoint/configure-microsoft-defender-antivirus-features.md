@@ -31,6 +31,7 @@ You can configure Microsoft Defender Antivirus with a number of tools, such as:
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)
+- [Tenant attach](/mem/configmgr/tenant-attach/)
 
 The following broad categories of features can be configured:
 
