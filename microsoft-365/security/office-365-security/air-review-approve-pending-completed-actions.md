@@ -40,7 +40,7 @@ There are four different ways to find and take auto investigation actions:
 - [Incident queue](https://security.microsoft.com/incidents).
 - [Action center](https://security.microsoft.com/action-center/pending).
 - Investigation itself (accessed via Incident or from an alert)
-- Investigation and remediation investigations queue (<https://security.microsoft.com/airinvestigation>)
+- [Investigation and remediation investigations queue](https://security.microsoft.com/airinvestigation).
 
 ## Incident queue
 1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
