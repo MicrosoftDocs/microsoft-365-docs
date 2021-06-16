@@ -34,7 +34,7 @@ Reviewing events is handy when you're evaluating the features. You can enable au
 
 This article lists all the events, their associated feature or setting, and describes how to create custom views to filter to specific events.
 
-Get detailed reporting into events and blocks as part of Windows Security if you have an E5 subscription and use [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+Get detailed reporting into events, blocks, and warnings as part of Windows Security if you have an E5 subscription and use [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Use custom views to review attack surface reduction capabilities
 
@@ -76,9 +76,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-5. Select **OK**. Specify a name for your filter.
-
-6. It will create a custom view that filters to only show the events related to that feature.
+5. Select **OK**. Specify a name for your filter. This creates a custom view that filters to only show the events related to that feature.
 
 ### XML for attack surface reduction rule events
 
