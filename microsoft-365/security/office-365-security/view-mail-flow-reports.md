@@ -446,7 +446,7 @@ The following charts are available in the report view:
 
   ![Direction view in the Sent and received email report](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Drill down by** \> **Malware (anti-malware)**: This selection takes you to the [Malware detections in email report](view-email-security-reports.md#malware-detections-in-email-report).
+- **Drill down by** \> **Malware (anti-malware)**: This selection takes you to the [Malware detections report](view-email-security-reports.md#malware-detections-report).
 
 - **Drill down by** \> **Spam detections)**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
