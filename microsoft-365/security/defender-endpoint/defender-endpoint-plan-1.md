@@ -49,12 +49,13 @@ Thank you for participating in our preview program! Give us feedback on your ove
 
 ## Next-generation protection
 
-| :::image type="content" source="../../media/defender-endpoint/ngp-icon.png" alt-text="Next-generation protection"::: Next-generation protection | What's included  |
-|:---|:---|
-| Next-generation protection includes robust antivirus and antimalware protection. | With next-generation protection, you get: <br/>- Behavior-based, heuristic, and real-time antivirus protection <br/>- Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats <br/>- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus |
+Next-generation protection includes robust antivirus and antimalware protection. With next-generation protection, you get: 
 
-> [!TIP]
-> To learn more, see [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md).
+- Behavior-based, heuristic, and real-time antivirus protection 
+- Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats 
+- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus |
+
+To learn more, see [Next-generation protection in Windows](microsoft-defender-antivirus-in-windows-10.md).
 
 ## Attack surface reduction
 
