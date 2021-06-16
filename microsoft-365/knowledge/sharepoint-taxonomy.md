@@ -16,9 +16,10 @@ description: Learn about how to find topics in Viva Topics by using SharePoint t
 ---
 # Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics
 
-You can use SharePoint taxonomy terms to help guide AI to create topics in Viva Topics. You must be a SharePoint administrator or global administrator to perform these tasks.
+You can use SharePoint taxonomy terms to help guide AI to create topics in Viva Topics. 
+The SharePoint taxonomy service provides global terms that are available to all sites. Users can create topics that correspond with concepts that are represented as terms. 
 
-The SharePoint taxonomy service provides global terms that are available to all sites. Users can create topics that correspond with concepts that are represented as terms. Users can quickly access topics that are created using taxonomy terms.
+You must be a SharePoint administrator or global administrator to perform these tasks.
 
 ## How it works
 
