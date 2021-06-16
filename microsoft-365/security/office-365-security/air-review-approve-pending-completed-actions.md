@@ -86,7 +86,7 @@ There are two different ways to reconsider submitted actions:
  ## Change or undo through the Office action center 
 1. Go to the [Office action center](https://security.microsoft.com/threatincidents) and sign in.
 2. Select the appropriate remediation.
-3. In the sidepane, click on the mail submissions entry and wait for the list to load. 
+3. In the side pane, click on the mail submissions entry and wait for the list to load. 
 4. Wait for the action button to enable and click on the Action button on top to change the action type. 
 5. This will create appropriate actions.
 
