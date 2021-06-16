@@ -377,7 +377,8 @@ Each returned record contains all the data from the full export software vulnera
 >-Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
 >
 >-The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
->
+
+
 Property (ID) | Data type | Description | Example of returned value
 :---|:---|:---|:---
 CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system. | CVE-2020-15992  
