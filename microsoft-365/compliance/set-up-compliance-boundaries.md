@@ -35,9 +35,9 @@ In this example, Contoso LTD is an organization that consists of two subsidiarie
   
 - The search permissions filtering functionality in Content search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
 
-- [Role groups](assign-ediscovery-permissions#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
+- [Role groups](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
 
-  - Control who can see the eDiscovery cases in the Security & Compliance Center. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
+  - Control who can see the eDiscovery cases in the Microsoft 365 compliance center. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
 
   - Control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
 
@@ -55,16 +55,13 @@ Here's the process for setting up compliance boundaries:
 
 ## Before you set up compliance boundaries
 
-You have to meet the following prerequisite before implementing compliance boundary for your organization:
-
-- Users must be assigned an Exchange Online license. To verify this, use [Get-User](/powershell/module/exchange/get-user) cmdlet in Exchange Online PowerShell.
-
+- Users must be assigned an Exchange Online license. To verify this, use the [Get-User](/powershell/module/exchange/get-user) cmdlet in Exchange Online PowerShell.
 
 ## Step 1: Identify a user attribute to define your agencies
 
 The first step is to choose an attribute to use that will define your agencies. This attribute is used to create the search permissions filter that limits an eDiscovery manager to search only the content locations of users who are assigned a specific value for this attribute. For example, let's say Contoso decides to use the **Department** attribute. The value for this attribute for users in the Fourth Coffee subsidiary would be  `FourthCoffee`  and the value for users in Coho Winery subsidiary would be `CohoWinery`. In Step 3, you use this  `attribute:value`  pair (for example, *Department:FourthCoffee*) to limit the user content locations that eDiscovery managers can search. 
   
-Here are some example of user attributes that you can use for compliance boundaries:
+Here are some examples of user attributes that you can use for compliance boundaries:
   
 - Company
 
@@ -76,7 +73,7 @@ Here are some example of user attributes that you can use for compliance boundar
 
 - C (Two-letter country code)
 
-For a complete list, please refer to the full list of supported [mailbox filters](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)
+For a complete list, see the full list of supported [mailbox filters](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
 
 ## Step 2: Create a role group for each agency
 
@@ -103,7 +100,7 @@ After you've created role groups for each agency, the next step is to create the
 Here's the syntax that's used to create a search permissions filter used for compliance boundaries.
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Vale> '", "Site_Path -like '<SharePointURL>*'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'" -Action <Action>
 ```
 
 Here's a description of each parameter in the command:
@@ -114,7 +111,7 @@ Here's a description of each parameter in the command:
 
 - `Filters`: Specifies the search criteria for the filter. For the compliance boundaries, you define the following filters. Each one applies to a content location. 
 
-    - `Mailbox or OneDrive`: Specifies the mailboxes or OneDrives that the role groups defined in the  `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrives in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    - `Mailbox or OneDrive`: Specifies the mailboxes or OneDrive accounts that the role groups defined in the `Users` parameter can search. This filter allows members of the role group to search only the mailboxes or OneDrives in a specific agency; for example, `"Mailbox_Department -eq 'FourthCoffee'"`. 
 
     - `Site_Path`: Specifies the SharePoint sites that the role groups defined in the  `Users` parameter can search. The  *SharePointURL*  specifies the sites in the agency that members of the role group can search. For example,  `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Notice the `Site` and `Site_Path` filters are connected by an **-or** operator.
 
@@ -269,7 +266,7 @@ Keep the following limitations in mind when managing eDiscovery cases and invest
 
 - Compliance boundaries and search permissions filters depend on attributes being stamped on content in Exchange, OneDrive, and SharePoint and the subsequent indexing of this stamped content. 
 
-- We don't recommend using exclusion filters (such as using `-not()` in a search permissions filter) for a content-based compliance boundary. Using an exclusion filter can have unexpected results if content with recently updated attributes hasn't been indexed. 
+- We don't recommend using exclusion filters (such as using `-not()` in a search permissions filter) for a content-based compliance boundary. Using an exclusion filter can have unexpected results if content with recently updated attributes hasn't been indexed.
 
 ## Frequently asked questions
 
