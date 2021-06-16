@@ -32,7 +32,7 @@ When someone adds you to a Microsoft 365 for business organization, you'll get a
 
 - **Join a personal Microsoft 365 Business Standard organization**  In this scenario, you're joining an organization that doesn't have a different professional email for users. You'll sign in with your regular email account.
 
-- **Join a business Microsoft 365 Business Standard organization**  In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, @contoso.com.
+- **Join a business Microsoft 365 Business Standard organization**  In this scenario, you're joining an organization that has professional business email. All users have a shared domain email address. For example, their username followed by @contoso.com.
 
 ### Join a personal Microsoft 365 Business Standard organization
 

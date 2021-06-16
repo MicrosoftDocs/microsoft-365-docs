@@ -17,11 +17,11 @@
         - name: Sign up for Microsoft 365 Business Standard
           items:
            - name: Sign up
-             href: ../simplified-signup/owner-purchase.md
+             href: ../admin/simplified-signup/owner-purchase.md
            - name: Set up a new business email address
              href: ../business-video/set-up-a-new-business-email-address.md
            - name: Invite your users to Microsoft 365 Business Standard
-             href: ../simplified-signup/owner-iw-invite.md
+             href: ../admin/simplified-signup/owner-iw-invite.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
         - name: Set up your organization with the guided setup

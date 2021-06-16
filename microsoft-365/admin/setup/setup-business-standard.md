@@ -26,17 +26,22 @@ search.appverid:
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
-# Set up Microsoft Business Standard
+# Set up Microsoft 365 Business Standard
 
-## Add your domain to personalize sign-in
+When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. In this article, we'll walk you through the steps or adding an existing domain your already own or buying a new one.
 
-When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up.
+> [!NOTE]
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
-- If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+### Watch: Add a domain to your Microsoft 365 Business Standard subscription
 
-1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
 
-2. Choose **Go to setup** to start the wizard.
+https://www.microsoft.com/en-us/videoplayer/embed/RWyVVA?autoplay=false
+
+### Steps: Add a domain to your Microsoft 365 Business Standard subscription
+
+1. From the How you'll sign in page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
 3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
 
@@ -44,7 +49,6 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
-
 
 4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also the [host specific instructions](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
@@ -54,20 +58,17 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 
 ## Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express).
+You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
 
 ## Add users in the wizard
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Standard license.
 
-1. If your Microsoft 365 Business Standard subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
+1. If your Microsoft 365 Business Standard subscription has existing users you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
 ## Connect your domain
-
-> [!NOTE]
-> If you chose to use the .onmicrosoft domain, or used Azure AD Connect to set up users, you will not see this step.
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
