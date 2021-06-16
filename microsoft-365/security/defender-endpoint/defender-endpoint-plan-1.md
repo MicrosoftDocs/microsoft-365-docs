@@ -33,8 +33,6 @@ This guide focuses on Defender for Endpoint Plan 1, currently in preview. Use th
 - Learn how to set up and configure your threat protection capabilities.
 - Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats.
 
-Thank you for participating in our preview program! Give us feedback on your overall experience with your security features and our documentation. We’ll use your feedback to improve the quality of our content and our products/services.
-
 > [!IMPORTANT]
 > Some information in this guide relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This guide includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1.
 
