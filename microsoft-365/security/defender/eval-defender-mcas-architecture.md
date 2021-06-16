@@ -75,6 +75,4 @@ The following table identified key concepts that are important to understand whe
 
 ??
 
-### Navigation you may need
-
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+### Next steps
