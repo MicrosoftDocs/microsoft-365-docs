@@ -21,6 +21,7 @@ ms.topic: article
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -53,7 +54,8 @@ You can also manually navigate to the event area that corresponds to the feature
 
 3. Select **Action** > **Import Custom View...**
 
-    ![Animation highlighting Import custom view on the left of the Even viewer window](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animation highlighting Import custom view on the left of the Even viewer window](images/events-import.gif)
 
 4. Navigate to where you extracted XML file for the custom view you want and select it.
 
@@ -67,7 +69,8 @@ You can also manually navigate to the event area that corresponds to the feature
 
 2. On the left panel, under **Actions**, select **Create Custom View...**
 
-    ![Animation highlighting the create custom view option on the Event viewer window](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animation highlighting the create custom view option on the Event viewer window](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
@@ -140,7 +143,7 @@ You can access these events in Windows Event viewer:
 2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table below.
 3. Double-click on the sub item to see events. Scroll through the events to find the one you're looking.
 
-   ![Animation showing using Event Viewer](/windows/security/threat-protection/images/event-viewer)
+   ![Animation showing using Event Viewer](images/event-viewer.gif)
 
 Feature | Provider/source | Event ID | Description
 :-|:-|:-:|:-
