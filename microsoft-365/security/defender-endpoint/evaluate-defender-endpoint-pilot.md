@@ -26,6 +26,7 @@ ms.technology: m365d
 # Experience Microsoft Defender for Endpoint through simulated attacks
 
 >[!TIP]
+>
 >- Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
@@ -55,18 +56,21 @@ Read the walkthrough document provided with each attack scenario. Each document 
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 >
 
-##  ALTERNATE TOPIC TEXT
+## ALTERNATE TOPIC TEXT
 
 ## Simulate attack scenarios
+
 Use the test devices to run your own attack simulations by connecting to them.
 
 You can simulate attack scenarios using:
+
 - The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
 - Threat simulators
 
 You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
+
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
 >[!NOTE]
@@ -92,8 +96,8 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 4. Run Do-it-yourself attack simulations on the device.
 
-
 ### Threat simulator scenarios
+
 If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab devices.
 
 Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender for Endpoint capabilities within the confines of a lab environment.
@@ -101,6 +105,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 >[!NOTE]
 >
 >Before you can run simulations, ensure the following requirements are met:
+
 >- Devices must be added to the evaluation lab
 >- Threat simulators must be installed in the evaluation lab
 
@@ -130,6 +135,7 @@ After running your simulations, we encourage you to walk through the lab progres
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
 ## Simulation gallery
+
 Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
 
 View all the available simulations by going to  **Simulations and tutorials** > **Simulations catalog**  from the menu.
@@ -150,6 +156,7 @@ Each simulation comes with an in-depth description of the attack scenario and re
 ![Image of simulation description details2](images/simulation-details-sb.png)
 
 ## Evaluation report
+
 The lab reports summarize the results of the simulations conducted on the devices.
 
 <br>
