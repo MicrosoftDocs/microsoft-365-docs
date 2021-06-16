@@ -46,15 +46,11 @@ Admin contacts are required when you [submit a Support request](../service-descr
 
 **To add admin contacts**
 
-1.	Sign in to [Microsoft Managed Desktop admin portal](https://aka.ms/mwaasportal). 
+1.	Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
 
-2.	Under **Support**, select **Admin contacts**. 
-
-    ![Support menu, Admin contacts near the top selected](../../media/admincontacts.png)
+2.	Under **Tenant administration**, look for the **Microsoft Managed Desktop** section then select **Admin contacts**. 
 
 3. Select **Add**.
-
-    ![Admin portal, Add button, to the left of Export and Refresh](../../media/adminadd.png)
 
 4.	Select an **Area of focus** and enter the info for the contact. 
 
