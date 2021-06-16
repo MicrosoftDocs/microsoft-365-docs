@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention](retention.md
 
 ## What's included for retention and deletion
 
-The following Exchange items can be retained and deleted by using retention policies and retention labels: Mail messages (includes drafts) with any attachments, tasks when they have an end date, and notes. 
+The following Exchange items from user mailboxes and shared mailboxes can be retained and deleted by using retention policies and retention labels: Mail messages (includes received messages, drafts, sent messages) with any attachments, tasks when they have an end date, and notes. 
 
 Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
 
