@@ -84,7 +84,7 @@ There are two different ways to reconsider submitted actions:
 3. In the pane on the right side of the screen, select the appropriate action (**move to inbox**, **move to junk**,**move to deleted items**, **soft delete", or **hard delete**).
 
  ## Change or undo through the Office action center 
-1. Go to the Action center (<https://security.microsoft.com/threatincidents>) and sign in.
+1. Go to the [Office action center](https://security.microsoft.com/threatincidents) and sign in.
 2. Select appropriate remediation.
 3. In the sidepane, click on the mail submissions entry and wait for the list to load. 
 4. Wait for the action button to enable and click on the Action button on top to change the action type. 
