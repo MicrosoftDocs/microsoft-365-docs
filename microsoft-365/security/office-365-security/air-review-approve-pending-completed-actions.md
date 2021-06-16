@@ -31,7 +31,7 @@ As automated investigations on email & collaboration content result in verdicts,
 - Soft deleting email messages or clusters
 - Turning off external mail forwarding
 
-These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can re-consider submitted actions.
+These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. In some cases, you can reconsider submitted actions.
 
 
 ## Approve (or reject) pending actions
