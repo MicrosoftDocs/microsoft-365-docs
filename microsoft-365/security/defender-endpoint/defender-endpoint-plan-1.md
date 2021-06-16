@@ -38,7 +38,6 @@ Thank you for participating in our preview program! Give us feedback on your ove
 
 ## What's included in Defender for Endpoint Plan 1?
 
-<center><h2>Microsoft Defender for Endpoint Plan 1</center></h2>
 <table>
 <td><center><a href="#next-generation-protection"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
 <td><a href="attack-surface-reduction"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
