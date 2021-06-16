@@ -88,7 +88,7 @@ In the term store, you can view the status of requests by:
 
 ### View the status for a single term
 
-1. On the **Term store** page, search for and select the term you want to view the status of.
+1. On the **Term store** page, search for and select the term for which you want to view the status.
 2. On the term page, select the **Usage settings** tab.
 3. In the **Create topic from this term** section, view the status of the request.
 
@@ -96,7 +96,7 @@ In the term store, you can view the status of requests by:
 
 ### View the status for multiple terms in a term set
 
-1. On the **Term store** page, search for and select the term set you want to view the status of.
+1. On the **Term store** page, search for and select the term set for which you want to view the status.
 2. On the term page, select the **Usage settings** tab.
     - In the **Create topics from terms** section, you can see the percentage of terms that have created new topics so far and the total number of requests.
 3. Select **View all requests**.
