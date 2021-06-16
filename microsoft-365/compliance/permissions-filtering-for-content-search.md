@@ -105,13 +105,7 @@ An alternative to using a filters list would be to create two separate search pe
 
 Keep the following things in mind about using a filters list:
 
-- You have to use a filters list to create a filter that includes a **Mailbox** filter and a **MailboxContent** filter. 
-
-- As previously suggested, you don't have to use a filters list to include a **Site** and a **SiteContent** filter in a single search permissions filter. For example, you can combine **Mailbox** and a **SiteContent** filters using an **-or** operator.
-
-   ```powershell
-   -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
-   ```
+- You have to use a filters list to create a filter that includes a **Mailbox** filter and a **MailboxContent** filter.
 
 - Each component of a filters list can contain a complex filter syntax. For example, the mailbox and site filters can contain multiple filters separated by an **-or** operator:
 
