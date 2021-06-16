@@ -20,7 +20,7 @@ description: "Set up your business email account in Microsoft 365"
 
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use subscriptions.
 
-## Share an invite to a Microsoft 365 Business Standard subscription
+## Share an invitation to a Microsoft 365 Business Standard subscription
 
 1. In the Microsoft 365 admin center, select **Create an account for another person**.
 
@@ -100,4 +100,4 @@ Download Microsoft 365 apps by following the steps in this article.
 
 ## Next steps
 
-Accept an invitation once its flipped from a personal email to a business email.
+Add steps: **Accept a new invitation once its flipped from a personal email to a business email.**

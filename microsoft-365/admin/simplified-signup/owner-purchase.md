@@ -23,8 +23,10 @@ There are a couple of ways to get Microsoft 365 Business Standard:
 - **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](get-microsoft-365-business.md).
 
 **Need something different?** You can:
-- [Upgrade your Office 365 plan to Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
+
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business.
+
+## Before you begin
 
 Check out the [Overview of Microsoft 365 for business](microsoft-365-business-overview.md).
 
@@ -71,6 +73,6 @@ In this scenario, you want to add an existing domain you already own or buy a ne
 
 ## Related articles
 
-[Microsoft 365 for business training videos](../business-video/index.yml)
+[Set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md)
 
-M365 Bus premium topic
+[Microsoft 365 for business training videos](../business-video/index.yml)
