@@ -149,17 +149,19 @@ If you are part of your organization's security team, and your subscription incl
 
 4. Assign the profile to one or more groups.
 
-### Are you using Windows OS 1709, 1803, or 1809?
+### Are you using Windows Server 2016, Windows OS 1709, 1803, or 1809?
 
-If you are using Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
-
-#### Use PowerShell to determine whether tamper protection is turned on
+If you are using Windows Server 2016, Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
+In addition, on Windows Server 2016, the Settings App will not accurately reflect the status of Real-time Protection when Tamper Protection is enabled.
+   
+#### Use PowerShell to determine whether tamper protection and/or real-time protection are turned on
 
 1. Open the Windows PowerShell app.
 
 2. Use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+   In the list of results, look for `RealTimeProtectionEnabled`. (A value of true means tamper protection is enabled.)
 
 ## Manage tamper protection for your organization with Configuration Manager, version 2006
 
