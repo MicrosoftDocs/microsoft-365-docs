@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Use Threat Explorer or Real-time detections in the Security &amp; Compliance Center to investigate and respond to threats efficiently.
+description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -38,7 +38,7 @@ In this article:
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats. 
 
-In the **Security & Compliance Center**, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
+In the **Microsoft 365 Defender portal**, go to **Email & collaboration**, and then choose **Explorer**.
 
 <br>
 
@@ -46,7 +46,7 @@ In the **Security & Compliance Center**, go to **Threat management**, and then c
 
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
-|![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
+|![Threat explorer](../../media/path-to-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
 With these tools, you can:
@@ -64,15 +64,15 @@ In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 
 
 Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
 
-To open the Explorer tool, go to **Security & Compliance Center** > **Threat management** > **Explorer** (or **Real-time detections**). By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
+To open the Explorer tool, go to **Microsoft 365 Defender portal** > **Email & collaboration** > **Explorer**. By default, you’ll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you’re hunting Phish, or digging into a threat campaign, choose those views.
 
 > [!div class="mx-imgBorder"]
-> ![View drop down in Threat Explorer](../../media/threat-explorer-view-drop-down.png)
+> ![View drop down in Threat Explorer](../../media/view-drop-down.png)
 
 Once a security operations (Sec Ops) person selects the data they want to see, whether the scope is narrow view like user **Submissions**, or a wider view, like **All email**, they can use the **Sender** button to further filter. Remember to select Refresh to complete your filtering actions.
 
 > [!div class="mx-imgBorder"]
-> ![Sender button in Threat Explorer](../../media/threat-explorer-sender-button.png)
+> ![Sender button in Threat Explorer](../../media/sender-drop-down.png)
 
 Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
 
@@ -82,7 +82,7 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it’s the **Advanced filter** button that lets Sec Ops teams dig deep. 
 
 > [!div class="mx-imgBorder"]
-> ![Advanced filter in Threat Explorer](../../media/threat-explorer-advanced-filter.png)
+> ![Advanced filter in Threat Explorer](../../media/advanced-filter.png)
 
 Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results. 
 
@@ -95,7 +95,7 @@ Use the **Column options** button to get the kind of information on the table th
 > ![Column options button highlighted](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Available options in Columns](../../media/threat-explorer-column-options-details.png)
+> ![Available options in Columns](../../media/column-options.png)
 
 In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions. 
 
@@ -140,7 +140,7 @@ Here, the analyst can take actions like reporting the mail as Spam, Phishing, or
 
 When navigating from an alert into Threat Explorer, the **View** will be filtered by **Alert ID**. This also applies in Real-time detection. Messages relevant to the specific alert, and an email total (a count) are shown. You will be able to see if a message was part of an alert, as well as navigate from that message to the related alert.
 
-Finally, alert ID is included in the URL, for example: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Finally, alert ID is included in the URL, for example: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
 > ![Filtering for Alert ID](../../media/AlertID-Filter.png)
@@ -248,7 +248,7 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have the following:
 
-- For the Security & Compliance Center:
+- For the Microsoft 365 Defender portal:
 
   - Organization Management
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
@@ -263,7 +263,7 @@ To view and use Explorer or Real-time detections, you must have the following:
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

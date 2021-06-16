@@ -4006,6 +4006,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-prepare.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-setup.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-setup.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-onboard.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-atp-onboard.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
+      "redirect_document_id": false
+    },
+{
       "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/reliability-insights.md",
       "redirect_url": "/microsoft-365/managed-desktop/working-with-managed-desktop/reports.md",
       "redirect_document_id": false
@@ -4059,6 +4099,16 @@
       "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/scheduled-catch-up-scans-microsoft-defender-antivirus.md",
