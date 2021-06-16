@@ -212,7 +212,7 @@ Select the alert that triggered an investigation to open the **Investigation det
 > [!NOTE]
 > Depending on timing, the automated investigation might still be running. Wait a few minutes for the process to complete before you collect and analyze the evidence and review the results. Refresh the **Investigation details** page to get the latest findings.
 
-!Example of the Investigation details page](../../media/mtp/fig15.png)
+[!Example of the Investigation details page](../../media/mtp/fig15.png)
 
 During the automated investigation, Microsoft Defender for Endpoint identified the notepad.exe process, which was injected as one of the artifacts requiring remediation. Defender for Endpoint automatically stops the suspicious process injection as part of the automated remediation.
 
