@@ -469,8 +469,12 @@
               href: archive-17a-4-blackberry-data.md
             - name: Bloomberg DataParser (preview)
               href: archive-17a-4-bloomberg-data.md
+            - name: FactSet DataParser (preview)
+              href: archive-17a-4-factset-data.md
             - name: Fuze DataParser (preview)
               href: archive-17a-4-fuze-data.md
+            - name: ICE Chat DataParser (preview)
+              href: archive-17a-4-ice-im-data.md
             - name: InvestEdge DataParser (preview)
               href: archive-17a-4-investedge-data.md
             - name: LivePerson DataParser (preview)
