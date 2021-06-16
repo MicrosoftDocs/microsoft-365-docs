@@ -76,7 +76,7 @@ There are four different ways to find and take auto investigation actions:
 
 There are two different ways to reconsider submitted actions:
    - Through the [unified action center](https://security.microsoft.com/action-center).
-   - Though office action center (<https://security.microsoft.com/threatincidents>)
+   - Though the [Office action center](https://security.microsoft.com/threatincidents).
    
 ## Change or undo through the unified action center
 1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
