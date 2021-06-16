@@ -64,7 +64,7 @@ Here's what happens:
 
 ## What happens when the OneDrive sync client tries to sync an infected file?
 
-OneDrive sync clients will not download files that contain viruses. The sync client will display a notification that the file can't be synced.
+When a malicious file is uploaded to OneDrive, it will be synced to the local machine before it's marked as malware. After it's marked as malware, the user can't open the synced file anymore from their local machine.
 
 ## Extended capabilities with Microsoft Defender for Office 365
 

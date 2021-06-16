@@ -566,6 +566,8 @@
             href: configure-edge-to-export-search-results.md
           - name: Bulk edit multiple content searches
             href: bulk-edit-content-searches.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections

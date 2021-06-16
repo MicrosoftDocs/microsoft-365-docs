@@ -42,27 +42,27 @@ Domain impersonation is different from [domain spoofing](anti-spoofing-protectio
 
 Impersonation protection is part of the anti-phishing policy settings that are exclusive to Microsoft Defender for Office 365. For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-You can use the impersonation insight in the Microsoft 365 security center to quickly identify messages from impersonated senders or sender domains that you've configured for impersonation protection.
+You can use the impersonation insight in the Microsoft 365 Defender portal to quickly identify messages from impersonated senders or sender domains that you've configured for impersonation protection.
 
 ## What do you need to know before you begin?
 
-- You open the security center at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the impersonation insight on the **Anti-phishing** page, use <https://security.microsoft.com/antiphishing>. To go directly to the **Impersonation insight** page, use <https://security.microsoft.com/impersonationinsight>.
 
-- You need to be assigned permissions in the security center before you can do the procedures in this article:
+- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - **Organization Management**
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
 
-  For more information, see [Permissions in the security center](permissions-in-the-security-and-compliance-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
 
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the security center _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection is not enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## Open the impersonation insight in the security center
+## Open the impersonation insight in the Microsoft 365 Defender portal
 
-1. In the security center, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Policies** section \> **Anti-phishing**.
 
 2. On the **Anti-phishing** page, the impersonation insight looks like this:
 
