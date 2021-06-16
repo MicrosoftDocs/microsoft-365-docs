@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 06/15/2021
+ms.date: 06/16/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1.keywords: NOCSH
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. Soon, Defender for Endpoint will be available in two plans: 
 
 - Defender for Endpoint Plan 1 (currently in preview)
-- Defender for Endpoint Plan 2 (available now)
+- [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) (available now)
 
 > [!TIP]
 > To learn more, see [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md).
 
-This guide focuses on Defender for Endpoint Plan 1, currently in private preview. Use this guide to:
+This guide focuses on Defender for Endpoint Plan 1, currently in preview. Use this guide to:
 
 - Get an overview of what’s included in Defender for Endpoint Plan 1.
 - Learn how to set up and configure your threat protection capabilities.
@@ -38,7 +38,16 @@ Thank you for participating in our preview program! Give us feedback on your ove
 
 ## What's included in Defender for Endpoint Plan 1?
 
-At a high level, Defender for Endpoint Plan 1 includes all of the following features and capabilities:
+<center><h2>Microsoft Defender for Endpoint</center></h2>
+<table>
+<td><a href="attack-surface-reduction"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#next-generation-protection"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
+<td><center><a href="#centralized-management">Centralized configuration<br>Administration<br>APIs</a></center></td>
+</tr>
+</table>
+<br>
+
+Defender for Endpoint Plan 1 includes all of the following features and capabilities:
 
 - [Next-generation protection](#next-generation-protection) (includes antimalware and antivirus)
 - [Attack surface reduction](#attack-surface-reduction)
