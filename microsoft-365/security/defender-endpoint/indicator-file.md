@@ -46,7 +46,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Supported on devices with Windows 10, version 1703 or later, Windows Server 2016 and 2019.
+- Supported on devices with Windows 10, version 1703 or later, Windows Server 2012 R2, Windows Server 2016 and 2019.
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
