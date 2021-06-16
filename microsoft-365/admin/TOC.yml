@@ -8,6 +8,20 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Sign up for Microsoft 365 Business Premium
+          items:
+           - name: Sign up
+             href: ../business/sign-up.md
+           - name: Set up Microsoft 365 Business Premium with the setup wizard
+             href: ../business/set-up.md
+        - name: Sign up for Microsoft 365 Business Standard
+          items:
+           - name: Sign up
+             href: ../simplified-signup/owner-purchase.md
+           - name: Set up a new business email address
+             href: ../business-video/set-up-a-new-business-email-address.md
+           - name: Invite your users to Microsoft 365 Business Standard
+             href: ../simplified-signup/owner-iw-invite.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
         - name: Set up your organization with the guided setup
