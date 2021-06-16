@@ -79,7 +79,7 @@ There are two different ways to reconsider submitted actions:
    - Though the [Office action center](https://security.microsoft.com/threatincidents).
    
 ## Change or undo through the unified action center
-1. Go to the Action center (<https://security.microsoft.com/action-center>) and sign in.
+1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
 2. On the **History** tab, select an action that you want to change or undo.
 3. In the pane on the right side of the screen, select the appropriate action (**move to inbox**, **move to junk**,**move to deleted items**, **soft delete", or **hard delete**).
 
