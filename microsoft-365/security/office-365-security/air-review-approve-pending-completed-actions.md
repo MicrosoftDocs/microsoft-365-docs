@@ -68,7 +68,7 @@ There are four different ways to find and take auto investigation actions:
 ## Auto investigation and remediation investigations queue
 1. Go to the Microsoft 365 security center (<https://security.microsoft.com/airinvestigation>) and sign in.
 2. Open pending investigations. 
-3. In the Investigation page, go to **pending actions** tab.
+3. On the Investigation page, go to the **pending actions** tab.
 4. Select an item in the list. Its side pane opens.  
 5. In the side pane, take approve or reject actions.
 
