@@ -183,7 +183,7 @@ If you are using a non-Microsoft antivirus product as your primary antivirus sol
 
 ### Set Microsoft Defender Antivirus to passive mode using a registry key
 
-If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
+If you are using Windows Server 2012 R2, Windows Server 2016, Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: `ForceDefenderPassiveMode`
 - Type: `REG_DWORD`
