@@ -30,18 +30,19 @@ description: "When you purchase Microsoft 365 Business Standard, you have the op
 
 When you purchase Microsoft 365 Business Standard, you have the option of adding a domain you own, or buying one during the sign-up. In this article, we'll walk you through the steps or adding an existing domain your already own or buying a new one.
 
-> [!NOTE]
-> If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
+If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
-### Watch: Add a domain to your Microsoft 365 Business Standard subscription
+## Before you begin
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+To add, modify or remove domains you must be a global administrator. For more info, see [About admin roles](../add-users/about-admin-roles.md).
 
-https://www.microsoft.com/en-us/videoplayer/embed/RWyVVA?autoplay=false
+## Watch: Add an existing domain to your Microsoft 365 Business Standard subscription
 
-### Steps: Add a domain to your Microsoft 365 Business Standard subscription
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu]
 
-1. From the How you'll sign in page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
+## Steps: Add an existing domain to your Microsoft 365 Business Standard subscription
+
+1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
 3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
 
@@ -56,11 +57,11 @@ https://www.microsoft.com/en-us/videoplayer/embed/RWyVVA?autoplay=false
 
     ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
 
-## Add users and assign licenses
+### Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.
 
-## Add users in the wizard
+### Add users in the wizard
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Standard license.
 
@@ -68,7 +69,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
-## Connect your domain
+### Connect your domain
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
@@ -82,6 +83,16 @@ To set up services, you have to update some records at your DNS host or domain r
     When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Office apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
     For more information about the setup wizard and the admin center **Setup** page, see [Difference between the setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
+
+## Watch: Set up business email with a new domain
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+
+## Steps: Set up business email with a new domain
+
+1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
+
+4. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Office apps in the admin center.
 
 ## Finish setting up
 
@@ -126,8 +137,14 @@ If you were using Outlook with another email account, you can import your previo
 More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
 You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
-  
-### Use a public website
+
+## Set up Microsoft Teams and OneDrive for business
+
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
+
+8. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
+
+## Use a public website
 
 Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
   
