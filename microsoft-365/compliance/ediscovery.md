@@ -1,5 +1,5 @@
 ---
-title: "eDiscovery"
+title: "Microsoft 365 eDiscovery solutions"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,28 +7,38 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
+ms.collection: 
+- m365-security-compliance
+- m365solution-aed
+- m365initiative-compliance
+- m365solution-overview
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: "Microsoft 365 offers a number of different eDiscovery tools that you can use to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations."
+description: "Microsoft 365 offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. Core eDiscovery and Advanced eDiscovery provide many additional features to help you manage your investigations."
 ---
 
-# eDiscovery solutions in Microsoft 365
+# Microsoft 365 eDiscovery solutions
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool. And you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the Advanced eDiscovery solution in Microsoft 365.
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft 365 to search for content in Exchange Online, Microsoft 365 Groups, Microsoft Teams, SharePoint Online, and OneDrive for Business sites, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search by using the Content search tool. And you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the Advanced eDiscovery solution in Microsoft 365.
   
-Microsoft 365 provides the following eDiscovery tools:
+## Microsoft 365 eDiscovery solutions
+
+Microsoft 365 provides three eDiscovery solutions:
   
 - [Content search](#content-search)
 
 - [Core eDiscovery](#core-ediscovery)
 
 - [Advanced eDiscovery](#advanced-ediscovery)
+
+
+
+
 
 ## Content search
 
@@ -81,6 +91,15 @@ The Advanced eDiscovery solution in Microsoft 365 (also called *Advanced eDiscov
 |[Analyze data in a review set](analyzing-data-in-review-set.md)|Learn about running analysis on the documents in a review set. The results of running analysis include near-duplication detection, email threading, and themes identification.|
 |[Export case data](exporting-data-ediscover20.md)|Learn about exporting data from a case for external review.|
 |||
+
+## Comparison of key capabilities
+
+The following table compares the key capabilities available in Content search, Core eDiscovery, and Advanced eDiscovery. 
+
+|Capability|Content search|Core eDiscovery|Advanced eDiscovery|
+|:------|:-------------|:-------------|:-------------|
+|||||
+|||||
 
 ## eDiscovery roadmap
 
