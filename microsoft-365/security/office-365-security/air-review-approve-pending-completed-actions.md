@@ -43,7 +43,7 @@ There are four different ways to find and take auto investigation actions:
 - Investigation and remediation investigations queue (<https://security.microsoft.com/airinvestigation>)
 
 ## Incident queue
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
 2. In the navigation pane, select **Incidents & alerts > Incidents**
 3. Select an incident name and it will open a summary page.
 4. Go to **Evidence and Response** tab 
