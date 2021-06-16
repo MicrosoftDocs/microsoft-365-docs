@@ -26,7 +26,7 @@ The following overview explains the process of using a data connector to archive
 
 ![Archiving workflow for Bloomberg data from 17a-4](../media/BloombergDataParserConnectorWorkflow.png)
 
-1. Your organization works with 17a-4 to set up and configure Bloomberg DataParser.
+1. Your organization works with 17a-4 to set up and configure the Bloomberg DataParser.
 
 2. On a regular basis, Bloomberg items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 

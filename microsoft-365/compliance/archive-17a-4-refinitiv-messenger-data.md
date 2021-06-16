@@ -26,9 +26,9 @@ The following overview explains the process of using a data connector to archive
 
 ![Archiving workflow for Refinitiv Messenger data from 17a-4](../media/RefinitivMessengerDataParserConnectorWorkflow.png)
 
-1. Your organization works with 17a-4 to set up and configure Refinitiv Messenger DataParser.
+1. Your organization works with 17a-4 to set up and configure the Refinitiv Messenger DataParser.
 
-2. On a regular basis, Refinitiv Messenger items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
+2. Regularly, Refinitiv Messenger items are collected by the DataParser. The DataParser also converts the content of a message to an email message format.
 
 3. The Refinitiv Messenger DataParser connector that you create in the Microsoft 365 compliance center connects to DataParser and transfers the messages to a secure Azure Storage location in the Microsoft cloud.
 
