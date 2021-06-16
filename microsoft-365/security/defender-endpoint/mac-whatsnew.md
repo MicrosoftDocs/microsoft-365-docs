@@ -35,7 +35,7 @@ ms.technology: mde
 
 ## 101.32.69 (20.121042.13269.0)
 
-- Addressed an issue where concurrent access to the keychain from Microsoft Defender for Endpoint and other applications can lead to keychain corruption
+- Addressed an issue where concurrent access to the keychain from Microsoft Defender for Endpoint and other applications can lead to keychain corruption.
 
 ## 101.29.64 (20.121042.12964.0)
 
